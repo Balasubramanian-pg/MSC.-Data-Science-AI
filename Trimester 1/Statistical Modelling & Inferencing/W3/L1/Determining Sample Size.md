@@ -9,9 +9,9 @@ We aim to find the minimum $n$ that satisfies a specific **Margin of Error ($E$)
 - **Large $n$:** Increases precision but incurs higher costs (time, money).
     
 
-### 2. Sample Size for a Population Mean ($\mu$)
+### 2. Sample Size for a Population [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) ($\mu$)
 
-Derived from the $Z$-interval margin of error formula ($E = Z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}$), the required sample size is:
+Derived from the $Z$-interval margin of error [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#formula) ($E = Z_{\alpha/2} \cdot [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\sigma}{\sqrt{n}}$), the required sample size is:
 
 $$n = \left( \frac{Z_{\alpha/2} \cdot \sigma}{E} \right)^2$$
 
@@ -32,12 +32,12 @@ $$n = \left( \frac{Z_{\alpha/2} \cdot \sigma}{E} \right)^2$$
     
 - **Historical Data:** Utilize findings from previous, similar research.
     
-- **Range Rule of Thumb:** Estimate $\sigma \approx \frac{\text{Maximum} - \text{Minimum}}{4}$.
+- **Range Rule of Thumb:** Estimate $\sigma \approx [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\text{Maximum} - \text{Minimum}}{4}$.
     
 
 ### 3. Sample Size for a Population Proportion ($p$)
 
-The formula for proportions is:
+The [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#formula) for proportions is:
 
 $$n = p(1 - p) \left( \frac{Z_{\alpha/2}}{E} \right)^2$$
 
@@ -47,12 +47,12 @@ If the population proportion ($p$) is completely unknown, you should use the mos
 
 - The product $p(1-p)$ reaches its maximum at $p = 0.5$.
     
-- **Conservative Formula:**
+- **Conservative [Formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#formula):**
     
     $$n = 0.25 \left( \frac{Z_{\alpha/2}}{E} \right)^2$$
     
 
-### 4. Summary Table of Inputs
+### 4. [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L2/Reading%202%20Parametric%20vs.%20Non-Parametric%20Methods.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#summary))) Table of Inputs
 
 |**Input**|**Description**|**Impact of Increase**|
 |---|---|---|
@@ -60,4 +60,4 @@ If the population proportion ($p$) is completely unknown, you should use the mos
 |**Confidence Level**|Desired certainty|Higher Confidence $\to$ Larger $n$|
 |**Variability ($\sigma$ or $p$)**|Heterogeneity in population|Higher Variance $\to$ Larger $n$|
 
-Would you like to walk through a Python calculation for a specific engineering use case, or explore how to handle cases where we lack historical variance data?
+Would you like to walk through a Python calculation for a specific [engineering](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L2/Errors%2C%20P-values%2C%20and%20Significance.md#engineering) use case, or explore how to handle cases where we lack historical variance data?
