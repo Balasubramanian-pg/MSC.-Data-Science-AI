@@ -1,10 +1,10 @@
-Standard probability distributions serve as the "canonical recipes" of statistics. Instead of deriving probabilities from first principles for every new dataset, we map our data to these established forms, which come with well-understood properties, formulas, and parameters.
+Standard probability distributions serve as the "canonical recipes" of statistics. Instead of deriving [probabilities](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L2/Reading%201%20An%20Introduction%20to%20Decision%20Theory.md#probabilities) from first principles for every new dataset, we map our data to these established forms, which come with well-understood properties, formulas, and parameters.
 
 ### 1. Discrete Distributions (The Counters)
 
 These models are appropriate when your random variable is the result of counting, meaning it takes on integer values with distinct gaps.
 
-#### 1.1 Bernoulli Distribution (The Binary Trial)
+#### 1.1 [Bernoulli Distribution](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L1/Probability%20and%20Distribution.md#bernoulli-distribution) (The Binary Trial)
 
 The fundamental building block for binary outcomes.
 
@@ -17,9 +17,9 @@ The fundamental building block for binary outcomes.
 - **Use Case:** Any binary choice (e.g., Click vs. No-click, Pass vs. Fail).
     
 
-#### 1.2 Binomial Distribution (The Repeated Trial)
+#### 1.2 [Binomial Distribution](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L1/Probability%20and%20Distribution.md#binomial-distribution) (The Repeated Trial)
 
-The extension of the Bernoulli distribution for repeated, independent trials.
+The extension of the [Bernoulli distribution](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L1/Probability%20and%20Distribution.md#bernoulli-distribution) for repeated, independent trials.
 
 - **Theory:** Counts the number of successes ($k$) in $n$ independent trials.
     
@@ -27,14 +27,14 @@ The extension of the Bernoulli distribution for repeated, independent trials.
     
 - **PMF:** $P(X=k) = \binom{n}{k} p^k (1-p)^{n-k}$.
     
-- **Use Case:** Quality control (number of defects in a batch of $n$ items) or surveying (number of yes-responses in a sample).
+- **Use Case:** [Quality control](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Variances.md#quality-control) (number of defects in a batch of $n$ items) or surveying (number of yes-responses in a sample).
     
 
 ### 2. Continuous Distributions (The Measurers)
 
 These models are appropriate for data that exists on a continuous scale (e.g., time, mass, length).
 
-#### 2.1 Uniform Distribution (The Flat Baseline)
+#### 2.1 [Uniform Distribution](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L1/Probability%20and%20Distribution.md#uniform-distribution) (The Flat Baseline)
 
 The simplest continuous model, where every outcome in a range is equally likely.
 
@@ -45,15 +45,15 @@ The simplest continuous model, where every outcome in a range is equally likely.
 - **Use Case:** Random number generation, modeling waiting times where there is zero prior knowledge of the arrival distribution.
     
 
-#### 2.2 Normal (Gaussian) Distribution (The Universal Pattern)
+#### 2.2 [Normal (Gaussian) Distribution](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L1/Probability%20and%20Distribution.md#normal-gaussian-distribution) (The Universal Pattern)
 
 The most important distribution in statistics due to the **Central Limit Theorem (CLT)**, which states that the sum/average of many independent random variables tends toward a normal distribution, regardless of the original distribution.
 
-- **Theory:** A symmetric, bell-shaped curve defined by mean ($\mu$) and standard deviation ($\sigma$).
+- **Theory:** A symmetric, bell-shaped curve defined by [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) ($\mu$) and standard deviation ($\sigma$).
     
 - **Parameters:**
     
-    - $\mu$ (mean): Locates the peak of the bell.
+    - $\mu$ ([mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean)): Locates the peak of the bell.
         
     - $\sigma$ (standard deviation): Controls the dispersion or "spread."
         
@@ -68,7 +68,7 @@ The most important distribution in statistics due to the **Central Limit Theorem
 
 ### 3. Comparison Table: Selecting the "Recipe"
 
-|**Distribution**|**Variable Type**|**Key Parameters**|**Intuition**|
+|**Distribution**|**Variable Type**|**Key Parameters**|**[Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#intuition))))**|
 |---|---|---|---|
 |**Bernoulli**|Discrete|$p$|Single binary event.|
 |**Binomial**|Discrete|$n, p$|Count of events across trials.|
@@ -97,7 +97,7 @@ print(f"Probability within 1 sigma: {prob:.4f}")
 
 When you use a distribution as a "recipe," you are implicitly accepting its assumptions:
 
-- **Independence:** The Binomial distribution assumes each trial does not influence the next. If the result of one trial changes the probability of the next (e.g., picking items without replacement), you should use a **Hypergeometric distribution** instead.
+- **[Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L0/Linear%20Regression.md#independence):** The [Binomial distribution](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L1/Probability%20and%20Distribution.md#binomial-distribution) assumes each trial does not influence the next. If the result of one trial changes the probability of the next (e.g., picking items without replacement), you should use a **Hypergeometric distribution** instead.
     
 - **Symmetry:** The Normal distribution assumes symmetry. If your data has a "long tail" (like wealth distribution), the Normal distribution will fail to model the extreme values accurately, necessitating a **Log-Normal** or **Pareto distribution**.
     
