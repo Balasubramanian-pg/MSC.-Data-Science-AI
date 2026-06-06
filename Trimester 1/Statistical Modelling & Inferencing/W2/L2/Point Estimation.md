@@ -6,14 +6,14 @@ Point estimation is a fundamental process in inferential statistics used to appr
 
 In statistics, we typically focus on three primary population parameters when performing point estimation:
 
-- **Population Mean**: Used for continuous variables, such as estimating the average height of individuals or the average age of a population.
+- **Population [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean)**: Used for continuous variables, such as estimating the average height of individuals or the average age of a population.
     
 - **Population Proportion**: Used for categorical variables, such as calculating the percentage of a population that voted for a specific political party.
     
-- **Population Variance**: Used to measure the spread or dispersion of data within a population (e.g., how values are distributed around the mean).
+- **Population Variance**: Used to measure the spread or dispersion of data within a population (e.g., how values are distributed around the [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean)).
     
 
-To approximate these population parameters, we use corresponding **sample statistics**: the sample mean, sample proportion, and sample variance.
+To approximate these population parameters, we use corresponding **sample statistics**: the sample [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean), sample proportion, and sample variance.
 
 #### Properties of a Good Estimator
 
@@ -24,4 +24,4 @@ A critical aspect of selecting an estimator is ensuring it is **unbiased**. An u
 - **Biased Estimator**: The estimator is systematically skewed, meaning even with multiple samples, the results remain far away from the true population value.
     
 
-Would you like to delve deeper into the mathematical definitions of bias versus variance, or would you prefer to explore how we transition from point estimates to **interval estimates** to better account for uncertainty?
+Would you like to delve deeper into the mathematical [definitions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#definitions) of bias versus variance, or would you prefer to explore how we transition from point estimates to **interval estimates** to better account for uncertainty?
