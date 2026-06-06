@@ -61,7 +61,7 @@ The approach to solving a decision problem changes based on the information avai
 
 ### 4. Application in Data Science
 
-Decision Theory is the backbone of **A/B testing**, **model deployment strategies**, and **cost-sensitive learning**. For example, in credit scoring:
+Decision Theory is the backbone of **A/B testing**, **model deployment strategies**, and **cost-sensitive learning**. For [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example), in credit scoring:
 
 - **Actions:** {Approve Loan, Deny Loan}
     
