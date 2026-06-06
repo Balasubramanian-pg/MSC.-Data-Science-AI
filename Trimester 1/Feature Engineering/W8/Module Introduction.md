@@ -1,6 +1,6 @@
 Automated Feature Engineering represents a shift from manual, heuristic-based variable creation to algorithmic, systematic transformation. It addresses the scalability bottleneck in data science: as datasets grow in complexity and volume, human-driven feature design becomes a significant constraint.
 
-### 1. The Core Paradigm Shift
+### [1. The Core Paradigm Shift](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W8/Overview.md#1-the-core-paradigm-shift)
 
 Traditionally, feature engineering requires deep domain expertise and iterative testing. Automated approaches replace this with computational search strategies.
 
@@ -42,7 +42,7 @@ While powerful, automation is not a replacement for data science rigor:
 - **Computational Load:** Searching the entire "feature space" is expensive. Use these tools as force multipliers, not as a complete substitute for data exploration.
     
 
-**Summary of Workflow:**
+**[Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary)) of Workflow:**
 
 1. **Model Data Structure:** Define relationships (for relational data) or sequence IDs (for time series).
     
