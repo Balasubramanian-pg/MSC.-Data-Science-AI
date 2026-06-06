@@ -48,12 +48,12 @@ features, train = featurewiz(
     
 - **Feature Interactions:** By setting `feature_eng='interactions'`, the tool creates new features (e.g., product/ratio of existing features). This helps capture non-linear relationships that simple additive models might miss.
     
-- **Model Performance Interpretation:** In your experiment (German Credit Dataset), accuracy decreased slightly (76% to 71%) after using FeatureWiz. **This is expected.** * _Why?_ Aggressive feature reduction sometimes discards "weak" signals that, while redundant or noisy, provide incremental information.
+- **Model Performance Interpretation:** In your experiment (German Credit [Dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/Experiential%20Learning%20Activity.md#dataset)), accuracy decreased slightly (76% to 71%) after using FeatureWiz. **This is expected.** * _Why?_ Aggressive feature reduction sometimes discards "weak" signals that, while redundant or noisy, provide incremental information.
     
     - _Actionable Insight:_ If accuracy drops, it suggests that the automatic selection was _too aggressive_. You may need to tune the `corr_limit` or increase the number of features retained.
         
 
-### 4. Summary Table
+### 4. [Summary Table](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W8/Deep%20Feature%20Synthesis%20Using%20Featuretools.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary))-table)
 
 |**Feature**|**Description**|**Benefit**|
 |---|---|---|
@@ -62,7 +62,7 @@ features, train = featurewiz(
 |**Interactions**|Automated feature creation|Captures non-linear dependencies.|
 |**Ordinal Encoding**|Memory-efficient encoding|Prevents "feature explosion" (avoids One-Hot).|
 
-### Final Takeaway
+### [Final Takeaway](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W8/Automated%20Time%20Series%20-%20Feature%20Engineering%20With%20TSFresh.md#final-takeaway)
 
 FeatureWiz is not a "magic button" that guarantees higher accuracy, but it is an **indispensable tool for efficiency.** It provides a baseline "optimal" feature set in minutes. If the automated model underperforms, it provides a perfect starting point for manual refinement by identifying which features the model deemed "important."
 
