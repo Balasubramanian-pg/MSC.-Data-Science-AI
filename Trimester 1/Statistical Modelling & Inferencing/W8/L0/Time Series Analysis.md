@@ -19,7 +19,7 @@ A sequence of data points indexed in time order. This structure allows researche
 
 Decomposition
 
-The process of isolating a series into distinct parts: trend, seasonal variations, and residual noise. This separation clarifies the underlying behavior of the data.
+The process of isolating a series into distinct parts: trend, seasonal variations, and residual [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)). This separation clarifies the underlying behavior of the data.
 
 Smoothing Methods
 
@@ -41,7 +41,7 @@ Statistical techniques used to reduce short-term fluctuations, revealing longer-
         
 - Residual Component
     
-    - Represents random noise or irregular movements.
+    - Represents random [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)) or irregular movements.
         
     - What remains after removing trend and seasonal factors.
         
@@ -80,9 +80,9 @@ Time series analysis typically follows a structured workflow to ensure accurate 
 
 ## Common Mistakes
 
-- Ignoring the stationarity of the data, which leads to incorrect model selection.
+- Ignoring the stationarity of the data, which leads to [incorrect](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#[incorrect](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#[incorrect](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#incorrect))) model selection.
     
-- Overfitting models to noise rather than identifying genuine structural patterns.
+- [Overfitting](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#overfitting) models to [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)) rather than identifying genuine structural patterns.
     
 - Failing to account for external shocks that disrupt historical trends.
     
