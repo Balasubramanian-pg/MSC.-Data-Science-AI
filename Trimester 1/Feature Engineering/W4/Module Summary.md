@@ -6,7 +6,7 @@ This module provided a strategic overview of **Dimensionality Reduction**, a cor
 |---|---|---|---|
 |**PCA**|Linear|Data Compression & Noise Reduction|Transforms data into orthogonal axes (Principal Components) that capture the maximum variance.|
 |**SVD**|Mathematical|Latent Feature Extraction|Matrix factorization that decomposes data into importance-ranked components (singular values).|
-|**t-SNE**|Non-Linear|Visualization|Maps high-dimensional data to 2D/3D by preserving local neighbor distances; excellent for cluster discovery.|
+|**t-SNE**|Non-Linear|[Visualization](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W4/Readme.md#visualization)|Maps high-dimensional data to 2D/3D by preserving local neighbor distances; excellent for cluster discovery.|
 
 ### **2. Deep Dive: Key Methodologies**
 
@@ -14,7 +14,7 @@ This module provided a strategic overview of **Dimensionality Reduction**, a cor
     
     - **The Theory:** PCA identifies the directions (principal components) along which the data varies the most. By projecting the data onto the top few components, you retain the most "important" variance while discarding low-variance dimensions that typically constitute noise.
         
-    - **Usage:** Best for preprocessing high-dimensional numerical data to reduce feature redundancy and avoid overfitting in models like linear regression.
+    - **Usage:** Best for [preprocessing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/L1/Demonstration.md#preprocessing) high-dimensional numerical data to reduce feature redundancy and avoid overfitting in models like linear regression.
         
 - **Singular Value Decomposition (SVD):**
     
@@ -22,14 +22,14 @@ This module provided a strategic overview of **Dimensionality Reduction**, a cor
         
     - **Usage:** It is the engine behind many dimensionality reduction tasks, including Latent Semantic Analysis (LSA) in text processing and collaborative filtering in recommendation systems.
         
-- **t-Distributed Stochastic Neighbor Embedding (t-SNE):**
+- **[t-Distributed Stochastic Neighbor Embedding (t-SNE)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W4/t-SNE.md#t-distributed-stochastic-neighbor-embedding-t-sne):**
     
     - **The Theory:** Unlike the linear methods above, t-SNE is non-linear. It focuses on the **local structure** of the data, ensuring that points close together in high-dimensional space remain close in the 2D/3D visual output.
         
     - **Usage:** It is the "gold standard" for exploratory data analysis (EDA) when you need to visualize hidden clusters in complex, messy data.
         
 
-### **3. Strategic Application Summary**
+### **3. Strategic [Application Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W2/2.%20Discretization.md#application-[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary)))**
 
 The decision to apply dimensionality reduction involves balancing three competing goals: **Information Retention**, **Computational Efficiency**, and **Human Interpretability**.
 
