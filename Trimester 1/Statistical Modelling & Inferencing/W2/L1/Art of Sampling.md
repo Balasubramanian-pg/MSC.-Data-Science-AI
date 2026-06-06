@@ -73,7 +73,7 @@ $$
 N_{\\text{obs}} = \\int_{\\Omega_{\\text{accessible}}} d\\omega \\leq \\int_{\\Omega_{\\text{total}}} d\\omega = N_{\\text{true}}
 $$
 
-## 1.3 The Mathematical Framework
+## 1.3 [The Mathematical Framework](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W11/L1/Maximum%20Likelihood%20Estimation.md#the-mathematical-framework)
 
 Let $(\\Omega, \\mathcal{F}, P)$ be a probability space where $\\Omega$ is the population, $\\mathcal{F}$ is a $\\sigma$-algebra, and $P$ is the sampling design.
 
@@ -167,19 +167,19 @@ $$
 Y = \\sum_{i=1}^N y_i
 $$
 
-**Population Mean:**
+**Population [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean):**
 $$
-\\bar{Y} = \\frac{1}{N} \\sum_{i=1}^N y_i = \\frac{Y}{N}
+\[\bar{Y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary) = \\frac{1}{N} \\sum_{i=1}^N y_i = \\frac{Y}{N}
 $$
 
 **Population Variance:**
 $$
-\\sigma^2 = \\frac{1}{N} \\sum_{i=1}^N (y_i - \\bar{Y})^2 = \\frac{1}{N} \\sum_{i=1}^N y_i^2 - \\bar{Y}^2
+\\sigma^2 = \\frac{1}{N} \\sum_{i=1}^N (y_i - \[\bar{Y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary))^2 = \\frac{1}{N} \\sum_{i=1}^N y_i^2 - \[\bar{Y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary)^2
 $$
 
 **Corrected Population Variance:**
 $$
-S^2 = \\frac{1}{N-1} \\sum_{i=1}^N (y_i - \\bar{Y})^2 = \\frac{N}{N-1} \\sigma^2
+S^2 = \\frac{1}{N-1} \\sum_{i=1}^N (y_i - \[\bar{Y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary))^2 = \\frac{N}{N-1} \\sigma^2
 $$
 
 **Population Standard Deviation:**
@@ -194,12 +194,12 @@ $$
 
 **Population Covariance:**
 $$
-\\sigma_{xy} = \\frac{1}{N} \\sum_{i=1}^N (x_i - \\bar{X})(y_i - \\bar{Y})
+\\sigma_{xy} = \\frac{1}{N} \\sum_{i=1}^N (x_i - \\bar{X})(y_i - \[\bar{Y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary))
 $$
 
 **Population Correlation:**
 $$
-\\rho = \\frac{\\sigma_{xy}}{\\sigma_x \\sigma_y}
+\\rho = \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\\sigma_{xy}}{\\sigma_x \\sigma_y}
 $$
 
 ### 2.1.3 Population Moments
@@ -211,17 +211,17 @@ $$
 
 $k$-th central moment:
 $$
-\\mu_k = \\frac{1}{N} \\sum_{i=1}^N (y_i - \\bar{Y})^k
+\\mu_k = \\frac{1}{N} \\sum_{i=1}^N (y_i - \[\bar{Y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary))^k
 $$
 
-Skewness:
+[Skewness](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#skewness):
 $$
-\\gamma_1 = \\frac{\\mu_3}{\\sigma^3} = \\frac{\\mu_3}{(\\mu_2)^{3/2}}
+\\gamma_1 = \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\\mu_3}{\\sigma^3} = \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\\mu_3}{(\\mu_2)^{3/2}}
 $$
 
 Kurtosis:
 $$
-\\gamma_2 = \\frac{\\mu_4}{\\sigma^4} - 3 = \\frac{\\mu_4}{\\mu_2^2} - 3
+\\gamma_2 = \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\\mu_4}{\\sigma^4} - 3 = \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\\mu_4}{\\mu_2^2} - 3
 $$
 
 ## 2.2 Parameter Hierarchy
@@ -248,14 +248,14 @@ graph LR
 
 ### 2.3.1 Sample Statistics as Random Variables
 
-**Sample Mean:**
+**Sample [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean):**
 $$
-\\bar{y} = \\frac{1}{n} \\sum_{i=1}^n y_i
+\[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary) = \\frac{1}{n} \\sum_{i=1}^n y_i
 $$
 
 **Sample Variance (Bessel-corrected):**
 $$
-s^2 = \\frac{1}{n-1} \\sum_{i=1}^n (y_i - \\bar{y})^2 = \\frac{1}{n-1} \\left[ \\sum_{i=1}^n y_i^2 - n\\bar{y}^2 \\right]
+s^2 = \\frac{1}{n-1} \\sum_{i=1}^n (y_i - \[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary))^2 = \\frac{1}{n-1} \\left[ \\sum_{i=1}^n y_i^2 - n\\bar{y}^2 \\right]
 $$
 
 Unbiasedness property:
@@ -275,7 +275,7 @@ $$
 
 **Sample Covariance:**
 $$
-s_{xy} = \\frac{1}{n-1} \\sum_{i=1}^n (x_i - \\bar{x})(y_i - \\bar{y})
+s_{xy} = \\frac{1}{n-1} \\sum_{i=1}^n (x_i - \\bar{x})(y_i - \[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary))
 $$
 
 **Sample Correlation:**
@@ -301,7 +301,7 @@ $$
 \\end{aligned}
 $$
 
-**Standard Error:** $SE(\\hat{\\theta}) = \\sqrt{Var(\\hat{\\theta})}$
+**[Standard Error](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#standard-error):** $SE(\\hat{\\theta}) = \\sqrt{Var(\\hat{\\theta})}$
 
 **Confidence Interval:** $CI = \\hat{\\theta} \\pm z_{\\alpha/2} \\cdot SE(\\hat{\\theta})$
 
@@ -309,28 +309,28 @@ $$
 
 ### 2.4.1 Soup Analogy Formalized
 
-Population mean flavor:
+Population [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) flavor:
 $$
-\\bar{Y} = \\frac{1}{N} \\sum_{i=1}^N y_i
+\[\bar{Y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary) = \\frac{1}{N} \\sum_{i=1}^N y_i
 $$
 
 Sample estimate:
 $$
-\\bar{y} = \\frac{1}{n} \\sum_{i \\in s} y_i
+\[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary) = \\frac{1}{n} \\sum_{i \\in s} y_i
 $$
 
 With perfect randomization:
 $$
-E[\\bar{y}] = \\bar{Y} \\quad \\text{and} \\quad Var(\\bar{y}) = \\left(\\frac{N-n}{N-1}\\right) \\frac{\\sigma^2}{n}
+E[\\bar{y}] = \[\bar{Y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary) \\quad \\text{and} \\quad Var(\[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary)) = \\left(\\frac{N-n}{N-1}\\right) \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\\sigma^2}{n}
 $$
 
 ---
 
 # 3. Probability Sampling Methods
 
-## 3.1 Simple Random Sampling (SRS)
+## 3.1 Simple [Random Sampling](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Reading%20Material%20The%20Chi-Square%20Test%20of%20Independence.md#random-sampling) (SRS)
 
-### 3.1.1 Definition
+### 3.1.1 [Definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L1/Probability%20and%20Distribution.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#definition)))))
 
 SRSWOR: Every possible combination of $n$ units has equal selection probability.
 
@@ -344,7 +344,7 @@ $$
 p(s) = \\frac{1}{\\binom{N}{n}}
 $$
 
-### 3.1.2 Inclusion Probabilities
+### 3.1.2 Inclusion [Probabilities](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L2/Reading%201%20An%20Introduction%20to%20Decision%20Theory.md#probabilities)
 
 First-order:
 $$
@@ -358,29 +358,29 @@ $$
 
 ### 3.1.3 Estimation Theory
 
-**Unbiased Mean Estimator:**
+**Unbiased [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) Estimator:**
 $$
-\\hat{\\bar{Y}}_{SRS} = \\bar{y} = \\frac{1}{n} \\sum_{i \\in s} y_i
+\\hat{\[\bar{Y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary)}_{SRS} = \[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary) = \\frac{1}{n} \\sum_{i \\in s} y_i
 $$
 
-**Variance of Sample Mean:**
+**Variance of Sample [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean):**
 $$
-Var(\\bar{y}) = \\left(\\frac{N-n}{N-1}\\right) \\frac{\\sigma^2}{n} = \\left(1 - \\frac{n}{N}\\right) \\frac{S^2}{n}
+Var(\[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary)) = \\left(\\frac{N-n}{N-1}\\right) \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\\sigma^2}{n} = \\left(1 - \\frac{n}{N}\\right) \\frac{S^2}{n}
 $$
 
 **Unbiased Variance Estimator:**
 $$
-\\widehat{Var}(\\bar{y}) = \\left(1 - \\frac{n}{N}\\right) \\frac{s^2}{n}
+\\widehat{Var}(\[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary)) = \\left(1 - \\frac{n}{N}\\right) \\frac{s^2}{n}
 $$
 
 **Confidence Interval:**
 $$
-CI_{1-\\alpha} = \\bar{y} \\pm t_{\\alpha/2, n-1} \\sqrt{\\left(1 - \\frac{n}{N}\\right) \\frac{s^2}{n}}
+CI_{1-\\alpha} = \[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary) \\pm t_{\\alpha/2, n-1} \\sqrt{\\left(1 - \\frac{n}{N}\\right) \\frac{s^2}{n}}
 $$
 
 **Population Total:**
 $$
-\\hat{Y} = N\\bar{y} = \\frac{N}{n} \\sum_{i \\in s} y_i
+\\hat{Y} = N\[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary) = \\frac{N}{n} \\sum_{i \\in s} y_i
 $$
 
 **Variance of Total:**
@@ -404,7 +404,7 @@ Number of ordered samples: $N^n$
 
 Variance:
 $$
-Var(\\bar{y}_{wr}) = \\frac{\\sigma^2}{n} = \\frac{N-1}{N} \\frac{S^2}{n}
+Var(\\bar{y}_{wr}) = \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\\sigma^2}{n} = \\frac{N-1}{N} \\frac{S^2}{n}
 $$
 
 Efficiency ratio:
@@ -412,17 +412,17 @@ $$
 \\text{Efficiency} = \\frac{Var(\\bar{y}_{wr})}{Var(\\bar{y}_{wor})} = \\frac{N-1}{N-n} > 1
 $$
 
-### 3.1.5 Numerical Example: University GPA
+### 3.1.5 Numerical [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example): University GPA
 
-**Given:** $N = 10,000$, $n = 100$, $\\bar{y} = 3.42$, $s^2 = 0.25$
+**Given:** $N = 10,000$, $n = 100$, $\[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary) = 3.42$, $s^2 = 0.25$
 
 Sampling fraction: $f = 100/10000 = 0.01$
 
 FPC: $1 - f = 0.99$
 
-Standard error:
+[Standard error](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#standard-error):
 $$
-SE(\\bar{y}) = \\sqrt{0.99 \\times \\frac{0.25}{100}} = \\sqrt{0.002475} \\approx 0.04975
+SE(\[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary)) = \\sqrt{0.99 \\times \\frac{0.25}{100}} = \\sqrt{0.002475} \\approx 0.04975
 $$
 
 95% CI:
@@ -448,7 +448,7 @@ flowchart LR
     style K fill:#c8e6c9
 ```
 
-## 3.2 Stratified Random Sampling
+## 3.2 Stratified [Random Sampling](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Reading%20Material%20The%20Chi-Square%20Test%20of%20Independence.md#random-sampling)
 
 ### 3.2.1 Conceptual Foundation
 
@@ -460,12 +460,12 @@ $$
 
 With $\\sum_{h=1}^H N_h = N$.
 
-### 3.2.2 Variance Decomposition
+### 3.2.2 [Variance Decomposition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#variance-decomposition)
 
-Total variance decomposition:
+Total [variance decomposition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#variance-decomposition):
 
 $$
-\\sigma^2 = \\underbrace{\\sum_{h=1}^H W_h \\sigma_h^2}_{\\text{Within}} + \\underbrace{\\sum_{h=1}^H W_h (\\bar{Y}_h - \\bar{Y})^2}_{\\text{Between}}
+\\sigma^2 = \\underbrace{\\sum_{h=1}^H W_h \\sigma_h^2}_{\\text{Within}} + \\underbrace{\\sum_{h=1}^H W_h (\\bar{Y}_h - \[\bar{Y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary))^2}_{\\text{Between}}
 $$
 
 where $W_h = N_h/N$.
@@ -501,7 +501,7 @@ $$
 
 Optimal allocation:
 $$
-n_h = \\frac{(C - c_0) W_h S_h / \\sqrt{c_h}}{\\sum_{k=1}^H W_k S_k \\sqrt{c_k}}
+n_h = \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)(C - c_0) W_h S_h / \\sqrt{c_h}}{\\sum_{k=1}^H W_k S_k \\sqrt{c_k}}
 $$
 
 Or for fixed $n$:
@@ -511,7 +511,7 @@ $$
 
 ### 3.2.4 Estimation
 
-**Stratified Mean:**
+**Stratified [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean):**
 $$
 \\bar{y}_{st} = \\sum_{h=1}^H W_h \\bar{y}_h = \\sum_{h=1}^H \\frac{N_h}{N} \\cdot \\frac{1}{n_h} \\sum_{i \\in s_h} y_{hi}
 $$
@@ -540,10 +540,10 @@ $$
 
 Under proportional allocation with small $n/N$:
 $$
-RE \\approx \\frac{S^2}{\\sum_{h=1}^H W_h S_h^2} = \\frac{\\sigma^2_{\\text{total}}}{\\sigma^2_{\\text{within}}}
+RE \\approx \\frac{S^2}{\\sum_{h=1}^H W_h S_h^2} = \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\\sigma^2_{\\text{total}}}{\\sigma^2_{\\text{within}}}
 $$
 
-### 3.2.6 Example: Height by Region
+### 3.2.6 [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example): Height by Region
 
 | Stratum | Region | $N_h$ (M) | $W_h$ | $S_h$ (cm) | $n_h$ (prop) | $n_h$ (Neyman) |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
@@ -554,7 +554,7 @@ $$
 | 5 | Central | 140 | 0.10 | 6.8 | 10 | 17 |
 | **Total** | | **1400** | **1.00** | | **100** | **120** |
 
-Stratified mean calculation:
+Stratified [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) calculation:
 $$
 \\bar{y}_{st} = 0.25(165.2) + 0.20(162.8) + 0.30(168.1) + 0.15(164.5) + 0.10(166.9) = 165.43 \\text{ cm}
 $$
@@ -622,7 +622,7 @@ $$
 If $y_i = a + bi + \\epsilon_i$:
 
 $$
-Var(\\bar{y}_{sys}) \\approx \\frac{(N-n)b^2(k^2-1)}{12N}
+Var(\\bar{y}_{sys}) \\approx \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)(N-n)b^2(k^2-1)}{12N}
 $$
 
 **Variance under periodic variation:**
@@ -673,7 +673,7 @@ $$
 
 Select $m$ clusters from $M$ via SRS. Measure all $N$ units in each selected cluster (when $N_i = \\bar{N}$ for all $i$).
 
-**Cluster Mean:**
+**Cluster [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean):**
 $$
 \\bar{y}_{cl} = \\frac{1}{m} \\sum_{i=1}^m \\bar{y}_i
 $$
@@ -683,12 +683,12 @@ $$
 Var(\\bar{y}_{cl}) = \\left(1 - \\frac{m}{M}\\right) \\frac{S_b^2}{m}
 $$
 
-where $S_b^2 = \\frac{1}{M-1}\\sum_{i=1}^M (\\bar{Y}_i - \\bar{Y})^2$ is the between-cluster variance.
+where $S_b^2 = \\frac{1}{M-1}\\sum_{i=1}^M (\\bar{Y}_i - \[\bar{Y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary))^2$ is the between-cluster variance.
 
 **Intraclass Correlation Coefficient (ICC):**
 
 $$
-\\rho = \\frac{\\sigma_b^2 - \\sigma_w^2/(N-1)}{\\sigma^2}
+\\rho = \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\\sigma_b^2 - \\sigma_w^2/(N-1)}{\\sigma^2}
 $$
 
 where $\\sigma_b^2$ is between-cluster variance and $\\sigma_w^2$ is within-cluster variance.
@@ -706,12 +706,12 @@ Stage 2: Select $n_i$ units from $N_i$ within each selected cluster.
 
 **Unbiased Estimator:**
 $$
-\\hat{\\bar{Y}} = \\frac{1}{m} \\sum_{i=1}^m \\frac{N_i \\bar{y}_i}{\\bar{N}} = \\frac{1}{m\\bar{N}} \\sum_{i=1}^m \\hat{Y}_i
+\\hat{\[\bar{Y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary)} = \\frac{1}{m} \\sum_{i=1}^m \\frac{N_i \\bar{y}_i}{\\bar{N}} = \\frac{1}{m\\bar{N}} \\sum_{i=1}^m \\hat{Y}_i
 $$
 
 **Variance:**
 $$
-Var(\\hat{\\bar{Y}}) = \\left(1 - \\frac{m}{M}\\right) \\frac{S_b^2}{m} + \\frac{1}{mM\\bar{N}^2} \\sum_{i=1}^M N_i^2 \\left(1 - \\frac{n_i}{N_i}\\right) \\frac{S_{w_i}^2}{n_i}
+Var(\\hat{\[\bar{Y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary)}) = \\left(1 - \\frac{m}{M}\\right) \\frac{S_b^2}{m} + \\frac{1}{mM\\bar{N}^2} \\sum_{i=1}^M N_i^2 \\left(1 - \\frac{n_i}{N_i}\\right) \\frac{S_{w_i}^2}{n_i}
 $$
 
 ### 3.4.4 Cluster vs. SRS Efficiency
@@ -760,7 +760,7 @@ Stage 4: Ultimate Sampling Units (USUs) - e.g., Households
 
 ### 3.5.2 Variance in Multi-Stage Designs
 
-For a three-stage design with simple random sampling at each stage:
+For a three-stage design with simple [random sampling](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Reading%20Material%20The%20Chi-Square%20Test%20of%20Independence.md#random-sampling) at each stage:
 
 $$
 Var(\\hat{Y}) = \\frac{M^2}{m} S_1^2 + \\frac{M}{m} \\sum_{i=1}^M \\frac{N_i^2}{n_i} S_{2i}^2 + \\frac{M}{m} \\sum_{i=1}^M \\frac{N_i}{n_i} \\sum_{j=1}^{N_i} \\frac{K_{ij}^2}{k_{ij}} S_{3ij}^2
@@ -799,7 +799,7 @@ graph TD
 
 ### 3.6.1 Unequal Probability Sampling
 
-When cluster sizes vary dramatically, equal probability selection is inefficient. PPS sampling assigns selection probabilities proportional to a measure of size $X_i$.
+When cluster sizes vary dramatically, equal probability selection is inefficient. PPS sampling assigns selection [probabilities](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L2/Reading%201%20An%20Introduction%20to%20Decision%20Theory.md#probabilities) proportional to a measure of size $X_i$.
 
 $$
 \\pi_i = n \\cdot \\frac{X_i}{X_{\\text{total}}} = n \\cdot \\frac{X_i}{\\sum_{j=1}^N X_j}
@@ -845,7 +845,7 @@ graph LR
 
 ## 4.1 Convenience Sampling
 
-### 4.1.1 Definition
+### 4.1.1 [Definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L1/Probability%20and%20Distribution.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#definition)))))
 
 Selection based on ease of access. The inclusion probability is unknown and potentially zero for many population members.
 
@@ -858,14 +858,14 @@ $$
 
 ### 4.1.2 Bias Structure
 
-The convenience sample mean can be decomposed as:
+The convenience sample [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) can be decomposed as:
 
 $$
-E[\\bar{y}_{conv}] = \\bar{Y} + B_{\\text{coverage}} + B_{\\text{selection}} + B_{\\text{nonresponse}}
+E[\\bar{y}_{conv}] = \[\bar{Y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary) + B_{\\text{coverage}} + B_{\\text{selection}} + B_{\\text{nonresponse}}
 $$
 
 where:
-- $B_{\\text{coverage}} = \\bar{Y}_{\\text{frame}} - \\bar{Y}$ (frame bias)
+- $B_{\\text{coverage}} = \\bar{Y}_{\\text{frame}} - \[\bar{Y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary)$ (frame bias)
 - $B_{\\text{selection}} = E[\\bar{y}_{conv}] - \\bar{Y}_{\\text{frame}}$ (selection bias)
 - $B_{\\text{nonresponse}} = \\bar{Y}_{\\text{respondent}} - \\bar{Y}_{\\text{selected}}$ (nonresponse bias)
 
@@ -880,7 +880,7 @@ where:
 
 ### 4.2.1 Controlled Convenience
 
-Quota sampling imposes demographic controls on convenience selection. Interviewers select respondents to match population proportions on key characteristics.
+Quota sampling imposes demographic controls on convenience selection. Interviewers select respondents to match population proportions on [key characteristics](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W9/L1/PCA%20Vs%20Factor%20Analysis.md#key-characteristics).
 
 **Quota constraints:**
 $$
@@ -921,7 +921,7 @@ $$
 The RDS-II estimator (Volz-Heckathorn) is:
 
 $$
-\\hat{\\bar{Y}}_{RDS} = \\frac{\\sum_{i \\in s} y_i / d_i}{\\sum_{i \\in s} 1/d_i}
+\\hat{\[\bar{Y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary)}_{RDS} = \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\\sum_{i \\in s} y_i / d_i}{\\sum_{i \\in s} 1/d_i}
 $$
 
 ### 4.3.3 Snowball Diagram
@@ -989,32 +989,32 @@ graph LR
 
 The **sampling distribution** of a statistic is the probability distribution of that statistic over all possible samples of size $n$ from the population.
 
-### 5.1.1 Exact Sampling Distribution of the Mean (Normal Population)
+### 5.1.1 Exact Sampling Distribution of the [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) (Normal Population)
 
 If $Y \\sim N(\\mu, \\sigma^2)$, then:
 
 $$
-\\bar{y} \\sim N\\left(\\mu, \\frac{\\sigma^2}{n}\\right)
+\[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary) \\sim N\\left(\\mu, \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\\sigma^2}{n}\\right)
 $$
 
 and:
 
 $$
-Z = \\frac{\\bar{y} - \\mu}{\\sigma/\\sqrt{n}} \\sim N(0, 1)
+Z = \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary) - \\mu}{\\sigma/\\sqrt{n}} \\sim N(0, 1)
 $$
 
-### 5.1.2 t-Distribution (Unknown Variance)
+### 5.1.2 [t-Distribution](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#t-distribution) (Unknown Variance)
 
 When $\\sigma^2$ is unknown and estimated by $s^2$:
 
 $$
-T = \\frac{\\bar{y} - \\mu}{s/\\sqrt{n}} \\sim t_{n-1}
+T = \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary) - \\mu}{s/\\sqrt{n}} \\sim t_{n-1}
 $$
 
-The t-distribution has density:
+The [t-distribution](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#t-distribution) has density:
 
 $$
-f(t) = \\frac{\\Gamma((\\nu+1)/2)}{\\sqrt{\\nu\\pi} \\Gamma(\\nu/2)} \\left(1 + \\frac{t^2}{\\nu}\\right)^{-(\\nu+1)/2}
+f(t) = \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\\Gamma((\\nu+1)/2)}{\\sqrt{\\nu\\pi} \\Gamma(\\nu/2)} \\left(1 + \\frac{t^2}{\\nu}\\right)^{-(\\nu+1)/2}
 $$
 
 where $\\nu = n-1$ degrees of freedom.
@@ -1024,7 +1024,7 @@ where $\\nu = n-1$ degrees of freedom.
 For sample variance from normal population:
 
 $$
-\\frac{(n-1)s^2}{\\sigma^2} \\sim \\chi^2_{n-1}
+\[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)(n-1)s^2}{\\sigma^2} \\sim \\chi^2_{n-1}
 $$
 
 Chi-square density:
@@ -1048,13 +1048,13 @@ $$
 Let $Y_1, Y_2, \\ldots, Y_n$ be i.i.d. with $E[Y_i] = \\mu$ and $Var(Y_i) = \\sigma^2 < \\infty$. Then:
 
 $$
-\\sqrt{n}(\\bar{y} - \\mu) \\xrightarrow{d} N(0, \\sigma^2)
+\\sqrt{n}(\[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary) - \\mu) \\xrightarrow{d} N(0, \\sigma^2)
 $$
 
 Equivalently:
 
 $$
-\\frac{\\bar{y} - \\mu}{\\sigma/\\sqrt{n}} \\xrightarrow{d} N(0, 1)
+\[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary) - \\mu}{\\sigma/\\sqrt{n}} \\xrightarrow{d} N(0, 1)
 $$
 
 ### 5.2.2 Lyapunov CLT
@@ -1076,20 +1076,20 @@ $$
 For sampling without replacement from finite population:
 
 $$
-\\frac{\\bar{y} - \\bar{Y}}{\\sqrt{(1-n/N)S^2/n}} \\xrightarrow{d} N(0, 1)
+\[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary) - \[\bar{Y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary)}{\\sqrt{(1-n/N)S^2/n}} \\xrightarrow{d} N(0, 1)
 $$
 
 as $n \\to \\infty$, $N \\to \\infty$, and $n/N \\to f \\in [0, 1)$.
 
 ### 5.2.4 Multivariate CLT
 
-For random vectors $\\mathbf{Y}_i$ with mean $\\boldsymbol{\\mu}$ and covariance $\\boldsymbol{\\Sigma}$:
+For random vectors $\\mathbf{Y}_i$ with [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) $\\boldsymbol{\\mu}$ and covariance $\\boldsymbol{\\Sigma}$:
 
 $$
 \\sqrt{n}(\\bar{\\mathbf{y}} - \\boldsymbol{\\mu}) \\xrightarrow{d} N(\\mathbf{0}, \\boldsymbol{\\Sigma})
 $$
 
-## 5.3 CLT Visualization and Implications
+## 5.3 CLT [Visualization](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#visualization) and Implications
 
 ```mermaid
 graph LR
@@ -1229,7 +1229,7 @@ $k$-th sample moment: $m_k' = \\frac{1}{n}\\sum_{i=1}^n y_i^k$
 
 Set $\\mu_k' = m_k'$ for $k = 1, \\ldots, K$ (where $K$ = number of parameters).
 
-### 6.2.2 Example: Gamma Distribution
+### 6.2.2 [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example): Gamma Distribution
 
 For $Y \\sim \\text{Gamma}(\\alpha, \\beta)$:
 
@@ -1240,7 +1240,7 @@ $$
 Solving:
 
 $$
-\\hat{\\alpha}_{MM} = \\frac{\\bar{y}^2}{s^2}, \\quad \\hat{\\beta}_{MM} = \\frac{s^2}{\\bar{y}}
+\\hat{\\alpha}_{MM} = \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary)^2}{s^2}, \\quad \\hat{\\beta}_{MM} = \\frac{s^2}{\[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary)}
 $$
 
 ## 6.3 Maximum Likelihood Estimation (MLE)
@@ -1263,12 +1263,12 @@ $$
 **Normal Distribution:**
 
 $$
-\\hat{\\mu}_{MLE} = \\bar{y}, \\quad \\hat{\\sigma}^2_{MLE} = \\frac{1}{n}\\sum_{i=1}^n (y_i - \\bar{y})^2 = \\frac{n-1}{n}s^2
+\\hat{\\mu}_{MLE} = \[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary), \\quad \\hat{\\sigma}^2_{MLE} = \\frac{1}{n}\\sum_{i=1}^n (y_i - \[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary))^2 = \\frac{n-1}{n}s^2
 $$
 
 Note: MLE for variance is biased.
 
-**Bernoulli Distribution:**
+**[Bernoulli Distribution](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L1/Probability%20and%20Distribution.md#bernoulli-distribution):**
 
 $$
 \\hat{p}_{MLE} = \\frac{1}{n}\\sum_{i=1}^n y_i = p
@@ -1277,7 +1277,7 @@ $$
 **Exponential Distribution:**
 
 $$
-\\hat{\\lambda}_{MLE} = \\frac{1}{\\bar{y}}
+\\hat{\\lambda}_{MLE} = \\frac{1}{\[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary)}
 $$
 
 ### 6.3.3 Asymptotic Properties of MLE
@@ -1302,7 +1302,7 @@ $$
 
 ### 6.4.2 Point Estimates from Posterior
 
-**Posterior Mean:**
+**Posterior [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean):**
 $$
 \\hat{\\theta}_{Bayes} = E[\\theta | \\mathbf{y}] = \\int \\theta \\pi(\\theta | \\mathbf{y}) d\\theta
 $$
@@ -1353,7 +1353,7 @@ graph TD
 
 # 7. Confidence Intervals
 
-## 7.1 Definition and Interpretation
+## 7.1 [Definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L1/Probability%20and%20Distribution.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#definition))))) and Interpretation
 
 A $(1-\\alpha)100\\%$ confidence interval for $\\theta$ is a random interval $(L(\\mathbf{y}), U(\\mathbf{y}))$ such that:
 
@@ -1363,18 +1363,18 @@ $$
 
 **Critical distinction:** The interval is random, not the parameter. After observation, we say we have $(1-\\alpha)100\\%$ confidence that the true parameter lies in the realized interval.
 
-## 7.2 Confidence Intervals for the Mean
+## 7.2 Confidence Intervals for the [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean)
 
 ### 7.2.1 Normal Population, Known Variance
 
 $$
-CI = \\bar{y} \\pm z_{\\alpha/2} \\frac{\\sigma}{\\sqrt{n}}
+CI = \[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary) \\pm z_{\\alpha/2} \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\\sigma}{\\sqrt{n}}
 $$
 
 ### 7.2.2 Normal Population, Unknown Variance
 
 $$
-CI = \\bar{y} \\pm t_{\\alpha/2, n-1} \\frac{s}{\\sqrt{n}}
+CI = \[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary) \\pm t_{\\alpha/2, n-1} \\frac{s}{\\sqrt{n}}
 $$
 
 ### 7.2.3 Large Sample (CLT-based)
@@ -1382,7 +1382,7 @@ $$
 For any population with finite variance, when $n$ is large:
 
 $$
-CI = \\bar{y} \\pm z_{\\alpha/2} \\frac{s}{\\sqrt{n}}
+CI = \[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary) \\pm z_{\\alpha/2} \\frac{s}{\\sqrt{n}}
 $$
 
 ### 7.2.4 Finite Population Correction
@@ -1390,7 +1390,7 @@ $$
 For sampling without replacement:
 
 $$
-CI = \\bar{y} \\pm z_{\\alpha/2} \\sqrt{\\left(1 - \\frac{n}{N}\\right) \\frac{s^2}{n}}
+CI = \[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#bary) \\pm z_{\\alpha/2} \\sqrt{\\left(1 - \\frac{n}{N}\\right) \\frac{s^2}{n}}
 $$
 
 ## 7.3 Confidence Intervals for Proportions
@@ -1413,7 +1413,7 @@ where $z = z_{\\alpha/2}$.
 
 ### 7.3.3 Clopper-Pearson Exact Interval
 
-Based on the binomial distribution directly:
+Based on the [binomial distribution](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L1/Probability%20and%20Distribution.md#binomial-distribution) directly:
 
 $$
 L = B(\\alpha/2; p, n-p+1)
@@ -1434,7 +1434,7 @@ $$
 $$
 
 $$
-CI = \\tilde{p} \\pm z\\sqrt{\\frac{\\tilde{p}(1-\\tilde{p})}{\\tilde{n}}}
+CI = \\tilde{p} \\pm z\\sqrt{\[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\\tilde{p}(1-\\tilde{p})}{\\tilde{n}}}
 $$
 
 ## 7.4 Confidence Intervals for Variance
@@ -1442,7 +1442,7 @@ $$
 ### 7.4.1 Normal Population
 
 $$
-CI = \\left(\\frac{(n-1)s^2}{\\chi^2_{\\alpha/2, n-1}}, \\frac{(n-1)s^2}{\\chi^2_{1-\\alpha/2, n-1}}\\right)
+CI = \\left(\[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)(n-1)s^2}{\\chi^2_{\\alpha/2, n-1}}, \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)(n-1)s^2}{\\chi^2_{1-\\alpha/2, n-1}}\\right)
 $$
 
 ### 7.4.2 Ratio of Two Variances
@@ -1465,7 +1465,7 @@ $$
 
 ### 7.5.2 Bias-Corrected and Accelerated (BCa)
 
-Adjusts for bias and skewness in bootstrap distribution:
+Adjusts for bias and [skewness](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#skewness) in bootstrap distribution:
 
 $$
 CI = [\\hat{\\theta}^*_{(\\alpha_1)}, \\hat{\\theta}^*_{(\\alpha_2)}]
@@ -1474,11 +1474,11 @@ $$
 where:
 
 $$
-\\alpha_1 = \\Phi\\left(\\hat{z}_0 + \\frac{\\hat{z}_0 + z_{\\alpha/2}}{1 - \\hat{a}(\\hat{z}_0 + z_{\\alpha/2})}\\right)
+\\alpha_1 = \\Phi\\left(\\hat{z}_0 + \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\\hat{z}_0 + z_{\\alpha/2}}{1 - \\hat{a}(\\hat{z}_0 + z_{\\alpha/2})}\\right)
 $$
 
 $$
-\\alpha_2 = \\Phi\\left(\\hat{z}_0 + \\frac{\\hat{z}_0 + z_{1-\\alpha/2}}{1 - \\hat{a}(\\hat{z}_0 + z_{1-\\alpha/2})}\\right)
+\\alpha_2 = \\Phi\\left(\\hat{z}_0 + \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\\hat{z}_0 + z_{1-\\alpha/2}}{1 - \\hat{a}(\\hat{z}_0 + z_{1-\\alpha/2})}\\right)
 $$
 
 ## 7.6 Confidence Interval Diagram
@@ -1515,7 +1515,7 @@ Sample size determination balances:
 - **Cost** (resources)
 - **Power** (for hypothesis tests)
 
-## 8.2 Sample Size for Estimating a Mean
+## 8.2 Sample Size for Estimating a [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean)
 
 ### 8.2.1 Infinite Population or With Replacement
 
