@@ -1,6 +1,6 @@
-This module provides a foundational bridge between raw pixel data and meaningful machine learning features. While deep learning models (like CNNs) automatically learn hierarchical features, understanding manual **Computer Vision (CV)** techniques is vital for classical machine learning pipelines, computational efficiency, and robust preprocessing.
+This module provides a foundational bridge between raw pixel data and meaningful machine learning features. While deep learning models (like CNNs) automatically learn hierarchical features, understanding manual **Computer Vision (CV)** techniques is vital for classical machine learning pipelines, computational efficiency, and robust [preprocessing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/L1/Demonstration.md#preprocessing).
 
-### 1. The Challenges of Image Data
+### [1. The Challenges of Image Data](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W6/1.%20Module%20Introduction.md#1-the-challenges-of-image-data)
 
 Unlike tabular data, images require a different engineering mindset due to:
 
