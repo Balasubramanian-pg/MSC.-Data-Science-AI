@@ -25,20 +25,20 @@ $$
 
 These methods are extremely important, but many real-world problems involve comparisons across several groups simultaneously.
 
-For example:
+For [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
 
 - comparing four teaching methods
     
 - evaluating multiple marketing campaigns
     
-- comparing several manufacturing processes
+- comparing several [manufacturing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L2/Errors%2C%20P-values%2C%20and%20Significance.md#manufacturing) processes
     
 - testing multiple drug treatments
     
 
 In such situations, repeatedly conducting separate two-sample tests becomes statistically inefficient and potentially misleading.
 
-This module introduces experimental design and Analysis of Variance (ANOVA), which extend statistical inference to multi-group comparisons.
+This module introduces experimental design and [Analysis of Variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#analysis-of-variance) (ANOVA), which extend statistical inference to multi-group comparisons.
 
 # 2. The Central Problem of Multi-Group Comparison
 
@@ -84,7 +84,7 @@ Experimental design determines:
     
 - how variability is controlled
     
-- how causal conclusions can be justified
+- how causal [conclusions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#conclusions) can be justified
     
 
 Good experimental design improves statistical power before any calculations occur.
@@ -119,9 +119,9 @@ Randomization is therefore one of the foundational mechanisms for establishing c
 
 # 5. Why Randomization Matters
 
-Without randomization, hidden variables may distort conclusions.
+Without randomization, hidden variables may distort [conclusions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#conclusions).
 
-Examples include:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples) include:
 
 - prior ability
     
@@ -148,7 +148,7 @@ A randomized block design attempts to control this variability explicitly.
 
 Subjects are first grouped into relatively homogeneous blocks based on some important characteristic.
 
-Examples include blocking by:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples) include blocking by:
 
 - age
     
@@ -165,7 +165,7 @@ Randomization then occurs within each block.
 
 # 7. The Logic of Blocking
 
-Blocking removes unwanted variability from the error term.
+Blocking removes unwanted variability from the [error term](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#error-term).
 
 This produces:
 
@@ -179,12 +179,12 @@ This produces:
 The statistical logic is:
 
 $$  
-\text{Noise Reduction}  
+\text{[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)) Reduction}  
 \rightarrow  
 \text{Higher Sensitivity}  
 $$
 
-\text{Noise Reduction}\rightarrow\text{Higher Sensitivity}
+\text{[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)) Reduction}\rightarrow\text{Higher Sensitivity}
 
 This reflects a central idea in modern statistics:
 
@@ -195,14 +195,14 @@ This reflects a central idea in modern statistics:
 ANOVA stands for:
 
 $$  
-\text{Analysis of Variance}  
+\text{[Analysis of Variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#analysis-of-variance)}  
 $$
 
-\text{Analysis of Variance}
+\text{[Analysis of Variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#analysis-of-variance)}
 
 Despite the name, ANOVA is fundamentally used to compare means across multiple groups.
 
-The core inferential question becomes:
+The core inferential [question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#question))) becomes:
 
 $$  
 \text{Are the population means all equal?}  
@@ -220,7 +220,7 @@ $$
 \mu_1,\mu_2,\dots,\mu_k  
 $$
 
-The null hypothesis is:
+The [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis) is:
 
 $$  
 H_0:  
@@ -229,7 +229,7 @@ $$
 
 H_0:\mu_1=\mu_2=\dots=\mu_k
 
-The alternative hypothesis states that at least one population mean differs.
+The [alternative hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L2/Errors%2C%20P-values%2C%20and%20Significance.md#alternative-hypothesis) states that at least one population [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) differs.
 
 # 9. Why ANOVA Uses Variance to Compare Means
 
@@ -239,7 +239,7 @@ Why analyze variance when the goal is comparing means?
 
 The key insight is:
 
-> Mean differences generate variability between groups.
+> [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) differences generate variability between groups.
 
 If group means differ substantially, observations from different groups become more spread out overall.
 
@@ -261,21 +261,21 @@ $$
 
 emerges.
 
-# 10. The F-Statistic in ANOVA
+# 10. The [F-Statistic](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#f-statistic) in ANOVA
 
-ANOVA uses the F-statistic:
+ANOVA uses the [F-statistic](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#f-statistic):
 
 # $$  
 F
 
-\frac{  
+[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)  
 \text{Between-Group Variance}  
 }{  
 \text{Within-Group Variance}  
 }  
 $$
 
-F=\frac{\text{Between-Group Variance}}{\text{Within-Group Variance}}
+F=[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\text{Between-Group Variance}}{\text{Within-Group Variance}}
 
 Interpretation:
 
@@ -303,12 +303,12 @@ It measures:
 
 - individual differences
     
-- measurement noise
+- measurement [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))
     
-- unexplained variability
+- [unexplained variability](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#unexplained-variability)
     
 
-This variability acts as background noise.
+This variability acts as background [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)).
 
 Smaller within-group variance makes true treatment effects easier to detect.
 
@@ -320,13 +320,13 @@ If treatments genuinely affect outcomes, group means separate from one another.
 
 This increases between-group variability.
 
-ANOVA therefore evaluates whether observed mean separation exceeds what would reasonably occur from random variation alone.
+ANOVA therefore evaluates whether observed [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) separation exceeds what would reasonably occur from random variation alone.
 
 # 13. Interpretation of ANOVA Results
 
 ANOVA itself does not identify exactly which groups differ.
 
-It only determines whether evidence exists that at least one mean differs.
+It only determines whether evidence exists that at least one [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) differs.
 
 A significant ANOVA result implies:
 
@@ -350,7 +350,7 @@ Applications include:
     
 - clinical trials
     
-- manufacturing optimization
+- [manufacturing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L2/Errors%2C%20P-values%2C%20and%20Significance.md#manufacturing) optimization
     
 - business experimentation
     
@@ -358,28 +358,28 @@ Applications include:
     
 - machine learning benchmarking
     
-- industrial engineering
+- industrial [engineering](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L2/Errors%2C%20P-values%2C%20and%20Significance.md#engineering)
     
 
 Much of modern experimentation depends fundamentally on ANOVA-style reasoning.
 
-# 15. Deep Statistical Intuition
+# 15. Deep Statistical [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#intuition))))
 
 ANOVA evaluates:
 
 $$  
-\text{Signal}  
+\text{[Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#signal))}  
 \quad vs \quad  
-\text{Noise}  
+\text{[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))}  
 $$
 
-\text{Signal}\quad vs \quad\text{Noise}
+\text{[Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#signal))}\quad vs \quad\text{[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))}
 
 where:
 
-- signal = systematic differences among group means
+- [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) = systematic differences among group means
     
-- noise = random variation within groups
+- [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)) = random variation within groups
     
 
 The entire framework asks:
@@ -421,4 +421,4 @@ Experimental design and ANOVA form the foundation for much of:
 
 These methods are not merely academic tools.
 
-They are central mechanisms for extracting reliable conclusions from complex multi-group systems.
+They are central mechanisms for extracting reliable [conclusions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#conclusions) from complex multi-group systems.
