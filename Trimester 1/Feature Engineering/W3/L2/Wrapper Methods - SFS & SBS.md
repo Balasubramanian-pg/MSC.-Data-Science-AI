@@ -1,11 +1,11 @@
 ### Wrapper Methods: Sequential Feature Selection (SFS/SBS)
 
-#### 1. Clear Overview
+#### [1. Clear Overview](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W1/3.%20Working%20With%20Sample%20Dataset%20-%20I.md#1-clear-overview)
 
 Wrapper methods perform feature selection by treating the machine learning model as a "black box" and evaluating different feature subsets based on their predictive performance. 
 Unlike filter methods, which rely on independent statistical scores, wrapper methods incorporate the model’s actual performance into the selection process, making them highly effective but computationally demanding.
 
-#### 2. Sequential Forward Selection (SFS)
+#### [2. Sequential Forward Selection](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/Readme.md#2-sequential-forward-selection) (SFS)
 
 SFS is a **bottom-up** approach that builds the feature set from scratch.
 
@@ -20,9 +20,9 @@ SFS is a **bottom-up** approach that builds the feature set from scratch.
 - **Intuition:** It greedily builds the "best" subset by selecting the strongest contributor at each individual step.
     
 
-#### 3. Sequential Backward Selection (SBS)
+#### [3. Sequential Backward Selection](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/Readme.md#3-sequential-backward-selection) (SBS)
 
-SBS is a **top-down** approach that prunes features from the full dataset.
+SBS is a **top-down** approach that prunes features from the full [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/Experiential%20Learning%20Activity.md#dataset).
 
 - **Logic:**
     
@@ -70,13 +70,13 @@ sbs_features = X.columns[sbs.get_support()]
 
 #### 6. Trade-offs and Best Practices
 
-- **Computational Cost:** Both methods are computationally expensive because they require training the model repeatedly for every candidate feature at every step.
+- **Computational Cost:** Both methods are computationally expensive because they require [training the model](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/L2/Embedded%20Methods.md#training-the-model) repeatedly for every candidate feature at every step.
     
 - **Greedy Strategy:** These methods do not guarantee the **globally optimal** subset. Because they make the "locally best" choice at each step, they might overlook a combination of features that perform better together but are individually weak.
     
 - **Interpretation:** The resulting subsets often differ significantly between SFS and SBS due to the different starting points. This highlights that "the best feature set" is partially dependent on the methodology used to find it.
     
 
-**Application Summary:** Use wrapper methods when accuracy is paramount and you have the computational resources to support multiple training iterations. If computational time is a major constraint, consider embedded methods (like Lasso or Random Forest feature importance) as a faster, model-aware alternative.
+**[Application Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W2/2.%20Discretization.md#application-[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary))):** Use wrapper methods when accuracy is paramount and you have the computational resources to support multiple training iterations. If computational time is a major constraint, consider embedded methods (like Lasso or Random Forest feature importance) as a faster, model-aware alternative.
 
-Would you like to move on to the final summary of feature selection methods or perhaps perform a Python exercise on these concepts?
+Would you like to move on to the final [summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary)) of feature selection methods or perhaps perform a Python exercise on these concepts?
