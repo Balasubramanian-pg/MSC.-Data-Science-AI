@@ -19,7 +19,7 @@ Below is a structured approach to each of your tasks, with technical guidance an
     - Use `df.hist()` for numeric variables (`age`, `balance`, `duration`) to check for skewness.
         
 
-### 2. Feature Construction & Transformation
+### [2. Feature Construction](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/L1/Demonstration.md#2-feature-construction) & Transformation
 
 - **Construction:**
     
@@ -95,7 +95,7 @@ model_pipeline = Pipeline(steps=[
     
 2. **Validate:** The "Stretch Goal" is the most important part. Compare the performance of the model using **(a) raw data** (no engineering), **(b) manually constructed features only**, and **(c) features selected by SFS/SBS**.
     
-3. **Visualization:** Use `matplotlib` to plot the "Top 10 Important Features" from your Random Forest embedded method. This is usually the most compelling way to present your work to stakeholders.
+3. **[Visualization](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W4/Readme.md#visualization):** Use `matplotlib` to plot the "Top 10 Important Features" from your Random Forest embedded method. This is usually the most compelling way to present your work to stakeholders.
     
 
 **Which of these tasks would you like to start with? I can help you draft the code for the correlation ranking or the wrapper selection method if you provide the column list.**
