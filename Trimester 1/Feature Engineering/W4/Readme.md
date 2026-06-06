@@ -1,6 +1,6 @@
 # Week 4: Dimensionality Reduction Techniques
 
-## 1. Concept Introduction
+## [1. Concept Introduction](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W1/Readme.md#1-concept-introduction)
 
 High-dimensional data is structurally unstable. As the number of features (dimensions) grows, the volume of the feature space expands exponentially, causing data points to become increasingly sparse. This "Curse of Dimensionality" degrades the statistical significance of distance metrics, induces multicollinearity, and massively inflates computational inference costs.
 
@@ -8,7 +8,7 @@ Dimensionality Reduction is the mathematical framework for projecting a high-dim
 
 It fundamentally addresses the hypothesis that high-dimensional data actually lies on or near a lower-dimensional manifold embedded within the higher-dimensional space.
 
-## 2. Intuition and Real-World Analogy
+## [2. Intuition and Real-World Analogy](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W1/Readme.md#2-intuition-and-real-world-analogy)
 
 **The Shadow Analogy (Linear Dimensionality Reduction)**
 Imagine holding a complex 3D wireframe object, like a bicycle, and shining a flashlight on it to cast a shadow on a 2D wall. 
@@ -23,9 +23,9 @@ Imagine trying to flatten a 3D globe into a 2D map. You cannot simply smash the 
 
 PCA is a deterministic, linear transformation algorithm. Its objective is to find a set of orthogonal axes (Principal Components) along which the variance of the data is maximized. 
 
-### Step-by-Step Derivation
+### [Step-by-Step Derivation](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W6/Readme.md#step-by-step-derivation)
 
-Given a dataset $X \in \mathbb{R}^{n \times d}$ (where $n$ is samples, $d$ is features).
+Given a [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/Experiential%20Learning%20Activity.md#dataset) $X \in \mathbb{R}^{n \times d}$ (where $n$ is samples, $d$ is features).
 
 **Step 1: Mean Centering**
 We must center the data so the origin is the center of mass.
@@ -57,7 +57,7 @@ $$
 > [!IMPORTANT]
 > The first principal component (PC1) is the line of best fit that minimizes the orthogonal projection error from the data points to the line. It is geometrically identical to maximizing the variance of the projected points.
 
-## 4. Visual Architecture: The Dimensionality Reduction Tree
+## [4. Visual Architecture](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W1/Readme.md#4-visual-architecture): The Dimensionality Reduction Tree
 
 ```mermaid
 flowchart TD
@@ -161,7 +161,7 @@ plt.show()
 
 *Expected output visual logic:* The noisy image looks like television static. The SVD reconstructed image strips away the high-frequency static, revealing the clean cross structure underneath, purely by dropping the lowest-variance singular values.
 
-## 7. t-Distributed Stochastic Neighbor Embedding (t-SNE)
+## 7. [t-Distributed Stochastic Neighbor Embedding (t-SNE)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W4/t-SNE.md#t-distributed-stochastic-neighbor-embedding-t-sne)
 
 PCA and SVD fail completely when the data lies on a complex, non-linear manifold (e.g., a rolled-up sheet of paper). **t-SNE** is a probabilistic algorithm specifically designed to untangle non-linear data for human visualization.
 
@@ -191,7 +191,7 @@ $$
 
 ## 8. Python Simulation: PCA vs t-SNE on a Non-Linear Manifold
 
-This simulation uses the classic "Swiss Roll" dataset to prove the necessity of non-linear techniques.
+This simulation uses the classic "Swiss Roll" [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/Experiential%20Learning%20Activity.md#dataset) to prove the necessity of non-linear techniques.
 
 ```python
 import numpy as np
@@ -249,14 +249,14 @@ plt.show()
 
 - **Failing to Scale Before PCA:** PCA is variance-maximizing. If Feature A is in millions and Feature B is in decimals, PC1 will perfectly align with Feature A simply due to magnitude, completely ignoring the structural signal in Feature B. *Always use `StandardScaler` before PCA.*
 - **Using t-SNE features for downstream Machine Learning Models:** t-SNE is a nonparametric mapping. It does not yield a function $f(x)$ to project new unseen data into the same space. You cannot easily `fit` on train and `transform` on test. Furthermore, t-SNE destroys data density (clusters appear uniformly sized). It is for *eyes*, not for *algorithms*.
-- **Misinterpreting t-SNE Perplexity:** Perplexity roughly equates to the number of expected nearest neighbors. Using a perplexity of 5 on a dataset of 10,000 will result in fragmented, noisy clusters. Using a perplexity of 5,000 will collapse the entire dataset into a central blob.
+- **Misinterpreting t-SNE Perplexity:** Perplexity roughly equates to the number of expected nearest neighbors. Using a perplexity of 5 on a [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/Experiential%20Learning%20Activity.md#dataset) of 10,000 will result in fragmented, noisy clusters. Using a perplexity of 5,000 will collapse the entire [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/Experiential%20Learning%20Activity.md#dataset) into a central blob.
 
-## 11. Performance and Computational Insights
+## [11. Performance and Computational Insights](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W8/Readme.md#11-performance-and-computational-insights)
 
 - **Covariance vs SVD Complexity:** The covariance matrix in PCA takes $\mathcal{O}(nd^2)$ to compute, and eigendecomposition takes $\mathcal{O}(d^3)$. If you have text data with 100,000 features, PCA will freeze your machine. Truncated SVD uses iterative solvers (like ARPACK or Randomized SVD) that calculate only the top $k$ components in $\mathcal{O}(k \cdot n \cdot d)$, representing a massive computational optimization.
 - **t-SNE Barnes-Hut Approximation:** Exact t-SNE calculates pairwise distances between all $N$ points, yielding an $\mathcal{O}(N^2)$ complexity. Production t-SNE uses the Barnes-Hut algorithm (a quadtree optimization algorithm originally used in astrophysics for N-body simulations), reducing complexity to $\mathcal{O}(N \log N)$.
 
-## 12. Interview-Style Insights
+## [12. Interview-Style Insights](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W1/Readme.md#12-interview-style-insights)
 
 **Q: In PCA, how do you decide the optimal number of components $k$?**
 **A:** I evaluate the cumulative explained variance ratio. I calculate the eigenvalues, normalize them by their sum, and compute a cumulative sum. I typically select $k$ such that the cumulative explained variance exceeds a threshold, like 90% or 95%. Alternatively, I look for the "elbow" in a Scree Plot.
@@ -267,13 +267,13 @@ plt.show()
 **Q: Can you use PCA on categorical data?**
 **A:** Strictly speaking, no. PCA assumes continuous data and relies on variance and covariance, which are statistically meaningless for one-hot encoded nominal variables. For categorical data, you must use **Multiple Correspondence Analysis (MCA)**.
 
-## 13. Final Takeaways
+## [13. Final Takeaways](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W8/Readme.md#13-final-takeaways)
 
-### Mental Models
+### [Mental Models](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W1/Readme.md#mental-models)
 - **Information Conservation:** Think of dimensionality reduction not as deleting data, but as compressing an mp3. The highest-energy frequencies (Principal Components) are kept, and the low-energy frequencies (noise, minor variances) are discarded.
 - **The PCA Orthogonality:** Remember that every Principal Component is $90^\circ$ orthogonal to the others in multi-dimensional space. This guarantees that each new feature created by PCA is perfectly uncorrelated (Pearson $r = 0$) with the others, completely eradicating multicollinearity.
 
-### Advanced Learning Roadmap
+### [Advanced Learning Roadmap](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W1/Readme.md#advanced-learning-roadmap)
 1. **UMAP (Uniform Manifold Approximation and Projection):** The modern successor to t-SNE. Based on algebraic topology, it preserves both local and global structure, and is capable of projecting new unseen data.
 2. **Autoencoders:** Neural network-based non-linear dimensionality reduction. An encoder compresses data into a low-dimensional "bottleneck" (latent space), and a decoder attempts to reconstruct the original data, learning complex non-linear manifolds.
 3. **Kernel PCA:** Applying the kernel trick (similar to SVMs) to project data into a higher-dimensional infinite space, performing linear PCA there, and projecting back, effectively achieving non-linear PCA.
