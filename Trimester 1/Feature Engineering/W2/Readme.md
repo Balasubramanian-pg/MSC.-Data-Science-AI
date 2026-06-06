@@ -1,6 +1,6 @@
 # Week 2: Handling Numeric Data
 
-## 1. Concept Introduction
+## [1. Concept Introduction](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W1/Readme.md#1-concept-introduction)
 
 Handling numeric data is the mathematical core of feature engineering. While raw numbers might seem immediately ingestible by machine learning algorithms, their native representations—scale, variance, distribution shape, and noise levels—often violently violate the statistical assumptions of the underlying models.
 
@@ -9,7 +9,7 @@ Numeric feature engineering is the process of applying monotonic, non-monotonic,
 > [!IMPORTANT]
 > A machine learning model is blind to units. It does not know that $100,000$ represents a house price in dollars and $3$ represents the number of bedrooms. Without proper numeric transformations, the algorithm will mathematically assume that the house price is $33,333$ times more "important" than the bedroom count purely due to scalar magnitude.
 
-## 2. Intuition and Real-World Analogy
+## [2. Intuition and Real-World Analogy](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W1/Readme.md#2-intuition-and-real-world-analogy)
 
 Imagine trying to determine the "similarity" between two athletes based on two metrics:
 1. Weight in kilograms (Range: $60 - 120$)
@@ -23,7 +23,7 @@ Numeric engineering is like converting different currencies into a single, unive
 
 Scaling restricts the domain of numeric features. It does not change the shape of the distribution (unless non-linear transformations are used); it only translates and scales the axes.
 
-### A. Min-Max Scaling (Normalization)
+### A. [Min-Max Scaling](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W2/3.%20Feature%20Scaling.md#min-max-scaling) (Normalization)
 Rescales the feature to a hard-bounded interval, typically $[0, 1]$.
 
 $$
@@ -55,7 +55,7 @@ $$
 > [!WARNING]
 > Applying StandardScaler to sparse matrices (like TF-IDF or One-Hot Encoded text) will destroy sparsity because it subtracts the mean (a non-zero value) from all zero elements. This transforms a highly efficient sparse matrix into a massive dense matrix, causing immediate out-of-memory (OOM) crashes. Use `MaxAbsScaler` for sparse data.
 
-## 4. Visual Architecture: Numeric Transformation Decision Flow
+## [4. Visual Architecture](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W1/Readme.md#4-visual-architecture): Numeric Transformation Decision Flow
 
 ```mermaid
 flowchart TD
@@ -240,7 +240,7 @@ print(f"KNN Accuracy (Standardized Data): {acc_scaled:.4f}")
 # KNN Accuracy (Standardized Data): 1.0000 (Perfect accuracy, F2 signal unlocked)
 ```
 
-## 10. Performance and Computational Insights
+## [10. Performance and Computational Insights](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W6/Readme.md#10-performance-and-computational-insights)
 
 - **Tree-Based Models:** Random Forests and Gradient Boosted Trees (XGBoost, LightGBM) make orthogonal splits on features ($X_j < t$). They do not compute gradients over the feature space or distances between points. Therefore, scaling features for tree-based models is mathematically useless and wastes CPU cycles.
 - **Matrix Operations:** Standard scaling requires computing the mean across columns. For massive datasets, doing this in-memory with Pandas will cause an OOM. Use PySpark or `scikit-learn`'s `PartialFit` methods with `StandardScaler` to compute running means and variances in chunks.
@@ -251,15 +251,15 @@ print(f"KNN Accuracy (Standardized Data): {acc_scaled:.4f}")
 **A:** A log transformation compresses the right tail of a distribution. If the target variable has a strong linear relationship with the *extreme values* of that right tail, applying a log transform destroys that signal. The extreme values were not noise; they were high-leverage predictive signals. Always verify feature-to-target mutual information before and after transformation.
 
 **Q: Explain the mathematical leakage risk when standardizing data.**
-**A:** If you execute `scaler.fit(X_all)`, you compute $\mu$ and $\sigma$ using the entire dataset, including the test set. When the model later predicts on the test set, it is evaluating data that has been centered using statistics influenced by its own values. This violates the IID (Independent and Identically Distributed) assumption of the test set, creating a falsely optimistic evaluation metric. You must exclusively `fit` on `X_train`.
+**A:** If you execute `scaler.fit(X_all)`, you compute $\mu$ and $\sigma$ using the entire [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/Experiential%20Learning%20Activity.md#dataset), including the test set. When the model later predicts on the test set, it is evaluating data that has been centered using statistics influenced by its own values. This violates the IID (Independent and Identically Distributed) assumption of the test set, creating a falsely optimistic evaluation metric. You must exclusively `fit` on `X_train`.
 
 ## 12. Final Takeaways
 
-### Mental Models
+### [Mental Models](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W1/Readme.md#mental-models)
 - **The Spherical Optimization Constraint:** Think of scaling as reshaping a stretched rubber sheet (the cost function) back into a perfect circle, allowing gradient descent algorithms to roll smoothly to the bottom rather than bouncing side-to-side.
 - **The Information Funnel:** Binning (discretization) is inherently a lossy compression algorithm. You are intentionally throwing away the granular precision of a continuous variable to gain robustness against noise. Only do this if the noise outweighs the signal.
 
-### Advanced Learning Roadmap
+### [Advanced Learning Roadmap](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W1/Readme.md#advanced-learning-roadmap)
 1. **Target-Aware Discretization:** Study Decision Tree discretizers (using a shallow decision tree to find the mathematically optimal bin edges that maximize purity of the target).
 2. **Polynomial Feature Explosion:** Understand the combinatorial explosion of `PolynomialFeatures`. If you have 100 features and apply a degree-3 polynomial, you generate over 170,000 features. Learn how to combine this with Ridge regularization to prevent memory/variance collapse.
 3. **Spline Transformations:** Move beyond simple polynomials to Piecewise Polynomials (Splines) to model highly complex, non-linear numeric continuous relationships without runaway asymptotic behavior at the boundaries.
