@@ -1,6 +1,6 @@
-**Dataset here for your practice : **[Titanic-Dataset.xlsx](https://lumen.bitspilani-digital.edu.in/content/enforced/7097-T3-25_MDSDF403/Titanic-Dataset.xlsx?isCourseFile=true&ou=7097)****
+**[Dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/Experiential%20Learning%20Activity.md#dataset) here for your practice : **[Titanic-Dataset.xlsx](https://lumen.bitspilani-digital.edu.in/content/enforced/7097-T3-25_MDSDF403/Titanic-Dataset.xlsx?isCourseFile=true&ou=7097)****
 
-This experiential learning exercise is a perfect application of the concepts covered in Weeks 1 and 2. The Titanic dataset is historically significant in data science precisely because it forces you to navigate the messy, real-world nature of data before you ever touch an algorithm.
+This experiential learning exercise is a perfect application of the concepts covered in Weeks 1 and 2. The Titanic [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/Experiential%20Learning%20Activity.md#dataset) is historically significant in data science precisely because it forces you to navigate the messy, real-world nature of data before you ever touch an algorithm.
 
 Below is a structured guide to help you tackle this exercise, organized by your task list.
 
@@ -10,7 +10,7 @@ Before engineering, you must understand your feature space.
 
 - **DataType Check:** Use `df.info()` to distinguish between numeric (float/int) and object/categorical types.
     
-- **Distribution Analysis:** Use `df.describe()` for summary statistics and `seaborn.histplot` or `kdeplot` to visualize the skewness of `Fare` and the distribution of `Age`.
+- **Distribution Analysis:** Use `df.describe()` for [summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary)) statistics and `seaborn.histplot` or `kdeplot` to visualize the skewness of `Fare` and the distribution of `Age`.
     
 
 ### **2. Handling Missing Values**
@@ -48,7 +48,7 @@ Models cannot process raw strings.
 
 Focus on `Age` and `Fare`.
 
-- **Min-Max Scaling:** Use if your model assumes features are bounded (e.g., KNN).
+- **[Min-Max Scaling](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W2/3.%20Feature%20Scaling.md#min-max-scaling):** Use if your model assumes features are bounded (e.g., KNN).
     
 - **Standardization (Z-Score):** Preferred for linear models or when your data is roughly normally distributed.
     
@@ -92,7 +92,7 @@ To prove the value of your work, run this comparison:
 
 When you reach the stretch goal, don't build two separate, messy scripts. Use `sklearn.pipeline.Pipeline` or `ColumnTransformer`. This ensures that any transformation applied to your training data (like the median used for Age imputation) is **exactly** applied to your test data, preventing data leakage.
 
-To provide the detailed implementation guidance you requested for the Titanic dataset, let's break down the most technical "pain points" of your task list into actionable Python code.
+To provide the detailed implementation guidance you requested for the Titanic [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/Experiential%20Learning%20Activity.md#dataset), let's break down the most technical "pain points" of your task list into actionable Python code.
 
 Using a `Pipeline` and `ColumnTransformer` is the industry standard for this. It prevents **data leakage** (a common trap where your model "sees" test set information during training).
 
@@ -203,7 +203,7 @@ preds = full_pipeline.predict(X_test)
 print(f"Accuracy with Feature Engineering: {accuracy_score(y_test, preds):.2f}")
 ```
 
-### Key Takeaways for your Titanic Exercise:
+### [Key Takeaways](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W1/Readme.md#key-takeaways) for your Titanic Exercise:
 
 - **Leakage Prevention:** Always use `fit_transform` on your training data and _only_ `transform` on your test data. The `Pipeline` handles this automatically.
     
