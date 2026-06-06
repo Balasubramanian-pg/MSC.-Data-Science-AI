@@ -41,7 +41,7 @@ Some lines obviously fit poorly.
 
 Others appear visually reasonable.
 
-But visual intuition is subjective and unreliable.
+But visual [intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#intuition)))) is subjective and unreliable.
 
 Statistical modeling requires a rigorous mathematical criterion for defining:
 
@@ -119,7 +119,7 @@ $$
 
 \hat{y}_i=b_0+b_1x_i
 
-The question becomes:
+The [question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#question))) becomes:
 
 $$  
 \text{How far is the observed point from the line?}  
@@ -127,7 +127,7 @@ $$
 
 This distance defines prediction error.
 
-# 4. Residuals: Measuring Prediction Error
+# 4. [Residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#residuals): Measuring Prediction Error
 
 For each observation, the vertical difference between:
 
@@ -166,7 +166,7 @@ $$
 
 e_i=\text{Actual}_i-\text{Predicted}_i
 
-Residuals quantify model error observation-by-observation.
+[Residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#residuals) quantify model error observation-by-observation.
 
 # 5. Why Vertical Distance Is Used
 
@@ -184,10 +184,10 @@ The regression model assumes:
 
 - predictor values are given
     
-- uncertainty exists in the response variable
+- uncertainty exists in the [response variable](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response)))-variable)
     
 
-Thus residuals represent deviations in the:
+Thus [residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#residuals) represent deviations in the:
 
 $$  
 Y  
@@ -197,9 +197,9 @@ direction.
 
 This distinction becomes important later in statistical theory.
 
-# 6. Interpreting Residuals
+# 6. Interpreting [Residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#residuals)
 
-Residuals contain substantial diagnostic information.
+[Residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#residuals) contain substantial diagnostic information.
 
 ## Positive Residual
 
@@ -253,7 +253,7 @@ then the observation lies exactly on the regression line.
 
 # 7. A Good Regression Line
 
-A good regression line should produce residuals that are:
+A good regression line should produce [residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#residuals) that are:
 
 - small
     
@@ -265,7 +265,7 @@ A good regression line should produce residuals that are:
 The central problem becomes:
 
 $$  
-\text{How do we combine all residuals into one measure of total error?}  
+\text{How do we combine all [residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#residuals) into one measure of total error?}  
 $$
 
 # 8. Why Simple Summation Fails
@@ -278,7 +278,7 @@ $$
 
 However, this fails completely.
 
-Positive and negative residuals cancel each other out.
+Positive and negative [residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#residuals) cancel each other out.
 
 A terrible line could still produce:
 
@@ -298,7 +298,7 @@ $$
 
 Thus raw residual summation cannot measure fit quality.
 
-# 9. Absolute Residuals
+# 9. Absolute [Residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#residuals)
 
 Another possibility is:
 
@@ -312,9 +312,9 @@ However, absolute value optimization is mathematically inconvenient.
 
 It produces non-smooth optimization problems that are harder to solve analytically.
 
-# 10. Squared Residuals
+# 10. Squared [Residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#residuals)
 
-The most important idea in least squares regression is squaring residuals before summing them.
+The most important idea in least squares regression is squaring [residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#residuals) before summing them.
 
 This produces:
 
@@ -332,7 +332,7 @@ $$
 e_i^2 \ge 0  
 $$
 
-positive and negative residuals no longer cancel.
+positive and negative [residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#residuals) no longer cancel.
 
 Every prediction error contributes positively to total error.
 
@@ -342,7 +342,7 @@ This allows meaningful aggregation.
 
 Squaring magnifies large mistakes dramatically.
 
-Example:
+[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
 
 |Residual|Squared Residual|
 |---|---|
@@ -355,7 +355,7 @@ This forces the regression line to avoid extreme misses.
 
 This property stabilizes the fitted model substantially.
 
-# 13. The Sum of Squared Errors (SSE)
+# 13. The [Sum of Squared Errors (SSE)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#sum-of-squared-errors-sse)
 
 The total regression error is measured using the Sum of Squared Errors:
 
@@ -367,7 +367,7 @@ $$
 
 SSE=\sum e_i^2
 
-Substituting residual definitions:
+Substituting residual [definitions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#definitions):
 
 # $$  
 SSE
@@ -401,7 +401,7 @@ This equation defines total prediction error as a function of:
 
 - slope
     
-- intercept
+- [intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#intercept))
     
 
 # 14. The Least Squares Criterion
@@ -473,7 +473,7 @@ $$
 
 we:
 
-1. take partial derivatives with respect to:
+1. take [partial derivatives](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#partial-derivatives) with respect to:
     
     - $$b_0$$
         
@@ -484,18 +484,18 @@ we:
 3. solve the resulting system of equations
     
 
-These are called the normal equations.
+These are called the [normal equations](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#normal-equations).
 
 The solution produces explicit formulas for the regression coefficients.
 
-# 18. The Least Squares Slope Formula
+# 18. The Least Squares Slope [Formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#formula)
 
 The slope estimate is:
 
 # $$  
 b_1
 
-\frac{  
+[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)  
 \sum  
 (x_i-\bar{x})(y_i-\bar{y})  
 }{  
@@ -504,9 +504,9 @@ b_1
 }  
 $$
 
-b_1=\frac{\sum(x_i-\bar{x})(y_i-\bar{y})}{\sum(x_i-\bar{x})^2}
+b_1=[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\sum(x_i-\bar{x})(y_i-\bar{y})}{\sum(x_i-\bar{x})^2}
 
-This formula measures:
+This [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#formula) measures:
 
 $$  
 \text{Covariation}  
@@ -557,9 +557,9 @@ If predictor values show little variation, estimating a meaningful slope becomes
 
 Regression fundamentally requires variation in the explanatory variable.
 
-# 21. The Least Squares Intercept Formula
+# 21. The Least Squares [Intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#intercept)) [Formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#formula)
 
-Once the slope is determined, the intercept is:
+Once the slope is determined, the [intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#intercept)) is:
 
 # $$  
 b_0
@@ -571,7 +571,7 @@ $$
 
 b_0=\bar{y}-b_1\bar{x}
 
-This formula guarantees a remarkable geometric property.
+This [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#formula) guarantees a remarkable geometric property.
 
 # 22. The Regression Line Passes Through the Means
 
@@ -647,7 +647,7 @@ $$
 
 ---
 
-## Residual Mean Equals Zero
+## Residual [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) Equals Zero
 
 $$  
 \bar{e}=0  
@@ -655,7 +655,7 @@ $$
 
 ---
 
-## Residuals Are Orthogonal to Predictor Values
+## [Residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#residuals) Are Orthogonal to Predictor Values
 
 $$  
 \sum x_ie_i=0  
@@ -686,7 +686,7 @@ It became foundational across:
 
 - machine learning
     
-- signal processing
+- [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) processing
     
 - optimization
     
@@ -699,7 +699,7 @@ It became foundational across:
 
 Much of predictive modeling fundamentally reduces to minimizing some version of squared error.
 
-# 27. Statistical Intuition Behind Least Squares
+# 27. Statistical [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#intuition)))) Behind Least Squares
 
 The Method of Least Squares fundamentally attempts to find the line that best balances all observations simultaneously.
 
