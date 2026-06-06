@@ -20,7 +20,7 @@ $$
 
 Two populations may have identical means but dramatically different levels of variability. In such cases, variance becomes more important than central tendency.
 
-The core inferential question becomes:
+The core inferential [question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#question))) becomes:
 
 $$  
 \text{Are the population variances meaningfully different?}  
@@ -32,11 +32,11 @@ Variance plays a central role in decision-making because variability often repre
 
 Applications include:
 
-- manufacturing consistency
+- [manufacturing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L2/Errors%2C%20P-values%2C%20and%20Significance.md#manufacturing) consistency
     
 - financial volatility
     
-- reliability engineering
+- reliability [engineering](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L2/Errors%2C%20P-values%2C%20and%20Significance.md#engineering)
     
 - educational consistency
     
@@ -49,7 +49,7 @@ In many real systems, reducing variability is more valuable than improving avera
 
 A process that performs consistently is often preferable to one with slightly better average performance but extreme unpredictability.
 
-# 3. Examples of Variance Comparisons
+# 3. [Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples) of Variance Comparisons
 
 ## Quality Control
 
@@ -57,7 +57,7 @@ A factory may compare two machines producing identical parts.
 
 Even if both machines produce the same average dimensions, the machine with lower variance produces more consistent products and therefore higher quality.
 
-The inferential question becomes:
+The inferential [question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#question))) becomes:
 
 $$  
 \sigma_1^2  
@@ -69,7 +69,7 @@ $$
 
 ---
 
-## Finance
+## [Finance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#finance)
 
 Two investments may produce the same average return.
 
@@ -109,10 +109,10 @@ Comparing variances through subtraction is less meaningful.
 Instead, variance comparisons use ratios:
 
 $$  
-\frac{\sigma_1^2}{\sigma_2^2}  
+[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\sigma_1^2}{\sigma_2^2}  
 $$
 
-\frac{\sigma_1^2}{\sigma_2^2}
+[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\sigma_1^2}{\sigma_2^2}
 
 This ratio-based framework leads to the F-distribution.
 
@@ -124,7 +124,7 @@ Unlike the:
 
 - normal distribution
     
-- t-distribution
+- [t-distribution](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#t-distribution)
     
 
 the F-distribution arises from ratios of variance estimates.
@@ -192,7 +192,7 @@ Larger sample sizes produce more concentrated F-distributions.
 
 ## Ratio Structure
 
-The F-statistic fundamentally represents:
+The [F-statistic](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#f-statistic) fundamentally represents:
 
 $$  
 \text{Variance Estimate}  
@@ -202,11 +202,11 @@ $$
 
 The entire logic of the test depends on relative variability.
 
-# 7. The F-Test for Equality of Variances
+# 7. [The F-Test](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#the-f-test) for Equality of Variances
 
-The F-test evaluates whether two population variances are equal.
+[The F-test](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#the-f-test) evaluates whether two population variances are equal.
 
-The null hypothesis states:
+The [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis) states:
 
 $$  
 H_0:\sigma_1^2 = \sigma_2^2  
@@ -214,7 +214,7 @@ $$
 
 H_0:\sigma_1^2=\sigma_2^2
 
-The alternative hypothesis for a two-tailed test is:
+The [alternative hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L2/Errors%2C%20P-values%2C%20and%20Significance.md#alternative-hypothesis) for a [two-tailed](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#two-tailed) test is:
 
 $$  
 H_A:\sigma_1^2 \ne \sigma_2^2  
@@ -222,11 +222,11 @@ $$
 
 H_A:\sigma_1^2\ne\sigma_2^2
 
-The inferential goal is determining whether the observed sample variances differ more than expected from random sampling variation alone.
+The inferential goal is determining whether the observed sample variances differ more than expected from [random sampling](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Reading%20Material%20The%20Chi-Square%20Test%20of%20Independence.md#random-sampling) variation alone.
 
-# 8. The F-Test Statistic
+# 8. [The F-Test](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#the-f-test) Statistic
 
-The F-statistic is remarkably intuitive.
+The [F-statistic](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#f-statistic) is remarkably intuitive.
 
 It is simply the ratio of two sample variances:
 
@@ -261,9 +261,9 @@ $$
 1  
 $$
 
-provide evidence against the null hypothesis.
+provide evidence against the [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis).
 
-# 9. Interpreting the F-Statistic
+# 9. Interpreting the [F-Statistic](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#f-statistic)
 
 The interpretation is straightforward.
 
@@ -334,7 +334,7 @@ This simplifies:
 
 because attention focuses entirely on the upper tail of the F-distribution.
 
-# 11. Degrees of Freedom in the F-Test
+# [11. Degrees of Freedom](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#11-degrees-of-freedom) in [the F-Test](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#the-f-test)
 
 The F-distribution depends on two separate degrees of freedom values:
 
@@ -363,13 +363,13 @@ Variance comparison is inherently more complex because uncertainty arises from e
 
 # 12. The Critical Assumption: Normality
 
-The F-test has a major weakness:
+[The F-test](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#the-f-test) has a major weakness:
 
 > It is highly sensitive to violations of normality.
 
 This is one of the most important practical warnings in classical statistics.
 
-The validity of the F-test depends heavily on both populations being approximately normally distributed.
+The validity of [the F-test](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#the-f-test) depends heavily on both populations being approximately normally distributed.
 
 Formally:
 
@@ -391,12 +391,12 @@ If normality fails:
     
 - Type I error rates may inflate
     
-- conclusions may become unreliable
+- [conclusions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#conclusions) may become unreliable
     
 
-# 13. Why the F-Test Is Fragile
+# 13. Why [the F-Test](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#the-f-test) Is Fragile
 
-The fragility arises because variance estimation itself is highly sensitive to outliers and skewness.
+The fragility arises because variance estimation itself is highly sensitive to outliers and [skewness](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#skewness).
 
 Even a few extreme observations can drastically distort sample variances.
 
@@ -416,11 +416,11 @@ As a result, non-normal data can produce misleading F-statistics.
 
 t-tests for means are relatively robust to mild departures from normality.
 
-The F-test is not.
+[The F-test](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#the-f-test) is not.
 
 This distinction matters greatly in practice.
 
-A dataset may still support reliable mean comparisons while producing unreliable variance comparisons.
+A dataset may still support reliable [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) comparisons while producing unreliable variance comparisons.
 
 Therefore, variance testing generally requires more caution.
 
@@ -441,9 +441,9 @@ These methods are less sensitive to non-normality and outliers.
 
 In applied work, many analysts prefer robust alternatives over the classical F-test.
 
-# 16. Deep Statistical Intuition
+# 16. Deep Statistical [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#intuition))))
 
-The F-test fundamentally evaluates:
+[The F-test](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#the-f-test) fundamentally evaluates:
 
 $$  
 \text{Observed Variability Ratio}  
@@ -463,6 +463,6 @@ The broader insight is important:
 
 > Statistical inference is not only about averages.
 
-Many real-world systems are judged by their stability, reliability, and consistency rather than their mean performance alone.
+Many real-world systems are judged by their stability, reliability, and consistency rather than their [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) performance alone.
 
-Variance analysis therefore plays a central role in quality control, finance, engineering, and operational decision-making.
+Variance analysis therefore plays a central role in quality control, [finance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#finance), [engineering](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L2/Errors%2C%20P-values%2C%20and%20Significance.md#engineering), and operational decision-making.
