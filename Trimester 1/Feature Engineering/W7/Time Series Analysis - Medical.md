@@ -71,7 +71,7 @@ def compute_rmssd(rr_intervals, window=7):
 - **Data Quality:** ECG signals are highly susceptible to "motion artifacts" (noise). Always include steps for signal cleaning or anomaly detection before computing features, as a single bad reading can skew the RMSSD/SDNN results.
     
 
-**Summary for Practical Application:**
+**[Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary)) for Practical Application:**
 
 1. **Extract:** RR intervals from raw ECG signals.
     
