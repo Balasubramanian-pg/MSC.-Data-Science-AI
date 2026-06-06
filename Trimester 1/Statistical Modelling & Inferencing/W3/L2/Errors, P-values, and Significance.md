@@ -28,9 +28,9 @@ It produces quantified uncertainty.
 
 Every hypothesis test begins with two competing claims.
 
-## Null Hypothesis
+## [Null Hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#null-hypothesis)
 
-The null hypothesis represents:
+The [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#null-hypothesis) represents:
 
 - no effect
     
@@ -47,7 +47,7 @@ $$
 H_0  
 $$
 
-Examples:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples):
 
 $$  
 H_0:\mu = 50  
@@ -59,9 +59,9 @@ $$
 
 ---
 
-## Alternative Hypothesis
+## [Alternative Hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#alternative-hypothesis)
 
-The alternative hypothesis represents:
+The [alternative hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#alternative-hypothesis) represents:
 
 - a real effect
     
@@ -78,7 +78,7 @@ H_a
 H_1  
 $$
 
-Examples:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples):
 
 $$  
 H_a:\mu \ne 50  
@@ -119,7 +119,7 @@ This creates four logical possibilities:
 
 # 4 Type I Error: The False Positive
 
-A Type I Error occurs when we reject a null hypothesis that is actually true.
+A Type I Error occurs when we reject a [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#null-hypothesis) that is actually true.
 
 Formally:
 
@@ -156,15 +156,15 @@ $$
 5%  
 $$
 
-risk of falsely rejecting the null hypothesis.
+risk of falsely rejecting the [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#null-hypothesis).
 
 This means:
 
-> Even when the null hypothesis is perfectly true, our testing procedure will falsely reject it about 5% of the time in repeated sampling.
+> Even when the [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#null-hypothesis) is perfectly true, our testing procedure will falsely reject it about 5% of the time in repeated sampling.
 
 ---
 
-## 4.2 Examples of Type I Errors
+## 4.2 [Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples) of Type I Errors
 
 ### Medicine
 
@@ -198,7 +198,7 @@ This means:
 
 # 5 Type II Error: The False Negative
 
-A Type II Error occurs when we fail to reject a false null hypothesis.
+A Type II Error occurs when we fail to reject a false [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#null-hypothesis).
 
 Formally:
 
@@ -219,7 +219,7 @@ $$
 
 ---
 
-## 5.1 Examples of Type II Errors
+## 5.1 [Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples) of Type II Errors
 
 ### Medicine
 
@@ -313,7 +313,7 @@ and power decreases.
 
 ---
 
-## Deep Intuition
+## Deep [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#intuition))))
 
 Statistical testing is fundamentally threshold detection under uncertainty.
 
@@ -344,7 +344,7 @@ This is the exact same tradeoff seen in:
 - machine learning classifiers
     
 
-Hypothesis testing is essentially signal detection theory in mathematical form.
+Hypothesis testing is essentially [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) detection theory in mathematical form.
 
 ---
 
@@ -364,7 +364,7 @@ we obtain:
     
 - smaller standard errors
     
-- greater separation between signal and noise
+- greater separation between [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) and [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))
     
 
 This allows:
@@ -388,7 +388,7 @@ The p-value is one of the most misunderstood concepts in all of statistics.
 
 Formally:
 
-> The p-value is the probability of observing a test statistic at least as extreme as the one obtained, assuming the null hypothesis is true.
+> The p-value is the probability of observing a test statistic at least as extreme as the one obtained, assuming the [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#null-hypothesis) is true.
 
 Mathematically:
 
@@ -416,7 +416,7 @@ $$
 \bar{x} = 84  
 $$
 
-If the standard error is small, this observation is extremely far from the null expectation.
+If the [standard error](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#standard-error) is small, this observation is extremely far from the null expectation.
 
 Under:
 
@@ -428,9 +428,9 @@ such a result would be very unlikely.
 
 Thus the p-value becomes small.
 
-A small p-value means:
+A [small p-value](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#small-p-value) means:
 
-> "If the null hypothesis were true, seeing data this extreme would be rare."
+> "If the [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#null-hypothesis) were true, seeing data this extreme would be rare."
 
 That rarity becomes evidence against:
 
@@ -450,7 +450,7 @@ The p-value quantifies surprise under the null model.
 |Small|Data surprising under $$H_0$$|
 |Very small|Strong evidence against $$H_0$$|
 
-Examples:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples):
 
 |P-Value|Informal Interpretation|
 |---|---|
@@ -542,7 +542,7 @@ p > \alpha
 
 Notice carefully:
 
-We do NOT "accept" the null hypothesis.
+We do NOT "accept" the [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#null-hypothesis).
 
 Failing to reject simply means:
 
@@ -582,7 +582,7 @@ Possible explanations:
     
 - sample size too small
     
-- noise too high
+- [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)) too high
     
 - study underpowered
     
@@ -660,7 +660,7 @@ It does NOT measure:
 
 Effect size metrics attempt to quantify magnitude.
 
-Examples:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples):
 
 - Cohen's $$d$$
     
@@ -726,7 +726,7 @@ Statistical significance is evidence, not proof.
 
 Confidence intervals provide richer information than p-values alone.
 
-Suppose a confidence interval for a mean difference is:
+Suppose a confidence interval for a [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) difference is:
 
 $$  
 (2.1,\ 7.4)  
@@ -786,14 +786,14 @@ In some fields, a large fraction of "significant" findings may actually be false
 
 ---
 
-# 21 Deep Intuition Behind Hypothesis Testing
+# 21 Deep [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#intuition)))) Behind Hypothesis Testing
 
 At its core, hypothesis testing asks:
 
 $$  
-\text{Signal}  
+\text{[Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#signal))}  
 \quad vs \quad  
-\text{Noise}  
+\text{[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))}  
 $$
 
 Observed data always contains both.
@@ -811,7 +811,7 @@ The entire machinery of:
 - power
     
 
-exists to determine whether the observed signal is too large to plausibly attribute to random variation alone.
+exists to determine whether the observed [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) is too large to plausibly attribute to random variation alone.
 
 Statistics is not about certainty.
 
