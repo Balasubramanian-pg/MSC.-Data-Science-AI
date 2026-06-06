@@ -1,6 +1,6 @@
 ### Filter Methods: Chi-Square Test for Categorical Feature Selection
 
-#### 1. Clear Overview
+#### [1. Clear Overview](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W1/3.%20Working%20With%20Sample%20Dataset%20-%20I.md#1-clear-overview)
 
 The Chi-Square ($\chi^2$) test is a statistical filter method used to evaluate the association between two **categorical** variables. In feature engineering, it assesses whether a categorical feature and the target variable are independent. If the test reveals a significant dependency, the feature likely contains predictive signal; if the variables are independent, the feature is likely irrelevant and can be safely discarded.
 
@@ -30,7 +30,7 @@ Where:
 
 A higher $\chi^2$ score indicates a stronger deviation from independence, meaning the feature and target are more strongly associated.
 
-#### 3. Strategic Usage in Feature Selection
+#### [3. Strategic Usage in Feature Selection](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/L2/Feature%20Demonstration%20Filter%202.md#3-strategic-usage-in-feature-selection)
 
 - **Categorical Compatibility:** Unlike Pearson or Spearman correlations (which require continuous data), Chi-Square is specifically designed for categorical/nominal data.
     
@@ -39,7 +39,7 @@ A higher $\chi^2$ score indicates a stronger deviation from independence, meanin
 - **Discretization:** If you have numerical features you wish to test with Chi-Square, you must first **discretize** them (convert them into categorical bins) using techniques like binning or quantile-based discretization.
     
 
-#### 4. Python Implementation
+#### [4. Python Implementation](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/L2/Feature%20Demonstration%20Filter%204.md#4-python-implementation)
 
 Using `scikit-learn`, the `SelectKBest` class allows you to automate the selection of the most informative categorical features.
 
@@ -58,7 +58,7 @@ feature_scores = pd.DataFrame({'Feature': X_categorical.columns, 'Score': select
 print(feature_scores.sort_values(by='Score', ascending=False))
 ```
 
-#### 5. Application Summary
+#### [5. Application Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/L2/Embedded%20Methods.md#5-application-[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary)))
 
 - **When to use:** Use Chi-Square when both your feature set and your target variable are categorical. It is exceptionally efficient for high-dimensional categorical datasets where you need to perform a quick "first-pass" reduction.
     
