@@ -56,7 +56,7 @@ These three indicators are the gold standard for adding "context" to stock price
 - **Usage:** Provides a dynamic range of "normal" market behavior; price excursions outside these bands are statistically significant indicators of high-volatility events.
     
 
-### 3. Implementation Trade-offs & The "Golden Rules"
+### [3. Implementation Trade-offs](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Overview.md#3-implementation-trade-offs) & The "Golden Rules"
 
 - **Data Leakage Prevention:** When building these features, **never use a centered window**. For a 14-day RSI, ensure you are only using the 14 days preceding time $t$. Using data at time $t$ to construct a feature for $t$ is a classic error that will lead to artificially high model accuracy.
     
@@ -65,7 +65,7 @@ These three indicators are the gold standard for adding "context" to stock price
 - **Dimensionality vs. Signal:** While RSI and Bollinger bands are powerful, adding too many indicators can result in a "feature explosion." Use **Time Series Cross-Validation** to verify that your domain indicators are actually improving predictive accuracy rather than simply adding correlated noise.
     
 
-**Summary for Practical Application:**
+**[Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary)) for Practical Application:**
 
 1. **Prepare:** Generate synthetic data (or import Yahoo Finance data).
     
