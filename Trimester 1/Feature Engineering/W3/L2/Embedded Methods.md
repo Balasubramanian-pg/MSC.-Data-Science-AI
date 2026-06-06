@@ -1,6 +1,6 @@
 ### Embedded Methods: Feature Selection via Model Training
 
-#### 1. Clear Overview
+#### [1. Clear Overview](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W1/3.%20Working%20With%20Sample%20Dataset%20-%20I.md#1-clear-overview)
 
 Embedded methods perform feature selection as an intrinsic part of the model training process. Unlike filter methods (which evaluate features before training) or wrapper methods (which evaluate subsets by training the model repeatedly), embedded methods leverage the internal mechanisms of a model to assess feature importance during learning. This makes them highly efficient and model-aware.
 
@@ -77,6 +77,6 @@ When comparing a model trained on the "Full Data Set" vs. a model trained on a "
 |**Model Awareness**|Captures feature interactions and target dependencies.|Results may not generalize to different model types.|
 |**Scalability**|Suitable for large datasets where wrapper methods would be too slow.|Feature ranking can be opaque compared to statistical filter methods.|
 
-#### 5. Application Summary
+#### [5. Application Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/L2/Feature%20Demonstration%20Filter%203.md#5-application-[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary)))
 
 Embedded methods are an excellent choice for modern machine learning pipelines where computational efficiency and model integration are priorities. However, it is vital to remember that feature importance scores are **model-specific**. An important feature for a Random Forest may not be the most important feature for a Linear Model, as different algorithms prioritize different geometric and statistical properties of the data. Always validate your feature subset against your final model architecture to ensure the selected features actually improve the model's generalization performance.
