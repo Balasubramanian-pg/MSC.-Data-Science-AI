@@ -1,4 +1,4 @@
-### Module Summary: Advanced Feature Engineering Toolkit
+### Module [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary)): Advanced Feature Engineering Toolkit
 
 This module provides a comprehensive framework for transforming raw, often noisy, or high-dimensional data into refined features that maximize predictive accuracy and model interpretability. By mastering extraction, construction, and selection, you move beyond simple model tuning to architecting the data foundation itself.
 
@@ -13,9 +13,9 @@ Feature extraction algorithms convert raw, high-dimensional data (text, images, 
 - **Examples:** Creating TF-IDF vectors from text, using Fourier transforms for signals, or reducing dimensions via Principal Component Analysis (PCA).
     
 
-#### **Feature Construction: Domain-Driven Innovation**
+#### **[Feature Construction](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/L1/Demonstration.md#feature-construction): Domain-Driven Innovation**
 
-Feature construction is a creative, domain-dependent process that generates new variables from existing ones to reveal hidden relationships.
+[Feature construction](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/L1/Demonstration.md#feature-construction) is a creative, domain-dependent process that generates new variables from existing ones to reveal hidden relationships.
 
 - **Goal:** Make complex patterns explicit so that simpler models can learn them.
     
@@ -28,7 +28,7 @@ Feature selection prunes the feature set to retain only the most informative var
 
 ### **2. Feature Selection Methodologies**
 
-|**Method**|**Approach**|**Key Techniques**|**Best Use Case**|
+|**Method**|**Approach**|[**Key Techniques**](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W4/Module%20Introduction.md#key-techniques)|**Best Use Case**|
 |---|---|---|---|
 |**Filter**|Model-agnostic statistical ranking.|Pearson/Spearman correlation, Chi-Square, Mutual Information, Fisher Score.|Fast, initial screening for high-dimensional data.|
 |**Wrapper**|Evaluates feature subsets by training a model.|Sequential Forward (SFS) and Backward (SBS) Selection.|Higher accuracy; computationally expensive.|
@@ -56,7 +56,7 @@ Filter methods are the first line of defense against noise. They evaluate featur
 - **Embedded Methods:** These are "model-aware." By incorporating feature selection into the loss function (e.g., Lasso) or the splitting logic (e.g., Random Forest), they are inherently more efficient and scalable.
     
 
-### **Application Summary**
+### **[Application Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W2/2.%20Discretization.md#application-[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary)))**
 
 The effective application of these techniques is a multi-stage workflow:
 
