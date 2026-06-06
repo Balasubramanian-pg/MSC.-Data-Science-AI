@@ -1,6 +1,6 @@
 ### Sampling Theory and Practice
 
-Sampling is the fundamental process in inferential statistics that allows us to draw conclusions about a large group (population) by analyzing a smaller, manageable subset (sample).
+Sampling is the fundamental process in inferential statistics that allows us to draw [conclusions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#conclusions) about a large group (population) by analyzing a smaller, manageable subset (sample).
 
 #### The Core Analogy
 
@@ -28,7 +28,7 @@ Sampling methods are generally categorized into two main types based on how indi
 
 #### Common Probability Sampling Techniques
 
-1. **Simple Random Sampling**: Every individual has an equal chance of being chosen, similar to drawing names from a hat.
+1. **Simple [Random Sampling](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Reading%20Material%20The%20Chi-Square%20Test%20of%20Independence.md#random-sampling)**: Every individual has an equal chance of being chosen, similar to drawing names from a hat.
     
 2. **Stratified Sampling**: The population is first divided into distinct groups or "strata" (e.g., by state or region). Samples are then drawn from each of these groups to ensure proper representation across the entire population.
     
