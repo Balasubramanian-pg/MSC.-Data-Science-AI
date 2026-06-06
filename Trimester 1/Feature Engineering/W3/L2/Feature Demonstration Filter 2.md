@@ -1,6 +1,6 @@
 ### Filter Methods: Spearman’s Rank Correlation
 
-#### 1. Clear Overview
+#### [1. Clear Overview](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W1/3.%20Working%20With%20Sample%20Dataset%20-%20I.md#1-clear-overview)
 
 Spearman’s Correlation ($\rho$ or $\rho_s$) is a non-parametric, rank-based measure of association between two variables. Unlike Pearson’s Correlation, which requires a linear relationship, Spearman’s measures **monotonic relationships**. A monotonic relationship exists if, as one variable increases, the other consistently increases or decreases, but the rate of change need not be constant (i.e., it doesn't have to form a straight line).
 
@@ -20,7 +20,7 @@ Spearman’s Correlation ($\rho$ or $\rho_s$) is a non-parametric, rank-based me
 - **$0$:** No consistent monotonic trend.
     
 
-#### 3. Strategic Usage in Feature Selection
+#### [3. Strategic Usage in Feature Selection](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/L2/Feature%20Demonstration%20Filter%203.md#3-strategic-usage-in-feature-selection)
 
 **A. Feature-Target Correlation (Selection)**
 
@@ -62,7 +62,7 @@ plt.show()
 - **Simplicity:** It remains a computationally efficient, fast, and highly interpretable filter method.
     
 
-#### 6. Summary Comparison
+#### 6. [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary)) Comparison
 
 |**Feature**|**Pearson Correlation**|**Spearman Correlation**|
 |---|---|---|
@@ -71,6 +71,6 @@ plt.show()
 |**Outlier Sensitivity**|High|Low|
 |**Relationship Type**|Straight line|Consistent direction|
 
-**Application Summary:** Use Spearman's as your default filter method when dealing with real-world, non-normally distributed data or when you need to capture complex, non-linear monotonic signals. It serves as a robust complement to Pearson's in the initial diagnostic phase of feature selection.
+**[Application Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W2/2.%20Discretization.md#application-[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary))):** Use Spearman's as your default filter method when dealing with real-world, non-normally distributed data or when you need to capture complex, non-linear monotonic signals. It serves as a robust complement to Pearson's in the initial diagnostic phase of feature selection.
 
 Would you like to proceed to the next feature selection module covering **Chi-Square** or **Mutual Information**?
