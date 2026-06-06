@@ -1,6 +1,6 @@
 ### Information Theoretic Measures: Mutual Information (MI)
 
-#### 1. Clear Overview
+#### [1. Clear Overview](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W1/3.%20Working%20With%20Sample%20Dataset%20-%20I.md#1-clear-overview)
 
 Information theoretic measures provide a robust framework for quantifying the dependency between variables by measuring the amount of information shared between them. The core metric, **Mutual Information (MI)**, quantifies the reduction in uncertainty about a target variable $Y$ given knowledge of a feature $X$. Unlike Pearson’s or Spearman’s correlation, which are restricted to linear or monotonic relationships, MI is capable of capturing any arbitrary dependency, making it an essential filter method for feature selection in complex, real-world datasets.
 
@@ -28,7 +28,7 @@ $$I(X; Y) = H(Y) - H(Y|X)$$
 - Interpretation: If $I(X; Y)$ is large, knowing $X$ significantly reduces our uncertainty about $Y$, indicating $X$ is a highly informative feature. If $I(X; Y) = 0$, $X$ and $Y$ are independent.
     
 
-#### 3. Strategic Usage in Feature Selection
+#### [3. Strategic Usage in Feature Selection](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/L2/Feature%20Demonstration%20Filter%202.md#3-strategic-usage-in-feature-selection)
 
 - **Filter Mechanism:** Like other filter methods, it ranks features before training. It is particularly effective for high-dimensional datasets where you need to quickly identify which features offer the most "informational gain."
     
@@ -41,7 +41,7 @@ $$I(X; Y) = H(Y) - H(Y|X)$$
     3. Select the top $k$ features that yield the highest information gain.
         
 
-#### 4. Python Implementation
+#### [4. Python Implementation](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/L2/Feature%20Demonstration%20Filter%203.md#4-python-implementation)
 
 Using scikit-learn, `mutual_info_classif` (for classification) or `mutual_info_regression` (for regression) are the standard tools.
 
@@ -58,7 +58,7 @@ mi_df = pd.DataFrame({'Feature': X_encoded.columns, 'MI_Score': mi_scores})
 mi_df = mi_df.sort_values(by='MI_Score', ascending=False)
 ```
 
-#### 5. Application Summary
+#### [5. Application Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/L2/Embedded%20Methods.md#5-application-[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary)))
 
 - **When to use:** Use Mutual Information when you suspect non-linear relationships or complex dependencies between your features and the target that correlation-based filters would miss.
     
