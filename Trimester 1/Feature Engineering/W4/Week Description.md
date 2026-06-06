@@ -25,7 +25,7 @@ PCA is a linear transformation technique that reduces dimensionality while retai
         
     - **Eigenvalues:** Measure the variance (information) captured by each component.
         
-- **Use Case:** Excellent for noise reduction and preprocessing for linear models.
+- **Use Case:** Excellent for noise reduction and [preprocessing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/L1/Demonstration.md#preprocessing) for linear models.
     
 
 ### 3. Singular Value Decomposition (SVD)
@@ -43,24 +43,24 @@ SVD is a fundamental matrix factorization technique that decomposes a matrix $X$
 - **Truncated SVD:** By keeping only the top components (truncation), we effectively filter out noise. It is often preferred over PCA for **sparse matrices** (e.g., text data) because it does not require mean-centering.
     
 
-### 4. t-Distributed Stochastic Neighbor Embedding (t-SNE)
+### 4. [t-Distributed Stochastic Neighbor Embedding (t-SNE)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W4/t-SNE.md#t-distributed-stochastic-neighbor-embedding-t-sne)
 
-t-SNE is a non-linear dimensionality reduction technique designed specifically for data visualization.
+t-SNE is a non-linear dimensionality reduction technique designed specifically for data [visualization](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W4/Readme.md#visualization).
 
 - **Local vs. Global Structure:** While PCA preserves global variance, t-SNE prioritizes preserving **local neighborhoods**. Points close together in high-dimensional space are kept close in the 2D/3D projection.
     
 - **Crowding Problem:** It utilizes the Student's t-distribution in the low-dimensional space to alleviate "crowding," allowing for clearer cluster separation.
     
-- **Important Note:** t-SNE is **stochastic** (different runs can produce different results) and is intended solely for **visualization**. Its output coordinates are typically not meaningful features for model training.
+- **Important Note:** t-SNE is **stochastic** (different runs can produce different results) and is intended solely for **[visualization](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W4/Readme.md#visualization)**. Its output coordinates are typically not meaningful features for model training.
     
 
-### 5. Technique Comparison Summary
+### 5. Technique Comparison [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary))
 
 |**Technique**|**Goal**|**Linearity**|**Primary Usage**|
 |---|---|---|---|
-|**PCA**|Variance Retention|Linear|Data compression & preprocessing|
+|**PCA**|Variance Retention|Linear|Data compression & [preprocessing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/L1/Demonstration.md#preprocessing)|
 |**SVD**|Latent Factorization|Linear|Recommendation systems & Sparse data|
-|**t-SNE**|Local Structure|Non-linear|Exploratory Data Visualization|
+|**t-SNE**|Local Structure|Non-linear|Exploratory Data [Visualization](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W4/Readme.md#visualization)|
 
 **Best Practice:** Use PCA or SVD when you need reproducible, stable features for a predictive model. Use t-SNE when you need to "see" your data structure to verify class separability or find hidden clusters during exploratory data analysis (EDA).
 
