@@ -33,7 +33,7 @@ To succeed in professional pipelines, you should view these tools not as indepen
 - **Domain Expertise:** These tools are **force multipliers, not replacements**. They will find relationships you missed, but they will never understand the business context (e.g., why a specific date is a holiday). Use them to _explore_, but use your domain knowledge to _curate_ the final feature set.
     
 
-### Summary Table
+### [Summary Table](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W8/Deep%20Feature%20Synthesis%20Using%20Featuretools.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary))-table)
 
 |**Tool**|**Primary Data Type**|**Selection Method**|**Best For...**|
 |---|---|---|---|
@@ -41,4 +41,4 @@ To succeed in professional pipelines, you should view these tools not as indepen
 |**TSFresh**|Sequential / Time Series|Statistical Hypothesis Tests|Identifying relevant temporal patterns.|
 |**FeatureWiz**|Wide Tabular|Model-driven (XGBoost) + SULOV|Reducing high-dimensional noise.|
 
-**You are now equipped with the technical foundation to move from raw data to a production-ready feature matrix.** Would you like to explore how to implement **time-series cross-validation** to ensure that your feature-engineered models actually work on future data, or do you have a specific dataset you'd like to try automating features on?
+**You are now equipped with the technical foundation to move from raw data to a production-ready feature matrix.** Would you like to explore how to implement **time-series cross-validation** to ensure that your feature-engineered models actually work on future data, or do you have a specific [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/Experiential%20Learning%20Activity.md#dataset) you'd like to try automating features on?
