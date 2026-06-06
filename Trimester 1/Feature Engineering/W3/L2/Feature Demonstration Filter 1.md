@@ -1,6 +1,6 @@
 ### Filter Methods: Pearson’s Correlation for Feature Selection
 
-#### 1. Clear Overview
+#### [1. Clear Overview](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W1/3.%20Working%20With%20Sample%20Dataset%20-%20I.md#1-clear-overview)
 
 Filter methods represent a category of feature selection techniques that evaluate the relationship between features and the target variable (or between features themselves) using statistical measures, independent of any specific machine learning model. **Pearson's Correlation** is the primary filter method for assessing the linear relationship between continuous variables.
 
@@ -48,7 +48,7 @@ The goal is to eliminate multicollinearity.
 - **Interpretation:** Dropping one of these features reduces model complexity and prevents instability in linear models, where the algorithm might struggle to assign weight to two identical signals.
     
 
-#### 4. Implementation (Heatmap Visualization)
+#### 4. Implementation (Heatmap [Visualization](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W4/Readme.md#visualization))
 
 Using `pandas` and `seaborn` makes it straightforward to inspect the correlation matrix as a heatmap.
 
@@ -80,7 +80,7 @@ While fast and interpretable, Pearson's correlation has significant blind spots:
 - **Independent Evaluation:** It assesses each feature in isolation, failing to capture complex interactions where a feature is only useful when combined with another.
     
 
-#### 6. Application Summary
+#### [6. Application Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W4/t-SNE.md#6-application-[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary)))
 
 Pearson’s correlation is best used as a **first-pass diagnostic tool**. It is ideal for quickly pruning obviously irrelevant variables or identifying highly redundant pairs of features before moving on to more complex wrapper or embedded selection methods.
 
