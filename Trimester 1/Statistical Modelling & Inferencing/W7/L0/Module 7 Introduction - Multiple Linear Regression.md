@@ -3,7 +3,7 @@
 
 In the previous module, we studied:
 
-# Simple Linear Regression
+# [Simple Linear Regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#simple-linear-regression)
 
 where a single predictor variable:
 
@@ -11,7 +11,7 @@ $$
 X  
 $$
 
-was used to explain or predict a response variable:
+was used to explain or predict a [response variable](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response))-variable):
 
 $$ 
 Y  
@@ -31,26 +31,26 @@ Most phenomena are influenced by multiple interacting factors simultaneously.
 
 Real-world outcomes rarely depend on only one variable.
 
-Examples:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples):
 
 |Outcome|Influencing Variables|
 |---|---|
 |House Price|Size, location, age, number of rooms|
-|Salary|Education, experience, industry|
+|Salary|[Education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Variances.md#education), experience, industry|
 |Exam Score|Study time, sleep, attendance|
 |Disease Risk|Genetics, age, lifestyle|
 
 Using only one predictor creates two major problems:
 
-## Problem 1: Omitted Variable Bias
+## Problem 1: [Omitted Variable Bias](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#omitted-variable-bias)
 
-If important predictors are excluded:
+If important [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors)) are excluded:
 
 - coefficient estimates become distorted
     
 - relationships become misleading
     
-- effects from missing variables leak into included variables
+- effects from [missing variables](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#missing-variables) leak into included variables
     
 
 Example:
@@ -73,16 +73,16 @@ Single-variable models often leave large amounts of variability unexplained.
 
 This leads to:
 
-- weak predictions
+- weak [predictions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#predictions)
     
 - low (R^2)
     
 - unstable inference
     
 
-# 3. The Core Idea of Multiple Linear Regression
+# 3. [The Core Idea](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L1/Probability%20and%20Distribution.md#the-core-idea) of [Multiple Linear Regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#multiple-linear-regression)
 
-Multiple Linear Regression extends simple regression by including several predictors simultaneously.
+[Multiple Linear Regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#multiple-linear-regression) extends simple regression by including several [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors)) simultaneously.
 
 Instead of:
 
@@ -112,9 +112,9 @@ Where:
 
 | Symbol                      | Meaning                 |
 | --------------------------- | ----------------------- |
-| $$(Y)$$                     | Response variable       |
-| $$(X_1, X_2, ..., X_k)$$    | Predictor variables     |
-| $$(\beta_0)$$               | Intercept               |
+| $$(Y)$$                     | [Response variable](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response))-variable)       |
+| $$(X_1, X_2, ..., X_k)$$    | [Predictor variables](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#predictor-variables)     |
+| $$(\beta_0)$$               | [Intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#intercept))               |
 | $$(\beta_1, ..., \beta_k)$$ | Regression coefficients |
 | $$(\epsilon)$$              | Random error            |
 
@@ -170,7 +170,7 @@ Multiple regression is foundational to:
     
 - machine learning
     
-- finance
+- [finance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Variances.md#[finance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#finance))
     
 - epidemiology
     
@@ -207,7 +207,7 @@ $$
 
 measures:
 
-> the proportion of variability in (Y) explained collectively by all predictors.
+> the proportion of variability in (Y) explained collectively by all [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors)).
 
 Example:
 
@@ -217,7 +217,7 @@ $$
 
 means:
 
-> 82% of variation in the response variable is explained by the predictors together.
+> 82% of variation in the [response variable](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response))-variable) is explained by the [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors)) together.
 
 # 9. The Danger of Naive (R^2)
 
@@ -225,11 +225,11 @@ A critical issue emerges in multiple regression:
 
 Adding more variables always increases (R^2).
 
-Even useless predictors can inflate apparent model quality.
+Even useless [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors)) can inflate apparent model quality.
 
 This creates:
 
-# Overfitting Risk
+# [Overfitting](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#overfitting) Risk
 
 # 10. Adjusted (R^2)
 
@@ -241,7 +241,7 @@ which penalizes unnecessary complexity.
 
 Unlike ordinary (R^2):
 
-- adjusted (R^2) can decrease
+- [adjusted (R^2) can decrease](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#adjusted-r2-can-decrease)
     
 - irrelevant variables are penalized
     
@@ -249,13 +249,13 @@ Unlike ordinary (R^2):
     
 # 11. Interpretation Challenges in Multiple Regression
 
-Interpreting multiple regression is much harder than simple regression because predictors may interact statistically.
+Interpreting multiple regression is much harder than simple regression because [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors)) may interact statistically.
 
 Key complications include:
 
 |Issue|Meaning|
 |---|---|
-|Multicollinearity|Predictors correlated with each other|
+|[Multicollinearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#[multicollinearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#[multicollinearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#multicollinearity)))|[Predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors)) correlated with each other|
 |Confounding|Predictor effects become mixed|
 |Suppression Effects|Adding variables changes coefficient signs|
 |Interaction Effects|One predictor changes effect of another|
@@ -301,7 +301,7 @@ This is why it is heavily used in:
 
 - policy analysis
     
-- medicine
+- [medicine](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L2/Errors%2C%20P-values%2C%20and%20Significance.md#[medicine](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L2/Errors%2C%20P-values%2C%20and%20Significance.md#medicine))
     
 - economics
     
@@ -314,15 +314,15 @@ Though regression alone does not prove causation.
 
 Simple regression fits:
 
-# a line
+# [a line](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#a-line)
 
 Multiple regression fits:
 
-# a hyperplane
+# [a hyperplane](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#a-hyperplane)
 
 ## Example
 
-Two predictors:
+Two [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors)):
 
 $$ 
 Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2  
@@ -330,7 +330,7 @@ $$
 
 creates a plane in 3D space.
 
-Three predictors create a 4D hyperplane.
+Three [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors)) create a 4D hyperplane.
 
 Higher dimensions become impossible to visualize directly.
 
@@ -350,8 +350,8 @@ Where:
 
 | Symbol                      | Meaning            |
 | --------------------------- | ------------------ |
-| $$(\mathbf{Y})$$            | Response vector    |
-| $$(\mathbf{X})$$            | Design matrix      |
+| $$(\mathbf{Y})$$            | [Response vector](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response))-vector)    |
+| $$(\mathbf{X})$$            | [Design matrix](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#design-matrix)      |
 | $$(\boldsymbol{\beta})$$    | Coefficient vector |
 | $$(\boldsymbol{\epsilon})$$ | Error vector       |
 
@@ -449,11 +449,11 @@ This module introduces several major ideas.
 
 You will learn:
 
-- how to include multiple predictors
+- how to include multiple [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors))
     
 - how coefficients are estimated
     
-- how predictors jointly explain outcomes
+- how [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors)) jointly explain outcomes
     
 
 ## 2. Evaluating Model Fit
@@ -464,7 +464,7 @@ You will study:
     
 - adjusted (R^2)
     
-- explained variance
+- [explained variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#explained-variance)
     
 ## 3. Interpreting Coefficients
 
@@ -483,14 +483,14 @@ You will study:
 
 - residual analysis
     
-- multicollinearity
+- [multicollinearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#[multicollinearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#[multicollinearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#multicollinearity)))
     
 - assumption checking
     
 
 # 20. The Bigger Picture
 
-Multiple linear regression is not merely a statistics topic.
+[Multiple linear regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#multiple-linear-regression) is not merely a statistics topic.
 
 It is one of the conceptual foundations of:
 
@@ -514,7 +514,7 @@ Many advanced ML models are direct generalizations of regression principles.
 
 Simple regression models one predictor.
 
-Multiple regression models several predictors simultaneously.
+Multiple regression models several [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors)) simultaneously.
 
 Core model:
 
