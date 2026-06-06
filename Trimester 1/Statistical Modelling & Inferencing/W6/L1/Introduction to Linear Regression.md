@@ -5,13 +5,13 @@
 ---
 # 1. The Goal of Regression: Modeling Statistical Relationships
 
-In many scientific, engineering, business, and social science applications, the primary objective is understanding how variables relate to one another.
+In many scientific, [engineering](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L2/Errors%2C%20P-values%2C%20and%20Significance.md#engineering), business, and social science applications, the primary objective is understanding how variables relate to one another.
 
 Some relationships are deterministic.
 
 A deterministic relationship follows an exact mathematical rule.
 
-Example:
+[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
 
 $$  
 F = ma  
@@ -61,7 +61,7 @@ but not perfectly.
 
 Two individuals with identical predictor values may still produce different outcomes because many additional influences exist simultaneously.
 
-Examples include:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples) include:
 
 - motivation
     
@@ -80,9 +80,9 @@ Regression therefore does not attempt to produce perfect certainty.
 
 Instead, it models the average systematic trend hidden inside noisy data.
 
-# 3. The Purpose of Simple Linear Regression
+# 3. The Purpose of [Simple Linear Regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#simple-linear-regression)
 
-Simple linear regression is designed to capture and quantify linear statistical relationships between two variables.
+[Simple linear regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#simple-linear-regression) is designed to capture and quantify linear statistical relationships between two variables.
 
 The two major objectives are:
 
@@ -97,7 +97,7 @@ Regression therefore serves both explanatory and predictive functions.
 
 One goal of regression is understanding how variables move together on average.
 
-The key inferential question becomes:
+The key inferential [question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#question))) becomes:
 
 $$  
 \text{How much does } Y \text{ change when } X \text{ changes?}  
@@ -105,7 +105,7 @@ $$
 
 \text{How much does }Y\text{ change when }X\text{ changes?}
 
-Examples:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples):
 
 - How much does salary increase per additional year of experience?
     
@@ -132,9 +132,9 @@ $$
 \hat{Y}  
 $$
 
-the predicted value of the response variable.
+the predicted value of the [response variable](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response)))-variable).
 
-Examples:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples):
 
 - predicted house price from area
     
@@ -159,7 +159,7 @@ $$
 
 Y=\text{Straight-Line Function of }X
 
-Graphically, the relationship is represented by a line rather than a curve.
+Graphically, the relationship is represented by [a line](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#a-line) rather than a curve.
 
 This implies:
 
@@ -199,7 +199,7 @@ In regression, the line attempts to summarize the overall directional trend of t
 
 # 8. Components of the Regression Model
 
-Simple linear regression involves two variables.
+[Simple linear regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#simple-linear-regression) involves two variables.
 
 # 9. The Dependent Variable
 
@@ -207,7 +207,7 @@ The dependent variable is the variable being predicted or explained.
 
 It is also called:
 
-- response variable
+- [response variable](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response)))-variable)
     
 - outcome variable
     
@@ -220,7 +220,7 @@ $$
 
 Y
 
-Examples:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples):
 
 - exam score
     
@@ -258,7 +258,7 @@ $$
 
 X
 
-Examples:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples):
 
 - hours studied
     
@@ -312,7 +312,7 @@ The model contains:
 
 This balance is fundamental to statistical modeling.
 
-# 12. The Population Intercept
+# 12. The Population [Intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#intercept))
 
 The parameter:
 
@@ -320,7 +320,7 @@ $$
 \beta_0  
 $$
 
-is called the population intercept.
+is called the population [intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#intercept)).
 
 It represents the expected value of:
 
@@ -338,11 +338,11 @@ X=0
 
 Interpretation depends heavily on context.
 
-Sometimes the intercept is meaningful.
+Sometimes the [intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#intercept)) is meaningful.
 
 Sometimes it is merely a mathematical positioning constant.
 
-Example:
+[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
 
 If:
 
@@ -366,7 +366,7 @@ $$
 50  
 $$
 
-# 13. Practical Interpretation of the Intercept
+# 13. Practical Interpretation of the [Intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#intercept))
 
 A major conceptual warning:
 
@@ -416,7 +416,7 @@ $$
 
 is the population slope.
 
-This is the most important quantity in simple linear regression.
+This is the most important quantity in [simple linear regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#simple-linear-regression).
 
 It measures the average change in:
 
@@ -435,14 +435,14 @@ Formally:
 # $$  
 \beta_1
 
-\frac{  
+[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)  
 \Delta Y  
 }{  
 \Delta X  
 }  
 $$
 
-\beta_1=\frac{\Delta Y}{\Delta X}
+\beta_1=[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\Delta Y}{\Delta X}
 
 # 15. Interpreting the Slope
 
@@ -456,7 +456,7 @@ Then:
 
 > Every one-unit increase in $$X$$ is associated with an average increase of 5 units in $$Y$$.
 
-Interpretation examples:
+Interpretation [examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples):
 
 - extra study hour → +5 exam points
     
@@ -503,14 +503,14 @@ $$
 
 This is a negative relationship.
 
-Examples:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples):
 
 |Positive Relationship|Negative Relationship|
 |---|---|
 |Study Time vs Score|Price vs Demand|
 |Advertising vs Sales|Speed vs Fuel Efficiency|
 
-# 17. The Error Term
+# 17. The [Error Term](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#error-term)
 
 The component:
 
@@ -528,7 +528,7 @@ $$
 
 that are not included in the model.
 
-Examples include:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples) include:
 
 - motivation
     
@@ -550,14 +550,14 @@ Y
 
 \text{Systematic Component}  
 +  
-\text{Random Noise}  
+\text{Random [Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))}  
 $$
 
-Y=\text{Systematic Component}+\text{Random Noise}
+Y=\text{Systematic Component}+\text{Random [Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))}
 
 # 18. Why Error Terms Matter
 
-Without the error term, the model would incorrectly assume perfect predictability.
+Without the [error term](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#error-term), the model would incorrectly assume perfect predictability.
 
 Real systems are inherently noisy.
 
@@ -589,7 +589,7 @@ where:
     
 - $$b_1$$ estimates $$\beta_1$$
     
-- $$\hat{Y}$$ is the predicted response
+- $$\hat{Y}$$ is the predicted [response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response)))
     
 
 # 20. Population Parameters vs Sample Estimates
@@ -615,11 +615,11 @@ $$
 \hat{Y}  
 $$
 
-represents the predicted response lying directly on the fitted regression line.
+represents the predicted [response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response))) lying directly on the fitted regression line.
 
-Predictions are model-generated expectations rather than guaranteed outcomes.
+[Predictions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#predictions) are model-generated expectations rather than guaranteed outcomes.
 
-For example:
+For [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
 
 $$  
 \hat{Y}=70  
@@ -631,7 +631,7 @@ means:
 
 Actual observations may still differ because of randomness.
 
-# 22. Residuals
+# 22. [Residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#residuals)
 
 The difference between an observed value and its predicted value is called the residual:
 
@@ -643,20 +643,20 @@ $$
 
 e_i=y_i-\hat{y}_i
 
-Residuals measure prediction error.
+[Residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#residuals) measure prediction error.
 
 Interpretation:
 
-- positive residual → underprediction
+- [positive residual](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#positive-residual) → underprediction
     
-- negative residual → overprediction
+- [negative residual](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L1/The%20Method%20of%20Least%20Squares.md#negative-residual) → overprediction
     
 - small residual → accurate prediction
     
 
-Residuals are central to regression diagnostics.
+[Residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#residuals) are central to regression diagnostics.
 
-# 23. The Core Problem of Regression Estimation
+# 23. [The Core Problem](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W2/L0/Inferential%20Statistics.md#the-core-problem) of Regression Estimation
 
 The central mathematical challenge becomes:
 
@@ -691,7 +691,7 @@ This produces the least squares regression line.
 
 # 25. Why Errors Are Squared
 
-Squaring residuals serves multiple purposes:
+Squaring [residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#residuals) serves multiple purposes:
 
 - prevents cancellation of positive and negative errors
     
@@ -708,7 +708,7 @@ Regression is not merely curve fitting.
 
 It is inferential statistics.
 
-The major inferential question becomes:
+The major inferential [question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#question))) becomes:
 
 $$  
 H_0:\beta_1 = 0  
@@ -722,7 +722,7 @@ $$
 \text{No Linear Relationship}  
 $$
 
-The alternative hypothesis is:
+The [alternative hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L2/Errors%2C%20P-values%2C%20and%20Significance.md#alternative-hypothesis) is:
 
 $$  
 H_A:\beta_1 \ne 0  
@@ -746,7 +746,7 @@ Regression provides:
 
 - expected trends
     
-- probabilistic predictions
+- probabilistic [predictions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#predictions)
     
 - average relationships
     
@@ -755,23 +755,23 @@ not perfect deterministic forecasts.
 
 Even excellent regression models still contain uncertainty because real systems contain randomness.
 
-# 28. Deep Statistical Intuition
+# 28. Deep Statistical [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#intuition))))
 
 Linear regression fundamentally attempts to discover mathematical structure inside noisy systems.
 
 The framework separates:
 
 $$  
-\text{Signal}  
+\text{[Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#signal))}  
 \quad from \quad  
 \text{Random Variation}  
 $$
 
-\text{Signal}\quad from \quad\text{Random Variation}
+\text{[Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#signal))}\quad from \quad\text{Random Variation}
 
 The fitted line captures systematic directional behavior.
 
-Residuals capture unexplained randomness.
+[Residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#residuals) capture unexplained randomness.
 
 The broader inferential goal becomes:
 
@@ -785,11 +785,11 @@ This is why regression became one of the foundational tools in:
 
 - economics
     
-- finance
+- [finance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L1/Inferences%20for%20Two%20Population%20Variances.md#[finance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#finance))
     
 - machine learning
     
-- engineering
+- [engineering](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L2/Errors%2C%20P-values%2C%20and%20Significance.md#engineering)
     
 - healthcare
     
