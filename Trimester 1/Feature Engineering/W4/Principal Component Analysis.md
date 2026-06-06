@@ -1,10 +1,10 @@
 ### Principal Component Analysis (PCA) Technical Notes
 
-#### 1. Clear Overview
+#### [1. Clear Overview](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W1/3.%20Working%20With%20Sample%20Dataset%20-%20I.md#1-clear-overview)
 
-Principal Component Analysis (PCA) is an unsupervised dimensionality reduction technique that transforms a high-dimensional dataset into a lower-dimensional subspace while retaining the maximum possible variance. It achieves this by creating new, uncorrelated features called **Principal Components (PCs)**, which are linear combinations of the original variables.
+Principal Component Analysis (PCA) is an unsupervised dimensionality reduction technique that transforms a high-dimensional [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/Experiential%20Learning%20Activity.md#dataset) into a lower-dimensional subspace while retaining the maximum possible variance. It achieves this by creating new, uncorrelated features called **Principal Components (PCs)**, which are linear combinations of the original variables.
 
-#### 2. Theoretical Framework
+#### [2. Theoretical Framework](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W4/Singular%20Value%20Description.md#2-theoretical-framework)
 
 PCA operates by identifying the directions of maximum variance in the data.
 
@@ -30,7 +30,7 @@ PCA operates by identifying the directions of maximum variance in the data.
 
 #### 3. Implementation Details
 
-When applying PCA to the `load_digits` dataset (64 features, 8x8 pixel intensity):
+When applying PCA to the `load_digits` [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/Experiential%20Learning%20Activity.md#dataset) (64 features, 8x8 pixel intensity):
 
 
 ```python
@@ -69,7 +69,7 @@ plt.axhline(y=0.95, color='r', linestyle='--') # Identify k for 95% retention
 - **Outlier Sensitivity:** Because PCA is variance-based, outliers can significantly rotate the principal components, leading to unstable results.
     
 
-#### 5. Application Summary
+#### [5. Application Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/L2/Embedded%20Methods.md#5-application-[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary)))
 
 |**Objective**|**Strategy**|
 |---|---|
