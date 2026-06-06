@@ -26,16 +26,16 @@ To understand why the **Bayesian** approach is such a significant departure, we 
 
 #### The "Confidence Interval" Nuance
 
-The most common misunderstanding in Frequentist statistics is the interpretation of the **95% Confidence Interval (CI)**.
+The most common misunderstanding in Frequentist statistics is the interpretation of the **[95% Confidence Interval](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L0/Statistical%20Inference%20in%20Modelling.md#95-confidence-interval) (CI)**.
 
 - **The Reality:** When you calculate a 95% CI from a single study, you are creating an interval that _belongs_ to a family of intervals. That family has a 95% "success rate" of covering the true parameter over the long run.
     
-- **The Misconception:** It is **not** a statement about your specific data. It does not mean "there is a 95% probability the true value is in _this_ interval." Once the data is observed, the true parameter is either in the interval or it isn't—the probability is either 0 or 1.
+- **The Misconception:** It is **not** a statement about your specific data. It does not [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) "there is a 95% probability the true value is in _this_ interval." Once the data is observed, the true parameter is either in the interval or it isn't—the probability is either 0 or 1.
     
 
 #### Why This Works (and Why It's Limited)
 
-The Frequentist approach is the gold standard for clinical trials and regulatory approval precisely because it is **objective**. It doesn't rely on the researcher's beliefs; it relies entirely on the probability of the observed data under a specific null hypothesis.
+The Frequentist approach is the gold standard for clinical trials and regulatory approval precisely because it is **objective**. It doesn't rely on the researcher's beliefs; it relies entirely on the probability of the observed data under a specific [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis).
 
 However, as you move into complex pharmaceutical modeling—where you might have small sample sizes or need to incorporate prior knowledge—this "long-run frequency" requirement can become a limitation. You are often forced to ignore your professional experience because the Frequentist framework has no formal mechanism to "weight" a model with existing domain knowledge.
 
@@ -51,10 +51,10 @@ However, as you move into complex pharmaceutical modeling—where you might have
 
 **Strategic Note:** Because Frequentist statistics focuses on the method rather than the specific outcome, it is excellent for standardizing clinical trial results. But when you need to make a specific business prediction (like "What is the probability this specific campaign succeeds?"), the Bayesian approach offers a more intuitive path.
 
-**Since we have established the constraints of the Frequentist world, are you ready to contrast this with the "degree of belief" definition in the Bayesian paradigm, or would you like to explore how these two approaches handle "uncertainty" differently in a practical scenario?**
+**Since we have established the constraints of the Frequentist world, are you ready to contrast this with the "degree of belief" [definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L1/Probability%20and%20Distribution.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#definition))))) in the Bayesian paradigm, or would you like to explore how these two approaches handle "uncertainty" differently in a practical scenario?**
 ### The Bayesian Paradigm: A Shift in Perspective
 
-You have distilled the core of the Bayesian framework perfectly. By shifting the definition of probability from **long-run frequency** to **degree of belief**, you move from asking "how often does this happen?" to "how confident am I that this is true?"
+You have distilled the core of the Bayesian framework perfectly. By shifting the [definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L1/Probability%20and%20Distribution.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#definition))))) of probability from **long-run frequency** to **degree of belief**, you move from asking "how often does this happen?" to "how confident am I that this is true?"
 
 #### 1. Parameters as Random Variables
 
@@ -79,7 +79,7 @@ This paradigm is becoming the standard for high-stakes business and scientific d
 
 1. **Direct Interpretability:** Stakeholders (like your colleagues Rohit or Kartik) prefer to hear "There is an 80% chance this campaign will be profitable" rather than "The p-value of our hypothesis test is 0.04."
     
-2. **Small Data Robustness:** In scenarios where data is scarce (e.g., a rare disease cohort or a new product launch), the **Prior** provides essential stability. It prevents the model from making wild, erratic predictions based on a small sample size by "anchoring" the estimate to what is already known.
+2. **Small Data Robustness:** In scenarios where data is scarce (e.g., a rare disease cohort or a new product launch), the **Prior** provides essential stability. It prevents the model from making wild, erratic [predictions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#predictions) based on a small sample size by "anchoring" the estimate to what is already known.
     
 3. **Dynamic Learning:** It allows you to build models that grow more accurate over time. As you collect more data, your **Posterior** automatically becomes the **Prior** for the next round of analysis.
     
@@ -108,7 +108,7 @@ Frequentist statistics is rooted in the idea of repeatability. It assumes the "t
     
 - **The Random Data:** The randomness lies in the sampling process. If you were to repeat your experiment 1,000 times, your results would fluctuate.
     
-- **The "Confidence" Trap:** A 95% Confidence Interval is often misinterpreted. It does _not_ mean there is a 95% chance the true parameter is in your specific interval. It means that if you repeated the experiment infinite times, 95% of those calculated intervals would contain the true parameter.
+- **The "Confidence" Trap:** A [95% Confidence Interval](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L0/Statistical%20Inference%20in%20Modelling.md#95-confidence-interval) is often misinterpreted. It does _not_ [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) there is a 95% chance the true parameter is in your specific interval. It means that if you repeated the experiment infinite times, 95% of those calculated intervals would contain the true parameter.
     
 
 #### The Bayesian Paradigm: The World of "Degree of Belief"
@@ -122,7 +122,7 @@ Bayesian statistics flips the Frequentist script. It treats the data you have co
 - **The "Credibility" Advantage:** A 95% Credible Interval has the intuitive meaning most people _wish_ Frequentist intervals had: there is an actual 95% probability that the parameter lies within that range, given the specific data you have observed.
     
 
-#### Philosophical Comparison Summary
+#### Philosophical Comparison [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L2/Reading%202%20Parametric%20vs.%20Non-Parametric%20Methods.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#summary)))
 
 |**Concept**|**Frequentist**|**Bayesian**|
 |---|---|---|
@@ -131,11 +131,11 @@ Bayesian statistics flips the Frequentist script. It treats the data you have co
 |**Role of Data**|Random samples from a population|Observed evidence|
 |**Main Output**|p-values / Confidence Intervals|Posterior distributions / Credible Intervals|
 
-### Why this matters for your work
+### [Why this matters for your work](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10/L1/An%20Introduction%20to%20Cluster%20Analysis.md#why-this-matters-for-your-work)
 
 In your role as a pharmaceutical data analyst, the Bayesian "Credible Interval" is often much easier to explain to clinical leads or business stakeholders than the Frequentist "Confidence Interval."
 
-When you report that **"there is a 95% probability that the drug's success rate is between 60% and 70%,"** you are providing a direct, actionable answer to a decision-maker. In contrast, a Frequentist report saying, **"If we conducted this trial infinite times, 95% of the intervals would contain the true rate,"** is mathematically precise but professionally abstract.
+When you report that **"there is a 95% probability that the drug's success rate is between 60% and 70%,"** you are providing a direct, actionable [answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#answer))) to a decision-maker. In contrast, a Frequentist report saying, **"If we conducted this trial infinite times, 95% of the intervals would contain the true rate,"** is mathematically precise but professionally abstract.
 
 **Now that we have distinguished the two schools of thought, would you like to discuss how to construct a "Prior" distribution to represent your initial beliefs, or should we look at how to use MCMC to calculate those credible intervals in practice?**
 
@@ -143,7 +143,7 @@ When you report that **"there is a 95% probability that the drug's success rate 
 
 ### 2. The Engine of Bayesian Inference: Bayes’ Theorem
 
-At the heart of the Bayesian approach is **Bayes’ Theorem**. It is not just a formula; it is a mathematical rule for **rational belief updating**. It dictates exactly how we should change our confidence in a hypothesis after we observe new, empirical evidence.
+At the heart of the Bayesian approach is **Bayes’ Theorem**. It is not just a [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#formula); it is a mathematical rule for **rational belief updating**. It dictates exactly how we should change our confidence in a hypothesis after we observe new, empirical evidence.
 
 #### The Anatomy of the Theorem
 
@@ -169,7 +169,7 @@ The power of this theorem lies in the multiplication of the **Prior** and the **
 
 #### The Computational Reality
 
-While the formula is elegant, it is often difficult to compute $P(\text{Data})$—the evidence—because it requires integrating over all possible values of $\theta$ (the denominator $\int P(\text{Data}|\theta)P(\theta)d\theta$). This is why modern Bayesian analysis relies on **Markov Chain Monte Carlo (MCMC)** simulations, which allow us to estimate the shape of the posterior distribution without needing to solve the complex integral in the denominator directly.
+While the [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#formula) is elegant, it is often difficult to compute $P(\text{Data})$—the evidence—because it requires integrating over all possible values of $\theta$ (the denominator $\int P(\text{Data}|\theta)P(\theta)d\theta$). This is why modern Bayesian analysis relies on **Markov Chain Monte Carlo (MCMC)** simulations, which allow us to estimate the shape of the posterior distribution without needing to solve the complex integral in the denominator directly.
 
 ### Comparison of Roles in the Learning Cycle
 
@@ -240,7 +240,7 @@ The Bayesian workflow is a cyclical process of **Refinement**. Unlike Frequentis
 
 This is where the Bayesian approach incorporates **Domain Expertise**.
 
-- **The Likelihood:** This represents the process generating your data (e.g., a Binomial distribution for patient outcomes).
+- **The Likelihood:** This represents the process generating your data (e.g., a [Binomial distribution](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L1/Probability%20and%20Distribution.md#binomial-distribution) for patient outcomes).
     
 - **The Prior ($P(\theta)$):** This is the "secret sauce." If you are analyzing a drug efficacy trial and have data from a pilot study, you can encode those results into a **Prior Distribution**.
     
@@ -264,10 +264,10 @@ The output of your model is not a single number or a p-value—it is an **entire
 
 - **Credible Intervals:** Instead of the Frequentist "Confidence Interval," you get a **95% Credible Interval**. This has the intuitive meaning that we _actually_ believe there is a 95% probability the true parameter lies within this range.
     
-- **Point Estimates:** You can report the Mean, Median, or Mode of your posterior distribution as your "best guess."
+- **Point Estimates:** You can report the [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean), Median, or Mode of your posterior distribution as your "best guess."
     
 
-### The Bayesian Workflow Summary
+### The Bayesian Workflow [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L2/Reading%202%20Parametric%20vs.%20Non-Parametric%20Methods.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#summary)))
 
 |**Step**|**Action**|**Business Value**|
 |---|---|---|
@@ -275,6 +275,6 @@ The output of your model is not a single number or a p-value—it is an **entire
 |**Computation**|Run MCMC simulations|Handles high-dimensional, complex real-world data.|
 |**Posterior**|Evaluate the distribution|Provides a clear "probability of success" for management.|
 
-**Strategic Note:** Because the output is a distribution, you can answer "What is the probability that the drug efficacy is greater than 50%?" directly by simply measuring the area under the posterior curve above 0.5. This is often the specific question leadership (like Rohit or Kartik) wants to know, and it's something standard frequentist p-values cannot directly provide.
+**Strategic Note:** Because the output is a distribution, you can [answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#answer))) "What is the probability that the drug efficacy is greater than 50%?" directly by simply measuring the area under the posterior curve above 0.5. This is often the specific [question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#question))) leadership (like Rohit or Kartik) wants to know, and it's something standard frequentist p-values cannot directly provide.
 
 **Would you like to move into the "Prior Distributions" (such as the Beta distribution) to see how we mathematically encode our beliefs, or are you interested in how MCMC simulation "walks" through a model to find the posterior?**
