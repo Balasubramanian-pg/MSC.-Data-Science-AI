@@ -31,7 +31,7 @@ If those assumptions fail:
     
 - standard errors become biased
     
-- predictions degrade
+- [predictions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#predictions) degrade
     
 - coefficient interpretation becomes dangerous
     
@@ -90,7 +90,7 @@ If residuals contain patterns, the model has failed to capture something importa
 
 ---
 
-# 3. The LINE Assumptions
+# 3. The [LINE Assumptions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#line-assumptions)
 
 Linear regression relies on four major assumptions.
 
@@ -98,26 +98,26 @@ Linear regression relies on four major assumptions.
 
 |Letter|Assumption|Meaning|
 |---|---|---|
-|L|Linearity|Relationship between (X) and (Y) is linear|
-|I|Independence|Errors are independent|
+|L|[Linearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L0/Linear%20Regression.md#linearity)|Relationship between (X) and (Y) is linear|
+|I|[Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L0/Linear%20Regression.md#independence)|Errors are independent|
 |N|Normality|Errors are normally distributed|
-|E|Equal Variance|Errors have constant variance|
+|E|Equal Variance|Errors have [constant variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L0/Linear%20Regression.md#constant-variance)|
 
 ---
 
-# 4. Assumption 1: Linearity
+# 4. Assumption 1: [Linearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L0/Linear%20Regression.md#linearity)
 
-## Definition
+## [Definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L1/Probability%20and%20Distribution.md#definition)
 
-The expected response must be a linear function of predictors.
+The expected [response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response))) must be a linear function of [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors))).
 
-For simple linear regression:
+For [simple linear regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#simple-linear-regression):
 
 [  
 E(Y|X) = \beta_0 + \beta_1 X  
 ]
 
-This does **not** mean the data points lie perfectly on a line.
+This does **not** [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) the data points lie perfectly on [a line](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#a-line).
 
 It means:
 
@@ -136,7 +136,7 @@ A linear model assumes:
 - by a constant amount
     
 
-Example:
+[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
 
 |Hours Studied|Predicted Score|
 |---|---|
@@ -152,7 +152,7 @@ The increase is constant:
 
 ---
 
-## When Linearity Fails
+## When [Linearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L0/Linear%20Regression.md#linearity) Fails
 
 Suppose the true relationship is curved:
 
@@ -194,14 +194,14 @@ What we want:
 
 This indicates:
 
-- linearity assumption is reasonable
+- [linearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L0/Linear%20Regression.md#linearity) assumption is reasonable
     
 - equal variance assumption is reasonable
     
 
 ---
 
-## Non-Linearity Pattern
+## Non-[Linearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L0/Linear%20Regression.md#linearity) Pattern
 
 If residuals show:
 
@@ -216,7 +216,7 @@ If residuals show:
 
 then the linear model is inappropriate.
 
-Example pattern:
+[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) pattern:
 
 ```text
 Residuals
@@ -239,11 +239,11 @@ is not linear.
 
 ---
 
-## Common Fixes for Non-Linearity
+## Common Fixes for Non-[Linearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L0/Linear%20Regression.md#linearity)
 
 ### 1. Transform Variables
 
-Examples:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples):
 
 [  
 \log(X)  
@@ -271,7 +271,7 @@ Y = \beta_0 + \beta_1 X + \beta_2 X^2 + \epsilon
 
 ### 3. Use Nonlinear Models
 
-Examples:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples):
 
 - splines
     
@@ -284,9 +284,9 @@ Examples:
 
 ---
 
-# 5. Assumption 2: Independence
+# 5. Assumption 2: [Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L0/Linear%20Regression.md#independence)
 
-## Definition
+## [Definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L1/Probability%20and%20Distribution.md#definition)
 
 Residuals should not depend on each other.
 
@@ -321,7 +321,7 @@ Violation often occurs in:
 
 ---
 
-## Example of Dependence
+## [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) of Dependence
 
 Suppose stock price prediction errors behave like:
 
@@ -374,7 +374,7 @@ Interpretation:
 
 # 6. Assumption 3: Normality
 
-## Definition
+## [Definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L1/Probability%20and%20Distribution.md#definition)
 
 Errors are assumed normally distributed:
 
@@ -475,7 +475,7 @@ Large systematic deviations are problematic.
 
 # 8. Assumption 4: Equal Variance (Homoscedasticity)
 
-## Definition
+## [Definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L1/Probability%20and%20Distribution.md#definition)
 
 Residual variance should remain constant across all fitted values.
 
@@ -554,7 +554,7 @@ But inference becomes unreliable.
 
 Higher values naturally have larger variability.
 
-Example:
+[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
 
 |Income|Spending Variability|
 |---|---|
@@ -565,11 +565,11 @@ Example:
 
 ## Missing Variables
 
-Omitted predictors create uneven residual spread.
+Omitted [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors))) create uneven residual spread.
 
 ---
 
-## Incorrect Functional Form
+## [Incorrect](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#[incorrect](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#[incorrect](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W3/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#incorrect))) Functional Form
 
 Using a linear model for nonlinear relationships can induce heteroscedasticity.
 
@@ -577,7 +577,7 @@ Using a linear model for nonlinear relationships can induce heteroscedasticity.
 
 # 11. Fixes for Heteroscedasticity
 
-## 1. Transform the Response
+## 1. Transform the [Response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response)))
 
 Common:
 
@@ -601,12 +601,12 @@ Keeps coefficients same but adjusts inference.
 
 ---
 
-# 12. Summary of Diagnostic Patterns
+# 12. [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L2/Reading%202%20Parametric%20vs.%20Non-Parametric%20Methods.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#summary))) of Diagnostic Patterns
 
 |Plot Pattern|Likely Problem|
 |---|---|
 |Random cloud|Model assumptions reasonable|
-|Curved pattern|Non-linearity|
+|Curved pattern|Non-[linearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L0/Linear%20Regression.md#linearity)|
 |Funnel shape|Heteroscedasticity|
 |Clusters over time|Dependence|
 |Extreme outliers in Q-Q plot|Non-normality|
@@ -621,7 +621,7 @@ Think of residuals as:
 
 Good models leave behind:
 
-- random noise
+- random [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))
     
 
 Bad models leave behind:
@@ -673,7 +673,7 @@ K --> L[Recheck Diagnostics]
 
 Ordinary residuals have subtle dependence structures mathematically.
 
-Strict independence applies to the true errors, not raw residuals.
+Strict [independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L0/Linear%20Regression.md#independence) applies to the true errors, not raw residuals.
 
 This distinction matters in advanced regression theory.
 
@@ -716,7 +716,7 @@ Real modeling is iterative:
 
 ---
 
-# 16. Python Example
+# 16. Python [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example)
 
 ```python
 import numpy as np
@@ -757,7 +757,7 @@ plt.show()
 
 ---
 
-# 17. Common Mistakes
+# 17. [Common Mistakes](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#common-mistakes)
 
 ## Mistake 1
 
@@ -857,7 +857,7 @@ The most important regression habit is:
 
 > Never interpret coefficients before checking residuals.
 ![[Pasted image 20260523103404.png]]
-- **Problem 1: Non-Linearity.** If the plot shows a distinct curve (like a U-shape), it means the underlying relationship is not linear. A straight-line model is inappro priate.
+- **Problem 1: Non-[Linearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L0/Linear%20Regression.md#linearity).** If the plot shows a distinct curve (like a U-shape), it means the underlying relationship is not linear. A straight-line model is inappro priate.
 - **Problem 2: Heteroscedasticity.** If the plot shows a funnel or cone shape (the spread of residuals changes as ŷ changes), the equal variance assumption is violated. This makes our p-values and confidence intervals unreliable.
 
 **3.2 Checking Normality**  
