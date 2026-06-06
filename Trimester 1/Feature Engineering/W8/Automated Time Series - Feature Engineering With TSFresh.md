@@ -60,7 +60,7 @@ The `select_features` utility is not a black box; it utilizes **statistical hypo
 - **Significance Testing:** Each feature is tested against the target variable. If the calculated **p-value** is below a specific threshold (e.g., $p < 0.05$), the feature is deemed "relevant" and retained.
     
 
-### 4. Summary of Trade-offs
+### 4. [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary)) of Trade-offs
 
 |**Phase**|**Benefit**|**Risk**|
 |---|---|---|
@@ -68,7 +68,7 @@ The `select_features` utility is not a black box; it utilizes **statistical hypo
 |**Imputation**|Ensures model compatibility.|Imputing zeros may introduce bias if the missing data is informative.|
 |**Selection**|Effectively removes noise and redundant features using statistical rigor.|Can lead to high computational costs if the feature set is extremely large.|
 
-### Final Takeaway
+### [Final Takeaway](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W8/Automated%20Feature%20Selection%20%26%20Ranking%20Using%20Feature%20Wiz.md#final-takeaway)
 
 TSFresh is an excellent "exploratory" tool. When you have a complex time series and are unsure which statistical indicators are most predictive, TSFresh will perform the heavy lifting of extracting hundreds of possibilities and filtering them down to the most statistically significant candidates.
 
