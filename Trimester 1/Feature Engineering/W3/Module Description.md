@@ -6,7 +6,7 @@ The module defines three fundamental approaches to handling input variables:
 
 - **Feature Extraction:** Transforming raw, unstructured data (e.g., text, images, or time-series) into meaningful numerical representations. This process is essential for reducing data dimensionality and filtering noise.
     
-- **Feature Construction:** The creative, domain-informed process of engineering new variables from existing ones. By creating interaction terms, ratios, or domain-specific indicators, you make underlying patterns explicit for the model to detect.
+- **[Feature Construction](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/L1/Demonstration.md#feature-construction):** The creative, domain-informed process of engineering new variables from existing ones. By creating interaction terms, ratios, or domain-specific indicators, you make underlying patterns explicit for the model to detect.
     
 - **Feature Selection:** The strategic process of pruning the feature set. By identifying and removing irrelevant or redundant variables, you improve model interpretability, accelerate training, and reduce the risk of overfitting.
     
@@ -32,9 +32,9 @@ Statistical tests used to rank features before any model training occurs.
 
 Search strategies that "wrap" around a predictive model to evaluate the performance of feature subsets.
 
-- **Sequential Forward Selection (SFS):** A bottom-up approach adding features one-by-one to maximize predictive power.
+- **[Sequential Forward Selection (SFS)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/L2/Wrapper%20Methods%20-%20SFS%20%26%20SBS.md#sequential-forward-selection-sfs):** A bottom-up approach adding features one-by-one to maximize predictive power.
     
-- **Sequential Backward Selection (SBS):** A top-down approach pruning features one-by-one to minimize performance loss.
+- **[Sequential Backward Selection (SBS)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/L2/Wrapper%20Methods%20-%20SFS%20%26%20SBS.md#sequential-backward-selection-sbs):** A top-down approach pruning features one-by-one to minimize performance loss.
     
 
 #### **Embedded Methods (Integrated with Model)**
@@ -46,7 +46,7 @@ Feature selection performed _during_ the training process itself.
 - **Tree-based Importance:** Algorithms like Random Forests calculate feature importance based on how effectively a feature reduces impurity (e.g., Gini impurity) across decision splits.
     
 
-### 3. Practical Workflow Summary
+### 3. Practical Workflow [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary))
 
 |**Task**|**Objective**|**Strategy**|
 |---|---|---|
