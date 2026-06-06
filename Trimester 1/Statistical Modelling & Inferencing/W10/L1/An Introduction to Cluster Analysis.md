@@ -21,28 +21,28 @@ Foundations of Cluster Analysis**
 
 ### 1.1 Unsupervised vs. Supervised Learning: The Difference in "Guiding"
 
-The distinction between supervised and unsupervised learning is defined by the **presence of a teacher**—a target variable ($Y$) that tells the algorithm whether it got the answer right or wrong.
+The distinction between supervised and unsupervised learning is defined by the **presence of a teacher**—a target variable ($Y$) that tells the algorithm whether it got the [answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#answer))) right or wrong.
 
 #### Supervised Learning: Learning with a Map
 
-Think of supervised learning as a classroom where the teacher provides the questions _and_ the answer key.
+Think of supervised learning as a classroom where the teacher provides the questions _and_ the [answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#answer))) key.
 
 - **Mechanism:** The algorithm maps inputs ($X$) to known outputs ($Y$). It calculates the "loss" (how far its prediction was from the truth) and iteratively adjusts its internal parameters to minimize that error.
     
 - **Objective:** Prediction. You want the model to generalize so that when it sees new data, it can guess the correct label or value.
     
-- **Examples:** Linear regression to forecast sales; Logistic regression to predict customer churn.
+- **[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples):** Linear regression to forecast sales; Logistic regression to predict customer churn.
     
 
 #### Unsupervised Learning: Exploration in the Unknown
 
-Unsupervised learning is like being dropped into a foreign country with no map and no dictionary. There is no "answer key." You are forced to look for patterns, structure, and similarities on your own.
+Unsupervised learning is like being dropped into a foreign country with no map and no dictionary. There is no "[answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#answer))) key." You are forced to look for patterns, structure, and similarities on your own.
 
 - **Mechanism:** The algorithm analyzes the intrinsic geometry of the data. It looks for points that are "close" to each other based on mathematical distance, or density regions where data is concentrated.
     
 - **Objective:** Discovery. You want to understand the "topology" of your data to uncover hidden segments, archetypes, or anomalies.
     
-- **Examples:** Market segmentation, anomaly detection (identifying fraud), and data compression (Factor Analysis).
+- **[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L0/Time%20Series%20Analysis.md#examples):** Market segmentation, anomaly detection (identifying fraud), and data compression (Factor Analysis).
     
 
 #### The Core Logic of Clustering
@@ -63,7 +63,7 @@ Clustering is the quintessential unsupervised task. It relies on the principle o
 |**Algorithm's "Task"**|Error Minimization|Pattern Discovery|
 |**Typical Output**|Values/Categories|Segments/Buckets|
 
-### Why this matters for your work
+### [Why this matters for your work](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W13/L1/An%20Introduction%20to%20Bayesian%20Inference.md#why-this-matters-for-your-work)
 
 In your role as a Business Analyst, you will frequently shift between these two modes:
 
@@ -81,7 +81,7 @@ In cluster analysis, the computer does not "understand" similarity in the human 
 
 #### The Euclidean Distance: Measuring the "Straight-Line" Path
 
-The formula you cited, $d(p, q) = \sqrt{\sum_{i=1}^{m} (p_i - q_i)^2}$, is the classic "as-the-crow-flies" distance. It calculates the length of the line segment connecting two points in multidimensional space.
+The [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#formula) you cited, $d(p, q) = \sqrt{\sum_{i=1}^{m} (p_i - q_i)^2}$, is the classic "as-the-crow-flies" distance. It calculates the length of the line segment connecting two points in multidimensional space.
 
 - **High Distance = Low Similarity:** Points far apart are distinct; they belong in different clusters.
     
@@ -107,19 +107,19 @@ Transform each variable $X$ into a Z-score:
 
 $$Z = \frac{x - \mu}{\sigma}$$
 
-- This gives every variable a mean of 0 and a standard deviation of 1. Now, a "1-unit difference" in _Prescription Volume_ is mathematically equivalent to a "1-unit difference" in _Years of Practice_.
+- This gives every variable a [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) of 0 and a standard deviation of 1. Now, a "1-unit difference" in _Prescription Volume_ is mathematically equivalent to a "1-unit difference" in _Years of Practice_.
     
 
 #### Beyond Euclidean: Alternative Distance Metrics
 
 While Euclidean is the standard, it is not the only tool in the box:
 
-- **Manhattan Distance (L1 Norm):** Calculates the distance as the sum of absolute differences. Think of this as navigating a city grid where you can only move along the axes, not diagonally. It is often more robust if your data has outliers.
+- **Manhattan Distance (L1 Norm):** Calculates the distance as the sum of absolute differences. Think of this as navigating a city grid where you can only move along the [axes](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#axes), not diagonally. It is often more robust if your data has outliers.
     
 - **Cosine Similarity:** Measures the _angle_ between two vectors rather than the distance between points. It is excellent when the _magnitude_ of the features doesn't matter, but the _relative proportions_ do (e.g., comparing the content profile of two different patient medical records).
     
 
-### Strategy Summary for Similarity Measurement
+### Strategy [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L2/Reading%202%20Parametric%20vs.%20Non-Parametric%20Methods.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#summary))) for Similarity Measurement
 
 |**Step**|**Technique**|**Purpose**|
 |---|---|---|
@@ -133,7 +133,7 @@ While Euclidean is the standard, it is not the only tool in the box:
 
 ![[Pasted image 20260525125547.png]]
 
-**Part II  
+**[Part II](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W13/L1/An%20Introduction%20to%20Bayesian%20Inference.md#part-ii)  
 Clustering Algorithms**
 
 **2 Hierarchical Clustering**  
@@ -164,12 +164,12 @@ Complete
 K-Means is the most popular partitional clustering algorithm. Unlike hierarchical clustering, it does not create a hierarchy; instead, it partitions the data into a pre-specified number of clusters, K.
 
 **3.1 The K-Means Algorithm**  
-The objective of K-Means is to find cluster assignments that minimize the Within Cluster Sum of Squares (WCSS), which is the sum of the squared Euclidean distances of each point to the center (mean) of its assigned cluster.  
+The objective of K-Means is to find cluster assignments that minimize the Within Cluster Sum of Squares (WCSS), which is the sum of the squared Euclidean distances of each point to the center ([mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean)) of its assigned cluster.  
 The algorithm proceeds as follows:
 
 1. Initialization: Randomly select K data points from the dataset to serve as the initial cluster centers, or centroids.
 2. Assignment Step: For each data point, calculate its distance to every centroid. Assign the data point to the cluster of the closest centroid.
-3. Update Step: After all points have been assigned, recalculate the position of each centroid by taking the mean of all data points assigned to its cluster.
+3. Update Step: After all points have been assigned, recalculate the position of each centroid by taking the [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) of all data points assigned to its cluster.
 4. Iteration: Repeat the Assignment and Update steps until the cluster assignments no longer change (the algorithm has converged).
 
 **3.2 Strengths and Weaknesses**
