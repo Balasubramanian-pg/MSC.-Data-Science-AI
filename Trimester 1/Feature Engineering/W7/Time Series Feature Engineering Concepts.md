@@ -23,7 +23,7 @@ To help you structure your learning and study, here is an index of the technical
     
     - Handling the initial `NaN` values created by shifting.
         
-- **Rolling Statistics:** * **Rolling Means:** Smoothing noise to reveal local trends.
+- **Rolling Statistics:** * **Rolling Means:** [Smoothing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W2/Readme.md#smoothing) noise to reveal local trends.
     
     - **Rolling Standard Deviation:** Quantifying local volatility or variability.
         
@@ -32,7 +32,7 @@ To help you structure your learning and study, here is an index of the technical
     - Fitting a linear regression model within a moving window to capture the rate of change or trend direction.
         
 
-#### **3. Domain-Specific Feature Engineering**
+#### **[3. Domain-Specific Feature Engineering](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#3-domain-specific-feature-engineering)**
 
 - **Finance (Market Indicators):**
     
@@ -53,7 +53,7 @@ To help you structure your learning and study, here is an index of the technical
     - **Pre/Post-RR Features:** Providing temporal context to heart rhythm abnormalities.
         
 
-#### **4. Visualization and Model Integration**
+#### **4. [Visualization](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W4/Readme.md#visualization) and Model Integration**
 
 - **Visualizing Trends:** Plotting rolling statistics against raw series to verify noise reduction and trend clarity.
     
