@@ -6,7 +6,7 @@
 
 ### 1. Improving on Moving Averages: The Shift to Exponential Weighting
 
-Simple Moving Averages (SMA) rely on a rigid "window." By treating a data point from 3 weeks ago exactly the same as yesterday’s observation, the SMA ignores the reality of dynamic business environments—where the most recent data often carries the most predictive signal.
+Simple Moving Averages (SMA) rely on a rigid "window." By treating a data point from 3 weeks ago exactly the same as yesterday’s observation, the SMA ignores the reality of dynamic business environments—where the most recent data often carries the most predictive [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)).
 
 Simple Exponential Smoothing (SES) resolves these limitations by introducing a **decay factor**, ensuring that your model is always "fresher" and more responsive to the present.
 
@@ -27,7 +27,7 @@ SES applies a constant smoothing parameter, **$\alpha$ (alpha)**, which dictates
 
 ### 3. The Mechanics of SES
 
-The fundamental formula for SES is:
+The fundamental [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#formula) for SES is:
 
 $$\hat{y}_{t+1|t} = \alpha y_t + (1 - \alpha) \hat{y}_{t|t-1}$$
 
@@ -46,14 +46,14 @@ This can be broken down into two perspectives:
 
 - **The "Flat" Forecast Limitation:** It is vital to note that SES produces a **flat forecast**. Because it only models the "Level" of the data, it assumes the series will remain constant at the current level indefinitely ($\hat{y}_{T+h|T} = \hat{y}_{T+1|T}$ for all $h > 0$).
     
-- **When to use SES:** It is perfect for series that fluctuate around a stable mean with no discernible trend or seasonality.
+- **When to use SES:** It is perfect for series that fluctuate around a stable [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) with no discernible trend or seasonality.
     
 - **When to upgrade:** If your pharmaceutical demand data shows a clear upward trend (e.g., market growth) or a clear cyclical pattern (e.g., seasonal buying), SES will underperform. This is exactly where **Holt’s Method** (for trends) and **Holt-Winters** (for seasonality) become necessary.
     
 
-#### Summary: SMA vs. SES
+#### [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L2/Reading%202%20Parametric%20vs.%20Non-Parametric%20Methods.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#summary))): SMA vs. SES
 
-|**Feature**|**Simple Moving Average (SMA)**|**Simple Exponential Smoothing (SES)**|
+|**Feature**|**[Simple Moving Average (SMA)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W8/L1/Smoothing%20with%20Moving%20Averages.md#simple-moving-average-sma)**|**Simple Exponential Smoothing (SES)**|
 |---|---|---|
 |**Weighting**|Equal (All points matter)|Exponential (Recent > Past)|
 |**Data Requirements**|Fixed window ($k$)|Recursive (previous estimate)|
@@ -62,15 +62,15 @@ This can be broken down into two perspectives:
 
 **Would you like to explore how to calculate the optimal $\alpha$ for your data, or shall we move on to how Holt's method adds a "Trend" component to fix the "flat forecast" problem?**
 
-### 2. The SES Formula: From Weighted Averages to Error Correction
+### 2. The SES [Formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#formula): From Weighted Averages to Error Correction
 
-The two forms of the Simple Exponential Smoothing (SES) formula you've highlighted represent two different ways of looking at the same reality. Whether you view it as a **weighted average** of the past or an **error-correction mechanism**, the goal remains the same: balancing stability against responsiveness.
+The two forms of the Simple Exponential Smoothing (SES) [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#formula) you've highlighted represent two different ways of looking at the same reality. Whether you view it as a **weighted average** of the past or an **error-correction mechanism**, the goal remains the same: balancing stability against responsiveness.
 
 #### 1. The Weighted Average Perspective
 
 $$\hat{y}_{t+1} = \alpha y_t + (1 - \alpha)\hat{y}_t$$
 
-This formula shows that the new forecast is a blend of the most recent data point ($y_t$) and the previous forecast ($\hat{y}_t$). Because we apply this recursively, if you were to expand this equation, you would see that the forecast is actually a weighted sum of **all** past observations:
+This [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#formula) shows that the new forecast is a blend of the most recent data point ($y_t$) and the previous forecast ($\hat{y}_t$). Because we apply this recursively, if you were to expand this equation, you would see that the forecast is actually a weighted sum of **all** past observations:
 
 $$\hat{y}_{t+1} = \alpha y_t + \alpha(1-\alpha)y_{t-1} + \alpha(1-\alpha)^2 y_{t-2} + \dots$$
 
@@ -87,7 +87,7 @@ This is arguably the most intuitive way for a business analyst to view forecasti
     
 - **The Error ($y_t - \hat{y}_t$):** Your "surprise" or "residual."
     
-- **The Adjustment ($\alpha \times \text{Error}$):** The amount of that surprise you believe is a _structural change_ versus random noise.
+- **The Adjustment ($\alpha \times \text{Error}$):** The amount of that surprise you believe is a _structural change_ versus random [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)).
     
 
 #### Choosing Your $\alpha$: The "Responsiveness" Knob
@@ -98,7 +98,7 @@ The parameter $\alpha$ (alpha) is the most critical lever in your model. It dete
     
     - **Philosophy:** "The world is changing fast; my latest data is the most important thing I have."
         
-    - **Risk:** You will be very quick to adapt, but you will also "chase the noise." If a random spike occurs, your forecast will jump to match it.
+    - **Risk:** You will be very quick to adapt, but you will also "chase the [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))." If a random spike occurs, your forecast will jump to match it.
         
 - **Low $\alpha$ (e.g., $0.1$ or $0.2$):**
     
@@ -127,17 +127,17 @@ Think of $\alpha$ as the weight of your "memory."
 
 - **High $\alpha$ ($\alpha \to 1$): Short-Term Memory**
     
-    - When $\alpha$ is high, the model acts like a high-speed sensor. It interprets a high $y_t$ (current observation) as an immediate signal to adjust the forecast upward.
+    - When $\alpha$ is high, the model acts like a high-speed sensor. It interprets a high $y_t$ (current observation) as an immediate [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) to adjust the forecast upward.
         
     - **Use Case:** Markets with sudden, structural shocks—such as a competitor launching a new drug, causing your demand to shift overnight.
         
-    - **Downside:** You risk "overfitting" the noise. If $y_t$ is high due to a one-time supply chain error, a high $\alpha$ will cause your forecast to jump prematurely.
+    - **Downside:** You risk "[overfitting](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#overfitting)" the [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)). If $y_t$ is high due to a one-time supply chain error, a high $\alpha$ will cause your forecast to jump prematurely.
         
 - **Low $\alpha$ ($\alpha \to 0$): Long-Term Memory**
     
-    - When $\alpha$ is low, the model acts like an anchor. It assumes the most recent data point is likely an outlier or transient noise, preferring the wisdom of the long-term historical trend.
+    - When $\alpha$ is low, the model acts like an anchor. It assumes the most recent data point is likely an outlier or transient [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)), preferring the wisdom of the long-term historical trend.
         
-    - **Use Case:** Stable markets with high "volatility" or measurement error, where you want to identify the true underlying demand signal amidst significant chaotic noise.
+    - **Use Case:** Stable markets with high "volatility" or measurement error, where you want to identify the true underlying demand [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) amidst significant chaotic [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)).
         
     - **Downside:** "Model Lag." If the market truly shifts, a low $\alpha$ will be slow to recognize the change, leading to systematic under- or over-forecasting until the model eventually catches up.
         
@@ -148,19 +148,19 @@ In professional environments, we rarely guess $\alpha$. Instead, we use **Optimi
 
 The optimization process minimizes a cost function, typically:
 
-- **Sum of Squared Errors (SSE):** $\sum (y_t - \hat{y}_t)^2$
+- **[Sum of Squared Errors (SSE)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#sum-of-squared-errors-sse):** $\sum (y_t - \hat{y}_t)^2$
     
-- **Mean Absolute Error (MAE):** $\frac{1}{n} \sum |y_t - \hat{y}_t|$
+- **[Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W4/L2/Testing%20Population%20Proportions.md#mean) Absolute Error (MAE):** $\frac{1}{n} \sum |y_t - \hat{y}_t|$
     
 
 By running this minimization, the software effectively says: "Based on the historical volatility of your product's sales, this specific value of $\alpha$ provides the most accurate balance of responsiveness and stability."
 
-#### Balancing Act Summary
+#### Balancing Act [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W1/L2/Reading%202%20Parametric%20vs.%20Non-Parametric%20Methods.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L1/The%20Multiple%20Regression%20Model.md#summary)))
 
 |**Feature**|**High α (>0.7)**|**Low α (<0.3)**|
 |---|---|---|
 |**Sensitivity**|Extremely High|Low|
-|**Noise Filtering**|Poor|Excellent|
+|**[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)) Filtering**|Poor|Excellent|
 |**Trend Reaction**|Immediate|Delayed|
 |**Analytic Focus**|Tactical / Current Week|Strategic / Long-term Trend|
 
@@ -177,7 +177,7 @@ If you are analyzing **DDD (Demand Data Distribution)**, the "ideal" $\alpha$ wi
 
 ### 3. The “Exponential” Nature: The Mathematics of Memory
 
-The term "Exponential Smoothing" is not just a label—it is the mathematical description of how the model "forgets" the past. By looking at the recursive expansion of the formula, we can see exactly why the weights applied to historical data form a geometric progression, which is mathematically identical to an **exponential decay**.
+The term "Exponential Smoothing" is not just a label—it is the mathematical description of how the model "forgets" the past. By looking at the recursive expansion of the [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#formula), we can see exactly why the weights applied to historical data form a geometric progression, which is mathematically identical to an **exponential decay**.
 
 #### The Weight Distribution
 
@@ -190,7 +190,7 @@ If you look at the weights assigned to your data points as you move backward in 
 
 Because $(1 - \alpha)$ is a fraction (since $0 \le \alpha \le 1$), raising it to the power of $j$ causes the value to shrink rapidly as $j$ increases.
 
-#### The Intuition: A "Diminishing Memory"
+#### The [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Residual%20Analysis.md#intuition)))): A "Diminishing Memory"
 
 This structure perfectly models the way human memory—and business relevance—tends to function:
 
@@ -224,7 +224,7 @@ _Figure 1:_ The weights given to past observations decay exponentially.
 
 Simple Exponential Smoothing is a brilliant "level" detector, but its greatest strength—its focus on the current state—is also its greatest weakness. By design, SES assumes the world is static. If your data has a directional drift (trend) or a recurring heartbeat (seasonality), SES will systematically fail, leading to significant **forecast bias**.
 
-#### The Core Problem: The "Flat-Line" Assumption
+#### [The Core Problem](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W2/L0/Inferential%20Statistics.md#the-core-problem): The "Flat-Line" Assumption
 
 The math of SES dictates that for any forecast horizon $h$ into the future, the prediction remains the same:
 
@@ -250,7 +250,7 @@ Despite these limitations, SES remains a vital tool in your analytical toolkit. 
 
 - **Series Stability:** You are monitoring a process that is expected to remain constant (e.g., the base level of a stable, mature product with no market share shifts).
     
-- **High-Noise environments:** The series has so much random noise ($I_t$) that any trend or seasonal component is statistically indistinguishable from randomness. In this case, trying to model a trend that isn't really there will actually _decrease_ your forecast accuracy (overfitting).
+- **High-[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)) environments:** The series has so much random [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W6/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)) ($I_t$) that any trend or seasonal component is statistically indistinguishable from randomness. In this case, trying to model a trend that isn't really there will actually _decrease_ your forecast accuracy ([overfitting](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W7/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#overfitting)).
     
 - **Short-Term Tactical Monitoring:** You need a quick, reliable, and easily explainable baseline to monitor day-to-day fluctuations in a stable environment.
     
