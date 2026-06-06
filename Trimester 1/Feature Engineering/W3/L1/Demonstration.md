@@ -1,6 +1,6 @@
 ### Practical Implementation: Feature Extraction (PCA) and Construction
 
-This module demonstrates the application of **Principal Component Analysis (PCA)** for feature extraction and manual **feature construction** to enhance predictive performance using the Telco Customer Churn dataset.
+This module demonstrates the application of **Principal Component Analysis (PCA)** for feature extraction and manual **feature construction** to enhance predictive performance using the Telco Customer Churn [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W3/Experiential%20Learning%20Activity.md#dataset).
 
 ### 1. Feature Extraction via PCA
 
@@ -69,7 +69,7 @@ df.fillna(0, inplace=True)
 
 ### 3. Key Technical Takeaways
 
-- **Why PCA?** It reduces noise and redundancy by focusing only on the directions of maximum variance. It makes modeling simpler and allows for 2D visualization of high-dimensional datasets.
+- **Why PCA?** It reduces noise and redundancy by focusing only on the directions of maximum variance. It makes modeling simpler and allows for 2D [visualization](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W4/Readme.md#visualization) of high-dimensional datasets.
     
 - **Component Contribution:** By examining the loadings (weights) of each original feature on the principal components, we can interpret _what_ the PCA components actually represent (e.g., `Tenure` and `TotalCharges` heavily influence `PC1`).
     
@@ -80,7 +80,7 @@ df.fillna(0, inplace=True)
     - **Construction (New Features):** Creative and domain-driven; invents new metrics that align with business logic to improve model predictive signal.
         
 
-#### **Workflow Summary for Practical Tasks**
+#### **Workflow [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary)) for Practical Tasks**
 
 1. **Identify Features:** Separate numerical and categorical columns.
     
