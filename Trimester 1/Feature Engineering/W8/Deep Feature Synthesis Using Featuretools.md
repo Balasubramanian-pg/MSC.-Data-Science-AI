@@ -2,7 +2,7 @@ Featuretools is an automated feature engineering framework designed specifically
 
 ### 1. The Core Concept: Deep Feature Synthesis (DFS)
 
-The library is built around **Deep Feature Synthesis (DFS)**, an algorithm that systematically stacks operations (primitives) across relational paths.
+The library is built around [**Deep Feature Synthesis (DFS)**](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W8/Module%20Introduction.md#deep-feature-synthesis-dfs), an algorithm that systematically stacks operations (primitives) across relational paths.
 
 - **Primitives:** These are the building blocks of feature creation.
     
@@ -24,7 +24,7 @@ Featuretools requires you to model your data as an **EntitySet**, which acts as 
 3. **DFS Execution:** Once the `EntitySet` is defined, the `dfs()` API traces these paths and automatically calculates the features for you.
     
 
-### 3. Implementation Workflow
+### [3. Implementation Workflow](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W6/Putting%20it%20All%20Together.md#3-implementation-workflow)
 
 Python
 
@@ -61,7 +61,7 @@ feature_matrix, feature_defs = ft.dfs(
 - **Computational Trade-off:** While it saves hours of coding, DFS is computationally expensive. It is best suited for datasets that fit within the memory of a single machine.
     
 
-### Summary Table
+### [Summary Table](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W8/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W7/Overview.md#summary))-table)
 
 |**Feature Type**|**How it Works**|**Example**|
 |---|---|---|
