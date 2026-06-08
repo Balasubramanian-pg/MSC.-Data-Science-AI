@@ -131,7 +131,7 @@ Bayesian statistics flips the Frequentist script. It treats the data you have co
 |**Role of Data**|Random samples from a population|Observed evidence|
 |**Main Output**|p-values / Confidence Intervals|Posterior distributions / Credible Intervals|
 
-### [Why this matters for your work](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis/L1/An%20Introduction%20to%20Cluster%20Analysis.md#why-this-matters-for-your-work)
+### [Why this matters for your work](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis/L1/An%20Introduction%20to%20Cluster%20Analysis.md#why-this-matters-for-your-work)
 
 In your role as a pharmaceutical data analyst, the Bayesian "Credible Interval" is often much easier to explain to clinical leads or business stakeholders than the Frequentist "Confidence Interval."
 
