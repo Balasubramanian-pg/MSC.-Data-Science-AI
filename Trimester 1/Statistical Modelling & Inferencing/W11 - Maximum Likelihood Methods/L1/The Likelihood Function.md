@@ -1,7 +1,7 @@
 ---
-title: W11 - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods
+title: W11 - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods
 module: Statistical Modelling And Inferencing
-week: W11 - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods
+week: W11 - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods
 ---
 
 ### The Likelihood Function: The Engine of MLE
@@ -14,7 +14,7 @@ To find the MLE, you follow a rigorous mathematical "recipe":
 
 1. **Define the Likelihood Function $L(\theta | \text{Data})$:** You construct a [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) that relates your parameter ($\theta$) to the observed data.
     
-2. **Take the Derivative:** You calculate the derivative of this function with respect to the parameter. This measures the slope of [the likelihood surface](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W11 - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods/L1/Maximum%20Likelihood%20Estimation.md#the-likelihood-surface).
+2. **Take the Derivative:** You calculate the derivative of this function with respect to the parameter. This measures the slope of [the likelihood surface](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W11 - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods/L1/Maximum%20Likelihood%20Estimation.md#the-likelihood-surface).
     
 3. **Set to Zero:** You find the "critical points" where the slope is zero—the peaks or valleys of the function.
     
