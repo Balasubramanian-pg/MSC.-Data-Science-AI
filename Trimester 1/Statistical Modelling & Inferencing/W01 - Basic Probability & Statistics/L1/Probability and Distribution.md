@@ -330,7 +330,7 @@ flowchart TD
 | "PMF bars must sum to 1, so PDF curve must too" | Forgetting integral vs sum | PDF integrates to 1; individual values can exceed 1 |
 | "Simulation with 100 samples is enough" | Underestimating variance | Monte Carlo needs thousands+ for stable estimates |
 
-## 12. [Key Takeaways](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W11 - Maximum Likelihood Methods - Maximum Likelihood Methods/L1/The%20Inverse%20Perspective.md#key-takeaways)
+## 12. [Key Takeaways](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W11 - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods/L1/The%20Inverse%20Perspective.md#key-takeaways)
 
 1. **Random variable** = numerical [summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L2/Reading%202%20Parametric%20vs.%20Non-Parametric%20Methods.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#summary))) of a random experiment
 2. **Distribution** = how probability is allocated across all possible values
