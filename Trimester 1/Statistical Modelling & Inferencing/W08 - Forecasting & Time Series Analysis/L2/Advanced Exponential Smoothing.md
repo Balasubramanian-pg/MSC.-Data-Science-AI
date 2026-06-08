@@ -37,7 +37,7 @@ The Holt-Winters method is the "gold standard" for series that exhibit both a tr
     - **Multiplicative:** For seasonal fluctuations that grow or shrink as the overall trend changes.
         
 
-### 4. [Why This Matters for Your Work](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis/L1/An%20Introduction%20to%20Cluster%20Analysis.md#why-this-matters-for-your-work)
+### 4. [Why This Matters for Your Work](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis/L1/An%20Introduction%20to%20Cluster%20Analysis.md#why-this-matters-for-your-work)
 
 In your role analyzing pharmaceutical data (e.g., IQVIA Xponent or DDD), simple models will consistently fail because pharma demand is rarely flat.
 
@@ -54,7 +54,7 @@ In your role analyzing pharmaceutical data (e.g., IQVIA Xponent or DDD), simple 
 |**Holt’s**|Level + Trend|Sloped line (Linear growth)|
 |**Holt-Winters**|Level + Trend + Seasonality|Curvilinear forecast (Trend + Cycles)|
 
-### [Moving Forward](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis/L0/Module%2010%20-%20Cluster%20Analysis.md#moving-forward)
+### [Moving Forward](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis/L0/Module%2010%20-%20Cluster%20Analysis.md#moving-forward)
 
 Now that we have moved beyond simple smoothing, you have the conceptual framework to build complex forecasting engines.
 
