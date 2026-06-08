@@ -1,7 +1,7 @@
 ---
-title: W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis
+title: W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis
 module: Statistical Modelling And Inferencing
-week: W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis
+week: W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis
 ---
 
 **Contents**  
@@ -69,7 +69,7 @@ Clustering is the quintessential unsupervised task. It relies on the principle o
 |**Algorithm's "Task"**|Error Minimization|Pattern Discovery|
 |**Typical Output**|Values/Categories|Segments/Buckets|
 
-### [Why this matters for your work](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W13 - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference/L1/An%20Introduction%20to%20Bayesian%20Inference.md#why-this-matters-for-your-work)
+### [Why this matters for your work](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W13 - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference/L1/An%20Introduction%20to%20Bayesian%20Inference.md#why-this-matters-for-your-work)
 
 In your role as a Business Analyst, you will frequently shift between these two modes:
 
@@ -139,7 +139,7 @@ While Euclidean is the standard, it is not the only tool in the box:
 
 ![[Pasted image 20260525125547.png]]
 
-**[Part II](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W13 - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference/L1/An%20Introduction%20to%20Bayesian%20Inference.md#part-ii)  
+**[Part II](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W13 - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference - Introduction To Bayesian Inference/L1/An%20Introduction%20to%20Bayesian%20Inference.md#part-ii)  
 Clustering Algorithms**
 
 **2 Hierarchical Clustering**  
