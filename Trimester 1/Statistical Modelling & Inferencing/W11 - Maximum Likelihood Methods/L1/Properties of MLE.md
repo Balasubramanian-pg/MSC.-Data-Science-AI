@@ -1,28 +1,28 @@
 ---
-title: W11 - Maximum Likelihood Methods - Maximum Likelihood Methods
+title: W11 - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods
 module: Statistical Modelling And Inferencing
-week: W11 - Maximum Likelihood Methods - Maximum Likelihood Methods
+week: W11 - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods
 ---
 
 ### The Asymptotic Power of Maximum Likelihood Estimators (MLE)
 
 The reason MLE is the bedrock of modern statistical inference is its behavior under "asymptotic" conditions—essentially, how it performs as your dataset grows larger and larger toward infinity. When you have substantial data, MLE transitions from an intuitive principle into a mathematically rigorous powerhouse.
 
-#### [1. Consistency: The "Truth Seeker"](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W11 - Maximum Likelihood Methods - Maximum Likelihood Methods/L1/Maximum%20Likelihood%20Estimation.md#1-consistency-the-truth-seeker)
+#### [1. Consistency: The "Truth Seeker"](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W11 - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods/L1/Maximum%20Likelihood%20Estimation.md#1-consistency-the-truth-seeker)
 
 Consistency guarantees that as your sample size ($n$) increases, the MLE ($\hat{\theta}$) converges in probability to the true parameter value ($\theta_0$).
 
 - **[Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition)))):** With enough data, your estimate is guaranteed to be arbitrarily close to the real-world truth. It eliminates the "guesswork" and ensures that if you gather more data, your estimate will eventually lock onto the correct value.
     
 
-#### [2. Asymptotic Normality: The "Inference Bridge"](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W11 - Maximum Likelihood Methods - Maximum Likelihood Methods/L1/Maximum%20Likelihood%20Estimation.md#2-asymptotic-normality-the-inference-bridge)
+#### [2. Asymptotic Normality: The "Inference Bridge"](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W11 - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods/L1/Maximum%20Likelihood%20Estimation.md#2-asymptotic-normality-the-inference-bridge)
 
 For large samples, the sampling distribution of your MLE is approximately Normal.
 
 - **Why this matters:** You noted that this leverages the **Central Limit Theorem (CLT)**. Because we know the sampling distribution is Normal, we can move beyond simple "point estimates." We can construct **confidence intervals** (e.g., the estimate $\pm$ margin of error), which allow us to quantify our uncertainty and make deterministic business decisions rather than relying on a single, isolated number.
     
 
-#### [3. Efficiency: The "Precision Champion"](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W11 - Maximum Likelihood Methods - Maximum Likelihood Methods/L1/Maximum%20Likelihood%20Estimation.md#3-efficiency-the-precision-champion)
+#### [3. Efficiency: The "Precision Champion"](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W11 - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods/L1/Maximum%20Likelihood%20Estimation.md#3-efficiency-the-precision-champion)
 
 Among all consistent and asymptotically normal estimators, the MLE possesses the **smallest possible variance**.
 
