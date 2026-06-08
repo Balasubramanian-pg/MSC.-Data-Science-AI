@@ -30,7 +30,7 @@ Before conducting any statistical inference, it is essential to define the sampl
 
 To determine the ideal sample size ($n$) for a two-sample hypothesis test, we have to mathematically balance our appetite for risk (Type I and Type II errors) against the size of the effect we want to detect.
 
-### [The Mathematical Framework](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W11 - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods/L1/Maximum%20Likelihood%20Estimation.md#the-mathematical-framework)
+### [The Mathematical Framework](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W11 - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods/L1/Maximum%20Likelihood%20Estimation.md#the-mathematical-framework)
 
 We start by setting up our two key probability thresholds:
 
