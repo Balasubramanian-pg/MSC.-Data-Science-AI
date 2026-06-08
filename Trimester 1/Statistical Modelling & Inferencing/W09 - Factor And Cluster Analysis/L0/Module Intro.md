@@ -19,7 +19,7 @@ The core premise of Factor Analysis is that your observed variables ($Y_1, Y_2, 
 - **Latent Structure:** It allows you to move from _observable behavior_ to _underlying characteristics_. In pharma, this might [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) grouping various symptoms into a single "Health Index" factor or consolidating complex market variables into "Market Sentiment" or "Product Accessibility" factors.
     
 
-### [2. Key Objectives for this Module](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis/L0/Module%2010%20-%20Cluster%20Analysis.md#2-key-objectives-for-this-module)
+### [2. Key Objectives for this Module](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis/L0/Module%2010%20-%20Cluster%20Analysis.md#2-key-objectives-for-this-module)
 
 As we progress, we will focus on three distinct pillars:
 
@@ -59,7 +59,7 @@ We will move beyond theory to analyze real-world datasets. This will involve:
 |**Output**|Coefficients/Weights|Factor Loadings/Factor Scores|
 |**Business Use**|Estimating future sales|Consolidating 50 KPIs into 5 strategy drivers|
 
-### [Moving Forward](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis/L0/Module%2010%20-%20Cluster%20Analysis.md#moving-forward)
+### [Moving Forward](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis/L0/Module%2010%20-%20Cluster%20Analysis.md#moving-forward)
 
 Factor Analysis will fundamentally change how you handle "big data" in your business analytics career. It allows you to present senior leadership with concise, high-level insights derived from massive, complex datasets.
 
