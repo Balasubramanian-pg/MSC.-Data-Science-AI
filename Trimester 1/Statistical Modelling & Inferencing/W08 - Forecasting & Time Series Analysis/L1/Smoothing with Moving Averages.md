@@ -51,7 +51,7 @@ Smoothing is not just a data transformation; it is a management tool.
 - **Baseline for Anomaly Detection:** Once the smoothed trend is established, you can identify anomalies. If a data point deviates significantly from the smoothed moving average, it acts as a "trigger" for further investigation (e.g., a potential supply chain error or a sudden change in customer behavior).
     
 
-### [Moving Forward](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis/L0/Module%2010%20-%20Cluster%20Analysis.md#moving-forward)
+### [Moving Forward](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis/L0/Module%2010%20-%20Cluster%20Analysis.md#moving-forward)
 
 Smoothing gives us a clear look at the trend, but it often hides the "seasonal" nuances that are critical for industries like pharmaceuticals, where demand spikes at predictable intervals.
 
