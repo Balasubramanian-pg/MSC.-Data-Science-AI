@@ -1,3 +1,9 @@
+---
+title: W03 - Moduel 2a.  Effective Visuals Design
+module: Statistical Modelling And Inferencing
+week: W03 - Moduel 2a.  Effective Visuals Design
+---
+
 Using pre-attentive attributes in text is a powerful method to enhance clarity and direct reader attention, as text is the most fundamental form of presenting information. Without these attributes, a block of text requires more effort to scan and process.
 
 ### Enhancing Text with Pre-attentive Attributes
