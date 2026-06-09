@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W07 - Moduel 4a.  Python Matplotlib
 ---
 
-# Decorating Graphs with Plot Styles and Types
+## Decorating Graphs with Plot Styles and Types
 
 ## Introduction
 
@@ -47,7 +47,7 @@ A visualization without deliberate styling is often equivalent to poorly structu
 
 ---
 
-# The Psychology of Visual Encoding
+## The Psychology of Visual Encoding
 
 Before discussing Matplotlib syntax, it is important to understand why these features matter.
 
@@ -91,7 +91,7 @@ The transcript briefly references this idea when discussing common colors and gr
 
 ---
 
-# Why Matplotlib Matters
+## Why Matplotlib Matters
 
 Matplotlib is not merely a plotting API.
 
@@ -114,7 +114,7 @@ Understanding Matplotlib styling means understanding the foundation of Python vi
 
 ---
 
-# Importing Visualization Libraries
+## Importing Visualization Libraries
 
 The transcript begins by importing:
 
@@ -127,7 +127,7 @@ from matplotlib import lines
 
 ---
 
-# Why NumPy Is Used Everywhere
+## Why NumPy Is Used Everywhere
 
 NumPy is not optional in scientific Python.
 
@@ -148,7 +148,7 @@ Without NumPy, visualization pipelines become inefficient.
 
 ---
 
-# Understanding Colors in Matplotlib
+## Understanding Colors in Matplotlib
 
 ## The Fundamental Role of Color
 
@@ -171,7 +171,7 @@ But misuse of color is one of the biggest problems in dashboard design.
 
 ---
 
-# Default Color Cycles
+## Default Color Cycles
 
 Matplotlib provides default colors:
 
@@ -191,7 +191,7 @@ These are part of Matplotlib's internal style cycle.
 
 ---
 
-# Single-Letter Color Codes
+## Single-Letter Color Codes
 
 Simple shorthand:
 
@@ -216,7 +216,7 @@ Transcript reference:
 
 ---
 
-# Named Colors
+## Named Colors
 
 Matplotlib supports CSS-like names:
 
@@ -244,7 +244,7 @@ Named colors are usually preferable unless strict branding is required.
 
 ---
 
-# Hexadecimal Colors
+## Hexadecimal Colors
 
 Hex codes provide exact control.
 
@@ -281,7 +281,7 @@ $$
 
 ---
 
-# RGBA Color System
+## RGBA Color System
 
 The transcript discusses RGBA tuples.
 
@@ -319,7 +319,7 @@ This means:
 
 ---
 
-# Transparency and Alpha
+## Transparency and Alpha
 
 Alpha controls visibility intensity.
 
@@ -344,7 +344,7 @@ Lower alpha is extremely useful when plotting:
 
 ---
 
-# Grayscale Encoding
+## Grayscale Encoding
 
 The transcript explains grayscale intensity.
 
@@ -368,7 +368,7 @@ This becomes medium gray.
 
 ---
 
-# Comprehensive Color Demonstration
+## Comprehensive Color Demonstration
 
 ```python
 import numpy as np
@@ -393,7 +393,7 @@ Transcript reference:
 
 ---
 
-# Cognitive Risks of Color
+## Cognitive Risks of Color
 
 ## Bad Color Choices Create Analytical Errors
 
@@ -414,7 +414,7 @@ This is information distortion.
 
 ---
 
-# Color Maps
+## Color Maps
 
 ## Why Colormaps Exist
 
@@ -449,7 +449,7 @@ Transcript reference:
 
 ---
 
-# Viridis Colormap
+## Viridis Colormap
 
 The transcript references `viridis`.
 
@@ -466,7 +466,7 @@ Viridis became Matplotlib's default colormap because it is:
 
 ---
 
-# Scatter Plot with Colormap
+## Scatter Plot with Colormap
 
 ```python
 import numpy as np
@@ -490,7 +490,7 @@ plt.show()
 
 ---
 
-# Why Jet Colormap Is Problematic
+## Why Jet Colormap Is Problematic
 
 Older systems often used:
 
@@ -510,7 +510,7 @@ Viridis avoids this issue.
 
 ---
 
-# Custom Colormaps
+## Custom Colormaps
 
 The transcript demonstrates segmented colormaps.
 
@@ -527,7 +527,7 @@ custom_cmap = LinearSegmentedColormap.from_list(
 
 ---
 
-# Engineering Use Cases
+## Engineering Use Cases
 
 Custom colormaps are heavily used in:
 
@@ -541,7 +541,7 @@ Custom colormaps are heavily used in:
 
 ---
 
-# Line Styles
+## Line Styles
 
 ## Why Line Styles Matter
 
@@ -560,7 +560,7 @@ Transcript reference:
 
 ---
 
-# Basic Line Styles
+## Basic Line Styles
 
 |Style|Syntax|
 |---|---|
@@ -571,7 +571,7 @@ Transcript reference:
 
 ---
 
-# Example
+## Example
 
 ```python
 import numpy as np
@@ -609,7 +609,7 @@ Transcript reference:
 
 ---
 
-# Why Markers Matter
+## Why Markers Matter
 
 Markers reveal:
 
@@ -628,7 +628,7 @@ This can accidentally mislead viewers.
 
 ---
 
-# Marker Types
+## Marker Types
 
 |Marker|Meaning|
 |---|---|
@@ -640,7 +640,7 @@ This can accidentally mislead viewers.
 
 ---
 
-# Line Width
+## Line Width
 
 The transcript demonstrates varying linewidths.
 
@@ -663,7 +663,7 @@ This is a perceptual bias.
 
 ---
 
-# Dash Cap Styles
+## Dash Cap Styles
 
 Cap styles define line endings.
 
@@ -686,7 +686,7 @@ This subtly changes perceived smoothness.
 
 ---
 
-# Spines
+## Spines
 
 ## What Are Spines?
 
@@ -700,7 +700,7 @@ Yet they strongly affect visual clutter.
 
 ---
 
-# Accessing Spines
+## Accessing Spines
 
 ```python
 ax = plt.gca()
@@ -714,7 +714,7 @@ ax.spines['top']
 
 ---
 
-# Removing Spines
+## Removing Spines
 
 ```python
 ax.spines['top'].set_visible(False)
@@ -727,7 +727,7 @@ This creates cleaner modern visualizations.
 
 ---
 
-# Customizing Spine Width and Color
+## Customizing Spine Width and Color
 
 ```python
 ax.spines['left'].set_linewidth(4)
@@ -736,7 +736,7 @@ ax.spines['left'].set_color('red')
 
 ---
 
-# Why Spine Removal Matters
+## Why Spine Removal Matters
 
 Heavy borders increase non-data ink.
 
@@ -757,7 +757,7 @@ not decorative framing.
 
 ---
 
-# Minimalist Visualization Philosophy
+## Minimalist Visualization Philosophy
 
 Modern dashboard systems increasingly favor:
 
@@ -783,7 +783,7 @@ This improves:
 
 ---
 
-# Advanced Mental Model
+## Advanced Mental Model
 
 Think of every visual attribute as bandwidth allocation.
 
@@ -797,7 +797,7 @@ Good visualization controls attention hierarchy intentionally.
 
 ---
 
-# Real-World Dashboard Example
+## Real-World Dashboard Example
 
 Suppose a KPI dashboard contains:
 
@@ -822,7 +822,7 @@ This is extremely common in enterprise BI.
 
 ---
 
-# Visualization Architecture in Matplotlib
+## Visualization Architecture in Matplotlib
 
 ```mermaid
 flowchart TD
@@ -840,7 +840,7 @@ Understanding this hierarchy is crucial for advanced customization.
 
 ---
 
-# Machine Learning Connections
+## Machine Learning Connections
 
 Visualization styling matters heavily in ML systems:
 
@@ -855,7 +855,7 @@ Visualization styling matters heavily in ML systems:
 
 ---
 
-# Common Mistakes
+## Common Mistakes
 
 ## Overdecorating Charts
 
@@ -879,7 +879,7 @@ Heavy spines create unnecessary clutter.
 
 ---
 
-# Advanced Insight
+## Advanced Insight
 
 Most beginners think visualization quality comes from:
 
@@ -905,7 +905,7 @@ This is a fundamentally different mindset.
 
 ---
 
-# Final Takeaways
+## Final Takeaways
 
 The transcript is really teaching something deeper than Matplotlib syntax.
 
