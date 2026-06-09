@@ -87,3 +87,5 @@ graph TD
 *   **Protect readability:** Choose horizontal layouts for text-heavy categories to avoid forcing the reader to tilt their head.
 *   **Declutter mercilessly:** If a data label is present, remove the axis line. If secondary details are helpful but not essential for the core story, move them to a footnote.
 *   **Align colors consistently:** Ensure the colors used in your descriptive text perfectly match the colors used within your data markers or bars.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
