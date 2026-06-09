@@ -1,3 +1,9 @@
+---
+title: W02 - Module 1b. Taxonomy of Data Visualisation Methods
+module: Statistical Modelling And Inferencing
+week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
+---
+
 ### 1. The Frequentist Foundation: The Long-Run Frequency
 
 To understand why the **Bayesian** approach is such a significant departure, we must first be clear about the **Frequentist** rules we have been following. The Frequentist paradigm defines probability as the limit of an event's relative frequency in an infinite number of trials.
