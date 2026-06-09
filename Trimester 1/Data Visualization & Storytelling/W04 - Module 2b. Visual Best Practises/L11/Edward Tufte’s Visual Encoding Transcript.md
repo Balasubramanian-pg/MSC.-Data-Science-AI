@@ -834,3 +834,5 @@ The ideas discussed in this lecture strongly connect with foundational work from
     
 
 These works collectively established modern visualization science.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
