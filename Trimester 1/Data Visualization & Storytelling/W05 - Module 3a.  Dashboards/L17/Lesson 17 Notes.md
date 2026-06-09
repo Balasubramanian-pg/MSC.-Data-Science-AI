@@ -5,7 +5,7 @@ week: W05 - Module 3a.  Dashboards
 ---
 
 
-# Page 1
+## Page 1
 
 Lesson 17 
  
@@ -60,7 +60,7 @@ Alerts/Status Action Plans
  
 
 
-# Page 2
+## Page 2
 
 Types of Dashboards 
 1.​ Strategic Dashboards​
@@ -107,7 +107,7 @@ clarity.
  
 
 
-# Page 3
+## Page 3
 
  
 Dashboard Utilities 
