@@ -429,3 +429,5 @@ flowchart TD
 #### Mitigations:
 * **Use Absolute Values with Visual Alerts:** Convert negative numbers to positive values to calculate their size, but add a distinct color (like bright red) or a hatched pattern to flag them as negative balances.
 * **Apply Hatched Visual Textures:** Use specific textures to represent divisions with zero budget, keeping them visible on the chart without skewing the scaling math.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
