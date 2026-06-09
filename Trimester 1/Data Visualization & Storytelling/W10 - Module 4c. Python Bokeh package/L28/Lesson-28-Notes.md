@@ -408,3 +408,5 @@ def create_color_mapped_scatter():
 
 create_color_mapped_scatter()
 ```
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
