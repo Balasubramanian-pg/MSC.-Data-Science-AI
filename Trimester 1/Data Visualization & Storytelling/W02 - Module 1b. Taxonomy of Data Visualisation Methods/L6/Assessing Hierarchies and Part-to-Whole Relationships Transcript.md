@@ -1,3 +1,9 @@
+---
+title: W02 - Module 1b. Taxonomy of Data Visualisation Methods
+module: Statistical Modelling And Inferencing
+week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
+---
+
 # Enterprise Guide to Hierarchical Data Visualization: Circle Packing and Bubble Hierarchies
 
 Hierarchical data structures are pervasive across modern enterprise domains, representing everything from organizational charts and corporate spend portfolios to software dependency trees and regional sales breakdowns. Visually rendering these structures in a way that preserves both the **structural hierarchy** and the **part-to-whole quantitative relationship** is a common challenge in data engineering and business intelligence.
