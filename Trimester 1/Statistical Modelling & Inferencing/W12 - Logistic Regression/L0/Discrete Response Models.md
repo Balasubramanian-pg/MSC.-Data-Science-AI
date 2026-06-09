@@ -1,7 +1,7 @@
 ---
-title: W12 - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression
+title: W12 - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression
 module: Statistical Modelling And Inferencing
-week: W12 - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression
+week: W12 - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression - Logistic Regression
 ---
 
 ### Welcome to Module 12: Discrete [Response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response))) Models
@@ -17,7 +17,7 @@ You cannot simply use [Multiple Linear Regression](https://github.com/Balasubram
 - **Heteroskedasticity:** The variance of the error terms in a binary model is not constant, which violates the fundamental assumptions of standard OLS regression.
     
 
-### [2. Key Objectives for this Module](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis/L0/Module%2010%20-%20Cluster%20Analysis.md#2-key-objectives-for-this-module)
+### [2. Key Objectives for this Module](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis/L0/Module%2010%20-%20Cluster%20Analysis.md#2-key-objectives-for-this-module)
 
 We will bridge this gap using the principles of MLE to build robust classification tools:
 
@@ -48,7 +48,7 @@ Because the relationship between the log-odds and the [predictors](https://githu
 |**Estimation Method**|[Ordinary Least Squares (OLS)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#ordinary-least-squares-ols)|Maximum Likelihood Estimation (MLE)|
 |**Interpretation**|Change in $Y$ per unit of $X$|Odds ratio (change in likelihood)|
 
-### [Moving Forward](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis/L0/Module%2010%20-%20Cluster%20Analysis.md#moving-forward)
+### [Moving Forward](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis/L0/Module%2010%20-%20Cluster%20Analysis.md#moving-forward)
 
 By the end of this module, you will be able to handle "yes/no" data with the same rigor you apply to sales forecasting. You will be able to build models that inform high-stakes business decisions, like determining which physician segments are most likely to respond to a specific sales strategy.
 

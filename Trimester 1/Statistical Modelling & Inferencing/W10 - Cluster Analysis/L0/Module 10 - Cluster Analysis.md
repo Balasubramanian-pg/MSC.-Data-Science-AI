@@ -1,7 +1,7 @@
 ---
-title: W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis
+title: W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis
 module: Statistical Modelling And Inferencing
-week: W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis
+week: W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis
 ---
 
 ### Welcome to Module 10: Cluster Analysis
@@ -21,7 +21,7 @@ Unlike regression (which models the relationship between X and Y) or factor anal
 - **Inter-cluster Dissimilarity:** The goal is to maximize the difference _between_ different groups.
     
 
-### [2. Key Objectives for this Module](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W11 - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods/L0/Module%2011.md#2-key-objectives-for-this-module)
+### [2. Key Objectives for this Module](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W11 - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods/L0/Module%2011.md#2-key-objectives-for-this-module)
 
 As we progress through Module 10, we will cover three primary pillars:
 
@@ -61,7 +61,7 @@ Finding clusters is easy; finding _meaningful_ clusters is the challenge. We wil
 |**Data Type**|Supervised|Unsupervised|Unsupervised|
 |**Business Use**|Forecasting demand|Defining market drivers|Identifying target segments|
 
-### [Moving Forward](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W11 - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods/L0/Module%2011.md#moving-forward)
+### [Moving Forward](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W11 - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods/L0/Module%2011.md#moving-forward)
 
 Clustering transforms "big data" into "targeted strategy." By identifying distinct patient segments or physician archetypes, you can move from a "one-size-fits-all" approach to precision engagement strategies.
 
