@@ -6,7 +6,7 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 
 This section explains how to create multiple related plots from a Pandas DataFrame using Matplotlib subplots, especially when the plots share the same time axis.
 
-# Core Idea
+## Core Idea
 
 You already have a DataFrame called `df.weather` that contains weather data for Seattle:
 
@@ -23,7 +23,7 @@ You already have a DataFrame called `df.weather` that contains weather data for 
 
 The transcript first shows plotting a single variable like precipitation, then moves to plotting multiple variables together using subplots.
 
-# Step 1: Plot a Single Column
+## Step 1: Plot a Single Column
 
 Example:
 
@@ -55,7 +55,7 @@ df.weather['precipitation']
 
 selects one column from the DataFrame.
 
-# Why Use Blue for Rainfall?
+## Why Use Blue for Rainfall?
 
 The instructor mentions:
 
@@ -72,7 +72,7 @@ This is a visualization principle:
 
 Good visualization is psychological, not just technical.
 
-# Step 2: Problem With Separate Graphs
+## Step 2: Problem With Separate Graphs
 
 If you create:
 
@@ -91,7 +91,7 @@ The transcript moves toward:
 
 This is where subplots become useful.
 
-# Step 3: Shared X-Axis
+## Step 3: Shared X-Axis
 
 All weather variables depend on the same timeline.
 
@@ -112,7 +112,7 @@ This is:
 sharex=True
 ```
 
-# Creating Subplots
+## Creating Subplots
 
 ```python
 fig, axes = plt.subplots(
@@ -152,7 +152,7 @@ Plot 3
 
 not side-by-side.
 
-# Mental Model
+## Mental Model
 
 Think of:
 
@@ -179,7 +179,7 @@ Figure
  └── Axis 2
 ```
 
-# Step 4: Plot on Specific Axes
+## Step 4: Plot on Specific Axes
 
 Example:
 
@@ -203,7 +203,7 @@ axes[2].plot(
 )
 ```
 
-# Important Python Concept: Indexing Starts at 0
+## Important Python Concept: Indexing Starts at 0
 
 The transcript emphasizes:
 
@@ -219,7 +219,7 @@ So:
 
 This is one of the biggest beginner mistakes.
 
-# Why Use `df.weather.index`?
+## Why Use `df.weather.index`?
 
 Earlier, the date column was set as the DataFrame index.
 
@@ -240,7 +240,7 @@ contains:
 
 That becomes the x-axis automatically.
 
-# Full Example
+## Full Example
 
 ```python
 import matplotlib.pyplot as plt
@@ -251,7 +251,7 @@ fig, axes = plt.subplots(
     figsize=(12, 10)
 )
 
-# Maximum temperature
+## Maximum temperature
 axes[0].plot(
     df.weather.index,
     df.weather['temp_max'],
@@ -260,7 +260,7 @@ axes[0].plot(
 
 axes[0].set_title('Maximum Temperature')
 
-# Minimum temperature
+## Minimum temperature
 axes[1].plot(
     df.weather.index,
     df.weather['temp_min'],
@@ -269,7 +269,7 @@ axes[1].plot(
 
 axes[1].set_title('Minimum Temperature')
 
-# Rainfall
+## Rainfall
 axes[2].plot(
     df.weather.index,
     df.weather['precipitation'],
@@ -282,7 +282,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-# What This Achieves
+## What This Achieves
 
 Now all variables align on the same timeline.
 
@@ -305,7 +305,7 @@ That is the real purpose of visualization:
 not drawing charts,  
 but discovering relationships.
 
-# Relation to Power BI
+## Relation to Power BI
 
 The instructor compares this to:
 
@@ -322,7 +322,7 @@ Matplotlib subplots are essentially Python’s low-level version of:
 - faceting in Seaborn
     
 
-# Engineering Insight
+## Engineering Insight
 
 Why use separate y-axes but shared x-axis?
 
@@ -343,7 +343,7 @@ If plotted on one y-axis:
 
 Subplots preserve clarity.
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
 ## 1. Forgetting ShareX
 
@@ -384,7 +384,7 @@ df.set_index('date', inplace=True)
 
 time-series plotting becomes harder.
 
-# Advanced Extension
+## Advanced Extension
 
 You can loop dynamically instead of writing manually.
 
@@ -413,7 +413,7 @@ plt.show()
 
 This scales much better for real dashboards.
 
-# Key Takeaway
+## Key Takeaway
 
 The important concepts here are not merely plotting.
 
