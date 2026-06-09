@@ -137,3 +137,6 @@ In your role as a **Senior SQL Engineer and Data Mentor**, you have the power to
 
 **You have mastered the foundational design principles of effective visualization. Would you like to practice "decluttering" a specific graph from your work, or are you ready to explore how "Preattentive Attributes" (like color and size) can be used to direct your audience's focus more effectively?**  
   
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
