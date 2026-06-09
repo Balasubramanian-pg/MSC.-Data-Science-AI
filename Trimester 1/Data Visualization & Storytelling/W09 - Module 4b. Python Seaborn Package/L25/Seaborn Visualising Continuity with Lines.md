@@ -256,3 +256,5 @@ By applying faceting (`col="region"`), you reduce your audience's **cognitive lo
 - **Stimulus Events** create dramatically sharper signal peaks than **Cue Events** across both regions.
     
 - The variance gap between Stimulus and Cue is tight in the Frontal cortex, but explicitly wide open inside the Parietal cortex.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
