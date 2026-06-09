@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
 ---
 
-# Enterprise Guide to Hierarchical Data Visualization: Circle Packing and Bubble Hierarchies
+## Enterprise Guide to Hierarchical Data Visualization: Circle Packing and Bubble Hierarchies
 
 Hierarchical data structures are pervasive across modern enterprise domains, representing everything from organizational charts and corporate spend portfolios to software dependency trees and regional sales breakdowns. Visually rendering these structures in a way that preserves both the **structural hierarchy** and the **part-to-whole quantitative relationship** is a common challenge in data engineering and business intelligence.
 
@@ -302,7 +302,7 @@ This script shows how to transform a flat dataset and generate a local **Circle 
 import matplotlib.pyplot as plt
 import circlify
 
-# 1. Define flat hierarchical data structure
+## 1. Define flat hierarchical data structure
 data = [
     {
         'id': 'Global Operations',
@@ -329,18 +329,18 @@ data = [
     }
 ]
 
-# 2. Compute circle packing positions using circlify algorithm
+## 2. Compute circle packing positions using circlify algorithm
 circles = circlify.circlify(
     data, 
     show_enclosure=True, 
     target_enclosure=circlify.Circle(x=0, y=0, r=1)
 )
 
-# 3. Configure the matplotlib canvas
+## 3. Configure the matplotlib canvas
 fig, ax = plt.subplots(figsize=(10, 10))
 ax.axis('off')
 
-# Set limits to prevent rendering issues
+## Set limits to prevent rendering issues
 lim = max(
     max(
         abs(circle.x) + circle.r,
@@ -351,7 +351,7 @@ lim = max(
 plt.xlim(-lim, lim)
 plt.ylim(-lim, lim)
 
-# 4. Render circles on screen
+## 4. Render circles on screen
 for circle in circles:
     if circle.level == 1:
         # Parent level styling
