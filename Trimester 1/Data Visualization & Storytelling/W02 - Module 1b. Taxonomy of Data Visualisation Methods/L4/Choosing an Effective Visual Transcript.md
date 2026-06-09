@@ -1,3 +1,9 @@
+---
+title: W02 - Module 1b. Taxonomy of Data Visualisation Methods
+module: Statistical Modelling And Inferencing
+week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
+---
+
 ![[Pasted image 20260527231448.png]]
 
 While there are over 150 different types of data visualizations available across modern software tools, **a core set of about 12 visual types is sufficient to handle 90% of business and analytical communication needs.** Knowing when and how to apply these basic options allows for highly effective communication without relying on overly complex, custom visuals.
