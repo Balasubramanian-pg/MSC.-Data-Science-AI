@@ -1,3 +1,9 @@
+---
+title: W04 - Module 2b. Visual Best Practises
+module: Statistical Modelling And Inferencing
+week: W04 - Module 2b. Visual Best Practises
+---
+
 # Conversion of Data into Visualizations to Draw Valuable Insights
 
 This section introduces one of the most foundational frameworks in visualization theory:
