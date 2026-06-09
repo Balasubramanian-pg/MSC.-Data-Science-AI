@@ -5,7 +5,7 @@ week: W05 - Module 3a.  Dashboards
 ---
 
 
-# Page 1
+## Page 1
 
 Lesson 16 
  
@@ -42,7 +42,7 @@ Use of Visual Attributes to Enhance Designs
 Design Goals for Dashboards 
 
 
-# Page 2
+## Page 2
 
 ●​ Simple Presentation: Display a large amount of data in a small space without 
 clutter. 
