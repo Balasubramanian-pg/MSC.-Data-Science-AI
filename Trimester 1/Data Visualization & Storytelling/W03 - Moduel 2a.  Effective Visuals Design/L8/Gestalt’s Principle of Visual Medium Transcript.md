@@ -89,3 +89,5 @@ You are now fully equipped to move from **Technical Data Engineer** to **Strateg
 By applying these Gestalt principles and decluttering techniques, you guarantee that when you share your work—like your `RPT_EXECUTIVE_SUMMARY_MASTER_VW`—your stakeholders don't just see numbers; they see a clear, actionable path forward.
 
 **You have successfully completed this deep dive into Effective Visual Design. Would you like to review a specific dashboard you are currently building to see how we can apply these "Refinement" techniques, or shall we explore "Preattentive Attributes" (like color, size, and shape) to make your key insights stand out even further?**
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
