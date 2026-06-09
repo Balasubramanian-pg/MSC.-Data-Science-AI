@@ -206,3 +206,5 @@ When in doubt, simplicity is your most effective tool for maintaining trust and 
     
 
 By adhering to these principles, you ensure that your visualizations remain powerful, honest, and effective tools for decision-making. Would you like to summarize the key takeaways from our discussion on pre-attentive attributes, or shall we move on to another topic in your curriculum?
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
