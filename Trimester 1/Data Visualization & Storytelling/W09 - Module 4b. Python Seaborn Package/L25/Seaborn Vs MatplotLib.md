@@ -689,3 +689,6 @@ This architectural matrix summarizes the core differences outlined at the conclu
 |**Data Input Structure**|Primarily native arrays, Python lists, or separated Pandas Series elements.|Deeply optimized for **Pandas DataFrames** directly via structural key mapping.|
 |**Aesthetic Philosophy**|Basic, functional, and minimal out of the box. Requires manual formatting to look professional.|**Naturally elegant defaults.** Includes anti-aliasing, soft edge boundaries, and balanced palettes.|
 |**Statistical Computations**|**Strictly manual.** Data transformations (`.mean()`, `.groupby()`) must be completed before plotting.|**Fully automated and built-in.** Calculates centers, confidence metrics, and error spreads on the fly.|
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
