@@ -1,3 +1,9 @@
+---
+title: W06 -Module 3b.  Visual Story Telling
+module: Statistical Modelling And Inferencing
+week: W06 -Module 3b.  Visual Story Telling
+---
+
 # Types of Narratives in Data Storytelling
 
 Narrative structures in data storytelling differ primarily in one dimension:
