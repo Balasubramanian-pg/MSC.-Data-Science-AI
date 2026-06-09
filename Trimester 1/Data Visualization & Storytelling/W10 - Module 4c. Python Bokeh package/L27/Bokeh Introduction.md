@@ -1,3 +1,9 @@
+---
+title: W10 - Module 4c. Python Bokeh package
+module: Statistical Modelling And Inferencing
+week: W10 - Module 4c. Python Bokeh package
+---
+
 Based on your lecture transcript, the instructor is introducing **Bokeh**, a powerful library in the Python ecosystem designed specifically for creating **interactive, web-ready visualizations**.
 
 The lecture highlights a core data storytelling philosophy: balancing the narrative between the author and the audience by giving viewers the power to manipulate the data and draw their own conclusions.
