@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W01 - Module 1a. Introduction to Visualization
 ---
 
-# Data Visualisation and Storytelling - Lecture Transcript
+## Data Visualisation and Storytelling - Lecture Transcript
 
 ## Table of Contents
 
