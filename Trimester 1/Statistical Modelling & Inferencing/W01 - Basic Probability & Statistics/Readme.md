@@ -6,8 +6,6 @@ Repository:
 
 [MSC Data Science AI - W01 Repository](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/tree/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01%20-%20Basic%20Probability%20%26%20Statistics)
 
----
-
 # Learning Objectives
 
 This module gradually builds the transition from:
@@ -25,8 +23,6 @@ By the end of this section, the core goal is to understand:
 * when statistical assumptions fail
 * how statistical reasoning powers modern AI systems
 
----
-
 # Module Structure
 
 ```text
@@ -37,8 +33,6 @@ W01 - Basic Probability & Statistics
 ├── L2 → Statistical Inference & Decision Theory
 └── Probability.py → Practical Python Implementations
 ```
-
----
 
 # L0 · Foundations & Orientation
 
@@ -61,8 +55,6 @@ Introduces the conceptual bridge between observed data and inferential conclusio
 ### [Module Introduction](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01%20-%20Basic%20Probability%20%26%20Statistics/L0/Module%20Introduction.pdf)
 
 High-level orientation for the module structure, expectations, and learning trajectory.
-
----
 
 # L1 · Probability & Distributions
 
@@ -113,8 +105,6 @@ These become critical later for:
 * generative modelling
 * anomaly detection
 
----
-
 ## Resources
 
 ### [Probability and Distributions (PDF)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01%20-%20Basic%20Probability%20%26%20Statistics/L1/Probability%20and%20Distributions.pdf)
@@ -151,8 +141,6 @@ Examples:
 * Gaussian → aggregated noise processes
 * Exponential → waiting times
 * Binomial → repeated trial systems
-
----
 
 # L2 · Statistical Inference & Decision Theory
 
@@ -236,8 +224,6 @@ This becomes foundational later in:
 * reinforcement learning
 * risk systems
 
----
-
 ## Resources
 
 ### [Foundations of Statistical Inference](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01%20-%20Basic%20Probability%20%26%20Statistics/L2/Foundations%20of%20Statistical%20Inference.md)
@@ -272,8 +258,6 @@ This is where abstract probability becomes tangible.
 
 Strong recommendation:
 use this file actively alongside the theory material instead of treating it as supplementary.
-
----
 
 # Recommended Learning Order
 
@@ -318,4 +302,3 @@ Almost every advanced AI or ML system later depends on ideas introduced here:
 This module is not "intro stats."
 
 It is the operating system underneath statistical machine learning.
-
