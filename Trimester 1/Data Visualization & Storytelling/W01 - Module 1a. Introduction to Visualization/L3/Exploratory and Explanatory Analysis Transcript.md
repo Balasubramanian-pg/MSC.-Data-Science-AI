@@ -4,11 +4,11 @@ module: Statistical Modelling And Inferencing
 week: W01 - Module 1a. Introduction to Visualization
 ---
 
-# Exploratory vs Explanatory Analysis in Data Visualization
+## Exploratory vs Explanatory Analysis in Data Visualization
 
 Source Transcript:
 
-# Table of Contents
+## Table of Contents
 
 1. [Introduction to Exploratory and Explanatory Analysis](https://chatgpt.com/g/g-p-6a0d41583fe88191a2893b540108b3b5-msc-data-science/c/6a10ae9f-5308-8321-80ea-23d7426ab7ae#1-introduction-to-exploratory-and-explanatory-analysis)  
     1.1 [Why These Concepts Matter](https://chatgpt.com/g/g-p-6a0d41583fe88191a2893b540108b3b5-msc-data-science/c/6a10ae9f-5308-8321-80ea-23d7426ab7ae#11-why-these-concepts-matter)  
@@ -48,7 +48,7 @@ Source Transcript:
 
 ---
 
-# 1. Introduction to Exploratory and Explanatory Analysis
+## 1. Introduction to Exploratory and Explanatory Analysis
 
 ## 1.1 Why These Concepts Matter
 
@@ -106,9 +106,9 @@ Many analysts fail because they:
 
 ---
 
-# 2. Understanding Exploratory Analysis
+## 2. Understanding Exploratory Analysis
 
-# 2.1 Definition of Exploratory Analysis
+## 2.1 Definition of Exploratory Analysis
 
 **Exploratory Analysis** refers to the process of investigating and understanding the structure and characteristics of data before formal presentation.
 
@@ -137,7 +137,7 @@ This is one of the most important ideas in analytics.
 
 ---
 
-# 2.2 Goals of Exploratory Data Analysis (EDA)
+## 2.2 Goals of Exploratory Data Analysis (EDA)
 
 The lecture identifies several objectives of EDA.
 
@@ -171,7 +171,7 @@ Without EDA:
 
 ---
 
-# 2.3 Questions Asked During EDA
+## 2.3 Questions Asked During EDA
 
 The instructor emphasizes that EDA is fundamentally about asking questions.
 
@@ -213,7 +213,7 @@ The instructor emphasizes that EDA is fundamentally about asking questions.
 
 ---
 
-# 2.4 Variables, Structure, and Integrity
+## 2.4 Variables, Structure, and Integrity
 
 The lecture highlights several critical aspects of EDA.
 
@@ -280,7 +280,7 @@ Poor data integrity leads to:
 
 ---
 
-# 2.5 Exploratory Analysis and Data Diversity
+## 2.5 Exploratory Analysis and Data Diversity
 
 One of the strongest insights in the lecture is the importance of **data diversity**.
 
@@ -350,9 +350,9 @@ Organizations that collect richer datasets gain:
 
 ---
 
-# 3. Understanding Explanatory Analysis
+## 3. Understanding Explanatory Analysis
 
-# 3.1 Definition of Explanatory Analysis
+## 3.1 Definition of Explanatory Analysis
 
 **Explanatory Analysis** is the process of communicating discovered insights to an audience.
 
@@ -370,7 +370,7 @@ Drive home a specific insight or narrative.
 
 ---
 
-# 3.2 From Insight Discovery to Storytelling
+## 3.2 From Insight Discovery to Storytelling
 
 EDA discovers patterns.
 
@@ -415,7 +415,7 @@ What should the audience understand?
 
 ---
 
-# 3.3 Communicating to Different Audiences
+## 3.3 Communicating to Different Audiences
 
 The lecture highlights that explanatory visuals are designed for:
 
@@ -447,9 +447,9 @@ A technically perfect chart can still fail if stakeholders cannot interpret it q
 
 ---
 
-# 4. Relationship Between Exploratory and Explanatory Analysis
+## 4. Relationship Between Exploratory and Explanatory Analysis
 
-# 4.1 EDA as the Foundation
+## 4.1 EDA as the Foundation
 
 The lecture strongly establishes:
 
@@ -468,7 +468,7 @@ Without EDA:
 
 ---
 
-# 4.2 Transformation Pipeline
+## 4.2 Transformation Pipeline
 
 ## Conceptual Pipeline
 
@@ -487,7 +487,7 @@ E --> F[Audience Communication]
 
 ---
 
-# 4.3 Iterative Nature of Visualization
+## 4.3 Iterative Nature of Visualization
 
 The lecture implicitly reinforces the earlier “7 stages” framework.
 
@@ -510,9 +510,9 @@ An iterative analytical communication system
 
 ---
 
-# 5. Case Study: Lok Sabha Election Voter Participation
+## 5. Case Study: Lok Sabha Election Voter Participation
 
-# 5.1 Exploratory Phase
+## 5.1 Exploratory Phase
 
 The instructor revisits the election turnout dataset.
 
@@ -539,7 +539,7 @@ Main Variable = Voter Turnout Ratio
 
 ---
 
-# 5.2 Constructing Variables
+## 5.2 Constructing Variables
 
 The lecture mentions that some variables may not exist directly.
 
@@ -568,7 +568,7 @@ Feature engineering is a core part of exploratory analysis.
 
 ---
 
-# 5.3 Explanatory Phase
+## 5.3 Explanatory Phase
 
 The final refined visualization communicates:
 
@@ -592,7 +592,7 @@ The audience can immediately understand:
 
 ---
 
-# 5.4 Business and Policy Insights
+## 5.4 Business and Policy Insights
 
 The visualization enables:
 
@@ -604,7 +604,7 @@ The visualization enables:
 
 ---
 
-# 6. Exploratory Data Analysis Workflow
+## 6. Exploratory Data Analysis Workflow
 
 ## Typical EDA Pipeline
 
@@ -626,7 +626,7 @@ G --> H[Build Explanatory Visuals]
 
 ---
 
-# 7. Visualization Decision Framework
+## 7. Visualization Decision Framework
 
 ## What Are You Trying To Do?
 
@@ -656,7 +656,7 @@ What is your objective?
 
 ---
 
-# 8. Common Pitfalls in Exploratory and Explanatory Analysis
+## 8. Common Pitfalls in Exploratory and Explanatory Analysis
 
 ## 1. Skipping Exploratory Analysis
 
@@ -717,7 +717,7 @@ Relationships alone do not prove causality.
 
 ---
 
-# 9. Golden Rules for Effective Visual Analysis
+## 9. Golden Rules for Effective Visual Analysis
 
 1. Exploratory analysis always comes before explanatory analysis.
     
