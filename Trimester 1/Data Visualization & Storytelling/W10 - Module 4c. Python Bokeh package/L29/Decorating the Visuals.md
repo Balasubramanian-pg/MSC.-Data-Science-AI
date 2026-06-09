@@ -8,7 +8,7 @@ Here is a technical document created from the transcript, designed for self-pace
 
 ---
 
-# Technical Document: Decorating Visuals in Bokeh
+## Technical Document: Decorating Visuals in Bokeh
 
 **Course:** Data Visualisation Storytelling
 **Platform:** BITS PLANET DIGITAL
@@ -82,7 +82,7 @@ Bokeh supports all **140 standard HTML and CSS color names**, including:
 ### 4.1 Dataset Used (from previous lesson)
 
 ```python
-# Data being used in the demonstration
+## Data being used in the demonstration
 fruits = ['apples', 'pears', 'nectarines', 'plums', 'grapes', 'strawberries']
 count = [/* numeric values for each fruit */]
 color_plot = [/* color definitions for each bar */]
@@ -91,21 +91,21 @@ color_plot = [/* color definitions for each bar */]
 ### 4.2 Basic Workflow Pattern
 
 ```python
-# STEP 1: Import
+## STEP 1: Import
 from bokeh.plotting import figure, show
 
-# STEP 2: Prepare data
+## STEP 2: Prepare data
 categories = ['Category A', 'Category B', 'Category C']
 values = [10, 20, 15]
 bar_colors = ['red', '#00FF00', (0, 0, 255)]  # Mix of color formats
 
-# STEP 3: Create figure
+## STEP 3: Create figure
 p = figure(x_range=categories, title="Your Title Here")
 
-# STEP 4: Add glyphs (visual elements)
+## STEP 4: Add glyphs (visual elements)
 p.vbar(x=categories, top=values, width=0.9, color=bar_colors)
 
-# STEP 5: Display
+## STEP 5: Display
 show(p)
 ```
 
@@ -141,13 +141,13 @@ The lesson covers **five main areas** of plot customization:
 Based on the transcript, try to replicate this workflow:
 
 ```python
-# Task: Create a colored bar chart of fruit counts
-# 1. Import figure and show
-# 2. Create fruit names and count data
-# 3. Define a list of different colors (use at least two different color formats)
-# 4. Create a figure with fruit names on x-axis
-# 5. Add vertical bars with your colors
-# 6. Display the plot using show()
+## Task: Create a colored bar chart of fruit counts
+## 1. Import figure and show
+## 2. Create fruit names and count data
+## 3. Define a list of different colors (use at least two different color formats)
+## 4. Create a figure with fruit names on x-axis
+## 5. Add vertical bars with your colors
+## 6. Display the plot using show()
 ```
 
 ### Expected Output
@@ -178,25 +178,25 @@ The next section of the lesson (continued in original transcript) will cover:
 ## 10. Reference: Color Format Quick Guide
 
 ```python
-# All THREE formats work in Bokeh - use whichever is convenient
+## All THREE formats work in Bokeh - use whichever is convenient
 
-# Option 1: Named color (easiest for common colors)
+## Option 1: Named color (easiest for common colors)
 color = "green"
 
-# Option 2: Hexadecimal (good for exact web colors)
+## Option 2: Hexadecimal (good for exact web colors)
 color = "#2E8B57"    # SeaGreen
 
-# Option 3: RGB tuple (good for programmatic generation)
+## Option 3: RGB tuple (good for programmatic generation)
 color = (46, 139, 87)   # Same SeaGreen in RGB
 
-# Option 4: RGBA tuple (use when transparency is needed)
+## Option 4: RGBA tuple (use when transparency is needed)
 color = (46, 139, 87, 0.6)   # SeaGreen with 60% opacity
 ```
 
 
 This section is explaining how Bokeh handles categorical axes and color systems in bar charts.
 
-# Core Idea
+## Core Idea
 
 Normally, plots use continuous numerical axes:
 
@@ -220,7 +220,7 @@ So Bokeh must be explicitly told:
 
 > "Treat the x-axis as categories, not numeric values."
 
-# Basic Bokeh Bar Chart
+## Basic Bokeh Bar Chart
 
 ```python
 from bokeh.plotting import figure, show
@@ -228,14 +228,14 @@ from bokeh.plotting import figure, show
 fruits = ["Apple", "Mango", "Orange", "Banana"]
 counts = [10, 25, 18, 30]
 
-# Define figure
+## Define figure
 p = figure(
     x_range=fruits,   # categorical axis
     height=350,
     title="Fruit Counts"
 )
 
-# Create vertical bars
+## Create vertical bars
 p.vbar(
     x=fruits,
     top=counts,
@@ -246,7 +246,7 @@ p.vbar(
 show(p)
 ```
 
-# What `x_range=fruits` Does
+## What `x_range=fruits` Does
 
 This is the important part.
 
@@ -280,7 +280,7 @@ Categorical Axis:
 Apple | Mango | Orange | Banana
 ```
 
-# Understanding `vbar()`
+## Understanding `vbar()`
 
 ```python
 p.vbar(
@@ -300,7 +300,7 @@ p.vbar(
 |`width`|thickness of bars|
 |`color`|fill color|
 
-# How Color Works in Bokeh
+## How Color Works in Bokeh
 
 Bokeh supports multiple color formats.
 
@@ -320,7 +320,7 @@ color="green"
 color="gold"
 ```
 
-# RGB Tuple Colors
+## RGB Tuple Colors
 
 You can define colors manually using RGB values.
 
@@ -346,7 +346,7 @@ color=(0, 100, 0)
 
 This gives a dark green.
 
-# RGB Color Intuition
+## RGB Color Intuition
 
 |RGB|Result|
 |---|---|
@@ -357,7 +357,7 @@ This gives a dark green.
 |`(255,255,255)`|white|
 |`(0,0,0)`|black|
 
-# Example
+## Example
 
 ```python
 p.vbar(
@@ -370,7 +370,7 @@ p.vbar(
 
 Produces a dark red.
 
-# RGBA: Adding Transparency
+## RGBA: Adding Transparency
 
 RGBA adds:
 
@@ -391,7 +391,7 @@ A = 0     fully transparent
 A = 1     fully opaque
 ```
 
-# Example
+## Example
 
 ```python
 p.vbar(
@@ -404,7 +404,7 @@ p.vbar(
 
 Gray with 85% opacity.
 
-# Lower Transparency
+## Lower Transparency
 
 ```python
 color=(100,100,100,0.15)
@@ -412,7 +412,7 @@ color=(100,100,100,0.15)
 
 Now bars become faint/light because opacity is only 15%.
 
-# Visual Intuition
+## Visual Intuition
 
 ```text
 Opacity = 1.0
@@ -425,7 +425,7 @@ Opacity = 0.1
 ░░░░░░░░░░░░
 ```
 
-# Hexadecimal Colors
+## Hexadecimal Colors
 
 Another common format:
 
@@ -450,7 +450,7 @@ Examples:
 |`#0000FF`|blue|
 |`#808080`|gray|
 
-# Full Example
+## Full Example
 
 ```python
 from bokeh.plotting import figure, show
@@ -476,7 +476,7 @@ p.vbar(
 show(p)
 ```
 
-# Engineering Insight
+## Engineering Insight
 
 Why transparency matters:
 
@@ -494,7 +494,7 @@ Semi-transparent objects reduce visual clutter.
 
 You can make important bars opaque and less important bars transparent.
 
-# Common Mistakes
+## Common Mistakes
 
 ## Mistake 1
 
@@ -544,7 +544,7 @@ Not:
 0 to 255
 ```
 
-# Mental Model
+## Mental Model
 
 Think of Bokeh bar charts as:
 
@@ -557,7 +557,7 @@ flowchart LR
     G[Color Definition] --> H[Bar Styling]
 ```
 
-# Important Concept
+## Important Concept
 
 Bokeh separates:
 
@@ -592,7 +592,7 @@ That means:
 
 These are the visual grammar of plots.
 
-# Big Picture
+## Big Picture
 
 In Bokeh, every visual element has properties.
 
@@ -618,7 +618,7 @@ flowchart TD
     C --> G[Hatch Properties]
 ```
 
-# What the Instructor is Building
+## What the Instructor is Building
 
 They are creating:
 
@@ -640,7 +640,7 @@ This is common in teaching because:
 - random data helps focus on visualization concepts
     
 
-# Imports
+## Imports
 
 ```python
 import pandas as pd
@@ -649,7 +649,7 @@ import numpy as np
 from bokeh.plotting import figure, show
 ```
 
-# Why Each Library Is Used
+## Why Each Library Is Used
 
 |Library|Purpose|
 |---|---|
@@ -657,7 +657,7 @@ from bokeh.plotting import figure, show
 |NumPy|random data generation|
 |Bokeh|visualization|
 
-# Figure Setup
+## Figure Setup
 
 ```python
 visual_properties_plot = figure(
@@ -666,7 +666,7 @@ visual_properties_plot = figure(
 )
 ```
 
-# Important Concept: Figure Object
+## Important Concept: Figure Object
 
 This creates the plotting canvas.
 
@@ -681,7 +681,7 @@ Empty graph area
 
 Everything later gets added onto this figure.
 
-# Synthetic Data Generation
+## Synthetic Data Generation
 
 ```python
 data = {
@@ -690,7 +690,7 @@ data = {
 }
 ```
 
-# Understanding `np.random.randint()`
+## Understanding `np.random.randint()`
 
 Syntax:
 
@@ -706,7 +706,7 @@ Meaning:
 |high|maximum value|
 |size|number of random values|
 
-# Example
+## Example
 
 ```python
 np.random.randint(500, 2000, size=12)
@@ -720,7 +720,7 @@ Generates:
 
 12 random freight values.
 
-# Why Size = 12?
+## Why Size = 12?
 
 Because:
 
@@ -731,7 +731,7 @@ Because:
 
 This is implicit in the example.
 
-# Creating the DataFrame
+## Creating the DataFrame
 
 ```python
 df = pd.DataFrame(data)
@@ -747,7 +747,7 @@ Result:
 
 etc.
 
-# Why Use a DataFrame?
+## Why Use a DataFrame?
 
 Because:
 
@@ -762,11 +762,11 @@ Because:
 
 Bokeh integrates naturally with Pandas.
 
-# Visual Properties in Bokeh
+## Visual Properties in Bokeh
 
 Now the key learning section.
 
-# 1. Text Properties
+## 1. Text Properties
 
 These control:
 
@@ -784,7 +784,7 @@ p.title.text_font_size = "20pt"
 p.title.text_color = "navy"
 ```
 
-# Common Text Properties
+## Common Text Properties
 
 |Property|Meaning|
 |---|---|
@@ -794,13 +794,13 @@ p.title.text_color = "navy"
 |text_alpha|transparency|
 |text_font_style|italic/bold|
 
-# Example
+## Example
 
 ```python
 p.title.text_font_style = "bold"
 ```
 
-# 2. Line Properties
+## 2. Line Properties
 
 Used for:
 
@@ -820,7 +820,7 @@ line_alpha=0.5
 line_dash="dashed"
 ```
 
-# Line Dash Types
+## Line Dash Types
 
 |Value|Result|
 |---|---|
@@ -829,7 +829,7 @@ line_dash="dashed"
 |dotted|dot pattern|
 |dotdash|mixed|
 
-# Example
+## Example
 
 ```python
 p.line(
@@ -840,7 +840,7 @@ p.line(
 )
 ```
 
-# Visual Intuition
+## Visual Intuition
 
 ```text
 Solid:
@@ -853,7 +853,7 @@ Dotted:
 ..........
 ```
 
-# 3. Fill Properties
+## 3. Fill Properties
 
 Used inside shapes:
 
@@ -873,7 +873,7 @@ fill_color="green"
 fill_alpha=0.3
 ```
 
-# Important Distinction
+## Important Distinction
 
 |Property|Controls|
 |---|---|
@@ -899,7 +899,7 @@ Black border
 Red interior
 ```
 
-# 4. Hatch Properties
+## 4. Hatch Properties
 
 Hatching means patterns inside shapes.
 
@@ -918,7 +918,7 @@ Example:
 hatch_pattern="/"
 ```
 
-# Visual Intuition
+## Visual Intuition
 
 ```text
 ///////
@@ -929,14 +929,14 @@ xxxxxxx
 .......
 ```
 
-# Hatch Styling
+## Hatch Styling
 
 ```python
 hatch_color="black"
 hatch_alpha=0.5
 ```
 
-# Why Hatch Patterns Matter
+## Why Hatch Patterns Matter
 
 Useful when:
 
@@ -951,7 +951,7 @@ Useful when:
 
 This is underappreciated in beginner tutorials.
 
-# Full Example Combining Properties
+## Full Example Combining Properties
 
 ```python
 import pandas as pd
@@ -959,7 +959,7 @@ import numpy as np
 
 from bokeh.plotting import figure, show
 
-# Generate random data
+## Generate random data
 data = {
     "freight": np.random.randint(500, 2000, size=12),
     "mail": np.random.randint(100, 500, size=12)
@@ -967,13 +967,13 @@ data = {
 
 df = pd.DataFrame(data)
 
-# Create figure
+## Create figure
 p = figure(
     height=350,
     title="Domestic Freight and Mail"
 )
 
-# Add bars
+## Add bars
 p.vbar(
     x=list(range(12)),
     top=df["freight"],
@@ -990,14 +990,14 @@ p.vbar(
     hatch_color="red"
 )
 
-# Text styling
+## Text styling
 p.title.text_font_size = "18pt"
 p.title.text_color = "navy"
 
 show(p)
 ```
 
-# Mental Model
+## Mental Model
 
 Every Bokeh glyph has layers:
 
@@ -1020,7 +1020,7 @@ Each layer has:
 - width/pattern
     
 
-# Engineering Insight
+## Engineering Insight
 
 This property system is what makes Bokeh powerful for:
 
@@ -1042,9 +1042,9 @@ Because styling is:
 
 Unlike static plotting systems.
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
-# Mistake 1: Confusing Fill vs Line
+## Mistake 1: Confusing Fill vs Line
 
 Wrong assumption:
 
@@ -1059,7 +1059,7 @@ line_color = border
 fill_color = inside
 ```
 
-# Mistake 2: Alpha Overuse
+## Mistake 2: Alpha Overuse
 
 Too much transparency:
 
@@ -1069,7 +1069,7 @@ fill_alpha=0.05
 
 Makes plots unreadable.
 
-# Mistake 3: Excessive Styling
+## Mistake 3: Excessive Styling
 
 Beginners often:
 
@@ -1089,7 +1089,7 @@ Result:
 
 Good visualization is usually restrained.
 
-# Important Design Principle
+## Important Design Principle
 
 The instructor briefly mentioned:
 
@@ -1127,9 +1127,9 @@ You create a figure once, then modify parts of it incrementally.
 
 This is object-oriented visualization design.
 
-# Step-by-Step Breakdown
+## Step-by-Step Breakdown
 
-# 1. Creating the DataFrame
+## 1. Creating the DataFrame
 
 ```python
 monthly_values_df = pd.DataFrame(data)
@@ -1154,7 +1154,7 @@ Then the DataFrame becomes:
 
 etc.
 
-# Important Concept: Index
+## Important Concept: Index
 
 The instructor says:
 
@@ -1180,7 +1180,7 @@ Which behaves like:
 
 These become x-axis coordinates.
 
-# Extracting Columns
+## Extracting Columns
 
 ```python
 freight = monthly_values_df["freight"]
@@ -1195,7 +1195,7 @@ Now:
 |`freight`|freight values|
 |`mail`|mail values|
 
-# Mental Model
+## Mental Model
 
 ```mermaid
 flowchart LR
@@ -1207,7 +1207,7 @@ flowchart LR
     C --> F[Y Values]
 ```
 
-# Key Bokeh Pattern
+## Key Bokeh Pattern
 
 The instructor repeatedly emphasizes this structure:
 
@@ -1217,13 +1217,13 @@ figure_object.property.subproperty = value
 
 This is the core customization mechanism in Bokeh.
 
-# Example
+## Example
 
 ```python
 visual_properties_plot.title.text_font_size = "1.2em"
 ```
 
-# Breaking This Down
+## Breaking This Down
 
 |Part|Meaning|
 |---|---|
@@ -1233,7 +1233,7 @@ visual_properties_plot.title.text_font_size = "1.2em"
 
 This is hierarchical object access.
 
-# Another Example
+## Another Example
 
 ```python
 visual_properties_plot.title.text_color = "darkblue"
@@ -1241,7 +1241,7 @@ visual_properties_plot.title.text_color = "darkblue"
 
 Changes title color.
 
-# Visual Hierarchy
+## Visual Hierarchy
 
 Internally Bokeh looks conceptually like:
 
@@ -1255,7 +1255,7 @@ flowchart TD
     B --> E[Text Properties]
 ```
 
-# Understanding `"1.2em"`
+## Understanding `"1.2em"`
 
 This comes from CSS/web typography.
 
@@ -1277,7 +1277,7 @@ Means:
 120% of base font size
 ```
 
-# Why Use Relative Units?
+## Why Use Relative Units?
 
 Better responsiveness.
 
@@ -1295,7 +1295,7 @@ This matters in:
 - responsive UIs
     
 
-# Creating the Line Plot
+## Creating the Line Plot
 
 ```python
 visual_properties_plot.line(
@@ -1308,7 +1308,7 @@ visual_properties_plot.line(
 )
 ```
 
-# Important Insight
+## Important Insight
 
 `line()` creates a glyph object.
 
@@ -1320,7 +1320,7 @@ This is important.
 
 Bokeh internally represents every visual element as a glyph.
 
-# Glyph = Renderable Visual Object
+## Glyph = Renderable Visual Object
 
 Examples:
 
@@ -1331,7 +1331,7 @@ Examples:
 |`circle()`|circles|
 |`patch()`|polygons|
 
-# Why This Matters
+## Why This Matters
 
 Because glyphs have independent styling.
 
@@ -1348,7 +1348,7 @@ You can have:
 
 inside one figure.
 
-# Understanding Layering
+## Understanding Layering
 
 The instructor notices:
 
@@ -1363,7 +1363,7 @@ Meaning:
 
 Bokeh does not erase old glyphs unless explicitly recreated.
 
-# Visual Model
+## Visual Model
 
 ```mermaid
 flowchart TD
@@ -1373,14 +1373,14 @@ flowchart TD
     A --> D[Text Elements]
 ```
 
-# Example of Combined Plot
+## Example of Combined Plot
 
 ```python
 from bokeh.plotting import figure, show
 import pandas as pd
 import numpy as np
 
-# Data
+## Data
 data = {
     "freight": np.random.randint(500, 2000, 12),
     "mail": np.random.randint(100, 500, 12)
@@ -1388,22 +1388,22 @@ data = {
 
 monthly_values_df = pd.DataFrame(data)
 
-# Variables
+## Variables
 x = monthly_values_df.index
 freight = monthly_values_df["freight"]
 mail = monthly_values_df["mail"]
 
-# Figure
+## Figure
 p = figure(
     height=400,
     title="Freight and Mail Analysis"
 )
 
-# Title customization
+## Title customization
 p.title.text_font_size = "1.5em"
 p.title.text_color = "darkblue"
 
-# Line glyph
+## Line glyph
 p.line(
     x,
     freight,
@@ -1414,7 +1414,7 @@ p.line(
     line_dash="dashed"
 )
 
-# Bar glyph
+## Bar glyph
 p.vbar(
     x=x,
     top=mail,
@@ -1432,7 +1432,7 @@ p.vbar(
 show(p)
 ```
 
-# Hatch Pattern Insight
+## Hatch Pattern Insight
 
 The instructor mentions:
 
@@ -1451,7 +1451,7 @@ Useful when:
 - accessibility
     
 
-# Transparency (`alpha`)
+## Transparency (`alpha`)
 
 Example:
 
@@ -1467,7 +1467,7 @@ Controls visibility strength.
 |0.5|semi-transparent|
 |0.1|faint|
 
-# Why Transparency Is Powerful
+## Why Transparency Is Powerful
 
 In layered plots:
 
@@ -1482,7 +1482,7 @@ Without alpha:
 front layer hides everything behind
 ```
 
-# Important Design Principle
+## Important Design Principle
 
 The instructor accidentally demonstrates something important:
 
@@ -1499,7 +1499,7 @@ Meaning:
 
 This is why rerunning cells in notebooks can produce unexpected layered results.
 
-# Common Jupyter Notebook Problem
+## Common Jupyter Notebook Problem
 
 Beginners often:
 
@@ -1518,7 +1518,7 @@ Result:
 - confusing plots
     
 
-# Good Practice
+## Good Practice
 
 Reinitialize figure:
 
@@ -1528,7 +1528,7 @@ p = figure(...)
 
 before rebuilding plots.
 
-# The Most Important Takeaway
+## The Most Important Takeaway
 
 The instructor summarizes the core architecture correctly:
 
@@ -1557,7 +1557,7 @@ This object-property system is the foundation of:
 - most UI frameworks
     
 
-# Deep Insight
+## Deep Insight
 
 Bokeh is closer to a UI framework than a simple plotting library.
 
@@ -1598,9 +1598,9 @@ This section explains an extremely important Bokeh concept:
 
 This distinction matters because Bokeh is fundamentally object-oriented.
 
-# Two Ways to Configure a Plot
+## Two Ways to Configure a Plot
 
-# Method 1: Configure Inside `figure()`
+## Method 1: Configure Inside `figure()`
 
 Everything at once:
 
@@ -1612,7 +1612,7 @@ p = figure(
 )
 ```
 
-# Method 2: Configure After Creation
+## Method 2: Configure After Creation
 
 Create first:
 
@@ -1629,7 +1629,7 @@ p.width = 700
 
 The instructor is teaching Method 2.
 
-# Why This Matters
+## Why This Matters
 
 Method 2 is more flexible for:
 
@@ -1644,7 +1644,7 @@ Method 2 is more flexible for:
 
 Because properties can be modified later.
 
-# Core Architectural Pattern
+## Core Architectural Pattern
 
 ```python
 plot.property = value
@@ -1652,21 +1652,21 @@ plot.property = value
 
 This is the central Bokeh design philosophy.
 
-# Example
+## Example
 
 ```python
 plot.height = 300
 plot.width = 700
 ```
 
-# Visual Interpretation
+## Visual Interpretation
 
 ```text
 Canvas Height = 300 pixels
 Canvas Width  = 700 pixels
 ```
 
-# Important Difference
+## Important Difference
 
 Earlier:
 
@@ -1693,7 +1693,7 @@ Difference is:
 - readability
     
 
-# Plot Styling Properties
+## Plot Styling Properties
 
 Now the instructor moves from:
 
@@ -1707,7 +1707,7 @@ to:
 
 This is a different layer.
 
-# Visualization Layers
+## Visualization Layers
 
 ```mermaid
 flowchart TD
@@ -1725,7 +1725,7 @@ flowchart TD
     C --> I[Scatter Points]
 ```
 
-# Plot Height and Width
+## Plot Height and Width
 
 ```python
 plot.height = 300
@@ -1742,7 +1742,7 @@ Not:
 - data scaling
     
 
-# Outline Styling
+## Outline Styling
 
 ```python
 plot.outline_line_color = "navy"
@@ -1762,7 +1762,7 @@ Visual:
 
 The border becomes navy blue.
 
-# Border Width
+## Border Width
 
 ```python
 plot.outline_line_width = 2
@@ -1770,7 +1770,7 @@ plot.outline_line_width = 2
 
 Makes border thicker.
 
-# Border Transparency
+## Border Transparency
 
 ```python
 plot.outline_line_alpha = 0.5
@@ -1778,7 +1778,7 @@ plot.outline_line_alpha = 0.5
 
 Semi-transparent border.
 
-# Background Fill
+## Background Fill
 
 ```python
 plot.background_fill_color = "lightblue"
@@ -1793,7 +1793,7 @@ Entire plotting area
 gets light blue fill
 ```
 
-# Removing Grid Lines
+## Removing Grid Lines
 
 ```python
 plot.xgrid.grid_line_color = None
@@ -1801,7 +1801,7 @@ plot.xgrid.grid_line_color = None
 
 This is important.
 
-# Understanding the Hierarchy
+## Understanding the Hierarchy
 
 ```python
 plot.xgrid.grid_line_color
@@ -1815,7 +1815,7 @@ Breakdown:
 |`xgrid`|x-axis grid object|
 |`grid_line_color`|grid styling|
 
-# Setting `None`
+## Setting `None`
 
 ```python
 None
@@ -1828,7 +1828,7 @@ means:
 
 So grid lines disappear.
 
-# Why Remove Grid Lines?
+## Why Remove Grid Lines?
 
 Grid lines help:
 
@@ -1844,7 +1844,7 @@ But too many:
 
 Good visualization often minimizes unnecessary grid usage.
 
-# Edward Tufte Principle
+## Edward Tufte Principle
 
 The instructor indirectly references this idea:
 
@@ -1866,7 +1866,7 @@ Removing excessive grids improves:
 - signal-to-noise ratio
     
 
-# Scatter Plot
+## Scatter Plot
 
 ```python
 plot.scatter(
@@ -1876,7 +1876,7 @@ plot.scatter(
 )
 ```
 
-# Scatter Plot Logic
+## Scatter Plot Logic
 
 |X|Y|
 |---|---|
@@ -1888,7 +1888,7 @@ plot.scatter(
 
 Each pair becomes a point.
 
-# Visual Interpretation
+## Visual Interpretation
 
 ```text
 (1,2)
@@ -1897,37 +1897,37 @@ Each pair becomes a point.
 ...
 ```
 
-# `size=10`
+## `size=10`
 
 Controls marker size.
 
 Not data scaling.
 
-# Full Example
+## Full Example
 
 ```python
 from bokeh.plotting import figure, show
 
-# Create empty figure
+## Create empty figure
 plot = figure()
 
-# Plot dimensions
+## Plot dimensions
 plot.height = 300
 plot.width = 700
 
-# Border styling
+## Border styling
 plot.outline_line_color = "navy"
 plot.outline_line_width = 2
 plot.outline_line_alpha = 0.5
 
-# Background styling
+## Background styling
 plot.background_fill_color = "lightblue"
 
-# Remove grid lines
+## Remove grid lines
 plot.xgrid.grid_line_color = None
 plot.ygrid.grid_line_color = None
 
-# Scatter plot
+## Scatter plot
 plot.scatter(
     [1,2,3,4,5],
     [2,5,7,8,2],
@@ -1937,7 +1937,7 @@ plot.scatter(
 show(plot)
 ```
 
-# Important Insight
+## Important Insight
 
 The instructor is now teaching:
 
@@ -1948,7 +1948,7 @@ The instructor is now teaching:
 
 These are separate concerns.
 
-# Engineering Analogy
+## Engineering Analogy
 
 Think of Bokeh like frontend UI development.
 
@@ -1960,7 +1960,7 @@ Think of Bokeh like frontend UI development.
 
 This is why Bokeh feels different from traditional scientific plotting libraries.
 
-# Deep Insight
+## Deep Insight
 
 Most beginners think plotting means:
 
@@ -1986,9 +1986,9 @@ flowchart LR
 
 Bokeh is designed for this richer architecture.
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
-# Mistake 1: Overstyling
+## Mistake 1: Overstyling
 
 Beginners often:
 
@@ -2006,7 +2006,7 @@ Result:
 - visually exhausting plots
     
 
-# Mistake 2: Removing All Grids
+## Mistake 2: Removing All Grids
 
 Some grids are useful.
 
@@ -2022,7 +2022,7 @@ Good visualization balances:
 - precision
     
 
-# Mistake 3: Confusing Plot vs Glyph Styling
+## Mistake 3: Confusing Plot vs Glyph Styling
 
 Example confusion:
 
@@ -2051,7 +2051,7 @@ inside scatter affects:
 - markers only
     
 
-# Most Important Takeaway
+## Most Important Takeaway
 
 Bokeh customization operates at multiple levels:
 
@@ -2075,7 +2075,7 @@ This section transitions from:
 
 This distinction is critical in Bokeh.
 
-# Key Concept
+## Key Concept
 
 Bokeh has two major customization layers:
 
@@ -2086,7 +2086,7 @@ Bokeh has two major customization layers:
 
 The instructor is now focusing on glyph styling.
 
-# Important Idea
+## Important Idea
 
 The instructor repeats the same architectural pattern:
 
@@ -2107,7 +2107,7 @@ This works for:
 
 Bokeh is highly consistent internally.
 
-# What Is a Glyph?
+## What Is a Glyph?
 
 A glyph is:
 
@@ -2122,7 +2122,7 @@ Examples:
 |`vbar()`|bars|
 |`rect()`|rectangles|
 
-# Important Clarification
+## Important Clarification
 
 The instructor says:
 
@@ -2139,7 +2139,7 @@ is a glyph used to create a scatter plot.
 Scatter plot = concept.  
 Circle glyph = rendering mechanism.
 
-# Basic Example
+## Basic Example
 
 ```python
 from bokeh.plotting import figure, show
@@ -2159,9 +2159,9 @@ circle = plot.circle(
 show(plot)
 ```
 
-# Understanding the Parameters
+## Understanding the Parameters
 
-# Coordinates
+## Coordinates
 
 ```python
 x=[1,2,3]
@@ -2176,7 +2176,7 @@ Creates points:
 |2|5|
 |3|8|
 
-# Marker Size
+## Marker Size
 
 ```python
 size=15
@@ -2184,7 +2184,7 @@ size=15
 
 Controls circle diameter.
 
-# Fill Color
+## Fill Color
 
 ```python
 fill_color="yellow"
@@ -2192,7 +2192,7 @@ fill_color="yellow"
 
 Controls interior.
 
-# Line Color
+## Line Color
 
 ```python
 line_color="red"
@@ -2200,7 +2200,7 @@ line_color="red"
 
 Controls border.
 
-# Visual Interpretation
+## Visual Interpretation
 
 ```text
 Red outline
@@ -2214,7 +2214,7 @@ Like:
   🟡 inside
 ```
 
-# Important Bokeh Design Principle
+## Important Bokeh Design Principle
 
 Glyphs are objects.
 
@@ -2235,7 +2235,7 @@ That means:
 - update it dynamically
     
 
-# This Is the Big Idea
+## This Is the Big Idea
 
 Instead of:
 
@@ -2249,7 +2249,7 @@ Bokeh does:
 create editable visual objects
 ```
 
-# Object Flow
+## Object Flow
 
 ```mermaid
 flowchart LR
@@ -2258,7 +2258,7 @@ flowchart LR
     C --> D[Editable Properties]
 ```
 
-# Styling During Creation
+## Styling During Creation
 
 The instructor first demonstrates:
 
@@ -2274,7 +2274,7 @@ This is:
 
 > inline styling
 
-# Alternative: Style After Creation
+## Alternative: Style After Creation
 
 Because the glyph is stored:
 
@@ -2290,7 +2290,7 @@ circle.glyph.fill_color = "blue"
 
 This is extremely important.
 
-# Why?
+## Why?
 
 Because it enables:
 
@@ -2303,7 +2303,7 @@ Because it enables:
 - user-driven styling
     
 
-# Internal Structure
+## Internal Structure
 
 Conceptually:
 
@@ -2315,7 +2315,7 @@ flowchart TD
     B --> D[Line Properties]
 ```
 
-# Accessing Glyph Properties
+## Accessing Glyph Properties
 
 Example:
 
@@ -2331,7 +2331,7 @@ Breakdown:
 |`.glyph`|actual visual glyph|
 |`.fill_color`|style property|
 
-# Why the `.glyph` Layer Exists
+## Why the `.glyph` Layer Exists
 
 Because renderers manage:
 
@@ -2349,7 +2349,7 @@ while glyphs manage:
 
 This separation is architectural.
 
-# Example of Dynamic Modification
+## Example of Dynamic Modification
 
 ```python
 from bokeh.plotting import figure, show
@@ -2365,14 +2365,14 @@ circle = plot.circle(
     line_color="red"
 )
 
-# Modify later
+## Modify later
 circle.glyph.fill_color = "green"
 circle.glyph.line_width = 4
 
 show(plot)
 ```
 
-# Important Insight
+## Important Insight
 
 The instructor comments out code to show differences.
 
@@ -2387,7 +2387,7 @@ Visualization learning requires:
 
 Not just reading syntax.
 
-# Engineering Parallel
+## Engineering Parallel
 
 This is similar to frontend frameworks.
 
@@ -2399,7 +2399,7 @@ This is similar to frontend frameworks.
 
 This is why Bokeh feels closer to web programming than traditional plotting.
 
-# Fill vs Line Properties
+## Fill vs Line Properties
 
 Very important distinction:
 
@@ -2408,7 +2408,7 @@ Very important distinction:
 |`fill_*`|inside|
 |`line_*`|border|
 
-# Example
+## Example
 
 ```python
 fill_alpha=0.2
@@ -2422,14 +2422,14 @@ Result:
 - strong border
     
 
-# Visual Intuition
+## Visual Intuition
 
 ```text
 Opaque border
 Transparent center
 ```
 
-# Common Beginner Confusion
+## Common Beginner Confusion
 
 Beginners often assume:
 
@@ -2452,7 +2452,7 @@ But Bokeh separates:
 
 This separation gives fine-grained control.
 
-# Important Design Philosophy
+## Important Design Philosophy
 
 Bokeh intentionally exposes low-level styling primitives.
 
@@ -2469,7 +2469,7 @@ Because dashboards and enterprise visualizations require:
 - dynamic updates
     
 
-# Hidden Lesson in This Section
+## Hidden Lesson in This Section
 
 The instructor casually demonstrates a major software engineering idea:
 
@@ -2492,7 +2492,7 @@ This becomes critical later for:
 - live dashboards
     
 
-# Most Important Takeaway
+## Most Important Takeaway
 
 Bokeh styling can happen at two moments:
 
@@ -2513,9 +2513,9 @@ And then transitions into:
 
 These are two different but related layers of visualization control.
 
-# Part 1: Editing Glyphs After Creation
+## Part 1: Editing Glyphs After Creation
 
-# Initial Circle Glyph
+## Initial Circle Glyph
 
 ```python
 circle = plot.circle(
@@ -2534,7 +2534,7 @@ Result:
 - red border
     
 
-# Visual Interpretation
+## Visual Interpretation
 
 ```text
 Point positions:
@@ -2547,7 +2547,7 @@ inside = yellow
 border = red
 ```
 
-# Important Clarification
+## Important Clarification
 
 The instructor says:
 
@@ -2562,7 +2562,7 @@ Correct interpretation:
 |`fill_color`|interior|
 |`line_color`|outline/border|
 
-# Dynamic Modification
+## Dynamic Modification
 
 Now they modify the glyph later:
 
@@ -2570,7 +2570,7 @@ Now they modify the glyph later:
 circle.glyph.fill_color = "green"
 ```
 
-# What Happens Internally?
+## What Happens Internally?
 
 ```mermaid
 flowchart LR
@@ -2581,7 +2581,7 @@ flowchart LR
 
 The property changes dynamically.
 
-# Then Border Change
+## Then Border Change
 
 ```python
 circle.glyph.line_color = "blue"
@@ -2594,7 +2594,7 @@ Now:
 - border = blue
     
 
-# Important Architectural Idea
+## Important Architectural Idea
 
 This is not repainting manually.
 
@@ -2607,7 +2607,7 @@ Instead:
 
 This is reactive visualization architecture.
 
-# Mental Model
+## Mental Model
 
 Think of Bokeh objects like editable UI components.
 
@@ -2623,7 +2623,7 @@ Bokeh does:
 maintain live visual objects
 ```
 
-# Why This Matters
+## Why This Matters
 
 This becomes powerful later for:
 
@@ -2640,7 +2640,7 @@ This becomes powerful later for:
 
 Because plots are mutable.
 
-# Core Pattern
+## Core Pattern
 
 The instructor summarizes:
 
@@ -2650,13 +2650,13 @@ circle.glyph.property = value
 
 This is the key syntax pattern.
 
-# General Form
+## General Form
 
 ```python
 renderer.glyph.visual_property = new_value
 ```
 
-# Common Editable Properties
+## Common Editable Properties
 
 |Property|Meaning|
 |---|---|
@@ -2666,7 +2666,7 @@ renderer.glyph.visual_property = new_value
 |`line_width`|border thickness|
 |`size`|glyph size|
 
-# Full Example
+## Full Example
 
 ```python
 from bokeh.plotting import figure, show
@@ -2682,7 +2682,7 @@ circle = plot.circle(
     line_color="red"
 )
 
-# Modify later
+## Modify later
 circle.glyph.fill_color = "green"
 circle.glyph.line_color = "blue"
 circle.glyph.line_width = 3
@@ -2690,7 +2690,7 @@ circle.glyph.line_width = 3
 show(plot)
 ```
 
-# Important Software Engineering Insight
+## Important Software Engineering Insight
 
 The instructor is unknowingly teaching:
 
@@ -2716,7 +2716,7 @@ These ideas appear in:
 
 Bokeh is much closer to a UI engine than a static plotting package.
 
-# Part 2: Axis Customization
+## Part 2: Axis Customization
 
 Now the discussion shifts to axes.
 
@@ -2724,11 +2724,11 @@ This is extremely important because:
 
 > axes determine how users interpret quantities
 
-# The Instructor Mentions "True Zero"
+## The Instructor Mentions "True Zero"
 
 This is actually a major visualization ethics principle.
 
-# Why True Zero Matters
+## Why True Zero Matters
 
 Suppose:
 
@@ -2755,7 +2755,7 @@ But if axis starts at 0:
 
 Difference looks correctly small.
 
-# This Is a Common Visualization Manipulation Technique
+## This Is a Common Visualization Manipulation Technique
 
 Especially in:
 
@@ -2766,12 +2766,12 @@ Especially in:
 - political presentations
     
 
-# Important Principle
+## Important Principle
 
 Axes are not neutral.  
 They shape interpretation.
 
-# Axis Customization in Bokeh
+## Axis Customization in Bokeh
 
 The instructor says:
 
@@ -2783,7 +2783,7 @@ The instructor says:
     can all be modified.
     
 
-# Basic Line Plot
+## Basic Line Plot
 
 ```python
 axis_plot = figure()
@@ -2802,7 +2802,7 @@ This creates:
 - with a purple line glyph
     
 
-# Visual Hierarchy
+## Visual Hierarchy
 
 ```mermaid
 flowchart TD
@@ -2814,7 +2814,7 @@ flowchart TD
     D --> E[Purple Line]
 ```
 
-# Axis Objects in Bokeh
+## Axis Objects in Bokeh
 
 Bokeh internally has:
 
@@ -2830,7 +2830,7 @@ plot.xaxis
 plot.yaxis
 ```
 
-# Common Axis Properties
+## Common Axis Properties
 
 |Property|Meaning|
 |---|---|
@@ -2839,27 +2839,27 @@ plot.yaxis
 |axis_line_width|axis thickness|
 |axis_line_color|axis color|
 
-# Example
+## Example
 
 ```python
 plot.xaxis.axis_label = "Months"
 plot.yaxis.axis_label = "Freight"
 ```
 
-# Styling Axis Lines
+## Styling Axis Lines
 
 ```python
 plot.xaxis.axis_line_color = "red"
 plot.xaxis.axis_line_width = 3
 ```
 
-# Styling Tick Labels
+## Styling Tick Labels
 
 ```python
 plot.xaxis.major_label_text_color = "blue"
 ```
 
-# Grid Customization
+## Grid Customization
 
 The instructor also mentions grid lines.
 
@@ -2869,7 +2869,7 @@ Example:
 plot.xgrid.grid_line_color = "gray"
 ```
 
-# Why Grid Styling Matters
+## Why Grid Styling Matters
 
 Grids can:
 
@@ -2885,7 +2885,7 @@ But excessive grids:
 - reduce signal clarity
     
 
-# Professional Visualization Principle
+## Professional Visualization Principle
 
 Good visualizations emphasize:
 
@@ -2902,7 +2902,7 @@ Meaning:
 - not dominate
     
 
-# Full Axis Styling Example
+## Full Axis Styling Example
 
 ```python
 from bokeh.plotting import figure, show
@@ -2915,7 +2915,7 @@ axis_plot = figure(
     width=600
 )
 
-# Line graph
+## Line graph
 axis_plot.line(
     x,
     y,
@@ -2923,24 +2923,24 @@ axis_plot.line(
     line_width=3
 )
 
-# Axis labels
+## Axis labels
 axis_plot.xaxis.axis_label = "Month"
 axis_plot.yaxis.axis_label = "Freight"
 
-# Axis styling
+## Axis styling
 axis_plot.xaxis.axis_line_color = "red"
 axis_plot.yaxis.axis_line_color = "blue"
 
-# Tick styling
+## Tick styling
 axis_plot.xaxis.major_label_text_color = "green"
 
-# Grid styling
+## Grid styling
 axis_plot.xgrid.grid_line_color = "gray"
 
 show(axis_plot)
 ```
 
-# Deep Insight
+## Deep Insight
 
 Most plotting tutorials focus on:
 
@@ -2962,7 +2962,7 @@ Because:
 
 > interpretation depends more on framing than on the raw chart type itself.
 
-# Most Important Takeaway
+## Most Important Takeaway
 
 Bokeh customization is hierarchical:
 
@@ -3001,7 +3001,7 @@ This section goes deeper into axis customization and introduces:
 
 This is where visualization starts becoming presentation engineering, not just plotting.
 
-# Initial Line Plot
+## Initial Line Plot
 
 The instructor begins with:
 
@@ -3028,17 +3028,17 @@ This demonstrates an important idea:
 
 > styling and data are independent layers
 
-# Axis Customization
+## Axis Customization
 
 Now they customize the axis itself.
 
-# X-Axis Line Color
+## X-Axis Line Color
 
 ```python
 axis_plot.xaxis.axis_line_color = "blue"
 ```
 
-# Understanding the Hierarchy
+## Understanding the Hierarchy
 
 Breakdown:
 
@@ -3048,7 +3048,7 @@ Breakdown:
 |`.xaxis`|x-axis object|
 |`.axis_line_color`|axis line styling|
 
-# Visual Interpretation
+## Visual Interpretation
 
 Before:
 
@@ -3062,7 +3062,7 @@ After:
 blue x-axis line
 ```
 
-# Important Insight
+## Important Insight
 
 Axes are objects too.
 
@@ -3079,7 +3079,7 @@ flowchart TD
     B --> F[Labels]
 ```
 
-# Minor Tick Styling
+## Minor Tick Styling
 
 Instructor mentions:
 
@@ -3089,7 +3089,7 @@ They mean:
 
 > minor ticks
 
-# What Are Minor Ticks?
+## What Are Minor Ticks?
 
 Example axis:
 
@@ -3110,7 +3110,7 @@ Minor ticks:
 - intermediate reference marks
     
 
-# Styling Minor Ticks
+## Styling Minor Ticks
 
 ```python
 axis_plot.xaxis.minor_tick_line_color = "orange"
@@ -3118,7 +3118,7 @@ axis_plot.xaxis.minor_tick_line_color = "orange"
 
 Now small ticks become orange.
 
-# Major Tick Styling
+## Major Tick Styling
 
 ```python
 axis_plot.xaxis.major_tick_line_color = "red"
@@ -3126,7 +3126,7 @@ axis_plot.xaxis.major_tick_line_color = "red"
 
 Major ticks become red.
 
-# Tick Hierarchy
+## Tick Hierarchy
 
 ```text
 Major Tick:
@@ -3136,7 +3136,7 @@ Minor Tick:
 '    smaller reference mark
 ```
 
-# Why Minor Ticks Matter
+## Why Minor Ticks Matter
 
 Useful when:
 
@@ -3154,7 +3154,7 @@ But excessive minor ticks:
 - overwhelm dashboards
     
 
-# Major Label Font Size
+## Major Label Font Size
 
 The instructor changes:
 
@@ -3162,7 +3162,7 @@ The instructor changes:
 axis_plot.yaxis.major_label_text_font_size = "1.8em"
 ```
 
-# What Are Major Labels?
+## What Are Major Labels?
 
 These:
 
@@ -3175,14 +3175,14 @@ These:
 
 The actual numeric text.
 
-# Important Distinction
+## Important Distinction
 
 |Component|Example|
 |---|---|
 |Tick|small line mark|
 |Label|number beside tick|
 
-# Visual Model
+## Visual Model
 
 ```mermaid
 flowchart LR
@@ -3194,7 +3194,7 @@ flowchart LR
     A --> E[Major Label]
 ```
 
-# Why Increase Font Size?
+## Why Increase Font Size?
 
 Because small labels:
 
@@ -3214,11 +3214,11 @@ Especially on:
 - business dashboards
     
 
-# Axis Label Orientation
+## Axis Label Orientation
 
 Now the instructor introduces one of the most practically useful visualization features.
 
-# Problem
+## Problem
 
 Long labels overlap:
 
@@ -3228,7 +3228,7 @@ January February March April
 
 Unreadable.
 
-# Solution: Rotate Labels
+## Solution: Rotate Labels
 
 Example:
 
@@ -3242,7 +3242,7 @@ e
 b
 ```
 
-# Why Rotation Matters
+## Why Rotation Matters
 
 Important for:
 
@@ -3255,7 +3255,7 @@ Important for:
 - dense bar charts
     
 
-# Bokeh Label Orientation
+## Bokeh Label Orientation
 
 Example:
 
@@ -3263,7 +3263,7 @@ Example:
 plot.xaxis.major_label_orientation = 1.0
 ```
 
-# Important Detail
+## Important Detail
 
 Orientation uses radians.
 
@@ -3273,7 +3273,7 @@ Orientation uses radians.
 |`1.57`|vertical|
 |`0.78`|diagonal|
 
-# Visual Intuition
+## Visual Intuition
 
 ```text
 0 radians:
@@ -3292,7 +3292,7 @@ r
 y
 ```
 
-# Why Radians?
+## Why Radians?
 
 Because Bokeh is web-rendering based.
 
@@ -3305,7 +3305,7 @@ Internally:
 - trigonometric rotations
     
 
-# NumericalTickFormatter
+## NumericalTickFormatter
 
 Instructor imports:
 
@@ -3315,7 +3315,7 @@ NumeralTickFormatter
 
 This is for formatting axis labels.
 
-# Why Formatting Matters
+## Why Formatting Matters
 
 Raw numbers often look ugly:
 
@@ -3329,7 +3329,7 @@ Better:
 1M
 ```
 
-# Example
+## Example
 
 ```python
 from bokeh.models import NumeralTickFormatter
@@ -3339,14 +3339,14 @@ plot.yaxis.formatter = NumeralTickFormatter(
 )
 ```
 
-# Output
+## Output
 
 |Raw|Display|
 |---|---|
 |1000|1k|
 |1000000|1m|
 
-# Why This Matters
+## Why This Matters
 
 Human readability.
 
@@ -3354,7 +3354,7 @@ Visualization is fundamentally:
 
 > cognitive compression
 
-# Airline Example
+## Airline Example
 
 Instructor mentions:
 
@@ -3373,7 +3373,7 @@ with passenger values.
 
 This is exactly where label rotation becomes necessary because airline names are long.
 
-# Example
+## Example
 
 ```python
 from bokeh.plotting import figure, show
@@ -3400,18 +3400,18 @@ plot.vbar(
     width=0.5
 )
 
-# Axis styling
+## Axis styling
 plot.xaxis.axis_line_color = "blue"
 plot.xaxis.major_tick_line_color = "red"
 plot.xaxis.minor_tick_line_color = "orange"
 
-# Label styling
+## Label styling
 plot.yaxis.major_label_text_font_size = "1.2em"
 
-# Rotate labels
+## Rotate labels
 plot.xaxis.major_label_orientation = 1.0
 
-# Number formatting
+## Number formatting
 plot.yaxis.formatter = NumeralTickFormatter(
     format="0.0a"
 )
@@ -3419,7 +3419,7 @@ plot.yaxis.formatter = NumeralTickFormatter(
 show(plot)
 ```
 
-# Important Visualization Principle
+## Important Visualization Principle
 
 The instructor accidentally touches a deep principle:
 
@@ -3444,9 +3444,9 @@ but:
 - interpretability
     
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
-# Mistake 1: Over-Rotating Labels
+## Mistake 1: Over-Rotating Labels
 
 Vertical labels:
 
@@ -3464,7 +3464,7 @@ are slower to read.
 
 Diagonal is often better.
 
-# Mistake 2: Excessive Tick Styling
+## Mistake 2: Excessive Tick Styling
 
 Bright:
 
@@ -3479,7 +3479,7 @@ simultaneously creates clutter.
 
 Professional dashboards usually use restrained axis styling.
 
-# Mistake 3: Ignoring Formatting
+## Mistake 3: Ignoring Formatting
 
 Raw large numbers:
 
@@ -3491,7 +3491,7 @@ are cognitively expensive.
 
 Formatting matters enormously.
 
-# Deep Insight
+## Deep Insight
 
 At this point, the instructor is no longer teaching "charts."
 
@@ -3519,7 +3519,7 @@ The instructor is solving two classic problems:
 
 This is real-world visualization work.
 
-# The Dataset
+## The Dataset
 
 The instructor has:
 
@@ -3536,9 +3536,9 @@ Likely something like:
 |Lufthansa|11,500,000|
 |Emirates|13,000,000|
 
-# Step 1: Creating the Figure
+## Step 1: Creating the Figure
 
-# Categorical X-Axis
+## Categorical X-Axis
 
 ```python
 x_range=unique_carrier_name
@@ -3550,7 +3550,7 @@ This tells Bokeh:
 
 not continuous numbers.
 
-# Why This Matters
+## Why This Matters
 
 Without categorical axes:
 
@@ -3564,7 +3564,7 @@ With categorical axes:
 Delta | Emirates | Lufthansa
 ```
 
-# Figure Definition
+## Figure Definition
 
 ```python
 carriers_by_passenger_plot = figure(
@@ -3575,7 +3575,7 @@ carriers_by_passenger_plot = figure(
 )
 ```
 
-# Important Insight
+## Important Insight
 
 Width becomes very important for categorical charts.
 
@@ -3583,7 +3583,7 @@ Why?
 
 Long labels consume horizontal space.
 
-# Step 2: Vertical Bar Chart
+## Step 2: Vertical Bar Chart
 
 ```python
 plot.vbar(
@@ -3594,7 +3594,7 @@ plot.vbar(
 )
 ```
 
-# Understanding `top`
+## Understanding `top`
 
 `top` defines:
 
@@ -3609,7 +3609,7 @@ Example:
 
 Bar height becomes 14M.
 
-# Initial Problem: Label Clutter
+## Initial Problem: Label Clutter
 
 The instructor observes:
 
@@ -3617,7 +3617,7 @@ The instructor observes:
 
 This is one of the most common failures in categorical plots.
 
-# Why Clutter Happens
+## Why Clutter Happens
 
 Long labels:
 
@@ -3629,7 +3629,7 @@ United Airlines
 
 cannot fit horizontally.
 
-# Visual Failure
+## Visual Failure
 
 ```text
 AmericanAirlinesSouthwestAirlinesUnited...
@@ -3637,19 +3637,19 @@ AmericanAirlinesSouthwestAirlinesUnited...
 
 Unreadable.
 
-# Solution: Rotate Labels
+## Solution: Rotate Labels
 
-# Orientation Property
+## Orientation Property
 
 ```python
 carriers_by_passenger_plot.xaxis.major_label_orientation = 0.8
 ```
 
-# Important Detail
+## Important Detail
 
 Orientation uses radians.
 
-# Approximate Meaning
+## Approximate Meaning
 
 |Value|Effect|
 |---|---|
@@ -3658,7 +3658,7 @@ Orientation uses radians.
 |`0.8`|readable slant|
 |`1.57`|vertical|
 
-# Visual Intuition
+## Visual Intuition
 
 ```text
 0:
@@ -3675,7 +3675,7 @@ t
 a
 ```
 
-# Why 0.8 Is Good
+## Why 0.8 Is Good
 
 Completely vertical text is slower to read.
 
@@ -3688,7 +3688,7 @@ Diagonal labels often maximize:
 
 This is a subtle but important visualization tradeoff.
 
-# The Second Problem: Numeric Scale Readability
+## The Second Problem: Numeric Scale Readability
 
 The instructor says:
 
@@ -3705,11 +3705,11 @@ This is scientific notation.
 Technically correct.  
 Human-unfriendly.
 
-# Visualization Principle
+## Visualization Principle
 
 Readable numbers matter more than compact numbers in dashboards.
 
-# Formatter
+## Formatter
 
 They use:
 
@@ -3717,7 +3717,7 @@ They use:
 NumeralTickFormatter(format="0")
 ```
 
-# What This Does
+## What This Does
 
 Converts:
 
@@ -3733,14 +3733,14 @@ into:
 
 rounded to integer precision.
 
-# Why `format="0"`?
+## Why `format="0"`?
 
 Meaning:
 
 - no decimal places
     
 
-# Formatting Examples
+## Formatting Examples
 
 |Format|Output|
 |---|---|
@@ -3749,7 +3749,7 @@ Meaning:
 |`"0,0"`|14,000,000|
 |`"0.0a"`|14.0m|
 
-# Important Observation
+## Important Observation
 
 The instructor actually chooses a suboptimal formatter.
 
@@ -3778,7 +3778,7 @@ This is an important real-world dashboard principle:
 - humans scan abbreviations faster
     
 
-# Full Example
+## Full Example
 
 ```python
 from bokeh.plotting import figure, show
@@ -3824,10 +3824,10 @@ plot.vbar(
     legend_label="Passengers"
 )
 
-# Rotate labels
+## Rotate labels
 plot.xaxis.major_label_orientation = 0.8
 
-# Better number formatting
+## Better number formatting
 plot.yaxis.formatter = NumeralTickFormatter(
     format="0.0a"
 )
@@ -3835,7 +3835,7 @@ plot.yaxis.formatter = NumeralTickFormatter(
 show(plot)
 ```
 
-# Why Formatting Matters So Much
+## Why Formatting Matters So Much
 
 Visualization is not:
 
@@ -3857,7 +3857,7 @@ But quickly understand:
 14.3M
 ```
 
-# Important UX Principle
+## Important UX Principle
 
 Every additional mental decoding step:
 
@@ -3868,7 +3868,7 @@ Every additional mental decoding step:
 - increases misunderstanding
     
 
-# The Instructor Demonstrates Iteration
+## The Instructor Demonstrates Iteration
 
 They experiment:
 
@@ -3899,7 +3899,7 @@ You adjust based on:
 - density
     
 
-# Visualization Tradeoff
+## Visualization Tradeoff
 
 |Rotation|Advantage|Disadvantage|
 |---|---|---|
@@ -3907,7 +3907,7 @@ You adjust based on:
 |Diagonal|balanced|moderate readability|
 |Vertical|space efficient|slowest reading|
 
-# Important Bokeh Hierarchy
+## Important Bokeh Hierarchy
 
 The instructor again reinforces the object hierarchy:
 
@@ -3917,7 +3917,7 @@ plot.xaxis.major_label_orientation
 
 This pattern appears everywhere in Bokeh.
 
-# Hierarchical Structure
+## Hierarchical Structure
 
 ```mermaid
 flowchart TD
@@ -3932,7 +3932,7 @@ flowchart TD
     C --> F[Formatter]
 ```
 
-# Deep Visualization Insight
+## Deep Visualization Insight
 
 This section quietly introduces something important:
 
@@ -3954,7 +3954,7 @@ not:
 - wrong chart type
     
 
-# Professional Dashboard Design Principle
+## Professional Dashboard Design Principle
 
 Good dashboards optimize:
 
@@ -3972,9 +3972,9 @@ not:
 - decorative styling
     
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
-# Mistake 1: Excessive Rotation
+## Mistake 1: Excessive Rotation
 
 People often use:
 
@@ -3988,7 +3988,7 @@ for everything.
 
 Usually diagonal is better.
 
-# Mistake 2: Huge Raw Numbers
+## Mistake 2: Huge Raw Numbers
 
 Showing:
 
@@ -4005,7 +4005,7 @@ instead of:
 
 creates cognitive overload.
 
-# Mistake 3: Too Many Categories
+## Mistake 3: Too Many Categories
 
 Even rotated labels fail if:
 
@@ -4022,7 +4022,7 @@ At that point:
     becomes necessary.
     
 
-# Important Real-World Insight
+## Important Real-World Insight
 
 When labels become unreadable, the problem may not be:
 
@@ -4036,7 +4036,7 @@ It may be:
 
 No amount of formatting fixes fundamentally overloaded charts.
 
-# Most Important Takeaway
+## Most Important Takeaway
 
 This section teaches:
 
@@ -4059,7 +4059,7 @@ At first glance this seems cosmetic, but in professional visualization systems, 
 
 A bad title can make a correct graph misleading or useless.
 
-# Core Idea
+## Core Idea
 
 Bokeh titles are editable objects.
 
@@ -4074,7 +4074,7 @@ You can:
 - style them dynamically
     
 
-# Initial Figure
+## Initial Figure
 
 ```python
 plot = figure(
@@ -4096,7 +4096,7 @@ Simple line graph with:
 - line plot
     
 
-# Important Architectural Point
+## Important Architectural Point
 
 When you define:
 
@@ -4111,7 +4111,7 @@ Bokeh internally creates:
 
 not just plain text.
 
-# Internal Structure
+## Internal Structure
 
 ```mermaid
 flowchart TD
@@ -4123,9 +4123,9 @@ flowchart TD
 
 This matters because the title becomes editable later.
 
-# Two Ways to Define Titles
+## Two Ways to Define Titles
 
-# Method 1: Inside `figure()`
+## Method 1: Inside `figure()`
 
 ```python
 plot = figure(
@@ -4133,7 +4133,7 @@ plot = figure(
 )
 ```
 
-# Method 2: Modify After Creation
+## Method 2: Modify After Creation
 
 ```python
 plot.title.text = "Updated Sales Dashboard"
@@ -4141,7 +4141,7 @@ plot.title.text = "Updated Sales Dashboard"
 
 This is the main concept being taught.
 
-# Important Principle
+## Important Principle
 
 Bokeh favors:
 
@@ -4151,17 +4151,17 @@ not:
 
 > one-time static rendering
 
-# Title Positioning
+## Title Positioning
 
 The instructor changes title location.
 
-# Left Alignment
+## Left Alignment
 
 ```python
 plot.title.align = "left"
 ```
 
-# Available Alignments
+## Available Alignments
 
 |Value|Effect|
 |---|---|
@@ -4169,7 +4169,7 @@ plot.title.align = "left"
 |`"center"`|centered|
 |`"right"`|right aligned|
 
-# Visual Comparison
+## Visual Comparison
 
 ## Center
 
@@ -4189,11 +4189,11 @@ Sales Dashboard
                     Sales Dashboard
 ```
 
-# Important Visualization Insight
+## Important Visualization Insight
 
 Title alignment changes visual emphasis.
 
-# Typical Usage
+## Typical Usage
 
 |Alignment|Common Usage|
 |---|---|
@@ -4208,7 +4208,7 @@ Modern dashboards often prefer:
 
 because reading naturally begins from left-to-right.
 
-# Instructor Confusion: `top` vs `above`
+## Instructor Confusion: `top` vs `above`
 
 This is actually important.
 
@@ -4216,7 +4216,7 @@ They mention:
 
 > "do not use top, use above"
 
-# Why?
+## Why?
 
 Bokeh layout system uses positional keywords.
 
@@ -4245,13 +4245,13 @@ because internally Bokeh layout regions are:
 
 This comes from web-layout architecture.
 
-# Updating Title Text
+## Updating Title Text
 
 ```python
 plot.title.text = "Updated Plot Title"
 ```
 
-# Important Insight
+## Important Insight
 
 This demonstrates:
 
@@ -4261,7 +4261,7 @@ This demonstrates:
 The title object already exists.  
 You are editing its property.
 
-# Object Mutation Flow
+## Object Mutation Flow
 
 ```mermaid
 flowchart LR
@@ -4272,7 +4272,7 @@ flowchart LR
 
 Changing `.text` updates rendering.
 
-# Full Example
+## Full Example
 
 ```python
 from bokeh.plotting import figure, show
@@ -4291,16 +4291,16 @@ plot.line(
     line_width=2
 )
 
-# Modify title
+## Modify title
 plot.title.text = "Updated Plot Title"
 
-# Align left
+## Align left
 plot.title.align = "left"
 
 show(plot)
 ```
 
-# Important Distinction
+## Important Distinction
 
 The instructor says:
 
@@ -4315,14 +4315,14 @@ But technically:
 
 These are different concepts.
 
-# Title Alignment vs Position
+## Title Alignment vs Position
 
 |Concept|Example|
 |---|---|
 |alignment|left/center/right|
 |position|above/below/left/right|
 
-# Example of Position Change
+## Example of Position Change
 
 ```python
 plot.add_layout(plot.title, "below")
@@ -4332,7 +4332,7 @@ Places title under plot.
 
 Rarely used, but possible.
 
-# Title Styling
+## Title Styling
 
 Although not fully covered yet, titles also support:
 
@@ -4342,7 +4342,7 @@ plot.title.text_font_size = "18pt"
 plot.title.text_font_style = "bold"
 ```
 
-# Why Titles Matter So Much
+## Why Titles Matter So Much
 
 Most viewers:
 
@@ -4357,7 +4357,7 @@ Meaning:
 
 > the title frames interpretation
 
-# Example
+## Example
 
 Same chart:
 
@@ -4376,7 +4376,7 @@ Revenue Growth Slowing Since Q3
 Same data.  
 Different narrative.
 
-# Deep Visualization Insight
+## Deep Visualization Insight
 
 Titles are not neutral metadata.
 
@@ -4393,7 +4393,7 @@ This is why:
 
 often manipulate titles strategically.
 
-# Good Visualization Title Principles
+## Good Visualization Title Principles
 
 Good titles should:
 
@@ -4413,19 +4413,19 @@ Bad titles:
 - decorative
     
 
-# Weak
+## Weak
 
 ```text
 Sales Data
 ```
 
-# Better
+## Better
 
 ```text
 Monthly Sales Revenue by Region (2025)
 ```
 
-# Dashboard Design Insight
+## Dashboard Design Insight
 
 Professional dashboards often separate:
 
@@ -4438,9 +4438,9 @@ Professional dashboards often separate:
 
 because one title cannot carry all context cleanly.
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
-# Mistake 1: Decorative Titles
+## Mistake 1: Decorative Titles
 
 ```text
 Amazing Analytics Dashboard!!!
@@ -4448,11 +4448,11 @@ Amazing Analytics Dashboard!!!
 
 adds noise.
 
-# Mistake 2: Centering Everything
+## Mistake 2: Centering Everything
 
 Centered titles are common by default but often weaken scan flow in dashboards.
 
-# Mistake 3: Overly Large Titles
+## Mistake 3: Overly Large Titles
 
 Huge titles:
 
@@ -4461,7 +4461,7 @@ Huge titles:
 - reduce data focus
     
 
-# Mistake 4: Ambiguous Titles
+## Mistake 4: Ambiguous Titles
 
 ```text
 Performance
@@ -4469,7 +4469,7 @@ Performance
 
 Performance of what?
 
-# Most Important Takeaway
+## Most Important Takeaway
 
 This section reinforces the core Bokeh philosophy again:
 
@@ -4479,7 +4479,7 @@ plot.component.property = value
 
 Titles are just another editable object in the visualization hierarchy.
 
-# Final Mental Model
+## Final Mental Model
 
 ```mermaid
 flowchart TD
@@ -4511,7 +4511,7 @@ Both are part of what could be called:
 
 These elements do not contain the data itself, but they determine how humans interpret the data.
 
-# Part 1: Advanced Title Customization
+## Part 1: Advanced Title Customization
 
 The instructor now modifies:
 
@@ -4524,7 +4524,7 @@ The instructor now modifies:
 - text color
     
 
-# Title Font Size
+## Title Font Size
 
 Example:
 
@@ -4532,7 +4532,7 @@ Example:
 title_plot.title.text_font_size = "25pt"
 ```
 
-# Important Clarification
+## Important Clarification
 
 The transcript says:
 
@@ -4561,7 +4561,7 @@ or:
 "1.5em"
 ```
 
-# Alignment
+## Alignment
 
 ```python
 title_plot.title.align = "right"
@@ -4569,7 +4569,7 @@ title_plot.title.align = "right"
 
 Now the title moves to the right side.
 
-# Background Color
+## Background Color
 
 ```python
 title_plot.title.background_fill_color = "darkgrey"
@@ -4577,7 +4577,7 @@ title_plot.title.background_fill_color = "darkgrey"
 
 This creates a background panel behind the title.
 
-# Text Color
+## Text Color
 
 ```python
 title_plot.title.text_color = "white"
@@ -4590,7 +4590,7 @@ Now:
 - white text
     
 
-# Visual Interpretation
+## Visual Interpretation
 
 Before:
 
@@ -4607,7 +4607,7 @@ Right aligned
 Large font
 ```
 
-# Important UI Insight
+## Important UI Insight
 
 At this point the title becomes:
 
@@ -4619,7 +4619,7 @@ At this point the title becomes:
 
 This is dashboard-style presentation logic.
 
-# Full Example
+## Full Example
 
 ```python
 from bokeh.plotting import figure, show
@@ -4634,7 +4634,7 @@ title_plot = figure(
 
 title_plot.line(x, y, line_width=2)
 
-# Title customization
+## Title customization
 title_plot.title.text = "Updated Plot Title"
 
 title_plot.title.text_font_size = "25pt"
@@ -4648,7 +4648,7 @@ title_plot.title.text_color = "white"
 show(title_plot)
 ```
 
-# Important Design Insight
+## Important Design Insight
 
 The instructor demonstrates:
 
@@ -4660,7 +4660,7 @@ Large title + dark background:
 - increases attention weight
     
 
-# Visualization Attention Flow
+## Visualization Attention Flow
 
 ```mermaid
 flowchart TD
@@ -4669,7 +4669,7 @@ flowchart TD
     B --> C[Data Interpretation]
 ```
 
-# Why This Matters
+## Why This Matters
 
 Humans scan dashboards hierarchically.
 
@@ -4684,16 +4684,16 @@ Usually:
 4. data patterns
     
 
-# Deep Visualization Principle
+## Deep Visualization Principle
 
 Metadata elements are not secondary.  
 They frame interpretation.
 
-# Part 2: Legends
+## Part 2: Legends
 
 Now the instructor moves to legends.
 
-# What Is a Legend?
+## What Is a Legend?
 
 A legend maps:
 
@@ -4715,9 +4715,9 @@ Without legends:
 - multi-series charts become ambiguous
     
 
-# Creating Multiple Glyphs
+## Creating Multiple Glyphs
 
-# Line Glyph
+## Line Glyph
 
 ```python
 legend_plot.line(
@@ -4731,7 +4731,7 @@ legend_plot.line(
 )
 ```
 
-# Scatter Glyph
+## Scatter Glyph
 
 ```python
 legend_plot.scatter(
@@ -4742,7 +4742,7 @@ legend_plot.scatter(
 )
 ```
 
-# Important Mechanism
+## Important Mechanism
 
 The legend is automatically created because:
 
@@ -4752,7 +4752,7 @@ legend_label=
 
 was provided.
 
-# Internal Architecture
+## Internal Architecture
 
 ```mermaid
 flowchart TD
@@ -4761,12 +4761,12 @@ flowchart TD
     B --> C[Legend Object]
 ```
 
-# Important Insight
+## Important Insight
 
 Legends are not manually drawn.  
 They are generated from glyph metadata.
 
-# Result
+## Result
 
 You now have:
 
@@ -4775,7 +4775,7 @@ You now have:
 - circles labeled Objects
     
 
-# Visualization Structure
+## Visualization Structure
 
 ```mermaid
 flowchart TD
@@ -4788,7 +4788,7 @@ flowchart TD
     C --> E[Objects Legend Entry]
 ```
 
-# Important Clarification
+## Important Clarification
 
 The instructor says:
 
@@ -4801,7 +4801,7 @@ Meaning:
 
 But semantically the legend determines interpretation.
 
-# Why Legends Matter
+## Why Legends Matter
 
 Legends are essential when:
 
@@ -4812,7 +4812,7 @@ Legends are essential when:
 - shapes encode meaning
     
 
-# But Legends Also Fail Frequently
+## But Legends Also Fail Frequently
 
 Common problems:
 
@@ -4825,7 +4825,7 @@ Common problems:
 - color confusion
     
 
-# Typical Legend Customizations
+## Typical Legend Customizations
 
 Bokeh allows:
 
@@ -4837,13 +4837,13 @@ Bokeh allows:
 |background_fill_color|styling|
 |border_line_color|outline|
 
-# Example
+## Example
 
 ```python
 plot.legend.location = "top_left"
 ```
 
-# Possible Locations
+## Possible Locations
 
 |Value|Position|
 |---|---|
@@ -4852,7 +4852,7 @@ plot.legend.location = "top_left"
 |`"bottom_left"`|lower left|
 |`"center"`|center|
 
-# Important Dashboard Principle
+## Important Dashboard Principle
 
 Legend placement should:
 
@@ -4863,7 +4863,7 @@ Legend placement should:
 - preserve scan flow
     
 
-# Common Bad Practice
+## Common Bad Practice
 
 ```text
 legend overlaps important trend lines
@@ -4871,7 +4871,7 @@ legend overlaps important trend lines
 
 Very common in beginner plots.
 
-# Better Practice
+## Better Practice
 
 Move legends:
 
@@ -4882,7 +4882,7 @@ Move legends:
 - unused whitespace
     
 
-# Full Example
+## Full Example
 
 ```python
 from bokeh.plotting import figure, show
@@ -4897,7 +4897,7 @@ legend_plot = figure(
     height=400
 )
 
-# Line plot
+## Line plot
 legend_plot.line(
     x,
     y1,
@@ -4908,7 +4908,7 @@ legend_plot.line(
     line_width=2
 )
 
-# Scatter plot
+## Scatter plot
 legend_plot.scatter(
     x,
     y2,
@@ -4919,14 +4919,14 @@ legend_plot.scatter(
     color="red"
 )
 
-# Legend customization
+## Legend customization
 legend_plot.legend.location = "top_left"
 legend_plot.legend.title = "Measurements"
 
 show(legend_plot)
 ```
 
-# Deep Insight
+## Deep Insight
 
 Legends are a workaround.
 
@@ -4945,7 +4945,7 @@ Because legends force:
 
 This increases cognitive load.
 
-# Example
+## Example
 
 Instead of:
 
@@ -4961,13 +4961,13 @@ label directly beside blue line
 
 Modern visualization systems increasingly prefer direct annotation.
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
-# Mistake 1: Redundant Legends
+## Mistake 1: Redundant Legends
 
 Single-series charts often do not need legends.
 
-# Mistake 2: Generic Labels
+## Mistake 2: Generic Labels
 
 ```text
 Series 1
@@ -4976,7 +4976,7 @@ Series 2
 
 Meaningless.
 
-# Mistake 3: Huge Legends
+## Mistake 3: Huge Legends
 
 Too many categories:
 
@@ -4985,11 +4985,11 @@ Too many categories:
 - overwhelm charts
     
 
-# Mistake 4: Legends Over Data
+## Mistake 4: Legends Over Data
 
 Especially in dense scatter plots.
 
-# Most Important Takeaway
+## Most Important Takeaway
 
 This section reinforces that Bokeh is an object hierarchy:
 
@@ -5019,7 +5019,7 @@ The deeper theme is:
 
 > turning default charts into intentionally designed visual systems
 
-# Part 1: Legend Customization
+## Part 1: Legend Customization
 
 Initially the legend looked like:
 
@@ -5045,7 +5045,7 @@ Now the instructor customizes:
 - background
     
 
-# Legend Location
+## Legend Location
 
 ```python
 legend_plot.legend.location = "top_left"
@@ -5059,7 +5059,7 @@ Moves legend from:
 - top left
     
 
-# Why Placement Matters
+## Why Placement Matters
 
 Legend placement affects:
 
@@ -5070,7 +5070,7 @@ Legend placement affects:
 - scan flow
     
 
-# Common Positions
+## Common Positions
 
 |Location|Usage|
 |---|---|
@@ -5079,7 +5079,7 @@ Legend placement affects:
 |bottom_left|sparse plots|
 |center|rarely ideal|
 
-# Important Visualization Principle
+## Important Visualization Principle
 
 A legend should:
 
@@ -5090,7 +5090,7 @@ A legend should:
 - fit natural reading flow
     
 
-# Legend Title
+## Legend Title
 
 ```python
 legend_plot.legend.title = "Observations"
@@ -5098,7 +5098,7 @@ legend_plot.legend.title = "Observations"
 
 Now legend box has a heading.
 
-# Visual Interpretation
+## Visual Interpretation
 
 Before:
 
@@ -5116,7 +5116,7 @@ Temperature
 Objects
 ```
 
-# Why Titles Matter
+## Why Titles Matter
 
 Without titles:
 
@@ -5134,7 +5134,7 @@ Especially important in:
 - scientific figures
     
 
-# Legend Label Text Color
+## Legend Label Text Color
 
 ```python
 legend_plot.legend.label_text_color = "navy"
@@ -5142,7 +5142,7 @@ legend_plot.legend.label_text_color = "navy"
 
 Changes label text color.
 
-# Font Customization
+## Font Customization
 
 ```python
 legend_plot.legend.label_text_font = "Times New Roman"
@@ -5150,7 +5150,7 @@ legend_plot.legend.label_text_font = "Times New Roman"
 legend_plot.legend.label_text_font_style = "italic"
 ```
 
-# Important Design Insight
+## Important Design Insight
 
 Typography strongly affects perception.
 
@@ -5160,7 +5160,7 @@ Typography strongly affects perception.
 |sans-serif|modern/dashboard|
 |italic|emphasis/decorative|
 
-# Professional Dashboard Reality
+## Professional Dashboard Reality
 
 Most modern dashboards avoid:
 
@@ -5182,7 +5182,7 @@ But for:
 
 they may work.
 
-# Legend Border Styling
+## Legend Border Styling
 
 ```python
 legend_plot.legend.border_line_width = 3
@@ -5192,7 +5192,7 @@ legend_plot.legend.border_line_color = "navy"
 
 Creates thick navy border.
 
-# Border Transparency
+## Border Transparency
 
 ```python
 legend_plot.legend.border_line_alpha = 0.8
@@ -5200,7 +5200,7 @@ legend_plot.legend.border_line_alpha = 0.8
 
 80% visible border.
 
-# Legend Background Fill
+## Legend Background Fill
 
 ```python
 legend_plot.legend.background_fill_color = "navy"
@@ -5210,7 +5210,7 @@ legend_plot.legend.background_fill_alpha = 0.2
 
 Creates lightly transparent navy background.
 
-# Visual Result
+## Visual Result
 
 You now have:
 
@@ -5231,7 +5231,7 @@ This is now closer to:
 - default plotting
     
 
-# Full Example
+## Full Example
 
 ```python
 from bokeh.plotting import figure, show
@@ -5246,7 +5246,7 @@ legend_plot = figure(
     height=400
 )
 
-# Line
+## Line
 legend_plot.line(
     x,
     y1,
@@ -5257,7 +5257,7 @@ legend_plot.line(
     line_width=2
 )
 
-# Scatter
+## Scatter
 legend_plot.scatter(
     x,
     y2,
@@ -5268,7 +5268,7 @@ legend_plot.scatter(
     color="red"
 )
 
-# Legend customization
+## Legend customization
 legend_plot.legend.location = "top_left"
 
 legend_plot.legend.title = "Observations"
@@ -5292,7 +5292,7 @@ legend_plot.legend.background_fill_alpha = 0.2
 show(legend_plot)
 ```
 
-# Important Architectural Pattern
+## Important Architectural Pattern
 
 Again the instructor reinforces:
 
@@ -5302,7 +5302,7 @@ plot.legend.property = value
 
 This is the consistent Bokeh object model.
 
-# Internal Structure
+## Internal Structure
 
 ```mermaid
 flowchart TD
@@ -5316,7 +5316,7 @@ flowchart TD
     B --> F[Title]
 ```
 
-# Deep Insight
+## Deep Insight
 
 Legends are UI panels.
 
@@ -5331,7 +5331,7 @@ This becomes more obvious in:
 - filtering systems
     
 
-# Part 2: Color Palettes
+## Part 2: Color Palettes
 
 Now the instructor moves into:
 
@@ -5339,7 +5339,7 @@ Now the instructor moves into:
 
 This is extremely important in professional visualization.
 
-# Why Palettes Matter
+## Why Palettes Matter
 
 Manual colors fail at scale.
 
@@ -5365,13 +5365,13 @@ Fails for:
 - continuous distributions
     
 
-# What Is a Palette?
+## What Is a Palette?
 
 A palette is:
 
 > a predefined collection of coordinated colors
 
-# Bokeh Palettes
+## Bokeh Palettes
 
 Imported from:
 
@@ -5379,7 +5379,7 @@ Imported from:
 from bokeh.palettes import Cividis
 ```
 
-# Instructor Says "CIDES"
+## Instructor Says "CIDES"
 
 They mean:
 
@@ -5387,7 +5387,7 @@ They mean:
 
 which is a real palette.
 
-# What Is Cividis?
+## What Is Cividis?
 
 A perceptually uniform palette designed for:
 
@@ -5398,7 +5398,7 @@ A perceptually uniform palette designed for:
 - colorblind safety
     
 
-# Why Perceptual Uniformity Matters
+## Why Perceptual Uniformity Matters
 
 Bad palettes distort interpretation.
 
@@ -5414,7 +5414,7 @@ Perceptually uniform palettes preserve:
 - quantitative continuity
     
 
-# Palette Example
+## Palette Example
 
 ```python
 from bokeh.palettes import Cividis
@@ -5428,7 +5428,7 @@ Returns 10 hex colors:
 ['#00204C', '#123570', ...]
 ```
 
-# Hexadecimal Colors
+## Hexadecimal Colors
 
 Each color:
 
@@ -5453,7 +5453,7 @@ means:
 - blue = 0
     
 
-# Why Palettes Matter in Real Systems
+## Why Palettes Matter in Real Systems
 
 Useful for:
 
@@ -5468,7 +5468,7 @@ Useful for:
 - continuous intensity mapping
     
 
-# Example Usage
+## Example Usage
 
 ```python
 from bokeh.palettes import Cividis
@@ -5485,7 +5485,7 @@ colors[1]
 
 provide coordinated colors.
 
-# Example Plot
+## Example Plot
 
 ```python
 from bokeh.plotting import figure, show
@@ -5508,7 +5508,7 @@ plot.vbar(
 show(plot)
 ```
 
-# Why Predefined Palettes Are Better
+## Why Predefined Palettes Are Better
 
 Hand-picked colors often:
 
@@ -5528,14 +5528,14 @@ Good palettes are:
 - tested
     
 
-# Important Visualization Principle
+## Important Visualization Principle
 
 Color should encode information,  
 not decoration.
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
-# Mistake 1: Random Colors
+## Mistake 1: Random Colors
 
 ```python
 ["red", "green", "purple", "yellow"]
@@ -5543,7 +5543,7 @@ not decoration.
 
 Often visually chaotic.
 
-# Mistake 2: Rainbow Palettes
+## Mistake 2: Rainbow Palettes
 
 Rainbow maps:
 
@@ -5554,7 +5554,7 @@ Rainbow maps:
 
 Widely criticized in scientific visualization.
 
-# Mistake 3: Excessive Transparency
+## Mistake 3: Excessive Transparency
 
 Heavy alpha blending:
 
@@ -5563,7 +5563,7 @@ Heavy alpha blending:
 - reduces contrast
     
 
-# Deep Insight
+## Deep Insight
 
 The instructor is now transitioning from:
 
@@ -5613,7 +5613,7 @@ into:
 - data-driven color encoding
     
 
-# Core Idea
+## Core Idea
 
 Instead of manually assigning colors:
 
@@ -5625,7 +5625,7 @@ you let:
 
 > the data determine the color
 
-# Color Mapping
+## Color Mapping
 
 ```mermaid
 flowchart LR
@@ -5634,7 +5634,7 @@ flowchart LR
     --> C[Visual Color]
 ```
 
-# Types of Color Mapping
+## Types of Color Mapping
 
 The instructor mentions:
 
@@ -5643,7 +5643,7 @@ The instructor mentions:
 |linear|uniform progression|
 |logarithmic|compressed/exponential progression|
 
-# Linear Color Mapping
+## Linear Color Mapping
 
 Equal numeric change:
 
@@ -5660,7 +5660,7 @@ Example:
 
 Gradient changes uniformly.
 
-# Logarithmic Color Mapping
+## Logarithmic Color Mapping
 
 Used when data spans huge ranges.
 
@@ -5676,7 +5676,7 @@ Why?
 
 Because logarithmic scaling compresses magnitude differences.
 
-# Important Real-World Insight
+## Important Real-World Insight
 
 Linear scales fail badly when:
 
@@ -5696,7 +5696,7 @@ This is common in:
 - scientific measurements
     
 
-# Example Dataset
+## Example Dataset
 
 The instructor defines:
 
@@ -5707,13 +5707,13 @@ y = x^2
 
 This creates a parabola.
 
-# Mathematical Interpretation
+## Mathematical Interpretation
 
 The parabola equation is:
 
 genui{"math_block_widget_always_prefetch_v2":{"content":"y=x^2"}}
 
-# Shape Intuition
+## Shape Intuition
 
 ```text
           *
@@ -5732,7 +5732,7 @@ Highest values:
 - at extremes
     
 
-# Why This Is a Good Demo
+## Why This Is a Good Demo
 
 Because:
 
@@ -5741,7 +5741,7 @@ Because:
 - easy to visualize gradients
     
 
-# Importing `linear_cmap`
+## Importing `linear_cmap`
 
 ```python
 from bokeh.transform import linear_cmap
@@ -5749,7 +5749,7 @@ from bokeh.transform import linear_cmap
 
 This is the transformation function.
 
-# Important Concept
+## Important Concept
 
 `linear_cmap()` does not directly create colors.
 
@@ -5757,7 +5757,7 @@ It creates:
 
 > a mapping rule
 
-# Syntax
+## Syntax
 
 ```python
 linear_cmap(
@@ -5768,7 +5768,7 @@ linear_cmap(
 )
 ```
 
-# Meaning
+## Meaning
 
 |Parameter|Purpose|
 |---|---|
@@ -5777,7 +5777,7 @@ linear_cmap(
 |low|minimum value|
 |high|maximum value|
 
-# Scatter Plot with Color Mapping
+## Scatter Plot with Color Mapping
 
 ```python
 mapper_plot.scatter(
@@ -5795,7 +5795,7 @@ mapper_plot.scatter(
 )
 ```
 
-# Important Clarification
+## Important Clarification
 
 The transcript simplifies slightly.
 
@@ -5808,7 +5808,7 @@ not raw arrays directly.
 
 But conceptually the instructor explanation is correct.
 
-# What Happens Visually
+## What Happens Visually
 
 Low y-values:
 
@@ -5825,7 +5825,7 @@ Intermediate values:
 - gradient transition
     
 
-# Visual Mapping
+## Visual Mapping
 
 ```text
 Low Values  -> Dark Blue
@@ -5833,7 +5833,7 @@ Medium      -> Green
 High Values -> Yellow/Red
 ```
 
-# Turbo256 Palette
+## Turbo256 Palette
 
 The instructor uses:
 
@@ -5841,7 +5841,7 @@ The instructor uses:
 Turbo256
 ```
 
-# What Is Turbo256?
+## What Is Turbo256?
 
 A high-resolution palette with:
 
@@ -5853,7 +5853,7 @@ Designed for:
 - smooth continuous transitions
     
 
-# Why 256?
+## Why 256?
 
 More colors:
 
@@ -5862,7 +5862,7 @@ More colors:
 - fewer visible transitions
     
 
-# Palette Comparison
+## Palette Comparison
 
 |Palette|Use Case|
 |---|---|
@@ -5871,7 +5871,7 @@ More colors:
 |Turbo256|vivid gradients|
 |Inferno|high contrast|
 
-# Important Scientific Visualization Insight
+## Important Scientific Visualization Insight
 
 Color palettes are not interchangeable.
 
@@ -5886,7 +5886,7 @@ Different palettes optimize for:
 - print compatibility
     
 
-# The Result
+## The Result
 
 The parabola becomes:
 
@@ -5896,7 +5896,7 @@ The parabola becomes:
 - color-encoded by magnitude
     
 
-# Meaning
+## Meaning
 
 Now the viewer sees:
 
@@ -5906,7 +5906,7 @@ Now the viewer sees:
 - value intensity simultaneously
     
 
-# Deep Insight
+## Deep Insight
 
 This is multidimensional encoding.
 
@@ -5917,7 +5917,7 @@ This is multidimensional encoding.
 
 Visualization becomes more information-dense.
 
-# The Color Bar
+## The Color Bar
 
 Now the instructor addresses a critical problem:
 
@@ -5928,17 +5928,17 @@ Without explanation:
 - color gradients are ambiguous
     
 
-# Solution: Color Bar
+## Solution: Color Bar
 
 ```python
 color_bar
 ```
 
-# What Is a Color Bar?
+## What Is a Color Bar?
 
 A legend for continuous colors.
 
-# Visual Structure
+## Visual Structure
 
 ```text
 Blue    -> low values
@@ -5946,14 +5946,14 @@ Green   -> medium
 Yellow  -> high values
 ```
 
-# Why It's Essential
+## Why It's Essential
 
 Without a color bar:
 
 - viewers cannot decode the mapping
     
 
-# Adding Color Bar
+## Adding Color Bar
 
 The instructor mentions:
 
@@ -5961,7 +5961,7 @@ The instructor mentions:
 mapper_plot.add_layout(color_bar, "right")
 ```
 
-# Important Layout Concept
+## Important Layout Concept
 
 `add_layout()` inserts UI components into figure regions.
 
@@ -5976,7 +5976,7 @@ Regions:
 - below
     
 
-# Internal Architecture
+## Internal Architecture
 
 ```mermaid
 flowchart TD
@@ -5989,7 +5989,7 @@ flowchart TD
     C --> E[Numeric Labels]
 ```
 
-# Placement
+## Placement
 
 ```python
 "right"
@@ -6003,7 +6003,7 @@ Could also use:
 "left"
 ```
 
-# Full Example
+## Full Example
 
 ```python
 from bokeh.plotting import figure, show
@@ -6040,7 +6040,7 @@ scatter = mapper_plot.scatter(
     size=10
 )
 
-# Color bar
+## Color bar
 color_bar = ColorBar(
     color_mapper=mapper['transform']
 )
@@ -6053,7 +6053,7 @@ mapper_plot.add_layout(
 show(mapper_plot)
 ```
 
-# Deep Visualization Insight
+## Deep Visualization Insight
 
 At this point, visualization is no longer:
 
@@ -6077,7 +6077,7 @@ Channels include:
 - shape
     
 
-# Why Color Mapping Is Powerful
+## Why Color Mapping Is Powerful
 
 Especially useful when:
 
@@ -6088,7 +6088,7 @@ Especially useful when:
 - distributions matter more than exact values
     
 
-# Common Use Cases
+## Common Use Cases
 
 |Application|Use|
 |---|---|
@@ -6098,11 +6098,11 @@ Especially useful when:
 |Geographic maps|population density|
 |Scientific imaging|measurement gradients|
 
-# Important Warning
+## Important Warning
 
 Color maps can easily mislead.
 
-# Example Failure
+## Example Failure
 
 Rainbow palettes:
 
@@ -6113,7 +6113,7 @@ Rainbow palettes:
 
 Widely criticized in scientific visualization.
 
-# Better Practice
+## Better Practice
 
 Use:
 
@@ -6124,27 +6124,27 @@ Use:
 - restrained color encoding
     
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
-# Mistake 1: Using Color Without Meaning
+## Mistake 1: Using Color Without Meaning
 
 Decorative gradients add confusion.
 
-# Mistake 2: Missing Color Bar
+## Mistake 2: Missing Color Bar
 
 Without scale reference:
 
 - color encoding becomes meaningless
     
 
-# Mistake 3: Wrong Scaling
+## Mistake 3: Wrong Scaling
 
 Linear scales on highly skewed data:
 
 - hide important structure
     
 
-# Most Important Takeaway
+## Most Important Takeaway
 
 This section introduces the real foundation of advanced visualization:
 
@@ -6173,11 +6173,11 @@ This is the transition from:
 - system-wide visual consistency
     
 
-# Part 1: Color Bars
+## Part 1: Color Bars
 
 The instructor finishes the discussion about color mapping.
 
-# Core Problem
+## Core Problem
 
 When values are mapped to colors:
 
@@ -6198,13 +6198,13 @@ Without explanation:
 - but semantically incomplete
     
 
-# Solution: Color Bar
+## Solution: Color Bar
 
 A color bar acts like:
 
 > a continuous legend
 
-# Difference Between Legend and Color Bar
+## Difference Between Legend and Color Bar
 
 | Feature | Legend | Color Bar |  
 |---|---|  
@@ -6218,7 +6218,7 @@ Color bars are specifically for:
 - continuous numerical encoding
     
 
-# Adding the Color Bar
+## Adding the Color Bar
 
 Instructor mentions:
 
@@ -6226,7 +6226,7 @@ Instructor mentions:
 mapper_plot.add_layout(color_bar, "right")
 ```
 
-# Important Layout Concept
+## Important Layout Concept
 
 Bokeh treats:
 
@@ -6241,7 +6241,7 @@ Bokeh treats:
 
 as layout components.
 
-# Layout Regions
+## Layout Regions
 
 |Region|Meaning|
 |---|---|
@@ -6250,7 +6250,7 @@ as layout components.
 |`"above"`|top|
 |`"below"`|bottom|
 
-# Example
+## Example
 
 ```python
 mapper_plot.add_layout(color_bar, "left")
@@ -6258,7 +6258,7 @@ mapper_plot.add_layout(color_bar, "left")
 
 Places the scale on the left side.
 
-# Internal Architecture
+## Internal Architecture
 
 ```mermaid
 flowchart TD
@@ -6271,7 +6271,7 @@ flowchart TD
     C --> E[Numeric Scale]
 ```
 
-# Important Visualization Principle
+## Important Visualization Principle
 
 Whenever:
 
@@ -6285,7 +6285,7 @@ you almost always need:
 
 Otherwise users cannot decode the mapping.
 
-# Real-World Example
+## Real-World Example
 
 Without color bar:
 
@@ -6304,7 +6304,7 @@ But:
 
 Unknown.
 
-# Part 2: Themes
+## Part 2: Themes
 
 Now the instructor introduces:
 
@@ -6312,7 +6312,7 @@ Now the instructor introduces:
 
 This is one of the most important concepts for professional dashboards.
 
-# What Is a Theme?
+## What Is a Theme?
 
 A theme is:
 
@@ -6331,7 +6331,7 @@ you apply:
 - one global visual system
     
 
-# Why Themes Matter
+## Why Themes Matter
 
 Without themes:
 
@@ -6348,7 +6348,7 @@ Result:
 - dashboard fragmentation
     
 
-# Themes Solve This
+## Themes Solve This
 
 They enforce:
 
@@ -6363,7 +6363,7 @@ They enforce:
 - defaults
     
 
-# Important Dashboard Principle
+## Important Dashboard Principle
 
 Consistency reduces cognitive friction.
 
@@ -6377,7 +6377,7 @@ not:
 - changing visual styles
     
 
-# `curdoc()`
+## `curdoc()`
 
 Instructor imports:
 
@@ -6385,7 +6385,7 @@ Instructor imports:
 from bokeh.io import curdoc
 ```
 
-# What Is `curdoc()`?
+## What Is `curdoc()`?
 
 It refers to:
 
@@ -6396,7 +6396,7 @@ Think of the document as:
 - the entire notebook/app/dashboard
     
 
-# Internal Mental Model
+## Internal Mental Model
 
 ```mermaid
 flowchart TD
@@ -6407,7 +6407,7 @@ flowchart TD
     A --> D[Widgets]
 ```
 
-# Applying a Theme
+## Applying a Theme
 
 ```python
 curdoc().theme = "caliber"
@@ -6418,7 +6418,7 @@ Now:
 - all subsequent plots inherit that style system
     
 
-# Important Architectural Insight
+## Important Architectural Insight
 
 Themes modify:
 
@@ -6438,7 +6438,7 @@ plot.title.text_color = "red"
 
 still overrides theme defaults.
 
-# Built-In Themes Mentioned
+## Built-In Themes Mentioned
 
 The instructor demonstrates:
 
@@ -6450,7 +6450,7 @@ The instructor demonstrates:
 |light_minimal|minimal light|
 |contrast|high contrast|
 
-# Night Sky
+## Night Sky
 
 Dark dashboard style.
 
@@ -6463,7 +6463,7 @@ Useful for:
 - low-light viewing
     
 
-# Caliber
+## Caliber
 
 Clean white background.
 
@@ -6476,7 +6476,7 @@ Good for:
 - presentations
     
 
-# Dark Minimal
+## Dark Minimal
 
 Minimalist dark UI.
 
@@ -6487,7 +6487,7 @@ Popular in:
 - analytics tools
     
 
-# Light Minimal
+## Light Minimal
 
 Simplified bright theme.
 
@@ -6500,7 +6500,7 @@ Often best for:
 - executive dashboards
     
 
-# Contrast
+## Contrast
 
 Strong visual separation.
 
@@ -6513,13 +6513,13 @@ Useful for:
 - large displays
     
 
-# Example
+## Example
 
 ```python
 from bokeh.io import curdoc
 from bokeh.plotting import figure, show
 
-# Apply theme
+## Apply theme
 curdoc().theme = "dark_minimal"
 
 x = [1,2,3,4]
@@ -6535,7 +6535,7 @@ plot.line(x, y, line_width=2)
 show(plot)
 ```
 
-# Important UI Insight
+## Important UI Insight
 
 Themes are essentially:
 
@@ -6544,7 +6544,7 @@ Themes are essentially:
 
 for Bokeh applications.
 
-# Engineering Parallel
+## Engineering Parallel
 
 |Web Development|Bokeh|
 |---|---|
@@ -6552,7 +6552,7 @@ for Bokeh applications.
 |design system|visualization theme|
 |UI consistency|dashboard consistency|
 
-# Important Professional Insight
+## Important Professional Insight
 
 Large dashboards without themes become impossible to maintain.
 
@@ -6567,7 +6567,7 @@ Because every plot becomes:
 
 Themes centralize visual governance.
 
-# Deeper Insight
+## Deeper Insight
 
 The instructor says:
 
@@ -6582,7 +6582,7 @@ This is actually a major enterprise visualization concern:
 - design governance
     
 
-# Real Enterprise Usage
+## Real Enterprise Usage
 
 Organizations often enforce:
 
@@ -6597,9 +6597,9 @@ Organizations often enforce:
 
 Themes make this scalable.
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
-# Mistake 1: Overusing Dark Themes
+## Mistake 1: Overusing Dark Themes
 
 Dark themes:
 
@@ -6608,11 +6608,11 @@ Dark themes:
 - often reduce readability for dense data
     
 
-# Mistake 2: Mixing Themes
+## Mistake 2: Mixing Themes
 
 Applying manual styling inconsistently defeats the purpose of themes.
 
-# Mistake 3: Decorative Themes
+## Mistake 3: Decorative Themes
 
 Themes should improve:
 
@@ -6624,7 +6624,7 @@ not:
 - aesthetic novelty
     
 
-# Mistake 4: Ignoring Accessibility
+## Mistake 4: Ignoring Accessibility
 
 Some dark themes:
 
@@ -6633,7 +6633,7 @@ Some dark themes:
 - become unreadable on projectors
     
 
-# Deep Visualization Insight
+## Deep Visualization Insight
 
 This final section reveals the full evolution of visualization complexity:
 
@@ -6654,7 +6654,7 @@ At the highest level, visualization systems are:
 
 not merely plotting libraries.
 
-# Final Mental Model of Bokeh
+## Final Mental Model of Bokeh
 
 ```mermaid
 flowchart TD
