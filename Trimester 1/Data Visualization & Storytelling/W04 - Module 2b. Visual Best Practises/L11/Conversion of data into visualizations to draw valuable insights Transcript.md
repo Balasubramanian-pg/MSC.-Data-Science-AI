@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W04 - Module 2b. Visual Best Practises
 ---
 
-# Conversion of Data into Visualizations to Draw Valuable Insights
+## Conversion of Data into Visualizations to Draw Valuable Insights
 
 This section introduces one of the most foundational frameworks in visualization theory:
 
@@ -40,7 +40,7 @@ This is one of the central principles behind modern visualization research, espe
 
 The transcript essentially introduces a hierarchy of perceptual effectiveness.
 
-# The Three Core Tasks of Visualization
+## The Three Core Tasks of Visualization
 
 According to the lecture, a good visualization should enable users to perform three cognitive tasks:
 
@@ -52,7 +52,7 @@ According to the lecture, a good visualization should enable users to perform th
 
 These three tasks define visualization effectiveness.
 
-# Why These Three Tasks Matter
+## Why These Three Tasks Matter
 
 Every chart ultimately exists to help users answer questions like:
 
@@ -73,7 +73,7 @@ Every chart ultimately exists to help users answer questions like:
 
 A visualization fails if users struggle to answer these efficiently.
 
-# The Visualization Goal
+## The Visualization Goal
 
 ```mermaid
 flowchart LR
@@ -87,7 +87,7 @@ flowchart LR
 
 The encoding determines how efficiently perception occurs.
 
-# Core Principle
+## Core Principle
 
 > Different visual encodings have different perceptual strengths.
 
@@ -109,7 +109,7 @@ Others are:
 - difficult to compare
     
 
-# The Hierarchy of Encoding Features
+## The Hierarchy of Encoding Features
 
 The transcript introduces encoding features in decreasing order of perceptual effectiveness.
 
@@ -119,7 +119,7 @@ The hierarchy roughly progresses from:
 least precise → most precise
 ```
 
-# General Encoding Hierarchy
+## General Encoding Hierarchy
 
 |Encoding Type|Effectiveness|
 |---|---|
@@ -131,7 +131,7 @@ least precise → most precise
 
 This hierarchy is extremely important in professional dashboard design.
 
-# Why Position Is Superior
+## Why Position Is Superior
 
 Humans are exceptionally good at comparing aligned positions.
 
@@ -155,7 +155,7 @@ are often more effective than:
 - decorative infographics
     
 
-# Encoding Decision Framework
+## Encoding Decision Framework
 
 ```mermaid
 flowchart TD
@@ -172,15 +172,15 @@ flowchart TD
     D -->|No| F[Use Simpler Encoding]
 ```
 
-# 1. Color Encoding
+## 1. Color Encoding
 
-# The Weakest Encoding
+## The Weakest Encoding
 
 The lecture starts with color because it is perceptually weak for quantitative comparison.
 
 This is a very important and often misunderstood point.
 
-# Why Color Is Weak
+## Why Color Is Weak
 
 Color helps users:
 
@@ -200,7 +200,7 @@ But color performs poorly for:
 - quantitative estimation
     
 
-# What Color Can Do Well
+## What Color Can Do Well
 
 ## Discrimination
 
@@ -215,7 +215,7 @@ Example:
 
 This allows immediate separation.
 
-# What Color Does Poorly
+## What Color Does Poorly
 
 ## Ranking
 
@@ -225,7 +225,7 @@ Users struggle to precisely rank saturation levels.
 
 Users cannot accurately estimate magnitude using color intensity alone.
 
-# Transcript Example
+## Transcript Example
 
 The lecture uses:
 
@@ -239,7 +239,7 @@ Darker color = higher margin.
 
 Lighter color = lower margin.
 
-# What Users Can Understand
+## What Users Can Understand
 
 Users can roughly identify:
 
@@ -250,7 +250,7 @@ Users can roughly identify:
 - general differences
     
 
-# What Users Cannot Easily Understand
+## What Users Cannot Easily Understand
 
 Users struggle to answer:
 
@@ -261,13 +261,13 @@ Users struggle to answer:
 - What is the precise ranking?
     
 
-# Why This Happens
+## Why This Happens
 
 Humans do not perceive color intensity linearly.
 
 Small saturation differences are difficult to compare precisely.
 
-# Cognitive Failure of Color Encoding
+## Cognitive Failure of Color Encoding
 
 ```mermaid
 flowchart TD
@@ -276,13 +276,13 @@ flowchart TD
     --> C[Poor Quantitative Precision]
 ```
 
-# Important Visualization Principle
+## Important Visualization Principle
 
 ```text
 Color is excellent for attention, weak for measurement.
 ```
 
-# When To Use Color
+## When To Use Color
 
 ## Good Uses
 
@@ -306,9 +306,9 @@ Color is excellent for attention, weak for measurement.
 - exact estimation
     
 
-# 2. Volume / Area Encoding
+## 2. Volume / Area Encoding
 
-# Bubble Charts and Circle Size
+## Bubble Charts and Circle Size
 
 The lecture then moves to volume-based encoding.
 
@@ -327,7 +327,7 @@ Here:
 size represents magnitude
 ```
 
-# Why Area Is Better Than Color
+## Why Area Is Better Than Color
 
 Humans compare physical size more effectively than color intensity.
 
@@ -338,13 +338,13 @@ This improves:
 - rough ranking
     
 
-# But Area Still Has Problems
+## But Area Still Has Problems
 
 Humans are poor at estimating area accurately.
 
 Especially with circles.
 
-# Why Bubble Charts Are Difficult
+## Why Bubble Charts Are Difficult
 
 The brain struggles to compare:
 
@@ -357,7 +357,7 @@ The brain struggles to compare:
 
 simultaneously.
 
-# Example Problem
+## Example Problem
 
 Users can tell:
 
@@ -371,7 +371,7 @@ But struggle to determine:
 How much larger?
 ```
 
-# Perceptual Weakness of Area
+## Perceptual Weakness of Area
 
 ```mermaid
 flowchart LR
@@ -380,7 +380,7 @@ flowchart LR
     --> C[Weak Precision]
 ```
 
-# Transcript Insight
+## Transcript Insight
 
 The lecture mentions:
 
@@ -400,13 +400,13 @@ but not:
 - exact difference
     
 
-# Important Principle
+## Important Principle
 
 ```text
 Area supports comparison better than color, but worse than length.
 ```
 
-# When Bubble Charts Work
+## When Bubble Charts Work
 
 ## Good For
 
@@ -426,9 +426,9 @@ Area supports comparison better than color, but worse than length.
 - detailed quantitative decisions
     
 
-# 3. Angle and Slope Encoding
+## 3. Angle and Slope Encoding
 
-# Line Charts
+## Line Charts
 
 The transcript next discusses:
 
@@ -441,7 +441,7 @@ The transcript next discusses:
 
 through line charts.
 
-# Why Line Charts Are Powerful
+## Why Line Charts Are Powerful
 
 Humans are highly sensitive to:
 
@@ -463,7 +463,7 @@ This makes line charts excellent for:
 - rate changes
     
 
-# What Line Charts Communicate Well
+## What Line Charts Communicate Well
 
 ## Trend Direction
 
@@ -480,7 +480,7 @@ This makes line charts excellent for:
 
 Users can compare general positions.
 
-# What They Communicate Poorly
+## What They Communicate Poorly
 
 Exact estimation.
 
@@ -493,7 +493,7 @@ Especially when:
 - differences are subtle
     
 
-# Transcript Example
+## Transcript Example
 
 The lecture discusses constituencies:
 
@@ -515,7 +515,7 @@ Users can immediately see:
 - relative movement
     
 
-# Why Slope Is Powerful
+## Why Slope Is Powerful
 
 The human visual system instinctively detects directional change.
 
@@ -526,7 +526,7 @@ flowchart LR
     --> C[Pattern Recognition]
 ```
 
-# Important Limitation
+## Important Limitation
 
 Line charts often reveal:
 
@@ -540,7 +540,7 @@ better than:
 precise quantitative comparison
 ```
 
-# Key Design Insight
+## Key Design Insight
 
 If the goal is:
 
@@ -554,9 +554,9 @@ If the goal is:
 
 Use bars or aligned positions.
 
-# 4. Length Encoding
+## 4. Length Encoding
 
-# Bar Charts
+## Bar Charts
 
 The lecture now arrives at one of the strongest encodings:
 
@@ -566,7 +566,7 @@ Length
 
 This is why bar charts are so effective.
 
-# Why Humans Compare Length Well
+## Why Humans Compare Length Well
 
 Humans perceive aligned lengths very accurately.
 
@@ -579,7 +579,7 @@ Especially when sharing:
 - consistent orientation
     
 
-# Why Bar Charts Work
+## Why Bar Charts Work
 
 Users can immediately:
 
@@ -592,7 +592,7 @@ Users can immediately:
 
 all three tasks effectively.
 
-# Cognitive Strength of Length
+## Cognitive Strength of Length
 
 ```mermaid
 flowchart TD
@@ -602,7 +602,7 @@ flowchart TD
     --> D[Good Estimation]
 ```
 
-# Transcript Example
+## Transcript Example
 
 The lecture compares constituencies through horizontal bars.
 
@@ -617,7 +617,7 @@ Users instantly see:
 
 This is vastly more efficient than color or area.
 
-# Why Bars Beat Bubbles
+## Why Bars Beat Bubbles
 
 Comparing:
 
@@ -629,15 +629,15 @@ is cognitively easier than comparing:
 - two areas
     
 
-# Important Design Principle
+## Important Design Principle
 
 ```text
 Aligned length is one of the most efficient quantitative encodings.
 ```
 
-# 5. Position on Common Scale
+## 5. Position on Common Scale
 
-# The Most Effective Encoding
+## The Most Effective Encoding
 
 The lecture finally introduces the strongest encoding:
 
@@ -647,7 +647,7 @@ Position on a common aligned scale
 
 This is the gold standard.
 
-# Why Position Is Best
+## Why Position Is Best
 
 Humans naturally compare position extremely accurately.
 
@@ -662,7 +662,7 @@ Examples:
 - common-axis charts
     
 
-# Why Position Beats Length
+## Why Position Beats Length
 
 Length still requires processing object size.
 
@@ -670,7 +670,7 @@ Position requires only distance comparison.
 
 This reduces cognitive effort further.
 
-# Perceptual Superiority of Position
+## Perceptual Superiority of Position
 
 ```mermaid
 flowchart LR
@@ -679,7 +679,7 @@ flowchart LR
     --> C[Highest Precision]
 ```
 
-# Transcript Insight
+## Transcript Insight
 
 Users can easily compare:
 
@@ -690,9 +690,9 @@ Users can easily compare:
 
 through aligned positions on the same scale.
 
-# The Core Visualization Hierarchy
+## The Core Visualization Hierarchy
 
-# Weak Encodings
+## Weak Encodings
 
 - color
     
@@ -703,14 +703,14 @@ through aligned positions on the same scale.
 - volume
     
 
-# Strong Encodings
+## Strong Encodings
 
 - length
     
 - aligned position
     
 
-# Why This Matters in Dashboard Design
+## Why This Matters in Dashboard Design
 
 Many poor dashboards use:
 
@@ -725,7 +725,7 @@ Many poor dashboards use:
 
 when simple bars would communicate better.
 
-# Decision Tree for Choosing Encodings
+## Decision Tree for Choosing Encodings
 
 ```mermaid
 flowchart TD
@@ -744,11 +744,11 @@ flowchart TD
     F -->|Yes| G[Use Color]
 ```
 
-# Expressiveness vs Effectiveness
+## Expressiveness vs Effectiveness
 
 The transcript ends with a very important distinction.
 
-# Expressiveness
+## Expressiveness
 
 ## Definition
 
@@ -760,7 +760,7 @@ Question:
 Does the visualization capture the important information?
 ```
 
-# Effectiveness
+## Effectiveness
 
 ## Definition
 
@@ -772,7 +772,7 @@ Question:
 Can users understand it optimally?
 ```
 
-# Relationship Between the Two
+## Relationship Between the Two
 
 ```mermaid
 flowchart LR
@@ -785,9 +785,9 @@ flowchart LR
 
 You need both.
 
-# Common Failure Modes
+## Common Failure Modes
 
-# High Expressiveness, Low Effectiveness
+## High Expressiveness, Low Effectiveness
 
 - too much information
     
@@ -796,7 +796,7 @@ You need both.
 - overloaded visuals
     
 
-# High Effectiveness, Low Expressiveness
+## High Effectiveness, Low Expressiveness
 
 - oversimplified charts
     
@@ -805,7 +805,7 @@ You need both.
 - incomplete information
     
 
-# Final Design Goal
+## Final Design Goal
 
 The best visualization:
 
@@ -814,7 +814,7 @@ The best visualization:
 - communicates it with minimal cognitive effort
     
 
-# Final Mental Model
+## Final Mental Model
 
 Think of encoding features as:
 
@@ -824,7 +824,7 @@ compression algorithms for human cognition
 
 Some compress information more efficiently than others.
 
-# Most Important Visualization Insight
+## Most Important Visualization Insight
 
 ```text
 The best chart is not the most decorative.
