@@ -432,3 +432,5 @@ The real lessons are:
 6. Matplotlib works at axis-level granularity
     
 7. Good chart design includes semantic color choices
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
