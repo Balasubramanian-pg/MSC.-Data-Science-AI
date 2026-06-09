@@ -1,3 +1,9 @@
+---
+title: W09 - Module 4b. Python Seaborn Package
+module: Statistical Modelling And Inferencing
+week: W09 - Module 4b. Python Seaborn Package
+---
+
 Here is the comprehensive, well-structured guide and refactored code based on your lecture transcript comparing Matplotlib and Seaborn.
 
 The lecture introduces **Seaborn** as a high-level statistical visualization engine built directly on top of **Matplotlib**, emphasizing how Seaborn drastically improves the aesthetics, structural design, and cognitive ease of your data stories.
