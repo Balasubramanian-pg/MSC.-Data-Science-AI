@@ -216,3 +216,5 @@ When you choose the size of a chart, you are making a **strategic claim** about 
     
 
 **Which would be most valuable for your upcoming work?**
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
