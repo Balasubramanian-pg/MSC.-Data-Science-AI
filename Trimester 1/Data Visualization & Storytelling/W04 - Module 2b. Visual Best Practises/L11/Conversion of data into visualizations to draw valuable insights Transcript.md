@@ -830,3 +830,5 @@ Some compress information more efficiently than others.
 The best chart is not the most decorative.
 The best chart is the one humans perceive most accurately.
 ```
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
