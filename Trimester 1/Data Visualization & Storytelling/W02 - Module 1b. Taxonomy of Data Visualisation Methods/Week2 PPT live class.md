@@ -311,3 +311,5 @@ As a **Senior SQL Engineer and Business Analyst**, these insights are operationa
 |**Intercept (0.5384)**|Baseline margin at 0% ROA.|Indicator of base operational efficiency.|
 
 **You have a strong understanding of how to interpret these distributions and regression models. Would you like to practice writing the SQL to calculate these frequency distributions from raw ledger data, or shall we discuss how to evaluate the _quality_ of your regression model using $R^2$ or residuals?**
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
