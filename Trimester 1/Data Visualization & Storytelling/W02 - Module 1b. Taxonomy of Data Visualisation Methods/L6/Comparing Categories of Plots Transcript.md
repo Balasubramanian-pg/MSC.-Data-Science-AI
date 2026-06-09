@@ -1,3 +1,9 @@
+---
+title: W02 - Module 1b. Taxonomy of Data Visualisation Methods
+module: Statistical Modelling And Inferencing
+week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
+---
+
 # Enterprise Taxonomy of Data Visualization: Advanced Categorical Comparison, Flow Mapping, and Hierarchical Systems
 
 Modern enterprise analytics demands visual paradigms that go beyond basic charts. As datasets grow in dimension and structural complexity, data professionals must select advanced visual encodings that match specific analytical tasks [1]. Choosing the wrong visual can obscure vital insights and lead to incorrect operational decisions [1].
