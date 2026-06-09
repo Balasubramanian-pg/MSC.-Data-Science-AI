@@ -12,8 +12,6 @@ Repository:
 
 [MSC Data Science AI - W02 Repository](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/tree/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W02%20-%20Introduction%20To%20Statistical%20Inference)
 
----
-
 # Why This Module Matters
 
 Statistical inference is fundamentally about this problem:
@@ -42,8 +40,6 @@ The entire discipline is therefore about:
 * making decisions with incomplete evidence
 * minimizing inferential error
 
----
-
 # Module Structure
 
 ```text
@@ -55,8 +51,6 @@ W02 - Introduction To Statistical Inference
 └── Jupyter Notebooks → Computational Inference
 ```
 
----
-
 # L0 · Inferential Foundations & Epistemology
 
 This section introduces the philosophical and mathematical foundations of inference.
@@ -67,8 +61,6 @@ That creates a dangerous failure mode:
 students learn procedures without understanding what knowledge claims actually mean.
 
 This section attempts to fix that.
-
----
 
 ## Core Themes
 
@@ -91,8 +83,6 @@ Because every inferential conclusion carries:
 * sampling error
 * model dependency
 
----
-
 ## Key Questions Introduced
 
 * What counts as evidence?
@@ -109,8 +99,6 @@ These questions later become central in:
 * Bayesian statistics
 * machine learning evaluation
 * AI reliability systems
-
----
 
 ## Resources
 
@@ -136,8 +124,6 @@ Moves beyond formulas into:
 * why inference is probabilistic rather than absolute
 * limits of empirical certainty
 
----
-
 # L1 · Sampling Theory & Data Collection
 
 This section focuses on one of the most underestimated topics in data science:
@@ -146,8 +132,6 @@ This section focuses on one of the most underestimated topics in data science:
 
 Most model failures in production are not algorithm failures.
 They are sampling failures.
-
----
 
 # Core Themes
 
@@ -167,8 +151,6 @@ This becomes increasingly difficult in:
 * streaming environments
 * biased data pipelines
 * observational datasets
-
----
 
 ## Major Sampling Concepts
 
@@ -206,8 +188,6 @@ These biases appear constantly in:
 * survey pipelines
 * online experimentation
 
----
-
 ## Resources
 
 ### [Art of Sampling](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W02%20-%20Introduction%20To%20Statistical%20Inference/L1/Art%20of%20Sampling.md)
@@ -221,8 +201,6 @@ Expanded reading material exploring practical sampling tradeoffs and inferential
 ### [The Art of Sampling (PDF)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W02%20-%20Introduction%20To%20Statistical%20Inference/L1/The%20Art%20of%20Sampling.pdf)
 
 Formal lecture material supporting theoretical and mathematical treatment of sampling methods.
-
----
 
 # L2 · Point Estimation & Sampling Distributions
 
@@ -243,8 +221,6 @@ This realization is the foundation of:
 * Bayesian posterior estimation
 * model uncertainty quantification
 
----
-
 # Core Themes
 
 ## Point Estimation
@@ -258,8 +234,6 @@ Examples:
 | Population mean μ       | Sample mean x̄       |
 | Population variance σ²  | Sample variance s²   |
 | Population proportion p | Sample proportion p̂ |
-
----
 
 ## Good Estimators
 
@@ -288,8 +262,6 @@ These properties become foundational later in:
 * generalized linear models
 * deep learning optimization
 
----
-
 ## Sampling Distributions
 
 One of the deepest ideas in statistics.
@@ -306,8 +278,6 @@ This directly leads to:
 * confidence intervals
 * significance testing
 
----
-
 # Computational Perspective
 
 The notebooks in this section matter a lot.
@@ -322,8 +292,6 @@ Many students memorize formulas but never internalize:
 * inferential instability
 
 Simulation fixes that.
-
----
 
 ## Resources
 
@@ -354,8 +322,6 @@ Strongly tied to understanding:
 * inferential stability
 * confidence construction
 
----
-
 # Recommended Learning Flow
 
 ```mermaid
@@ -379,8 +345,6 @@ E
 F
 --> G[Machine Learning Evaluation]
 ```
-
----
 
 # Hidden Insight Behind This Module
 
@@ -410,4 +374,3 @@ are all doing at scale.
 This module is therefore not merely "statistics."
 
 It is the mathematical infrastructure for decision-making under uncertainty.
-
