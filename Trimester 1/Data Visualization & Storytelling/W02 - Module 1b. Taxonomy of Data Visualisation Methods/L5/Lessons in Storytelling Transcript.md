@@ -1,3 +1,9 @@
+---
+title: W02 - Module 1b. Taxonomy of Data Visualisation Methods
+module: Statistical Modelling And Inferencing
+week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
+---
+
 ![[Pasted image 20260527233307.png]]
 The core thesis of this lecture is that **data alone does not inspire action.** To bridge the gap between analysis and business impact, visualizations must be wrapped in a structured, compelling story. Data visualization should always be **audience-centric, not data-centric**.
 
