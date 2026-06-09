@@ -4,9 +4,9 @@ module: Statistical Modelling And Inferencing
 week: W04 - Module 2b. Visual Best Practises
 ---
 
-# Visualization of Text Data
+## Visualization of Text Data
 
-# Challenges of Handling Unstructured Textual Information
+## Challenges of Handling Unstructured Textual Information
 
 This lecture serves as the conceptual foundation for the entire text visualization module.
 
@@ -53,9 +53,9 @@ because human language is inherently:
 - unstructured
     
 
-# Structured vs Unstructured Data
+## Structured vs Unstructured Data
 
-# The Core Distinction
+## The Core Distinction
 
 The lecture begins by contrasting:
 
@@ -66,7 +66,7 @@ The lecture begins by contrasting:
 
 This distinction is extremely important computationally.
 
-# Structured Data
+## Structured Data
 
 Structured data exists in:
 
@@ -85,7 +85,7 @@ Examples:
 |---|---|---|
 |1001|2500|West|
 
-# Why Structured Data Is Easier
+## Why Structured Data Is Easier
 
 Machines naturally process:
 
@@ -98,7 +98,7 @@ Machines naturally process:
 
 efficiently.
 
-# Structured Data Pipeline
+## Structured Data Pipeline
 
 ```mermaid
 flowchart LR
@@ -108,9 +108,9 @@ flowchart LR
     --> D[Visualization]
 ```
 
-# Unstructured Data
+## Unstructured Data
 
-# The Opposite Problem
+## The Opposite Problem
 
 Unstructured data lacks predefined organization.
 
@@ -131,7 +131,7 @@ Examples include:
 - customer reviews
     
 
-# Why Unstructured Data Is Difficult
+## Why Unstructured Data Is Difficult
 
 Human language does not naturally obey:
 
@@ -142,7 +142,7 @@ Human language does not naturally obey:
 - explicit semantics
     
 
-# Textual Complexity Model
+## Textual Complexity Model
 
 ```mermaid
 flowchart TD
@@ -156,13 +156,13 @@ flowchart TD
 
 This creates enormous computational challenges.
 
-# Important Core Insight
+## Important Core Insight
 
 ```text
 Language is optimized for humans, not machines.
 ```
 
-# Why Text Is Computationally Hard
+## Why Text Is Computationally Hard
 
 The lecture emphasizes:
 
@@ -181,7 +181,7 @@ Humans effortlessly infer meaning because we possess:
 
 Machines do not.
 
-# Human vs Machine Language Understanding
+## Human vs Machine Language Understanding
 
 |Human|Machine|
 |---|---|
@@ -189,7 +189,7 @@ Machines do not.
 |Semantic intuition|Pattern recognition|
 |World knowledge|Mathematical encoding|
 
-# Example of Ambiguity
+## Example of Ambiguity
 
 ```text
 "The bank is near the river."
@@ -209,7 +209,7 @@ Humans infer context instantly.
 
 Machines require modeling.
 
-# NLP Challenge Pipeline
+## NLP Challenge Pipeline
 
 ```mermaid
 flowchart TD
@@ -221,7 +221,7 @@ flowchart TD
     --> E[Computational Interpretation]
 ```
 
-# Why Text Matters Despite Complexity
+## Why Text Matters Despite Complexity
 
 The lecture highlights an extremely important idea:
 
@@ -229,7 +229,7 @@ The lecture highlights an extremely important idea:
 
 This is foundational to modern AI.
 
-# Human Communication Is Largely Textual
+## Human Communication Is Largely Textual
 
 Organizations generate enormous textual information through:
 
@@ -246,7 +246,7 @@ Organizations generate enormous textual information through:
 - legal records
     
 
-# Hidden Signals Inside Text
+## Hidden Signals Inside Text
 
 Text contains:
 
@@ -258,13 +258,13 @@ Text contains:
 |Behavioral patterns|Coordination, stress|
 |Topics|Discussion themes|
 
-# Important Modern Insight
+## Important Modern Insight
 
 ```text
 Language is one of the richest behavioral datasets humans produce.
 ```
 
-# Why Visualization Becomes Important
+## Why Visualization Becomes Important
 
 Raw text is extremely difficult to process cognitively at scale.
 
@@ -285,7 +285,7 @@ Visualization acts as:
 cognitive compression for language
 ```
 
-# Text Visualization Pipeline
+## Text Visualization Pipeline
 
 ```mermaid
 flowchart LR
@@ -296,9 +296,9 @@ flowchart LR
     --> E[Insight]
 ```
 
-# The Central NLP Problem
+## The Central NLP Problem
 
-# Machines Cannot Directly Understand Text
+## Machines Cannot Directly Understand Text
 
 The lecture introduces a crucial principle:
 
@@ -308,7 +308,7 @@ Text must first be converted into a computationally interpretable form.
 
 This is the foundation of all NLP systems.
 
-# Why Conversion Is Necessary
+## Why Conversion Is Necessary
 
 Computers fundamentally operate on:
 
@@ -327,7 +327,7 @@ Therefore:
 
 language must become mathematics.
 
-# Language Conversion Pipeline
+## Language Conversion Pipeline
 
 ```mermaid
 flowchart TD
@@ -339,9 +339,9 @@ flowchart TD
     --> E[Machine Processing]
 ```
 
-# Important Concept
+## Important Concept
 
-# Text as Data
+## Text as Data
 
 One of the biggest conceptual shifts in NLP is:
 
@@ -369,7 +369,7 @@ NLP views text as:
 - semantic relationships
     
 
-# Role of Algorithms
+## Role of Algorithms
 
 The lecture references:
 
@@ -393,7 +393,7 @@ These systems provide NLP capabilities through:
 - visualization libraries
     
 
-# Why Algorithms Are Necessary
+## Why Algorithms Are Necessary
 
 Without algorithms:
 
@@ -409,7 +409,7 @@ Algorithms help:
 |Clustering|Group semantic similarity|
 |Topic modeling|Discover themes|
 
-# NLP Processing Stack
+## NLP Processing Stack
 
 ```mermaid
 flowchart TD
@@ -422,11 +422,11 @@ flowchart TD
     --> F[Visualization]
 ```
 
-# Challenges in Textual Data Analysis
+## Challenges in Textual Data Analysis
 
 The lecture now introduces the broader challenge landscape.
 
-# 1. Lack of Explicit Structure
+## 1. Lack of Explicit Structure
 
 Unlike tables:
 
@@ -439,7 +439,7 @@ text lacks:
 - predefined schema
     
 
-# Example
+## Example
 
 ```text
 "I love this product."
@@ -455,11 +455,11 @@ Different wording.
 
 Similar semantic intent.
 
-# 2. Context Dependence
+## 2. Context Dependence
 
 Meaning changes based on context.
 
-# Example
+## Example
 
 ```text
 "Cold"
@@ -474,7 +474,7 @@ may refer to:
 - emotional distance
     
 
-# 3. Synonymy
+## 3. Synonymy
 
 Different words may mean similar things.
 
@@ -487,7 +487,7 @@ Examples:
 - delighted
     
 
-# 4. Polysemy
+## 4. Polysemy
 
 Same word may carry multiple meanings.
 
@@ -500,7 +500,7 @@ Examples:
 - model
     
 
-# 5. Scale Problem
+## 5. Scale Problem
 
 Modern organizations process:
 
@@ -513,7 +513,7 @@ Modern organizations process:
 
 Manual interpretation becomes impossible.
 
-# NLP Challenge Landscape
+## NLP Challenge Landscape
 
 ```mermaid
 flowchart TD
@@ -526,7 +526,7 @@ flowchart TD
     A --> F[Noise]
 ```
 
-# Why Visualization of Text Is Harder Than Numerical Visualization
+## Why Visualization of Text Is Harder Than Numerical Visualization
 
 Numerical visualization deals with:
 
@@ -546,7 +546,7 @@ Text visualization deals with:
 - probabilistic interpretation
     
 
-# Numerical vs Textual Analytics
+## Numerical vs Textual Analytics
 
 |Numerical Data|Text Data|
 |---|---|
@@ -554,7 +554,7 @@ Text visualization deals with:
 |Fixed scale|Contextual interpretation|
 |Direct comparison|Semantic similarity|
 
-# Important Hidden Insight
+## Important Hidden Insight
 
 The lecture quietly introduces one of the deepest truths in AI:
 
@@ -566,7 +566,7 @@ Machines do not truly “understand” text.
 
 They model statistical relationships.
 
-# Why Modern NLP Works Surprisingly Well
+## Why Modern NLP Works Surprisingly Well
 
 Modern systems leverage:
 
@@ -581,7 +581,7 @@ Modern systems leverage:
 
 to approximate semantic understanding.
 
-# Modern NLP Architecture
+## Modern NLP Architecture
 
 ```mermaid
 flowchart TD
@@ -594,7 +594,7 @@ flowchart TD
     --> F[Visualization]
 ```
 
-# Relationship to Visualization
+## Relationship to Visualization
 
 The lecture strongly connects NLP to visualization.
 
@@ -611,7 +611,7 @@ Visualization helps humans:
 - interpret hidden structure
     
 
-# NLP Visualization Goals
+## NLP Visualization Goals
 
 |Goal|Visualization Type|
 |---|---|
@@ -621,7 +621,7 @@ Visualization helps humans:
 |Sentiment|Score distributions|
 |Communication flow|Network graphs|
 
-# Hidden Computational Philosophy
+## Hidden Computational Philosophy
 
 This lecture is fundamentally about:
 
@@ -631,7 +631,7 @@ transforming language into geometry, statistics, and visual structure
 
 so that machines and humans can jointly reason about meaning.
 
-# Why This Matters in Modern AI
+## Why This Matters in Modern AI
 
 Large Language Models fundamentally depend on:
 
@@ -657,7 +657,7 @@ The concepts introduced here are direct foundations of:
 - AI assistants
     
 
-# End-to-End NLP Visualization Pipeline
+## End-to-End NLP Visualization Pipeline
 
 ```mermaid
 flowchart TD
@@ -670,7 +670,7 @@ flowchart TD
     --> F[Human Insight]
 ```
 
-# Final Conceptual Shift
+## Final Conceptual Shift
 
 This lecture transitions analytics from:
 
@@ -683,7 +683,7 @@ toward:
 semantic computational interpretation of language
 ```
 
-# Final Mental Model
+## Final Mental Model
 
 Think of text visualization as:
 
@@ -693,9 +693,9 @@ building perceptual interfaces for exploring hidden semantic structure inside hu
 
 through computational transformation and visual abstraction.
 
-# Text Preprocessing Pipeline
+## Text Preprocessing Pipeline
 
-# Transforming Human Language into Computationally Usable Data
+## Transforming Human Language into Computationally Usable Data
 
 This section introduces one of the most important foundations in Natural Language Processing (NLP):
 
@@ -730,7 +730,7 @@ This preprocessing stage is fundamentally:
 a translation layer between human language and machine computation
 ```
 
-# Why Preprocessing Exists
+## Why Preprocessing Exists
 
 Human language is:
 
@@ -754,7 +754,7 @@ Machines require:
 - numerical consistency
     
 
-# NLP Preprocessing Pipeline
+## NLP Preprocessing Pipeline
 
 ```mermaid
 flowchart TD
@@ -780,14 +780,14 @@ This pipeline dramatically improves:
 - model performance
     
 
-# Important Core Principle
+## Important Core Principle
 
 ```text
 Preprocessing is not merely cleaning.
 It is semantic standardization.
 ```
 
-# Why Text Requires Standardization
+## Why Text Requires Standardization
 
 Humans easily recognize:
 
@@ -803,9 +803,9 @@ Machines do not naturally infer this equivalence.
 
 Therefore normalization becomes essential.
 
-# 1. Case Normalization
+## 1. Case Normalization
 
-# Standardizing Capitalization
+## Standardizing Capitalization
 
 The lecture begins with:
 
@@ -823,7 +823,7 @@ All text is converted into:
 
 Most systems prefer lowercase.
 
-# Example
+## Example
 
 Before:
 
@@ -837,13 +837,13 @@ After:
 apple apple apple
 ```
 
-# Why This Matters
+## Why This Matters
 
 Without normalization:
 
 machines treat these as separate tokens.
 
-# Vocabulary Explosion Problem
+## Vocabulary Explosion Problem
 
 ```mermaid
 flowchart TD
@@ -866,13 +866,13 @@ This unnecessarily increases:
 - computational cost
     
 
-# Important Insight
+## Important Insight
 
 ```text
 Normalization reduces semantic fragmentation.
 ```
 
-# Tradeoff of Lowercasing
+## Tradeoff of Lowercasing
 
 Lowercasing sometimes removes useful information.
 
@@ -885,9 +885,9 @@ Example:
 
 Therefore modern NLP systems sometimes preserve casing contextually.
 
-# 2. Number Handling
+## 2. Number Handling
 
-# Numerical Normalization
+## Numerical Normalization
 
 The lecture then discusses:
 
@@ -897,7 +897,7 @@ handling numbers inside text
 
 Numbers create special preprocessing challenges.
 
-# Example
+## Example
 
 ```text
 "The company lost 120 million dollars."
@@ -911,13 +911,13 @@ Possible strategies:
 |Convert to text|Preserve meaning|
 |Replace with placeholder|Generalize patterns|
 
-# Example Transformation
+## Example Transformation
 
 ```text
 120 → one hundred twenty
 ```
 
-# Why Number Handling Matters
+## Why Number Handling Matters
 
 Numbers may represent:
 
@@ -934,13 +934,13 @@ Numbers may represent:
 
 Removing them blindly may destroy meaning.
 
-# Important NLP Tradeoff
+## Important NLP Tradeoff
 
 ```text
 Noise reduction vs semantic preservation
 ```
 
-# Number Processing Pipeline
+## Number Processing Pipeline
 
 ```mermaid
 flowchart TD
@@ -953,9 +953,9 @@ flowchart TD
     B -->|No| D[Remove]
 ```
 
-# 3. Removing Punctuation and Special Characters
+## 3. Removing Punctuation and Special Characters
 
-# Noise Reduction
+## Noise Reduction
 
 The lecture next introduces:
 
@@ -976,7 +976,7 @@ Examples include:
 - punctuation
     
 
-# Why This Matters
+## Why This Matters
 
 Special characters often:
 
@@ -987,7 +987,7 @@ Special characters often:
 - contribute little semantic value
     
 
-# Example
+## Example
 
 Before:
 
@@ -1001,7 +1001,7 @@ After:
 hello
 ```
 
-# Important Caveat
+## Important Caveat
 
 Punctuation sometimes carries meaning.
 
@@ -1014,7 +1014,7 @@ Example:
 
 Therefore aggressive cleaning can distort semantics.
 
-# Cleaning Tradeoff
+## Cleaning Tradeoff
 
 ```mermaid
 flowchart LR
@@ -1025,15 +1025,15 @@ flowchart LR
     --> D[Potential Meaning Distortion]
 ```
 
-# Important NLP Principle
+## Important NLP Principle
 
 ```text
 Preprocessing always involves information tradeoffs.
 ```
 
-# 4. Tokenization
+## 4. Tokenization
 
-# Breaking Text into Computational Units
+## Breaking Text into Computational Units
 
 The lecture now introduces one of the most fundamental NLP operations:
 
@@ -1041,7 +1041,7 @@ The lecture now introduces one of the most fundamental NLP operations:
 tokenization
 ```
 
-# What Is Tokenization?
+## What Is Tokenization?
 
 Tokenization breaks text into:
 
@@ -1060,7 +1060,7 @@ called:
 tokens
 ```
 
-# Example
+## Example
 
 Sentence:
 
@@ -1077,7 +1077,7 @@ becomes:
 |text|
 |data|
 
-# Tokenization Pipeline
+## Tokenization Pipeline
 
 ```mermaid
 flowchart TD
@@ -1086,7 +1086,7 @@ flowchart TD
     --> C[Tokens]
 ```
 
-# Why Tokenization Matters
+## Why Tokenization Matters
 
 Computers cannot process raw sentences directly.
 
@@ -1096,7 +1096,7 @@ Tokenization transforms:
 continuous language into discrete computational units
 ```
 
-# Bag of Words Representation
+## Bag of Words Representation
 
 The lecture references:
 
@@ -1106,7 +1106,7 @@ bag of words
 
 This is one of the earliest NLP representations.
 
-# Bag of Words Idea
+## Bag of Words Idea
 
 Text becomes:
 
@@ -1124,7 +1124,7 @@ ignoring:
 - syntax
     
 
-# Example
+## Example
 
 Sentence:
 
@@ -1140,7 +1140,7 @@ becomes:
 |chased|1|
 |mouse|1|
 
-# Important Limitation
+## Important Limitation
 
 Bag of words ignores:
 
@@ -1157,7 +1157,7 @@ Therefore:
 meaning becomes partially flattened
 ```
 
-# Bag of Words Pipeline
+## Bag of Words Pipeline
 
 ```mermaid
 flowchart TD
@@ -1167,9 +1167,9 @@ flowchart TD
     --> D[Bag of Words Vector]
 ```
 
-# 5. Stopword Removal
+## 5. Stopword Removal
 
-# Eliminating Low-Information Words
+## Eliminating Low-Information Words
 
 The lecture next introduces:
 
@@ -1177,7 +1177,7 @@ The lecture next introduces:
 stopword removal
 ```
 
-# What Are Stopwords?
+## What Are Stopwords?
 
 Common words carrying little semantic value.
 
@@ -1194,7 +1194,7 @@ Examples:
 - of
     
 
-# Example
+## Example
 
 Before:
 
@@ -1208,7 +1208,7 @@ After:
 apple
 ```
 
-# Why Stopword Removal Helps
+## Why Stopword Removal Helps
 
 Stopwords dominate language frequency but often contribute little meaning.
 
@@ -1221,7 +1221,7 @@ Removing them:
 - sharpens semantic focus
     
 
-# Stopword Reduction Pipeline
+## Stopword Reduction Pipeline
 
 ```mermaid
 flowchart TD
@@ -1231,7 +1231,7 @@ flowchart TD
     --> D[Reduced Vocabulary]
 ```
 
-# Important Computational Insight
+## Important Computational Insight
 
 Large text corpora contain enormous redundancy.
 
@@ -1241,7 +1241,7 @@ Stopword removal reduces:
 computational burden without heavily affecting semantics
 ```
 
-# Important Caveat
+## Important Caveat
 
 Stopwords sometimes matter contextually.
 
@@ -1253,15 +1253,15 @@ Example:
 
 Removing stopwords destroys meaning entirely.
 
-# Important NLP Tradeoff
+## Important NLP Tradeoff
 
 ```text
 Efficiency improvements may reduce semantic nuance.
 ```
 
-# 6. Stemming
+## 6. Stemming
 
-# Reducing Words to Common Roots
+## Reducing Words to Common Roots
 
 The lecture finally introduces:
 
@@ -1269,18 +1269,18 @@ The lecture finally introduces:
 stemming
 ```
 
-# What Is Stemming?
+## What Is Stemming?
 
 Stemming reduces related words to a shared root form.
 
-# Example
+## Example
 
 |Original Word|Stem|
 |---|---|
 |enjoyed|enjoy|
 |enjoyable|enjoy|
 
-# Why Stemming Matters
+## Why Stemming Matters
 
 Many word variants express similar semantic concepts.
 
@@ -1293,7 +1293,7 @@ Stemming reduces:
 - redundancy
     
 
-# Stemming Pipeline
+## Stemming Pipeline
 
 ```mermaid
 flowchart TD
@@ -1302,7 +1302,7 @@ flowchart TD
     --> C[Common Stem]
 ```
 
-# Important Benefit
+## Important Benefit
 
 Stemming groups semantically related forms together.
 
@@ -1317,13 +1317,13 @@ This improves:
 - topic modeling
     
 
-# Major Limitation of Stemming
+## Major Limitation of Stemming
 
 The lecture begins introducing a critical warning:
 
 stemming can over-simplify meaning.
 
-# Example Problem
+## Example Problem
 
 Words like:
 
@@ -1343,7 +1343,7 @@ Aggressive stemming may distort:
 - semantics
     
 
-# Over-Stemming Problem
+## Over-Stemming Problem
 
 ```mermaid
 flowchart TD
@@ -1358,7 +1358,7 @@ flowchart TD
     C -->|No| E[Meaning Distortion]
 ```
 
-# Stemming vs Lemmatization
+## Stemming vs Lemmatization
 
 The lecture mentions stemming but this naturally connects to:
 
@@ -1366,7 +1366,7 @@ The lecture mentions stemming but this naturally connects to:
 lemmatization
 ```
 
-# Difference
+## Difference
 
 |Stemming|Lemmatization|
 |---|---|
@@ -1374,16 +1374,16 @@ lemmatization
 |Faster|More accurate|
 |Cruder|Semantically cleaner|
 
-# Example
+## Example
 
 |Word|Stem|Lemma|
 |---|---|---|
 |running|runn|run|
 |studies|studi|study|
 
-# Hidden Insight
+## Hidden Insight
 
-# NLP Is Controlled Information Loss
+## NLP Is Controlled Information Loss
 
 Every preprocessing step removes information intentionally.
 
@@ -1393,7 +1393,7 @@ Goal:
 retain semantic structure while reducing computational complexity
 ```
 
-# NLP Compression Pipeline
+## NLP Compression Pipeline
 
 ```mermaid
 flowchart TD
@@ -1405,7 +1405,7 @@ flowchart TD
     --> E[Machine Processing]
 ```
 
-# Why Preprocessing Matters for Visualization
+## Why Preprocessing Matters for Visualization
 
 Without preprocessing:
 
@@ -1420,7 +1420,7 @@ visualizations become:
 - semantically inconsistent
     
 
-# Example Without Cleaning
+## Example Without Cleaning
 
 Word cloud may contain:
 
@@ -1433,7 +1433,7 @@ Word cloud may contain:
 
 as separate concepts.
 
-# Example With Cleaning
+## Example With Cleaning
 
 All consolidate into:
 
@@ -1443,7 +1443,7 @@ apple
 
 producing meaningful patterns.
 
-# Relationship to Modern AI
+## Relationship to Modern AI
 
 Modern transformer models reduce some preprocessing requirements because they learn contextual structure automatically.
 
@@ -1460,7 +1460,7 @@ However preprocessing still remains important in:
 - enterprise analytics
     
 
-# Modern NLP Pipeline
+## Modern NLP Pipeline
 
 ```mermaid
 flowchart TD
@@ -1472,7 +1472,7 @@ flowchart TD
     --> E[Visualization]
 ```
 
-# Final Conceptual Insight
+## Final Conceptual Insight
 
 This lecture demonstrates that preprocessing is fundamentally:
 
@@ -1480,7 +1480,7 @@ This lecture demonstrates that preprocessing is fundamentally:
 the engineering discipline of converting messy human language into structured computational signals
 ```
 
-# Final Mental Model
+## Final Mental Model
 
 Think of NLP preprocessing as:
 
