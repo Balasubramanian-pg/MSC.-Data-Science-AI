@@ -1,3 +1,9 @@
+---
+title: W07 - Moduel 4a.  Python Matplotlib
+module: Statistical Modelling And Inferencing
+week: W07 - Moduel 4a.  Python Matplotlib
+---
+
 # Merits of Matplotlib and the Python Visualization Ecosystem
 
 This lecture introduces the broader role of visualization libraries inside the Python ecosystem and positions Matplotlib as the foundational plotting framework for analytical visualization work.
