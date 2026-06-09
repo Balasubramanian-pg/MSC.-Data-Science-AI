@@ -5,7 +5,7 @@ week: W09 - Module 4b. Python Seaborn Package
 ---
 
 
-# Page 1
+## Page 1
 
  
  
@@ -59,7 +59,7 @@ you see a new data set or what we have loaded as a data frame it is always good 
 explore what are the contents in the data set. So by calling the heads I mean head 
 
 
-# Page 2
+## Page 2
 
  
  
@@ -113,7 +113,7 @@ similarity the gestalt principles of similarity it always is the crosses belong 
 group and the dots belong to the same group so though both are dots the mind has to 
 
 
-# Page 3
+## Page 3
 
  
  
@@ -167,7 +167,7 @@ data set called Dow Jones which is nothing but a financial data set it is the in
 from the United States so I have loaded Dow Jones so let us look at what is there in 
 
 
-# Page 4
+## Page 4
 
  
  
@@ -221,7 +221,7 @@ a relationship depends on more than one other variable and you can do this using
 facet visualisation because this will help you to plot the things simultaneously across 
 
 
-# Page 5
+## Page 5
 
  
  
@@ -275,7 +275,7 @@ column is region and row is event so that is how you are distinguishing the grap
 you are trying to build a grid where row row indicates event event is stimulus and Q 
 
 
-# Page 6
+## Page 6
 
  
  
