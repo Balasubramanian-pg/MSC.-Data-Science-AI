@@ -924,3 +924,5 @@ What is your analytical objective?
 19. Relationship analysis is essential for exploratory analytics.
     
 20. Poor chart selection can completely hide important insights.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
