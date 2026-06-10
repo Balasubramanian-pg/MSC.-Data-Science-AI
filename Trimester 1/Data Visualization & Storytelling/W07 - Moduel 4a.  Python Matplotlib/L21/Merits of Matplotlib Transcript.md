@@ -1,10 +1,4 @@
----
-title: W07 - Moduel 4a.  Python Matplotlib
-module: Statistical Modelling And Inferencing
-week: W07 - Moduel 4a.  Python Matplotlib
----
-
-## Merits of Matplotlib and the Python Visualization Ecosystem
+# Merits of Matplotlib and the Python Visualization Ecosystem
 
 This lecture introduces the broader role of visualization libraries inside the Python ecosystem and positions Matplotlib as the foundational plotting framework for analytical visualization work.
 
@@ -19,7 +13,7 @@ The discussion also connects visualization tooling to:
 - exploratory data science workflows
     
 
-## 1. Visualization Libraries in Python
+# 1. Visualization Libraries in Python
 
 The lecture introduces three major visualization tools:
 
@@ -29,11 +23,11 @@ The lecture introduces three major visualization tools:
 |Seaborn|Statistical visualization|
 |Bokeh|Interactive visualizations|
 
-## Why Multiple Visualization Libraries Exist
+# Why Multiple Visualization Libraries Exist
 
 Different libraries optimize for different goals.
 
-## Matplotlib
+# Matplotlib
 
 Optimized for:
 
@@ -44,7 +38,7 @@ Optimized for:
 - scientific plotting
     
 
-## Seaborn
+# Seaborn
 
 Built on top of Matplotlib.
 
@@ -57,7 +51,7 @@ Optimized for:
 - easier styling
     
 
-## Bokeh
+# Bokeh
 
 Optimized for:
 
@@ -70,7 +64,7 @@ Optimized for:
 - web visualizations
     
 
-## Ecosystem Relationship
+# Ecosystem Relationship
 
 ```mermaid
 flowchart TD
@@ -79,7 +73,7 @@ flowchart TD
     A --> D[Bokeh]
 ```
 
-## Important Insight
+# Important Insight
 
 Most advanced Python visualization ultimately traces back to:
 
@@ -90,7 +84,7 @@ Most advanced Python visualization ultimately traces back to:
 - object-oriented plotting structures
     
 
-## 2. Why Matplotlib Is Foundational
+# 2. Why Matplotlib Is Foundational
 
 The lecture frames Matplotlib as:
 
@@ -106,7 +100,7 @@ Many higher-level visualization tools either:
 - inherit its design philosophy.
     
 
-## Why Matplotlib Became Dominant
+# Why Matplotlib Became Dominant
 
 |Strength|Explanation|
 |---|---|
@@ -116,7 +110,7 @@ Many higher-level visualization tools either:
 |Integration|Works with NumPy/pandas|
 |Scientific support|Publication-quality plots|
 
-## Historical Background
+# Historical Background
 
 The lecture mentions that Matplotlib was created by:
 
@@ -129,7 +123,7 @@ Originally developed for:
 - scientific plotting workflows
     
 
-## Important Historical Context
+# Important Historical Context
 
 Matplotlib was inspired partly by:
 
@@ -145,7 +139,7 @@ particularly in:
 
 But over time it evolved into a more Pythonic and object-oriented framework.
 
-## 3. Object-Oriented Plotting
+# 3. Object-Oriented Plotting
 
 The lecture briefly references:
 
@@ -157,13 +151,13 @@ Modern Matplotlib plotting primarily follows:
 
 > object-oriented plotting architecture.
 
-## Core Structure
+# Core Structure
 
 ```python
 fig, ax = plt.subplots()
 ```
 
-## Object Relationships
+# Object Relationships
 
 ```mermaid
 flowchart TD
@@ -182,7 +176,7 @@ This architecture enables:
 - scalable plotting systems
     
 
-## Why This Matters
+# Why This Matters
 
 Weak visualization usage:
 
@@ -194,7 +188,7 @@ Strong visualization engineering:
 - controlling figure objects explicitly
     
 
-## 4. Visualization as Hands-On Learning
+# 4. Visualization as Hands-On Learning
 
 The lecture emphasizes an important educational philosophy:
 
@@ -211,7 +205,7 @@ Visualization is inherently:
 - experimental
     
 
-## Why Hands-On Practice Matters
+# Why Hands-On Practice Matters
 
 Visualization quality depends on:
 
@@ -230,7 +224,7 @@ Visualization quality depends on:
 
 These cannot be fully understood abstractly.
 
-## Effective Learning Loop
+# Effective Learning Loop
 
 ```mermaid
 flowchart LR
@@ -249,7 +243,7 @@ This iterative cycle builds:
 - design judgment
     
 
-## 5. The Scale of Visualization Libraries
+# 5. The Scale of Visualization Libraries
 
 The lecture repeatedly warns:
 
@@ -270,7 +264,7 @@ Matplotlib contains:
 - animation support
     
 
-## Important Practical Insight
+# Important Practical Insight
 
 You do not need to master every feature.
 
@@ -279,7 +273,7 @@ Most real-world work repeatedly uses:
 - a relatively small set of chart patterns.
     
 
-## The 80/20 Reality
+# The 80/20 Reality
 
 Typically:
 
@@ -301,7 +295,7 @@ Examples:
 - heatmaps
     
 
-## Therefore the Real Skill Is:
+# Therefore the Real Skill Is:
 
 Not:
 
@@ -313,7 +307,7 @@ But:
 - understanding visualization principles deeply.
     
 
-## 6. Documentation-Driven Learning
+# 6. Documentation-Driven Learning
 
 The lecture encourages students to:
 
@@ -326,7 +320,7 @@ The lecture encourages students to:
 
 This reflects real engineering practice.
 
-## Why Documentation Matters
+# Why Documentation Matters
 
 Strong developers:
 
@@ -335,7 +329,7 @@ Strong developers:
 - instead learn how to navigate documentation efficiently
     
 
-## Important Engineering Skill
+# Important Engineering Skill
 
 Reading documentation is itself a technical skill.
 
@@ -350,7 +344,7 @@ Good documentation usage involves:
 - experimenting incrementally
     
 
-## Official Documentation Areas Mentioned
+# Official Documentation Areas Mentioned
 
 The lecture references:
 
@@ -363,7 +357,7 @@ The lecture references:
 
 These are critical learning resources.
 
-## Typical Learning Path
+# Typical Learning Path
 
 ```mermaid
 flowchart LR
@@ -373,7 +367,7 @@ flowchart LR
     D --> E[Independent Design]
 ```
 
-## 7. Pre-attentive Attributes in Matplotlib
+# 7. Pre-attentive Attributes in Matplotlib
 
 The lecture briefly references:
 
@@ -386,7 +380,7 @@ The lecture briefly references:
 
 These connect directly to earlier storytelling concepts.
 
-## Pre-attentive Attributes
+# Pre-attentive Attributes
 
 Humans process certain visual features instantly:
 
@@ -403,7 +397,7 @@ Humans process certain visual features instantly:
 
 Matplotlib allows these to be customized programmatically.
 
-## Example
+# Example
 
 ```python
 ax.plot(x, y, color='red', linewidth=3)
@@ -416,7 +410,7 @@ This changes:
 - attention hierarchy
     
 
-## Why This Matters
+# Why This Matters
 
 Visualization is not just:
 
@@ -427,7 +421,7 @@ It is:
 
 > controlling perceptual focus.
 
-## 8. Visualization and Storytelling
+# 8. Visualization and Storytelling
 
 The lecture implicitly connects Matplotlib to:
 
@@ -447,7 +441,7 @@ They influence:
 - narrative framing
     
 
-## Visualization Pipeline
+# Visualization Pipeline
 
 ```mermaid
 flowchart LR
@@ -457,7 +451,7 @@ flowchart LR
     D --> E[Decision Making]
 ```
 
-## Therefore Visualization Quality Affects:
+# Therefore Visualization Quality Affects:
 
 - business decisions
     
@@ -468,7 +462,7 @@ flowchart LR
 - analytical trust
     
 
-## 9. The Importance of Exploration
+# 9. The Importance of Exploration
 
 The lecture repeatedly encourages:
 
@@ -487,7 +481,7 @@ This is critical because visualization quality depends heavily on:
 
 There is no universal chart recipe.
 
-## Strong Analysts Continuously Ask:
+# Strong Analysts Continuously Ask:
 
 - Which chart best communicates this pattern?
     
@@ -500,7 +494,7 @@ There is no universal chart recipe.
 - Am I emphasizing the correct insight?
     
 
-## 10. The Deeper Educational Goal
+# 10. The Deeper Educational Goal
 
 This lecture is not merely teaching:
 
@@ -519,7 +513,7 @@ The student is expected to move from:
 - engineering visual systems.
     
 
-## Strategic Insight
+# Strategic Insight
 
 Matplotlib is important not because:
 
@@ -552,7 +546,7 @@ Once those ideas are understood:
 
 becomes much easier.
 
-## Final Takeaway
+# Final Takeaway
 
 The lecture ultimately frames visualization correctly:
 
@@ -578,5 +572,3 @@ to transform:
     into
     
 - interpretable human insight.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
