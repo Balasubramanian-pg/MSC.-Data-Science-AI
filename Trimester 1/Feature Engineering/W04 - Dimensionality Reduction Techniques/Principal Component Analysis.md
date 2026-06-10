@@ -1,16 +1,10 @@
----
-title: W04 - Dimensionality Reduction Techniques
-module: Statistical Modelling And Inferencing
-week: W04 - Dimensionality Reduction Techniques
----
-
 ### Principal Component Analysis (PCA) Technical Notes
 
-#### [1. Clear Overview](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01 - Overview of Feature Engineering/3.%20Working%20With%20Sample%20Dataset%20-%20I.md#1-clear-overview)
+#### 1. Clear Overview
 
-Principal Component Analysis (PCA) is an unsupervised dimensionality reduction technique that transforms a high-dimensional [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/Experiential%20Learning%20Activity.md#dataset) into a lower-dimensional subspace while retaining the maximum possible variance. It achieves this by creating new, uncorrelated features called **Principal Components (PCs)**, which are linear combinations of the original variables.
+Principal Component Analysis (PCA) is an unsupervised dimensionality reduction technique that transforms a high-dimensional dataset into a lower-dimensional subspace while retaining the maximum possible variance. It achieves this by creating new, uncorrelated features called **Principal Components (PCs)**, which are linear combinations of the original variables.
 
-#### [2. Theoretical Framework](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W04 - Dimensionality Reduction Techniques/Singular%20Value%20Description.md#2-theoretical-framework)
+#### 2. Theoretical Framework
 
 PCA operates by identifying the directions of maximum variance in the data.
 
@@ -36,18 +30,18 @@ PCA operates by identifying the directions of maximum variance in the data.
 
 #### 3. Implementation Details
 
-When applying PCA to the `load_digits` [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/Experiential%20Learning%20Activity.md#dataset) (64 features, 8x8 pixel intensity):
+When applying PCA to the `load_digits` dataset (64 features, 8x8 pixel intensity):
 
 
 ```python
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 
-## 1. Scaling is mandatory
+# 1. Scaling is mandatory
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
-## 2. Extract components
+# 2. Extract components
 pca = PCA(n_components=2)
 X_pca = pca.fit_transform(X_scaled)
 ```
@@ -61,7 +55,7 @@ To determine the optimal $k$ (number of components), analyze the cumulative expl
 pca_full = PCA().fit(X_scaled)
 cumulative_variance = np.cumsum(pca_full.explained_variance_ratio_)
 
-## Plotting the elbow curve
+# Plotting the elbow curve
 plt.plot(cumulative_variance)
 plt.axhline(y=0.95, color='r', linestyle='--') # Identify k for 95% retention
 ```
@@ -75,7 +69,7 @@ plt.axhline(y=0.95, color='r', linestyle='--') # Identify k for 95% retention
 - **Outlier Sensitivity:** Because PCA is variance-based, outliers can significantly rotate the principal components, leading to unstable results.
     
 
-#### [5. Application Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/L2/Embedded%20Methods.md#5-application-[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Overview.md#summary)))
+#### 5. Application Summary
 
 |**Objective**|**Strategy**|
 |---|---|
@@ -86,5 +80,3 @@ plt.axhline(y=0.95, color='r', linestyle='--') # Identify k for 95% retention
 **Important Note:** PCA assumes the relationships in your data are linear. If your data structure is inherently non-linear (e.g., a manifold like a Swiss Roll), PCA will fail to capture the underlying structure, and techniques like **t-SNE** or **UMAP** are preferred.
 
 Would you like to examine how to integrate PCA into a machine learning `Pipeline`, or do you have questions on interpreting the loading vectors?
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
