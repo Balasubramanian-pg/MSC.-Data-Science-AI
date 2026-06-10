@@ -1,11 +1,5 @@
----
-title: W03 - Moduel 2a.  Effective Visuals Design
-module: Statistical Modelling And Inferencing
-week: W03 - Moduel 2a.  Effective Visuals Design
----
 
-
-## Page 1
+# Page 1
 
 ### Effective Visual Design: The Master Summary
 
@@ -198,5 +192,3 @@ You now have the **Theory** (Cognitive Load), the **Sources of Clutter** (Frame,
     
 
 Which direction would be most useful for your upcoming projects?
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
