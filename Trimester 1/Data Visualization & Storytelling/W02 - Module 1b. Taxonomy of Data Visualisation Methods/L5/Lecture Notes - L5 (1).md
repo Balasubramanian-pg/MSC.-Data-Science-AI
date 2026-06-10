@@ -1,9 +1,3 @@
----
-title: W02 - Module 1b. Taxonomy of Data Visualisation Methods
-module: Statistical Modelling And Inferencing
-week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
----
-
 ### **Core Principle: Intentional Design**
 
 The foundation of effective data visualization is **intentional design**, where every single element—including color, line thickness, text, alignment, and labeling—is chosen for a specific purpose. Rather than simply displaying raw data, a model visual is structured to minimize cognitive strain and directly guide the audience's attention toward actionable insights.
@@ -64,5 +58,3 @@ graph LR
 #### **4. Maintain Visual Clarity**
 *   **Eliminate "Chartjunk":** Actively remove elements that do not add analytical value, such as 3D effects, heavy background shading, or excessive gridlines. If a design element doesn't help explain the data, it is a distraction.
 *   **Minimalist Labeling:** Avoid cluttering the chart by labeling every single data point. Label only the key points of interest (like start points, end points, or peaks) and keep axis titles short and direct.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
