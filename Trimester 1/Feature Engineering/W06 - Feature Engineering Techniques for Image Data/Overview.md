@@ -1,12 +1,6 @@
----
-title: W06 - Feature Engineering Techniques for Image Data
-module: Statistical Modelling And Inferencing
-week: W06 - Feature Engineering Techniques for Image Data
----
+This module provides a foundational bridge between raw pixel data and meaningful machine learning features. While deep learning models (like CNNs) automatically learn hierarchical features, understanding manual **Computer Vision (CV)** techniques is vital for classical machine learning pipelines, computational efficiency, and robust preprocessing.
 
-This module provides a foundational bridge between raw pixel data and meaningful machine learning features. While deep learning models (like CNNs) automatically learn hierarchical features, understanding manual **Computer Vision (CV)** techniques is vital for classical machine learning pipelines, computational efficiency, and robust [preprocessing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/L1/Demonstration.md#preprocessing).
-
-### [1. The Challenges of Image Data](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W06 - Feature Engineering Techniques for Image Data/1.%20Module%20Introduction.md#1-the-challenges-of-image-data)
+### 1. The Challenges of Image Data
 
 Unlike tabular data, images require a different engineering mindset due to:
 
@@ -59,5 +53,3 @@ Classical feature engineering acts as a "pruning" mechanism. By feeding a model 
 **Next Steps:**
 
 We will move from theory to implementation. Would you like to start by examining how to apply the **Canny Edge Detection** algorithm, or would you prefer a deep dive into the **HOG** parameter tuning?
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
