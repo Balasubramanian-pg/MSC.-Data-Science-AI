@@ -1,9 +1,3 @@
----
-title: W02 - Module 1b. Taxonomy of Data Visualisation Methods
-module: Statistical Modelling And Inferencing
-week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
----
-
 ![[Pasted image 20260527231448.png]]
 
 While there are over 150 different types of data visualizations available across modern software tools, **a core set of about 12 visual types is sufficient to handle 90% of business and analytical communication needs.** Knowing when and how to apply these basic options allows for highly effective communication without relying on overly complex, custom visuals.
@@ -99,5 +93,3 @@ These use two-dimensional space to display proportions.
 *   **Square Area Charts**
     *   **Purpose:** Displays composition where a grid of equal squares represents units of data.
     *   **Best Use:** Comparing composition changes side-by-side across different time periods.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
