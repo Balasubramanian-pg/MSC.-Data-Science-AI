@@ -1,11 +1,5 @@
----
-title: W05 - Module 3a.  Dashboards
-module: Statistical Modelling And Inferencing
-week: W05 - Module 3a.  Dashboards
----
 
-
-## Page 1
+# Page 1
 
  
  
@@ -59,7 +53,7 @@ feature, quantitative feature you are trying to track. But there are three level
 category that you are trying to look at. 
 
 
-## Page 2
+# Page 2
 
  
  
@@ -113,7 +107,7 @@ So, by this different type of data that you have on the dashboard, you can use t
 the visuals and bring out the insights. Now, the focus here is to get actionable insights. 
 
 
-## Page 3
+# Page 3
 
  
  
@@ -167,7 +161,7 @@ on the visual, automated of course. So, you can clearly bring your attention of 
 audience to two or three topics. 
 
 
-## Page 4
+# Page 4
 
  
  
@@ -186,6 +180,3 @@ out insights on how visas are issued by our country.
  
 ------------------------------------------------------End----------------------------------------------------- 
  
-
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
