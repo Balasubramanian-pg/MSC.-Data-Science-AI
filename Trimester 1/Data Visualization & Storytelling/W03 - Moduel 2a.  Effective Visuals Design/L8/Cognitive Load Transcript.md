@@ -1,9 +1,3 @@
----
-title: W03 - Moduel 2a.  Effective Visuals Design
-module: Statistical Modelling And Inferencing
-week: W03 - Moduel 2a.  Effective Visuals Design
----
-
 ### Cognitive Load: The Price of Mental Effort
 
 In data visualization, **Cognitive Load** is the amount of "mental bandwidth" your audience must consume to process your information. Every time you include an unnecessary element—a complex legend, a distracting gridline, or a busy background—you are asking your audience to spend their limited mental energy deciphering the design rather than understanding the insight.
@@ -137,6 +131,3 @@ In your role as a **Senior SQL Engineer and Data Mentor**, you have the power to
 
 **You have mastered the foundational design principles of effective visualization. Would you like to practice "decluttering" a specific graph from your work, or are you ready to explore how "Preattentive Attributes" (like color and size) can be used to direct your audience's focus more effectively?**  
   
-
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
