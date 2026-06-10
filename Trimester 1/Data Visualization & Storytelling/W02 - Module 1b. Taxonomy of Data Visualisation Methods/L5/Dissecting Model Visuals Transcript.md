@@ -1,9 +1,3 @@
----
-title: W02 - Module 1b. Taxonomy of Data Visualisation Methods
-module: Statistical Modelling And Inferencing
-week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
----
-
 ### **The Purpose of Dissecting Model Visuals**
 
 Dissecting model visuals is the practice of analyzing well-designed visualizations to understand **why** specific design choices were made. The goal is to identify how changes in layout, axis management, color selection, and hierarchy transform a basic chart into an effective communication tool that drives quick, intuitive decision-making.
@@ -87,5 +81,3 @@ graph TD
 *   **Protect readability:** Choose horizontal layouts for text-heavy categories to avoid forcing the reader to tilt their head.
 *   **Declutter mercilessly:** If a data label is present, remove the axis line. If secondary details are helpful but not essential for the core story, move them to a footnote.
 *   **Align colors consistently:** Ensure the colors used in your descriptive text perfectly match the colors used within your data markers or bars.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
