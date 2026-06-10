@@ -1,9 +1,3 @@
----
-title: W10 - Module 4c. Python Bokeh package - Module 4c. Python Bokeh package - Module 4c. Python Bokeh package - Module 4c. Python Bokeh package - Module 4c. Python Bokeh package
-module: Statistical Modelling And Inferencing
-week: W10 - Module 4c. Python Bokeh package - Module 4c. Python Bokeh package - Module 4c. Python Bokeh package - Module 4c. Python Bokeh package - Module 4c. Python Bokeh package
----
-
 Based on your lecture transcript, the instructor is introducing **Bokeh**, a powerful library in the Python ecosystem designed specifically for creating **interactive, web-ready visualizations**.
 
 The lecture highlights a core data storytelling philosophy: balancing the narrative between the author and the audience by giving viewers the power to manipulate the data and draw their own conclusions.
@@ -44,33 +38,33 @@ Unlike Matplotlib or Seaborn, which render static image blocks (like PNGs or JPE
 To use Bokeh inside a Jupyter or Google Colab notebook, you must explicitly declare a target workspace using `output_notebook()`. This flags the backend to inject the necessary JavaScript components directly into your browser window.
 
 ```Python
-## =====================================================================
-## 1. INSTALLATION & ENVIRONMENT SETUP
-## =====================================================================
-## In a Colab/Jupyter cell, you would run: !pip install bokeh
+# =====================================================================
+# 1. INSTALLATION & ENVIRONMENT SETUP
+# =====================================================================
+# In a Colab/Jupyter cell, you would run: !pip install bokeh
 
 import numpy as np
 import pandas as pd
 from bokeh.io import output_notebook, show
 from bokeh.plotting import figure
 
-## CRITICAL: Initialize the corporate workspace inside your notebook browser.
-## This ensures BokehJS loads correctly to render interactive elements.
+# CRITICAL: Initialize the corporate workspace inside your notebook browser.
+# This ensures BokehJS loads correctly to render interactive elements.
 output_notebook()
 
-## =====================================================================
-## 2. GENERATING DATA
-## =====================================================================
+# =====================================================================
+# 2. GENERATING DATA
+# =====================================================================
 np.random.seed(42)
 x_data = np.linspace(0, 10, 50)
 y_data = np.sin(x_data) + np.random.normal(0, 0.1, 50)
 
-## =====================================================================
-## 3. HIGH-LEVEL BOKEH PLOTTING INTERFACE
-## =====================================================================
+# =====================================================================
+# 3. HIGH-LEVEL BOKEH PLOTTING INTERFACE
+# =====================================================================
 
-## Step A: Initialize the Figure object (Defines canvas size and default tools)
-## Bokeh automatically adds web tools like Pan, Box Zoom, Wheel Zoom, Reset, and Save.
+# Step A: Initialize the Figure object (Defines canvas size and default tools)
+# Bokeh automatically adds web tools like Pan, Box Zoom, Wheel Zoom, Reset, and Save.
 p = figure(
     title="Interactive Wave Patterns (Author-Driven Baseline)",
     x_axis_label="Time Interval",
@@ -80,18 +74,18 @@ p = figure(
     tools="pan,box_zoom,wheel_zoom,reset,save,hover"
 )
 
-## Step B: Render Glyphs (Geometric data markers)
-## Adding a continuous trendline
+# Step B: Render Glyphs (Geometric data markers)
+# Adding a continuous trendline
 p.line(x_data, y_data, legend_label="Trend", line_width=2, line_color="navy")
 
-## Overlaying individual scatter points that the audience can interact with
+# Overlaying individual scatter points that the audience can interact with
 p.circle(x_data, y_data, legend_label="Data Points", size=8, color="orange", alpha=0.7)
 
-## Step C: Style layout properties
+# Step C: Style layout properties
 p.legend.location = "top_right"
 p.title.text_font_size = "14pt"
 
-## Step D: Deploy the plot to the browser canvas
+# Step D: Deploy the plot to the browser canvas
 show(p)
 ```
 
@@ -104,7 +98,7 @@ show(p)
 | **Audience Capability**     | Passive consumption of pre-calculated, fixed chart views. | **Active exploration** via zooming, scaling, panning, and live hovers.       |
 | **Notebook Initialization** | Standard execution out of the box.                        | Requires explicitly invoking `output_notebook()` to load the JS environment. |
 | **Core Interface Split**    | Functional wrappers vs. figure axis layers.               | **High-Level Plotting** (Fast) vs. **Low-Level Models** (Hyper-Customized).  |
-## Bokeh Introduction Explained Visually + Code Wise
+# Bokeh Introduction Explained Visually + Code Wise
 
 The transcript introduces one core idea:
 
@@ -129,7 +123,7 @@ Source:
 
 ---
 
-## 1. Why Bokeh Exists
+# 1. Why Bokeh Exists
 
 ## Traditional Visualization Problem
 
@@ -160,7 +154,7 @@ Bad for exploration.
 
 ---
 
-## 2. What Bokeh Changes
+# 2. What Bokeh Changes
 
 Bokeh generates:
 
@@ -203,7 +197,7 @@ E --> I[Live Updates]
 
 ---
 
-## 3. Installing Bokeh
+# 3. Installing Bokeh
 
 Transcript mentions:
 
@@ -215,7 +209,7 @@ Source:
 
 ---
 
-## 4. First Important Concept: `output_notebook()`
+# 4. First Important Concept: `output_notebook()`
 
 This line is critical.
 
@@ -229,7 +223,7 @@ Source:
 
 ---
 
-## Why This Is Needed
+# Why This Is Needed
 
 Bokeh needs a rendering environment.
 
@@ -254,7 +248,7 @@ So `output_notebook()` tells Bokeh:
 
 ---
 
-## Visual Understanding
+# Visual Understanding
 
 ```mermaid
 flowchart LR
@@ -266,7 +260,7 @@ C --> D[Interactive Plot Works]
 
 ---
 
-## 5. Your First Bokeh Plot
+# 5. Your First Bokeh Plot
 
 ## Full Example
 
@@ -274,10 +268,10 @@ C --> D[Interactive Plot Works]
 from bokeh.plotting import figure, show
 from bokeh.io import output_notebook
 
-## Enable notebook rendering
+# Enable notebook rendering
 output_notebook()
 
-## Create figure object
+# Create figure object
 p = figure(
     title="Simple Line Plot",
     x_axis_label='X Values',
@@ -286,19 +280,19 @@ p = figure(
     height=400
 )
 
-## Add line
+# Add line
 x = [1, 2, 3, 4, 5]
 y = [6, 7, 2, 4, 5]
 
 p.line(x, y, line_width=3)
 
-## Display plot
+# Display plot
 show(p)
 ```
 
 ---
 
-## What Each Part Does
+# What Each Part Does
 
 ---
 
@@ -347,7 +341,7 @@ Equivalent to:
 
 ---
 
-## Internal Flow
+# Internal Flow
 
 ```mermaid
 flowchart TD
@@ -360,7 +354,7 @@ D --> E[Browser Visualization]
 
 ---
 
-## 6. Why Bokeh Feels Different
+# 6. Why Bokeh Feels Different
 
 The transcript highlights:
 
@@ -375,7 +369,7 @@ Source:
 
 ---
 
-## Static vs Interactive
+# Static vs Interactive
 
 |Feature|Matplotlib|Bokeh|
 |---|---|---|
@@ -388,7 +382,7 @@ Source:
 
 ---
 
-## 7. Core Bokeh Mental Model
+# 7. Core Bokeh Mental Model
 
 Bokeh works using:
 
@@ -404,7 +398,7 @@ Rendering
 
 ---
 
-## What Are Glyphs?
+# What Are Glyphs?
 
 Glyphs are visual objects:
 
@@ -433,7 +427,7 @@ p.vbar(...)
 
 ---
 
-## 8. Add Interactivity
+# 8. Add Interactivity
 
 Now let’s see why Bokeh is powerful.
 
@@ -472,7 +466,7 @@ show(p)
 
 ---
 
-## What Happens Here?
+# What Happens Here?
 
 Now user can:
 
@@ -489,7 +483,7 @@ This is browser-native interaction.
 
 ---
 
-## Visual Interaction Pipeline
+# Visual Interaction Pipeline
 
 ```mermaid
 flowchart LR
@@ -501,7 +495,7 @@ C --> D[Tooltip Display]
 
 ---
 
-## 9. High-Level vs Low-Level Bokeh
+# 9. High-Level vs Low-Level Bokeh
 
 Transcript mentions:
 
@@ -514,7 +508,7 @@ Source:
 
 ---
 
-## High-Level Interface
+# High-Level Interface
 
 Easy mode.
 
@@ -550,7 +544,7 @@ Very simple.
 
 ---
 
-## Low-Level Models
+# Low-Level Models
 
 Advanced customization.
 
@@ -578,7 +572,7 @@ Used for:
 
 ---
 
-## Engineering Analogy
+# Engineering Analogy
 
 |Level|Analogy|
 |---|---|
@@ -587,7 +581,7 @@ Used for:
 
 ---
 
-## 10. Real Strength of Bokeh
+# 10. Real Strength of Bokeh
 
 The transcript subtly hints at something important:
 
@@ -598,7 +592,7 @@ This is a major distinction.
 
 ---
 
-## Bokeh Can Build Dashboards
+# Bokeh Can Build Dashboards
 
 Example architecture:
 
@@ -617,7 +611,7 @@ D --> H[Streaming Data]
 
 ---
 
-## 11. Streaming Data Example
+# 11. Streaming Data Example
 
 This is where Bokeh becomes serious.
 
@@ -646,7 +640,7 @@ curdoc().add_root(p)
 
 ---
 
-## What This Does
+# What This Does
 
 Every second:
 
@@ -668,7 +662,7 @@ Used in:
 
 ---
 
-## 12. Key Object: `ColumnDataSource`
+# 12. Key Object: `ColumnDataSource`
 
 This is central to Bokeh.
 
@@ -692,7 +686,7 @@ source = ColumnDataSource(data={
 
 ---
 
-## Why It Matters
+# Why It Matters
 
 Bokeh synchronizes:
 
@@ -705,7 +699,7 @@ through this object.
 
 ---
 
-## Visual Understanding
+# Visual Understanding
 
 ```mermaid
 flowchart LR
@@ -718,7 +712,7 @@ A[Python DataFrame]
 
 ---
 
-## 13. Bokeh vs Seaborn vs Matplotlib
+# 13. Bokeh vs Seaborn vs Matplotlib
 
 |Tool|Best For|
 |---|---|
@@ -728,7 +722,7 @@ A[Python DataFrame]
 
 ---
 
-## 14. Common Beginner Mistakes
+# 14. Common Beginner Mistakes
 
 ## Forgetting `output_notebook()`
 
@@ -777,7 +771,7 @@ Streamlit:
 
 ---
 
-## 15. Where Bokeh Is Actually Used
+# 15. Where Bokeh Is Actually Used
 
 ## Strong Use Cases
 
@@ -813,7 +807,7 @@ Streamlit:
 
 ---
 
-## 16. Interview-Level Understanding
+# 16. Interview-Level Understanding
 
 If asked:
 
@@ -832,7 +826,7 @@ That answer shows:
 
 ---
 
-## 17. The Hidden Design Philosophy
+# 17. The Hidden Design Philosophy
 
 Most plotting libraries think:
 
@@ -850,20 +844,20 @@ That is the conceptual leap.
 
 ---
 
-## 18. Minimal End-to-End Example
+# 18. Minimal End-to-End Example
 
 ```python
 from bokeh.plotting import figure, show
 from bokeh.io import output_notebook
 
-## Setup notebook rendering
+# Setup notebook rendering
 output_notebook()
 
-## Create data
+# Create data
 x = [1,2,3,4,5]
 y = [2,5,8,2,7]
 
-## Create figure
+# Create figure
 plot = figure(
     title="My First Bokeh Plot",
     x_axis_label="X Axis",
@@ -871,17 +865,17 @@ plot = figure(
     tools="pan,wheel_zoom,box_zoom,reset,save"
 )
 
-## Add line and circles
+# Add line and circles
 plot.line(x, y, line_width=2)
 plot.circle(x, y, size=10)
 
-## Render
+# Render
 show(plot)
 ```
 
 ---
 
-## Final Mental Model
+# Final Mental Model
 
 ```mermaid
 flowchart TD
@@ -895,7 +889,7 @@ A[Python]
 
 ---
 
-## Final Takeaways
+# Final Takeaways
 
 - Bokeh is built for browser-native interactivity
     
@@ -923,5 +917,3 @@ interactive visualization systems
 ```
 
 Transcript source:
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
