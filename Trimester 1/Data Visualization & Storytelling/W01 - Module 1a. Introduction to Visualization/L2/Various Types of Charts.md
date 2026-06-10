@@ -1,14 +1,8 @@
----
-title: W01 - Module 1a. Introduction to Visualization
-module: Statistical Modelling And Inferencing
-week: W01 - Module 1a. Introduction to Visualization
----
-
-## Various Types of Charts and Their Analytical Purpose
+# Various Types of Charts and Their Analytical Purpose
 
 Source Transcript:
 
-## Table of Contents
+# Table of Contents
 
 1. [Introduction to Chart Selection](https://chatgpt.com/g/g-p-6a0d41583fe88191a2893b540108b3b5-msc-data-science/c/6a10ae9f-5308-8321-80ea-23d7426ab7ae#1-introduction-to-chart-selection)  
     1.1 [Why Choosing the Right Chart Matters](https://chatgpt.com/g/g-p-6a0d41583fe88191a2893b540108b3b5-msc-data-science/c/6a10ae9f-5308-8321-80ea-23d7426ab7ae#11-why-choosing-the-right-chart-matters)  
@@ -59,7 +53,7 @@ Source Transcript:
 
 ---
 
-## 1. Introduction to Chart Selection
+# 1. Introduction to Chart Selection
 
 ## 1.1 Why Choosing the Right Chart Matters
 
@@ -103,7 +97,7 @@ This framework is foundational in Business Intelligence and Analytics.
 
 ---
 
-## 2. Understanding Variable Types Before Charting
+# 2. Understanding Variable Types Before Charting
 
 Before selecting charts, it is critical to understand the underlying data structure.
 
@@ -218,9 +212,9 @@ Relationship charts require:
 
 ---
 
-## 3. Comparison Charts
+# 3. Comparison Charts
 
-## 3.1 Purpose of Comparison Charts
+# 3.1 Purpose of Comparison Charts
 
 Comparison charts answer:
 
@@ -252,7 +246,7 @@ Election turnout comparison:
 
 ---
 
-## 3.2 Vertical Bar Charts
+# 3.2 Vertical Bar Charts
 
 ## Structure
 
@@ -296,7 +290,7 @@ An airline can immediately infer:
 
 ---
 
-## 3.3 Horizontal Bar Charts
+# 3.3 Horizontal Bar Charts
 
 Horizontal bar charts are useful when:
 
@@ -339,7 +333,7 @@ The company can:
 
 ---
 
-## 3.4 Stacked Bar Charts
+# 3.4 Stacked Bar Charts
 
 The lecture briefly introduces:
 
@@ -366,7 +360,7 @@ These are useful when comparing:
 
 ---
 
-## 3.5 Business Insights from Comparison Charts
+# 3.5 Business Insights from Comparison Charts
 
 Comparison charts help organizations:
 
@@ -381,9 +375,9 @@ Comparison charts help organizations:
 
 ---
 
-## 4. Distribution Charts
+# 4. Distribution Charts
 
-## 4.1 Understanding Distribution
+# 4.1 Understanding Distribution
 
 Distribution charts show:
 
@@ -413,7 +407,7 @@ The lecture gives examples:
 
 ---
 
-## 4.2 Histograms
+# 4.2 Histograms
 
 A **histogram** groups values into bins.
 
@@ -471,7 +465,7 @@ This accommodates most users without excessive interface friction.
 
 ---
 
-## 4.3 Scatter Plots for Distribution
+# 4.3 Scatter Plots for Distribution
 
 Scatter plots help reveal:
 
@@ -488,7 +482,7 @@ They are especially useful in exploratory analytics.
 
 ---
 
-## 4.4 Business Decisions from Distribution Analysis
+# 4.4 Business Decisions from Distribution Analysis
 
 Distribution charts help businesses:
 
@@ -500,9 +494,9 @@ Distribution charts help businesses:
 
 ---
 
-## 5. Composition Charts
+# 5. Composition Charts
 
-## 5.1 Understanding Composition
+# 5.1 Understanding Composition
 
 Composition answers:
 
@@ -521,7 +515,7 @@ How much does each part contribute to the whole?
 
 ---
 
-## 5.2 Pie Charts
+# 5.2 Pie Charts
 
 Pie charts represent proportions of a whole.
 
@@ -555,7 +549,7 @@ Executives can quickly assess:
 
 ---
 
-## 5.3 Stacked Composition Analysis
+# 5.3 Stacked Composition Analysis
 
 Composition can also be hierarchical.
 
@@ -572,7 +566,7 @@ This supports root-cause analysis.
 
 ---
 
-## 5.4 Business Insights from Composition
+# 5.4 Business Insights from Composition
 
 Composition charts help answer:
 
@@ -585,9 +579,9 @@ Composition charts help answer:
 
 ---
 
-## 6. Relationship Charts
+# 6. Relationship Charts
 
-## 6.1 Purpose of Relationship Charts
+# 6.1 Purpose of Relationship Charts
 
 Relationship charts explore interactions between variables.
 
@@ -599,7 +593,7 @@ Visualization helps uncover hidden patterns.
 
 ---
 
-## 6.2 Scatter Plots
+# 6.2 Scatter Plots
 
 Scatter plots reveal:
 
@@ -628,7 +622,7 @@ Two variables moving together does not prove one causes the other.
 
 ---
 
-## 6.3 Bubble Charts
+# 6.3 Bubble Charts
 
 Bubble charts extend scatter plots by adding:
 
@@ -687,7 +681,7 @@ Bubble charts are excellent for:
 
 ---
 
-## 6.4 Word Clouds
+# 6.4 Word Clouds
 
 The lecture introduces **word clouds** for text analysis.
 
@@ -742,7 +736,7 @@ This makes word clouds:
 
 ---
 
-## 6.5 Business Insights from Relationship Charts
+# 6.5 Business Insights from Relationship Charts
 
 Relationship charts support:
 
@@ -755,9 +749,9 @@ Relationship charts support:
 
 ---
 
-## 7. Text Analytics and Sentiment Visualization
+# 7. Text Analytics and Sentiment Visualization
 
-## 7.1 Sentiment Categorization
+# 7.1 Sentiment Categorization
 
 The lecture explains that sentiment classification is not always objective.
 
@@ -774,7 +768,7 @@ This introduces ambiguity into labeling.
 
 ---
 
-## 7.2 Objective vs Subjective Classification
+# 7.2 Objective vs Subjective Classification
 
 ## Subjective Classification
 
@@ -802,7 +796,7 @@ can consistently signal negative sentiment.
 
 ---
 
-## 8. Common Visualization Mistakes
+# 8. Common Visualization Mistakes
 
 The lecture concludes with practical mistakes to avoid.
 
@@ -848,7 +842,7 @@ Charts should communicate insight, not merely display data.
 
 ---
 
-## 9. Visualization Decision Framework
+# 9. Visualization Decision Framework
 
 ## What Do You Want to Show?
 
@@ -883,7 +877,7 @@ What is your analytical objective?
 
 ---
 
-## 10. Golden Rules of Effective Chart Design
+# 10. Golden Rules of Effective Chart Design
 
 1. Always choose charts based on analytical purpose.
     
@@ -924,5 +918,3 @@ What is your analytical objective?
 19. Relationship analysis is essential for exploratory analytics.
     
 20. Poor chart selection can completely hide important insights.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
