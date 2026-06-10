@@ -1,12 +1,6 @@
----
-title: W03 - General Feature Engineering Techniques
-module: Statistical Modelling And Inferencing
-week: W03 - General Feature Engineering Techniques
----
-
 ### Practical Implementation: Feature Extraction (PCA) and Construction
 
-This module demonstrates the application of **Principal Component Analysis (PCA)** for feature extraction and manual **feature construction** to enhance predictive performance using the Telco Customer Churn [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/Experiential%20Learning%20Activity.md#dataset).
+This module demonstrates the application of **Principal Component Analysis (PCA)** for feature extraction and manual **feature construction** to enhance predictive performance using the Telco Customer Churn dataset.
 
 ### 1. Feature Extraction via PCA
 
@@ -37,7 +31,7 @@ Python
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 
-## Preprocessing
+# Preprocessing
 le = LabelEncoder()
 for col in categorical_features:
     df[col] = le.fit_transform(df[col])
@@ -45,7 +39,7 @@ for col in categorical_features:
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(df.drop('Churn', axis=1))
 
-## PCA Extraction
+# PCA Extraction
 pca = PCA(n_components=2)
 X_pca = pca.fit_transform(X_scaled)
 ```
@@ -65,17 +59,17 @@ By combining `TotalCharges`, `MonthlyCharges`, and `Tenure`, we can engineer a f
 Python
 
 ```
-## Feature Construction
+# Feature Construction
 df['avg_charges_per_service'] = df['TotalCharges'] / (df['MonthlyCharges'] + df['Tenure'])
 
-## Cleaning: Ensure no infinities or NaNs arise from the division
+# Cleaning: Ensure no infinities or NaNs arise from the division
 df.replace([np.inf, -np.inf], 0, inplace=True)
 df.fillna(0, inplace=True)
 ```
 
 ### 3. Key Technical Takeaways
 
-- **Why PCA?** It reduces noise and redundancy by focusing only on the directions of maximum variance. It makes modeling simpler and allows for 2D [visualization](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W04 - Dimensionality Reduction Techniques/Readme.md#visualization) of high-dimensional datasets.
+- **Why PCA?** It reduces noise and redundancy by focusing only on the directions of maximum variance. It makes modeling simpler and allows for 2D visualization of high-dimensional datasets.
     
 - **Component Contribution:** By examining the loadings (weights) of each original feature on the principal components, we can interpret _what_ the PCA components actually represent (e.g., `Tenure` and `TotalCharges` heavily influence `PC1`).
     
@@ -86,7 +80,7 @@ df.fillna(0, inplace=True)
     - **Construction (New Features):** Creative and domain-driven; invents new metrics that align with business logic to improve model predictive signal.
         
 
-#### **Workflow [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Overview.md#summary)) for Practical Tasks**
+#### **Workflow Summary for Practical Tasks**
 
 1. **Identify Features:** Separate numerical and categorical columns.
     
@@ -97,5 +91,3 @@ df.fillna(0, inplace=True)
 4. **Construct:** Use domain knowledge to create new features that might reveal hidden insights.
     
 5. **Iterate:** Always visualize your new features to check for distinct groupings relative to your target variable.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
