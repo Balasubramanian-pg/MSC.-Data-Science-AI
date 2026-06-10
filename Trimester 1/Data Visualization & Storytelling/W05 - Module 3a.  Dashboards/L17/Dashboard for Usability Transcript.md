@@ -1,11 +1,5 @@
----
-title: W05 - Module 3a.  Dashboards
-module: Statistical Modelling And Inferencing
-week: W05 - Module 3a.  Dashboards
----
 
-
-## Page 1
+# Page 1
 
  
  
@@ -59,7 +53,7 @@ Then data inconsistency, conflicting sources and definitions. This again would g
 to the setting of the context depending upon who is the user. For example, you have 
 
 
-## Page 2
+# Page 2
 
  
  
@@ -112,7 +106,7 @@ to think that you create a complex dashboard with different levels of filters an
 features, but you should also think from the user perspective how much type and 
 
 
-## Page 3
+# Page 3
 
  
  
@@ -166,7 +160,7 @@ translates the numbers into narratives and you have seen narrative when told pro
 will lead to broader retention and action. So, now let us discuss about different types 
 
 
-## Page 4
+# Page 4
 
  
  
@@ -220,7 +214,7 @@ of both top management and the analyst and the operational person also, dependin
 upon the orientation of the tactical change or the performance that you are looking at, 
 
 
-## Page 5
+# Page 5
 
  
  
@@ -274,7 +268,7 @@ stores where the sales have been dropping than normal, so all these trends can b
 combined together and put into a tactical dashboard saying that the company is 
 
 
-## Page 6
+# Page 6
 
  
  
@@ -328,7 +322,7 @@ This would give right away the attention to the regions which have not reached t
 targets or which are doing well. So, this way you can guide the attention of the user to 
 
 
-## Page 7
+# Page 7
 
  
  
@@ -382,7 +376,7 @@ accordingly. Now, finally coming to the most important aspect test the usability
 design. 
 
 
-## Page 8
+# Page 8
 
  
  
@@ -419,6 +413,3 @@ on a regular basis.
   
 ------------------------------------------------------End----------------------------------------------------- 
  
-
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
