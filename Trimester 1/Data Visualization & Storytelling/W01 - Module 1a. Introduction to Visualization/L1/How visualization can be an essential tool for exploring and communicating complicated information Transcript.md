@@ -1,10 +1,4 @@
----
-title: W01 - Module 1a. Introduction to Visualization
-module: Statistical Modelling And Inferencing
-week: W01 - Module 1a. Introduction to Visualization
----
-
-## Data Visualisation and Storytelling - Lecture Transcript
+# Data Visualisation and Storytelling - Lecture Transcript
 
 ## Table of Contents
 
@@ -401,5 +395,3 @@ Start: What do you want to show?
 5. Check axis compatibility in parallel coordinates and dual-axis charts
 6. Handle imbalanced datasets with care before modeling
 7. Trend changes demand root cause analysis
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
