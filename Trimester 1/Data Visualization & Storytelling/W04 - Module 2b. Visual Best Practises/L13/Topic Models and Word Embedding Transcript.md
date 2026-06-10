@@ -1,12 +1,6 @@
----
-title: W04 - Module 2b. Visual Best Practises
-module: Statistical Modelling And Inferencing
-week: W04 - Module 2b. Visual Best Practises
----
+# Topic Models and Word Embeddings
 
-## Topic Models and Word Embeddings
-
-## Semantic Structure Discovery in Text Analytics
+# Semantic Structure Discovery in Text Analytics
 
 This section marks one of the most important conceptual transitions in modern NLP:
 
@@ -52,11 +46,11 @@ The core problem becomes:
 How can machines represent meaning mathematically?
 ```
 
-## The Evolution of Text Analytics
+# The Evolution of Text Analytics
 
 The lecture now moves through increasingly sophisticated NLP stages.
 
-## NLP Complexity Hierarchy
+# NLP Complexity Hierarchy
 
 ```mermaid
 flowchart TD
@@ -84,7 +78,7 @@ Modern NLP asks:
 What meanings are encoded in linguistic context?
 ```
 
-## The Central Hypothesis of Word Embeddings
+# The Central Hypothesis of Word Embeddings
 
 The lecture introduces one of the most important ideas in NLP:
 
@@ -96,7 +90,7 @@ This is called:
 the distributional hypothesis
 ```
 
-## Distributional Hypothesis
+# Distributional Hypothesis
 
 Popularized by linguist J.R. Firth:
 
@@ -117,7 +111,7 @@ This idea underlies:
 - modern LLMs
     
 ![[Pasted image 20260528160622.png]]
-## Why Context Matters
+# Why Context Matters
 
 Words rarely carry meaning independently.
 
@@ -132,7 +126,7 @@ Meaning emerges through:
 - semantic context
     
 
-## Contextual Meaning Model
+# Contextual Meaning Model
 
 ```mermaid
 flowchart LR
@@ -142,7 +136,7 @@ flowchart LR
     --> D[Meaning Representation]
 ```
 
-## Example from the Lecture
+# Example from the Lecture
 
 The lecture references words such as:
 
@@ -161,7 +155,7 @@ Therefore the algorithm infers:
 they belong to a similar semantic region
 ```
 
-## Important Insight
+# Important Insight
 
 Machines are not explicitly taught:
 
@@ -173,9 +167,9 @@ Instead:
 
 they infer meaning statistically from contextual usage.
 
-## Semantic Similarity
+# Semantic Similarity
 
-## Meaning Through Proximity
+# Meaning Through Proximity
 
 The lecture introduces:
 
@@ -185,7 +179,7 @@ semantic grouping
 
 Words with similar usage patterns become mathematically close.
 
-## Semantic Space Model
+# Semantic Space Model
 
 ```mermaid
 flowchart TD
@@ -201,9 +195,9 @@ This forms the basis of:
 vector semantics
 ```
 ![[Word Embeddings.png]]
-## Word Embeddings
+# Word Embeddings
 
-## Mathematical Representation of Meaning
+# Mathematical Representation of Meaning
 
 The lecture now introduces:
 
@@ -213,7 +207,7 @@ word embeddings
 
 This is one of the foundational ideas in modern AI.
 
-## What Is a Word Embedding?
+# What Is a Word Embedding?
 
 A word embedding converts a word into:
 
@@ -223,7 +217,7 @@ a numerical vector representation
 
 where semantic similarity corresponds to geometric proximity.
 
-## Embedding Representation
+# Embedding Representation
 
 ```mermaid
 flowchart LR
@@ -232,7 +226,7 @@ flowchart LR
     --> C[Position in Semantic Space]
 ```
 
-## Why This Matters
+# Why This Matters
 
 Computers cannot directly understand language.
 
@@ -253,11 +247,11 @@ Word embeddings transform:
 language into geometry
 ```
 
-## Semantic Geometry
+# Semantic Geometry
 
 Words with similar meaning occupy nearby positions.
 
-## Example
+# Example
 
 |Word|Semantic Neighborhood|
 |---|---|
@@ -265,7 +259,7 @@ Words with similar meaning occupy nearby positions.
 |Bankruptcy|Debt, Default, Insolvency|
 |Happy|Joyful, Excited, Glad|
 
-## The Famous King-Man-Woman-Queen Example
+# The Famous King-Man-Woman-Queen Example
 
 The lecture references one of the most famous embedding examples:
 
@@ -285,7 +279,7 @@ This is astonishing because:
 - the relationship emerges statistically
     
 
-## Why This Happens
+# Why This Happens
 
 The model learns:
 
@@ -298,7 +292,7 @@ The model learns:
 
 through exposure to massive text corpora.
 
-## Embedding Learning Pipeline
+# Embedding Learning Pipeline
 
 ```mermaid
 flowchart TD
@@ -310,9 +304,9 @@ flowchart TD
     --> E[Semantic Vector Space]
 ```
 
-## Important Concept
+# Important Concept
 
-## Similar Meaning = Nearby Vectors
+# Similar Meaning = Nearby Vectors
 
 In embedding spaces:
 
@@ -320,7 +314,7 @@ In embedding spaces:
 distance represents semantic similarity
 ```
 
-## Semantic Distance Model
+# Semantic Distance Model
 
 ```mermaid
 flowchart LR
@@ -330,7 +324,7 @@ flowchart LR
     A -->|Far| C[Banana]
 ```
 
-## Why Embeddings Changed NLP
+# Why Embeddings Changed NLP
 
 Before embeddings:
 
@@ -354,9 +348,9 @@ Embeddings introduced:
 
 This revolutionized NLP.
 
-## Enron Email Embeddings
+# Enron Email Embeddings
 
-## Discovering Hidden Communication Themes
+# Discovering Hidden Communication Themes
 
 The lecture applies embeddings to:
 
@@ -373,7 +367,7 @@ The algorithm discovers semantic clusters such as:
 |Destroy / transmit / distribute|Operational actions|
 |Penalty / comply / protocol|Regulatory processes|
 
-## Why This Is Important
+# Why This Is Important
 
 The system discovers structure without explicit labels.
 
@@ -383,7 +377,7 @@ This is:
 unsupervised semantic organization
 ```
 
-## Semantic Clustering Pipeline
+# Semantic Clustering Pipeline
 
 ```mermaid
 flowchart TD
@@ -395,7 +389,7 @@ flowchart TD
     --> E[Topic Discovery]
 ```
 
-## Important Insight
+# Important Insight
 
 The machine is not explicitly told:
 
@@ -405,7 +399,7 @@ The machine is not explicitly told:
 
 It infers the grouping statistically.
 
-## Hidden Meaning Discovery
+# Hidden Meaning Discovery
 
 This is one of the deepest capabilities in machine learning:
 
@@ -415,9 +409,9 @@ latent structure discovery
 
 The model uncovers hidden semantic organization inside raw text.
 
-## Topic Modeling
+# Topic Modeling
 
-## Discovering Latent Themes
+# Discovering Latent Themes
 
 The lecture now introduces:
 
@@ -427,7 +421,7 @@ topic modeling
 
 This is another major NLP milestone.
 
-## What Is Topic Modeling?
+# What Is Topic Modeling?
 
 Topic modeling attempts to identify:
 
@@ -437,7 +431,7 @@ hidden thematic structures inside documents
 
 without manual labeling.
 
-## Topic Modeling Workflow
+# Topic Modeling Workflow
 
 ```mermaid
 flowchart TD
@@ -448,11 +442,11 @@ flowchart TD
     --> D[Document Clustering]
 ```
 
-## Key Idea
+# Key Idea
 
 Documents discussing similar themes tend to use similar vocabularies.
 
-## Example
+# Example
 
 Emails containing words like:
 
@@ -471,9 +465,9 @@ likely belong to a:
 regulatory topic
 ```
 ![[LSA & LDA.png]]
-## LDA and LSA
+# LDA and LSA
 
-## Unsupervised Topic Discovery
+# Unsupervised Topic Discovery
 
 The lecture references:
 
@@ -486,9 +480,9 @@ without detail.
 
 These are foundational topic modeling algorithms.
 
-## LSA
+# LSA
 
-## Latent Semantic Analysis
+# Latent Semantic Analysis
 
 LSA uses:
 
@@ -499,13 +493,13 @@ LSA uses:
 
 to discover latent semantic structure.
 
-## LDA
+# LDA
 
-## Latent Dirichlet Allocation
+# Latent Dirichlet Allocation
 
 LDA models documents probabilistically as mixtures of topics.
 
-## Simplified LDA Idea
+# Simplified LDA Idea
 
 ```mermaid
 flowchart TD
@@ -518,7 +512,7 @@ flowchart TD
 
 Documents are treated as combinations of latent topics.
 
-## Important Insight
+# Important Insight
 
 Topic models do not assign:
 
@@ -530,9 +524,9 @@ Instead:
 
 documents contain mixtures of themes.
 
-## Inter-Topic Distance
+# Inter-Topic Distance
 
-## Bubble Chart Visualization
+# Bubble Chart Visualization
 
 The lecture discusses:
 
@@ -545,7 +539,7 @@ This is commonly seen in topic modeling tools like:
 - pyLDAvis
     
 
-## What Inter-Topic Distance Means
+# What Inter-Topic Distance Means
 
 If topics appear close together:
 
@@ -559,7 +553,7 @@ If topics are distant:
 - they discuss very different themes
     
 
-## Topic Distance Visualization
+# Topic Distance Visualization
 
 ```mermaid
 flowchart LR
@@ -569,13 +563,13 @@ flowchart LR
     A -->|Far| C[Topic 3]
 ```
 
-## Important Semantic Principle
+# Important Semantic Principle
 
 ```text
 distance in embedding/topic space approximates semantic difference
 ```
 
-## Bubble Size Meaning
+# Bubble Size Meaning
 
 Typically:
 
@@ -584,7 +578,7 @@ Typically:
 - smaller bubbles = less frequent topics
     
 
-## Why Topic Modeling Is Powerful
+# Why Topic Modeling Is Powerful
 
 It enables:
 
@@ -601,7 +595,7 @@ It enables:
 
 without manual labeling.
 
-## Applications of Topic Modeling
+# Applications of Topic Modeling
 
 |Domain|Use Case|
 |---|---|
@@ -611,10 +605,10 @@ without manual labeling.
 |Healthcare|Clinical themes|
 |Social media|Trend discovery|
 
-## Hidden Insight
+# Hidden Insight
 ![[Latent Semantic Geometry.png]]
 
-## NLP as Dimensionality Reduction
+# NLP as Dimensionality Reduction
 
 Text is extremely high-dimensional.
 
@@ -631,7 +625,7 @@ into:
 small semantic structures humans can interpret
 ```
 
-## Semantic Compression Pipeline
+# Semantic Compression Pipeline
 
 ```mermaid
 flowchart TD
@@ -642,7 +636,7 @@ flowchart TD
     --> D[Human Interpretable Themes]
 ```
 
-## Relationship Between Embeddings and Topic Models
+# Relationship Between Embeddings and Topic Models
 
 |Embeddings|Topic Models|
 |---|---|
@@ -650,7 +644,7 @@ flowchart TD
 |Continuous vector space|Probabilistic topic space|
 |Local semantic similarity|Global thematic structure|
 
-## Modern AI Connection
+# Modern AI Connection
 
 Modern LLMs fundamentally rely on:
 
@@ -663,7 +657,7 @@ Modern LLMs fundamentally rely on:
 
 The lecture is indirectly introducing the foundations of modern generative AI.
 
-## Modern Transformer Pipeline
+# Modern Transformer Pipeline
 
 ```mermaid
 flowchart TD
@@ -676,7 +670,7 @@ flowchart TD
     --> F[Prediction]
 ```
 
-## Final Conceptual Shift
+# Final Conceptual Shift
 
 This lecture moves NLP from:
 
@@ -691,7 +685,7 @@ latent semantic geometry
 
 where meaning emerges mathematically through contextual similarity.
 
-## Final Mental Model
+# Final Mental Model
 
 Think of word embeddings and topic models as:
 
@@ -702,9 +696,9 @@ machines constructing geometric maps of meaning from language usage patterns
 through unsupervised semantic organization.
  
 ![[Pasted image 20260528221002.png]]
-## Topic Modeling, t-SNE Clustering, and Semantic Dimensionality Reduction
+# Topic Modeling, t-SNE Clustering, and Semantic Dimensionality Reduction
 
-## Visualizing Latent Themes in High-Dimensional Text Data
+# Visualizing Latent Themes in High-Dimensional Text Data
 
 This section completes the progression from:
 
@@ -749,7 +743,7 @@ attempt to compress these spaces into:
 human-interpretable geometric representations
 ```
 
-## The Central NLP Challenge
+# The Central NLP Challenge
 
 Textual data is extraordinarily high-dimensional.
 
@@ -764,7 +758,7 @@ Because every unique word potentially becomes:
 - a semantic coordinate
     
 
-## High-Dimensional Text Space
+# High-Dimensional Text Space
 
 ```mermaid
 flowchart TD
@@ -790,9 +784,9 @@ Therefore NLP requires:
 dimensionality reduction
 ```
 
-## Revisiting Topic Modeling
+# Revisiting Topic Modeling
 
-## Discovering Hidden Themes
+# Discovering Hidden Themes
 
 The lecture continues discussing:
 
@@ -811,7 +805,7 @@ The key idea remains:
 documents discussing similar themes use similar vocabularies
 ```
 
-## Topic Modeling Objective
+# Topic Modeling Objective
 
 Topic models attempt to answer:
 
@@ -819,7 +813,7 @@ Topic models attempt to answer:
 What are the dominant semantic themes hidden inside the corpus?
 ```
 
-## Topic Modeling Pipeline
+# Topic Modeling Pipeline
 
 ```mermaid
 flowchart TD
@@ -831,7 +825,7 @@ flowchart TD
     --> E[Visualization]
 ```
 
-## Topic Composition
+# Topic Composition
 
 The lecture emphasizes:
 
@@ -846,7 +840,7 @@ A topic model can divide documents into:
 
 depending on configuration.
 
-## Important Insight
+# Important Insight
 
 Topic count is usually:
 
@@ -856,7 +850,7 @@ a modeling choice
 
 not an objectively fixed truth.
 
-## Why Topic Number Matters
+# Why Topic Number Matters
 
 Too few topics:
 
@@ -872,7 +866,7 @@ Too many topics:
 - creates noisy interpretations
     
 
-## Topic Granularity Tradeoff
+# Topic Granularity Tradeoff
 
 ```mermaid
 flowchart LR
@@ -883,7 +877,7 @@ flowchart LR
     --> D[Finer Semantic Detail]
 ```
 
-## Topic Frequency Visualization
+# Topic Frequency Visualization
 
 The lecture references:
 
@@ -902,7 +896,7 @@ We interpret them through:
 - semantic patterns
     
 
-## Example
+# Example
 
 A topic containing words such as:
 
@@ -921,7 +915,7 @@ is interpreted as:
 a regulatory/legal topic
 ```
 ![[Pasted image 20260528221315.png]]
-## Important NLP Principle
+# Important NLP Principle
 
 Topic models do not inherently know semantic labels.
 
@@ -932,7 +926,7 @@ Humans assign labels after observing:
 - contextual meaning
     
 
-## Human Interpretation Layer
+# Human Interpretation Layer
 
 ```mermaid
 flowchart TD
@@ -941,9 +935,9 @@ flowchart TD
     --> C[Human Semantic Interpretation]
 ```
 
-## Inter-Topic Distance
+# Inter-Topic Distance
 
-## Semantic Similarity Between Topics
+# Semantic Similarity Between Topics
 
 The lecture again references:
 
@@ -953,7 +947,7 @@ bubble distances between topics
 
 This is fundamentally geometric.
 
-## Topic Space Geometry
+# Topic Space Geometry
 
 If two topics appear close:
 
@@ -967,7 +961,7 @@ If distant:
 - they represent distinct themes
     
 
-## Topic Distance Model
+# Topic Distance Model
 
 ```mermaid
 flowchart LR
@@ -977,7 +971,7 @@ flowchart LR
     A -->|Far| C[Operational Logistics]
 ```
 
-## Important Hidden Insight
+# Important Hidden Insight
 
 Modern NLP largely operates through:
 
@@ -987,9 +981,9 @@ geometric representations of meaning
 
 rather than symbolic reasoning.
 
-## Transition Into t-SNE Clustering
+# Transition Into t-SNE Clustering
 
-## Visualizing High-Dimensional Semantic Spaces
+# Visualizing High-Dimensional Semantic Spaces
 
 The lecture now introduces:
 
@@ -999,7 +993,7 @@ t-SNE clustering
 
 This is one of the most important visualization techniques in machine learning.
 
-## Full Form
+# Full Form
 
 t-SNE stands for:
 
@@ -1007,7 +1001,7 @@ t-SNE stands for:
 t-distributed Stochastic Neighbor Embedding
 ```
 
-## Why t-SNE Exists
+# Why t-SNE Exists
 
 Modern datasets often exist in:
 
@@ -1027,7 +1021,7 @@ Therefore:
 
 t-SNE attempts to preserve semantic relationships while reducing dimensions.
 
-## Dimensionality Reduction Problem
+# Dimensionality Reduction Problem
 
 ```mermaid
 flowchart TD
@@ -1037,7 +1031,7 @@ flowchart TD
     --> D[Human Interpretation]
 ```
 
-## Core Goal of t-SNE
+# Core Goal of t-SNE
 
 t-SNE tries to preserve:
 
@@ -1049,7 +1043,7 @@ Meaning:
 
 points close in high-dimensional space remain close in lower-dimensional visualization.
 
-## Important Intuition
+# Important Intuition
 
 Imagine compressing a globe onto a flat map.
 
@@ -1064,7 +1058,7 @@ t-SNE attempts to preserve:
 
 even if global geometry changes.
 
-## t-SNE Intuition
+# t-SNE Intuition
 
 ```mermaid
 flowchart LR
@@ -1073,7 +1067,7 @@ flowchart LR
     --> C[2D Cluster Visualization]
 ```
 
-## Why t-SNE Became Popular
+# Why t-SNE Became Popular
 
 t-SNE produces visually intuitive clusters.
 
@@ -1083,7 +1077,7 @@ This makes hidden semantic structures:
 perceptually accessible
 ```
 
-## The Lecture’s Document Clusters
+# The Lecture’s Document Clusters
 
 The lecture describes colored topical regions such as:
 
@@ -1094,11 +1088,11 @@ The lecture describes colored topical regions such as:
 |Blue|Fallout|
 |Red|Regulatory|
 
-## What This Means
+# What This Means
 
 Documents with similar semantic content cluster together geometrically.
 
-## Semantic Cluster Structure
+# Semantic Cluster Structure
 
 ```mermaid
 flowchart TD
@@ -1109,7 +1103,7 @@ flowchart TD
     A --> D[Operational Cluster]
 ```
 
-## Important Insight
+# Important Insight
 
 Distance in t-SNE space approximately reflects:
 
@@ -1117,7 +1111,7 @@ Distance in t-SNE space approximately reflects:
 semantic similarity
 ```
 
-## Why Clustering Matters
+# Why Clustering Matters
 
 Clusters reveal:
 
@@ -1132,7 +1126,7 @@ Clusters reveal:
 
 without manual categorization.
 
-## Important Caveat About t-SNE
+# Important Caveat About t-SNE
 
 The lecture simplifies t-SNE significantly.
 
@@ -1140,7 +1134,7 @@ In reality:
 
 t-SNE is excellent for visualization but has limitations.
 
-## t-SNE Limitations
+# t-SNE Limitations
 
 |Limitation|Explanation|
 |---|---|
@@ -1149,13 +1143,13 @@ t-SNE is excellent for visualization but has limitations.
 |Non-deterministic|Different runs may vary|
 |Computationally expensive|Large datasets scale poorly|
 
-## Important Visualization Warning
+# Important Visualization Warning
 
 ```text
 t-SNE visualizations are interpretive approximations, not exact geometric truths.
 ```
 
-## Why Dimensionality Reduction Is Necessary
+# Why Dimensionality Reduction Is Necessary
 
 Without reduction:
 
@@ -1174,7 +1168,7 @@ Modern transformer embeddings may contain:
 
 Humans cannot conceptualize this directly.
 
-## Embedding Compression Pipeline
+# Embedding Compression Pipeline
 
 ```mermaid
 flowchart TD
@@ -1185,7 +1179,7 @@ flowchart TD
     --> D[2D Visualization]
 ```
 
-## Relationship Between Embeddings, Topics, and t-SNE
+# Relationship Between Embeddings, Topics, and t-SNE
 
 These techniques operate at different abstraction levels.
 
@@ -1195,7 +1189,7 @@ These techniques operate at different abstraction levels.
 |Topic Models|Discover latent themes|
 |t-SNE|Visualize high-dimensional structure|
 
-## Integrated NLP Pipeline
+# Integrated NLP Pipeline
 
 ```mermaid
 flowchart TD
@@ -1207,7 +1201,7 @@ flowchart TD
     --> E[Cluster Visualization]
 ```
 
-## Why Semantic Visualization Matters
+# Why Semantic Visualization Matters
 
 Humans are visual creatures.
 
@@ -1224,7 +1218,7 @@ Semantic visualization allows analysts to:
 - understand document structure
     
 
-## Real-World Applications
+# Real-World Applications
 
 |Domain|Application|
 |---|---|
@@ -1235,9 +1229,9 @@ Semantic visualization allows analysts to:
 |Legal Tech|Case topic analysis|
 |Search Engines|Semantic retrieval|
 
-## Hidden Conceptual Shift
+# Hidden Conceptual Shift
 
-## Language Becomes Spatial Geometry
+# Language Becomes Spatial Geometry
 
 One of the deepest ideas in this lecture is:
 
@@ -1258,7 +1252,7 @@ Words, documents, and themes become:
 
 inside semantic spaces.
 
-## Modern AI Connection
+# Modern AI Connection
 
 Large Language Models fundamentally rely on:
 
@@ -1275,7 +1269,7 @@ The lecture is effectively introducing:
 the geometric foundations of modern generative AI
 ```
 
-## Transformer Semantic Pipeline
+# Transformer Semantic Pipeline
 
 ```mermaid
 flowchart TD
@@ -1288,7 +1282,7 @@ flowchart TD
     --> F[Prediction]
 ```
 
-## Important Final Insight
+# Important Final Insight
 
 All these techniques:
 
@@ -1305,7 +1299,7 @@ attempt to solve the same problem:
 making latent semantic structure visible and interpretable
 ```
 
-## Final Mental Model
+# Final Mental Model
 
 Think of modern NLP visualization as:
 
@@ -1316,5 +1310,3 @@ cartography for semantic space
 where algorithms build geometric maps of meaning hidden inside language.
 
 ![[Pasted image 20260528221900.png]]
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
