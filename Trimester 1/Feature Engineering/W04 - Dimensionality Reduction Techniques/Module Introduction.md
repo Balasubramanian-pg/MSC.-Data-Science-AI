@@ -1,18 +1,12 @@
----
-title: W04 - Dimensionality Reduction Techniques
-module: Statistical Modelling And Inferencing
-week: W04 - Dimensionality Reduction Techniques
----
-
 Dimensionality reduction is a vital component of modern machine learning. As datasets grow in size and complexity, the number of features—or dimensions—can become a significant hurdle. Understanding why this happens and how to manage it is key to building efficient, generalizable models.
 
 ### 1. What is Dimensionality?
 
 In data science, **dimensionality** refers to the number of input features ($n$) used to represent a single data point. Each feature represents an axis in an $n$-dimensional space.
 
-- **Low-dimensional:** A housing [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/Experiential%20Learning%20Activity.md#dataset) with 4 columns (size, bedrooms, price, location).
+- **Low-dimensional:** A housing dataset with 4 columns (size, bedrooms, price, location).
     
-- **High-dimensional:** An image [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/Experiential%20Learning%20Activity.md#dataset) where each pixel (often thousands) is a feature, or text data transformed into embeddings with hundreds or thousands of dimensions.
+- **High-dimensional:** An image dataset where each pixel (often thousands) is a feature, or text data transformed into embeddings with hundreds or thousands of dimensions.
     
 
 ### 2. The Problems with High Dimensionality
@@ -41,7 +35,7 @@ As the number of features increases, the "Curse of Dimensionality" begins to com
 - **t-SNE (t-Distributed Stochastic Neighbor Embedding):** A powerful non-linear technique primarily used for visualizing high-dimensional data in 2D or 3D by preserving local neighborhoods between points.
     
 
-### [4. Application Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01 - Overview of Feature Engineering/3.%20Working%20With%20Sample%20Dataset%20-%20I.md#4-application-[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Overview.md#summary)))
+### 4. Application Summary
 
 Dimensionality reduction is a balancing act. You are trading a small amount of information loss for significant gains in computational speed, model generalizability, and human interpretability.
 
@@ -49,13 +43,11 @@ Dimensionality reduction is a balancing act. You are trading a small amount of i
 
 1. **Before Clustering:** To make distance metrics meaningful.
     
-2. **For [Visualization](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W04 - Dimensionality Reduction Techniques/Readme.md#visualization):** To project complex data into 2D/3D for visual inspection.
+2. **For Visualization:** To project complex data into 2D/3D for visual inspection.
     
 3. **For Model Efficiency:** When training time or memory limits are reached.
     
 4. **To Mitigate Overfitting:** By reducing the feature space to the most informative components.
     
 
-Would you like to deep dive into the mathematical mechanics of **PCA**, or shall we look at how to implement **t-SNE** for data [visualization](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W04 - Dimensionality Reduction Techniques/Readme.md#visualization)?
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
+Would you like to deep dive into the mathematical mechanics of **PCA**, or shall we look at how to implement **t-SNE** for data visualization?
