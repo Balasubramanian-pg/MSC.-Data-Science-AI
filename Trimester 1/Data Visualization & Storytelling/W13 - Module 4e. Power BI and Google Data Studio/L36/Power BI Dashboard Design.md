@@ -1,11 +1,5 @@
----
-title: W13 - Module 4e. Power BI and Google Data Studio - Module 4e. Power BI and Google Data Studio - Module 4e. Power BI and Google Data Studio
-module: Statistical Modelling And Inferencing
-week: W13 - Module 4e. Power BI and Google Data Studio - Module 4e. Power BI and Google Data Studio - Module 4e. Power BI and Google Data Studio
----
 
-
-## Page 1
+# Page 1
 
  
  
@@ -60,7 +54,7 @@ Michigan also has similar sales but higher profit per customer. But overall sale
 Michigan is very, very less compared to the overall sales in California. So as an 
 
 
-## Page 2
+# Page 2
 
  
  
@@ -116,7 +110,7 @@ And you just do add. So you will be able to create a new measure which is not th
 in the original data. And this will be stored only in this particular system. 
 
 
-## Page 3
+# Page 3
 
  
  
@@ -171,7 +165,7 @@ compute before we will be able to use them in the dashboard.
   
 
 
-## Page 4
+# Page 4
 
  
  
@@ -227,7 +221,7 @@ Recall all your just flood principles, principles of effective visualisation, na
 storytelling, so on and so forth. 
 
 
-## Page 5
+# Page 5
 
  
  
@@ -283,7 +277,7 @@ what is looking like this is now looking like this. You can customise each and e
 element of this particular visual. 
 
 
-## Page 6
+# Page 6
 
  
  
@@ -339,7 +333,7 @@ OK, here also you can do a quick measure and do something. And then there are
 ways to if you want to present it as an average, you want to present it as a standard 
 
 
-## Page 7
+# Page 7
 
  
  
@@ -395,7 +389,7 @@ appeal. Now, going back to this, let us try to further add more values cards. OK
 you want to add background colour to the card. 
 
 
-## Page 8
+# Page 8
 
  
  
@@ -451,7 +445,7 @@ profit per customer, the profit per customer again is currency.
   
 
 
-## Page 9
+# Page 9
 
  
  
@@ -506,7 +500,7 @@ features that you want to create.
   
 
 
-## Page 10
+# Page 10
 
  
  
@@ -562,7 +556,7 @@ So this is the thing that we are done. So background colour is this. Yeah.
   
 
 
-## Page 11
+# Page 11
 
  
  
@@ -616,7 +610,7 @@ including almost similar things again and again on the dashboard.
   
 
 
-## Page 12
+# Page 12
 
  
  
@@ -672,7 +666,7 @@ the dashboard.
   
 
 
-## Page 13
+# Page 13
 
  
  
@@ -728,7 +722,7 @@ understand, OK, what are the sales.
   
 
 
-## Page 14
+# Page 14
 
  
  
@@ -784,7 +778,7 @@ done all that. Now, what I'm going to do, I'm just going to add.
   
 
 
-## Page 15
+# Page 15
 
  
  
@@ -839,7 +833,7 @@ discount, but for profit for customer, which is horizontal.
   
 
 
-## Page 16
+# Page 16
 
  
  
@@ -895,7 +889,7 @@ regions. This is already represented here.
   
 
 
-## Page 17
+# Page 17
 
  
  
@@ -951,7 +945,7 @@ remember is we are now let us talk about a smaller region.
   
 
 
-## Page 18
+# Page 18
 
  
  
@@ -1008,7 +1002,7 @@ So I have the region and I don't. Yeah. So what I can do.
 Right. Then go to the title. See here. 
 
 
-## Page 19
+# Page 19
 
  
  
@@ -1063,7 +1057,7 @@ is dragging it here to make it look like this mind to this I'm just dragging the
 so you get first statement that is no problem because no selection is made so that's 
 
 
-## Page 20
+# Page 20
 
  
  
@@ -1110,6 +1104,3 @@ and feel to your audience and interactivity to them okay thank you.
  
 -------------------------------------------------------End---------------------------------------------------- 
  
-
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
