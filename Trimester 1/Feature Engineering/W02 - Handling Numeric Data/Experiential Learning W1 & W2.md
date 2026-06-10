@@ -1,12 +1,6 @@
----
-title: W02 - Handling Numeric Data
-module: Statistical Modelling And Inferencing
-week: W02 - Handling Numeric Data
----
+**Dataset here for your practice : **[Titanic-Dataset.xlsx](https://lumen.bitspilani-digital.edu.in/content/enforced/7097-T3-25_MDSDF403/Titanic-Dataset.xlsx?isCourseFile=true&ou=7097)****
 
-**[Dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/Experiential%20Learning%20Activity.md#dataset) here for your practice : **[Titanic-Dataset.xlsx](https://lumen.bitspilani-digital.edu.in/content/enforced/7097-T3-25_MDSDF403/Titanic-Dataset.xlsx?isCourseFile=true&ou=7097)****
-
-This experiential learning exercise is a perfect application of the concepts covered in Weeks 1 and 2. The Titanic [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/Experiential%20Learning%20Activity.md#dataset) is historically significant in data science precisely because it forces you to navigate the messy, real-world nature of data before you ever touch an algorithm.
+This experiential learning exercise is a perfect application of the concepts covered in Weeks 1 and 2. The Titanic dataset is historically significant in data science precisely because it forces you to navigate the messy, real-world nature of data before you ever touch an algorithm.
 
 Below is a structured guide to help you tackle this exercise, organized by your task list.
 
@@ -16,7 +10,7 @@ Before engineering, you must understand your feature space.
 
 - **DataType Check:** Use `df.info()` to distinguish between numeric (float/int) and object/categorical types.
     
-- **Distribution Analysis:** Use `df.describe()` for [summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Overview.md#summary)) statistics and `seaborn.histplot` or `kdeplot` to visualize the skewness of `Fare` and the distribution of `Age`.
+- **Distribution Analysis:** Use `df.describe()` for summary statistics and `seaborn.histplot` or `kdeplot` to visualize the skewness of `Fare` and the distribution of `Age`.
     
 
 ### **2. Handling Missing Values**
@@ -54,7 +48,7 @@ Models cannot process raw strings.
 
 Focus on `Age` and `Fare`.
 
-- **[Min-Max Scaling](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W02 - Handling Numeric Data/3.%20Feature%20Scaling.md#min-max-scaling):** Use if your model assumes features are bounded (e.g., KNN).
+- **Min-Max Scaling:** Use if your model assumes features are bounded (e.g., KNN).
     
 - **Standardization (Z-Score):** Preferred for linear models or when your data is roughly normally distributed.
     
@@ -98,7 +92,7 @@ To prove the value of your work, run this comparison:
 
 When you reach the stretch goal, don't build two separate, messy scripts. Use `sklearn.pipeline.Pipeline` or `ColumnTransformer`. This ensures that any transformation applied to your training data (like the median used for Age imputation) is **exactly** applied to your test data, preventing data leakage.
 
-To provide the detailed implementation guidance you requested for the Titanic [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/Experiential%20Learning%20Activity.md#dataset), let's break down the most technical "pain points" of your task list into actionable Python code.
+To provide the detailed implementation guidance you requested for the Titanic dataset, let's break down the most technical "pain points" of your task list into actionable Python code.
 
 Using a `Pipeline` and `ColumnTransformer` is the industry standard for this. It prevents **data leakage** (a common trap where your model "sees" test set information during training).
 
@@ -114,23 +108,23 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, FunctionTransformer
 import numpy as np
 
-## Define columns by type
+# Define columns by type
 numeric_features = ['Age', 'SibSp', 'Parch', 'Fare']
 categorical_features = ['Sex', 'Embarked']
 
-## Numeric pipeline: Impute missing Age with median, then scale
+# Numeric pipeline: Impute missing Age with median, then scale
 numeric_transformer = Pipeline(steps=[
     ('imputer', SimpleImputer(strategy='median')),
     ('scaler', StandardScaler())
 ])
 
-## Categorical pipeline: Impute missing Embarked with mode, then One-Hot Encode
+# Categorical pipeline: Impute missing Embarked with mode, then One-Hot Encode
 categorical_transformer = Pipeline(steps=[
     ('imputer', SimpleImputer(strategy='most_frequent')),
     ('encoder', OneHotEncoder(handle_unknown='ignore'))
 ])
 
-## Combine into one preprocessor
+# Combine into one preprocessor
 preprocessor = ColumnTransformer(
     transformers=[
         ('num', numeric_transformer, numeric_features),
@@ -143,10 +137,10 @@ preprocessor = ColumnTransformer(
 As you noted, `Fare` is right-skewed. A log transformation compresses the tail, making the data more symmetric.
 
 ```python
-## Create a custom transformer for Log transformation
+# Create a custom transformer for Log transformation
 log_transformer = FunctionTransformer(np.log1p, validate=True)
 
-## You can add this into your numeric pipeline:
+# You can add this into your numeric pipeline:
 numeric_transformer = Pipeline(steps=[
     ('imputer', SimpleImputer(strategy='median')),
     ('log', log_transformer), # Apply log after imputation
@@ -180,9 +174,9 @@ If you want to turn `Age` into discrete categories ("Child", "Teen", etc.) inste
 ```python
 from sklearn.preprocessing import KBinsDiscretizer
 
-## Discretize Age into 4 bins
+# Discretize Age into 4 bins
 discretizer = KBinsDiscretizer(n_bins=4, encode='ordinal', strategy='quantile')
-## Use this in your pipeline to transform continuous Age to categorical bins
+# Use this in your pipeline to transform continuous Age to categorical bins
 ```
 
 ### 5. Evaluating Performance (The Stretch Goal)
@@ -195,13 +189,13 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
-## 1. Pipeline with all engineering steps
+# 1. Pipeline with all engineering steps
 full_pipeline = Pipeline(steps=[
     ('preprocessor', preprocessor),
     ('classifier', RandomForestClassifier(random_state=42))
 ])
 
-## 2. Train and Evaluate
+# 2. Train and Evaluate
 X_train, X_test, y_train, y_test = train_test_split(df.drop('Survived', axis=1), df['Survived'], test_size=0.2)
 full_pipeline.fit(X_train, y_train)
 preds = full_pipeline.predict(X_test)
@@ -209,7 +203,7 @@ preds = full_pipeline.predict(X_test)
 print(f"Accuracy with Feature Engineering: {accuracy_score(y_test, preds):.2f}")
 ```
 
-### [Key Takeaways](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01 - Overview of Feature Engineering/Readme.md#key-takeaways) for your Titanic Exercise:
+### Key Takeaways for your Titanic Exercise:
 
 - **Leakage Prevention:** Always use `fit_transform` on your training data and _only_ `transform` on your test data. The `Pipeline` handles this automatically.
     
@@ -219,5 +213,3 @@ print(f"Accuracy with Feature Engineering: {accuracy_score(y_test, preds):.2f}")
     
 
 **Which of these transformations (Imputation, Scaling, Log Transform, or Binning) would you like to see integrated into a complete, runnable script first?**
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
