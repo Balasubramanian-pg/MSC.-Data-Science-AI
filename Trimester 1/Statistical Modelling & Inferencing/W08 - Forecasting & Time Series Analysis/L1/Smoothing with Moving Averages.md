@@ -4,11 +4,11 @@
 
 ---
 
-### 1. The Philosophy of Smoothing: [Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) Extraction
+### 1. The Philosophy of Smoothing: Signal Extraction
 
-In time series analysis, we operate under the assumption that the observed data ($Y_t$) is a composite: a mix of the true "[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal))" and "[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))." Smoothing is essentially a low-pass filter. It works by suppressing high-frequency oscillations (the [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))) while preserving the low-frequency components (the trend and cyclical patterns).
+In time series analysis, we operate under the assumption that the observed data ($Y_t$) is a composite: a mix of the true "signal" and "noise." Smoothing is essentially a low-pass filter. It works by suppressing high-frequency oscillations (the noise) while preserving the low-frequency components (the trend and cyclical patterns).
 
-The choice of smoothing method is a trade-off between **smoothness** (how much [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)) is removed) and **fidelity** (how much of the original trend information is retained).
+The choice of smoothing method is a trade-off between **smoothness** (how much noise is removed) and **fidelity** (how much of the original trend information is retained).
 
 ### 2. The Mechanics of the Moving Average
 
@@ -16,11 +16,11 @@ The moving average is the workhorse of smoothing. It operates on the principle o
 
 #### Simple Moving Average (SMA)
 
-For a window of size $k$, the smoothed value $\hat{Y}_t$ is calculated as the arithmetic [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) of the current observation and the previous $(k-1)$ observations:
+For a window of size $k$, the smoothed value $\hat{Y}_t$ is calculated as the arithmetic mean of the current observation and the previous $(k-1)$ observations:
 
 $$\hat{Y}_t = \frac{1}{k} \sum_{i=0}^{k-1} Y_{t-i}$$
 
-- **The Window ($k$):** This is your tuning parameter. A smaller $k$ keeps the trend responsive but retains more [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)). A larger $k$ produces a very "clean" line but introduces "lag"—the smoothed [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) will appear shifted in time, potentially missing the exact point where a trend changes.
+- **The Window ($k$):** This is your tuning parameter. A smaller $k$ keeps the trend responsive but retains more noise. A larger $k$ produces a very "clean" line but introduces "lag"—the smoothed signal will appear shifted in time, potentially missing the exact point where a trend changes.
     
 
 #### Centered Moving Average
@@ -33,7 +33,7 @@ $$\hat{Y}_t = \frac{1}{2k+1} \sum_{i=-k}^{k} Y_{t+i}$$
 
 When the Simple Moving Average is too restrictive, analysts turn to more sophisticated methods:
 
-- **Weighted Moving Average (WMA):** Not all past data is equally relevant. WMA assigns higher weights to more recent observations, allowing the trend to be more responsive to recent shifts while still filtering out [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)).
+- **Weighted Moving Average (WMA):** Not all past data is equally relevant. WMA assigns higher weights to more recent observations, allowing the trend to be more responsive to recent shifts while still filtering out noise.
     
 - **Exponential Smoothing (EMA):** This is a recursive approach where the weight of older observations decreases exponentially as we go back in time. It is defined as:
     
@@ -46,12 +46,12 @@ When the Simple Moving Average is too restrictive, analysts turn to more sophist
 
 Smoothing is not just a data transformation; it is a management tool.
 
-- **Decoupling [Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)) from Signals:** By smoothing revenue data, you prevent "over-reacting" to a bad week or an uncharacteristically good month, allowing leadership to focus on the actual growth trajectory.
+- **Decoupling Noise from Signals:** By smoothing revenue data, you prevent "over-reacting" to a bad week or an uncharacteristically good month, allowing leadership to focus on the actual growth trajectory.
     
 - **Baseline for Anomaly Detection:** Once the smoothed trend is established, you can identify anomalies. If a data point deviates significantly from the smoothed moving average, it acts as a "trigger" for further investigation (e.g., a potential supply chain error or a sudden change in customer behavior).
     
 
-### [Moving Forward](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis/L0/Module%2010%20-%20Cluster%20Analysis.md#moving-forward)
+### Moving Forward
 
 Smoothing gives us a clear look at the trend, but it often hides the "seasonal" nuances that are critical for industries like pharmaceuticals, where demand spikes at predictable intervals.
 
@@ -59,7 +59,7 @@ Would you like to explore **Seasonal Decomposition** to isolate those patterns, 
 
 ### Deep Dive: The Mechanics and Implications of the Simple Moving Average (SMA)
 
-The Simple Moving Average (SMA) is the most intuitive approach to [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) extraction. By transforming a volatile, "jagged" series into a smoother curve, we reduce the variance of the random component ($\epsilon_t$) while preserving the underlying trend.
+The Simple Moving Average (SMA) is the most intuitive approach to signal extraction. By transforming a volatile, "jagged" series into a smoother curve, we reduce the variance of the random component ($\epsilon_t$) while preserving the underlying trend.
 
 #### The Sliding Window Geometry
 ![[Pasted image 20260525121538.png]]
@@ -76,12 +76,12 @@ Choosing $k$ is not arbitrary; it is a balancing act between **Bias** and **Vari
 
 |**Window Size (k)**|**Impact on Smoothness**|**Responsiveness to Trend**|**Risk**|
 |---|---|---|---|
-|**Small (e.g., $k=3$)**|Low (remains noisy)|High (tracks quick changes)|Retains too much "white [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))."|
+|**Small (e.g., $k=3$)**|Low (remains noisy)|High (tracks quick changes)|Retains too much "white noise."|
 |**Large (e.g., $k=13$)**|High (very smooth)|Low (significant lag)|"Smooths out" actual trend reversals.|
 
 #### Mathematical Limitations: The "Lag" Problem
 
-The fundamental drawback of the SMA is **phase shift** or **lag**. Because the SMA incorporates past values, the smoothed [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) often "chases" the actual trend. In a business context, this means that if your revenue takes a sharp upturn on Day 50, the smoothed line might not reflect that full change until Day 52 or 53.
+The fundamental drawback of the SMA is **phase shift** or **lag**. Because the SMA incorporates past values, the smoothed signal often "chases" the actual trend. In a business context, this means that if your revenue takes a sharp upturn on Day 50, the smoothed line might not reflect that full change until Day 52 or 53.
 
 - **In-Sample Analysis:** If you are analyzing last year's sales, lag is acceptable because you can use centered averages to eliminate it.
     
@@ -96,24 +96,24 @@ The fundamental drawback of the SMA is **phase shift** or **lag**. Because the S
 ![[Pasted image 20260525121119.png]]
 The SMA is an "equal-weight" model—it assumes that a data point from 3 days ago is just as important as the data point from yesterday.
 
-- **Use SMA when:** The [signal-to-noise ratio](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal))-to-[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))-ratio) is relatively stable and you need a quick, explainable, and transparent baseline.
+- **Use SMA when:** The signal-to-noise ratio is relatively stable and you need a quick, explainable, and transparent baseline.
     
 - **Move beyond SMA when:** You detect that recent history is more predictive than distant history (requiring Weighted Moving Averages or Exponential Smoothing) or when there is strong seasonality (requiring STL or SARIMA models).
     
 
-Would you like to move into how we handle the "lag" issue using **Weighted Moving Averages**, or would you like to see how we implement a 5-point SMA in Python to filter out [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)) from a sample dataset?
+Would you like to move into how we handle the "lag" issue using **Weighted Moving Averages**, or would you like to see how we implement a 5-point SMA in Python to filter out noise from a sample dataset?
 
 ### 2.1 Applied Mechanics: Walking Through the Calculation
 
-The [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) you provided highlights the "data loss" phenomenon inherent in **centered** moving averages. When we align the average to the middle of the window, the observations at the very start and the very end of your timeline become "orphaned" because they lack the necessary neighbors to complete the calculation.
+The example you provided highlights the "data loss" phenomenon inherent in **centered** moving averages. When we align the average to the middle of the window, the observations at the very start and the very end of your timeline become "orphaned" because they lack the necessary neighbors to complete the calculation.
 
-#### [Visualization](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#visualization) of the Window Shift
+#### Visualization of the Window Shift
 
 To see why this happens, think of the 3-point moving average as a physical frame that covers three consecutive weeks. As the frame slides, it requires a "before" and "after" for every "now."
 
 #### Expanded Calculation Table
 
-To visualize exactly how the [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) is being compressed, we can map your data into a structured format. This clarifies why the first and last weeks of your original series are omitted in the final output:
+To visualize exactly how the signal is being compressed, we can map your data into a structured format. This clarifies why the first and last weeks of your original series are omitted in the final output:
 
 |**Week (t)**|**Sales (Yt​)**|**Window Used**|**Calculation**|**Smoothed (Y^t​)**|
 |---|---|---|---|---|
@@ -149,26 +149,26 @@ Would you like to see how we could write a Python function to handle these edge 
 
 ### 3. The Window Size ($k$): Balancing Fidelity and Lag
 
-The parameter $k$ is the "control knob" of your smoothing filter. It defines the **bandwidth** of your moving average. Choosing the wrong $k$ is the most common error in exploratory data analysis, often resulting in either "over-smoothing" (hiding the truth) or "under-smoothing" (getting distracted by [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))).
+The parameter $k$ is the "control knob" of your smoothing filter. It defines the **bandwidth** of your moving average. Choosing the wrong $k$ is the most common error in exploratory data analysis, often resulting in either "over-smoothing" (hiding the truth) or "under-smoothing" (getting distracted by noise).
 
 #### The Bias-Variance Trade-off in Smoothing
 ![[Pasted image 20260525120609.png]]
 In time series, we have a specific type of bias-variance trade-off:
 
-- **Low $k$ (High Variance, Low Bias):** The model is "jittery." It captures the [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)) ($\epsilon_t$) as if it were a structural change. You risk reacting to a random spike in demand as if it were a new, sustained growth trend.
+- **Low $k$ (High Variance, Low Bias):** The model is "jittery." It captures the noise ($\epsilon_t$) as if it were a structural change. You risk reacting to a random spike in demand as if it were a new, sustained growth trend.
     
-- **High $k$ (Low Variance, High Bias):** The model is "sluggish." By averaging over a wide window, you dampen the impact of sharp, legitimate changes in the business environment. This introduces significant **lag**, meaning your smoothed [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) might tell you a trend has shifted long after the market has actually moved on.
+- **High $k$ (Low Variance, High Bias):** The model is "sluggish." By averaging over a wide window, you dampen the impact of sharp, legitimate changes in the business environment. This introduces significant **lag**, meaning your smoothed signal might tell you a trend has shifted long after the market has actually moved on.
     
 
 #### Defining the "Optimal" $k$
 
-There is no "golden rule" for $k$, but there is a logical heuristic: **$k$ should match the periodicity of your data's [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)).**
+There is no "golden rule" for $k$, but there is a logical heuristic: **$k$ should match the periodicity of your data's noise.**
 
-1. **Understand the Frequency:** If your data is weekly and you know that "holiday shopping" creates a 4-week cycle of [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)), a $k < 4$ will be ineffective at removing that specific fluctuation.
+1. **Understand the Frequency:** If your data is weekly and you know that "holiday shopping" creates a 4-week cycle of noise, a $k < 4$ will be ineffective at removing that specific fluctuation.
     
 2. **Visual Inspection (The "Eyeball" Test):** Plot your raw data against multiple SMA lines (e.g., $k=3, 7, 12$). You are looking for the "elbow" where the line becomes smooth enough to see the slope, but not so smooth that it flattens out significant peaks or troughs.
     
-3. **Cross-Validation:** If you are using these smoothed values for forecasting, you can test different $k$ values to see which one results in the lowest **[Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) Absolute Error (MAE)** against actual historical outcomes.
+3. **Cross-Validation:** If you are using these smoothed values for forecasting, you can test different $k$ values to see which one results in the lowest **Mean Absolute Error (MAE)** against actual historical outcomes.
     
 
 #### The "Lost Data" Penalty
@@ -184,7 +184,7 @@ As you rightly noted, larger $k$ values destroy your ability to see the "now." I
 
 |**Feature**|**Small Window (k=3)**|**Large Window (k=9+)**|
 |---|---|---|
-|**[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)) Reduction**|Minimal|High|
+|**Noise Reduction**|Minimal|High|
 |**Trend Preservation**|High (captures sharp turns)|Low (blunts sharp turns)|
 |**Lag**|Negligible|Substantial|
 |**Data Loss**|Low (only 1 point at each end)|High (multiple points at each end)|
@@ -196,10 +196,10 @@ If you were looking at your pharmaceutical product sales, how would you decide b
 
 - **Use $k=3$** if you need to monitor daily sales volatility for a highly responsive supply chain where stockouts are a major risk.
     
-- **Use $k=9$ (or higher)** if you are reporting to senior leadership on quarterly market share growth, where the "[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))" of weekly fluctuations is irrelevant to the long-term trend.
+- **Use $k=9$ (or higher)** if you are reporting to senior leadership on quarterly market share growth, where the "noise" of weekly fluctuations is irrelevant to the long-term trend.
     
 ![[Pasted image 20260525120314.png]]
-Would you like to explore **how to mathematically quantify the lag** introduced by different $k$ values, or are you ready to dive into **Seasonal Decomposition** to see how we handle patterns that aren't just random [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)), but fixed, periodic cycles?
+Would you like to explore **how to mathematically quantify the lag** introduced by different $k$ values, or are you ready to dive into **Seasonal Decomposition** to see how we handle patterns that aren't just random noise, but fixed, periodic cycles?
 
 ### 4. Advanced Smoothing: Centered Averages and Classical Decomposition
 
@@ -221,7 +221,7 @@ Classical decomposition (also known as the additive decomposition model) relies 
     
 3. **Average the Seasonality:** To find the seasonal component ($S_t$), you take all the values for January across multiple years and average them (and repeat for all 12 months).
     
-4. **Extract Irregularity:** Finally, the remaining [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)) ($I_t$) is what is left after subtracting both the Trend and the Seasonality from your original data.
+4. **Extract Irregularity:** Finally, the remaining noise ($I_t$) is what is left after subtracting both the Trend and the Seasonality from your original data.
     
 
 #### The "Real-World" Limitations: Why We Evolve
@@ -248,10 +248,8 @@ This gives the highest weight to the most recent observation ($Y_t$) and exponen
 |**Feature**|**Moving Averages (SMA/CMA)**|**Exponential Smoothing (ETS)**|
 |---|---|---|
 |**Data Weighting**|Equal|Exponentially decaying (Recent > Past)|
-|**[Response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response))) to Recent Data**|Rigid (fixed $k$)|Adaptive (determined by $\alpha$)|
+|**Response to Recent Data**|Rigid (fixed $k$)|Adaptive (determined by $\alpha$)|
 |**End-of-Series Data**|Loss (truncated)|Full coverage (recursive)|
 |**Complexity**|Low (easy to explain)|Moderate (requires parameter optimization)|
 
 **Would you like to see the mathematical derivation of why a 12-month moving average is the standard for monthly seasonal data, or would you like to compare how an Exponential Smoothing model would handle the "lag" problem compared to the SMA we calculated earlier?**
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
