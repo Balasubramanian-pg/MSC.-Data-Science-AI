@@ -1,17 +1,11 @@
----
-title: W06 - Simple Linear Regression
-module: Statistical Modelling And Inferencing
-week: W06 - Simple Linear Regression
----
-
 
 
 ## Reading Material: Testing for Significance in Regression
 
 
-## Statistical Inference in Linear Regression
+# Statistical Inference in Linear Regression
 
-## 1. Why Regression Needs Inference
+# 1. Why Regression Needs Inference
 
 When we fit a regression line:
 
@@ -23,22 +17,22 @@ we are using a **sample**, not the entire population.
 
 That means:
 
-- the [slope (b_1)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#slope-b_1) is uncertain
+- the slope (b_1) is uncertain
     
 - another sample would produce a different slope
     
-- observed relationships may occur purely from [random sampling](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Reading%20Material%20The%20Chi-Square%20Test%20of%20Independence.md#random-sampling) variation
+- observed relationships may occur purely from random sampling variation
     
 
-This creates the central statistical [question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#question))):
+This creates the central statistical question:
 
-> Is the observed relationship real in the population, or just [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise) in this sample?
+> Is the observed relationship real in the population, or just noise in this sample?
 
-Regression inference exists to [answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#answer))) exactly this [question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#question))).
+Regression inference exists to answer exactly this question.
 
 
 
-## 2. Population vs Sample Thinking
+# 2. Population vs Sample Thinking
 
 The regression coefficient computed from data:
 
@@ -72,7 +66,7 @@ in the actual population.
 
 
 
-## 3. The Core Logic of Hypothesis Testing
+# 3. The Core Logic of Hypothesis Testing
 
 The regression hypothesis test works through contradiction.
 
@@ -97,7 +91,7 @@ If the observed slope is extremely unlikely under (H_0), we reject it.
 
 
 
-## 4. The t-Test for the Slope
+# 4. The t-Test for the Slope
 
 This is the fundamental inferential test in regression.
 
@@ -105,9 +99,9 @@ It evaluates whether the predictor variable contributes meaningful linear inform
 
 
 
-## 5. Hypotheses
+# 5. Hypotheses
 
-## [Null Hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis)
+## Null Hypothesis
 
 $$  
 H_0 : \beta_1 = 0  
@@ -124,7 +118,7 @@ Interpretation:
 
 
 
-## [Alternative Hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#alternative-hypothesis)
+## Alternative Hypothesis
 
 $$  
 H_a : \beta_1 \neq 0  
@@ -134,12 +128,12 @@ Interpretation:
 
 - a linear relationship exists
     
-- predictor affects [response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response)))
+- predictor affects response
     
 
 
 
-## 6. [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition)))) Behind the t-Statistic
+# 6. Intuition Behind the t-Statistic
 
 The t-statistic measures:
 
@@ -147,7 +141,7 @@ The t-statistic measures:
 
 This is fundamentally a:
 
-## [Signal-to-Noise Ratio](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)-to-[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)-ratio)
+# Signal-to-Noise Ratio
 
 
 
@@ -165,9 +159,9 @@ $$
 
 
 
-## 7. Understanding the Components
+# 7. Understanding the Components
 
-## [Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)
+## Signal
 
 $$  
 b_1  
@@ -179,17 +173,17 @@ Large slopes imply stronger relationships.
 
 
 
-## [Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)
+## Noise
 
 $$  
 SE(b_1)  
 $$
 
-The [standard error](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#standard-error) of the slope.
+The standard error of the slope.
 
-Measures how much sample slopes fluctuate due to [random sampling](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Reading%20Material%20The%20Chi-Square%20Test%20of%20Independence.md#random-sampling).
+Measures how much sample slopes fluctuate due to random sampling.
 
-Large [standard error](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#standard-error) means:
+Large standard error means:
 
 - unstable estimate
     
@@ -200,7 +194,7 @@ Large [standard error](https://github.com/Balasubramanian-pg/MSC.-Data-Science-A
 
 
 
-## 8. Visual [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition))))
+# 8. Visual Intuition
 
 Suppose the true slope is actually zero.
 
@@ -214,13 +208,13 @@ The t-test quantifies how rare our observed slope is.
 
 
 
-## 9. Geometric Interpretation
+# 9. Geometric Interpretation
 
 The t-statistic is essentially measuring:
 
 > “How many uncertainty units away from zero is the slope?”
 
-[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples):
+Examples:
 
 |t-value|Interpretation|
 |||
@@ -231,9 +225,9 @@ The t-statistic is essentially measuring:
 
 
 
-## 10. Why the t-Distribution Appears
+# 10. Why the t-Distribution Appears
 
-[The test statistic](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L0/Inference%20%26%20Modelling.md#the-test-statistic) follows a:
+The test statistic follows a:
 
 ## t-distribution
 
@@ -248,9 +242,9 @@ This introduces additional uncertainty.
 
 
 
-## 11. Degrees of Freedom
+# 11. Degrees of Freedom
 
-For [simple linear regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#simple-linear-regression):
+For simple linear regression:
 
 $$  
 df = n - 2  
@@ -260,26 +254,26 @@ Why subtract 2?
 
 Because we estimated:
 
-- [intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#intercept)) (b_0)
+- intercept (b_0)
     
-- [slope (b_1)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#slope-b_1)
+- slope (b_1)
     
 
 Each estimated parameter consumes one degree of freedom.
 
 
 
-## 12. Decision Making with the p-Value
+# 12. Decision Making with the p-Value
 
 The p-value answers:
 
-> “Assuming the [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis) is true, how likely is a result this extreme?”
+> “Assuming the null hypothesis is true, how likely is a result this extreme?”
 
 
 
 ## Small p-value
 
-[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
+Example:
 
 $$  
 p < 0.05  
@@ -289,7 +283,7 @@ Interpretation:
 
 - observed slope is unlikely under (H_0)
     
-- evidence against [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis)
+- evidence against null hypothesis
     
 - conclude significant linear relationship
     
@@ -298,7 +292,7 @@ Interpretation:
 
 ## Large p-value
 
-[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
+Example:
 
 $$  
 p > 0.05  
@@ -315,11 +309,11 @@ Interpretation:
 
 
 
-## 13. Important Statistical Interpretation
+# 13. Important Statistical Interpretation
 
-A p-value does NOT [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean):
+A p-value does NOT mean:
 
-> “Probability the [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis) is true.”
+> “Probability the null hypothesis is true.”
 
 This is one of the biggest statistical misconceptions.
 
@@ -337,7 +331,7 @@ $$
 
 
 
-## 14. Confidence Interval Connection
+# 14. Confidence Interval Connection
 
 The t-test is equivalent to checking whether:
 
@@ -347,7 +341,7 @@ $$
 
 lies inside the confidence interval for (\beta_1).
 
-[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
+Example:
 
 |95% CI|Conclusion|
 |||
@@ -356,19 +350,19 @@ lies inside the confidence interval for (\beta_1).
 
 
 
-## 15. [The F-Test](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#the-f-test) for Overall Regression Significance
+# 15. The F-Test for Overall Regression Significance
 
-[The F-test](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#the-f-test) evaluates:
+The F-test evaluates:
 
-> “Does the regression model explain significantly more variation than random [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)?”
+> “Does the regression model explain significantly more variation than random noise?”
 
 Instead of focusing on a single coefficient, it evaluates the model as a whole.
 
 
 
-## 16. [Variance Decomposition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#variance-decomposition)
+# 16. Variance Decomposition
 
-Regression divides [total variability](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#total-variability) into two parts.
+Regression divides total variability into two parts.
 
 $$  
 SST = SSR + SSE  
@@ -384,17 +378,17 @@ Where:
 
 
 
-## 17. ANOVA Perspective
+# 17. ANOVA Perspective
 
 ANOVA stands for:
 
 ## Analysis of Variance
 
-Regression is fundamentally a [variance decomposition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#variance-decomposition) problem.
+Regression is fundamentally a variance decomposition problem.
 
 
 
-## 18. [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) Squares
+# 18. Mean Squares
 
 Raw sums of squares depend on dataset size.
 
@@ -402,7 +396,7 @@ So we standardize them by dividing by degrees of freedom.
 
 
 
-## [Mean Square Regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#[mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean)-square-regression)
+## Mean Square Regression
 
 $$  
 MSR = \frac{SSR}{k}  
@@ -410,17 +404,17 @@ $$
 
 Where:
 
-- (k) = number of [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors)))
+- (k) = number of predictors
     
 
 Interpretation:
 
-- [average explained variance per predictor](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#average-explained-variance-per-predictor)
+- average explained variance per predictor
     
 
 
 
-## [Mean Square Error](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#[mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean)-square-error)
+## Mean Square Error
 
 $$  
 MSE = \frac{SSE}{n-k-1}  
@@ -435,9 +429,9 @@ Interpretation:
 
 
 
-## 19. The F-Statistic
+# 19. The F-Statistic
 
-The F-statistic compares [explained variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#explained-variance) against unexplained variance.
+The F-statistic compares explained variance against unexplained variance.
 
 $$  
 F = \frac{MSR}{MSE}  
@@ -445,7 +439,7 @@ $$
 
 
 
-## 20. [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition)))) Behind [the F-Test](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#the-f-test)
+# 20. Intuition Behind the F-Test
 
 If the model explains meaningful structure:
 
@@ -470,24 +464,24 @@ Large F means:
 
 
 
-## 21. Visual Mental Model
+# 21. Visual Mental Model
 
 Think of regression as competing forces:
 
 |Force|Meaning|
 |||
-|[Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)|Explained variation|
-|[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)|Residual variation|
+|Signal|Explained variation|
+|Noise|Residual variation|
 
-[The F-test](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#the-f-test) asks:
+The F-test asks:
 
-> “Is [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal) substantially larger than [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)?”
+> “Is signal substantially larger than noise?”
 
 
 
-## 22. F-Distribution
+# 22. F-Distribution
 
-Under the [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis):
+Under the null hypothesis:
 
 $$  
 F \sim F(k, n-k-1)  
@@ -504,11 +498,11 @@ The F-distribution is:
 
 
 
-## 23. Equivalence of t-Test and F-Test in Simple Regression
+# 23. Equivalence of t-Test and F-Test in Simple Regression
 
 This is a critical mathematical fact.
 
-For [simple linear regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#simple-linear-regression):
+For simple linear regression:
 
 $$  
 F = t^2  
@@ -516,7 +510,7 @@ $$
 
 
 
-## 24. Why They Become Equivalent
+# 24. Why They Become Equivalent
 
 Simple regression has:
 
@@ -547,7 +541,7 @@ become mathematically identical.
 
 
 
-## 25. Why [the F-Test](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#the-f-test) Matters More in Multiple Regression
+# 25. Why the F-Test Matters More in Multiple Regression
 
 In multiple regression:
 
@@ -555,7 +549,7 @@ $$
 Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \dots  
 $$
 
-[The F-test](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#the-f-test) evaluates:
+The F-test evaluates:
 
 $$  
 H_0 : \beta_1 = \beta_2 = \dots = \beta_k = 0  
@@ -563,13 +557,13 @@ $$
 
 Meaning:
 
-> “Do all [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors))) collectively explain anything?”
+> “Do all predictors collectively explain anything?”
 
 This cannot be replaced by a single t-test.
 
 
 
-## 26. Relationship Between t and F
+# 26. Relationship Between t and F
 
 For simple regression:
 
@@ -577,7 +571,7 @@ $$
 F = t^2  
 $$
 
-[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
+Example:
 
 If:
 
@@ -595,7 +589,7 @@ Both produce identical p-values.
 
 
 
-## 27. Statistical Workflow
+# 27. Statistical Workflow
 
 ```mermaid
 flowchart TD
@@ -620,31 +614,31 @@ G -->|No| I$$Fail to Reject H0$$
 
 
 
-## [28. Python Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#28-python-[example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example))
+# 28. Python Example
 
 ```python
 import numpy as np
 import statsmodels.api as sm
 
-## Generate synthetic data
+# Generate synthetic data
 np.random.seed(42)
 
 X = np.random.normal(10, 2, 100)
 Y = 5 + 3 * X + np.random.normal(0, 5, 100)
 
-## Add intercept column
+# Add intercept column
 X_design = sm.add_constant(X)
 
-## Fit regression
+# Fit regression
 model = sm.OLS(Y, X_design).fit()
 
-## Print summary
+# Print summary
 print(model.summary())
 ```
 
 
 
-## 29. Important Output Components
+# 29. Important Output Components
 
 |Output|Meaning|
 |||
@@ -652,14 +646,14 @@ print(model.summary())
 |std err|Standard errors|
 |t|t-statistics|
 |P>|t|
-|F-statistic|[Overall model significance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#overall-model-significance)|
+|F-statistic|Overall model significance|
 |Prob(F-statistic)|F-test p-value|
 
 
 
-## [30. Common Misconceptions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#30-common-misconceptions)
+# 30. Common Misconceptions
 
-## [Misconception 1](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#misconception-1)
+## Misconception 1
 
 “Significant means important.”
 
@@ -669,13 +663,13 @@ A tiny effect can become statistically significant with massive datasets.
 
 
 
-## [Misconception 2](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#misconception-2)
+## Misconception 2
 
 “Non-significant means no relationship.”
 
 False.
 
-Could simply [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean):
+Could simply mean:
 
 - insufficient sample size
     
@@ -686,20 +680,20 @@ Could simply [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/b
 
 
 
-## [Misconception 3](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#misconception-3)
+## Misconception 3
 
 “p = 0.03 means 97% chance the effect is real.”
 
-[Incorrect](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#[incorrect](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#[incorrect](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#incorrect))) interpretation.
+Incorrect interpretation.
 
 
 
-## 31. Effect Size vs [Statistical Significance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#statistical-significance)
+# 31. Effect Size vs Statistical Significance
 
-[Statistical significance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#statistical-significance) depends on:
+Statistical significance depends on:
 
 $$  
-t = [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\text{effect size}}{\text{uncertainty}}  
+t = \frac{\text{effect size}}{\text{uncertainty}}  
 $$
 
 Large datasets shrink uncertainty.
@@ -722,27 +716,27 @@ Always inspect:
 
 
 
-## 32. Advanced Insight: [Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)-to-[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise) Everywhere
+# 32. Advanced Insight: Signal-to-Noise Everywhere
 
 The t-test reflects a universal statistical principle:
 
 $$  
 \text{Inference} =  
-[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\text{Observed Structure}}{\text{Random Variability}}  
+\frac{\text{Observed Structure}}{\text{Random Variability}}  
 $$
 
 This idea appears everywhere:
 
-|Area|[Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)-to-[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise) [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example)|
+|Area|Signal-to-Noise Example|
 |||
 |Regression|(b_1 / SE(b_1))|
 |Deep Learning|Gradient / variance|
-|[Finance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#[finance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#finance))|Sharpe ratio|
-|[Physics](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#physics)|Experimental [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal) / measurement [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)|
+|Finance|Sharpe ratio|
+|Physics|Experimental signal / measurement noise|
 
 
 
-## 33. Final Takeaways
+# 33. Final Takeaways
 
 $$!IMPORTANT$$
 
@@ -750,7 +744,7 @@ Regression inference exists because sample relationships are uncertain.
 
 The t-test evaluates whether a predictor has a statistically significant linear effect.
 
-[The F-test](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#the-f-test) evaluates whether the regression model explains meaningful variation overall.
+The F-test evaluates whether the regression model explains meaningful variation overall.
 
 Core formulas:
 
@@ -768,14 +762,12 @@ $$
 
 Critical conceptual insight:
 
-> [Statistical significance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#statistical-significance) is fundamentally about distinguishing [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal) from random variation.
+> Statistical significance is fundamentally about distinguishing signal from random variation.
 
-In [simple linear regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#simple-linear-regression):
+In simple linear regression:
 
 $$
 F = t^2  
 $$
 
 making the slope t-test and overall F-test mathematically equivalent.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
