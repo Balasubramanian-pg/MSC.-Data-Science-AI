@@ -1,9 +1,3 @@
----
-title: W06 - Feature Engineering Techniques for Image Data
-module: Statistical Modelling And Inferencing
-week: W06 - Feature Engineering Techniques for Image Data
----
-
 To assist with your learning, I have compiled a structured index of key topics in data science based on your requested areas of focus. I have grouped these into logical learning paths, starting from fundamental concepts and advancing to technical implementations.
 
 ### **Part 1: Feature Engineering & Selection**
@@ -97,5 +91,3 @@ For a clear, visual breakdown of dimensionality reduction and linear transformat
 [Linear dimensionality reduction (PCA and SVD)](https://www.youtube.com/watch?v=35qKVbvB6-Y)
 
 This video is highly relevant because it bridges the gap between the geometric intuition of data and the linear algebra tricks (eigendecomposition/SVD) used to compress it, which aligns perfectly with your module objectives on dimensionality reduction.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
