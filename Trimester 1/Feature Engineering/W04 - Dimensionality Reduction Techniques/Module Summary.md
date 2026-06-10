@@ -1,9 +1,3 @@
----
-title: W04 - Dimensionality Reduction Techniques
-module: Statistical Modelling And Inferencing
-week: W04 - Dimensionality Reduction Techniques
----
-
 This module provided a strategic overview of **Dimensionality Reduction**, a core pillar of feature engineering used to combat the "curse of dimensionality." By reducing the number of variables while preserving the underlying signal, these techniques enhance model generalizability, reduce computational load, and enable visual interpretation of high-dimensional datasets.
 
 ### **1. Core Dimensionality Reduction Techniques**
@@ -12,7 +6,7 @@ This module provided a strategic overview of **Dimensionality Reduction**, a cor
 |---|---|---|---|
 |**PCA**|Linear|Data Compression & Noise Reduction|Transforms data into orthogonal axes (Principal Components) that capture the maximum variance.|
 |**SVD**|Mathematical|Latent Feature Extraction|Matrix factorization that decomposes data into importance-ranked components (singular values).|
-|**t-SNE**|Non-Linear|[Visualization](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W04 - Dimensionality Reduction Techniques/Readme.md#visualization)|Maps high-dimensional data to 2D/3D by preserving local neighbor distances; excellent for cluster discovery.|
+|**t-SNE**|Non-Linear|Visualization|Maps high-dimensional data to 2D/3D by preserving local neighbor distances; excellent for cluster discovery.|
 
 ### **2. Deep Dive: Key Methodologies**
 
@@ -20,7 +14,7 @@ This module provided a strategic overview of **Dimensionality Reduction**, a cor
     
     - **The Theory:** PCA identifies the directions (principal components) along which the data varies the most. By projecting the data onto the top few components, you retain the most "important" variance while discarding low-variance dimensions that typically constitute noise.
         
-    - **Usage:** Best for [preprocessing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/L1/Demonstration.md#preprocessing) high-dimensional numerical data to reduce feature redundancy and avoid overfitting in models like linear regression.
+    - **Usage:** Best for preprocessing high-dimensional numerical data to reduce feature redundancy and avoid overfitting in models like linear regression.
         
 - **Singular Value Decomposition (SVD):**
     
@@ -28,14 +22,14 @@ This module provided a strategic overview of **Dimensionality Reduction**, a cor
         
     - **Usage:** It is the engine behind many dimensionality reduction tasks, including Latent Semantic Analysis (LSA) in text processing and collaborative filtering in recommendation systems.
         
-- **[t-Distributed Stochastic Neighbor Embedding (t-SNE)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W04 - Dimensionality Reduction Techniques/t-SNE.md#t-distributed-stochastic-neighbor-embedding-t-sne):**
+- **t-Distributed Stochastic Neighbor Embedding (t-SNE):**
     
     - **The Theory:** Unlike the linear methods above, t-SNE is non-linear. It focuses on the **local structure** of the data, ensuring that points close together in high-dimensional space remain close in the 2D/3D visual output.
         
     - **Usage:** It is the "gold standard" for exploratory data analysis (EDA) when you need to visualize hidden clusters in complex, messy data.
         
 
-### **3. Strategic [Application Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W02 - Handling Numeric Data/2.%20Discretization.md#application-[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Overview.md#summary)))**
+### **3. Strategic Application Summary**
 
 The decision to apply dimensionality reduction involves balancing three competing goals: **Information Retention**, **Computational Efficiency**, and **Human Interpretability**.
 
@@ -47,5 +41,3 @@ The decision to apply dimensionality reduction involves balancing three competin
 **Best Practice:** Always remember that dimensionality reduction is a lossy process. When compressing data, monitor the "explained variance ratio" (for PCA) to ensure you aren't discarding the actual signal you are trying to learn.
 
 Would you like to explore the implementation code for these techniques, or would you like to review how they integrate into an end-to-end machine learning pipeline?
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
