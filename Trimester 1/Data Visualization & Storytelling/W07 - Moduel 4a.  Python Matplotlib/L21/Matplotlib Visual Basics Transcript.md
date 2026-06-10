@@ -1,10 +1,4 @@
----
-title: W07 - Moduel 4a.  Python Matplotlib
-module: Statistical Modelling And Inferencing
-week: W07 - Moduel 4a.  Python Matplotlib
----
-
-## Matplotlib Visual Basics and the Notebook Workflow
+# Matplotlib Visual Basics and the Notebook Workflow
 
 This lecture section shifts focus from:
 
@@ -27,7 +21,7 @@ The emphasis is on:
 
 The tools discussed are foundational to modern data science workflows.
 
-## 1. Interactive Notebook Environments
+# 1. Interactive Notebook Environments
 
 The lecture introduces two commonly used notebook systems:
 
@@ -49,7 +43,7 @@ Both environments allow:
 
 inside a single interactive interface.
 
-## Why Notebooks Became Dominant
+# Why Notebooks Became Dominant
 
 Notebook systems solved a major problem in technical workflows:
 
@@ -66,7 +60,7 @@ Traditional programming environments separate:
 
 Notebook systems unify them.
 
-## Notebook Workflow
+# Notebook Workflow
 
 ```mermaid
 flowchart LR
@@ -89,11 +83,11 @@ This makes notebooks ideal for:
 - reproducible research
     
 
-## 2. Google Colab
+# 2. Google Colab
 
 The lecture uses Google Colab.
 
-## What Is Colab?
+# What Is Colab?
 
 Colab is:
 
@@ -112,7 +106,7 @@ It allows users to:
 
 without local installation complexity.
 
-## Advantages of Colab
+# Advantages of Colab
 
 |Feature|Benefit|
 |---|---|
@@ -122,7 +116,7 @@ without local installation complexity.
 |Notebook interface|Interactive workflow|
 |Google integration|Easy access|
 
-## Why Colab Became Popular
+# Why Colab Became Popular
 
 Especially useful for:
 
@@ -137,7 +131,7 @@ Especially useful for:
 
 because environment setup is minimized.
 
-## 3. Notebook Cell Types
+# 3. Notebook Cell Types
 
 The lecture explains an important notebook concept:
 
@@ -146,7 +140,7 @@ The lecture explains an important notebook concept:
 - text cells
     
 
-## A. Code Cells
+# A. Code Cells
 
 Used for executable Python code.
 
@@ -156,7 +150,7 @@ Example:
 print("Hello")
 ```
 
-## B. Text / Markdown Cells
+# B. Text / Markdown Cells
 
 Used for:
 
@@ -172,10 +166,10 @@ Used for:
 Example:
 
 ```markdown
-## Introduction to Matplotlib
+# Introduction to Matplotlib
 ```
 
-## Why This Separation Matters
+# Why This Separation Matters
 
 Good notebooks combine:
 
@@ -193,7 +187,7 @@ This makes notebooks:
 - reproducible
     
 
-## Internal Notebook Structure
+# Internal Notebook Structure
 
 ```mermaid
 flowchart TD
@@ -201,12 +195,12 @@ flowchart TD
     A --> C[Markdown Cells]
 ```
 
-## 4. Comments in Python
+# 4. Comments in Python
 
 The lecture revisits:
 
 ```python
-## This is a comment
+# This is a comment
 ```
 
 Anything after `#` becomes:
@@ -214,7 +208,7 @@ Anything after `#` becomes:
 - non-executable annotation
     
 
-## Why Comments Matter
+# Why Comments Matter
 
 Comments improve:
 
@@ -234,7 +228,7 @@ Especially important in:
 - teaching material
     
 
-## Common Beginner Error
+# Common Beginner Error
 
 The lecture correctly warns:
 
@@ -248,7 +242,7 @@ SyntaxError
 
 because Python attempts to execute it.
 
-## 5. Executing Notebook Cells
+# 5. Executing Notebook Cells
 
 The lecture references:
 
@@ -257,7 +251,7 @@ The lecture references:
 
 Notebook execution works cell-by-cell.
 
-## Why Cell-Based Execution Matters
+# Why Cell-Based Execution Matters
 
 This allows:
 
@@ -270,7 +264,7 @@ This allows:
 
 instead of running entire programs repeatedly.
 
-## Typical Workflow
+# Typical Workflow
 
 ```mermaid
 flowchart LR
@@ -289,7 +283,7 @@ This iterative cycle is central to:
 - ML experimentation
     
 
-## 6. Notebook Presentation Features
+# 6. Notebook Presentation Features
 
 The lecture highlights:
 
@@ -310,7 +304,7 @@ They are:
 
 > executable analytical documents.
 
-## Why This Matters
+# Why This Matters
 
 A notebook can simultaneously contain:
 
@@ -333,7 +327,7 @@ This bridges:
 - communication.
     
 
-## Example Notebook Structure
+# Example Notebook Structure
 
 ```mermaid
 flowchart TD
@@ -342,7 +336,7 @@ flowchart TD
     C --> D[Interpretation]
 ```
 
-## 7. Collaboration in Colab
+# 7. Collaboration in Colab
 
 The lecture emphasizes:
 
@@ -362,7 +356,7 @@ similar to:
 - collaborative documents
     
 
-## Why Collaboration Matters
+# Why Collaboration Matters
 
 Data science work is rarely isolated.
 
@@ -379,14 +373,14 @@ Teams often need to:
 
 Notebook collaboration accelerates this process.
 
-## 8. AI-Assisted Coding
+# 8. AI-Assisted Coding
 
 The lecture references built-in AI assistance via:
 
 - Gemini suggestions
     
 
-## Important Engineering Insight
+# Important Engineering Insight
 
 Modern programming environments increasingly include:
 
@@ -399,7 +393,7 @@ Modern programming environments increasingly include:
 - code generation
     
 
-## Example
+# Example
 
 Asking:
 
@@ -411,7 +405,7 @@ returns:
 import matplotlib.pyplot as plt
 ```
 
-## Why This Matters
+# Why This Matters
 
 The bottleneck in programming is shifting from:
 
@@ -439,7 +433,7 @@ But they do not replace:
 - conceptual understanding
     
 
-## Important Warning
+# Important Warning
 
 The lecture uses AI correctly:
 
@@ -454,7 +448,7 @@ Strong analytical practice still requires:
 - interpreting results critically
     
 
-## 9. Importing Matplotlib
+# 9. Importing Matplotlib
 
 The lecture revisits the standard import:
 
@@ -462,7 +456,7 @@ The lecture revisits the standard import:
 import matplotlib.pyplot as plt
 ```
 
-## Why `pyplot` Is Important
+# Why `pyplot` Is Important
 
 `pyplot` provides:
 
@@ -478,7 +472,7 @@ It acts similarly to:
 - a plotting controller interface
     
 
-## Standard Alias Convention
+# Standard Alias Convention
 
 ```python
 plt
@@ -486,7 +480,7 @@ plt
 
 is universally recognized across Python visualization codebases.
 
-## 10. The Real Educational Objective
+# 10. The Real Educational Objective
 
 The lecture quietly emphasizes something deeper:
 
@@ -503,7 +497,7 @@ Students are encouraged to:
 - experiment repeatedly
     
 
-## Why This Matters
+# Why This Matters
 
 Visualization skill is not built through:
 
@@ -521,7 +515,7 @@ It is built through:
 - experimentation
     
 
-## The Iterative Learning Model
+# The Iterative Learning Model
 
 ```mermaid
 flowchart LR
@@ -540,7 +534,7 @@ This cycle develops:
 - visual reasoning
     
 
-## Strategic Insight
+# Strategic Insight
 
 This lecture section introduces a critical modern reality:
 
@@ -580,7 +574,7 @@ rather than:
 - static and linear.
     
 
-## Final Takeaway
+# Final Takeaway
 
 The notebook environment is not just a coding tool.
 
@@ -612,5 +606,3 @@ That is why notebook-based workflows became foundational in:
 - research
     
 - modern analytics engineering.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
