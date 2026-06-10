@@ -1,9 +1,3 @@
----
-title: W02 - Module 1b. Taxonomy of Data Visualisation Methods
-module: Statistical Modelling And Inferencing
-week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
----
-
 ![[Pasted image 20260527233307.png]]
 The core thesis of this lecture is that **data alone does not inspire action.** To bridge the gap between analysis and business impact, visualizations must be wrapped in a structured, compelling story. Data visualization should always be **audience-centric, not data-centric**.
 
@@ -75,5 +69,3 @@ Once the core chart is chosen, use subtle visual mechanisms to guide the audienc
 *   **Keep It Simple:** Avoid artificial complexity. Eliminate 3D effects, over-cluttered axes, and excessive, non-supporting visual details [2]. 
 
 > **Important Limit:** Do not overdo design elements. Visual hierarchies, annotations, and colors should *only* be added if they actively support the narrative. If an element does not help tell the story, leave it out [2].
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
