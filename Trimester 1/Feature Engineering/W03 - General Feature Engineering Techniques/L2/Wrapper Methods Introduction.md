@@ -1,9 +1,3 @@
----
-title: W03 - General Feature Engineering Techniques
-module: Statistical Modelling And Inferencing
-week: W03 - General Feature Engineering Techniques
----
-
 Wrapper methods represent a "model-centric" approach to feature selection. Unlike filter methods—which evaluate features using statistical metrics independent of any learning algorithm—wrapper methods **"wrap"** the feature selection process around the training and evaluation of a specific machine learning model.
 
 ### 1. Intuition: The Model-as-Evaluator
@@ -19,7 +13,7 @@ In wrapper methods, the machine learning model serves as the final judge of feat
 
 The two most prominent search strategies are sequential:
 
-- **[Sequential Forward Selection (SFS)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/L2/Wrapper%20Methods%20-%20SFS%20%26%20SBS.md#sequential-forward-selection-sfs):** A "bottom-up" approach.
+- **Sequential Forward Selection (SFS):** A "bottom-up" approach.
     
     - Start: Empty feature set.
         
@@ -29,7 +23,7 @@ The two most prominent search strategies are sequential:
         
     - Stop: When the desired feature count is reached or no further improvements occur.
         
-- **[Sequential Backward Selection (SBS)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/L2/Wrapper%20Methods%20-%20SFS%20%26%20SBS.md#sequential-backward-selection-sbs):** A "top-down" approach.
+- **Sequential Backward Selection (SBS):** A "top-down" approach.
     
     - Start: Full feature set.
         
@@ -60,9 +54,7 @@ The two most prominent search strategies are sequential:
 
 - **The Greedy Constraint:** Both SFS and SBS are greedy algorithms. They make the best locally optimal choice at each step. This does not guarantee that the resulting subset is the **globally optimal** subset. Finding the absolute best subset would require evaluating $2^n$ combinations (an exponential, computationally infeasible task for large $n$).
     
-- **Computational Cost:** Because these methods effectively "wrap" the model training process, they become increasingly impractical as the number of features or the size of the [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/Experiential%20Learning%20Activity.md#dataset) grows. In large-scale systems, this often mandates the use of **Embedded Methods** (like Lasso or Tree-based importance) as a more scalable alternative.
+- **Computational Cost:** Because these methods effectively "wrap" the model training process, they become increasingly impractical as the number of features or the size of the dataset grows. In large-scale systems, this often mandates the use of **Embedded Methods** (like Lasso or Tree-based importance) as a more scalable alternative.
     
 
 **Would you like me to detail how you might implement these in Python using `scikit-learn`, or would you like to compare how these strategies handle feature interactions specifically?**
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
