@@ -1,11 +1,5 @@
----
-title: W11 - Module 4d. Tableau - Module 4d. Tableau - Module 4d. Tableau
-module: Statistical Modelling And Inferencing
-week: W11 - Module 4d. Tableau - Module 4d. Tableau - Module 4d. Tableau
----
 
-
-## Page 1
+# Page 1
 
  
  
@@ -59,7 +53,7 @@ you know the exact variable type and all. But it is always advisable to create s
 or group the data which belong to certain particular category into a folder. For example, 
 
 
-## Page 2
+# Page 2
 
  
  
@@ -113,7 +107,7 @@ is the sales by city.
   
 
 
-## Page 3
+# Page 3
 
  
  
@@ -165,7 +159,7 @@ the region, the data and the sales, which is represented.
   
 
 
-## Page 4
+# Page 4
 
  
  
@@ -219,7 +213,7 @@ So for each of the type of the segments that you have, so you can reorder them t
 a different impact. So like this, by creating calculated values, you can improve your 
 
 
-## Page 5
+# Page 5
 
  
  
@@ -236,6 +230,3 @@ that are there in Tableau environment and get familiarised with them. Thank you.
  
 ----------------------------------------------------End------------------------------------------------------- 
  
-
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
