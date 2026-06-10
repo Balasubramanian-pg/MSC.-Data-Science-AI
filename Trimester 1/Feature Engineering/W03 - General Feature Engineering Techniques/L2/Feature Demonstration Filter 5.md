@@ -1,12 +1,6 @@
----
-title: W03 - General Feature Engineering Techniques
-module: Statistical Modelling And Inferencing
-week: W03 - General Feature Engineering Techniques
----
-
 ### Filter Methods: Fisher Score for Class Separation
 
-#### [1. Clear Overview](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01 - Overview of Feature Engineering/3.%20Working%20With%20Sample%20Dataset%20-%20I.md#1-clear-overview)
+#### 1. Clear Overview
 
 The Fisher Score is a classic, effective filter method for feature selection, specifically designed for **classification** problems. It measures a feature's discriminative power by evaluating how well its values separate different classes. A high Fisher Score indicates that the feature has distinct mean values across classes while maintaining low variance within each class—a hallmark of a high-quality predictive feature.
 
@@ -34,7 +28,7 @@ Where:
 
 The denominator often includes a small epsilon ($\epsilon$) to prevent division-by-zero errors in cases of extremely low variance.
 
-#### [3. Strategic Usage in Feature Selection](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/L2/Feature%20Demonstration%20Filter%202.md#3-strategic-usage-in-feature-selection)
+#### 3. Strategic Usage in Feature Selection
 
 - **Discriminative Power:** It explicitly rewards features that "pull apart" class clusters in feature space.
     
@@ -43,7 +37,7 @@ The denominator often includes a small epsilon ($\epsilon$) to prevent division-
 - **Classification Bias:** It is highly effective for binary classification but can be extended to multi-class problems by calculating the average distance between all pairs of class means.
     
 
-#### [4. Python Implementation](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/L2/Feature%20Demonstration%20Filter%203.md#4-python-implementation) (Custom)
+#### 4. Python Implementation (Custom)
 
 Since `scikit-learn` does not have a single "Fisher Score" API, it is implemented manually by aggregating class statistics.
 
@@ -65,7 +59,7 @@ def calculate_fisher_score(df, feature, target):
     return score
 ```
 
-#### [5. Application Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/L2/Embedded%20Methods.md#5-application-[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Overview.md#summary)))
+#### 5. Application Summary
 
 - **Advantages:** * **Simplicity:** Intuitive and easy to interpret (high score = clear separation).
     
@@ -79,6 +73,3 @@ def calculate_fisher_score(df, feature, target):
         
 
 **Workflow Best Practice:** Use the Fisher Score alongside other filter methods like Mutual Information. While Fisher Score excels at identifying features with simple mean-based separation, Mutual Information will catch the complex, non-linear patterns that Fisher Score might ignore.
-
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
