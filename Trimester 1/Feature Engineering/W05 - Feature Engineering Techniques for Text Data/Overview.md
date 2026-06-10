@@ -1,10 +1,4 @@
----
-title: W05 - Feature Engineering Techniques for Text Data
-module: Statistical Modelling And Inferencing
-week: W05 - Feature Engineering Techniques for Text Data
----
-
-## Week 5: [Feature Engineering Techniques for Text Data](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W05 - Feature Engineering Techniques for Text Data/Readme.md#feature-engineering-techniques-for-text-data)
+# Week 5: Feature Engineering Techniques for Text Data
 
 ---
 
@@ -21,5 +15,3 @@ By the end of this module, you will be able to:
 3. Explore advanced text representations such as word embeddings and one-hot encoding.
 4. Apply part-of-speech (POS) tagging and other linguistic features to enrich text data.
 5. Implement and evaluate text vectorization methods in real-world scenarios.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
