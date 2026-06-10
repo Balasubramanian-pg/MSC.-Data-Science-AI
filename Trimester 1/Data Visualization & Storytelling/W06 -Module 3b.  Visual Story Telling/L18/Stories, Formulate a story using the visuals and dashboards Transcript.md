@@ -1,12 +1,6 @@
----
-title: W06 -Module 3b.  Visual Story Telling
-module: Statistical Modelling And Inferencing
-week: W06 -Module 3b.  Visual Story Telling
----
+# Stories: Formulating a Story Using Visuals and Dashboards
 
-## Stories: Formulating a Story Using Visuals and Dashboards
-
-## Introduction
+# Introduction
 
 This section connects:
 
@@ -44,7 +38,7 @@ A chart combined with storytelling becomes:
 - and emotionally meaningful.
     
 
-## Why Storytelling Matters
+# Why Storytelling Matters
 
 The transcript begins by emphasizing:
 
@@ -66,7 +60,7 @@ Humans evolved to:
 
 through stories.
 
-## Historical Perspective
+# Historical Perspective
 
 Before:
 
@@ -95,7 +89,7 @@ through oral storytelling.
 Storytelling functioned as:  
 a distributed memory system for civilization.
 
-## Storytelling as Cognitive Compression
+# Storytelling as Cognitive Compression
 
 Stories compress:
 
@@ -111,7 +105,7 @@ Stories compress:
 into forms that humans can:  
 remember and transmit efficiently.
 
-## Cognitive Compression Model
+# Cognitive Compression Model
 
 ```mermaid
 flowchart LR
@@ -120,7 +114,7 @@ flowchart LR
     C --> D[Memory Retention]
 ```
 
-## Why Stories Are More Memorable Than Raw Data
+# Why Stories Are More Memorable Than Raw Data
 
 The transcript repeatedly contrasts:
 
@@ -132,7 +126,7 @@ The transcript repeatedly contrasts:
 
 This distinction is foundational.
 
-## Raw Data Problem
+# Raw Data Problem
 
 Raw data is:
 
@@ -158,7 +152,7 @@ A spreadsheet containing:
 usually produces:  
 low retention.
 
-## Story Advantage
+# Story Advantage
 
 Stories create:
 
@@ -182,7 +176,7 @@ These dramatically improve:
 - and recall.
     
 
-## Important Insight
+# Important Insight
 
 Humans rarely remember:  
 isolated information.
@@ -193,7 +187,7 @@ meaningful patterns.
 Stories provide:  
 pattern structure.
 
-## Visualization + Storytelling
+# Visualization + Storytelling
 
 The transcript introduces a critical idea:
 
@@ -202,7 +196,7 @@ The transcript introduces a critical idea:
 This is central to:  
 data storytelling.
 
-## Why Visuals Amplify Stories
+# Why Visuals Amplify Stories
 
 Visuals accelerate:  
 pattern recognition.
@@ -213,7 +207,7 @@ meaning formation.
 Combined together:  
 they become extremely powerful.
 
-## Data Storytelling Pipeline
+# Data Storytelling Pipeline
 
 ```mermaid
 flowchart LR
@@ -224,7 +218,7 @@ flowchart LR
     E --> F[Action]
 ```
 
-## Conviction and Belief
+# Conviction and Belief
 
 The transcript uses an important word:
 
@@ -242,7 +236,7 @@ Humans are more persuaded by:
 causal explanations  
 than isolated statistics.
 
-## Example
+# Example
 
 Weak:
 
@@ -261,7 +255,7 @@ The second:
 - and humanizes the metric.
     
 
-## Important Distinction
+# Important Distinction
 
 Visualization answers:
 
@@ -271,7 +265,7 @@ Storytelling answers:
 
 > Why should I care?
 
-## Storytelling and Action
+# Storytelling and Action
 
 The transcript emphasizes:  
 stories increase:
@@ -289,7 +283,7 @@ passive observation.
 Narratives create:  
 decision momentum.
 
-## Why Leaders Use Stories
+# Why Leaders Use Stories
 
 The lecture explains:  
 storytelling helps leaders:
@@ -303,7 +297,7 @@ storytelling helps leaders:
 
 This aligns with organizational psychology.
 
-## Leadership Is Meaning Management
+# Leadership Is Meaning Management
 
 Leaders rarely succeed through:  
 raw information alone.
@@ -319,7 +313,7 @@ They succeed by:
 
 Stories are ideal for this.
 
-## Example
+# Example
 
 Weak leadership communication:
 
@@ -340,7 +334,7 @@ The second creates:
 - and motivation.
     
 
-## Movie vs Annual Report Example
+# Movie vs Annual Report Example
 
 The transcript provides an excellent comparison:
 
@@ -352,7 +346,7 @@ People remember:
 - annual reports.
     
 
-## Why?
+# Why?
 
 Movies contain:
 
@@ -380,7 +374,7 @@ Annual reports usually contain:
 - low emotional encoding.
     
 
-## Human Memory Prefers Narrative Structures
+# Human Memory Prefers Narrative Structures
 
 Memory works better when information contains:
 
@@ -393,12 +387,12 @@ Memory works better when information contains:
 - and identity connection.
     
 
-## The Science of Storytelling
+# The Science of Storytelling
 
 The transcript next introduces:  
 the neuroscience and cognitive psychology behind storytelling.
 
-## Brain Activation
+# Brain Activation
 
 Stories activate:  
 more than language-processing regions.
@@ -416,12 +410,12 @@ They may activate:
 - empathy networks.
     
 
-## Important Concept: Neural Simulation
+# Important Concept: Neural Simulation
 
 When hearing stories,  
 the brain partially simulates experiences internally.
 
-## Example
+# Example
 
 Hearing:
 
@@ -439,7 +433,7 @@ may activate:
 This creates:  
 deeper encoding than abstract description.
 
-## Stories and Emotion
+# Stories and Emotion
 
 Emotion acts as:  
 a memory amplifier.
@@ -448,7 +442,7 @@ The brain prioritizes emotionally meaningful information because:
 from an evolutionary perspective,  
 emotion often signaled survival relevance.
 
-## Emotional Encoding Pipeline
+# Emotional Encoding Pipeline
 
 ```mermaid
 flowchart LR
@@ -458,7 +452,7 @@ flowchart LR
     D --> E[Recall]
 ```
 
-## Better Structured Stories Improve Recall
+# Better Structured Stories Improve Recall
 
 The transcript highlights:  
 structured stories improve retention.
@@ -466,7 +460,7 @@ structured stories improve retention.
 This aligns with:  
 cognitive schema theory.
 
-## Story Structures Organize Information
+# Story Structures Organize Information
 
 Most stories contain:
 
@@ -482,7 +476,7 @@ Most stories contain:
 This provides:  
 mental organization.
 
-## Narrative Framework
+# Narrative Framework
 
 ```mermaid
 flowchart LR
@@ -495,7 +489,7 @@ flowchart LR
 This structure helps the brain:  
 predict and organize information efficiently.
 
-## Jerome Bruner’s Narrative Principle
+# Jerome Bruner’s Narrative Principle
 
 The transcript references the famous claim associated with Jerome Bruner:
 
@@ -513,7 +507,7 @@ Narrative increases:
 - and meaning formation.
     
 
-## Storytelling in Data Visualization
+# Storytelling in Data Visualization
 
 The course now transitions from:  
 learning visualization tools
@@ -523,7 +517,7 @@ using them for storytelling.
 
 This is a major conceptual shift.
 
-## Weak Visualization Thinking
+# Weak Visualization Thinking
 
 Many people assume:  
 good charts automatically create insight.
@@ -540,7 +534,7 @@ users may:
 - or forget visual information.
     
 
-## Strong Data Storytelling
+# Strong Data Storytelling
 
 Strong storytelling provides:
 
@@ -555,7 +549,7 @@ Strong storytelling provides:
 - and significance.
     
 
-## Example
+# Example
 
 Weak:
 
@@ -568,7 +562,7 @@ Stronger:
 Now the data:  
 has causality and consequence.
 
-## Dashboards and Storytelling
+# Dashboards and Storytelling
 
 Dashboards often combine:
 
@@ -596,14 +590,14 @@ The reader:
 - and constructs deeper narratives.
     
 
-## Advanced Insight
+# Advanced Insight
 
 The most effective dashboards are:  
 interactive storytelling systems.
 
 Not static reporting surfaces.
 
-## Important Misconception
+# Important Misconception
 
 Storytelling is not:  
 “making data emotional.”
@@ -611,17 +605,17 @@ Storytelling is not:
 It is:  
 structuring information into meaningful causal frameworks.
 
-## Storytelling Failure Modes
+# Storytelling Failure Modes
 
-## 1. Data Dumping
+# 1. Data Dumping
 
 Too many charts without narrative cohesion.
 
-## 2. Manipulative Narratives
+# 2. Manipulative Narratives
 
 Emotion disconnected from evidence.
 
-## 3. No Conflict
+# 3. No Conflict
 
 Stories require:
 
@@ -632,11 +626,11 @@ Stories require:
 - or change.
     
 
-## 4. No Context
+# 4. No Context
 
 Metrics without meaning.
 
-## 5. No Action Implication
+# 5. No Action Implication
 
 Strong stories imply:
 
@@ -647,7 +641,7 @@ Strong stories imply:
 - or next step.
     
 
-## Final Takeaways
+# Final Takeaways
 
 This section establishes several foundational truths:
 
@@ -666,7 +660,7 @@ Most importantly:
 
 > Data alone rarely changes behavior.  
 > Stories built around data often do.
-## Visual Narratives and Public Perception
+# Visual Narratives and Public Perception
 
 This section explores an extremely important idea:
 
@@ -684,7 +678,7 @@ The transcript uses the example of the 2000 U.S. presidential election to demons
 
 can permanently influence public cognition.
 
-## The 2000 U.S. Election Example
+# The 2000 U.S. Election Example
 
 The transcript references the 2000 U.S. presidential election.
 
@@ -705,7 +699,7 @@ The election maps used:
 This eventually became:  
 a deeply embedded political communication framework.
 
-## Important Insight
+# Important Insight
 
 The colors themselves are arbitrary.
 
@@ -716,7 +710,7 @@ or Republicans must be red.
 But once repeated consistently:  
 the mapping became psychologically entrenched.
 
-## Narrative Encoding
+# Narrative Encoding
 
 This demonstrates:  
 visual narrative encoding.
@@ -724,7 +718,7 @@ visual narrative encoding.
 Repeated visual associations create:  
 long-term symbolic meaning.
 
-## Cognitive Association Pipeline
+# Cognitive Association Pipeline
 
 ```mermaid
 flowchart LR
@@ -734,7 +728,7 @@ flowchart LR
     --> D[Cultural Narrative]
 ```
 
-## Why This Matters
+# Why This Matters
 
 Visualizations can create:
 
@@ -748,7 +742,7 @@ Visualizations can create:
 Eventually:  
 the visualization becomes part of the narrative itself.
 
-## Persistence of Visual Narratives
+# Persistence of Visual Narratives
 
 The transcript highlights:  
 even later charts,  
@@ -763,7 +757,7 @@ continued using:
 This demonstrates:  
 narrative persistence.
 
-## Important Principle
+# Important Principle
 
 Once a visual language becomes culturally stable,  
 changing it becomes extremely difficult.
@@ -778,7 +772,7 @@ human cognition relies heavily on:
 - and associative memory.
     
 
-## Visual Language as Cognitive Infrastructure
+# Visual Language as Cognitive Infrastructure
 
 Colors become:  
 semantic shortcuts.
@@ -788,7 +782,7 @@ people no longer consciously interpret them.
 
 The association becomes automatic.
 
-## Similar Examples
+# Similar Examples
 
 |Color|Associated Meaning|
 |---|---|
@@ -807,7 +801,7 @@ These meanings are partly:
 - and repeatedly reinforced.
     
 
-## Important Visualization Insight
+# Important Visualization Insight
 
 Visual choices are never neutral.
 
@@ -826,7 +820,7 @@ Every design choice:
 
 affects interpretation.
 
-## Communication Paradigms
+# Communication Paradigms
 
 The transcript uses the phrase:
 
@@ -844,7 +838,7 @@ visual systems shape:
 - and how they interpret reality.
     
 
-## Example
+# Example
 
 Election maps eventually shaped:
 
@@ -864,13 +858,13 @@ Terms like:
 
 became embedded in national culture.
 
-## Advanced Insight
+# Advanced Insight
 
 Visual storytelling does not merely describe culture.
 
 It actively constructs culture.
 
-## Presentation Beyond PowerPoint
+# Presentation Beyond PowerPoint
 
 The transcript next shifts toward:  
 presentation principles.
@@ -881,7 +875,7 @@ Importantly, the instructor clarifies:
 
 This is a crucial insight.
 
-## Presentation Is Broader Than Slides
+# Presentation Is Broader Than Slides
 
 Presentation means:  
 structured communication delivery.
@@ -903,7 +897,7 @@ It includes:
 - and analytical communication.
     
 
-## Presentation as Attention Architecture
+# Presentation as Attention Architecture
 
 Presentations fundamentally manage:
 
@@ -919,7 +913,7 @@ what the audience notices,
 thinks,  
 and remembers.
 
-## Garr Reynolds Principles
+# Garr Reynolds Principles
 
 The lecture references principles associated with Garr Reynolds.
 
@@ -934,14 +928,14 @@ These principles focus heavily on:
 - and authenticity.
     
 
-## 1. Restraint
+# 1. Restraint
 
 ## Definition
 
 Eliminate:  
 everything unnecessary.
 
-## Why This Matters
+# Why This Matters
 
 Human working memory is extremely limited.
 
@@ -954,11 +948,11 @@ Too many elements create:
 - reduced comprehension.
     
 
-## Important Design Principle
+# Important Design Principle
 
 Every slide element competes for attention.
 
-## Common Failure
+# Common Failure
 
 Many presentations attempt:  
 maximum information density.
@@ -966,14 +960,14 @@ maximum information density.
 This usually reduces:  
 understanding and retention.
 
-## Cognitive Load Theory
+# Cognitive Load Theory
 
 Humans can process only limited information simultaneously.
 
 Overloaded slides create:  
 processing bottlenecks.
 
-## Example of Poor Restraint
+# Example of Poor Restraint
 
 - 12 bullet points
     
@@ -989,7 +983,7 @@ processing bottlenecks.
 This creates:  
 visual chaos.
 
-## Strong Restraint
+# Strong Restraint
 
 A strong slide may contain:
 
@@ -1002,19 +996,19 @@ A strong slide may contain:
 - strong emphasis.
     
 
-## Important Insight
+# Important Insight
 
 Communication effectiveness often increases when:  
 information quantity decreases.
 
-## 2. Whitespace as a Strategic Tool
+# 2. Whitespace as a Strategic Tool
 
 The transcript emphasizes:  
 whitespace is strategically important.
 
 This is frequently misunderstood.
 
-## Whitespace Is Not Empty Space
+# Whitespace Is Not Empty Space
 
 Whitespace functions as:
 
@@ -1027,7 +1021,7 @@ Whitespace functions as:
 - hierarchy enhancer.
     
 
-## Whitespace Reduces Cognitive Noise
+# Whitespace Reduces Cognitive Noise
 
 Without whitespace:  
 visuals compete aggressively for attention.
@@ -1041,7 +1035,7 @@ Whitespace improves:
 - visual focus.
     
 
-## Example
+# Example
 
 Compare:
 
@@ -1069,7 +1063,7 @@ Result:
 - improved understanding.
     
 
-## Gestalt Psychology Connection
+# Gestalt Psychology Connection
 
 Whitespace supports:  
 Gestalt grouping principles.
@@ -1077,7 +1071,7 @@ Gestalt grouping principles.
 Humans naturally interpret:  
 proximate objects as related.
 
-## Visual Hierarchy and Whitespace
+# Visual Hierarchy and Whitespace
 
 Whitespace helps define:
 
@@ -1088,7 +1082,7 @@ Whitespace helps define:
 - reading sequence.
     
 
-## Strategic Simplicity
+# Strategic Simplicity
 
 The transcript connects this back to:  
 pre-attentive attributes.
@@ -1098,7 +1092,7 @@ This is correct.
 Whitespace itself acts as:  
 a pre-attentive organizational mechanism.
 
-## 3. Naturalness in Delivery
+# 3. Naturalness in Delivery
 
 The lecture emphasizes:
 
@@ -1113,7 +1107,7 @@ This is critical because:
 storytelling is partly:  
 performance psychology.
 
-## Human Communication Is Emotional
+# Human Communication Is Emotional
 
 Audiences evaluate:
 
@@ -1127,7 +1121,7 @@ Audiences evaluate:
 Even highly analytical presentations are influenced by:  
 delivery style.
 
-## Important Insight
+# Important Insight
 
 People rarely separate:
 
@@ -1137,7 +1131,7 @@ People rarely separate:
 - delivery quality.
     
 
-## Naturalness Improves Trust
+# Naturalness Improves Trust
 
 Over-scripted or robotic communication often reduces:
 
@@ -1148,7 +1142,7 @@ Over-scripted or robotic communication often reduces:
 - and retention.
     
 
-## Storytelling Is an Emotive Exercise
+# Storytelling Is an Emotive Exercise
 
 The transcript correctly notes:  
 effective storytelling requires:
@@ -1160,7 +1154,7 @@ effective storytelling requires:
 - and delivery skill.
     
 
-## Why Emotion Matters
+# Why Emotion Matters
 
 Emotion increases:
 
@@ -1171,11 +1165,11 @@ Emotion increases:
 - and persuasion.
     
 
-## Heath Brothers SUCCESS Model
+# Heath Brothers SUCCESS Model
 
 The transcript next revisits the SUCCESS framework from Chip Heath and Dan Heath.
 
-## SUCCESS Framework
+# SUCCESS Framework
 
 |Principle|Meaning|
 |---|---|
@@ -1186,42 +1180,42 @@ The transcript next revisits the SUCCESS framework from Chip Heath and Dan Heath
 |Emotional|Personally meaningful|
 |Storied|Narrative-based|
 
-## Why SUCCESS Works
+# Why SUCCESS Works
 
 The framework aligns closely with:  
 human cognitive architecture.
 
-## Simple
+# Simple
 
 Complexity reduces:  
 memory and comprehension.
 
-## Unexpected
+# Unexpected
 
 Surprise increases:  
 attention and encoding.
 
-## Concrete
+# Concrete
 
 Specificity improves:  
 mental visualization.
 
-## Credible
+# Credible
 
 Trust determines:  
 acceptance.
 
-## Emotional
+# Emotional
 
 Emotion amplifies:  
 memory.
 
-## Storied
+# Storied
 
 Narratives organize:  
 meaning and causality.
 
-## SUCCESS Cognitive Model
+# SUCCESS Cognitive Model
 
 ```mermaid
 flowchart LR
@@ -1231,7 +1225,7 @@ flowchart LR
     D --> E[Action]
 ```
 
-## Important Observation in the Transcript
+# Important Observation in the Transcript
 
 The instructor repeatedly states:
 
@@ -1249,12 +1243,12 @@ using visuals for:
 
 This is a major conceptual transition.
 
-## Weak Visualization Thinking
+# Weak Visualization Thinking
 
 Weak analysts believe:  
 charts alone create insight.
 
-## Strong Storytelling Thinking
+# Strong Storytelling Thinking
 
 Strong communicators understand:  
 meaning emerges from:
@@ -1268,7 +1262,7 @@ meaning emerges from:
 - and audience context.
     
 
-## Final Takeaways
+# Final Takeaways
 
 This section establishes several foundational ideas:
 
@@ -1298,9 +1292,9 @@ Most importantly:
 > Data visualization becomes powerful only when it successfully guides human interpretation and meaning formation.
 > 
 
-## Pecha Kucha and the Art of Visual Brevity
+# Pecha Kucha and the Art of Visual Brevity
 
-## Transition from Visualization to Storytelling
+# Transition from Visualization to Storytelling
 
 The transcript makes an important conceptual transition:
 
@@ -1329,7 +1323,7 @@ but fail at:
 - and audience engagement.
     
 
-## Important Principle
+# Important Principle
 
 Visualization creates:  
 visibility.
@@ -1337,7 +1331,7 @@ visibility.
 Storytelling creates:  
 meaning.
 
-## Why Narrative Wrapping Matters
+# Why Narrative Wrapping Matters
 
 The lecture states:
 
@@ -1367,7 +1361,7 @@ Narratives provide:
 - and decision framing.
     
 
-## Data Storytelling Architecture
+# Data Storytelling Architecture
 
 ```mermaid
 flowchart LR
@@ -1377,7 +1371,7 @@ flowchart LR
     D --> E[Decision or Action]
 ```
 
-## Pecha Kucha: Art of Visual Brevity
+# Pecha Kucha: Art of Visual Brevity
 
 The transcript introduces the Japanese presentation philosophy:  
 Pecha Kucha.
@@ -1385,13 +1379,13 @@ Pecha Kucha.
 This is fundamentally:  
 a constraint-driven communication system.
 
-## Core Idea
+# Core Idea
 
 > Brevity forces clarity.
 
 This is a profound communication principle.
 
-## Pecha Kucha Format
+# Pecha Kucha Format
 
 |Element|Constraint|
 |---|---|
@@ -1399,7 +1393,7 @@ This is a profound communication principle.
 |Time per slide|20 seconds|
 |Total duration|6 minutes 40 seconds|
 
-## Why This Format Exists
+# Why This Format Exists
 
 Most presentations fail because:
 
@@ -1415,7 +1409,7 @@ Most presentations fail because:
 Pecha Kucha introduces:  
 hard communication constraints.
 
-## Constraint as Design Optimization
+# Constraint as Design Optimization
 
 This is important beyond presentations.
 
@@ -1440,11 +1434,11 @@ people tend toward:
 - cognitive overload.
     
 
-## Important Insight
+# Important Insight
 
 Unlimited presentation time usually reduces presentation quality.
 
-## Talk Less, Show More
+# Talk Less, Show More
 
 The transcript emphasizes:  
 focus should shift toward:
@@ -1455,7 +1449,7 @@ focus should shift toward:
 - excessive narration.
     
 
-## Why?
+# Why?
 
 Humans process:  
 visual information rapidly.
@@ -1463,7 +1457,7 @@ visual information rapidly.
 Long verbal explanations:  
 increase cognitive fatigue.
 
-## Strong Visuals Should Be Self-Explanatory
+# Strong Visuals Should Be Self-Explanatory
 
 This is a key idea.
 
@@ -1474,7 +1468,7 @@ The presenter should:
 enhance interpretation,  
 not read the slide aloud.
 
-## Weak Presentation Pattern
+# Weak Presentation Pattern
 
 ```text
 Slide:
@@ -1495,7 +1489,7 @@ This creates:
 - low retention.
     
 
-## Strong Presentation Pattern
+# Strong Presentation Pattern
 
 ```text
 Slide:
@@ -1514,7 +1508,7 @@ This creates:
 - stronger audience engagement.
     
 
-## Why Time Constraints Improve Visual Quality
+# Why Time Constraints Improve Visual Quality
 
 The transcript correctly notes:  
 Pecha Kucha forces presenters to:
@@ -1526,12 +1520,12 @@ Pecha Kucha forces presenters to:
 - prioritize essential ideas.
     
 
-## Important Design Principle
+# Important Design Principle
 
 When speaking time decreases:  
 visual clarity must increase.
 
-## Cognitive Effect of Brevity
+# Cognitive Effect of Brevity
 
 Shorter presentations:
 
@@ -1544,7 +1538,7 @@ Shorter presentations:
 - increase perceived clarity.
     
 
-## Attention Decay Problem
+# Attention Decay Problem
 
 Human attention naturally declines over time.
 
@@ -1557,7 +1551,7 @@ Long presentations suffer from:
 - memory collapse.
     
 
-## Attention Curve
+# Attention Curve
 
 ```mermaid
 xychart-beta
@@ -1570,13 +1564,13 @@ xychart-beta
 This is why:  
 brevity matters.
 
-## “Simplicity Is the Ultimate Sophistication”
+# “Simplicity Is the Ultimate Sophistication”
 
 The transcript includes this famous design principle.
 
 This idea is deeply important.
 
-## Common Misunderstanding
+# Common Misunderstanding
 
 People often believe:  
 complexity signals intelligence.
@@ -1584,7 +1578,7 @@ complexity signals intelligence.
 In reality:  
 clarity usually signals deeper understanding.
 
-## Simplicity Is Difficult
+# Simplicity Is Difficult
 
 Simple communication requires:
 
@@ -1597,7 +1591,7 @@ Simple communication requires:
 - conceptual mastery.
     
 
-## Example
+# Example
 
 Weak communication:
 
@@ -1617,7 +1611,7 @@ Strong communication:
 - one memorable insight.
     
 
-## Simplicity vs Oversimplification
+# Simplicity vs Oversimplification
 
 This distinction matters.
 
@@ -1630,7 +1624,7 @@ This distinction matters.
 Good communicators:  
 compress complexity without destroying truth.
 
-## Global Use of Pecha Kucha
+# Global Use of Pecha Kucha
 
 The transcript notes:  
 Pecha Kucha is used across:
@@ -1652,7 +1646,7 @@ modern audiences are overloaded with information.
 Brevity becomes:  
 competitive advantage.
 
-## Death by Presentation
+# Death by Presentation
 
 The lecture next discusses:  
 “Death by Presentation.”
@@ -1669,12 +1663,12 @@ audience disengagement caused by:
 - and weak storytelling.
     
 
-## Why This Happens
+# Why This Happens
 
 Most presentations violate:  
 basic cognitive principles.
 
-## Common Presentation Failures
+# Common Presentation Failures
 
 |Failure|Effect|
 |---|---|
@@ -1684,7 +1678,7 @@ basic cognitive principles.
 |Weak hierarchy|Important points buried|
 |Repetitive narration|Audience disengagement|
 
-## Important Cognitive Insight
+# Important Cognitive Insight
 
 People cannot deeply process:  
 listening and reading dense text simultaneously.
@@ -1692,7 +1686,7 @@ listening and reading dense text simultaneously.
 This creates:  
 split-attention overload.
 
-## Cognitive Conflict
+# Cognitive Conflict
 
 ```mermaid
 flowchart LR
@@ -1704,7 +1698,7 @@ flowchart LR
     C --> D[Reduced Understanding]
 ```
 
-## Information Transfer Collapse
+# Information Transfer Collapse
 
 The transcript correctly states:
 
@@ -1721,7 +1715,7 @@ Once cognitive overload occurs:
 - attention disengages.
     
 
-## Why This Is Dangerous
+# Why This Is Dangerous
 
 Poor presentations do not merely waste time.
 
@@ -1730,7 +1724,7 @@ They degrade:
 - organizational decision quality.
     
 
-## Important Organizational Insight
+# Important Organizational Insight
 
 Executives often make decisions based on:
 
@@ -1744,7 +1738,7 @@ Executives often make decisions based on:
 If communication quality is poor:  
 decision quality deteriorates.
 
-## Shortcut Decision-Making
+# Shortcut Decision-Making
 
 The transcript notes:  
 people begin relying on:
@@ -1768,14 +1762,14 @@ humans default to:
 - incomplete interpretation.
     
 
-## NASA Columbia Shuttle Case
+# NASA Columbia Shuttle Case
 
 The transcript references the Space Shuttle Columbia disaster again.
 
 This remains one of the most important examples of:  
 presentation failure causing operational blindness.
 
-## Key Problem
+# Key Problem
 
 The presentation:
 
@@ -1788,12 +1782,12 @@ The presentation:
 - and failed to communicate danger clearly.
     
 
-## Important Insight
+# Important Insight
 
 Communication failures in high-stakes environments can become:  
 systemic failures.
 
-## Presentation Design as Risk Engineering
+# Presentation Design as Risk Engineering
 
 This is a critical lesson.
 
@@ -1803,7 +1797,7 @@ a cosmetic exercise.
 It is:  
 part of operational safety infrastructure.
 
-## Why Clutter Is Dangerous
+# Why Clutter Is Dangerous
 
 Clutter:
 
@@ -1819,14 +1813,14 @@ Clutter:
 In high-risk systems:  
 that can become catastrophic.
 
-## Strong Communication Principle
+# Strong Communication Principle
 
 Critical information should:
 
 - dominate attention immediately.
     
 
-## High-Stakes Presentation Model
+# High-Stakes Presentation Model
 
 ```mermaid
 flowchart TD
@@ -1836,7 +1830,7 @@ flowchart TD
     --> D[Correct Decision]
 ```
 
-## Deepest Lesson of This Section
+# Deepest Lesson of This Section
 
 The entire lecture converges toward one fundamental idea:
 
@@ -1852,7 +1846,7 @@ effective communication must:
 - and guide interpretation intentionally.
     
 
-## Final Takeaways
+# Final Takeaways
 
 This section establishes several important principles:
 
@@ -1873,7 +1867,7 @@ Most importantly:
 
 > Communication quality determines whether information becomes understanding or noise.
 
-## Visual Hierarchy and Real-World Consequences
+# Visual Hierarchy and Real-World Consequences
 
 This final section brings together:
 
@@ -1900,7 +1894,7 @@ It is:
 - and sometimes a safety issue.
     
 
-## The Columbia Shuttle Presentation Failure
+# The Columbia Shuttle Presentation Failure
 
 The transcript revisits the Space Shuttle Columbia disaster.
 
@@ -1911,12 +1905,12 @@ The key observation:
 This is a catastrophic failure of:  
 visual hierarchy.
 
-## What Is Visual Hierarchy?
+# What Is Visual Hierarchy?
 
 Visual hierarchy is the deliberate organization of visual elements so that:  
 the audience naturally notices the most important information first.
 
-## Human Attention Is Selective
+# Human Attention Is Selective
 
 People do not process every element equally.
 
@@ -1933,7 +1927,7 @@ The brain naturally prioritizes:
 - and visually dominant structures.
     
 
-## Visual Attention Model
+# Visual Attention Model
 
 ```mermaid
 flowchart TD
@@ -1948,7 +1942,7 @@ flowchart TD
     D --> E
 ```
 
-## Why the NASA Slide Failed
+# Why the NASA Slide Failed
 
 The presentation violated:  
 basic perceptual principles.
@@ -1965,20 +1959,20 @@ Critical risk information:
 As a result:  
 decision-makers likely underestimated the seriousness of the situation.
 
-## Important Insight
+# Important Insight
 
 If critical information is visually weak,  
 the brain may unconsciously classify it as:  
 less important.
 
-## This Is a Cognitive Failure, Not Just a Design Failure
+# This Is a Cognitive Failure, Not Just a Design Failure
 
 Humans rely heavily on:  
 visual cues  
 to determine:  
 importance and urgency.
 
-## Example
+# Example
 
 Large red warning text:  
 → perceived as urgent
@@ -1988,7 +1982,7 @@ Tiny gray text at the bottom:
 
 Even before conscious reasoning occurs.
 
-## Visual Hierarchy Is Decision Architecture
+# Visual Hierarchy Is Decision Architecture
 
 This is the deeper principle.
 
@@ -2001,7 +1995,7 @@ Presentation structure shapes:
 - and what influences decisions.
     
 
-## Important Organizational Lesson
+# Important Organizational Lesson
 
 Organizations often underestimate:  
 the importance of communication structure.
@@ -2012,11 +2006,11 @@ the communication succeeded.
 
 This is false.
 
-## Information Visibility ≠ Information Impact
+# Information Visibility ≠ Information Impact
 
 Buried information is functionally invisible.
 
-## Real-World Consequences
+# Real-World Consequences
 
 The transcript correctly states:
 
@@ -2037,7 +2031,7 @@ Poor communication design can contribute to:
 - policy failures.
     
 
-## High-Stakes Domains Where Visualization Matters
+# High-Stakes Domains Where Visualization Matters
 
 |Domain|Consequence of Poor Communication|
 |---|---|
@@ -2048,12 +2042,12 @@ Poor communication design can contribute to:
 |Manufacturing|Operational shutdowns|
 |Government|Policy misjudgments|
 
-## Important Principle
+# Important Principle
 
 Communication quality affects:  
 decision quality.
 
-## Presentation Design Is Part of Systems Engineering
+# Presentation Design Is Part of Systems Engineering
 
 This is one of the deepest lessons in the lecture.
 
@@ -2063,7 +2057,7 @@ cosmetic wrappers around information.
 They are:  
 interfaces between data and human judgment.
 
-## The Hidden Cost of Clutter
+# The Hidden Cost of Clutter
 
 The lecture repeatedly criticizes:
 
@@ -2077,7 +2071,7 @@ The lecture repeatedly criticizes:
 This is because clutter creates:  
 cognitive competition.
 
-## Cognitive Competition Model
+# Cognitive Competition Model
 
 ```mermaid
 flowchart LR
@@ -2088,7 +2082,7 @@ flowchart LR
     --> E[Bad Decisions]
 ```
 
-## Why Important Messages Get Lost
+# Why Important Messages Get Lost
 
 When slides contain:
 
@@ -2102,7 +2096,7 @@ When slides contain:
 the audience cannot distinguish:  
 signal from noise.
 
-## Cognitive Overload
+# Cognitive Overload
 
 Human working memory is extremely limited.
 
@@ -2111,7 +2105,7 @@ Most people can actively process only a small number of concepts simultaneously.
 Overloaded presentations exceed:  
 processing capacity.
 
-## Result
+# Result
 
 The audience:
 
@@ -2124,12 +2118,12 @@ The audience:
 - or defaults to assumptions.
     
 
-## Improving Presentations
+# Improving Presentations
 
 The transcript then shifts toward:  
 how to avoid “death by PowerPoint.”
 
-## Step 1: Identify the Core Message
+# Step 1: Identify the Core Message
 
 This is the most important presentation question:
 
@@ -2138,12 +2132,12 @@ This is the most important presentation question:
 Most presentations fail because:  
 they attempt to communicate everything equally.
 
-## Important Principle
+# Important Principle
 
 If multiple ideas compete equally,  
 none dominate memory.
 
-## Strong Presentation Structure
+# Strong Presentation Structure
 
 ```mermaid
 flowchart TD
@@ -2156,7 +2150,7 @@ flowchart TD
 Everything should support:  
 the central narrative.
 
-## Step 2: Create Visual Emphasis
+# Step 2: Create Visual Emphasis
 
 The transcript mentions:  
 creating “visual hype.”
@@ -2164,11 +2158,11 @@ creating “visual hype.”
 A better term analytically would be:  
 visual emphasis or visual salience.
 
-## Goal
+# Goal
 
 Direct audience attention intentionally.
 
-## Methods
+# Methods
 
 |Technique|Effect|
 |---|---|
@@ -2178,19 +2172,19 @@ Direct audience attention intentionally.
 |Whitespace|Reduces clutter|
 |Minimalism|Improves clarity|
 
-## Important Insight
+# Important Insight
 
 Visual design controls:  
 attention flow.
 
-## Step 3: Convert Text into Visuals
+# Step 3: Convert Text into Visuals
 
 The transcript strongly recommends:  
 transforming text-heavy information into visuals.
 
 This is one of the most important communication principles.
 
-## Why Visuals Work Better
+# Why Visuals Work Better
 
 Visuals support:
 
@@ -2203,7 +2197,7 @@ Visuals support:
 - relational understanding.
     
 
-## Weak Communication
+# Weak Communication
 
 ```text
 • Revenue increased
@@ -2211,7 +2205,7 @@ Visuals support:
 • Delivery delays reduced
 ```
 
-## Strong Communication
+# Strong Communication
 
 A single:
 
@@ -2224,11 +2218,11 @@ A single:
 
 can communicate all three instantly.
 
-## Important Principle
+# Important Principle
 
 Visuals compress complexity efficiently.
 
-## But Important Warning
+# But Important Warning
 
 Not all visuals improve understanding.
 
@@ -2241,7 +2235,7 @@ Bad visuals can:
 - or exaggerate patterns.
     
 
-## Good Visuals Must Be
+# Good Visuals Must Be
 
 - clear,
     
@@ -2252,7 +2246,7 @@ Bad visuals can:
 - and cognitively efficient.
     
 
-## Storytelling and Presentation Together
+# Storytelling and Presentation Together
 
 The lecture ultimately combines:
 
@@ -2269,7 +2263,7 @@ into one broader framework:
 
 > Communication design.
 
-## Communication Design Goal
+# Communication Design Goal
 
 Transform:
 
@@ -2281,7 +2275,7 @@ into:
 - actionable understanding.
     
 
-## Full Communication Pipeline
+# Full Communication Pipeline
 
 ```mermaid
 flowchart LR
@@ -2294,7 +2288,7 @@ flowchart LR
     --> G[Action]
 ```
 
-## Deepest Lesson of the Entire Topic
+# Deepest Lesson of the Entire Topic
 
 The entire discussion converges toward one central idea:
 
@@ -2317,7 +2311,7 @@ effective communication requires:
 - and intentional design.
     
 
-## Final Takeaways
+# Final Takeaways
 
 This section establishes several critical principles:
 
@@ -2338,5 +2332,3 @@ Most importantly:
 
 > The purpose of visualization and storytelling is not merely to display information.  
 > It is to guide human attention toward the most meaningful insight with the least cognitive friction.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
