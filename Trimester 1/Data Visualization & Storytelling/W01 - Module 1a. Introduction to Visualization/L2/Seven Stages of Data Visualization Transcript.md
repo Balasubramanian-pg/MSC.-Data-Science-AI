@@ -1,11 +1,5 @@
----
-title: W01 - Module 1a. Introduction to Visualization
-module: Statistical Modelling And Inferencing
-week: W01 - Module 1a. Introduction to Visualization
----
-
 ![[Pasted image 20260527230732.png]]
-## Table of Contents
+# Table of Contents
 
 1. [Introduction to the Seven Stages of Data Visualization](https://chatgpt.com/g/g-p-6a0d41583fe88191a2893b540108b3b5-msc-data-science/c/6a10ae9f-5308-8321-80ea-23d7426ab7ae#1-introduction-to-the-seven-stages-of-data-visualization)  
     1.1 [Purpose of the Visualization Workflow](https://chatgpt.com/g/g-p-6a0d41583fe88191a2893b540108b3b5-msc-data-science/c/6a10ae9f-5308-8321-80ea-23d7426ab7ae#11-purpose-of-the-visualization-workflow)  
@@ -53,7 +47,7 @@ week: W01 - Module 1a. Introduction to Visualization
 
 ---
 
-## 1. Introduction to the Seven Stages of Data Visualization
+# 1. Introduction to the Seven Stages of Data Visualization
 
 ## 1.1 Purpose of the Visualization Workflow
 
@@ -112,7 +106,7 @@ This mirrors real-world analytics workflows in:
 
 ---
 
-## 2. Foundational Concepts Before Visualization
+# 2. Foundational Concepts Before Visualization
 
 ## 2.1 Understanding Variables and Attributes
 
@@ -202,9 +196,9 @@ Without identifying the primary metric:
 
 ---
 
-## 3. The Seven Stages of Data Visualization
+# 3. The Seven Stages of Data Visualization
 
-## 3.1 Stage 1: Acquiring Data
+# 3.1 Stage 1: Acquiring Data
 
 ## Definition
 
@@ -274,7 +268,7 @@ This is why enterprise BI teams heavily standardize ingestion pipelines.
 
 ---
 
-## 3.2 Stage 2: Parsing Data
+# 3.2 Stage 2: Parsing Data
 
 ## Definition
 
@@ -355,7 +349,7 @@ then analytical conclusions become invalid.
 
 ---
 
-## 3.3 Stage 3: Filtering Data
+# 3.3 Stage 3: Filtering Data
 
 ## Definition
 
@@ -444,7 +438,7 @@ A policymaker can instantly identify:
 
 ---
 
-## 3.4 Stage 4: Mining Data
+# 3.4 Stage 4: Mining Data
 
 ## Definition
 
@@ -520,7 +514,7 @@ Without mining:
 
 ---
 
-## 3.5 Stage 5: Representing Data
+# 3.5 Stage 5: Representing Data
 
 ## Definition
 
@@ -564,7 +558,7 @@ This is a critical lesson:
 
 ---
 
-## 3.6 Stage 6: Refining Visualizations
+# 3.6 Stage 6: Refining Visualizations
 
 ## Definition
 
@@ -649,7 +643,7 @@ Decision-support systems
 
 ---
 
-## 3.7 Stage 7: Interaction and Feedback
+# 3.7 Stage 7: Interaction and Feedback
 
 ## Definition
 
@@ -705,9 +699,9 @@ They evolve continuously because stakeholder questions evolve continuously.
 
 ---
 
-## 4. Detailed Case Study: Election Voter Turnout Visualization
+# 4. Detailed Case Study: Election Voter Turnout Visualization
 
-## 4.1 Acquisition from Election Commission Data
+# 4.1 Acquisition from Election Commission Data
 
 Source:
 
@@ -727,7 +721,7 @@ Software compatibility with Excel/CSV
 
 ---
 
-## 4.2 Parsing the Dataset Structure
+# 4.2 Parsing the Dataset Structure
 
 Identified columns:
 
@@ -740,7 +734,7 @@ Identified columns:
 
 ---
 
-## 4.3 Filtering by Voter Turnout Ratio
+# 4.3 Filtering by Voter Turnout Ratio
 
 Sorting logic:
 
@@ -756,7 +750,7 @@ Outcome:
 
 ---
 
-## 4.4 Mining Hidden Patterns
+# 4.4 Mining Hidden Patterns
 
 Discovered insights:
 
@@ -768,7 +762,7 @@ Discovered insights:
 
 ---
 
-## 4.5 Initial Visualization Problems
+# 4.5 Initial Visualization Problems
 
 Initial chart issues:
 
@@ -790,7 +784,7 @@ This is an important distinction:
 
 ---
 
-## 4.6 Refined Visualization Design
+# 4.6 Refined Visualization Design
 
 Enhancements:
 
@@ -803,7 +797,7 @@ Enhancements:
 
 ---
 
-## 4.7 Stakeholder Interaction and Iteration
+# 4.7 Stakeholder Interaction and Iteration
 
 Stakeholder requests may force movement back into:
 
@@ -820,7 +814,7 @@ It is a feedback system.
 
 ---
 
-## 5. Gestalt Principles in Visualization
+# 5. Gestalt Principles in Visualization
 
 ## 5.1 Similarity Principle
 
@@ -868,9 +862,9 @@ Used in:
 
 ---
 
-## 6. Chart Selection and Design Thinking
+# 6. Chart Selection and Design Thinking
 
-## 6.1 Simple vs Ordered Bar Charts
+# 6.1 Simple vs Ordered Bar Charts
 
 |Simple Bar Chart|Ordered Bar Chart|
 |---|---|
@@ -880,7 +874,7 @@ Used in:
 
 ---
 
-## 6.2 When to Use Horizontal Bar Charts
+# 6.2 When to Use Horizontal Bar Charts
 
 Use horizontal bar charts when:
 
@@ -906,7 +900,7 @@ Examples:
 
 ---
 
-## 6.3 Why Ordering Matters
+# 6.3 Why Ordering Matters
 
 Humans naturally detect:
 
@@ -923,7 +917,7 @@ Ordering reduces cognitive load dramatically.
 
 ---
 
-## 7. Visualization as an Iterative Analytical System
+# 7. Visualization as an Iterative Analytical System
 
 ## Visualization Lifecycle
 
@@ -946,7 +940,7 @@ G --> A
 
 ---
 
-## 8. Visualization Decision Framework
+# 8. Visualization Decision Framework
 
 ## What Do You Want to Show?
 
@@ -982,7 +976,7 @@ What is your analytical objective?
 
 ---
 
-## Common Analytical Formulas
+# Common Analytical Formulas
 
 ## Percentage Change
 
@@ -998,7 +992,7 @@ Used implicitly in comparative analysis.
 
 ---
 
-## Common Visualization Pitfalls
+# Common Visualization Pitfalls
 
 ## 1. Mistaking Pretty Charts for Effective Charts
 
@@ -1047,7 +1041,7 @@ If the audience cannot derive insight quickly, refinement is required.
 
 ---
 
-## 9. Golden Rules of Effective Data Visualization
+# 9. Golden Rules of Effective Data Visualization
 
 1. Every chart must answer a specific analytical question.
     
@@ -1088,5 +1082,3 @@ If the audience cannot derive insight quickly, refinement is required.
 19. Simplicity improves analytical clarity.
     
 20. A successful visualization tells a credible story with evidence.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
