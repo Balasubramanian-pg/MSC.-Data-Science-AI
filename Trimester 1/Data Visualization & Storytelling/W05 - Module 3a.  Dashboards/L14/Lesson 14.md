@@ -1,13 +1,7 @@
----
-title: W05 - Module 3a.  Dashboards
-module: Statistical Modelling And Inferencing
-week: W05 - Module 3a.  Dashboards
----
 
+# Lesson 14: Dashboards
 
-## Lesson 14: Dashboards
-
-## What is a Dashboard?
+# What is a Dashboard?
 
 A dashboard is a visual information system designed to:
 
@@ -66,7 +60,7 @@ It is specifically engineered for:
 - and action.
     
 
-## Historical Analogy
+# Historical Analogy
 
 Dashboards originate conceptually from:
 
@@ -87,7 +81,7 @@ In all these systems:
 The goal:  
 reduce complexity without losing awareness.
 
-## Dashboard Mental Model
+# Dashboard Mental Model
 
 ```mermaid
 flowchart LR
@@ -97,7 +91,7 @@ flowchart LR
     D --> E[Decision Making]
 ```
 
-## Why Dashboards Exist
+# Why Dashboards Exist
 
 Modern systems generate enormous volumes of data:
 
@@ -131,7 +125,7 @@ into:
 - meaningful visual insight.
     
 
-## Why Different Dashboard Types Exist
+# Why Different Dashboard Types Exist
 
 Different users require different forms of information.
 
@@ -151,7 +145,7 @@ Therefore dashboards must adapt to:
 - operational context.
     
 
-## Dashboard Audience Hierarchy
+# Dashboard Audience Hierarchy
 
 |User Type|Primary Goal|Typical Dashboard|
 |---|---|---|
@@ -160,7 +154,7 @@ Therefore dashboards must adapt to:
 |Analysts|Exploration and diagnosis|Analytical dashboard|
 |Operators|Real-time monitoring|Operational dashboard|
 
-## 1. Executive Dashboards
+# 1. Executive Dashboards
 
 Designed for:
 
@@ -208,7 +202,7 @@ Designed for:
 - Few interactions
     
 
-## 2. Operational Dashboards
+# 2. Operational Dashboards
 
 Designed for:
 
@@ -247,7 +241,7 @@ Low latency.
 
 Delayed operational dashboards are often useless.
 
-## 3. Analytical Dashboards
+# 3. Analytical Dashboards
 
 Designed for:
 
@@ -282,7 +276,7 @@ Designed for:
 - Researchers
     
 
-## Dashboard Taxonomy
+# Dashboard Taxonomy
 
 ```mermaid
 flowchart TD
@@ -295,9 +289,9 @@ flowchart TD
     D --> G[Exploratory Analysis]
 ```
 
-## Characteristics of Dashboards
+# Characteristics of Dashboards
 
-## 1. Visual Summarization
+# 1. Visual Summarization
 
 ## Definition
 
@@ -323,7 +317,7 @@ users interpret:
 - and visual patterns.
     
 
-## Why Visuals Matter
+# Why Visuals Matter
 
 Human brains process visual patterns much faster than textual data.
 
@@ -338,7 +332,7 @@ Visuals support:
 - pattern identification.
     
 
-## Example
+# Example
 
 Instead of reading:
 
@@ -354,14 +348,14 @@ a world heatmap immediately communicates:
 - recovery patterns.
     
 
-## Important Principle
+# Important Principle
 
 Visualization is not decoration.
 
 It is:  
 cognitive acceleration.
 
-## 2. Single-Screen Display
+# 2. Single-Screen Display
 
 ## Definition
 
@@ -383,7 +377,7 @@ Users should not need:
 - or deep navigation.
     
 
-## Why This Matters
+# Why This Matters
 
 Scrolling breaks:
 
@@ -397,7 +391,7 @@ Scrolling breaks:
 A dashboard succeeds when users can:  
 understand the system state at a glance.
 
-## Important Distinction
+# Important Distinction
 
 A long report is not a dashboard.
 
@@ -410,7 +404,7 @@ A dashboard prioritizes:
 - and rapid interpretation.
     
 
-## Common Mistake
+# Common Mistake
 
 Many BI tools produce:  
 “dashboard-shaped reports”
@@ -426,7 +420,7 @@ These contain:
 
 This defeats the purpose.
 
-## 3. Real-Time or Near Real-Time
+# 3. Real-Time or Near Real-Time
 
 ## Definition
 
@@ -434,7 +428,7 @@ Dashboards often require continuously updated information.
 
 The required freshness depends on context.
 
-## Examples
+# Examples
 
 |Use Case|Refresh Requirement|
 |---|---|
@@ -444,12 +438,12 @@ The required freshness depends on context.
 |Retail sales|Hourly|
 |Executive reports|Daily/weekly|
 
-## Key Principle
+# Key Principle
 
 Information latency must match:  
 decision velocity.
 
-## Operational Importance
+# Operational Importance
 
 Real-time dashboards support:
 
@@ -463,7 +457,7 @@ Real-time dashboards support:
 Without freshness:  
 dashboards become historical reports rather than operational systems.
 
-## Engineering Challenges
+# Engineering Challenges
 
 Real-time dashboards require:
 
@@ -478,7 +472,7 @@ Real-time dashboards require:
 - event processing systems.
     
 
-## 4. Customization and Interactivity
+# 4. Customization and Interactivity
 
 ## Definition
 
@@ -495,14 +489,14 @@ Dashboards should allow users to:
 - and personalize views.
     
 
-## Why Interactivity Matters
+# Why Interactivity Matters
 
 Different users ask different questions.
 
 A static dashboard cannot support:  
 deep analysis or investigative workflows.
 
-## Common Interactive Features
+# Common Interactive Features
 
 |Feature|Purpose|
 |---|---|
@@ -512,7 +506,7 @@ deep analysis or investigative workflows.
 |Time sliders|Analyze trends|
 |Cross-filtering|Linked analysis|
 
-## Reader-Driven Narrative
+# Reader-Driven Narrative
 
 Modern dashboards support:  
 interactive exploration.
@@ -528,7 +522,7 @@ The user:
 - uncovers explanations.
     
 
-## Important Balance
+# Important Balance
 
 Too little interaction:
 
@@ -540,14 +534,14 @@ Too much interaction:
 - dashboard becomes cognitively exhausting.
     
 
-## 5. Contextual Relevance
+# 5. Contextual Relevance
 
 ## Definition
 
 Every visual in a dashboard should support:  
 a specific business objective.
 
-## Weak Dashboard
+# Weak Dashboard
 
 Random metrics without:
 
@@ -558,12 +552,12 @@ Random metrics without:
 - or purpose.
     
 
-## Strong Dashboard
+# Strong Dashboard
 
 Every visual contributes toward answering:  
 a focused business question.
 
-## Example
+# Example
 
 Instead of:  
 “all sales metrics”
@@ -574,7 +568,7 @@ A better dashboard asks:
 
 Now every visualization supports that question.
 
-## Key Principle
+# Key Principle
 
 Context determines meaning.
 
@@ -587,7 +581,7 @@ The same data may require different presentations depending on:
 - and decisions.
     
 
-## 6. Visual Design Principles
+# 6. Visual Design Principles
 
 Dashboards rely heavily on:  
 human perception psychology.
@@ -607,7 +601,7 @@ This includes:
 - alignment.
     
 
-## Pre-Attentive Attributes
+# Pre-Attentive Attributes
 
 These are visual properties processed rapidly by the brain before conscious reasoning.
 
@@ -621,13 +615,13 @@ These are visual properties processed rapidly by the brain before conscious reas
 |Shape|Categorization|
 |Intensity|Emphasize importance|
 
-## Example
+# Example
 
 A single red KPI among gray metrics immediately attracts attention.
 
 No conscious reading required.
 
-## Visual Hierarchy
+# Visual Hierarchy
 
 Important information should visually dominate:
 
@@ -640,7 +634,7 @@ Important information should visually dominate:
 - and spacing.
     
 
-## Common Visualization Mistakes
+# Common Visualization Mistakes
 
 ## 1. Overcrowding
 
@@ -659,7 +653,7 @@ Too many bright colors destroy hierarchy.
 If colors mean different things across charts,  
 users become confused.
 
-## Dashboard Cognitive Architecture
+# Dashboard Cognitive Architecture
 
 ```mermaid
 flowchart LR
@@ -671,7 +665,7 @@ flowchart LR
     F --> G[Decision]
 ```
 
-## Real-World Examples
+# Real-World Examples
 
 ## Business Dashboard
 
@@ -725,24 +719,24 @@ Tracks:
 - pollution levels.
     
 
-## Advanced Dashboard Concepts
+# Advanced Dashboard Concepts
 
-## 1. Progressive Disclosure
+# 1. Progressive Disclosure
 
 Start with overview.  
 Reveal detail only when needed.
 
-## 2. Information Density
+# 2. Information Density
 
 High-value dashboards maximize:  
 useful information per unit screen area.
 
-## 3. Cognitive Load Reduction
+# 3. Cognitive Load Reduction
 
 Good dashboards reduce:  
 mental decoding effort.
 
-## 4. Situational Awareness
+# 4. Situational Awareness
 
 Dashboards should continuously answer:
 
@@ -753,7 +747,7 @@ Dashboards should continuously answer:
 - What requires attention?
     
 
-## Modern Dashboard Evolution
+# Modern Dashboard Evolution
 
 Modern dashboards increasingly integrate:
 
@@ -768,7 +762,7 @@ Modern dashboards increasingly integrate:
 - automated recommendations.
     
 
-## Example
+# Example
 
 Instead of merely showing:  
 sales decline,
@@ -782,7 +776,7 @@ modern systems may predict:
 - recommended interventions.
     
 
-## Final Takeaways
+# Final Takeaways
 
 A dashboard is:
 
@@ -816,7 +810,7 @@ The best dashboards combine:
 - and business understanding.
     
 
-## Interview-Style Questions
+# Interview-Style Questions
 
 1. Why is single-screen design important in dashboards?
     
@@ -835,7 +829,7 @@ The best dashboards combine:
 8. How does interactivity improve analytical reasoning?
     
 
-## Recommended Tools & Technologies
+# Recommended Tools & Technologies
 
 |Area|Tools|
 |---|---|
@@ -845,5 +839,3 @@ The best dashboards combine:
 |Streaming|Apache Kafka|
 |Monitoring|Grafana|
 |Python Libraries|Pandas, Matplotlib, Seaborn, Plotly Dash|
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
