@@ -1,14 +1,8 @@
----
-title: W08 - Automated Feature Engineering
-module: Statistical Modelling And Inferencing
-week: W08 - Automated Feature Engineering
----
-
 Featuretools is an automated feature engineering framework designed specifically for **relational (structured) data**. Its primary value proposition is automating the creation of features across multiple related tables, a process that is typically tedious and error-prone when done manually.
 
 ### 1. The Core Concept: Deep Feature Synthesis (DFS)
 
-The library is built around [**Deep Feature Synthesis (DFS)**](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W08 - Automated Feature Engineering/Module%20Introduction.md#deep-feature-synthesis-dfs), an algorithm that systematically stacks operations (primitives) across relational paths.
+The library is built around **Deep Feature Synthesis (DFS)**, an algorithm that systematically stacks operations (primitives) across relational paths.
 
 - **Primitives:** These are the building blocks of feature creation.
     
@@ -30,25 +24,25 @@ Featuretools requires you to model your data as an **EntitySet**, which acts as 
 3. **DFS Execution:** Once the `EntitySet` is defined, the `dfs()` API traces these paths and automatically calculates the features for you.
     
 
-### [3. Implementation Workflow](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W06 - Feature Engineering Techniques for Image Data/Putting%20it%20All%20Together.md#3-implementation-workflow)
+### 3. Implementation Workflow
 
 Python
 
 ```
 import featuretools as ft
 
-## 1. Create the container
+# 1. Create the container
 es = ft.EntitySet(id="credit_data")
 
-## 2. Add Entities
+# 2. Add Entities
 es.add_dataframe(dataframe_name="customers", dataframe=customers_df, index="customer_id")
 es.add_dataframe(dataframe_name="credits", dataframe=credit_df, index="credit_index")
 
-## 3. Define Relationships (Parent to Child)
+# 3. Define Relationships (Parent to Child)
 relationship = ft.Relationship(es, "customers", "customer_id", "credits", "customer_id")
 es.add_relationship(relationship)
 
-## 4. Deep Feature Synthesis
+# 4. Deep Feature Synthesis
 feature_matrix, feature_defs = ft.dfs(
     entityset=es,
     target_dataframe_name="customers",
@@ -67,7 +61,7 @@ feature_matrix, feature_defs = ft.dfs(
 - **Computational Trade-off:** While it saves hours of coding, DFS is computationally expensive. It is best suited for datasets that fit within the memory of a single machine.
     
 
-### [Summary Table](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W08 - Automated Feature Engineering/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Overview.md#summary))-table)
+### Summary Table
 
 |**Feature Type**|**How it Works**|**Example**|
 |---|---|---|
@@ -78,5 +72,3 @@ feature_matrix, feature_defs = ft.dfs(
 Featuretools is a powerful force multiplier for rapid prototyping. By defining your data structure once, you enable the library to explore features that might have taken you days to implement manually.
 
 **Are you ready to move into the implementation phase with your own relational data, or would you like to discuss specific strategies for selecting the best features out of the massive matrix that Featuretools generates?**
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
