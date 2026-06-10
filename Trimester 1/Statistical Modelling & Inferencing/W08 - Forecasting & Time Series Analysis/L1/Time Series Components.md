@@ -6,7 +6,7 @@
 
 ### 1. The Philosophy of Decomposition: The "Symphony" Analogy
 
-To understand decomposition, imagine a symphony. A raw time series is the combined audio of a hundred instruments playing at once—it sounds complex, potentially overwhelming, and hard to follow. Decomposition is the process of using an **equalizer** to isolate the individual sections: the deep, steady beat of the percussion (the Trend), the recurring melody (the Seasonality), and the unpredictable background chatter of the audience (the [Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))).
+To understand decomposition, imagine a symphony. A raw time series is the combined audio of a hundred instruments playing at once—it sounds complex, potentially overwhelming, and hard to follow. Decomposition is the process of using an **equalizer** to isolate the individual sections: the deep, steady beat of the percussion (the Trend), the recurring melody (the Seasonality), and the unpredictable background chatter of the audience (the Noise).
 
 #### The Decomposition Model: A Mathematical Framework
 
@@ -14,16 +14,16 @@ Analysts generally use one of two models to explain how these components combine
 
 - **Additive Model:** $Y_t = T_t + S_t + I_t$
     
-    - _When to use:_ Use this when the magnitude of the seasonal fluctuations stays constant regardless of the trend. For [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example), if a company gains 100 extra sales every December regardless of whether their total annual sales are 1,000 or 10,000.
+    - _When to use:_ Use this when the magnitude of the seasonal fluctuations stays constant regardless of the trend. For example, if a company gains 100 extra sales every December regardless of whether their total annual sales are 1,000 or 10,000.
         
 - **Multiplicative Model:** $Y_t = T_t \times S_t \times I_t$
     
-    - _When to use:_ Use this when the seasonal fluctuations grow or shrink in proportion to the trend. For [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example), if a store sees a 20% increase in sales every December, the _absolute_ number of extra sales grows as the company's base sales grow.
+    - _When to use:_ Use this when the seasonal fluctuations grow or shrink in proportion to the trend. For example, if a store sees a 20% increase in sales every December, the _absolute_ number of extra sales grows as the company's base sales grow.
         
 
 ### 2. The Components: The "Building Blocks" of Data
 
-Decomposition effectively breaks the [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) down into three distinct, actionable categories:
+Decomposition effectively breaks the signal down into three distinct, actionable categories:
 
 #### A. Trend-Cycle ($T_t$)
 
@@ -39,7 +39,7 @@ This component covers any predictable, recurring pattern that repeats over a fix
 - **Business Insight:** Tells you about your "rhythm." If your pharmaceutical sales consistently drop in Q3, that is not a business failure—it is a seasonal trait. Understanding this allows you to optimize inventory levels or staffing to match the cycle.
     
 
-#### C. Irregularity/[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)) ($I_t$)
+#### C. Irregularity/Noise ($I_t$)
 
 This is the "residual"—what remains after the trend and seasonal patterns are removed. It represents the random variation caused by external shocks, anomalies, or unexpected events.
 
@@ -48,11 +48,11 @@ This is the "residual"—what remains after the trend and seasonal patterns are 
 
 ### 3. Why Decomposition is the "Secret Weapon" of Analysts
 
-Decomposition is not just about [visualization](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#visualization); it is about **decoupling decision-making**.
+Decomposition is not just about visualization; it is about **decoupling decision-making**.
 
 1. **Forecasting Accuracy:** It is much easier to forecast a stable trend and a repeating seasonal pattern separately than it is to forecast a complex, noisy total. You model the components individually and then aggregate them to form a final prediction.
     
-2. **Strategic Clarity:** When leadership asks, "Why are our numbers down?" decomposition provides the objective [answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[answer](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#answer))). You can point to the chart and say: "Our long-term growth trend is healthy, the current dip is purely seasonal, and there is no unusual irregular [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))."
+2. **Strategic Clarity:** When leadership asks, "Why are our numbers down?" decomposition provides the objective answer. You can point to the chart and say: "Our long-term growth trend is healthy, the current dip is purely seasonal, and there is no unusual irregular noise."
     
 3. **Anomaly Detection:** If you remove the trend and the seasonality from your data, you are left with the irregular component ($I_t$). If that residual ever spikes significantly, you have effectively "found" an anomaly that requires immediate investigation.
     
@@ -63,9 +63,9 @@ You have now transitioned from understanding what time series _is_ (a sequence) 
 
 Would you like to explore the **mathematical process of performing an STL decomposition** (Seasonal-Trend decomposition using Loess), or would you like to discuss how to **reconstruct these components into a final forecast**
 
-### The Classical Decomposition Framework: Deconstructing the [Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal))
+### The Classical Decomposition Framework: Deconstructing the Signal
 
-The decomposition of a time series into these four classical components—Trend ($T_t$), Seasonality ($S_t$), Cyclicality ($C_t$), and Irregularity ($I_t$)—is the bedrock of classical time series analysis. This framework provides a structured approach to "reverse [engineering](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#engineering)" the forces driving your data.
+The decomposition of a time series into these four classical components—Trend ($T_t$), Seasonality ($S_t$), Cyclicality ($C_t$), and Irregularity ($I_t$)—is the bedrock of classical time series analysis. This framework provides a structured approach to "reverse engineering" the forces driving your data.
 
 #### 1. The Trend-Cycle Fusion ($T_t$)
 
@@ -89,7 +89,7 @@ Seasonality represents the "internal clock" of your data.
 
 The irregular component, often called the **remainder** or **residual**, is the "unexplained" portion of the series.
 
-- **The Goal of Modeling:** A perfect model leaves behind only **white [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))** ($I_t \sim N(0, \sigma^2)$). If you find that your [residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#residuals) still contain patterns (e.g., they look like they have a trend, or they have autocorrelation), your model is failing to capture information that it should be using to predict the future.
+- **The Goal of Modeling:** A perfect model leaves behind only **white noise** ($I_t \sim N(0, \sigma^2)$). If you find that your residuals still contain patterns (e.g., they look like they have a trend, or they have autocorrelation), your model is failing to capture information that it should be using to predict the future.
     
 
 ### The Mathematical Models: Combining the Parts
@@ -110,7 +110,7 @@ $$Y_t = T_t \times S_t \times C_t \times I_t$$
 - **Use case:** Use this when the seasonal and cyclical fluctuations **scale** with the trend. If the December spike represents a 20% increase in sales, as the base trend grows, the _absolute value_ of that spike will also grow. This is the most common model for economic and business time series.
     
 
-### [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L2/Reading%202%20Parametric%20vs.%20Non-Parametric%20Methods.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#summary))) Checklist for Decomposition
+### Summary Checklist for Decomposition
 
 To perform a rigorous decomposition on your pharmaceutical data, follow these steps:
 
@@ -118,7 +118,7 @@ To perform a rigorous decomposition on your pharmaceutical data, follow these st
     
 2. **Decompose:** Use a library like `statsmodels` in Python (`seasonal_decompose`) to isolate $T_t$, $S_t$, and $I_t$.
     
-3. **Analyze the [Residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#residuals):** Perform an ACF/PACF check on $I_t$. If you see correlation here, you have an opportunity to improve your model.
+3. **Analyze the Residuals:** Perform an ACF/PACF check on $I_t$. If you see correlation here, you have an opportunity to improve your model.
     
 4. **Recompose/Forecast:** Model $T_t$ and $S_t$ separately, generate forecasts for each, and combine them to create the final, data-backed projection.
     
@@ -133,7 +133,7 @@ _Figure 1:_ A stylized decomposition of a time series into its trend, seasonal,
 
 ### 3. Combining the Components: The Architecture of Your Data
 
-Choosing between an additive and a multiplicative model is more than a technical preference; it is a fundamental assertion about the **mechanics** of your business. When you decompose a series, you are essentially defining the "[physics](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#physics)" of your data's growth.
+Choosing between an additive and a multiplicative model is more than a technical preference; it is a fundamental assertion about the **mechanics** of your business. When you decompose a series, you are essentially defining the "physics" of your data's growth.
 
 #### 3.1 The Additive Model: Stability in Fluctuation
 
@@ -141,7 +141,7 @@ The additive model ($Y_t = T_t + S_t + C_t + I_t$) implies that the seasonal "rh
 
 - **When to deploy:** Look for series where the peaks and troughs maintain a **constant amplitude** regardless of whether the overall trend is moving up or down.
     
-- **Business [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):** Think of a hospital that receives a constant, predictable influx of 500 extra emergency visits every flu season. Whether the hospital's baseline capacity is 5,000 or 15,000 patients, the _seasonal impact_ remains a fixed, additive number.
+- **Business Example:** Think of a hospital that receives a constant, predictable influx of 500 extra emergency visits every flu season. Whether the hospital's baseline capacity is 5,000 or 15,000 patients, the _seasonal impact_ remains a fixed, additive number.
     
 
 #### 3.2 The Multiplicative Model: Proportional Growth
@@ -150,7 +150,7 @@ The multiplicative model ($Y_t = T_t \times S_t \times C_t \times I_t$) implies 
 
 - **When to deploy:** Look for series where the seasonal swings become wider as the trend grows. This is the "Gold Standard" for most economic data, including retail sales and pharmaceutical demand, where market expansion naturally scales the magnitude of seasonal peaks.
     
-- **Business [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):** If your pharmaceutical market grows globally, a 5% "holiday lull" in December will result in a much larger drop in absolute units today than it did five years ago. Because the seasonal impact grows alongside your business, the model must account for this proportionality.
+- **Business Example:** If your pharmaceutical market grows globally, a 5% "holiday lull" in December will result in a much larger drop in absolute units today than it did five years ago. Because the seasonal impact grows alongside your business, the model must account for this proportionality.
     
 
 ### The "Log-Transformation" Bridge
@@ -193,7 +193,7 @@ When you plot your raw data, focus specifically on the **amplitude** of the seas
 
 #### 2. The Log-Transformation Strategy
 
-If your visual inspection is ambiguous, or if your series exhibits [heteroscedasticity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#heteroscedasticity) (where the variance of the [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)) changes over time), applying a natural logarithm transformation is a highly effective professional practice.
+If your visual inspection is ambiguous, or if your series exhibits heteroscedasticity (where the variance of the noise changes over time), applying a natural logarithm transformation is a highly effective professional practice.
 
 - **The Math:** By applying $log(Y_t)$, you compress the large values and expand the small ones, which effectively forces a multiplicative relationship to exhibit the characteristics of an additive one.
     
@@ -206,15 +206,13 @@ Beyond visual inspection, you can use statistical metrics to validate your choic
 
 |**Metric**|**Additive Model**|**Multiplicative Model**|
 |---|---|---|
-|**Residual Autocorrelation**|Check if [residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#residuals) are purely white [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)).|If the multiplicative model still shows "patterns" in [residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#residuals), check the additive version.|
-|**[Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) Absolute Percentage Error (MAPE)**|Good for scale-independent comparison.|Use to compare the accuracy of your additive vs. multiplicative forecasts on hold-out data.|
+|**Residual Autocorrelation**|Check if residuals are purely white noise.|If the multiplicative model still shows "patterns" in residuals, check the additive version.|
+|**Mean Absolute Percentage Error (MAPE)**|Good for scale-independent comparison.|Use to compare the accuracy of your additive vs. multiplicative forecasts on hold-out data.|
 
 #### Putting It into Practice
 
 In your daily work as a data analyst, consider the **"Intervention" test**. If you introduce a new pharmaceutical product, does the seasonal variance grow at the same rate as the sales volume? If yes, always default to multiplicative or log-transformed additive models.
 
-**Pro-Tip:** If you are using Python, you can use the `seasonal_decompose` function from `statsmodels.tsa.seasonal` and toggle the `model` parameter between `'additive'` and `'multiplicative'`. By plotting the [residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#residuals) of both, you can visually see which one results in a "cleaner," more random remainder (irregular component).
+**Pro-Tip:** If you are using Python, you can use the `seasonal_decompose` function from `statsmodels.tsa.seasonal` and toggle the `model` parameter between `'additive'` and `'multiplicative'`. By plotting the residuals of both, you can visually see which one results in a "cleaner," more random remainder (irregular component).
 
 Would you like to see a Python code snippet that automatically compares these two models by calculating the residual variance, or are you interested in how these choices affect the final **forecast horizon**?
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
