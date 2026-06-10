@@ -1,10 +1,4 @@
----
-title: W04 - Module 2b. Visual Best Practises
-module: Statistical Modelling And Inferencing
-week: W04 - Module 2b. Visual Best Practises
----
-
-## Designing Visuals for Human Perception
+# Designing Visuals for Human Perception
 
 This section introduces one of the most important intellectual foundations in data visualization:
 
@@ -43,7 +37,7 @@ Both are essential because:
 A visualization is a translation layer between data structure and human perception.
 ```
 
-## Why Tufte’s Principles Matter
+# Why Tufte’s Principles Matter
 
 Before Tufte, many graphics focused heavily on visual decoration.
 
@@ -69,7 +63,7 @@ This eventually led to concepts like:
 - information-dense design
     
 
-## The Visualization Pipeline
+# The Visualization Pipeline
 
 ```mermaid
 flowchart LR
@@ -94,9 +88,9 @@ Most failures occur because:
 - comparisons become difficult
     
 
-## Understanding Data Types
+# Understanding Data Types
 
-## The Foundation of Correct Visualization
+# The Foundation of Correct Visualization
 
 Before designing visuals, the transcript emphasizes:
 
@@ -119,7 +113,7 @@ Using the wrong visualization or arithmetic interpretation can produce:
 - perceptual distortions
     
 
-## The Four Core Data Types
+# The Four Core Data Types
 
 |Data Type|Meaning|Mathematical Operations|
 |---|---|---|
@@ -128,9 +122,9 @@ Using the wrong visualization or arithmetic interpretation can produce:
 |Interval|Ordered numeric intervals|Addition/Subtraction|
 |Ratio|True quantitative scale|Full arithmetic|
 
-## 1. Nominal Data
+# 1. Nominal Data
 
-## Pure Categorization
+# Pure Categorization
 
 Nominal variables represent categories without inherent numerical meaning.
 
@@ -162,7 +156,7 @@ Example:
 
 The numbers themselves have no mathematical meaning.
 
-## Important Constraint
+# Important Constraint
 
 You cannot meaningfully compute:
 
@@ -175,7 +169,7 @@ You cannot meaningfully compute:
 
 from nominal encodings.
 
-## Appropriate Visualizations
+# Appropriate Visualizations
 
 ## Good Choices
 
@@ -199,7 +193,7 @@ from nominal encodings.
 - ratio-based comparisons
     
 
-## Nominal Data Decision Tree
+# Nominal Data Decision Tree
 
 ```mermaid
 flowchart TD
@@ -214,7 +208,7 @@ flowchart TD
     D -->|Yes| E[Stacked Bar / Treemap]
 ```
 
-## Key Cognitive Insight
+# Key Cognitive Insight
 
 Humans interpret nominal variables through:
 
@@ -229,9 +223,9 @@ Humans interpret nominal variables through:
 
 rather than magnitude.
 
-## 2. Ordinal Data
+# 2. Ordinal Data
 
-## Ordered Categories
+# Ordered Categories
 
 Ordinal variables introduce ranking.
 
@@ -254,7 +248,7 @@ The transcript gives:
 
 as an example.
 
-## Critical Property
+# Critical Property
 
 Ordinal variables preserve:
 
@@ -264,7 +258,7 @@ order
 
 but not proportional meaning.
 
-## What This Means
+# What This Means
 
 You can say:
 
@@ -280,13 +274,13 @@ But you cannot say:
 
 because ordinal intervals are not guaranteed equal.
 
-## Important Statistical Warning
+# Important Statistical Warning
 
 This is where many dashboards become misleading.
 
 Treating ordinal scales as continuous quantitative variables can create false precision.
 
-## Appropriate Visualizations
+# Appropriate Visualizations
 
 ## Good Choices
 
@@ -308,7 +302,7 @@ Treating ordinal scales as continuous quantitative variables can create false pr
 - ratio interpretation
     
 
-## Ordinal Encoding Workflow
+# Ordinal Encoding Workflow
 
 ```mermaid
 flowchart LR
@@ -317,9 +311,9 @@ flowchart LR
     --> C[Comparative Interpretation]
 ```
 
-## 3. Interval Data
+# 3. Interval Data
 
-## Equal Distances Without True Zero
+# Equal Distances Without True Zero
 
 Interval data introduces meaningful differences between values.
 
@@ -331,13 +325,13 @@ temperature in Celsius/Fahrenheit
 
 as the canonical example.
 
-## Critical Property
+# Critical Property
 
 Differences are meaningful.
 
 Ratios are not.
 
-## Example
+# Example
 
 |City|Temperature|
 |---|---|
@@ -358,7 +352,7 @@ Hyderabad is twice as hot
 
 because interval scales lack a true zero.
 
-## Why True Zero Matters
+# Why True Zero Matters
 
 Zero Celsius does not mean:
 
@@ -368,7 +362,7 @@ absence of temperature
 
 Therefore proportional reasoning breaks.
 
-## Visualization Implications
+# Visualization Implications
 
 Interval data supports:
 
@@ -381,9 +375,9 @@ Interval data supports:
 
 But proportional claims require caution.
 
-## 4. Ratio Data
+# 4. Ratio Data
 
-## True Quantitative Measurement
+# True Quantitative Measurement
 
 Ratio variables support full mathematical operations.
 
@@ -404,7 +398,7 @@ Examples:
 
 The transcript identifies these as the most common business variables.
 
-## Key Property
+# Key Property
 
 Ratio scales possess:
 
@@ -423,7 +417,7 @@ This enables:
 - multiplicative reasoning
     
 
-## Example
+# Example
 
 |Product A|₹100|
 |---|---|
@@ -435,11 +429,11 @@ Now it is valid to say:
 Product B is twice Product A
 ```
 
-## Why Data Types Matter in Visualization
+# Why Data Types Matter in Visualization
 
 Different variable types require different visual treatments.
 
-## Data Type → Visualization Mapping
+# Data Type → Visualization Mapping
 
 ```mermaid
 flowchart TD
@@ -456,7 +450,7 @@ flowchart TD
     E --> I[Full Quantitative Analysis]
 ```
 
-## The Hidden Risk
+# The Hidden Risk
 
 One of the biggest causes of misleading dashboards is:
 
@@ -464,7 +458,7 @@ One of the biggest causes of misleading dashboards is:
 Applying inappropriate arithmetic interpretation to the wrong variable type.
 ```
 
-## Transition Into Visual Encoding
+# Transition Into Visual Encoding
 
 After discussing data types, the transcript moves into:
 
@@ -474,7 +468,7 @@ how humans decode visualizations
 
 This is where Tufte’s ideas become deeply cognitive.
 
-## Human Visual Decoding Process
+# Human Visual Decoding Process
 
 The transcript identifies three perception stages:
 
@@ -487,7 +481,7 @@ The transcript identifies three perception stages:
 
 These form the core perceptual workflow.
 
-## Perceptual Decoding Pipeline
+# Perceptual Decoding Pipeline
 
 ```mermaid
 flowchart LR
@@ -498,9 +492,9 @@ flowchart LR
     --> E[Interpretation]
 ```
 
-## 1. Detection
+# 1. Detection
 
-## Recognizing Visual Objects
+# Recognizing Visual Objects
 
 Detection is the brain’s ability to identify geometric representations.
 
@@ -523,7 +517,7 @@ The brain first asks:
 What objects exist in this visual?
 ```
 
-## Examples
+# Examples
 
 ## Bar Chart
 
@@ -545,11 +539,11 @@ Detection focuses on:
 - angular separation
     
 
-## Important Insight
+# Important Insight
 
 Different chart types create different detection difficulty.
 
-## Easy Detection
+# Easy Detection
 
 - bars
     
@@ -558,7 +552,7 @@ Different chart types create different detection difficulty.
 - dots
     
 
-## Hard Detection
+# Hard Detection
 
 - 3D charts
     
@@ -567,15 +561,15 @@ Different chart types create different detection difficulty.
 - radial layouts
     
 
-## Detection Efficiency Principle
+# Detection Efficiency Principle
 
 ```text
 The easier the object detection, the lower the cognitive load.
 ```
 
-## 2. Assembly
+# 2. Assembly
 
-## Understanding Relationships
+# Understanding Relationships
 
 After detection, the brain attempts to organize visual objects into relationships.
 
@@ -585,7 +579,7 @@ The transcript connects this with:
 Gestalt continuity principles
 ```
 
-## What Assembly Means
+# What Assembly Means
 
 The brain asks:
 
@@ -598,7 +592,7 @@ The brain asks:
 - Is there continuity?
     
 
-## Example
+# Example
 
 If bars are sorted descending:
 
@@ -608,7 +602,7 @@ If points form a line:
 
 users infer trend continuity.
 
-## Assembly Creates Narrative
+# Assembly Creates Narrative
 
 ```mermaid
 flowchart LR
@@ -618,7 +612,7 @@ flowchart LR
     --> D[Relationship Inference]
 ```
 
-## Why Ordering Matters
+# Why Ordering Matters
 
 The transcript emphasizes:
 
@@ -628,7 +622,7 @@ Example:
 
 Descending order of voter margins immediately reveals hierarchy.
 
-## Important Visualization Principle
+# Important Visualization Principle
 
 ```text
 Ordering creates meaning.
@@ -636,9 +630,9 @@ Ordering creates meaning.
 
 Unordered visuals increase interpretation effort.
 
-## 3. Estimation
+# 3. Estimation
 
-## Quantitative Comparison
+# Quantitative Comparison
 
 After detection and assembly, the brain estimates magnitude.
 
@@ -653,18 +647,18 @@ This includes questions like:
 - By what factor?
     
 
-## Estimation Is the Hardest Stage
+# Estimation Is the Hardest Stage
 
 Humans estimate some encodings much better than others.
 
-## Strong Estimation Encodings
+# Strong Estimation Encodings
 
 - aligned position
     
 - length
     
 
-## Weak Estimation Encodings
+# Weak Estimation Encodings
 
 - color
     
@@ -675,7 +669,7 @@ Humans estimate some encodings much better than others.
 - volume
     
 
-## Estimation Workflow
+# Estimation Workflow
 
 ```mermaid
 flowchart TD
@@ -685,7 +679,7 @@ flowchart TD
     --> D[Quantitative Judgment]
 ```
 
-## The Core Design Question
+# The Core Design Question
 
 The transcript ends with one of the most important questions in visualization design:
 
@@ -695,7 +689,7 @@ What information do you want the audience to notice first?
 
 Everything follows from this.
 
-## Visualization Design Decision Process
+# Visualization Design Decision Process
 
 ```mermaid
 flowchart TD
@@ -712,7 +706,7 @@ flowchart TD
     E --> F[Minimize Cognitive Load]
 ```
 
-## Tufte’s Core Philosophy
+# Tufte’s Core Philosophy
 
 Good visualization design is not artistic decoration.
 
@@ -727,9 +721,9 @@ It is:
 - communication design
     
 
-## Advanced Insight
+# Advanced Insight
 
-## Why Minimalism Works
+# Why Minimalism Works
 
 Minimalist dashboards are effective because they improve:
 
@@ -748,7 +742,7 @@ This is the origin of Tufte’s famous criticism of:
 chartjunk
 ```
 
-## Chartjunk
+# Chartjunk
 
 Chartjunk refers to visual elements that:
 
@@ -772,7 +766,7 @@ Examples:
 - visual clutter
     
 
-## Cognitive Cost of Chartjunk
+# Cognitive Cost of Chartjunk
 
 ```mermaid
 flowchart TD
@@ -782,7 +776,7 @@ flowchart TD
     --> D[Reduced Clarity]
 ```
 
-## Final Design Principles
+# Final Design Principles
 
 ## A good visualization should:
 
@@ -808,7 +802,7 @@ flowchart TD
 - increases interpretation effort
     
 
-## Final Mental Model
+# Final Mental Model
 
 Think of visualization as:
 
@@ -818,7 +812,7 @@ a perceptual interface between data and cognition
 
 not merely a graphical output.
 
-## References and Influential Foundations
+# References and Influential Foundations
 
 The ideas discussed in this lecture strongly connect with foundational work from:
 
@@ -834,5 +828,3 @@ The ideas discussed in this lecture strongly connect with foundational work from
     
 
 These works collectively established modern visualization science.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
