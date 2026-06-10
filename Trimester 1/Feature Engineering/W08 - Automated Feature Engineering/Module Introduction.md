@@ -1,12 +1,6 @@
----
-title: W08 - Automated Feature Engineering
-module: Statistical Modelling And Inferencing
-week: W08 - Automated Feature Engineering
----
-
 Automated Feature Engineering represents a shift from manual, heuristic-based variable creation to algorithmic, systematic transformation. It addresses the scalability bottleneck in data science: as datasets grow in complexity and volume, human-driven feature design becomes a significant constraint.
 
-### [1. The Core Paradigm Shift](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W08 - Automated Feature Engineering/Overview.md#1-the-core-paradigm-shift)
+### 1. The Core Paradigm Shift
 
 Traditionally, feature engineering requires deep domain expertise and iterative testing. Automated approaches replace this with computational search strategies.
 
@@ -48,7 +42,7 @@ While powerful, automation is not a replacement for data science rigor:
 - **Computational Load:** Searching the entire "feature space" is expensive. Use these tools as force multipliers, not as a complete substitute for data exploration.
     
 
-**[Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Overview.md#summary)) of Workflow:**
+**Summary of Workflow:**
 
 1. **Model Data Structure:** Define relationships (for relational data) or sequence IDs (for time series).
     
@@ -60,5 +54,3 @@ While powerful, automation is not a replacement for data science rigor:
     
 
 **Which of these three techniques are you most interested in implementing first? I can help you draft the code for your specific data structure.**
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
