@@ -1,4 +1,4 @@
-### Fundamentals of Random Variables & Distributions
+# Fundamentals of Random Variables & Distributions
 
 The provided transcript introduces the foundational concept of a **random variable**—a core building block in probability and statistical inference. While the transcript uses intuitive, everyday examples like taxi fares and coin tosses, we can elevate these concepts into the formal mathematical framework required for data science.
 
