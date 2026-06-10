@@ -1,9 +1,3 @@
----
-title: W02 - Module 1b. Taxonomy of Data Visualisation Methods
-module: Statistical Modelling And Inferencing
-week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
----
-
 ![[Pasted image 20260527231856.png]]
 ### **Core Philosophy: Form Follows Function**
 
@@ -85,5 +79,3 @@ graph TD
 *   **Show the "Why":** Explain the design decisions and compare the new visual against the older format to show how much faster the new one delivers the key insight.
 *   **Build Allies:** Connect with key audience members beforehand or during the presentation. Let those who understand the visual help champion its adoption.
 *   **Iterate Dynamically:** Treat visualization as an ongoing process. Welcome constructive feedback to refine color choices, labels, or structures for the next iteration.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
