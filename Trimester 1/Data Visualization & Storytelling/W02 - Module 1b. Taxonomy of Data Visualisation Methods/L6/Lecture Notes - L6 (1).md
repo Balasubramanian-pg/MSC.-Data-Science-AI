@@ -1,10 +1,4 @@
----
-title: W02 - Module 1b. Taxonomy of Data Visualisation Methods
-module: Statistical Modelling And Inferencing
-week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
----
-
-## Enterprise Data Visualization Taxonomy: Advanced Categorical Comparison, Flow Mapping, and Hierarchical Architecture
+# Enterprise Data Visualization Taxonomy: Advanced Categorical Comparison, Flow Mapping, and Hierarchical Architecture
 
 A robust taxonomy organizes data visualization methods by their primary communication purpose, helping engineers and architects select the most effective layout for a given dataset. This document details the visual paradigms, technical architectures, and practical trade-offs for two critical communication tasks: **Comparing Categories** and **Assessing Hierarchies / Part-to-Whole Relationships**.
 
@@ -429,5 +423,3 @@ flowchart TD
 #### Mitigations:
 * **Use Absolute Values with Visual Alerts:** Convert negative numbers to positive values to calculate their size, but add a distinct color (like bright red) or a hatched pattern to flag them as negative balances.
 * **Apply Hatched Visual Textures:** Use specific textures to represent divisions with zero budget, keeping them visible on the chart without skewing the scaling math.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
