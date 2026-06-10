@@ -1,11 +1,5 @@
----
-title: W05 - Module 3a.  Dashboards
-module: Statistical Modelling And Inferencing
-week: W05 - Module 3a.  Dashboards
----
 
-
-## Page 1
+# Page 1
 
 Lesson 15 
  
@@ -43,7 +37,7 @@ Performance Dashboard Layers
 ●​ Detailed Operational Data: In-depth data for operational decision-making. 
 
 
-## Page 2
+# Page 2
 
 ●​ Reporting: Operational reports and planning updates such as forecasts and models.​
  
@@ -68,6 +62,3 @@ Mistakes in Dashboard Design (Stephen Few)
  
  
  
-
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
