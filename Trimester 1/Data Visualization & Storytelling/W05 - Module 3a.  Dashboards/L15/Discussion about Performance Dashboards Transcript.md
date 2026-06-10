@@ -1,11 +1,5 @@
----
-title: W05 - Module 3a.  Dashboards
-module: Statistical Modelling And Inferencing
-week: W05 - Module 3a.  Dashboards
----
 
-
-## Page 1
+# Page 1
 
  
  
@@ -57,7 +51,7 @@ elements of a performance dashboard.
   
 
 
-## Page 2
+# Page 2
 
  
  
@@ -109,7 +103,7 @@ for top 15 RPOs and you have the numbers given here, clearly following the gesta
 ordered in a logical order so you can clearly see which is the topmost pending category. 
 
 
-## Page 3
+# Page 3
 
  
  
@@ -145,6 +139,3 @@ effectively and the company reaches its strategic milestones.
   
  
  
-
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
