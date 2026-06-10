@@ -1,14 +1,8 @@
----
-title: W06 - Feature Engineering Techniques for Image Data
-module: Statistical Modelling And Inferencing
-week: W06 - Feature Engineering Techniques for Image Data
----
-
 This module demonstrates the practical impact of **Feature Engineering** on model performance. By comparing models trained on "raw" data versus "engineered" features, we can quantify the value of transforming pixels into structured descriptors like **Histogram of Oriented Gradients (HOG)**, **Edges (Canny)**, or **Corners (Harris/Shi-Tomasi)**.
 
 ### 1. Experimental Methodology: Raw Pixels vs. Engineered Features
 
-To evaluate the effectiveness of feature engineering, we compare two pipelines using the MNIST [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/Experiential%20Learning%20Activity.md#dataset) (handwritten digits):
+To evaluate the effectiveness of feature engineering, we compare two pipelines using the MNIST dataset (handwritten digits):
 
 - **Baseline (Raw Pixels):** The model is trained directly on the $28 \times 28$ flattened pixel intensity vectors (784 features).
     
@@ -31,7 +25,7 @@ To evaluate the effectiveness of feature engineering, we compare two pipelines u
 3. **Dimensionality and Complexity:** HOG effectively summarizes the image into a more compact and "meaningful" feature vector, making it easier for a linear classifier (like Logistic Regression) to draw boundaries between digit classes.
     
 
-### [3. Implementation Workflow](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W08 - Automated Feature Engineering/Deep%20Feature%20Synthesis%20Using%20Featuretools.md#3-implementation-workflow)
+### 3. Implementation Workflow
 
 To integrate these features into a machine learning pipeline, follow these structured steps:
 
@@ -44,7 +38,7 @@ To integrate these features into a machine learning pipeline, follow these struc
 4. **Evaluation:** Use cross-validation to compare accuracy and F1-scores across different feature sets to identify which engineering technique provides the best generalization.
     
 
-### 4. [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Overview.md#summary)): The Feature Engineering Pipeline
+### 4. Summary: The Feature Engineering Pipeline
 
 This module highlights a critical lesson: **Your model is only as good as the features it learns from.**
 
@@ -56,5 +50,3 @@ This module highlights a critical lesson: **Your model is only as good as the fe
     
 
 As you move forward, consider experimenting with how these techniques might be combined—for example, using a combination of edge density and HOG descriptors as input to a Random Forest classifier. Would you like to explore how to build a unified pipeline that combines multiple feature extraction techniques into one model, or should we move on to the next topic?
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
