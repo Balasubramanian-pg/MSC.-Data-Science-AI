@@ -1,11 +1,5 @@
----
-title: W09 - Module 4b. Python Seaborn Package
-module: Statistical Modelling And Inferencing
-week: W09 - Module 4b. Python Seaborn Package
----
 
-
-## Page 1
+# Page 1
 
  
  
@@ -59,7 +53,7 @@ tips received in the restaurant for various types of lunches that are there that
 lunch and dinner and what depending upon the bill says what is the tip. So we have 
 
 
-## Page 2
+# Page 2
 
  
  
@@ -113,7 +107,7 @@ to the second categorical plot that we are exploring is called a swarm plot okay
 sometimes called the bee swarm okay. 
 
 
-## Page 3
+# Page 3
 
  
  
@@ -167,7 +161,7 @@ customers. We can draw these kind of conclusions. So the next plot we will be we
 have done the hue has been done for male and female right. 
 
 
-## Page 4
+# Page 4
 
  
  
@@ -220,7 +214,7 @@ have the box plot, you have the histogram. These are the basic distribution plot
   
 
 
-## Page 5
+# Page 5
 
  
  
@@ -274,7 +268,7 @@ So these graphs indicate on Thursday the smokers bill is varying from maybe arou
 12 dollars to 20 dollars with median values being somewhere around 15 or 17. Non 
 
 
-## Page 6
+# Page 6
 
  
  
@@ -328,7 +322,7 @@ cluttering the plot we are not getting any idea so first I am removing the colou
 doing this so yeah so you can see these are so many out layers are there in diamond 
 
 
-## Page 7
+# Page 7
 
  
  
@@ -382,7 +376,7 @@ it is SNS dot cat plot okay data is Titanic X variable is the gender you want to
 understand it based on the categorical variable of gender and Y is the we have the 
 
 
-## Page 8
+# Page 8
 
  
  
@@ -436,7 +430,7 @@ categories ok so let us try to use a point graph for understanding the relations
 between the survival rate and the gender category and how it varies by the passenger 
 
 
-## Page 9
+# Page 9
 
  
  
@@ -490,7 +484,7 @@ can impose more dimensions also so I'm just trying to cat plot you have an optio
 called facet grid it makes easy to add faceting and visualise higher dimensions okay 
 
 
-## Page 10
+# Page 10
 
  
  
@@ -544,7 +538,7 @@ is the species what is the beak bill is beak length and beak depth so flipper le
 body mass whether it is a male penguin or a female penguin or we don't have the data 
 
 
-## Page 11
+# Page 11
 
  
  
@@ -598,7 +592,7 @@ how you get it so it is showing all the three types of penguin species in our da
 and you have the distribution so but you will note right this is little difficult to read maybe 
 
 
-## Page 12
+# Page 12
 
  
  
@@ -652,7 +646,7 @@ the columns in the data along with the distribution okay so on the exact if you 
 variables so you have all the numerical variables okay and you have the numerical 
 
 
-## Page 13
+# Page 13
 
  
  
@@ -683,6 +677,3 @@ the tip data set and its relation.
  
  
 --------------------------------------------------End--------------------------------------------------------- 
-
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
