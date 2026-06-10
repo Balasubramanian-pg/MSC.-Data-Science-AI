@@ -1,8 +1,4 @@
-Here is the comprehensive, well-structured guide and refactored code based on your lecture transcript comparing Matplotlib and Seaborn.
-
-The lecture introduces **Seaborn** as a high-level statistical visualization engine built directly on top of **Matplotlib**, emphasizing how Seaborn drastically improves the aesthetics, structural design, and cognitive ease of your data stories.
-
-## 1. Core Paradigm: Matplotlib vs. Seaborn
+# 1. Core Paradigm: Matplotlib vs. Seaborn
 
 The transcript outlines a clear operational hierarchy between the two libraries:
 
