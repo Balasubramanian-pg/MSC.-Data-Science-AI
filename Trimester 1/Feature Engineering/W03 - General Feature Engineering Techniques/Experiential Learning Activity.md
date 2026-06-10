@@ -1,9 +1,3 @@
----
-title: W03 - General Feature Engineering Techniques
-module: Statistical Modelling And Inferencing
-week: W03 - General Feature Engineering Techniques
----
-
 ### Dataset
 
 Students will work on the **Bank Marketing Dataset ([bank_dataset.csv](https://lumen.bitspilani-digital.edu.in/content/enforced/7097-T3-25_MDSDF403/bank_dataset.csv?isCourseFile=true&ou=7097))**.
@@ -25,7 +19,7 @@ Below is a structured approach to each of your tasks, with technical guidance an
     - Use `df.hist()` for numeric variables (`age`, `balance`, `duration`) to check for skewness.
         
 
-### [2. Feature Construction](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/L1/Demonstration.md#2-feature-construction) & Transformation
+### 2. Feature Construction & Transformation
 
 - **Construction:**
     
@@ -81,13 +75,13 @@ Python
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 
-## 1. Preprocessing: Impute + Scale + Encode
+# 1. Preprocessing: Impute + Scale + Encode
 preprocessor = ColumnTransformer(transformers=[
     ('num', StandardScaler(), numeric_cols),
     ('cat', OneHotEncoder(), categorical_cols)
 ])
 
-## 2. Pipeline: Preprocess -> Selection -> Model
+# 2. Pipeline: Preprocess -> Selection -> Model
 model_pipeline = Pipeline(steps=[
     ('preprocessor', preprocessor),
     ('selector', SelectKBest(score_func=chi2, k=5)), # Filter selection
@@ -101,9 +95,7 @@ model_pipeline = Pipeline(steps=[
     
 2. **Validate:** The "Stretch Goal" is the most important part. Compare the performance of the model using **(a) raw data** (no engineering), **(b) manually constructed features only**, and **(c) features selected by SFS/SBS**.
     
-3. **[Visualization](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W04 - Dimensionality Reduction Techniques/Readme.md#visualization):** Use `matplotlib` to plot the "Top 10 Important Features" from your Random Forest embedded method. This is usually the most compelling way to present your work to stakeholders.
+3. **Visualization:** Use `matplotlib` to plot the "Top 10 Important Features" from your Random Forest embedded method. This is usually the most compelling way to present your work to stakeholders.
     
 
 **Which of these tasks would you like to start with? I can help you draft the code for the correlation ranking or the wrapper selection method if you provide the column list.**
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
