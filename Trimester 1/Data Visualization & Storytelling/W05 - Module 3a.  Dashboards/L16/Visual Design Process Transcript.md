@@ -1,11 +1,5 @@
----
-title: W05 - Module 3a.  Dashboards
-module: Statistical Modelling And Inferencing
-week: W05 - Module 3a.  Dashboards
----
 
-
-## Page 1
+# Page 1
 
  
  
@@ -59,7 +53,7 @@ pixels for a dashboard.
   
 
 
-## Page 2
+# Page 2
 
  
  
@@ -112,7 +106,7 @@ to highlight a particular area in the graph.
   
 
 
-## Page 3
+# Page 3
 
  
  
@@ -165,7 +159,7 @@ the effectiveness of visuals. These are taken from your pre-attentive attributes
   
 
 
-## Page 4
+# Page 4
 
  
  
@@ -219,7 +213,7 @@ distinguishing the countries below the average and the above the average.
   
 
 
-## Page 5
+# Page 5
 
  
  
@@ -257,6 +251,3 @@ try to improve the effectiveness and expressiveness of your dashboard.
 ------------------------------------------------------End----------------------------------------------------- 
  
  
-
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
