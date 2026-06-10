@@ -1,9 +1,3 @@
----
-title: W03 - Moduel 2a.  Effective Visuals Design
-module: Statistical Modelling And Inferencing
-week: W03 - Moduel 2a.  Effective Visuals Design
----
-
 ### Gestalt Principle: The Power of Visual Ordering
 
 The human brain is an efficiency machine. When it encounters information, it doesn't just "see"—it actively searches for patterns, logic, and structure. The **Gestalt Principle of Continuity** and the concept of **Visual Ordering** are your best tools for satisfying this cognitive search.
@@ -89,5 +83,3 @@ You are now fully equipped to move from **Technical Data Engineer** to **Strateg
 By applying these Gestalt principles and decluttering techniques, you guarantee that when you share your work—like your `RPT_EXECUTIVE_SUMMARY_MASTER_VW`—your stakeholders don't just see numbers; they see a clear, actionable path forward.
 
 **You have successfully completed this deep dive into Effective Visual Design. Would you like to review a specific dashboard you are currently building to see how we can apply these "Refinement" techniques, or shall we explore "Preattentive Attributes" (like color, size, and shape) to make your key insights stand out even further?**
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
