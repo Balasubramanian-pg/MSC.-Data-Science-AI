@@ -1,9 +1,3 @@
----
-title: W01 - Basic Probability & Statistics
-module: Statistical Modelling And Inferencing
-week: W01 - Basic Probability & Statistics
----
-
 ### Introduction to Decision Theory
 
 Decision Theory provides a rigorous, mathematical framework for optimal choice-making under conditions of uncertainty. In data science, this framework is essential for moving from descriptive analysis (what happened) to prescriptive action (what we should do).
@@ -67,7 +61,7 @@ The approach to solving a decision problem changes based on the information avai
 
 ### 4. Application in Data Science
 
-Decision Theory is the backbone of **A/B testing**, **model deployment strategies**, and **cost-sensitive learning**. For [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example), in credit scoring:
+Decision Theory is the backbone of **A/B testing**, **model deployment strategies**, and **cost-sensitive learning**. For example, in credit scoring:
 
 - **Actions:** {Approve Loan, Deny Loan}
     
@@ -81,21 +75,19 @@ Decision Theory is the backbone of **A/B testing**, **model deployment strategie
 ```Python
 import pandas as pd
 
-## Payoff Table
+# Payoff Table
 data = {'Sunny': [10, 6], 'Rain': [2, 7]}
 df = pd.DataFrame(data, index=['Picnic Outdoors', 'Picnic Indoors'])
 
-## Probabilities
+# Probabilities
 prob_sunny = 0.7
 prob_rain = 0.3
 
-## Calculate EMV
+# Calculate EMV
 df['EMV'] = (df['Sunny'] * prob_sunny) + (df['Rain'] * prob_rain)
 
 print(df)
-## The optimal choice is the action with the highest EMV
+# The optimal choice is the action with the highest EMV
 ```
 
 **Would you like to move into decision-making with sequential events using Decision Trees, or discuss how Loss Functions (the statistical equivalent of negative payoffs) are used to train machine learning models?**
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
