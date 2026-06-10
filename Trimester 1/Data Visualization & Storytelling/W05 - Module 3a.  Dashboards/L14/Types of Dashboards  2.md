@@ -1,12 +1,6 @@
----
-title: W05 - Module 3a.  Dashboards
-module: Statistical Modelling And Inferencing
-week: W05 - Module 3a.  Dashboards
----
+# Types of Dashboards
 
-## Types of Dashboards
-
-## Introduction
+# Introduction
 
 Dashboards are one of the most important systems in modern data visualization because they combine:
 
@@ -54,7 +48,7 @@ This creates a collaborative analytical narrative between:
 - and audience.
     
 
-## Dashboards in Data Storytelling
+# Dashboards in Data Storytelling
 
 Earlier storytelling models discussed:
 
@@ -65,7 +59,7 @@ Earlier storytelling models discussed:
 
 Dashboards combine both.
 
-## Author-Driven Elements
+# Author-Driven Elements
 
 The dashboard creator decides:
 
@@ -85,7 +79,7 @@ The dashboard creator decides:
 The author defines:  
 the analytical boundaries.
 
-## Reader-Driven Elements
+# Reader-Driven Elements
 
 The user decides:
 
@@ -103,7 +97,7 @@ The user decides:
 The user defines:  
 the analytical journey.
 
-## Hybrid Narrative Architecture
+# Hybrid Narrative Architecture
 
 ```mermaid
 flowchart LR
@@ -113,7 +107,7 @@ flowchart LR
     D --> E[Personalized Insights]
 ```
 
-## What Makes Dashboards Unique?
+# What Makes Dashboards Unique?
 
 The transcript identifies the core differentiator:
 
@@ -134,7 +128,7 @@ True dashboards allow:
 - and investigative reasoning.
     
 
-## Dashboard as an Interface
+# Dashboard as an Interface
 
 A dashboard is not simply:  
 a visualization artifact.
@@ -160,7 +154,7 @@ Its purpose is to:
 - and accelerate understanding.
     
 
-## Dashboard Definition
+# Dashboard Definition
 
 The transcript defines dashboards as:
 
@@ -192,7 +186,7 @@ but from:
 - and interaction between visuals.
     
 
-## Important Dashboard Principle
+# Important Dashboard Principle
 
 A dashboard is more than:  
 “multiple charts on one page.”
@@ -202,7 +196,7 @@ It is:
 - a coordinated analytical environment.
     
 
-## Limited Space and Limited Time
+# Limited Space and Limited Time
 
 The transcript emphasizes:  
 important information must be surfaced within:
@@ -233,7 +227,7 @@ Therefore dashboards must optimize for:
 - immediate anomaly detection.
     
 
-## Rapid Scanning
+# Rapid Scanning
 
 One major dashboard objective is:  
 rapid scanning.
@@ -247,7 +241,7 @@ Users should quickly identify:
 - what requires attention.
     
 
-## Example
+# Example
 
 In an operations dashboard:  
 users should instantly see:
@@ -264,7 +258,7 @@ users should instantly see:
 Not after:  
 10 clicks and 5 filters.
 
-## Real-Time Visibility
+# Real-Time Visibility
 
 Dashboards often support:  
 live operational awareness.
@@ -284,7 +278,7 @@ This is especially important for:
 - trading systems.
     
 
-## Key Principle
+# Key Principle
 
 Visibility delay reduces decision quality.
 
@@ -292,7 +286,7 @@ If a dashboard updates too slowly:
 it becomes historical reporting,  
 not operational intelligence.
 
-## Action-Oriented Design
+# Action-Oriented Design
 
 This is one of the most overlooked dashboard concepts.
 
@@ -311,7 +305,7 @@ Every dashboard should answer:
 - What should be done?
     
 
-## Strong Dashboard Design
+# Strong Dashboard Design
 
 ```mermaid
 flowchart LR
@@ -321,7 +315,7 @@ flowchart LR
     D --> E[Action]
 ```
 
-## Characteristics of Effective Dashboards
+# Characteristics of Effective Dashboards
 
 The transcript identifies five key properties:
 
@@ -338,7 +332,7 @@ The transcript identifies five key properties:
 
 Let us examine them deeply.
 
-## 1. Small
+# 1. Small
 
 “Small” does not mean:  
 low information density.
@@ -355,12 +349,12 @@ A dashboard should avoid:
 - excessive navigation.
     
 
-## Important Insight
+# Important Insight
 
 Small dashboards often outperform massive BI portals because:  
 they reduce cognitive fragmentation.
 
-## 2. Concise
+# 2. Concise
 
 Every element must justify its existence.
 
@@ -384,7 +378,7 @@ Conciseness improves:
 - anomaly detection.
     
 
-## 3. Clear
+# 3. Clear
 
 Clarity is the most important dashboard property.
 
@@ -397,7 +391,7 @@ Users should never wonder:
 - what metric matters most.
     
 
-## Clarity Requires
+# Clarity Requires
 
 - strong hierarchy
     
@@ -410,7 +404,7 @@ Users should never wonder:
 - semantic color usage
     
 
-## 4. Intuitive
+# 4. Intuitive
 
 An intuitive dashboard aligns with:  
 natural human perception.
@@ -425,14 +419,14 @@ Users should understand:
     without training.
     
 
-## Important UX Principle
+# Important UX Principle
 
 The best dashboards feel obvious.
 
 Not because the data is simple,  
 but because the cognitive design is excellent.
 
-## 5. Customized
+# 5. Customized
 
 Different users require different:
 
@@ -449,7 +443,7 @@ Different users require different:
 
 A CFO dashboard and a warehouse operations dashboard cannot be identical.
 
-## Role-Based Dashboarding
+# Role-Based Dashboarding
 
 |Role|Dashboard Focus|
 |---|---|
@@ -458,7 +452,7 @@ A CFO dashboard and a warehouse operations dashboard cannot be identical.
 |Operations staff|Real-time monitoring|
 |Marketing team|Campaign performance|
 
-## Dashboard Design Integrates Multiple Disciplines
+# Dashboard Design Integrates Multiple Disciplines
 
 The transcript correctly connects dashboards with:
 
@@ -475,7 +469,7 @@ This is critical.
 
 Dashboard design is multidisciplinary.
 
-## Dashboard Engineering Stack
+# Dashboard Engineering Stack
 
 ```mermaid
 flowchart TD
@@ -486,7 +480,7 @@ flowchart TD
     F[Interaction Design] --> E
 ```
 
-## Pre-Attentive Attributes in Dashboards
+# Pre-Attentive Attributes in Dashboards
 
 Dashboards heavily depend on:  
 pre-conscious visual processing.
@@ -501,13 +495,13 @@ pre-conscious visual processing.
 |Contrast|Direct attention|
 |Spacing|Reduce clutter|
 
-## Example
+# Example
 
 One red KPI among gray cards immediately attracts attention.
 
 This is intentional perceptual engineering.
 
-## Why Dashboard Design is Difficult
+# Why Dashboard Design is Difficult
 
 Dashboards attempt to optimize competing objectives:
 
@@ -522,7 +516,7 @@ Dashboards attempt to optimize competing objectives:
 Great dashboard design is fundamentally:  
 tradeoff optimization.
 
-## Advanced Insight
+# Advanced Insight
 
 Dashboards are:  
 external cognitive systems.
@@ -540,35 +534,35 @@ They extend human analytical capability by:
 
 This is why dashboards are so powerful in modern organizations.
 
-## Common Dashboard Failure Modes
+# Common Dashboard Failure Modes
 
-## 1. Dashboard as Decoration
+# 1. Dashboard as Decoration
 
 Many dashboards prioritize:  
 visual attractiveness over interpretability.
 
-## 2. Overcrowding
+# 2. Overcrowding
 
 Too many visuals destroy:  
 attention hierarchy.
 
-## 3. Interaction Overload
+# 3. Interaction Overload
 
 Too many filters create:  
 analytical paralysis.
 
-## 4. No Context
+# 4. No Context
 
 Metrics without business framing become meaningless.
 
-## 5. Static Thinking
+# 5. Static Thinking
 
 Some “dashboards” are just screenshots of reports.
 
 Without interaction,  
 their analytical value collapses.
 
-## Important Concept Introduced by the Transcript
+# Important Concept Introduced by the Transcript
 
 The transcript ends with:
 
@@ -586,7 +580,7 @@ all visuals cooperate toward:
 - or one decision framework.
     
 
-## Final Takeaways
+# Final Takeaways
 
 Dashboards are:
 
@@ -631,7 +625,7 @@ The best dashboards feel:
 - and analytically empowering.
 
 
-## Dashboard Example: CO₂ Emissions Dashboard
+# Dashboard Example: CO₂ Emissions Dashboard
 
 This section analyzes a real dashboard example using:
 
@@ -657,7 +651,7 @@ This is important because effective dashboard learning requires:
 - but also learning how to evaluate dashboards critically.
     
 
-## Dashboards as Insight-to-Action Systems
+# Dashboards as Insight-to-Action Systems
 
 The transcript introduces a very important concept:
 
@@ -665,7 +659,7 @@ The transcript introduces a very important concept:
 
 This is one of the best ways to think about dashboards.
 
-## Data Pipeline of Decision-Making
+# Data Pipeline of Decision-Making
 
 ```mermaid
 flowchart LR
@@ -686,7 +680,7 @@ They are:
 - decision acceleration systems.
     
 
-## Re-emphasis of Effective Dashboard Properties
+# Re-emphasis of Effective Dashboard Properties
 
 The transcript repeats five key properties:
 
@@ -704,7 +698,7 @@ The transcript repeats five key properties:
 The repetition is intentional because:  
 these principles are foundational.
 
-## Important Clarification About “Small”
+# Important Clarification About “Small”
 
 The instructor correctly clarifies:
 
@@ -725,7 +719,7 @@ A dashboard can contain:
 while still being:  
 small in cognitive complexity.
 
-## Cognitive Compactness
+# Cognitive Compactness
 
 Good dashboards maximize:
 
@@ -740,7 +734,7 @@ The best dashboards:
 - with less mental processing.
     
 
-## CO₂ Emissions Dashboard Overview
+# CO₂ Emissions Dashboard Overview
 
 The dashboard uses:  
 CO₂ emissions data from the International Monetary Fund.
@@ -759,7 +753,7 @@ The dashboard contains four coordinated visuals.
 This is an example of:  
 multi-view coordinated analytics.
 
-## Important Dashboard Principle
+# Important Dashboard Principle
 
 Each chart serves:  
 a different analytical purpose.
@@ -767,7 +761,7 @@ a different analytical purpose.
 Together they create:  
 a richer understanding than any single chart could provide.
 
-## Why Multiple Coordinated Views Matter
+# Why Multiple Coordinated Views Matter
 
 A single metric rarely explains a system completely.
 
@@ -783,7 +777,7 @@ For example:
 Combining them creates:  
 multi-dimensional reasoning.
 
-## Interactivity in the Dashboard
+# Interactivity in the Dashboard
 
 The dashboard allows users to select:
 
@@ -797,7 +791,7 @@ The dashboard allows users to select:
 This creates:  
 reader-driven analytical exploration.
 
-## Important Insight
+# Important Insight
 
 The dashboard author defines:  
 the analytical framework.
@@ -807,7 +801,7 @@ the analytical pathway.
 
 This hybrid model is central to dashboarding.
 
-## Why Bar Charts Were Used
+# Why Bar Charts Were Used
 
 The transcript notes:  
 comparison graphs use bar charts.
@@ -823,7 +817,7 @@ Bar charts are ideal for:
 - relative magnitude evaluation.
     
 
-## Why Line Charts Were Used
+# Why Line Charts Were Used
 
 Time-based changes are represented using:  
 line charts.
@@ -831,7 +825,7 @@ line charts.
 This is appropriate because:  
 line charts encode continuity over time.
 
-## Visualization Selection Principle
+# Visualization Selection Principle
 
 |Visualization|Best Use|
 |---|---|
@@ -844,7 +838,7 @@ line charts encode continuity over time.
 Poor dashboards often fail because:  
 chart type does not match analytical purpose.
 
-## Gestalt Principles Mentioned
+# Gestalt Principles Mentioned
 
 The transcript references:  
 Gestalt principles.
@@ -854,7 +848,7 @@ This is extremely important in dashboard design.
 Gestalt principles explain:  
 how humans naturally organize visual information.
 
-## Relevant Gestalt Principles Here
+# Relevant Gestalt Principles Here
 
 |Principle|Dashboard Role|
 |---|---|
@@ -864,7 +858,7 @@ how humans naturally organize visual information.
 |Closure|Pattern completion|
 |Figure-ground|Attention focus|
 
-## Close Order Principle
+# Close Order Principle
 
 The dashboard arranges related charts together.
 
@@ -877,7 +871,7 @@ This helps users perceive:
 - coherent narrative flow.
     
 
-## Visual Contrast
+# Visual Contrast
 
 The transcript mentions:  
 clear contrast.
@@ -894,7 +888,7 @@ Contrast is critical for:
 Without contrast:  
 everything competes equally for attention.
 
-## Critical Dashboard Evaluation
+# Critical Dashboard Evaluation
 
 The instructor provides an important critique:
 
@@ -902,7 +896,7 @@ The instructor provides an important critique:
 
 This is excellent dashboard analysis.
 
-## Why This Matters
+# Why This Matters
 
 If the user selects:  
 India,
@@ -918,7 +912,7 @@ Otherwise:
 - dashboard responsiveness feels weaker.
     
 
-## Example
+# Example
 
 Bad Design:
 
@@ -937,7 +931,7 @@ Good Design:
 This immediately reinforces:  
 user context.
 
-## Dashboard Reading Flow
+# Dashboard Reading Flow
 
 The dashboard enables a natural reasoning sequence:
 
@@ -950,7 +944,7 @@ flowchart LR
     E --> F[Generate Insight]
 ```
 
-## Important Insight About Dashboards
+# Important Insight About Dashboards
 
 The transcript introduces something deeper:
 
@@ -969,7 +963,7 @@ They should stimulate:
 - investigative reasoning.
     
 
-## Example from the Transcript
+# Example from the Transcript
 
 The dashboard shows:  
 Ireland is a top CO₂ emitter in air transport.
@@ -980,7 +974,7 @@ Ireland is geographically small.
 That cognitive mismatch triggers:  
 investigation.
 
-## This is Excellent Dashboard Behavior
+# This is Excellent Dashboard Behavior
 
 The dashboard successfully created:
 
@@ -991,7 +985,7 @@ The dashboard successfully created:
 - exploratory reasoning.
     
 
-## Why Ireland Appears Large in Aviation Emissions
+# Why Ireland Appears Large in Aviation Emissions
 
 The likely explanation:  
 Ireland hosts major aircraft leasing companies and aviation-related financial structures.
@@ -999,7 +993,7 @@ Ireland hosts major aircraft leasing companies and aviation-related financial st
 This is an example of:  
 data interpretation requiring domain context.
 
-## Critical Lesson
+# Critical Lesson
 
 Dashboards alone do not create understanding.
 
@@ -1012,7 +1006,7 @@ Users still require:
 - critical thinking.
     
 
-## Information Balance in the Dashboard
+# Information Balance in the Dashboard
 
 The instructor notes:  
 the four visuals do not dominate one another.
@@ -1031,7 +1025,7 @@ Poor dashboards often contain:
 Balanced dashboards create:  
 stable cognitive flow.
 
-## Dashboard Cognitive Architecture
+# Dashboard Cognitive Architecture
 
 The dashboard likely follows:
 
@@ -1050,7 +1044,7 @@ flowchart TD
     D --> G[Emission Intensity]
 ```
 
-## Hidden Design Principle
+# Hidden Design Principle
 
 This dashboard demonstrates:  
 progressive analytical disclosure.
@@ -1073,7 +1067,7 @@ progressive analytical disclosure.
 This mirrors:  
 human analytical cognition.
 
-## Advanced Dashboard Insight
+# Advanced Dashboard Insight
 
 The best dashboards:
 
@@ -1086,29 +1080,29 @@ That is a paradox:
 less visible information,  
 more cognitive power.
 
-## Common Failure Modes in Similar Dashboards
+# Common Failure Modes in Similar Dashboards
 
-## 1. Metric Redundancy
+# 1. Metric Redundancy
 
 Multiple charts showing nearly identical information.
 
-## 2. Weak Interaction Feedback
+# 2. Weak Interaction Feedback
 
 Filters applied without visual emphasis.
 
-## 3. Poor Layout Hierarchy
+# 3. Poor Layout Hierarchy
 
 Important charts buried visually.
 
-## 4. Visual Competition
+# 4. Visual Competition
 
 Too many colors or styles competing for attention.
 
-## 5. No Analytical Trigger
+# 5. No Analytical Trigger
 
 Dashboards that show data but provoke no thinking.
 
-## Final Takeaways
+# Final Takeaways
 
 This CO₂ emissions dashboard demonstrates several advanced dashboard principles:
 
@@ -1134,7 +1128,7 @@ Most importantly, it demonstrates that:
 > Effective dashboards do not merely display information.  
 > They actively shape analytical thinking.
 
-## Curiosity and Analytical Thinking in Dashboards
+# Curiosity and Analytical Thinking in Dashboards
 
 The transcript begins with an extremely important idea:
 
@@ -1162,7 +1156,7 @@ It encourages users to ask:
 - what actions are needed?
     
 
-## Example: Ireland and CO₂ Emissions
+# Example: Ireland and CO₂ Emissions
 
 The dashboard showed:  
 Ireland appearing as a top CO₂ emitter in aviation.
@@ -1179,7 +1173,7 @@ cognitive dissonance.
 
 That is analytically useful.
 
-## Important Dashboard Principle
+# Important Dashboard Principle
 
 Unexpected patterns create:  
 investigative curiosity.
@@ -1193,7 +1187,7 @@ That curiosity drives:
 - hypothesis formation.
     
 
-## Underlying Explanation
+# Underlying Explanation
 
 The transcript explains:  
 many aircraft leasing companies operate through Ireland for tax and corporate structuring reasons.
@@ -1201,14 +1195,14 @@ many aircraft leasing companies operate through Ireland for tax and corporate st
 Therefore:  
 aviation-related emissions may become economically attributed to Ireland.
 
-## Important Insight
+# Important Insight
 
 Dashboards surface signals.  
 They do not automatically explain causality.
 
 Human interpretation remains essential.
 
-## Dashboarding and Domain Knowledge
+# Dashboarding and Domain Knowledge
 
 A dashboard without domain understanding can lead to:
 
@@ -1231,7 +1225,7 @@ Strong analysis requires:
 - contextual reasoning.
     
 
-## Core Design Principle: Form Follows Function
+# Core Design Principle: Form Follows Function
 
 The transcript introduces one of the most fundamental visualization principles:
 
@@ -1242,7 +1236,7 @@ design theory,
 architecture,  
 and human-centered systems engineering.
 
-## Meaning
+# Meaning
 
 The way a dashboard looks should be determined by:
 
@@ -1258,7 +1252,7 @@ Not by:
 - or visual complexity.
     
 
-## In Visualization Terms
+# In Visualization Terms
 
 The function determines:
 
@@ -1275,7 +1269,7 @@ The function determines:
 - and narrative structure.
     
 
-## Fundamental Dashboard Question
+# Fundamental Dashboard Question
 
 Before building any dashboard:
 
@@ -1284,7 +1278,7 @@ Before building any dashboard:
 This question should drive:  
 everything else.
 
-## Dashboard Design Framework
+# Dashboard Design Framework
 
 ```mermaid
 flowchart TD
@@ -1295,7 +1289,7 @@ flowchart TD
     E --> F[Interaction Model]
 ```
 
-## Audience-Centric Dashboard Design
+# Audience-Centric Dashboard Design
 
 The transcript correctly emphasizes:  
 dashboard design is audience-centric.
@@ -1309,12 +1303,12 @@ Different audiences:
 - and make different types of decisions.
     
 
-## Why Different Dashboard Types Exist
+# Why Different Dashboard Types Exist
 
 Because:  
 different users perform different cognitive tasks.
 
-## Executive Dashboards
+# Executive Dashboards
 
 ## Purpose
 
@@ -1338,7 +1332,7 @@ Support:
 - Board members
     
 
-## Characteristics
+# Characteristics
 
 |Feature|Behavior|
 |---|---|
@@ -1348,7 +1342,7 @@ Support:
 |Comparative focus|Competitors, benchmarks|
 |Forward-looking|Trends and forecasts|
 
-## Executive Cognitive Style
+# Executive Cognitive Style
 
 Executives typically ask:
 
@@ -1370,7 +1364,7 @@ They usually do not need:
 - minute-level diagnostics.
     
 
-## Design Style
+# Design Style
 
 Executive dashboards prioritize:
 
@@ -1383,14 +1377,14 @@ Executive dashboards prioritize:
 - and rapid scanning.
     
 
-## Analytical Dashboards
+# Analytical Dashboards
 
 The transcript next describes:  
 analyst-oriented dashboards.
 
 These are fundamentally different.
 
-## Purpose
+# Purpose
 
 Support:
 
@@ -1403,7 +1397,7 @@ Support:
 - exploratory reasoning.
     
 
-## Audience
+# Audience
 
 - Business analysts
     
@@ -1416,7 +1410,7 @@ Support:
 - Operations researchers
     
 
-## Characteristics
+# Characteristics
 
 |Feature|Behavior|
 |---|---|
@@ -1426,7 +1420,7 @@ Support:
 |Segmentation|Detailed slicing|
 |Multi-dimensional views|Rich analytical context|
 
-## Analyst Cognitive Style
+# Analyst Cognitive Style
 
 Analysts ask:
 
@@ -1450,7 +1444,7 @@ They require:
 - investigative workflows.
     
 
-## Key Distinction
+# Key Distinction
 
 Executives consume:
 
@@ -1464,7 +1458,7 @@ Analysts produce:
 
 That changes dashboard design dramatically.
 
-## Operational Dashboards
+# Operational Dashboards
 
 The transcript finally introduces:  
 operations dashboards.
@@ -1472,7 +1466,7 @@ operations dashboards.
 These are designed for:  
 continuous monitoring and immediate intervention.
 
-## Purpose
+# Purpose
 
 Maintain:
 
@@ -1485,7 +1479,7 @@ Maintain:
 - operational continuity.
     
 
-## Audience
+# Audience
 
 - Operations teams
     
@@ -1498,7 +1492,7 @@ Maintain:
 - Logistics coordinators
     
 
-## Characteristics
+# Characteristics
 
 |Feature|Behavior|
 |---|---|
@@ -1508,7 +1502,7 @@ Maintain:
 |Exception-focused|Highlight anomalies|
 |Action-oriented|Trigger intervention|
 
-## Operational Cognitive Style
+# Operational Cognitive Style
 
 Operations users ask:
 
@@ -1523,7 +1517,7 @@ Operations users ask:
 - Is immediate action required?
     
 
-## Key Difference from Analysts
+# Key Difference from Analysts
 
 Analysts:
 
@@ -1535,7 +1529,7 @@ Operators:
 - react.
     
 
-## Dashboard Type Comparison
+# Dashboard Type Comparison
 
 |Feature|Executive|Analytical|Operational|
 |---|---|---|---|
@@ -1546,7 +1540,7 @@ Operators:
 |Interaction Depth|Low|High|Medium|
 |Cognitive Focus|Monitoring|Exploration|Response|
 
-## Important Insight
+# Important Insight
 
 Dashboard design is fundamentally:  
 decision-design.
@@ -1554,7 +1548,7 @@ decision-design.
 Different decisions require:  
 different information architectures.
 
-## Function Drives Dashboard Form
+# Function Drives Dashboard Form
 
 This is the key lesson of the transcript.
 
@@ -1582,7 +1576,7 @@ real-time intervention
 Form:  
 live alerts and monitoring systems
 
-## Failure Mode: One Dashboard for Everyone
+# Failure Mode: One Dashboard for Everyone
 
 One of the biggest BI mistakes is:  
 trying to create one universal dashboard.
@@ -1590,7 +1584,7 @@ trying to create one universal dashboard.
 This usually fails because:  
 different users require incompatible levels of detail.
 
-## Example
+# Example
 
 Executives do not want:
 
@@ -1606,7 +1600,7 @@ Operators do not want:
 - quarterly strategic summaries.
     
 
-## Advanced Insight
+# Advanced Insight
 
 Dashboards are:  
 cognitive instruments.
@@ -1623,7 +1617,7 @@ Just as:
 
 different dashboards support different forms of organizational cognition.
 
-## Dashboard Hierarchy Architecture
+# Dashboard Hierarchy Architecture
 
 ```mermaid
 flowchart TD
@@ -1637,7 +1631,7 @@ flowchart TD
 This hierarchy mirrors:  
 organizational decision structure.
 
-## Hidden Principle in the Transcript
+# Hidden Principle in the Transcript
 
 The transcript repeatedly implies:  
 dashboard complexity should match decision complexity.
@@ -1650,7 +1644,7 @@ creates noise.
 Too little detail:  
 creates blindness.
 
-## Final Takeaways
+# Final Takeaways
 
 This section establishes several foundational principles:
 
@@ -1678,7 +1672,7 @@ its structure aligns with:
     
 - and operational function.
 
-## Determining Dashboard Types
+# Determining Dashboard Types
 
 This final section explains a critical idea:
 
@@ -1707,7 +1701,7 @@ change dramatically across contexts.
 Therefore:  
 different dashboard architectures emerge.
 
-## Central Principle
+# Central Principle
 
 The transcript reinforces:
 
@@ -1728,7 +1722,7 @@ This principle governs:
 - and information density.
     
 
-## Three Core Dashboard Types
+# Three Core Dashboard Types
 
 The discussion has now fully established the three primary dashboard categories:
 
@@ -1738,7 +1732,7 @@ The discussion has now fully established the three primary dashboard categories:
 |Analytical Dashboard|Exploration and diagnosis|
 |Operational Dashboard|Real-time monitoring and intervention|
 
-## What Determines Dashboard Type?
+# What Determines Dashboard Type?
 
 The transcript identifies three major determining factors:
 
@@ -1751,7 +1745,7 @@ The transcript identifies three major determining factors:
 
 These are extremely important design dimensions.
 
-## 1. Time Sensitivity
+# 1. Time Sensitivity
 
 ## Definition
 
@@ -1761,7 +1755,7 @@ how quickly data changes and how rapidly decisions must be made.
 This fundamentally changes:  
 dashboard architecture.
 
-## Strategic Dashboards
+# Strategic Dashboards
 
 Strategic decisions operate over:
 
@@ -1796,7 +1790,7 @@ Examples:
 - Forecast-oriented views
     
 
-## Strategic Time Horizon
+# Strategic Time Horizon
 
 ```mermaid
 timeline
@@ -1807,7 +1801,7 @@ timeline
     Quarter 4 : Long-Term KPIs
 ```
 
-## Operational Dashboards
+# Operational Dashboards
 
 Operational systems function in:
 
@@ -1831,7 +1825,7 @@ Examples:
 - trading systems.
     
 
-## Operational Time Horizon
+# Operational Time Horizon
 
 ```mermaid
 timeline
@@ -1842,7 +1836,7 @@ timeline
     09:07 : Corrective Action
 ```
 
-## Key Principle
+# Key Principle
 
 Decision latency tolerance determines dashboard design.
 
@@ -1856,7 +1850,7 @@ the dashboard must prioritize:
 - and alerts.
     
 
-## Analytical Dashboards Sit Between Both
+# Analytical Dashboards Sit Between Both
 
 Analytical dashboards typically operate in:
 
@@ -1876,7 +1870,7 @@ They often analyze:
 - operational performance shifts.
     
 
-## Analytical Dashboard Goal
+# Analytical Dashboard Goal
 
 Not immediate reaction.  
 Not long-term strategy.
@@ -1890,12 +1884,12 @@ Instead:
 - optimization.
     
 
-## 2. Level of Interactivity
+# 2. Level of Interactivity
 
 The transcript next explains:  
 dashboard types differ in interaction complexity.
 
-## Strategic Dashboards
+# Strategic Dashboards
 
 Executives generally require:
 
@@ -1916,7 +1910,7 @@ Because they consume:
 Too much interaction:  
 creates unnecessary cognitive friction.
 
-## Strategic Dashboard Interaction
+# Strategic Dashboard Interaction
 
 Typically includes:
 
@@ -1936,7 +1930,7 @@ But usually avoids:
 - deep operational slicing.
     
 
-## Analytical Dashboards
+# Analytical Dashboards
 
 Analytical dashboards require:  
 high interactivity.
@@ -1952,7 +1946,7 @@ This is because analysts:
 - and search for patterns.
     
 
-## Typical Analytical Interactions
+# Typical Analytical Interactions
 
 |Feature|Purpose|
 |---|---|
@@ -1962,7 +1956,7 @@ This is because analysts:
 |Cross-highlighting|Relationship discovery|
 |Dynamic dimensions|Flexible exploration|
 
-## Operational Dashboards
+# Operational Dashboards
 
 Operational dashboards occupy an interesting middle ground.
 
@@ -1984,7 +1978,7 @@ They need:
 - quick response capability.
     
 
-## Operational Dashboard Design Philosophy
+# Operational Dashboard Design Philosophy
 
 Minimize:
 
@@ -1996,7 +1990,7 @@ Maximize:
 - action visibility.
     
 
-## Important Insight
+# Important Insight
 
 More interactivity is not always better.
 
@@ -2009,14 +2003,14 @@ Interaction must match:
 - and operational context.
     
 
-## 3. Nature of Decisions Supported
+# 3. Nature of Decisions Supported
 
 This is perhaps the most important differentiator.
 
 Dashboard structure changes because:  
 the decisions themselves differ fundamentally.
 
-## Strategic Decisions
+# Strategic Decisions
 
 Strategic decisions are:
 
@@ -2042,7 +2036,7 @@ Examples:
 - sustainability planning.
     
 
-## Strategic Dashboard Focus
+# Strategic Dashboard Focus
 
 Executives ask:
 
@@ -2055,7 +2049,7 @@ Executives ask:
 - What long-term trends matter?
     
 
-## Analytical Decisions
+# Analytical Decisions
 
 Analytical decisions focus on:
 
@@ -2077,7 +2071,7 @@ Analysts ask:
 - What patterns are emerging?
     
 
-## Operational Decisions
+# Operational Decisions
 
 Operational decisions are:
 
@@ -2101,7 +2095,7 @@ Examples:
 - handle system downtime.
     
 
-## Operational Dashboard Logic
+# Operational Dashboard Logic
 
 Operational dashboards often support:  
 if-this-then-that workflows.
@@ -2115,7 +2109,7 @@ flowchart LR
     C --> D[Corrective Action]
 ```
 
-## Important Organizational Insight
+# Important Organizational Insight
 
 Dashboard hierarchy mirrors:  
 organizational decision hierarchy.
@@ -2126,7 +2120,7 @@ organizational decision hierarchy.
 |Analysts|Analytical|
 |Operations|Operational|
 
-## Key Tradeoff Dimensions
+# Key Tradeoff Dimensions
 
 Dashboard design involves balancing:
 
@@ -2139,7 +2133,7 @@ Dashboard design involves balancing:
 |Time Horizon|Long|Medium|Immediate|
 |Action Type|Strategic|Investigative|Reactive|
 
-## Advanced Insight
+# Advanced Insight
 
 Dashboard architecture is fundamentally:  
 organizational cognition engineering.
@@ -2152,7 +2146,7 @@ Different dashboards support different forms of thinking:
 |Analytical|Exploratory reasoning|
 |Operational|Reactive monitoring|
 
-## Why One Dashboard Usually Fails
+# Why One Dashboard Usually Fails
 
 Many organizations attempt:  
 “single source dashboards for everyone.”
@@ -2171,7 +2165,7 @@ Example:
 
 One layout rarely satisfies all three effectively.
 
-## Layered Dashboard Ecosystems
+# Layered Dashboard Ecosystems
 
 Strong organizations usually create:  
 dashboard ecosystems.
@@ -2191,7 +2185,7 @@ Each layer:
 - based on decision needs.
     
 
-## Hidden Principle in the Transcript
+# Hidden Principle in the Transcript
 
 The transcript repeatedly implies:
 
@@ -2212,7 +2206,7 @@ A dashboard succeeds only when:
     - and operational constraints.
         
 
-## Final Takeaways
+# Final Takeaways
 
 This section completes the conceptual framework for dashboard classification.
 
@@ -2233,5 +2227,3 @@ Most importantly:
 
 > A dashboard is not designed around data alone.  
 > It is designed around human decision-making behavior.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
