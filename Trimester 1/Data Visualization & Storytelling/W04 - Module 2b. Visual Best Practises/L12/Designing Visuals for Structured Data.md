@@ -1,10 +1,4 @@
----
-title: W04 - Module 2b. Visual Best Practises
-module: Statistical Modelling And Inferencing
-week: W04 - Module 2b. Visual Best Practises
----
-
-## Lesson 12
+# Lesson 12
 ![[L12 - Designing Analytical Visualizations.png]]
 
 Lesson 12 transitions from:
@@ -67,7 +61,7 @@ The lesson focuses heavily on:
 
 These form the backbone of exploratory data analysis (EDA).
 
-## The Central Visualization Problem
+# The Central Visualization Problem
 
 Every visualization task fundamentally asks:
 
@@ -82,9 +76,9 @@ flowchart TD
 
 This framework is far more important than memorizing chart types.
 
-## 1. Designing Visuals
+# 1. Designing Visuals
 
-## Visualization as Analytical Translation
+# Visualization as Analytical Translation
 
 The lesson begins by emphasizing:
 
@@ -96,7 +90,7 @@ This sounds obvious, but most visualization failures happen because:
 The chart type does not match the analytical question.
 ```
 
-## Why Chart Selection Matters
+# Why Chart Selection Matters
 
 A chart determines:
 
@@ -122,7 +116,7 @@ Bad chart selection creates:
 - analytical ambiguity
     
 
-## Visualization Is Structured Reasoning
+# Visualization Is Structured Reasoning
 
 A visualization is essentially:
 
@@ -132,7 +126,7 @@ a visual query language
 
 for human cognition.
 
-## Structured Data Visualization
+# Structured Data Visualization
 
 The lesson specifically references:
 
@@ -168,7 +162,7 @@ Structured data dominates:
 - analytics pipelines
     
 ![[L12 - Why Structured Data Needs Careful Visualization.png]]
-## Why Structured Data Requires Careful Visualization
+# Why Structured Data Requires Careful Visualization
 
 Structured datasets often contain:
 
@@ -183,7 +177,7 @@ Structured datasets often contain:
 
 Visualization helps compress this complexity.
 
-## Data → Visualization Compression
+# Data → Visualization Compression
 
 ```mermaid
 flowchart LR
@@ -193,9 +187,9 @@ flowchart LR
     --> D[Insight]
 ```
 
-## 2. Understanding Variable Types
+# 2. Understanding Variable Types
 
-## The Foundation of Correct Analysis
+# The Foundation of Correct Analysis
 
 The lesson categorizes variables into:
 
@@ -216,7 +210,7 @@ This is extremely important because:
 Variable type determines valid visualization choices.
 ```
 
-## Variable Type Framework
+# Variable Type Framework
 
 ```mermaid
 flowchart TD
@@ -230,7 +224,7 @@ flowchart TD
     D --> F[Continuous]
 ```
 
-## Categorical Data
+# Categorical Data
 
 Examples:
 
@@ -252,7 +246,7 @@ Properties:
 - grouping-focused
     
 
-## Best Visualizations
+# Best Visualizations
 
 - bar charts
     
@@ -261,14 +255,14 @@ Properties:
 - treemaps
     
 
-## Poor Choices
+# Poor Choices
 
 - line charts
     
 - continuous interpolation
     
 
-## Binary Data
+# Binary Data
 
 A special categorical case with only two outcomes.
 
@@ -281,7 +275,7 @@ Examples:
 - Yes / No
     
 
-## Why Binary Variables Matter
+# Why Binary Variables Matter
 
 Binary outcomes dominate:
 
@@ -294,7 +288,7 @@ Binary outcomes dominate:
 - fraud detection
     
 
-## Best Visualizations
+# Best Visualizations
 
 - proportion bars
     
@@ -305,7 +299,7 @@ Binary outcomes dominate:
 - conversion funnels
     
 
-## Ordinal Data
+# Ordinal Data
 
 Examples:
 
@@ -322,7 +316,7 @@ Key property:
 Order exists without proportional meaning.
 ```
 
-## Numerical Continuous Data
+# Numerical Continuous Data
 
 Examples:
 
@@ -340,7 +334,7 @@ Properties:
 - supports arithmetic operations
     
 
-## Best Visualizations
+# Best Visualizations
 
 - histograms
     
@@ -351,7 +345,7 @@ Properties:
 - line charts
     
 
-## Numerical Discrete Data
+# Numerical Discrete Data
 
 Examples:
 
@@ -369,11 +363,11 @@ Properties:
 - non-continuous
     
 
-## Important Insight
+# Important Insight
 
 Discrete variables often appear continuous in large datasets.
 
-## Visualization Decision Tree
+# Visualization Decision Tree
 
 ```mermaid
 flowchart TD
@@ -390,9 +384,9 @@ flowchart TD
     D -->|No| F[Discrete Count Visuals]
 ```
 
-## 3. Univariate Analysis
+# 3. Univariate Analysis
 
-## Understanding One Variable at a Time
+# Understanding One Variable at a Time
 
 Univariate analysis studies:
 
@@ -411,7 +405,7 @@ This is the foundation of:
 - feature engineering
     
 ![[Univariate Analysis.png]]
-## Univariate Workflow
+# Univariate Workflow
 
 ```mermaid
 flowchart LR
@@ -421,7 +415,7 @@ flowchart LR
     --> D[Pattern Detection]
 ```
 
-## Why Univariate Analysis Matters
+# Why Univariate Analysis Matters
 
 Before analyzing relationships:
 
@@ -440,7 +434,7 @@ Questions include:
 - Does it contain anomalies?
     
 
-## Common Univariate Visualizations
+# Common Univariate Visualizations
 
 |Visualization|Purpose|
 |---|---|
@@ -450,9 +444,9 @@ Questions include:
 |Pie/Donut|Composition|
 |Box Plot|Spread and outliers|
 
-## Bar Charts
+# Bar Charts
 
-## Best for Categorical Frequency
+# Best for Categorical Frequency
 
 Example:
 
@@ -463,11 +457,11 @@ Example:
 - region analysis
     
 
-## Why Bar Charts Work
+# Why Bar Charts Work
 
 Humans compare aligned lengths extremely accurately.
 
-## Bar Chart Perception Pipeline
+# Bar Chart Perception Pipeline
 
 ```mermaid
 flowchart LR
@@ -476,9 +470,9 @@ flowchart LR
     --> C[Ranking]
 ```
 
-## Big Number Visuals
+# Big Number Visuals
 
-## KPI Emphasis
+# KPI Emphasis
 
 Big numbers isolate:
 
@@ -491,7 +485,7 @@ Big numbers isolate:
 - customer count
     
 
-## Why Big Numbers Work
+# Why Big Numbers Work
 
 They reduce cognitive complexity by emphasizing:
 
@@ -499,9 +493,9 @@ They reduce cognitive complexity by emphasizing:
 single-metric salience
 ```
 
-## Pie and Donut Charts
+# Pie and Donut Charts
 
-## Composition Visualization
+# Composition Visualization
 
 Used for:
 
@@ -512,7 +506,7 @@ Used for:
 - composition analysis
     
 
-## Important Limitation
+# Important Limitation
 
 Humans poorly estimate angles.
 
@@ -523,7 +517,7 @@ Therefore pie charts become weak when:
 - precise comparison is required
     
 
-## Better Alternative
+# Better Alternative
 
 Often:
 
@@ -531,9 +525,9 @@ Often:
 sorted bar charts outperform pie charts
 ```
 ![[Univariate Distribution Analysis.png]]
-## 4. Univariate Distribution Analysis
+# 4. Univariate Distribution Analysis
 
-## Histograms
+# Histograms
 
 Histograms represent:
 
@@ -543,7 +537,7 @@ frequency distribution
 
 across numerical ranges.
 
-## Why Histograms Matter
+# Why Histograms Matter
 
 Distributions reveal:
 
@@ -558,7 +552,7 @@ Distributions reveal:
 - tails
     
 
-## Histogram Structure
+# Histogram Structure
 
 ```mermaid
 flowchart TD
@@ -568,7 +562,7 @@ flowchart TD
     --> D[Visualize Distribution]
 ```
 
-## Example: Bounce Rates
+# Example: Bounce Rates
 
 The lesson notes:
 
@@ -589,7 +583,7 @@ This immediately reveals:
 - anomalous sessions
     
 
-## Business Insight
+# Business Insight
 
 Visualization helps identify:
 
@@ -597,7 +591,7 @@ Visualization helps identify:
 where normal behavior ends and abnormal behavior begins
 ```
 
-## Conversion Timing Insight
+# Conversion Timing Insight
 
 The lesson references Nielsen (2005):
 
@@ -620,7 +614,7 @@ it suggests:
 - marketing latency matters
     
 
-## Histogram Interpretation Framework
+# Histogram Interpretation Framework
 
 ```mermaid
 flowchart TD
@@ -638,9 +632,9 @@ flowchart TD
 ```
 
 ![[Box Plot Analysis.png]]
-## 5. Box Plot Analysis
+# 5. Box Plot Analysis
 
-## Understanding Distribution Geometry
+# Understanding Distribution Geometry
 
 The box plot is one of the most information-dense visualizations.
 
@@ -659,7 +653,7 @@ It summarizes:
 
 simultaneously.
 
-## Box Plot Components
+# Box Plot Components
 
 |Component|Meaning|
 |---|---|
@@ -668,7 +662,7 @@ simultaneously.
 |Whiskers|Typical range|
 |Outliers|Extreme values|
 
-## Box Plot Structure
+# Box Plot Structure
 
 ```mermaid
 flowchart LR
@@ -680,13 +674,13 @@ flowchart LR
     D --> E[Outliers]
 ```
 
-## Interquartile Range (IQR)
+# Interquartile Range (IQR)
 
 Defined as:
 
 IQR = Q_3 - Q_1
 
-## Why IQR Matters
+# Why IQR Matters
 
 IQR measures:
 
@@ -696,7 +690,7 @@ spread of the central 50% of data
 
 This makes it resistant to outliers.
 
-## Whiskers
+# Whiskers
 
 Whiskers usually extend:
 
@@ -706,7 +700,7 @@ beyond quartiles.
 
 Points outside become outliers.
 
-## Why Box Plots Are Powerful
+# Why Box Plots Are Powerful
 
 They simultaneously show:
 
@@ -721,7 +715,7 @@ They simultaneously show:
 
 with minimal space.
 
-## Distribution Shape Analysis
+# Distribution Shape Analysis
 
 ```mermaid
 flowchart TD
@@ -734,7 +728,7 @@ flowchart TD
     B -->|No| D[Skewed Distribution]
 ```
 
-## Business Insight
+# Business Insight
 
 The lesson mentions:
 
@@ -749,9 +743,9 @@ Visualization enables detection of:
 - funnel efficiency
     
 
-## 6. Multivariate Analysis
+# 6. Multivariate Analysis
 
-## Understanding Relationships Between Variables
+# Understanding Relationships Between Variables
 
 Multivariate analysis examines:
 
@@ -761,7 +755,7 @@ two or more variables simultaneously
 
 This is where analytics becomes truly powerful.
 
-## Multivariate Goals
+# Multivariate Goals
 
 |Goal|Visualization|
 |---|---|
@@ -770,7 +764,7 @@ This is where analytics becomes truly powerful.
 |Trend|Line charts|
 |Correlation|Heat maps|
 
-## Multivariate Analysis Framework
+# Multivariate Analysis Framework
 
 ```mermaid
 flowchart TD
@@ -781,7 +775,7 @@ flowchart TD
     A --> D[Trend]
 ```
 
-## Comparison Analysis
+# Comparison Analysis
 
 The lesson compares:
 
@@ -803,7 +797,7 @@ Visualization immediately exposes:
 behavioral differences across categories
 ```
 
-## Important Business Insight
+# Important Business Insight
 
 Customers visiting administration pages convert more.
 
@@ -816,13 +810,13 @@ This suggests:
 - stronger purchase readiness
     
 ![[Relationship Analysis.png]]
-## 7. Relationship Analysis
+# 7. Relationship Analysis
 
-## Scatter Plots
+# Scatter Plots
 
 Scatter plots visualize relationships between variables.
 
-## Example
+# Example
 
 - exit rate
     
@@ -831,7 +825,7 @@ Scatter plots visualize relationships between variables.
 - page value
     
 
-## Scatter Plot Strength
+# Scatter Plot Strength
 
 They reveal:
 
@@ -844,7 +838,7 @@ They reveal:
 - correlations
     
 
-## Scatter Plot Pipeline
+# Scatter Plot Pipeline
 
 ```mermaid
 flowchart LR
@@ -858,9 +852,9 @@ flowchart LR
 ```
 
 ![[Correlation is not Causation.png]]
-## Correlation vs Causation
+# Correlation vs Causation
 
-## One of the Most Important Analytical Warnings
+# One of the Most Important Analytical Warnings
 
 The lesson correctly warns:
 
@@ -879,7 +873,7 @@ Two variables may correlate because of:
 - temporal coincidence
     
 
-## Causation Failure Model
+# Causation Failure Model
 
 ```mermaid
 flowchart TD
@@ -892,9 +886,9 @@ flowchart TD
     B -->|Maybe| D[Further Investigation Needed]
 ```
 
-## Heat Maps
+# Heat Maps
 
-## Correlation Visualization
+# Correlation Visualization
 
 Heat maps compress many pairwise relationships.
 
@@ -907,7 +901,7 @@ Useful for:
 - exploratory analysis
     
 ![[See Relationships at a Glance.png]]
-## Heat Map Workflow
+# Heat Map Workflow
 
 ```mermaid
 flowchart TD
@@ -916,15 +910,15 @@ flowchart TD
     --> C[Relationship Strength]
 ```
 
-## Parallel Coordinates
+# Parallel Coordinates
 
-## High-Dimensional Visualization
+# High-Dimensional Visualization
 
 Parallel coordinates allow visualization of many variables simultaneously.
 
 Each axis represents a variable.
 
-## Why They Are Powerful
+# Why They Are Powerful
 
 They reveal:
 
@@ -935,13 +929,13 @@ They reveal:
 - multivariate structure
     
 
-## Major Limitation
+# Major Limitation
 
 Scaling becomes critical.
 
 Improper scaling creates misleading interpretations.
 
-## Parallel Coordinates Pipeline
+# Parallel Coordinates Pipeline
 
 ```mermaid
 flowchart LR
@@ -955,9 +949,9 @@ flowchart LR
     --> D
 ```
 
-## 8. Trend Analysis
+# 8. Trend Analysis
 
-## Line Charts
+# Line Charts
 
 Line charts dominate trend analysis because humans perceive continuity naturally.
 
@@ -970,7 +964,7 @@ Best for:
 - growth patterns
     
 
-## Trend Detection Model
+# Trend Detection Model
 
 ```mermaid
 flowchart LR
@@ -979,9 +973,9 @@ flowchart LR
     --> C[Trend Recognition]
 ```
 
-## Dual-Axis Charts
+# Dual-Axis Charts
 
-## Powerful but Dangerous
+# Powerful but Dangerous
 
 The lesson references dual-axis charts.
 
@@ -992,11 +986,11 @@ These can show relationships like:
 
 But dual axes can also distort perception.
 
-## Major Risk
+# Major Risk
 
 Different scales may imply false relationships.
 
-## Dual Axis Warning
+# Dual Axis Warning
 
 ```mermaid
 flowchart TD
@@ -1009,7 +1003,7 @@ flowchart TD
     B -->|Yes| D[Useful Comparative Insight]
 ```
 
-## Final Visualization Philosophy
+# Final Visualization Philosophy
 
 Lesson 12 fundamentally teaches:
 
@@ -1017,7 +1011,7 @@ Lesson 12 fundamentally teaches:
 Visualization design is analytical reasoning translated into perceptual form.
 ```
 
-## Final Mental Model
+# Final Mental Model
 
 Think of chart selection as:
 
@@ -1026,5 +1020,3 @@ matching human perceptual strengths to analytical objectives
 ```
 
 rather than choosing visually attractive graphics.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
