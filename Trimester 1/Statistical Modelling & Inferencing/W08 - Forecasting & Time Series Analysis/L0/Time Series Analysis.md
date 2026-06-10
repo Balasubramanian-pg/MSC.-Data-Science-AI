@@ -1,9 +1,3 @@
----
-title: W08 - Forecasting & Time Series Analysis
-module: Statistical Modelling And Inferencing
-week: W08 - Forecasting & Time Series Analysis
----
-
 ## Time Series Analysis Overview
 
 ## Key Points
@@ -25,7 +19,7 @@ A sequence of data points indexed in time order. This structure allows researche
 
 Decomposition
 
-The process of isolating a series into distinct parts: trend, seasonal variations, and residual [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)). This separation clarifies the underlying behavior of the data.
+The process of isolating a series into distinct parts: trend, seasonal variations, and residual noise. This separation clarifies the underlying behavior of the data.
 
 Smoothing Methods
 
@@ -47,7 +41,7 @@ Statistical techniques used to reduce short-term fluctuations, revealing longer-
         
 - Residual Component
     
-    - Represents random [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)) or irregular movements.
+    - Represents random noise or irregular movements.
         
     - What remains after removing trend and seasonal factors.
         
@@ -86,9 +80,9 @@ Time series analysis typically follows a structured workflow to ensure accurate 
 
 ## Common Mistakes
 
-- Ignoring the stationarity of the data, which leads to [incorrect](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#[incorrect](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#[incorrect](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#incorrect))) model selection.
+- Ignoring the stationarity of the data, which leads to incorrect model selection.
     
-- [Overfitting](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#overfitting) models to [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)) rather than identifying genuine structural patterns.
+- Overfitting models to noise rather than identifying genuine structural patterns.
     
 - Failing to account for external shocks that disrupt historical trends.
     
@@ -119,5 +113,3 @@ Where $k$ is the number of periods used for the average. Exponential smoothing p
 - No time-sensitive statistics required for this introductory module overview.
     
 - General definitions match standard statistical practice as of 2026.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
