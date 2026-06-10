@@ -1,9 +1,3 @@
----
-title: W07 - Feature Engineering Techniques for Time-Series Data
-module: Statistical Modelling And Inferencing
-week: W07 - Feature Engineering Techniques for Time-Series Data
----
-
 Time series feature engineering in finance requires a transition from raw price data to structured, domain-informed indicators. By transforming daily OHLCV (Open, High, Low, Close, Volume) data into indicators like **Moving Averages**, **RSI**, and **Bollinger Bands**, you move from observing raw price movement to capturing the "market psychology" of momentum and volatility.
 
 ### 1. Foundational Engineering Toolkit
@@ -62,7 +56,7 @@ These three indicators are the gold standard for adding "context" to stock price
 - **Usage:** Provides a dynamic range of "normal" market behavior; price excursions outside these bands are statistically significant indicators of high-volatility events.
     
 
-### [3. Implementation Trade-offs](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Module%20Overview.md#3-implementation-trade-offs) & The "Golden Rules"
+### 3. Implementation Trade-offs & The "Golden Rules"
 
 - **Data Leakage Prevention:** When building these features, **never use a centered window**. For a 14-day RSI, ensure you are only using the 14 days preceding time $t$. Using data at time $t$ to construct a feature for $t$ is a classic error that will lead to artificially high model accuracy.
     
@@ -71,7 +65,7 @@ These three indicators are the gold standard for adding "context" to stock price
 - **Dimensionality vs. Signal:** While RSI and Bollinger bands are powerful, adding too many indicators can result in a "feature explosion." Use **Time Series Cross-Validation** to verify that your domain indicators are actually improving predictive accuracy rather than simply adding correlated noise.
     
 
-**[Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Overview.md#summary)) for Practical Application:**
+**Summary for Practical Application:**
 
 1. **Prepare:** Generate synthetic data (or import Yahoo Finance data).
     
@@ -83,5 +77,3 @@ These three indicators are the gold standard for adding "context" to stock price
     
 
 **Would you like me to provide the Python code template for the custom RSI function and Bollinger Band calculations to get you started on the implementation phase?**
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
