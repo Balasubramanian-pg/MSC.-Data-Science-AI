@@ -1,9 +1,3 @@
----
-title: W02 - Module 1b. Taxonomy of Data Visualisation Methods
-module: Statistical Modelling And Inferencing
-week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
----
-
 ### 1. The Frequentist Foundation: The Long-Run Frequency
 
 To understand why the **Bayesian** approach is such a significant departure, we must first be clear about the **Frequentist** rules we have been following. The Frequentist paradigm defines probability as the limit of an event's relative frequency in an infinite number of trials.
@@ -311,5 +305,3 @@ As a **Senior SQL Engineer and Business Analyst**, these insights are operationa
 |**Intercept (0.5384)**|Baseline margin at 0% ROA.|Indicator of base operational efficiency.|
 
 **You have a strong understanding of how to interpret these distributions and regression models. Would you like to practice writing the SQL to calculate these frequency distributions from raw ledger data, or shall we discuss how to evaluate the _quality_ of your regression model using $R^2$ or residuals?**
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
