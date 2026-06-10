@@ -3,7 +3,7 @@
 ## Reading Material: The Method of Least Squares
 
 ---
-## 1. The Problem of “Best Fit”
+# 1. The Problem of “Best Fit”
 
 Suppose we collect paired observations:
 
@@ -41,7 +41,7 @@ Some lines obviously fit poorly.
 
 Others appear visually reasonable.
 
-But visual [intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition)))) is subjective and unreliable.
+But visual intuition is subjective and unreliable.
 
 Statistical modeling requires a rigorous mathematical criterion for defining:
 
@@ -53,7 +53,7 @@ $$
 
 The Method of Least Squares provides that criterion.
 
-## 2. Why “Best Fit” Is Nontrivial
+# 2. Why “Best Fit” Is Nontrivial
 
 If every data point fell perfectly on a straight line, regression would be trivial.
 
@@ -91,11 +91,11 @@ $$
 
 Regression therefore becomes an optimization problem.
 
-## 3. The Geometry of Regression
+# 3. The Geometry of Regression
 
 Suppose we propose a candidate regression line:
 
-## $$  
+# $$  
 \hat{y}
 
 b_0+b_1x  
@@ -111,7 +111,7 @@ $$
 
 the line produces a predicted value:
 
-## $$  
+# $$  
 \hat{y}_i
 
 b_0+b_1x_i  
@@ -119,7 +119,7 @@ $$
 
 \hat{y}_i=b_0+b_1x_i
 
-The [question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#question))) becomes:
+The question becomes:
 
 $$  
 \text{How far is the observed point from the line?}  
@@ -127,7 +127,7 @@ $$
 
 This distance defines prediction error.
 
-## 4. [Residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#residuals): Measuring Prediction Error
+# 4. Residuals: Measuring Prediction Error
 
 For each observation, the vertical difference between:
 
@@ -146,7 +146,7 @@ $$
 
 is:
 
-## $$  
+# $$  
 e_i
 
 y_i-\hat{y}_i  
@@ -156,7 +156,7 @@ e_i=y_i-\hat{y}_i
 
 Equivalently:
 
-## $$  
+# $$  
 e_i
 
 ## \text{Actual}_i
@@ -166,9 +166,9 @@ $$
 
 e_i=\text{Actual}_i-\text{Predicted}_i
 
-[Residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#residuals) quantify model error observation-by-observation.
+Residuals quantify model error observation-by-observation.
 
-## 5. Why Vertical Distance Is Used
+# 5. Why Vertical Distance Is Used
 
 Regression predicts:
 
@@ -184,10 +184,10 @@ The regression model assumes:
 
 - predictor values are given
     
-- uncertainty exists in the [response variable](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response)))-variable)
+- uncertainty exists in the response variable
     
 
-Thus [residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#residuals) represent deviations in the:
+Thus residuals represent deviations in the:
 
 $$  
 Y  
@@ -197,9 +197,9 @@ direction.
 
 This distinction becomes important later in statistical theory.
 
-## 6. Interpreting [Residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#residuals)
+# 6. Interpreting Residuals
 
-[Residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#residuals) contain substantial diagnostic information.
+Residuals contain substantial diagnostic information.
 
 ## Positive Residual
 
@@ -251,9 +251,9 @@ $$
 
 then the observation lies exactly on the regression line.
 
-## 7. A Good Regression Line
+# 7. A Good Regression Line
 
-A good regression line should produce [residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#residuals) that are:
+A good regression line should produce residuals that are:
 
 - small
     
@@ -265,10 +265,10 @@ A good regression line should produce [residuals](https://github.com/Balasubrama
 The central problem becomes:
 
 $$  
-\text{How do we combine all [residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#residuals) into one measure of total error?}  
+\text{How do we combine all residuals into one measure of total error?}  
 $$
 
-## 8. Why Simple Summation Fails
+# 8. Why Simple Summation Fails
 
 One possible approach is:
 
@@ -278,7 +278,7 @@ $$
 
 However, this fails completely.
 
-Positive and negative [residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#residuals) cancel each other out.
+Positive and negative residuals cancel each other out.
 
 A terrible line could still produce:
 
@@ -298,7 +298,7 @@ $$
 
 Thus raw residual summation cannot measure fit quality.
 
-## 9. Absolute [Residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#residuals)
+# 9. Absolute Residuals
 
 Another possibility is:
 
@@ -312,9 +312,9 @@ However, absolute value optimization is mathematically inconvenient.
 
 It produces non-smooth optimization problems that are harder to solve analytically.
 
-## 10. Squared [Residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#residuals)
+# 10. Squared Residuals
 
-The most important idea in least squares regression is squaring [residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#residuals) before summing them.
+The most important idea in least squares regression is squaring residuals before summing them.
 
 This produces:
 
@@ -324,7 +324,7 @@ $$
 
 Squaring provides two major advantages.
 
-## 11. Advantage 1: Elimination of Negative Values
+# 11. Advantage 1: Elimination of Negative Values
 
 Because:
 
@@ -332,17 +332,17 @@ $$
 e_i^2 \ge 0  
 $$
 
-positive and negative [residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#residuals) no longer cancel.
+positive and negative residuals no longer cancel.
 
 Every prediction error contributes positively to total error.
 
 This allows meaningful aggregation.
 
-## 12. Advantage 2: Penalizing Large Errors
+# 12. Advantage 2: Penalizing Large Errors
 
 Squaring magnifies large mistakes dramatically.
 
-[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
+Example:
 
 |Residual|Squared Residual|
 |---|---|
@@ -355,11 +355,11 @@ This forces the regression line to avoid extreme misses.
 
 This property stabilizes the fitted model substantially.
 
-## 13. The [Sum of Squared Errors (SSE)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#sum-of-squared-errors-sse)
+# 13. The Sum of Squared Errors (SSE)
 
 The total regression error is measured using the Sum of Squared Errors:
 
-## $$  
+# $$  
 SSE
 
 \sum e_i^2  
@@ -367,9 +367,9 @@ $$
 
 SSE=\sum e_i^2
 
-Substituting residual [definitions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#definitions):
+Substituting residual definitions:
 
-## $$  
+# $$  
 SSE
 
 \sum  
@@ -386,7 +386,7 @@ $$
 
 we obtain:
 
-## $$  
+# $$  
 SSE
 
 \sum  
@@ -401,10 +401,10 @@ This equation defines total prediction error as a function of:
 
 - slope
     
-- [intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#intercept))
+- intercept
     
 
-## 14. The Least Squares Criterion
+# 14. The Least Squares Criterion
 
 The Method of Least Squares selects:
 
@@ -426,7 +426,7 @@ Thus:
 
 This is one of the foundational optimization principles in all of statistics and machine learning.
 
-## 15. Why Least Squares Became Dominant
+# 15. Why Least Squares Became Dominant
 
 Least squares became the dominant regression framework because it possesses extraordinary mathematical properties.
 
@@ -445,7 +445,7 @@ It produces:
 
 Much of modern statistical learning is built on least-squares logic.
 
-## 16. The Optimization Problem
+# 16. The Optimization Problem
 
 The regression fitting problem becomes:
 
@@ -463,7 +463,7 @@ This is a calculus optimization problem.
 
 The objective function is quadratic and convex, guaranteeing a unique global minimum.
 
-## 17. Solving the Least Squares Problem
+# 17. Solving the Least Squares Problem
 
 To minimize:
 
@@ -473,7 +473,7 @@ $$
 
 we:
 
-1. take [partial derivatives](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#partial-derivatives) with respect to:
+1. take partial derivatives with respect to:
     
     - $$b_0$$
         
@@ -484,18 +484,18 @@ we:
 3. solve the resulting system of equations
     
 
-These are called the [normal equations](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#normal-equations).
+These are called the normal equations.
 
 The solution produces explicit formulas for the regression coefficients.
 
-## 18. The Least Squares Slope [Formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula)
+# 18. The Least Squares Slope Formula
 
 The slope estimate is:
 
-## $$  
+# $$  
 b_1
 
-[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)  
+\frac{  
 \sum  
 (x_i-\bar{x})(y_i-\bar{y})  
 }{  
@@ -504,9 +504,9 @@ b_1
 }  
 $$
 
-b_1=[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\sum(x_i-\bar{x})(y_i-\bar{y})}{\sum(x_i-\bar{x})^2}
+b_1=\frac{\sum(x_i-\bar{x})(y_i-\bar{y})}{\sum(x_i-\bar{x})^2}
 
-This [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) measures:
+This formula measures:
 
 $$  
 \text{Covariation}  
@@ -518,7 +518,7 @@ The numerator measures joint movement between variables.
 
 The denominator measures spread in the predictor variable.
 
-## 19. Interpretation of the Numerator
+# 19. Interpretation of the Numerator
 
 The quantity:
 
@@ -539,7 +539,7 @@ This produces a positive slope.
 
 If deviations move oppositely, the slope becomes negative.
 
-## 20. Interpretation of the Denominator
+# 20. Interpretation of the Denominator
 
 The denominator:
 
@@ -557,11 +557,11 @@ If predictor values show little variation, estimating a meaningful slope becomes
 
 Regression fundamentally requires variation in the explanatory variable.
 
-## 21. The Least Squares [Intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#intercept)) [Formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula)
+# 21. The Least Squares Intercept Formula
 
-Once the slope is determined, the [intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#intercept)) is:
+Once the slope is determined, the intercept is:
 
-## $$  
+# $$  
 b_0
 
 ## \bar{y}
@@ -571,9 +571,9 @@ $$
 
 b_0=\bar{y}-b_1\bar{x}
 
-This [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) guarantees a remarkable geometric property.
+This formula guarantees a remarkable geometric property.
 
-## 22. The Regression Line Passes Through the Means
+# 22. The Regression Line Passes Through the Means
 
 The least squares regression line always passes through:
 
@@ -601,10 +601,10 @@ $$
 
 Then:
 
-## $$  
+# $$  
 \hat{y}
 
-## (\bar{y}-b_1\bar{x})  
+# (\bar{y}-b_1\bar{x})  
 +  
 b_1\bar{x}
 
@@ -619,7 +619,7 @@ $$
 
 lies exactly on the regression line.
 
-## 23. Why Passing Through the Means Makes Sense
+# 23. Why Passing Through the Means Makes Sense
 
 The point:
 
@@ -635,7 +635,7 @@ This geometric property is not arbitrary.
 
 It emerges directly from least-squares optimization.
 
-## 24. Residual Properties
+# 24. Residual Properties
 
 Least squares regression produces several important residual properties.
 
@@ -647,7 +647,7 @@ $$
 
 ---
 
-## Residual [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) Equals Zero
+## Residual Mean Equals Zero
 
 $$  
 \bar{e}=0  
@@ -655,7 +655,7 @@ $$
 
 ---
 
-## [Residuals](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#residuals) Are Orthogonal to Predictor Values
+## Residuals Are Orthogonal to Predictor Values
 
 $$  
 \sum x_ie_i=0  
@@ -663,7 +663,7 @@ $$
 
 These properties emerge automatically from the optimization process.
 
-## 25. The Deep Geometry of Least Squares
+# 25. The Deep Geometry of Least Squares
 
 Least squares regression can be interpreted geometrically as projection.
 
@@ -678,7 +678,7 @@ The optimization minimizes total squared distance between:
 
 This geometric interpretation becomes central in higher-dimensional regression theory.
 
-## 26. Why Least Squares Matters Beyond Regression
+# 26. Why Least Squares Matters Beyond Regression
 
 Least squares is not merely a regression tool.
 
@@ -686,7 +686,7 @@ It became foundational across:
 
 - machine learning
     
-- [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) processing
+- signal processing
     
 - optimization
     
@@ -699,7 +699,7 @@ It became foundational across:
 
 Much of predictive modeling fundamentally reduces to minimizing some version of squared error.
 
-## 27. Statistical [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition)))) Behind Least Squares
+# 27. Statistical Intuition Behind Least Squares
 
 The Method of Least Squares fundamentally attempts to find the line that best balances all observations simultaneously.
 
@@ -722,7 +722,7 @@ $$
 
 \text{Minimize Total Prediction Failure}
 
-## 28. The Broader Statistical Perspective
+# 28. The Broader Statistical Perspective
 
 Least squares regression represents a major conceptual shift in statistics.
 
@@ -752,5 +752,3 @@ This transition forms the foundation of modern predictive analytics and statisti
 The Method of Least Squares is therefore not just a computational trick.
 
 It is one of the central organizing principles of quantitative modeling itself.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
