@@ -1,13 +1,7 @@
----
-title: W04 - Module 2b. Visual Best Practises
-module: Statistical Modelling And Inferencing
-week: W04 - Module 2b. Visual Best Practises
----
-
 ![[Stories, Patterns & Meaning.png]]
-## Chart Types for Text Data Visualization
+# Chart Types for Text Data Visualization
 
-## Panchatantra Story Text Analysis
+# Panchatantra Story Text Analysis
 
 This lesson marks an important transition in visualization design.
 
@@ -70,7 +64,7 @@ text must first be transformed into:
 
 before visualization becomes meaningful.
 
-## Why Text Visualization Matters
+# Why Text Visualization Matters
 
 Human beings cannot efficiently read:
 
@@ -100,7 +94,7 @@ allowing us to rapidly identify:
 - semantic structures
     
 ![[NLP Visualization Pipeline.png]]
-## The NLP Visualization Pipeline
+# The NLP Visualization Pipeline
 
 ```mermaid
 flowchart LR
@@ -118,7 +112,7 @@ The lecture intentionally simplifies the preprocessing stage and focuses mainly 
 how visualization extracts insight from textual data
 ```
 
-## Panchatantra as a Text Dataset
+# Panchatantra as a Text Dataset
 
 The lesson uses the:
 
@@ -157,7 +151,7 @@ Text corpora often contain hidden thematic structures.
 
 Visualization helps reveal those structures.
 
-## Text Data as a Dataset
+# Text Data as a Dataset
 
 One of the most important conceptual shifts in the lecture is:
 
@@ -178,15 +172,15 @@ This is foundational in:
 - LLM pipelines
     
 
-## Traditional View of Text
+# Traditional View of Text
 
 Text = language for humans.
 
-## Computational View of Text
+# Computational View of Text
 
 Text = analyzable structured signals.
 
-## Text Processing Pipeline
+# Text Processing Pipeline
 
 ```mermaid
 flowchart TD
@@ -197,7 +191,7 @@ flowchart TD
     --> E[Visualization]
 ```
 
-## Important Insight
+# Important Insight
 
 Visualization is only possible after:
 
@@ -218,9 +212,9 @@ such as:
 - topic distributions
     
 
-## Word Clouds
+# Word Clouds
 
-## The Most Common Text Visualization
+# The Most Common Text Visualization
 
 The lecture begins with:
 
@@ -230,7 +224,7 @@ word clouds
 
 which are one of the most recognizable forms of text visualization.
 
-## What Is a Word Cloud?
+# What Is a Word Cloud?
 
 A word cloud scales words visually according to:
 
@@ -247,7 +241,7 @@ Most commonly:
 larger word = higher frequency
 ```
 
-## Word Cloud Pipeline
+# Word Cloud Pipeline
 
 ```mermaid
 flowchart LR
@@ -257,7 +251,7 @@ flowchart LR
     --> D[Render Word Cloud]
 ```
 
-## Panchatantra Example
+# Panchatantra Example
 
 The lecture identifies dominant words such as:
 
@@ -280,7 +274,7 @@ king
 
 appears most frequently and therefore becomes visually dominant.
 
-## Why Word Clouds Work
+# Why Word Clouds Work
 
 Word clouds leverage:
 
@@ -302,7 +296,7 @@ Humans immediately notice:
 
 without reading linearly.
 
-## Cognitive Advantage
+# Cognitive Advantage
 
 ```mermaid
 flowchart TD
@@ -311,7 +305,7 @@ flowchart TD
     --> C[Perceived Importance]
 ```
 
-## Important Strengths of Word Clouds
+# Important Strengths of Word Clouds
 
 ## Fast Theme Recognition
 
@@ -332,11 +326,11 @@ Word clouds are highly intuitive.
 
 Even non-technical audiences understand them.
 
-## Major Weaknesses of Word Clouds
+# Major Weaknesses of Word Clouds
 
 Despite popularity, word clouds have serious analytical limitations.
 
-## Weakness 1: Poor Quantitative Precision
+# Weakness 1: Poor Quantitative Precision
 
 Humans cannot accurately estimate:
 
@@ -355,11 +349,11 @@ Is "king" twice as common as "lion"?
 
 Hard to determine precisely.
 
-## Weakness 2: Spatial Arrangement Is Arbitrary
+# Weakness 2: Spatial Arrangement Is Arbitrary
 
 Word position usually lacks meaning.
 
-## Weakness 3: Context Is Lost
+# Weakness 3: Context Is Lost
 
 Word clouds ignore:
 
@@ -372,13 +366,13 @@ Word clouds ignore:
 - narrative order
     
 
-## Important Visualization Principle
+# Important Visualization Principle
 
 ```text
 Word clouds are excellent for thematic overview, weak for precise analysis.
 ```
 
-## Why the Bar Chart Is Superior
+# Why the Bar Chart Is Superior
 
 The lecture places the word cloud beside a:
 
@@ -388,7 +382,7 @@ bar chart of word frequencies
 
 This is a very important comparison.
 
-## Why Bar Charts Are Better
+# Why Bar Charts Are Better
 
 Bar charts support:
 
@@ -407,7 +401,7 @@ aligned lengths
 
 very efficiently.
 
-## Comparison of Word Cloud vs Bar Chart
+# Comparison of Word Cloud vs Bar Chart
 
 | Property | Word Cloud | Bar Chart |  
 |---|---|  
@@ -417,7 +411,7 @@ very efficiently.
 | Estimation | Weak | Strong |  
 | Theme Recognition | Strong | Moderate |
 
-## Perceptual Comparison
+# Perceptual Comparison
 
 ```mermaid
 flowchart LR
@@ -428,7 +422,7 @@ flowchart LR
     --> D[Precise Quantitative Comparison]
 ```
 
-## Important Cognitive Insight
+# Important Cognitive Insight
 
 The lecture unintentionally demonstrates a deeper visualization principle:
 
@@ -445,9 +439,9 @@ This directly aligns with:
 - perceptual encoding hierarchy
     
 
-## Frequency Analysis
+# Frequency Analysis
 
-## The Foundation of Text Visualization
+# The Foundation of Text Visualization
 
 The lecture repeatedly references:
 
@@ -457,7 +451,7 @@ frequency of word occurrence
 
 This is one of the most basic NLP techniques.
 
-## Frequency Analysis Workflow
+# Frequency Analysis Workflow
 
 ```mermaid
 flowchart TD
@@ -468,7 +462,7 @@ flowchart TD
     --> E[Visualization]
 ```
 
-## Why Frequency Matters
+# Why Frequency Matters
 
 Frequently occurring words often indicate:
 
@@ -481,7 +475,7 @@ Frequently occurring words often indicate:
 - dominant themes
     
 
-## Important Caveat
+# Important Caveat
 
 Frequency alone is insufficient for true semantic understanding.
 
@@ -509,7 +503,7 @@ This is why NLP systems often use:
 
 before visualization.
 
-## Stopword Problem
+# Stopword Problem
 
 Without filtering:
 
@@ -526,7 +520,7 @@ common words like:
 
 would dominate visualizations.
 
-## NLP Cleaning Pipeline
+# NLP Cleaning Pipeline
 
 ```mermaid
 flowchart TD
@@ -537,7 +531,7 @@ flowchart TD
     --> E[Frequency Analysis]
 ```
 
-## Named Entity Dominance
+# Named Entity Dominance
 
 The lecture notes:
 
@@ -560,7 +554,7 @@ This introduces:
 entity-centric visualization
 ```
 ![[Pasted image 20260528154518.png]]
-## Entity Analysis
+# Entity Analysis
 
 Modern NLP systems often visualize:
 
@@ -582,7 +576,7 @@ through:
 - co-occurrence graphs
     
 
-## Semantic Importance vs Frequency
+# Semantic Importance vs Frequency
 
 One subtle limitation:
 
@@ -600,7 +594,7 @@ frequency ≠ importance
 
 necessarily.
 
-## Word Clouds and Pre-Attentive Processing
+# Word Clouds and Pre-Attentive Processing
 
 Word clouds work largely because of:
 
@@ -620,7 +614,7 @@ These leverage:
 - perceptual hierarchy
     
 
-## Word Cloud Perception Model
+# Word Cloud Perception Model
 
 ```mermaid
 flowchart TD
@@ -630,7 +624,7 @@ flowchart TD
     --> D[Perceived Importance]
 ```
 
-## Why Humans Like Word Clouds
+# Why Humans Like Word Clouds
 
 They provide:
 
@@ -650,7 +644,7 @@ This makes them useful in:
 - executive storytelling
     
 
-## Why Analysts Must Be Careful
+# Why Analysts Must Be Careful
 
 Word clouds can create:
 
@@ -665,7 +659,7 @@ because:
 
 visual prominence depends heavily on design parameters.
 
-## Better Text Visualization Alternatives
+# Better Text Visualization Alternatives
 
 Modern NLP systems often prefer:
 
@@ -678,7 +672,7 @@ Modern NLP systems often prefer:
 |Embedding projections|Latent semantic structure|
 |Sankey diagrams|Narrative flow|
 
-## Advanced NLP Visualization Pipeline
+# Advanced NLP Visualization Pipeline
 
 ```mermaid
 flowchart TD
@@ -695,7 +689,7 @@ flowchart TD
     E --> I[Semantic Clusters]
 ```
 
-## Important Hidden Lesson
+# Important Hidden Lesson
 
 The lecture introduces something deeper than word clouds.
 
@@ -718,7 +712,7 @@ This is foundational to:
 - retrieval systems
     
 
-## Connection to Modern AI Systems
+# Connection to Modern AI Systems
 
 Large Language Models also process text by converting language into:
 
@@ -733,7 +727,7 @@ Large Language Models also process text by converting language into:
 
 Visualization helps humans inspect these transformations.
 
-## Final Visualization Philosophy
+# Final Visualization Philosophy
 
 Text visualization is fundamentally about:
 
@@ -741,7 +735,7 @@ Text visualization is fundamentally about:
 compressing linguistic complexity into perceptually efficient structures
 ```
 
-## Final Mental Model
+# Final Mental Model
 
 Think of text visualization as:
 
@@ -752,9 +746,9 @@ making language visually computable for human cognition
 rather than merely displaying words.
 
 
-## Advanced Text Visualization
+# Advanced Text Visualization
 
-## Character Relationships, Semantic Structures, and Sentiment Analysis
+# Character Relationships, Semantic Structures, and Sentiment Analysis
 
 This section expands text visualization beyond:
 
@@ -800,7 +794,7 @@ This transition is extremely important because modern NLP systems are fundamenta
 
 rather than raw frequency alone.
 
-## The Evolution of Text Visualization
+# The Evolution of Text Visualization
 
 ```mermaid
 flowchart LR
@@ -814,9 +808,9 @@ flowchart LR
 
 The lecture progressively moves through this exact hierarchy.
 
-## Frequency Analysis Revisited
+# Frequency Analysis Revisited
 
-## Frequency Alone Is Not Meaning
+# Frequency Alone Is Not Meaning
 
 The lecture first highlights an important nuance:
 
@@ -831,7 +825,7 @@ but not necessarily the most frequent noun.
 
 This is a subtle but extremely important distinction.
 
-## Why This Matters
+# Why This Matters
 
 Simple frequency analysis can miss:
 
@@ -844,7 +838,7 @@ Simple frequency analysis can miss:
 - relational centrality
     
 
-## Example
+# Example
 
 A character may appear:
 
@@ -860,7 +854,7 @@ Another character may appear:
 - but contribute little meaningfully
     
 
-## Important NLP Insight
+# Important NLP Insight
 
 ```text
 Frequency is a statistical property.
@@ -869,7 +863,7 @@ Importance is a semantic property.
 
 The two are not always equivalent.
 
-## Why Frequency Analysis Is Still Useful
+# Why Frequency Analysis Is Still Useful
 
 Despite limitations, frequency analysis helps identify:
 
@@ -893,7 +887,7 @@ This is why:
 
 begin with frequency statistics.
 
-## Frequency Analysis Pipeline
+# Frequency Analysis Pipeline
 
 ```mermaid
 flowchart TD
@@ -904,9 +898,9 @@ flowchart TD
     --> E[Visualization]
 ```
 
-## Text Length Analysis
+# Text Length Analysis
 
-## Measuring Structural Complexity
+# Measuring Structural Complexity
 
 The lecture then introduces another type of textual visualization:
 
@@ -921,7 +915,7 @@ Example:
 |Mitra Veda|~14,000|
 |Mitra Labha|~8,300|
 
-## Why Word Count Matters
+# Why Word Count Matters
 
 Word count often acts as a proxy for:
 
@@ -934,7 +928,7 @@ Word count often acts as a proxy for:
 - information richness
     
 
-## Important Caveat
+# Important Caveat
 
 Longer text does NOT automatically imply:
 
@@ -954,7 +948,7 @@ However, length can reveal:
 - storytelling complexity
     
 
-## Word Count Visualization Pipeline
+# Word Count Visualization Pipeline
 
 ```mermaid
 flowchart LR
@@ -964,7 +958,7 @@ flowchart LR
     --> D[Infer Structural Complexity]
 ```
 
-## Why Bar Charts Work Best Here
+# Why Bar Charts Work Best Here
 
 The lecture again uses:
 
@@ -987,15 +981,15 @@ extremely accurately.
 
 This reinforces the perceptual hierarchy discussed earlier.
 
-## Cognitive Principle
+# Cognitive Principle
 
 ```text
 Aligned position and length outperform decorative encodings.
 ```
 
-## Word Trees
+# Word Trees
 
-## Relationship Visualization in Text
+# Relationship Visualization in Text
 
 The lecture then introduces:
 
@@ -1005,7 +999,7 @@ word trees
 
 This is one of the first genuinely structural NLP visualizations discussed.
 
-## What Is a Word Tree?
+# What Is a Word Tree?
 
 A word tree visualizes:
 
@@ -1020,7 +1014,7 @@ A word tree visualizes:
 
 between words or entities.
 
-## Word Tree Structure
+# Word Tree Structure
 
 ```mermaid
 flowchart TD
@@ -1040,7 +1034,7 @@ Lion King connects strongly to Dhamanaka.
 
 because they frequently appear together contextually.
 
-## Why Word Trees Matter
+# Why Word Trees Matter
 
 Word trees reveal:
 
@@ -1065,7 +1059,7 @@ to:
 relationship analysis
 ```
 
-## Transition From Tokens to Networks
+# Transition From Tokens to Networks
 
 This is a major conceptual leap.
 
@@ -1079,7 +1073,7 @@ Advanced text analysis:
 - maps relationships
     
 
-## Word Trees as Graph Structures
+# Word Trees as Graph Structures
 
 Word trees are fundamentally:
 
@@ -1094,7 +1088,7 @@ where:
 - edges = relationships/co-occurrences
     
 
-## Graph-Based NLP
+# Graph-Based NLP
 
 ```mermaid
 flowchart LR
@@ -1116,7 +1110,7 @@ This concept underlies:
 - retrieval systems
     
 
-## Why Relationships Matter More Than Frequency
+# Why Relationships Matter More Than Frequency
 
 Two words appearing together repeatedly often indicate:
 
@@ -1129,7 +1123,7 @@ Two words appearing together repeatedly often indicate:
 - thematic similarity
     
 
-## Example
+# Example
 
 If:
 
@@ -1148,7 +1142,7 @@ the text likely contains:
 - recurring narrative interactions
     
 
-## Human Reading vs Computational Structure
+# Human Reading vs Computational Structure
 
 The lecture makes an important observation:
 
@@ -1162,7 +1156,7 @@ text format hides structural connectivity
 
 Visualization externalizes these hidden structures.
 
-## Word Trees as Cognitive Compression
+# Word Trees as Cognitive Compression
 
 ```mermaid
 flowchart TD
@@ -1172,7 +1166,7 @@ flowchart TD
     --> D[Visual Compression]
 ```
 
-## Important Limitation of Word Trees
+# Important Limitation of Word Trees
 
 Word trees still simplify language heavily.
 
@@ -1197,9 +1191,9 @@ co-occurrence ≠ true semantic understanding
 
 necessarily.
 
-## Semantic Scores and Sentiment Analysis
+# Semantic Scores and Sentiment Analysis
 
-## Emotional Structure in Text
+# Emotional Structure in Text
 
 The lecture then transitions into:
 
@@ -1209,7 +1203,7 @@ sentiment analysis
 
 This is one of the most commercially important NLP applications.
 
-## Core Idea
+# Core Idea
 
 Text contains emotional tone.
 
@@ -1221,7 +1215,7 @@ Examples:
 |Praise|Positive|
 |Administrative Message|Neutral|
 
-## Why Sentiment Matters
+# Why Sentiment Matters
 
 Organizations analyze sentiment to understand:
 
@@ -1236,7 +1230,7 @@ Organizations analyze sentiment to understand:
 - behavioral intention
     
 
-## Sentiment Analysis Pipeline
+# Sentiment Analysis Pipeline
 
 ```mermaid
 flowchart TD
@@ -1247,7 +1241,7 @@ flowchart TD
     --> E[Visualization]
 ```
 
-## Sentiment Categories
+# Sentiment Categories
 
 Most systems classify text into:
 
@@ -1257,7 +1251,7 @@ Most systems classify text into:
 |Neutral|Informational tone|
 |Negative|Unfavorable emotion|
 
-## Why Sentiment Analysis Became Important
+# Why Sentiment Analysis Became Important
 
 Modern businesses process:
 
@@ -1280,7 +1274,7 @@ Visualization enables:
 emotional pattern detection at scale
 ```
 
-## Example Applications
+# Example Applications
 
 |Domain|Use Case|
 |---|---|
@@ -1290,9 +1284,9 @@ emotional pattern detection at scale
 |Social Media|Brand monitoring|
 |Politics|Public opinion analysis|
 
-## Semantic Scoring
+# Semantic Scoring
 
-## Quantifying Emotion
+# Quantifying Emotion
 
 Sentiment systems often assign scores.
 
@@ -1315,7 +1309,7 @@ Modern systems use:
 - lexical scoring
     
 
-## Sentiment Visualization
+# Sentiment Visualization
 
 ```mermaid
 flowchart LR
@@ -1325,7 +1319,7 @@ flowchart LR
     --> D[Dashboard Visualization]
 ```
 
-## Important NLP Insight
+# Important NLP Insight
 
 Sentiment analysis is fundamentally:
 
@@ -1335,7 +1329,7 @@ semantic classification
 
 rather than frequency counting.
 
-## Why Administrative Messages Tend To Be Neutral
+# Why Administrative Messages Tend To Be Neutral
 
 Administrative language is usually:
 
@@ -1354,7 +1348,7 @@ Example:
 
 contains little emotional polarity.
 
-## Why Complaints Become Negative
+# Why Complaints Become Negative
 
 Complaint text often contains:
 
@@ -1373,7 +1367,7 @@ Example:
 "The service was terrible."
 ```
 
-## Important Limitation of Sentiment Analysis
+# Important Limitation of Sentiment Analysis
 
 Human language contains:
 
@@ -1388,7 +1382,7 @@ Human language contains:
 
 Therefore sentiment systems frequently fail.
 
-## Example Failure
+# Example Failure
 
 ```text
 "Great, another system crash."
@@ -1396,7 +1390,7 @@ Therefore sentiment systems frequently fail.
 
 contains positive wording but negative intent.
 
-## Sentiment Analysis Limitation Pipeline
+# Sentiment Analysis Limitation Pipeline
 
 ```mermaid
 flowchart TD
@@ -1411,7 +1405,7 @@ flowchart TD
     D --> E[Potential Misclassification]
 ```
 
-## Text Visualization as Information Reduction
+# Text Visualization as Information Reduction
 
 A central hidden theme in this lecture is:
 
@@ -1428,7 +1422,7 @@ Without visualization:
 - themes remain hidden
     
 
-## Connection to Modern AI Systems
+# Connection to Modern AI Systems
 
 These visualization techniques connect directly to:
 
@@ -1445,7 +1439,7 @@ These visualization techniques connect directly to:
 - vector databases
     
 
-## Modern NLP Pipeline
+# Modern NLP Pipeline
 
 ```mermaid
 flowchart TD
@@ -1462,7 +1456,7 @@ flowchart TD
     E --> I[Sentiment Dashboards]
 ```
 
-## Final Visualization Philosophy
+# Final Visualization Philosophy
 
 This lecture demonstrates that text visualization evolves across layers:
 
@@ -1473,7 +1467,7 @@ This lecture demonstrates that text visualization evolves across layers:
 |Semantics|What means something|
 |Sentiment|What feels emotional|
 
-## Final Mental Model
+# Final Mental Model
 
 Think of NLP visualization as:
 
@@ -1483,9 +1477,9 @@ transforming language into visible cognitive structures
 
 that humans can perceive rapidly.
 
-## Sentiment Analysis, Joint Plots, and Semantic Emotion Modeling
+# Sentiment Analysis, Joint Plots, and Semantic Emotion Modeling
 
-## Advanced Text Analytics in Visualization
+# Advanced Text Analytics in Visualization
 
 This section moves from:
 
@@ -1532,11 +1526,11 @@ These techniques form the backbone of:
 - recommendation engines
     
 
-## The Evolution of Text Analytics
+# The Evolution of Text Analytics
 
 The lecture now transitions through increasingly sophisticated levels of text understanding.
 
-## NLP Evolution Hierarchy
+# NLP Evolution Hierarchy
 
 ```mermaid
 flowchart TD
@@ -1564,9 +1558,9 @@ Advanced NLP asks:
 What emotional and semantic meaning does the language carry?
 ```
 
-## Sentiment Analysis
+# Sentiment Analysis
 
-## Quantifying Emotional Tone
+# Quantifying Emotional Tone
 
 The lecture introduces:
 
@@ -1576,7 +1570,7 @@ sentiment scores
 
 which attempt to numerically estimate emotional tone within text.
 
-## Core Idea
+# Core Idea
 
 Every piece of language carries some emotional polarity:
 
@@ -1586,7 +1580,7 @@ Every piece of language carries some emotional polarity:
 |Neutral|Informational or balanced|
 |Negative|Unfavorable emotion|
 
-## Sentiment Analysis Pipeline
+# Sentiment Analysis Pipeline
 
 ```mermaid
 flowchart LR
@@ -1606,9 +1600,9 @@ The algorithm attempts to infer:
 - overall narrative tone
     
 
-## Sentiment Scores
+# Sentiment Scores
 
-## Numerical Representation of Emotion
+# Numerical Representation of Emotion
 
 The lecture describes sentiment scoring as typically ranging from:
 
@@ -1622,7 +1616,7 @@ Where:
 |0|Neutral|
 |+1|Strongly positive|
 
-## Why Numerical Emotion Modeling Matters
+# Why Numerical Emotion Modeling Matters
 
 Humans cannot manually analyze:
 
@@ -1637,7 +1631,7 @@ Humans cannot manually analyze:
 
 Visualization and scoring systems compress this complexity.
 
-## Emotion Compression Pipeline
+# Emotion Compression Pipeline
 
 ```mermaid
 flowchart TD
@@ -1647,7 +1641,7 @@ flowchart TD
     --> D[Dashboard Summary]
 ```
 
-## Panchatantra Sentiment Example
+# Panchatantra Sentiment Example
 
 The lecture applies sentiment analysis to the Panchatantra corpus.
 
@@ -1660,7 +1654,7 @@ This happens because:
 - positive and negative emotional segments cancel each other out statistically.
     
 
-## Important Insight
+# Important Insight
 
 Narratives often contain:
 
@@ -1677,13 +1671,13 @@ Therefore average sentiment alone may hide:
 local emotional structure
 ```
 
-## Segment-Level Sentiment
+# Segment-Level Sentiment
 
 The lecture correctly points out:
 
 Different chapters possess different emotional signatures.
 
-## Example
+# Example
 
 |Chapter|Expected Tone|
 |---|---|
@@ -1692,7 +1686,7 @@ Different chapters possess different emotional signatures.
 
 The sentiment model reflects this distinction.
 
-## Important NLP Principle
+# Important NLP Principle
 
 ```text
 Contextual segmentation matters more than global averages.
@@ -1700,7 +1694,7 @@ Contextual segmentation matters more than global averages.
 
 This is extremely important in modern NLP systems.
 
-## Why Aggregate Sentiment Can Be Misleading
+# Why Aggregate Sentiment Can Be Misleading
 
 Suppose:
 
@@ -1711,7 +1705,7 @@ Suppose:
 
 Average sentiment may appear neutral despite strong emotional intensity.
 
-## Sentiment Aggregation Problem
+# Sentiment Aggregation Problem
 
 ```mermaid
 flowchart TD
@@ -1724,7 +1718,7 @@ flowchart TD
     C --> D[Potentially Neutral Result]
 ```
 
-## Modern Real-World Applications
+# Modern Real-World Applications
 
 The lecture references:
 
@@ -1737,7 +1731,7 @@ The lecture references:
 
 These are among the most important commercial NLP applications.
 
-## Customer Feedback Analytics Pipeline
+# Customer Feedback Analytics Pipeline
 
 ```mermaid
 flowchart LR
@@ -1747,7 +1741,7 @@ flowchart LR
     --> D[Summary Dashboard]
 ```
 
-## Amazon Review Systems
+# Amazon Review Systems
 
 Modern review systems combine:
 
@@ -1777,7 +1771,7 @@ It emerges from:
 - review clustering
     
 
-## Important Hidden Insight
+# Important Hidden Insight
 
 Modern recommendation systems are fundamentally:
 
@@ -1785,7 +1779,7 @@ Modern recommendation systems are fundamentally:
 large-scale text interpretation engines
 ```
 
-## Why Sentiment Analysis Became Critical
+# Why Sentiment Analysis Became Critical
 
 Organizations increasingly rely on:
 
@@ -1807,13 +1801,13 @@ because emotional signals often predict:
 - purchasing behavior
     
 
-## Sentiment Analysis Challenges
+# Sentiment Analysis Challenges
 
 The lecture simplifies sentiment analysis significantly.
 
 In reality, language is extremely difficult computationally.
 
-## Major NLP Problems
+# Major NLP Problems
 
 |Problem|Example|
 |---|---|
@@ -1822,7 +1816,7 @@ In reality, language is extremely difficult computationally.
 |Context Dependence|"Cold" can be positive or negative|
 |Irony|Literal meaning differs from intent|
 
-## Sentiment Failure Pipeline
+# Sentiment Failure Pipeline
 
 ```mermaid
 flowchart TD
@@ -1837,9 +1831,9 @@ flowchart TD
     D --> E[Incorrect Sentiment]
 ```
 
-## Joint Plots
+# Joint Plots
 
-## Multivariate Text Analytics
+# Multivariate Text Analytics
 
 The lecture then introduces:
 
@@ -1849,7 +1843,7 @@ joint plots
 
 This is a major conceptual advancement.
 
-## What Is a Joint Plot?
+# What Is a Joint Plot?
 
 A joint plot combines:
 
@@ -1869,7 +1863,7 @@ It visualizes:
 - concentration density
     
 
-## Joint Plot Structure
+# Joint Plot Structure
 
 ```mermaid
 flowchart TD
@@ -1891,7 +1885,7 @@ Joint plots are extremely valuable because they reveal:
 
 in one visualization.
 
-## Why Joint Plots Are Powerful
+# Why Joint Plots Are Powerful
 
 Traditional scatter plots show:
 
@@ -1905,9 +1899,9 @@ Joint plots additionally show:
 
 This provides much richer analytical context.
 
-## Polarity and Subjectivity
+# Polarity and Subjectivity
 
-## Two Different Semantic Dimensions
+# Two Different Semantic Dimensions
 
 The lecture introduces:
 
@@ -1918,9 +1912,9 @@ The lecture introduces:
 
 These are related but fundamentally different.
 
-## Polarity
+# Polarity
 
-## Emotional Direction
+# Emotional Direction
 
 Polarity measures:
 
@@ -1932,9 +1926,9 @@ Range:
 
 -1 \leq Polarity \leq 1
 
-## Subjectivity
+# Subjectivity
 
-## Emotional vs Objective Language
+# Emotional vs Objective Language
 
 Subjectivity measures:
 
@@ -1946,14 +1940,14 @@ Range:
 
 0 \leq Subjectivity \leq 1
 
-## Interpretation
+# Interpretation
 
 |Score|Meaning|
 |---|---|
 |0|Objective / factual|
 |1|Highly emotional / opinionated|
 
-## Examples
+# Examples
 
 ## Objective Statement
 
@@ -1965,7 +1959,7 @@ Fact-based.
 
 Low subjectivity.
 
-## Subjective Statement
+# Subjective Statement
 
 ```text
 "I feel rich."
@@ -1975,18 +1969,18 @@ Emotion-driven.
 
 Higher subjectivity.
 
-## Important Semantic Insight
+# Important Semantic Insight
 
 Two sentences may share polarity but differ drastically in subjectivity.
 
-## Example
+# Example
 
 |Sentence|Polarity|Subjectivity|
 |---|---|---|
 |"The service failed."|Negative|Moderate|
 |"I absolutely hate this terrible service."|Negative|Very High|
 
-## Subjectivity Modeling Pipeline
+# Subjectivity Modeling Pipeline
 
 ```mermaid
 flowchart TD
@@ -1996,7 +1990,7 @@ flowchart TD
     --> D[Subjectivity Score]
 ```
 
-## Relationship Between Polarity and Subjectivity
+# Relationship Between Polarity and Subjectivity
 
 The lecture observes:
 
@@ -2013,7 +2007,7 @@ Highly emotional statements tend to be:
 - more subjective
     
 
-## Semantic Relationship Model
+# Semantic Relationship Model
 
 ```mermaid
 flowchart LR
@@ -2022,7 +2016,7 @@ flowchart LR
     --> C[Higher Subjectivity]
 ```
 
-## Distribution Analysis
+# Distribution Analysis
 
 The lecture notes:
 
@@ -2030,7 +2024,7 @@ Polarity distributions appear approximately normal.
 
 This is an important statistical insight.
 
-## Why Sentiment Often Approximates Normality
+# Why Sentiment Often Approximates Normality
 
 In large corpora:
 
@@ -2041,7 +2035,7 @@ In large corpora:
 
 This creates bell-shaped distributions.
 
-## Distribution Interpretation Pipeline
+# Distribution Interpretation Pipeline
 
 ```mermaid
 flowchart TD
@@ -2050,7 +2044,7 @@ flowchart TD
     --> C[Behavioral Insight]
 ```
 
-## Important Business Implication
+# Important Business Implication
 
 Sentiment distribution reveals:
 
@@ -2061,7 +2055,7 @@ Sentiment distribution reveals:
 - emotional volatility
     
 
-## NLP Visualization as Behavioral Analytics
+# NLP Visualization as Behavioral Analytics
 
 The lecture subtly demonstrates something much deeper:
 
@@ -2080,7 +2074,7 @@ This is foundational to:
 - customer intelligence
     
 
-## Modern AI Connection
+# Modern AI Connection
 
 Large Language Models internally encode:
 
@@ -2104,7 +2098,7 @@ through:
 
 Visualization helps humans interpret these latent structures.
 
-## Advanced NLP Architecture
+# Advanced NLP Architecture
 
 ```mermaid
 flowchart TD
@@ -2121,7 +2115,7 @@ flowchart TD
     E --> I[Relationship Graphs]
 ```
 
-## Final Visualization Insight
+# Final Visualization Insight
 
 This lecture demonstrates the progression from:
 
@@ -2130,7 +2124,7 @@ This lecture demonstrates the progression from:
 - toward semantic cognition modeling
     
 
-## Final Mental Model
+# Final Mental Model
 
 Think of sentiment visualization as:
 
@@ -2141,9 +2135,9 @@ mapping emotional geometry hidden inside language
 into perceptually interpretable structures.
 
 
-## Joint Plot Distribution Analysis and Conversational Network Visualization
+# Joint Plot Distribution Analysis and Conversational Network Visualization
 
-## From Sentiment Geometry to Communication Networks
+# From Sentiment Geometry to Communication Networks
 
 This section introduces two major analytical ideas:
 
@@ -2198,11 +2192,11 @@ This transition is foundational to:
 - influence propagation systems
     
 
-## Part 1
+# Part 1
 
-## Joint Plot Interpretation
+# Joint Plot Interpretation
 
-## Understanding Distribution Geometry
+# Understanding Distribution Geometry
 
 The lecture first continues discussion of:
 
@@ -2219,7 +2213,7 @@ and introduces a critical statistical observation:
 
 This is very important analytically.
 
-## Normal vs Non-Normal Distributions
+# Normal vs Non-Normal Distributions
 
 The lecture observes:
 
@@ -2228,7 +2222,7 @@ The lecture observes:
 |Polarity|Approximately normal|
 |Subjectivity|Skewed / multimodal|
 
-## Why This Matters
+# Why This Matters
 
 Distribution shape determines:
 
@@ -2241,7 +2235,7 @@ Distribution shape determines:
 - anomaly detection behavior
     
 
-## Distribution Analysis Pipeline
+# Distribution Analysis Pipeline
 
 ```mermaid
 flowchart TD
@@ -2251,9 +2245,9 @@ flowchart TD
     --> D[Behavioral Interpretation]
 ```
 
-## Polarity Distribution
+# Polarity Distribution
 
-## Why It Appears Approximately Normal
+# Why It Appears Approximately Normal
 
 The lecture notes:
 
@@ -2270,7 +2264,7 @@ This is expected because most natural language communication is:
 
 Extreme emotional statements are relatively rare.
 
-## Normal Distribution Intuition
+# Normal Distribution Intuition
 
 ```mermaid
 flowchart LR
@@ -2281,9 +2275,9 @@ flowchart LR
 
 This creates approximately bell-shaped sentiment distributions.
 
-## Subjectivity Distribution
+# Subjectivity Distribution
 
-## Why It Becomes Skewed or Multimodal
+# Why It Becomes Skewed or Multimodal
 
 Subjectivity behaves differently because language often separates into distinct communication modes.
 
@@ -2303,7 +2297,7 @@ This creates:
 - multiple peaks
     
 
-## Multimodal Distribution Meaning
+# Multimodal Distribution Meaning
 
 A multimodal distribution suggests:
 
@@ -2311,7 +2305,7 @@ A multimodal distribution suggests:
 multiple latent behavioral states exist in the data
 ```
 
-## Subjectivity Modes Example
+# Subjectivity Modes Example
 
 ```mermaid
 flowchart TD
@@ -2326,7 +2320,7 @@ flowchart TD
 
 This creates multiple peaks instead of one smooth normal curve.
 
-## Important Statistical Insight
+# Important Statistical Insight
 
 The lecture indirectly introduces:
 
@@ -2336,7 +2330,7 @@ distribution geometry reveals behavioral structure
 
 This is extremely important in machine learning and analytics.
 
-## Why Joint Plots Are Powerful
+# Why Joint Plots Are Powerful
 
 The lecture explains:
 
@@ -2349,7 +2343,7 @@ Joint plots reveal both:
 
 simultaneously.
 
-## Joint Plot Cognitive Structure
+# Joint Plot Cognitive Structure
 
 ```mermaid
 flowchart TD
@@ -2366,7 +2360,7 @@ flowchart TD
 
 This is much richer than a simple scatter plot.
 
-## Hidden Insight in Joint Plots
+# Hidden Insight in Joint Plots
 
 The lecture observes:
 
@@ -2383,7 +2377,7 @@ Highly emotional language tends to become:
 - more subjective
     
 
-## Semantic Relationship Model
+# Semantic Relationship Model
 
 ```mermaid
 flowchart LR
@@ -2392,7 +2386,7 @@ flowchart LR
     --> C[Higher Subjectivity]
 ```
 
-## Important NLP Principle
+# Important NLP Principle
 
 ```text
 Language variables often interact nonlinearly.
@@ -2400,11 +2394,11 @@ Language variables often interact nonlinearly.
 
 This is why multivariate visualization becomes essential.
 
-## Part 2
+# Part 2
 
-## Conversation Visualization
+# Conversation Visualization
 
-## Modeling Communication Networks
+# Modeling Communication Networks
 
 The lecture now shifts into one of the most important concepts in modern text analytics:
 
@@ -2428,7 +2422,7 @@ toward:
 - network dynamics
     
 
-## Why Conversation Analysis Matters
+# Why Conversation Analysis Matters
 
 Conversation systems contain hidden information about:
 
@@ -2447,7 +2441,7 @@ Conversation systems contain hidden information about:
 - organizational behavior
     
 
-## Conversation Is a Network
+# Conversation Is a Network
 
 The lecture identifies five essential dimensions of conversations:
 
@@ -2461,7 +2455,7 @@ The lecture identifies five essential dimensions of conversations:
 
 This is a remarkably important framework.
 
-## Conversation Analysis Framework
+# Conversation Analysis Framework
 
 ```mermaid
 flowchart TD
@@ -2485,9 +2479,9 @@ This forms the basis of:
 - cybersecurity monitoring
     
 
-## 1. Temporal Dimension
+# 1. Temporal Dimension
 
-## When Did Communication Happen?
+# When Did Communication Happen?
 
 Time is fundamental because communication patterns evolve.
 
@@ -2500,7 +2494,7 @@ Questions include:
 - Did communication intensify before events?
     
 
-## Temporal Communication Analysis
+# Temporal Communication Analysis
 
 ```mermaid
 flowchart LR
@@ -2520,9 +2514,9 @@ This becomes extremely important in:
 - organizational audits
     
 
-## 2. Participant Analysis
+# 2. Participant Analysis
 
-## Who Is Involved?
+# Who Is Involved?
 
 The lecture asks:
 
@@ -2541,7 +2535,7 @@ This identifies:
 - communication hubs
     
 
-## Participant Network Model
+# Participant Network Model
 
 ```mermaid
 flowchart TD
@@ -2559,9 +2553,9 @@ This forms the basis of:
 social network analysis
 ```
 
-## 3. Directionality
+# 3. Directionality
 
-## Who Communicates With Whom?
+# Who Communicates With Whom?
 
 Communication is directional.
 
@@ -2583,7 +2577,7 @@ This reveals:
 - influence
     
 
-## Communication Direction Model
+# Communication Direction Model
 
 ```mermaid
 flowchart LR
@@ -2591,7 +2585,7 @@ flowchart LR
     --> B[Receiver]
 ```
 
-## Why Direction Matters
+# Why Direction Matters
 
 A person sending messages to many others may represent:
 
@@ -2606,9 +2600,9 @@ A person sending messages to many others may represent:
 
 A person only receiving messages may occupy a different organizational role.
 
-## 4. Communication Density
+# 4. Communication Density
 
-## Measuring Interaction Intensity
+# Measuring Interaction Intensity
 
 Density measures:
 
@@ -2616,7 +2610,7 @@ Density measures:
 how concentrated communication becomes
 ```
 
-## Examples
+# Examples
 
 |Pattern|Meaning|
 |---|---|
@@ -2624,7 +2618,7 @@ how concentrated communication becomes
 |Dense communication|Strong interaction|
 |Burst communication|Event-driven activity|
 
-## Density Visualization
+# Density Visualization
 
 ```mermaid
 flowchart TD
@@ -2634,7 +2628,7 @@ flowchart TD
     A --> C[High Density]
 ```
 
-## Important Organizational Insight
+# Important Organizational Insight
 
 Dense communication clusters often indicate:
 
@@ -2647,9 +2641,9 @@ Dense communication clusters often indicate:
 - hidden coalitions
     
 
-## 5. Content Analysis
+# 5. Content Analysis
 
-## What Is Being Discussed?
+# What Is Being Discussed?
 
 This introduces semantic analysis into network systems.
 
@@ -2662,7 +2656,7 @@ Now communication analysis combines:
 - meaning
     
 
-## Conversation Analysis Pipeline
+# Conversation Analysis Pipeline
 
 ```mermaid
 flowchart TD
@@ -2677,9 +2671,9 @@ flowchart TD
     D --> G[Topic & Sentiment]
 ```
 
-## Enron Email Dataset
+# Enron Email Dataset
 
-## One of the Most Famous Communication Datasets
+# One of the Most Famous Communication Datasets
 
 The lecture introduces the:
 
@@ -2698,7 +2692,7 @@ This dataset became historically important in:
 - communication analysis
     
 
-## Why Enron Matters
+# Why Enron Matters
 
 Before Enron’s collapse:
 
@@ -2720,13 +2714,13 @@ After investigation:
 
 were uncovered.
 
-## Important Analytical Insight
+# Important Analytical Insight
 
 ```text
 Communication patterns often reveal organizational behavior before visible outcomes occur.
 ```
 
-## Enron Analysis Pipeline
+# Enron Analysis Pipeline
 
 ```mermaid
 flowchart TD
@@ -2743,7 +2737,7 @@ flowchart TD
     E --> I[Behavioral Signals]
 ```
 
-## Why Network Visualization Is Powerful
+# Why Network Visualization Is Powerful
 
 Raw emails are impossible to mentally process at scale.
 
@@ -2760,7 +2754,7 @@ Visualization reveals:
 - anomalous behavior
     
 
-## Modern Applications
+# Modern Applications
 
 Conversation analytics now powers:
 
@@ -2773,9 +2767,9 @@ Conversation analytics now powers:
 |Politics|Propaganda tracking|
 |CRM Systems|Customer interaction analysis|
 
-## Hidden Insight
+# Hidden Insight
 
-## Language Is Behavioral Data
+# Language Is Behavioral Data
 
 The lecture quietly introduces one of the deepest ideas in computational social science:
 
@@ -2798,9 +2792,9 @@ It is:
 - power structure
     
 
-## Advanced Concept
+# Advanced Concept
 
-## Conversation Networks as Graph Theory
+# Conversation Networks as Graph Theory
 
 Modern communication systems are modeled mathematically as:
 
@@ -2819,7 +2813,7 @@ Where:
 |Edge|Communication|
 |Weight|Interaction frequency|
 
-## Communication Graph Model
+# Communication Graph Model
 
 ```mermaid
 flowchart LR
@@ -2831,7 +2825,7 @@ flowchart LR
     A -->|2 Emails| D[Employee D]
 ```
 
-## Final Conceptual Shift
+# Final Conceptual Shift
 
 This lecture transitions NLP from:
 
@@ -2840,7 +2834,7 @@ This lecture transitions NLP from:
 - toward behavioral system modeling
     
 
-## Final Mental Model
+# Final Mental Model
 
 Think of conversation visualization as:
 
@@ -2850,9 +2844,9 @@ mapping invisible social and organizational structures hidden inside communicati
 
 through perceptual network representations.
 
-## Temporal Communication Analysis and Organizational Behavior Visualization
+# Temporal Communication Analysis and Organizational Behavior Visualization
 
-## Enron Email Networks as Behavioral Signals
+# Enron Email Networks as Behavioral Signals
 
 This final section brings together everything discussed earlier:
 
@@ -2895,7 +2889,7 @@ but:
 
 can reveal hidden organizational dynamics.
 
-## The Core Analytical Shift
+# The Core Analytical Shift
 
 Earlier sections focused on:
 
@@ -2918,7 +2912,7 @@ The central insight becomes:
 organizational stress leaves temporal signatures in communication systems
 ```
 
-## Communication as Behavioral Telemetry
+# Communication as Behavioral Telemetry
 
 The lecture implicitly treats communication like:
 
@@ -2931,7 +2925,7 @@ The lecture implicitly treats communication like:
 
 This is an extremely modern analytical perspective.
 
-## Communication Intelligence Pipeline
+# Communication Intelligence Pipeline
 
 ```mermaid
 flowchart TD
@@ -2948,9 +2942,9 @@ flowchart TD
     E --> I[Semantic Signals]
 ```
 
-## Enron Bankruptcy Timeline
+# Enron Bankruptcy Timeline
 
-## Communication Before Collapse
+# Communication Before Collapse
 
 The lecture explains:
 
@@ -2965,7 +2959,7 @@ Before the collapse:
 - internal email traffic increased significantly.
     
 
-## Why This Matters
+# Why This Matters
 
 Even without reading the content:
 
@@ -2975,7 +2969,7 @@ the communication pattern itself reveals abnormal organizational behavior
 
 This is one of the deepest insights in behavioral analytics.
 
-## Temporal Spike Detection
+# Temporal Spike Detection
 
 ```mermaid
 flowchart LR
@@ -2985,7 +2979,7 @@ flowchart LR
     --> D[Potential Crisis]
 ```
 
-## Important Analytical Principle
+# Important Analytical Principle
 
 Abnormal communication density often precedes:
 
@@ -3000,7 +2994,7 @@ Abnormal communication density often precedes:
 - security incidents
     
 
-## Why Communication Spikes Occur
+# Why Communication Spikes Occur
 
 During organizational stress:
 
@@ -3019,7 +3013,7 @@ This naturally produces:
 communication amplification
 ```
 
-## Communication Volume as a Signal
+# Communication Volume as a Signal
 
 The lecture visualizes:
 
@@ -3031,11 +3025,11 @@ using a simple bar chart.
 
 This is deceptively powerful.
 
-## Why Simple Visualizations Work
+# Why Simple Visualizations Work
 
 Humans perceive temporal spikes immediately.
 
-## Temporal Pattern Recognition
+# Temporal Pattern Recognition
 
 ```mermaid
 flowchart TD
@@ -3051,7 +3045,7 @@ This demonstrates a core visualization principle:
 simple encodings often reveal critical insights more effectively than complex graphics
 ```
 
-## Important Hidden Insight
+# Important Hidden Insight
 
 The lecture emphasizes:
 
@@ -3059,7 +3053,7 @@ You do not initially need semantic understanding.
 
 Even metadata alone reveals structure.
 
-## Metadata vs Content
+# Metadata vs Content
 
 |Metadata|Content|
 |---|---|
@@ -3074,7 +3068,7 @@ Modern analytics frequently begins with metadata analysis because:
 behavioral structure often emerges before semantic interpretation
 ```
 
-## Communication Density Analysis
+# Communication Density Analysis
 
 The lecture effectively demonstrates:
 
@@ -3082,7 +3076,7 @@ The lecture effectively demonstrates:
 communication intensity as a proxy for organizational state
 ```
 
-## Density Interpretation Model
+# Density Interpretation Model
 
 ```mermaid
 flowchart TD
@@ -3095,7 +3089,7 @@ flowchart TD
     B -->|No| D[Potential Organizational Stress]
 ```
 
-## Why This Matters in Real Systems
+# Why This Matters in Real Systems
 
 Modern organizations monitor communication patterns for:
 
@@ -3110,7 +3104,7 @@ Modern organizations monitor communication patterns for:
 - crisis escalation
     
 
-## Example Applications
+# Example Applications
 
 |Domain|Use Case|
 |---|---|
@@ -3120,9 +3114,9 @@ Modern organizations monitor communication patterns for:
 |Intelligence Systems|Network monitoring|
 |Social Platforms|Viral propagation|
 
-## Organizational Network Analysis
+# Organizational Network Analysis
 
-## Who Sends the Most Communication?
+# Who Sends the Most Communication?
 
 The lecture then shifts from:
 
@@ -3148,7 +3142,7 @@ as sending approximately:
 43% of all emails
 ```
 
-## Why This Is Important
+# Why This Is Important
 
 Communication concentration often reflects:
 
@@ -3161,7 +3155,7 @@ Communication concentration often reflects:
 - crisis management
     
 
-## Communication Centrality
+# Communication Centrality
 
 In graph theory, this becomes:
 
@@ -3169,7 +3163,7 @@ In graph theory, this becomes:
 node centrality
 ```
 
-## Centrality Concept
+# Centrality Concept
 
 ```mermaid
 flowchart TD
@@ -3192,7 +3186,7 @@ Highly connected nodes often represent:
 - information hubs
     
 
-## Important Limitation
+# Important Limitation
 
 High communication volume does NOT necessarily imply:
 
@@ -3205,7 +3199,7 @@ High communication volume does NOT necessarily imply:
 
 Interpretation requires context.
 
-## Communication Centrality Metrics
+# Communication Centrality Metrics
 
 Modern network systems use measures such as:
 
@@ -3216,7 +3210,7 @@ Modern network systems use measures such as:
 |Closeness centrality|Communication reach|
 |Eigenvector centrality|Influence through important nodes|
 
-## Hidden Insight in the Lecture
+# Hidden Insight in the Lecture
 
 The lecture quietly introduces:
 
@@ -3226,7 +3220,7 @@ organizations are graph structures
 
 rather than merely hierarchical charts.
 
-## Organizational Graph Model
+# Organizational Graph Model
 
 ```mermaid
 flowchart LR
@@ -3241,7 +3235,7 @@ flowchart LR
 
 But actual communication networks are usually far more complex.
 
-## Temporal Communication Evolution
+# Temporal Communication Evolution
 
 The lecture then asks:
 
@@ -3255,7 +3249,7 @@ This introduces:
 individual temporal behavioral profiling
 ```
 
-## Behavioral Timeline Analysis
+# Behavioral Timeline Analysis
 
 ```mermaid
 flowchart LR
@@ -3275,7 +3269,7 @@ This is foundational in:
 - digital behavior analytics
     
 
-## Why Temporal Profiles Matter
+# Why Temporal Profiles Matter
 
 Changes in communication frequency may indicate:
 
@@ -3290,7 +3284,7 @@ Changes in communication frequency may indicate:
 - coordination breakdown
     
 
-## Important Statistical Principle
+# Important Statistical Principle
 
 Behavioral anomalies are often easier to detect through:
 
@@ -3300,7 +3294,7 @@ change over time
 
 rather than absolute values.
 
-## Example
+# Example
 
 Sending 500 emails may be normal.
 
@@ -3315,7 +3309,7 @@ may indicate:
 behavioral regime change
 ```
 
-## Communication Analytics Architecture
+# Communication Analytics Architecture
 
 ```mermaid
 flowchart TD
@@ -3330,7 +3324,7 @@ flowchart TD
     D --> G[Relationship Structure]
 ```
 
-## The Deeper Computational Insight
+# The Deeper Computational Insight
 
 The lecture ultimately demonstrates something profound:
 
@@ -3349,7 +3343,7 @@ This is foundational to:
 - AI monitoring systems
     
 
-## Modern AI and Communication Analysis
+# Modern AI and Communication Analysis
 
 Modern systems now combine:
 
@@ -3366,7 +3360,7 @@ Modern systems now combine:
 
 to analyze communication ecosystems.
 
-## Modern Enterprise Pipeline
+# Modern Enterprise Pipeline
 
 ```mermaid
 flowchart TD
@@ -3385,7 +3379,7 @@ flowchart TD
     G --> H
 ```
 
-## Why This Matters Beyond Enron
+# Why This Matters Beyond Enron
 
 The Enron example became historically important because it demonstrated:
 
@@ -3395,7 +3389,7 @@ communication metadata itself contains predictive organizational intelligence
 
 even before reading message content.
 
-## Final Conceptual Integration
+# Final Conceptual Integration
 
 This lecture integrates multiple analytical layers simultaneously:
 
@@ -3407,7 +3401,7 @@ This lecture integrates multiple analytical layers simultaneously:
 |Time|Behavioral evolution|
 |Networks|Organizational topology|
 
-## Final Mental Model
+# Final Mental Model
 
 Think of conversation visualization as:
 
@@ -3416,5 +3410,3 @@ turning invisible organizational behavior into visible temporal and relational g
 ```
 
 through analytical visualization systems.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
