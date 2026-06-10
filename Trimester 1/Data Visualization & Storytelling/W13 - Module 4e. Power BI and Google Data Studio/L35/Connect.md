@@ -1,11 +1,5 @@
----
-title: W13 - Module 4e. Power BI and Google Data Studio - Module 4e. Power BI and Google Data Studio - Module 4e. Power BI and Google Data Studio
-module: Statistical Modelling And Inferencing
-week: W13 - Module 4e. Power BI and Google Data Studio - Module 4e. Power BI and Google Data Studio - Module 4e. Power BI and Google Data Studio
----
 
-
-## Page 1
+# Page 1
 
  
  
@@ -59,7 +53,7 @@ And you can use this for publishing and you can share this with your colleagues 
 also connect this with live data so that it gets updated on a regular basis, which you 
 
 
-## Page 2
+# Page 2
 
  
  
@@ -113,7 +107,7 @@ Like that, we have the different categories of the variable which you can add, e
 do all that. Then add a field, add a parameter. OK, data refreshes in 15 minutes. 
 
 
-## Page 3
+# Page 3
 
  
  
@@ -167,7 +161,7 @@ So I'm just giving a small example.
 This is an executive sales dashboard. I'm going to fill it to the full length here. Yeah. 
 
 
-## Page 4
+# Page 4
 
  
  
@@ -221,7 +215,7 @@ Yeah. Teacher. Wise.
 Sales. OK, then centre. Bold. 
 
 
-## Page 5
+# Page 5
 
  
  
@@ -244,6 +238,3 @@ This also can make it equal quantity. So this is ready now.
  
  
 ------------------------------------------------------End----------------------------------------------------- 
-
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
