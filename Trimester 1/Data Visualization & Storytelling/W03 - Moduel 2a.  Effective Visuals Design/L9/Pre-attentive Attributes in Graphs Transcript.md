@@ -1,9 +1,3 @@
----
-title: W03 - Moduel 2a.  Effective Visuals Design
-module: Statistical Modelling And Inferencing
-week: W03 - Moduel 2a.  Effective Visuals Design
----
-
 ### Pre-attentive Attributes in Data Visualization
 
 Pre-attentive attributes are visual properties that the human brain processes automatically, almost instantaneously (typically in less than 250 milliseconds), before conscious attention is applied. In the context of data visualization and storytelling, these attributes are the primary tools used to guide the viewer’s eye to the most critical information, reducing cognitive load and accelerating insight extraction.
@@ -206,5 +200,3 @@ When in doubt, simplicity is your most effective tool for maintaining trust and 
     
 
 By adhering to these principles, you ensure that your visualizations remain powerful, honest, and effective tools for decision-making. Would you like to summarize the key takeaways from our discussion on pre-attentive attributes, or shall we move on to another topic in your curriculum?
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
