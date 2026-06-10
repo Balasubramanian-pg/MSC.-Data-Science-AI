@@ -1,17 +1,17 @@
 ---
 
-## Reading Material: The [Coefficient of Determination](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#coefficient-of-determination) (R²)
+## Reading Material: The Coefficient of Determination (R²)
 
 ---
-## The [Coefficient of Determination](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#coefficient-of-determination) ((R^2))
+# The Coefficient of Determination ((R^2))
 
-## 1. Why We Need a Measure of Fit
+# 1. Why We Need a Measure of Fit
 
-After fitting a regression line using least squares, we immediately face a deeper [question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#question))):
+After fitting a regression line using least squares, we immediately face a deeper question:
 
 > How good is this regression model?
 
-Finding the “best” line among all possible lines does **not** [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) the line is actually good.
+Finding the “best” line among all possible lines does **not** mean the line is actually good.
 
 It only means:
 
@@ -21,7 +21,7 @@ We therefore need a quantitative measure of model quality.
 
 That measure is:
 
-## The [Coefficient of Determination](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#coefficient-of-determination)
+# The Coefficient of Determination
 
 [  
 R^2  
@@ -33,7 +33,7 @@ pronounced:
 
 ---
 
-## 2. The Core [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition)))) Behind (R^2)
+# 2. The Core Intuition Behind (R^2)
 
 At its heart, (R^2) compares two competing prediction strategies.
 
@@ -57,7 +57,7 @@ e_i = y_i - \hat{y}_i
 
 ---
 
-## Model 2: The Baseline [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) Model
+## Model 2: The Baseline Mean Model
 
 Ignores (X) completely.
 
@@ -67,7 +67,7 @@ If we know nothing about (X), our best prediction for every observation is simpl
 \bar{y}  
 ]
 
-the sample [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean).
+the sample mean.
 
 Prediction error:
 
@@ -77,19 +77,19 @@ y_i - \bar{y}
 
 ---
 
-## 3. The Central [Question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#question))) of (R^2)
+# 3. The Central Question of (R^2)
 
 (R^2) asks:
 
-> “How much better is the regression model compared to just predicting the [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean)?”
+> “How much better is the regression model compared to just predicting the mean?”
 
 This is fundamentally a:
 
-## Error Reduction Metric
+# Error Reduction Metric
 
 ---
 
-## 4. Residual Perspective
+# 4. Residual Perspective
 
 Suppose we predict house prices.
 
@@ -121,13 +121,13 @@ stays small.
 
 ---
 
-## 5. Decomposition of Variation
+# 5. Decomposition of Variation
 
 Regression works by partitioning variability.
 
 For each observation:
 
-## [  
+# [  
 (y_i - \bar{y})
 
 (\hat{y}_i - \bar{y})  
@@ -139,7 +139,7 @@ This is one of the deepest identities in regression.
 
 ---
 
-## 6. Interpretation of Each Component
+# 6. Interpretation of Each Component
 
 ## Total Deviation
 
@@ -147,7 +147,7 @@ This is one of the deepest identities in regression.
 y_i - \bar{y}  
 ]
 
-Distance from observation to the [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean).
+Distance from observation to the mean.
 
 Represents total variability.
 
@@ -173,11 +173,11 @@ y_i - \hat{y}_i
 
 Part the model failed to explain.
 
-Represents remaining [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)).
+Represents remaining noise.
 
 ---
 
-## 7. Visual Interpretation
+# 7. Visual Interpretation
 
 ```text
 Actual Point (yi)
@@ -203,11 +203,11 @@ Total deviation equals:
 
 ---
 
-## 8. Sum of Squares Decomposition
+# 8. Sum of Squares Decomposition
 
 Squaring and summing across all observations gives:
 
-## [  
+# [  
 \sum (y_i - \bar{y})^2
 
 \sum (\hat{y}_i - \bar{y})^2  
@@ -225,7 +225,7 @@ This equation is the foundation of regression analysis.
 
 ---
 
-## 9. Understanding the Three Sums of Squares
+# 9. Understanding the Three Sums of Squares
 
 ## SST: Total Sum of Squares
 
@@ -235,7 +235,7 @@ SST = \sum (y_i - \bar{y})^2
 
 Measures:
 
-## Total variability in (Y)
+# Total variability in (Y)
 
 This is the total uncertainty before modeling.
 
@@ -249,7 +249,7 @@ SSR = \sum (\hat{y}_i - \bar{y})^2
 
 Measures:
 
-## Variability explained by the model
+# Variability explained by the model
 
 This is captured structure.
 
@@ -263,13 +263,13 @@ SSE = \sum (y_i - \hat{y}_i)^2
 
 Measures:
 
-## Unexplained variability
+# Unexplained variability
 
-This is residual [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)).
+This is residual noise.
 
 ---
 
-## 10. [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition)))) Behind the Identity
+# 10. Intuition Behind the Identity
 
 [  
 SST = SSR + SSE  
@@ -277,7 +277,7 @@ SST = SSR + SSE
 
 means:
 
-## Total variability
+# Total variability
 
 =  
 Explained variability  
@@ -290,9 +290,9 @@ Regression is fundamentally:
 
 ---
 
-## 11. The [Definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L1/Probability%20and%20Distribution.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#definition))))) of (R^2)
+# 11. The Definition of (R^2)
 
-The [coefficient of determination](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#coefficient-of-determination) is:
+The coefficient of determination is:
 
 [  
 R^2 = \frac{SSR}{SST}  
@@ -300,11 +300,11 @@ R^2 = \frac{SSR}{SST}
 
 Meaning:
 
-## Proportion of total variation explained by the model
+# Proportion of total variation explained by the model
 
 ---
 
-## 12. Alternative [Formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula)
+# 12. Alternative Formula
 
 Using:
 
@@ -322,7 +322,7 @@ This is often the more intuitive form.
 
 ---
 
-## [13. Deep Interpretation](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#13-deep-interpretation) of the [Formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula)
+# 13. Deep Interpretation of the Formula
 
 [  
 \frac{SSE}{SST}  
@@ -330,11 +330,11 @@ This is often the more intuitive form.
 
 represents:
 
-## Fraction of variation left unexplained
+# Fraction of variation left unexplained
 
 Thus:
 
-## [  
+# [  
 R^2
 
 ## 1
@@ -344,9 +344,9 @@ R^2
 
 ---
 
-## 14. Range of (R^2)
+# 14. Range of (R^2)
 
-For ordinary linear regression with [intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#intercept)):
+For ordinary linear regression with intercept:
 
 [  
 0 \le R^2 \le 1  
@@ -358,7 +358,7 @@ For ordinary linear regression with [intercept](https://github.com/Balasubramani
 
 Regression explains nothing.
 
-Predictions no better than using the [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean).
+Predictions no better than using the mean.
 
 [  
 SSR = 0  
@@ -380,7 +380,7 @@ No residual error exists.
 
 ---
 
-## [15. Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#15-[example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example)) Interpretation
+# 15. Example Interpretation
 
 Suppose:
 
@@ -398,15 +398,15 @@ Remaining:
 25%  
 ]
 
-is unexplained [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)).
+is unexplained noise.
 
 ---
 
-## 16. [Important Clarification](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#important-clarification)
+# 16. Important Clarification
 
 (R^2) measures:
 
-## Explained variance
+# Explained variance
 
 NOT:
 
@@ -421,7 +421,7 @@ NOT:
 
 ---
 
-## 17. Geometric Interpretation
+# 17. Geometric Interpretation
 
 In linear algebra form:
 
@@ -444,9 +444,9 @@ This connects regression directly to:
 
 ---
 
-## 18. Correlation Connection
+# 18. Correlation Connection
 
-In [simple linear regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#simple-linear-regression):
+In simple linear regression:
 
 [  
 R^2 = r^2  
@@ -462,7 +462,7 @@ is the Pearson correlation coefficient.
 
 ---
 
-## 19. Why Squaring Matters
+# 19. Why Squaring Matters
 
 Correlation can be:
 
@@ -476,7 +476,7 @@ Squaring converts directional association into magnitude of explained variabilit
 
 ---
 
-## 20. [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example)
+# 20. Example
 
 If:
 
@@ -496,7 +496,7 @@ Meaning:
 
 ---
 
-## 21. Why High (R^2) Can Be Misleading
+# 21. Why High (R^2) Can Be Misleading
 
 A high (R^2) does NOT guarantee a good model.
 
@@ -504,7 +504,7 @@ This is one of the most abused statistics in data science.
 
 ---
 
-## 22. Case 1: Nonlinear Relationships
+# 22. Case 1: Nonlinear Relationships
 
 Suppose the true relationship is quadratic:
 
@@ -518,11 +518,11 @@ But residual plots reveal systematic failure.
 
 ---
 
-## 23. Case 2: Spurious Correlation
+# 23. Case 2: Spurious Correlation
 
 Two unrelated variables may produce high (R^2).
 
-[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
+Example:
 
 - ice cream sales
     
@@ -535,11 +535,11 @@ High (R^2) does not imply causation.
 
 ---
 
-## 24. Case 3: [Overfitting](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#overfitting)
+# 24. Case 3: Overfitting
 
 In multiple regression:
 
-adding [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors))) always increases (R^2).
+adding predictors always increases (R^2).
 
 Even useless variables improve fit slightly.
 
@@ -547,11 +547,11 @@ This creates a dangerous illusion of improvement.
 
 ---
 
-## 25. [Adjusted (R^2)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#adjusted-r2)
+# 25. Adjusted (R^2)
 
-To penalize unnecessary [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors))):
+To penalize unnecessary predictors:
 
-## [  
+# [  
 R^2_{adj}
 
 1 -  
@@ -565,25 +565,25 @@ Where:
 
 - (n) = sample size
     
-- (k) = number of [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors)))
+- (k) = number of predictors
     
 
 ---
 
-## 26. Why [Adjusted (R^2)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#adjusted-r2) Matters
+# 26. Why Adjusted (R^2) Matters
 
-[Adjusted (R^2)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#adjusted-r2):
+Adjusted (R^2):
 
-- increases only when [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors))) genuinely help
+- increases only when predictors genuinely help
     
 - penalizes model complexity
     
-- combats [overfitting](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#overfitting)
+- combats overfitting
     
 
 ---
 
-## 27. Context Matters
+# 27. Context Matters
 
 A “good” (R^2) depends heavily on domain.
 
@@ -615,7 +615,7 @@ may be meaningful.
 
 ---
 
-## [Finance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#finance)
+## Finance
 
 Markets contain enormous randomness.
 
@@ -623,7 +623,7 @@ Very low (R^2) can still produce valuable models.
 
 ---
 
-## 28. Residual Diagnostics Still Matter
+# 28. Residual Diagnostics Still Matter
 
 A model with high (R^2) can still violate assumptions.
 
@@ -633,24 +633,24 @@ Always inspect:
     
 - Q-Q plots
     
-- [heteroscedasticity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#heteroscedasticity)
+- heteroscedasticity
     
 - leverage points
     
 
 ---
 
-## 29. Mental Model
+# 29. Mental Model
 
 Think of (R^2) as:
 
-## Compression Efficiency
+# Compression Efficiency
 
 How much uncertainty about (Y) gets compressed after learning (X).
 
 ---
 
-## 30. Information-Theoretic Perspective
+# 30. Information-Theoretic Perspective
 
 Before regression:
 
@@ -681,7 +681,7 @@ This connects regression to:
 
 ---
 
-## [31. Python Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#31-python-[example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example))
+# 31. Python Example
 
 ```python
 import numpy as np
@@ -689,25 +689,25 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 
-## Generate synthetic data
+# Generate synthetic data
 np.random.seed(42)
 
 X = np.random.rand(100, 1) * 10
 y = 5 + 3 * X.flatten() + np.random.normal(0, 3, 100)
 
-## Fit model
+# Fit model
 model = LinearRegression()
 model.fit(X, y)
 
-## Predictions
+# Predictions
 y_pred = model.predict(X)
 
-## Compute R²
+# Compute R²
 r2 = r2_score(y, y_pred)
 
 print("R²:", r2)
 
-## Visualization
+# Visualization
 plt.scatter(X, y)
 plt.plot(X, y_pred)
 plt.title(f"Linear Regression (R² = {r2:.3f})")
@@ -718,9 +718,9 @@ plt.show()
 
 ---
 
-## 32. Common Misconceptions
+# 32. Common Misconceptions
 
-## [Misconception 1](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#misconception-1)
+## Misconception 1
 
 “High (R^2) means causation.”
 
@@ -728,7 +728,7 @@ False.
 
 ---
 
-## [Misconception 2](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#misconception-2)
+## Misconception 2
 
 “Low (R^2) means useless model.”
 
@@ -738,13 +738,13 @@ Depends on domain.
 
 ---
 
-## [Misconception 3](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#misconception-3)
+## Misconception 3
 
 “High (R^2) guarantees good predictions.”
 
 False.
 
-[Overfitting](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#overfitting) can inflate (R^2).
+Overfitting can inflate (R^2).
 
 ---
 
@@ -758,7 +758,7 @@ Diagnostics matter equally.
 
 ---
 
-## 33. Workflow for Evaluating Regression Fit
+# 33. Workflow for Evaluating Regression Fit
 
 ```mermaid
 flowchart TD
@@ -779,7 +779,7 @@ E -->|No| G[Refine Model]
 
 ---
 
-## 34. Advanced Insight: Why Least Squares Maximizes (R^2)
+# 34. Advanced Insight: Why Least Squares Maximizes (R^2)
 
 Ordinary Least Squares minimizes:
 
@@ -803,7 +803,7 @@ Thus:
 
 ---
 
-## 35. Final Takeaways
+# 35. Final Takeaways
 
 [!IMPORTANT]
 
@@ -819,7 +819,7 @@ Core identities:
 SST = SSR + SSE  
 ]
 
-## R-squared [definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L1/Probability%20and%20Distribution.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#definition)))))
+## R-squared definition
 
 [  
 R^2 = \frac{SSR}{SST}  
@@ -855,5 +855,3 @@ Always combine:
 - statistical inference
     
 - practical reasoning
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
