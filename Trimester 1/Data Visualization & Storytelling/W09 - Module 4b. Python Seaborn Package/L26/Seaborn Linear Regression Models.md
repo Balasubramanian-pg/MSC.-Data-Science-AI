@@ -1,11 +1,5 @@
----
-title: W09 - Module 4b. Python Seaborn Package
-module: Statistical Modelling And Inferencing
-week: W09 - Module 4b. Python Seaborn Package
----
 
-
-## Page 1
+# Page 1
 
  
  
@@ -59,7 +53,7 @@ will understand the importance of a regression plot.
   
 
 
-## Page 2
+# Page 2
 
  
  
@@ -112,7 +106,7 @@ LM plot is more flexible format of the data. Right.
   
 
 
-## Page 3
+# Page 3
 
  
  
@@ -166,7 +160,7 @@ results for each data set. So, first we are trying to plot the relationship betw
 first data set. Okay. 
 
 
-## Page 4
+# Page 4
 
  
  
@@ -219,7 +213,7 @@ So, I am just using this and I am plotting the data. So, you can clearly see the
 line or linear function LM plot is not most ideal for data set 2 which has a parabolic 
 
 
-## Page 5
+# Page 5
 
  
  
@@ -258,6 +252,3 @@ Okay. Thank you.
  
 ---------------------------------------------------End-------------------------------------------------------- 
  
-
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
