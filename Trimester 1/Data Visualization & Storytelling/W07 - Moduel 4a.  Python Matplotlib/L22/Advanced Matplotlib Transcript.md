@@ -1,10 +1,4 @@
----
-title: W07 - Moduel 4a.  Python Matplotlib
-module: Statistical Modelling And Inferencing
-week: W07 - Moduel 4a.  Python Matplotlib
----
-
-## Advanced Matplotlib
+# Advanced Matplotlib
 
 ## Introduction to Advanced Visualization in Matplotlib
 
@@ -59,7 +53,7 @@ Source material:
 
 ---
 
-## Histograms
+# Histograms
 
 ## Conceptual Foundation
 
@@ -89,7 +83,7 @@ The transcript correctly emphasizes that histograms are used to understand:
 
 ---
 
-## Intuition Behind Histograms
+# Intuition Behind Histograms
 
 Suppose you measure:
 
@@ -110,7 +104,7 @@ Instead of examining thousands of raw numbers individually, histograms compress 
 
 ---
 
-## Mathematical Perspective
+# Mathematical Perspective
 
 A histogram approximates the probability density function:
 
@@ -149,23 +143,23 @@ This connects directly to Kernel Density Estimation.
 
 ---
 
-## Basic Histogram Example
+# Basic Histogram Example
 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
 
-## Reproducibility
+# Reproducibility
 np.random.seed(42)
 
-## Generate random data
+# Generate random data
 data = np.random.normal(
     loc=0,
     scale=1,
     size=1000
 )
 
-## Plot histogram
+# Plot histogram
 plt.hist(
     data,
     bins=30,
@@ -184,7 +178,7 @@ Transcript reference:
 
 ---
 
-## Why `np.random.seed()` Matters
+# Why `np.random.seed()` Matters
 
 The transcript briefly explains reproducibility.
 
@@ -218,7 +212,7 @@ That makes:
 
 ---
 
-## Understanding Bins
+# Understanding Bins
 
 Bins determine grouping granularity.
 
@@ -240,7 +234,7 @@ This is fundamentally a bias-variance tradeoff.
 
 ---
 
-## Common Bin Selection Rules
+# Common Bin Selection Rules
 
 ## Sturges Rule
 
@@ -264,7 +258,7 @@ Most practitioners ignore this completely and manually choose bins, which often 
 
 ---
 
-## Adding Labels to Histogram Bars
+# Adding Labels to Histogram Bars
 
 The transcript discusses manually labeling frequencies using loops.
 
@@ -285,7 +279,7 @@ counts, bins, patches = plt.hist(
     edgecolor='black'
 )
 
-## Add labels
+# Add labels
 for count, patch in zip(counts, patches):
 
     if count > 0:
@@ -304,7 +298,7 @@ plt.show()
 
 ---
 
-## Engineering Insight
+# Engineering Insight
 
 Adding labels directly on histograms becomes unreadable quickly when:
 
@@ -319,7 +313,7 @@ Production dashboards usually avoid direct labels unless the number of bins is v
 
 ---
 
-## Histogram Failure Modes
+# Histogram Failure Modes
 
 ## Misleading Bin Width
 
@@ -341,7 +335,7 @@ or log scaling.
 
 ---
 
-## Bar Charts
+# Bar Charts
 
 ## Conceptual Purpose
 
@@ -360,7 +354,7 @@ Unlike histograms:
 
 ---
 
-## Example Dataset
+# Example Dataset
 
 The transcript models social media platforms and user counts.
 
@@ -401,7 +395,7 @@ Transcript reference:
 
 ---
 
-## Why Pandas Plotting Exists
+# Why Pandas Plotting Exists
 
 Pandas integrates directly with Matplotlib.
 
@@ -428,7 +422,7 @@ Less control than raw Matplotlib.
 
 ---
 
-## Horizontal Bar Charts
+# Horizontal Bar Charts
 
 The transcript discusses `barh`.
 
@@ -453,7 +447,7 @@ This is why many enterprise dashboards use horizontal layouts.
 
 ---
 
-## Grouped Bar Charts with Error Bars
+# Grouped Bar Charts with Error Bars
 
 ## Core Statistical Idea
 
@@ -467,7 +461,7 @@ Two groups may have identical means but radically different variances.
 
 ---
 
-## Example
+# Example
 
 ```python
 import pandas as pd
@@ -498,7 +492,7 @@ plt.show()
 
 ---
 
-## Statistical Interpretation
+# Statistical Interpretation
 
 Error bars may represent:
 
@@ -517,7 +511,7 @@ That omission is dangerous because viewers assume confidence intervals even when
 
 ---
 
-## Machine Learning Connection
+# Machine Learning Connection
 
 Error bars are heavily used in:
 
@@ -541,7 +535,7 @@ Without uncertainty estimates, comparisons are statistically weak.
 
 ---
 
-## Pie Charts
+# Pie Charts
 
 ## Core Use Case
 
@@ -559,7 +553,7 @@ This is a neuroscience problem, not merely a visualization preference.
 
 ---
 
-## Basic Pie Chart
+# Basic Pie Chart
 
 ```python
 import matplotlib.pyplot as plt
@@ -590,7 +584,7 @@ plt.show()
 
 ---
 
-## Why Pie Charts Are Often Bad
+# Why Pie Charts Are Often Bad
 
 Humans struggle to compare:
 
@@ -614,7 +608,7 @@ Pie charts are mainly storytelling tools.
 
 ---
 
-## Explode Feature
+# Explode Feature
 
 Transcript reference:
 
@@ -637,7 +631,7 @@ Many executive dashboards misuse explode effects to artificially exaggerate cate
 
 ---
 
-## Radar Charts
+# Radar Charts
 
 ## Conceptual Structure
 
@@ -660,7 +654,7 @@ Used for:
 
 ---
 
-## Example
+# Example
 
 ```python
 import numpy as np
@@ -703,7 +697,7 @@ plt.show()
 
 ---
 
-## Hidden Problem with Radar Charts
+# Hidden Problem with Radar Charts
 
 Radar charts distort comparisons because:
 
@@ -720,7 +714,7 @@ This is why serious analytical systems often avoid them.
 
 ---
 
-## Text Annotations
+# Text Annotations
 
 ## Why Text Matters
 
@@ -738,7 +732,7 @@ into:
 
 ---
 
-## Simple Text Placement
+# Simple Text Placement
 
 ```python
 import numpy as np
@@ -761,7 +755,7 @@ plt.show()
 
 ---
 
-## Arrow Annotations
+# Arrow Annotations
 
 ```python
 peak_x = 1.5 * np.pi
@@ -785,7 +779,7 @@ Transcript reference:
 
 ---
 
-## Storytelling Principle
+# Storytelling Principle
 
 Good annotations answer:
 
@@ -804,7 +798,7 @@ Annotations create intentional focus.
 
 ---
 
-## Style Sheets
+# Style Sheets
 
 ## Concept
 
@@ -829,7 +823,7 @@ They control:
 
 ---
 
-## Example
+# Example
 
 ```python
 import matplotlib.pyplot as plt
@@ -849,7 +843,7 @@ plt.show()
 
 ---
 
-## Why Style Consistency Matters
+# Why Style Consistency Matters
 
 In production systems:
 
@@ -864,7 +858,7 @@ This is why enterprise BI systems enforce theme standards.
 
 ---
 
-## Important Engineering Insight
+# Important Engineering Insight
 
 Most beginners focus excessively on:
 
@@ -896,7 +890,7 @@ That warning is extremely important.
 
 ---
 
-## Visualization as Cognitive Compression
+# Visualization as Cognitive Compression
 
 A useful mental model:
 
@@ -910,7 +904,7 @@ This is fundamentally an information theory problem.
 
 ---
 
-## Machine Learning Connections
+# Machine Learning Connections
 
 Matplotlib is heavily used in ML workflows:
 
@@ -926,7 +920,7 @@ Matplotlib is heavily used in ML workflows:
 
 ---
 
-## Common Visualization Mistakes
+# Common Visualization Mistakes
 
 ## Overusing Colors
 
@@ -950,7 +944,7 @@ Displaying means without variance is statistically misleading.
 
 ---
 
-## Advanced Matplotlib Architecture
+# Advanced Matplotlib Architecture
 
 Matplotlib internally follows:
 
@@ -971,7 +965,7 @@ Understanding this architecture unlocks deep customization.
 
 ---
 
-## Performance Considerations
+# Performance Considerations
 
 Matplotlib struggles with:
 
@@ -1002,7 +996,7 @@ Matplotlib excels in:
 
 ---
 
-## Final Takeaways
+# Final Takeaways
 
 The transcript is fundamentally teaching an important transition:
 
@@ -1026,5 +1020,3 @@ The real lesson is:
 Matplotlib remains relevant because it exposes low-level control over all these dimensions.
 
 Source transcript:
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
