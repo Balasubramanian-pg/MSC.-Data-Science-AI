@@ -1,10 +1,4 @@
----
-title: W06 -Module 3b.  Visual Story Telling
-module: Statistical Modelling And Inferencing
-week: W06 -Module 3b.  Visual Story Telling
----
-
-## 1. The Importance of Business Storytelling
+# 1. The Importance of Business Storytelling
 
 Business storytelling is not decoration added after analysis. It is the mechanism that converts information into action.
 
@@ -314,7 +308,7 @@ Business storytelling is the discipline of transforming:
     
 - information into action
 
-## 2. Defining Data Storytelling
+# 2. Defining Data Storytelling
 
 Data storytelling is the discipline of transforming raw data into a narrative that drives understanding, memory, and action.
 
@@ -514,7 +508,7 @@ This is a foundational lesson in data storytelling:
 
 > Good visualization changes understanding. Great storytelling changes decisions.
 
-## 3. Storytelling Frameworks
+# 3. Storytelling Frameworks
 
 Frameworks exist because unstructured communication usually fails.
 
@@ -694,7 +688,7 @@ Failure mode:
 
 Good nested storytelling requires tight control of transitions.
 
-## 4. Types of Narratives in Data Visualization
+# 4. Types of Narratives in Data Visualization
 
 Narratives in visualization differ based on who controls interpretation:
 
@@ -802,7 +796,7 @@ This creates tension between:
 
 That tension exists in nearly every executive dashboard and business presentation.
 
-## B. Reader-Driven (Exploratory) Narratives
+# B. Reader-Driven (Exploratory) Narratives
 
 Reader-driven narratives shift control from the author to the audience.
 
@@ -975,7 +969,7 @@ Effective dashboards typically include:
 
 The best dashboards quietly guide behavior without feeling restrictive.
 
-## C. Hybrid Narratives (Interactive Storytelling)
+# C. Hybrid Narratives (Interactive Storytelling)
 
 Hybrid storytelling combines:
 
@@ -1052,7 +1046,7 @@ This creates both:
 - analytical autonomy
     
 
-## Key Hybrid Techniques
+# Key Hybrid Techniques
 
 ## 1. Martini Glass Structure
 
@@ -1208,7 +1202,7 @@ This approach is increasingly popular because executives want:
 - without losing analytical flexibility
     
 
-## Comparing Narrative Types
+# Comparing Narrative Types
 
 |Narrative Type|Control|Flexibility|Best Use Case|
 |---|---|---|---|
@@ -1216,7 +1210,7 @@ This approach is increasingly popular because executives want:
 |Reader-Driven|High audience control|High|Exploration and analysis|
 |Hybrid|Shared control|Moderate to High|Business intelligence systems|
 
-## Strategic Insight
+# Strategic Insight
 
 The choice of narrative style should depend on:
 
@@ -1246,7 +1240,7 @@ That balance is difficult to design well, which is why most dashboards either:
     or
     
 - abandon them entirely.
-## 5. The Seven Types of Data Stories
+# 5. The Seven Types of Data Stories
 
 Data stories are not random narratives.
 
@@ -1267,7 +1261,7 @@ These archetypes are important because different business questions require diff
 
 A poor storytelling choice can hide insight even when the analysis itself is correct.
 
-## 6. Change Over Time
+# 6. Change Over Time
 
 ## Objective
 
@@ -1416,7 +1410,7 @@ Time stories should answer:
 
 Without explanation, trend charts become observational rather than actionable.
 
-## 7. Drilling Down
+# 7. Drilling Down
 
 ## Objective
 
@@ -1582,7 +1576,7 @@ Poor drill-down:
 - breaks narrative continuity
     
 
-## 8. Zooming Out
+# 8. Zooming Out
 
 ## Objective
 
@@ -1677,7 +1671,7 @@ Zooming out exposes:
 This is one reason executive thinking differs from operational thinking:  
 executives are expected to maintain macro perspective.
 
-## Relationship Between These Story Types
+# Relationship Between These Story Types
 
 These three story structures complement each other:
 
@@ -1727,7 +1721,7 @@ They are the ones who know:
 - and how to connect those perspectives into a coherent decision narrative.
 
 
-## 8. Zooming Out
+# 8. Zooming Out
 
 ## Example: Regional Crime Concentration
 
@@ -1799,7 +1793,7 @@ A map may reveal:
 
 That creates a completely different story.
 
-## 9. Contrast
+# 9. Contrast
 
 ## Objective
 
@@ -1937,7 +1931,7 @@ Good contrast storytelling explains:
 - whether it is meaningful
     
 
-## 10. Intersection
+# 10. Intersection
 
 ## Objective
 
@@ -2037,7 +2031,7 @@ Intersection stories answer:
 
 > “What used to matter most no longer does.”
 
-## 11. Factors
+# 11. Factors
 
 ## Objective
 
@@ -2174,7 +2168,7 @@ Causes may produce delayed outcomes.
 Some variables predict future change.  
 Others merely describe past outcomes.
 
-## 12. Outliers
+# 12. Outliers
 
 ## Objective
 
@@ -2338,5 +2332,3 @@ It is understanding:
 - which perspective reveals hidden truth
     
 - and how to guide people from observation to decision.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
