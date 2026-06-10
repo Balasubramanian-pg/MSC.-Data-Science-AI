@@ -1,9 +1,3 @@
----
-title: W03 - Moduel 2a.  Effective Visuals Design
-module: Statistical Modelling And Inferencing
-week: W03 - Moduel 2a.  Effective Visuals Design
----
-
 
 The pre-attentive attributes used strategically bring more meaning, reduce the clutter 
 and give a deep impact to the graphic. So we have to remember whenever we are 
@@ -149,6 +143,3 @@ By removing clutter, you aren't removing information; you are removing **obstacl
 
 **You have mastered the principles of visual storytelling and clutter reduction. Would you like to apply these principles to a real-world scenario—such as redesigning a standard banking performance report—or shall we explore how to use "Preattentive Attributes" (like color, size, and orientation) to make your "Highlights" even more effective?**  
   
-
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
