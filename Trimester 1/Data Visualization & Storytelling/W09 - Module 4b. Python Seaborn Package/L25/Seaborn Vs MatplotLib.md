@@ -1,9 +1,3 @@
----
-title: W09 - Module 4b. Python Seaborn Package
-module: Statistical Modelling And Inferencing
-week: W09 - Module 4b. Python Seaborn Package
----
-
 Here is the comprehensive, well-structured guide and refactored code based on your lecture transcript comparing Matplotlib and Seaborn.
 
 The lecture introduces **Seaborn** as a high-level statistical visualization engine built directly on top of **Matplotlib**, emphasizing how Seaborn drastically improves the aesthetics, structural design, and cognitive ease of your data stories.
@@ -44,9 +38,9 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
-## =====================================================================
-## 0. SETUP: Simulating Business Data
-## =====================================================================
+# =====================================================================
+# 0. SETUP: Simulating Business Data
+# =====================================================================
 np.random.seed(42)
 mock_business_data = {
     "region": np.random.choice(["North", "East", "South", "West"], 200),
@@ -55,17 +49,17 @@ mock_business_data = {
 df = pd.DataFrame(mock_business_data)
 
 
-## =====================================================================
-## 1. THE MATPLOTLIB APPROACH: Manual Data Wrangling Required
-## =====================================================================
-## Matplotlib does not know what a DataFrame is natively; you must isolate 
-## arrays and manually calculate the statistical aggregates (means) first.
+# =====================================================================
+# 1. THE MATPLOTLIB APPROACH: Manual Data Wrangling Required
+# =====================================================================
+# Matplotlib does not know what a DataFrame is natively; you must isolate 
+# arrays and manually calculate the statistical aggregates (means) first.
 plt.figure(figsize=(8, 5))
 
-## Step A: Perform manual statistical grouping
+# Step A: Perform manual statistical grouping
 regional_means = df.groupby("region")["quarterly_revenue"].mean().sort_index()
 
-## Step B: Draw raw geometric bar shapes
+# Step B: Draw raw geometric bar shapes
 plt.bar(
     regional_means.index, 
     regional_means.values, 
@@ -73,7 +67,7 @@ plt.bar(
     edgecolor="black"
 )
 
-## Step C: Manually build out the aesthetics layer by layer
+# Step C: Manually build out the aesthetics layer by layer
 plt.title("Matplotlib: Requires Manual Pandas Grouping & Basic Styling", fontsize=12)
 plt.xlabel("Region")
 plt.ylabel("Mean Quarterly Revenue ($)")
@@ -81,20 +75,20 @@ plt.tight_layout()
 plt.show()
 
 
-## =====================================================================
-## 2. THE SEABORN APPROACH: Automated, High-Level Data Storytelling
-## =====================================================================
-## Seaborn natively parses the DataFrame. It automatically groups the categories, 
-## calculates the mean, and adds a 95% Confidence Interval error bar to show data spread.
+# =====================================================================
+# 2. THE SEABORN APPROACH: Automated, High-Level Data Storytelling
+# =====================================================================
+# Seaborn natively parses the DataFrame. It automatically groups the categories, 
+# calculates the mean, and adds a 95% Confidence Interval error bar to show data spread.
 
-## Apply Seaborn's professional global aesthetic styling parameters
+# Apply Seaborn's professional global aesthetic styling parameters
 sns.set_theme(style="whitegrid", palette="muted")
 sns.set_context("notebook", font_scale=1.1)
 
-## Initialize the Matplotlib canvas configuration
+# Initialize the Matplotlib canvas configuration
 plt.figure(figsize=(8, 5))
 
-## One clean line handles data mapping, categorization, and statistical inference
+# One clean line handles data mapping, categorization, and statistical inference
 sns.barplot(
     data=df, 
     x="region", 
@@ -102,7 +96,7 @@ sns.barplot(
     order=["North", "East", "South", "West"]
 )
 
-## Refine title structure using Matplotlib commands over the Seaborn output
+# Refine title structure using Matplotlib commands over the Seaborn output
 plt.title("Seaborn: Automated Statistical Aggregation & Polished Aesthetics", fontsize=14, pad=15)
 plt.xlabel("Region")
 plt.ylabel("Quarterly Revenue ($)")
@@ -144,27 +138,27 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
-## =====================================================================
-## 1. DATA CREATION (Replicating the Lecture's Mock Dataset)
-## =====================================================================
-## Setting a random seed ensures the generated "random" data matches every run
+# =====================================================================
+# 1. DATA CREATION (Replicating the Lecture's Mock Dataset)
+# =====================================================================
+# Setting a random seed ensures the generated "random" data matches every run
 np.random.seed(42)
 
 total_students = 50
 
-## Generate 50 random study hour values between 1 and 10 hours
+# Generate 50 random study hour values between 1 and 10 hours
 study_hours = np.random.uniform(1, 10, total_students)
 
-## Generate exam scores based on a mathematical formula with some random noise
-## Exam Score = 50 + (Study Hours * 4) + Random Variation
+# Generate exam scores based on a mathematical formula with some random noise
+# Exam Score = 50 + (Study Hours * 4) + Random Variation
 exam_scores = 50 + (study_hours * 4) + np.random.normal(0, 5, total_students)
-## Clip scores to ensure they stay within a realistic 0-100 limit
+# Clip scores to ensure they stay within a realistic 0-100 limit
 exam_scores = np.clip(exam_scores, 0, 100)
 
-## Randomly assign each student to one of three courses: Math, Science, or History
+# Randomly assign each student to one of three courses: Math, Science, or History
 courses = np.random.choice(["Math", "Science", "History"], size=total_students)
 
-## Construct the unified Pandas DataFrame
+# Construct the unified Pandas DataFrame
 df = pd.DataFrame({
     "study_hours": study_hours,
     "exam_score": exam_scores,
@@ -176,21 +170,21 @@ print(df.head())
 print("\n" + "="*60 + "\n")
 
 
-## =====================================================================
-## 2. SEABORN GLOBAL THEMING
-## =====================================================================
-## Activating Seaborn's premium default styles and color palettes
+# =====================================================================
+# 2. SEABORN GLOBAL THEMING
+# =====================================================================
+# Activating Seaborn's premium default styles and color palettes
 sns.set_theme(style="whitegrid")
 sns.set_context("notebook", font_scale=1.1)
 
 
-## =====================================================================
-## 3. VISUALIZATION COMPARISON: CONTINUOUS RELATIONS WITH CATEGORIES
-## =====================================================================
+# =====================================================================
+# 3. VISUALIZATION COMPARISON: CONTINUOUS RELATIONS WITH CATEGORIES
+# =====================================================================
 
-## --- Approach A: Matplotlib (Manual Categorical Sub-setting) ---
-## To color points by category in Matplotlib, you must manually loop through 
-## the dataset or write staggered data extraction layers.
+# --- Approach A: Matplotlib (Manual Categorical Sub-setting) ---
+# To color points by category in Matplotlib, you must manually loop through 
+# the dataset or write staggered data extraction layers.
 plt.figure(figsize=(9, 5))
 
 colors_dict = {"Math": "crimson", "Science": "teal", "History": "darkorange"}
@@ -213,8 +207,8 @@ plt.tight_layout()
 plt.show()
 
 
-## --- Approach B: Seaborn (Seamless Column Mapping) ---
-## One single, readable command handles data mapping, categorization, and color palettes.
+# --- Approach B: Seaborn (Seamless Column Mapping) ---
+# One single, readable command handles data mapping, categorization, and color palettes.
 plt.figure(figsize=(9, 5))
 
 sns.scatterplot(
@@ -226,7 +220,7 @@ sns.scatterplot(
     s=80                # Controls marker size uniformly
 )
 
-## Use Matplotlib overlay solely to polish titles and labels
+# Use Matplotlib overlay solely to polish titles and labels
 plt.title("Seaborn: Seamless DataFrame Integration & Categorical Support", fontsize=14, pad=15)
 plt.xlabel("Study Hours")
 plt.ylabel("Exam Score")
@@ -272,9 +266,9 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
-## =====================================================================
-## 0. SETUP: Re-generating the Student Exam Data Structure
-## =====================================================================
+# =====================================================================
+# 0. SETUP: Re-generating the Student Exam Data Structure
+# =====================================================================
 np.random.seed(42)
 total_students = 50
 
@@ -290,40 +284,40 @@ df = pd.DataFrame({
 })
 
 
-## =====================================================================
-## 1. SCATTER PLOT COMPARISON (Syntax & Automated Labels)
-## =====================================================================
+# =====================================================================
+# 1. SCATTER PLOT COMPARISON (Syntax & Automated Labels)
+# =====================================================================
 
-## --- Approach A: Matplotlib (Verbose & Manual Labels) ---
+# --- Approach A: Matplotlib (Verbose & Manual Labels) ---
 plt.figure(figsize=(6, 4))
-## Requires manual extraction/subsetting of the exact data series columns
+# Requires manual extraction/subsetting of the exact data series columns
 plt.scatter(df["study_hours"], df["exam_score"], color="blue")
 plt.title("Matplotlib Syntax Style")
-## CRITICAL: Matplotlib leaves axes completely blank unless explicitly labeled:
+# CRITICAL: Matplotlib leaves axes completely blank unless explicitly labeled:
 plt.xlabel("Study Hours")
 plt.ylabel("Exam Score")
 plt.tight_layout()
 plt.show()
 
-## --- Approach B: Seaborn (DataFrame-Aware Column Mapping) ---
+# --- Approach B: Seaborn (DataFrame-Aware Column Mapping) ---
 plt.figure(figsize=(6, 4))
-## Point to the complete DataFrame, and simply pass string column headers as keys.
-## Notice that Seaborn automatically adjusts bubble sizing to look more modern.
+# Point to the complete DataFrame, and simply pass string column headers as keys.
+# Notice that Seaborn automatically adjusts bubble sizing to look more modern.
 sns.scatterplot(data=df, x="study_hours", y="exam_score")
 plt.title("Seaborn Syntax Style")
-## NOTE: Labels on X and Y axes are automatically derived from the column names!
+# NOTE: Labels on X and Y axes are automatically derived from the column names!
 plt.tight_layout()
 plt.show()
 
 
-## =====================================================================
-## 2. HISTOGRAM COMPARISON (The Aesthetics & "Garnishing" Test)
-## =====================================================================
+# =====================================================================
+# 2. HISTOGRAM COMPARISON (The Aesthetics & "Garnishing" Test)
+# =====================================================================
 
-## Reset backend styling to default plain state for Matplotlib's demonstration
+# Reset backend styling to default plain state for Matplotlib's demonstration
 plt.rcdefaults()
 
-## --- Approach A: Matplotlib Baseline Histogram (Ungarnished) ---
+# --- Approach A: Matplotlib Baseline Histogram (Ungarnished) ---
 plt.figure(figsize=(6, 4))
 plt.hist(df["exam_score"], bins=10, color="blue", edgecolor="none")
 plt.title("Matplotlib Histogram: Raw & Ungarnished")
@@ -332,13 +326,13 @@ plt.ylabel("Count")
 plt.tight_layout()
 plt.show()
 
-## --- Approach B: Seaborn Clean Histogram (Garnished Default) ---
-## Activating Seaborn's premium styling theme parameters globally
+# --- Approach B: Seaborn Clean Histogram (Garnished Default) ---
+# Activating Seaborn's premium styling theme parameters globally
 sns.set_theme(style="darkgrid", palette="muted")
 
 plt.figure(figsize=(6, 4))
-## One line handles the generation, binning calculations, color balance, 
-## and structural grid overlay automatically.
+# One line handles the generation, binning calculations, color balance, 
+# and structural grid overlay automatically.
 sns.histplot(data=df, x="exam_score", bins=10)
 plt.title("Seaborn Histogram: Aesthetically Polished Defaults")
 plt.tight_layout()
@@ -404,9 +398,9 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
-## =====================================================================
-## 0. SETUP: Generating Representative Course Data
-## =====================================================================
+# =====================================================================
+# 0. SETUP: Generating Representative Course Data
+# =====================================================================
 np.random.seed(42)
 total_students = 50
 
@@ -417,17 +411,17 @@ df = pd.DataFrame({
 })
 
 
-## =====================================================================
-## 1. THE MATPLOTLIB WAY: Manual Statistical Pipeline Construction
-## =====================================================================
-## Reset backend styling configuration to plain Matplotlib state
+# =====================================================================
+# 1. THE MATPLOTLIB WAY: Manual Statistical Pipeline Construction
+# =====================================================================
+# Reset backend styling configuration to plain Matplotlib state
 plt.rcdefaults()
 plt.figure(figsize=(7, 4.5))
 
-## Step A: You must manually partition and calculate the mean statistics first
+# Step A: You must manually partition and calculate the mean statistics first
 course_means = df.groupby("course")["exam_score"].mean()
 
-## Step B: Pass calculated index strings as X-axis keys, and calculated float means as Heights
+# Step B: Pass calculated index strings as X-axis keys, and calculated float means as Heights
 plt.bar(
     x=course_means.index, 
     height=course_means.values, 
@@ -442,16 +436,16 @@ plt.tight_layout()
 plt.show()
 
 
-## =====================================================================
-## 2. THE SEABORN WAY: Automatic Statistical Aggregation Natively
-## =====================================================================
-## Activate premium design theme attributes globally
+# =====================================================================
+# 2. THE SEABORN WAY: Automatic Statistical Aggregation Natively
+# =====================================================================
+# Activate premium design theme attributes globally
 sns.set_theme(style="whitegrid", palette="pastel")
 
 plt.figure(figsize=(7, 4.5))
 
-## One clean command natively parses raw data, isolates categories, calculates 
-## the mathematical mean, and adds a 95% Confidence Interval error bar automatically.
+# One clean command natively parses raw data, isolates categories, calculates 
+# the mathematical mean, and adds a 95% Confidence Interval error bar automatically.
 sns.barplot(
     data=df, 
     x="course", 
@@ -518,9 +512,9 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
-## =====================================================================
-## 0. SETUP: Generating Consolidated Student Performance Data
-## =====================================================================
+# =====================================================================
+# 0. SETUP: Generating Consolidated Student Performance Data
+# =====================================================================
 np.random.seed(42)
 total_students = 60
 
@@ -530,21 +524,21 @@ df = pd.DataFrame({
     "course": np.random.choice(["Math", "Science", "History"], size=total_students)
 })
 
-## Calculate global baseline metrics for our Matplotlib annotation layer
+# Calculate global baseline metrics for our Matplotlib annotation layer
 global_median = df["exam_score"].median()
 global_mean = df["exam_score"].mean()
 
 
-## =====================================================================
-## 1. THE HYBRID FRAMEWORK: Seaborn Plotting + Matplotlib Customization
-## =====================================================================
-## Establish a clean, professional background canvas
+# =====================================================================
+# 1. THE HYBRID FRAMEWORK: Seaborn Plotting + Matplotlib Customization
+# =====================================================================
+# Establish a clean, professional background canvas
 sns.set_theme(style="whitegrid", palette="Set2")
 plt.figure(figsize=(9, 5.5))
 
-## Step A: Use Seaborn to render the complex statistical distributions.
-## We explicitly pass the 'order' parameter to ensure we sort the categories 
-## by descending median score, directly satisfying the Gestalt comparison principles.
+# Step A: Use Seaborn to render the complex statistical distributions.
+# We explicitly pass the 'order' parameter to ensure we sort the categories 
+# by descending median score, directly satisfying the Gestalt comparison principles.
 ordered_courses = df.groupby("course")["exam_score"].median().sort_values(ascending=False).index
 
 sns.boxplot(
@@ -555,8 +549,8 @@ sns.boxplot(
     width=0.5
 )
 
-## Step B: Use Matplotlib to overlay an executive-level reference line.
-## This injects an extra layer of context that doesn't exist in standard plots.
+# Step B: Use Matplotlib to overlay an executive-level reference line.
+# This injects an extra layer of context that doesn't exist in standard plots.
 plt.axhline(
     y=global_mean, 
     color="crimson", 
@@ -565,12 +559,12 @@ plt.axhline(
     label=f"Global Mean Score ({global_mean:.1f})"
 )
 
-## Step C: Use Matplotlib to tune presentation titles, legends, and layouts
+# Step C: Use Matplotlib to tune presentation titles, legends, and layouts
 plt.title("Exam Score Distribution by Course (Sorted by Performance)", fontsize=14, pad=15, fontweight='bold')
 plt.xlabel("Course Category", fontsize=12)
 plt.ylabel("Student Exam Scores (0-100)", fontsize=12)
 
-## Position the legend cleanly within the plot area
+# Position the legend cleanly within the plot area
 plt.legend(loc="lower left", frameon=True, facecolor="white", edgecolor="none")
 
 plt.tight_layout()
@@ -617,9 +611,9 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
-## =====================================================================
-## 0. SETUP: Generating Representative Student Dataset
-## =====================================================================
+# =====================================================================
+# 0. SETUP: Generating Representative Student Dataset
+# =====================================================================
 np.random.seed(42)
 total_students = 60
 
@@ -629,19 +623,19 @@ df = pd.DataFrame({
     "course": np.random.choice(["Math", "Science", "History"], size=total_students)
 })
 
-## Calculate the precise global mean across all student entries
+# Calculate the precise global mean across all student entries
 overall_average = df["exam_score"].mean()
 
 
-## =====================================================================
-## 1. HYBRID PLATFORM EXECUTION (Seaborn Plot + Matplotlib Customization)
-## =====================================================================
-## Set global professional visual style
+# =====================================================================
+# 1. HYBRID PLATFORM EXECUTION (Seaborn Plot + Matplotlib Customization)
+# =====================================================================
+# Set global professional visual style
 sns.set_theme(style="whitegrid")
 plt.figure(figsize=(9, 6))
 
-## Step A: Generate the baseline box plot using Seaborn.
-## Automatically orders categories descending based on median values to assist the eye.
+# Step A: Generate the baseline box plot using Seaborn.
+# Automatically orders categories descending based on median values to assist the eye.
 sorted_categories = df.groupby("course")["exam_score"].median().sort_values(ascending=False).index
 
 sns.boxplot(
@@ -653,15 +647,15 @@ sns.boxplot(
     width=0.45
 )
 
-## Step B: Matplotlib Customizations (Overriding standard labels & adding reference layers)
-## 1. Add a highly custom title via Matplotlib
+# Step B: Matplotlib Customizations (Overriding standard labels & adding reference layers)
+# 1. Add a highly custom title via Matplotlib
 plt.title("Customized Performance Matrix: Course Distributions vs. Global Average", fontsize=13, pad=15, fontweight="bold")
 
-## 2. Rename the Y-axis label to "Final Score" as explicitly instructed in the lecture
+# 2. Rename the Y-axis label to "Final Score" as explicitly instructed in the lecture
 plt.ylabel("Final Score", fontsize=12)
 plt.xlabel("Course Category", fontsize=12)
 
-## 3. Add the structural horizontal reference line using Matplotlib's axhline
+# 3. Add the structural horizontal reference line using Matplotlib's axhline
 plt.axhline(
     y=overall_average,
     color="red",
@@ -670,7 +664,7 @@ plt.axhline(
     label=f"Overall Population Average ({overall_average:.1f})"
 )
 
-## 4. Enable the legend to clarify what the red dotted line indicates
+# 4. Enable the legend to clarify what the red dotted line indicates
 plt.legend(loc="lower left", frameon=True, facecolor="white", edgecolor="none")
 
 plt.tight_layout()
@@ -689,6 +683,3 @@ This architectural matrix summarizes the core differences outlined at the conclu
 |**Data Input Structure**|Primarily native arrays, Python lists, or separated Pandas Series elements.|Deeply optimized for **Pandas DataFrames** directly via structural key mapping.|
 |**Aesthetic Philosophy**|Basic, functional, and minimal out of the box. Requires manual formatting to look professional.|**Naturally elegant defaults.** Includes anti-aliasing, soft edge boundaries, and balanced palettes.|
 |**Statistical Computations**|**Strictly manual.** Data transformations (`.mean()`, `.groupby()`) must be completed before plotting.|**Fully automated and built-in.** Calculates centers, confidence metrics, and error spreads on the fly.|
-
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
