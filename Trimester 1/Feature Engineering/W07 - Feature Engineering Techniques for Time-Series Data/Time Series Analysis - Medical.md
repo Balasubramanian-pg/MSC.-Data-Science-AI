@@ -1,9 +1,3 @@
----
-title: W07 - Feature Engineering Techniques for Time-Series Data
-module: Statistical Modelling And Inferencing
-week: W07 - Feature Engineering Techniques for Time-Series Data
----
-
 Feature engineering in healthcare—specifically for cardiovascular signals like ECGs—requires moving beyond simple averages to capturing **variability** and **temporal context**. The RR interval (the time between R-peaks) is the fundamental unit of analysis for heart health.
 
 ### 1. The Core Metric: RR Intervals & HRV
@@ -77,7 +71,7 @@ def compute_rmssd(rr_intervals, window=7):
 - **Data Quality:** ECG signals are highly susceptible to "motion artifacts" (noise). Always include steps for signal cleaning or anomaly detection before computing features, as a single bad reading can skew the RMSSD/SDNN results.
     
 
-**[Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Overview.md#summary)) for Practical Application:**
+**Summary for Practical Application:**
 
 1. **Extract:** RR intervals from raw ECG signals.
     
@@ -89,5 +83,3 @@ def compute_rmssd(rr_intervals, window=7):
     
 
 **Would you like me to show you how to structure an entire pipeline that ingests raw ECG records and outputs a clean, model-ready feature matrix?**
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
