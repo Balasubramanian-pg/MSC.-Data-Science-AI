@@ -1,11 +1,5 @@
----
-title: W11 - Module 4d. Tableau - Module 4d. Tableau - Module 4d. Tableau
-module: Statistical Modelling And Inferencing
-week: W11 - Module 4d. Tableau - Module 4d. Tableau - Module 4d. Tableau
----
 
-
-## Page 1
+# Page 1
 
  
  
@@ -59,7 +53,7 @@ So you have author ID, book ID, and quickly if you are coming to sales, you have
 order ID and item ID, series. Then there are different book IDs and ratings of the 
 
 
-## Page 2
+# Page 2
 
  
  
@@ -111,7 +105,7 @@ is the author ID. There might be multiple author fields, multiple key identifier
   
 
 
-## Page 3
+# Page 3
 
  
  
@@ -165,7 +159,7 @@ instead, I want it to be measured to be distinct count. How many unique authors 
 there? So of course, the unique authors is also 41. 
 
 
-## Page 4
+# Page 4
 
  
  
@@ -219,7 +213,7 @@ three sheets here.
   
 
 
-## Page 5
+# Page 5
 
  
  
@@ -273,7 +267,7 @@ plus the common elements. Then you have the right joint, which preserves the
 common elements plus the secondary set. Then you have the full outer joint, which is 
 
 
-## Page 6
+# Page 6
 
  
  
@@ -326,7 +320,7 @@ the data only for them.
   
 
 
-## Page 7
+# Page 7
 
  
  
@@ -379,7 +373,7 @@ they will modify the data once for all.
   
 
 
-## Page 8
+# Page 8
 
  
  
@@ -407,6 +401,3 @@ work with the data. Now we will now look at another.
  
 ------------------------------------------------------End----------------------------------------------------- 
  
-
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
