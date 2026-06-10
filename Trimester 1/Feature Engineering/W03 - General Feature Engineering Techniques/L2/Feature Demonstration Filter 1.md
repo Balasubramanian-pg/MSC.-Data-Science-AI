@@ -1,12 +1,6 @@
----
-title: W03 - General Feature Engineering Techniques
-module: Statistical Modelling And Inferencing
-week: W03 - General Feature Engineering Techniques
----
-
 ### Filter Methods: Pearson’s Correlation for Feature Selection
 
-#### [1. Clear Overview](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01 - Overview of Feature Engineering/3.%20Working%20With%20Sample%20Dataset%20-%20I.md#1-clear-overview)
+#### 1. Clear Overview
 
 Filter methods represent a category of feature selection techniques that evaluate the relationship between features and the target variable (or between features themselves) using statistical measures, independent of any specific machine learning model. **Pearson's Correlation** is the primary filter method for assessing the linear relationship between continuous variables.
 
@@ -54,7 +48,7 @@ The goal is to eliminate multicollinearity.
 - **Interpretation:** Dropping one of these features reduces model complexity and prevents instability in linear models, where the algorithm might struggle to assign weight to two identical signals.
     
 
-#### 4. Implementation (Heatmap [Visualization](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W04 - Dimensionality Reduction Techniques/Readme.md#visualization))
+#### 4. Implementation (Heatmap Visualization)
 
 Using `pandas` and `seaborn` makes it straightforward to inspect the correlation matrix as a heatmap.
 
@@ -65,10 +59,10 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-## Compute correlation matrix for numeric features
+# Compute correlation matrix for numeric features
 corr_matrix = df[['senior_citizen', 'tenure', 'monthly_charges', 'total_charges', 'avg_charges_per_service']].corr()
 
-## Visualize as a heatmap
+# Visualize as a heatmap
 plt.figure(figsize=(10, 8))
 sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt=".2f")
 plt.title("Pearson Correlation Heatmap")
@@ -86,10 +80,8 @@ While fast and interpretable, Pearson's correlation has significant blind spots:
 - **Independent Evaluation:** It assesses each feature in isolation, failing to capture complex interactions where a feature is only useful when combined with another.
     
 
-#### [6. Application Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W04 - Dimensionality Reduction Techniques/t-SNE.md#6-application-[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Module%20Summary.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Overview.md#summary)))
+#### 6. Application Summary
 
 Pearson’s correlation is best used as a **first-pass diagnostic tool**. It is ideal for quickly pruning obviously irrelevant variables or identifying highly redundant pairs of features before moving on to more complex wrapper or embedded selection methods.
 
 Would you like to move on to the next topic in the feature selection series, such as **Wrapper** or **Embedded** methods?
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
