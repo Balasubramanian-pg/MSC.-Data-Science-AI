@@ -19,3 +19,5 @@ By the end of this module, you will be able to:
 1. Define proximity analysis and distinguish between similarity and dissimilarity measures, including advanced techniques such as cosine and Jaccard similarity.
 2. Compute and interpret proximity measures for different attribute types, while applying practical tips for standardisation and handling missing values.
 3. Select the most appropriate proximity measure for a given dataset and explain its role in clustering, classification, and recommendation systems.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
