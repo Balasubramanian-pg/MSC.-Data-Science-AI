@@ -1,3 +1,9 @@
+---
+title: W08 - Data Explainability
+module: Statistical Modelling And Inferencing
+week: W08 - Data Explainability
+---
+
 # Week 8: Data Explainability
 
 ---
