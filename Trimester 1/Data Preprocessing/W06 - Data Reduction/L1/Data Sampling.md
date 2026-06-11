@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W06 - Data Reduction
 ---
 
-# Index
+## Index
 
 1. Introduction to Data Sampling
     
@@ -53,7 +53,7 @@ week: W06 - Data Reduction
 17. Key Takeaways
     
 
-# Introduction to Data Sampling
+## Introduction to Data Sampling
 
 Data sampling is a major data reduction technique used to decrease dataset volume while preserving the essential statistical properties of the original data.
 
@@ -74,7 +74,7 @@ This reduces:
 
 while maintaining useful analytical behavior.
 
-# Why Sampling is Necessary
+## Why Sampling is Necessary
 
 The lecture emphasizes that real-world datasets are often extremely large.
 
@@ -97,7 +97,7 @@ $$
 
 If the sample preserves the original statistical structure, machine learning models trained on the sample may behave similarly to models trained on the complete data.
 
-# Representative Samples
+## Representative Samples
 
 A sample is useful only if it is representative.
 
@@ -128,7 +128,7 @@ flowchart LR
 
 If sampling destroys the original structure, the sample becomes analytically unreliable.
 
-# Sampling in Data Reduction
+## Sampling in Data Reduction
 
 The lecture positions sampling as another major volume reduction technique alongside histograms.
 
@@ -153,7 +153,7 @@ flowchart TD
 
 The goal is reducing size while preserving information quality.
 
-# Practical Considerations in Sampling
+## Practical Considerations in Sampling
 
 The lecture highlights multiple practical concerns.
 
@@ -185,7 +185,7 @@ $$
 Sample\ Size \Rightarrow Tradeoff\ Between\ Accuracy\ and\ Efficiency  
 $$
 
-# Types of Sampling Methods
+## Types of Sampling Methods
 
 The lecture divides sampling into two broad categories.
 
@@ -206,7 +206,7 @@ flowchart TD
     B --> E[Without Replacement]
 ```
 
-# Simple Random Sampling
+## Simple Random Sampling
 
 Simple random sampling assigns equal probability to every tuple in the dataset.
 
@@ -230,7 +230,7 @@ The lecture then separates this into:
 - sampling with replacement
     
 
-# Simple Random Sampling Without Replacement (SRSWOR)
+## Simple Random Sampling Without Replacement (SRSWOR)
 
 ## 8.1 Core Idea
 
@@ -344,7 +344,7 @@ flowchart LR
 
 This method naturally produces distinct sampled tuples.
 
-# Simple Random Sampling With Replacement (SRSWR)
+## Simple Random Sampling With Replacement (SRSWR)
 
 ## 9.1 Core Idea
 
@@ -448,7 +448,7 @@ flowchart LR
 
 This method behaves similarly to repeated independent probabilistic trials.
 
-# Comparing With vs Without Replacement
+## Comparing With vs Without Replacement
 
 |Property|Without Replacement|With Replacement|
 |---|---|---|
@@ -459,7 +459,7 @@ This method behaves similarly to repeated independent probabilistic trials.
 
 The lecture repeatedly emphasizes this distinction.
 
-# Stratified Sampling
+## Stratified Sampling
 
 ## 11.1 Core Idea
 
@@ -551,7 +551,7 @@ The proportional structure remains approximately preserved.
 
 This reduces sampling bias.
 
-# Sampling Bias and Fair Representation
+## Sampling Bias and Fair Representation
 
 The lecture warns that naive random sampling may create bias.
 
@@ -575,7 +575,7 @@ flowchart LR
     --> D[Balanced Representation]
 ```
 
-# Sampling and Pattern Preservation
+## Sampling and Pattern Preservation
 
 An extremely important section of the lecture discusses pattern preservation.
 
@@ -615,7 +615,7 @@ flowchart TD
     D --> E[Pattern Lost]
 ```
 
-# Risks of Over-Reduction
+## Risks of Over-Reduction
 
 The lecture strongly emphasizes:
 
@@ -638,7 +638,7 @@ $$
 Too\ Much\ Reduction \Rightarrow Information\ Loss  
 $$
 
-# Computational Benefits of Sampling
+## Computational Benefits of Sampling
 
 Sampling dramatically improves computational efficiency.
 
@@ -653,7 +653,7 @@ Benefits include:
 
 Sampling is therefore widely used during exploratory analysis and large-scale machine learning.
 
-# Sampling in Data Mining and Machine Learning
+## Sampling in Data Mining and Machine Learning
 
 Sampling becomes extremely important in:
 
@@ -672,7 +672,7 @@ Large systems often cannot process entire datasets repeatedly.
 
 Representative sampling becomes the practical solution.
 
-# Key Takeaways
+## Key Takeaways
 
 Sampling is a major data reduction technique used to reduce computational complexity while preserving the important statistical properties of the original dataset.
 
