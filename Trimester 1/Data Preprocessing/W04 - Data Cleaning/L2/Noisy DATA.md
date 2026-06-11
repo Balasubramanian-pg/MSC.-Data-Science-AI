@@ -340,3 +340,5 @@ Two major smoothing techniques are introduced:
 Binning reduces local fluctuations by averaging or boundary replacement, while regression smooths data by modeling the underlying relationship between variables.
 
 The broader engineering lesson is that preprocessing is fundamentally about reducing distortion before machine learning systems begin learning patterns.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
