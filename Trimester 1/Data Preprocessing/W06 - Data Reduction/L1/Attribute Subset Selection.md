@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W06 - Data Reduction
 ---
 
-# Index
+## Index
 
 1. Introduction to Attribute Subselection
     
@@ -53,7 +53,7 @@ week: W06 - Data Reduction
 20. Key Takeaways
     
 
-# Introduction to Attribute Subselection
+## Introduction to Attribute Subselection
 
 Attribute subselection, also called feature selection, is one of the most important dimensionality reduction techniques in data preprocessing.
 
@@ -74,7 +74,7 @@ This improves:
 - generalization capability
     
 
-# Data Reduction and Dimensionality Reduction
+## Data Reduction and Dimensionality Reduction
 
 The lecture separates data reduction into two major forms.
 
@@ -114,7 +114,7 @@ flowchart TD
     C --> E[Feature Selection]
 ```
 
-# Understanding Attribute Subselection
+## Understanding Attribute Subselection
 
 Attribute subselection is defined as:
 
@@ -137,7 +137,7 @@ The objective is to eliminate:
 
 while preserving predictive power.
 
-# Relevant vs Irrelevant Features
+## Relevant vs Irrelevant Features
 
 The lecture defines irrelevant attributes as features that do not contribute meaningfully to prediction.
 
@@ -159,7 +159,7 @@ Then:
 
 The lecture emphasizes that domain experts can often identify obviously irrelevant attributes using common sense.
 
-# Redundant Features
+## Redundant Features
 
 Redundant features contain overlapping information.
 
@@ -194,7 +194,7 @@ flowchart LR
     B --> C[Redundant Information]
 ```
 
-# Why Feature Selection Matters
+## Why Feature Selection Matters
 
 The lecture identifies several major benefits.
 
@@ -208,7 +208,7 @@ The lecture identifies several major benefits.
 
 Feature selection improves both efficiency and prediction quality.
 
-# Feature Selection as a Search Problem
+## Feature Selection as a Search Problem
 
 The lecture explains feature selection as a combinatorial search problem.
 
@@ -255,7 +255,7 @@ $$
 2^3 -1 = 7  
 $$
 
-# Subset Combination Explosion
+## Subset Combination Explosion
 
 The lecture highlights exponential growth.
 
@@ -286,7 +286,7 @@ flowchart TD
 
 Exhaustively evaluating every subset becomes computationally impossible.
 
-# Computational Complexity of Exhaustive Search
+## Computational Complexity of Exhaustive Search
 
 For each subset:
 
@@ -307,7 +307,7 @@ models.
 
 This becomes infeasible for high-dimensional datasets.
 
-# Greedy Strategies in Feature Selection
+## Greedy Strategies in Feature Selection
 
 To avoid exhaustive search, the lecture introduces greedy strategies.
 
@@ -332,7 +332,7 @@ Major methods discussed:
 |Backward Elimination|
 |Decision Tree Induction|
 
-# Forward Selection
+## Forward Selection
 
 ## 11.1 Core Idea
 
@@ -443,7 +443,7 @@ $$
 Error \downarrow \Rightarrow Better\ Feature  
 $$
 
-# Backward Elimination
+## Backward Elimination
 
 ## 12.1 Core Idea
 
@@ -519,7 +519,7 @@ Repeat for remaining features.
 
 This iterative reduction continues until performance begins degrading.
 
-# Forward Selection vs Backward Elimination
+## Forward Selection vs Backward Elimination
 
 |Property|Forward Selection|Backward Elimination|
 |---|---|---|
@@ -530,7 +530,7 @@ This iterative reduction continues until performance begins degrading.
 
 Both methods are greedy heuristics rather than exhaustive optimal search.
 
-# Decision Tree Induction for Feature Selection
+## Decision Tree Induction for Feature Selection
 
 The lecture introduces decision tree induction as another feature selection approach.
 
@@ -548,7 +548,7 @@ flowchart TD
 
 The decision tree automatically prioritizes informative features.
 
-# Information Gain Concept
+## Information Gain Concept
 
 The lecture briefly references:
 
@@ -564,7 +564,7 @@ $$
 Higher\ Gain \Rightarrow More\ Informative\ Feature  
 $$
 
-# Overfitting and Noise Reduction
+## Overfitting and Noise Reduction
 
 Feature selection also reduces:
 
@@ -590,7 +590,7 @@ flowchart LR
     --> D[Better Generalization]
 ```
 
-# Role of Domain Experts
+## Role of Domain Experts
 
 The lecture repeatedly emphasizes domain expertise.
 
@@ -605,7 +605,7 @@ Example:
 
 Human expertise therefore complements algorithmic selection.
 
-# Computational Efficiency Benefits
+## Computational Efficiency Benefits
 
 Reducing dimensionality improves computational efficiency because:
 
@@ -626,7 +626,7 @@ Benefits include:
 
 This becomes extremely important in high-dimensional systems.
 
-# Practical Challenges in Feature Selection
+## Practical Challenges in Feature Selection
 
 The lecture implicitly highlights several challenges.
 
@@ -639,7 +639,7 @@ The lecture implicitly highlights several challenges.
 
 Greedy methods reduce complexity but do not guarantee globally optimal subsets.
 
-# Key Takeaways
+## Key Takeaways
 
 Attribute subselection, also called feature selection, reduces dimensionality by identifying the most informative attributes inside a dataset.
 
