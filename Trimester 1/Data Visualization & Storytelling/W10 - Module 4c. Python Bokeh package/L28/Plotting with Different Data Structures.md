@@ -1,3 +1,9 @@
+---
+title: W10 - Module 4c. Python Bokeh package
+module: Statistical Modelling And Inferencing
+week: W10 - Module 4c. Python Bokeh package
+---
+
 # Categorical Data and Bar Charts in Bokeh
 
 This final section introduces one of the most important visualization concepts:
