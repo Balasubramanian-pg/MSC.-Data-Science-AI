@@ -159,3 +159,5 @@ Understanding objects vs. attributes dictates how you store data in production s
 ### Advanced Learning Roadmap
 *   **Data Types and Measurement Scales:** Explore Nominal, Ordinal, Interval, and Ratio attribute types, as they strictly govern which mathematical operations are permissible on a given column.
 *   **Tensors:** Understand how a 2D tabular dataset scales into higher dimensions (e.g., a color image is a 3D tensor of height $\times$ width $\times$ RGB channels).
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
