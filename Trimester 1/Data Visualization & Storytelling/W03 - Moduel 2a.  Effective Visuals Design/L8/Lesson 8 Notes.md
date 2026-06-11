@@ -5,7 +5,7 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ---
 
 
-# Page 1
+## Page 1
 
 ### Effective Visual Design: The Master Summary
 
