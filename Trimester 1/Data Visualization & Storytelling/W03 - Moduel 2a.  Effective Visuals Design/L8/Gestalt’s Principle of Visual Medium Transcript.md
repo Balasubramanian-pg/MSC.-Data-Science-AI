@@ -1,3 +1,9 @@
+---
+title: W03 - Moduel 2a.  Effective Visuals Design
+module: Statistical Modelling And Inferencing
+week: W03 - Moduel 2a.  Effective Visuals Design
+---
+
 ### Gestalt Principle: The Power of Visual Ordering
 
 The human brain is an efficiency machine. When it encounters information, it doesn't just "see"—it actively searches for patterns, logic, and structure. The **Gestalt Principle of Continuity** and the concept of **Visual Ordering** are your best tools for satisfying this cognitive search.
