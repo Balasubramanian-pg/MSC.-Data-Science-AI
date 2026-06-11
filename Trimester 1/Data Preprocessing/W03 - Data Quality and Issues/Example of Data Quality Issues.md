@@ -1,3 +1,9 @@
+---
+title: W03 - Data Quality and Issues
+module: Statistical Modelling And Inferencing
+week: W03 - Data Quality and Issues
+---
+
 # Examples of Data Quality Issues
 
 Real-world data is rarely clean. Most datasets contain missing fields, contradictory formats, measurement errors, duplicate records, or values that simply do not make sense. In machine learning and data mining, poor-quality data directly reduces model reliability because algorithms fundamentally operate on mathematical relationships between variables. If the underlying data is flawed, the resulting predictions, clusters, classifications, or insights become unreliable.
