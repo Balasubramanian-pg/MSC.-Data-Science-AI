@@ -6674,3 +6674,5 @@ flowchart TD
 ```
 
 This hierarchy explains almost every customization feature in Bokeh.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
