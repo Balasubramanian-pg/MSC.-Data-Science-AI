@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W03 - Moduel 2a.  Effective Visuals Design
 ---
 
-# Strategic Use of Color in Visualizations
+## Strategic Use of Color in Visualizations
 
 Color is one of the most powerful tools in data visualization.
 
@@ -37,7 +37,7 @@ Good visualizations use color intentionally.
 
 Bad visualizations use color excessively.
 
-# Why Color Matters So Much
+## Why Color Matters So Much
 
 Human vision is highly sensitive to color differences.
 
@@ -61,7 +61,7 @@ flowchart LR
 
 This is why highlighted elements immediately stand out in dashboards.
 
-# Color Is a Pre-Attentive Attribute
+## Color Is a Pre-Attentive Attribute
 
 Color is processed before conscious thinking.
 
@@ -85,7 +85,7 @@ Example:
 
 These are instantly perceived.
 
-# The Core Purpose of Color in Visualization
+## The Core Purpose of Color in Visualization
 
 Color should primarily serve one of these purposes:
 
@@ -99,7 +99,7 @@ Color should primarily serve one of these purposes:
 |Status|Indicate conditions|
 |Comparison|Differentiate variables|
 
-# Color Is NOT Primarily for Decoration
+## Color Is NOT Primarily for Decoration
 
 This is one of the biggest misconceptions.
 
@@ -122,13 +122,13 @@ Visual noise
 
 instead of clarity.
 
-# Visualization Design Principle
+## Visualization Design Principle
 
 ```text
 Every color choice should have communicative intent.
 ```
 
-# The Psychology of Color
+## The Psychology of Color
 
 Humans associate colors with meanings through:
 
@@ -143,7 +143,7 @@ Humans associate colors with meanings through:
 
 These associations influence interpretation.
 
-# Common Color Associations
+## Common Color Associations
 
 |Color|Typical Meaning|
 |---|---|
@@ -156,7 +156,7 @@ These associations influence interpretation.
 
 These are not universal, but they are deeply ingrained in many contexts.
 
-# Why This Matters
+## Why This Matters
 
 If profit is shown in red:
 
@@ -164,7 +164,7 @@ users may subconsciously interpret it negatively.
 
 Even if the data is positive.
 
-# Cognitive Impact of Color
+## Cognitive Impact of Color
 
 Color affects:
 
@@ -181,7 +181,7 @@ Color affects:
 
 This means color directly affects decision-making quality.
 
-# Strategic Color Usage Framework
+## Strategic Color Usage Framework
 
 A useful mental model:
 
@@ -203,7 +203,7 @@ flowchart TD
     H --> L[Semantic Colors]
 ```
 
-# 1. Using Color for Attention
+## 1. Using Color for Attention
 
 One of the most important uses.
 
@@ -217,7 +217,7 @@ Keep most elements neutral.
 
 Highlight only critical elements.
 
-# Example
+## Example
 
 ## Bad
 
@@ -241,7 +241,7 @@ No visual hierarchy exists.
 
 Immediate focus emerges.
 
-# Attention Design Pattern
+## Attention Design Pattern
 
 ```mermaid
 flowchart LR
@@ -249,7 +249,7 @@ flowchart LR
     B --> C[Instant Detection]
 ```
 
-# Important Principle
+## Important Principle
 
 ```text
 Contrast creates attention.
@@ -257,7 +257,7 @@ Contrast creates attention.
 
 Not brightness alone.
 
-# 2. Using Color for Categorization
+## 2. Using Color for Categorization
 
 Color can separate groups automatically.
 
@@ -270,7 +270,7 @@ This leverages:
 - iconic memory
     
 
-# Example
+## Example
 
 Scatter plot:
 
@@ -283,7 +283,7 @@ Scatter plot:
 
 The brain instantly forms categories.
 
-# Categorization Workflow
+## Categorization Workflow
 
 ```mermaid
 flowchart TD
@@ -292,7 +292,7 @@ flowchart TD
     C --> D[Faster Interpretation]
 ```
 
-# Important Constraint
+## Important Constraint
 
 Humans can only reliably distinguish limited categories simultaneously.
 
@@ -306,7 +306,7 @@ Recommended:
 
 Too many colors create confusion.
 
-# 3. Using Color for Hierarchy
+## 3. Using Color for Hierarchy
 
 Color intensity can establish importance.
 
@@ -321,7 +321,7 @@ Color intensity can establish importance.
 
 The eye naturally prioritizes stronger contrast.
 
-# Hierarchy Design
+## Hierarchy Design
 
 ```mermaid
 flowchart LR
@@ -329,7 +329,7 @@ flowchart LR
     B --> C[Attention Priority]
 ```
 
-# 4. Using Color for Magnitude
+## 4. Using Color for Magnitude
 
 Color gradients can represent numerical intensity.
 
@@ -342,7 +342,7 @@ Examples:
 - density maps
     
 
-# Sequential Color Scale
+## Sequential Color Scale
 
 ```text
 Light → Medium → Dark
@@ -350,7 +350,7 @@ Light → Medium → Dark
 
 indicates increasing magnitude.
 
-# Example
+## Example
 
 |Color Intensity|Meaning|
 |---|---|
@@ -358,7 +358,7 @@ indicates increasing magnitude.
 |Medium Blue|Medium sales|
 |Dark Blue|High sales|
 
-# Decision Rule for Quantitative Data
+## Decision Rule for Quantitative Data
 
 ```mermaid
 flowchart TD
@@ -371,9 +371,9 @@ flowchart TD
     D --> F[Two Opposing Colors]
 ```
 
-# Sequential vs Diverging Color Scales
+## Sequential vs Diverging Color Scales
 
-# Sequential Scale
+## Sequential Scale
 
 Used when values increase in one direction.
 
@@ -386,7 +386,7 @@ Example:
 - temperature
     
 
-# Diverging Scale
+## Diverging Scale
 
 Used when values diverge around a midpoint.
 
@@ -405,11 +405,11 @@ Typical structure:
 Red ← Neutral → Green
 ```
 
-# 5. Using Color for Status Communication
+## 5. Using Color for Status Communication
 
 Extremely common in dashboards.
 
-# Examples
+## Examples
 
 |Color|Status|
 |---|---|
@@ -419,7 +419,7 @@ Extremely common in dashboards.
 
 This works because long-term memory already associates these meanings.
 
-# Status Indicator Decision Tree
+## Status Indicator Decision Tree
 
 ```mermaid
 flowchart TD
@@ -432,13 +432,13 @@ flowchart TD
     D -->|No| F[Red]
 ```
 
-# The Danger of Overusing Color
+## The Danger of Overusing Color
 
 The transcript warns against overusing pre-attentive attributes.
 
 Color is especially vulnerable to this problem.
 
-# What Happens When Everything Is Colorful
+## What Happens When Everything Is Colorful
 
 ```text
 No hierarchy
@@ -446,7 +446,7 @@ No focus
 No clarity
 ```
 
-# Common Dashboard Mistakes
+## Common Dashboard Mistakes
 
 |Mistake|Result|
 |---|---|
@@ -456,7 +456,7 @@ No clarity
 |Inconsistent encoding|Interpretation errors|
 |Neon palettes|Reduced readability|
 
-# Color Saturation Problem
+## Color Saturation Problem
 
 Highly saturated dashboards feel visually exhausting.
 
@@ -471,9 +471,9 @@ Good dashboards often use:
 
 This creates stronger emphasis when highlights appear.
 
-# Practical Color Strategy
+## Practical Color Strategy
 
-# Recommended Dashboard Palette Structure
+## Recommended Dashboard Palette Structure
 
 |Role|Color Strategy|
 |---|---|
@@ -483,7 +483,7 @@ This creates stronger emphasis when highlights appear.
 |Alerts|Semantic colors|
 |Highlights|Rare, intentional|
 
-# Example Palette Strategy
+## Example Palette Strategy
 
 ```text
 80% Neutral
@@ -493,7 +493,7 @@ This creates stronger emphasis when highlights appear.
 
 This creates strong visual hierarchy.
 
-# Color and Accessibility
+## Color and Accessibility
 
 One major issue:
 
@@ -501,7 +501,7 @@ Not all users perceive color equally.
 
 Colorblindness affects many users.
 
-# Dangerous Practice
+## Dangerous Practice
 
 Using only color to communicate meaning.
 
@@ -516,7 +516,7 @@ without labels or shapes.
 
 Some users cannot distinguish them properly.
 
-# Better Approach
+## Better Approach
 
 Combine:
 
@@ -531,7 +531,7 @@ Combine:
 - patterns
     
 
-# Accessibility Decision Tree
+## Accessibility Decision Tree
 
 ```mermaid
 flowchart TD
@@ -541,7 +541,7 @@ flowchart TD
     B -->|No| D[Accessible Enough]
 ```
 
-# Color and Cognitive Load
+## Color and Cognitive Load
 
 Too many colors increase:
 
@@ -554,7 +554,7 @@ Too many colors increase:
 
 This is why elite dashboards often appear visually restrained.
 
-# Why Minimalism Works
+## Why Minimalism Works
 
 Minimal dashboards:
 
@@ -567,13 +567,13 @@ Minimal dashboards:
 - strengthen emphasis
     
 
-# Important Principle
+## Important Principle
 
 ```text
 Color gains power through restraint.
 ```
 
-# Color in Storytelling
+## Color in Storytelling
 
 Good storytelling uses color progression intentionally.
 
@@ -588,7 +588,7 @@ Example:
 
 Color guides narrative flow.
 
-# Narrative Flow with Color
+## Narrative Flow with Color
 
 ```mermaid
 flowchart LR
@@ -597,9 +597,9 @@ flowchart LR
     C --> D[Action]
 ```
 
-# Real-World Dashboard Example
+## Real-World Dashboard Example
 
-# Poor Dashboard
+## Poor Dashboard
 
 - 12 bright colors
     
@@ -618,7 +618,7 @@ Result:
 High cognitive friction
 ```
 
-# Good Dashboard
+## Good Dashboard
 
 - dark neutral background
     
@@ -637,7 +637,7 @@ Result:
 Fast comprehension
 ```
 
-# Advanced Insight: Color Creates Visual Weight
+## Advanced Insight: Color Creates Visual Weight
 
 Objects with stronger color appear:
 
@@ -652,11 +652,11 @@ Objects with stronger color appear:
 
 This affects perception subconsciously.
 
-# Example
+## Example
 
 A bright cyan KPI card among gray cards feels more important even before reading the value.
 
-# Color Consistency Principle
+## Color Consistency Principle
 
 Never change meaning of colors across charts.
 
@@ -674,9 +674,9 @@ Good:
 - consistent semantic encoding everywhere
     
 
-# Final Design Framework
+## Final Design Framework
 
-# Ask These Questions Before Using Color
+## Ask These Questions Before Using Color
 
 ```mermaid
 flowchart TD
@@ -697,7 +697,7 @@ flowchart TD
     H --> L[Semantic Colors]
 ```
 
-# Final Takeaways
+## Final Takeaways
 
 ## Color should:
 
@@ -723,7 +723,7 @@ flowchart TD
 - create visual noise
     
 
-# Most Important Principle
+## Most Important Principle
 
 ```text
 Strategic color usage is controlled attention engineering.
