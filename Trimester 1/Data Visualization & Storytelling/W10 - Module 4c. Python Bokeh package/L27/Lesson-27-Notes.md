@@ -603,3 +603,5 @@ Create interactive browser application
 That is the real conceptual shift.
 
 Source:
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
