@@ -17,7 +17,7 @@ It is fundamentally about:
 4. Visualization
     
 
-# Big Picture Workflow
+## Big Picture Workflow
 
 ```mermaid
 flowchart LR
@@ -45,7 +45,7 @@ Especially in:
 - business reporting systems
     
 
-# Step 1: Import Required Libraries
+## Step 1: Import Required Libraries
 
 ```python
 import pandas as pd
@@ -88,7 +88,7 @@ This matters because Python is modular.
 
 Nothing exists automatically.
 
-# Step 2: Define the URL
+## Step 2: Define the URL
 
 ```python
 url = "https://example.com/seattle-weather.csv"
@@ -98,7 +98,7 @@ The instructor says:
 
 > “First you have to identify the URL.”
 
-# Important Concept
+## Important Concept
 
 The URL points directly to a CSV resource hosted online.
 
@@ -110,7 +110,7 @@ local_file.csv
 
 except now the file exists remotely.
 
-# Real-World Analogy
+## Real-World Analogy
 
 |Traditional|Modern|
 |---|---|
@@ -120,7 +120,7 @@ except now the file exists remotely.
 
 Modern analytics rarely works with static local files.
 
-# Step 3: Load Data Into Pandas
+## Step 3: Load Data Into Pandas
 
 ```python
 df_weather = pd.read_csv(
@@ -131,7 +131,7 @@ df_weather = pd.read_csv(
 
 This is the most important line.
 
-# Breakdown of `pd.read_csv()`
+## Breakdown of `pd.read_csv()`
 
 |Component|Meaning|
 |---|---|
@@ -140,7 +140,7 @@ This is the most important line.
 |`url`|source location|
 |`parse_dates=['date']`|convert date column into datetime|
 
-# Why Parse Dates?
+## Why Parse Dates?
 
 Without parsing:
 
@@ -171,7 +171,7 @@ That enables:
 - time-series plotting
     
 
-# Extremely Important Time-Series Principle
+## Extremely Important Time-Series Principle
 
 Dates are not strings.
 
@@ -190,7 +190,7 @@ This distinction becomes critical later in:
 - ML feature engineering
     
 
-# Step 4: Understand the DataFrame
+## Step 4: Understand the DataFrame
 
 The transcript mentions the columns:
 
@@ -219,7 +219,7 @@ Example output:
 |---|---|---|---|---|---|
 |2012-01-01|0.0|12.8|5.0|4.7|drizzle|
 
-# Why DataFrames Matter
+## Why DataFrames Matter
 
 The instructor says:
 
@@ -244,7 +244,7 @@ DataFrames provide:
 
 They are the backbone of Python analytics.
 
-# Step 5: Set the Date as Index
+## Step 5: Set the Date as Index
 
 ```python
 df_weather.set_index('date', inplace=True)
@@ -252,7 +252,7 @@ df_weather.set_index('date', inplace=True)
 
 This is a major concept.
 
-# Why Set the Index?
+## Why Set the Index?
 
 Without indexing:
 
@@ -268,7 +268,7 @@ Index → 2012-01-01, 2012-01-02...
 
 Now the DataFrame becomes time-aware.
 
-# Why This Matters
+## Why This Matters
 
 The transcript explains:
 
@@ -289,7 +289,7 @@ If dates are unordered:
 - plots become misleading
     
 
-# Time-Series Mental Model
+## Time-Series Mental Model
 
 A normal DataFrame:
 
@@ -305,7 +305,7 @@ Rows depend on temporal sequence
 
 That changes everything.
 
-# Step 6: Plot Maximum Temperature
+## Step 6: Plot Maximum Temperature
 
 ```python
 df_weather['temp_max'].plot(
@@ -320,7 +320,7 @@ plt.title('Seattle Maximum Temperature')
 plt.show()
 ```
 
-# What Is Happening Here?
+## What Is Happening Here?
 
 ## Column Subsetting
 
@@ -336,7 +336,7 @@ The transcript calls this:
 
 This is foundational Pandas syntax.
 
-# Visualization Flow
+## Visualization Flow
 
 ```mermaid
 flowchart LR
@@ -345,7 +345,7 @@ flowchart LR
     C --> D[Plot Series]
 ```
 
-# Why the Plot Works Automatically
+## Why the Plot Works Automatically
 
 Because:
 
@@ -359,7 +359,7 @@ Pandas automatically uses the index as the x-axis.
 
 This is a major convenience feature.
 
-# Important Hidden Mechanism
+## Important Hidden Mechanism
 
 This:
 
@@ -378,7 +378,7 @@ plt.plot(
 
 Pandas is abstracting Matplotlib.
 
-# Real Engineering Significance
+## Real Engineering Significance
 
 This workflow is everywhere:
 
@@ -391,9 +391,9 @@ This workflow is everywhere:
 |DevOps|Server metrics|
 |ML|Feature timelines|
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
-# 1. Forgetting `parse_dates`
+## 1. Forgetting `parse_dates`
 
 Bad:
 
@@ -407,7 +407,7 @@ Result:
 date column becomes plain text
 ```
 
-# 2. Forgetting `set_index`
+## 2. Forgetting `set_index`
 
 Without index:
 
@@ -416,7 +416,7 @@ Without index:
 - time operations become harder
     
 
-# 3. Assuming CSV is Always Local
+## 3. Assuming CSV is Always Local
 
 Most modern systems use:
 
@@ -431,7 +431,7 @@ Most modern systems use:
 
 Learning URL-based ingestion is essential.
 
-# Computational Insight
+## Computational Insight
 
 Pandas does not load data lazily.
 
@@ -458,7 +458,7 @@ Alternatives for large-scale systems:
 |Polars|high-performance DataFrames|
 |Spark|cluster-scale analytics|
 
-# Advanced Version
+## Advanced Version
 
 You can directly parse and index in one pipeline:
 
@@ -475,7 +475,7 @@ df_weather = (
 Cleaner.  
 More production-grade.
 
-# Important Conceptual Shift
+## Important Conceptual Shift
 
 This transcript is quietly introducing one of the most important ideas in data science:
 
@@ -496,7 +496,7 @@ That transformation is the foundation of:
 - AI analytics systems
     
 
-# Key Takeaways
+## Key Takeaways
 
 ## Core Technical Concepts
 
