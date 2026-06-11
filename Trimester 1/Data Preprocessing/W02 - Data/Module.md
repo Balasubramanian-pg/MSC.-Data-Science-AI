@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W02 - Data
 ---
 
-# Week 2: Data
+## Week 2: Data
 
 ---
 
