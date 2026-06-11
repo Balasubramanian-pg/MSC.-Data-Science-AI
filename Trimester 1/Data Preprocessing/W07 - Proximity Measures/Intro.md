@@ -1,3 +1,9 @@
+---
+title: W07 - Proximity Measures
+module: Statistical Modelling And Inferencing
+week: W07 - Proximity Measures
+---
+
 # Week 7: Proximity Measures
 
 ---
