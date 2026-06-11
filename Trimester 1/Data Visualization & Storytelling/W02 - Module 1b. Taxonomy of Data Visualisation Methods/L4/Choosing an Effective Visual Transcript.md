@@ -99,3 +99,5 @@ These use two-dimensional space to display proportions.
 *   **Square Area Charts**
     *   **Purpose:** Displays composition where a grid of equal squares represents units of data.
     *   **Best Use:** Comparing composition changes side-by-side across different time periods.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
