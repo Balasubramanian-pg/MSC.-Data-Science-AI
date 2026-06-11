@@ -1,3 +1,9 @@
+---
+title: W03 - Data Quality and Issues
+module: Statistical Modelling And Inferencing
+week: W03 - Data Quality and Issues
+---
+
 # Index
 
 1. Introduction to Noise and Outliers
