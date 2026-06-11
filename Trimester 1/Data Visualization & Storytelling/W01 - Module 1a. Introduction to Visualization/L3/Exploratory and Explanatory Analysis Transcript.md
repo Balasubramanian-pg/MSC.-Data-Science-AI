@@ -758,3 +758,5 @@ Relationships alone do not prove causality.
 19. Data visualization is both analytical and communicative.
     
 20. The ultimate goal of analysis is insight extraction and decision support.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
