@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W02 - Data
 ---
 
-# Data Representation: Topologies, Matrices, and Graph Structures
+## Data Representation: Topologies, Matrices, and Graph Structures
 
 > [!NOTE]
 > In computational systems, the physical reality of an event (a user clicking a webpage, reading a news article, or buying groceries) cannot be processed natively. Data representation is the architectural step of mapping high-entropy physical events into mathematically tractable topologies. The choice of topology strictly governs which machine learning algorithms and statistical operations can be applied.
@@ -66,7 +66,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-# 1. Raw Data: Unstructured News Documents
+## 1. Raw Data: Unstructured News Documents
 news_corpus = [
     "The cricket team won the world cup match.",          # Sports
     "The football coach praised the team defense.",       # Sports
@@ -74,11 +74,11 @@ news_corpus = [
     "Inflation rates are affecting the global market."    # Finance
 ]
 
-# 2. Convert to Term-Document Matrix (Bag of Words)
+## 2. Convert to Term-Document Matrix (Bag of Words)
 vectorizer = CountVectorizer(stop_words='english')
 term_doc_matrix = vectorizer.fit_transform(news_corpus)
 
-# 3. Create a structured Pandas DataFrame
+## 3. Create a structured Pandas DataFrame
 df_term_doc = pd.DataFrame(
     term_doc_matrix.toarray(), 
     columns=vectorizer.get_feature_names_out(),
@@ -89,9 +89,9 @@ print("Term-Document Matrix (Raw Frequencies):")
 print(df_term_doc)
 print("\n")
 
-# 4. Measuring Similarity (Applying Math to the Matrix)
-# How similar is Doc1 to Doc2 vs Doc3?
-# We use Cosine Similarity for sparse text vectors
+## 4. Measuring Similarity (Applying Math to the Matrix)
+## How similar is Doc1 to Doc2 vs Doc3?
+## We use Cosine Similarity for sparse text vectors
 tfidf_vectorizer = TfidfVectorizer(stop_words='english')
 tfidf_matrix = tfidf_vectorizer.fit_transform(news_corpus)
 
@@ -103,9 +103,9 @@ print(pd.DataFrame(
     columns=['Doc1', 'Doc2', 'Doc3', 'Doc4']
 ).round(2))
 
-# Expected Output Interpretation:
-# Doc1 and Doc2 will have high similarity (~0.14+).
-# Doc1 and Doc3 will have 0.0 similarity (orthogonal vectors).
+## Expected Output Interpretation:
+## Doc1 and Doc2 will have high similarity (~0.14+).
+## Doc1 and Doc3 will have 0.0 similarity (orthogonal vectors).
 ```
 
 ### 2.3 Transactional Data
@@ -161,10 +161,10 @@ flowchart TD
 import networkx as nx
 import matplotlib.pyplot as plt
 
-# 1. Initialize a Directed Graph
+## 1. Initialize a Directed Graph
 G = nx.DiGraph()
 
-# 2. Add edges (hyperlinks) between webpages
+## 2. Add edges (hyperlinks) between webpages
 edges = [
     ('Page_A', 'Page_B'),
     ('Page_A', 'Page_C'),
@@ -174,14 +174,14 @@ edges = [
 ]
 G.add_edges_from(edges)
 
-# 3. Compute the PageRank mathematically (solving the eigenvector problem)
+## 3. Compute the PageRank mathematically (solving the eigenvector problem)
 pagerank_scores = nx.pagerank(G, alpha=0.85)
 
 print("PageRank Scores (Importance of each node):")
 for page, score in sorted(pagerank_scores.items(), key=lambda x: x[1], reverse=True):
     print(f"{page}: {score:.4f}")
 
-# 4. Optional: View the Adjacency Matrix
+## 4. Optional: View the Adjacency Matrix
 adj_matrix = nx.to_numpy_array(G)
 print("\nAdjacency Matrix (Rows=From, Cols=To):")
 print(adj_matrix)
