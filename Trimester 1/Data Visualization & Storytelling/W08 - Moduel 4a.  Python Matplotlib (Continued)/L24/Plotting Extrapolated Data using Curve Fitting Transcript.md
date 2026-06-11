@@ -30,7 +30,7 @@ The entire lecture revolves around:
 Observed Data → Fit Function → Predict Future
 ```
 
-# Core Concept
+## Core Concept
 
 You have historical data.
 
@@ -63,13 +63,13 @@ So instead:
 
 This process is called:
 
-# Extrapolation
+## Extrapolation
 
 The transcript defines it as:
 
 > “You are extrapolating data from the current time period to the next time period using a particular function.”
 
-# Big Picture Pipeline
+## Big Picture Pipeline
 
 ```mermaid
 flowchart LR
@@ -96,7 +96,7 @@ This exact architecture appears in:
 - demand planning
     
 
-# Why Visualization Matters First
+## Why Visualization Matters First
 
 The transcript repeatedly emphasizes:
 
@@ -106,7 +106,7 @@ You must first understand the shape of the data.
 
 Because different trends require different models.
 
-# Example Trends
+## Example Trends
 
 |Trend Type|Shape|Example|
 |---|---|---|
@@ -116,7 +116,7 @@ Because different trends require different models.
 |Cyclical|repeating wave|weather/seasons|
 |Logistic|S-curve|population saturation|
 
-# Critical Insight
+## Critical Insight
 
 The model is chosen based on:
 
@@ -126,7 +126,7 @@ the geometry of the data
 
 not randomly.
 
-# Polynomial Curve Fitting
+## Polynomial Curve Fitting
 
 The lecture primarily uses:
 
@@ -136,7 +136,7 @@ np.polyfit()
 
 This fits a polynomial equation to data.
 
-# Polynomial Intuition
+## Polynomial Intuition
 
 A polynomial is:
 
@@ -148,7 +148,7 @@ General form:
 
 y = a_nx^n + a_{n-1}x^{n-1} + \dots + a_1x + a_0
 
-# Degree Meaning
+## Degree Meaning
 
 |Degree|Shape|
 |---|---|
@@ -161,9 +161,9 @@ The transcript explains:
 
 > “If it is degree 2 you have a parabolic.”
 
-# Step-by-Step Example
+## Step-by-Step Example
 
-# Step 1: Create Data
+## Step 1: Create Data
 
 ```python
 import numpy as np
@@ -188,7 +188,7 @@ users = np.array([
 
 This simulates user growth.
 
-# Step 2: Fit Polynomial Curve
+## Step 2: Fit Polynomial Curve
 
 ```python
 coefficients = np.polyfit(
@@ -198,7 +198,7 @@ coefficients = np.polyfit(
 )
 ```
 
-# What Is Happening Internally?
+## What Is Happening Internally?
 
 NumPy is solving:
 
@@ -215,7 +215,7 @@ between:
 
 This is optimization.
 
-# Important Output
+## Important Output
 
 `coefficients` might look like:
 
@@ -229,7 +229,7 @@ Meaning:
 
 genui{"math_block_widget_always_prefetch_v2":{"content":"y = 12.3x^2 - 45.1x + 120.7"}}
 
-# Step 3: Convert Coefficients Into Function
+## Step 3: Convert Coefficients Into Function
 
 ```python
 polynomial_function = np.poly1d(coefficients)
@@ -237,7 +237,7 @@ polynomial_function = np.poly1d(coefficients)
 
 Now Python creates an actual mathematical function.
 
-# Step 4: Generate Future Months
+## Step 4: Generate Future Months
 
 ```python
 future_months = np.arange(1, 19)
@@ -255,7 +255,7 @@ Forecast range:
 1 → 18
 ```
 
-# Step 5: Predict Future Values
+## Step 5: Predict Future Values
 
 ```python
 future_users = polynomial_function(future_months)
@@ -265,14 +265,14 @@ This is the key forecasting step.
 
 You are mathematically extending the curve.
 
-# Visualization
+## Visualization
 
 ```python
 import matplotlib.pyplot as plt
 
 plt.figure(figsize=(10,6))
 
-# Actual data
+## Actual data
 plt.plot(
     months,
     users,
@@ -281,7 +281,7 @@ plt.plot(
     label='Actual Users'
 )
 
-# Predicted trend
+## Predicted trend
 plt.plot(
     future_months,
     future_users,
@@ -299,7 +299,7 @@ plt.legend()
 plt.show()
 ```
 
-# What the Plot Shows
+## What the Plot Shows
 
 The transcript explains:
 
@@ -308,7 +308,7 @@ The transcript explains:
 - orange curve = extrapolated prediction
     
 
-# Why Curve Fitting Works
+## Why Curve Fitting Works
 
 Because many real systems are not linear.
 
@@ -323,7 +323,7 @@ Example:
 
 Linear assumptions fail often.
 
-# The Critical Comparison: Polynomial vs Linear
+## The Critical Comparison: Polynomial vs Linear
 
 This is the most important section of the lecture.
 
@@ -342,7 +342,7 @@ That is a:
 
 This is massive in business.
 
-# Why Linear Regression Failed
+## Why Linear Regression Failed
 
 Linear regression assumes:
 
@@ -358,7 +358,7 @@ But the actual data accelerates.
 
 So the model underfits.
 
-# Underfitting
+## Underfitting
 
 The linear model is too simple.
 
@@ -370,7 +370,7 @@ This is called:
 underfitting
 ```
 
-# Overfitting vs Underfitting
+## Overfitting vs Underfitting
 
 |Problem|Meaning|
 |---|---|
@@ -379,7 +379,7 @@ underfitting
 
 Polynomial degree selection is fundamentally balancing these two.
 
-# Visual Importance
+## Visual Importance
 
 The transcript makes a subtle but extremely important business point:
 
@@ -408,7 +408,7 @@ This matters enormously in:
 - ML explainability
     
 
-# Hidden Mathematical Principle
+## Hidden Mathematical Principle
 
 Curve fitting minimizes prediction error.
 
@@ -429,7 +429,7 @@ The same principle powers:
 - gradient descent systems
     
 
-# Real ML Connection
+## Real ML Connection
 
 This lecture is secretly introducing regression modeling.
 
@@ -448,9 +448,9 @@ Only the functions become more complex:
 |Neural Network|nonlinear high-dimensional function|
 |XGBoost|ensemble functions|
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
-# 1. Blindly Choosing High-Degree Polynomial
+## 1. Blindly Choosing High-Degree Polynomial
 
 Higher degree does NOT mean better.
 
@@ -462,7 +462,7 @@ np.polyfit(x, y, 15)
 
 can create nonsense oscillations.
 
-# 2. Assuming Forecasts Are Truth
+## 2. Assuming Forecasts Are Truth
 
 The transcript warns:
 
@@ -470,7 +470,7 @@ The transcript warns:
 
 Forecasts are assumptions, not facts.
 
-# 3. Ignoring Domain Knowledge
+## 3. Ignoring Domain Knowledge
 
 A mathematically good fit can still be unrealistic.
 
@@ -483,7 +483,7 @@ Example:
 - predicting impossible temperatures
     
 
-# Computational Insight
+## Computational Insight
 
 Polynomial fitting internally solves matrix equations.
 
@@ -496,7 +496,7 @@ Complexity grows with:
 
 Very high-degree fitting becomes unstable.
 
-# Better Real-World Alternatives
+## Better Real-World Alternatives
 
 For production forecasting:
 
@@ -507,7 +507,7 @@ For production forecasting:
 |XGBoost|tabular forecasting|
 |LSTM|sequential deep learning|
 
-# Most Important Conceptual Takeaway
+## Most Important Conceptual Takeaway
 
 The lecture is not really about plotting.
 
