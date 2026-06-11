@@ -823,3 +823,5 @@ Using a standard green-to-red color palette (such as green for low unemployment,
 [1] Comparing Categories of Plots Transcript, Page 1.
 [2] Showing Changes Over Time Transcript, Pages 1-3.
 [3] Comparing Categories of Plots Transcript, Page 3.z
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
