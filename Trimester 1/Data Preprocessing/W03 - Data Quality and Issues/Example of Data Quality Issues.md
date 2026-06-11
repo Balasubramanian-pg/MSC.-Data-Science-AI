@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W03 - Data Quality and Issues
 ---
 
-# Examples of Data Quality Issues
+## Examples of Data Quality Issues
 
 Real-world data is rarely clean. Most datasets contain missing fields, contradictory formats, measurement errors, duplicate records, or values that simply do not make sense. In machine learning and data mining, poor-quality data directly reduces model reliability because algorithms fundamentally operate on mathematical relationships between variables. If the underlying data is flawed, the resulting predictions, clusters, classifications, or insights become unreliable.
 
@@ -47,7 +47,7 @@ $$
 \text{Prediction Reliability} \downarrow  
 $$
 
-# Incomplete Data
+## Incomplete Data
 
 Incomplete data refers to missing values within the dataset. Missingness can occur at multiple levels:
 
@@ -144,7 +144,7 @@ Example:
 
 The second case is harder because the system must detect invalidity rather than absence.
 
-# Noisy Data
+## Noisy Data
 
 Noisy data refers to data that has been unintentionally distorted from its original value. Noise modifies the signal and introduces uncertainty into analysis.
 
@@ -210,7 +210,7 @@ Person D may not be erroneous. They may genuinely belong to a different distribu
 
 Noise, however, is usually considered undesirable corruption.
 
-# Inconsistent Data
+## Inconsistent Data
 
 Inconsistent data occurs when different parts of a dataset follow incompatible formats, scales, or conventions.
 
@@ -256,7 +256,7 @@ Different systems may represent the same concept differently.
 
 Merging these without mapping creates semantic inconsistency.
 
-# Impact of Poor Data on Machine Learning
+## Impact of Poor Data on Machine Learning
 
 Machine learning models learn patterns directly from the training data.
 
@@ -299,7 +299,7 @@ This directly affects:
 - Automation reliability
     
 
-# Detecting Data Quality Issues
+## Detecting Data Quality Issues
 
 There are two broad approaches:
 
@@ -355,7 +355,7 @@ flowchart LR
     E --> F[Domain Expert Review]
 ```
 
-# Data Cleaning and Preprocessing
+## Data Cleaning and Preprocessing
 
 Before machine learning begins, data preprocessing pipelines typically include:
 
@@ -390,7 +390,7 @@ flowchart TD
     F --> G[ML Training]
 ```
 
-# Key Takeaways
+## Key Takeaways
 
 Data quality problems are unavoidable in real-world systems. The three major categories discussed are:
 
