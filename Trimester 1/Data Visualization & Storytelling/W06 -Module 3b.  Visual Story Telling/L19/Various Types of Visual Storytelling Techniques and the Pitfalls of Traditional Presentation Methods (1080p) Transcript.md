@@ -1,3 +1,9 @@
+---
+title: W06 -Module 3b.  Visual Story Telling
+module: Statistical Modelling And Inferencing
+week: W06 -Module 3b.  Visual Story Telling
+---
+
 # Various Types of Visual Storytelling Techniques and the Pitfalls of Traditional Presentation Methods
 
 This lecture expands the core idea that:
