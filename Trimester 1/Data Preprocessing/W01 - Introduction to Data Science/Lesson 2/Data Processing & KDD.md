@@ -1,3 +1,9 @@
+---
+title: W01 - Introduction to Data Science
+module: Statistical Modelling And Inferencing
+week: W01 - Introduction to Data Science
+---
+
 # Knowledge Discovery in Databases (KDD) and the Data Science Pipeline
 
 > [!NOTE]
