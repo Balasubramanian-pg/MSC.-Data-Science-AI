@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
 ---
 
-# Enterprise Data Visualization Taxonomy: Categorical Comparison, Flow Mapping, Hierarchical Systems, Geospatial Architectures, and Relational/Temporal Networks
+## Enterprise Data Visualization Taxonomy: Categorical Comparison, Flow Mapping, Hierarchical Systems, Geospatial Architectures, and Relational/Temporal Networks
 
 A robust taxonomy organizes data visualization methods by their primary communication purpose, helping engineers and architects select the most effective layout for a given dataset [1]. Choosing the wrong visual can obscure vital insights and lead to incorrect operational decisions [1].
 
@@ -727,13 +727,13 @@ Trying to render highly detailed boundaries (like high-resolution national shape
 ```python
 import geopandas as gpd
 
-# Load high-resolution county boundaries
+## Load high-resolution county boundaries
 gdf = gpd.read_file("us_counties_high_res.shp")
 
-# Simplify shapes using the Douglas-Peucker algorithm (tolerance in degrees/meters)
+## Simplify shapes using the Douglas-Peucker algorithm (tolerance in degrees/meters)
 gdf["geometry"] = gdf["geometry"].simplify(tolerance=0.001, preserve_topology=True)
 
-# Export simplified map to file (significantly smaller file size)
+## Export simplified map to file (significantly smaller file size)
 gdf.to_file("us_counties_optimized.geojson", driver="GeoJSON")
 ```
 
