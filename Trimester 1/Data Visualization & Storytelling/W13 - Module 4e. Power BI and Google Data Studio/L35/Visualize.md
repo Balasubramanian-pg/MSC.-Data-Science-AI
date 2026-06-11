@@ -5,7 +5,7 @@ week: W13 - Module 4e. Power BI and Google Data Studio
 ---
 
 
-# Page 1
+## Page 1
 
  
  
@@ -59,7 +59,7 @@ record count and trying to get the sales. But if you don't want to get sales, le
 calculated field. 
 
 
-# Page 2
+## Page 2
 
  
  
@@ -111,7 +111,7 @@ should follow the actual ordering maximum, we try to always indicate with.
   
 
 
-# Page 3
+## Page 3
 
  
  
@@ -164,7 +164,7 @@ sequence of visualisations.
   
 
 
-# Page 4
+## Page 4
 
  
  
@@ -218,7 +218,7 @@ know what is happening at each of these levels.
   
 
 
-# Page 5
+## Page 5
 
  
  
@@ -272,7 +272,7 @@ distorted at the end of the day.
   
 
 
-# Page 6
+## Page 6
 
  
  
