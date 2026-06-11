@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W10 - Module 4c. Python Bokeh package
 ---
 
-# Bokeh Glyphs Explained
+## Bokeh Glyphs Explained
 
 ## What are Glyphs in Bokeh?
 
@@ -53,23 +53,23 @@ from bokeh.io import output_notebook
 
 output_notebook()
 
-# Step 1: Create figure
+## Step 1: Create figure
 plot = figure(height=300, width=300)
 
-# Step 2: Define data
+## Step 2: Define data
 x = [1, 2, 3, 4]
 y = [5, 6, 7, 8]
 
-# Step 3: Add glyph
+## Step 3: Add glyph
 plot.line(x, y)
 
-# Step 4: Show plot
+## Step 4: Show plot
 show(plot)
 ```
 
 ---
 
-# Understanding Each Part
+## Understanding Each Part
 
 ## 1. `output_notebook()`
 
@@ -113,7 +113,7 @@ The transcript correctly calls it:
 
 ---
 
-# Visual Intuition
+## Visual Intuition
 
 ```text
 +----------------------+
@@ -141,7 +141,7 @@ Now the figure contains glyphs.
 
 ---
 
-# Why Assign Figure to a Variable?
+## Why Assign Figure to a Variable?
 
 ```python
 plot = figure()
@@ -172,7 +172,7 @@ works but becomes messy for complex applications.
 
 ---
 
-# How `plot.line()` Works
+## How `plot.line()` Works
 
 ```python
 plot.line(x, y)
@@ -199,7 +199,7 @@ Figure
 
 ---
 
-# Why Bokeh Uses Object-Oriented Design
+## Why Bokeh Uses Object-Oriented Design
 
 Matplotlib often uses:
 
@@ -237,7 +237,7 @@ This becomes important when building:
 
 ---
 
-# Scatter Plot Example
+## Scatter Plot Example
 
 The transcript mentions extending from line plots to scatter plots.
 
@@ -259,7 +259,7 @@ show(plot)
 
 ---
 
-# What Happens Internally?
+## What Happens Internally?
 
 ```mermaid
 flowchart LR
@@ -270,7 +270,7 @@ flowchart LR
 
 ---
 
-# Why Bokeh is Different from Static Libraries
+## Why Bokeh is Different from Static Libraries
 
 Traditional plotting libraries:
 
@@ -301,7 +301,7 @@ all become possible.
 
 ---
 
-# Figure Dimensions
+## Figure Dimensions
 
 ```python
 figure(height=300, width=300)
@@ -316,7 +316,7 @@ Controls pixel size.
 
 ---
 
-# Important Architectural Idea
+## Important Architectural Idea
 
 Bokeh separates:
 
@@ -331,7 +331,7 @@ This separation makes dashboards scalable.
 
 ---
 
-# Example with Multiple Glyphs
+## Example with Multiple Glyphs
 
 ```python
 from bokeh.plotting import figure, show
@@ -345,10 +345,10 @@ x = [1, 2, 3, 4, 5]
 y1 = [1, 4, 2, 6, 5]
 y2 = [5, 3, 6, 2, 7]
 
-# Line glyph
+## Line glyph
 plot.line(x, y1, line_width=2)
 
-# Scatter glyph
+## Scatter glyph
 plot.scatter(x, y2, size=10)
 
 show(plot)
@@ -363,7 +363,7 @@ Now the same figure contains:
 
 ---
 
-# Key Bokeh Concept
+## Key Bokeh Concept
 
 Bokeh is fundamentally:
 
@@ -379,7 +379,7 @@ This is the mental model.
 
 ---
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
 ## Forgetting `show()`
 
@@ -417,7 +417,7 @@ glyphs = objects drawn on canvas
 
 ---
 
-# Engineering Insight
+## Engineering Insight
 
 Bokeh was designed for:
 
@@ -441,7 +441,7 @@ than to traditional static plotting systems.
 
 ---
 
-# Equivalent in Matplotlib
+## Equivalent in Matplotlib
 
 Matplotlib:
 
@@ -464,7 +464,7 @@ Difference:
 
 ---
 
-# Advanced Insight
+## Advanced Insight
 
 Every glyph in Bokeh becomes:
 
@@ -496,7 +496,7 @@ For huge datasets:
 
 ---
 
-# Final Takeaways
+## Final Takeaways
 
 ## Core Mental Model
 
@@ -547,7 +547,7 @@ Understanding glyphs is the foundation for:
 - Bokeh server apps
 
 
-# Bokeh `show()` Function and Plot Customization
+## Bokeh `show()` Function and Plot Customization
 
 This section explains:
 
@@ -566,7 +566,7 @@ This section explains:
 
 ---
 
-# Why `show()` is Required in Bokeh
+## Why `show()` is Required in Bokeh
 
 The transcript says:
 
@@ -596,7 +596,7 @@ show(plot)
 
 ---
 
-# Full Basic Example
+## Full Basic Example
 
 ```python
 from bokeh.plotting import figure, show
@@ -604,7 +604,7 @@ from bokeh.io import output_notebook
 
 output_notebook()
 
-# Create figure
+## Create figure
 plot = figure(
     height=300,
     width=400,
@@ -613,11 +613,11 @@ plot = figure(
     y_axis_label="y"
 )
 
-# Data
+## Data
 x = [1, 2, 3, 4]
 y = [5, 6, 2, 8]
 
-# Add line glyph
+## Add line glyph
 plot.line(
     x,
     y,
@@ -626,13 +626,13 @@ plot.line(
     color="red"
 )
 
-# Render plot
+## Render plot
 show(plot)
 ```
 
 ---
 
-# What Happens Internally?
+## What Happens Internally?
 
 ```mermaid
 flowchart LR
@@ -643,7 +643,7 @@ flowchart LR
 
 ---
 
-# Important Difference from Matplotlib
+## Important Difference from Matplotlib
 
 ## Matplotlib
 
@@ -682,7 +682,7 @@ because Bokeh must:
 
 ---
 
-# Understanding Plot Customization
+## Understanding Plot Customization
 
 The transcript adds:
 
@@ -696,7 +696,7 @@ These are figure-level properties.
 
 ---
 
-# Visual Structure
+## Visual Structure
 
 ```text
 +--------------------------------+
@@ -711,7 +711,7 @@ These are figure-level properties.
 
 ---
 
-# Figure Configuration
+## Figure Configuration
 
 ```python
 plot = figure(
@@ -725,7 +725,7 @@ plot = figure(
 
 ---
 
-# Why Configuration Happens in `figure()`
+## Why Configuration Happens in `figure()`
 
 Bokeh separates:
 
@@ -746,7 +746,7 @@ This separation scales well for dashboards.
 
 ---
 
-# Line Glyph Styling
+## Line Glyph Styling
 
 The transcript adds:
 
@@ -758,7 +758,7 @@ color="red"
 
 ---
 
-# Understanding Each Property
+## Understanding Each Property
 
 ## `legend_label`
 
@@ -813,7 +813,7 @@ color="#FF5733"
 
 ---
 
-# Complete Styled Example
+## Complete Styled Example
 
 ```python
 from bokeh.plotting import figure, show
@@ -845,7 +845,7 @@ show(plot)
 
 ---
 
-# Interactivity in Bokeh
+## Interactivity in Bokeh
 
 The transcript mentions:
 
@@ -860,7 +860,7 @@ Bokeh automatically includes interactive controls.
 
 ---
 
-# Built-in Interactive Tools
+## Built-in Interactive Tools
 
 |Tool|Purpose|
 |---|---|
@@ -872,7 +872,7 @@ Bokeh automatically includes interactive controls.
 
 ---
 
-# Why This Matters
+## Why This Matters
 
 Matplotlib:
 
@@ -901,7 +901,7 @@ than classic plotting libraries.
 
 ---
 
-# Figure Size Control
+## Figure Size Control
 
 The transcript changes:
 
@@ -916,7 +916,7 @@ Result:
 
 ---
 
-# Why Figure Size Matters
+## Why Figure Size Matters
 
 Large figures help:
 
@@ -938,7 +938,7 @@ Small figures help:
 
 ---
 
-# Example Comparing Sizes
+## Example Comparing Sizes
 
 ## Small Figure
 
@@ -968,7 +968,7 @@ figure(width=800, height=300)
 
 ---
 
-# Real Engineering Insight
+## Real Engineering Insight
 
 Interactive plotting systems must solve:
 
@@ -1001,7 +1001,7 @@ This is why:
 
 ---
 
-# Airline Passenger Example
+## Airline Passenger Example
 
 The transcript begins a realistic business example:
 
@@ -1043,7 +1043,7 @@ This is typical business storytelling:
 
 ---
 
-# Why Line Charts Work for Time Series
+## Why Line Charts Work for Time Series
 
 Line charts preserve:
 
@@ -1076,7 +1076,7 @@ Bad for:
 
 ---
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
 ## Forgetting `show()`
 
@@ -1134,7 +1134,7 @@ Correct order:
 
 ---
 
-# Mental Model
+## Mental Model
 
 ```text
 Figure
@@ -1150,7 +1150,7 @@ Interactive Browser Plot
 
 ---
 
-# Advanced Insight
+## Advanced Insight
 
 Bokeh internally converts plots into:
 
@@ -1177,7 +1177,7 @@ This enables:
 
 ---
 
-# Final Takeaways
+## Final Takeaways
 
 ## Core Workflow
 
@@ -1214,7 +1214,7 @@ without directly writing JavaScript.
 
 ---
 
-# Most Important Concept Here
+## Most Important Concept Here
 
 `show()` is not optional in Bokeh.
 
@@ -1224,7 +1224,7 @@ It is the bridge between:
     
 - browser visualization engine.
 - 
-# Bokeh with Pandas DataFrames
+## Bokeh with Pandas DataFrames
 
 This section introduces something important:
 
@@ -1246,7 +1246,7 @@ This is how most real-world dashboards work.
 
 ---
 
-# Step 1: Creating the Data
+## Step 1: Creating the Data
 
 The transcript describes:
 
@@ -1267,7 +1267,7 @@ representing:
 
 ---
 
-# Passenger Data
+## Passenger Data
 
 ```python
 passengers = [
@@ -1284,7 +1284,7 @@ Units:
 
 ---
 
-# Step 2: Creating a DataFrame
+## Step 2: Creating a DataFrame
 
 The transcript says:
 
@@ -1303,7 +1303,7 @@ monthly_df = pd.DataFrame(
 
 ---
 
-# Understanding This Structure
+## Understanding This Structure
 
 The DataFrame becomes:
 
@@ -1317,7 +1317,7 @@ The DataFrame becomes:
 
 ---
 
-# Renaming the Index
+## Renaming the Index
 
 The transcript:
 
@@ -1358,7 +1358,7 @@ Important for:
 
 ---
 
-# Why Use a DataFrame?
+## Why Use a DataFrame?
 
 Using lists is fine for toy examples.
 
@@ -1381,7 +1381,7 @@ Bokeh integrates naturally with Pandas.
 
 ---
 
-# Visual Pipeline
+## Visual Pipeline
 
 ```mermaid
 flowchart LR
@@ -1392,7 +1392,7 @@ flowchart LR
 
 ---
 
-# Viewing the Data
+## Viewing the Data
 
 The transcript says:
 
@@ -1416,7 +1416,7 @@ Output:
 
 ---
 
-# Step 3: Creating the Figure
+## Step 3: Creating the Figure
 
 ```python
 from bokeh.plotting import figure, show
@@ -1435,7 +1435,7 @@ plot = figure(
 
 ---
 
-# What This Creates
+## What This Creates
 
 ```text
 +------------------------------------------------+
@@ -1452,7 +1452,7 @@ No glyphs yet.
 
 ---
 
-# Step 4: Extracting X and Y Values
+## Step 4: Extracting X and Y Values
 
 The transcript explains:
 
@@ -1463,7 +1463,7 @@ y = monthly_df["Passengers"]
 
 ---
 
-# Important Insight
+## Important Insight
 
 ## X-axis
 
@@ -1489,7 +1489,7 @@ returns passenger values.
 
 ---
 
-# Why This Matters
+## Why This Matters
 
 This is how real analytics pipelines work:
 
@@ -1503,7 +1503,7 @@ Bokeh Visualization
 
 ---
 
-# Step 5: Adding the Line Glyph
+## Step 5: Adding the Line Glyph
 
 ```python
 plot.line(
@@ -1517,7 +1517,7 @@ plot.line(
 
 ---
 
-# Understanding Each Parameter
+## Understanding Each Parameter
 
 |Parameter|Purpose|
 |---|---|
@@ -1529,7 +1529,7 @@ plot.line(
 
 ---
 
-# Rendering the Plot
+## Rendering the Plot
 
 ```python
 show(plot)
@@ -1539,7 +1539,7 @@ Now the interactive chart appears.
 
 ---
 
-# Full Complete Example
+## Full Complete Example
 
 ```python
 import pandas as pd
@@ -1549,7 +1549,7 @@ from bokeh.io import output_notebook
 
 output_notebook()
 
-# Data
+## Data
 months = list(range(1, 13))
 
 passengers = [
@@ -1558,7 +1558,7 @@ passengers = [
     50.1, 51.2, 53.0, 54.6
 ]
 
-# Create dataframe
+## Create dataframe
 monthly_df = pd.DataFrame(
     data={"Passengers": passengers},
     index=months
@@ -1566,7 +1566,7 @@ monthly_df = pd.DataFrame(
 
 monthly_df.index.name = "Month"
 
-# Create figure
+## Create figure
 plot = figure(
     height=400,
     width=700,
@@ -1575,7 +1575,7 @@ plot = figure(
     y_axis_label="Passengers (Millions)"
 )
 
-# Plot line
+## Plot line
 plot.line(
     monthly_df.index,
     monthly_df["Passengers"],
@@ -1584,13 +1584,13 @@ plot.line(
     line_color="blue"
 )
 
-# Display
+## Display
 show(plot)
 ```
 
 ---
 
-# Visual Interpretation
+## Visual Interpretation
 
 The graph shows:
 
@@ -1603,7 +1603,7 @@ The graph shows:
 
 ---
 
-# Why Line Charts Work Here
+## Why Line Charts Work Here
 
 This is time-series data.
 
@@ -1627,7 +1627,7 @@ Perfect for:
 
 ---
 
-# Real-World Analytics Interpretation
+## Real-World Analytics Interpretation
 
 This resembles:
 
@@ -1649,7 +1649,7 @@ Possible insights:
 
 ---
 
-# Interactivity Advantage
+## Interactivity Advantage
 
 The transcript mentions:
 
@@ -1662,7 +1662,7 @@ Bokeh automatically adds these tools.
 
 ---
 
-# Why This Matters for Storytelling
+## Why This Matters for Storytelling
 
 Interactive exploration helps:
 
@@ -1677,7 +1677,7 @@ Static charts cannot do this well.
 
 ---
 
-# Important Bokeh Architecture
+## Important Bokeh Architecture
 
 When you call:
 
@@ -1697,7 +1697,7 @@ Attached to Figure
 
 ---
 
-# Why Width Adjustment Matters
+## Why Width Adjustment Matters
 
 The transcript changes:
 
@@ -1723,7 +1723,7 @@ because:
 
 ---
 
-# Thicker Line Insight
+## Thicker Line Insight
 
 ```python
 line_width=3
@@ -1747,7 +1747,7 @@ But too thick:
 
 ---
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
 ## Forgetting DataFrame Column Access
 
@@ -1784,7 +1784,7 @@ Still the most common issue.
 
 ---
 
-# Advanced Insight
+## Advanced Insight
 
 Bokeh works especially well with:
 
@@ -1812,7 +1812,7 @@ because:
 
 ---
 
-# Mental Model
+## Mental Model
 
 ```text
 Pandas DataFrame
@@ -1826,7 +1826,7 @@ Interactive visualization
 
 ---
 
-# Performance Insight
+## Performance Insight
 
 Current approach:
 
@@ -1851,7 +1851,7 @@ Solutions:
 
 ---
 
-# Final Takeaways
+## Final Takeaways
 
 ## Important Workflow
 
@@ -1898,7 +1898,7 @@ which makes it scalable for:
     
 - business intelligence systems.
 
-# Adding Context to Bokeh Visualizations
+## Adding Context to Bokeh Visualizations
 
 This section focuses on:
 
@@ -1927,7 +1927,7 @@ to:
 
 ---
 
-# Why Axis Labels Matter
+## Why Axis Labels Matter
 
 The transcript says:
 
@@ -1947,7 +1947,7 @@ A chart without labels forces the viewer to guess.
 
 ---
 
-# Adding Axis Labels
+## Adding Axis Labels
 
 ```python
 plot = figure(
@@ -1959,7 +1959,7 @@ plot = figure(
 
 ---
 
-# Important Architectural Detail
+## Important Architectural Detail
 
 The transcript emphasizes:
 
@@ -1983,7 +1983,7 @@ Because:
 
 ---
 
-# Mental Model
+## Mental Model
 
 ```text
 Figure
@@ -1995,7 +1995,7 @@ Figure
 
 ---
 
-# Why Context is Critical in Data Storytelling
+## Why Context is Critical in Data Storytelling
 
 A visualization has 2 jobs:
 
@@ -2017,7 +2017,7 @@ not plotting.
 
 ---
 
-# Scatter Plot Introduction
+## Scatter Plot Introduction
 
 The transcript now moves to:
 
@@ -2038,7 +2038,7 @@ They show:
 
 ---
 
-# Basic Scatter Plot Example
+## Basic Scatter Plot Example
 
 ```python
 from bokeh.plotting import figure, show
@@ -2046,7 +2046,7 @@ from bokeh.io import output_notebook
 
 output_notebook()
 
-# Create figure
+## Create figure
 p = figure(
     width=400,
     height=200,
@@ -2055,20 +2055,20 @@ p = figure(
     y_axis_label="Y Values"
 )
 
-# Scatter glyph
+## Scatter glyph
 p.scatter(
     [1, 2, 3, 4, 5],
     [6, 7, 8, 4, 5],
     size=15
 )
 
-# Render
+## Render
 show(p)
 ```
 
 ---
 
-# Visual Intuition
+## Visual Intuition
 
 ```text
 y
@@ -2084,7 +2084,7 @@ y
 
 ---
 
-# Important Bokeh Workflow
+## Important Bokeh Workflow
 
 The transcript repeatedly reinforces:
 
@@ -2107,7 +2107,7 @@ The figure is the canvas.
 
 ---
 
-# Understanding `scatter()`
+## Understanding `scatter()`
 
 ```python
 p.scatter(x, y, size=15)
@@ -2122,7 +2122,7 @@ Each `(x, y)` pair becomes one marker.
 
 ---
 
-# What `size=15` Means
+## What `size=15` Means
 
 ```python
 size=15
@@ -2140,7 +2140,7 @@ size=40  → very large points
 
 ---
 
-# Why Scatter Plots Matter
+## Why Scatter Plots Matter
 
 Scatter plots are foundational in:
 
@@ -2164,7 +2164,7 @@ They help detect:
 
 ---
 
-# Scatter Plot Architecture
+## Scatter Plot Architecture
 
 ```mermaid
 flowchart LR
@@ -2175,7 +2175,7 @@ flowchart LR
 
 ---
 
-# Marker Customization
+## Marker Customization
 
 The transcript mentions:
 
@@ -2190,7 +2190,7 @@ This is where Bokeh becomes flexible.
 
 ---
 
-# Marker Types
+## Marker Types
 
 Bokeh supports many marker styles.
 
@@ -2210,7 +2210,7 @@ p.scatter(x, y, marker="triangle")
 
 ---
 
-# Common Marker Types
+## Common Marker Types
 
 |Marker|Use Case|
 |---|---|
@@ -2222,7 +2222,7 @@ p.scatter(x, y, marker="triangle")
 
 ---
 
-# Example with Marker Styling
+## Example with Marker Styling
 
 ```python
 from bokeh.plotting import figure, show
@@ -2253,7 +2253,7 @@ show(p)
 
 ---
 
-# What is Opacity (`alpha`)?
+## What is Opacity (`alpha`)?
 
 The transcript refers to:
 
@@ -2268,7 +2268,7 @@ alpha=0.6
 
 ---
 
-# Alpha Range
+## Alpha Range
 
 |Alpha|Meaning|
 |---|---|
@@ -2278,7 +2278,7 @@ alpha=0.6
 
 ---
 
-# Why Transparency Matters
+## Why Transparency Matters
 
 Transparency helps with:
 
@@ -2300,7 +2300,7 @@ Especially important in:
 
 ---
 
-# Example of Overplotting
+## Example of Overplotting
 
 Without transparency:
 
@@ -2321,7 +2321,7 @@ show density naturally
 
 ---
 
-# Why Bokeh is Good for Scatter Plots
+## Why Bokeh is Good for Scatter Plots
 
 Scatter plots become much more useful with:
 
@@ -2338,7 +2338,7 @@ Static scatter plots often become unreadable.
 
 ---
 
-# Real-World Use Cases
+## Real-World Use Cases
 
 |Domain|Scatter Plot Usage|
 |---|---|
@@ -2350,7 +2350,7 @@ Static scatter plots often become unreadable.
 
 ---
 
-# Figure Size Discussion
+## Figure Size Discussion
 
 Transcript:
 
@@ -2373,7 +2373,7 @@ Good for:
 
 ---
 
-# Why Aspect Ratio Matters
+## Why Aspect Ratio Matters
 
 Different shapes communicate differently.
 
@@ -2385,7 +2385,7 @@ Different shapes communicate differently.
 
 ---
 
-# Important Design Principle
+## Important Design Principle
 
 Good visualization is not:
 
@@ -2403,7 +2403,7 @@ It is:
 
 ---
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
 ## Using Huge Markers
 
@@ -2440,7 +2440,7 @@ Without alpha transparency:
 
 ---
 
-# Advanced Insight
+## Advanced Insight
 
 Bokeh scatter plots internally create:
 
@@ -2463,7 +2463,7 @@ For millions of points:
 
 ---
 
-# Machine Learning Connection
+## Machine Learning Connection
 
 Scatter plots are heavily used in ML for:
 
@@ -2487,7 +2487,7 @@ Examples:
 
 ---
 
-# Mental Model
+## Mental Model
 
 ```text
 Figure
@@ -2501,7 +2501,7 @@ Interactive Browser Rendering
 
 ---
 
-# Key Concept from This Section
+## Key Concept from This Section
 
 The important shift here is:
 
@@ -2521,7 +2521,7 @@ They are communication infrastructure.
 
 ---
 
-# Final Takeaways
+## Final Takeaways
 
 ## Core Scatter Plot Workflow
 
@@ -2557,7 +2557,7 @@ Always optimize for:
 
 not visual decoration.
 
-# Marker Types and Combining Glyphs in Bokeh
+## Marker Types and Combining Glyphs in Bokeh
 
 This section introduces two important ideas:
 
@@ -2570,7 +2570,7 @@ This is where Bokeh starts behaving like a real visualization framework rather t
 
 ---
 
-# Marker Customization in Scatter Plots
+## Marker Customization in Scatter Plots
 
 The transcript experiments with:
 
@@ -2604,7 +2604,7 @@ for better storytelling.
 
 ---
 
-# Basic Scatter Plot
+## Basic Scatter Plot
 
 ```python
 from bokeh.plotting import figure, show
@@ -2624,7 +2624,7 @@ show(p)
 
 ---
 
-# Using Triangle Markers
+## Using Triangle Markers
 
 The transcript mentions:
 
@@ -2645,7 +2645,7 @@ p.scatter(
 
 ---
 
-# Visual Intuition
+## Visual Intuition
 
 ## Circle Marker
 
@@ -2671,7 +2671,7 @@ p.scatter(
 
 ---
 
-# Why Marker Choice Matters
+## Why Marker Choice Matters
 
 Different markers help distinguish:
 
@@ -2695,7 +2695,7 @@ Example:
 
 ---
 
-# Understanding `alpha`
+## Understanding `alpha`
 
 Transcript mentions:
 
@@ -2712,7 +2712,7 @@ controls transparency.
 
 ---
 
-# Why Transparency Matters
+## Why Transparency Matters
 
 Transparency helps reveal:
 
@@ -2736,7 +2736,7 @@ With transparency:
 
 ---
 
-# Superimposing Multiple Scatter Glyphs
+## Superimposing Multiple Scatter Glyphs
 
 The transcript says:
 
@@ -2770,7 +2770,7 @@ p.scatter(
 
 ---
 
-# What Happens Internally
+## What Happens Internally
 
 ```text
 Figure
@@ -2781,7 +2781,7 @@ Figure
 
 ---
 
-# Layering in Visualization
+## Layering in Visualization
 
 This is called:
 
@@ -2803,7 +2803,7 @@ Very important in:
 
 ---
 
-# Visual Example
+## Visual Example
 
 ```text
 ▲
@@ -2814,7 +2814,7 @@ One marker drawn over another.
 
 ---
 
-# Combining Multiple Glyphs
+## Combining Multiple Glyphs
 
 Now the transcript introduces a major concept:
 
@@ -2824,7 +2824,7 @@ This is foundational in Bokeh.
 
 ---
 
-# Why Combine Glyphs?
+## Why Combine Glyphs?
 
 Real dashboards often combine:
 
@@ -2843,7 +2843,7 @@ on the same chart.
 
 ---
 
-# Example: Line + Scatter Together
+## Example: Line + Scatter Together
 
 ```python
 from bokeh.plotting import figure, show
@@ -2860,7 +2860,7 @@ p = figure(
     title="Line and Scatter Combined"
 )
 
-# Line glyph
+## Line glyph
 p.line(
     x,
     y,
@@ -2868,7 +2868,7 @@ p.line(
     color="blue"
 )
 
-# Scatter glyph
+## Scatter glyph
 p.scatter(
     x,
     y,
@@ -2881,7 +2881,7 @@ show(p)
 
 ---
 
-# Visual Intuition
+## Visual Intuition
 
 ```text
      ●
@@ -2900,7 +2900,7 @@ The:
 
 ---
 
-# Why This is Powerful
+## Why This is Powerful
 
 Combining glyphs allows:
 
@@ -2913,7 +2913,7 @@ Combining glyphs allows:
 
 ---
 
-# Real-World Examples
+## Real-World Examples
 
 |Combination|Use Case|
 |---|---|
@@ -2924,7 +2924,7 @@ Combining glyphs allows:
 
 ---
 
-# Important Bokeh Principle
+## Important Bokeh Principle
 
 The transcript says:
 
@@ -2949,7 +2949,7 @@ All render into:
 
 ---
 
-# Bokeh Rendering Model
+## Bokeh Rendering Model
 
 ```mermaid
 flowchart TD
@@ -2963,7 +2963,7 @@ flowchart TD
 
 ---
 
-# Why This Matters for Analytics
+## Why This Matters for Analytics
 
 Modern dashboards require:
 
@@ -2978,7 +2978,7 @@ Single-glyph charts are often insufficient.
 
 ---
 
-# Scatter + Line Interpretation
+## Scatter + Line Interpretation
 
 The transcript example:
 
@@ -3007,7 +3007,7 @@ because:
 
 ---
 
-# Categorical Data Introduction
+## Categorical Data Introduction
 
 The transcript then transitions into:
 
@@ -3017,7 +3017,7 @@ This is an important shift.
 
 ---
 
-# Numerical vs Categorical Visualization
+## Numerical vs Categorical Visualization
 
 ## Numerical Data
 
@@ -3054,7 +3054,7 @@ Used for:
 
 ---
 
-# Why Scatter Plots Are Not Ideal for Categories
+## Why Scatter Plots Are Not Ideal for Categories
 
 Scatter plots assume:
 
@@ -3074,7 +3074,7 @@ Bar charts work better.
 
 ---
 
-# Connection to Seaborn
+## Connection to Seaborn
 
 Transcript references:
 
@@ -3096,7 +3096,7 @@ Examples:
 
 ---
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
 ## Adding Too Many Glyphs
 
@@ -3135,7 +3135,7 @@ Every layer should answer:
 
 ---
 
-# Advanced Insight
+## Advanced Insight
 
 Each glyph added to a Bokeh figure creates:
 
@@ -3151,7 +3151,7 @@ Too many renderers:
 
 ---
 
-# Machine Learning Connection
+## Machine Learning Connection
 
 Combined glyphs are heavily used in ML:
 
@@ -3164,7 +3164,7 @@ Combined glyphs are heavily used in ML:
 
 ---
 
-# Mental Model
+## Mental Model
 
 ```text
 Figure
@@ -3176,7 +3176,7 @@ Single Interactive Visualization
 
 ---
 
-# Key Design Principle
+## Key Design Principle
 
 Good visualizations often combine:
 
@@ -3202,7 +3202,7 @@ enable.
 
 ---
 
-# Final Takeaways
+## Final Takeaways
 
 ## Core Concept
 
@@ -3247,7 +3247,7 @@ because one chart often needs to communicate:
 
 simultaneously.
 
-# Categorical Data and Bar Charts in Bokeh
+## Categorical Data and Bar Charts in Bokeh
 
 This final section introduces one of the most important visualization concepts:
 
@@ -3282,7 +3282,7 @@ This changes how Bokeh handles the axis internally.
 
 ---
 
-# Continuous vs Categorical Axes
+## Continuous vs Categorical Axes
 
 ## Continuous Axis
 
@@ -3332,7 +3332,7 @@ Now:
 
 ---
 
-# Why Bar Charts Exist
+## Why Bar Charts Exist
 
 Bar charts are designed to compare:
 
@@ -3359,7 +3359,7 @@ Bad for:
 
 ---
 
-# Fruit Dataset
+## Fruit Dataset
 
 The transcript defines:
 
@@ -3378,7 +3378,7 @@ counts = [5, 3, 4, 2, 6, 7]
 
 ---
 
-# Understanding the Data
+## Understanding the Data
 
 |Fruit|Count|
 |---|---|
@@ -3391,7 +3391,7 @@ counts = [5, 3, 4, 2, 6, 7]
 
 ---
 
-# Key Concept: Categories
+## Key Concept: Categories
 
 The transcript correctly says:
 
@@ -3412,7 +3412,7 @@ not continuous measurements.
 
 ---
 
-# Why `x_range` Matters
+## Why `x_range` Matters
 
 This is the most important technical concept in this section.
 
@@ -3426,7 +3426,7 @@ inside `figure()`.
 
 ---
 
-# What `x_range` Does
+## What `x_range` Does
 
 It tells Bokeh:
 
@@ -3441,7 +3441,7 @@ Without this:
 
 ---
 
-# Important Architectural Insight
+## Important Architectural Insight
 
 When using categorical data:
 
@@ -3461,7 +3461,7 @@ instead of:
 
 ---
 
-# Mental Model
+## Mental Model
 
 ## Numeric Axis
 
@@ -3484,7 +3484,7 @@ Distance does not.
 
 ---
 
-# Complete Bar Chart Example
+## Complete Bar Chart Example
 
 ```python
 from bokeh.plotting import figure, show
@@ -3503,7 +3503,7 @@ fruits = [
 
 counts = [5, 3, 4, 2, 6, 7]
 
-# Create categorical figure
+## Create categorical figure
 p = figure(
     x_range=fruits,
     height=350,
@@ -3512,7 +3512,7 @@ p = figure(
     y_axis_label="Count"
 )
 
-# Vertical bar chart
+## Vertical bar chart
 p.vbar(
     x=fruits,
     top=counts,
@@ -3525,7 +3525,7 @@ show(p)
 
 ---
 
-# Understanding `vbar()`
+## Understanding `vbar()`
 
 The transcript uses:
 
@@ -3540,7 +3540,7 @@ This means:
 
 ---
 
-# Important Parameters
+## Important Parameters
 
 |Parameter|Meaning|
 |---|---|
@@ -3551,7 +3551,7 @@ This means:
 
 ---
 
-# Understanding `top`
+## Understanding `top`
 
 ```python
 top=counts
@@ -3574,7 +3574,7 @@ ends at:
 
 ---
 
-# Visual Intuition
+## Visual Intuition
 
 ```text
 7 |                    █
@@ -3590,7 +3590,7 @@ ends at:
 
 ---
 
-# Why `width` Matters
+## Why `width` Matters
 
 The transcript uses:
 
@@ -3605,7 +3605,7 @@ Controls:
 
 ---
 
-# Width Interpretation
+## Width Interpretation
 
 |Width|Result|
 |---|---|
@@ -3615,7 +3615,7 @@ Controls:
 
 ---
 
-# Why Color Matters
+## Why Color Matters
 
 Transcript uses:
 
@@ -3632,7 +3632,7 @@ Bokeh supports:
 
 ---
 
-# Why Bar Charts Are Powerful
+## Why Bar Charts Are Powerful
 
 Bar charts are extremely effective because humans compare:
 
@@ -3650,7 +3650,7 @@ This makes bar charts excellent for:
 
 ---
 
-# Business Intelligence Connection
+## Business Intelligence Connection
 
 Bar charts dominate BI dashboards because they answer:
 
@@ -3671,7 +3671,7 @@ Examples:
 
 ---
 
-# Seaborn Connection
+## Seaborn Connection
 
 The transcript references:
 
@@ -3688,7 +3688,7 @@ These are categorical variables.
 
 ---
 
-# Typical Categorical Variables
+## Typical Categorical Variables
 
 |Variable|Categories|
 |---|---|
@@ -3699,7 +3699,7 @@ These are categorical variables.
 
 ---
 
-# Why Categorical Data Needs Different Handling
+## Why Categorical Data Needs Different Handling
 
 Numeric axes assume:
 
@@ -3725,7 +3725,7 @@ has no mathematical meaning.
 
 ---
 
-# Internal Bokeh Representation
+## Internal Bokeh Representation
 
 When using:
 
@@ -3750,7 +3750,7 @@ This manages:
 
 ---
 
-# Important Insight About Ordering
+## Important Insight About Ordering
 
 Transcript says:
 
@@ -3764,7 +3764,7 @@ Different orders tell different stories.
 
 ---
 
-# Example Orders
+## Example Orders
 
 ## Alphabetical
 
@@ -3786,7 +3786,7 @@ Usually more insightful.
 
 ---
 
-# Combining Categorical + Numerical
+## Combining Categorical + Numerical
 
 Bar charts are fundamentally:
 
@@ -3798,7 +3798,7 @@ Numerical aggregation
 
 ---
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
 ## Forgetting `x_range`
 
@@ -3849,7 +3849,7 @@ Avoid assigning random colors without meaning.
 
 ---
 
-# Advanced Insight
+## Advanced Insight
 
 Bokeh bar charts are glyph-based too.
 
@@ -3870,7 +3870,7 @@ even bars.
 
 ---
 
-# Machine Learning Connection
+## Machine Learning Connection
 
 Categorical visualization is heavily used in ML for:
 
@@ -3885,7 +3885,7 @@ Categorical visualization is heavily used in ML for:
 
 ---
 
-# Mental Model
+## Mental Model
 
 ```text
 Categories
@@ -3899,7 +3899,7 @@ Interactive Comparison
 
 ---
 
-# Most Important Concept Here
+## Most Important Concept Here
 
 The key idea is:
 
@@ -3913,7 +3913,7 @@ That is the architectural shift enabling categorical plotting.
 
 ---
 
-# Final Takeaways
+## Final Takeaways
 
 ## Core Workflow
 
