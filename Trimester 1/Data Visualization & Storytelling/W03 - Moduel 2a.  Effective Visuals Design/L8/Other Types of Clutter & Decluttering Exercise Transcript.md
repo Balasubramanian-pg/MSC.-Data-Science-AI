@@ -1,3 +1,9 @@
+---
+title: W03 - Moduel 2a.  Effective Visuals Design
+module: Statistical Modelling And Inferencing
+week: W03 - Moduel 2a.  Effective Visuals Design
+---
+
 ### The Power of Alignment: Why Left-Alignment Wins
 
 In data visualization and reporting, **alignment is not just about aesthetics—it is about cognitive efficiency.** As your transcript notes, human reading patterns (for left-to-right languages) are hardwired to scan from top-left to bottom-right. When you force the eye to deal with "ragged" edges caused by center-alignment, you introduce unnecessary friction.
