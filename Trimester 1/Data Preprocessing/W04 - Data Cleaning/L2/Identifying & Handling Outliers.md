@@ -408,3 +408,5 @@ Important detection techniques include:
 |Z-Score|Statistical|
 
 The most important engineering lesson is that outliers should not be removed blindly. Their meaning must first be understood because rare events often contain the most valuable information in real-world systems.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
