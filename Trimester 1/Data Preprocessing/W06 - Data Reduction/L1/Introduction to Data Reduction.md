@@ -1,3 +1,9 @@
+---
+title: W06 - Data Reduction
+module: Statistical Modelling And Inferencing
+week: W06 - Data Reduction
+---
+
 ## Summary: Introduction to Data Reduction
 
 Data reduction is the process of reducing the size and complexity of a dataset while preserving its essential information and analytical value. It is a critical preprocessing step in data mining, machine learning, and big data systems because modern datasets are often massive, noisy, and computationally expensive to process.
