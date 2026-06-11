@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W06 -Module 3b.  Visual Story Telling
 ---
 
-# Misleading with Charts: How Bad Visualization Distorts Decision-Making
+## Misleading with Charts: How Bad Visualization Distorts Decision-Making
 
 This lecture addresses one of the most important and dangerous realities in data visualization:
 
@@ -24,7 +24,7 @@ Even when the underlying data is correct, visualization choices can:
 Sometimes intentionally.  
 Often unintentionally.
 
-# The Core Purpose of Data Visualization
+## The Core Purpose of Data Visualization
 
 The lecture restates a foundational principle:
 
@@ -54,7 +54,7 @@ It creates:
 - cognitive bias
     
 
-# Humans Process Visuals Extremely Quickly
+## Humans Process Visuals Extremely Quickly
 
 The transcript highlights an important cognitive reality:
 
@@ -90,7 +90,7 @@ Humans instinctively associate:
 
 Visualization design exploits these automatic cognitive shortcuts.
 
-# Example: The Misleading Firearm Murder Chart
+## Example: The Misleading Firearm Murder Chart
 
 The lecture describes a graph about firearm-related murders after a law was enacted in Florida.
 
@@ -114,7 +114,7 @@ Because:
 
 But the graph is deceptive.
 
-# The Core Manipulation: Inverted Axis
+## The Core Manipulation: Inverted Axis
 
 The Y-axis was reversed.
 
@@ -142,7 +142,7 @@ As a result:
 - increasing murders visually resembled decreasing murders
     
 
-# Why This Is So Dangerous
+## Why This Is So Dangerous
 
 Most viewers:
 
@@ -181,11 +181,11 @@ This demonstrates a critical principle:
 
 > Visualization design can overpower factual accuracy.
 
-# Cognitive Bias in Visualization
+## Cognitive Bias in Visualization
 
 The lecture implicitly demonstrates several psychological biases.
 
-# 1. Spatial Bias
+## 1. Spatial Bias
 
 Humans associate:
 
@@ -196,7 +196,7 @@ Humans associate:
 
 Violating this convention creates confusion or manipulation.
 
-# 2. Color Bias
+## 2. Color Bias
 
 The graph used red to imply:
 
@@ -211,7 +211,7 @@ But the visual downward motion psychologically overrode the actual increase.
 
 This created contradictory signals.
 
-# 3. Gestalt Perception
+## 3. Gestalt Perception
 
 Humans interpret:
 
@@ -231,7 +231,7 @@ Most viewers absorb:
 
 This is why chart design matters enormously.
 
-# Why Misleading Charts Often Go Unnoticed
+## Why Misleading Charts Often Go Unnoticed
 
 Most audiences:
 
@@ -260,7 +260,7 @@ That makes misleading visuals extremely dangerous in:
 - financial reporting
     
 
-# Important Insight: Misleading Does Not Always Mean Malicious
+## Important Insight: Misleading Does Not Always Mean Malicious
 
 The lecture correctly notes:
 
@@ -286,7 +286,7 @@ However:
 
 Impact matters more than intent.
 
-# Why Natural Ordering Matters
+## Why Natural Ordering Matters
 
 Humans develop strong expectations for visual structure.
 
@@ -308,7 +308,7 @@ Otherwise:
 - interpretation becomes unreliable
     
 
-# Visualization Ethics
+## Visualization Ethics
 
 This lecture touches an important ethical principle:
 
@@ -333,7 +333,7 @@ Not merely:
 - persuasive impact
     
 
-# Common Sources of Misleading Charts
+## Common Sources of Misleading Charts
 
 The inverted-axis example is one category among many.
 
@@ -349,7 +349,7 @@ Other common issues include:
 |Dual axes misuse|Implies false relationships|
 |Area exaggeration|Overstates magnitude|
 
-# Why Visualization Is Powerful
+## Why Visualization Is Powerful
 
 The transcript ultimately reinforces this principle:
 
@@ -369,7 +369,7 @@ Visualization bypasses slow analytical reasoning and directly influences:
 That is why charts are powerful.  
 And dangerous.
 
-# The Real Responsibility of Analysts
+## The Real Responsibility of Analysts
 
 A dashboard developer or analyst is not merely:
 
@@ -400,7 +400,7 @@ Poor visualization can lead to:
 - operational failure
     
 
-# Key Strategic Lesson
+## Key Strategic Lesson
 
 The strongest visualization practitioners constantly ask:
 
@@ -418,7 +418,7 @@ Because ultimately:
 > the effectiveness of visualization is measured not by aesthetics, but by interpretive accuracy.
 
 ===
-# Axis Manipulation and Misleading Scale Design
+## Axis Manipulation and Misleading Scale Design
 
 The lecture now moves deeper into one of the most common forms of visualization distortion:
 
@@ -426,7 +426,7 @@ The lecture now moves deeper into one of the most common forms of visualization 
 
 This is one of the easiest ways to unintentionally or deliberately mislead an audience while technically displaying “correct” data.
 
-# 1. Natural Ordering Matters
+## 1. Natural Ordering Matters
 
 Humans interpret charts using deeply ingrained perceptual conventions.
 
@@ -454,7 +454,7 @@ The lecture emphasizes:
 
 > do not violate natural ordering unless there is an extremely strong reason.
 
-# Why the Inverted Axis Was Misleading
+## Why the Inverted Axis Was Misleading
 
 In the firearm-murder example:
 
@@ -481,7 +481,7 @@ The graph effectively disconnected:
 - numerical reality
     
 
-# Correct Use of Color vs Manipulative Structure
+## Correct Use of Color vs Manipulative Structure
 
 The lecture makes an important distinction:
 
@@ -500,7 +500,7 @@ Good storytelling emphasizes truth.
 
 Bad storytelling alters perception itself.
 
-# 2. Truncated Y-Axis
+## 2. Truncated Y-Axis
 
 The lecture then introduces another classic manipulation:
 
@@ -515,7 +515,7 @@ This means:
 
 This visually magnifies small differences.
 
-# Example: Tax Rate Increase
+## Example: Tax Rate Increase
 
 The example compares:
 
@@ -544,7 +544,7 @@ Instead of:
 - 0% to 40%
     
 
-# Why This Distorts Perception
+## Why This Distorts Perception
 
 Humans judge magnitude visually through:
 
@@ -584,7 +584,7 @@ The same increase appears:
 
 The chart amplifies emotional impact beyond numerical reality.
 
-# The Importance of Baselines
+## The Importance of Baselines
 
 The lecture correctly emphasizes:
 
@@ -613,7 +613,7 @@ If the baseline is altered:
 - the entire visual relationship changes.
     
 
-# When Truncation Is Acceptable
+## When Truncation Is Acceptable
 
 Important nuance:  
 not all truncated axes are unethical.
@@ -650,7 +650,7 @@ The problem occurs when truncation is used primarily to:
 - distort significance
     
 
-# Comparing Three Versions of the Same Data
+## Comparing Three Versions of the Same Data
 
 The lecture references three visual versions:
 
@@ -669,7 +669,7 @@ This reveals a profound truth:
 
 > Visualization framing often shapes interpretation more strongly than the underlying numbers themselves.
 
-# The Reader’s Responsibility
+## The Reader’s Responsibility
 
 The lecture gives an important defensive strategy for audiences:
 
@@ -699,7 +699,7 @@ This is especially important in:
 - social media visualizations
     
 
-# The Analyst’s Responsibility
+## The Analyst’s Responsibility
 
 The lecture also frames this as an ethical issue for analysts.
 
@@ -721,7 +721,7 @@ because visualization influences:
 - public understanding
     
 
-# Common Axis Manipulation Techniques
+## Common Axis Manipulation Techniques
 
 |Technique|Effect|
 |---|---|
@@ -731,7 +731,7 @@ because visualization influences:
 |Reversed axis|Inverts interpretation|
 |Missing baseline|Misrepresents proportionality|
 
-# The Psychological Mechanism
+## The Psychological Mechanism
 
 Humans process charts holistically first.
 
@@ -767,7 +767,7 @@ before:
 
 That is why misleading visuals are effective.
 
-# “Visualization Noise” and Decorative Distortion
+## “Visualization Noise” and Decorative Distortion
 
 The lecture then introduces another issue:
 
@@ -786,7 +786,7 @@ This refers to:
 - non-essential visual complexity
     
 
-# What Is Chartjunk?
+## What Is Chartjunk?
 
 The term was popularized by Edward Tufte.
 
@@ -814,7 +814,7 @@ These elements:
 - weaken interpretability
     
 
-# Why Decorative Overload Is Harmful
+## Why Decorative Overload Is Harmful
 
 Visualization should maximize:
 
@@ -844,7 +844,7 @@ Decorative clutter creates:
 |Complex textures|Reduces readability|
 |Animation overload|Breaks focus|
 
-# The Deeper Principle
+## The Deeper Principle
 
 Good visualization is not:
 
@@ -867,7 +867,7 @@ The goal is to align:
 - numerical truth
     
 
-# Key Strategic Lesson
+## Key Strategic Lesson
 
 The lecture repeatedly reinforces one foundational idea:
 
@@ -902,7 +902,7 @@ the visualization itself often becomes:
 > the reality people remember.
 
 ===
-# Misleading Comparisons Through Scale Manipulation
+## Misleading Comparisons Through Scale Manipulation
 
 This section of the lecture explores another dangerous visualization failure:
 
@@ -919,7 +919,7 @@ The examples demonstrate how:
 
 can distort interpretation even when the numbers themselves are technically correct.
 
-# 1. False Comparability Through Scale Design
+## 1. False Comparability Through Scale Design
 
 The first example involves survey results related to:
 
@@ -934,7 +934,7 @@ The issue is:
 
 > the visual encoding misrepresents magnitude differences.
 
-# The Core Problem
+## The Core Problem
 
 The graphs display values such as:
 
@@ -964,7 +964,7 @@ Otherwise:
 - scale relationships collapse
     
 
-# Why This Happens
+## Why This Happens
 
 The lecture suggests the designer:
 
@@ -985,7 +985,7 @@ The viewer instinctively interprets:
 when numerically:  
 they are not remotely similar.
 
-# Human Perception Relies on Physical Encoding
+## Human Perception Relies on Physical Encoding
 
 Humans decode charts through:
 
@@ -1011,7 +1011,7 @@ If the length is misleading:
 - the meaning becomes misleading.
     
 
-# Important Principle
+## Important Principle
 
 Bar charts must preserve:
 
@@ -1020,7 +1020,7 @@ Bar charts must preserve:
 
 Otherwise the visual encoding becomes dishonest.
 
-# De-emphasis vs Over-emphasis
+## De-emphasis vs Over-emphasis
 
 The lecture introduces an important duality:
 
@@ -1062,7 +1062,7 @@ Example:
 Goal:  
 make significant changes appear unimportant.
 
-# 2. Misleading Petrol Price Visualization
+## 2. Misleading Petrol Price Visualization
 
 The petrol price example is especially important because it demonstrates:
 
@@ -1070,7 +1070,7 @@ The petrol price example is especially important because it demonstrates:
 
 This is one of the most common analytical communication failures.
 
-# What the Graph Implied
+## What the Graph Implied
 
 The visualization strongly suggested:
 
@@ -1092,7 +1092,7 @@ The audience naturally concludes:
 
 > “Prices are lower.”
 
-# What Actually Happened
+## What Actually Happened
 
 The actual petrol prices increased:
 
@@ -1111,7 +1111,7 @@ The only thing that decreased was:
 
 This distinction is critical.
 
-# Difference Between Value and Growth Rate
+## Difference Between Value and Growth Rate
 
 The visualization confused:
 
@@ -1147,7 +1147,7 @@ Prices continuously rise.
 Growth slows.  
 But prices still increase.
 
-# Why This Is Misleading
+## Why This Is Misleading
 
 The graph visually encoded:
 
@@ -1175,7 +1175,7 @@ and interprets:
 even though:  
 prices are higher.
 
-# Correct Visualization Approach
+## Correct Visualization Approach
 
 The lecture correctly notes:
 
@@ -1204,7 +1204,7 @@ This avoids conflating:
 - acceleration
     
 
-# Core Visualization Principle
+## Core Visualization Principle
 
 Every visual encoding must answer clearly:
 
@@ -1226,7 +1226,7 @@ If encoding semantics become ambiguous:
 - interpretation breaks down.
     
 
-# Pre-attentive Manipulation
+## Pre-attentive Manipulation
 
 The lecture references:
 
@@ -1256,7 +1256,7 @@ Examples include:
 
 These cues strongly shape interpretation.
 
-# Why Pre-attentive Features Are Powerful
+## Why Pre-attentive Features Are Powerful
 
 Humans evolved to react rapidly to visual signals.
 
@@ -1280,7 +1280,7 @@ viewers instinctively associate:
 
 even before reading labels carefully.
 
-# Dual-Axis and Scaling Problems
+## Dual-Axis and Scaling Problems
 
 The lecture begins transitioning into another major issue:
 
@@ -1288,7 +1288,7 @@ The lecture begins transitioning into another major issue:
 
 This is one of the most abused techniques in business dashboards.
 
-# What Is a Dual-Axis Chart?
+## What Is a Dual-Axis Chart?
 
 A dual-axis chart uses:
 
@@ -1306,7 +1306,7 @@ Example:
 - customer satisfaction on right axis
     
 
-# Why Dual Axes Are Dangerous
+## Why Dual Axes Are Dangerous
 
 By changing scales independently:  
 analysts can visually force:
@@ -1329,7 +1329,7 @@ This can create:
 - false causality
     
 
-# Example Problem
+## Example Problem
 
 Suppose:
 
@@ -1350,7 +1350,7 @@ both correlate with:
 - summer temperature
     
 
-# The Deeper Problem
+## The Deeper Problem
 
 Humans assume:
 
@@ -1359,7 +1359,7 @@ Humans assume:
 
 Dual axes exploit this assumption.
 
-# Core Strategic Lesson
+## Core Strategic Lesson
 
 This section reinforces one of the most important principles in visualization:
 
@@ -1374,7 +1374,7 @@ If not:
 - decision quality declines
     
 
-# The Analyst’s Ethical Responsibility
+## The Analyst’s Ethical Responsibility
 
 A visualization designer controls:
 
@@ -1412,7 +1412,7 @@ Because in practice:
 
 ===
 
-# Scaling Problems and Dual-Axis Misuse
+## Scaling Problems and Dual-Axis Misuse
 
 This section of the lecture explores another subtle but highly dangerous visualization issue:
 
@@ -1427,7 +1427,7 @@ The problem becomes especially severe when:
 - dual axes are used carelessly
     
 
-# 1. Scale Compression Hides Meaning
+## 1. Scale Compression Hides Meaning
 
 The lecture gives an example comparing:
 
@@ -1450,7 +1450,7 @@ As a result:
 - its slope becomes difficult to interpret
     
 
-# Why This Happens
+## Why This Happens
 
 Suppose:
 
@@ -1473,7 +1473,7 @@ This destroys:
 - slope perception
     
 
-# Visual Compression Problem
+## Visual Compression Problem
 
 ```mermaid
 flowchart TD
@@ -1482,7 +1482,7 @@ flowchart TD
     C --> D[Trend Becomes Invisible]
 ```
 
-# Why Trend Shape Matters
+## Why Trend Shape Matters
 
 Humans infer meaning from:
 
@@ -1511,7 +1511,7 @@ A visually flat line may actually contain:
 
 But scaling masks it.
 
-# The Key Tradeoff in Visualization
+## The Key Tradeoff in Visualization
 
 When comparing variables:  
 you must preserve both:
@@ -1523,7 +1523,7 @@ you must preserve both:
 
 This is difficult when magnitudes differ drastically.
 
-# 2. Dual-Axis Charts
+## 2. Dual-Axis Charts
 
 The lecture introduces dual-axis charts as a potential solution.
 
@@ -1548,7 +1548,7 @@ This allows:
 - independent scaling
     
 
-# Proper Use of Dual Axes
+## Proper Use of Dual Axes
 
 Dual axes are not inherently bad.
 
@@ -1568,7 +1568,7 @@ But they require:
 - careful visual separation
     
 
-# Important Risk
+## Important Risk
 
 The lecture correctly warns:
 
@@ -1586,7 +1586,7 @@ Even if:
 - scales differ dramatically
     
 
-# Example of Misleading Alignment
+## Example of Misleading Alignment
 
 An analyst can manipulate scales so two unrelated variables visually move together.
 
@@ -1599,7 +1599,7 @@ This creates:
 - artificial synchronization
     
 
-# Good Dual-Axis Design Principles
+## Good Dual-Axis Design Principles
 
 |Principle|Reason|
 |---|---|
@@ -1609,7 +1609,7 @@ This creates:
 |Explain units explicitly|Preserve interpretability|
 |Use only when necessary|Reduce confusion|
 
-# The Deeper Problem: Humans See Patterns Everywhere
+## The Deeper Problem: Humans See Patterns Everywhere
 
 The lecture then moves into one of the most important concepts in analytics:
 
@@ -1628,7 +1628,7 @@ This is foundational in:
 - business analytics
     
 
-# Correlation vs Causation
+## Correlation vs Causation
 
 Correlation means:
 
@@ -1642,7 +1642,7 @@ Causation means:
 
 These are fundamentally different claims.
 
-# Correlation Example
+## Correlation Example
 
 The lecture gives intentionally absurd examples:
 
@@ -1658,7 +1658,7 @@ But:
 - similarity of movement does not prove causality.
     
 
-# Why Correlation Happens Accidentally
+## Why Correlation Happens Accidentally
 
 Variables can correlate because of:
 
@@ -1673,7 +1673,7 @@ Variables can correlate because of:
 - pure randomness
     
 
-# Example: Ice Cream Sales and Murders
+## Example: Ice Cream Sales and Murders
 
 Suppose both rise during summer.
 
@@ -1694,7 +1694,7 @@ This hidden influence is called:
 
 > a confounding variable.
 
-# Confounding Variables
+## Confounding Variables
 
 A confounder affects:
 
@@ -1721,7 +1721,7 @@ The true driver:
 - weather.
     
 
-# Why Humans Mistake Correlation for Causation
+## Why Humans Mistake Correlation for Causation
 
 Humans are evolved pattern-detection systems.
 
@@ -1739,7 +1739,7 @@ This tendency is extremely useful for survival.
 But analytically:  
 it creates danger.
 
-# Visualization Amplifies This Bias
+## Visualization Amplifies This Bias
 
 When two lines visually track together:  
 humans automatically infer:
@@ -1762,7 +1762,7 @@ Especially if:
 
 This is why careless visualization can unintentionally create false causal stories.
 
-# The Statistical Danger
+## The Statistical Danger
 
 The lecture warns analysts:
 
@@ -1781,7 +1781,7 @@ Visualization can suggest:
 
 But visualization alone rarely proves causality.
 
-# Establishing Causation Requires More
+## Establishing Causation Requires More
 
 Causal claims usually require:
 
@@ -1798,7 +1798,7 @@ Causal claims usually require:
 
 Merely observing correlation is insufficient.
 
-# Important Analytical Discipline
+## Important Analytical Discipline
 
 Good analysts distinguish carefully between:
 
@@ -1808,7 +1808,7 @@ Good analysts distinguish carefully between:
 |“Variables may be associated.”|Acceptable|
 |“Variable A causes Variable B.”|Requires strong evidence|
 
-# Why This Matters in Business
+## Why This Matters in Business
 
 False causal assumptions lead to:
 
@@ -1838,7 +1838,7 @@ Reality may be:
 
 The direction of causality may be reversed.
 
-# Visualization as Hypothesis Generation
+## Visualization as Hypothesis Generation
 
 One of the best uses of visualization is:
 
@@ -1866,7 +1866,7 @@ The lecture correctly emphasizes:
 
 > visual exploration should generate questions, not premature certainty.
 
-# Strategic Insight
+## Strategic Insight
 
 This section exposes a critical danger in modern dashboards and analytics culture:
 
@@ -1899,7 +1899,7 @@ Because ultimately:
 > the most dangerous dashboard is not the inaccurate one.  
 > It is the believable one that tells the wrong story.
 
-# Confounding Variables and the Limits of Correlation
+## Confounding Variables and the Limits of Correlation
 
 The lecture continues reinforcing a critical analytical principle:
 
@@ -1909,7 +1909,7 @@ These hidden influences are called:
 
 > confounding variables.
 
-# What Is a Confounding Variable?
+## What Is a Confounding Variable?
 
 A confounder is a variable that:
 
@@ -1936,7 +1936,7 @@ may actually be driven by:
 - A
     
 
-# Why Confounders Are Dangerous
+## Why Confounders Are Dangerous
 
 Without identifying confounders:
 
@@ -1964,7 +1964,7 @@ Real-world systems are:
 
 Complete causal certainty is often unrealistic.
 
-# Best Practice
+## Best Practice
 
 Therefore:
 
@@ -1990,7 +1990,7 @@ Dangerous language:
 
 unless causal evidence exists.
 
-# Simpson’s Paradox
+## Simpson’s Paradox
 
 The lecture then introduces one of the most important concepts in statistical reasoning:
 
@@ -2019,7 +2019,7 @@ This is profoundly important in:
 
 because aggregation can completely reverse interpretation.
 
-# Core Principle of Simpson’s Paradox
+## Core Principle of Simpson’s Paradox
 
 The way data is grouped fundamentally changes:
 
@@ -2034,7 +2034,7 @@ This means:
 
 > summaries can lie.
 
-# The Task Completion Example
+## The Task Completion Example
 
 The lecture gives an example involving:
 
@@ -2045,7 +2045,7 @@ The lecture gives an example involving:
 - Saturday and Sunday performance
     
 
-# Day-Level Analysis
+## Day-Level Analysis
 
 ## Saturday
 
@@ -2065,7 +2065,7 @@ B performs better.
 
 A performs better.
 
-# Aggregated Analysis
+## Aggregated Analysis
 
 When totals are combined:
 
@@ -2084,7 +2084,7 @@ The key insight:
 - subgroup behavior differs from overall behavior.
     
 
-# Why Simpson’s Paradox Happens
+## Why Simpson’s Paradox Happens
 
 It usually occurs because:
 
@@ -2100,7 +2100,7 @@ The aggregate hides:
 - structural imbalance
     
 
-# Business Example
+## Business Example
 
 The lecture translates this into business hierarchy:
 
@@ -2119,7 +2119,7 @@ Performance can differ dramatically depending on:
 - drill-down path
     
 
-# Example Problem
+## Example Problem
 
 Suppose:
 
@@ -2133,7 +2133,7 @@ Aggregated metrics may misleadingly favor one region overall even though:
 - subgroup performance differs.
     
 
-# Why This Matters in Dashboards
+## Why This Matters in Dashboards
 
 Dashboards often emphasize:
 
@@ -2159,7 +2159,7 @@ This is why:
 
 > drill-down capability is essential.
 
-# Drill-Down as a Defense Against Misleading Aggregation
+## Drill-Down as a Defense Against Misleading Aggregation
 
 The lecture correctly links Simpson’s Paradox to:
 
@@ -2190,7 +2190,7 @@ Without drill-down:
 - misleading aggregation remains hidden.
     
 
-# Narrative Control Through Grouping
+## Narrative Control Through Grouping
 
 A subtle but important insight from the lecture:
 
@@ -2209,7 +2209,7 @@ The sequence of:
 
 can guide audiences toward certain conclusions.
 
-# Example
+## Example
 
 If a dashboard first shows:
 
@@ -2235,7 +2235,7 @@ Same dataset.
 Different grouping hierarchy.  
 Different narrative.
 
-# Filter Ordering as Narrative Design
+## Filter Ordering as Narrative Design
 
 The lecture emphasizes:
 
@@ -2257,7 +2257,7 @@ Examples:
 
 Each path emphasizes different patterns.
 
-# Author-Driven vs Reader-Driven Connection
+## Author-Driven vs Reader-Driven Connection
 
 This directly connects to earlier storytelling concepts.
 
@@ -2293,7 +2293,7 @@ Most modern dashboards combine:
 - exploratory drill-down
     
 
-# Important Strategic Lesson
+## Important Strategic Lesson
 
 The lecture exposes a profound truth about analytics:
 
@@ -2328,7 +2328,7 @@ It is:
 - abstraction design
     
 
-# Why Analysts Must Be Careful
+## Why Analysts Must Be Careful
 
 Analysts often unintentionally:
 
@@ -2344,7 +2344,7 @@ aggregates feel cleaner and easier to communicate.
 
 But reality is hierarchical.
 
-# Final Insight
+## Final Insight
 
 The deeper lesson behind Simpson’s Paradox is:
 
@@ -2367,7 +2367,7 @@ Because in complex systems:
 
 > the most dangerous insights are often the ones that appear obvious at the top level.
 
-# Drill-Down Order and Narrative Framing
+## Drill-Down Order and Narrative Framing
 
 This section of the lecture explores a subtle but extremely important concept in dashboard storytelling:
 
@@ -2380,7 +2380,7 @@ This is a powerful idea because it shows:
 - navigation structure itself shapes perception
     
 
-# The Election Example
+## The Election Example
 
 The lecture uses the 2016 US election as an example.
 
@@ -2406,7 +2406,7 @@ The two dimensions used:
 2. Ethnicity
     
 
-# What Is Drill-Down?
+## What Is Drill-Down?
 
 Drill-down means:
 
@@ -2432,7 +2432,7 @@ Both lead to the same endpoint.
 
 But the interpretive journey differs.
 
-# Path 1: Gender → Ethnicity
+## Path 1: Gender → Ethnicity
 
 First layer:
 
@@ -2460,7 +2460,7 @@ Result:
 - 94% support among African American women
     
 
-# Narrative Effect
+## Narrative Effect
 
 The audience psychologically interprets:
 
@@ -2471,7 +2471,7 @@ Gender becomes:
 - the primary explanatory lens.
     
 
-# Path 2: Ethnicity → Gender
+## Path 2: Ethnicity → Gender
 
 Now reverse the order.
 
@@ -2485,7 +2485,7 @@ Then:
 - women within that subgroup supported her even more strongly
     
 
-# Narrative Effect
+## Narrative Effect
 
 The audience now interprets:
 
@@ -2496,7 +2496,7 @@ Now ethnicity becomes:
 - the primary explanatory frame.
     
 
-# Important Insight
+## Important Insight
 
 The final subgroup result is identical:
 
@@ -2508,7 +2508,7 @@ But the interpretive emphasis changes dramatically depending on:
 - drill-down order
     
 
-# Why This Matters Psychologically
+## Why This Matters Psychologically
 
 Humans heavily anchor on:
 
@@ -2526,7 +2526,7 @@ This is called:
 
 > framing effect.
 
-# Framing Effect in Dashboards
+## Framing Effect in Dashboards
 
 Dashboard designers often underestimate this.
 
@@ -2548,7 +2548,7 @@ all shape:
 - narrative emphasis
     
 
-# Visualization Is Sequential Cognition
+## Visualization Is Sequential Cognition
 
 Dashboards are not merely:
 
@@ -2561,7 +2561,7 @@ They are:
 
 The sequence of exposure matters.
 
-# Example Analogy
+## Example Analogy
 
 Imagine these headlines:
 
@@ -2584,7 +2584,7 @@ But they activate different:
 - emotional associations
     
 
-# Why Interactive Dashboards Matter
+## Why Interactive Dashboards Matter
 
 The lecture makes an important recommendation:
 
@@ -2608,7 +2608,7 @@ Good dashboards allow:
 - user-controlled hierarchy
     
 
-# Hybrid Narrative Design
+## Hybrid Narrative Design
 
 This directly connects to:
 
@@ -2646,7 +2646,7 @@ The system:
 
 This is usually the best design approach.
 
-# Why Drill-Down Order Can Manipulate Audiences
+## Why Drill-Down Order Can Manipulate Audiences
 
 The lecture correctly warns:
 
@@ -2670,7 +2670,7 @@ Even subtle ordering changes can:
 - change perceived causality
     
 
-# Business Example
+## Business Example
 
 Suppose customer churn analysis is presented.
 
@@ -2703,7 +2703,7 @@ Narrative:
 Same data.  
 Different story.
 
-# The Hidden Power of Dashboard Architecture
+## The Hidden Power of Dashboard Architecture
 
 This section reveals a profound truth:
 
@@ -2729,7 +2729,7 @@ But:
 
 all shape understanding.
 
-# Cherry Picking
+## Cherry Picking
 
 The lecture finally transitions into another major issue:
 
@@ -2748,7 +2748,7 @@ This occurs when analysts selectively present:
 
 while ignoring contradictory evidence.
 
-# Why Cherry Picking Is Dangerous
+## Why Cherry Picking Is Dangerous
 
 Cherry picking creates:
 
@@ -2770,7 +2770,7 @@ Examples:
 - ignoring broader trends
     
 
-# Common Cherry-Picking Tactics
+## Common Cherry-Picking Tactics
 
 |Technique|Effect|
 |---|---|
@@ -2779,7 +2779,7 @@ Examples:
 |Highlighting extreme points|Exaggerates conclusions|
 |Selective subgroup focus|Creates narrative bias|
 
-# The Strategic Lesson
+## The Strategic Lesson
 
 This lecture section ultimately teaches:
 
@@ -2819,7 +2819,7 @@ It is:
 - rhetorical
     
 
-# Final Insight
+## Final Insight
 
 The strongest analysts constantly ask:
 
@@ -2839,7 +2839,7 @@ Because in practice:
 > the most persuasive dashboard is not always the most truthful one.
 
 ===
-# Cherry Picking and Selective Framing
+## Cherry Picking and Selective Framing
 
 This section of the lecture discusses another major source of misleading analytics:
 
@@ -2867,7 +2867,7 @@ Importantly:
 - yet the overall interpretation becomes misleading
     
 
-# Why Cherry Picking Is Dangerous
+## Why Cherry Picking Is Dangerous
 
 Humans naturally assume:
 
@@ -2885,7 +2885,7 @@ Most audiences do not ask:
 
 This creates enormous narrative power.
 
-# The Core Mechanism
+## The Core Mechanism
 
 Cherry picking manipulates:
 
@@ -2899,7 +2899,7 @@ The numbers themselves may be true.
 
 But selective framing changes perceived significance.
 
-# Example: UK National Debt as Percentage of GDP
+## Example: UK National Debt as Percentage of GDP
 
 The lecture uses the example of United Kingdom national debt.
 
@@ -2921,7 +2921,7 @@ At first glance:
 - viewers infer crisis escalation
     
 
-# The Hidden Manipulation
+## The Hidden Manipulation
 
 The problem:
 
@@ -2935,7 +2935,7 @@ When earlier historical data is included:
 
 This completely changes interpretation.
 
-# Two Different Narratives
+## Two Different Narratives
 
 ## Cherry-Picked Narrative
 
@@ -2961,7 +2961,7 @@ Interpretation:
 
 > “Debt increased recently but is not historically unprecedented.”
 
-# Why Context Changes Meaning
+## Why Context Changes Meaning
 
 Humans interpret patterns relatively.
 
@@ -2979,7 +2979,7 @@ This demonstrates a foundational principle:
 
 > Timeframe selection is itself a storytelling decision.
 
-# The Ethical Responsibility of Analysts
+## The Ethical Responsibility of Analysts
 
 The lecture emphasizes:
 
@@ -3003,7 +3003,7 @@ instead of:
 - contextual honesty
     
 
-# Best Practices Against Cherry Picking
+## Best Practices Against Cherry Picking
 
 ## 1. Use Longer Timelines When Relevant
 
@@ -3028,7 +3028,7 @@ Explicitly state:
 
 This increases interpretive transparency.
 
-# Example of Responsible Framing
+## Example of Responsible Framing
 
 Instead of:
 
@@ -3045,7 +3045,7 @@ This preserves:
 - contextual accuracy
     
 
-# Accuracy vs Aesthetics
+## Accuracy vs Aesthetics
 
 The lecture makes an important philosophical point:
 
@@ -3067,7 +3067,7 @@ Good visualization prioritizes:
 - contextual honesty
     
 
-# Color Saturation and Visual Attention Manipulation
+## Color Saturation and Visual Attention Manipulation
 
 The lecture then transitions into another subtle manipulation mechanism:
 
@@ -3075,7 +3075,7 @@ The lecture then transitions into another subtle manipulation mechanism:
 
 This is especially important because humans process color pre-attentively.
 
-# What Is Color Saturation?
+## What Is Color Saturation?
 
 Saturation refers to:
 
@@ -3096,7 +3096,7 @@ Muted colors:
 - recede into background perception
     
 
-# COVID-19 Example
+## COVID-19 Example
 
 The lecture references a map showing COVID-positive cases across the United States.
 
@@ -3115,7 +3115,7 @@ Meanwhile:
 - larger states with much higher counts appeared visually weaker.
     
 
-# Why This Is Misleading
+## Why This Is Misleading
 
 Humans instinctively associate:
 
@@ -3131,7 +3131,7 @@ If saturation encoding does not align with magnitude:
 - attention becomes distorted
     
 
-# Pre-attentive Attention Hijacking
+## Pre-attentive Attention Hijacking
 
 The lecture highlights states like:
 
@@ -3155,7 +3155,7 @@ Meanwhile states with larger actual case counts such as:
 
 appeared less visually dominant.
 
-# Why This Happens
+## Why This Happens
 
 The visual system prioritizes:
 
@@ -3174,7 +3174,7 @@ This means:
 
 > color encoding directly shapes perceived importance.
 
-# Good Color Encoding Principles
+## Good Color Encoding Principles
 
 ## Sequential Data
 
@@ -3207,7 +3207,7 @@ Color should encode:
 - emotional manipulation
     
 
-# Common Color Misuse Patterns
+## Common Color Misuse Patterns
 
 |Misuse|Result|
 |---|---|
@@ -3217,7 +3217,7 @@ Color should encode:
 |Excessive color variety|Cognitive overload|
 |Inconsistent gradients|Interpretive confusion|
 
-# The Deeper Principle
+## The Deeper Principle
 
 This lecture section reinforces a crucial truth:
 
@@ -3249,7 +3249,7 @@ That means visualization design directly shapes:
 - perceived urgency
     
 
-# Strategic Insight
+## Strategic Insight
 
 Cherry picking and color manipulation both exploit the same fundamental mechanism:
 
@@ -3266,7 +3266,7 @@ The analyst decides:
 
 This is why visualization is never purely neutral.
 
-# Final Lesson
+## Final Lesson
 
 The strongest visualization practitioners constantly ask:
 
@@ -3287,7 +3287,7 @@ Because ultimately:
 > They rely on selective perception.
 
 ===
-# Misuse of Color Saturation in Visualization
+## Misuse of Color Saturation in Visualization
 
 The lecture concludes with a final but extremely important visualization principle:
 
@@ -3302,7 +3302,7 @@ When this relationship breaks:
 - audiences draw incorrect conclusions
     
 
-# The COVID Case Map Example
+## The COVID Case Map Example
 
 The lecture discusses a COVID-19 case map across the United States.
 
@@ -3338,7 +3338,7 @@ instead of states with substantially higher counts such as:
 - New York
     
 
-# Why This Happens
+## Why This Happens
 
 Human visual cognition prioritizes:
 
@@ -3364,7 +3364,7 @@ This means:
 
 > darker colors automatically feel more significant.
 
-# Color as a Pre-attentive Attribute
+## Color as a Pre-attentive Attribute
 
 Color is one of the strongest pre-attentive visual features.
 
@@ -3381,7 +3381,7 @@ That makes it extremely powerful for:
 
 But it also makes misuse dangerous.
 
-# Correct Use of Saturation
+## Correct Use of Saturation
 
 For quantitative data:
 
@@ -3398,7 +3398,7 @@ Example:
 
 This creates intuitive interpretation.
 
-# Counterintuitive Saturation
+## Counterintuitive Saturation
 
 The lecture warns against:
 
@@ -3418,7 +3418,7 @@ Just like inverted axes:
 - it breaks perceptual consistency.
     
 
-# Why Legends Matter
+## Why Legends Matter
 
 The lecture ends with an important practical warning:
 
@@ -3447,7 +3447,7 @@ This creates opportunities for:
 - interpretive confusion
     
 
-# Visualization Literacy
+## Visualization Literacy
 
 This entire lecture ultimately teaches:
 
@@ -3470,7 +3470,7 @@ Good visualization consumers should always verify:
 - proportional encoding
     
 
-# Summary of Misleading Visualization Techniques
+## Summary of Misleading Visualization Techniques
 
 |Technique|How It Misleads|
 |---|---|
@@ -3484,7 +3484,7 @@ Good visualization consumers should always verify:
 |Decorative clutter|Obscures meaning|
 |Color saturation misuse|Misdirects attention|
 
-# Core Analytical Principle
+## Core Analytical Principle
 
 A visualization should preserve:
 
@@ -3501,7 +3501,7 @@ Meaning:
 If those diverge:  
 the chart becomes misleading even if the raw data is technically correct.
 
-# Final Strategic Insight
+## Final Strategic Insight
 
 The lecture repeatedly reinforces a deeper truth:
 
@@ -3536,7 +3536,7 @@ They are shaping:
 - public perception
     
 
-# Best Practices for Ethical Visualization
+## Best Practices for Ethical Visualization
 
 ## As an Analyst
 
@@ -3576,7 +3576,7 @@ Always verify:
 - hidden assumptions
     
 
-# Final Takeaway
+## Final Takeaway
 
 The strongest visualizations are not:
 
