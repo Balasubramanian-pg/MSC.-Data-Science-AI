@@ -5,7 +5,7 @@ week: W01 - Module 1a. Introduction to Visualization
 ---
 
 
-# Page 1
+## Page 1
 
  
  
@@ -54,7 +54,7 @@ Now, I will try to bring the role of context in this and try to explain how cont
 very important. For example, you have taken vote or turn out ratio and we have come 
 
 
-# Page 2
+## Page 2
 
  
  
@@ -104,7 +104,7 @@ you have higher number of voters per booth the voter turnout is likely to be low
 this can provide insight to election commission to increase the number of booths in a  
 
 
-# Page 3
+## Page 3
 
  
  
@@ -155,7 +155,7 @@ limited space or limited time then that also becomes part of context to give mos
  
 
 
-# Page 4
+## Page 4
 
  
  
