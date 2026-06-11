@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W04 - Data Cleaning
 ---
 
-# Index
+## Index
 
 1. Introduction to Data Cleaning
     
@@ -38,7 +38,7 @@ week: W04 - Data Cleaning
 11. Key Takeaways
     
 
-# Introduction to Data Cleaning
+## Introduction to Data Cleaning
 
 Data cleaning is one of the most important stages in machine learning and data preprocessing because real-world data is rarely usable in its raw form.
 
@@ -46,7 +46,7 @@ Before building predictive systems, the collected data must first be cleaned, st
 
 The lecture emphasizes that machine learning does not begin with algorithms. It begins with converting messy real-world observations into structured digital data.
 
-# Why Real-World Data is Dirty
+## Why Real-World Data is Dirty
 
 Real-world data collection systems are inherently imperfect.
 
@@ -81,7 +81,7 @@ $$
 Garbage\ In \Rightarrow Garbage\ Out  
 $$
 
-# Physical World to Digital Data Conversion
+## Physical World to Digital Data Conversion
 
 Machine learning systems first observe physical entities from the real world and then convert them into digital representations.
 
@@ -119,7 +119,7 @@ flowchart LR
     F --> G[Rain / No Rain Prediction]
 ```
 
-# Sources of Dirty Data
+## Sources of Dirty Data
 
 During digitalization, multiple types of errors may enter the system.
 
@@ -133,7 +133,7 @@ During digitalization, multiple types of errors may enter the system.
 
 The lecture emphasizes that dirty data is the default condition in real-world systems, not the exception.
 
-# Types of Data Quality Problems
+## Types of Data Quality Problems
 
 The lecture identifies three major forms of dirty data.
 
@@ -196,7 +196,7 @@ Example:
 
 The lack of standardization introduces inconsistency.
 
-# Why Data Cleaning is Necessary
+## Why Data Cleaning is Necessary
 
 Machine learning algorithms rely on mathematical computations.
 
@@ -222,7 +222,7 @@ flowchart TD
 
 Without cleaning, downstream predictions become unreliable.
 
-# Understanding Missing Values
+## Understanding Missing Values
 
 Missing values occur when information is unavailable for certain observations.
 
@@ -245,7 +245,7 @@ Missing values may occur because:
 - Entry was skipped accidentally
     
 
-# Missing Values and Machine Learning Failure
+## Missing Values and Machine Learning Failure
 
 The lecture explains that many machine learning algorithms depend on mathematical similarity calculations.
 
@@ -273,7 +273,7 @@ This directly affects:
 - Similarity matching
     
 
-# Euclidean Distance and Missing Data
+## Euclidean Distance and Missing Data
 
 The lecture introduces Euclidean distance conceptually.
 
@@ -293,7 +293,7 @@ This prevents many machine learning algorithms from functioning properly.
 
 The lecture emphasizes that preprocessing is required not just for cleanliness but for mathematical computability itself.
 
-# Methods for Handling Missing Values
+## Methods for Handling Missing Values
 
 The lecture introduces several broad approaches for handling missing values.
 
@@ -418,7 +418,7 @@ If salary is missing but age is known, the system may infer the missing value us
 
 This approach incorporates domain knowledge directly into preprocessing.
 
-# Key Takeaways
+## Key Takeaways
 
 The lecture emphasizes that dirty data is unavoidable in real-world machine learning systems because physical observations must first be converted into digital representations.
 
