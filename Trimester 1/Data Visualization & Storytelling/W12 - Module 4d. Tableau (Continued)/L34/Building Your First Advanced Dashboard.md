@@ -5,7 +5,7 @@ week: W12 - Module 4d. Tableau (Continued)
 ---
 
 
-# Page 1
+## Page 1
 
  
  
@@ -59,7 +59,7 @@ information in a very crisp manner. And in Tableau to achieve this, you have to 
 individual visualisations and for each visualisation you have to use one sheet. 
 
 
-# Page 2
+## Page 2
 
  
  
@@ -113,7 +113,7 @@ So there are different fonts you can try. So whatever you want, the default is t
 light. So and the colour is black. 
 
 
-# Page 3
+## Page 3
 
  
  
@@ -167,7 +167,7 @@ computing something called as a calculated measure. You have already seen a
 calculated measure, right? So create a calculated field. 
 
 
-# Page 4
+## Page 4
 
  
  
@@ -219,7 +219,7 @@ graph.
   
 
 
-# Page 5
+## Page 5
 
  
  
@@ -272,7 +272,7 @@ you are now trying to understand the category wise differences, for example, plu
 indicates technology, how technology products, how furniture, how office supplies is 
 
 
-# Page 6
+## Page 6
 
  
  
@@ -326,7 +326,7 @@ So now what else we can do? OK, what is another important metric that you would 
 interested in? You'd be interested in how much is the per customer, OK, sales that is 
 
 
-# Page 7
+## Page 7
 
  
  
@@ -380,7 +380,7 @@ customers, so I'm just taking customer ID here, so I'm just doing OK.
   
 
 
-# Page 8
+## Page 8
 
  
  
@@ -433,7 +433,7 @@ customer.
   
 
 
-# Page 9
+## Page 9
 
  
  
@@ -486,7 +486,7 @@ you can have the different sizes of the dashboard. Here it is range we have give
   
 
 
-# Page 10
+## Page 10
 
  
  
@@ -540,7 +540,7 @@ profit percentage. You can also add a profit percentage here.
   
 
 
-# Page 11
+## Page 11
 
  
  
