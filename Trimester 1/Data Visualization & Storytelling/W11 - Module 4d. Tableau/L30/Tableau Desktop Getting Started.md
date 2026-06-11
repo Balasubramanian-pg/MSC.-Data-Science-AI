@@ -1,7 +1,7 @@
 ---
-title: W11 - Module 4d. Tableau
+title: W11 - Module 4d. Tableau - Module 4d. Tableau
 module: Statistical Modelling And Inferencing
-week: W11 - Module 4d. Tableau
+week: W11 - Module 4d. Tableau - Module 4d. Tableau
 ---
 
 
