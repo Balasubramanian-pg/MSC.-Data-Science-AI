@@ -228,3 +228,5 @@ When deploying predictive methods in production systems, algorithm selection is 
 *   **Discriminative vs. Generative Models:** Understand why Logistic Regression is discriminative (models $P(Y|X)$) while Naive Bayes is generative (models $P(X,Y)$).
 *   **Support Vector Machines (SVM):** The mathematical translation of classification into a margin-maximization problem using the kernel trick.
 *   **Ensemble Methods:** Bagging (Random Forests) and Boosting (Gradient Boosting Machines) to reduce the variance and bias of predictive engines.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
