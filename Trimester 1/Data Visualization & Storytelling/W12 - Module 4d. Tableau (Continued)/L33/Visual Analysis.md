@@ -63,3 +63,5 @@ The tutorial uses the standard **Sample Superstore Data**. To perform cross-func
 *   **Sort Logically:** Always sort categories in a way that reveals logical patterns to convince your audience.
 *   **Use Visual Cues Effectively:** Utilize color palettes, mark labels, and specific map types (filled maps vs. dot maps) that best suit the narrative of your data.
 *   **Test and Iterate:** Explore the dataset with different visuals, swap rows and columns, and test different elements before publishing them to a final dashboard.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
