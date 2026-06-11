@@ -1,3 +1,9 @@
+---
+title: W12 - Module 4d. Tableau (Continued)
+module: Statistical Modelling And Inferencing
+week: W12 - Module 4d. Tableau (Continued)
+---
+
 
 # Page 1
 
