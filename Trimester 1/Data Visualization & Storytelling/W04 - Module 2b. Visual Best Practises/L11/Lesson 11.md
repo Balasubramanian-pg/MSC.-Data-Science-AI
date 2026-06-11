@@ -1011,3 +1011,5 @@ The concepts in this lesson strongly align with the foundational works of:
 - Andy Kirk, _Data Visualization: A Successful Design Process_
     
 - Gestalt psychology research on perception and grouping
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
