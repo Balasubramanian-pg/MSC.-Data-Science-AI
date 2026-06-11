@@ -261,3 +261,5 @@ Apriori requires scanning the database multiple times (once for each $k$-itemset
 *   **Density-Based Clustering:** Study DBSCAN and HDBSCAN to understand how to cluster non-spherical data and handle noise/outliers inherently.
 *   **Probabilistic Clustering:** Study Gaussian Mixture Models (GMM) and the Expectation-Maximization (EM) algorithm to understand soft-assignment clustering.
 *   **Sequence Mining:** Extend Association Rules to time-series data (e.g., PrefixSpan) to predict what a user will buy *next week* based on what they bought *this week*.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
