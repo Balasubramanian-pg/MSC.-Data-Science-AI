@@ -401,3 +401,5 @@ $$\text{Value}_{\text{Normalized}} = \frac{\text{Value}_{\text{Actual}}}{\text{M
 1. **Verify Your Data Engine Capabilities:** Ensure your charting engine supports the dynamic layout calculations required for advanced visualizations [1]. Avoid basic spreadsheets for complex layouts like circle packing and Sankey diagrams [1].
 2. **Handle Edge Cases Early:** Sanitize raw transactional data to resolve nested loops, scale outliers, and handle negative values before passing records to client-side renders.
 3. **Prioritize Reader Comprehension:** Limit initial rendering depth, lock scales across multi-chart grids, and use hover states to keep dashboards clean, clear, and easy to interpret [3].
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
