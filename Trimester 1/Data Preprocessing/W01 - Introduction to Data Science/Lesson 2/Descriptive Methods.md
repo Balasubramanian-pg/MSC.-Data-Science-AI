@@ -1,3 +1,9 @@
+---
+title: W01 - Introduction to Data Science
+module: Statistical Modelling And Inferencing
+week: W01 - Introduction to Data Science
+---
+
 # Descriptive Methods in Machine Learning: Clustering and Association Rule Mining
 
 > [!NOTE]
