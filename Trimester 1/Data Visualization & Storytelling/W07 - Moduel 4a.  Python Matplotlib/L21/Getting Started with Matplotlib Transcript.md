@@ -1,3 +1,9 @@
+---
+title: W07 - Moduel 4a.  Python Matplotlib
+module: Statistical Modelling And Inferencing
+week: W07 - Moduel 4a.  Python Matplotlib
+---
+
 # Getting Started with Matplotlib
 
 This lecture transitions from visualization theory into practical implementation using the Python visualization library Matplotlib.
