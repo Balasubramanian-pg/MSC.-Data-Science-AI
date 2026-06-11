@@ -2338,3 +2338,5 @@ It is understanding:
 - which perspective reveals hidden truth
     
 - and how to guide people from observation to decision.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
