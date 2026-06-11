@@ -5,7 +5,7 @@ week: W05 - Module 3a.  Dashboards
 ---
 
 
-# Page 1
+## Page 1
 
  
  
@@ -59,7 +59,7 @@ The display medium also becomes very important whether you are trying to showcas
 it as a live presentation or whether it has interactivity features which are disturbing. 
 
 
-# Page 2
+## Page 2
 
  
  
