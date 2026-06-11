@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ---
 
-# Plotting Data from CSVs and DataFrames
+## Plotting Data from CSVs and DataFrames
 
 ## Introduction
 
@@ -35,7 +35,7 @@ Source transcript:
 
 ---
 
-# Standard Imports
+## Standard Imports
 
 The lecture begins with:
 
@@ -49,7 +49,7 @@ These form the core scientific visualization stack.
 
 ---
 
-# Setting a Global Style
+## Setting a Global Style
 
 ```python
 plt.style.use('seaborn-v0_8-whitegrid')
@@ -79,7 +79,7 @@ Without styles:
 
 ---
 
-# Understanding CSV Data
+## Understanding CSV Data
 
 CSV means:
 
@@ -107,7 +107,7 @@ Each column:
 
 ---
 
-# Reading CSV Data into Pandas
+## Reading CSV Data into Pandas
 
 The lecture demonstrates:
 
@@ -123,7 +123,7 @@ But it also shows an advanced idea:
 
 ---
 
-# Creating CSV Data as a String
+## Creating CSV Data as a String
 
 ```python
 data = """
@@ -136,7 +136,7 @@ Germany,50000,81,83,Europe
 
 ---
 
-# Reading String Data into Pandas
+## Reading String Data into Pandas
 
 ```python
 from io import StringIO
@@ -150,7 +150,7 @@ This converts raw text into a DataFrame.
 
 ---
 
-# Why This Matters
+## Why This Matters
 
 This technique is useful for:
 
@@ -167,7 +167,7 @@ This technique is useful for:
 
 ---
 
-# Understanding DataFrames
+## Understanding DataFrames
 
 The transcript repeatedly emphasizes DataFrames.
 
@@ -186,7 +186,7 @@ Conceptually:
 
 ---
 
-# Inspecting DataFrames
+## Inspecting DataFrames
 
 Always inspect imported data immediately.
 
@@ -202,7 +202,7 @@ This prevents silent failures.
 
 ---
 
-# Bubble Scatter Plot
+## Bubble Scatter Plot
 
 The lecture demonstrates a bubble chart.
 
@@ -219,7 +219,7 @@ simultaneously.
 
 ---
 
-# Plotting GDP vs Life Expectancy
+## Plotting GDP vs Life Expectancy
 
 ```python
 import matplotlib.pyplot as plt
@@ -248,7 +248,7 @@ Source transcript:
 
 ---
 
-# Why GDP Was Chosen as X-Axis
+## Why GDP Was Chosen as X-Axis
 
 The lecture explains an implicit hypothesis:
 
@@ -269,7 +269,7 @@ So:
 
 ---
 
-# Why Bubble Size Matters
+## Why Bubble Size Matters
 
 The lecture uses:
 
@@ -297,7 +297,7 @@ Now the chart simultaneously represents:
 
 ---
 
-# Why Scaling Is Necessary
+## Why Scaling Is Necessary
 
 Without scaling:
 
@@ -313,7 +313,7 @@ Large populations can dominate the figure.
 
 ---
 
-# Advanced Bubble Scaling
+## Advanced Bubble Scaling
 
 Better scaling often uses:
 
@@ -325,7 +325,7 @@ This reduces perceptual distortion.
 
 ---
 
-# Cognitive Problem with Bubble Charts
+## Cognitive Problem with Bubble Charts
 
 Humans compare lengths more accurately than areas.
 
@@ -340,7 +340,7 @@ Bubble charts can mislead perception because:
 
 ---
 
-# Improved Bubble Plot
+## Improved Bubble Plot
 
 ```python
 plt.figure(figsize=(10,6))
@@ -370,7 +370,7 @@ plt.show()
 
 ---
 
-# Why `alpha` Matters
+## Why `alpha` Matters
 
 ```python
 alpha=0.7
@@ -389,7 +389,7 @@ Useful for:
 
 ---
 
-# Random Data Generation
+## Random Data Generation
 
 The lecture then shifts toward synthetic data simulation.
 
@@ -397,7 +397,7 @@ Source transcript:
 
 ---
 
-# Creating Random DataFrames
+## Creating Random DataFrames
 
 ```python
 import numpy as np
@@ -419,7 +419,7 @@ df = pd.DataFrame(
 
 ---
 
-# Understanding `randn()`
+## Understanding `randn()`
 
 ```python
 np.random.randn(1000, 3)
@@ -441,7 +441,7 @@ standard normal distribution.
 
 ---
 
-# Why Random Seeds Matter
+## Why Random Seeds Matter
 
 ```python
 np.random.seed(42)
@@ -460,7 +460,7 @@ Without fixed seeds:
 
 ---
 
-# Time-Series Index
+## Time-Series Index
 
 ```python
 pd.date_range()
@@ -481,7 +481,7 @@ This enables:
 
 ---
 
-# Cumulative Sum and Random Walks
+## Cumulative Sum and Random Walks
 
 The lecture introduces:
 
@@ -493,7 +493,7 @@ This is extremely important conceptually.
 
 ---
 
-# What Is a Random Walk?
+## What Is a Random Walk?
 
 A random walk is:
 
@@ -510,7 +510,7 @@ Each step depends on the previous position.
 
 ---
 
-# Why Random Walks Matter
+## Why Random Walks Matter
 
 Random walks appear everywhere:
 
@@ -524,7 +524,7 @@ Random walks appear everywhere:
 
 ---
 
-# Plotting Random Walks
+## Plotting Random Walks
 
 ```python
 df.cumsum().plot()
@@ -541,7 +541,7 @@ Source transcript:
 
 ---
 
-# Why Cumulative Sum Changes Everything
+## Why Cumulative Sum Changes Everything
 
 Without cumulative sum:
 
@@ -563,7 +563,7 @@ This creates trend-like behavior.
 
 ---
 
-# Visual Difference
+## Visual Difference
 
 ## Raw Noise
 
@@ -581,7 +581,7 @@ This is fundamentally different statistically.
 
 ---
 
-# Mathematical Interpretation
+## Mathematical Interpretation
 
 Suppose:
 
@@ -603,7 +603,7 @@ This is why random walks drift increasingly over time.
 
 ---
 
-# Plotting Multiple Series
+## Plotting Multiple Series
 
 The lecture uses:
 
@@ -624,7 +624,7 @@ Matplotlib automatically plots all series.
 
 ---
 
-# Advanced Plot Customization
+## Advanced Plot Customization
 
 ```python
 df.cumsum().plot(
@@ -650,7 +650,7 @@ plt.show()
 
 ---
 
-# Why Random Walks Look Predictive
+## Why Random Walks Look Predictive
 
 Humans naturally detect patterns even in randomness.
 
@@ -669,7 +669,7 @@ This is a major issue in financial analysis.
 
 ---
 
-# Machine Learning Connections
+## Machine Learning Connections
 
 Random walks are foundational in:
 
@@ -683,7 +683,7 @@ Random walks are foundational in:
 
 ---
 
-# Advanced Visualization Pipeline
+## Advanced Visualization Pipeline
 
 ```mermaid
 flowchart TD
@@ -702,7 +702,7 @@ E --> F[Matplotlib Visualization]
 
 ---
 
-# Common Mistakes
+## Common Mistakes
 
 ## Forgetting Datetime Indexes
 
@@ -728,7 +728,7 @@ Always inspect imported data.
 
 ---
 
-# Final Takeaways
+## Final Takeaways
 
 This lecture is fundamentally about:
 
