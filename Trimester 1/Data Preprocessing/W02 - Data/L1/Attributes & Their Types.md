@@ -1,3 +1,9 @@
+---
+title: W02 - Data
+module: Statistical Modelling And Inferencing
+week: W02 - Data
+---
+
 # Data Attributes and Measurement Scales in Machine Learning
 
 > [!NOTE]
