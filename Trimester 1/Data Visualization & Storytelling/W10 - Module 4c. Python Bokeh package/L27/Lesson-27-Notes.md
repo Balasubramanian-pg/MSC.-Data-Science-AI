@@ -1,3 +1,9 @@
+---
+title: W10 - Module 4c. Python Bokeh package
+module: Statistical Modelling And Inferencing
+week: W10 - Module 4c. Python Bokeh package
+---
+
 Here is a clean, production-ready, and fully documented version of your Lesson 27 notes.
 
 The original notes had a few broken syntax issues (such as `x2` and `x3` instead of proper Python exponents `x2` and `x3`). This refactored version fixes those errors, organizes the concepts logically, adds explicit comments detailing _why_ certain methods are used, and includes a comprehensive cheat sheet for your study reference.
