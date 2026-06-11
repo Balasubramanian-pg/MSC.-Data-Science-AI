@@ -1,3 +1,9 @@
+---
+title: W06 -Module 3b.  Visual Story Telling
+module: Statistical Modelling And Inferencing
+week: W06 -Module 3b.  Visual Story Telling
+---
+
 # 1. The Importance of Business Storytelling
 
 Business storytelling is not decoration added after analysis. It is the mechanism that converts information into action.
