@@ -75,3 +75,5 @@ Once the core chart is chosen, use subtle visual mechanisms to guide the audienc
 *   **Keep It Simple:** Avoid artificial complexity. Eliminate 3D effects, over-cluttered axes, and excessive, non-supporting visual details [2]. 
 
 > **Important Limit:** Do not overdo design elements. Visual hierarchies, annotations, and colors should *only* be added if they actively support the narrative. If an element does not help tell the story, leave it out [2].
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
