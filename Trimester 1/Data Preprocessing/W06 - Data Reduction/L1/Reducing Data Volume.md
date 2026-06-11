@@ -395,3 +395,5 @@ The lecture ultimately frames compression as an engineering decision based on:
 - Computational constraints
     
 - Analytical goals
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
