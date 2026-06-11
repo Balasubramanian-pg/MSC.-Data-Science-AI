@@ -1,3 +1,9 @@
+---
+title: W05 - Data Transformation and Aggregation
+module: Statistical Modelling And Inferencing
+week: W05 - Data Transformation and Aggregation
+---
+
 # Week 5: Data Transformation and Aggregation
 
 ---
