@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W03 - Data Quality and Issues
 ---
 
-# Index
+## Index
 
 1. Introduction to Noise and Outliers
     
@@ -35,7 +35,7 @@ week: W03 - Data Quality and Issues
 14. Key Takeaways
     
 
-# Introduction to Noise and Outliers
+## Introduction to Noise and Outliers
 
 Noise and outliers are two of the most important data quality problems in machine learning and data preprocessing. Although both appear unusual inside datasets, they represent fundamentally different phenomena.
 
@@ -43,7 +43,7 @@ Noise refers to corrupted or distorted data caused by random errors. Outliers, o
 
 Understanding the distinction is critical because machine learning systems handle them differently.
 
-# Understanding Data Noise
+## Understanding Data Noise
 
 Noise refers to unwanted modification in original data values. It is essentially random error or variance introduced into measurements.
 
@@ -68,7 +68,7 @@ $$
 \text{Noisy Data} = \text{Original Data} + \text{Random Error}  
 $$
 
-# Causes of Noisy Data
+## Causes of Noisy Data
 
 Noise can emerge from several real-world operational failures.
 
@@ -81,7 +81,7 @@ Noise can emerge from several real-world operational failures.
 
 The lecture emphasizes that noisy data is unavoidable in practical systems because real-world infrastructure is imperfect.
 
-# Faulty Data Collection Instruments
+## Faulty Data Collection Instruments
 
 One of the most common sources of noise is malfunctioning sensors.
 
@@ -108,7 +108,7 @@ Example:
 
 The measurements appear valid but are systematically distorted.
 
-# Human Data Entry Errors
+## Human Data Entry Errors
 
 Noise may also arise from manual data entry mistakes.
 
@@ -132,7 +132,7 @@ This introduces accidental distortion into the dataset.
 
 Unlike malicious corruption, this type of noise is usually unintentional and originates from operational mistakes during collection.
 
-# Data Transmission Errors
+## Data Transmission Errors
 
 Noise can also be introduced while transmitting data between systems.
 
@@ -161,7 +161,7 @@ This is why networking systems use:
 
 The lecture references TCP/IP systems where additional bits verify whether transmitted information has been modified.
 
-# Technological Limitations
+## Technological Limitations
 
 Sometimes the issue is not malfunction but insufficient hardware precision.
 
@@ -185,7 +185,7 @@ Another example is humidity measurement where the system requires decimal precis
 
 This creates approximation noise.
 
-# Understanding Outliers
+## Understanding Outliers
 
 Outliers are fundamentally different from noise.
 
@@ -212,7 +212,7 @@ $$
 
 Unlike noisy data, outliers are not corruption. They are real but extreme observations.
 
-# Real-World Examples of Outlier Detection
+## Real-World Examples of Outlier Detection
 
 The lecture provides multiple practical examples where outlier detection becomes critical.
 
@@ -274,7 +274,7 @@ This demonstrates an important concept:
 
 They are simply unusual.
 
-# Noise vs Outliers
+## Noise vs Outliers
 
 Although both appear abnormal, their meanings differ significantly.
 
@@ -290,7 +290,7 @@ Noise should usually be cleaned or corrected.
 
 Outliers should first be investigated because they may contain valuable insights.
 
-# Visual Understanding of Outliers
+## Visual Understanding of Outliers
 
 The lecture describes outliers using a two-dimensional dataset.
 
@@ -313,7 +313,7 @@ Conceptually:
 
 Outlier detection algorithms attempt to quantify this separation mathematically.
 
-# Why Outliers Matter in Machine Learning
+## Why Outliers Matter in Machine Learning
 
 Many machine learning algorithms are highly sensitive to outliers.
 
@@ -350,7 +350,7 @@ Example:
 
 The final value dramatically alters the mean.
 
-# Order of Handling: Noise Before Outliers
+## Order of Handling: Noise Before Outliers
 
 The lecture emphasizes an important preprocessing sequence:
 
@@ -381,7 +381,7 @@ flowchart LR
 
 This ordering is extremely important in practical preprocessing pipelines.
 
-# Key Takeaways
+## Key Takeaways
 
 Noise and outliers represent two fundamentally different preprocessing problems.
 
