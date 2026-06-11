@@ -1,3 +1,9 @@
+---
+title: W03 - Moduel 2a.  Effective Visuals Design
+module: Statistical Modelling And Inferencing
+week: W03 - Moduel 2a.  Effective Visuals Design
+---
+
 
 The pre-attentive attributes used strategically bring more meaning, reduce the clutter 
 and give a deep impact to the graphic. So we have to remember whenever we are 
