@@ -5,9 +5,9 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ---
 
 
-# Introduction to Matplotlib (with Python & NumPy)
+## Introduction to Matplotlib (with Python & NumPy)
 
-# 1. What is Matplotlib?
+## 1. What is Matplotlib?
 
 Matplotlib is one of the foundational visualization libraries in Python.
 
@@ -27,7 +27,7 @@ Matplotlib is deeply integrated into the Python data ecosystem and works especia
 - pandas
     
 
-# Core Purpose
+## Core Purpose
 
 Matplotlib converts:
 
@@ -48,7 +48,7 @@ This enables:
 - scientific visualization
     
 
-# Typical Use Cases
+## Typical Use Cases
 
 |Domain|Usage|
 |---|---|
@@ -59,7 +59,7 @@ This enables:
 |BI & Reporting|Charts and dashboards|
 |Engineering|Signal and system visualization|
 
-# Why Visualization Matters
+## Why Visualization Matters
 
 Humans detect:
 
@@ -82,7 +82,7 @@ Visualization transforms:
 - perceptual structure.
     
 
-# Core Visualization Pipeline
+## Core Visualization Pipeline
 
 ```mermaid
 flowchart LR
@@ -92,7 +92,7 @@ flowchart LR
     D --> E[Human Interpretation]
 ```
 
-# The `pyplot` Submodule
+## The `pyplot` Submodule
 
 The most commonly used interface is:
 
@@ -119,7 +119,7 @@ plt
 
 is the standard convention across the Python ecosystem.
 
-# Why Aliases Are Used
+## Why Aliases Are Used
 
 Without aliasing:
 
@@ -135,13 +135,13 @@ plt.plot()
 
 Cleaner and easier to read.
 
-# 2. Why Use Matplotlib? (Merits)
+## 2. Why Use Matplotlib? (Merits)
 
-# A. Versatility
+## A. Versatility
 
 Matplotlib supports a huge range of visualizations.
 
-# Common Chart Types
+## Common Chart Types
 
 |Chart Type|Purpose|
 |---|---|
@@ -153,7 +153,7 @@ Matplotlib supports a huge range of visualizations.
 |Box Plot|Statistical spread|
 |Heatmap|Matrix intensity visualization|
 
-# Example Visualization Types
+## Example Visualization Types
 
 ```mermaid
 flowchart TD
@@ -164,7 +164,7 @@ flowchart TD
     A --> F[Pie Charts]
 ```
 
-# Why Versatility Matters
+## Why Versatility Matters
 
 Real-world analytics problems vary significantly.
 
@@ -181,13 +181,13 @@ A visualization library must support:
 
 Matplotlib became dominant partly because of this flexibility.
 
-# B. High Customizability
+## B. High Customizability
 
 One of Matplotlib’s biggest strengths:
 
 > nearly every visual element can be controlled.
 
-# Customizable Components
+## Customizable Components
 
 |Component|Examples|
 |---|---|
@@ -199,7 +199,7 @@ One of Matplotlib’s biggest strengths:
 |Legends|Labels for plots|
 |Grids|Readability enhancement|
 
-# Example
+## Example
 
 ```python
 ax.plot(x, y, color='red', linestyle='--')
@@ -212,7 +212,7 @@ This changes:
 - line style
     
 
-# Why Customization Matters
+## Why Customization Matters
 
 Visualization is not merely:
 
@@ -234,7 +234,7 @@ Customization helps:
 - reduce ambiguity
     
 
-# Important Tradeoff
+## Important Tradeoff
 
 Too little customization:
 
@@ -259,7 +259,7 @@ Good visualization balances:
 - emphasis
     
 
-# C. Integration with NumPy and pandas
+## C. Integration with NumPy and pandas
 
 Matplotlib works naturally with:
 
@@ -268,7 +268,7 @@ Matplotlib works naturally with:
 - pandas DataFrames
     
 
-# NumPy Integration
+## NumPy Integration
 
 Example:
 
@@ -281,7 +281,7 @@ y = np.sin(x)
 
 Matplotlib can directly plot NumPy arrays.
 
-# pandas Integration
+## pandas Integration
 
 Example:
 
@@ -296,7 +296,7 @@ Internally:
 - pandas often uses Matplotlib as the rendering engine.
     
 
-# Why This Ecosystem Matters
+## Why This Ecosystem Matters
 
 The Python data ecosystem is interconnected:
 
@@ -316,7 +316,7 @@ This creates smooth workflows for:
 - scientific computing
     
 
-# Core Philosophy of Matplotlib
+## Core Philosophy of Matplotlib
 
 Matplotlib follows a very important idea:
 
@@ -338,26 +338,26 @@ This enables:
 - parameterization
     
 
-# Example Workflow
+## Example Workflow
 
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Create x values
+## Create x values
 x = np.linspace(0, 10, 100)
 
-# Compute y values
+## Compute y values
 y = np.sin(x)
 
-# Create plot
+## Create plot
 plt.plot(x, y)
 
-# Show chart
+## Show chart
 plt.show()
 ```
 
-# What Happens Internally
+## What Happens Internally
 
 ## Step 1
 
@@ -375,7 +375,7 @@ Map values to visual coordinates.
 
 Render graphical output.
 
-# Mathematical Visualization
+## Mathematical Visualization
 
 The sine wave example visualizes:
 
@@ -385,7 +385,7 @@ This demonstrates a critical principle:
 
 > mathematical relationships can be translated directly into visual geometry.
 
-# Why Matplotlib Became Foundational
+## Why Matplotlib Became Foundational
 
 Despite newer libraries existing:
 
@@ -408,7 +408,7 @@ Many libraries either:
 - imitate its API philosophy.
     
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
 |Mistake|Problem|
 |---|---|
@@ -418,7 +418,7 @@ Many libraries either:
 |Missing legends|Confusion|
 |Excessive decoration|Reduced readability|
 
-# Important Visualization Principle
+## Important Visualization Principle
 
 A technically correct chart can still fail communicatively.
 
@@ -433,7 +433,7 @@ Good visualization requires:
 - perceptual consistency
     
 
-# Strategic Insight
+## Strategic Insight
 
 Matplotlib is not just a charting library.
 
@@ -470,9 +470,9 @@ That is why visualization is deeply connected to:
 - software engineering.
 
 ===
-# Matplotlib with NumPy: Basic Plotting Workflow
+## Matplotlib with NumPy: Basic Plotting Workflow
 
-# 1. Direct Plotting with Arrays and Series
+## 1. Direct Plotting with Arrays and Series
 
 One major advantage of Matplotlib is that it works directly with:
 
@@ -492,7 +492,7 @@ This makes it ideal for:
 - scientific workflows
     
 
-# Example with NumPy Arrays
+## Example with NumPy Arrays
 
 ```python
 import numpy as np
@@ -505,7 +505,7 @@ plt.plot(x, y)
 plt.show()
 ```
 
-# Why This Matters
+## Why This Matters
 
 Visualization libraries become powerful when they integrate tightly with:
 
@@ -522,7 +522,7 @@ This allows:
 - manual transformation overhead.
     
 
-# 2. Why Matplotlib Became Widely Used
+## 2. Why Matplotlib Became Widely Used
 
 Matplotlib has become dominant because it has:
 
@@ -544,7 +544,7 @@ This matters practically because:
 - reusable examples accelerate learning
     
 
-# Real Engineering Insight
+## Real Engineering Insight
 
 Most developers rarely build complex plots entirely from memory.
 
@@ -559,7 +559,7 @@ Instead they:
 
 This is normal professional workflow.
 
-# 3. Basic Setup
+## 3. Basic Setup
 
 The lecture introduces the standard plotting setup:
 
@@ -570,9 +570,9 @@ import numpy as np
 %matplotlib inline
 ```
 
-# Understanding Each Component
+## Understanding Each Component
 
-# A. Importing `pyplot`
+## A. Importing `pyplot`
 
 ```python
 import matplotlib.pyplot as plt
@@ -582,7 +582,7 @@ This imports the plotting interface.
 
 `plt` is the standard alias.
 
-# Why Aliases Matter
+## Why Aliases Matter
 
 Without aliasing:
 
@@ -598,7 +598,7 @@ plt.plot()
 
 Cleaner and faster.
 
-# B. Importing NumPy
+## B. Importing NumPy
 
 ```python
 import numpy as np
@@ -615,7 +615,7 @@ NumPy provides:
 
 Matplotlib depends heavily on NumPy structures internally.
 
-# C. `%matplotlib inline`
+## C. `%matplotlib inline`
 
 ```python
 %matplotlib inline
@@ -632,7 +632,7 @@ Used in:
 - Google Colab
     
 
-# Purpose
+## Purpose
 
 Ensures plots render:
 
@@ -644,7 +644,7 @@ instead of:
 - external windows.
     
 
-# Why Notebook Rendering Matters
+## Why Notebook Rendering Matters
 
 Notebook systems combine:
 
@@ -668,7 +668,7 @@ This transformed:
 - reproducible research
     
 
-# 4. Creating a Simple Plot
+## 4. Creating a Simple Plot
 
 The lecture now builds a sine wave visualization.
 
@@ -681,7 +681,7 @@ This is one of the canonical examples in scientific plotting because it demonstr
 - periodic behavior
     
 
-# 4.1 Preparing the Data
+## 4.1 Preparing the Data
 
 The lecture uses:
 
@@ -690,7 +690,7 @@ x = np.linspace(0, 10, 100)
 y = np.sin(x)
 ```
 
-# Understanding `linspace`
+## Understanding `linspace`
 
 General structure:
 
@@ -703,7 +703,7 @@ Meaning:
 - generate evenly spaced values.
     
 
-# Example Breakdown
+## Example Breakdown
 
 ```python
 x = np.linspace(0, 10, 100)
@@ -716,14 +716,14 @@ Creates:
 - from 0 to 10
     
 
-# Visual Intuition
+## Visual Intuition
 
 ```mermaid
 flowchart LR
     A[0] --> B[100 Evenly Spaced Values] --> C[10]
 ```
 
-# Why Even Spacing Is Important
+## Why Even Spacing Is Important
 
 Smooth curves require:
 
@@ -737,7 +737,7 @@ Too few points:
 - inaccurate curve representation
     
 
-# Generating the Sine Function
+## Generating the Sine Function
 
 ```python
 y = np.sin(x)
@@ -749,7 +749,7 @@ This computes:
 
 for every x value.
 
-# Important Hidden Concept: Vectorization
+## Important Hidden Concept: Vectorization
 
 NumPy applies the sine function:
 
@@ -759,13 +759,13 @@ NumPy applies the sine function:
 Without vectorization:  
 you would need loops.
 
-# Vectorized Version
+## Vectorized Version
 
 ```python
 y = np.sin(x)
 ```
 
-# Non-vectorized Version
+## Non-vectorized Version
 
 ```python
 y = []
@@ -783,7 +783,7 @@ Vectorization is:
 - more memory-efficient
     
 
-# Why Sine Waves Matter
+## Why Sine Waves Matter
 
 Sine functions appear everywhere:
 
@@ -798,7 +798,7 @@ Sine functions appear everywhere:
 - Fourier analysis
     
 
-# Properties of Sine
+## Properties of Sine
 
 |Property|Value|
 |---|---|
@@ -806,7 +806,7 @@ Sine functions appear everywhere:
 |Period|(2\pi)|
 |Shape|Oscillatory|
 
-# Visual Behavior
+## Visual Behavior
 
 ```mermaid
 flowchart LR
@@ -816,7 +816,7 @@ flowchart LR
     D --> E[Repeat]
 ```
 
-# 4.2 Creating Figure and Axes
+## 4.2 Creating Figure and Axes
 
 The lecture introduces:
 
@@ -826,7 +826,7 @@ fig, ax = plt.subplots()
 
 This is one of the most important Matplotlib patterns.
 
-# Understanding Figure vs Axes
+## Understanding Figure vs Axes
 
 ## Figure
 
@@ -836,7 +836,7 @@ The outer visualization container.
 
 The actual plotting region.
 
-# Internal Structure
+## Internal Structure
 
 ```mermaid
 flowchart TD
@@ -844,7 +844,7 @@ flowchart TD
     B --> C[Plotted Data]
 ```
 
-# Why This Structure Exists
+## Why This Structure Exists
 
 This design allows:
 
@@ -857,7 +857,7 @@ This design allows:
 - dashboard-like layouts
     
 
-# Example
+## Example
 
 ```python
 fig, ax = plt.subplots()
@@ -870,7 +870,7 @@ creates:
 - one plotting area
     
 
-# Why `subplots()` Became Standard
+## Why `subplots()` Became Standard
 
 Older Matplotlib code often used:
 
@@ -887,7 +887,7 @@ But `subplots()` is preferred because:
 - easier scaling
     
 
-# Next Step in the Workflow
+## Next Step in the Workflow
 
 After:
 
@@ -901,7 +901,7 @@ the next step becomes:
 - plotting data onto axes
     
 
-# Standard Plotting Pipeline
+## Standard Plotting Pipeline
 
 ```mermaid
 flowchart LR
@@ -912,23 +912,23 @@ flowchart LR
     E --> F[Render]
 ```
 
-# Full Example So Far
+## Full Example So Far
 
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Generate x values
+## Generate x values
 x = np.linspace(0, 10, 100)
 
-# Compute sine values
+## Compute sine values
 y = np.sin(x)
 
-# Create figure and axes
+## Create figure and axes
 fig, ax = plt.subplots()
 ```
 
-# Strategic Insight
+## Strategic Insight
 
 This lecture section introduces a foundational engineering idea:
 
@@ -958,7 +958,7 @@ This is why modern visualization sits at the intersection of:
 - statistical reasoning.
 
 ===
-# Understanding Figure, Axes, Plotting, and Customization in Matplotlib
+## Understanding Figure, Axes, Plotting, and Customization in Matplotlib
 
 This section introduces the core architecture of Matplotlib.
 
@@ -971,7 +971,7 @@ These concepts are foundational because almost every visualization in Matplotlib
 - plotted graphical elements
     
 
-# 1. Figure vs Axes
+## 1. Figure vs Axes
 
 The lecture defines:
 
@@ -979,7 +979,7 @@ The lecture defines:
 fig, ax = plt.subplots()
 ```
 
-# What Is `fig`?
+## What Is `fig`?
 
 ```python
 fig
@@ -1002,7 +1002,7 @@ It includes:
 - rendering space
     
 
-# What Is `ax`?
+## What Is `ax`?
 
 ```python
 ax
@@ -1027,7 +1027,7 @@ This is where:
 
 are drawn.
 
-# Visual Structure
+## Visual Structure
 
 ```mermaid
 flowchart TD
@@ -1039,7 +1039,7 @@ flowchart TD
     C --> G[Legend]
 ```
 
-# Why This Separation Matters
+## Why This Separation Matters
 
 This architecture allows:
 
@@ -1052,7 +1052,7 @@ This architecture allows:
 - dashboard-like visual systems
     
 
-# Example
+## Example
 
 A figure can contain:
 
@@ -1063,7 +1063,7 @@ A figure can contain:
 - nested subplot arrangements
     
 
-# Multi-Plot Example
+## Multi-Plot Example
 
 ```python
 fig, axs = plt.subplots(2, 2)
@@ -1076,7 +1076,7 @@ Creates:
 - four plotting areas
     
 
-# 2. Plotting the Data
+## 2. Plotting the Data
 
 The lecture introduces:
 
@@ -1084,7 +1084,7 @@ The lecture introduces:
 ax.plot(x, y, label='Sine')
 ```
 
-# What `plot()` Does
+## What `plot()` Does
 
 This creates a:
 
@@ -1097,13 +1097,13 @@ Internally:
 - y values map vertically
     
 
-# Mathematical Relationship
+## Mathematical Relationship
 
 The plotted function is:
 
 genui{"math_block_widget_always_prefetch_v2":{"content":"y = \sin(x)"}}
 
-# Plotting Pipeline
+## Plotting Pipeline
 
 ```mermaid
 flowchart LR
@@ -1112,7 +1112,7 @@ flowchart LR
     B --> D[Line Visualization]
 ```
 
-# The `label` Parameter
+## The `label` Parameter
 
 ```python
 label='Sine'
@@ -1131,7 +1131,7 @@ ax.legend()
 
 is called.
 
-# Why Labels Matter
+## Why Labels Matter
 
 Labels are essential for:
 
@@ -1147,7 +1147,7 @@ Without labels:
 - charts become ambiguous quickly.
     
 
-# 3. Plot Customization
+## 3. Plot Customization
 
 The lecture now transitions into:
 
@@ -1161,13 +1161,13 @@ This is where visualization becomes:
 - graphical.
     
 
-# Adding a Title
+## Adding a Title
 
 ```python
 ax.set_title("Simple Sine Wave")
 ```
 
-# Purpose of Titles
+## Purpose of Titles
 
 Titles answer:
 
@@ -1180,19 +1180,19 @@ Good titles reduce:
 - ambiguity
     
 
-# Weak Title
+## Weak Title
 
 ```text
 Graph 1
 ```
 
-# Better Title
+## Better Title
 
 ```text
 Simple Sine Wave
 ```
 
-# Best Practice
+## Best Practice
 
 Titles should:
 
@@ -1203,14 +1203,14 @@ Titles should:
 - avoid vagueness
     
 
-# Axis Labels
+## Axis Labels
 
 ```python
 ax.set_xlabel("X-Axis")
 ax.set_ylabel("Y-Axis")
 ```
 
-# Why Axis Labels Matter
+## Why Axis Labels Matter
 
 Axes encode:
 
@@ -1226,7 +1226,7 @@ Without labels:
 - charts lose semantic meaning
     
 
-# Example
+## Example
 
 Bad:
 
@@ -1240,13 +1240,13 @@ Better:
 Quarterly Sales Revenue (USD Millions)
 ```
 
-# Important Visualization Principle
+## Important Visualization Principle
 
 A chart without labels is often:
 
 > visually complete but analytically incomplete.
 
-# 4. Adding a Grid
+## 4. Adding a Grid
 
 The lecture introduces:
 
@@ -1254,7 +1254,7 @@ The lecture introduces:
 ax.grid(True)
 ```
 
-# Purpose of Grids
+## Purpose of Grids
 
 Grids improve:
 
@@ -1274,7 +1274,7 @@ Especially useful for:
 - educational material
     
 
-# Tradeoff
+## Tradeoff
 
 Too much grid visibility creates:
 
@@ -1290,7 +1290,7 @@ Best practice:
 - low visual dominance
     
 
-# 5. Adding Legends
+## 5. Adding Legends
 
 The lecture introduces:
 
@@ -1298,7 +1298,7 @@ The lecture introduces:
 ax.legend()
 ```
 
-# What Legends Do
+## What Legends Do
 
 Legends explain:
 
@@ -1309,7 +1309,7 @@ Legends explain:
 - color semantics
     
 
-# Example
+## Example
 
 ```python
 ax.plot(x, y, label='Sine')
@@ -1318,21 +1318,21 @@ ax.plot(x, y2, label='Cosine')
 ax.legend()
 ```
 
-# Result
+## Result
 
 |Line|Meaning|
 |---|---|
 |Sine|Sine wave|
 |Cosine|Cosine wave|
 
-# Why Legends Matter
+## Why Legends Matter
 
 Without legends:
 
 - multi-series charts become confusing
     
 
-# Important Design Principle
+## Important Design Principle
 
 Legends should:
 
@@ -1342,7 +1342,7 @@ Legends should:
 - compete visually with the chart itself.
     
 
-# 6. Rendering the Plot
+## 6. Rendering the Plot
 
 The lecture ends the workflow with:
 
@@ -1350,14 +1350,14 @@ The lecture ends the workflow with:
 plt.show()
 ```
 
-# What `show()` Does
+## What `show()` Does
 
 It:
 
 - renders the final figure visually.
     
 
-# Important Hidden Concept
+## Important Hidden Concept
 
 Matplotlib separates:
 
@@ -1372,7 +1372,7 @@ This allows:
 - incremental customization before display
     
 
-# Internal Workflow
+## Internal Workflow
 
 ```mermaid
 flowchart LR
@@ -1381,7 +1381,7 @@ flowchart LR
     C --> D[Render with show()]
 ```
 
-# Why This Architecture Is Powerful
+## Why This Architecture Is Powerful
 
 This staged design enables:
 
@@ -1394,38 +1394,38 @@ This staged design enables:
 - automated reporting
     
 
-# Full Example
+## Full Example
 
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Generate x values
+## Generate x values
 x = np.linspace(0, 10, 100)
 
-# Generate sine values
+## Generate sine values
 y = np.sin(x)
 
-# Create figure and axes
+## Create figure and axes
 fig, ax = plt.subplots()
 
-# Plot the data
+## Plot the data
 ax.plot(x, y, label='Sine')
 
-# Customize chart
+## Customize chart
 ax.set_title("Simple Sine Wave")
 ax.set_xlabel("X-Axis")
 ax.set_ylabel("Y-Axis")
 
-# Add grid and legend
+## Add grid and legend
 ax.grid(True)
 ax.legend()
 
-# Render chart
+## Render chart
 plt.show()
 ```
 
-# 7. What Happens When You Uncomment the Cosine Line?
+## 7. What Happens When You Uncomment the Cosine Line?
 
 The lecture begins introducing:
 
@@ -1446,7 +1446,7 @@ This overlays:
 
 onto the same axes.
 
-# Why This Is Useful
+## Why This Is Useful
 
 Multi-line plots enable:
 
@@ -1459,13 +1459,13 @@ Multi-line plots enable:
 - model evaluation
     
 
-# Relationship Between Sine and Cosine
+## Relationship Between Sine and Cosine
 
 Cosine is phase-shifted relative to sine:
 
 \cos(x)=\sin\left(x+\frac{\pi}{2}\right)
 
-# Visual Intuition
+## Visual Intuition
 
 ```mermaid
 flowchart LR
@@ -1473,7 +1473,7 @@ flowchart LR
     B --> C[Cosine Wave]
 ```
 
-# Why Legends Become Necessary
+## Why Legends Become Necessary
 
 Once multiple lines exist:
 
@@ -1488,7 +1488,7 @@ Legends create explicit mapping between:
 - semantic meaning
     
 
-# Strategic Insight
+## Strategic Insight
 
 This lecture section introduces a profound engineering idea:
 
@@ -1524,7 +1524,7 @@ That is why strong visualization systems require understanding:
 
 simultaneously.
 
-# Plot Enhancements in Matplotlib
+## Plot Enhancements in Matplotlib
 
 This section introduces three critical visualization enhancements:
 
@@ -1544,7 +1544,7 @@ These are small additions technically, but they dramatically improve:
 - communication quality
     
 
-# 1. Adding a Second Line: Cosine Function
+## 1. Adding a Second Line: Cosine Function
 
 The lecture adds a cosine curve alongside the sine wave.
 
@@ -1554,7 +1554,7 @@ Code:
 ax.plot(x, y2, color='red', linestyle='--', label='Cosine')
 ```
 
-# What This Does
+## What This Does
 
 This line:
 
@@ -1567,7 +1567,7 @@ This line:
 - assigns the legend label `"Cosine"`
     
 
-# Mathematical Function
+## Mathematical Function
 
 The second curve is:
 
@@ -1577,7 +1577,7 @@ while the original curve remains:
 
 genui{"math_block_widget_always_prefetch_v2":{"content":"y = \sin(x)"}}
 
-# Why Plot Multiple Functions Together?
+## Why Plot Multiple Functions Together?
 
 Multi-line plots help compare:
 
@@ -1603,13 +1603,13 @@ This is extremely common in:
 - scientific experiments
     
 
-# Relationship Between Sine and Cosine
+## Relationship Between Sine and Cosine
 
 Cosine is essentially a shifted sine wave:
 
 \cos(x)=\sin\left(x+\frac{\pi}{2}\right)
 
-# Visual Intuition
+## Visual Intuition
 
 ```mermaid
 flowchart LR
@@ -1617,9 +1617,9 @@ flowchart LR
     B --> C[Cosine Wave]
 ```
 
-# Understanding the Plot Parameters
+## Understanding the Plot Parameters
 
-# A. `color='red'`
+## A. `color='red'`
 
 Controls line color.
 
@@ -1643,7 +1643,7 @@ You can also use:
 - colormaps
     
 
-# Why Color Matters
+## Why Color Matters
 
 Color enables:
 
@@ -1661,11 +1661,11 @@ But excessive color variation creates:
 - cognitive overload
     
 
-# B. `linestyle='--'`
+## B. `linestyle='--'`
 
 Creates dashed lines.
 
-# Common Line Styles
+## Common Line Styles
 
 |Style|Appearance|
 |---|---|
@@ -1674,7 +1674,7 @@ Creates dashed lines.
 |`:`|Dotted|
 |`-.`|Dash-dot|
 
-# Why Line Styles Matter
+## Why Line Styles Matter
 
 Useful when:
 
@@ -1685,7 +1685,7 @@ Useful when:
 - differentiating predictions from observations
     
 
-# C. `label='Cosine'`
+## C. `label='Cosine'`
 
 Defines legend text.
 
@@ -1695,7 +1695,7 @@ The label becomes visible only after:
 ax.legend()
 ```
 
-# 2. Adding a Grid
+## 2. Adding a Grid
 
 The lecture introduces:
 
@@ -1703,7 +1703,7 @@ The lecture introduces:
 ax.grid(True)
 ```
 
-# What Grids Do
+## What Grids Do
 
 Grids add reference lines behind the chart.
 
@@ -1716,7 +1716,7 @@ Purpose:
 - reveal structure more clearly
     
 
-# Visual Role of Grids
+## Visual Role of Grids
 
 Without grids:
 
@@ -1732,7 +1732,7 @@ With grids:
 - better alignment perception
     
 
-# Why Grids Matter in Scientific Visualization
+## Why Grids Matter in Scientific Visualization
 
 Especially important in:
 
@@ -1745,7 +1745,7 @@ Especially important in:
 - educational charts
     
 
-# Tradeoff
+## Tradeoff
 
 Too much grid emphasis creates:
 
@@ -1763,13 +1763,13 @@ Best practice:
 - supportive rather than dominant
     
 
-# Example
+## Example
 
 ```python
 ax.grid(True)
 ```
 
-# Internal Effect
+## Internal Effect
 
 ```mermaid
 flowchart TD
@@ -1777,7 +1777,7 @@ flowchart TD
     B --> C[Improved Coordinate Reading]
 ```
 
-# 3. Adding a Legend
+## 3. Adding a Legend
 
 The lecture introduces:
 
@@ -1785,7 +1785,7 @@ The lecture introduces:
 ax.legend()
 ```
 
-# Purpose of Legends
+## Purpose of Legends
 
 Legends map:
 
@@ -1802,7 +1802,7 @@ Example:
 |Blue solid line|Sine|
 |Red dashed line|Cosine|
 
-# Why Legends Matter
+## Why Legends Matter
 
 Without legends:
 
@@ -1818,7 +1818,7 @@ Especially problematic when:
 - charts are reused in reports
     
 
-# How Legends Work Internally
+## How Legends Work Internally
 
 Matplotlib automatically collects:
 
@@ -1834,7 +1834,7 @@ ax.legend()
 
 renders them into a legend box.
 
-# Visualization Pipeline with Enhancements
+## Visualization Pipeline with Enhancements
 
 ```mermaid
 flowchart LR
@@ -1845,42 +1845,42 @@ flowchart LR
     E --> F[Render Final Visualization]
 ```
 
-# Full Example
+## Full Example
 
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Generate x values
+## Generate x values
 x = np.linspace(0, 10, 100)
 
-# Generate sine and cosine values
+## Generate sine and cosine values
 y = np.sin(x)
 y2 = np.cos(x)
 
-# Create figure and axes
+## Create figure and axes
 fig, ax = plt.subplots()
 
-# Plot sine wave
+## Plot sine wave
 ax.plot(x, y, label='Sine')
 
-# Plot cosine wave
+## Plot cosine wave
 ax.plot(x, y2, color='red', linestyle='--', label='Cosine')
 
-# Add title and labels
+## Add title and labels
 ax.set_title("Sine and Cosine Waves")
 ax.set_xlabel("X-Axis")
 ax.set_ylabel("Y-Axis")
 
-# Add grid and legend
+## Add grid and legend
 ax.grid(True)
 ax.legend()
 
-# Show plot
+## Show plot
 plt.show()
 ```
 
-# Important Learning Strategy
+## Important Learning Strategy
 
 The lecture gives an excellent practical recommendation:
 
@@ -1888,7 +1888,7 @@ The lecture gives an excellent practical recommendation:
 
 This is exactly how strong developers learn visualization systems.
 
-# Why Incremental Experimentation Works
+## Why Incremental Experimentation Works
 
 Visualization systems are highly visual.
 
@@ -1903,7 +1903,7 @@ This builds:
 - design understanding
     
 
-# Example Learning Loop
+## Example Learning Loop
 
 ```mermaid
 flowchart LR
@@ -1912,7 +1912,7 @@ flowchart LR
     C --> D[Build Intuition]
 ```
 
-# 4. Saving the Plot
+## 4. Saving the Plot
 
 The lecture then introduces:
 
@@ -1920,7 +1920,7 @@ The lecture then introduces:
 fig.savefig('my_plot.png')
 ```
 
-# Purpose of `savefig()`
+## Purpose of `savefig()`
 
 Exports the visualization to an external file.
 
@@ -1937,7 +1937,7 @@ Useful for:
 - websites
     
 
-# Supported Formats
+## Supported Formats
 
 |Format|Usage|
 |---|---|
@@ -1946,14 +1946,14 @@ Useful for:
 |PDF|High-quality vector graphics|
 |SVG|Scalable web graphics|
 
-# Examples
+## Examples
 
 ```python
 fig.savefig('sine_wave.jpg')
 fig.savefig('sine_and_cosine.pdf')
 ```
 
-# Why PDF and SVG Matter
+## Why PDF and SVG Matter
 
 These formats are:
 
@@ -1976,7 +1976,7 @@ Important for:
 - presentations
     
 
-# Why `savefig()` Is Better Than Manual Saving
+## Why `savefig()` Is Better Than Manual Saving
 
 The lecture correctly notes:  
 GUI save buttons exist in notebook environments.
@@ -1996,7 +1996,7 @@ is superior because it is:
 - scriptable
     
 
-# Example Automation
+## Example Automation
 
 ```python
 for i in range(10):
@@ -2005,7 +2005,7 @@ for i in range(10):
 
 This is impossible manually at scale.
 
-# Strategic Insight
+## Strategic Insight
 
 This lecture section introduces a key engineering mindset:
 
