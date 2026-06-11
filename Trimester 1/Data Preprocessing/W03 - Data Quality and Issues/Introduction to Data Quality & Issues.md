@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W03 - Data Quality and Issues
 ---
 
-# Index
+## Index
 
 1. Introduction to Data Quality
     
@@ -29,7 +29,7 @@ week: W03 - Data Quality and Issues
 8. Key Takeaways
     
 
-# Introduction to Data Quality
+## Introduction to Data Quality
 
 Data preprocessing begins with understanding data quality because machine learning systems are only as reliable as the data they consume. Before any prediction, classification, clustering, or forecasting model is trained, the dataset must be evaluated for correctness, completeness, reliability, and usability.
 
@@ -37,7 +37,7 @@ Data quality determines whether a dataset can realistically support meaningful a
 
 A poor-quality dataset creates unreliable patterns and misleading predictions regardless of how advanced the machine learning algorithm is.
 
-# Defining Data Quality
+## Defining Data Quality
 
 Data quality refers to the overall utility of a dataset based on how effectively it can be processed and analyzed for a specific purpose.
 
@@ -62,7 +62,7 @@ The important point here is that data quality is not universal.
 
 A dataset considered “high quality” for one business problem may be completely useless for another.
 
-# Dimensions of Data Quality
+## Dimensions of Data Quality
 
 Data quality is generally measured using six major dimensions:
 
@@ -249,7 +249,7 @@ $$
 \text{Interpretability} = \text{Human Understandability of Data}  
 $$
 
-# Weather Prediction System Example
+## Weather Prediction System Example
 
 The lecture repeatedly uses weather prediction because it naturally demonstrates nearly every data quality dimension simultaneously.
 
@@ -286,7 +286,7 @@ This example demonstrates:
 |Believability|Trusted meteorological sensors|
 |Interpretability|Physically meaningful values|
 
-# Why Data Quality Matters in Machine Learning
+## Why Data Quality Matters in Machine Learning
 
 Machine learning models learn statistical relationships from historical data.
 
@@ -321,7 +321,7 @@ If the dataset contains:
 
 then the resulting predictions become unreliable.
 
-# Subjective Nature of Data Quality
+## Subjective Nature of Data Quality
 
 One of the most important insights is that data quality is subjective.
 
@@ -346,7 +346,7 @@ This is why the lecture defines quality as:
 
 > Data satisfies the requirement of the intended user.
 
-# Data Quality Pipeline
+## Data Quality Pipeline
 
 A generalized machine learning preprocessing pipeline:
 
@@ -371,7 +371,7 @@ flowchart LR
 
 This preprocessing stage often consumes the majority of real-world machine learning effort.
 
-# Key Takeaways
+## Key Takeaways
 
 Data quality is foundational to machine learning, analytics, and data mining systems.
 
