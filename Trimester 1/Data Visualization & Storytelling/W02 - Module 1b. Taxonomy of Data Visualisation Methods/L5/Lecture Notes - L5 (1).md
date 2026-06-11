@@ -64,3 +64,5 @@ graph LR
 #### **4. Maintain Visual Clarity**
 *   **Eliminate "Chartjunk":** Actively remove elements that do not add analytical value, such as 3D effects, heavy background shading, or excessive gridlines. If a design element doesn't help explain the data, it is a distraction.
 *   **Minimalist Labeling:** Avoid cluttering the chart by labeling every single data point. Label only the key points of interest (like start points, end points, or peaks) and keep axis titles short and direct.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
