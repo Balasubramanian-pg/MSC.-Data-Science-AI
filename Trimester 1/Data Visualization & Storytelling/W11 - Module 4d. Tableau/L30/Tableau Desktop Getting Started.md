@@ -5,7 +5,7 @@ week: W11 - Module 4d. Tableau
 ---
 
 
-# Page 1
+## Page 1
 
  
  
@@ -59,7 +59,7 @@ public, this is how it will look like, so this is the desktop app, which is down
 your system and you can also use the web-based version that we were just discussing, 
 
 
-# Page 2
+## Page 2
 
  
  
@@ -113,7 +113,7 @@ later stage is to build, let us say there are 3-4 Excel sheets of the same data,
 sheet you have the sales per region, in the second sheet you have sales per the 
 
 
-# Page 3
+## Page 3
 
  
  
@@ -167,7 +167,7 @@ global sales, okay, some global sales, so let us go to what are the sales, okay 
 making it a line graph, so this is the global sales, so you can then just have the global 
 
 
-# Page 4
+## Page 4
 
  
  
