@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W04 - Data Cleaning
 ---
 
-# Index
+## Index
 
 1. Introduction to Noisy Data
     
@@ -33,7 +33,7 @@ week: W04 - Data Cleaning
 13. Key Takeaways
     
 
-# Introduction to Noisy Data
+## Introduction to Noisy Data
 
 Noisy data refers to random error or unwanted variance introduced into a dataset during collection, transmission, storage, or processing.
 
@@ -41,7 +41,7 @@ In practical machine learning systems, noisy data is unavoidable because real-wo
 
 The lecture focuses on why noise occurs and how preprocessing techniques such as binning and regression can smooth noisy observations before machine learning models are trained.
 
-# Understanding Noise in Data
+## Understanding Noise in Data
 
 Noise represents distortion in the original measured value.
 
@@ -62,7 +62,7 @@ Noise is therefore not genuine information. It is corruption added during the me
 
 Unlike outliers, noisy observations are usually not meaningful rare events. They are measurement imperfections.
 
-# Causes of Noisy Data
+## Causes of Noisy Data
 
 The lecture identifies multiple practical reasons why noise enters datasets.
 
@@ -80,7 +80,7 @@ A sensor designed to measure in meters cannot reliably produce millimeter-level 
 
 This technological limitation introduces unavoidable measurement variance.
 
-# Irrelevant and Redundant Data
+## Irrelevant and Redundant Data
 
 Noise may also emerge from irrelevant or redundant attributes.
 
@@ -108,7 +108,7 @@ Example:
 
 Redundant attributes increase dimensionality without improving learning quality.
 
-# Poorly Formatted and Unstructured Data
+## Poorly Formatted and Unstructured Data
 
 Noise may also arise due to formatting inconsistency.
 
@@ -123,7 +123,7 @@ Different representations inside the same attribute create irregularity and inst
 
 This overlaps with data inconsistency problems discussed earlier.
 
-# Outliers and Mislabelled Data
+## Outliers and Mislabelled Data
 
 The lecture also mentions that noisy systems may contain:
 
@@ -144,7 +144,7 @@ If labels are incorrect, machine learning systems learn distorted patterns.
 
 This becomes especially dangerous in supervised learning systems where labels define ground truth.
 
-# Noise Handling Techniques
+## Noise Handling Techniques
 
 The lecture introduces two major smoothing techniques:
 
@@ -167,7 +167,7 @@ flowchart TD
     D --> E
 ```
 
-# Binning for Noise Smoothing
+## Binning for Noise Smoothing
 
 Binning is one of the simplest smoothing techniques.
 
@@ -208,7 +208,7 @@ flowchart LR
     A --> D[Bin 3]
 ```
 
-# Smoothing by Bin Means
+## Smoothing by Bin Means
 
 In bin mean smoothing, each value inside a bin is replaced by the average of that bin.
 
@@ -234,7 +234,7 @@ The smoothed output becomes:
 
 The idea is that local averaging reduces random variation and stabilizes noisy observations.
 
-# Smoothing by Bin Boundaries
+## Smoothing by Bin Boundaries
 
 Another approach is boundary smoothing.
 
@@ -268,7 +268,7 @@ Since 8 is closer to 4, it gets replaced with 4.
 
 This method compresses internal variation while preserving edge structure.
 
-# Regression-Based Smoothing
+## Regression-Based Smoothing
 
 Regression smoothing models the relationship between attributes and then projects noisy observations toward the learned trend.
 
@@ -298,7 +298,7 @@ The regression model fits a line capturing the underlying trend.
 
 Noisy observations are then adjusted relative to this trend line.
 
-# Regression and Trend Modeling
+## Regression and Trend Modeling
 
 Regression attempts to estimate the true relationship hidden beneath noisy observations.
 
@@ -324,7 +324,7 @@ The regression surface may be:
 
 The fitted model smooths fluctuations and reveals the dominant structural pattern inside the data.
 
-# Key Takeaways
+## Key Takeaways
 
 Noisy data represents random corruption introduced during measurement, collection, transmission, or preprocessing.
 
