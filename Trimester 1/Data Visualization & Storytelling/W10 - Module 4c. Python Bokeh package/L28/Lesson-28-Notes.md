@@ -8,7 +8,7 @@ Here is a comprehensive, heavily documented master script based on your Lesson 2
 
 Every single function, method, and parameter is explained in detail using Python docstrings, inline comments, and Markdown blocks.
 
-# Master Guide: Interactive Graphics & Storytelling with Bokeh
+## Master Guide: Interactive Graphics & Storytelling with Bokeh
 
 This document serves as a complete, self-contained reference guide to building interactive visualizations using `bokeh.plotting`. The code is divided into logical modules, progressing from basic line charts to advanced data structures and interactive transformations.
 
@@ -34,17 +34,17 @@ The core workflow in Bokeh consists of three steps:
     
 
 ```Python
-# ==========================================
-# MODULE 1: BASIC LINE PLOTTING
-# ==========================================
+## ==========================================
+## MODULE 1: BASIC LINE PLOTTING
+## ==========================================
 
-# output_notebook is used to render plots directly in Jupyter notebooks.
-# If you are running this in a standard Python script, you would import 
-# output_file and call output_file("filename.html") instead.
+## output_notebook is used to render plots directly in Jupyter notebooks.
+## If you are running this in a standard Python script, you would import 
+## output_file and call output_file("filename.html") instead.
 from bokeh.io import output_notebook
 from bokeh.plotting import figure, show
 
-# Initialize the notebook output mode
+## Initialize the notebook output mode
 output_notebook()  
 
 def create_basic_line_plot():
@@ -78,7 +78,7 @@ def create_basic_line_plot():
     # STEP 4: Render the plot
     show(p)
 
-# Execute the function to see the plot
+## Execute the function to see the plot
 create_basic_line_plot()
 ```
 
@@ -89,9 +89,9 @@ In real-world data science, data is rarely stored in raw lists. Bokeh integrates
 
 
 ```Python
-# ==========================================
-# MODULE 2: DATAFRAMES & LINE PLOTS
-# ==========================================
+## ==========================================
+## MODULE 2: DATAFRAMES & LINE PLOTS
+## ==========================================
 import pandas as pd
 from bokeh.plotting import figure, show
 
@@ -145,9 +145,9 @@ Sometimes a line isn't enough; you need to see the exact data points. Bokeh allo
 
 
 ```Python
-# ==========================================
-# MODULE 3: SCATTER PLOTS & GLYPH LAYERING
-# ==========================================
+## ==========================================
+## MODULE 3: SCATTER PLOTS & GLYPH LAYERING
+## ==========================================
 from bokeh.plotting import figure, show
 
 def create_layered_scatter_plot():
@@ -187,9 +187,9 @@ When dealing with non-numeric X-axes (like names, categories, or labels), Bokeh 
 
 
 ```Python
-# ==========================================
-# MODULE 4: CATEGORICAL DATA (vbar)
-# ==========================================
+## ==========================================
+## MODULE 4: CATEGORICAL DATA (vbar)
+## ==========================================
 import pandas as pd
 from bokeh.plotting import figure, show
 
@@ -245,9 +245,9 @@ create_categorical_bar_chart()
 The `ColumnDataSource` (CDS) is the fundamental data structure in Bokeh. It standardizes data mapping so that multiple glyphs and interactive tools (like the `HoverTool`) can all read from a single, unified source of truth.
 
 ```Python
-# ==========================================
-# MODULE 5: ColumnDataSource & HoverTool
-# ==========================================
+## ==========================================
+## MODULE 5: ColumnDataSource & HoverTool
+## ==========================================
 from bokeh.plotting import figure, show
 from bokeh.models import ColumnDataSource, HoverTool
 
@@ -305,9 +305,9 @@ Visualizing parts-to-whole relationships over time is easily achieved using Boke
 
 
 ```Python
-# ==========================================
-# MODULE 6: STACKED BAR CHARTS
-# ==========================================
+## ==========================================
+## MODULE 6: STACKED BAR CHARTS
+## ==========================================
 import pandas as pd
 import numpy as np
 from bokeh.plotting import figure, show
@@ -366,9 +366,9 @@ Bokeh allows you to perform calculations directly inside the plotting function w
 
 
 ```Python
-# ==========================================
-# MODULE 7: DATA TRANSFORMATIONS
-# ==========================================
+## ==========================================
+## MODULE 7: DATA TRANSFORMATIONS
+## ==========================================
 import numpy as np
 from bokeh.plotting import figure, show
 from bokeh.transform import linear_cmap
