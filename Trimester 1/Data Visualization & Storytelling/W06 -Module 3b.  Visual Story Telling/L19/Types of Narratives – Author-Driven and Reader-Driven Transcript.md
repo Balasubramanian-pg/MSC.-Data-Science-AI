@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W06 -Module 3b.  Visual Story Telling
 ---
 
-# Types of Narratives in Data Storytelling
+## Types of Narratives in Data Storytelling
 
 Narrative structures in data storytelling differ primarily in one dimension:
 
@@ -30,7 +30,7 @@ This distinction changes:
 - how much analytical discovery is possible
     
 
-# 1. Author-Driven Narratives
+## 1. Author-Driven Narratives
 
 Author-driven narratives are:
 
@@ -180,7 +180,7 @@ This can unintentionally distort interpretation.
 
 Unexpected insights are harder to uncover.
 
-# 2. Reader-Driven Narratives
+## 2. Reader-Driven Narratives
 
 Reader-driven storytelling reverses the control structure.
 
@@ -310,7 +310,7 @@ Without guidance:
 
 This is why many dashboards fail despite technical sophistication.
 
-# 3. Hybrid / Narrative-Driven Storytelling
+## 3. Hybrid / Narrative-Driven Storytelling
 
 Hybrid storytelling combines:
 
@@ -425,13 +425,13 @@ Too much flexibility:
 
 The best systems subtly guide users without making the guidance obvious.
 
-# Dimensions of Narrative Storytelling
+## Dimensions of Narrative Storytelling
 
 The transcript introduces additional dimensions beyond narrative type.
 
 These dimensions influence how stories are communicated visually and interactively.
 
-# 1. Genres
+## 1. Genres
 
 Genres describe:
 
@@ -511,7 +511,7 @@ Flowcharts are especially useful when explaining:
 - operational systems
     
 
-# 2. Visual Narrative Tactics
+## 2. Visual Narrative Tactics
 
 Visual tactics influence how audiences perceive importance.
 
@@ -585,7 +585,7 @@ But excessive animation creates:
 
 This is why professional dashboards usually use restrained motion.
 
-# Important Strategic Insight
+## Important Strategic Insight
 
 Narrative storytelling is not merely:
 
@@ -617,7 +617,7 @@ Poor storytelling can bury excellent analysis.
 
 Strong storytelling can make complex systems understandable and actionable.
 
-# Visual Narrative Tactics in Data Storytelling
+## Visual Narrative Tactics in Data Storytelling
 
 Narrative storytelling is not only about:
 
@@ -662,7 +662,7 @@ They influence:
 
 Even when the underlying data remains identical.
 
-# 1. Highlighting
+## 1. Highlighting
 
 Highlighting directs attention toward specific information.
 
@@ -724,7 +724,7 @@ That often leads to:
 - decision fragmentation
     
 
-# 2. Pauses and Pacing
+## 2. Pauses and Pacing
 
 The transcript references:
 
@@ -795,7 +795,7 @@ This is why effective storytelling is partly:
 
 > rhythm design.
 
-# 3. Animations and Transitions
+## 3. Animations and Transitions
 
 Animations guide sequential attention.
 
@@ -867,7 +867,7 @@ Good animation clarifies.
 
 Bad animation performs.
 
-# 4. Text Emphasis
+## 4. Text Emphasis
 
 The transcript references:
 
@@ -911,7 +911,7 @@ The second statement:
 
 Storytelling exists even at sentence level.
 
-# 5. Narrative Frameworks
+## 5. Narrative Frameworks
 
 The transcript identifies three major framework components:
 
@@ -924,7 +924,7 @@ The transcript identifies three major framework components:
 
 These collectively define how stories unfold.
 
-# A. Ordering
+## A. Ordering
 
 Ordering determines:
 
@@ -999,7 +999,7 @@ flowchart TD
     C --> D[Resolution]
 ```
 
-# B. Interactivity
+## B. Interactivity
 
 Interactivity transforms audiences from:
 
@@ -1057,7 +1057,7 @@ Interactivity increases freedom but also increases:
 
 The best systems constrain exploration intelligently.
 
-# C. Messaging
+## C. Messaging
 
 Messaging is the explicit takeaway.
 
@@ -1101,7 +1101,7 @@ Without messaging:
 |Exploration only|Decision guidance|
 |Data-heavy|Insight-heavy|
 
-# Interactive Storytelling in Dashboards
+## Interactive Storytelling in Dashboards
 
 Modern dashboard systems increasingly rely on:
 
@@ -1146,7 +1146,7 @@ This structure mirrors real analytical thinking:
 4. recommend action
     
 
-# Final Insight
+## Final Insight
 
 Narrative storytelling is fundamentally:
 
