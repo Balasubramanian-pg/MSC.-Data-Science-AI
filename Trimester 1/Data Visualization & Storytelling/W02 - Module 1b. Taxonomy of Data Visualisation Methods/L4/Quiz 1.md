@@ -15,3 +15,6 @@ week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
 
 # Page 3
 
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
