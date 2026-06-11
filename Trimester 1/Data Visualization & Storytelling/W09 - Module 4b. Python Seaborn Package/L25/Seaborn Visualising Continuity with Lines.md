@@ -36,26 +36,26 @@ The built-in `fmri` dataset is a prime example of signal processing data over ti
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Apply a clean aesthetic grid globally
+## Apply a clean aesthetic grid globally
 sns.set_theme(style="darkgrid")
 
-# =====================================================================
-# 1. LOAD THE DATASET
-# =====================================================================
-# This pulls the default fMRI dataframe built directly into Seaborn
+## =====================================================================
+## 1. LOAD THE DATASET
+## =====================================================================
+## This pulls the default fMRI dataframe built directly into Seaborn
 fmri_df = sns.load_dataset("fmri")
 
-# Display the first few rows to understand the structure
+## Display the first few rows to understand the structure
 print("Dataset Head:")
 print(fmri_df.head())
 
 
-# =====================================================================
-# 2. CORE FUNCTION: Simple Line Plot with Statistical Aggregation
-# =====================================================================
-# Note: Because there are multiple subjects ('s1', 's2', etc.) for each
-# timepoint, Seaborn automatically aggregates them. It plots the MEAN as a
-# solid line and a 95% Confidence Interval (CI) as a shaded band around it.
+## =====================================================================
+## 2. CORE FUNCTION: Simple Line Plot with Statistical Aggregation
+## =====================================================================
+## Note: Because there are multiple subjects ('s1', 's2', etc.) for each
+## timepoint, Seaborn automatically aggregates them. It plots the MEAN as a
+## solid line and a 95% Confidence Interval (CI) as a shaded band around it.
 plt.figure(figsize=(8, 4.5))
 
 sns.lineplot(data=fmri_df, x="timepoint", y="signal", color="teal", linewidth=2)
@@ -66,10 +66,10 @@ plt.ylabel("Signal Intensity")
 plt.show()
 
 
-# =====================================================================
-# 3. MULTIDIMENSIONAL: Adding Categories (Hue & Style)
-# =====================================================================
-# We use 'hue' to color lines by region and 'style' to change line patterns by event.
+## =====================================================================
+## 3. MULTIDIMENSIONAL: Adding Categories (Hue & Style)
+## =====================================================================
+## We use 'hue' to color lines by region and 'style' to change line patterns by event.
 plt.figure(figsize=(8, 4.5))
 
 sns.lineplot(
@@ -86,18 +86,18 @@ plt.title("fMRI Trends Split by Region and Event Type")
 plt.xlabel("Timepoint")
 plt.ylabel("Signal Intensity")
 
-# Move the legend outside the plot box so it doesn't overlap data points
+## Move the legend outside the plot box so it doesn't overlap data points
 plt.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
 plt.tight_layout()
 plt.show()
 
 
-# =====================================================================
-# 4. ADVANCED: Subplot Faceting with `relplot`
-# =====================================================================
-# As mentioned in the transcript, `relplot` (Relational Plot) is a figure-level
-# function. It allows you to automatically split data into physical subplots
-# (columns/rows) for a crystal-clear side-by-side trend comparison.
+## =====================================================================
+## 4. ADVANCED: Subplot Faceting with `relplot`
+## =====================================================================
+## As mentioned in the transcript, `relplot` (Relational Plot) is a figure-level
+## function. It allows you to automatically split data into physical subplots
+## (columns/rows) for a crystal-clear side-by-side trend comparison.
 grid_plot = sns.relplot(
     data=fmri_df,
     x="timepoint",
@@ -109,7 +109,7 @@ grid_plot = sns.relplot(
     aspect=1.2,
 )
 
-# Set an overall master title above all subplots
+## Set an overall master title above all subplots
 grid_plot.fig.suptitle(
     "Side-by-Side Trend Analysis across Regions", y=1.05, fontsize=14
 )
@@ -153,24 +153,24 @@ Python
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Global styling configuration for clean, publication-ready visuals
+## Global styling configuration for clean, publication-ready visuals
 sns.set_theme(style="darkgrid")
 sns.set_context("notebook", font_scale=1.1)
 
-# Load the built-in fMRI time-series dataset discussed in the transcript
+## Load the built-in fMRI time-series dataset discussed in the transcript
 fmri_df = sns.load_dataset("fmri")
 
-# =====================================================================
-# 1. THE BASELINE PLOT: Understanding Statistical Aggregation
-# =====================================================================
-# This displays how Seaborn calculates the mean and error band automatically.
+## =====================================================================
+## 1. THE BASELINE PLOT: Understanding Statistical Aggregation
+## =====================================================================
+## This displays how Seaborn calculates the mean and error band automatically.
 plt.figure(figsize=(10, 5))
 
 sns.lineplot(
     data=fmri_df, x="timepoint", y="signal", color="brand_blue" if False else "royalblue", linewidth=2.5
 )
 
-# Customizing layout via Matplotlib layer over Seaborn
+## Customizing layout via Matplotlib layer over Seaborn
 plt.title("Average fMRI Signal Over Time (Mean & 95% Confidence Interval)", fontsize=14, pad=15)
 plt.xlabel("Timepoint (Seconds)")
 plt.ylabel("Signal Strength")
@@ -178,11 +178,11 @@ plt.tight_layout()
 plt.show()
 
 
-# =====================================================================
-# 2. OVERLAYING DIMENSIONS: The Hue + Style Approach (Axes-Level)
-# =====================================================================
-# Intent: Bring in 'region' and 'event' parameters without splitting the plot.
-# Note: Great for digital presentations, but has limitations in Black & White printouts.
+## =====================================================================
+## 2. OVERLAYING DIMENSIONS: The Hue + Style Approach (Axes-Level)
+## =====================================================================
+## Intent: Bring in 'region' and 'event' parameters without splitting the plot.
+## Note: Great for digital presentations, but has limitations in Black & White printouts.
 plt.figure(figsize=(12, 6))
 
 sns.lineplot(
@@ -199,17 +199,17 @@ plt.title("Multidimensional fMRI Trends: Split by Region (Color) & Event (Patter
 plt.xlabel("Timepoint")
 plt.ylabel("Signal Strength")
 
-# Move the legend outside of the main charting area to prevent data overlapping
+## Move the legend outside of the main charting area to prevent data overlapping
 plt.legend(bbox_to_anchor=(1.02, 1), loc="upper left", borderaxespad=0)
 plt.tight_layout()
 plt.show()
 
 
-# =====================================================================
-# 3. FACETING (SMALL MULTIPLES): Reducing Cognitive Load with `relplot`
-# =====================================================================
-# Intent: Replicate the 'Small Multiples' concept from PowerBI. By separating 
-# categories into distinct subplot columns, we drastically reduce the audience's mental processing effort.
+## =====================================================================
+## 3. FACETING (SMALL MULTIPLES): Reducing Cognitive Load with `relplot`
+## =====================================================================
+## Intent: Replicate the 'Small Multiples' concept from PowerBI. By separating 
+## categories into distinct subplot columns, we drastically reduce the audience's mental processing effort.
 grid = sns.relplot(
     data=fmri_df,
     x="timepoint",
@@ -222,7 +222,7 @@ grid = sns.relplot(
     linewidth=2.5
 )
 
-# Apply global title architecture across the complete Figure grid
+## Apply global title architecture across the complete Figure grid
 grid.fig.suptitle("fMRI Signal Comparison Across Brain Regions (Faceted View)", y=1.05, fontsize=16, fontweight='bold')
 grid.set_axis_labels("Timepoint", "Signal Strength")
 
@@ -236,12 +236,12 @@ As explicitly highlighted in the transcript, you can dynamically alter how your 
 Python
 
 ```
-# Orientation Variation A: Columnar Layout (Side-by-Side Comparison)
-# Best for cross-examining peak heights across variables at identical timestamps.
+## Orientation Variation A: Columnar Layout (Side-by-Side Comparison)
+## Best for cross-examining peak heights across variables at identical timestamps.
 col_grid = sns.relplot(data=fmri_df, x="timepoint", y="signal", hue="event", col="region", kind="line")
 
-# Orientation Variation B: Row Layout (Stacked Comparison)
-# Best for tracking individual threshold baselines sequentially.
+## Orientation Variation B: Row Layout (Stacked Comparison)
+## Best for tracking individual threshold baselines sequentially.
 row_grid = sns.relplot(data=fmri_df, x="timepoint", y="signal", hue="event", row="region", kind="line")
 ```
 
