@@ -1,3 +1,9 @@
+---
+title: W02 - Data
+module: Statistical Modelling And Inferencing
+week: W02 - Data
+---
+
 # Data Representation: Topologies, Matrices, and Graph Structures
 
 > [!NOTE]
