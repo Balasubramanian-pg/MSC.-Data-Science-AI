@@ -5,7 +5,7 @@ week: W11 - Module 4d. Tableau
 ---
 
 
-# Page 1
+## Page 1
 
  
  
@@ -59,7 +59,7 @@ options that we will see in a while. You have the free version which is Tableau 
 and you have the paid version and advanced version with desktop and Tableau server 
 
 
-# Page 2
+## Page 2
 
  
  
