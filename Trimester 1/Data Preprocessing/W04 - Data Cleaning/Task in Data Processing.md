@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W04 - Data Cleaning
 ---
 
-# Index
+## Index
 
 1. Introduction to Data Preprocessing
     
@@ -41,7 +41,7 @@ week: W04 - Data Cleaning
 12. Key Takeaways
     
 
-# Introduction to Data Preprocessing
+## Introduction to Data Preprocessing
 
 Data preprocessing is the first major stage in any machine learning or data science workflow after data collection.
 
@@ -55,7 +55,7 @@ If raw data contains missing values, inconsistencies, noise, or irrelevant infor
 
 The goal of preprocessing is therefore to transform raw data into a form suitable for analysis and machine learning.
 
-# Why Data Preprocessing is Necessary
+## Why Data Preprocessing is Necessary
 
 Real-world data is almost always imperfect.
 
@@ -82,7 +82,7 @@ Without preprocessing:
 
 The lecture frames preprocessing as a quality-improvement stage before machine learning begins.
 
-# Position of Preprocessing in the Data Science Pipeline
+## Position of Preprocessing in the Data Science Pipeline
 
 The lecture connects preprocessing to the KDD pipeline.
 
@@ -102,7 +102,7 @@ Raw collected data cannot usually be passed directly into machine learning syste
 
 Preprocessing acts as the bridge between data collection and intelligent analysis.
 
-# Goals of Data Preprocessing
+## Goals of Data Preprocessing
 
 The lecture defines two central objectives.
 
@@ -115,7 +115,7 @@ This means preprocessing is not only about cleaning data.
 
 It is also about transforming the dataset into a mathematically and computationally suitable format for downstream algorithms.
 
-# Major Data Preprocessing Tasks
+## Major Data Preprocessing Tasks
 
 The lecture divides preprocessing into four major categories.
 
@@ -128,7 +128,7 @@ The lecture divides preprocessing into four major categories.
 
 These form the foundation of the remaining preprocessing modules.
 
-# Data Cleaning
+## Data Cleaning
 
 Data cleaning focuses on detecting and correcting poor-quality data.
 
@@ -207,7 +207,7 @@ Machine learning systems assume standardization.
 
 Mixed units therefore produce invalid computations.
 
-# Data Transformation and Aggregation
+## Data Transformation and Aggregation
 
 Transformation modifies the representation of data into a more suitable analytical form.
 
@@ -280,7 +280,7 @@ flowchart LR
 
 The challenge is ensuring consistency during merging.
 
-# Data Reduction
+## Data Reduction
 
 Data reduction decreases dataset size while preserving useful information.
 
@@ -334,7 +334,7 @@ Example:
 
 High-dimensional systems become harder to train and analyze.
 
-# Proximity Measures
+## Proximity Measures
 
 Proximity analysis measures similarity or distance between observations.
 
@@ -351,7 +351,7 @@ This becomes fundamental in:
 
 The lecture introduces proximity as a major preprocessing concept.
 
-# Types of Similarity Analysis
+## Types of Similarity Analysis
 
 Different data types require different similarity measures.
 
@@ -365,7 +365,7 @@ Different data types require different similarity measures.
 
 Similarity analysis depends heavily on datatype characteristics.
 
-# Overall Data Preprocessing Workflow
+## Overall Data Preprocessing Workflow
 
 The complete preprocessing pipeline becomes:
 
@@ -385,7 +385,7 @@ flowchart TD
 
 Each stage progressively improves data usability and computational suitability.
 
-# Key Takeaways
+## Key Takeaways
 
 Data preprocessing is the foundational stage between raw data collection and machine learning.
 
