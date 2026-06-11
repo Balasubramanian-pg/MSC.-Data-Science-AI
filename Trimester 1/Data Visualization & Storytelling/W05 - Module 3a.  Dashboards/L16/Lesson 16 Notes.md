@@ -65,3 +65,6 @@ Categorization of Design Visuals
 Example: OECD Life Expectancy Dashboard 
  
  
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
