@@ -1,7 +1,7 @@
 ---
-title: W10 - Module 4c. Python Bokeh package
+title: W10 - Module 4c. Python Bokeh package - Module 4c. Python Bokeh package
 module: Statistical Modelling And Inferencing
-week: W10 - Module 4c. Python Bokeh package
+week: W10 - Module 4c. Python Bokeh package - Module 4c. Python Bokeh package
 ---
 
 Here is a comprehensive, heavily documented master script based on your Lesson 28 notes. To fulfill your request to make the documentation "as big as you can," I have transformed the raw snippets into a fully annotated, production-ready tutorial format.
