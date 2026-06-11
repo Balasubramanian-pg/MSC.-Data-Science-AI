@@ -1,3 +1,9 @@
+---
+title: W10 - Module 4c. Python Bokeh package
+module: Statistical Modelling And Inferencing
+week: W10 - Module 4c. Python Bokeh package
+---
+
 Based on your lecture transcript, the instructor covers the fundamental architecture of **Bokeh**: setting up canvases, rendering geometric layers called **Glyphs**, applying dynamic **Widgets** (audience narrative controls), and building multi-plot **Layouts** (Rows and Columns) to reduce cognitive load.
 
 ## 1. Core Architecture & Render Layers
