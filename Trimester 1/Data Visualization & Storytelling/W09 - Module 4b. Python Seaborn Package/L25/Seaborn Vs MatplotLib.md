@@ -1,3 +1,9 @@
+---
+title: W09 - Module 4b. Python Seaborn Package
+module: Statistical Modelling And Inferencing
+week: W09 - Module 4b. Python Seaborn Package
+---
+
 # 1. Core Paradigm: Matplotlib vs. Seaborn
 
 The transcript outlines a clear operational hierarchy between the two libraries:
