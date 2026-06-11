@@ -19,23 +19,23 @@ from bokeh.plotting import figure
 from bokeh.models import DateRangeSlider
 from bokeh.layouts import row, column, gridplot
 
-# =====================================================================
-# 1. INITIALIZATION
-# =====================================================================
-# Call this once per notebook session to prepare the client-side 
-# JavaScript library (BokehJS) to render interactive output inline.
+## =====================================================================
+## 1. INITIALIZATION
+## =====================================================================
+## Call this once per notebook session to prepare the client-side 
+## JavaScript library (BokehJS) to render interactive output inline.
 output_notebook()
 
 
-# =====================================================================
-# 2. SECTIONS 7 & 8: Layered Glyph Architecture & Interactive Legends
-# =====================================================================
-# Preparing base coordinate matrices
+## =====================================================================
+## 2. SECTIONS 7 & 8: Layered Glyph Architecture & Interactive Legends
+## =====================================================================
+## Preparing base coordinate matrices
 x_vals = [1, 2, 3, 4, 5]
 y_vals_main = [2, 5, 8, 2, 7]
 y_vals_offset = [1, 4, 7, 1, 6]  # Varied data for structural contrast
 
-# Initialize the main canvas object using the high-level plotting interface
+## Initialize the main canvas object using the high-level plotting interface
 p = figure(
     title="Layered Glyphs with Multi-Type Markers",
     x_axis_label="Independent Axis (X)",
@@ -45,7 +45,7 @@ p = figure(
     tools="pan,box_zoom,wheel_zoom,reset,save" # Explicitly defining toolbar capabilities
 )
 
-# Render Layer 1: Continuous line glyph acting as a structural trend indicator
+## Render Layer 1: Continuous line glyph acting as a structural trend indicator
 p.line(
     x_vals, y_vals_main, 
     line_width=2, 
@@ -53,7 +53,7 @@ p.line(
     legend_label="Trendline"
 )
 
-# Render Layer 2: Circle markers overlaid precisely on top of the main data points
+## Render Layer 2: Circle markers overlaid precisely on top of the main data points
 p.circle(
     x_vals, y_vals_main, 
     size=10, 
@@ -62,7 +62,7 @@ p.circle(
     legend_label="Primary Node"
 )
 
-# Render Layer 3: Square markers mapped to a secondary distribution stream
+## Render Layer 3: Square markers mapped to a secondary distribution stream
 p.square(
     x_vals, y_vals_offset, 
     size=12, 
@@ -71,19 +71,19 @@ p.square(
     legend_label="Baseline Offset"
 )
 
-# Audience Control Narrative: Turn the legend items into interactive toggle switches.
-# 'hide' will vanish the corresponding glyph layer when clicked; can also be set to 'mute'.
+## Audience Control Narrative: Turn the legend items into interactive toggle switches.
+## 'hide' will vanish the corresponding glyph layer when clicked; can also be set to 'mute'.
 p.legend.click_policy = "hide"
 p.legend.location = "top_left"
 
-# Deploy canvas components to the browser window
+## Deploy canvas components to the browser window
 show(p)
 
 
-# =====================================================================
-# 3. SECTION 9: Interactive UI Widgets (Standalone Layer)
-# =====================================================================
-# Using concrete python 'date' objects prevents string interpretation errors
+## =====================================================================
+## 3. SECTION 9: Interactive UI Widgets (Standalone Layer)
+## =====================================================================
+## Using concrete python 'date' objects prevents string interpretation errors
 date_range_slider = DateRangeSlider(
     title="Temporal Filter Range",
     start=date(2022, 7, 1),
@@ -95,36 +95,36 @@ date_range_slider = DateRangeSlider(
 show(date_range_slider)
 
 
-# =====================================================================
-# 4. SECTION 10: Advanced Document Layout Architecture
-# =====================================================================
-# --- Example A: Side-by-Side Function Multiplots (Row Layout) ---
+## =====================================================================
+## 4. SECTION 10: Advanced Document Layout Architecture
+## =====================================================================
+## --- Example A: Side-by-Side Function Multiplots (Row Layout) ---
 x_curve = np.linspace(0, 10, 100)
 
-# FIX: Corrected original notes math text syntax errors (x2 / x3) to explicit Python operators (**2 / **3)
+## FIX: Corrected original notes math text syntax errors (x2 / x3) to explicit Python operators (**2 / **3)
 y_quadratic = x_curve ** 2
 y_cubic = x_curve ** 3
 
-# Configure Canvas A
+## Configure Canvas A
 p_quad = figure(title="Quadratic Trend (x²)", width=300, height=300, tools="pan,reset")
 p_quad.line(x_curve, y_quadratic, color="blue", line_width=3)
 
-# Configure Canvas B
+## Configure Canvas B
 p_cube = figure(title="Cubic Trend (x³)", width=300, height=300, tools="pan,reset")
 p_cube.line(x_curve, y_cubic, color="green", line_width=3)
 
-# Arrange horizontally as an integrated sub-layout row row array
+## Arrange horizontally as an integrated sub-layout row row array
 function_dashboard = row(p_quad, p_cube)
 show(function_dashboard)
 
 
-# --- Example B: Heterogeneous Distribution Metrics (Grid Layout) ---
+## --- Example B: Heterogeneous Distribution Metrics (Grid Layout) ---
 x_scatter = list(range(11))
 dist_0 = x_scatter
 dist_1 = [10 - i for i in x_scatter]
 dist_2 = [abs(i - 5) for i in x_scatter]
 
-# Using shared styling dictionary arguments to optimize setup clutter
+## Using shared styling dictionary arguments to optimize setup clutter
 canvas_config = dict(width=220, height=220, background_fill_color="#fafafa", tools="wheel_zoom,reset")
 
 s1 = figure(title="Linear Vector", **canvas_config)
@@ -136,7 +136,7 @@ s2.scatter(x_scatter, dist_1, size=12, color="#c02942", alpha=0.8, marker="trian
 s3 = figure(title="Modulus Center", **canvas_config)
 s3.scatter(x_scatter, dist_2, size=12, color="#d95b43", alpha=0.8, marker="square")
 
-# gridplot organizes elements seamlessly into balanced matrices automatically handling layout padding
+## gridplot organizes elements seamlessly into balanced matrices automatically handling layout padding
 metric_matrix = gridplot([[s1, s2], [s3, None]]) # Subplot position [1,1] intentionally left blank
 show(metric_matrix)
 ```
@@ -187,7 +187,7 @@ Unlike Matplotlib, which mainly creates static charts, Bokeh creates charts that
 
 Source:
 
-# Basic Flow
+## Basic Flow
 
 Bokeh works like this:
 
@@ -203,7 +203,7 @@ Browser renders interactive graph
 
 Source:
 
-# Step 1: Install Bokeh
+## Step 1: Install Bokeh
 
 ```python
 pip install bokeh
@@ -211,7 +211,7 @@ pip install bokeh
 
 Source:
 
-# Step 2: Enable Notebook Rendering
+## Step 2: Enable Notebook Rendering
 
 ```python
 from bokeh.io import output_notebook
@@ -232,7 +232,7 @@ Without this:
 
 Source:
 
-# Step 3: Create a Figure
+## Step 3: Create a Figure
 
 A figure is the plotting area.
 
@@ -251,7 +251,7 @@ Think of `figure()` as:
 
 Everything gets added onto this figure.
 
-# Step 4: Add Glyphs
+## Step 4: Add Glyphs
 
 A glyph is a visual representation of data.
 
@@ -268,7 +268,7 @@ Examples:
 
 Source:
 
-# Example: Line Glyph
+## Example: Line Glyph
 
 ```python
 from bokeh.plotting import figure, show
@@ -276,21 +276,21 @@ from bokeh.io import output_notebook
 
 output_notebook()
 
-# Create figure
+## Create figure
 p = figure(title="Simple Line Plot")
 
-# Data
+## Data
 x = [1, 2, 3, 4, 5]
 y = [2, 5, 8, 2, 7]
 
-# Add line glyph
+## Add line glyph
 p.line(x, y, line_width=2)
 
-# Display plot
+## Display plot
 show(p)
 ```
 
-# What Happens Internally
+## What Happens Internally
 
 ```text
 figure()
@@ -303,7 +303,7 @@ show()
     renders browser visualization
 ```
 
-# Important Interactive Tools
+## Important Interactive Tools
 
 Bokeh automatically provides tools like:
 
@@ -318,7 +318,7 @@ Bokeh automatically provides tools like:
 
 Source:
 
-# Example
+## Example
 
 ```python
 p = figure(
@@ -327,7 +327,7 @@ p = figure(
 )
 ```
 
-# Tool Meaning
+## Tool Meaning
 
 |Tool|Purpose|
 |---|---|
@@ -337,13 +337,13 @@ p = figure(
 |reset|restore original|
 |save|export image|
 
-# Multiple Glyphs
+## Multiple Glyphs
 
 You can overlay multiple visual layers.
 
 Source:
 
-# Example
+## Example
 
 ```python
 from bokeh.plotting import figure, show
@@ -352,7 +352,7 @@ x_vals = [1, 2, 3, 4, 5]
 
 p = figure(title="Multiple Glyphs")
 
-# Line
+## Line
 p.line(
     x_vals,
     [2, 5, 8, 2, 7],
@@ -360,7 +360,7 @@ p.line(
     legend_label="Line"
 )
 
-# Circles
+## Circles
 p.circle(
     x_vals,
     [2, 5, 8, 2, 7],
@@ -369,7 +369,7 @@ p.circle(
     legend_label="Circles"
 )
 
-# Squares
+## Squares
 p.square(
     x_vals,
     [1, 4, 7, 1, 6],
@@ -381,7 +381,7 @@ p.square(
 show(p)
 ```
 
-# Why Multiple Glyphs Matter
+## Why Multiple Glyphs Matter
 
 This allows:
 
@@ -396,7 +396,7 @@ This allows:
 
 to exist in the same chart.
 
-# Legend Interactivity
+## Legend Interactivity
 
 Bokeh legends can become clickable.
 
@@ -417,7 +417,7 @@ Now users can:
 
 This is extremely useful in dashboards.
 
-# Widgets
+## Widgets
 
 Widgets are UI controls.
 
@@ -432,7 +432,7 @@ Examples:
 
 Source:
 
-# Date Slider Example
+## Date Slider Example
 
 ```python
 from bokeh.models import DateRangeSlider
@@ -447,7 +447,7 @@ date_slider = DateRangeSlider(
 show(date_slider)
 ```
 
-# Why Widgets Matter
+## Why Widgets Matter
 
 Users can interact with data dynamically.
 
@@ -462,13 +462,13 @@ Example:
 
 without changing code.
 
-# Layouts
+## Layouts
 
 Layouts organize multiple plots together.
 
 Source:
 
-# Row Layout
+## Row Layout
 
 ```python
 from bokeh.layouts import row
@@ -482,7 +482,7 @@ Result:
 [Plot1] [Plot2] [Plot3]
 ```
 
-# Column Layout
+## Column Layout
 
 ```python
 from bokeh.layouts import column
@@ -497,7 +497,7 @@ Result:
 [Plot2]
 ```
 
-# Full Example
+## Full Example
 
 ```python
 from bokeh.plotting import figure, show
@@ -509,23 +509,23 @@ y0 = x
 y1 = [10 - i for i in x]
 y2 = [abs(i - 5) for i in x]
 
-# First plot
+## First plot
 s1 = figure(width=250, height=250)
 s1.scatter(x, y0)
 
-# Second plot
+## Second plot
 s2 = figure(width=250, height=250)
 s2.scatter(x, y1)
 
-# Third plot
+## Third plot
 s3 = figure(width=250, height=250)
 s3.scatter(x, y2)
 
-# Arrange horizontally
+## Arrange horizontally
 show(row(s1, s2, s3))
 ```
 
-# What This Produces
+## What This Produces
 
 Three interactive plots displayed side-by-side.
 
@@ -538,7 +538,7 @@ Useful for:
 - monitoring systems
     
 
-# High-Level vs Low-Level APIs
+## High-Level vs Low-Level APIs
 
 Bokeh has two major interfaces.
 
@@ -568,7 +568,7 @@ Used for:
 - widget logic
     
 
-# Core Mental Model
+## Core Mental Model
 
 ```text
 Data
@@ -586,7 +586,7 @@ Layouts
 Dashboard
 ```
 
-# Most Important Difference From Matplotlib
+## Most Important Difference From Matplotlib
 
 Matplotlib mindset:
 
