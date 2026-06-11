@@ -1,3 +1,9 @@
+---
+title: W02 - Data
+module: Statistical Modelling And Inferencing
+week: W02 - Data
+---
+
 # Datasets, Data Objects, and Attributes
 
 > [!NOTE]
