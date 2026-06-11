@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W01 - Introduction to Data Science
 ---
 
-# Predictive Methods in Machine Learning: Supervised Learning Foundations
+## Predictive Methods in Machine Learning: Supervised Learning Foundations
 
 > [!NOTE]
 > Predictive methods, fundamentally known as Supervised Learning, form the backbone of modern applied machine learning. Unlike descriptive methods that seek hidden structures in unlabeled data, predictive methods map an input feature space to a predefined target space using historical labeled examples.
@@ -87,26 +87,26 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, precision_score, recall_score
 
-# 1. Simulate Historical Customer Data
+## 1. Simulate Historical Customer Data
 np.random.seed(42)
 n_samples = 1000
 
-# Features: [Days_Since_Last_Ride, Total_Rides_Last_Month, App_Opens_Last_Week]
+## Features: [Days_Since_Last_Ride, Total_Rides_Last_Month, App_Opens_Last_Week]
 X = np.random.normal(loc=[15, 10, 5], scale=[5, 3, 2], size=(n_samples, 3))
 
-# Ground truth generation: Higher days since last ride + lower engagement = higher churn probability
+## Ground truth generation: Higher days since last ride + lower engagement = higher churn probability
 logits = 0.5 * X[:, 0] - 0.8 * X[:, 1] - 1.2 * X[:, 2]
 probabilities = 1 / (1 + np.exp(-logits))
 y = (probabilities > 0.5).astype(int) # 1 = Churn, 0 = Retain
 
-# 2. Train-Test Split
+## 2. Train-Test Split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# 3. Initialize and Train the Predictive Engine
+## 3. Initialize and Train the Predictive Engine
 clf = LogisticRegression()
 clf.fit(X_train, y_train)
 
-# 4. Inference and Evaluation
+## 4. Inference and Evaluation
 y_pred = clf.predict(X_test)
 y_prob = clf.predict_proba(X_test)[:, 1]
 
@@ -115,7 +115,7 @@ print(f"Accuracy:  {accuracy_score(y_test, y_pred):.4f}")
 print(f"Precision: {precision_score(y_test, y_pred):.4f}")
 print(f"Recall:    {recall_score(y_test, y_pred):.4f}")
 
-# Simulating a production decision: Push a $10 coupon if Churn probability > 70%
+## Simulating a production decision: Push a $10 coupon if Churn probability > 70%
 sample_user = np.array([[20, 2, 1]]) # 20 days since ride, 2 rides last month, 1 app open
 churn_risk = clf.predict_proba(sample_user)[0][1]
 
@@ -158,27 +158,27 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import Ridge
 from sklearn.metrics import mean_squared_error
 
-# 1. Simulate Commodity Data (e.g., Gold Price driven by Inflation Rate and Supply)
+## 1. Simulate Commodity Data (e.g., Gold Price driven by Inflation Rate and Supply)
 np.random.seed(100)
 n_days = 200
 
-# Feature: Inflation index (normalized)
+## Feature: Inflation index (normalized)
 X_inflation = np.linspace(1, 10, n_days).reshape(-1, 1)
 
-# True underlying function + Gaussian Noise
+## True underlying function + Gaussian Noise
 true_weights = 15.5
 bias = 1000
 noise = np.random.normal(0, 10, size=(n_days, 1))
 
 y_price = bias + (true_weights * X_inflation) + noise
 
-# 2. Train the Predictive Engine (Ridge Regression adds L2 Regularization)
+## 2. Train the Predictive Engine (Ridge Regression adds L2 Regularization)
 regressor = Ridge(alpha=1.0)
 regressor.fit(X_inflation, y_price)
 
 y_pred = regressor.predict(X_inflation)
 
-# 3. Visual Intuition
+## 3. Visual Intuition
 plt.figure(figsize=(10, 5))
 plt.scatter(X_inflation, y_price, color='gray', alpha=0.6, label='Actual Daily Prices')
 plt.plot(X_inflation, y_pred, color='red', linewidth=2, label='Regression Hyperplane (Prediction)')
@@ -189,7 +189,7 @@ plt.legend()
 plt.grid(True, alpha=0.3)
 plt.show()
 
-# 4. Diagnostics
+## 4. Diagnostics
 mse = mean_squared_error(y_price, y_pred)
 print(f"Model Intercept (Bias): {regressor.intercept_[0]:.2f}")
 print(f"Model Coefficient (Weight): {regressor.coef_[0][0]:.2f}")
