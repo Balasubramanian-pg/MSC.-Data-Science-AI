@@ -652,3 +652,5 @@ Comparing variables with incompatible scales can distort interpretation.
 14. Focus attention on the insight, not the chart mechanics.
     
 15. If the audience cannot explain the insight in a few seconds, the visualization is too complex.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
