@@ -48,7 +48,7 @@ This is fundamentally about reducing the data footprint while retaining useful i
 
 ---
 
-# 1. Lossless Compression
+## 1. Lossless Compression
 
 In lossless compression:
 
@@ -103,7 +103,7 @@ Used when accuracy matters:
 
 ---
 
-# 2. Lossy Compression
+## 2. Lossy Compression
 
 In lossy compression:
 
@@ -149,7 +149,7 @@ Used when perfect reconstruction is unnecessary:
 
 ---
 
-# Compression Tradeoffs
+## Compression Tradeoffs
 
 The lecture emphasizes that compression is never free.
 
@@ -223,7 +223,7 @@ may not benefit much from compression.
 
 ---
 
-# Histogram as a Data Reduction Technique
+## Histogram as a Data Reduction Technique
 
 The lecture uses histograms as a practical example of compression and data reduction.
 
@@ -239,7 +239,7 @@ This requires storing all 40 entries separately.
 
 ---
 
-# Histogram Transformation 1
+## Histogram Transformation 1
 
 Convert the data into:
 
@@ -262,7 +262,7 @@ This drastically reduces storage.
 
 This transformation is:
 
-# Lossless Compression
+## Lossless Compression
 
 Because the original data can be perfectly reconstructed from:
 
@@ -281,7 +281,7 @@ No information is lost.
 
 ---
 
-# Histogram Transformation 2
+## Histogram Transformation 2
 
 Now group prices into ranges:
 
@@ -305,13 +305,13 @@ You cannot reconstruct the original dataset exactly.
 
 This transformation is:
 
-# Lossy Compression
+## Lossy Compression
 
 Because only approximate information survives.
 
 ---
 
-# Key Conceptual Difference
+## Key Conceptual Difference
 
 |Property|Lossless|Lossy|
 |---|---|---|
@@ -323,7 +323,7 @@ Because only approximate information survives.
 
 ---
 
-# Why Compression Matters in ML and Data Mining
+## Why Compression Matters in ML and Data Mining
 
 Compression helps:
 
@@ -351,7 +351,7 @@ Especially important for:
 
 ---
 
-# Final Takeaways
+## Final Takeaways
 
 Data compression is a foundational data reduction strategy.
 
