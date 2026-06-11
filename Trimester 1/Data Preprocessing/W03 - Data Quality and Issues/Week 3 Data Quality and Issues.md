@@ -19,3 +19,5 @@ By the end of this module, you will be able to:
 1. Explain the concept of data quality and identify common issues that affect it with examples.
 2. Differentiate between noise, outliers, missing values, and duplicate data in a dataset.
 3. Recognise the challenges of data integrity and understand the need for techniques to handle these issues effectively.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
