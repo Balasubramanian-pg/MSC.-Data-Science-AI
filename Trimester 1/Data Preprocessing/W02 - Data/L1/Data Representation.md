@@ -220,3 +220,5 @@ Relational databases (SQL) are terrible at processing Graphical Data. Querying "
     *   **Answer:** A Data Matrix assumes every record has a fixed, known set of dimensions (e.g., Age, Height, Weight). Transactional data is variable-length (one user buys 1 item, another buys 50). To convert transactional data to a Data Matrix, you must One-Hot Encode the entire inventory, creating extreme sparsity.
 3.  *In Graph algorithms like PageRank, what is a "sink node" (or dangling node), and how does the algorithm handle it?*
     *   **Answer:** A sink node has inbound links but zero outbound links. In the matrix representation, this causes the Rank (probability) to leak out of the system, eventually driving all scores to zero. This is fixed mathematically by adding a teleportation matrix (the damping factor $d$), ensuring the random surfer can randomly jump to any other page even if no link exists.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
