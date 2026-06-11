@@ -1088,3 +1088,5 @@ If the audience cannot derive insight quickly, refinement is required.
 19. Simplicity improves analytical clarity.
     
 20. A successful visualization tells a credible story with evidence.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
