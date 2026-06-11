@@ -1,3 +1,9 @@
+---
+title: W04 - Module 2b. Visual Best Practises
+module: Statistical Modelling And Inferencing
+week: W04 - Module 2b. Visual Best Practises
+---
+
 # Designing Visuals for Human Perception
 
 This section introduces one of the most important intellectual foundations in data visualization:
