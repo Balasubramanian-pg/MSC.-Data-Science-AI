@@ -1,3 +1,9 @@
+---
+title: W06 - Data Reduction
+module: Statistical Modelling And Inferencing
+week: W06 - Data Reduction
+---
+
 # Index
 
 1. Introduction to Attribute Subselection
