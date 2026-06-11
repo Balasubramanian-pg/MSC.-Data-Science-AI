@@ -5,7 +5,7 @@ week: W11 - Module 4d. Tableau
 ---
 
 
-# Page 1
+## Page 1
 
  
  
@@ -59,7 +59,7 @@ So this is the orders data. It has about 50 of 5,000 rows, almost 10,000 rows. T
 count is 10,000 rows. 
 
 
-# Page 2
+## Page 2
 
  
  
@@ -113,7 +113,7 @@ new data source, you can click this.
   
 
 
-# Page 3
+## Page 3
 
  
  
@@ -167,7 +167,7 @@ geographical role can be Congressional State. You can change this.
  
 
 
-# Page 4
+## Page 4
 
  
  
@@ -220,7 +220,7 @@ sheet one or any other sheets where you can start building your visualisations.
   
 
 
-# Page 5
+## Page 5
 
  
  
