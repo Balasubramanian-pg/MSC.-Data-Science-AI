@@ -205,3 +205,5 @@ A binary attribute (e.g., `Refund = {Yes, No}`) is technically Nominal, but math
     *   **Answer:** Linear regression treats numerical inputs as Interval/Ratio data. It will mathematically compute that `Zip 20000` is halfway between `Zip 10000` and `Zip 30000`. This imposes a false geometric structure on nominal geographic labels.
 3.  *What happens if you use Euclidean Distance on an un-encoded Ordinal variable (e.g., strings like 'Small', 'Medium')?*
     *   **Answer:** The code will throw an exception because mathematical spaces cannot process strings. If manually encoded as 1, 2, 3, Euclidean distance assumes the interval between 1-2 and 2-3 is perfectly equal. If this assumption is false for the specific domain, the model's distance calculations will be biased.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
