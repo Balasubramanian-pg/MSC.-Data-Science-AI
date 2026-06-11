@@ -198,3 +198,5 @@ You now have the **Theory** (Cognitive Load), the **Sources of Clutter** (Frame,
     
 
 Which direction would be most useful for your upcoming projects?
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
