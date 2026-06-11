@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W10 - Module 4c. Python Bokeh package
 ---
 
-# Categorical Data and Bar Charts in Bokeh
+## Categorical Data and Bar Charts in Bokeh
 
 This final section introduces one of the most important visualization concepts:
 
@@ -39,7 +39,7 @@ This changes how Bokeh handles the axis internally.
 
 ---
 
-# Continuous vs Categorical Axes
+## Continuous vs Categorical Axes
 
 ## Continuous Axis
 
@@ -89,7 +89,7 @@ Now:
 
 ---
 
-# Why Bar Charts Exist
+## Why Bar Charts Exist
 
 Bar charts are designed to compare:
 
@@ -116,7 +116,7 @@ Bad for:
 
 ---
 
-# Fruit Dataset
+## Fruit Dataset
 
 The transcript defines:
 
@@ -135,7 +135,7 @@ counts = [5, 3, 4, 2, 6, 7]
 
 ---
 
-# Understanding the Data
+## Understanding the Data
 
 |Fruit|Count|
 |---|---|
@@ -148,7 +148,7 @@ counts = [5, 3, 4, 2, 6, 7]
 
 ---
 
-# Key Concept: Categories
+## Key Concept: Categories
 
 The transcript correctly says:
 
@@ -169,7 +169,7 @@ not continuous measurements.
 
 ---
 
-# Why `x_range` Matters
+## Why `x_range` Matters
 
 This is the most important technical concept in this section.
 
@@ -183,7 +183,7 @@ inside `figure()`.
 
 ---
 
-# What `x_range` Does
+## What `x_range` Does
 
 It tells Bokeh:
 
@@ -198,7 +198,7 @@ Without this:
 
 ---
 
-# Important Architectural Insight
+## Important Architectural Insight
 
 When using categorical data:
 
@@ -218,7 +218,7 @@ instead of:
 
 ---
 
-# Mental Model
+## Mental Model
 
 ## Numeric Axis
 
@@ -241,7 +241,7 @@ Distance does not.
 
 ---
 
-# Complete Bar Chart Example
+## Complete Bar Chart Example
 
 ```python
 from bokeh.plotting import figure, show
@@ -260,7 +260,7 @@ fruits = [
 
 counts = [5, 3, 4, 2, 6, 7]
 
-# Create categorical figure
+## Create categorical figure
 p = figure(
     x_range=fruits,
     height=350,
@@ -269,7 +269,7 @@ p = figure(
     y_axis_label="Count"
 )
 
-# Vertical bar chart
+## Vertical bar chart
 p.vbar(
     x=fruits,
     top=counts,
@@ -282,7 +282,7 @@ show(p)
 
 ---
 
-# Understanding `vbar()`
+## Understanding `vbar()`
 
 The transcript uses:
 
@@ -297,7 +297,7 @@ This means:
 
 ---
 
-# Important Parameters
+## Important Parameters
 
 |Parameter|Meaning|
 |---|---|
@@ -308,7 +308,7 @@ This means:
 
 ---
 
-# Understanding `top`
+## Understanding `top`
 
 ```python
 top=counts
@@ -331,7 +331,7 @@ ends at:
 
 ---
 
-# Visual Intuition
+## Visual Intuition
 
 ```text
 7 |                    █
@@ -347,7 +347,7 @@ ends at:
 
 ---
 
-# Why `width` Matters
+## Why `width` Matters
 
 The transcript uses:
 
@@ -362,7 +362,7 @@ Controls:
 
 ---
 
-# Width Interpretation
+## Width Interpretation
 
 |Width|Result|
 |---|---|
@@ -372,7 +372,7 @@ Controls:
 
 ---
 
-# Why Color Matters
+## Why Color Matters
 
 Transcript uses:
 
@@ -389,7 +389,7 @@ Bokeh supports:
 
 ---
 
-# Why Bar Charts Are Powerful
+## Why Bar Charts Are Powerful
 
 Bar charts are extremely effective because humans compare:
 
@@ -407,7 +407,7 @@ This makes bar charts excellent for:
 
 ---
 
-# Business Intelligence Connection
+## Business Intelligence Connection
 
 Bar charts dominate BI dashboards because they answer:
 
@@ -428,7 +428,7 @@ Examples:
 
 ---
 
-# Seaborn Connection
+## Seaborn Connection
 
 The transcript references:
 
@@ -445,7 +445,7 @@ These are categorical variables.
 
 ---
 
-# Typical Categorical Variables
+## Typical Categorical Variables
 
 |Variable|Categories|
 |---|---|
@@ -456,7 +456,7 @@ These are categorical variables.
 
 ---
 
-# Why Categorical Data Needs Different Handling
+## Why Categorical Data Needs Different Handling
 
 Numeric axes assume:
 
@@ -482,7 +482,7 @@ has no mathematical meaning.
 
 ---
 
-# Internal Bokeh Representation
+## Internal Bokeh Representation
 
 When using:
 
@@ -507,7 +507,7 @@ This manages:
 
 ---
 
-# Important Insight About Ordering
+## Important Insight About Ordering
 
 Transcript says:
 
@@ -521,7 +521,7 @@ Different orders tell different stories.
 
 ---
 
-# Example Orders
+## Example Orders
 
 ## Alphabetical
 
@@ -543,7 +543,7 @@ Usually more insightful.
 
 ---
 
-# Combining Categorical + Numerical
+## Combining Categorical + Numerical
 
 Bar charts are fundamentally:
 
@@ -555,7 +555,7 @@ Numerical aggregation
 
 ---
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
 ## Forgetting `x_range`
 
@@ -606,7 +606,7 @@ Avoid assigning random colors without meaning.
 
 ---
 
-# Advanced Insight
+## Advanced Insight
 
 Bokeh bar charts are glyph-based too.
 
@@ -627,7 +627,7 @@ even bars.
 
 ---
 
-# Machine Learning Connection
+## Machine Learning Connection
 
 Categorical visualization is heavily used in ML for:
 
@@ -642,7 +642,7 @@ Categorical visualization is heavily used in ML for:
 
 ---
 
-# Mental Model
+## Mental Model
 
 ```text
 Categories
@@ -656,7 +656,7 @@ Interactive Comparison
 
 ---
 
-# Most Important Concept Here
+## Most Important Concept Here
 
 The key idea is:
 
@@ -670,7 +670,7 @@ That is the architectural shift enabling categorical plotting.
 
 ---
 
-# Final Takeaways
+## Final Takeaways
 
 ## Core Workflow
 
