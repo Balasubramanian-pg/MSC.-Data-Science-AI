@@ -5,7 +5,7 @@ week: W11 - Module 4d. Tableau
 ---
 
 
-# Page 1
+## Page 1
 
  Tableau:  Lecture Notes 
  
@@ -45,7 +45,7 @@ Controls the look and feel of the data
 marks (Color, Size, Label, Detail, Tooltip, 
 
 
-# Page 2
+## Page 2
 
 Shape). 
 Filters Shelf 
@@ -83,7 +83,7 @@ data.
 ●​ Renaming Fields: Give columns business-friendly names (e.g., change Cust_ID to 
 
 
-# Page 3
+## Page 3
 
 Customer ID). 
 ●​ Changing Data Type: Ensure columns are correctly identified (e.g., String, Number, 
@@ -121,7 +121,7 @@ Non-matches get null where applicable.
  
 
 
-# Page 4
+## Page 4
 
 B. Data Blending (For Different, Dissimilar Sources) 
  
