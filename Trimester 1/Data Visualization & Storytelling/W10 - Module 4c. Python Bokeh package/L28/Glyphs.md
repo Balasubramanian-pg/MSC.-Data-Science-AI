@@ -1,3 +1,9 @@
+---
+title: W10 - Module 4c. Python Bokeh package
+module: Statistical Modelling And Inferencing
+week: W10 - Module 4c. Python Bokeh package
+---
+
 # Bokeh Glyphs Explained
 
 ## What are Glyphs in Bokeh?
