@@ -521,3 +521,5 @@ That is one of the deepest ideas in data science.
 
 Humans visually detect structure.  
 Models formalize it mathematically.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
