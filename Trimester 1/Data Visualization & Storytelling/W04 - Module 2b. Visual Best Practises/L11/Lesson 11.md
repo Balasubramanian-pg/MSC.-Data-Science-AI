@@ -4,9 +4,9 @@ module: Statistical Modelling And Inferencing
 week: W04 - Module 2b. Visual Best Practises
 ---
 
-# Lesson 11: Designing Visuals
+## Lesson 11: Designing Visuals
 
-# Visual Encoding, Perception, and Effective Data Communication
+## Visual Encoding, Perception, and Effective Data Communication
 
 Lesson 11 forms the conceptual backbone of modern data visualization.
 
@@ -65,9 +65,9 @@ The lesson draws heavily from the foundational works of:
 - Cole Nussbaumer Knaflic
     
 
-# 1. Designing Visuals
+## 1. Designing Visuals
 
-# The Goal of Visualization
+## The Goal of Visualization
 
 The lesson begins with visualization best practices.
 
@@ -77,7 +77,7 @@ The key emphasis is:
 
 This sounds simple, but it fundamentally changes how dashboards should be designed.
 
-# Traditional Mistake
+## Traditional Mistake
 
 Many people treat visualization as:
 
@@ -95,7 +95,7 @@ This produces:
 - but cognitively inefficient communication
     
 
-# Actual Goal of Visualization
+## Actual Goal of Visualization
 
 Visualization exists to:
 
@@ -110,7 +110,7 @@ Visualization exists to:
 - compress complexity
     
 
-# Visualization Pipeline
+## Visualization Pipeline
 
 ```mermaid
 flowchart LR
@@ -124,7 +124,7 @@ flowchart LR
 
 Every stage introduces possible failure points.
 
-# Good Visualization Design Must Optimize
+## Good Visualization Design Must Optimize
 
 - perceptual clarity
     
@@ -137,15 +137,15 @@ Every stage introduces possible failure points.
 - information hierarchy
     
 
-# Core Principle
+## Core Principle
 
 ```text
 A chart succeeds when interpretation becomes effortless.
 ```
 
-# Edward Tufte’s Contribution
+## Edward Tufte’s Contribution
 
-# Information-Centric Visualization
+## Information-Centric Visualization
 
 Edward Tufte fundamentally changed visualization philosophy.
 
@@ -175,7 +175,7 @@ Focus shifted toward:
 - perceptual efficiency
     
 
-# Tufte’s Core Philosophy
+## Tufte’s Core Philosophy
 
 ```text
 Remove everything that does not improve understanding.
@@ -192,13 +192,13 @@ This led to concepts such as:
 - minimal cognitive friction
     
 
-# Data-Ink Ratio
+## Data-Ink Ratio
 
 Tufte proposed:
 
 Most ink in a chart should represent actual data.
 
-# Bad Visualization
+## Bad Visualization
 
 - heavy borders
     
@@ -211,7 +211,7 @@ Most ink in a chart should represent actual data.
 - excessive background styling
     
 
-# Good Visualization
+## Good Visualization
 
 - minimal non-data elements
     
@@ -222,7 +222,7 @@ Most ink in a chart should represent actual data.
 - high signal-to-noise ratio
     
 
-# Chartjunk Problem
+## Chartjunk Problem
 
 ```mermaid
 flowchart TD
@@ -232,15 +232,15 @@ flowchart TD
     --> D[Reduced Clarity]
 ```
 
-# Important Insight
+## Important Insight
 
 Humans possess limited attentional bandwidth.
 
 Every unnecessary visual element competes for cognition.
 
-# 2. Understanding Data Types
+## 2. Understanding Data Types
 
-# The Foundation of Correct Visualization
+## The Foundation of Correct Visualization
 
 One of the strongest sections in the lesson is the explanation of data types.
 
@@ -259,7 +259,7 @@ The lesson identifies four major data types:
 |Interval|Equal intervals|Addition/Subtraction|
 |Ratio|Full quantitative|All arithmetic|
 
-# Why Data Types Matter
+## Why Data Types Matter
 
 Different data types support different operations.
 
@@ -267,7 +267,7 @@ Therefore:
 
 Different visualizations become appropriate.
 
-# Data Type Decision Tree
+## Data Type Decision Tree
 
 ```mermaid
 flowchart TD
@@ -286,9 +286,9 @@ flowchart TD
     F -->|Yes| H[Ratio]
 ```
 
-# Nominal Data
+## Nominal Data
 
-# Pure Categories
+## Pure Categories
 
 Examples:
 
@@ -310,7 +310,7 @@ Properties:
 - arithmetic meaningless
     
 
-# Appropriate Operations
+## Appropriate Operations
 
 Only:
 
@@ -319,7 +319,7 @@ Only:
 - inequality
     
 
-# Appropriate Visualizations
+## Appropriate Visualizations
 
 - bar charts
     
@@ -330,7 +330,7 @@ Only:
 - categorical heatmaps
     
 
-# Poor Choices
+## Poor Choices
 
 - line charts implying continuity
     
@@ -339,9 +339,9 @@ Only:
 - proportional comparisons
     
 
-# Ordinal Data
+## Ordinal Data
 
-# Ordered Categories
+## Ordered Categories
 
 Examples:
 
@@ -358,7 +358,7 @@ Key property:
 Order exists, but proportional meaning does not.
 ```
 
-# Example
+## Example
 
 5 stars > 3 stars
 
@@ -372,7 +372,7 @@ But:
 
 because intervals are not guaranteed equal.
 
-# Important Analytical Mistake
+## Important Analytical Mistake
 
 Many dashboards incorrectly treat ordinal scales as continuous quantitative variables.
 
@@ -385,7 +385,7 @@ This creates:
 - invalid proportional claims
     
 
-# Ordinal Visualization Techniques
+## Ordinal Visualization Techniques
 
 - ordered bars
     
@@ -396,9 +396,9 @@ This creates:
 - heatmaps
     
 
-# Interval Data
+## Interval Data
 
-# Equal Distances Without True Zero
+## Equal Distances Without True Zero
 
 Examples:
 
@@ -413,7 +413,7 @@ Differences are meaningful.
 
 Ratios are not.
 
-# Example
+## Example
 
 50°C is not twice as hot as 25°C.
 
@@ -425,9 +425,9 @@ Difference = 25°C
 
 is valid.
 
-# Ratio Data
+## Ratio Data
 
-# True Quantitative Scale
+## True Quantitative Scale
 
 Examples:
 
@@ -451,7 +451,7 @@ Properties:
 - proportional reasoning valid
     
 
-# Why Ratio Data Dominates Business Dashboards
+## Why Ratio Data Dominates Business Dashboards
 
 Most enterprise KPIs are ratio variables:
 
@@ -477,9 +477,9 @@ This is why:
 
 dominate business intelligence systems.
 
-# 3. Human Visual Perception
+## 3. Human Visual Perception
 
-# Cleveland’s Three Operations
+## Cleveland’s Three Operations
 
 The lesson references William Cleveland’s work on graphical perception.
 
@@ -492,7 +492,7 @@ Humans perform three operations when reading visuals:
 3. Estimation
     
 
-# Perceptual Decoding Pipeline
+## Perceptual Decoding Pipeline
 
 ```mermaid
 flowchart LR
@@ -503,9 +503,9 @@ flowchart LR
     --> E[Interpretation]
 ```
 
-# Detection
+## Detection
 
-# Identifying Visual Objects
+## Identifying Visual Objects
 
 The brain first identifies:
 
@@ -522,7 +522,7 @@ The brain first identifies:
 
 This is object recognition.
 
-# Detection Quality Depends On
+## Detection Quality Depends On
 
 - contrast
     
@@ -535,7 +535,7 @@ This is object recognition.
 - alignment
     
 
-# Good Detection
+## Good Detection
 
 ```text
 Clear bars
@@ -543,7 +543,7 @@ Strong contrast
 Minimal clutter
 ```
 
-# Poor Detection
+## Poor Detection
 
 ```text
 Overlapping objects
@@ -552,9 +552,9 @@ Low contrast
 Visual noise
 ```
 
-# Assembly
+## Assembly
 
-# Grouping Relationships
+## Grouping Relationships
 
 After detection, the brain seeks relationships.
 
@@ -573,19 +573,19 @@ Examples:
 
 This directly connects to Gestalt laws.
 
-# Gestalt Law of Continuity
+## Gestalt Law of Continuity
 
 Humans naturally assume:
 
 continuous patterns imply relationships.
 
-# Example
+## Example
 
 Sorted bars imply ranking.
 
 Connected lines imply trends.
 
-# Assembly Process
+## Assembly Process
 
 ```mermaid
 flowchart TD
@@ -595,9 +595,9 @@ flowchart TD
     --> D[Relationship Inference]
 ```
 
-# Estimation
+## Estimation
 
-# Magnitude Comparison
+## Magnitude Comparison
 
 The final stage is quantitative judgment.
 
@@ -612,7 +612,7 @@ Questions include:
 - What is the difference?
     
 
-# Important Insight
+## Important Insight
 
 Some visual encodings support estimation better than others.
 
@@ -622,9 +622,9 @@ This leads into:
 visual encoding hierarchy
 ```
 
-# 4. Types of Visual Encodings
+## 4. Types of Visual Encodings
 
-# Perceptual Hierarchy
+## Perceptual Hierarchy
 
 The lesson introduces one of the most important principles in visualization science:
 
@@ -634,7 +634,7 @@ Some encodings allow humans to compare values very accurately.
 
 Others do not.
 
-# Encoding Effectiveness Hierarchy
+## Encoding Effectiveness Hierarchy
 
 |Encoding|Precision|
 |---|---|
@@ -651,7 +651,7 @@ This hierarchy originates largely from:
 - perceptual psychology experiments
     
 
-# Why Position Is Best
+## Why Position Is Best
 
 Humans compare aligned positions extremely accurately.
 
@@ -664,7 +664,7 @@ Example:
 - bar charts
     
 
-# Position Encoding Workflow
+## Position Encoding Workflow
 
 ```mermaid
 flowchart LR
@@ -673,7 +673,7 @@ flowchart LR
     --> C[Fast Estimation]
 ```
 
-# Why Color Is Weak
+## Why Color Is Weak
 
 Color supports:
 
@@ -691,7 +691,7 @@ But performs poorly for:
 - precise ranking
     
 
-# Color Encoding Failure
+## Color Encoding Failure
 
 Humans cannot reliably estimate:
 
@@ -702,15 +702,15 @@ Humans cannot reliably estimate:
 - precise differences
     
 
-# Important Principle
+## Important Principle
 
 ```text
 Color is for attention, not precision.
 ```
 
-# Length Encoding
+## Length Encoding
 
-# Why Bar Charts Work So Well
+## Why Bar Charts Work So Well
 
 Humans compare lengths accurately because:
 
@@ -723,9 +723,9 @@ Humans compare lengths accurately because:
 
 This is why bar charts dominate analytics systems.
 
-# Angle Encoding
+## Angle Encoding
 
-# Pie Charts and Slopes
+## Pie Charts and Slopes
 
 Angles are harder to compare.
 
@@ -740,7 +740,7 @@ Humans struggle with:
 
 This is why pie charts become problematic with many categories.
 
-# Area and Volume Problems
+## Area and Volume Problems
 
 Bubble charts and treemaps often appear attractive but suffer perceptually.
 
@@ -753,7 +753,7 @@ Humans poorly estimate:
 - irregular shapes
     
 
-# Bubble Chart Problem
+## Bubble Chart Problem
 
 ```mermaid
 flowchart TD
@@ -762,15 +762,15 @@ flowchart TD
     --> C[Weak Estimation Accuracy]
 ```
 
-# 5. Data Encoding Techniques
+## 5. Data Encoding Techniques
 
-# Strategic Use of Visual Variables
+## Strategic Use of Visual Variables
 
 The lesson discusses several encoding techniques.
 
 Each has different cognitive strengths.
 
-# Color
+## Color
 
 ## Best For
 
@@ -790,7 +790,7 @@ Each has different cognitive strengths.
 - ranking
     
 
-# Important Practical Rule
+## Important Practical Rule
 
 The lesson recommends:
 
@@ -807,7 +807,7 @@ Too many colors increase:
 - visual fragmentation
     
 
-# Volume
+## Volume
 
 ## Best For
 
@@ -820,7 +820,7 @@ Too many colors increase:
 
 Poor precision estimation.
 
-# Angle
+## Angle
 
 ## Best For
 
@@ -835,7 +835,7 @@ Poor precision estimation.
 
 Precise quantitative judgment.
 
-# Length and Position
+## Length and Position
 
 These are the strongest encodings.
 
@@ -850,7 +850,7 @@ Best for:
 - BI dashboards
     
 
-# Visualization Encoding Decision Tree
+## Visualization Encoding Decision Tree
 
 ```mermaid
 flowchart TD
@@ -869,11 +869,11 @@ flowchart TD
     F -->|Yes| G[Use Color]
 ```
 
-# 6. Expressiveness vs Effectiveness
+## 6. Expressiveness vs Effectiveness
 
 This distinction is extremely important.
 
-# Expressiveness
+## Expressiveness
 
 Measures:
 
@@ -881,7 +881,7 @@ Measures:
 How much information the visualization captures.
 ```
 
-# Effectiveness
+## Effectiveness
 
 Measures:
 
@@ -889,7 +889,7 @@ Measures:
 How easily humans perceive the information.
 ```
 
-# Relationship Between Them
+## Relationship Between Them
 
 ```mermaid
 flowchart LR
@@ -902,9 +902,9 @@ flowchart LR
 
 You need both simultaneously.
 
-# Common Failure Modes
+## Common Failure Modes
 
-# High Expressiveness, Low Effectiveness
+## High Expressiveness, Low Effectiveness
 
 Examples:
 
@@ -915,7 +915,7 @@ Examples:
 - cluttered reports
     
 
-# High Effectiveness, Low Expressiveness
+## High Effectiveness, Low Expressiveness
 
 Examples:
 
@@ -926,7 +926,7 @@ Examples:
 - incomplete analysis
     
 
-# Goal
+## Goal
 
 The ideal visualization:
 
@@ -935,9 +935,9 @@ The ideal visualization:
 - minimizes cognitive effort
     
 
-# Advanced Insight
+## Advanced Insight
 
-# Visualization Is Cognitive Compression
+## Visualization Is Cognitive Compression
 
 A dashboard compresses:
 
@@ -956,7 +956,7 @@ into:
 perceptually efficient visual patterns
 ```
 
-# Cognitive Load Perspective
+## Cognitive Load Perspective
 
 Bad dashboards force users to:
 
@@ -971,7 +971,7 @@ Bad dashboards force users to:
 
 Good dashboards reduce mental work.
 
-# Final Design Philosophy
+## Final Design Philosophy
 
 A strong visualization should:
 
@@ -986,7 +986,7 @@ A strong visualization should:
 - support rapid insight extraction
     
 
-# Final Mental Model
+## Final Mental Model
 
 Think of visualization design as:
 
@@ -996,7 +996,7 @@ engineering human perception under cognitive constraints
 
 not merely producing charts.
 
-# References and Foundational Literature
+## References and Foundational Literature
 
 The concepts in this lesson strongly align with the foundational works of:
 
