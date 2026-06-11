@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W01 - Introduction to Data Science
 ---
 
-# Descriptive Methods in Machine Learning: Clustering and Association Rule Mining
+## Descriptive Methods in Machine Learning: Clustering and Association Rule Mining
 
 > [!NOTE]
 > Descriptive methods (unsupervised learning) focus on finding inherent structures, underlying patterns, and summaries within data without a predefined target variable. Unlike predictive methods (supervised learning) that map inputs to known outputs, descriptive methods answer the question: "What is the natural state and relationship within this data?"
@@ -70,7 +70,7 @@ import matplotlib.pyplot as plt
 from sklearn.datasets import make_blobs
 from sklearn.cluster import KMeans
 
-# 1. Generate synthetic data representing customer segments (e.g., spending vs. frequency)
+## 1. Generate synthetic data representing customer segments (e.g., spending vs. frequency)
 X, y_true = make_blobs(
     n_samples=500, 
     centers=4, 
@@ -78,8 +78,8 @@ X, y_true = make_blobs(
     random_state=42
 )
 
-# 2. Initialize and fit the KMeans algorithm
-# Using 'k-means++' ensures smarter centroid initialization to avoid local minima
+## 2. Initialize and fit the KMeans algorithm
+## Using 'k-means++' ensures smarter centroid initialization to avoid local minima
 kmeans_model = KMeans(
     n_clusters=4, 
     init='k-means++', 
@@ -90,10 +90,10 @@ kmeans_model = KMeans(
 cluster_assignments = kmeans_model.fit_predict(X)
 centroids = kmeans_model.cluster_centers_
 
-# 3. Visual Intuition
+## 3. Visual Intuition
 plt.figure(figsize=(10, 6))
 
-# Plot the grouped data points
+## Plot the grouped data points
 plt.scatter(
     X[:, 0], X[:, 1], 
     c=cluster_assignments, 
@@ -103,7 +103,7 @@ plt.scatter(
     label='Data Points'
 )
 
-# Plot the learned centroids
+## Plot the learned centroids
 plt.scatter(
     centroids[:, 0], centroids[:, 1], 
     c='red', 
@@ -119,7 +119,7 @@ plt.legend()
 plt.grid(True, alpha=0.3)
 plt.show()
 
-# 4. Extracting Mathematical Properties
+## 4. Extracting Mathematical Properties
 print(f"Algorithm Converged in {kmeans_model.n_iter_} iterations.")
 print(f"Final WCSS (Inertia): {kmeans_model.inertia_:.2f}")
 ```
@@ -194,7 +194,7 @@ import pandas as pd
 from mlxtend.preprocessing import TransactionEncoder
 from mlxtend.frequent_patterns import apriori, association_rules
 
-# 1. Raw Transactional Data
+## 1. Raw Transactional Data
 transactions = [
     ['Milk', 'Diaper', 'Beer', 'Eggs'],
     ['Milk', 'Diaper', 'Beer', 'Cola'],
@@ -203,7 +203,7 @@ transactions = [
     ['Milk', 'Diaper', 'Beer', 'Cola', 'Samosa']
 ]
 
-# 2. Transform data into a Boolean matrix (One-Hot Encoding format)
+## 2. Transform data into a Boolean matrix (One-Hot Encoding format)
 encoder = TransactionEncoder()
 encoded_array = encoder.fit(transactions).transform(transactions)
 df_transactions = pd.DataFrame(encoded_array, columns=encoder.columns_)
@@ -211,17 +211,17 @@ df_transactions = pd.DataFrame(encoded_array, columns=encoder.columns_)
 print("Boolean Transaction Matrix:")
 print(df_transactions.head())
 
-# 3. Apply Apriori to find frequent itemsets (min_support = 0.6 means itemset must appear in 3/5 transactions)
+## 3. Apply Apriori to find frequent itemsets (min_support = 0.6 means itemset must appear in 3/5 transactions)
 frequent_itemsets = apriori(df_transactions, min_support=0.6, use_colnames=True)
 
-# 4. Generate Association Rules
+## 4. Generate Association Rules
 rules = association_rules(frequent_itemsets, metric="confidence", min_threshold=0.7)
 
-# Sort by Lift to find the most impactful business rules
+## Sort by Lift to find the most impactful business rules
 rules = rules.sort_values(by='lift', ascending=False)
 
 print("\nDiscovered Association Rules:")
-# Displaying specific columns for readability
+## Displaying specific columns for readability
 print(rules[['antecedents', 'consequents', 'support', 'confidence', 'lift']])
 ```
 
