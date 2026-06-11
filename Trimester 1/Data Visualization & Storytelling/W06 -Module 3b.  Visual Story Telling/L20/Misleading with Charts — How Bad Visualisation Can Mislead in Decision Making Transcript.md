@@ -1,3 +1,9 @@
+---
+title: W06 -Module 3b.  Visual Story Telling
+module: Statistical Modelling And Inferencing
+week: W06 -Module 3b.  Visual Story Telling
+---
+
 # Misleading with Charts: How Bad Visualization Distorts Decision-Making
 
 This lecture addresses one of the most important and dangerous realities in data visualization:
