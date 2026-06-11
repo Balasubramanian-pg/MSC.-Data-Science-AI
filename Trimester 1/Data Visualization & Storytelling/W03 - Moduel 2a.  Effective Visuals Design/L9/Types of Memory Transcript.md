@@ -1,3 +1,9 @@
+---
+title: W03 - Moduel 2a.  Effective Visuals Design
+module: Statistical Modelling And Inferencing
+week: W03 - Moduel 2a.  Effective Visuals Design
+---
+
 # Types of Memory in Data Visualization
 
 When designing data visualizations, one of the biggest mistakes people make is assuming the audience has unlimited cognitive capacity.
