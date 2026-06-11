@@ -40,20 +40,20 @@ from bokeh.plotting import figure
 from bokeh.models import DateRangeSlider
 from bokeh.layouts import row, column
 
-# Initialize client-side JavaScript environment inside the browser
+## Initialize client-side JavaScript environment inside the browser
 output_notebook()
 
-# =====================================================================
-# 1. CORE BUILDING BLOCKS & GLYPH OVERLAYS
-# =====================================================================
-# Creating simple coordinates
+## =====================================================================
+## 1. CORE BUILDING BLOCKS & GLYPH OVERLAYS
+## =====================================================================
+## Creating simple coordinates
 x_base = [1, 2, 3, 4]
 y_base = [2, 5, 4, 6]
 
-# Shifted dataset for secondary glyph evaluation
+## Shifted dataset for secondary glyph evaluation
 y_offset = [val - 1 for val in y_base]
 
-# Step A: Initialize the main Figure canvas
+## Step A: Initialize the main Figure canvas
 p1 = figure(
     title="Layered Glyph Architecture & Interactive Toolbar",
     x_axis_label="X Values",
@@ -63,27 +63,27 @@ p1 = figure(
     tools="pan,box_zoom,wheel_zoom,reset,save"
 )
 
-# Step B: Render consecutive glyph objects to build visual richness
-# Glyph 1: Continuous Line Trend
+## Step B: Render consecutive glyph objects to build visual richness
+## Glyph 1: Continuous Line Trend
 p1.line(x_base, y_base, legend_label="Trendline", line_width=3, line_color="navy")
 
-# Glyph 2: Circle markers anchored over coordinates
+## Glyph 2: Circle markers anchored over coordinates
 p1.circle(x_base, y_base, legend_label="Target Identifiers", size=10, fill_color="red", line_color="black")
 
-# Glyph 3: Square markers mapped to alternate offset data streams
+## Glyph 3: Square markers mapped to alternate offset data streams
 p1.square(x_base, y_offset, legend_label="Baseline Offset", size=12, fill_color="orange", line_color="darkorange")
 
-# Step C: Turn legend components into actionable visibility toggles
+## Step C: Turn legend components into actionable visibility toggles
 p1.legend.title = "Interactive Layers"
 p1.legend.click_policy = "hide"  # Clicking an item hides its mapped glyph group
 
 show(p1)
 
 
-# =====================================================================
-# 2. INTERACTIVE WIDGETS: DateRangeSlider Setup
-# =====================================================================
-# Creating an audience-facing date picker slider widget
+## =====================================================================
+## 2. INTERACTIVE WIDGETS: DateRangeSlider Setup
+## =====================================================================
+## Creating an audience-facing date picker slider widget
 date_slider = DateRangeSlider(
     title="Temporal Filter Range",
     start=date(2022, 1, 1),
@@ -93,23 +93,23 @@ date_slider = DateRangeSlider(
     width=500
 )
 
-# Render standalone widget component directly into browser
+## Render standalone widget component directly into browser
 show(date_slider)
 
 
-# =====================================================================
-# 3. ADVANCED LAYOUTS: Comparative Multi-Plots (Rows & Columns)
-# =====================================================================
-# Generate functional evaluation structures
+## =====================================================================
+## 3. ADVANCED LAYOUTS: Comparative Multi-Plots (Rows & Columns)
+## =====================================================================
+## Generate functional evaluation structures
 x_layout = list(range(1, 11))
 y0 = [x for x in x_layout]                      # Linear Function: y = x
 y1 = [10 - x for x in x_layout]                 # Inverse Linear:  y = 10 - x
 y2 = [abs(x - 5) for x in x_layout]             # Modulus/V-Shape: y = |x - 5|
 
-# Pre-set uniform layout sizing parameters
+## Pre-set uniform layout sizing parameters
 fig_settings = dict(width=260, height=260, tools="pan,wheel_zoom,reset")
 
-# Initialize isolated figures
+## Initialize isolated figures
 s1 = figure(title="Linear (y=x)", background_fill_color="#fafafa", **fig_settings)
 s1.scatter(x_layout, y0, size=8, color="teal", marker="circle")
 
@@ -119,12 +119,12 @@ s2.scatter(x_layout, y1, size=8, color="crimson", marker="square")
 s3 = figure(title="Modulus (y=|x-5|)", background_fill_color="#e6e6e6", **fig_settings)
 s3.scatter(x_layout, y2, size=8, color="indigo", marker="triangle")
 
-# Arrangement Style A: Row Layout (Side-by-Side Comparison)
+## Arrangement Style A: Row Layout (Side-by-Side Comparison)
 horizontal_dashboard = row(s1, s2, s3)
 print("--- Displaying Horizontal Row Layout ---")
 show(horizontal_dashboard)
 
-# Arrangement Style B: Column Layout (Vertically Stacked Grid)
+## Arrangement Style B: Column Layout (Vertically Stacked Grid)
 vertical_dashboard = column(s1, s2, s3)
 print("--- Displaying Vertical Column Layout ---")
 show(vertical_dashboard)
@@ -138,7 +138,7 @@ The instructor highlights how Bokeh’s `row` and `column` layouts function simi
     
 - **Vertical Columns (`column(s1, s2, s3)`):** Ideal for stacked time-series dashboards where your audience wants to evaluate separate variables tracking against a unified timeline.
 
-# Bokeh Building Blocks Explained Visually + Code Wise
+## Bokeh Building Blocks Explained Visually + Code Wise
 
 This transcript explains the actual mechanics of building Bokeh visualizations.
 
@@ -153,7 +153,7 @@ Source:
 
 ---
 
-# 1. The First Principle of Plotting
+## 1. The First Principle of Plotting
 
 The transcript starts with an important idea:
 
@@ -175,7 +175,7 @@ Most bad visualizations fail because:
 
 ---
 
-# Example Used in Transcript
+## Example Used in Transcript
 
 They plot:
 
@@ -200,7 +200,7 @@ A[X Values]
 
 ---
 
-# 2. Creating Data
+## 2. Creating Data
 
 Transcript:
 
@@ -214,10 +214,10 @@ y = x squared
 ## Actual Python
 
 ```python
-# Generate x values
+## Generate x values
 x = list(range(1, 51))
 
-# Generate y values using square function
+## Generate y values using square function
 y = [i**2 for i in x]
 
 print(x[:5])
@@ -226,7 +226,7 @@ print(y[:5])
 
 ---
 
-# What This Means
+## What This Means
 
 For every x:
 
@@ -246,7 +246,7 @@ Example:
 
 ---
 
-# Visual Understanding
+## Visual Understanding
 
 ```mermaid
 flowchart LR
@@ -258,7 +258,7 @@ E[3] --> F[3² = 9]
 
 ---
 
-# 3. Importing Figure and Show
+## 3. Importing Figure and Show
 
 Transcript explains:
 
@@ -270,7 +270,7 @@ Source:
 
 ---
 
-# Why These Matter
+## Why These Matter
 
 ## `figure`
 
@@ -299,7 +299,7 @@ This is different from Matplotlib notebooks.
 
 ---
 
-# Mental Model
+## Mental Model
 
 ```mermaid
 flowchart TD
@@ -311,7 +311,7 @@ A[Create Figure]
 
 ---
 
-# 4. First Complete Bokeh Plot
+## 4. First Complete Bokeh Plot
 
 ---
 
@@ -321,14 +321,14 @@ A[Create Figure]
 from bokeh.plotting import figure, show
 from bokeh.io import output_notebook
 
-# Enable notebook rendering
+## Enable notebook rendering
 output_notebook()
 
-# Data
+## Data
 x = list(range(1, 51))
 y = [i**2 for i in x]
 
-# Create figure
+## Create figure
 p = figure(
     title="Parabola Plot",
     x_axis_label="X Values",
@@ -337,7 +337,7 @@ p = figure(
     height=400
 )
 
-# Add line glyph
+## Add line glyph
 p.line(
     x,
     y,
@@ -345,13 +345,13 @@ p.line(
     legend_label="y = x²"
 )
 
-# Show visualization
+## Show visualization
 show(p)
 ```
 
 ---
 
-# What Happens Internally
+## What Happens Internally
 
 ```mermaid
 flowchart TD
@@ -365,7 +365,7 @@ A[Data]
 
 ---
 
-# 5. What Is a Glyph?
+## 5. What Is a Glyph?
 
 This is one of the MOST important Bokeh concepts.
 
@@ -377,7 +377,7 @@ Source:
 
 ---
 
-# Simple Definition
+## Simple Definition
 
 A glyph is:
 
@@ -398,7 +398,7 @@ Any visual object representing data.
 
 ---
 
-# Mental Model
+## Mental Model
 
 ```text
 Data
@@ -410,7 +410,7 @@ Visual Representation
 
 ---
 
-# Examples
+## Examples
 
 |Glyph|Meaning|
 |---|---|
@@ -421,7 +421,7 @@ Visual Representation
 
 ---
 
-# 6. Line Glyph
+## 6. Line Glyph
 
 Transcript uses:
 
@@ -433,7 +433,7 @@ Source:
 
 ---
 
-# What It Actually Does
+## What It Actually Does
 
 ```python
 p.line(
@@ -447,7 +447,7 @@ p.line(
 
 ---
 
-# Parameters Explained
+## Parameters Explained
 
 |Parameter|Meaning|
 |---|---|
@@ -459,7 +459,7 @@ p.line(
 
 ---
 
-# Visual Pipeline
+## Visual Pipeline
 
 ```mermaid
 flowchart LR
@@ -475,7 +475,7 @@ B --> D[Interactive Line]
 
 ---
 
-# 7. Interactivity Features
+## 7. Interactivity Features
 
 Transcript highlights:
 
@@ -494,7 +494,7 @@ Source:
 
 ---
 
-# This Is The Key Difference
+## This Is The Key Difference
 
 Matplotlib:
 
@@ -508,7 +508,7 @@ Bokeh:
 
 ---
 
-# Built-In Interactive Tools
+## Built-In Interactive Tools
 
 ```python
 p = figure(
@@ -518,7 +518,7 @@ p = figure(
 
 ---
 
-# Tool Breakdown
+## Tool Breakdown
 
 |Tool|Purpose|
 |---|---|
@@ -530,7 +530,7 @@ p = figure(
 
 ---
 
-# Visual Interaction Model
+## Visual Interaction Model
 
 ```mermaid
 flowchart TD
@@ -543,7 +543,7 @@ A[Mouse Action]
 
 ---
 
-# 8. Adding Multiple Glyphs
+## 8. Adding Multiple Glyphs
 
 Transcript then moves to:
 
@@ -560,7 +560,7 @@ Source:
 
 ---
 
-# Why This Matters
+## Why This Matters
 
 Modern visualizations combine:
 
@@ -573,7 +573,7 @@ Modern visualizations combine:
 
 ---
 
-# Example
+## Example
 
 ```python
 from bokeh.plotting import figure, show
@@ -590,7 +590,7 @@ p = figure(
     height=400
 )
 
-# Line glyph
+## Line glyph
 p.line(
     x,
     y,
@@ -598,7 +598,7 @@ p.line(
     legend_label="Line"
 )
 
-# Circle glyph
+## Circle glyph
 p.circle(
     x,
     y,
@@ -607,7 +607,7 @@ p.circle(
     legend_label="Circles"
 )
 
-# Square glyph
+## Square glyph
 p.square(
     x,
     [1,4,5,3],
@@ -621,7 +621,7 @@ show(p)
 
 ---
 
-# Visual Structure
+## Visual Structure
 
 ```mermaid
 flowchart TD
@@ -636,7 +636,7 @@ A --> D[Square Glyph]
 
 ---
 
-# 9. Why Multiple Glyphs Matter
+## 9. Why Multiple Glyphs Matter
 
 This enables:
 
@@ -653,7 +653,7 @@ This enables:
 
 ---
 
-# Real Analytics Example
+## Real Analytics Example
 
 |Glyph|Meaning|
 |---|---|
@@ -663,7 +663,7 @@ This enables:
 
 ---
 
-# 10. Clickable Legends
+## 10. Clickable Legends
 
 Transcript mentions:
 
@@ -675,7 +675,7 @@ Source:
 
 ---
 
-# Why This Is Powerful
+## Why This Is Powerful
 
 Users can:
 
@@ -688,7 +688,7 @@ Users can:
 
 ---
 
-# Example
+## Example
 
 ```python
 p.legend.click_policy = "hide"
@@ -696,7 +696,7 @@ p.legend.click_policy = "hide"
 
 ---
 
-# Behavior
+## Behavior
 
 ```text
 Click Legend
@@ -706,7 +706,7 @@ Glyph Visibility Toggles
 
 ---
 
-# This Is Huge In Dashboards
+## This Is Huge In Dashboards
 
 Imagine:
 
@@ -724,7 +724,7 @@ Very efficient.
 
 ---
 
-# 11. Widgets
+## 11. Widgets
 
 Transcript introduces widgets.
 
@@ -732,7 +732,7 @@ Source:
 
 ---
 
-# What Are Widgets?
+## What Are Widgets?
 
 Widgets are UI controls:
 
@@ -747,7 +747,7 @@ Widgets are UI controls:
 
 ---
 
-# Core Idea
+## Core Idea
 
 ```text
 Visualization
@@ -759,7 +759,7 @@ Interactive Analytics
 
 ---
 
-# Date Range Slider Example
+## Date Range Slider Example
 
 ```python
 from bokeh.models import DateRangeSlider
@@ -780,7 +780,7 @@ show(slider)
 
 ---
 
-# Why This Matters
+## Why This Matters
 
 User controls:
 
@@ -795,7 +795,7 @@ without changing code.
 
 ---
 
-# Dashboard Interaction Model
+## Dashboard Interaction Model
 
 ```mermaid
 flowchart LR
@@ -807,7 +807,7 @@ A[User Slider]
 
 ---
 
-# 12. Layouts
+## 12. Layouts
 
 Transcript explains:
 
@@ -820,7 +820,7 @@ Source:
 
 ---
 
-# Why Layouts Matter
+## Why Layouts Matter
 
 Real dashboards rarely contain:
 
@@ -842,7 +842,7 @@ They contain:
 
 ---
 
-# Row Layout
+## Row Layout
 
 ```python
 from bokeh.layouts import row
@@ -852,7 +852,7 @@ show(row(plot1, plot2, plot3))
 
 ---
 
-# Column Layout
+## Column Layout
 
 ```python
 from bokeh.layouts import column
@@ -862,7 +862,7 @@ show(column(plot1, plot2, plot3))
 
 ---
 
-# Visual Understanding
+## Visual Understanding
 
 ## Row
 
@@ -882,7 +882,7 @@ show(column(plot1, plot2, plot3))
 
 ---
 
-# 13. Full Layout Example
+## 13. Full Layout Example
 
 ```python
 from bokeh.plotting import figure, show
@@ -893,19 +893,19 @@ output_notebook()
 
 x = list(range(11))
 
-# Plot 1
+## Plot 1
 p1 = figure(title="y = x")
 p1.line(x, x)
 
-# Plot 2
+## Plot 2
 p2 = figure(title="y = 10-x")
 p2.line(x, [10-i for i in x])
 
-# Plot 3
+## Plot 3
 p3 = figure(title="Absolute Function")
 p3.line(x, [abs(5-i) for i in x])
 
-# Arrange in row
+## Arrange in row
 layout = row(p1, p2, p3)
 
 show(layout)
@@ -913,7 +913,7 @@ show(layout)
 
 ---
 
-# Internal Architecture
+## Internal Architecture
 
 ```mermaid
 flowchart TD
@@ -932,7 +932,7 @@ D --> E[Dashboard]
 
 ---
 
-# 14. Important Design Insight
+## 14. Important Design Insight
 
 The transcript quietly reveals something important:
 
@@ -953,7 +953,7 @@ combined.
 
 ---
 
-# 15. Bokeh vs Traditional Plotting
+## 15. Bokeh vs Traditional Plotting
 
 |Traditional Plotting|Bokeh|
 |---|---|
@@ -964,7 +964,7 @@ combined.
 
 ---
 
-# 16. Real Industry Usage
+## 16. Real Industry Usage
 
 Bokeh becomes valuable when:
 
@@ -979,7 +979,7 @@ Bokeh becomes valuable when:
 
 ---
 
-# Typical Use Cases
+## Typical Use Cases
 
 |Industry|Use|
 |---|---|
@@ -991,7 +991,7 @@ Bokeh becomes valuable when:
 
 ---
 
-# 17. Complete Mental Model
+## 17. Complete Mental Model
 
 ```mermaid
 flowchart TD
@@ -1012,7 +1012,7 @@ F --> G[Interactive Dashboard]
 
 ---
 
-# Final Takeaways
+## Final Takeaways
 
 ## Core Bokeh Pipeline
 
@@ -1032,7 +1032,7 @@ Dashboard
 
 ---
 
-# Most Important Concepts
+## Most Important Concepts
 
 |Concept|Meaning|
 |---|---|
@@ -1045,7 +1045,7 @@ Dashboard
 
 ---
 
-# Biggest Conceptual Shift
+## Biggest Conceptual Shift
 
 Matplotlib mindset:
 
