@@ -21,3 +21,5 @@ By the end of this module, you will be able to:
 3. Explain the importance of understanding attribute types within the context of data analysis.
 4. Describe different methods for representing data for computational analysis.
 5. Recognise the most appropriate representation method for different kinds of datasets and attributes.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
