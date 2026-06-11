@@ -1,7 +1,7 @@
 ---
-title: W10 - Module 4c. Python Bokeh package
+title: W10 - Module 4c. Python Bokeh package - Module 4c. Python Bokeh package
 module: Statistical Modelling And Inferencing
-week: W10 - Module 4c. Python Bokeh package
+week: W10 - Module 4c. Python Bokeh package - Module 4c. Python Bokeh package
 ---
 
 Based on your lecture transcript, the instructor is introducing **Bokeh**, a powerful library in the Python ecosystem designed specifically for creating **interactive, web-ready visualizations**.
