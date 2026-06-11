@@ -147,3 +147,6 @@ narrative about the data.
 [Sales] - [Cost] = [Profit]). 
 ●​ Parameters: Dynamic values that can replace constant values in calculations, filters, and 
 reference lines. They allow the end-user to interactively control parts of the visualization. 
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
