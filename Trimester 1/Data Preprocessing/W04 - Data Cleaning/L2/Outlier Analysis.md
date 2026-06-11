@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W04 - Data Cleaning
 ---
 
-# Index
+## Index
 
 1. Introduction to Outlier Analysis
     
@@ -45,7 +45,7 @@ week: W04 - Data Cleaning
 15. Key Takeaways
     
 
-# Introduction to Outlier Analysis
+## Introduction to Outlier Analysis
 
 Outlier analysis focuses on identifying data points that differ significantly from the majority of observations in a dataset.
 
@@ -57,7 +57,7 @@ They are not necessarily noise or errors. They are real observations that happen
 
 Outlier analysis becomes critical because many machine learning and statistical systems are highly sensitive to extreme observations.
 
-# Understanding Outliers
+## Understanding Outliers
 
 An outlier is a genuine observation that deviates significantly from the majority of data points.
 
@@ -83,7 +83,7 @@ This makes E an outlier.
 
 The same intuition extends into higher-dimensional spaces.
 
-# Visualizing Outliers in 1D and 2D Space
+## Visualizing Outliers in 1D and 2D Space
 
 The lecture explains outliers using both one-dimensional and two-dimensional examples.
 
@@ -119,7 +119,7 @@ $$
 Similarity \downarrow \quad as \quad Distance \uparrow  
 $$
 
-# Distance-Based Intuition Behind Outliers
+## Distance-Based Intuition Behind Outliers
 
 The lecture introduces a simple intuitive method for understanding outliers.
 
@@ -147,7 +147,7 @@ $$
 
 Outlier detection methods often rely fundamentally on this idea.
 
-# Why Outliers Affect Machine Learning
+## Why Outliers Affect Machine Learning
 
 Outliers can heavily distort machine learning systems because many algorithms depend on:
 
@@ -173,7 +173,7 @@ The lecture emphasizes that outliers may:
 
 This becomes especially dangerous in clustering systems.
 
-# Outliers and Clustering Algorithms
+## Outliers and Clustering Algorithms
 
 The lecture specifically discusses center-based clustering algorithms.
 
@@ -205,7 +205,7 @@ Centroid=\frac{1}{n}\sum_{i=1}^{n}x_i
 
 Extreme points therefore distort the center significantly.
 
-# Outliers and Statistical Distortion
+## Outliers and Statistical Distortion
 
 Outliers can distort statistical summaries as well.
 
@@ -226,7 +226,7 @@ The extreme value dominates the average.
 
 This is why outliers can mask true trends within the data.
 
-# Detecting Outliers
+## Detecting Outliers
 
 The lecture introduces several detection methods.
 
@@ -293,7 +293,7 @@ Sparse isolated regions represent anomalies.
 
 This approach is more robust than center-based methods.
 
-# DBSCAN and Density-Based Clustering
+## DBSCAN and Density-Based Clustering
 
 The lecture highlights DBSCAN as an important density-based clustering algorithm.
 
@@ -321,7 +321,7 @@ flowchart TD
     --> D[Outlier]
 ```
 
-# Handling Outliers
+## Handling Outliers
 
 Once identified, outliers may be handled using multiple strategies.
 
@@ -404,7 +404,7 @@ flowchart LR
     B --> C[Final Decision]
 ```
 
-# Median vs Mean for Robustness
+## Median vs Mean for Robustness
 
 The lecture emphasizes that mean is highly sensitive to outliers while median is more robust.
 
@@ -423,7 +423,7 @@ Median remains relatively stable.
 
 This is why robust statistical systems often prefer median-based approaches in the presence of outliers.
 
-# Outlier Detection in High Dimensions
+## Outlier Detection in High Dimensions
 
 In low-dimensional spaces, outliers can often be visualized directly.
 
@@ -452,7 +452,7 @@ The lecture notes that high-dimensional outlier analysis often requires automate
 
 because traditional distance calculations scale poorly.
 
-# Iterative Nature of Outlier Analysis
+## Iterative Nature of Outlier Analysis
 
 Outlier analysis is not a one-time preprocessing step.
 
@@ -470,7 +470,7 @@ flowchart TD
 
 The dataset must repeatedly be reviewed and refined.
 
-# Real-World Importance of Outliers
+## Real-World Importance of Outliers
 
 The lecture highlights an important warning:
 
@@ -488,7 +488,7 @@ Examples where outliers are important:
 
 Sometimes the outlier is the most important observation in the dataset.
 
-# Key Takeaways
+## Key Takeaways
 
 Outliers are genuine observations that differ significantly from the majority of the dataset.
 
