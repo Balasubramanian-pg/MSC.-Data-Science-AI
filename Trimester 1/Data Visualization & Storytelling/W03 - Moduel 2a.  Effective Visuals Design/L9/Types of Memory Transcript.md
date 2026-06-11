@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W03 - Moduel 2a.  Effective Visuals Design
 ---
 
-# Types of Memory in Data Visualization
+## Types of Memory in Data Visualization
 
 When designing data visualizations, one of the biggest mistakes people make is assuming the audience has unlimited cognitive capacity.
 
@@ -27,7 +27,7 @@ That means:
 
 The role of memory becomes central because every chart, dashboard, slide, infographic, or report competes against the limitations of human cognition.
 
-# Why Memory Matters in Visualization
+## Why Memory Matters in Visualization
 
 A visualization succeeds only if the audience can:
 
@@ -48,7 +48,7 @@ Good visual design reduces memory burden.
 
 This is one of the foundational principles of modern UX design, dashboard engineering, cognitive design, and storytelling.
 
-# Core Principle
+## Core Principle
 
 Human memory is limited.
 
@@ -63,7 +63,7 @@ Therefore:
 - Design should support perception instead of fighting it
     
 
-# The Information Processing Pipeline
+## The Information Processing Pipeline
 
 The transcript indirectly refers to a broader cognitive pipeline.
 
@@ -85,7 +85,7 @@ The biggest bottleneck is usually:
 Working Memory
 ```
 
-# Major Types of Memory Relevant to Visualization
+## Major Types of Memory Relevant to Visualization
 
 There are three primary memory systems relevant here:
 
@@ -95,7 +95,7 @@ There are three primary memory systems relevant here:
 |Working (Short-Term) Memory|Active thinking and processing|Seconds|Very limited|
 |Long-Term Memory|Stores learned knowledge|Potentially lifelong|Very large|
 
-# 1. Sensory Memory
+## 1. Sensory Memory
 
 ## Definition
 
@@ -146,7 +146,7 @@ If one bar in a chart is bright cyan while all others are gray:
 
 This is where pre-attentive attributes operate.
 
-# Connection to Pre-Attentive Processing
+## Connection to Pre-Attentive Processing
 
 Pre-attentive attributes are visual properties processed automatically before conscious attention.
 
@@ -171,7 +171,7 @@ The transcript introduces this concept because pre-attentive processing helps re
 
 Instead of forcing users to search consciously, the visualization guides attention automatically.
 
-# Example
+## Example
 
 ## Bad Design
 
@@ -189,7 +189,7 @@ Immediate recognition
 Minimal cognitive effort
 ```
 
-# Sensory Memory Design Implications
+## Sensory Memory Design Implications
 
 ## Effective Practices
 
@@ -209,7 +209,7 @@ Clutter interferes with rapid sensory detection.
 
 The eye should know where to look first.
 
-# 2. Working Memory (Short-Term Memory)
+## 2. Working Memory (Short-Term Memory)
 
 ## Definition
 
@@ -219,7 +219,7 @@ This is where thinking happens.
 
 When users compare values, interpret trends, or analyze relationships, they are using working memory.
 
-# Why Working Memory Is Critical
+## Why Working Memory Is Critical
 
 Working memory is extremely limited.
 
@@ -237,7 +237,7 @@ Closer to 4 chunks
 
 This means humans can only actively process a small amount of information simultaneously.
 
-# This Is the Biggest Constraint in Dashboard Design
+## This Is the Biggest Constraint in Dashboard Design
 
 Most bad dashboards fail because they overload working memory.
 
@@ -258,7 +258,7 @@ Examples:
 - unnecessary dimensions
     
 
-# Working Memory Overload
+## Working Memory Overload
 
 ```mermaid
 flowchart TD
@@ -268,7 +268,7 @@ flowchart TD
     D --> E[Poor Decisions]
 ```
 
-# Example of Poor Design
+## Example of Poor Design
 
 Imagine:
 
@@ -300,7 +300,7 @@ The audience must constantly remember:
 
 This exhausts working memory.
 
-# Example of Good Design
+## Example of Good Design
 
 A better dashboard:
 
@@ -317,7 +317,7 @@ A better dashboard:
 
 This reduces mental effort.
 
-# Cognitive Load
+## Cognitive Load
 
 Working memory limitations lead directly to the idea of:
 
@@ -339,11 +339,11 @@ Good visualization design minimizes:
 Extraneous Load
 ```
 
-# Visualization Goal
+## Visualization Goal
 
 Do not make the user think harder than necessary.
 
-# Important Design Principle
+## Important Design Principle
 
 ## Recognition over Recall
 
@@ -353,7 +353,7 @@ Therefore:
 
 Good dashboards should avoid forcing users to remember things.
 
-# Example
+## Example
 
 ## Bad
 
@@ -376,7 +376,7 @@ This is why:
 - consistent color encoding matters
     
 
-# Chunking
+## Chunking
 
 Working memory improves when information is grouped meaningfully.
 
@@ -386,7 +386,7 @@ This is called:
 Chunking
 ```
 
-# Example
+## Example
 
 Instead of:
 
@@ -420,7 +420,7 @@ Group into:
 
 Now the brain processes fewer conceptual chunks.
 
-# Visualization Chunking
+## Visualization Chunking
 
 Good dashboards often use:
 
@@ -437,7 +437,7 @@ Good dashboards often use:
 
 to visually chunk information.
 
-# 3. Long-Term Memory
+## 3. Long-Term Memory
 
 ## Definition
 
@@ -445,7 +445,7 @@ Long-term memory stores accumulated knowledge, experiences, patterns, and learne
 
 This is where expertise lives.
 
-# Why Long-Term Memory Matters
+## Why Long-Term Memory Matters
 
 Users interpret visualizations using existing knowledge.
 
@@ -455,7 +455,7 @@ Why?
 
 Because prior knowledge changes interpretation.
 
-# Visualization Depends on Learned Conventions
+## Visualization Depends on Learned Conventions
 
 Examples:
 
@@ -468,7 +468,7 @@ Examples:
 
 These interpretations come from long-term memory.
 
-# Mental Models
+## Mental Models
 
 Users already possess internal expectations about:
 
@@ -485,7 +485,7 @@ Users already possess internal expectations about:
 
 Violating these expectations increases confusion.
 
-# Example
+## Example
 
 If profit is shown in red and loss in green:
 
@@ -498,7 +498,7 @@ Green = positive
 Red = negative
 ```
 
-# Pattern Recognition
+## Pattern Recognition
 
 Experts use long-term memory to identify patterns rapidly.
 
@@ -515,7 +515,7 @@ Experienced analysts instantly notice:
 
 because their memory stores prior patterns.
 
-# Storytelling and Long-Term Memory
+## Storytelling and Long-Term Memory
 
 Good visual storytelling helps information move into long-term memory.
 
@@ -530,7 +530,7 @@ This happens when:
 - narratives are coherent
     
 
-# Why Simplicity Improves Retention
+## Why Simplicity Improves Retention
 
 Complex visuals are harder to encode into long-term memory.
 
@@ -543,7 +543,7 @@ Simple visuals:
 - improve recall
     
 
-# Relationship Between Memory Systems
+## Relationship Between Memory Systems
 
 ```mermaid
 flowchart LR
@@ -559,7 +559,7 @@ Long-term memory also assists working memory.
 
 Experts process information faster because prior knowledge reduces cognitive load.
 
-# Audience-Centric Visualization
+## Audience-Centric Visualization
 
 The transcript repeatedly emphasizes audience-centric design.
 
@@ -573,7 +573,7 @@ This means designing based on:
 |Expertise|Visualization choice|
 |Attention span|Layout simplicity|
 
-# Data-Centric vs Audience-Centric Design
+## Data-Centric vs Audience-Centric Design
 
 |Data-Centric|Audience-Centric|
 |---|---|
@@ -583,7 +583,7 @@ This means designing based on:
 |Dense information|Cognitive efficiency|
 |Designer-focused|User-focused|
 
-# Pre-Attentive Attributes and Memory
+## Pre-Attentive Attributes and Memory
 
 Pre-attentive attributes reduce memory burden by guiding attention automatically.
 
@@ -599,7 +599,7 @@ the user experiences:
 Instant Detection
 ```
 
-# Example
+## Example
 
 ## Without Pre-Attentive Design
 
@@ -620,13 +620,13 @@ Highlighted anomaly instantly stands out.
 
 Minimal working memory required.
 
-# Important Visualization Principle
+## Important Visualization Principle
 
 The best visualization is not the one with the most information.
 
 It is the one that minimizes cognitive effort while maximizing insight.
 
-# Real Dashboard Implications
+## Real Dashboard Implications
 
 ## Bad Dashboard Characteristics
 
@@ -662,7 +662,7 @@ It is the one that minimizes cognitive effort while maximizing insight.
 - progressive disclosure
     
 
-# Progressive Disclosure
+## Progressive Disclosure
 
 An advanced UX principle.
 
@@ -682,7 +682,7 @@ Drill-down analysis
 
 This protects working memory.
 
-# Connection to Data Storytelling
+## Connection to Data Storytelling
 
 Good storytelling aligns with memory systems.
 
@@ -697,7 +697,7 @@ Effective stories:
 - guide attention sequentially
     
 
-# Important Hidden Insight
+## Important Hidden Insight
 
 Humans do not perceive visuals objectively.
 
@@ -716,7 +716,7 @@ They perceive through:
 
 Visualization design is therefore psychological engineering.
 
-# Final Takeaways
+## Final Takeaways
 
 ## Core Ideas
 
@@ -733,13 +733,13 @@ Visualization design is therefore psychological engineering.
 - Good design minimizes unnecessary mental processing
     
 
-# Most Important Principle
+## Most Important Principle
 
 ```text
 Do not make users remember what the visualization can show directly.
 ```
 
-# Practical Rules
+## Practical Rules
 
 ## Use
 
@@ -773,7 +773,7 @@ Do not make users remember what the visualization can show directly.
 - dense layouts
     
 
-# Mental Model
+## Mental Model
 
 Think of visualization as:
 
@@ -783,7 +783,7 @@ Memory-efficient communication
 
 not merely graphical representation of data.
 
-# Interview-Style Insight
+## Interview-Style Insight
 
 A strong visualization designer is not merely designing charts.
 
@@ -799,7 +799,7 @@ memory interaction
 decision efficiency
 ```
 
-# Types of Human Memory in Data Visualization
+## Types of Human Memory in Data Visualization
 
 The transcript now moves deeper into the relationship between cognition and visualization design by introducing the three major categories of human memory:
 
@@ -824,7 +824,7 @@ Different visualization techniques target different memory systems.
 
 This is why effective visualization design is fundamentally cognitive engineering.
 
-# The Three Types of Memory
+## The Three Types of Memory
 
 ```mermaid
 flowchart LR
@@ -846,9 +846,9 @@ Each stage has:
 - different visualization implications
     
 
-# 1. Iconic Memory
+## 1. Iconic Memory
 
-# Definition
+## Definition
 
 Iconic memory is the visual sensory memory system.
 
@@ -862,7 +862,7 @@ The transcript describes iconic memory as:
 
 > The first thing the audience uses to perceive your visual.
 
-# Key Characteristics of Iconic Memory
+## Key Characteristics of Iconic Memory
 
 |Property|Description|
 |---|---|
@@ -873,7 +873,7 @@ The transcript describes iconic memory as:
 |Speed|Extremely fast|
 |Purpose|Detect immediate changes and patterns|
 
-# Important Insight
+## Important Insight
 
 Iconic memory has:
 
@@ -884,7 +884,7 @@ Iconic memory has:
 
 It captures visual impressions rapidly before conscious analysis begins.
 
-# Why Iconic Memory Matters
+## Why Iconic Memory Matters
 
 This is where:
 
@@ -903,7 +903,7 @@ operate.
 
 The transcript directly connects iconic memory with pre-attentive attributes.
 
-# What Iconic Memory Detects Instantly
+## What Iconic Memory Detects Instantly
 
 Humans automatically notice:
 
@@ -924,7 +924,7 @@ Humans automatically notice:
 
 without conscious effort.
 
-# Example
+## Example
 
 Imagine a dashboard:
 
@@ -942,7 +942,7 @@ The eye immediately jumps to it.
 
 That immediate recognition is iconic memory at work.
 
-# Traffic Signal Example
+## Traffic Signal Example
 
 The transcript gives an excellent real-world analogy:
 
@@ -971,7 +971,7 @@ This requires:
 
 which takes longer.
 
-# Why Visual Signals Beat Text
+## Why Visual Signals Beat Text
 
 Visual cues bypass heavy cognitive processing.
 
@@ -990,13 +990,13 @@ This is one of the reasons dashboards rely heavily on:
 
 instead of paragraphs.
 
-# Visualization Principle
+## Visualization Principle
 
 ```text
 Humans perceive visual differences faster than textual explanations.
 ```
 
-# Design Strategies for Iconic Memory
+## Design Strategies for Iconic Memory
 
 ## Use Strong Contrast
 
@@ -1018,7 +1018,7 @@ Movement automatically attracts attention.
 
 Too many highlight colors destroy focus.
 
-# Important Warning
+## Important Warning
 
 Overusing visual emphasis destroys emphasis itself.
 
@@ -1028,9 +1028,9 @@ If everything is highlighted:
 Nothing feels important.
 ```
 
-# 2. Short-Term Memory
+## 2. Short-Term Memory
 
-# Definition
+## Definition
 
 Short-term memory, often called working memory, temporarily stores and processes small amounts of information.
 
@@ -1047,7 +1047,7 @@ The transcript states:
 
 > Small amounts of data can be stored in short-term memory.
 
-# Key Characteristics
+## Key Characteristics
 
 |Property|Description|
 |---|---|
@@ -1056,7 +1056,7 @@ The transcript states:
 |Processing Type|Conscious|
 |Purpose|Temporary holding and processing|
 
-# Critical Limitation
+## Critical Limitation
 
 Short-term memory is extremely constrained.
 
@@ -1074,7 +1074,7 @@ rather than the older:
 7 ± 2 rule
 ```
 
-# Why This Matters in Dashboards
+## Why This Matters in Dashboards
 
 Most poor dashboards overload short-term memory.
 
@@ -1108,7 +1108,7 @@ Users are forced to remember:
 
 This creates cognitive overload.
 
-# Cognitive Load
+## Cognitive Load
 
 ```mermaid
 flowchart TD
@@ -1118,7 +1118,7 @@ flowchart TD
     D --> E[Poor Decision Quality]
 ```
 
-# The Transcript's Key Recommendation
+## The Transcript's Key Recommendation
 
 To optimize short-term memory:
 
@@ -1126,7 +1126,7 @@ To optimize short-term memory:
 Avoid clutter
 ```
 
-# Why Clutter Is Dangerous
+## Why Clutter Is Dangerous
 
 Clutter competes for attention.
 
@@ -1141,7 +1141,7 @@ It increases:
 - memory burden
     
 
-# Good Visualization Reduces Mental Work
+## Good Visualization Reduces Mental Work
 
 The audience should not struggle to:
 
@@ -1154,7 +1154,7 @@ The audience should not struggle to:
 - understand meaning
     
 
-# Example
+## Example
 
 ## Poor Design
 
@@ -1182,7 +1182,7 @@ The audience should not struggle to:
 - selective highlighting
     
 
-# Recognition vs Recall
+## Recognition vs Recall
 
 One of the most important UX principles.
 
@@ -1194,7 +1194,7 @@ Therefore:
 Do not force users to remember information unnecessarily.
 ```
 
-# Example
+## Example
 
 ## Bad
 
@@ -1208,7 +1208,7 @@ Labels appear directly beside data.
 
 No memory burden.
 
-# Chunking
+## Chunking
 
 Short-term memory improves when information is grouped meaningfully.
 
@@ -1218,7 +1218,7 @@ This is called:
 Chunking
 ```
 
-# Example
+## Example
 
 Instead of:
 
@@ -1257,7 +1257,7 @@ Group them into:
 
 Now the brain processes conceptual groups rather than isolated items.
 
-# Visualization Techniques Supporting Short-Term Memory
+## Visualization Techniques Supporting Short-Term Memory
 
 |Technique|Benefit|
 |---|---|
@@ -1268,9 +1268,9 @@ Now the brain processes conceptual groups rather than isolated items.
 |Direct labeling|Minimizes recall burden|
 |Progressive disclosure|Prevents overload|
 
-# 3. Long-Term Memory
+## 3. Long-Term Memory
 
-# Definition
+## Definition
 
 Long-term memory stores:
 
@@ -1291,7 +1291,7 @@ The transcript describes long-term memory as:
 
 > Storage of patterns and experience.
 
-# Key Characteristics
+## Key Characteristics
 
 |Property|Description|
 |---|---|
@@ -1300,7 +1300,7 @@ The transcript describes long-term memory as:
 |Processing Type|Conscious + unconscious|
 |Content Type|Visual + verbal|
 
-# Long-Term Memory Shapes Interpretation
+## Long-Term Memory Shapes Interpretation
 
 Humans do not interpret visuals objectively.
 
@@ -1315,7 +1315,7 @@ Interpretation depends on:
 - expectations
     
 
-# Example
+## Example
 
 Users already associate:
 
@@ -1335,7 +1335,7 @@ If a dashboard violates them:
 - mistakes happen
     
 
-# Experts vs Beginners
+## Experts vs Beginners
 
 Long-term memory explains why experts read charts faster.
 
@@ -1352,7 +1352,7 @@ Experienced analysts already recognize:
 
 because prior patterns are stored in memory.
 
-# Mental Models
+## Mental Models
 
 Long-term memory creates internal expectations.
 
@@ -1369,7 +1369,7 @@ Example expectations:
 
 Violating these expectations increases cognitive friction.
 
-# Storytelling and Long-Term Memory
+## Storytelling and Long-Term Memory
 
 Good data storytelling improves memory retention.
 
@@ -1384,7 +1384,7 @@ Strong stories:
 - reinforce patterns
     
 
-# Why Simplicity Improves Retention
+## Why Simplicity Improves Retention
 
 Simple visuals encode into memory more effectively.
 
@@ -1392,7 +1392,7 @@ Complex visuals require excessive cognitive effort.
 
 This is why elite dashboards are often visually minimal.
 
-# Comparative Summary of Memory Types
+## Comparative Summary of Memory Types
 
 |Characteristic|Iconic Memory|Short-Term Memory|Long-Term Memory|
 |---|---|---|---|
@@ -1403,7 +1403,7 @@ This is why elite dashboards are often visually minimal.
 |Visualization Focus|Salience|Clarity|Meaning|
 |Best Design Tool|Contrast|Simplicity|Storytelling|
 
-# Relationship Between Memory and Pre-Attentive Attributes
+## Relationship Between Memory and Pre-Attentive Attributes
 
 The transcript strongly emphasizes:
 
@@ -1411,7 +1411,7 @@ The transcript strongly emphasizes:
 Pre-attentive attributes primarily target iconic memory.
 ```
 
-# Why Pre-Attentive Attributes Work
+## Why Pre-Attentive Attributes Work
 
 Humans instinctively notice visual differences.
 
@@ -1436,7 +1436,7 @@ Examples:
 
 The brain processes these differences automatically.
 
-# Example from Transcript
+## Example from Transcript
 
 ## Counting the Number 3s
 
@@ -1454,7 +1454,7 @@ User immediately identifies them.
 
 This drastically reduces cognitive effort.
 
-# Core Cognitive Principle
+## Core Cognitive Principle
 
 Humans notice:
 
@@ -1462,9 +1462,9 @@ Humans notice:
 Difference before detail
 ```
 
-# Pre-Attentive Attributes Explained
+## Pre-Attentive Attributes Explained
 
-# 1. Orientation
+## 1. Orientation
 
 One slanted line among straight lines immediately stands out.
 
@@ -1474,31 +1474,31 @@ flowchart LR
     B --> C[Immediate Attention]
 ```
 
-# 2. Shape
+## 2. Shape
 
 Different shapes create instant grouping.
 
-# 3. Size
+## 3. Size
 
 Larger objects imply greater importance.
 
-# 4. Thickness
+## 4. Thickness
 
 Thicker lines appear more dominant.
 
 The transcript references campaign fundraising examples where current-year lines were thicker than historical lines.
 
-# 5. Enclosure
+## 5. Enclosure
 
 Bounding or circling elements creates focus.
 
-# 6. Hue (Color)
+## 6. Hue (Color)
 
 Different colors imply categories.
 
 The transcript connects this directly with Gestalt principles.
 
-# Gestalt Principle of Similarity
+## Gestalt Principle of Similarity
 
 Humans automatically group visually similar objects.
 
@@ -1515,27 +1515,27 @@ Scatter plot with:
 
 The brain immediately perceives three groups.
 
-# 7. Intensity
+## 7. Intensity
 
 Dark vs light contrast creates hierarchy.
 
-# 8. Spatial Position
+## 8. Spatial Position
 
 Objects placed differently imply separation or importance.
 
-# 9. Motion
+## 9. Motion
 
 Movement instantly attracts attention.
 
 This is heavily used in animation and alerts.
 
-# Important Warning About Pre-Attentive Attributes
+## Important Warning About Pre-Attentive Attributes
 
 The transcript ends with a critical caution:
 
 > Do not overuse pre-attentive attributes.
 
-# Why Overuse Is Dangerous
+## Why Overuse Is Dangerous
 
 Too much emphasis causes:
 
@@ -1548,7 +1548,7 @@ Too much emphasis causes:
 - hierarchy collapse
     
 
-# Example
+## Example
 
 If:
 
@@ -1563,13 +1563,13 @@ If:
 
 then nothing stands out.
 
-# Good Design Principle
+## Good Design Principle
 
 ```text
 Use emphasis selectively and intentionally.
 ```
 
-# Final Visualization Insight
+## Final Visualization Insight
 
 Visualization design is not merely aesthetics.
 
@@ -1586,7 +1586,7 @@ It is optimization of:
 - decision speed
     
 
-# Most Important Takeaway
+## Most Important Takeaway
 
 Each memory system requires different visualization strategies.
 
@@ -1596,7 +1596,7 @@ Each memory system requires different visualization strategies.
 |Short-Term Memory|Simplicity and clarity|
 |Long-Term Memory|Meaningful storytelling and patterns|
 
-# Final Mental Model
+## Final Mental Model
 
 Think of visualization design as:
 
