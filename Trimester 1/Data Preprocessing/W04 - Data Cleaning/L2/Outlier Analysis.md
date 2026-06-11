@@ -506,3 +506,5 @@ Several detection approaches are discussed:
 |One-Class SVM|
 
 The most important conceptual insight is that outliers are not necessarily bad data. In many real-world systems, they represent the most meaningful and actionable events.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
