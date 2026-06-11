@@ -704,3 +704,5 @@ A sample is useful only if it preserves:
 while reducing storage and computational requirements.
 
 Stratified sampling further improves fairness by preserving subgroup distribution during data reduction.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
