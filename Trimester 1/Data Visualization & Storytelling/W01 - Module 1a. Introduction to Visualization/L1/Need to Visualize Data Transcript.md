@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W01 - Module 1a. Introduction to Visualization
 ---
 
-# Data Visualization Fundamentals and the Need for Visual Storytelling
+## Data Visualization Fundamentals and the Need for Visual Storytelling
 
 ## Table of Contents
 
@@ -45,7 +45,7 @@ week: W01 - Module 1a. Introduction to Visualization
 
 ---
 
-# 1. Introduction to Data Visualization
+## 1. Introduction to Data Visualization
 
 ## 1.1 What is Data Visualization?
 
@@ -132,7 +132,7 @@ Visualization helps decision-makers:
 
 ---
 
-# 2. Understanding Data Types Before Visualization
+## 2. Understanding Data Types Before Visualization
 
 Before selecting charts, it is essential to understand the type of variable being visualized.
 
@@ -245,7 +245,7 @@ Variables with only two possible values.
 
 ---
 
-# 3. Why Visualization Matters
+## 3. Why Visualization Matters
 
 ## 3.1 Human Cognitive Processing
 
@@ -295,7 +295,7 @@ Combining visuals with explanatory text creates stronger communication than eith
 
 ---
 
-# 4. Case Study: Lok Sabha Election Voter Turnout
+## 4. Case Study: Lok Sabha Election Voter Turnout
 
 ## 4.1 Text-Based Representation
 
@@ -435,7 +435,7 @@ Without visualization, these insights are much slower to derive.
 
 ---
 
-# 6. Data Visualization as Storytelling
+## 6. Data Visualization as Storytelling
 
 ## 6.1 Visualization and Narrative Building
 
@@ -490,7 +490,7 @@ Good visualization:
 
 ---
 
-# 7. Visualization Decision Framework
+## 7. Visualization Decision Framework
 
 ## Text-Based Flowchart
 
@@ -526,7 +526,7 @@ What do you want to show?
 
 ---
 
-# Common Statistical and Analytical Formulas
+## Common Statistical and Analytical Formulas
 
 ## Percentage Change Formula
 
@@ -578,7 +578,7 @@ Upper Bound = Q3 + 1.5 × IQR
 
 ---
 
-# Common Visualization Pitfalls
+## Common Visualization Pitfalls
 
 ## 1. Correlation ≠ Causation
 
@@ -621,7 +621,7 @@ Comparing variables with incompatible scales can distort interpretation.
 
 ---
 
-# 8. Golden Rules of Effective Visualization
+## 8. Golden Rules of Effective Visualization
 
 1. Always understand the data type before choosing a chart.
     
