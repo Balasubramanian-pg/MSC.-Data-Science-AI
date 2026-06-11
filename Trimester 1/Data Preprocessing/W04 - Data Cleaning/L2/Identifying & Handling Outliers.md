@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W04 - Data Cleaning
 ---
 
-# Index
+## Index
 
 1. Introduction to Outlier Handling
     
@@ -33,7 +33,7 @@ week: W04 - Data Cleaning
 12. Key Takeaways
     
 
-# Introduction to Outlier Handling
+## Introduction to Outlier Handling
 
 Outlier detection is one of the most important stages in data cleaning because unusual observations can heavily distort statistical analysis and machine learning models.
 
@@ -41,7 +41,7 @@ An outlier is a data point that differs significantly from the majority of obser
 
 The major challenge is that not all outliers are bad. Some are valuable signals.
 
-# Defining Outliers
+## Defining Outliers
 
 An outlier is a data point whose characteristics are considerably different from the rest of the dataset.
 
@@ -71,7 +71,7 @@ where:
 - $\mu$ is the central tendency of the dataset
     
 
-# Types of Outliers
+## Types of Outliers
 
 The lecture divides outliers into two major categories.
 
@@ -167,7 +167,7 @@ If income distributions are plotted globally, his wealth lies extremely far from
 
 The point is rare but genuine.
 
-# Why Outliers Matter
+## Why Outliers Matter
 
 Outliers significantly affect statistical calculations because many mathematical operations depend on all observations.
 
@@ -186,7 +186,7 @@ A single extreme value may distort:
 
 This becomes dangerous because machine learning algorithms rely heavily on these calculations.
 
-# Influence of Outliers on Statistics
+## Influence of Outliers on Statistics
 
 The lecture demonstrates this using mean calculation.
 
@@ -218,7 +218,7 @@ A single extreme observation shifts the average dramatically.
 
 This illustrates why outliers are dangerous in statistical analysis.
 
-# Influence on Machine Learning Models
+## Influence on Machine Learning Models
 
 Many machine learning algorithms are highly sensitive to extreme observations.
 
@@ -249,7 +249,7 @@ $$
 
 Outliers can drag cluster centroids away from dense regions and distort grouping structure.
 
-# Visual Detection Using Box Plots
+## Visual Detection Using Box Plots
 
 One of the most common visual methods for detecting outliers is the box plot.
 
@@ -286,7 +286,7 @@ flowchart LR
     --> E[Upper Outliers]
 ```
 
-# Statistical Detection Using Z-Score
+## Statistical Detection Using Z-Score
 
 Another common method is Z-score analysis.
 
@@ -319,7 +319,7 @@ $$
 -3\sigma \leq x \leq 3\sigma  
 $$
 
-# Handling Outliers
+## Handling Outliers
 
 The simplest handling strategy is direct deletion.
 
@@ -346,7 +346,7 @@ flowchart TD
     B -->|Valid Rare Event| D[Keep and Transform]
 ```
 
-# Normalization and Transformation
+## Normalization and Transformation
 
 Instead of removing genuine outliers, preprocessing systems often reduce their influence using normalization techniques.
 
@@ -360,7 +360,7 @@ Examples include:
 
 These methods preserve the information while reducing extreme statistical influence.
 
-# Golden Rule of Outlier Handling
+## Golden Rule of Outlier Handling
 
 The lecture emphasizes a critical principle:
 
@@ -394,7 +394,7 @@ The correct approach is:
 4. Decide treatment
     
 
-# Key Takeaways
+## Key Takeaways
 
 Outliers are observations that significantly differ from the majority of a dataset. Some outliers are errors while others are legitimate rare events.
 
