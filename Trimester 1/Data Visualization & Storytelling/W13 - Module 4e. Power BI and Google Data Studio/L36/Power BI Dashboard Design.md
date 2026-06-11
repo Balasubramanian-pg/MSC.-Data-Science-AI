@@ -1,7 +1,7 @@
 ---
-title: W13 - Module 4e. Power BI and Google Data Studio
+title: W13 - Module 4e. Power BI and Google Data Studio - Module 4e. Power BI and Google Data Studio
 module: Statistical Modelling And Inferencing
-week: W13 - Module 4e. Power BI and Google Data Studio
+week: W13 - Module 4e. Power BI and Google Data Studio - Module 4e. Power BI and Google Data Studio
 ---
 
 
