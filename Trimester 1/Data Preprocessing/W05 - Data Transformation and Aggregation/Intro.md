@@ -19,3 +19,5 @@ By the end of this module, you will be able to:
 1. Apply data transformation techniques such as normalization, standardization, and aggregation.
 2. Perform data integration to ensure consistency and accuracy across datasets.
 3. Prepare analysis-ready datasets suitable for data mining and machine learning tasks.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
