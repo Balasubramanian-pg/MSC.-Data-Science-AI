@@ -29,7 +29,7 @@ This is foundational to:
 - geospatial machine learning
     
 
-# Core Idea
+## Core Idea
 
 Normal Pandas handles:
 
@@ -64,7 +64,7 @@ The transcript explains:
 
 That single sentence is the heart of geospatial analytics.
 
-# Big Picture Workflow
+## Big Picture Workflow
 
 ```mermaid
 flowchart LR
@@ -74,7 +74,7 @@ flowchart LR
     D --> E[Spatial Visualization]
 ```
 
-# Why Geographical Visualization Matters
+## Why Geographical Visualization Matters
 
 The lecture makes a business point:
 
@@ -92,7 +92,7 @@ Examples:
 |Population density|urban planning|
 |Climate|spatial weather patterns|
 
-# What Is GeoPandas?
+## What Is GeoPandas?
 
 GeoPandas is an extension of Pandas.
 
@@ -114,13 +114,13 @@ Difference:
 GeoDataFrame contains geometry
 ```
 
-# Standard DataFrame
+## Standard DataFrame
 
 |city|sales|
 |---|---|
 |Delhi|100|
 
-# GeoDataFrame
+## GeoDataFrame
 
 |city|sales|geometry|
 |---|---|---|
@@ -132,7 +132,7 @@ Now Python knows:
 where the object exists physically
 ```
 
-# Step 1: Install GeoPandas
+## Step 1: Install GeoPandas
 
 ```python
 pip install geopandas geodatasets
@@ -142,14 +142,14 @@ The transcript mentions:
 
 > “First you have to install the geodatasets into geopandas.”
 
-# Step 2: Import Libraries
+## Step 2: Import Libraries
 
 ```python
 import geopandas as gpd
 import geodatasets
 ```
 
-# Step 3: Load Geographic Data
+## Step 3: Load Geographic Data
 
 ```python
 chicago = gpd.read_file(
@@ -165,7 +165,7 @@ pd.read_csv()
 
 but for geospatial files.
 
-# Important Difference
+## Important Difference
 
 GeoPandas reads:
 
@@ -180,7 +180,7 @@ GeoPandas reads:
 
 not just CSVs.
 
-# What Is a Shapefile?
+## What Is a Shapefile?
 
 The transcript mentions shapefiles briefly.
 
@@ -201,7 +201,7 @@ Think of it as:
 a blueprint for drawing maps
 ```
 
-# Geometry Types
+## Geometry Types
 
 GeoPandas supports:
 
@@ -216,7 +216,7 @@ The transcript shows:
 
 > “multipolygon with latitude and longitude”
 
-# Step 4: Inspect Data
+## Step 4: Inspect Data
 
 ```python
 chicago.head()
@@ -228,13 +228,13 @@ Example:
 |---|---|---|
 |Hyde Park|25000|POLYGON(...)|
 
-# Key Insight
+## Key Insight
 
 The geometry column is not human-readable.
 
 But mathematically it defines shape boundaries.
 
-# Step 5: Basic Map Plot
+## Step 5: Basic Map Plot
 
 ```python
 chicago.plot()
@@ -246,7 +246,7 @@ Why?
 
 Because GeoPandas interprets geometry spatially.
 
-# Mental Model
+## Mental Model
 
 Regular plotting:
 
@@ -260,7 +260,7 @@ Geo plotting:
 longitude + latitude + geometry topology
 ```
 
-# Choropleth Maps
+## Choropleth Maps
 
 The lecture then visualizes population density.
 
@@ -271,7 +271,7 @@ chicago.plot(
 )
 ```
 
-# What Happens Here?
+## What Happens Here?
 
 Population values determine color intensity.
 
@@ -289,11 +289,11 @@ lower population
 
 This is called a:
 
-# Choropleth Map
+## Choropleth Map
 
 One of the most common GIS visualizations.
 
-# Visualization Principle
+## Visualization Principle
 
 The transcript says:
 
@@ -301,7 +301,7 @@ The transcript says:
 
 This is encoding magnitude through color saturation.
 
-# Human Perception Insight
+## Human Perception Insight
 
 Humans interpret:
 
@@ -313,7 +313,7 @@ Humans interpret:
 
 Maps leverage this strongly.
 
-# Step 6: Add Legend
+## Step 6: Add Legend
 
 ```python
 chicago.plot(
@@ -334,11 +334,11 @@ With legend:
 colors become quantitative
 ```
 
-# Step 7: Overlay Cities on World Map
+## Step 7: Overlay Cities on World Map
 
 This is one of the most important concepts in the lecture.
 
-# Create City Dataset
+## Create City Dataset
 
 ```python
 cities_data = {
@@ -348,7 +348,7 @@ cities_data = {
 }
 ```
 
-# Convert Into DataFrame
+## Convert Into DataFrame
 
 ```python
 import pandas as pd
@@ -356,7 +356,7 @@ import pandas as pd
 cities_df = pd.DataFrame(cities_data)
 ```
 
-# Create Geometry
+## Create Geometry
 
 ```python
 gdf_cities = gpd.GeoDataFrame(
@@ -368,7 +368,7 @@ gdf_cities = gpd.GeoDataFrame(
 )
 ```
 
-# Critical Spatial Transformation
+## Critical Spatial Transformation
 
 This is the most important line:
 
@@ -382,7 +382,7 @@ It converts:
 numbers → spatial objects
 ```
 
-# Why Geometry Matters
+## Why Geometry Matters
 
 Without geometry:
 
@@ -396,7 +396,7 @@ With geometry:
 mappable entities
 ```
 
-# Step 8: Plot World Map
+## Step 8: Plot World Map
 
 ```python
 world = gpd.read_file(
@@ -406,7 +406,7 @@ world = gpd.read_file(
 ax = world.plot(figsize=(15,10))
 ```
 
-# Step 9: Overlay Cities
+## Step 9: Overlay Cities
 
 ```python
 gdf_cities.plot(
@@ -416,7 +416,7 @@ gdf_cities.plot(
 )
 ```
 
-# What Is Happening?
+## What Is Happening?
 
 You are layering plots.
 
@@ -439,7 +439,7 @@ This is exactly how:
 
 work internally.
 
-# Important GIS Principle
+## Important GIS Principle
 
 Maps are layers.
 
@@ -453,18 +453,18 @@ Example:
 |Overlay 3|traffic|
 |Overlay 4|weather|
 
-# Latitude and Longitude
+## Latitude and Longitude
 
 The lecture emphasizes these are mandatory.
 
-# Coordinate Meaning
+## Coordinate Meaning
 
 |Coordinate|Meaning|
 |---|---|
 |Latitude|north/south|
 |Longitude|east/west|
 
-# Geometry Construction
+## Geometry Construction
 
 GeoPandas internally creates:
 
@@ -478,7 +478,7 @@ Example:
 POINT(77.20 28.61)
 ```
 
-# Why Longitude Comes First
+## Why Longitude Comes First
 
 Important GIS convention:
 
@@ -489,7 +489,7 @@ y = latitude
 
 Many beginners reverse these accidentally.
 
-# Just Noticeable Shape Principle
+## Just Noticeable Shape Principle
 
 The instructor mentions closure perception.
 
@@ -499,39 +499,39 @@ Humans recognize incomplete geographical patterns automatically.
 
 Even simplified outlines are recognizable.
 
-# Real-World Applications
+## Real-World Applications
 
-# 1. Logistics
+## 1. Logistics
 
 ```text
 delivery optimization
 ```
 
-# 2. Retail
+## 2. Retail
 
 ```text
 store performance by region
 ```
 
-# 3. Climate Science
+## 3. Climate Science
 
 ```text
 temperature heatmaps
 ```
 
-# 4. Epidemiology
+## 4. Epidemiology
 
 ```text
 disease spread maps
 ```
 
-# 5. Telecom
+## 5. Telecom
 
 ```text
 network coverage analysis
 ```
 
-# ML Connections
+## ML Connections
 
 Geospatial ML uses:
 
@@ -555,9 +555,9 @@ for:
 - location recommendation
     
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
-# 1. Missing Geometry
+## 1. Missing Geometry
 
 Without geometry:
 
@@ -567,7 +567,7 @@ gdf.plot()
 
 fails spatially.
 
-# 2. Swapping Latitude/Longitude
+## 2. Swapping Latitude/Longitude
 
 Wrong:
 
@@ -581,7 +581,7 @@ Correct:
 points_from_xy(longitude, latitude)
 ```
 
-# 3. Using Wrong Coordinate Systems
+## 3. Using Wrong Coordinate Systems
 
 Advanced GIS systems use:
 
@@ -594,7 +594,7 @@ Advanced GIS systems use:
 
 Projection mismatch creates distorted maps.
 
-# Computational Insight
+## Computational Insight
 
 Geospatial operations are expensive because:
 
@@ -607,7 +607,7 @@ Geospatial operations are expensive because:
 
 Spatial indexing is often required in production systems.
 
-# Hidden Deep Idea
+## Hidden Deep Idea
 
 This lecture is actually introducing:
 
@@ -623,7 +623,7 @@ GeoPandas is essentially:
 Pandas + GIS engine
 ```
 
-# Most Important Takeaway
+## Most Important Takeaway
 
 The key transformation is:
 
