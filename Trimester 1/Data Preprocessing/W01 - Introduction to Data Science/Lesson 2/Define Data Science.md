@@ -194,3 +194,5 @@ Data Science acts as the analytical engine across various verticals:
 *   **Information Theory:** Study Shannon Entropy to mathematically quantify the "amount of information" inside a dataset.
 *   **Distributed Systems:** Learn MapReduce, Hadoop, and Apache Spark architecture to understand how data science operates at the petabyte scale.
 *   **Statistical Inference:** Deepen your understanding of MLE (Maximum Likelihood Estimation) and MAP (Maximum A Posteriori) to ground machine learning in rigorous probability theory.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
