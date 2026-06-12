@@ -22,7 +22,6 @@ week: W02 - Introduction To Statistical Inference
 12. [Case Studies](#12-case-studies)
 13. [Appendices](#13-appendices)
 
----
 
 ## 1. Introduction to Sampling Theory
 
@@ -149,7 +148,6 @@ graph TD
     style H fill:#bbf,stroke:#333,stroke-width:4px
 ```
 
----
 
 ## 2. Foundational Concepts
 
@@ -330,7 +328,6 @@ $$
 E[\\bar{y}] = \[\bar{Y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L1/The%20Method%20of%20Least%20Squares.md#bary) \\quad \\text{and} \\quad Var(\[\bar{y}](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L1/The%20Method%20of%20Least%20Squares.md#bary)) = \\left(\\frac{N-n}{N-1}\\right) \[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\\sigma^2}{n}
 $$
 
----
 
 ## 3. Probability Sampling Methods
 
@@ -845,7 +842,6 @@ graph LR
     style F fill:#c8e6c9
 ```
 
----
 
 ## 4. Non-Probability Sampling Methods
 
@@ -987,7 +983,6 @@ graph LR
     style D fill:#fff9c4
 ```
 
----
 
 ## 5. Sampling Distributions and the Central Limit Theorem
 
@@ -1150,7 +1145,6 @@ $$
 
 where $\\tilde{Y}$ is the population median.
 
----
 
 ## 6. Point Estimation and Properties of Estimators
 
@@ -1355,7 +1349,6 @@ graph TD
     style G fill:#c8e6c9,stroke:#333,stroke-width:3px
 ```
 
----
 
 ## 7. Confidence Intervals
 
@@ -1509,7 +1502,6 @@ graph TD
     style H fill:#c8e6c9
 ```
 
----
 
 ## 8. Sample Size Determination
 
