@@ -19,7 +19,9 @@ Entropy is a measure of randomness or uncertainty in a random variable.
 
 Mutual information measures how much the uncertainty of $Y$ is reduced by knowing $X$. It is defined as:
 
-$$I(X; Y) = H(Y) - H(Y|X)$$
+$$
+I(X; Y) = H(Y) - H(Y|X)
+$$
 
 - $H(Y)$: Entropy of the target.
     
