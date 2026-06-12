@@ -61,4 +61,3 @@ Feature selection performed _during_ the training process itself.
 - **Redundancy:** High feature-feature correlation (multicollinearity) can destabilize linear models and inflate variance.
     
 - **Evaluation:** Always validate feature selection effectiveness through cross-validation to ensure that the selection process generalizes to unseen data rather than overfitting the training set.
-    
