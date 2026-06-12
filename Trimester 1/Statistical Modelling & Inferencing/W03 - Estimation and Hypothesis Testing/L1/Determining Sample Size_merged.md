@@ -15,9 +15,9 @@ We aim to find the minimum $n$ that satisfies a specific **Margin of Error ($E$)
 - **Large $n$:** Increases precision but incurs higher costs (time, money).
     
 
-### 2. Sample Size for a Population [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) ($\mu$)
+### 2. Sample Size for a Population [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L2/Testing%20Population%20Proportions.md#mean) ($\mu$)
 
-Derived from the $Z$-interval margin of error [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) ($E = Z_{\alpha/2} \cdot [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\sigma}{\sqrt{n}}$), the required sample size is:
+Derived from the $Z$-interval margin of error [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) ($E = Z_{\alpha/2} \cdot [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\sigma}{\sqrt{n}}$), the required sample size is:
 
 $$
 n = \left( \frac{Z_{\alpha/2} \cdot \sigma}{E} \right)^2
@@ -40,12 +40,12 @@ $$
     
 - **Historical Data:** Utilize findings from previous, similar research.
     
-- **Range Rule of Thumb:** Estimate $\sigma \approx [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\text{Maximum} - \text{Minimum}}{4}$.
+- **Range Rule of Thumb:** Estimate $\sigma \approx [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\text{Maximum} - \text{Minimum}}{4}$.
     
 
 ### 3. Sample Size for a Population Proportion ($p$)
 
-The [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) for proportions is:
+The [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) for proportions is:
 
 $$
 n = p(1 - p) \left( \frac{Z_{\alpha/2}}{E} \right)^2
@@ -57,7 +57,7 @@ If the population proportion ($p$) is completely unknown, you should use the mos
 
 - The product $p(1-p)$ reaches its maximum at $p = 0.5$.
     
-- **Conservative [Formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula):**
+- **Conservative [Formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula):**
     
 
 $$
@@ -66,7 +66,7 @@ $$
 
     
 
-### 4. [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L2/Reading%202%20Parametric%20vs.%20Non-Parametric%20Methods.md#summary)) Table of Inputs
+### 4. [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01%20-%20Basic%20Probability%20&%20Statistics/L2/Reading%202%20Parametric%20vs.%20Non-Parametric%20Methods.md#summary)) Table of Inputs
 
 |**Input**|**Description**|**Impact of Increase**|
 |---|---|---|
@@ -74,6 +74,6 @@ $$
 |**Confidence Level**|Desired certainty|Higher Confidence $\to$ Larger $n$|
 |**Variability ($\sigma$ or $p$)**|Heterogeneity in population|Higher Variance $\to$ Larger $n$|
 
-Would you like to walk through a Python calculation for a specific [engineering](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#engineering) use case, or explore how to handle cases where we lack historical variance data?
+Would you like to walk through a Python calculation for a specific [engineering](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#engineering) use case, or explore how to handle cases where we lack historical variance data?
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
