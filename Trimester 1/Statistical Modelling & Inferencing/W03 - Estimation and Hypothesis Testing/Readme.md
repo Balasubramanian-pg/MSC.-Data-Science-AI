@@ -31,7 +31,6 @@ Repository:
 
 [MSC Data Science AI - W03 Repository](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/tree/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing)
 
----
 
 # Why This Module Matters
 
@@ -58,7 +57,6 @@ This module introduces the mathematics used to separate:
 * random fluctuation from genuine effect
 * statistical evidence from coincidence
 
----
 
 # Module Structure
 
@@ -72,7 +70,6 @@ W03 - Estimation And Hypothesis Testing
 └── Assets → Mathematical & Practical References
 ```
 
----
 
 # L0 · Statistical Inference in Modelling
 
@@ -92,7 +89,6 @@ Every inferential conclusion depends on:
 
 Most statistical misuse happens because people forget this.
 
----
 
 # Core Themes
 
@@ -116,7 +112,6 @@ This idea later becomes extremely important in:
 * causal inference
 * deep learning calibration
 
----
 
 ## Resources
 
@@ -128,7 +123,6 @@ High-level orientation to estimation theory and hypothesis testing workflows.
 
 Explores how inferential reasoning interacts with modelling assumptions and statistical structure.
 
----
 
 # L1 · Interval Estimation & Sample Size
 
@@ -145,7 +139,6 @@ Confidence intervals exist because:
 * estimators fluctuate
 * populations are hidden
 
----
 
 # Core Themes
 
@@ -167,7 +160,6 @@ This is critical because:
 * narrow intervals imply stability
 * wide intervals imply uncertainty
 
----
 
 ## Known σ vs Unknown σ
 
@@ -199,7 +191,6 @@ This idea is deeply tied to:
 * finite sample corrections
 * Bayesian uncertainty intuition
 
----
 
 ## Sample Size Determination
 
@@ -233,7 +224,6 @@ This becomes essential in:
 * healthcare trials
 * ML evaluation pipelines
 
----
 
 ## Resources
 
@@ -253,7 +243,6 @@ Markdown notes focused on inferential interpretation and interval estimation pro
 
 Companion notes exploring practical tradeoffs in statistical sampling design.
 
----
 
 # L2 · Hypothesis Testing Framework
 
@@ -272,7 +261,6 @@ You begin with:
 
 Then determine whether the observed evidence is strong enough to reject the default assumption.
 
----
 
 # Core Themes
 
@@ -297,7 +285,6 @@ E
 --> F[Reject or Fail to Reject H0]
 ```
 
----
 
 ## Null vs Alternative Hypothesis
 
@@ -317,7 +304,6 @@ Represents:
 * difference exists
 * deviation from baseline
 
----
 
 ## One-Sample Tests
 
@@ -337,7 +323,6 @@ while accounting for:
 * uncertainty
 * sample size
 
----
 
 ## p-values
 
@@ -364,7 +349,6 @@ But:
 * large datasets can manufacture tiny p-values
 * poor experimental design invalidates interpretation
 
----
 
 ## Type I and Type II Errors
 
@@ -386,7 +370,6 @@ This becomes directly connected later to:
 False positives and false negatives are not just statistical abstractions.
 They are operational costs.
 
----
 
 ## Resources
 
@@ -410,7 +393,6 @@ Markdown notes emphasizing practical interpretation of inferential significance.
 
 Structured conceptual walkthrough of hypothesis testing logic and workflow design.
 
----
 
 # Lab · Computational Statistical Inference
 
@@ -430,7 +412,6 @@ students finally see:
 * confidence interval behavior
 * inferential randomness
 
----
 
 ## Lab Resources
 
@@ -446,7 +427,6 @@ Hands-on notebook for confidence interval simulation and estimator experimentati
 
 Worked inferential examples connecting theory with practical statistical workflows.
 
----
 
 # Recommended Learning Flow
 
@@ -472,7 +452,6 @@ F
 --> G[Experimental Analytics & ML Evaluation]
 ```
 
----
 
 # Hidden Insight Behind This Module
 
