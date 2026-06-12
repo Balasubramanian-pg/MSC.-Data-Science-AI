@@ -2,7 +2,6 @@
 
 ## Reading Material: Smoothing with Moving Averages
 
-
 ### 1. The Philosophy of Smoothing: Signal Extraction
 
 In time series analysis, we operate under the assumption that the observed data ($Y_t$) is a composite: a mix of the true "signal" and "noise." Smoothing is essentially a low-pass filter. It works by suppressing high-frequency oscillations (the noise) while preserving the low-frequency components (the trend and cyclical patterns).
@@ -17,7 +16,9 @@ The moving average is the workhorse of smoothing. It operates on the principle o
 
 For a window of size $k$, the smoothed value $\hat{Y}_t$ is calculated as the arithmetic mean of the current observation and the previous $(k-1)$ observations:
 
-$$\hat{Y}_t = \frac{1}{k} \sum_{i=0}^{k-1} Y_{t-i}$$
+$$
+\hat{Y}_t = \frac{1}{k} \sum_{i=0}^{k-1} Y_{t-i}
+$$
 
 - **The Window ($k$):** This is your tuning parameter. A smaller $k$ keeps the trend responsive but retains more noise. A larger $k$ produces a very "clean" line but introduces "lag"—the smoothed signal will appear shifted in time, potentially missing the exact point where a trend changes.
     
@@ -26,7 +27,9 @@ $$\hat{Y}_t = \frac{1}{k} \sum_{i=0}^{k-1} Y_{t-i}$$
 
 If you are analyzing historical data and do not need a real-time forecast, you use a **centered** moving average. This averages observations before and after the current point $t$, effectively eliminating the lag issue:
 
-$$\hat{Y}_t = \frac{1}{2k+1} \sum_{i=-k}^{k} Y_{t+i}$$
+$$
+\hat{Y}_t = \frac{1}{2k+1} \sum_{i=-k}^{k} Y_{t+i}
+$$
 
 ### 3. Advanced Smoothing Techniques
 
@@ -36,7 +39,11 @@ When the Simple Moving Average is too restrictive, analysts turn to more sophist
     
 - **Exponential Smoothing (EMA):** This is a recursive approach where the weight of older observations decreases exponentially as we go back in time. It is defined as:
     
-    $$\hat{Y}_t = \alpha Y_t + (1 - \alpha) \hat{Y}_{t-1}$$
+
+$$
+\hat{Y}_t = \alpha Y_t + (1 - \alpha) \hat{Y}_{t-1}
+$$
+
     
     where $\alpha$ (the smoothing factor) is between 0 and 1. A high $\alpha$ makes the model highly responsive to current data (closer to the raw data), while a low $\alpha$ makes it extremely smooth.
     
@@ -86,7 +93,11 @@ The fundamental drawback of the SMA is **phase shift** or **lag**. Because the S
     
 - **Forecasting:** If you are projecting tomorrow's demand, you are restricted to a **trailing** (or one-sided) moving average:
     
-    $$\hat{Y}_{t+1} = \frac{1}{k} \sum_{i=0}^{k-1} Y_{t-i}$$
+
+$$
+\hat{Y}_{t+1} = \frac{1}{k} \sum_{i=0}^{k-1} Y_{t-i}
+$$
+
     
     This **must** inherently include lag, as it is composed strictly of historical data.
     
@@ -238,7 +249,9 @@ As noted, SMA and CMA have three critical weaknesses that lead analysts to adopt
 
 Exponential Smoothing resolves these by introducing a smoothing constant, $\alpha$ (alpha). Instead of an equal window, it uses a **weighted average**:
 
-$$\hat{Y}_{t+1} = \alpha Y_t + \alpha(1-\alpha)Y_{t-1} + \alpha(1-\alpha)^2 Y_{t-2} + \dots$$
+$$
+\hat{Y}_{t+1} = \alpha Y_t + \alpha(1-\alpha)Y_{t-1} + \alpha(1-\alpha)^2 Y_{t-2} + \dots
+$$
 
 This gives the highest weight to the most recent observation ($Y_t$) and exponentially decaying weights to the past. It effectively retains the entire history of the series without requiring a fixed $k$, and crucially, it allows us to project values _forward_ in time.
 
