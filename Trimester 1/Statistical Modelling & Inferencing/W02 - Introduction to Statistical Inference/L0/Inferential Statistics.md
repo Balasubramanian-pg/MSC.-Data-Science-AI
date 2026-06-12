@@ -110,7 +110,9 @@ When we perform a standard Student's t-test, we assume the variances of our two 
 
 But in the real world, variances are rarely equal. When $\sigma_1^2 \neq \sigma_2^2$, the test statistic:
 
-$$t = \frac{\bar{X}_1 - \bar{X}_2}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}$$
+$$
+t = \frac{\bar{X}_1 - \bar{X}_2}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}
+$$
 
 **does not** follow an exact Student's t-distribution. Instead, it approximates one. The Welch-Satterthwaite equation calculates the "effective" degrees of freedom ($\nu$) to make this approximation as accurate as possible.
 
@@ -118,7 +120,9 @@ $$t = \frac{\bar{X}_1 - \bar{X}_2}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}
 
 Before deriving it, here is the famous destination we are heading toward:
 
-$$\nu \approx \frac{\left(\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}\right)^2}{\frac{\left(\frac{s_1^2}{n_1}\right)^2}{n_1 - 1} + \frac{\left(\frac{s_2^2}{n_2}\right)^2}{n_2 - 1}}$$
+$$
+\nu \approx \frac{\left(\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}\right)^2}{\frac{\left(\frac{s_1^2}{n_1}\right)^2}{n_1 - 1} + \frac{\left(\frac{s_2^2}{n_2}\right)^2}{n_2 - 1}}
+$$
 
 ## The Derivation Steps
 
@@ -128,37 +132,53 @@ The derivation relies on matching the **variance of a sample variance** to a Chi
 
 Recall from fundamental statistics that for a normal distribution, the sample variance $s^2$ is related to a Chi-squared distribution by:
 
-$$\frac{(n-1)s^2}{\sigma^2} \sim \chi^2_{n-1}$$
+$$
+\frac{(n-1)s^2}{\sigma^2} \sim \chi^2_{n-1}
+$$
 
 A key property of a Chi-squared variable $Y \sim \chi^2_\nu$ is that its variance is equal to twice its degrees of freedom:
 
-$$\text{Var}(Y) = 2\nu$$
+$$
+\text{Var}(Y) = 2\nu
+$$
 
 Using this property, we can find the variance of our sample variance $s^2$:
 
-$$\text{Var}\left(\frac{(n-1)s^2}{\sigma^2}\right) = 2(n-1)$$
+$$
+\text{Var}\left(\frac{(n-1)s^2}{\sigma^2}\right) = 2(n-1)
+$$
 
 Because $\frac{n-1}{\sigma^2}$ is a constant, we can pull it out of the variance operator (squaring it):
 
-$$\left(\frac{n-1}{\sigma^2}\right)^2 \text{Var}(s^2) = 2(n-1)$$
+$$
+\left(\frac{n-1}{\sigma^2}\right)^2 \text{Var}(s^2) = 2(n-1)
+$$
 
 Solving for $\text{Var}(s^2)$:
 
-$$\text{Var}(s^2) = \frac{2\sigma^4}{n-1}$$
+$$
+\text{Var}(s^2) = \frac{2\sigma^4}{n-1}
+$$
 
 If we scale this by the sample size $n$ (which gives us the variance of the mean's variance, $\frac{s^2}{n}$):
 
-$$\text{Var}\left(\frac{s^2}{n}\right) = \frac{1}{n^2}\text{Var}(s^2) = \frac{2\sigma^4}{n^2(n-1)} = \frac{2 \left(\frac{\sigma^2}{n}\right)^2}{n-1}$$
+$$
+\text{Var}\left(\frac{s^2}{n}\right) = \frac{1}{n^2}\text{Var}(s^2) = \frac{2\sigma^4}{n^2(n-1)} = \frac{2 \left(\frac{\sigma^2}{n}\right)^2}{n-1}
+$$
 
 ### Step 2: Defining the Linear Combination
 
 In Welch's t-test, the total estimated variance of the difference between the means is a linear combination of individual variances:
 
-$$V = \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}$$
+$$
+V = \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}
+$$
 
 Satterthwaite’s brilliant assumption was that this combined variance $V$ can _also_ be approximated by a single, scaled Chi-squared distribution with an "effective" degree of freedom $\nu$:
 
-$$\frac{\nu \cdot V}{\theta} \sim \chi^2_\nu$$
+$$
+\frac{\nu \cdot V}{\theta} \sim \chi^2_\nu
+$$
 
 Where $\theta$ is the true population equivalent of $V$, meaning $\theta = \frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}$.
 
@@ -166,43 +186,59 @@ Where $\theta$ is the true population equivalent of $V$, meaning $\theta = \frac
 
 Just like we did in Step 1, let's look at the variance of our new Chi-squared approximation:
 
-$$\text{Var}\left(\frac{\nu \cdot V}{\theta}\right) = 2\nu$$
+$$
+\text{Var}\left(\frac{\nu \cdot V}{\theta}\right) = 2\nu
+$$
 
 Pulling out the constants:
 
-$$\left(\frac{\nu}{\theta}\right)^2 \text{Var}(V) = 2\nu$$
+$$
+\left(\frac{\nu}{\theta}\right)^2 \text{Var}(V) = 2\nu
+$$
 
 Now, we solve for our unknown effective degrees of freedom, $\nu$:
 
-$$\nu = \frac{2\theta^2}{\text{Var}(V)}$$
+$$
+\nu = \frac{2\theta^2}{\text{Var}(V)}
+$$
 
 ### Step 4: Expanding $\text{Var}(V)$
 
 Since $V = \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}$, and our two samples are completely independent, the variance of their sum is the sum of their variances:
 
-$$\text{Var}(V) = \text{Var}\left(\frac{s_1^2}{n_1}\right) + \text{Var}\left(\frac{s_2^2}{n_2}\right)$$
+$$
+\text{Var}(V) = \text{Var}\left(\frac{s_1^2}{n_1}\right) + \text{Var}\left(\frac{s_2^2}{n_2}\right)
+$$
 
 Substituting the result we found at the very end of Step 1 for each term:
 
-$$\text{Var}(V) = \frac{2 \left(\frac{\sigma_1^2}{n_1}\right)^2}{n_1 - 1} + \frac{2 \left(\frac{\sigma_2^2}{n_2}\right)^2}{n_2 - 1}$$
+$$
+\text{Var}(V) = \frac{2 \left(\frac{\sigma_1^2}{n_1}\right)^2}{n_1 - 1} + \frac{2 \left(\frac{\sigma_2^2}{n_2}\right)^2}{n_2 - 1}
+$$
 
 ### Step 5: The Final Substitution
 
 Now, we substitute $\theta = \frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}$ and our new expression for $\text{Var}(V)$ back into our equation for $\nu$ from Step 3:
 
-$$\nu = \frac{2\left(\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}\right)^2}{\frac{2 \left(\frac{\sigma_1^2}{n_1}\right)^2}{n_1 - 1} + \frac{2 \left(\frac{\sigma_2^2}{n_2}\right)^2}{n_2 - 1}}$$
+$$
+\nu = \frac{2\left(\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}\right)^2}{\frac{2 \left(\frac{\sigma_1^2}{n_1}\right)^2}{n_1 - 1} + \frac{2 \left(\frac{\sigma_2^2}{n_2}\right)^2}{n_2 - 1}}
+$$
 
 The $2$ in the numerator and denominator cancels out perfectly. Finally, because we don't actually know the true population variances ($\sigma_1^2, \sigma_2^2$), we substitute our sample variances ($s_1^2, s_2^2$) as unbiased estimators.
 
 This gives us the final **Welch-Satterthwaite equation**:
 
-$$\nu \approx \frac{\left(\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}\right)^2}{\frac{\left(\frac{s_1^2}{n_1}\right)^2}{n_1 - 1} + \frac{\left(\frac{s_2^2}{n_2}\right)^2}{n_2 - 1}}$$
+$$
+\nu \approx \frac{\left(\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}\right)^2}{\frac{\left(\frac{s_1^2}{n_1}\right)^2}{n_1 - 1} + \frac{\left(\frac{s_2^2}{n_2}\right)^2}{n_2 - 1}}
+$$
 
 ## Why this is beautiful
 
 Look at what happens if sample sizes and variances are perfectly equal ($n_1 = n_2 = n$ and $s_1^2 = s_2^2 = s^2$). If you plug those into the equation, it simplifies cleanly to:
 
-$$\nu = 2n - 2$$
+$$
+\nu = 2n - 2
+$$
 
 Which is exactly the degrees of freedom for the standard Student's t-test! When variances are unequal, $\nu$ will scale down, penalizing the test's power to protect you from Type I errors (false positives).
 
