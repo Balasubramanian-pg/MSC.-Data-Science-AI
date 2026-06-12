@@ -1,6 +1,5 @@
 # Week 6: Data Reduction
 
-
 **Module Description**
 
 This module explores techniques for reducing the size and complexity of datasets without losing essential information. Learners will study methods such as data sampling, attribute subset selection, as well as feature creation. These techniques are crucial for handling large-scale data, improving computational efficiency, and supporting effective pattern discovery. By the end of the module, learners will understand how to apply data reduction strategies to real-world data mining problems.
