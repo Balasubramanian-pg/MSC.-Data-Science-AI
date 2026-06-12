@@ -21,11 +21,15 @@ Now, you are moving into **Bayesian Inference**, a philosophical and mathematica
 
 Bayesian inference is the mathematical formalization of "learning from experience." It centers on **Bayes' Theorem**, which allows us to update our prior knowledge with new evidence:
 
-$$P(\text{Parameter} | \text{Data}) = \frac{P(\text{Data} | \text{Parameter}) \times P(\text{Parameter})}{P(\text{Data})}$$
+$$
+P(\text{Parameter} | \text{Data}) = \frac{P(\text{Data} | \text{Parameter}) \times P(\text{Parameter})}{P(\text{Data})}
+$$
 
 Or, more intuitively:
 
-$$\text{Posterior} \propto \text{Likelihood} \times \text{Prior}$$
+$$
+\text{Posterior} \propto \text{Likelihood} \times \text{Prior}
+$$
 
 1. **Prior:** What you believed _before_ you saw the current data.
     
