@@ -10,7 +10,7 @@ In previous modules, statistical inference focused primarily on a single populat
 
 Typical questions included:
 
-- estimating a single population [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean)
+- estimating a single population [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L2/Testing%20Population%20Proportions.md#mean)
     
 - constructing confidence intervals for one parameter
     
@@ -21,7 +21,7 @@ Typical questions included:
 - conducting one-sample tests
     
 
-[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples):
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08%20-%20Forecasting%20&%20Time%20Series%20Analysis/L0/Time%20Series%20Analysis.md#examples):
 
 $$
 H_0:\mu = 100
@@ -105,17 +105,17 @@ because uncertainty now comes from multiple samples simultaneously.
 
 Modern statistics is fundamentally comparative.
 
-Almost every business, scientific, or [engineering](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#engineering) decision depends on comparing alternatives.
+Almost every business, scientific, or [engineering](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#engineering) decision depends on comparing alternatives.
 
-[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples):
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08%20-%20Forecasting%20&%20Time%20Series%20Analysis/L0/Time%20Series%20Analysis.md#examples):
 
-|Domain|Comparative [Question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#question))|
+|Domain|Comparative [Question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Residual%20Analysis.md#question))|
 |---|---|
 |Marketing|Which campaign generates higher conversion?|
-|[Medicine](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#medicine)|Which treatment improves recovery more?|
-|[Manufacturing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#manufacturing)|Which process has lower defect rates?|
-|[Finance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#finance)|Which portfolio produces higher returns?|
-|[Education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education)|Which teaching method improves scores more?|
+|[Medicine](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#medicine)|Which treatment improves recovery more?|
+|[Manufacturing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#manufacturing)|Which process has lower defect rates?|
+|[Finance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#finance)|Which portfolio produces higher returns?|
+|[Education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education)|Which teaching method improves scores more?|
 |Technology|Which algorithm performs better?|
 
 Inference becomes meaningful because decisions require comparisons.
@@ -126,7 +126,7 @@ A single isolated number is often insufficient.
 
 One major focus of this module is comparing means across populations.
 
-## 4.1 Two-Population [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) Problems
+## 4.1 Two-Population [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L2/Testing%20Population%20Proportions.md#mean) Problems
 
 Suppose we compare average sales under two pricing strategies.
 
@@ -137,7 +137,7 @@ We may define:
 $$
 \mu_1
 
-\text{[mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) sales under strategy A}
+\text{[mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L2/Testing%20Population%20Proportions.md#mean) sales under strategy A}
 $$
 
 ##
@@ -145,10 +145,10 @@ $$
 $$
 \mu_2
 
-\text{[mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) sales under strategy B}
+\text{[mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L2/Testing%20Population%20Proportions.md#mean) sales under strategy B}
 $$
 
-The central [question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#question)) becomes:
+The central [question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Residual%20Analysis.md#question)) becomes:
 
 $$
 H_0:\mu_1 - \mu_2 = 0
@@ -172,7 +172,7 @@ Suppose:
 
 - four marketing campaigns
     
-- five [manufacturing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#manufacturing) plants
+- five [manufacturing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#manufacturing) plants
     
 - three treatment groups
     
@@ -183,7 +183,7 @@ $$
 \text{ANOVA}
 $$
 
-[Analysis of Variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#analysis-of-variance).
+[Analysis of Variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#analysis-of-variance).
 
 ANOVA tests whether all population means are equal:
 
@@ -204,14 +204,14 @@ But variance describes consistency and risk.
 
 Two processes may have identical averages but radically different variability.
 
-[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
+[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
 
 |Process|Average Output|Variability|
 |---|---|---|
 |A|100|Low|
 |B|100|High|
 
-In [manufacturing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#manufacturing), [finance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#finance), and [quality control](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#quality-control), variability often matters more than the [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean).
+In [manufacturing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#manufacturing), [finance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#finance), and [quality control](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#quality-control), variability often matters more than the [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L2/Testing%20Population%20Proportions.md#mean).
 
 This module introduces inference procedures for comparing population variances.
 
@@ -236,7 +236,7 @@ statistics and chi-square distributions.
 
 Many real-world variables are categorical rather than numerical.
 
-[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples):
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08%20-%20Forecasting%20&%20Time%20Series%20Analysis/L0/Time%20Series%20Analysis.md#examples):
 
 - yes/no
     
@@ -306,7 +306,7 @@ Numerical data measures quantities.
 
 Categorical data measures group membership.
 
-[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples):
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08%20-%20Forecasting%20&%20Time%20Series%20Analysis/L0/Time%20Series%20Analysis.md#examples):
 
 |Variable|Categories|
 |---|---|
@@ -337,7 +337,7 @@ $$
 H_0
 $$
 
-then the [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis) is rejected.
+then the [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis) is rejected.
 
 ## 9 Types of Chi-Square Tests
 
@@ -347,18 +347,18 @@ This module typically introduces two major forms.
 
 Tests whether observed categorical frequencies match a claimed distribution.
 
-[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
+[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
 
 - Is a die fair?
     
 - Do customer preferences follow expected proportions?
     
 
-## 9.2 Chi-Square Test of [Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence)
+## 9.2 Chi-Square Test of [Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L0/Linear%20Regression.md#independence)
 
 Tests whether two categorical variables are associated.
 
-[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
+[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
 
 - Is purchasing behavior associated with gender?
     
@@ -396,12 +396,12 @@ Despite the variety of techniques, the underlying logic remains identical.
 Every inferential procedure asks:
 
 $$
-\text{Observed [Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#signal)}  
+\text{Observed [Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#signal)}  
 \quad vs \quad  
 \text{Expected Random Variation}
 $$
 
-\text{Observed [Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#signal)}\quad vs \quad\text{Expected Random Variation}
+\text{Observed [Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#signal)}\quad vs \quad\text{Expected Random Variation}
 
 Whether using:
 
@@ -414,7 +414,7 @@ Whether using:
 - chi-square tests
     
 
-the core [question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#question)) remains:
+the core [question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Residual%20Analysis.md#question)) remains:
 
 > Is the observed pattern too extreme to plausibly attribute to random chance alone?
 
@@ -434,7 +434,7 @@ These methods power:
     
 - healthcare studies
     
-- [manufacturing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#manufacturing) [quality control](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#quality-control)
+- [manufacturing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#manufacturing) [quality control](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#quality-control)
     
 - public policy analysis
     
