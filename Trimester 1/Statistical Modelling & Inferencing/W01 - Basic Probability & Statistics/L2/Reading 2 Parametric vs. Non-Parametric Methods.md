@@ -61,7 +61,6 @@ To decide which path to take, always visualize the data first.
     
 3. **Outlier Check:** Use a boxplot to assess if extreme outliers are distorting the mean and variance.
 
-
 ```Python
 import numpy as np
 from scipy import stats
