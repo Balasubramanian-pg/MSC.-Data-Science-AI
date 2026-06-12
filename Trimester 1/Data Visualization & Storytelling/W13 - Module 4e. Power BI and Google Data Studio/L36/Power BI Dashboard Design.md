@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W13 - Module 4e. Power BI and Google Data Studio - Module 4e. Power BI and Google Data Studio
 ---
 
-
 ## Page 1
 
  
@@ -58,7 +57,6 @@ try to compare this with Michigan.
   
 Michigan also has similar sales but higher profit per customer. But overall sales in 
 Michigan is very, very less compared to the overall sales in California. So as an 
-
 
 ## Page 2
 
@@ -115,7 +113,6 @@ many actual customer, what is the sale of quantity per customer.
 And you just do add. So you will be able to create a new measure which is not there 
 in the original data. And this will be stored only in this particular system. 
 
-
 ## Page 3
 
  
@@ -169,7 +166,6 @@ And whether discount is increasing the sales. Which regions are offering more
 discounts and what is their profit percentage. Okay, so these kind of metrics once we 
 compute before we will be able to use them in the dashboard. 
   
-
 
 ## Page 4
 
@@ -226,7 +222,6 @@ in the mind that you have to keep this very elegant for people to process the da
 Recall all your just flood principles, principles of effective visualisation, narratives to 
 storytelling, so on and so forth. 
 
-
 ## Page 5
 
  
@@ -281,7 +276,6 @@ I have the total profit, profit per customer, profit percentage and the discount
 discount again, now please follow each step carefully so that you understand how 
 what is looking like this is now looking like this. You can customise each and every 
 element of this particular visual. 
-
 
 ## Page 6
 
@@ -338,7 +332,6 @@ I'm just saying total sales. OK, this total sales. Then if you want to.
 OK, here also you can do a quick measure and do something. And then there are 
 ways to if you want to present it as an average, you want to present it as a standard 
 
-
 ## Page 7
 
  
@@ -393,7 +386,6 @@ more context.
 OK, conditioned on specific variables and their performance to enhance our visual 
 appeal. Now, going back to this, let us try to further add more values cards. OK, so 
 you want to add background colour to the card. 
-
 
 ## Page 8
 
@@ -450,7 +442,6 @@ going to do that for USD and remember to make decimal places zero. Now coming to
 profit per customer, the profit per customer again is currency. 
   
 
-
 ## Page 9
 
  
@@ -504,7 +495,6 @@ So I've done all this. Then you can also keep a divider which will distinguish b
 the area and also this is up to you. Whatever extra fonts you want to extra visualisation 
 features that you want to create. 
   
-
 
 ## Page 10
 
@@ -561,7 +551,6 @@ I just want a visual border. Yeah. OK.
 So this is the thing that we are done. So background colour is this. Yeah. 
   
 
-
 ## Page 11
 
  
@@ -614,7 +603,6 @@ OK, so that I have space for other visualisations because they are conveying the
 information that I want. So. I'll also explain why I chose a tree map and why I'm 
 including almost similar things again and again on the dashboard. 
   
-
 
 ## Page 12
 
@@ -671,7 +659,6 @@ at the same time without inserting filters or trying to indicate another functio
 the dashboard. 
   
 
-
 ## Page 13
 
  
@@ -726,7 +713,6 @@ becomes more evident in terms of the number.
 I don't want to lose that part. OK, so I have done the labels also. So you can quickly 
 understand, OK, what are the sales. 
   
-
 
 ## Page 14
 
@@ -783,7 +769,6 @@ Average discount on profit per customer, making it central and making it bold. I
 done all that. Now, what I'm going to do, I'm just going to add. 
   
 
-
 ## Page 15
 
  
@@ -837,7 +822,6 @@ added.
 Now I'll add one more line. OK, I'm going to add one more line. This is not for average 
 discount, but for profit for customer, which is horizontal. 
   
-
 
 ## Page 16
 
@@ -894,7 +878,6 @@ category of products for major offices, supplies and technology across three cen
 regions. This is already represented here. 
   
 
-
 ## Page 17
 
  
@@ -949,7 +932,6 @@ transparent. White is also fine.
 You can also increase the font. OK, this is the values. But the point that we have to 
 remember is we are now let us talk about a smaller region. 
   
-
 
 ## Page 18
 
@@ -1007,7 +989,6 @@ So I have the region and I don't. Yeah. So what I can do.
   
 Right. Then go to the title. See here. 
 
-
 ## Page 19
 
  
@@ -1062,7 +1043,6 @@ to use this space for creating a card and what is the card that I am going to pl
 is dragging it here to make it look like this mind to this I'm just dragging the statement 
 so you get first statement that is no problem because no selection is made so that's 
 
-
 ## Page 20
 
  
@@ -1110,6 +1090,5 @@ and feel to your audience and interactivity to them okay thank you.
  
 -------------------------------------------------------End---------------------------------------------------- 
  
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
