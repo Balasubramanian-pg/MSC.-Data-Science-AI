@@ -50,7 +50,6 @@ mock_business_data = {
 }
 df = pd.DataFrame(mock_business_data)
 
-
 ## =====================================================================
 ## 1. THE MATPLOTLIB APPROACH: Manual Data Wrangling Required
 ## =====================================================================
@@ -75,7 +74,6 @@ plt.xlabel("Region")
 plt.ylabel("Mean Quarterly Revenue ($)")
 plt.tight_layout()
 plt.show()
-
 
 ## =====================================================================
 ## 2. THE SEABORN APPROACH: Automated, High-Level Data Storytelling
@@ -132,8 +130,6 @@ Here is the refactored, highly documented Python code that matches the lecture w
 
 ### 2. Refactored Python Implementation
 
-
-
 ```Python
 import matplotlib.pyplot as plt
 import numpy as np
@@ -171,14 +167,12 @@ print("--- First 5 Rows of the Student Dataset ---")
 print(df.head())
 print("\n" + "="*60 + "\n")
 
-
 ## =====================================================================
 ## 2. SEABORN GLOBAL THEMING
 ## =====================================================================
 ## Activating Seaborn's premium default styles and color palettes
 sns.set_theme(style="whitegrid")
 sns.set_context("notebook", font_scale=1.1)
-
 
 ## =====================================================================
 ## 3. VISUALIZATION COMPARISON: CONTINUOUS RELATIONS WITH CATEGORIES
@@ -207,7 +201,6 @@ plt.ylabel("Exam Score")
 plt.legend(title="Course")
 plt.tight_layout()
 plt.show()
-
 
 ## --- Approach B: Seaborn (Seamless Column Mapping) ---
 ## One single, readable command handles data mapping, categorization, and color palettes.
@@ -285,7 +278,6 @@ df = pd.DataFrame({
     "course": courses
 })
 
-
 ## =====================================================================
 ## 1. SCATTER PLOT COMPARISON (Syntax & Automated Labels)
 ## =====================================================================
@@ -310,7 +302,6 @@ plt.title("Seaborn Syntax Style")
 ## NOTE: Labels on X and Y axes are automatically derived from the column names!
 plt.tight_layout()
 plt.show()
-
 
 ## =====================================================================
 ## 2. HISTOGRAM COMPARISON (The Aesthetics & "Garnishing" Test)
@@ -392,8 +383,6 @@ Raw DataFrame ──> Point to Whole DataFrame + Target Column Names ──> Aut
 
 This code explicitly contrasts the manual Pandas aggregation required by Matplotlib against the automated execution loop of Seaborn.
 
-
-
 ```Python
 import matplotlib.pyplot as plt
 import numpy as np
@@ -411,7 +400,6 @@ df = pd.DataFrame({
     "exam_score": np.clip(50 + (np.random.uniform(1, 10, total_students) * 4) + np.random.normal(0, 5, total_students), 0, 100),
     "course": np.random.choice(["Math", "Science", "History"], size=total_students)
 })
-
 
 ## =====================================================================
 ## 1. THE MATPLOTLIB WAY: Manual Statistical Pipeline Construction
@@ -436,7 +424,6 @@ plt.xlabel("Course")
 plt.ylabel("Calculated Mean Exam Score")
 plt.tight_layout()
 plt.show()
-
 
 ## =====================================================================
 ## 2. THE SEABORN WAY: Automatic Statistical Aggregation Natively
@@ -530,7 +517,6 @@ df = pd.DataFrame({
 global_median = df["exam_score"].median()
 global_mean = df["exam_score"].mean()
 
-
 ## =====================================================================
 ## 1. THE HYBRID FRAMEWORK: Seaborn Plotting + Matplotlib Customization
 ## =====================================================================
@@ -606,7 +592,6 @@ By synthesizing Seaborn’s statistical plotting engine with Matplotlib’s cust
 
 This code matches the final dashboard version described in the transcript. It uses Seaborn to initialize the sorted distributions and leverages Matplotlib to re-label the $y$-axis to `"Final Score"` and overlay the global average line.
 
-
 ```Python
 import matplotlib.pyplot as plt
 import numpy as np
@@ -627,7 +612,6 @@ df = pd.DataFrame({
 
 ## Calculate the precise global mean across all student entries
 overall_average = df["exam_score"].mean()
-
 
 ## =====================================================================
 ## 1. HYBRID PLATFORM EXECUTION (Seaborn Plot + Matplotlib Customization)
@@ -685,6 +669,5 @@ This architectural matrix summarizes the core differences outlined at the conclu
 |**Data Input Structure**|Primarily native arrays, Python lists, or separated Pandas Series elements.|Deeply optimized for **Pandas DataFrames** directly via structural key mapping.|
 |**Aesthetic Philosophy**|Basic, functional, and minimal out of the box. Requires manual formatting to look professional.|**Naturally elegant defaults.** Includes anti-aliasing, soft edge boundaries, and balanced palettes.|
 |**Statistical Computations**|**Strictly manual.** Data transformations (`.mean()`, `.groupby()`) must be completed before plotting.|**Fully automated and built-in.** Calculates centers, confidence metrics, and error spreads on the fly.|
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
