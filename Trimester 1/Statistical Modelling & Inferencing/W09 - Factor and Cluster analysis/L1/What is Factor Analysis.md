@@ -2,7 +2,6 @@
 
 ## Reading Material: What is Factor Analysis?
 
----
 
 ### The Challenge: Navigating the "Curse of Dimensionality"
 
