@@ -17,11 +17,19 @@ Rather than a point estimate (a "spear"), we use a "net" to capture the true par
 
 - **Known Population Variance ($\sigma$):** Use the Standard Normal distribution ($Z$).
     
-    $$CI = \bar{x} \pm Z_{\alpha/2} \left( \frac{\sigma}{\sqrt{n}} \right)$$
+
+$$
+CI = \bar{x} \pm Z_{\alpha/2} \left( \frac{\sigma}{\sqrt{n}} \right)
+$$
+
     
 - **Unknown Population Variance ($s$):** Use the Student’s $t$-distribution.
     
-    $$CI = \bar{x} \pm t_{\alpha/2, \nu} \left( \frac{s}{\sqrt{n}} \right)$$
+
+$$
+CI = \bar{x} \pm t_{\alpha/2, \nu} \left( \frac{s}{\sqrt{n}} \right)
+$$
+
     
     Where $\nu = n - 1$ degrees of freedom.
     
@@ -53,9 +61,12 @@ A formal courtroom-like procedure to evaluate status quo claims.
     
 - **Test Statistic:** Standardizes the difference relative to noise.
     
-    $$Z = \frac{\bar{x} - \mu_0}{\sigma / \sqrt{n}}$$
-    
 
+$$
+Z = \frac{\bar{x} - \mu_0}{\sigma / \sqrt{n}}
+$$
+
+    
 
 ```mermaid
 graph TD
