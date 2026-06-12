@@ -37,7 +37,6 @@ Examples:
 
 This changes how Bokeh handles the axis internally.
 
----
 
 ## Continuous vs Categorical Axes
 
@@ -63,7 +62,6 @@ Bokeh interprets:
 - distances numerically
     
 
----
 
 ## Categorical Axis
 
@@ -87,7 +85,6 @@ Now:
 - not numerical
     
 
----
 
 ## Why Bar Charts Exist
 
@@ -114,7 +111,6 @@ Bad for:
 - temporal continuity
     
 
----
 
 ## Fruit Dataset
 
@@ -133,7 +129,6 @@ fruits = [
 counts = [5, 3, 4, 2, 6, 7]
 ```
 
----
 
 ## Understanding the Data
 
@@ -146,7 +141,6 @@ counts = [5, 3, 4, 2, 6, 7]
 |Nectarines|6|
 |Strawberries|7|
 
----
 
 ## Key Concept: Categories
 
@@ -167,7 +161,6 @@ Categories are:
 
 not continuous measurements.
 
----
 
 ## Why `x_range` Matters
 
@@ -181,7 +174,6 @@ x_range=fruits
 
 inside `figure()`.
 
----
 
 ## What `x_range` Does
 
@@ -196,7 +188,6 @@ Without this:
 - Bokeh expects numeric coordinates.
     
 
----
 
 ## Important Architectural Insight
 
@@ -216,7 +207,6 @@ instead of:
 - a numeric coordinate system
     
 
----
 
 ## Mental Model
 
@@ -228,7 +218,6 @@ instead of:
 
 Distance matters.
 
----
 
 ## Categorical Axis
 
@@ -239,7 +228,6 @@ Apple   Pear   Plum
 Order matters.  
 Distance does not.
 
----
 
 ## Complete Bar Chart Example
 
@@ -280,7 +268,6 @@ p.vbar(
 show(p)
 ```
 
----
 
 ## Understanding `vbar()`
 
@@ -295,7 +282,6 @@ This means:
 - vertical bar chart
     
 
----
 
 ## Important Parameters
 
@@ -306,7 +292,6 @@ This means:
 |width|bar thickness|
 |color|bar color|
 
----
 
 ## Understanding `top`
 
@@ -329,7 +314,6 @@ ends at:
 - y = count value
     
 
----
 
 ## Visual Intuition
 
@@ -345,7 +329,6 @@ ends at:
     A  P   Pl G  N     S
 ```
 
----
 
 ## Why `width` Matters
 
@@ -360,7 +343,6 @@ Controls:
 - bar thickness
     
 
----
 
 ## Width Interpretation
 
@@ -370,7 +352,6 @@ Controls:
 |0.6|balanced|
 |1.0|touching bars|
 
----
 
 ## Why Color Matters
 
@@ -387,7 +368,6 @@ Bokeh supports:
 - hex colors
     
 
----
 
 ## Why Bar Charts Are Powerful
 
@@ -405,7 +385,6 @@ This makes bar charts excellent for:
 - category comparison
     
 
----
 
 ## Business Intelligence Connection
 
@@ -426,7 +405,6 @@ Examples:
 - flights by airline
     
 
----
 
 ## Seaborn Connection
 
@@ -443,7 +421,6 @@ The transcript references:
 
 These are categorical variables.
 
----
 
 ## Typical Categorical Variables
 
@@ -454,7 +431,6 @@ These are categorical variables.
 |Day|Mon/Tue/Wed|
 |Product|A/B/C|
 
----
 
 ## Why Categorical Data Needs Different Handling
 
@@ -480,7 +456,6 @@ Apple - Pear
 
 has no mathematical meaning.
 
----
 
 ## Internal Bokeh Representation
 
@@ -505,7 +480,6 @@ This manages:
 - rendering
     
 
----
 
 ## Important Insight About Ordering
 
@@ -519,7 +493,6 @@ Categorical order affects interpretation.
 
 Different orders tell different stories.
 
----
 
 ## Example Orders
 
@@ -531,7 +504,6 @@ Grape
 Pear
 ```
 
----
 
 ## Frequency-Based
 
@@ -541,7 +513,6 @@ Most common → least common
 
 Usually more insightful.
 
----
 
 ## Combining Categorical + Numerical
 
@@ -553,7 +524,6 @@ Category
 Numerical aggregation
 ```
 
----
 
 ## Common Beginner Mistakes
 
@@ -567,7 +537,6 @@ figure()
 
 with string categories often fails or behaves incorrectly.
 
----
 
 ## Mismatched Data Lengths
 
@@ -580,7 +549,6 @@ counts = [1]
 
 Must match lengths.
 
----
 
 ## Too Many Categories
 
@@ -598,13 +566,11 @@ Alternatives:
 - treemaps
     
 
----
 
 ## Random Color Usage
 
 Avoid assigning random colors without meaning.
 
----
 
 ## Advanced Insight
 
@@ -625,7 +591,6 @@ Everything in Bokeh is still:
 
 even bars.
 
----
 
 ## Machine Learning Connection
 
@@ -640,7 +605,6 @@ Categorical visualization is heavily used in ML for:
 - confusion matrices
     
 
----
 
 ## Mental Model
 
@@ -654,7 +618,6 @@ Bar Glyphs
 Interactive Comparison
 ```
 
----
 
 ## Most Important Concept Here
 
@@ -668,7 +631,6 @@ to categorical.
 
 That is the architectural shift enabling categorical plotting.
 
----
 
 ## Final Takeaways
 
@@ -685,7 +647,6 @@ p.vbar(
 show(p)
 ```
 
----
 
 ## Important Concepts
 
@@ -696,7 +657,6 @@ show(p)
 |top|bar height|
 |width|bar thickness|
 
----
 
 ## Key Visualization Principle
 
