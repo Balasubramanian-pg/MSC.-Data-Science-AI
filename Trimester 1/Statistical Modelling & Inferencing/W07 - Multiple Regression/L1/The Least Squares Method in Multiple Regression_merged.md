@@ -22,10 +22,9 @@ Fits:
 
 # a line
 
-$$ 
-\hat{y} = b_0 + b_1 x  
 $$
-
+\hat{y} = b_0 + b_1 x
+$$
 
 ## Multiple Linear Regression
 
@@ -34,7 +33,8 @@ Fits:
 # a hyperplane
 
 # 
-$$ 
+
+$$
 \hat{y}
 
 b_0  
@@ -45,9 +45,8 @@ b_2 x_2
 +  
 \cdots  
 +  
-b_k x_k  
+b_k x_k
 $$
-
 
 # 2. Geometric Interpretation
 
@@ -64,7 +63,6 @@ In higher dimensions:
 
 OLS attempts to place this hyperplane so that it lies as close as possible to the observed data points.
 
-
 # 3. What Does “Close” Mean?
 
 Closeness is measured using:
@@ -73,8 +71,8 @@ Closeness is measured using:
 
 For observation (i):
 
-$$ 
-e_i = y_i - \hat{y}_i  
+$$
+e_i = y_i - \hat{y}_i
 $$
 
 Where:
@@ -91,24 +89,28 @@ OLS minimizes:
 
 # Sum of Squared Errors (SSE)
 
-$$ 
-SSE = \sum_{i=1}^{n} e_i^2  
+$$
+SSE = \sum_{i=1}^{n} e_i^2
 $$
 
 Substituting residuals:
 
-# $$ 
+#
+
+$$
 SSE
 
 \sum_{i=1}^{n}  
-(y_i - \hat{y}_i)^2  
+(y_i - \hat{y}_i)^2
 $$
 
 # 5. Multiple Regression SSE
 
 For multiple regression:
 
-# $$ 
+#
+
+$$
 \hat{y}_i
 
 b_0  
@@ -119,15 +121,17 @@ b_2 x_{i2}
 +  
 \cdots  
 +  
-b_k x_{ik}  
+b_k x_{ik}
 $$
 
 Substituting into SSE:
 
 # 
+
 $$
 SSE = \sum_{i=1}^{n} \left( y_i - (b_0 + b_1 x_{i1} + b_2 x_{i2} + \cdots + b_k x_{ik}) \right)^2
 $$
+
 This is the objective function OLS minimizes.
 
 # 6. Why Squaring Matters
@@ -170,9 +174,9 @@ The regression problem becomes:
 
 Formally:
 
-$$ 
+$$
 \min_{b_0,b_1,\dots,b_k}  
-SSE  
+SSE
 $$
 
 # 8. Calculus-Based Solution
@@ -198,8 +202,8 @@ For (k) predictors:
 
 we obtain:
 
-$$ 
-k+1  
+$$
+k+1
 $$
 
 simultaneous equations.
@@ -233,19 +237,21 @@ Matrix notation compresses the entire regression system into elegant linear alge
 
 The observed outcomes:
 
-$$ 
-\mathbf{y}  
+$$
+\mathbf{y}
 $$
 
 are represented as:
 
-$$ 
-n \times 1  
+$$
+n \times 1
 $$
 
 column vector.
 
-# $$ 
+#
+
+$$
 \mathbf{y}
 
 \begin{bmatrix}  
@@ -253,14 +259,16 @@ y_1 \
 y_2 \  
 \vdots \  
 y_n  
-\end{bmatrix}  
+\end{bmatrix}
 $$
 
 # 13. The Coefficient Vector
 
 Unknown coefficients:
 
-# $$ 
+#
+
+$$
 \mathbf{b}
 
 \begin{bmatrix}  
@@ -268,26 +276,28 @@ b_0 \
 b_1 \  
 \vdots \  
 b_k  
-\end{bmatrix}  
+\end{bmatrix}
 $$
 
 Dimension:
 
-$$ 
-(k+1) \times 1  
+$$
+(k+1) \times 1
 $$
 
 # 14. The Design Matrix
 
 The predictor matrix:
 
-$$ 
-\mathbf{X}  
+$$
+\mathbf{X}
 $$
 
 contains all predictor values.
 
-# $$ 
+#
+
+$$
 \mathbf{X}
 
 \begin{bmatrix}  
@@ -295,7 +305,7 @@ contains all predictor values.
 1 & x_{21} & x_{22} & \cdots & x_{2k} \  
 \vdots & \vdots & \vdots & \ddots & \vdots \  
 1 & x_{n1} & x_{n2} & \cdots & x_{nk}  
-\end{bmatrix}  
+\end{bmatrix}
 $$
 
 ## Important Detail
@@ -304,8 +314,8 @@ The first column is all ones.
 
 This encodes:
 
-$$ 
-b_0  
+$$
+b_0
 $$
 
 the intercept term.
@@ -314,7 +324,9 @@ the intercept term.
 
 Residuals become:
 
-# $$ 
+#
+
+$$
 \mathbf{e}
 
 \begin{bmatrix}  
@@ -322,19 +334,21 @@ e_1 \
 e_2 \  
 \vdots \  
 e_n  
-\end{bmatrix}  
+\end{bmatrix}
 $$
 
 # 16. Compact Matrix Form
 
 The entire regression model becomes:
 
-# $$ 
+#
+
+$$
 \mathbf{y}
 
 \mathbf{Xb}  
 +  
-\mathbf{e}  
+\mathbf{e}
 $$
 
 This single equation represents all observations simultaneously.
@@ -360,25 +374,31 @@ This is one of the foundational abstractions of machine learning.
 
 Residuals:
 
-## $$
+##
+
+$$
 \mathbf{e},\ \mathbf{y},\ \mathbf{Xb}
 $$
 
 Thus:
 
-# $$ 
+#
+
+$$
 SSE
 
-\mathbf{e}^T \mathbf{e}  
+\mathbf{e}^T \mathbf{e}
 $$
 
 Substituting:
 
-# $$ 
+#
+
+$$
 SSE
 
 (\mathbf{y}-\mathbf{Xb})^T  
-(\mathbf{y}-\mathbf{Xb})  
+(\mathbf{y}-\mathbf{Xb})
 $$
 
 This is the matrix optimization objective.
@@ -387,16 +407,16 @@ This is the matrix optimization objective.
 
 The expression:
 
-$$ 
-\mathbf{e}^T \mathbf{e}  
+$$
+\mathbf{e}^T \mathbf{e}
 $$
 
 is the dot product of the residual vector with itself.
 
 Equivalent to:
 
-$$ 
-e_1^2 + e_2^2 + \cdots + e_n^2  
+$$
+e_1^2 + e_2^2 + \cdots + e_n^2
 $$
 
 Geometrically:
@@ -409,8 +429,8 @@ Using matrix calculus:
 
 differentiate SSE with respect to:
 
-$$ 
-\mathbf{b}  
+$$
+\mathbf{b}
 $$
 
 Set derivative equal to zero.
@@ -419,29 +439,34 @@ This produces:
 
 # Matrix Normal Equations
 
-# $$ 
+#
+
+$$
 (\mathbf{X}^T\mathbf{X})\mathbf{b}
 
-\mathbf{X}^T\mathbf{y}  
+\mathbf{X}^T\mathbf{y}
 $$
+
 # 21. Solving for the Coefficients
 
 Multiply both sides by:
 
-$$ 
-(\mathbf{X}^T\mathbf{X})^{-1}  
+$$
+(\mathbf{X}^T\mathbf{X})^{-1}
 $$
 
 assuming inverse exists.
 
 Result:
 
-# $$ 
+#
+
+$$
 \mathbf{b}
 
 (\mathbf{X}^T\mathbf{X})^{-1}  
 \mathbf{X}^T  
-\mathbf{y}  
+\mathbf{y}
 $$
 
 This is the famous:
@@ -471,8 +496,8 @@ It is one of the most important equations in applied mathematics.
 
 ## (X^TX)
 
-$$ 
-\mathbf{X}^T\mathbf{X}  
+$$
+\mathbf{X}^T\mathbf{X}
 $$
 
 captures:
@@ -486,8 +511,8 @@ It describes predictor geometry.
 
 ## (X^Ty)
 
-$$ 
-\mathbf{X}^T\mathbf{y}  
+$$
+\mathbf{X}^T\mathbf{y}
 $$
 
 captures:
@@ -504,8 +529,8 @@ It disentangles shared information between variables.
 
 If predictors are highly correlated:
 
-$$ 
-X^TX  
+$$
+X^TX
 $$
 
 becomes nearly singular.
@@ -531,10 +556,12 @@ OLS is fundamentally a projection problem.
 
 The fitted values:
 
-# $$ 
+#
+
+$$
 \hat{\mathbf{y}}
 
-\mathbf{Xb}  
+\mathbf{Xb}
 $$
 
 are the:
@@ -547,7 +574,9 @@ onto the column space of (X).
 
 Residual vector:
 
-# $$
+#
+
+$$
 \mathbf{e},\ \mathbf{y},\ \hat{\mathbf{y}}
 $$
 
@@ -555,8 +584,8 @@ is orthogonal to the predictor space.
 
 Meaning:
 
-$$ 
-X^T e = 0  
+$$
+X^T e = 0
 $$
 
 This orthogonality condition is the deep geometric meaning of least squares.
@@ -600,8 +629,8 @@ Direct matrix inversion has computational limits.
 
 Complexity roughly:
 
-$$ 
-O(k^3)  
+$$
+O(k^3)
 $$
 
 for inversion.
@@ -623,8 +652,8 @@ instead of direct inversion.
 
 Computing:
 
-$$ 
-(X^TX)^{-1}  
+$$
+(X^TX)^{-1}
 $$
 
 directly can be numerically unstable.
@@ -640,19 +669,45 @@ import numpy as np
 
 # Design matrix
 X = np.array([
-    [1, 2$$,
-    [1, 3$$,
-    [1, 4$$,
-    [1, 5$$
-$$)
+    [1, 2
+
+$$
+,
+    [1, 3
+$$
+
+,
+    [1, 4
+
+$$
+,
+    [1, 5
+$$
+
+$$
+)
 
 # Response vector
 y = np.array([
-    [5$$,
-    [7$$,
-    [9$$,
-    [11$$
-$$)
+    [5
+$$
+
+,
+    [7
+
+$$
+,
+    [9
+$$
+
+,
+    [11
+
+$$
+
+$$
+
+)
 
 # Closed-form OLS solution
 b = np.linalg.inv(X.T @ X) @ X.T @ y
@@ -666,16 +721,21 @@ print(b)
 Expected coefficients:
 
 ```python
-[[1.$$
- [2.$$$$
+[[1.
+
+$$
+[2.
+$$
+
+$$
 ```
 
 Meaning:
-
-$$ 
-\hat{y} = 1 + 2x  
 $$
 
+\hat{y} = 1 + 2x  
+
+$$
 # 33. Relationship to Deep Learning
 
 Neural networks generalize this optimization framework.
@@ -693,7 +753,8 @@ OLS is essentially the simplest supervised learning algorithm.
 
 # 34. Key Insights About Least Squares
 
-[!IMPORTANT$$
+[!IMPORTANT
+$$
 
 Least squares is fundamentally:
 
@@ -701,21 +762,25 @@ Least squares is fundamentally:
 
 The OLS solution:
 
-# $$ 
+#
+
+$$
 \mathbf{b}
 
 (\mathbf{X}^T\mathbf{X})^{-1}  
 \mathbf{X}^T  
-\mathbf{y}  
+\mathbf{y}
 $$
 
 finds the coefficient vector that minimizes:
 
-# $$ 
+#
+
+$$
 SSE
 
 (\mathbf{y}-\mathbf{Xb})^T  
-(\mathbf{y}-\mathbf{Xb})  
+(\mathbf{y}-\mathbf{Xb})
 $$
 
 Critical concepts:
