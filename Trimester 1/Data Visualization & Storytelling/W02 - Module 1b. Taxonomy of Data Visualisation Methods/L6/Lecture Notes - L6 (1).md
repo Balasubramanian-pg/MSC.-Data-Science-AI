@@ -8,7 +8,6 @@ week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
 
 A robust taxonomy organizes data visualization methods by their primary communication purpose, helping engineers and architects select the most effective layout for a given dataset. This document details the visual paradigms, technical architectures, and practical trade-offs for two critical communication tasks: **Comparing Categories** and **Assessing Hierarchies / Part-to-Whole Relationships**.
 
----
 
 ## 1. Taxonomic Framework of Data Visualization Methods
 
@@ -47,13 +46,11 @@ graph TD
 * **Structural Representation:** Hierarchies can be shown through **containment** (grouping elements inside boundaries) or **connection** (drawing lines between related items).
 * **Scaling Consistency:** Both methods rely on area-proportional scaling to represent quantitative values accurately, avoiding visual bias.
 
----
 
 ## 2. Comparing Categories: Relative and Absolute Value Comparisons
 
 Categorical comparison visualizations show how relative and absolute variables change across different categories. They help viewers compare the span, flow, or regional distribution of discrete items on a shared scale.
 
----
 
 ### A. Gantt Chart (Floating Bar)
 
@@ -89,7 +86,6 @@ gantt
   * **Tableau:** Use the `Gantt Bar` mark type, mapping the minimum value to the Columns shelf and the range span (max minus min) to the Size shelf.
   * **Python:** Use `matplotlib.pyplot.barh` and pass the minimum values to the `left` parameter.
 
----
 
 ### B. Sankey Diagram
 
@@ -131,7 +127,6 @@ graph LR
   * **JavaScript:** Use the `d3-sankey` library to calculate node and link coordinates.
   * **Python:** Use `plotly.graph_objects.Sankey` to generate interactive, draggable flow networks.
 
----
 
 ### C. Small Multiples
 
@@ -171,20 +166,17 @@ graph TD
   * **R/ggplot2:** Use `facet_wrap(~ region, ncol = 3)`.
   * **Seaborn:** Use `sns.FacetGrid(data, col="region")`.
 
----
 
 ### Section Summary & Key Takeaways
 * **Gantt Charts** compare absolute and relative ranges, removing the zero-baseline constraint.
 * **Sankey Diagrams** map continuous, multi-stage resource flows, preserving volume balances across the system.
 * **Small Multiples** use a synchronized grid of simple charts to display high-dimensional data clearly, avoiding visual clutter.
 
----
 
 ## 3. Assessing Hierarchies: Part-to-Whole and Structural Visualizations
 
 Hierarchical visualizations display the relationships between nested categories, showing how individual parts combine to form a larger system.
 
----
 
 ### A. Circle Packing Diagram
 
@@ -222,7 +214,6 @@ graph TD
   * **D3.js:** Use the `d3.pack()` layout engine to compute circle coordinates.
   * **Python:** Use the `circlify` library to calculate nested coordinates, then render them using `matplotlib`.
 
----
 
 ### B. Bubble Hierarchy
 
@@ -261,13 +252,11 @@ graph TD
   * Use D3's `d3-force` engine with `forceCollide` to keep bubbles separated.
   * Use NetworkX in Python to calculate tree structures, and Plotly to render the interactive layout.
 
----
 
 ### Section Summary & Key Takeaways
 * **Circle Packing** uses nested containment to show group boundaries, making it highly aesthetic but less space-efficient.
 * **Bubble Hierarchies** use explicit connecting lines to map complex, uneven organizational structures, though they require more screen space to prevent clutter.
 
----
 
 ## 4. Production-Grade Systems Architecture & Pipelines
 
@@ -355,7 +344,6 @@ Hierarchical engines require a nested tree structure where parent nodes contain 
 }
 ```
 
----
 
 ## 5. Edge Cases, Failure Modes, and Production Debugging
 
@@ -375,7 +363,6 @@ graph TD
 * **Switch to Canvas Rendering:** For large datasets, use HTML5 Canvas instead of SVG. Canvas draws pixels directly to the screen, bypassing the DOM overhead.
 * **Level of Detail (LOD) Rendering:** Only render visible elements. Hide deeper nested nodes until the user zooms into their parent category.
 
----
 
 ### B. Layout Stability in Force-Directed Bubble Hierarchies
 
@@ -396,7 +383,6 @@ const simulation = d3.forceSimulation(nodes)
     .alphaMin(0.005);   // Stops calculation frames when movement becomes negligible
 ```
 
----
 
 ### C. Outliers and Value Anomalies
 
@@ -409,7 +395,6 @@ If one division's budget is \$100M and another is \$10k, scaling their sizes lin
 
 $$\text{Radius}_{\text{Rendered}} = \max\left(\text{Radius}_{\text{Minimum}}, \sqrt{\frac{\text{Value}}{\pi}}\right)$$
 
----
 
 ### D. Zero or Negative Values in Part-to-Whole Diagrams
 
