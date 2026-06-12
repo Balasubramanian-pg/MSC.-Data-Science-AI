@@ -2,7 +2,6 @@
 
 ## Reading Material: The Method of Least Squares
 
----
 # 1. The Problem of “Best Fit”
 
 Suppose we collect paired observations:
@@ -219,7 +218,6 @@ The observed point lies above the line.
 
 The model underpredicted the observation.
 
----
 
 ## Negative Residual
 
@@ -239,7 +237,6 @@ The observed point lies below the line.
 
 The model overpredicted the observation.
 
----
 
 ## Zero Residual
 
@@ -645,7 +642,6 @@ $$
 \sum e_i=0  
 $$
 
----
 
 ## Residual Mean Equals Zero
 
@@ -653,7 +649,6 @@ $$
 \bar{e}=0  
 $$
 
----
 
 ## Residuals Are Orthogonal to Predictor Values
 
