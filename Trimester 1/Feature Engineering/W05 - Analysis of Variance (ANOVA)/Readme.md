@@ -74,18 +74,23 @@ If $S = (w_1, w_2, w_3)$, the bigrams ($N=2$) are $(w_1,w_2)$ and $(w_2,w_3)$.
 TF-IDF calculates a weight for each token that increases proportionally to the frequency of the word in the document, but is offset by the frequency of the word in the corpus.
 
 **1. Term Frequency (TF):**
+
 $$
 TF(t, d) = \frac{f_{t, d}}{\sum_{t' \in d} f_{t', d}}
 $$
+
 *(Where $f_{t,d}$ is the raw count of term $t$ in document $d$. Normalization prevents bias toward long documents).*
 
 **2. Inverse Document Frequency (IDF):**
+
 $$
 IDF(t, D) = \log \left( \frac{N}{1 + |\{d \in D : t \in d\}|} \right)
 $$
+
 *(Where $N$ is the total number of documents, and the denominator is the number of documents containing $t$. The $+1$ prevents division by zero).*
 
 **3. The Final Matrix Formulation:**
+
 $$
 TFIDF(t, d, D) = TF(t, d) \times IDF(t, D)
 $$
@@ -93,9 +98,11 @@ $$
 ### C. Continuous Bag of Words / Word Embeddings (Intuition)
 Instead of a sparse vector of size $|V|$, embeddings learn a dense vector $E(w) \in \mathbb{R}^d$ (where $d$ is typically 50-300).
 Models like Word2Vec (Skip-gram) define the probability of seeing a context word $w_c$ given a center word $w_t$ using the softmax of their dot product:
+
 $$
 P(w_c | w_t) = \frac{\exp(\mathbf{u}_{w_c}^T \mathbf{v}_{w_t})}{\sum_{k=1}^{|V|} \exp(\mathbf{u}_k^T \mathbf{v}_{w_t})}
 $$
+
 By maximizing this probability over a massive corpus, words appearing in similar contexts are forced to have similar geometric vectors.
 
 ## 5. Python Implementation: Sparse Text Representation
@@ -221,6 +228,5 @@ print("Similarity between 'Bank (Finance)' and 'Financial institutions':", round
 1. **Contextual Embeddings (Transformers):** Move from static embeddings to dynamic embeddings via Self-Attention (BERT, RoBERTa). In BERT, the vector for "bank" dynamically shifts depending on the words around it in that specific sentence.
 2. **Latent Dirichlet Allocation (LDA):** Learn to model documents not as discrete vectors, but as probabilistic distributions over latent topics.
 3. **Hashing Vectorizer (The "Hashing Trick"):** Learn how to vectorize infinite streams of text with zero vocabulary state via murmurhash functions, accepting a small rate of hash collisions to achieve $\mathcal{O}(1)$ memory complexity.
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
