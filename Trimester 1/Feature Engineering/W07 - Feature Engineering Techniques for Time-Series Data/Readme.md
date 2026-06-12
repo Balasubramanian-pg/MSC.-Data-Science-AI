@@ -7,7 +7,7 @@ week: W07 - Feature Engineering Techniques for Time-Series Data
 ## Week 7: Feature Engineering Techniques for Time-Series Data
 ## Feature Engineering Techniques for Time-Series Data
 
-## [1. Concept Introduction](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01 - Overview of Feature Engineering/Readme.md#1-concept-introduction)
+## [1. Concept Introduction](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01%20-%20Overview%20of%20Feature%20Engineering/Readme.md#1-concept-introduction)
 
 In standard machine learning, datasets are assumed to be independent and identically distributed (I.I.D.). Time-series data violently violates this assumption. In a time series, the temporal order is the primary carrier of information; the value of a variable at time $t$ is mathematically and causally dependent on its values at $t-1, t-2, \dots, t-k$.
 
@@ -16,7 +16,7 @@ Feature engineering for time-series is the process of transforming a 1-dimension
 > [!IMPORTANT]
 > The primary objective of time-series feature engineering is converting **implicit temporal dependence** into **explicit spatial dependence** (columns in a matrix). If you fail to do this correctly, tabular models will treat adjacent time steps as completely unrelated entities.
 
-## [2. Intuition and Real-World Analogy](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01 - Overview of Feature Engineering/Readme.md#2-intuition-and-real-world-analogy)
+## [2. Intuition and Real-World Analogy](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01%20-%20Overview%20of%20Feature%20Engineering/Readme.md#2-intuition-and-real-world-analogy)
 
 **The Rearview Mirror Analogy:**
 Imagine driving a car where the windshield is completely blacked out. Your goal is to steer the car accurately (predict the future). You cannot see the road ahead. However, you have an incredibly detailed rearview mirror. 
@@ -59,7 +59,7 @@ $$
 \sigma_t^2(w) = \frac{1}{w-1} \sum_{i=0}^{w-1} (x_{t-i} - \mu_t(w))^2
 $$
 
-## [4. Visual Architecture](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01 - Overview of Feature Engineering/Readme.md#4-visual-architecture): The Temporal-to-Tabular Pipeline
+## [4. Visual Architecture](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01%20-%20Overview%20of%20Feature%20Engineering/Readme.md#4-visual-architecture): The Temporal-to-Tabular Pipeline
 
 ```mermaid
 flowchart TD
@@ -89,7 +89,7 @@ flowchart TD
 
 Extracting `hour`, `day`, or `month` directly as integers creates a geometric paradox. If `hour` goes from $0$ to $23$, the linear distance between $23:00$ and $0:00$ is $23$. In reality, they are $1$ hour apart.
 
-**[Step-by-Step Derivation](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W04 - Dimensionality Reduction Techniques/Readme.md#step-by-step-derivation) of Cyclical Encoding:**
+**[Step-by-Step Derivation](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W04%20-%20Dimensionality%20Reduction%20Techniques/Readme.md#step-by-step-derivation) of Cyclical Encoding:**
 To preserve cyclical geometry, we map the discrete time component onto a unit circle using sine and cosine transformations.
 Let $T_{max}$ be the maximum value of the cycle (e.g., $24$ for hours, $12$ for months).
 1. Normalize the time $t$ to a range of $[0, 2\pi]$: $\theta = \frac{2\pi t}{T_{max}}$
@@ -273,7 +273,7 @@ for train_index, test_index in tscv.split(X):
 ## 11. Machine Learning Connections
 
 **The Tree-Based Trend Problem:**
-Algorithms like XGBoost, LightGBM, and Random Forests **cannot extrapolate**. If the training [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/Experiential%20Learning%20Activity.md#dataset) contains sales ranging from $\$10,000$ to $\$50,000$, the highest prediction a tree can ever make is $\approx \$50,000$. 
+Algorithms like XGBoost, LightGBM, and Random Forests **cannot extrapolate**. If the training [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03%20-%20General%20Feature%20Engineering%20Techniques/Experiential%20Learning%20Activity.md#dataset) contains sales ranging from $\$10,000$ to $\$50,000$, the highest prediction a tree can ever make is $\approx \$50,000$. 
 
 If your time-series has an upward trend, next year's sales might hit $\$60,000$. A tree-based model will flatline its predictions at $\$50,000$. 
 *Solution via Feature Engineering:* Do not predict the absolute value. Difference the target variable ($y_t = x_t - x_{t-1}$). Train the model to predict the *change* in price. Reconstruct the absolute value later by adding the predicted difference to the last known real value.
@@ -283,7 +283,7 @@ If your time-series has an upward trend, next year's sales might hit $\$60,000$.
 - **Avoiding the `iterrows` Anti-pattern:** Calculating rolling metrics using a `for` loop over rows is $\mathcal{O}(N)$. Using Pandas `.rolling().mean()` triggers Cythonized, contiguous memory C-blocks, achieving near $\mathcal{O}(1)$ execution per window.
 - **Memory Saturation with Lags:** If you create 100 lag features for 10 million rows, you will duplicate your memory footprint 100 times, causing an OOM error. Instead of dense lag grids, use **Dilated Lags** (e.g., $t-1, t-7, t-14, t-30$). This captures recent granularity and distant seasonality without saturating memory.
 
-## [13. Interview-Style Insights](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W06 - Feature Engineering Techniques for Image Data/Readme.md#13-interview-style-insights)
+## [13. Interview-Style Insights](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W06%20-%20Feature%20Engineering%20Techniques%20for%20Image%20Data/Readme.md#13-interview-style-insights)
 
 **Q: How do you handle missing values (NaNs) in time-series data before feature engineering?**
 **A:** Standard mean/median imputation destroys temporal sequences. For short gaps, I use linear or spline interpolation. For financial data, I use Forward Fill (`ffill()`), assuming the last known price remains valid until a new trade occurs. Never use Backward Fill (`bfill()`) as it leaks future data into the past.
@@ -291,13 +291,13 @@ If your time-series has an upward trend, next year's sales might hit $\$60,000$.
 **Q: If you have highly autocorrelated data, how do you decide which lag features to include?**
 **A:** I plot the Partial Autocorrelation Function (PACF). While ACF shows the correlation between $t$ and $t-k$ including all intermediate effects, PACF isolates the direct, marginal contribution of precisely lag $k$. I only engineer features for the lags where the PACF spike crosses the statistical significance threshold.
 
-## [14. Final Takeaways](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W06 - Feature Engineering Techniques for Image Data/Readme.md#14-final-takeaways)
+## [14. Final Takeaways](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W06%20-%20Feature%20Engineering%20Techniques%20for%20Image%20Data/Readme.md#14-final-takeaways)
 
-### [Mental Models](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01 - Overview of Feature Engineering/Readme.md#mental-models)
+### [Mental Models](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01%20-%20Overview%20of%20Feature%20Engineering/Readme.md#mental-models)
 - **The Information Horizon:** Every rolling or lag feature you create represents a specific "memory horizon" for your model. A 3-day moving average gives the model short-term reflex capacity; a 365-day lag gives it long-term structural memory. A robust matrix requires a synthesis of both.
 - **The Stationarity Goal:** The less stationary the raw data, the more feature engineering is required. Your engineered features should essentially "flatten" the temporal dynamics into mathematical constants.
 
-### [Advanced Learning Roadmap](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01 - Overview of Feature Engineering/Readme.md#advanced-learning-roadmap)
+### [Advanced Learning Roadmap](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01%20-%20Overview%20of%20Feature%20Engineering/Readme.md#advanced-learning-roadmap)
 1. **Frequency Domain Engineering:** Learn to apply the Fast Fourier Transform (FFT) to convert sequential time-domain data into frequency-domain features (amplitudes and phases of underlying cycles).
 2. **Automated Extraction with TSFresh:** Explore the `tsfresh` Python library, which mathematically extracts thousands of time-series features (entropy, continuous wavelet transforms) and performs massive parallel hypothesis testing for feature selection.
 3. **Transition to Deep State-Space:** When manual tabular engineering reaches its limit, transition to understanding how LSTMs (Long Short-Term Memory) and Time-Series Transformers (like Temporal Fusion Transformers) learn these lag and window relationships dynamically within their hidden states.
