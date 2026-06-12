@@ -53,6 +53,7 @@ To prevent common words (like "the", "and") from dominating the matrix, we scale
 $$
 \text{TF-IDF}(t, d, D) = f_{t,d} \times \log\left(\frac{|D|}{|\{d \in D : t \in d\}|}\right)
 $$
+
 Where:
 *   $f_{t,d}$ = Frequency of term $t$ in document $d$
 *   $|D|$ = Total number of documents
