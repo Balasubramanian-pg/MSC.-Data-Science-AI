@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W12 - Module 4d. Tableau (Continued) - Module 4d. Tableau (Continued)
 ---
 
-
 ### **Overview**
 The transcript focuses on conducting visual analysis within **Tableau** to discover data trends, extract insights, and craft compelling data stories. The ultimate goal of data visualization is to balance the author's narrative with audience interactivity, allowing end-users to derive their own insights before compiling these visuals into a dashboard.
 
