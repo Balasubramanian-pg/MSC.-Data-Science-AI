@@ -6,7 +6,6 @@ week: W10 - Module 4c. Python Bokeh package - Module 4c. Python Bokeh package
 
 Here is a technical document created from the transcript, designed for self-paced learning.
 
----
 
 ## Technical Document: Decorating Visuals in Bokeh
 
@@ -14,7 +13,6 @@ Here is a technical document created from the transcript, designed for self-pace
 **Platform:** BITS PLANET DIGITAL
 **Environment:** Python with Bokeh (Google Colab)
 
----
 
 ## 1. Learning Objectives
 
@@ -26,7 +24,6 @@ By the end of this document, you will be able to:
 - Load and apply custom themes
 - Differentiate between Bokeh's `show()` command and Matplotlib/Seaborn display methods
 
----
 
 ## 2. Prerequisites & Setup
 
@@ -47,7 +44,6 @@ from bokeh.plotting import figure, show
 
 > **Important:** Bokeh uses `show()` for final visualization. Do not use `plt.show()` from Matplotlib.
 
----
 
 ## 3. Colors in Bokeh
 
@@ -75,7 +71,6 @@ Bokeh supports all **140 standard HTML and CSS color names**, including:
 - Indigo, Crimson, Teal, Coral, Navy
 - And many more
 
----
 
 ## 4. Code Structure & Execution
 
@@ -109,7 +104,6 @@ p.vbar(x=categories, top=values, width=0.9, color=bar_colors)
 show(p)
 ```
 
----
 
 ## 5. Customization Categories
 
@@ -123,7 +117,6 @@ The lesson covers **five main areas** of plot customization:
 | Legends | Position, orientation, click policy (muting/hiding) |
 | Themes | Built-in themes (caliber, dark_minimal, light_minimal, etc.) |
 
----
 
 ## 6. Key Bokeh vs. Matplotlib/Seaborn Differences
 
@@ -134,7 +127,6 @@ The lesson covers **five main areas** of plot customization:
 | Glyph type | Bars = `vbar`, `hbar` | Bars = `bar()` |
 | Color specification | Unified across all elements | Varies by function |
 
----
 
 ## 7. Practice Exercise
 
@@ -153,7 +145,6 @@ Based on the transcript, try to replicate this workflow:
 ### Expected Output
 A bar chart where each fruit bar has a distinctly different color, demonstrating pre-attentive attributes (viewers can instantly distinguish between categories by color).
 
----
 
 ## 8. Common Errors & Troubleshooting
 
@@ -164,7 +155,6 @@ A bar chart where each fruit bar has a distinctly different color, demonstrating
 | Colors not applying | Color format incorrect | Use string names, Hex with `#`, or RGB tuple |
 | `x_range` error | Categorical data without proper range | Use `x_range=list_of_categories` |
 
----
 
 ## 9. Next Steps (Preview)
 
@@ -173,7 +163,6 @@ The next section of the lesson (continued in original transcript) will cover:
 - Advanced legend configuration
 - Styling axes (tick marks, labels, formatting)
 
----
 
 ## 10. Reference: Color Format Quick Guide
 
@@ -5111,7 +5100,6 @@ After:
 
 ```text
 Observations
-------------
 Temperature
 Objects
 ```
