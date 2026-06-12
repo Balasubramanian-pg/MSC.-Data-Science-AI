@@ -2,7 +2,6 @@
 
 ## Reading Material: One-Way and Two-Way [Analysis of Variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#analysis-of-variance) (ANOVA)
 
----
 
 **Contents**
 
