@@ -60,7 +60,7 @@ As we explore this "new school of thought," we will focus on:
 
 ### Why This Matters for You
 
-As a pharmaceutical data analyst, you deal with inherent uncertainty in clinical trials and market adoption. The Bayesian approach is increasingly vital because it allows you to incorporate **domain expertise** (e.g., results from similar drugs) directly into your models via the "Prior," resulting in more robust [predictions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#predictions) even when your current dataset is small.
+As a pharmaceutical data analyst, you deal with inherent uncertainty in clinical trials and market adoption. The Bayesian approach is increasingly vital because it allows you to incorporate **domain expertise** (e.g., results from similar drugs) directly into your models via the "Prior," resulting in more robust [predictions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#predictions) even when your current dataset is small.
 
 **To begin this journey, would you like to explore the core of Bayes' Theorem—the mathematical "engine" of belief updating—or would you prefer to start by comparing a practical "Frequentist vs. Bayesian" scenario, such as analyzing the efficacy of a new medical treatment?**
 
