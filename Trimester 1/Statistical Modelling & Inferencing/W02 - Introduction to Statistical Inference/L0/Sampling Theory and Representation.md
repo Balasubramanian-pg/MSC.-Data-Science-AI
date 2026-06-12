@@ -42,35 +42,51 @@ We also define our target sensitivity:
 
 Assuming equal sample sizes ($n_1 = n_2 = n$) and equal historical population variances ($\sigma_1^2 = \sigma_2^2 = \sigma^2$), the standard error of the difference between the two sample means is:
 
-$$\sigma_{\Delta} = \sqrt{\frac{\sigma^2}{n} + \frac{\sigma^2}{n}} = \sqrt{\frac{2\sigma^2}{n}}$$
+$$
+\sigma_{\Delta} = \sqrt{\frac{\sigma^2}{n} + \frac{\sigma^2}{n}} = \sqrt{\frac{2\sigma^2}{n}}
+$$
 
 Under the **Null Hypothesis ($H_0$)**, the distribution of the difference between means is centered at 0. The boundary line for rejecting the null hypothesis sits at:
 
-$$\text{Critical Value} = 0 + Z_{1-\alpha/2} \cdot \sigma_{\Delta}$$
+$$
+\text{Critical Value} = 0 + Z_{1-\alpha/2} \cdot \sigma_{\Delta}
+$$
 
 Under the **Alternative Hypothesis ($H_a$)**, the true difference is centered at our MDE ($\delta$). To achieve our target statistical power, our critical value must simultaneously sit at a distance of $Z_{1-\beta}$ below $\delta$:
 
-$$\text{Critical Value} = \delta - Z_{1-\beta} \cdot \sigma_{\Delta}$$
+$$
+\text{Critical Value} = \delta - Z_{1-\beta} \cdot \sigma_{\Delta}
+$$
 
 Because the critical value is a single physical point on our distribution curve, we can set these two equations equal to each other:
 
-$$Z_{1-\alpha/2} \cdot \sigma_{\Delta} = \delta - Z_{1-\beta} \cdot \sigma_{\Delta}$$
+$$
+Z_{1-\alpha/2} \cdot \sigma_{\Delta} = \delta - Z_{1-\beta} \cdot \sigma_{\Delta}
+$$
 
 Now, we isolate the effect size $\delta$:
 
-$$\delta = (Z_{1-\alpha/2} + Z_{1-\beta}) \cdot \sigma_{\Delta}$$
+$$
+\delta = (Z_{1-\alpha/2} + Z_{1-\beta}) \cdot \sigma_{\Delta}
+$$
 
 Substitute our definition of $\sigma_{\Delta} = \sqrt{\frac{2\sigma^2}{n}}$ back into the equation:
 
-$$\delta = (Z_{1-\alpha/2} + Z_{1-\beta}) \cdot \sqrt{\frac{2\sigma^2}{n}}$$
+$$
+\delta = (Z_{1-\alpha/2} + Z_{1-\beta}) \cdot \sqrt{\frac{2\sigma^2}{n}}
+$$
 
 Square both sides to eliminate the square root:
 
-$$\delta^2 = (Z_{1-\alpha/2} + Z_{1-\beta})^2 \cdot \frac{2\sigma^2}{n}$$
+$$
+\delta^2 = (Z_{1-\alpha/2} + Z_{1-\beta})^2 \cdot \frac{2\sigma^2}{n}
+$$
 
 Finally, solve for $n$ to yield the classical sample size equation:
 
-$$n = \frac{2\sigma^2(Z_{1-\alpha/2} + Z_{1-\beta})^2}{\delta^2}$$
+$$
+n = \frac{2\sigma^2(Z_{1-\alpha/2} + Z_{1-\beta})^2}{\delta^2}
+$$
 
 ## Part 2: Calculating Standard Error for Different Metrics
 
@@ -82,11 +98,15 @@ For a continuous variable, the Central Limit Theorem dictates that as long as yo
 
 The variance of the sum of $n$ independent random variables is $n\sigma^2$. Since the sample mean divides this sum by $n$, the variance of the sample mean scales down by a factor of $n^2$:
 
-$$\text{Var}(\bar{X}) = \text{Var}\left(\frac{1}{n}\sum X_i\right) = \frac{1}{n^2}\sum \text{Var}(X_i) = \frac{n\sigma^2}{n^2} = \frac{\sigma^2}{n}$$
+$$
+\text{Var}(\bar{X}) = \text{Var}\left(\frac{1}{n}\sum X_i\right) = \frac{1}{n^2}\sum \text{Var}(X_i) = \frac{n\sigma^2}{n^2} = \frac{\sigma^2}{n}
+$$
 
 Taking the square root gives us the standard error of a continuous mean:
 
-$$\text{SE}_{\bar{X}} = \frac{\sigma}{\sqrt{n}}$$
+$$
+\text{SE}_{\bar{X}} = \frac{\sigma}{\sqrt{n}}
+$$
 
 ### 2. Proportion / Binary Metrics (e.g., Conversion Rate)
 
@@ -94,11 +114,15 @@ Binary outcomes follow a Bernoulli distribution where a user either converts ($X
 
 The underlying variance of a single Bernoulli trial is calculated as:
 
-$$\sigma^2 = E[X^2] - (E[X])^2 = p - p^2 = p(1-p)$$
+$$
+\sigma^2 = E[X^2] - (E[X])^2 = p - p^2 = p(1-p)
+$$
 
 Because a sample proportion is just a sample mean of 0s and 1s, we can directly substitute this variance into our continuous standard error formula ($SE = \sqrt{\frac{\sigma^2}{n}}$):
 
-$$\text{SE}_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}}$$
+$$
+\text{SE}_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}}
+$$
 
 ### 3. Ratio Metrics (e.g., Revenue Per Paying User)
 
@@ -106,7 +130,9 @@ Ratio metrics occur when you divide one random variable by another, such as $\te
 
 The Delta Method calculates the variance of the ratio $\frac{\bar{Y}}{\bar{X}}$ based on the individual variances and their covariance:
 
-$$\text{Var}\left(\frac{\bar{Y}}{\bar{X}}\right) \approx \frac{1}{n} \left[ \frac{\sigma_Y^2}{\mu_X^2} - \frac{2\mu_Y\sigma_{XY}}{\mu_X^3} + \frac{\mu_Y^2\sigma_X^2}{\mu_X^4} \right]$$
+$$
+\text{Var}\left(\frac{\bar{Y}}{\bar{X}}\right) \approx \frac{1}{n} \left[ \frac{\sigma_Y^2}{\mu_X^2} - \frac{2\mu_Y\sigma_{XY}}{\mu_X^3} + \frac{\mu_Y^2\sigma_X^2}{\mu_X^4} \right]
+$$
 
 Where:
 
