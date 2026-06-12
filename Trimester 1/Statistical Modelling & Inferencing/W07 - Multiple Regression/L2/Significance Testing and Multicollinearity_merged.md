@@ -17,7 +17,9 @@ In simple linear regression:
 
 In multiple regression:
 
-# $$  
+#
+
+$$
 Y
 
 \beta_0  
@@ -30,7 +32,7 @@ Y
 +  
 \beta_k X_k  
 +  
-\epsilon  
+\epsilon
 $$
 
 we now face two distinct inferential questions:
@@ -61,7 +63,9 @@ It tests the predictive power of the entire model collectively.
 
 ## Null Hypothesis
 
-# $$
+#
+
+$$
 H_0: \beta_1 = \beta_2 = \cdots = \beta_k = 0
 $$
 
@@ -80,10 +84,10 @@ This is called:
 
 ## Alternative Hypothesis
 
-$$  
+$$
 H_a:  
 \text{At least one }  
-\beta_j \neq 0  
+\beta_j \neq 0
 $$
 
 Meaning:
@@ -111,7 +115,9 @@ The F-statistic compares:
 
 Formula:
 
-# $$
+#
+
+$$
 F = \frac{MSR}{MSE} = \frac{SSR/k}{SSE/(n-k-1)}
 $$
 
@@ -119,8 +125,8 @@ $$
 
 ## Mean Square Regression
 
-$$  
-MSR = \frac{SSR}{k}  
+$$
+MSR = \frac{SSR}{k}
 $$
 
 Measures:
@@ -129,8 +135,10 @@ Measures:
 
 ## Mean Square Error
 
-# $$  
-MSE = \frac{SSE}{n-k-1}  
+#
+
+$$
+MSE = \frac{SSE}{n-k-1}
 $$
 
 Measures:
@@ -147,8 +155,8 @@ The F-test asks:
 
 Means:
 
-$$  
-MSR \gg MSE  
+$$
+MSR \gg MSE
 $$
 
 Interpretation:
@@ -162,8 +170,8 @@ Interpretation:
 
 Means:
 
-$$  
-MSR \approx MSE  
+$$
+MSR \approx MSE
 $$
 
 Interpretation:
@@ -171,23 +179,22 @@ Interpretation:
 - model performs little better than random noise
     
 
-
 # 8. Degrees of Freedom
 
 The F-distribution uses two degrees of freedom.
 
 ## Numerator Degrees of Freedom
 
-$$  
-k  
+$$
+k
 $$
 
 Number of predictors.
 
 ## Denominator Degrees of Freedom
 
-$$  
-n-k-1  
+$$
+n-k-1
 $$
 
 Remaining residual degrees of freedom.
@@ -196,14 +203,14 @@ Remaining residual degrees of freedom.
 
 If:
 
-$$  
-p < \alpha  
+$$
+p < \alpha
 $$
 
 we reject:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 and conclude:
@@ -224,15 +231,14 @@ It does NOT imply:
     
 - coefficients are stable
 
-
 # 11. Individual Predictor Significance: The t-Test
 
 Once the overall model is significant, we examine individual variables.
 
 For each predictor:
 
-$$  
-X_j  
+$$
+X_j
 $$
 
 we test whether its coefficient differs significantly from zero.
@@ -241,8 +247,8 @@ we test whether its coefficient differs significantly from zero.
 
 ## Null Hypothesis
 
-$$  
-H_0 : \beta_j = 0  
+$$
+H_0 : \beta_j = 0
 $$
 
 Meaning:
@@ -253,23 +259,24 @@ Meaning:
     
 ## Alternative Hypothesis
 
-$$  
-H_a : \beta_j \neq 0  
+$$
+H_a : \beta_j \neq 0
 $$
 
 Meaning:
 
 - predictor contributes uniquely to explaining (Y)
 
-
 # 13. The t-Statistic
 
 Formula:
 
-# $$  
+#
+
+$$
 t
 
-\frac{b_j}{SE(b_j)}  
+\frac{b_j}{SE(b_j)}
 $$
 
 This is another:
@@ -278,16 +285,16 @@ This is another:
 
 ## Signal
 
-$$  
-b_j  
+$$
+b_j
 $$
 
 Estimated effect size.
 
 ## Noise
 
-$$  
-SE(b_j)  
+$$
+SE(b_j)
 $$
 
 Uncertainty in coefficient estimate.
@@ -334,13 +341,12 @@ Meaning:
     
 - model struggles to separate their individual contributions
 
-
 # 18. Intuition Behind Multicollinearity
 
 Suppose:
 
-$$  
-X_1 \approx X_2  
+$$
+X_1 \approx X_2
 $$
 
 Then regression faces ambiguity.
@@ -384,16 +390,18 @@ This creates unstable geometry.
 
 Recall the OLS solution:
 
-# $$  
+#
+
+$$
 b
 
-(X^TX)^{-1}X^Ty  
+(X^TX)^{-1}X^Ty
 $$
 
 Multicollinearity makes:
 
-$$  
-X^TX  
+$$
+X^TX
 $$
 
 nearly singular.
@@ -408,8 +416,8 @@ This is the most important practical effect.
 
 High predictor correlation causes:
 
-$$  
-SE(b_j)  
+$$
+SE(b_j)
 $$
 
 to become very large.
@@ -499,8 +507,8 @@ Compute pairwise predictor correlations.
 
 Large values:
 
-$$  
-|r| > 0.8  
+$$
+|r| > 0.8
 $$
 
 are warning signs.
@@ -518,28 +526,30 @@ The standard diagnostic tool.
 
 For predictor:
 
-$$  
-X_j  
+$$
+X_j
 $$
 
 compute:
 
-# $$  
+#
+
+$$
 VIF_j
 
-\frac{1}{1-R_j^2}  
+\frac{1}{1-R_j^2}
 $$
 
 Where:
 
-$$  
-R_j^2  
+$$
+R_j^2
 $$
 
 comes from regressing:
 
-$$  
-X_j  
+$$
+X_j
 $$
 
 on all other predictors.
@@ -558,31 +568,30 @@ VIF measures:
 |>5|Potentially problematic|
 |>10|Severe multicollinearity|
 
-
 # 32. Why VIF Works
 
 If:
 
-$$  
-X_j  
+$$
+X_j
 $$
 
 is highly predictable from other predictors:
 
-$$  
-R_j^2 \rightarrow 1  
+$$
+R_j^2 \rightarrow 1
 $$
 
 Then:
 
-$$  
-1-R_j^2 \rightarrow 0  
+$$
+1-R_j^2 \rightarrow 0
 $$
 
 Thus:
 
-$$  
-VIF \rightarrow \infty  
+$$
+VIF \rightarrow \infty
 $$
 
 Meaning:
@@ -623,8 +632,8 @@ This compresses overlapping information.
 
 Ridge regression adds penalty term:
 
-$$  
-\lambda \sum b_j^2  
+$$
+\lambda \sum b_j^2
 $$
 
 This stabilizes coefficients under multicollinearity.
@@ -663,9 +672,26 @@ import statsmodels.api as sm
 
 # Example dataset
 data = pd.DataFrame({
-    "x1": $$1, 2, 3, 4, 5$$,
-    "x2": $$2, 4, 6, 8, 10$$,  # highly correlated with x1
-    "x3": $$5, 3, 6, 2, 1$$
+    "x1":
+
+$$
+1, 2, 3, 4, 5
+$$
+
+,
+    "x2":
+
+$$
+2, 4, 6, 8, 10
+$$
+
+,  # highly correlated with x1
+    "x3":
+
+$$
+5, 3, 6, 2, 1
+$$
+
 })
 
 # Add intercept
@@ -673,10 +699,30 @@ X = sm.add_constant(data)
 
 # Compute VIF
 vif_data = pd.DataFrame()
-vif_data$$"Variable"$$ = X.columns
-vif_data$$"VIF"$$ = $$
-    variance_inflation_factor(X.values, i)
-    for i in range(X.shape$$1$$)
+vif_data
+
+$$
+"Variable"
+$$
+
+= X.columns
+vif_data
+
+$$
+"VIF"
+$$
+
+=
+
+$$
+variance_inflation_factor(X.values, i)
+    for i in range(X.shape
+$$
+
+1
+
+$$
+)
 $$
 
 print(vif_data)
@@ -686,20 +732,50 @@ print(vif_data)
 ```mermaid
 flowchart TD
 
-A$$Fit Multiple Regression$$
---> B$$Check Overall F-Test$$
+A
+
+$$
+Fit Multiple Regression
+$$
+
+--> B
+
+$$
+Check Overall F-Test
+$$
 
 B --> C{Model Significant?}
 
-C -->|Yes| D$$Inspect Individual t-tests$$
+C -->|Yes| D
 
-D --> E$$Check Multicollinearity$$
+$$
+Inspect Individual t-tests
+$$
 
-E --> F$$Compute VIF$$
+D --> E
 
-F --> G$$Refine Model$$
+$$
+Check Multicollinearity
+$$
 
-G --> H$$Interpret Stable Coefficients$$
+E --> F
+
+$$
+Compute VIF
+$$
+
+F --> G
+
+$$
+Refine Model
+$$
+
+G --> H
+
+$$
+Interpret Stable Coefficients
+$$
+
 ```
 
 # 41. Deep Conceptual Insight
@@ -744,7 +820,9 @@ Multicollinearity can destabilize coefficients badly.
 
 # 43. Final Takeaways
 
-$$!IMPORTANT$$
+$$
+!IMPORTANT
+$$
 
 Multiple regression inference operates at two levels:
 
@@ -752,9 +830,9 @@ Multiple regression inference operates at two levels:
 
 Using the F-test:
 
-$$  
+$$
 H_0:  
-\beta_1=\beta_2=\cdots=\beta_k=0  
+\beta_1=\beta_2=\cdots=\beta_k=0
 $$
 
 Tests whether predictors collectively explain variation.
@@ -763,8 +841,8 @@ Tests whether predictors collectively explain variation.
 
 Using t-tests:
 
-$$  
-H_0:\beta_j=0  
+$$
+H_0:\beta_j=0
 $$
 
 Tests whether a predictor contributes uniquely after controlling for others.
@@ -786,8 +864,8 @@ Major consequences:
 
 Key diagnostic:
 
-$$  
-VIF = \frac{1}{1-R_j^2}  
+$$
+VIF = \frac{1}{1-R_j^2}
 $$
 
 Core conceptual insight:
