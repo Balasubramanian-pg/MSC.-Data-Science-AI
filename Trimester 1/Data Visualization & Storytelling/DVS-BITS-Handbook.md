@@ -1,4 +1,3 @@
-
 # Page 1
 
 Data Visualization 
@@ -28,7 +27,6 @@ Common mistakes in Dashboards.
 Explore Tableau/ Python/ PowerBI to handle real-world datasets to visualize and
 interpret.
 
-
 # Page 2
 
 Live Session
@@ -51,7 +49,6 @@ analysis
 Understanding the context for
 data presentations
 
-
 # Page 3
 
 Live Session
@@ -71,7 +68,6 @@ Showing changes over time
 Plotting connections and
 relationships
 Mapping geo-spatial data
-
 
 # Page 4
 
@@ -94,7 +90,6 @@ graphs
 Strategic use of color in 
 visuals
 Visual makeover case study
-
 
 # Page 5
 
@@ -122,7 +117,6 @@ Creating visualizations with
 bubble charts, bar charts, and
 t-SNE clusters
 
-
 # Page 6
 
 Live Session
@@ -141,7 +135,6 @@ process
 Dashboard for usability
 Visualization / dashboards
 tools overview
-
 
 # Page 7
 
@@ -168,7 +161,6 @@ Misleading with charts: how
 bad visualization can be
 misleading in decision making
 
-
 # Page 8
 
 Live Session
@@ -183,7 +175,6 @@ Decorate graphs with plot styles and
 types
 Advanced matplotlib
 
-
 # Page 9
 
 Live Session
@@ -197,7 +188,6 @@ Plotting data from the web
 Plotting geographical data
 Plotting extrapolated data using
 curve fitting
-
 
 # Page 10
 
@@ -214,7 +204,6 @@ Seaborn categorical data, univariate
 distribution, bivariate distributions
 Seaborn linear regression models
 
-
 # Page 11
 
 Live Session
@@ -230,7 +219,6 @@ Plotting with different data structures
 Decorating the visuals
 Interactive server-side applications
 
-
 # Page 12
 
 Live Session
@@ -244,7 +232,6 @@ Metadata management
 Data extracts and joins
 Data blending
 
-
 # Page 13
 
 Live Session
@@ -257,7 +244,6 @@ Sorting, grouping
 Building your first advanced
 dashboard
 Tableau stories
-
 
 # Page 14
 
