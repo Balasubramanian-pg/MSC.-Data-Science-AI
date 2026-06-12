@@ -8,7 +8,7 @@ week: W06 - Feature Engineering Techniques for Image Data
 
 ## Feature Engineering Techniques for Image Data
 
-## [1. Concept Introduction](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01 - Overview of Feature Engineering/Readme.md#1-concept-introduction)
+## [1. Concept Introduction](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01%20-%20Overview%20of%20Feature%20Engineering/Readme.md#1-concept-introduction)
 
 Image data represents a profound challenge in machine learning. Unlike tabular data, where each feature column possesses independent semantic meaning (e.g., "Age" or "Income"), a single pixel in an image contains almost zero semantic information on its own. The "meaning" of an image exists strictly in the *spatial relationships* and *intensity gradients* between localized groups of pixels.
 
@@ -17,7 +17,7 @@ Feature engineering for image data is the mathematical extraction of these local
 > [!IMPORTANT]
 > The fundamental goal of classical image feature engineering is **Invariance**. A good engineered feature must yield the exact same mathematical output even if the object in the image is shifted (translation invariance), brightened (illumination invariance), or scaled (scale invariance).
 
-## [2. Intuition and Real-World Analogy](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01 - Overview of Feature Engineering/Readme.md#2-intuition-and-real-world-analogy)
+## [2. Intuition and Real-World Analogy](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01%20-%20Overview%20of%20Feature%20Engineering/Readme.md#2-intuition-and-real-world-analogy)
 
 **The Sketch Artist Analogy:**
 Imagine you must describe a human face to a police sketch artist over the phone. 
@@ -38,7 +38,7 @@ $$
 
 By carefully designing the weights inside the kernel $K$, we can mathematically force the convolution to calculate derivatives, blur the image, or highlight specific geometric patterns.
 
-## [4. Visual Architecture](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01 - Overview of Feature Engineering/Readme.md#4-visual-architecture): The Feature Pipeline
+## [4. Visual Architecture](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01%20-%20Overview%20of%20Feature%20Engineering/Readme.md#4-visual-architecture): The Feature Pipeline
 
 ```mermaid
 flowchart TD
@@ -167,7 +167,7 @@ plt.show()
 
 HOG is one of the most powerful handcrafted feature descriptors in computer vision. It captures the global shape of an object by analyzing the distribution of local intensity gradients.
 
-### [Step-by-Step Derivation](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W04 - Dimensionality Reduction Techniques/Readme.md#step-by-step-derivation)
+### [Step-by-Step Derivation](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W04%20-%20Dimensionality%20Reduction%20Techniques/Readme.md#step-by-step-derivation)
 
 **Step 1: Compute Gradients**
 Calculate $G_x$, $G_y$, Magnitude $|G|$, and Angle $\theta$ for every pixel.
@@ -238,7 +238,7 @@ plt.show()
 
 *Expected output logic:* The original image's shape is heavily compressed. The feature vector length will be exactly `3780` features ($7 \text{ horizontal blocks} \times 15 \text{ vertical blocks} \times 4 \text{ cells} \times 9 \text{ bins}$). The HOG image displays a wireframe-like representation showing the dominant angles of edges, proving that color and texture have been discarded in favor of pure geometric structure.
 
-## [10. Performance and Computational Insights](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W02 - Handling Numeric Data/Readme.md#10-performance-and-computational-insights)
+## [10. Performance and Computational Insights](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W02%20-%20Handling%20Numeric%20Data/Readme.md#10-performance-and-computational-insights)
 
 - **Convolution Complexity:** A naive 2D convolution has a time complexity of $\mathcal{O}(N \cdot M \cdot K^2)$ for an image of size $N \times M$ and a kernel of size $K \times K$. For large kernels (e.g., heavily blurred Gaussian filters), this becomes impossibly slow. In production, spatial convolutions are converted to the frequency domain using the **Fast Fourier Transform (FFT)**, multiplied, and converted back, reducing complexity to $\mathcal{O}(NM \log(NM))$.
 - **Data Types:** Raw images load as `uint8` (integers from $0-255$). Mathematical derivatives (Sobel) produce negative numbers and decimals. You must cast image arrays to `float32` or `float64` before applying gradients, or you will suffer catastrophic integer underflow, wrapping negative gradients around to `255` (pure white noise).
@@ -246,7 +246,7 @@ plt.show()
 ## 11. Edge Cases and Common Mistakes
 
 - **Assuming Rotation Invariance in HOG:** HOG is strictly translation and illumination invariant. It is **not** rotation invariant. If you train an SVM on a HOG vector of an upright pedestrian, and then feed it an image of a pedestrian lying down, the spatial blocks will misalign, and the model will fail. You must augment your training data with rotated images to force the ML algorithm to learn rotational variations.
-- **Ignoring Scale:** If a corner exists at a $5 \times 5$ pixel resolution, and you zoom the image by 10x, that corner becomes a smooth, flat curve. [Harris Corner Detection](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W06 - Feature Engineering Techniques for Image Data/2.%20Corner%20Detection.md#harris-corner-detection) is not scale-invariant. For scale invariance, you must calculate features across an **Image Pyramid** (repeatedly downsampling the image and recalculating features).
+- **Ignoring Scale:** If a corner exists at a $5 \times 5$ pixel resolution, and you zoom the image by 10x, that corner becomes a smooth, flat curve. [Harris Corner Detection](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W06%20-%20Feature%20Engineering%20Techniques%20for%20Image%20Data/2.%20Corner%20Detection.md#harris-corner-detection) is not scale-invariant. For scale invariance, you must calculate features across an **Image Pyramid** (repeatedly downsampling the image and recalculating features).
 
 ## 12. ML Connections: The Pre-Deep Learning Era
 
@@ -254,21 +254,21 @@ Before the rise of Convolutional Neural Networks (CNNs) in 2012, the absolute St
 
 While a CNN learns the convolution kernels via backpropagation, classical feature engineering manually defines the kernels (Sobel, Harris) using mathematical axioms. CNNs require millions of images to learn what an edge is; handcrafted features like HOG allow you to train highly accurate, lightweight models on datasets of fewer than 1,000 images, making them still relevant for highly constrained, low-compute edge devices.
 
-## [13. Interview-Style Insights](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Readme.md#13-interview-style-insights)
+## [13. Interview-Style Insights](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07%20-%20Feature%20Engineering%20Techniques%20for%20Time-Series%20Data/Readme.md#13-interview-style-insights)
 
-**Q: Why do we use Gaussian [smoothing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W02 - Handling Numeric Data/Readme.md#smoothing) before applying Sobel edge detection?**
-**A:** The Sobel operator calculates mathematical derivatives. The derivative of high-frequency noise (like a single dead pixel or film grain) produces an extremely massive gradient magnitude, resulting in a false edge. Gaussian [smoothing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W02 - Handling Numeric Data/Readme.md#smoothing) acts as a low-pass filter, mathematically blurring out pixel-level noise so the derivative only reacts to macro-level structural boundaries.
+**Q: Why do we use Gaussian [smoothing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W02%20-%20Handling%20Numeric%20Data/Readme.md#smoothing) before applying Sobel edge detection?**
+**A:** The Sobel operator calculates mathematical derivatives. The derivative of high-frequency noise (like a single dead pixel or film grain) produces an extremely massive gradient magnitude, resulting in a false edge. Gaussian [smoothing](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W02%20-%20Handling%20Numeric%20Data/Readme.md#smoothing) acts as a low-pass filter, mathematically blurring out pixel-level noise so the derivative only reacts to macro-level structural boundaries.
 
 **Q: In HOG, why do we normalize blocks of cells, rather than normalizing the entire image vector at once?**
 **A:** Global illumination changes rarely happen uniformly. A person might have half their face in deep shadow and half in bright sunlight. By normalizing locally (over $16 \times 16$ pixel blocks), the algorithm achieves *local contrast invariance*, ensuring that the features in the shadowed region are mathematically scaled up to be comparable with the sunlit region.
 
-## [14. Final Takeaways](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07 - Feature Engineering Techniques for Time-Series Data/Readme.md#14-final-takeaways)
+## [14. Final Takeaways](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07%20-%20Feature%20Engineering%20Techniques%20for%20Time-Series%20Data/Readme.md#14-final-takeaways)
 
-### [Mental Models](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01 - Overview of Feature Engineering/Readme.md#mental-models)
+### [Mental Models](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01%20-%20Overview%20of%20Feature%20Engineering/Readme.md#mental-models)
 - **The Derivative Funnel:** Think of image engineering as a sequence of derivatives. 0th Order = Raw pixels. 1st Order = Edges (Lines). 2nd Order = Corners (Intersections). 3rd Order / Aggregations = Shapes (HOG).
 - **Invariance Engineering:** Whenever applying a transformation, ask yourself: "If I dim the lights by 50%, does my output matrix change?" If yes, your feature is unstable and needs normalization.
 
-### [Advanced Learning Roadmap](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01 - Overview of Feature Engineering/Readme.md#advanced-learning-roadmap)
+### [Advanced Learning Roadmap](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01%20-%20Overview%20of%20Feature%20Engineering/Readme.md#advanced-learning-roadmap)
 1. **SIFT (Scale-Invariant Feature Transform):** Learn how SIFT achieves full scale and rotation invariance using the Difference of Gaussians (DoG) pyramid, forming the bedrock of modern panorama stitching and 3D reconstruction.
 2. **ORB (Oriented FAST and Rotated BRIEF):** A highly optimized, binary feature descriptor used in real-time robotics and SLAM (Simultaneous Localization and Mapping) because it operates orders of magnitude faster than SIFT.
 3. **Transition to Deep Learning:** Study how the first layers of a trained ResNet or VGG16 network mathematically converge to mimic the exact Sobel and Gabor filters explored in this module.
