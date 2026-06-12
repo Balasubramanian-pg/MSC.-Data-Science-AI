@@ -368,7 +368,6 @@ Insight: As visitor volume increases, sales volume increases proportionally. The
 
 Implementation: Achievable in Excel as a combo chart.
 
----
 
 ## Visualization Decision Framework
 
