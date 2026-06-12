@@ -60,9 +60,10 @@ Let the raw, multi-source dataset be $\Omega$. We aim to find a mapping $M$ that
 3.  **Transformation ($T$):** A feature mapping function $\phi: X_{clean} \rightarrow \mathbb{R}^d$ that projects data into a mathematically tractable space (e.g., scaling, orthogonal projection).
 4.  **Data Mining ($M$):** An optimization process to minimize a loss function $L$ over the parameters $\theta$:
     
-    $$
-    \theta^* = \arg\min_{\theta} \sum_{i=1}^{N} L(y_i, f_\theta(\phi(x_i)))
-    $$
+
+$$
+\theta^* = \arg\min_{\theta} \sum_{i=1}^{N} L(y_i, f_\theta(\phi(x_i)))
+$$
 
 5.  **Evaluation ($E$):** Checking if the generalization error on unseen data is below a strictly defined threshold $\tau$.
 
