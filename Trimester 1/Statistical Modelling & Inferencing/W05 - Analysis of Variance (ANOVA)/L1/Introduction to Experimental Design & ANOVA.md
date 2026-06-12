@@ -2,7 +2,6 @@
 
 ## Reading Material: Introduction to Experimental Design & ANOVA
 
----
 
 **Contents**
 
@@ -419,7 +418,6 @@ $$
 
 suggests strong treatment effects.
 
----
 
 ## Mean Square for Error
 
