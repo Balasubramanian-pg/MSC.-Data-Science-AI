@@ -6,14 +6,14 @@ Variance measures spread, consistency, stability, and uncertainty.
 
 The population variance is denoted by:
 
-$$  
-\sigma^2  
+$$
+\sigma^2
 $$
 
 while the population standard deviation is:
 
-$$  
-\sigma  
+$$
+\sigma
 $$
 
 \sigma^2
@@ -22,8 +22,8 @@ Two populations may have identical means but dramatically different levels of va
 
 The core inferential question becomes:
 
-$$  
-\text{Are the population variances meaningfully different?}  
+$$
+\text{Are the population variances meaningfully different?}
 $$
 
 # 2. Why Variance Matters
@@ -59,14 +59,13 @@ Even if both machines produce the same average dimensions, the machine with lowe
 
 The inferential question becomes:
 
-$$  
+$$
 \sigma_1^2  
 \quad \text{vs} \quad  
-\sigma_2^2  
+\sigma_2^2
 $$
 
 \sigma_1^2\quad\text{vs}\quad\sigma_2^2
-
 
 ## Finance
 
@@ -83,7 +82,6 @@ Variance becomes a direct measure of financial risk.
 
 Higher variance generally implies higher uncertainty.
 
-
 ## Education
 
 Two teaching methods may produce identical average exam scores.
@@ -96,8 +94,8 @@ Educational systems often value consistency as well as average performance.
 
 Means are naturally compared using subtraction:
 
-$$  
-\mu_1 - \mu_2  
+$$
+\mu_1 - \mu_2
 $$
 
 Variances, however, are inherently positive quantities representing scale.
@@ -106,8 +104,8 @@ Comparing variances through subtraction is less meaningful.
 
 Instead, variance comparisons use ratios:
 
-$$  
-\frac{\sigma_1^2}{\sigma_2^2}  
+$$
+\frac{\sigma_1^2}{\sigma_2^2}
 $$
 
 \frac{\sigma_1^2}{\sigma_2^2}
@@ -129,12 +127,12 @@ the F-distribution arises from ratios of variance estimates.
 
 Its shape depends on two degrees-of-freedom parameters:
 
-$$  
-df_1 = n_1 - 1  
+$$
+df_1 = n_1 - 1
 $$
 
-$$  
-df_2 = n_2 - 1  
+$$
+df_2 = n_2 - 1
 $$
 
 df_1=n_1-1
@@ -143,9 +141,21 @@ df_2=n_2-1
 
 where:
 
-- $$df_1$$ corresponds to the numerator variance
+-
+
+$$
+df_1
+$$
+
+corresponds to the numerator variance
     
-- $$df_2$$ corresponds to the denominator variance
+-
+
+$$
+df_2
+$$
+
+corresponds to the denominator variance
     
 
 The F-distribution is therefore not a single distribution but an entire family of distributions.
@@ -158,14 +168,13 @@ The F-distribution has several important characteristics.
 
 Because variances cannot be negative:
 
-$$  
-F \ge 0  
+$$
+F \ge 0
 $$
 
 F\ge0
 
 the distribution exists only on the positive axis.
-
 
 ## Right-Skewed Shape
 
@@ -173,26 +182,24 @@ The distribution is asymmetric and skewed to the right.
 
 Large F-values occur when one variance substantially exceeds the other.
 
-
 ## Dependence on Degrees of Freedom
 
 The precise shape changes depending on:
 
-$$  
-df_1,\ df_2  
+$$
+df_1,\ df_2
 $$
 
 Larger sample sizes produce more concentrated F-distributions.
-
 
 ## Ratio Structure
 
 The F-statistic fundamentally represents:
 
-$$  
+$$
 \text{Variance Estimate}  
 \div  
-\text{Variance Estimate}  
+\text{Variance Estimate}
 $$
 
 The entire logic of the test depends on relative variability.
@@ -203,16 +210,16 @@ The F-test evaluates whether two population variances are equal.
 
 The null hypothesis states:
 
-$$  
-H_0:\sigma_1^2 = \sigma_2^2  
+$$
+H_0:\sigma_1^2 = \sigma_2^2
 $$
 
 H_0:\sigma_1^2=\sigma_2^2
 
 The alternative hypothesis for a two-tailed test is:
 
-$$  
-H_A:\sigma_1^2 \ne \sigma_2^2  
+$$
+H_A:\sigma_1^2 \ne \sigma_2^2
 $$
 
 H_A:\sigma_1^2\ne\sigma_2^2
@@ -225,35 +232,49 @@ The F-statistic is remarkably intuitive.
 
 It is simply the ratio of two sample variances:
 
-# $$  
+#
+
+$$
 F
 
-\frac{s_1^2}{s_2^2}  
+\frac{s_1^2}{s_2^2}
 $$
 
 F=\frac{s_1^2}{s_2^2}
 
 where:
 
-- $$s_1^2$$ = first sample variance
+-
+
+$$
+s_1^2
+$$
+
+= first sample variance
     
-- $$s_2^2$$ = second sample variance
+-
+
+$$
+s_2^2
+$$
+
+= second sample variance
     
 
 If the population variances are truly equal, we expect the sample variances to be relatively similar.
 
 Thus:
 
-$$  
-F \approx 1  
+$$
+F \approx 1
 $$
 
 F\approx1
 
 Large deviations away from:
 
-$$  
-1  
+$$
+1
 $$
 
 provide evidence against the null hypothesis.
@@ -266,35 +287,34 @@ The interpretation is straightforward.
 
 If:
 
-$$  
-s_1^2 \approx s_2^2  
+$$
+s_1^2 \approx s_2^2
 $$
 
 then:
 
-$$  
-F \approx 1  
+$$
+F \approx 1
 $$
 
 This supports:
 
-$$  
-H_0  
 $$
-
+H_0
+$$
 
 ## When Variances Differ Substantially
 
 If one variance is much larger:
 
-$$  
-s_1^2 \gg s_2^2  
+$$
+s_1^2 \gg s_2^2
 $$
 
 then:
 
-$$  
-F \gg 1  
+$$
+F \gg 1
 $$
 
 Large F-values suggest evidence against equal population variances.
@@ -305,14 +325,14 @@ In practice, statisticians usually place the larger sample variance in the numer
 
 Thus:
 
-$$  
-s_1^2 \ge s_2^2  
+$$
+s_1^2 \ge s_2^2
 $$
 
 which guarantees:
 
-$$  
-F \ge 1  
+$$
+F \ge 1
 $$
 
 F\ge1
@@ -332,12 +352,12 @@ because attention focuses entirely on the upper tail of the F-distribution.
 
 The F-distribution depends on two separate degrees of freedom values:
 
-$$  
-df_1 = n_1 - 1  
+$$
+df_1 = n_1 - 1
 $$
 
-$$  
-df_2 = n_2 - 1  
+$$
+df_2 = n_2 - 1
 $$
 
 The first corresponds to the numerator variance.
@@ -367,12 +387,12 @@ The validity of the F-test depends heavily on both populations being approximate
 
 Formally:
 
-$$  
-X_1 \sim N(\mu_1,\sigma_1^2)  
+$$
+X_1 \sim N(\mu_1,\sigma_1^2)
 $$
 
-$$  
-X_2 \sim N(\mu_2,\sigma_2^2)  
+$$
+X_2 \sim N(\mu_2,\sigma_2^2)
 $$
 
 X_1\sim N(\mu_1,\sigma_1^2)
@@ -396,8 +416,8 @@ Even a few extreme observations can drastically distort sample variances.
 
 Unlike means, variances square deviations:
 
-$$  
-(x_i - \bar{x})^2  
+$$
+(x_i - \bar{x})^2
 $$
 
 (x_i-\bar{x})^2
@@ -439,18 +459,18 @@ In applied work, many analysts prefer robust alternatives over the classical F-t
 
 The F-test fundamentally evaluates:
 
-$$  
+$$
 \text{Observed Variability Ratio}  
 \quad vs \quad  
-\text{Expected Random Variability}  
+\text{Expected Random Variability}
 $$
 
 \text{Observed Variability Ratio}\quad vs \quad\text{Expected Random Variability}
 
 If the observed ratio becomes too extreme to plausibly attribute to sampling variation alone, we reject:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 The broader insight is important:
