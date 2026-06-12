@@ -39,8 +39,8 @@ Examples include:
 
 These problems require a different statistical framework:
 
-$$  
-\text{Regression Analysis}  
+$$
+\text{Regression Analysis}
 $$
 
 \text{Regression Analysis}
@@ -60,17 +60,29 @@ Specifically:
 
 The inferential question becomes:
 
-$$  
-\text{How does } Y \text{ change as } X \text{ changes?}  
+$$
+\text{How does } Y \text{ change as } X \text{ changes?}
 $$
 
 \text{How does }Y\text{ change as }X\text{ changes?}
 
 where:
 
-- $$X$$ = explanatory variable (predictor)
+-
+
+$$
+X
+$$
+
+= explanatory variable (predictor)
     
-- $$Y$$ = response variable (outcome)
+-
+
+$$
+Y
+$$
+
+= response variable (outcome)
     
 
 Regression therefore moves statistics beyond simple comparisons toward mathematical modeling of relationships.
@@ -81,29 +93,61 @@ Linear regression models the relationship between variables using a straight-lin
 
 The simplest form is:
 
-# $$  
+#
+
+$$
 Y
 
 \beta_0  
 +  
 \beta_1X  
 +  
-\varepsilon  
+\varepsilon
 $$
 
 Y=\beta_0+\beta_1X+\varepsilon
 
 where:
 
-- $$Y$$ = response variable
+-
+
+$$
+Y
+$$
+
+= response variable
     
-- $$X$$ = predictor variable
+-
+
+$$
+X
+$$
+
+= predictor variable
     
-- $$\beta_0$$ = intercept
+-
+
+$$
+\beta_0
+$$
+
+= intercept
     
-- $$\beta_1$$ = slope coefficient
+-
+
+$$
+\beta_1
+$$
+
+= slope coefficient
     
-- $$\varepsilon$$ = random error term
+-
+
+$$
+\varepsilon
+$$
+
+= random error term
     
 
 This equation forms the foundation of simple linear regression.
@@ -112,8 +156,8 @@ This equation forms the foundation of simple linear regression.
 
 The term linear refers to the relationship being linear in the parameters:
 
-$$  
-\beta_0,\beta_1  
+$$
+\beta_0,\beta_1
 $$
 
 Graphically, the relationship forms a straight line.
@@ -129,50 +173,50 @@ This implies:
 
 If:
 
-$$  
-\beta_1 > 0  
+$$
+\beta_1 > 0
 $$
 
 then:
 
-$$  
+$$
 X \uparrow  
 \Rightarrow  
-Y \uparrow  
+Y \uparrow
 $$
 
 If:
 
-$$  
-\beta_1 < 0  
+$$
+\beta_1 < 0
 $$
 
 then:
 
-$$  
+$$
 X \uparrow  
 \Rightarrow  
-Y \downarrow  
+Y \downarrow
 $$
 
 # 5. The Meaning of the Intercept
 
 The intercept:
 
-$$  
-\beta_0  
+$$
+\beta_0
 $$
 
 represents the predicted value of:
 
-$$  
-Y  
+$$
+Y
 $$
 
 when:
 
-$$  
-X = 0  
+$$
+X = 0
 $$
 
 X=0
@@ -196,32 +240,34 @@ In others, it serves primarily as a mathematical anchor for the regression line.
 
 The slope coefficient:
 
-$$  
-\beta_1  
+$$
+\beta_1
 $$
 
 measures the average change in:
 
-$$  
-Y  
+$$
+Y
 $$
 
 associated with a one-unit increase in:
 
-$$  
-X  
+$$
+X
 $$
 
 Formally:
 
-# $$  
+#
+
+$$
 \beta_1
 
 \frac{  
 \Delta Y  
 }{  
 \Delta X  
-}  
+}
 $$
 
 \beta_1=\frac{\Delta Y}{\Delta X}
@@ -243,8 +289,8 @@ Real-world data never falls perfectly on a line.
 
 The error term:
 
-$$  
-\varepsilon  
+$$
+\varepsilon
 $$
 
 captures variability unexplained by the regression model.
@@ -264,12 +310,14 @@ Sources include:
 
 Thus:
 
-# $$  
+#
+
+$$
 Y
 
 \text{Systematic Component}  
 +  
-\text{Random Component}  
+\text{Random Component}
 $$
 
 Y=\text{Systematic Component}+\text{Random Component}
@@ -280,30 +328,54 @@ Regression attempts to model the systematic structure while acknowledging unavoi
 
 Given sample data:
 
-$$  
+$$
 (x_1,y_1),  
 (x_2,y_2),  
 \dots,  
-(x_n,y_n)  
+(x_n,y_n)
 $$
 
 we estimate the regression line:
 
-# $$  
+#
+
+$$
 \hat{Y}
 
 b_0  
 +  
-b_1X  
+b_1X
 $$
 
 \hat{Y}=b_0+b_1X
 
 where:
 
-- $$b_0$$ estimates $$\beta_0$$
+-
+
+$$
+b_0
+$$
+
+estimates
+
+$$
+\beta_0
+$$
+
     
-- $$b_1$$ estimates $$\beta_1$$
+-
+
+$$
+b_1
+$$
+
+estimates
+
+$$
+\beta_1
+$$
+
     
 
 The estimated line is called the least squares regression line.
@@ -314,24 +386,36 @@ The regression line is chosen using the least squares method.
 
 The objective is minimizing the total squared prediction error:
 
-$$  
+$$
 \sum  
-(y_i-\hat{y}_i)^2  
+(y_i-\hat{y}_i)^2
 $$
 
 \sum(y_i-\hat{y}_i)^2
 
 where:
 
-- $$y_i$$ = observed value
+-
+
+$$
+y_i
+$$
+
+= observed value
     
-- $$\hat{y}_i$$ = predicted value
+-
+
+$$
+\hat{y}_i
+$$
+
+= predicted value
     
 
 The quantity:
 
-$$  
-y_i-\hat{y}_i  
+$$
+y_i-\hat{y}_i
 $$
 
 is called the residual.
@@ -355,10 +439,12 @@ This creates stable and computationally efficient estimation.
 
 Residuals measure prediction error:
 
-# $$  
+#
+
+$$
 e_i
 
-y_i-\hat{y}_i  
+y_i-\hat{y}_i
 $$
 
 e_i=y_i-\hat{y}_i
@@ -380,32 +466,32 @@ Once the regression line is estimated, we evaluate whether the relationship itse
 
 The central hypothesis is:
 
-$$  
-H_0:\beta_1 = 0  
+$$
+H_0:\beta_1 = 0
 $$
 
 H_0:\beta_1=0
 
 This represents:
 
-$$  
-\text{No Linear Relationship}  
+$$
+\text{No Linear Relationship}
 $$
 
 The alternative hypothesis is:
 
-$$  
-H_A:\beta_1 \ne 0  
+$$
+H_A:\beta_1 \ne 0
 $$
 
 H_A:\beta_1\ne0
 
 A statistically significant slope suggests evidence of a linear relationship between:
 
-$$  
+$$
 X  
 \quad \text{and} \quad  
-Y  
+Y
 $$
 
 # 13. Interpreting Statistical Significance in Regression
@@ -431,12 +517,14 @@ Regression coefficients quantify relationships numerically.
 
 Suppose:
 
-# $$  
+#
+
+$$
 \hat{Y}
 
 50  
 +  
-3X  
+3X
 $$
 
 Interpretation:
@@ -448,7 +536,19 @@ Interpretation:
 
 This means:
 
-> Every one-unit increase in $$X$$ is associated with an average increase of 3 units in $$Y$$.
+> Every one-unit increase in
+
+$$
+X
+$$
+
+is associated with an average increase of 3 units in
+
+$$
+Y
+$$
+
+.
 
 The slope coefficient therefore becomes the central inferential quantity.
 
@@ -458,16 +558,18 @@ One major purpose of regression is prediction.
 
 Given a new predictor value:
 
-$$  
-X=x  
+$$
+X=x
 $$
 
 the model predicts:
 
-# $$  
+#
+
+$$
 \hat{Y}
 
-b_0+b_1x  
+b_0+b_1x
 $$
 
 \hat{Y}=b_0+b_1x
@@ -493,12 +595,14 @@ Regression is fundamentally more than curve fitting.
 
 It represents a formal statistical model:
 
-# $$  
+#
+
+$$
 Y
 
 f(X)  
 +  
-\varepsilon  
+\varepsilon
 $$
 
 Y=f(X)+\varepsilon
@@ -520,19 +624,17 @@ Classical linear regression relies on several assumptions.
 
 The relationship between:
 
-$$  
+$$
 X  
 \quad \text{and} \quad  
-Y  
+Y
 $$
 
 should be approximately linear.
 
-
 ## Independence
 
 Observations should be statistically independent.
-
 
 ## Constant Variance
 
@@ -540,12 +642,11 @@ Residual variability should remain approximately constant across predictor value
 
 This property is called:
 
-$$  
-\text{Homoscedasticity}  
+$$
+\text{Homoscedasticity}
 $$
 
 \text{Homoscedasticity}
-
 
 ## Normality of Errors
 
@@ -559,26 +660,26 @@ Regression is closely related to correlation.
 
 Correlation measures:
 
-$$  
-\text{Strength of Linear Association}  
+$$
+\text{Strength of Linear Association}
 $$
 
 Regression models:
 
-$$  
-\text{Functional Predictive Relationship}  
+$$
+\text{Functional Predictive Relationship}
 $$
 
 Correlation is symmetric:
 
-$$  
-r(X,Y)=r(Y,X)  
+$$
+r(X,Y)=r(Y,X)
 $$
 
 Regression is directional:
 
-$$  
-X \rightarrow Y  
+$$
+X \rightarrow Y
 $$
 
 This distinction is crucial.
@@ -614,22 +715,22 @@ Regression represents a major transition in statistical thinking.
 
 Previous modules focused primarily on:
 
-$$  
-\text{Group Comparison}  
+$$
+\text{Group Comparison}
 $$
 
 Regression focuses on:
 
-$$  
-\text{Relationship Modeling}  
+$$
+\text{Relationship Modeling}
 $$
 
 \text{Group Comparison}\rightarrow\text{Relationship Modeling}
 
 The broader inferential goal becomes:
 
-$$  
-\text{Discovering Mathematical Structure in Data}  
+$$
+\text{Discovering Mathematical Structure in Data}
 $$
 
 \text{Discovering Mathematical Structure in Data}
