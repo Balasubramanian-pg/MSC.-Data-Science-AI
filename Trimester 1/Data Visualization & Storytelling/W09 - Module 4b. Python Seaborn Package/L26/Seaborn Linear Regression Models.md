@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W09 - Module 4b. Python Seaborn Package
 ---
 
-
 ## Page 1
 
  
@@ -58,7 +57,6 @@ and this is the plot that is produced. Now, I will take you through some steps s
 will understand the importance of a regression plot. 
   
 
-
 ## Page 2
 
  
@@ -110,7 +108,6 @@ regression line? A red plot function.
 Red plot is an access level function while LM plot is a figure level function. Therefore, 
 LM plot is more flexible format of the data. Right. 
   
-
 
 ## Page 3
 
@@ -165,7 +162,6 @@ So, now let us load Anscombe data and see what regression functions give better
 results for each data set. So, first we are trying to plot the relationship between the 
 first data set. Okay. 
 
-
 ## Page 4
 
  
@@ -218,7 +214,6 @@ looks like a parabola.
 So, I am just using this and I am plotting the data. So, you can clearly see the straight 
 line or linear function LM plot is not most ideal for data set 2 which has a parabolic 
 
-
 ## Page 5
 
  
@@ -258,6 +253,5 @@ Okay. Thank you.
  
 ---------------------------------------------------End-------------------------------------------------------- 
  
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
