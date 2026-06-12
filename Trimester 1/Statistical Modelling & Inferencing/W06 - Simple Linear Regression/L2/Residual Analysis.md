@@ -2,7 +2,6 @@
 
 ## Reading Material: Residual Analysis
 
-
 # Model Diagnostics in Linear Regression
 
 ## 1. Why Model Diagnostics Matter
@@ -42,7 +41,6 @@ Model diagnostics answer the question:
 > “Can we trust this regression model?”
 
 The primary diagnostic tool is the analysis of **residuals**.
-
 
 # 2. Residuals: The Foundation of Diagnostics
 
@@ -86,7 +84,6 @@ Good regression models produce residuals that look:
 
 If residuals contain patterns, the model has failed to capture something important.
 
-
 # 3. The LINE Assumptions
 
 Linear regression relies on four major assumptions.
@@ -99,7 +96,6 @@ Linear regression relies on four major assumptions.
 |I|Independence|Errors are independent|
 |N|Normality|Errors are normally distributed|
 |E|Equal Variance|Errors have constant variance|
-
 
 # 4. Assumption 1: Linearity
 
@@ -118,7 +114,6 @@ This does **not** mean the data points lie perfectly on a line.
 It means:
 
 > The average relationship follows a straight-line structure.
-
 
 ## Intuition
 
@@ -145,7 +140,6 @@ The increase is constant:
 +5 \text{ points per hour}  
 ]
 
-
 ## When Linearity Fails
 
 Suppose the true relationship is curved:
@@ -158,7 +152,6 @@ A straight-line regression cannot capture this curvature.
 
 The model systematically underpredicts and overpredicts in different regions.
 
-
 ## Diagnostic Tool: Residuals vs Fitted Plot
 
 This is the most important regression diagnostic plot.
@@ -169,7 +162,6 @@ This is the most important regression diagnostic plot.
     
 - Y-axis: residuals (e_i)
     
-
 
 ## Healthy Pattern
 
@@ -190,7 +182,6 @@ This indicates:
     
 - equal variance assumption is reasonable
     
-
 
 ## Non-Linearity Pattern
 
@@ -228,7 +219,6 @@ E(Y|X)
 
 is not linear.
 
-
 ## Common Fixes for Non-Linearity
 
 ### 1. Transform Variables
@@ -247,7 +237,6 @@ Examples:
 \log(Y)  
 ]
 
-
 ### 2. Polynomial Regression
 
 Add nonlinear terms:
@@ -255,7 +244,6 @@ Add nonlinear terms:
 [  
 Y = \beta_0 + \beta_1 X + \beta_2 X^2 + \epsilon  
 ]
-
 
 ### 3. Use Nonlinear Models
 
@@ -269,7 +257,6 @@ Examples:
     
 - neural networks
     
-
 
 # 5. Assumption 2: Independence
 
@@ -289,7 +276,6 @@ for:
 i \neq j  
 ]
 
-
 ## Intuition
 
 One error should not help predict another error.
@@ -305,7 +291,6 @@ Violation often occurs in:
 - spatial data
     
 
-
 ## Example of Dependence
 
 Suppose stock price prediction errors behave like:
@@ -320,7 +305,6 @@ Residuals cluster together.
 
 This suggests autocorrelation.
 
-
 ## Why This Is Dangerous
 
 Dependent errors cause:
@@ -333,7 +317,6 @@ Dependent errors cause:
     
 
 The regression appears stronger than it actually is.
-
 
 ## Diagnostic Methods
 
@@ -353,7 +336,6 @@ Interpretation:
 |<2|Positive autocorrelation|
 |>2|Negative autocorrelation|
 
-
 # 6. Assumption 3: Normality
 
 ## Definition
@@ -363,7 +345,6 @@ Errors are assumed normally distributed:
 [  
 \epsilon_i \sim N(0, \sigma^2)  
 ]
-
 
 ## Important Clarification
 
@@ -378,7 +359,6 @@ Normality is mainly needed for:
 
 It is **not required** for unbiased coefficient estimation.
 
-
 ## Why Normality Matters
 
 Many inference formulas rely on normal distributions.
@@ -391,7 +371,6 @@ Without normality:
     
 
 Especially in small samples.
-
 
 # 7. Q-Q Plot
 
@@ -406,7 +385,6 @@ A Q-Q plot compares:
 - theoretical normal quantiles
     
 
-
 ## Healthy Q-Q Plot
 
 Points should approximately follow a straight diagonal line.
@@ -415,7 +393,6 @@ Meaning:
 
 - residual distribution resembles a normal distribution
     
-
 
 ## Problematic Patterns
 
@@ -430,13 +407,11 @@ Indicates:
 - fat-tailed errors
     
 
-
 ### Skewness
 
 One side bends strongly.
 
 Indicates asymmetric residual distribution.
-
 
 ## Interpretation Rule
 
@@ -445,7 +420,6 @@ Perfect normality is unnecessary.
 Small deviations are usually acceptable.
 
 Large systematic deviations are problematic.
-
 
 # 8. Assumption 4: Equal Variance (Homoscedasticity)
 
@@ -461,13 +435,11 @@ Var(\epsilon_i) = \sigma^2
 
 for all (i).
 
-
 ## Intuition
 
 Prediction uncertainty should remain stable.
 
 The spread of residuals should not systematically widen or shrink.
-
 
 # 9. Heteroscedasticity
 
@@ -480,7 +452,6 @@ Var(\epsilon_i) \neq \sigma^2
 This is called:
 
 ## Heteroscedasticity
-
 
 ## Funnel Pattern
 
@@ -500,7 +471,6 @@ Residuals
 
 Residual spread increases with fitted values.
 
-
 ## Why It Matters
 
 Heteroscedasticity causes:
@@ -516,7 +486,6 @@ The coefficient estimates themselves remain unbiased.
 
 But inference becomes unreliable.
 
-
 # 10. Common Causes of Heteroscedasticity
 
 ## Real-World Scale Effects
@@ -530,16 +499,13 @@ Example:
 |Low income|Small variance|
 |High income|Large variance|
 
-
 ## Missing Variables
 
 Omitted predictors create uneven residual spread.
 
-
 ## Incorrect Functional Form
 
 Using a linear model for nonlinear relationships can induce heteroscedasticity.
-
 
 # 11. Fixes for Heteroscedasticity
 
@@ -551,18 +517,15 @@ Common:
 \log(Y)  
 ]
 
-
 ## 2. Weighted Least Squares
 
 Assign lower weights to noisier observations.
-
 
 ## 3. Robust Standard Errors
 
 Very common in econometrics.
 
 Keeps coefficients same but adjusts inference.
-
 
 # 12. Summary of Diagnostic Patterns
 
@@ -573,7 +536,6 @@ Keeps coefficients same but adjusts inference.
 |Funnel shape|Heteroscedasticity|
 |Clusters over time|Dependence|
 |Extreme outliers in Q-Q plot|Non-normality|
-
 
 # 13. Visual Mental Model
 
@@ -601,7 +563,6 @@ Residual diagnostics are fundamentally:
 
 > pattern detection in model mistakes.
 
-
 # 14. Practical Workflow for Regression Diagnostics
 
 ```mermaid
@@ -626,7 +587,6 @@ J --> K[Refit Model]
 K --> L[Recheck Diagnostics]
 ```
 
-
 # 15. Advanced Notes
 
 ## Residuals Are Not Independent by Construction
@@ -637,7 +597,6 @@ Strict independence applies to the true errors, not raw residuals.
 
 This distinction matters in advanced regression theory.
 
-
 ## Large Samples Reduce Normality Concerns
 
 Due to the Central Limit Theorem:
@@ -646,7 +605,6 @@ Due to the Central Limit Theorem:
     
 
 Small datasets are much more sensitive.
-
 
 ## Diagnostics Are Iterative
 
@@ -671,7 +629,6 @@ Real modeling is iterative:
     
 - validate
     
-
 
 # 16. Python Example
 
@@ -712,7 +669,6 @@ plt.title("Normal Q-Q Plot")
 plt.show()
 ```
 
-
 # 17. Common Mistakes
 
 ## Mistake 1
@@ -721,25 +677,21 @@ Assuming high (R^2) means the model is valid.
 
 It does not.
 
-
 ## Mistake 2
 
 Ignoring residual plots entirely.
 
 This is extremely common in beginner analysis.
 
-
 ## Mistake 3
 
 Treating p-values as trustworthy even when assumptions fail.
-
 
 ## Mistake 4
 
 Assuming linear regression automatically means causation.
 
 Diagnostics cannot solve causal identification problems.
-
 
 # 18. Interview-Style Insights
 
@@ -753,7 +705,6 @@ Because residuals isolate the model’s unexplained behavior.
 
 Patterns in residuals reveal assumption violations.
 
-
 ## Question
 
 Can coefficients remain unbiased under heteroscedasticity?
@@ -766,7 +717,6 @@ OLS coefficients remain unbiased.
 
 But standard errors become unreliable.
 
-
 ## Question
 
 Why is normality less important in large datasets?
@@ -774,7 +724,6 @@ Why is normality less important in large datasets?
 ### Answer
 
 The Central Limit Theorem stabilizes sampling distributions.
-
 
 # 19. Final Takeaways
 
