@@ -96,8 +96,8 @@ for row reduction.
 
 This lecture focuses specifically on reducing:
 
-$$  
-Number\ of\ Features  
+$$
+Number\ of\ Features
 $$
 
 which is dimensionality reduction.
@@ -122,8 +122,8 @@ Attribute subselection is defined as:
 
 Formally:
 
-$$  
-Original\ Feature\ Set \rightarrow Reduced\ Feature\ Set  
+$$
+Original\ Feature\ Set \rightarrow Reduced\ Feature\ Set
 $$
 
 The objective is to eliminate:
@@ -172,14 +172,14 @@ The lecture gives a taxation example.
 
 If tax is always:
 
-$$  
-18%  
+$$
+18%
 $$
 
 then:
 
-$$  
-Tax = 0.18 \times Price  
+$$
+Tax = 0.18 \times Price
 $$
 
 Both attributes become strongly correlated.
@@ -245,14 +245,14 @@ where:
 
 For:
 
-$$  
-n=3  
+$$
+n=3
 $$
 
 Total subsets:
 
-$$  
-2^3 -1 = 7  
+$$
+2^3 -1 = 7
 $$
 
 ## Subset Combination Explosion
@@ -261,14 +261,14 @@ The lecture highlights exponential growth.
 
 Suppose:
 
-$$  
-n=100  
+$$
+n=100
 $$
 
 Then:
 
-$$  
-2^{100}-1  
+$$
+2^{100}-1
 $$
 
 possible subsets exist.
@@ -299,8 +299,8 @@ For each subset:
 
 The lecture explains that exhaustive search requires building:
 
-$$  
-2^n -1  
+$$
+2^n -1
 $$
 
 models.
@@ -338,8 +338,8 @@ Major methods discussed:
 
 Forward selection starts with:
 
-$$  
-0 \text{ features}  
+$$
+0 \text{ features}
 $$
 
 Then features are added incrementally.
@@ -371,8 +371,8 @@ Suppose features are:
 
 Randomly choose:
 
-$$  
-B  
+$$
+B
 $$
 
 Build model and measure accuracy.
@@ -381,14 +381,14 @@ Build model and measure accuracy.
 
 Add:
 
-$$  
-C  
+$$
+C
 $$
 
 Build new model using:
 
-$$  
-BC  
+$$
+BC
 $$
 
 If accuracy improves:
@@ -405,8 +405,8 @@ otherwise:
 
 Add:
 
-$$  
-A  
+$$
+A
 $$
 
 Repeat evaluation.
@@ -439,8 +439,8 @@ Rule:
 
 Thus:
 
-$$  
-Error \downarrow \Rightarrow Better\ Feature  
+$$
+Error \downarrow \Rightarrow Better\ Feature
 $$
 
 ## Backward Elimination
@@ -451,8 +451,8 @@ Backward elimination performs the opposite strategy.
 
 Instead of starting empty, it starts with:
 
-$$  
-All\ Features  
+$$
+All\ Features
 $$
 
 and removes features iteratively.
@@ -485,22 +485,22 @@ Suppose:
 
 Build model using:
 
-$$  
-ABC  
+$$
+ABC
 $$
 
 ### Step 2
 
 Remove:
 
-$$  
-A  
+$$
+A
 $$
 
 Build model using:
 
-$$  
-BC  
+$$
+BC
 $$
 
 If accuracy improves:
@@ -560,8 +560,8 @@ Features with higher information gain contribute more strongly toward prediction
 
 Although detailed derivation is deferred to advanced courses, the core idea is:
 
-$$  
-Higher\ Gain \Rightarrow More\ Informative\ Feature  
+$$
+Higher\ Gain \Rightarrow More\ Informative\ Feature
 $$
 
 ## Overfitting and Noise Reduction
@@ -609,8 +609,8 @@ Human expertise therefore complements algorithmic selection.
 
 Reducing dimensionality improves computational efficiency because:
 
-$$  
-Features \downarrow \Rightarrow Computation \downarrow  
+$$
+Features \downarrow \Rightarrow Computation \downarrow
 $$
 
 Benefits include:
@@ -662,8 +662,8 @@ Major methods discussed include:
 
 The most important conceptual insight is that feature selection balances:
 
-$$  
-Prediction\ Quality \quad vs \quad Computational\ Complexity  
+$$
+Prediction\ Quality \quad vs \quad Computational\ Complexity
 $$
 
 Good feature selection improves model interpretability, reduces overfitting, accelerates training, and produces cleaner machine learning systems.
