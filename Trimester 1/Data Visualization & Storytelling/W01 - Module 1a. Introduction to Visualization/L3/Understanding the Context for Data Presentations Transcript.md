@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W01 - Module 1a. Introduction to Visualization
 ---
 
-
 ## Page 1
 
  
@@ -52,7 +51,6 @@ and story and it will be effectively communicating what you wanted to tell. Let 
 you an example. We have looked at vote or turn out ratio. 
 Now, I will try to bring the role of context in this and try to explain how context becomes 
 very important. For example, you have taken vote or turn out ratio and we have come 
-
 
 ## Page 2
 
@@ -102,7 +100,6 @@ per booth and its relation to voter turnout ratio and we found a slight negative
 relationship and in this relationship it can be said or at least said as a reason that if 
 you have higher number of voters per booth the voter turnout is likely to be lower and 
 this can provide insight to election commission to increase the number of booths in a  
-
 
 ## Page 3
 
@@ -154,7 +151,6 @@ your context if you had all the space you can provide 4, 5 visuals, but if you h
 limited space or limited time then that also becomes part of context to give most  
  
 
-
 ## Page 4
 
  
@@ -171,6 +167,5 @@ concepts around the context .
  
 -----------------------------------------------------End------------------------------------------------------ 
  
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
