@@ -1,6 +1,5 @@
 # Week 5: Feature Engineering Techniques for Text Data
 
-
 **Module Description**
 
 This module covers techniques for transforming raw text into structured features suitable for machine learning models.
