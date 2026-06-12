@@ -1726,7 +1726,6 @@ They are the ones who know:
     
 - and how to connect those perspectives into a coherent decision narrative.
 
-
 ## 8. Zooming Out
 
 ## Example: Regional Crime Concentration
