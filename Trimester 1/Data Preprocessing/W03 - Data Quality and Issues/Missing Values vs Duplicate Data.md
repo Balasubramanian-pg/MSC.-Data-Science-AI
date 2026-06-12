@@ -35,14 +35,14 @@ Real-world datasets are almost never complete. Data preprocessing therefore beco
 
 A missing value can be represented as:
 
-$$  
-x_i = NULL  
+$$
+x_i = NULL
 $$
 
 or:
 
-$$  
-x_i = NA  
+$$
+x_i = NA
 $$
 
 Missingness creates uncertainty because the algorithm no longer has a complete representation of the observation.
@@ -112,14 +112,14 @@ The system now stores a fake but syntactically valid value.
 
 This creates a hidden problem:
 
-$$  
-\text{Missing Information} \neq \text{Empty Field}  
+$$
+\text{Missing Information} \neq \text{Empty Field}
 $$
 
 Instead:
 
-$$  
-\text{Missing Information} = \text{Fake Placeholder Value}  
+$$
+\text{Missing Information} = \text{Fake Placeholder Value}
 $$
 
 # Why Disguised Missing Data is Dangerous
@@ -190,8 +190,8 @@ For example:
 
 If mean salary is:
 
-$$  
-\bar{x} = 55000  
+$$
+\bar{x} = 55000
 $$
 
 then NULL may be replaced with 55000.
@@ -316,8 +316,8 @@ This problem is also called:
 
 The goal is:
 
-$$  
-P(A = B)  
+$$
+P(A = B)
 $$
 
 where the system estimates whether two records belong to the same entity.
