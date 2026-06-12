@@ -99,6 +99,7 @@ $$
 A generalized family of transformations parameterized by $\lambda$, solved via Maximum Likelihood Estimation (MLE) to find the exact mathematical power that makes the data most Gaussian.
 
 **Box-Cox Formula:**
+
 $$
 y(\lambda) = 
 \begin{cases} 
@@ -124,9 +125,11 @@ Converts continuous variables into categorical representations.
 Used primarily in time-series numeric data to isolate the signal from high-frequency stochastic noise.
 
 **Exponentially Weighted Moving Average (EWMA):**
+
 $$
 S_t = \alpha X_t + (1 - \alpha) S_{t-1}
 $$
+
 Where $\alpha \in [0,1]$ is the smoothing factor. As $\alpha \to 0$, the curve becomes perfectly smooth (ignoring new data). As $\alpha \to 1$, the curve perfectly tracks the raw noisy data.
 
 ## 7. Impact on Proximity-Based Models
@@ -134,6 +137,7 @@ Where $\alpha \in [0,1]$ is the smoothing factor. As $\alpha \to 0$, the curve b
 Proximity models (K-Nearest Neighbors, K-Means Clustering, Support Vector Machines) rely on calculating the $L_p$ norm (Minkowski distance) between vectors.
 
 **Euclidean Distance ($L_2$ Norm):**
+
 $$
 d(p, q) = \sqrt{\sum_{i=1}^n (p_i - q_i)^2}
 $$
@@ -269,6 +273,5 @@ print(f"KNN Accuracy (Standardized Data): {acc_scaled:.4f}")
 1. **Target-Aware Discretization:** Study Decision Tree discretizers (using a shallow decision tree to find the mathematically optimal bin edges that maximize purity of the target).
 2. **Polynomial Feature Explosion:** Understand the combinatorial explosion of `PolynomialFeatures`. If you have 100 features and apply a degree-3 polynomial, you generate over 170,000 features. Learn how to combine this with Ridge regularization to prevent memory/variance collapse.
 3. **Spline Transformations:** Move beyond simple polynomials to Piecewise Polynomials (Splines) to model highly complex, non-linear numeric continuous relationships without runaway asymptotic behavior at the boundaries.
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
