@@ -21,7 +21,9 @@ Pearson's correlation coefficient ($r$) measures the strength and direction of t
 
 The correlation is derived from the covariance of the variables $X$ and $Y$, normalized by the product of their individual standard deviations:
 
-$$r_{xy} = \frac{\text{cov}(X, Y)}{\sigma_x \sigma_y}$$
+$$
+r_{xy} = \frac{\text{cov}(X, Y)}{\sigma_x \sigma_y}
+$$
 
 Where:
 
