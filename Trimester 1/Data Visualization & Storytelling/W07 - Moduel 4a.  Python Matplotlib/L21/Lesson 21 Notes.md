@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W07 - Moduel 4a.  Python Matplotlib
 ---
 
-
 ## Introduction to Matplotlib (with Python & NumPy)
 
 ## 1. What is Matplotlib?
