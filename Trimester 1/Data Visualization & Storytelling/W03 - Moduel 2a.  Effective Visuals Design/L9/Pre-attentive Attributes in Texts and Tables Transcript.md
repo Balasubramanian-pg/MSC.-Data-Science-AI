@@ -78,5 +78,4 @@ These methods ensure that the reader focuses on the parts of the text to which a
 
 Would you like to apply these principles to optimize the readability of data tables, or move on to a different topic?  
 
-
 Tags: #statistics #machine-learning #data-science #statistical-modelling
