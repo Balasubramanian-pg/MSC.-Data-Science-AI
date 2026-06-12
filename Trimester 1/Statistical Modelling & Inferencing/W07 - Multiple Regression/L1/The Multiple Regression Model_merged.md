@@ -2,7 +2,6 @@
 
 ## Reading Material: The Multiple Regression Model
 
----
 # Multiple Linear Regression
 
 # 1. Why Simple Linear Regression Breaks Down
