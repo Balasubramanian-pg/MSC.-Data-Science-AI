@@ -35,7 +35,11 @@ For continuous variables, we cannot assign a non-zero probability to a single po
 
 - **Range Probability:** To find the probability that $X$ falls within an interval $[a, b]$, we calculate the integral of the PDF over that interval:
     
-    $$P(a \leq X \leq b) = \int_{a}^{b} f(x) \, dx$$
+
+$$
+P(a \leq X \leq b) = \int_{a}^{b} f(x) \, dx
+$$
+
     
 - **Normalization Rule:** The total area under the entire PDF curve must equal 1: $\int_{-\infty}^{\infty} f(x) \, dx = 1$.
     
@@ -43,8 +47,6 @@ For continuous variables, we cannot assign a non-zero probability to a single po
 ### 4. Implementation: Python Example
 
 While formal calculus is used for theory, we often use `scipy.stats` in Python to work with distributions.
-
-
 
 ```Python
 import numpy as np
