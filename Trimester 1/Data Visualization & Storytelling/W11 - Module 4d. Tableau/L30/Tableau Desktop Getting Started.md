@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W11 - Module 4d. Tableau - Module 4d. Tableau
 ---
 
-
 ## Page 1
 
  
@@ -57,7 +56,6 @@ is what it will look like, so this is what Tableau public, the desktop version w
 and then you can connect from there, now let us start with, so once you open Tableau 
 public, this is how it will look like, so this is the desktop app, which is downloaded into 
 your system and you can also use the web-based version that we were just discussing, 
-
 
 ## Page 2
 
@@ -112,7 +110,6 @@ data or the actual data that is there here, so and what you can do in this pane 
 later stage is to build, let us say there are 3-4 Excel sheets of the same data, in one 
 sheet you have the sales per region, in the second sheet you have sales per the 
 
-
 ## Page 3
 
  
@@ -166,7 +163,6 @@ understand, so this is year wise, so then we just want to understand what are th
 global sales, okay, some global sales, so let us go to what are the sales, okay and just 
 making it a line graph, so this is the global sales, so you can then just have the global 
 
-
 ## Page 4
 
  
@@ -187,6 +183,5 @@ will have a better understanding of the environment.
  
  
 ---------------------------------------------------End-------------------------------------------------------- 
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
