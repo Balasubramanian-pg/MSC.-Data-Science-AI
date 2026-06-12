@@ -2,7 +2,6 @@
 
 ## Reading Material: Simple Exponential Smoothing
 
----
 
 ### 1. Improving on Moving Averages: The Shift to Exponential Weighting
 
@@ -205,7 +204,6 @@ The final term in your expansion, $(1 - \alpha)^t \hat{y}_1$, represents the "st
 * As $t$ increases, this term also decays toward zero.
 * This demonstrates that **the longer your series runs, the less your initial guess ($\hat{y}_1$) matters.** Over time, the model "washes away" the uncertainty of your starting estimate and settles into a forecast driven almost entirely by the actual, incoming data.
 
----
 
 ### Why this is the "Gold Standard" of Smoothing
 
@@ -214,7 +212,6 @@ This exponential structure is what makes the method so robust for automated busi
 * **Computational Efficiency:** You don't need to store all historical data points to calculate the next forecast. You only need the **previous forecast** and the **current observation**. This makes it incredibly fast for processing massive datasets (like millions of individual SKUs in a pharmaceutical supply chain).
 * **Adaptability:** The $\alpha$ parameter allows you to change the "speed" of the decay. If you set $\alpha$ higher, the exponential decay is steeper (you forget the past faster). If you set $\alpha$ lower, the decay is flatter (your memory is longer).
 
----
 
 **Would you like to compare this exponential weighting against the "equal weighting" of a Moving Average using a quick visual plot, or are you ready to transition from these smoothing fundamentals to the actual business applications of forecasting?**
 ![[Pasted image 20260523105151.png]]
