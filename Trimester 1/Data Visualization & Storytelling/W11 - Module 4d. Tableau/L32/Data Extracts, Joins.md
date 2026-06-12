@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W11 - Module 4d. Tableau - Module 4d. Tableau
 ---
 
-
 ## Page 1
 
  
@@ -58,7 +57,6 @@ is it containing. So now this is a data about book author and book author sales.
 So you have author ID, book ID, and quickly if you are coming to sales, you have the 
 order ID and item ID, series. Then there are different book IDs and ratings of the 
 
-
 ## Page 2
 
  
@@ -109,7 +107,6 @@ So this is simply what we call it as a relationship where the Excel sheets are t
 each other using one particular identifier. In this case, the key field in this case, which 
 is the author ID. There might be multiple author fields, multiple key identifiers. 
   
-
 
 ## Page 3
 
@@ -164,7 +161,6 @@ So there are about 40 authors that I have. And in fact, if I do the count author
 instead, I want it to be measured to be distinct count. How many unique authors are 
 there? So of course, the unique authors is also 41. 
 
-
 ## Page 4
 
  
@@ -217,7 +213,6 @@ the rating sheet using the book ID, author will get mapped to book, book will ma
 to ratings. So once we go to this particular sheet, you also have the, now you have 
 three sheets here. 
   
-
 
 ## Page 5
 
@@ -272,7 +267,6 @@ Then you have left union, left joint, which preserves the elements from the prim
 plus the common elements. Then you have the right joint, which preserves the 
 common elements plus the secondary set. Then you have the full outer joint, which is 
 
-
 ## Page 6
 
  
@@ -324,7 +318,6 @@ OK, so now I'm just updating it. I just want you to see now the rows have reduce
 the common elements, OK, common elements from both the sheets and presenting 
 the data only for them. 
   
-
 
 ## Page 7
 
@@ -378,7 +371,6 @@ being greater than. However, be very, very careful on how do you use joints beca
 they will modify the data once for all. 
   
 
-
 ## Page 8
 
  
@@ -407,6 +399,5 @@ work with the data. Now we will now look at another.
  
 ------------------------------------------------------End----------------------------------------------------- 
  
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
