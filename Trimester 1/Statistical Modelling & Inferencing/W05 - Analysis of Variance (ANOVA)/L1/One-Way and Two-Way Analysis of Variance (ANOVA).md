@@ -2,7 +2,6 @@
 
 ## Reading Material: One-Way and Two-Way Analysis of Variance (ANOVA)
 
-
 **Contents**
 
 1. Introduction to Analysis of Variance (ANOVA)  
@@ -23,8 +22,8 @@ Analysis of Variance, commonly called ANOVA, is one of the foundational methods 
 
 The central problem ANOVA addresses is:
 
-$$  
-\text{How do we compare more than two group means without inflating Type I error?}  
+$$
+\text{How do we compare more than two group means without inflating Type I error?}
 $$
 
 Suppose we want to compare:
@@ -40,10 +39,10 @@ Suppose we want to compare:
 
 Performing repeated pairwise t-tests creates a major statistical issue:
 
-$$  
+$$
 P(\text{False Positive})  
 \uparrow  
-\quad \text{as comparisons increase}  
+\quad \text{as comparisons increase}
 $$
 
 P(\text{False Positive})\uparrow\quad\text{as comparisons increase}
@@ -70,10 +69,10 @@ The procedure separates total variability into:
 
 The central comparison is:
 
-$$  
+$$
 \text{Between-Group Variability}  
 \quad vs \quad  
-\text{Within-Group Variability}  
+\text{Within-Group Variability}
 $$
 
 \text{Between-Group Variability}\quad vs \quad\text{Within-Group Variability}
@@ -138,29 +137,29 @@ The measured outcome is called the response variable.
 
 Suppose there are:
 
-$$  
-k  
+$$
+k
 $$
 
 groups with means:
 
-$$  
-\mu_1,\mu_2,\dots,\mu_k  
+$$
+\mu_1,\mu_2,\dots,\mu_k
 $$
 
 The null hypothesis states all population means are equal:
 
-$$  
+$$
 H_0:  
-\mu_1 = \mu_2 = \dots = \mu_k  
+\mu_1 = \mu_2 = \dots = \mu_k
 $$
 
 H_0:\mu_1=\mu_2=\dots=\mu_k
 
 The alternative hypothesis states:
 
-$$  
-\text{At least one population mean differs}  
+$$
+\text{At least one population mean differs}
 $$
 
 \text{At least one population mean differs}
@@ -171,8 +170,8 @@ This is called an omnibus hypothesis because it tests for any overall difference
 
 The alternative hypothesis does NOT claim:
 
-$$  
-\mu_1 \ne \mu_2 \ne \mu_3 \ne \dots  
+$$
+\mu_1 \ne \mu_2 \ne \mu_3 \ne \dots
 $$
 
 ANOVA only requires that at least one mean differs.
@@ -198,12 +197,12 @@ Observations must be statistically independent.
 
 Formally:
 
-$$  
+$$
 X_i  
 \perp  
 X_j  
 \quad  
-(i \ne j)  
+(i \ne j)
 $$
 
 X_i\perp X_j\quad(i\ne j)
@@ -227,8 +226,8 @@ Within each group, the response variable should be approximately normally distri
 
 Formally:
 
-$$  
-X_i \sim N(\mu_i,\sigma^2)  
+$$
+X_i \sim N(\mu_i,\sigma^2)
 $$
 
 X_i\sim N(\mu_i,\sigma^2)
@@ -252,8 +251,8 @@ The population variances should be approximately equal across groups.
 
 Formally:
 
-$$  
-\sigma_1^2, \sigma_2^2, \dots, \sigma_k^2  
+$$
+\sigma_1^2, \sigma_2^2, \dots, \sigma_k^2
 $$
 
 This assumption is called homoscedasticity.
@@ -281,27 +280,27 @@ $$
 
 and:
 
-$$  
+$$
 H_A:  
-\text{At least one mean differs}  
+\text{At least one mean differs}
 $$
 
 The ANOVA output produces:
 
-$$  
-p = 0.0008  
+$$
+p = 0.0008
 $$
 
 Since:
 
-$$  
-0.0008 < 0.05  
+$$
+0.0008 < 0.05
 $$
 
 we reject:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 This implies strong statistical evidence that teaching method affects average exam scores.
@@ -312,13 +311,11 @@ A significant result does NOT identify which groups differ.
 
 It only establishes:
 
-$$  
+$$
 \exists\ i,j  
 \text{ such that }  
-\mu_i \ne \mu_j  
+\mu_i \ne \mu_j
 $$
-
-
 
 Further analysis is required to identify the specific group differences.
 
@@ -339,9 +336,9 @@ These procedures control overall Type I error while performing multiple pairwise
 
 Without adjustment:
 
-$$  
+$$
 P(\text{False Positive})  
-\uparrow  
+\uparrow
 $$
 
 across repeated tests.
@@ -363,27 +360,27 @@ Each fertilizer is tested on eight plots of land.
 
 The hypotheses are:
 
-$$  
+$$
 H_0:  
-\mu_A = \mu_B = \mu_C = \mu_D  
+\mu_A = \mu_B = \mu_C = \mu_D
 $$
 
 The ANOVA analysis produces:
 
-$$  
-p = 0.241  
+$$
+p = 0.241
 $$
 
 Since:
 
-$$  
-0.241 > 0.05  
+$$
+0.241 > 0.05
 $$
 
 we fail to reject:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 The data does not provide sufficient evidence that fertilizer type affects mean crop yield.
@@ -394,8 +391,8 @@ This distinction is extremely important.
 
 A non-significant result does NOT prove:
 
-$$  
-\mu_A = \mu_B = \mu_C = \mu_D  
+$$
+\mu_A = \mu_B = \mu_C = \mu_D
 $$
 
 It only means:
@@ -454,8 +451,8 @@ Interaction effects are often the most important component of Two-Way ANOVA.
 
 An interaction occurs when:
 
-$$  
-\text{Effect of Factor A depends on Factor B}  
+$$
+\text{Effect of Factor A depends on Factor B}
 $$
 
 \text{Effect of Factor A depends on Factor B}
@@ -502,8 +499,8 @@ Interaction plots provide visual intuition.
 
 Parallel lines suggest:
 
-$$  
-\text{No Interaction}  
+$$
+\text{No Interaction}
 $$
 
 The effect of one factor remains consistent across levels of the second factor.
@@ -512,8 +509,8 @@ The effect of one factor remains consistent across levels of the second factor.
 
 Non-parallel or crossing lines suggest:
 
-$$  
-\text{Interaction Present}  
+$$
+\text{Interaction Present}
 $$
 
 The effect of one variable changes depending on the other variable.
@@ -529,16 +526,16 @@ Suppose a botanist studies:
 
 The interaction p-value is:
 
-$$  
-0.0002  
+$$
+0.0002
 $$
 
 which is statistically significant.
 
 This implies:
 
-$$  
-\text{Fertilizer effectiveness depends on plant variety}  
+$$
+\text{Fertilizer effectiveness depends on plant variety}
 $$
 
 The interaction dominates interpretation.
@@ -574,16 +571,16 @@ Suppose a researcher studies:
 
 The interaction p-value is:
 
-$$  
-0.361  
+$$
+0.361
 $$
 
 which is not statistically significant.
 
 This implies:
 
-$$  
-\text{Study method effectiveness does not depend on time of day}  
+$$
+\text{Study method effectiveness does not depend on time of day}
 $$
 
 The main effects can therefore be interpreted independently.
@@ -601,24 +598,26 @@ The results indicate:
 
 ANOVA fundamentally evaluates:
 
-$$  
+$$
 \text{Systematic Variability}  
 \quad vs \quad  
-\text{Random Variability}  
+\text{Random Variability}
 $$
 
 \text{Systematic Variability}\quad vs \quad\text{Random Variability}
 
 The F-statistic operationalizes this comparison:
 
-# $$  
+#
+
+$$
 F
 
 \frac{  
 \text{Signal}  
 }{  
 \text{Noise}  
-}  
+}
 $$
 
 F=\frac{\text{Signal}}{\text{Noise}}
@@ -631,10 +630,10 @@ ANOVA represents a major conceptual leap in statistical inference.
 
 The framework transitions from:
 
-$$  
+$$
 \text{Simple Pairwise Comparison}  
 \rightarrow  
-\text{Structured Multi-Factor Analysis}  
+\text{Structured Multi-Factor Analysis}
 $$
 
 \text{Simple Pairwise Comparison}\rightarrow\text{Structured Multi-Factor Analysis}
