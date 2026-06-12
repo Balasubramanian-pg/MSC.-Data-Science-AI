@@ -15,8 +15,8 @@
 
 Formally:
 
-$$ 
-Y = \beta_0 + \beta_1 X + \epsilon  
+$$
+Y = \beta_0 + \beta_1 X + \epsilon
 $$
 
 This is useful for understanding isolated relationships.
@@ -42,8 +42,8 @@ A single-variable model ignores most of reality.
 
 Suppose we model salary using only [education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education).
 
-$$ 
-Salary = \beta_0 + \beta_1([Education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education)) + \epsilon  
+$$
+Salary = \beta_0 + \beta_1([Education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education)) + \epsilon
 $$
 
 We may observe:
@@ -102,7 +102,9 @@ To address this, we include multiple [predictors](https://github.com/Balasubrama
 
 The population model becomes:
 
-## $$ 
+##
+
+$$
 Y
 
 \beta_0  
@@ -115,7 +117,7 @@ Y
 +  
 \beta_k X_k  
 +  
-\epsilon  
+\epsilon
 $$
 
 This is:
@@ -126,40 +128,40 @@ This is:
 
 ## [Response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response)) Variable
 
-$$ 
-Y  
+$$
+Y
 $$
 
 The outcome being predicted.
 
 ## Predictor Variables
 
-$$ 
-X_1, X_2, \dots, X_k  
+$$
+X_1, X_2, \dots, X_k
 $$
 
 Variables used to explain variation in (Y).
 
 ## Intercept
 
-$$ 
-\beta_0  
+$$
+\beta_0
 $$
 
 Expected value of (Y) when all [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors)) equal zero.
 
 ## Slope Coefficients
 
-$$ 
-\beta_1, \beta_2, \dots, \beta_k  
+$$
+\beta_1, \beta_2, \dots, \beta_k
 $$
 
 Measure predictor effects.
 
 ## Error Term
 
-$$ 
-\epsilon  
+$$
+\epsilon
 $$
 
 Captures:
@@ -178,7 +180,9 @@ Since population parameters are unknown, we estimate them from data.
 
 The fitted model becomes:
 
-## $$ 
+##
+
+$$
 \hat{Y}
 
 b_0  
@@ -189,16 +193,27 @@ b_2 x_2
 +  
 \cdots  
 +  
-b_k x_k  
+b_k x_k
 $$
 
 Where:
 
 | Symbol        | Meaning                     |
 | ------------- | --------------------------- |
-| $$(b_j)$$     | Estimated coefficient       |
-| $$(\beta_j)$$ | True population coefficient |
+|
 
+$$
+(b_j)
+$$
+
+| Estimated coefficient       |
+|
+
+$$
+(\beta_j)
+$$
+
+| True population coefficient |
 
 ## 9. The Most Important Concept in Multiple Regression
 
@@ -210,8 +225,8 @@ This is the conceptual heart of multiple regression.
 
 In simple regression:
 
-$$ 
-\beta_1  
+$$
+\beta_1
 $$
 
 means:
@@ -223,8 +238,8 @@ because only one predictor exists.
 
 In multiple regression:
 
-$$ 
-\beta_j  
+$$
+\beta_j
 $$
 
 means:
@@ -239,7 +254,9 @@ This is:
 
 Suppose:
 
-## $$ 
+##
+
+$$
 Price
 
 \beta_0  
@@ -248,13 +265,13 @@ Price
 +  
 \beta_2(Bedrooms)  
 +  
-\epsilon  
+\epsilon
 $$
 
 Then:
 
-$$ 
-\beta_1  
+$$
+\beta_1
 $$
 
 means:
@@ -303,7 +320,9 @@ Without this, interpretation becomes confounded.
 
 Suppose:
 
-## $$ 
+##
+
+$$
 Salary
 
 \beta_0  
@@ -312,13 +331,13 @@ Salary
 +  
 \beta_2(Experience)  
 +  
-\epsilon  
+\epsilon
 $$
 
 Then:
 
-$$ 
-\beta_1  
+$$
+\beta_1
 $$
 
 means:
@@ -351,7 +370,9 @@ Multiple regression fits:
 
 With two [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors)):
 
-## $$ 
+##
+
+$$
 Y
 
 \beta_0  
@@ -360,7 +381,7 @@ Y
 +  
 \beta_2 X_2  
 +  
-\epsilon  
+\epsilon
 $$
 
 the model becomes a plane in 3D space.
@@ -370,8 +391,8 @@ the model becomes a plane in 3D space.
 The coefficients determine the plane geometry.
 ## Intercept
 
-$$ 
-b_0  
+$$
+b_0
 $$
 
 Controls vertical position.
@@ -402,8 +423,8 @@ The regression plane attempts to pass as close as possible to observed points.
 
 With:
 
-$$ 
-k > 2  
+$$
+k > 2
 $$
 
 [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors)):
@@ -414,8 +435,8 @@ the fitted object becomes:
 
 in:
 
-$$ 
-k+1  
+$$
+k+1
 $$
 
 dimensional space.
@@ -428,12 +449,14 @@ But mathematically the same principles apply.
 
 Multiple regression is naturally expressed using linear algebra.
 
-## $$ 
+##
+
+$$
 \mathbf{Y}
 
 \mathbf{X}\boldsymbol{\beta}  
 +  
-\boldsymbol{\epsilon}  
+\boldsymbol{\epsilon}
 $$
 
 This compact form powers:
@@ -445,7 +468,6 @@ This compact form powers:
 - deep learning foundations
     
 - numerical computation
-
 
 ## 23. Relationship to Machine Learning
 
@@ -461,7 +483,6 @@ Many ML models are direct generalizations of regression concepts.
 |SSE minimization|Loss minimization|
 |Hyperplane separation|SVM decision boundaries|
 |Feature selection|Representation learning|
-
 
 ## 24. Assumptions Still Matter
 
@@ -520,19 +541,30 @@ import statsmodels.api as sm
 
 ## Example dataset
 data = pd.DataFrame({
-    "education": [12, 14, 16, 18, 20$$,
-    "experience": [1, 3, 5, 7, 10$$,
-    "salary": [35, 45, 60, 80, 100$$
+    "education": [12, 14, 16, 18, 20
+
+$$
+,
+    "experience": [1, 3, 5, 7, 10
+$$
+
+,
+    "salary": [35, 45, 60, 80, 100
+
+$$
 })
 
 ## Predictors
-X = data[["education", "experience"$$$$
+X = data[["education", "experience"
+$$
 
+$$
 ## Add intercept
 X = sm.add_constant(X)
 
 ## Response
-y = data["salary"$$
+y = data["salary"
+$$
 
 ## Fit model
 model = sm.OLS(y, X).fit()
@@ -593,31 +625,44 @@ Correlated [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-
 ```mermaid
 flowchart TD
 
-A[Collect Data$$
---> B[Select Predictors$$
+A[Collect Data
 
-B --> C[Fit Multiple Regression Model$$
+$$
+--> B[Select Predictors
+$$
 
-C --> D[Estimate Coefficients$$
+B --> C[Fit Multiple Regression Model
 
-D --> E[Interpret Partial Effects$$
+$$
+C --> D[Estimate Coefficients
+$$
 
-E --> F[Evaluate R²$$
+D --> E[Interpret Partial Effects
 
-F --> G[Check Assumptions$$
+$$
+E --> F[Evaluate R²
+$$
 
-G --> H[Refine Model$$
+F --> G[Check Assumptions
+
+$$
+G --> H[Refine Model
+$$
+
 ```
 
 ## [32. Final Takeaways](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#32-final-takeaways)
 
-[!IMPORTANT$$
+[!IMPORTANT
 
+$$
 Multiple regression extends simple regression by incorporating several [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors)) simultaneously.
 
 Core model:
 
-## $$ 
+##
+$$
+
 Y
 
 \beta_0  
