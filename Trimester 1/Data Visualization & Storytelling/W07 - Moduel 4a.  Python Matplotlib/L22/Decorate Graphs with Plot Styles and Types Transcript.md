@@ -45,7 +45,6 @@ These are cognitive encoding mechanisms.
 
 A visualization without deliberate styling is often equivalent to poorly structured writing with no punctuation, headings, or emphasis.
 
----
 
 ## The Psychology of Visual Encoding
 
@@ -89,7 +88,6 @@ This directly connects to Gestalt principles.
 
 The transcript briefly references this idea when discussing common colors and grouping behavior.
 
----
 
 ## Why Matplotlib Matters
 
@@ -112,7 +110,6 @@ ultimately rely on Matplotlib internally.
 
 Understanding Matplotlib styling means understanding the foundation of Python visualization itself.
 
----
 
 ## Importing Visualization Libraries
 
@@ -125,7 +122,6 @@ from matplotlib import colors
 from matplotlib import lines
 ```
 
----
 
 ## Why NumPy Is Used Everywhere
 
@@ -146,7 +142,6 @@ NumPy provides:
 
 Without NumPy, visualization pipelines become inefficient.
 
----
 
 ## Understanding Colors in Matplotlib
 
@@ -169,7 +164,6 @@ Color can encode:
 
 But misuse of color is one of the biggest problems in dashboard design.
 
----
 
 ## Default Color Cycles
 
@@ -189,7 +183,6 @@ plt.plot(x, y, color='C0')
 
 These are part of Matplotlib's internal style cycle.
 
----
 
 ## Single-Letter Color Codes
 
@@ -214,7 +207,6 @@ plt.plot(x, y, color='r')
 
 Transcript reference:
 
----
 
 ## Named Colors
 
@@ -242,7 +234,6 @@ vs
 
 Named colors are usually preferable unless strict branding is required.
 
----
 
 ## Hexadecimal Colors
 
@@ -279,7 +270,6 @@ $$
 0 \to 255  
 $$
 
----
 
 ## RGBA Color System
 
@@ -317,7 +307,6 @@ This means:
 - 50% transparency
     
 
----
 
 ## Transparency and Alpha
 
@@ -342,7 +331,6 @@ Lower alpha is extremely useful when plotting:
 - ensemble models
     
 
----
 
 ## Grayscale Encoding
 
@@ -366,7 +354,6 @@ color='0.5'
 
 This becomes medium gray.
 
----
 
 ## Comprehensive Color Demonstration
 
@@ -391,7 +378,6 @@ plt.show()
 
 Transcript reference:
 
----
 
 ## Cognitive Risks of Color
 
@@ -412,7 +398,6 @@ This is not aesthetics.
 
 This is information distortion.
 
----
 
 ## Color Maps
 
@@ -447,7 +432,6 @@ This enables:
 
 Transcript reference:
 
----
 
 ## Viridis Colormap
 
@@ -464,7 +448,6 @@ Viridis became Matplotlib's default colormap because it is:
 - visually smooth
     
 
----
 
 ## Scatter Plot with Colormap
 
@@ -488,7 +471,6 @@ plt.colorbar()
 plt.show()
 ```
 
----
 
 ## Why Jet Colormap Is Problematic
 
@@ -508,7 +490,6 @@ It exaggerates gradients psychologically.
 
 Viridis avoids this issue.
 
----
 
 ## Custom Colormaps
 
@@ -525,7 +506,6 @@ custom_cmap = LinearSegmentedColormap.from_list(
 )
 ```
 
----
 
 ## Engineering Use Cases
 
@@ -539,7 +519,6 @@ Custom colormaps are heavily used in:
 |GIS|Terrain elevation|
 |Operations|KPI dashboards|
 
----
 
 ## Line Styles
 
@@ -558,7 +537,6 @@ Line style introduces redundant encoding.
 
 Transcript reference:
 
----
 
 ## Basic Line Styles
 
@@ -569,7 +547,6 @@ Transcript reference:
 |Dotted|`':'`|
 |Dash-dot|`'-.'`|
 
----
 
 ## Example
 
@@ -607,7 +584,6 @@ plt.show()
 
 Transcript reference:
 
----
 
 ## Why Markers Matter
 
@@ -626,7 +602,6 @@ Without markers, line charts imply continuity.
 
 This can accidentally mislead viewers.
 
----
 
 ## Marker Types
 
@@ -638,7 +613,6 @@ This can accidentally mislead viewers.
 |`^`|Triangle|
 |`x`|Cross|
 
----
 
 ## Line Width
 
@@ -661,7 +635,6 @@ Thicker lines visually imply:
 
 This is a perceptual bias.
 
----
 
 ## Dash Cap Styles
 
@@ -684,7 +657,6 @@ dash_capstyle='round'
 
 This subtly changes perceived smoothness.
 
----
 
 ## Spines
 
@@ -698,7 +670,6 @@ Most people never notice them consciously.
 
 Yet they strongly affect visual clutter.
 
----
 
 ## Accessing Spines
 
@@ -712,7 +683,6 @@ Then:
 ax.spines['top']
 ```
 
----
 
 ## Removing Spines
 
@@ -725,7 +695,6 @@ Transcript reference:
 
 This creates cleaner modern visualizations.
 
----
 
 ## Customizing Spine Width and Color
 
@@ -734,7 +703,6 @@ ax.spines['left'].set_linewidth(4)
 ax.spines['left'].set_color('red')
 ```
 
----
 
 ## Why Spine Removal Matters
 
@@ -755,7 +723,6 @@ The graph should emphasize:
 
 not decorative framing.
 
----
 
 ## Minimalist Visualization Philosophy
 
@@ -781,7 +748,6 @@ This improves:
 - analytical focus
     
 
----
 
 ## Advanced Mental Model
 
@@ -795,7 +761,6 @@ If everything is emphasized:
 
 Good visualization controls attention hierarchy intentionally.
 
----
 
 ## Real-World Dashboard Example
 
@@ -820,7 +785,6 @@ The dashboard fails despite technical correctness.
 
 This is extremely common in enterprise BI.
 
----
 
 ## Visualization Architecture in Matplotlib
 
@@ -838,7 +802,6 @@ B --> H[Colormaps]
 
 Understanding this hierarchy is crucial for advanced customization.
 
----
 
 ## Machine Learning Connections
 
@@ -853,7 +816,6 @@ Visualization styling matters heavily in ML systems:
 |Uncertainty estimation|Alpha transparency|
 |Embedding spaces|Marker differentiation|
 
----
 
 ## Common Mistakes
 
@@ -877,7 +839,6 @@ Red-green colorblindness affects many users.
 
 Heavy spines create unnecessary clutter.
 
----
 
 ## Advanced Insight
 
@@ -903,7 +864,6 @@ Experts optimize for:
 
 This is a fundamentally different mindset.
 
----
 
 ## Final Takeaways
 
