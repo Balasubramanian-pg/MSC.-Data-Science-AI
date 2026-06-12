@@ -43,7 +43,6 @@ week: W01 - Module 1a. Introduction to Visualization
 8. [Golden Rules of Effective Visualization](https://chatgpt.com/g/g-p-6a0d41583fe88191a2893b540108b3b5-msc-data-science/c/6a10ae9f-5308-8321-80ea-23d7426ab7ae#8-golden-rules-of-effective-visualization)
     
 
-
 ## 1. Introduction to Data Visualization
 
 ## 1.1 What is Data Visualization?
@@ -64,7 +63,6 @@ The lecture emphasizes that visualization is not merely about aesthetics. It is 
     
 
 Visualization acts as a bridge between raw data and human understanding.
-
 
 ## 1.2 Why Humans Prefer Visual Information
 
@@ -104,7 +102,6 @@ Visual processing is nearly instantaneous because the human brain evolved to det
 
 before language processing developed.
 
-
 ## 1.3 Role of Visualization in Decision Making
 
 The lecture identifies three major objectives of visualization:
@@ -126,7 +123,6 @@ Visualization helps decision-makers:
     
 - prioritize actions
     
-
 
 ## 2. Understanding Data Types Before Visualization
 
@@ -154,7 +150,6 @@ Before selecting charts, it is essential to understand the type of variable bein
 - Count plot
     
 
-
 ## 2.2 Ordinal Variables
 
 **Ordinal variables** contain categories with meaningful order.
@@ -174,7 +169,6 @@ Before selecting charts, it is essential to understand the type of variable bein
     
 - Heatmap
     
-
 
 ## 2.3 Numerical Variables
 
@@ -215,7 +209,6 @@ Countable integers.
 - Box plot
     
 
-
 ## 2.4 Binary Variables
 
 Variables with only two possible values.
@@ -236,7 +229,6 @@ Variables with only two possible values.
 - Pie chart
     
 
-
 ## 3. Why Visualization Matters
 
 ## 3.1 Human Cognitive Processing
@@ -255,7 +247,6 @@ Although no exact mathematical equation is given, the conceptual relationship is
 
 Organizations use dashboards because executives cannot process large textual reports quickly enough during operational decision-making.
 
-
 ## 3.2 Information Retention
 
 ### Retention Comparison
@@ -269,7 +260,6 @@ Retention from Reading  = 20%
 
 A visual KPI dashboard is more likely to influence stakeholder action than a 20-page written report.
 
-
 ## 3.3 Visual Communication vs Textual Communication
 
 The lecture compares two modes:
@@ -282,7 +272,6 @@ The lecture compares two modes:
 ### Key Insight
 
 Combining visuals with explanatory text creates stronger communication than either alone.
-
 
 ## 4. Case Study: Lok Sabha Election Voter Turnout
 
@@ -332,7 +321,6 @@ The audience must:
 
 This increases cognitive load.
 
-
 ## 4.2 Visualization Using Horizontal Bar Chart
 
 The same data is converted into a **horizontal bar chart**.
@@ -351,7 +339,6 @@ The lecture explains the structure of the chart.
 |Vertical blue line|National average at 66%|
 |Green bars|Above national average|
 |Red bars|Below national average|
-
 
 ### 5.2 When to Use a Horizontal Bar Chart
 
@@ -376,7 +363,6 @@ Use a horizontal bar chart when:
     
 - Election turnout
     
-
 
 ### 5.3 Business and Analytical Insights
 
@@ -419,7 +405,6 @@ A policymaker can immediately identify:
 
 Without visualization, these insights are much slower to derive.
 
-
 ## 6. Data Visualization as Storytelling
 
 ## 6.1 Visualization and Narrative Building
@@ -450,7 +435,6 @@ A visualization should answer:
 
 Visualization converts raw numbers into narrative structure.
 
-
 ## 6.2 Edward Tufte’s Principle
 
 The lecture references Edward Tufte, often considered the father of data visualization.
@@ -471,7 +455,6 @@ Good visualization:
     
 - supports evidence-driven communication
     
-
 
 ## 7. Visualization Decision Framework
 
@@ -507,7 +490,6 @@ What do you want to show?
     └── Tree Map
 ```
 
-
 ## Common Statistical and Analytical Formulas
 
 ## Percentage Change Formula
@@ -525,7 +507,6 @@ Percentage Change =
 Eligible voter increase = 7.4%
 ```
 
-
 ## Correlation Coefficient
 
 Used in relationship visualizations like scatter plots.
@@ -539,7 +520,6 @@ r = Cov(X,Y) / (σX × σY)
 > Correlation does not imply causation.
 
 Two variables moving together does not mean one causes the other.
-
 
 ## Interquartile Range (IQR)
 
@@ -556,13 +536,11 @@ Lower Bound = Q1 - 1.5 × IQR
 Upper Bound = Q3 + 1.5 × IQR
 ```
 
-
 ## Common Visualization Pitfalls
 
 ## 1. Correlation ≠ Causation
 
 A relationship between variables does not establish cause-effect.
-
 
 ## 2. Misleading Axes
 
@@ -572,11 +550,9 @@ Manipulated axis scales can exaggerate trends.
 
 Starting a bar chart axis at non-zero values without justification.
 
-
 ## 3. Overloading Visuals
 
 Too many colors, labels, or dimensions reduce clarity.
-
 
 ## 4. Ignoring Data Types
 
@@ -589,11 +565,9 @@ Example:
 - Line charts for unordered categories
     
 
-
 ## 5. Imbalanced Comparisons
 
 Comparing variables with incompatible scales can distort interpretation.
-
 
 ## 8. Golden Rules of Effective Visualization
 
