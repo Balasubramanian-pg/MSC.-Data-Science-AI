@@ -13,7 +13,6 @@ This document details the visual paradigms, technical architectures, and practic
 2. **Assessing Hierarchies & Part-to-Whole Relationships** (Circle Packing Diagrams, Bubble Hierarchies) [1]
 3. **Mapping Geospatial Data** (Choropleth Maps, Isothermic Maps, Network Connection Maps) [1, 2]
 
----
 
 ## 1. Taxonomic Framework of Data Visualization Methods
 
@@ -50,7 +49,6 @@ graph TD
 | **Isothermic Normalization Map** [2] | Geographic shape coordinates + Population weight + Metric value [2] | Correct geographic area bias to show true population density [2] | Area-distorted shape polygons or normalization-adjusted color saturation [2] | Algorithmic demographic map |
 | **Network Connection Map** [2] | Latitude/Longitude coordinate nodes + Origin-Destination Link pairs [2] | Display flows and physical pathways across regions [2] | Vector lines, curves (Great-Circle arcs), and node markers [2] | Spatial node-link overlay |
 
----
 
 ## 2. Comparing Categories: Relative and Absolute Value Comparisons
 
@@ -79,7 +77,6 @@ Categorical comparison visualizations show how relative and absolute variables c
   * **Tableau:** Use the `Gantt Bar` mark type, mapping the minimum value to the Columns shelf and the range span (max minus min) to the Size shelf.
   * **Python:** Use `matplotlib.pyplot.barh` and pass the minimum values to the `left` parameter.
 
----
 
 ### B. Sankey Diagram
 
@@ -105,7 +102,6 @@ Categorical comparison visualizations show how relative and absolute variables c
   * **JavaScript:** Use the `d3-sankey` library to calculate node and link coordinates.
   * **Python:** Use `plotly.graph_objects.Sankey` to generate interactive, draggable flow networks.
 
----
 
 ### C. Small Multiples
 
@@ -130,7 +126,6 @@ Categorical comparison visualizations show how relative and absolute variables c
   * **R/ggplot2:** Use `facet_wrap(~ region, ncol = 3)`.
   * **Seaborn:** Use `sns.FacetGrid(data, col="region")`.
 
----
 
 ## 3. Assessing Hierarchies: Part-to-Whole and Structural Visualizations
 
@@ -161,7 +156,6 @@ Hierarchical visualizations display the relationships between nested categories,
   * **D3.js:** Use the `d3.pack()` layout engine to compute circle coordinates.
   * **Python:** Use the `circlify` library to calculate nested coordinates, then render them using `matplotlib`.
 
----
 
 ### B. Bubble Hierarchy
 
@@ -188,7 +182,6 @@ Hierarchical visualizations display the relationships between nested categories,
   * Use D3's `d3-force` engine with `forceCollide` to keep bubbles separated.
   * Use NetworkX in Python to calculate tree structures, and Plotly to render the interactive layout.
 
----
 
 ## 4. Mapping Geospatial Data: Spatial Representations and Coordinate Systems
 
@@ -203,7 +196,6 @@ graph TD
     end
 ```
 
----
 
 ### A. Choropleth Map
 
@@ -227,7 +219,6 @@ graph TD
 * **Practical Implementation Notes:**
   * Bind spatial coordinate boundaries (GeoJSON or TopoJSON) to your dataset using web tools like Leaflet, Mapbox, or Python's `folium` library.
 
----
 
 ### B. Isothermic Normalization Map (Demographic Area Correction)
 
@@ -251,7 +242,6 @@ graph TD
 * **Practical Implementation Notes:**
   * Use cartogram plugins in QGIS, or the `cartogram` library in R, to calculate distorted boundary coordinates before rendering.
 
----
 
 ### C. Network Connection Map
 
@@ -276,7 +266,6 @@ graph TD
   * **Python:** Use `cartopy` or `geopandas` to calculate curved Great-Circle arcs between coordinate points.
   * **JavaScript:** Use WebGL engines like `deck.gl` to render high-performance, interactive connection lines in the browser.
 
----
 
 ## 5. Technical Geospatial Pipeline & Processing
 
@@ -326,7 +315,6 @@ To keep map files small and fast, use the **TopoJSON** format instead of GeoJSON
 }
 ```
 
----
 
 ## 6. Advanced Performance, Edge Cases, and Debugging
 
@@ -347,7 +335,6 @@ graph TD
 * **Display Data at Multiple Scales:** Provide toggles that let users switch between county-level, state-level, and census-tract views to see the data clearly at different granularities.
 * **Add Spatial Density Overlays:** Use a secondary layer, such as dot-density plots, over the choropleth map to show exactly where the population is concentrated within each boundary.
 
----
 
 ### B. High-Density Vector Mapping Performance
 
@@ -371,7 +358,6 @@ gdf["geometry"] = gdf["geometry"].simplify(tolerance=0.001, preserve_topology=Tr
 gdf.to_file("us_counties_optimized.geojson", driver="GeoJSON")
 ```
 
----
 
 ### C. Colorblind-Friendly Map Styling
 
@@ -382,7 +368,6 @@ Using a standard green-to-red color palette (such as green for low unemployment,
 * **Use Colorblind-Friendly Palettes:** Use perceptually uniform palettes like **Viridis** (blue-to-yellow) or **Cividis** that remain clear and distinguishable for all colorblind viewers.
 * **Test Your Map's Contrast:** Convert your map to grayscale to ensure there is enough contrast and brightness variation for readers to tell the regions apart without relying on color alone.
 
----
 
 ## References
 [1] Comparing Categories of Plots Transcript, Page 1.
