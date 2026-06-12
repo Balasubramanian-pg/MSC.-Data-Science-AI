@@ -2,7 +2,6 @@
 
 ## Reading Material: Conditions for Factor Analysis
 
-
 ### 1. Foundational Assumptions: Ensuring Factorability
 ![[Pasted image 20260525122624.png]]
 Factor Analysis is not a "black box" that works on any dataset. Because it relies on analyzing the _patterns of correlation_ between variables to uncover hidden latent factors, if your data doesn't contain reliable underlying associations, the results will be mathematically unstable and interpretatively useless.
@@ -216,7 +215,11 @@ The KMO statistic is essentially a ratio. It tests the relationship between the 
     
 - **The [Formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula):** The KMO index is calculated as:
     
-    $$\text{KMO} = [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\sum \sum_{i \neq j} r_{ij}^2}{\sum \sum_{i \neq j} r_{ij}^2 + \sum \sum_{i \neq j} \text{pr}_{ij}^2}$$
+
+$$
+\text{KMO} = [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\sum \sum_{i \neq j} r_{ij}^2}{\sum \sum_{i \neq j} r_{ij}^2 + \sum \sum_{i \neq j} \text{pr}_{ij}^2}
+$$
+
     
 
 #### Interpreting the "Grade"
