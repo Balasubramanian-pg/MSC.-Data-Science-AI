@@ -12,16 +12,16 @@ You are stepping into the engine room of modern statistics. While methods like h
 
 Most statistical methods you have studied start with a known model and ask: _"Given this model, what is the probability of observing this data?"_
 
-MLE flips this [question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#question)) on its head: **"Given that we have already observed this specific data, what parameter values make this observation the most likely to have occurred?"**
+MLE flips this [question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Residual%20Analysis.md#question)) on its head: **"Given that we have already observed this specific data, what parameter values make this observation the most likely to have occurred?"**
 
-- **[Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition))):** Imagine you are observing the efficacy of a new drug in a small patient cohort. You don't know the true underlying success rate ($\theta$). MLE asks you to search through all possible values of $\theta$ and pick the one that maximizes the probability (likelihood) of the specific results you see in your trial.
+- **[Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Residual%20Analysis.md#intuition))):** Imagine you are observing the efficacy of a new drug in a small patient cohort. You don't know the true underlying success rate ($\theta$). MLE asks you to search through all possible values of $\theta$ and pick the one that maximizes the probability (likelihood) of the specific results you see in your trial.
     
 
-### [2. Key Objectives for this Module](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis/L0/Module%2010%20-%20Cluster%20Analysis.md#2-key-objectives-for-this-module)
+### [2. Key Objectives for this Module](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis/L0/Module%2010%20-%20Cluster%20Analysis.md#2-key-objectives-for-this-module)
 
 We will break this down into three rigorous steps:
 
-#### A. The [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition))) of Likelihood
+#### A. The [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Residual%20Analysis.md#intuition))) of Likelihood
 
 We will move beyond the common confusion between "probability" and "likelihood."
 
@@ -36,7 +36,7 @@ We will move beyond the common confusion between "probability" and "likelihood."
 
 We will formalize the construction of the Likelihood function ($L(\theta)$) and its mathematical companion, the **Log-Likelihood** ($\ell(\theta)$).
 
-- Why logs? Because multiplying many small [probabilities](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L2/Reading%201%20An%20Introduction%20to%20Decision%20Theory.md#probabilities) causes numerical underflow. Logarithms transform multiplication into addition, making complex likelihoods mathematically manageable and easier to maximize.
+- Why logs? Because multiplying many small [probabilities](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01%20-%20Basic%20Probability%20&%20Statistics/L2/Reading%201%20An%20Introduction%20to%20Decision%20Theory.md#probabilities) causes numerical underflow. Logarithms transform multiplication into addition, making complex likelihoods mathematically manageable and easier to maximize.
     
 
 #### C. Derivation and Computation
@@ -59,10 +59,10 @@ This is the technical core of the module:
 |**Performance**|Can be inefficient|Asymptotically optimal (best possible)|
 |**Business Use**|Quick heuristics|Deep learning, clinical modeling|
 
-### [Moving Forward](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10 - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis - Cluster Analysis/L0/Module%2010%20-%20Cluster%20Analysis.md#moving-forward)
+### [Moving Forward](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W10%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis%20-%20Cluster%20Analysis/L0/Module%2010%20-%20Cluster%20Analysis.md#moving-forward)
 
 MLE is not just a technique; it is a mindset. Once you understand it, you will see how regression, clustering, and even deep learning are simply different ways of defining a "likelihood" to be maximized.
 
-**To get us started, would you like to dive into the mathematical distinction between "Probability" and "Likelihood," or shall we jump directly into building a simple Likelihood function for a concrete [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) like a Binomial (coin-flip) distribution?**
+**To get us started, would you like to dive into the mathematical distinction between "Probability" and "Likelihood," or shall we jump directly into building a simple Likelihood function for a concrete [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) like a Binomial (coin-flip) distribution?**
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
