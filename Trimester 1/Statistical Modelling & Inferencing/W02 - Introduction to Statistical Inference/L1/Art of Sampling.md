@@ -238,16 +238,16 @@ graph LR
     A --> C[Dispersion]
     A --> D[Shape]
     A --> E[Association]
-    B --> B1[Mean: $\\bar{Y}$]
+    B --> B1[Mean: $\bar{Y}$]
     B --> B2[Median: $M$]
     B --> B3[Mode]
-    C --> C1[Variance: $\\sigma^2$]
-    C --> C2[SD: $\\sigma$]
+    C --> C1[Variance: $\sigma^2$]
+    C --> C2[SD: $\sigma$]
     C --> C3[Range: $R$]
-    D --> D1[Skewness: $\\gamma_1$]
-    D --> D2[Kurtosis: $\\gamma_2$]
-    E --> E1[Covariance: $\\sigma_{xy}$]
-    E --> E2[Correlation: $\\rho$]
+    D --> D1[Skewness: $\gamma_1$]
+    D --> D2[Kurtosis: $\gamma_2$]
+    E --> E1[Covariance: $\sigma_{xy}$]
+    E --> E2[Correlation: $\rho$]
 ```
 
 ## 2.3 The Sample
@@ -471,7 +471,7 @@ flowchart LR
     D --> E[Locate Units]
     E --> F[Collect Data y_i]
     F --> G[Compute Statistics]
-    G --> H[Sample Mean $\\bar{y}$]
+    G --> H[Sample Mean $\bar{y}$]
     G --> I[Sample Variance $s^2$]
     G --> J[Standard Error SE]
     J --> K[Confidence Interval]
@@ -629,7 +629,7 @@ graph TD
     E3 --> F
     E4 --> F
     E5 --> F
-    F --> G[Stratified Estimate $\\bar{y}_{st}$]
+    F --> G[Stratified Estimate $\bar{y}_{st}$]
     style G fill:#c8e6c9,stroke:#333,stroke-width:3px
 ```
 
@@ -1387,7 +1387,7 @@ graph TD
     A --> D[Efficiency]
     A --> E[Sufficiency]
     A --> F[Robustness]
-    B --> B1[E = $\\theta$]
+    B --> B1[E = $\theta$]
     C --> C1[Converges in Probability]
     D --> D1[Minimum Variance]
     D --> D2[Cramér-Rao Bound]
@@ -1543,8 +1543,8 @@ graph TD
     C --> C1[Percentile Bootstrap]
     C --> C2[BCa Bootstrap]
     C --> C3[Jackknife]
-    B1 --> D[Mean, Known $\\sigma^2$]
-    B2 --> E[Mean, Unknown $\\sigma^2$]
+    B1 --> D[Mean, Known $\sigma^2$]
+    B2 --> E[Mean, Unknown $\sigma^2$]
     B3 --> F[Variance]
     B4 --> G[Ratio of Variances]
     C1 --> H[Any Statistic]
