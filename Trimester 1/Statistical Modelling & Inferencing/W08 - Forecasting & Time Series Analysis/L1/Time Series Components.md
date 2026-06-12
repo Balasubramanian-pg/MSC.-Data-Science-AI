@@ -2,7 +2,6 @@
 
 ## Reading Material: Time Series Components
 
-
 ### 1. The Philosophy of Decomposition: The "Symphony" Analogy
 
 To understand decomposition, imagine a symphony. A raw time series is the combined audio of a hundred instruments playing at once—it sounds complex, potentially overwhelming, and hard to follow. Decomposition is the process of using an **equalizer** to isolate the individual sections: the deep, steady beat of the percussion (the Trend), the recurring melody (the Seasonality), and the unpredictable background chatter of the audience (the Noise).
@@ -97,14 +96,18 @@ How do we actually put these pieces back together? There are two primary ways to
 
 #### The Additive Model
 
-$$Y_t = T_t + S_t + C_t + I_t$$
+$$
+Y_t = T_t + S_t + C_t + I_t
+$$
 
 - **Use case:** Use this when the amplitude of the seasonal and cyclical fluctuations **does not change** as the trend increases. Imagine a product with a steady seasonal spike of 100 units every December, regardless of whether the annual trend is 1,000 or 10,000.
     
 
 #### The Multiplicative Model
 
-$$Y_t = T_t \times S_t \times C_t \times I_t$$
+$$
+Y_t = T_t \times S_t \times C_t \times I_t
+$$
 
 - **Use case:** Use this when the seasonal and cyclical fluctuations **scale** with the trend. If the December spike represents a 20% increase in sales, as the base trend grows, the _absolute value_ of that spike will also grow. This is the most common model for economic and business time series.
     
@@ -156,9 +159,13 @@ The multiplicative model ($Y_t = T_t \times S_t \times C_t \times I_t$) implies 
 
 What if you are unsure which model to choose? Analysts often use a **log-transformation** to turn a multiplicative relationship into an additive one:
 
-$$\log(Y_t) = \log(T_t \times S_t \times C_t \times I_t)$$
+$$
+\log(Y_t) = \log(T_t \times S_t \times C_t \times I_t)
+$$
 
-$$\log(Y_t) = \log(T_t) + \log(S_t) + \log(C_t) + \log(I_t)$$
+$$
+\log(Y_t) = \log(T_t) + \log(S_t) + \log(C_t) + \log(I_t)
+$$
 
 By taking the natural logarithm of your data, you stabilize the variance, effectively transforming a multiplicative process into an additive one. This is a common preprocessing step before applying models like ARIMA or classical decomposition, as it simplifies the math significantly.
 
