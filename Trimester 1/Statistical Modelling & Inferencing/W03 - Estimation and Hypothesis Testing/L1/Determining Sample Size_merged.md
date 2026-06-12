@@ -19,7 +19,9 @@ We aim to find the minimum $n$ that satisfies a specific **Margin of Error ($E$)
 
 Derived from the $Z$-interval margin of error [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) ($E = Z_{\alpha/2} \cdot [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\sigma}{\sqrt{n}}$), the required sample size is:
 
-$$n = \left( \frac{Z_{\alpha/2} \cdot \sigma}{E} \right)^2$$
+$$
+n = \left( \frac{Z_{\alpha/2} \cdot \sigma}{E} \right)^2
+$$
 
 - **Key Inputs:**
     
@@ -45,7 +47,9 @@ $$n = \left( \frac{Z_{\alpha/2} \cdot \sigma}{E} \right)^2$$
 
 The [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) for proportions is:
 
-$$n = p(1 - p) \left( \frac{Z_{\alpha/2}}{E} \right)^2$$
+$$
+n = p(1 - p) \left( \frac{Z_{\alpha/2}}{E} \right)^2
+$$
 
 #### The "Conservative Estimate" Strategy:
 
@@ -55,7 +59,11 @@ If the population proportion ($p$) is completely unknown, you should use the mos
     
 - **Conservative [Formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula):**
     
-    $$n = 0.25 \left( \frac{Z_{\alpha/2}}{E} \right)^2$$
+
+$$
+n = 0.25 \left( \frac{Z_{\alpha/2}}{E} \right)^2
+$$
+
     
 
 ### 4. [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L2/Reading%202%20Parametric%20vs.%20Non-Parametric%20Methods.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#summary))) Table of Inputs
