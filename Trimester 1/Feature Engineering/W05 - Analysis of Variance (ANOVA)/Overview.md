@@ -1,6 +1,5 @@
 # Week 5: Feature Engineering Techniques for Text Data
 
----
 
 **Module Description**
 
