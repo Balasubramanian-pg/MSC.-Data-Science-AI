@@ -91,7 +91,9 @@ Time series analysis typically follows a structured workflow to ensure accurate 
 
 Time series analysis relies on the assumption that past behavior informs future outcomes. The mathematical representation of a simple moving average is given by:
 
-$$\hat{y}_{t+1} = \frac{1}{k} \sum_{i=0}^{k-1} y_{t-i}$$
+$$
+\hat{y}_{t+1} = \frac{1}{k} \sum_{i=0}^{k-1} y_{t-i}
+$$
 
 Where $k$ is the number of periods used for the average. Exponential smoothing provides more weight to recent observations, defined as $\hat{y}_{t+1} = \alpha y_t + (1 - \alpha) \hat{y}_t$, where $\alpha$ is a smoothing constant between 0 and 1.
 
