@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W11 - Module 4d. Tableau - Module 4d. Tableau
 ---
 
-
 ## Page 1
 
  
@@ -58,7 +57,6 @@ And Salesforce company owns Tableau and it is provided with a various range of
 options that we will see in a while. You have the free version which is Tableau public 
 and you have the paid version and advanced version with desktop and Tableau server 
 
-
 ## Page 2
 
  
@@ -92,6 +90,5 @@ build a very good understanding of the Tableau environment.
  
 ---------------------------------------------------End-------------------------------------------------------- 
  
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
