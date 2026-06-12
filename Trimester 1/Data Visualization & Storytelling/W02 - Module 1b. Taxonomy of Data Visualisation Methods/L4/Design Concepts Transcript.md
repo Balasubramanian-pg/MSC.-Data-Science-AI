@@ -32,7 +32,6 @@ graph TD
     Aes --> Acceptance
 ```
 
----
 
 ### **The Three Pillars of Visual Design**
 
@@ -60,7 +59,6 @@ Affordances are visual clues or artifacts built into a graphic that indicate how
 *   **Purpose:** Creating a visually pleasing presentation that puts the audience in a receptive frame of mind.
 *   **Approach:** Utilizing clean layouts, balanced color palettes, and avoiding messy or disorganized structures. Visuals that look professional and structured are naturally trusted more and are received with less friction.
 
----
 
 ### **Achieving Acceptance (Overcoming Resistance to Change)**
 
