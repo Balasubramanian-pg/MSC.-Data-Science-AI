@@ -151,7 +151,6 @@ Figure + Glyphs + Interactivity + Layouts + Widgets
 
 Source:
 
----
 
 ## 1. The First Principle of Plotting
 
@@ -173,7 +172,6 @@ Most bad visualizations fail because:
 - chart type does not match data structure
     
 
----
 
 ## Example Used in Transcript
 
@@ -185,7 +183,6 @@ $$
 
 which is a parabola.
 
----
 
 ## Visual Intuition
 
@@ -198,7 +195,6 @@ A[X Values]
 --> D[Plot Relationship]
 ```
 
----
 
 ## 2. Creating Data
 
@@ -209,7 +205,6 @@ x = 1 to 50
 y = x squared
 ```
 
----
 
 ## Actual Python
 
@@ -224,7 +219,6 @@ print(x[:5])
 print(y[:5])
 ```
 
----
 
 ## What This Means
 
@@ -244,7 +238,6 @@ Example:
 |4|16|
 |5|25|
 
----
 
 ## Visual Understanding
 
@@ -256,7 +249,6 @@ C[2] --> D[2² = 4]
 E[3] --> F[3² = 9]
 ```
 
----
 
 ## 3. Importing Figure and Show
 
@@ -268,7 +260,6 @@ from bokeh.plotting import figure, show
 
 Source:
 
----
 
 ## Why These Matter
 
@@ -284,7 +275,6 @@ plt.figure()
 
 in Matplotlib.
 
----
 
 ## `show`
 
@@ -297,7 +287,6 @@ Without `show()`:
 
 This is different from Matplotlib notebooks.
 
----
 
 ## Mental Model
 
@@ -309,11 +298,9 @@ A[Create Figure]
 --> C[Render using show()]
 ```
 
----
 
 ## 4. First Complete Bokeh Plot
 
----
 
 ## Code
 
@@ -349,7 +336,6 @@ p.line(
 show(p)
 ```
 
----
 
 ## What Happens Internally
 
@@ -363,7 +349,6 @@ A[Data]
 --> E[Browser Rendering]
 ```
 
----
 
 ## 5. What Is a Glyph?
 
@@ -375,7 +360,6 @@ Transcript:
 
 Source:
 
----
 
 ## Simple Definition
 
@@ -396,7 +380,6 @@ A glyph is:
 
 Any visual object representing data.
 
----
 
 ## Mental Model
 
@@ -408,7 +391,6 @@ Glyph
 Visual Representation
 ```
 
----
 
 ## Examples
 
@@ -419,7 +401,6 @@ Visual Representation
 |vbar()|vertical bars|
 |square()|square markers|
 
----
 
 ## 6. Line Glyph
 
@@ -431,7 +412,6 @@ p.line(x, y)
 
 Source:
 
----
 
 ## What It Actually Does
 
@@ -445,7 +425,6 @@ p.line(
 )
 ```
 
----
 
 ## Parameters Explained
 
@@ -457,7 +436,6 @@ p.line(
 |color|line color|
 |legend_label|legend text|
 
----
 
 ## Visual Pipeline
 
@@ -473,7 +451,6 @@ C[Y Array]
 B --> D[Interactive Line]
 ```
 
----
 
 ## 7. Interactivity Features
 
@@ -492,7 +469,6 @@ Transcript highlights:
 
 Source:
 
----
 
 ## This Is The Key Difference
 
@@ -506,7 +482,6 @@ Bokeh:
 - browser application mindset
     
 
----
 
 ## Built-In Interactive Tools
 
@@ -516,7 +491,6 @@ p = figure(
 )
 ```
 
----
 
 ## Tool Breakdown
 
@@ -528,7 +502,6 @@ p = figure(
 |reset|restore|
 |save|export PNG|
 
----
 
 ## Visual Interaction Model
 
@@ -541,7 +514,6 @@ A[Mouse Action]
 --> D[Update Plot]
 ```
 
----
 
 ## 8. Adding Multiple Glyphs
 
@@ -558,7 +530,6 @@ on SAME plot.
 
 Source:
 
----
 
 ## Why This Matters
 
@@ -571,7 +542,6 @@ Modern visualizations combine:
 - multiple visual meanings
     
 
----
 
 ## Example
 
@@ -619,7 +589,6 @@ p.square(
 show(p)
 ```
 
----
 
 ## Visual Structure
 
@@ -634,7 +603,6 @@ A --> C[Circle Glyph]
 A --> D[Square Glyph]
 ```
 
----
 
 ## 9. Why Multiple Glyphs Matter
 
@@ -651,7 +619,6 @@ This enables:
 - multi-series charts
     
 
----
 
 ## Real Analytics Example
 
@@ -661,7 +628,6 @@ This enables:
 |circles|actual observations|
 |squares|forecast points|
 
----
 
 ## 10. Clickable Legends
 
@@ -673,7 +639,6 @@ legend.click_policy = "hide"
 
 Source:
 
----
 
 ## Why This Is Powerful
 
@@ -686,7 +651,6 @@ Users can:
 - compare categories dynamically
     
 
----
 
 ## Example
 
@@ -694,7 +658,6 @@ Users can:
 p.legend.click_policy = "hide"
 ```
 
----
 
 ## Behavior
 
@@ -704,7 +667,6 @@ Click Legend
 Glyph Visibility Toggles
 ```
 
----
 
 ## This Is Huge In Dashboards
 
@@ -722,7 +684,6 @@ Instead of filtering data:
 
 Very efficient.
 
----
 
 ## 11. Widgets
 
@@ -730,7 +691,6 @@ Transcript introduces widgets.
 
 Source:
 
----
 
 ## What Are Widgets?
 
@@ -745,7 +705,6 @@ Widgets are UI controls:
 - buttons
     
 
----
 
 ## Core Idea
 
@@ -757,7 +716,6 @@ User Controls
 Interactive Analytics
 ```
 
----
 
 ## Date Range Slider Example
 
@@ -778,7 +736,6 @@ slider = DateRangeSlider(
 show(slider)
 ```
 
----
 
 ## Why This Matters
 
@@ -793,7 +750,6 @@ User controls:
 
 without changing code.
 
----
 
 ## Dashboard Interaction Model
 
@@ -805,7 +761,6 @@ A[User Slider]
 --> C[Update Visualization]
 ```
 
----
 
 ## 12. Layouts
 
@@ -818,7 +773,6 @@ Transcript explains:
 
 Source:
 
----
 
 ## Why Layouts Matter
 
@@ -840,7 +794,6 @@ They contain:
 - charts
     
 
----
 
 ## Row Layout
 
@@ -850,7 +803,6 @@ from bokeh.layouts import row
 show(row(plot1, plot2, plot3))
 ```
 
----
 
 ## Column Layout
 
@@ -860,7 +812,6 @@ from bokeh.layouts import column
 show(column(plot1, plot2, plot3))
 ```
 
----
 
 ## Visual Understanding
 
@@ -870,7 +821,6 @@ show(column(plot1, plot2, plot3))
 [Plot1] [Plot2] [Plot3]
 ```
 
----
 
 ## Column
 
@@ -880,7 +830,6 @@ show(column(plot1, plot2, plot3))
 [Plot3]
 ```
 
----
 
 ## 13. Full Layout Example
 
@@ -911,7 +860,6 @@ layout = row(p1, p2, p3)
 show(layout)
 ```
 
----
 
 ## Internal Architecture
 
@@ -930,7 +878,6 @@ C[Plot 3]
 D --> E[Dashboard]
 ```
 
----
 
 ## 14. Important Design Insight
 
@@ -951,7 +898,6 @@ It is:
 
 combined.
 
----
 
 ## 15. Bokeh vs Traditional Plotting
 
@@ -962,7 +908,6 @@ combined.
 |passive viewing|exploratory|
 |chart-focused|application-focused|
 
----
 
 ## 16. Real Industry Usage
 
@@ -977,7 +922,6 @@ Bokeh becomes valuable when:
 - data updates live
     
 
----
 
 ## Typical Use Cases
 
@@ -989,7 +933,6 @@ Bokeh becomes valuable when:
 |Logistics|shipment tracking|
 |Data Science|model diagnostics|
 
----
 
 ## 17. Complete Mental Model
 
@@ -1010,7 +953,6 @@ E --> F[Layouts]
 F --> G[Interactive Dashboard]
 ```
 
----
 
 ## Final Takeaways
 
@@ -1030,7 +972,6 @@ Layouts
 Dashboard
 ```
 
----
 
 ## Most Important Concepts
 
@@ -1043,7 +984,6 @@ Dashboard
 |layouts|arrange plots|
 |legend click policy|dynamic visibility|
 
----
 
 ## Biggest Conceptual Shift
 
