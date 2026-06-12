@@ -26,7 +26,6 @@ from bokeh.layouts import row, column, gridplot
 ## JavaScript library (BokehJS) to render interactive output inline.
 output_notebook()
 
-
 ## =====================================================================
 ## 2. SECTIONS 7 & 8: Layered Glyph Architecture & Interactive Legends
 ## =====================================================================
@@ -79,7 +78,6 @@ p.legend.location = "top_left"
 ## Deploy canvas components to the browser window
 show(p)
 
-
 ## =====================================================================
 ## 3. SECTION 9: Interactive UI Widgets (Standalone Layer)
 ## =====================================================================
@@ -93,7 +91,6 @@ date_range_slider = DateRangeSlider(
 )
 
 show(date_range_slider)
-
 
 ## =====================================================================
 ## 4. SECTION 10: Advanced Document Layout Architecture
@@ -116,7 +113,6 @@ p_cube.line(x_curve, y_cubic, color="green", line_width=3)
 ## Arrange horizontally as an integrated sub-layout row row array
 function_dashboard = row(p_quad, p_cube)
 show(function_dashboard)
-
 
 ## --- Example B: Heterogeneous Distribution Metrics (Grid Layout) ---
 x_scatter = list(range(11))
