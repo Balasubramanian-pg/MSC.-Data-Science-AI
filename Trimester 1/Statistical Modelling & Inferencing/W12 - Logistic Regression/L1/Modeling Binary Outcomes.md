@@ -2,7 +2,6 @@
 
 ## Reading Material: Modeling Binary Outcomes
 
-
 **Contents**  
 I Modeling [Probabilities](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L2/Reading%201%20An%20Introduction%20to%20Decision%20Theory.md#probabilities)  
 1 The Linear Probability Model (LPM)   
@@ -53,7 +52,6 @@ However, for any model intended for **forecasting, clinical trial interpretation
 
 **Would you like to move on to Section 1.2, where we introduce the Logistic Function (the S-curve) that solves these boundary and [linearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#linearity) problems, or are you interested in how we use MLE specifically to estimate the parameters of a Logistic Regression?**
 
-
 ### 1.2 The Flaws of the Linear Probability Model (LPM)
 
 The Linear Probability Model (LPM) is a classic [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) of why mathematical convenience—using standard OLS regression—does not always translate into statistical validity. While the coefficients in an LPM are easy to explain, the model fundamentally misrepresents the nature of binary data.
@@ -69,7 +67,9 @@ Probability, by definition, is bounded between 0 and 1. Because the LPM is a lin
 
 OLS regression assumes that the variance of the error term ($\epsilon$) is constant (homoskedasticity). In an LPM, the variance of the error is actually a function of the probability itself:
 
-$$\text{Var}(\epsilon_i) = p_i(1 - p_i)$$
+$$
+\text{Var}(\epsilon_i) = p_i(1 - p_i)
+$$
 
 As the predicted probability ($p_i$) approaches 0 or 1, the variance of the error term shrinks toward 0. As it approaches 0.5, the variance hits its maximum.
 
@@ -91,7 +91,9 @@ This is a **Bernoulli distribution**, not a Normal distribution. Because the err
 
 These flaws are not just minor inconveniences; they are "fatal" to the model's performance in professional analytics. This is why we move to **Logistic Regression**, which uses a non-linear **Sigmoid (S-curve) function**:
 
-$$P(Y=1) = \frac{1}{1 + e^{-(\beta_0 + \beta_1X)}}$$
+$$
+P(Y=1) = \frac{1}{1 + e^{-(\beta_0 + \beta_1X)}}
+$$
 
 - **Boundaries:** The S-curve naturally asymptotes at 0 and 1, making it physically impossible to predict an "impossible" probability.
     
@@ -110,7 +112,9 @@ By using an **S-shaped (sigmoidal) curve**, we ensure that even for extreme valu
 
 The Logit model uses the **Logistic Function**, defined by the mathematical constant $e$.
 
-$$P(Y = 1|X) = \frac{e^{\beta_0 + \beta_1X}}{1 + e^{\beta_0 + \beta_1X}}$$
+$$
+P(Y = 1|X) = \frac{e^{\beta_0 + \beta_1X}}{1 + e^{\beta_0 + \beta_1X}}
+$$
 
 ]
 
@@ -118,7 +122,11 @@ $$P(Y = 1|X) = \frac{e^{\beta_0 + \beta_1X}}{1 + e^{\beta_0 + \beta_1X}}$$
     
 - **The "Log-Odds" Link:** If you rearrange the algebra, you get:
     
-    $$\ln\left(\frac{P}{1-P}\right) = \beta_0 + \beta_1X$$
+
+$$
+\ln\left(\frac{P}{1-P}\right) = \beta_0 + \beta_1X
+$$
+
     
     This allows us to model the **log-odds** linearly, which is the secret to its intuitive interpretability.
     
@@ -127,7 +135,9 @@ $$P(Y = 1|X) = \frac{e^{\beta_0 + \beta_1X}}{1 + e^{\beta_0 + \beta_1X}}$$
 
 The Probit model replaces the logistic function with the **[Cumulative Distribution Function (CDF)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L1/Probability%20and%20Distribution.md#cumulative-distribution-function-cdf) of the Standard Normal Distribution**, denoted as $\Phi$:
 
-$$P(Y = 1|X) = \Phi(\beta_0 + \beta_1X)$$
+$$
+P(Y = 1|X) = \Phi(\beta_0 + \beta_1X)
+$$
 
 - **Conceptual Difference:** While Logit assumes the latent errors follow a _Logistic distribution_ (which has "heavier tails"), Probit assumes the errors follow a _Normal distribution_.
     
@@ -172,7 +182,9 @@ Think of a horse race. If the probability of a horse winning is $0.75$, the prob
 
 The "Logit" is simply the natural log of those odds: $\ln(\text{Odds})$. By transforming the S-curve into the Logit, we turn the non-linear relationship back into a **linear** one:
 
-$$\ln\left(\frac{P}{1-P}\right) = \beta_0 + \beta_1X$$
+$$
+\ln\left(\frac{P}{1-P}\right) = \beta_0 + \beta_1X
+$$
 
 - **The Mathematical Reality:** $\beta_1$ tells us the change in _log-odds_.
     
