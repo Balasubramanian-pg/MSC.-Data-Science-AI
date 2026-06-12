@@ -8,8 +8,8 @@
 
 In both simple and multiple regression, the total variation in the [response variable](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#response))-variable) is decomposed into:
 
-$$  
-SST = SSR + SSE  
+$$
+SST = SSR + SSE
 $$
 
 Where:
@@ -22,14 +22,13 @@ Where:
 
 The standard [coefficient of determination](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#coefficient-of-determination) is still:
 
-$$  
-R^2 = \frac{SSR}{SST}  
+$$
+R^2 = \frac{SSR}{SST}
 $$
 
 Interpretation:
 
 > Proportion of variance in (Y) explained by the [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#predictors)).
-
 
 ## 2. Why (R^2) Seems Attractive
 
@@ -55,7 +54,6 @@ Higher (R^2) appears to [mean](https://github.com/Balasubramanian-pg/MSC.-Data-S
 
 But this [intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition)))) breaks badly in multiple regression.
 
-
 ## 3. The Fundamental Flaw of (R^2)
 
 In multiple regression:
@@ -75,15 +73,14 @@ Even if the new predictor is:
 
 This is one of the most important conceptual traps in regression.
 
-
 ## 4. Why This Happens
 
 OLS is fundamentally an optimization algorithm.
 
 Its objective:
 
-$$  
-\min SSE  
+$$
+\min SSE
 $$
 
 When we add another predictor:
@@ -96,7 +93,6 @@ When we add another predictor:
     
 
 This allows the model to fit random [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)) slightly better.
-
 
 ## 5. [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition)))): The “Flexible Curve” Problem
 
@@ -122,13 +118,12 @@ This does NOT [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/
 
 It may simply memorize [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)).
 
-
 ## 6. The Mathematical Mechanism
 
 Recall:
 
-$$  
-R^2 = 1 - \frac{SSE}{SST}  
+$$
+R^2 = 1 - \frac{SSE}{SST}
 $$
 
 Since:
@@ -140,12 +135,11 @@ Since:
 
 then:
 
-$$  
-R^2  
+$$
+R^2
 $$
 
 must stay the same or increase.
-
 
 ## 7. [Why This Is Dangerous](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#why-this-is-dangerous)
 
@@ -159,8 +153,8 @@ Suppose we compare:
 
 Pure (R^2) may rank:
 
-$$  
-C > B > A  
+$$
+C > B > A
 $$
 
 even when extra variables are useless.
@@ -168,7 +162,6 @@ even when extra variables are useless.
 This creates:
 
 ## Overfitting
-
 
 ## 8. Overfitting
 
@@ -183,7 +176,6 @@ Overfitting occurs when a model learns:
 
 instead of underlying structure.
 
-
 ## 9. The Core Tradeoff
 
 Regression always balances:
@@ -197,7 +189,6 @@ Regression always balances:
 This is the:
 
 ## [Bias-Variance Tradeoff](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#bias-variance-tradeoff)
-
 
 ## 10. Why We Need a Penalty
 
@@ -215,20 +206,21 @@ Standard (R^2) rewards fit only.
 
 It ignores complexity entirely.
 
-
 ## 11. The Solution: [Adjusted (R^2)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#adjusted-r2)
 
 [Adjusted (R^2)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#adjusted-r2) modifies ordinary (R^2) by incorporating a complexity penalty.
 
 [Formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula):
 
-## $$  
+##
+
+$$
 R^2_{adj}
 
 ## 1
 
 \frac{SSE/(n-k-1)}  
-{SST/(n-1)}  
+{SST/(n-1)}
 $$
 
 Where:
@@ -238,39 +230,43 @@ Where:
 |(n)|Number of observations|
 |(k)|Number of [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#predictors))|
 
-
 ## 12. Rewriting the [Formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula)
 
 Notice:
 
-## $$  
+##
+
+$$
 \frac{SSE}{n-k-1}
 
-MSE  
+MSE
 $$
 
 [Mean Square Error](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean)-square-error).
 
 And:
 
-## $$  
+##
+
+$$
 \frac{SST}{n-1}
 
-MST  
+MST
 $$
 
 [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) Square Total.
 
 Thus:
 
-## $$  
+##
+
+$$
 R^2_{adj}
 
 ## 1
 
-\frac{MSE}{MST}  
+\frac{MSE}{MST}
 $$
-
 
 ## 13. Deep Interpretation
 
@@ -282,19 +278,18 @@ This is fundamentally:
 
 ## performance-per-parameter
 
-
 ## 14. How the Penalty Works
 
 Adding a predictor increases:
 
-$$  
-k  
+$$
+k
 $$
 
 which reduces:
 
-$$  
-n-k-1  
+$$
+n-k-1
 $$
 
 This makes the denominator of MSE smaller.
@@ -307,7 +302,6 @@ Thus:
     
 - only useful [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#predictors)) improve [adjusted (R^2)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#adjusted-r2)
     
-
 
 ## 15. [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition)))) Using Real Numbers
 
@@ -327,7 +321,6 @@ Thus:
 - [adjusted (R^2)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#adjusted-r2) rises only for meaningful improvement
     
 
-
 ## 16. Important Consequence
 
 Unlike ordinary (R^2):
@@ -345,7 +338,6 @@ It allows:
 - overfitting detection
     
 
-
 ## 17. [Adjusted (R^2)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#adjusted-r2) as a Parsimony Metric
 
 [Adjusted (R^2)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#adjusted-r2) prefers:
@@ -358,7 +350,6 @@ Meaning:
 
 This idea appears everywhere in science.
 
-
 ## 18. Occam’s Razor Connection
 
 [Adjusted (R^2)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#adjusted-r2) operationalizes:
@@ -366,7 +357,6 @@ This idea appears everywhere in science.
 ## Occam’s Razor
 
 Simpler explanations are preferred unless added complexity produces meaningful gains.
-
 
 ## 19. Why [Adjusted (R^2)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#adjusted-r2) Is Better for Model Comparison
 
@@ -386,13 +376,12 @@ Interpretation:
 - Model B added complexity without meaningful explanatory improvement.
     
 
-
 ## 20. Large Gap Warning [Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal))
 
 If:
 
-$$  
-R^2 - R^2_{adj}  
+$$
+R^2 - R^2_{adj}
 $$
 
 is large:
@@ -406,27 +395,24 @@ this suggests:
 - inflated complexity
     
 
-
 ## 21. Can [Adjusted (R^2)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#adjusted-r2) Be Negative?
 
 Yes.
 
 This surprises many students.
 
-
 ## [Why?](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#why)
 
 If the model performs worse than expected by random chance:
 
-$$  
-R^2_{adj} < 0  
+$$
+R^2_{adj} < 0
 $$
 
 This indicates:
 
 - [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#predictors)) contribute essentially no useful information
     
-
 
 ## 22. Comparison with Standard (R^2)
 
@@ -437,7 +423,6 @@ This indicates:
 |Useful for model comparison|Weakly|Strongly|
 |Can be negative|No|Yes|
 |Overfitting resistant|No|Better|
-
 
 ## 23. Geometric Interpretation
 
@@ -452,7 +437,6 @@ Ordinary (R^2):
 
 - asks whether expanded geometry genuinely improves approximation quality
     
-
 
 ## 24. Connection to Machine Learning
 
@@ -469,7 +453,6 @@ Modern ML uses stronger complexity penalties:
 |Lasso|L1 penalty|
 |AIC/BIC|Information penalties|
 
-
 ## 25. Why Training Accuracy Is Dangerous
 
 Pure (R^2) behaves like:
@@ -483,7 +466,6 @@ But predictive systems must generalize to:
 ## unseen data
 
 [Adjusted (R^2)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#adjusted-r2) partially compensates for this.
-
 
 ## 26. Limitations of [Adjusted (R^2)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#adjusted-r2)
 
@@ -499,7 +481,6 @@ It does NOT fully solve:
     
 - [multicollinearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#[multicollinearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#[multicollinearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#multicollinearity)))
     
-
 
 ## 27. Better Modern Alternatives
 
@@ -518,7 +499,6 @@ In predictive modeling, stronger evaluation tools include:
 
 Still, [adjusted (R^2)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#adjusted-r2) remains highly useful in classical regression.
 
-
 ## [28. Python Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#28-python-[example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example))
 
 ```python
@@ -527,20 +507,57 @@ import statsmodels.api as sm
 
 ## Example dataset
 data = pd.DataFrame({
-    "x1": $$1, 2, 3, 4, 5$$,
-    "x2": $$5, 4, 3, 2, 1$$,
-    "noise": $$7, 1, 8, 2, 9$$,
-    "y": $$10, 15, 20, 25, 30$$
+    "x1":
+
+$$
+1, 2, 3, 4, 5
+$$
+
+,
+    "x2":
+
+$$
+5, 4, 3, 2, 1
+$$
+
+,
+    "noise":
+
+$$
+7, 1, 8, 2, 9
+$$
+
+,
+    "y":
+
+$$
+10, 15, 20, 25, 30
+$$
+
 })
 
 ## Predictors
-X = data$$$$"x1", "x2", "noise"$$$$
+X = data
+
+$$
+
+$$
+
+"x1", "x2", "noise"
+
+$$
+
+$$
 
 ## Add intercept
 X = sm.add_constant(X)
 
 ## Response
-y = data$$"y"$$
+y = data
+
+$$
+"y"
+$$
 
 ## Fit model
 model = sm.OLS(y, X).fit()
@@ -550,24 +567,48 @@ print("R²:", model.rsquared)
 print("Adjusted R²:", model.rsquared_adj)
 ```
 
-
 ## 29. Practical Workflow
 
 ```mermaid
 flowchart TD
 
-A$$Fit Candidate Models$$
---> B$$Compute R²$$
+A
 
-B --> C$$Compute Adjusted R²$$
+$$
+Fit Candidate Models
+$$
 
-C --> D$$Compare Model Complexity$$
+--> B
 
-D --> E$$Select Most Parsimonious Model$$
+$$
+Compute R²
+$$
 
-E --> F$$Validate with Diagnostics$$
+B --> C
+
+$$
+Compute Adjusted R²
+$$
+
+C --> D
+
+$$
+Compare Model Complexity
+$$
+
+D --> E
+
+$$
+Select Most Parsimonious Model
+$$
+
+E --> F
+
+$$
+Validate with Diagnostics
+$$
+
 ```
-
 
 ## 30. Statistical Philosophy Behind [Adjusted (R^2)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#adjusted-r2)
 
@@ -577,7 +618,6 @@ E --> F$$Validate with Diagnostics$$
 
 A model should not gain credibility merely by becoming more complicated.
 
-
 ## 31. Common Misconceptions
 
 ## [Misconception 1](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#misconception-1)
@@ -585,7 +625,6 @@ A model should not gain credibility merely by becoming more complicated.
 “Higher (R^2) always means better model.”
 
 False.
-
 
 ## [Misconception 2](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#misconception-2)
 
@@ -595,7 +634,6 @@ False.
 
 May simply fit [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)).
 
-
 ## [Misconception 3](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#misconception-3)
 
 “[Adjusted (R^2)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#adjusted-r2) guarantees no overfitting.”
@@ -604,10 +642,11 @@ False.
 
 It only partially penalizes complexity.
 
-
 ## [32. Final Takeaways](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#32-final-takeaways)
 
-$$!IMPORTANT$$
+$$
+!IMPORTANT
+$$
 
 Ordinary (R^2) has a critical flaw in multiple regression:
 
@@ -619,7 +658,9 @@ This makes it unreliable for model selection.
 
 Core [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula):
 
-## $$
+##
+
+$$
 R^2_{\text{adj}} = 1 - \frac{SSE/(n-k-1)}{SST/(n-1)}
 $$
 
