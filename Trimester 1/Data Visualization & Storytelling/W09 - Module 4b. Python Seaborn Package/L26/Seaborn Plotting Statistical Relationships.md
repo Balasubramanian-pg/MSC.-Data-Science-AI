@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W09 - Module 4b. Python Seaborn Package
 ---
 
-
 ## Page 1
 
  
@@ -57,7 +56,6 @@ your data set. So let us we are first loading the tips data set I will take a mi
 explain this data set we will be using it quite often in this class so it's always whenever 
 you see a new data set or what we have loaded as a data frame it is always good to 
 explore what are the contents in the data set. So by calling the heads I mean head 
-
 
 ## Page 2
 
@@ -112,7 +110,6 @@ can see you can clearly see the distinction this is cross and this is dot so pri
 similarity the gestalt principles of similarity it always is the crosses belong to same 
 group and the dots belong to the same group so though both are dots the mind has to 
 
-
 ## Page 3
 
  
@@ -165,7 +162,6 @@ set or else you can also give the range the system will automatically scale them
 let us try to understand emphasising continuity with line plot so we are now loading a 
 data set called Dow Jones which is nothing but a financial data set it is the index values 
 from the United States so I have loaded Dow Jones so let us look at what is there in 
-
 
 ## Page 4
 
@@ -220,7 +216,6 @@ multiple relationship with facets the main objective of doing this is to underst
 a relationship depends on more than one other variable and you can do this using the 
 facet visualisation because this will help you to plot the things simultaneously across 
 
-
 ## Page 5
 
  
@@ -274,7 +269,6 @@ parietal or frontal region you have the subject as the hue and then column regio
 column is region and row is event so that is how you are distinguishing the graphs now 
 you are trying to build a grid where row row indicates event event is stimulus and Q 
 
-
 ## Page 6
 
  
@@ -318,6 +312,5 @@ explain phenomenon by accounting for different variables.
  
 --------------------------------------------------------End--------------------------------------------------- 
  
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
