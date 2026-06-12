@@ -2,7 +2,6 @@
 
 ## Reading Material: The Chi-Square Test of Independence
 
----
 # 1. Testing for Relationships in Categorical Data
 
 The Chi-Square Test of Independence is used to determine whether two categorical variables are statistically associated.
@@ -240,7 +239,6 @@ $$
 
 This suggests little evidence against independence.
 
----
 
 ## Large Chi-Square Values
 
@@ -352,7 +350,6 @@ The data must consist of frequency counts rather than:
 
 The chi-square test fundamentally analyzes counts.
 
----
 
 ## Random Sampling
 
@@ -360,7 +357,6 @@ The sample should represent the target population reasonably well.
 
 Biased sampling invalidates inference regardless of the mathematical calculations.
 
----
 
 ## Expected Count Condition
 
