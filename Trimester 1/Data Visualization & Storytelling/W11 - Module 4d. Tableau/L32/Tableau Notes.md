@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W11 - Module 4d. Tableau - Module 4d. Tableau
 ---
 
-
 ## Page 1
 
  Tableau:  Lecture Notes 
@@ -44,7 +43,6 @@ Marks Card
 Controls the look and feel of the data 
 marks (Color, Size, Label, Detail, Tooltip, 
 
-
 ## Page 2
 
 Shape). 
@@ -81,7 +79,6 @@ Server/Cloud).
 Metadata is "data about the data." It helps you control how Tableau interprets your raw source 
 data. 
 ●​ Renaming Fields: Give columns business-friendly names (e.g., change Cust_ID to 
-
 
 ## Page 3
 
@@ -120,7 +117,6 @@ Includes all rows from both tables.
 Non-matches get null where applicable. 
  
 
-
 ## Page 4
 
 B. Data Blending (For Different, Dissimilar Sources) 
@@ -147,6 +143,5 @@ narrative about the data.
 [Sales] - [Cost] = [Profit]). 
 ●​ Parameters: Dynamic values that can replace constant values in calculations, filters, and 
 reference lines. They allow the end-user to interactively control parts of the visualization. 
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
