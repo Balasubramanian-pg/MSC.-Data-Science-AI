@@ -77,8 +77,8 @@ The lecture repeatedly stresses that directly training machine learning models o
 
 This leads to the classic principle:
 
-$$  
-Garbage\ In \Rightarrow Garbage\ Out  
+$$
+Garbage\ In \Rightarrow Garbage\ Out
 $$
 
 ## Physical World to Digital Data Conversion
@@ -283,8 +283,8 @@ d(x,y)=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}
 
 If one value is missing:
 
-$$  
-x_i = NULL  
+$$
+x_i = NULL
 $$
 
 then subtraction becomes undefined.
@@ -351,8 +351,8 @@ This strategy assumes a universal replacement value.
 
 Conceptually:
 
-$$  
-x_{missing} = C  
+$$
+x_{missing} = C
 $$
 
 where:
@@ -398,8 +398,8 @@ Example:
 
 If mean salary is:
 
-$$  
-11000  
+$$
+11000
 $$
 
 the missing value may be replaced with 11000.
@@ -410,8 +410,8 @@ The lecture also introduces rule-based filling.
 
 Example rule:
 
-$$  
-Age = 50 \Rightarrow Salary = 10L  
+$$
+Age = 50 \Rightarrow Salary = 10L
 $$
 
 If salary is missing but age is known, the system may infer the missing value using predefined conditions.
