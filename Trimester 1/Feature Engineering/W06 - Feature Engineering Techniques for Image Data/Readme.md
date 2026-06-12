@@ -80,6 +80,7 @@ Once we convolve $I$ with $K_x$ and $K_y$, we calculate the total edge magnitude
 $$
 |G| = \sqrt{G_x^2 + G_y^2}
 $$
+
 $$
 \theta = \arctan\left(\frac{G_y}{G_x}\right)
 $$
@@ -109,9 +110,11 @@ To avoid computing eigenvalues directly (which is computationally expensive), Ha
 $$
 R = \det(M) - k(\text{trace}(M))^2
 $$
+
 $$
 R = (\lambda_1 \lambda_2) - k(\lambda_1 + \lambda_2)^2
 $$
+
 If $R > \text{threshold}$, a corner is detected.
 
 ## 7. Python Implementation: Edge and Corner Detection
@@ -272,6 +275,5 @@ While a CNN learns the convolution kernels via backpropagation, classical featur
 1. **SIFT (Scale-Invariant Feature Transform):** Learn how SIFT achieves full scale and rotation invariance using the Difference of Gaussians (DoG) pyramid, forming the bedrock of modern panorama stitching and 3D reconstruction.
 2. **ORB (Oriented FAST and Rotated BRIEF):** A highly optimized, binary feature descriptor used in real-time robotics and SLAM (Simultaneous Localization and Mapping) because it operates orders of magnitude faster than SIFT.
 3. **Transition to Deep Learning:** Study how the first layers of a trained ResNet or VGG16 network mathematically converge to mimic the exact Sobel and Gabor filters explored in this module.
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
