@@ -160,7 +160,6 @@ This becomes the basis for:
 * ML evaluation
 * scientific testing
 
----
 
 ## Comparing Population Variances
 
@@ -185,7 +184,6 @@ Variance inference therefore becomes essential in:
 * quality engineering
 * reliability systems
 
----
 
 ## Hidden Statistical Complexity
 
@@ -266,7 +264,6 @@ This becomes foundational in:
 * healthcare statistics
 * ML classification evaluation
 
----
 
 ## Chi-Square Test of Independence
 
@@ -295,7 +292,6 @@ This becomes extremely important later in:
 * contingency analysis
 * interpretable ML pipelines
 
----
 
 ## Statistical Independence
 
