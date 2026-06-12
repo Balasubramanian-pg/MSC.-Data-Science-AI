@@ -12,8 +12,8 @@ A deterministic relationship follows an exact mathematical rule.
 
 Example:
 
-$$  
-F = ma  
+$$
+F = ma
 $$
 
 F=ma
@@ -50,10 +50,10 @@ Consider:
 
 Generally:
 
-$$  
+$$
 X \uparrow  
 \Rightarrow  
-Y \uparrow  
+Y \uparrow
 $$
 
 but not perfectly.
@@ -98,8 +98,8 @@ One goal of regression is understanding how variables move together on average.
 
 The key inferential question becomes:
 
-$$  
-\text{How much does } Y \text{ change when } X \text{ changes?}  
+$$
+\text{How much does } Y \text{ change when } X \text{ changes?}
 $$
 
 \text{How much does }Y\text{ change when }X\text{ changes?}
@@ -121,14 +121,14 @@ Another major purpose of regression is prediction.
 
 Suppose we know:
 
-$$  
-X=x  
+$$
+X=x
 $$
 
 Regression allows estimation of:
 
-$$  
-\hat{Y}  
+$$
+\hat{Y}
 $$
 
 the predicted value of the response variable.
@@ -150,10 +150,12 @@ The term linear refers to the use of a straight-line relationship.
 
 The model assumes:
 
-# $$  
+#
+
+$$
 Y
 
-\text{Straight-Line Function of } X  
+\text{Straight-Line Function of } X
 $$
 
 Y=\text{Straight-Line Function of }X
@@ -175,8 +177,8 @@ Regression begins visually with scatter plots.
 
 Each point represents an observation:
 
-$$  
-(x_i,y_i)  
+$$
+(x_i,y_i)
 $$
 
 (x_i,y_i)
@@ -213,8 +215,8 @@ It is also called:
 
 It is denoted by:
 
-$$  
-Y  
+$$
+Y
 $$
 
 Y
@@ -236,8 +238,8 @@ The dependent variable is the quantity whose behavior we want to understand.
 
 The independent variable is the predictor used to explain changes in:
 
-$$  
-Y  
+$$
+Y
 $$
 
 It is also called:
@@ -251,8 +253,8 @@ It is also called:
 
 It is denoted by:
 
-$$  
-X  
+$$
+X
 $$
 
 X
@@ -270,14 +272,14 @@ Examples:
 
 Regression attempts to model how:
 
-$$  
-Y  
+$$
+Y
 $$
 
 changes as:
 
-$$  
-X  
+$$
+X
 $$
 
 changes.
@@ -288,14 +290,16 @@ Suppose we could observe the entire population.
 
 The true underlying relationship would be:
 
-# $$  
+#
+
+$$
 Y
 
 \beta_0  
 +  
 \beta_1X  
 +  
-\varepsilon  
+\varepsilon
 $$
 
 Y=\beta_0+\beta_1X+\varepsilon
@@ -315,22 +319,22 @@ This balance is fundamental to statistical modeling.
 
 The parameter:
 
-$$  
-\beta_0  
+$$
+\beta_0
 $$
 
 is called the population intercept.
 
 It represents the expected value of:
 
-$$  
-Y  
+$$
+Y
 $$
 
 when:
 
-$$  
-X=0  
+$$
+X=0
 $$
 
 X=0
@@ -345,24 +349,26 @@ Example:
 
 If:
 
-# $$  
+#
+
+$$
 Y
 
 50  
 +  
-5X  
+5X
 $$
 
 then when:
 
-$$  
-X=0  
+$$
+X=0
 $$
 
 the predicted value is:
 
-$$  
-50  
+$$
+50
 $$
 
 # 13. Practical Interpretation of the Intercept
@@ -373,32 +379,36 @@ A major conceptual warning:
 
 Suppose:
 
-# $$  
+#
+
+$$
 X
 
-\text{Years of Work Experience}  
+\text{Years of Work Experience}
 $$
 
 Then:
 
-$$  
-X=0  
+$$
+X=0
 $$
 
 may correspond to a meaningful scenario.
 
 However, suppose:
 
-# $$  
+#
+
+$$
 X
 
-\text{Engine Speed in Active Machines}  
+\text{Engine Speed in Active Machines}
 $$
 
 Then:
 
-$$  
-X=0  
+$$
+X=0
 $$
 
 may lie outside the realistic operating range entirely.
@@ -409,8 +419,8 @@ This is related to extrapolation problems.
 
 The parameter:
 
-$$  
-\beta_1  
+$$
+\beta_1
 $$
 
 is the population slope.
@@ -419,26 +429,28 @@ This is the most important quantity in simple linear regression.
 
 It measures the average change in:
 
-$$  
-Y  
+$$
+Y
 $$
 
 associated with a one-unit increase in:
 
-$$  
-X  
+$$
+X
 $$
 
 Formally:
 
-# $$  
+#
+
+$$
 \beta_1
 
 \frac{  
 \Delta Y  
 }{  
 \Delta X  
-}  
+}
 $$
 
 \beta_1=\frac{\Delta Y}{\Delta X}
@@ -447,13 +459,25 @@ $$
 
 Suppose:
 
-$$  
-\beta_1 = 5  
+$$
+\beta_1 = 5
 $$
 
 Then:
 
-> Every one-unit increase in $$X$$ is associated with an average increase of 5 units in $$Y$$.
+> Every one-unit increase in
+
+$$
+X
+$$
+
+is associated with an average increase of 5 units in
+
+$$
+Y
+$$
+
+.
 
 Interpretation examples:
 
@@ -470,33 +494,32 @@ The slope therefore quantifies relationship strength and direction.
 
 If:
 
-$$  
-\beta_1 > 0  
+$$
+\beta_1 > 0
 $$
 
 then:
 
-$$  
+$$
 X \uparrow  
 \Rightarrow  
-Y \uparrow  
+Y \uparrow
 $$
 
 This is a positive relationship.
 
-
 If:
 
-$$  
-\beta_1 < 0  
+$$
+\beta_1 < 0
 $$
 
 then:
 
-$$  
+$$
 X \uparrow  
 \Rightarrow  
-Y \downarrow  
+Y \downarrow
 $$
 
 This is a negative relationship.
@@ -512,16 +535,16 @@ Examples:
 
 The component:
 
-$$  
-\varepsilon  
+$$
+\varepsilon
 $$
 
 represents random error.
 
 It captures all factors influencing:
 
-$$  
-Y  
+$$
+Y
 $$
 
 that are not included in the model.
@@ -543,12 +566,14 @@ Examples include:
 
 The regression model therefore becomes:
 
-# $$  
+#
+
+$$
 Y
 
 \text{Systematic Component}  
 +  
-\text{Random Noise}  
+\text{Random Noise}
 $$
 
 Y=\text{Systematic Component}+\text{Random Noise}
@@ -571,23 +596,53 @@ Using sample data, we estimate the unknown population parameters.
 
 The estimated regression equation becomes:
 
-# $$  
+#
+
+$$
 \hat{Y}
 
 b_0  
 +  
-b_1X  
+b_1X
 $$
 
 \hat{Y}=b_0+b_1X
 
 where:
 
-- $$b_0$$ estimates $$\beta_0$$
+-
+
+$$
+b_0
+$$
+
+estimates
+
+$$
+\beta_0
+$$
+
     
-- $$b_1$$ estimates $$\beta_1$$
+-
+
+$$
+b_1
+$$
+
+estimates
+
+$$
+\beta_1
+$$
+
     
-- $$\hat{Y}$$ is the predicted response
+-
+
+$$
+\hat{Y}
+$$
+
+is the predicted response
     
 
 # 20. Population Parameters vs Sample Estimates
@@ -596,8 +651,32 @@ This distinction is extremely important.
 
 |Population Quantity|Sample Estimate|
 |---|---|
-|$$\beta_0$$|$$b_0$$|
-|$$\beta_1$$|$$b_1$$|
+|
+
+$$
+\beta_0
+$$
+
+|
+
+$$
+b_0
+$$
+
+|
+|
+
+$$
+\beta_1
+$$
+
+|
+
+$$
+b_1
+$$
+
+|
 
 Population parameters are fixed but unknown.
 
@@ -609,8 +688,8 @@ Regression therefore operates under inferential uncertainty.
 
 The value:
 
-$$  
-\hat{Y}  
+$$
+\hat{Y}
 $$
 
 represents the predicted response lying directly on the fitted regression line.
@@ -619,8 +698,8 @@ Predictions are model-generated expectations rather than guaranteed outcomes.
 
 For example:
 
-$$  
-\hat{Y}=70  
+$$
+\hat{Y}=70
 $$
 
 means:
@@ -633,10 +712,12 @@ Actual observations may still differ because of randomness.
 
 The difference between an observed value and its predicted value is called the residual:
 
-# $$  
+#
+
+$$
 e_i
 
-y_i-\hat{y}_i  
+y_i-\hat{y}_i
 $$
 
 e_i=y_i-\hat{y}_i
@@ -658,8 +739,8 @@ Residuals are central to regression diagnostics.
 
 The central mathematical challenge becomes:
 
-$$  
-\text{How do we choose the best possible line?}  
+$$
+\text{How do we choose the best possible line?}
 $$
 
 Many lines could pass through the data cloud.
@@ -676,9 +757,9 @@ Choose the line minimizing total squared prediction error.
 
 Mathematically:
 
-$$  
+$$
 \sum  
-(y_i-\hat{y}_i)^2  
+(y_i-\hat{y}_i)^2
 $$
 
 \sum(y_i-\hat{y}_i)^2
@@ -708,32 +789,32 @@ It is inferential statistics.
 
 The major inferential question becomes:
 
-$$  
-H_0:\beta_1 = 0  
+$$
+H_0:\beta_1 = 0
 $$
 
 H_0:\beta_1=0
 
 This represents:
 
-$$  
-\text{No Linear Relationship}  
+$$
+\text{No Linear Relationship}
 $$
 
 The alternative hypothesis is:
 
-$$  
-H_A:\beta_1 \ne 0  
+$$
+H_A:\beta_1 \ne 0
 $$
 
 H_A:\beta_1\ne0
 
 A significant slope suggests evidence of a systematic relationship between:
 
-$$  
+$$
 X  
 \quad \text{and} \quad  
-Y  
+Y
 $$
 
 # 27. Regression and Prediction Under Uncertainty
@@ -759,10 +840,10 @@ Linear regression fundamentally attempts to discover mathematical structure insi
 
 The framework separates:
 
-$$  
+$$
 \text{Signal}  
 \quad from \quad  
-\text{Random Variation}  
+\text{Random Variation}
 $$
 
 \text{Signal}\quad from \quad\text{Random Variation}
@@ -773,8 +854,8 @@ Residuals capture unexplained randomness.
 
 The broader inferential goal becomes:
 
-$$  
-\text{Modeling Predictable Structure Under Uncertainty}  
+$$
+\text{Modeling Predictable Structure Under Uncertainty}
 $$
 
 \text{Modeling Predictable Structure Under Uncertainty}
