@@ -123,7 +123,6 @@ This becomes extremely important later in:
 * healthcare trials
 * recommendation experimentation
 
----
 
 ## Variability as Information
 
@@ -146,7 +145,6 @@ That decomposition later appears everywhere:
 * Bayesian inference
 * deep learning optimization
 
----
 
 ## Resources
 
@@ -182,7 +180,6 @@ Examples:
 * testing pricing strategies
 * comparing manufacturing configurations
 
----
 
 ## The ANOVA Logic
 
@@ -207,7 +204,6 @@ then:
 
 This leads to the F-statistic framework.
 
----
 
 ## The F-Statistic
 
@@ -225,7 +221,6 @@ Small F-values indicate:
 
 * observed differences are likely sampling noise
 
----
 
 ## Hidden Insight
 
@@ -241,7 +236,6 @@ This is a systems-level inferential perspective.
 
 Post-hoc tests are then used for pairwise interpretation.
 
----
 
 ## Two-Way ANOVA
 
@@ -265,7 +259,6 @@ Examples:
 * marketing channel × region
 * UI design × device category
 
----
 
 ## Interaction Effects
 
@@ -291,7 +284,6 @@ Ignoring interactions often creates:
 * weak models
 * incorrect conclusions
 
----
 
 ## ANOVA Assumptions
 
