@@ -44,15 +44,19 @@ Deep Feature Synthesis (DFS), the core algorithm behind `Featuretools`, mathemat
 If Table A (Customers) has a one-to-many relationship with Table B (Transactions), DFS calculates aggregated features for Table A based on the raw columns of Table B.
 
 **Depth 1 Feature ($d=1$):** Applying an aggregation primitive directly to raw data.
+
 $$
 F^{(1)} = A(x_{raw}) = \text{Mean}(\text{Transaction\_Amount})
 $$
 
 **Depth 2 Feature ($d=2$):** Stacking a transformation primitive inside an aggregation primitive, or stacking two aggregations across three relational tables.
+
 $$
 F^{(2)} = A(T(x_{raw})) = \text{Mean}(\text{Absolute\_Value}(\text{Transaction\_Amount}))
 $$
+
 Alternatively, if Table C (Logins) relates to Table B (Sessions) which relates to Table A (Users):
+
 $$
 F^{(2)} = A_{B \to A}(A_{C \to B}(x_{raw})) = \text{Sum}(\text{Mean\_Session\_Login\_Duration})
 $$
@@ -304,6 +308,5 @@ When you utilize AutoFE, the feature space $D$ often exceeds the number of obser
 1.  **Dask-Featuretools:** Learn how to distribute Deep Feature Synthesis across a distributed cluster of machines to scale AutoFE to terabyte-sized datasets.
 2.  **Automated Machine Learning (AutoML):** Study how AutoFE integrates into end-to-end AutoML frameworks like H2O.ai, TPOT, or AutoGluon, where the feature engineering bounds are jointly optimized with the model hyperparameters.
 3.  **Graph Neural Networks (GNNs):** For relational data, GNNs are the deep learning successor to AutoFE. Instead of manually synthesizing aggregations via DFS, algorithms like GraphSAGE mathematically learn the optimal aggregation weights (message passing) between related entities directly via backpropagation.
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
