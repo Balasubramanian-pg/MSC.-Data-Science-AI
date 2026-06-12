@@ -15,7 +15,6 @@ This document details five advanced visual paradigms designed for **Categorical 
 4. **Circle Packing Diagrams** (Containment-based nested part-to-whole hierarchies) [1]
 5. **Bubble Hierarchies** (Connection-based node-link trees scaling by quantitative weight) [1]
 
-
 ## 1. Unified Architectural Pipeline & Decision Framework
 
 Creating high-fidelity, interactive visuals requires moving data through a structured pipeline: extracting raw transactional records, modeling relationships, and executing a layout algorithm.
@@ -49,7 +48,6 @@ Use this matrix to identify the correct visual paradigm based on your data struc
 | **Small Multiples** [3] | High-dimensional tables with multiple category groupings [3] | Compare trends across groups without cluttering a single chart [3] | Synchronized grid of isolated charts [3] | High |
 | **Circle Packing** [1] | Hierarchical nested JSON tree with leaf node weights [1] | Show nested groupings and spot size differences within categories [1] | Concentric nested circles scaled by area [1] | Moderate |
 | **Bubble Hierarchy** [1] | Parent-Child pairs with node weights [1] | Map explicit hierarchical structures alongside node scale [1] | Linked nodes scaled by area [1] | Low |
-
 
 ## 2. Gantt Category Range Charts (Floating Bar Charts)
 
@@ -96,7 +94,6 @@ gantt
 * **Practical Implementation Notes**  
   * In standard business intelligence tools like Tableau, you can build this chart using a **Gantt Bar** mark type, mapping your start value to the axis and using the range span to define the bar size.
   * In Python, you can generate this layout by passing `left` (horizontal) or `bottom` (vertical) parameter arrays to `matplotlib.pyplot.barh` or `matplotlib.pyplot.bar`.
-
 
 ## 3. Sankey Diagrams (Flow Networks)
 
@@ -158,7 +155,6 @@ graph LR
   * **D3.js Implementation:** Use the `d3-sankey` plugin to calculate node and link coordinates.
   * **Python Implementation:** Use the `plotly.graph_objects.Sankey` module, which offers interactive, draggable nodes out of the box.
 
-
 ## 4. Small Multiples (Grid / Facet Plots)
 
 ```mermaid
@@ -210,7 +206,6 @@ graph TD
   * **Python Data Science Stack:** Extremely simple to implement using Seaborn (`FacetGrid` or `sns.relplot(..., col="region")`) or Plotly Express (`facet_col`).
   * **BI Tools:** Native support is built into Power BI (via the "Small Multiples" field well on standard charts) and Tableau (by dragging a categorical dimension onto the Rows or Columns shelves).
 
-
 ## 5. Circle Packing Diagrams (Containment-Based Hierarchies)
 
 ```mermaid
@@ -256,7 +251,6 @@ graph TD
   * Standard office suites like Microsoft Excel do not natively support circle packing layouts [1]. Implementation requires advanced visualization tools:
   * **BI Tools:** Power BI (via custom D3.js visual imports or AppSource custom visuals) [1] or Tableau (utilizing calculated coordinate files or extension APIs) [1].
   * **Web/Code Engines:** D3.js (`d3.pack`) or Python (`circlify` library plotted via `matplotlib`).
-
 
 ## 6. Bubble Hierarchies (Hierarchical Node-Link Trees)
 
@@ -307,7 +301,6 @@ graph TD
   * Requires dynamic canvas libraries that support network node-link rendering.
   * **Python Ecosystem:** Use `networkx` for calculating tree structures combined with `pyvis` or `plotly` for interactive web rendering.
   * **JavaScript Ecosystem:** Use D3's `d3-force` or `GoJS` for advanced custom layouts.
-
 
 ## 7. Performance Engineering & Edge Case Resolutions
 
@@ -383,10 +376,11 @@ graph TD
 
 To resolve this issue without losing the ability to make accurate visual comparisons, use a **Dual-Scale Toggle** or apply a **Percent of Max Segment** normalizer:
 
-$$\text{Value}_{\text{Normalized}} = \frac{\text{Value}_{\text{Actual}}}{\text{Maximum Value of Local Facet}} \times 100$$
+$$
+\text{Value}_{\text{Normalized}} = \frac{\text{Value}_{\text{Actual}}}{\text{Maximum Value of Local Facet}} \times 100
+$$
 
 * This formula allows viewers to compare relative local shapes and trends across categories on a normalized scale, while tool-tips or color shading can be used to represent the absolute differences in scale.
-
 
 ## 8. Summary of Actionable Implementation Steps
 
