@@ -51,7 +51,6 @@ week: W01 - Module 1a. Introduction to Visualization
 9. [Golden Rules of Effective Data Visualization](https://chatgpt.com/g/g-p-6a0d41583fe88191a2893b540108b3b5-msc-data-science/c/6a10ae9f-5308-8321-80ea-23d7426ab7ae#9-golden-rules-of-effective-data-visualization)
     
 
-
 ## 1. Introduction to the Seven Stages of Data Visualization
 
 ## 1.1 Purpose of the Visualization Workflow
@@ -76,7 +75,6 @@ The framework exists because visualization is not simply “drawing charts.” I
     
 
 The lecture emphasizes that effective visualization is fundamentally a **process of analytical storytelling**.
-
 
 ## 1.2 Visualization as an Iterative System
 
@@ -108,7 +106,6 @@ This mirrors real-world analytics workflows in:
 - ML Monitoring Systems
     
 
-
 ## 2. Foundational Concepts Before Visualization
 
 ## 2.1 Understanding Variables and Attributes
@@ -138,7 +135,6 @@ These are the building blocks of visualization.
 |Postal Ballots|Numerical Discrete|Votes cast via ballots|
 |Total Votes|Numerical Discrete|Aggregate vote count|
 |Voter Turnout Ratio|Numerical Continuous|Percentage turnout|
-
 
 ## 2.2 Numerical vs Textual Data
 
@@ -175,7 +171,6 @@ This distinction directly affects:
 |Time Series|Line chart|
 |Binary|Stacked bar|
 
-
 ## 2.3 Primary Variables of Interest
 
 The lecture repeatedly emphasizes the concept of a **main variable of interest**.
@@ -194,7 +189,6 @@ Without identifying the primary metric:
     
 - stakeholders get confused
     
-
 
 ## 3. The Seven Stages of Data Visualization
 
@@ -217,7 +211,6 @@ The lecture explains that data often comes from:
 - multiple external systems
     
 
-
 ## Example from Lecture
 
 Source:
@@ -226,7 +219,6 @@ Source:
     
 
 The dataset was downloaded in Excel format.
-
 
 ## Important Warning: Format Compatibility
 
@@ -247,7 +239,6 @@ If visualization software cannot process:
 
 then the acquisition pipeline fails immediately.
 
-
 ## Business Insight
 
 Poor acquisition practices create downstream problems:
@@ -262,7 +253,6 @@ Poor acquisition practices create downstream problems:
     
 
 This is why enterprise BI teams heavily standardize ingestion pipelines.
-
 
 ## 3.2 Stage 2: Parsing Data
 
@@ -285,7 +275,6 @@ The lecture describes parsing as:
 
 > “eyeballing” the data structure.
 
-
 ## Key Questions During Parsing
 
 - What are the variables?
@@ -298,7 +287,6 @@ The lecture describes parsing as:
     
 - Are formats consistent?
     
-
 
 ## Example from Lecture
 
@@ -318,7 +306,6 @@ The analyst identifies:
 ```text
 Primary variable of interest = Voter Turnout Ratio
 ```
-
 
 ## Business Insight
 
@@ -340,7 +327,6 @@ instead of:
 
 then analytical conclusions become invalid.
 
-
 ## 3.3 Stage 3: Filtering Data
 
 ## Definition
@@ -356,7 +342,6 @@ The lecture explains filtering using:
 - turnout ratio
     
 
-
 ## Core Purpose of Filtering
 
 Filtering enables:
@@ -369,7 +354,6 @@ Filtering enables:
     
 - conditional comparisons
     
-
 
 ## Example from Lecture
 
@@ -386,7 +370,6 @@ Result:
 - Bihar at bottom
     
 
-
 ## Specific Numbers
 
 |State|Turnout|
@@ -394,7 +377,6 @@ Result:
 |Lakshadweep|Highest|
 |Bihar|Lowest|
 |All India Average|66.1%|
-
 
 ## Use of Color During Filtering
 
@@ -406,7 +388,6 @@ The lecture introduces a Gestalt principle:
     
 
 This immediately creates cognitive grouping.
-
 
 ## Business Insight
 
@@ -423,7 +404,6 @@ A policymaker can instantly identify:
 - benchmark outliers
     
 
-
 ## 3.4 Stage 4: Mining Data
 
 ## Definition
@@ -433,7 +413,6 @@ A policymaker can instantly identify:
 The lecture describes mining as:
 
 > uncovering hidden patterns.
-
 
 ## Key Mining Questions
 
@@ -446,7 +425,6 @@ The lecture describes mining as:
 - Which variables correlate?
     
 
-
 ## Example from Lecture
 
 Mining reveals:
@@ -455,7 +433,6 @@ Mining reveals:
 States above national average = 23
 States below national average = 13
 ```
-
 
 ## Analytical Insight
 
@@ -466,7 +443,6 @@ Above average = TRUE/FALSE
 ```
 
 The analyst discovered it through mining.
-
 
 ## Potential Derived Metrics Mentioned
 
@@ -481,7 +457,6 @@ The instructor also suggests:
 
 These are examples of **feature engineering** in analytics.
 
-
 ## Business Insight
 
 Mining converts data into insight.
@@ -493,7 +468,6 @@ Without mining:
 - no strategic conclusions emerge
     
 
-
 ## 3.5 Stage 5: Representing Data
 
 ## Definition
@@ -501,7 +475,6 @@ Without mining:
 **Representation** is the first visual expression of the data.
 
 This stage uses simple charts to communicate findings.
-
 
 ## Example from Lecture
 
@@ -515,7 +488,6 @@ Initial visualization:
 Problem:
 
 > The chart failed to communicate the mined insight.
-
 
 ## Why the First Chart Failed
 
@@ -534,13 +506,11 @@ This is a critical lesson:
 
 > Correct charts can still be ineffective charts.
 
-
 ## 3.6 Stage 6: Refining Visualizations
 
 ## Definition
 
 **Refinement** means improving the visual so it communicates insight more effectively.
-
 
 ## Refinements Introduced
 
@@ -580,7 +550,6 @@ The benchmark line visually stands out.
 - Bihar highlighted
     
 
-
 ## Result
 
 The refined chart now communicates:
@@ -600,7 +569,6 @@ The refined chart now communicates:
 
 all simultaneously.
 
-
 ## Business Insight
 
 Refinement transforms charts from:
@@ -615,13 +583,11 @@ into:
 Decision-support systems
 ```
 
-
 ## 3.7 Stage 7: Interaction and Feedback
 
 ## Definition
 
 The final stage involves presenting visuals to stakeholders and gathering feedback.
-
 
 ## Key Insight from Lecture
 
@@ -635,7 +601,6 @@ Stakeholder questions may require:
     
 - entirely new data sources
     
-
 
 ## Example from Lecture
 
@@ -660,13 +625,11 @@ Solution:
 - rebuild visuals
     
 
-
 ## Business Insight
 
 Real dashboards are rarely “finished.”
 
 They evolve continuously because stakeholder questions evolve continuously.
-
 
 ## 4. Detailed Case Study: Election Voter Turnout Visualization
 
@@ -688,7 +651,6 @@ Important operational concern:
 Software compatibility with Excel/CSV
 ```
 
-
 ## 4.2 Parsing the Dataset Structure
 
 Identified columns:
@@ -699,7 +661,6 @@ Identified columns:
 |Polling Stations|Infrastructure metric|
 |Total Votes|Participation metric|
 |Voter Turnout Ratio|Main KPI|
-
 
 ## 4.3 Filtering by Voter Turnout Ratio
 
@@ -715,7 +676,6 @@ Outcome:
 |---|---|
 |Lakshadweep|Bihar|
 
-
 ## 4.4 Mining Hidden Patterns
 
 Discovered insights:
@@ -725,7 +685,6 @@ Discovered insights:
 |Above national average|23 states|
 |Below national average|13 states|
 |National benchmark|66.1%|
-
 
 ## 4.5 Initial Visualization Problems
 
@@ -747,7 +706,6 @@ This is an important distinction:
 > Visualization quality is not about decoration.  
 > It is about cognitive efficiency.
 
-
 ## 4.6 Refined Visualization Design
 
 Enhancements:
@@ -758,7 +716,6 @@ Enhancements:
 |Benchmark line|Show comparison|
 |Color grouping|Improve grouping|
 |Highlight extremes|Emphasize outliers|
-
 
 ## 4.7 Stakeholder Interaction and Iteration
 
@@ -775,7 +732,6 @@ This demonstrates that visualization is not a pipeline.
 
 It is a feedback system.
 
-
 ## 5. Gestalt Principles in Visualization
 
 ## 5.1 Similarity Principle
@@ -791,7 +747,6 @@ Objects with similar appearance are perceived as related.
 
 This enables instant grouping.
 
-
 ## 5.2 Focus Principle
 
 A visually distinct element attracts attention first.
@@ -806,7 +761,6 @@ National average line:
 
 acts as a focal reference point.
 
-
 ## 5.3 Figure-Ground Principle
 
 Foreground elements stand out against the background.
@@ -820,7 +774,6 @@ Used in:
 - ordered ranking systems
     
 
-
 ## 6. Chart Selection and Design Thinking
 
 ## 6.1 Simple vs Ordered Bar Charts
@@ -830,7 +783,6 @@ Used in:
 |Raw display|Analytical display|
 |Weak comparison|Strong comparison|
 |Harder pattern detection|Easier ranking recognition|
-
 
 ## 6.2 When to Use Horizontal Bar Charts
 
@@ -856,7 +808,6 @@ Examples:
 - survey rankings
     
 
-
 ## 6.3 Why Ordering Matters
 
 Humans naturally detect:
@@ -871,7 +822,6 @@ Humans naturally detect:
 more efficiently when visuals are ordered.
 
 Ordering reduces cognitive load dramatically.
-
 
 ## 7. Visualization as an Iterative Analytical System
 
@@ -893,7 +843,6 @@ G --> D
 G --> C
 G --> A
 ```
-
 
 ## 8. Visualization Decision Framework
 
@@ -929,7 +878,6 @@ What is your analytical objective?
     └── Tree Map
 ```
 
-
 ## Common Analytical Formulas
 
 ## Percentage Change
@@ -938,11 +886,9 @@ Used implicitly in comparative analysis.
 
 \text{Percentage Change}=\frac{\text{New Value}-\text{Old Value}}{\text{Old Value}}\times100
 
-
 ## Voter Turnout Ratio
 
 \text{Voter Turnout Ratio}=\frac{\text{Total Votes Cast}}{\text{Eligible Voters}}\times100
-
 
 ## Common Visualization Pitfalls
 
@@ -950,11 +896,9 @@ Used implicitly in comparative analysis.
 
 Aesthetic visuals without analytical clarity fail stakeholders.
 
-
 ## 2. Ignoring Ordering
 
 Unordered categories obscure ranking patterns.
-
 
 ## 3. Missing Benchmarks
 
@@ -965,11 +909,9 @@ Without comparison baselines:
 - interpretation weakens
     
 
-
 ## 4. Overloading the Graphic
 
 Too many colors or annotations reduce readability.
-
 
 ## 5. Correlation ≠ Causation
 
@@ -979,13 +921,11 @@ Even if two variables move together:
 Correlation does not imply causal relationship.
 ```
 
-
 ## 6. Ignoring Stakeholder Feedback
 
 Visualization is communication.
 
 If the audience cannot derive insight quickly, refinement is required.
-
 
 ## 9. Golden Rules of Effective Data Visualization
 
