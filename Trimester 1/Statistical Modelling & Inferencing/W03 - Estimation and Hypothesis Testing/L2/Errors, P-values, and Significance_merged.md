@@ -63,7 +63,6 @@ $$
 H_0:p = 0.5  
 $$
 
----
 
 ## [Alternative Hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#alternative-hypothesis)
 
@@ -98,7 +97,6 @@ $$
 H_a:\mu < 50  
 $$
 
----
 
 ## 3 The Four Possible Outcomes
 
@@ -121,7 +119,6 @@ This creates four logical possibilities:
 |Fail to Reject $$H_0$$|Correct Decision|Type II Error|
 |Reject $$H_0$$|Type I Error|Correct Decision|
 
----
 
 ## 4 Type I Error: The False Positive
 
@@ -146,7 +143,6 @@ called the significance level.
 
 \alpha
 
----
 
 ## 4.1 Interpretation of $$\alpha$$
 
@@ -168,7 +164,6 @@ This means:
 
 > Even when the [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#null-hypothesis) is perfectly true, our testing procedure will falsely reject it about 5% of the time in repeated sampling.
 
----
 
 ## 4.2 [Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples) of Type I Errors
 
@@ -179,28 +174,24 @@ This means:
 - False positive cancer screening
     
 
----
 
 ### Criminal Justice
 
 - Innocent person convicted
     
 
----
 
 ### Manufacturing
 
 - Good product classified as defective
     
 
----
 
 ### Cybersecurity
 
 - Legitimate activity flagged as malicious
     
 
----
 
 ## 5 Type II Error: The False Negative
 
@@ -223,7 +214,6 @@ $$
 
 \beta
 
----
 
 ## 5.1 [Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples) of Type II Errors
 
@@ -232,28 +222,24 @@ $$
 - Diseased patient incorrectly declared healthy
     
 
----
 
 ### Fraud Detection
 
 - Fraudulent transaction passes unnoticed
     
 
----
 
 ### Engineering
 
 - Defective component passes inspection
     
 
----
 
 ### National Security
 
 - Real threat not detected
     
 
----
 
 ## 6 Statistical Power
 
@@ -278,7 +264,6 @@ High power means:
 - greater ability to discover true effects
     
 
----
 
 ## 7 The Tradeoff Between $$\alpha$$ and $$\beta$$
 
@@ -317,7 +302,6 @@ $$
 
 and power decreases.
 
----
 
 ## Deep [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition))))
 
@@ -352,7 +336,6 @@ This is the exact same tradeoff seen in:
 
 Hypothesis testing is essentially [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) detection theory in mathematical form.
 
----
 
 ## 8 The Role of Sample Size
 
@@ -386,7 +369,6 @@ simultaneously.
 
 Large samples partially break the tradeoff.
 
----
 
 ## 9 The P-Value
 
@@ -406,7 +388,6 @@ $$
 
 p = P(\text{Data as extreme as observed}\mid H_0\text{ true})
 
----
 
 ## 10 Understanding "Extreme"
 
@@ -444,7 +425,6 @@ $$
 H_0  
 $$
 
----
 
 ## 11 P-Values as Measures of Surprise
 
@@ -465,7 +445,6 @@ The p-value quantifies surprise under the null model.
 |$$0.03$$|Moderate evidence against $$H_0$$|
 |$$0.001$$|Very strong evidence against $$H_0$$|
 
----
 
 ## 12 What the P-Value Is NOT
 
@@ -497,7 +476,6 @@ It does NOT ask:
 
 Those are fundamentally different questions.
 
----
 
 ## 13 The Decision Rule
 
@@ -527,7 +505,6 @@ then:
 
 p \le \alpha
 
----
 
 ## Fail to Reject the Null
 
@@ -556,7 +533,6 @@ Failing to reject simply means:
 
 Absence of evidence is not evidence of absence.
 
----
 
 ## 14 Why "Fail to Reject" Matters
 
@@ -595,13 +571,11 @@ Possible explanations:
 
 This distinction matters enormously in scientific interpretation.
 
----
 
 ## 15 Statistical Significance vs Practical Significance
 
 One of the biggest failures in applied statistics is confusing significance with importance.
 
----
 
 ## Statistical Significance
 
@@ -609,7 +583,6 @@ Means:
 
 > The effect is unlikely due to random chance.
 
----
 
 ## Practical Significance
 
@@ -619,7 +592,6 @@ Means:
 
 These are not the same thing.
 
----
 
 ## 16 Large Samples Can Detect Tiny Effects
 
@@ -643,7 +615,6 @@ Almost meaningless.
 
 This is why effect size matters.
 
----
 
 ## 17 Effect Size
 
@@ -688,7 +659,6 @@ Modern statistics increasingly emphasizes:
 
 rather than binary significance decisions alone.
 
----
 
 ## 18 The Replication Crisis
 
@@ -726,7 +696,6 @@ A statistically significant result can still be:
 
 Statistical significance is evidence, not proof.
 
----
 
 ## 19 Confidence Intervals and P-Values
 
@@ -765,7 +734,6 @@ Confidence intervals simultaneously show:
 
 This is why many statisticians prefer them over isolated p-values.
 
----
 
 ## 20 One of the Deepest Misconceptions in Statistics
 
@@ -790,7 +758,6 @@ This is mathematically related to Bayesian base-rate effects.
 
 In some fields, a large fraction of "significant" findings may actually be false discoveries.
 
----
 
 ## 21 Deep [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition)))) Behind Hypothesis Testing
 
