@@ -630,7 +630,6 @@ The best dashboards feel:
     
 - and analytically empowering.
 
-
 ## Dashboard Example: CO₂ Emissions Dashboard
 
 This section analyzes a real dashboard example using:
@@ -729,8 +728,8 @@ small in cognitive complexity.
 
 Good dashboards maximize:
 
-$$  
-\text{Insight Density} \div \text{Cognitive Effort}  
+$$
+\text{Insight Density} \div \text{Cognitive Effort}
 $$
 
 The best dashboards:
