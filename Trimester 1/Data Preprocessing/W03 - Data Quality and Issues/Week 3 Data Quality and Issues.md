@@ -6,7 +6,6 @@ week: W03 - Data Quality and Issues
 
 ## Week 3: Data Quality and Issues
 
-
 **Module Description**
 
 This module addresses the critical topic of data quality, exploring the common imperfections found in real-world datasets that can significantly impact the outcome of any analysis. You will be introduced to the concept of data quality and examine various practical examples of data quality problems. The lessons will specifically focus on differentiating between key issues such as noise and outliers, as well as understanding the distinct challenges posed by missing values versus duplicate data. Mastering these concepts will help you progress by building the essential skill of identifying and diagnosing data issues, which is the foundational first step in the data preprocessing pipeline, ensuring more reliable and accurate analytical results.
