@@ -31,7 +31,11 @@ Unlike Factor Analysis, which partitions variance into "common" and "unique" com
     
 3. **Mathematical Transformation:** Each component is a **linear combination** of the original variables:
     
-    $$PC_m = w_{m1}X_1 + w_{m2}X_2 + \dots + w_{mn}X_n$$
+
+$$
+PC_m = w_{m1}X_1 + w_{m2}X_2 + \dots + w_{mn}X_n
+$$
+
     
 
 #### Comparison: When to use PCA vs. Factor Analysis
@@ -48,7 +52,6 @@ Unlike Factor Analysis, which partitions variance into "common" and "unique" com
 In your role as a Business Analyst, PCA is incredibly useful when you have a massive dataset of KPIs (e.g., 50 different regional performance metrics) and you need to feed them into a predictive model. If you use the raw 50 variables, you will likely hit **[multicollinearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#[multicollinearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#[multicollinearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#multicollinearity)))** (where the variables are highly correlated, confusing the model). By replacing those 50 variables with 5 or 6 **Principal Components**, you capture nearly 100% of the information while making your model statistically robust and computationally efficient.
 
 **Would you like to see how to implement PCA in Python using `scikit-learn` to reduce a sample dataset, or are you interested in how we decide exactly "how many" components to keep using the Scree Plot?**
-
 
 ### 1.1 The Objective of PCA: Maximizing Information Retention
 
@@ -110,7 +113,9 @@ By expressing each Principal Component as a linear combination of original varia
 
 The weights ($w$) are not chosen arbitrarily. They are calculated through **Eigen-decomposition** of the covariance matrix. The goal is to solve for a vector $w$ that maximizes the variance of the resulting $PC_j$:
 
-$$Var(PC_j) = w^T \Sigma w$$
+$$
+Var(PC_j) = w^T \Sigma w
+$$
 
 _Subject to the constraint that $\|w\| = 1$ (to avoid infinite scaling) and $w$ is orthogonal to previous components._
 
@@ -248,7 +253,9 @@ Factor Analysis (FA) shifts the goalpost from mere data compression (as in PCA) 
 
 In FA, we define the variance of an observed variable $X_j$ as:
 
-$$Var(X_j) = \text{Common Variance (Communality)} + \text{Unique Variance}$$
+$$
+Var(X_j) = \text{Common Variance (Communality)} + \text{Unique Variance}
+$$
 
 Factor Analysis instructs the model to ignore the **Unique Variance** (which it classifies as "[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))" or "specificity") and dedicate its entire mathematical energy to explaining the **Common Variance** (the covariance shared with other variables).
 
