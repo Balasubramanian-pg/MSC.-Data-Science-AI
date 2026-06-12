@@ -2,7 +2,6 @@
 
 ## Reading Material: An Introduction to Bayesian Inference
 
----
 
 **Contents**  
 I The Bayesian Paradigm 2  
