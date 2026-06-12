@@ -6,7 +6,6 @@ week: W05 - Data Transformation and Aggregation
 
 ## Week 5: Data Transformation and Aggregation
 
-
 **Module Description**
 
 This module focuses on transforming raw data into a format suitable for analysis and learning algorithms. Learners will study various data transformation techniques, including normalization and standardization, to ensure that features contribute equally to the analysis. The module also covers data aggregation methods, which summarise large datasets to support efficient analysis and reporting. Understanding these techniques will help learners prepare data for clustering, classification, and other data mining tasks.
