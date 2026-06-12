@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W05 - Module 3a.  Dashboards
 ---
 
-
 ## Page 1
 
  
@@ -58,7 +57,6 @@ because he is looking at aggregate and average phenomenon over a period of time.
 Then data inconsistency, conflicting sources and definitions. This again would go back 
 to the setting of the context depending upon who is the user. For example, you have 
 
-
 ## Page 2
 
  
@@ -110,7 +108,6 @@ the interactive element the person has used, how much time it will take. As a de
 you should take care of all these aspects from a user perspective. It is very tempting 
 to think that you create a complex dashboard with different levels of filters and 
 features, but you should also think from the user perspective how much type and 
-
 
 ## Page 3
 
@@ -165,7 +162,6 @@ by providing more appropriate context around it. So, always remember context
 translates the numbers into narratives and you have seen narrative when told properly 
 will lead to broader retention and action. So, now let us discuss about different types 
 
-
 ## Page 4
 
  
@@ -218,7 +214,6 @@ daily, weekly, monthly and again here this would be assigned to a particular gro
 looking for a particular process, so the managers would be the audience who are bit 
 of both top management and the analyst and the operational person also, depending 
 upon the orientation of the tactical change or the performance that you are looking at, 
-
 
 ## Page 5
 
@@ -273,7 +268,6 @@ scenario, the same thing can be analysed in for in terms of falling sales across
 stores where the sales have been dropping than normal, so all these trends can be 
 combined together and put into a tactical dashboard saying that the company is 
 
-
 ## Page 6
 
  
@@ -326,7 +320,6 @@ particular product type.
   
 This would give right away the attention to the regions which have not reached the 
 targets or which are doing well. So, this way you can guide the attention of the user to 
-
 
 ## Page 7
 
@@ -381,7 +374,6 @@ this narrative at each step should be thought before and planned and executed
 accordingly. Now, finally coming to the most important aspect test the usability of your 
 design. 
 
-
 ## Page 8
 
  
@@ -419,6 +411,5 @@ on a regular basis.
   
 ------------------------------------------------------End----------------------------------------------------- 
  
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
