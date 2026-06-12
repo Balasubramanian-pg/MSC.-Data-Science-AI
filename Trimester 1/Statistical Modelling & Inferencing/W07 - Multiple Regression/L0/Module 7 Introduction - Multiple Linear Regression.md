@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W07 - Multiple Regression
 ---
 
-
 ## 1. From Simple to Multiple Regression
 
 In the previous module, we studied:
@@ -13,20 +12,20 @@ In the previous module, we studied:
 
 where a single predictor variable:
 
-$$ 
-X  
+$$
+X
 $$
 
 was used to explain or predict a [response variable](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response))-variable):
 
-$$ 
-Y  
+$$
+Y
 $$
 
 The model had the form:
 
-$$ 
-Y = \beta_0 + \beta_1 X + \epsilon  
+$$
+Y = \beta_0 + \beta_1 X + \epsilon
 $$
 
 This framework is useful, but it is often too simplistic for real-world systems.
@@ -92,13 +91,15 @@ This leads to:
 
 Instead of:
 
-$$ 
-Y = \beta_0 + \beta_1 X + \epsilon  
+$$
+Y = \beta_0 + \beta_1 X + \epsilon
 $$
 
 we move to:
 
-## $$ 
+##
+
+$$
 Y
 
 \beta_0  
@@ -111,18 +112,48 @@ Y
 +  
 \beta_k X_k  
 +  
-\epsilon  
+\epsilon
 $$
 
 Where:
 
 | Symbol                      | Meaning                 |
 | --------------------------- | ----------------------- |
-| $$(Y)$$                     | [Response variable](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response))-variable)       |
-| $$(X_1, X_2, ..., X_k)$$    | [Predictor variables](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#predictor-variables)     |
-| $$(\beta_0)$$               | [Intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#intercept))               |
-| $$(\beta_1, ..., \beta_k)$$ | Regression coefficients |
-| $$(\epsilon)$$              | Random error            |
+|
+
+$$
+(Y)
+$$
+
+| [Response variable](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response))-variable)       |
+|
+
+$$
+(X_1, X_2, ..., X_k)
+$$
+
+| [Predictor variables](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#predictor-variables)     |
+|
+
+$$
+(\beta_0)
+$$
+
+| [Intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[intercept](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#intercept))               |
+|
+
+$$
+(\beta_1, ..., \beta_k)
+$$
+
+| Regression coefficients |
+|
+
+$$
+(\epsilon)
+$$
+
+| Random error            |
 
 ## 4. Key Conceptual Shift
 
@@ -140,7 +171,9 @@ This is the defining conceptual leap.
 
 Suppose:
 
-## $$ 
+##
+
+$$
 \text{House Price}
 
 \beta_0  
@@ -151,13 +184,13 @@ Suppose:
 +  
 \beta_3(\text{Age})  
 +  
-\epsilon  
+\epsilon
 $$
 
 Then:
 
-$$ 
-\beta_1  
+$$
+\beta_1
 $$
 
 represents:
@@ -199,16 +232,16 @@ This introduces:
 
 ## Coefficient of Determination
 
-$$ 
-R^2  
+$$
+R^2
 $$
 
 ## 8. Interpreting (R^2) in Multiple Regression
 
 In this context:
 
-$$ 
-R^2  
+$$
+R^2
 $$
 
 measures:
@@ -217,8 +250,8 @@ measures:
 
 Example:
 
-$$ 
-R^2 = 0.82  
+$$
+R^2 = 0.82
 $$
 
 means:
@@ -270,7 +303,9 @@ Key complications include:
 
 Suppose:
 
-## $$ 
+##
+
+$$
 \text{Price}
 
 \beta_0  
@@ -281,7 +316,7 @@ Suppose:
 +  
 \beta_3(\text{Location Score})  
 +  
-\epsilon  
+\epsilon
 $$
 
 Potential issues:
@@ -330,8 +365,8 @@ Multiple regression fits:
 
 Two [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#predictors)):
 
-$$ 
-Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2  
+$$
+Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2
 $$
 
 creates a plane in 3D space.
@@ -344,22 +379,48 @@ Higher dimensions become impossible to visualize directly.
 
 Multiple regression is naturally expressed using linear algebra.
 
-## $$ 
+##
+
+$$
 \mathbf{Y}
 
 \mathbf{X}\boldsymbol{\beta}  
 +  
-\boldsymbol{\epsilon}  
+\boldsymbol{\epsilon}
 $$
 
 Where:
 
 | Symbol                      | Meaning            |
 | --------------------------- | ------------------ |
-| $$(\mathbf{Y})$$            | [Response vector](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response))-vector)    |
-| $$(\mathbf{X})$$            | [Design matrix](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#design-matrix)      |
-| $$(\boldsymbol{\beta})$$    | Coefficient vector |
-| $$(\boldsymbol{\epsilon})$$ | Error vector       |
+|
+
+$$
+(\mathbf{Y})
+$$
+
+| [Response vector](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response))-vector)    |
+|
+
+$$
+(\mathbf{X})
+$$
+
+| [Design matrix](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#design-matrix)      |
+|
+
+$$
+(\boldsymbol{\beta})
+$$
+
+| Coefficient vector |
+|
+
+$$
+(\boldsymbol{\epsilon})
+$$
+
+| Error vector       |
 
 This formulation powers:
 
@@ -401,20 +462,30 @@ Modern ML pipelines extend these ideas into:
 ```mermaid
 flowchart TD
 
-A[Collect Data$$
---> B[Choose Predictors$$
+A[Collect Data
 
-B --> C[Fit Multiple Regression Model$$
+$$
+--> B[Choose Predictors
+$$
 
-C --> D[Evaluate R² and Adjusted R²$$
+B --> C[Fit Multiple Regression Model
 
-D --> E[Check Residual Diagnostics$$
+$$
+C --> D[Evaluate R² and Adjusted R²
+$$
 
-E --> F[Interpret Coefficients$$
+D --> E[Check Residual Diagnostics
 
-F --> G[Validate Assumptions$$
+$$
+E --> F[Interpret Coefficients
+$$
 
-G --> H[Refine Model$$
+F --> G[Validate Assumptions
+
+$$
+G --> H[Refine Model
+$$
+
 ```
 
 ## 18. Example Python Implementation
@@ -425,21 +496,37 @@ import statsmodels.api as sm
 
 ## Example dataset
 data = pd.DataFrame({
-    "size": [1200, 1500, 1800, 2000, 2300$$,
-    "age": [20, 15, 10, 8, 5$$,
-    "location_score": [6, 7, 8, 9, 10$$,
-    "price": [200, 250, 320, 400, 500$$
+    "size": [1200, 1500, 1800, 2000, 2300
+
+$$
+,
+    "age": [20, 15, 10, 8, 5
+$$
+
+,
+    "location_score": [6, 7, 8, 9, 10
+
+$$
+,
+    "price": [200, 250, 320, 400, 500
+$$
+
 })
 
 ## Predictors
-X = data[["size", "age", "location_score"$$$$
+X = data[["size", "age", "location_score"
+
+$$
+
+$$
 
 ## Add intercept
 X = sm.add_constant(X)
 
 ## Response
-y = data["price"$$
+y = data["price"
 
+$$
 ## Fit model
 model = sm.OLS(y, X).fit()
 
@@ -482,7 +569,6 @@ You will learn:
     
 - significance testing in multivariable settings
 
-
 ## 4. Understanding Model Diagnostics
 
 You will study:
@@ -513,10 +599,10 @@ It is one of the conceptual foundations of:
 
 Many advanced ML models are direct generalizations of regression principles.
 
-
 ## 21. Final Takeaways
 
-[!IMPORTANT$$
+[!IMPORTANT
+$$
 
 Simple regression models one predictor.
 
@@ -524,7 +610,9 @@ Multiple regression models several [predictors](https://github.com/Balasubramani
 
 Core model:
 
-## $$ 
+##
+
+$$
 Y
 
 \beta_0  
@@ -537,7 +625,7 @@ Y
 +  
 \beta_k X_k  
 +  
-\epsilon  
+\epsilon
 $$
 
 Key conceptual leap:
