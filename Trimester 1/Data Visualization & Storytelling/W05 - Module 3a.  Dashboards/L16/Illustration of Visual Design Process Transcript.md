@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W05 - Module 3a.  Dashboards
 ---
 
-
 ## Page 1
 
  
@@ -58,7 +57,6 @@ can immediately see that this is car production. And you can also see CO2 emissi
 along with car production and interact them to clearly drive home the point increasing 
 car production or usage of cars will lead to higher CO2 emissions using certain icons. 
 
-
 ## Page 2
 
  
@@ -103,6 +101,5 @@ effectiveness of your dashboard.
 ------------------------------------------------------End----------------------------------------------------- 
  
  
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
