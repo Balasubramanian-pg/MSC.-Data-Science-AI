@@ -41,7 +41,11 @@ The approach to solving a decision problem changes based on the information avai
     
 - **Strategy:** Calculate the **Expected Monetary Value (EMV)** for each action $A$:
     
-    $$EMV(A) = \sum_{i} [P(A, S_i) \times P(S_i)]$$
+
+$$
+EMV(A) = \sum_{i} [P(A, S_i) \times P(S_i)]
+$$
+
     
 - **Goal:** Maximize the expected utility or payoff over the long run.
     
