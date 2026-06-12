@@ -2,7 +2,6 @@
 
 ## Reading Material: Significance Testing and Multicollinearity
 
----
 # Statistical Inference and Multicollinearity in Multiple Regression
 
 # 1. Why Inference Changes in Multiple Regression
