@@ -96,7 +96,6 @@ This changes both:
 
 because uncertainty now comes from multiple samples simultaneously.
 
----
 
 # 3 Why Comparative Inference Matters
 
@@ -119,13 +118,11 @@ Inference becomes meaningful because decisions require comparisons.
 
 A single isolated number is often insufficient.
 
----
 
 # 4 Learning Objective 1: Inference for Multiple Population Means
 
 One major focus of this module is comparing means across populations.
 
----
 
 ## 4.1 Two-Population Mean Problems
 
@@ -161,7 +158,6 @@ $$
 
 This asks whether the observed difference is statistically distinguishable from random variation.
 
----
 
 ## 4.2 More Than Two Population Means
 
@@ -195,7 +191,6 @@ H_0:\mu_1=\mu_2=\mu_3=\dots=\mu_k
 
 This becomes foundational in experimental design and business analytics.
 
----
 
 # 5 Learning Objective 2: Comparing Population Variances
 
@@ -233,7 +228,6 @@ $$
 
 statistics and chi-square distributions.
 
----
 
 # 6 Learning Objective 3: Testing Population Proportions
 
@@ -260,7 +254,6 @@ $$
 
 the population proportion.
 
----
 
 ## 6.1 Comparing Two Proportions
 
@@ -303,7 +296,6 @@ This forms the statistical foundation of:
 
 Much of modern digital business depends heavily on proportion testing.
 
----
 
 # 7 Introduction to Categorical Data Analysis
 
@@ -324,7 +316,6 @@ Examples:
 
 Categorical analysis studies relationships between such groups.
 
----
 
 # 8 Chi-Square Testing
 
@@ -348,13 +339,11 @@ $$
 
 then the null hypothesis is rejected.
 
----
 
 # 9 Types of Chi-Square Tests
 
 This module typically introduces two major forms.
 
----
 
 ## 9.1 Chi-Square Goodness-of-Fit Test
 
@@ -367,7 +356,6 @@ Example:
 - Do customer preferences follow expected proportions?
     
 
----
 
 ## 9.2 Chi-Square Test of Independence
 
@@ -391,7 +379,6 @@ This becomes extremely important in:
 - healthcare analytics
     
 
----
 
 # 10 The Big Statistical Progression
 
@@ -406,7 +393,6 @@ This module represents a major conceptual progression:
 
 The statistical machinery becomes more general and more realistic.
 
----
 
 # 11 The Deep Structure Behind All These Methods
 
@@ -439,7 +425,6 @@ the core question remains:
 
 That is the unifying principle behind statistical inference.
 
----
 
 # 12 Why This Module Matters Practically
 
