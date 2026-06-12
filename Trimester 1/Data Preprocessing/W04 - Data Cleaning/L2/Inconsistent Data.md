@@ -76,14 +76,14 @@ Both represent the same date but follow different formats.
 
 Formally:
 
-$$  
-Representation(A) \neq Representation(B)  
+$$
+Representation(A) \neq Representation(B)
 $$
 
 even though:
 
-$$  
-Meaning(A) = Meaning(B)  
+$$
+Meaning(A) = Meaning(B)
 $$
 
 ## Examples of Inconsistent Data
@@ -120,8 +120,8 @@ Distance calculations or encoding procedures may incorrectly treat them as separ
 
 If merged directly:
 
-$$  
-5 \neq 3  
+$$
+5 \neq 3
 $$
 
 even though both represent comparable measurements under different units.
@@ -303,14 +303,14 @@ The lecture strongly emphasizes automated rule systems.
 
 Human age should lie within a realistic range:
 
-$$  
-0 \leq Age \leq 120  
+$$
+0 \leq Age \leq 120
 $$
 
 If:
 
-$$  
-Age = 150  
+$$
+Age = 150
 $$
 
 then the record becomes inconsistent.
@@ -325,8 +325,8 @@ Suppose:
 
 The system may define the rule:
 
-$$  
-Age < 18 \Rightarrow Salary = 0  
+$$
+Age < 18 \Rightarrow Salary = 0
 $$
 
 Violation of this rule signals inconsistency.
