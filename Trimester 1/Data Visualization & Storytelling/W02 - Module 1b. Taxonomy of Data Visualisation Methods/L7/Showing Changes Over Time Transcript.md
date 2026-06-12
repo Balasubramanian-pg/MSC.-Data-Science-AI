@@ -15,7 +15,6 @@ This comprehensive reference manual details the visual paradigms, data architect
 4. **Plotting Connections & Relationships** (Scatter Plot Matrices, Radial/Chord Diagrams, Network Diagrams) [1, 2]
 5. **Showing Changes Over Time** (Stacked Area Charts, Streamgraphs, Temporal Flow Maps) [1, 2]
 
----
 
 ## 1. Unified Taxonomic Framework of Data Visualization Methods
 
@@ -106,7 +105,6 @@ graph TD
 | **Streamgraph (Steam Chart)** [2] | Continuous temporal series ($T$) + High-cardinality category weights | Show flowing trends and organic changes across many categories [2] | Symmetrical flowing streams around a shifting central baseline [2] | Moderate |
 | **Temporal Flow Map** [2, 3] | Spatio-temporal path nodes + Node-link attributes (Volume, Temp) | Show spatial movement, volume changes, and environmental factors over time [2] | Map-overlaid paths where line thickness matches volume [2] | Low |
 
----
 
 ## 2. Domain I: Comparing Categories (Relative and Absolute Comparisons)
 
@@ -135,7 +133,6 @@ Categorical comparison visualizations show how relative and absolute variables c
   * **Tableau:** Use the `Gantt Bar` mark type, mapping the minimum value to the Columns shelf and the range span (max minus min) to the Size shelf.
   * **Python:** Use `matplotlib.pyplot.barh` and pass the minimum values to the `left` parameter.
 
----
 
 ### B. Sankey Diagram
 
@@ -161,7 +158,6 @@ Categorical comparison visualizations show how relative and absolute variables c
   * **JavaScript:** Use the `d3-sankey` library to calculate node and link coordinates.
   * **Python:** Use `plotly.graph_objects.Sankey` to generate interactive, draggable flow networks.
 
----
 
 ### C. Small Multiples
 
@@ -186,14 +182,12 @@ Categorical comparison visualizations show how relative and absolute variables c
   * **R/ggplot2:** Use `facet_wrap(~ region, ncol = 3)`.
   * **Seaborn:** Use `sns.FacetGrid(data, col="region")`.
 
----
 
 ### Section Summary & Key Takeaways
 * **Gantt Charts** compare absolute and relative ranges, removing the zero-baseline constraint [2].
 * **Sankey Diagrams** map continuous, multi-stage resource flows, preserving volume balances across the system [2].
 * **Small Multiples** use a synchronized grid of simple charts to display high-dimensional data clearly, avoiding visual clutter [3].
 
----
 
 ## 3. Domain II: Assessing Hierarchies (Part-to-Whole and Structural Visualizations)
 
@@ -224,7 +218,6 @@ Hierarchical visualizations display the relationships between nested categories,
   * **D3.js:** Use the `d3.pack()` layout engine to compute circle coordinates.
   * **Python:** Use the `circlify` library to calculate nested coordinates, then render them using `matplotlib`.
 
----
 
 ### B. Bubble Hierarchy
 
@@ -251,13 +244,11 @@ Hierarchical visualizations display the relationships between nested categories,
   * Use D3's `d3-force` engine with `forceCollide` to keep bubbles separated.
   * Use NetworkX in Python to calculate tree structures, and Plotly to render the interactive layout.
 
----
 
 ### Section Summary & Key Takeaways
 * **Circle Packing** uses nested containment to show group boundaries, making it highly aesthetic but less space-efficient [1].
 * **Bubble Hierarchies** use explicit connecting lines to map complex, uneven organizational structures, though they require more screen space to prevent clutter [1, 2].
 
----
 
 ## 4. Domain III: Mapping Geospatial Data (Spatial Representations and Coordinate Systems)
 
@@ -285,7 +276,6 @@ Geospatial mapping overlays quantitative or qualitative datasets onto geographic
 * **Practical Implementation Notes:**
   * Bind spatial coordinate boundaries (GeoJSON or TopoJSON) to your dataset using web tools like Leaflet, Mapbox, or Python's `folium` library.
 
----
 
 ### B. Isothermic Map (Demographic Area Correction)
 
@@ -309,7 +299,6 @@ Geospatial mapping overlays quantitative or qualitative datasets onto geographic
 * **Practical Implementation Notes:**
   * Use cartogram plugins in QGIS, or the `cartogram` library in R, to calculate distorted boundary coordinates before rendering.
 
----
 
 ### C. Network Connection Map
 
@@ -334,14 +323,12 @@ Geospatial mapping overlays quantitative or qualitative datasets onto geographic
   * **Python:** Use `cartopy` or `geopandas` to calculate curved Great-Circle arcs between coordinate points.
   * **JavaScript:** Use WebGL engines like `deck.gl` to render high-performance, interactive connection lines in the browser.
 
----
 
 ### Section Summary & Key Takeaways
 * **Choropleth Maps** shade geographic areas to represent regional metrics, but they suffer from area bias where large, empty regions dominate the view [1, 2].
 * **Isothermic Maps** solve this bias by adjusting colors and areas based on population density, offering a more representative view of the data [2].
 * **Network Connection Maps** draw lines to show routes between locations, often revealing the shapes of landmasses through route density alone [2].
 
----
 
 ## 5. Domain IV: Plotting Connections & Relationships (Relational Structures)
 
@@ -369,7 +356,6 @@ Relational visualizations map correlations and connections between variables, he
 * **Practical Implementation Notes:**
   * **Python:** Use `sns.pairplot(df, hue="class")` in Seaborn or `px.scatter_matrix(df)` in Plotly Express [1].
 
----
 
 ### B. Radial / Chord Diagram
 
@@ -390,7 +376,6 @@ Relational visualizations map correlations and connections between variables, he
 * **Practical Implementation Notes:**
   * Use D3's `d3.chord()` engine to calculate chord angles and ribbons, or use the `chorddiag` package in R.
 
----
 
 ### C. Force-Directed Network Diagram
 
@@ -414,20 +399,17 @@ Relational visualizations map correlations and connections between variables, he
 * **Practical Implementation Notes:**
   * Use the `d3-force` engine in JavaScript or the NetworkX library in Python to calculate node coordinates.
 
----
 
 ### Section Summary & Key Takeaways
 * **Scatter Plot Matrices** help analysts explore unknown datasets by displaying pairwise correlations across all continuous variables [1].
 * **Radial Diagrams** arrange categories in a circle to show multi-stage, bidirectional relationships without axis limitations [1, 2].
 * **Network Diagrams** display complex, unstructured systems using force simulations to highlight key hubs and communication patterns [2].
 
----
 
 ## 6. Domain V: Showing Changes Over Time (Temporal Dynamics)
 
 Temporal visualizations track trends, rates of growth, and structural shifts across continuous timelines [1]. They help analysts identify seasonal patterns, evaluate business performance, and map complex historic journeys [1, 2].
 
----
 
 ### A. Stacked Area Chart
 
@@ -461,7 +443,6 @@ graph TD
   * **Python:** Use `matplotlib.pyplot.stackplot` or create stacked configurations in Seaborn.
   * **Tableau:** Use the `Area` mark type and place your category variable on the Color shelf.
 
----
 
 ### B. Streamgraph (Steam Chart)
 
@@ -495,7 +476,6 @@ graph TD
 * **Practical Implementation Notes:**
   * **D3.js:** Use the `d3.stack().offset(d3.stackOffsetWiggle)` layout algorithm to compute symmetrical coordinates.
 
----
 
 ### C. Temporal Flow Map (Minard Map)
 
@@ -528,14 +508,12 @@ graph LR
 * **Practical Implementation Notes:**
   * Custom GIS software (QGIS/ArcGIS), or specialized coordinate-plotting in D3.js or HTML5 Canvas engines.
 
----
 
 ### Section Summary & Key Takeaways
 * **Stacked Area Charts** display both cumulative growth and shifting categories over time, using a fixed baseline [1].
 * **Streamgraphs** use a symmetrical central baseline to display organic, flowing trends across many categories, focusing on relative peaks and troughs [2].
 * **Temporal Flow Maps** combine geography, time, and changing volumes into a single cohesive story, highlighting how external factors impact a journey [2, 3].
 
----
 
 ## 7. Production-Grade Systems Architecture & Pipelines
 
@@ -662,7 +640,6 @@ Temporal engines require sorted arrays of data points representing categories ac
 }
 ```
 
----
 
 ## 8. Performance Engineering & Debugging Strategies
 
@@ -713,7 +690,6 @@ def detect_and_resolve_sankey_cycles(links_list):
     return safe_links, removed_links
 ```
 
----
 
 ### B. High-Density Vector Mapping Performance
 
@@ -737,7 +713,6 @@ gdf["geometry"] = gdf["geometry"].simplify(tolerance=0.001, preserve_topology=Tr
 gdf.to_file("us_counties_optimized.geojson", driver="GeoJSON")
 ```
 
----
 
 ### C. Layout Stability in Force-Directed Node Trees
 
@@ -758,7 +733,6 @@ const simulation = d3.forceSimulation(nodes)
     .alphaMin(0.005);   // Stops calculation frames when movement becomes negligible
 ```
 
----
 
 ### D. Zero or Negative Values in Part-to-Whole Diagrams
 
@@ -779,7 +753,6 @@ flowchart TD
 * **Use Absolute Values with Visual Alerts:** Convert negative numbers to positive values to calculate their size, but add a distinct color (like bright red) or a hatched pattern to flag them as negative balances.
 * **Apply Hatched Visual Textures:** Use specific textures to represent divisions with zero budget, keeping them visible on the chart without skewing the scaling math.
 
----
 
 ### E. Modifiable Areal Unit Problem (MAUP)
 
@@ -798,7 +771,6 @@ graph TD
 * **Display Data at Multiple Scales:** Provide toggles that let users switch between county-level, state-level, and census-tract views to see the data clearly at different granularities.
 * **Add Spatial Density Overlays:** Use a secondary layer, such as dot-density plots, over the choropleth map to show exactly where the population is concentrated within each boundary.
 
----
 
 ### F. Colorblind-Friendly Map Styling
 
@@ -809,7 +781,6 @@ Using a standard green-to-red color palette (such as green for low unemployment,
 * **Use Colorblind-Friendly Palettes:** Use perceptually uniform palettes like **Viridis** (blue-to-yellow) or **Cividis** that remain clear and distinguishable for all colorblind viewers.
 * **Test Your Map's Contrast:** Convert your map to grayscale to ensure there is enough contrast and brightness variation for readers to tell the regions apart without relying on color alone.
 
----
 
 ## 9. Summary of Actionable Operational Checklists
 
@@ -817,7 +788,6 @@ Using a standard green-to-red color palette (such as green for low unemployment,
 2. **Handle Edge Cases Early:** Sanitize raw transactional data to resolve nested loops, scale outliers, and handle negative values before passing records to client-side renders.
 3. **Prioritize Reader Comprehension:** Limit initial rendering depth, lock scales across multi-chart grids, and use hover states to keep dashboards clean, clear, and easy to interpret [3].
 
----
 
 ## References
 [1] Comparing Categories of Plots Transcript, Page 1.
