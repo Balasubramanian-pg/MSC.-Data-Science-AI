@@ -4,11 +4,11 @@ module: Statistical Modelling And Inferencing
 week: W05 - Feature Engineering Techniques for Text Data
 ---
 
-[Week 5: Feature Engineering Techniques for Text Data](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W05 - Feature Engineering Techniques for Text Data/Overview.md#week-5-feature-engineering-techniques-for-text-data)
+[Week 5: Feature Engineering Techniques for Text Data](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W05%20-%20Feature%20Engineering%20Techniques%20for%20Text%20Data/Overview.md#week-5-feature-engineering-techniques-for-text-data)
 
 ## Feature Engineering Techniques for Text Data
 
-## [1. Concept Introduction](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01 - Overview of Feature Engineering/Readme.md#1-concept-introduction)
+## [1. Concept Introduction](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01%20-%20Overview%20of%20Feature%20Engineering/Readme.md#1-concept-introduction)
 
 Textual data is fundamentally incompatible with standard mathematical optimization architectures. A machine learning algorithm requires a static, numerically populated vector space $\mathbb{R}^d$, whereas human language is a variable-length sequence of discrete, unstructured symbols governed by complex grammatical rules and semantic contexts.
 
@@ -17,7 +17,7 @@ Feature engineering for text—often referred to as text representation or vecto
 > [!IMPORTANT]
 > The fundamental duality in text feature engineering is the choice between **Sparse/Orthogonal Representations** (where every word is a unique, unrelated axis in a massive vector space) and **Dense/Semantic Representations** (where words are projected into a lower-dimensional continuous space based on their contextual meaning).
 
-## [2. Intuition and Real-World Analogy](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01 - Overview of Feature Engineering/Readme.md#2-intuition-and-real-world-analogy)
+## [2. Intuition and Real-World Analogy](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01%20-%20Overview%20of%20Feature%20Engineering/Readme.md#2-intuition-and-real-world-analogy)
 
 **The Inventory Analogy (Bag of Words / TF-IDF):**
 Imagine you are managing a warehouse (a document) and want to know what it contains. 
@@ -196,14 +196,14 @@ print("Similarity between 'Bank (Finance)' and 'Financial institutions':", round
 - **Never cast to dense prematurely:** Applying standard models that do not natively support sparse matrices (like standard `StandardScaler` or some deep learning layers) requires executing `.toarray()`. This will trigger an immediate Out-Of-Memory (OOM) fatal crash in production.
 - **Subword Tokenization (BPE):** Pure word-level embeddings fail on Out-Of-Vocabulary (OOV) words. Modern pipelines use Byte-Pair Encoding (BPE) or WordPiece (used in BERT) to break unknown words down into known sub-components (e.g., `unbelievably` -> `un` + `believe` + `ably`), preventing vocabulary explosion while handling unseen text perfectly.
 
-## [8. Common Mistakes and Edge Cases](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/Readme.md#8-common-mistakes-and-edge-cases)
+## [8. Common Mistakes and Edge Cases](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03%20-%20General%20Feature%20Engineering%20Techniques/Readme.md#8-common-mistakes-and-edge-cases)
 
-- **TF-IDF Data Leakage:** A critical engineering error is calling `.fit_transform(X)` on the entire [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/Experiential%20Learning%20Activity.md#dataset) *before* the train/test split. The IDF denominator will "see" the frequency of words in the test set. 
+- **TF-IDF Data Leakage:** A critical engineering error is calling `.fit_transform(X)` on the entire [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03%20-%20General%20Feature%20Engineering%20Techniques/Experiential%20Learning%20Activity.md#dataset) *before* the train/test split. The IDF denominator will "see" the frequency of words in the test set. 
   *Fix:* `vectorizer.fit(X_train)`, then `vectorizer.transform(X_train)` and `vectorizer.transform(X_test)`.
 - **Ignoring the Logarithm in IDF:** Why do we use $\log$ in the IDF calculation? If a word appears in 1 document vs 10 documents, it's highly informative. If it appears in 10,000 vs 10,010 documents, the difference is statistically negligible. The $\log$ function dampens linear scaling, reflecting the true information-theoretic value of term rarity.
 - **Polysemy Failure in Static Embeddings:** Standard Word2Vec/GloVe assigns a *single* vector to the word "bank". It mathematically averages the "river" meaning and the "money" meaning together into a diluted coordinate. 
 
-## [9. Interview-Style Insights](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/Readme.md#9-interview-style-insights)
+## [9. Interview-Style Insights](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03%20-%20General%20Feature%20Engineering%20Techniques/Readme.md#9-interview-style-insights)
 
 **Q: In an NLP classification task, you swap out TF-IDF for Word2Vec embeddings, but your model's accuracy decreases. Why?**
 **A:** TF-IDF excels at keyword-matching. If the classification task relies on highly specific, rare domain terminology (e.g., a specific error code in IT support tickets), TF-IDF assigns it maximum weight. Averaged word embeddings dilute these specific keywords into a generic semantic blob. Embeddings are better for *general intent* and *synonymy*; TF-IDF is better for *exact keyword salience*.
@@ -211,13 +211,13 @@ print("Similarity between 'Bank (Finance)' and 'Financial institutions':", round
 **Q: Explain how you would perform dimensionality reduction on a TF-IDF matrix.**
 **A:** I cannot use standard PCA because it requires mean-centering the data, which destroys the zero-sparsity of the matrix and leads to an OOM crash. Instead, I must use Truncated SVD (Singular Value Decomposition), often called Latent Semantic Analysis (LSA) in NLP, which operates efficiently on sparse matrices without centering.
 
-## [10. Final Takeaways](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/Readme.md#10-final-takeaways)
+## [10. Final Takeaways](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03%20-%20General%20Feature%20Engineering%20Techniques/Readme.md#10-final-takeaways)
 
-### [Mental Models](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01 - Overview of Feature Engineering/Readme.md#mental-models)
+### [Mental Models](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01%20-%20Overview%20of%20Feature%20Engineering/Readme.md#mental-models)
 - **Syntax vs. Semantics:** Bag of Words captures *what* was said. POS tagging captures *how* it was structured. Embeddings capture *what it meant*.
 - **The Context Window:** An embedding is essentially a mathematical compression of a word's surrounding context. "You shall know a word by the company it keeps" (John Rupert Firth, 1957).
 
-### [Advanced Learning Roadmap](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01 - Overview of Feature Engineering/Readme.md#advanced-learning-roadmap)
+### [Advanced Learning Roadmap](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01%20-%20Overview%20of%20Feature%20Engineering/Readme.md#advanced-learning-roadmap)
 1. **Contextual Embeddings (Transformers):** Move from static embeddings to dynamic embeddings via Self-Attention (BERT, RoBERTa). In BERT, the vector for "bank" dynamically shifts depending on the words around it in that specific sentence.
 2. **Latent Dirichlet Allocation (LDA):** Learn to model documents not as discrete vectors, but as probabilistic distributions over latent topics.
 3. **Hashing Vectorizer (The "Hashing Trick"):** Learn how to vectorize infinite streams of text with zero vocabulary state via murmurhash functions, accepting a small rate of hash collisions to achieve $\mathcal{O}(1)$ memory complexity.
