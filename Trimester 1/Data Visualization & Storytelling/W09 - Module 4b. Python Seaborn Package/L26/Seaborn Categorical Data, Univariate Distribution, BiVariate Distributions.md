@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W09 - Module 4b. Python Seaborn Package
 ---
 
-
 ## Page 1
 
  
@@ -57,7 +56,6 @@ mathplotlib.pyplot as PLD.
 Then I am uploading the tips data which indicates the tips received by people who are 
 tips received in the restaurant for various types of lunches that are there that is the 
 lunch and dinner and what depending upon the bill says what is the tip. So we have 
-
 
 ## Page 2
 
@@ -112,7 +110,6 @@ that particular category so that you are able to see the distribution also. Now 
 to the second categorical plot that we are exploring is called a swarm plot okay or 
 sometimes called the bee swarm okay. 
 
-
 ## Page 3
 
  
@@ -166,7 +163,6 @@ In lunch there are almost female customers are more or comparatively more than m
 customers. We can draw these kind of conclusions. So the next plot we will be we 
 have done the hue has been done for male and female right. 
 
-
 ## Page 4
 
  
@@ -218,7 +214,6 @@ categorical distribution plots. Till now we have seen some variation of the scat
 Now we will talk about distribution plots. What are the basic distribution plots? You 
 have the box plot, you have the histogram. These are the basic distribution plots. 
   
-
 
 ## Page 5
 
@@ -273,7 +268,6 @@ smoker and non smoker. So you can see that.
 So these graphs indicate on Thursday the smokers bill is varying from maybe around 
 12 dollars to 20 dollars with median values being somewhere around 15 or 17. Non 
 
-
 ## Page 6
 
  
@@ -326,7 +320,6 @@ look at this so there are so many out layers this is how a box plot will look li
 So there are five colours okay so let us first take away if the it is cluttering it is definitely 
 cluttering the plot we are not getting any idea so first I am removing the colour just 
 doing this so yeah so you can see these are so many out layers are there in diamond 
-
 
 ## Page 7
 
@@ -381,7 +374,6 @@ estimate the survival rates as per the passenger class so this is NS dot cat plo
 it is SNS dot cat plot okay data is Titanic X variable is the gender you want to 
 understand it based on the categorical variable of gender and Y is the we have the 
 
-
 ## Page 8
 
  
@@ -434,7 +426,6 @@ understand the difference between two time period two categories and also by jus
 representing a straight line it gives the rate of change or connection between the two 
 categories ok so let us try to use a point graph for understanding the relationship 
 between the survival rate and the gender category and how it varies by the passenger 
-
 
 ## Page 9
 
@@ -489,7 +480,6 @@ and whether it is a smoker or non-smoker or it can be gender male or female okay
 can impose more dimensions also so I'm just trying to cat plot you have an option 
 called facet grid it makes easy to add faceting and visualise higher dimensions okay 
 
-
 ## Page 10
 
  
@@ -542,7 +532,6 @@ very simple distribution plot so now let us look at the other characteristics of
 penguins dot head okay so yeah so you have whether which island it is observed what 
 is the species what is the beak bill is beak length and beak depth so flipper length 
 body mass whether it is a male penguin or a female penguin or we don't have the data 
-
 
 ## Page 11
 
@@ -597,7 +586,6 @@ using the distribution plot but we are using the species for colouring the plot 
 how you get it so it is showing all the three types of penguin species in our data set 
 and you have the distribution so but you will note right this is little difficult to read maybe 
 
-
 ## Page 12
 
  
@@ -651,7 +639,6 @@ in a single diagram so it tries to show it is essentially the scatter plot plott
 the columns in the data along with the distribution okay so on the exact if you see the 
 variables so you have all the numerical variables okay and you have the numerical 
 
-
 ## Page 13
 
  
@@ -683,6 +670,5 @@ the tip data set and its relation.
  
  
 --------------------------------------------------End--------------------------------------------------------- 
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
