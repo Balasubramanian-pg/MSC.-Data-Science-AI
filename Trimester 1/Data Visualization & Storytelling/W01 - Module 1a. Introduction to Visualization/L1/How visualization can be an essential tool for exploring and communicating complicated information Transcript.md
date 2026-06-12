@@ -368,7 +368,6 @@ Insight: As visitor volume increases, sales volume increases proportionally. The
 
 Implementation: Achievable in Excel as a combo chart.
 
-
 ## Visualization Decision Framework
 
 ```
@@ -388,8 +387,6 @@ Start: What do you want to show?
             +-- 3+ Variables + Category --> Parallel Coordinates
             +-- Trend Over Time --> Line Graph / Dual Axis
 ```
-
-
 
 ## Golden Rules
 
