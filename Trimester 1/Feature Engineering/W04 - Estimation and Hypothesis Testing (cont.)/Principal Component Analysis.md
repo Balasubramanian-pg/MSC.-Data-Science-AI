@@ -32,7 +32,6 @@ PCA operates by identifying the directions of maximum variance in the data.
 
 When applying PCA to the `load_digits` dataset (64 features, 8x8 pixel intensity):
 
-
 ```python
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
@@ -49,7 +48,6 @@ X_pca = pca.fit_transform(X_scaled)
 **Explained Variance Ratio:**
 
 To determine the optimal $k$ (number of components), analyze the cumulative explained variance.
-
 
 ```python
 pca_full = PCA().fit(X_scaled)
