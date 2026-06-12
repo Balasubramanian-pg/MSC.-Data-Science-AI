@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W05 - Module 3a.  Dashboards
 ---
 
-
 ## Page 1
 
  
@@ -57,7 +56,6 @@ It can be home products department in a particular region, say in Hyderabad or
 particular product, let us say cement or paint. What is the sale? So, sales is a common 
 feature, quantitative feature you are trying to track. But there are three levels of 
 category that you are trying to look at. 
-
 
 ## Page 2
 
@@ -112,7 +110,6 @@ and draw your attention.
 So, by this different type of data that you have on the dashboard, you can use them in 
 the visuals and bring out the insights. Now, the focus here is to get actionable insights. 
 
-
 ## Page 3
 
  
@@ -166,7 +163,6 @@ it is 4% decreased with the comparative time period. All of this is coming as a 
 on the visual, automated of course. So, you can clearly bring your attention of the 
 audience to two or three topics. 
 
-
 ## Page 4
 
  
@@ -186,6 +182,5 @@ out insights on how visas are issued by our country.
  
 ------------------------------------------------------End----------------------------------------------------- 
  
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
