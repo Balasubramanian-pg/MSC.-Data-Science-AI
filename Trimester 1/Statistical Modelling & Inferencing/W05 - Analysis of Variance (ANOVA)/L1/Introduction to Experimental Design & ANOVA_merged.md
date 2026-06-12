@@ -2,7 +2,6 @@
 
 ## Reading Material: Introduction to Experimental Design & ANOVA
 
-
 **Contents**
 
 1 The Need for Sound Experimental Design  
@@ -27,8 +26,8 @@ The primary purpose of experimental design is to isolate the true effect of an e
 
 The deeper statistical objective is:
 
-$$  
-\text{Separate Genuine [Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) from Confounding [Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))}  
+$$
+\text{Separate Genuine [Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) from Confounding [Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))}
 $$
 
 \text{Separate Genuine [Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) from Confounding [Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))}
@@ -52,10 +51,10 @@ Suppose we observe that coffee drinkers tend to have higher productivity.
 
 This does not necessarily imply:
 
-$$  
+$$
 \text{Coffee}  
 \rightarrow  
-\text{Higher Productivity}  
+\text{Higher Productivity}
 $$
 
 because other variables may influence both:
@@ -102,10 +101,10 @@ The treatment effect becomes confounded with environmental conditions.
 
 The core statistical problem is:
 
-$$  
+$$
 \text{Treatment Effect}  
 +  
-\text{Confounding Effect}  
+\text{Confounding Effect}
 $$
 
 rather than an isolated treatment effect.
@@ -156,16 +155,16 @@ The [response variable](https://github.com/Balasubramanian-pg/MSC.-Data-Science-
 
 The [response variable](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#[response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#response)))-variable) is typically denoted by:
 
-$$  
-Y  
+$$
+Y
 $$
 
 Y
 
 Statistical analysis attempts to determine whether changes in explanatory variables systematically influence:
 
-$$  
-Y  
+$$
+Y
 $$
 
 ## 7. Factors and Levels
@@ -271,10 +270,10 @@ Randomization does not eliminate confounding entirely, but it prevents systemati
 
 The deeper statistical logic is:
 
-$$  
+$$
 \text{Randomization}  
 \rightarrow  
-\text{Balance of Hidden Variables}  
+\text{Balance of Hidden Variables}
 $$
 
 \text{Randomization}\rightarrow\text{Balance of Hidden Variables}
@@ -289,8 +288,8 @@ Without replication, observed differences may simply reflect random variation af
 
 Replication allows estimation of:
 
-$$  
-\text{Within-Group Variability}  
+$$
+\text{Within-Group Variability}
 $$
 
 \text{Within-Group Variability}
@@ -329,14 +328,14 @@ After collecting data from a well-designed experiment, we require statistical to
 
 When comparing:
 
-$$  
-k \ge 3  
+$$
+k \ge 3
 $$
 
 group means, the standard method is:
 
-$$  
-\text{ANOVA}  
+$$
+\text{ANOVA}
 $$
 
 or [Analysis of Variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#analysis-of-variance).
@@ -358,15 +357,15 @@ One approach would conduct pairwise comparisons:
 
 However, each t-test carries a Type I error probability:
 
-$$  
-\alpha  
+$$
+\alpha
 $$
 
 As the number of tests increases:
 
-$$  
+$$
 P(\text{At Least One False Positive})  
-\uparrow  
+\uparrow
 $$
 
 P(\text{At Least One False Positive})\uparrow
@@ -379,10 +378,10 @@ ANOVA solves this problem using a single global test.
 
 ANOVA evaluates:
 
-$$  
+$$
 \text{Between-Group Variability}  
 \quad vs \quad  
-\text{Within-Group Variability}  
+\text{Within-Group Variability}
 $$
 
 \text{Between-Group Variability}\quad vs \quad\text{Within-Group Variability}
@@ -404,27 +403,26 @@ ANOVA partitions [total variability](https://github.com/Balasubramanian-pg/MSC.-
 
 Also called:
 
-$$  
-MST  
+$$
+MST
 $$
 
 This measures variability among treatment means.
 
 Large:
 
-$$  
-MST  
+$$
+MST
 $$
 
 suggests strong treatment effects.
-
 
 ## [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) Square for Error
 
 Also called:
 
-$$  
-MSE  
+$$
+MSE
 $$
 
 This measures natural variability within treatment groups.
@@ -435,44 +433,48 @@ This acts as statistical [noise](https://github.com/Balasubramanian-pg/MSC.-Data
 
 The ANOVA test statistic is:
 
-## $$  
+##
+
+$$
 F
 
 [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)  
 MST  
 }{  
 MSE  
-}  
+}
 $$
 
 F=\frac{MST}{MSE}
 
 Equivalent interpretation:
 
-## $$  
+##
+
+$$
 F
 
 [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)  
 \text{[Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal))}  
 }{  
 \text{[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))}  
-}  
+}
 $$
 
 F=[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\text{[Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal))}}{\text{[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))}}
 
 If:
 
-$$  
-F \approx 1  
+$$
+F \approx 1
 $$
 
 group differences resemble random variability.
 
 If:
 
-$$  
-F \gg 1  
+$$
+F \gg 1
 $$
 
 group differences exceed expected random [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)).
@@ -481,17 +483,17 @@ group differences exceed expected random [noise](https://github.com/Balasubraman
 
 The [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis) states all population means are equal:
 
-$$  
+$$
 H_0:  
-\mu_1 = \mu_2 = \dots = \mu_k  
+\mu_1 = \mu_2 = \dots = \mu_k
 $$
 
 H_0:\mu_1=\mu_2=\dots=\mu_k
 
 The [alternative hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#alternative-hypothesis) states:
 
-$$  
-\text{At least one population [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) differs}  
+$$
+\text{At least one population [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) differs}
 $$
 
 \text{At least one population [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) differs}
@@ -519,10 +521,10 @@ These methods identify the specific pairwise differences while controlling overa
 
 Experimental design and ANOVA together form a system for separating:
 
-$$  
+$$
 \text{Systematic Treatment Effects}  
 \quad from \quad  
-\text{Random Variation}  
+\text{Random Variation}
 $$
 
 \text{Systematic Treatment Effects}\quad from \quad\text{Random Variation}
