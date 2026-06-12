@@ -234,7 +234,6 @@ def vectorized_welch_t_test(control_data, treatment_data):
     Performs Welch's t-test across thousands of metrics simultaneously.
     
     Parameters:
-    -----------
     control_data : np.ndarray
         2D array of shape (num_tests, num_observations_A)
     treatment_data : np.ndarray
