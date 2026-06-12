@@ -56,7 +56,6 @@ The lecture specifically focuses on:
 - preparing data for advanced Matplotlib visualization
     
 
----
 
 ## Data Formats in Analytics Systems
 
@@ -81,7 +80,6 @@ The lecture focuses on the two most common web-delivered formats:
 - JSON
     
 
----
 
 ## CSV Files
 
@@ -107,7 +105,6 @@ Bob,30,70000
 
 This structure maps naturally into tables.
 
----
 
 ## Why CSV Became Dominant
 
@@ -126,7 +123,6 @@ CSV became popular because:
 
 Even massive enterprise systems still exchange data through CSV exports.
 
----
 
 ## Reading CSV Files with Pandas
 
@@ -142,7 +138,6 @@ df = pd.read_csv(csv_url)
 
 Source notes: provided lecture content.
 
----
 
 ## What `read_csv()` Actually Does
 
@@ -163,7 +158,6 @@ Internally, Pandas:
 
 This is significantly more sophisticated than beginners realize.
 
----
 
 ## DataFrame Mental Model
 
@@ -189,7 +183,6 @@ It combines:
 - metadata handling
     
 
----
 
 ## Example: Reading Real CSV Data
 
@@ -203,7 +196,6 @@ df = pd.read_csv(url)
 print(df.head())
 ```
 
----
 
 ## Inspecting Downloaded Data
 
@@ -221,7 +213,6 @@ Most beginners skip validation entirely.
 
 That creates silent analytical corruption.
 
----
 
 ## Common CSV Problems
 
@@ -244,7 +235,6 @@ Example:
 pd.read_csv(url, sep=';')
 ```
 
----
 
 ## Encoding Problems
 
@@ -256,7 +246,6 @@ Common fix:
 pd.read_csv(url, encoding='latin1')
 ```
 
----
 
 ## Missing Values
 
@@ -271,7 +260,6 @@ NULL
 
 These must be normalized.
 
----
 
 ## JSON Files
 
@@ -297,7 +285,6 @@ CSV cannot naturally represent this hierarchy.
 
 JSON can.
 
----
 
 ## JSON Structure
 
@@ -323,7 +310,6 @@ This makes it ideal for:
 - machine learning APIs
     
 
----
 
 ## Reading JSON with Pandas
 
@@ -335,7 +321,6 @@ json_url = "https://example.com/data.json"
 df_json = pd.read_json(json_url)
 ```
 
----
 
 ## Internal Parsing Complexity
 
@@ -352,7 +337,6 @@ df_json = pd.read_json(json_url)
 
 JSON ingestion is computationally more expensive than CSV parsing.
 
----
 
 ## Real API Example
 
@@ -368,7 +352,6 @@ print(df.head())
 
 This fetches live web API data directly into Pandas.
 
----
 
 ## Flattening Nested JSON
 
@@ -384,7 +367,6 @@ flat_df = json_normalize(data)
 
 This is essential in production analytics systems.
 
----
 
 ## Why Direct URL Reading Matters
 
@@ -403,7 +385,6 @@ This eliminates:
 
 This is foundational for automation.
 
----
 
 ## Real-World Analytics Pipeline
 
@@ -417,7 +398,6 @@ D --> E[Matplotlib Visualization]
 E --> F[Dashboard or Report]
 ```
 
----
 
 ## Why This Changes Everything
 
@@ -440,7 +420,6 @@ With remote ingestion:
 
 > visualization becomes a live analytical system.
 
----
 
 ## Standard Imports
 
@@ -453,7 +432,6 @@ import pandas as pd
 
 These are foundational components of the scientific Python ecosystem.
 
----
 
 ## Why NumPy Is Always Imported
 
@@ -472,7 +450,6 @@ NumPy provides:
 
 Matplotlib internally relies heavily on NumPy arrays.
 
----
 
 ## Why Pandas Is Central
 
@@ -493,7 +470,6 @@ Pandas handles:
 
 Without Pandas, real-world data visualization becomes painful.
 
----
 
 ## Advanced Visualization Workflow
 
@@ -523,7 +499,6 @@ summary.plot(kind='bar')
 plt.show()
 ```
 
----
 
 ## Data from the Web + Matplotlib
 
@@ -540,7 +515,6 @@ Examples:
 |Business|Cloud warehouses|
 |IoT|Sensor streams|
 
----
 
 ## Performance Considerations
 
@@ -554,7 +528,6 @@ Examples:
 |Human readability|Moderate|High|
 |Analytics friendliness|Excellent|Moderate|
 
----
 
 ## Failure Modes in Remote Data Systems
 
@@ -571,7 +544,6 @@ except Exception as e:
     print(e)
 ```
 
----
 
 ## Schema Drift
 
@@ -588,7 +560,6 @@ Columns may suddenly:
 
 This silently breaks visualizations.
 
----
 
 ## Security Considerations
 
@@ -607,7 +578,6 @@ Potential problems:
 
 Production systems validate inputs aggressively.
 
----
 
 ## Machine Learning Connections
 
@@ -621,7 +591,6 @@ Remote data ingestion is fundamental in ML systems:
 |Feature stores|Remote retrieval|
 |Dashboards|Real-time metrics|
 
----
 
 ## Advanced Insight
 
@@ -644,7 +613,6 @@ F --> G[Decision Making]
 
 Understanding ingestion is therefore just as important as understanding plotting.
 
----
 
 ## Common Mistakes
 
@@ -662,7 +630,6 @@ Better:
 URL-based ingestion
 ```
 
----
 
 ## Ignoring Missing Data
 
@@ -670,19 +637,16 @@ Remote data is rarely clean.
 
 Always validate.
 
----
 
 ## Assuming Stable APIs
 
 Web data structures change constantly.
 
----
 
 ## No Error Handling
 
 Production systems must survive failures gracefully.
 
----
 
 ## Final Takeaways
 
@@ -750,7 +714,6 @@ This matters because weather datasets exhibit several characteristics common in 
 - continuous numerical measurements
     
 
----
 
 ## Standard Visualization Imports
 
@@ -764,7 +727,6 @@ import matplotlib.pyplot as plt
 
 These three libraries form the foundational visualization stack in Python.
 
----
 
 ## Why These Three Libraries Always Appear Together
 
@@ -781,7 +743,6 @@ Used for:
 - efficient memory handling
     
 
----
 
 ## Pandas
 
@@ -798,7 +759,6 @@ Used for:
 - time-series structures
     
 
----
 
 ## Matplotlib
 
@@ -813,7 +773,6 @@ Used for:
 - customizing figures
     
 
----
 
 ## Global Plot Styling
 
@@ -825,7 +784,6 @@ plt.style.use('seaborn-v0_8-whitegrid')
 
 Source notes: provided lecture content.
 
----
 
 ## What This Actually Does
 
@@ -854,7 +812,6 @@ This affects:
 - default colors
     
 
----
 
 ## Why Global Styles Matter
 
@@ -880,7 +837,6 @@ This becomes critically important in:
 - publication-quality figures
     
 
----
 
 ## Why `seaborn-whitegrid` Became Popular
 
@@ -899,7 +855,6 @@ It provides:
 
 Compared to default Matplotlib, it feels more modern and analytically cleaner.
 
----
 
 ## The Hidden Cognitive Benefit of Gridlines
 
@@ -924,7 +879,6 @@ $$
 \text{Visual Noise}  
 $$
 
----
 
 ## Online Weather Dataset
 
@@ -936,7 +890,6 @@ url = 'https://raw.githubusercontent.com/vega/vega-datasets/main/data/seattle-we
 
 This dataset contains historical Seattle weather observations.
 
----
 
 ## Why Remote Data Sources Matter
 
@@ -965,7 +918,6 @@ This creates:
 - dynamic analytics
     
 
----
 
 ## Reading CSV from URL
 
@@ -976,7 +928,6 @@ df_weather = pd.read_csv(
 )
 ```
 
----
 
 ## What `parse_dates` Does
 
@@ -1011,7 +962,6 @@ That enables:
 - forecasting
     
 
----
 
 ## Why Datetime Parsing Matters
 
@@ -1028,7 +978,6 @@ lag analysis
 
 become difficult or impossible.
 
----
 
 ## Understanding DataFrames in Time-Series Systems
 
@@ -1040,7 +989,6 @@ df_weather.set_index('date', inplace=True)
 
 This converts the date column into the DataFrame index.
 
----
 
 ## Why Indexing Matters
 
@@ -1067,7 +1015,6 @@ or:
 df_weather.loc['2015']
 ```
 
----
 
 ## Time-Series Mental Model
 
@@ -1092,7 +1039,6 @@ Examples:
 |Timestamp|Stock price|
 |Hour|Sensor reading|
 
----
 
 ## Plotting Maximum Temperature
 
@@ -1102,7 +1048,6 @@ The lecture plots:
 df_weather['temp_max'].plot(color='crimson')
 ```
 
----
 
 ## Why Time-Series Visualization Matters
 
@@ -1123,7 +1068,6 @@ Time-series plots reveal:
 
 Humans are exceptionally good at visually detecting temporal patterns.
 
----
 
 ## Complete Example
 
@@ -1167,7 +1111,6 @@ plt.xlabel('Date')
 plt.show()
 ```
 
----
 
 ## Understanding Figure Size
 
@@ -1185,7 +1128,6 @@ $$
 
 in inches.
 
----
 
 ## Why Aspect Ratio Matters
 
@@ -1207,7 +1149,6 @@ Too tall:
 
 Time-series data generally benefits from wider layouts because time naturally extends horizontally.
 
----
 
 ## Why Crimson Was Chosen
 
@@ -1228,7 +1169,6 @@ Red shades psychologically imply:
 
 Visualization often leverages semantic color associations.
 
----
 
 ## Time-Series Visualization Insights
 
@@ -1245,7 +1185,6 @@ When viewing weather data, several phenomena become visually obvious:
 
 This is periodic behavior.
 
----
 
 ## Seasonal Patterns
 
@@ -1266,7 +1205,6 @@ Where:
 
 This creates yearly cyclic temperature behavior.
 
----
 
 ## Visualization Architecture
 
@@ -1280,7 +1218,6 @@ D --> E[Matplotlib Plot]
 E --> F[Time-Series Visualization]
 ```
 
----
 
 ## Why Indexing Improves Plotting
 
@@ -1310,7 +1247,6 @@ Without indexing:
 - temporal ordering may break
     
 
----
 
 ## Common Problems in Time-Series Visualization
 
@@ -1327,7 +1263,6 @@ Solutions:
 - rolling averages
     
 
----
 
 ## Missing Dates
 
@@ -1335,7 +1270,6 @@ Real-world datasets often contain gaps.
 
 This creates misleading discontinuities.
 
----
 
 ## Datetime Parsing Failures
 
@@ -1349,7 +1283,6 @@ Feb 1 2020
 
 These can silently parse incorrectly.
 
----
 
 ## Rolling Averages
 
@@ -1365,7 +1298,6 @@ df_weather['temp_max'].rolling(30).mean().plot()
 
 This computes a 30-day moving average.
 
----
 
 ## Why Moving Averages Matter
 
@@ -1396,7 +1328,6 @@ This is foundational in:
 - forecasting
     
 
----
 
 ## Machine Learning Connections
 
@@ -1410,7 +1341,6 @@ Time-series visualization is central in ML systems:
 |Sensor analytics|Streaming charts|
 |Reinforcement learning|Reward curves|
 
----
 
 ## Advanced Insight
 
@@ -1435,7 +1365,6 @@ This transition is foundational for:
 - machine learning operations
     
 
----
 
 ## Real-World Extensions
 
@@ -1449,7 +1378,6 @@ The same pipeline can scale to:
 |Weather APIs|Climate dashboards|
 |ML endpoints|Live inference monitoring|
 
----
 
 ## Final Takeaways
 
@@ -1516,7 +1444,6 @@ This is foundational for building:
 
 Source notes: provided lecture content.
 
----
 
 ## Why Multi-Plot Layouts Matter
 
@@ -1551,7 +1478,6 @@ Subplots solve this problem by:
 - reducing clutter
     
 
----
 
 ## The Core Idea Behind Subplots
 
@@ -1574,7 +1500,6 @@ Where:
 - Axes = individual plotting regions
     
 
----
 
 ## Understanding `plt.subplots()`
 
@@ -1589,7 +1514,6 @@ fig, axes = plt.subplots(
 )
 ```
 
----
 
 ## Breaking This Down
 
@@ -1608,7 +1532,6 @@ Plot 1
 Plot 2
 ```
 
----
 
 ## `fig`
 
@@ -1629,7 +1552,6 @@ It controls:
 - export settings
     
 
----
 
 ## `axes`
 
@@ -1644,7 +1566,6 @@ axes[1]
 
 Each axis behaves like an independent graph.
 
----
 
 ## Why This Architecture Is Powerful
 
@@ -1661,7 +1582,6 @@ Each subplot can have:
 
 while remaining visually synchronized.
 
----
 
 ## `sharex=True`
 
@@ -1688,7 +1608,6 @@ This ensures:
 - reduced label clutter
     
 
----
 
 ## Why Shared Axes Matter
 
@@ -1703,7 +1622,6 @@ Without shared axes:
 
 Human perception depends heavily on alignment consistency.
 
----
 
 ## Complete Example
 
@@ -1771,7 +1689,6 @@ fig.suptitle(
 plt.show()
 ```
 
----
 
 ## Understanding `figsize=(12,8)`
 
@@ -1792,7 +1709,6 @@ A taller figure is necessary because:
 - readability must be preserved
     
 
----
 
 ## Why Different Colors Were Chosen
 
@@ -1807,7 +1723,6 @@ Psychologically associated with:
 - intensity
     
 
----
 
 ## Royal Blue for Rainfall
 
@@ -1822,7 +1737,6 @@ Psychologically associated with:
 
 Visualization often exploits semantic color associations.
 
----
 
 ## Subplots as Analytical Dashboards
 
@@ -1834,7 +1748,6 @@ Modern BI systems are built from the same conceptual principle:
 multiple synchronized analytical views
 ```
 
----
 
 ## Time-Series Comparison
 
@@ -1853,7 +1766,6 @@ Now the viewer can immediately observe:
 
 This enables causal reasoning.
 
----
 
 ## Example Insight
 
@@ -1868,7 +1780,6 @@ The viewer immediately perceives correlation patterns visually.
 
 This is much harder to infer from tables.
 
----
 
 ## Figure-Level Titles
 
@@ -1884,7 +1795,6 @@ This differs from:
 axes[0].set_title()
 ```
 
----
 
 ## Difference Between Figure and Axis Titles
 
@@ -1895,7 +1805,6 @@ axes[0].set_title()
 
 This distinction becomes critical in large dashboards.
 
----
 
 ## Internal Architecture
 
@@ -1909,7 +1818,6 @@ B --> D[Temperature Plot]
 C --> E[Precipitation Plot]
 ```
 
----
 
 ## Why Subplots Scale Well
 
@@ -1933,7 +1841,6 @@ This becomes extremely important in:
 - operational analytics
     
 
----
 
 ## Advanced Layout Variations
 
@@ -1949,7 +1856,6 @@ Creates:
 Plot 1 | Plot 2
 ```
 
----
 
 ## Grid Layout
 
@@ -1964,7 +1870,6 @@ Plot 1 | Plot 2
 Plot 3 | Plot 4
 ```
 
----
 
 ## High-Dimensional Dashboards
 
@@ -1981,7 +1886,6 @@ Enterprise dashboards often contain:
 
 The principles remain identical.
 
----
 
 ## Common Time-Series Enhancements
 
@@ -1995,7 +1899,6 @@ Smooth trends improve interpretability.
 df_weather['temp_max'].rolling(30).mean()
 ```
 
----
 
 ## Seasonal Aggregation
 
@@ -2005,7 +1908,6 @@ df_weather.resample('M').mean()
 
 This aggregates by month.
 
----
 
 ## Overlaying Multiple Signals
 
@@ -2018,7 +1920,6 @@ axes[0].plot(humidity)
 
 But this risks clutter if scales differ significantly.
 
----
 
 ## Why Separate Subplots Are Often Better
 
@@ -2033,7 +1934,6 @@ Human perception struggles when:
 
 Subplots preserve clarity.
 
----
 
 ## Machine Learning Connections
 
@@ -2049,7 +1949,6 @@ Examples:
 |Drift analysis|Distribution comparisons|
 |Sensor analytics|Multi-signal tracking|
 
----
 
 ## Advanced Insight
 
@@ -2068,7 +1967,6 @@ Good subplot design minimizes:
 - comparison friction
     
 
----
 
 ## Common Mistakes
 
@@ -2076,19 +1974,16 @@ Good subplot design minimizes:
 
 Overcrowded dashboards reduce interpretability.
 
----
 
 ## Misaligned Axes
 
 If scales differ unintentionally, comparisons become misleading.
 
----
 
 ## Inconsistent Colors
 
 Changing color semantics across plots confuses viewers.
 
----
 
 ## Overlapping Labels
 
@@ -2100,7 +1995,6 @@ Use:
 plt.tight_layout()
 ```
 
----
 
 ## Tight Layout
 
@@ -2121,7 +2015,6 @@ Without it:
 - plots become cramped
     
 
----
 
 ## Advanced Mental Model
 
@@ -2135,7 +2028,6 @@ Each subplot reveals one aspect of the same underlying phenomenon.
 
 Together, they create multidimensional understanding.
 
----
 
 ## Final Takeaways
 
@@ -2190,7 +2082,6 @@ This function automatically adjusts spacing between plot elements.
 
 Source notes: provided lecture content.
 
----
 
 ## Why Layout Problems Happen
 
@@ -2222,7 +2113,6 @@ Typical symptoms:
 - compressed plots
     
 
----
 
 ## The Core Problem
 
@@ -2239,7 +2129,6 @@ Unlike high-level BI tools:
 - figure geometry must often be managed manually
     
 
----
 
 ## Understanding `tight_layout()`
 
@@ -2249,7 +2138,6 @@ The lecture uses:
 plt.tight_layout(rect=[0, 0, 1, 0.96])
 ```
 
----
 
 ## What `tight_layout()` Actually Does
 
@@ -2268,7 +2156,6 @@ Then it automatically repositions elements to minimize collisions.
 
 This is fundamentally a geometric optimization process.
 
----
 
 ## Why `rect=[0,0,1,0.96]` Matters
 
@@ -2288,7 +2175,6 @@ fig.suptitle()
 
 may overlap with subplot titles.
 
----
 
 ## Understanding Rectangle Coordinates
 
@@ -2321,7 +2207,6 @@ means:
 
 > leave 4% vertical space at the top.
 
----
 
 ## Why This Matters Visually
 
@@ -2336,7 +2221,6 @@ Without reserved space:
 
 Small layout mistakes disproportionately affect perceived quality.
 
----
 
 ## Understanding `axes[0]` and `axes[1]`
 
@@ -2349,7 +2233,6 @@ axes[1]
 
 These represent individual subplot objects.
 
----
 
 ## Mental Model of Axes Arrays
 
@@ -2378,7 +2261,6 @@ A --> C[axes 1]
 
 Each subplot is independently controllable.
 
----
 
 ## Example: Minimum Temperature + Wind Speed
 
@@ -2432,7 +2314,6 @@ plt.tight_layout(
 plt.show()
 ```
 
----
 
 ## Why These Variables Were Chosen
 
@@ -2454,7 +2335,6 @@ These variables often exhibit relationships such as:
 - winter volatility
     
 
----
 
 ## Why Shared X-Axes Are Powerful
 
@@ -2468,7 +2348,6 @@ Did wind spikes occur during cold periods?
 
 Without aligned axes, this inference becomes cognitively difficult.
 
----
 
 ## Cognitive Science Behind Alignment
 
@@ -2485,7 +2364,6 @@ This is one reason dashboards use:
 
 Alignment reduces mental transformation effort.
 
----
 
 ## Why Different Colors Matter
 
@@ -2502,7 +2380,6 @@ Associated psychologically with:
 - air
     
 
----
 
 ## `slategray`
 
@@ -2519,7 +2396,6 @@ Associated with:
 
 Color semantics subtly reinforce interpretation.
 
----
 
 ## Figure-Level Narrative
 
@@ -2540,7 +2416,6 @@ Without a global title:
 - analytical cohesion weakens
     
 
----
 
 ## Visualization as Hierarchical Communication
 
@@ -2555,7 +2430,6 @@ A good subplot system communicates at multiple levels simultaneously:
 
 This creates layered understanding.
 
----
 
 ## Transition to Curve Fitting
 
@@ -2587,7 +2461,6 @@ modeling and extrapolating trends
 
 This connects visualization directly to predictive analytics.
 
----
 
 ## What Is Curve Fitting?
 
@@ -2614,7 +2487,6 @@ $$
 f(x_i) \approx y_i  
 $$
 
----
 
 ## Understanding `np.polyfit()`
 
@@ -2632,7 +2504,6 @@ Where:
 |`y`|Output variable|
 |`deg`|Polynomial degree|
 
----
 
 ## Example
 
@@ -2650,7 +2521,6 @@ $$
 ax^2 + bx + c  
 $$
 
----
 
 ## What `polyfit()` Returns
 
@@ -2668,7 +2538,6 @@ $$
 2.1x^2 - 0.4x + 3.2  
 $$
 
----
 
 ## Understanding `np.poly1d()`
 
@@ -2694,7 +2563,6 @@ $$
 x = 5  
 $$
 
----
 
 ## Why This Matters
 
@@ -2711,7 +2579,6 @@ This enables:
 - predictive visualization
     
 
----
 
 ## Example Workflow
 
@@ -2753,7 +2620,6 @@ plt.plot(
 plt.show()
 ```
 
----
 
 ## Why Extrapolation Is Dangerous
 
@@ -2767,7 +2633,6 @@ Curve fitting assumes:
 
 This is often false.
 
----
 
 ## Overfitting Problem
 
@@ -2782,7 +2647,6 @@ Example:
 
 This is classic overfitting.
 
----
 
 ## Polynomial Degree Intuition
 
@@ -2793,7 +2657,6 @@ This is classic overfitting.
 |3|Cubic|
 |Higher|Complex oscillations|
 
----
 
 ## Mathematical Foundation
 
@@ -2803,7 +2666,6 @@ Polynomial fitting minimizes squared error:
 
 This is least squares optimization.
 
----
 
 ## Machine Learning Connection
 
@@ -2818,7 +2680,6 @@ Connections:
 |Trend extrapolation|Forecasting|
 |Error minimization|Loss optimization|
 
----
 
 ## Real-World Uses
 
@@ -2832,7 +2693,6 @@ Curve fitting is heavily used in:
 |Physics|Experimental modeling|
 |ML|Regression pipelines|
 
----
 
 ## Common Mistakes
 
@@ -2840,19 +2700,16 @@ Curve fitting is heavily used in:
 
 Projecting trends too far into the future is statistically dangerous.
 
----
 
 ## Overfitting High-Degree Curves
 
 Complex curves often memorize noise instead of learning signal.
 
----
 
 ## Ignoring Residuals
 
 A fitted curve may appear visually convincing while having poor predictive quality.
 
----
 
 ## Advanced Insight
 
