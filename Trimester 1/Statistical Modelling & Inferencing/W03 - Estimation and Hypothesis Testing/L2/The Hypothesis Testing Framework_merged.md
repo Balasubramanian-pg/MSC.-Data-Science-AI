@@ -10,14 +10,14 @@ Hypothesis testing is a formal framework for making decisions using incomplete i
 
 We observe a sample:
 
-$$  
-x_1, x_2, x_3, \dots, x_n  
+$$
+x_1, x_2, x_3, \dots, x_n
 $$
 
 and attempt to infer something about an unknown population parameter such as:
 
-$$  
-\mu,\ p,\ \sigma^2  
+$$
+\mu,\ p,\ \sigma^2
 $$
 
 Because we only observe a sample rather than the full population, every conclusion contains uncertainty.
@@ -26,8 +26,8 @@ Hypothesis testing provides a systematic method for deciding whether the observe
 
 At its core, hypothesis testing asks:
 
-$$  
-\text{Is the observed [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) large enough to distinguish from random [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))?}  
+$$
+\text{Is the observed [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) large enough to distinguish from random [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))?}
 $$
 
 ## 2 The Logic Behind Hypothesis Testing
@@ -60,8 +60,20 @@ The courtroom analogy is one of the most powerful ways to understand statistical
 |Presumed innocent|[Null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis) assumed true|
 |Prosecutor presents evidence|Researcher collects data|
 |Jury evaluates evidence|Statistical test evaluates evidence|
-|Guilty verdict|Reject $$H_0$$|
-|Not guilty verdict|Fail to reject $$H_0$$|
+|Guilty verdict|Reject
+
+$$
+H_0
+$$
+
+|
+|Not guilty verdict|Fail to reject
+
+$$
+H_0
+$$
+
+|
 
 The analogy matters because it highlights an essential principle:
 
@@ -88,22 +100,22 @@ The [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI
 
 It is denoted by:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 [Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples):
 
-$$  
-H_0:\mu = 100  
+$$
+H_0:\mu = 100
 $$
 
-$$  
-H_0:p = 0.5  
+$$
+H_0:p = 0.5
 $$
 
-$$  
-H_0:\mu_1 - \mu_2 = 0  
+$$
+H_0:\mu_1 - \mu_2 = 0
 $$
 
 The [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis) is the claim subjected to skepticism and testing.
@@ -113,24 +125,24 @@ The [alternative hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Sci
 
 It is denoted by:
 
-$$  
+$$
 H_A  
 \quad \text{or} \quad  
-H_1  
+H_1
 $$
 
 [Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples):
 
-$$  
-H_A:\mu \ne 100  
+$$
+H_A:\mu \ne 100
 $$
 
-$$  
-H_A:\mu > 100  
+$$
+H_A:\mu > 100
 $$
 
-$$  
-H_A:\mu < 100  
+$$
+H_A:\mu < 100
 $$
 
 The [alternative hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#alternative-hypothesis) represents the presence of:
@@ -145,25 +157,24 @@ The [alternative hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Sci
 
 The structure of the [alternative hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#alternative-hypothesis) determines the type of test.
 
-
 ## 6.1 [Two-Tailed](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#two-tailed) Test
 
 Used when deviations in either direction matter.
 
-$$  
-H_0:\mu = 100  
+$$
+H_0:\mu = 100
 $$
 
-$$  
-H_A:\mu \ne 100  
+$$
+H_A:\mu \ne 100
 $$
 
 This tests for:
 
-$$  
+$$
 \mu > 100  
 \quad \text{or} \quad  
-\mu < 100  
+\mu < 100
 $$
 
 simultaneously.
@@ -172,24 +183,24 @@ simultaneously.
 
 Used when only increases matter.
 
-$$  
-H_0:\mu = 100  
+$$
+H_0:\mu = 100
 $$
 
-$$  
-H_A:\mu > 100  
+$$
+H_A:\mu > 100
 $$
 
 ## 6.3 [Left-Tailed](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#left-tailed) Test
 
 Used when only decreases matter.
 
-$$  
-H_0:\mu = 100  
+$$
+H_0:\mu = 100
 $$
 
-$$  
-H_A:\mu < 100  
+$$
+H_A:\mu < 100
 $$
 
 The choice of tail direction must be determined before examining data.
@@ -228,18 +239,18 @@ The first step is translating the research [question](https://github.com/Balasub
 
 Suppose a manufacturer claims battery life is:
 
-$$  
-100 \text{ hours}  
+$$
+100 \text{ hours}
 $$
 
 We might define:
 
-$$  
-H_0:\mu = 100  
+$$
+H_0:\mu = 100
 $$
 
-$$  
-H_A:\mu \ne 100  
+$$
+H_A:\mu \ne 100
 $$
 
 This step matters enormously because poorly formulated hypotheses create invalid [conclusions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#conclusions) later.
@@ -251,16 +262,16 @@ Before collecting data, we define the evidence threshold.
 
 This threshold is the significance level:
 
-$$  
-\alpha  
+$$
+\alpha
 $$
 
 \alpha
 
 The significance level represents:
 
-$$  
-P(\text{Type I Error})  
+$$
+P(\text{Type I Error})
 $$
 
 P(\text{Type I Error})
@@ -271,17 +282,40 @@ Common choices:
 
 |Significance Level|Interpretation|
 |---|---|
-|$$0.10$$|More lenient|
-|$$0.05$$|Standard default|
-|$$0.01$$|Very strict|
+|
 
+$$
+0.10
+$$
 
-## 10 Why $$\alpha$$ Is Chosen Before Seeing Data
+|More lenient|
+|
+
+$$
+0.05
+$$
+
+|Standard default|
+|
+
+$$
+0.01
+$$
+
+|Very strict|
+
+## 10 Why
+
+$$
+\alpha
+$$
+
+Is Chosen Before Seeing Data
 
 Choosing:
 
-$$  
-\alpha  
+$$
+\alpha
 $$
 
 before examining results prevents moving the goalposts.
@@ -290,8 +324,8 @@ If researchers selected significance thresholds after observing outcomes, they c
 
 Pre-registering:
 
-$$  
-\alpha  
+$$
+\alpha
 $$
 
 helps preserve inferential integrity.
@@ -304,11 +338,9 @@ The evidence is summarized into a single quantity called [the test statistic](ht
 
 General structure:
 
-
 $$
 \text{Test Statistic} = [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\text{Sample Statistic} - \text{Null Value}}{\text{[Standard Error](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#standard-error)}}
 $$
-
 
 [The test statistic](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L0/Inference%20%26%20Modelling.md#the-test-statistic) measures:
 
@@ -316,16 +348,16 @@ $$
 
 Large deviations imply stronger evidence against:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 ## 12 The [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition)))) Behind Standardization
 
 Suppose two experiments both observe a [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) difference of:
 
-$$  
-5  
+$$
+5
 $$
 
 But:
@@ -343,8 +375,8 @@ That is why hypothesis testing divides by the [standard error](https://github.co
 
 Inference fundamentally depends on:
 
-$$  
-\text{[Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal))} \div \text{[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))}  
+$$
+\text{[Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal))} \div \text{[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))}
 $$
 
 ## 13 Common Test Statistics
@@ -353,15 +385,39 @@ Different statistical problems require different test statistics.
 
 |Test Statistic|Typical Use|
 |---|---|
-|$$Z$$|Known population variance or large samples|
-|$$t$$|Unknown population variance|
-|$$\chi^2$$|Variance tests, categorical analysis|
-|$$F$$|Comparing multiple variances or means|
+|
+
+$$
+Z
+$$
+
+|Known population variance or large samples|
+|
+
+$$
+t
+$$
+
+|Unknown population variance|
+|
+
+$$
+\chi^2
+$$
+
+|Variance tests, categorical analysis|
+|
+
+$$
+F
+$$
+
+|Comparing multiple variances or means|
 
 Each statistic has its own probability distribution under:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 ## 14 [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example): One-Sample Z-Test
@@ -371,41 +427,43 @@ Suppose:
 - claimed population [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean):
     
 
-$$  
-\mu_0 = 50  
+$$
+\mu_0 = 50
 $$
 
 - sample [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean):
     
 
-$$  
-\bar{x} = 54  
+$$
+\bar{x} = 54
 $$
 
 - population standard deviation:
     
 
-$$  
-\sigma = 10  
+$$
+\sigma = 10
 $$
 
 - sample size:
     
 
-$$  
-n = 25  
+$$
+n = 25
 $$
 
 The Z-statistic is:
 
-## $$  
+##
+
+$$
 Z
 
 [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)  
 \bar{x} - \mu_0  
 }{  
 \sigma/\sqrt{n}  
-}  
+}
 $$
 
 genui{"math_block_widget_always_prefetch_v2":{"content":"Z=[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\bar{x}-\mu_0}{\sigma/\sqrt{n}}"}}
@@ -418,8 +476,8 @@ $$
 
 This means the observed sample [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) lies:
 
-$$  
-2  
+$$
+2
 $$
 
 standard errors above the null expectation.
@@ -430,18 +488,20 @@ Once [the test statistic](https://github.com/Balasubramanian-pg/MSC.-Data-Scienc
 
 [Definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L1/Probability%20and%20Distribution.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[definition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#definition))))):
 
-## $$  
+##
+
+$$
 p
 
-P(\text{Data at least as extreme as observed} \mid H_0 \text{ true})  
+P(\text{Data at least as extreme as observed} \mid H_0 \text{ true})
 $$
 
 p=P(\text{Data at least as extreme as observed}\mid H_0\text{ true})
 
 The p-value quantifies how surprising the observed data would be if:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 were true.
@@ -453,53 +513,64 @@ The final step compares:
 - observed evidence:
     
 
-$$  
-p  
+$$
+p
 $$
 
 - required standard:
     
 
-$$  
-\alpha  
 $$
-
+\alpha
+$$
 
 ## Reject the [Null Hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis)
 
 If:
 
-$$  
-p \le \alpha  
+$$
+p \le \alpha
 $$
 
 then:
 
 - result is statistically significant
     
-- reject $$H_0$$
+- reject
+
+$$
+H_0
+$$
+
     
 
-$$ p \le \alpha$$
-
+$$
+p \le \alpha
+$$
 
 ## [Fail to Reject the Null](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#fail-to-reject-the-null) Hypothesis
 
 If:
 
-$$  
-p > \alpha  
+$$
+p > \alpha
 $$
 
 then:
 
 - result is not statistically significant
     
-- fail to reject $$H_0$$
+- fail to reject
+
+$$
+H_0
+$$
+
     
 
-$$p > \alpha$$
-
+$$
+p > \alpha
+$$
 
 ## 17 Why We Never "Accept" the [Null Hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis)
 
@@ -507,16 +578,16 @@ This wording matters.
 
 Statistics never proves:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 true.
 
 It only evaluates whether evidence against:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 became sufficiently strong.
@@ -544,14 +615,14 @@ Before p-values became standard, many tests used critical values directly.
 
 For a [two-tailed](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#two-tailed) Z-test with:
 
-$$  
-\alpha = 0.05  
+$$
+\alpha = 0.05
 $$
 
 critical values are:
 
-$$  
-\pm 1.96  
+$$
+\pm 1.96
 $$
 
 \pm 1.96
@@ -561,8 +632,8 @@ Decision rule:
 - reject if:
     
 
-$$  
-|Z| > 1.96  
+$$
+|Z| > 1.96
 $$
 
 - fail to reject otherwise
@@ -576,20 +647,20 @@ The p-value approach and critical-value approach are mathematically equivalent.
 
 All hypothesis tests ultimately compare:
 
-$$  
-\text{Observed Result}  
+$$
+\text{Observed Result}
 $$
 
 against
 
-$$  
-\text{Expected Random Variation}  
+$$
+\text{Expected Random Variation}
 $$
 
 If the observed result is too extreme to plausibly attribute to randomness alone, we reject:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 This framework appears everywhere:
@@ -610,7 +681,6 @@ This framework appears everywhere:
     
 
 Hypothesis testing is fundamentally a formalized system for distinguishing [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) from [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)).
-
 
 ## 20 [Statistical Significance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#statistical-significance) Is Not Truth
 
