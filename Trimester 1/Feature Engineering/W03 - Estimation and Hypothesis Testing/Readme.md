@@ -60,6 +60,7 @@ Filter methods act as a [preprocessing](https://github.com/Balasubramanian-pg/MS
 Evaluates linear (Pearson) or monotonic (Spearman) relationships between a continuous feature $X$ and a continuous target $Y$.
 
 **Pearson Correlation Coefficient ($r$):**
+
 $$
 r_{XY} = \frac{\sum_{i=1}^{n}(X_i - \bar{X})(Y_i - \bar{Y})}{\sqrt{\sum_{i=1}^{n}(X_i - \bar{X})^2} \sqrt{\sum_{i=1}^{n}(Y_i - \bar{Y})^2}}
 $$
@@ -73,6 +74,7 @@ Used when both the feature and the target are categorical. It evaluates whether 
 $$
 \chi^2 = \sum \frac{(O_i - E_i)^2}{E_i}
 $$
+
 Where $O_i$ is the observed frequency and $E_i$ is the expected frequency. Higher $\chi^2$ means the feature is highly dependent on the target (useful for the model).
 
 ### C. Information-Theoretic Measures (Mutual Information)
@@ -187,6 +189,7 @@ Embedded methods perform feature selection automatically during the model traini
 Regularized linear models add a penalty term to the loss function $\mathcal{L}$. While Ridge (L2) shrinks coefficients towards zero, Lasso (L1) forces them to exactly zero, creating a sparse weight vector.
 
 **Lasso Objective Function:**
+
 $$
 \min_{\theta} \left[ \sum_{i=1}^{N} (y_i - \theta^T x_i)^2 + \lambda \sum_{j=1}^{d} |\theta_j| \right]
 $$
@@ -264,6 +267,5 @@ print("Lasso Coefficients:", np.round(lasso.coef_, 3))
 1. **Boruta Algorithm:** An advanced wrapper method built around Random Forests that creates "shadow features" (randomized copies) to rigorously test if a feature is more predictive than pure statistical noise.
 2. **SHAP (SHapley Additive exPlanations):** Move beyond simple Gini importance to game-theoretic calculation of marginal feature contributions for ultimate feature selection precision.
 3. **Information Bottleneck Method:** Deep learning theoretical framework for finding the optimal representation that maximally compresses the input while preserving mutual information with the target.
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
