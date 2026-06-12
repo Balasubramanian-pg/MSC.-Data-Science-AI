@@ -60,8 +60,8 @@ This makes D an outlier.
 
 Conceptually:
 
-$$  
-Distance(x_i,\mu) \gg \text{Normal Points}  
+$$
+Distance(x_i,\mu) \gg \text{Normal Points}
 $$
 
 where:
@@ -96,8 +96,8 @@ Suppose a person’s age is entered incorrectly:
 
 Since human age rarely exceeds 120:
 
-$$  
-Age = 150  
+$$
+Age = 150
 $$
 
 becomes an obvious outlier.
@@ -106,8 +106,8 @@ becomes an obvious outlier.
 
 Suppose a weather sensor records:
 
-$$  
-Temperature = -100^\circ C  
+$$
+Temperature = -100^\circ C
 $$
 
 for a tropical region.
@@ -145,14 +145,14 @@ Suppose a server normally operates under stable voltage and temperature conditio
 
 Suddenly:
 
-$$  
-Voltage \uparrow  
+$$
+Voltage \uparrow
 $$
 
 or:
 
-$$  
-Temperature \uparrow  
+$$
+Temperature \uparrow
 $$
 
 causes abnormal behavior.
@@ -233,8 +233,8 @@ Many machine learning algorithms are highly sensitive to extreme observations.
 
 Linear regression minimizes squared error:
 
-$$  
-\sum (y_i - \hat{y}_i)^2  
+$$
+\sum (y_i - \hat{y}_i)^2
 $$
 
 A large outlier drastically increases this error term and shifts the regression line.
@@ -243,8 +243,8 @@ A large outlier drastically increases this error term and shifts the regression 
 
 In clustering algorithms such as K-Means:
 
-$$  
-Centroid = \frac{1}{n}\sum x_i  
+$$
+Centroid = \frac{1}{n}\sum x_i
 $$
 
 Outliers can drag cluster centroids away from dense regions and distort grouping structure.
@@ -265,8 +265,8 @@ A box plot summarizes the dataset using:
 
 The interquartile range is:
 
-$$  
-IQR = Q3 - Q1  
+$$
+IQR = Q3 - Q1
 $$
 
 Outlier boundaries are typically defined as:
@@ -315,8 +315,8 @@ Typically:
 
 Most normal observations lie within:
 
-$$  
--3\sigma \leq x \leq 3\sigma  
+$$
+-3\sigma \leq x \leq 3\sigma
 $$
 
 ## Handling Outliers
