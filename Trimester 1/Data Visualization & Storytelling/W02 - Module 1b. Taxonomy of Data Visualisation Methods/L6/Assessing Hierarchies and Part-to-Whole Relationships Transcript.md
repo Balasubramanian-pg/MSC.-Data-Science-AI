@@ -10,7 +10,6 @@ Hierarchical data structures are pervasive across modern enterprise domains, rep
 
 This document provides a technical blueprint for understanding, selecting, and implementing two advanced hierarchical visual paradigms: **Circle Packing Diagrams** and **Bubble Hierarchies**.
 
----
 
 ## 1. Foundations of Hierarchical & Part-to-Whole Relationships
 
@@ -53,7 +52,6 @@ graph TD
 * **Adjacency layouts** (e.g., Sunbursts) use physical proximity and concentric rings.
 * **Connection-based layouts** (e.g., Bubble Hierarchies, Node-link trees) use lines to show relational bonds.
 
----
 
 ## 2. Deep Dive: Circle Packing Diagrams
 
@@ -103,7 +101,6 @@ graph TD
   * **BI Tools:** Power BI (via custom D3.js visual imports or AppSource custom visuals) [1] or Tableau (utilizing calculated coordinate files or extension APIs) [1].
   * **Web/Code Engines:** D3.js (`d3.pack`) or Python (`circlify` library plotted via `matplotlib`).
 
----
 
 ### Concrete Business Scenario: Global IT Infrastructure Cost Allocation
 Consider a enterprise technology organization mapping its multi-million dollar cloud infrastructure spend. 
@@ -165,7 +162,6 @@ This nested tree structure is required for engines like D3.js or Power BI JSON p
 }
 ```
 
----
 
 ## 3. Deep Dive: Bubble Hierarchies (Hierarchical Bubble Trees)
 
@@ -220,7 +216,6 @@ graph TD
   * **Python Ecosystem:** Use `networkx` for calculating tree structures combined with `pyvis` or `plotly` for interactive web rendering.
   * **JavaScript Ecosystem:** Use D3's `d3-force` or `GoJS` for advanced custom layouts.
 
----
 
 ### Concrete Business Scenario: Organizational Capacity & Salary Mapping
 Consider a human resources department analyzing personnel cost distribution across business units.
@@ -265,7 +260,6 @@ To render this connection-based tree, layout engines require distinct definition
 }
 ```
 
----
 
 ## 4. Section Summary and Key Takeaways
 
@@ -273,7 +267,6 @@ To render this connection-based tree, layout engines require distinct definition
 * **Structural Differences:** Circle Packing uses nested boundaries to show containment, while Bubble Hierarchies use explicit connecting lines [1].
 * **Setup Requirements:** These advanced charts cannot be built natively with basic Excel grids [1]. Designing and using them effectively requires programmatic tools (D3.js, Python) or specialized BI configurations [1].
 
----
 
 ## 5. Architectural Comparison: Circle Packing vs. Bubble Hierarchies
 
@@ -289,7 +282,6 @@ This table compares both methods to help you choose the right design for your sy
 | **Best Analytical Lens** | Spotting concentration issues and seeing relative scale [1] | Tracking paths and comparing distant branches [2] |
 | **Common Customizations** | Zoom-to-node animations, CSS-based color styling | Interactive physics controls, node grouping, drag-to-restructure |
 
----
 
 ## 6. Implementation Guide & Code Blueprint
 
@@ -370,7 +362,6 @@ plt.title('Enterprise Cost Distribution (Circle Packed)', fontsize=14, pad=20)
 plt.show()
 ```
 
----
 
 ## 7. Advanced Engineering Considerations & Edge Cases
 
@@ -418,7 +409,6 @@ flowchart TD
   $$\text{Value}_{\text{Parent}} = \sum_{i=1}^{n} \text{Value}_{\text{Child}_i}$$
 * **Layout Instability:** Force-directed bubble layouts can sometimes bounce or wobble endlessly on the screen without settling. To fix this, adjust the layout engine's velocity decay and set a cooling parameter threshold. This forces the physics simulation to stop calculation frames once the node movement falls below a set limit.
 
----
 
 ## 8. Section Summary & Operational Checklists
 
@@ -427,7 +417,6 @@ flowchart TD
 * Choose **Bubble Hierarchies** [1] when you need to display deep, multi-tier organizational structures where tracking relationships and comparing distant branches is a priority [2].
 * Use **dynamic zoom-to-node features** and hover tool-tips to keep dashboards clean, clear, and easy for stakeholders to navigate.
 
----
 
 ## References
 [1] Assessing Hierarchies and Part-to-Whole Relationships Transcript, Page 1.
