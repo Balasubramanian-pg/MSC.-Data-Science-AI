@@ -74,7 +74,6 @@ In your role as a Business Analyst, you will frequently shift between these two 
 
 **To get deeper into the mechanics of how we "group" these items, would you like to explore the concept of "Distance Metrics" (how the algorithm mathematically measures similarity), or shall we dive into the most famous partitioning algorithm: K-Means?**
 
-
 ### 1.2 Measuring Similarity: The Geometry of Clustering
 
 In cluster analysis, the computer does not "understand" similarity in the human sense; it understands it as **spatial proximity**. To group objects, we represent them as coordinates in an $m$-dimensional space, where $m$ is the number of features (e.g., age, income, prescription volume). The core task is to calculate the "gap" between them.
@@ -105,7 +104,9 @@ If you calculate Euclidean distance without scaling, Variable A will dominate th
 
 Transform each variable $X$ into a Z-score:
 
-$$Z = \frac{x - \mu}{\sigma}$$
+$$
+Z = \frac{x - \mu}{\sigma}
+$$
 
 - This gives every variable a mean of 0 and a standard deviation of 1. Now, a "1-unit difference" in _Prescription Volume_ is mathematically equivalent to a "1-unit difference" in _Years of Practice_.
     
