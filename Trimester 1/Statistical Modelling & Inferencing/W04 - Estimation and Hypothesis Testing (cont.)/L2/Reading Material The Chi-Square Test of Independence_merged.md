@@ -1,12 +1,12 @@
 ---
 
-## Reading Material: The Chi-Square Test of [Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence)
+## Reading Material: The Chi-Square Test of [Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L0/Linear%20Regression.md#independence)
 
 ## 1. Testing for Relationships in Categorical Data
 
-The Chi-Square Test of [Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence) is used to determine whether two categorical variables are statistically associated.
+The Chi-Square Test of [Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L0/Linear%20Regression.md#independence) is used to determine whether two categorical variables are statistically associated.
 
-The central inferential [question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#question)) is:
+The central inferential [question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Residual%20Analysis.md#question)) is:
 
 $$
 \text{Are the variables related, or are they independent?}
@@ -14,7 +14,7 @@ $$
 
 Unlike t-tests or ANOVA, which analyze numerical measurements such as means, the chi-square test analyzes categorical frequency data.
 
-[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples) include:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08%20-%20Forecasting%20&%20Time%20Series%20Analysis/L0/Time%20Series%20Analysis.md#examples) include:
 
 - relationship between political preference and age group
     
@@ -33,7 +33,7 @@ It only evaluates whether an observed association is stronger than expected from
 
 Categorical variables classify observations into groups or categories.
 
-[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples) include:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08%20-%20Forecasting%20&%20Time%20Series%20Analysis/L0/Time%20Series%20Analysis.md#examples) include:
 
 |Variable|Categories|
 |---|---|
@@ -52,7 +52,7 @@ Data for chi-square tests is organized into contingency tables, also called two-
 
 A contingency table summarizes how observations are distributed across combinations of categories.
 
-[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
+[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
 
 |Learning Style|Visual|Auditory|Kinesthetic|Total|
 |---|---|---|---|---|
@@ -99,7 +99,7 @@ O
 
 Observed frequencies represent real outcomes in the dataset.
 
-For [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
+For [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
 
 - number of students preferring visual learning
     
@@ -126,25 +126,25 @@ Expected frequencies are not directly observed.
 
 They are computed mathematically using marginal totals.
 
-The expected frequency [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) is:
+The expected frequency [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) is:
 
 ##
 
 $$
 E
 
-[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)  
+[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)  
 (\text{Row Total})(\text{Column Total})  
 }{  
 \text{Grand Total}  
 }
 $$
 
-E=[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)(\text{Row Total})(\text{Column Total})}{\text{Grand Total}}
+E=[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)(\text{Row Total})(\text{Column Total})}{\text{Grand Total}}
 
-This [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) embodies the assumption of [independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence).
+This [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) embodies the assumption of [independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L0/Linear%20Regression.md#independence).
 
-## 7. Why the Expected Frequency [Formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) Works
+## 7. Why the Expected Frequency [Formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) Works
 
 Suppose:
 
@@ -167,11 +167,11 @@ $$
 
 of all students to belong to both categories simultaneously.
 
-The expected frequency [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) operationalizes this probability logic using counts.
+The expected frequency [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) operationalizes this probability logic using counts.
 
 ## 8. Hypotheses for the Chi-Square Test
 
-The [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis) states that the variables are independent.
+The [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis) states that the variables are independent.
 
 $$
 H_0:  
@@ -180,7 +180,7 @@ $$
 
 H_0:\text{The variables are independent}
 
-The [alternative hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#alternative-hypothesis) states that an association exists.
+The [alternative hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#alternative-hypothesis) states that an association exists.
 
 $$
 H_A:  
@@ -189,13 +189,13 @@ $$
 
 H_A:\text{The variables are dependent}
 
-The test therefore evaluates whether observed deviations from [independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence) are too large to plausibly attribute to [random sampling](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#random-sampling) variation.
+The test therefore evaluates whether observed deviations from [independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L0/Linear%20Regression.md#independence) are too large to plausibly attribute to [random sampling](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L2/Testing%20Population%20Proportions.md#random-sampling) variation.
 
 ## 9. The Chi-Square Test Statistic
 
 The chi-square statistic summarizes the total discrepancy between observed and expected counts.
 
-The [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) is:
+The [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) is:
 
 ##
 
@@ -203,7 +203,7 @@ $$
 \chi^2
 
 \sum  
-[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)  
+[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)  
 (O-E)^2  
 }{  
 E  
@@ -235,7 +235,7 @@ The calculation is performed across all cells in the contingency table.
 
 ## 10. Interpreting the Chi-Square Statistic
 
-The chi-square statistic measures [total deviation](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#total-deviation) from [independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence).
+The chi-square statistic measures [total deviation](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#total-deviation) from [independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L0/Linear%20Regression.md#independence).
 
 ## Small Chi-Square Values
 
@@ -253,7 +253,7 @@ $$
 
 \chi^2\approx0
 
-This suggests little evidence against [independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence).
+This suggests little evidence against [independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L0/Linear%20Regression.md#independence).
 
 ## Large Chi-Square Values
 
@@ -275,7 +275,7 @@ all deviations contribute positively to the statistic.
 
 Large chi-square values indicate stronger evidence of association.
 
-## 11. Why the Test Is Always [Right-Tailed](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#right-tailed)
+## 11. Why the Test Is Always [Right-Tailed](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L2/Testing%20Population%20Proportions.md#right-tailed)
 
 The chi-square statistic cannot become negative because:
 
@@ -319,7 +319,7 @@ Its exact shape depends on the degrees of freedom parameter.
 
 ## 13. Degrees of Freedom
 
-For a chi-square test of [independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence):
+For a chi-square test of [independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L0/Linear%20Regression.md#independence):
 
 ##
 
@@ -332,7 +332,7 @@ $$
 
 df=(\text{Rows}-1)(\text{Columns}-1)
 
-[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples):
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08%20-%20Forecasting%20&%20Time%20Series%20Analysis/L0/Time%20Series%20Analysis.md#examples):
 
 - a
 
@@ -379,7 +379,7 @@ The data must consist of frequency counts rather than:
 
 The chi-square test fundamentally analyzes counts.
 
-## [Random Sampling](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#random-sampling)
+## [Random Sampling](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L2/Testing%20Population%20Proportions.md#random-sampling)
 
 The sample should represent the target population reasonably well.
 
@@ -457,7 +457,7 @@ It does NOT prove:
 - mechanism
     
 
-For [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
+For [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
 
 - ice cream sales and drowning deaths may be associated
     
@@ -468,17 +468,17 @@ For [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/ma
 
 This distinction is fundamental in statistical reasoning.
 
-## 18. Deep Statistical [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition)))
+## 18. Deep Statistical [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Residual%20Analysis.md#intuition)))
 
 The chi-square framework evaluates:
 
 $$
 \text{Observed Pattern}  
 \quad vs \quad  
-\text{Pattern Expected Under [Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence)}
+\text{Pattern Expected Under [Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L0/Linear%20Regression.md#independence)}
 $$
 
-\text{Observed Pattern}\quad vs \quad\text{Pattern Expected Under [Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence)}
+\text{Observed Pattern}\quad vs \quad\text{Pattern Expected Under [Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L0/Linear%20Regression.md#independence)}
 
 If the discrepancy becomes too large to plausibly attribute to random variation alone, we reject:
 
@@ -488,7 +488,7 @@ $$
 
 The deeper statistical principle is broader:
 
-> [Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence) creates predictable structure.
+> [Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L0/Linear%20Regression.md#independence) creates predictable structure.
 
 When reality systematically deviates from that structure, statistical evidence for association emerges.
 
