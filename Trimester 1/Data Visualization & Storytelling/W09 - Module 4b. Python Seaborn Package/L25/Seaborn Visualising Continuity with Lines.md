@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W09 - Module 4b. Python Seaborn Package
 ---
 
-
 ## Visualizing Continuity with Seaborn (`lineplot` & `relplot`)
 
 ### 1. The Core Idea: Why Visualize Continuity?
@@ -31,7 +30,6 @@ The built-in `fmri` dataset is a prime example of signal processing data over ti
 
 ### 3. Documented Python Implementation
 
-
 ```Python
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -49,7 +47,6 @@ fmri_df = sns.load_dataset("fmri")
 print("Dataset Head:")
 print(fmri_df.head())
 
-
 ## =====================================================================
 ## 2. CORE FUNCTION: Simple Line Plot with Statistical Aggregation
 ## =====================================================================
@@ -64,7 +61,6 @@ plt.title("fMRI Signal Continuity Over Time (Aggregated Mean + 95% CI)")
 plt.xlabel("Timepoint")
 plt.ylabel("Signal Intensity")
 plt.show()
-
 
 ## =====================================================================
 ## 3. MULTIDIMENSIONAL: Adding Categories (Hue & Style)
@@ -90,7 +86,6 @@ plt.ylabel("Signal Intensity")
 plt.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
 plt.tight_layout()
 plt.show()
-
 
 ## =====================================================================
 ## 4. ADVANCED: Subplot Faceting with `relplot`
@@ -177,7 +172,6 @@ plt.ylabel("Signal Strength")
 plt.tight_layout()
 plt.show()
 
-
 ## =====================================================================
 ## 2. OVERLAYING DIMENSIONS: The Hue + Style Approach (Axes-Level)
 ## =====================================================================
@@ -203,7 +197,6 @@ plt.ylabel("Signal Strength")
 plt.legend(bbox_to_anchor=(1.02, 1), loc="upper left", borderaxespad=0)
 plt.tight_layout()
 plt.show()
-
 
 ## =====================================================================
 ## 3. FACETING (SMALL MULTIPLES): Reducing Cognitive Load with `relplot`
