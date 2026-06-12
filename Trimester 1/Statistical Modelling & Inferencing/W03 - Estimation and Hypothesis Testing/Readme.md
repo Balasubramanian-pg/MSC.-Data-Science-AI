@@ -31,7 +31,6 @@ Repository:
 
 [MSC Data Science AI - W03 Repository](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/tree/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing)
 
-
 # Why This Module Matters
 
 Most real-world analytics problems reduce to one of these questions:
@@ -57,7 +56,6 @@ This module introduces the mathematics used to separate:
 * random fluctuation from genuine effect
 * statistical evidence from coincidence
 
-
 # Module Structure
 
 ```text
@@ -69,7 +67,6 @@ W03 - Estimation And Hypothesis Testing
 ├── Lab → Computational Statistical Testing
 └── Assets → Mathematical & Practical References
 ```
-
 
 # L0 · Statistical Inference in Modelling
 
@@ -88,7 +85,6 @@ Every inferential conclusion depends on:
 * estimator properties
 
 Most statistical misuse happens because people forget this.
-
 
 # Core Themes
 
@@ -112,7 +108,6 @@ This idea later becomes extremely important in:
 * causal inference
 * deep learning calibration
 
-
 ## Resources
 
 ### [Module Introduction3](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L0/Module%20Introduction3.pdf)
@@ -122,7 +117,6 @@ High-level orientation to estimation theory and hypothesis testing workflows.
 ### [Statistical Inference in Modelling](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L0/Statistical%20Inference%20in%20Modelling.md)
 
 Explores how inferential reasoning interacts with modelling assumptions and statistical structure.
-
 
 # L1 · Interval Estimation & Sample Size
 
@@ -138,7 +132,6 @@ Confidence intervals exist because:
 * samples vary
 * estimators fluctuate
 * populations are hidden
-
 
 # Core Themes
 
@@ -159,7 +152,6 @@ This is critical because:
 * decision-making depends on risk tolerance
 * narrow intervals imply stability
 * wide intervals imply uncertainty
-
 
 ## Known σ vs Unknown σ
 
@@ -190,7 +182,6 @@ This idea is deeply tied to:
 * estimator uncertainty
 * finite sample corrections
 * Bayesian uncertainty intuition
-
 
 ## Sample Size Determination
 
@@ -224,7 +215,6 @@ This becomes essential in:
 * healthcare trials
 * ML evaluation pipelines
 
-
 ## Resources
 
 ### [Determining Sample Size (PDF)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L1/Determining%20Sample%20Size.pdf)
@@ -243,7 +233,6 @@ Markdown notes focused on inferential interpretation and interval estimation pro
 
 Companion notes exploring practical tradeoffs in statistical sampling design.
 
-
 # L2 · Hypothesis Testing Framework
 
 This section introduces one of the most influential frameworks in modern analytics:
@@ -260,7 +249,6 @@ You begin with:
 * quantified uncertainty
 
 Then determine whether the observed evidence is strong enough to reject the default assumption.
-
 
 # Core Themes
 
@@ -285,7 +273,6 @@ E
 --> F[Reject or Fail to Reject H0]
 ```
 
-
 ## Null vs Alternative Hypothesis
 
 ### Null Hypothesis H₀
@@ -304,7 +291,6 @@ Represents:
 * difference exists
 * deviation from baseline
 
-
 ## One-Sample Tests
 
 This module introduces:
@@ -322,7 +308,6 @@ while accounting for:
 * variability
 * uncertainty
 * sample size
-
 
 ## p-values
 
@@ -349,7 +334,6 @@ But:
 * large datasets can manufacture tiny p-values
 * poor experimental design invalidates interpretation
 
-
 ## Type I and Type II Errors
 
 Statistical testing is fundamentally a tradeoff system.
@@ -369,7 +353,6 @@ This becomes directly connected later to:
 
 False positives and false negatives are not just statistical abstractions.
 They are operational costs.
-
 
 ## Resources
 
@@ -393,7 +376,6 @@ Markdown notes emphasizing practical interpretation of inferential significance.
 
 Structured conceptual walkthrough of hypothesis testing logic and workflow design.
 
-
 # Lab · Computational Statistical Inference
 
 The notebooks in this module are critical.
@@ -412,7 +394,6 @@ students finally see:
 * confidence interval behavior
 * inferential randomness
 
-
 ## Lab Resources
 
 ### [Estimation_and_Hypothesis_Testing.ipynb](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/Lab/Estimation_and_Hypothesis_Testing.ipynb)
@@ -426,7 +407,6 @@ Hands-on notebook for confidence interval simulation and estimator experimentati
 ### [Week_3_Tutorial__Estimation_and_Hypothesis_Testing_with_Examples.ipynb](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/Lab/Week_3_Tutorial__Estimation_and_Hypothesis_Testing_with_Examples.ipynb)
 
 Worked inferential examples connecting theory with practical statistical workflows.
-
 
 # Recommended Learning Flow
 
@@ -451,7 +431,6 @@ E
 F
 --> G[Experimental Analytics & ML Evaluation]
 ```
-
 
 # Hidden Insight Behind This Module
 
@@ -483,4 +462,3 @@ That exact logic later powers:
 This module therefore teaches far more than classical statistics.
 
 It teaches disciplined uncertainty management.
-
