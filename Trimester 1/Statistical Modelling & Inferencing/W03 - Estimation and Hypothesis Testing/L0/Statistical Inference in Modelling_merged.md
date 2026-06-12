@@ -23,11 +23,19 @@ Rather than a point estimate (a "spear"), we use a "net" to capture the true par
 
 - **Known Population Variance ($\sigma$):** Use the Standard Normal distribution ($Z$).
     
-    $$CI = \bar{x} \pm Z_{\alpha/2} \left( [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\sigma}{\sqrt{n}} \right)$$
+
+$$
+CI = \bar{x} \pm Z_{\alpha/2} \left( [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\sigma}{\sqrt{n}} \right)
+$$
+
     
 - **Unknown Population Variance ($s$):** Use the Student’s $t$-distribution.
     
-    $$CI = \bar{x} \pm t_{\alpha/2, \nu} \left( \frac{s}{\sqrt{n}} \right)$$
+
+$$
+CI = \bar{x} \pm t_{\alpha/2, \nu} \left( \frac{s}{\sqrt{n}} \right)
+$$
+
     
     Where $\nu = n - 1$ degrees of freedom.
     
@@ -59,9 +67,12 @@ A formal courtroom-like procedure to evaluate status quo claims.
     
 - **Test Statistic:** Standardizes the difference relative to [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise)).
     
-    $$Z = [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\bar{x} - \mu_0}{\sigma / \sqrt{n}}$$
-    
 
+$$
+Z = [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\bar{x} - \mu_0}{\sigma / \sqrt{n}}
+$$
+
+    
 
 ```mermaid
 graph TD
