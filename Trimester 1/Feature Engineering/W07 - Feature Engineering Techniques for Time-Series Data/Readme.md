@@ -33,10 +33,13 @@ Let a time-series be a sequence of observations $X = \{x_1, x_2, \dots, x_T\}$ i
 
 ### A. The Backshift (Lag) Operator
 The backshift operator $B$ (or $L$ for Lag) transforms an observation to its previous state:
+
 $$
 B x_t = x_{t-1}
 $$
+
 Generalizing to $k$ periods:
+
 $$
 B^k x_t = x_{t-k}
 $$
@@ -44,6 +47,7 @@ $$
 ### B. Differencing (Stationarity Transformation)
 Many machine learning models require data to be stationary (constant mean and variance over time). Differencing removes trends.
 First-order differencing:
+
 $$
 \nabla x_t = x_t - B x_t = x_t - x_{t-1}
 $$
@@ -51,10 +55,13 @@ $$
 ### C. Rolling (Window) Statistics
 A rolling window applies a mathematical aggregation function $f$ over a subset of the most recent $w$ periods.
 The rolling mean:
+
 $$
 \mu_t(w) = \frac{1}{w} \sum_{i=0}^{w-1} x_{t-i}
 $$
+
 The rolling variance:
+
 $$
 \sigma_t^2(w) = \frac{1}{w-1} \sum_{i=0}^{w-1} (x_{t-i} - \mu_t(w))^2
 $$
@@ -94,9 +101,11 @@ To preserve cyclical geometry, we map the discrete time component onto a unit ci
 Let $T_{max}$ be the maximum value of the cycle (e.g., $24$ for hours, $12$ for months).
 1. Normalize the time $t$ to a range of $[0, 2\pi]$: $\theta = \frac{2\pi t}{T_{max}}$
 2. Project onto the Cartesian plane:
+
 $$
 X_{sin} = \sin\left(\frac{2\pi t}{T_{max}}\right)
 $$
+
 $$
 X_{cos} = \cos\left(\frac{2\pi t}{T_{max}}\right)
 $$
@@ -161,9 +170,11 @@ Lower Band: $LB_t = \mu_t(w) - k \cdot \sigma_t(w)$
 
 ### B. Relative Strength Index (RSI - Momentum)
 Measures the speed and magnitude of recent price changes to evaluate overbought or oversold conditions.
+
 $$
 RS = \frac{\text{Exponential Moving Average of Gains}(w)}{\text{Exponential Moving Average of Losses}(w)}
 $$
+
 $$
 RSI = 100 - \left( \frac{100}{1 + RS} \right)
 $$
@@ -301,6 +312,5 @@ If your time-series has an upward trend, next year's sales might hit $\$60,000$.
 1. **Frequency Domain Engineering:** Learn to apply the Fast Fourier Transform (FFT) to convert sequential time-domain data into frequency-domain features (amplitudes and phases of underlying cycles).
 2. **Automated Extraction with TSFresh:** Explore the `tsfresh` Python library, which mathematically extracts thousands of time-series features (entropy, continuous wavelet transforms) and performs massive parallel hypothesis testing for feature selection.
 3. **Transition to Deep State-Space:** When manual tabular engineering reaches its limit, transition to understanding how LSTMs (Long Short-Term Memory) and Time-Series Transformers (like Temporal Fusion Transformers) learn these lag and window relationships dynamically within their hidden states.
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
