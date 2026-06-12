@@ -6,7 +6,6 @@ week: W02 - Data
 
 ## Week 2: Data
 
----
 
 **Module Description**
 
