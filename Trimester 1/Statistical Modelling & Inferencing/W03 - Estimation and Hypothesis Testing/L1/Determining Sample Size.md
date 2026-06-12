@@ -13,7 +13,9 @@ We aim to find the minimum $n$ that satisfies a specific **Margin of Error ($E$)
 
 Derived from the $Z$-interval margin of error formula ($E = Z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}$), the required sample size is:
 
-$$n = \left( \frac{Z_{\alpha/2} \cdot \sigma}{E} \right)^2$$
+$$
+n = \left( \frac{Z_{\alpha/2} \cdot \sigma}{E} \right)^2
+$$
 
 - **Key Inputs:**
     
@@ -39,7 +41,9 @@ $$n = \left( \frac{Z_{\alpha/2} \cdot \sigma}{E} \right)^2$$
 
 The formula for proportions is:
 
-$$n = p(1 - p) \left( \frac{Z_{\alpha/2}}{E} \right)^2$$
+$$
+n = p(1 - p) \left( \frac{Z_{\alpha/2}}{E} \right)^2
+$$
 
 #### The "Conservative Estimate" Strategy:
 
@@ -49,7 +53,11 @@ If the population proportion ($p$) is completely unknown, you should use the mos
     
 - **Conservative Formula:**
     
-    $$n = 0.25 \left( \frac{Z_{\alpha/2}}{E} \right)^2$$
+
+$$
+n = 0.25 \left( \frac{Z_{\alpha/2}}{E} \right)^2
+$$
+
     
 
 ### 4. Summary Table of Inputs
