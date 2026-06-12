@@ -2,7 +2,6 @@
 
 ## Reading Material: Testing Population Proportions
 
----
 ## 1. Introduction to Proportions
 
 Many statistical problems involve numerical measurements such as:
@@ -136,7 +135,6 @@ E(\hat{p})=p
 
 meaning the sample proportion is an unbiased estimator.
 
----
 
 ## Standard Error
 
@@ -232,7 +230,6 @@ $$
 H_A:p \ne p_0  
 $$
 
----
 
 ## Right-Tailed
 
@@ -240,7 +237,6 @@ $$
 H_A:p > p_0  
 $$
 
----
 
 ## Left-Tailed
 
@@ -317,7 +313,6 @@ The sample should reasonably represent the population.
 
 Biased samples invalidate inference.
 
----
 
 ## Large Counts Condition
 
