@@ -67,7 +67,6 @@ $$
 
 \sigma_1^2\quad\text{vs}\quad\sigma_2^2
 
----
 
 ## Finance
 
@@ -84,7 +83,6 @@ Variance becomes a direct measure of financial risk.
 
 Higher variance generally implies higher uncertainty.
 
----
 
 ## Education
 
@@ -168,7 +166,6 @@ F\ge0
 
 the distribution exists only on the positive axis.
 
----
 
 ## Right-Skewed Shape
 
@@ -176,7 +173,6 @@ The distribution is asymmetric and skewed to the right.
 
 Large F-values occur when one variance substantially exceeds the other.
 
----
 
 ## Dependence on Degrees of Freedom
 
@@ -188,7 +184,6 @@ $$
 
 Larger sample sizes produce more concentrated F-distributions.
 
----
 
 ## Ratio Structure
 
@@ -287,7 +282,6 @@ $$
 H_0  
 $$
 
----
 
 ## When Variances Differ Substantially
 
