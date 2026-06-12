@@ -2,7 +2,6 @@
 
 ## Reading Material: An Introduction to Bayesian Inference
 
-
 **Contents**  
 I The Bayesian Paradigm 2  
 1 A New Way of Thinking: Frequentist vs. Bayesian 2  
@@ -210,7 +209,11 @@ This acts as a **scaling factor**. Because the posterior must be a valid probabi
 
 - **The "Proportional" Shortcut:** In many real-world applications, calculating the integral $\int P(\text{Data}|\theta)P(\theta)d\theta$ is computationally expensive or impossible. Because $P(\text{Data})$ does not depend on $\theta$, we often treat it as a constant and simply solve for the shape of the posterior:
     
-    $$\text{Posterior} \propto \text{Likelihood} \times \text{Prior}$$
+
+$$
+\text{Posterior} \propto \text{Likelihood} \times \text{Prior}
+$$
+
     
 
 ### The Bayesian Learning Process
