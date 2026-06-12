@@ -86,8 +86,6 @@ create_basic_line_plot()
 
 In real-world data science, data is rarely stored in raw lists. Bokeh integrates seamlessly with Pandas DataFrames.
 
-
-
 ```Python
 ## ==========================================
 ## MODULE 2: DATAFRAMES & LINE PLOTS
@@ -143,7 +141,6 @@ create_dataframe_line_plot()
 
 Sometimes a line isn't enough; you need to see the exact data points. Bokeh allows you to layer multiple glyphs on the same figure (e.g., lines _and_ scatter points).
 
-
 ```Python
 ## ==========================================
 ## MODULE 3: SCATTER PLOTS & GLYPH LAYERING
@@ -184,7 +181,6 @@ create_layered_scatter_plot()
 ## 🟢 Module 4: Categorical Bar Charts
 
 When dealing with non-numeric X-axes (like names, categories, or labels), Bokeh requires you to explicitly define the `x_range` during the `figure()` instantiation.
-
 
 ```Python
 ## ==========================================
@@ -303,7 +299,6 @@ create_interactive_hover_plot()
 
 Visualizing parts-to-whole relationships over time is easily achieved using Bokeh's `vbar_stack` method.
 
-
 ```Python
 ## ==========================================
 ## MODULE 6: STACKED BAR CHARTS
@@ -363,7 +358,6 @@ create_stacked_bar_chart()
 ## 🟢 Module 7: On-the-fly Transformations
 
 Bokeh allows you to perform calculations directly inside the plotting function without altering your underlying DataFrame, using modules like `cumsum` (cumulative sum) and `linear_cmap` (color mapping).
-
 
 ```Python
 ## ==========================================
