@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W05 - Module 3a.  Dashboards
 ---
 
-
 ## Page 1
 
  
@@ -55,7 +54,6 @@ performance dashboards are a key managerial tool for people to smoothly execute 
 strategies. Now let us see how a performance dashboard is constituted or what are the key 
 elements of a performance dashboard. 
   
-
 
 ## Page 2
 
@@ -108,7 +106,6 @@ pending transactions, top 15 RPOs and the registration type-wise, the pending re
 for top 15 RPOs and you have the numbers given here, clearly following the gestalt principles, 
 ordered in a logical order so you can clearly see which is the topmost pending category. 
 
-
 ## Page 3
 
  
@@ -145,6 +142,5 @@ effectively and the company reaches its strategic milestones.
   
  
  
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
