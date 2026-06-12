@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W03 - Moduel 2a.  Effective Visuals Design
 ---
 
-
 ## Page 1
 
 ### Effective Visual Design: The Master Summary
@@ -97,7 +96,6 @@ In your role as a **Senior SQL Engineer and Data Mentor**, you are the "architec
 If you have the "Truth" but your "Impact" is cluttered, the truth stays hidden. By ruthlessly applying these clutter-reduction principles, you ensure your work is not just accurate, but also **influential.**
 
 **You now have a complete framework for auditing and decluttering your visual communication. Would you like to apply these to a specific, "messy" table or chart you’ve built recently to see how we would transform it, or shall we dive into "Pre-attentive Attributes" (the specific visual properties like color, size, and orientation) to see how to make your key insights jump off the screen?**
-
 
 ### White Space and Contrast: The "Negative Space" Strategy
 
