@@ -2,7 +2,6 @@
 
 ## Reading Material: The Chi-Square Test of [Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence)
 
----
 ## 1. Testing for Relationships in Categorical Data
 
 The Chi-Square Test of [Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence) is used to determine whether two categorical variables are statistically associated.
@@ -240,7 +239,6 @@ $$
 
 This suggests little evidence against [independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence).
 
----
 
 ## Large Chi-Square Values
 
@@ -352,7 +350,6 @@ The data must consist of frequency counts rather than:
 
 The chi-square test fundamentally analyzes counts.
 
----
 
 ## [Random Sampling](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#random-sampling)
 
@@ -360,7 +357,6 @@ The sample should represent the target population reasonably well.
 
 Biased sampling invalidates inference regardless of the mathematical calculations.
 
----
 
 ## Expected Count Condition
 
