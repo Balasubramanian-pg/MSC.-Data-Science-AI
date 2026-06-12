@@ -8,7 +8,6 @@ week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
 
 The foundation of effective data visualization is **intentional design**, where every single element—including color, line thickness, text, alignment, and labeling—is chosen for a specific purpose. Rather than simply displaying raw data, a model visual is structured to minimize cognitive strain and directly guide the audience's attention toward actionable insights.
 
-
 ### **The Audience-Centric Storytelling Workflow**
 
 Simply displaying data is not enough to drive action. To move an audience from viewing an insight to making a decision, you must merge data, visuals, and narrative using the following structured workflow:
@@ -31,7 +30,6 @@ graph TD
     Step3 --> Pre[Apply Pre-attentive Attributes <br> Use color, size, and top-left positioning]
     Step3 --> Out[Actionable Visual Story]
 ```
-
 
 ### **Key Techniques for Intentional Visual Design**
 
