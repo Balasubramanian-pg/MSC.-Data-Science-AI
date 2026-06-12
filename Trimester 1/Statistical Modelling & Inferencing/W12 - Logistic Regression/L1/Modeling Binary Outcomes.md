@@ -3,7 +3,7 @@
 ## Reading Material: Modeling Binary Outcomes
 
 **Contents**  
-I Modeling [Probabilities](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L2/Reading%201%20An%20Introduction%20to%20Decision%20Theory.md#probabilities)  
+I Modeling [Probabilities](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01%20-%20Basic%20Probability%20&%20Statistics/L2/Reading%201%20An%20Introduction%20to%20Decision%20Theory.md#probabilities)  
 1 The Linear Probability Model (LPM)   
 1.1 The Challenge of a Binary Dependent Variable  
 1.2 The Flaws of the LPM  
@@ -14,11 +14,11 @@ II Interpreting Logistic Regression
 4.1 Interpreting Odds Ratios
 
 **Part I  
-Modeling [Probabilities](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L2/Reading%201%20An%20Introduction%20to%20Decision%20Theory.md#probabilities)**
+Modeling [Probabilities](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01%20-%20Basic%20Probability%20&%20Statistics/L2/Reading%201%20An%20Introduction%20to%20Decision%20Theory.md#probabilities)**
 
 ### 1.1 The Challenge: Using Linear Models for Binary Outcomes
 
-When you apply a standard [Ordinary Least Squares (OLS)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#ordinary-least-squares-ols) regression to a binary ($0/1$) outcome, you are creating a **Linear Probability Model (LPM)**. While this seems convenient—because you can use the same `lm()` or `reg` functions you are already familiar with—it introduces several structural failures that make it unsuitable for high-stakes pharmaceutical or business analysis.
+When you apply a standard [Ordinary Least Squares (OLS)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#ordinary-least-squares-ols) regression to a binary ($0/1$) outcome, you are creating a **Linear Probability Model (LPM)**. While this seems convenient—because you can use the same `lm()` or `reg` functions you are already familiar with—it introduces several structural failures that make it unsuitable for high-stakes pharmaceutical or business analysis.
 
 #### The Interpretation of $\hat{Y}$
 
@@ -28,11 +28,11 @@ In OLS, the predicted value $\hat{Y}$ is essentially a probability: $\hat{P}(Y=1
 
 While the math seems simple, the LPM breaks the fundamental rules of probability in three major ways:
 
-1. **Probability Boundary Violations:** A probability _must_ be between 0 and 1. Because the LPM is a straight line, it will inevitably predict values below 0 or above 1 for extreme values of $X$. This is logically nonsensical (e.g., a "negative 20% chance" of treatment [response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#response))).
+1. **Probability Boundary Violations:** A probability _must_ be between 0 and 1. Because the LPM is a straight line, it will inevitably predict values below 0 or above 1 for extreme values of $X$. This is logically nonsensical (e.g., a "negative 20% chance" of treatment [response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#response))).
     
-2. **Heteroskedasticity:** In OLS, we assume the [error term](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#error-term) $\epsilon$ has [constant variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#constant-variance). In a binary model, the variance of the [error term](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#error-term) depends on the probability itself: $\sigma^2 = p(1-p)$. As your probability moves toward 0 or 1, the variance shrinks, which violates the OLS assumption of homoskedasticity. This makes your standard errors (and thus your t-tests/p-values) unreliable.
+2. **Heteroskedasticity:** In OLS, we assume the [error term](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L1/The%20Multiple%20Regression%20Model.md#error-term) $\epsilon$ has [constant variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L0/Linear%20Regression.md#constant-variance). In a binary model, the variance of the [error term](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L1/The%20Multiple%20Regression%20Model.md#error-term) depends on the probability itself: $\sigma^2 = p(1-p)$. As your probability moves toward 0 or 1, the variance shrinks, which violates the OLS assumption of homoskedasticity. This makes your standard errors (and thus your t-tests/p-values) unreliable.
     
-3. **Non-[Linearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#linearity):** In reality, the relationship between a predictor and the probability of success is rarely a straight line. For [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example), moving from a 90% to a 95% [response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#response)) rate is much harder to achieve than moving from 50% to 55%. The LPM forces a constant, linear rate of change that rarely mirrors real-world pharmaceutical dynamics.
+3. **Non-[Linearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L0/Linear%20Regression.md#linearity):** In reality, the relationship between a predictor and the probability of success is rarely a straight line. For [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example), moving from a 90% to a 95% [response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#response)) rate is much harder to achieve than moving from 50% to 55%. The LPM forces a constant, linear rate of change that rarely mirrors real-world pharmaceutical dynamics.
     
 
 ### Comparison: Why LPM is Often Insufficient
@@ -42,21 +42,21 @@ While the math seems simple, the LPM breaks the fundamental rules of probability
 |**Prediction Range**|$(-\infty, +\infty)$|Restricted to $[0, 1]$|
 |**Relationship**|Linear|S-Curve (Logistic)|
 |**Error Variance**|Non-constant (Heteroskedastic)|Modeled specifically for binary data|
-|**Statistical Rigor**|Low (for binary data)|High (Standard for binary [response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#response)))|
+|**Statistical Rigor**|Low (for binary data)|High (Standard for binary [response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#response)))|
 
 ### Strategy for Your Analytics
 
 As a business analyst, you might use an LPM for a **"quick and dirty" sanity check** because the coefficients are so easy to explain to non-technical stakeholders (e.g., "Every additional dollar of marketing spend increases sales probability by 2%").
 
-However, for any model intended for **forecasting, clinical trial interpretation, or risk assessment**, the LPM is generally considered inappropriate. You need a model that honors the $[0, 1]$ boundaries of probability and the non-linear nature of conversion or [response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#response)).
+However, for any model intended for **forecasting, clinical trial interpretation, or risk assessment**, the LPM is generally considered inappropriate. You need a model that honors the $[0, 1]$ boundaries of probability and the non-linear nature of conversion or [response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#response)).
 
-**Would you like to move on to Section 1.2, where we introduce the Logistic Function (the S-curve) that solves these boundary and [linearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#linearity) problems, or are you interested in how we use MLE specifically to estimate the parameters of a Logistic Regression?**
+**Would you like to move on to Section 1.2, where we introduce the Logistic Function (the S-curve) that solves these boundary and [linearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L0/Linear%20Regression.md#linearity) problems, or are you interested in how we use MLE specifically to estimate the parameters of a Logistic Regression?**
 
 ### 1.2 The Flaws of the Linear Probability Model (LPM)
 
-The Linear Probability Model (LPM) is a classic [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) of why mathematical convenience—using standard OLS regression—does not always translate into statistical validity. While the coefficients in an LPM are easy to explain, the model fundamentally misrepresents the nature of binary data.
+The Linear Probability Model (LPM) is a classic [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) of why mathematical convenience—using standard OLS regression—does not always translate into statistical validity. While the coefficients in an LPM are easy to explain, the model fundamentally misrepresents the nature of binary data.
 
-#### 1. Nonsensical [Predictions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#predictions): The [0,1] Boundary Violation
+#### 1. Nonsensical [Predictions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#predictions): The [0,1] Boundary Violation
 
 Probability, by definition, is bounded between 0 and 1. Because the LPM is a linear function ($Y = \beta_0 + \beta_1X$), it extends infinitely in both directions. For any significant slope, there will _always_ be values of $X$ that result in a predicted probability $> 1$ or $< 0$.
 
@@ -133,7 +133,7 @@ $$
 
 #### The Probit Model
 
-The Probit model replaces the logistic function with the **[Cumulative Distribution Function (CDF)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L1/Probability%20and%20Distribution.md#cumulative-distribution-function-cdf) of the Standard Normal Distribution**, denoted as $\Phi$:
+The Probit model replaces the logistic function with the **[Cumulative Distribution Function (CDF)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01%20-%20Basic%20Probability%20&%20Statistics/L1/Probability%20and%20Distribution.md#cumulative-distribution-function-cdf) of the Standard Normal Distribution**, denoted as $\Phi$:
 
 $$
 P(Y = 1|X) = \Phi(\beta_0 + \beta_1X)
@@ -146,7 +146,7 @@ $$
 
 #### Why We Abandon OLS for MLE
 
-Because these models are non-linear, we cannot use [Ordinary Least Squares (OLS)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#ordinary-least-squares-ols) to find the coefficients. OLS requires a closed-form algebraic solution that doesn't exist for the sigmoid curve.
+Because these models are non-linear, we cannot use [Ordinary Least Squares (OLS)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#ordinary-least-squares-ols) to find the coefficients. OLS requires a closed-form algebraic solution that doesn't exist for the sigmoid curve.
 
 Instead, we use **Maximum Likelihood Estimation (MLE)**. The algorithm iteratively searches for the values of $\beta_0$ and $\beta_1$ that maximize the probability of observing our specific binary data ($0$s and $1$s).
 
@@ -163,7 +163,7 @@ Instead, we use **Maximum Likelihood Estimation (MLE)**. The algorithm iterative
 
 **Since we have established the S-curve solution, would you like to dive into the mathematical derivation of "Odds" and "Log-Odds" so you can begin interpreting these models for your business analysis, or would you like to see how the MLE process specifically "fits" these curves to your binary data?**
 
-### 3. Interpreting Logit Coefficients: Bridging the [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition))) Gap
+### 3. Interpreting Logit Coefficients: Bridging the [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Residual%20Analysis.md#intuition))) Gap
 
 In Linear Regression, the interpretation is simple: "When $X$ increases by 1, $Y$ changes by $\beta_1$." In Logistic Regression, however, because we are using an S-curve, the impact of $X$ on the _probability_ depends on where you are on the curve.
 
@@ -208,12 +208,12 @@ To communicate effectively with stakeholders, we perform one final transformatio
 
 Using Odds Ratios allows you to communicate magnitude in a way that aligns with how humans make decisions.
 
-- **[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):** In a clinical study, if the coefficient for "Treatment A" is $\beta_1 = 0.693$, then $e^{0.693} \approx 2.0$.
+- **[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):** In a clinical study, if the coefficient for "Treatment A" is $\beta_1 = 0.693$, then $e^{0.693} \approx 2.0$.
     
 - **The Insight:** "Patients taking Treatment A have **twice the odds** of recovery compared to the control group."
     
 
-### Strategy [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L2/Reading%202%20Parametric%20vs.%20Non-Parametric%20Methods.md#summary)) for Interpretation
+### Strategy [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01%20-%20Basic%20Probability%20&%20Statistics/L2/Reading%202%20Parametric%20vs.%20Non-Parametric%20Methods.md#summary)) for Interpretation
 
 1. **The Math:** $\beta_1$ is the change in **Log-Odds**.
     
@@ -232,9 +232,9 @@ The Odds Ratio (OR) is the "translator" that turns abstract logarithmic math int
 
 As you noted, if $\beta_1 = 0.05$, then $e^{0.05} \approx 1.051$. This means the event is **1.051 times as likely to occur** for a one-unit increase in $X$.
 
-- **The Percentage Rule:** You can quickly convert any Odds Ratio to a percentage change using the [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula): $(\text{OR} - 1) \times 100$.
+- **The Percentage Rule:** You can quickly convert any Odds Ratio to a percentage change using the [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula): $(\text{OR} - 1) \times 100$.
     
-    - In your [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example): $(1.051 - 1) \times 100 = 5.1\%$.
+    - In your [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example): $(1.051 - 1) \times 100 = 5.1\%$.
         
     - **The Insight:** "Each additional year of age is associated with a 5.1% increase in the odds of purchase."
         
