@@ -2,7 +2,6 @@
 
 ## Reading Material: Time Series Components
 
----
 
 ### 1. The Philosophy of Decomposition: The "Symphony" Analogy
 
