@@ -2,7 +2,6 @@
 
 ## Reading Material: Advanced Exponential Smoothing
 
----
 ### 1. Beyond Simple Smoothing: The Evolution of Exponential Smoothing
 ![[Pasted image 20260525122029.png]]
 Simple Exponential Smoothing (SES) is fundamentally a "memory-less" model regarding long-term structural changes. It assumes the series is essentially a stationary process with random noise. In business, where we deal with growth trajectories and recurring cycles, a flat-line forecast is almost always wrong.
@@ -211,7 +210,6 @@ The Holt-Winters method, often called **Triple Exponential Smoothing**, is the c
 
 This method is the backbone of high-performance demand forecasting in industries with high cyclicality, such as pharmaceuticals, where market uptake patterns and seasonal health fluctuations create non-random, repeating ripples in your data.
 
----
 
 #### The Three Components
 
@@ -239,7 +237,6 @@ The multiplicative model is used when the seasonal variations are **proportional
 * **Formula:** $Y_t = (\ell_t + b_t) \times s_{t-m} + \epsilon_t$
 * **Characteristics:** This is the most common model for business data. If your December demand spike represents a $10\%$ increase in total sales, that absolute unit increase will naturally grow as your base trend grows.
 
----
 
 #### Why This Is Superior for Your Analytical Work
 
@@ -249,7 +246,6 @@ As a pharmaceutical data analyst, you likely deal with data (like IQVIA DDD) whe
 2. **Adaptive Forecasting:** Because $\gamma$ (gamma) is a smoothing parameter, the model can adapt if seasonal patterns change over time (e.g., if a drug's peak usage month shifts due to climate changes or updated medical guidelines).
 3. **Holistic Projection:** When you forecast $h$ steps ahead, the model compounds the Level, adds the Trend, and then *multiplies or adds* the relevant Seasonality from the previous cycle ($m$), creating a realistic "wavy" forecast line that respects the reality of your market's lifecycle.
 
----
 
 ### Comparison of Forecasting Architectures
 
