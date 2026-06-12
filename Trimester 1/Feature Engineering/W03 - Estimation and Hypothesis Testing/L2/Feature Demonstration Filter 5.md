@@ -17,7 +17,9 @@ The Fisher Score balances two critical statistical properties of a feature:
 
 For a binary classification task, the Fisher Score for a feature is calculated as:
 
-$$\text{Fisher Score} = \frac{(\mu_0 - \mu_1)^2}{\sigma_0^2 + \sigma_1^2}$$
+$$
+\text{Fisher Score} = \frac{(\mu_0 - \mu_1)^2}{\sigma_0^2 + \sigma_1^2}
+$$
 
 Where:
 
@@ -40,7 +42,6 @@ The denominator often includes a small epsilon ($\epsilon$) to prevent division-
 #### 4. Python Implementation (Custom)
 
 Since `scikit-learn` does not have a single "Fisher Score" API, it is implemented manually by aggregating class statistics.
-
 
 ```python
 import numpy as np
