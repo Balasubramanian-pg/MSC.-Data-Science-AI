@@ -10,7 +10,9 @@ A point estimate, such as the sample mean $\bar{x}$, acts as a single "best gues
 
 Every two-sided confidence interval follows the fundamental structure:
 
-$$\text{Confidence Interval} = \text{Point Estimate} \pm (\text{Critical Value} \times \text{Standard Error})$$
+$$
+\text{Confidence Interval} = \text{Point Estimate} \pm (\text{Critical Value} \times \text{Standard Error})
+$$
 
 The "Margin of Error" ($E$) defines the radius of this interval and reflects the precision of the estimate.
 
@@ -31,7 +33,9 @@ In experimental design, determining the required sample size ($n$) is a critical
 
 To find the required $n$ to estimate a population mean $\mu$ within a margin of error $E$, we rearrange the $Z$-interval margin of error formula:
 
-$$n = \left( \frac{Z_{\alpha/2} \cdot \sigma}{E} \right)^2$$
+$$
+n = \left( \frac{Z_{\alpha/2} \cdot \sigma}{E} \right)^2
+$$
 
 If the population standard deviation ($\sigma$) is unknown, it is common practice to use a pilot study to calculate the sample standard deviation ($s$), utilize historical data, or apply the Range Rule of Thumb: $\sigma \approx \frac{\text{Max} - \text{Min}}{4}$.
 
@@ -39,7 +43,9 @@ If the population standard deviation ($\sigma$) is unknown, it is common practic
 
 When estimating a population proportion ($p$), the formula is:
 
-$$n = p(1 - p) \left( \frac{Z_{\alpha/2}}{E} \right)^2$$
+$$
+n = p(1 - p) \left( \frac{Z_{\alpha/2}}{E} \right)^2
+$$
 
 _Strategic Note:_ If the true proportion $p$ is unknown, assume $p = 0.5$ to calculate the most conservative (largest) sample size required, yielding $n = 0.25 \left( \frac{Z_{\alpha/2}}{E} \right)^2$.
 
@@ -58,7 +64,9 @@ Hypothesis testing is a formal, courtroom-like procedure used to evaluate the va
 
 The test statistic standardizes the difference between the observed sample mean and the hypothesized population mean, relative to the variability of the sampling distribution:
 
-$$Z = \frac{\bar{x} - \mu_0}{\sigma / \sqrt{n}}$$
+$$
+Z = \frac{\bar{x} - \mu_0}{\sigma / \sqrt{n}}
+$$
 
 ### Summary of Statistical Trade-offs
 
