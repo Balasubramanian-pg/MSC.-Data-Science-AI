@@ -106,19 +106,23 @@ Machine learning algorithms strictly require dense numeric matrices (Ratio/Inter
 
 **1. Nominal to Numeric: One-Hot Encoding**
 Maps a nominal attribute with $K$ distinct categories into a $K$-dimensional orthogonal vector space.
+
 $$
 \phi(x) = [I(x=c_1), I(x=c_2), \dots, I(x=c_K)]^T \in \{0,1\}^K
 $$
+
 Where $I$ is the indicator function.
 
 **2. Ordinal to Numeric: Ordinal Encoding**
 Maps categories to an integer space preserving monotonicity.
+
 $$
 \phi(c_k) = k \quad \text{where } c_1 < c_2 < \dots < c_K
 $$
 
 **3. Continuous to Discrete: Discretization (Binning)**
 Transforms a continuous ratio/interval variable into an ordinal variable via boundary functions.
+
 $$
 \phi(x) = k \quad \text{if } b_{k-1} \le x < b_k
 $$
