@@ -33,7 +33,6 @@ Only after this pipeline does visualization happen.
 
 Source transcript:
 
----
 
 ## Standard Imports
 
@@ -47,7 +46,6 @@ import matplotlib.pyplot as plt
 
 These form the core scientific visualization stack.
 
----
 
 ## Setting a Global Style
 
@@ -77,7 +75,6 @@ Without styles:
 - readability suffers
     
 
----
 
 ## Understanding CSV Data
 
@@ -105,7 +102,6 @@ Each column:
 - represents a variable
     
 
----
 
 ## Reading CSV Data into Pandas
 
@@ -121,7 +117,6 @@ But it also shows an advanced idea:
 
 > parsing raw CSV text directly from a string.
 
----
 
 ## Creating CSV Data as a String
 
@@ -134,7 +129,6 @@ Germany,50000,81,83,Europe
 """
 ```
 
----
 
 ## Reading String Data into Pandas
 
@@ -148,7 +142,6 @@ df = pd.read_csv(
 
 This converts raw text into a DataFrame.
 
----
 
 ## Why This Matters
 
@@ -165,7 +158,6 @@ This technique is useful for:
 - dynamically generated CSV content
     
 
----
 
 ## Understanding DataFrames
 
@@ -184,7 +176,6 @@ Conceptually:
 |USA|70000|331|
 |India|2500|1400|
 
----
 
 ## Inspecting DataFrames
 
@@ -200,7 +191,6 @@ print(df.describe())
 
 This prevents silent failures.
 
----
 
 ## Bubble Scatter Plot
 
@@ -217,7 +207,6 @@ This is an important visualization type because it introduces:
 
 simultaneously.
 
----
 
 ## Plotting GDP vs Life Expectancy
 
@@ -246,7 +235,6 @@ plt.show()
 
 Source transcript:
 
----
 
 ## Why GDP Was Chosen as X-Axis
 
@@ -267,7 +255,6 @@ So:
 - life expectancy becomes dependent variable
     
 
----
 
 ## Why Bubble Size Matters
 
@@ -295,7 +282,6 @@ Now the chart simultaneously represents:
 |Y-axis|Life expectancy|
 |Bubble size|Population|
 
----
 
 ## Why Scaling Is Necessary
 
@@ -311,7 +297,6 @@ Marker size scales quadratically visually.
 
 Large populations can dominate the figure.
 
----
 
 ## Advanced Bubble Scaling
 
@@ -323,7 +308,6 @@ s=np.sqrt(df['population']) * 20
 
 This reduces perceptual distortion.
 
----
 
 ## Cognitive Problem with Bubble Charts
 
@@ -338,7 +322,6 @@ Bubble charts can mislead perception because:
 - overlapping markers hide information
     
 
----
 
 ## Improved Bubble Plot
 
@@ -368,7 +351,6 @@ plt.grid(True)
 plt.show()
 ```
 
----
 
 ## Why `alpha` Matters
 
@@ -387,7 +369,6 @@ Useful for:
 - visual clarity
     
 
----
 
 ## Random Data Generation
 
@@ -395,7 +376,6 @@ The lecture then shifts toward synthetic data simulation.
 
 Source transcript:
 
----
 
 ## Creating Random DataFrames
 
@@ -417,7 +397,6 @@ df = pd.DataFrame(
 )
 ```
 
----
 
 ## Understanding `randn()`
 
@@ -439,7 +418,6 @@ $$
 
 standard normal distribution.
 
----
 
 ## Why Random Seeds Matter
 
@@ -458,7 +436,6 @@ Without fixed seeds:
 - comparisons become unstable
     
 
----
 
 ## Time-Series Index
 
@@ -479,7 +456,6 @@ This enables:
 - forecasting
     
 
----
 
 ## Cumulative Sum and Random Walks
 
@@ -491,7 +467,6 @@ df = df.cumsum()
 
 This is extremely important conceptually.
 
----
 
 ## What Is a Random Walk?
 
@@ -508,7 +483,6 @@ Where:
 
 Each step depends on the previous position.
 
----
 
 ## Why Random Walks Matter
 
@@ -522,7 +496,6 @@ Random walks appear everywhere:
 |Economics|Market fluctuations|
 |Biology|Particle diffusion|
 
----
 
 ## Plotting Random Walks
 
@@ -539,7 +512,6 @@ plt.show()
 
 Source transcript:
 
----
 
 ## Why Cumulative Sum Changes Everything
 
@@ -561,7 +533,6 @@ you observe trajectories.
 
 This creates trend-like behavior.
 
----
 
 ## Visual Difference
 
@@ -579,7 +550,6 @@ persistent movement over time
 
 This is fundamentally different statistically.
 
----
 
 ## Mathematical Interpretation
 
@@ -601,7 +571,6 @@ Var(X_t)=t\sigma^2
 
 This is why random walks drift increasingly over time.
 
----
 
 ## Plotting Multiple Series
 
@@ -622,7 +591,6 @@ Since DataFrames contain multiple columns:
 
 Matplotlib automatically plots all series.
 
----
 
 ## Advanced Plot Customization
 
@@ -648,7 +616,6 @@ plt.grid(alpha=0.3)
 plt.show()
 ```
 
----
 
 ## Why Random Walks Look Predictive
 
@@ -667,7 +634,6 @@ Random walks often create:
 
 This is a major issue in financial analysis.
 
----
 
 ## Machine Learning Connections
 
@@ -681,7 +647,6 @@ Random walks are foundational in:
 |Monte Carlo simulation|Sampling|
 |Bayesian methods|MCMC|
 
----
 
 ## Advanced Visualization Pipeline
 
@@ -700,7 +665,6 @@ D --> E[Random Walk / Statistics]
 E --> F[Matplotlib Visualization]
 ```
 
----
 
 ## Common Mistakes
 
@@ -708,25 +672,21 @@ E --> F[Matplotlib Visualization]
 
 Time-series plots become messy without proper indexing.
 
----
 
 ## Not Scaling Bubble Sizes
 
 Large populations dominate charts.
 
----
 
 ## Treating Random Walks as Predictive Trends
 
 Randomness often looks meaningful visually.
 
----
 
 ## Ignoring Data Validation
 
 Always inspect imported data.
 
----
 
 ## Final Takeaways
 
