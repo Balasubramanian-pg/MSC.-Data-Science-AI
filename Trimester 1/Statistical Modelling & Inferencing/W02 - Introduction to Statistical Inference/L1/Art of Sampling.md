@@ -1,5 +1,3 @@
-
-
 ## Table of Contents
 
 1. [Introduction to Sampling Theory](#1-introduction-to-sampling-theory)
@@ -15,7 +13,6 @@
 11. [Computational Implementation](#11-computational-implementation)
 12. [Case Studies](#12-case-studies)
 13. [Appendices](#13-appendices)
-
 
 # 1. Introduction to Sampling Theory
 
@@ -142,7 +139,6 @@ graph TD
     style H fill:#bbf,stroke:#333,stroke-width:4px
 ```
 
-
 # 2. Foundational Concepts
 
 ## 2.1 The Population
@@ -161,41 +157,49 @@ $$
 ### 2.1.2 Population Parameters
 
 **Population Total:**
+
 $$
 Y = \sum_{i=1}^N y_i
 $$
 
 **Population Mean:**
+
 $$
 \bar{Y} = \frac{1}{N} \sum_{i=1}^N y_i = \frac{Y}{N}
 $$
 
 **Population Variance:**
+
 $$
 \sigma^2 = \frac{1}{N} \sum_{i=1}^N (y_i - \bar{Y})^2 = \frac{1}{N} \sum_{i=1}^N y_i^2 - \bar{Y}^2
 $$
 
 **Corrected Population Variance:**
+
 $$
 S^2 = \frac{1}{N-1} \sum_{i=1}^N (y_i - \bar{Y})^2 = \frac{N}{N-1} \sigma^2
 $$
 
 **Population Standard Deviation:**
+
 $$
 \sigma = \sqrt{\sigma^2}
 $$
 
 **Population Proportion:**
+
 $$
 P = \frac{1}{N} \sum_{i=1}^N y_i \quad \text{where} \quad y_i \in \{0, 1\}
 $$
 
 **Population Covariance:**
+
 $$
 \sigma_{xy} = \frac{1}{N} \sum_{i=1}^N (x_i - \bar{X})(y_i - \bar{Y})
 $$
 
 **Population Correlation:**
+
 $$
 \rho = \frac{\sigma_{xy}}{\sigma_x \sigma_y}
 $$
@@ -203,21 +207,25 @@ $$
 ### 2.1.3 Population Moments
 
 $k$-th raw moment:
+
 $$
 \mu_k' = \frac{1}{N} \sum_{i=1}^N y_i^k
 $$
 
 $k$-th central moment:
+
 $$
 \mu_k = \frac{1}{N} \sum_{i=1}^N (y_i - \bar{Y})^k
 $$
 
 Skewness:
+
 $$
 \gamma_1 = \frac{\mu_3}{\sigma^3} = \frac{\mu_3}{(\mu_2)^{3/2}}
 $$
 
 Kurtosis:
+
 $$
 \gamma_2 = \frac{\mu_4}{\sigma^4} - 3 = \frac{\mu_4}{\mu_2^2} - 3
 $$
@@ -230,16 +238,16 @@ graph LR
     A --> C[Dispersion]
     A --> D[Shape]
     A --> E[Association]
-    B --> B1[Mean: $\\\bar{Y}$]
+    B --> B1[Mean: $\\bar{Y}$]
     B --> B2[Median: $M$]
     B --> B3[Mode]
-    C --> C1[Variance: $\\\sigma^2$]
-    C --> C2[SD: $\\\sigma$]
+    C --> C1[Variance: $\\sigma^2$]
+    C --> C2[SD: $\\sigma$]
     C --> C3[Range: $R$]
-    D --> D1[Skewness: $\\\gamma_1$]
-    D --> D2[Kurtosis: $\\\gamma_2$]
-    E --> E1[Covariance: $\\\sigma_{xy}$]
-    E --> E2[Correlation: $\\\rho$]
+    D --> D1[Skewness: $\\gamma_1$]
+    D --> D2[Kurtosis: $\\gamma_2$]
+    E --> E1[Covariance: $\\sigma_{xy}$]
+    E --> E2[Correlation: $\\rho$]
 ```
 
 ## 2.3 The Sample
@@ -247,36 +255,43 @@ graph LR
 ### 2.3.1 Sample Statistics as Random Variables
 
 **Sample Mean:**
+
 $$
 \bar{y} = \frac{1}{n} \sum_{i=1}^n y_i
 $$
 
 **Sample Variance (Bessel-corrected):**
+
 $$
 s^2 = \frac{1}{n-1} \sum_{i=1}^n (y_i - \bar{y})^2 = \frac{1}{n-1} \left[ \sum_{i=1}^n y_i^2 - n\bar{y}^2 \right]
 $$
 
 Unbiasedness property:
+
 $$
 E[s^2] = S^2
 $$
 
 **Sample Standard Deviation:**
+
 $$
 s = \sqrt{s^2}
 $$
 
 **Sample Proportion:**
+
 $$
 p = \frac{1}{n} \sum_{i=1}^n y_i
 $$
 
 **Sample Covariance:**
+
 $$
 s_{xy} = \frac{1}{n-1} \sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})
 $$
 
 **Sample Correlation:**
+
 $$
 r = \frac{s_{xy}}{s_x s_y}
 $$
@@ -284,6 +299,7 @@ $$
 ### 2.3.2 The Estimation Framework
 
 **Estimator:**
+
 $$
 \hat{\theta} = g(y_1, y_2, \ldots, y_n)
 $$
@@ -308,20 +324,22 @@ $$
 ### 2.4.1 Soup Analogy Formalized
 
 Population mean flavor:
+
 $$
 \bar{Y} = \frac{1}{N} \sum_{i=1}^N y_i
 $$
 
 Sample estimate:
+
 $$
 \bar{y} = \frac{1}{n} \sum_{i \in s} y_i
 $$
 
 With perfect randomization:
+
 $$
 E[\bar{y}] = \bar{Y} \quad \text{and} \quad Var(\bar{y}) = \left(\frac{N-n}{N-1}\right) \frac{\sigma^2}{n}
 $$
-
 
 # 3. Probability Sampling Methods
 
@@ -332,11 +350,13 @@ $$
 SRSWOR: Every possible combination of $n$ units has equal selection probability.
 
 Number of possible samples:
+
 $$
 \binom{N}{n} = \frac{N!}{n!(N-n)!}
 $$
 
 Design probability:
+
 $$
 p(s) = \frac{1}{\binom{N}{n}}
 $$
@@ -344,11 +364,13 @@ $$
 ### 3.1.2 Inclusion Probabilities
 
 First-order:
+
 $$
 \pi_i = \frac{n}{N}
 $$
 
 Second-order:
+
 $$
 \pi_{ij} = \frac{n(n-1)}{N(N-1)} \quad \text{for } i \neq j
 $$
@@ -356,41 +378,49 @@ $$
 ### 3.1.3 Estimation Theory
 
 **Unbiased Mean Estimator:**
+
 $$
 \hat{\bar{Y}}_{SRS} = \bar{y} = \frac{1}{n} \sum_{i \in s} y_i
 $$
 
 **Variance of Sample Mean:**
+
 $$
 Var(\bar{y}) = \left(\frac{N-n}{N-1}\right) \frac{\sigma^2}{n} = \left(1 - \frac{n}{N}\right) \frac{S^2}{n}
 $$
 
 **Unbiased Variance Estimator:**
+
 $$
 \widehat{Var}(\bar{y}) = \left(1 - \frac{n}{N}\right) \frac{s^2}{n}
 $$
 
 **Confidence Interval:**
+
 $$
 CI_{1-\alpha} = \bar{y} \pm t_{\alpha/2, n-1} \sqrt{\left(1 - \frac{n}{N}\right) \frac{s^2}{n}}
 $$
 
 **Population Total:**
+
 $$
 \hat{Y} = N\bar{y} = \frac{N}{n} \sum_{i \in s} y_i
 $$
 
 **Variance of Total:**
+
 $$
 Var(\hat{Y}) = N^2 \left(1 - \frac{n}{N}\right) \frac{S^2}{n}
 $$
 
 **Population Proportion:**
+
 $$
 \hat{P} = p = \frac{1}{n} \sum_{i \in s} y_i
 $$
 
 **Variance of Proportion:**
+
 $$
 Var(p) = \left(1 - \frac{n}{N}\right) \frac{P(1-P)}{n-1} \approx \left(1 - \frac{n}{N}\right) \frac{p(1-p)}{n-1}
 $$
@@ -400,11 +430,13 @@ $$
 Number of ordered samples: $N^n$
 
 Variance:
+
 $$
 Var(\bar{y}_{wr}) = \frac{\sigma^2}{n} = \frac{N-1}{N} \frac{S^2}{n}
 $$
 
 Efficiency ratio:
+
 $$
 \text{Efficiency} = \frac{Var(\bar{y}_{wr})}{Var(\bar{y}_{wor})} = \frac{N-1}{N-n} > 1
 $$
@@ -418,11 +450,13 @@ Sampling fraction: $f = 100/10000 = 0.01$
 FPC: $1 - f = 0.99$
 
 Standard error:
+
 $$
 SE(\bar{y}) = \sqrt{0.99 \times \frac{0.25}{100}} = \sqrt{0.002475} \approx 0.04975
 $$
 
 95% CI:
+
 $$
 CI = 3.42 \pm 1.96 \times 0.04975 = 3.42 \pm 0.0975 = [3.3225, 3.5175]
 $$
@@ -437,7 +471,7 @@ flowchart LR
     D --> E[Locate Units]
     E --> F[Collect Data y_i]
     F --> G[Compute Statistics]
-    G --> H[Sample Mean $\\\bar{y}$]
+    G --> H[Sample Mean $\\bar{y}$]
     G --> I[Sample Variance $s^2$]
     G --> J[Standard Error SE]
     J --> K[Confidence Interval]
@@ -470,21 +504,25 @@ where $W_h = N_h/N$.
 ### 3.2.3 Allocation Methods
 
 **Proportional Allocation:**
+
 $$
 n_h = n \cdot \frac{N_h}{N} = n \cdot W_h
 $$
 
 Variance under proportional allocation:
+
 $$
 Var(\bar{y}_{st})_{prop} = \sum_{h=1}^H W_h^2 \left(1 - \frac{n_h}{N_h}\right) \frac{S_h^2}{n_h}
 $$
 
 **Neyman (Optimal) Allocation:**
+
 $$
 n_h = n \cdot \frac{W_h S_h}{\sum_{k=1}^H W_k S_k} = n \cdot \frac{N_h S_h}{\sum_{k=1}^H N_k S_k}
 $$
 
 Minimum variance:
+
 $$
 Var(\bar{y}_{st})_{Neyman} = \frac{1}{n} \left(\sum_{h=1}^H W_h S_h\right)^2 - \frac{1}{N} \sum_{h=1}^H W_h S_h^2
 $$
@@ -492,16 +530,19 @@ $$
 **Cost-Optimal Allocation:**
 
 Cost function:
+
 $$
 C = c_0 + \sum_{h=1}^H c_h n_h
 $$
 
 Optimal allocation:
+
 $$
 n_h = \frac{(C - c_0) W_h S_h / \sqrt{c_h}}{\sum_{k=1}^H W_k S_k \sqrt{c_k}}
 $$
 
 Or for fixed $n$:
+
 $$
 n_h = n \cdot \frac{W_h S_h / \sqrt{c_h}}{\sum_{k=1}^H W_k S_k / \sqrt{c_k}}
 $$
@@ -509,21 +550,25 @@ $$
 ### 3.2.4 Estimation
 
 **Stratified Mean:**
+
 $$
 \bar{y}_{st} = \sum_{h=1}^H W_h \bar{y}_h = \sum_{h=1}^H \frac{N_h}{N} \cdot \frac{1}{n_h} \sum_{i \in s_h} y_{hi}
 $$
 
 **Variance:**
+
 $$
 Var(\bar{y}_{st}) = \sum_{h=1}^H W_h^2 \left(1 - \frac{n_h}{N_h}\right) \frac{S_h^2}{n_h}
 $$
 
 **Variance Estimator:**
+
 $$
 \widehat{Var}(\bar{y}_{st}) = \sum_{h=1}^H W_h^2 \left(1 - \frac{n_h}{N_h}\right) \frac{s_h^2}{n_h}
 $$
 
 **Population Total:**
+
 $$
 \hat{Y}_{st} = N \bar{y}_{st} = \sum_{h=1}^H N_h \bar{y}_h
 $$
@@ -531,11 +576,13 @@ $$
 ### 3.2.5 Gain in Precision
 
 Relative Efficiency:
+
 $$
 RE = \frac{Var(\bar{y}_{SRS})}{Var(\bar{y}_{st})}
 $$
 
 Under proportional allocation with small $n/N$:
+
 $$
 RE \approx \frac{S^2}{\sum_{h=1}^H W_h S_h^2} = \frac{\sigma^2_{\text{total}}}{\sigma^2_{\text{within}}}
 $$
@@ -552,6 +599,7 @@ $$
 | **Total** | | **1400** | **1.00** | | **100** | **120** |
 
 Stratified mean calculation:
+
 $$
 \bar{y}_{st} = 0.25(165.2) + 0.20(162.8) + 0.30(168.1) + 0.15(164.5) + 0.10(166.9) = 165.43 \text{ cm}
 $$
@@ -581,7 +629,7 @@ graph TD
     E3 --> F
     E4 --> F
     E5 --> F
-    F --> G[Stratified Estimate $\\\bar{y}_{st}$]
+    F --> G[Stratified Estimate $\\bar{y}_{st}$]
     style G fill:#c8e6c9,stroke:#333,stroke-width:3px
 ```
 
@@ -671,11 +719,13 @@ $$
 Select $m$ clusters from $M$ via SRS. Measure all $N$ units in each selected cluster (when $N_i = \bar{N}$ for all $i$).
 
 **Cluster Mean:**
+
 $$
 \bar{y}_{cl} = \frac{1}{m} \sum_{i=1}^m \bar{y}_i
 $$
 
 **Variance:**
+
 $$
 Var(\bar{y}_{cl}) = \left(1 - \frac{m}{M}\right) \frac{S_b^2}{m}
 $$
@@ -702,11 +752,13 @@ Stage 1: Select $m$ clusters from $M$.
 Stage 2: Select $n_i$ units from $N_i$ within each selected cluster.
 
 **Unbiased Estimator:**
+
 $$
 \hat{\bar{Y}} = \frac{1}{m} \sum_{i=1}^m \frac{N_i \bar{y}_i}{\bar{N}} = \frac{1}{m\bar{N}} \sum_{i=1}^m \hat{Y}_i
 $$
 
 **Variance:**
+
 $$
 Var(\hat{\bar{Y}}) = \left(1 - \frac{m}{M}\right) \frac{S_b^2}{m} + \frac{1}{mM\bar{N}^2} \sum_{i=1}^M N_i^2 \left(1 - \frac{n_i}{N_i}\right) \frac{S_{w_i}^2}{n_i}
 $$
@@ -811,6 +863,7 @@ $$
 $$
 
 Variance:
+
 $$
 Var(\hat{Y}_{HH}) = \frac{1}{n} \sum_{i=1}^N X_i \left(\frac{Y_i}{X_i} - \frac{Y}{X_{\text{total}}}\right)^2
 $$
@@ -835,7 +888,6 @@ graph LR
     style A fill:#e1f5ff
     style F fill:#c8e6c9
 ```
-
 
 # 4. Non-Probability Sampling Methods
 
@@ -879,6 +931,7 @@ where:
 Quota sampling imposes demographic controls on convenience selection. Interviewers select respondents to match population proportions on key characteristics.
 
 **Quota constraints:**
+
 $$
 \sum_{i \in s} I(x_i = c_j) = q_j \quad \text{for } j = 1, \ldots, J
 $$
@@ -945,6 +998,7 @@ graph TD
 The researcher uses personal judgment to select "representative" or "typical" units.
 
 **Selection function:**
+
 $$
 s = \{i : \text{Researcher judges } i \text{ as informative}\}
 $$
@@ -976,7 +1030,6 @@ graph LR
     style B fill:#ffcdd2
     style D fill:#fff9c4
 ```
-
 
 # 5. Sampling Distributions and the Central Limit Theorem
 
@@ -1139,7 +1192,6 @@ $$
 
 where $\tilde{Y}$ is the population median.
 
-
 # 6. Point Estimation and Properties of Estimators
 
 ## 6.1 Desirable Properties
@@ -1153,6 +1205,7 @@ E[\hat{\theta}] = \theta
 $$
 
 **Bias:**
+
 $$
 B(\hat{\theta}) = E[\hat{\theta}] - \theta
 $$
@@ -1248,6 +1301,7 @@ L(\theta; \mathbf{y}) = \prod_{i=1}^n f(y_i; \theta)
 $$
 
 Log-likelihood:
+
 $$
 \ell(\theta; \mathbf{y}) = \sum_{i=1}^n \ln f(y_i; \theta)
 $$
@@ -1297,16 +1351,19 @@ $$
 ### 6.4.2 Point Estimates from Posterior
 
 **Posterior Mean:**
+
 $$
 \hat{\theta}_{Bayes} = E[\theta | \mathbf{y}] = \int \theta \pi(\theta | \mathbf{y}) d\theta
 $$
 
 **Posterior Median:**
+
 $$
 \int_{-\infty}^{\hat{\theta}_{med}} \pi(\theta | \mathbf{y}) d\theta = 0.5
 $$
 
 **Maximum A Posteriori (MAP):**
+
 $$
 \hat{\theta}_{MAP} = \arg\max_\theta \pi(\theta | \mathbf{y})
 $$
@@ -1330,7 +1387,7 @@ graph TD
     A --> D[Efficiency]
     A --> E[Sufficiency]
     A --> F[Robustness]
-    B --> B1[E = $\\\theta$]
+    B --> B1[E = $\\theta$]
     C --> C1[Converges in Probability]
     D --> D1[Minimum Variance]
     D --> D2[Cramér-Rao Bound]
@@ -1342,7 +1399,6 @@ graph TD
     D1 --> G
     style G fill:#c8e6c9,stroke:#333,stroke-width:3px
 ```
-
 
 # 7. Confidence Intervals
 
@@ -1487,15 +1543,14 @@ graph TD
     C --> C1[Percentile Bootstrap]
     C --> C2[BCa Bootstrap]
     C --> C3[Jackknife]
-    B1 --> D[Mean, Known $\\\sigma^2$]
-    B2 --> E[Mean, Unknown $\\\sigma^2$]
+    B1 --> D[Mean, Known $\\sigma^2$]
+    B2 --> E[Mean, Unknown $\\sigma^2$]
     B3 --> F[Variance]
     B4 --> G[Ratio of Variances]
     C1 --> H[Any Statistic]
     C2 --> H
     style H fill:#c8e6c9
 ```
-
 
 # 8. Sample Size Determination
 
