@@ -2,7 +2,6 @@
 
 ## Reading Material: Simple Exponential Smoothing
 
-
 ### 1. Improving on Moving Averages: The Shift to Exponential Weighting
 
 Simple Moving Averages (SMA) rely on a rigid "window." By treating a data point from 3 weeks ago exactly the same as yesterday’s observation, the SMA ignores the reality of dynamic business environments—where the most recent data often carries the most predictive signal.
@@ -28,7 +27,9 @@ SES applies a constant smoothing parameter, **$\alpha$ (alpha)**, which dictates
 
 The fundamental formula for SES is:
 
-$$\hat{y}_{t+1|t} = \alpha y_t + (1 - \alpha) \hat{y}_{t|t-1}$$
+$$
+\hat{y}_{t+1|t} = \alpha y_t + (1 - \alpha) \hat{y}_{t|t-1}
+$$
 
 This can be broken down into two perspectives:
 
@@ -36,7 +37,11 @@ This can be broken down into two perspectives:
     
 2. **The Error Correction Perspective (The "Surprise" Factor):**
     
-    $$\hat{y}_{t+1|t} = \hat{y}_{t|t-1} + \alpha(y_t - \hat{y}_{t|t-1})$$
+
+$$
+\hat{y}_{t+1|t} = \hat{y}_{t|t-1} + \alpha(y_t - \hat{y}_{t|t-1})
+$$
+
     
     This is the professional's view. You take your _previous forecast_ and adjust it by a fraction ($\alpha$) of the **forecast error** (the "surprise" or difference between what you predicted and what actually happened).
     
@@ -67,18 +72,24 @@ The two forms of the Simple Exponential Smoothing (SES) formula you've highlight
 
 #### 1. The Weighted Average Perspective
 
-$$\hat{y}_{t+1} = \alpha y_t + (1 - \alpha)\hat{y}_t$$
+$$
+\hat{y}_{t+1} = \alpha y_t + (1 - \alpha)\hat{y}_t
+$$
 
 This formula shows that the new forecast is a blend of the most recent data point ($y_t$) and the previous forecast ($\hat{y}_t$). Because we apply this recursively, if you were to expand this equation, you would see that the forecast is actually a weighted sum of **all** past observations:
 
-$$\hat{y}_{t+1} = \alpha y_t + \alpha(1-\alpha)y_{t-1} + \alpha(1-\alpha)^2 y_{t-2} + \dots$$
+$$
+\hat{y}_{t+1} = \alpha y_t + \alpha(1-\alpha)y_{t-1} + \alpha(1-\alpha)^2 y_{t-2} + \dots
+$$
 
 - **The Power of $\alpha$:** As you go back in time, the weights decrease by a factor of $(1-\alpha)$. If $\alpha = 0.5$, the most recent data gets 50% weight, the previous gets 25%, the one before that 12.5%, and so on. This is the **exponential decay** that gives the method its name.
     
 
 #### 2. The Error-Correction Perspective (The "Surprise" View)
 
-$$\hat{y}_{t+1} = \hat{y}_t + \alpha(y_t - \hat{y}_t)$$
+$$
+\hat{y}_{t+1} = \hat{y}_t + \alpha(y_t - \hat{y}_t)
+$$
 
 This is arguably the most intuitive way for a business analyst to view forecasting. It frames forecasting as a **learning process**:
 
@@ -204,14 +215,12 @@ The final term in your expansion, $(1 - \alpha)^t \hat{y}_1$, represents the "st
 * As $t$ increases, this term also decays toward zero.
 * This demonstrates that **the longer your series runs, the less your initial guess ($\hat{y}_1$) matters.** Over time, the model "washes away" the uncertainty of your starting estimate and settles into a forecast driven almost entirely by the actual, incoming data.
 
-
 ### Why this is the "Gold Standard" of Smoothing
 
 This exponential structure is what makes the method so robust for automated business systems:
 
 * **Computational Efficiency:** You don't need to store all historical data points to calculate the next forecast. You only need the **previous forecast** and the **current observation**. This makes it incredibly fast for processing massive datasets (like millions of individual SKUs in a pharmaceutical supply chain).
 * **Adaptability:** The $\alpha$ parameter allows you to change the "speed" of the decay. If you set $\alpha$ higher, the exponential decay is steeper (you forget the past faster). If you set $\alpha$ lower, the decay is flatter (your memory is longer).
-
 
 **Would you like to compare this exponential weighting against the "equal weighting" of a Moving Average using a quick visual plot, or are you ready to transition from these smoothing fundamentals to the actual business applications of forecasting?**
 ![[Pasted image 20260523105151.png]]
@@ -225,7 +234,9 @@ Simple Exponential Smoothing is a brilliant "level" detector, but its greatest s
 
 The math of SES dictates that for any forecast horizon $h$ into the future, the prediction remains the same:
 
-$$\hat{y}_{t+h|t} = \hat{y}_{t+1|t}$$
+$$
+\hat{y}_{t+h|t} = \hat{y}_{t+1|t}
+$$
 
 Because SES has no "memory" of a trend or a seasonal index, its best prediction for _next month_, _next year_, or _five years from now_ is exactly the same as its prediction for tomorrow.
 
