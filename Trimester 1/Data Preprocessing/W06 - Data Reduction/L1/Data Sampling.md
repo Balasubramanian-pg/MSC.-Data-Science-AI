@@ -91,8 +91,8 @@ Statisticians and data scientists therefore use samples to approximate the behav
 
 Formally:
 
-$$  
-Original\ Dataset \rightarrow Representative\ Sample  
+$$
+Original\ Dataset \rightarrow Representative\ Sample
 $$
 
 If the sample preserves the original statistical structure, machine learning models trained on the sample may behave similarly to models trained on the complete data.
@@ -181,8 +181,8 @@ Very large samples reduce the benefit of sampling itself.
 
 Thus:
 
-$$  
-Sample\ Size \Rightarrow Tradeoff\ Between\ Accuracy\ and\ Efficiency  
+$$
+Sample\ Size \Rightarrow Tradeoff\ Between\ Accuracy\ and\ Efficiency
 $$
 
 ## Types of Sampling Methods
@@ -212,8 +212,8 @@ Simple random sampling assigns equal probability to every tuple in the dataset.
 
 Formally:
 
-$$  
-P(Tuple_i)=\frac{1}{N}  
+$$
+P(Tuple_i)=\frac{1}{N}
 $$
 
 where:
@@ -244,28 +244,28 @@ This means the same tuple cannot appear twice in the sample.
 
 Suppose there are:
 
-$$  
-N=8  
+$$
+N=8
 $$
 
 tuples initially.
 
 At the beginning:
 
-$$  
-P(selection)=\frac{1}{8}  
+$$
+P(selection)=\frac{1}{8}
 $$
 
 After selecting one tuple:
 
-$$  
-P(selection)=\frac{1}{7}  
+$$
+P(selection)=\frac{1}{7}
 $$
 
 Then:
 
-$$  
-P(selection)=\frac{1}{6}  
+$$
+P(selection)=\frac{1}{6}
 $$
 
 and so on.
@@ -291,8 +291,8 @@ Suppose original tuples are:
 
 Select:
 
-$$  
-B  
+$$
+B
 $$
 
 Now remove B from the original dataset.
@@ -313,8 +313,8 @@ Remaining tuples:
 
 Now select:
 
-$$  
-D  
+$$
+D
 $$
 
 Again remove D.
@@ -358,22 +358,22 @@ Therefore the same tuple may appear multiple times in the sample.
 
 Since tuples are never removed:
 
-$$  
-P(selection)=\frac{1}{N}  
+$$
+P(selection)=\frac{1}{N}
 $$
 
 remains constant across all iterations.
 
 If:
 
-$$  
-N=8  
+$$
+N=8
 $$
 
 then every iteration continues using:
 
-$$  
-P(selection)=\frac{1}{8}  
+$$
+P(selection)=\frac{1}{8}
 $$
 
 ## 9.3 Step-by-Step Example
@@ -395,8 +395,8 @@ Suppose:
 
 Select:
 
-$$  
-B  
+$$
+B
 $$
 
 B remains inside the original dataset.
@@ -407,8 +407,8 @@ Again all tuples remain available.
 
 Select:
 
-$$  
-D  
+$$
+D
 $$
 
 ### Iteration 3
@@ -417,8 +417,8 @@ Again all tuples remain available.
 
 Select:
 
-$$  
-B  
+$$
+B
 $$
 
 again.
@@ -493,14 +493,14 @@ Suppose original dataset contains:
 
 Total:
 
-$$  
-14  
+$$
+14
 $$
 
 Suppose sample size required is:
 
-$$  
-7  
+$$
+7
 $$
 
 Then proportional sampling becomes:
@@ -581,24 +581,24 @@ An extremely important section of the lecture discusses pattern preservation.
 
 Suppose original dataset contains:
 
-$$  
-8000  
+$$
+8000
 $$
 
 points forming a visible structure.
 
 After moderate reduction:
 
-$$  
-2000  
+$$
+2000
 $$
 
 points still preserve the pattern.
 
 But after excessive reduction:
 
-$$  
-500  
+$$
+500
 $$
 
 points may destroy the visible structure entirely.
@@ -634,8 +634,8 @@ If sampling becomes too aggressive:
 
 Thus:
 
-$$  
-Too\ Much\ Reduction \Rightarrow Information\ Loss  
+$$
+Too\ Much\ Reduction \Rightarrow Information\ Loss
 $$
 
 ## Computational Benefits of Sampling
@@ -686,8 +686,8 @@ The lecture introduces three major sampling methods:
 
 The most important conceptual insight is:
 
-$$  
-Good\ Samples \approx Original\ Dataset  
+$$
+Good\ Samples \approx Original\ Dataset
 $$
 
 A sample is useful only if it preserves:
