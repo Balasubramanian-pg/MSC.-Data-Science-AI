@@ -75,8 +75,8 @@ Points A, B, C, and D are close together, while E lies far away.
 
 Conceptually:
 
-$$  
-Distance(E,\text{Other Points}) \gg \text{Average Distance}  
+$$
+Distance(E,\text{Other Points}) \gg \text{Average Distance}
 $$
 
 This makes E an outlier.
@@ -115,8 +115,8 @@ In two-dimensional space, most observations form a dense cluster while the outli
 
 The key property is:
 
-$$  
-Similarity \downarrow \quad as \quad Distance \uparrow  
+$$
+Similarity \downarrow \quad as \quad Distance \uparrow
 $$
 
 ## Distance-Based Intuition Behind Outliers
@@ -141,8 +141,8 @@ The average distance from E to the remaining points becomes significantly larger
 
 This suggests:
 
-$$  
-\text{Average Distance}(E) \gg \text{Average Distance of Other Points}  
+$$
+\text{Average Distance}(E) \gg \text{Average Distance of Other Points}
 $$
 
 Outlier detection methods often rely fundamentally on this idea.
@@ -243,8 +243,8 @@ The simplest method is calculating pairwise distances.
 
 If a point remains significantly farther from all others:
 
-$$  
-Distance(x_i,x_j) \uparrow  
+$$
+Distance(x_i,x_j) \uparrow
 $$
 
 then the point may be an outlier.
