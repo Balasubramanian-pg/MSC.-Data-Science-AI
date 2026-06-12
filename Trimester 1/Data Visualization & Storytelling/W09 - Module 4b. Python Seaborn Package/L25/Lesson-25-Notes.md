@@ -32,7 +32,6 @@ df = pd.DataFrame(mock_data)
 ## Apply Seaborn's default aesthetic theme globally for cleaner visuals
 sns.set_theme(style="darkgrid")
 
-
 ## =====================================================================
 ## 1 & 2. Basic Syntax & Core Philosophical Differences
 ## =====================================================================
@@ -54,7 +53,6 @@ plt.title("Seaborn: Declarative & DataFrame-Aware")
 plt.xlabel("Study Hours")
 plt.ylabel("Exam Score")
 plt.show()
-
 
 ## =====================================================================
 ## 3 & 4. Aesthetics & Statistical Aggregation
@@ -85,7 +83,6 @@ plt.xlabel("Course")
 plt.ylabel("Exam Score")
 plt.show()
 
-
 ## =====================================================================
 ## 5. Hybrid Approach: Combining Seaborn and Matplotlib
 ## =====================================================================
@@ -110,7 +107,6 @@ plt.xlabel("Course")
 plt.ylabel("Exam Score")
 plt.legend(loc="lower left")  # Displays the label we assigned to plt.axhline
 plt.show()
-
 
 ## =====================================================================
 ## 6. Advanced Multidimensional Faceting (Using Built-in fMRI Data)
