@@ -5,7 +5,7 @@ This module operationalizes statistical inference.
 W02 established how we infer population-level behavior from samples.
 
 W03 asks the next critical question:
->![Info]
+>[!Tip]
 > Once we estimate something, how do we know whether it is statistically meaningful?
 
 This is where inferential statistics becomes decision machinery.
