@@ -49,8 +49,8 @@ Noise refers to unwanted modification in original data values. It is essentially
 
 Mathematically:
 
-$$  
-X_{observed} = X_{true} + \epsilon  
+$$
+X_{observed} = X_{true} + \epsilon
 $$
 
 where:
@@ -64,8 +64,8 @@ Noise is not considered a legitimate data point. It is corrupted information int
 
 A noisy data point therefore becomes:
 
-$$  
-\text{Noisy Data} = \text{Original Data} + \text{Random Error}  
+$$
+\text{Noisy Data} = \text{Original Data} + \text{Random Error}
 $$
 
 ## Causes of Noisy Data
@@ -87,8 +87,8 @@ One of the most common sources of noise is malfunctioning sensors.
 
 Suppose a humidity sensor consistently adds a small error:
 
-$$  
-Humidity_{measured} = Humidity_{actual} + \delta  
+$$
+Humidity_{measured} = Humidity_{actual} + \delta
 $$
 
 where:
@@ -118,14 +118,14 @@ A government worker asks how many people live in a house.
 
 Actual answer:
 
-$$  
-Members = 3  
+$$
+Members = 3
 $$
 
 Recorded answer:
 
-$$  
-Members = 5  
+$$
+Members = 5
 $$
 
 This introduces accidental distortion into the dataset.
@@ -169,14 +169,14 @@ Example:
 
 A tsunami detection system requires centimeter-level precision:
 
-$$  
-Precision_{required} = 0.01m  
+$$
+Precision_{required} = 0.01m
 $$
 
 However, the deployed sensor measures only in meters:
 
-$$  
-Precision_{available} = 1m  
+$$
+Precision_{available} = 1m
 $$
 
 This limitation introduces measurement uncertainty.
@@ -200,14 +200,14 @@ An outlier is:
 
 Formally:
 
-$$  
-x_i \in Dataset  
+$$
+x_i \in Dataset
 $$
 
 but:
 
-$$  
-Distance(x_i, \mu) \gg \text{Most Other Points}  
+$$
+Distance(x_i, \mu) \gg \text{Most Other Points}
 $$
 
 Unlike noisy data, outliers are not corruption. They are real but extreme observations.
@@ -398,8 +398,8 @@ The lecture strongly emphasizes practical examples such as fraud detection, logi
 
 A major engineering principle from the lecture is:
 
-$$  
-\text{Handle Noise First} \Rightarrow \text{Detect Outliers Later}  
+$$
+\text{Handle Noise First} \Rightarrow \text{Detect Outliers Later}
 $$
 
 because noisy observations can falsely appear anomalous.
