@@ -2,7 +2,6 @@
 
 ## Reading Material: Smoothing with Moving Averages
 
----
 
 ### 1. The Philosophy of Smoothing: Signal Extraction
 
