@@ -45,7 +45,6 @@ These are cognitive encoding mechanisms.
 
 A visualization without deliberate styling is often equivalent to poorly structured writing with no punctuation, headings, or emphasis.
 
-
 ## The Psychology of Visual Encoding
 
 Before discussing Matplotlib syntax, it is important to understand why these features matter.
@@ -88,7 +87,6 @@ This directly connects to Gestalt principles.
 
 The transcript briefly references this idea when discussing common colors and grouping behavior.
 
-
 ## Why Matplotlib Matters
 
 Matplotlib is not merely a plotting API.
@@ -110,7 +108,6 @@ ultimately rely on Matplotlib internally.
 
 Understanding Matplotlib styling means understanding the foundation of Python visualization itself.
 
-
 ## Importing Visualization Libraries
 
 The transcript begins by importing:
@@ -121,7 +118,6 @@ import matplotlib.pyplot as plt
 from matplotlib import colors
 from matplotlib import lines
 ```
-
 
 ## Why NumPy Is Used Everywhere
 
@@ -141,7 +137,6 @@ NumPy provides:
     
 
 Without NumPy, visualization pipelines become inefficient.
-
 
 ## Understanding Colors in Matplotlib
 
@@ -164,7 +159,6 @@ Color can encode:
 
 But misuse of color is one of the biggest problems in dashboard design.
 
-
 ## Default Color Cycles
 
 Matplotlib provides default colors:
@@ -182,7 +176,6 @@ plt.plot(x, y, color='C0')
 ```
 
 These are part of Matplotlib's internal style cycle.
-
 
 ## Single-Letter Color Codes
 
@@ -206,7 +199,6 @@ plt.plot(x, y, color='r')
 ```
 
 Transcript reference:
-
 
 ## Named Colors
 
@@ -234,7 +226,6 @@ vs
 
 Named colors are usually preferable unless strict branding is required.
 
-
 ## Hexadecimal Colors
 
 Hex codes provide exact control.
@@ -260,16 +251,15 @@ Where:
 
 Each ranges:
 
-$$  
-00 \to FF  
+$$
+00 \to FF
 $$
 
 Equivalent to:
 
-$$  
-0 \to 255  
 $$
-
+0 \to 255
+$$
 
 ## RGBA Color System
 
@@ -286,8 +276,8 @@ RGBA stands for:
 
 Values range:
 
-$$  
-0 \to 1  
+$$
+0 \to 1
 $$
 
 Example:
@@ -306,7 +296,6 @@ This means:
     
 - 50% transparency
     
-
 
 ## Transparency and Alpha
 
@@ -331,19 +320,18 @@ Lower alpha is extremely useful when plotting:
 - ensemble models
     
 
-
 ## Grayscale Encoding
 
 The transcript explains grayscale intensity.
 
 In grayscale:
 
-$$  
-0 = \text{black}  
+$$
+0 = \text{black}
 $$
 
-$$  
-1 = \text{white}  
+$$
+1 = \text{white}
 $$
 
 Example:
@@ -353,7 +341,6 @@ color='0.5'
 ```
 
 This becomes medium gray.
-
 
 ## Comprehensive Color Demonstration
 
@@ -378,7 +365,6 @@ plt.show()
 
 Transcript reference:
 
-
 ## Cognitive Risks of Color
 
 ## Bad Color Choices Create Analytical Errors
@@ -398,7 +384,6 @@ This is not aesthetics.
 
 This is information distortion.
 
-
 ## Color Maps
 
 ## Why Colormaps Exist
@@ -413,8 +398,8 @@ blue
 
 a colormap creates:
 
-$$  
-f(x) \to \text{color}  
+$$
+f(x) \to \text{color}
 $$
 
 This enables:
@@ -432,7 +417,6 @@ This enables:
 
 Transcript reference:
 
-
 ## Viridis Colormap
 
 The transcript references `viridis`.
@@ -447,7 +431,6 @@ Viridis became Matplotlib's default colormap because it is:
     
 - visually smooth
     
-
 
 ## Scatter Plot with Colormap
 
@@ -471,7 +454,6 @@ plt.colorbar()
 plt.show()
 ```
 
-
 ## Why Jet Colormap Is Problematic
 
 Older systems often used:
@@ -490,7 +472,6 @@ It exaggerates gradients psychologically.
 
 Viridis avoids this issue.
 
-
 ## Custom Colormaps
 
 The transcript demonstrates segmented colormaps.
@@ -506,7 +487,6 @@ custom_cmap = LinearSegmentedColormap.from_list(
 )
 ```
 
-
 ## Engineering Use Cases
 
 Custom colormaps are heavily used in:
@@ -518,7 +498,6 @@ Custom colormaps are heavily used in:
 |ML|Feature importance|
 |GIS|Terrain elevation|
 |Operations|KPI dashboards|
-
 
 ## Line Styles
 
@@ -537,7 +516,6 @@ Line style introduces redundant encoding.
 
 Transcript reference:
 
-
 ## Basic Line Styles
 
 |Style|Syntax|
@@ -546,7 +524,6 @@ Transcript reference:
 |Dashed|`'--'`|
 |Dotted|`':'`|
 |Dash-dot|`'-.'`|
-
 
 ## Example
 
@@ -584,7 +561,6 @@ plt.show()
 
 Transcript reference:
 
-
 ## Why Markers Matter
 
 Markers reveal:
@@ -602,7 +578,6 @@ Without markers, line charts imply continuity.
 
 This can accidentally mislead viewers.
 
-
 ## Marker Types
 
 |Marker|Meaning|
@@ -612,7 +587,6 @@ This can accidentally mislead viewers.
 |`*`|Star|
 |`^`|Triangle|
 |`x`|Cross|
-
 
 ## Line Width
 
@@ -635,7 +609,6 @@ Thicker lines visually imply:
 
 This is a perceptual bias.
 
-
 ## Dash Cap Styles
 
 Cap styles define line endings.
@@ -657,7 +630,6 @@ dash_capstyle='round'
 
 This subtly changes perceived smoothness.
 
-
 ## Spines
 
 ## What Are Spines?
@@ -669,7 +641,6 @@ Transcript reference:
 Most people never notice them consciously.
 
 Yet they strongly affect visual clutter.
-
 
 ## Accessing Spines
 
@@ -683,7 +654,6 @@ Then:
 ax.spines['top']
 ```
 
-
 ## Removing Spines
 
 ```python
@@ -695,14 +665,12 @@ Transcript reference:
 
 This creates cleaner modern visualizations.
 
-
 ## Customizing Spine Width and Color
 
 ```python
 ax.spines['left'].set_linewidth(4)
 ax.spines['left'].set_color('red')
 ```
-
 
 ## Why Spine Removal Matters
 
@@ -722,7 +690,6 @@ The graph should emphasize:
     
 
 not decorative framing.
-
 
 ## Minimalist Visualization Philosophy
 
@@ -748,7 +715,6 @@ This improves:
 - analytical focus
     
 
-
 ## Advanced Mental Model
 
 Think of every visual attribute as bandwidth allocation.
@@ -760,7 +726,6 @@ If everything is emphasized:
 > nothing is emphasized.
 
 Good visualization controls attention hierarchy intentionally.
-
 
 ## Real-World Dashboard Example
 
@@ -785,7 +750,6 @@ The dashboard fails despite technical correctness.
 
 This is extremely common in enterprise BI.
 
-
 ## Visualization Architecture in Matplotlib
 
 ```mermaid
@@ -802,7 +766,6 @@ B --> H[Colormaps]
 
 Understanding this hierarchy is crucial for advanced customization.
 
-
 ## Machine Learning Connections
 
 Visualization styling matters heavily in ML systems:
@@ -815,7 +778,6 @@ Visualization styling matters heavily in ML systems:
 |Decision boundaries|Scatter + colormap|
 |Uncertainty estimation|Alpha transparency|
 |Embedding spaces|Marker differentiation|
-
 
 ## Common Mistakes
 
@@ -838,7 +800,6 @@ Red-green colorblindness affects many users.
 ## Decorative Borders
 
 Heavy spines create unnecessary clutter.
-
 
 ## Advanced Insight
 
@@ -863,7 +824,6 @@ Experts optimize for:
     
 
 This is a fundamentally different mindset.
-
 
 ## Final Takeaways
 
