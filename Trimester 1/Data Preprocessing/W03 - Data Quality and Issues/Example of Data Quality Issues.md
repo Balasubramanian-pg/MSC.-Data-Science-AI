@@ -37,14 +37,14 @@ These dimensions determine whether the dataset can realistically support statist
 
 A simplified conceptual relationship can be expressed as:
 
-$$  
-\text{Model Quality} \propto \text{Data Quality}  
+$$
+\text{Model Quality} \propto \text{Data Quality}
 $$
 
 If the data quality decreases:
 
-$$  
-\text{Prediction Reliability} \downarrow  
+$$
+\text{Prediction Reliability} \downarrow
 $$
 
 ## Incomplete Data
@@ -97,8 +97,8 @@ d(x,y)=\sqrt{\sum_{i=1}^{n}(x_i-y_i)^2}
 
 If one or more values are missing:
 
-$$  
-x_i = \text{NULL}  
+$$
+x_i = \text{NULL}
 $$
 
 then the distance computation becomes invalid or misleading.
@@ -150,8 +150,8 @@ Noisy data refers to data that has been unintentionally distorted from its origi
 
 Mathematically:
 
-$$  
-X_{observed} = X_{true} + \epsilon  
+$$
+X_{observed} = X_{true} + \epsilon
 $$
 
 where:
@@ -180,8 +180,8 @@ Noise commonly originates from:
 
 A simple example is a humidity sensor with measurement error:
 
-$$  
-Humidity_{measured} = Humidity_{actual} \pm \delta  
+$$
+Humidity_{measured} = Humidity_{actual} \pm \delta
 $$
 
 Another real-world example is distorted audio during poor network connectivity.
@@ -324,20 +324,20 @@ Rule-based systems automatically validate data constraints.
 
 Example validation rule:
 
-$$  
-0 \leq Age \leq 120  
+$$
+0 \leq Age \leq 120
 $$
 
 If:
 
-$$  
-Age = 500  
+$$
+Age = 500
 $$
 
 then:
 
-$$  
-\text{Raise Error Flag}  
+$$
+\text{Raise Error Flag}
 $$
 
 ## Automated Validation Pipeline
@@ -407,8 +407,8 @@ Most practical ML engineering effort is not spent building models but cleaning a
 
 The central principle remains:
 
-$$  
-\text{Bad Data} \Rightarrow \text{Bad Model}  
+$$
+\text{Bad Data} \Rightarrow \text{Bad Model}
 $$
 
 or more famously:
