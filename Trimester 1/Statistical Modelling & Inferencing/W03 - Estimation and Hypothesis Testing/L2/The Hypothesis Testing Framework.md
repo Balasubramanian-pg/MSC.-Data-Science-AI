@@ -4,14 +4,14 @@ Hypothesis testing is a formal framework for making decisions using incomplete i
 
 We observe a sample:
 
-$$  
-x_1, x_2, x_3, \dots, x_n  
+$$
+x_1, x_2, x_3, \dots, x_n
 $$
 
 and attempt to infer something about an unknown population parameter such as:
 
-$$  
-\mu,\ p,\ \sigma^2  
+$$
+\mu,\ p,\ \sigma^2
 $$
 
 Because we only observe a sample rather than the full population, every conclusion contains uncertainty.
@@ -20,8 +20,8 @@ Hypothesis testing provides a systematic method for deciding whether the observe
 
 At its core, hypothesis testing asks:
 
-$$  
-\text{Is the observed signal large enough to distinguish from random noise?}  
+$$
+\text{Is the observed signal large enough to distinguish from random noise?}
 $$
 
 # 2 The Logic Behind Hypothesis Testing
@@ -54,8 +54,20 @@ The courtroom analogy is one of the most powerful ways to understand statistical
 |Presumed innocent|Null hypothesis assumed true|
 |Prosecutor presents evidence|Researcher collects data|
 |Jury evaluates evidence|Statistical test evaluates evidence|
-|Guilty verdict|Reject $$H_0$$|
-|Not guilty verdict|Fail to reject $$H_0$$|
+|Guilty verdict|Reject
+
+$$
+H_0
+$$
+
+|
+|Not guilty verdict|Fail to reject
+
+$$
+H_0
+$$
+
+|
 
 The analogy matters because it highlights an essential principle:
 
@@ -82,22 +94,22 @@ The null hypothesis represents:
 
 It is denoted by:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 Examples:
 
-$$  
-H_0:\mu = 100  
+$$
+H_0:\mu = 100
 $$
 
-$$  
-H_0:p = 0.5  
+$$
+H_0:p = 0.5
 $$
 
-$$  
-H_0:\mu_1 - \mu_2 = 0  
+$$
+H_0:\mu_1 - \mu_2 = 0
 $$
 
 The null hypothesis is the claim subjected to skepticism and testing.
@@ -107,24 +119,24 @@ The alternative hypothesis represents the competing claim.
 
 It is denoted by:
 
-$$  
+$$
 H_A  
 \quad \text{or} \quad  
-H_1  
+H_1
 $$
 
 Examples:
 
-$$  
-H_A:\mu \ne 100  
+$$
+H_A:\mu \ne 100
 $$
 
-$$  
-H_A:\mu > 100  
+$$
+H_A:\mu > 100
 $$
 
-$$  
-H_A:\mu < 100  
+$$
+H_A:\mu < 100
 $$
 
 The alternative hypothesis represents the presence of:
@@ -139,25 +151,24 @@ The alternative hypothesis represents the presence of:
 
 The structure of the alternative hypothesis determines the type of test.
 
-
 ## 6.1 Two-Tailed Test
 
 Used when deviations in either direction matter.
 
-$$  
-H_0:\mu = 100  
+$$
+H_0:\mu = 100
 $$
 
-$$  
-H_A:\mu \ne 100  
+$$
+H_A:\mu \ne 100
 $$
 
 This tests for:
 
-$$  
+$$
 \mu > 100  
 \quad \text{or} \quad  
-\mu < 100  
+\mu < 100
 $$
 
 simultaneously.
@@ -166,24 +177,24 @@ simultaneously.
 
 Used when only increases matter.
 
-$$  
-H_0:\mu = 100  
+$$
+H_0:\mu = 100
 $$
 
-$$  
-H_A:\mu > 100  
+$$
+H_A:\mu > 100
 $$
 
 ## 6.3 Left-Tailed Test
 
 Used when only decreases matter.
 
-$$  
-H_0:\mu = 100  
+$$
+H_0:\mu = 100
 $$
 
-$$  
-H_A:\mu < 100  
+$$
+H_A:\mu < 100
 $$
 
 The choice of tail direction must be determined before examining data.
@@ -222,18 +233,18 @@ The first step is translating the research question into mathematical form.
 
 Suppose a manufacturer claims battery life is:
 
-$$  
-100 \text{ hours}  
+$$
+100 \text{ hours}
 $$
 
 We might define:
 
-$$  
-H_0:\mu = 100  
+$$
+H_0:\mu = 100
 $$
 
-$$  
-H_A:\mu \ne 100  
+$$
+H_A:\mu \ne 100
 $$
 
 This step matters enormously because poorly formulated hypotheses create invalid conclusions later.
@@ -245,16 +256,16 @@ Before collecting data, we define the evidence threshold.
 
 This threshold is the significance level:
 
-$$  
-\alpha  
+$$
+\alpha
 $$
 
 \alpha
 
 The significance level represents:
 
-$$  
-P(\text{Type I Error})  
+$$
+P(\text{Type I Error})
 $$
 
 P(\text{Type I Error})
@@ -265,17 +276,40 @@ Common choices:
 
 |Significance Level|Interpretation|
 |---|---|
-|$$0.10$$|More lenient|
-|$$0.05$$|Standard default|
-|$$0.01$$|Very strict|
+|
 
+$$
+0.10
+$$
 
-# 10 Why $$\alpha$$ Is Chosen Before Seeing Data
+|More lenient|
+|
+
+$$
+0.05
+$$
+
+|Standard default|
+|
+
+$$
+0.01
+$$
+
+|Very strict|
+
+# 10 Why
+
+$$
+\alpha
+$$
+
+Is Chosen Before Seeing Data
 
 Choosing:
 
-$$  
-\alpha  
+$$
+\alpha
 $$
 
 before examining results prevents moving the goalposts.
@@ -284,8 +318,8 @@ If researchers selected significance thresholds after observing outcomes, they c
 
 Pre-registering:
 
-$$  
-\alpha  
+$$
+\alpha
 $$
 
 helps preserve inferential integrity.
@@ -298,11 +332,9 @@ The evidence is summarized into a single quantity called the test statistic.
 
 General structure:
 
-
 $$
 \text{Test Statistic} = \frac{\text{Sample Statistic} - \text{Null Value}}{\text{Standard Error}}
 $$
-
 
 The test statistic measures:
 
@@ -310,16 +342,16 @@ The test statistic measures:
 
 Large deviations imply stronger evidence against:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 # 12 The Intuition Behind Standardization
 
 Suppose two experiments both observe a mean difference of:
 
-$$  
-5  
+$$
+5
 $$
 
 But:
@@ -337,8 +369,8 @@ That is why hypothesis testing divides by the standard error.
 
 Inference fundamentally depends on:
 
-$$  
-\text{Signal} \div \text{Noise}  
+$$
+\text{Signal} \div \text{Noise}
 $$
 
 # 13 Common Test Statistics
@@ -347,15 +379,39 @@ Different statistical problems require different test statistics.
 
 |Test Statistic|Typical Use|
 |---|---|
-|$$Z$$|Known population variance or large samples|
-|$$t$$|Unknown population variance|
-|$$\chi^2$$|Variance tests, categorical analysis|
-|$$F$$|Comparing multiple variances or means|
+|
+
+$$
+Z
+$$
+
+|Known population variance or large samples|
+|
+
+$$
+t
+$$
+
+|Unknown population variance|
+|
+
+$$
+\chi^2
+$$
+
+|Variance tests, categorical analysis|
+|
+
+$$
+F
+$$
+
+|Comparing multiple variances or means|
 
 Each statistic has its own probability distribution under:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 # 14 Example: One-Sample Z-Test
@@ -365,41 +421,43 @@ Suppose:
 - claimed population mean:
     
 
-$$  
-\mu_0 = 50  
+$$
+\mu_0 = 50
 $$
 
 - sample mean:
     
 
-$$  
-\bar{x} = 54  
+$$
+\bar{x} = 54
 $$
 
 - population standard deviation:
     
 
-$$  
-\sigma = 10  
+$$
+\sigma = 10
 $$
 
 - sample size:
     
 
-$$  
-n = 25  
+$$
+n = 25
 $$
 
 The Z-statistic is:
 
-# $$  
+#
+
+$$
 Z
 
 \frac{  
 \bar{x} - \mu_0  
 }{  
 \sigma/\sqrt{n}  
-}  
+}
 $$
 
 genui{"math_block_widget_always_prefetch_v2":{"content":"Z=\frac{\bar{x}-\mu_0}{\sigma/\sqrt{n}}"}}
@@ -412,8 +470,8 @@ $$
 
 This means the observed sample mean lies:
 
-$$  
-2  
+$$
+2
 $$
 
 standard errors above the null expectation.
@@ -424,18 +482,20 @@ Once the test statistic is obtained, we calculate the p-value.
 
 Definition:
 
-# $$  
+#
+
+$$
 p
 
-P(\text{Data at least as extreme as observed} \mid H_0 \text{ true})  
+P(\text{Data at least as extreme as observed} \mid H_0 \text{ true})
 $$
 
 p=P(\text{Data at least as extreme as observed}\mid H_0\text{ true})
 
 The p-value quantifies how surprising the observed data would be if:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 were true.
@@ -447,53 +507,64 @@ The final step compares:
 - observed evidence:
     
 
-$$  
-p  
+$$
+p
 $$
 
 - required standard:
     
 
-$$  
-\alpha  
 $$
-
+\alpha
+$$
 
 ## Reject the Null Hypothesis
 
 If:
 
-$$  
-p \le \alpha  
+$$
+p \le \alpha
 $$
 
 then:
 
 - result is statistically significant
     
-- reject $$H_0$$
+- reject
+
+$$
+H_0
+$$
+
     
 
-$$ p \le \alpha$$
-
+$$
+p \le \alpha
+$$
 
 ## Fail to Reject the Null Hypothesis
 
 If:
 
-$$  
-p > \alpha  
+$$
+p > \alpha
 $$
 
 then:
 
 - result is not statistically significant
     
-- fail to reject $$H_0$$
+- fail to reject
+
+$$
+H_0
+$$
+
     
 
-$$p > \alpha$$
-
+$$
+p > \alpha
+$$
 
 # 17 Why We Never "Accept" the Null Hypothesis
 
@@ -501,16 +572,16 @@ This wording matters.
 
 Statistics never proves:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 true.
 
 It only evaluates whether evidence against:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 became sufficiently strong.
@@ -538,14 +609,14 @@ Example:
 
 For a two-tailed Z-test with:
 
-$$  
-\alpha = 0.05  
+$$
+\alpha = 0.05
 $$
 
 critical values are:
 
-$$  
-\pm 1.96  
+$$
+\pm 1.96
 $$
 
 \pm 1.96
@@ -555,8 +626,8 @@ Decision rule:
 - reject if:
     
 
-$$  
-|Z| > 1.96  
+$$
+|Z| > 1.96
 $$
 
 - fail to reject otherwise
@@ -570,20 +641,20 @@ The p-value approach and critical-value approach are mathematically equivalent.
 
 All hypothesis tests ultimately compare:
 
-$$  
-\text{Observed Result}  
+$$
+\text{Observed Result}
 $$
 
 against
 
-$$  
-\text{Expected Random Variation}  
+$$
+\text{Expected Random Variation}
 $$
 
 If the observed result is too extreme to plausibly attribute to randomness alone, we reject:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 This framework appears everywhere:
@@ -604,7 +675,6 @@ This framework appears everywhere:
     
 
 Hypothesis testing is fundamentally a formalized system for distinguishing signal from noise.
-
 
 # 20 Statistical Significance Is Not Truth
 
