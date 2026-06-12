@@ -528,13 +528,11 @@ $$
 
 should be approximately linear.
 
----
 
 ## Independence
 
 Observations should be statistically independent.
 
----
 
 ## Constant Variance
 
@@ -548,7 +546,6 @@ $$
 
 \text{Homoscedasticity}
 
----
 
 ## Normality of Errors
 
