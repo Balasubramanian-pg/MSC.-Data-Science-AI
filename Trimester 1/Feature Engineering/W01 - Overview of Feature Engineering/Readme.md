@@ -83,11 +83,13 @@ flowchart TD
 Models often assume data is normally distributed (Gaussian) or require features to be on the same scale to properly calculate gradients or distance metrics.
 
 1. **Standardization (Z-Score Normalization):**
+
 $$
 x_{scaled} = \frac{x - \mu}{\sigma}
 $$
 
 2. **Log Transformation:** Handles extreme right-skewed data by compressing the long tail.
+
 $$
 x_{log} = \log(x + 1)
 $$
@@ -222,6 +224,7 @@ Consider a sphere of radius $r$ inscribed within a hypercube of length $2r$. The
 $$
 V_C(d) = (2r)^d
 $$
+
 $$
 V_S(d) = \frac{\pi^{d/2}}{\Gamma(\frac{d}{2} + 1)} r^d
 $$
@@ -313,8 +316,15 @@ simulate_curse_of_dimensionality()
 
 **Q: You have a feature "Time of Day" represented as an integer from 0 to 23. How do you engineer this?**
 **A:** Time is cyclical. 23:00 and 01:00 are 2 hours apart, but standard linear distance calculates $23 - 1 = 22$. We must map this to a circle using Sine and Cosine transformations:
-$$X_{sin} = \sin(2\pi \frac{\text{hour}}{24})$$
-$$X_{cos} = \cos(2\pi \frac{\text{hour}}{24})$$
+
+$$
+X_{sin} = \sin(2\pi \frac{\text{hour}}{24})
+$$
+
+$$
+X_{cos} = \cos(2\pi \frac{\text{hour}}{24})
+$$
+
 This preserves the cyclical proximity for the model.
 
 ## [13. Final Takeaways](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W04%20-%20Dimensionality%20Reduction%20Techniques/Readme.md#13-final-takeaways) and Learning Roadmap
@@ -334,6 +344,5 @@ To master feature engineering, proceed to study:
 2. **Automated Feature Engineering:** Deep Feature Synthesis (e.g., Featuretools library).
 3. **Advanced Missing Data Theory:** Understanding Missing Completely at Random (MCAR) vs. Missing Not at Random (MNAR), and handling MNAR via multiple imputation (MICE) or missingness indicators. 
 4. **Manifold Learning:** Non-linear dimensionality reduction via UMAP or t-SNE for complex spatial mappings.
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
