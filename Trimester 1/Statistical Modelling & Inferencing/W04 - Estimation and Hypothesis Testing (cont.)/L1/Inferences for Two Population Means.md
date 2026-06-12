@@ -4,10 +4,10 @@ Most real-world statistical questions are comparative rather than isolated. Inst
 
 The central inferential problem becomes:
 
-$$  
+$$
 \mu_1  
 \quad \text{vs} \quad  
-\mu_2  
+\mu_2
 $$
 
 \mu_1\quad\text{vs}\quad\mu_2
@@ -25,8 +25,8 @@ Examples include:
 
 The primary statistical question is:
 
-$$  
-\text{Is the observed difference real, or simply random variation?}  
+$$
+\text{Is the observed difference real, or simply random variation?}
 $$
 
 # 2. The Critical Distinction: Independent vs Paired Samples
@@ -59,16 +59,16 @@ Independent samples occur when observations in one group have no relationship to
 
 Formally:
 
-$$  
+$$
 X_{1i}  
 \perp  
-X_{2j}  
+X_{2j}
 $$
 
 for all:
 
-$$  
-i,j  
+$$
+i,j
 $$
 
 meaning every observation in one sample is statistically unrelated to every observation in the other sample.
@@ -92,14 +92,14 @@ The null hypothesis generally states that no population mean difference exists.
 
 This may be written as:
 
-$$  
-H_0:\mu_1 = \mu_2  
+$$
+H_0:\mu_1 = \mu_2
 $$
 
 or equivalently:
 
-$$  
-H_0:\mu_1 - \mu_2 = 0  
+$$
+H_0:\mu_1 - \mu_2 = 0
 $$
 
 H_0:\mu_1-\mu_2=0
@@ -108,20 +108,20 @@ The alternative hypothesis depends on the research objective.
 
 A two-tailed alternative tests for any difference:
 
-$$  
-H_A:\mu_1 \ne \mu_2  
+$$
+H_A:\mu_1 \ne \mu_2
 $$
 
 A right-tailed alternative tests whether the first population mean is larger:
 
-$$  
-H_A:\mu_1 > \mu_2  
+$$
+H_A:\mu_1 > \mu_2
 $$
 
 A left-tailed alternative tests whether the first population mean is smaller:
 
-$$  
-H_A:\mu_1 < \mu_2  
+$$
+H_A:\mu_1 < \mu_2
 $$
 
 The form of the alternative hypothesis must be chosen before analyzing the data.
@@ -130,21 +130,23 @@ The form of the alternative hypothesis must be chosen before analyzing the data.
 
 Because population standard deviations:
 
-$$  
-\sigma_1,\sigma_2  
+$$
+\sigma_1,\sigma_2
 $$
 
 are rarely known in practice, we estimate them using the sample standard deviations:
 
-$$  
-s_1,\ s_2  
+$$
+s_1,\ s_2
 $$
 
 This introduces additional uncertainty, requiring the use of the t-distribution.
 
 The independent two-sample t-statistic is:
 
-# $$  
+#
+
+$$
 t
 
 ## \frac{  
@@ -157,38 +159,64 @@ t
 +  
 \frac{s_2^2}{n_2}  
 }  
-}  
+}
 $$
 
 t=\frac{(\bar{x}_1-\bar{x}_2)-(\mu_1-\mu_2)_0}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}
 
 where:
 
-- $$\bar{x}_1,\bar{x}_2$$ are sample means
+-
+
+$$
+\bar{x}_1,\bar{x}_2
+$$
+
+are sample means
     
-- $$s_1,s_2$$ are sample standard deviations
+-
+
+$$
+s_1,s_2
+$$
+
+are sample standard deviations
     
-- $$n_1,n_2$$ are sample sizes
+-
+
+$$
+n_1,n_2
+$$
+
+are sample sizes
     
-- $$(\mu_1-\mu_2)_0$$ is the hypothesized population difference under the null hypothesis
+-
+
+$$
+(\mu_1-\mu_2)_0
+$$
+
+is the hypothesized population difference under the null hypothesis
     
 
 Most commonly:
 
-$$  
-(\mu_1-\mu_2)_0 = 0  
+$$
+(\mu_1-\mu_2)_0 = 0
 $$
 
 The denominator represents the standard error of the difference between two sample means:
 
-# $$  
+#
+
+$$
 SE(\bar{x}_1-\bar{x}_2)
 
 \sqrt{  
 \frac{s_1^2}{n_1}  
 +  
 \frac{s_2^2}{n_2}  
-}  
+}
 $$
 
 SE(\bar{x}_1-\bar{x}_2)=\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}
@@ -203,8 +231,8 @@ Larger variability increases uncertainty, while larger sample sizes reduce uncer
 
 Classical statistics often assumed equal population variances:
 
-$$  
-\sigma_1^2 = \sigma_2^2  
+$$
+\sigma_1^2 = \sigma_2^2
 $$
 
 This assumption produced the pooled t-test.
@@ -220,7 +248,7 @@ However, equal variances are rarely guaranteed in real datasets. Modern statisti
 
 Welch's procedure uses an adjusted degrees-of-freedom approximation:
 
-$$  
+$$
 df  
 \approx  
 \frac{  
@@ -241,7 +269,7 @@ n_1-1
 }{  
 n_2-1  
 }  
-}  
+}
 $$
 
 df\approx\frac{\left(\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}\right)^2}{\frac{\left(\frac{s_1^2}{n_1}\right)^2}{n_1-1}+\frac{\left(\frac{s_2^2}{n_2}\right)^2}{n_2-1}}
@@ -307,39 +335,43 @@ The paired t-test transforms the two-sample problem into a one-sample problem.
 
 For each pair, we compute a difference:
 
-# $$  
+#
+
+$$
 d_i
 
 ## x_{\text{after},i}
 
-x_{\text{before},i}  
+x_{\text{before},i}
 $$
 
 d_i=x_{\text{after},i}-x_{\text{before},i}
 
 This creates a single sample of differences:
 
-$$  
-d_1,d_2,d_3,\dots,d_n  
+$$
+d_1,d_2,d_3,\dots,d_n
 $$
 
 The inferential question becomes:
 
-$$  
-\text{Is the population mean difference equal to zero?}  
+$$
+\text{Is the population mean difference equal to zero?}
 $$
 
 The null hypothesis is:
 
-$$  
-H_0:\mu_d = 0  
+$$
+H_0:\mu_d = 0
 $$
 
 H_0:\mu_d=0
 
 The paired t-statistic is:
 
-# $$  
+#
+
+$$
 t
 
 ## \frac{  
@@ -348,24 +380,42 @@ t
 0  
 }{  
 s_d/\sqrt{n}  
-}  
+}
 $$
 
 t=\frac{\bar{d}-0}{s_d/\sqrt{n}}
 
 where:
 
-- $$\bar{d}$$ is the sample mean difference
+-
+
+$$
+\bar{d}
+$$
+
+is the sample mean difference
     
-- $$s_d$$ is the standard deviation of the differences
+-
+
+$$
+s_d
+$$
+
+is the standard deviation of the differences
     
-- $$n$$ is the number of pairs
+-
+
+$$
+n
+$$
+
+is the number of pairs
     
 
 The degrees of freedom are:
 
-$$  
-df = n - 1  
+$$
+df = n - 1
 $$
 
 df=n-1
@@ -376,14 +426,14 @@ The statistical power of paired designs comes directly from reducing irrelevant 
 
 The logic can be summarized as:
 
-$$  
+$$
 \text{Noise Reduction}  
 \rightarrow  
 \text{Smaller Standard Error}  
 \rightarrow  
 \text{Larger Test Statistic}  
 \rightarrow  
-\text{Higher Power}  
+\text{Higher Power}
 $$
 
 \text{Noise Reduction}\rightarrow\text{Smaller Standard Error}\rightarrow\text{Larger Test Statistic}\rightarrow\text{Higher Power}
@@ -404,7 +454,19 @@ The two frameworks differ fundamentally in how variability is modeled.
 |Variability|Higher|Lower|
 |Statistical Power|Lower|Higher|
 |Analysis|Two-sample t-test|One-sample t-test on differences|
-|Main Parameter|$$\mu_1 - \mu_2$$|$$\mu_d$$|
+|Main Parameter|
+
+$$
+\mu_1 - \mu_2
+$$
+
+|
+
+$$
+\mu_d
+$$
+
+|
 
 The correct framework is determined entirely by how the data was collected.
 
@@ -412,10 +474,10 @@ The correct framework is determined entirely by how the data was collected.
 
 Both independent and paired tests ultimately evaluate the same core idea:
 
-$$  
+$$
 \text{Observed Difference}  
 \quad vs \quad  
-\text{Expected Random Variation}  
+\text{Expected Random Variation}
 $$
 
 \text{Observed Difference}\quad vs \quad\text{Expected Random Variation}
