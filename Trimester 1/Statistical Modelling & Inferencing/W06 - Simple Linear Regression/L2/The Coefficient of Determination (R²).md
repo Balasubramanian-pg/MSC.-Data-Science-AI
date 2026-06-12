@@ -2,7 +2,6 @@
 
 ## Reading Material: The Coefficient of Determination (R²)
 
----
 # The Coefficient of Determination ((R^2))
 
 # 1. Why We Need a Measure of Fit
@@ -31,13 +30,11 @@ pronounced:
 
 > “R-squared”
 
----
 
 # 2. The Core Intuition Behind (R^2)
 
 At its heart, (R^2) compares two competing prediction strategies.
 
----
 
 ## Model 1: The Regression Model
 
@@ -55,7 +52,6 @@ Prediction error:
 e_i = y_i - \hat{y}_i  
 ]
 
----
 
 ## Model 2: The Baseline Mean Model
 
@@ -75,7 +71,6 @@ Prediction error:
 y_i - \bar{y}  
 ]
 
----
 
 # 3. The Central Question of (R^2)
 
@@ -87,7 +82,6 @@ This is fundamentally a:
 
 # Error Reduction Metric
 
----
 
 # 4. Residual Perspective
 
@@ -119,7 +113,6 @@ R^2
 
 stays small.
 
----
 
 # 5. Decomposition of Variation
 
@@ -137,7 +130,6 @@ For each observation:
 
 This is one of the deepest identities in regression.
 
----
 
 # 6. Interpretation of Each Component
 
@@ -151,7 +143,6 @@ Distance from observation to the mean.
 
 Represents total variability.
 
----
 
 ## Explained Deviation
 
@@ -163,7 +154,6 @@ Part captured by the regression model.
 
 Represents explained structure.
 
----
 
 ## Residual Deviation
 
@@ -175,7 +165,6 @@ Part the model failed to explain.
 
 Represents remaining noise.
 
----
 
 # 7. Visual Interpretation
 
@@ -201,7 +190,6 @@ Total deviation equals:
 - plus unexplained part
     
 
----
 
 # 8. Sum of Squares Decomposition
 
@@ -223,7 +211,6 @@ SST = SSR + SSE
 
 This equation is the foundation of regression analysis.
 
----
 
 # 9. Understanding the Three Sums of Squares
 
@@ -239,7 +226,6 @@ Measures:
 
 This is the total uncertainty before modeling.
 
----
 
 ## SSR: Regression Sum of Squares
 
@@ -253,7 +239,6 @@ Measures:
 
 This is captured structure.
 
----
 
 ## SSE: Error Sum of Squares
 
@@ -267,7 +252,6 @@ Measures:
 
 This is residual noise.
 
----
 
 # 10. Intuition Behind the Identity
 
@@ -288,7 +272,6 @@ Regression is fundamentally:
 
 > variance decomposition.
 
----
 
 # 11. The Definition of (R^2)
 
@@ -302,7 +285,6 @@ Meaning:
 
 # Proportion of total variation explained by the model
 
----
 
 # 12. Alternative Formula
 
@@ -320,7 +302,6 @@ R^2 = 1 - \frac{SSE}{SST}
 
 This is often the more intuitive form.
 
----
 
 # 13. Deep Interpretation of the Formula
 
@@ -342,7 +323,6 @@ R^2
 \text{unexplained proportion}  
 ]
 
----
 
 # 14. Range of (R^2)
 
@@ -352,7 +332,6 @@ For ordinary linear regression with intercept:
 0 \le R^2 \le 1  
 ]
 
----
 
 ## (R^2 = 0)
 
@@ -364,7 +343,6 @@ Predictions no better than using the mean.
 SSR = 0  
 ]
 
----
 
 ## (R^2 = 1)
 
@@ -378,7 +356,6 @@ SSE = 0
 
 No residual error exists.
 
----
 
 # 15. Example Interpretation
 
@@ -400,7 +377,6 @@ Remaining:
 
 is unexplained noise.
 
----
 
 # 16. Important Clarification
 
@@ -419,7 +395,6 @@ NOT:
 - practical importance
     
 
----
 
 # 17. Geometric Interpretation
 
@@ -442,7 +417,6 @@ This connects regression directly to:
 - eigenspaces
     
 
----
 
 # 18. Correlation Connection
 
@@ -460,7 +434,6 @@ r
 
 is the Pearson correlation coefficient.
 
----
 
 # 19. Why Squaring Matters
 
@@ -474,7 +447,6 @@ But explained variance must be nonnegative.
 
 Squaring converts directional association into magnitude of explained variability.
 
----
 
 # 20. Example
 
@@ -494,7 +466,6 @@ Meaning:
 
 64% of variability is explained despite negative relationship.
 
----
 
 # 21. Why High (R^2) Can Be Misleading
 
@@ -502,7 +473,6 @@ A high (R^2) does NOT guarantee a good model.
 
 This is one of the most abused statistics in data science.
 
----
 
 # 22. Case 1: Nonlinear Relationships
 
@@ -516,7 +486,6 @@ A linear model may still achieve moderate or high (R^2).
 
 But residual plots reveal systematic failure.
 
----
 
 # 23. Case 2: Spurious Correlation
 
@@ -533,7 +502,6 @@ Both driven by temperature.
 
 High (R^2) does not imply causation.
 
----
 
 # 24. Case 3: Overfitting
 
@@ -545,7 +513,6 @@ Even useless variables improve fit slightly.
 
 This creates a dangerous illusion of improvement.
 
----
 
 # 25. Adjusted (R^2)
 
@@ -568,7 +535,6 @@ Where:
 - (k) = number of predictors
     
 
----
 
 # 26. Why Adjusted (R^2) Matters
 
@@ -581,13 +547,11 @@ Adjusted (R^2):
 - combats overfitting
     
 
----
 
 # 27. Context Matters
 
 A “good” (R^2) depends heavily on domain.
 
----
 
 ## Physics
 
@@ -599,7 +563,6 @@ Expected:
 R^2 > 0.95  
 ]
 
----
 
 ## Social Sciences
 
@@ -613,7 +576,6 @@ R^2 = 0.30
 
 may be meaningful.
 
----
 
 ## Finance
 
@@ -621,7 +583,6 @@ Markets contain enormous randomness.
 
 Very low (R^2) can still produce valuable models.
 
----
 
 # 28. Residual Diagnostics Still Matter
 
@@ -638,7 +599,6 @@ Always inspect:
 - leverage points
     
 
----
 
 # 29. Mental Model
 
@@ -648,7 +608,6 @@ Think of (R^2) as:
 
 How much uncertainty about (Y) gets compressed after learning (X).
 
----
 
 # 30. Information-Theoretic Perspective
 
@@ -679,7 +638,6 @@ This connects regression to:
 - Bayesian updating
     
 
----
 
 # 31. Python Example
 
@@ -716,7 +674,6 @@ plt.ylabel("Y")
 plt.show()
 ```
 
----
 
 # 32. Common Misconceptions
 
@@ -726,7 +683,6 @@ plt.show()
 
 False.
 
----
 
 ## Misconception 2
 
@@ -736,7 +692,6 @@ False.
 
 Depends on domain.
 
----
 
 ## Misconception 3
 
@@ -746,7 +701,6 @@ False.
 
 Overfitting can inflate (R^2).
 
----
 
 ## Misconception 4
 
@@ -756,7 +710,6 @@ False.
 
 Diagnostics matter equally.
 
----
 
 # 33. Workflow for Evaluating Regression Fit
 
@@ -777,7 +730,6 @@ E -->|Yes| F[Interpret Model]
 E -->|No| G[Refine Model]
 ```
 
----
 
 # 34. Advanced Insight: Why Least Squares Maximizes (R^2)
 
@@ -801,7 +753,6 @@ Thus:
 
 > Least squares fitting and maximizing explained variance are mathematically identical objectives.
 
----
 
 # 35. Final Takeaways
 
