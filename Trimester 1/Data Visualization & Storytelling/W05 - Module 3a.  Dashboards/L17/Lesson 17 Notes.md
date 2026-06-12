@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W05 - Module 3a.  Dashboards
 ---
 
-
 ## Page 1
 
 Lesson 17 
@@ -59,7 +58,6 @@ KPIs/Trends Exploration
 Alerts/Status Action Plans 
  
 
-
 ## Page 2
 
 Types of Dashboards 
@@ -106,7 +104,6 @@ clarity.
 ●​ Usability Testing: Prototype design and test usability.​
  
 
-
 ## Page 3
 
  
@@ -127,6 +124,5 @@ Dashboard Utilities
 ○​ Flexdashboard​
  
  
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
