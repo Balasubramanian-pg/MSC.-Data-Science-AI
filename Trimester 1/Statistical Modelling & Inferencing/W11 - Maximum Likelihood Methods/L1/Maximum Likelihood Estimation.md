@@ -2,7 +2,6 @@
 
 ## Reading Material: Maximum Likelihood Estimation
 
----
 
 **Contents**  
 I The Principle of Maximum Likelihood   
