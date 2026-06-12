@@ -41,7 +41,6 @@ graph TD
     ObjArea -->|No| Area[Area / Treemap Chart]
 ```
 
-
 ### **Detailed Breakdown of Visual Formats**
 
 The core visualization options can be categorized into four primary groups: text-based visuals, relationship/trend graphs, comparison/composition graphs, and physical area charts.
