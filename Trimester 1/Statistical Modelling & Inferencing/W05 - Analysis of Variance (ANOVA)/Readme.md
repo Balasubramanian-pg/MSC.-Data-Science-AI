@@ -123,7 +123,6 @@ This becomes extremely important later in:
 * healthcare trials
 * recommendation experimentation
 
-
 ## Variability as Information
 
 One of ANOVA’s deepest ideas:
@@ -144,7 +143,6 @@ That decomposition later appears everywhere:
 * signal processing
 * Bayesian inference
 * deep learning optimization
-
 
 ## Resources
 
@@ -180,7 +178,6 @@ Examples:
 * testing pricing strategies
 * comparing manufacturing configurations
 
-
 ## The ANOVA Logic
 
 ANOVA works by comparing:
@@ -204,7 +201,6 @@ then:
 
 This leads to the F-statistic framework.
 
-
 ## The F-Statistic
 
 The ANOVA engine is fundamentally a variance ratio.
@@ -221,7 +217,6 @@ Small F-values indicate:
 
 * observed differences are likely sampling noise
 
-
 ## Hidden Insight
 
 ANOVA does not directly test:
@@ -235,7 +230,6 @@ It first tests:
 This is a systems-level inferential perspective.
 
 Post-hoc tests are then used for pairwise interpretation.
-
 
 ## Two-Way ANOVA
 
@@ -258,7 +252,6 @@ Examples:
 * medication × dosage
 * marketing channel × region
 * UI design × device category
-
 
 ## Interaction Effects
 
@@ -283,7 +276,6 @@ Ignoring interactions often creates:
 * misleading averages
 * weak models
 * incorrect conclusions
-
 
 ## ANOVA Assumptions
 
@@ -410,4 +402,3 @@ That exact logic later powers:
 This module therefore teaches more than hypothesis testing.
 
 It teaches how to decompose complex systems into interpretable sources of variation.
-
