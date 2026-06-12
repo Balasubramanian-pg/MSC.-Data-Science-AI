@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W12 - Module 4d. Tableau (Continued) - Module 4d. Tableau (Continued)
 ---
 
-
 ## Page 1
 
  
@@ -57,7 +56,6 @@ whether discount is related to sales, so on and so forth. He wants to understand
 this and you are tasked with showcasing a dashboard to him which captures all this 
 information in a very crisp manner. And in Tableau to achieve this, you have to design 
 individual visualisations and for each visualisation you have to use one sheet. 
-
 
 ## Page 2
 
@@ -112,7 +110,6 @@ information. See, our objective is to help your audience to clearly get the info
 So there are different fonts you can try. So whatever you want, the default is tab blue 
 light. So and the colour is black. 
 
-
 ## Page 3
 
  
@@ -166,7 +163,6 @@ So what I want to label is the profit. So more than profit, I am I'm interested 
 computing something called as a calculated measure. You have already seen a 
 calculated measure, right? So create a calculated field. 
 
-
 ## Page 4
 
  
@@ -217,7 +213,6 @@ there are higher sales. For example, in Texas, the profit is negative, though th
 represents a higher state. So like this, we can combine multiple dimensions in the 
 graph. 
   
-
 
 ## Page 5
 
@@ -270,7 +265,6 @@ Then also we can also include the distinguish the shape by the category.
 You can also include the increase one more dimension by getting the category. OK, 
 you are now trying to understand the category wise differences, for example, plus 
 indicates technology, how technology products, how furniture, how office supplies is 
-
 
 ## Page 6
 
@@ -325,7 +319,6 @@ have the region and category wise sales.
 So now what else we can do? OK, what is another important metric that you would be 
 interested in? You'd be interested in how much is the per customer, OK, sales that is 
 
-
 ## Page 7
 
  
@@ -379,7 +372,6 @@ divided by count, I'm using distinct count because I need the distinct count of
 customers, so I'm just taking customer ID here, so I'm just doing OK. 
   
 
-
 ## Page 8
 
  
@@ -432,7 +424,6 @@ sheets and then modify them as the graph. So I'm just removing this profit per
 customer. 
   
 
-
 ## Page 9
 
  
@@ -484,7 +475,6 @@ We'll bring them later.
 Now let us try to understand how your dashboard is working. First of all, in Tableau, 
 you can have the different sizes of the dashboard. Here it is range we have given. 
   
-
 
 ## Page 10
 
@@ -539,7 +529,6 @@ So you can clearly also. OK, in this case, you can also go to sheet three and ad
 profit percentage. You can also add a profit percentage here. 
   
 
-
 ## Page 11
 
  
@@ -561,6 +550,5 @@ is we should be using more space for the graph, the map and lesser space for the
 us say, the scatterplot. 
  
 --------------------------------------------------------End--------------------------------------------------- 
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
