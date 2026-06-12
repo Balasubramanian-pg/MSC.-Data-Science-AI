@@ -1,6 +1,5 @@
 # Week 6: Data Reduction
 
----
 
 **Module Description**
 
