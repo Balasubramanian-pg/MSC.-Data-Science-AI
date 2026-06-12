@@ -23,7 +23,10 @@ graph LR
 ```
 
 Like a good screenplay, a visual narrative structures data through a specific sequence:
-$$\text{Incident (The Challenge)} \longrightarrow \text{Rising Action (The Analysis)} \longrightarrow \text{Peak Climax (The Core Insight)} \longrightarrow \text{Resolution (The Call to Action)}$$
+
+$$
+\text{Incident (The Challenge)} \longrightarrow \text{Rising Action (The Analysis)} \longrightarrow \text{Peak Climax (The Core Insight)} \longrightarrow \text{Resolution (The Call to Action)}
+$$
 
 ### **Step 1: Context & Audience Analysis**
 
