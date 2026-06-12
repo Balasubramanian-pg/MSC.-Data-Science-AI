@@ -47,8 +47,8 @@ Data preprocessing is the first major stage in any machine learning or data scie
 
 The lecture emphasizes a foundational principle:
 
-$$  
-Poor\ Quality\ Data \Rightarrow Poor\ Quality\ Analysis  
+$$
+Poor\ Quality\ Data \Rightarrow Poor\ Quality\ Analysis
 $$
 
 If raw data contains missing values, inconsistencies, noise, or irrelevant information, then predictive and descriptive systems built on top of that data will also become unreliable.
@@ -232,8 +232,8 @@ Example:
 
 Without normalization:
 
-$$  
-Salary \gg Age  
+$$
+Salary \gg Age
 $$
 
 Large-scale attributes dominate mathematical calculations.
@@ -319,8 +319,8 @@ The lecture references the curse of dimensionality.
 
 As feature count increases:
 
-$$  
-Dimensions \uparrow \Rightarrow Computational\ Cost \uparrow  
+$$
+Dimensions \uparrow \Rightarrow Computational\ Cost \uparrow
 $$
 
 Training complexity grows rapidly.
