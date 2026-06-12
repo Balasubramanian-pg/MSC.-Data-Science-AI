@@ -2,15 +2,15 @@
 
 ## Reading Material: The Multiple Regression Model
 
-## [Multiple Linear Regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#multiple-linear-regression)
+## [Multiple Linear Regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#multiple-linear-regression)
 
-## 1. Why [Simple Linear Regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#simple-linear-regression) Breaks Down
+## 1. Why [Simple Linear Regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#simple-linear-regression) Breaks Down
 
-[Simple linear regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#simple-linear-regression) models the relationship between:
+[Simple linear regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#simple-linear-regression) models the relationship between:
 
 - one predictor variable
     
-- one [response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#response) variable
+- one [response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#response) variable
     
 
 Formally:
@@ -27,46 +27,46 @@ But real-world systems are almost never driven by a single factor.
 
 Most outcomes emerge from the interaction of many variables simultaneously.
 
-[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples):
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08%20-%20Forecasting%20&%20Time%20Series%20Analysis/L0/Time%20Series%20Analysis.md#examples):
 
-|Outcome|Important [Predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors)|
+|Outcome|Important [Predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors)|
 |---|---|
-|Salary|[Education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education), experience, skills, location|
+|Salary|[Education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education), experience, skills, location|
 |House Price|Size, bedrooms, location, age|
 |Health Risk|Diet, genetics, exercise, stress|
 |Stock Prices|Interest rates, earnings, sentiment|
 
 A single-variable model ignores most of reality.
 
-## 3. [The Core Problem](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W02 - Introduction To Statistical Inference/L0/Inferential%20Statistics.md#the-core-problem): Omitted Variable Bias
+## 3. [The Core Problem](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W02%20-%20Introduction%20To%20Statistical%20Inference/L0/Inferential%20Statistics.md#the-core-problem): Omitted Variable Bias
 
-Suppose we model salary using only [education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education).
+Suppose we model salary using only [education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education).
 
 $$
-Salary = \beta_0 + \beta_1([Education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education)) + \epsilon
+Salary = \beta_0 + \beta_1([Education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education)) + \epsilon
 $$
 
 We may observe:
 
-- higher [education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education)
+- higher [education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education)
     
 - higher salary
     
 
 But suppose:
 
-- [education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education) and experience are correlated
+- [education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education) and experience are correlated
     
 - experience also increases salary
     
 
-Now the [education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education) coefficient absorbs part of the experience effect.
+Now the [education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education) coefficient absorbs part of the experience effect.
 
 This creates:
 
 ## Omitted Variable Bias
 
-## 4. [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition))) Behind Omitted Variable Bias
+## 4. [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Residual%20Analysis.md#intuition))) Behind Omitted Variable Bias
 
 Regression tries to explain variation in (Y).
 
@@ -74,12 +74,12 @@ If an important variable is missing:
 
 - its effect does not disappear
     
-- it leaks into included [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors)
+- it leaks into included [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors)
     
 
 The model falsely attributes influence.
 
-## 5. [Why This Is Dangerous](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#why-this-is-dangerous)
+## 5. [Why This Is Dangerous](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Residual%20Analysis.md#why-this-is-dangerous)
 
 Omitted variable bias can:
 
@@ -96,9 +96,9 @@ Omitted variable bias can:
 
 This is one of the biggest dangers in statistical modeling.
 
-## 6. The Solution: [Multiple Linear Regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#multiple-linear-regression)
+## 6. The Solution: [Multiple Linear Regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#multiple-linear-regression)
 
-To address this, we include multiple [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) simultaneously.
+To address this, we include multiple [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) simultaneously.
 
 The population model becomes:
 
@@ -122,11 +122,11 @@ $$
 
 This is:
 
-## [Multiple Linear Regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#multiple-linear-regression)
+## [Multiple Linear Regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#multiple-linear-regression)
 
 ## 7. Structure of the Model
 
-## [Response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#response) Variable
+## [Response](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#response) Variable
 
 $$
 Y
@@ -148,7 +148,7 @@ $$
 \beta_0
 $$
 
-Expected value of (Y) when all [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) equal zero.
+Expected value of (Y) when all [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) equal zero.
 
 ## Slope Coefficients
 
@@ -244,7 +244,7 @@ $$
 
 means:
 
-> expected change in (Y) for a one-unit increase in (X_j), holding all other [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) constant.
+> expected change in (Y) for a one-unit increase in (X_j), holding all other [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) constant.
 
 This is:
 
@@ -301,7 +301,7 @@ This principle is foundational in:
 
 - econometrics
     
-- [social sciences](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#social-sciences)
+- [social sciences](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#social-sciences)
     
 - causal modeling
     
@@ -316,7 +316,7 @@ It attempts to separate overlapping influences.
 
 Without this, interpretation becomes confounded.
 
-## [15. Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#15-[example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example)): Salary Model
+## [15. Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#15-[example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example)): Salary Model
 
 Suppose:
 
@@ -327,7 +327,7 @@ Salary
 
 \beta_0  
 +  
-\beta_1([Education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education))  
+\beta_1([Education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education))  
 +  
 \beta_2(Experience)  
 +  
@@ -342,7 +342,7 @@ $$
 
 means:
 
-> expected salary increase from one additional year of [education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education), holding experience fixed.
+> expected salary increase from one additional year of [education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education), holding experience fixed.
 
 This removes much of the omitted variable distortion.
 
@@ -360,7 +360,7 @@ Hidden confounders may still exist.
 
 Simple regression fits:
 
-## [a line](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#a-line)
+## [a line](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#a-line)
 
 Multiple regression fits:
 
@@ -368,7 +368,7 @@ Multiple regression fits:
 
 ## 18. Two-Predictor Geometry
 
-With two [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors):
+With two [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors):
 
 ##
 
@@ -405,7 +405,7 @@ Controls tilt along (X_1).
 
 Controls tilt along (X_2).
 
-## 20. Visual [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition)))
+## 20. Visual [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Residual%20Analysis.md#intuition)))
 
 ```text
                 Y
@@ -427,11 +427,11 @@ $$
 k > 2
 $$
 
-[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors):
+[predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors):
 
 the fitted object becomes:
 
-## [a hyperplane](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#a-hyperplane)
+## [a hyperplane](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#a-hyperplane)
 
 in:
 
@@ -471,11 +471,11 @@ This compact form powers:
 
 ## 23. Relationship to Machine Learning
 
-[Multiple linear regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#multiple-linear-regression) is one of the foundational supervised learning algorithms.
+[Multiple linear regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#multiple-linear-regression) is one of the foundational supervised learning algorithms.
 
 Many ML models are direct generalizations of regression concepts.
 
-[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples):
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08%20-%20Forecasting%20&%20Time%20Series%20Analysis/L0/Time%20Series%20Analysis.md#examples):
 
 |Regression Idea|ML Extension|
 |---|---|
@@ -492,8 +492,8 @@ Multiple regression inherits all major regression assumptions.
 
 |Letter|Meaning|
 |---|---|
-|L|[Linearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#linearity)|
-|I|[Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence)|
+|L|[Linearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L0/Linear%20Regression.md#linearity)|
+|I|[Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L0/Linear%20Regression.md#independence)|
 |N|Normality|
 |E|Equal variance|
 
@@ -501,26 +501,26 @@ Violations still affect inference validity.
 
 ## 25. New Challenges in Multiple Regression
 
-Multiple [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) introduce additional complications.
+Multiple [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) introduce additional complications.
 
-## 1. [Multicollinearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#multicollinearity))
+## 1. [Multicollinearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#multicollinearity))
 
-[Predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) highly correlated with each other.
+[Predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) highly correlated with each other.
 
 Causes unstable coefficients.
-## 2. [Overfitting](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#overfitting)
+## 2. [Overfitting](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#overfitting)
 
-Too many [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) fit [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#noise) instead of [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#signal).
+Too many [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) fit [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#noise) instead of [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#signal).
 
 ## 3. High-Dimensional Instability
 
 Large predictor sets create numerical and statistical problems.
 
-## 26. Why More [Predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) Are Not Always Better
+## 26. Why More [Predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) Are Not Always Better
 
 Adding variables always increases apparent fit.
 
-But excessive [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) can:
+But excessive [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) can:
 
 - reduce generalization
     
@@ -531,9 +531,9 @@ But excessive [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Scien
 
 This creates the:
 
-## [Bias-Variance Tradeoff](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#bias-variance-tradeoff)
+## [Bias-Variance Tradeoff](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#bias-variance-tradeoff)
 
-## 27. [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) Python Implementation
+## 27. [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) Python Implementation
 
 ```python
 import pandas as pd
@@ -592,11 +592,11 @@ Every coefficient answers:
 
 > “What changes in (Y) when this predictor changes, assuming the others remain fixed?”
 
-This is the core [interpretation rule](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#interpretation-rule).
+This is the core [interpretation rule](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Residual%20Analysis.md#interpretation-rule).
 
-## [30. Common Misconceptions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#30-common-misconceptions)
+## [30. Common Misconceptions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#30-common-misconceptions)
 
-## [Misconception 1](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#misconception-1)
+## [Misconception 1](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#misconception-1)
 
 “Regression proves causation.”
 
@@ -604,21 +604,21 @@ False.
 
 Regression controls observed variables only.
 
-## [Misconception 2](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#misconception-2)
+## [Misconception 2](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#misconception-2)
 
-“More [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) always improve the model.”
+“More [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) always improve the model.”
 
 False.
 
-[Overfitting](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#overfitting) becomes dangerous.
+[Overfitting](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#overfitting) becomes dangerous.
 
-## [Misconception 3](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#misconception-3)
+## [Misconception 3](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#misconception-3)
 
 “Coefficients represent isolated real-world effects automatically.”
 
 False.
 
-Correlated [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) complicate interpretation.
+Correlated [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) complicate interpretation.
 
 ## 31. Workflow of Multiple Regression
 
@@ -651,12 +651,12 @@ $$
 
 ```
 
-## [32. Final Takeaways](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#32-final-takeaways)
+## [32. Final Takeaways](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#32-final-takeaways)
 
 [!IMPORTANT
 
 $$
-Multiple regression extends simple regression by incorporating several [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) simultaneously.
+Multiple regression extends simple regression by incorporating several [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) simultaneously.
 
 Core model:
 
@@ -680,7 +680,7 @@ $$
 
 The defining conceptual insight:
 
-> Each coefficient measures the effect of a predictor while holding all other [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) constant.
+> Each coefficient measures the effect of a predictor while holding all other [predictors](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#predictors) constant.
 
 Key advantages:
 
@@ -695,11 +695,11 @@ Key advantages:
 
 Key dangers:
 
-- [multicollinearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#multicollinearity))
+- [multicollinearity](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#multicollinearity))
     
-- [overfitting](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#overfitting)
+- [overfitting](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md#overfitting)
     
-- [incorrect](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#incorrect)) causal interpretation
+- [incorrect](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#incorrect)) causal interpretation
     
 - omitted confounders
     
