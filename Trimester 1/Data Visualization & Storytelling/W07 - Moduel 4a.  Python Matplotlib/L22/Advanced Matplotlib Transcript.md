@@ -57,7 +57,6 @@ These are foundational visualization primitives used in:
 
 Source material:
 
-
 ## Histograms
 
 ## Conceptual Foundation
@@ -86,7 +85,6 @@ The transcript correctly emphasizes that histograms are used to understand:
 - modality
     
 
-
 ## Intuition Behind Histograms
 
 Suppose you measure:
@@ -106,31 +104,30 @@ A histogram answers:
 
 Instead of examining thousands of raw numbers individually, histograms compress numerical behavior into frequency intervals.
 
-
 ## Mathematical Perspective
 
 A histogram approximates the probability density function:
 
-$$  
-f(x)  
+$$
+f(x)
 $$
 
 Each bin represents:
 
-$$  
-\text{Frequency in Interval}  
+$$
+\text{Frequency in Interval}
 $$
 
 If normalized:
 
-$$  
-\sum P(x_i) = 1  
+$$
+\sum P(x_i) = 1
 $$
 
 Histogram estimation is related to density estimation:
 
-$$  
-\hat{f}(x)=\frac{1}{nh}\sum K\left(\frac{x-x_i}{h}\right)  
+$$
+\hat{f}(x)=\frac{1}{nh}\sum K\left(\frac{x-x_i}{h}\right)
 $$
 
 Where:
@@ -143,7 +140,6 @@ Where:
     
 
 This connects directly to Kernel Density Estimation.
-
 
 ## Basic Histogram Example
 
@@ -178,7 +174,6 @@ plt.show()
 
 Transcript reference:
 
-
 ## Why `np.random.seed()` Matters
 
 The transcript briefly explains reproducibility.
@@ -211,7 +206,6 @@ That makes:
 - scientific replication impossible
     
 
-
 ## Understanding Bins
 
 Bins determine grouping granularity.
@@ -232,29 +226,27 @@ Too many bins:
 
 This is fundamentally a bias-variance tradeoff.
 
-
 ## Common Bin Selection Rules
 
 ## Sturges Rule
 
-$$  
-k = 1 + \log_2(n)  
+$$
+k = 1 + \log_2(n)
 $$
 
 ## Square Root Rule
 
-$$  
-k = \sqrt{n}  
+$$
+k = \sqrt{n}
 $$
 
 ## Freedman-Diaconis Rule
 
-$$  
-h = 2 \frac{IQR}{n^{1/3}}  
+$$
+h = 2 \frac{IQR}{n^{1/3}}
 $$
 
 Most practitioners ignore this completely and manually choose bins, which often produces misleading interpretations.
-
 
 ## Adding Labels to Histogram Bars
 
@@ -294,7 +286,6 @@ for count, patch in zip(counts, patches):
 plt.show()
 ```
 
-
 ## Engineering Insight
 
 Adding labels directly on histograms becomes unreadable quickly when:
@@ -307,7 +298,6 @@ Adding labels directly on histograms becomes unreadable quickly when:
     
 
 Production dashboards usually avoid direct labels unless the number of bins is very small.
-
 
 ## Histogram Failure Modes
 
@@ -329,7 +319,6 @@ plt.xlim(-3, 3)
 
 or log scaling.
 
-
 ## Bar Charts
 
 ## Conceptual Purpose
@@ -346,7 +335,6 @@ Unlike histograms:
     
 - bars should not touch
     
-
 
 ## Example Dataset
 
@@ -387,7 +375,6 @@ plt.show()
 
 Transcript reference:
 
-
 ## Why Pandas Plotting Exists
 
 Pandas integrates directly with Matplotlib.
@@ -413,7 +400,6 @@ Tradeoff:
 
 Less control than raw Matplotlib.
 
-
 ## Horizontal Bar Charts
 
 The transcript discusses `barh`.
@@ -437,7 +423,6 @@ Horizontal bars are superior when:
 
 This is why many enterprise dashboards use horizontal layouts.
 
-
 ## Grouped Bar Charts with Error Bars
 
 ## Core Statistical Idea
@@ -449,7 +434,6 @@ Transcript reference:
 This is fundamentally important because averages alone are deceptive.
 
 Two groups may have identical means but radically different variances.
-
 
 ## Example
 
@@ -480,7 +464,6 @@ plt.ylabel("Average Engagement Score")
 plt.show()
 ```
 
-
 ## Statistical Interpretation
 
 Error bars may represent:
@@ -497,7 +480,6 @@ Error bars may represent:
 This distinction is frequently omitted in dashboards.
 
 That omission is dangerous because viewers assume confidence intervals even when charts display standard deviations.
-
 
 ## Machine Learning Connection
 
@@ -521,7 +503,6 @@ For example:
 
 Without uncertainty estimates, comparisons are statistically weak.
 
-
 ## Pie Charts
 
 ## Core Use Case
@@ -537,7 +518,6 @@ But the transcript correctly warns:
 Humans compare lengths better than angles.
 
 This is a neuroscience problem, not merely a visualization preference.
-
 
 ## Basic Pie Chart
 
@@ -568,7 +548,6 @@ plt.title("Website Traffic Sources")
 plt.show()
 ```
 
-
 ## Why Pie Charts Are Often Bad
 
 Humans struggle to compare:
@@ -591,7 +570,6 @@ Bar charts outperform pie charts for analytical tasks.
 
 Pie charts are mainly storytelling tools.
 
-
 ## Explode Feature
 
 Transcript reference:
@@ -613,7 +591,6 @@ But overuse becomes manipulative.
 
 Many executive dashboards misuse explode effects to artificially exaggerate categories.
 
-
 ## Radar Charts
 
 ## Conceptual Structure
@@ -634,7 +611,6 @@ Used for:
     
 - competency evaluation
     
-
 
 ## Example
 
@@ -677,7 +653,6 @@ ax.set_xticklabels(categories)
 plt.show()
 ```
 
-
 ## Hidden Problem with Radar Charts
 
 Radar charts distort comparisons because:
@@ -692,7 +667,6 @@ Radar charts distort comparisons because:
 Two datasets may appear dramatically different visually while differing minimally numerically.
 
 This is why serious analytical systems often avoid them.
-
 
 ## Text Annotations
 
@@ -709,7 +683,6 @@ into:
 
 - narrative visualizations
     
-
 
 ## Simple Text Placement
 
@@ -731,7 +704,6 @@ plt.text(
 
 plt.show()
 ```
-
 
 ## Arrow Annotations
 
@@ -755,7 +727,6 @@ plt.show()
 
 Transcript reference:
 
-
 ## Storytelling Principle
 
 Good annotations answer:
@@ -772,7 +743,6 @@ Without annotations:
     
 
 Annotations create intentional focus.
-
 
 ## Style Sheets
 
@@ -797,7 +767,6 @@ They control:
 - linewidths
     
 
-
 ## Example
 
 ```python
@@ -816,7 +785,6 @@ plt.legend()
 plt.show()
 ```
 
-
 ## Why Style Consistency Matters
 
 In production systems:
@@ -829,7 +797,6 @@ In production systems:
     
 
 This is why enterprise BI systems enforce theme standards.
-
 
 ## Important Engineering Insight
 
@@ -861,7 +828,6 @@ That warning is extremely important.
 
 3D charts usually reduce interpretability.
 
-
 ## Visualization as Cognitive Compression
 
 A useful mental model:
@@ -873,7 +839,6 @@ Good visualization reduces cognitive effort.
 Bad visualization increases decoding effort.
 
 This is fundamentally an information theory problem.
-
 
 ## Machine Learning Connections
 
@@ -888,7 +853,6 @@ Matplotlib is heavily used in ML workflows:
 |Feature importance|Horizontal bars|
 |Training curves|Line plots|
 |Embedding visualization|Scatter plots|
-
 
 ## Common Visualization Mistakes
 
@@ -912,7 +876,6 @@ Pie charts for 20 categories is visualization malpractice.
 
 Displaying means without variance is statistically misleading.
 
-
 ## Advanced Matplotlib Architecture
 
 Matplotlib internally follows:
@@ -931,7 +894,6 @@ D --> G[Patches]
 Everything visible is an "Artist".
 
 Understanding this architecture unlocks deep customization.
-
 
 ## Performance Considerations
 
@@ -961,7 +923,6 @@ Matplotlib excels in:
     
 - deep customization
     
-
 
 ## Final Takeaways
 
