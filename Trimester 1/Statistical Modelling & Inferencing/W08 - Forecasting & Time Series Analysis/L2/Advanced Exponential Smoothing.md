@@ -59,7 +59,6 @@ Now that we have moved beyond simple smoothing, you have the conceptual framewor
 
 Would you like to dive into the **recursive mathematical formulas** for Holt-Winters (specifically how $\alpha$, $\beta$, and $\gamma$ interact), or would you like to see how to implement this in Python using `statsmodels` to forecast a specific pharmaceutical dataset?
 
-
 ### 2. Deep Dive: Holt’s Linear Trend Method (Double Exponential Smoothing)
 
 Holt’s method is the critical step up from Simple Exponential Smoothing (SES) because it acknowledges that the world is rarely static. By introducing an explicit **Trend Component ($b_t$)**, Holt’s allows the model to "remember" the velocity of the data, not just its current position.
@@ -70,13 +69,21 @@ Holt’s method utilizes two recursive equations, controlled by two distinct smo
 
 - **Level Equation ($\ell_t$):** This combines the current observation with the previous level and the previous trend.
     
-    $$\ell_t = \alpha Y_t + (1 - \alpha)(\ell_{t-1} + b_{t-1})$$
+
+$$
+\ell_t = \alpha Y_t + (1 - \alpha)(\ell_{t-1} + b_{t-1})
+$$
+
     
     _Note: It essentially says "my new level is a blend of what I just saw ($Y_t$) and what I expected to see based on my previous growth path ($\ell_{t-1} + b_{t-1}$)."_
     
 - **Trend Equation ($b_t$):** This estimates the slope.
     
-    $$b_t = \beta(\ell_t - \ell_{t-1}) + (1 - \beta)b_{t-1}$$
+
+$$
+b_t = \beta(\ell_t - \ell_{t-1}) + (1 - \beta)b_{t-1}
+$$
+
     
     _Note: It essentially says "my new trend is a blend of the change I just observed ($\ell_t - \ell_{t-1}$) and the growth rate I was already on ($b_{t-1}$)."_
     
@@ -85,7 +92,9 @@ Holt’s method utilizes two recursive equations, controlled by two distinct smo
 
 Once you have the level ($\ell_t$) and trend ($b_t$) for the final time period $T$, you can forecast $h$ steps into the future using a linear projection:
 
-$$\hat{Y}_{T+h} = \ell_T + h \times b_T$$
+$$
+\hat{Y}_{T+h} = \ell_T + h \times b_T
+$$
 
 Unlike SES, which would just output the constant value $\ell_T$, Holt’s produces a **sloped line**. If the trend is positive, your forecast will climb; if negative, it will decline.
 
@@ -112,7 +121,9 @@ These two recursive equations are the "brain" of Holt’s Linear Trend method. B
 
 #### 1. The Level Equation ($\ell_t$): Balancing Observation and Expectation
 
-$$\ell_t = \alpha y_t + (1 - \alpha)(\ell_{t-1} + b_{t-1})$$
+$$
+\ell_t = \alpha y_t + (1 - \alpha)(\ell_{t-1} + b_{t-1})
+$$
 
 Think of this as a **Correction Mechanism**.
 
@@ -125,7 +136,9 @@ Think of this as a **Correction Mechanism**.
 
 #### 2. The Trend Equation ($b_t$): Updating the Velocity
 
-$$b_t = \beta^*( \ell_t - \ell_{t-1} ) + (1 - \beta^*) b_{t-1}$$
+$$
+b_t = \beta^*( \ell_t - \ell_{t-1} ) + (1 - \beta^*) b_{t-1}
+$$
 
 This equation is essentially a **Velocity Tracker**.
 
@@ -210,7 +223,6 @@ The Holt-Winters method, often called **Triple Exponential Smoothing**, is the c
 
 This method is the backbone of high-performance demand forecasting in industries with high cyclicality, such as pharmaceuticals, where market uptake patterns and seasonal health fluctuations create non-random, repeating ripples in your data.
 
-
 #### The Three Components
 
 The model uses three distinct smoothing parameters to adapt to the data at each time step:
@@ -237,7 +249,6 @@ The multiplicative model is used when the seasonal variations are **proportional
 * **Formula:** $Y_t = (\ell_t + b_t) \times s_{t-m} + \epsilon_t$
 * **Characteristics:** This is the most common model for business data. If your December demand spike represents a $10\%$ increase in total sales, that absolute unit increase will naturally grow as your base trend grows.
 
-
 #### Why This Is Superior for Your Analytical Work
 
 As a pharmaceutical data analyst, you likely deal with data (like IQVIA DDD) where seasonality is complex. By explicitly tracking the $s_t$ component:
@@ -245,7 +256,6 @@ As a pharmaceutical data analyst, you likely deal with data (like IQVIA DDD) whe
 1. **Independent Seasonality:** The model can differentiate between a "true trend increase" (e.g., a new product launch) and a "seasonal increase" (e.g., flu season), preventing you from misinterpreting a temporary peak as a permanent shift in market demand.
 2. **Adaptive Forecasting:** Because $\gamma$ (gamma) is a smoothing parameter, the model can adapt if seasonal patterns change over time (e.g., if a drug's peak usage month shifts due to climate changes or updated medical guidelines).
 3. **Holistic Projection:** When you forecast $h$ steps ahead, the model compounds the Level, adds the Trend, and then *multiplies or adds* the relevant Seasonality from the previous cycle ($m$), creating a realistic "wavy" forecast line that respects the reality of your market's lifecycle.
-
 
 ### Comparison of Forecasting Architectures
 
@@ -283,7 +293,9 @@ Each of the three component equations performs a specific, vital task:
 
 When projecting forward by $h$ steps:
 
-$$\hat{y}_{t+h|t} = \ell_t + h \cdot b_t + s_{t+h-m}$$
+$$
+\hat{y}_{t+h|t} = \ell_t + h \cdot b_t + s_{t+h-m}
+$$
 
 The formula is elegantly simple:
 
@@ -339,7 +351,9 @@ In this model, the seasonal component ($s_t$) is a **ratio** or **index**. A val
 
 When projecting forward by $h$ steps:
 
-$$\hat{y}_{t+h|t} = (\ell_t + h \cdot b_t) \times s_{t+h-m}$$
+$$
+\hat{y}_{t+h|t} = (\ell_t + h \cdot b_t) \times s_{t+h-m}
+$$
 
 1. **Calculate the Trend-Adjusted Level:** Take your current level and project the linear growth forward ($\ell_t + h \cdot b_t$).
     
