@@ -19,7 +19,9 @@ The test operates by comparing the **observed frequency** (the counts we actuall
 
 The Chi-Square statistic is calculated as:
 
-$$\chi^2 = \sum \frac{(O - E)^2}{E}$$
+$$
+\chi^2 = \sum \frac{(O - E)^2}{E}
+$$
 
 Where:
 
