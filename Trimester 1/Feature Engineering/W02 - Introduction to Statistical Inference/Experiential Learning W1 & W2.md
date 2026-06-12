@@ -100,7 +100,6 @@ Using a `Pipeline` and `ColumnTransformer` is the industry standard for this. It
 
 Instead of manually filling nulls, use `sklearn` transformers to ensure consistency across train/test splits.
 
-
 ```python
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
@@ -152,7 +151,6 @@ numeric_transformer = Pipeline(steps=[
 
 To create the `FamilySize` feature, you need a custom transformer that operates on the whole DataFrame before it hits the `ColumnTransformer`.
 
-
 ```python
 from sklearn.base import BaseEstimator, TransformerMixin
 
@@ -170,7 +168,6 @@ class FamilySizeAdder(BaseEstimator, TransformerMixin):
 
 If you want to turn `Age` into discrete categories ("Child", "Teen", etc.) instead of keeping it continuous, you can use `KBinsDiscretizer`.
 
-
 ```python
 from sklearn.preprocessing import KBinsDiscretizer
 
@@ -182,7 +179,6 @@ discretizer = KBinsDiscretizer(n_bins=4, encode='ordinal', strategy='quantile')
 ### 5. Evaluating Performance (The Stretch Goal)
 
 To truly see the "before and after," compare the baseline against your engineered features.
-
 
 ```Python
 from sklearn.ensemble import RandomForestClassifier
