@@ -39,7 +39,9 @@ The transcript mentions distributions but stops short of defining them. Once we 
 
 For discrete random variables, we use a PMF to define the exact probability that the random variable $X$ equals a specific value $x$. For the transcript's fair six-sided die example, the PMF is mathematically defined as:
 
-$$P(X = x) = \frac{1}{6} \quad \text{for } x \in \{1, 2, 3, 4, 5, 6\}$$
+$$
+P(X = x) = \frac{1}{6} \quad \text{for } x \in \{1, 2, 3, 4, 5, 6\}
+$$
 
 The sum of all probabilities in a PMF must always equal exactly 1.
 
@@ -47,7 +49,9 @@ The sum of all probabilities in a PMF must always equal exactly 1.
 
 For continuous random variables, the probability of observing any _exact_ specific point is technically 0 (e.g., the probability of an exact height of 170.000000... cm is infinitely small). Instead, we use a PDF, denoted as $f(x)$, to find the probability that a value falls within a specific _range_ or interval by calculating the area under the curve. This requires integration:
 
-$$P(a \leq X \leq b) = \int_{a}^{b} f(x) dx$$
+$$
+P(a \leq X \leq b) = \int_{a}^{b} f(x) dx
+$$
 
 The total area under the PDF curve must integrate to 1 over the entire sample space.
 
@@ -65,11 +69,19 @@ The mathematical formulation depends on whether the variable is discrete or cont
 
 - **For Discrete Random Variables:** We multiply each possible outcome ($x$) by its probability ($P(x)$) and sum them up.
     
-    $$E[X] = \sum_{x} x \cdot P(X = x)$$
+
+$$
+E[X] = \sum_{x} x \cdot P(X = x)
+$$
+
     
 - **For Continuous Random Variables:** Since we cannot sum distinct points, we integrate over the Probability Density Function ($f(x)$).
     
-    $$E[X] = \int_{-\infty}^{\infty} x \cdot f(x) \, dx$$
+
+$$
+E[X] = \int_{-\infty}^{\infty} x \cdot f(x) \, dx
+$$
+
     
 
 ### 2. Variance and Standard Deviation (The Theoretical Spread)
@@ -78,7 +90,9 @@ Knowing the expected value isn't enough; we need to know how much the data fluct
 
 The theoretical definition is:
 
-$$Var(X) = E[(X - \mu)^2]$$
+$$
+Var(X) = E[(X - \mu)^2]
+$$
 
 By squaring the differences, we achieve two things mathematically:
 
@@ -89,11 +103,19 @@ By squaring the differences, we achieve two things mathematically:
 
 - **For Discrete Variables:**
     
-    $$Var(X) = \sum_{x} (x - \mu)^2 \cdot P(X = x)$$
+
+$$
+Var(X) = \sum_{x} (x - \mu)^2 \cdot P(X = x)
+$$
+
     
 - **For Continuous Variables:**
     
-    $$Var(X) = \int_{-\infty}^{\infty} (x - \mu)^2 \cdot f(x) \, dx$$
+
+$$
+Var(X) = \int_{-\infty}^{\infty} (x - \mu)^2 \cdot f(x) \, dx
+$$
+
     
 
 Because Variance is in "squared units" (e.g., squared dollars, squared centimeters), we usually take its square root to get the **Standard Deviation ($\sigma$)**. This brings the spread back into the original units of measurement, making it intuitive to interpret.
@@ -132,7 +154,9 @@ For a random variable $X$ (the total number of successes) to be strictly Binomia
 
 If we want to find the exact probability of getting exactly $k$ successes out of $n$ trials, we use the Binomial PMF:
 
-$$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$$
+$$
+P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}
+$$
 
 Let's break down the anatomy of this formula:
 
@@ -149,11 +173,19 @@ Because the Binomial Distribution has such strict rules, calculating its theoret
 
 - **Expected Value (The Theoretical Mean):** If you send 100 emails ($n = 100$) and your historical conversion rate is 5% ($p = 0.05$), how many clicks do you expect?
     
-    $$E[X] = n \cdot p = 100 \cdot 0.05 = 5 \text{ clicks}$$
+
+$$
+E[X] = n \cdot p = 100 \cdot 0.05 = 5 \text{ clicks}
+$$
+
     
 - **Variance (The Spread):** How much variation should you expect around that mean?
     
-    $$Var(X) = n \cdot p \cdot (1-p) = 100 \cdot 0.05 \cdot 0.95 = 4.75$$
+
+$$
+Var(X) = n \cdot p \cdot (1-p) = 100 \cdot 0.05 \cdot 0.95 = 4.75
+$$
+
     
 
 ### Interactive Exploration: Marketing Campaign Simulator
