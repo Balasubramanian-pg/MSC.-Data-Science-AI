@@ -35,27 +35,33 @@ Given a [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blo
 
 **Step 1: Mean Centering**
 We must center the data so the origin is the center of mass.
+
 $$
 X_c = X - \mu
 $$
+
 Where $\mu$ is the vector of column means.
 
 **Step 2: The Covariance Matrix**
 We calculate the covariance matrix $\Sigma \in \mathbb{R}^{d \times d}$, which captures the pairwise variance between all features.
+
 $$
 \Sigma = \frac{1}{n-1} X_c^T X_c
 $$
 
 **Step 3: Eigendecomposition**
 We solve for the eigenvectors $V$ and eigenvalues $\Lambda$ of the covariance matrix.
+
 $$
 \Sigma V = V \Lambda
 $$
+
 - **Eigenvectors ($v_i \in V$):** Represent the *directions* of the new feature axes (Principal Components). They are strictly orthogonal.
 - **Eigenvalues ($\lambda_i \in \Lambda$):** Represent the *magnitude of variance* captured along each corresponding eigenvector.
 
 **Step 4: Subspace Projection**
 We sort the eigenvectors in descending order of their corresponding eigenvalues. We select the top $k$ eigenvectors to form a projection matrix $W_k \in \mathbb{R}^{d \times k}$. The compressed data $Z$ is computed by:
+
 $$
 Z = X_c W_k
 $$
@@ -93,6 +99,7 @@ While PCA requires computing the covariance matrix $X^T X$, which can be computa
 
 ### The Mathematics of SVD
 Any matrix $X \in \mathbb{R}^{n \times d}$ can be factored into three matrices:
+
 $$
 X = U \Sigma V^T
 $$
@@ -103,6 +110,7 @@ $$
 
 ### Truncated SVD (Optimal Low-Rank Approximation)
 According to the **Eckart-Young-Mirsky Theorem**, if we want to compress $X$ into a lower-rank matrix $X_k$ (where $k < d$) that minimizes the Frobenius norm $||X - X_k||_F$, we simply keep the top $k$ singular values and vectors:
+
 $$
 X_k \approx U_k \Sigma_k V_k^T
 $$
@@ -136,7 +144,6 @@ Z_svd = U[:, :2] * S[:2]
 ## Verify mathematical equivalence (accounting for potential sign flips in eigenvectors)
 print("Max difference between Sklearn PCA and numpy SVD:", np.max(np.abs(np.abs(Z_pca) - np.abs(Z_svd))))
 ## Expected Output: Max difference... approaches 0 (e.g., 1e-15)
-
 
 ## --- Part 2: SVD for Image Compression and Noise Reduction ---
 ## Create a synthetic image (a simple cross)
@@ -173,21 +180,26 @@ PCA and SVD fail completely when the data lies on a complex, non-linear manifold
 
 ### Step 1: High-Dimensional Probabilities
 t-SNE computes the probability that point $x_i$ would pick point $x_j$ as its neighbor if neighbors were picked in proportion to a Gaussian probability density centered at $x_i$.
+
 $$
 p_{j|i} = \frac{\exp(-||x_i - x_j||^2 / 2\sigma_i^2)}{\sum_{k \neq i} \exp(-||x_i - x_k||^2 / 2\sigma_i^2)}
 $$
+
 We symmetrize this: $p_{ij} = \frac{p_{j|i} + p_{i|j}}{2n}$
 
 ### Step 2: Low-Dimensional Probabilities (The Crowding Problem Solution)
 If we use a Gaussian distribution in the low-dimensional space $\mathbb{R}^2$, points that are moderately far apart in high dimensions will be squashed directly on top of each other in 2D (the "crowding problem"). 
 t-SNE solves this by using a **Student's t-distribution with 1 degree of freedom** (a heavy-tailed Cauchy distribution) for the low-dimensional affinities $q_{ij}$:
+
 $$
 q_{ij} = \frac{(1 + ||y_i - y_j||^2)^{-1}}{\sum_{k \neq l} (1 + ||y_k - y_l||^2)^{-1}}
 $$
+
 The heavy tail allows moderately distant points in high-dimensional space to be pushed much further apart in the 2D map.
 
 ### Step 3: Gradient Descent on KL Divergence
 t-SNE finds the optimal 2D coordinates $y_i$ by minimizing the Kullback-Leibler (KL) divergence between the high-dimensional distribution $P$ and the low-dimensional distribution $Q$:
+
 $$
 C = KL(P || Q) = \sum_i \sum_j p_{ij} \log \frac{p_{ij}}{q_{ij}}
 $$
@@ -283,6 +295,5 @@ plt.show()
 1. **UMAP (Uniform Manifold Approximation and Projection):** The modern successor to t-SNE. Based on algebraic topology, it preserves both local and global structure, and is capable of projecting new unseen data.
 2. **Autoencoders:** Neural network-based non-linear dimensionality reduction. An encoder compresses data into a low-dimensional "bottleneck" (latent space), and a decoder attempts to reconstruct the original data, learning complex non-linear manifolds.
 3. **Kernel PCA:** Applying the kernel trick (similar to SVMs) to project data into a higher-dimensional infinite space, performing linear PCA there, and projecting back, effectively achieving non-linear PCA.
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
