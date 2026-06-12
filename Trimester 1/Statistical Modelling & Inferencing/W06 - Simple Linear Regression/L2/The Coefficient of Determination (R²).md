@@ -30,11 +30,9 @@ pronounced:
 
 > “R-squared”
 
-
 # 2. The Core Intuition Behind (R^2)
 
 At its heart, (R^2) compares two competing prediction strategies.
-
 
 ## Model 1: The Regression Model
 
@@ -51,7 +49,6 @@ Prediction error:
 [  
 e_i = y_i - \hat{y}_i  
 ]
-
 
 ## Model 2: The Baseline Mean Model
 
@@ -71,7 +68,6 @@ Prediction error:
 y_i - \bar{y}  
 ]
 
-
 # 3. The Central Question of (R^2)
 
 (R^2) asks:
@@ -81,7 +77,6 @@ y_i - \bar{y}
 This is fundamentally a:
 
 # Error Reduction Metric
-
 
 # 4. Residual Perspective
 
@@ -113,7 +108,6 @@ R^2
 
 stays small.
 
-
 # 5. Decomposition of Variation
 
 Regression works by partitioning variability.
@@ -130,7 +124,6 @@ For each observation:
 
 This is one of the deepest identities in regression.
 
-
 # 6. Interpretation of Each Component
 
 ## Total Deviation
@@ -143,7 +136,6 @@ Distance from observation to the mean.
 
 Represents total variability.
 
-
 ## Explained Deviation
 
 [  
@@ -154,7 +146,6 @@ Part captured by the regression model.
 
 Represents explained structure.
 
-
 ## Residual Deviation
 
 [  
@@ -164,7 +155,6 @@ y_i - \hat{y}_i
 Part the model failed to explain.
 
 Represents remaining noise.
-
 
 # 7. Visual Interpretation
 
@@ -190,7 +180,6 @@ Total deviation equals:
 - plus unexplained part
     
 
-
 # 8. Sum of Squares Decomposition
 
 Squaring and summing across all observations gives:
@@ -211,7 +200,6 @@ SST = SSR + SSE
 
 This equation is the foundation of regression analysis.
 
-
 # 9. Understanding the Three Sums of Squares
 
 ## SST: Total Sum of Squares
@@ -226,7 +214,6 @@ Measures:
 
 This is the total uncertainty before modeling.
 
-
 ## SSR: Regression Sum of Squares
 
 [  
@@ -239,7 +226,6 @@ Measures:
 
 This is captured structure.
 
-
 ## SSE: Error Sum of Squares
 
 [  
@@ -251,7 +237,6 @@ Measures:
 # Unexplained variability
 
 This is residual noise.
-
 
 # 10. Intuition Behind the Identity
 
@@ -272,7 +257,6 @@ Regression is fundamentally:
 
 > variance decomposition.
 
-
 # 11. The Definition of (R^2)
 
 The coefficient of determination is:
@@ -284,7 +268,6 @@ R^2 = \frac{SSR}{SST}
 Meaning:
 
 # Proportion of total variation explained by the model
-
 
 # 12. Alternative Formula
 
@@ -301,7 +284,6 @@ R^2 = 1 - \frac{SSE}{SST}
 ]
 
 This is often the more intuitive form.
-
 
 # 13. Deep Interpretation of the Formula
 
@@ -323,7 +305,6 @@ R^2
 \text{unexplained proportion}  
 ]
 
-
 # 14. Range of (R^2)
 
 For ordinary linear regression with intercept:
@@ -331,7 +312,6 @@ For ordinary linear regression with intercept:
 [  
 0 \le R^2 \le 1  
 ]
-
 
 ## (R^2 = 0)
 
@@ -342,7 +322,6 @@ Predictions no better than using the mean.
 [  
 SSR = 0  
 ]
-
 
 ## (R^2 = 1)
 
@@ -355,7 +334,6 @@ SSE = 0
 ]
 
 No residual error exists.
-
 
 # 15. Example Interpretation
 
@@ -377,7 +355,6 @@ Remaining:
 
 is unexplained noise.
 
-
 # 16. Important Clarification
 
 (R^2) measures:
@@ -394,7 +371,6 @@ NOT:
     
 - practical importance
     
-
 
 # 17. Geometric Interpretation
 
@@ -417,7 +393,6 @@ This connects regression directly to:
 - eigenspaces
     
 
-
 # 18. Correlation Connection
 
 In simple linear regression:
@@ -434,7 +409,6 @@ r
 
 is the Pearson correlation coefficient.
 
-
 # 19. Why Squaring Matters
 
 Correlation can be:
@@ -446,7 +420,6 @@ Correlation can be:
 But explained variance must be nonnegative.
 
 Squaring converts directional association into magnitude of explained variability.
-
 
 # 20. Example
 
@@ -466,13 +439,11 @@ Meaning:
 
 64% of variability is explained despite negative relationship.
 
-
 # 21. Why High (R^2) Can Be Misleading
 
 A high (R^2) does NOT guarantee a good model.
 
 This is one of the most abused statistics in data science.
-
 
 # 22. Case 1: Nonlinear Relationships
 
@@ -485,7 +456,6 @@ Y = X^2 + \epsilon
 A linear model may still achieve moderate or high (R^2).
 
 But residual plots reveal systematic failure.
-
 
 # 23. Case 2: Spurious Correlation
 
@@ -502,7 +472,6 @@ Both driven by temperature.
 
 High (R^2) does not imply causation.
 
-
 # 24. Case 3: Overfitting
 
 In multiple regression:
@@ -512,7 +481,6 @@ adding predictors always increases (R^2).
 Even useless variables improve fit slightly.
 
 This creates a dangerous illusion of improvement.
-
 
 # 25. Adjusted (R^2)
 
@@ -535,7 +503,6 @@ Where:
 - (k) = number of predictors
     
 
-
 # 26. Why Adjusted (R^2) Matters
 
 Adjusted (R^2):
@@ -547,11 +514,9 @@ Adjusted (R^2):
 - combats overfitting
     
 
-
 # 27. Context Matters
 
 A “good” (R^2) depends heavily on domain.
-
 
 ## Physics
 
@@ -562,7 +527,6 @@ Expected:
 [  
 R^2 > 0.95  
 ]
-
 
 ## Social Sciences
 
@@ -576,13 +540,11 @@ R^2 = 0.30
 
 may be meaningful.
 
-
 ## Finance
 
 Markets contain enormous randomness.
 
 Very low (R^2) can still produce valuable models.
-
 
 # 28. Residual Diagnostics Still Matter
 
@@ -599,7 +561,6 @@ Always inspect:
 - leverage points
     
 
-
 # 29. Mental Model
 
 Think of (R^2) as:
@@ -607,7 +568,6 @@ Think of (R^2) as:
 # Compression Efficiency
 
 How much uncertainty about (Y) gets compressed after learning (X).
-
 
 # 30. Information-Theoretic Perspective
 
@@ -637,7 +597,6 @@ This connects regression to:
     
 - Bayesian updating
     
-
 
 # 31. Python Example
 
@@ -674,7 +633,6 @@ plt.ylabel("Y")
 plt.show()
 ```
 
-
 # 32. Common Misconceptions
 
 ## Misconception 1
@@ -682,7 +640,6 @@ plt.show()
 “High (R^2) means causation.”
 
 False.
-
 
 ## Misconception 2
 
@@ -692,7 +649,6 @@ False.
 
 Depends on domain.
 
-
 ## Misconception 3
 
 “High (R^2) guarantees good predictions.”
@@ -701,7 +657,6 @@ False.
 
 Overfitting can inflate (R^2).
 
-
 ## Misconception 4
 
 “(R^2) alone evaluates model quality.”
@@ -709,7 +664,6 @@ Overfitting can inflate (R^2).
 False.
 
 Diagnostics matter equally.
-
 
 # 33. Workflow for Evaluating Regression Fit
 
@@ -729,7 +683,6 @@ E -->|Yes| F[Interpret Model]
 
 E -->|No| G[Refine Model]
 ```
-
 
 # 34. Advanced Insight: Why Least Squares Maximizes (R^2)
 
@@ -752,7 +705,6 @@ minimizing (SSE) automatically maximizes (R^2).
 Thus:
 
 > Least squares fitting and maximizing explained variance are mathematically identical objectives.
-
 
 # 35. Final Takeaways
 
