@@ -160,7 +160,6 @@ This becomes the basis for:
 * ML evaluation
 * scientific testing
 
-
 ## Comparing Population Variances
 
 Variance comparison is often underestimated.
@@ -183,7 +182,6 @@ Variance inference therefore becomes essential in:
 * anomaly detection
 * quality engineering
 * reliability systems
-
 
 ## Hidden Statistical Complexity
 
@@ -264,7 +262,6 @@ This becomes foundational in:
 * healthcare statistics
 * ML classification evaluation
 
-
 ## Chi-Square Test of Independence
 
 One of the most important categorical inference tools.
@@ -291,7 +288,6 @@ This becomes extremely important later in:
 * exploratory data analysis
 * contingency analysis
 * interpretable ML pipelines
-
 
 ## Statistical Independence
 
@@ -383,4 +379,3 @@ That exact framework later powers:
 * causal AI pipelines
 
 This module therefore extends statistics from isolated inference into comparative reasoning systems.
-
