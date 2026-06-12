@@ -6,11 +6,11 @@
 
 Suppose we collect paired observations:
 
-$$  
+$$
 (x_1,y_1),  
 (x_2,y_2),  
 \dots,  
-(x_n,y_n)  
+(x_n,y_n)
 $$
 
 and display them on a scatter plot.
@@ -44,8 +44,8 @@ But visual intuition is subjective and unreliable.
 
 Statistical modeling requires a rigorous mathematical criterion for defining:
 
-$$  
-\text{Best Fit}  
+$$
+\text{Best Fit}
 $$
 
 \text{Best Fit}
@@ -82,8 +82,8 @@ Even if a strong trend exists, observations still scatter around the trend becau
 
 Thus:
 
-$$  
-\text{No Single Line Passes Through Every Point}  
+$$
+\text{No Single Line Passes Through Every Point}
 $$
 
 \text{No Single Line Passes Through Every Point}
@@ -94,34 +94,38 @@ Regression therefore becomes an optimization problem.
 
 Suppose we propose a candidate regression line:
 
-# $$  
+#
+
+$$
 \hat{y}
 
-b_0+b_1x  
+b_0+b_1x
 $$
 
 \hat{y}=b_0+b_1x
 
 For every observed point:
 
-$$  
-(x_i,y_i)  
+$$
+(x_i,y_i)
 $$
 
 the line produces a predicted value:
 
-# $$  
+#
+
+$$
 \hat{y}_i
 
-b_0+b_1x_i  
+b_0+b_1x_i
 $$
 
 \hat{y}_i=b_0+b_1x_i
 
 The question becomes:
 
-$$  
-\text{How far is the observed point from the line?}  
+$$
+\text{How far is the observed point from the line?}
 $$
 
 This distance defines prediction error.
@@ -139,28 +143,32 @@ is called the residual.
 
 The residual for observation:
 
-$$  
-i  
+$$
+i
 $$
 
 is:
 
-# $$  
+#
+
+$$
 e_i
 
-y_i-\hat{y}_i  
+y_i-\hat{y}_i
 $$
 
 e_i=y_i-\hat{y}_i
 
 Equivalently:
 
-# $$  
+#
+
+$$
 e_i
 
 ## \text{Actual}_i
 
-\text{Predicted}_i  
+\text{Predicted}_i
 $$
 
 e_i=\text{Actual}_i-\text{Predicted}_i
@@ -171,10 +179,10 @@ Residuals quantify model error observation-by-observation.
 
 Regression predicts:
 
-$$  
+$$
 Y  
 \text{ from }  
-X  
+X
 $$
 
 Therefore, error is measured vertically rather than horizontally.
@@ -188,8 +196,8 @@ The regression model assumes:
 
 Thus residuals represent deviations in the:
 
-$$  
-Y  
+$$
+Y
 $$
 
 direction.
@@ -204,46 +212,44 @@ Residuals contain substantial diagnostic information.
 
 If:
 
-$$  
-e_i>0  
+$$
+e_i>0
 $$
 
 then:
 
-$$  
-y_i>\hat{y}_i  
+$$
+y_i>\hat{y}_i
 $$
 
 The observed point lies above the line.
 
 The model underpredicted the observation.
 
-
 ## Negative Residual
 
 If:
 
-$$  
-e_i<0  
+$$
+e_i<0
 $$
 
 then:
 
-$$  
-y_i<\hat{y}_i  
+$$
+y_i<\hat{y}_i
 $$
 
 The observed point lies below the line.
 
 The model overpredicted the observation.
 
-
 ## Zero Residual
 
 If:
 
-$$  
-e_i=0  
+$$
+e_i=0
 $$
 
 then the observation lies exactly on the regression line.
@@ -261,16 +267,16 @@ A good regression line should produce residuals that are:
 
 The central problem becomes:
 
-$$  
-\text{How do we combine all residuals into one measure of total error?}  
+$$
+\text{How do we combine all residuals into one measure of total error?}
 $$
 
 # 8. Why Simple Summation Fails
 
 One possible approach is:
 
-$$  
-\sum e_i  
+$$
+\sum e_i
 $$
 
 However, this fails completely.
@@ -279,16 +285,16 @@ Positive and negative residuals cancel each other out.
 
 A terrible line could still produce:
 
-$$  
-\sum e_i=0  
+$$
+\sum e_i=0
 $$
 
 because overpredictions and underpredictions offset each other.
 
 In fact, one important property of least squares regression is:
 
-$$  
-\sum e_i = 0  
+$$
+\sum e_i = 0
 $$
 
 \sum e_i=0
@@ -299,8 +305,8 @@ Thus raw residual summation cannot measure fit quality.
 
 Another possibility is:
 
-$$  
-\sum |e_i|  
+$$
+\sum |e_i|
 $$
 
 This avoids cancellation because absolute values are always nonnegative.
@@ -315,8 +321,8 @@ The most important idea in least squares regression is squaring residuals before
 
 This produces:
 
-$$  
-e_i^2  
+$$
+e_i^2
 $$
 
 Squaring provides two major advantages.
@@ -325,8 +331,8 @@ Squaring provides two major advantages.
 
 Because:
 
-$$  
-e_i^2 \ge 0  
+$$
+e_i^2 \ge 0
 $$
 
 positive and negative residuals no longer cancel.
@@ -343,8 +349,32 @@ Example:
 
 |Residual|Squared Residual|
 |---|---|
-|$$2$$|$$4$$|
-|$$10$$|$$100$$|
+|
+
+$$
+2
+$$
+
+|
+
+$$
+4
+$$
+
+|
+|
+
+$$
+10
+$$
+
+|
+
+$$
+100
+$$
+
+|
 
 Large prediction errors therefore become disproportionately costly.
 
@@ -356,40 +386,46 @@ This property stabilizes the fitted model substantially.
 
 The total regression error is measured using the Sum of Squared Errors:
 
-# $$  
+#
+
+$$
 SSE
 
-\sum e_i^2  
+\sum e_i^2
 $$
 
 SSE=\sum e_i^2
 
 Substituting residual definitions:
 
-# $$  
+#
+
+$$
 SSE
 
 \sum  
-(y_i-\hat{y}_i)^2  
+(y_i-\hat{y}_i)^2
 $$
 
 SSE=\sum(y_i-\hat{y}_i)^2
 
 Since:
 
-$$  
-\hat{y}_i=b_0+b_1x_i  
+$$
+\hat{y}_i=b_0+b_1x_i
 $$
 
 we obtain:
 
-# $$  
+#
+
+$$
 SSE
 
 \sum  
 \left(  
 y_i-(b_0+b_1x_i)  
-\right)^2  
+\right)^2
 $$
 
 SSE=\sum\left(y_i-(b_0+b_1x_i)\right)^2
@@ -405,14 +441,14 @@ This equation defines total prediction error as a function of:
 
 The Method of Least Squares selects:
 
-$$  
-b_0,b_1  
+$$
+b_0,b_1
 $$
 
 that minimize:
 
-$$  
-SSE  
+$$
+SSE
 $$
 
 \min SSE
@@ -446,12 +482,12 @@ Much of modern statistical learning is built on least-squares logic.
 
 The regression fitting problem becomes:
 
-$$  
+$$
 \min_{b_0,b_1}  
 \sum  
 \left(  
 y_i-(b_0+b_1x_i)  
-\right)^2  
+\right)^2
 $$
 
 \min_{b_0,b_1}\sum\left(y_i-(b_0+b_1x_i)\right)^2
@@ -464,17 +500,27 @@ The objective function is quadratic and convex, guaranteeing a unique global min
 
 To minimize:
 
-$$  
-SSE  
+$$
+SSE
 $$
 
 we:
 
 1. take partial derivatives with respect to:
     
-    - $$b_0$$
+    -
+
+$$
+b_0
+$$
+
         
-    - $$b_1$$
+    -
+
+$$
+b_1
+$$
+
         
 2. set derivatives equal to zero
     
@@ -489,7 +535,9 @@ The solution produces explicit formulas for the regression coefficients.
 
 The slope estimate is:
 
-# $$  
+#
+
+$$
 b_1
 
 \frac{  
@@ -498,17 +546,17 @@ b_1
 }{  
 \sum  
 (x_i-\bar{x})^2  
-}  
+}
 $$
 
 b_1=\frac{\sum(x_i-\bar{x})(y_i-\bar{y})}{\sum(x_i-\bar{x})^2}
 
 This formula measures:
 
-$$  
+$$
 \text{Covariation}  
 \div  
-\text{Variation in }X  
+\text{Variation in }X
 $$
 
 The numerator measures joint movement between variables.
@@ -519,15 +567,27 @@ The denominator measures spread in the predictor variable.
 
 The quantity:
 
-$$  
-(x_i-\bar{x})(y_i-\bar{y})  
+$$
+(x_i-\bar{x})(y_i-\bar{y})
 $$
 
 captures whether deviations from means move together.
 
 If:
 
-- large $$X$$ values correspond to large $$Y$$ values
+- large
+
+$$
+X
+$$
+
+values correspond to large
+
+$$
+Y
+$$
+
+values
     
 
 then products tend to be positive.
@@ -540,14 +600,14 @@ If deviations move oppositely, the slope becomes negative.
 
 The denominator:
 
-$$  
-\sum(x_i-\bar{x})^2  
+$$
+\sum(x_i-\bar{x})^2
 $$
 
 measures variability in:
 
-$$  
-X  
+$$
+X
 $$
 
 If predictor values show little variation, estimating a meaningful slope becomes difficult.
@@ -558,12 +618,14 @@ Regression fundamentally requires variation in the explanatory variable.
 
 Once the slope is determined, the intercept is:
 
-# $$  
+#
+
+$$
 b_0
 
 ## \bar{y}
 
-b_1\bar{x}  
+b_1\bar{x}
 $$
 
 b_0=\bar{y}-b_1\bar{x}
@@ -574,8 +636,8 @@ This formula guarantees a remarkable geometric property.
 
 The least squares regression line always passes through:
 
-$$  
-(\bar{x},\bar{y})  
+$$
+(\bar{x},\bar{y})
 $$
 
 (\bar{x},\bar{y})
@@ -586,32 +648,34 @@ Proof:
 
 Substitute:
 
-$$  
-x=\bar{x}  
+$$
+x=\bar{x}
 $$
 
 into:
 
-$$  
-\hat{y}=b_0+b_1x  
+$$
+\hat{y}=b_0+b_1x
 $$
 
 Then:
 
-# $$  
+#
+
+$$
 \hat{y}
 
 # (\bar{y}-b_1\bar{x})  
 +  
 b_1\bar{x}
 
-\bar{y}  
+\bar{y}
 $$
 
 Thus:
 
-$$  
-(\bar{x},\bar{y})  
+$$
+(\bar{x},\bar{y})
 $$
 
 lies exactly on the regression line.
@@ -620,8 +684,8 @@ lies exactly on the regression line.
 
 The point:
 
-$$  
-(\bar{x},\bar{y})  
+$$
+(\bar{x},\bar{y})
 $$
 
 represents the center of the data cloud.
@@ -638,22 +702,20 @@ Least squares regression produces several important residual properties.
 
 ## Residual Sum Equals Zero
 
-$$  
-\sum e_i=0  
 $$
-
+\sum e_i=0
+$$
 
 ## Residual Mean Equals Zero
 
-$$  
-\bar{e}=0  
 $$
-
+\bar{e}=0
+$$
 
 ## Residuals Are Orthogonal to Predictor Values
 
-$$  
-\sum x_ie_i=0  
+$$
+\sum x_ie_i=0
 $$
 
 These properties emerge automatically from the optimization process.
@@ -711,8 +773,8 @@ The line must compromise between:
 
 The optimization objective becomes:
 
-$$  
-\text{Minimize Total Prediction Failure}  
+$$
+\text{Minimize Total Prediction Failure}
 $$
 
 \text{Minimize Total Prediction Failure}
@@ -732,12 +794,12 @@ Instead, regression constructs mathematical models describing relationships betw
 
 The framework becomes:
 
-$$  
+$$
 \text{Data}  
 \rightarrow  
 \text{Model}  
 \rightarrow  
-\text{Prediction}  
+\text{Prediction}
 $$
 
 \text{Data}\rightarrow\text{Model}\rightarrow\text{Prediction}
