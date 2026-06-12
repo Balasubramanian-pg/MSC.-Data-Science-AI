@@ -127,7 +127,6 @@ Unlike static plots from Matplotlib, Bokeh allows:
 
 Source:
 
-
 ## 1. Why Bokeh Exists
 
 ## Traditional Visualization Problem
@@ -157,7 +156,6 @@ But:
 Good for reports.  
 Bad for exploration.
 
-
 ## 2. What Bokeh Changes
 
 Bokeh generates:
@@ -181,7 +179,6 @@ HTML + JavaScript
 Interactive Browser Visualization
 ```
 
-
 ## Visual Architecture
 
 ```mermaid
@@ -198,7 +195,6 @@ E --> H[Pan]
 E --> I[Live Updates]
 ```
 
-
 ## 3. Installing Bokeh
 
 Transcript mentions:
@@ -208,7 +204,6 @@ pip install bokeh
 ```
 
 Source:
-
 
 ## 4. First Important Concept: `output_notebook()`
 
@@ -221,7 +216,6 @@ output_notebook()
 ```
 
 Source:
-
 
 ## Why This Is Needed
 
@@ -246,7 +240,6 @@ So `output_notebook()` tells Bokeh:
 
 > "Render interactive visuals INSIDE the notebook."
 
-
 ## Visual Understanding
 
 ```mermaid
@@ -256,7 +249,6 @@ A[Notebook] --> B[output_notebook()]
 B --> C[Bokeh JS Loaded]
 C --> D[Interactive Plot Works]
 ```
-
 
 ## 5. Your First Bokeh Plot
 
@@ -288,9 +280,7 @@ p.line(x, y, line_width=3)
 show(p)
 ```
 
-
 ## What Each Part Does
-
 
 ## `figure()`
 
@@ -305,7 +295,6 @@ Equivalent to:
 - `plt.figure()` in Matplotlib
     
 
-
 ## `p.line()`
 
 Adds graphical object.
@@ -318,7 +307,6 @@ Equivalent to:
 
 - `plt.plot()`
     
-
 
 ## `show()`
 
@@ -333,7 +321,6 @@ Equivalent to:
 - `plt.show()`
     
 
-
 ## Internal Flow
 
 ```mermaid
@@ -344,7 +331,6 @@ B --> C[Convert to HTML]
 C --> D[Inject JavaScript]
 D --> E[Browser Visualization]
 ```
-
 
 ## 6. Why Bokeh Feels Different
 
@@ -359,7 +345,6 @@ The transcript highlights:
 
 Source:
 
-
 ## Static vs Interactive
 
 |Feature|Matplotlib|Bokeh|
@@ -370,7 +355,6 @@ Source:
 |Dashboards|Hard|Easy|
 |Hover Tool|Manual|Built-in|
 |Live Streaming|Weak|Strong|
-
 
 ## 7. Core Bokeh Mental Model
 
@@ -385,7 +369,6 @@ Tools
     ↓
 Rendering
 ```
-
 
 ## What Are Glyphs?
 
@@ -414,11 +397,9 @@ or
 p.vbar(...)
 ```
 
-
 ## 8. Add Interactivity
 
 Now let’s see why Bokeh is powerful.
-
 
 ## Hover Tool Example
 
@@ -451,7 +432,6 @@ p.add_tools(hover)
 show(p)
 ```
 
-
 ## What Happens Here?
 
 Now user can:
@@ -467,7 +447,6 @@ Now user can:
 
 This is browser-native interaction.
 
-
 ## Visual Interaction Pipeline
 
 ```mermaid
@@ -477,7 +456,6 @@ A[Mouse Hover] --> B[JavaScript Event]
 B --> C[Bokeh Engine]
 C --> D[Tooltip Display]
 ```
-
 
 ## 9. High-Level vs Low-Level Bokeh
 
@@ -489,7 +467,6 @@ Transcript mentions:
     
 
 Source:
-
 
 ## High-Level Interface
 
@@ -515,7 +492,6 @@ Bokeh handles:
 - rendering
     
 
-
 ## Example
 
 ```python
@@ -523,7 +499,6 @@ p.line(x, y)
 ```
 
 Very simple.
-
 
 ## Low-Level Models
 
@@ -551,14 +526,12 @@ Used for:
 - complex interactions
     
 
-
 ## Engineering Analogy
 
 |Level|Analogy|
 |---|---|
 |High-Level|Driving automatic car|
 |Low-Level|Building engine manually|
-
 
 ## 10. Real Strength of Bokeh
 
@@ -568,7 +541,6 @@ The transcript subtly hints at something important:
 > It is a visualization application framework.
 
 This is a major distinction.
-
 
 ## Bokeh Can Build Dashboards
 
@@ -586,7 +558,6 @@ D --> F[Dropdowns]
 D --> G[Live Charts]
 D --> H[Streaming Data]
 ```
-
 
 ## 11. Streaming Data Example
 
@@ -615,7 +586,6 @@ curdoc().add_periodic_callback(update, 1000)
 curdoc().add_root(p)
 ```
 
-
 ## What This Does
 
 Every second:
@@ -636,7 +606,6 @@ Used in:
 - real-time ML systems
     
 
-
 ## 12. Key Object: `ColumnDataSource`
 
 This is central to Bokeh.
@@ -645,7 +614,6 @@ Think of it as:
 
 - internal dataframe for visualization
     
-
 
 ## Example
 
@@ -658,7 +626,6 @@ source = ColumnDataSource(data={
 })
 ```
 
-
 ## Why It Matters
 
 Bokeh synchronizes:
@@ -669,7 +636,6 @@ Bokeh synchronizes:
     
 
 through this object.
-
 
 ## Visual Understanding
 
@@ -682,7 +648,6 @@ A[Python DataFrame]
     --> D[Browser]
 ```
 
-
 ## 13. Bokeh vs Seaborn vs Matplotlib
 
 |Tool|Best For|
@@ -690,7 +655,6 @@ A[Python DataFrame]
 |Matplotlib|Low-level static control|
 |Seaborn|Statistical visualization|
 |Bokeh|Interactive web visualization|
-
 
 ## 14. Common Beginner Mistakes
 
@@ -700,7 +664,6 @@ Result:
 
 - plot not displayed
     
-
 
 ## Using Huge Datasets Directly
 
@@ -719,7 +682,6 @@ Better:
 - Datashader integration
     
 
-
 ## Confusing Bokeh With Dash/Streamlit
 
 Bokeh:
@@ -736,7 +698,6 @@ Streamlit:
 
 - rapid ML app framework
     
-
 
 ## 15. Where Bokeh Is Actually Used
 
@@ -772,7 +733,6 @@ Streamlit:
 - internal enterprise portals
     
 
-
 ## 16. Interview-Level Understanding
 
 If asked:
@@ -790,7 +750,6 @@ That answer shows:
 - not just syntax familiarity
     
 
-
 ## 17. The Hidden Design Philosophy
 
 Most plotting libraries think:
@@ -806,7 +765,6 @@ Chart → Interactive Application
 ```
 
 That is the conceptual leap.
-
 
 ## 18. Minimal End-to-End Example
 
@@ -837,7 +795,6 @@ plot.circle(x, y, size=10)
 show(plot)
 ```
 
-
 ## Final Mental Model
 
 ```mermaid
@@ -849,7 +806,6 @@ A[Python]
 --> D[JavaScript]
 --> E[Interactive Browser App]
 ```
-
 
 ## Final Takeaways
 
