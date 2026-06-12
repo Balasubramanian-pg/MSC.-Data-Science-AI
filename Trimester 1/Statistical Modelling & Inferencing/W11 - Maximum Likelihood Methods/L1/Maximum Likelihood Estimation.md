@@ -2,7 +2,6 @@
 
 ## Reading Material: Maximum Likelihood Estimation
 
-
 **Contents**  
 I The Principle of Maximum Likelihood   
 1 The [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition)))) of Maximum Likelihood   
@@ -76,11 +75,15 @@ The "Mystery Coin" is the perfect pedagogical model for Maximum Likelihood Estim
 
 To find the MLE for $p$, we define the probability of our observation (8 Heads, 2 Tails) as a function of the parameter $p$. This is governed by the **[Binomial Distribution](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L1/Probability%20and%20Distribution.md#binomial-distribution)**:
 
-$$P(\text{Data} | p) = \binom{n}{k} p^k (1-p)^{n-k}$$
+$$
+P(\text{Data} | p) = \binom{n}{k} p^k (1-p)^{n-k}
+$$
 
 In your specific case, $n=10$ and $k=8$:
 
-$$L(p) = \binom{10}{8} p^8 (1-p)^2$$
+$$
+L(p) = \binom{10}{8} p^8 (1-p)^2
+$$
 
 This $L(p)$ is your **Likelihood Function**. It represents the "plausibility" of different $p$ values given that you have already seen 8 heads.
 
@@ -88,7 +91,9 @@ This $L(p)$ is your **Likelihood Function**. It represents the "plausibility" of
 
 To find the best guess for $p$, we look for the peak of that curve. We do this by taking the derivative of the likelihood function with respect to $p$ and setting it to zero:
 
-$$\frac{dL}{dp} = \binom{10}{8} [8p^7(1-p)^2 + p^8(2(1-p)(-1))] = 0$$
+$$
+\frac{dL}{dp} = \binom{10}{8} [8p^7(1-p)^2 + p^8(2(1-p)(-1))] = 0
+$$
 
 Solving for $p$:
 
@@ -146,11 +151,15 @@ The distinction between probability and likelihood is not just semantic—it is 
 
 If we have a set of independent observations $x_1, x_2, \dots, x_n$ drawn from a distribution with parameter $\theta$, the **Joint Probability** of the data is the product of their individual [probabilities](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L2/Reading%201%20An%20Introduction%20to%20Decision%20Theory.md#probabilities):
 
-$$P(x_1, x_2, \dots, x_n | \theta) = \prod_{i=1}^{n} f(x_i | \theta)$$
+$$
+P(x_1, x_2, \dots, x_n | \theta) = \prod_{i=1}^{n} f(x_i | \theta)
+$$
 
 When we switch to the **Likelihood Function**, we keep that same [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) but freeze the data as constants and treat $\theta$ as our "knob" to turn:
 
-$$L(\theta | x_1, x_2, \dots, x_n) = \prod_{i=1}^{n} f(x_i | \theta)$$
+$$
+L(\theta | x_1, x_2, \dots, x_n) = \prod_{i=1}^{n} f(x_i | \theta)
+$$
 
 #### Why this Matters for Analytics
 
@@ -214,7 +223,9 @@ You will often see $L(\theta | x) \propto f(x | \theta)$. This signifies "propor
 
 While $p^8(1-p)^2$ is easy to differentiate, imagine you are analyzing a clinical trial with 5,000 patients. Your likelihood function would involve a product of 5,000 individual [probabilities](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L2/Reading%201%20An%20Introduction%20to%20Decision%20Theory.md#probabilities):
 
-$$L(p) \propto \prod_{i=1}^{5000} p^{x_i} (1-p)^{1-x_i} = p^{\sum x_i} (1-p)^{5000 - \sum x_i}$$
+$$
+L(p) \propto \prod_{i=1}^{5000} p^{x_i} (1-p)^{1-x_i} = p^{\sum x_i} (1-p)^{5000 - \sum x_i}
+$$
 
 If you try to differentiate a product of thousands of terms, you will encounter significant algebraic headaches. Furthermore, calculating a product of 5,000 small [probabilities](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L2/Reading%201%20An%20Introduction%20to%20Decision%20Theory.md#probabilities) will result in a number so infinitesimally small that your computer will report it as zero (numerical underflow).
 
@@ -245,9 +256,13 @@ Recall our likelihood function: $L(p) = p^8(1-p)^2$.
 
 Instead of differentiating this directly, we take the natural log:
 
-$$\ell(p) = \ln(p^8 \cdot (1-p)^2)$$
+$$
+\ell(p) = \ln(p^8 \cdot (1-p)^2)
+$$
 
-$$\ell(p) = 8 \ln(p) + 2 \ln(1-p)$$
+$$
+\ell(p) = 8 \ln(p) + 2 \ln(1-p)
+$$
 
 Now, finding the maximum is simple calculus:
 
@@ -372,6 +387,5 @@ This is a pragmatic superpower. If you know the MLE of a parameter ($\theta$), y
 In your role as a pharmaceutical data analyst, these properties are your **safety net**. When you present a forecast or an effect size to your lead (like Rohit or Kartik), you aren't just presenting a single number—you are presenting a number backed by the theoretical guarantee that you have used the most stable, precise, and logically sound estimation method available in modern science.
 
 **You have now completed the conceptual core of MLE! We have moved from [intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition)))), through the construction of the log-likelihood function, to the formal properties that make MLE reliable. Would you like to see a practical, step-by-step [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) of how these properties play out when we perform a "Logistic Regression" in Python, or are there any of these four properties you would like to explore with a specific pharmaceutical [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example)?**
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
