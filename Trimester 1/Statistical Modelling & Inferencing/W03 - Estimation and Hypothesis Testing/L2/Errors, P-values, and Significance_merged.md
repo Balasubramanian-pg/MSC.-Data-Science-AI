@@ -4,21 +4,20 @@ module: Statistical Modelling And Inferencing
 week: W03 - Estimation And Hypothesis Testing
 ---
 
-
 ## 1. The Nature of Statistical Decisions
 
 Hypothesis testing is fundamentally a decision-making framework under uncertainty.
 
 We observe a sample:
 
-$$  
-x_1, x_2, x_3, \dots, x_n  
+$$
+x_1, x_2, x_3, \dots, x_n
 $$
 
 and attempt to infer something about an unknown population parameter such as:
 
-$$  
-\mu,\ p,\ \sigma^2  
+$$
+\mu,\ p,\ \sigma^2
 $$
 
 But because samples are incomplete representations of populations, every statistical conclusion carries uncertainty.
@@ -49,20 +48,19 @@ The [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI
 
 Usually denoted:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 [Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples):
 
-$$  
-H_0:\mu = 50  
+$$
+H_0:\mu = 50
 $$
 
-$$  
-H_0:p = 0.5  
 $$
-
+H_0:p = 0.5
+$$
 
 ## [Alternative Hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#alternative-hypothesis)
 
@@ -77,26 +75,25 @@ The [alternative hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Sci
 
 Usually denoted:
 
-$$  
+$$
 H_a  
 \quad \text{or} \quad  
-H_1  
+H_1
 $$
 
 [Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples):
 
-$$  
-H_a:\mu \ne 50  
+$$
+H_a:\mu \ne 50
 $$
 
-$$  
-H_a:\mu > 50  
+$$
+H_a:\mu > 50
 $$
 
-$$  
-H_a:\mu < 50  
 $$
-
+H_a:\mu < 50
+$$
 
 ## 3 The Four Possible Outcomes
 
@@ -104,8 +101,8 @@ Reality itself is hidden from us.
 
 We never directly know whether:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 is actually true or false.
@@ -114,11 +111,34 @@ We only make decisions based on sample evidence.
 
 This creates four logical possibilities:
 
-|Decision|$$H_0$$ True|$$H_0$$ False|
-|---|---|---|
-|Fail to Reject $$H_0$$|Correct Decision|Type II Error|
-|Reject $$H_0$$|Type I Error|Correct Decision|
+|Decision|
 
+$$
+H_0
+$$
+
+True|
+
+$$
+H_0
+$$
+
+False|
+|---|---|---|
+|Fail to Reject
+
+$$
+H_0
+$$
+
+|Correct Decision|Type II Error|
+|Reject
+
+$$
+H_0
+$$
+
+|Type I Error|Correct Decision|
 
 ## 4 Type I Error: The False Positive
 
@@ -126,36 +146,41 @@ A Type I Error occurs when we reject a [null hypothesis](https://github.com/Bala
 
 Formally:
 
-## $$  
+##
+
+$$
 \text{Type I Error}
 
 \text{Reject } H_0  
-\text{ when } H_0 \text{ is true}  
+\text{ when } H_0 \text{ is true}
 $$
 
 The probability of committing a Type I Error is:
 
-$$  
-\alpha  
+$$
+\alpha
 $$
 
 called the significance level.
 
 \alpha
 
+## 4.1 Interpretation of
 
-## 4.1 Interpretation of $$\alpha$$
+$$
+\alpha
+$$
 
 If:
 
-$$  
-\alpha = 0.05  
+$$
+\alpha = 0.05
 $$
 
 then we are accepting a:
 
-$$  
-5%  
+$$
+5%
 $$
 
 risk of falsely rejecting the [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#null-hypothesis).
@@ -163,7 +188,6 @@ risk of falsely rejecting the [null hypothesis](https://github.com/Balasubramani
 This means:
 
 > Even when the [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#null-hypothesis) is perfectly true, our testing procedure will falsely reject it about 5% of the time in repeated sampling.
-
 
 ## 4.2 [Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples) of Type I Errors
 
@@ -174,24 +198,20 @@ This means:
 - False positive cancer screening
     
 
-
 ### Criminal Justice
 
 - Innocent person convicted
     
-
 
 ### Manufacturing
 
 - Good product classified as defective
     
 
-
 ### Cybersecurity
 
 - Legitimate activity flagged as malicious
     
-
 
 ## 5 Type II Error: The False Negative
 
@@ -199,21 +219,22 @@ A Type II Error occurs when we fail to reject a false [null hypothesis](https://
 
 Formally:
 
-## $$  
+##
+
+$$
 \text{Type II Error}
 
 \text{Fail to Reject } H_0  
-\text{ when } H_0 \text{ is false}  
+\text{ when } H_0 \text{ is false}
 $$
 
 The probability of a Type II Error is:
 
-$$  
-\beta  
+$$
+\beta
 $$
 
 \beta
-
 
 ## 5.1 [Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples) of Type II Errors
 
@@ -222,31 +243,27 @@ $$
 - Diseased patient incorrectly declared healthy
     
 
-
 ### Fraud Detection
 
 - Fraudulent transaction passes unnoticed
     
-
 
 ### Engineering
 
 - Defective component passes inspection
     
 
-
 ### National Security
 
 - Real threat not detected
     
 
-
 ## 6 Statistical Power
 
 The complement of a Type II Error is called statistical power.
 
-$$  
-\text{Power} = 1 - \beta  
+$$
+\text{Power} = 1 - \beta
 $$
 
 \text{Power} = 1 - \beta
@@ -264,8 +281,17 @@ High power means:
 - greater ability to discover true effects
     
 
+## 7 The Tradeoff Between
 
-## 7 The Tradeoff Between $$\alpha$$ and $$\beta$$
+$$
+\alpha
+$$
+
+and
+
+$$
+\beta
+$$
 
 There is no free lunch in statistical inference.
 
@@ -273,35 +299,34 @@ Reducing one type of error often increases the other.
 
 Suppose we reduce:
 
-$$  
-\alpha  
+$$
+\alpha
 $$
 
 from:
 
-$$  
-0.05 \rightarrow 0.001  
+$$
+0.05 \rightarrow 0.001
 $$
 
 We become much more cautious about false positives.
 
 But now stronger evidence is required to reject:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 This makes real effects harder to detect.
 
 Thus:
 
-$$  
+$$
 \beta  
-\uparrow  
+\uparrow
 $$
 
 and power decreases.
-
 
 ## Deep [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition))))
 
@@ -336,15 +361,14 @@ This is the exact same tradeoff seen in:
 
 Hypothesis testing is essentially [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal)) detection theory in mathematical form.
 
-
 ## 8 The Role of Sample Size
 
 Sample size is the primary mechanism for improving both error rates simultaneously.
 
 As:
 
-$$  
-n \uparrow  
+$$
+n \uparrow
 $$
 
 we obtain:
@@ -358,9 +382,19 @@ we obtain:
 
 This allows:
 
-- smaller $$\alpha$$
+- smaller
+
+$$
+\alpha
+$$
+
     
-- smaller $$\beta$$
+- smaller
+
+$$
+\beta
+$$
+
     
 - higher power
     
@@ -368,7 +402,6 @@ This allows:
 simultaneously.
 
 Large samples partially break the tradeoff.
-
 
 ## 9 The P-Value
 
@@ -380,35 +413,36 @@ Formally:
 
 Mathematically:
 
-## $$  
+##
+
+$$
 p
 
-P(\text{Data as extreme as observed}\mid H_0 \text{ true})  
+P(\text{Data as extreme as observed}\mid H_0 \text{ true})
 $$
 
 p = P(\text{Data as extreme as observed}\mid H_0\text{ true})
-
 
 ## 10 Understanding "Extreme"
 
 Suppose:
 
-$$  
-H_0:\mu = 50  
+$$
+H_0:\mu = 50
 $$
 
 and we observe:
 
-$$  
-\bar{x} = 84  
+$$
+\bar{x} = 84
 $$
 
 If the [standard error](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#standard-error) is small, this observation is extremely far from the null expectation.
 
 Under:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 such a result would be very unlikely.
@@ -421,10 +455,9 @@ A [small p-value](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blo
 
 That rarity becomes evidence against:
 
-$$  
-H_0  
 $$
-
+H_0
+$$
 
 ## 11 P-Values as Measures of Surprise
 
@@ -432,19 +465,84 @@ The p-value quantifies surprise under the null model.
 
 |P-Value|Interpretation|
 |---|---|
-|Large|Data unsurprising under $$H_0$$|
-|Small|Data surprising under $$H_0$$|
-|Very small|Strong evidence against $$H_0$$|
+|Large|Data unsurprising under
+
+$$
+H_0
+$$
+
+|
+|Small|Data surprising under
+
+$$
+H_0
+$$
+
+|
+|Very small|Strong evidence against
+
+$$
+H_0
+$$
+
+|
 
 [Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples):
 
 |P-Value|Informal Interpretation|
 |---|---|
-|$$0.45$$|Extremely consistent with $$H_0$$|
-|$$0.12$$|Weak evidence against $$H_0$$|
-|$$0.03$$|Moderate evidence against $$H_0$$|
-|$$0.001$$|Very strong evidence against $$H_0$$|
+|
 
+$$
+0.45
+$$
+
+|Extremely consistent with
+
+$$
+H_0
+$$
+
+|
+|
+
+$$
+0.12
+$$
+
+|Weak evidence against
+
+$$
+H_0
+$$
+
+|
+|
+
+$$
+0.03
+$$
+
+|Moderate evidence against
+
+$$
+H_0
+$$
+
+|
+|
+
+$$
+0.001
+$$
+
+|Very strong evidence against
+
+$$
+H_0
+$$
+
+|
 
 ## 12 What the P-Value Is NOT
 
@@ -452,8 +550,8 @@ This is critical.
 
 The p-value is NOT:
 
-$$  
-P(H_0 \text{ true})  
+$$
+P(H_0 \text{ true})
 $$
 
 P(H_0\text{ true})
@@ -462,8 +560,8 @@ Statistics students constantly reverse the conditional probability.
 
 The p-value assumes:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 is true and asks:
@@ -476,15 +574,26 @@ It does NOT ask:
 
 Those are fundamentally different questions.
 
-
 ## 13 The Decision Rule
 
 Hypothesis testing compares:
 
 |Quantity|Meaning|
 |---|---|
-|$$p$$|Evidence from data|
-|$$\alpha$$|Required standard of proof|
+|
+
+$$
+p
+$$
+
+|Evidence from data|
+|
+
+$$
+\alpha
+$$
+
+|Required standard of proof|
 
 Decision rule:
 
@@ -492,33 +601,42 @@ Decision rule:
 
 If:
 
-$$  
-p \le \alpha  
+$$
+p \le \alpha
 $$
 
 then:
 
 - result is statistically significant
     
-- reject $$H_0$$
+- reject
+
+$$
+H_0
+$$
+
     
 
 p \le \alpha
-
 
 ## Fail to Reject the Null
 
 If:
 
-$$  
-p > \alpha  
+$$
+p > \alpha
 $$
 
 then:
 
 - result is not statistically significant
     
-- fail to reject $$H_0$$
+- fail to reject
+
+$$
+H_0
+$$
+
     
 
 p > \alpha
@@ -533,27 +651,26 @@ Failing to reject simply means:
 
 Absence of evidence is not evidence of absence.
 
-
 ## 14 Why "Fail to Reject" Matters
 
 Suppose a drug trial yields:
 
-$$  
-p = 0.08  
+$$
+p = 0.08
 $$
 
 with:
 
-$$  
-\alpha = 0.05  
+$$
+\alpha = 0.05
 $$
 
 The result is not statistically significant.
 
 But this does NOT prove:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 is true.
@@ -571,18 +688,15 @@ Possible explanations:
 
 This distinction matters enormously in scientific interpretation.
 
-
 ## 15 Statistical Significance vs Practical Significance
 
 One of the biggest failures in applied statistics is confusing significance with importance.
-
 
 ## Statistical Significance
 
 Means:
 
 > The effect is unlikely due to random chance.
-
 
 ## Practical Significance
 
@@ -592,19 +706,18 @@ Means:
 
 These are not the same thing.
 
-
 ## 16 Large Samples Can Detect Tiny Effects
 
 Suppose a drug lowers blood pressure by:
 
-$$  
-0.01 \text{ mmHg}  
+$$
+0.01 \text{ mmHg}
 $$
 
 With millions of observations:
 
-$$  
-p < 0.000001  
+$$
+p < 0.000001
 $$
 
 The result is statistically significant.
@@ -615,13 +728,12 @@ Almost meaningless.
 
 This is why effect size matters.
 
-
 ## 17 Effect Size
 
 A p-value only measures evidence against:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 It does NOT measure:
@@ -639,9 +751,19 @@ Effect size metrics attempt to quantify magnitude.
 
 [Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples):
 
-- Cohen's $$d$$
+- Cohen's
+
+$$
+d
+$$
+
     
-- Pearson correlation $$r$$
+- Pearson correlation
+
+$$
+r
+$$
+
     
 - odds ratio
     
@@ -659,15 +781,14 @@ Modern statistics increasingly emphasizes:
 
 rather than binary significance decisions alone.
 
-
 ## 18 The Replication Crisis
 
 Many scientific fields experienced replication failures because of overreliance on p-values.
 
 Researchers often treated:
 
-$$  
-p < 0.05  
+$$
+p < 0.05
 $$
 
 as equivalent to truth.
@@ -696,27 +817,26 @@ A statistically significant result can still be:
 
 Statistical significance is evidence, not proof.
 
-
 ## 19 Confidence Intervals and P-Values
 
 Confidence intervals provide richer information than p-values alone.
 
 Suppose a confidence interval for a [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) difference is:
 
-$$  
-(2.1,\ 7.4)  
+$$
+(2.1,\ 7.4)
 $$
 
 Since:
 
-$$  
-0  
+$$
+0
 $$
 
 is not inside the interval:
 
-$$  
-H_0:\mu_1 - \mu_2 = 0  
+$$
+H_0:\mu_1 - \mu_2 = 0
 $$
 
 would be rejected.
@@ -733,7 +853,6 @@ Confidence intervals simultaneously show:
     
 
 This is why many statisticians prefer them over isolated p-values.
-
 
 ## 20 One of the Deepest Misconceptions in Statistics
 
@@ -758,15 +877,14 @@ This is mathematically related to Bayesian base-rate effects.
 
 In some fields, a large fraction of "significant" findings may actually be false discoveries.
 
-
 ## 21 Deep [Intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition)))) Behind Hypothesis Testing
 
 At its core, hypothesis testing asks:
 
-$$  
+$$
 \text{[Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal))}  
 \quad vs \quad  
-\text{[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))}  
+\text{[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))}
 $$
 
 Observed data always contains both.
