@@ -2,7 +2,6 @@
 
 ## Reading Material: Modeling Binary Outcomes
 
----
 
 **Contents**  
 I Modeling [Probabilities](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L2/Reading%201%20An%20Introduction%20to%20Decision%20Theory.md#probabilities)  
