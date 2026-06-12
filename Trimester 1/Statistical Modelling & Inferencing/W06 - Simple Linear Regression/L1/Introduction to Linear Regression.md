@@ -2,7 +2,6 @@
 
 ## Reading Material: Introduction to Linear Regression
 
----
 # 1. The Goal of Regression: Modeling Statistical Relationships
 
 In many scientific, engineering, business, and social science applications, the primary objective is understanding how variables relate to one another.
@@ -485,7 +484,6 @@ $$
 
 This is a positive relationship.
 
----
 
 If:
 
