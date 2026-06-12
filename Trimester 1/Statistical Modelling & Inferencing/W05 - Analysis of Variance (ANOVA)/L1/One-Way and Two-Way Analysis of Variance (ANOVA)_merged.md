@@ -1,24 +1,24 @@
 ---
 
-## Reading Material: One-Way and Two-Way [Analysis of Variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#analysis-of-variance) (ANOVA)
+## Reading Material: One-Way and Two-Way [Analysis of Variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#analysis-of-variance) (ANOVA)
 
 **Contents**
 
-1. Introduction to [Analysis of Variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#analysis-of-variance) (ANOVA)  
+1. Introduction to [Analysis of Variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#analysis-of-variance) (ANOVA)  
 2. One-Way ANOVA (Single Factor Analysis)  
 2.1 Hypotheses for One-Way ANOVA  
 2.2 Assumptions  
-2.3 [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) 1: Teaching Methods (Significant Result)  
-2.4 [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) 2: Fertilizer Types (Non-Significant Result)   
+2.3 [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) 1: Teaching Methods (Significant Result)  
+2.4 [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) 2: Fertilizer Types (Non-Significant Result)   
 3. Two-Way ANOVA (Two Factor Analysis)  
 3.1 Main Effects and Interaction Effects  
 3.2 Visualizing Interactions  
-3.3 [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) 1: Fertilizer & Plant Variety (Interaction)   
-3.4 [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) 2: Study Method & Time of Day (No Interaction)
+3.3 [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) 1: Fertilizer & Plant Variety (Interaction)   
+3.4 [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) 2: Study Method & Time of Day (No Interaction)
 
-## 1. Introduction to [Analysis of Variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#analysis-of-variance) (ANOVA)
+## 1. Introduction to [Analysis of Variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#analysis-of-variance) (ANOVA)
 
-[Analysis of Variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#analysis-of-variance), commonly called ANOVA, is one of the foundational methods in statistical inference for comparing multiple population means simultaneously.
+[Analysis of Variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#analysis-of-variance), commonly called ANOVA, is one of the foundational methods in statistical inference for comparing multiple population means simultaneously.
 
 The central problem ANOVA addresses is:
 
@@ -49,18 +49,18 @@ P(\text{False Positive})\uparrow\quad\text{as comparisons increase}
 
 ANOVA solves this by evaluating all groups within a single inferential framework.
 
-The primary objective is determining whether observed [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) differences are:
+The primary objective is determining whether observed [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L2/Testing%20Population%20Proportions.md#mean) differences are:
 
 - genuine population differences
     
-- [random sampling](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Reading%20Material%20The%20Chi-Square%20Test%20of%20Independence.md#random-sampling) fluctuations
+- [random sampling](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L2/Reading%20Material%20The%20Chi-Square%20Test%20of%20Independence.md#random-sampling) fluctuations
     
 
 ## 2. The Core Logic of ANOVA
 
-ANOVA is fundamentally a [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#signal)-versus-[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#noise) framework.
+ANOVA is fundamentally a [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#signal)-versus-[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#noise) framework.
 
-The procedure separates [total variability](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#total-variability) into:
+The procedure separates [total variability](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#total-variability) into:
 
 - variability caused by differences between groups
     
@@ -81,14 +81,14 @@ Interpretation:
 
 - large between-group variability suggests treatment effects
     
-- large within-group variability suggests random [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#noise)
+- large within-group variability suggests random [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#noise)
     
 
-ANOVA determines whether the [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#signal) exceeds expected background randomness strongly enough to [reject the null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/The%20Hypothesis%20Testing%20Framework.md#reject-the-null-hypothesis).
+ANOVA determines whether the [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#signal) exceeds expected background randomness strongly enough to [reject the null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L2/The%20Hypothesis%20Testing%20Framework.md#reject-the-null-hypothesis).
 
 ## 3. Why Variance Is Used to Compare Means
 
-The name "[Analysis of Variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#analysis-of-variance)" initially seems confusing because the actual inferential goal is comparing means.
+The name "[Analysis of Variance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#analysis-of-variance)" initially seems confusing because the actual inferential goal is comparing means.
 
 The deeper insight is:
 
@@ -96,7 +96,7 @@ The deeper insight is:
 
 If group means differ substantially, observations from different groups become more spread out overall.
 
-ANOVA therefore uses [variance decomposition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#variance-decomposition) as an indirect method for testing [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) equality.
+ANOVA therefore uses [variance decomposition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md#variance-decomposition) as an indirect method for testing [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L2/Testing%20Population%20Proportions.md#mean) equality.
 
 ## 4. Types of ANOVA
 
@@ -117,10 +117,10 @@ The structure includes:
 
 - one categorical independent variable
     
-- one continuous [response variable](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#response))-variable)
+- one continuous [response variable](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L1/The%20Multiple%20Regression%20Model.md#response))-variable)
     
 
-[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples) include:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08%20-%20Forecasting%20&%20Time%20Series%20Analysis/L0/Time%20Series%20Analysis.md#examples) include:
 
 - teaching method affecting exam scores
     
@@ -131,7 +131,7 @@ The structure includes:
 
 The explanatory variable is called the factor.
 
-The measured outcome is called the [response variable](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#response))-variable).
+The measured outcome is called the [response variable](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L1/The%20Multiple%20Regression%20Model.md#response))-variable).
 
 ## 6. Structure of a One-Way ANOVA
 
@@ -147,7 +147,7 @@ $$
 \mu_1,\mu_2,\dots,\mu_k
 $$
 
-The [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis) states all population means are equal:
+The [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis) states all population means are equal:
 
 $$
 H_0:  
@@ -156,27 +156,27 @@ $$
 
 H_0:\mu_1=\mu_2=\dots=\mu_k
 
-The [alternative hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#alternative-hypothesis) states:
+The [alternative hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#alternative-hypothesis) states:
 
 $$
-\text{At least one population [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) differs}
+\text{At least one population [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L2/Testing%20Population%20Proportions.md#mean) differs}
 $$
 
-\text{At least one population [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) differs}
+\text{At least one population [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L2/Testing%20Population%20Proportions.md#mean) differs}
 
 This is called an omnibus hypothesis because it tests for any overall difference rather than specific pairwise differences.
 
-## 7. Important Insight About the [Alternative Hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#alternative-hypothesis)
+## 7. Important Insight About the [Alternative Hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#alternative-hypothesis)
 
-The [alternative hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#alternative-hypothesis) does NOT claim:
+The [alternative hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#alternative-hypothesis) does NOT claim:
 
 $$
 \mu_1 \ne \mu_2 \ne \mu_3 \ne \dots
 $$
 
-ANOVA only requires that at least one [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) differs.
+ANOVA only requires that at least one [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L2/Testing%20Population%20Proportions.md#mean) differs.
 
-[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples) satisfying the alternative:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08%20-%20Forecasting%20&%20Time%20Series%20Analysis/L0/Time%20Series%20Analysis.md#examples) satisfying the alternative:
 
 - one group differs while others are equal
     
@@ -185,13 +185,13 @@ ANOVA only requires that at least one [mean](https://github.com/Balasubramanian-
 - all groups differ
     
 
-ANOVA detects the existence of [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) differences, not their exact structure.
+ANOVA detects the existence of [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L2/Testing%20Population%20Proportions.md#mean) differences, not their exact structure.
 
 ## 8. Assumptions of One-Way ANOVA
 
 For ANOVA results to be statistically valid, several assumptions should hold.
 
-## 9. [Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence)
+## 9. [Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L0/Linear%20Regression.md#independence)
 
 Observations must be statistically independent.
 
@@ -207,9 +207,9 @@ $$
 
 X_i\perp X_j\quad(i\ne j)
 
-Violations of [independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence) are extremely serious because they invalidate [standard error](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#standard-error) calculations.
+Violations of [independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L0/Linear%20Regression.md#independence) are extremely serious because they invalidate [standard error](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L2/Testing%20Population%20Proportions.md#standard-error) calculations.
 
-[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples) of violations include:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08%20-%20Forecasting%20&%20Time%20Series%20Analysis/L0/Time%20Series%20Analysis.md#examples) of violations include:
 
 - repeated measurements treated as independent
     
@@ -218,11 +218,11 @@ Violations of [independence](https://github.com/Balasubramanian-pg/MSC.-Data-Sci
 - time-series dependence
     
 
-[Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence) is fundamentally a design issue rather than a mathematical issue.
+[Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L0/Linear%20Regression.md#independence) is fundamentally a design issue rather than a mathematical issue.
 
 ## 10. Normality
 
-Within each group, the [response variable](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L1/The%20Multiple%20Regression%20Model.md#response))-variable) should be approximately normally distributed.
+Within each group, the [response variable](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L1/The%20Multiple%20Regression%20Model.md#response))-variable) should be approximately normally distributed.
 
 Formally:
 
@@ -236,7 +236,7 @@ ANOVA is relatively robust to moderate normality violations, especially when sam
 
 However:
 
-- strong [skewness](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#skewness)
+- strong [skewness](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Residual%20Analysis.md#skewness)
     
 - heavy outliers
     
@@ -257,9 +257,9 @@ $$
 
 This assumption is called homoscedasticity.
 
-Large variance differences can distort the [F-statistic](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#f-statistic) and produce unreliable p-values.
+Large variance differences can distort the [F-statistic](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#f-statistic) and produce unreliable p-values.
 
-## 12. [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) 1: Teaching Methods (Significant Result)
+## 12. [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) 1: Teaching Methods (Significant Result)
 
 Suppose a professor compares three teaching methods:
 
@@ -282,7 +282,7 @@ and:
 
 $$
 H_A:  
-\text{At least one [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) differs}
+\text{At least one [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L2/Testing%20Population%20Proportions.md#mean) differs}
 $$
 
 The ANOVA output produces:
@@ -343,7 +343,7 @@ $$
 
 across repeated tests.
 
-## [15. Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#15-[example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example)) 2: Fertilizer Types (Non-Significant Result)
+## [15. Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#15-[example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example)) 2: Fertilizer Types (Non-Significant Result)
 
 Suppose a farmer compares four fertilizer brands:
 
@@ -383,7 +383,7 @@ $$
 H_0
 $$
 
-The data does not provide sufficient evidence that fertilizer type affects [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) crop yield.
+The data does not provide sufficient evidence that fertilizer type affects [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L2/Testing%20Population%20Proportions.md#mean) crop yield.
 
 ## 16. Failure to Reject Does Not Prove Equality
 
@@ -423,7 +423,7 @@ This allows simultaneous analysis of:
 - interaction effects
     
 
-[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples) include:
+[Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08%20-%20Forecasting%20&%20Time%20Series%20Analysis/L0/Time%20Series%20Analysis.md#examples) include:
 
 - fertilizer type and plant variety
     
@@ -436,7 +436,7 @@ This allows simultaneous analysis of:
 
 A main effect measures the independent influence of one factor averaged across levels of the other factor.
 
-For [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
+For [example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
 
 - effect of fertilizer averaged across plant varieties
     
@@ -457,7 +457,7 @@ $$
 
 \text{Effect of Factor A depends on Factor B}
 
-[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
+[Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example):
 
 - a drug works well for adults
     
@@ -476,11 +476,11 @@ The combined effect of variables may be fundamentally different from the sum of 
 
 Many real-world systems exhibit interactions:
 
-- [medicine](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#medicine)
+- [medicine](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#medicine)
     
 - economics
     
-- [education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education)
+- [education](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Variances.md#education)
     
 - marketing
     
@@ -489,11 +489,11 @@ Many real-world systems exhibit interactions:
 - machine learning
     
 
-Ignoring interactions can produce misleading [conclusions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#conclusions).
+Ignoring interactions can produce misleading [conclusions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#conclusions).
 
 ## 21. Visualizing Interactions
 
-Interaction plots provide visual [intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#intuition))).
+Interaction plots provide visual [intuition](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Residual%20Analysis.md#intuition))).
 
 ## Parallel Lines
 
@@ -515,7 +515,7 @@ $$
 
 The effect of one variable changes depending on the other variable.
 
-## 22. [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) 3: Fertilizer and Plant Variety (Interaction Present)
+## 22. [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) 3: Fertilizer and Plant Variety (Interaction Present)
 
 Suppose a botanist studies:
 
@@ -560,7 +560,7 @@ Averaging across plant varieties could misleadingly suggest both fertilizers per
 
 Interactions therefore reveal hidden structure that averages alone may obscure.
 
-## 24. [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) 4: Study Method and Time of Day (No Interaction)
+## 24. [Example](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md#example) 4: Study Method and Time of Day (No Interaction)
 
 Suppose a researcher studies:
 
@@ -606,21 +606,21 @@ $$
 
 \text{Systematic Variability}\quad vs \quad\text{Random Variability}
 
-The [F-statistic](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#f-statistic) operationalizes this comparison:
+The [F-statistic](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#f-statistic) operationalizes this comparison:
 
 ##
 
 $$
 F
 
-[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)  
-\text{[Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#signal)}  
+[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)  
+\text{[Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#signal)}  
 }{  
-\text{[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#noise)}  
+\text{[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#noise)}  
 }
 $$
 
-F=[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\text{[Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#signal)}}{\text{[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#noise)}}
+F=[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\text{[Signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#signal)}}{\text{[Noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#noise)}}
 
 Large F-values indicate that observed group differences exceed what randomness alone would plausibly generate.
 
