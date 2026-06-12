@@ -2,7 +2,6 @@
 
 ## Reading Material: The Least Squares Method in Multiple Regression
 
----
 # Least Squares Estimation in Multiple Linear Regression
 
 # 1. Extending the Least Squares Principle
@@ -27,7 +26,6 @@ $$
 \hat{y} = b_0 + b_1 x  
 $$
 
----
 
 ## Multiple Linear Regression
 
@@ -50,7 +48,6 @@ b_2 x_2
 b_k x_k  
 $$
 
----
 
 # 2. Geometric Interpretation
 
@@ -67,7 +64,6 @@ In higher dimensions:
 
 OLS attempts to place this hyperplane so that it lies as close as possible to the observed data points.
 
----
 
 # 3. What Does “Close” Mean?
 
