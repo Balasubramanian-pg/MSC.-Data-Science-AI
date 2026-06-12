@@ -43,8 +43,8 @@ Data quality refers to the overall utility of a dataset based on how effectively
 
 Formally:
 
-$$  
-\text{Data Quality} \propto \text{Utility of Data}  
+$$
+\text{Data Quality} \propto \text{Utility of Data}
 $$
 
 A dataset has high quality if:
@@ -93,8 +93,8 @@ If the sensors collecting these values malfunction, the resulting dataset become
 
 An inaccurate temperature sensor creates:
 
-$$  
-T_{measured} \neq T_{actual}  
+$$
+T_{measured} \neq T_{actual}
 $$
 
 Once inaccurate values enter the pipeline, downstream predictions also degrade.
@@ -127,8 +127,8 @@ A weather prediction system trained on only 10 days of data will perform poorly 
 
 Mathematically:
 
-$$  
-\text{Prediction Quality} \uparrow \text{ as Historical Coverage} \uparrow  
+$$
+\text{Prediction Quality} \uparrow \text{ as Historical Coverage} \uparrow
 $$
 
 Weather systems often use decades of historical data because atmospheric patterns evolve slowly over time.
@@ -194,8 +194,8 @@ Examples:
 
 In weather prediction:
 
-$$  
-Weather_t \approx f(Weather_{t-1}, Weather_{t-2}, ...)  
+$$
+Weather_t \approx f(Weather_{t-1}, Weather_{t-2}, ...)
 $$
 
 Recent observations strongly influence future predictions.
@@ -245,8 +245,8 @@ Interpretability acts as a human sanity-check layer over automated systems.
 
 A useful mental model:
 
-$$  
-\text{Interpretability} = \text{Human Understandability of Data}  
+$$
+\text{Interpretability} = \text{Human Understandability of Data}
 $$
 
 ## Weather Prediction System Example
@@ -292,14 +292,14 @@ Machine learning models learn statistical relationships from historical data.
 
 Simplified representation:
 
-$$  
-Model = f(Data)  
+$$
+Model = f(Data)
 $$
 
 Therefore:
 
-$$  
-Bad\ Data \Rightarrow Bad\ Model  
+$$
+Bad\ Data \Rightarrow Bad\ Model
 $$
 
 This is the foundation of the famous principle:
@@ -338,8 +338,8 @@ A dataset optimized for logistics may lack innovation-related variables.
 
 Therefore:
 
-$$  
-\text{Data Quality depends on Intended Use}  
+$$
+\text{Data Quality depends on Intended Use}
 $$
 
 This is why the lecture defines quality as:
@@ -388,14 +388,14 @@ The six core dimensions are:
 
 The lecture’s central argument is simple:
 
-$$  
-\text{High Quality Data} \Rightarrow \text{Reliable Predictions}  
+$$
+\text{High Quality Data} \Rightarrow \text{Reliable Predictions}
 $$
 
 while:
 
-$$  
-\text{Poor Quality Data} \Rightarrow \text{Misleading Outcomes}  
+$$
+\text{Poor Quality Data} \Rightarrow \text{Misleading Outcomes}
 $$
 
 The most important practical insight is that data quality is context-dependent. A dataset is only “good” if it supports the intended analytical objective.
