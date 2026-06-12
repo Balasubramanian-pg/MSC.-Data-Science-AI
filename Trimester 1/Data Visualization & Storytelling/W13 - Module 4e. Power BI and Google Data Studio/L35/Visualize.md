@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W13 - Module 4e. Power BI and Google Data Studio - Module 4e. Power BI and Google Data Studio
 ---
 
-
 ## Page 1
 
  
@@ -58,7 +57,6 @@ OK, so what do I need here? I'm again looking at the sales. So I am removing the
 record count and trying to get the sales. But if you don't want to get sales, let us do a 
 calculated field. 
 
-
 ## Page 2
 
  
@@ -109,7 +107,6 @@ so I think this is better.
 You have the. Yeah, and what we have to do is like always remember. Your intuition 
 should follow the actual ordering maximum, we try to always indicate with. 
   
-
 
 ## Page 3
 
@@ -162,7 +159,6 @@ very wide range of dimensions and metrics so that you can allow audience to inte
 them and draw insights that you would be otherwise very difficult to explain in a 
 sequence of visualisations. 
   
-
 
 ## Page 4
 
@@ -217,7 +213,6 @@ I need total calculation also at the end. And I want this to be descending order
 know what is happening at each of these levels. 
   
 
-
 ## Page 5
 
  
@@ -271,7 +266,6 @@ done this. I'm trying to use the maximum space here and it should not look like
 distorted at the end of the day. 
   
 
-
 ## Page 6
 
  
@@ -312,6 +306,5 @@ Thank you.
  
  
 ---------------------------------------------------------End-------------------------------------------------- 
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
