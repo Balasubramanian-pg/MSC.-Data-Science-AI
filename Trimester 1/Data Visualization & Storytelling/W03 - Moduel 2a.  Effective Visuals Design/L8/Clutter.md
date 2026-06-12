@@ -1,6 +1,8 @@
 # Clutter
 
-The pre-attentive attributes used strategically bring more meaning, reduce the clutter  and give a deep impact to the graphic. So we have to remember whenever we are designing a graphic or a visualisation, we have to keep the audience in mind and see how their cognitive abilities are responding to the graphic. In the first case, it is cluttered, very### Addressing Clutter: The Art of Visual Clarity
+The pre-attentive attributes used strategically bring more meaning, reduce the clutter  and give a deep impact to the graphic. So we have to remember whenever we are designing a graphic or a visualisation, we have to keep the audience in mind and see how their cognitive abilities are responding to the graphic. In the first case, it is cluttered, 
+
+### Addressing Clutter: The Art of Visual Clarity
 
 Clutter is the "noise" that prevents your audience from hearing your "signal." In data visualization, it occurs when excessive information, decorative elements, or aggressive use of pre-attentive attributes (like competing colors, bold text, or cramped layouts) fight for the viewer's attention.
 
