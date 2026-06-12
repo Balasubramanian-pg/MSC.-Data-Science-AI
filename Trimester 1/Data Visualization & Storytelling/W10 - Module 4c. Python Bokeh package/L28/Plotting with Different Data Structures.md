@@ -37,7 +37,6 @@ Examples:
 
 This changes how Bokeh handles the axis internally.
 
-
 ## Continuous vs Categorical Axes
 
 ## Continuous Axis
@@ -62,7 +61,6 @@ Bokeh interprets:
 - distances numerically
     
 
-
 ## Categorical Axis
 
 Used for:
@@ -84,7 +82,6 @@ Now:
     
 - not numerical
     
-
 
 ## Why Bar Charts Exist
 
@@ -111,7 +108,6 @@ Bad for:
 - temporal continuity
     
 
-
 ## Fruit Dataset
 
 The transcript defines:
@@ -129,7 +125,6 @@ fruits = [
 counts = [5, 3, 4, 2, 6, 7]
 ```
 
-
 ## Understanding the Data
 
 |Fruit|Count|
@@ -140,7 +135,6 @@ counts = [5, 3, 4, 2, 6, 7]
 |Grapes|2|
 |Nectarines|6|
 |Strawberries|7|
-
 
 ## Key Concept: Categories
 
@@ -161,7 +155,6 @@ Categories are:
 
 not continuous measurements.
 
-
 ## Why `x_range` Matters
 
 This is the most important technical concept in this section.
@@ -173,7 +166,6 @@ x_range=fruits
 ```
 
 inside `figure()`.
-
 
 ## What `x_range` Does
 
@@ -187,7 +179,6 @@ Without this:
 
 - Bokeh expects numeric coordinates.
     
-
 
 ## Important Architectural Insight
 
@@ -207,7 +198,6 @@ instead of:
 - a numeric coordinate system
     
 
-
 ## Mental Model
 
 ## Numeric Axis
@@ -218,7 +208,6 @@ instead of:
 
 Distance matters.
 
-
 ## Categorical Axis
 
 ```text
@@ -227,7 +216,6 @@ Apple   Pear   Plum
 
 Order matters.  
 Distance does not.
-
 
 ## Complete Bar Chart Example
 
@@ -268,7 +256,6 @@ p.vbar(
 show(p)
 ```
 
-
 ## Understanding `vbar()`
 
 The transcript uses:
@@ -282,7 +269,6 @@ This means:
 - vertical bar chart
     
 
-
 ## Important Parameters
 
 |Parameter|Meaning|
@@ -291,7 +277,6 @@ This means:
 |top|bar heights|
 |width|bar thickness|
 |color|bar color|
-
 
 ## Understanding `top`
 
@@ -314,7 +299,6 @@ ends at:
 - y = count value
     
 
-
 ## Visual Intuition
 
 ```text
@@ -329,7 +313,6 @@ ends at:
     A  P   Pl G  N     S
 ```
 
-
 ## Why `width` Matters
 
 The transcript uses:
@@ -343,7 +326,6 @@ Controls:
 - bar thickness
     
 
-
 ## Width Interpretation
 
 |Width|Result|
@@ -351,7 +333,6 @@ Controls:
 |0.2|thin bars|
 |0.6|balanced|
 |1.0|touching bars|
-
 
 ## Why Color Matters
 
@@ -368,7 +349,6 @@ Bokeh supports:
 - hex colors
     
 
-
 ## Why Bar Charts Are Powerful
 
 Bar charts are extremely effective because humans compare:
@@ -384,7 +364,6 @@ This makes bar charts excellent for:
 
 - category comparison
     
-
 
 ## Business Intelligence Connection
 
@@ -405,7 +384,6 @@ Examples:
 - flights by airline
     
 
-
 ## Seaborn Connection
 
 The transcript references:
@@ -421,7 +399,6 @@ The transcript references:
 
 These are categorical variables.
 
-
 ## Typical Categorical Variables
 
 |Variable|Categories|
@@ -430,7 +407,6 @@ These are categorical variables.
 |Smoker|Yes/No|
 |Day|Mon/Tue/Wed|
 |Product|A/B/C|
-
 
 ## Why Categorical Data Needs Different Handling
 
@@ -456,7 +432,6 @@ Apple - Pear
 
 has no mathematical meaning.
 
-
 ## Internal Bokeh Representation
 
 When using:
@@ -480,7 +455,6 @@ This manages:
 - rendering
     
 
-
 ## Important Insight About Ordering
 
 Transcript says:
@@ -493,7 +467,6 @@ Categorical order affects interpretation.
 
 Different orders tell different stories.
 
-
 ## Example Orders
 
 ## Alphabetical
@@ -504,7 +477,6 @@ Grape
 Pear
 ```
 
-
 ## Frequency-Based
 
 ```text
@@ -512,7 +484,6 @@ Most common → least common
 ```
 
 Usually more insightful.
-
 
 ## Combining Categorical + Numerical
 
@@ -523,7 +494,6 @@ Category
     →
 Numerical aggregation
 ```
-
 
 ## Common Beginner Mistakes
 
@@ -537,7 +507,6 @@ figure()
 
 with string categories often fails or behaves incorrectly.
 
-
 ## Mismatched Data Lengths
 
 Wrong:
@@ -548,7 +517,6 @@ counts = [1]
 ```
 
 Must match lengths.
-
 
 ## Too Many Categories
 
@@ -566,11 +534,9 @@ Alternatives:
 - treemaps
     
 
-
 ## Random Color Usage
 
 Avoid assigning random colors without meaning.
-
 
 ## Advanced Insight
 
@@ -591,7 +557,6 @@ Everything in Bokeh is still:
 
 even bars.
 
-
 ## Machine Learning Connection
 
 Categorical visualization is heavily used in ML for:
@@ -605,7 +570,6 @@ Categorical visualization is heavily used in ML for:
 - confusion matrices
     
 
-
 ## Mental Model
 
 ```text
@@ -618,7 +582,6 @@ Bar Glyphs
 Interactive Comparison
 ```
 
-
 ## Most Important Concept Here
 
 The key idea is:
@@ -630,7 +593,6 @@ to categorical.
 ```
 
 That is the architectural shift enabling categorical plotting.
-
 
 ## Final Takeaways
 
@@ -647,7 +609,6 @@ p.vbar(
 show(p)
 ```
 
-
 ## Important Concepts
 
 |Concept|Meaning|
@@ -656,7 +617,6 @@ show(p)
 |vbar|vertical bar glyph|
 |top|bar height|
 |width|bar thickness|
-
 
 ## Key Visualization Principle
 
