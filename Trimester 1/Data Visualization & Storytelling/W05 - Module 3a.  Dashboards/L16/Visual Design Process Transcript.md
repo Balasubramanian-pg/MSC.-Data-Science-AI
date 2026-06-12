@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W05 - Module 3a.  Dashboards
 ---
 
-
 ## Page 1
 
  
@@ -58,7 +57,6 @@ these things would require higher pixels. So, use lesser ink for a visual, use l
 pixels for a dashboard. 
   
 
-
 ## Page 2
 
  
@@ -111,7 +109,6 @@ mean you use only colour. A plain background gives the best contrast when you wa
 to highlight a particular area in the graph. 
   
 
-
 ## Page 3
 
  
@@ -163,7 +160,6 @@ other important elements from those areas so that the overall effectiveness of y
 visual improves. Finally, we have seen the use of various visual attributes to enhance 
 the effectiveness of visuals. These are taken from your pre-attentive attributes lesson. 
   
-
 
 ## Page 4
 
@@ -218,7 +214,6 @@ the graphic at the lower and the OECD average is indicated in a different colour
 distinguishing the countries below the average and the above the average. 
   
 
-
 ## Page 5
 
  
@@ -257,6 +252,5 @@ try to improve the effectiveness and expressiveness of your dashboard.
 ------------------------------------------------------End----------------------------------------------------- 
  
  
-
 
 Tags: #statistics #machine-learning #data-science #statistical-modelling
