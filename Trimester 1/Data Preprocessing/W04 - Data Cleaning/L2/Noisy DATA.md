@@ -47,8 +47,8 @@ Noise represents distortion in the original measured value.
 
 Mathematically:
 
-$$  
-X_{observed} = X_{true} + \epsilon  
+$$
+X_{observed} = X_{true} + \epsilon
 $$
 
 where:
@@ -256,12 +256,12 @@ Boundaries:
 
 Now evaluate 8:
 
-$$  
-|8-4| = 4  
+$$
+|8-4| = 4
 $$
 
-$$  
-|15-8| = 7  
+$$
+|15-8| = 7
 $$
 
 Since 8 is closer to 4, it gets replaced with 4.
@@ -283,8 +283,8 @@ The lecture uses age and salary as an example.
 
 A domain expert may identify a relationship:
 
-$$  
-y = x + 1  
+$$
+y = x + 1
 $$
 
 where:
