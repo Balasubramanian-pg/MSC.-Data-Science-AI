@@ -164,7 +164,6 @@ In your role as a **Senior SQL Engineer and Data Mentor**, you are the architect
 
 **You have moved from the "what" and "why" to the "how" of design. Would you like to deep-dive into "preattentive attributes"—the specific visual properties like color, size, and position that grab human attention first—or shall we discuss how to apply these design concepts to a dashboard you are currently building?**
 
-
 ### Plotting with Purpose: Matching Visuals to Insights
 
 To be an effective communicator, you must stop thinking about "which chart I like" and start thinking about **"what is the specific communication task?"** Matching the method to the purpose is what separates a dashboard that sits idle from one that drives strategic decisions.
