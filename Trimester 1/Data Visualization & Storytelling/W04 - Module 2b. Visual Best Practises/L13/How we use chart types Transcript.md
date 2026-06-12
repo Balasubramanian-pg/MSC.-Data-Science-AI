@@ -751,7 +751,6 @@ making language visually computable for human cognition
 
 rather than merely displaying words.
 
-
 ## Advanced Text Visualization
 
 ## Character Relationships, Semantic Structures, and Sentiment Analysis
@@ -2139,7 +2138,6 @@ mapping emotional geometry hidden inside language
 ```
 
 into perceptually interpretable structures.
-
 
 ## Joint Plot Distribution Analysis and Conversational Network Visualization
 
