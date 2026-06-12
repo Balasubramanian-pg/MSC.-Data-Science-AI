@@ -6,7 +6,7 @@ week: W03 - Estimation And Hypothesis Testing
 
 ### Module 3: Statistical Inference in Modelling
 
-This module transitions from descriptive statistics to **Inferential Statistics**, the formal framework for making rigorous, data-driven [conclusions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#conclusions) about a population parameter ($\theta$) using data from a limited sample ($n$).
+This module transitions from descriptive statistics to **Inferential Statistics**, the formal framework for making rigorous, data-driven [conclusions](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md#conclusions) about a population parameter ($\theta$) using data from a limited sample ($n$).
 
 #### 1. Core Objectives
 
@@ -25,7 +25,7 @@ Rather than a point estimate (a "spear"), we use a "net" to capture the true par
     
 
 $$
-CI = \bar{x} \pm Z_{\alpha/2} \left( [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\sigma}{\sqrt{n}} \right)
+CI = \bar{x} \pm Z_{\alpha/2} \left( [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\sigma}{\sqrt{n}} \right)
 $$
 
     
@@ -55,21 +55,21 @@ ci = stats.t.interval(0.95, df=n-1, loc=mean, scale=std_err)
 print(f"Confidence Interval: {ci}")
 ```
 
-#### [3. Hypothesis Testing Framework](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L0/Inference%20%26%20Modelling.md#3-hypothesis-testing-framework)
+#### [3. Hypothesis Testing Framework](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01%20-%20Basic%20Probability%20&%20Statistics/L0/Inference%20%26%20Modelling.md#3-hypothesis-testing-framework)
 
 A formal courtroom-like procedure to evaluate status quo claims.
 
-- **[Null Hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis) ($H_0$):** The "no effect" baseline.
+- **[Null Hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis) ($H_0$):** The "no effect" baseline.
     
-- **[Alternative Hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#alternative-hypothesis) ($H_a$):** The effect you are attempting to prove.
+- **[Alternative Hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#alternative-hypothesis) ($H_a$):** The effect you are attempting to prove.
     
 - **Significance Level ($\alpha$):** The threshold for Type I Error (False Positive) risk.
     
-- **Test Statistic:** Standardizes the difference relative to [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#noise).
+- **Test Statistic:** Standardizes the difference relative to [noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md#noise).
     
 
 $$
-Z = [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\bar{x} - \mu_0}{\sigma / \sqrt{n}}
+Z = [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)\bar{x} - \mu_0}{\sigma / \sqrt{n}}
 $$
 
     
@@ -84,11 +84,11 @@ graph TD
     E -- No --> G[Fail to Reject Null Hypothesis H0]
 ```
 
-#### 4. [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01 - Basic Probability & Statistics/L2/Reading%202%20Parametric%20vs.%20Non-Parametric%20Methods.md#summary)) of Key Constraints & Traps
+#### 4. [Summary](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W01%20-%20Basic%20Probability%20&%20Statistics/L2/Reading%202%20Parametric%20vs.%20Non-Parametric%20Methods.md#summary)) of Key Constraints & Traps
 
-- **The Probability Fallacy:** A 95% CI does **not** [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) there is a 95% probability the true parameter is inside your specific interval; it means the _procedure_ captures the true parameter 95% of the time in the long run.
+- **The Probability Fallacy:** A 95% CI does **not** [mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04%20-%20Estimation%20And%20Hypothesis%20Testing%20Cont/L2/Testing%20Population%20Proportions.md#mean) there is a 95% probability the true parameter is inside your specific interval; it means the _procedure_ captures the true parameter 95% of the time in the long run.
     
-- **Statistical vs. [Practical Significance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#practical-significance):** With massive sample sizes ($n \to \infty$), even trivial differences become statistically significant ($p < 0.05$); always evaluate **Effect Size** (e.g., Cohen's $d$) for business impact.
+- **Statistical vs. [Practical Significance](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03%20-%20Estimation%20And%20Hypothesis%20Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#practical-significance):** With massive sample sizes ($n \to \infty$), even trivial differences become statistically significant ($p < 0.05$); always evaluate **Effect Size** (e.g., Cohen's $d$) for business impact.
     
 - **Type I vs. Type II Errors:**
     
