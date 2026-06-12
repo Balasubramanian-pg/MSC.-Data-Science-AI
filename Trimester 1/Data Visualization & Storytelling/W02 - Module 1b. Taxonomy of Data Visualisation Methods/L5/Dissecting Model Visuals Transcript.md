@@ -8,7 +8,6 @@ week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
 
 Dissecting model visuals is the practice of analyzing well-designed visualizations to understand **why** specific design choices were made. The goal is to identify how changes in layout, axis management, color selection, and hierarchy transform a basic chart into an effective communication tool that drives quick, intuitive decision-making.
 
----
 
 ### **Visual Dissection & Optimization Process**
 
@@ -39,7 +38,6 @@ graph TD
     Action4 --> Success
 ```
 
----
 
 ### **Four Case Studies in Visual Dissection**
 
@@ -50,7 +48,6 @@ graph TD
     *   **Visual Benchmarks:** A clear, horizontal bar marks the \$50,000 goal, making the "gap to target" instantly recognizable.
     *   **Strategic Labeling:** A specific data callout (\$33,967) is placed at the end of the current year's segment to show exactly where the team stands today compared to last year's performance at the exact same point in time (which was under \$20,000).
 
----
 
 #### **Case Study 2: Highlighted Stacked Bar Chart (Project Attainment)**
 *   **Context:** Tracking project outcomes categorized by whether they missed, met, or exceeded targets.
@@ -59,7 +56,6 @@ graph TD
     *   **Contextual Callouts:** A dedicated text insert is placed near the visual to explain that in Q23, 42% (or roughly one-third) of the projects missed their targets, aligning the text color directly with the highlighted segment.
     *   **Footnote Offloading:** Raw project quantities are moved to a footnote. Since a stacked bar chart converts segments into visual percentages, placing raw volumes in the main chart causes clutter. Moving them to the footnote keeps the visual clean while maintaining accessibility for those who need the exact numbers.
 
----
 
 #### **Case Study 3: Bidirectional Flow Chart (HR Director Planning)**
 *   **Context:** A 5-year outlook of director-level headcount to identify unmet hiring gaps, accounting for losses (attrition) and additions (promotions/acquisitions).
@@ -69,7 +65,6 @@ graph TD
     *   **Color Consistency:** Distinct, meaningful colors are applied—blue for attrition, green for additions, and black for the unmet resource gap.
     *   **Direct Labeling:** The exact unmet gap values are labeled prominently at the top to immediately capture the attention of board members and HR planners.
 
----
 
 #### **Case Study 4: Horizontal Stacked Bars (Developmental Priorities Survey)**
 *   **Context:** Ranking the top 15 development priorities based on a survey of 4,000 participants.
@@ -79,7 +74,6 @@ graph TD
     *   **Color Cohesion:** The top three priorities are highlighted in unique colors that are used both for the text callout and the bars themselves, reinforcing their high priority.
     *   **Contextual Footnote:** Complex survey context and methodology details are placed in a footnote to preserve clean aesthetics while ensuring the chart remains credible and accessible.
 
----
 
 ### **Key Takeaways for Designing Model Visuals**
 
