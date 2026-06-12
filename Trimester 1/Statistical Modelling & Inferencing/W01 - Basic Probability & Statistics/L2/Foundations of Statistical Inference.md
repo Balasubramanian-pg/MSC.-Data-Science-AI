@@ -47,7 +47,9 @@ Point estimates are inherently imprecise. Confidence Intervals (CI) quantify thi
 
 #### 4.1 Confidence Interval Structure
 
-$$\text{CI} = \text{Point Estimate} \pm (\text{Critical Value} \times \text{Standard Error})$$
+$$
+\text{CI} = \text{Point Estimate} \pm (\text{Critical Value} \times \text{Standard Error})
+$$
 
 #### 4.2 Selection of Distribution
 
