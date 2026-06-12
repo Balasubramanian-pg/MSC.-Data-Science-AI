@@ -15,7 +15,7 @@ A machine learning algorithm mathematically optimizes a cost function over a def
 > [!IMPORTANT]
 > Applied machine learning is fundamentally about representation. Better features will always beat better algorithms. A simple linear regression on a perfectly engineered feature space will outperform a deep neural network operating on noisy, unscaled, and uninformative raw data.
 
-## [2. Intuition and Real-World Analogy](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W02 - Handling Numeric Data/Readme.md#2-intuition-and-real-world-analogy)
+## [2. Intuition and Real-World Analogy](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W02%20-%20Handling%20Numeric%20Data/Readme.md#2-intuition-and-real-world-analogy)
 
 Consider the task of identifying whether a building will collapse during an earthquake.
 
@@ -32,7 +32,7 @@ By doing this, you expose the "grain" of the problem to the algorithm.
 
 ## 3. Mathematical Foundations of the Feature Space
 
-Mathematically, a raw [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03 - General Feature Engineering Techniques/Experiential%20Learning%20Activity.md#dataset) $\mathcal{D}$ consists of $N$ observations, where each observation $x_i$ exists in an arbitrary space $\mathcal{X}_{raw}$.
+Mathematically, a raw [dataset](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W03%20-%20General%20Feature%20Engineering%20Techniques/Experiential%20Learning%20Activity.md#dataset) $\mathcal{D}$ consists of $N$ observations, where each observation $x_i$ exists in an arbitrary space $\mathcal{X}_{raw}$.
 
 Feature engineering is a mapping function $\Phi$:
 
@@ -306,7 +306,7 @@ simulate_curse_of_dimensionality()
 - **Sparse Matrices:** When creating OHE variables, most values are `0`. Using NumPy dense arrays wastes RAM. Use SciPy's `csr_matrix` or Pandas `SparseDtype` to hold data in memory efficiently.
 - **Vectorization:** Never write `for` loops in Python to engineer features over rows. Rely strictly on Pandas/NumPy vectorized operations (C-level execution) which are orders of magnitude faster.
 
-## [12. Interview-Style Insights](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W04 - Dimensionality Reduction Techniques/Readme.md#12-interview-style-insights)
+## [12. Interview-Style Insights](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W04%20-%20Dimensionality%20Reduction%20Techniques/Readme.md#12-interview-style-insights)
 
 **Q: Why would you use L1 regularization (Lasso) over L2 (Ridge) during feature engineering?**
 **A:** L1 regularization penalizes the absolute value of the weights ($\sum |\theta|$). Because of the geometry of the L1 penalty (a diamond shape in 2D), the gradient descent trajectory hits the corners of the constraint space, driving coefficients of irrelevant features to exactly zero. Therefore, Lasso acts as a built-in *feature selection* mechanism, whereas L2 only shrinks them towards zero but rarely makes them exactly zero.
@@ -317,7 +317,7 @@ $$X_{sin} = \sin(2\pi \frac{\text{hour}}{24})$$
 $$X_{cos} = \cos(2\pi \frac{\text{hour}}{24})$$
 This preserves the cyclical proximity for the model.
 
-## [13. Final Takeaways](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W04 - Dimensionality Reduction Techniques/Readme.md#13-final-takeaways) and Learning Roadmap
+## [13. Final Takeaways](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W04%20-%20Dimensionality%20Reduction%20Techniques/Readme.md#13-final-takeaways) and Learning Roadmap
 
 ### Key Takeaways
 1. Feature engineering is the transformation of raw data into a mathematical representation that aligns with an algorithm's optimization geometry.
@@ -325,10 +325,10 @@ This preserves the cyclical proximity for the model.
 3. Beware the Curse of Dimensionality: adding noise masquerading as features destroys distance metrics and exponentially increases sparsity.
 4. Pipeline hygiene (avoiding data leakage during imputation/scaling) is the mark of a senior engineer.
 
-### [Mental Models](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W02 - Handling Numeric Data/Readme.md#mental-models)
+### [Mental Models](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W02%20-%20Handling%20Numeric%20Data/Readme.md#mental-models)
 - **The Signal-to-Noise Ratio (SNR):** Every feature you add brings a certain amount of signal (Mutual Information with target) and a certain amount of noise (variance, collinearity). Only add a feature if $\Delta \text{Signal} > \Delta \text{Noise}$.
 
-### [Advanced Learning Roadmap](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W02 - Handling Numeric Data/Readme.md#advanced-learning-roadmap)
+### [Advanced Learning Roadmap](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W02%20-%20Handling%20Numeric%20Data/Readme.md#advanced-learning-roadmap)
 To master feature engineering, proceed to study:
 1. **Advanced Embeddings:** Using Neural Networks (Word2Vec, Graph Neural Networks) to automatically learn dense feature representations.
 2. **Automated Feature Engineering:** Deep Feature Synthesis (e.g., Featuretools library).
