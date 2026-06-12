@@ -1,4 +1,3 @@
-
 ## 1. What We Are Building Toward
 
 Before diving into distributions, understand the chain of reasoning:
@@ -126,16 +125,19 @@ F(x) = P(X \leq x)
 $$
 
 **Discrete:**
+
 $$
 F(x) = \sum_{x_i \leq x} P(X = x_i)
 $$
 
 **Continuous:**
+
 $$
 F(x) = \int_{-\infty}^{x} f(t) \, dt
 $$
 
 **Why CDF matters:** It always gives a true probability (between 0 and 1), works for both types of variables, and makes "greater than" questions easy:
+
 $$
 P(X > x) = 1 - F(x)
 $$
@@ -161,6 +163,7 @@ $$
 Where $\binom{n}{k} = \frac{n!}{k!(n-k)!}$ counts the number of ways to get $k$ successes in $n$ trials.
 
 **Coin flip intuition:** Flip a fair coin 10 times. The probability of exactly 6 heads is:
+
 $$
 P(X=6) = \binom{10}{6} \left(\frac{1}{2}\right)^6 \left(\frac{1}{2}\right)^4 = 210 \cdot \frac{1}{1024} \approx 0.205
 $$
