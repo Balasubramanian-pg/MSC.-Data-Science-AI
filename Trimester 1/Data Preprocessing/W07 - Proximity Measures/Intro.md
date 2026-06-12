@@ -6,7 +6,6 @@ week: W07 - Proximity Measures
 
 ## Week 7: Proximity Measures
 
-
 **Module Description**
 
 This module provides a comprehensive overview of proximity measures used to quantify the similarity or dissimilarity between data objects. Learners will explore measures for nominal, binary, ordinal, numerical, and mixed-type attributes, as well as advanced similarity measures like cosine and Jaccard. The module also covers the application of these measures in clustering, classification, and recommendation systems. Mastery of proximity measures is essential for effective data mining and pattern recognition.
