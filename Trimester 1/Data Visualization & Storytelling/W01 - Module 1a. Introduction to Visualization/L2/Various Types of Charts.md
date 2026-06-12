@@ -57,7 +57,6 @@ Source Transcript:
 10. [Golden Rules of Effective Chart Design](https://chatgpt.com/g/g-p-6a0d41583fe88191a2893b540108b3b5-msc-data-science/c/6a10ae9f-5308-8321-80ea-23d7426ab7ae#10-golden-rules-of-effective-chart-design)
     
 
-
 ## 1. Introduction to Chart Selection
 
 ## 1.1 Why Choosing the Right Chart Matters
@@ -79,7 +78,6 @@ A visualization can fail even if the underlying data is correct because:
 
 The lecture frames chart selection as a decision-making problem rather than a cosmetic one.
 
-
 ## 1.2 Visualization as Purpose-Driven Communication
 
 The instructor repeatedly emphasizes:
@@ -98,7 +96,6 @@ The lecture categorizes visualizations into four major purposes:
 |Relationship|Explore connections between variables|
 
 This framework is foundational in Business Intelligence and Analytics.
-
 
 ## 2. Understanding Variable Types Before Charting
 
@@ -125,7 +122,6 @@ Before selecting charts, it is critical to understand the underlying data struct
     
 - Stacked bar chart
     
-
 
 ## 2.2 Numerical Variables
 
@@ -164,7 +160,6 @@ Countable integers.
 - Bubble chart
     
 
-
 ## 2.3 Binary and Sentiment Variables
 
 The lecture introduces sentiment categories:
@@ -186,7 +181,6 @@ These are effectively categorical sentiment buckets.
     
 - Bubble chart
     
-
 
 ## 2.4 Relationship Variables
 
@@ -210,7 +204,6 @@ Relationship charts require:
 - Complaint count vs issue type
     
 
-
 ## 3. Comparison Charts
 
 ## 3.1 Purpose of Comparison Charts
@@ -230,7 +223,6 @@ The lecture explains comparison as:
 - benchmarking
     
 
-
 ## Example from Lecture
 
 Election turnout comparison:
@@ -242,7 +234,6 @@ Election turnout comparison:
 - Highest vs lowest turnout
     
 
-
 ## 3.2 Vertical Bar Charts
 
 ## Structure
@@ -253,7 +244,6 @@ Election turnout comparison:
 |Y-axis|Quantitative measure|
 
 Bar length represents magnitude.
-
 
 ## Example from Lecture
 
@@ -271,7 +261,6 @@ The visual immediately communicates:
 Negative sentiment dominates airline feedback.
 ```
 
-
 ## Business Insight
 
 An airline can immediately infer:
@@ -282,7 +271,6 @@ An airline can immediately infer:
     
 - reputation management needs attention
     
-
 
 ## 3.3 Horizontal Bar Charts
 
@@ -302,7 +290,6 @@ The lecture uses:
 - customer service issues
     
 
-
 ## Key Insight from Lecture
 
 ```text
@@ -310,7 +297,6 @@ Customer service issues generated the highest negative feedback.
 ```
 
 This is a direct business decision insight.
-
 
 ## Business Decision Enabled
 
@@ -322,7 +308,6 @@ The company can:
     
 - reduce complaint volume
     
-
 
 ## 3.4 Stacked Bar Charts
 
@@ -338,7 +323,6 @@ These are useful when comparing:
 - internal composition simultaneously
     
 
-
 ## Example Use Cases
 
 - Sales by region and product
@@ -347,7 +331,6 @@ These are useful when comparing:
     
 - Revenue contribution by segment
     
-
 
 ## 3.5 Business Insights from Comparison Charts
 
@@ -361,7 +344,6 @@ Comparison charts help organizations:
     
 - detect outliers
     
-
 
 ## 4. Distribution Charts
 
@@ -380,7 +362,6 @@ The lecture gives examples:
 - weight distribution of cars
     
 
-
 ## Key Questions Distribution Answers
 
 - Where is the average?
@@ -392,7 +373,6 @@ The lecture gives examples:
 - Is the distribution skewed?
     
 
-
 ## 4.2 Histograms
 
 A **histogram** groups values into bins.
@@ -402,13 +382,11 @@ The lecture example analyzes:
 - tweet word counts
     
 
-
 ## Example from Lecture
 
 ```text
 ~800 tweets contained 20–25 words.
 ```
-
 
 ## Interpretation
 
@@ -419,7 +397,6 @@ Most customer complaints fall within:
 ```
 
 This becomes operationally valuable.
-
 
 ## Business Insight
 
@@ -434,7 +411,6 @@ The company can design:
 
 around average complaint lengths.
 
-
 ## Real Operational Decision
 
 The lecture suggests:
@@ -444,7 +420,6 @@ Allow roughly 30-word text inputs.
 ```
 
 This accommodates most users without excessive interface friction.
-
 
 ## 4.3 Scatter Plots for Distribution
 
@@ -461,7 +436,6 @@ Scatter plots help reveal:
 
 They are especially useful in exploratory analytics.
 
-
 ## 4.4 Business Decisions from Distribution Analysis
 
 Distribution charts help businesses:
@@ -471,7 +445,6 @@ Distribution charts help businesses:
 |Most complaints are short|Optimize chatbot UI|
 |Weight clusters in car market|Focus product manufacturing|
 |Customer clusters|Segment customers|
-
 
 ## 5. Composition Charts
 
@@ -483,14 +456,12 @@ Composition answers:
 How much does each part contribute to the whole?
 ```
 
-
 ## Examples from Lecture
 
 - Student marks across subjects
     
 - Sentiment share across airline feedback
     
-
 
 ## 5.2 Pie Charts
 
@@ -501,7 +472,6 @@ The lecture uses:
 - airline sentiment composition
     
 
-
 ## Example Insight
 
 The pie chart immediately reveals:
@@ -509,7 +479,6 @@ The pie chart immediately reveals:
 ```text
 Negative sentiment forms the largest share.
 ```
-
 
 ## Business Insight
 
@@ -521,7 +490,6 @@ Executives can quickly assess:
     
 - crisis severity
     
-
 
 ## 5.3 Stacked Composition Analysis
 
@@ -538,7 +506,6 @@ Total negative sentiment
 
 This supports root-cause analysis.
 
-
 ## 5.4 Business Insights from Composition
 
 Composition charts help answer:
@@ -549,7 +516,6 @@ Composition charts help answer:
     
 - Where should investment focus?
     
-
 
 ## 6. Relationship Charts
 
@@ -562,7 +528,6 @@ The lecture highlights:
 ```text
 Visualization helps uncover hidden patterns.
 ```
-
 
 ## 6.2 Scatter Plots
 
@@ -577,18 +542,15 @@ Scatter plots reveal:
 - outliers
     
 
-
 ## Correlation Formula
 
 r=\frac{Cov(X,Y)}{\sigma_X\sigma_Y}
-
 
 ## Critical Warning
 
 > Correlation does not imply causation.
 
 Two variables moving together does not prove one causes the other.
-
 
 ## 6.3 Bubble Charts
 
@@ -597,7 +559,6 @@ Bubble charts extend scatter plots by adding:
 ```text
 Bubble Size = Third Variable
 ```
-
 
 ## Example from Lecture
 
@@ -609,7 +570,6 @@ Variables represented:
 |Bubble size|Number of complaints|
 |Position|Complaint category|
 
-
 ## Key Insight
 
 The lecture identifies:
@@ -617,7 +577,6 @@ The lecture identifies:
 ```text
 Customer service issues dominate negative sentiment.
 ```
-
 
 ## Gestalt Principle Mentioned
 
@@ -631,7 +590,6 @@ This immediately communicates:
 Negative sentiment dominates.
 ```
 
-
 ## Business Insight
 
 Bubble charts are excellent for:
@@ -643,11 +601,9 @@ Bubble charts are excellent for:
 - anomaly detection
     
 
-
 ## 6.4 Word Clouds
 
 The lecture introduces **word clouds** for text analysis.
-
 
 ## How Word Clouds Work
 
@@ -663,7 +619,6 @@ Larger words represent:
 Higher frequency
 ```
 
-
 ## Example from Lecture
 
 Repeated phrase:
@@ -673,7 +628,6 @@ Repeated phrase:
 ```
 
 signals negative sentiment.
-
 
 ## Important Analytical Distinction
 
@@ -694,7 +648,6 @@ This makes word clouds:
 - scalable
     
 
-
 ## 6.5 Business Insights from Relationship Charts
 
 Relationship charts support:
@@ -705,7 +658,6 @@ Relationship charts support:
 |Trend discovery|Complaint clusters|
 |Sentiment analysis|Positive vs negative language|
 |Resource prioritization|High-frequency complaint areas|
-
 
 ## 7. Text Analytics and Sentiment Visualization
 
@@ -724,7 +676,6 @@ A single tweet may contain:
 
 This introduces ambiguity into labeling.
 
-
 ## 7.2 Objective vs Subjective Classification
 
 ## Subjective Classification
@@ -736,7 +687,6 @@ Positive / Neutral / Negative
 ```
 
 can vary.
-
 
 ## Objective Classification
 
@@ -750,26 +700,21 @@ Example:
 
 can consistently signal negative sentiment.
 
-
 ## 8. Common Visualization Mistakes
 
 The lecture concludes with practical mistakes to avoid.
-
 
 ## 1. Cluttered Charts
 
 Too much information creates cognitive overload.
 
-
 ## 2. Excessive Plotting
 
 Too many points reduce interpretability.
 
-
 ## 3. Missing Labels
 
 Axes must always be labeled.
-
 
 ## 4. Improper Scaling
 
@@ -779,16 +724,13 @@ Poor scaling distorts trends.
 
 Compressed axes can exaggerate variation.
 
-
 ## 5. Wrong Chart Selection
 
 Incorrect chart types confuse the audience.
 
-
 ## 6. Ignoring the Intended Message
 
 Charts should communicate insight, not merely display data.
-
 
 ## 9. Visualization Decision Framework
 
@@ -822,7 +764,6 @@ What is your analytical objective?
 └── Show geographic patterns?
     └── Maps / Choropleths
 ```
-
 
 ## 10. Golden Rules of Effective Chart Design
 
