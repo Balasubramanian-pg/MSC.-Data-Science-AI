@@ -46,7 +46,6 @@ Source Transcript:
 9. [Golden Rules for Effective Visual Analysis](https://chatgpt.com/g/g-p-6a0d41583fe88191a2893b540108b3b5-msc-data-science/c/6a10ae9f-5308-8321-80ea-23d7426ab7ae#9-golden-rules-for-effective-visual-analysis)
     
 
----
 
 ## 1. Introduction to Exploratory and Explanatory Analysis
 
@@ -74,7 +73,6 @@ This is important because visualization is not merely technical chart creation. 
 - shaping decisions
     
 
----
 
 ## 1.2 Visualization as a Philosophical Process
 
@@ -104,7 +102,6 @@ Many analysts fail because they:
 - confuse presentation with analysis
     
 
----
 
 ## 2. Understanding Exploratory Analysis
 
@@ -125,7 +122,6 @@ The lecture describes EDA as:
 - checking integrity
     
 
----
 
 ## Core Objective of EDA
 
@@ -135,7 +131,6 @@ Understand what the data is trying to tell you.
 
 This is one of the most important ideas in analytics.
 
----
 
 ## 2.2 Goals of Exploratory Data Analysis (EDA)
 
@@ -152,7 +147,6 @@ The lecture identifies several objectives of EDA.
 |Discover patterns|Generate insights|
 |Detect relationships|Support future storytelling|
 
----
 
 ## EDA is the Foundation of Visualization
 
@@ -169,7 +163,6 @@ Without EDA:
 - storytelling becomes weak
     
 
----
 
 ## 2.3 Questions Asked During EDA
 
@@ -211,13 +204,11 @@ The instructor emphasizes that EDA is fundamentally about asking questions.
 - Can meaningful relationships be tested?
     
 
----
 
 ## 2.4 Variables, Structure, and Integrity
 
 The lecture highlights several critical aspects of EDA.
 
----
 
 ## Variable Identification
 
@@ -229,7 +220,6 @@ Example variables:
 |Voter turnout ratio|Numerical continuous|
 |Number of voters|Numerical discrete|
 
----
 
 ## Integrity Checking
 
@@ -244,7 +234,6 @@ EDA involves validating:
 - inconsistent entries
     
 
----
 
 ## Formula Example: Missing Percentage
 
@@ -252,7 +241,6 @@ A common EDA metric.
 
 \text{Missing Percentage}=\frac{\text{Missing Values}}{\text{Total Values}}\times100
 
----
 
 ## Formula Example: Outlier Detection Using IQR
 
@@ -265,7 +253,6 @@ Lower Bound = Q1 - 1.5 × IQR
 Upper Bound = Q3 + 1.5 × IQR
 ```
 
----
 
 ## Business Insight
 
@@ -278,7 +265,6 @@ Poor data integrity leads to:
 - flawed strategic decisions
     
 
----
 
 ## 2.5 Exploratory Analysis and Data Diversity
 
@@ -288,7 +274,6 @@ The instructor states:
 
 > Richer datasets enable deeper analysis.
 
----
 
 ## Why Diversity Matters
 
@@ -301,7 +286,6 @@ If data lacks diversity:
 - conclusions become fragile
     
 
----
 
 ## Example
 
@@ -333,7 +317,6 @@ The second dataset supports:
 - policy recommendations
     
 
----
 
 ## Business Insight
 
@@ -348,7 +331,6 @@ Organizations that collect richer datasets gain:
 - better strategic decision-making
     
 
----
 
 ## 3. Understanding Explanatory Analysis
 
@@ -360,7 +342,6 @@ The lecture describes explanatory analysis as:
 
 > building on exploratory analysis to explain insights.
 
----
 
 ## Core Objective
 
@@ -368,7 +349,6 @@ The lecture describes explanatory analysis as:
 Drive home a specific insight or narrative.
 ```
 
----
 
 ## 3.2 From Insight Discovery to Storytelling
 
@@ -385,7 +365,6 @@ Explanatory analysis transforms those patterns into:
 - business stories
     
 
----
 
 ## Exploratory vs Explanatory Mindset
 
@@ -397,7 +376,6 @@ Explanatory analysis transforms those patterns into:
 |Analyst-focused|Audience-focused|
 |Flexible|Structured|
 
----
 
 ## Important Distinction
 
@@ -413,7 +391,6 @@ Explanatory analysis asks:
 What should the audience understand?
 ```
 
----
 
 ## 3.3 Communicating to Different Audiences
 
@@ -439,13 +416,11 @@ This requires:
 - contextual storytelling
     
 
----
 
 ## Business Insight
 
 A technically perfect chart can still fail if stakeholders cannot interpret it quickly.
 
----
 
 ## 4. Relationship Between Exploratory and Explanatory Analysis
 
@@ -466,7 +441,6 @@ Without EDA:
 - conclusions become speculative
     
 
----
 
 ## 4.2 Transformation Pipeline
 
@@ -485,7 +459,6 @@ D --> E[Explanatory Visualization]
 E --> F[Audience Communication]
 ```
 
----
 
 ## 4.3 Iterative Nature of Visualization
 
@@ -508,7 +481,6 @@ This makes visualization:
 An iterative analytical communication system
 ```
 
----
 
 ## 5. Case Study: Lok Sabha Election Voter Participation
 
@@ -529,7 +501,6 @@ The instructor revisits the election turnout dataset.
 - examining turnout ratios
     
 
----
 
 ## Key Variable
 
@@ -537,7 +508,6 @@ The instructor revisits the election turnout dataset.
 Main Variable = Voter Turnout Ratio
 ```
 
----
 
 ## 5.2 Constructing Variables
 
@@ -552,7 +522,6 @@ Analysts may need to:
 - engineer features
     
 
----
 
 ## Example Formula
 
@@ -560,13 +529,11 @@ Voter turnout ratio:
 
 \text{Voter Turnout Ratio}=\frac{\text{Votes Cast}}{\text{Eligible Voters}}\times100
 
----
 
 ## Insight
 
 Feature engineering is a core part of exploratory analysis.
 
----
 
 ## 5.3 Explanatory Phase
 
@@ -590,7 +557,6 @@ The audience can immediately understand:
 - regional disparities
     
 
----
 
 ## 5.4 Business and Policy Insights
 
@@ -602,7 +568,6 @@ The visualization enables:
 |High-performing regions|Replicate successful strategies|
 |Regional disparity|Targeted interventions|
 
----
 
 ## 6. Exploratory Data Analysis Workflow
 
@@ -624,7 +589,6 @@ F --> G[Generate Insights]
 G --> H[Build Explanatory Visuals]
 ```
 
----
 
 ## 7. Visualization Decision Framework
 
@@ -654,7 +618,6 @@ What is your objective?
     └── Refined dashboard with annotations
 ```
 
----
 
 ## 8. Common Pitfalls in Exploratory and Explanatory Analysis
 
@@ -662,7 +625,6 @@ What is your objective?
 
 Building visuals without understanding data leads to shallow analysis.
 
----
 
 ## 2. Confusing Exploration with Explanation
 
@@ -677,31 +639,26 @@ Explanatory charts should be:
 - audience-oriented
     
 
----
 
 ## 3. Sparse Data
 
 Limited data restricts analytical depth.
 
----
 
 ## 4. Overfitting Stories to Weak Data
 
 Weak exploratory evidence produces misleading narratives.
 
----
 
 ## 5. Ignoring Data Integrity
 
 Missing values and outliers distort conclusions.
 
----
 
 ## 6. Using Complex Charts for Simple Messages
 
 The audience should not struggle to understand the insight.
 
----
 
 ## 7. Correlation ≠ Causation
 
@@ -715,7 +672,6 @@ This requires caution.
 
 Relationships alone do not prove causality.
 
----
 
 ## 9. Golden Rules for Effective Visual Analysis
 
