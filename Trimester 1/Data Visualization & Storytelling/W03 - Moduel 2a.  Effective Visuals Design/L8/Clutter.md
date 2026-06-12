@@ -143,5 +143,4 @@ By removing clutter, you aren't removing information; you are removing **obstacl
 **You have mastered the principles of visual storytelling and clutter reduction. Would you like to apply these principles to a real-world scenario—such as redesigning a standard banking performance report—or shall we explore how to use "Preattentive Attributes" (like color, size, and orientation) to make your "Highlights" even more effective?**  
   
 
-
 Tags: #statistics #machine-learning #data-science #statistical-modelling
