@@ -30,7 +30,6 @@ The instructor introduces two critical interactive capabilities that shift analy
 
 This complete script aggregates every step discussed in the transcript: initializing data streams, overlaying lines, circles, and offset squares, establishing a clickable legend policy, building a dynamic date slider widget, and utilizing multi-plot layouts.
 
-
 ```Python
 import numpy as np
 import pandas as pd
@@ -79,7 +78,6 @@ p1.legend.click_policy = "hide"  # Clicking an item hides its mapped glyph group
 
 show(p1)
 
-
 ## =====================================================================
 ## 2. INTERACTIVE WIDGETS: DateRangeSlider Setup
 ## =====================================================================
@@ -95,7 +93,6 @@ date_slider = DateRangeSlider(
 
 ## Render standalone widget component directly into browser
 show(date_slider)
-
 
 ## =====================================================================
 ## 3. ADVANCED LAYOUTS: Comparative Multi-Plots (Rows & Columns)
@@ -151,7 +148,6 @@ Figure + Glyphs + Interactivity + Layouts + Widgets
 
 Source:
 
-
 ## 1. The First Principle of Plotting
 
 The transcript starts with an important idea:
@@ -172,17 +168,15 @@ Most bad visualizations fail because:
 - chart type does not match data structure
     
 
-
 ## Example Used in Transcript
 
 They plot:
 
-$$  
-y = x^2  
+$$
+y = x^2
 $$
 
 which is a parabola.
-
 
 ## Visual Intuition
 
@@ -195,7 +189,6 @@ A[X Values]
 --> D[Plot Relationship]
 ```
 
-
 ## 2. Creating Data
 
 Transcript:
@@ -204,7 +197,6 @@ Transcript:
 x = 1 to 50
 y = x squared
 ```
-
 
 ## Actual Python
 
@@ -219,13 +211,12 @@ print(x[:5])
 print(y[:5])
 ```
 
-
 ## What This Means
 
 For every x:
 
-$$  
-y = x^2  
+$$
+y = x^2
 $$
 
 Example:
@@ -238,7 +229,6 @@ Example:
 |4|16|
 |5|25|
 
-
 ## Visual Understanding
 
 ```mermaid
@@ -249,7 +239,6 @@ C[2] --> D[2² = 4]
 E[3] --> F[3² = 9]
 ```
 
-
 ## 3. Importing Figure and Show
 
 Transcript explains:
@@ -259,7 +248,6 @@ from bokeh.plotting import figure, show
 ```
 
 Source:
-
 
 ## Why These Matter
 
@@ -275,7 +263,6 @@ plt.figure()
 
 in Matplotlib.
 
-
 ## `show`
 
 Renders visualization.
@@ -287,7 +274,6 @@ Without `show()`:
 
 This is different from Matplotlib notebooks.
 
-
 ## Mental Model
 
 ```mermaid
@@ -298,9 +284,7 @@ A[Create Figure]
 --> C[Render using show()]
 ```
 
-
 ## 4. First Complete Bokeh Plot
-
 
 ## Code
 
@@ -336,7 +320,6 @@ p.line(
 show(p)
 ```
 
-
 ## What Happens Internally
 
 ```mermaid
@@ -349,7 +332,6 @@ A[Data]
 --> E[Browser Rendering]
 ```
 
-
 ## 5. What Is a Glyph?
 
 This is one of the MOST important Bokeh concepts.
@@ -359,7 +341,6 @@ Transcript:
 > Glyph is a visual representation of data.
 
 Source:
-
 
 ## Simple Definition
 
@@ -380,7 +361,6 @@ A glyph is:
 
 Any visual object representing data.
 
-
 ## Mental Model
 
 ```text
@@ -391,7 +371,6 @@ Glyph
 Visual Representation
 ```
 
-
 ## Examples
 
 |Glyph|Meaning|
@@ -400,7 +379,6 @@ Visual Representation
 |circle()|scatter points|
 |vbar()|vertical bars|
 |square()|square markers|
-
 
 ## 6. Line Glyph
 
@@ -411,7 +389,6 @@ p.line(x, y)
 ```
 
 Source:
-
 
 ## What It Actually Does
 
@@ -425,7 +402,6 @@ p.line(
 )
 ```
 
-
 ## Parameters Explained
 
 |Parameter|Meaning|
@@ -435,7 +411,6 @@ p.line(
 |line_width|thickness|
 |color|line color|
 |legend_label|legend text|
-
 
 ## Visual Pipeline
 
@@ -450,7 +425,6 @@ C[Y Array]
 
 B --> D[Interactive Line]
 ```
-
 
 ## 7. Interactivity Features
 
@@ -469,7 +443,6 @@ Transcript highlights:
 
 Source:
 
-
 ## This Is The Key Difference
 
 Matplotlib:
@@ -482,7 +455,6 @@ Bokeh:
 - browser application mindset
     
 
-
 ## Built-In Interactive Tools
 
 ```python
@@ -490,7 +462,6 @@ p = figure(
     tools="pan,wheel_zoom,box_zoom,reset,save"
 )
 ```
-
 
 ## Tool Breakdown
 
@@ -502,7 +473,6 @@ p = figure(
 |reset|restore|
 |save|export PNG|
 
-
 ## Visual Interaction Model
 
 ```mermaid
@@ -513,7 +483,6 @@ A[Mouse Action]
 --> C[Bokeh Tool]
 --> D[Update Plot]
 ```
-
 
 ## 8. Adding Multiple Glyphs
 
@@ -530,7 +499,6 @@ on SAME plot.
 
 Source:
 
-
 ## Why This Matters
 
 Modern visualizations combine:
@@ -541,7 +509,6 @@ Modern visualizations combine:
     
 - multiple visual meanings
     
-
 
 ## Example
 
@@ -589,7 +556,6 @@ p.square(
 show(p)
 ```
 
-
 ## Visual Structure
 
 ```mermaid
@@ -602,7 +568,6 @@ A --> C[Circle Glyph]
 
 A --> D[Square Glyph]
 ```
-
 
 ## 9. Why Multiple Glyphs Matter
 
@@ -619,7 +584,6 @@ This enables:
 - multi-series charts
     
 
-
 ## Real Analytics Example
 
 |Glyph|Meaning|
@@ -627,7 +591,6 @@ This enables:
 |line|sales trend|
 |circles|actual observations|
 |squares|forecast points|
-
 
 ## 10. Clickable Legends
 
@@ -638,7 +601,6 @@ legend.click_policy = "hide"
 ```
 
 Source:
-
 
 ## Why This Is Powerful
 
@@ -651,13 +613,11 @@ Users can:
 - compare categories dynamically
     
 
-
 ## Example
 
 ```python
 p.legend.click_policy = "hide"
 ```
-
 
 ## Behavior
 
@@ -666,7 +626,6 @@ Click Legend
     ↓
 Glyph Visibility Toggles
 ```
-
 
 ## This Is Huge In Dashboards
 
@@ -684,13 +643,11 @@ Instead of filtering data:
 
 Very efficient.
 
-
 ## 11. Widgets
 
 Transcript introduces widgets.
 
 Source:
-
 
 ## What Are Widgets?
 
@@ -705,7 +662,6 @@ Widgets are UI controls:
 - buttons
     
 
-
 ## Core Idea
 
 ```text
@@ -715,7 +671,6 @@ User Controls
 =
 Interactive Analytics
 ```
-
 
 ## Date Range Slider Example
 
@@ -736,7 +691,6 @@ slider = DateRangeSlider(
 show(slider)
 ```
 
-
 ## Why This Matters
 
 User controls:
@@ -750,7 +704,6 @@ User controls:
 
 without changing code.
 
-
 ## Dashboard Interaction Model
 
 ```mermaid
@@ -760,7 +713,6 @@ A[User Slider]
 --> B[Filter Data]
 --> C[Update Visualization]
 ```
-
 
 ## 12. Layouts
 
@@ -772,7 +724,6 @@ Transcript explains:
     
 
 Source:
-
 
 ## Why Layouts Matter
 
@@ -794,7 +745,6 @@ They contain:
 - charts
     
 
-
 ## Row Layout
 
 ```python
@@ -802,7 +752,6 @@ from bokeh.layouts import row
 
 show(row(plot1, plot2, plot3))
 ```
-
 
 ## Column Layout
 
@@ -812,7 +761,6 @@ from bokeh.layouts import column
 show(column(plot1, plot2, plot3))
 ```
 
-
 ## Visual Understanding
 
 ## Row
@@ -821,7 +769,6 @@ show(column(plot1, plot2, plot3))
 [Plot1] [Plot2] [Plot3]
 ```
 
-
 ## Column
 
 ```text
@@ -829,7 +776,6 @@ show(column(plot1, plot2, plot3))
 [Plot2]
 [Plot3]
 ```
-
 
 ## 13. Full Layout Example
 
@@ -860,7 +806,6 @@ layout = row(p1, p2, p3)
 show(layout)
 ```
 
-
 ## Internal Architecture
 
 ```mermaid
@@ -877,7 +822,6 @@ C[Plot 3]
 
 D --> E[Dashboard]
 ```
-
 
 ## 14. Important Design Insight
 
@@ -898,7 +842,6 @@ It is:
 
 combined.
 
-
 ## 15. Bokeh vs Traditional Plotting
 
 |Traditional Plotting|Bokeh|
@@ -907,7 +850,6 @@ combined.
 |static|interactive|
 |passive viewing|exploratory|
 |chart-focused|application-focused|
-
 
 ## 16. Real Industry Usage
 
@@ -922,7 +864,6 @@ Bokeh becomes valuable when:
 - data updates live
     
 
-
 ## Typical Use Cases
 
 |Industry|Use|
@@ -932,7 +873,6 @@ Bokeh becomes valuable when:
 |Manufacturing|sensor analytics|
 |Logistics|shipment tracking|
 |Data Science|model diagnostics|
-
 
 ## 17. Complete Mental Model
 
@@ -953,7 +893,6 @@ E --> F[Layouts]
 F --> G[Interactive Dashboard]
 ```
 
-
 ## Final Takeaways
 
 ## Core Bokeh Pipeline
@@ -972,7 +911,6 @@ Layouts
 Dashboard
 ```
 
-
 ## Most Important Concepts
 
 |Concept|Meaning|
@@ -983,7 +921,6 @@ Dashboard
 |widgets|interactive controls|
 |layouts|arrange plots|
 |legend click policy|dynamic visibility|
-
 
 ## Biggest Conceptual Shift
 
