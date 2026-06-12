@@ -4,7 +4,6 @@ module: Statistical Modelling And Inferencing
 week: W03 - Moduel 2a.  Effective Visuals Design
 ---
 
-
 ### The Neuroscience of Data Storytelling: Designing for Memory
 
 To design truly effective visuals, you must act as an architect for your audience's brain. By understanding how the three types of memory function, you can bypass "cognitive friction" and deliver insights that actually stick.
@@ -106,7 +105,6 @@ If you use _every_ attribute at once—**Bold**, _Italics_, Red, Large, and Boxe
 You now understand the "how" (Decluttering) and the "what" (Pre-attentive attributes). You are effectively designing for the human brain's speed and efficiency.
 
 **Would you like to try applying these to your own data?** If you have a specific report or table, you can describe it, and we can determine which pre-attentive attributes will best "force" your stakeholders to see the most critical trends. Or, would you like to explore the nuances of **Color Theory** to ensure your choices remain professional and accessible?
-
 
 This is the transition from **passive data** to **active persuasion**.
 
