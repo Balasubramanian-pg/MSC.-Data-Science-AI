@@ -46,7 +46,6 @@ This is fundamentally about reducing the data footprint while retaining useful i
 |Lossless Compression|Yes|No|
 |Lossy Compression|No|Yes|
 
----
 
 ## 1. Lossless Compression
 
@@ -101,7 +100,6 @@ Used when accuracy matters:
 - Scientific datasets
     
 
----
 
 ## 2. Lossy Compression
 
@@ -147,7 +145,6 @@ Used when perfect reconstruction is unnecessary:
 - Streaming systems
     
 
----
 
 ## Compression Tradeoffs
 
@@ -165,7 +162,6 @@ If approximation is acceptable:
 - Use lossy compression
     
 
----
 
 ## 2. Compression Ratio
 
@@ -184,7 +180,6 @@ Higher compression ratio:
 - May increase processing time
     
 
----
 
 ## 3. Processing Overhead
 
@@ -204,7 +199,6 @@ Example:
 
 So compression itself has a cost.
 
----
 
 ## 4. File Suitability
 
@@ -221,7 +215,6 @@ Some data:
 
 may not benefit much from compression.
 
----
 
 ## Histogram as a Data Reduction Technique
 
@@ -237,7 +230,6 @@ Suppose we store 40 individual item prices:
 
 This requires storing all 40 entries separately.
 
----
 
 ## Histogram Transformation 1
 
@@ -279,7 +271,6 @@ Price 1 appears 2 times → reconstruct [1,1]
 
 No information is lost.
 
----
 
 ## Histogram Transformation 2
 
@@ -309,7 +300,6 @@ This transformation is:
 
 Because only approximate information survives.
 
----
 
 ## Key Conceptual Difference
 
@@ -321,7 +311,6 @@ Because only approximate information survives.
 |Data quality retained|Perfect|Approximate|
 |Use cases|Critical systems|Multimedia|
 
----
 
 ## Why Compression Matters in ML and Data Mining
 
@@ -349,7 +338,6 @@ Especially important for:
 - Cloud storage optimization
     
 
----
 
 ## Final Takeaways
 
