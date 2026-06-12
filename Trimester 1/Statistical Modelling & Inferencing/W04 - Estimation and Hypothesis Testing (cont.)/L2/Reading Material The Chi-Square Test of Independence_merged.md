@@ -8,8 +8,8 @@ The Chi-Square Test of [Independence](https://github.com/Balasubramanian-pg/MSC.
 
 The central inferential [question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#[question](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Residual%20Analysis.md#question))) is:
 
-$$  
-\text{Are the variables related, or are they independent?}  
+$$
+\text{Are the variables related, or are they independent?}
 $$
 
 Unlike t-tests or ANOVA, which analyze numerical measurements such as means, the chi-square test analyzes categorical frequency data.
@@ -68,10 +68,10 @@ These observed frequencies form the basis of the chi-square analysis.
 
 The chi-square framework compares:
 
-$$  
+$$
 \text{Observed Frequencies}  
 \quad vs \quad  
-\text{Expected Frequencies}  
+\text{Expected Frequencies}
 $$
 
 \text{Observed Frequencies}\quad vs \quad\text{Expected Frequencies}
@@ -91,8 +91,8 @@ Observed frequencies are the actual counts collected from the sample.
 
 They are denoted by:
 
-$$  
-O  
+$$
+O
 $$
 
 O
@@ -116,8 +116,8 @@ Expected frequencies represent the counts we would anticipate if the variables w
 
 They are denoted by:
 
-$$  
-E  
+$$
+E
 $$
 
 E
@@ -128,14 +128,16 @@ They are computed mathematically using marginal totals.
 
 The expected frequency [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) is:
 
-## $$  
+##
+
+$$
 E
 
 [\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)  
 (\text{Row Total})(\text{Column Total})  
 }{  
 \text{Grand Total}  
-}  
+}
 $$
 
 E=[\frac{](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L1/Inferences%20for%20Two%20Population%20Means.md#frac)(\text{Row Total})(\text{Column Total})}{\text{Grand Total}}
@@ -153,14 +155,14 @@ Suppose:
 
 If the variables are independent, we would expect:
 
-$$  
-0.60 \times 0.30 = 0.18  
+$$
+0.60 \times 0.30 = 0.18
 $$
 
 or:
 
-$$  
-18%  
+$$
+18%
 $$
 
 of all students to belong to both categories simultaneously.
@@ -171,18 +173,18 @@ The expected frequency [formula](https://github.com/Balasubramanian-pg/MSC.-Data
 
 The [null hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#null-hypothesis) states that the variables are independent.
 
-$$  
+$$
 H_0:  
-\text{The variables are independent}  
+\text{The variables are independent}
 $$
 
 H_0:\text{The variables are independent}
 
 The [alternative hypothesis](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W03 - Estimation And Hypothesis Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md#alternative-hypothesis) states that an association exists.
 
-$$  
+$$
 H_A:  
-\text{The variables are dependent}  
+\text{The variables are dependent}
 $$
 
 H_A:\text{The variables are dependent}
@@ -195,7 +197,9 @@ The chi-square statistic summarizes the total discrepancy between observed and e
 
 The [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#formula) is:
 
-## $$  
+##
+
+$$
 \chi^2
 
 \sum  
@@ -203,16 +207,28 @@ The [formula](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/ma
 (O-E)^2  
 }{  
 E  
-}  
+}
 $$
 
 \chi^2=\sum\frac{(O-E)^2}{E}
 
 where:
 
-- $$O$$ = observed frequency
+-
+
+$$
+O
+$$
+
+= observed frequency
     
-- $$E$$ = expected frequency
+-
+
+$$
+E
+$$
+
+= expected frequency
     
 
 The calculation is performed across all cells in the contingency table.
@@ -225,35 +241,34 @@ The chi-square statistic measures [total deviation](https://github.com/Balasubra
 
 If:
 
-$$  
-O \approx E  
+$$
+O \approx E
 $$
 
 then:
 
-$$  
-\chi^2 \approx 0  
+$$
+\chi^2 \approx 0
 $$
 
 \chi^2\approx0
 
 This suggests little evidence against [independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence).
 
-
 ## Large Chi-Square Values
 
 If observed and expected frequencies differ substantially:
 
-$$  
-|O-E|  
+$$
+|O-E|
 $$
 
 becomes large.
 
 Because differences are squared:
 
-$$  
-(O-E)^2  
+$$
+(O-E)^2
 $$
 
 all deviations contribute positively to the statistic.
@@ -264,23 +279,23 @@ Large chi-square values indicate stronger evidence of association.
 
 The chi-square statistic cannot become negative because:
 
-$$  
-(O-E)^2 \ge 0  
+$$
+(O-E)^2 \ge 0
 $$
 
 (O-E)^2\ge0
 
 As discrepancies increase:
 
-$$  
+$$
 \chi^2  
-\uparrow  
+\uparrow
 $$
 
 Therefore, evidence against:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 always appears in the right tail of the chi-square distribution.
@@ -306,29 +321,43 @@ Its exact shape depends on the degrees of freedom parameter.
 
 For a chi-square test of [independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence):
 
-## $$  
+##
+
+$$
 df
 
 (\text{Rows}-1)  
-(\text{Columns}-1)  
+(\text{Columns}-1)
 $$
 
 df=(\text{Rows}-1)(\text{Columns}-1)
 
 [Examples](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W08 - Forecasting & Time Series Analysis/L0/Time%20Series%20Analysis.md#examples):
 
-- a $$2 \times 2$$ table:
-    
+- a
 
-$$  
-df = (2-1)(2-1)=1  
+$$
+2 \times 2
 $$
 
-- a $$3 \times 4$$ table:
+table:
     
 
-$$  
-df=(3-1)(4-1)=6  
+$$
+df = (2-1)(2-1)=1
+$$
+
+- a
+
+$$
+3 \times 4
+$$
+
+table:
+    
+
+$$
+df=(3-1)(4-1)=6
 $$
 
 Degrees of freedom represent how many independent cell counts remain variable once row and column totals are fixed.
@@ -350,20 +379,18 @@ The data must consist of frequency counts rather than:
 
 The chi-square test fundamentally analyzes counts.
 
-
 ## [Random Sampling](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#random-sampling)
 
 The sample should represent the target population reasonably well.
 
 Biased sampling invalidates inference regardless of the mathematical calculations.
 
-
 ## Expected Count Condition
 
 Expected frequencies should generally satisfy:
 
-$$  
-E \ge 5  
+$$
+E \ge 5
 $$
 
 E\ge5
@@ -411,8 +438,8 @@ When expected frequencies are too small, analysts may:
 
 Fisher's Exact Test is especially important for small:
 
-$$  
-2 \times 2  
+$$
+2 \times 2
 $$
 
 tables.
@@ -445,18 +472,18 @@ This distinction is fundamental in statistical reasoning.
 
 The chi-square framework evaluates:
 
-$$  
+$$
 \text{Observed Pattern}  
 \quad vs \quad  
-\text{Pattern Expected Under [Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence)}  
+\text{Pattern Expected Under [Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence)}
 $$
 
 \text{Observed Pattern}\quad vs \quad\text{Pattern Expected Under [Independence](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L0/Linear%20Regression.md#independence)}
 
 If the discrepancy becomes too large to plausibly attribute to random variation alone, we reject:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 The deeper statistical principle is broader:
