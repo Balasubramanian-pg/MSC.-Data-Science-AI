@@ -2,7 +2,6 @@
 
 ## Reading Material: Introduction to Experimental Design & ANOVA
 
----
 
 **Contents**
 
@@ -419,7 +418,6 @@ $$
 
 suggests strong treatment effects.
 
----
 
 ## [Mean](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W04 - Estimation And Hypothesis Testing Cont/L2/Testing%20Population%20Proportions.md#mean) Square for Error
 
