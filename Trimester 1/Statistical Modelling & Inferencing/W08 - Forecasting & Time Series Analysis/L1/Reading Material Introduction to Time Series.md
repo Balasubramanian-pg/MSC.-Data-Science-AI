@@ -1,4 +1,3 @@
-
 **1 What is Time Series Data?**  
 Most of the data we encounter in introductory statistics is cross-sectional. For example, we might have a sample of 100 students and record their exam scores and hours studied. Each student is an independent observation. The order in which we list the students in our dataset has no meaning.  
 A time series, in contrast, is a set of observations on a variable collected over time. The data points are recorded at a regular frequency, such as hourly, daily, weekly, monthly, quarterly, or annually. The defining characteristic of a time series is that the order of the observations is crucial. The data is not a collection of independent points; it is a sequenced trajectory.
