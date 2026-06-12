@@ -6,7 +6,6 @@ week: W02 - Data
 
 ## Week 2: Data
 
-
 **Module Description**
 
 This module provides a comprehensive introduction to the fundamental building block of data science: data itself. You will begin by learning what constitutes a dataset and how it is structured. The module then delves into the different types of attributes that data can have, which is crucial for understanding the nature of your data and selecting appropriate analysis techniques. Finally, you will explore various methods of data representation, a key step in preparing data for mining and modelling. Understanding these core concepts is essential for any aspiring data scientist, as it equips you with the foundational knowledge needed to effectively handle, interpret, and prepare data for analysis, enabling you to progress to more complex data mining tasks.
