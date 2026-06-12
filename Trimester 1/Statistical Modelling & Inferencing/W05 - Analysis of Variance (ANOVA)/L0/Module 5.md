@@ -13,14 +13,14 @@ Previous modules focused primarily on inference involving:
 
 Typical inferential questions included:
 
-$$  
-\mu_1 = \mu_2  
+$$
+\mu_1 = \mu_2
 $$
 
 or:
 
-$$  
-p_1 = p_2  
+$$
+p_1 = p_2
 $$
 
 These methods are extremely important, but many real-world problems involve comparisons across several groups simultaneously.
@@ -59,9 +59,9 @@ However, this creates a serious statistical problem.
 
 As the number of comparisons increases:
 
-$$  
+$$
 \text{Probability of Type I Error}  
-\uparrow  
+\uparrow
 $$
 
 \text{Probability of Type I Error}\uparrow
@@ -178,10 +178,10 @@ This produces:
 
 The statistical logic is:
 
-$$  
+$$
 \text{Noise Reduction}  
 \rightarrow  
-\text{Higher Sensitivity}  
+\text{Higher Sensitivity}
 $$
 
 \text{Noise Reduction}\rightarrow\text{Higher Sensitivity}
@@ -194,8 +194,8 @@ This reflects a central idea in modern statistics:
 
 ANOVA stands for:
 
-$$  
-\text{Analysis of Variance}  
+$$
+\text{Analysis of Variance}
 $$
 
 \text{Analysis of Variance}
@@ -204,27 +204,27 @@ Despite the name, ANOVA is fundamentally used to compare means across multiple g
 
 The core inferential question becomes:
 
-$$  
-\text{Are the population means all equal?}  
+$$
+\text{Are the population means all equal?}
 $$
 
 Suppose there are:
 
-$$  
-k  
+$$
+k
 $$
 
 groups with population means:
 
-$$  
-\mu_1,\mu_2,\dots,\mu_k  
+$$
+\mu_1,\mu_2,\dots,\mu_k
 $$
 
 The null hypothesis is:
 
-$$  
+$$
 H_0:  
-\mu_1 = \mu_2 = \dots = \mu_k  
+\mu_1 = \mu_2 = \dots = \mu_k
 $$
 
 H_0:\mu_1=\mu_2=\dots=\mu_k
@@ -245,18 +245,18 @@ If group means differ substantially, observations from different groups become m
 
 ANOVA therefore compares:
 
-$$  
+$$
 \text{Between-Group Variability}  
 \quad vs \quad  
-\text{Within-Group Variability}  
+\text{Within-Group Variability}
 $$
 
 \text{Between-Group Variability}\quad vs \quad\text{Within-Group Variability}
 
 If between-group variability becomes sufficiently large relative to within-group variability, evidence against:
 
-$$  
-H_0  
+$$
+H_0
 $$
 
 emerges.
@@ -265,14 +265,16 @@ emerges.
 
 ANOVA uses the F-statistic:
 
-# $$  
+#
+
+$$
 F
 
 \frac{  
 \text{Between-Group Variance}  
 }{  
 \text{Within-Group Variance}  
-}  
+}
 $$
 
 F=\frac{\text{Between-Group Variance}}{\text{Within-Group Variance}}
@@ -282,15 +284,15 @@ Interpretation:
 - if group means are similar:
     
 
-$$  
-F \approx 1  
+$$
+F \approx 1
 $$
 
 - if group means differ substantially:
     
 
-$$  
-F \gg 1  
+$$
+F \gg 1
 $$
 
 Large F-values suggest evidence against equal population means.
@@ -330,10 +332,10 @@ It only determines whether evidence exists that at least one mean differs.
 
 A significant ANOVA result implies:
 
-$$  
+$$
 \exists\ i,j  
 \text{ such that }  
-\mu_i \ne \mu_j  
+\mu_i \ne \mu_j
 $$
 
 \exists\ i,j\text{ such that }\mu_i\ne\mu_j
@@ -367,10 +369,10 @@ Much of modern experimentation depends fundamentally on ANOVA-style reasoning.
 
 ANOVA evaluates:
 
-$$  
+$$
 \text{Signal}  
 \quad vs \quad  
-\text{Noise}  
+\text{Noise}
 $$
 
 \text{Signal}\quad vs \quad\text{Noise}
@@ -398,10 +400,10 @@ The focus shifts from isolated parameter estimation to structured comparative ex
 
 The deeper progression is:
 
-$$  
+$$
 \text{Simple Comparison}  
 \rightarrow  
-\text{Experimental Systems Analysis}  
+\text{Experimental Systems Analysis}
 $$
 
 \text{Simple Comparison}\rightarrow\text{Experimental Systems Analysis}
