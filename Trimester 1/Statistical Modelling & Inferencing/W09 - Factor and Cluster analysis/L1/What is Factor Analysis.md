@@ -2,7 +2,6 @@
 
 ## Reading Material: What is Factor Analysis?
 
-
 ### The Challenge: Navigating the "Curse of Dimensionality"
 
 When you move from analyzing a few KPIs to hundreds of variables, you hit the "Curse of Dimensionality." This isn't just about the computer struggling to calculate the numbers; it's about the **dilution of [signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[signal](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#signal))**. As the number of variables grows, the "[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W06 - Simple Linear Regression/L2/Testing%20for%20Significance%20in%20Regression.md#[noise](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07 - Multiple Regression/L2/Significance%20Testing%20and%20Multicollinearity.md#noise))" (random variation) often compounds, making it harder to distinguish the true structural patterns of your business or research subject.
@@ -45,7 +44,6 @@ Factor Analysis operates on the assumption of **latent structure**. It theorizes
 Factor Analysis is the specific tool we use when we suspect there is a **causal mechanism**—a latent structure—creating the correlations we see in our variables. It differs from Principal Component Analysis (PCA), which is a purely mathematical compression tool, because Factor Analysis explicitly models _why_ variables correlate (the common variance).
 
 Would you like to explore the **mathematical differences between Factor Analysis and PCA**, or are you ready to dive into the **diagnostic steps (Bartlett's Test and KMO)** to determine if your specific pharmaceutical dataset is a good candidate for this type of reduction?
-
 
 ### 2. The Goal of Factor Analysis: Uncovering Latent Structure
 
