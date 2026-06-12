@@ -8,7 +8,9 @@ Singular Value Decomposition (SVD) is a fundamental matrix factorization techniq
 
 SVD factorizes a data matrix $X$ (of size $m \times n$) into three distinct matrices:
 
-$$X = U \Sigma V^T$$
+$$
+X = U \Sigma V^T
+$$
 
 - **$U$ (Left Singular Vectors):** An orthogonal matrix capturing the relationships between **data points** (rows).
     
