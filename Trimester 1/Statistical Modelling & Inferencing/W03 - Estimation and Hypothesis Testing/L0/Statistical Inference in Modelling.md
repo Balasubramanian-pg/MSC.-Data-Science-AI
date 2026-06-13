@@ -1,4 +1,4 @@
-### Module 3: Statistical Inference in Modelling
+# Module 3: Statistical Inference in Modelling
 
 This module transitions from descriptive statistics to **Inferential Statistics**, the formal framework for making rigorous, data-driven conclusions about a population parameter ($\theta$) using data from a limited sample ($n$).
 
