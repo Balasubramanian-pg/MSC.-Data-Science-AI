@@ -1,6 +1,4 @@
----
-
-## Reading Material: The Least Squares Method in Multiple Regression
+# The Least Squares Method in Multiple Regression
 
 ## Least Squares Estimation in [Multiple Linear Regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L1/The%20Multiple%20Regression%20Model.md#multiple-linear-regression)
 
