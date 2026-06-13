@@ -610,8 +610,6 @@ $$
 \text{Structured Multi-Factor Analysis}
 $$
 
-\text{Simple Pairwise Comparison}\rightarrow\text{Structured Multi-Factor Analysis}
-
 These methods form the backbone of:
 
 - experimental science
