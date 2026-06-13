@@ -1,6 +1,4 @@
----
-
-## Reading Material: Simple Exponential Smoothing
+# Simple Exponential Smoothing
 
 ### 1. Improving on Moving Averages: The Shift to Exponential Weighting
 
