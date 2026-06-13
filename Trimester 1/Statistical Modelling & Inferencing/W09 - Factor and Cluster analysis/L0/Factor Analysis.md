@@ -1,4 +1,4 @@
-### Welcome to Module 9: Factor Analysis
+# Factor Analysis
 
 You have successfully navigated the landscapes of regression and time series. While those methods are primarily concerned with **predictive relationships** (how $X$ influences $Y$ over time or space), **Factor Analysis** shifts our focus toward **data reduction and latent structure detection**.
 
