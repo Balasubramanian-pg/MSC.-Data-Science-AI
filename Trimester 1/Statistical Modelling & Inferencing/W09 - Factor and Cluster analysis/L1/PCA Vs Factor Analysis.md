@@ -1,4 +1,4 @@
-## Reading Material: PCA vs. Factor Analysis
+# PCA vs. Factor Analysis
 
 ### 1. Principal Component Analysis (PCA): The Mathematical Compressor
 
