@@ -193,12 +193,10 @@ flowchart BT
 2.  **Selection vs. Preprocessing vs. Transformation:** Select columns $\rightarrow$ Fix broken rows $\rightarrow$ Reshape math geometry.
 3.  **The Ultimate Goal:** KDD aims to extract *implicit, non-trivial* knowledge to answer a specific, high-value question.
 
-### Common Interview Questions
+### Common Questions
 1.  *What is the difference between Data Mining and KDD?*
     *   **Answer:** Data Mining is just one specific step (Step 4) *inside* the broader KDD process. KDD encompasses the entire lifecycle from raw data extraction to final business evaluation.
 2.  *Why might a model fail at the Evaluation stage even if the Data Mining algorithm converged perfectly?*
     *   **Answer:** This indicates an issue upstream. The Data Selection might have omitted the most predictive features, or the Data Preprocessing might have smoothed out critical anomalies that were actually important signals (e.g., classifying fraud as "noise").
 3.  *During KDD, how do you handle data that isn't relevant to your current question but might be useful later?*
     *   **Answer:** You maintain a central Data Warehouse/Data Lake. The KDD pipeline extracts a *Task-Relevant Data* subset into a Data Mart or working memory. The original data is never discarded; it is just filtered out during the *Data Selection* phase for this specific iteration.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
