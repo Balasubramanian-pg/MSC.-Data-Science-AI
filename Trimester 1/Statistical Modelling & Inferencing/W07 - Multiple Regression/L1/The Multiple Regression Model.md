@@ -1,6 +1,4 @@
----
-
-## Reading Material: The Multiple Regression Model
+# The Multiple Regression Model
 
 ## [Multiple Linear Regression](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W07%20-%20Multiple%20Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md#multiple-linear-regression)
 
