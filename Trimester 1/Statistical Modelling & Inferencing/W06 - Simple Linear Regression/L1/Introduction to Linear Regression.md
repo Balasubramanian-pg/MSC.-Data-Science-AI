@@ -1,6 +1,4 @@
----
-
-## Reading Material: Introduction to Linear Regression
+# Introduction to Linear Regression
 
 # 1. The Goal of Regression: Modeling Statistical Relationships
 
