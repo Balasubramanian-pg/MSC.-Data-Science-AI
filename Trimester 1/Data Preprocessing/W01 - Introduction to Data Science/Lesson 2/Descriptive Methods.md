@@ -1,10 +1,4 @@
----
-title: W01 - Introduction to Data Science
-module: Statistical Modelling And Inferencing
-week: W01 - Introduction to Data Science
----
-
-## Descriptive Methods in Machine Learning: Clustering and Association Rule Mining
+# Descriptive Methods in Machine Learning: Clustering and Association Rule Mining
 
 > [!NOTE]
 > Descriptive methods (unsupervised learning) focus on finding inherent structures, underlying patterns, and summaries within data without a predefined target variable. Unlike predictive methods (supervised learning) that map inputs to known outputs, descriptive methods answer the question: "What is the natural state and relationship within this data?"
