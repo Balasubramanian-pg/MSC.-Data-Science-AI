@@ -1,6 +1,4 @@
----
-
-## Reading Material: Conditions for Factor Analysis
+# Conditions for Factor Analysis
 
 ### 1. Foundational Assumptions: Ensuring Factorability
 ![[Pasted image 20260525122624.png]]
