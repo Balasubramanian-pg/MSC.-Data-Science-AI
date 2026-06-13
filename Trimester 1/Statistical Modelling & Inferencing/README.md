@@ -1,0 +1,224 @@
+# Index of Statistical Modelling & Inferencing
+
+This index provides quick access to all folders and files within this directory.
+
+## 🌲 File Structure
+
+- 📂 **[Assets](Assets/)**
+  - 📄 [introductory-statistics-2e_-_WEB.pdf](Assets/introductory-statistics-2e_-_WEB.pdf)
+  - 📄 [ISLP_website.pdf](Assets/ISLP_website.pdf)
+  - 📄 [Probability_Statistics_Resources.pdf](Assets/Probability_Statistics_Resources.pdf)
+  - 📄 [ps4ds_preprint.pdf](Assets/ps4ds_preprint.pdf)
+  - 📄 [SIM-BITS- Handbook 1.pdf](Assets/SIM-BITS-%20Handbook%201.pdf)
+  - 📄 [Statistical Inference and Modelling.ipynb](Assets/Statistical%20Inference%20and%20Modelling.ipynb)
+  - 📄 [Statistical_Inference_and_Modelling_HandsOn.pdf](Assets/Statistical_Inference_and_Modelling_HandsOn.pdf)
+  - 📄 [Syllabus_STATS_216_V2.pdf](Assets/Syllabus_STATS_216_V2.pdf)
+- 📂 **[W01 - Basic Probability & Statistics](W01%20-%20Basic%20Probability%20%26%20Statistics/)**
+  - 📂 **[L0](W01%20-%20Basic%20Probability%20%26%20Statistics/L0/)**
+    - 📄 [Inference & Modelling.md](W01%20-%20Basic%20Probability%20%26%20Statistics/L0/Inference%20%26%20Modelling.md)
+    - 📄 [Module Introduction.pdf](W01%20-%20Basic%20Probability%20%26%20Statistics/L0/Module%20Introduction.pdf)
+    - 📄 [Probability.py](W01%20-%20Basic%20Probability%20%26%20Statistics/L0/Probability.py)
+  - 📂 **[L1](W01%20-%20Basic%20Probability%20%26%20Statistics/L1/)**
+    - 📂 **[Assets](W01%20-%20Basic%20Probability%20%26%20Statistics/L1/Assets/)**
+      - 📄 [Probability and Distributions.pdf](W01%20-%20Basic%20Probability%20%26%20Statistics/L1/Assets/Probability%20and%20Distributions.pdf)
+      - 📄 [Random Variables & Distributions.pdf](W01%20-%20Basic%20Probability%20%26%20Statistics/L1/Assets/Random%20Variables%20%26%20Distributions.pdf)
+      - 📄 [Revision of Basic Probability.pdf](W01%20-%20Basic%20Probability%20%26%20Statistics/L1/Assets/Revision%20of%20Basic%20Probability.pdf)
+    - 📄 [Introduction to Statistical Inference.ipynb](W01%20-%20Basic%20Probability%20%26%20Statistics/L1/Introduction%20to%20Statistical%20Inference.ipynb)
+    - 📄 [Probability & Distribution.ipynb](W01%20-%20Basic%20Probability%20%26%20Statistics/L1/Probability%20%26%20Distribution.ipynb)
+    - 📄 [Probability and Distribution.md](W01%20-%20Basic%20Probability%20%26%20Statistics/L1/Probability%20and%20Distribution.md)
+    - 📄 [Random Variable.ipynb](W01%20-%20Basic%20Probability%20%26%20Statistics/L1/Random%20Variable.ipynb)
+    - 📄 [Random Variables & Distributions.md](W01%20-%20Basic%20Probability%20%26%20Statistics/L1/Random%20Variables%20%26%20Distributions.md)
+    - 📄 [Reading 2 Random Variables & Distributions.md](W01%20-%20Basic%20Probability%20%26%20Statistics/L1/Reading%202%20Random%20Variables%20%26%20Distributions.md)
+    - 📄 [Reading 3 Common Probability Distributions.md](W01%20-%20Basic%20Probability%20%26%20Statistics/L1/Reading%203%20Common%20Probability%20Distributions.md)
+    - 📄 [Reading.txt](W01%20-%20Basic%20Probability%20%26%20Statistics/L1/Reading.txt)
+  - 📂 **[L2](W01%20-%20Basic%20Probability%20%26%20Statistics/L2/)**
+    - 📄 [Foundations of Statistical Inference.md](W01%20-%20Basic%20Probability%20%26%20Statistics/L2/Foundations%20of%20Statistical%20Inference.md)
+    - 📄 [Parametric vs. Non-Parametric 1.pdf](W01%20-%20Basic%20Probability%20%26%20Statistics/L2/Parametric%20vs.%20Non-Parametric%201.pdf)
+    - 📄 [Reading 1 An Introduction to Decision Theory.md](W01%20-%20Basic%20Probability%20%26%20Statistics/L2/Reading%201%20An%20Introduction%20to%20Decision%20Theory.md)
+    - 📄 [Reading 2 Parametric vs. Non-Parametric Methods.md](W01%20-%20Basic%20Probability%20%26%20Statistics/L2/Reading%202%20Parametric%20vs.%20Non-Parametric%20Methods.md)
+- 📂 **[W02 - Introduction to Statistical Inference](W02%20-%20Introduction%20to%20Statistical%20Inference/)**
+  - 📂 **[L0](W02%20-%20Introduction%20to%20Statistical%20Inference/L0/)**
+    - 📄 [Inferential Statistics.md](W02%20-%20Introduction%20to%20Statistical%20Inference/L0/Inferential%20Statistics.md)
+    - 📄 [Module Introduction 1.pdf](W02%20-%20Introduction%20to%20Statistical%20Inference/L0/Module%20Introduction%201.pdf)
+    - 📄 [Sampling Theory and Representation.md](W02%20-%20Introduction%20to%20Statistical%20Inference/L0/Sampling%20Theory%20and%20Representation.md)
+    - 📄 [The Epistemology of Inference.md](W02%20-%20Introduction%20to%20Statistical%20Inference/L0/The%20Epistemology%20of%20Inference.md)
+  - 📂 **[L1](W02%20-%20Introduction%20to%20Statistical%20Inference/L1/)**
+    - 📄 [Art of Sampling.md](W02%20-%20Introduction%20to%20Statistical%20Inference/L1/Art%20of%20Sampling.md)
+    - 📄 [The Art of Sampling.md](W02%20-%20Introduction%20to%20Statistical%20Inference/L1/The%20Art%20of%20Sampling.md)
+    - 📄 [The Art of Sampling.pdf](W02%20-%20Introduction%20to%20Statistical%20Inference/L1/The%20Art%20of%20Sampling.pdf)
+  - 📂 **[L2](W02%20-%20Introduction%20to%20Statistical%20Inference/L2/)**
+    - 📄 [Introduction_to_Statistical_Inference.ipynb](W02%20-%20Introduction%20to%20Statistical%20Inference/L2/Introduction_to_Statistical_Inference.ipynb)
+    - 📄 [Point Estimation.md](W02%20-%20Introduction%20to%20Statistical%20Inference/L2/Point%20Estimation.md)
+    - 📄 [Point Estimation.pdf](W02%20-%20Introduction%20to%20Statistical%20Inference/L2/Point%20Estimation.pdf)
+    - 📄 [Point_Estimation.ipynb](W02%20-%20Introduction%20to%20Statistical%20Inference/L2/Point_Estimation.ipynb)
+    - 📄 [Sampling_Distributions.ipynb](W02%20-%20Introduction%20to%20Statistical%20Inference/L2/Sampling_Distributions.ipynb)
+- 📂 **[W03 - Estimation and Hypothesis Testing](W03%20-%20Estimation%20and%20Hypothesis%20Testing/)**
+  - 📂 **[L0](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L0/)**
+    - 📄 [Module Introduction3.pdf](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L0/Module%20Introduction3.pdf)
+    - 📄 [Statistical Inference in Modelling.md](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L0/Statistical%20Inference%20in%20Modelling.md)
+  - 📂 **[L1](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L1/)**
+    - 📂 **[Assets](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L1/Assets/)**
+      - 📄 [Determining Sample Size.pdf](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L1/Assets/Determining%20Sample%20Size.pdf)
+      - 📄 [Interval Estimation of Mean (σ Known & Unknown).pdf](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L1/Assets/Interval%20Estimation%20of%20Mean%20%28%CF%83%20Known%20%26%20Unknown%29.pdf)
+    - 📄 [3.1 Interval Estimation of the Mean.md](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L1/3.1%20Interval%20Estimation%20of%20the%20Mean.md)
+    - 📄 [Determining Sample Size.md](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L1/Determining%20Sample%20Size.md)
+  - 📂 **[L2](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L2/)**
+    - 📂 **[Assets](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L2/Assets/)**
+      - 📄 [Errors, p-values, and Significance.pdf](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L2/Assets/Errors%2C%20p-values%2C%20and%20Significance.pdf)
+      - 📄 [One-Sample Tests (Z & T).pdf](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L2/Assets/One-Sample%20Tests%20%28Z%20%26%20T%29.pdf)
+      - 📄 [The Hypothesis Testing Framework.pdf](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L2/Assets/The%20Hypothesis%20Testing%20Framework.pdf)
+    - 📂 **[Lab](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L2/Lab/)**
+      - 📄 [Estimation_and_Hypothesis_Testing.ipynb](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L2/Lab/Estimation_and_Hypothesis_Testing.ipynb)
+      - 📄 [Interval_Estimation.ipynb](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L2/Lab/Interval_Estimation.ipynb)
+      - 📄 [Week_3_Tutorial__Estimation_and_Hypothesis_Testing_with_Examples.ipynb](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L2/Lab/Week_3_Tutorial__Estimation_and_Hypothesis_Testing_with_Examples.ipynb)
+    - 📄 [Errors, P-values, and Significance.md](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L2/Errors%2C%20P-values%2C%20and%20Significance.md)
+    - 📄 [Estimation and Hypothesis Testing with Examples.ipynb](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L2/Estimation%20and%20Hypothesis%20Testing%20with%20Examples.ipynb)
+    - 📄 [The Hypothesis Testing Framework.md](W03%20-%20Estimation%20and%20Hypothesis%20Testing/L2/The%20Hypothesis%20Testing%20Framework.md)
+- 📂 **[W04 - Estimation and Hypothesis Testing (cont.)](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/)**
+  - 📂 **[L0](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/L0/)**
+    - 📂 **[Assets](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/L0/Assets/)**
+      - 📄 [Module Introduction 4.pdf](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/L0/Assets/Module%20Introduction%204.pdf)
+    - 📄 [Module 4 Introduction Statistical Inference and Modelling.md](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/L0/Module%204%20Introduction%20Statistical%20Inference%20and%20Modelling.md)
+  - 📂 **[L1](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/L1/)**
+    - 📂 **[Assets](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/L1/Assets/)**
+      - 📄 [Inferences for Two Population Means.pdf](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/L1/Assets/Inferences%20for%20Two%20Population%20Means.pdf)
+      - 📄 [Inferences for Two Population Variances.pdf](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/L1/Assets/Inferences%20for%20Two%20Population%20Variances.pdf)
+    - 📄 [4.1 Inferences for Two Population Means.ipynb](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/L1/4.1%20Inferences%20for%20Two%20Population%20Means.ipynb)
+    - 📄 [4.2 Inferences for Two Population Variances.ipynb](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/L1/4.2%20Inferences%20for%20Two%20Population%20Variances.ipynb)
+    - 📄 [Inferences for Two Population Means.md](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/L1/Inferences%20for%20Two%20Population%20Means.md)
+    - 📄 [Inferences for Two Population Variances.md](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/L1/Inferences%20for%20Two%20Population%20Variances.md)
+  - 📂 **[L2](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/L2/)**
+    - 📂 **[Assets](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/L2/Assets/)**
+      - 📄 [Test of Independence (Chi-Square Test).pdf](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/L2/Assets/Test%20of%20Independence%20%28Chi-Square%20Test%29.pdf)
+      - 📄 [Testing Population Proportions.pdf](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/L2/Assets/Testing%20Population%20Proportions.pdf)
+    - 📄 [Reading Material The Chi-Square Test of Independence.md](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/L2/Reading%20Material%20The%20Chi-Square%20Test%20of%20Independence.md)
+    - 📄 [Testing Population Proportions.md](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/L2/Testing%20Population%20Proportions.md)
+    - 📄 [Week_4_Tutorial_Statistical_Inference_Two_Populations.ipynb](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/L2/Week_4_Tutorial_Statistical_Inference_Two_Populations.ipynb)
+    - 📄 [Week_4_Tutorial_Statistical_Inference_Two_Populations_merged.ipynb](W04%20-%20Estimation%20and%20Hypothesis%20Testing%20%28cont.%29/L2/Week_4_Tutorial_Statistical_Inference_Two_Populations_merged.ipynb)
+- 📂 **[W05 - Analysis of Variance (ANOVA)](W05%20-%20Analysis%20of%20Variance%20%28ANOVA%29/)**
+  - 📂 **[L0](W05%20-%20Analysis%20of%20Variance%20%28ANOVA%29/L0/)**
+    - 📄 [Module 5.md](W05%20-%20Analysis%20of%20Variance%20%28ANOVA%29/L0/Module%205.md)
+    - 📄 [Week 5 ANOVA Tutorial.ipynb](W05%20-%20Analysis%20of%20Variance%20%28ANOVA%29/L0/Week%205%20ANOVA%20Tutorial.ipynb)
+  - 📂 **[L1](W05%20-%20Analysis%20of%20Variance%20%28ANOVA%29/L1/)**
+    - 📄 [Analysis of Variance (ANOVA).ipynb](W05%20-%20Analysis%20of%20Variance%20%28ANOVA%29/L1/Analysis%20of%20Variance%20%28ANOVA%29.ipynb)
+    - 📄 [Introduction to Experimental Design & ANOVA.md](W05%20-%20Analysis%20of%20Variance%20%28ANOVA%29/L1/Introduction%20to%20Experimental%20Design%20%26%20ANOVA.md)
+    - 📄 [One-Way and Two-Way Analysis of Variance (ANOVA).md](W05%20-%20Analysis%20of%20Variance%20%28ANOVA%29/L1/One-Way%20and%20Two-Way%20Analysis%20of%20Variance%20%28ANOVA%29.md)
+- 📂 **[W06 - Simple Linear Regression](W06%20-%20Simple%20Linear%20Regression/)**
+  - 📂 **[L0](W06%20-%20Simple%20Linear%20Regression/L0/)**
+    - 📂 **[Assets](W06%20-%20Simple%20Linear%20Regression/L0/Assets/)**
+      - 📄 [Module Introduction Transcript.pdf](W06%20-%20Simple%20Linear%20Regression/L0/Assets/Module%20Introduction%20Transcript.pdf)
+    - 📄 [Linear Regression.md](W06%20-%20Simple%20Linear%20Regression/L0/Linear%20Regression.md)
+  - 📂 **[L1](W06%20-%20Simple%20Linear%20Regression/L1/)**
+    - 📂 **[Assets](W06%20-%20Simple%20Linear%20Regression/L1/Assets/)**
+      - 📄 [Introduction to Linear Regression Transcript.pdf](W06%20-%20Simple%20Linear%20Regression/L1/Assets/Introduction%20to%20Linear%20Regression%20Transcript.pdf)
+      - 📄 [The Least Squares Method Transcript.pdf](W06%20-%20Simple%20Linear%20Regression/L1/Assets/The%20Least%20Squares%20Method%20Transcript.pdf)
+    - 📄 [Introduction to Linear Regression.md](W06%20-%20Simple%20Linear%20Regression/L1/Introduction%20to%20Linear%20Regression.md)
+    - 📄 [The Method of Least Squares.md](W06%20-%20Simple%20Linear%20Regression/L1/The%20Method%20of%20Least%20Squares.md)
+  - 📂 **[L2](W06%20-%20Simple%20Linear%20Regression/L2/)**
+    - 📂 **[Assets](W06%20-%20Simple%20Linear%20Regression/L2/Assets/)**
+      - 📄 [Coefficient of Determination (R²) Transcript2.pdf](W06%20-%20Simple%20Linear%20Regression/L2/Assets/Coefficient%20of%20Determination%20%28R%C2%B2%29%20Transcript2.pdf)
+      - 📄 [Residual Analysis Transcript2.pdf](W06%20-%20Simple%20Linear%20Regression/L2/Assets/Residual%20Analysis%20Transcript2.pdf)
+      - 📄 [Testing for Significance (F and T) Transcript.pdf](W06%20-%20Simple%20Linear%20Regression/L2/Assets/Testing%20for%20Significance%20%28F%20and%20T%29%20Transcript.pdf)
+    - 📄 [Residual Analysis.md](W06%20-%20Simple%20Linear%20Regression/L2/Residual%20Analysis.md)
+    - 📄 [Simple Linear Regression.ipynb](W06%20-%20Simple%20Linear%20Regression/L2/Simple%20Linear%20Regression.ipynb)
+    - 📄 [Testing for Significance in Regression.md](W06%20-%20Simple%20Linear%20Regression/L2/Testing%20for%20Significance%20in%20Regression.md)
+    - 📄 [The Coefficient of Determination (R²).md](W06%20-%20Simple%20Linear%20Regression/L2/The%20Coefficient%20of%20Determination%20%28R%C2%B2%29.md)
+- 📂 **[W07 - Multiple Regression](W07%20-%20Multiple%20Regression/)**
+  - 📂 **[L0](W07%20-%20Multiple%20Regression/L0/)**
+    - 📂 **[Assets](W07%20-%20Multiple%20Regression/L0/Assets/)**
+      - 📄 [Module Introduction Transcript.pdf](W07%20-%20Multiple%20Regression/L0/Assets/Module%20Introduction%20Transcript.pdf)
+    - 📄 [Module 7 Introduction - Multiple Linear Regression.md](W07%20-%20Multiple%20Regression/L0/Module%207%20Introduction%20-%20Multiple%20Linear%20Regression.md)
+  - 📂 **[L1](W07%20-%20Multiple%20Regression/L1/)**
+    - 📂 **[Assets](W07%20-%20Multiple%20Regression/L1/Assets/)**
+      - 📄 [The Least Squares Method in Multiple Regression Transcript2.pdf](W07%20-%20Multiple%20Regression/L1/Assets/The%20Least%20Squares%20Method%20in%20Multiple%20Regression%20Transcript2.pdf)
+      - 📄 [The Multiple Regression Model Transcript2.pdf](W07%20-%20Multiple%20Regression/L1/Assets/The%20Multiple%20Regression%20Model%20Transcript2.pdf)
+    - 📄 [The Least Squares Method in Multiple Regression.md](W07%20-%20Multiple%20Regression/L1/The%20Least%20Squares%20Method%20in%20Multiple%20Regression.md)
+    - 📄 [The Multiple Regression Model.md](W07%20-%20Multiple%20Regression/L1/The%20Multiple%20Regression%20Model.md)
+  - 📂 **[L2](W07%20-%20Multiple%20Regression/L2/)**
+    - 📂 **[Assets](W07%20-%20Multiple%20Regression/L2/Assets/)**
+      - 📄 [Model Assessment & Adjusted R² Transcript.pdf](W07%20-%20Multiple%20Regression/L2/Assets/Model%20Assessment%20%26%20Adjusted%20R%C2%B2%20Transcript.pdf)
+      - 📄 [Testing for Significance and Multicollinearity Transcript.pdf](W07%20-%20Multiple%20Regression/L2/Assets/Testing%20for%20Significance%20and%20Multicollinearity%20Transcript.pdf)
+    - 📄 [Model Assessment and Adjusted R².md](W07%20-%20Multiple%20Regression/L2/Model%20Assessment%20and%20Adjusted%20R%C2%B2.md)
+    - 📄 [Significance Testing and Multicollinearity.md](W07%20-%20Multiple%20Regression/L2/Significance%20Testing%20and%20Multicollinearity.md)
+  - 📄 [7.1. Categorical Encoding.ipynb](W07%20-%20Multiple%20Regression/7.1.%20Categorical%20Encoding.ipynb)
+  - 📄 [7.2 Multiple Regression.ipynb](W07%20-%20Multiple%20Regression/7.2%20Multiple%20Regression.ipynb)
+  - 📄 [7.3 Multiple Regression Demo Medical Insurance.ipynb](W07%20-%20Multiple%20Regression/7.3%20Multiple%20Regression%20Demo%20Medical%20Insurance.ipynb)
+- 📂 **[W08 - Forecasting & Time Series Analysis](W08%20-%20Forecasting%20%26%20Time%20Series%20Analysis/)**
+  - 📂 **[L0](W08%20-%20Forecasting%20%26%20Time%20Series%20Analysis/L0/)**
+    - 📄 [Module Introduction Transcript.pdf](W08%20-%20Forecasting%20%26%20Time%20Series%20Analysis/L0/Module%20Introduction%20Transcript.pdf)
+    - 📄 [Time Series Analysis.md](W08%20-%20Forecasting%20%26%20Time%20Series%20Analysis/L0/Time%20Series%20Analysis.md)
+  - 📂 **[L1](W08%20-%20Forecasting%20%26%20Time%20Series%20Analysis/L1/)**
+    - 📄 [Introduction to Time Series Transcript.pdf](W08%20-%20Forecasting%20%26%20Time%20Series%20Analysis/L1/Introduction%20to%20Time%20Series%20Transcript.pdf)
+    - 📄 [Introduction to Time Series.md](W08%20-%20Forecasting%20%26%20Time%20Series%20Analysis/L1/Introduction%20to%20Time%20Series.md)
+    - 📄 [Reading Material Introduction to Time Series.md](W08%20-%20Forecasting%20%26%20Time%20Series%20Analysis/L1/Reading%20Material%20Introduction%20to%20Time%20Series.md)
+    - 📄 [Smoothing Methods - Moving Averages Transcript.pdf](W08%20-%20Forecasting%20%26%20Time%20Series%20Analysis/L1/Smoothing%20Methods%20-%20Moving%20Averages%20Transcript.pdf)
+    - 📄 [Smoothing with Moving Averages.md](W08%20-%20Forecasting%20%26%20Time%20Series%20Analysis/L1/Smoothing%20with%20Moving%20Averages.md)
+    - 📄 [Time Series Components Transcript.pdf](W08%20-%20Forecasting%20%26%20Time%20Series%20Analysis/L1/Time%20Series%20Components%20Transcript.pdf)
+    - 📄 [Time Series Components.md](W08%20-%20Forecasting%20%26%20Time%20Series%20Analysis/L1/Time%20Series%20Components.md)
+  - 📂 **[L2](W08%20-%20Forecasting%20%26%20Time%20Series%20Analysis/L2/)**
+    - 📄 [Advanced Exponential Smoothing.md](W08%20-%20Forecasting%20%26%20Time%20Series%20Analysis/L2/Advanced%20Exponential%20Smoothing.md)
+    - 📄 [Exponential Smoothing Transcript.pdf](W08%20-%20Forecasting%20%26%20Time%20Series%20Analysis/L2/Exponential%20Smoothing%20Transcript.pdf)
+    - 📄 [Simple Exponential Smoothing.md](W08%20-%20Forecasting%20%26%20Time%20Series%20Analysis/L2/Simple%20Exponential%20Smoothing.md)
+    - 📄 [Trend and Seasonal Components Transcript.pdf](W08%20-%20Forecasting%20%26%20Time%20Series%20Analysis/L2/Trend%20and%20Seasonal%20Components%20Transcript.pdf)
+  - 📄 [Week_8_Forecasting_&_Time_Series_Analysis.ipynb](W08%20-%20Forecasting%20%26%20Time%20Series%20Analysis/Week_8_Forecasting_%26_Time_Series_Analysis.ipynb)
+- 📂 **[W09 - Factor and Cluster analysis](W09%20-%20Factor%20and%20Cluster%20analysis/)**
+  - 📂 **[L0](W09%20-%20Factor%20and%20Cluster%20analysis/L0/)**
+    - 📂 **[Assets](W09%20-%20Factor%20and%20Cluster%20analysis/L0/Assets/)**
+      - 📄 [Factor Analysis.md](W09%20-%20Factor%20and%20Cluster%20analysis/L0/Assets/Factor%20Analysis.md)
+      - 📄 [Module Introduction Transcript.pdf](W09%20-%20Factor%20and%20Cluster%20analysis/L0/Assets/Module%20Introduction%20Transcript.pdf)
+    - 📄 [Module Intro.md](W09%20-%20Factor%20and%20Cluster%20analysis/L0/Module%20Intro.md)
+  - 📂 **[L1](W09%20-%20Factor%20and%20Cluster%20analysis/L1/)**
+    - 📄 [Conditions for Factor Analysis Transcript.pdf](W09%20-%20Factor%20and%20Cluster%20analysis/L1/Conditions%20for%20Factor%20Analysis%20Transcript.pdf)
+    - 📄 [Conditions for Factor Analysis.md](W09%20-%20Factor%20and%20Cluster%20analysis/L1/Conditions%20for%20Factor%20Analysis.md)
+    - 📄 [Factor_Analysis.ipynb](W09%20-%20Factor%20and%20Cluster%20analysis/L1/Factor_Analysis.ipynb)
+    - 📄 [PCA Vs Factor Analysis.md](W09%20-%20Factor%20and%20Cluster%20analysis/L1/PCA%20Vs%20Factor%20Analysis.md)
+    - 📄 [Principal Component Analysis (PCA) and PCA vs FA Transcript.pdf](W09%20-%20Factor%20and%20Cluster%20analysis/L1/Principal%20Component%20Analysis%20%28PCA%29%20and%20PCA%20vs%20FA%20Transcript.pdf)
+    - 📄 [What is Factor Analysis Transcript.pdf](W09%20-%20Factor%20and%20Cluster%20analysis/L1/What%20is%20Factor%20Analysis%20Transcript.pdf)
+    - 📄 [What is Factor Analysis.md](W09%20-%20Factor%20and%20Cluster%20analysis/L1/What%20is%20Factor%20Analysis.md)
+- 📂 **[W10 - Cluster Analysis](W10%20-%20Cluster%20Analysis/)**
+  - 📂 **[L0](W10%20-%20Cluster%20Analysis/L0/)**
+    - 📄 [Module 10 - Cluster Analysis.md](W10%20-%20Cluster%20Analysis/L0/Module%2010%20-%20Cluster%20Analysis.md)
+    - 📄 [Module Introduction Transcript(w10).pdf](W10%20-%20Cluster%20Analysis/L0/Module%20Introduction%20Transcript%28w10%29.pdf)
+  - 📂 **[L1](W10%20-%20Cluster%20Analysis/L1/)**
+    - 📄 [An Introduction to Cluster Analysis.md](W10%20-%20Cluster%20Analysis/L1/An%20Introduction%20to%20Cluster%20Analysis.md)
+    - 📄 [Choosing the Number of Clusters (K) Transcript.pdf](W10%20-%20Cluster%20Analysis/L1/Choosing%20the%20Number%20of%20Clusters%20%28K%29%20Transcript.pdf)
+    - 📄 [Hierarchical Clustering Transcript.pdf](W10%20-%20Cluster%20Analysis/L1/Hierarchical%20Clustering%20Transcript.pdf)
+    - 📄 [K-Means Clustering Transcript.pdf](W10%20-%20Cluster%20Analysis/L1/K-Means%20Clustering%20Transcript.pdf)
+    - 📄 [What is Cluster Analysis Transcript.pdf](W10%20-%20Cluster%20Analysis/L1/What%20is%20Cluster%20Analysis%20Transcript.pdf)
+  - 📄 [Week_10_cluster_analysis.ipynb](W10%20-%20Cluster%20Analysis/Week_10_cluster_analysis.ipynb)
+- 📂 **[W11 - Maximum Likelihood Methods](W11%20-%20Maximum%20Likelihood%20Methods/)**
+  - 📂 **[L0](W11%20-%20Maximum%20Likelihood%20Methods/L0/)**
+    - 📄 [Module 11.md](W11%20-%20Maximum%20Likelihood%20Methods/L0/Module%2011.md)
+    - 📄 [Module Introduction 11.pdf](W11%20-%20Maximum%20Likelihood%20Methods/L0/Module%20Introduction%2011.pdf)
+  - 📂 **[L1](W11%20-%20Maximum%20Likelihood%20Methods/L1/)**
+    - 📄 [Finding the MLE.pdf](W11%20-%20Maximum%20Likelihood%20Methods/L1/Finding%20the%20MLE.pdf)
+    - 📄 [Maximum Likelihood Estimation.md](W11%20-%20Maximum%20Likelihood%20Methods/L1/Maximum%20Likelihood%20Estimation.md)
+    - 📄 [Properties of MLE.md](W11%20-%20Maximum%20Likelihood%20Methods/L1/Properties%20of%20MLE.md)
+    - 📄 [Properties of MLEs.pdf](W11%20-%20Maximum%20Likelihood%20Methods/L1/Properties%20of%20MLEs.pdf)
+    - 📄 [The Intuition of Maximum Likelihood.pdf](W11%20-%20Maximum%20Likelihood%20Methods/L1/The%20Intuition%20of%20Maximum%20Likelihood.pdf)
+    - 📄 [The Inverse Perspective.md](W11%20-%20Maximum%20Likelihood%20Methods/L1/The%20Inverse%20Perspective.md)
+    - 📄 [The Likelihood Function.md](W11%20-%20Maximum%20Likelihood%20Methods/L1/The%20Likelihood%20Function.md)
+    - 📄 [The Likelihood Function.pdf](W11%20-%20Maximum%20Likelihood%20Methods/L1/The%20Likelihood%20Function.pdf)
+- 📂 **[W12 - Logistic Regression](W12%20-%20Logistic%20Regression/)**
+  - 📂 **[L0](W12%20-%20Logistic%20Regression/L0/)**
+    - 📄 [Discrete Response Models.md](W12%20-%20Logistic%20Regression/L0/Discrete%20Response%20Models.md)
+    - 📄 [Module Introduction Transcript(w12).pdf](W12%20-%20Logistic%20Regression/L0/Module%20Introduction%20Transcript%28w12%29.pdf)
+  - 📂 **[L1](W12%20-%20Logistic%20Regression/L1/)**
+    - 📄 [1. The Linear Probability Model (LPM) Transcript.pdf](W12%20-%20Logistic%20Regression/L1/1.%20The%20Linear%20Probability%20Model%20%28LPM%29%20Transcript.pdf)
+    - 📄 [2. Interpreting Logit Coefficients Transcript.pdf](W12%20-%20Logistic%20Regression/L1/2.%20Interpreting%20Logit%20Coefficients%20Transcript.pdf)
+    - 📄 [3. Probit and Logit Models Transcript.pdf](W12%20-%20Logistic%20Regression/L1/3.%20Probit%20and%20Logit%20Models%20Transcript.pdf)
+    - 📄 [4. Odds Ratios Transcript.pdf](W12%20-%20Logistic%20Regression/L1/4.%20Odds%20Ratios%20Transcript.pdf)
+    - 📄 [Modeling Binary Outcomes.md](W12%20-%20Logistic%20Regression/L1/Modeling%20Binary%20Outcomes.md)
+  - 📄 [Week_12_Logistic_Regression.ipynb](W12%20-%20Logistic%20Regression/Week_12_Logistic_Regression.ipynb)
+- 📂 **[W13 - Introduction To Bayesian Inference](W13%20-%20Introduction%20To%20Bayesian%20Inference/)**
+  - 📂 **[L1](W13%20-%20Introduction%20To%20Bayesian%20Inference/L1/)**
+    - 📄 [An Introduction to Bayesian Inference.md](W13%20-%20Introduction%20To%20Bayesian%20Inference/L1/An%20Introduction%20to%20Bayesian%20Inference.md)
+    - 📄 [Applying Bayes' Theorem The Engine of Inference.pdf](W13%20-%20Introduction%20To%20Bayesian%20Inference/L1/Applying%20Bayes%27%20Theorem%20The%20Engine%20of%20Inference.pdf)
+    - 📄 [The Bayesian Philosophy A New Way of Thinking.pdf](W13%20-%20Introduction%20To%20Bayesian%20Inference/L1/The%20Bayesian%20Philosophy%20A%20New%20Way%20of%20Thinking.pdf)
+  - 📄 [Introduction.md](W13%20-%20Introduction%20To%20Bayesian%20Inference/Introduction.md)
+  - 📄 [Module Introduction13.pdf](W13%20-%20Introduction%20To%20Bayesian%20Inference/Module%20Introduction13.pdf)
+- 📄 [Statistical Inference & Modelling.pdf](Statistical%20Inference%20%26%20Modelling.pdf)
+
+
+---
+*Last updated automatically via Python script.*
