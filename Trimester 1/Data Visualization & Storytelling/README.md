@@ -296,7 +296,3 @@ This index provides quick access to all folders and files within this directory.
     - 📄 [Power BI Dashboard Design.pdf](W13%20-%20Module%204e.%20Power%20BI%20and%20Google%20Data%20Studio/L36/Power%20BI%20Dashboard%20Design.pdf)
     - 📄 [Week 13 PowerBi File1.pbix](W13%20-%20Module%204e.%20Power%20BI%20and%20Google%20Data%20Studio/L36/Week%2013%20PowerBi%20File1.pbix)
 - 📄 [DVS-BITS-Handbook.md](DVS-BITS-Handbook.md)
-
-
----
-*Last updated automatically via Python script.*
