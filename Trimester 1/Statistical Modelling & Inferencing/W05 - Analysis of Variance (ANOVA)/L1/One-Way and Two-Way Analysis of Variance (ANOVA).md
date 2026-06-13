@@ -587,28 +587,14 @@ The results indicate:
 ANOVA fundamentally evaluates:
 
 $$
-\text{Systematic Variability}  
-\quad vs \quad  
-\text{Random Variability}
+\text{Systematic Variability} \quad \text{vs} \quad \text{Random Variability}
 $$
-
-\text{Systematic Variability}\quad vs \quad\text{Random Variability}
 
 The F-statistic operationalizes this comparison:
 
-#
-
 $$
-F
-
-\frac{  
-\text{Signal}  
-}{  
-\text{Noise}  
-}
+F = \frac{\text{Signal}}{\text{Noise}}
 $$
-
-F=\frac{\text{Signal}}{\text{Noise}}
 
 Large F-values indicate that observed group differences exceed what randomness alone would plausibly generate.
 
