@@ -218,7 +218,3 @@ This index provides quick access to all folders and files within this directory.
   - 📄 [Introduction.md](W13%20-%20Introduction%20To%20Bayesian%20Inference/Introduction.md)
   - 📄 [Module Introduction13.pdf](W13%20-%20Introduction%20To%20Bayesian%20Inference/Module%20Introduction13.pdf)
 - 📄 [Statistical Inference & Modelling.pdf](Statistical%20Inference%20%26%20Modelling.pdf)
-
-
----
-*Last updated automatically via Python script.*
