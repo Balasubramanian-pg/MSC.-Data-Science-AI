@@ -1,6 +1,4 @@
----
-
-## Reading Material: Advanced Exponential Smoothing
+# Advanced Exponential Smoothing
 
 ### 1. Beyond Simple Smoothing: The Evolution of Exponential Smoothing
 ![[Pasted image 20260525122029.png]]
