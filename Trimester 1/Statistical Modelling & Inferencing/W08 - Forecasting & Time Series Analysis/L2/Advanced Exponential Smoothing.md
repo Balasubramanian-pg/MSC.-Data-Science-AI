@@ -1,7 +1,7 @@
 # Advanced Exponential Smoothing
 
 ### 1. Beyond Simple Smoothing: The Evolution of Exponential Smoothing
-![[Pasted image 20260525122029.png]]
+
 Simple Exponential Smoothing (SES) is fundamentally a "memory-less" model regarding long-term structural changes. It assumes the series is essentially a stationary process with random noise. In business, where we deal with growth trajectories and recurring cycles, a flat-line forecast is almost always wrong.
 
 To bring reality into our models, we add "memory" of direction and "memory" of rhythm.
