@@ -1,6 +1,4 @@
----
-
-## Reading Material: The Method of Least Squares
+# The Method of Least Squares
 
 # 1. The Problem of “Best Fit”
 
