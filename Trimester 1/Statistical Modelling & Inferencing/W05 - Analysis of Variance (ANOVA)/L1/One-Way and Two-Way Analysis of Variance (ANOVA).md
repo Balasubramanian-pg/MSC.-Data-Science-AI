@@ -43,8 +43,6 @@ P(\text{False Positive})
 \quad \text{as comparisons increase}
 $$
 
-P(\text{False Positive})\uparrow\quad\text{as comparisons increase}
-
 ANOVA solves this by evaluating all groups within a single inferential framework.
 
 The primary objective is determining whether observed mean differences are:
