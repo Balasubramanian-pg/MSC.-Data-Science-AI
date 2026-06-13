@@ -150,15 +150,11 @@ H_0:
 \mu_1 = \mu_2 = \dots = \mu_k
 $$
 
-H_0:\mu_1=\mu_2=\dots=\mu_k
-
 The alternative hypothesis states:
 
 $$
 \text{At least one population mean differs}
 $$
-
-\text{At least one population mean differs}
 
 This is called an omnibus hypothesis because it tests for any overall difference rather than specific pairwise differences.
 
@@ -201,8 +197,6 @@ X_j
 (i \ne j)
 $$
 
-X_i\perp X_j\quad(i\ne j)
-
 Violations of independence are extremely serious because they invalidate standard error calculations.
 
 Examples of violations include:
@@ -225,8 +219,6 @@ Formally:
 $$
 X_i \sim N(\mu_i,\sigma^2)
 $$
-
-X_i\sim N(\mu_i,\sigma^2)
 
 ANOVA is relatively robust to moderate normality violations, especially when sample sizes are reasonably large.
 
