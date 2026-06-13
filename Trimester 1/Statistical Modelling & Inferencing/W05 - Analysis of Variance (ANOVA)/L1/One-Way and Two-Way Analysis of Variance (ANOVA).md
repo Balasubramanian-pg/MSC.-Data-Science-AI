@@ -1,6 +1,4 @@
----
-
-## Reading Material: One-Way and Two-Way Analysis of Variance (ANOVA)
+# One-Way and Two-Way Analysis of Variance (ANOVA)
 
 **Contents**
 
