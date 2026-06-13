@@ -1,10 +1,4 @@
----
-title: W01 - Introduction to Data Science
-module: Statistical Modelling And Inferencing
-week: W01 - Introduction to Data Science
----
-
-## Introduction to Data Science: Evolution, Architecture, and Foundations
+# Introduction to Data Science: Evolution, Architecture, and Foundations
 
 > [!NOTE]
 > Data Science is an interdisciplinary paradigm that synthesizes algorithms, statistical methodologies, and distributed systems to extract actionable knowledge and predictive insights from massive volumes of structured and unstructured data.
@@ -194,5 +188,3 @@ Data Science acts as the analytical engine across various verticals:
 *   **Information Theory:** Study Shannon Entropy to mathematically quantify the "amount of information" inside a dataset.
 *   **Distributed Systems:** Learn MapReduce, Hadoop, and Apache Spark architecture to understand how data science operates at the petabyte scale.
 *   **Statistical Inference:** Deepen your understanding of MLE (Maximum Likelihood Estimation) and MAP (Maximum A Posteriori) to ground machine learning in rigorous probability theory.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
