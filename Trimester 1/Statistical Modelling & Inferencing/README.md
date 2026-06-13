@@ -4,7 +4,7 @@ This index provides quick access to all folders and files within this directory.
 
 ## 🌲 File Structure
 
-- 📂 **[Assets](Assets/)**
+- data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24'%3e%3cpath stroke='%23664FC2' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m13 7-1.116-2.231c-.32-.642-.481-.963-.72-1.198a2 2 0 0 0-.748-.462C10.1 3 9.74 3 9.022 3H5.2c-1.12 0-1.68 0-2.108.218a2 2 0 0 0-.874.874C2 4.52 2 5.08 2 6.2V7m0 0h15.2c1.68 0 2.52 0 3.162.327a3 3 0 0 1 1.311 1.311C22 9.28 22 10.12 22 11.8v4.4c0 1.68 0 2.52-.327 3.162a3 3 0 0 1-1.311 1.311C19.72 21 18.88 21 17.2 21H6.8c-1.68 0-2.52 0-3.162-.327a3 3 0 0 1-1.311-1.311C2 18.72 2 17.88 2 16.2z'/%3e%3c/svg%3e **[Assets](Assets/)**
   - 📄 [introductory-statistics-2e_-_WEB.pdf](Assets/introductory-statistics-2e_-_WEB.pdf)
   - 📄 [ISLP_website.pdf](Assets/ISLP_website.pdf)
   - 📄 [Probability_Statistics_Resources.pdf](Assets/Probability_Statistics_Resources.pdf)
