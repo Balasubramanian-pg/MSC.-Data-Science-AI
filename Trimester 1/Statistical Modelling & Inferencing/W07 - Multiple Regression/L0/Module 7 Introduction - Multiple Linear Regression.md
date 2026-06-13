@@ -1,10 +1,4 @@
----
-title: W07 - Multiple Regression
-module: Statistical Modelling And Inferencing
-week: W07 - Multiple Regression
----
-
-## 1. From Simple to Multiple Regression
+# 1. From Simple to Multiple Regression
 
 In the previous module, we studied:
 
