@@ -1,3 +1,9 @@
+---
+title: W07 - Feature Engineering Techniques for Time-Series Data
+module: Statistical Modelling And Inferencing
+week: W07 - Feature Engineering Techniques for Time-Series Data
+---
+
 This module introduces the specialized domain of **Time-Series Feature Engineering**. Unlike traditional tabular datasets where the I.I.D. (Independent and Identically Distributed) assumption holds, time-series data is characterized by temporal order, autocorrelation, and potential non-stationarity.
 
 ### 1. Foundational Concepts
