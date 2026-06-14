@@ -65,3 +65,6 @@ plt.show()
 Use t-SNE when you need to "see" your data to understand its topology—for instance, verifying if your classes are naturally separable or identifying if your clustering algorithm is failing due to poor data structure. If you need a deterministic, reproducible feature set for training a predictive model, **rely on PCA or SVD instead.**
 
 Would you like to discuss the concept of "Perplexity" in t-SNE—the parameter that dictates how many neighbors the algorithm considers—or should we move to a different module?
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
