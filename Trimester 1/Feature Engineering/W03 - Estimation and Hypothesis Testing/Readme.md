@@ -1,10 +1,4 @@
----
-title: W03 - General Feature Engineering Techniques
-module: Statistical Modelling And Inferencing
-week: W03 - General Feature Engineering Techniques
----
-
-## Week 3: General Feature Engineering Techniques
+# Week 3: General Feature Engineering Techniques
 
 ## [1. Concept Introduction](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01%20-%20Overview%20of%20Feature%20Engineering/Readme.md#1-concept-introduction)
 
