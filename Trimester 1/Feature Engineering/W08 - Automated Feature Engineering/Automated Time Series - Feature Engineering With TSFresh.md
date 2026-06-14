@@ -79,3 +79,6 @@ The `select_features` utility is not a black box; it utilizes **statistical hypo
 TSFresh is an excellent "exploratory" tool. When you have a complex time series and are unsure which statistical indicators are most predictive, TSFresh will perform the heavy lifting of extracting hundreds of possibilities and filtering them down to the most statistically significant candidates.
 
 **Would you like to discuss the difference between the "brute-force" statistical approach of TSFresh and the "domain-driven" approach of financial indicators, or are you ready to look at how to integrate these extracted features into a predictive model?**
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
