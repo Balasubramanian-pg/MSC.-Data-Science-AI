@@ -40,11 +40,11 @@ Python
 from sklearn.manifold import TSNE
 import matplotlib.pyplot as plt
 
-# t-SNE preserves local structure; ideal for finding clusters
+## t-SNE preserves local structure; ideal for finding clusters
 tsne = TSNE(n_components=2, perplexity=30, random_state=42)
 X_tsne = tsne.fit_transform(X_scaled)
 
-# Visualize the resulting 2D space
+## Visualize the resulting 2D space
 plt.scatter(X_tsne[:, 0], X_tsne[:, 1], c=labels)
 plt.title("t-SNE Visualization")
 plt.show()
