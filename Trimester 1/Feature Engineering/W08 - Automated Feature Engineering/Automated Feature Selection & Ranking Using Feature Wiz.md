@@ -1,3 +1,9 @@
+---
+title: W08 - Automated Feature Engineering
+module: Statistical Modelling And Inferencing
+week: W08 - Automated Feature Engineering
+---
+
 The **FeatureWiz** library is a powerful, automated, model-driven tool designed for rapid feature selection and engineering. It is particularly effective for high-dimensional datasets ("wide data") where manual feature selection would be computationally prohibitive or prone to human error.
 
 ### 1. The FeatureWiz Architecture
