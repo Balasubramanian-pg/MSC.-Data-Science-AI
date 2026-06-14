@@ -1,3 +1,9 @@
+---
+title: W04 - Dimensionality Reduction Techniques
+module: Statistical Modelling And Inferencing
+week: W04 - Dimensionality Reduction Techniques
+---
+
 ### Principal Component Analysis (PCA) Technical Notes
 
 #### 1. Clear Overview
