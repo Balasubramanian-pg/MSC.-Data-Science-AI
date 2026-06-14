@@ -37,18 +37,18 @@ Python
 ```
 import featuretools as ft
 
-# 1. Create the container
+## 1. Create the container
 es = ft.EntitySet(id="credit_data")
 
-# 2. Add Entities
+## 2. Add Entities
 es.add_dataframe(dataframe_name="customers", dataframe=customers_df, index="customer_id")
 es.add_dataframe(dataframe_name="credits", dataframe=credit_df, index="credit_index")
 
-# 3. Define Relationships (Parent to Child)
+## 3. Define Relationships (Parent to Child)
 relationship = ft.Relationship(es, "customers", "customer_id", "credits", "customer_id")
 es.add_relationship(relationship)
 
-# 4. Deep Feature Synthesis
+## 4. Deep Feature Synthesis
 feature_matrix, feature_defs = ft.dfs(
     entityset=es,
     target_dataframe_name="customers",
