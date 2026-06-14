@@ -1,3 +1,9 @@
+---
+title: W04 - Dimensionality Reduction Techniques
+module: Statistical Modelling And Inferencing
+week: W04 - Dimensionality Reduction Techniques
+---
+
 ### t-Distributed Stochastic Neighbor Embedding (t-SNE)
 
 #### 1. Clear Overview
