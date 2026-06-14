@@ -19,3 +19,6 @@ By the end of this module, you will be able to:
 3. Explore advanced text representations such as word embeddings and one-hot encoding.
 4. Apply part-of-speech (POS) tagging and other linguistic features to enrich text data.
 5. Implement and evaluate text vectorization methods in real-world scenarios.
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
