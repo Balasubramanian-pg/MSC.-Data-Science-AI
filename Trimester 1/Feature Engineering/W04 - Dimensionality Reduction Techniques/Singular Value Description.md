@@ -79,3 +79,6 @@ X_svd = svd.fit_transform(X)
 **Closing Note:** SVD is a versatile workhorse in data science. It is essential to recognize that it doesn't just reduce data; it discovers the underlying "hidden" factors that drive the variation within your observations.
 
 Would you like to review the implementation of **t-SNE** next to compare how it preserves local versus global structure, or do you have any technical questions about the SVD factorization process?
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
