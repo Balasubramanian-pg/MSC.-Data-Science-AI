@@ -1,3 +1,9 @@
+---
+title: W07 - Feature Engineering Techniques for Time-Series Data
+module: Statistical Modelling And Inferencing
+week: W07 - Feature Engineering Techniques for Time-Series Data
+---
+
 Time series feature engineering in finance requires a transition from raw price data to structured, domain-informed indicators. By transforming daily OHLCV (Open, High, Low, Close, Volume) data into indicators like **Moving Averages**, **RSI**, and **Bollinger Bands**, you move from observing raw price movement to capturing the "market psychology" of momentum and volatility.
 
 ### 1. Foundational Engineering Toolkit
