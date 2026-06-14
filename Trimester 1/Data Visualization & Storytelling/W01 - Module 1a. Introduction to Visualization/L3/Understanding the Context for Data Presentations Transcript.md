@@ -1,5 +1,3 @@
-Below are structured study notes designed for revision, exams, and practical data visualization work.
-
 # W01 - Module 1a: Understanding Context in Data Visualization
 
 **Module:** Statistical Modelling and Inferencing
@@ -15,8 +13,6 @@ After studying this module, you should be able to:
 * Select appropriate visualizations based on purpose
 * Recognize how the same dataset can produce different visualizations for different stakeholders
 * Develop a framework for establishing context before creating charts
-
----
 
 # 1. Introduction
 
@@ -45,8 +41,6 @@ With context:
 * Storytelling becomes clearer
 * Decision-making becomes easier
 
----
-
 # 2. What is Context?
 
 ## Definition
@@ -66,8 +60,6 @@ Context is not directly visible like:
 * Dashboards
 
 Instead, it is a design philosophy that guides all visualization choices.
-
----
 
 # 3. Why Context Matters
 
@@ -106,8 +98,6 @@ It helps identify:
 * Appropriate visuals
 * Necessary explanations
 
----
-
 # 4. The Core Elements of Context
 
 The lecture highlights three critical questions.
@@ -127,8 +117,6 @@ Examples:
 
 Different audiences require different communication styles.
 
----
-
 ## Question 2
 
 ### What are they trying to learn?
@@ -142,8 +130,6 @@ Examples:
 | Election Commission | Causes of low turnout |
 | CEO                 | Business performance  |
 | Investor            | Growth potential      |
-
----
 
 ## Question 3
 
@@ -160,8 +146,6 @@ You may need:
 * Region information
 * Demographic data
 * Historical trends
-
----
 
 # 5. Context Drives Visualization Design
 
@@ -188,8 +172,6 @@ D --> G[Visualization 2]
 E --> H[Visualization 3]
 ```
 
----
-
 # 6. Election Example from the Lecture
 
 The instructor uses voter turnout data to illustrate context.
@@ -202,8 +184,6 @@ Assume the dataset contains:
 * Polling booth information
 
 Different stakeholders need different insights.
-
----
 
 # Scenario 1: National Newspaper
 
@@ -244,8 +224,6 @@ The audience wants:
 * Quick understanding
 * Easy comparison
 * Minimal interpretation effort
-
----
 
 # Scenario 2: Regional Newspaper or Political Party
 
@@ -294,8 +272,6 @@ North --> Delhi
 
 The audience is interested in regional patterns rather than national summaries.
 
----
-
 # Scenario 3: Election Commission
 
 ## Objective
@@ -322,8 +298,6 @@ to
 "Why did it happen?"
 ```
 
----
-
 ## Example Analysis
 
 Relationship between:
@@ -346,8 +320,6 @@ The analysis revealed:
 
 > Higher voters per booth may be associated with slightly lower turnout.
 
----
-
 ## Potential Policy Insight
 
 Increase polling booths.
@@ -361,8 +333,6 @@ Better accessibility
 ↓
 Higher participation
 ```
-
----
 
 # 7. Exploratory vs Explanatory Visualization
 
@@ -384,8 +354,6 @@ Examples:
 * Correlation matrices
 * Pair plots
 
----
-
 ## Explanatory Visualization
 
 Used for communication.
@@ -402,8 +370,6 @@ Examples:
 * Infographics
 * Dashboards
 
----
-
 ## Comparison
 
 | Feature     | Exploratory | Explanatory   |
@@ -414,8 +380,6 @@ Examples:
 | Detail      | Extensive   | Focused       |
 | Visual Type | Analytical  | Storytelling  |
 
----
-
 # 8. Why the "Best" Chart Depends on Context
 
 The lecture presents an important lesson.
@@ -423,8 +387,6 @@ The lecture presents an important lesson.
 A scatter plot and a bar chart can communicate the same information.
 
 Yet one may be superior depending on the audience.
-
----
 
 ## For General Public
 
@@ -438,8 +400,6 @@ Reason:
 * Easy to read
 * Requires minimal interpretation
 
----
-
 ## For Analysts
 
 Best Choice:
@@ -451,8 +411,6 @@ Reason:
 * Shows relationships
 * Supports investigation
 * Provides deeper insight
-
----
 
 # 9. Context and Storytelling
 
@@ -474,8 +432,6 @@ If any component is misaligned:
 
 Communication becomes ineffective.
 
----
-
 # 10. Questions to Build Context
 
 Before creating any visualization, ask:
@@ -486,21 +442,15 @@ Before creating any visualization, ask:
 * What is their expertise level?
 * What decisions do they make?
 
----
-
 ## Objective Questions
 
 * What problem am I solving?
 * What action should result from this visual?
 
----
-
 ## Data Questions
 
 * Do I have sufficient data?
 * Do I need additional variables?
-
----
 
 ## Constraint Questions
 
@@ -508,14 +458,10 @@ Before creating any visualization, ask:
 * How much space is available?
 * Will this be viewed on a slide, dashboard, or mobile screen?
 
----
-
 ## Bias Questions
 
 * Does the audience have preconceived beliefs?
 * Could the visual be misinterpreted?
-
----
 
 # 11. Practical Framework
 
@@ -538,8 +484,6 @@ E --> F[Tell Story]
 F --> G[Drive Action]
 ```
 
----
-
 # 12. Real-World Business Example
 
 Suppose a company wants to visualize sales data.
@@ -561,8 +505,6 @@ Different story.
 
 Different visualization.
 
----
-
 # 13. Common Mistakes
 
 ## Mistake 1
@@ -581,8 +523,6 @@ Correct:
 Who am I presenting to?
 ```
 
----
-
 ## Mistake 2
 
 Ignoring audience expertise.
@@ -591,15 +531,11 @@ Example:
 
 Using regression plots for non-technical executives.
 
----
-
 ## Mistake 3
 
 Showing everything.
 
 More information does not mean more insight.
-
----
 
 ## Mistake 4
 
@@ -607,23 +543,17 @@ Using analyst visuals for public communication.
 
 Complexity often reduces understanding.
 
----
-
 ## Mistake 5
 
 Ignoring time constraints.
 
 A CEO with 30 seconds requires a different visual than an analyst with 30 minutes.
 
----
-
 # 14. Key Examination Points
 
 ### Define Context
 
 Context is the understanding of audience, purpose, constraints, and communication goals that guide visualization design.
-
----
 
 ### Why is Context Important?
 
@@ -633,13 +563,9 @@ Because it determines:
 * Which visual should be used
 * How insights should be communicated
 
----
-
 ### Central Element of Context
 
 The audience.
-
----
 
 ### Main Questions for Establishing Context
 
@@ -648,13 +574,9 @@ The audience.
 3. Do I have sufficient data?
 4. What action should result?
 
----
-
 ### Same Data, Different Visuals
 
 Different stakeholders require different perspectives from the same dataset.
-
----
 
 # Final Takeaways
 
