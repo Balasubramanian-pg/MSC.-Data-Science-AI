@@ -1,3 +1,9 @@
+---
+title: W04 - Dimensionality Reduction Techniques
+module: Statistical Modelling And Inferencing
+week: W04 - Dimensionality Reduction Techniques
+---
+
 Dimensionality reduction is a vital component of modern machine learning. As datasets grow in size and complexity, the number of features—or dimensions—can become a significant hurdle. Understanding why this happens and how to manage it is key to building efficient, generalizable models.
 
 ### 1. What is Dimensionality?
