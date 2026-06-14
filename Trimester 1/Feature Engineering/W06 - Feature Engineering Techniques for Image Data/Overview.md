@@ -1,3 +1,9 @@
+---
+title: W06 - Feature Engineering Techniques for Image Data
+module: Statistical Modelling And Inferencing
+week: W06 - Feature Engineering Techniques for Image Data
+---
+
 This module provides a foundational bridge between raw pixel data and meaningful machine learning features. While deep learning models (like CNNs) automatically learn hierarchical features, understanding manual **Computer Vision (CV)** techniques is vital for classical machine learning pipelines, computational efficiency, and robust preprocessing.
 
 ### 1. The Challenges of Image Data
