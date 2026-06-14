@@ -1,3 +1,9 @@
+---
+title: W04 - Dimensionality Reduction Techniques
+module: Statistical Modelling And Inferencing
+week: W04 - Dimensionality Reduction Techniques
+---
+
 This module focuses on **Dimensionality Reduction**, a critical set of techniques for managing high-dimensional datasets where the number of features can obscure underlying patterns or lead to the "curse of dimensionality."
 
 ### 1. The Necessity of Dimensionality Reduction
