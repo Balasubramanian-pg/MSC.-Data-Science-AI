@@ -1,3 +1,9 @@
+---
+title: W04 - Dimensionality Reduction Techniques
+module: Statistical Modelling And Inferencing
+week: W04 - Dimensionality Reduction Techniques
+---
+
 This module provided a strategic overview of **Dimensionality Reduction**, a core pillar of feature engineering used to combat the "curse of dimensionality." By reducing the number of variables while preserving the underlying signal, these techniques enhance model generalizability, reduce computational load, and enable visual interpretation of high-dimensional datasets.
 
 ### **1. Core Dimensionality Reduction Techniques**
