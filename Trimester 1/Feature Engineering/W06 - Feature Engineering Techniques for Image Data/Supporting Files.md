@@ -1,3 +1,9 @@
+---
+title: W06 - Feature Engineering Techniques for Image Data
+module: Statistical Modelling And Inferencing
+week: W06 - Feature Engineering Techniques for Image Data
+---
+
 To assist with your learning, I have compiled a structured index of key topics in data science based on your requested areas of focus. I have grouped these into logical learning paths, starting from fundamental concepts and advancing to technical implementations.
 
 ### **Part 1: Feature Engineering & Selection**
