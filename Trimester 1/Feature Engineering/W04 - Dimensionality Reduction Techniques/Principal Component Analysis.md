@@ -42,11 +42,11 @@ When applying PCA to the `load_digits` dataset (64 features, 8x8 pixel intensity
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 
-# 1. Scaling is mandatory
+## 1. Scaling is mandatory
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
-# 2. Extract components
+## 2. Extract components
 pca = PCA(n_components=2)
 X_pca = pca.fit_transform(X_scaled)
 ```
@@ -59,7 +59,7 @@ To determine the optimal $k$ (number of components), analyze the cumulative expl
 pca_full = PCA().fit(X_scaled)
 cumulative_variance = np.cumsum(pca_full.explained_variance_ratio_)
 
-# Plotting the elbow curve
+## Plotting the elbow curve
 plt.plot(cumulative_variance)
 plt.axhline(y=0.95, color='r', linestyle='--') # Identify k for 95% retention
 ```
