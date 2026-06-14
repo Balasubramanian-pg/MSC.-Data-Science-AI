@@ -1,10 +1,5 @@
----
-title: W01 - Module 1a. Introduction to Visualization
-module: Statistical Modelling And Inferencing
-week: W01 - Module 1a. Introduction to Visualization
----
+# 1. Introduction to the Seven Stages of Data Visualization
 
-![[Pasted image 20260527230732.png]]
 ## Table of Contents
 
 1. [Introduction to the Seven Stages of Data Visualization](https://chatgpt.com/g/g-p-6a0d41583fe88191a2893b540108b3b5-msc-data-science/c/6a10ae9f-5308-8321-80ea-23d7426ab7ae#1-introduction-to-the-seven-stages-of-data-visualization)  
@@ -51,7 +46,6 @@ week: W01 - Module 1a. Introduction to Visualization
 9. [Golden Rules of Effective Data Visualization](https://chatgpt.com/g/g-p-6a0d41583fe88191a2893b540108b3b5-msc-data-science/c/6a10ae9f-5308-8321-80ea-23d7426ab7ae#9-golden-rules-of-effective-data-visualization)
     
 
-## 1. Introduction to the Seven Stages of Data Visualization
 
 ## 1.1 Purpose of the Visualization Workflow
 
