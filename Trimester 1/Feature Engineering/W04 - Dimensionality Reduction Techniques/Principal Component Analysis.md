@@ -84,3 +84,6 @@ plt.axhline(y=0.95, color='r', linestyle='--') # Identify k for 95% retention
 **Important Note:** PCA assumes the relationships in your data are linear. If your data structure is inherently non-linear (e.g., a manifold like a Swiss Roll), PCA will fail to capture the underlying structure, and techniques like **t-SNE** or **UMAP** are preferred.
 
 Would you like to examine how to integrate PCA into a machine learning `Pipeline`, or do you have questions on interpreting the loading vectors?
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
