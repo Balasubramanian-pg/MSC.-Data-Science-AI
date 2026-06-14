@@ -1,3 +1,9 @@
+---
+title: W08 - Automated Feature Engineering
+module: Statistical Modelling And Inferencing
+week: W08 - Automated Feature Engineering
+---
+
 This module provides a robust framework for automating the most time-consuming aspects of the data science lifecycle: **feature creation** and **feature selection**. By moving away from manual, heuristic-based engineering, you can scale your modeling efforts to handle complex relational and temporal datasets efficiently.
 
 ### 1. Automated Feature Engineering Ecosystem
