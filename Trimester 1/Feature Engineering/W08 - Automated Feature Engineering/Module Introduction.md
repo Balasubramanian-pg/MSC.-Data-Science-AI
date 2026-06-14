@@ -60,3 +60,6 @@ While powerful, automation is not a replacement for data science rigor:
     
 
 **Which of these three techniques are you most interested in implementing first? I can help you draft the code for your specific data structure.**
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
