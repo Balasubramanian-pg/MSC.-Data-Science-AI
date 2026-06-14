@@ -45,13 +45,13 @@ Python
 ```
 from sklearn.decomposition import TruncatedSVD
 
-# Truncated SVD reduces the dataset to latent dimensions
-# This is often used for text embeddings or recommendation systems
+## Truncated SVD reduces the dataset to latent dimensions
+## This is often used for text embeddings or recommendation systems
 svd = TruncatedSVD(n_components=2)
 X_svd = svd.fit_transform(X)
 
-# The result X_svd contains latent features, not original ones.
-# These latent features represent complex, summarized patterns.
+## The result X_svd contains latent features, not original ones.
+## These latent features represent complex, summarized patterns.
 ```
 
 #### 4. Critical Interpretation & Trade-offs
