@@ -1,10 +1,4 @@
----
-title: W11 - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods
-module: Statistical Modelling And Inferencing
-week: W11 - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods - Maximum Likelihood Methods
----
-
-### Welcome to Module 11: Maximum Likelihood Estimation (MLE)
+# Maximum Likelihood Estimation (MLE)
 
 You are stepping into the engine room of modern statistics. While methods like hypothesis testing and confidence intervals are essential, **Maximum Likelihood Estimation (MLE)** provides the overarching framework that connects theoretical probability to real-world data application. It is the backbone of almost every statistical model—from the logistic regressions used in clinical trials to the neural networks driving modern machine learning.
 
