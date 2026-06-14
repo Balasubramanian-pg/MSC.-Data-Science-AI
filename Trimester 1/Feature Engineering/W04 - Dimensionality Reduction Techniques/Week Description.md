@@ -71,3 +71,6 @@ t-SNE is a non-linear dimensionality reduction technique designed specifically f
 **Best Practice:** Use PCA or SVD when you need reproducible, stable features for a predictive model. Use t-SNE when you need to "see" your data structure to verify class separability or find hidden clusters during exploratory data analysis (EDA).
 
 Would you like to explore the code implementation for these techniques, or would you like to discuss the trade-offs between "Linear" vs "Non-linear" dimensionality reduction in more detail?
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
