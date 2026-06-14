@@ -1,4 +1,4 @@
-# W01 - Module 1a: Understanding Context in Data Visualization
+# Understanding Context in Data Visualization
 
 **Module:** Statistical Modelling and Inferencing
 **Topic:** Context for Effective Data Presentations
