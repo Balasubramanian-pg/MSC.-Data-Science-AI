@@ -1,3 +1,9 @@
+---
+title: W08 - Automated Feature Engineering
+module: Statistical Modelling And Inferencing
+week: W08 - Automated Feature Engineering
+---
+
 This module covers the shift from manual feature engineering—a labor-intensive, domain-specific task—to **Automated Feature Engineering (AFE)**. AFE leverages algorithms to systematically discover predictive patterns, reducing human bias and drastically speeding up the model development lifecycle.
 
 ### 1. The Core Paradigm Shift
