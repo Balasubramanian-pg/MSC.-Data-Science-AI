@@ -78,3 +78,6 @@ feature_matrix, feature_defs = ft.dfs(
 Featuretools is a powerful force multiplier for rapid prototyping. By defining your data structure once, you enable the library to explore features that might have taken you days to implement manually.
 
 **Are you ready to move into the implementation phase with your own relational data, or would you like to discuss specific strategies for selecting the best features out of the massive matrix that Featuretools generates?**
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
