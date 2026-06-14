@@ -1,3 +1,9 @@
+---
+title: W07 - Feature Engineering Techniques for Time-Series Data
+module: Statistical Modelling And Inferencing
+week: W07 - Feature Engineering Techniques for Time-Series Data
+---
+
 Time series data represents a significant shift from the tabular data you have encountered so far. In traditional machine learning, we often assume that data points (rows) are **Independent and Identically Distributed (I.I.D.)**. In time series, this assumption is explicitly violated: **the sequence matters**.
 
 ### 1. What Makes Time Series Data Unique?
