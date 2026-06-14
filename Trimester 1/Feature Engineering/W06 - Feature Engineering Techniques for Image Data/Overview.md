@@ -59,3 +59,6 @@ Classical feature engineering acts as a "pruning" mechanism. By feeding a model 
 **Next Steps:**
 
 We will move from theory to implementation. Would you like to start by examining how to apply the **Canny Edge Detection** algorithm, or would you prefer a deep dive into the **HOG** parameter tuning?
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
