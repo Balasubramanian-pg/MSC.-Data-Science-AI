@@ -53,3 +53,6 @@ As you transition to implementation, these principles are critical:
 Feature engineering for time series is about transforming noisy, drifting sequences into stable, predictive inputs. By leveraging the temporal structure through lags, windows, and domain-specific indicators, you provide your model with the "context" it needs to forecast accurately.
 
 **Would you like to move into the implementation phase? I can provide code templates for generating lag and rolling windows in `pandas`, or we can discuss how to perform formal stationarity testing using the Augmented Dickey-Fuller (ADF) test.**
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
