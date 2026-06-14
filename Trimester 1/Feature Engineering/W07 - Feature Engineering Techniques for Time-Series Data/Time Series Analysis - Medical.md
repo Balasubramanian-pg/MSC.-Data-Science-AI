@@ -1,3 +1,9 @@
+---
+title: W07 - Feature Engineering Techniques for Time-Series Data
+module: Statistical Modelling And Inferencing
+week: W07 - Feature Engineering Techniques for Time-Series Data
+---
+
 Feature engineering in healthcare—specifically for cardiovascular signals like ECGs—requires moving beyond simple averages to capturing **variability** and **temporal context**. The RR interval (the time between R-peaks) is the fundamental unit of analysis for heart health.
 
 ### 1. The Core Metric: RR Intervals & HRV
