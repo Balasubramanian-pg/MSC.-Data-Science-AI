@@ -1,10 +1,4 @@
----
-title: W01 - Module 1a. Introduction to Visualization
-module: Statistical Modelling And Inferencing
-week: W01 - Module 1a. Introduction to Visualization
----
-
-## Various Types of Charts and Their Analytical Purpose
+# Various Types of Charts and Their Analytical Purpose
 
 Source Transcript:
 
