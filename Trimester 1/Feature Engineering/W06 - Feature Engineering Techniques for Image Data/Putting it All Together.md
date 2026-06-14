@@ -1,3 +1,9 @@
+---
+title: W06 - Feature Engineering Techniques for Image Data
+module: Statistical Modelling And Inferencing
+week: W06 - Feature Engineering Techniques for Image Data
+---
+
 This module demonstrates the practical impact of **Feature Engineering** on model performance. By comparing models trained on "raw" data versus "engineered" features, we can quantify the value of transforming pixels into structured descriptors like **Histogram of Oriented Gradients (HOG)**, **Edges (Canny)**, or **Corners (Harris/Shi-Tomasi)**.
 
 ### 1. Experimental Methodology: Raw Pixels vs. Engineered Features
