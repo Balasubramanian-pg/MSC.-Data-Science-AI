@@ -1,10 +1,4 @@
----
-title: W06 - Feature Engineering Techniques for Image Data
-module: Statistical Modelling And Inferencing
-week: W06 - Feature Engineering Techniques for Image Data
----
-
-## Week 6: Feature Engineering Techniques for Image Data
+# Week 6: Feature Engineering Techniques for Image Data
 
 ## Feature Engineering Techniques for Image Data
 
