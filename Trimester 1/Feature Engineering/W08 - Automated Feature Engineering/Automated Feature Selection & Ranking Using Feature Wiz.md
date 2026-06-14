@@ -34,11 +34,11 @@ Python
 ```
 from featurewiz import featurewiz
 
-# 1. Automated call
-# 'target': name of target variable
-# 'corr_limit': maximum correlation allowed between features (e.g., 0.7)
-# 'feature_eng': 'interactions' creates new features (e.g., Age * Income)
-# 'category_encoders': 'ordinal' (efficient for tree-based models)
+## 1. Automated call
+## 'target': name of target variable
+## 'corr_limit': maximum correlation allowed between features (e.g., 0.7)
+## 'feature_eng': 'interactions' creates new features (e.g., Age * Income)
+## 'category_encoders': 'ordinal' (efficient for tree-based models)
 features, train = featurewiz(
     data_df, 
     target='target_column', 
