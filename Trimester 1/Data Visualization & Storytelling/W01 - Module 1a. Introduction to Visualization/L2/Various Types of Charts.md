@@ -1,6 +1,6 @@
 # Various Types of Charts and Their Analytical Purpose
 
-Source Transcript:
+The analytical purpose of various charts being used are the subject matter of this documentation
 
 ## Table of Contents
 
