@@ -48,11 +48,9 @@ rather than
 
 > Data-Centric Reporting
 
-[!IMPORTANT]
-
-The goal of visualization is not to display data.
-
-The goal is to influence understanding, decision-making, and action.
+>[!IMPORTANT]
+>The goal of visualization is not to display data.
+>The goal is to influence understanding, decision-making, and action.
 
 ## 2. From Data to Action
 
