@@ -57,3 +57,6 @@ Dimensionality reduction is a balancing act. You are trading a small amount of i
     
 
 Would you like to deep dive into the mathematical mechanics of **PCA**, or shall we look at how to implement **t-SNE** for data visualization?
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
