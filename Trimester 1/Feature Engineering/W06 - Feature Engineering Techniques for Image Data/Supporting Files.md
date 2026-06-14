@@ -97,3 +97,6 @@ For a clear, visual breakdown of dimensionality reduction and linear transformat
 [Linear dimensionality reduction (PCA and SVD)](https://www.youtube.com/watch?v=35qKVbvB6-Y)
 
 This video is highly relevant because it bridges the gap between the geometric intuition of data and the linear algebra tricks (eigendecomposition/SVD) used to compress it, which aligns perfectly with your module objectives on dimensionality reduction.
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
