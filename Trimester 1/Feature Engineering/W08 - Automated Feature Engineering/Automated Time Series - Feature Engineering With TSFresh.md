@@ -1,3 +1,9 @@
+---
+title: W08 - Automated Feature Engineering
+module: Statistical Modelling And Inferencing
+week: W08 - Automated Feature Engineering
+---
+
 **TSFresh (Time Series Feature extraction based on scalable hypothesis tests)** is a specialized Python library designed to automatically extract a comprehensive set of statistical features from time series data and perform automated feature selection based on their relevance to a target variable.
 
 Unlike manual engineering (which relies on domain-specific indicators like RSI or HRV), TSFresh is a high-throughput, brute-force statistical engine.
