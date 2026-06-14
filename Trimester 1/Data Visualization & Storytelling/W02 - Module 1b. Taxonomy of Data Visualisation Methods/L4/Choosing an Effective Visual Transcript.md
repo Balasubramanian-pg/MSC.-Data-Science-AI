@@ -1,102 +1,495 @@
----
-title: W02 - Module 1b. Taxonomy of Data Visualisation Methods
-module: Statistical Modelling And Inferencing
-week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
----
+# Taxonomy of Data Visualization Methods
 
-![[Pasted image 20260527231448.png]]
+**Module:** Statistical Modelling and Inferencing  
+**Topic:** Taxonomy of Data Visualization Methods
 
-While there are over 150 different types of data visualizations available across modern software tools, **a core set of about 12 visual types is sufficient to handle 90% of business and analytical communication needs.** Knowing when and how to apply these basic options allows for highly effective communication without relying on overly complex, custom visuals.
+## Learning Objectives
 
-### **Decision Tree: Choosing the Right Visualization**
+After studying this module, you should be able to:
 
-This decision tree helps determine which visual format to use based on your specific communication objective and data structure.
+- Understand the major categories of data visualizations
+- Select the appropriate chart based on analytical objectives
+- Distinguish between relationship, trend, comparison, and composition charts
+- Identify when a graph is unnecessary
+- Avoid common visualization selection mistakes
+- Apply a structured framework for choosing visualizations
+
+## 1. Introduction
+
+Modern BI tools such as:
+
+- Tableau
+- Power BI
+- Qlik
+- Excel
+- Python Visualization Libraries
+
+offer hundreds of visualization options.
+
+However, in practice:
+
+> Approximately 90% of business reporting and analytical communication can be effectively handled using about 10–12 core visualization types.
+
+The challenge is not learning hundreds of charts.
+
+The challenge is selecting the correct visualization for the question being asked.
+
+[!IMPORTANT]
+
+A poor chart can hide insights.
+
+A good chart can reveal them immediately.
+
+## 2. Why Visualization Selection Matters
+
+Every visualization has a purpose.
+
+Different charts answer different questions.
+
+| Question | Appropriate Visual |
+|-----------|-------------------|
+| What is the value? | Text |
+| What are the exact numbers? | Table |
+| Which category is highest? | Bar Chart |
+| How did performance change over time? | Line Chart |
+| Are two variables related? | Scatter Plot |
+| What contributes to the total? | Stacked Bar |
+| How did a metric move from A to B? | Waterfall Chart |
+
+Choosing the wrong chart creates confusion.
+
+Choosing the correct chart creates clarity.
+
+## 3. Visualization Selection Framework
+
+The first question should always be:
+
+> What am I trying to communicate?
 
 ```mermaid
-graph TD
-    Start[Identify your primary goal] --> Q1{What is the objective?}
-    
-    Q1 -->|Highlight a single key metric| ObjText[Simple Text]
-    
-    Q1 -->|Structure raw numbers or lookups| ObjTable{Is density/concentration important?}
-    ObjTable -->|No, simple lookup| Table[Table]
-    ObjTable -->|Yes, show patterns| Heatmap[Heatmap with Conditional Formatting]
-    
-    Q1 -->|Explore relationships| ObjRelation{Is there a 3rd variable?}
-    ObjRelation -->|No| Scatter[Scatter Plot]
-    ObjRelation -->|Yes| Bubble[Bubble Chart]
-    
-    Q1 -->|Show change over time| ObjTrend{Is the variable continuous?}
-    ObjTrend -->|Yes, continuous| Line[Line Graph]
-    ObjTrend -->|No, discrete change between 2 points| Slope[Slope Graph]
-    
-    Q1 -->|Compare categories| ObjCompare{Is composition/breakdown needed?}
-    ObjCompare -->|No, simple comparison| Bar[Bar Chart Vertical/Horizontal]
-    ObjCompare -->|Yes, show parts of a whole| Stacked[Stacked Bar / 100% Stacked Bar Chart]
-    
-    Q1 -->|Show cumulative change from A to B| Waterfall[Waterfall Chart]
-    
-    Q1 -->|Display physical/spatial composition| ObjArea{Showing changes over time?}
-    ObjArea -->|Yes| Square[Square Area Chart]
-    ObjArea -->|No| Area[Area / Treemap Chart]
+flowchart TD
+
+A[Start]
+--> B{Objective?}
+
+B --> C[Single Number]
+B --> D[Exact Values]
+B --> E[Relationship]
+B --> F[Trend]
+B --> G[Comparison]
+B --> H[Composition]
+B --> I[Cumulative Change]
+````
+
+The objective determines the visual.
+
+## 4. Four Major Categories of Visualizations
+
+The lecture groups visualization methods into four broad families:
+
+```mermaid
+mindmap
+  root((Visualization Types))
+
+    Text-Based
+      Simple Text
+      Tables
+      Heatmaps
+
+    Relationship & Trend
+      Scatter Plot
+      Bubble Chart
+      Line Graph
+      Slope Graph
+
+    Comparison & Composition
+      Bar Chart
+      Stacked Bar
+      Waterfall
+
+    Area Charts
+      Treemap
+      Square Area Chart
 ```
 
-### **Detailed Breakdown of Visual Formats**
+## 5. Text-Based Visualizations
 
-The core visualization options can be categorized into four primary groups: text-based visuals, relationship/trend graphs, comparison/composition graphs, and physical area charts.
+These are not traditional graphs.
 
-#### **1. Text-Based Visuals (Non-Graphs)**
-These options are ideal when the precise values themselves are the message, rather than the trends or relationships between those values.
+The actual numbers are the primary message.
 
-*   **Simple Text**
-    *   **Purpose:** Best used when you have only one or two critical data points to share. If a graph is not strictly necessary to explain the change, simple text is often clearer.
-    *   **Key Design Tips:** Use Gestalt principles (such as variations in size, bolding, and color) to create visual hierarchy and highlight key numbers.
-    *   **Example:** Instead of using a two-bar graph to show the percentage of stay-at-home mothers falling from 41% to 20%, state it directly: *"Currently, the stay-at-home mother ratio is 20% as compared to 41% in 1970."*
-*   **Tables**
-    *   **Purpose:** Tables interact primarily with our *verbal cognitive system*. Audiences naturally read them row-by-row or column-by-column to compare precise values.
-    *   **Best Use:** Highlighting simple data for lookup purposes without trying to force a visual trend.
-*   **Heatmaps**
-    *   **Purpose:** Combines the precise look-up structure of a table with visual guidance.
-    *   **Key Design Tips:** Uses saturated or graded colors (often applied via conditional formatting) to draw the eye immediately to data concentration, composition, or directional changes.
+### 5.1 Simple Text
 
-#### **2. Relationship & Trend Graphs**
-These options map data along X and Y axes to illustrate how variables interact or change.
+#### Purpose
 
-*   **Scatter Plots (Point Graphs)**
-    *   **Purpose:** Excellent for exploratory analysis to discover relationships between two variables when those relationships are not known beforehand.
-    *   **Extensions:** Can be upgraded to **Bubble Charts** by using the size of the points to denote a third quantitative variable, or using different shapes/colors to categorize data.
-    *   **Example:** Plotting average voter turnout against the average number of voters per booth to reveal a negative correlation.
-*   **Line Graphs**
-    *   **Purpose:** Used for continuous variables, signaling to the human brain that the data points are connected and sequential (e.g., changes over time).
-    *   **Key Design Tips:** Avoid cluttering the visual with too many overlapping series. Use color to emphasize the primary line of interest.
-*   **Slope Graphs**
-    *   **Purpose:** A specialized type of line graph used to connect categorical points across two discrete time periods.
-    *   **Best Use:** Showing the rate of change and relative ranking shifts between two specific points in time.
-    *   **Example:** Comparing employee feedback scores across different company departments between 2014 and 2015.
+Used when only one or two numbers matter.
 
-#### **3. Comparison & Composition Graphs**
-These use physical length or stacked elements to compare absolute values or parts-of-a-whole.
+Sometimes a chart adds unnecessary complexity.
 
-*   **Bar Graphs (Horizontal & Vertical)**
-    *   **Purpose:** The most common tool for comparing discrete categories. They are highly intuitive because the human eye easily compares the relative lengths of the bars.
-    *   **Key Requirement:** Must always plot quantitative data to maintain a consistent scale for comparison.
-*   **Stacked Bar Graphs**
-    *   **Purpose:** Shows both the total value of a category and its internal composition.
-    *   **100% Stacked Bar Alternative:** A highly effective alternative to pie charts, allowing users to compare the relative proportions of sub-segments across multiple categories.
-    *   **Example:** Comparing survey response proportions (Strongly Agree vs. Disagree) across five different business units.
-*   **Waterfall Charts**
-    *   **Purpose:** A variation of a bar graph that tracks the step-by-step cumulative movement of a variable from an initial value (Point A) to a final value (Point B).
-    *   **Best Use:** Highly effective for financial reporting (e.g., showing how gross revenue transitions into net profit through various expense deductions) or tracking workforce fluctuations.
-    *   **Example:** Showing how a team grew from 100 to 116 employees by visually displaying the steps: starting base (+100) $\rightarrow$ new hires (+30) $\rightarrow$ internal transfers in (+8) $\rightarrow$ transfers out (-12) $\rightarrow$ exits (-10) $\rightarrow$ final count (116).
+#### Example
 
-#### **4. Area Charts**
-These use two-dimensional space to display proportions.
+Instead of:
 
-*   **Area / Treemap Charts**
-    *   **Purpose:** Represents composition using the physical area of rectangles or squares. The larger the space occupied by the shape, the larger the variable's share.
-    *   **Example:** Representing the populations of Indian states, where Uttar Pradesh occupies the largest physical rectangle, followed by progressively smaller rectangles for Bihar, Maharashtra, and West Bengal.
-*   **Square Area Charts**
-    *   **Purpose:** Displays composition where a grid of equal squares represents units of data.
-    *   **Best Use:** Comparing composition changes side-by-side across different time periods.
+```text
+1970: █████████████████ 41%
 
-Tags: #statistics #machine-learning #data-science #statistical-modelling
+2024: ████████ 20%
+```
+
+Simply write:
+
+> The proportion of stay-at-home mothers declined from 41% in 1970 to 20% today.
+
+#### Why It Works
+
+The audience instantly understands:
+
+* The values
+* The comparison
+* The message
+
+without interpreting a graph.
+
+#### Best Practices
+
+* Large font
+* Bold numbers
+* Contrasting colors
+* Strategic spacing
+
+#### When to Use
+
+* One KPI matters
+* A dashboard tile is required
+* The change is obvious
+
+### 5.2 Tables
+
+#### Purpose
+
+Used when precise values matter.
+
+Tables support lookup behavior.
+
+People naturally:
+
+* Read rows
+* Read columns
+* Compare values
+
+#### Example
+
+| Product | Revenue |
+| ------- | ------- |
+| A       | ₹50M    |
+| B       | ₹42M    |
+| C       | ₹39M    |
+
+#### Strengths
+
+* High precision
+* Easy lookup
+* Suitable for reports
+
+#### Weaknesses
+
+* Poor at showing patterns
+* Poor at showing trends
+
+#### Best Use Cases
+
+* Financial reports
+* Detailed datasets
+* Audit reports
+* Regulatory reporting
+
+### 5.3 Heatmaps
+
+#### Purpose
+
+Combine the precision of tables with rapid visual pattern detection.
+
+#### Benefits
+
+Humans detect color differences faster than numerical differences.
+
+This allows quick identification of:
+
+* High concentration
+* Low performance
+* Outliers
+
+[!TIP]
+
+Heatmaps are often the most effective upgrade when a large table becomes difficult to interpret.
+
+## 6. Relationship & Trend Visualizations
+
+These charts answer:
+
+> How are variables related?
+
+or
+
+> How do values change over time?
+
+### 6.1 Scatter Plot
+
+#### Purpose
+
+Show relationships between two quantitative variables.
+
+#### Questions Answered
+
+* Is there a relationship?
+* Is it positive?
+* Is it negative?
+* Are there outliers?
+
+#### Advantages
+
+* Detects patterns
+* Detects clusters
+* Detects anomalies
+
+#### Limitations
+
+* Difficult for non-technical audiences
+* Correlation does not imply causation
+
+[!WARNING]
+
+Scatter plots are excellent analytical tools but are often poor executive communication tools unless properly annotated.
+
+### 6.2 Bubble Chart
+
+#### Purpose
+
+Adds a third quantitative variable through bubble size.
+
+| Visual Element | Represents |
+| -------------- | ---------- |
+| X Position     | Variable 1 |
+| Y Position     | Variable 2 |
+| Bubble Size    | Variable 3 |
+
+#### Advantage
+
+Displays three dimensions simultaneously.
+
+#### Limitation
+
+Area perception is imperfect, making exact comparisons difficult.
+
+### 6.3 Line Graph
+
+#### Purpose
+
+Display continuous trends over time.
+
+#### Best Applications
+
+* Revenue growth
+* Temperature changes
+* Stock prices
+* Website traffic
+* Population growth
+
+#### Best Practices
+
+* Limit the number of lines
+* Highlight key series
+* Label directly whenever possible
+
+### 6.4 Slope Graph
+
+#### Purpose
+
+Compare changes between two points in time.
+
+#### Best Use Cases
+
+* Ranking changes
+* Before vs After analysis
+* Employee survey comparisons
+* Market share shifts
+
+## 7. Comparison & Composition Visualizations
+
+These charts leverage one of the strongest human perceptual abilities:
+
+> Comparing lengths.
+
+### 7.1 Bar Charts
+
+#### Purpose
+
+Compare categorical values.
+
+#### Why They Work
+
+Humans compare lengths more accurately than areas, angles, or volumes.
+
+#### Applications
+
+* Sales by region
+* Product performance
+* Department comparison
+* Survey responses
+
+[!IMPORTANT]
+
+If the goal is simple comparison, start with a bar chart.
+
+Most alternatives are usually worse.
+
+### 7.2 Stacked Bar Charts
+
+#### Purpose
+
+Show both total value and composition simultaneously.
+
+#### Reveals
+
+* Overall size
+* Internal breakdown
+
+#### Applications
+
+* Revenue mix
+* Product mix
+* Survey segmentation
+
+### 7.3 100% Stacked Bar Charts
+
+#### Purpose
+
+Compare proportions rather than absolute values.
+
+#### Advantages
+
+* Easier comparison than pie charts
+* Supports multiple categories
+* Standardized scale
+
+### 7.4 Waterfall Charts
+
+#### Purpose
+
+Explain movement from an initial value to a final value.
+
+#### Common Applications
+
+* Profit bridges
+* Workforce changes
+* Budget analysis
+* Revenue decomposition
+
+## 8. Area Charts
+
+Area charts communicate proportions through physical space.
+
+### 8.1 Treemap Charts
+
+#### Purpose
+
+Represent composition using rectangles.
+
+#### Applications
+
+* Market share
+* Population distribution
+* Revenue contribution
+
+#### Limitation
+
+Precise comparisons are harder than with bars.
+
+### 8.2 Square Area Charts
+
+#### Purpose
+
+Represent composition using equal-sized units.
+
+#### Best Applications
+
+* Demographic comparisons
+* Population composition
+* Time-based composition changes
+
+## 9. Visualization Selection Cheat Sheet
+
+| Objective             | Best Visual       |
+| --------------------- | ----------------- |
+| One KPI               | Simple Text       |
+| Exact Numbers         | Table             |
+| Highlight Patterns    | Heatmap           |
+| Relationship Analysis | Scatter Plot      |
+| Three Variables       | Bubble Chart      |
+| Trend Over Time       | Line Graph        |
+| Two-Point Change      | Slope Graph       |
+| Category Comparison   | Bar Chart         |
+| Composition Analysis  | Stacked Bar       |
+| Proportion Comparison | 100% Stacked Bar  |
+| Cumulative Movement   | Waterfall Chart   |
+| Area Composition      | Treemap           |
+| Composition Over Time | Square Area Chart |
+
+## 10. Common Mistakes
+
+1. Using a chart when text is sufficient.
+2. Using tables to communicate trends.
+3. Using pie charts for complex comparisons.
+4. Overloading line charts with many series.
+5. Using scatter plots for non-technical audiences.
+6. Selecting visuals based on aesthetics rather than communication value.
+
+## Examination Notes
+
+### What determines chart selection?
+
+The communication objective.
+
+### What is the best chart for discovering relationships?
+
+Scatter Plot.
+
+### What chart adds a third variable to a scatter plot?
+
+Bubble Chart.
+
+### Which chart is best for continuous trends?
+
+Line Graph.
+
+### Which chart is best for comparing categories?
+
+Bar Chart.
+
+### Which chart is a strong alternative to pie charts?
+
+100% Stacked Bar Chart.
+
+### Which chart explains movement from a starting value to an ending value?
+
+Waterfall Chart.
+
+## Final Takeaways
+
+[!IMPORTANT]
+
+Visualization selection should be driven by the question being answered, not by chart popularity or software availability.
+
+Remember:
+
+1. Start with the objective.
+2. Understand the audience.
+3. Choose the simplest chart that answers the question.
+4. Use comparison charts for comparison problems.
+5. Use trend charts for trend problems.
+6. Use relationship charts for analytical discovery.
+7. Use composition charts for part-to-whole analysis.
+
+### One-Line Summary
+
+> The best visualization is not the most sophisticated one; it is the one that communicates the intended insight with the least cognitive effort.
