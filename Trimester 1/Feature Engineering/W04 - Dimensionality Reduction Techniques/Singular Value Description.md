@@ -1,3 +1,9 @@
+---
+title: W04 - Dimensionality Reduction Techniques
+module: Statistical Modelling And Inferencing
+week: W04 - Dimensionality Reduction Techniques
+---
+
 ### Singular Value Decomposition (SVD): Technical Notes
 
 #### 1. Clear Overview
