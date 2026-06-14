@@ -71,3 +71,6 @@ To help you structure your learning and study, here is an index of the technical
 To better understand these transformations, visualizing the effect of these engineering techniques on raw data is key:
 
 Would you like to explore the implementation of these techniques in a specific library, or shall we discuss how to perform formal **stationarity testing** (e.g., the Augmented Dickey-Fuller test) to ensure your model doesn't fail on non-stationary data?
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
