@@ -70,3 +70,6 @@ In the upcoming lessons, we will apply these concepts using datasets from **Fina
 |**Date-Time**|Capture seasonality|Modeling cyclical business behavior|
 
 **Would you like to move on to the implementation of these techniques, or do you have any questions regarding the statistical implications of non-stationarity?**
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
