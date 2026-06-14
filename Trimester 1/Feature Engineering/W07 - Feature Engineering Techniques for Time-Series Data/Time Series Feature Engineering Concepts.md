@@ -1,3 +1,9 @@
+---
+title: W07 - Feature Engineering Techniques for Time-Series Data
+module: Statistical Modelling And Inferencing
+week: W07 - Feature Engineering Techniques for Time-Series Data
+---
+
 To help you structure your learning and study, here is an index of the technical topics discussed in your time series feature engineering transcript, organized by conceptual grouping.
 
 ### **Index of Time Series Feature Engineering Topics**
