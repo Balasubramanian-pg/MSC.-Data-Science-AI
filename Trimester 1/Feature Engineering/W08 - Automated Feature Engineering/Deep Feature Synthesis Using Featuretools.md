@@ -1,3 +1,9 @@
+---
+title: W08 - Automated Feature Engineering
+module: Statistical Modelling And Inferencing
+week: W08 - Automated Feature Engineering
+---
+
 Featuretools is an automated feature engineering framework designed specifically for **relational (structured) data**. Its primary value proposition is automating the creation of features across multiple related tables, a process that is typically tedious and error-prone when done manually.
 
 ### 1. The Core Concept: Deep Feature Synthesis (DFS)
