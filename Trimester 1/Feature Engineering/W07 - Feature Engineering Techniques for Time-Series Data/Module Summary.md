@@ -56,3 +56,6 @@ As you transition to implementation, keep these rigorous engineering principles 
 Feature engineering for time series is the art of **encoding the past into the present.** By blending statistical techniques (lag/windowing) with domain-specific metrics (RSI/HRV), you transform noisy, drifting sequences into stable, predictive inputs.
 
 **Are you ready to move into the implementation phase? I can provide code templates for generating lag and rolling windows in `pandas`, or we can discuss how to perform formal stationarity testing using the Augmented Dickey-Fuller (ADF) test.**
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
