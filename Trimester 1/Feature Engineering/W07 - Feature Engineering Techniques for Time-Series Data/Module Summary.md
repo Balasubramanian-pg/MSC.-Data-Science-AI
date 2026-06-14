@@ -1,3 +1,9 @@
+---
+title: W07 - Feature Engineering Techniques for Time-Series Data
+module: Statistical Modelling And Inferencing
+week: W07 - Feature Engineering Techniques for Time-Series Data
+---
+
 This module synthesizes the core principles of time series feature engineering, shifting the focus from static, I.I.D. (Independent and Identically Distributed) data to dynamic, temporally-dependent data. The overarching lesson is that **time series features must reflect the causal history and structural patterns inherent in the data.**
 
 ### 1. Core Concepts: Respecting Temporal Order
