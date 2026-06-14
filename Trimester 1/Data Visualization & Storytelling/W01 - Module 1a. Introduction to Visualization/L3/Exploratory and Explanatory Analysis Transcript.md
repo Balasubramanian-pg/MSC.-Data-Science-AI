@@ -1,6 +1,6 @@
 # Exploratory vs Explanatory Analysis in Data Visualization
 
-Source Transcript:
+
 
 ## Table of Contents
 
