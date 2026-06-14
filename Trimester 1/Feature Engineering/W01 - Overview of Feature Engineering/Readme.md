@@ -4,7 +4,7 @@ module: Statistical Modelling And Inferencing
 week: W01 - Overview of Feature Engineering
 ---
 
-# Week 1: Overview of Feature Engineering
+## Week 1: Overview of Feature Engineering
 
 ## [1. Concept Introduction](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W02%20-%20Handling%20Numeric%20Data/3.%20Feature%20Scaling.md#1-concept-introduction)
 
