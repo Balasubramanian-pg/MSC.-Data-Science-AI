@@ -35,10 +35,10 @@ Python
 from tsfresh import extract_features, select_features
 from tsfresh.utilities.dataframe_functions import impute
 
-# 1. Extraction
-# column_id: Grouping variable (e.g., customer_id)
-# column_sort: Time identifier (ensures temporal calculations are correct)
-# column_value: The numeric signal (e.g., credit_usage)
+## 1. Extraction
+## column_id: Grouping variable (e.g., customer_id)
+## column_sort: Time identifier (ensures temporal calculations are correct)
+## column_value: The numeric signal (e.g., credit_usage)
 extracted_features = extract_features(
     df, 
     column_id='customer_id', 
@@ -46,12 +46,12 @@ extracted_features = extract_features(
     column_value='credit_usage'
 )
 
-# 2. Imputation
+## 2. Imputation
 impute(extracted_features)
 
-# 3. Selection
-# Uses hypothesis tests (Chi-squared, ANOVA, Mann-Whitney U) 
-# against the target to filter features
+## 3. Selection
+## Uses hypothesis tests (Chi-squared, ANOVA, Mann-Whitney U) 
+## against the target to filter features
 final_features = select_features(extracted_features, y)
 ```
 
