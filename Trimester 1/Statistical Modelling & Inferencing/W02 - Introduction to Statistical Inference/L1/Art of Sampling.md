@@ -1522,7 +1522,11 @@ $$
 3. Take $\alpha/2$ and $1-\alpha/2$ quantiles of bootstrap distribution
 
 $$
-CI = [\hat{\theta}^*_{(\alpha/2)}, \hat{\theta}^*_{(1-\alpha/2)}]
+CI =
+\left[
+\hat{\theta}^{*}_{(\alpha/2)},
+\hat{\theta}^{*}_{(1-\alpha/2)}
+\right]
 $$
 
 ### 7.5.2 Bias-Corrected and Accelerated (BCa)
