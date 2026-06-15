@@ -469,18 +469,18 @@ $$
 
 ```mermaid
 flowchart LR
-    A[Population N=10000] --> B{Assign IDs 1-10000}
+    A[Population N = 10000] --> B{Assign IDs 1-10000}
     B --> C[Random Number Generator]
-    C --> D[Select n=100 unique IDs]
+    C --> D[Select n = 100 Unique IDs]
     D --> E[Locate Units]
-    E --> F[Collect Data y_i]
+    E --> F[Collect Data yᵢ]
     F --> G[Compute Statistics]
-    G --> H[Sample Mean $\bar{y}$]
-    G --> I[Sample Variance $s^2$]
+
+    G --> H[Sample Mean ȳ]
+    G --> I[Sample Variance s²]
     G --> J[Standard Error SE]
+
     J --> K[Confidence Interval]
-    style A fill:#e1f5ff
-    style K fill:#c8e6c9
 ```
 
 ## 3.2 Stratified Random Sampling
