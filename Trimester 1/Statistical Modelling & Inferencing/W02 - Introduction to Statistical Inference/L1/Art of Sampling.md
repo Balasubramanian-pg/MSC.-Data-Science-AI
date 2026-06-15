@@ -1534,17 +1534,34 @@ $$
 Adjusts for bias and skewness in bootstrap distribution:
 
 $$
-CI = [\hat{\theta}^*_{(\alpha_1)}, \hat{\theta}^*_{(\alpha_2)}]
+CI_{BCa}
+=
+\left[
+\hat{\theta}^{*}_{(\alpha_1)},
+\hat{\theta}^{*}_{(\alpha_2)}
+\right]
 $$
 
-where:
+$$
+\alpha_1
+=
+\Phi\!\left(
+\hat z_0
++
+\frac{\hat z_0 + z_{\alpha/2}}
+     {1-\hat a(\hat z_0+z_{\alpha/2})}
+\right)
+$$
 
 $$
-\alpha_1 = \Phi\left(\hat{z}_0 + \frac{\hat{z}_0 + z_{\alpha/2}}{1 - \hat{a}(\hat{z}_0 + z_{\alpha/2})}\right)
-$$
-
-$$
-\alpha_2 = \Phi\left(\hat{z}_0 + \frac{\hat{z}_0 + z_{1-\alpha/2}}{1 - \hat{a}(\hat{z}_0 + z_{1-\alpha/2})}\right)
+\alpha_2
+=
+\Phi\!\left(
+\hat z_0
++
+\frac{\hat z_0 + z_{1-\alpha/2}}
+     {1-\hat a(\hat z_0+z_{1-\alpha/2})}
+\right)
 $$
 
 ## 7.6 Confidence Interval Diagram
