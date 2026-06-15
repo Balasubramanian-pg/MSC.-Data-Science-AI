@@ -8,7 +8,8 @@ $$
 x_1, x_2, x_3, \dots, x_n
 $$
 
-From this sample, we attempt to infer the true nature of an unknown population parameter, such as the population mean ($$ \mu $$), population proportion ($$ p $$), or population variance ($$ \sigma^2 $$). 
+From this sample, we attempt to infer the true nature of an unknown population parameter, such as the population mean 
+($$ \mu $$), population proportion ($$ p $$), or population variance ($$ \sigma^2 $$). 
 
 Because samples are merely incomplete representations of populations, every statistical conclusion carries inherent uncertainty. This creates a deep reality of inference: statistical decisions are probabilistic, not certain. Unlike pure mathematics, statistics does not produce absolute truth; rather, it produces rigorously quantified uncertainty.
 
