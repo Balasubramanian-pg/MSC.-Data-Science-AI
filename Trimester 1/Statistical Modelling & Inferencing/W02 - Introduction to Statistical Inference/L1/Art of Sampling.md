@@ -697,15 +697,18 @@ If the period $T$ coincides with $k$, variance can be severely inflated or defla
 
 ```mermaid
 flowchart TD
-    A[Population Listed 1 to N] --> B[Calculate k = floor(N/n)]
-    B --> C[Generate Random Start r ~ U(1,k)]
-    C --> D[Select r, r+k, r+2k, ...]
-    D --> E[Collect Data]
-    E --> F[Compute Mean]
-    F --> G{Ordering?}
-    G -->|Random| H[Var ~ SRS]
-    G -->|Trend| I[Var < SRS]
-    G -->|Periodic| J[Var unpredictable]
+    A["Population Listed 1 to N"] --> B["Calculate Sampling Interval k"]
+    B --> C["Generate Random Start"]
+    C --> D["Select Every kth Unit"]
+    D --> E["Collect Data"]
+    E --> F["Compute Mean"]
+
+    F --> G{"Ordering Pattern?"}
+
+    G -->|Random| H["Variance Similar to SRS"]
+    G -->|Trend| I["Variance Lower than SRS"]
+    G -->|Periodic| J["Variance Unpredictable"]
+
     style A fill:#e1f5ff
     style H fill:#c8e6c9
     style I fill:#fff9c4
