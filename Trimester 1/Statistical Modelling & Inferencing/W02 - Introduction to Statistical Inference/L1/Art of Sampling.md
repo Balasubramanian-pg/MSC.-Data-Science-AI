@@ -1524,8 +1524,8 @@ $$
 $$
 CI =
 \left[
-\hat{\theta}^{*}_{(\alpha/2)},
-\hat{\theta}^{*}_{(1-\alpha/2)}
+\hat{\theta}'_{(\alpha/2)},
+\hat{\theta}'_{(1-\alpha/2)}
 \right]
 $$
 
