@@ -1546,10 +1546,10 @@ $$
 \alpha_1
 =
 \Phi\!\left(
-\hat z_0
+\hat{z}_0
 +
-\frac{\hat z_0 + z_{\alpha/2}}
-     {1-\hat a(\hat z_0+z_{\alpha/2})}
+\frac{\hat{z}_0 + z_{\alpha/2}}
+     {1-\hat{a}(\hat{z}_0+z_{\alpha/2})}
 \right)
 $$
 
@@ -1557,13 +1557,11 @@ $$
 \alpha_2
 =
 \Phi\!\left(
-\hat z_0
+\hat{z}_0
 +
-\frac{\hat z_0 + z_{1-\alpha/2}}
-     {1-\hat a(\hat z_0+z_{1-\alpha/2})}
+\frac{\hat{z}_0 + z_{1-\alpha/2}}
+     {1-\hat{a}(\hat{z}_0+z_{1-\alpha/2})}
 \right)
-$$
-
 ## 7.6 Confidence Interval Diagram
 
 ```mermaid
