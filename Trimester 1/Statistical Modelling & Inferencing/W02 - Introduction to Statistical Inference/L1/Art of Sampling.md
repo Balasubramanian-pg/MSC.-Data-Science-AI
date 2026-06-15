@@ -1534,7 +1534,7 @@ $$
 Adjusts for bias and skewness in bootstrap distribution:
 
 $$
-CI_{BCa} = \left[\hat{\theta}^{*}_{(\alpha_1)},\hat{\theta}^{*}_{(\alpha_2)}\right]
+CI_{BCa} = \left[\hat{\theta}_{(\alpha_1)},\hat{\theta}_{(\alpha_2)}\right]
 $$
 
 $$
