@@ -612,28 +612,34 @@ $$
 
 ```mermaid
 graph TD
-    A[Population N=1400M] --> B[Stratification by Region]
-    B --> C1[North: N1=350M]
-    B --> C2[South: N2=280M]
-    B --> C3[East: N3=420M]
-    B --> C4[West: N4=210M]
-    B --> C5[Central: N5=140M]
+    A[Population N = 1400M] --> B[Stratification by Region]
+
+    B --> C1[North: N1 = 350M]
+    B --> C2[South: N2 = 280M]
+    B --> C3[East: N3 = 420M]
+    B --> C4[West: N4 = 210M]
+    B --> C5[Central: N5 = 140M]
+
     C1 --> D1[SRS within Stratum]
     C2 --> D2[SRS within Stratum]
     C3 --> D3[SRS within Stratum]
     C4 --> D4[SRS within Stratum]
     C5 --> D5[SRS within Stratum]
+
     D1 --> E1[Sample n1]
     D2 --> E2[Sample n2]
     D3 --> E3[Sample n3]
     D4 --> E4[Sample n4]
     D5 --> E5[Sample n5]
+
     E1 --> F[Weighted Mean]
     E2 --> F
     E3 --> F
     E4 --> F
     E5 --> F
-    F --> G[Stratified Estimate $\bar{y}_{st}$]
+
+    F --> G[Stratified Estimate]
+
     style G fill:#c8e6c9,stroke:#333,stroke-width:3px
 ```
 
