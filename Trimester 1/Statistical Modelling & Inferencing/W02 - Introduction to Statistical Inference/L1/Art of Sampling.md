@@ -1534,34 +1534,21 @@ $$
 Adjusts for bias and skewness in bootstrap distribution:
 
 $$
-CI_{BCa}
-=
-\left[
-\hat{\theta}^{*}_{(\alpha_1)},
-\hat{\theta}^{*}_{(\alpha_2)}
-\right]
+CI_{BCa} = \left[\hat{\theta}^{*}_{(\alpha_1)},\hat{\theta}^{*}_{(\alpha_2)}\right]
 $$
 
 $$
-\alpha_1
-=
-\Phi\!\left(
-\hat{z}_0
+\alpha_1=\Phi\!\left(\hat{z}_0
 +
-\frac{\hat{z}_0 + z_{\alpha/2}}
-     {1-\hat{a}(\hat{z}_0+z_{\alpha/2})}
-\right)
+\frac{\hat{z}_0 + z_{\alpha/2}}{1-\hat{a}(\hat{z}_0+z_{\alpha/2})}\right)
 $$
 
 $$
-\alpha_2
-=
-\Phi\!\left(
-\hat{z}_0
+\alpha_2=\Phi\!\left(\hat{z}_0
 +
-\frac{\hat{z}_0 + z_{1-\alpha/2}}
-     {1-\hat{a}(\hat{z}_0+z_{1-\alpha/2})}
-\right)
+\frac{\hat{z}_0 + z_{1-\alpha/2}}{1-\hat{a}(\hat{z}_0+z_{1-\alpha/2})}\right)
+$$
+
 ## 7.6 Confidence Interval Diagram
 
 ```mermaid
