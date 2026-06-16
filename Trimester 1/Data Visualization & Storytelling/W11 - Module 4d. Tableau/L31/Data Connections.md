@@ -1,234 +1,242 @@
----
-title: W11 - Module 4d. Tableau - Module 4d. Tableau
-module: Statistical Modelling And Inferencing
-week: W11 - Module 4d. Tableau - Module 4d. Tableau
----
+# 7.1. Data Connections and Source Management in Tableau
 
-## Page 1
+## 7.1.1. From Raw Files to Analytical Environments
 
- 
- 
- 
- 
- Page 1 of 5 
- 
-Data Connections Transcript 
- 
-Hello everyone, welcome to Bitsplanet Digital. Today we will continue our learning 
-journey on how to use Tableau for building data visualisations as part of our data 
-visualisation and storytelling course. We will now look at how to connect to different 
-types of data sources and learn about metadata management in the present lesson. 
-  
-So let us start with the Tableau public web-based application. So you are expected to 
-sign in to the Tableau public environment using your Gmail account or any other work 
-account. You will end up on a page like this where you can create a web-based 
-Tableau page or you can also work in the Tableau desktop public edition. 
-  
-In the last class, we have worked in the Tableau public desktop version. Now we will 
-be working on the web-based version so that you are familiar with both the 
-environments. So once you have opened, this is how you will get to the connection 
-data page where you have the files and connectors. 
-  
-For example, because it is Tableau public, you have only limited options, which is, this 
-is a free source where there are only limited options to connectors like Google Drive 
-and OData. Otherwise, you can import the files like Excel, text, JSON into this 
-particular drag and drop command and get the data source. But if you are to use the 
-advanced paid versions, you get a whole range of data sources to connect with and 
-create your visualisations and dashboards. 
-  
-But for the purposes of this course, we will stick to Excel files and basic file types to 
-explore the features of Tableau. So I'm uploading the file which we have used in the 
-last class also. I'm using the SuperStore sample SuperStore data, which has data on 
-sales across regions and returns data of different customers. 
-  
-So once I have uploaded the data, this is how you will end up on the data source page. 
-So our focus is today to understand what are the various features of manipulating and 
-managing data before you start building your visualisations. So please remember, in 
-a visualisation exercise, establishing the basic data structure is very, very important. 
-  
-Therefore, you can construct the right type of visualisations and get across the 
-information that you want to your audience. So the more you pay attention to your data 
-source and structuring of the data, more effectively your dashboards can be designed 
-and they can convey the information. So now let us see. 
-  
-First let us explore the basic Excel sheet. Then we can see how it is behaving in the 
-Tableau environment. So this is the Excel sheet that we had. 
-  
-So this is the orders data. It has about 50 of 5,000 rows, almost 10,000 rows. The 
-count is 10,000 rows. 
+Data visualization exists to translate raw information into visual insights, but this process begins long before the first chart is drawn.
 
-## Page 2
+If data were already structured perfectly for analysis, we would simply plug it into a visualization engine without any preparation.
 
- 
- 
- 
- 
- Page 2 of 5 
- 
-  
-You have almost 10,000 order dates. You have the order ID, order date, so on and so 
-forth. There are different variables and the profit from each order. 
-  
-What is the sales quantity, sale and how much quantity is there and how much 
-discount have you given. So for each sale, you have the sale volume, how much is 
-the quantity sold, discount offered and profit from each particular sale. This is captured 
-in the main order sheet. 
-  
-Then you also have the returns sheet where there is an order that has been returned. 
-So order date and return is also there. And finally you have the people sheet where 
-each region is represented by a particular sales manager or a vendor can think like 
-that. 
-  
-So these are in three different sheets. So the primary sheet does not contain the 
-returns information and also the people who are responsible for the sale. So this is 
-only purely orders. 
-  
-We don't have this return information and the person who has sold that. And what else 
-the data is there. If you have country, state, city, you have postal code, you have which 
-region, then you have customer segment, then customer name is there. 
-  
-Okay. Whether you have, how did you ship it? What is the order date? What is the 
-shipment date? Then also you have the category, subcategory, product name, so on 
-and so forth. We will get familiarised with this data set so that we will use it across 
-multiple classes to build a dashboard out of this to understand what advanced features 
-can be built from this very basic data. 
-  
-Okay. Now let us go back to our public environment Tableau public. So these are three 
-sheets order people returns. 
-  
-So you have to tell Tableau which sheet is that you are trying to operate. So first for 
-that, what Tableau calls it as creating a data model, which means it tries to understand 
-how data is related within the sheet. So I'm selecting the order sheets, which is the 
-main sheet with a lot of data. 
-  
-So now once you type the, once you select the order and drag it to the canvas. So this 
-is where you can, first of all, do data transformations, manipulate data, connect with 
-other data sheets. So this is where you will spend substantial time before you start 
-doing visualisations. 
-  
-Okay. So I have connected this to the orders data. Likewise, if you want to connect to 
-new data source, you can click this. 
-  
+But in real-world scenarios, data arrives in fragmented, unstructured, or poorly typed formats.
 
-## Page 3
+We must connect to these raw sources, define their structures, and prepare them for the analytical canvas.
 
- 
- 
- 
- 
- Page 3 of 5 
- 
-Okay. So while working with this, you can also connect to some other data source, 
-which is related to this and also determine how these two data sources are talking to 
-each other. Okay. 
-  
-First, let us work out one. So you can also upload one more data source or let us say 
-you want to connect to a web based location where you want to get the state or you 
-have the postal codes, but you don't have the name and the state name and the 
-location name. You can connect to a particular website where the pin code and the 
-names are there. 
-  
-You can extract from them. So you can connect to the other data sources and make 
-these two data sources also interact with each other. First, let us take simple steps. 
-  
-So first I'm trying to understand how orders data set is there. So these are the different 
-fields that are there. So please look at this. 
-  
-So you have the row ID and type. So we will see a little bit later what are the different 
-types related to the metadata management. So row ID is a numerical value, ABC is a 
-categorical or a character value. 
-  
-Then you have order date, ship date. Then ship mode is again textual data, countries, 
-geographical. So we have seen this in last class also. 
-  
-See, interestingly, postal code is also treated as a geographical variable, but not as 
-the numerical variable, though postal code, as we have seen, is just a numerical value. 
-OK, the postal code that we have seen is a numerical value. It can be simply confused 
-for a number, but it is taken as a geographical value because Tableau is intelligent 
-enough to discover that as a geographical value. 
-  
-Then you have region, product ID, so on and so forth. And finally, sales, quantity, 
-discount and profit are all numerical values. So you have all these things determined 
-and these are the variables that are given here. 
-  
-So now I'm just trying to click the update now button. So you will get the data, I think 
-around 100 rows data you get. So you can also, yeah, so you can get the 100 rows 
-data, first 100 rows data is displayed here so that you can glance it through, eyeball 
-the data and see what are the data types. 
-  
-And if you want to make any changes here, you can just click on this and then try to 
-change this particular role. OK, for example, you want to make United States country, 
-geographical role can be Congressional State. You can change this. 
-  
- 
- 
+Tableau provides a dedicated environment for this preparation, known as the **Data Source page**.
 
-## Page 4
+When using Tableau Public, users are restricted to basic file connectors like Excel, text, and JSON, or cloud sources like Google Drive.
 
- 
- 
- 
- 
- Page 4 of 5 
- 
- 
-This is airport area code US. So like that, you can try to change this and use that for 
-your visualisation. And now, once you have this particular drop down button also 
-allows us to rename, copy values, hide and duplicate. 
-  
-OK, you can duplicate and rename it and work on additional calculations. OK, you can 
-change data type, so on and so forth. There are these values and you can also order 
-the IDs. 
-  
-So just to eyeball while you are importing the data. So we have done this. Now there 
-is one more thing that we can do, which we will discuss in the next lesson is building 
-relationships or joints. 
-  
-For example, we know the first sheet contains the order data and the third sheet 
-contains the returns data, which shows which order has been returned and these are 
-joined. And the common element in these two sheets is the order ID. So a particular 
-order ID will tell whether the order has been returned or not. 
-  
-So what we can do is to connect these data sheets. You can just drag it here. So the 
-right automatically this tableau identifies the common identifier and then you can also 
-make the cardinalities, which we will see in the next lesson. 
-  
-But for now, I am removing the relationship. I don't need this. I just need this particular 
-order stay only. 
-  
-I don't need the returns data right now. So I am just removing it. So I'm removing the 
-returns. 
-  
-I'm only interested in orders and then the data source is done. I'm updating it here. 
-OK, so you are in this particular sheet. 
-  
-So now let us try to go to the sheet to understand the metadata management. So like 
-this, you can connect with the data sources, same thing about text files. But only the 
-point is while importing the data, you have to. 
-  
-So you have to, if you are importing a new data source, be very careful about what 
-kind of data source you are importing. You have to choose the appropriate file 
-connector. So I can now once your data source is determined, you can then go to 
-sheet one or any other sheets where you can start building your visualisations. 
- 
- 
- 
-  
+Paid versions of Tableau Desktop unlock a vast array of advanced database connectors.
 
-## Page 5
+Regardless of the version, the fundamental task remains the same: establishing a reliable connection to the underlying data.
 
- 
- 
- 
- 
- Page 5 of 5 
- 
-So the first time that you create sheet, it will create something called an extract, which 
-is a local memory of your data so that your visualisations will work at a faster rate. So 
-now. 
- 
- 
----------------------------------------------------End-------------------------------------------------------- 
- 
+## 7.1.2. The Data Source Page and Canvas
 
-Tags: #statistics #machine-learning #data-science #statistical-modelling
+The **Data Source page** is the foundational workspace where raw files are transformed into a logical data model.
+
+When you drag a file onto the canvas, Tableau initiates the parsing process.
+
+This is where you spend substantial time before building any visualizations.
+
+The more attention you pay to the data source and the structuring of the data, the more effectively your dashboards can convey information.
+
+A poorly structured data model will inevitably lead to incorrect aggregations and misleading visual narratives.
+
+Therefore, rigorous preparation at this stage is non-negotiable.
+
+## 7.1.3. Understanding the Data Structure
+
+To understand data connections, we examine the standard Sample Superstore dataset.
+
+This dataset is distributed across three distinct sheets: **Orders**, **Returns**, and **People**.
+
+The primary **Orders** sheet contains approximately 10,000 rows of transactional data.
+
+Each row captures critical business metrics, including:
+
+- Order ID and Order Date
+
+- Sales volume and Quantity sold
+
+- Discount offered and Profit generated
+
+- Customer segment and Product category
+
+The **Returns** sheet tracks which specific orders were returned, while the **People** sheet maps each geographical region to a specific sales manager.
+
+The total volume of data across these sheets can be expressed as:
+
+$$
+N_{\text{total}} = \sum_{i=1}^{k} n_i
+$$
+
+where:
+
+- $$N_{\text{total}}$$ = total number of records across all sheets
+
+- $$k$$ = total number of sheets in the data source
+
+- $$n_i$$ = number of rows in the $$i$$-th sheet
+
+Understanding this structure is critical because the primary **Orders** sheet does not inherently contain return statuses or manager assignments.
+
+## 7.1.4. Data Types and Geospatial Roles
+
+Tableau automatically infers data types for every field upon import, categorizing them as numerical, categorical, date, or geographical.
+
+However, automated inference is not always perfect.
+
+Consider the **Postal Code** field.
+
+Mathematically, a postal code is a discrete numerical value.
+
+If Tableau treats it as a continuous number, it might attempt to calculate the average postal code, which is statistically meaningless.
+
+Instead, Tableau intelligently recognizes the **Postal Code** as a geographical variable.
+
+It assigns a specific geospatial role, such as a postcode, allowing the field to be mapped spatially rather than aggregated mathematically.
+
+>[!Note]
+> A data type defines how a value is stored and calculated, while a geographic role defines how a value is mapped spatially on a canvas.
+
+You can manually override these roles by clicking the data type icon and assigning the correct geographical hierarchy, such as State, City, or Airport Code.
+
+## 7.1.5. Previewing and Eyeballing Data
+
+Before committing to a data model, you must verify the integrity of the imported records.
+
+Tableau provides an **Update Now** button that pulls a preview of the data, typically the first 100 rows.
+
+This preview allows you to eyeball the data and verify that the inferred data types align with reality.
+
+If a date field is incorrectly parsed as a string, or if a numerical field contains hidden text characters, the preview will reveal the anomaly.
+
+You can right-click any field in the preview pane to rename it, hide it, duplicate it, or change its data type.
+
+Hiding unused fields is a best practice, as it reduces the memory footprint of the data model and prevents end-users from selecting irrelevant metrics.
+
+## 7.1.6. Relational Connections and Joins
+
+Once individual sheets are understood, the next step is defining how they interact.
+
+In the Sample Superstore dataset, the **Orders** sheet and the **Returns** sheet must be connected to analyze return rates.
+
+The common identifier linking these two sheets is the **Order ID**.
+
+When you drag the **Returns** sheet onto the canvas next to the **Orders** sheet, Tableau automatically detects this common key and suggests a relationship.
+
+This relationship can be defined by its cardinality, which dictates how records in one table match records in another.
+
+For Orders and Returns, the relationship is typically one-to-many or many-to-many, expressed mathematically as:
+
+$$
+\text{Orders} \bowtie_{\text{Order ID}} \text{Returns}
+$$
+
+where the join operation $$\bowtie$$ is performed over the shared key $$\text{Order ID}$$.
+
+Establishing this connection allows you to drag a field from the **Returns** sheet directly into a visualization built on the **Orders** sheet, and Tableau handles the underlying join logic dynamically.
+
+## 7.1.7. Data Extracts and Local Memory
+
+When you transition from the Data Source page to the visualization workspace, Tableau must decide how to store the data in memory.
+
+By default, Tableau can create a *data extract*.
+
+An extract is a localized, highly optimized snapshot of your data stored in Tableau's proprietary hyper format.
+
+This extract acts as a local memory cache, ensuring that your visualizations render at a significantly faster rate.
+
+Without an extract, Tableau relies on a *live connection*, querying the original source file or database every time a filter is changed or a chart is rendered.
+
+For large datasets, live connections can introduce severe latency.
+
+## 7.1.8. Step-by-Step Data Connection Example
+
+Suppose:
+
+- Source file: Sample Superstore Excel workbook
+
+- Sheets available: Orders, Returns, People
+
+- Objective: Connect the data, define geographical roles, and prepare for visualization
+
+### Step 1: Import the Source File
+Open Tableau Public, navigate to the Connect pane, and drag the Excel file onto the data source canvas.
+
+### Step 2: Select the Primary Sheet
+Drag the Orders sheet onto the canvas to establish the primary data model containing the 10,000 transactional records.
+
+### Step 3: Define Geospatial Roles
+Review the field list, locate the Postal Code field, and explicitly assign its geographic role to ensure it is treated as a spatial mapping variable rather than a continuous number.
+
+### Step 4: Preview and Verify Data
+Click the Update Now button to load the first 100 rows, eyeballing the data to confirm that dates are parsed correctly and numerical fields contain no text anomalies.
+
+### Step 5: Establish Relational Connections
+Drag the Returns sheet onto the canvas, allowing Tableau to automatically detect the Order ID relationship, then transition to the worksheet to begin building visualizations.
+
+## 7.1.9. Factors Affecting Data Connection Performance
+
+### 9.1 File Size and Row Count
+Larger source files with millions of rows increase the time required to build the initial data extract.
+
+This delay is directly proportional to the volume of data being parsed.
+
+### 9.2 Number of Joins
+Complex data models with multiple joins across many sheets require more computational overhead to resolve relationships during visualization rendering.
+
+Each additional join multiplies the processing logic required to maintain data integrity.
+
+### 9.3 Live Connection vs Extract
+Relying on a live connection to a slow external database will bottleneck visualization performance, whereas a local extract shifts the processing burden to Tableau's optimized engine.
+
+Choosing the right storage method is therefore critical for maintaining a responsive user experience.
+
+## 7.1.10. Common Pitfalls in Data Import
+
+Many analysts fall into predictable traps when connecting data, leading to broken visualizations and incorrect insights.
+
+These mistakes usually stem from a misunderstanding of how Tableau interprets raw data types.
+
+### Pitfall 1
+
+>[!Warning]
+> "Postal codes should always be treated as numerical values."
+**Wrong.**
+Postal codes are categorical identifiers. Treating them as continuous numbers allows for meaningless mathematical operations like averaging or summing zip codes.
+
+### Pitfall 2
+
+>[!Warning]
+> "All fields from the raw data should be kept visible in the data pane."
+**Wrong.**
+Leaving dozens of unused fields visible clutters the interface and confuses end-users. Always hide fields that are not required for the final dashboard.
+
+### Pitfall 3
+
+>[!Warning]
+> "Live connections are always better because they show real-time data."
+**Not necessarily.**
+While live connections provide real-time accuracy, they severely degrade performance for large datasets. Use extracts for analytical exploration and reserve live connections for strictly real-time operational dashboards.
+
+Avoiding these pitfalls ensures your data model remains robust and your visualizations remain accurate.
+
+## 7.1.11. Conclusions
+
+Data connection and source management form the critical foundation of any Tableau project.
+
+By carefully defining data types, establishing logical relationships, and optimizing memory usage, we ensure that the subsequent visualizations are both accurate and performant.
+
+The total volume of data across multiple sheets is always governed by the summation of their individual row counts:
+
+$$
+N_{\text{total}} = \sum_{i=1}^{k} n_i
+$$
+
+And the relational logic connecting these sheets relies on precise join operations over shared keys:
+
+$$
+\text{Orders} \bowtie_{\text{Order ID}} \text{Returns}
+$$
+
+The following table compares the two primary methods of data storage in Tableau.
+
+| Feature | Live Connection | Data Extract |
+| :--- | :---: | ---: |
+| Data Freshness | Real-time | Snapshot at time of creation |
+| Rendering Speed | Dependent on source database | Highly optimized and fast |
+| Memory Usage | Low local footprint | Higher local footprint |
+| Best Use Case | Operational monitoring | Exploratory analysis and dashboards |
+
+Keep your data types accurate, your relationships logical, and your extracts optimized.
+
+That is how you build a data foundation that supports powerful, scalable visual analytics.
