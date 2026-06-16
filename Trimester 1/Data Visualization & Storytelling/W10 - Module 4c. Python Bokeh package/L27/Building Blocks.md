@@ -1,941 +1,231 @@
----
-title: W10 - Module 4c. Python Bokeh package - Module 4c. Python Bokeh package
-module: Statistical Modelling And Inferencing
-week: W10 - Module 4c. Python Bokeh package - Module 4c. Python Bokeh package
----
+# 5.1. Interactive Visual Analytics with Bokeh
 
-Based on your lecture transcript, the instructor covers the fundamental architecture of **Bokeh**: setting up canvases, rendering geometric layers called **Glyphs**, applying dynamic **Widgets** (audience narrative controls), and building multi-plot **Layouts** (Rows and Columns) to reduce cognitive load.
+## 5.1.1. From Static Plots to Interactive Experiences
 
-## 1. Core Architecture & Render Layers
+Look, if you are still building static images for data exploration, you are fundamentally limiting your analytical power. 
 
-Unlike Matplotlib or Seaborn, Bokeh treats visualizations as dynamic HTML components. Every chart relies on three progressive building blocks:
+Static plotting libraries treat visualizations as final picture outputs. Bokeh treats them as dynamic web applications. 
 
-1. **The Figure Canvas (`figure`):** Defines the plotting boundaries, coordinate space, canvas sizing, and native web-based toolbar engines (pan, box zoom, wheel zoom, reset).
-    
-2. **Glyphs:** The underlying data geometry (lines, circles, squares, bars) rendered on the canvas. Every glyph maintains unique parameters (color, size, alpha transparency) and acts as an independent data object.
-    
-3. **The Show Action (`show()`):** Bokeh does not use inline static execution. Figures must be explicitly packaged and transmitted to the web browser utilizing the `show()` call.
-    
-
-## 2. Audience Narrative Control: Clickable Legends & Widgets
-
-The instructor introduces two critical interactive capabilities that shift analytical control directly to the viewer:
-
-- **Muted / Hidden Legends:** By passing a `.click_policy = "hide"` configuration, the legend changes from a static text list into an interactive toggle switch. Audiences can click individual legend items to hide clutter and isolate comparative trends.
-    
-- **Widgets (e.g., `DateRangeSlider`):** Small UI tools embedded alongside plots. They provide the audience with a mechanism to filter datasets (such as limiting a broad time-series to a specific quarter or date interval) without modifying the source Python code.
-    
-
-## 3. Production-Ready Python Demonstration
-
-This complete script aggregates every step discussed in the transcript: initializing data streams, overlaying lines, circles, and offset squares, establishing a clickable legend policy, building a dynamic date slider widget, and utilizing multi-plot layouts.
-
-```Python
-import numpy as np
-import pandas as pd
-from datetime import date
-from bokeh.io import output_notebook, show
-from bokeh.plotting import figure
-from bokeh.models import DateRangeSlider
-from bokeh.layouts import row, column
-
-## Initialize client-side JavaScript environment inside the browser
-output_notebook()
-
-## =====================================================================
-## 1. CORE BUILDING BLOCKS & GLYPH OVERLAYS
-## =====================================================================
-## Creating simple coordinates
-x_base = [1, 2, 3, 4]
-y_base = [2, 5, 4, 6]
-
-## Shifted dataset for secondary glyph evaluation
-y_offset = [val - 1 for val in y_base]
-
-## Step A: Initialize the main Figure canvas
-p1 = figure(
-    title="Layered Glyph Architecture & Interactive Toolbar",
-    x_axis_label="X Values",
-    y_axis_label="Y Values",
-    width=600,
-    height=350,
-    tools="pan,box_zoom,wheel_zoom,reset,save"
-)
-
-## Step B: Render consecutive glyph objects to build visual richness
-## Glyph 1: Continuous Line Trend
-p1.line(x_base, y_base, legend_label="Trendline", line_width=3, line_color="navy")
-
-## Glyph 2: Circle markers anchored over coordinates
-p1.circle(x_base, y_base, legend_label="Target Identifiers", size=10, fill_color="red", line_color="black")
-
-## Glyph 3: Square markers mapped to alternate offset data streams
-p1.square(x_base, y_offset, legend_label="Baseline Offset", size=12, fill_color="orange", line_color="darkorange")
-
-## Step C: Turn legend components into actionable visibility toggles
-p1.legend.title = "Interactive Layers"
-p1.legend.click_policy = "hide"  # Clicking an item hides its mapped glyph group
-
-show(p1)
-
-## =====================================================================
-## 2. INTERACTIVE WIDGETS: DateRangeSlider Setup
-## =====================================================================
-## Creating an audience-facing date picker slider widget
-date_slider = DateRangeSlider(
-    title="Temporal Filter Range",
-    start=date(2022, 1, 1),
-    end=date(2023, 12, 31),
-    value=(date(2022, 10, 1), date(2022, 12, 31)),
-    step=1,
-    width=500
-)
-
-## Render standalone widget component directly into browser
-show(date_slider)
-
-## =====================================================================
-## 3. ADVANCED LAYOUTS: Comparative Multi-Plots (Rows & Columns)
-## =====================================================================
-## Generate functional evaluation structures
-x_layout = list(range(1, 11))
-y0 = [x for x in x_layout]                      # Linear Function: y = x
-y1 = [10 - x for x in x_layout]                 # Inverse Linear:  y = 10 - x
-y2 = [abs(x - 5) for x in x_layout]             # Modulus/V-Shape: y = |x - 5|
-
-## Pre-set uniform layout sizing parameters
-fig_settings = dict(width=260, height=260, tools="pan,wheel_zoom,reset")
-
-## Initialize isolated figures
-s1 = figure(title="Linear (y=x)", background_fill_color="#fafafa", **fig_settings)
-s1.scatter(x_layout, y0, size=8, color="teal", marker="circle")
-
-s2 = figure(title="Inverse (y=10-x)", background_fill_color="#f0f0f0", **fig_settings)
-s2.scatter(x_layout, y1, size=8, color="crimson", marker="square")
-
-s3 = figure(title="Modulus (y=|x-5|)", background_fill_color="#e6e6e6", **fig_settings)
-s3.scatter(x_layout, y2, size=8, color="indigo", marker="triangle")
-
-## Arrangement Style A: Row Layout (Side-by-Side Comparison)
-horizontal_dashboard = row(s1, s2, s3)
-print("--- Displaying Horizontal Row Layout ---")
-show(horizontal_dashboard)
-
-## Arrangement Style B: Column Layout (Vertically Stacked Grid)
-vertical_dashboard = column(s1, s2, s3)
-print("--- Displaying Vertical Column Layout ---")
-show(vertical_dashboard)
-```
-
-## 4. Layout Mechanics Summary
-
-The instructor highlights how Bokeh’s `row` and `column` layouts function similarly to small multiple grids found in static libraries, but preserve the independent interactivity of every sub-plot:
-
-- **Horizontal Rows (`row(s1, s2, s3)`):** Best used to cross-examine coordinate values horizontally across charts with shared or identical Y-axis boundaries.
-    
-- **Vertical Columns (`column(s1, s2, s3)`):** Ideal for stacked time-series dashboards where your audience wants to evaluate separate variables tracking against a unified timeline.
-
-## Bokeh Building Blocks Explained Visually + Code Wise
-
-This transcript explains the actual mechanics of building Bokeh visualizations.
-
-Core idea:
-
-```text
-Bokeh visualization =
-Figure + Glyphs + Interactivity + Layouts + Widgets
-```
-
-Source:
-
-## 1. The First Principle of Plotting
-
-The transcript starts with an important idea:
-
-> Before plotting anything:  
-> know your x-axis and y-axis.
-
-Source:
-
-This sounds basic, but it matters.
-
-Most bad visualizations fail because:
-
-- axes are unclear
-    
-- relationships are undefined
-    
-- chart type does not match data structure
-    
-
-## Example Used in Transcript
-
-They plot:
+When you plot a simple mathematical relationship, such as a parabola, the underlying equation is:
 
 $$
 y = x^2
 $$
 
-which is a parabola.
+where $$x$$ is the independent variable and $$y$$ is the dependent variable.
 
-## Visual Intuition
+In a traditional environment, this is just a fixed grid of pixels. In Bokeh, this is an interactive HTML object that the audience can probe, zoom, and filter.
 
-```mermaid
-flowchart TD
+Dashboards exist because human curiosity is non-linear. We do not just want to see the overall trend; we want to click on an anomaly and see the underlying data points.
 
-A[X Values]
---> B[Apply Function y=x²]
---> C[Generate Y Values]
---> D[Plot Relationship]
-```
+Bokeh bridges the gap between raw data and browser-based exploration.
 
-## 2. Creating Data
+## 5.1.2. The Core Architecture
 
-Transcript:
+Every Bokeh visualization relies on three progressive building blocks that transform data into a web-ready experience.
 
-```python
-x = 1 to 50
-y = x squared
-```
+First, the Figure canvas defines the plotting boundaries, coordinate space, and native toolbar engines.
 
-## Actual Python
+Second, Glyphs render the actual data geometry, such as lines or circles, directly onto that canvas.
 
-```python
-## Generate x values
-x = list(range(1, 51))
+Third, the Show action packages the entire figure and transmits it to the web browser for rendering.
 
-## Generate y values using square function
-y = [i**2 for i in x]
+Without the Show action, the visualization remains trapped in memory and nothing appears on the screen.
 
-print(x[:5])
-print(y[:5])
-```
+>[!Note]
+> Bokeh does not use inline static execution. You must explicitly call the render function to push the visualization to the browser environment.
 
-## What This Means
+With the architecture understood, we must define the visual objects that actually represent the data.
 
-For every x:
+## 5.1.3. Glyphs: The Geometry of Data
+
+Glyphs are the fundamental visual representations of your data in Bokeh.
+
+Every glyph maintains unique parameters like color, size, and alpha transparency, acting as an independent data object on the canvas.
+
+The following table outlines the primary glyph types and their specific analytical use cases.
+
+| Glyph Type | Visual Representation | Primary Use Case |
+| :--- | :---: | ---: |
+| Line | Continuous path | Trend analysis |
+| Circle | Round markers | Scatter plots |
+| Square | Square markers | Categorical offsets |
+| Vbar | Vertical rectangles | Histograms |
+
+When you map a line glyph to your data, you are drawing a continuous path between coordinate pairs.
+
+When you map a circle glyph, you are plotting discrete observations.
+
+You can overlay multiple glyphs on the same canvas to combine trend lines with actual data points.
+
+This layering capability is what allows you to build complex, multi-dimensional visual stories.
+
+## 5.1.4. Interactivity and the Browser Engine
+
+Interactivity shifts the analytical control directly from the author to the viewer.
+
+Bokeh includes native web-based toolbar engines that allow the audience to explore the coordinate space without modifying the underlying code.
+
+The standard tools include pan, box zoom, wheel zoom, reset, and save.
+
+When a user executes a mouse action, it triggers a JavaScript event that updates the plot in real-time.
+
+This browser application mindset is the key difference between Bokeh and traditional static plotting libraries.
+
+You are no longer just creating a chart; you are building an exploratory interface.
+
+## 5.1.5. Audience Narrative Control
+
+Audience narrative control is achieved through clickable legends that act as interactive toggle switches.
+
+By configuring the click policy to hide, the legend transforms from a static text list into a dynamic visibility controller.
+
+When a user clicks a legend item, the mapped glyph group is instantly hidden.
+
+This reduces visual clutter and allows the audience to isolate comparative trends on the fly.
+
+>[!Tip]
+> If you have twenty overlapping lines on a single chart, do not force the user to read a messy legend. Let them click the categories they want to hide and reveal the signal they actually care about.
+
+With narrative control established, we need mechanisms to filter the underlying data dynamically.
+
+## 5.1.6. Widgets for Dynamic Filtering
+
+Widgets provide the audience with a direct mechanism to filter datasets and explore specific subsets of data.
+
+A DateRangeSlider allows users to limit a broad time-series to a specific quarter or date interval.
+
+The mathematical bounds of the slider are defined by a start date and an end date.
 
 $$
-y = x^2
+\text{Slider Range} = [t_{\text{start}}, t_{\text{end}}]
 $$
 
-Example:
+where $$t_{\text{start}}$$ is the minimum temporal value and $$t_{\text{end}}$$ is the maximum.
 
-|x|y|
-|---|---|
-|1|1|
-|2|4|
-|3|9|
-|4|16|
-|5|25|
+When the user adjusts the slider, it triggers a filter event that updates the visualization instantly.
 
-## Visual Understanding
+This creates a seamless loop where user input directly drives the analytical output.
 
-```mermaid
-flowchart LR
+## 5.1.7. Layouts and Cognitive Load
 
-A[1] --> B[1² = 1]
-C[2] --> D[2² = 4]
-E[3] --> F[3² = 9]
-```
+Layouts organize multiple plots to reduce cognitive load and present a unified dashboard experience.
 
-## 3. Importing Figure and Show
+Real dashboards rarely contain just one chart; they require grids, panels, and comparative views.
 
-Transcript explains:
+Horizontal rows arrange plots side-by-side, which is ideal for cross-examining coordinate values across charts with shared boundaries.
 
-```python
-from bokeh.plotting import figure, show
-```
+Vertical columns stack plots, which is perfect for evaluating separate variables tracking against a unified timeline.
 
-Source:
+The layout engine preserves the independent interactivity of every sub-plot while maintaining a cohesive visual structure.
 
-## Why These Matter
+Understanding the theory is useless without practical execution.
 
-## `figure`
+## 5.1.8. Step-by-Step Construction Example
 
-Creates plotting canvas.
+Suppose:
 
-Equivalent to:
+- We need to plot three mathematical functions to compare their shapes
 
-```python
-plt.figure()
-```
+- Function 1 is linear: $$y = x$$
 
-in Matplotlib.
+- Function 2 is inverse: $$y = 10 - x$$
 
-## `show`
+- Function 3 is modulus: $$y = |x - 5|$$
 
-Renders visualization.
+- Tool: Python Bokeh package
 
-Without `show()`:
+### Step 1: Initialize Canvas
+Create the figure objects with uniform sizing parameters, setting the width and height to ensure consistent visual proportions across all plots.
 
-- nothing appears
-    
+### Step 2: Render Glyphs
+Apply scatter glyphs to each figure, mapping the $$x$$ values to the corresponding $$y$$ functions using distinct colors for each mathematical relationship.
 
-This is different from Matplotlib notebooks.
+### Step 3: Configure Interactivity
+Attach the pan, wheel zoom, and reset tools to each figure to enable browser-based exploration of the coordinate space.
 
-## Mental Model
+### Step 4: Arrange Layouts
+Use the row function to place the three figures side-by-side in a horizontal dashboard, allowing for immediate visual comparison of the linear, inverse, and modulus shapes.
 
-```mermaid
-flowchart TD
+### Step 5: Render Output
+Execute the show action to transmit the interactive HTML dashboard to the browser, finalizing the analytical experience.
 
-A[Create Figure]
---> B[Add Visual Objects]
---> C[Render using show()]
-```
+Execution is only half the battle; avoiding performance traps is what separates functional dashboards from broken ones.
 
-## 4. First Complete Bokeh Plot
+## 5.1.9. Factors Affecting Render Performance
 
-## Code
+Building complex dashboards introduces several variables that can degrade browser performance.
 
-```python
-from bokeh.plotting import figure, show
-from bokeh.io import output_notebook
+### 5.1.1 Glyph Density
+Every glyph rendered on the canvas translates to DOM elements in the browser. 
+Massive datasets with hundreds of thousands of points will cause the rendering engine to lag.
 
-## Enable notebook rendering
-output_notebook()
+### 5.1.2 Layout Complexity
+Nested rows and columns increase the computational overhead of the layout engine.
+Deeply nested structures force the browser to recalculate dimensions repeatedly.
 
-## Data
-x = list(range(1, 51))
-y = [i**2 for i in x]
+### 5.1.3 Tool Overhead
+Every additional tool attached to a figure adds JavaScript event listeners.
+Loading unnecessary tools on every sub-plot wastes memory and slows down interaction response times.
 
-## Create figure
-p = figure(
-    title="Parabola Plot",
-    x_axis_label="X Values",
-    y_axis_label="Y Values",
-    width=700,
-    height=400
-)
+To maintain a smooth user experience, you must balance visual richness with computational efficiency.
 
-## Add line glyph
-p.line(
-    x,
-    y,
-    line_width=3,
-    legend_label="y = x²"
-)
+## 5.1.10. Bokeh vs Traditional Plotting Libraries
 
-## Show visualization
-show(p)
-```
+The choice of visualization library fundamentally dictates the nature of your analytical output.
 
-## What Happens Internally
+The following table compares the core philosophies and capabilities of Bokeh against traditional static plotting tools.
 
-```mermaid
-flowchart TD
+| Feature | Traditional Static Libraries | Bokeh |
+| :--- | :--- | :---: |
+| Output Format | Static image file | Interactive HTML object |
+| User Experience | Passive viewing | Exploratory interaction |
+| Primary Focus | Chart aesthetics | Application functionality |
+| Deployment | Embedded images | Web server or notebook |
 
-A[Data]
---> B[Figure Object]
---> C[Line Glyph]
---> D[Interactive HTML]
---> E[Browser Rendering]
-```
+This conceptual shift from image output to browser object is the most critical distinction in modern data visualization.
 
-## 5. What Is a Glyph?
+## 5.1.11. Common Pitfalls and Misinterpretations
 
-This is one of the MOST important Bokeh concepts.
+Many developers approach Bokeh with a static plotting mindset, leading to frustrating user experiences.
 
-Transcript:
+### 5.11.1 Ignoring the Render Action
 
-> Glyph is a visual representation of data.
+>[!Warning]
+> Forgetting to call the show function is the most common beginner mistake. Without this explicit render action, your perfectly constructed figure remains invisible in memory.
 
-Source:
+### 5.11.2 Overloading the Canvas
 
-## Simple Definition
+>[!Warning]
+> Dumping fifty thousand scatter points onto a single figure without downsampling will freeze the browser. Bokeh is powerful, but it is not a substitute for proper data aggregation before rendering.
 
-A glyph is:
+### 5.11.3 Misusing Layouts
 
-- line
-    
-- circle
-    
-- bar
-    
-- square
-    
-- wedge
-    
-- tile
-    
+>[!Warning]
+> Forcing a vertical column layout for time-series data that should be compared side-by-side creates unnecessary cognitive friction. Always match the layout geometry to the analytical comparison you are trying to highlight.
 
-Any visual object representing data.
+Avoiding these pitfalls ensures your dashboard remains a responsive, functional tool.
 
-## Mental Model
+## 5.1.12. Conclusions
 
-```text
-Data
-  ↓
-Glyph
-  ↓
-Visual Representation
-```
+Ultimately, Bokeh transforms data visualization from a static reporting task into an interactive analytical experience.
 
-## Examples
+It balances mathematical precision with web-based interactivity, guiding the user from high-level trends down to granular data points without friction.
 
-|Glyph|Meaning|
-|---|---|
-|line()|line chart|
-|circle()|scatter points|
-|vbar()|vertical bars|
-|square()|square markers|
+The structure of every effective Bokeh dashboard relies on a strict architectural hierarchy:
 
-## 6. Line Glyph
+$$
+\text{Bokeh Pipeline} = \text{Figure} + \text{Glyphs} + \text{Interactivity} + \text{Layouts}
+$$
 
-Transcript uses:
+- **Figure:** The foundational canvas that defines the coordinate space and boundaries.
 
-```python
-p.line(x, y)
-```
+- **Glyphs:** The visual representations of data that map mathematical relationships to geometric shapes.
 
-Source:
+- **Interactivity:** The toolbar engines and clickable legends that shift analytical control to the audience.
 
-## What It Actually Does
+- **Layouts:** The structural containers that organize multiple plots into a cohesive, low-friction dashboard.
 
-```python
-p.line(
-    x,
-    y,
-    line_width=2,
-    color="blue",
-    legend_label="Line"
-)
-```
+Keep your glyph density manageable, your layouts logical, and your focus entirely on the end user's ability to explore the data.
 
-## Parameters Explained
-
-|Parameter|Meaning|
-|---|---|
-|x|x-axis data|
-|y|y-axis data|
-|line_width|thickness|
-|color|line color|
-|legend_label|legend text|
-
-## Visual Pipeline
-
-```mermaid
-flowchart LR
-
-A[X Array]
---> B[Line Glyph Engine]
-
-C[Y Array]
---> B
-
-B --> D[Interactive Line]
-```
-
-## 7. Interactivity Features
-
-Transcript highlights:
-
-- zoom
-    
-- pan
-    
-- reset
-    
-- save
-    
-- localized zoom
-    
-
-Source:
-
-## This Is The Key Difference
-
-Matplotlib:
-
-- static image mindset
-    
-
-Bokeh:
-
-- browser application mindset
-    
-
-## Built-In Interactive Tools
-
-```python
-p = figure(
-    tools="pan,wheel_zoom,box_zoom,reset,save"
-)
-```
-
-## Tool Breakdown
-
-|Tool|Purpose|
-|---|---|
-|pan|move graph|
-|wheel_zoom|mouse wheel zoom|
-|box_zoom|drag zoom|
-|reset|restore|
-|save|export PNG|
-
-## Visual Interaction Model
-
-```mermaid
-flowchart TD
-
-A[Mouse Action]
---> B[JavaScript Event]
---> C[Bokeh Tool]
---> D[Update Plot]
-```
-
-## 8. Adding Multiple Glyphs
-
-Transcript then moves to:
-
-- line
-    
-- circles
-    
-- squares
-    
-
-on SAME plot.
-
-Source:
-
-## Why This Matters
-
-Modern visualizations combine:
-
-- multiple data layers
-    
-- multiple encodings
-    
-- multiple visual meanings
-    
-
-## Example
-
-```python
-from bokeh.plotting import figure, show
-from bokeh.io import output_notebook
-
-output_notebook()
-
-x = [1,2,3,4]
-y = [2,5,8,2]
-
-p = figure(
-    title="Multiple Glyphs Example",
-    width=700,
-    height=400
-)
-
-## Line glyph
-p.line(
-    x,
-    y,
-    line_width=2,
-    legend_label="Line"
-)
-
-## Circle glyph
-p.circle(
-    x,
-    y,
-    size=12,
-    color="red",
-    legend_label="Circles"
-)
-
-## Square glyph
-p.square(
-    x,
-    [1,4,5,3],
-    size=12,
-    color="green",
-    legend_label="Squares"
-)
-
-show(p)
-```
-
-## Visual Structure
-
-```mermaid
-flowchart TD
-
-A[Base Figure]
---> B[Line Glyph]
-
-A --> C[Circle Glyph]
-
-A --> D[Square Glyph]
-```
-
-## 9. Why Multiple Glyphs Matter
-
-This enables:
-
-- overlays
-    
-- trend highlighting
-    
-- anomaly marking
-    
-- forecast comparison
-    
-- multi-series charts
-    
-
-## Real Analytics Example
-
-|Glyph|Meaning|
-|---|---|
-|line|sales trend|
-|circles|actual observations|
-|squares|forecast points|
-
-## 10. Clickable Legends
-
-Transcript mentions:
-
-```python
-legend.click_policy = "hide"
-```
-
-Source:
-
-## Why This Is Powerful
-
-Users can:
-
-- hide clutter
-    
-- isolate signals
-    
-- compare categories dynamically
-    
-
-## Example
-
-```python
-p.legend.click_policy = "hide"
-```
-
-## Behavior
-
-```text
-Click Legend
-    ↓
-Glyph Visibility Toggles
-```
-
-## This Is Huge In Dashboards
-
-Imagine:
-
-- 20 lines
-    
-- 20 categories
-    
-
-Instead of filtering data:
-
-- user clicks legend
-    
-
-Very efficient.
-
-## 11. Widgets
-
-Transcript introduces widgets.
-
-Source:
-
-## What Are Widgets?
-
-Widgets are UI controls:
-
-- sliders
-    
-- dropdowns
-    
-- date pickers
-    
-- buttons
-    
-
-## Core Idea
-
-```text
-Visualization
-+
-User Controls
-=
-Interactive Analytics
-```
-
-## Date Range Slider Example
-
-```python
-from bokeh.models import DateRangeSlider
-from datetime import datetime
-
-slider = DateRangeSlider(
-    title="Select Date Range",
-    start=datetime(2022, 1, 1),
-    end=datetime(2023, 12, 31),
-    value=(
-        datetime(2022, 7, 1),
-        datetime(2023, 3, 31)
-    )
-)
-
-show(slider)
-```
-
-## Why This Matters
-
-User controls:
-
-- time filtering
-    
-- zooming
-    
-- exploration
-    
-
-without changing code.
-
-## Dashboard Interaction Model
-
-```mermaid
-flowchart LR
-
-A[User Slider]
---> B[Filter Data]
---> C[Update Visualization]
-```
-
-## 12. Layouts
-
-Transcript explains:
-
-- rows
-    
-- columns
-    
-
-Source:
-
-## Why Layouts Matter
-
-Real dashboards rarely contain:
-
-- one chart
-    
-
-They contain:
-
-- grids
-    
-- panels
-    
-- KPI blocks
-    
-- filters
-    
-- charts
-    
-
-## Row Layout
-
-```python
-from bokeh.layouts import row
-
-show(row(plot1, plot2, plot3))
-```
-
-## Column Layout
-
-```python
-from bokeh.layouts import column
-
-show(column(plot1, plot2, plot3))
-```
-
-## Visual Understanding
-
-## Row
-
-```text
-[Plot1] [Plot2] [Plot3]
-```
-
-## Column
-
-```text
-[Plot1]
-[Plot2]
-[Plot3]
-```
-
-## 13. Full Layout Example
-
-```python
-from bokeh.plotting import figure, show
-from bokeh.layouts import row
-from bokeh.io import output_notebook
-
-output_notebook()
-
-x = list(range(11))
-
-## Plot 1
-p1 = figure(title="y = x")
-p1.line(x, x)
-
-## Plot 2
-p2 = figure(title="y = 10-x")
-p2.line(x, [10-i for i in x])
-
-## Plot 3
-p3 = figure(title="Absolute Function")
-p3.line(x, [abs(5-i) for i in x])
-
-## Arrange in row
-layout = row(p1, p2, p3)
-
-show(layout)
-```
-
-## Internal Architecture
-
-```mermaid
-flowchart TD
-
-A[Plot 1]
---> D[Layout Engine]
-
-B[Plot 2]
---> D
-
-C[Plot 3]
---> D
-
-D --> E[Dashboard]
-```
-
-## 14. Important Design Insight
-
-The transcript quietly reveals something important:
-
-> Bokeh is NOT just plotting.
-
-It is:
-
-- plotting
-    
-- UI framework
-    
-- interaction engine
-    
-- dashboard system
-    
-
-combined.
-
-## 15. Bokeh vs Traditional Plotting
-
-|Traditional Plotting|Bokeh|
-|---|---|
-|image output|browser object|
-|static|interactive|
-|passive viewing|exploratory|
-|chart-focused|application-focused|
-
-## 16. Real Industry Usage
-
-Bokeh becomes valuable when:
-
-- users need exploration
-    
-- executives need interaction
-    
-- dashboards require filtering
-    
-- data updates live
-    
-
-## Typical Use Cases
-
-|Industry|Use|
-|---|---|
-|Finance|live stock dashboards|
-|Healthcare|patient monitoring|
-|Manufacturing|sensor analytics|
-|Logistics|shipment tracking|
-|Data Science|model diagnostics|
-
-## 17. Complete Mental Model
-
-```mermaid
-flowchart TD
-
-A[Data]
---> B[Figure]
-
-B --> C[Glyphs]
-
-C --> D[Interactivity]
-
-D --> E[Widgets]
-
-E --> F[Layouts]
-
-F --> G[Interactive Dashboard]
-```
-
-## Final Takeaways
-
-## Core Bokeh Pipeline
-
-```text
-Figure
-  ↓
-Glyphs
-  ↓
-Interactivity
-  ↓
-Widgets
-  ↓
-Layouts
-  ↓
-Dashboard
-```
-
-## Most Important Concepts
-
-|Concept|Meaning|
-|---|---|
-|figure()|plotting canvas|
-|glyph|visual representation|
-|show()|render visualization|
-|widgets|interactive controls|
-|layouts|arrange plots|
-|legend click policy|dynamic visibility|
-
-## Biggest Conceptual Shift
-
-Matplotlib mindset:
-
-```text
-Create chart
-```
-
-Bokeh mindset:
-
-```text
-Create interactive analytical experience
-```
-
-Source:
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
+That is how you build visual analytics that actually drive decisions.
