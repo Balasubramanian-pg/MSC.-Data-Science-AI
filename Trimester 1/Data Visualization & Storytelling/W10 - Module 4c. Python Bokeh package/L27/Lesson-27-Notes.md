@@ -1,603 +1,319 @@
----
-title: W10 - Module 4c. Python Bokeh package - Module 4c. Python Bokeh package
-module: Statistical Modelling And Inferencing
-week: W10 - Module 4c. Python Bokeh package - Module 4c. Python Bokeh package
----
-
-Here is a clean, production-ready, and fully documented version of your Lesson 27 notes.
-
-The original notes had a few broken syntax issues (such as `x2` and `x3` instead of proper Python exponents `x2` and `x3`). This refactored version fixes those errors, organizes the concepts logically, adds explicit comments detailing _why_ certain methods are used, and includes a comprehensive cheat sheet for your study reference.
-
-## Refactored & Documented Bokeh Visualization Guide
-
-```Python
-import numpy as np
-import pandas as pd
-from datetime import date
-from bokeh.io import output_notebook, show
-from bokeh.plotting import figure
-from bokeh.models import DateRangeSlider
-from bokeh.layouts import row, column, gridplot
-
-## =====================================================================
-## 1. INITIALIZATION
-## =====================================================================
-## Call this once per notebook session to prepare the client-side 
-## JavaScript library (BokehJS) to render interactive output inline.
-output_notebook()
-
-## =====================================================================
-## 2. SECTIONS 7 & 8: Layered Glyph Architecture & Interactive Legends
-## =====================================================================
-## Preparing base coordinate matrices
-x_vals = [1, 2, 3, 4, 5]
-y_vals_main = [2, 5, 8, 2, 7]
-y_vals_offset = [1, 4, 7, 1, 6]  # Varied data for structural contrast
-
-## Initialize the main canvas object using the high-level plotting interface
-p = figure(
-    title="Layered Glyphs with Multi-Type Markers",
-    x_axis_label="Independent Axis (X)",
-    y_axis_label="Dependent Outcome (Y)",
-    width=650,
-    height=400,
-    tools="pan,box_zoom,wheel_zoom,reset,save" # Explicitly defining toolbar capabilities
-)
-
-## Render Layer 1: Continuous line glyph acting as a structural trend indicator
-p.line(
-    x_vals, y_vals_main, 
-    line_width=2, 
-    color="teal", 
-    legend_label="Trendline"
-)
-
-## Render Layer 2: Circle markers overlaid precisely on top of the main data points
-p.circle(
-    x_vals, y_vals_main, 
-    size=10, 
-    color="red", 
-    alpha=0.8, 
-    legend_label="Primary Node"
-)
-
-## Render Layer 3: Square markers mapped to a secondary distribution stream
-p.square(
-    x_vals, y_vals_offset, 
-    size=12, 
-    color="navy", 
-    alpha=0.5, 
-    legend_label="Baseline Offset"
-)
-
-## Audience Control Narrative: Turn the legend items into interactive toggle switches.
-## 'hide' will vanish the corresponding glyph layer when clicked; can also be set to 'mute'.
-p.legend.click_policy = "hide"
-p.legend.location = "top_left"
-
-## Deploy canvas components to the browser window
-show(p)
-
-## =====================================================================
-## 3. SECTION 9: Interactive UI Widgets (Standalone Layer)
-## =====================================================================
-## Using concrete python 'date' objects prevents string interpretation errors
-date_range_slider = DateRangeSlider(
-    title="Temporal Filter Range",
-    start=date(2022, 7, 1),
-    end=date(2023, 3, 31),
-    value=(date(2022, 10, 1), date(2022, 12, 31)),
-    width=400
-)
-
-show(date_range_slider)
-
-## =====================================================================
-## 4. SECTION 10: Advanced Document Layout Architecture
-## =====================================================================
-## --- Example A: Side-by-Side Function Multiplots (Row Layout) ---
-x_curve = np.linspace(0, 10, 100)
-
-## FIX: Corrected original notes math text syntax errors (x2 / x3) to explicit Python operators (**2 / **3)
-y_quadratic = x_curve ** 2
-y_cubic = x_curve ** 3
+# 4.3. Data Binding and Linked Interactivity in Bokeh
 
-## Configure Canvas A
-p_quad = figure(title="Quadratic Trend (x²)", width=300, height=300, tools="pan,reset")
-p_quad.line(x_curve, y_quadratic, color="blue", line_width=3)
+## 4.3.1. The Limitation of Direct Data Passing
 
-## Configure Canvas B
-p_cube = figure(title="Cubic Trend (x³)", width=300, height=300, tools="pan,reset")
-p_cube.line(x_curve, y_cubic, color="green", line_width=3)
+When constructing basic visualizations, passing raw arrays directly to glyph methods creates isolated data silos.
 
-## Arrange horizontally as an integrated sub-layout row row array
-function_dashboard = row(p_quad, p_cube)
-show(function_dashboard)
+Each plot maintains its own independent copy of the data in the browser memory.
 
-## --- Example B: Heterogeneous Distribution Metrics (Grid Layout) ---
-x_scatter = list(range(11))
-dist_0 = x_scatter
-dist_1 = [10 - i for i in x_scatter]
-dist_2 = [abs(i - 5) for i in x_scatter]
+This approach works for simple, standalone charts but fundamentally breaks down when building complex, interactive dashboards.
 
-## Using shared styling dictionary arguments to optimize setup clutter
-canvas_config = dict(width=220, height=220, background_fill_color="#fafafa", tools="wheel_zoom,reset")
+If a user selects a data point in one plot, the other plots remain completely unaware of this interaction, leaving the visualizations structurally deaf to each other.
 
-s1 = figure(title="Linear Vector", **canvas_config)
-s1.scatter(x_scatter, dist_0, size=12, color="#53777a", alpha=0.8, marker="circle")
+To build truly cohesive analytical applications, the data state must be centralized and shared across all visual renderers.
 
-s2 = figure(title="Inverse Vector", **canvas_config)
-s2.scatter(x_scatter, dist_1, size=12, color="#c02942", alpha=0.8, marker="triangle")
+This architectural requirement necessitates a fundamental shift in how data is passed to the plotting engine.
 
-s3 = figure(title="Modulus Center", **canvas_config)
-s3.scatter(x_scatter, dist_2, size=12, color="#d95b43", alpha=0.8, marker="square")
+## 4.3.2. The ColumnDataSource Architecture
 
-## gridplot organizes elements seamlessly into balanced matrices automatically handling layout padding
-metric_matrix = gridplot([[s1, s2], [s3, None]]) # Subplot position [1,1] intentionally left blank
-show(metric_matrix)
-```
+The central nervous system of Bokeh interactivity is the ColumnDataSource object.
 
-## Architectural Deep-Dive & Cheat Sheet
+Instead of passing raw arrays, data is wrapped in this specialized container, which acts as the single source of truth for the visualization.
 
-### 1. Data Pipeline Pipeline Mechanism
+The conceptual relationship between the data and the visual output is defined by the following binding formula:
 
-Unlike static rendering engines (such as Matplotlib and Seaborn) that push flattened images to the frontend, Bokeh creates a two-tier application stack:
+$$
+\text{ColumnDataSource} = \text{Centralized Data State} \leftrightarrow \text{Visual Renderers}
+$$
 
-- **The Python Context:** You define the structural business logic, data scopes, glyph overlays, canvas parameters, and widget dimensions. This architecture state is automatically serialized into a **JSON schema payload**.
-    
-- **The Browser JavaScript Client Context:** The built-in client framework, **BokehJS**, directly ingests that JSON package data stream and tracks canvas vectors instantly onto an interactive web-native HTML5 viewport.
-    
+The ColumnDataSource maps dictionary keys to specific column names, creating a tabular data structure that the browser can efficiently query.
 
-### 2. Interface Selection Blueprint
+Every glyph in the visualization references these column names rather than the underlying data values.
 
-|**Feature Matrix**|**High-Level Plotting (bokeh.plotting)**|**Low-Level Models (bokeh.models)**|
-|---|---|---|
-|**Operational Purpose**|Fast, general-use, descriptive dashboard creation.|Explicit custom widget, tool, or component tailoring.|
-|**API Code Footprint**|Extremely compact and familiar if transitioning from Matplotlib/Seaborn.|Highly verbose; requires individual object instantiation layouts.|
-|**Design Automations**|Default color groupings, anti-aliasing text, and auto-ranged axes fields are handled automatically.|Zero defaults. You must explicitly build out every axes range, scale, and grid matrix parameter manual block by manual block.|
+>[!Note]
+> The ColumnDataSource is not merely a data container; it is an active synchronization engine that maintains consistency between the Python backend and the JavaScript frontend.
 
-### 3. Toolbar Engines Glossary
+Transitioning from direct data passing to a centralized source model is the prerequisite for all advanced interactive features.
 
-- **`pan`**: Allows the user to click and drag across the plot canvas to shift the viewport focus range along $x$ or $y$ parameters seamlessly.
-    
-- **`box_zoom`**: Lets the operator specify a custom bounding rectangle area to magnifying target subsections into immediate, sharp view.
-    
-- **`wheel_zoom`**: Binds standard trackpad scrolling actions or mouse wheels directly to expanding or shrinking the current axes dimensions incrementally.
-    
-- **`reset`**: Automatically drops any user transformations or scale changes, snapping all plot components instantly back to the baseline configuration parameters.
+## 4.3.3. The Mechanics of Data Binding
 
-Bokeh is a Python library used to create interactive visualizations inside web browsers.
+When a glyph is configured to use a ColumnDataSource, it binds to specific fields by name.
 
-Unlike Matplotlib, which mainly creates static charts, Bokeh creates charts that users can:
+The mapping process follows a strict declarative syntax where visual properties are linked to data columns.
 
-- zoom
-    
-- pan
-    
-- hover
-    
-- hide/show data
-    
-- interact with
-    
+The general binding mechanism can be expressed as:
 
-Source:
+$$
+\text{Visual Property} = \text{Field Name in ColumnDataSource}
+$$
 
-## Basic Flow
+This decoupling of data from visual representation allows the underlying data to change without requiring the reconstruction of the plot objects, meaning the browser simply updates the visual properties based on the new values in the shared source.
 
-Bokeh works like this:
+### 3.1 Field Referencing
 
-```text
-Python Code
-    ↓
-Bokeh converts plot into JSON
-    ↓
-BokehJS (JavaScript)
-    ↓
-Browser renders interactive graph
-```
+Glyphs reference fields using string identifiers that correspond to the keys in the data dictionary.
 
-Source:
+### 3.2 Spatial Mapping
 
-## Step 1: Install Bokeh
+Spatial coordinates are mapped directly to these field names, ensuring that any update to the source immediately reflects in the geometric positioning of the marks.
 
-```python
-pip install bokeh
-```
+### 3.3 Aesthetic Mapping
 
-Source:
+Visual aesthetics such as color, size, and alpha transparency can also be mapped to data columns, enabling dynamic visual encoding based on the underlying data values.
 
-## Step 2: Enable Notebook Rendering
+Understanding this binding mechanism clarifies how multiple plots can react to the same underlying data state.
 
-```python
-from bokeh.io import output_notebook
+## 4.3.4. Linked Interactivity and Shared Sources
 
-output_notebook()
-```
+The true power of the ColumnDataSource emerges when multiple plots share the exact same source object.
 
-Why?
+This shared architecture enables linked interactivity, where user actions in one plot automatically propagate to all other plots referencing the same data.
 
-Bokeh graphs run using browser rendering.
+### 4.1 Linked Panning
 
-`output_notebook()` initializes Bokeh inside Jupyter Notebook.
+When panning or zooming is applied to one plot, the axes of all linked plots update synchronously, maintaining a consistent spatial context across the dashboard.
 
-Without this:
+### 4.2 Linked Brushing
 
-- plots may not display properly
-    
+Linked brushing is a more advanced interaction where selecting a subset of data in one plot highlights the corresponding subset in all other plots.
 
-Source:
+The propagation of selection events follows this conceptual pipeline:
 
-## Step 3: Create a Figure
+$$
+\text{Selection Event in Plot A} \rightarrow \text{Shared ColumnDataSource} \rightarrow \text{Visual Update in Plot B}
+$$
 
-A figure is the plotting area.
+This capability allows analysts to explore multivariate relationships by isolating specific data clusters across different dimensional projections.
 
-```python
-from bokeh.plotting import figure
+>[!Tip]
+> Linked brushing transforms a collection of independent charts into a unified analytical instrument, enabling the discovery of hidden correlations that are invisible in isolated views.
 
-p = figure(title="My First Plot")
-```
+The mechanics of how the browser identifies which points are selected rely on a process known as hit testing.
 
-Think of `figure()` as:
+## 4.3.5. Selection Geometry and Hit Testing
 
-- chart canvas
-    
-- graph container
-    
+When a user draws a selection box or hovers over a point, the browser must determine which data points fall within the interaction area.
 
-Everything gets added onto this figure.
+This process is called hit testing.
 
-## Step 4: Add Glyphs
+The hit testing algorithm calculates the geometric distance between the interaction coordinates and the rendered glyph positions.
 
-A glyph is a visual representation of data.
+The selection criteria can be formalized as:
 
-Examples:
+$$
+\text{Selected Indices} = \{ i \mid \text{Distance}(\text{Interaction Point}, \text{Glyph}_i) < \text{Threshold} \}
+$$
 
-- line
-    
-- circle
-    
-- square
-    
-- bar
-    
+where:
 
-Source:
+- $$i$$ represents the index of a specific data point
+- $$\text{Interaction Point}$$ represents the coordinates of the user's selection tool
+- $$\text{Glyph}_i$$ represents the rendered coordinates of the data point
+- $$\text{Threshold}$$ represents the geometric tolerance for hit testing
 
-## Example: Line Glyph
+For box selection tools, the algorithm checks whether the glyph coordinates fall within the bounding rectangle defined by the user's drag operation.
 
-```python
-from bokeh.plotting import figure, show
-from bokeh.io import output_notebook
+The resulting set of selected indices is then passed back to the shared ColumnDataSource.
 
-output_notebook()
+### 5.1 Index-Based Selection
 
-## Create figure
-p = figure(title="Simple Line Plot")
+Selection in Bokeh is strictly index-based, meaning the source maintains an array of integer indices corresponding to the selected rows.
 
-## Data
-x = [1, 2, 3, 4, 5]
-y = [2, 5, 8, 2, 7]
+### 5.2 Geometric Tolerance
 
-## Add line glyph
-p.line(x, y, line_width=2)
+Hit testing incorporates a small geometric tolerance to ensure that users can easily select points even if their cursor is not perfectly centered on the marker.
 
-## Display plot
-show(p)
-```
+### 5.3 Performance Optimization
 
-## What Happens Internally
+The hit testing algorithm is highly optimized in the JavaScript backend to handle thousands of points without introducing noticeable latency during interaction.
 
-```text
-figure()
-    creates plot area
+Once the selected indices are determined, the visualization must visually distinguish the selected points from the unselected ones.
 
-p.line()
-    adds visual layer
+## 4.3.6. Visualizing Selection States
 
-show()
-    renders browser visualization
-```
+To provide clear visual feedback, Bokeh automatically alters the appearance of glyphs based on their selection state.
 
-## Important Interactive Tools
+The visual distinction is primarily controlled through the alpha channel and color properties.
 
-Bokeh automatically provides tools like:
+The rendering logic applies different visual parameters based on the selection state:
 
-- zoom
-    
-- pan
-    
-- reset
-    
-- save
-    
+$$
+\text{Rendered Alpha} = 
+\begin{cases} 
+\text{Default Alpha} & \text{if index is selected} \\
+\text{Non-Selection Alpha} & \text{if index is unselected}
+\end{cases}
+$$
 
-Source:
+where:
 
-## Example
+- $$\text{Default Alpha}$$ is the original opacity of the glyph
+- $$\text{Non-Selection Alpha}$$ is the reduced opacity applied to unselected points
 
-```python
-p = figure(
-    title="Interactive Plot",
-    tools="pan,wheel_zoom,box_zoom,reset,save"
-)
-```
+By default, unselected glyphs are rendered with a significantly reduced alpha value, causing them to fade into the background, while selected glyphs retain their full color intensity and opacity to draw the analyst's attention directly to the isolated data cluster.
 
-## Tool Meaning
+### 6.1 Selection Highlighting
 
-|Tool|Purpose|
-|---|---|
-|pan|move graph|
-|wheel_zoom|mouse zoom|
-|box_zoom|drag-to-zoom|
-|reset|restore original|
-|save|export image|
+Selected glyphs maintain their visual prominence, ensuring that the isolated data cluster remains the focal point of the analysis.
 
-## Multiple Glyphs
+### 6.2 Non-Selection Styling
 
-You can overlay multiple visual layers.
+The non-selection alpha property can be customized to control how prominently the unselected data fades, allowing for fine-tuned visual contrast.
 
-Source:
+### 6.3 Hover States
 
-## Example
+In addition to selection states, hover states provide temporary visual feedback when the cursor passes over a glyph, typically by increasing the marker size or altering the border color.
 
-```python
-from bokeh.plotting import figure, show
+These visual state transitions are entirely managed by the browser, ensuring smooth and responsive interactions.
 
-x_vals = [1, 2, 3, 4, 5]
+To fully appreciate the analytical value of these mechanisms, consider a practical scenario involving multivariate data exploration.
 
-p = figure(title="Multiple Glyphs")
+## 4.3.7. Example of Linked Brushing
 
-## Line
-p.line(
-    x_vals,
-    [2, 5, 8, 2, 7],
-    line_width=2,
-    legend_label="Line"
-)
+Suppose:
 
-## Circles
-p.circle(
-    x_vals,
-    [2, 5, 8, 2, 7],
-    size=10,
-    color="red",
-    legend_label="Circles"
-)
+- Dataset: Bivariate distribution with 500 observations
+- Variables: Spatial coordinate X, Spatial coordinate Y
+- Plot A: Scatter plot mapping X to horizontal axis and Y to vertical axis
+- Plot B: Histogram mapping X to frequency bins
+- Shared Source: Single ColumnDataSource containing both X and Y columns
 
-## Squares
-p.square(
-    x_vals,
-    [1, 4, 7, 1, 6],
-    size=12,
-    color="navy",
-    legend_label="Squares"
-)
+### Step 1: Initialize the Shared Data Source
 
-show(p)
-```
+The data is structured into a dictionary and wrapped in a centralized ColumnDataSource object, establishing the single source of truth.
 
-## Why Multiple Glyphs Matter
+### Step 2: Construct the Primary Scatter Plot
 
-This allows:
+The scatter plot is configured to reference the X and Y fields from the shared source, mapping them to the spatial coordinates of the canvas.
 
-- trends
-    
-- observations
-    
-- forecasts
-    
-- anomalies
-    
+### Step 3: Construct the Secondary Histogram
 
-to exist in the same chart.
+The histogram is configured to reference the exact same X field from the shared source, binning the data to display its marginal distribution.
 
-## Legend Interactivity
+### Step 4: Establish the Layout
 
-Bokeh legends can become clickable.
+The two plots are arranged in a horizontal row layout, creating a cohesive dashboard interface for simultaneous viewing.
 
-```python
-p.legend.click_policy = "hide"
-```
+### Step 5: Execute the Interaction
 
-Source:
+The user activates the box select tool on the scatter plot and draws a rectangle around a specific cluster of points.
 
-Now users can:
+The browser calculates the selected indices and updates the shared source.
 
-- hide circles
-    
-- hide squares
-    
-- show only lines
-    
+The scatter plot highlights the selected points while fading the rest.
 
-This is extremely useful in dashboards.
+Simultaneously, the histogram recalculates its bins to display only the distribution of the selected X values, effectively filtering the marginal view to match the spatial selection.
 
-## Widgets
+This seamless synchronization allows the analyst to instantly understand the distributional properties of any spatial cluster they isolate.
 
-Widgets are UI controls.
+While linked brushing provides powerful built-in interactivity, more complex analytical workflows often require custom logic.
 
-Examples:
+## 4.3.8. The Callback Paradigm
 
-- sliders
-    
-- dropdowns
-    
-- date pickers
-    
+When built-in interactions like panning and brushing are insufficient, Bokeh provides a mechanism for executing custom logic in response to user events.
 
-Source:
+This is achieved through the callback paradigm, where specific user actions trigger the execution of custom code.
 
-## Date Slider Example
+### 8.1 Client-Side Execution
 
-```python
-from bokeh.models import DateRangeSlider
-from bokeh.io import show
+Callbacks can be written in JavaScript and executed entirely within the browser, allowing for instantaneous responses without requiring a round-trip to a Python server.
 
-date_slider = DateRangeSlider(
-    value=("2022-10-01", "2022-12-31"),
-    start="2022-07-01",
-    end="2023-03-31"
-)
+### 8.2 Server-Side Execution
 
-show(date_slider)
-```
+For tasks that require heavy computation or access to external databases, callbacks can be routed to a live Python backend, which processes the request and pushes the updated data back to the browser.
 
-## Why Widgets Matter
+### 8.3 Event Triggers
 
-Users can interact with data dynamically.
+Callbacks can be attached to a wide variety of events, including changes in widget values, updates to the selection indices, or modifications to the plot ranges.
 
-Example:
+The conceptual flow of a custom callback is defined as:
 
-- select quarter
-    
-- filter dates
-    
-- explore trends
-    
+$$
+\text{User Event} \rightarrow \text{Callback Trigger} \rightarrow \text{Logic Execution} \rightarrow \text{Source Update} \rightarrow \text{Visual Re-rendering}
+$$
 
-without changing code.
+This extensible architecture ensures that Bokeh can accommodate virtually any interactive requirement, no matter how specialized.
 
-## Layouts
+However, this power comes with specific performance considerations that must be managed carefully.
 
-Layouts organize multiple plots together.
+## 4.3.9. Performance Implications of Shared Sources
 
-Source:
+While sharing a ColumnDataSource across multiple plots enables powerful interactivity, it also introduces specific performance constraints.
 
-## Row Layout
+### 9.1 Memory Overhead
 
-```python
-from bokeh.layouts import row
+Every column in the data source is serialized and transmitted to the browser.
 
-show(row(plot1, plot2, plot3))
-```
+Extremely wide datasets with hundreds of columns can significantly increase the initial load time and memory footprint of the application.
 
-Result:
+### 9.2 Rendering Bottlenecks
 
-```text
-[Plot1] [Plot2] [Plot3]
-```
+When a selection event occurs, every plot referencing the shared source must update its visual state.
 
-## Column Layout
+If the dashboard contains dozens of complex plots, a single selection event can trigger a massive cascade of rendering operations, potentially causing the browser to lag.
 
-```python
-from bokeh.layouts import column
+### 9.3 Hit Testing Complexity
 
-show(column(plot1, plot2))
-```
+The computational cost of hit testing scales with the number of glyphs rendered on the canvas.
 
-Result:
+Datasets containing hundreds of thousands of points will cause the selection box to feel sluggish as the browser struggles to calculate distances for every marker.
 
-```text
-[Plot1]
-[Plot2]
-```
+The relationship between dataset size and interaction latency can be conceptualized as:
 
-## Full Example
+$$
+\text{Interaction Latency} \propto \text{Number of Rendered Glyphs} \times \text{Number of Linked Plots}
+$$
 
-```python
-from bokeh.plotting import figure, show
-from bokeh.layouts import row
+where:
 
-x = list(range(11))
+- $$\propto$$ indicates direct proportionality
+- $$\text{Number of Rendered Glyphs}$$ is the total count of visual marks on the canvas
+- $$\text{Number of Linked Plots}$$ is the count of plots sharing the same data source
 
-y0 = x
-y1 = [10 - i for i in x]
-y2 = [abs(i - 5) for i in x]
+>[!Warning]
+> Never share a massive, unaggregated dataset across multiple plots without implementing server-side pagination or client-side data sampling. The browser is not a substitute for a database engine.
 
-## First plot
-s1 = figure(width=250, height=250)
-s1.scatter(x, y0)
+To mitigate these issues, analysts should carefully curate the data passed to the ColumnDataSource, transmitting only the columns strictly necessary for the visual encoding and interaction logic.
 
-## Second plot
-s2 = figure(width=250, height=250)
-s2.scatter(x, y1)
+## 4.3.10. Conclusions
 
-## Third plot
-s3 = figure(width=250, height=250)
-s3.scatter(x, y2)
+The transition from direct data passing to centralized data binding represents the most critical architectural leap in mastering Bokeh.
 
-## Arrange horizontally
-show(row(s1, s2, s3))
-```
+### 10.1 The Role of the Centralized Source
 
-## What This Produces
+The ColumnDataSource serves as the foundational layer for all advanced interactivity, acting as the single source of truth that synchronizes the Python backend with the JavaScript frontend.
 
-Three interactive plots displayed side-by-side.
+The core binding relationship is restated as:
 
-Useful for:
+$$
+\text{ColumnDataSource} = \text{Centralized Data State} \leftrightarrow \text{Visual Renderers}
+$$
 
-- comparisons
-    
-- dashboards
-    
-- monitoring systems
-    
+### 10.2 Mechanics of Linked Interactivity
 
-## High-Level vs Low-Level APIs
+By sharing this source across multiple plots, analysts unlock linked panning and linked brushing, transforming isolated charts into a unified analytical instrument.
 
-Bokeh has two major interfaces.
+The propagation of selection events follows the established pipeline:
 
-Source:
+$$
+\text{Selection Event in Plot A} \rightarrow \text{Shared ColumnDataSource} \rightarrow \text{Visual Update in Plot B}
+$$
 
-## High-Level
+### 10.3 Strategic Implementation
 
-```python
-from bokeh.plotting import figure
-```
+The following table summarizes the strategic considerations for implementing shared data sources in production dashboards.
 
-Easy to use.  
-Most people use this.
+| **Consideration** | **Best Practice** | **Risk of Neglect** |
+|:---|:---:|---:|
+| Data Volume | Transmit only necessary columns | Increased load times and memory bloat |
+| Plot Complexity | Limit the number of linked plots per source | Browser lag during selection events |
+| Hit Testing | Aggregate or sample massive point clouds | Sluggish interaction and unresponsive tools |
+| Callback Logic | Prefer client-side execution for simple updates | Unnecessary server latency and overhead |
 
-## Low-Level
+### 10.4 The Analytical Advantage
 
-```python
-from bokeh.models import *
-```
+Ultimately, the value of linked interactivity lies in its ability to accelerate human pattern recognition.
 
-Used for:
+By allowing the analyst to seamlessly isolate and inspect multivariate clusters across different dimensional projections, the shared data source model bridges the gap between raw computational power and human cognitive insight.
 
-- deep customization
-    
-- advanced dashboards
-    
-- widget logic
-    
-
-## Core Mental Model
-
-```text
-Data
-  ↓
-Figure
-  ↓
-Glyphs
-  ↓
-Interactivity
-  ↓
-Widgets
-  ↓
-Layouts
-  ↓
-Dashboard
-```
-
-## Most Important Difference From Matplotlib
-
-Matplotlib mindset:
-
-```text
-Create static chart
-```
-
-Bokeh mindset:
-
-```text
-Create interactive browser application
-```
-
-That is the real conceptual shift.
-
-Source:
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
+Mastering this architecture is essential for building dashboards that are not merely decorative, but deeply analytical.
