@@ -1,147 +1,293 @@
----
-title: W11 - Module 4d. Tableau - Module 4d. Tableau
-module: Statistical Modelling And Inferencing
-week: W11 - Module 4d. Tableau - Module 4d. Tableau
----
+# 9.1. Data Architecture and Visualization Ecosystems
 
-## Page 1
+## 9.1.1. From Raw Data to Analytical Platforms
 
- Tableau:  Lecture Notes 
- 
-1. Tableau Ecosystem 
- 
-Tableau is an end-to-end data analytics platform. Its core components are designed for 
-different stages of the analytics workflow. 
-●​ Tableau Desktop/Public/Creator: 
-○​ Desktop (Paid): The main authoring tool for creating visualizations, dashboards, and 
-stories. 
-○​ Public (Free): A free version to create visualizations but must save workbooks to the 
-public Tableau Cloud platform. Good for learning. 
-○​ Creator: A licensing role that includes Tableau Desktop and Prep. 
-●​ Tableau Server/Cloud (Online): 
-○​ Server (On-Premise/Private Cloud): Used to publish, share, and manage 
-workbooks/data sources within an organization. 
-○​ Cloud (SaaS): The fully hosted version of Server. Allows users to view, interact with, 
-edit, and collaborate on published content from a web browser or mobile app. 
-●​ Tableau Prep: A separate application used for cleaning, shaping, and combining data 
-before analysis in Desktop. 
- 
-2. Getting Started & Core Interface 
- 
-The standard workspace is where you build your visualizations. 
-Area 
-Purpose 
-Data Pane 
-Lists all available fields from your data 
-source, automatically categorized as 
-Dimensions or Measures. 
-Columns/Rows Shelf 
-Fields dragged here create the columns 
-and rows of your view (e.g., placing Sales 
-on Rows and Year on Columns). 
-Marks Card 
-Controls the look and feel of the data 
-marks (Color, Size, Label, Detail, Tooltip, 
+Look, building a visualization is basically an exercise in cognitive psychology. You are translating raw data into a visual language that executives can process without getting a headache. If your audience has to squint or think too hard about what a chart means, you have already lost them. The goal is pure, frictionless insight.
 
-## Page 2
+Dashboards exist because raw data is overwhelming. If we could just stare at a spreadsheet and instantly understand regional profitability, we would not need visualization tools. Instead, we aggregate, filter, and plot data to reveal patterns that the human brain can actually process.
 
-Shape). 
-Filters Shelf 
-Used to narrow down the data displayed in 
-the view. 
-Pages Shelf 
-Used to separate a view into a sequence of 
-pages based on the values in a dimension. 
-"Show Me" 
-A panel that suggests appropriate chart 
-types based on the fields currently 
-selected in the Data Pane. 
-●​ Dimensions (Categorical Data): Typically fields that categorize or describe data, such as 
-Name, Date, Region. They are often discrete (blue pills). 
-●​ Measures (Quantitative Data): Fields that can be measured, aggregated, or calculated, 
-such as Sales, Profit, Quantity. They are often continuous (green pills). 
- 
-3. Data Connections 
- 
-You can connect Tableau to almost any data source. 
-●​ Live Connection: Tableau queries the data source directly. 
-○​ Pros: Real-time data, saves space on your machine. 
-○​ Cons: Performance depends on the source database/network speed; can slow down 
-the source system. 
-●​ Data Extract (.hyper): A compressed snapshot of the data, stored locally (or on the 
-Server/Cloud). 
-○​ Pros: Extremely fast performance, portable, supports offline work. 
-○​ Cons: Data is not real-time (must be refreshed), requires local storage space. 
-○​ Best Practice: Use extracts for large datasets or slow connections. 
- 
-4. Metadata Management 
- 
-Metadata is "data about the data." It helps you control how Tableau interprets your raw source 
-data. 
-●​ Renaming Fields: Give columns business-friendly names (e.g., change Cust_ID to 
+We collect transactional data and transform it into visual narratives. From this data, we calculate key performance indicators that act as the foundation of our executive summary.
 
-## Page 3
+The Tableau ecosystem provides an end-to-end platform for this transformation. It consists of authoring tools like Tableau Desktop and Tableau Public, preparation tools like Tableau Prep for data shaping, and deployment environments like Tableau Server and Tableau Cloud for sharing and collaboration.
 
-Customer ID). 
-●​ Changing Data Type: Ensure columns are correctly identified (e.g., String, Number, 
-Date, Boolean, Geographic Role). 
-●​ Creating Aliases: Rename specific values within a dimension (e.g., change CA to 
-California). 
-●​ Creating Hierarchies: Organize related dimensional fields for drill-down analysis (e.g., 
-combine Region > State > City). 
- 
-5. Combining Data: Joins vs. Data Blending 
- 
-These are two methods to bring data from multiple tables/sources together. 
- 
-A. Joins (Recommended for Same Source) 
- 
-●​ Combines tables from the same data source (or from compatible different sources using 
-a cross-database join). 
-●​ Merges data at the row level (creates a single, merged table). 
-●​ Defined in the Data Source tab before creating a sheet. 
-Type 
-Description 
-Inner 
-Includes only rows that have matching 
-values in both tables. 
-Left 
-Includes all rows from the left table, and 
-the matching rows from the right table. 
-Non-matches get null for right table fields. 
-Right 
-Includes all rows from the right table, and 
-the matching rows from the left table. 
-Full Outer 
-Includes all rows from both tables. 
-Non-matches get null where applicable. 
- 
+## 9.1.2. The Core Interface and Visual Mapping
 
-## Page 4
+The standard workspace is where raw fields are mapped to visual encodings, and the interface relies on a strict separation between categorical descriptors and quantitative metrics.
 
-B. Data Blending (For Different, Dissimilar Sources) 
- 
-●​ Combines data from separate, different Tableau data sources (e.g., Excel and a SQL 
-database). 
-●​ Data is not merged at the row level; instead, Tableau queries each source 
-independently, aggregates the results, and then visually presents them together in the 
-view. 
-●​ Requires a Primary data source (used first) and a Secondary data source. 
-●​ A linking field (indicated by a chain icon $\text{🔗}$) is required to define the 
-relationship. 
-●​ Limitation: All fields from the secondary source are treated as aggregated values (using 
-ATTR or another aggregation). 
- 
-6. Essential General Concepts 
- 
-●​ Worksheet: A single page where you create an individual visualization (a viz). 
-●​ Dashboard: A collection of several related worksheets, filters, and other objects 
-presented together to provide a holistic view. 
-●​ Story: A sequence of worksheets or dashboards that work together to convey a guided 
-narrative about the data. 
-●​ Calculated Fields: Custom fields you create using a formula to extend your data (e.g., 
-[Sales] - [Cost] = [Profit]). 
-●​ Parameters: Dynamic values that can replace constant values in calculations, filters, and 
-reference lines. They allow the end-user to interactively control parts of the visualization. 
+Dimensions are categorical fields that slice, dice, or segment the data. They are typically discrete and represented as blue pills.
 
-Tags: #statistics #machine-learning #data-science #statistical-modelling
+Measures are quantitative fields that can be mathematically aggregated. They are typically continuous and represented as green pills.
+
+The mathematical distinction between a dimension $$D$$ and a measure $$M$$ is fundamental to how the visualization engine groups data.
+
+$$
+\text{Grouping} = \{ x \in D \mid \text{aggregate}(M_x) \}
+$$
+
+where:
+
+- $$D$$ = set of discrete dimension values
+
+- $$M_x$$ = measure values associated with dimension $$x$$
+
+- $$\text{aggregate}$$ = mathematical function like sum or average
+
+The Marks Card controls the visual properties of these grouped data points, mapping data fields to color, size, shape, and detail.
+
+With the visual mapping understood, we must establish how the engine accesses the underlying data.
+
+## 9.1.3. Data Connections and Memory Management
+
+Data connections dictate how the visualization engine interacts with the source database, and there are two primary connection methods: Live connections and Data Extracts.
+
+A Live connection queries the source database in real-time.
+
+$$
+T_{\text{live}} = f(N_{\text{source}}, \text{Network Latency})
+$$
+
+where:
+
+- $$T_{\text{live}}$$ = query execution time
+
+- $$N_{\text{source}}$$ = volume of data in the source database
+
+A Data Extract is a compressed, localized snapshot of the data stored in a highly optimized format.
+
+$$
+T_{\text{extract}} \ll T_{\text{live}}
+$$
+
+where:
+
+- $$T_{\text{extract}}$$ = query execution time using the local extract
+
+Extracts shift the computational burden from the source database to the local machine, ensuring rapid rendering times.
+
+>[!Tip]
+> Always use extracts for large datasets or slow network connections. The performance gain is non-negotiable for a smooth user experience.
+
+With the connection established, we must ensure the data is interpreted correctly by the engine.
+
+## 9.1.4. Metadata Management and Structural Clarity
+
+Metadata is the structural layer that tells the engine how to interpret raw source data, because raw database columns often have cryptic names and incorrect data types. If left unmanaged, this raw metadata creates a chaotic and confusing analytical environment.
+
+We manage metadata through several key operations:
+
+- **Renaming Fields:** Translating cryptic database names into business-friendly terms.
+
+- **Changing Data Types:** Ensuring columns are correctly identified as strings, numbers, dates, or geographic roles.
+
+- **Creating Aliases:** Renaming specific dimension values for cleaner display without altering the underlying data.
+
+- **Creating Hierarchies:** Organizing related dimensional fields to enable seamless drill-down navigation.
+
+A hierarchy defines a strict parent-child relationship across multiple dimensions.
+
+$$
+H = [D_1, D_2, \dots, D_k]
+$$
+
+where:
+
+- $$H$$ = the hierarchical structure
+
+- $$D_i$$ = individual dimension levels ordered from broadest to most granular
+
+Let us reiterate the core hierarchy formula here, as it is fundamental to drill-down functionality:
+
+$$
+H = [D_1, D_2, \dots, D_k]
+$$
+
+With the metadata structured, we often need to combine multiple data sources to answer complex business questions.
+
+## 9.1.5. Relational Joins vs Data Blending
+
+Combining data from multiple tables is a critical step in building comprehensive data models, and Tableau provides two distinct mechanisms for this: Joins and Data Blending.
+
+Joins merge data at the row level within the same data source. This creates a single, unified table in the physical layer.
+
+The mathematical representation of an inner join between table $$A$$ and table $$B$$ on key $$K$$ is:
+
+$$
+N_{\text{inner}} = | A \cap B |_K
+$$
+
+where:
+
+- $$N_{\text{inner}}$$ = total rows in the resulting joined table
+
+- $$A \cap B$$ = intersection of records based on the join key $$K$$
+
+Data Blending, conversely, is used for combining separate, dissimilar data sources. It does not merge data at the row level. Instead, it queries each source independently, aggregates the results, and visually presents them together.
+
+Data blending requires a primary source and a secondary source, linked by a common field.
+
+$$
+\text{Blend Result} = \text{Aggregate}(S_{\text{primary}}) \bowtie \text{Aggregate}(S_{\text{secondary}})
+$$
+
+where:
+
+- $$S_{\text{primary}}$$ = the primary data source
+
+- $$S_{\text{secondary}}$$ = the secondary data source
+
+This distinction is critical because blending restricts the secondary source to pre-aggregated values.
+
+## 9.1.6. Example of a Left Outer Join
+
+Suppose:
+
+- Primary table: Authors containing 50 unique records
+
+- Secondary table: Books containing 120 records
+
+- Shared key: `Author ID`
+
+- Objective: Preserve all authors even if they have not published a book
+
+### Step 1: Define the Primary Source
+Set the Authors table as the left table in the physical join canvas to ensure all 50 author records form the baseline of the query.
+
+### Step 2: Define the Secondary Source
+Drag the Books table into the canvas and establish the physical connection using the shared `Author ID` field.
+
+### Step 3: Select the Join Type
+Change the join operator from the default inner join to a left outer join to instruct the engine to preserve the left table.
+
+### Step 4: Evaluate the Row Expansion
+Calculate the expected row count using the formula:
+
+$$
+N_{\text{left}} = \sum_{k \in K_A} \text{count}(B_k)
+$$
+
+Assuming 10 authors have 3 books each, and 40 authors have 0 books, the total row count becomes 70.
+
+### Step 5: Handle Null Values in Visuals
+Apply a zero-null transformation in the visualization tool so that the 40 unpublished authors display a book count of 0 instead of null on the final dashboard.
+
+## 9.1.7. Factors Affecting Data Blending and Joins
+
+### 7.1 Source Compatibility
+Joins require tables to reside in the same physical data source or compatible cross-database connections.
+Blending is strictly required when sources are completely disconnected, such as an Excel file and a cloud database.
+
+### 7.2 Aggregation Limits
+Data blending forces the secondary source to aggregate before merging.
+This prevents row-level calculations across the two sources, limiting analytical flexibility.
+
+### 7.3 Performance Overhead
+Physical joins on massive datasets can cause severe memory consumption and slow extract generation.
+Blending avoids physical row expansion but requires dual queries, which can introduce latency if not optimized.
+
+The following table summarizes how these factors impact overall system architecture.
+
+| Factor | Impact on Memory | Impact on Render Speed |
+| :--- | :---: | ---: |
+| Physical Join on Large Data | High | Slow |
+| Data Blending Across Sources | Medium | Medium |
+| Local Data Extract | Medium | Fast |
+
+## 9.1.8. Essential Visualization Concepts
+
+The final output of the analytical process relies on specific structural containers. A Worksheet is a single page where an individual visualization is constructed, while a Dashboard is a collection of related worksheets, filters, and objects presented together to provide a holistic view. A Story is a sequence of worksheets or dashboards that work together to convey a guided narrative.
+
+Calculated Fields extend the raw data using custom mathematical formulas.
+
+$$
+C = f(M_1, M_2, \dots, M_n)
+$$
+
+where:
+
+- $$C$$ = the newly calculated field
+
+- $$M_i$$ = existing measure or dimension fields
+
+Parameters are dynamic values that replace constants in calculations and filters, allowing end-users to interactively control the visualization logic.
+
+Understanding the theory is useless without practical execution.
+
+## 9.1.9. Common Pitfalls in Data Architecture
+
+Many analysts fall into predictable traps when designing their data architecture, leading to broken visualizations and incorrect insights.
+
+### Interpretation 1
+
+>[!Warning]
+> "Data blending is just a join across different databases."
+
+Wrong.
+
+Blending aggregates the secondary data source before merging, meaning you lose row-level granularity and cannot perform cross-database row-level calculations.
+
+### Interpretation 2
+
+>[!Warning]
+> "Live connections are always better because they show real-time data."
+
+Not necessarily.
+
+While live connections provide real-time accuracy, they severely degrade performance for large datasets. Use extracts for analytical exploration and reserve live connections for strictly real-time operational dashboards.
+
+### Interpretation 3
+
+>[!Warning]
+> "Dimensions and measures are just different names for columns."
+
+Wrong.
+
+Dimensions categorize and segment data, while measures quantify and aggregate it. Confusing the two will result in incorrect visual encodings and broken aggregations.
+
+Avoiding these pitfalls ensures your data model remains robust and your visualizations remain accurate.
+
+## 9.1.10. Conclusions
+
+Data architecture and visualization ecosystems transform fragmented operational logs into unified, interactive analytical models.
+
+### 10.1. Anatomy of a Data Connection
+
+The structure of every integrated data model relies on matching keys across distinct tables:
+
+$$
+\text{Integrated Model} = \text{Primary Table} \bowtie_{\text{Key}} \text{Secondary Table}
+$$
+
+- **Primary Table:** The foundational dimension or fact table that sets the base grain of the analysis.
+
+- **Join Key:** The shared identifier that maps records across tables.
+
+- **Connection Type:** The logical rule, such as live or extract, that dictates how data is stored and queried.
+
+### 10.2. Choosing the Correct Connection Method
+
+The choice of connection method depends on the data source location and the required level of granularity.
+
+The following table compares the core connection and combination methods based on data source architecture.
+
+| Scenario | Same Database | Different Databases |
+| :--- | :--- | :--- |
+| **Method** | Physical Joins / Relationships | Data Blending |
+| **Granularity** | Row-level detail | Pre-aggregated summary |
+| **Performance** | Highly optimized via SQL | Slower, requires dual queries |
+
+### 10.3. Critical Interpretations & Constraints
+
+Understanding the mathematical reality of data connections is vital to avoiding common analytical traps:
+
+- **The Misconception:** It is **incorrect** to assume that joining two tables preserves the original row counts. Many-to-many joins will multiply rows and artificially inflate your sum metrics.
+
+- **The Correct Interpretation:** You must always verify the cardinality of your keys before executing a physical join. If a key is not strictly unique in the secondary table, you must aggregate the secondary table first.
+
+When calculating the final row count for a preserved primary table, always rely on the core expansion formula:
+
+$$
+N_{\text{left}} = \sum_{k \in K_A} \text{count}(B_k)
+$$
+
+>[!Tip]
+> "Always default to logical relationships or extracts over physical joins to protect your data model from unintended Cartesian fan-out and performance degradation."
