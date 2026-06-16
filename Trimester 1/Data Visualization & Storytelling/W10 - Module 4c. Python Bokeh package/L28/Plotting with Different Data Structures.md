@@ -1,632 +1,234 @@
----
-title: W10 - Module 4c. Python Bokeh package - Module 4c. Python Bokeh package
-module: Statistical Modelling And Inferencing
-week: W10 - Module 4c. Python Bokeh package - Module 4c. Python Bokeh package
----
+# 4.5. Categorical Data and Bar Charts
 
-## Categorical Data and Bar Charts in Bokeh
+## 4.5.1. The Distinction Between Continuous and Categorical Axes
 
-This final section introduces one of the most important visualization concepts:
+Statistical visualization relies on mapping data types to appropriate geometric spaces.
 
-```text
-Categorical data visualization
-```
+When the independent variable consists of continuous measurements, the axis represents a numerical continuum where distances possess mathematical meaning.
 
-Until now:
+However, when the independent variable consists of discrete labels, the axis must represent a sequence of distinct entities where arithmetic operations are invalid.
 
-- x-axis contained continuous numeric values
-    
+The fundamental mapping of the axis type is defined by the following piecewise function:
 
-Now:
+$$
+\text{Axis Type} = 
+\begin{cases} 
+\text{Continuous} & \text{if } x \in \mathbb{R} \\
+\text{Categorical} & \text{if } x \in \{C_1, C_2, \dots, C_k\}
+\end{cases}
+$$
 
-- x-axis contains categories
-    
+where:
 
-Examples:
+- $$x$$ represents the independent variable mapped to the horizontal axis
 
-- fruits
-    
-- gender
-    
-- smoker/non-smoker
-    
-- weekdays
-    
-- product types
-    
+- $$\mathbb{R}$$ represents the set of all real numbers
 
-This changes how Bokeh handles the axis internally.
+- $$C_k$$ represents a discrete category label
 
-## Continuous vs Categorical Axes
+- $$k$$ represents the total number of unique categories
 
-## Continuous Axis
+In a continuous axis, the distance between $$x_1$$ and $$x_2$$ is calculated as $$|x_2 - x_1|$$.
 
-Used for:
+In a categorical axis, the operation $$C_2 - C_1$$ is mathematically undefined.
 
-- line plots
-    
-- scatter plots
-    
-- time series
-    
+Transitioning from continuous to categorical data requires a fundamental shift in how the plotting engine constructs the underlying coordinate system.
 
-Example:
+## 4.5.2. The Architecture of Categorical Plotting
 
-```text
-1, 2, 3, 4, 5
-```
+To accommodate discrete labels, the visualization framework must explicitly convert the axis from a numerical scale to a symbolic factor range.
 
-Bokeh interprets:
+This conversion is achieved by defining the axis range using the list of categories.
 
-- distances numerically
-    
+The internal representation of this categorical coordinate system is governed by the following structural mapping:
 
-## Categorical Axis
+$$
+\text{FactorRange} = \{C_1, C_2, \dots, C_k\} \rightarrow \{P_1, P_2, \dots, P_k\}
+$$
 
-Used for:
+where:
 
-- bar charts
-    
-- grouped comparisons
-    
+- **FactorRange** is the internal object managing the categorical axis
 
-Example:
+- $$C_k$$ represents the categorical label
 
-```text
-["Apple", "Pear", "Plum"]
-```
+- $$P_k$$ represents the discrete spatial position assigned to that category
 
-Now:
+The spatial positions $$P_k$$ are uniformly distributed, ensuring that the visual distance between any two adjacent categories is constant.
 
-- spacing is symbolic
-    
-- not numerical
-    
+>[!Note]
+> The order of categories within the factor range directly dictates their spatial arrangement on the canvas, making intentional sorting a critical analytical decision.
 
-## Why Bar Charts Exist
+With the categorical coordinate system established, the framework utilizes specific geometric primitives to represent the aggregated values associated with each category.
 
-Bar charts are designed to compare:
+## 4.5.3. The Vertical Bar Glyph
 
-- quantities across categories
-    
+The primary mechanism for visualizing categorical data is the vertical bar glyph, which maps category labels to horizontal positions and numerical aggregations to vertical extents.
 
-Good for:
+The geometry of each bar is defined by its bounding coordinates, specifically the top edge which corresponds to the data value.
 
-- comparisons
-    
-- rankings
-    
-- frequencies
-    
-- counts
-    
+The vertical extent of a single bar is calculated as:
 
-Bad for:
+$$
+\text{Bar Height} = \text{Top Edge} - \text{Bottom Edge}
+$$
 
-- continuous trends
-    
-- temporal continuity
-    
+Since the bottom edge is anchored at zero for standard bar charts, the formula simplifies to:
 
-## Fruit Dataset
+$$
+\text{Bar Height} = \text{Top Edge}
+$$
 
-The transcript defines:
+where:
 
-```python
-fruits = [
-    "Apples",
-    "Pears",
-    "Plums",
-    "Grapes",
-    "Nectarines",
-    "Strawberries"
-]
+- **Top Edge** represents the aggregated numerical value for the category
 
-counts = [5, 3, 4, 2, 6, 7]
-```
+- **Bottom Edge** is fixed at $$0$$
 
-## Understanding the Data
+The visual thickness of the bar is controlled by a width parameter, which is expressed as a fraction of the total categorical spacing.
 
-|Fruit|Count|
-|---|---|
-|Apples|5|
-|Pears|3|
-|Plums|4|
-|Grapes|2|
-|Nectarines|6|
-|Strawberries|7|
+The relationship between the width parameter and the physical bar thickness is defined as:
 
-## Key Concept: Categories
+$$
+\text{Physical Width} = w \times \text{Categorical Spacing}
+$$
 
-The transcript correctly says:
+where:
 
-> "Each fruit is a category"
+- $$w$$ is the width parameter, typically ranging from $$0.0$$ to $$1.0$$
 
-This is important.
+- **Categorical Spacing** is the uniform distance between adjacent category positions
 
-Categories are:
+>[!Tip]
+> Setting the width parameter to exactly $$1.0$$ causes adjacent bars to touch perfectly, while values less than $$1.0$$ introduce visual breathing room that improves readability.
 
-- labels
-    
-- groups
-    
-- discrete entities
-    
+Understanding the geometric parameters of the vertical bar glyph allows for the precise construction of categorical comparisons.
 
-not continuous measurements.
+## 4.5.4. Example of a Categorical Bar Chart
 
-## Why `x_range` Matters
+Suppose:
 
-This is the most important technical concept in this section.
+- Categories: A set of fruit types ($$\{C_1, C_2, C_3\}$$)
+- Values: Corresponding inventory counts ($$\{V_1, V_2, V_3\}$$)
+- Axis type: Categorical factor range
+- Glyph type: Vertical bar
+- Width parameter: $$0.6$$
 
-The transcript uses:
+### Step 1: Define the Categorical Axis
 
-```python
-x_range=fruits
-```
+The figure is initialized by passing the list of fruit categories directly into the axis range configuration, forcing the horizontal axis into a categorical factor range.
 
-inside `figure()`.
+### Step 2: Instantiate the Rectangular Glyph
 
-## What `x_range` Does
+The vertical bar method is invoked, mapping the fruit categories to the horizontal positions and the inventory counts to the top edges of the bars.
 
-It tells Bokeh:
+### Step 3: Configure Visual Properties
 
-```text
-"Treat the x-axis as categorical."
-```
+The width parameter is set to $$0.6$$ to ensure adequate spacing between bars, and a distinct color is applied to separate the glyphs from the background.
 
-Without this:
+### Step 4: Render the Visualization
 
-- Bokeh expects numeric coordinates.
-    
+The explicit rendering command is executed, transmitting the categorical document model to the browser environment for interactive display.
 
-## Important Architectural Insight
+### Step 5: Analyze the Output
 
-When using categorical data:
+The resulting chart provides an immediate, intuitive comparison of the inventory counts across the discrete fruit categories, validating the categorical mapping.
 
-```python
-figure(x_range=fruits)
-```
+This structured workflow ensures that the categorical data is accurately represented without implying false numerical continuity.
 
-creates:
+## 4.5.5. Factors Affecting Bar Chart Design
 
-- a categorical coordinate system
-    
+The effectiveness of a categorical visualization depends heavily on the deliberate configuration of its geometric and aesthetic properties.
 
-instead of:
+### 4.5.1. Bar Width and Spacing
 
-- a numeric coordinate system
-    
+The width parameter dictates the visual density of the chart.
 
-## Mental Model
+A narrow width emphasizes the discreteness of the categories but may make precise height comparisons difficult.
 
-## Numeric Axis
+A width approaching $$1.0$$ maximizes the visual area of the bars, facilitating accurate height comparisons, but risks creating a cluttered appearance if the category labels are long.
 
-```text
-0 --- 1 --- 2 --- 3
-```
+### 4.5.2. Color and Visual Encoding
 
-Distance matters.
+Color serves as a secondary encoding mechanism in categorical charts.
 
-## Categorical Axis
+Assigning a uniform color to all bars emphasizes the magnitude of the values, directing attention solely to the height differences.
 
-```text
-Apple   Pear   Plum
-```
+Conversely, mapping distinct colors to specific categories can highlight group memberships or highlight specific bars of interest.
 
-Order matters.  
-Distance does not.
+### 4.5.3. Category Ordering
 
-## Complete Bar Chart Example
+The sequence in which categories are presented fundamentally alters the analytical narrative.
 
-```python
-from bokeh.plotting import figure, show
-from bokeh.io import output_notebook
+The following table outlines common ordering strategies and their analytical implications.
 
-output_notebook()
+| Ordering Strategy | Description | Analytical Use Case |
+|:---|:---|:---|
+| Alphabetical | Sorted by label text | Neutral presentation, easy lookup |
+| Frequency-Based | Sorted by value magnitude | Highlighting extremes, ranking |
+| Chronological | Sorted by time sequence | Temporal categories like days or months |
+| Custom | Domain-specific logic | Logical groupings like product hierarchies |
 
-fruits = [
-    "Apples",
-    "Pears",
-    "Plums",
-    "Grapes",
-    "Nectarines",
-    "Strawberries"
-]
+>[!Warning]
+> Random or default ordering without analytical justification obscures patterns and forces the audience to search unnecessarily for insights.
 
-counts = [5, 3, 4, 2, 6, 7]
+Careful consideration of these design factors ensures that the visualization accurately and efficiently communicates the underlying categorical distributions.
 
-## Create categorical figure
-p = figure(
-    x_range=fruits,
-    height=350,
-    title="Fruit Counts",
-    x_axis_label="Fruit Type",
-    y_axis_label="Count"
-)
+## 4.5.6. Common Pitfalls and Misapplications
 
-## Vertical bar chart
-p.vbar(
-    x=fruits,
-    top=counts,
-    width=0.6,
-    color="firebrick"
-)
+Despite their simplicity, bar charts are frequently misused in ways that violate statistical graphing principles.
 
-show(p)
-```
+### 4.5.4. The Continuous Axis Fallacy
 
-## Understanding `vbar()`
+>[!Warning]
+> Applying a continuous numerical axis to categorical labels forces the rendering engine to interpolate between discrete entities, implying a mathematical relationship that does not exist.
 
-The transcript uses:
+### 4.5.5. The Over-Categorization Trap
 
-```python
-p.vbar(...)
-```
+>[!Warning]
+> Attempting to display more than twenty distinct categories in a single bar chart creates severe visual clutter, rendering the height comparisons impossible for the human eye to process accurately.
 
-This means:
+### 4.5.6. The Misaligned Data Length Error
 
-- vertical bar chart
-    
+>[!Warning]
+> Providing a list of category labels that does not perfectly match the length of the numerical values list causes structural failures in the glyph rendering process, as the framework cannot map positions to heights.
 
-## Important Parameters
+Avoiding these pitfalls requires a strict adherence to the mathematical boundaries of categorical data and the cognitive limits of visual perception.
 
-|Parameter|Meaning|
-|---|---|
-|x|category labels|
-|top|bar heights|
-|width|bar thickness|
-|color|bar color|
+## 4.5.7. Conclusions
 
-## Understanding `top`
+Categorical visualization represents a distinct paradigm from continuous plotting, requiring specialized coordinate systems and geometric primitives.
 
-```python
-top=counts
-```
+### 4.5.7. Recap of the Axis Mapping
 
-means:
+The foundational distinction remains constant across all categorical visualizations:
 
-- top edge of each bar
-    
+$$
+\text{Axis Type} = 
+\begin{cases} 
+\text{Continuous} & \text{if } x \in \mathbb{R} \\
+\text{Categorical} & \text{if } x \in \{C_1, C_2, \dots, C_k\}
+\end{cases}
+$$
 
-Bar starts at:
+This mapping ensures that discrete labels are treated as symbolic entities rather than numerical coordinates.
 
-- y = 0
-    
+### 4.5.8. Comparison of Visualization Paradigms
 
-ends at:
+The following table summarizes the critical distinctions between continuous and categorical visualization approaches.
 
-- y = count value
-    
+| Feature Dimension | Continuous Visualization | Categorical Visualization |
+|:---|:---:|---:|
+| Data Type | Real numbers $$\mathbb{R}$$ | Discrete labels $$C_k$$ |
+| Axis Representation | Linear or Logarithmic Scale | FactorRange |
+| Primary Glyphs | Lines, Scatter Points | Vertical Bars, Horizontal Bars |
+| Distance Metric | Arithmetic and Meaningful | Symbolic and Uniform |
+| Analytical Purpose | Trends, Correlations, Distributions | Comparisons, Rankings, Frequencies |
 
-## Visual Intuition
+### 4.5.9. The Philosophy of Categorical Comparison
 
-```text
-7 |                    █
-6 |              █     █
-5 | █            █     █
-4 | █      █     █     █
-3 | █  █   █     █     █
-2 | █  █   █  █  █     █
-1 | █  █   █  █  █     █
-  +-------------------------
-    A  P   Pl G  N     S
-```
+Ultimately, bar charts leverage the human visual system's exceptional accuracy in comparing linear extents.
 
-## Why `width` Matters
+By respecting the discrete nature of categorical data and avoiding the false implications of continuous interpolation, analysts build visualizations that provide immediate, unambiguous insights into relative magnitudes across distinct groups.
 
-The transcript uses:
-
-```python
-width=0.6
-```
-
-Controls:
-
-- bar thickness
-    
-
-## Width Interpretation
-
-|Width|Result|
-|---|---|
-|0.2|thin bars|
-|0.6|balanced|
-|1.0|touching bars|
-
-## Why Color Matters
-
-Transcript uses:
-
-```python
-color="firebrick"
-```
-
-Bokeh supports:
-
-- named colors
-    
-- hex colors
-    
-
-## Why Bar Charts Are Powerful
-
-Bar charts are extremely effective because humans compare:
-
-- lengths
-    
-- heights
-    
-
-very accurately.
-
-This makes bar charts excellent for:
-
-- category comparison
-    
-
-## Business Intelligence Connection
-
-Bar charts dominate BI dashboards because they answer:
-
-```text
-"Which category is bigger?"
-```
-
-Examples:
-
-- sales by region
-    
-- customers by segment
-    
-- profit by product
-    
-- flights by airline
-    
-
-## Seaborn Connection
-
-The transcript references:
-
-- smoker vs non-smoker
-    
-- restaurant visits
-    
-- gender
-    
-- day/time
-    
-
-These are categorical variables.
-
-## Typical Categorical Variables
-
-|Variable|Categories|
-|---|---|
-|Gender|Male/Female|
-|Smoker|Yes/No|
-|Day|Mon/Tue/Wed|
-|Product|A/B/C|
-
-## Why Categorical Data Needs Different Handling
-
-Numeric axes assume:
-
-- arithmetic relationships
-    
-
-But categories do not support:
-
-- subtraction
-    
-- interpolation
-    
-- continuity
-    
-
-Example:
-
-```text
-Apple - Pear
-```
-
-has no mathematical meaning.
-
-## Internal Bokeh Representation
-
-When using:
-
-```python
-x_range=fruits
-```
-
-Bokeh internally creates:
-
-```text
-FactorRange
-```
-
-This manages:
-
-- category ordering
-    
-- spacing
-    
-- rendering
-    
-
-## Important Insight About Ordering
-
-Transcript says:
-
-> "They have to be in a particular order"
-
-Correct.
-
-Categorical order affects interpretation.
-
-Different orders tell different stories.
-
-## Example Orders
-
-## Alphabetical
-
-```text
-Apple
-Grape
-Pear
-```
-
-## Frequency-Based
-
-```text
-Most common → least common
-```
-
-Usually more insightful.
-
-## Combining Categorical + Numerical
-
-Bar charts are fundamentally:
-
-```text
-Category
-    →
-Numerical aggregation
-```
-
-## Common Beginner Mistakes
-
-## Forgetting `x_range`
-
-Wrong:
-
-```python
-figure()
-```
-
-with string categories often fails or behaves incorrectly.
-
-## Mismatched Data Lengths
-
-Wrong:
-
-```python
-fruits = ["A", "B"]
-counts = [1]
-```
-
-Must match lengths.
-
-## Too Many Categories
-
-Bar charts become unreadable with:
-
-- 100+ categories
-    
-
-Alternatives:
-
-- grouping
-    
-- filtering
-    
-- treemaps
-    
-
-## Random Color Usage
-
-Avoid assigning random colors without meaning.
-
-## Advanced Insight
-
-Bokeh bar charts are glyph-based too.
-
-Internally:
-
-```text
-vbar()
-   ↓
-Rectangular glyph renderer
-```
-
-Everything in Bokeh is still:
-
-- glyph rendering
-    
-
-even bars.
-
-## Machine Learning Connection
-
-Categorical visualization is heavily used in ML for:
-
-- class distributions
-    
-- feature analysis
-    
-- imbalance detection
-    
-- confusion matrices
-    
-
-## Mental Model
-
-```text
-Categories
-    ↓
-Categorical Axis
-    ↓
-Bar Glyphs
-    ↓
-Interactive Comparison
-```
-
-## Most Important Concept Here
-
-The key idea is:
-
-```text
-x_range converts the axis
-from continuous
-to categorical.
-```
-
-That is the architectural shift enabling categorical plotting.
-
-## Final Takeaways
-
-## Core Workflow
-
-```python
-p = figure(x_range=categories)
-
-p.vbar(
-    x=categories,
-    top=values
-)
-
-show(p)
-```
-
-## Important Concepts
-
-|Concept|Meaning|
-|---|---|
-|x_range|categorical axis|
-|vbar|vertical bar glyph|
-|top|bar height|
-|width|bar thickness|
-
-## Key Visualization Principle
-
-Use:
-
-- line/scatter plots for continuous relationships
-    
-- bar charts for categorical comparisons
-    
-
-because they encode information differently and support different types of reasoning.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
+Mastering this distinction is essential for constructing dashboards that are both mathematically rigorous and cognitively accessible.
