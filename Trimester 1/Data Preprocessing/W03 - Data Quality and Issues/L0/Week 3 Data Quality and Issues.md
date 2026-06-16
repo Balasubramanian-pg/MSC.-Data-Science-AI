@@ -1,10 +1,4 @@
----
-title: W03 - Data Quality and Issues
-module: Statistical Modelling And Inferencing
-week: W03 - Data Quality and Issues
----
-
-## Week 3: Data Quality and Issues
+# Week 3: Data Quality and Issues
 
 **Module Description**
 
