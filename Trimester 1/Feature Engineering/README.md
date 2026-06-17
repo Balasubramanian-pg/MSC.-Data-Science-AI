@@ -1,8 +1,10 @@
 # Index of Feature Engineering
+<img width="736" height="1104" alt="image" src="https://github.com/user-attachments/assets/5a7f1ac5-2ae5-46d8-9f08-b9e8bf3fcc64" />
+
 
 This index provides quick access to all folders and files within this directory.
 
-## 🌲 File Structure
+## File Structure
 
 - 📂 **[W01 - Overview of Feature Engineering](W01%20-%20Overview%20of%20Feature%20Engineering/)**
   - 📂 **[Module 01_Resources](W01%20-%20Overview%20of%20Feature%20Engineering/Module%2001_Resources/)**
