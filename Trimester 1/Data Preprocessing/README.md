@@ -5,7 +5,7 @@
 
 This index provides quick access to all folders and files within this directory.
 
-## 🌲 File Structure
+## Course Roadmap
 
 - 📂 **[W0](W0/)**
   - 📄 [Data Preprocessing Handout.pdf](W0/Data%20Preprocessing%20Handout.pdf)
