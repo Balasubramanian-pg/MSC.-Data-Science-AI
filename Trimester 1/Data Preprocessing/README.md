@@ -1,4 +1,4 @@
-# Index of Data Preprocessing
+# Data Preprocessing
 
 This index provides quick access to all folders and files within this directory.
 
