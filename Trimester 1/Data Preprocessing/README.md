@@ -1,6 +1,6 @@
 # Data Preprocessing
 
-<img width="736" height="1308" alt="image" src="https://github.com/user-attachments/assets/25f3fbaa-3517-40f5-a9e2-57e97d5844e6" />
+<img width="736" height="1308" alt="image" src="https://github.com/user-attachments/assets/339b9bb8-f238-4dd1-95a7-aa03352ef816" />
 
 
 This index provides quick access to all folders and files within this directory.
