@@ -1,4 +1,5 @@
 # 🗂️ Data Visualization & Storytelling
+<img width="735" height="781" alt="image" src="https://github.com/user-attachments/assets/a98cdde0-83f9-4e01-a712-a22cd987720a" />
 
 ## 📁 Root Files
 
