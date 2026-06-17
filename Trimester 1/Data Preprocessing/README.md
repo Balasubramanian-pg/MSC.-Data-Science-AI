@@ -1,5 +1,8 @@
 # Data Preprocessing
 
+<img width="1000" height="749" alt="image" src="https://github.com/user-attachments/assets/3ab2f168-cc8c-4857-8062-4483c000bd02" />
+
+
 This index provides quick access to all folders and files within this directory.
 
 ## 🌲 File Structure
