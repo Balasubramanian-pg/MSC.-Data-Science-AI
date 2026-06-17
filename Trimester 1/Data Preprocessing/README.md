@@ -1,4 +1,5 @@
 # 🗂️ Data Preprocessing
+<img width="736" height="981" alt="image" src="https://github.com/user-attachments/assets/512edd89-3456-422a-a91f-34d73f6196f0" />
 
 ## 📁 W0
 
