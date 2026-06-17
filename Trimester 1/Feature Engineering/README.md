@@ -1,4 +1,5 @@
 # 🗂️ Feature Engineering
+<img width="736" height="1307" alt="image" src="https://github.com/user-attachments/assets/e913e58e-3163-4798-8026-cf903bce3058" />
 
 ## 📁 Root Files
 
