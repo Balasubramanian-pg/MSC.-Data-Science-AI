@@ -1,5 +1,4 @@
 # 🗂️ Data Visualization & Storytelling
-<img width="735" height="781" alt="image" src="https://github.com/user-attachments/assets/a98cdde0-83f9-4e01-a712-a22cd987720a" />
 
 ## 📁 Root Files
 
@@ -21,7 +20,6 @@
 
 ## 📁 W01 - Module 1a. Introduction to Visualization
 
-*(Empty directory)*
 
 ### 📁 L1
 
@@ -70,7 +68,6 @@
 
 ## 📁 W03 - Moduel 2a.  Effective Visuals Design
 
-*(Empty directory)*
 
 ### 📁 L10
 
@@ -114,7 +111,6 @@
 
 ## 📁 W04 - Module 2b. Visual Best Practises
 
-*(Empty directory)*
 
 ### 📁 L11
 
@@ -147,7 +143,6 @@
 
 ## 📁 W05 - Module 3a.  Dashboards
 
-*(Empty directory)*
 
 ### 📁 L14
 
@@ -192,7 +187,6 @@
 
 ## 📁 W06 -Module 3b.  Visual Story Telling
 
-*(Empty directory)*
 
 ### 📁 L18
 
@@ -223,7 +217,6 @@
 
 ## 📁 W07 - Moduel 4a.  Python Matplotlib
 
-*(Empty directory)*
 
 ### 📁 L21
 
@@ -257,7 +250,6 @@
 
 ## 📁 W08 - Moduel 4a.  Python Matplotlib (Continued)
 
-*(Empty directory)*
 
 ### 📁 L23
 
@@ -290,7 +282,6 @@
 
 ## 📁 W09 - Module 4b. Python Seaborn Package
 
-*(Empty directory)*
 
 ### 📁 L25
 
@@ -319,7 +310,6 @@
 
 ## 📁 W10 - Module 4c. Python Bokeh package
 
-*(Empty directory)*
 
 ### 📁 L27
 
@@ -362,7 +352,6 @@
 
 ## 📁 W11 - Module 4d. Tableau
 
-*(Empty directory)*
 
 ### 📁 L30
 
@@ -382,7 +371,6 @@
 
 ## 📁 W12 - Module 4d. Tableau (Continued)
 
-*(Empty directory)*
 
 ### 📁 L33
 
@@ -394,7 +382,6 @@
 
 ## 📁 W13 - Module 4e. Power BI and Google Data Studio
 
-*(Empty directory)*
 
 ### 📁 Assets
 
