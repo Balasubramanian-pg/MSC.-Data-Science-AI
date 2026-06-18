@@ -21,7 +21,7 @@ Most people believe that data visualization is primarily about charts, graphs, c
 However, effective visualization begins much earlier.
 
 The most important question is:
-
+>[!Tip]
 > "Who is this visualization for, and why am I creating it?"
 
 The answer to this question defines the **context**.
