@@ -553,29 +553,8 @@ G --> H[Build Explanatory Visuals]
 
 ## What Are You Trying To Do?
 
-```text
-What is your objective?
-│
-├── Understand the data?
-│   ├── Missing values → EDA tables
-│   ├── Distribution → Histogram
-│   ├── Outliers → Box Plot
-│   └── Relationships → Scatter Plot
-│
-├── Communicate insights?
-│   ├── Compare categories → Bar Chart
-│   ├── Show trends → Line Chart
-│   ├── Show proportions → Pie Chart
-│   └── Explain relationships → Bubble Chart
-│
-├── Discover hidden patterns?
-│   ├── Clustering → Scatter Plot
-│   ├── Correlation → Heatmap
-│   └── Text patterns → Word Cloud
-│
-└── Tell a business story?
-    └── Refined dashboard with annotations
-```
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/5da79df0-3c53-4d95-9970-396c2a7be5a7" />
+
 
 ## 8. Common Pitfalls in Exploratory and Explanatory Analysis
 
