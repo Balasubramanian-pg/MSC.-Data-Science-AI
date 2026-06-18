@@ -1,6 +1,6 @@
 # Understanding Context in Data Visualization
 
-**Module:** Statistical Modelling and Inferencing
+**Module:** Introduction to Visualization <br>
 **Topic:** Context for Effective Data Presentations
 
 ## Learning Objectives
