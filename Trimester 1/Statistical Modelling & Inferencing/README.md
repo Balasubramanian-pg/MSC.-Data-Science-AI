@@ -401,3 +401,5 @@
 - [Introduction to Bayesian.ipynb](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W13%20-%20Introduction%20To%20Bayesian%20Inference/L1/Assets/Introduction%20to%20Bayesian.ipynb)
 - [New Philosophy.ipynb](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/W13%20-%20Introduction%20To%20Bayesian%20Inference/L1/Assets/New%20Philosophy.ipynb)
 
+## Some Really Cool Citations & References
+[Introduction to Probability](https://chrispiech.github.io/probabilityForComputerScientists/en/part5/mle/)
