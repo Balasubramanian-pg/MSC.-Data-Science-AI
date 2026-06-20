@@ -1,4 +1,5 @@
 # 🗂️ Statistical Modelling & Inferencing
+<img width="1470" height="981" alt="image" src="https://github.com/user-attachments/assets/5d3486cc-62e5-4ff8-ba64-46b469cd64b2" />
 
 ## 📁 Assets
 
