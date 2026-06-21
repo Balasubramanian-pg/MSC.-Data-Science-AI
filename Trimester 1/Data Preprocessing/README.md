@@ -1,39 +1,35 @@
 # 🗂️ Data Preprocessing
 
-<div style="display: flex; align-items: flex-start; gap: 30px; border: none;">
-
-<div style="flex: 1; border: none;">
-
-### 📖 Trimester 1 · Data Preprocessing
-
-**Complete repository overview** — 8 weeks of content covering data cleaning, transformation, reduction, proximity measures, and explainability.
-
-- 📄 Markdown notes
-- 📓 Jupyter notebooks
-- 🐍 Python scripts
-- 📑 PDF references
-
-**📂 What's inside:**
-
-- W0 — Course handouts & learning path
-- W01 — Introduction to Data Science
-- W02 — Data fundamentals
-- W03 — Data Quality and Issues
-- W04 — Data Cleaning
-- W05 — Data Transformation and Aggregation
-- W06 — Data Reduction
-- W07 — Proximity Measures
-- W08 — Data Explainability
-
-</div>
-
-<div style="flex: 1; border: none;">
-
-<img width="736" height="981" alt="image" src="https://github.com/user-attachments/assets/512edd89-3456-422a-a91f-34d73f6196f0" />
-
-</div>
-
-</div>
+<table>
+  <tr>
+    <td width="50%">
+      <h3>📖 Trimester 1 · Data Preprocessing</h3>
+      <p><strong>Complete repository overview</strong> — 8 weeks of content covering data cleaning, transformation, reduction, proximity measures, and explainability.</p>
+      <ul>
+        <li>📄 Markdown notes</li>
+        <li>📓 Jupyter notebooks</li>
+        <li>🐍 Python scripts</li>
+        <li>📑 PDF references</li>
+      </ul>
+      <br>
+      <p><strong>📂 What's inside:</strong></p>
+      <ul>
+        <li>W0 — Course handouts & learning path</li>
+        <li>W01 — Introduction to Data Science</li>
+        <li>W02 — Data fundamentals</li>
+        <li>W03 — Data Quality and Issues</li>
+        <li>W04 — Data Cleaning</li>
+        <li>W05 — Data Transformation and Aggregation</li>
+        <li>W06 — Data Reduction</li>
+        <li>W07 — Proximity Measures</li>
+        <li>W08 — Data Explainability</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <img width="736" height="981" alt="image" src="https://github.com/user-attachments/assets/512edd89-3456-422a-a91f-34d73f6196f0" />
+    </td>
+  </tr>
+</table>
 
 ---
 
