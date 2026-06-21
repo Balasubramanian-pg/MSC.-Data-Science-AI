@@ -1,5 +1,48 @@
 # 🗂️ Data Visualization & Storytelling
+
+<div style="display: flex; align-items: flex-start; gap: 30px; border: none;">
+
+<div style="flex: 1; border: none;">
+
+### 📖 Trimester 1 · Data Visualization & Storytelling
+
+**Complete repository overview** — 13 weeks of content covering visualization fundamentals, dashboard design, storytelling, and hands-on Python libraries (Matplotlib, Seaborn, Bokeh) plus Tableau and Power BI.
+
+**📂 What's inside:**
+
+- W01 — Introduction to Visualization
+- W02 — Taxonomy of Data Visualisation Methods
+- W03 — Effective Visuals Design
+- W04 — Visual Best Practises
+- W05 — Dashboards
+- W06 — Visual Story Telling
+- W07 — Python Matplotlib
+- W08 — Python Matplotlib (Continued)
+- W09 — Python Seaborn Package
+- W10 — Python Bokeh Package
+- W11 — Tableau
+- W12 — Tableau (Continued)
+- W13 — Power BI and Google Data Studio
+
+**📊 Key Topics:**
+- Exploratory & Explanatory Analysis
+- Gestalt's Principles & Pre-attentive Attributes
+- Dashboard Design & Usability
+- Visual Storytelling & Narratives
+- Hands-on with Matplotlib, Seaborn, Bokeh
+- Tableau & Power BI dashboards
+
+</div>
+
+<div style="flex: 1; border: none;">
+
 <img width="1200" height="2029" alt="image" src="https://github.com/user-attachments/assets/13b1a24d-e786-4618-b45b-ff44c0d2534f" />
+
+</div>
+
+</div>
+
+---
 
 ## 📁 Root Files
 
@@ -400,4 +443,3 @@
 
 - [13.1.Power BI Dashboard Design.md](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Data%20Visualization%20%26%20Storytelling/W13%20-%20Module%204e.%20Power%20BI%20and%20Google%20Data%20Studio/L36/13.1.Power%20BI%20Dashboard%20Design.md)
 - [Week 13 PowerBi File1.pbix](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Data%20Visualization%20%26%20Storytelling/W13%20-%20Module%204e.%20Power%20BI%20and%20Google%20Data%20Studio/L36/Week%2013%20PowerBi%20File1.pbix)
-
