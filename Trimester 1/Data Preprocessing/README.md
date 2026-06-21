@@ -1,5 +1,24 @@
 # 🗂️ Data Preprocessing
-<img width="736" height="981" alt="image" src="https://github.com/user-attachments/assets/512edd89-3456-422a-a91f-34d73f6196f0" />
+
+<table>
+  <tr>
+    <td width="40%">
+      <img width="736" height="981" alt="image" src="https://github.com/user-attachments/assets/512edd89-3456-422a-a91f-34d73f6196f0" />
+    </td>
+    <td width="60%">
+      <h3>📖 Trimester 1 · Data Preprocessing</h3>
+      <p><strong>Complete repository overview</strong> — 8 weeks of content covering data cleaning, transformation, reduction, proximity measures, and explainability.</p>
+      <ul>
+        <li>📄 Markdown notes</li>
+        <li>📓 Jupyter notebooks</li>
+        <li>🐍 Python scripts</li>
+        <li>📑 PDF references</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
 
 ## 📁 W0
 
@@ -188,4 +207,3 @@
 - [Lab 8.1 Understanding data distribution through descriptive analytical techniques.ipynb](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Data%20Preprocessing/W08%20-%20Data%20Explainability/L1/Assets/Lab%208.1%20Understanding%20data%20distribution%20through%20descriptive%20analytical%20techniques.ipynb)
 - [Lab 8.2 Understanding data distribution through data visualization.ipynb](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Data%20Preprocessing/W08%20-%20Data%20Explainability/L1/Assets/Lab%208.2%20Understanding%20data%20distribution%20through%20data%20visualization.ipynb)
 - [Lab 8.3 SHAP and LIME.ipynb](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Data%20Preprocessing/W08%20-%20Data%20Explainability/L1/Assets/Lab%208.3%20SHAP%20and%20LIME.ipynb)
-
