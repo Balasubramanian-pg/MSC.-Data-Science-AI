@@ -2,10 +2,7 @@
 
 <table>
   <tr>
-    <td width="40%">
-      <img width="736" height="981" alt="image" src="https://github.com/user-attachments/assets/512edd89-3456-422a-a91f-34d73f6196f0" />
-    </td>
-    <td width="60%">
+    <td width="50%">
       <h3>📖 Trimester 1 · Data Preprocessing</h3>
       <p><strong>Complete repository overview</strong> — 8 weeks of content covering data cleaning, transformation, reduction, proximity measures, and explainability.</p>
       <ul>
@@ -14,6 +11,22 @@
         <li>🐍 Python scripts</li>
         <li>📑 PDF references</li>
       </ul>
+      <br>
+      <p><strong>📂 What's inside:</strong></p>
+      <ul>
+        <li>W0 — Course handouts & learning path</li>
+        <li>W01 — Introduction to Data Science</li>
+        <li>W02 — Data fundamentals</li>
+        <li>W03 — Data Quality and Issues</li>
+        <li>W04 — Data Cleaning</li>
+        <li>W05 — Data Transformation and Aggregation</li>
+        <li>W06 — Data Reduction</li>
+        <li>W07 — Proximity Measures</li>
+        <li>W08 — Data Explainability</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <img width="736" height="981" alt="image" src="https://github.com/user-attachments/assets/512edd89-3456-422a-a91f-34d73f6196f0" />
     </td>
   </tr>
 </table>
