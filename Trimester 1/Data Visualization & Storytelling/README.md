@@ -6,23 +6,23 @@
 
 ### 📖 Trimester 1 · Data Visualization & Storytelling
 
-**Complete repository overview** — 13 weeks of content covering visualization fundamentals, dashboard design, storytelling, and hands-on Python libraries (Matplotlib, Seaborn, Bokeh) plus Tableau and Power BI.
+**Complete repository overview** - 13 weeks of content covering visualization fundamentals, dashboard design, storytelling, and hands-on Python libraries (Matplotlib, Seaborn, Bokeh) plus Tableau and Power BI.
 
 **📂 What's inside:**
 
-- W01 — Introduction to Visualization
-- W02 — Taxonomy of Data Visualisation Methods
-- W03 — Effective Visuals Design
-- W04 — Visual Best Practises
-- W05 — Dashboards
-- W06 — Visual Story Telling
-- W07 — Python Matplotlib
-- W08 — Python Matplotlib (Continued)
-- W09 — Python Seaborn Package
-- W10 — Python Bokeh Package
-- W11 — Tableau
-- W12 — Tableau (Continued)
-- W13 — Power BI and Google Data Studio
+- W01 - Introduction to Visualization
+- W02 - Taxonomy of Data Visualisation Methods
+- W03 - Effective Visuals Design
+- W04 - Visual Best Practises
+- W05 - Dashboards
+- W06 - Visual Story Telling
+- W07 - Python Matplotlib
+- W08 - Python Matplotlib (Continued)
+- W09 - Python Seaborn Package
+- W10 - Python Bokeh Package
+- W11 - Tableau
+- W12 - Tableau (Continued)
+- W13 - Power BI and Google Data Studio
 
 **📊 Key Topics:**
 - Exploratory & Explanatory Analysis
