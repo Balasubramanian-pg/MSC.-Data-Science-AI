@@ -3,9 +3,9 @@
 
 ## 📁 Assets
 
-- [ISLP_website.pdf](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/Assets/ISLP_website.pdf)
-- [Probability_Statistics_Resources.pdf](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/Assets/Probability_Statistics_Resources.pdf)
-- [SIM-BITS- Handbook 1.pdf](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/Assets/SIM-BITS-%20Handbook%201.pdf)
+- [Introduction to Statistical Probability](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/Assets/ISLP_website.pdf)
+- [Resources for Statistics](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/Assets/Probability_Statistics_Resources.pdf)
+- [Course Handout](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/Assets/SIM-BITS-%20Handbook%201.pdf)
 - [Statistical Inference and Modelling.ipynb](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/Assets/Statistical%20Inference%20and%20Modelling.ipynb)
 - [Statistical_Inference_and_Modelling_HandsOn.pdf](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/Assets/Statistical_Inference_and_Modelling_HandsOn.pdf)
 - [Syllabus_STATS_216_V2.pdf](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Statistical%20Modelling%20%26%20Inferencing/Assets/Syllabus_STATS_216_V2.pdf)
