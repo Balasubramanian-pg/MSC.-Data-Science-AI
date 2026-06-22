@@ -1,3 +1,5 @@
+<img width="956" height="619" alt="image" src="https://github.com/user-attachments/assets/5c76ddaf-28ed-415c-946e-23136f252f35" />
+
 
 <img width="1009" height="661" alt="image" src="https://github.com/user-attachments/assets/6d707c07-a1f5-4349-94b6-e770906203f0" />
 ## Question 3
