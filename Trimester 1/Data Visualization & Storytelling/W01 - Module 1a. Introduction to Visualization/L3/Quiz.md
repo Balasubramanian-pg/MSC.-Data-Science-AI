@@ -1,3 +1,31 @@
 ## Practice Quiz
 
 <img width="715" height="582" alt="image" src="https://github.com/user-attachments/assets/7069f8fa-f6fd-47f7-b679-513dc04e077e" />
+
+## Question 1
+
+**Correct Answer: To drill into the data until it reveals insights.**
+
+Eliminate the wrong answers:
+
+* **To communicate results to a data-driven audience.** ❌ This is the goal of explanatory analysis or data presentation.
+* **To remove all irrelevant details from a dataset.** ❌ Data cleaning may involve this, but it is not the primary goal of exploratory analysis.
+* **To structure data into meaningful components.** ❌ This describes parsing or data preparation.
+
+**Remaining correct option:**
+
+* **To drill into the data until it reveals insights.** ✅
+
+## Question 2
+
+**Correct Answer: Not using diversified or voluminous data.**
+
+Eliminate the wrong answers:
+
+* **Asking too many questions about the data.** ❌ Asking questions is encouraged during exploration.
+* **Looking for actionable insights.** ❌ This is a key objective of exploratory analysis.
+* **Identifying key attributes that answer "what happened."** ❌ This is an important part of understanding the data.
+
+**Remaining correct option:**
+
+* **Not using diversified or voluminous data.** ✅
