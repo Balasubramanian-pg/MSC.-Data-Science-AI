@@ -95,7 +95,7 @@ $$
 
 where:
 
-- $$w$$ is the width parameter, typically ranging from $$0.0$$ to $$1.0$$
+- $$w$$is the width parameter, typically ranging from$$0.0$$ to $$1.0$$
 
 - **Categorical Spacing** is the uniform distance between adjacent category positions
 
