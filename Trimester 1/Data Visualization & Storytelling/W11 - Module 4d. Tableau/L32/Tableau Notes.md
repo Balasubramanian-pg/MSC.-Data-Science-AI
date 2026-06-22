@@ -110,7 +110,7 @@ Combining data from multiple tables is a critical step in building comprehensive
 
 Joins merge data at the row level within the same data source. This creates a single, unified table in the physical layer.
 
-The mathematical representation of an inner join between table $$A$$ and table $$B$$ on key $$K$$ is:
+The mathematical representation of an inner join between table $$A$$and table$$B$$ on key $$K$$ is:
 
 $$
 N_{\text{inner}} = | A \cap B |_K
