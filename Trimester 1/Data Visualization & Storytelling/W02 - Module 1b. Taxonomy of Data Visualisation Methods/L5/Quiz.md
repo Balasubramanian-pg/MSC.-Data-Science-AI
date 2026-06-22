@@ -31,5 +31,32 @@ Eliminate the wrong answers:
 
 <img width="731" height="589" alt="image" src="https://github.com/user-attachments/assets/e369bdad-69b7-4ec5-899a-78f27d7ae404" />
 
+## Question 3
+
+**Correct Answer: Unnecessary visual elements that distract from the data.**
+
+Eliminate the wrong answers:
+
+* **Any chart that uses a 100% stacked bar format.** ❌ A chart type itself is not chartjunk.
+* **A chart that contains a forecast or projection.** ❌ Forecasts are legitimate analytical components.
+* **A chart with a de-emphasized footnote.** ❌ De-emphasized footnotes are often a good design practice.
+
+**Remaining correct option:**
+
+* **Unnecessary visual elements that distract from the data.** ✅
+
+## Question 4
+
+**Correct Answer: Understanding the context, including the audience and goal.**
+
+Eliminate the wrong answers:
+
+* **Choosing the color scheme for the chart.** ❌ Design choices come after understanding the purpose.
+* **Gathering all available data on the topic.** ❌ More data is not always necessary; context comes first.
+* **Deciding between a bar chart and a line chart.** ❌ Chart selection depends on the context and objective.
+
+**Remaining correct option:**
+
+* **Understanding the context, including the audience and goal.** ✅
 
 <img width="861" height="641" alt="image" src="https://github.com/user-attachments/assets/022ea995-0bc8-4ac2-aa80-6b4447783374" />
