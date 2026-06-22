@@ -30,7 +30,7 @@ where:
 
 - $$D$$ = set of discrete dimension values
 
-- $$M_x$$ = measure values associated with dimension $$x$$
+- $$M_x$$= measure values associated with dimension$$x$$
 
 - $$\text{aggregate}$$ = mathematical function like sum or average
 
