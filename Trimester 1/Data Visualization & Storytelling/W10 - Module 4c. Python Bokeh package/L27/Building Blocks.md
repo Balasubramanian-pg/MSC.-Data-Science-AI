@@ -101,7 +101,7 @@ $$
 \text{Slider Range} = [t_{\text{start}}, t_{\text{end}}]
 $$
 
-where $$t_{\text{start}}$$ is the minimum temporal value and $$t_{\text{end}}$$ is the maximum.
+where $$t_{\text{start}}$$is the minimum temporal value and$$t_{\text{end}}$$ is the maximum.
 
 When the user adjusts the slider, it triggers a filter event that updates the visualization instantly.
 
