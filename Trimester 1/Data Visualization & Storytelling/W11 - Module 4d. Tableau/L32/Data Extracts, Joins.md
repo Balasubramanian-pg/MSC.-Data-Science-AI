@@ -23,7 +23,7 @@ Tableau handles logical connections using relationships, visually represented as
 
 When you query a visualization, Tableau dynamically generates the optimal SQL join based on the fields currently in use. This prevents the severe data duplication issues caused by fan-out scenarios in physical joins.
 
-The logical connection between a primary table $$A$$ and a secondary table $$B$$ over a shared key $$K$$ is defined as:
+The logical connection between a primary table $$A$$and a secondary table$$B$$ over a shared key $$K$$ is defined as:
 
 $$
 A \sim_K B
