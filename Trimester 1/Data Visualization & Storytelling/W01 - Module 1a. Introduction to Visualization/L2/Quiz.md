@@ -31,3 +31,31 @@ Eliminate the wrong answers:
 * **Distribution** ✅
 
 <img width="806" height="595" alt="image" src="https://github.com/user-attachments/assets/97170c16-8122-4895-95ac-1416be27c133" />
+
+## Question 3
+
+**Correct Answer: To understand how individual parts contribute to a whole.**
+
+Eliminate the wrong answers:
+
+* **To show the correlation or relationship between variables.** ❌ This describes a relationship chart.
+* **To identify clustering trends and anomalies in the data.** ❌ This is related to distribution or clustering analysis.
+* **To compare different variables against each other.** ❌ This describes comparison charts.
+
+**Remaining correct option:**
+
+* **To understand how individual parts contribute to a whole.** ✅
+
+## Question 4
+
+**Correct Answer: Putting too much information into a single chart.**
+
+Eliminate the wrong answers:
+
+* **Scaling the horizontal and vertical axes appropriately.** ❌ This is a recommended best practice.
+* **Using multiple visualizations to tell a story.** ❌ This is an effective storytelling technique.
+* **Labeling the axes and providing chart headers.** ❌ This improves clarity and understanding.
+
+**Remaining correct option:**
+
+* **Putting too much information into a single chart.** ✅
