@@ -60,3 +60,31 @@ Eliminate the wrong answers:
 * **Understanding the context, including the audience and goal.** ✅
 
 <img width="861" height="641" alt="image" src="https://github.com/user-attachments/assets/022ea995-0bc8-4ac2-aa80-6b4447783374" />
+
+## Question 5
+
+**Correct Answer: To keep the audience's focus on the growing leadership gap.**
+
+Eliminate the wrong answers:
+
+* **The other values were not important to the story.** ❌ The other values provide context, but they are not the primary message.
+* **There was not enough space to label the other values.** ❌ Selective labeling is a deliberate design choice, not merely a space issue.
+* **Because attrition values are always negative and do not need labels.** ❌ Whether values are negative or positive does not determine if they should be labeled.
+
+**Remaining correct option:**
+
+* **To keep the audience's focus on the growing leadership gap.** ✅
+
+## Question 6
+
+**Correct Answer: Use it sparingly to highlight the most important data.**
+
+Eliminate the wrong answers:
+
+* **Ensure the color palette is the same for every chart you create.** ❌ Consistency is useful, but it is not the key principle of visual hierarchy.
+* **Use a different color for every category to distinguish them.** ❌ Excessive use of color can create clutter and reduce emphasis.
+* **Apply bright colors to all background elements.** ❌ Background elements should generally be de-emphasized.
+
+**Remaining correct option:**
+
+* **Use it sparingly to highlight the most important data.** ✅
