@@ -62,3 +62,30 @@ Eliminate the wrong answers:
 
 <img width="872" height="658" alt="image" src="https://github.com/user-attachments/assets/1bf1cf40-6686-450d-b505-609023447843" />
 
+## Question 5
+
+**Correct Answer: What biases might the audience have?**
+
+Eliminate the wrong answers:
+
+* **What would a successful outcome look like?** ❌ This relates to defining goals, not understanding the audience.
+* **What data is available to strengthen the case?** ❌ This concerns the data itself, not the audience.
+* **What background information is essential?** ❌ This relates to presentation content and context, not audience characteristics.
+
+**Remaining correct option:**
+
+* **What biases might the audience have?** ✅
+
+## Question 6
+
+**Correct Answer: That it could be a point for further explanation.**
+
+Eliminate the wrong answers:
+
+* **That more people at a booth causes higher turnout.** ❌ A negative trend suggests the opposite, and correlation does not imply causation.
+* **That the data exploration was unsuccessful.** ❌ Finding a trend, even a weak one, is still a valid exploratory outcome.
+* **That there is no relationship between booth size and turnout.** ❌ A slight negative trend indicates some relationship may exist.
+
+**Remaining correct option:**
+
+* **That it could be a point for further explanation.** ✅
