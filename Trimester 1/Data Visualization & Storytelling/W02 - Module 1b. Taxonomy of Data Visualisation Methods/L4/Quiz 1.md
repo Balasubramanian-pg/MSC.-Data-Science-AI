@@ -29,3 +29,5 @@ Eliminate the wrong answers:
 **Remaining correct option:**
 
 * **To use color saturation to guide the brain to points of interest.** ✅
+
+<img width="809" height="616" alt="image" src="https://github.com/user-attachments/assets/873fe009-e6f0-4c35-98af-f4a653e390ae" />
