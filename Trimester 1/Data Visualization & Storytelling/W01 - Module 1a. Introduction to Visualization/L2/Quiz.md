@@ -59,3 +59,5 @@ Eliminate the wrong answers:
 **Remaining correct option:**
 
 * **Putting too much information into a single chart.** ✅
+
+<img width="868" height="656" alt="image" src="https://github.com/user-attachments/assets/057f568c-0dc3-4622-8918-c05fbd645743" />
