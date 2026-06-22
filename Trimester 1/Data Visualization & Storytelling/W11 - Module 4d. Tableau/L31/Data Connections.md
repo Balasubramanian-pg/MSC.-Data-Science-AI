@@ -64,7 +64,7 @@ where:
 
 - $$k$$ = total number of sheets in the data source
 
-- $$n_i$$ = number of rows in the $$i$$-th sheet
+- $$n_i$$= number of rows in the$$i$$-th sheet
 
 Understanding this structure is critical because the primary **Orders** sheet does not inherently contain return statuses or manager assignments.
 
