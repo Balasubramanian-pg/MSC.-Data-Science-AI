@@ -12,7 +12,7 @@ $$
 y = x^2
 $$
 
-where $$x$$ is the independent variable and $$y$$ is the dependent variable.
+where $$x$$is the independent variable and$$y$$ is the dependent variable.
 
 In a traditional environment, this is just a fixed grid of pixels. In Bokeh, this is an interactive HTML object that the audience can probe, zoom, and filter.
 
