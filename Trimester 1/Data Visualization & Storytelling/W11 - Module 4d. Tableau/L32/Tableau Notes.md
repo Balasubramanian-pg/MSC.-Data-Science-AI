@@ -20,7 +20,7 @@ The standard workspace relies on a strict separation between categorical descrip
 
 The **Data Pane** holds your raw fields. The **Columns and Rows Shelves** define the coordinate space. The **Marks Card** controls the visual encoding, mapping data to color, size, and shape.
 
-The mathematical distinction between a dimension $$D$$ and a measure $$M$$ dictates how the engine groups and aggregates data.
+The mathematical distinction between a dimension $$D$$and a measure$$M$$ dictates how the engine groups and aggregates data.
 
 $$
 \text{Grouping} = \{ x \in D \mid \text{aggregate}(M_x) \}
