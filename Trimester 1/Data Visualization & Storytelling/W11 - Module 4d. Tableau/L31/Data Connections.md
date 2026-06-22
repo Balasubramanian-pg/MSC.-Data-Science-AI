@@ -121,7 +121,7 @@ $$
 \text{Orders} \bowtie_{\text{Order ID}} \text{Returns}
 $$
 
-where the join operation $$\bowtie$$ is performed over the shared key $$\text{Order ID}$$.
+where the join operation $$\bowtie$$is performed over the shared key$$\text{Order ID}$$.
 
 Establishing this connection allows you to drag a field from the **Returns** sheet directly into a visualization built on the **Orders** sheet, and Tableau handles the underlying join logic dynamically.
 
