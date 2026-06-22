@@ -117,7 +117,7 @@ where:
 
 - $$K_A$$ = set of all keys in the primary left table
 
-- $$\text{count}(B_k)$$ = number of matching records in the right table for key $$k$$ (minimum 1 to preserve the left record)
+- $$\text{count}(B_k)$$= number of matching records in the right table for key$$k$$ (minimum 1 to preserve the left record)
 
 A right outer join applies the exact inverse logic, preserving the right table. These joins are critical for maintaining accurate denominators in conversion and retention metrics.
 
