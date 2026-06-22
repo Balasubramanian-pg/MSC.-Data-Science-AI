@@ -100,7 +100,7 @@ where:
 - **Categorical Spacing** is the uniform distance between adjacent category positions
 
 >[!Tip]
-> Setting the width parameter to exactly $$1.0$$ causes adjacent bars to touch perfectly, while values less than $$1.0$$ introduce visual breathing room that improves readability.
+> Setting the width parameter to exactly $$1.0$$causes adjacent bars to touch perfectly, while values less than$$1.0$$ introduce visual breathing room that improves readability.
 
 Understanding the geometric parameters of the vertical bar glyph allows for the precise construction of categorical comparisons.
 
