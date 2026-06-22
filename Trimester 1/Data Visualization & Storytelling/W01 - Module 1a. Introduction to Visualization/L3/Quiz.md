@@ -59,3 +59,6 @@ Eliminate the wrong answers:
 **Remaining correct option:**
 
 * **It grounds the data in the audience's specific needs.** ✅
+
+<img width="872" height="658" alt="image" src="https://github.com/user-attachments/assets/1bf1cf40-6686-450d-b505-609023447843" />
+
