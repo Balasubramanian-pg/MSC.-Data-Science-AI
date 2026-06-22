@@ -139,7 +139,7 @@ Suppose:
 Create the figure objects with uniform sizing parameters, setting the width and height to ensure consistent visual proportions across all plots.
 
 ### Step 2: Render Glyphs
-Apply scatter glyphs to each figure, mapping the $$x$$ values to the corresponding $$y$$ functions using distinct colors for each mathematical relationship.
+Apply scatter glyphs to each figure, mapping the $$x$$values to the corresponding$$y$$ functions using distinct colors for each mathematical relationship.
 
 ### Step 3: Configure Interactivity
 Attach the pan, wheel zoom, and reset tools to each figure to enable browser-based exploration of the coordinate space.
