@@ -59,3 +59,5 @@ Eliminate the wrong answers:
 **Remaining correct option:**
 
 * **Make the table data-centric so the data stands out.** ✅
+
+<img width="841" height="657" alt="image" src="https://github.com/user-attachments/assets/396e996e-e317-4939-862b-71171fe60b8c" />
