@@ -169,7 +169,7 @@ where:
 
 - $$K_A$$ = set of all keys in the primary left table
 
-- $$\text{count}(B_k)$$ = number of matching records in the right table for key $$k$$
+- $$\text{count}(B_k)$$= number of matching records in the right table for key$$k$$
 
 Assuming 10 authors have 3 books each, and 40 authors have 0 books, the total row count becomes 70.
 
