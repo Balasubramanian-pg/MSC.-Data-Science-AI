@@ -28,7 +28,7 @@ where:
 
 - $$k$$ represents the total number of unique categories
 
-In a continuous axis, the distance between $$x_1$$ and $$x_2$$ is calculated as $$|x_2 - x_1|$$.
+In a continuous axis, the distance between $$x_1$$and$$x_2$$ is calculated as $$|x_2 - x_1|$$.
 
 In a categorical axis, the operation $$C_2 - C_1$$ is mathematically undefined.
 
