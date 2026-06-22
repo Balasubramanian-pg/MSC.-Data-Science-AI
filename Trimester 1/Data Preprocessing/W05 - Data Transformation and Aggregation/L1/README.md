@@ -47,8 +47,6 @@ The primary objectives of data transformation are:
 
 Data transformation ensures that data is consistent, comparable, and suitable for downstream analytical tasks.
 
----
-
 ### 2. [Data Normalization](2.%20Data%20Normalization.md)
 
 Data normalization is the process of scaling numerical attributes to a common range without distorting their underlying relationships.
@@ -80,8 +78,6 @@ Algorithms that commonly require normalization include:
 - Principal Component Analysis (PCA)
 - Neural Networks
 
----
-
 ### 3. [Data Normalization Techniques](3.%20Data%20Normalization%20Techniques.md)
 
 Several techniques can be used to normalize data depending on the analytical requirements.
@@ -101,8 +97,6 @@ Characteristics:
 - Preserves original distribution shape.
 - Sensitive to outliers.
 
----
-
 #### Z-Score Normalization
 
 Transforms values based on mean and standard deviation.
@@ -118,8 +112,6 @@ Characteristics:
 - Produces data with mean `0` and standard deviation `1`.
 - Less sensitive to varying ranges.
 - Widely used in statistical analysis.
-
----
 
 #### Decimal Scaling
 
@@ -142,8 +134,6 @@ Characteristics:
 - Simple to implement.
 - Less commonly used in modern machine learning applications.
 
----
-
 ### Comparison of Normalization Techniques
 
 | Technique | Output Range | Sensitive to Outliers | Common Usage |
@@ -151,8 +141,6 @@ Characteristics:
 | Min-Max | Fixed range (0 to 1) | Yes | Deep Learning, KNN |
 | Z-Score | Mean = 0, Std = 1 | Moderate | Statistics, ML |
 | Decimal Scaling | Less than 1 | Yes | Educational examples |
-
----
 
 ### 4. [Lab 5.1: Data Normalization Techniques](Lab%205.1_%20Data%20Normalization%20Techniques.ipynb)
 
@@ -204,10 +192,10 @@ H --> I[Improved Model Performance]
 
 | Resource | Description |
 |-----------|-------------|
-| 📄 [Introduction to Data Transformation](1.%20Introduction%20to%20Data%20Transformation.md) | Introduction to data transformation concepts and objectives |
-| 📄 [Data Normalization](2.%20Data%20Normalization.md) | Understand why normalization is necessary in data preprocessing |
-| 📄 [Data Normalization Techniques](3.%20Data%20Normalization%20Techniques.md) | Explore various normalization methods and their applications |
-| 📓 [Lab 5.1: Data Normalization Techniques](Lab%205.1_%20Data%20Normalization%20Techniques.ipynb) | Practical implementation of normalization techniques using Python |
+| [Introduction to Data Transformation](1.%20Introduction%20to%20Data%20Transformation.md) | Introduction to data transformation concepts and objectives |
+| [Data Normalization](2.%20Data%20Normalization.md) | Understand why normalization is necessary in data preprocessing |
+| [Data Normalization Techniques](3.%20Data%20Normalization%20Techniques.md) | Explore various normalization methods and their applications |
+| [Lab 5.1: Data Normalization Techniques](Lab%205.1_%20Data%20Normalization%20Techniques.ipynb) | Practical implementation of normalization techniques using Python |
 
 ## Key Takeaways
 
