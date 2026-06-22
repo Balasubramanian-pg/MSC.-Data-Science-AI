@@ -29,3 +29,5 @@ Eliminate the wrong answers:
 **Remaining correct option:**
 
 * **Not using diversified or voluminous data.** ✅
+
+<img width="606" height="590" alt="image" src="https://github.com/user-attachments/assets/17b1ac98-ed1e-4982-aac7-fbacb2aa88d6" />
