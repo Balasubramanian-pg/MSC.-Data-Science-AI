@@ -61,3 +61,35 @@ Eliminate the wrong answers:
 * **Putting too much information into a single chart.** ✅
 
 <img width="868" height="656" alt="image" src="https://github.com/user-attachments/assets/057f568c-0dc3-4622-8918-c05fbd645743" />
+
+## Question 5
+
+**Correct Answer: Bubble chart**
+
+Eliminate the wrong answers:
+
+* **Stacked bar chart** ❌ Primarily used to show composition, not relationships among three variables.
+* **Grouped bar chart** ❌ Used for comparing categories across groups.
+* **Scatter plot** ❌ Typically shows the relationship between two variables.
+
+**Remaining correct option:**
+
+* **Bubble chart** ✅
+
+## Question 6
+
+**Correct Answer: 23**
+
+Eliminate the wrong answers:
+
+* **It cannot be determined from the data provided.** ❌ The voter turnout data allows this calculation.
+* **13** ❌ Too few states/UTs had turnout below the national average.
+* **36** ❌ This is the total number of states and union territories, not those below the average.
+
+**Remaining correct option:**
+
+* **23** ✅
+
+The national average turnout was **66.1%**, and **23 states/UTs recorded turnout below this value**. ([en.wikipedia.org][1])
+
+[1]: https://en.wikipedia.org/wiki/2024_Indian_general_election?utm_source=chatgpt.com "2024 Indian general election"
