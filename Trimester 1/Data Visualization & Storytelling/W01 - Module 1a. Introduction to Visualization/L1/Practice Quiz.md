@@ -31,3 +31,6 @@ Eliminate the wrong answers:
 **Remaining correct option:**
 
 * **Lakshadweep** ✅
+
+<img width="857" height="618" alt="image" src="https://github.com/user-attachments/assets/bcb277ac-9d55-4786-95ba-6ea3b02f8499" />
+
