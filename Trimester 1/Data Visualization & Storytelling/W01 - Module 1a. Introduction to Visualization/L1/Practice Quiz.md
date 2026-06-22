@@ -34,3 +34,34 @@ Eliminate the wrong answers:
 
 <img width="857" height="618" alt="image" src="https://github.com/user-attachments/assets/bcb277ac-9d55-4786-95ba-6ea3b02f8499" />
 
+## Question 5
+
+**Correct Answer:**
+**To convey your story and to establish credibility.** ✅
+
+Eliminate the wrong answers:
+
+* **To use as many colors and charts as possible.** ❌ Tufte advocates simplicity and avoiding chartjunk.
+* **To entertain your audience and to show technical skill.** ❌ Presentation should communicate information, not showcase the presenter.
+* **To compress a large volume of data and to enable business intelligence.** ❌ Data compression is important to Tufte, but this is not his stated pair of primary goals for presenting data.
+
+**Remaining correct option:**
+
+* **To convey your story and to establish credibility.** ✅
+
+---
+
+## Question 6
+
+**Correct Answer:**
+**Different or distinct from its surroundings.** ✅
+
+Eliminate the wrong answers:
+
+* **Similar to all other objects.** ❌ Similar objects tend to blend together rather than attract attention.
+* **Part of a continuous line.** ❌ This relates to the Gestalt principle of continuity, not focal point.
+* **Located in the background of the visual.** ❌ Background elements are generally less noticeable.
+
+**Remaining correct option:**
+
+* **Different or distinct from its surroundings.** ✅
