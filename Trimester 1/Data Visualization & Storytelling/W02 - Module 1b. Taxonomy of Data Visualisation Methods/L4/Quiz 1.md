@@ -61,3 +61,31 @@ Eliminate the wrong answers:
 * **Make the table data-centric so the data stands out.** ✅
 
 <img width="841" height="657" alt="image" src="https://github.com/user-attachments/assets/396e996e-e317-4939-862b-71171fe60b8c" />
+
+## Question 5
+
+**Correct Answer: Waterfall chart**
+
+Eliminate the wrong answers:
+
+* **Square area chart** ❌ Used to represent proportions or part-to-whole relationships.
+* **Stacked bar chart** ❌ Shows composition across categories but not sequential positive and negative changes.
+* **Slopegraph** ❌ Used to compare values between two points in time.
+
+**Remaining correct option:**
+
+* **Waterfall chart** ✅
+
+## Question 6
+
+**Correct Answer: The bars have a zero baseline, which allows for accurate visual comparison.**
+
+Eliminate the wrong answers:
+
+* **Their bars must always be ordered in ascending or descending value.** ❌ Ordering is optional and depends on the analysis.
+* **They are the only charts that can show a time-series relationship.** ❌ Line charts are typically preferred for time series.
+* **They can handle negative values, unlike pie charts.** ❌ While true, this is not the primary reason bar charts are preferred for comparison.
+
+**Remaining correct option:**
+
+* **The bars have a zero baseline, which allows for accurate visual comparison.** ✅
