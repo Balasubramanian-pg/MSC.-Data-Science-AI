@@ -219,7 +219,7 @@ The following table summarizes the critical distinctions between continuous and 
 
 | Feature Dimension | Continuous Visualization | Categorical Visualization |
 |:---|:---:|---:|
-| Data Type | Real numbers $$\mathbb{R}$$ | Discrete labels $$C_k$$ |
+| Data Type | Real numbers $$\mathbb{R}$$| Discrete labels$$C_k$$ |
 | Axis Representation | Linear or Logarithmic Scale | FactorRange |
 | Primary Glyphs | Lines, Scatter Points | Vertical Bars, Horizontal Bars |
 | Distance Metric | Arithmetic and Meaningful | Symbolic and Uniform |
