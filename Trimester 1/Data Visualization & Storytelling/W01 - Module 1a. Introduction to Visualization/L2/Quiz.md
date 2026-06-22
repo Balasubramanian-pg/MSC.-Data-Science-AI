@@ -29,3 +29,5 @@ Eliminate the wrong answers:
 **Remaining correct option:**
 
 * **Distribution** ✅
+
+<img width="806" height="595" alt="image" src="https://github.com/user-attachments/assets/97170c16-8122-4895-95ac-1416be27c133" />
