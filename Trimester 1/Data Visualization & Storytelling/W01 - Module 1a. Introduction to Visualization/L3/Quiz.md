@@ -31,3 +31,31 @@ Eliminate the wrong answers:
 * **Not using diversified or voluminous data.** ✅
 
 <img width="606" height="590" alt="image" src="https://github.com/user-attachments/assets/17b1ac98-ed1e-4982-aac7-fbacb2aa88d6" />
+
+## Question 3
+
+**Correct Answer: To communicate important insights to stakeholders.**
+
+Eliminate the wrong answers:
+
+* **To dive deep into the data by asking questions.** ❌ This describes exploratory analysis.
+* **To determine if the data is right to answer a question.** ❌ This is part of data validation and exploration.
+* **To find a slight negative trend between variables.** ❌ This is a specific analytical finding, not the main goal of explanatory analysis.
+
+**Remaining correct option:**
+
+* **To communicate important insights to stakeholders.** ✅
+
+## Question 4
+
+**Correct Answer: It grounds the data in the audience's specific needs.**
+
+Eliminate the wrong answers:
+
+* **It proves the robustness of the analysis performed.** ❌ Context helps interpretation but does not prove analytical rigor.
+* **It allows the presenter to show all the work they did.** ❌ Presentations should focus on relevant insights, not every analytical step.
+* **It makes the charts more visually appealing.** ❌ Context improves understanding, not appearance.
+
+**Remaining correct option:**
+
+* **It grounds the data in the audience's specific needs.** ✅
