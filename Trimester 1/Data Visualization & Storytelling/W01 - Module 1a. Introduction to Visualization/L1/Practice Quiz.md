@@ -48,8 +48,6 @@ Eliminate the wrong answers:
 
 * **Principle of closure** ✅
 
----
-
 ## Question 4
 
 **Correct Answer:**
@@ -81,8 +79,6 @@ Eliminate the wrong answers:
 **Remaining correct option:**
 
 * **To convey your story and to establish credibility.** ✅
-
----
 
 ## Question 6
 
