@@ -1,4 +1,32 @@
 <img width="956" height="619" alt="image" src="https://github.com/user-attachments/assets/5c76ddaf-28ed-415c-946e-23136f252f35" />
+## Question 1
+
+**Correct Answer: 80%** ✅
+
+Eliminate the wrong answers:
+
+* **20%** ❌ Too low and not the commonly cited figure in data visualization and learning contexts.
+* **65%** ❌ Although sometimes cited in learning retention studies, it is not the expected answer in this visualization context.
+* **100%** ❌ Humans do not retain all visual information.
+
+**Remaining correct option:**
+
+* **80%** ✅
+
+## Question 2
+
+**Correct Answer:**
+**That datasets with identical descriptive statistics can have very different distributions.** ✅
+
+Eliminate the wrong answers:
+
+* **That all datasets with the same mean and variance are identical.** ❌ Anscombe's quartet demonstrates the opposite. Datasets can share identical summary statistics while exhibiting very different patterns when visualized.
+* **The importance of using complex statistical models.** ❌ This is not the primary lesson of Anscombe's quartet.
+* **The process of collecting and cleaning data before visualization.** ❌ While important, this concept is unrelated to Anscombe's quartet.
+
+**Remaining correct option:**
+
+* **That datasets with identical descriptive statistics can have very different distributions.** ✅
 
 
 <img width="1009" height="661" alt="image" src="https://github.com/user-attachments/assets/6d707c07-a1f5-4349-94b6-e770906203f0" />
