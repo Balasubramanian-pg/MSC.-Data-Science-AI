@@ -120,7 +120,7 @@ where:
 
 - $$N_{\text{inner}}$$ = total rows in the resulting joined table
 
-- $$A \cap B$$ = intersection of records based on the join key $$K$$
+- $$A \cap B$$= intersection of records based on the join key$$K$$
 
 Data Blending, conversely, is used for combining separate, dissimilar data sources. It does not merge data at the row level. Instead, it queries each source independently, aggregates the results, and visually presents them together.
 
