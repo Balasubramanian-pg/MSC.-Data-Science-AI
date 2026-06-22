@@ -267,7 +267,7 @@ The following table summarizes the critical distinctions between the two primary
 
 | Feature Dimension | Continuous Axis | Categorical Axis |
 |:---|:---:|---:|
-| Data Type | Real numbers $$\mathbb{R}$$ | Discrete labels $$C_k$$ |
+| Data Type | Real numbers $$\mathbb{R}$$| Discrete labels$$C_k$$ |
 | Distance Metric | Arithmetic and meaningful | Symbolic and uniform |
 | Primary Glyphs | Lines, Scatter points | Vertical bars, Horizontal bars |
 | Analytical Purpose | Trends, correlations, distributions | Comparisons, rankings, frequencies |
