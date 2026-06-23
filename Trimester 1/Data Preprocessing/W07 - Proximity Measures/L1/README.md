@@ -24,7 +24,7 @@ After completing this lesson, you should be able to:
 
 ## Topics Covered
 
-### 1. [Proximity Analysis for Nominal Attributes]([1.%20Proximity%20Analysis%20for%20Nominal%20Attributes.md](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Data%20Preprocessing/W07%20-%20Proximity%20Measures/L1/7.1.%20Proximity%20Analysis%20for%20Nominal%20Attributes.md)
+### 1. [Proximity Analysis for Nominal Attributes](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Data%20Preprocessing/W07%20-%20Proximity%20Measures/L1/7.1.%20Proximity%20Analysis%20for%20Nominal%20Attributes.md)
 
 Nominal attributes represent categorical values that have no inherent ordering.
 
