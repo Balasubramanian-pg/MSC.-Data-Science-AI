@@ -1,12 +1,12 @@
-# 11.1. Statistical Inference and Modelling
+# 1.1. Statistical Inference and Modelling
 
-## 11.1.1. The Transition to Population Inference
+## 1.1.1. The Transition to Population Inference
 
 Statistical inference serves as the rigorous mathematical framework that allows researchers and data scientists to move beyond descriptive summaries. 
 
 Descriptive statistics organize and summarize observed data, but they cannot make claims beyond the immediate dataset. Inference utilizes the fundamental principles of probability to quantify uncertainty and manage the mathematical risks associated with generalizing from a limited subset to the entire overarching population. This framework forms the absolute foundation of all scientific hypothesis testing and predictive analytics.
 
-## 11.1.2. The Mechanics of Interval Estimation
+## 1.1.2. The Mechanics of Interval Estimation
 
 In statistical sampling, a point estimate acts as a single best guess for an unknown population parameter. 
 
@@ -24,7 +24,7 @@ $$
 
 However, because every single sample is subject to random sampling error, a point estimate inherently lacks any measure of mathematical precision. Confidence intervals address this fundamental weakness by providing a quantitative range of plausible values that, under a specific methodological procedure, captures the true parameter with a strictly defined level of confidence.
 
-## 11.1.3. Structural Anatomy of a Confidence Interval
+## 1.1.3. Structural Anatomy of a Confidence Interval
 
 Every two-sided confidence interval follows a universal fundamental structure.
 
@@ -51,7 +51,7 @@ $$
 
 This mathematical structure guarantees that as the required confidence level increases, the critical value strictly increases, resulting in a wider margin of error and a less precise final interval.
 
-## 11.1.4. The Z-Distribution vs. The T-Distribution
+## 1.1.4. The Z-Distribution vs. The T-Distribution
 
 The choice of probability distribution depends entirely on whether the population variance is known.
 
@@ -81,7 +81,7 @@ where:
 
 As the sample size approaches infinity, the heavier tails of the t-distribution mathematically converge perfectly with the standard normal Z-distribution.
 
-## 11.1.5. Example of Computing an Interval Estimate
+## 1.1.5. Example of Computing an Interval Estimate
 
 Suppose:
 - The sample mean is:
@@ -108,7 +108,7 @@ $$E = 4.9$$
 ### Step 5: Construct the Final Confidence Interval
 **$$(115.1, 124.9)$$**
 
-## 11.1.6. Sample Size Determination
+## 1.1.6. Sample Size Determination
 
 In rigorous experimental design, determining the mathematically required sample size is a critical trade-off between desired statistical precision and physical resource constraints.
 
@@ -132,7 +132,7 @@ $$
 
 If the population variance is entirely unknown during the design phase, standard protocol requires analysts to utilize a pilot study to establish a baseline standard deviation estimate.
 
-## 11.1.7. Proportion Estimation
+## 1.1.7. Proportion Estimation
 
 When estimating a population proportion rather than a continuous mean, the mathematical dynamics shift to accommodate binary outcomes.
 
@@ -153,7 +153,7 @@ $$
 
 If the true proportion is completely unknown prior to sampling, analysts must assume the most mathematically conservative scenario by setting the proportion to exactly 0.5. This mathematical baseline guarantees the absolute maximum possible sample size requirement, ensuring the study is never underpowered.
 
-## 11.1.8. Example of Computing Sample Size for a Mean
+## 1.1.8. Example of Computing Sample Size for a Mean
 
 Suppose:
 - A researcher requires a maximum margin of error of:
@@ -183,7 +183,7 @@ $$\frac{19.6}{2} = 9.8$$
 **$$n = 97$$**
 (Because sample sizes represent physical observations, analysts must always round up to the next whole integer).
 
-## 11.1.9. Hypothesis Testing Framework
+## 1.1.9. Hypothesis Testing Framework
 
 Hypothesis testing is a formal, rigidly structured procedure used to mathematically evaluate the validity of a claim regarding a population parameter.
 
@@ -209,7 +209,7 @@ $$
 
 This significance level defines the absolute maximum acceptable probability of committing a Type I Error, which occurs when an analyst falsely rejects a true null hypothesis.
 
-## 11.1.10. The Test Statistic
+## 1.1.10. The Test Statistic
 
 The test statistic standardizes the difference between the observed sample mean and the hypothesized population mean, relative to the natural variability of the sampling distribution.
 
@@ -231,7 +231,7 @@ $$
 
 By calculating this standardized score, analysts can strictly map the observation to a probability distribution, generating a p-value to finalize the hypothesis test.
 
-## 11.1.11. Common Misinterpretations
+## 1.1.11. Common Misinterpretations
 
 Because statistical inference relies on abstract probabilities, novice practitioners frequently misinterpret the mathematical outputs.
 
@@ -256,7 +256,7 @@ Wrong. A larger sample size simply decreases the standard error, making the conf
 
 Wrong. Failing to reject the null hypothesis strictly means the analyst did not collect enough statistical evidence to prove the alternative hypothesis. It implies a lack of evidence, not a mathematical proof of the baseline assumption.
 
-## 11.1.12. Conclusions
+## 1.1.12. Conclusions
 
 Statistical inference bridges the gap between limited observational data and universal population truths. By applying rigorous structural models, analysts can confidently measure uncertainty and design highly powered experiments.
 
