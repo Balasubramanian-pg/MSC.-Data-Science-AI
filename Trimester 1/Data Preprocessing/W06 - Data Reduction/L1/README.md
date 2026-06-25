@@ -45,8 +45,6 @@ Data reduction techniques are widely used in:
 
 Effective data reduction enables organizations to analyze large datasets more efficiently without substantial information loss.
 
----
-
 ### 2. [Reducing Data Volume](Reducing%20Data%20Volume.md)
 
 Data volume reduction techniques aim to decrease the number of records or the amount of storage required for datasets.
@@ -82,8 +80,6 @@ Examples:
 
 Volume reduction helps organizations manage large-scale datasets effectively while maintaining analytical usefulness.
 
----
-
 ### 3. [Data Sampling](Data%20Sampling.md)
 
 Sampling involves selecting a representative subset from a larger population or dataset.
@@ -112,8 +108,6 @@ Sampling is widely used because it:
 - Enables analysis when complete data is unavailable.
 
 However, poorly designed sampling methods can introduce bias and reduce analytical reliability.
-
----
 
 ### 4. [Attribute Subset Selection](Attribute%20Subset%20Selection.md)
 
@@ -160,8 +154,6 @@ Examples:
 - Random Forest Feature Importance
 
 Feature selection is a critical component of modern machine learning workflows.
-
----
 
 ## Conceptual Relationship
 
