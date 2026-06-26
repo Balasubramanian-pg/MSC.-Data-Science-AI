@@ -15,7 +15,7 @@ In this phase, you’ll step into the world of [data science](https://en.wikiped
 
 **Phase 2: Data Challenges and Cleaning (Week 3–4)**
 
-Here, you’ll identify common data quality issues and learn practical cleaning and integration techniques. This phase makes raw data usable and trustworthy.
+Here, you’ll identify common [data quality](https://en.wikipedia.org/wiki/Data_quality) issues and learn practical [cleaning](https://scikit-learn.org/stable/glossary.html#term-cleaning) and [integration](https://en.wikipedia.org/wiki/Data_integration) techniques. This phase makes raw data usable and [trustworthy](https://en.wikipedia.org/wiki/Trustworthiness).
 
 - **Week 3:** Data Quality and Issues  
     **You’ll learn:** How to detect poor data quality, address missing/duplicate values, and understand the difference between noise and outliers.
