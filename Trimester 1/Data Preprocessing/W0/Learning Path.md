@@ -6,7 +6,7 @@
 
 **Phase 1: Laying the Foundations (Week 1–2)**
 
-In this phase, you’ll step into the world of data science and data mining. You’ll discover what datasets are, how attributes work, and why preprocessing is the backbone of successful analytics.
+In this phase, you’ll step into the world of [data science](https://en.wikipedia.org/wiki/Data_science) and [data mining](https://en.wikipedia.org/wiki/Data_mining). You’ll discover what [datasets](https://www.python.org/dev/peps/pep-0257/#datasets) are, how [attributes](https://pandas.pydata.org/docs/user_guide/gotchas.html#attributes) work, and why [preprocessing](https://scikit-learn.org/stable/glossary.html#term-preprocessing) is the backbone of successful [analytics](https://en.wikipedia.org/wiki/Analytics).
 
 - **Week 1:** Introduction to Data Science and Mining  
     **You’ll learn:** The role of data preprocessing in the larger data science lifecycle, the concept of KDD, and key methods of data mining.
