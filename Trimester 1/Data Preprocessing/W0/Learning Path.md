@@ -24,7 +24,7 @@ Here, you’ll identify common [data quality](https://en.wikipedia.org/wiki/Data
 
 **Phase 3: Transforming and Reducing Data (Week 5–6)**
 
-After cleaning, you’ll focus on transforming and optimising datasets to improve performance and efficiency.
+After [cleaning](https://scikit-learn.org/stable/glossary.html#term-cleaning), you’ll focus on transforming and [optimising](https://en.wikipedia.org/wiki/Optimization_(computer_science)) datasets to improve [performance](https://en.wikipedia.org/wiki/Performance) and [efficiency](https://en.wikipedia.org/wiki/Efficiency).
 
 - **Week 5:** Data Transformation  
     **You’ll learn:** Normalization methods, aggregation strategies, and transformations that prepare data for better analysis.
