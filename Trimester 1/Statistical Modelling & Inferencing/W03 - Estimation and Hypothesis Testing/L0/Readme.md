@@ -7,7 +7,7 @@ Descriptive statistics only tell you what happened in your specific dataset. Inf
 We use a sample statistic to estimate a population parameter. 
 
 Let $$\theta$$ represent the true, unknown population parameter.
-Let $$\hat{\theta}$$represent the sample statistic used to estimate$$\theta$$.
+Let $$\hat{\theta}$$ represent the sample statistic used to estimate$$\theta$$.
 
 Because we only observe a subset of the population, our estimate contains inherent uncertainty. Statistical inference provides the mathematical machinery to quantify and manage this uncertainty, transforming raw data into actionable population-level insights.
 
