@@ -81,6 +81,8 @@ where:
 
 As the sample size approaches infinity, the heavier tails of the t-distribution mathematically converge perfectly with the standard normal Z-distribution.
 
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/7ed94a8f-3bfd-41c7-aa4e-5191af97e1ad" />
+
 ## 1.1.5. Example of Computing an Interval Estimate
 
 Suppose:
