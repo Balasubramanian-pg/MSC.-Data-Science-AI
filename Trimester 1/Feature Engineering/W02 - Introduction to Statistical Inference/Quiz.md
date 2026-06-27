@@ -1,3 +1,4 @@
+# Week 2 Quiz Solutions
 
 <img width="401" height="730" alt="image" src="https://github.com/user-attachments/assets/af826752-4005-4146-a4c8-ca5934896a41" />
 
@@ -24,8 +25,6 @@
 > A highly right-skewed variable contains a long tail of very large values. A **log transformation** compresses these extreme values, reduces skewness, and stabilises variance. This often makes the distribution more symmetric and suitable for statistical modeling.
 >
 > Standardisation and normalisation only change the scale of the data; they do not remove skewness.
-
----
 
 # Question 2
 
@@ -55,8 +54,6 @@
 > * **K-means clustering** forms clusters based on similarity.
 > * **Domain-specific binning** relies on business rules.
 
----
-
 # Question 3
 
 ## Question
@@ -82,8 +79,6 @@
 > If one feature has a much larger scale than others, it can dominate the distance calculation and bias the model.
 >
 > Feature scaling ensures that all features contribute more fairly to the distance computation.
-
----
 
 # Question 4
 
@@ -113,8 +108,6 @@
 > * Credit Score < 700 → 0
 >
 > This process creates a binary feature from a continuous variable.
-
----
 
 # Question 5
 
