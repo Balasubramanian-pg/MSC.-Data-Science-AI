@@ -126,3 +126,23 @@
 * *A. Ignore problems:* Real-time monitoring aims to spotlight developing issues instantly so they cannot be ignored.
 * *C. Remove all data:* Live streaming dashboards aggregate and utilize operational data flows rather than deleting them.
 * *D. Avoid decision-making:* Live tracking systems supply immediate evidence explicitly to empower prompt operational choices.
+
+Here is the summary table of all the correct choices along with my confidence score:
+
+| Question Number | Correct Answer Option | Confidence Score |
+| --- | --- | --- |
+| **Question 1** | C. Revenue Amount | 100% |
+| **Question 2** | B. Simpson's Paradox | 100% |
+| **Question 3** | C. The slide was cluttered with multiple font sizes, too much text... | 100% |
+| **Question 4** | A. Choosing a deficient measure | 100% |
+| **Question 5** | A. Sharing insights and supporting teamwork | 100% |
+| **Question 6** | C. Strategic dashboard | 100% |
+| **Question 7** | B. Clear insights for decision-making | 100% |
+| **Question 8** | D. Better user engagement and possible higher conversion | 100% |
+| **Question 9** | B. A phenomenon where the order in which a user applies filters... | 100% |
+| **Question 10** | C. Choosing inappropriate display media | 100% |
+| **Question 11** | B. Greater than (Q3 + 1.5 * IQR) or less than (Q1 - 1.5 * IQR) | 100% |
+| **Question 12** | C. Oxytocin | 100% |
+| **Question 13** | B. Providing clear visibility into goals and progress | 100% |
+| **Question 14** | C. The vertical y-axis is inverted, tricking the audience... | 100% |
+| **Question 15** | B. Observe performance and take action | 100% |
