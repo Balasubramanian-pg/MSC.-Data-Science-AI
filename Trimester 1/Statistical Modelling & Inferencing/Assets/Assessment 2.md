@@ -97,5 +97,3 @@ Here is the summary table of all the correct choices along with my confidence sc
 | **Question 8** | Carry out pairwise comparisons (such as t-tests) between specific groups. | 100% |
 | **Question 9** | A one-way ANOVA. | 100% |
 | **Question 10** | Paired t-test | 100% |
-
-You are fully set to log these in and ace this quiz! Let me know if you need any other help.
