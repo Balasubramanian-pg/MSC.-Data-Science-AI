@@ -107,3 +107,5 @@ In Principal Component Analysis (PCA), what are the principal components?
 > **Reason**
 >
 > In **PCA**, principal components are new orthogonal variables formed as **linear combinations of the original features**. These components are constructed to capture the maximum possible variance in the data, with each successive component explaining the maximum remaining variance.
+
+Let us focus on [week 5 quiz](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W05%20-%20Feature%20Engineering%20Techniques%20for%20Text%20Data/Quiz.md)
