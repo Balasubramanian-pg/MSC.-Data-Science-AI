@@ -66,4 +66,33 @@ Here is the flawless breakdown for your Feature Engineering quiz.
 
 <img width="450" height="754" alt="image" src="https://github.com/user-attachments/assets/b0e19a05-809d-4266-88f0-a1d4522634e3" />
 
+
+
+
+---
+
+### **Question 6**
+
+* **Correct Answer:** **Standardization ensures each feature contributes proportionally to distance calculations, preventing high-magnitude features from dominating**
+* **Eliminations:**
+* *Z-score changes the shape of the Annual Spend distribution, making it non-normal:* Linear transformations like Z-scores shift and rescale data points but leave the fundamental shape of the underlying distribution completely unchanged.
+* *Z-score eliminates outliers from the dataset before clustering:* Z-score retains outliers; it simply modifies their numerical scale relative to the mean.
+* *Z-score converts Annual Spend into a categorical variable, which K-Means can process better:* Z-score results in scaled continuous continuous numbers, not categorical classes.
+
+
+
+---
+
+### **Question 7**
+
+* **Correct Answer:** **The transformed feature will have mean 0 and standard deviation 1, but the right-skewed shape of the distribution will remain unchanged**
+* **Eliminations:**
+* *The transformed feature will be normally distributed with mean 0 and standard deviation 1:* Z-score scaling standardizes variance and centers data, but it cannot mathematically map a highly skewed distribution into a bell curve shape.
+* *The transformed feature will have all values in the range [-1, 1]:* This describes Min-Max or MaxAbs scaling styles; Z-score values can extend beyond $\pm 1$ depending on variance.
+* *The transformed feature will have its outliers removed since they are more than 3 standard deviations away:* Outliers are preserved and exposed as high absolute values ($> 3$), never automatically deleted.
+
+
+
+---
+
 <img width="473" height="570" alt="image" src="https://github.com/user-attachments/assets/716fce7a-c670-4862-a905-6cc61d771624" />
