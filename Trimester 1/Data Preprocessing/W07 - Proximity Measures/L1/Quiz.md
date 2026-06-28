@@ -87,3 +87,29 @@
 > Similarity and dissimilarity are inverses of one another. The further apart two objects are (high distance/dissimilarity), the less alike they are (low similarity).
 
 <img width="609" height="429" alt="image" src="https://github.com/user-attachments/assets/08166f4b-11d8-4d0e-88a1-6ee15b643f4a" />
+
+### Question 7
+**Question:** What is the primary purpose of proximity analysis in data mining?
+*   **Eliminated Options:**
+    *   *To normalize the scale of numerical attributes:* This is an entirely different process called data scaling or normalization.
+    *   *To reduce the number of features in a dataset:* This describes Dimensionality Reduction (e.g., PCA).
+    *   *To clean the data by removing errors and inconsistencies:* This describes Data Cleaning/Preprocessing.
+*   **Correct Answer:** **To measure how similar or dissimilar data objects are to one another**
+
+> [!NOTE]
+> **Explanation:** 
+> "Proximity" literally refers to how close or far apart data points are in a feature space. Proximity analysis is the foundational step used in clustering (like K-Means) and classification (like K-Nearest Neighbors) to quantify likeness.
+
+---
+
+### Question 8
+**Question:** You are comparing two customers based on a single nominal attribute: favorite_color. Customer A's favorite color is 'Blue', and Customer B's favorite color is 'Green'. Using the simple matching method, what is their dissimilarity?
+*   **Eliminated Options:**
+    *   *0:* This would imply they match perfectly (zero distance/dissimilarity).
+    *   *0.5:* Simple matching for a single nominal attribute yields either exactly a match or a mismatch, not partial values.
+    *   *2:* Simple matching distances are usually scaled between 0 and 1.
+*   **Correct Answer:** **1**
+
+> [!NOTE]
+> **Explanation:** 
+> For nominal (categorical) attributes, simple matching assigns a dissimilarity (distance) of `0` if the values match, and `1` if they do not match. Because 'Blue' does not equal 'Green', it is a complete mismatch, resulting in a dissimilarity score of 1.
