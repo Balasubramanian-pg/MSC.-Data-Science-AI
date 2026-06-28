@@ -151,6 +151,82 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 
 <img width="448" height="828" alt="image" src="https://github.com/user-attachments/assets/0444a93a-7ae5-4499-948b-1da4f82e395f" />
 
+
+---
+
+### **Question 13**
+
+* **Correct Answer:** **Mean Imputation**
+* **Eliminations:**
+* *Standardization:* This transforms numeric ranges based on variance; it does not replace missing values.
+* *Aggregation:* This compiles summary values across records rather than populating blank cells.
+* *Integration:* This deals with blending separate system data sources together.
+
+
+
+---
+
+### **Question 14**
+
+* **Correct Answer:** **Remove duplicate record**
+* **Eliminations:**
+* *Add another duplicate:* This exacerbates the data quality error by injecting even more redundant entries.
+* *Normalize record:* Scaling values does nothing to resolve structural entity redundancy.
+* *Aggregate record:* Grouping cannot cleanly execute until underlying table entity duplicates are purged.
+
+
+
+---
+
+### **Question 15**
+
+* **Correct Answer:** **Missing Values**
+* **Eliminations:**
+* *Aggregation:* High-level summarization cannot happen effectively while data records are still incomplete.
+* *Visualization:* Charting data containing massive unaddressed gaps produces highly deceptive, broken visuals.
+* *Modeling:* Machine learning algorithms will fail or throw errors if fed fields containing unhandled nulls.
+
+
+
+---
+
+### **Question 16**
+
+* **Correct Answer:** **Data Integration**
+* **Eliminations:**
+* *Aggregation:* This refers to math summarization (like sums), not blending distinct source tables.
+* *Normalization:* This rescales feature dimensions instead of combining separate software platforms.
+* *Imputation:* This replaces blank values with estimates, completely unrelated to consolidating source pipelines.
+
+
+
+---
+
+### **Question 17**
+
+* **Correct Answer:** **Redundancy**
+* **Eliminations:**
+* *Noise:* This refers to random errors or extraneous variance within data values, not exact record repetition.
+* *Aggregation:* This is an analytical step that computes summary metrics over clean groups.
+* *Normalization:* This adjusts numerical scaling ranges instead of addressing record replication.
+
+
+
+---
+
+### **Question 18**
+
+* **Correct Answer:** **Noise/Outlier**
+* **Eliminations:**
+* *Duplicate:* The value 5000 appears only once in the sequence; it is not a repeating record.
+* *Missing Value:* The entry contains a distinct numerical value; it is not empty or null.
+* *Aggregate:* This represents an individual raw observation, not a combined summary metric.
+
+
+
+---
+
+
 <img width="403" height="836" alt="image" src="https://github.com/user-attachments/assets/c3ac04a0-1e54-4a4b-8db2-a4d7aa09b9d9" />
 
 <img width="441" height="136" alt="image" src="https://github.com/user-attachments/assets/c204bd72-a7e9-4c15-b733-a698970e166b" />
