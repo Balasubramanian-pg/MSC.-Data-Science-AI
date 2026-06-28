@@ -302,3 +302,48 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 ---
 
 <img width="441" height="136" alt="image" src="https://github.com/user-attachments/assets/c204bd72-a7e9-4c15-b733-a698970e166b" />
+
+
+### **Question 25**
+
+* **Correct Answer:** **Accuracy**
+* **Eliminations:**
+* *Believability:* The value is obviously wrong rather than a matter of source credibility or trust.
+* *Completeness:* The field is filled with data; it is not empty.
+* *Consistency:* The currency symbol and number layout match system standards; the value itself is simply impossible.
+
+
+
+---
+
+### **Confidence Score Table**
+
+| Question Number | Correct Answer Option | Confidence Score |
+| --- | --- | --- |
+| **Question 1** | Imputation | 100% |
+| **Question 2** | Create analysis-ready data | 100% |
+| **Question 3** | Uniqueness | 100% |
+| **Question 4** | Normalization | 100% |
+| **Question 5** | Understand business/domain requirements | 100% |
+| **Question 6** | Accuracy | 100% |
+| **Question 7** | Consistency | 100% |
+| **Question 8** | Accuracy | 100% |
+| **Question 9** | Analysis-Ready Data | 100% |
+| **Question 10** | Ensure fair feature contribution | 100% |
+| **Question 11** | Standardization | 100% |
+| **Question 12** | Normalization | 100% |
+| **Question 13** | Mean Imputation | 100% |
+| **Question 14** | Remove duplicate record | 100% |
+| **Question 15** | Missing Values | 100% |
+| **Question 16** | Data Integration | 100% |
+| **Question 17** | Redundancy | 100% |
+| **Question 18** | Noise/Outlier | 100% |
+| **Question 19** | Wrong business decisions | 100% |
+| **Question 20** | House Size | 100% |
+| **Question 21** | Completeness | 100% |
+| **Question 22** | Accuracy | 100% |
+| **Question 23** | Sensor error | 100% |
+| **Question 24** | Invalid Value | 100% |
+| **Question 25** | Accuracy | 100% |
+
+All answers are solid and clean. Let's lock them in and secure another perfect run!
