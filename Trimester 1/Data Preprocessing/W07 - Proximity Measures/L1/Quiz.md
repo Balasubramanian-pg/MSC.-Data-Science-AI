@@ -44,5 +44,46 @@
 
 <img width="651" height="678" alt="image" src="https://github.com/user-attachments/assets/a3e7889a-626c-4bb2-a031-f08f0a36d9ef" />
 
+---
+
+### Question 4
+**Question:** How is the proximity between two objects typically calculated when the dataset contains a mix of attribute types (e.g., nominal, numerical, ordinal)?
+*   **Eliminated Options:**
+    *   *By using only the numerical attributes and ignoring all others:* This throws away useful information from the other data types.
+    *   *By calculating the Euclidean distance across all attributes regardless of type:* Euclidean distance mathematically cannot be directly applied to text-based nominal attributes.
+    *   *By converting all attributes to binary and using the Jaccard coefficient:* This destroys the continuous precision of numerical attributes and the sequence of ordinal ones.
+*   **Correct Answer:** **By computing a weighted combination of the dissimilarities for each attribute type**
+
+> [!IMPORTANT]
+> **Explanation:** 
+> For mixed datasets, data scientists usually calculate the similarity/dissimilarity for each attribute separately (using the appropriate method for that specific type), map them to a standard scale (like 0 to 1), and then combine them using a weighted average. A common algorithm for this is Gower's distance.
+
+---
+
+### Question 5
+**Question:** Which of the following is the best example of a symmetric binary attribute?
+*   **Eliminated Options:**
+    *   *A feature indicating if a transaction was fraudulent:* Asymmetric (fraud is rare and a "True" is much more significant than a "False").
+    *   *The result of a medical test for a rare disease:* Asymmetric (having the rare disease is highly significant).
+    *   *A feature indicating whether a customer purchased a specific luxury item:* Asymmetric (purchasing it is rare compared to not purchasing it).
+*   **Correct Answer:** **A survey question asking for a person's gender (Male/Female)**
+
+> [!NOTE]
+> **Explanation:** 
+> A symmetric binary attribute is one where both states are equally important and carry the same weight. Being Male or Female are both normal, equally meaningful states, and a match in either category is equally significant.
+
+---
+
+### Question 6
+**Question:** If the dissimilarity (distance) between two data objects is very high, what does this imply about their similarity?
+*   **Eliminated Options:**
+    *   *Their similarity is also very high:* Distance and similarity are inversely related, not directly related.
+    *   *Their similarity cannot be determined from their dissimilarity:* They are mathematically linked (often by formulas like $s = 1 - d$), so it *can* be determined.
+    *   *Their similarity is equal to their dissimilarity:* This is only true precisely at the exact midpoint (e.g., 0.5).
+*   **Correct Answer:** **Their similarity is very low.**
+
+> [!TIP]
+> **Explanation:** 
+> Similarity and dissimilarity are inverses of one another. The further apart two objects are (high distance/dissimilarity), the less alike they are (low similarity).
 
 <img width="609" height="429" alt="image" src="https://github.com/user-attachments/assets/08166f4b-11d8-4d0e-88a1-6ee15b643f4a" />
