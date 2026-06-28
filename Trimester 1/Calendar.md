@@ -55,3 +55,4 @@ WEEK 	COMPONENT 	START DATE 	END DATE 	START TIME (IST) 	END TIME (IST) 	TRIMEST
 14 	TRIMESTER EXAMS SLOT-1 	Sunday, August 23, 2026 	Sunday, August 23, 2026 	12:30 PM 	2:30 PM 	Data Visualization & Storytelling 	40
 14 	TRIMESTER EXAMS SLOT-2 	Saturday, August 29, 2026 	Saturday, August 29, 2026 	9:30 AM 	11:30 AM 	Data Visualization & Storytelling 	40
 
+# Statistical Inference & Modelling
