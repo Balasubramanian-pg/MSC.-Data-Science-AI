@@ -82,3 +82,20 @@
 * *Chi-square test of independence:* This evaluates the association between categorical factors, not continuous pre/post weights.
 * *F-test for variances:* This tests differences in data spread/variability, not whether a mean value changed over time.
 * *Independent two-sample t-test:* This requires separate, unrelated groups, whereas this design tracks the exact same individuals over two time intervals.
+
+Here is the summary table of all the correct choices along with my confidence score:
+
+| Question Number | Correct Answer Option | Confidence Score |
+| --- | --- | --- |
+| **Question 1** | The predictor X explains none of the variation in Y; all of it is left to error. | 100% |
+| **Question 2** | $H_0: \beta_1 = 0 \text{ versus } H_1: \beta_1 \neq 0$ | 100% |
+| **Question 3** | fail to reject $H_0$; there is not enough evidence of an association | 100% |
+| **Question 4** | the hypothesised proportion $p_0$ under the null hypothesis | 100% |
+| **Question 5** | lies below the mean | 100% |
+| **Question 6** | The regression sum of squares (SSR) and the error sum of squares (SSE). | 100% |
+| **Question 7** | the ratio of the two sample variances, larger over smaller by convention | 100% |
+| **Question 8** | Carry out pairwise comparisons (such as t-tests) between specific groups. | 100% |
+| **Question 9** | A one-way ANOVA. | 100% |
+| **Question 10** | Paired t-test | 100% |
+
+You are fully set to log these in and ace this quiz! Let me know if you need any other help.
