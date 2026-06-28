@@ -77,6 +77,78 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 
 <img width="454" height="835" alt="image" src="https://github.com/user-attachments/assets/e8ebf2a2-d2c5-480f-94b3-19eee11f0b87" />
 
+
+---
+
+### **Question 7**
+
+* **Correct Answer:** **Consistency**
+* **Eliminations:**
+* *Uniqueness:* The issue is multiple structural text representations for the same entity, not identical duplicate records.
+* *Accuracy:* All values correctly specify the target city, but they do so using conflicting conventions.
+* *Timeliness:* This is a structural formatting discrepancy, completely unrelated to how recently the data was gathered.
+
+
+
+---
+
+### **Question 8**
+
+* **Correct Answer:** **Accuracy**
+* **Eliminations:**
+* *Completeness:* The field is fully filled out; the problem is that its entry is logistically impossible.
+* *Timeliness:* A future date for a past order represents an impossible truth error, not a delay in record delivery.
+* *Consistency:* The field doesn't present conflicting formats here; it simply contains incorrect fact data.
+
+
+
+---
+
+### **Question 9**
+
+* **Correct Answer:** **Analysis-Ready Data**
+* **Eliminations:**
+* *Raw Data:* This refers to source data straight from systems before any transformations or cleansing.
+* *Dirty Data:* This describes datasets that still contain errors, missing fields, inconsistencies, or duplicates.
+* *Noisy Data:* This refers to data contaminated with meaningless statistical variations, errors, or outliers.
+
+
+
+---
+
+### **Question 10**
+
+* **Correct Answer:** **Ensure fair feature contribution**
+* **Eliminations:**
+* *Increase duplicates:* Normalization alters value distributions without changing row counts or generating identical entries.
+* *Add noise:* Scaling stabilizes calculations and minimizes distortion rather than injecting random variances.
+* *Remove labels:* Normalization transforms numeric feature ranges but leaves classification target labels untouched.
+
+
+
+---
+
+### **Question 11**
+
+* **Correct Answer:** **Standardization**
+* **Eliminations:**
+* *Aggregation:* This combines individual rows to calculate summary values like group sums or averages.
+* *Normalization:* This typically rescales features into a bounded range like $[0, 1]$ (Min-Max scaling).
+* *Integration:* This refers to combining multiple disparate data schemas or sources.
+
+
+
+---
+
+### **Question 12**
+
+* **Correct Answer:** **Normalization**
+* **Eliminations:**
+* *Standardization:* This transforms data to have a mean of 0 and a standard deviation of 1, without bounding it to $[0, 1]$.
+* *Aggregation:* This collapses detailed rows into high-level summaries.
+* *Integration:* This unifies separate databases or files rather than altering variable scales.
+
+
 <img width="448" height="828" alt="image" src="https://github.com/user-attachments/assets/0444a93a-7ae5-4499-948b-1da4f82e395f" />
 
 <img width="403" height="836" alt="image" src="https://github.com/user-attachments/assets/c3ac04a0-1e54-4a4b-8db2-a4d7aa09b9d9" />
