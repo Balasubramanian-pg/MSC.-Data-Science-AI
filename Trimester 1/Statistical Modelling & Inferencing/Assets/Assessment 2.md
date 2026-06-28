@@ -48,3 +48,5 @@
 * *A treatment sum of squares and a block sum of squares:* This partition belongs specifically to a randomized block ANOVA design.
 * *Between-group variance and within-group variance:* This terminology is used for a standard one-way ANOVA, not simple linear regression.
 * *The mean and the standard deviation of Y:* These are descriptive statistics of a variable, not components that sum up to total variation (SST).
+
+<img width="444" height="612" alt="image" src="https://github.com/user-attachments/assets/3ae52f46-14f4-4bf7-852d-a76355ed58ee" />
