@@ -62,5 +62,76 @@
 ---
 
 <img width="461" height="883" alt="image" src="https://github.com/user-attachments/assets/e60b61a2-1342-4bf0-8a98-a874ec537ef9" />
+### **Question 6**
+
+* **Correct Answer:** **C. Strategic dashboard**
+* **Eliminations:**
+* *A. Tactical dashboard:* Designed for mid-level managers to track departmental progress and analyze operational initiatives with moderate interactivity.
+* *B. Analytical dashboard:* Highly interactive tools used by data analysts to explore deep trends, slice data, and uncover complex patterns.
+* *D. Operational dashboard:* Real-time tracking interfaces designed for frontline staff to monitor immediate, minute-by-minute activities.
+
+
+
+---
+
+### **Question 7**
+
+* **Correct Answer:** **B. Clear insights for decision-making**
+* **Eliminations:**
+* *A. Maximum number of charts:* Packing an excessive amount of charts creates cognitive overload and degrades user comprehension.
+* *C. Complex animations:* Intricate moving graphics distract users from understanding the underlying core data metrics.
+* *D. Unrelated information:* Extraneous data clutter adds confusion and defeats the focused purpose of a KPI system.
+
+
+
+---
+
+### **Question 8**
+
+* **Correct Answer:** **D. Better user engagement and possible higher conversion**
+* **Eliminations:**
+* *A. Poor user engagement:* A high bounce rate denotes poor engagement; a lower rate means users stick around and browse.
+* *B. Reduced traffic always:* Bounce rate represents user retention behavior percentages, not total incoming traffic volume.
+* *C. Website failure:* High bounce rates point to system or content friction, whereas low rates denote successful page navigation.
+
+
+
+---
+
+### **Question 9**
+
+* **Correct Answer:** **B. A phenomenon where the order in which a user applies filters across dimensions determines the insight uncovered**
+* **Eliminations:**
+* *A. A bias where truncating the vertical axis...:* This describes an axis truncation axis distortion flaw, not a path-dependent drill-down issue.
+* *C. A bias caused by relying too heavily on predictive black-box algorithms...:* This describes automation bias or algorithmic opacity.
+* *D. A visual flaw where the categories of a bar chart are placed out of logical sequence...:* This is a bad sorting or ordering practice in chart design.
+
+
+
+---
+
+### **Question 10**
+
+* **Correct Answer:** **C. Choosing inappropriate display media**
+* **Eliminations:**
+* *A. Using effective visual encoding:* Pie charts fail miserably at encoding hundreds of categories cleanly because human eyes cannot compare tiny, overlapping angles.
+* *B. Providing sufficient context:* Overcrowding a chart with hundreds of slices completely strips away context and readability.
+* *D. Applying Gestalt principles correctly:* Jamming countless thin slices together violates proximity and similarity principles, leading to visual chaos.
+
+
+
+---
+
+### **Question 11**
+
+* **Correct Answer:** **B. Greater than (Q3 + 1.5 * IQR) or less than (Q1 - 1.5 * IQR)**
+* **Eliminations:**
+* *A. Between Q1 and Q3:* This region defines the Interquartile Range (IQR), which contains the central 50% of the dataset.
+* *C. Equal to median:* The median is the exact middle value of the distribution and can never be an outlier.
+* *D. Equal to average:* The average represents the central tendency balance point of the sample data points.
+
+
+
+---
 
 <img width="392" height="597" alt="image" src="https://github.com/user-attachments/assets/51febdf0-aa03-4d6e-b357-319e7d0729a6" />
