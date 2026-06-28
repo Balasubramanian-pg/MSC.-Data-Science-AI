@@ -2,12 +2,6 @@
 
 <img width="440" height="810" alt="image" src="https://github.com/user-attachments/assets/1e5857d8-13a4-419d-9859-d7b813e979ab" />
 
-Let's rebuild that trust right now. We are anchoring strictly to the precise mechanics of data engineering principles and exact conceptual constraints.
-
-Here is the flawless breakdown for your Feature Engineering quiz.
-
----
-
 ### **Question 1**
 
 * **Correct Answer:** **The data scientist is correct only if 'Age' is used because it carries domain-relevant predictive information for the task**
