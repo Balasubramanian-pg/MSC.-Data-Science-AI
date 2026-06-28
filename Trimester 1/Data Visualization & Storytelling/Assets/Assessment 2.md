@@ -42,8 +42,7 @@
 * *C. Removing business goals:* These systems reinforce, track, and support targets instead of removing them.
 * *D. Hiding performance information:* The main goal is to democratize visibility and display metrics transparently to all members.
 
-<img width="461" height="883" alt="image" src="https://github.com/user-attachments/assets/e60b61a2-1342-4bf0-8a98-a874ec537ef9" />
-
+<img width="461" height="883" alt="image" src="https://github.com/user-attachments/assets/e60b61a2-1342-4bf0-8a98-a874ec537ef9" /> 
 
 ### **Question 6**
 
