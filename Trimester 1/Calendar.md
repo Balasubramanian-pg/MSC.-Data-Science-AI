@@ -1,5 +1,47 @@
 ### Trimester-1 Course Schedules
 
+```Mermaid
+gantt
+    dateFormat  YYYY-MM-DD
+    title       Trimester-1 Course Schedules & Deliverables (2026)
+    axisFormat  %b-%d
+    todayMarker off
+
+    section Feature Engineering
+    Live Class Sessions Period :active, fe_live, 2026-06-20, 2026-08-08
+    Graded Quiz-1             :crit, fe_q1, 2026-06-28, 2026-06-30
+    Assignment                :fe_asg, 2026-07-12, 2026-08-08
+    Graded Quiz-2             :crit, fe_q2, 2026-07-19, 2026-07-21
+    Trimester Exam Slot-1     :fe_ex1, 2026-08-23, 1d
+    Trimester Exam Slot-2     :fe_ex2, 2026-08-29, 1d
+
+    section Data Processing
+    Live Class Sessions Period :active, dp_live, 2026-05-22, 2026-07-10
+    Graded Quiz-1             :crit, dp_q1, 2026-06-07, 2026-06-09
+    Graded Quiz-2             :crit, dp_q2, 2026-06-28, 2026-06-30
+    Assignment                :dp_asg, 2026-07-12, 2026-08-08
+    Trimester Exam Slot-1     :dp_ex1, 2026-08-22, 1d
+    Trimester Exam Slot-2     :dp_ex2, 2026-08-30, 1d
+
+    section Data Visualization & Storytelling
+    Live Class Sessions Period :active, dv_live, 2026-05-22, 2026-08-14
+    Graded Quiz-1             :crit, dv_q1, 2026-06-07, 2026-06-09
+    Graded Quiz-2             :crit, dv_q2, 2026-06-28, 2026-06-30
+    Assignment                :dv_asg, 2026-07-12, 2026-08-08
+    Graded Quiz-3             :crit, dv_q3, 2026-07-19, 2026-07-21
+    Trimester Exam Slot-1     :dv_ex1, 2026-08-23, 1d
+    Trimester Exam Slot-2     :dv_ex2, 2026-08-29, 1d
+
+    section Statistical Inference & Modelling
+    Live Class Sessions Period :active, si_live, 2026-05-23, 2026-08-15
+    Graded Quiz-1             :crit, si_q1, 2026-06-07, 2026-06-09
+    Graded Quiz-2             :crit, si_q2, 2026-06-28, 2026-06-30
+    Assignment                :si_asg, 2026-07-12, 2026-08-08
+    Graded Quiz-3             :crit, si_q3, 2026-07-19, 2026-07-21
+    Trimester Exam Slot-1     :si_ex1, 2026-08-22, 1d
+    Trimester Exam Slot-2     :si_ex2, 2026-08-30, 1d
+```
+
 #### Feature Engineering
 
 | Week | Component | Start Date | End Date | Start Time (IST) | End Time (IST) | Weightage |
