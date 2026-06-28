@@ -96,3 +96,37 @@ Here is the flawless breakdown for your Feature Engineering quiz.
 ---
 
 <img width="473" height="570" alt="image" src="https://github.com/user-attachments/assets/716fce7a-c670-4862-a905-6cc61d771624" />
+
+
+### **Question 8**
+
+* **Correct Answer:** **Feature creation — deriving a new domain-informed feature from existing ones**
+* **Eliminations:**
+* *Feature selection — keeping only the important features:* This describes dropping irrelevant or redundant columns, not synthesizing a brand-new ratio metric.
+* *Feature encoding — converting income into numeric form:* Income is already numeric; encoding converts categorical strings or text groups into numbers.
+* *Feature transformation — applying a log to reduce skewness:* This applies mathematical scaling to a single variable rather than generating a completely new composite attribute from two metrics.
+
+
+
+---
+
+### **Question 9**
+
+* **Correct Answer:** **Feature creation**
+* **Eliminations:**
+* *Feature scaling:* This alters the numerical range or variance of data columns without inventing brand new attributes.
+* *Feature selection:* This acts as a filter to discard weak columns rather than generating an entirely new timeline gap metric.
+* *Feature encoding:* This translates text variables or category labels into machine-readable numeric scales.
+
+
+
+---
+
+### **Question 10**
+
+* **Correct Answer:** **Apply log transformation first to compress the large value and reduce skewness, then apply Z-score standardization to center and scale the now-symmetric distribution**
+* **Eliminations:**
+* *Apply Z-score standardization first, then apply log transformation...:* Log operations throw mathematical errors if applied to columns containing negative values, which Z-scoring introduces by centering the mean at 0.
+* *Apply Min-Max Scaling directly, since it will automatically fix the skewness by mapping everything to [0, 1]:* Min-Max maps range endpoints but does not compress skewness, leaving normal values compressed into a useless narrow strip.
+* *Apply equal-width binning first to group incomes into categories, then standardize...:* Binning destroys continuous granularity by turning continuous income fields into rigid categorical codes.
+* 
