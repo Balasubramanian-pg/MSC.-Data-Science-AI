@@ -50,3 +50,35 @@
 * *The mean and the standard deviation of Y:* These are descriptive statistics of a variable, not components that sum up to total variation (SST).
 
 <img width="444" height="612" alt="image" src="https://github.com/user-attachments/assets/3ae52f46-14f4-4bf7-852d-a76355ed58ee" />
+
+### **Question 7**
+
+* **Correct Answer:** **the ratio of the two sample variances, larger over smaller by convention**
+* **Eliminations:**
+* *the square root of the pooled variance:* This is used to calculate the standard error for a two-sample t-test, not an F-test.
+* *the difference between the two sample variances:* The F-test relies on a quotient (division) to compare variance scales, not subtraction.
+* *the product of the two sample variances:* Multiplying variances serves no comparative statistical purpose in a variance equality test.
+
+### **Question 8**
+
+* **Correct Answer:** **Carry out pairwise comparisons (such as t-tests) between specific groups.**
+* **Eliminations:**
+* *Compute a chi-square statistic:* Chi-square tests are used for categorical count data, not continuous means following an ANOVA.
+* *Declare that all groups differ because the ANOVA was significant:* An omnibus ANOVA test only confirms that *at least one* pair differs, not necessarily all of them.
+* *Raise the significance level and rerun the ANOVA:* Changing $\alpha$ and repeating the exact same overall test will not pinpoint where individual differences lie.
+
+### **Question 9**
+
+* **Correct Answer:** **A one-way ANOVA.**
+* **Eliminations:**
+* *A chi-square test:* This is designed for testing relationships between categorical variables, not comparing numeric mileage means.
+* *A paired t-test:* This is used for matching pairs of data within two dependent groups, not three independent groups.
+* *An independent two-sample t-test:* This test is restricted to comparing means between exactly two groups, whereas we have three plants.
+
+### **Question 10**
+
+* **Correct Answer:** **Paired t-test**
+* **Eliminations:**
+* *Chi-square test of independence:* This evaluates the association between categorical factors, not continuous pre/post weights.
+* *F-test for variances:* This tests differences in data spread/variability, not whether a mean value changed over time.
+* *Independent two-sample t-test:* This requires separate, unrelated groups, whereas this design tracks the exact same individuals over two time intervals.
