@@ -14,8 +14,6 @@
 > **Explanation:** 
 > Euclidean Distance is based on the Pythagorean theorem and calculates the direct, "as the crow flies," straight-line distance between two points in a Euclidean space. 
 
----
-
 ### Question 2
 **Question:** When is the Jaccard Coefficient preferred over the Simple Matching Coefficient (SMC) for measuring similarity between binary vectors?
 *   **Eliminated Options:**
@@ -27,8 +25,6 @@
 > [!TIP]
 > **Explanation:** 
 > The Jaccard Coefficient ignores $0-0$ matches (mutual absences). It is specifically used for *asymmetric* binary attributes where a mutual presence (like two users buying the same rare book) is meaningful, but a mutual absence (two users not buying a random book) provides no real similarity information.
-
----
 
 ### Question 3
 **Question:** What is the first step in handling ordinal attributes before calculating their proximity?
@@ -44,8 +40,6 @@
 
 <img width="651" height="678" alt="image" src="https://github.com/user-attachments/assets/a3e7889a-626c-4bb2-a031-f08f0a36d9ef" />
 
----
-
 ### Question 4
 **Question:** How is the proximity between two objects typically calculated when the dataset contains a mix of attribute types (e.g., nominal, numerical, ordinal)?
 *   **Eliminated Options:**
@@ -58,8 +52,6 @@
 > **Explanation:** 
 > For mixed datasets, data scientists usually calculate the similarity/dissimilarity for each attribute separately (using the appropriate method for that specific type), map them to a standard scale (like 0 to 1), and then combine them using a weighted average. A common algorithm for this is Gower's distance.
 
----
-
 ### Question 5
 **Question:** Which of the following is the best example of a symmetric binary attribute?
 *   **Eliminated Options:**
@@ -71,8 +63,6 @@
 > [!NOTE]
 > **Explanation:** 
 > A symmetric binary attribute is one where both states are equally important and carry the same weight. Being Male or Female are both normal, equally meaningful states, and a match in either category is equally significant.
-
----
 
 ### Question 6
 **Question:** If the dissimilarity (distance) between two data objects is very high, what does this imply about their similarity?
@@ -99,8 +89,6 @@
 > [!NOTE]
 > **Explanation:** 
 > "Proximity" literally refers to how close or far apart data points are in a feature space. Proximity analysis is the foundational step used in clustering (like K-Means) and classification (like K-Nearest Neighbors) to quantify likeness.
-
----
 
 ### Question 8
 **Question:** You are comparing two customers based on a single nominal attribute: favorite_color. Customer A's favorite color is 'Blue', and Customer B's favorite color is 'Green'. Using the simple matching method, what is their dissimilarity?
