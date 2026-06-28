@@ -229,4 +229,76 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 
 <img width="403" height="836" alt="image" src="https://github.com/user-attachments/assets/c3ac04a0-1e54-4a4b-8db2-a4d7aa09b9d9" />
 
+### **Question 19**
+
+* **Correct Answer:** **Wrong business decisions**
+* **Eliminations:**
+* *Better predictions:* Dirty data actively degrades model performance, producing weaker predictions.
+* *Lower storage cost:* Bad data formatting often wastes storage footprints via duplicates and errors.
+* *Faster processing:* Processing uncleaned datasets slows down calculations due to error-handling overhead.
+
+
+
+---
+
+### **Question 20**
+
+* **Correct Answer:** **House Size**
+* **Eliminations:**
+* *Bedrooms:* Bounded tightly between 1 and 8, its scale is too small to dominate distance equations.
+* *Age:* Bounded between 0 and 100, its magnitude is completely eclipsed by the house size values.
+* *All equally:* Without scaling, features with massive absolute numerical ranges completely overpower smaller metrics.
+
+
+
+---
+
+### **Question 21**
+
+* **Correct Answer:** **Completeness**
+* **Eliminations:**
+* *Accuracy:* We cannot evaluate correctness because no information was provided in the field.
+* *Timeliness:* This concerns how current or up-to-date the record is, not whether it is blank.
+* *Believability:* This evaluates source trustworthiness, which cannot be assessed on an empty field.
+
+
+
+---
+
+### **Question 22**
+
+* **Correct Answer:** **Accuracy**
+* **Eliminations:**
+* *Completeness:* The field is completely filled out; the problem is that the value itself is impossible.
+* *Timeliness:* An impossible age value represents an data entry error, not an outdated record issue.
+* *Consistency:* There are no alternative conflicting formats presented here for this variable.
+
+
+
+---
+
+### **Question 23**
+
+* **Correct Answer:** **Sensor error**
+* **Eliminations:**
+* *Aggregation error:* Summarization operations do not inject massive individual value anomalies into sensor streams.
+* *Integration issue:* Blending sources affects structure or matching fields, not individual telemetry points.
+* *Scaling issue:* A scaling mismatch shifts values by uniform factors, it doesn't create single isolated spikes.
+
+
+
+---
+
+### **Question 24**
+
+* **Correct Answer:** **Invalid Value**
+* **Eliminations:**
+* *Missing Value:* The field contains a concrete number (-5); it is not left empty or null.
+* *Timeliness Issue:* A negative age reflects a logical physical impossibility, not an outdated entry.
+* *Aggregation Issue:* This is an individual observation error, not a mistake born from summarizing data groups.
+
+
+
+---
+
 <img width="441" height="136" alt="image" src="https://github.com/user-attachments/assets/c204bd72-a7e9-4c15-b733-a698970e166b" />
