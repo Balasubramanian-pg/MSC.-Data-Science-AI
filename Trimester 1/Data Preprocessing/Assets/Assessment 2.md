@@ -1,10 +1,6 @@
 
 <img width="480" height="839" alt="image" src="https://github.com/user-attachments/assets/f075ae52-7057-4d29-b9b6-cd5aa68b69e0" />
 
-Here is the breakdown for your data preprocessing quiz following our strict elimination protocol.
-
----
-
 ### **Question 1**
 
 * **Correct Answer:** **Imputation**
@@ -12,10 +8,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Data Aggregation:* This summarizes or combines multiple data records rather than fixing a single missing value.
 * *Normalization:* This scales continuous numerical values into a specific range, it doesn't handle missing values.
 * *Integration:* This involves combining data from multiple separate sources into a single dataset.
-
-
-
----
 
 ### **Question 2**
 
@@ -25,10 +17,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Reduce storage only:* Reducing storage is a secondary infrastructure byproduct, not the main objective of preparing data for analytics.
 * *Remove all records:* The goal is to clean and format records for utility, not to delete the entire dataset.
 
-
-
----
-
 ### **Question 3**
 
 * **Correct Answer:** **Uniqueness**
@@ -36,10 +24,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Completeness:* This measures whether any expected data values or records are missing entirely.
 * *Accuracy:* This measures whether the recorded information correctly reflects real-world truth.
 * *Timeliness:* This measures whether the data is sufficiently up-to-date for its intended use.
-
-
-
----
 
 ### **Question 4**
 
@@ -49,10 +33,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Aggregation:* This computes summary statistics (like sums or averages) across records.
 * *Cleaning:* This resolves missing values, typos, or corrupt records rather than scaling numeric ranges.
 
-
-
----
-
 ### **Question 5**
 
 * **Correct Answer:** **Understand business/domain requirements**
@@ -60,10 +40,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Fill with mean immediately:* Imputing mechanically without domain context can introduce severe bias into sensitive medical outcomes.
 * *Delete record immediately:* Dropping records indiscriminately causes data loss and can wreck statistical power.
 * *Normalize data:* Scaling operations cannot execute properly on fields containing missing values.
-
-
-
----
 
 ### **Question 6**
 
@@ -77,9 +53,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 
 <img width="454" height="835" alt="image" src="https://github.com/user-attachments/assets/e8ebf2a2-d2c5-480f-94b3-19eee11f0b87" />
 
-
----
-
 ### **Question 7**
 
 * **Correct Answer:** **Consistency**
@@ -87,10 +60,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Uniqueness:* The issue is multiple structural text representations for the same entity, not identical duplicate records.
 * *Accuracy:* All values correctly specify the target city, but they do so using conflicting conventions.
 * *Timeliness:* This is a structural formatting discrepancy, completely unrelated to how recently the data was gathered.
-
-
-
----
 
 ### **Question 8**
 
@@ -100,10 +69,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Timeliness:* A future date for a past order represents an impossible truth error, not a delay in record delivery.
 * *Consistency:* The field doesn't present conflicting formats here; it simply contains incorrect fact data.
 
-
-
----
-
 ### **Question 9**
 
 * **Correct Answer:** **Analysis-Ready Data**
@@ -111,10 +76,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Raw Data:* This refers to source data straight from systems before any transformations or cleansing.
 * *Dirty Data:* This describes datasets that still contain errors, missing fields, inconsistencies, or duplicates.
 * *Noisy Data:* This refers to data contaminated with meaningless statistical variations, errors, or outliers.
-
-
-
----
 
 ### **Question 10**
 
@@ -124,10 +85,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Add noise:* Scaling stabilizes calculations and minimizes distortion rather than injecting random variances.
 * *Remove labels:* Normalization transforms numeric feature ranges but leaves classification target labels untouched.
 
-
-
----
-
 ### **Question 11**
 
 * **Correct Answer:** **Standardization**
@@ -135,10 +92,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Aggregation:* This combines individual rows to calculate summary values like group sums or averages.
 * *Normalization:* This typically rescales features into a bounded range like $[0, 1]$ (Min-Max scaling).
 * *Integration:* This refers to combining multiple disparate data schemas or sources.
-
-
-
----
 
 ### **Question 12**
 
@@ -151,9 +104,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 
 <img width="448" height="828" alt="image" src="https://github.com/user-attachments/assets/0444a93a-7ae5-4499-948b-1da4f82e395f" />
 
-
----
-
 ### **Question 13**
 
 * **Correct Answer:** **Mean Imputation**
@@ -161,10 +111,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Standardization:* This transforms numeric ranges based on variance; it does not replace missing values.
 * *Aggregation:* This compiles summary values across records rather than populating blank cells.
 * *Integration:* This deals with blending separate system data sources together.
-
-
-
----
 
 ### **Question 14**
 
@@ -174,10 +120,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Normalize record:* Scaling values does nothing to resolve structural entity redundancy.
 * *Aggregate record:* Grouping cannot cleanly execute until underlying table entity duplicates are purged.
 
-
-
----
-
 ### **Question 15**
 
 * **Correct Answer:** **Missing Values**
@@ -185,10 +127,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Aggregation:* High-level summarization cannot happen effectively while data records are still incomplete.
 * *Visualization:* Charting data containing massive unaddressed gaps produces highly deceptive, broken visuals.
 * *Modeling:* Machine learning algorithms will fail or throw errors if fed fields containing unhandled nulls.
-
-
-
----
 
 ### **Question 16**
 
@@ -198,10 +136,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Normalization:* This rescales feature dimensions instead of combining separate software platforms.
 * *Imputation:* This replaces blank values with estimates, completely unrelated to consolidating source pipelines.
 
-
-
----
-
 ### **Question 17**
 
 * **Correct Answer:** **Redundancy**
@@ -210,10 +144,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Aggregation:* This is an analytical step that computes summary metrics over clean groups.
 * *Normalization:* This adjusts numerical scaling ranges instead of addressing record replication.
 
-
-
----
-
 ### **Question 18**
 
 * **Correct Answer:** **Noise/Outlier**
@@ -221,11 +151,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Duplicate:* The value 5000 appears only once in the sequence; it is not a repeating record.
 * *Missing Value:* The entry contains a distinct numerical value; it is not empty or null.
 * *Aggregate:* This represents an individual raw observation, not a combined summary metric.
-
-
-
----
-
 
 <img width="403" height="836" alt="image" src="https://github.com/user-attachments/assets/c3ac04a0-1e54-4a4b-8db2-a4d7aa09b9d9" />
 
@@ -237,10 +162,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Lower storage cost:* Bad data formatting often wastes storage footprints via duplicates and errors.
 * *Faster processing:* Processing uncleaned datasets slows down calculations due to error-handling overhead.
 
-
-
----
-
 ### **Question 20**
 
 * **Correct Answer:** **House Size**
@@ -248,10 +169,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Bedrooms:* Bounded tightly between 1 and 8, its scale is too small to dominate distance equations.
 * *Age:* Bounded between 0 and 100, its magnitude is completely eclipsed by the house size values.
 * *All equally:* Without scaling, features with massive absolute numerical ranges completely overpower smaller metrics.
-
-
-
----
 
 ### **Question 21**
 
@@ -261,10 +178,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Timeliness:* This concerns how current or up-to-date the record is, not whether it is blank.
 * *Believability:* This evaluates source trustworthiness, which cannot be assessed on an empty field.
 
-
-
----
-
 ### **Question 22**
 
 * **Correct Answer:** **Accuracy**
@@ -272,10 +185,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Completeness:* The field is completely filled out; the problem is that the value itself is impossible.
 * *Timeliness:* An impossible age value represents an data entry error, not an outdated record issue.
 * *Consistency:* There are no alternative conflicting formats presented here for this variable.
-
-
-
----
 
 ### **Question 23**
 
@@ -285,10 +194,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Integration issue:* Blending sources affects structure or matching fields, not individual telemetry points.
 * *Scaling issue:* A scaling mismatch shifts values by uniform factors, it doesn't create single isolated spikes.
 
-
-
----
-
 ### **Question 24**
 
 * **Correct Answer:** **Invalid Value**
@@ -297,13 +202,8 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Timeliness Issue:* A negative age reflects a logical physical impossibility, not an outdated entry.
 * *Aggregation Issue:* This is an individual observation error, not a mistake born from summarizing data groups.
 
-
-
----
-
 <img width="441" height="136" alt="image" src="https://github.com/user-attachments/assets/c204bd72-a7e9-4c15-b733-a698970e166b" />
 
----
 ### **Question 25**
 
 * **Correct Answer:** **Accuracy**
@@ -311,10 +211,6 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 * *Believability:* The value is obviously wrong rather than a matter of source credibility or trust.
 * *Completeness:* The field is filled with data; it is not empty.
 * *Consistency:* The currency symbol and number layout match system standards; the value itself is simply impossible.
-
-
-
----
 
 ### **Confidence Score Table**
 
@@ -345,5 +241,3 @@ Here is the breakdown for your data preprocessing quiz following our strict elim
 | **Question 23** | Sensor error | 100% |
 | **Question 24** | Invalid Value | 100% |
 | **Question 25** | Accuracy | 100% |
-
-All answers are solid and clean. Let's lock them in and secure another perfect run!
