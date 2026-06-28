@@ -118,3 +118,5 @@ In the Harris corner detection method, what condition is true when the detected 
 > * **Both large** → Corner
 >
 > A corner is characterized by significant intensity changes in both horizontal and vertical directions, which corresponds to both eigenvalues being large.
+
+Let us focus on [week 7 quiz](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W07%20-%20Feature%20Engineering%20Techniques%20for%20Time-Series%20Data/Quiz.md)
