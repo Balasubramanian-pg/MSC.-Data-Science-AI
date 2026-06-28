@@ -135,3 +135,49 @@
 ---
 
 <img width="392" height="597" alt="image" src="https://github.com/user-attachments/assets/51febdf0-aa03-4d6e-b357-319e7d0729a6" />
+
+
+### **Question 12**
+
+* **Correct Answer:** **C. Oxytocin**
+* **Eliminations:**
+* *A. Cortisol:* This hormone is triggered by stress and captures focused attention during a narrative's high-stakes conflicts.
+* *B. Serotonin:* This chemical primarily regulates mood, sleep, and emotional balance, rather than active empathy/trust bonding.
+* *D. Dopamine:* This reward-system neurotransmitter keeps listeners engaged and eager to find out what happens next in a plot.
+
+
+
+---
+
+### **Question 13**
+
+* **Correct Answer:** **B. Providing clear visibility into goals and progress**
+* **Eliminations:**
+* *A. Hiding performance metrics:* Obscuring data targets is a direct violation of openness and transparent metrics.
+* *C. Showing only attractive charts:* Cherry-picking flattering visuals hides underlying problems and damages objective tracking.
+* *D. Removing KPIs:* Deleting key performance indicators leaves teams blind without clear baselines to measure organizational success.
+
+
+
+---
+
+### **Question 14**
+
+* **Correct Answer:** **C. The vertical y-axis is inverted, tricking the audience into believing a downward line means a decrease in deaths**
+* **Eliminations:**
+* *A. The horizontal x-axis cherry-picks dates...:* The chart tracks timeline continuity correctly; the deception lies strictly within its vertical axis alignment.
+* *B. The chart uses a pie chart format...:* The graphic is structured as a line/area graph, not a circular pie segment breakdown.
+* *D. The chart utilizes dual axes with entirely different scales:* The chart uses a single, unified vertical axis that runs upside down (zero at the top).
+
+
+
+---
+
+### **Question 15**
+
+* **Correct Answer:** **B. Observe performance and take action**
+* **Eliminations:**
+* *A. Ignore problems:* Real-time monitoring aims to spotlight developing issues instantly so they cannot be ignored.
+* *C. Remove all data:* Live streaming dashboards aggregate and utilize operational data flows rather than deleting them.
+* *D. Avoid decision-making:* Live tracking systems supply immediate evidence explicitly to empower prompt operational choices.
+* 
