@@ -61,3 +61,43 @@ What is the primary cause of duplicate data issues in a dataset?
 > Duplicate records commonly arise when integrating data from multiple systems that describe the same real-world entities differently. Without proper entity resolution and deduplication processes, overlapping records can create duplicates in the consolidated dataset.
 
 <img width="581" height="426" alt="image" src="https://github.com/user-attachments/assets/bed2a881-1753-40f7-a76f-297cdf26a4dc" />
+
+# Question 4
+
+What is the recommended order of operations when dealing with noise and outliers?
+
+## Options
+
+* Noise should be removed before detecting outliers.
+* Noise and outliers should be handled at the same time.
+* Outliers should be removed before handling noise.
+* The order does not matter; either can be done first.
+
+## Answer
+
+✅ **Noise should be removed before detecting outliers.**
+
+> [!NOTE]
+> **Reason**
+>
+> Noise can obscure the true structure of the data and may cause normal observations to appear as outliers. By first reducing noise through techniques such as smoothing or filtering, outlier detection methods can more accurately identify genuine anomalies.
+
+# Question 5
+
+Which of the following is NOT one of the six key dimensions of data quality mentioned in the presentation?
+
+## Options
+
+* Completeness
+* Timeliness
+* Accuracy
+* Cost
+
+## Answer
+
+✅ **Cost**
+
+> [!NOTE]
+> **Reason**
+>
+> Common data quality dimensions include **Accuracy, Completeness, Consistency, Timeliness, Validity,** and **Uniqueness**. While cost is an important business consideration, it is not generally considered a core dimension of data quality.
