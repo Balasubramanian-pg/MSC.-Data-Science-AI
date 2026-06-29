@@ -69,3 +69,73 @@
 > can therefore assist in detecting unusual observations that differ significantly from the majority of the dataset.
 
 <img width="794" height="600" alt="image" src="https://github.com/user-attachments/assets/1bd2e1de-943f-45b5-9b22-1a887c16b517" />
+
+## Question 3
+
+**Question:** A dataset records dates in two different formats: "MM/DD/YYYY" (e.g., 10/01/2023) and "DD-Mon-YY" (e.g., 01-Oct-23). This problem is an example of what type of inconsistency?
+
+* **Eliminated Options:**
+
+  * *Semantic Inconsistency:* Semantic inconsistencies occur when the meaning of data differs, not merely its format.
+  * *Structural Inconsistency:* Structural inconsistencies involve differences in schema or database organization rather than value formatting.
+  * *Intentional Inconsistency:* This is not a recognized category in data preprocessing.
+
+* **Correct Answer:** **Syntactic Inconsistency**
+
+> [!NOTE]
+> **Explanation:**
+>
+> Syntactic inconsistencies occur when the same information is represented using different formats or syntaxes.
+>
+> For example:
+>
+> $$
+> \text{10/01/2023} \equiv \text{01-Oct-23}
+> $$
+>
+> Both values represent the same date but use different formatting conventions.
+>
+> Standardizing the format ensures consistency across the dataset.
+
+## Question 4
+
+**Question:** The process of sorting data and then smoothing it by replacing values with their bin's average or median is known as __________________.
+
+* **Eliminated Options:**
+
+  * *Clustering:* Groups similar objects into clusters but does not smooth values by bins.
+  * *Regression:* Fits mathematical relationships between variables.
+  * *Manual inspection:* Involves human review rather than automated smoothing.
+
+* **Correct Answer:** **Binning**
+
+> [!IMPORTANT]
+> **Explanation:**
+>
+> Binning is a data smoothing technique used to reduce noise.
+>
+> The process typically involves:
+>
+> 1. Sorting the data.
+> 2. Dividing the data into bins.
+> 3. Replacing values within each bin using:
+>
+>    * Bin mean
+>    * Bin median
+>    * Bin boundaries
+>
+> Example:
+>
+> Original values:
+>
+> $$
+> [4, 8, 15, 21, 24]
+> $$
+>
+> After binning and smoothing by mean:
+>
+> $$
+> [9, 9, 9, 22.5, 22.5]
+> $$
+>
+> Binning helps reduce the impact of random noise in datasets.
