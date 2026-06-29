@@ -551,3 +551,339 @@
 > $$
 > d_H=1
 > $$
+
+## Question 32
+
+**Question:** Which distance measure satisfies the triangle inequality property?
+
+* **Eliminated Options:**
+
+  * *Simple Matching Coefficient:* It is a similarity measure, not a distance metric.
+  * *Cosine Similarity:* Measures angular similarity rather than metric distance.
+  * *Jaccard Coefficient:* Primarily a similarity measure and does not inherently satisfy all metric properties.
+
+* **Correct Answer:** **Euclidean Distance**
+
+> [!NOTE]
+> **Explanation:**
+>
+> A valid metric distance must satisfy:
+>
+> $$
+> d(x,z) \leq d(x,y)+d(y,z)
+> $$
+>
+> Euclidean Distance obeys this property, ensuring that the direct path between two points is never longer than an indirect path.
+
+## Question 33
+
+**Question:** What is the Euclidean distance between the points ((2,3)) and ((5,7))?
+
+* **Eliminated Options:**
+
+  * *5:* This ignores squaring and square-root operations.
+  * *4:* This considers only one dimension.
+  * *7:* This is the sum of coordinate differences.
+
+* **Correct Answer:** **5**
+
+> [!TIP]
+> **Explanation:**
+>
+> Using the Euclidean distance formula:
+>
+> $$
+> d=\sqrt{(5-2)^2+(7-3)^2}
+> $$
+>
+> $$
+> d=\sqrt{3^2+4^2}
+> $$
+>
+> $$
+> d=\sqrt{9+16}=\sqrt{25}=5
+> $$
+
+## Question 34
+
+**Question:** Which similarity measure is computed as the ratio of common features to total unique features?
+
+* **Eliminated Options:**
+
+  * *Cosine Similarity:* Based on vector angles.
+  * *Simple Matching Coefficient:* Includes mutual absences.
+  * *Pearson Correlation:* Measures linear relationships.
+
+* **Correct Answer:** **Jaccard Coefficient**
+
+> [!NOTE]
+> **Explanation:**
+>
+> The Jaccard similarity is:
+>
+> $$
+> J(A,B)=\frac{|A\cap B|}{|A\cup B|}
+> $$
+>
+> It measures overlap relative to the total number of distinct features.
+
+## Question 35
+
+**Question:** Which type of attribute can take any real value within a specified range?
+
+* **Eliminated Options:**
+
+  * *Binary Attribute:* Has only two possible values.
+  * *Nominal Attribute:* Represents categories without ordering.
+  * *Ordinal Attribute:* Represents ordered categories.
+
+* **Correct Answer:** **Continuous Attribute**
+
+> [!IMPORTANT]
+> **Explanation:**
+>
+> Examples include:
+>
+> * Temperature
+> * Height
+> * Weight
+> * Blood Pressure
+>
+> Continuous attributes can assume infinitely many values within an interval.
+
+## Question 36
+
+**Question:** Which proximity measure would be most appropriate for comparing customer purchase histories represented as sets of purchased products?
+
+* **Eliminated Options:**
+
+  * *Euclidean Distance:* Not ideal for sparse set-based data.
+  * *Manhattan Distance:* Designed primarily for numerical attributes.
+  * *Hamming Distance:* Requires aligned positions.
+
+* **Correct Answer:** **Jaccard Coefficient**
+
+> [!TIP]
+> **Explanation:**
+>
+> Purchase histories often contain many absent items. The Jaccard Coefficient focuses only on shared purchases:
+>
+> $$
+> J(A,B)=\frac{\text{Common Purchases}}{\text{Total Unique Purchases}}
+> $$
+
+## Question 37
+
+**Question:** If two vectors are orthogonal, what is their cosine similarity?
+
+* **Eliminated Options:**
+
+  * *1:* Indicates identical direction.
+  * *0.5:* Represents partial similarity.
+  * *-1:* Indicates opposite directions.
+
+* **Correct Answer:** **0**
+
+> [!NOTE]
+> **Explanation:**
+>
+> Orthogonal vectors form an angle of:
+>
+> $$
+> \theta=90^\circ
+> $$
+>
+> Therefore:
+>
+> $$
+> \cos(90^\circ)=0
+> $$
+>
+> indicating no directional similarity.
+
+## Question 38
+
+**Question:** What is the primary disadvantage of Euclidean distance in high-dimensional datasets?
+
+* **Eliminated Options:**
+
+  * *It cannot handle numerical attributes:* Numerical data is its primary use case.
+  * *It becomes computationally impossible:* It remains computationally feasible.
+  * *It ignores attribute magnitudes:* Magnitude strongly influences Euclidean distance.
+
+* **Correct Answer:** **Distance values become less discriminative**
+
+> [!WARNING]
+> **Explanation:**
+>
+> In high-dimensional spaces:
+>
+> * Nearest and farthest distances become increasingly similar.
+> * Clustering and nearest-neighbor algorithms become less effective.
+>
+> This is known as the **Curse of Dimensionality**.
+
+## Question 39
+
+**Question:** Which of the following is an example of an asymmetric binary attribute?
+
+* **Eliminated Options:**
+
+  * *Gender (Male/Female):* Both states are equally important.
+  * *Pass/Fail in a classroom quiz:* Usually treated symmetrically.
+  * *Marital Status (Married/Single):* Both categories carry equal importance.
+
+* **Correct Answer:** **Whether a network intrusion attack occurred (Yes/No)**
+
+> [!NOTE]
+> **Explanation:**
+>
+> Intrusion events are rare and highly significant.
+>
+> A "Yes" carries much more information than a "No", making this an asymmetric binary attribute.
+
+## Question 40
+
+**Question:** Which distance measure calculates proximity using only the largest coordinate difference?
+
+* **Eliminated Options:**
+
+  * *Euclidean Distance:* Considers all coordinate differences.
+  * *Manhattan Distance:* Sums absolute differences.
+  * *Minkowski Distance ((p=2)):* Equivalent to Euclidean distance.
+
+* **Correct Answer:** **Supremum (Chebyshev) Distance**
+
+> [!IMPORTANT]
+> **Explanation:**
+>
+> The Chebyshev distance is:
+>
+> $$
+> d(x,y)=\max_i |x_i-y_i|
+> $$
+>
+> It is frequently used in applications where the maximum deviation is critical.
+
+## Question 41
+
+**Question:** Why is standardization often preferred over min-max normalization when extreme outliers exist?
+
+* **Eliminated Options:**
+
+  * *Standardization removes outliers:* Outliers still remain.
+  * *Standardization converts data into binary form:* It does not.
+  * *Standardization changes nominal attributes into numerical ones:* It only applies to numerical data.
+
+* **Correct Answer:** **Standardization is generally less sensitive to extreme values**
+
+> [!TIP]
+> **Explanation:**
+>
+> Standardization transforms data as:
+>
+> $$
+> z=\frac{x-\mu}{\sigma}
+> $$
+>
+> While outliers still affect the mean and standard deviation, min-max scaling can compress most observations into a narrow range when extreme values are present.
+
+## Question 42
+
+**Question:** In proximity analysis, what does a distance value of zero indicate?
+
+* **Eliminated Options:**
+
+  * *Complete dissimilarity:* This represents maximum separation.
+  * *Missing information:* Distance values do not indicate missingness.
+  * *Weak similarity:* Zero distance implies perfect similarity.
+
+* **Correct Answer:** **The objects are identical with respect to the measured attributes**
+
+> [!NOTE]
+> **Explanation:**
+>
+> For most distance metrics:
+>
+> $$
+> d(x,y)=0
+> $$
+>
+> means:
+>
+> $$
+> x=y
+> $$
+>
+> for all considered dimensions.
+
+## Question 43
+
+**Question:** Which of the following algorithms directly depends on proximity computations to classify unseen observations?
+
+* **Eliminated Options:**
+
+  * *Naive Bayes:* Uses probability distributions.
+  * *Decision Trees:* Use recursive splitting rules.
+  * *Apriori:* Mines association rules.
+
+* **Correct Answer:** **K-Nearest Neighbors (KNN)**
+
+> [!IMPORTANT]
+> **Explanation:**
+>
+> KNN classifies a new observation by:
+>
+> 1. Calculating distances to training observations.
+> 2. Selecting the nearest (k) neighbors.
+> 3. Assigning the majority class among neighbors.
+>
+> Distance computation is the foundation of KNN.
+
+## Question 44
+
+**Question:** Which similarity measure is most appropriate when comparing sparse binary vectors containing many zeros?
+
+* **Eliminated Options:**
+
+  * *Simple Matching Coefficient:* Gives equal importance to 0-0 matches.
+  * *Euclidean Distance:* Not ideal for sparse binary data.
+  * *Pearson Correlation:* Intended for continuous variables.
+
+* **Correct Answer:** **Jaccard Coefficient**
+
+> [!NOTE]
+> **Explanation:**
+>
+> Sparse datasets contain many absent features. The Jaccard Coefficient ignores mutual absences:
+>
+> $$
+> J=\frac{M_{11}}{M_{11}+M_{10}+M_{01}}
+> $$
+>
+> making it especially useful for recommendation systems and market basket analysis.
+
+## Question 45
+
+**Question:** Why is proximity analysis considered fundamental in data mining?
+
+* **Eliminated Options:**
+
+  * *It automatically cleans data:* Data cleaning is a separate preprocessing task.
+  * *It eliminates the need for feature engineering:* Feature engineering remains essential.
+  * *It guarantees perfect predictions:* No analytical technique provides such guarantees.
+
+* **Correct Answer:** **Many mining algorithms rely on measuring similarity or dissimilarity between objects**
+
+> [!IMPORTANT]
+> **Explanation:**
+>
+> Proximity measures underpin numerous data mining techniques, including:
+>
+> * Clustering
+> * Classification
+> * Recommendation Systems
+> * Outlier Detection
+> * Information Retrieval
+>
+> Without a way to quantify similarity or distance, many machine learning algorithms cannot operate effectively.
