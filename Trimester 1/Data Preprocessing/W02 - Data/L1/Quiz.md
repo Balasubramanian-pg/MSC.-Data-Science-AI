@@ -76,6 +76,81 @@ A dataset representing a social network, where the primary focus is on the frien
 
 <img width="563" height="610" alt="image" src="https://github.com/user-attachments/assets/2b37efb4-ec11-46e0-972e-7be51663e4a0" />
 
+# Question 4
+
+Which two of the following attributes are examples of quantitative (numeric) data? Select all that apply.
+
+## Options
+
+* The number of items in a customer's shopping cart
+* A student's grade (e.g., 'A', 'B', 'C')
+* A person's eye colour (e.g., 'Blue', 'Brown', 'Green')
+* The temperature in Celsius
+
+## Answer
+
+✅ **The number of items in a customer's shopping cart**
+✅ **The temperature in Celsius**
+
+> [!NOTE]
+> **Reason**
+>
+> **Quantitative data** represents measurable numeric quantities on which mathematical operations can be performed.
+>
+> * **Number of items in a shopping cart** → Quantitative (discrete numeric data)
+> * **Temperature in Celsius** → Quantitative (continuous numeric data)
+> * **Student grades ('A', 'B', 'C')** → Categorical ordinal data
+> * **Eye colour** → Categorical nominal data
+
+# Question 5
+
+Raw, unorganised facts and figures, such as a list of student names and final scores, are considered "knowledge."
+
+## Options
+
+* True
+* False
+
+## Answer
+
+✅ **False**
+
+> [!NOTE]
+> **Reason**
+>
+> Raw, unprocessed facts and figures are referred to as **data**, not knowledge.
+>
+> The hierarchy is typically:
+>
+> * **Data** → Raw facts and observations
+> * **Information** → Processed and organized data
+> * **Knowledge** → Insights, understanding, and actionable interpretation derived from information
+
+# Question 6
+
+An attribute such as customer satisfaction rated on a scale of {Very Dissatisfied, Dissatisfied, Neutral, Satisfied, Very Satisfied} is an example of what type of attribute?
+
+## Options
+
+* Ratio
+* Interval
+* Ordinal
+* Nominal
+
+## Answer
+
+✅ **Ordinal**
+
+> [!NOTE]
+> **Reason**
+>
+> **Ordinal attributes** represent categories that have a meaningful order or ranking, but the differences between adjacent categories are not necessarily equal or measurable.
+>
+> In the satisfaction scale:
+>
+> **Very Dissatisfied < Dissatisfied < Neutral < Satisfied < Very Satisfied**
+>
+> The categories have a clear ordering, making this an **ordinal** attribute.
 
 <img width="573" height="637" alt="image" src="https://github.com/user-attachments/assets/c581dc66-4b5a-4967-99ca-bf4df05cd085" />
 
