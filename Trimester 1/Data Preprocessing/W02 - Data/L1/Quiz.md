@@ -227,3 +227,28 @@ Which of the following best describes the relationship between an object and its
 
 
 <img width="575" height="219" alt="image" src="https://github.com/user-attachments/assets/0df8da0c-25c0-4269-b773-218f4219cbb9" />
+
+# Question 10
+
+What is the key difference between an interval attribute and a ratio attribute?
+
+## Options
+
+* The difference between values is meaningful for ratio attributes but not for interval attributes.
+* Interval attributes have order, while ratio attributes do not.
+* Interval attributes are qualitative, while ratio attributes are quantitative.
+* Ratio attributes have a true zero point, while interval attributes do not.
+
+## Answer
+
+✅ **Ratio attributes have a true zero point, while interval attributes do not.**
+
+> [!NOTE]
+> **Reason**
+>
+> Both **interval** and **ratio** attributes are quantitative and have meaningful differences between values. The crucial distinction is the presence of a **true (absolute) zero**.
+>
+> * **Interval attributes** have an arbitrary zero point. Example: **Temperature in Celsius**. A temperature of 0°C does not mean the absence of temperature.
+> * **Ratio attributes** have a true zero, indicating the complete absence of the measured quantity. Example: **Weight, Height, Age, Income**.
+>
+> Because ratio attributes have a true zero, statements such as "twice as much" are meaningful for ratio data but not for interval data.
