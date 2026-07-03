@@ -298,3 +298,310 @@ Why is improving data quality important before building a machine learning model
 > **Reason**
 >
 > Machine learning models learn directly from the data they are given. Poor-quality data containing errors, duplicates, missing values, inconsistencies, or noise can lead to biased models, poor predictions, and unreliable business decisions. Improving data quality establishes a strong foundation for effective modeling.
+
+# Question 21
+
+Which of the following is the best definition of data cleaning?
+
+## Options
+
+* Compressing large datasets to save storage space.
+* Identifying and correcting errors, inconsistencies, and inaccuracies in data.
+* Encrypting sensitive information before storage.
+* Visualizing data using charts.
+
+## Answer
+
+✅ **Identifying and correcting errors, inconsistencies, and inaccuracies in data.**
+
+> [!NOTE]
+> **Reason**
+>
+> **Data cleaning** is the process of improving data quality by identifying and correcting issues such as missing values, duplicate records, inconsistent formats, invalid values, and noisy observations before analysis.
+
+# Question 22
+
+Which of the following is an example of an invalid data value?
+
+## Options
+
+* Age = 28
+* Salary = $75,000
+* Gender = "Unknown"
+* Month = 15
+
+## Answer
+
+✅ **Month = 15**
+
+> [!NOTE]
+> **Reason**
+>
+> Months can only have values from **1 to 12**. A value of **15** violates domain constraints, making it an example of invalid data.
+
+# Question 23
+
+Which of the following is most likely to introduce duplicate records?
+
+## Options
+
+* Feature Scaling
+* Merging customer data from multiple CRM systems
+* Standardizing numerical variables
+* Applying PCA
+
+## Answer
+
+✅ **Merging customer data from multiple CRM systems**
+
+> [!NOTE]
+> **Reason**
+>
+> When multiple systems contain records for the same customer, duplicate records can appear unless entity matching and deduplication techniques are applied.
+
+# Question 24
+
+What is the primary objective of outlier detection?
+
+## Options
+
+* Increase the number of records
+* Identify observations that differ significantly from the majority
+* Normalize all numerical variables
+* Remove every extreme value automatically
+
+## Answer
+
+✅ **Identify observations that differ significantly from the majority**
+
+> [!NOTE]
+> **Reason**
+>
+> Outlier detection aims to identify unusual observations that may represent errors, fraud, rare events, or important business cases. Detection does not necessarily imply removal.
+
+# Question 25
+
+Which of the following is an example of inconsistent data?
+
+## Options
+
+* A customer age of 42
+* The same customer recorded as "Male" in one system and "Female" in another
+* A missing phone number
+* A sales amount of $250
+
+## Answer
+
+✅ **The same customer recorded as "Male" in one system and "Female" in another**
+
+> [!NOTE]
+> **Reason**
+>
+> **Consistency** requires that the same information be represented uniformly across systems. Conflicting values for the same entity indicate inconsistent data.
+
+# Question 26
+
+Which statistical measure is commonly used to identify outliers using the IQR method?
+
+## Options
+
+* Mean
+* Variance
+* Interquartile Range
+* Standard Error
+
+## Answer
+
+✅ **Interquartile Range**
+
+> [!NOTE]
+> **Reason**
+>
+> The **IQR method** identifies outliers using:
+>
+> * Lower Bound = Q1 − 1.5 × IQR
+> * Upper Bound = Q3 + 1.5 × IQR
+>
+> Values outside these limits are considered potential outliers.
+
+# Question 27
+
+Which of the following is a possible consequence of poor data quality?
+
+## Options
+
+* Better predictive accuracy
+* Faster model training with improved results
+* Incorrect business decisions
+* Reduced need for preprocessing
+
+## Answer
+
+✅ **Incorrect business decisions**
+
+> [!NOTE]
+> **Reason**
+>
+> Poor-quality data leads to unreliable analyses, inaccurate models, and misleading reports. Organizations may make costly decisions based on incorrect or incomplete information.
+
+# Question 28
+
+Which of the following best describes data validation?
+
+## Options
+
+* Compressing datasets
+* Ensuring data satisfies predefined rules and constraints
+* Removing all duplicate records
+* Performing feature engineering
+
+## Answer
+
+✅ **Ensuring data satisfies predefined rules and constraints**
+
+> [!NOTE]
+> **Reason**
+>
+> **Data validation** checks whether data conforms to business rules, acceptable ranges, formats, and logical constraints before it is used for analysis.
+
+# Question 29
+
+Which of the following techniques is commonly used to replace missing numerical values?
+
+## Options
+
+* Mean Imputation
+* Tokenization
+* One-Hot Encoding
+* Min-Max Scaling
+
+## Answer
+
+✅ **Mean Imputation**
+
+> [!NOTE]
+> **Reason**
+>
+> One common approach for handling missing numerical values is **mean imputation**, where missing entries are replaced with the average of the available values.
+>
+> Depending on the dataset, median or model-based imputation may sometimes be more appropriate.
+
+# Question 30
+
+Why should duplicate records be removed before performing statistical analysis?
+
+## Options
+
+* They reduce the number of features.
+* They may bias summary statistics and model results.
+* They automatically create missing values.
+* They convert numerical data into categorical data.
+
+## Answer
+
+✅ **They may bias summary statistics and model results.**
+
+> [!NOTE]
+> **Reason**
+>
+> Duplicate records can artificially inflate counts, distort averages, bias probability estimates, and negatively affect machine learning models. Removing duplicates helps ensure that analyses accurately represent the underlying population.
+
+# Question 31
+
+Which of the following is an example of timely data?
+
+## Options
+
+* Last year's stock prices used for today's intraday trading decisions.
+* Yesterday's weather forecast used for today's planning.
+* Real-time inventory levels used for order fulfillment.
+* A census collected twenty years ago.
+
+## Answer
+
+✅ **Real-time inventory levels used for order fulfillment.**
+
+> [!NOTE]
+> **Reason**
+>
+> **Timeliness** refers to data being current and available when needed. Real-time inventory enables accurate order processing and prevents overselling.
+
+# Question 32
+
+What is the primary purpose of data profiling?
+
+## Options
+
+* Encrypt sensitive information
+* Understand the structure, quality, and characteristics of data
+* Train machine learning models
+* Visualize business KPIs
+
+## Answer
+
+✅ **Understand the structure, quality, and characteristics of data**
+
+> [!NOTE]
+> **Reason**
+>
+> **Data profiling** examines datasets to identify missing values, unique values, distributions, inconsistencies, duplicates, and potential quality issues before cleaning and analysis.
+
+# Question 33
+
+Which of the following best describes noisy data?
+
+## Options
+
+* Data that follows a perfect pattern
+* Random errors or unwanted variations in measurements
+* Missing observations
+* Duplicate customer records
+
+## Answer
+
+✅ **Random errors or unwanted variations in measurements**
+
+> [!NOTE]
+> **Reason**
+>
+> Noise represents unwanted fluctuations introduced through measurement errors, transmission issues, or sensor inaccuracies. Excessive noise can obscure meaningful patterns in the data.
+
+# Question 34
+
+A customer's email address is stored as "john@gmail" instead of "[john@gmail.com](mailto:john@gmail.com)". This is primarily an example of:
+
+## Options
+
+* Outlier
+* Duplicate Data
+* Validity Issue
+* Timeliness Issue
+
+## Answer
+
+✅ **Validity Issue**
+
+> [!NOTE]
+> **Reason**
+>
+> The email does not conform to the expected format defined by business rules. Although a value exists, it is invalid because it fails validation requirements.
+
+# Question 35
+
+Which statement best summarizes the relationship between data quality and machine learning performance?
+
+## Options
+
+* Model performance depends only on algorithm selection.
+* High-quality data is essential for building reliable and accurate machine learning models.
+* Data quality only affects visualization.
+* Data quality becomes important only after deployment.
+
+## Answer
+
+✅ **High-quality data is essential for building reliable and accurate machine learning models.**
+
+> [!NOTE]
+> **Reason**
+>
+> The principle **"Garbage In, Garbage Out (GIGO)"** applies directly to machine learning. Models trained on inaccurate, inconsistent, incomplete, or noisy data are likely to produce unreliable predictions, regardless of how advanced the algorithm is.
