@@ -237,3 +237,352 @@ Why are identifiers such as Student ID or Employee ID generally not considered u
 > Identifiers such as **Student ID**, **Customer ID**, or **Employee ID** are designed to uniquely distinguish records rather than describe meaningful characteristics.
 >
 > Since these values generally have no relationship to the target variable, they are typically excluded from predictive modeling unless they encode additional business information.
+
+# Question 21
+
+Which type of data is best represented using a document data model?
+
+## Options
+
+* Bank account balances
+* Product inventory counts
+* News articles and research papers
+* Student GPA records
+
+## Answer
+
+✅ **News articles and research papers**
+
+> [!NOTE]
+> **Reason**
+>
+> **Document data** consists of textual information where each object is an entire document rather than a fixed set of attributes.
+>
+> Examples include:
+>
+> * News articles
+> * Research papers
+> * Books
+> * Emails
+
+# Question 22
+
+Which of the following is an example of interval data?
+
+## Options
+
+* Weight in kilograms
+* Temperature in Celsius
+* Number of children
+* Annual Salary
+
+## Answer
+
+✅ **Temperature in Celsius**
+
+> [!NOTE]
+> **Reason**
+>
+> Interval data has equal intervals between values but **does not have a true zero**.
+>
+> For example:
+>
+> * 20°C is 10 degrees warmer than 10°C.
+> * However, 20°C is **not twice as hot** as 10°C because zero is arbitrary.
+
+# Question 23
+
+A dataset where each row represents a customer and each column represents a feature is commonly known as a:
+
+## Options
+
+* Graph
+* Transaction Set
+* Data Matrix
+* Decision Tree
+
+## Answer
+
+✅ **Data Matrix**
+
+> [!NOTE]
+> **Reason**
+>
+> A **data matrix** organizes information into rows and columns.
+>
+> * Rows represent objects or observations.
+> * Columns represent attributes or features.
+>
+> This is the most common representation used in machine learning.
+
+# Question 24
+
+Which of the following is an example of continuous quantitative data?
+
+## Options
+
+* Number of students in a classroom
+* Number of cars owned
+* Temperature measured throughout the day
+* Number of books on a shelf
+
+## Answer
+
+✅ **Temperature measured throughout the day**
+
+> [!NOTE]
+> **Reason**
+>
+> **Continuous data** can take any value within a range.
+>
+> Temperature may be measured as 22.3°C, 22.35°C, or 22.351°C, making it a continuous quantitative variable.
+
+# Question 25
+
+Which of the following is an example of discrete quantitative data?
+
+## Options
+
+* Weight
+* Height
+* Number of customers entering a store
+* Rainfall
+
+## Answer
+
+✅ **Number of customers entering a store**
+
+> [!NOTE]
+> **Reason**
+>
+> **Discrete quantitative data** consists of countable values.
+>
+> Customer count can only be whole numbers such as 10, 11, or 12 and cannot take fractional values.
+
+# Question 26
+
+Which statement about graph data is TRUE?
+
+## Options
+
+* Graph data cannot represent relationships.
+* Graph data stores only numerical values.
+* Graph data explicitly models entities and their relationships.
+* Graph data is always stored in spreadsheets.
+
+## Answer
+
+✅ **Graph data explicitly models entities and their relationships.**
+
+> [!NOTE]
+> **Reason**
+>
+> Graph data consists of:
+>
+> * **Nodes** representing entities.
+> * **Edges** representing relationships.
+>
+> This representation is widely used in social networks, recommendation systems, transportation networks, and fraud detection.
+
+# Question 27
+
+Which of the following is NOT considered a quantitative attribute?
+
+## Options
+
+* Annual Income
+* Age
+* Product Category
+* Distance Travelled
+
+## Answer
+
+✅ **Product Category**
+
+> [!NOTE]
+> **Reason**
+>
+> **Product Category** contains labels such as Electronics, Furniture, or Clothing. These labels represent categories rather than measurable numerical quantities, making the attribute **nominal**.
+
+# Question 28
+
+A supermarket wants to discover which products are frequently purchased together. Which data representation is most appropriate?
+
+## Options
+
+* Graph Data
+* Transaction Data
+* Time Series Data
+* Image Data
+
+## Answer
+
+✅ **Transaction Data**
+
+> [!NOTE]
+> **Reason**
+>
+> Each shopping basket is a transaction containing multiple purchased items.
+>
+> Transaction data is commonly analyzed using **association rule mining** and **market basket analysis** to discover purchasing patterns.
+
+# Question 29
+
+Which of the following is an example of time-series (ordered) data?
+
+## Options
+
+* Monthly electricity consumption
+* Employee names
+* Customer addresses
+* Product descriptions
+
+## Answer
+
+✅ **Monthly electricity consumption**
+
+> [!NOTE]
+> **Reason**
+>
+> Time-series data consists of observations collected over time where the sequence matters.
+>
+> Monthly electricity consumption is naturally ordered by time and is commonly analyzed for trends and forecasting.
+
+# Question 30
+
+Which attribute type best represents blood groups (A, B, AB, O)?
+
+## Options
+
+* Ratio
+* Interval
+* Ordinal
+* Nominal
+
+## Answer
+
+✅ **Nominal**
+
+> [!NOTE]
+> **Reason**
+>
+> Blood groups are categories without any natural ordering.
+>
+> Since no blood group is greater or smaller than another, they are classified as **nominal attributes**.
+
+# Question 31
+
+Which of the following is an example of a ratio attribute?
+
+## Options
+
+* Calendar Year
+* Temperature in Celsius
+* Distance between two cities
+* Customer Satisfaction Rating
+
+## Answer
+
+✅ **Distance between two cities**
+
+> [!NOTE]
+> **Reason**
+>
+> Distance has a **true zero**, meaning zero distance indicates that two locations coincide.
+>
+> Ratios are meaningful, so a distance of 200 km is twice that of 100 km.
+
+# Question 32
+
+Which statement about record data is TRUE?
+
+## Options
+
+* Record data focuses on relationships between entities.
+* Record data stores objects independently using a fixed set of attributes.
+* Record data only contains text documents.
+* Record data cannot be stored in relational databases.
+
+## Answer
+
+✅ **Record data stores objects independently using a fixed set of attributes.**
+
+> [!NOTE]
+> **Reason**
+>
+> In **record data**, each row represents an independent object described by the same set of attributes.
+>
+> Relational databases are the most common implementation of record-based data.
+
+# Question 33
+
+Why is choosing the correct attribute type important in data analysis?
+
+## Options
+
+* It determines the programming language to use.
+* It helps select appropriate statistical methods and machine learning algorithms.
+* It automatically improves data quality.
+* It reduces database storage requirements.
+
+## Answer
+
+✅ **It helps select appropriate statistical methods and machine learning algorithms.**
+
+> [!NOTE]
+> **Reason**
+>
+> Different attribute types require different analytical techniques.
+>
+> For example:
+>
+> * Correlation measures depend on variable types.
+> * Distance metrics vary for categorical and numerical data.
+> * Machine learning preprocessing differs for nominal, ordinal, interval, and ratio variables.
+
+# Question 34
+
+Which of the following best describes a feature in machine learning?
+
+## Options
+
+* A prediction generated by a model
+* An attribute used as input to a machine learning algorithm
+* A collection of multiple datasets
+* The final evaluation metric
+
+## Answer
+
+✅ **An attribute used as input to a machine learning algorithm**
+
+> [!NOTE]
+> **Reason**
+>
+> A **feature** is simply an attribute or variable used by a machine learning model to learn patterns from data.
+>
+> Features become the model's input, while the target variable represents the desired output.
+
+# Question 35
+
+A company stores customer information in a table containing Customer ID, Age, Income, and Purchase Amount. How many objects are represented if the table contains 5,000 rows?
+
+## Options
+
+* 4
+* 5,000
+* 20,000
+* Cannot be determined
+
+## Answer
+
+✅ **5,000**
+
+> [!NOTE]
+> **Reason**
+>
+> In a tabular dataset:
+>
+> * **Rows** represent **objects (records or instances)**.
+> * **Columns** represent **attributes (features)**.
+>
+> Therefore, a table with **5,000 rows** contains **5,000 distinct objects**, regardless of the number of attributes.
