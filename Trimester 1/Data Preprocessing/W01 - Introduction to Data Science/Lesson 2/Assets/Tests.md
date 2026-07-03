@@ -200,4 +200,207 @@ Which of the following best describes Big Data?
 >
 > **Big Data** refers to datasets characterized by high **Volume, Velocity, Variety, Veracity, and Value**. Traditional data processing tools are often insufficient, requiring distributed computing frameworks such as Hadoop and Spark.
 
+# Question 11
+
+Which of the following best describes the difference between Data Science and Business Intelligence (BI)?
+
+## Options
+
+* Data Science only creates dashboards, while BI builds machine learning models.
+* BI focuses on descriptive analytics, while Data Science also includes predictive and prescriptive analytics.
+* BI is used only for financial data.
+* There is no difference between Data Science and BI.
+
+## Answer
+
+✅ **BI focuses on descriptive analytics, while Data Science also includes predictive and prescriptive analytics.**
+
+> [!NOTE]
+> **Reason**
+>
+> Business Intelligence primarily answers **"What happened?"** through reports and dashboards. Data Science extends this by answering **"Why did it happen?", "What will happen?", and "What should we do?"** using statistical analysis and machine learning.
+
+# Question 12
+
+Which of the following is an example of predictive analytics?
+
+## Options
+
+* Creating a monthly sales report
+* Forecasting next month's product demand
+* Counting the number of transactions completed yesterday
+* Displaying today's website traffic
+
+## Answer
+
+✅ **Forecasting next month's product demand**
+
+> [!NOTE]
+> **Reason**
+>
+> Predictive analytics uses historical data to estimate future outcomes. Forecasting future product demand is a classic predictive analytics task.
+
+# Question 13
+
+Why is data preprocessing considered one of the most important stages in a Data Science project?
+
+## Options
+
+* It guarantees perfect model accuracy.
+* It improves data quality before modeling.
+* It automatically selects the best algorithm.
+* It eliminates the need for feature engineering.
+
+## Answer
+
+✅ **It improves data quality before modeling.**
+
+> [!NOTE]
+> **Reason**
+>
+> Machine learning models are only as good as the data they learn from. Data preprocessing handles missing values, duplicates, inconsistent formats, and noisy observations, improving the quality of the input data and the reliability of the resulting models.
+
+# Question 14
+
+Which of the following best describes descriptive analytics?
+
+## Options
+
+* Predicting future customer purchases
+* Understanding what has already happened
+* Recommending the best business decision automatically
+* Building neural networks
+
+## Answer
+
+✅ **Understanding what has already happened**
+
+> [!NOTE]
+> **Reason**
+>
+> Descriptive analytics summarizes historical data through reports, dashboards, and visualizations to answer questions about past performance.
+
+# Question 15
+
+A hospital uses patient history to predict whether a patient is likely to be readmitted within 30 days. This is an example of:
+
+## Options
+
+* Descriptive analytics
+* Predictive analytics
+* Diagnostic analytics
+* Data visualization
+
+## Answer
+
+✅ **Predictive analytics**
+
+> [!NOTE]
+> **Reason**
+>
+> Predicting future patient readmissions involves learning patterns from historical data to estimate future outcomes, making it a predictive analytics problem.
+
+# Question 16
+
+Which of the following best represents the output of a Data Science project?
+
+## Options
+
+* Only a trained machine learning model
+* Only a database
+* Actionable insights that support business decisions
+* A programming language
+
+## Answer
+
+✅ **Actionable insights that support business decisions**
+
+> [!NOTE]
+> **Reason**
+>
+> The ultimate goal of Data Science is not merely to build models but to generate insights that help organizations make better decisions and solve real-world problems.
+
+# Question 17
+
+Which of the following tasks would most likely require Natural Language Processing (NLP)?
+
+## Options
+
+* Predicting house prices
+* Detecting fraudulent transactions
+* Classifying customer support emails
+* Forecasting stock prices
+
+## Answer
+
+✅ **Classifying customer support emails**
+
+> [!NOTE]
+> **Reason**
+>
+> Customer support emails contain unstructured text. NLP techniques are specifically designed to process, understand, and analyze human language.
+
+# Question 18
+
+Which of the following best describes artificial intelligence (AI)?
+
+## Options
+
+* A database technology for storing structured data
+* The broader field focused on creating systems capable of performing tasks requiring human intelligence
+* A visualization technique for large datasets
+* A statistical method for finding correlations
+
+## Answer
+
+✅ **The broader field focused on creating systems capable of performing tasks requiring human intelligence**
+
+> [!NOTE]
+> **Reason**
+>
+> Artificial Intelligence is the overarching field that aims to build systems capable of reasoning, learning, perception, decision-making, and problem-solving. Machine Learning is one branch of AI.
+
+# Question 19
+
+Which of the following best illustrates the relationship between Artificial Intelligence, Machine Learning, and Deep Learning?
+
+## Options
+
+* Deep Learning contains Artificial Intelligence.
+* Artificial Intelligence is a subset of Deep Learning.
+* Deep Learning is a subset of Machine Learning, which is a subset of Artificial Intelligence.
+* Machine Learning and Artificial Intelligence are unrelated fields.
+
+## Answer
+
+✅ **Deep Learning is a subset of Machine Learning, which is a subset of Artificial Intelligence.**
+
+> [!NOTE]
+> **Reason**
+>
+> The hierarchy is:
+>
+> * **Artificial Intelligence (AI)** is the broadest field.
+> * **Machine Learning (ML)** is a subset of AI that enables systems to learn from data.
+> * **Deep Learning (DL)** is a specialized subset of ML that uses multi-layer neural networks.
+
+# Question 20
+
+Why is communication considered an essential skill for Data Scientists?
+
+## Options
+
+* It replaces technical expertise.
+* It allows models to train faster.
+* It enables complex analytical findings to be explained clearly to stakeholders.
+* It automatically improves prediction accuracy.
+
+## Answer
+
+✅ **It enables complex analytical findings to be explained clearly to stakeholders.**
+
+> [!NOTE]
+> **Reason**
+>
+> Even the most accurate model has little value if its results cannot be understood or acted upon. Data Scientists must communicate technical findings clearly so that business stakeholders can make informed decisions based on the analysis.
 
