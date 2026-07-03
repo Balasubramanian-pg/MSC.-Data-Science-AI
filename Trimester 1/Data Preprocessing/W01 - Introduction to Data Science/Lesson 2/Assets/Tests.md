@@ -404,3 +404,206 @@ Why is communication considered an essential skill for Data Scientists?
 >
 > Even the most accurate model has little value if its results cannot be understood or acted upon. Data Scientists must communicate technical findings clearly so that business stakeholders can make informed decisions based on the analysis.
 
+# Question 21
+
+Which of the following best describes prescriptive analytics?
+
+## Options
+
+* It summarizes historical trends.
+* It predicts future outcomes only.
+* It recommends actions to achieve desired outcomes.
+* It stores data in a relational database.
+
+## Answer
+
+✅ **It recommends actions to achieve desired outcomes.**
+
+> [!NOTE]
+> **Reason**
+>
+> **Prescriptive analytics** goes beyond predicting what is likely to happen by recommending the best course of action. It combines predictive models with optimization, simulation, or business rules to support decision-making.
+
+# Question 22
+
+A company wants to understand why customer churn increased over the past six months. Which type of analytics is most appropriate?
+
+## Options
+
+* Descriptive Analytics
+* Predictive Analytics
+* Diagnostic Analytics
+* Prescriptive Analytics
+
+## Answer
+
+✅ **Diagnostic Analytics**
+
+> [!NOTE]
+> **Reason**
+>
+> **Diagnostic analytics** answers the question **"Why did it happen?"** by identifying root causes and relationships within historical data. It often involves drill-down analysis, correlations, and hypothesis testing.
+
+# Question 23
+
+Which of the following best describes the relationship between data, information, and knowledge?
+
+## Options
+
+* Knowledge → Information → Data
+* Information → Knowledge → Data
+* Data → Information → Knowledge
+* Data → Knowledge → Information
+
+## Answer
+
+✅ **Data → Information → Knowledge**
+
+> [!NOTE]
+> **Reason**
+>
+> The hierarchy is:
+>
+> * **Data:** Raw facts and observations.
+> * **Information:** Processed and organized data with context.
+> * **Knowledge:** Insights and understanding derived from information that support decision-making.
+
+# Question 24
+
+Which of the following is an example of descriptive analytics?
+
+## Options
+
+* Predicting next quarter's sales
+* Identifying why sales declined
+* Displaying last month's sales dashboard
+* Optimizing inventory levels automatically
+
+## Answer
+
+✅ **Displaying last month's sales dashboard**
+
+> [!NOTE]
+> **Reason**
+>
+> Descriptive analytics summarizes historical data through reports, dashboards, and visualizations to answer **"What happened?"** without making predictions or recommendations.
+
+# Question 25
+
+Which characteristic of Big Data refers to the speed at which data is generated and processed?
+
+## Options
+
+* Volume
+* Variety
+* Velocity
+* Veracity
+
+## Answer
+
+✅ **Velocity**
+
+> [!NOTE]
+> **Reason**
+>
+> The **Velocity** characteristic describes how rapidly data is generated, transmitted, and processed. Examples include social media streams, stock market transactions, and IoT sensor data.
+
+# Question 26
+
+Which of the following is an example of semi-structured data?
+
+## Options
+
+* Relational database tables
+* JSON documents
+* JPEG images
+* Audio recordings
+
+## Answer
+
+✅ **JSON documents**
+
+> [!NOTE]
+> **Reason**
+>
+> **Semi-structured data** contains organizational elements such as tags or key-value pairs but does not follow the rigid schema of relational databases. JSON and XML are common examples.
+
+# Question 27
+
+Which of the following is NOT typically considered a responsibility of a Data Scientist?
+
+## Options
+
+* Building predictive models
+* Cleaning and preparing data
+* Installing computer hardware components
+* Communicating analytical findings
+
+## Answer
+
+✅ **Installing computer hardware components**
+
+> [!NOTE]
+> **Reason**
+>
+> Data Scientists focus on collecting, cleaning, analyzing, modeling, and communicating insights from data. Installing or maintaining computer hardware is generally the responsibility of IT or hardware engineers.
+
+# Question 28
+
+Which of the following best describes data mining?
+
+## Options
+
+* The physical process of collecting data using sensors
+* The process of discovering useful patterns and relationships from large datasets
+* Creating dashboards for business executives
+* Designing relational database schemas
+
+## Answer
+
+✅ **The process of discovering useful patterns and relationships from large datasets**
+
+> [!NOTE]
+> **Reason**
+>
+> **Data mining** applies statistical and machine learning techniques to identify hidden patterns, relationships, trends, and anomalies within large datasets. It is a core step in the KDD process.
+
+# Question 29
+
+Which of the following statements about Data Science is TRUE?
+
+## Options
+
+* Data Science only deals with structured data.
+* Data Science focuses only on machine learning algorithms.
+* Data Science combines statistics, programming, and domain expertise to solve problems.
+* Data Science eliminates the need for human decision-making.
+
+## Answer
+
+✅ **Data Science combines statistics, programming, and domain expertise to solve problems.**
+
+> [!NOTE]
+> **Reason**
+>
+> Effective Data Science requires expertise across multiple disciplines. Statistics provides analytical methods, programming enables implementation, and domain knowledge ensures that solutions address real business needs.
+
+# Question 30
+
+A retail company wants to recommend products based on a customer's previous purchases and browsing history. Which Data Science application is this?
+
+## Options
+
+* Recommendation System
+* Database Normalization
+* Data Compression
+* ETL Pipeline
+
+## Answer
+
+✅ **Recommendation System**
+
+> [!NOTE]
+> **Reason**
+>
+> A **recommendation system** analyzes customer behavior, purchase history, and preferences to suggest products that a customer is likely to purchase. These systems are widely used by companies such as Amazon, Netflix, and Spotify to personalize user experiences.
