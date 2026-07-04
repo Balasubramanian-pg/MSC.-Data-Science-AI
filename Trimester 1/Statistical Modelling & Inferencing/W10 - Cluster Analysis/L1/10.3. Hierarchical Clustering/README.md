@@ -10,3 +10,5 @@ The transcript you provided is mostly accurate, but it glosses over a critical t
 ## [2. Intuition: The Corporate Merger](./2.%20Intuition%20-%20The%20Corporate%20Merger.md)
 
 ## [3 & 4. Mathematical Explanation & Formula Breakdowns](./3%20%26%204.%20Mathematical%20Explanation%20%26%20Formula%20Breakdowns.md)
+
+## [5. Step-by-Step Derivations (Agglomerative Process)](./5.%20Step-by-Step%20Derivations%20%28Agglomerative%20Process%29.md)
