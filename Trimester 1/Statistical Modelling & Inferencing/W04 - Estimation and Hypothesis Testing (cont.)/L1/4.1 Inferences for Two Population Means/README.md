@@ -6,3 +6,5 @@
 ## [4.1.2. The Critical Distinction: Independent vs Paired Samples](./4.1.2.%20The%20Critical%20Distinction%20-%20Independent%20vs%20Paired%20Samples.md)
 
 ## [4.1.3. Independent Samples](./4.1.3.%20Independent%20Samples.md)
+
+## [4.1.4. Hypotheses for Independent Samples](./4.1.4.%20Hypotheses%20for%20Independent%20Samples.md)
