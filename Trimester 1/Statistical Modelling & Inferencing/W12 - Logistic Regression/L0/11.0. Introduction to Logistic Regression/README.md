@@ -32,3 +32,5 @@ This document provides a rigorous technical analysis of binary response models. 
 ## [13. Interview-Style Insights](./13.%20Interview-Style%20Insights.md)
 
 ## [14. Edge Cases](./14.%20Edge%20Cases.md)
+
+## [15. Mental Models](./15.%20Mental%20Models.md)
