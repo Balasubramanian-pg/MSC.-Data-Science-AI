@@ -42,3 +42,5 @@ This document provides a rigorous technical analysis of Logistic Regression with
 ## [18. Performance/Computational Insights](./18.%20PerformanceComputational%20Insights.md)
 
 ## [19. Advanced Notes](./19.%20Advanced%20Notes.md)
+
+## [20. Final Takeaways](./20.%20Final%20Takeaways.md)
