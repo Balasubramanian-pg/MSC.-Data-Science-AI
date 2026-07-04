@@ -15,3 +15,5 @@
 ## [4.4.7. Hypotheses for the One-Sample Proportion Test](./4.4.7.%20Hypotheses%20for%20the%20One-Sample%20Proportion%20Test.md)
 
 ## [4.4.8. The One-Sample Z-Test Statistic](./4.4.8.%20The%20One-Sample%20Z-Test%20Statistic.md)
+
+## [4.4.9. Why the Standard Error Uses the Hypothesized Proportion](./4.4.9.%20Why%20the%20Standard%20Error%20Uses%20the%20Hypothesized%20Proportion.md)
