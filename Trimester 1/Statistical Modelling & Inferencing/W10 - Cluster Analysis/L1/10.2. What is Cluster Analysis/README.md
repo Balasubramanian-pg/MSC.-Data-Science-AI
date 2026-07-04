@@ -22,3 +22,5 @@ This document provides a rigorous technical analysis of Cluster Analysis. It est
 ## [9. Practical Engineering Examples](./9.%20Practical%20Engineering%20Examples.md)
 
 ## [10. Common Mistakes & Traps](./10.%20Common%20Mistakes%20%26%20Traps.md)
+
+## [11. Visual Intuition](./11.%20Visual%20Intuition.md)
