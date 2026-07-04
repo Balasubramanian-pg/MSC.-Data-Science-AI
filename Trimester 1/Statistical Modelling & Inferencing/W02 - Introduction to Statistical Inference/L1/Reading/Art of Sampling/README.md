@@ -57,3 +57,5 @@
 ## [6.4 Bayesian Estimation](./6.4%20Bayesian%20Estimation.md)
 
 ## [6.5 Estimator Properties Diagram](./6.5%20Estimator%20Properties%20Diagram.md)
+
+## [7.1 Definition and Interpretation](./7.1%20Definition%20and%20Interpretation.md)
