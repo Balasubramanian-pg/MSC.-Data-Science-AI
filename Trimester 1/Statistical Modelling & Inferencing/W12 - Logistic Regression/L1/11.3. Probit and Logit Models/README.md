@@ -20,3 +20,5 @@
 ## [8. Common Mistakes and Traps](./8.%20Common%20Mistakes%20and%20Traps.md)
 
 ## [9. Edge Cases: Complete Separation](./9.%20Edge%20Cases%20-%20Complete%20Separation.md)
+
+## [10. Practical Engineering Applications](./10.%20Practical%20Engineering%20Applications.md)
