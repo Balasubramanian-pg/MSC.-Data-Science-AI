@@ -61,3 +61,5 @@
 ## [7.1 Definition and Interpretation](./7.1%20Definition%20and%20Interpretation.md)
 
 ## [7.2 Confidence Intervals for the Mean](./7.2%20Confidence%20Intervals%20for%20the%20Mean.md)
+
+## [7.3 Confidence Intervals for Proportions](./7.3%20Confidence%20Intervals%20for%20Proportions.md)
