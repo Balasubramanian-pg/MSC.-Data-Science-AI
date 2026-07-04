@@ -15,3 +15,5 @@
 ## [8.0.7. Exponential Smoothing](./8.0.7.%20Exponential%20Smoothing.md)
 
 ## [8.0.8. Example of an Exponentially Smoothed Forecast](./8.0.8.%20Example%20of%20an%20Exponentially%20Smoothed%20Forecast.md)
+
+## [8.0.9. Structured Forecasting Process](./8.0.9.%20Structured%20Forecasting%20Process.md)
