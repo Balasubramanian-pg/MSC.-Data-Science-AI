@@ -26,3 +26,5 @@ If you use "ELBO" in a machine learning interview when talking about K-Means, yo
 ## [11 & 12. Visual Intuition & System Architecture](./11%20%26%2012.%20Visual%20Intuition%20%26%20System%20Architecture.md)
 
 ## [13 & 14. Real-World Applications & ML Connections](./13%20%26%2014.%20Real-World%20Applications%20%26%20ML%20Connections.md)
+
+## [15. Interview-Style Insights](./15.%20Interview-Style%20Insights.md)
