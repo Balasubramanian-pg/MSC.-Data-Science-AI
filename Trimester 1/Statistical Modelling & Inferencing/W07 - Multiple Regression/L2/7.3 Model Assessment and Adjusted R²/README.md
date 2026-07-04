@@ -25,3 +25,5 @@
 ## [7.3.12. Adjusted R-Squared as a Parsimony Metric](./7.3.12.%20Adjusted%20R-Squared%20as%20a%20Parsimony%20Metric.md)
 
 ## [7.3.13. Comparing R-Squared and Adjusted R-Squared](./7.3.13.%20Comparing%20R-Squared%20and%20Adjusted%20R-Squared.md)
+
+## [7.3.14. Connection to Machine Learning and Regularization](./7.3.14.%20Connection%20to%20Machine%20Learning%20and%20Regularization.md)
