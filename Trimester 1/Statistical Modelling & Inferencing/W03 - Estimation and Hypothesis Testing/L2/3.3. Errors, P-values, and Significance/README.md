@@ -21,3 +21,5 @@
 ## [3.3.10. The Decision Rule](./3.3.10.%20The%20Decision%20Rule.md)
 
 ## [3.3.11. Statistical Significance vs Practical Significance](./3.3.11.%20Statistical%20Significance%20vs%20Practical%20Significance.md)
+
+## [3.3.12. Effect Size](./3.3.12.%20Effect%20Size.md)
