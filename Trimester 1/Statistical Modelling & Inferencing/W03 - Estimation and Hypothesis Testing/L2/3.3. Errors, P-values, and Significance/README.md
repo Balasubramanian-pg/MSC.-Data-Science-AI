@@ -25,3 +25,5 @@
 ## [3.3.12. Effect Size](./3.3.12.%20Effect%20Size.md)
 
 ## [3.3.13. The Replication Crisis](./3.3.13.%20The%20Replication%20Crisis.md)
+
+## [3.3.14. Confidence Intervals vs P-Values](./3.3.14.%20Confidence%20Intervals%20vs%20P-Values.md)
