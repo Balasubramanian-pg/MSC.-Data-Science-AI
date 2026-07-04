@@ -41,3 +41,5 @@
 ## [4.5 Non-Probability Methods Comparison](./4.5%20Non-Probability%20Methods%20Comparison.md)
 
 ## [5.1 The Sampling Distribution](./5.1%20The%20Sampling%20Distribution.md)
+
+## [5.2 The Central Limit Theorem (CLT)](./5.2%20The%20Central%20Limit%20Theorem%20%28CLT%29.md)
