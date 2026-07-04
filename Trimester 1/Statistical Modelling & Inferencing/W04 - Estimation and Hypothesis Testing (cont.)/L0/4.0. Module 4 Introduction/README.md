@@ -19,3 +19,5 @@
 ## [4.0.9. Introduction to Categorical Data Analysis](./4.0.9.%20Introduction%20to%20Categorical%20Data%20Analysis.md)
 
 ## [4.0.10. Chi-Square Testing](./4.0.10.%20Chi-Square%20Testing.md)
+
+## [4.0.11. The Deep Structure Behind All These Methods](./4.0.11.%20The%20Deep%20Structure%20Behind%20All%20These%20Methods.md)
