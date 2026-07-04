@@ -23,3 +23,5 @@
 ## [10.1.11. Validation and Interpretation](./10.1.11.%20Validation%20and%20Interpretation.md)
 
 ## [10.1.12. Common Misinterpretations](./10.1.12.%20Common%20Misinterpretations.md)
+
+## [10.1.13. Conclusions](./10.1.13.%20Conclusions.md)
