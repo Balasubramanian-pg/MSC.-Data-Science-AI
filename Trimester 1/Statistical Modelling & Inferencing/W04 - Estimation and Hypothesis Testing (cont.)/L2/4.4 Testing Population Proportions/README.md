@@ -13,3 +13,5 @@
 ## [4.4.6. The One-Sample Z-Test for a Proportion](./4.4.6.%20The%20One-Sample%20Z-Test%20for%20a%20Proportion.md)
 
 ## [4.4.7. Hypotheses for the One-Sample Proportion Test](./4.4.7.%20Hypotheses%20for%20the%20One-Sample%20Proportion%20Test.md)
+
+## [4.4.8. The One-Sample Z-Test Statistic](./4.4.8.%20The%20One-Sample%20Z-Test%20Statistic.md)
