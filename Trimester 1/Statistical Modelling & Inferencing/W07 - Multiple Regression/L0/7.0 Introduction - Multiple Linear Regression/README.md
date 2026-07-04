@@ -11,3 +11,5 @@
 ## [7.0.5. Example of Multiple Regression Interpretation](./7.0.5.%20Example%20of%20Multiple%20Regression%20Interpretation.md)
 
 ## [7.0.6. Model Fit and the Coefficient of Determination](./7.0.6.%20Model%20Fit%20and%20the%20Coefficient%20of%20Determination.md)
+
+## [7.0.7. The Danger of Naive R-Squared and Overfitting](./7.0.7.%20The%20Danger%20of%20Naive%20R-Squared%20and%20Overfitting.md)
