@@ -5,3 +5,5 @@
 ## [Scenario 2: Population Standard Deviation is Unknown](./Scenario%202%20-%20Population%20Standard%20Deviation%20is%20Unknown.md)
 
 ## [Why Does the T-Distribution Have Heavier Tails?](./Why%20Does%20the%20T-Distribution%20Have%20Heavier%20Tails.md)
+
+## [Summary](./Summary.md)
