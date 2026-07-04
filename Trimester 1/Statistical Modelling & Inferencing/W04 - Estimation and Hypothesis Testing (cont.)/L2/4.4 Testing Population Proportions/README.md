@@ -21,3 +21,5 @@
 ## [4.4.10. Example of a One-Sample Z-Test](./4.4.10.%20Example%20of%20a%20One-Sample%20Z-Test.md)
 
 ## [4.4.11. Conditions for Validity](./4.4.11.%20Conditions%20for%20Validity.md)
+
+## [4.4.12. Why Small Counts Are Problematic](./4.4.12.%20Why%20Small%20Counts%20Are%20Problematic.md)
