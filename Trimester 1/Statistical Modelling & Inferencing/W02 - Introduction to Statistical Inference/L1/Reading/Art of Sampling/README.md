@@ -33,3 +33,5 @@
 ## [4.1 Convenience Sampling](./4.1%20Convenience%20Sampling.md)
 
 ## [4.2 Quota Sampling](./4.2%20Quota%20Sampling.md)
+
+## [4.3 Snowball Sampling](./4.3%20Snowball%20Sampling.md)
