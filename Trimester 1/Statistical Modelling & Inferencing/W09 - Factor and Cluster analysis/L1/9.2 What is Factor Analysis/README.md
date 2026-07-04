@@ -7,3 +7,5 @@
 ## [9.2.3. Uncovering Latent Structure](./9.2.3.%20Uncovering%20Latent%20Structure.md)
 
 ## [9.2.4. The Mathematical Structure of Latent Influence](./9.2.4.%20The%20Mathematical%20Structure%20of%20Latent%20Influence.md)
+
+## [9.2.5. Key Components: Loadings, Communality, and Uniqueness](./9.2.5.%20Key%20Components%20-%20Loadings%2C%20Communality%2C%20and%20Uniqueness.md)
