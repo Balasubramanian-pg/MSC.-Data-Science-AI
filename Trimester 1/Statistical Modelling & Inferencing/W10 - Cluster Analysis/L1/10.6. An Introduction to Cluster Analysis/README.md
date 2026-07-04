@@ -39,3 +39,5 @@
 ## [10.6.19. Example of a Silhouette Score Calculation](./10.6.19.%20Example%20of%20a%20Silhouette%20Score%20Calculation.md)
 
 ## [10.6.20. Common Misinterpretations](./10.6.20.%20Common%20Misinterpretations.md)
+
+## [10.6.21. Conclusions](./10.6.21.%20Conclusions.md)
