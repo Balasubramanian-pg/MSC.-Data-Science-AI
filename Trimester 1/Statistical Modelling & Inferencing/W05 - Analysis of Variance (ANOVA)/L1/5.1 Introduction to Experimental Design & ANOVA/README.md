@@ -5,3 +5,5 @@
 ## [5.1.1. The Need for Sound Experimental Design](./5.1.1.%20The%20Need%20for%20Sound%20Experimental%20Design.md)
 
 ## [5.1.2. Observational Studies vs Experiments](./5.1.2.%20Observational%20Studies%20vs%20Experiments.md)
+
+## [5.1.3. The Problem of Confounding Variables](./5.1.3.%20The%20Problem%20of%20Confounding%20Variables.md)
