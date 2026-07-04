@@ -9,3 +9,5 @@
 ## [7.4.4. Individual Predictor Significance: The t-Test](./7.4.4.%20Individual%20Predictor%20Significance%20-%20The%20t-Test.md)
 
 ## [7.4.5. Interpretation of t-Tests in Multiple Regression](./7.4.5.%20Interpretation%20of%20t-Tests%20in%20Multiple%20Regression.md)
+
+## [7.4.6. The Threat of Multicollinearity](./7.4.6.%20The%20Threat%20of%20Multicollinearity.md)
