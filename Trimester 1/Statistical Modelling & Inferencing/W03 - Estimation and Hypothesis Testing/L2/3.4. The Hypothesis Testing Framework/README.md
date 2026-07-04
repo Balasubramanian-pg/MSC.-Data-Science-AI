@@ -9,3 +9,5 @@
 ## [3.4.4. The Null Hypothesis](./3.4.4.%20The%20Null%20Hypothesis.md)
 
 ## [3.4.5. The Alternative Hypothesis](./3.4.5.%20The%20Alternative%20Hypothesis.md)
+
+## [3.4.6. One-Tailed vs Two-Tailed Tests](./3.4.6.%20One-Tailed%20vs%20Two-Tailed%20Tests.md)
