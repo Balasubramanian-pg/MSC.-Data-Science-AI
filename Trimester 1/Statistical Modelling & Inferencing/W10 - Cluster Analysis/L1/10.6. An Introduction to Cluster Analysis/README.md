@@ -19,3 +19,5 @@
 ## [10.6.9. Example of Computing Z-Score Standardization](./10.6.9.%20Example%20of%20Computing%20Z-Score%20Standardization.md)
 
 ## [10.6.10. Hierarchical Clustering](./10.6.10.%20Hierarchical%20Clustering.md)
+
+## [10.6.11. The Agglomerative Method](./10.6.11.%20The%20Agglomerative%20Method.md)
