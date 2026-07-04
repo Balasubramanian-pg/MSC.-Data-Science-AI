@@ -22,3 +22,5 @@ This document provides a rigorous technical analysis of binary response models. 
 ## [8. Practical Engineering Examples](./8.%20Practical%20Engineering%20Examples.md)
 
 ## [9. Common Mistakes](./9.%20Common%20Mistakes.md)
+
+## [10. Visual Intuition](./10.%20Visual%20Intuition.md)
