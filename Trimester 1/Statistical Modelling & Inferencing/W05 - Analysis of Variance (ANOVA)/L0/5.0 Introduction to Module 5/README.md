@@ -5,3 +5,5 @@
 ## [5.0.2. The Central Problem of Multi-Group Comparison](./5.0.2.%20The%20Central%20Problem%20of%20Multi-Group%20Comparison.md)
 
 ## [5.0.3. Experimental Design](./5.0.3.%20Experimental%20Design.md)
+
+## [5.0.4. Completely Randomized Designs](./5.0.4.%20Completely%20Randomized%20Designs.md)
