@@ -18,3 +18,5 @@
 ## [7. Python Implementations](./7.%20Python%20Implementations.md)
 
 ## [8. Real-World Engineering Examples](./8.%20Real-World%20Engineering%20Examples.md)
+
+## [9. Common Mistakes and Edge Cases](./9.%20Common%20Mistakes%20and%20Edge%20Cases.md)
