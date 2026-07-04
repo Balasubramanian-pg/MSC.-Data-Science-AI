@@ -11,3 +11,5 @@
 ## [8.2.5. The Centered Moving Average](./8.2.5.%20The%20Centered%20Moving%20Average.md)
 
 ## [8.2.6. Example of a Centered Moving Average](./8.2.6.%20Example%20of%20a%20Centered%20Moving%20Average.md)
+
+## [8.2.7. The Problem of Even-Numbered Windows](./8.2.7.%20The%20Problem%20of%20Even-Numbered%20Windows.md)
