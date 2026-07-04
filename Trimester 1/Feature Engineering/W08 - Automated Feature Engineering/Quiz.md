@@ -107,3 +107,6 @@ Which of the following statements about FeatureWiz is TRUE?
 > **Reason**
 >
 > **FeatureWiz** is an automated feature selection library that combines **model-based feature importance techniques** with **correlation filtering** to identify and retain the most relevant predictors while removing redundant features.
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
