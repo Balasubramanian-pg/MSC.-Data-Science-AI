@@ -19,3 +19,5 @@
 ## [6.0.9. Model Significance and Hypothesis Testing](./6.0.9.%20Model%20Significance%20and%20Hypothesis%20Testing.md)
 
 ## [6.0.10. Example of Linear Regression Hypothesis Testing](./6.0.10.%20Example%20of%20Linear%20Regression%20Hypothesis%20Testing.md)
+
+## [6.0.11. Regression for Prediction](./6.0.11.%20Regression%20for%20Prediction.md)
