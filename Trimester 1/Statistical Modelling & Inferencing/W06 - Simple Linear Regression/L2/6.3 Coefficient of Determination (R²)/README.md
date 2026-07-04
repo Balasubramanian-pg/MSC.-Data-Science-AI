@@ -9,3 +9,5 @@
 ## [6.3.4. The Sum of Squares Identity](./6.3.4.%20The%20Sum%20of%20Squares%20Identity.md)
 
 ## [6.3.5. Defining the Coefficient of Determination](./6.3.5.%20Defining%20the%20Coefficient%20of%20Determination.md)
+
+## [6.3.6. The Range and Interpretation of R-Squared](./6.3.6.%20The%20Range%20and%20Interpretation%20of%20R-Squared.md)
