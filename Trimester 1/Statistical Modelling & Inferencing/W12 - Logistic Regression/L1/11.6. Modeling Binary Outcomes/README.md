@@ -6,3 +6,5 @@ This document provides a rigorous technical analysis of binary response models. 
 > Binary response models are a specialized class of Generalized Linear Models (GLMs). They model the conditional probability $P(Y=1|X)$ of a dichotomous outcome. Unlike OLS, which assumes a continuous, unbounded dependent variable with constant variance, binary models require non-linear link functions to bound predictions between 0 and 1 and account for the heteroskedasticity inherent in Bernoulli distributions.
 
 ## [1. Concept Introduction](./1.%20Concept%20Introduction.md)
+
+## [2. Intuition Section](./2.%20Intuition%20Section.md)
