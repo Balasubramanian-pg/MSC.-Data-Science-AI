@@ -12,3 +12,5 @@
 ## [4. Visual Intuition and System Architecture](./4.%20Visual%20Intuition%20and%20System%20Architecture.md)
 
 ## [5. Step-by-Step Derivation: Analytical Solution (Conjugate Priors)](./5.%20Step-by-Step%20Derivation%20-%20Analytical%20Solution%20%28Conjugate%20Priors%29.md)
+
+## [6. Python Implementation: The Analytical Approach (SciPy)](./6.%20Python%20Implementation%20-%20The%20Analytical%20Approach%20%28SciPy%29.md)
