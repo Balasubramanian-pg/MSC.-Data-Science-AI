@@ -49,3 +49,5 @@
 ## [5.4 Order Statistics and Their Distributions](./5.4%20Order%20Statistics%20and%20Their%20Distributions.md)
 
 ## [6.1 Desirable Properties](./6.1%20Desirable%20Properties.md)
+
+## [6.2 Method of Moments](./6.2%20Method%20of%20Moments.md)
