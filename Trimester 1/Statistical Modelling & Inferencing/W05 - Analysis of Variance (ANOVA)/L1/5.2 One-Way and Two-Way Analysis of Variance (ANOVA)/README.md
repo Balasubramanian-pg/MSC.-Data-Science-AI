@@ -15,3 +15,5 @@
 ## [5.2.7. Assumptions of One-Way ANOVA](./5.2.7.%20Assumptions%20of%20One-Way%20ANOVA.md)
 
 ## [5.2.8. Example 1: Teaching Methods (Significant Result)](./5.2.8.%20Example%201%20-%20Teaching%20Methods%20%28Significant%20Result%29.md)
+
+## [5.2.9. Post-Hoc Testing](./5.2.9.%20Post-Hoc%20Testing.md)
