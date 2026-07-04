@@ -11,3 +11,5 @@
 ## [10.1.5. Example of Computing Euclidean Distance](./10.1.5.%20Example%20of%20Computing%20Euclidean%20Distance.md)
 
 ## [10.1.6. The Importance of Data Preprocessing](./10.1.6.%20The%20Importance%20of%20Data%20Preprocessing.md)
+
+## [10.1.7. Z-Score Standardization](./10.1.7.%20Z-Score%20Standardization.md)
