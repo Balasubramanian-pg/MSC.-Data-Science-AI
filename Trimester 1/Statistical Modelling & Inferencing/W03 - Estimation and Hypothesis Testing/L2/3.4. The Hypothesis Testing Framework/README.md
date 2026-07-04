@@ -23,3 +23,5 @@
 ## [3.4.11. The Intuition Behind Standardization](./3.4.11.%20The%20Intuition%20Behind%20Standardization.md)
 
 ## [3.4.12. Common Test Statistics](./3.4.12.%20Common%20Test%20Statistics.md)
+
+## [3.4.13. Example: Computing a Test Statistic](./3.4.13.%20Example%20-%20Computing%20a%20Test%20Statistic.md)
