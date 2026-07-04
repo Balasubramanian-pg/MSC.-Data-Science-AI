@@ -19,3 +19,5 @@
 ## [9.1.9. Strategic Business Application](./9.1.9.%20Strategic%20Business%20Application.md)
 
 ## [9.1.10. Common Misinterpretations](./9.1.10.%20Common%20Misinterpretations.md)
+
+## [9.1.11. Conclusions](./9.1.11.%20Conclusions.md)
