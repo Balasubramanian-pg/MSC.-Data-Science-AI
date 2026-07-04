@@ -4,11 +4,11 @@ module: Statistical Modelling And Inferencing
 week: W02 - Handling Numeric Data
 ---
 
-# Week 2 Quiz Solutions
+## Week 2 Quiz Solutions
 
 <img width="401" height="730" alt="image" src="https://github.com/user-attachments/assets/af826752-4005-4146-a4c8-ca5934896a41" />
 
-# Question 1
+## Question 1
 
 ## Question
 
@@ -32,7 +32,7 @@ week: W02 - Handling Numeric Data
 >
 > Standardisation and normalisation only change the scale of the data; they do not remove skewness.
 
-# Question 2
+## Question 2
 
 ## Question
 
@@ -60,7 +60,7 @@ week: W02 - Handling Numeric Data
 > * **K-means clustering** forms clusters based on similarity.
 > * **Domain-specific binning** relies on business rules.
 
-# Question 3
+## Question 3
 
 ## Question
 
@@ -86,7 +86,7 @@ week: W02 - Handling Numeric Data
 >
 > Feature scaling ensures that all features contribute more fairly to the distance computation.
 
-# Question 4
+## Question 4
 
 ## Question
 
@@ -115,7 +115,7 @@ week: W02 - Handling Numeric Data
 >
 > This process creates a binary feature from a continuous variable.
 
-# Question 5
+## Question 5
 
 ## Question
 
@@ -141,7 +141,7 @@ week: W02 - Handling Numeric Data
 >
 > As a result, clusters become biased toward high-magnitude features rather than reflecting the true underlying structure of the data.
 
-# Final Answers Summary
+## Final Answers Summary
 
 | Question | Correct Answer                                             |
 | -------- | ---------------------------------------------------------- |
