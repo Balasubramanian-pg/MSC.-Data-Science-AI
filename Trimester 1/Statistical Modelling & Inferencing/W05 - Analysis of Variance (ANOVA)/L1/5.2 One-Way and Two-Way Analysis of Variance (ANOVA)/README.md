@@ -31,3 +31,5 @@
 ## [5.2.15. Example 3: Fertilizer and Plant Variety (Interaction Present)](./5.2.15.%20Example%203%20-%20Fertilizer%20and%20Plant%20Variety%20%28Interaction%20Present%29.md)
 
 ## [5.2.16. Example 4: Study Method and Time of Day (No Interaction)](./5.2.16.%20Example%204%20-%20Study%20Method%20and%20Time%20of%20Day%20%28No%20Interaction%29.md)
+
+## [5.2.17. The Deep Structure of ANOVA](./5.2.17.%20The%20Deep%20Structure%20of%20ANOVA.md)
