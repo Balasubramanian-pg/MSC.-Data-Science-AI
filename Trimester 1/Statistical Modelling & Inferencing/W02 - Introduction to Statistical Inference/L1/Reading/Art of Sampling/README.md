@@ -37,3 +37,5 @@
 ## [4.3 Snowball Sampling](./4.3%20Snowball%20Sampling.md)
 
 ## [4.4 Judgmental or Purposive Sampling](./4.4%20Judgmental%20or%20Purposive%20Sampling.md)
+
+## [4.5 Non-Probability Methods Comparison](./4.5%20Non-Probability%20Methods%20Comparison.md)
