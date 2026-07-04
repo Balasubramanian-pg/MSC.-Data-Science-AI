@@ -10,3 +10,5 @@
 ## [3. Mathematical Foundations and Formula Breakdowns](./3.%20Mathematical%20Foundations%20and%20Formula%20Breakdowns.md)
 
 ## [4. Step-by-Step Derivation: The Odds Ratio Interpretation (Logit)](./4.%20Step-by-Step%20Derivation%20-%20The%20Odds%20Ratio%20Interpretation%20%28Logit%29.md)
+
+## [5. Visual Intuition and System Architecture](./5.%20Visual%20Intuition%20and%20System%20Architecture.md)
