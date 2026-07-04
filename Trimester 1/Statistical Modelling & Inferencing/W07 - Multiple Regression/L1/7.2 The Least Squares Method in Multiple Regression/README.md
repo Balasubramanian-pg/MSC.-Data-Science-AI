@@ -11,3 +11,5 @@
 ## [7.2.5. The Calculus-Based Optimization Problem](./7.2.5.%20The%20Calculus-Based%20Optimization%20Problem.md)
 
 ## [7.2.6. Matrix Representation of Regression](./7.2.6.%20Matrix%20Representation%20of%20Regression.md)
+
+## [7.2.7. The Compact Matrix Form and SSE](./7.2.7.%20The%20Compact%20Matrix%20Form%20and%20SSE.md)
