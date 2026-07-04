@@ -10,3 +10,5 @@
 ## [4.1.4. Hypotheses for Independent Samples](./4.1.4.%20Hypotheses%20for%20Independent%20Samples.md)
 
 ## [4.1.5. The Independent Two-Sample t-Test](./4.1.5.%20The%20Independent%20Two-Sample%20t-Test.md)
+
+## [4.1.6. Welch's t-Test and Unequal Variances](./4.1.6.%20Welch%27s%20t-Test%20and%20Unequal%20Variances.md)
