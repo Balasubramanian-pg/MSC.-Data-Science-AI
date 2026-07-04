@@ -4,11 +4,11 @@ module: Statistical Modelling And Inferencing
 week: W06 - Feature Engineering Techniques for Image Data
 ---
 
-# Week 6 Practice Quiz
+## Week 6 Practice Quiz
 
 <img width="440" height="808" alt="image" src="https://github.com/user-attachments/assets/719759ad-f2cc-4deb-ae3a-5a1c64ef2001" />
 
-# Question 1
+## Question 1
 
 What is the main advantage of using Histogram of Oriented Gradients (HOG) features over raw pixel features for object detection?
 
@@ -30,7 +30,7 @@ What is the main advantage of using Histogram of Oriented Gradients (HOG) featur
 >
 > HOG does not eliminate the need for a classifier. In practice, HOG features are often used together with classifiers such as SVMs.
 
-# Question 2
+## Question 2
 
 Which of the following statements best describes the role of hysteresis thresholding in the Canny edge detection algorithm?
 
@@ -55,7 +55,7 @@ Which of the following statements best describes the role of hysteresis threshol
 >
 > This process helps preserve meaningful edges while suppressing noise.
 
-# Question 3
+## Question 3
 
 Which image enhancement technique is most appropriate for improving contrast in low-light grayscale images?
 
@@ -77,7 +77,7 @@ Which image enhancement technique is most appropriate for improving contrast in 
 >
 > Gaussian blurring and median filtering primarily reduce noise, while thresholding is used for segmentation rather than contrast enhancement.
 
-# Question 4
+## Question 4
 
 What is the primary limitation of using raw pixel values as input features for traditional machine learning models?
 
@@ -99,7 +99,7 @@ What is the primary limitation of using raw pixel values as input features for t
 >
 > Feature extraction methods such as HOG, SIFT, and CNNs address this limitation by learning or extracting more informative representations.
 
-# Question 5
+## Question 5
 
 In the Harris corner detection method, what condition is true when the detected region is considered a corner?
 
