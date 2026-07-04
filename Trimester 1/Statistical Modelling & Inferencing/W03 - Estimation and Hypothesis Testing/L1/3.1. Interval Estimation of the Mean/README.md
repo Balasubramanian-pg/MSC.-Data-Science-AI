@@ -35,3 +35,5 @@
 ## [3.1.17. One-Sided Confidence Intervals](./3.1.17.%20One-Sided%20Confidence%20Intervals.md)
 
 ## [3.1.19. Frequentist Interpretation vs Bayesian Interpretation](./3.1.19.%20Frequentist%20Interpretation%20vs%20Bayesian%20Interpretation.md)
+
+## [3.1.20. The Most Common Misinterpretations](./3.1.20.%20The%20Most%20Common%20Misinterpretations.md)
