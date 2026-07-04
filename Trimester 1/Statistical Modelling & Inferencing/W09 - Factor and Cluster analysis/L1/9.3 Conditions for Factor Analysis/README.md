@@ -21,3 +21,5 @@
 ## [9.3.10. The Anti-Image Correlation Matrix](./9.3.10.%20The%20Anti-Image%20Correlation%20Matrix.md)
 
 ## [9.3.11. The Communality Constraint](./9.3.11.%20The%20Communality%20Constraint.md)
+
+## [9.3.12. Example of Computing Extracted Communality](./9.3.12.%20Example%20of%20Computing%20Extracted%20Communality.md)
