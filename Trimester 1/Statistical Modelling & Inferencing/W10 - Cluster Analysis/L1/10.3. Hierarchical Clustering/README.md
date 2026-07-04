@@ -4,3 +4,5 @@ The transcript you provided is mostly accurate, but it glosses over a critical t
 
 > [!IMPORTANT]
 > Hierarchical Clustering does not require you to specify the number of clusters ($K$) upfront. Instead, it builds a hierarchy (a tree) of clusters. You decide where to "cut" the tree to get your final flat clusters based on business logic or a distance threshold.
+
+## [1. Concept Introduction](./1.%20Concept%20Introduction.md)
