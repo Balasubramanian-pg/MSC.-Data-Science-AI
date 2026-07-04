@@ -19,3 +19,5 @@
 ## [7.1.9. New Challenges in Multiple Regression](./7.1.9.%20New%20Challenges%20in%20Multiple%20Regression.md)
 
 ## [7.1.10. Common Misinterpretations](./7.1.10.%20Common%20Misinterpretations.md)
+
+## [7.1.11. Conclusions](./7.1.11.%20Conclusions.md)
