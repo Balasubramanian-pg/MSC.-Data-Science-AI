@@ -7,3 +7,5 @@
 ## [6.4.3. Hypotheses for the t-Test](./6.4.3.%20Hypotheses%20for%20the%20t-Test.md)
 
 ## [6.4.4. The t-Test Statistic](./6.4.4.%20The%20t-Test%20Statistic.md)
+
+## [6.4.5. Degrees of Freedom and the t-Distribution](./6.4.5.%20Degrees%20of%20Freedom%20and%20the%20t-Distribution.md)
