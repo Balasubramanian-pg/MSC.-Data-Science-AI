@@ -11,3 +11,5 @@
 ## [4.3.5. Observed Frequencies](./4.3.5.%20Observed%20Frequencies.md)
 
 ## [4.3.6. Expected Frequencies](./4.3.6.%20Expected%20Frequencies.md)
+
+## [4.3.7. Why the Expected Frequency Formula Works](./4.3.7.%20Why%20the%20Expected%20Frequency%20Formula%20Works.md)
