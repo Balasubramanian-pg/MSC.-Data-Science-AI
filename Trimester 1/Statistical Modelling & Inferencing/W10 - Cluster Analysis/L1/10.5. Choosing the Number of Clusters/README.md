@@ -34,3 +34,5 @@ If you use "ELBO" in a machine learning interview when talking about K-Means, yo
 ## [17 & 18. Mental Models & Performance/Computational Insights](./17%20%26%2018.%20Mental%20Models%20%26%20PerformanceComputational%20Insights.md)
 
 ## [19. Advanced Notes: Beyond the Basics](./19.%20Advanced%20Notes%20-%20Beyond%20the%20Basics.md)
+
+## [20. Final Takeaways & Roadmap](./20.%20Final%20Takeaways%20%26%20Roadmap.md)
