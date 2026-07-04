@@ -45,3 +45,5 @@
 ## [5.2 The Central Limit Theorem (CLT)](./5.2%20The%20Central%20Limit%20Theorem%20%28CLT%29.md)
 
 ## [5.3 CLT Visualization and Implications](./5.3%20CLT%20Visualization%20and%20Implications.md)
+
+## [5.4 Order Statistics and Their Distributions](./5.4%20Order%20Statistics%20and%20Their%20Distributions.md)
