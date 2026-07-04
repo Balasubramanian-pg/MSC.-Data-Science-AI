@@ -21,3 +21,5 @@
 ## [6.1.10. Predicted Values and Residuals](./6.1.10.%20Predicted%20Values%20and%20Residuals.md)
 
 ## [6.1.11. The Method of Least Squares](./6.1.11.%20The%20Method%20of%20Least%20Squares.md)
+
+## [6.1.12. Regression as Statistical Inference](./6.1.12.%20Regression%20as%20Statistical%20Inference.md)
