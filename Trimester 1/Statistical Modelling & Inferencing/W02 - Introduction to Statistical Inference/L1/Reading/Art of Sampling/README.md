@@ -23,3 +23,5 @@
 ## [3.2 Stratified Random Sampling](./3.2%20Stratified%20Random%20Sampling.md)
 
 ## [3.3 Systematic Sampling](./3.3%20Systematic%20Sampling.md)
+
+## [3.4 Cluster Sampling](./3.4%20Cluster%20Sampling.md)
