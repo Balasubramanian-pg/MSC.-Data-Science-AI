@@ -10,3 +10,5 @@
 ## [3. Mathematical Explanation and Formula Breakdown](./3.%20Mathematical%20Explanation%20and%20Formula%20Breakdown.md)
 
 ## [4. Step-by-Step Derivation: Expanding the Evidence](./4.%20Step-by-Step%20Derivation%20-%20Expanding%20the%20Evidence.md)
+
+## [5. Visual Intuition and System Architecture](./5.%20Visual%20Intuition%20and%20System%20Architecture.md)
