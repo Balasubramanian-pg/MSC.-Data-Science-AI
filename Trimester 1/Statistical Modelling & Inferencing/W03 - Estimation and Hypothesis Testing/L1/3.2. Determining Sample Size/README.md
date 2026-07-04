@@ -27,3 +27,5 @@
 ## [3.2.13. Frequentist Planning vs Bayesian Updating](./3.2.13.%20Frequentist%20Planning%20vs%20Bayesian%20Updating.md)
 
 ## [3.2.14. Common Misinterpretations](./3.2.14.%20Common%20Misinterpretations.md)
+
+## [3.2.15. Conclusions](./3.2.15.%20Conclusions.md)
