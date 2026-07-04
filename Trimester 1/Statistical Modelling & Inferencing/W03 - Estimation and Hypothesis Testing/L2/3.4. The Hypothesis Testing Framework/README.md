@@ -29,3 +29,5 @@
 ## [3.4.14. Step 4: Compute the P-Value](./3.4.14.%20Step%204%20-%20Compute%20the%20P-Value.md)
 
 ## [3.4.15. The Decision Rule](./3.4.15.%20The%20Decision%20Rule.md)
+
+## [3.4.16. Rejection Regions and Critical Values](./3.4.16.%20Rejection%20Regions%20and%20Critical%20Values.md)
