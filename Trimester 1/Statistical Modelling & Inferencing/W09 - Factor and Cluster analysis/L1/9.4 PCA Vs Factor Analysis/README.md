@@ -11,3 +11,5 @@
 ## [9.4.5. Factor Analysis: The Purist's Focus on Latent Causes](./9.4.5.%20Factor%20Analysis%20-%20The%20Purist%27s%20Focus%20on%20Latent%20Causes.md)
 
 ## [9.4.6. The Partitioning of Variance](./9.4.6.%20The%20Partitioning%20of%20Variance.md)
+
+## [9.4.7. The Core Philosophical Difference](./9.4.7.%20The%20Core%20Philosophical%20Difference.md)
