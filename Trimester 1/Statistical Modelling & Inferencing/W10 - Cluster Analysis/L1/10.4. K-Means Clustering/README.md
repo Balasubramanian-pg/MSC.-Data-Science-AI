@@ -18,3 +18,5 @@ This document provides a rigorous technical analysis of the K-Means clustering a
 ## [6. Production-Grade Python Implementation](./6.%20Production-Grade%20Python%20Implementation.md)
 
 ## [7. Advanced Variants and Scaling](./7.%20Advanced%20Variants%20and%20Scaling.md)
+
+## [8. System Architecture: Clustering Pipeline](./8.%20System%20Architecture%20-%20Clustering%20Pipeline.md)
