@@ -8,3 +8,5 @@ This document provides a rigorous technical analysis of Cluster Analysis. It est
 ## [1. Concept Introduction](./1.%20Concept%20Introduction.md)
 
 ## [2. Intuition: Latent Structure Discovery](./2.%20Intuition%20-%20Latent%20Structure%20Discovery.md)
+
+## [3. Mathematical Explanation](./3.%20Mathematical%20Explanation.md)
