@@ -17,3 +17,5 @@
 ## [4.0.8. Testing Population Proportions](./4.0.8.%20Testing%20Population%20Proportions.md)
 
 ## [4.0.9. Introduction to Categorical Data Analysis](./4.0.9.%20Introduction%20to%20Categorical%20Data%20Analysis.md)
+
+## [4.0.10. Chi-Square Testing](./4.0.10.%20Chi-Square%20Testing.md)
