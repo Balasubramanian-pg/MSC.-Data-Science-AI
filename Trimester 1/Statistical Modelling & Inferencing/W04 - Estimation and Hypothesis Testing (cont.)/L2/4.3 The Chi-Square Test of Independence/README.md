@@ -23,3 +23,5 @@
 ## [4.3.11. Why the Test Is Always Right-Tailed](./4.3.11.%20Why%20the%20Test%20Is%20Always%20Right-Tailed.md)
 
 ## [4.3.12. The Chi-Square Distribution](./4.3.12.%20The%20Chi-Square%20Distribution.md)
+
+## [4.3.13. Degrees of Freedom](./4.3.13.%20Degrees%20of%20Freedom.md)
