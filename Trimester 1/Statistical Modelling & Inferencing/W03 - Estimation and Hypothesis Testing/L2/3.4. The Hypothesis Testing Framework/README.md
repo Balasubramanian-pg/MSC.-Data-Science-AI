@@ -11,3 +11,5 @@
 ## [3.4.5. The Alternative Hypothesis](./3.4.5.%20The%20Alternative%20Hypothesis.md)
 
 ## [3.4.6. One-Tailed vs Two-Tailed Tests](./3.4.6.%20One-Tailed%20vs%20Two-Tailed%20Tests.md)
+
+## [3.4.7. The Four-Step Hypothesis Testing Framework](./3.4.7.%20The%20Four-Step%20Hypothesis%20Testing%20Framework.md)
