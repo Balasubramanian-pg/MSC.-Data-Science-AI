@@ -15,3 +15,5 @@
 ## [8.5.7. The Additive Holt-Winters Method](./8.5.7.%20The%20Additive%20Holt-Winters%20Method.md)
 
 ## [8.5.8. Example of an Additive Holt-Winters Forecast](./8.5.8.%20Example%20of%20an%20Additive%20Holt-Winters%20Forecast.md)
+
+## [8.5.9. The Multiplicative Holt-Winters Method](./8.5.9.%20The%20Multiplicative%20Holt-Winters%20Method.md)
