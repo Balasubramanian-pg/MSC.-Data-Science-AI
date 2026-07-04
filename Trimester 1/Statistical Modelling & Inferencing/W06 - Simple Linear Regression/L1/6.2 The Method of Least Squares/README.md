@@ -9,3 +9,5 @@
 ## [6.2.3. Interpreting Residuals](./6.2.3.%20Interpreting%20Residuals.md)
 
 ## [6.2.4. The Challenge of Aggregating Error](./6.2.4.%20The%20Challenge%20of%20Aggregating%20Error.md)
+
+## [6.2.5. The Sum of Squared Errors (SSE)](./6.2.5.%20The%20Sum%20of%20Squared%20Errors%20%28SSE%29.md)
