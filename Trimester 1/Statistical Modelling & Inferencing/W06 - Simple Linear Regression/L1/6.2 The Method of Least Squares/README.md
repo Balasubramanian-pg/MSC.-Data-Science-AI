@@ -13,3 +13,5 @@
 ## [6.2.5. The Sum of Squared Errors (SSE)](./6.2.5.%20The%20Sum%20of%20Squared%20Errors%20%28SSE%29.md)
 
 ## [6.2.6. The Least Squares Criterion](./6.2.6.%20The%20Least%20Squares%20Criterion.md)
+
+## [6.2.7. The Least Squares Slope Formula](./6.2.7.%20The%20Least%20Squares%20Slope%20Formula.md)
