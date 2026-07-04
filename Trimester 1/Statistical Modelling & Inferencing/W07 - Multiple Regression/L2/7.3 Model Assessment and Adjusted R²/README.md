@@ -13,3 +13,5 @@
 ## [7.3.6. The Bias-Variance Tradeoff](./7.3.6.%20The%20Bias-Variance%20Tradeoff.md)
 
 ## [7.3.7. The Solution: Adjusted R-Squared](./7.3.7.%20The%20Solution%20-%20Adjusted%20R-Squared.md)
+
+## [7.3.8. Rewriting the Formula Using Mean Squares](./7.3.8.%20Rewriting%20the%20Formula%20Using%20Mean%20Squares.md)
