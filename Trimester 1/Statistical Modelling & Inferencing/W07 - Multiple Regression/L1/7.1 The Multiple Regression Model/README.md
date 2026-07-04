@@ -5,3 +5,5 @@
 ## [7.1.2. The Core Problem: Omitted Variable Bias](./7.1.2.%20The%20Core%20Problem%20-%20Omitted%20Variable%20Bias.md)
 
 ## [7.1.3. The Multiple Linear Regression Model](./7.1.3.%20The%20Multiple%20Linear%20Regression%20Model.md)
+
+## [7.1.4. The Sample Regression Equation](./7.1.4.%20The%20Sample%20Regression%20Equation.md)
