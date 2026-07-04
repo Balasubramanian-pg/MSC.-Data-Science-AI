@@ -7,3 +7,5 @@
 ## [5.2.3. Why Variance Is Used to Compare Means](./5.2.3.%20Why%20Variance%20Is%20Used%20to%20Compare%20Means.md)
 
 ## [5.2.4. Types of ANOVA](./5.2.4.%20Types%20of%20ANOVA.md)
+
+## [5.2.5. One-Way ANOVA](./5.2.5.%20One-Way%20ANOVA.md)
