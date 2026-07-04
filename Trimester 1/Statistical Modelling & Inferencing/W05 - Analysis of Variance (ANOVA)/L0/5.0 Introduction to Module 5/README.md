@@ -29,3 +29,5 @@
 ## [5.0.14. Interpretation of ANOVA Results](./5.0.14.%20Interpretation%20of%20ANOVA%20Results.md)
 
 ## [5.0.15. Deep Statistical Intuition](./5.0.15.%20Deep%20Statistical%20Intuition.md)
+
+## [5.0.16. Conclusions](./5.0.16.%20Conclusions.md)
