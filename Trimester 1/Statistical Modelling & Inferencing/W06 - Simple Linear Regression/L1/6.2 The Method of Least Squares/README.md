@@ -1,3 +1,5 @@
 # 6.2. The Method of Least Squares
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b5c5b9b7-81ca-48fd-8b4d-1ebb79bfca0d" />
+
+## [6.2.1. The Problem of "Best Fit"](./6.2.1.%20The%20Problem%20of%20Best%20Fit.md)
