@@ -19,3 +19,5 @@
 ## [10.1.9. Partitioning Methods: The K-Means Framework](./10.1.9.%20Partitioning%20Methods%20-%20The%20K-Means%20Framework.md)
 
 ## [10.1.10. Hierarchical Methods](./10.1.10.%20Hierarchical%20Methods.md)
+
+## [10.1.11. Validation and Interpretation](./10.1.11.%20Validation%20and%20Interpretation.md)
