@@ -8,3 +8,5 @@
 ## [6.5.3. The LINE Assumptions](./6.5.3.%20The%20LINE%20Assumptions.md)
 
 ## [6.5.4. Assumption 1: Linearity](./6.5.4.%20Assumption%201%20-%20Linearity.md)
+
+## [6.5.5. Assumption 2: Independence](./6.5.5.%20Assumption%202%20-%20Independence.md)
