@@ -3,3 +3,5 @@
 ## [5.2.1. Introduction to Analysis of Variance (ANOVA)](./5.2.1.%20Introduction%20to%20Analysis%20of%20Variance%20%28ANOVA%29.md)
 
 ## [5.2.2. The Core Logic of ANOVA](./5.2.2.%20The%20Core%20Logic%20of%20ANOVA.md)
+
+## [5.2.3. Why Variance Is Used to Compare Means](./5.2.3.%20Why%20Variance%20Is%20Used%20to%20Compare%20Means.md)
