@@ -20,3 +20,5 @@ This document provides a rigorous technical analysis of Bayesian Inference. It d
 ## [7. Python Implementations](./7.%20Python%20Implementations.md)
 
 ## [8. Python Simulations](./8.%20Python%20Simulations.md)
+
+## [9. Practical Engineering Examples](./9.%20Practical%20Engineering%20Examples.md)
