@@ -11,3 +11,5 @@
 ## [6.4.5. Degrees of Freedom and the t-Distribution](./6.4.5.%20Degrees%20of%20Freedom%20and%20the%20t-Distribution.md)
 
 ## [6.4.6. Example of a t-Test for the Slope](./6.4.6.%20Example%20of%20a%20t-Test%20for%20the%20Slope.md)
+
+## [6.4.7. The F-Test for Overall Regression Significance](./6.4.7.%20The%20F-Test%20for%20Overall%20Regression%20Significance.md)
