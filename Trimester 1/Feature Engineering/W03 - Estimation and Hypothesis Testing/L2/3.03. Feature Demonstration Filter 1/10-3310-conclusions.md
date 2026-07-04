@@ -1,0 +1,24 @@
+# 3.3.10. Conclusions
+
+Pearson's correlation serves as an essential, computationally inexpensive first-pass diagnostic tool for feature selection. It quickly prunes irrelevant variables and identifies redundancy before more advanced algorithms are deployed.
+
+### 10.1. Recap of Pearson's Formula
+
+The entire framework relies on normalizing covariance:
+
+$$
+r_{xy} = \frac{\text{cov}(X, Y)}{\sigma_x \sigma_y}
+$$
+
+When the calculation results in a value near the extremes of its bounds, strong linear associations are confirmed.
+
+### 10.2. Strategic Summary
+
+The dual applications of this statistical tool dictate opposite selection logic depending on the comparison pair. The following table contrasts these distinct strategic goals.
+
+| Comparison | Target Metric Goal | Action Taken |
+|----------|----------|----------|
+| Feature vs Target | Maximize absolute value | **Keep** feature |
+| Feature vs Feature | Minimize absolute value | **Drop** one feature |
+
+By understanding both the underlying mathematics and the rigid limitations of this metric, data scientists can effectively filter datasets to maximize predictive signal while minimizing detrimental noise.
