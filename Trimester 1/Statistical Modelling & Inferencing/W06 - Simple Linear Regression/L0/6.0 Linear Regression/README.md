@@ -11,3 +11,5 @@
 ## [6.0.5. The Error Term and Randomness](./6.0.5.%20The%20Error%20Term%20and%20Randomness.md)
 
 ## [6.0.6. Estimating the Regression Line](./6.0.6.%20Estimating%20the%20Regression%20Line.md)
+
+## [6.0.7. The Least Squares Principle](./6.0.7.%20The%20Least%20Squares%20Principle.md)
