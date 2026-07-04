@@ -13,3 +13,5 @@
 ## [6.4.6. Example of a t-Test for the Slope](./6.4.6.%20Example%20of%20a%20t-Test%20for%20the%20Slope.md)
 
 ## [6.4.7. The F-Test for Overall Regression Significance](./6.4.7.%20The%20F-Test%20for%20Overall%20Regression%20Significance.md)
+
+## [6.4.8. Mean Squares in Regression](./6.4.8.%20Mean%20Squares%20in%20Regression.md)
