@@ -21,3 +21,5 @@
 ## [7.0.10. Multiple Regression as Controlled Comparison](./7.0.10.%20Multiple%20Regression%20as%20Controlled%20Comparison.md)
 
 ## [7.0.11. Geometry and Matrix Representation](./7.0.11.%20Geometry%20and%20Matrix%20Representation.md)
+
+## [7.0.12. Conclusions](./7.0.12.%20Conclusions.md)
