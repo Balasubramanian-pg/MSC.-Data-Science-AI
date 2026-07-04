@@ -6,3 +6,5 @@
 ## [1. Concept Introduction](./1.%20Concept%20Introduction.md)
 
 ## [2. Intuition and Real-World Analogy](./2.%20Intuition%20and%20Real-World%20Analogy.md)
+
+## [3. Mathematical Foundations and Formula Breakdowns](./3.%20Mathematical%20Foundations%20and%20Formula%20Breakdowns.md)
