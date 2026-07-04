@@ -15,3 +15,5 @@
 ## [6.3.7. Example of Calculating and Interpreting R-Squared](./6.3.7.%20Example%20of%20Calculating%20and%20Interpreting%20R-Squared.md)
 
 ## [6.3.8. The Connection Between Correlation and R-Squared](./6.3.8.%20The%20Connection%20Between%20Correlation%20and%20R-Squared.md)
+
+## [6.3.9. Why High R-Squared Can Be Misleading](./6.3.9.%20Why%20High%20R-Squared%20Can%20Be%20Misleading.md)
