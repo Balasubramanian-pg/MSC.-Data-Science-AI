@@ -4,3 +4,5 @@
 ## [4.1.1. The Shift to Comparative Inference](./4.1.1.%20The%20Shift%20to%20Comparative%20Inference.md)
 
 ## [4.1.2. The Critical Distinction: Independent vs Paired Samples](./4.1.2.%20The%20Critical%20Distinction%20-%20Independent%20vs%20Paired%20Samples.md)
+
+## [4.1.3. Independent Samples](./4.1.3.%20Independent%20Samples.md)
