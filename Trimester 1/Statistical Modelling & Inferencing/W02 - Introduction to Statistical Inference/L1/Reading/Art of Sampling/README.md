@@ -25,3 +25,5 @@
 ## [3.3 Systematic Sampling](./3.3%20Systematic%20Sampling.md)
 
 ## [3.4 Cluster Sampling](./3.4%20Cluster%20Sampling.md)
+
+## [3.5 Multi-Stage Sampling](./3.5%20Multi-Stage%20Sampling.md)
