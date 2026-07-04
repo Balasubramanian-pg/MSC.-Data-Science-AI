@@ -25,3 +25,5 @@
 ## [10.6.12. Linkage Criteria in Hierarchical Models](./10.6.12.%20Linkage%20Criteria%20in%20Hierarchical%20Models.md)
 
 ## [10.6.13. K-Means Clustering](./10.6.13.%20K-Means%20Clustering.md)
+
+## [10.6.14. The K-Means Algorithmic Process](./10.6.14.%20The%20K-Means%20Algorithmic%20Process.md)
