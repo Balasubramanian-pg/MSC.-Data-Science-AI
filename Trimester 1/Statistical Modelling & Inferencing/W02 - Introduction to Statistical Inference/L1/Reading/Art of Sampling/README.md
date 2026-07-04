@@ -13,3 +13,5 @@
 ## [2.1 The Population](./2.1%20The%20Population.md)
 
 ## [2.2 Parameter Hierarchy](./2.2%20Parameter%20Hierarchy.md)
+
+## [2.3 The Sample](./2.3%20The%20Sample.md)
