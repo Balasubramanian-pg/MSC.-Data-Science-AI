@@ -9,3 +9,5 @@
 ## [8.4.4. Example of a Recursive Forecast Computation](./8.4.4.%20Example%20of%20a%20Recursive%20Forecast%20Computation.md)
 
 ## [8.4.5. The Error Correction Perspective](./8.4.5.%20The%20Error%20Correction%20Perspective.md)
+
+## [8.4.6. The Smoothing Parameter and Model Responsiveness](./8.4.6.%20The%20Smoothing%20Parameter%20and%20Model%20Responsiveness.md)
