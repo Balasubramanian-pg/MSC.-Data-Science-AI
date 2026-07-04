@@ -5,3 +5,5 @@
 ## [4.4.2. Examples of Population Proportions](./4.4.2.%20Examples%20of%20Population%20Proportions.md)
 
 ## [4.4.3. The Sample Proportion](./4.4.3.%20The%20Sample%20Proportion.md)
+
+## [4.4.4. Sampling Distribution of the Sample Proportion](./4.4.4.%20Sampling%20Distribution%20of%20the%20Sample%20Proportion.md)
