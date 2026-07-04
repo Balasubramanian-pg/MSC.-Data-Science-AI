@@ -19,3 +19,5 @@
 ## [7.2.9. Understanding the Matrix Components](./7.2.9.%20Understanding%20the%20Matrix%20Components.md)
 
 ## [7.2.10. The Threat of Multicollinearity](./7.2.10.%20The%20Threat%20of%20Multicollinearity.md)
+
+## [7.2.11. The Deep Geometry of Least Squares](./7.2.11.%20The%20Deep%20Geometry%20of%20Least%20Squares.md)
