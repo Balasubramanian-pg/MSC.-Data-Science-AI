@@ -35,3 +35,5 @@
 ## [4.4.17. Example of a Two-Sample Z-Test](./4.4.17.%20Example%20of%20a%20Two-Sample%20Z-Test.md)
 
 ## [4.4.18. Conditions for the Two-Sample Proportion Test](./4.4.18.%20Conditions%20for%20the%20Two-Sample%20Proportion%20Test.md)
+
+## [4.4.19. Conclusions](./4.4.19.%20Conclusions.md)
