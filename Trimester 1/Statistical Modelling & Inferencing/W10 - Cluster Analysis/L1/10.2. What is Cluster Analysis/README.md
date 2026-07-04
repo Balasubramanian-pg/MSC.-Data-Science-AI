@@ -12,3 +12,5 @@ This document provides a rigorous technical analysis of Cluster Analysis. It est
 ## [3. Mathematical Explanation](./3.%20Mathematical%20Explanation.md)
 
 ## [4. Formula Breakdowns](./4.%20Formula%20Breakdowns.md)
+
+## [5. Step-by-Step Derivations (General Clustering Objective)](./5.%20Step-by-Step%20Derivations%20%28General%20Clustering%20Objective%29.md)
