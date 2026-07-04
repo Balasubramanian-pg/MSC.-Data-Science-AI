@@ -21,3 +21,5 @@
 ## [7.3.10. Example of Adjusted R-Squared Calculation](./7.3.10.%20Example%20of%20Adjusted%20R-Squared%20Calculation.md)
 
 ## [7.3.11. Can Adjusted R-Squared Be Negative?](./7.3.11.%20Can%20Adjusted%20R-Squared%20Be%20Negative.md)
+
+## [7.3.12. Adjusted R-Squared as a Parsimony Metric](./7.3.12.%20Adjusted%20R-Squared%20as%20a%20Parsimony%20Metric.md)
