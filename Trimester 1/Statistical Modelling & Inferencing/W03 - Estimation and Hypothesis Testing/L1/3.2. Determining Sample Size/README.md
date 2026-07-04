@@ -11,3 +11,5 @@
 ## [3.2.5. Sample Size for a Population Mean](./3.2.5.%20Sample%20Size%20for%20a%20Population%20Mean.md)
 
 ## [3.2.6. Estimating Population Variability](./3.2.6.%20Estimating%20Population%20Variability.md)
+
+## [3.2.7. Example of Sample Size for a Mean](./3.2.7.%20Example%20of%20Sample%20Size%20for%20a%20Mean.md)
