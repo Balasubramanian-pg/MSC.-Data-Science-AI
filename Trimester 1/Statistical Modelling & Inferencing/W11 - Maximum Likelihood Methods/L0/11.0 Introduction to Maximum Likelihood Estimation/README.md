@@ -18,3 +18,5 @@
 ## [7. Python Implementations](./7.%20Python%20Implementations.md)
 
 ## [8. Common Mistakes and Traps](./8.%20Common%20Mistakes%20and%20Traps.md)
+
+## [9. The Edge Case: When Calculus Fails](./9.%20The%20Edge%20Case%20-%20When%20Calculus%20Fails.md)
