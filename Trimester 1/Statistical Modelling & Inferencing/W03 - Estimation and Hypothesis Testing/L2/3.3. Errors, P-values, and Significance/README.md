@@ -23,3 +23,5 @@
 ## [3.3.11. Statistical Significance vs Practical Significance](./3.3.11.%20Statistical%20Significance%20vs%20Practical%20Significance.md)
 
 ## [3.3.12. Effect Size](./3.3.12.%20Effect%20Size.md)
+
+## [3.3.13. The Replication Crisis](./3.3.13.%20The%20Replication%20Crisis.md)
