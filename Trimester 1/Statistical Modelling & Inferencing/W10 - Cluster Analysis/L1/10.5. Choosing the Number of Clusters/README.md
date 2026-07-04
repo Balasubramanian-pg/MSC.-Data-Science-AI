@@ -10,3 +10,5 @@ If you use "ELBO" in a machine learning interview when talking about K-Means, yo
 ## [1. Concept Introduction](./1.%20Concept%20Introduction.md)
 
 ## [2. Intuition: The Goldilocks Problem](./2.%20Intuition%20-%20The%20Goldilocks%20Problem.md)
+
+## [3 & 4. Mathematical Explanation & Formula Breakdowns](./3%20%26%204.%20Mathematical%20Explanation%20%26%20Formula%20Breakdowns.md)
