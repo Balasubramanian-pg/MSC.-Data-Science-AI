@@ -9,3 +9,5 @@
 ## [9.0.4. Partitioning Variance: Common vs. Unique](./9.0.4.%20Partitioning%20Variance%20-%20Common%20vs.%20Unique.md)
 
 ## [9.0.5. The Factor Loading](./9.0.5.%20The%20Factor%20Loading.md)
+
+## [9.0.6. Example of Calculating Variance Components](./9.0.6.%20Example%20of%20Calculating%20Variance%20Components.md)
