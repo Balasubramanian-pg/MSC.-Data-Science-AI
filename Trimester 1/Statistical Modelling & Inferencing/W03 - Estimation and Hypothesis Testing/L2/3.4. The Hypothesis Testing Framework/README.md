@@ -21,3 +21,5 @@
 ## [3.4.10. Step 3: Collect Data and Compute the Test Statistic](./3.4.10.%20Step%203%20-%20Collect%20Data%20and%20Compute%20the%20Test%20Statistic.md)
 
 ## [3.4.11. The Intuition Behind Standardization](./3.4.11.%20The%20Intuition%20Behind%20Standardization.md)
+
+## [3.4.12. Common Test Statistics](./3.4.12.%20Common%20Test%20Statistics.md)
