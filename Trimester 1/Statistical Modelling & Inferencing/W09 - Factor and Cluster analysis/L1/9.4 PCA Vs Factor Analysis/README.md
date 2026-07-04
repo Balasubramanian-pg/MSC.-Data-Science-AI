@@ -15,3 +15,5 @@
 ## [9.4.7. The Core Philosophical Difference](./9.4.7.%20The%20Core%20Philosophical%20Difference.md)
 
 ## [9.4.8. Choosing Between the Two Frameworks](./9.4.8.%20Choosing%20Between%20the%20Two%20Frameworks.md)
+
+## [9.4.9. Common Misinterpretations](./9.4.9.%20Common%20Misinterpretations.md)
