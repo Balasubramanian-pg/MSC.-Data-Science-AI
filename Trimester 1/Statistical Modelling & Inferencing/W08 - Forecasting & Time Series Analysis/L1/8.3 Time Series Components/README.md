@@ -21,3 +21,5 @@
 ## [8.3.10. Strategic Implications of Decomposition](./8.3.10.%20Strategic%20Implications%20of%20Decomposition.md)
 
 ## [8.3.11. Common Misinterpretations](./8.3.11.%20Common%20Misinterpretations.md)
+
+## [8.3.12. Conclusions](./8.3.12.%20Conclusions.md)
