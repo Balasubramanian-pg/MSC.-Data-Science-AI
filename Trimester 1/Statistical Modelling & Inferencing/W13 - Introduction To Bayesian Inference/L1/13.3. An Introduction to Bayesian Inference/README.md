@@ -14,3 +14,5 @@
 ## [5. Step-by-Step Derivation: Analytical Solution (Conjugate Priors)](./5.%20Step-by-Step%20Derivation%20-%20Analytical%20Solution%20%28Conjugate%20Priors%29.md)
 
 ## [6. Python Implementation: The Analytical Approach (SciPy)](./6.%20Python%20Implementation%20-%20The%20Analytical%20Approach%20%28SciPy%29.md)
+
+## [7. Overcoming the Integral: Markov Chain Monte Carlo (MCMC)](./7.%20Overcoming%20the%20Integral%20-%20Markov%20Chain%20Monte%20Carlo%20%28MCMC%29.md)
