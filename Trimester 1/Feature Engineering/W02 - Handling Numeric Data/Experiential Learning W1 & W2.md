@@ -215,3 +215,6 @@ print(f"Accuracy with Feature Engineering: {accuracy_score(y_test, preds):.2f}")
     
 
 **Which of these transformations (Imputation, Scaling, Log Transform, or Binning) would you like to see integrated into a complete, runnable script first?**
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
