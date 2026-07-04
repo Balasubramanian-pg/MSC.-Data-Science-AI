@@ -21,3 +21,5 @@
 ## [7.2.10. The Threat of Multicollinearity](./7.2.10.%20The%20Threat%20of%20Multicollinearity.md)
 
 ## [7.2.11. The Deep Geometry of Least Squares](./7.2.11.%20The%20Deep%20Geometry%20of%20Least%20Squares.md)
+
+## [7.2.12. Example of the Closed-Form OLS Solution](./7.2.12.%20Example%20of%20the%20Closed-Form%20OLS%20Solution.md)
