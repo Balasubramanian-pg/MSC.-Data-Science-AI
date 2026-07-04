@@ -1,0 +1,6 @@
+# The Likelihood Function
+
+This document provides a rigorous technical analysis of Maximum Likelihood Estimation (MLE). It details the mathematical formulation, algorithmic execution, computational constraints, and engineering applications required for statistical modeling and machine learning systems.
+
+> [!IMPORTANT]
+> Maximum Likelihood Estimation is a fundamental optimization framework used to estimate the parameters of a statistical model. It operates by selecting the parameter values that maximize the likelihood function, thereby making the observed data most probable under the assumed distribution. MLE is the theoretical foundation for the majority of parametric machine learning algorithms.
