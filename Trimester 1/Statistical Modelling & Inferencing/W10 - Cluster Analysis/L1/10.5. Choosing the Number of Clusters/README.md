@@ -22,3 +22,5 @@ If you use "ELBO" in a machine learning interview when talking about K-Means, yo
 ## [9. Practical Engineering Examples](./9.%20Practical%20Engineering%20Examples.md)
 
 ## [10. Common Mistakes & Traps](./10.%20Common%20Mistakes%20%26%20Traps.md)
+
+## [11 & 12. Visual Intuition & System Architecture](./11%20%26%2012.%20Visual%20Intuition%20%26%20System%20Architecture.md)
