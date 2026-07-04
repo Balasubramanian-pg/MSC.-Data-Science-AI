@@ -23,3 +23,5 @@
 ## [6.0.11. Regression for Prediction](./6.0.11.%20Regression%20for%20Prediction.md)
 
 ## [6.0.12. Assumptions of Linear Regression](./6.0.12.%20Assumptions%20of%20Linear%20Regression.md)
+
+## [6.0.13. Regression vs Correlation](./6.0.13.%20Regression%20vs%20Correlation.md)
