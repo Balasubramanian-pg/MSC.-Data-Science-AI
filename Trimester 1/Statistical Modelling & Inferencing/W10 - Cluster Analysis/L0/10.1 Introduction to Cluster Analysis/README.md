@@ -9,3 +9,5 @@
 ## [10.1.4. The Euclidean Distance Metric](./10.1.4.%20The%20Euclidean%20Distance%20Metric.md)
 
 ## [10.1.5. Example of Computing Euclidean Distance](./10.1.5.%20Example%20of%20Computing%20Euclidean%20Distance.md)
+
+## [10.1.6. The Importance of Data Preprocessing](./10.1.6.%20The%20Importance%20of%20Data%20Preprocessing.md)
