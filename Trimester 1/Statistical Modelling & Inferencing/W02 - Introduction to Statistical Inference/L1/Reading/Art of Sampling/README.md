@@ -59,3 +59,5 @@
 ## [6.5 Estimator Properties Diagram](./6.5%20Estimator%20Properties%20Diagram.md)
 
 ## [7.1 Definition and Interpretation](./7.1%20Definition%20and%20Interpretation.md)
+
+## [7.2 Confidence Intervals for the Mean](./7.2%20Confidence%20Intervals%20for%20the%20Mean.md)
