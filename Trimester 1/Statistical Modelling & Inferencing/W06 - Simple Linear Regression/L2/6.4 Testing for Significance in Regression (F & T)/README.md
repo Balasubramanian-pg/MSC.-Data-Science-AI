@@ -15,3 +15,5 @@
 ## [6.4.7. The F-Test for Overall Regression Significance](./6.4.7.%20The%20F-Test%20for%20Overall%20Regression%20Significance.md)
 
 ## [6.4.8. Mean Squares in Regression](./6.4.8.%20Mean%20Squares%20in%20Regression.md)
+
+## [6.4.9. The F-Statistic](./6.4.9.%20The%20F-Statistic.md)
