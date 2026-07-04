@@ -13,3 +13,5 @@
 ## [10.6.6. Alternative Distance Metrics](./10.6.6.%20Alternative%20Distance%20Metrics.md)
 
 ## [10.6.7. The Scale Trap: Why Standardization is Non-Negotiable](./10.6.7.%20The%20Scale%20Trap%20-%20Why%20Standardization%20is%20Non-Negotiable.md)
+
+## [10.6.8. The Z-Score Standardization Protocol](./10.6.8.%20The%20Z-Score%20Standardization%20Protocol.md)
