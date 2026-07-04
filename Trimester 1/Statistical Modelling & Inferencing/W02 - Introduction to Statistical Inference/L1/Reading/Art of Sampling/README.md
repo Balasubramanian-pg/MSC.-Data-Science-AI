@@ -43,3 +43,5 @@
 ## [5.1 The Sampling Distribution](./5.1%20The%20Sampling%20Distribution.md)
 
 ## [5.2 The Central Limit Theorem (CLT)](./5.2%20The%20Central%20Limit%20Theorem%20%28CLT%29.md)
+
+## [5.3 CLT Visualization and Implications](./5.3%20CLT%20Visualization%20and%20Implications.md)
