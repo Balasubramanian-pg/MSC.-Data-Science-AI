@@ -31,3 +31,5 @@
 ## [10.6.15. Example of a K-Means Centroid Update](./10.6.15.%20Example%20of%20a%20K-Means%20Centroid%20Update.md)
 
 ## [10.6.16. Strengths and Weaknesses of K-Means](./10.6.16.%20Strengths%20and%20Weaknesses%20of%20K-Means.md)
+
+## [10.6.17. Choosing the Number of Clusters: The Elbow Method](./10.6.17.%20Choosing%20the%20Number%20of%20Clusters%20-%20The%20Elbow%20Method.md)
