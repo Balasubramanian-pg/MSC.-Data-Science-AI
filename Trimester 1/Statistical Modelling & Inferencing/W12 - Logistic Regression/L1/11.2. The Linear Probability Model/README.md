@@ -16,3 +16,5 @@ This document provides a rigorous technical analysis of the Linear Probability M
 ## [5. Step-by-Step Derivations](./5.%20Step-by-Step%20Derivations.md)
 
 ## [6. Real-World Analogies](./6.%20Real-World%20Analogies.md)
+
+## [7. Python Implementations](./7.%20Python%20Implementations.md)
