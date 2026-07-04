@@ -10,3 +10,5 @@
 ## [3. Mathematical Foundations and Formula Breakdowns](./3.%20Mathematical%20Foundations%20and%20Formula%20Breakdowns.md)
 
 ## [4. Visual Intuition and System Architecture](./4.%20Visual%20Intuition%20and%20System%20Architecture.md)
+
+## [5. Step-by-Step Derivation: Analytical Solution (Conjugate Priors)](./5.%20Step-by-Step%20Derivation%20-%20Analytical%20Solution%20%28Conjugate%20Priors%29.md)
