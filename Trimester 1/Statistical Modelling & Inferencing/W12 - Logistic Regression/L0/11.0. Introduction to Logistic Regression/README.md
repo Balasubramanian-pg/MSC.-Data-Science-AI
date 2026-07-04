@@ -34,3 +34,5 @@ This document provides a rigorous technical analysis of binary response models. 
 ## [14. Edge Cases](./14.%20Edge%20Cases.md)
 
 ## [15. Mental Models](./15.%20Mental%20Models.md)
+
+## [16. Performance and Computational Insights](./16.%20Performance%20and%20Computational%20Insights.md)
