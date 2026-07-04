@@ -15,3 +15,5 @@
 ## [7.4.7. The Matrix Perspective of Multicollinearity](./7.4.7.%20The%20Matrix%20Perspective%20of%20Multicollinearity.md)
 
 ## [7.4.8. Consequences of Multicollinearity](./7.4.8.%20Consequences%20of%20Multicollinearity.md)
+
+## [7.4.9. Diagnosing Multicollinearity: Variance Inflation Factor](./7.4.9.%20Diagnosing%20Multicollinearity%20-%20Variance%20Inflation%20Factor.md)
