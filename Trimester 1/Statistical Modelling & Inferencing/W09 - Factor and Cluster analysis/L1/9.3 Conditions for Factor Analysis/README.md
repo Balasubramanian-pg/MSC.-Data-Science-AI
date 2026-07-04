@@ -9,3 +9,5 @@
 ## [9.3.4. Example of Validating Sample Size Adequacy](./9.3.4.%20Example%20of%20Validating%20Sample%20Size%20Adequacy.md)
 
 ## [9.3.5. Statistical Properties: Matrix Diagnostics](./9.3.5.%20Statistical%20Properties%20-%20Matrix%20Diagnostics.md)
+
+## [9.3.6. Bartlett’s Test of Sphericity](./9.3.6.%20Bartlett%E2%80%99s%20Test%20of%20Sphericity.md)
