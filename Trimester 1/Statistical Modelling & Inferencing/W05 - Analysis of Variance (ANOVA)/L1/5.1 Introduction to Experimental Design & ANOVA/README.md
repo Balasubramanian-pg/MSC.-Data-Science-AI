@@ -13,3 +13,5 @@
 ## [5.1.5. Experimental Units](./5.1.5.%20Experimental%20Units.md)
 
 ## [5.1.6. Response Variable](./5.1.6.%20Response%20Variable.md)
+
+## [5.1.7. Factors and Levels](./5.1.7.%20Factors%20and%20Levels.md)
