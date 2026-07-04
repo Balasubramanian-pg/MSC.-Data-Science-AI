@@ -17,3 +17,5 @@
 ## [9.0.8. Selecting the Optimal Number of Factors](./9.0.8.%20Selecting%20the%20Optimal%20Number%20of%20Factors.md)
 
 ## [9.0.9. Strategic Business Application](./9.0.9.%20Strategic%20Business%20Application.md)
+
+## [9.0.10. Common Misinterpretations](./9.0.10.%20Common%20Misinterpretations.md)
