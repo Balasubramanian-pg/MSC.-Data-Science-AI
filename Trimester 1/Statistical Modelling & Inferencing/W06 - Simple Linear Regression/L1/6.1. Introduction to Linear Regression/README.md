@@ -15,3 +15,5 @@
 ## [6.1.7. The Population Slope](./6.1.7.%20The%20Population%20Slope.md)
 
 ## [6.1.8. The Error Term](./6.1.8.%20The%20Error%20Term.md)
+
+## [6.1.9. The Sample Regression Equation](./6.1.9.%20The%20Sample%20Regression%20Equation.md)
