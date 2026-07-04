@@ -11,3 +11,5 @@
 ## [5.0.5. Why Randomization Matters](./5.0.5.%20Why%20Randomization%20Matters.md)
 
 ## [5.0.6. Randomized Block Designs](./5.0.6.%20Randomized%20Block%20Designs.md)
+
+## [5.0.7. The Logic of Blocking](./5.0.7.%20The%20Logic%20of%20Blocking.md)
