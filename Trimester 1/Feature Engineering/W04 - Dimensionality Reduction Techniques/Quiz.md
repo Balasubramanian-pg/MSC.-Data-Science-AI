@@ -4,11 +4,11 @@ module: Statistical Modelling And Inferencing
 week: W04 - Dimensionality Reduction Techniques
 ---
 
-# Week 4 Practice Quiz
+## Week 4 Practice Quiz
 
 <img width="372" height="740" alt="image" src="https://github.com/user-attachments/assets/0434d05c-9351-4493-9c58-084bffe82cc7" />
 
-# Question 1
+## Question 1
 
 Which of the following dimensionality reduction methods is non-linear?
 
@@ -30,7 +30,7 @@ Which of the following dimensionality reduction methods is non-linear?
 >
 > In contrast, **PCA** and **Truncated SVD** are linear techniques, while **Fisher Score** is a feature selection method rather than a dimensionality reduction technique.
 
-# Question 2
+## Question 2
 
 Which technique is used in Latent Semantic Analysis (LSA) for text data dimensionality reduction?
 
@@ -50,7 +50,7 @@ Which technique is used in Latent Semantic Analysis (LSA) for text data dimensio
 >
 > **Latent Semantic Analysis (LSA)** relies on **Singular Value Decomposition (SVD)** to decompose the document-term matrix into lower-dimensional latent factors. These latent factors capture hidden semantic relationships between terms and documents.
 
-# Question 3
+## Question 3
 
 Which of the following is *not* a reason for using dimensionality reduction?
 
@@ -72,7 +72,7 @@ Which of the following is *not* a reason for using dimensionality reduction?
 >
 > Increasing the number of features is the opposite of dimensionality reduction.
 
-# Question 4
+## Question 4
 
 Which of the following statements is true about t-SNE?
 
@@ -94,7 +94,7 @@ Which of the following statements is true about t-SNE?
 >
 > It is computationally expensive, non-linear, and is not typically used for feature selection or covariance matrix decomposition.
 
-# Question 5
+## Question 5
 
 In Principal Component Analysis (PCA), what are the principal components?
 
