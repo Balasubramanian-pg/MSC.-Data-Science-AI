@@ -34,3 +34,5 @@ This document provides a rigorous technical analysis of Cluster Analysis. It est
 ## [15. Interview-Style Insights](./15.%20Interview-Style%20Insights.md)
 
 ## [16. Edge Cases & Failure Modes](./16.%20Edge%20Cases%20%26%20Failure%20Modes.md)
+
+## [17. Mental Models](./17.%20Mental%20Models.md)
