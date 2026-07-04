@@ -10,3 +10,5 @@
 ## [6.5.4. Assumption 1: Linearity](./6.5.4.%20Assumption%201%20-%20Linearity.md)
 
 ## [6.5.5. Assumption 2: Independence](./6.5.5.%20Assumption%202%20-%20Independence.md)
+
+## [6.5.6. Assumption 3: Normality](./6.5.6.%20Assumption%203%20-%20Normality.md)
