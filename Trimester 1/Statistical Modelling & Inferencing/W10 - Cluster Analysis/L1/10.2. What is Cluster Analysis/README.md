@@ -36,3 +36,5 @@ This document provides a rigorous technical analysis of Cluster Analysis. It est
 ## [16. Edge Cases & Failure Modes](./16.%20Edge%20Cases%20%26%20Failure%20Modes.md)
 
 ## [17. Mental Models](./17.%20Mental%20Models.md)
+
+## [18. Performance & Computational Insights](./18.%20Performance%20%26%20Computational%20Insights.md)
