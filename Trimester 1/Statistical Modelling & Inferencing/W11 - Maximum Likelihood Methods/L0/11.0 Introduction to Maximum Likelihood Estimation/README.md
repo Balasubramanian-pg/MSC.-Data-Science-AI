@@ -16,3 +16,5 @@
 ## [6. Visual Intuition and System Architecture](./6.%20Visual%20Intuition%20and%20System%20Architecture.md)
 
 ## [7. Python Implementations](./7.%20Python%20Implementations.md)
+
+## [8. Common Mistakes and Traps](./8.%20Common%20Mistakes%20and%20Traps.md)
