@@ -18,3 +18,5 @@ The transcript you provided is mostly accurate, but it glosses over a critical t
 ## [7 & 8. Python Implementations & Simulations](./7%20%26%208.%20Python%20Implementations%20%26%20Simulations.md)
 
 ## [9. Practical Engineering Examples](./9.%20Practical%20Engineering%20Examples.md)
+
+## [10. Common Mistakes & Traps](./10.%20Common%20Mistakes%20%26%20Traps.md)
