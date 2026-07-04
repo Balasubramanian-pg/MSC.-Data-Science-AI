@@ -30,3 +30,5 @@ This document provides a rigorous technical analysis of binary response models. 
 ## [12. Machine Learning Connections](./12.%20Machine%20Learning%20Connections.md)
 
 ## [13. Interview-Style Insights](./13.%20Interview-Style%20Insights.md)
+
+## [14. Edge Cases](./14.%20Edge%20Cases.md)
