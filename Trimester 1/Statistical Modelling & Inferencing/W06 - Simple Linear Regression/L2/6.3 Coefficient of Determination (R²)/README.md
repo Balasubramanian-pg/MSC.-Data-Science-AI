@@ -21,3 +21,5 @@
 ## [6.3.10. Adjusted R-Squared: Penalizing Complexity](./6.3.10.%20Adjusted%20R-Squared%20-%20Penalizing%20Complexity.md)
 
 ## [6.3.11. Contextualizing R-Squared Across Domains](./6.3.11.%20Contextualizing%20R-Squared%20Across%20Domains.md)
+
+## [6.3.12. Information-Theoretic and Geometric Perspectives](./6.3.12.%20Information-Theoretic%20and%20Geometric%20Perspectives.md)
