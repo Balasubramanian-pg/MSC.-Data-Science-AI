@@ -29,3 +29,5 @@
 ## [3.5 Multi-Stage Sampling](./3.5%20Multi-Stage%20Sampling.md)
 
 ## [3.6 Probability Proportional to Size (PPS) Sampling](./3.6%20Probability%20Proportional%20to%20Size%20%28PPS%29%20Sampling.md)
+
+## [4.1 Convenience Sampling](./4.1%20Convenience%20Sampling.md)
