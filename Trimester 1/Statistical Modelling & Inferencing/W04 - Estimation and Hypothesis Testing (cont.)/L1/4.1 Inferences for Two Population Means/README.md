@@ -26,3 +26,5 @@
 ## [4.1.12. Why Paired Designs Are More Powerful](./4.1.12.%20Why%20Paired%20Designs%20Are%20More%20Powerful.md)
 
 ## [4.1.13. Comparing Independent and Paired Samples](./4.1.13.%20Comparing%20Independent%20and%20Paired%20Samples.md)
+
+## [4.1.14. Conclusions](./4.1.14.%20Conclusions.md)
