@@ -15,3 +15,5 @@
 ## [7.0.7. The Danger of Naive R-Squared and Overfitting](./7.0.7.%20The%20Danger%20of%20Naive%20R-Squared%20and%20Overfitting.md)
 
 ## [7.0.8. Adjusted R-Squared](./7.0.8.%20Adjusted%20R-Squared.md)
+
+## [7.0.9. Interpretation Challenges in Multiple Regression](./7.0.9.%20Interpretation%20Challenges%20in%20Multiple%20Regression.md)
