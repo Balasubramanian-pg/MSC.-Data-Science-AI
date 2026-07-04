@@ -69,3 +69,5 @@
 ## [7.5 Bootstrap Confidence Intervals](./7.5%20Bootstrap%20Confidence%20Intervals.md)
 
 ## [7.6 Confidence Interval Diagram](./7.6%20Confidence%20Interval%20Diagram.md)
+
+## [8.1 Principles](./8.1%20Principles.md)
