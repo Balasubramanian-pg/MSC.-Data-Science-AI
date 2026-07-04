@@ -23,3 +23,5 @@
 ## [5.1.10. From Experimental Design to Statistical Analysis](./5.1.10.%20From%20Experimental%20Design%20to%20Statistical%20Analysis.md)
 
 ## [5.1.11. Why Multiple t-Tests Are Problematic](./5.1.11.%20Why%20Multiple%20t-Tests%20Are%20Problematic.md)
+
+## [5.1.12. The Core Logic of ANOVA: Signal vs Noise](./5.1.12.%20The%20Core%20Logic%20of%20ANOVA%20-%20Signal%20vs%20Noise.md)
