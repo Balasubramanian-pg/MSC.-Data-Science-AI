@@ -7,3 +7,5 @@
 ## [4.2.3. The Logic Behind Variance Comparison](./4.2.3.%20The%20Logic%20Behind%20Variance%20Comparison.md)
 
 ## [4.2.4. The F-Distribution](./4.2.4.%20The%20F-Distribution.md)
+
+## [4.2.5. Properties of the F-Distribution](./4.2.5.%20Properties%20of%20the%20F-Distribution.md)
