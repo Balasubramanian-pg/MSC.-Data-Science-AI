@@ -21,3 +21,5 @@
 ## [6.4.10. Equivalence of the t-Test and F-Test in Simple Regression](./6.4.10.%20Equivalence%20of%20the%20t-Test%20and%20F-Test%20in%20Simple%20Regression.md)
 
 ## [6.4.11. Common Misinterpretations of Significance](./6.4.11.%20Common%20Misinterpretations%20of%20Significance.md)
+
+## [6.4.12. Conclusions](./6.4.12.%20Conclusions.md)
