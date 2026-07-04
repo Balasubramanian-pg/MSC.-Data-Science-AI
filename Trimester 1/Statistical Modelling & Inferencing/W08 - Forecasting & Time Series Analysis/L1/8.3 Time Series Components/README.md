@@ -11,3 +11,5 @@
 ## [8.3.5. Example of Additive Component Extraction](./8.3.5.%20Example%20of%20Additive%20Component%20Extraction.md)
 
 ## [8.3.6. The Multiplicative Model](./8.3.6.%20The%20Multiplicative%20Model.md)
+
+## [8.3.7. Example of Multiplicative Component Extraction](./8.3.7.%20Example%20of%20Multiplicative%20Component%20Extraction.md)
