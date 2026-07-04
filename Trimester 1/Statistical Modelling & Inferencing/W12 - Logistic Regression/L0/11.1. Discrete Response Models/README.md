@@ -38,3 +38,5 @@ This document provides a rigorous technical analysis of Logistic Regression with
 ## [16. Edge Cases](./16.%20Edge%20Cases.md)
 
 ## [17. Mental Models](./17.%20Mental%20Models.md)
+
+## [18. Performance/Computational Insights](./18.%20PerformanceComputational%20Insights.md)
