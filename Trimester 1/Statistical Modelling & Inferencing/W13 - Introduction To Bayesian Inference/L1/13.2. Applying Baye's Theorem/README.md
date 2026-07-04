@@ -8,3 +8,5 @@
 ## [2. Intuition and Real-World Analogy](./2.%20Intuition%20and%20Real-World%20Analogy.md)
 
 ## [3. Mathematical Explanation and Formula Breakdown](./3.%20Mathematical%20Explanation%20and%20Formula%20Breakdown.md)
+
+## [4. Step-by-Step Derivation: Expanding the Evidence](./4.%20Step-by-Step%20Derivation%20-%20Expanding%20the%20Evidence.md)
