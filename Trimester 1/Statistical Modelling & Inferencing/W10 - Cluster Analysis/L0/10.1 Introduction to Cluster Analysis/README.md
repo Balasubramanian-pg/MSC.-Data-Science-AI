@@ -13,3 +13,5 @@
 ## [10.1.6. The Importance of Data Preprocessing](./10.1.6.%20The%20Importance%20of%20Data%20Preprocessing.md)
 
 ## [10.1.7. Z-Score Standardization](./10.1.7.%20Z-Score%20Standardization.md)
+
+## [10.1.8. Algorithmic Approaches to Clustering](./10.1.8.%20Algorithmic%20Approaches%20to%20Clustering.md)
