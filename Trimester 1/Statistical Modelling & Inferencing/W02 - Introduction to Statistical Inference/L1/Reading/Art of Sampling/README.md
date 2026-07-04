@@ -53,3 +53,5 @@
 ## [6.2 Method of Moments](./6.2%20Method%20of%20Moments.md)
 
 ## [6.3 Maximum Likelihood Estimation (MLE)](./6.3%20Maximum%20Likelihood%20Estimation%20%28MLE%29.md)
+
+## [6.4 Bayesian Estimation](./6.4%20Bayesian%20Estimation.md)
