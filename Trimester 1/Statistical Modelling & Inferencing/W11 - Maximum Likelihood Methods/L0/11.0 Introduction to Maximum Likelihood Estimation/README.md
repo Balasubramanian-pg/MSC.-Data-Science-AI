@@ -12,3 +12,5 @@
 ## [4. Mathematical Explanation and Formula Breakdowns](./4.%20Mathematical%20Explanation%20and%20Formula%20Breakdowns.md)
 
 ## [5. Step-by-Step Derivation: MLE for a Coin Toss (Bernoulli)](./5.%20Step-by-Step%20Derivation%20-%20MLE%20for%20a%20Coin%20Toss%20%28Bernoulli%29.md)
+
+## [6. Visual Intuition and System Architecture](./6.%20Visual%20Intuition%20and%20System%20Architecture.md)
