@@ -19,3 +19,5 @@
 ## [8.0.9. Structured Forecasting Process](./8.0.9.%20Structured%20Forecasting%20Process.md)
 
 ## [8.0.10. Common Misinterpretations and Pitfalls](./8.0.10.%20Common%20Misinterpretations%20and%20Pitfalls.md)
+
+## [8.0.11. Conclusions](./8.0.11.%20Conclusions.md)
