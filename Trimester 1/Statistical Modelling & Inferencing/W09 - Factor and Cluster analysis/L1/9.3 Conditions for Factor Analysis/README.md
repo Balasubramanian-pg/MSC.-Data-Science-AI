@@ -17,3 +17,5 @@
 ## [9.3.8. The KMO Measure of Sampling Adequacy](./9.3.8.%20The%20KMO%20Measure%20of%20Sampling%20Adequacy.md)
 
 ## [9.3.9. Example of a KMO Calculation](./9.3.9.%20Example%20of%20a%20KMO%20Calculation.md)
+
+## [9.3.10. The Anti-Image Correlation Matrix](./9.3.10.%20The%20Anti-Image%20Correlation%20Matrix.md)
