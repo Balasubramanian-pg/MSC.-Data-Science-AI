@@ -21,3 +21,5 @@
 ## [3.2.10. Example of Sample Size for a Proportion](./3.2.10.%20Example%20of%20Sample%20Size%20for%20a%20Proportion.md)
 
 ## [3.2.11. Factors Affecting Sample Size](./3.2.11.%20Factors%20Affecting%20Sample%20Size.md)
+
+## [3.2.12. Sample Size vs Hypothesis Testing](./3.2.12.%20Sample%20Size%20vs%20Hypothesis%20Testing.md)
