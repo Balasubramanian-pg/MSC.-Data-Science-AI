@@ -23,3 +23,5 @@
 ## [5.2.11. Two-Way ANOVA](./5.2.11.%20Two-Way%20ANOVA.md)
 
 ## [5.2.12. Main Effects](./5.2.12.%20Main%20Effects.md)
+
+## [5.2.13. Interaction Effects](./5.2.13.%20Interaction%20Effects.md)
