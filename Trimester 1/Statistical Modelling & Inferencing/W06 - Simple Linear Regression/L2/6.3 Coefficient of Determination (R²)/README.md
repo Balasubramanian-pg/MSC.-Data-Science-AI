@@ -1,3 +1,5 @@
 # 6.3. The Coefficient of Determination
 
 ## [6.3.1. Why We Need a Measure of Fit](./6.3.1.%20Why%20We%20Need%20a%20Measure%20of%20Fit.md)
+
+## [6.3.2. The Core Intuition Behind the Coefficient of Determination](./6.3.2.%20The%20Core%20Intuition%20Behind%20the%20Coefficient%20of%20Determination.md)
