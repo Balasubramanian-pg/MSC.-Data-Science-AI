@@ -16,3 +16,5 @@ This document provides a rigorous technical analysis of the K-Means clustering a
 ## [5. Production Constraints and Failure Modes](./5.%20Production%20Constraints%20and%20Failure%20Modes.md)
 
 ## [6. Production-Grade Python Implementation](./6.%20Production-Grade%20Python%20Implementation.md)
+
+## [7. Advanced Variants and Scaling](./7.%20Advanced%20Variants%20and%20Scaling.md)
