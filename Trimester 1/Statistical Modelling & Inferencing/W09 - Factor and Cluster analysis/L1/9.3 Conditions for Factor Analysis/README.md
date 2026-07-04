@@ -19,3 +19,5 @@
 ## [9.3.9. Example of a KMO Calculation](./9.3.9.%20Example%20of%20a%20KMO%20Calculation.md)
 
 ## [9.3.10. The Anti-Image Correlation Matrix](./9.3.10.%20The%20Anti-Image%20Correlation%20Matrix.md)
+
+## [9.3.11. The Communality Constraint](./9.3.11.%20The%20Communality%20Constraint.md)
