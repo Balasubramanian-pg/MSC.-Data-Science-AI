@@ -1,3 +1,9 @@
+---
+title: W02 - Handling Numeric Data
+module: Statistical Modelling And Inferencing
+week: W02 - Handling Numeric Data
+---
+
 **Dataset here for your practice : **[Titanic-Dataset.xlsx](https://lumen.bitspilani-digital.edu.in/content/enforced/7097-T3-25_MDSDF403/Titanic-Dataset.xlsx?isCourseFile=true&ou=7097)****
 
 This experiential learning exercise is a perfect application of the concepts covered in Weeks 1 and 2. The Titanic dataset is historically significant in data science precisely because it forces you to navigate the messy, real-world nature of data before you ever touch an algorithm.
