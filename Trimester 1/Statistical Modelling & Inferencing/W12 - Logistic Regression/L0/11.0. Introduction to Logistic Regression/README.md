@@ -24,3 +24,5 @@ This document provides a rigorous technical analysis of binary response models. 
 ## [9. Common Mistakes](./9.%20Common%20Mistakes.md)
 
 ## [10. Visual Intuition](./10.%20Visual%20Intuition.md)
+
+## [11. Mermaid Diagrams](./11.%20Mermaid%20Diagrams.md)
