@@ -31,3 +31,5 @@
 ## [3.6 Probability Proportional to Size (PPS) Sampling](./3.6%20Probability%20Proportional%20to%20Size%20%28PPS%29%20Sampling.md)
 
 ## [4.1 Convenience Sampling](./4.1%20Convenience%20Sampling.md)
+
+## [4.2 Quota Sampling](./4.2%20Quota%20Sampling.md)
