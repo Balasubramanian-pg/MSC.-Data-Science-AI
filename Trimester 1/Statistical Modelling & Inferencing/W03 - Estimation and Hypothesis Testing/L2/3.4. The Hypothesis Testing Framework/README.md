@@ -7,3 +7,5 @@
 ## [3.4.3. The Courtroom Analogy](./3.4.3.%20The%20Courtroom%20Analogy.md)
 
 ## [3.4.4. The Null Hypothesis](./3.4.4.%20The%20Null%20Hypothesis.md)
+
+## [3.4.5. The Alternative Hypothesis](./3.4.5.%20The%20Alternative%20Hypothesis.md)
