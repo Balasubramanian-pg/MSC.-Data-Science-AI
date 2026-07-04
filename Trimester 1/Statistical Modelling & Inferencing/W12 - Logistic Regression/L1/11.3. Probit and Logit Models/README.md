@@ -18,3 +18,5 @@
 ## [7. Mathematical Estimation: Maximum Likelihood (MLE)](./7.%20Mathematical%20Estimation%20-%20Maximum%20Likelihood%20%28MLE%29.md)
 
 ## [8. Common Mistakes and Traps](./8.%20Common%20Mistakes%20and%20Traps.md)
+
+## [9. Edge Cases: Complete Separation](./9.%20Edge%20Cases%20-%20Complete%20Separation.md)
