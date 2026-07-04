@@ -9,3 +9,5 @@
 ## [7.3.4. The Mathematical Mechanism Behind the Flaw](./7.3.4.%20The%20Mathematical%20Mechanism%20Behind%20the%20Flaw.md)
 
 ## [7.3.5. The Danger of Overfitting](./7.3.5.%20The%20Danger%20of%20Overfitting.md)
+
+## [7.3.6. The Bias-Variance Tradeoff](./7.3.6.%20The%20Bias-Variance%20Tradeoff.md)
