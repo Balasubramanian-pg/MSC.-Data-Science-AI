@@ -24,3 +24,5 @@ This document provides a rigorous technical analysis of Cluster Analysis. It est
 ## [10. Common Mistakes & Traps](./10.%20Common%20Mistakes%20%26%20Traps.md)
 
 ## [11. Visual Intuition](./11.%20Visual%20Intuition.md)
+
+## [12. System Architecture: Unsupervised Learning Pipeline](./12.%20System%20Architecture%20-%20Unsupervised%20Learning%20Pipeline.md)
