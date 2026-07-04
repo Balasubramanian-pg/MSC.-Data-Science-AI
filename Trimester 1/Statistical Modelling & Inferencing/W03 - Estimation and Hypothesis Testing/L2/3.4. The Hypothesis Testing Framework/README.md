@@ -33,3 +33,5 @@
 ## [3.4.16. Rejection Regions and Critical Values](./3.4.16.%20Rejection%20Regions%20and%20Critical%20Values.md)
 
 ## [3.4.17. The Deep Structure of Hypothesis Testing](./3.4.17.%20The%20Deep%20Structure%20of%20Hypothesis%20Testing.md)
+
+## [3.4.18. Conclusions](./3.4.18.%20Conclusions.md)
