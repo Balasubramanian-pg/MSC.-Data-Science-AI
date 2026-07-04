@@ -21,3 +21,5 @@
 ## [5.0.10. The F-Statistic in ANOVA](./5.0.10.%20The%20F-Statistic%20in%20ANOVA.md)
 
 ## [5.0.11. Within-Group Variability](./5.0.11.%20Within-Group%20Variability.md)
+
+## [5.0.12. Between-Group Variability](./5.0.12.%20Between-Group%20Variability.md)
