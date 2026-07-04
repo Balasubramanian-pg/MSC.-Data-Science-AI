@@ -19,3 +19,5 @@
 ## [8.5.9. The Multiplicative Holt-Winters Method](./8.5.9.%20The%20Multiplicative%20Holt-Winters%20Method.md)
 
 ## [8.5.10. Common Misinterpretations](./8.5.10.%20Common%20Misinterpretations.md)
+
+## [8.5.11. Conclusions](./8.5.11.%20Conclusions.md)
