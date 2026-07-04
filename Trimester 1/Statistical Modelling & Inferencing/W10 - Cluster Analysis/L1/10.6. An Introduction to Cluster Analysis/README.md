@@ -27,3 +27,5 @@
 ## [10.6.13. K-Means Clustering](./10.6.13.%20K-Means%20Clustering.md)
 
 ## [10.6.14. The K-Means Algorithmic Process](./10.6.14.%20The%20K-Means%20Algorithmic%20Process.md)
+
+## [10.6.15. Example of a K-Means Centroid Update](./10.6.15.%20Example%20of%20a%20K-Means%20Centroid%20Update.md)
