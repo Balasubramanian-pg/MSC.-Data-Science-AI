@@ -9,3 +9,5 @@
 ## [4.3.4. The Core Logic of the Chi-Square Test](./4.3.4.%20The%20Core%20Logic%20of%20the%20Chi-Square%20Test.md)
 
 ## [4.3.5. Observed Frequencies](./4.3.5.%20Observed%20Frequencies.md)
+
+## [4.3.6. Expected Frequencies](./4.3.6.%20Expected%20Frequencies.md)
