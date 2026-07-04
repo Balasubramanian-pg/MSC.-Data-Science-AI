@@ -17,3 +17,5 @@
 ## [8.3.8. The Log-Transformation Bridge](./8.3.8.%20The%20Log-Transformation%20Bridge.md)
 
 ## [8.3.9. Diagnostic Selection: Choosing the Correct Framework](./8.3.9.%20Diagnostic%20Selection%20-%20Choosing%20the%20Correct%20Framework.md)
+
+## [8.3.10. Strategic Implications of Decomposition](./8.3.10.%20Strategic%20Implications%20of%20Decomposition.md)
