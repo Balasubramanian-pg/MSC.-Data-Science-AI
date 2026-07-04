@@ -15,3 +15,5 @@
 ## [6.0.7. The Least Squares Principle](./6.0.7.%20The%20Least%20Squares%20Principle.md)
 
 ## [6.0.8. Residuals: Measuring Prediction Error](./6.0.8.%20Residuals%20-%20Measuring%20Prediction%20Error.md)
+
+## [6.0.9. Model Significance and Hypothesis Testing](./6.0.9.%20Model%20Significance%20and%20Hypothesis%20Testing.md)
