@@ -17,3 +17,5 @@
 ## [3.1.8. Z-Interval for the Mean](./3.1.8.%20Z-Interval%20for%20the%20Mean.md)
 
 ## [3.1.9. Example of a Z-Interval](./3.1.9.%20Example%20of%20a%20Z-Interval.md)
+
+## [3.1.10. Why the Z-Interval Is Rare in Practice](./3.1.10.%20Why%20the%20Z-Interval%20Is%20Rare%20in%20Practice.md)
