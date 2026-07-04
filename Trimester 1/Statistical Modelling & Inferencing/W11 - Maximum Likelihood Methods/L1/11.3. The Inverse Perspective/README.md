@@ -30,3 +30,5 @@ This document provides a rigorous technical analysis of Maximum Likelihood Estim
 ## [12. Mermaid Diagrams](./12.%20Mermaid%20Diagrams.md)
 
 ## [13. Real-World Applications](./13.%20Real-World%20Applications.md)
+
+## [14. Machine Learning Connections](./14.%20Machine%20Learning%20Connections.md)
