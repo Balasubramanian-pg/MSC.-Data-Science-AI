@@ -10,3 +10,5 @@
 ## [3. Mathematical Explanation: Probability vs. Odds](./3.%20Mathematical%20Explanation%20-%20Probability%20vs.%20Odds.md)
 
 ## [4. Step-by-Step Derivation of the Odds Ratio](./4.%20Step-by-Step%20Derivation%20of%20the%20Odds%20Ratio.md)
+
+## [5. Interpretation Regimes](./5.%20Interpretation%20Regimes.md)
