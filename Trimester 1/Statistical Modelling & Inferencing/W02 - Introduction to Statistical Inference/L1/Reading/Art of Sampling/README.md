@@ -67,3 +67,5 @@
 ## [7.4 Confidence Intervals for Variance](./7.4%20Confidence%20Intervals%20for%20Variance.md)
 
 ## [7.5 Bootstrap Confidence Intervals](./7.5%20Bootstrap%20Confidence%20Intervals.md)
+
+## [7.6 Confidence Interval Diagram](./7.6%20Confidence%20Interval%20Diagram.md)
