@@ -1,0 +1,15 @@
+# 3.3.4. Interpreting the Correlation Coefficient
+
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/698cc8d5-54e1-47ae-9a11-17a5b5696b5b" />
+
+Because of the normalization step in the mathematical formulation, Pearson's correlation is strictly bounded. The following table summarizes the fixed ranges and their statistical interpretations.
+
+| Coefficient Value | Direction | Interpretation |
+|----------|----------|----------|
+| $$1.0$$ | Positive | Perfect positive linear relationship |
+| $$0.5$$ | Positive | Moderate positive linear relationship |
+| $$0.0$$ | None | No linear relationship present |
+| $$-0.5$$ | Negative | Moderate negative linear relationship |
+| $$-1.0$$ | Negative | Perfect negative linear relationship |
+
+A value of exactly zero indicates the complete absence of a linear relationship. Values approaching the extremes of the bounded range indicate increasingly stronger relationships, which we exploit strategically during feature engineering.
