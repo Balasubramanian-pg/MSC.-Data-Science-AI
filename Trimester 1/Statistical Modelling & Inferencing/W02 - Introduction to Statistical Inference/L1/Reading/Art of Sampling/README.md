@@ -71,3 +71,5 @@
 ## [7.6 Confidence Interval Diagram](./7.6%20Confidence%20Interval%20Diagram.md)
 
 ## [8.1 Principles](./8.1%20Principles.md)
+
+## [8.2 Sample Size for Estimating a Mean](./8.2%20Sample%20Size%20for%20Estimating%20a%20Mean.md)
