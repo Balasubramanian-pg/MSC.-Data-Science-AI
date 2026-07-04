@@ -16,3 +16,5 @@
 ## [6. Classic Engineering Application: The Medical Diagnosis Paradox](./6.%20Classic%20Engineering%20Application%20-%20The%20Medical%20Diagnosis%20Paradox.md)
 
 ## [7. Python Implementations](./7.%20Python%20Implementations.md)
+
+## [8. Common Mistakes and Traps](./8.%20Common%20Mistakes%20and%20Traps.md)
