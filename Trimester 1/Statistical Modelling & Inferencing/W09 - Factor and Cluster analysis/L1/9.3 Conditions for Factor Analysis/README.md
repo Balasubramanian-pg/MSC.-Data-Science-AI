@@ -11,3 +11,5 @@
 ## [9.3.5. Statistical Properties: Matrix Diagnostics](./9.3.5.%20Statistical%20Properties%20-%20Matrix%20Diagnostics.md)
 
 ## [9.3.6. Bartlett’s Test of Sphericity](./9.3.6.%20Bartlett%E2%80%99s%20Test%20of%20Sphericity.md)
+
+## [9.3.7. Example of Bartlett’s Test Calculation](./9.3.7.%20Example%20of%20Bartlett%E2%80%99s%20Test%20Calculation.md)
