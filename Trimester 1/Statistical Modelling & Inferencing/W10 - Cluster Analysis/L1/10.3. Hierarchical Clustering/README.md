@@ -16,3 +16,5 @@ The transcript you provided is mostly accurate, but it glosses over a critical t
 ## [6. Real-World Analogies](./6.%20Real-World%20Analogies.md)
 
 ## [7 & 8. Python Implementations & Simulations](./7%20%26%208.%20Python%20Implementations%20%26%20Simulations.md)
+
+## [9. Practical Engineering Examples](./9.%20Practical%20Engineering%20Examples.md)
