@@ -20,3 +20,5 @@
 ## [8. Real-World Engineering Examples](./8.%20Real-World%20Engineering%20Examples.md)
 
 ## [9. Common Mistakes and Edge Cases](./9.%20Common%20Mistakes%20and%20Edge%20Cases.md)
+
+## [10. Final Summary and Interview Guide](./10.%20Final%20Summary%20and%20Interview%20Guide.md)
