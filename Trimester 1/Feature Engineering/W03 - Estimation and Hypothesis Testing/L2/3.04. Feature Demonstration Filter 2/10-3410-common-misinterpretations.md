@@ -1,0 +1,24 @@
+# 3.4.10. Common Misinterpretations
+
+Despite its robust mathematical design, practitioners often misapply the rank correlation coefficient.
+
+### Interpretation 1
+>[!Warning]
+> "A perfect rank correlation implies a perfect linear relationship."
+
+Wrong. 
+A perfect rank correlation merely means the relationship is perfectly monotonic. The actual data points could form an aggressively curved exponential line.
+
+### Interpretation 2
+>[!Warning]
+> "Ranking the data preserves all original mathematical information."
+
+Wrong. 
+Converting continuous raw values into discrete sequential ranks inherently destroys information regarding the relative scale and distance between observations.
+
+### Interpretation 3
+>[!Warning]
+> "We only need to use Spearman's method and can abandon other filter metrics."
+
+Wrong. 
+While robust to outliers, relying exclusively on rank correlation can blind a practitioner to perfectly linear relationships where preserving the exact distance between raw values provides crucial predictive insights.
