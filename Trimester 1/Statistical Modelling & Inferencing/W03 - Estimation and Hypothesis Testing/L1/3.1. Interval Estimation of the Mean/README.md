@@ -25,3 +25,5 @@
 ## [3.1.12. Degrees of Freedom](./3.1.12.%20Degrees%20of%20Freedom.md)
 
 ## [3.1.13. T-Interval for the Mean](./3.1.13.%20T-Interval%20for%20the%20Mean.md)
+
+## [3.1.14. Example of a T-Interval](./3.1.14.%20Example%20of%20a%20T-Interval.md)
