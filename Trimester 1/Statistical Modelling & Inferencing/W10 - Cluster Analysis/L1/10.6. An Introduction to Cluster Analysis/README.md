@@ -11,3 +11,5 @@
 ## [10.6.5. Example of Computing Euclidean Distance](./10.6.5.%20Example%20of%20Computing%20Euclidean%20Distance.md)
 
 ## [10.6.6. Alternative Distance Metrics](./10.6.6.%20Alternative%20Distance%20Metrics.md)
+
+## [10.6.7. The Scale Trap: Why Standardization is Non-Negotiable](./10.6.7.%20The%20Scale%20Trap%20-%20Why%20Standardization%20is%20Non-Negotiable.md)
