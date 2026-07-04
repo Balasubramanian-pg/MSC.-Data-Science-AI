@@ -11,3 +11,5 @@
 ## [3.3.5. Type II Error: The False Negative](./3.3.5.%20Type%20II%20Error%20-%20The%20False%20Negative.md)
 
 ## [3.3.6. Statistical Power](./3.3.6.%20Statistical%20Power.md)
+
+## [3.3.7. The Tradeoff Between Error Types](./3.3.7.%20The%20Tradeoff%20Between%20Error%20Types.md)
