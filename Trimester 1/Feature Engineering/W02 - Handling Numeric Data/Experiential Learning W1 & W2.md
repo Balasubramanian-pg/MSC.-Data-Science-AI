@@ -113,23 +113,23 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, FunctionTransformer
 import numpy as np
 
-# Define columns by type
+## Define columns by type
 numeric_features = ['Age', 'SibSp', 'Parch', 'Fare']
 categorical_features = ['Sex', 'Embarked']
 
-# Numeric pipeline: Impute missing Age with median, then scale
+## Numeric pipeline: Impute missing Age with median, then scale
 numeric_transformer = Pipeline(steps=[
     ('imputer', SimpleImputer(strategy='median')),
     ('scaler', StandardScaler())
 ])
 
-# Categorical pipeline: Impute missing Embarked with mode, then One-Hot Encode
+## Categorical pipeline: Impute missing Embarked with mode, then One-Hot Encode
 categorical_transformer = Pipeline(steps=[
     ('imputer', SimpleImputer(strategy='most_frequent')),
     ('encoder', OneHotEncoder(handle_unknown='ignore'))
 ])
 
-# Combine into one preprocessor
+## Combine into one preprocessor
 preprocessor = ColumnTransformer(
     transformers=[
         ('num', numeric_transformer, numeric_features),
@@ -142,10 +142,10 @@ preprocessor = ColumnTransformer(
 As you noted, `Fare` is right-skewed. A log transformation compresses the tail, making the data more symmetric.
 
 ```python
-# Create a custom transformer for Log transformation
+## Create a custom transformer for Log transformation
 log_transformer = FunctionTransformer(np.log1p, validate=True)
 
-# You can add this into your numeric pipeline:
+## You can add this into your numeric pipeline:
 numeric_transformer = Pipeline(steps=[
     ('imputer', SimpleImputer(strategy='median')),
     ('log', log_transformer), # Apply log after imputation
@@ -177,9 +177,9 @@ If you want to turn `Age` into discrete categories ("Child", "Teen", etc.) inste
 ```python
 from sklearn.preprocessing import KBinsDiscretizer
 
-# Discretize Age into 4 bins
+## Discretize Age into 4 bins
 discretizer = KBinsDiscretizer(n_bins=4, encode='ordinal', strategy='quantile')
-# Use this in your pipeline to transform continuous Age to categorical bins
+## Use this in your pipeline to transform continuous Age to categorical bins
 ```
 
 ### 5. Evaluating Performance (The Stretch Goal)
@@ -191,13 +191,13 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
-# 1. Pipeline with all engineering steps
+## 1. Pipeline with all engineering steps
 full_pipeline = Pipeline(steps=[
     ('preprocessor', preprocessor),
     ('classifier', RandomForestClassifier(random_state=42))
 ])
 
-# 2. Train and Evaluate
+## 2. Train and Evaluate
 X_train, X_test, y_train, y_test = train_test_split(df.drop('Survived', axis=1), df['Survived'], test_size=0.2)
 full_pipeline.fit(X_train, y_train)
 preds = full_pipeline.predict(X_test)
