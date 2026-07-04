@@ -5,3 +5,5 @@
 ## [4.0.2. The Core Shift in This Module](./4.0.2.%20The%20Core%20Shift%20in%20This%20Module.md)
 
 ## [4.0.3. Why Comparative Inference Matters](./4.0.3.%20Why%20Comparative%20Inference%20Matters.md)
+
+## [4.0.4. Inference for Multiple Population Means](./4.0.4.%20Inference%20for%20Multiple%20Population%20Means.md)
