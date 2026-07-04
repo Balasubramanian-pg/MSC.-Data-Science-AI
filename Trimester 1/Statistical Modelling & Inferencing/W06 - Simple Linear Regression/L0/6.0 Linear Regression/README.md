@@ -13,3 +13,5 @@
 ## [6.0.6. Estimating the Regression Line](./6.0.6.%20Estimating%20the%20Regression%20Line.md)
 
 ## [6.0.7. The Least Squares Principle](./6.0.7.%20The%20Least%20Squares%20Principle.md)
+
+## [6.0.8. Residuals: Measuring Prediction Error](./6.0.8.%20Residuals%20-%20Measuring%20Prediction%20Error.md)
