@@ -55,3 +55,5 @@
 ## [6.3 Maximum Likelihood Estimation (MLE)](./6.3%20Maximum%20Likelihood%20Estimation%20%28MLE%29.md)
 
 ## [6.4 Bayesian Estimation](./6.4%20Bayesian%20Estimation.md)
+
+## [6.5 Estimator Properties Diagram](./6.5%20Estimator%20Properties%20Diagram.md)
