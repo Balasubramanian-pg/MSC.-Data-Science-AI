@@ -1,0 +1,7 @@
+# 3.6.1. Moving Beyond Statistical Correlation
+
+Traditional filter methods rely on strict mathematical assumptions. Pearson's correlation requires strict linear proportionality. Spearman's rank correlation requires consistent monotonic trajectories. The Chi-Square test strictly demands categorical distributions. 
+
+However, modern datasets frequently violate these assumptions. Complex systems generate features that interact with target variables in arbitrary, non-linear, and non-monotonic ways. A feature might form a sinusoidal wave, a complex clustering pattern, or a highly irregular distribution that purely statistical correlations fail to detect. 
+
+To capture these arbitrary dependencies, data scientists must pivot from traditional statistics to information theory. This pivot introduces a powerful class of filter methods known as information theoretic measures.
