@@ -27,3 +27,5 @@
 ## [5.2.13. Interaction Effects](./5.2.13.%20Interaction%20Effects.md)
 
 ## [5.2.14. Visualizing Interactions](./5.2.14.%20Visualizing%20Interactions.md)
+
+## [5.2.15. Example 3: Fertilizer and Plant Variety (Interaction Present)](./5.2.15.%20Example%203%20-%20Fertilizer%20and%20Plant%20Variety%20%28Interaction%20Present%29.md)
