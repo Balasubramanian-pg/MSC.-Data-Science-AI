@@ -15,3 +15,5 @@
 ## [3.3.7. The Tradeoff Between Error Types](./3.3.7.%20The%20Tradeoff%20Between%20Error%20Types.md)
 
 ## [3.3.8. The Role of Sample Size](./3.3.8.%20The%20Role%20of%20Sample%20Size.md)
+
+## [3.3.9. The P-Value: Quantifying Surprise](./3.3.9.%20The%20P-Value%20-%20Quantifying%20Surprise.md)
