@@ -11,3 +11,5 @@
 ## [7.1.5. The Most Important Concept: Partial Effect Interpretation](./7.1.5.%20The%20Most%20Important%20Concept%20-%20Partial%20Effect%20Interpretation.md)
 
 ## [7.1.6. Example of Multiple Regression Interpretation](./7.1.6.%20Example%20of%20Multiple%20Regression%20Interpretation.md)
+
+## [7.1.7. The Geometry of Multiple Regression](./7.1.7.%20The%20Geometry%20of%20Multiple%20Regression.md)
