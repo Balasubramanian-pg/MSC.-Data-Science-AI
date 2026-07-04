@@ -7,3 +7,5 @@
 ## [3.3.3. The Four Possible Outcomes](./3.3.3.%20The%20Four%20Possible%20Outcomes.md)
 
 ## [3.3.4. Type I Error: The False Positive](./3.3.4.%20Type%20I%20Error%20-%20The%20False%20Positive.md)
+
+## [3.3.5. Type II Error: The False Negative](./3.3.5.%20Type%20II%20Error%20-%20The%20False%20Negative.md)
