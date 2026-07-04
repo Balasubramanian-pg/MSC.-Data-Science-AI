@@ -7,3 +7,5 @@
 ## [7.2.3. Residual Errors and the Objective Function](./7.2.3.%20Residual%20Errors%20and%20the%20Objective%20Function.md)
 
 ## [7.2.4. Why Squaring the Errors Matters](./7.2.4.%20Why%20Squaring%20the%20Errors%20Matters.md)
+
+## [7.2.5. The Calculus-Based Optimization Problem](./7.2.5.%20The%20Calculus-Based%20Optimization%20Problem.md)
