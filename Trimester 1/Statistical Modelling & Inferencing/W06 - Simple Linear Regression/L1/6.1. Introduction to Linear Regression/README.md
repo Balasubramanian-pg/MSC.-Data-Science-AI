@@ -13,3 +13,5 @@
 ## [6.1.6. The Population Intercept](./6.1.6.%20The%20Population%20Intercept.md)
 
 ## [6.1.7. The Population Slope](./6.1.7.%20The%20Population%20Slope.md)
+
+## [6.1.8. The Error Term](./6.1.8.%20The%20Error%20Term.md)
