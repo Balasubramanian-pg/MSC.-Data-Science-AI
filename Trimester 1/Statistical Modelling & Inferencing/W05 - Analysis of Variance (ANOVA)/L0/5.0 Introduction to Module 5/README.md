@@ -7,3 +7,5 @@
 ## [5.0.3. Experimental Design](./5.0.3.%20Experimental%20Design.md)
 
 ## [5.0.4. Completely Randomized Designs](./5.0.4.%20Completely%20Randomized%20Designs.md)
+
+## [5.0.5. Why Randomization Matters](./5.0.5.%20Why%20Randomization%20Matters.md)
