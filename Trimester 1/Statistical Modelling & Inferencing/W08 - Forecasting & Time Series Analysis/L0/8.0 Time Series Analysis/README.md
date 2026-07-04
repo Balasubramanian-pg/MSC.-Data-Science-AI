@@ -11,3 +11,5 @@
 ## [8.0.5. Smoothing Methods: Simple Moving Average](./8.0.5.%20Smoothing%20Methods%20-%20Simple%20Moving%20Average.md)
 
 ## [8.0.6. Example of a Simple Moving Average](./8.0.6.%20Example%20of%20a%20Simple%20Moving%20Average.md)
+
+## [8.0.7. Exponential Smoothing](./8.0.7.%20Exponential%20Smoothing.md)
