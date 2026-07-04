@@ -15,3 +15,5 @@
 ## [8.4.7. The Mathematics of Exponential Decay](./8.4.7.%20The%20Mathematics%20of%20Exponential%20Decay.md)
 
 ## [8.4.8. The Flat-Line Limitation](./8.4.8.%20The%20Flat-Line%20Limitation.md)
+
+## [8.4.9. Common Misinterpretations](./8.4.9.%20Common%20Misinterpretations.md)
