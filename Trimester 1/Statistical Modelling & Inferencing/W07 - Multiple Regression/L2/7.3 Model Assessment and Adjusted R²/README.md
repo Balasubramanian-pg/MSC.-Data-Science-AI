@@ -27,3 +27,5 @@
 ## [7.3.13. Comparing R-Squared and Adjusted R-Squared](./7.3.13.%20Comparing%20R-Squared%20and%20Adjusted%20R-Squared.md)
 
 ## [7.3.14. Connection to Machine Learning and Regularization](./7.3.14.%20Connection%20to%20Machine%20Learning%20and%20Regularization.md)
+
+## [7.3.15. Common Misinterpretations](./7.3.15.%20Common%20Misinterpretations.md)
