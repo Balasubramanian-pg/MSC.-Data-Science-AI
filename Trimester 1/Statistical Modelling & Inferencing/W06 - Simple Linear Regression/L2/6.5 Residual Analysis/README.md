@@ -14,3 +14,5 @@
 ## [6.5.6. Assumption 3: Normality](./6.5.6.%20Assumption%203%20-%20Normality.md)
 
 ## [6.5.7. Assumption 4: Equal Variance (Homoscedasticity)](./6.5.7.%20Assumption%204%20-%20Equal%20Variance%20%28Homoscedasticity%29.md)
+
+## [6.5.8. Heteroscedasticity and Its Consequences](./6.5.8.%20Heteroscedasticity%20and%20Its%20Consequences.md)
