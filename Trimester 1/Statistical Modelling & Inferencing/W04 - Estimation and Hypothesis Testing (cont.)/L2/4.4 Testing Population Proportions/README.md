@@ -7,3 +7,5 @@
 ## [4.4.3. The Sample Proportion](./4.4.3.%20The%20Sample%20Proportion.md)
 
 ## [4.4.4. Sampling Distribution of the Sample Proportion](./4.4.4.%20Sampling%20Distribution%20of%20the%20Sample%20Proportion.md)
+
+## [4.4.5. Why Proportion Variability Depends on the True Proportion](./4.4.5.%20Why%20Proportion%20Variability%20Depends%20on%20the%20True%20Proportion.md)
