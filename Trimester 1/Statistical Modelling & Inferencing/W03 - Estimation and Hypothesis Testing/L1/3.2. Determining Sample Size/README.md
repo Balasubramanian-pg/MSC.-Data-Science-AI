@@ -25,3 +25,5 @@
 ## [3.2.12. Sample Size vs Hypothesis Testing](./3.2.12.%20Sample%20Size%20vs%20Hypothesis%20Testing.md)
 
 ## [3.2.13. Frequentist Planning vs Bayesian Updating](./3.2.13.%20Frequentist%20Planning%20vs%20Bayesian%20Updating.md)
+
+## [3.2.14. Common Misinterpretations](./3.2.14.%20Common%20Misinterpretations.md)
