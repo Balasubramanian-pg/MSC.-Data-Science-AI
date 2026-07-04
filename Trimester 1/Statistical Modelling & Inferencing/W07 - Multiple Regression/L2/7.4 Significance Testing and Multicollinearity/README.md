@@ -7,3 +7,5 @@
 ## [7.4.3. The F-Statistic and Variance Decomposition](./7.4.3.%20The%20F-Statistic%20and%20Variance%20Decomposition.md)
 
 ## [7.4.4. Individual Predictor Significance: The t-Test](./7.4.4.%20Individual%20Predictor%20Significance%20-%20The%20t-Test.md)
+
+## [7.4.5. Interpretation of t-Tests in Multiple Regression](./7.4.5.%20Interpretation%20of%20t-Tests%20in%20Multiple%20Regression.md)
