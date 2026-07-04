@@ -32,3 +32,5 @@ If you use "ELBO" in a machine learning interview when talking about K-Means, yo
 ## [16. Edge Cases & Failure Modes](./16.%20Edge%20Cases%20%26%20Failure%20Modes.md)
 
 ## [17 & 18. Mental Models & Performance/Computational Insights](./17%20%26%2018.%20Mental%20Models%20%26%20PerformanceComputational%20Insights.md)
+
+## [19. Advanced Notes: Beyond the Basics](./19.%20Advanced%20Notes%20-%20Beyond%20the%20Basics.md)
