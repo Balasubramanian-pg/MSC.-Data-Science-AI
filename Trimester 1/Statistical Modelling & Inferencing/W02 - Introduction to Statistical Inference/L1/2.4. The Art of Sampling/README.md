@@ -11,3 +11,5 @@
 ## [2.4.5. The Mathematical Implications of Bias](./2.4.5.%20The%20Mathematical%20Implications%20of%20Bias.md)
 
 ## [2.4.6. Example of Calculating Sampling Probabilities](./2.4.6.%20Example%20of%20Calculating%20Sampling%20Probabilities.md)
+
+## [2.4.7. Determining the Ideal Sample Size](./2.4.7.%20Determining%20the%20Ideal%20Sample%20Size.md)
