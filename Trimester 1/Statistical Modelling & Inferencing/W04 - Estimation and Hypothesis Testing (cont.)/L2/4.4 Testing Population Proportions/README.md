@@ -19,3 +19,5 @@
 ## [4.4.9. Why the Standard Error Uses the Hypothesized Proportion](./4.4.9.%20Why%20the%20Standard%20Error%20Uses%20the%20Hypothesized%20Proportion.md)
 
 ## [4.4.10. Example of a One-Sample Z-Test](./4.4.10.%20Example%20of%20a%20One-Sample%20Z-Test.md)
+
+## [4.4.11. Conditions for Validity](./4.4.11.%20Conditions%20for%20Validity.md)
