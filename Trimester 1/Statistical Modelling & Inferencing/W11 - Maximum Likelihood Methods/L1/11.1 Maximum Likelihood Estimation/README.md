@@ -40,3 +40,5 @@
 ## [18. Performance and Computational Insights](./18.%20Performance%20and%20Computational%20Insights.md)
 
 ## [19. Advanced Notes: Asymptotic Properties of MLE](./19.%20Advanced%20Notes%20-%20Asymptotic%20Properties%20of%20MLE.md)
+
+## [20. Final Takeaways](./20.%20Final%20Takeaways.md)
