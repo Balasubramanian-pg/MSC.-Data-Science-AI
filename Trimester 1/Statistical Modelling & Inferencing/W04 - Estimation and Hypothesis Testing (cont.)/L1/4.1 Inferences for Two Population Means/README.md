@@ -24,3 +24,5 @@
 ## [4.1.11. Example of a Paired t-Test](./4.1.11.%20Example%20of%20a%20Paired%20t-Test.md)
 
 ## [4.1.12. Why Paired Designs Are More Powerful](./4.1.12.%20Why%20Paired%20Designs%20Are%20More%20Powerful.md)
+
+## [4.1.13. Comparing Independent and Paired Samples](./4.1.13.%20Comparing%20Independent%20and%20Paired%20Samples.md)
