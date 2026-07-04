@@ -32,3 +32,5 @@ The transcript you provided is mostly accurate, but it glosses over a critical t
 ## [17 & 18. Mental Models & Performance/Computational Insights](./17%20%26%2018.%20Mental%20Models%20%26%20PerformanceComputational%20Insights.md)
 
 ## [19. Advanced Notes](./19.%20Advanced%20Notes.md)
+
+## [20. Final Takeaways & Roadmap](./20.%20Final%20Takeaways%20%26%20Roadmap.md)
