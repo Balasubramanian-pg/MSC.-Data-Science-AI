@@ -17,3 +17,5 @@
 ## [4.3.8. Hypotheses for the Chi-Square Test](./4.3.8.%20Hypotheses%20for%20the%20Chi-Square%20Test.md)
 
 ## [4.3.9. The Chi-Square Test Statistic](./4.3.9.%20The%20Chi-Square%20Test%20Statistic.md)
+
+## [4.3.10. Interpreting the Chi-Square Statistic](./4.3.10.%20Interpreting%20the%20Chi-Square%20Statistic.md)
