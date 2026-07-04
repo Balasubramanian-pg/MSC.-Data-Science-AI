@@ -20,3 +20,5 @@
 ## [8. Common Mistakes and Traps](./8.%20Common%20Mistakes%20and%20Traps.md)
 
 ## [9. Real-World Engineering Applications](./9.%20Real-World%20Engineering%20Applications.md)
+
+## [10. Final Summary and Interview Guide](./10.%20Final%20Summary%20and%20Interview%20Guide.md)
