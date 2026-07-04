@@ -41,3 +41,5 @@
 ## [Interpretation 2](./Interpretation%202.md)
 
 ## [Interpretation 3](./Interpretation%203.md)
+
+## [3.1.21. Deep Intuition Behind Confidence Intervals](./3.1.21.%20Deep%20Intuition%20Behind%20Confidence%20Intervals.md)
