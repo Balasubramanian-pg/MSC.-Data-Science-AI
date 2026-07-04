@@ -31,3 +31,5 @@
 ## [5.1.14. The F-Statistic](./5.1.14.%20The%20F-Statistic.md)
 
 ## [5.1.15. ANOVA Hypotheses](./5.1.15.%20ANOVA%20Hypotheses.md)
+
+## [5.1.16. Example of an ANOVA F-Test](./5.1.16.%20Example%20of%20an%20ANOVA%20F-Test.md)
