@@ -15,3 +15,5 @@
 ## [8.2.7. The Problem of Even-Numbered Windows](./8.2.7.%20The%20Problem%20of%20Even-Numbered%20Windows.md)
 
 ## [8.2.8. Edge Effects and Data Loss](./8.2.8.%20Edge%20Effects%20and%20Data%20Loss.md)
+
+## [8.2.9. Classical Decomposition Using Centered Averages](./8.2.9.%20Classical%20Decomposition%20Using%20Centered%20Averages.md)
