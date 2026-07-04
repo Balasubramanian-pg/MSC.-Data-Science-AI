@@ -15,3 +15,5 @@
 ## [9.2.7. Principal Component Analysis vs. Factor Analysis](./9.2.7.%20Principal%20Component%20Analysis%20vs.%20Factor%20Analysis.md)
 
 ## [9.2.8. Common Misinterpretations](./9.2.8.%20Common%20Misinterpretations.md)
+
+## [9.2.9. Conclusions](./9.2.9.%20Conclusions.md)
