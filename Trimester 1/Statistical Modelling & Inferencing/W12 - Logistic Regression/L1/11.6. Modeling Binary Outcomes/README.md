@@ -14,3 +14,5 @@ This document provides a rigorous technical analysis of binary response models. 
 ## [4. Formula Breakdowns](./4.%20Formula%20Breakdowns.md)
 
 ## [5. Step-by-Step Derivations](./5.%20Step-by-Step%20Derivations.md)
+
+## [6. Real-World Analogies](./6.%20Real-World%20Analogies.md)
