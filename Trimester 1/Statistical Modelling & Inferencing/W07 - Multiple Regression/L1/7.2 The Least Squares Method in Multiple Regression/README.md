@@ -23,3 +23,5 @@
 ## [7.2.11. The Deep Geometry of Least Squares](./7.2.11.%20The%20Deep%20Geometry%20of%20Least%20Squares.md)
 
 ## [7.2.12. Example of the Closed-Form OLS Solution](./7.2.12.%20Example%20of%20the%20Closed-Form%20OLS%20Solution.md)
+
+## [7.2.13. Computational Stability and Machine Learning](./7.2.13.%20Computational%20Stability%20and%20Machine%20Learning.md)
