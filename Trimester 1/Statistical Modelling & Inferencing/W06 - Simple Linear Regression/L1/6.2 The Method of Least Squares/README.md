@@ -7,3 +7,5 @@
 ## [6.2.2. The Geometry of Regression and Residuals](./6.2.2.%20The%20Geometry%20of%20Regression%20and%20Residuals.md)
 
 ## [6.2.3. Interpreting Residuals](./6.2.3.%20Interpreting%20Residuals.md)
+
+## [6.2.4. The Challenge of Aggregating Error](./6.2.4.%20The%20Challenge%20of%20Aggregating%20Error.md)
