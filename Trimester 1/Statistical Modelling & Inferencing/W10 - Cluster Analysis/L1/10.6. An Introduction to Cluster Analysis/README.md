@@ -15,3 +15,5 @@
 ## [10.6.7. The Scale Trap: Why Standardization is Non-Negotiable](./10.6.7.%20The%20Scale%20Trap%20-%20Why%20Standardization%20is%20Non-Negotiable.md)
 
 ## [10.6.8. The Z-Score Standardization Protocol](./10.6.8.%20The%20Z-Score%20Standardization%20Protocol.md)
+
+## [10.6.9. Example of Computing Z-Score Standardization](./10.6.9.%20Example%20of%20Computing%20Z-Score%20Standardization.md)
