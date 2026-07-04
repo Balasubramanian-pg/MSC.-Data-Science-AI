@@ -4,3 +4,5 @@
 ## [6.5.1. Why Model Diagnostics Matter](./6.5.1.%20Why%20Model%20Diagnostics%20Matter.md)
 
 ## [6.5.2. Residuals: The Foundation of Diagnostics](./6.5.2.%20Residuals%20-%20The%20Foundation%20of%20Diagnostics.md)
+
+## [6.5.3. The LINE Assumptions](./6.5.3.%20The%20LINE%20Assumptions.md)
