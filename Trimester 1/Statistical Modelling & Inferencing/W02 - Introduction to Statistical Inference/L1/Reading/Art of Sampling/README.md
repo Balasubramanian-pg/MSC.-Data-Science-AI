@@ -11,3 +11,5 @@
 ## [1.4 Conceptual Architecture](./1.4%20Conceptual%20Architecture.md)
 
 ## [2.1 The Population](./2.1%20The%20Population.md)
+
+## [2.2 Parameter Hierarchy](./2.2%20Parameter%20Hierarchy.md)
