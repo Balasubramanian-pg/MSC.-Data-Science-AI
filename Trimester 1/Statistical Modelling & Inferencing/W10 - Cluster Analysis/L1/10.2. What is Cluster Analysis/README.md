@@ -38,3 +38,5 @@ This document provides a rigorous technical analysis of Cluster Analysis. It est
 ## [17. Mental Models](./17.%20Mental%20Models.md)
 
 ## [18. Performance & Computational Insights](./18.%20Performance%20%26%20Computational%20Insights.md)
+
+## [19. Advanced Notes](./19.%20Advanced%20Notes.md)
