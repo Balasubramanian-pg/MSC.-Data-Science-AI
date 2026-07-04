@@ -8,3 +8,5 @@ This document provides a rigorous technical analysis of binary response models. 
 ## [1. Concept Introduction](./1.%20Concept%20Introduction.md)
 
 ## [2. Intuition Section](./2.%20Intuition%20Section.md)
+
+## [3. Mathematical Explanation](./3.%20Mathematical%20Explanation.md)
