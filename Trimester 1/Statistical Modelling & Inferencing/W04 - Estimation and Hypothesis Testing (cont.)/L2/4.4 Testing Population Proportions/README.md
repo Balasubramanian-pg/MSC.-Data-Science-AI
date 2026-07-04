@@ -25,3 +25,5 @@
 ## [4.4.12. Why Small Counts Are Problematic](./4.4.12.%20Why%20Small%20Counts%20Are%20Problematic.md)
 
 ## [4.4.13. The Two-Sample Z-Test for Proportions](./4.4.13.%20The%20Two-Sample%20Z-Test%20for%20Proportions.md)
+
+## [4.4.14. Hypotheses for the Two-Sample Test](./4.4.14.%20Hypotheses%20for%20the%20Two-Sample%20Test.md)
