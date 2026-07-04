@@ -17,3 +17,5 @@
 ## [2.3 The Sample](./2.3%20The%20Sample.md)
 
 ## [2.4 Philosophy of Inductive Inference](./2.4%20Philosophy%20of%20Inductive%20Inference.md)
+
+## [3.1 Simple Random Sampling (SRS)](./3.1%20Simple%20Random%20Sampling%20%28SRS%29.md)
