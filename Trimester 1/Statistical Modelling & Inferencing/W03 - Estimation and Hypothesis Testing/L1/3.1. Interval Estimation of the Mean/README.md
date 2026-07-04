@@ -23,3 +23,5 @@
 ## [3.1.11. The Student's t-Distribution](./3.1.11.%20The%20Student%27s%20t-Distribution.md)
 
 ## [3.1.12. Degrees of Freedom](./3.1.12.%20Degrees%20of%20Freedom.md)
+
+## [3.1.13. T-Interval for the Mean](./3.1.13.%20T-Interval%20for%20the%20Mean.md)
