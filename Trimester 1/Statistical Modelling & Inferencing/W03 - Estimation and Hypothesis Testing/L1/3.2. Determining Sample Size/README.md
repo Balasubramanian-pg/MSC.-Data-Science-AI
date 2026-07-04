@@ -7,3 +7,5 @@
 ## [3.2.3. The Core Objective of Sample Size Calculation](./3.2.3.%20The%20Core%20Objective%20of%20Sample%20Size%20Calculation.md)
 
 ## [3.2.4. The Engine Behind Sample Size: Margin of Error](./3.2.4.%20The%20Engine%20Behind%20Sample%20Size%20-%20Margin%20of%20Error.md)
+
+## [3.2.5. Sample Size for a Population Mean](./3.2.5.%20Sample%20Size%20for%20a%20Population%20Mean.md)
