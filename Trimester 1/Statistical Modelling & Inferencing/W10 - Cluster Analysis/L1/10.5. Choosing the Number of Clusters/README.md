@@ -14,3 +14,5 @@ If you use "ELBO" in a machine learning interview when talking about K-Means, yo
 ## [3 & 4. Mathematical Explanation & Formula Breakdowns](./3%20%26%204.%20Mathematical%20Explanation%20%26%20Formula%20Breakdowns.md)
 
 ## [5. Step-by-Step Derivations & Geometric Intuition](./5.%20Step-by-Step%20Derivations%20%26%20Geometric%20Intuition.md)
+
+## [6. Real-World Analogies](./6.%20Real-World%20Analogies.md)
