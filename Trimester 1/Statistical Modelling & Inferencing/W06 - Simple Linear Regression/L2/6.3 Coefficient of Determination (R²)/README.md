@@ -13,3 +13,5 @@
 ## [6.3.6. The Range and Interpretation of R-Squared](./6.3.6.%20The%20Range%20and%20Interpretation%20of%20R-Squared.md)
 
 ## [6.3.7. Example of Calculating and Interpreting R-Squared](./6.3.7.%20Example%20of%20Calculating%20and%20Interpreting%20R-Squared.md)
+
+## [6.3.8. The Connection Between Correlation and R-Squared](./6.3.8.%20The%20Connection%20Between%20Correlation%20and%20R-Squared.md)
