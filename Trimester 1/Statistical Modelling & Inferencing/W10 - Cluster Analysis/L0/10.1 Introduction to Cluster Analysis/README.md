@@ -15,3 +15,5 @@
 ## [10.1.7. Z-Score Standardization](./10.1.7.%20Z-Score%20Standardization.md)
 
 ## [10.1.8. Algorithmic Approaches to Clustering](./10.1.8.%20Algorithmic%20Approaches%20to%20Clustering.md)
+
+## [10.1.9. Partitioning Methods: The K-Means Framework](./10.1.9.%20Partitioning%20Methods%20-%20The%20K-Means%20Framework.md)
