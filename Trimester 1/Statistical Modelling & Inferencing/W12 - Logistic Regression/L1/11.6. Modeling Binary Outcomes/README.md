@@ -40,3 +40,5 @@ This document provides a rigorous technical analysis of binary response models. 
 ## [17. Mental Models](./17.%20Mental%20Models.md)
 
 ## [18. Performance and Computational Insights](./18.%20Performance%20and%20Computational%20Insights.md)
+
+## [19. Advanced Notes](./19.%20Advanced%20Notes.md)
