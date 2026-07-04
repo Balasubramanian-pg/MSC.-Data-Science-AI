@@ -19,3 +19,5 @@
 ## [4.3.9. The Chi-Square Test Statistic](./4.3.9.%20The%20Chi-Square%20Test%20Statistic.md)
 
 ## [4.3.10. Interpreting the Chi-Square Statistic](./4.3.10.%20Interpreting%20the%20Chi-Square%20Statistic.md)
+
+## [4.3.11. Why the Test Is Always Right-Tailed](./4.3.11.%20Why%20the%20Test%20Is%20Always%20Right-Tailed.md)
