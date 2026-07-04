@@ -16,3 +16,5 @@
 ## [6. Real-World Analogies](./6.%20Real-World%20Analogies.md)
 
 ## [7. Python Implementations](./7.%20Python%20Implementations.md)
+
+## [8. Python Simulations](./8.%20Python%20Simulations.md)
