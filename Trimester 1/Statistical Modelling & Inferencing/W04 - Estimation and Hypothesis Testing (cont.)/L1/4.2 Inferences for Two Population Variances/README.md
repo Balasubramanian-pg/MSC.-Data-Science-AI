@@ -19,3 +19,5 @@
 ## [4.2.9. Example of an F-Test for Variances](./4.2.9.%20Example%20of%20an%20F-Test%20for%20Variances.md)
 
 ## [4.2.10. The Critical Assumption of Normality](./4.2.10.%20The%20Critical%20Assumption%20of%20Normality.md)
+
+## [4.2.11. Why the F-Test Is Fragile](./4.2.11.%20Why%20the%20F-Test%20Is%20Fragile.md)
