@@ -13,3 +13,5 @@
 ## [9.0.6. Example of Calculating Variance Components](./9.0.6.%20Example%20of%20Calculating%20Variance%20Components.md)
 
 ## [9.0.7. The End-to-End Analytical Workflow](./9.0.7.%20The%20End-to-End%20Analytical%20Workflow.md)
+
+## [9.0.8. Selecting the Optimal Number of Factors](./9.0.8.%20Selecting%20the%20Optimal%20Number%20of%20Factors.md)
