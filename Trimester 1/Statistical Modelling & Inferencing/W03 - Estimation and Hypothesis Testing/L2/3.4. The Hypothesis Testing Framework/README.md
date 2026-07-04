@@ -13,3 +13,5 @@
 ## [3.4.6. One-Tailed vs Two-Tailed Tests](./3.4.6.%20One-Tailed%20vs%20Two-Tailed%20Tests.md)
 
 ## [3.4.7. The Four-Step Hypothesis Testing Framework](./3.4.7.%20The%20Four-Step%20Hypothesis%20Testing%20Framework.md)
+
+## [3.4.8. Step 1: State the Hypotheses](./3.4.8.%20Step%201%20-%20State%20the%20Hypotheses.md)
