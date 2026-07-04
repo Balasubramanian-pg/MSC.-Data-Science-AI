@@ -47,3 +47,5 @@
 ## [5.3 CLT Visualization and Implications](./5.3%20CLT%20Visualization%20and%20Implications.md)
 
 ## [5.4 Order Statistics and Their Distributions](./5.4%20Order%20Statistics%20and%20Their%20Distributions.md)
+
+## [6.1 Desirable Properties](./6.1%20Desirable%20Properties.md)
