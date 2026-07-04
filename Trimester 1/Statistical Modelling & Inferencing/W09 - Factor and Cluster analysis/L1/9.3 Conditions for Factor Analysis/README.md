@@ -5,3 +5,5 @@
 ## [9.3.2. The Philosophy of Latent Structures](./9.3.2.%20The%20Philosophy%20of%20Latent%20Structures.md)
 
 ## [9.3.3. Data Characteristics: The Quality Control Phase](./9.3.3.%20Data%20Characteristics%20-%20The%20Quality%20Control%20Phase.md)
+
+## [9.3.4. Example of Validating Sample Size Adequacy](./9.3.4.%20Example%20of%20Validating%20Sample%20Size%20Adequacy.md)
