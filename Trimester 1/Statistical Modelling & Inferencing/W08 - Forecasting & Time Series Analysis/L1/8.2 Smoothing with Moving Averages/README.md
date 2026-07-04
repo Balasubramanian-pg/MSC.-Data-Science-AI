@@ -19,3 +19,5 @@
 ## [8.2.9. Classical Decomposition Using Centered Averages](./8.2.9.%20Classical%20Decomposition%20Using%20Centered%20Averages.md)
 
 ## [8.2.10. Limitations of Simple Moving Averages](./8.2.10.%20Limitations%20of%20Simple%20Moving%20Averages.md)
+
+## [8.2.11. Transitioning to Exponential Smoothing](./8.2.11.%20Transitioning%20to%20Exponential%20Smoothing.md)
