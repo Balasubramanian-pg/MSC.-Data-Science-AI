@@ -5,3 +5,5 @@
 ## [2.4.2. Types of Sampling Mechanisms](./2.4.2.%20Types%20of%20Sampling%20Mechanisms.md)
 
 ## [2.4.3. Common Probability Sampling Techniques](./2.4.3.%20Common%20Probability%20Sampling%20Techniques.md)
+
+## [2.4.4. Non-Probability Sampling Techniques](./2.4.4.%20Non-Probability%20Sampling%20Techniques.md)
