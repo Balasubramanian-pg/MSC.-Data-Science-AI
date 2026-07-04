@@ -6,3 +6,5 @@
 ## [6.5.2. Residuals: The Foundation of Diagnostics](./6.5.2.%20Residuals%20-%20The%20Foundation%20of%20Diagnostics.md)
 
 ## [6.5.3. The LINE Assumptions](./6.5.3.%20The%20LINE%20Assumptions.md)
+
+## [6.5.4. Assumption 1: Linearity](./6.5.4.%20Assumption%201%20-%20Linearity.md)
