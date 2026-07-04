@@ -29,3 +29,5 @@
 ## [7.3.14. Connection to Machine Learning and Regularization](./7.3.14.%20Connection%20to%20Machine%20Learning%20and%20Regularization.md)
 
 ## [7.3.15. Common Misinterpretations](./7.3.15.%20Common%20Misinterpretations.md)
+
+## [7.3.16. Conclusions](./7.3.16.%20Conclusions.md)
