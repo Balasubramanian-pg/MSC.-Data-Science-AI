@@ -25,3 +25,5 @@
 ## [7.2.12. Example of the Closed-Form OLS Solution](./7.2.12.%20Example%20of%20the%20Closed-Form%20OLS%20Solution.md)
 
 ## [7.2.13. Computational Stability and Machine Learning](./7.2.13.%20Computational%20Stability%20and%20Machine%20Learning.md)
+
+## [7.2.14. Conclusions](./7.2.14.%20Conclusions.md)
