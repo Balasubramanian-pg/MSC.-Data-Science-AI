@@ -15,3 +15,5 @@
 ## [3.1.7. Confidence Level and Significance Level](./3.1.7.%20Confidence%20Level%20and%20Significance%20Level.md)
 
 ## [3.1.8. Z-Interval for the Mean](./3.1.8.%20Z-Interval%20for%20the%20Mean.md)
+
+## [3.1.9. Example of a Z-Interval](./3.1.9.%20Example%20of%20a%20Z-Interval.md)
