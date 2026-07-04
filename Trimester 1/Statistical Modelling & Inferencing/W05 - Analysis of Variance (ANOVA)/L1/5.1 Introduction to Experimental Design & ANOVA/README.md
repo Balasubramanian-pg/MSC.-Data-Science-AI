@@ -27,3 +27,5 @@
 ## [5.1.12. The Core Logic of ANOVA: Signal vs Noise](./5.1.12.%20The%20Core%20Logic%20of%20ANOVA%20-%20Signal%20vs%20Noise.md)
 
 ## [5.1.13. Mean Square for Treatments and Error](./5.1.13.%20Mean%20Square%20for%20Treatments%20and%20Error.md)
+
+## [5.1.14. The F-Statistic](./5.1.14.%20The%20F-Statistic.md)
