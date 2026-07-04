@@ -26,3 +26,5 @@ The transcript you provided is mostly accurate, but it glosses over a critical t
 ## [13 & 14. Real-World Applications & ML Connections](./13%20%26%2014.%20Real-World%20Applications%20%26%20ML%20Connections.md)
 
 ## [15. Interview-Style Insights](./15.%20Interview-Style%20Insights.md)
+
+## [16. Edge Cases & Failure Modes](./16.%20Edge%20Cases%20%26%20Failure%20Modes.md)
