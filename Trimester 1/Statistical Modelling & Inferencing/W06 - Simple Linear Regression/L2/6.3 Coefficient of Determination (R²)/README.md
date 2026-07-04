@@ -25,3 +25,5 @@
 ## [6.3.12. Information-Theoretic and Geometric Perspectives](./6.3.12.%20Information-Theoretic%20and%20Geometric%20Perspectives.md)
 
 ## [6.3.13. Common Misinterpretations](./6.3.13.%20Common%20Misinterpretations.md)
+
+## [6.3.14. Conclusions](./6.3.14.%20Conclusions.md)
