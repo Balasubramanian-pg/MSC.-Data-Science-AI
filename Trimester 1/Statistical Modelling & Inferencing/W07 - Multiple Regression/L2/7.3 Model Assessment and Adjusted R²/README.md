@@ -19,3 +19,5 @@
 ## [7.3.9. How the Complexity Penalty Works](./7.3.9.%20How%20the%20Complexity%20Penalty%20Works.md)
 
 ## [7.3.10. Example of Adjusted R-Squared Calculation](./7.3.10.%20Example%20of%20Adjusted%20R-Squared%20Calculation.md)
+
+## [7.3.11. Can Adjusted R-Squared Be Negative?](./7.3.11.%20Can%20Adjusted%20R-Squared%20Be%20Negative.md)
