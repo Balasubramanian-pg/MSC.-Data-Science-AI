@@ -1,1 +1,3 @@
 # 7.3. Model Assessment and Adjusted R-Squared
+
+## [7.3.1. Revisiting Model Fit and Variance Decomposition](./7.3.1.%20Revisiting%20Model%20Fit%20and%20Variance%20Decomposition.md)
