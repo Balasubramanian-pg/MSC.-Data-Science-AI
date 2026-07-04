@@ -4,3 +4,5 @@ This document provides a rigorous technical analysis of Logistic Regression with
 
 > [!IMPORTANT]
 > Logistic Regression is the foundational algorithm for modeling dichotomous outcomes ($Y \in \{0, 1\}$). Unlike Ordinary Least Squares (OLS) regression, which assumes a continuous, unbounded dependent variable, Logistic Regression utilizes a non-linear link function to map the linear predictor to the strict $[0, 1]$ probability space. Parameter estimation is performed via Maximum Likelihood Estimation (MLE), yielding asymptotically efficient, consistent estimators.
+
+## [1. Concept Introduction](./1.%20Concept%20Introduction.md)
