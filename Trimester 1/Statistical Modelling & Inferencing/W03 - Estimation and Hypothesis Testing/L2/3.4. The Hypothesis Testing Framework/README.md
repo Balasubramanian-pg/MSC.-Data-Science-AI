@@ -25,3 +25,5 @@
 ## [3.4.12. Common Test Statistics](./3.4.12.%20Common%20Test%20Statistics.md)
 
 ## [3.4.13. Example: Computing a Test Statistic](./3.4.13.%20Example%20-%20Computing%20a%20Test%20Statistic.md)
+
+## [3.4.14. Step 4: Compute the P-Value](./3.4.14.%20Step%204%20-%20Compute%20the%20P-Value.md)
