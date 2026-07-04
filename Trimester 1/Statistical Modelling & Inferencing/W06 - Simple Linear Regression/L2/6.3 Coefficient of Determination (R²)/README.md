@@ -7,3 +7,5 @@
 ## [6.3.3. Decomposition of Variation](./6.3.3.%20Decomposition%20of%20Variation.md)
 
 ## [6.3.4. The Sum of Squares Identity](./6.3.4.%20The%20Sum%20of%20Squares%20Identity.md)
+
+## [6.3.5. Defining the Coefficient of Determination](./6.3.5.%20Defining%20the%20Coefficient%20of%20Determination.md)
