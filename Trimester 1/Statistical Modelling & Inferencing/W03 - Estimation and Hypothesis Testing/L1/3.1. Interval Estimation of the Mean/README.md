@@ -33,3 +33,5 @@
 ## [3.1.16. Factors Affecting Interval Width](./3.1.16.%20Factors%20Affecting%20Interval%20Width.md)
 
 ## [3.1.17. One-Sided Confidence Intervals](./3.1.17.%20One-Sided%20Confidence%20Intervals.md)
+
+## [3.1.19. Frequentist Interpretation vs Bayesian Interpretation](./3.1.19.%20Frequentist%20Interpretation%20vs%20Bayesian%20Interpretation.md)
