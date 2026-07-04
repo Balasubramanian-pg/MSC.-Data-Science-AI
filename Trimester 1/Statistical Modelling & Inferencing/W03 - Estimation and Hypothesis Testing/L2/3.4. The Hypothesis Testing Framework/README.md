@@ -15,3 +15,5 @@
 ## [3.4.7. The Four-Step Hypothesis Testing Framework](./3.4.7.%20The%20Four-Step%20Hypothesis%20Testing%20Framework.md)
 
 ## [3.4.8. Step 1: State the Hypotheses](./3.4.8.%20Step%201%20-%20State%20the%20Hypotheses.md)
+
+## [3.4.9. Step 2: Set the Significance Level](./3.4.9.%20Step%202%20-%20Set%20the%20Significance%20Level.md)
