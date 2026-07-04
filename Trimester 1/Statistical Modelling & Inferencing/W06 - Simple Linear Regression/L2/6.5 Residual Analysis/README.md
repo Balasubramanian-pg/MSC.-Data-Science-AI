@@ -12,3 +12,5 @@
 ## [6.5.5. Assumption 2: Independence](./6.5.5.%20Assumption%202%20-%20Independence.md)
 
 ## [6.5.6. Assumption 3: Normality](./6.5.6.%20Assumption%203%20-%20Normality.md)
+
+## [6.5.7. Assumption 4: Equal Variance (Homoscedasticity)](./6.5.7.%20Assumption%204%20-%20Equal%20Variance%20%28Homoscedasticity%29.md)
