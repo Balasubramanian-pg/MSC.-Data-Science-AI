@@ -14,3 +14,5 @@
 ## [5. Visual Intuition and System Architecture](./5.%20Visual%20Intuition%20and%20System%20Architecture.md)
 
 ## [6. Python Implementations](./6.%20Python%20Implementations.md)
+
+## [7. Mathematical Estimation: Maximum Likelihood (MLE)](./7.%20Mathematical%20Estimation%20-%20Maximum%20Likelihood%20%28MLE%29.md)
