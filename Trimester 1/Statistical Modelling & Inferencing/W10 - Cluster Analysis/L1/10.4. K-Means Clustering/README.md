@@ -4,3 +4,5 @@ This document provides a rigorous technical analysis of the K-Means clustering a
 
 > [!IMPORTANT]
 > K-Means is a centroid-based, hard-assignment partitioning algorithm. It optimizes the Within-Cluster Sum of Squares (WCSS) objective function. It is fundamentally constrained to identifying convex, isotropic cluster geometries and requires explicit definition of the cluster count ($K$).
+
+## [1. Mathematical Formulation](./1.%20Mathematical%20Formulation.md)
