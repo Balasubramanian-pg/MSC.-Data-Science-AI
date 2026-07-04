@@ -3,3 +3,5 @@
 ## [7.3.1. Revisiting Model Fit and Variance Decomposition](./7.3.1.%20Revisiting%20Model%20Fit%20and%20Variance%20Decomposition.md)
 
 ## [7.3.2. The Coefficient of Determination](./7.3.2.%20The%20Coefficient%20of%20Determination.md)
+
+## [7.3.3. The Fundamental Flaw of R-Squared](./7.3.3.%20The%20Fundamental%20Flaw%20of%20R-Squared.md)
