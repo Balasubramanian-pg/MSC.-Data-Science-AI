@@ -7,3 +7,5 @@
 ## [10.6.3. Mathematical Representation of Similarity](./10.6.3.%20Mathematical%20Representation%20of%20Similarity.md)
 
 ## [10.6.4. The Euclidean Distance Metric](./10.6.4.%20The%20Euclidean%20Distance%20Metric.md)
+
+## [10.6.5. Example of Computing Euclidean Distance](./10.6.5.%20Example%20of%20Computing%20Euclidean%20Distance.md)
