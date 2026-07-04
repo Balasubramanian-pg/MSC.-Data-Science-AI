@@ -17,3 +17,5 @@
 ## [8.1.8. Forecasting Architectures](./8.1.8.%20Forecasting%20Architectures.md)
 
 ## [8.1.9. Common Misinterpretations](./8.1.9.%20Common%20Misinterpretations.md)
+
+## [8.1.10. Conclusions](./8.1.10.%20Conclusions.md)
