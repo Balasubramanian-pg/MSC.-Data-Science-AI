@@ -13,3 +13,5 @@
 ## [2.4.6. Example of Calculating Sampling Probabilities](./2.4.6.%20Example%20of%20Calculating%20Sampling%20Probabilities.md)
 
 ## [2.4.7. Determining the Ideal Sample Size](./2.4.7.%20Determining%20the%20Ideal%20Sample%20Size.md)
+
+## [2.4.8. Conclusions](./2.4.8.%20Conclusions.md)
