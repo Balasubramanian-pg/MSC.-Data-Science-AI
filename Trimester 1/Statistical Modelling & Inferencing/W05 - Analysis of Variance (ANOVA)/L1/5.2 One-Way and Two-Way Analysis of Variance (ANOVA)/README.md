@@ -19,3 +19,5 @@
 ## [5.2.9. Post-Hoc Testing](./5.2.9.%20Post-Hoc%20Testing.md)
 
 ## [5.2.10. Example 2: Fertilizer Types (Non-Significant Result)](./5.2.10.%20Example%202%20-%20Fertilizer%20Types%20%28Non-Significant%20Result%29.md)
+
+## [5.2.11. Two-Way ANOVA](./5.2.11.%20Two-Way%20ANOVA.md)
