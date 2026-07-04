@@ -16,3 +16,5 @@
 ## [4.1.7. Example of an Independent Two-Sample t-Test](./4.1.7.%20Example%20of%20an%20Independent%20Two-Sample%20t-Test.md)
 
 ## [4.1.8. Paired Samples](./4.1.8.%20Paired%20Samples.md)
+
+## [4.1.9. The Key Advantage of Pairing](./4.1.9.%20The%20Key%20Advantage%20of%20Pairing.md)
