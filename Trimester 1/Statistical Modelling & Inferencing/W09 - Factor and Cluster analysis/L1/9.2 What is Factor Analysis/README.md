@@ -5,3 +5,5 @@
 ## [9.2.2. The Dimensionality Reduction Solution](./9.2.2.%20The%20Dimensionality%20Reduction%20Solution.md)
 
 ## [9.2.3. Uncovering Latent Structure](./9.2.3.%20Uncovering%20Latent%20Structure.md)
+
+## [9.2.4. The Mathematical Structure of Latent Influence](./9.2.4.%20The%20Mathematical%20Structure%20of%20Latent%20Influence.md)
