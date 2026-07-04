@@ -8,3 +8,5 @@ The transcript you provided is mostly accurate, but it glosses over a critical t
 ## [1. Concept Introduction](./1.%20Concept%20Introduction.md)
 
 ## [2. Intuition: The Corporate Merger](./2.%20Intuition%20-%20The%20Corporate%20Merger.md)
+
+## [3 & 4. Mathematical Explanation & Formula Breakdowns](./3%20%26%204.%20Mathematical%20Explanation%20%26%20Formula%20Breakdowns.md)
