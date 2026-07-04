@@ -39,3 +39,5 @@
 ## [3.1.20. The Most Common Misinterpretations](./3.1.20.%20The%20Most%20Common%20Misinterpretations.md)
 
 ## [Interpretation 2](./Interpretation%202.md)
+
+## [Interpretation 3](./Interpretation%203.md)
