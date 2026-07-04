@@ -12,3 +12,5 @@ This document provides a rigorous technical analysis of Bayesian Inference. It d
 ## [3. Mathematical Explanation](./3.%20Mathematical%20Explanation.md)
 
 ## [4. Formula Breakdowns](./4.%20Formula%20Breakdowns.md)
+
+## [5. Step-by-Step Derivations](./5.%20Step-by-Step%20Derivations.md)
