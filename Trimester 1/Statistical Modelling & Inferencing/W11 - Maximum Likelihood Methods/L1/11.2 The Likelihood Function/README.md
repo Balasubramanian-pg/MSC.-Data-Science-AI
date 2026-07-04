@@ -26,3 +26,5 @@ This document provides a rigorous technical analysis of Maximum Likelihood Estim
 ## [10. Common Mistakes](./10.%20Common%20Mistakes.md)
 
 ## [11. Visual Intuition](./11.%20Visual%20Intuition.md)
+
+## [12. Mermaid Diagrams](./12.%20Mermaid%20Diagrams.md)
