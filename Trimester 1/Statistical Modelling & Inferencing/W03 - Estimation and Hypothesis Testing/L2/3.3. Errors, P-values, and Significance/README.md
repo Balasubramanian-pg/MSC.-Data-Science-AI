@@ -29,3 +29,5 @@
 ## [3.3.14. Confidence Intervals vs P-Values](./3.3.14.%20Confidence%20Intervals%20vs%20P-Values.md)
 
 ## [3.3.15. Common Misinterpretations](./3.3.15.%20Common%20Misinterpretations.md)
+
+## [3.3.16. Conclusions](./3.3.16.%20Conclusions.md)
