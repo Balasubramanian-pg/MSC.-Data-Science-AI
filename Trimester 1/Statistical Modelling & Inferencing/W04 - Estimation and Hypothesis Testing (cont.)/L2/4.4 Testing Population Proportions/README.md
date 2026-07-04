@@ -29,3 +29,5 @@
 ## [4.4.14. Hypotheses for the Two-Sample Test](./4.4.14.%20Hypotheses%20for%20the%20Two-Sample%20Test.md)
 
 ## [4.4.15. The Logic of Pooling](./4.4.15.%20The%20Logic%20of%20Pooling.md)
+
+## [4.4.16. The Two-Sample Z-Test Statistic](./4.4.16.%20The%20Two-Sample%20Z-Test%20Statistic.md)
