@@ -40,3 +40,5 @@ This document provides a rigorous technical analysis of coefficient interpretati
 ## [17. Mental Models](./17.%20Mental%20Models.md)
 
 ## [18. Performance and Computational Insights](./18.%20Performance%20and%20Computational%20Insights.md)
+
+## [20. Final Takeaways](./20.%20Final%20Takeaways.md)
