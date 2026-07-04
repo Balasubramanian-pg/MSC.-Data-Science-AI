@@ -11,3 +11,5 @@
 ## [7.3.5. The Danger of Overfitting](./7.3.5.%20The%20Danger%20of%20Overfitting.md)
 
 ## [7.3.6. The Bias-Variance Tradeoff](./7.3.6.%20The%20Bias-Variance%20Tradeoff.md)
+
+## [7.3.7. The Solution: Adjusted R-Squared](./7.3.7.%20The%20Solution%20-%20Adjusted%20R-Squared.md)
