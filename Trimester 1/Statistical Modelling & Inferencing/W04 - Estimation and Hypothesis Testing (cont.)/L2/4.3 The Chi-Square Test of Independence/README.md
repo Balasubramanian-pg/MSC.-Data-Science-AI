@@ -31,3 +31,5 @@
 ## [4.3.15. Conditions for Validity](./4.3.15.%20Conditions%20for%20Validity.md)
 
 ## [4.3.16. Why Small Expected Counts Are Dangerous](./4.3.16.%20Why%20Small%20Expected%20Counts%20Are%20Dangerous.md)
+
+## [4.3.17. Practical Remedies for Small Expected Counts](./4.3.17.%20Practical%20Remedies%20for%20Small%20Expected%20Counts.md)
