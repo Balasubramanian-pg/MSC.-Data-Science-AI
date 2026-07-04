@@ -13,3 +13,5 @@
 ## [4.0.6. Analysis of Variance (ANOVA)](./4.0.6.%20Analysis%20of%20Variance%20%28ANOVA%29.md)
 
 ## [4.0.7. Comparing Population Variances](./4.0.7.%20Comparing%20Population%20Variances.md)
+
+## [4.0.8. Testing Population Proportions](./4.0.8.%20Testing%20Population%20Proportions.md)
