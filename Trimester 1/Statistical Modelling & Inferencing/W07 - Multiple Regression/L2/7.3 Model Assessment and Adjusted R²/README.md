@@ -5,3 +5,5 @@
 ## [7.3.2. The Coefficient of Determination](./7.3.2.%20The%20Coefficient%20of%20Determination.md)
 
 ## [7.3.3. The Fundamental Flaw of R-Squared](./7.3.3.%20The%20Fundamental%20Flaw%20of%20R-Squared.md)
+
+## [7.3.4. The Mathematical Mechanism Behind the Flaw](./7.3.4.%20The%20Mathematical%20Mechanism%20Behind%20the%20Flaw.md)
