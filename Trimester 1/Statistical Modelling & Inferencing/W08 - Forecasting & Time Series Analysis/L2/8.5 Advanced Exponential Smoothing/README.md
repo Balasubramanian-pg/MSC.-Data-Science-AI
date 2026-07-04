@@ -11,3 +11,5 @@
 ## [8.5.5. The Damped Trend Strategy](./8.5.5.%20The%20Damped%20Trend%20Strategy.md)
 
 ## [8.5.6. The Holt-Winters Seasonal Method](./8.5.6.%20The%20Holt-Winters%20Seasonal%20Method.md)
+
+## [8.5.7. The Additive Holt-Winters Method](./8.5.7.%20The%20Additive%20Holt-Winters%20Method.md)
