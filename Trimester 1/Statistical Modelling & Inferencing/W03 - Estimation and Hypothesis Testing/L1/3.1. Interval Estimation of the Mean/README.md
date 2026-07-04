@@ -11,3 +11,5 @@
 ## [3.1.5. Confidence Intervals](./3.1.5.%20Confidence%20Intervals.md)
 
 ## [3.1.6. Understanding the Margin of Error](./3.1.6.%20Understanding%20the%20Margin%20of%20Error.md)
+
+## [3.1.7. Confidence Level and Significance Level](./3.1.7.%20Confidence%20Level%20and%20Significance%20Level.md)
