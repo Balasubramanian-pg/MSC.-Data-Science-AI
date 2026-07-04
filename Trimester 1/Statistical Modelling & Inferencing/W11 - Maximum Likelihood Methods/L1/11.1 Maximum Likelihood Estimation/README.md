@@ -38,3 +38,5 @@
 ## [17. Mental Models](./17.%20Mental%20Models.md)
 
 ## [18. Performance and Computational Insights](./18.%20Performance%20and%20Computational%20Insights.md)
+
+## [19. Advanced Notes: Asymptotic Properties of MLE](./19.%20Advanced%20Notes%20-%20Asymptotic%20Properties%20of%20MLE.md)
