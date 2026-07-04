@@ -8,3 +8,5 @@ This document provides a rigorous technical analysis of the K-Means clustering a
 ## [1. Mathematical Formulation](./1.%20Mathematical%20Formulation.md)
 
 ## [2. Algorithmic Execution: Lloyd's Algorithm](./2.%20Algorithmic%20Execution%20-%20Lloyd%27s%20Algorithm.md)
+
+## [3. Initialization Strategies](./3.%20Initialization%20Strategies.md)
