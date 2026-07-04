@@ -15,3 +15,5 @@
 ## [5.0.7. The Logic of Blocking](./5.0.7.%20The%20Logic%20of%20Blocking.md)
 
 ## [5.0.8. Introduction to Analysis of Variance (ANOVA)](./5.0.8.%20Introduction%20to%20Analysis%20of%20Variance%20%28ANOVA%29.md)
+
+## [5.0.9. Why ANOVA Uses Variance to Compare Means](./5.0.9.%20Why%20ANOVA%20Uses%20Variance%20to%20Compare%20Means.md)
