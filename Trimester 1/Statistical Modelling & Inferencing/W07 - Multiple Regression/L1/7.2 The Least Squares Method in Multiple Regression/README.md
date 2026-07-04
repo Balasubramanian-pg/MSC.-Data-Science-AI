@@ -9,3 +9,5 @@
 ## [7.2.4. Why Squaring the Errors Matters](./7.2.4.%20Why%20Squaring%20the%20Errors%20Matters.md)
 
 ## [7.2.5. The Calculus-Based Optimization Problem](./7.2.5.%20The%20Calculus-Based%20Optimization%20Problem.md)
+
+## [7.2.6. Matrix Representation of Regression](./7.2.6.%20Matrix%20Representation%20of%20Regression.md)
