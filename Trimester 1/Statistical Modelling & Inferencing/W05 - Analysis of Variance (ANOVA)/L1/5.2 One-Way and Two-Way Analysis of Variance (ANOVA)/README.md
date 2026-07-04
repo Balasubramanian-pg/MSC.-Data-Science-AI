@@ -25,3 +25,5 @@
 ## [5.2.12. Main Effects](./5.2.12.%20Main%20Effects.md)
 
 ## [5.2.13. Interaction Effects](./5.2.13.%20Interaction%20Effects.md)
+
+## [5.2.14. Visualizing Interactions](./5.2.14.%20Visualizing%20Interactions.md)
