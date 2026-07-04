@@ -27,3 +27,5 @@
 ## [4.3.13. Degrees of Freedom](./4.3.13.%20Degrees%20of%20Freedom.md)
 
 ## [4.3.14. Example of a Chi-Square Test of Independence](./4.3.14.%20Example%20of%20a%20Chi-Square%20Test%20of%20Independence.md)
+
+## [4.3.15. Conditions for Validity](./4.3.15.%20Conditions%20for%20Validity.md)
