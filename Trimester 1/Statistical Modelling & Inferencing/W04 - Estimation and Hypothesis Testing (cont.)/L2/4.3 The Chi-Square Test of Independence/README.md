@@ -35,3 +35,5 @@
 ## [4.3.17. Practical Remedies for Small Expected Counts](./4.3.17.%20Practical%20Remedies%20for%20Small%20Expected%20Counts.md)
 
 ## [4.3.18. Chi-Square Tests Measure Association, Not Causation](./4.3.18.%20Chi-Square%20Tests%20Measure%20Association%2C%20Not%20Causation.md)
+
+## [4.3.19. Conclusions](./4.3.19.%20Conclusions.md)
