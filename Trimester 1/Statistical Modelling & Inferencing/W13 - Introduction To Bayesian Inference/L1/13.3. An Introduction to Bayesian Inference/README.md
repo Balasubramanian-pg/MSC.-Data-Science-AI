@@ -20,3 +20,5 @@
 ## [8. Python Implementation: MCMC from Scratch (NumPy)](./8.%20Python%20Implementation%20-%20MCMC%20from%20Scratch%20%28NumPy%29.md)
 
 ## [9. Common Mistakes](./9.%20Common%20Mistakes.md)
+
+## [10. Practical Engineering Applications](./10.%20Practical%20Engineering%20Applications.md)
