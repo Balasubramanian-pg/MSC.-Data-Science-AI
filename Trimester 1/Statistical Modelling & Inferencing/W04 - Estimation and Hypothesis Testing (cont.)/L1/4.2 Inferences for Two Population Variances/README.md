@@ -23,3 +23,5 @@
 ## [4.2.11. Why the F-Test Is Fragile](./4.2.11.%20Why%20the%20F-Test%20Is%20Fragile.md)
 
 ## [4.2.12. Robustness Compared to t-Tests](./4.2.12.%20Robustness%20Compared%20to%20t-Tests.md)
+
+## [4.2.13. Practical Approaches in Modern Statistics](./4.2.13.%20Practical%20Approaches%20in%20Modern%20Statistics.md)
