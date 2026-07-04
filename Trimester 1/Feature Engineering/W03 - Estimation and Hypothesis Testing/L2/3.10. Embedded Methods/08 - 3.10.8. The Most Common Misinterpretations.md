@@ -1,0 +1,27 @@
+# 3.10.8. The Most Common Misinterpretations
+
+Because embedded methods obscure the selection process behind the model's loss function, severe conceptual errors frequently compromise the statistical pipeline.
+
+### 8.1 Interpretation 1
+
+>[!Warning]
+> "Feature importance scores from a Random Forest represent absolute universal truth."
+
+Wrong.
+Importance scores are strictly model-specific. An important feature for an ensemble tree may rank as statistically insignificant for a linear model because the geometric optimization boundaries are fundamentally different.
+
+### 8.2 Interpretation 2
+
+>[!Warning]
+> "Lasso regularization works perfectly on unscaled raw data."
+
+Wrong.
+Because the absolute magnitude of the coefficient strictly dictates the penalty, variables with naturally massive numerical scales will be unfairly penalized or ignored. Standardization is a strict mathematical prerequisite for $$L_1$$ regularization.
+
+### 8.3 Interpretation 3
+
+>[!Warning]
+> "Embedded selection replaces the need for cross-validation."
+
+Wrong.
+While the algorithm performs selection during training, the choice of the tuning hyperparameter (such as $$\lambda$$) must be rigorously optimized through cross-validation to prevent extreme overfitting on the training matrix.
