@@ -17,3 +17,5 @@
 ## [7.2.8. Deriving the Closed-Form OLS Solution](./7.2.8.%20Deriving%20the%20Closed-Form%20OLS%20Solution.md)
 
 ## [7.2.9. Understanding the Matrix Components](./7.2.9.%20Understanding%20the%20Matrix%20Components.md)
+
+## [7.2.10. The Threat of Multicollinearity](./7.2.10.%20The%20Threat%20of%20Multicollinearity.md)
