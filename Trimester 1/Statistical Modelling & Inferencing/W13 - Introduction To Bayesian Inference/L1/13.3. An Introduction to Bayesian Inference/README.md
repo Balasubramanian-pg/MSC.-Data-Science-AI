@@ -24,3 +24,5 @@
 ## [10. Practical Engineering Applications](./10.%20Practical%20Engineering%20Applications.md)
 
 ## [11. Edge Cases](./11.%20Edge%20Cases.md)
+
+## [12. Final Summary & Interview Guide](./12.%20Final%20Summary%20%26%20Interview%20Guide.md)
