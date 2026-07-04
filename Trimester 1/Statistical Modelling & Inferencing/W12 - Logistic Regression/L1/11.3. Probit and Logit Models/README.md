@@ -22,3 +22,5 @@
 ## [9. Edge Cases: Complete Separation](./9.%20Edge%20Cases%20-%20Complete%20Separation.md)
 
 ## [10. Practical Engineering Applications](./10.%20Practical%20Engineering%20Applications.md)
+
+## [11. Final Summary and Interview Guide](./11.%20Final%20Summary%20and%20Interview%20Guide.md)
