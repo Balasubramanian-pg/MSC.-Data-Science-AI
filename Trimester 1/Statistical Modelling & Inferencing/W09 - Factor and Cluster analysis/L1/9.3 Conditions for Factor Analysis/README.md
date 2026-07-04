@@ -25,3 +25,5 @@
 ## [9.3.12. Example of Computing Extracted Communality](./9.3.12.%20Example%20of%20Computing%20Extracted%20Communality.md)
 
 ## [9.3.13. Handling Heywood Cases](./9.3.13.%20Handling%20Heywood%20Cases.md)
+
+## [9.3.14. Missing Data and Matrix Positive-Definiteness](./9.3.14.%20Missing%20Data%20and%20Matrix%20Positive-Definiteness.md)
