@@ -5,3 +5,5 @@
 ## [3.3.2. The Logic of Hypothesis Testing](./3.3.2.%20The%20Logic%20of%20Hypothesis%20Testing.md)
 
 ## [3.3.3. The Four Possible Outcomes](./3.3.3.%20The%20Four%20Possible%20Outcomes.md)
+
+## [3.3.4. Type I Error: The False Positive](./3.3.4.%20Type%20I%20Error%20-%20The%20False%20Positive.md)
