@@ -22,3 +22,5 @@
 ## [9. The Edge Case: When Calculus Fails](./9.%20The%20Edge%20Case%20-%20When%20Calculus%20Fails.md)
 
 ## [10. Real-World Engineering Applications](./10.%20Real-World%20Engineering%20Applications.md)
+
+## [11. Final Summary and Interview Guide](./11.%20Final%20Summary%20and%20Interview%20Guide.md)
