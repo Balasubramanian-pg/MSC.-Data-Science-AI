@@ -21,3 +21,5 @@
 ## [10.6.10. Hierarchical Clustering](./10.6.10.%20Hierarchical%20Clustering.md)
 
 ## [10.6.11. The Agglomerative Method](./10.6.11.%20The%20Agglomerative%20Method.md)
+
+## [10.6.12. Linkage Criteria in Hierarchical Models](./10.6.12.%20Linkage%20Criteria%20in%20Hierarchical%20Models.md)
