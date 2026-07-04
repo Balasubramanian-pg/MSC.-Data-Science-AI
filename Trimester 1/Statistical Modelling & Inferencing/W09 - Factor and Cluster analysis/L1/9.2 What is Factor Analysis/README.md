@@ -13,3 +13,5 @@
 ## [9.2.6. Example of Computing Communality and Uniqueness](./9.2.6.%20Example%20of%20Computing%20Communality%20and%20Uniqueness.md)
 
 ## [9.2.7. Principal Component Analysis vs. Factor Analysis](./9.2.7.%20Principal%20Component%20Analysis%20vs.%20Factor%20Analysis.md)
+
+## [9.2.8. Common Misinterpretations](./9.2.8.%20Common%20Misinterpretations.md)
