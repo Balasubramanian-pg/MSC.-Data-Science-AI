@@ -19,3 +19,5 @@
 ## [6.1.9. The Sample Regression Equation](./6.1.9.%20The%20Sample%20Regression%20Equation.md)
 
 ## [6.1.10. Predicted Values and Residuals](./6.1.10.%20Predicted%20Values%20and%20Residuals.md)
+
+## [6.1.11. The Method of Least Squares](./6.1.11.%20The%20Method%20of%20Least%20Squares.md)
