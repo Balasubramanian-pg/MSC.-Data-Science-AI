@@ -20,3 +20,5 @@ This document provides a rigorous technical analysis of the K-Means clustering a
 ## [7. Advanced Variants and Scaling](./7.%20Advanced%20Variants%20and%20Scaling.md)
 
 ## [8. System Architecture: Clustering Pipeline](./8.%20System%20Architecture%20-%20Clustering%20Pipeline.md)
+
+## [9. Summary of Engineering Directives](./9.%20Summary%20of%20Engineering%20Directives.md)
