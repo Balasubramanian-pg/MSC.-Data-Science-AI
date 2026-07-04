@@ -42,3 +42,5 @@ This document provides a rigorous technical analysis of binary response models. 
 ## [18. Performance and Computational Insights](./18.%20Performance%20and%20Computational%20Insights.md)
 
 ## [19. Advanced Notes](./19.%20Advanced%20Notes.md)
+
+## [20. Final Takeaways](./20.%20Final%20Takeaways.md)
