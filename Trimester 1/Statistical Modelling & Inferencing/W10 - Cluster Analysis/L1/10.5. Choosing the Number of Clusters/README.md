@@ -6,3 +6,5 @@ If you use "ELBO" in a machine learning interview when talking about K-Means, yo
 
 > [!IMPORTANT]
 > K is a hyperparameter in K-Means. The algorithm does not learn K; you must define it. Choosing K is an optimization problem balancing model complexity (number of clusters) against error (variance within clusters).
+
+## [1. Concept Introduction](./1.%20Concept%20Introduction.md)
