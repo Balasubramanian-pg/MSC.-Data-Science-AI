@@ -11,3 +11,5 @@
 ## [5.1.4. The Vocabulary of Experimental Design](./5.1.4.%20The%20Vocabulary%20of%20Experimental%20Design.md)
 
 ## [5.1.5. Experimental Units](./5.1.5.%20Experimental%20Units.md)
+
+## [5.1.6. Response Variable](./5.1.6.%20Response%20Variable.md)
