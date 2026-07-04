@@ -15,3 +15,5 @@
 ## [4.3.7. Why the Expected Frequency Formula Works](./4.3.7.%20Why%20the%20Expected%20Frequency%20Formula%20Works.md)
 
 ## [4.3.8. Hypotheses for the Chi-Square Test](./4.3.8.%20Hypotheses%20for%20the%20Chi-Square%20Test.md)
+
+## [4.3.9. The Chi-Square Test Statistic](./4.3.9.%20The%20Chi-Square%20Test%20Statistic.md)
