@@ -11,3 +11,5 @@
 ## [8.1.5. The Spectrum of Noise](./8.1.5.%20The%20Spectrum%20of%20Noise.md)
 
 ## [8.1.6. Advanced Diagnostic Analysis and Decomposition](./8.1.6.%20Advanced%20Diagnostic%20Analysis%20and%20Decomposition.md)
+
+## [8.1.7. Example of Additive Component Extraction](./8.1.7.%20Example%20of%20Additive%20Component%20Extraction.md)
