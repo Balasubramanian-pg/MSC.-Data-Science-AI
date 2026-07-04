@@ -18,3 +18,5 @@
 ## [7. Overcoming the Integral: Markov Chain Monte Carlo (MCMC)](./7.%20Overcoming%20the%20Integral%20-%20Markov%20Chain%20Monte%20Carlo%20%28MCMC%29.md)
 
 ## [8. Python Implementation: MCMC from Scratch (NumPy)](./8.%20Python%20Implementation%20-%20MCMC%20from%20Scratch%20%28NumPy%29.md)
+
+## [9. Common Mistakes](./9.%20Common%20Mistakes.md)
