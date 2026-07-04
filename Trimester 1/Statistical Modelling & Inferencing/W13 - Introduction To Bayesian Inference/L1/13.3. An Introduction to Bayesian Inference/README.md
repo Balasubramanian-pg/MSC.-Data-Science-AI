@@ -8,3 +8,5 @@
 ## [2. Intuition and Real-World Analogy](./2.%20Intuition%20and%20Real-World%20Analogy.md)
 
 ## [3. Mathematical Foundations and Formula Breakdowns](./3.%20Mathematical%20Foundations%20and%20Formula%20Breakdowns.md)
+
+## [4. Visual Intuition and System Architecture](./4.%20Visual%20Intuition%20and%20System%20Architecture.md)
