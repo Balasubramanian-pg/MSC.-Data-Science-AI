@@ -28,3 +28,5 @@ This document provides a rigorous technical analysis of Cluster Analysis. It est
 ## [12. System Architecture: Unsupervised Learning Pipeline](./12.%20System%20Architecture%20-%20Unsupervised%20Learning%20Pipeline.md)
 
 ## [13. Real-World Applications](./13.%20Real-World%20Applications.md)
+
+## [14. Machine Learning Connections](./14.%20Machine%20Learning%20Connections.md)
