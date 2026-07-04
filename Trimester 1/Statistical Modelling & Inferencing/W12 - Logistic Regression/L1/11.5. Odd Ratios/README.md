@@ -12,3 +12,5 @@
 ## [4. Step-by-Step Derivation of the Odds Ratio](./4.%20Step-by-Step%20Derivation%20of%20the%20Odds%20Ratio.md)
 
 ## [5. Interpretation Regimes](./5.%20Interpretation%20Regimes.md)
+
+## [6. Visual Intuition and Mermaid Diagram](./6.%20Visual%20Intuition%20and%20Mermaid%20Diagram.md)
