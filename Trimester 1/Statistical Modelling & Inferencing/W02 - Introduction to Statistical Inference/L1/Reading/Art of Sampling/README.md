@@ -7,3 +7,5 @@
 ## [1.2 Why Sample? The Practical Imperatives](./1.2%20Why%20Sample%20The%20Practical%20Imperatives.md)
 
 ## [1.3 The Mathematical Framework](./1.3%20The%20Mathematical%20Framework.md)
+
+## [1.4 Conceptual Architecture](./1.4%20Conceptual%20Architecture.md)
