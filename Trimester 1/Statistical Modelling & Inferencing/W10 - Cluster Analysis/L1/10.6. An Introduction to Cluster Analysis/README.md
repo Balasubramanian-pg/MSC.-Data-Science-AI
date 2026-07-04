@@ -23,3 +23,5 @@
 ## [10.6.11. The Agglomerative Method](./10.6.11.%20The%20Agglomerative%20Method.md)
 
 ## [10.6.12. Linkage Criteria in Hierarchical Models](./10.6.12.%20Linkage%20Criteria%20in%20Hierarchical%20Models.md)
+
+## [10.6.13. K-Means Clustering](./10.6.13.%20K-Means%20Clustering.md)
