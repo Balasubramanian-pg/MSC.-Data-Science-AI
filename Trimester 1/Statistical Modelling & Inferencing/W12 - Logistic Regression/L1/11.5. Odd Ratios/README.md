@@ -6,3 +6,5 @@
 ## [1. Concept Introduction](./1.%20Concept%20Introduction.md)
 
 ## [2. Intuition and Real-World Analogy](./2.%20Intuition%20and%20Real-World%20Analogy.md)
+
+## [3. Mathematical Explanation: Probability vs. Odds](./3.%20Mathematical%20Explanation%20-%20Probability%20vs.%20Odds.md)
