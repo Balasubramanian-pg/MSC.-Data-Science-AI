@@ -7,3 +7,5 @@
 ## [8.1.3. Key Characteristics of Temporal Dependence](./8.1.3.%20Key%20Characteristics%20of%20Temporal%20Dependence.md)
 
 ## [8.1.4. Stationarity and Ergodicity](./8.1.4.%20Stationarity%20and%20Ergodicity.md)
+
+## [8.1.5. The Spectrum of Noise](./8.1.5.%20The%20Spectrum%20of%20Noise.md)
