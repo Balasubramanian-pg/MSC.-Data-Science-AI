@@ -22,3 +22,5 @@
 ## [6.5.10. Practical Fixes for Assumption Violations](./6.5.10.%20Practical%20Fixes%20for%20Assumption%20Violations.md)
 
 ## [6.5.11. Common Misinterpretations](./6.5.11.%20Common%20Misinterpretations.md)
+
+## [6.5.12. Conclusions](./6.5.12.%20Conclusions.md)
