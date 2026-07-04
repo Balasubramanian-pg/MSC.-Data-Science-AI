@@ -9,3 +9,5 @@
 ## [4.0.4. Inference for Multiple Population Means](./4.0.4.%20Inference%20for%20Multiple%20Population%20Means.md)
 
 ## [4.0.5. Example of a Two-Population Mean Comparison](./4.0.5.%20Example%20of%20a%20Two-Population%20Mean%20Comparison.md)
+
+## [4.0.6. Analysis of Variance (ANOVA)](./4.0.6.%20Analysis%20of%20Variance%20%28ANOVA%29.md)
