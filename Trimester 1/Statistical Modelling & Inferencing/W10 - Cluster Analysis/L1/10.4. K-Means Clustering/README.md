@@ -10,3 +10,5 @@ This document provides a rigorous technical analysis of the K-Means clustering a
 ## [2. Algorithmic Execution: Lloyd's Algorithm](./2.%20Algorithmic%20Execution%20-%20Lloyd%27s%20Algorithm.md)
 
 ## [3. Initialization Strategies](./3.%20Initialization%20Strategies.md)
+
+## [4. Computational Complexity](./4.%20Computational%20Complexity.md)
