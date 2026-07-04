@@ -7,3 +7,5 @@
 ## [8.3.3. The Mathematical Models of Decomposition](./8.3.3.%20The%20Mathematical%20Models%20of%20Decomposition.md)
 
 ## [8.3.4. The Additive Model](./8.3.4.%20The%20Additive%20Model.md)
+
+## [8.3.5. Example of Additive Component Extraction](./8.3.5.%20Example%20of%20Additive%20Component%20Extraction.md)
