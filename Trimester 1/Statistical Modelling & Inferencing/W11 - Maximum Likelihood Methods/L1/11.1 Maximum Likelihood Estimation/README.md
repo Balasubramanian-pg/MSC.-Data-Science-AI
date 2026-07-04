@@ -4,3 +4,5 @@
 > Maximum Likelihood Estimation (MLE) is the foundational optimization framework for parametric statistical inference. It operates on an inverse probability principle: rather than calculating the probability of data given fixed parameters, MLE identifies the parameters that maximize the probability of the fixed, observed data. It is the theoretical bedrock of modern machine learning loss functions and statistical modeling.
 
 ## [1. Concept Introduction](./1.%20Concept%20Introduction.md)
+
+## [2. Intuition Section](./2.%20Intuition%20Section.md)
