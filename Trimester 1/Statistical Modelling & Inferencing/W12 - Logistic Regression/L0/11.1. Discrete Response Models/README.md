@@ -28,3 +28,5 @@ This document provides a rigorous technical analysis of Logistic Regression with
 ## [11. Visual Intuition](./11.%20Visual%20Intuition.md)
 
 ## [12. Mermaid Diagrams](./12.%20Mermaid%20Diagrams.md)
+
+## [13. Real-World Applications](./13.%20Real-World%20Applications.md)
