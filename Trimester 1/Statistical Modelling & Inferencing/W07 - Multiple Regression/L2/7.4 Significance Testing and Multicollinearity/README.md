@@ -19,3 +19,5 @@
 ## [7.4.9. Diagnosing Multicollinearity: Variance Inflation Factor](./7.4.9.%20Diagnosing%20Multicollinearity%20-%20Variance%20Inflation%20Factor.md)
 
 ## [7.4.10. Example of Significance Testing and VIF](./7.4.10.%20Example%20of%20Significance%20Testing%20and%20VIF.md)
+
+## [7.4.11. Remedies for Multicollinearity](./7.4.11.%20Remedies%20for%20Multicollinearity.md)
