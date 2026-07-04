@@ -17,3 +17,5 @@
 ## [4.2.8. The Practical Convention for the F-Statistic](./4.2.8.%20The%20Practical%20Convention%20for%20the%20F-Statistic.md)
 
 ## [4.2.9. Example of an F-Test for Variances](./4.2.9.%20Example%20of%20an%20F-Test%20for%20Variances.md)
+
+## [4.2.10. The Critical Assumption of Normality](./4.2.10.%20The%20Critical%20Assumption%20of%20Normality.md)
