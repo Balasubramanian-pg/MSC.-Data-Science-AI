@@ -9,3 +9,5 @@
 ## [3.1.4. Central Limit Theorem: The Engine Behind Confidence Intervals](./3.1.4.%20Central%20Limit%20Theorem%20-%20The%20Engine%20Behind%20Confidence%20Intervals.md)
 
 ## [3.1.5. Confidence Intervals](./3.1.5.%20Confidence%20Intervals.md)
+
+## [3.1.6. Understanding the Margin of Error](./3.1.6.%20Understanding%20the%20Margin%20of%20Error.md)
