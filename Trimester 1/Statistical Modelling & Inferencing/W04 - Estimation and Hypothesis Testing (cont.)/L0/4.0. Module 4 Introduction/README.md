@@ -7,3 +7,5 @@
 ## [4.0.3. Why Comparative Inference Matters](./4.0.3.%20Why%20Comparative%20Inference%20Matters.md)
 
 ## [4.0.4. Inference for Multiple Population Means](./4.0.4.%20Inference%20for%20Multiple%20Population%20Means.md)
+
+## [4.0.5. Example of a Two-Population Mean Comparison](./4.0.5.%20Example%20of%20a%20Two-Population%20Mean%20Comparison.md)
