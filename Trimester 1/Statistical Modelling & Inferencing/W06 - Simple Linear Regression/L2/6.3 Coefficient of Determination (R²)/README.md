@@ -23,3 +23,5 @@
 ## [6.3.11. Contextualizing R-Squared Across Domains](./6.3.11.%20Contextualizing%20R-Squared%20Across%20Domains.md)
 
 ## [6.3.12. Information-Theoretic and Geometric Perspectives](./6.3.12.%20Information-Theoretic%20and%20Geometric%20Perspectives.md)
+
+## [6.3.13. Common Misinterpretations](./6.3.13.%20Common%20Misinterpretations.md)
