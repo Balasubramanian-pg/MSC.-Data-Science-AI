@@ -17,3 +17,5 @@
 ## [7.0.8. Adjusted R-Squared](./7.0.8.%20Adjusted%20R-Squared.md)
 
 ## [7.0.9. Interpretation Challenges in Multiple Regression](./7.0.9.%20Interpretation%20Challenges%20in%20Multiple%20Regression.md)
+
+## [7.0.10. Multiple Regression as Controlled Comparison](./7.0.10.%20Multiple%20Regression%20as%20Controlled%20Comparison.md)
