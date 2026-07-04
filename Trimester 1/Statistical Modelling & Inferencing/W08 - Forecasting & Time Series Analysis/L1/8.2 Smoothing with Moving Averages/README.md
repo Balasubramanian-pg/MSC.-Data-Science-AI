@@ -7,3 +7,5 @@
 ## [8.2.3. Example of a Trailing Moving Average](./8.2.3.%20Example%20of%20a%20Trailing%20Moving%20Average.md)
 
 ## [8.2.4. The Bias-Variance Trade-off in Window Sizing](./8.2.4.%20The%20Bias-Variance%20Trade-off%20in%20Window%20Sizing.md)
+
+## [8.2.5. The Centered Moving Average](./8.2.5.%20The%20Centered%20Moving%20Average.md)
