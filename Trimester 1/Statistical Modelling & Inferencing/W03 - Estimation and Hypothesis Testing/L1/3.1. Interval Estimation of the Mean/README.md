@@ -31,3 +31,5 @@
 ## [3.1.15. Why Small Samples Are Dangerous](./3.1.15.%20Why%20Small%20Samples%20Are%20Dangerous.md)
 
 ## [3.1.16. Factors Affecting Interval Width](./3.1.16.%20Factors%20Affecting%20Interval%20Width.md)
+
+## [3.1.17. One-Sided Confidence Intervals](./3.1.17.%20One-Sided%20Confidence%20Intervals.md)
