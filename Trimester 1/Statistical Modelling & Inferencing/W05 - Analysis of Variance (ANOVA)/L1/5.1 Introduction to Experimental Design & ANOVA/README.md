@@ -33,3 +33,5 @@
 ## [5.1.15. ANOVA Hypotheses](./5.1.15.%20ANOVA%20Hypotheses.md)
 
 ## [5.1.16. Example of an ANOVA F-Test](./5.1.16.%20Example%20of%20an%20ANOVA%20F-Test.md)
+
+## [5.1.17. Interpreting ANOVA Results](./5.1.17.%20Interpreting%20ANOVA%20Results.md)
