@@ -11,3 +11,5 @@
 ## [6.3.5. Defining the Coefficient of Determination](./6.3.5.%20Defining%20the%20Coefficient%20of%20Determination.md)
 
 ## [6.3.6. The Range and Interpretation of R-Squared](./6.3.6.%20The%20Range%20and%20Interpretation%20of%20R-Squared.md)
+
+## [6.3.7. Example of Calculating and Interpreting R-Squared](./6.3.7.%20Example%20of%20Calculating%20and%20Interpreting%20R-Squared.md)
