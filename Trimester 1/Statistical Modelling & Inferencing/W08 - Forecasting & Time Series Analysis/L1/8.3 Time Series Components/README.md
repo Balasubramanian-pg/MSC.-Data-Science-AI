@@ -15,3 +15,5 @@
 ## [8.3.7. Example of Multiplicative Component Extraction](./8.3.7.%20Example%20of%20Multiplicative%20Component%20Extraction.md)
 
 ## [8.3.8. The Log-Transformation Bridge](./8.3.8.%20The%20Log-Transformation%20Bridge.md)
+
+## [8.3.9. Diagnostic Selection: Choosing the Correct Framework](./8.3.9.%20Diagnostic%20Selection%20-%20Choosing%20the%20Correct%20Framework.md)
