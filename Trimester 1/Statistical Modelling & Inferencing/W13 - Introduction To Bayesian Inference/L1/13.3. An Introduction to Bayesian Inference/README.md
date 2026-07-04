@@ -22,3 +22,5 @@
 ## [9. Common Mistakes](./9.%20Common%20Mistakes.md)
 
 ## [10. Practical Engineering Applications](./10.%20Practical%20Engineering%20Applications.md)
+
+## [11. Edge Cases](./11.%20Edge%20Cases.md)
