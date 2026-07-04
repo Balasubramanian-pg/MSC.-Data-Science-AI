@@ -17,3 +17,5 @@
 ## [3.4.8. Step 1: State the Hypotheses](./3.4.8.%20Step%201%20-%20State%20the%20Hypotheses.md)
 
 ## [3.4.9. Step 2: Set the Significance Level](./3.4.9.%20Step%202%20-%20Set%20the%20Significance%20Level.md)
+
+## [3.4.10. Step 3: Collect Data and Compute the Test Statistic](./3.4.10.%20Step%203%20-%20Collect%20Data%20and%20Compute%20the%20Test%20Statistic.md)
