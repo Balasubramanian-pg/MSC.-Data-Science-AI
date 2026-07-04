@@ -26,3 +26,5 @@ This document provides a rigorous technical analysis of binary response models. 
 ## [10. Visual Intuition](./10.%20Visual%20Intuition.md)
 
 ## [11. Mermaid Diagrams](./11.%20Mermaid%20Diagrams.md)
+
+## [12. Machine Learning Connections](./12.%20Machine%20Learning%20Connections.md)
