@@ -5,3 +5,5 @@
 ## [7.2.2. Geometric Interpretation of Multiple Regression](./7.2.2.%20Geometric%20Interpretation%20of%20Multiple%20Regression.md)
 
 ## [7.2.3. Residual Errors and the Objective Function](./7.2.3.%20Residual%20Errors%20and%20the%20Objective%20Function.md)
+
+## [7.2.4. Why Squaring the Errors Matters](./7.2.4.%20Why%20Squaring%20the%20Errors%20Matters.md)
