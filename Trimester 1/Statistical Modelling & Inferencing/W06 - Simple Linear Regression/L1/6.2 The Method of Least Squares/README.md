@@ -19,3 +19,5 @@
 ## [6.2.8. The Least Squares Intercept Formula](./6.2.8.%20The%20Least%20Squares%20Intercept%20Formula.md)
 
 ## [6.2.9. Example of Least Squares Calculation](./6.2.9.%20Example%20of%20Least%20Squares%20Calculation.md)
+
+## [6.2.10. Fundamental Properties of Residuals](./6.2.10.%20Fundamental%20Properties%20of%20Residuals.md)
