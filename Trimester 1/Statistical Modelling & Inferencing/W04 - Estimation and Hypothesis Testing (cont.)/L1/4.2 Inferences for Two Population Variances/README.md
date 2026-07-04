@@ -11,3 +11,5 @@
 ## [4.2.5. Properties of the F-Distribution](./4.2.5.%20Properties%20of%20the%20F-Distribution.md)
 
 ## [4.2.6. The F-Test for Equality of Variances](./4.2.6.%20The%20F-Test%20for%20Equality%20of%20Variances.md)
+
+## [4.2.7. The F-Test Statistic](./4.2.7.%20The%20F-Test%20Statistic.md)
