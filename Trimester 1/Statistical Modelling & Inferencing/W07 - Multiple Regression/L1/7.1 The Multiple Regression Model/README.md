@@ -15,3 +15,5 @@
 ## [7.1.7. The Geometry of Multiple Regression](./7.1.7.%20The%20Geometry%20of%20Multiple%20Regression.md)
 
 ## [7.1.8. Matrix Representation of Multiple Regression](./7.1.8.%20Matrix%20Representation%20of%20Multiple%20Regression.md)
+
+## [7.1.9. New Challenges in Multiple Regression](./7.1.9.%20New%20Challenges%20in%20Multiple%20Regression.md)
