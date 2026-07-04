@@ -15,3 +15,5 @@
 ## [5.1.6. Response Variable](./5.1.6.%20Response%20Variable.md)
 
 ## [5.1.7. Factors and Levels](./5.1.7.%20Factors%20and%20Levels.md)
+
+## [5.1.8. Treatments](./5.1.8.%20Treatments.md)
