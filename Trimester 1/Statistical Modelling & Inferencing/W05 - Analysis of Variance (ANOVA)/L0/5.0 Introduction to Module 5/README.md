@@ -25,3 +25,5 @@
 ## [5.0.12. Between-Group Variability](./5.0.12.%20Between-Group%20Variability.md)
 
 ## [5.0.13. Example of ANOVA Logic](./5.0.13.%20Example%20of%20ANOVA%20Logic.md)
+
+## [5.0.14. Interpretation of ANOVA Results](./5.0.14.%20Interpretation%20of%20ANOVA%20Results.md)
