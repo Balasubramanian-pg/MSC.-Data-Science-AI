@@ -35,3 +35,5 @@
 ## [10.6.17. Choosing the Number of Clusters: The Elbow Method](./10.6.17.%20Choosing%20the%20Number%20of%20Clusters%20-%20The%20Elbow%20Method.md)
 
 ## [10.6.18. The Silhouette Method for Cluster Quality](./10.6.18.%20The%20Silhouette%20Method%20for%20Cluster%20Quality.md)
+
+## [10.6.19. Example of a Silhouette Score Calculation](./10.6.19.%20Example%20of%20a%20Silhouette%20Score%20Calculation.md)
