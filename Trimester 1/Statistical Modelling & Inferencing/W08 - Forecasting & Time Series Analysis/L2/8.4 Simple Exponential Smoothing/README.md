@@ -11,3 +11,5 @@
 ## [8.4.5. The Error Correction Perspective](./8.4.5.%20The%20Error%20Correction%20Perspective.md)
 
 ## [8.4.6. The Smoothing Parameter and Model Responsiveness](./8.4.6.%20The%20Smoothing%20Parameter%20and%20Model%20Responsiveness.md)
+
+## [8.4.7. The Mathematics of Exponential Decay](./8.4.7.%20The%20Mathematics%20of%20Exponential%20Decay.md)
