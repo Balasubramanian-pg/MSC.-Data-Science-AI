@@ -15,3 +15,5 @@
 ## [9.1.7. The End-to-End Analytical Workflow](./9.1.7.%20The%20End-to-End%20Analytical%20Workflow.md)
 
 ## [9.1.8. Selecting the Optimal Number of Factors](./9.1.8.%20Selecting%20the%20Optimal%20Number%20of%20Factors.md)
+
+## [9.1.9. Strategic Business Application](./9.1.9.%20Strategic%20Business%20Application.md)
