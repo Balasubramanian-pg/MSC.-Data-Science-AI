@@ -4,3 +4,5 @@ This document provides a rigorous technical analysis of coefficient interpretati
 
 > [!IMPORTANT]
 > In a logistic regression model, the estimated coefficients ($\beta$) do **not** represent the change in the probability of the outcome for a unit change in the predictor. Instead, they represent the change in the **log-odds** of the outcome. To communicate model results effectively, coefficients must be transformed into Odds Ratios (OR) or Average Marginal Effects (AME).
+
+## [1. Concept Introduction](./1.%20Concept%20Introduction.md)
