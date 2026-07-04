@@ -7,3 +7,5 @@
 ## [7.1.3. The Multiple Linear Regression Model](./7.1.3.%20The%20Multiple%20Linear%20Regression%20Model.md)
 
 ## [7.1.4. The Sample Regression Equation](./7.1.4.%20The%20Sample%20Regression%20Equation.md)
+
+## [7.1.5. The Most Important Concept: Partial Effect Interpretation](./7.1.5.%20The%20Most%20Important%20Concept%20-%20Partial%20Effect%20Interpretation.md)
