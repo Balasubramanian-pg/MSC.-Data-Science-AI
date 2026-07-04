@@ -17,3 +17,5 @@
 ## [6.4.8. Mean Squares in Regression](./6.4.8.%20Mean%20Squares%20in%20Regression.md)
 
 ## [6.4.9. The F-Statistic](./6.4.9.%20The%20F-Statistic.md)
+
+## [6.4.10. Equivalence of the t-Test and F-Test in Simple Regression](./6.4.10.%20Equivalence%20of%20the%20t-Test%20and%20F-Test%20in%20Simple%20Regression.md)
