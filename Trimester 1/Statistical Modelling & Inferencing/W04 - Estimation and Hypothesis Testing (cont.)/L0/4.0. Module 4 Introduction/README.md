@@ -11,3 +11,5 @@
 ## [4.0.5. Example of a Two-Population Mean Comparison](./4.0.5.%20Example%20of%20a%20Two-Population%20Mean%20Comparison.md)
 
 ## [4.0.6. Analysis of Variance (ANOVA)](./4.0.6.%20Analysis%20of%20Variance%20%28ANOVA%29.md)
+
+## [4.0.7. Comparing Population Variances](./4.0.7.%20Comparing%20Population%20Variances.md)
