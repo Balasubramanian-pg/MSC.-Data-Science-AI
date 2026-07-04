@@ -23,3 +23,5 @@
 ## [7.4.11. Remedies for Multicollinearity](./7.4.11.%20Remedies%20for%20Multicollinearity.md)
 
 ## [7.4.12. Common Misinterpretations](./7.4.12.%20Common%20Misinterpretations.md)
+
+## [7.4.13. Conclusions](./7.4.13.%20Conclusions.md)
