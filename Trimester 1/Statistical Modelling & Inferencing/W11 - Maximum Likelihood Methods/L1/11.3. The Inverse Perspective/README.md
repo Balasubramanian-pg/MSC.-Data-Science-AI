@@ -24,3 +24,5 @@ This document provides a rigorous technical analysis of Maximum Likelihood Estim
 ## [9. Practical Engineering Examples](./9.%20Practical%20Engineering%20Examples.md)
 
 ## [10. Common Mistakes](./10.%20Common%20Mistakes.md)
+
+## [11. Visual Intuition](./11.%20Visual%20Intuition.md)
