@@ -4,11 +4,11 @@ module: Statistical Modelling And Inferencing
 week: W05 - Feature Engineering Techniques for Text Data
 ---
 
-# Week 5 Practice Quiz
+## Week 5 Practice Quiz
 
 <img width="453" height="842" alt="image" src="https://github.com/user-attachments/assets/c7e1c2e6-b002-4058-9678-6e171d2ff767" />
 
-# Question 1
+## Question 1
 
 How can POS (Part-of-Speech) tagging improve feature extraction in NLP tasks?
 
@@ -28,7 +28,7 @@ How can POS (Part-of-Speech) tagging improve feature extraction in NLP tasks?
 >
 > **POS tagging** assigns grammatical categories such as noun, verb, adjective, and adverb to words. This additional linguistic information helps identify meaningful and informative features, enabling models to focus on important parts of speech relevant to the task.
 
-# Question 2
+## Question 2
 
 What is the purpose of the Inverse Document Frequency (IDF) term in TF-IDF vectorisation?
 
@@ -48,7 +48,7 @@ What is the purpose of the Inverse Document Frequency (IDF) term in TF-IDF vecto
 >
 > The **IDF** component assigns lower weights to terms that appear frequently across many documents because such words carry less discriminative information. Rare or document-specific terms receive higher weights, making them more useful for distinguishing documents.
 
-# Question 3
+## Question 3
 
 Which of the following is TRUE about Word2Vec embeddings?
 
@@ -70,7 +70,7 @@ Which of the following is TRUE about Word2Vec embeddings?
 >
 > Word2Vec does not produce sparse vectors, nor does it directly model subwords. Models such as FastText extend Word2Vec to incorporate subword information.
 
-# Question 4
+## Question 4
 
 Which of the following statements is TRUE regarding tokenisation and n-grams?
 
@@ -97,7 +97,7 @@ Which of the following statements is TRUE regarding tokenisation and n-grams?
 >
 > This additional contextual information often improves NLP model performance.
 
-# Question 5
+## Question 5
 
 Given two documents:
 
