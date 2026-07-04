@@ -28,3 +28,5 @@ This document provides a rigorous technical analysis of binary response models. 
 ## [11. Mermaid Diagrams](./11.%20Mermaid%20Diagrams.md)
 
 ## [12. Machine Learning Connections](./12.%20Machine%20Learning%20Connections.md)
+
+## [13. Interview-Style Insights](./13.%20Interview-Style%20Insights.md)
