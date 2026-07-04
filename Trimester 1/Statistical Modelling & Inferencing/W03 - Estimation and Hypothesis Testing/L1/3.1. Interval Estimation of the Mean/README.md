@@ -5,3 +5,5 @@
 ## [3.1.2. Why Point Estimates Are Fundamentally Incomplete](./3.1.2.%20Why%20Point%20Estimates%20Are%20Fundamentally%20Incomplete.md)
 
 ## [3.1.3. Sampling Distribution of the Mean](./3.1.3.%20Sampling%20Distribution%20of%20the%20Mean.md)
+
+## [3.1.4. Central Limit Theorem: The Engine Behind Confidence Intervals](./3.1.4.%20Central%20Limit%20Theorem%20-%20The%20Engine%20Behind%20Confidence%20Intervals.md)
