@@ -17,3 +17,5 @@
 ## [5.2.8. Example 1: Teaching Methods (Significant Result)](./5.2.8.%20Example%201%20-%20Teaching%20Methods%20%28Significant%20Result%29.md)
 
 ## [5.2.9. Post-Hoc Testing](./5.2.9.%20Post-Hoc%20Testing.md)
+
+## [5.2.10. Example 2: Fertilizer Types (Non-Significant Result)](./5.2.10.%20Example%202%20-%20Fertilizer%20Types%20%28Non-Significant%20Result%29.md)
