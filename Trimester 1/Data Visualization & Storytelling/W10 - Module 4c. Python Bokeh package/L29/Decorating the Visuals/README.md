@@ -27,3 +27,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [STEP 4: Add glyphs (visual elements)](./STEP%204%20-%20Add%20glyphs%20%28visual%20elements%29.md)
 
 ## [STEP 5: Display](./STEP%205%20-%20Display.md)
+
+## [5. Customization Categories](./5.%20Customization%20Categories.md)
