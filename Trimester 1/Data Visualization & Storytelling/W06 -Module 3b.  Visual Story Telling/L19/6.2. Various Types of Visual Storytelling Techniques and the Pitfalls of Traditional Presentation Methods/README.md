@@ -75,3 +75,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Business Translation](./Business%20Translation.md)
 
 ## [How It Applies to Data Storytelling](./How%20It%20Applies%20to%20Data%20Storytelling.md)
+
+## [Why Monomyth Works](./Why%20Monomyth%20Works.md)
