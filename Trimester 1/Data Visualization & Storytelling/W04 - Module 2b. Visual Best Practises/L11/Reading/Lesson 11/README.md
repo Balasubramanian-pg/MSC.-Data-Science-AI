@@ -85,3 +85,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Detection](./Detection.md)
 
 ## [Identifying Visual Objects](./Identifying%20Visual%20Objects.md)
+
+## [Detection Quality Depends On](./Detection%20Quality%20Depends%20On.md)
