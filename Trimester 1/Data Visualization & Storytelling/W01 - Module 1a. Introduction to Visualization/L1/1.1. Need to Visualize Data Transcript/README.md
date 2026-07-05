@@ -59,3 +59,5 @@
 ## [1. Correlation ≠ Causation](./1.%20Correlation%20%E2%89%A0%20Causation.md)
 
 ## [2. Misleading Axes](./2.%20Misleading%20Axes.md)
+
+## [3. Overloading Visuals](./3.%20Overloading%20Visuals.md)
