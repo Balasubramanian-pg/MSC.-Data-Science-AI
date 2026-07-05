@@ -1,14 +1,16 @@
 # Important Insight
 
-The instructor comments out code to show differences.
+Axes are objects too.
 
-This is pedagogically important.
+Bokeh internally models:
 
-Visualization learning requires:
+```mermaid
+flowchart TD
+    A[Figure]
+    A --> B[X Axis Object]
+    A --> C[Y Axis Object]
 
-- iterative experimentation
-    
-- immediate visual feedback
-    
-
-Not just reading syntax.
+    B --> D[Axis Line]
+    B --> E[Tick Marks]
+    B --> F[Labels]
+```
