@@ -139,3 +139,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [2. Whitespace as a Strategic Tool](./2.%20Whitespace%20as%20a%20Strategic%20Tool.md)
 
 ## [Whitespace Is Not Empty Space](./Whitespace%20Is%20Not%20Empty%20Space.md)
+
+## [Whitespace Reduces Cognitive Noise](./Whitespace%20Reduces%20Cognitive%20Noise.md)
