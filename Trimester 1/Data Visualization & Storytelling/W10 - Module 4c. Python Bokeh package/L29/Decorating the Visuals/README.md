@@ -655,3 +655,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Important Dashboard Principle](./Important%20Dashboard%20Principle.md)
 
 ## [Common Bad Practice](./Common%20Bad%20Practice.md)
+
+## [Better Practice](./Better%20Practice.md)
