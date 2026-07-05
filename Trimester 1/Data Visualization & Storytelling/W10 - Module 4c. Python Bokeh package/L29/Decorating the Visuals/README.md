@@ -209,3 +209,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Why This Matters](./Why%20This%20Matters.md)
 
 ## [Understanding Layering](./Understanding%20Layering.md)
+
+## [Visual Model](./Visual%20Model.md)
