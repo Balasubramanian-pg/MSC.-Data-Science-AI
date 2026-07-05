@@ -571,3 +571,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Instructor Confusion: `top` vs `above`](./Instructor%20Confusion%20-%20%60top%60%20vs%20%60above%60.md)
 
 ## [Updating Title Text](./Updating%20Title%20Text.md)
+
+## [Object Mutation Flow](./Object%20Mutation%20Flow.md)
