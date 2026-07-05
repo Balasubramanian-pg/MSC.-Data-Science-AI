@@ -561,3 +561,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Center](./Center.md)
 
 ## [Left](./Left.md)
+
+## [Right](./Right.md)
