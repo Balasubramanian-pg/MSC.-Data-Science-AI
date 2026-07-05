@@ -1,9 +1,12 @@
 # Business Insight
 
-An airline can immediately infer:
+The company can design:
 
-- customer dissatisfaction is widespread
+- chatbot input boxes
     
-- service interventions are required
+- tweet-processing systems
     
-- reputation management needs attention
+- text storage systems
+    
+
+around average complaint lengths.
