@@ -269,3 +269,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Fully Author-Driven](./Fully%20Author-Driven.md)
 
 ## [Fully Reader-Driven](./Fully%20Reader-Driven.md)
+
+## [Hybrid Approach](./Hybrid%20Approach.md)
