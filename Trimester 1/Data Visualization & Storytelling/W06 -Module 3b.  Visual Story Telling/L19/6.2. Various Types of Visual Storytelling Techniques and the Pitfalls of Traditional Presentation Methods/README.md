@@ -67,3 +67,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Actionability: The Most Important Goal](./Actionability%20-%20The%20Most%20Important%20Goal.md)
 
 ## [Important Modern Parallel](./Important%20Modern%20Parallel.md)
+
+## [Storytelling Frameworks](./Storytelling%20Frameworks.md)
