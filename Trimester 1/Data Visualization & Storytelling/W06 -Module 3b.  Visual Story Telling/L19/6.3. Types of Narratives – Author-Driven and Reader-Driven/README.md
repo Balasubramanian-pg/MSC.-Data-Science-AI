@@ -97,3 +97,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Key Difference](./The%20Key%20Difference.md)
 
 ## [Interactive Storytelling in Dashboards](./Interactive%20Storytelling%20in%20Dashboards.md)
+
+## [Example Workflow](./Example%20Workflow.md)
