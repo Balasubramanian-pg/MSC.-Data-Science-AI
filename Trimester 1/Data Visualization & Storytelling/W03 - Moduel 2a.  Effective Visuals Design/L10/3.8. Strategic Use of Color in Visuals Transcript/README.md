@@ -44,3 +44,5 @@ Bad visualizations use color excessively.
 ## [The Psychology of Color](./The%20Psychology%20of%20Color.md)
 
 ## [Common Color Associations](./Common%20Color%20Associations.md)
+
+## [Why This Matters](./Why%20This%20Matters.md)
