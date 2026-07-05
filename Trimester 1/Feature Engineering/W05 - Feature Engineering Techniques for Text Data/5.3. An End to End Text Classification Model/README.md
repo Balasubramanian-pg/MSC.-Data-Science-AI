@@ -41,3 +41,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Get indices of the top 5 highest TF-IDF scores in this specific document](./Get%20indices%20of%20the%20top%205%20highest%20TF-IDF%20scores%20in%20this%20specific%20document.md)
 
 ## [Expected Output Snippet:](./Expected%20Output%20Snippet%20-.md)
+
+## [Feature: hockey       | TF-IDF Score: 0.4472](./Feature%20-%20hockey%20TF-IDF%20Score%20-%200.4472.md)
