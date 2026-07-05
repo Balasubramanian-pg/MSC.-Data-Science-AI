@@ -381,3 +381,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [The Instructor Mentions "True Zero"](./The%20Instructor%20Mentions%20True%20Zero.md)
 
 ## [Why True Zero Matters](./Why%20True%20Zero%20Matters.md)
+
+## [This Is a Common Visualization Manipulation Technique](./This%20Is%20a%20Common%20Visualization%20Manipulation%20Technique.md)
