@@ -9,3 +9,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [1. Author-Driven Narratives](./1.%20Author-Driven%20Narratives.md)
 
 ## [Core Characteristics](./Core%20Characteristics.md)
+
+## [Key Insight](./Key%20Insight.md)
