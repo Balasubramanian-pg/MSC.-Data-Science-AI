@@ -131,3 +131,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Area and Volume Problems](./Area%20and%20Volume%20Problems.md)
 
 ## [Bubble Chart Problem](./Bubble%20Chart%20Problem.md)
+
+## [5. Data Encoding Techniques](./5.%20Data%20Encoding%20Techniques.md)
