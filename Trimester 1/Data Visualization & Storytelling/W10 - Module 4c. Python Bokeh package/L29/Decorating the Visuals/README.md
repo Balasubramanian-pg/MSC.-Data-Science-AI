@@ -65,3 +65,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Option 4: RGBA tuple (use when transparency is needed)](./Option%204%20-%20RGBA%20tuple%20%28use%20when%20transparency%20is%20needed%29.md)
 
 ## [Core Idea](./Core%20Idea.md)
+
+## [Basic Bokeh Bar Chart](./Basic%20Bokeh%20Bar%20Chart.md)
