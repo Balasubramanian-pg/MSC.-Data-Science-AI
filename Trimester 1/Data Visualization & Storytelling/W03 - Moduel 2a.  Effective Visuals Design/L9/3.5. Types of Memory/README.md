@@ -185,3 +185,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Experts vs Beginners](./Experts%20vs%20Beginners.md)
 
 ## [Comparative Summary of Memory Types](./Comparative%20Summary%20of%20Memory%20Types.md)
+
+## [Relationship Between Memory and Pre-Attentive Attributes](./Relationship%20Between%20Memory%20and%20Pre-Attentive%20Attributes.md)
