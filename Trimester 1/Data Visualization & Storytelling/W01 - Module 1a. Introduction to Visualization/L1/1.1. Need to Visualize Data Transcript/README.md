@@ -51,3 +51,5 @@
 ## [Percentage Change Formula](./Percentage%20Change%20Formula.md)
 
 ## [Correlation Coefficient](./Correlation%20Coefficient.md)
+
+## [Interquartile Range (IQR)](./Interquartile%20Range%20%28IQR%29.md)
