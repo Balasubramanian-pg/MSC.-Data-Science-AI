@@ -757,3 +757,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Visual Mapping](./Visual%20Mapping.md)
 
 ## [Turbo256 Palette](./Turbo256%20Palette.md)
+
+## [What Is Turbo256?](./What%20Is%20Turbo256.md)
