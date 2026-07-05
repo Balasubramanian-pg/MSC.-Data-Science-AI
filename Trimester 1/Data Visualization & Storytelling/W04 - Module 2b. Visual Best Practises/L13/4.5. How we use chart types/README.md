@@ -337,3 +337,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Part 2](./Part%202.md)
 
 ## [Conversation Visualization](./Conversation%20Visualization.md)
+
+## [Modeling Communication Networks](./Modeling%20Communication%20Networks.md)
