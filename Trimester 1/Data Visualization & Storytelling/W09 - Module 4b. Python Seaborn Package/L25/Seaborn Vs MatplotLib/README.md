@@ -27,3 +27,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Step C: Manually build out the aesthetics layer by layer](./Step%20C%20-%20Manually%20build%20out%20the%20aesthetics%20layer%20by%20layer.md)
 
 ## [2. THE SEABORN APPROACH: Automated, High-Level Data Storytelling](./2.%20THE%20SEABORN%20APPROACH%20-%20Automated%2C%20High-Level%20Data%20Storytelling.md)
+
+## [Seaborn natively parses the DataFrame. It automatically groups the categories,](./Seaborn%20natively%20parses%20the%20DataFrame.%20It%20automatically%20groups%20the%20categories%2C.md)
