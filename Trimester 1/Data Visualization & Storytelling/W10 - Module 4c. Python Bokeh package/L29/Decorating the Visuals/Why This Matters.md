@@ -1,14 +1,16 @@
 # Why This Matters
 
-Method 2 is more flexible for:
+This becomes powerful later for:
 
-- dashboards
+- hover interactions
     
-- dynamic applications
+- streaming dashboards
     
-- reusable plotting systems
+- filtering
     
-- interactive UI workflows
+- animations
+    
+- callbacks
     
 
-Because properties can be modified later.
+Because plots are mutable.
