@@ -107,3 +107,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Real-World Examples](./Real-World%20Examples.md)
 
 ## [Business Dashboard](./Business%20Dashboard.md)
+
+## [Healthcare Dashboard](./Healthcare%20Dashboard.md)
