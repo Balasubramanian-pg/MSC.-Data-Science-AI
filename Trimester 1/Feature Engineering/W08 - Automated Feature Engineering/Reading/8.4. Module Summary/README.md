@@ -27,3 +27,5 @@ week: W08 - Automated Feature Engineering
 ## [8.4.10. Summary: Tool Selection Guide](./8.4.10.%20Summary%20-%20Tool%20Selection%20Guide.md)
 
 ## [8.4.11. Common Misinterpretations](./8.4.11.%20Common%20Misinterpretations.md)
+
+## [8.4.12. Conclusions](./8.4.12.%20Conclusions.md)
