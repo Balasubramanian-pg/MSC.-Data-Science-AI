@@ -699,3 +699,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Scatter](./Scatter.md)
 
 ## [Important Architectural Pattern](./Important%20Architectural%20Pattern.md)
+
+## [Part 2: Color Palettes](./Part%202%20-%20Color%20Palettes.md)
