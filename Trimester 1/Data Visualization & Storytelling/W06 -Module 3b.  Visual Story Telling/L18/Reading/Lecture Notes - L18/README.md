@@ -263,3 +263,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [4. Misleading Title](./4.%20Misleading%20Title.md)
 
 ## [The Real Danger](./The%20Real%20Danger.md)
+
+## [Communication Failure Pipeline](./Communication%20Failure%20Pipeline.md)
