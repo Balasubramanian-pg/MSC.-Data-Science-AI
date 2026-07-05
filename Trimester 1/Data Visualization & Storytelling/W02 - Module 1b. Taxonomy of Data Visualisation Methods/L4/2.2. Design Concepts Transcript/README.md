@@ -20,3 +20,5 @@
 ## [7. Affordance Example: Customer Satisfaction Analysis](./7.%20Affordance%20Example%20-%20Customer%20Satisfaction%20Analysis.md)
 
 ## [8. Accessibility](./8.%20Accessibility.md)
+
+## [9. Cognitive Load and Visualization](./9.%20Cognitive%20Load%20and%20Visualization.md)
