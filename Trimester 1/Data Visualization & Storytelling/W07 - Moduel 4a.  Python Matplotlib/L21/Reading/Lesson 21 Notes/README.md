@@ -79,3 +79,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Important Visualization Principle](./Important%20Visualization%20Principle.md)
 
 ## [Strategic Insight](./Strategic%20Insight.md)
+
+## [Matplotlib with NumPy: Basic Plotting Workflow](./Matplotlib%20with%20NumPy%20-%20Basic%20Plotting%20Workflow.md)
