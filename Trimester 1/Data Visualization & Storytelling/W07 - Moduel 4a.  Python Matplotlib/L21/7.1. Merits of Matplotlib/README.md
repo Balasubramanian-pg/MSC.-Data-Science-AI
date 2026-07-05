@@ -13,3 +13,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Matplotlib](./Matplotlib.md)
 
 ## [Seaborn](./Seaborn.md)
+
+## [Bokeh](./Bokeh.md)
