@@ -387,3 +387,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Enron Matters](./Why%20Enron%20Matters.md)
 
 ## [Important Analytical Insight](./Important%20Analytical%20Insight.md)
+
+## [Enron Analysis Pipeline](./Enron%20Analysis%20Pipeline.md)
