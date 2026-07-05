@@ -99,3 +99,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Interactive Storytelling in Dashboards](./Interactive%20Storytelling%20in%20Dashboards.md)
 
 ## [Example Workflow](./Example%20Workflow.md)
+
+## [Final Insight](./Final%20Insight.md)
