@@ -37,3 +37,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Missing Values](./Missing%20Values.md)
 
 ## [JSON Files](./JSON%20Files.md)
+
+## [Why JSON Exists](./Why%20JSON%20Exists.md)
