@@ -77,3 +77,5 @@ Observed Data → Fit Function → Predict Future
 ## [The Critical Comparison: Polynomial vs Linear](./The%20Critical%20Comparison%20-%20Polynomial%20vs%20Linear.md)
 
 ## [Why Linear Regression Failed](./Why%20Linear%20Regression%20Failed.md)
+
+## [Underfitting](./Underfitting.md)
