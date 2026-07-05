@@ -41,3 +41,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Add labels](./Add%20labels.md)
 
 ## [Engineering Insight](./Engineering%20Insight.md)
+
+## [Histogram Failure Modes](./Histogram%20Failure%20Modes.md)
