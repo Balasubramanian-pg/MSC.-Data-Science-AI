@@ -87,3 +87,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [1. False Comparability Through Scale Design](./1.%20False%20Comparability%20Through%20Scale%20Design.md)
 
 ## [The Core Problem](./The%20Core%20Problem.md)
+
+## [Why This Happens](./Why%20This%20Happens.md)
