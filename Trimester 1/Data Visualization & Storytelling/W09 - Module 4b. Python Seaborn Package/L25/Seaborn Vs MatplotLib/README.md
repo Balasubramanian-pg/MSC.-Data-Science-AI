@@ -77,3 +77,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [One single, readable command handles data mapping, categorization, and color palettes.](./One%20single%2C%20readable%20command%20handles%20data%20mapping%2C%20categorization%2C%20and%20color%20palettes.md)
 
 ## [Use Matplotlib overlay solely to polish titles and labels](./Use%20Matplotlib%20overlay%20solely%20to%20polish%20titles%20and%20labels.md)
+
+## [1. Syntax Mechanics: Subsetting vs. Column Mapping](./1.%20Syntax%20Mechanics%20-%20Subsetting%20vs.%20Column%20Mapping.md)
