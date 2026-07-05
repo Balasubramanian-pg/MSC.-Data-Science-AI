@@ -357,3 +357,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Who Is Involved?](./Who%20Is%20Involved.md)
 
 ## [Participant Network Model](./Participant%20Network%20Model.md)
+
+## [3. Directionality](./3.%20Directionality.md)
