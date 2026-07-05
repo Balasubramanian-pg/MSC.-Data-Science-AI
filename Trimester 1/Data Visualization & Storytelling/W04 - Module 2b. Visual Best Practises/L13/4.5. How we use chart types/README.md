@@ -265,3 +265,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Emotional Direction](./Emotional%20Direction.md)
 
 ## [Subjectivity](./Subjectivity.md)
+
+## [Emotional vs Objective Language](./Emotional%20vs%20Objective%20Language.md)
