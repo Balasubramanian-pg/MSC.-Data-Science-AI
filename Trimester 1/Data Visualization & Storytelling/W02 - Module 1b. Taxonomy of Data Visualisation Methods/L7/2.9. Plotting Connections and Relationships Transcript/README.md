@@ -23,3 +23,5 @@ week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
 ## [Load high-resolution county boundaries](./Load%20high-resolution%20county%20boundaries.md)
 
 ## [Simplify shapes using the Douglas-Peucker algorithm (tolerance in degrees/meters)](./Simplify%20shapes%20using%20the%20Douglas-Peucker%20algorithm%20%28tolerance%20in%20degreesmeters%29.md)
+
+## [Export simplified map to file (significantly smaller file size)](./Export%20simplified%20map%20to%20file%20%28significantly%20smaller%20file%20size%29.md)
