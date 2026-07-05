@@ -57,3 +57,5 @@ It is fundamentally about:
 ## [Visualization Flow](./Visualization%20Flow.md)
 
 ## [Why the Plot Works Automatically](./Why%20the%20Plot%20Works%20Automatically.md)
+
+## [Important Hidden Mechanism](./Important%20Hidden%20Mechanism.md)
