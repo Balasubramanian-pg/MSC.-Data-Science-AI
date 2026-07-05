@@ -199,3 +199,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [4. Adding Grids](./4.%20Adding%20Grids.md)
 
 ## [Purpose of Grids](./Purpose%20of%20Grids.md)
+
+## [Visual Effect](./Visual%20Effect.md)
