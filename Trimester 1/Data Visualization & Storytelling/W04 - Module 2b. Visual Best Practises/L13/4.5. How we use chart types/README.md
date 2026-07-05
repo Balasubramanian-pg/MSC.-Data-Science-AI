@@ -161,3 +161,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Human Reading vs Computational Structure](./Human%20Reading%20vs%20Computational%20Structure.md)
 
 ## [Word Trees as Cognitive Compression](./Word%20Trees%20as%20Cognitive%20Compression.md)
+
+## [Important Limitation of Word Trees](./Important%20Limitation%20of%20Word%20Trees.md)
