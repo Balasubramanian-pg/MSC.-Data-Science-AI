@@ -153,3 +153,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Standard Plotting Pipeline](./Standard%20Plotting%20Pipeline.md)
 
 ## [Full Example So Far](./Full%20Example%20So%20Far.md)
+
+## [Generate x values](./Generate%20x%20values.md)
