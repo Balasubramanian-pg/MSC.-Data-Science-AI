@@ -15,3 +15,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Central Hypothesis of Word Embeddings](./The%20Central%20Hypothesis%20of%20Word%20Embeddings.md)
 
 ## [Distributional Hypothesis](./Distributional%20Hypothesis.md)
+
+## [Why Context Matters](./Why%20Context%20Matters.md)
