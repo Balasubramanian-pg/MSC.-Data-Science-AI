@@ -239,3 +239,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [The Most Important Takeaway](./The%20Most%20Important%20Takeaway.md)
 
 ## [Deep Insight](./Deep%20Insight.md)
+
+## [Two Ways to Configure a Plot](./Two%20Ways%20to%20Configure%20a%20Plot.md)
