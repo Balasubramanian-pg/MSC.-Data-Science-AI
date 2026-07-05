@@ -51,3 +51,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Pure Categories](./Pure%20Categories.md)
 
 ## [Appropriate Operations](./Appropriate%20Operations.md)
+
+## [Appropriate Visualizations](./Appropriate%20Visualizations.md)
