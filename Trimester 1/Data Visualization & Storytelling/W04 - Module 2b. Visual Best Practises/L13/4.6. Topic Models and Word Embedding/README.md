@@ -93,3 +93,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Simplified LDA Idea](./Simplified%20LDA%20Idea.md)
 
 ## [Inter-Topic Distance](./Inter-Topic%20Distance.md)
+
+## [Bubble Chart Visualization](./Bubble%20Chart%20Visualization.md)
