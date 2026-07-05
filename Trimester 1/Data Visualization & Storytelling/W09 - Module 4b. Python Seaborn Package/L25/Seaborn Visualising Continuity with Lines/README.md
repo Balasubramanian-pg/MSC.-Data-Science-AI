@@ -49,3 +49,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [1. THE BASELINE PLOT: Understanding Statistical Aggregation](./1.%20THE%20BASELINE%20PLOT%20-%20Understanding%20Statistical%20Aggregation.md)
 
 ## [This displays how Seaborn calculates the mean and error band automatically.](./This%20displays%20how%20Seaborn%20calculates%20the%20mean%20and%20error%20band%20automatically.md)
+
+## [Customizing layout via Matplotlib layer over Seaborn](./Customizing%20layout%20via%20Matplotlib%20layer%20over%20Seaborn.md)
