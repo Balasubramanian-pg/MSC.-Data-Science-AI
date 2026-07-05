@@ -1,8 +1,8 @@
 # Answer
 
-✅ **Data becomes sparse.**
+✅ **Random Forest**
 
 > [!NOTE]
 > **Reason**
 >
-> As the number of dimensions increases, data points occupy a much larger feature space. Since the amount of data usually does not grow proportionally, observations become increasingly spread out, resulting in **sparse data**. This phenomenon is a key aspect of the **curse of dimensionality**.
+> **Random Forest** naturally computes feature importance by measuring how much each feature contributes to reducing impurity across decision trees. PCA performs dimensionality reduction, while KMeans and DBSCAN are clustering algorithms and do not inherently provide feature importance scores.
