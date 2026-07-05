@@ -23,3 +23,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Execution Block](./Execution%20Block.md)
 
 ## [8. Python Simulations](./8.%20Python%20Simulations.md)
+
+## [9. Practical Engineering Examples](./9.%20Practical%20Engineering%20Examples.md)
