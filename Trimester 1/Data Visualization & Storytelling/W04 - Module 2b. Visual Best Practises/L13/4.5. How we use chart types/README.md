@@ -375,3 +375,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Organizational Insight](./Important%20Organizational%20Insight.md)
 
 ## [5. Content Analysis](./5.%20Content%20Analysis.md)
+
+## [What Is Being Discussed?](./What%20Is%20Being%20Discussed.md)
