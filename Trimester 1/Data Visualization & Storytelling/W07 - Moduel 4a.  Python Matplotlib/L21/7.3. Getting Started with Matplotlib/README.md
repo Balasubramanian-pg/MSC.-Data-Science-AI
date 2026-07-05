@@ -229,3 +229,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Defining Y Values](./Defining%20Y%20Values.md)
 
 ## [Why Vectorization Matters Again](./Why%20Vectorization%20Matters%20Again.md)
+
+## [Define linear equation](./Define%20linear%20equation.md)
