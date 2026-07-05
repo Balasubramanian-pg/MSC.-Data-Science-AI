@@ -18,3 +18,5 @@
 ## [6. Relationship & Trend Visualizations](./6.%20Relationship%20%26%20Trend%20Visualizations.md)
 
 ## [7. Comparison & Composition Visualizations](./7.%20Comparison%20%26%20Composition%20Visualizations.md)
+
+## [8. Area Charts](./8.%20Area%20Charts.md)
