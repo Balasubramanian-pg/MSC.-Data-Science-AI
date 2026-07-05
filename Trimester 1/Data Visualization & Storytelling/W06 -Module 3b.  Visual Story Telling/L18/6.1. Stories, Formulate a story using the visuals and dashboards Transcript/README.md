@@ -161,3 +161,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Storytelling Is an Emotive Exercise](./Storytelling%20Is%20an%20Emotive%20Exercise.md)
 
 ## [Why Emotion Matters](./Why%20Emotion%20Matters.md)
+
+## [Heath Brothers SUCCESS Model](./Heath%20Brothers%20SUCCESS%20Model.md)
