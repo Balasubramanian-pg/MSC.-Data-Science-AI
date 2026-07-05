@@ -271,3 +271,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Line Styles Matter](./Why%20Line%20Styles%20Matter.md)
 
 ## [Important Learning Insight](./Important%20Learning%20Insight.md)
+
+## [The Debugging Mindset](./The%20Debugging%20Mindset.md)
