@@ -45,3 +45,5 @@ Observed Data → Fit Function → Predict Future
 ## [Polynomial Curve Fitting](./Polynomial%20Curve%20Fitting.md)
 
 ## [Polynomial Intuition](./Polynomial%20Intuition.md)
+
+## [Degree Meaning](./Degree%20Meaning.md)
