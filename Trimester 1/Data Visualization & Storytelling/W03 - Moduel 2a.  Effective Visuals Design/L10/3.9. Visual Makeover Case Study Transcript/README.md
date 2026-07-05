@@ -96,3 +96,5 @@ The transcript introduces this challenge directly.
 ## [Information Hierarchy Model](./Information%20Hierarchy%20Model.md)
 
 ## [Core Principle](./Core%20Principle.md)
+
+## [Examples](./Examples.md)
