@@ -103,3 +103,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Box Plot Components](./Box%20Plot%20Components.md)
 
 ## [Box Plot Structure](./Box%20Plot%20Structure.md)
+
+## [Interquartile Range (IQR)](./Interquartile%20Range%20%28IQR%29.md)
