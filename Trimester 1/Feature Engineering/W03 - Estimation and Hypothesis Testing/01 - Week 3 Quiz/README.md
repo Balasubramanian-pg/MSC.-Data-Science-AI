@@ -5,3 +5,5 @@
 # Question 1
 
 Which of the following techniques is most appropriate for transforming a paragraph of text into a numeric feature vector?
+
+## [Options](./Options.md)
