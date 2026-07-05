@@ -107,3 +107,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why `subplots()` Matters](./Why%20%60subplots%28%29%60%20Matters.md)
 
 ## [Figure](./Figure.md)
+
+## [Axes](./Axes.md)
