@@ -35,3 +35,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Encoding Problems](./Encoding%20Problems.md)
 
 ## [Missing Values](./Missing%20Values.md)
+
+## [JSON Files](./JSON%20Files.md)
