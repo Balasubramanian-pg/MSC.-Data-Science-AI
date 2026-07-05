@@ -1,0 +1,3 @@
+# Common Bin Selection Rules
+
+
