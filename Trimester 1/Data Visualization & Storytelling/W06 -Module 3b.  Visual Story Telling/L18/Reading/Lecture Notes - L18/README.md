@@ -21,3 +21,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Memory Architecture of Storytelling](./Memory%20Architecture%20of%20Storytelling.md)
 
 ## [2. Persuasion](./2.%20Persuasion.md)
+
+## [Why Stories Persuade Better Than Facts Alone](./Why%20Stories%20Persuade%20Better%20Than%20Facts%20Alone.md)
