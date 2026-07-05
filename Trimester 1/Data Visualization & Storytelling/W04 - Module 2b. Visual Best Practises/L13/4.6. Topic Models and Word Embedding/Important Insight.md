@@ -1,9 +1,11 @@
 # Important Insight
 
-The machine is not explicitly told:
+Topic models do not assign:
 
 ```text
-"This is legal communication."
+one document = one topic
 ```
 
-It infers the grouping statistically.
+Instead:
+
+documents contain mixtures of themes.
