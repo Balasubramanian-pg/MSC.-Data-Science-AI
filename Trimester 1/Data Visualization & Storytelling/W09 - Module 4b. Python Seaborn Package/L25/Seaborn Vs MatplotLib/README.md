@@ -117,3 +117,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [4. Syntax Comparison Framework](./4.%20Syntax%20Comparison%20Framework.md)
 
 ## [1. Visual Aesthetics: The "Garnished" Edge Effect](./1.%20Visual%20Aesthetics%20-%20The%20Garnished%20Edge%20Effect.md)
+
+## [2. Theoretical Breakdown: The 7 Stages & Statistical Inference](./2.%20Theoretical%20Breakdown%20-%20The%207%20Stages%20%26%20Statistical%20Inference.md)
