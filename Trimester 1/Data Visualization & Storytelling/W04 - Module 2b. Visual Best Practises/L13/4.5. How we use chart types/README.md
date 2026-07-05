@@ -347,3 +347,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Conversation Analysis Framework](./Conversation%20Analysis%20Framework.md)
 
 ## [1. Temporal Dimension](./1.%20Temporal%20Dimension.md)
+
+## [When Did Communication Happen?](./When%20Did%20Communication%20Happen.md)
