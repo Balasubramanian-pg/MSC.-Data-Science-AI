@@ -157,3 +157,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Common Beginner Mistakes](./Common%20Beginner%20Mistakes.md)
 
 ## [1. Forgetting Legends](./1.%20Forgetting%20Legends.md)
+
+## [2. Missing Labels](./2.%20Missing%20Labels.md)
