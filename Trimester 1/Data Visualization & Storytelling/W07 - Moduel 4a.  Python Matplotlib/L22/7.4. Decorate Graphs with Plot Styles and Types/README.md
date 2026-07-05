@@ -13,3 +13,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Pre-attentive Processing](./Pre-attentive%20Processing.md)
 
 ## [Why Matplotlib Matters](./Why%20Matplotlib%20Matters.md)
+
+## [Importing Visualization Libraries](./Importing%20Visualization%20Libraries.md)
