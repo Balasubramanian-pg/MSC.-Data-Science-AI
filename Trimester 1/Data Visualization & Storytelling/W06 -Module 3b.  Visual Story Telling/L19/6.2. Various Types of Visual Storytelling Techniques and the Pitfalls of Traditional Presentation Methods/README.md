@@ -135,3 +135,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Monomyth Works Best When:](./Monomyth%20Works%20Best%20When%20-.md)
 
 ## [Story Mountain Works Best When:](./Story%20Mountain%20Works%20Best%20When%20-.md)
+
+## [Nested Loops Work Best When:](./Nested%20Loops%20Work%20Best%20When%20-.md)
