@@ -45,3 +45,5 @@ This section explains how to create multiple related plots from a Pandas DataFra
 ## [Common Beginner Mistakes](./Common%20Beginner%20Mistakes.md)
 
 ## [1. Forgetting ShareX](./1.%20Forgetting%20ShareX.md)
+
+## [2. Wrong Axis Index](./2.%20Wrong%20Axis%20Index.md)
