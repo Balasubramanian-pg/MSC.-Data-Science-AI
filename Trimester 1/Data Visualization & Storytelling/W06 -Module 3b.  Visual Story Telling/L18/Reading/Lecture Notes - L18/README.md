@@ -77,3 +77,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Common Storytelling Failures](./Common%20Storytelling%20Failures.md)
 
 ## [1. Data Dumping](./1.%20Data%20Dumping.md)
+
+## [2. Emotional Manipulation](./2.%20Emotional%20Manipulation.md)
