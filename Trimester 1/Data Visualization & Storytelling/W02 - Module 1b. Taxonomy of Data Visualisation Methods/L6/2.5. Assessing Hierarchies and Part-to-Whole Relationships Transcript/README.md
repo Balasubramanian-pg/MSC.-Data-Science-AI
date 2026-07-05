@@ -29,3 +29,5 @@ This document provides a technical blueprint for understanding, selecting, and i
 ## [7. Advanced Engineering Considerations & Edge Cases](./7.%20Advanced%20Engineering%20Considerations%20%26%20Edge%20Cases.md)
 
 ## [8. Section Summary & Operational Checklists](./8.%20Section%20Summary%20%26%20Operational%20Checklists.md)
+
+## [References](./References.md)
