@@ -37,3 +37,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Example](./Example.md)
 
 ## [Why Customization Matters](./Why%20Customization%20Matters.md)
+
+## [Important Tradeoff](./Important%20Tradeoff.md)
