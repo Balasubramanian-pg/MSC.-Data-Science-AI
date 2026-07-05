@@ -123,3 +123,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Example in Business Context](./Example%20in%20Business%20Context.md)
 
 ## [Main Story](./Main%20Story.md)
+
+## [Iterative Analysis and Audience Interaction](./Iterative%20Analysis%20and%20Audience%20Interaction.md)
