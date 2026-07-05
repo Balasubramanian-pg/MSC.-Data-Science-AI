@@ -31,3 +31,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Common Bin Selection Rules](./Common%20Bin%20Selection%20Rules.md)
 
 ## [Sturges Rule](./Sturges%20Rule.md)
+
+## [Square Root Rule](./Square%20Root%20Rule.md)
