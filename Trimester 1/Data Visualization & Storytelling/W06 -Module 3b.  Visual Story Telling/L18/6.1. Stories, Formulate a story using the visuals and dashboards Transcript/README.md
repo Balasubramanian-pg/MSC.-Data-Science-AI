@@ -45,3 +45,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Movie vs Annual Report Example](./Movie%20vs%20Annual%20Report%20Example.md)
 
 ## [Why?](./Why.md)
+
+## [Human Memory Prefers Narrative Structures](./Human%20Memory%20Prefers%20Narrative%20Structures.md)
