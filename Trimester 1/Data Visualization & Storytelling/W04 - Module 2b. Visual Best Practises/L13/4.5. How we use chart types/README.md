@@ -231,3 +231,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Sentiment Aggregation Problem](./Sentiment%20Aggregation%20Problem.md)
 
 ## [Modern Real-World Applications](./Modern%20Real-World%20Applications.md)
+
+## [Customer Feedback Analytics Pipeline](./Customer%20Feedback%20Analytics%20Pipeline.md)
