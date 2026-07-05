@@ -1,9 +1,9 @@
 # Final Mental Model
 
-Think of text visualization as:
+Think of NLP visualization as:
 
 ```text
-making language visually computable for human cognition
+transforming language into visible cognitive structures
 ```
 
-rather than merely displaying words.
+that humans can perceive rapidly.
