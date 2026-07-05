@@ -59,3 +59,5 @@ Observed Data → Fit Function → Predict Future
 ## [Important Output](./Important%20Output.md)
 
 ## [Step 3: Convert Coefficients Into Function](./Step%203%20-%20Convert%20Coefficients%20Into%20Function.md)
+
+## [Step 4: Generate Future Months](./Step%204%20-%20Generate%20Future%20Months.md)
