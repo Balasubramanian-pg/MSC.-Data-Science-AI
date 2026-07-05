@@ -99,3 +99,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Cognitive Compactness](./Cognitive%20Compactness.md)
 
 ## [CO₂ Emissions Dashboard Overview](./CO%E2%82%82%20Emissions%20Dashboard%20Overview.md)
+
+## [Visual Components](./Visual%20Components.md)
