@@ -77,3 +77,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Topic Modeling Workflow](./Topic%20Modeling%20Workflow.md)
 
 ## [Key Idea](./Key%20Idea.md)
+
+## [LDA and LSA](./LDA%20and%20LSA.md)
