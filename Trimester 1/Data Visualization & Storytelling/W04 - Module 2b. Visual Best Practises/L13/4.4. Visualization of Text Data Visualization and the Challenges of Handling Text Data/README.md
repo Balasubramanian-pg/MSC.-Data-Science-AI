@@ -55,3 +55,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Conversion Is Necessary](./Why%20Conversion%20Is%20Necessary.md)
 
 ## [Language Conversion Pipeline](./Language%20Conversion%20Pipeline.md)
+
+## [Important Concept](./Important%20Concept.md)
