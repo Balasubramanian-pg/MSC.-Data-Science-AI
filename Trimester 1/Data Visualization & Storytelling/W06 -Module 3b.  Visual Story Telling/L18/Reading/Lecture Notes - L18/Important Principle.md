@@ -1,6 +1,4 @@
 # Important Principle
 
-More information does not create more understanding.
-
-Often:  
-it creates less.
+When everything looks important:  
+nothing looks important.
