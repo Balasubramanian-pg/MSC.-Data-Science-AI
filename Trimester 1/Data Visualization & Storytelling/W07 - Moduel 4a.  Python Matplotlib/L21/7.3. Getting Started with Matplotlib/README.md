@@ -221,3 +221,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [7. Plotting a Linear Equation](./7.%20Plotting%20a%20Linear%20Equation.md)
 
 ## [Mathematical Meaning](./Mathematical%20Meaning.md)
+
+## [Visual Interpretation](./Visual%20Interpretation.md)
