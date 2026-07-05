@@ -19,3 +19,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Weaknesses](./Weaknesses.md)
 
 ## [2. Reader-Driven Narratives](./2.%20Reader-Driven%20Narratives.md)
+
+## [Core Philosophy](./Core%20Philosophy.md)
