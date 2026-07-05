@@ -239,3 +239,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Cognitive Insight](./Important%20Cognitive%20Insight.md)
 
 ## [Cognitive Conflict](./Cognitive%20Conflict.md)
+
+## [Information Transfer Collapse](./Information%20Transfer%20Collapse.md)
