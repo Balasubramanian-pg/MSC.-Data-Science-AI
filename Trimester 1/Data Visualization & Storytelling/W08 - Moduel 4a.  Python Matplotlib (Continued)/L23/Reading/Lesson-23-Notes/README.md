@@ -7,3 +7,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Advanced Matplotlib & Data from the Web](./Advanced%20Matplotlib%20%26%20Data%20from%20the%20Web.md)
 
 ## [Introduction](./Introduction.md)
+
+## [Data Formats in Analytics Systems](./Data%20Formats%20in%20Analytics%20Systems.md)
