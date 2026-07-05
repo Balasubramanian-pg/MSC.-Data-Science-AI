@@ -355,3 +355,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [2. Participant Analysis](./2.%20Participant%20Analysis.md)
 
 ## [Who Is Involved?](./Who%20Is%20Involved.md)
+
+## [Participant Network Model](./Participant%20Network%20Model.md)
