@@ -17,3 +17,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Actual Goal of Visualization](./Actual%20Goal%20of%20Visualization.md)
 
 ## [Visualization Pipeline](./Visualization%20Pipeline.md)
+
+## [Good Visualization Design Must Optimize](./Good%20Visualization%20Design%20Must%20Optimize.md)
