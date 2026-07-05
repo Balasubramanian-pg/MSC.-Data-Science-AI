@@ -18,3 +18,5 @@
 ## [3. The Seven Stages of Data Visualization](./3.%20The%20Seven%20Stages%20of%20Data%20Visualization.md)
 
 ## [3.1 Stage 1: Acquiring Data](./3.1%20Stage%201%20-%20Acquiring%20Data.md)
+
+## [Definition](./Definition.md)
