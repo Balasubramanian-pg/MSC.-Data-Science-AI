@@ -53,3 +53,5 @@ It is fundamentally about:
 ## [What Is Happening Here?](./What%20Is%20Happening%20Here.md)
 
 ## [Column Subsetting](./Column%20Subsetting.md)
+
+## [Visualization Flow](./Visualization%20Flow.md)
