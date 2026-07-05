@@ -71,3 +71,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Perceptual Weakness of Area](./Perceptual%20Weakness%20of%20Area.md)
 
 ## [Transcript Insight](./Transcript%20Insight.md)
+
+## [Important Principle](./Important%20Principle.md)
