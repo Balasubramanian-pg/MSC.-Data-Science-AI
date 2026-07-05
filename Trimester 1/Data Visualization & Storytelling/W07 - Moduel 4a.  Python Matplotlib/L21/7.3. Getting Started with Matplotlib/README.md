@@ -39,3 +39,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Visual Intuition](./Visual%20Intuition.md)
 
 ## [Why Even Spacing Matters](./Why%20Even%20Spacing%20Matters.md)
+
+## [5. Generating the Sine Wave](./5.%20Generating%20the%20Sine%20Wave.md)
