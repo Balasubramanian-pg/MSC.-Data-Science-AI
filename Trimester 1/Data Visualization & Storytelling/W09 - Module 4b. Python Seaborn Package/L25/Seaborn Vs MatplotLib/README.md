@@ -189,3 +189,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Step B: Matplotlib Customizations (Overriding standard labels & adding reference layers)](./Step%20B%20-%20Matplotlib%20Customizations%20%28Overriding%20standard%20labels%20%26%20adding%20reference%20layers%29.md)
 
 ## [1. Add a highly custom title via Matplotlib](./1.%20Add%20a%20highly%20custom%20title%20via%20Matplotlib.md)
+
+## [2. Rename the Y-axis label to "Final Score" as explicitly instructed in the lecture](./2.%20Rename%20the%20Y-axis%20label%20to%20Final%20Score%20as%20explicitly%20instructed%20in%20the%20lecture.md)
