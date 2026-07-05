@@ -365,3 +365,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Communication Direction Model](./Communication%20Direction%20Model.md)
 
 ## [Why Direction Matters](./Why%20Direction%20Matters.md)
+
+## [4. Communication Density](./4.%20Communication%20Density.md)
