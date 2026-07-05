@@ -231,3 +231,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Global Use of Pecha Kucha](./Global%20Use%20of%20Pecha%20Kucha.md)
 
 ## [Death by Presentation](./Death%20by%20Presentation.md)
+
+## [Why This Happens](./Why%20This%20Happens.md)
