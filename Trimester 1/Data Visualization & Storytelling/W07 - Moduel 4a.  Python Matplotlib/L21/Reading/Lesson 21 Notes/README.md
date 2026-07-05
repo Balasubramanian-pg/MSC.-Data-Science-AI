@@ -121,3 +121,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Even Spacing Is Important](./Why%20Even%20Spacing%20Is%20Important.md)
 
 ## [Generating the Sine Function](./Generating%20the%20Sine%20Function.md)
+
+## [Important Hidden Concept: Vectorization](./Important%20Hidden%20Concept%20-%20Vectorization.md)
