@@ -101,3 +101,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Visualization Techniques for Time Stories](./Visualization%20Techniques%20for%20Time%20Stories.md)
 
 ## [Hidden Complexity in Time Narratives](./Hidden%20Complexity%20in%20Time%20Narratives.md)
+
+## [The Core Analytical Principle](./The%20Core%20Analytical%20Principle.md)
