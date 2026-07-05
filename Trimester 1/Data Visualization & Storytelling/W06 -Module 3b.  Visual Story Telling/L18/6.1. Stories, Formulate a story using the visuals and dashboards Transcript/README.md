@@ -21,3 +21,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Raw Data Problem](./Raw%20Data%20Problem.md)
 
 ## [Story Advantage](./Story%20Advantage.md)
+
+## [Important Insight](./Important%20Insight.md)
