@@ -45,3 +45,5 @@
 ## [7. Visualization Decision Framework](./7.%20Visualization%20Decision%20Framework.md)
 
 ## [Text-Based Flowchart](./Text-Based%20Flowchart.md)
+
+## [Common Statistical and Analytical Formulas](./Common%20Statistical%20and%20Analytical%20Formulas.md)
