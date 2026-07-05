@@ -30,3 +30,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [3.2 Vertical Bar Charts](./3.2%20Vertical%20Bar%20Charts.md)
 
 ## [Structure](./Structure.md)
+
+## [Business Insight](./Business%20Insight.md)
