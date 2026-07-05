@@ -61,3 +61,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Important Engineering Insight](./Important%20Engineering%20Insight.md)
 
 ## [Example](./Example.md)
+
+## [Important Warning](./Important%20Warning.md)
