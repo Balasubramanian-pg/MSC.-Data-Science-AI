@@ -203,3 +203,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Operational Cognitive Style](./Operational%20Cognitive%20Style.md)
 
 ## [Key Difference from Analysts](./Key%20Difference%20from%20Analysts.md)
+
+## [Dashboard Type Comparison](./Dashboard%20Type%20Comparison.md)
