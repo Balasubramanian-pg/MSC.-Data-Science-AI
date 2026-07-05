@@ -61,3 +61,5 @@ I have organized the code into a logical, executable structure using a mock data
 ## [--- Example 6c: Grid Faceting using Figure-level Functions ---](./---%20Example%206c%20-%20Grid%20Faceting%20using%20Figure-level%20Functions%20---.md)
 
 ## [relplot() creates a FacetGrid, allowing you to split charts into physical subplots ('col')](./relplot%28%29%20creates%20a%20FacetGrid%2C%20allowing%20you%20to%20split%20charts%20into%20physical%20subplots%20%28%27col%27%29.md)
+
+## [Key Takeaways Cheatsheet](./Key%20Takeaways%20Cheatsheet.md)
