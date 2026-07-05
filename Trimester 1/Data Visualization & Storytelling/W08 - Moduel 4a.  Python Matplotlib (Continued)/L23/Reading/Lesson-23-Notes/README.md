@@ -315,3 +315,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Example](./Example.md)
 
 ## [What `polyfit()` Returns](./What%20%60polyfit%28%29%60%20Returns.md)
+
+## [Understanding `np.poly1d()`](./Understanding%20%60np.poly1d%28%29%60.md)
