@@ -87,3 +87,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Insight](./Important%20Insight.md)
 
 ## [Easy Detection](./Easy%20Detection.md)
+
+## [Hard Detection](./Hard%20Detection.md)
