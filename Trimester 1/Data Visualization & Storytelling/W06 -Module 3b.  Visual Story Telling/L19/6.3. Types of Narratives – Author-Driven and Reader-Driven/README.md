@@ -15,3 +15,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Sequence Matters](./Why%20Sequence%20Matters.md)
 
 ## [Strengths of Author-Driven Narratives](./Strengths%20of%20Author-Driven%20Narratives.md)
+
+## [Weaknesses](./Weaknesses.md)
