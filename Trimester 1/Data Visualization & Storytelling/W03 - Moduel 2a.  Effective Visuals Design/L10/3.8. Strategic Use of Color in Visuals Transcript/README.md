@@ -122,3 +122,5 @@ Bad visualizations use color excessively.
 ## [Why Minimalism Works](./Why%20Minimalism%20Works.md)
 
 ## [Color in Storytelling](./Color%20in%20Storytelling.md)
+
+## [Narrative Flow with Color](./Narrative%20Flow%20with%20Color.md)
