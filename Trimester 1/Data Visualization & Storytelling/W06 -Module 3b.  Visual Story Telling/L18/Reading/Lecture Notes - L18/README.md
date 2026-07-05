@@ -73,3 +73,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Storytelling in Business Analytics](./Storytelling%20in%20Business%20Analytics.md)
 
 ## [Analysts Who Influence Organizations](./Analysts%20Who%20Influence%20Organizations.md)
+
+## [Common Storytelling Failures](./Common%20Storytelling%20Failures.md)
