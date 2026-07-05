@@ -13,3 +13,5 @@
 ## [35.2.6. Doughnut Charts for Categorical Share Estimation](./35.2.6.%20Doughnut%20Charts%20for%20Categorical%20Share%20Estimation.md)
 
 ## [35.2.7. Why Simple Percentages Are Rare in Complex Systems](./35.2.7.%20Why%20Simple%20Percentages%20Are%20Rare%20in%20Complex%20Systems.md)
+
+## [35.2.8. Hierarchical Structures and Drill-Down Analytics](./35.2.8.%20Hierarchical%20Structures%20and%20Drill-Down%20Analytics.md)
