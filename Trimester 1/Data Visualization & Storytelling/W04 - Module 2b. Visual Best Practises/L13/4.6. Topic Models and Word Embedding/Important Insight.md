@@ -1,11 +1,9 @@
 # Important Insight
 
-Machines are not explicitly taught:
+The machine is not explicitly told:
 
 ```text
-"bankruptcy means financial distress"
+"This is legal communication."
 ```
 
-Instead:
-
-they infer meaning statistically from contextual usage.
+It infers the grouping statistically.
