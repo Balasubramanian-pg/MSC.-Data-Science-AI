@@ -7,3 +7,5 @@
 ## [4.3.3. The Mechanics of Data Binding](./4.3.3.%20The%20Mechanics%20of%20Data%20Binding.md)
 
 ## [4.3.4. Linked Interactivity and Shared Sources](./4.3.4.%20Linked%20Interactivity%20and%20Shared%20Sources.md)
+
+## [4.3.5. Selection Geometry and Hit Testing](./4.3.5.%20Selection%20Geometry%20and%20Hit%20Testing.md)
