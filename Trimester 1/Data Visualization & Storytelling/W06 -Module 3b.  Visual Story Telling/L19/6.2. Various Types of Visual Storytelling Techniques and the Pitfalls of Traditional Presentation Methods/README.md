@@ -93,3 +93,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Strategic Lesson](./The%20Strategic%20Lesson.md)
 
 ## [Story Mountain Framework: Narrative Escalation Through Visualization](./Story%20Mountain%20Framework%20-%20Narrative%20Escalation%20Through%20Visualization.md)
+
+## [Narrative Escalation](./Narrative%20Escalation.md)
