@@ -171,3 +171,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Core Idea](./Core%20Idea.md)
 
 ## [Why Sentiment Matters](./Why%20Sentiment%20Matters.md)
+
+## [Sentiment Analysis Pipeline](./Sentiment%20Analysis%20Pipeline.md)
