@@ -23,3 +23,5 @@
 ## [35.2.11. Waterfall Charts for Cumulative Profit Contribution](./35.2.11.%20Waterfall%20Charts%20for%20Cumulative%20Profit%20Contribution.md)
 
 ## [35.2.12. Dashboards vs Static Reporting](./35.2.12.%20Dashboards%20vs%20Static%20Reporting.md)
+
+## [35.2.13. Frequentist vs Bayesian Interpretation of Dynamic Data](./35.2.13.%20Frequentist%20vs%20Bayesian%20Interpretation%20of%20Dynamic%20Data.md)
