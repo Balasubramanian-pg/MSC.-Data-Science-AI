@@ -59,3 +59,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Why This Matters](./Why%20This%20Matters.md)
 
 ## [Important Distinction](./Important%20Distinction.md)
+
+## [Common Mistake](./Common%20Mistake.md)
