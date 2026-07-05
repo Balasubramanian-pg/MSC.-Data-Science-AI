@@ -211,3 +211,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [3. Concrete](./3.%20Concrete.md)
 
 ## [4. Credible](./4.%20Credible.md)
+
+## [Credibility Sources](./Credibility%20Sources.md)
