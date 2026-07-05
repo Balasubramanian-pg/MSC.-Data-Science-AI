@@ -215,3 +215,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Example Without Cleaning](./Example%20Without%20Cleaning.md)
 
 ## [Example With Cleaning](./Example%20With%20Cleaning.md)
+
+## [Relationship to Modern AI](./Relationship%20to%20Modern%20AI.md)
