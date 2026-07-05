@@ -103,3 +103,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Good Dashboard Characteristics](./Good%20Dashboard%20Characteristics.md)
 
 ## [Progressive Disclosure](./Progressive%20Disclosure.md)
+
+## [Connection to Data Storytelling](./Connection%20to%20Data%20Storytelling.md)
