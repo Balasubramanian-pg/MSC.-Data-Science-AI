@@ -51,3 +51,5 @@ I have organized the code into a logical, executable structure using a mock data
 ## [Load real-world time-series data](./Load%20real-world%20time-series%20data.md)
 
 ## [--- Example 6a: Basic Line Plot ---](./---%20Example%206a%20-%20Basic%20Line%20Plot%20---.md)
+
+## [Seaborn automatically aggregates multiple data points per timepoint into a mean line + CI band](./Seaborn%20automatically%20aggregates%20multiple%20data%20points%20per%20timepoint%20into%20a%20mean%20line%20%2B%20CI%20band.md)
