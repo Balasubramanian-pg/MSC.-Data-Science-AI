@@ -1,0 +1,3 @@
+# JJ (Adjective): 2
+
+
