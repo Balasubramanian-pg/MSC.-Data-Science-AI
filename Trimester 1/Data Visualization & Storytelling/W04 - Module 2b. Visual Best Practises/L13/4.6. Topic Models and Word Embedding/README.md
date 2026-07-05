@@ -83,3 +83,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Unsupervised Topic Discovery](./Unsupervised%20Topic%20Discovery.md)
 
 ## [LSA](./LSA.md)
+
+## [Latent Semantic Analysis](./Latent%20Semantic%20Analysis.md)
