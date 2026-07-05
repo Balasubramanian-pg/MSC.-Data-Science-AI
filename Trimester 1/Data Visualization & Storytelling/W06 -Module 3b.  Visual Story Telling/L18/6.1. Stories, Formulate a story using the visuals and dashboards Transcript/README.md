@@ -261,3 +261,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [High-Stakes Presentation Model](./High-Stakes%20Presentation%20Model.md)
 
 ## [Deepest Lesson of This Section](./Deepest%20Lesson%20of%20This%20Section.md)
+
+## [Visual Hierarchy and Real-World Consequences](./Visual%20Hierarchy%20and%20Real-World%20Consequences.md)
