@@ -415,3 +415,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Communication as Behavioral Telemetry](./Communication%20as%20Behavioral%20Telemetry.md)
 
 ## [Communication Intelligence Pipeline](./Communication%20Intelligence%20Pipeline.md)
+
+## [Enron Bankruptcy Timeline](./Enron%20Bankruptcy%20Timeline.md)
