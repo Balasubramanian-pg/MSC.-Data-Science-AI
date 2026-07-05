@@ -59,3 +59,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why the Visualization Was Revolutionary](./Why%20the%20Visualization%20Was%20Revolutionary.md)
 
 ## [The Key Analytical Principle: Clustering](./The%20Key%20Analytical%20Principle%20-%20Clustering.md)
+
+## [Simplified Interpretation Flow](./Simplified%20Interpretation%20Flow.md)
