@@ -469,3 +469,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Number formatting](./Number%20formatting.md)
 
 ## [Important Visualization Principle](./Important%20Visualization%20Principle.md)
+
+## [Mistake 1: Over-Rotating Labels](./Mistake%201%20-%20Over-Rotating%20Labels.md)
