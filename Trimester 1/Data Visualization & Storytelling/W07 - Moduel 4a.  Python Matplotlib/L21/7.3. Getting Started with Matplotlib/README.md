@@ -71,3 +71,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Common Beginner Errors](./Common%20Beginner%20Errors.md)
 
 ## [1. Missing Imports](./1.%20Missing%20Imports.md)
+
+## [2. Forgetting `show()`](./2.%20Forgetting%20%60show%28%29%60.md)
