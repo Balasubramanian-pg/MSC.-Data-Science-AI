@@ -135,3 +135,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Visual Behavior](./Visual%20Behavior.md)
 
 ## [4.2 Creating Figure and Axes](./4.2%20Creating%20Figure%20and%20Axes.md)
+
+## [Understanding Figure vs Axes](./Understanding%20Figure%20vs%20Axes.md)
