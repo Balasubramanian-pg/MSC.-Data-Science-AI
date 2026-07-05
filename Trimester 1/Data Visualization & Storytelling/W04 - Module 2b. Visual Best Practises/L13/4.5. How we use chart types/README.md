@@ -393,3 +393,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Network Visualization Is Powerful](./Why%20Network%20Visualization%20Is%20Powerful.md)
 
 ## [Modern Applications](./Modern%20Applications.md)
+
+## [Hidden Insight](./Hidden%20Insight.md)
