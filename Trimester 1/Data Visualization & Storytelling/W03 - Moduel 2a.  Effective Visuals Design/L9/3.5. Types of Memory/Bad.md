@@ -1,5 +1,5 @@
 # Bad
 
-```text
-User must remember what blue represented from another chart
-```
+Legend placed far away from chart.
+
+Users constantly look back and forth.
