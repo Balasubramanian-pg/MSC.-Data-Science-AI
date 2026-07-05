@@ -65,3 +65,5 @@ week: W05 - Module 3a.  Dashboards
 ## [3. Real-Time or Near Real-Time](./3.%20Real-Time%20or%20Near%20Real-Time.md)
 
 ## [Key Principle](./Key%20Principle.md)
+
+## [Operational Importance](./Operational%20Importance.md)
