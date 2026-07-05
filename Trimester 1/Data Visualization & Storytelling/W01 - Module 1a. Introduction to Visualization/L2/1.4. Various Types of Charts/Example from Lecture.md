@@ -1,5 +1,9 @@
 # Example from Lecture
 
-```text
-~800 tweets contained 20–25 words.
-```
+Variables represented:
+
+|Feature|Meaning|
+|---|---|
+|Color|Sentiment type|
+|Bubble size|Number of complaints|
+|Position|Complaint category|
