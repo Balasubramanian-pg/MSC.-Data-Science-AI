@@ -1,13 +1,4 @@
 # Definition
 
-Dashboards should allow users to:
-
-- filter,
-    
-- drill down,
-    
-- compare,
-    
-- explore,
-    
-- and personalize views.
+Every visual in a dashboard should support:  
+a specific business objective.
