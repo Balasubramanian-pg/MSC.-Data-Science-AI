@@ -17,3 +17,5 @@
 ## [3.0.8. Embedded Methods: Algorithmic Selection](./3.0.8.%20Embedded%20Methods%20-%20Algorithmic%20Selection.md)
 
 ## [3.0.9. L1 Regularization (Lasso) in Feature Selection](./3.0.9.%20L1%20Regularization%20%28Lasso%29%20in%20Feature%20Selection.md)
+
+## [3.0.10. Example of Pearson Correlation Filtering](./3.0.10.%20Example%20of%20Pearson%20Correlation%20Filtering.md)
