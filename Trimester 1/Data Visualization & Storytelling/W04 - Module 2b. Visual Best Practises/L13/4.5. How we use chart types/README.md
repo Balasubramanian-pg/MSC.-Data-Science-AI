@@ -65,3 +65,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Comparison of Word Cloud vs Bar Chart](./Comparison%20of%20Word%20Cloud%20vs%20Bar%20Chart.md)
 
 ## [Perceptual Comparison](./Perceptual%20Comparison.md)
+
+## [Important Cognitive Insight](./Important%20Cognitive%20Insight.md)
