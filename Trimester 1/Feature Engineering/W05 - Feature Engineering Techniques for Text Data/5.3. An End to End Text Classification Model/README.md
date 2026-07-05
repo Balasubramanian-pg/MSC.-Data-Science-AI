@@ -39,3 +39,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Convert the sparse vector of the single document to a dense array](./Convert%20the%20sparse%20vector%20of%20the%20single%20document%20to%20a%20dense%20array.md)
 
 ## [Get indices of the top 5 highest TF-IDF scores in this specific document](./Get%20indices%20of%20the%20top%205%20highest%20TF-IDF%20scores%20in%20this%20specific%20document.md)
+
+## [Expected Output Snippet:](./Expected%20Output%20Snippet%20-.md)
