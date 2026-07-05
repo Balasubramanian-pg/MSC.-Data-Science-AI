@@ -1,12 +1,13 @@
 # Example
 
 ```python
-p.vbar(
-    x=fruits,
-    top=counts,
-    width=0.5,
-    color=(100, 100, 100, 0.85)
-)
+np.random.randint(500, 2000, size=12)
 ```
 
-Gray with 85% opacity.
+Generates:
+
+```text
+[1450, 1880, 720, 1100, ...]
+```
+
+12 random freight values.
