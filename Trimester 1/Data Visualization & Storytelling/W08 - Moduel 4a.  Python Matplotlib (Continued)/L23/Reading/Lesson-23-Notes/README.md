@@ -167,3 +167,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Seasonal Patterns](./Seasonal%20Patterns.md)
 
 ## [Visualization Architecture](./Visualization%20Architecture.md)
+
+## [Why Indexing Improves Plotting](./Why%20Indexing%20Improves%20Plotting.md)
