@@ -19,3 +19,5 @@ week: W01 - Overview of Feature Engineering
 ## [1.5.6. Factors Affecting Dimensionality Management](./1.5.6.%20Factors%20Affecting%20Dimensionality%20Management.md)
 
 ## [1.5.7. Common Misinterpretations](./1.5.7.%20Common%20Misinterpretations.md)
+
+## [1.5.8. Conclusions](./1.5.8.%20Conclusions.md)
