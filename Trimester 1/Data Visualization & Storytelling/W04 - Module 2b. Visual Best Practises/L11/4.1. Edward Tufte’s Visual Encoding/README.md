@@ -39,3 +39,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Critical Property](./Critical%20Property.md)
 
 ## [What This Means](./What%20This%20Means.md)
+
+## [Important Statistical Warning](./Important%20Statistical%20Warning.md)
