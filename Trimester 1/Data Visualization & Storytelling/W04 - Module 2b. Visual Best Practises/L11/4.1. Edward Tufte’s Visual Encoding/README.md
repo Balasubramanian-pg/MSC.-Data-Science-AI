@@ -127,3 +127,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Minimalism Works](./Why%20Minimalism%20Works.md)
 
 ## [Chartjunk](./Chartjunk.md)
+
+## [Cognitive Cost of Chartjunk](./Cognitive%20Cost%20of%20Chartjunk.md)
