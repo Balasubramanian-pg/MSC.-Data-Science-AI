@@ -3,7 +3,9 @@
 Think of conversation visualization as:
 
 ```text
-mapping invisible social and organizational structures hidden inside communication flows
+turning invisible organizational behavior into visible temporal and relational geometry
 ```
 
-through perceptual network representations.
+through analytical visualization systems.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
