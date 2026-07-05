@@ -1,5 +1,5 @@
 # Relationship Between Sine and Cosine
 
-Cosine is phase-shifted relative to sine:
+Cosine is essentially a shifted sine wave:
 
 \cos(x)=\sin\left(x+\frac{\pi}{2}\right)
