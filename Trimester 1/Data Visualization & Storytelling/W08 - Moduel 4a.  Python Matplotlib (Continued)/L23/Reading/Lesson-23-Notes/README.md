@@ -193,3 +193,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Understanding `plt.subplots()`](./Understanding%20%60plt.subplots%28%29%60.md)
 
 ## [Breaking This Down](./Breaking%20This%20Down.md)
+
+## [`2, 1`](./%602%2C%201%60.md)
