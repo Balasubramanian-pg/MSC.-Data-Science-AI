@@ -123,3 +123,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Standardizing Capitalization](./Standardizing%20Capitalization.md)
 
 ## [Why This Matters](./Why%20This%20Matters.md)
+
+## [Vocabulary Explosion Problem](./Vocabulary%20Explosion%20Problem.md)
