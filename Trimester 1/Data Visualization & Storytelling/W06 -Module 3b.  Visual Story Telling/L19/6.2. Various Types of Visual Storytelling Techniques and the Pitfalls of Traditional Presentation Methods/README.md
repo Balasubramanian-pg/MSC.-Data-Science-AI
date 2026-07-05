@@ -107,3 +107,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Climax Phase](./Climax%20Phase.md)
 
 ## [Resolution Phase](./Resolution%20Phase.md)
+
+## [Simplified Narrative Flow](./Simplified%20Narrative%20Flow.md)
