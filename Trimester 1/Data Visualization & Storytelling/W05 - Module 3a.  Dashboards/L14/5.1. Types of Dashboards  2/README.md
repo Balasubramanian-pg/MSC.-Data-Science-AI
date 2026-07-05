@@ -47,3 +47,5 @@ week: W05 - Module 3a.  Dashboards
 ## [2. Concise](./2.%20Concise.md)
 
 ## [3. Clear](./3.%20Clear.md)
+
+## [Clarity Requires](./Clarity%20Requires.md)
