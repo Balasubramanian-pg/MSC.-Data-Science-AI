@@ -2,8 +2,8 @@
 
 |Feature|Behavior|
 |---|---|
-|Aggregated data|High-level summaries|
-|Low detail|Minimal operational noise|
-|Strategic KPIs|Revenue, growth, risk|
-|Comparative focus|Competitors, benchmarks|
-|Forward-looking|Trends and forecasts|
+|Drill-down capability|Deep exploration|
+|Time-series analysis|Trend tracking|
+|Correlation analysis|Relationship discovery|
+|Segmentation|Detailed slicing|
+|Multi-dimensional views|Rich analytical context|
