@@ -1,23 +1,13 @@
 # Core Idea
 
-Normally, plots use continuous numerical axes:
+Bokeh titles are editable objects.
 
-- x = 1, 2, 3, 4
+You can:
+
+- create them initially
     
-- y = numeric values
+- reposition them
     
-
-But bar charts often use categories:
-
-- Apple
+- modify them later
     
-- Mango
-    
-- Banana
-    
-
-These are labels, not numbers.
-
-So Bokeh must be explicitly told:
-
-> "Treat the x-axis as categories, not numeric values."
+- style them dynamically
