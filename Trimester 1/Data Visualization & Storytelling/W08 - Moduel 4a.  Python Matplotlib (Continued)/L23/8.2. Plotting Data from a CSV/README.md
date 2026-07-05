@@ -13,3 +13,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Setting a Global Style](./Setting%20a%20Global%20Style.md)
 
 ## [Understanding CSV Data](./Understanding%20CSV%20Data.md)
+
+## [Reading CSV Data into Pandas](./Reading%20CSV%20Data%20into%20Pandas.md)
