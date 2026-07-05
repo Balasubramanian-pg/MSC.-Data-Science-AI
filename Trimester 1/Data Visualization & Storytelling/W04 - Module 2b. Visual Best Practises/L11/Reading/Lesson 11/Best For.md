@@ -1,5 +1,7 @@
 # Best For
 
-- approximate comparison
+- trend direction
     
-- visual emphasis
+- rate of change
+    
+- slope comparison
