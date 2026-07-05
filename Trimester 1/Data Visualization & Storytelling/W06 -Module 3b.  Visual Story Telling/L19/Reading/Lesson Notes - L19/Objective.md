@@ -1,20 +1,24 @@
 # Objective
 
-Zooming out expands perspective to reveal:
+Contrast stories focus on differences between groups.
 
-- macro context
+Core question:
+
+> “How are these entities different?”
+
+Contrast is one of the most powerful analytical mechanisms because the human brain naturally understands information comparatively rather than absolutely.
+
+Most metrics are meaningless without comparison.
+
+Example:
+
+- 8% churn
     
-- systemic relationships
+- 12-day delivery time
     
-- geographic patterns
-    
-- external influences
+- 3.4% defect rate
     
 
-Drill-down asks:
+Are these good or bad?
 
-> “Where exactly is the problem?”
-
-Zooming out asks:
-
-> “What larger system is this part of?”
+Without contrast, interpretation collapses.
