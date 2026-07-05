@@ -91,3 +91,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Traditional Presentations Often Fail](./Why%20Traditional%20Presentations%20Often%20Fail.md)
 
 ## [The Strategic Lesson](./The%20Strategic%20Lesson.md)
+
+## [Story Mountain Framework: Narrative Escalation Through Visualization](./Story%20Mountain%20Framework%20-%20Narrative%20Escalation%20Through%20Visualization.md)
