@@ -111,3 +111,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Encoding Effectiveness Hierarchy](./Encoding%20Effectiveness%20Hierarchy.md)
 
 ## [Why Position Is Best](./Why%20Position%20Is%20Best.md)
+
+## [Position Encoding Workflow](./Position%20Encoding%20Workflow.md)
