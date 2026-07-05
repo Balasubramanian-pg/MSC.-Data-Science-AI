@@ -189,3 +189,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Caveat About t-SNE](./Important%20Caveat%20About%20t-SNE.md)
 
 ## [t-SNE Limitations](./t-SNE%20Limitations.md)
+
+## [Important Visualization Warning](./Important%20Visualization%20Warning.md)
