@@ -237,3 +237,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Strategic Lesson](./Important%20Strategic%20Lesson.md)
 
 ## [Why Analysts Must Be Careful](./Why%20Analysts%20Must%20Be%20Careful.md)
+
+## [Final Insight](./Final%20Insight.md)
