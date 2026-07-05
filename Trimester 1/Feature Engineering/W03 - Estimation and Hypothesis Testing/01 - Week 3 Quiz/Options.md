@@ -1,6 +1,6 @@
 # Options
 
-* Chi-Square Test
-* Spearman's Correlation
-* Fisher Score
-* Pearson's Correlation
+* Sequential Forward Selection
+* Random Forest Feature Importance
+* LASSO
+* Sequential Backward Selection
