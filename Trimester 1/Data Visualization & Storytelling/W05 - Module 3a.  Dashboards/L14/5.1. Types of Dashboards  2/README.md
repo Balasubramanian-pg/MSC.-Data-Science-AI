@@ -101,3 +101,5 @@ week: W05 - Module 3a.  Dashboards
 ## [CO₂ Emissions Dashboard Overview](./CO%E2%82%82%20Emissions%20Dashboard%20Overview.md)
 
 ## [Visual Components](./Visual%20Components.md)
+
+## [Why Multiple Coordinated Views Matter](./Why%20Multiple%20Coordinated%20Views%20Matter.md)
