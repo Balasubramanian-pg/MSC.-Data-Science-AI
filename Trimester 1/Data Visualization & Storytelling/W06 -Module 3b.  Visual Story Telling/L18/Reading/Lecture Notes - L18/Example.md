@@ -2,8 +2,11 @@
 
 Weak:
 
-> “Flooding increased.”
+> “There may be concerns regarding operational anomalies.”
 
 Strong:
 
-> “Thousands lost homes after the river exceeded historical flood levels.”
+> “System failure probability exceeds tested operating thresholds.”
+
+The second creates:  
+immediate cognitive clarity.
