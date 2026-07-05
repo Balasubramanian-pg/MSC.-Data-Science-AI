@@ -95,3 +95,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Principle](./Important%20Principle.md)
 
 ## [De-emphasis vs Over-emphasis](./De-emphasis%20vs%20Over-emphasis.md)
+
+## [Exaggeration](./Exaggeration.md)
