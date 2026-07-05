@@ -345,3 +345,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Example of Dynamic Modification](./Example%20of%20Dynamic%20Modification.md)
 
 ## [Modify later](./Modify%20later.md)
+
+## [Engineering Parallel](./Engineering%20Parallel.md)
