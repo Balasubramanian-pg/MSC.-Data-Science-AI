@@ -151,3 +151,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Calculate global baseline metrics for our Matplotlib annotation layer](./Calculate%20global%20baseline%20metrics%20for%20our%20Matplotlib%20annotation%20layer.md)
 
 ## [1. THE HYBRID FRAMEWORK: Seaborn Plotting + Matplotlib Customization](./1.%20THE%20HYBRID%20FRAMEWORK%20-%20Seaborn%20Plotting%20%2B%20Matplotlib%20Customization.md)
+
+## [Establish a clean, professional background canvas](./Establish%20a%20clean%2C%20professional%20background%20canvas.md)
