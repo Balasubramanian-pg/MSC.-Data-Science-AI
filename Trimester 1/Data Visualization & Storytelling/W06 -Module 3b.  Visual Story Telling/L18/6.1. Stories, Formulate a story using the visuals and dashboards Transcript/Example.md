@@ -1,19 +1,17 @@
 # Example
 
-Weak leadership communication:
+Hearing:
 
-> “Revenue targets must increase.”
+> “The freezing wind cut across the mountain.”
 
-Strong storytelling:
+may activate:
 
-> “Three years ago we were losing customers monthly. Today we have an opportunity to become the fastest-growing platform in the sector, but only if we improve onboarding reliability.”
-
-The second creates:
-
-- direction,
+- sensory imagination,
     
-- tension,
+- emotional anticipation,
     
-- identity,
+- environmental simulation.
     
-- and motivation.
+
+This creates:  
+deeper encoding than abstract description.
