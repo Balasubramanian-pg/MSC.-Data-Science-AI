@@ -153,3 +153,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [1. THE HYBRID FRAMEWORK: Seaborn Plotting + Matplotlib Customization](./1.%20THE%20HYBRID%20FRAMEWORK%20-%20Seaborn%20Plotting%20%2B%20Matplotlib%20Customization.md)
 
 ## [Establish a clean, professional background canvas](./Establish%20a%20clean%2C%20professional%20background%20canvas.md)
+
+## [Step A: Use Seaborn to render the complex statistical distributions.](./Step%20A%20-%20Use%20Seaborn%20to%20render%20the%20complex%20statistical%20distributions.md)
