@@ -113,3 +113,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Strong Estimation Encodings](./Strong%20Estimation%20Encodings.md)
 
 ## [Weak Estimation Encodings](./Weak%20Estimation%20Encodings.md)
+
+## [Estimation Workflow](./Estimation%20Workflow.md)
