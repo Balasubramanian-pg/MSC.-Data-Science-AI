@@ -20,3 +20,5 @@
 ## [Audience](./Audience.md)
 
 ## [Questions](./Questions.md)
+
+## [Appropriate Visualization](./Appropriate%20Visualization.md)
