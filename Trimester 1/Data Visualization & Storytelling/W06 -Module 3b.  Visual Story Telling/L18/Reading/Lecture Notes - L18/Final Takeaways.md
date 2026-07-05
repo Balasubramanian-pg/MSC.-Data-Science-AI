@@ -1,32 +1,23 @@
 # Final Takeaways
 
-Visual storytelling transforms:  
-data into interpretable narrative.
+This section establishes several critical principles:
 
-It shapes:
-
-- perception,
+- presentations are cognitive systems,
     
-- memory,
+- simplicity improves understanding,
     
-- and understanding.
+- storytelling improves retention,
     
-
-The 2000 U.S. election example demonstrates how:  
-visual encoding can influence national interpretation and collective narratives.
-
-Frameworks like Presentation Zen emphasize:
-
-- restraint,
+- visual brevity increases engagement,
     
-- simplicity,
-    
-- whitespace,
-    
-- and focused communication.
+- and poor presentation design can create catastrophic consequences.
     
 
 The deeper lesson is:
 
-> Effective communication is not about showing more information.  
-> It is about reducing cognitive friction while maximizing meaning.
+> Communication quality directly affects decision quality.
+
+And in high-stakes environments:
+
+> Poor visualization and presentation design are not merely aesthetic failures.  
+> They can become operational failures.
