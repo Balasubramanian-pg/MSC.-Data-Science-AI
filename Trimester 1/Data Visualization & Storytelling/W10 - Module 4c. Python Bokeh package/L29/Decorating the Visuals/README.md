@@ -177,3 +177,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Mistake 3: Excessive Styling](./Mistake%203%20-%20Excessive%20Styling.md)
 
 ## [Important Design Principle](./Important%20Design%20Principle.md)
+
+## [Step-by-Step Breakdown](./Step-by-Step%20Breakdown.md)
