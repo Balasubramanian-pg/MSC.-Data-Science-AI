@@ -57,3 +57,5 @@ I have organized the code into a logical, executable structure using a mock data
 ## [--- Example 6b: Mapping Extra Dimensions (Color & Style) ---](./---%20Example%206b%20-%20Mapping%20Extra%20Dimensions%20%28Color%20%26%20Style%29%20---.md)
 
 ## ['hue' splits data by color; 'style' splits data by line dashes/markers](./%27hue%27%20splits%20data%20by%20color%3B%20%27style%27%20splits%20data%20by%20line%20dashesmarkers.md)
+
+## [--- Example 6c: Grid Faceting using Figure-level Functions ---](./---%20Example%206c%20-%20Grid%20Faceting%20using%20Figure-level%20Functions%20---.md)
