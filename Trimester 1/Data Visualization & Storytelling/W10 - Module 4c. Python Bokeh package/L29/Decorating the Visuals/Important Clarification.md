@@ -1,12 +1,12 @@
 # Important Clarification
 
-The instructor says:
+The transcript simplifies slightly.
 
-> "circles representing the objects"
+In real Bokeh usage, `linear_cmap()` usually references:
 
-Meaning:
-
-- scatter glyph corresponds to second variable
+- ColumnDataSource fields
     
 
-But semantically the legend determines interpretation.
+not raw arrays directly.
+
+But conceptually the instructor explanation is correct.
