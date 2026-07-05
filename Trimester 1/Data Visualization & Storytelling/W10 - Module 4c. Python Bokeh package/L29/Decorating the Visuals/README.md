@@ -677,3 +677,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Why Placement Matters](./Why%20Placement%20Matters.md)
 
 ## [Common Positions](./Common%20Positions.md)
+
+## [Legend Title](./Legend%20Title.md)
