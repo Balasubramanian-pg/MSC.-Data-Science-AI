@@ -49,3 +49,5 @@ Observed Data → Fit Function → Predict Future
 ## [Degree Meaning](./Degree%20Meaning.md)
 
 ## [Step-by-Step Example](./Step-by-Step%20Example.md)
+
+## [Step 1: Create Data](./Step%201%20-%20Create%20Data.md)
