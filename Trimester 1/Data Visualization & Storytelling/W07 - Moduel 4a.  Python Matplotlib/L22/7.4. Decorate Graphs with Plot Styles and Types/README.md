@@ -107,3 +107,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Decorative Borders](./Decorative%20Borders.md)
 
 ## [Advanced Insight](./Advanced%20Insight.md)
+
+## [Final Takeaways](./Final%20Takeaways.md)
