@@ -261,3 +261,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Misaligned Axes](./Misaligned%20Axes.md)
 
 ## [Inconsistent Colors](./Inconsistent%20Colors.md)
+
+## [Overlapping Labels](./Overlapping%20Labels.md)
