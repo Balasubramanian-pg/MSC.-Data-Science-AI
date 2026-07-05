@@ -11,3 +11,5 @@
 ## [3.6.5. Wrapper and Embedded Selection Methods](./3.6.5.%20Wrapper%20and%20Embedded%20Selection%20Methods.md)
 
 ## [3.6.6. Example of a Sequential Forward Selection Iteration](./3.6.6.%20Example%20of%20a%20Sequential%20Forward%20Selection%20Iteration.md)
+
+## [3.6.7. Algorithm Pipeline Strategy](./3.6.7.%20Algorithm%20Pipeline%20Strategy.md)
