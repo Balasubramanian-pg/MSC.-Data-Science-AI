@@ -1,17 +1,8 @@
 # Example
 
-If:
+|Chapter|Expected Tone|
+|---|---|
+|Mitra Labha (Gain of Friends)|Positive|
+|Mitra Bheda (Separation of Friends)|Negative|
 
-```text
-King ↔ Lion
-```
-
-appears frequently,
-
-the text likely contains:
-
-- political symbolism
-    
-- hierarchy structures
-    
-- recurring narrative interactions
+The sentiment model reflects this distinction.
