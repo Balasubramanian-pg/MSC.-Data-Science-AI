@@ -36,3 +36,5 @@
 ## [Exploratory Visualization](./Exploratory%20Visualization.md)
 
 ## [Explanatory Visualization](./Explanatory%20Visualization.md)
+
+## [Comparison](./Comparison.md)
