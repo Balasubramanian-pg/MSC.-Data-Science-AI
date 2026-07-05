@@ -39,3 +39,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Text Matters Despite Complexity](./Why%20Text%20Matters%20Despite%20Complexity.md)
 
 ## [Human Communication Is Largely Textual](./Human%20Communication%20Is%20Largely%20Textual.md)
+
+## [Hidden Signals Inside Text](./Hidden%20Signals%20Inside%20Text.md)
