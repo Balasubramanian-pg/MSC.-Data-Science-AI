@@ -91,3 +91,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Real-World Dashboard Example](./Real-World%20Dashboard%20Example.md)
 
 ## [Visualization Architecture in Matplotlib](./Visualization%20Architecture%20in%20Matplotlib.md)
+
+## [Machine Learning Connections](./Machine%20Learning%20Connections.md)
