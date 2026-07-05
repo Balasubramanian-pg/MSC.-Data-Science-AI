@@ -8,3 +8,5 @@ This document details five advanced visual paradigms designed for **Categorical 
 3. **Small Multiples** (Grid-based dimensional slicing for multi-variable analysis) [3]
 4. **Circle Packing Diagrams** (Containment-based nested part-to-whole hierarchies) [1]
 5. **Bubble Hierarchies** (Connection-based node-link trees scaling by quantitative weight) [1]
+
+## [1. Unified Architectural Pipeline & Decision Framework](./1.%20Unified%20Architectural%20Pipeline%20%26%20Decision%20Framework.md)
