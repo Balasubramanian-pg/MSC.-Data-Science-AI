@@ -307,3 +307,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Visualization as Hierarchical Communication](./Visualization%20as%20Hierarchical%20Communication.md)
 
 ## [Transition to Curve Fitting](./Transition%20to%20Curve%20Fitting.md)
+
+## [What Is Curve Fitting?](./What%20Is%20Curve%20Fitting.md)
