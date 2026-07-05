@@ -179,3 +179,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Statistical Danger](./The%20Statistical%20Danger.md)
 
 ## [Establishing Causation Requires More](./Establishing%20Causation%20Requires%20More.md)
+
+## [Important Analytical Discipline](./Important%20Analytical%20Discipline.md)
