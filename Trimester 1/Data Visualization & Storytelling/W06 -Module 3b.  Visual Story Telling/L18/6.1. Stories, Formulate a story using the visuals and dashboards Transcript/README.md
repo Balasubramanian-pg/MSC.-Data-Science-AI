@@ -149,3 +149,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Gestalt Psychology Connection](./Gestalt%20Psychology%20Connection.md)
 
 ## [Visual Hierarchy and Whitespace](./Visual%20Hierarchy%20and%20Whitespace.md)
+
+## [Strategic Simplicity](./Strategic%20Simplicity.md)
