@@ -61,3 +61,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Random Walks Matter](./Why%20Random%20Walks%20Matter.md)
 
 ## [Plotting Random Walks](./Plotting%20Random%20Walks.md)
+
+## [Why Cumulative Sum Changes Everything](./Why%20Cumulative%20Sum%20Changes%20Everything.md)
