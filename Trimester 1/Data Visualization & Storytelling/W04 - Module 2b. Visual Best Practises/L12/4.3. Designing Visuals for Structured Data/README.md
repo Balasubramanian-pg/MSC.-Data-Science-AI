@@ -119,3 +119,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Understanding Relationships Between Variables](./Understanding%20Relationships%20Between%20Variables.md)
 
 ## [Multivariate Goals](./Multivariate%20Goals.md)
+
+## [Multivariate Analysis Framework](./Multivariate%20Analysis%20Framework.md)
