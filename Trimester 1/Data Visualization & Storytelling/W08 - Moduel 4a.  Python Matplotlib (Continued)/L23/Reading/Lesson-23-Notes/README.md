@@ -235,3 +235,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Difference Between Figure and Axis Titles](./Difference%20Between%20Figure%20and%20Axis%20Titles.md)
 
 ## [Internal Architecture](./Internal%20Architecture.md)
+
+## [Why Subplots Scale Well](./Why%20Subplots%20Scale%20Well.md)
