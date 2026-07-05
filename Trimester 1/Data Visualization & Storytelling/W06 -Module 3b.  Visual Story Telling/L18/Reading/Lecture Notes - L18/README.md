@@ -55,3 +55,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Emotional Connection](./Emotional%20Connection.md)
 
 ## [Emotional Encoding](./Emotional%20Encoding.md)
+
+## [In Business Communication](./In%20Business%20Communication.md)
