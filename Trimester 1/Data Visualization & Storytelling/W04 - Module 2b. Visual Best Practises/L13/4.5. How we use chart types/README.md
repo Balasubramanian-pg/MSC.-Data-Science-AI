@@ -353,3 +353,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Temporal Communication Analysis](./Temporal%20Communication%20Analysis.md)
 
 ## [2. Participant Analysis](./2.%20Participant%20Analysis.md)
+
+## [Who Is Involved?](./Who%20Is%20Involved.md)
