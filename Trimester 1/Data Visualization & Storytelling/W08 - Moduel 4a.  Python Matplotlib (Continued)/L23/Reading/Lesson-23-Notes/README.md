@@ -147,3 +147,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Complete Example](./Complete%20Example.md)
 
 ## [Read dataset](./Read%20dataset.md)
+
+## [Set date index](./Set%20date%20index.md)
