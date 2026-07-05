@@ -97,3 +97,5 @@ week: W05 - Module 3a.  Dashboards
 ## [1. Overcrowding](./1.%20Overcrowding.md)
 
 ## [2. Decorative Design](./2.%20Decorative%20Design.md)
+
+## [3. Poor Color Usage](./3.%20Poor%20Color%20Usage.md)
