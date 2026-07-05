@@ -15,3 +15,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Page 5](./Page%205.md)
 
 ## [Page 6](./Page%206.md)
+
+## [Page 7](./Page%207.md)
