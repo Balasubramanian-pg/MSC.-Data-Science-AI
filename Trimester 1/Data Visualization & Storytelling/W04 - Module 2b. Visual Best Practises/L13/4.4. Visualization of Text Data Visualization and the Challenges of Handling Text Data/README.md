@@ -65,3 +65,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Algorithms Are Necessary](./Why%20Algorithms%20Are%20Necessary.md)
 
 ## [NLP Processing Stack](./NLP%20Processing%20Stack.md)
+
+## [Challenges in Textual Data Analysis](./Challenges%20in%20Textual%20Data%20Analysis.md)
