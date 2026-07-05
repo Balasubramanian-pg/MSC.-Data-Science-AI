@@ -1,18 +1,9 @@
 # Example
 
-Weak communication:
+Large red warning text:  
+→ perceived as urgent
 
-- technical jargon,
-    
-- overloaded slides,
-    
-- scattered metrics.
-    
+Tiny gray text at the bottom:  
+→ perceived as secondary
 
-Strong communication:
-
-- one focused message,
-    
-- one clear visual,
-    
-- one memorable insight.
+Even before conscious reasoning occurs.
