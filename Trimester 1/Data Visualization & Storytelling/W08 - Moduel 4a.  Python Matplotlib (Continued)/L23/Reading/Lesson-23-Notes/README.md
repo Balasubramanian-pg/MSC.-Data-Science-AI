@@ -183,3 +183,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Moving Averages Matter](./Why%20Moving%20Averages%20Matter.md)
 
 ## [Real-World Extensions](./Real-World%20Extensions.md)
+
+## [Multi-Plot Layouts with `plt.subplots`](./Multi-Plot%20Layouts%20with%20%60plt.subplots%60.md)
