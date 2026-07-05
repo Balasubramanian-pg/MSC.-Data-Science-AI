@@ -211,3 +211,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Create subplots](./Create%20subplots.md)
 
 ## [Maximum temperature](./Maximum%20temperature.md)
+
+## [Precipitation](./Precipitation.md)
