@@ -58,3 +58,5 @@ The transcript introduces this challenge directly.
 ## [Real-World Visualization Decision Tree](./Real-World%20Visualization%20Decision%20Tree.md)
 
 ## [Important Professional Insight](./Important%20Professional%20Insight.md)
+
+## [Practical Corporate Design Strategy](./Practical%20Corporate%20Design%20Strategy.md)
