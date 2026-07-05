@@ -1,23 +1,26 @@
 # Question
 
-**Why is feature scaling critical for distance-based models such as KNN or KMeans?**
+**In a credit scoring model, converting a continuous credit score into a binary feature based on a threshold (e.g., 700) is an example of ____________.**
 
 ### Options
 
-* It helps convert categorical variables to numerical ones.
-* It ensures no single feature dominates the distance metric.
-* It removes all outliers.
-* It reduces the number of features used.
+* Attribute smoothing
+* Binarisation
+* Feature scaling
+* Normalisation
 
 ### Answer
 
-✅ **It ensures no single feature dominates the distance metric.**
+✅ **Binarisation**
 
 > [!NOTE]
 > **Reason**
 >
-> Distance-based algorithms compute similarity using measures such as Euclidean distance.
+> **Binarisation** transforms a numerical variable into two categories, typically represented as **0 and 1**, using a threshold.
 >
-> If one feature has a much larger scale than others, it can dominate the distance calculation and bias the model.
+> Example:
 >
-> Feature scaling ensures that all features contribute more fairly to the distance computation.
+> * Credit Score ≥ 700 → 1
+> * Credit Score < 700 → 0
+>
+> This process creates a binary feature from a continuous variable.
