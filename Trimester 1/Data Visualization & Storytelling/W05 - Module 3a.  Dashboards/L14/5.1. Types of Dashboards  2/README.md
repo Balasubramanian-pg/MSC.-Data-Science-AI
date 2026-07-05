@@ -131,3 +131,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Example from the Transcript](./Example%20from%20the%20Transcript.md)
 
 ## [This is Excellent Dashboard Behavior](./This%20is%20Excellent%20Dashboard%20Behavior.md)
+
+## [Why Ireland Appears Large in Aviation Emissions](./Why%20Ireland%20Appears%20Large%20in%20Aviation%20Emissions.md)
