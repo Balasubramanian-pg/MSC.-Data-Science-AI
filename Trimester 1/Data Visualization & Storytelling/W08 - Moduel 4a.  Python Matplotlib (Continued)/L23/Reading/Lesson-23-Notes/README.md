@@ -79,3 +79,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [CSV vs JSON](./CSV%20vs%20JSON.md)
 
 ## [Failure Modes in Remote Data Systems](./Failure%20Modes%20in%20Remote%20Data%20Systems.md)
+
+## [Network Failures](./Network%20Failures.md)
