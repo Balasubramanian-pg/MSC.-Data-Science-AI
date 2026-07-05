@@ -73,3 +73,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [nltk.download('punkt')](./nltk.download%28%27punkt%27%29.md)
 
 ## [nltk.download('averaged_perceptron_tagger')](./nltk.download%28%27averaged_perceptron_tagger%27%29.md)
+
+## [Step 1: Tokenize the document](./Step%201%20-%20Tokenize%20the%20document.md)
