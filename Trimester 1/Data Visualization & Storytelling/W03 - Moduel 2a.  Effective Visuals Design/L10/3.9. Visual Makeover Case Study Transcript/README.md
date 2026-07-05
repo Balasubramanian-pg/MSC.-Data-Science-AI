@@ -120,3 +120,5 @@ The transcript introduces this challenge directly.
 ## [Natural vs Counterintuitive Flow](./Natural%20vs%20Counterintuitive%20Flow.md)
 
 ## [Why Counterintuitive Layouts Fail](./Why%20Counterintuitive%20Layouts%20Fail.md)
+
+## [Cognitive Cost of Bad Layout](./Cognitive%20Cost%20of%20Bad%20Layout.md)
