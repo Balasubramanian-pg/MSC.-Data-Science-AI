@@ -213,3 +213,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Maximum temperature](./Maximum%20temperature.md)
 
 ## [Precipitation](./Precipitation.md)
+
+## [Overall figure title](./Overall%20figure%20title.md)
