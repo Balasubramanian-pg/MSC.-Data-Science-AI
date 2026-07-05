@@ -305,3 +305,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [From Sentiment Geometry to Communication Networks](./From%20Sentiment%20Geometry%20to%20Communication%20Networks.md)
 
 ## [Part 1](./Part%201.md)
+
+## [Joint Plot Interpretation](./Joint%20Plot%20Interpretation.md)
