@@ -109,3 +109,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Why Bar Charts Were Used](./Why%20Bar%20Charts%20Were%20Used.md)
 
 ## [Why Line Charts Were Used](./Why%20Line%20Charts%20Were%20Used.md)
+
+## [Visualization Selection Principle](./Visualization%20Selection%20Principle.md)
