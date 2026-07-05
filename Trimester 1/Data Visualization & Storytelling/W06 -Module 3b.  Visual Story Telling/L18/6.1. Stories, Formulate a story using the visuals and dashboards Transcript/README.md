@@ -289,3 +289,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Presentation Design Is Part of Systems Engineering](./Presentation%20Design%20Is%20Part%20of%20Systems%20Engineering.md)
 
 ## [The Hidden Cost of Clutter](./The%20Hidden%20Cost%20of%20Clutter.md)
+
+## [Cognitive Competition Model](./Cognitive%20Competition%20Model.md)
