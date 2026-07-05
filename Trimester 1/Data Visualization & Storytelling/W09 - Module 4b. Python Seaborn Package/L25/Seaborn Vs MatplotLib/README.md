@@ -11,3 +11,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [3. Production-Ready Python Demonstration](./3.%20Production-Ready%20Python%20Demonstration.md)
 
 ## [=====================================================================](./%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D.md)
+
+## [0. SETUP: Simulating Business Data](./0.%20SETUP%20-%20Simulating%20Business%20Data.md)
