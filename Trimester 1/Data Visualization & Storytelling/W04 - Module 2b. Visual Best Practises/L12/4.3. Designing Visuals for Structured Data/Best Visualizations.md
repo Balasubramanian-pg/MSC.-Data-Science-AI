@@ -1,7 +1,9 @@
 # Best Visualizations
 
-- bar charts
+- proportion bars
     
-- stacked bars
+- KPI cards
     
-- treemaps
+- confusion matrices
+    
+- conversion funnels
