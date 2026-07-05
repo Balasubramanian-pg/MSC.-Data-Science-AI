@@ -1,20 +1,14 @@
 # Transcript Example
 
-The lecture discusses constituencies:
+The lecture compares constituencies through horizontal bars.
 
-- Tirupati
+Users instantly see:
+
+- Kadapa highest
     
-- Vijayawada
+- Guddu lowest
     
-- Visakhapatnam
+- Anantapur ≈ Hindupur
     
 
-across election years.
-
-Users can immediately see:
-
-- upward trends
-    
-- downward trends
-    
-- relative movement
+This is vastly more efficient than color or area.
