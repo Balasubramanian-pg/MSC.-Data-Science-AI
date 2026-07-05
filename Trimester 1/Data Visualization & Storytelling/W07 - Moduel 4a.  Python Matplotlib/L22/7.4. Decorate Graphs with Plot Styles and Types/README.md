@@ -93,3 +93,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Visualization Architecture in Matplotlib](./Visualization%20Architecture%20in%20Matplotlib.md)
 
 ## [Machine Learning Connections](./Machine%20Learning%20Connections.md)
+
+## [Common Mistakes](./Common%20Mistakes.md)
