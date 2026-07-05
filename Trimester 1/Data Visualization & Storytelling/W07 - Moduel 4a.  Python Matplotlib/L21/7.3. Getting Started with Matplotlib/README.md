@@ -299,3 +299,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Example Workflow](./Example%20Workflow.md)
 
 ## [Bar Charts](./Bar%20Charts.md)
+
+## [Simple Example](./Simple%20Example.md)
