@@ -669,3 +669,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Mistake 3: Huge Legends](./Mistake%203%20-%20Huge%20Legends.md)
 
 ## [Mistake 4: Legends Over Data](./Mistake%204%20-%20Legends%20Over%20Data.md)
+
+## [Part 1: Legend Customization](./Part%201%20-%20Legend%20Customization.md)
