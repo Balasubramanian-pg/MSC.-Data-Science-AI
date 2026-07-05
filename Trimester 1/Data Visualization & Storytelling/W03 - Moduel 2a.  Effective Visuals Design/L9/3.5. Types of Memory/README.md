@@ -57,3 +57,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Recognition over Recall](./Recognition%20over%20Recall.md)
 
 ## [Bad](./Bad.md)
+
+## [Good](./Good.md)
