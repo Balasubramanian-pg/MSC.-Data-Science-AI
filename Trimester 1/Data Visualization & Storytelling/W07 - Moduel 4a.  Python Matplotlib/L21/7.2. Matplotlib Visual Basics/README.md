@@ -69,3 +69,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why `pyplot` Is Important](./Why%20%60pyplot%60%20Is%20Important.md)
 
 ## [Standard Alias Convention](./Standard%20Alias%20Convention.md)
+
+## [10. The Real Educational Objective](./10.%20The%20Real%20Educational%20Objective.md)
