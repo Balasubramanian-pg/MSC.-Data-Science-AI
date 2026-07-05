@@ -39,3 +39,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Estimation](./Estimation.md)
 
 ## [Transcript Example](./Transcript%20Example.md)
+
+## [What Users Can Understand](./What%20Users%20Can%20Understand.md)
