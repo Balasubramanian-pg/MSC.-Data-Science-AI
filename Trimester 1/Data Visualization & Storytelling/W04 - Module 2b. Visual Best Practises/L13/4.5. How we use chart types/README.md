@@ -179,3 +179,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Sentiment Analysis Became Important](./Why%20Sentiment%20Analysis%20Became%20Important.md)
 
 ## [Example Applications](./Example%20Applications.md)
+
+## [Semantic Scoring](./Semantic%20Scoring.md)
