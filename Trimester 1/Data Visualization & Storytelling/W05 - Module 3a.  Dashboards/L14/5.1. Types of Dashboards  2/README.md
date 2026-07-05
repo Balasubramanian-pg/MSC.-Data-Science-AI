@@ -75,3 +75,5 @@ week: W05 - Module 3a.  Dashboards
 ## [1. Dashboard as Decoration](./1.%20Dashboard%20as%20Decoration.md)
 
 ## [2. Overcrowding](./2.%20Overcrowding.md)
+
+## [3. Interaction Overload](./3.%20Interaction%20Overload.md)
