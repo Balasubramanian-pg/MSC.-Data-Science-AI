@@ -229,3 +229,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Aggregate Sentiment Can Be Misleading](./Why%20Aggregate%20Sentiment%20Can%20Be%20Misleading.md)
 
 ## [Sentiment Aggregation Problem](./Sentiment%20Aggregation%20Problem.md)
+
+## [Modern Real-World Applications](./Modern%20Real-World%20Applications.md)
