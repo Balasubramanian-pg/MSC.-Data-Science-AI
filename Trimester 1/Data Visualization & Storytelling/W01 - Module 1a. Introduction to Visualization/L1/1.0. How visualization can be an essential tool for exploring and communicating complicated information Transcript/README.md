@@ -13,3 +13,5 @@
 ## [5. Multivariate Trend and Relationship Analysis](./5.%20Multivariate%20Trend%20and%20Relationship%20Analysis.md)
 
 ## [6. Advanced Multivariate Techniques](./6.%20Advanced%20Multivariate%20Techniques.md)
+
+## [Visualization Decision Framework](./Visualization%20Decision%20Framework.md)
