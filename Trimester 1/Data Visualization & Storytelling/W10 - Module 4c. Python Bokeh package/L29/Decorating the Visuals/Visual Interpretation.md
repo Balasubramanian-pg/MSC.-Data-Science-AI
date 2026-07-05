@@ -1,12 +1,13 @@
 # Visual Interpretation
 
-```text
-Point positions:
-(1,2)
-(2,5)
-(3,8)
+Before:
 
-Circle:
-inside = yellow
-border = red
+```text
+default black axis
+```
+
+After:
+
+```text
+blue x-axis line
 ```
