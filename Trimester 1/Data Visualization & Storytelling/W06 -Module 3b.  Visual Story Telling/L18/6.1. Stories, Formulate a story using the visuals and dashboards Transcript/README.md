@@ -129,3 +129,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Design Principle](./Important%20Design%20Principle.md)
 
 ## [Common Failure](./Common%20Failure.md)
+
+## [Cognitive Load Theory](./Cognitive%20Load%20Theory.md)
