@@ -263,3 +263,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Polarity](./Polarity.md)
 
 ## [Emotional Direction](./Emotional%20Direction.md)
+
+## [Subjectivity](./Subjectivity.md)
