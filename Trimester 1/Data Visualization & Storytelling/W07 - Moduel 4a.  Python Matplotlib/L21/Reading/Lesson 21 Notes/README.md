@@ -165,3 +165,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [1. Figure vs Axes](./1.%20Figure%20vs%20Axes.md)
 
 ## [What Is `fig`?](./What%20Is%20%60fig%60.md)
+
+## [What Is `ax`?](./What%20Is%20%60ax%60.md)
