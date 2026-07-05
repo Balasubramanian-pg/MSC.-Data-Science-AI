@@ -129,3 +129,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Non-vectorized Version](./Non-vectorized%20Version.md)
 
 ## [Why Sine Waves Matter](./Why%20Sine%20Waves%20Matter.md)
+
+## [Properties of Sine](./Properties%20of%20Sine.md)
