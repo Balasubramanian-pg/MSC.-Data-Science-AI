@@ -45,3 +45,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Raw Facts vs Stories](./Raw%20Facts%20vs%20Stories.md)
 
 ## [Raw Facts](./Raw%20Facts.md)
+
+## [Stories](./Stories.md)
