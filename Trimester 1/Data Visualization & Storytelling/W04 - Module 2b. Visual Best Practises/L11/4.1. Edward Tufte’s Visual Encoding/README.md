@@ -97,3 +97,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Understanding Relationships](./Understanding%20Relationships.md)
 
 ## [What Assembly Means](./What%20Assembly%20Means.md)
+
+## [Assembly Creates Narrative](./Assembly%20Creates%20Narrative.md)
