@@ -139,3 +139,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Understanding Figure vs Axes](./Understanding%20Figure%20vs%20Axes.md)
 
 ## [Figure](./Figure.md)
+
+## [Axes](./Axes.md)
