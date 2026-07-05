@@ -295,3 +295,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [NLP Visualization as Behavioral Analytics](./NLP%20Visualization%20as%20Behavioral%20Analytics.md)
 
 ## [Modern AI Connection](./Modern%20AI%20Connection.md)
+
+## [Advanced NLP Architecture](./Advanced%20NLP%20Architecture.md)
