@@ -45,3 +45,5 @@ I have organized the code into a logical, executable structure using a mock data
 ## [1. Draw the core statistical plot with Seaborn](./1.%20Draw%20the%20core%20statistical%20plot%20with%20Seaborn.md)
 
 ## [2. Use Matplotlib to overlay custom reference lines and titles](./2.%20Use%20Matplotlib%20to%20overlay%20custom%20reference%20lines%20and%20titles.md)
+
+## [6. Advanced Multidimensional Faceting (Using Built-in fMRI Data)](./6.%20Advanced%20Multidimensional%20Faceting%20%28Using%20Built-in%20fMRI%20Data%29.md)
