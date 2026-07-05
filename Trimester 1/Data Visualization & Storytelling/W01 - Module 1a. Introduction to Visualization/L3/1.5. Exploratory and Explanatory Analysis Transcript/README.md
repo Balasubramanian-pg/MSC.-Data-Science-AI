@@ -41,3 +41,5 @@
 ## [2.5 Exploratory Analysis and Data Diversity](./2.5%20Exploratory%20Analysis%20and%20Data%20Diversity.md)
 
 ## [Why Diversity Matters](./Why%20Diversity%20Matters.md)
+
+## [Example](./Example.md)
