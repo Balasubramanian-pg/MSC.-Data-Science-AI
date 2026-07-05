@@ -101,3 +101,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Understanding Distribution Geometry](./Understanding%20Distribution%20Geometry.md)
 
 ## [Box Plot Components](./Box%20Plot%20Components.md)
+
+## [Box Plot Structure](./Box%20Plot%20Structure.md)
