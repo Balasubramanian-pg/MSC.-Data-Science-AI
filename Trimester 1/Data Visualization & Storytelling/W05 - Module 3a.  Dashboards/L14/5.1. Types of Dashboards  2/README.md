@@ -127,3 +127,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Dashboard Reading Flow](./Dashboard%20Reading%20Flow.md)
 
 ## [Important Insight About Dashboards](./Important%20Insight%20About%20Dashboards.md)
+
+## [Example from the Transcript](./Example%20from%20the%20Transcript.md)
