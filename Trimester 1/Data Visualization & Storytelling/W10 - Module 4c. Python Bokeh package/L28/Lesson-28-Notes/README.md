@@ -19,3 +19,5 @@ Every single function, method, and parameter is explained in detail using Python
 ## [output_notebook is used to render plots directly in Jupyter notebooks.](./output_notebook%20is%20used%20to%20render%20plots%20directly%20in%20Jupyter%20notebooks.md)
 
 ## [If you are running this in a standard Python script, you would import](./If%20you%20are%20running%20this%20in%20a%20standard%20Python%20script%2C%20you%20would%20import.md)
+
+## [output_file and call output_file("filename.html") instead.](./output_file%20and%20call%20output_file%28filename.html%29%20instead.md)
