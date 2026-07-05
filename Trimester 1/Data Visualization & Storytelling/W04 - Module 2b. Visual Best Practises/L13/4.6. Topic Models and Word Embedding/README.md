@@ -111,3 +111,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Hidden Insight](./Hidden%20Insight.md)
 
 ## [NLP as Dimensionality Reduction](./NLP%20as%20Dimensionality%20Reduction.md)
+
+## [Semantic Compression Pipeline](./Semantic%20Compression%20Pipeline.md)
