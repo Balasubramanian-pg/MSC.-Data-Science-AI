@@ -247,3 +247,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Sentiment Failure Pipeline](./Sentiment%20Failure%20Pipeline.md)
 
 ## [Joint Plots](./Joint%20Plots.md)
+
+## [Multivariate Text Analytics](./Multivariate%20Text%20Analytics.md)
