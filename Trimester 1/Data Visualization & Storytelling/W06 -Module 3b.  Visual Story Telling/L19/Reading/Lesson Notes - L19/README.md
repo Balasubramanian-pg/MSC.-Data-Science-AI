@@ -89,3 +89,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Strategic Insight](./Strategic%20Insight.md)
 
 ## [5. The Seven Types of Data Stories](./5.%20The%20Seven%20Types%20of%20Data%20Stories.md)
+
+## [6. Change Over Time](./6.%20Change%20Over%20Time.md)
