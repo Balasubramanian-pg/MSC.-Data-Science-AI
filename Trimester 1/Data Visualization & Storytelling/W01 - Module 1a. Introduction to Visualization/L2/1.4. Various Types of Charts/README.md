@@ -82,3 +82,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [6.2 Scatter Plots](./6.2%20Scatter%20Plots.md)
 
 ## [Correlation Formula](./Correlation%20Formula.md)
+
+## [Critical Warning](./Critical%20Warning.md)
