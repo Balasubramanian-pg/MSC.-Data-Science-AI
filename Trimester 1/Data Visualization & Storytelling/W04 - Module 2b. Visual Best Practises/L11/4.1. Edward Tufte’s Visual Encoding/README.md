@@ -77,3 +77,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [1. Detection](./1.%20Detection.md)
 
 ## [Recognizing Visual Objects](./Recognizing%20Visual%20Objects.md)
+
+## [Examples](./Examples.md)
