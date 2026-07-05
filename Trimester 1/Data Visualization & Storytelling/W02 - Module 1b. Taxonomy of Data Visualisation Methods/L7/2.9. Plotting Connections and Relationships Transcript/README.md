@@ -27,3 +27,5 @@ week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
 ## [Export simplified map to file (significantly smaller file size)](./Export%20simplified%20map%20to%20file%20%28significantly%20smaller%20file%20size%29.md)
 
 ## [8. Summary of Actionable Operational Checklists](./8.%20Summary%20of%20Actionable%20Operational%20Checklists.md)
+
+## [References](./References.md)
