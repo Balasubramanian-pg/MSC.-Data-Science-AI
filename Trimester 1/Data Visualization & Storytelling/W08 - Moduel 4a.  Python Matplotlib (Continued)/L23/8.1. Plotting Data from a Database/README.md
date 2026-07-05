@@ -21,3 +21,5 @@ This section explains how to create multiple related plots from a Pandas DataFra
 ## [Breakdown](./Breakdown.md)
 
 ## [Mental Model](./Mental%20Model.md)
+
+## [Step 4: Plot on Specific Axes](./Step%204%20-%20Plot%20on%20Specific%20Axes.md)
