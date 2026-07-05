@@ -299,3 +299,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Two Different Narratives](./Two%20Different%20Narratives.md)
 
 ## [Cherry-Picked Narrative](./Cherry-Picked%20Narrative.md)
+
+## [Historical Context Narrative](./Historical%20Context%20Narrative.md)
