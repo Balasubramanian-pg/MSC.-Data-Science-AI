@@ -155,3 +155,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Word Trees as Graph Structures](./Word%20Trees%20as%20Graph%20Structures.md)
 
 ## [Graph-Based NLP](./Graph-Based%20NLP.md)
+
+## [Why Relationships Matter More Than Frequency](./Why%20Relationships%20Matter%20More%20Than%20Frequency.md)
