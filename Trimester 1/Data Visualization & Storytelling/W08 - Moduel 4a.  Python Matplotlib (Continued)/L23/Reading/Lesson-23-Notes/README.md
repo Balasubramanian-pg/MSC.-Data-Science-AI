@@ -155,3 +155,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Plot temperature](./Plot%20temperature.md)
 
 ## [Labels and title](./Labels%20and%20title.md)
+
+## [Understanding Figure Size](./Understanding%20Figure%20Size.md)
