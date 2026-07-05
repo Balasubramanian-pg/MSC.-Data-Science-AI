@@ -31,3 +31,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Example](./Example.md)
 
 ## [Raw Statement](./Raw%20Statement.md)
+
+## [Story-Driven Statement](./Story-Driven%20Statement.md)
