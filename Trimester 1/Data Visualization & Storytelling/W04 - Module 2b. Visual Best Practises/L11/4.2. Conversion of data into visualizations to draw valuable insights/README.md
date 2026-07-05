@@ -89,3 +89,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [What Line Charts Communicate Well](./What%20Line%20Charts%20Communicate%20Well.md)
 
 ## [Trend Direction](./Trend%20Direction.md)
+
+## [Relative Ranking](./Relative%20Ranking.md)
