@@ -313,3 +313,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Important Clarification](./Important%20Clarification.md)
 
 ## [Basic Example](./Basic%20Example.md)
+
+## [Understanding the Parameters](./Understanding%20the%20Parameters.md)
