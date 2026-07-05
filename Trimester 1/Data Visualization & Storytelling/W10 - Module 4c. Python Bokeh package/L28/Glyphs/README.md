@@ -13,3 +13,5 @@
 ## [4.4.6. Layering and Superimposing Glyphs](./4.4.6.%20Layering%20and%20Superimposing%20Glyphs.md)
 
 ## [4.4.7. Categorical Axes and the FactorRange](./4.4.7.%20Categorical%20Axes%20and%20the%20FactorRange.md)
+
+## [4.4.8. Bar Charts and Rectangular Glyphs](./4.4.8.%20Bar%20Charts%20and%20Rectangular%20Glyphs.md)
