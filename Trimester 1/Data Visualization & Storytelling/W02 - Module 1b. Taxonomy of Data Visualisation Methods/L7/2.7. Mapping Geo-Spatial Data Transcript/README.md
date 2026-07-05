@@ -19,3 +19,5 @@ week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
 ## [6. Advanced Performance, Edge Cases, and Debugging](./6.%20Advanced%20Performance%2C%20Edge%20Cases%2C%20and%20Debugging.md)
 
 ## [Load high-resolution county boundaries](./Load%20high-resolution%20county%20boundaries.md)
+
+## [Simplify shapes using the Douglas-Peucker algorithm (tolerance in degrees/meters)](./Simplify%20shapes%20using%20the%20Douglas-Peucker%20algorithm%20%28tolerance%20in%20degreesmeters%29.md)
