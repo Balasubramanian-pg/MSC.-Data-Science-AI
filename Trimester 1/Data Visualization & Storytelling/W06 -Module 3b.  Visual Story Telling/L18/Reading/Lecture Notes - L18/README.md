@@ -215,3 +215,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Credibility Sources](./Credibility%20Sources.md)
 
 ## [5. Emotional](./5.%20Emotional.md)
+
+## [6. Storied](./6.%20Storied.md)
