@@ -385,3 +385,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [One of the Most Famous Communication Datasets](./One%20of%20the%20Most%20Famous%20Communication%20Datasets.md)
 
 ## [Why Enron Matters](./Why%20Enron%20Matters.md)
+
+## [Important Analytical Insight](./Important%20Analytical%20Insight.md)
