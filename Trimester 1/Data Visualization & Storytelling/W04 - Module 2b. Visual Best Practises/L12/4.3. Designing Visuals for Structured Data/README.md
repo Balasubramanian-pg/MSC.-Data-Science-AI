@@ -69,3 +69,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Big Number Visuals](./Big%20Number%20Visuals.md)
 
 ## [KPI Emphasis](./KPI%20Emphasis.md)
+
+## [Why Big Numbers Work](./Why%20Big%20Numbers%20Work.md)
