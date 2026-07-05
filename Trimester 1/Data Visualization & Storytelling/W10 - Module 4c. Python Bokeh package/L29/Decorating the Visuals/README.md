@@ -97,3 +97,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Hexadecimal Colors](./Hexadecimal%20Colors.md)
 
 ## [Structure](./Structure.md)
+
+## [Full Example](./Full%20Example.md)
