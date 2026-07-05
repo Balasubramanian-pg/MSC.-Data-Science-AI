@@ -100,3 +100,5 @@
 ## [8. Visualization Decision Framework](./8.%20Visualization%20Decision%20Framework.md)
 
 ## [What Do You Want to Show?](./What%20Do%20You%20Want%20to%20Show.md)
+
+## [Common Analytical Formulas](./Common%20Analytical%20Formulas.md)
