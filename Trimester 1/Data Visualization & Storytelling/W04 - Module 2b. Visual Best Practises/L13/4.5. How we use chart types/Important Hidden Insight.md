@@ -1,7 +1,7 @@
 # Important Hidden Insight
 
-Modern recommendation systems are fundamentally:
+The lecture emphasizes:
 
-```text
-large-scale text interpretation engines
-```
+You do not initially need semantic understanding.
+
+Even metadata alone reveals structure.
