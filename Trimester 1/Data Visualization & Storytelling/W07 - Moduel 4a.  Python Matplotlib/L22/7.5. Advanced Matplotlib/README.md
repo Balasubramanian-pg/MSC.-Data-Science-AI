@@ -89,3 +89,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Text Matters](./Why%20Text%20Matters.md)
 
 ## [Simple Text Placement](./Simple%20Text%20Placement.md)
+
+## [Arrow Annotations](./Arrow%20Annotations.md)
