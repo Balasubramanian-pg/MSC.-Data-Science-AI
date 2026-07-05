@@ -201,3 +201,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Modern NLP Pipeline](./Modern%20NLP%20Pipeline.md)
 
 ## [Sentiment Analysis, Joint Plots, and Semantic Emotion Modeling](./Sentiment%20Analysis%2C%20Joint%20Plots%2C%20and%20Semantic%20Emotion%20Modeling.md)
+
+## [Advanced Text Analytics in Visualization](./Advanced%20Text%20Analytics%20in%20Visualization.md)
