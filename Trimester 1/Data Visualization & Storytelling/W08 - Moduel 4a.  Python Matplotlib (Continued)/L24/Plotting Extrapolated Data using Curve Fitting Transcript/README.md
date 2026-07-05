@@ -31,3 +31,5 @@ Observed Data → Fit Function → Predict Future
 ```
 
 ## [Core Concept](./Core%20Concept.md)
+
+## [Extrapolation](./Extrapolation.md)
