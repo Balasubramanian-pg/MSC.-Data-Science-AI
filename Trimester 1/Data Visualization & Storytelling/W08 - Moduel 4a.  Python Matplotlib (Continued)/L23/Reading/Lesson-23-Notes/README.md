@@ -327,3 +327,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Polynomial function](./Polynomial%20function.md)
 
 ## [Generate smooth curve](./Generate%20smooth%20curve.md)
+
+## [Why Extrapolation Is Dangerous](./Why%20Extrapolation%20Is%20Dangerous.md)
