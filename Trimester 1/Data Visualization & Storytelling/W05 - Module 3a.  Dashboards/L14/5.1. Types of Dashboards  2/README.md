@@ -145,3 +145,5 @@ week: W05 - Module 3a.  Dashboards
 ## [User Journey](./User%20Journey.md)
 
 ## [Advanced Dashboard Insight](./Advanced%20Dashboard%20Insight.md)
+
+## [Common Failure Modes in Similar Dashboards](./Common%20Failure%20Modes%20in%20Similar%20Dashboards.md)
