@@ -1,9 +1,13 @@
 # Business Insight
 
-Mining converts data into insight.
+Refinement transforms charts from:
 
-Without mining:
+```text
+Data display
+```
 
-- dashboards remain descriptive
-    
-- no strategic conclusions emerge
+into:
+
+```text
+Decision-support systems
+```
