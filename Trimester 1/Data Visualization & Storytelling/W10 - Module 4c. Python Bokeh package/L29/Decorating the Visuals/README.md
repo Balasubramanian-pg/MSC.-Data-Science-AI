@@ -509,3 +509,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [What This Does](./What%20This%20Does.md)
 
 ## [Why `format="0"`?](./Why%20%60format%3D0%60.md)
+
+## [Formatting Examples](./Formatting%20Examples.md)
