@@ -327,3 +327,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Multimodal Distribution Meaning](./Multimodal%20Distribution%20Meaning.md)
 
 ## [Subjectivity Modes Example](./Subjectivity%20Modes%20Example.md)
+
+## [Important Statistical Insight](./Important%20Statistical%20Insight.md)
