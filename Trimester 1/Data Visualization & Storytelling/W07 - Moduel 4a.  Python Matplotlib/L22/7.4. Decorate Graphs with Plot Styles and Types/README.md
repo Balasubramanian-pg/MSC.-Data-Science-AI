@@ -55,3 +55,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Custom Colormaps](./Custom%20Colormaps.md)
 
 ## [Engineering Use Cases](./Engineering%20Use%20Cases.md)
+
+## [Line Styles](./Line%20Styles.md)
