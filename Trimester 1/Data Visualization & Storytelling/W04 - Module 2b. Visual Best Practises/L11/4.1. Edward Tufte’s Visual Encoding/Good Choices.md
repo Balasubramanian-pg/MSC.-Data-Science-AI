@@ -1,11 +1,9 @@
 # Good Choices
 
-- bar charts
+- ordered bars
     
-- grouped bars
+- Likert charts
     
-- categorical counts
+- ranked plots
     
-- treemaps
-    
-- stacked bars
+- heatmaps
