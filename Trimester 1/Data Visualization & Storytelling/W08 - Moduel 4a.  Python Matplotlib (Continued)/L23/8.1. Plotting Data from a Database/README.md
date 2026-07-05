@@ -13,3 +13,5 @@ This section explains how to create multiple related plots from a Pandas DataFra
 ## [Why Use Blue for Rainfall?](./Why%20Use%20Blue%20for%20Rainfall.md)
 
 ## [Step 2: Problem With Separate Graphs](./Step%202%20-%20Problem%20With%20Separate%20Graphs.md)
+
+## [Step 3: Shared X-Axis](./Step%203%20-%20Shared%20X-Axis.md)
