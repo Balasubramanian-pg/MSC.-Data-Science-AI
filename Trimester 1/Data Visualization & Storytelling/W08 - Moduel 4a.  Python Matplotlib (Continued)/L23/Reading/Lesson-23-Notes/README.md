@@ -9,3 +9,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Introduction](./Introduction.md)
 
 ## [Data Formats in Analytics Systems](./Data%20Formats%20in%20Analytics%20Systems.md)
+
+## [Why Data Formats Matter](./Why%20Data%20Formats%20Matter.md)
