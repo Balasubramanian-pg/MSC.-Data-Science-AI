@@ -305,3 +305,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Visual Attention Flow](./Visual%20Attention%20Flow.md)
 
 ## [3. Clear Visuals Instead of Dense Text](./3.%20Clear%20Visuals%20Instead%20of%20Dense%20Text.md)
+
+## [Why Images Matter](./Why%20Images%20Matter.md)
