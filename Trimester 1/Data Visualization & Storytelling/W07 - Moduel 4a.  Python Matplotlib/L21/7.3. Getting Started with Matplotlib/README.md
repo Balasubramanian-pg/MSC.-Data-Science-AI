@@ -209,3 +209,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Saving Matters](./Why%20Saving%20Matters.md)
 
 ## [Common File Formats](./Common%20File%20Formats.md)
+
+## [Important Hidden Concept](./Important%20Hidden%20Concept.md)
