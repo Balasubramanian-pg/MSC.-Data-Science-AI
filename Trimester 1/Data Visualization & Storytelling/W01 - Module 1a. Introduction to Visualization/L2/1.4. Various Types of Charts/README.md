@@ -106,3 +106,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [7.2 Objective vs Subjective Classification](./7.2%20Objective%20vs%20Subjective%20Classification.md)
 
 ## [Subjective Classification](./Subjective%20Classification.md)
+
+## [Objective Classification](./Objective%20Classification.md)
