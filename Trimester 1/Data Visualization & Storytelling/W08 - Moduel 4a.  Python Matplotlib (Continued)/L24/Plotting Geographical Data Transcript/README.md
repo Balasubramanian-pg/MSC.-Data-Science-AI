@@ -29,3 +29,5 @@ This is foundational to:
 - geospatial machine learning
 
 ## [Core Idea](./Core%20Idea.md)
+
+## [Big Picture Workflow](./Big%20Picture%20Workflow.md)
