@@ -2,14 +2,44 @@
 
 ```python
 from bokeh.plotting import figure, show
+from bokeh.models import NumeralTickFormatter
 
-plot = figure(height=300)
+carrier_names = [
+    "Delta Airlines",
+    "American Airlines",
+    "United Airlines",
+    "Lufthansa",
+    "Emirates",
+    "Qatar Airways",
+    "Singapore Airlines",
+    "Air India",
+    "Southwest Airlines",
+    "British Airways"
+]
 
-circle = plot.circle(
-    [1,2,3],
-    [2,5,8],
+passengers = [
+    14000000,
+    12000000,
+    11000000,
+    10000000,
+    9500000,
+    9200000,
+    9000000,
+    8500000,
+    8000000,
+    7800000
+]
 
-    size=20,
-    fill_color="yellow",
-    line_color="red"
+plot = figure(
+    x_range=carrier_names,
+    title="Top 10 Carriers by Passengers",
+    height=400,
+    width=800
+)
+
+plot.vbar(
+    x=carrier_names,
+    top=passengers,
+    width=0.5,
+    legend_label="Passengers"
 )
