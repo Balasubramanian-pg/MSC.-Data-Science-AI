@@ -199,3 +199,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Relationship Between Embeddings, Topics, and t-SNE](./Relationship%20Between%20Embeddings%2C%20Topics%2C%20and%20t-SNE.md)
 
 ## [Integrated NLP Pipeline](./Integrated%20NLP%20Pipeline.md)
+
+## [Why Semantic Visualization Matters](./Why%20Semantic%20Visualization%20Matters.md)
