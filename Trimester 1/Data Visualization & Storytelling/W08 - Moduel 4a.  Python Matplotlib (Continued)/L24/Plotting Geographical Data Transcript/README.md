@@ -91,3 +91,5 @@ This is foundational to:
 ## [What Is Happening?](./What%20Is%20Happening.md)
 
 ## [Important GIS Principle](./Important%20GIS%20Principle.md)
+
+## [Latitude and Longitude](./Latitude%20and%20Longitude.md)
