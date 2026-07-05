@@ -73,3 +73,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Why Long-Term Memory Matters](./Why%20Long-Term%20Memory%20Matters.md)
 
 ## [Visualization Depends on Learned Conventions](./Visualization%20Depends%20on%20Learned%20Conventions.md)
+
+## [Mental Models](./Mental%20Models.md)
