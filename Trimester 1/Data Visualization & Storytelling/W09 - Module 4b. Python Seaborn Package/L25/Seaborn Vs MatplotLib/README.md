@@ -85,3 +85,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [0. SETUP: Re-generating the Student Exam Data Structure](./0.%20SETUP%20-%20Re-generating%20the%20Student%20Exam%20Data%20Structure.md)
 
 ## [1. SCATTER PLOT COMPARISON (Syntax & Automated Labels)](./1.%20SCATTER%20PLOT%20COMPARISON%20%28Syntax%20%26%20Automated%20Labels%29.md)
+
+## [--- Approach A: Matplotlib (Verbose & Manual Labels) ---](./---%20Approach%20A%20-%20Matplotlib%20%28Verbose%20%26%20Manual%20Labels%29%20---.md)
