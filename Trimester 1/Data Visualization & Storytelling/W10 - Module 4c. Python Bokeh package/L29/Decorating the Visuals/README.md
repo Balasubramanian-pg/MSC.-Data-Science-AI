@@ -387,3 +387,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Important Principle](./Important%20Principle.md)
 
 ## [Axis Customization in Bokeh](./Axis%20Customization%20in%20Bokeh.md)
+
+## [Basic Line Plot](./Basic%20Line%20Plot.md)
