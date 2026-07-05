@@ -1,17 +1,12 @@
 # Example
 
-Instead of:
+Weak analyst:
 
-> “10,000 users experienced outages.”
+> “Metric X decreased by 7%.”
 
-A story says:
+Strong analyst:
 
-> “Hospitals lost access to patient records for 27 minutes during peak emergency operations.”
+> “Customer drop-off increased sharply after onboarding friction rose in mobile devices, suggesting UX instability is affecting conversion.”
 
-The second creates:
-
-- immediacy,
-    
-- seriousness,
-    
-- emotional engagement.
+The second tells:  
+a causal story.
