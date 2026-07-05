@@ -433,3 +433,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Tick Hierarchy](./Tick%20Hierarchy.md)
 
 ## [Why Minor Ticks Matter](./Why%20Minor%20Ticks%20Matter.md)
+
+## [Major Label Font Size](./Major%20Label%20Font%20Size.md)
