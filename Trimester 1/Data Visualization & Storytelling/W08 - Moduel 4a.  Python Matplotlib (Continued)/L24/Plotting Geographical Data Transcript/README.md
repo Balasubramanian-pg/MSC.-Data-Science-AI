@@ -71,3 +71,5 @@ This is foundational to:
 ## [Human Perception Insight](./Human%20Perception%20Insight.md)
 
 ## [Step 6: Add Legend](./Step%206%20-%20Add%20Legend.md)
+
+## [Step 7: Overlay Cities on World Map](./Step%207%20-%20Overlay%20Cities%20on%20World%20Map.md)
