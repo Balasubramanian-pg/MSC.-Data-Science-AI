@@ -181,3 +181,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [2. Plotting the Second Line](./2.%20Plotting%20the%20Second%20Line.md)
 
 ## [Understanding Plot Parameters](./Understanding%20Plot%20Parameters.md)
+
+## [`color='red'`](./%60color%3D%27red%27%60.md)
