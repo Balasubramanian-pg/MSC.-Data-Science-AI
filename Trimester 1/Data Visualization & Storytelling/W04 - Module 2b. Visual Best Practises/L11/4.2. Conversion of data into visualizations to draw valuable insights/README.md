@@ -107,3 +107,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [4. Length Encoding](./4.%20Length%20Encoding.md)
 
 ## [Bar Charts](./Bar%20Charts.md)
+
+## [Why Humans Compare Length Well](./Why%20Humans%20Compare%20Length%20Well.md)
