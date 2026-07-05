@@ -1,12 +1,17 @@
 # Example
 
-Weak:
+Instead of:
 
-> “There may be concerns regarding operational anomalies.”
+> “Potential thermal protection damage may occur.”
 
-Strong:
+Show:
 
-> “System failure probability exceeds tested operating thresholds.”
+- impact visualization,
+    
+- heat penetration simulation,
+    
+- structural failure diagram.
+    
 
-The second creates:  
-immediate cognitive clarity.
+Now the audience:  
+experiences the risk visually.
