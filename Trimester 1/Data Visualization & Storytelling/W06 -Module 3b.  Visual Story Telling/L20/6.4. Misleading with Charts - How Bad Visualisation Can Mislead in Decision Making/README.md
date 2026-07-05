@@ -195,3 +195,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Confounders Are Dangerous](./Why%20Confounders%20Are%20Dangerous.md)
 
 ## [Best Practice](./Best%20Practice.md)
+
+## [Simpson’s Paradox](./Simpson%E2%80%99s%20Paradox.md)
