@@ -255,3 +255,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [2. Vague Language](./2.%20Vague%20Language.md)
 
 ## [Critical Problem](./Critical%20Problem.md)
+
+## [3. Poor Hierarchy](./3.%20Poor%20Hierarchy.md)
