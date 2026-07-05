@@ -1,11 +1,13 @@
 # Machine Learning Connections
 
-Time-series visualization is central in ML systems:
+Subplot layouts are heavily used in ML systems.
 
-|ML Area|Visualization|
+Examples:
+
+|ML Use Case|Subplot Purpose|
 |---|---|
-|Forecasting|Line plots|
-|Drift detection|Rolling statistics|
-|Model monitoring|Prediction timelines|
-|Sensor analytics|Streaming charts|
-|Reinforcement learning|Reward curves|
+|Training diagnostics|Loss vs accuracy|
+|Forecasting|Prediction vs actual|
+|Monitoring|Multiple KPIs|
+|Drift analysis|Distribution comparisons|
+|Sensor analytics|Multi-signal tracking|
