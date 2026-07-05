@@ -157,3 +157,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Final Design Goal](./Final%20Design%20Goal.md)
 
 ## [Final Mental Model](./Final%20Mental%20Model.md)
+
+## [Most Important Visualization Insight](./Most%20Important%20Visualization%20Insight.md)
