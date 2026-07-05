@@ -98,3 +98,5 @@ Bad visualizations use color excessively.
 ## [The Danger of Overusing Color](./The%20Danger%20of%20Overusing%20Color.md)
 
 ## [What Happens When Everything Is Colorful](./What%20Happens%20When%20Everything%20Is%20Colorful.md)
+
+## [Common Dashboard Mistakes](./Common%20Dashboard%20Mistakes.md)
