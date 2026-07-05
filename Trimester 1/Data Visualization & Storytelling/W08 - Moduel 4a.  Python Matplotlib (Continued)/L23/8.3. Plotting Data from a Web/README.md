@@ -67,3 +67,5 @@ It is fundamentally about:
 ## [1. Forgetting `parse_dates`](./1.%20Forgetting%20%60parse_dates%60.md)
 
 ## [2. Forgetting `set_index`](./2.%20Forgetting%20%60set_index%60.md)
+
+## [3. Assuming CSV is Always Local](./3.%20Assuming%20CSV%20is%20Always%20Local.md)
