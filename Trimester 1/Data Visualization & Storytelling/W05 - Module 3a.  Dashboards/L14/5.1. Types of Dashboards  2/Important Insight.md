@@ -1,6 +1,7 @@
 # Important Insight
 
-Dashboards surface signals.  
-They do not automatically explain causality.
+Dashboard design is fundamentally:  
+decision-design.
 
-Human interpretation remains essential.
+Different decisions require:  
+different information architectures.
