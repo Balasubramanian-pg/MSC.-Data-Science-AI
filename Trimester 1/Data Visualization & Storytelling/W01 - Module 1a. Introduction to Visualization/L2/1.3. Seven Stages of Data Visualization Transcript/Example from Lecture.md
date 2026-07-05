@@ -1,8 +1,12 @@
 # Example from Lecture
 
-Mining reveals:
+Initial visualization:
 
-```text
-States above national average = 23
-States below national average = 13
-```
+- simple horizontal bar chart
+    
+- alphabetical ordering
+    
+
+Problem:
+
+> The chart failed to communicate the mined insight.
