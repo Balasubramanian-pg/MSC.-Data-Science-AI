@@ -1,11 +1,9 @@
 # Core Idea
 
-Text contains emotional tone.
+Every piece of language carries some emotional polarity:
 
-Examples:
-
-|Type|Tone|
+|Type|Meaning|
 |---|---|
-|Complaint|Negative|
-|Praise|Positive|
-|Administrative Message|Neutral|
+|Positive|Favorable emotion|
+|Neutral|Informational or balanced|
+|Negative|Unfavorable emotion|
