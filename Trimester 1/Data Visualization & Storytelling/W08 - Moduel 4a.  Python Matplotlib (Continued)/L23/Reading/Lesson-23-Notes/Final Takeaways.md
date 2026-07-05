@@ -1,17 +1,21 @@
 # Final Takeaways
 
-This lecture demonstrates a complete real-world workflow:
+The lecture is introducing a critical visualization capability:
 
-|Step|Purpose|
+> organizing multiple related visual narratives within a single coherent analytical space.
+
+Key concepts:
+
+|Concept|Purpose|
 |---|---|
-|Read remote data|Automation|
-|Parse datetime|Temporal intelligence|
-|Set index|Time-series structure|
-|Apply style|Visual consistency|
-|Plot data|Pattern discovery|
+|`fig`|Entire canvas|
+|`axes`|Individual plots|
+|`sharex=True`|Temporal alignment|
+|`subplots()`|Structured dashboards|
+|`suptitle()`|Global context|
 
-The deeper lesson is not merely plotting temperature.
+The deeper lesson is that advanced visualization is not just plotting isolated charts.
 
-The deeper lesson is:
+It is:
 
-> building reproducible analytical pipelines connected directly to remote data ecosystems.
+> designing coordinated systems for comparative reasoning.
