@@ -11,3 +11,5 @@ Every single function, method, and parameter is explained in detail using Python
 ## [Master Guide: Interactive Graphics & Storytelling with Bokeh](./Master%20Guide%20-%20Interactive%20Graphics%20%26%20Storytelling%20with%20Bokeh.md)
 
 ## [🟢 Module 1: Foundations of Bokeh & Simple Line Plots](./%F0%9F%9F%A2%20Module%201%20-%20Foundations%20of%20Bokeh%20%26%20Simple%20Line%20Plots.md)
+
+## [==========================================](./%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D.md)
