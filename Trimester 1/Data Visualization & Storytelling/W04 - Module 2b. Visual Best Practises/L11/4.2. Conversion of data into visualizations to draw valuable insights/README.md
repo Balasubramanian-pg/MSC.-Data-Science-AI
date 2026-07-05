@@ -65,3 +65,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [But Area Still Has Problems](./But%20Area%20Still%20Has%20Problems.md)
 
 ## [Why Bubble Charts Are Difficult](./Why%20Bubble%20Charts%20Are%20Difficult.md)
+
+## [Example Problem](./Example%20Problem.md)
