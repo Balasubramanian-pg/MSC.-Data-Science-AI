@@ -179,3 +179,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Mathematical Relationship](./Mathematical%20Relationship.md)
 
 ## [2. Plotting the Second Line](./2.%20Plotting%20the%20Second%20Line.md)
+
+## [Understanding Plot Parameters](./Understanding%20Plot%20Parameters.md)
