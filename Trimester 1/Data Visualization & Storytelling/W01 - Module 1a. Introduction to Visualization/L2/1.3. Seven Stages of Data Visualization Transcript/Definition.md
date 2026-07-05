@@ -1,15 +1,18 @@
 # Definition
 
-**Data Acquisition** is the process of collecting data from one or more sources.
+**Parsing** means understanding:
 
-The lecture explains that data often comes from:
+- dataset structure
+    
+- columns
+    
+- variables
+    
+- missing values
+    
+- data integrity
+    
 
-- websites
-    
-- Excel files
-    
-- CSV files
-    
-- APIs
-    
-- multiple external systems
+The lecture describes parsing as:
+
+> “eyeballing” the data structure.
