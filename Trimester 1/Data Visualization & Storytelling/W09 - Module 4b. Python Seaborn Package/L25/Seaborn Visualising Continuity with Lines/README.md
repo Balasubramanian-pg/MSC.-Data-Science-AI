@@ -65,3 +65,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Intent: Replicate the 'Small Multiples' concept from PowerBI. By separating](./Intent%20-%20Replicate%20the%20%27Small%20Multiples%27%20concept%20from%20PowerBI.%20By%20separating.md)
 
 ## [categories into distinct subplot columns, we drastically reduce the audience's mental processing effort.](./categories%20into%20distinct%20subplot%20columns%2C%20we%20drastically%20reduce%20the%20audience%27s%20mental%20processing%20effort.md)
+
+## [Apply global title architecture across the complete Figure grid](./Apply%20global%20title%20architecture%20across%20the%20complete%20Figure%20grid.md)
