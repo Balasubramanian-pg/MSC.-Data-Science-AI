@@ -15,3 +15,5 @@
 ## [6. Advanced Multivariate Techniques](./6.%20Advanced%20Multivariate%20Techniques.md)
 
 ## [Visualization Decision Framework](./Visualization%20Decision%20Framework.md)
+
+## [Golden Rules](./Golden%20Rules.md)
