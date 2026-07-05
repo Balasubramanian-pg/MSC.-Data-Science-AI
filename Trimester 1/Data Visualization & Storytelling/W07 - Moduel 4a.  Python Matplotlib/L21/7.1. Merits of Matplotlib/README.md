@@ -79,3 +79,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [10. The Deeper Educational Goal](./10.%20The%20Deeper%20Educational%20Goal.md)
 
 ## [Strategic Insight](./Strategic%20Insight.md)
+
+## [Final Takeaway](./Final%20Takeaway.md)
