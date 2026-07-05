@@ -405,3 +405,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Professional Visualization Principle](./Professional%20Visualization%20Principle.md)
 
 ## [Full Axis Styling Example](./Full%20Axis%20Styling%20Example.md)
+
+## [Line graph](./Line%20graph.md)
