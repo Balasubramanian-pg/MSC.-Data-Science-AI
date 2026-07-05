@@ -167,3 +167,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Semantic Scores and Sentiment Analysis](./Semantic%20Scores%20and%20Sentiment%20Analysis.md)
 
 ## [Emotional Structure in Text](./Emotional%20Structure%20in%20Text.md)
+
+## [Core Idea](./Core%20Idea.md)
