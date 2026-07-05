@@ -1,37 +1,30 @@
 # Strategic Insight
 
-Matplotlib is not just a charting library.
+This lecture section introduces a foundational engineering idea:
 
-It is:
+> visualizations are computational objects.
 
-> a programmable visualization framework.
+Charts are not manually drawn.
 
-That distinction matters because:
+They are:
 
-- dashboards
+- generated from mathematical structures
     
-- ML monitoring systems
+- rendered from numerical arrays
     
-- scientific reports
-    
-- BI pipelines
+- controlled programmatically
     
 
-all fundamentally rely on:
+This is why modern visualization sits at the intersection of:
 
-- converting abstract numerical systems into interpretable visual form.
+- mathematics
     
-
-That is why visualization is deeply connected to:
-
-- statistics
-    
-- cognition
+- programming
     
 - perception
     
 - communication
     
-- software engineering.
+- statistical reasoning.
 
 ===
