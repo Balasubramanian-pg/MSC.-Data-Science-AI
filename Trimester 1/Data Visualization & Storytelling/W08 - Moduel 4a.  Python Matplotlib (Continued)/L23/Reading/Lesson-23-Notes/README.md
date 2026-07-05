@@ -225,3 +225,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Royal Blue for Rainfall](./Royal%20Blue%20for%20Rainfall.md)
 
 ## [Subplots as Analytical Dashboards](./Subplots%20as%20Analytical%20Dashboards.md)
+
+## [Time-Series Comparison](./Time-Series%20Comparison.md)
