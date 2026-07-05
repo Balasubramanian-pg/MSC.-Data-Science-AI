@@ -47,3 +47,5 @@ This section explains how to create multiple related plots from a Pandas DataFra
 ## [1. Forgetting ShareX](./1.%20Forgetting%20ShareX.md)
 
 ## [2. Wrong Axis Index](./2.%20Wrong%20Axis%20Index.md)
+
+## [3. Not Setting Datetime Index](./3.%20Not%20Setting%20Datetime%20Index.md)
