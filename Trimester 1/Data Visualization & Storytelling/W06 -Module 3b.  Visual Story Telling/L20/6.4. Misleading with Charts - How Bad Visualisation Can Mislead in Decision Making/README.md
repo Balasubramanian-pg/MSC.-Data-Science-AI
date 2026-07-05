@@ -105,3 +105,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [What the Graph Implied](./What%20the%20Graph%20Implied.md)
 
 ## [What Actually Happened](./What%20Actually%20Happened.md)
+
+## [Difference Between Value and Growth Rate](./Difference%20Between%20Value%20and%20Growth%20Rate.md)
