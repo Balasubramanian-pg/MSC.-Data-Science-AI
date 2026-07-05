@@ -47,3 +47,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [1. DATA CREATION (Replicating the Lecture's Mock Dataset)](./1.%20DATA%20CREATION%20%28Replicating%20the%20Lecture%27s%20Mock%20Dataset%29.md)
 
 ## [Setting a random seed ensures the generated "random" data matches every run](./Setting%20a%20random%20seed%20ensures%20the%20generated%20random%20data%20matches%20every%20run.md)
+
+## [Generate 50 random study hour values between 1 and 10 hours](./Generate%2050%20random%20study%20hour%20values%20between%201%20and%2010%20hours.md)
