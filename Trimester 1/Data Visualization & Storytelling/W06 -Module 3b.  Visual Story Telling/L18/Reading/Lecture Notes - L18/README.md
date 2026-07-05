@@ -323,3 +323,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Weak Communication](./Weak%20Communication.md)
 
 ## [Strong Communication](./Strong%20Communication.md)
+
+## [Hidden Lesson of the Columbia Case](./Hidden%20Lesson%20of%20the%20Columbia%20Case.md)
