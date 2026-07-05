@@ -1,13 +1,16 @@
 # Definition
 
-Iconic memory is the visual sensory memory system.
+Short-term memory, often called working memory, temporarily stores and processes small amounts of information.
 
-It is the very first cognitive stage that interacts with a visualization.
+Unlike iconic memory:
 
-Before conscious thinking happens, the brain briefly stores a raw visual snapshot.
+- processing becomes conscious
+    
+- active thinking occurs
+    
+- comparison begins
+    
 
-This snapshot exists for only a fraction of a second.
+The transcript states:
 
-The transcript describes iconic memory as:
-
-> The first thing the audience uses to perceive your visual.
+> Small amounts of data can be stored in short-term memory.
