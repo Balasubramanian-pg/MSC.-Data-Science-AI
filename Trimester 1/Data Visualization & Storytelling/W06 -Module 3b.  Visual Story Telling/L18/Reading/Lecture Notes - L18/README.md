@@ -135,3 +135,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Presentation Zen by Garr Reynolds](./Presentation%20Zen%20by%20Garr%20Reynolds.md)
 
 ## [Core Philosophy](./Core%20Philosophy.md)
+
+## [A. Restraint](./A.%20Restraint.md)
