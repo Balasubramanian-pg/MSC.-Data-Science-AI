@@ -17,3 +17,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Core Visualization Pipeline](./Core%20Visualization%20Pipeline.md)
 
 ## [The `pyplot` Submodule](./The%20%60pyplot%60%20Submodule.md)
+
+## [Why Aliases Are Used](./Why%20Aliases%20Are%20Used.md)
