@@ -1,17 +1,16 @@
 # Advanced Insight
 
 Dashboards are:  
-external cognitive systems.
+cognitive instruments.
 
-They extend human analytical capability by:
+Just as:
 
-- compressing information,
+- microscopes,
     
-- reducing memory burden,
+- telescopes,
     
-- guiding attention,
-    
-- and accelerating reasoning.
+- and radar systems  
+    serve different observational purposes,
     
 
-This is why dashboards are so powerful in modern organizations.
+different dashboards support different forms of organizational cognition.
