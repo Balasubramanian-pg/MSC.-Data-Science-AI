@@ -431,3 +431,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Simple Visualizations Work](./Why%20Simple%20Visualizations%20Work.md)
 
 ## [Temporal Pattern Recognition](./Temporal%20Pattern%20Recognition.md)
+
+## [Metadata vs Content](./Metadata%20vs%20Content.md)
