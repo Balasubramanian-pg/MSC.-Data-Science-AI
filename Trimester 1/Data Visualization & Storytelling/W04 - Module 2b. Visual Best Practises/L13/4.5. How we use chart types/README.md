@@ -137,3 +137,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Word Count Visualization Pipeline](./Word%20Count%20Visualization%20Pipeline.md)
 
 ## [Why Bar Charts Work Best Here](./Why%20Bar%20Charts%20Work%20Best%20Here.md)
+
+## [Cognitive Principle](./Cognitive%20Principle.md)
