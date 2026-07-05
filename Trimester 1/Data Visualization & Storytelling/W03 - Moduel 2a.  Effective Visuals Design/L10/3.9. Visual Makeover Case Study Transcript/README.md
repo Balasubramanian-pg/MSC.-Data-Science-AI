@@ -118,3 +118,5 @@ The transcript introduces this challenge directly.
 ## [This Is a Huge Professional Insight](./This%20Is%20a%20Huge%20Professional%20Insight.md)
 
 ## [Natural vs Counterintuitive Flow](./Natural%20vs%20Counterintuitive%20Flow.md)
+
+## [Why Counterintuitive Layouts Fail](./Why%20Counterintuitive%20Layouts%20Fail.md)
