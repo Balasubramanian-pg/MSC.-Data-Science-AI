@@ -49,3 +49,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why the Inverted Axis Was Misleading](./Why%20the%20Inverted%20Axis%20Was%20Misleading.md)
 
 ## [Correct Use of Color vs Manipulative Structure](./Correct%20Use%20of%20Color%20vs%20Manipulative%20Structure.md)
+
+## [2. Truncated Y-Axis](./2.%20Truncated%20Y-Axis.md)
