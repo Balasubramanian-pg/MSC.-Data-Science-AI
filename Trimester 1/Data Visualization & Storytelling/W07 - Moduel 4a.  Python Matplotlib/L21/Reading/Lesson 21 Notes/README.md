@@ -261,3 +261,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Understanding the Plot Parameters](./Understanding%20the%20Plot%20Parameters.md)
 
 ## [A. `color='red'`](./A.%20%60color%3D%27red%27%60.md)
+
+## [Why Color Matters](./Why%20Color%20Matters.md)
