@@ -1,21 +1,15 @@
 # Advanced Insight
 
-The lecture is implicitly teaching something deeper:
+Subplots are fundamentally about:
 
-> visualization becomes exponentially more valuable when connected to live external data.
+> preserving relational structure while reducing visual interference.
 
-Static plots are snapshots.
+This is an information architecture problem, not merely a plotting problem.
 
-Dynamic remote-data plots become analytical systems.
+Good subplot design minimizes:
 
-This transition is foundational for:
-
-- dashboards
+- cognitive switching cost
     
-- monitoring
+- perceptual ambiguity
     
-- forecasting
-    
-- automation
-    
-- machine learning operations
+- comparison friction
