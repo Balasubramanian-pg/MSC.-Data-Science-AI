@@ -1,18 +1,16 @@
 # Visual Intuition
 
 ```text
-0 radians:
-January
+0:
+Delta Airlines
 
-0.78 radians:
-/January
+0.8:
+/Delta Airlines
 
-1.57 radians:
-J
+1.57:
+D
+e
+l
+t
 a
-n
-u
-a
-r
-y
 ```
