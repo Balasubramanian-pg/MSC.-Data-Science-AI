@@ -1,6 +1,4 @@
 # Definition
 
-Remove:  
-everything unnecessary.
-
-This is one of the most difficult design skills.
+Visual hierarchy refers to:  
+arranging elements so the audience naturally notices the most important information first.
