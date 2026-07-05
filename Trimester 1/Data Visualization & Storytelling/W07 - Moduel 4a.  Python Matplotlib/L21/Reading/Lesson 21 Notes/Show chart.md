@@ -1,0 +1,4 @@
+# Show chart
+
+plt.show()
+```
