@@ -1,15 +1,15 @@
 # Appropriate Visualization
 
-Horizontal Bar Chart
+Regional comparison charts.
 
-Example:
+```mermaid
+flowchart TD
 
-```text
-State A ████████████ 75%
+South --> Kerala
+South --> Karnataka
+South --> TamilNadu
 
-State B ██████████ 70%
-
-National Avg ████████ 66%
-
-State C ██████ 60%
+North --> Punjab
+North --> Haryana
+North --> Delhi
 ```
