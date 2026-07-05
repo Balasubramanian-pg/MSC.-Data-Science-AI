@@ -3,3 +3,5 @@ title: W08 - Moduel 4a.  Python Matplotlib (Continued)
 module: Statistical Modelling And Inferencing
 week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ---
+
+## [Advanced Matplotlib & Data from the Web](./Advanced%20Matplotlib%20%26%20Data%20from%20the%20Web.md)
