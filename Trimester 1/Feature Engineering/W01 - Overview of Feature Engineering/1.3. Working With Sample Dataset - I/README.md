@@ -13,3 +13,5 @@ week: W01 - Overview of Feature Engineering
 ## [1.3.3. The Alchemy of Reshaping: Wide to Long Formats](./1.3.3.%20The%20Alchemy%20of%20Reshaping%20-%20Wide%20to%20Long%20Formats.md)
 
 ## [1.3.4. Visualizing Discriminative Power: Violin Plots](./1.3.4.%20Visualizing%20Discriminative%20Power%20-%20Violin%20Plots.md)
+
+## [1.3.5. The Algorithmic Oracle: Random Forest and Feature Importance](./1.3.5.%20The%20Algorithmic%20Oracle%20-%20Random%20Forest%20and%20Feature%20Importance.md)
