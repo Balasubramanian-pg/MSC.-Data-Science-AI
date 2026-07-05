@@ -305,3 +305,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Figure-Level Narrative](./Figure-Level%20Narrative.md)
 
 ## [Visualization as Hierarchical Communication](./Visualization%20as%20Hierarchical%20Communication.md)
+
+## [Transition to Curve Fitting](./Transition%20to%20Curve%20Fitting.md)
