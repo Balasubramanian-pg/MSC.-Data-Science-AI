@@ -521,3 +521,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Important UX Principle](./Important%20UX%20Principle.md)
 
 ## [The Instructor Demonstrates Iteration](./The%20Instructor%20Demonstrates%20Iteration.md)
+
+## [Visualization Tradeoff](./Visualization%20Tradeoff.md)
