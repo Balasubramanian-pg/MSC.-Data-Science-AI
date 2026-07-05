@@ -85,3 +85,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [RGB Tuple Colors](./RGB%20Tuple%20Colors.md)
 
 ## [RGB Color Intuition](./RGB%20Color%20Intuition.md)
+
+## [Example](./Example.md)
