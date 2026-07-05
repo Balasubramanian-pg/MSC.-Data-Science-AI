@@ -9,3 +9,5 @@
 ## [3. Distribution Analysis](./3.%20Distribution%20Analysis.md)
 
 ## [4. Multivariate Analysis](./4.%20Multivariate%20Analysis.md)
+
+## [5. Multivariate Trend and Relationship Analysis](./5.%20Multivariate%20Trend%20and%20Relationship%20Analysis.md)
