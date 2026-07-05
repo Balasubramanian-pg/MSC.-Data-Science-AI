@@ -1,12 +1,10 @@
 # Visual Intuition
 
 ```text
-Solid:
-──────────
+///////
+///////
 
-Dashed:
-- - - - - -
+xxxxxxx
 
-Dotted:
-..........
+.......
 ```
