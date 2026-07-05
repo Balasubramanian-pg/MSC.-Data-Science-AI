@@ -229,3 +229,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Time-Series Comparison](./Time-Series%20Comparison.md)
 
 ## [Example Insight](./Example%20Insight.md)
+
+## [Figure-Level Titles](./Figure-Level%20Titles.md)
