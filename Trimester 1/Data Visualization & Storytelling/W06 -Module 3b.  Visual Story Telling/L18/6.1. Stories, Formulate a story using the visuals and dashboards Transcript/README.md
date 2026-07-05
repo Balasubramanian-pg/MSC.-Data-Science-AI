@@ -209,3 +209,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Strong Visuals Should Be Self-Explanatory](./Strong%20Visuals%20Should%20Be%20Self-Explanatory.md)
 
 ## [Weak Presentation Pattern](./Weak%20Presentation%20Pattern.md)
+
+## [Strong Presentation Pattern](./Strong%20Presentation%20Pattern.md)
