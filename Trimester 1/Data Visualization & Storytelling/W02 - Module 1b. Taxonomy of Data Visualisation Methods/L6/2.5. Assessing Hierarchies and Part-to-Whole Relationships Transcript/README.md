@@ -25,3 +25,5 @@ This document provides a technical blueprint for understanding, selecting, and i
 ## [Set limits to prevent rendering issues](./Set%20limits%20to%20prevent%20rendering%20issues.md)
 
 ## [4. Render circles on screen](./4.%20Render%20circles%20on%20screen.md)
+
+## [7. Advanced Engineering Considerations & Edge Cases](./7.%20Advanced%20Engineering%20Considerations%20%26%20Edge%20Cases.md)
