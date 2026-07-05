@@ -255,3 +255,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Meaning of the Equation](./Meaning%20of%20the%20Equation.md)
 
 ## [Defining Variables](./Defining%20Variables.md)
+
+## [Plotting the Line](./Plotting%20the%20Line.md)
