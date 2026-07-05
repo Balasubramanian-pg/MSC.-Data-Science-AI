@@ -265,3 +265,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Border Transparency](./Border%20Transparency.md)
 
 ## [Background Fill](./Background%20Fill.md)
+
+## [Removing Grid Lines](./Removing%20Grid%20Lines.md)
