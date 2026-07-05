@@ -173,3 +173,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Sentiment Matters](./Why%20Sentiment%20Matters.md)
 
 ## [Sentiment Analysis Pipeline](./Sentiment%20Analysis%20Pipeline.md)
+
+## [Sentiment Categories](./Sentiment%20Categories.md)
