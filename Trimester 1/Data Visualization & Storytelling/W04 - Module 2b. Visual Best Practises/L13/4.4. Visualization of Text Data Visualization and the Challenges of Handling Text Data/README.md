@@ -139,3 +139,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Number Handling Matters](./Why%20Number%20Handling%20Matters.md)
 
 ## [Important NLP Tradeoff](./Important%20NLP%20Tradeoff.md)
+
+## [Number Processing Pipeline](./Number%20Processing%20Pipeline.md)
