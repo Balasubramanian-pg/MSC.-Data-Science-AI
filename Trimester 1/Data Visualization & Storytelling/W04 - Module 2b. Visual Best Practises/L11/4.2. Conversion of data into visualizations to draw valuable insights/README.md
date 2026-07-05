@@ -45,3 +45,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [What Users Cannot Easily Understand](./What%20Users%20Cannot%20Easily%20Understand.md)
 
 ## [Why This Happens](./Why%20This%20Happens.md)
+
+## [Cognitive Failure of Color Encoding](./Cognitive%20Failure%20of%20Color%20Encoding.md)
