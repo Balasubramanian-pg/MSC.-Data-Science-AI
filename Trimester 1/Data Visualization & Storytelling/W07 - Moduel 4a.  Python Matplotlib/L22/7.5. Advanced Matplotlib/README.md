@@ -51,3 +51,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Bar Charts](./Bar%20Charts.md)
 
 ## [Conceptual Purpose](./Conceptual%20Purpose.md)
+
+## [Example Dataset](./Example%20Dataset.md)
