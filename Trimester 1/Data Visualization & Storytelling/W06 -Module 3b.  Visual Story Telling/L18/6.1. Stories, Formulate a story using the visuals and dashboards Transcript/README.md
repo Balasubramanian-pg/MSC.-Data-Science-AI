@@ -133,3 +133,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Cognitive Load Theory](./Cognitive%20Load%20Theory.md)
 
 ## [Example of Poor Restraint](./Example%20of%20Poor%20Restraint.md)
+
+## [Strong Restraint](./Strong%20Restraint.md)
