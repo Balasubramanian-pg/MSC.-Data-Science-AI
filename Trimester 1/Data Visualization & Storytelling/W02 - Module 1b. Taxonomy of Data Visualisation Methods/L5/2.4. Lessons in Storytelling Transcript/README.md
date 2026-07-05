@@ -12,3 +12,5 @@
 ## [3. Why Storytelling Matters](./3.%20Why%20Storytelling%20Matters.md)
 
 ## [4. The Screenplay Model of Data Storytelling](./4.%20The%20Screenplay%20Model%20of%20Data%20Storytelling.md)
+
+## [5. Audience-Centric Thinking](./5.%20Audience-Centric%20Thinking.md)
