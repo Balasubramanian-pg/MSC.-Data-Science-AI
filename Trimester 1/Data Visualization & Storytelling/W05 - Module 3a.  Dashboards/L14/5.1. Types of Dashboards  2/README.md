@@ -253,3 +253,5 @@ week: W05 - Module 3a.  Dashboards
 ## [3. Nature of Decisions Supported](./3.%20Nature%20of%20Decisions%20Supported.md)
 
 ## [Strategic Decisions](./Strategic%20Decisions.md)
+
+## [Strategic Dashboard Focus](./Strategic%20Dashboard%20Focus.md)
