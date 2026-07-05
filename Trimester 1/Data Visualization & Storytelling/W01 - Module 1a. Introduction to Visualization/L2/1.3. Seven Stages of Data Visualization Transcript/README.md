@@ -44,3 +44,5 @@
 ## [Key Mining Questions](./Key%20Mining%20Questions.md)
 
 ## [Analytical Insight](./Analytical%20Insight.md)
+
+## [Potential Derived Metrics Mentioned](./Potential%20Derived%20Metrics%20Mentioned.md)
