@@ -23,3 +23,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [3. Notebook Cell Types](./3.%20Notebook%20Cell%20Types.md)
 
 ## [A. Code Cells](./A.%20Code%20Cells.md)
+
+## [B. Text / Markdown Cells](./B.%20Text%20Markdown%20Cells.md)
