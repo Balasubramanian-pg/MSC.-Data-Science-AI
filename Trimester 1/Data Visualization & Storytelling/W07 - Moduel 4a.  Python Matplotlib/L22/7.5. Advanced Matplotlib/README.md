@@ -85,3 +85,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Hidden Problem with Radar Charts](./Hidden%20Problem%20with%20Radar%20Charts.md)
 
 ## [Text Annotations](./Text%20Annotations.md)
+
+## [Why Text Matters](./Why%20Text%20Matters.md)
