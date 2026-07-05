@@ -109,3 +109,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Bar Charts](./Bar%20Charts.md)
 
 ## [Why Humans Compare Length Well](./Why%20Humans%20Compare%20Length%20Well.md)
+
+## [Why Bar Charts Work](./Why%20Bar%20Charts%20Work.md)
