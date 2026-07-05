@@ -255,3 +255,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [What This Does](./What%20This%20Does.md)
 
 ## [Mathematical Function](./Mathematical%20Function.md)
+
+## [Why Plot Multiple Functions Together?](./Why%20Plot%20Multiple%20Functions%20Together.md)
