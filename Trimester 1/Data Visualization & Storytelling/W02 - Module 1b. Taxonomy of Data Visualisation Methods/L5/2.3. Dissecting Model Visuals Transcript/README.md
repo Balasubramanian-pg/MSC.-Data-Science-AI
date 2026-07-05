@@ -32,3 +32,5 @@
 ## [13. Footnotes as a Design Tool](./13.%20Footnotes%20as%20a%20Design%20Tool.md)
 
 ## [14. Model Visualization Design Checklist](./14.%20Model%20Visualization%20Design%20Checklist.md)
+
+## [Common Mistakes](./Common%20Mistakes.md)
