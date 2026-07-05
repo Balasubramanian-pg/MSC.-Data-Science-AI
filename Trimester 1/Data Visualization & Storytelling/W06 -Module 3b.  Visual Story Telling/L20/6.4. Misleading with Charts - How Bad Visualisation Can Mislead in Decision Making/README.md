@@ -21,3 +21,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Cognitive Bias in Visualization](./Cognitive%20Bias%20in%20Visualization.md)
 
 ## [1. Spatial Bias](./1.%20Spatial%20Bias.md)
+
+## [2. Color Bias](./2.%20Color%20Bias.md)
