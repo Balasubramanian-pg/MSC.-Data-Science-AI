@@ -1,22 +1,18 @@
 # Definition
 
-Dashboards condense complex datasets into visual representations.
+A dashboard should ideally fit within:
 
-Instead of:
-
-- reading raw tables,
+- one screen,
     
-- scanning reports,
+- one viewport,
     
-- or analyzing spreadsheets,
+- one visual context.
     
 
-users interpret:
+Users should not need:
 
-- charts,
+- excessive scrolling,
     
-- maps,
+- multiple tabs,
     
-- indicators,
-    
-- and visual patterns.
+- or deep navigation.
