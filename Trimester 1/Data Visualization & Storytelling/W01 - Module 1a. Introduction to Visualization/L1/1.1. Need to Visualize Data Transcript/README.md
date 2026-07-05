@@ -11,3 +11,5 @@
 ## [1.3 Role of Visualization in Decision Making](./1.3%20Role%20of%20Visualization%20in%20Decision%20Making.md)
 
 ## [2. Understanding Data Types Before Visualization](./2.%20Understanding%20Data%20Types%20Before%20Visualization.md)
+
+## [2.1 Categorical Variables](./2.1%20Categorical%20Variables.md)
