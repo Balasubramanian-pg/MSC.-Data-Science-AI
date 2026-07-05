@@ -181,3 +181,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [5. No Narrative Flow](./5.%20No%20Narrative%20Flow.md)
 
 ## [Frameworks for Effective Presentations](./Frameworks%20for%20Effective%20Presentations.md)
+
+## [A. Presentation Zen](./A.%20Presentation%20Zen.md)
