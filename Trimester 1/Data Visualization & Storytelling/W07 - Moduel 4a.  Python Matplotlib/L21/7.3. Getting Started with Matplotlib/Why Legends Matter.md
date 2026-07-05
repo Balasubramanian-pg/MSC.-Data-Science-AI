@@ -1,14 +1,14 @@
 # Why Legends Matter
 
+Legends explain:
+
+- category mappings
+    
+- color semantics
+    
+- line identities
+    
+
 Without legends:
 
-- users cannot identify curves confidently
-    
-
-Especially problematic in:
-
-- dashboards
-    
-- scientific reports
-    
-- ML experiments
+- interpretation slows
