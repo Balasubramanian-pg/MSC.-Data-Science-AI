@@ -269,3 +269,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Common Line Styles](./Common%20Line%20Styles.md)
 
 ## [Why Line Styles Matter](./Why%20Line%20Styles%20Matter.md)
+
+## [C. `label='Cosine'`](./C.%20%60label%3D%27Cosine%27%60.md)
