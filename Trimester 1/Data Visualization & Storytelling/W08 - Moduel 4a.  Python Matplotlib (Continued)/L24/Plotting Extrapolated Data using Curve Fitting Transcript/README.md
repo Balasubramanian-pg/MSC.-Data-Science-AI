@@ -89,3 +89,5 @@ Observed Data → Fit Function → Predict Future
 ## [Real ML Connection](./Real%20ML%20Connection.md)
 
 ## [Common Beginner Mistakes](./Common%20Beginner%20Mistakes.md)
+
+## [1. Blindly Choosing High-Degree Polynomial](./1.%20Blindly%20Choosing%20High-Degree%20Polynomial.md)
