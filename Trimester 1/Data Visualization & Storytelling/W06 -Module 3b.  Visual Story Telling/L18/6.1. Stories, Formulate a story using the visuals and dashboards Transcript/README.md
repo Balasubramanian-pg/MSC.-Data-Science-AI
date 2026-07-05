@@ -299,3 +299,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Result](./Result.md)
 
 ## [Improving Presentations](./Improving%20Presentations.md)
+
+## [Step 1: Identify the Core Message](./Step%201%20-%20Identify%20the%20Core%20Message.md)
