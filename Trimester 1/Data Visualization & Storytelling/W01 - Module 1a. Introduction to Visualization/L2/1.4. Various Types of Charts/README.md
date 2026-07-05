@@ -70,3 +70,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [5.2 Pie Charts](./5.2%20Pie%20Charts.md)
 
 ## [Example Insight](./Example%20Insight.md)
+
+## [5.3 Stacked Composition Analysis](./5.3%20Stacked%20Composition%20Analysis.md)
