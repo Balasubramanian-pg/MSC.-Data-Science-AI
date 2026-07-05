@@ -122,3 +122,5 @@ The transcript introduces this challenge directly.
 ## [Why Counterintuitive Layouts Fail](./Why%20Counterintuitive%20Layouts%20Fail.md)
 
 ## [Cognitive Cost of Bad Layout](./Cognitive%20Cost%20of%20Bad%20Layout.md)
+
+## [Positioning + Pre-Attentive Attributes](./Positioning%20%2B%20Pre-Attentive%20Attributes.md)
