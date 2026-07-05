@@ -165,3 +165,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Correlation vs Causation](./Correlation%20vs%20Causation.md)
 
 ## [Correlation Example](./Correlation%20Example.md)
+
+## [Why Correlation Happens Accidentally](./Why%20Correlation%20Happens%20Accidentally.md)
