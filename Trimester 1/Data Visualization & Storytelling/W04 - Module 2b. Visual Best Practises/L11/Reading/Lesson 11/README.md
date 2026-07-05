@@ -153,3 +153,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Length and Position](./Length%20and%20Position.md)
 
 ## [Visualization Encoding Decision Tree](./Visualization%20Encoding%20Decision%20Tree.md)
+
+## [6. Expressiveness vs Effectiveness](./6.%20Expressiveness%20vs%20Effectiveness.md)
