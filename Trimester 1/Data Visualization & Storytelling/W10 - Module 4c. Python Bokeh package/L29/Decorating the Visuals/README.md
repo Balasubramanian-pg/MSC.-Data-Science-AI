@@ -643,3 +643,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Result](./Result.md)
 
 ## [Visualization Structure](./Visualization%20Structure.md)
+
+## [Why Legends Matter](./Why%20Legends%20Matter.md)
