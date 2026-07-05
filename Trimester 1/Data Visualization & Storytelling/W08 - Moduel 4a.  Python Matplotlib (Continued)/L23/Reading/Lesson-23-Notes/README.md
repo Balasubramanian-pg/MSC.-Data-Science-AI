@@ -335,3 +335,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Polynomial Degree Intuition](./Polynomial%20Degree%20Intuition.md)
 
 ## [Mathematical Foundation](./Mathematical%20Foundation.md)
+
+## [Machine Learning Connection](./Machine%20Learning%20Connection.md)
