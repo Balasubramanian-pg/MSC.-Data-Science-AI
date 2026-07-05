@@ -120,3 +120,5 @@ Bad visualizations use color excessively.
 ## [Color and Cognitive Load](./Color%20and%20Cognitive%20Load.md)
 
 ## [Why Minimalism Works](./Why%20Minimalism%20Works.md)
+
+## [Color in Storytelling](./Color%20in%20Storytelling.md)
