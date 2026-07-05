@@ -25,3 +25,5 @@ Every single function, method, and parameter is explained in detail using Python
 ## [Initialize the notebook output mode](./Initialize%20the%20notebook%20output%20mode.md)
 
 ## [Execute the function to see the plot](./Execute%20the%20function%20to%20see%20the%20plot.md)
+
+## [🟢 Module 2: Integrating Pandas DataFrames](./%F0%9F%9F%A2%20Module%202%20-%20Integrating%20Pandas%20DataFrames.md)
