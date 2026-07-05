@@ -69,3 +69,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Apply global title architecture across the complete Figure grid](./Apply%20global%20title%20architecture%20across%20the%20complete%20Figure%20grid.md)
 
 ## [Orientation Variation A: Columnar Layout (Side-by-Side Comparison)](./Orientation%20Variation%20A%20-%20Columnar%20Layout%20%28Side-by-Side%20Comparison%29.md)
+
+## [Best for cross-examining peak heights across variables at identical timestamps.](./Best%20for%20cross-examining%20peak%20heights%20across%20variables%20at%20identical%20timestamps.md)
