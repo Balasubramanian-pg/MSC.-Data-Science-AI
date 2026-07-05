@@ -15,3 +15,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Storytelling as Cognitive Compression](./Storytelling%20as%20Cognitive%20Compression.md)
 
 ## [Cognitive Compression Model](./Cognitive%20Compression%20Model.md)
+
+## [Why Stories Are More Memorable Than Raw Data](./Why%20Stories%20Are%20More%20Memorable%20Than%20Raw%20Data.md)
