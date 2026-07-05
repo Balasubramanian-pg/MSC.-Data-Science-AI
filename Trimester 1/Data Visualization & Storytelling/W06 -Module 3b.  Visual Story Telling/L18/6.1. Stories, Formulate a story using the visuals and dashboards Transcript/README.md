@@ -23,3 +23,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Story Advantage](./Story%20Advantage.md)
 
 ## [Important Insight](./Important%20Insight.md)
+
+## [Visualization + Storytelling](./Visualization%20%2B%20Storytelling.md)
