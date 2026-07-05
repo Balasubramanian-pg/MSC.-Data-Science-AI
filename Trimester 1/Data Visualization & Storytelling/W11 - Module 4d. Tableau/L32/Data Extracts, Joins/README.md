@@ -23,3 +23,5 @@
 ## [8.1.11. Factors Affecting Join Performance](./8.1.11.%20Factors%20Affecting%20Join%20Performance.md)
 
 ## [8.1.12. Data Blending vs Physical Joins](./8.1.12.%20Data%20Blending%20vs%20Physical%20Joins.md)
+
+## [8.1.13. Joins vs Unions](./8.1.13.%20Joins%20vs%20Unions.md)
