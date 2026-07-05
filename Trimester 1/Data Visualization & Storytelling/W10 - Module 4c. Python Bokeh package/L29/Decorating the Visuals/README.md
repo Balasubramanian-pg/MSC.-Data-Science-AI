@@ -767,3 +767,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Important Scientific Visualization Insight](./Important%20Scientific%20Visualization%20Insight.md)
 
 ## [The Result](./The%20Result.md)
+
+## [The Color Bar](./The%20Color%20Bar.md)
