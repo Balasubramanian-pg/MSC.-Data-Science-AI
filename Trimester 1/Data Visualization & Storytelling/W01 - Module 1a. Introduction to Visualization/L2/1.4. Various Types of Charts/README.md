@@ -114,3 +114,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [1. Cluttered Charts](./1.%20Cluttered%20Charts.md)
 
 ## [2. Excessive Plotting](./2.%20Excessive%20Plotting.md)
+
+## [3. Missing Labels](./3.%20Missing%20Labels.md)
