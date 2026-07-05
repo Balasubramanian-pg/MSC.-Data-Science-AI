@@ -613,3 +613,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Title Font Size](./Title%20Font%20Size.md)
 
 ## [Alignment](./Alignment.md)
+
+## [Background Color](./Background%20Color.md)
