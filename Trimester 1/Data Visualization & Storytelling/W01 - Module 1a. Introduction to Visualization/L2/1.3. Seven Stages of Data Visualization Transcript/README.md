@@ -114,3 +114,5 @@
 ## [2. Ignoring Ordering](./2.%20Ignoring%20Ordering.md)
 
 ## [3. Missing Benchmarks](./3.%20Missing%20Benchmarks.md)
+
+## [4. Overloading the Graphic](./4.%20Overloading%20the%20Graphic.md)
