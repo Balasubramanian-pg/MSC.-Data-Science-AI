@@ -1,10 +1,14 @@
 # Important Insight
 
-The instructor is now teaching:
+The instructor comments out code to show differences.
 
-- plot aesthetics
+This is pedagogically important.
+
+Visualization learning requires:
+
+- iterative experimentation
     
-- not data visualization logic
+- immediate visual feedback
     
 
-These are separate concerns.
+Not just reading syntax.
