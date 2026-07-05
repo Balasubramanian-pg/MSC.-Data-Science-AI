@@ -1,43 +1,25 @@
 # Final Takeaways
 
-Dashboards are:
+This CO₂ emissions dashboard demonstrates several advanced dashboard principles:
 
-- interactive visual reasoning systems,  
-    not merely collections of charts.
+- coordinated visual analytics
     
-
-Their power comes from combining:
-
-- storytelling,
+- reader-driven exploration
     
-- interaction,
+- effective chart selection
     
-- cognitive psychology,
+- visual hierarchy
     
-- visualization science,
+- interactivity
     
-- and business context.
+- contextual reasoning
     
-
-Effective dashboards:
-
-- grab attention quickly,
+- question generation
     
-- surface critical insights rapidly,
-    
-- reduce cognitive effort,
-    
-- support exploration,
-    
-- and enable action-oriented decision-making.
+- cognitive guidance
     
 
-The best dashboards feel:
+Most importantly, it demonstrates that:
 
-- intuitive,
-    
-- information-dense,
-    
-- visually coherent,
-    
-- and analytically empowering.
+> Effective dashboards do not merely display information.  
+> They actively shape analytical thinking.
