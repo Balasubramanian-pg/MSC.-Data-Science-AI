@@ -52,3 +52,5 @@ The transcript introduces this challenge directly.
 ## [The Visualization Problem](./The%20Visualization%20Problem.md)
 
 ## [Example Problem](./Example%20Problem.md)
+
+## [The Core Tradeoff](./The%20Core%20Tradeoff.md)
