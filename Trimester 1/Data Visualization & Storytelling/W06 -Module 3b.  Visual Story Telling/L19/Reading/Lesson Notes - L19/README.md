@@ -63,3 +63,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Core Advantage: Discovery](./The%20Core%20Advantage%20-%20Discovery.md)
 
 ## [The Hidden Problem with Exploratory Dashboards](./The%20Hidden%20Problem%20with%20Exploratory%20Dashboards.md)
+
+## [Exploratory Systems Require Strong Information Architecture](./Exploratory%20Systems%20Require%20Strong%20Information%20Architecture.md)
