@@ -175,3 +175,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [2. Bullet Point Abuse](./2.%20Bullet%20Point%20Abuse.md)
 
 ## [3. Decorative Noise](./3.%20Decorative%20Noise.md)
+
+## [4. Multiple Competing Messages](./4.%20Multiple%20Competing%20Messages.md)
