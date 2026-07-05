@@ -237,3 +237,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Amazon Review Systems](./Amazon%20Review%20Systems.md)
 
 ## [Important Hidden Insight](./Important%20Hidden%20Insight.md)
+
+## [Why Sentiment Analysis Became Critical](./Why%20Sentiment%20Analysis%20Became%20Critical.md)
