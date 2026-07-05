@@ -51,3 +51,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [This displays how Seaborn calculates the mean and error band automatically.](./This%20displays%20how%20Seaborn%20calculates%20the%20mean%20and%20error%20band%20automatically.md)
 
 ## [Customizing layout via Matplotlib layer over Seaborn](./Customizing%20layout%20via%20Matplotlib%20layer%20over%20Seaborn.md)
+
+## [2. OVERLAYING DIMENSIONS: The Hue + Style Approach (Axes-Level)](./2.%20OVERLAYING%20DIMENSIONS%20-%20The%20Hue%20%2B%20Style%20Approach%20%28Axes-Level%29.md)
