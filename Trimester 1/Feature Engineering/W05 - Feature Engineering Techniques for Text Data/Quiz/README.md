@@ -13,3 +13,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Answer](./Answer.md)
 
 ## [Question 2](./Question%202.md)
+
+## [Question 3](./Question%203.md)
