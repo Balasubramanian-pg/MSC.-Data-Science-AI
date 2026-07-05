@@ -185,3 +185,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Semantic Cluster Structure](./Semantic%20Cluster%20Structure.md)
 
 ## [Why Clustering Matters](./Why%20Clustering%20Matters.md)
+
+## [Important Caveat About t-SNE](./Important%20Caveat%20About%20t-SNE.md)
