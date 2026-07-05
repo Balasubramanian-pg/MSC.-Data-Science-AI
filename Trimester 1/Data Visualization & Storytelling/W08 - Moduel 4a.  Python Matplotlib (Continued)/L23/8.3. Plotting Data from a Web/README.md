@@ -37,3 +37,5 @@ It is fundamentally about:
 ## [Extremely Important Time-Series Principle](./Extremely%20Important%20Time-Series%20Principle.md)
 
 ## [Step 4: Understand the DataFrame](./Step%204%20-%20Understand%20the%20DataFrame.md)
+
+## [Why DataFrames Matter](./Why%20DataFrames%20Matter.md)
