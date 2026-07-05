@@ -25,3 +25,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Insight](./Important%20Insight.md)
 
 ## [Semantic Similarity](./Semantic%20Similarity.md)
+
+## [Meaning Through Proximity](./Meaning%20Through%20Proximity.md)
