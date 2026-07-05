@@ -90,3 +90,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [Key Insight](./Key%20Insight.md)
 
 ## [Gestalt Principle Mentioned](./Gestalt%20Principle%20Mentioned.md)
+
+## [6.4 Word Clouds](./6.4%20Word%20Clouds.md)
