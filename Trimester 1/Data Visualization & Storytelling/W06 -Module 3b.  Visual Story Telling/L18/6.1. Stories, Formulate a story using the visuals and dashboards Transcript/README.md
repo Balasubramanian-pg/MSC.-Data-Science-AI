@@ -269,3 +269,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [What Is Visual Hierarchy?](./What%20Is%20Visual%20Hierarchy.md)
 
 ## [Human Attention Is Selective](./Human%20Attention%20Is%20Selective.md)
+
+## [Visual Attention Model](./Visual%20Attention%20Model.md)
