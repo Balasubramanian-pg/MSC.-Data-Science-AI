@@ -391,3 +391,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Enron Analysis Pipeline](./Enron%20Analysis%20Pipeline.md)
 
 ## [Why Network Visualization Is Powerful](./Why%20Network%20Visualization%20Is%20Powerful.md)
+
+## [Modern Applications](./Modern%20Applications.md)
