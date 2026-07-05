@@ -1,3 +1,3 @@
 # Objective
 
-Evaluate regional performance.
+Improve voter turnout.
