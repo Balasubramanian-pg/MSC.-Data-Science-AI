@@ -75,3 +75,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [4. Text Emphasis](./4.%20Text%20Emphasis.md)
 
 ## [Examples](./Examples.md)
+
+## [5. Narrative Frameworks](./5.%20Narrative%20Frameworks.md)
