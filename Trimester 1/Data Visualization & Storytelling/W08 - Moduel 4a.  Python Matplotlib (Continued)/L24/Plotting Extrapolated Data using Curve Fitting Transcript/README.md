@@ -75,3 +75,5 @@ Observed Data → Fit Function → Predict Future
 ## [Why Curve Fitting Works](./Why%20Curve%20Fitting%20Works.md)
 
 ## [The Critical Comparison: Polynomial vs Linear](./The%20Critical%20Comparison%20-%20Polynomial%20vs%20Linear.md)
+
+## [Why Linear Regression Failed](./Why%20Linear%20Regression%20Failed.md)
