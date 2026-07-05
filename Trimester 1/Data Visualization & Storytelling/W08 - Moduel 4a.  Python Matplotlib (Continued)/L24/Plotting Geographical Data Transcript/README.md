@@ -53,3 +53,5 @@ This is foundational to:
 ## [Geometry Types](./Geometry%20Types.md)
 
 ## [Step 4: Inspect Data](./Step%204%20-%20Inspect%20Data.md)
+
+## [Key Insight](./Key%20Insight.md)
