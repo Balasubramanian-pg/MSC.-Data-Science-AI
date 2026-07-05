@@ -53,3 +53,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Narrative Improves Recall](./Why%20Narrative%20Improves%20Recall.md)
 
 ## [Emotional Connection](./Emotional%20Connection.md)
+
+## [Emotional Encoding](./Emotional%20Encoding.md)
