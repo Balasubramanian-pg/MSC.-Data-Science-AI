@@ -27,3 +27,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Insight](./Important%20Insight.md)
 
 ## [Storytelling in Leadership](./Storytelling%20in%20Leadership.md)
+
+## [Example](./Example.md)
