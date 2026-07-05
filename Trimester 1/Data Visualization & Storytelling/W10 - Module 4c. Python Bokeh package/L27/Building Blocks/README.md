@@ -9,3 +9,5 @@
 ## [5.1.4. Interactivity and the Browser Engine](./5.1.4.%20Interactivity%20and%20the%20Browser%20Engine.md)
 
 ## [5.1.5. Audience Narrative Control](./5.1.5.%20Audience%20Narrative%20Control.md)
+
+## [5.1.6. Widgets for Dynamic Filtering](./5.1.6.%20Widgets%20for%20Dynamic%20Filtering.md)
