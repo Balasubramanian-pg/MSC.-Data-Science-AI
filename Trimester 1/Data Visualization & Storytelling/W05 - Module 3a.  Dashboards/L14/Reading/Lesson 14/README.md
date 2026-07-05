@@ -127,3 +127,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Modern Dashboard Evolution](./Modern%20Dashboard%20Evolution.md)
 
 ## [Final Takeaways](./Final%20Takeaways.md)
+
+## [Interview-Style Questions](./Interview-Style%20Questions.md)
