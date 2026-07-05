@@ -89,3 +89,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Advanced Mental Model](./Advanced%20Mental%20Model.md)
 
 ## [Real-World Dashboard Example](./Real-World%20Dashboard%20Example.md)
+
+## [Visualization Architecture in Matplotlib](./Visualization%20Architecture%20in%20Matplotlib.md)
