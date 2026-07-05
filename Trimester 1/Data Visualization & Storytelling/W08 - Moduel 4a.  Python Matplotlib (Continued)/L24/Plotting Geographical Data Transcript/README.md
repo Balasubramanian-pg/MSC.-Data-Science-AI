@@ -127,3 +127,5 @@ This is foundational to:
 ## [Computational Insight](./Computational%20Insight.md)
 
 ## [Hidden Deep Idea](./Hidden%20Deep%20Idea.md)
+
+## [Most Important Takeaway](./Most%20Important%20Takeaway.md)
