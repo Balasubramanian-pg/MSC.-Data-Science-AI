@@ -121,3 +121,5 @@ This is foundational to:
 ## [1. Missing Geometry](./1.%20Missing%20Geometry.md)
 
 ## [2. Swapping Latitude/Longitude](./2.%20Swapping%20LatitudeLongitude.md)
+
+## [3. Using Wrong Coordinate Systems](./3.%20Using%20Wrong%20Coordinate%20Systems.md)
