@@ -34,3 +34,5 @@
 ## [14. Practical Visualization Design Checklist](./14.%20Practical%20Visualization%20Design%20Checklist.md)
 
 ## [Common Mistakes](./Common%20Mistakes.md)
+
+## [Examination Notes](./Examination%20Notes.md)
