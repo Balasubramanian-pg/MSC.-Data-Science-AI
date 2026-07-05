@@ -125,3 +125,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Why This Matters](./Why%20This%20Matters.md)
 
 ## [Dashboard Reading Flow](./Dashboard%20Reading%20Flow.md)
+
+## [Important Insight About Dashboards](./Important%20Insight%20About%20Dashboards.md)
