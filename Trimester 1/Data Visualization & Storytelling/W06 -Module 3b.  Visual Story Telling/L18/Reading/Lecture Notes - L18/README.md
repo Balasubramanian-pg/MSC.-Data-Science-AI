@@ -121,3 +121,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Ethical Principle](./Important%20Ethical%20Principle.md)
 
 ## [Psychological Power of Visuals](./Psychological%20Power%20of%20Visuals.md)
+
+## [Advanced Insight](./Advanced%20Insight.md)
