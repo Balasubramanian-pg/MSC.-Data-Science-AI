@@ -9,3 +9,5 @@
 ## [7.1.4. Data Types and Geospatial Roles](./7.1.4.%20Data%20Types%20and%20Geospatial%20Roles.md)
 
 ## [7.1.5. Previewing and Eyeballing Data](./7.1.5.%20Previewing%20and%20Eyeballing%20Data.md)
+
+## [7.1.6. Relational Connections and Joins](./7.1.6.%20Relational%20Connections%20and%20Joins.md)
