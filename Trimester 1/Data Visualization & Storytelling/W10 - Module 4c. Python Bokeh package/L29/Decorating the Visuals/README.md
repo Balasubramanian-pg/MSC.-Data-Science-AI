@@ -783,3 +783,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Important Layout Concept](./Important%20Layout%20Concept.md)
 
 ## [Placement](./Placement.md)
+
+## [Color bar](./Color%20bar.md)
