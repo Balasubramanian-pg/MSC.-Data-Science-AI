@@ -1,5 +1,9 @@
 # Why This Matters
 
-Without normalization:
+Special characters often:
 
-machines treat these as separate tokens.
+- add computational complexity
+    
+- increase vocabulary size
+    
+- contribute little semantic value
