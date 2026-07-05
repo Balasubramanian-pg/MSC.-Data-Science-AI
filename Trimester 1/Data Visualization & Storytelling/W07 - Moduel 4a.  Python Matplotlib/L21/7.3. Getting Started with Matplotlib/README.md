@@ -225,3 +225,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Visual Interpretation](./Visual%20Interpretation.md)
 
 ## [Defining X Values](./Defining%20X%20Values.md)
+
+## [Defining Y Values](./Defining%20Y%20Values.md)
