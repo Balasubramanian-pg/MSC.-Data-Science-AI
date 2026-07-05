@@ -275,3 +275,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [2. Precision Matters](./2.%20Precision%20Matters.md)
 
 ## [3. Simplicity Matters](./3.%20Simplicity%20Matters.md)
+
+## [4. Titles Matter](./4.%20Titles%20Matter.md)
