@@ -42,3 +42,5 @@ Bad visualizations use color excessively.
 ## [Visualization Design Principle](./Visualization%20Design%20Principle.md)
 
 ## [The Psychology of Color](./The%20Psychology%20of%20Color.md)
+
+## [Common Color Associations](./Common%20Color%20Associations.md)
