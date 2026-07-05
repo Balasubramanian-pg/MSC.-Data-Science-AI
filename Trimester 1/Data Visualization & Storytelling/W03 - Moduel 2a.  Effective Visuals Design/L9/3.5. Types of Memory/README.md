@@ -45,3 +45,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Example of Poor Design](./Example%20of%20Poor%20Design.md)
 
 ## [Example of Good Design](./Example%20of%20Good%20Design.md)
+
+## [Cognitive Load](./Cognitive%20Load.md)
