@@ -145,3 +145,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Relationship Visualization in Text](./Relationship%20Visualization%20in%20Text.md)
 
 ## [What Is a Word Tree?](./What%20Is%20a%20Word%20Tree.md)
+
+## [Word Tree Structure](./Word%20Tree%20Structure.md)
