@@ -63,3 +63,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Role of Algorithms](./Role%20of%20Algorithms.md)
 
 ## [Why Algorithms Are Necessary](./Why%20Algorithms%20Are%20Necessary.md)
+
+## [NLP Processing Stack](./NLP%20Processing%20Stack.md)
