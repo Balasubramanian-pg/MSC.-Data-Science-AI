@@ -112,3 +112,5 @@ from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, FunctionTransformer
 import numpy as np
+
+## [Define columns by type](./Define%20columns%20by%20type.md)
