@@ -88,3 +88,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [6.3 Bubble Charts](./6.3%20Bubble%20Charts.md)
 
 ## [Key Insight](./Key%20Insight.md)
+
+## [Gestalt Principle Mentioned](./Gestalt%20Principle%20Mentioned.md)
