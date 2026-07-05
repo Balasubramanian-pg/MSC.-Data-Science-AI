@@ -143,3 +143,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Hidden Design Principle](./Hidden%20Design%20Principle.md)
 
 ## [User Journey](./User%20Journey.md)
+
+## [Advanced Dashboard Insight](./Advanced%20Dashboard%20Insight.md)
