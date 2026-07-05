@@ -319,3 +319,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Arrays Matter in Visualization](./Why%20Arrays%20Matter%20in%20Visualization.md)
 
 ## [3. Basic Bar Chart](./3.%20Basic%20Bar%20Chart.md)
+
+## [Why Bar Charts Are Effective](./Why%20Bar%20Charts%20Are%20Effective.md)
