@@ -15,3 +15,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The NLP Visualization Pipeline](./The%20NLP%20Visualization%20Pipeline.md)
 
 ## [Panchatantra as a Text Dataset](./Panchatantra%20as%20a%20Text%20Dataset.md)
+
+## [Text Data as a Dataset](./Text%20Data%20as%20a%20Dataset.md)
