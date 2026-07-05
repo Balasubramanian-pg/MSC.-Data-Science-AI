@@ -67,3 +67,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Example](./Example.md)
 
 ## [8. Visualization and Storytelling](./8.%20Visualization%20and%20Storytelling.md)
+
+## [Visualization Pipeline](./Visualization%20Pipeline.md)
