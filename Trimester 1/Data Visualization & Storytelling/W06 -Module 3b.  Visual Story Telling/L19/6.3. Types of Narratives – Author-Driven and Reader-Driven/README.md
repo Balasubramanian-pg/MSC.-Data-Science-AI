@@ -47,3 +47,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [2. Visual Narrative Tactics](./2.%20Visual%20Narrative%20Tactics.md)
 
 ## [Visual Hierarchy](./Visual%20Hierarchy.md)
+
+## [Transitions and Animation](./Transitions%20and%20Animation.md)
