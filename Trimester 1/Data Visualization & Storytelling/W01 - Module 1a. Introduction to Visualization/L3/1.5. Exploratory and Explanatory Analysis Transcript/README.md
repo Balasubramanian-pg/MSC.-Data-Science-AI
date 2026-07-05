@@ -21,3 +21,5 @@
 ## [Main Goals](./Main%20Goals.md)
 
 ## [EDA is the Foundation of Visualization](./EDA%20is%20the%20Foundation%20of%20Visualization.md)
+
+## [2.3 Questions Asked During EDA](./2.3%20Questions%20Asked%20During%20EDA.md)
