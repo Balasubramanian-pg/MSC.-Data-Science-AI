@@ -99,3 +99,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [VBD (Verb, past tense): 1](./VBD%20%28Verb%2C%20past%20tense%29%20-%201.md)
 
 ## [5. Practical Engineering Examples](./5.%20Practical%20Engineering%20Examples.md)
+
+## [Assume X_ngram is our (3, 23) CSR matrix from earlier.](./Assume%20X_ngram%20is%20our%20%283%2C%2023%29%20CSR%20matrix%20from%20earlier.md)
