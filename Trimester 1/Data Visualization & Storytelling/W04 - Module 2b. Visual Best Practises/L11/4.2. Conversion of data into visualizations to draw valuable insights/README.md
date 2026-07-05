@@ -27,3 +27,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Weakest Encoding](./The%20Weakest%20Encoding.md)
 
 ## [Why Color Is Weak](./Why%20Color%20Is%20Weak.md)
+
+## [What Color Can Do Well](./What%20Color%20Can%20Do%20Well.md)
