@@ -65,3 +65,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why This Is Important](./Why%20This%20Is%20Important.md)
 
 ## [Semantic Clustering Pipeline](./Semantic%20Clustering%20Pipeline.md)
+
+## [Hidden Meaning Discovery](./Hidden%20Meaning%20Discovery.md)
