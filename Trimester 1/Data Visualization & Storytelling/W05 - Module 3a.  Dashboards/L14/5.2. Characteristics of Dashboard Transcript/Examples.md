@@ -1,9 +1,9 @@
 # Examples
 
-|Use Case|Refresh Requirement|
+|Attribute|Usage|
 |---|---|
-|Stock trading|Milliseconds|
-|Cybersecurity|Seconds|
-|Logistics|Minutes|
-|Retail sales|Hourly|
-|Executive reports|Daily/weekly|
+|Color|Highlight anomalies|
+|Size|Indicate magnitude|
+|Position|Accurate comparison|
+|Shape|Categorization|
+|Intensity|Emphasize importance|
