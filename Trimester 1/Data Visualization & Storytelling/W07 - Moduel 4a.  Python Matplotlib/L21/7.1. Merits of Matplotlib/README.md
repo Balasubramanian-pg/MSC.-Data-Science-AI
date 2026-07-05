@@ -17,3 +17,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Bokeh](./Bokeh.md)
 
 ## [Ecosystem Relationship](./Ecosystem%20Relationship.md)
+
+## [Important Insight](./Important%20Insight.md)
