@@ -15,3 +15,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Understanding CSV Data](./Understanding%20CSV%20Data.md)
 
 ## [Reading CSV Data into Pandas](./Reading%20CSV%20Data%20into%20Pandas.md)
+
+## [Creating CSV Data as a String](./Creating%20CSV%20Data%20as%20a%20String.md)
