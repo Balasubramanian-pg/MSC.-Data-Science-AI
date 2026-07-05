@@ -269,3 +269,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why This Case Is So Important](./Why%20This%20Case%20Is%20So%20Important.md)
 
 ## [Lessons from the Columbia Case](./Lessons%20from%20the%20Columbia%20Case.md)
+
+## [1. Hierarchy Matters](./1.%20Hierarchy%20Matters.md)
