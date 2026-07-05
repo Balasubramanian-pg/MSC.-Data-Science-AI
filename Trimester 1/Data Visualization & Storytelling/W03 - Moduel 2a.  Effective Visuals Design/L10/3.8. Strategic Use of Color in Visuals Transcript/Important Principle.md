@@ -1,7 +1,5 @@
 # Important Principle
 
 ```text
-Contrast creates attention.
+Color gains power through restraint.
 ```
-
-Not brightness alone.
