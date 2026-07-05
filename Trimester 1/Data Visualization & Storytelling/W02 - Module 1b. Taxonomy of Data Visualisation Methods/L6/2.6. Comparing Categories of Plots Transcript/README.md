@@ -14,3 +14,5 @@ This document details five advanced visual paradigms designed for **Categorical 
 ## [2. Gantt Category Range Charts (Floating Bar Charts)](./2.%20Gantt%20Category%20Range%20Charts%20%28Floating%20Bar%20Charts%29.md)
 
 ## [3. Sankey Diagrams (Flow Networks)](./3.%20Sankey%20Diagrams%20%28Flow%20Networks%29.md)
+
+## [4. Small Multiples (Grid / Facet Plots)](./4.%20Small%20Multiples%20%28Grid%20Facet%20Plots%29.md)
