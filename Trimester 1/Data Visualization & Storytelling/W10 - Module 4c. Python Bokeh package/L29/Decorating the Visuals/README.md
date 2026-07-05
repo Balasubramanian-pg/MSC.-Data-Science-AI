@@ -103,3 +103,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Engineering Insight](./Engineering%20Insight.md)
 
 ## [Useful Cases](./Useful%20Cases.md)
+
+## [Common Mistakes](./Common%20Mistakes.md)
