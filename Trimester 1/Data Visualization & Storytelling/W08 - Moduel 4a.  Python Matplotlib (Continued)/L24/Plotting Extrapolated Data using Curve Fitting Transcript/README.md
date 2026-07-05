@@ -83,3 +83,5 @@ Observed Data → Fit Function → Predict Future
 ## [Overfitting vs Underfitting](./Overfitting%20vs%20Underfitting.md)
 
 ## [Visual Importance](./Visual%20Importance.md)
+
+## [Hidden Mathematical Principle](./Hidden%20Mathematical%20Principle.md)
