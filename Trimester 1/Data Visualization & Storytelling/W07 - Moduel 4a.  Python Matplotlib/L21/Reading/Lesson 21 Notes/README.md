@@ -241,3 +241,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Render chart](./Render%20chart.md)
 
 ## [7. What Happens When You Uncomment the Cosine Line?](./7.%20What%20Happens%20When%20You%20Uncomment%20the%20Cosine%20Line.md)
+
+## [Why This Is Useful](./Why%20This%20Is%20Useful.md)
