@@ -137,3 +137,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Critical Lesson](./Critical%20Lesson.md)
 
 ## [Information Balance in the Dashboard](./Information%20Balance%20in%20the%20Dashboard.md)
+
+## [Dashboard Cognitive Architecture](./Dashboard%20Cognitive%20Architecture.md)
