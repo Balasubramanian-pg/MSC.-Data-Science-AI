@@ -88,3 +88,5 @@
 ## [6. Chart Selection and Design Thinking](./6.%20Chart%20Selection%20and%20Design%20Thinking.md)
 
 ## [6.1 Simple vs Ordered Bar Charts](./6.1%20Simple%20vs%20Ordered%20Bar%20Charts.md)
+
+## [6.2 When to Use Horizontal Bar Charts](./6.2%20When%20to%20Use%20Horizontal%20Bar%20Charts.md)
