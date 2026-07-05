@@ -313,3 +313,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Supported Formats](./Supported%20Formats.md)
 
 ## [Examples](./Examples.md)
+
+## [Why PDF and SVG Matter](./Why%20PDF%20and%20SVG%20Matter.md)
