@@ -63,3 +63,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [When Truncation Is Acceptable](./When%20Truncation%20Is%20Acceptable.md)
 
 ## [Comparing Three Versions of the Same Data](./Comparing%20Three%20Versions%20of%20the%20Same%20Data.md)
+
+## [The Reader’s Responsibility](./The%20Reader%E2%80%99s%20Responsibility.md)
