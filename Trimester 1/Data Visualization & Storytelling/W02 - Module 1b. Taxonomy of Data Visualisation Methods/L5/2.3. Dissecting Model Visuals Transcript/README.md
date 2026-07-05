@@ -10,3 +10,5 @@
 ## [2. What is Visual Dissection?](./2.%20What%20is%20Visual%20Dissection.md)
 
 ## [3. The Visualization Optimization Process](./3.%20The%20Visualization%20Optimization%20Process.md)
+
+## [4. Principles Behind Model Visuals](./4.%20Principles%20Behind%20Model%20Visuals.md)
