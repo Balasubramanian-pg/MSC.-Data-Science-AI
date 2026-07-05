@@ -193,3 +193,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [What Is a Confounding Variable?](./What%20Is%20a%20Confounding%20Variable.md)
 
 ## [Why Confounders Are Dangerous](./Why%20Confounders%20Are%20Dangerous.md)
+
+## [Best Practice](./Best%20Practice.md)
