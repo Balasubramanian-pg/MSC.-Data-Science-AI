@@ -15,3 +15,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [2. Google Colab](./2.%20Google%20Colab.md)
 
 ## [What Is Colab?](./What%20Is%20Colab.md)
+
+## [Advantages of Colab](./Advantages%20of%20Colab.md)
