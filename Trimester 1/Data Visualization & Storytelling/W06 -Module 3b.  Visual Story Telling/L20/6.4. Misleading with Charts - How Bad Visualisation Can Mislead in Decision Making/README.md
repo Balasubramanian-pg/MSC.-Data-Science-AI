@@ -51,3 +51,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Correct Use of Color vs Manipulative Structure](./Correct%20Use%20of%20Color%20vs%20Manipulative%20Structure.md)
 
 ## [2. Truncated Y-Axis](./2.%20Truncated%20Y-Axis.md)
+
+## [Example: Tax Rate Increase](./Example%20-%20Tax%20Rate%20Increase.md)
