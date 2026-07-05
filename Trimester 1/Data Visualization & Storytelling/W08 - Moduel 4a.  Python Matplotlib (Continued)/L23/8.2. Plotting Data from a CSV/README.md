@@ -43,3 +43,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Improved Bubble Plot](./Improved%20Bubble%20Plot.md)
 
 ## [Why `alpha` Matters](./Why%20%60alpha%60%20Matters.md)
+
+## [Random Data Generation](./Random%20Data%20Generation.md)
