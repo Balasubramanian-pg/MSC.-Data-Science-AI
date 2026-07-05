@@ -303,3 +303,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [`slategray`](./%60slategray%60.md)
 
 ## [Figure-Level Narrative](./Figure-Level%20Narrative.md)
+
+## [Visualization as Hierarchical Communication](./Visualization%20as%20Hierarchical%20Communication.md)
