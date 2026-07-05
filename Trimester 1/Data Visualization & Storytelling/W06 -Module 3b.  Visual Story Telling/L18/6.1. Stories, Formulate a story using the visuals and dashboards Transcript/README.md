@@ -141,3 +141,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Whitespace Is Not Empty Space](./Whitespace%20Is%20Not%20Empty%20Space.md)
 
 ## [Whitespace Reduces Cognitive Noise](./Whitespace%20Reduces%20Cognitive%20Noise.md)
+
+## [Overcrowded Slide](./Overcrowded%20Slide.md)
