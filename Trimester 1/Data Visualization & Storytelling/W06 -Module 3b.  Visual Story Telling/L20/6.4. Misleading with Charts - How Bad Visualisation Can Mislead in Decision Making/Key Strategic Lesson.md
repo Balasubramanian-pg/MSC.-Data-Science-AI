@@ -1,18 +1,35 @@
 # Key Strategic Lesson
 
-The strongest visualization practitioners constantly ask:
+The lecture repeatedly reinforces one foundational idea:
 
-1. Could this chart be misinterpreted?
+> A chart can be factually correct and still cognitively deceptive.
+
+This is why visualization literacy matters.
+
+Strong analysts must understand:
+
+- human perception
     
-2. Does visual perception match numerical reality?
+- cognitive bias
     
-3. Am I emphasizing truth or manipulating attention?
+- visual hierarchy
     
-4. Would an uninformed viewer reach the correct conclusion quickly?
+- scale interpretation
+    
+- ethical framing
     
 
-Because ultimately:
+Because once a chart enters:
 
-> the effectiveness of visualization is measured not by aesthetics, but by interpretive accuracy.
+- a boardroom
+    
+- a policy document
+    
+- a media narrative
+    
+
+the visualization itself often becomes:
+
+> the reality people remember.
 
 ===
