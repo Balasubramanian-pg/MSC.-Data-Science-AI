@@ -217,3 +217,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Simpson’s Paradox Happens](./Why%20Simpson%E2%80%99s%20Paradox%20Happens.md)
 
 ## [Business Example](./Business%20Example.md)
+
+## [Why This Matters in Dashboards](./Why%20This%20Matters%20in%20Dashboards.md)
