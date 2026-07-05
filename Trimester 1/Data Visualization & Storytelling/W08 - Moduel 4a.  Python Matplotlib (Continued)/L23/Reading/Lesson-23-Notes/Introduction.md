@@ -1,47 +1,36 @@
 # Introduction
 
-Modern data visualization systems rarely operate on static local files. In real-world analytics pipelines, data typically flows from:
+This section introduces one of the most important practical workflows in modern data visualization:
 
-- APIs
-    
-- cloud storage
-    
-- databases
-    
-- remote servers
-    
-- streaming systems
-    
-- web endpoints
-    
+> fetching real-world online datasets and visualizing time-series information.
 
-The lecture introduces one of the most important transitions in practical data science:
+The lecture demonstrates a complete mini pipeline:
 
-> moving from manually stored datasets toward web-connected data pipelines.
-
-This shift is foundational because nearly all modern analytical systems depend on remote data ingestion.
-
-Examples include:
-
-- financial market feeds
+1. fetch remote CSV data
     
-- weather APIs
+2. parse datetime information
     
-- social media analytics
+3. structure the dataset properly
     
-- IoT sensor streams
+4. configure visualization styles
     
-- business intelligence dashboards
-    
-- machine learning inference pipelines
+5. plot a time-series graph
     
 
-The lecture specifically focuses on:
+This is significantly more realistic than toy datasets manually typed into Python lists.
 
-- reading CSV data from URLs
+The example uses weather data from the Vega datasets repository.
+
+This matters because weather datasets exhibit several characteristics common in real-world analytics:
+
+- temporal structure
     
-- reading JSON data from URLs
+- seasonality
     
-- integrating Pandas with remote datasets
+- trends
     
-- preparing data for advanced Matplotlib visualization
+- variability
+    
+- cyclic behavior
+    
+- continuous numerical measurements
