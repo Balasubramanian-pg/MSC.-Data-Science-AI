@@ -81,3 +81,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Examples](./Examples.md)
 
 ## [Bar Chart](./Bar%20Chart.md)
+
+## [Pie Chart](./Pie%20Chart.md)
