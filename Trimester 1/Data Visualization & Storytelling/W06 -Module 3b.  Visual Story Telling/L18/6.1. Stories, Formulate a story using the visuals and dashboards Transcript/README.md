@@ -291,3 +291,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Hidden Cost of Clutter](./The%20Hidden%20Cost%20of%20Clutter.md)
 
 ## [Cognitive Competition Model](./Cognitive%20Competition%20Model.md)
+
+## [Why Important Messages Get Lost](./Why%20Important%20Messages%20Get%20Lost.md)
