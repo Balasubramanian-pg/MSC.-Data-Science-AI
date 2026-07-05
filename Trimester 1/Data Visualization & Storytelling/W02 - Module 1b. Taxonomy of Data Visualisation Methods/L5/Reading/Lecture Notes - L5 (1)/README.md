@@ -12,3 +12,5 @@
 ## [3. Visualization as Storytelling](./3.%20Visualization%20as%20Storytelling.md)
 
 ## [4. The Audience-Centric Storytelling Framework](./4.%20The%20Audience-Centric%20Storytelling%20Framework.md)
+
+## [5. Selecting the Appropriate Visual](./5.%20Selecting%20the%20Appropriate%20Visual.md)
