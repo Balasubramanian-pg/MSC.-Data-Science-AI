@@ -279,3 +279,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [4. Titles Matter](./4.%20Titles%20Matter.md)
 
 ## [5. Communication Is Part of Engineering](./5.%20Communication%20Is%20Part%20of%20Engineering.md)
+
+## [Fixing the NASA Columbia Presentation Failure](./Fixing%20the%20NASA%20Columbia%20Presentation%20Failure.md)
