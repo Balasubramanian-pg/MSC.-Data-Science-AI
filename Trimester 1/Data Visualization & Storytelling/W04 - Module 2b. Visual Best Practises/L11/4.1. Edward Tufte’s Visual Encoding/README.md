@@ -79,3 +79,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Recognizing Visual Objects](./Recognizing%20Visual%20Objects.md)
 
 ## [Examples](./Examples.md)
+
+## [Bar Chart](./Bar%20Chart.md)
