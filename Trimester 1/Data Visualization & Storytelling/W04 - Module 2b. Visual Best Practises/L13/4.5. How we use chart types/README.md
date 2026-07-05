@@ -331,3 +331,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Statistical Insight](./Important%20Statistical%20Insight.md)
 
 ## [Joint Plot Cognitive Structure](./Joint%20Plot%20Cognitive%20Structure.md)
+
+## [Hidden Insight in Joint Plots](./Hidden%20Insight%20in%20Joint%20Plots.md)
