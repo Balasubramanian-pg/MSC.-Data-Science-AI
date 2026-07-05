@@ -13,3 +13,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [2. Prerequisites & Setup](./2.%20Prerequisites%20%26%20Setup.md)
 
 ## [3. Colors in Bokeh](./3.%20Colors%20in%20Bokeh.md)
+
+## [4. Code Structure & Execution](./4.%20Code%20Structure%20%26%20Execution.md)
