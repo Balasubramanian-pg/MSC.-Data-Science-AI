@@ -281,3 +281,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Grids Matter in Scientific Visualization](./Why%20Grids%20Matter%20in%20Scientific%20Visualization.md)
 
 ## [Internal Effect](./Internal%20Effect.md)
+
+## [3. Adding a Legend](./3.%20Adding%20a%20Legend.md)
