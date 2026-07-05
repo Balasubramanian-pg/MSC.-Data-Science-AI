@@ -75,3 +75,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [9. The Importance of Exploration](./9.%20The%20Importance%20of%20Exploration.md)
 
 ## [Strong Analysts Continuously Ask:](./Strong%20Analysts%20Continuously%20Ask%20-.md)
+
+## [10. The Deeper Educational Goal](./10.%20The%20Deeper%20Educational%20Goal.md)
