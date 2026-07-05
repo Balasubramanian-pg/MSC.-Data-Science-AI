@@ -82,3 +82,5 @@ The transcript introduces this challenge directly.
 ## [Positioning in Visualization Design](./Positioning%20in%20Visualization%20Design.md)
 
 ## [What Is Positioning?](./What%20Is%20Positioning.md)
+
+## [Positioning Is Attention Engineering](./Positioning%20Is%20Attention%20Engineering.md)
