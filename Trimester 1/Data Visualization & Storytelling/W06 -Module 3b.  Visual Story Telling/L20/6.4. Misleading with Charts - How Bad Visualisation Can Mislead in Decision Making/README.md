@@ -133,3 +133,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Dual Axes Are Dangerous](./Why%20Dual%20Axes%20Are%20Dangerous.md)
 
 ## [Example Problem](./Example%20Problem.md)
+
+## [The Deeper Problem](./The%20Deeper%20Problem.md)
