@@ -145,3 +145,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Time-Series Visualization Matters](./Why%20Time-Series%20Visualization%20Matters.md)
 
 ## [Complete Example](./Complete%20Example.md)
+
+## [Read dataset](./Read%20dataset.md)
