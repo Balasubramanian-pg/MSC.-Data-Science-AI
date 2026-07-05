@@ -29,3 +29,5 @@ This section explains how to create multiple related plots from a Pandas DataFra
 ## [Why Use `df.weather.index`?](./Why%20Use%20%60df.weather.index%60.md)
 
 ## [Full Example](./Full%20Example.md)
+
+## [Maximum temperature](./Maximum%20temperature.md)
