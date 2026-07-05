@@ -53,3 +53,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Core Strategic Insight](./The%20Core%20Strategic%20Insight.md)
 
 ## [The 1854 Cholera Map: One of the First Great Data Stories](./The%201854%20Cholera%20Map%20-%20One%20of%20the%20First%20Great%20Data%20Stories.md)
+
+## [The Visualization](./The%20Visualization.md)
