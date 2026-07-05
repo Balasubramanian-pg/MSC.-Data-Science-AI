@@ -87,3 +87,5 @@ Observed Data → Fit Function → Predict Future
 ## [Hidden Mathematical Principle](./Hidden%20Mathematical%20Principle.md)
 
 ## [Real ML Connection](./Real%20ML%20Connection.md)
+
+## [Common Beginner Mistakes](./Common%20Beginner%20Mistakes.md)
