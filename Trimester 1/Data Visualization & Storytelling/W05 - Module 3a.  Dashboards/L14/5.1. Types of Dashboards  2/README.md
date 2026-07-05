@@ -171,3 +171,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Meaning](./Meaning.md)
 
 ## [In Visualization Terms](./In%20Visualization%20Terms.md)
+
+## [Fundamental Dashboard Question](./Fundamental%20Dashboard%20Question.md)
