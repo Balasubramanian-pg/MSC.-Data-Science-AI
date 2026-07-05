@@ -1,9 +1,9 @@
 # Final Mental Model
 
-Think of sentiment visualization as:
+Think of conversation visualization as:
 
 ```text
-mapping emotional geometry hidden inside language
+mapping invisible social and organizational structures hidden inside communication flows
 ```
 
-into perceptually interpretable structures.
+through perceptual network representations.
