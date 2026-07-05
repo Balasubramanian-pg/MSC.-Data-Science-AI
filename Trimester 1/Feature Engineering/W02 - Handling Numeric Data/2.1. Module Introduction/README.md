@@ -21,3 +21,5 @@ week: W02 - Handling Numeric Data
 ## [2.1.7. Example of Feature Standardization](./2.1.7.%20Example%20of%20Feature%20Standardization.md)
 
 ## [2.1.8. Factors Affecting Numeric Preprocessing](./2.1.8.%20Factors%20Affecting%20Numeric%20Preprocessing.md)
+
+## [2.1.9. Common Misinterpretations](./2.1.9.%20Common%20Misinterpretations.md)
