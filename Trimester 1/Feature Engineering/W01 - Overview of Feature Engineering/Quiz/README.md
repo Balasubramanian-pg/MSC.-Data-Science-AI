@@ -13,3 +13,5 @@ week: W01 - Overview of Feature Engineering
 ## [Answer](./Answer.md)
 
 ## [Question 2](./Question%202.md)
+
+## [Question 3](./Question%203.md)
