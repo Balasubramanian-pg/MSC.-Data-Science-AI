@@ -1,6 +1,6 @@
 # Example
 
-|Original Word|Stem|
-|---|---|
-|enjoyed|enjoy|
-|enjoyable|enjoy|
+|Word|Stem|Lemma|
+|---|---|---|
+|running|runn|run|
+|studies|studi|study|
