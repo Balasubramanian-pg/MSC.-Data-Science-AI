@@ -179,3 +179,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Audience-Centric Dashboard Design](./Audience-Centric%20Dashboard%20Design.md)
 
 ## [Why Different Dashboard Types Exist](./Why%20Different%20Dashboard%20Types%20Exist.md)
+
+## [Executive Dashboards](./Executive%20Dashboards.md)
