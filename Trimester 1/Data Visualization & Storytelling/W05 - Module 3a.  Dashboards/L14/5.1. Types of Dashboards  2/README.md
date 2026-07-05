@@ -43,3 +43,5 @@ week: W05 - Module 3a.  Dashboards
 ## [1. Small](./1.%20Small.md)
 
 ## [Important Insight](./Important%20Insight.md)
+
+## [2. Concise](./2.%20Concise.md)
