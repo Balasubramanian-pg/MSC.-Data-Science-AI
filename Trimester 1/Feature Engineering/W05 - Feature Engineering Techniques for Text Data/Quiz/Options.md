@@ -1,6 +1,6 @@
 # Options
 
-* By assigning grammatical roles to words and helping identify informative features
-* By increasing the vocabulary size in the dataset
-* By removing all stopwords from the dataset
-* By translating text into another language
+* It emphasises words that are common across documents.
+* It down-weights words that occur in many documents.
+* It down-weights rare words in the corpus.
+* It increases the frequency of common words.
