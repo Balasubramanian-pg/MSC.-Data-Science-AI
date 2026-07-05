@@ -47,3 +47,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [1. Natural Ordering Matters](./1.%20Natural%20Ordering%20Matters.md)
 
 ## [Why the Inverted Axis Was Misleading](./Why%20the%20Inverted%20Axis%20Was%20Misleading.md)
+
+## [Correct Use of Color vs Manipulative Structure](./Correct%20Use%20of%20Color%20vs%20Manipulative%20Structure.md)
