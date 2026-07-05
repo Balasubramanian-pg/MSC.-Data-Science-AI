@@ -43,3 +43,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Semantic Geometry](./Semantic%20Geometry.md)
 
 ## [Example](./Example.md)
+
+## [The Famous King-Man-Woman-Queen Example](./The%20Famous%20King-Man-Woman-Queen%20Example.md)
