@@ -21,3 +21,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Important Insight](./Important%20Insight.md)
 
 ## [2. Why Matplotlib Is Foundational](./2.%20Why%20Matplotlib%20Is%20Foundational.md)
+
+## [Why Matplotlib Became Dominant](./Why%20Matplotlib%20Became%20Dominant.md)
