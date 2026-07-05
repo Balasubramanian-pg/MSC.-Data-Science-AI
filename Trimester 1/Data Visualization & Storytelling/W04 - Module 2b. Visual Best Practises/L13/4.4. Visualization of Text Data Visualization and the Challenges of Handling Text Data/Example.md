@@ -1,13 +1,13 @@
 # Example
 
+Before:
+
 ```text
-"The company lost 120 million dollars."
+"Hello!!!"
 ```
 
-Possible strategies:
+After:
 
-|Strategy|Purpose|
-|---|---|
-|Remove numbers|Simplify vocabulary|
-|Convert to text|Preserve meaning|
-|Replace with placeholder|Generalize patterns|
+```text
+hello
+```
