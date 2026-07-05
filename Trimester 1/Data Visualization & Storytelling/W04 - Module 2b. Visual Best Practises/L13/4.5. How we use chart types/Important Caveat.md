@@ -1,27 +1,18 @@
 # Important Caveat
 
-Frequency alone is insufficient for true semantic understanding.
+Longer text does NOT automatically imply:
 
-Common words may dominate due to:
-
-- grammar
+- better quality
     
-- style
+- deeper meaning
     
-- repetition
-    
-- structural language artifacts
+- greater importance
     
 
-This is why NLP systems often use:
+However, length can reveal:
 
-- stopword removal
+- narrative scale
     
-- TF-IDF weighting
+- descriptive intensity
     
-- lemmatization
-    
-- stemming
-    
-
-before visualization.
+- storytelling complexity
