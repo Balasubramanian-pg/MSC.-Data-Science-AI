@@ -1,18 +1,13 @@
 # Example from Lecture
 
-The dataset contains:
-
-- state names
-    
-- polling stations
-    
-- total votes
-    
-- turnout ratio
-    
-
-The analyst identifies:
+The data is sorted:
 
 ```text
-Primary variable of interest = Voter Turnout Ratio
+Highest voter turnout → Lowest voter turnout
 ```
+
+Result:
+
+- Lakshadweep at top
+    
+- Bihar at bottom
