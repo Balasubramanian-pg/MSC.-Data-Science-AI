@@ -113,3 +113,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Importance of Normalization](./Importance%20of%20Normalization.md)
 
 ## [Drill-Down in Business Intelligence](./Drill-Down%20in%20Business%20Intelligence.md)
+
+## [8. Zooming Out](./8.%20Zooming%20Out.md)
