@@ -59,3 +59,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [text_clf_pipeline.fit(X_train_strings, y_train)](./text_clf_pipeline.fit%28X_train_strings%2C%20y_train%29.md)
 
 ## [Predict directly from raw strings](./Predict%20directly%20from%20raw%20strings.md)
+
+## [predictions = text_clf_pipeline.predict(X_test_strings)](./predictions%20%3D%20text_clf_pipeline.predict%28X_test_strings%29.md)
