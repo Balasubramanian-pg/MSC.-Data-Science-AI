@@ -1,11 +1,11 @@
 # Example
 
 ```python
-ax.plot(x, y, color='red', linestyle='--')
+fig, ax = plt.subplots()
 ```
 
-This changes:
+creates:
 
-- color
+- one figure
     
-- line style
+- one plotting area
