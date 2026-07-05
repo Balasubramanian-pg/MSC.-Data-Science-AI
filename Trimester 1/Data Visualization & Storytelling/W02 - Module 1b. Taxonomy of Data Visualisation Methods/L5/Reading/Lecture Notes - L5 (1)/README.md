@@ -8,3 +8,5 @@
 ## [1. Introduction](./1.%20Introduction.md)
 
 ## [2. What is Intentional Design?](./2.%20What%20is%20Intentional%20Design.md)
+
+## [3. Visualization as Storytelling](./3.%20Visualization%20as%20Storytelling.md)
