@@ -78,3 +78,5 @@
 ## [4.7 Stakeholder Interaction and Iteration](./4.7%20Stakeholder%20Interaction%20and%20Iteration.md)
 
 ## [5. Gestalt Principles in Visualization](./5.%20Gestalt%20Principles%20in%20Visualization.md)
+
+## [5.1 Similarity Principle](./5.1%20Similarity%20Principle.md)
