@@ -21,3 +21,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Note: Because there are multiple subjects ('s1', 's2', etc.) for each](./Note%20-%20Because%20there%20are%20multiple%20subjects%20%28%27s1%27%2C%20%27s2%27%2C%20etc.%29%20for%20each.md)
 
 ## [timepoint, Seaborn automatically aggregates them. It plots the MEAN as a](./timepoint%2C%20Seaborn%20automatically%20aggregates%20them.%20It%20plots%20the%20MEAN%20as%20a.md)
+
+## [solid line and a 95% Confidence Interval (CI) as a shaded band around it.](./solid%20line%20and%20a%2095%25%20Confidence%20Interval%20%28CI%29%20as%20a%20shaded%20band%20around%20it.md)
