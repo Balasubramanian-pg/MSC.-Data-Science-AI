@@ -121,3 +121,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Visualization Design Decision Process](./Visualization%20Design%20Decision%20Process.md)
 
 ## [Tufte’s Core Philosophy](./Tufte%E2%80%99s%20Core%20Philosophy.md)
+
+## [Advanced Insight](./Advanced%20Insight.md)
