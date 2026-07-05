@@ -337,3 +337,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Why?](./Why.md)
 
 ## [Internal Structure](./Internal%20Structure.md)
+
+## [Accessing Glyph Properties](./Accessing%20Glyph%20Properties.md)
