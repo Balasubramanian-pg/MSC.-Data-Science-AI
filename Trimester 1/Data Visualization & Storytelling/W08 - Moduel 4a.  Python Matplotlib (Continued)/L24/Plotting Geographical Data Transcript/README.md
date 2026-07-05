@@ -117,3 +117,5 @@ This is foundational to:
 ## [ML Connections](./ML%20Connections.md)
 
 ## [Common Beginner Mistakes](./Common%20Beginner%20Mistakes.md)
+
+## [1. Missing Geometry](./1.%20Missing%20Geometry.md)
