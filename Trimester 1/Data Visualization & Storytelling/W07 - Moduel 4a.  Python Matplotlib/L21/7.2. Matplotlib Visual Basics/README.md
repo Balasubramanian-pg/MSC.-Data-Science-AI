@@ -57,3 +57,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Collaboration Matters](./Why%20Collaboration%20Matters.md)
 
 ## [8. AI-Assisted Coding](./8.%20AI-Assisted%20Coding.md)
+
+## [Important Engineering Insight](./Important%20Engineering%20Insight.md)
