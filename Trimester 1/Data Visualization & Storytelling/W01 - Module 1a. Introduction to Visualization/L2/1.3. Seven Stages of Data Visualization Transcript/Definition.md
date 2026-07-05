@@ -1,11 +1,7 @@
 # Definition
 
-**Filtering** means partitioning the data based on important variables.
+**Data Mining** is the process of discovering patterns and relationships in data.
 
-The lecture explains filtering using:
+The lecture describes mining as:
 
-- gender
-    
-- categories
-    
-- turnout ratio
+> uncovering hidden patterns.
