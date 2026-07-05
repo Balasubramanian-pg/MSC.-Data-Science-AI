@@ -239,3 +239,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Analysts Must Be Careful](./Why%20Analysts%20Must%20Be%20Careful.md)
 
 ## [Final Insight](./Final%20Insight.md)
+
+## [Drill-Down Order and Narrative Framing](./Drill-Down%20Order%20and%20Narrative%20Framing.md)
