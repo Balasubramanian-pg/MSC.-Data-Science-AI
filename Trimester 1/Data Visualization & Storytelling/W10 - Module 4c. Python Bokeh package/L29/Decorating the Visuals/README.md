@@ -57,3 +57,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [All THREE formats work in Bokeh - use whichever is convenient](./All%20THREE%20formats%20work%20in%20Bokeh%20-%20use%20whichever%20is%20convenient.md)
 
 ## [Option 1: Named color (easiest for common colors)](./Option%201%20-%20Named%20color%20%28easiest%20for%20common%20colors%29.md)
+
+## [Option 2: Hexadecimal (good for exact web colors)](./Option%202%20-%20Hexadecimal%20%28good%20for%20exact%20web%20colors%29.md)
