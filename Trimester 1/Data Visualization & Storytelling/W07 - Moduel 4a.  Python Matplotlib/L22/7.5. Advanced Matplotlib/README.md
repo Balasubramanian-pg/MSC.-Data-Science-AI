@@ -69,3 +69,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Machine Learning Connection](./Machine%20Learning%20Connection.md)
 
 ## [Pie Charts](./Pie%20Charts.md)
+
+## [Core Use Case](./Core%20Use%20Case.md)
