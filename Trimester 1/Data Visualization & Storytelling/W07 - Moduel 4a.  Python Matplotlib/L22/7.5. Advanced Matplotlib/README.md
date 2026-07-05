@@ -67,3 +67,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Statistical Interpretation](./Statistical%20Interpretation.md)
 
 ## [Machine Learning Connection](./Machine%20Learning%20Connection.md)
+
+## [Pie Charts](./Pie%20Charts.md)
