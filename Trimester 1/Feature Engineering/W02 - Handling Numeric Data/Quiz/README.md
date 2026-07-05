@@ -5,3 +5,5 @@ week: W02 - Handling Numeric Data
 ---
 
 ## [Week 2 Quiz Solutions](./Week%202%20Quiz%20Solutions.md)
+
+## [Question 1](./Question%201.md)
