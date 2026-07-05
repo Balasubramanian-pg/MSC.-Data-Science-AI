@@ -283,3 +283,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [6. Learning Through Examples](./6.%20Learning%20Through%20Examples.md)
 
 ## [Important Industry Reality](./Important%20Industry%20Reality.md)
+
+## [Approximate Pareto Principle](./Approximate%20Pareto%20Principle.md)
