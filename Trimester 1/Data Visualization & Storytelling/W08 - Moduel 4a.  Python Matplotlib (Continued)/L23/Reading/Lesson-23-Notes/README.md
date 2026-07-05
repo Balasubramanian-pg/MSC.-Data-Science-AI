@@ -41,3 +41,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why JSON Exists](./Why%20JSON%20Exists.md)
 
 ## [JSON Structure](./JSON%20Structure.md)
+
+## [Reading JSON with Pandas](./Reading%20JSON%20with%20Pandas.md)
