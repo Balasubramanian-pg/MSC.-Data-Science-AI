@@ -241,3 +241,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Advanced Layout Variations](./Advanced%20Layout%20Variations.md)
 
 ## [Horizontal Layout](./Horizontal%20Layout.md)
+
+## [Grid Layout](./Grid%20Layout.md)
