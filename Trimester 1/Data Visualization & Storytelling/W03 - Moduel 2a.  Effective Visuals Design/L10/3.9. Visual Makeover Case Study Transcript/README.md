@@ -76,3 +76,5 @@ The transcript introduces this challenge directly.
 ## [Better Approach](./Better%20Approach.md)
 
 ## [Important Visualization Principle](./Important%20Visualization%20Principle.md)
+
+## [Stakeholder Communication](./Stakeholder%20Communication.md)
