@@ -61,3 +61,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Ordered Categories](./Ordered%20Categories.md)
 
 ## [Example](./Example.md)
+
+## [Important Analytical Mistake](./Important%20Analytical%20Mistake.md)
