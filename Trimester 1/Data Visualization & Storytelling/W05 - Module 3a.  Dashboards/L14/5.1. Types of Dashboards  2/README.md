@@ -189,3 +189,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Characteristics](./Characteristics.md)
 
 ## [Executive Cognitive Style](./Executive%20Cognitive%20Style.md)
+
+## [Design Style](./Design%20Style.md)
