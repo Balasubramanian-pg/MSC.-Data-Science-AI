@@ -111,3 +111,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Advanced Text Visualization](./Advanced%20Text%20Visualization.md)
 
 ## [Character Relationships, Semantic Structures, and Sentiment Analysis](./Character%20Relationships%2C%20Semantic%20Structures%2C%20and%20Sentiment%20Analysis.md)
+
+## [The Evolution of Text Visualization](./The%20Evolution%20of%20Text%20Visualization.md)
