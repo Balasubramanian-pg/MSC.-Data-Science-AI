@@ -1,19 +1,29 @@
 # Final Takeaways
 
-This section establishes several foundational truths:
+This section establishes several foundational ideas:
 
-- storytelling is central to human cognition,
+- visual narratives shape long-term perception,
     
-- humans retain narratives better than raw facts,
+- repeated visual encoding creates cultural associations,
     
-- visuals become more powerful when embedded inside stories,
+- presentation design is fundamentally attention management,
     
-- stories improve persuasion, retention, and action,
+- simplicity and whitespace improve cognition,
     
-- and data storytelling combines visualization with meaning construction.
+- storytelling requires emotional authenticity,
     
+- and effective communication combines:
+    
+    - visuals,
+        
+    - narrative,
+        
+    - emotion,
+        
+    - and structure.
+        
 
 Most importantly:
 
-> Data alone rarely changes behavior.  
-> Stories built around data often do.
+> Data visualization becomes powerful only when it successfully guides human interpretation and meaning formation.
+>
