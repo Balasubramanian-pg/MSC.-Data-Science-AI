@@ -181,3 +181,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Rolling Averages](./Rolling%20Averages.md)
 
 ## [Why Moving Averages Matter](./Why%20Moving%20Averages%20Matter.md)
+
+## [Real-World Extensions](./Real-World%20Extensions.md)
