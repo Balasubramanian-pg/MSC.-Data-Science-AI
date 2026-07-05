@@ -161,3 +161,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [8. Trend Analysis](./8.%20Trend%20Analysis.md)
 
 ## [Line Charts](./Line%20Charts.md)
+
+## [Trend Detection Model](./Trend%20Detection%20Model.md)
