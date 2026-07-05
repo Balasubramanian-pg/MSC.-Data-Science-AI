@@ -117,3 +117,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Color Is Weak](./Why%20Color%20Is%20Weak.md)
 
 ## [Color Encoding Failure](./Color%20Encoding%20Failure.md)
+
+## [Important Principle](./Important%20Principle.md)
