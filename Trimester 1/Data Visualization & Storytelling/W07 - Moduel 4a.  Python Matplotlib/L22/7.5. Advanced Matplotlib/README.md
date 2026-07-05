@@ -23,3 +23,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Generate random data](./Generate%20random%20data.md)
 
 ## [Plot histogram](./Plot%20histogram.md)
+
+## [Why `np.random.seed()` Matters](./Why%20%60np.random.seed%28%29%60%20Matters.md)
