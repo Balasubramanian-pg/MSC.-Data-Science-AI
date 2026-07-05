@@ -315,3 +315,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Examples](./Examples.md)
 
 ## [Why PDF and SVG Matter](./Why%20PDF%20and%20SVG%20Matter.md)
+
+## [Why `savefig()` Is Better Than Manual Saving](./Why%20%60savefig%28%29%60%20Is%20Better%20Than%20Manual%20Saving.md)
