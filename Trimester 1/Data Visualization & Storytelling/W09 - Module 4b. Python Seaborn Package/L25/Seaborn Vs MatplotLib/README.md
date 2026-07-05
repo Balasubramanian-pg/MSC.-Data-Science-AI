@@ -125,3 +125,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [0. SETUP: Generating Representative Course Data](./0.%20SETUP%20-%20Generating%20Representative%20Course%20Data.md)
 
 ## [1. THE MATPLOTLIB WAY: Manual Statistical Pipeline Construction](./1.%20THE%20MATPLOTLIB%20WAY%20-%20Manual%20Statistical%20Pipeline%20Construction.md)
+
+## [Reset backend styling configuration to plain Matplotlib state](./Reset%20backend%20styling%20configuration%20to%20plain%20Matplotlib%20state.md)
