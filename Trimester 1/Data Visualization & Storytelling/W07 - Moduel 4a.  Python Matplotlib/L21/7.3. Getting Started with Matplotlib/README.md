@@ -113,3 +113,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Conceptual Structure](./Conceptual%20Structure.md)
 
 ## [Why This Design Is Powerful](./Why%20This%20Design%20Is%20Powerful.md)
+
+## [4. Plotting the Data](./4.%20Plotting%20the%20Data.md)
