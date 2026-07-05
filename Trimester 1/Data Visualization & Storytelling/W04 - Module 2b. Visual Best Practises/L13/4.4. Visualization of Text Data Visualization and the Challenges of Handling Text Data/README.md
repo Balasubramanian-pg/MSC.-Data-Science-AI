@@ -17,3 +17,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Structured Data Is Easier](./Why%20Structured%20Data%20Is%20Easier.md)
 
 ## [Structured Data Pipeline](./Structured%20Data%20Pipeline.md)
+
+## [Unstructured Data](./Unstructured%20Data.md)
