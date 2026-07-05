@@ -68,3 +68,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [Examples from Lecture](./Examples%20from%20Lecture.md)
 
 ## [5.2 Pie Charts](./5.2%20Pie%20Charts.md)
+
+## [Example Insight](./Example%20Insight.md)
