@@ -99,3 +99,5 @@ Observed Data → Fit Function → Predict Future
 ## [Computational Insight](./Computational%20Insight.md)
 
 ## [Better Real-World Alternatives](./Better%20Real-World%20Alternatives.md)
+
+## [Most Important Conceptual Takeaway](./Most%20Important%20Conceptual%20Takeaway.md)
