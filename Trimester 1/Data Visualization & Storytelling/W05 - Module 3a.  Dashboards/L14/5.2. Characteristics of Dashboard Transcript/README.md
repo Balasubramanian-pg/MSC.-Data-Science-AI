@@ -23,3 +23,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Dashboard Audience Hierarchy](./Dashboard%20Audience%20Hierarchy.md)
 
 ## [1. Executive Dashboards](./1.%20Executive%20Dashboards.md)
+
+## [Characteristics](./Characteristics.md)
