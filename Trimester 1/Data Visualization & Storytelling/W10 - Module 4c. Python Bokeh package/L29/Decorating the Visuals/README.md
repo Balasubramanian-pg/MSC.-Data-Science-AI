@@ -413,3 +413,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Axis styling](./Axis%20styling.md)
 
 ## [Tick styling](./Tick%20styling.md)
+
+## [Grid styling](./Grid%20styling.md)
