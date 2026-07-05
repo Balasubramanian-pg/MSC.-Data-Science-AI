@@ -130,3 +130,5 @@ Bad visualizations use color excessively.
 ## [Poor Dashboard](./Poor%20Dashboard.md)
 
 ## [Good Dashboard](./Good%20Dashboard.md)
+
+## [Advanced Insight: Color Creates Visual Weight](./Advanced%20Insight%20-%20Color%20Creates%20Visual%20Weight.md)
