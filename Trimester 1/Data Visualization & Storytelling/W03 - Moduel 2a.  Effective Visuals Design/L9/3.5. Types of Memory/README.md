@@ -75,3 +75,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Visualization Depends on Learned Conventions](./Visualization%20Depends%20on%20Learned%20Conventions.md)
 
 ## [Mental Models](./Mental%20Models.md)
+
+## [Pattern Recognition](./Pattern%20Recognition.md)
