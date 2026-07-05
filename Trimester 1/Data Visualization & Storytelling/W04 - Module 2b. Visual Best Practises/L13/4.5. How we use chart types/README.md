@@ -165,3 +165,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Limitation of Word Trees](./Important%20Limitation%20of%20Word%20Trees.md)
 
 ## [Semantic Scores and Sentiment Analysis](./Semantic%20Scores%20and%20Sentiment%20Analysis.md)
+
+## [Emotional Structure in Text](./Emotional%20Structure%20in%20Text.md)
