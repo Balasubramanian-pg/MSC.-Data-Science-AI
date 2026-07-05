@@ -123,3 +123,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Psychological Power of Visuals](./Psychological%20Power%20of%20Visuals.md)
 
 ## [Advanced Insight](./Advanced%20Insight.md)
+
+## [3. Frameworks for Effective Presentations](./3.%20Frameworks%20for%20Effective%20Presentations.md)
