@@ -17,3 +17,5 @@
 ## [35.2.8. Hierarchical Structures and Drill-Down Analytics](./35.2.8.%20Hierarchical%20Structures%20and%20Drill-Down%20Analytics.md)
 
 ## [35.2.9. Geographical Mapping and Spatial Aggregations](./35.2.9.%20Geographical%20Mapping%20and%20Spatial%20Aggregations.md)
+
+## [35.2.10. Factors Affecting Dashboard Clarity and Statistical Precision](./35.2.10.%20Factors%20Affecting%20Dashboard%20Clarity%20and%20Statistical%20Precision.md)
