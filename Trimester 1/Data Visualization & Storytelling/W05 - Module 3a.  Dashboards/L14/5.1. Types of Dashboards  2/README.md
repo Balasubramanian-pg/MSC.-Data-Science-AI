@@ -225,3 +225,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Central Principle](./Central%20Principle.md)
 
 ## [Three Core Dashboard Types](./Three%20Core%20Dashboard%20Types.md)
+
+## [What Determines Dashboard Type?](./What%20Determines%20Dashboard%20Type.md)
