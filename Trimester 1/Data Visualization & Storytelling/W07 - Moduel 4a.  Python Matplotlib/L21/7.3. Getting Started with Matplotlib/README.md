@@ -189,3 +189,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [`label='cosine'`](./%60label%3D%27cosine%27%60.md)
 
 ## [Why Styling Matters](./Why%20Styling%20Matters.md)
+
+## [Common Line Styles](./Common%20Line%20Styles.md)
