@@ -13,3 +13,5 @@
 ## [2. Understanding Data Types Before Visualization](./2.%20Understanding%20Data%20Types%20Before%20Visualization.md)
 
 ## [2.1 Categorical Variables](./2.1%20Categorical%20Variables.md)
+
+## [2.2 Ordinal Variables](./2.2%20Ordinal%20Variables.md)
