@@ -1,5 +1,18 @@
 # Example
 
-One red KPI among gray cards immediately attracts attention.
+Bad Design:
 
-This is intentional perceptual engineering.
+- India selected,
+    
+- but India bar looks identical to others.
+    
+
+Good Design:
+
+- India highlighted in accent color,
+    
+- others muted.
+    
+
+This immediately reinforces:  
+user context.
