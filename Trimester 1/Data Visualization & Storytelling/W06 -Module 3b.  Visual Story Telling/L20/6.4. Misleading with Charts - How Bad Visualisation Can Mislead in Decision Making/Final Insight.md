@@ -1,22 +1,20 @@
 # Final Insight
 
-The deeper lesson behind Simpson’s Paradox is:
+The strongest analysts constantly ask:
 
-> Summary metrics can destroy truth.
-
-Good analysts therefore constantly ask:
-
-1. What does the aggregate hide?
+1. Does my drill-down order bias interpretation?
     
-2. Are subgroup behaviors different?
+2. Am I emphasizing one narrative over others?
     
-3. Does drill-down reverse conclusions?
+3. Could another grouping tell a different story?
     
-4. Is grouping influencing interpretation?
+4. Am I enabling exploration or forcing conclusions?
     
-5. Could another segmentation tell the opposite story?
+5. Am I presenting the whole picture or a selective slice?
     
 
-Because in complex systems:
+Because in practice:
 
-> the most dangerous insights are often the ones that appear obvious at the top level.
+> the most persuasive dashboard is not always the most truthful one.
+
+===
