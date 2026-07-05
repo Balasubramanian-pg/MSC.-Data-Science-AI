@@ -121,3 +121,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [1. Case Normalization](./1.%20Case%20Normalization.md)
 
 ## [Standardizing Capitalization](./Standardizing%20Capitalization.md)
+
+## [Why This Matters](./Why%20This%20Matters.md)
