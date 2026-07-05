@@ -1,11 +1,9 @@
 # Important Insight
 
-Topic models do not assign:
+Topic count is usually:
 
 ```text
-one document = one topic
+a modeling choice
 ```
 
-Instead:
-
-documents contain mixtures of themes.
+not an objectively fixed truth.
