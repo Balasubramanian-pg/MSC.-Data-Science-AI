@@ -19,3 +19,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Visualization Pipeline](./Visualization%20Pipeline.md)
 
 ## [Good Visualization Design Must Optimize](./Good%20Visualization%20Design%20Must%20Optimize.md)
+
+## [Core Principle](./Core%20Principle.md)
