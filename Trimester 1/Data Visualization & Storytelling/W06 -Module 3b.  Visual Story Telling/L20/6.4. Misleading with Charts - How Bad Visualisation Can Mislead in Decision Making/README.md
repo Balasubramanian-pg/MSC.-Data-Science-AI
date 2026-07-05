@@ -281,3 +281,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Hidden Power of Dashboard Architecture](./The%20Hidden%20Power%20of%20Dashboard%20Architecture.md)
 
 ## [Cherry Picking](./Cherry%20Picking.md)
+
+## [Why Cherry Picking Is Dangerous](./Why%20Cherry%20Picking%20Is%20Dangerous.md)
