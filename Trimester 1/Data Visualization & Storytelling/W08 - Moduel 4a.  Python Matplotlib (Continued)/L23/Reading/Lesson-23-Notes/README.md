@@ -13,3 +13,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Data Formats Matter](./Why%20Data%20Formats%20Matter.md)
 
 ## [CSV Files](./CSV%20Files.md)
+
+## [Conceptual Structure](./Conceptual%20Structure.md)
