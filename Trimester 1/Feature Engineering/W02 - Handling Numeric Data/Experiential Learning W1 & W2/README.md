@@ -122,3 +122,5 @@ import numpy as np
 ## [Combine into one preprocessor](./Combine%20into%20one%20preprocessor.md)
 
 ## [Create a custom transformer for Log transformation](./Create%20a%20custom%20transformer%20for%20Log%20transformation.md)
+
+## [You can add this into your numeric pipeline:](./You%20can%20add%20this%20into%20your%20numeric%20pipeline%20-.md)
