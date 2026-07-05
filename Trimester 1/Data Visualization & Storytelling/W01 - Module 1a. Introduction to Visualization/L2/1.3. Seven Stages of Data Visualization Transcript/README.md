@@ -38,3 +38,5 @@
 ## [Specific Numbers](./Specific%20Numbers.md)
 
 ## [Use of Color During Filtering](./Use%20of%20Color%20During%20Filtering.md)
+
+## [3.4 Stage 4: Mining Data](./3.4%20Stage%204%20-%20Mining%20Data.md)
