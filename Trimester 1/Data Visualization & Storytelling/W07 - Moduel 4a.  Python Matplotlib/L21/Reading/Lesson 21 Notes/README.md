@@ -33,3 +33,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [B. High Customizability](./B.%20High%20Customizability.md)
 
 ## [Customizable Components](./Customizable%20Components.md)
+
+## [Example](./Example.md)
