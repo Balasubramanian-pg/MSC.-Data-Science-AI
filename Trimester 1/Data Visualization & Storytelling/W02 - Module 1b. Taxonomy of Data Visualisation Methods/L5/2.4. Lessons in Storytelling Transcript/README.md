@@ -22,3 +22,5 @@
 ## [8. Matching Visuals to Communication Intent](./8.%20Matching%20Visuals%20to%20Communication%20Intent.md)
 
 ## [9. Storytelling Through Visual Design](./9.%20Storytelling%20Through%20Visual%20Design.md)
+
+## [10. Visual Hierarchy](./10.%20Visual%20Hierarchy.md)
