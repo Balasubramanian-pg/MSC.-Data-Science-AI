@@ -45,3 +45,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [5. The Scale of Visualization Libraries](./5.%20The%20Scale%20of%20Visualization%20Libraries.md)
 
 ## [Important Practical Insight](./Important%20Practical%20Insight.md)
+
+## [The 80/20 Reality](./The%208020%20Reality.md)
