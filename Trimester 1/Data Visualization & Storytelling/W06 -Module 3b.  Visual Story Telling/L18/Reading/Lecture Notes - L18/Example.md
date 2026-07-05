@@ -1,12 +1,9 @@
 # Example
 
-Abstract:
+Weak:
 
-> “Operational inefficiency increased.”
+> “Flooding increased.”
 
-Concrete:
+Strong:
 
-> “Warehouse workers walked an extra 14 miles daily due to poor inventory layout.”
-
-Concrete information is:  
-visually imaginable.
+> “Thousands lost homes after the river exceeded historical flood levels.”
