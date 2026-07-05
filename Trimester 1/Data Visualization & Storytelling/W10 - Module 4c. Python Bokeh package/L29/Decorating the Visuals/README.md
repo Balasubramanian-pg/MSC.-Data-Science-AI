@@ -53,3 +53,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [9. Next Steps (Preview)](./9.%20Next%20Steps%20%28Preview%29.md)
 
 ## [10. Reference: Color Format Quick Guide](./10.%20Reference%20-%20Color%20Format%20Quick%20Guide.md)
+
+## [All THREE formats work in Bokeh - use whichever is convenient](./All%20THREE%20formats%20work%20in%20Bokeh%20-%20use%20whichever%20is%20convenient.md)
