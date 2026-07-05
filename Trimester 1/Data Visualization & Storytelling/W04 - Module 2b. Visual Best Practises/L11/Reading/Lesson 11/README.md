@@ -53,3 +53,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Appropriate Operations](./Appropriate%20Operations.md)
 
 ## [Appropriate Visualizations](./Appropriate%20Visualizations.md)
+
+## [Poor Choices](./Poor%20Choices.md)
