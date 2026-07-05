@@ -49,3 +49,5 @@ I have organized the code into a logical, executable structure using a mock data
 ## [6. Advanced Multidimensional Faceting (Using Built-in fMRI Data)](./6.%20Advanced%20Multidimensional%20Faceting%20%28Using%20Built-in%20fMRI%20Data%29.md)
 
 ## [Load real-world time-series data](./Load%20real-world%20time-series%20data.md)
+
+## [--- Example 6a: Basic Line Plot ---](./---%20Example%206a%20-%20Basic%20Line%20Plot%20---.md)
