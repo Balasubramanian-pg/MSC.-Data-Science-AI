@@ -261,3 +261,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Visualization Is Sequential Cognition](./Visualization%20Is%20Sequential%20Cognition.md)
 
 ## [Example Analogy](./Example%20Analogy.md)
+
+## [Why Interactive Dashboards Matter](./Why%20Interactive%20Dashboards%20Matter.md)
