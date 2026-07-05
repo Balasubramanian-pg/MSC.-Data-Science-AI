@@ -14,3 +14,5 @@
 ## [4. Principles Behind Model Visuals](./4.%20Principles%20Behind%20Model%20Visuals.md)
 
 ## [5. Case Study 1: Campaign Fundraising Line Graph](./5.%20Case%20Study%201%20-%20Campaign%20Fundraising%20Line%20Graph.md)
+
+## [6. Principle: Visual Hierarchy](./6.%20Principle%20-%20Visual%20Hierarchy.md)
