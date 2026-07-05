@@ -175,3 +175,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Multi-Plot Example](./Multi-Plot%20Example.md)
 
 ## [2. Plotting the Data](./2.%20Plotting%20the%20Data.md)
+
+## [What `plot()` Does](./What%20%60plot%28%29%60%20Does.md)
