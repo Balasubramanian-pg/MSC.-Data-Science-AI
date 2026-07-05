@@ -713,3 +713,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [What Is Cividis?](./What%20Is%20Cividis.md)
 
 ## [Why Perceptual Uniformity Matters](./Why%20Perceptual%20Uniformity%20Matters.md)
+
+## [Palette Example](./Palette%20Example.md)
