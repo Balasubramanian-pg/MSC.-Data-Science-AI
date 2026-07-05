@@ -159,3 +159,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Understanding Figure Size](./Understanding%20Figure%20Size.md)
 
 ## [Why Aspect Ratio Matters](./Why%20Aspect%20Ratio%20Matters.md)
+
+## [Why Crimson Was Chosen](./Why%20Crimson%20Was%20Chosen.md)
