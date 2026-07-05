@@ -41,3 +41,5 @@ This section explains how to create multiple related plots from a Pandas DataFra
 ## [Relation to Power BI](./Relation%20to%20Power%20BI.md)
 
 ## [Engineering Insight](./Engineering%20Insight.md)
+
+## [Common Beginner Mistakes](./Common%20Beginner%20Mistakes.md)
