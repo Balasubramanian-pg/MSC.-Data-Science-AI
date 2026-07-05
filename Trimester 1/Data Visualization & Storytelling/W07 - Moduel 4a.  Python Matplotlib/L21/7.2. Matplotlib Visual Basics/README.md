@@ -17,3 +17,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [What Is Colab?](./What%20Is%20Colab.md)
 
 ## [Advantages of Colab](./Advantages%20of%20Colab.md)
+
+## [Why Colab Became Popular](./Why%20Colab%20Became%20Popular.md)
