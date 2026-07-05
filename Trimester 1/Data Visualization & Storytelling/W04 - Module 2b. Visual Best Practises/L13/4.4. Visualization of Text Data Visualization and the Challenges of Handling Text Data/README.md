@@ -83,3 +83,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [NLP Challenge Landscape](./NLP%20Challenge%20Landscape.md)
 
 ## [Why Visualization of Text Is Harder Than Numerical Visualization](./Why%20Visualization%20of%20Text%20Is%20Harder%20Than%20Numerical%20Visualization.md)
+
+## [Numerical vs Textual Analytics](./Numerical%20vs%20Textual%20Analytics.md)
