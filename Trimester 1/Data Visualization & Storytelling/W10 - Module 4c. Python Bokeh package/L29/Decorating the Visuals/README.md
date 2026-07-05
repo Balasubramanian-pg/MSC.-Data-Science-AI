@@ -557,3 +557,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Available Alignments](./Available%20Alignments.md)
 
 ## [Visual Comparison](./Visual%20Comparison.md)
+
+## [Center](./Center.md)
