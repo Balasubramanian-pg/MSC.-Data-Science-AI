@@ -11,3 +11,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Core Purpose](./Core%20Purpose.md)
 
 ## [Typical Use Cases](./Typical%20Use%20Cases.md)
+
+## [Why Visualization Matters](./Why%20Visualization%20Matters.md)
