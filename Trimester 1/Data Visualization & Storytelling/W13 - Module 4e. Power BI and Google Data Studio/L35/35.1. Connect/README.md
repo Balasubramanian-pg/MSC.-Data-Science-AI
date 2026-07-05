@@ -11,3 +11,5 @@
 ## [35.2.5. Doughnut Charts for Categorical Share](./35.2.5.%20Doughnut%20Charts%20for%20Categorical%20Share.md)
 
 ## [35.2.6. Geographical Mapping for Spatial Analysis](./35.2.6.%20Geographical%20Mapping%20for%20Spatial%20Analysis.md)
+
+## [35.2.7. Tree Maps with Drill-Down Functionality](./35.2.7.%20Tree%20Maps%20with%20Drill-Down%20Functionality.md)
