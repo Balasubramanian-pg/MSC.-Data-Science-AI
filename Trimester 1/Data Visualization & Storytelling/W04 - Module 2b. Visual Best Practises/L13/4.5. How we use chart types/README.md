@@ -39,3 +39,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Word Clouds Work](./Why%20Word%20Clouds%20Work.md)
 
 ## [Cognitive Advantage](./Cognitive%20Advantage.md)
+
+## [Important Strengths of Word Clouds](./Important%20Strengths%20of%20Word%20Clouds.md)
