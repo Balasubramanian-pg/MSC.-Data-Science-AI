@@ -53,3 +53,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Conceptual Purpose](./Conceptual%20Purpose.md)
 
 ## [Example Dataset](./Example%20Dataset.md)
+
+## [Why Pandas Plotting Exists](./Why%20Pandas%20Plotting%20Exists.md)
