@@ -163,3 +163,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Example: Ireland and CO₂ Emissions](./Example%20-%20Ireland%20and%20CO%E2%82%82%20Emissions.md)
 
 ## [Underlying Explanation](./Underlying%20Explanation.md)
+
+## [Dashboarding and Domain Knowledge](./Dashboarding%20and%20Domain%20Knowledge.md)
