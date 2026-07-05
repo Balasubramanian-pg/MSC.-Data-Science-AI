@@ -237,3 +237,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Internal Architecture](./Internal%20Architecture.md)
 
 ## [Why Subplots Scale Well](./Why%20Subplots%20Scale%20Well.md)
+
+## [Advanced Layout Variations](./Advanced%20Layout%20Variations.md)
