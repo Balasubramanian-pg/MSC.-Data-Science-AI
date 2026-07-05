@@ -102,3 +102,5 @@ Bad visualizations use color excessively.
 ## [Common Dashboard Mistakes](./Common%20Dashboard%20Mistakes.md)
 
 ## [Color Saturation Problem](./Color%20Saturation%20Problem.md)
+
+## [Practical Color Strategy](./Practical%20Color%20Strategy.md)
