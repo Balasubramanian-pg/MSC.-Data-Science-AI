@@ -803,3 +803,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Part 1: Color Bars](./Part%201%20-%20Color%20Bars.md)
 
 ## [Core Problem](./Core%20Problem.md)
+
+## [Difference Between Legend and Color Bar](./Difference%20Between%20Legend%20and%20Color%20Bar.md)
