@@ -131,3 +131,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Synthetic Data Generation](./Synthetic%20Data%20Generation.md)
 
 ## [Understanding `np.random.randint()`](./Understanding%20%60np.random.randint%28%29%60.md)
+
+## [Why Size = 12?](./Why%20Size%20%3D%2012.md)
