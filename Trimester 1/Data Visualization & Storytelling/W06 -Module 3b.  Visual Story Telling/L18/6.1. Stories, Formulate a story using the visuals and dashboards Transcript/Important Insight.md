@@ -1,3 +1,4 @@
 # Important Insight
 
-Unlimited presentation time usually reduces presentation quality.
+Communication failures in high-stakes environments can become:  
+systemic failures.
