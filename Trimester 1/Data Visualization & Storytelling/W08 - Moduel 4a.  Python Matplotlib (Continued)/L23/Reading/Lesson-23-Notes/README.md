@@ -151,3 +151,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Set date index](./Set%20date%20index.md)
 
 ## [Create figure](./Create%20figure.md)
+
+## [Plot temperature](./Plot%20temperature.md)
