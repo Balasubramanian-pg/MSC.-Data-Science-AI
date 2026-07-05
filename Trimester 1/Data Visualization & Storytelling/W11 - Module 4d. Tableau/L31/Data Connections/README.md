@@ -13,3 +13,5 @@
 ## [7.1.6. Relational Connections and Joins](./7.1.6.%20Relational%20Connections%20and%20Joins.md)
 
 ## [7.1.7. Data Extracts and Local Memory](./7.1.7.%20Data%20Extracts%20and%20Local%20Memory.md)
+
+## [7.1.8. Step-by-Step Data Connection Example](./7.1.8.%20Step-by-Step%20Data%20Connection%20Example.md)
