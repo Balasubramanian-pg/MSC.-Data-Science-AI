@@ -11,3 +11,5 @@ I have organized the code into a logical, executable structure using a mock data
 ## [Refactored & Documented Visualization Guide](./Refactored%20%26%20Documented%20Visualization%20Guide.md)
 
 ## [=====================================================================](./%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D.md)
+
+## [0. SETUP: Create Mock Data for Demonstration](./0.%20SETUP%20-%20Create%20Mock%20Data%20for%20Demonstration.md)
