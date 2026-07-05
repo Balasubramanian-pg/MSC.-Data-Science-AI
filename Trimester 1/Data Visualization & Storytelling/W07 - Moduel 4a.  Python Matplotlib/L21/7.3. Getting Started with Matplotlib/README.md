@@ -89,3 +89,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Dense Sampling Matters](./Why%20Dense%20Sampling%20Matters.md)
 
 ## [Example Comparison](./Example%20Comparison.md)
+
+## [Sparse Sampling](./Sparse%20Sampling.md)
