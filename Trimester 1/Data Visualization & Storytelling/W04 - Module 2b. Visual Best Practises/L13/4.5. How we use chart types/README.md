@@ -131,3 +131,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Text Length Analysis](./Text%20Length%20Analysis.md)
 
 ## [Measuring Structural Complexity](./Measuring%20Structural%20Complexity.md)
+
+## [Why Word Count Matters](./Why%20Word%20Count%20Matters.md)
