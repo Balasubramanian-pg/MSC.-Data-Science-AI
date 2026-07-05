@@ -325,3 +325,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [What Is Color Saturation?](./What%20Is%20Color%20Saturation.md)
 
 ## [COVID-19 Example](./COVID-19%20Example.md)
+
+## [Pre-attentive Attention Hijacking](./Pre-attentive%20Attention%20Hijacking.md)
