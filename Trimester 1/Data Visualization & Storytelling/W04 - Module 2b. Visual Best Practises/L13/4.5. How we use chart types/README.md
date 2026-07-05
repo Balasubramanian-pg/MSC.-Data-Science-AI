@@ -239,3 +239,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Hidden Insight](./Important%20Hidden%20Insight.md)
 
 ## [Why Sentiment Analysis Became Critical](./Why%20Sentiment%20Analysis%20Became%20Critical.md)
+
+## [Sentiment Analysis Challenges](./Sentiment%20Analysis%20Challenges.md)
