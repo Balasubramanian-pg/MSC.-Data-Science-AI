@@ -1,25 +1,21 @@
 # Deep Insight
 
-Most beginners think plotting means:
+Most plotting tutorials focus on:
 
-```text
-data -> graph
-```
+- drawing charts
+    
 
-But real visualization systems are:
+But professional visualization work focuses heavily on:
 
-```mermaid
-flowchart LR
-    A[Data]
-    B[Glyphs]
-    C[Styling]
-    D[Layout]
-    E[Interaction]
+- scales
+    
+- axes
+    
+- framing
+    
+- perception
+    
 
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-```
+Because:
 
-Bokeh is designed for this richer architecture.
+> interpretation depends more on framing than on the raw chart type itself.
