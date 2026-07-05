@@ -51,3 +51,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Compute sine values](./Compute%20sine%20values.md)
 
 ## [Plot graph](./Plot%20graph.md)
+
+## [Display plot](./Display%20plot.md)
