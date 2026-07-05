@@ -39,3 +39,5 @@ It is fundamentally about:
 ## [Step 4: Understand the DataFrame](./Step%204%20-%20Understand%20the%20DataFrame.md)
 
 ## [Why DataFrames Matter](./Why%20DataFrames%20Matter.md)
+
+## [Step 5: Set the Date as Index](./Step%205%20-%20Set%20the%20Date%20as%20Index.md)
