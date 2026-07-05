@@ -179,3 +179,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Recognition vs Recall](./Recognition%20vs%20Recall.md)
 
 ## [Visualization Techniques Supporting Short-Term Memory](./Visualization%20Techniques%20Supporting%20Short-Term%20Memory.md)
+
+## [Long-Term Memory Shapes Interpretation](./Long-Term%20Memory%20Shapes%20Interpretation.md)
