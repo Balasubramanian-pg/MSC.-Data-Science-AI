@@ -17,3 +17,5 @@ week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
 ## [5. Domain IV: Plotting Connections & Relationships (Relational Structures)](./5.%20Domain%20IV%20-%20Plotting%20Connections%20%26%20Relationships%20%28Relational%20Structures%29.md)
 
 ## [6. Production-Grade Systems Architecture & Pipelines](./6.%20Production-Grade%20Systems%20Architecture%20%26%20Pipelines.md)
+
+## [7. Performance Engineering & Debugging Strategies](./7.%20Performance%20Engineering%20%26%20Debugging%20Strategies.md)
