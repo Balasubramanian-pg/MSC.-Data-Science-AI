@@ -239,3 +239,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Operational Time Horizon](./Operational%20Time%20Horizon.md)
 
 ## [Analytical Dashboards Sit Between Both](./Analytical%20Dashboards%20Sit%20Between%20Both.md)
+
+## [Analytical Dashboard Goal](./Analytical%20Dashboard%20Goal.md)
