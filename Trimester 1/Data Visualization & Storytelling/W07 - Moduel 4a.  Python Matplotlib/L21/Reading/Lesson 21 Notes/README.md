@@ -173,3 +173,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why This Separation Matters](./Why%20This%20Separation%20Matters.md)
 
 ## [Multi-Plot Example](./Multi-Plot%20Example.md)
+
+## [2. Plotting the Data](./2.%20Plotting%20the%20Data.md)
