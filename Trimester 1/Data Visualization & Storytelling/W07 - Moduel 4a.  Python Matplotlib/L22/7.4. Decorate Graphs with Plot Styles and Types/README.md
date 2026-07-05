@@ -11,3 +11,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [The Psychology of Visual Encoding](./The%20Psychology%20of%20Visual%20Encoding.md)
 
 ## [Pre-attentive Processing](./Pre-attentive%20Processing.md)
+
+## [Why Matplotlib Matters](./Why%20Matplotlib%20Matters.md)
