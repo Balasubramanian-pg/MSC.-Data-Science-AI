@@ -341,3 +341,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Final Lesson](./Final%20Lesson.md)
 
 ## [Misuse of Color Saturation in Visualization](./Misuse%20of%20Color%20Saturation%20in%20Visualization.md)
+
+## [The COVID Case Map Example](./The%20COVID%20Case%20Map%20Example.md)
