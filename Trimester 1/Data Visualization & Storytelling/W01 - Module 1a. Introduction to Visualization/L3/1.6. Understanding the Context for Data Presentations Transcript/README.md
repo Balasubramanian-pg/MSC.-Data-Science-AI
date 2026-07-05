@@ -38,3 +38,5 @@
 ## [Explanatory Visualization](./Explanatory%20Visualization.md)
 
 ## [Comparison](./Comparison.md)
+
+## [For General Public](./For%20General%20Public.md)
