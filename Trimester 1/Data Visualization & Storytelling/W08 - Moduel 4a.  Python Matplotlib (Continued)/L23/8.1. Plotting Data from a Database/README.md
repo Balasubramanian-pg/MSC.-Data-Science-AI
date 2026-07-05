@@ -17,3 +17,5 @@ This section explains how to create multiple related plots from a Pandas DataFra
 ## [Step 3: Shared X-Axis](./Step%203%20-%20Shared%20X-Axis.md)
 
 ## [Creating Subplots](./Creating%20Subplots.md)
+
+## [Breakdown](./Breakdown.md)
