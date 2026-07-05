@@ -36,3 +36,5 @@ Bad visualizations use color excessively.
 ## [Color Is a Pre-Attentive Attribute](./Color%20Is%20a%20Pre-Attentive%20Attribute.md)
 
 ## [The Core Purpose of Color in Visualization](./The%20Core%20Purpose%20of%20Color%20in%20Visualization.md)
+
+## [Color Is NOT Primarily for Decoration](./Color%20Is%20NOT%20Primarily%20for%20Decoration.md)
