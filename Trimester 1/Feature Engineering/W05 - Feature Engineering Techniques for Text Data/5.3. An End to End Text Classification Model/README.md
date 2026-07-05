@@ -27,3 +27,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [4. Model Training](./4.%20Model%20Training.md)
 
 ## [Train a Logistic Regression classifier](./Train%20a%20Logistic%20Regression%20classifier.md)
+
+## [5. Inference & Interpretability on a Single Document](./5.%20Inference%20%26%20Interpretability%20on%20a%20Single%20Document.md)
