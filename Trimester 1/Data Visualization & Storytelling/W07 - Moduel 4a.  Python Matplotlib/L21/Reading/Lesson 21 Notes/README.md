@@ -227,3 +227,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Internal Workflow](./Internal%20Workflow.md)
 
 ## [Why This Architecture Is Powerful](./Why%20This%20Architecture%20Is%20Powerful.md)
+
+## [Full Example](./Full%20Example.md)
