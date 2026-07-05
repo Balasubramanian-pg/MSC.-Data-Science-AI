@@ -147,3 +147,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Intersections Matter](./Why%20Intersections%20Matter.md)
 
 ## [Strategic Importance](./Strategic%20Importance.md)
+
+## [11. Factors](./11.%20Factors.md)
