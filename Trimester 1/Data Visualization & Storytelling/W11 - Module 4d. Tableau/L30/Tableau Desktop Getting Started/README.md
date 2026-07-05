@@ -5,3 +5,5 @@
 ## [4.1.2. Setting Up the Tableau Environment](./4.1.2.%20Setting%20Up%20the%20Tableau%20Environment.md)
 
 ## [4.1.3. Sourcing and Connecting Data](./4.1.3.%20Sourcing%20and%20Connecting%20Data.md)
+
+## [4.1.4. The Tableau Workspace Interface](./4.1.4.%20The%20Tableau%20Workspace%20Interface.md)
