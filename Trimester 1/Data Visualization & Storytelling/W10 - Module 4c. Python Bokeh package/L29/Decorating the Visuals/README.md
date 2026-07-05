@@ -727,3 +727,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Mistake 1: Random Colors](./Mistake%201%20-%20Random%20Colors.md)
 
 ## [Mistake 2: Rainbow Palettes](./Mistake%202%20-%20Rainbow%20Palettes.md)
+
+## [Mistake 3: Excessive Transparency](./Mistake%203%20-%20Excessive%20Transparency.md)
