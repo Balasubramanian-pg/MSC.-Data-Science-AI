@@ -133,3 +133,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Understanding `np.random.randint()`](./Understanding%20%60np.random.randint%28%29%60.md)
 
 ## [Why Size = 12?](./Why%20Size%20%3D%2012.md)
+
+## [Creating the DataFrame](./Creating%20the%20DataFrame.md)
