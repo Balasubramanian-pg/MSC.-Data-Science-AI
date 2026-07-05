@@ -171,3 +171,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [4. Architectural Integration Matrix](./4.%20Architectural%20Integration%20Matrix.md)
 
 ## [1. Distribution Diagnostics: Interpreting the Custom Box Plot](./1.%20Distribution%20Diagnostics%20-%20Interpreting%20the%20Custom%20Box%20Plot.md)
+
+## [2. Refactored Python Implementation](./2.%20Refactored%20Python%20Implementation.md)
