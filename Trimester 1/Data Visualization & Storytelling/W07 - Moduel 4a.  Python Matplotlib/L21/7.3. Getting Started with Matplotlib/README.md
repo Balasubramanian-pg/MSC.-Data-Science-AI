@@ -143,3 +143,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Create figure and axes](./Create%20figure%20and%20axes.md)
 
 ## [Plot the sine wave](./Plot%20the%20sine%20wave.md)
+
+## [Add chart title](./Add%20chart%20title.md)
