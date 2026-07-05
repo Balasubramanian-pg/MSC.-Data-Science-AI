@@ -523,3 +523,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [The Instructor Demonstrates Iteration](./The%20Instructor%20Demonstrates%20Iteration.md)
 
 ## [Visualization Tradeoff](./Visualization%20Tradeoff.md)
+
+## [Important Bokeh Hierarchy](./Important%20Bokeh%20Hierarchy.md)
