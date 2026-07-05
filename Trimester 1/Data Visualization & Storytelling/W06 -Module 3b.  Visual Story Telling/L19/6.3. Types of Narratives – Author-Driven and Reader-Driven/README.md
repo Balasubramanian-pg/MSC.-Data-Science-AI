@@ -35,3 +35,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Typical Hybrid Features](./Typical%20Hybrid%20Features.md)
 
 ## [The Hidden Design Challenge](./The%20Hidden%20Design%20Challenge.md)
+
+## [Dimensions of Narrative Storytelling](./Dimensions%20of%20Narrative%20Storytelling.md)
