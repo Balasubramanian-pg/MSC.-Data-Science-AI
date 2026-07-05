@@ -21,3 +21,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [STEP 1: Import](./STEP%201%20-%20Import.md)
 
 ## [STEP 2: Prepare data](./STEP%202%20-%20Prepare%20data.md)
+
+## [STEP 3: Create figure](./STEP%203%20-%20Create%20figure.md)
