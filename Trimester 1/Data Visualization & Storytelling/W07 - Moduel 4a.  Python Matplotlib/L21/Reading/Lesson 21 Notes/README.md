@@ -89,3 +89,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why This Matters](./Why%20This%20Matters.md)
 
 ## [2. Why Matplotlib Became Widely Used](./2.%20Why%20Matplotlib%20Became%20Widely%20Used.md)
+
+## [Real Engineering Insight](./Real%20Engineering%20Insight.md)
