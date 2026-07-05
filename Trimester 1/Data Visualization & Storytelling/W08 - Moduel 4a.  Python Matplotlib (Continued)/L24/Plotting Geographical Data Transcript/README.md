@@ -95,3 +95,5 @@ This is foundational to:
 ## [Latitude and Longitude](./Latitude%20and%20Longitude.md)
 
 ## [Coordinate Meaning](./Coordinate%20Meaning.md)
+
+## [Geometry Construction](./Geometry%20Construction.md)
