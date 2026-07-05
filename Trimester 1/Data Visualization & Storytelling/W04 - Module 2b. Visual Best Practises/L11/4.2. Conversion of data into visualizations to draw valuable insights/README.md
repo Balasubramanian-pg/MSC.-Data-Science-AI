@@ -129,3 +129,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Perceptual Superiority of Position](./Perceptual%20Superiority%20of%20Position.md)
 
 ## [The Core Visualization Hierarchy](./The%20Core%20Visualization%20Hierarchy.md)
+
+## [Weak Encodings](./Weak%20Encodings.md)
