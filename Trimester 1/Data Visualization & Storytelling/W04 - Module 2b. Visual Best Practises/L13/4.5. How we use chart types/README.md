@@ -253,3 +253,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [What Is a Joint Plot?](./What%20Is%20a%20Joint%20Plot.md)
 
 ## [Joint Plot Structure](./Joint%20Plot%20Structure.md)
+
+## [Why Joint Plots Are Powerful](./Why%20Joint%20Plots%20Are%20Powerful.md)
