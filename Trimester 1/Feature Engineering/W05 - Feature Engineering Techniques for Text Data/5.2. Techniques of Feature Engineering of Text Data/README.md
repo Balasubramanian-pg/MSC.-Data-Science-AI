@@ -103,3 +103,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Assume X_ngram is our (3, 23) CSR matrix from earlier.](./Assume%20X_ngram%20is%20our%20%283%2C%2023%29%20CSR%20matrix%20from%20earlier.md)
 
 ## [We extract POS counts for all 3 documents to create a (3, num_pos_tags) matrix.](./We%20extract%20POS%20counts%20for%20all%203%20documents%20to%20create%20a%20%283%2C%20num_pos_tags%29%20matrix.md)
+
+## [We then horizontally stack them:](./We%20then%20horizontally%20stack%20them%20-.md)
