@@ -101,3 +101,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Full Example](./Full%20Example.md)
 
 ## [Engineering Insight](./Engineering%20Insight.md)
+
+## [Useful Cases](./Useful%20Cases.md)
