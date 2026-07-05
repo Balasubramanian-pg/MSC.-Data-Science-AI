@@ -245,3 +245,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Method 1: Configure Inside `figure()`](./Method%201%20-%20Configure%20Inside%20%60figure%28%29%60.md)
 
 ## [Method 2: Configure After Creation](./Method%202%20-%20Configure%20After%20Creation.md)
+
+## [Core Architectural Pattern](./Core%20Architectural%20Pattern.md)
