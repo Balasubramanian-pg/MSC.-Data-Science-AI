@@ -43,3 +43,5 @@
 ## [Why Diversity Matters](./Why%20Diversity%20Matters.md)
 
 ## [Example](./Example.md)
+
+## [3. Understanding Explanatory Analysis](./3.%20Understanding%20Explanatory%20Analysis.md)
