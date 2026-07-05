@@ -71,3 +71,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Advanced Insight](./Advanced%20Insight.md)
 
 ## [Common Dashboard Failure Modes](./Common%20Dashboard%20Failure%20Modes.md)
+
+## [1. Dashboard as Decoration](./1.%20Dashboard%20as%20Decoration.md)
