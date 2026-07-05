@@ -149,3 +149,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Topic Frequency Visualization](./Topic%20Frequency%20Visualization.md)
 
 ## [Important NLP Principle](./Important%20NLP%20Principle.md)
+
+## [Human Interpretation Layer](./Human%20Interpretation%20Layer.md)
