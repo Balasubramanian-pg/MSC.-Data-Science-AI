@@ -101,3 +101,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why This Matters in Modern AI](./Why%20This%20Matters%20in%20Modern%20AI.md)
 
 ## [End-to-End NLP Visualization Pipeline](./End-to-End%20NLP%20Visualization%20Pipeline.md)
+
+## [Final Conceptual Shift](./Final%20Conceptual%20Shift.md)
