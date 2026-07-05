@@ -99,3 +99,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Hidden Computational Philosophy](./Hidden%20Computational%20Philosophy.md)
 
 ## [Why This Matters in Modern AI](./Why%20This%20Matters%20in%20Modern%20AI.md)
+
+## [End-to-End NLP Visualization Pipeline](./End-to-End%20NLP%20Visualization%20Pipeline.md)
