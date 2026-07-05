@@ -301,3 +301,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [`deepskyblue`](./%60deepskyblue%60.md)
 
 ## [`slategray`](./%60slategray%60.md)
+
+## [Figure-Level Narrative](./Figure-Level%20Narrative.md)
