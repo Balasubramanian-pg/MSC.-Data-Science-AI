@@ -25,3 +25,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Notebook Visualization Matters](./Why%20Notebook%20Visualization%20Matters.md)
 
 ## [3. Comments and Annotations](./3.%20Comments%20and%20Annotations.md)
+
+## [This is a comment](./This%20is%20a%20comment.md)
