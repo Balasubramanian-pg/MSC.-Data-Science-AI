@@ -173,3 +173,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Unexpected](./Unexpected.md)
 
 ## [Concrete](./Concrete.md)
+
+## [Credible](./Credible.md)
