@@ -1,13 +1,11 @@
 # Visual Hierarchy
 
-Internally Bokeh looks conceptually like:
-
 ```mermaid
 flowchart TD
-    A[Figure Object]
-    A --> B[Title Object]
-    A --> C[Axis Objects]
-    A --> D[Glyph Objects]
+    A[Figure]
+    A --> B[Axes]
+    A --> C[Grid]
+    A --> D[Glyphs]
 
-    B --> E[Text Properties]
+    D --> E[Purple Line]
 ```
