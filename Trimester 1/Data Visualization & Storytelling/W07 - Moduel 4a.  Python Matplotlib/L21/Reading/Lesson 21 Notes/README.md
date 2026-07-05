@@ -213,3 +213,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [What Legends Do](./What%20Legends%20Do.md)
 
 ## [Result](./Result.md)
+
+## [Why Legends Matter](./Why%20Legends%20Matter.md)
