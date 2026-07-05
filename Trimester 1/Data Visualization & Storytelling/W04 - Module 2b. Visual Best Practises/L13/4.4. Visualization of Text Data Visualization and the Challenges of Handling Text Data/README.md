@@ -219,3 +219,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Relationship to Modern AI](./Relationship%20to%20Modern%20AI.md)
 
 ## [Modern NLP Pipeline](./Modern%20NLP%20Pipeline.md)
+
+## [Final Conceptual Insight](./Final%20Conceptual%20Insight.md)
