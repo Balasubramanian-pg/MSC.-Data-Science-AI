@@ -47,3 +47,5 @@ week: W05 - Module 3a.  Dashboards
 ## [1. Visual Summarization](./1.%20Visual%20Summarization.md)
 
 ## [Definition](./Definition.md)
+
+## [Why Visuals Matter](./Why%20Visuals%20Matter.md)
