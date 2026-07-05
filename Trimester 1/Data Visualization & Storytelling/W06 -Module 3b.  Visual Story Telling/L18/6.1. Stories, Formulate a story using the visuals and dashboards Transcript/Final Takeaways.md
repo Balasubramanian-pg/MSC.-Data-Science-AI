@@ -1,29 +1,20 @@
 # Final Takeaways
 
-This section establishes several foundational ideas:
+This section establishes several important principles:
 
-- visual narratives shape long-term perception,
+- storytelling transforms visuals into meaningful communication,
     
-- repeated visual encoding creates cultural associations,
+- brevity improves clarity,
     
-- presentation design is fundamentally attention management,
+- strong visuals reduce narration dependency,
     
-- simplicity and whitespace improve cognition,
+- simplicity increases comprehension,
     
-- storytelling requires emotional authenticity,
+- clutter destroys attention,
     
-- and effective communication combines:
+- and poor presentation design can directly degrade organizational decisions.
     
-    - visuals,
-        
-    - narrative,
-        
-    - emotion,
-        
-    - and structure.
-        
 
 Most importantly:
 
-> Data visualization becomes powerful only when it successfully guides human interpretation and meaning formation.
->
+> Communication quality determines whether information becomes understanding or noise.
