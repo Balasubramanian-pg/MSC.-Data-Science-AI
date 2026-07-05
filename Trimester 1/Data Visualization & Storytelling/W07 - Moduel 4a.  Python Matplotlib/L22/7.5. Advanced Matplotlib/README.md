@@ -103,3 +103,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Important Engineering Insight](./Important%20Engineering%20Insight.md)
 
 ## [Visualization as Cognitive Compression](./Visualization%20as%20Cognitive%20Compression.md)
+
+## [Machine Learning Connections](./Machine%20Learning%20Connections.md)
