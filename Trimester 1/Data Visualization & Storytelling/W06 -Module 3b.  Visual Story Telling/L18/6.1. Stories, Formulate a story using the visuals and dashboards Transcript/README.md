@@ -307,3 +307,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Step 2: Create Visual Emphasis](./Step%202%20-%20Create%20Visual%20Emphasis.md)
 
 ## [Goal](./Goal.md)
+
+## [Methods](./Methods.md)
