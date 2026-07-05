@@ -105,3 +105,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Final Conceptual Shift](./Final%20Conceptual%20Shift.md)
 
 ## [Final Mental Model](./Final%20Mental%20Model.md)
+
+## [Text Preprocessing Pipeline](./Text%20Preprocessing%20Pipeline.md)
