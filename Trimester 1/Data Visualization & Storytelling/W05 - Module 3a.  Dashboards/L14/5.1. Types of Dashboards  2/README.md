@@ -153,3 +153,5 @@ week: W05 - Module 3a.  Dashboards
 ## [2. Weak Interaction Feedback](./2.%20Weak%20Interaction%20Feedback.md)
 
 ## [3. Poor Layout Hierarchy](./3.%20Poor%20Layout%20Hierarchy.md)
+
+## [4. Visual Competition](./4.%20Visual%20Competition.md)
