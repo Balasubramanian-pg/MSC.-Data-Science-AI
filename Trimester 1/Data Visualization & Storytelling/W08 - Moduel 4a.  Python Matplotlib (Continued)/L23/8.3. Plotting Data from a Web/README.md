@@ -65,3 +65,5 @@ It is fundamentally about:
 ## [Common Beginner Mistakes](./Common%20Beginner%20Mistakes.md)
 
 ## [1. Forgetting `parse_dates`](./1.%20Forgetting%20%60parse_dates%60.md)
+
+## [2. Forgetting `set_index`](./2.%20Forgetting%20%60set_index%60.md)
