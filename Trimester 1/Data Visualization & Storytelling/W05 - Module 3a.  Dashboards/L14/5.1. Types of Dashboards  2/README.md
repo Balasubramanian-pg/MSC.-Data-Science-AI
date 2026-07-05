@@ -247,3 +247,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Strategic Dashboard Interaction](./Strategic%20Dashboard%20Interaction.md)
 
 ## [Typical Analytical Interactions](./Typical%20Analytical%20Interactions.md)
+
+## [Operational Dashboard Design Philosophy](./Operational%20Dashboard%20Design%20Philosophy.md)
