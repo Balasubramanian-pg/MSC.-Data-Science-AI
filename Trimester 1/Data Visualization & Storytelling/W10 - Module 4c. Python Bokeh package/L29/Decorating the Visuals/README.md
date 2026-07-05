@@ -35,3 +35,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [7. Practice Exercise](./7.%20Practice%20Exercise.md)
 
 ## [Task: Create a colored bar chart of fruit counts](./Task%20-%20Create%20a%20colored%20bar%20chart%20of%20fruit%20counts.md)
+
+## [1. Import figure and show](./1.%20Import%20figure%20and%20show.md)
