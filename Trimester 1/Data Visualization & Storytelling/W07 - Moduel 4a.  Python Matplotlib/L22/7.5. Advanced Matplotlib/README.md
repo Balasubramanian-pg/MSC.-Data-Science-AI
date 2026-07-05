@@ -121,3 +121,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Advanced Matplotlib Architecture](./Advanced%20Matplotlib%20Architecture.md)
 
 ## [Performance Considerations](./Performance%20Considerations.md)
+
+## [Final Takeaways](./Final%20Takeaways.md)
