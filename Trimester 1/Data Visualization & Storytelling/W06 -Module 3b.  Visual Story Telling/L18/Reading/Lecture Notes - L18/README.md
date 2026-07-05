@@ -131,3 +131,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Principle](./Important%20Principle.md)
 
 ## [Presentation as Cognitive Design](./Presentation%20as%20Cognitive%20Design.md)
+
+## [Presentation Zen by Garr Reynolds](./Presentation%20Zen%20by%20Garr%20Reynolds.md)
