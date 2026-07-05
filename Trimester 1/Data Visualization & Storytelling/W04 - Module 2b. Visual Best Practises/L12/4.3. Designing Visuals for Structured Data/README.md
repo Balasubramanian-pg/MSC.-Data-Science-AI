@@ -87,3 +87,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Histograms Matter](./Why%20Histograms%20Matter.md)
 
 ## [Histogram Structure](./Histogram%20Structure.md)
+
+## [Example: Bounce Rates](./Example%20-%20Bounce%20Rates.md)
