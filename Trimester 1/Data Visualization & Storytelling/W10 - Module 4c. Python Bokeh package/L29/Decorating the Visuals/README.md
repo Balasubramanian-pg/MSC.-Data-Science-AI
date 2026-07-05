@@ -295,3 +295,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Scatter plot](./Scatter%20plot.md)
 
 ## [Engineering Analogy](./Engineering%20Analogy.md)
+
+## [Mistake 1: Overstyling](./Mistake%201%20-%20Overstyling.md)
