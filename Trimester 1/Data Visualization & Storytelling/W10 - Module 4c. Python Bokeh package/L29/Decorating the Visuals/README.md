@@ -791,3 +791,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Common Use Cases](./Common%20Use%20Cases.md)
 
 ## [Important Warning](./Important%20Warning.md)
+
+## [Example Failure](./Example%20Failure.md)
