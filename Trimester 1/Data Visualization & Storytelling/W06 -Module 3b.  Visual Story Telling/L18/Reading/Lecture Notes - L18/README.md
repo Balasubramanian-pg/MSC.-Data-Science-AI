@@ -243,3 +243,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Cognitive Overload](./Cognitive%20Overload.md)
 
 ## [NASA Columbia Shuttle Disaster (2003)](./NASA%20Columbia%20Shuttle%20Disaster%20%282003%29.md)
+
+## [Why This Case Matters](./Why%20This%20Case%20Matters.md)
