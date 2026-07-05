@@ -169,3 +169,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Emotional Structure in Text](./Emotional%20Structure%20in%20Text.md)
 
 ## [Core Idea](./Core%20Idea.md)
+
+## [Why Sentiment Matters](./Why%20Sentiment%20Matters.md)
