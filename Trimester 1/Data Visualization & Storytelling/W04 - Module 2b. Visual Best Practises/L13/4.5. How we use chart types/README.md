@@ -133,3 +133,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Measuring Structural Complexity](./Measuring%20Structural%20Complexity.md)
 
 ## [Why Word Count Matters](./Why%20Word%20Count%20Matters.md)
+
+## [Word Count Visualization Pipeline](./Word%20Count%20Visualization%20Pipeline.md)
