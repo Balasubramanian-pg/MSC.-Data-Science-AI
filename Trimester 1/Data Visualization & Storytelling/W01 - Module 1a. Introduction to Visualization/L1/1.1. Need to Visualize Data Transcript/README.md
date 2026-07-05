@@ -61,3 +61,5 @@
 ## [2. Misleading Axes](./2.%20Misleading%20Axes.md)
 
 ## [3. Overloading Visuals](./3.%20Overloading%20Visuals.md)
+
+## [4. Ignoring Data Types](./4.%20Ignoring%20Data%20Types.md)
