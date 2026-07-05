@@ -265,3 +265,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Important Organizational Insight](./Important%20Organizational%20Insight.md)
 
 ## [Key Tradeoff Dimensions](./Key%20Tradeoff%20Dimensions.md)
+
+## [Why One Dashboard Usually Fails](./Why%20One%20Dashboard%20Usually%20Fails.md)
