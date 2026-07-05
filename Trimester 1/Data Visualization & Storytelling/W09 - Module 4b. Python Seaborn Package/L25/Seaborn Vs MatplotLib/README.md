@@ -115,3 +115,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [and structural grid overlay automatically.](./and%20structural%20grid%20overlay%20automatically.md)
 
 ## [4. Syntax Comparison Framework](./4.%20Syntax%20Comparison%20Framework.md)
+
+## [1. Visual Aesthetics: The "Garnished" Edge Effect](./1.%20Visual%20Aesthetics%20-%20The%20Garnished%20Edge%20Effect.md)
