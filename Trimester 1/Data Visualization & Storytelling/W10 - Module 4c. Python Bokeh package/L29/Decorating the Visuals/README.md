@@ -305,3 +305,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Most Important Takeaway](./Most%20Important%20Takeaway.md)
 
 ## [Key Concept](./Key%20Concept.md)
+
+## [Important Idea](./Important%20Idea.md)
