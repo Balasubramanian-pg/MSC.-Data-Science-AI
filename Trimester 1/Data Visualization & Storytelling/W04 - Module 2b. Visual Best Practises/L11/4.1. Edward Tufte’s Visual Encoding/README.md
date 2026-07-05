@@ -93,3 +93,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Detection Efficiency Principle](./Detection%20Efficiency%20Principle.md)
 
 ## [2. Assembly](./2.%20Assembly.md)
+
+## [Understanding Relationships](./Understanding%20Relationships.md)
