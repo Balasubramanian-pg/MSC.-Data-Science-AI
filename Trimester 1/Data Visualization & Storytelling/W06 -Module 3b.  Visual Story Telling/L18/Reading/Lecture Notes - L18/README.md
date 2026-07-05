@@ -291,3 +291,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Cognitive Anchoring](./Cognitive%20Anchoring.md)
 
 ## [Weak vs Strong Headline](./Weak%20vs%20Strong%20Headline.md)
+
+## [2. Visual Hierarchy](./2.%20Visual%20Hierarchy.md)
