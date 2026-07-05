@@ -207,3 +207,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [5. Saving Figures](./5.%20Saving%20Figures.md)
 
 ## [Why Saving Matters](./Why%20Saving%20Matters.md)
+
+## [Common File Formats](./Common%20File%20Formats.md)
