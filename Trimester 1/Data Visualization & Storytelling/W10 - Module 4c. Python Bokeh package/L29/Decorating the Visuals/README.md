@@ -689,3 +689,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Professional Dashboard Reality](./Professional%20Dashboard%20Reality.md)
 
 ## [Legend Border Styling](./Legend%20Border%20Styling.md)
+
+## [Legend Background Fill](./Legend%20Background%20Fill.md)
