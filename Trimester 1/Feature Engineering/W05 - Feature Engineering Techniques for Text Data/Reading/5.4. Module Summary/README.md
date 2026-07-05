@@ -25,3 +25,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [8. Python Simulations](./8.%20Python%20Simulations.md)
 
 ## [9. Practical Engineering Examples](./9.%20Practical%20Engineering%20Examples.md)
+
+## [10. Common Mistakes](./10.%20Common%20Mistakes.md)
