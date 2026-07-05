@@ -47,3 +47,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Visualization Becomes Important](./Why%20Visualization%20Becomes%20Important.md)
 
 ## [Text Visualization Pipeline](./Text%20Visualization%20Pipeline.md)
+
+## [The Central NLP Problem](./The%20Central%20NLP%20Problem.md)
