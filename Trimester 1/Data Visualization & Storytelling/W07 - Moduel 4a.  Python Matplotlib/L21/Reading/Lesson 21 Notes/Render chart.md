@@ -1,0 +1,4 @@
+# Render chart
+
+plt.show()
+```
