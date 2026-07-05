@@ -73,3 +73,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Human Visual Decoding Process](./Human%20Visual%20Decoding%20Process.md)
 
 ## [Perceptual Decoding Pipeline](./Perceptual%20Decoding%20Pipeline.md)
+
+## [1. Detection](./1.%20Detection.md)
