@@ -30,3 +30,5 @@
 ## [3.2 Stage 2: Parsing Data](./3.2%20Stage%202%20-%20Parsing%20Data.md)
 
 ## [Key Questions During Parsing](./Key%20Questions%20During%20Parsing.md)
+
+## [3.3 Stage 3: Filtering Data](./3.3%20Stage%203%20-%20Filtering%20Data.md)
