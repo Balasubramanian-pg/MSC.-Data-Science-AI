@@ -273,3 +273,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Layout Problems Happen](./Why%20Layout%20Problems%20Happen.md)
 
 ## [The Core Problem](./The%20Core%20Problem.md)
+
+## [Understanding `tight_layout()`](./Understanding%20%60tight_layout%28%29%60.md)
