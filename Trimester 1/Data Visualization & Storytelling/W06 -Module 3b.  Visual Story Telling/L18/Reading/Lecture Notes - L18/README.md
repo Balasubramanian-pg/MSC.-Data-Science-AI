@@ -85,3 +85,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [4. No Clear Conflict](./4.%20No%20Clear%20Conflict.md)
 
 ## [5. No Resolution](./5.%20No%20Resolution.md)
+
+## [Final Takeaways](./Final%20Takeaways.md)
