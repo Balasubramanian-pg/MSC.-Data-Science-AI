@@ -28,3 +28,5 @@
 ## [11. Case Study 4: Development Priorities Survey](./11.%20Case%20Study%204%20-%20Development%20Priorities%20Survey.md)
 
 ## [12. Direct Labeling vs Legends](./12.%20Direct%20Labeling%20vs%20Legends.md)
+
+## [13. Footnotes as a Design Tool](./13.%20Footnotes%20as%20a%20Design%20Tool.md)
