@@ -21,3 +21,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Dashboard as an Interface](./Dashboard%20as%20an%20Interface.md)
 
 ## [Dashboard Definition](./Dashboard%20Definition.md)
+
+## [Important Dashboard Principle](./Important%20Dashboard%20Principle.md)
