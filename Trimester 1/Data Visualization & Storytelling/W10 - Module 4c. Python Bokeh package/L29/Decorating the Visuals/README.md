@@ -49,3 +49,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [6. Display the plot using show()](./6.%20Display%20the%20plot%20using%20show%28%29.md)
 
 ## [8. Common Errors & Troubleshooting](./8.%20Common%20Errors%20%26%20Troubleshooting.md)
+
+## [9. Next Steps (Preview)](./9.%20Next%20Steps%20%28Preview%29.md)
