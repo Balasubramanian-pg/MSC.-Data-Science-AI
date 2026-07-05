@@ -297,3 +297,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Hidden Manipulation](./The%20Hidden%20Manipulation.md)
 
 ## [Two Different Narratives](./Two%20Different%20Narratives.md)
+
+## [Cherry-Picked Narrative](./Cherry-Picked%20Narrative.md)
