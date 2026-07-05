@@ -1,4 +1,4 @@
 # Important Principle
 
-Communication quality affects:  
-decision quality.
+If multiple ideas compete equally,  
+none dominate memory.
