@@ -153,3 +153,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Customization Matters](./Why%20Customization%20Matters.md)
 
 ## [The Hidden Philosophy of Matplotlib](./The%20Hidden%20Philosophy%20of%20Matplotlib.md)
+
+## [Common Beginner Mistakes](./Common%20Beginner%20Mistakes.md)
