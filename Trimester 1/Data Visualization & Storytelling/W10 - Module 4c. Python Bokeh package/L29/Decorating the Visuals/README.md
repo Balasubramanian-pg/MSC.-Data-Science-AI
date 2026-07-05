@@ -453,3 +453,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Important Detail](./Important%20Detail.md)
 
 ## [Why Radians?](./Why%20Radians.md)
+
+## [NumericalTickFormatter](./NumericalTickFormatter.md)
