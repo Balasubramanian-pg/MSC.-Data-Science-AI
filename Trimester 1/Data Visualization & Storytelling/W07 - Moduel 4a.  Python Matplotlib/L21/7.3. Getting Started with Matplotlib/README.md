@@ -267,3 +267,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Adding Titles](./Adding%20Titles.md)
 
 ## [5. Line Styles](./5.%20Line%20Styles.md)
+
+## [Why Line Styles Matter](./Why%20Line%20Styles%20Matter.md)
