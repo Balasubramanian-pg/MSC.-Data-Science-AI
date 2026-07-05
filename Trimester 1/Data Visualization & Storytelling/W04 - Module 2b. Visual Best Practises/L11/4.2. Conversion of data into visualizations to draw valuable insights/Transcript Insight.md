@@ -1,18 +1,10 @@
 # Transcript Insight
 
-The lecture mentions:
+Users can easily compare:
 
-Users can say:
-
-- slightly larger
+- Faridabad
     
-- almost equal
-    
-- much bigger
+- Ambala
     
 
-but not:
-
-- exact ratio
-    
-- exact difference
+through aligned positions on the same scale.
