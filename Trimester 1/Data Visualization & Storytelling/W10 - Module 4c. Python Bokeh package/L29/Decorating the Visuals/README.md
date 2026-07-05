@@ -531,3 +531,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Deep Visualization Insight](./Deep%20Visualization%20Insight.md)
 
 ## [Professional Dashboard Design Principle](./Professional%20Dashboard%20Design%20Principle.md)
+
+## [Mistake 1: Excessive Rotation](./Mistake%201%20-%20Excessive%20Rotation.md)
