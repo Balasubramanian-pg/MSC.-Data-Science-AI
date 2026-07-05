@@ -91,3 +91,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Simple Text Placement](./Simple%20Text%20Placement.md)
 
 ## [Arrow Annotations](./Arrow%20Annotations.md)
+
+## [Storytelling Principle](./Storytelling%20Principle.md)
