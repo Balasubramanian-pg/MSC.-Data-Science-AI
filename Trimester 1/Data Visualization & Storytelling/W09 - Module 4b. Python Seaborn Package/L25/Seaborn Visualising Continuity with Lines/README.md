@@ -45,3 +45,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Global styling configuration for clean, publication-ready visuals](./Global%20styling%20configuration%20for%20clean%2C%20publication-ready%20visuals.md)
 
 ## [Load the built-in fMRI time-series dataset discussed in the transcript](./Load%20the%20built-in%20fMRI%20time-series%20dataset%20discussed%20in%20the%20transcript.md)
+
+## [1. THE BASELINE PLOT: Understanding Statistical Aggregation](./1.%20THE%20BASELINE%20PLOT%20-%20Understanding%20Statistical%20Aggregation.md)
