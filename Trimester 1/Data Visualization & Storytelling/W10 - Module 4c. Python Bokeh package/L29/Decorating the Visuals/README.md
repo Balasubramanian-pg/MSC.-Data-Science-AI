@@ -691,3 +691,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Legend Border Styling](./Legend%20Border%20Styling.md)
 
 ## [Legend Background Fill](./Legend%20Background%20Fill.md)
+
+## [Visual Result](./Visual%20Result.md)
