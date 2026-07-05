@@ -207,3 +207,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Hidden Insight](./Hidden%20Insight.md)
 
 ## [NLP Is Controlled Information Loss](./NLP%20Is%20Controlled%20Information%20Loss.md)
+
+## [NLP Compression Pipeline](./NLP%20Compression%20Pipeline.md)
