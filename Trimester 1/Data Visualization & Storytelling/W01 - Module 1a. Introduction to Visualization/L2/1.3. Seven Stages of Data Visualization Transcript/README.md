@@ -64,3 +64,5 @@
 ## [4. Detailed Case Study: Election Voter Turnout Visualization](./4.%20Detailed%20Case%20Study%20-%20Election%20Voter%20Turnout%20Visualization.md)
 
 ## [4.1 Acquisition from Election Commission Data](./4.1%20Acquisition%20from%20Election%20Commission%20Data.md)
+
+## [4.2 Parsing the Dataset Structure](./4.2%20Parsing%20the%20Dataset%20Structure.md)
