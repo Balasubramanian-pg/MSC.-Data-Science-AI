@@ -111,3 +111,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [6. Common Mistakes & Traps](./6.%20Common%20Mistakes%20%26%20Traps.md)
 
 ## [7. Interview Questions & Insights](./7.%20Interview%20Questions%20%26%20Insights.md)
+
+## [8. Advanced Learning Roadmap](./8.%20Advanced%20Learning%20Roadmap.md)
