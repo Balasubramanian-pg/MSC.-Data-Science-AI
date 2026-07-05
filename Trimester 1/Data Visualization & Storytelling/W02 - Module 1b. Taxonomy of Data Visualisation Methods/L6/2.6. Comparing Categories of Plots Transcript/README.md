@@ -20,3 +20,5 @@ This document details five advanced visual paradigms designed for **Categorical 
 ## [5. Circle Packing Diagrams (Containment-Based Hierarchies)](./5.%20Circle%20Packing%20Diagrams%20%28Containment-Based%20Hierarchies%29.md)
 
 ## [6. Bubble Hierarchies (Hierarchical Node-Link Trees)](./6.%20Bubble%20Hierarchies%20%28Hierarchical%20Node-Link%20Trees%29.md)
+
+## [7. Performance Engineering & Edge Case Resolutions](./7.%20Performance%20Engineering%20%26%20Edge%20Case%20Resolutions.md)
