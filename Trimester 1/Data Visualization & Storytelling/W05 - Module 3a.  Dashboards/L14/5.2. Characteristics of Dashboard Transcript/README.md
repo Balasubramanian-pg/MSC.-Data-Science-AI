@@ -103,3 +103,5 @@ week: W05 - Module 3a.  Dashboards
 ## [4. Inconsistent Encoding](./4.%20Inconsistent%20Encoding.md)
 
 ## [Dashboard Cognitive Architecture](./Dashboard%20Cognitive%20Architecture.md)
+
+## [Real-World Examples](./Real-World%20Examples.md)
