@@ -83,3 +83,5 @@ week: W05 - Module 3a.  Dashboards
 ## [5. Static Thinking](./5.%20Static%20Thinking.md)
 
 ## [Important Concept Introduced by the Transcript](./Important%20Concept%20Introduced%20by%20the%20Transcript.md)
+
+## [Final Takeaways](./Final%20Takeaways.md)
