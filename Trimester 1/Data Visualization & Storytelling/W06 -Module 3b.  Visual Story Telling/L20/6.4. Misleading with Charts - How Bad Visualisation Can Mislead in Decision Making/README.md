@@ -227,3 +227,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Filter Ordering as Narrative Design](./Filter%20Ordering%20as%20Narrative%20Design.md)
 
 ## [Author-Driven vs Reader-Driven Connection](./Author-Driven%20vs%20Reader-Driven%20Connection.md)
+
+## [Author-Driven Dashboard](./Author-Driven%20Dashboard.md)
