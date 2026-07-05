@@ -41,3 +41,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [16. Edge Cases](./16.%20Edge%20Cases.md)
 
 ## [17. Mental Models](./17.%20Mental%20Models.md)
+
+## [18. Performance and Computational Insights](./18.%20Performance%20and%20Computational%20Insights.md)
