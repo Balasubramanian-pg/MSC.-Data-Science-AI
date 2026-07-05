@@ -82,3 +82,5 @@
 ## [5.1 Similarity Principle](./5.1%20Similarity%20Principle.md)
 
 ## [5.2 Focus Principle](./5.2%20Focus%20Principle.md)
+
+## [5.3 Figure-Ground Principle](./5.3%20Figure-Ground%20Principle.md)
