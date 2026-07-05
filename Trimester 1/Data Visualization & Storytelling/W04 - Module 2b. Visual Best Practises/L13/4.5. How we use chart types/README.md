@@ -163,3 +163,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Word Trees as Cognitive Compression](./Word%20Trees%20as%20Cognitive%20Compression.md)
 
 ## [Important Limitation of Word Trees](./Important%20Limitation%20of%20Word%20Trees.md)
+
+## [Semantic Scores and Sentiment Analysis](./Semantic%20Scores%20and%20Sentiment%20Analysis.md)
