@@ -108,3 +108,5 @@ Bad visualizations use color excessively.
 ## [Recommended Dashboard Palette Structure](./Recommended%20Dashboard%20Palette%20Structure.md)
 
 ## [Example Palette Strategy](./Example%20Palette%20Strategy.md)
+
+## [Color and Accessibility](./Color%20and%20Accessibility.md)
