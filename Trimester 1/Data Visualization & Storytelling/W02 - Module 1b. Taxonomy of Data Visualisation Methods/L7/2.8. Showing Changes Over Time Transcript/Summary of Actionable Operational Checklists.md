@@ -1,0 +1,3 @@
+# Summary of Actionable Operational Checklists
+
+First, verify your data engine capabilities: ensure your charting engine supports the dynamic layout calculations required for advanced visualizations, and avoid basic spreadsheets for complex layouts like circle packing and Sankey diagrams. Second, handle edge cases early: sanitize raw transactional data to resolve nested loops, scale outliers, and handle negative values before passing records to client-side renders. Third, prioritize reader comprehension: limit initial rendering depth, lock scales across multi-chart grids, and use hover states to keep dashboards clean, clear, and easy to interpret.
