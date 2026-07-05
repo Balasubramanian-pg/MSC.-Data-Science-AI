@@ -105,3 +105,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Magnitude Comparison](./Magnitude%20Comparison.md)
 
 ## [4. Types of Visual Encodings](./4.%20Types%20of%20Visual%20Encodings.md)
+
+## [Perceptual Hierarchy](./Perceptual%20Hierarchy.md)
