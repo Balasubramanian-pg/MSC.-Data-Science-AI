@@ -80,3 +80,5 @@
 ## [5. Gestalt Principles in Visualization](./5.%20Gestalt%20Principles%20in%20Visualization.md)
 
 ## [5.1 Similarity Principle](./5.1%20Similarity%20Principle.md)
+
+## [5.2 Focus Principle](./5.2%20Focus%20Principle.md)
