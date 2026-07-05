@@ -143,3 +143,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Number Processing Pipeline](./Number%20Processing%20Pipeline.md)
 
 ## [3. Removing Punctuation and Special Characters](./3.%20Removing%20Punctuation%20and%20Special%20Characters.md)
+
+## [Noise Reduction](./Noise%20Reduction.md)
