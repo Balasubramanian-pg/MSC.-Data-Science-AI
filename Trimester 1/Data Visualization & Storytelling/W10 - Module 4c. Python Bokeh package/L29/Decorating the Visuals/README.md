@@ -723,3 +723,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Example Plot](./Example%20Plot.md)
 
 ## [Why Predefined Palettes Are Better](./Why%20Predefined%20Palettes%20Are%20Better.md)
+
+## [Mistake 1: Random Colors](./Mistake%201%20-%20Random%20Colors.md)
