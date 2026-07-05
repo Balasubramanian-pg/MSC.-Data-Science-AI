@@ -32,3 +32,5 @@
 ## [13. Simplicity as a Design Principle](./13.%20Simplicity%20as%20a%20Design%20Principle.md)
 
 ## [14. Balancing Design and Story](./14.%20Balancing%20Design%20and%20Story.md)
+
+## [Practical Storytelling Checklist](./Practical%20Storytelling%20Checklist.md)
