@@ -11,3 +11,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Evolution of Text Analytics](./The%20Evolution%20of%20Text%20Analytics.md)
 
 ## [NLP Complexity Hierarchy](./NLP%20Complexity%20Hierarchy.md)
+
+## [The Central Hypothesis of Word Embeddings](./The%20Central%20Hypothesis%20of%20Word%20Embeddings.md)
