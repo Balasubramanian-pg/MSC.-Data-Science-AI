@@ -117,3 +117,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [4. Plotting the Data](./4.%20Plotting%20the%20Data.md)
 
 ## [Internal Plotting Logic](./Internal%20Plotting%20Logic.md)
+
+## [Why Labels Matter](./Why%20Labels%20Matter.md)
