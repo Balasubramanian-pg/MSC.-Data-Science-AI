@@ -107,3 +107,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Purpose](./Purpose.md)
 
 ## [Why Notebook Rendering Matters](./Why%20Notebook%20Rendering%20Matters.md)
+
+## [4. Creating a Simple Plot](./4.%20Creating%20a%20Simple%20Plot.md)
