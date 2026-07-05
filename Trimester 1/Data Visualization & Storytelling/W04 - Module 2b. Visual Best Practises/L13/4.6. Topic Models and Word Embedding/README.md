@@ -95,3 +95,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Inter-Topic Distance](./Inter-Topic%20Distance.md)
 
 ## [Bubble Chart Visualization](./Bubble%20Chart%20Visualization.md)
+
+## [What Inter-Topic Distance Means](./What%20Inter-Topic%20Distance%20Means.md)
