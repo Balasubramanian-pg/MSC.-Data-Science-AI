@@ -1,12 +1,14 @@
 # Answer
 
-✅ **It removes features during model training by shrinking some coefficients to zero.**
+✅ **Spearman's Correlation**
 
 > [!NOTE]
 > **Reason**
 >
-> **LASSO** is an embedded feature selection method because feature selection occurs **during model training itself**. The L1 penalty forces less important feature coefficients toward zero, effectively removing them from the model while simultaneously fitting the model.
+> **Spearman's Correlation** measures the strength and direction of a **monotonic relationship** between variables using ranks rather than raw values. It can capture both linear and non-linear monotonic relationships, making it well-suited for ordinal features and continuous targets.
+>
+> **Pearson's Correlation** is primarily designed for linear relationships.
 
-# Question 3
+# Question 4
 
-Which filter method is best suited for identifying non-linear monotonic relationships between an ordinal feature and a continuous target?
+Which of the following is a wrapper method that begins with no features and incrementally adds the most beneficial feature at each step?
