@@ -2,5 +2,6 @@
 
 ```mermaid
 flowchart LR
-    A[0] --> B[Evenly Distributed Points] --> C[10]
+    A[Sine Wave] --> B[Phase Shift]
+    B --> C[Cosine Wave]
 ```
