@@ -295,3 +295,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [2. Visual Hierarchy](./2.%20Visual%20Hierarchy.md)
 
 ## [Why Hierarchy Matters](./Why%20Hierarchy%20Matters.md)
+
+## [Problem in the NASA Slide](./Problem%20in%20the%20NASA%20Slide.md)
