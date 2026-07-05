@@ -377,3 +377,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [5. Content Analysis](./5.%20Content%20Analysis.md)
 
 ## [What Is Being Discussed?](./What%20Is%20Being%20Discussed.md)
+
+## [Conversation Analysis Pipeline](./Conversation%20Analysis%20Pipeline.md)
