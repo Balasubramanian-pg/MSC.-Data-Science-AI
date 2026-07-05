@@ -219,3 +219,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [6. Storied](./6.%20Storied.md)
 
 ## [SUCCESS Cognitive Pipeline](./SUCCESS%20Cognitive%20Pipeline.md)
+
+## [Why SUCCESS Works](./Why%20SUCCESS%20Works.md)
