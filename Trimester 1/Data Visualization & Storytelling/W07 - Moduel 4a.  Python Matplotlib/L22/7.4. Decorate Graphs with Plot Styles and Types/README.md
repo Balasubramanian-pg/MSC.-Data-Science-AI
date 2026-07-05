@@ -49,3 +49,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Viridis Colormap](./Viridis%20Colormap.md)
 
 ## [Scatter Plot with Colormap](./Scatter%20Plot%20with%20Colormap.md)
+
+## [Why Jet Colormap Is Problematic](./Why%20Jet%20Colormap%20Is%20Problematic.md)
