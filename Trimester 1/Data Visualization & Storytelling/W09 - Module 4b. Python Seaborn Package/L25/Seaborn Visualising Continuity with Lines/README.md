@@ -47,3 +47,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Load the built-in fMRI time-series dataset discussed in the transcript](./Load%20the%20built-in%20fMRI%20time-series%20dataset%20discussed%20in%20the%20transcript.md)
 
 ## [1. THE BASELINE PLOT: Understanding Statistical Aggregation](./1.%20THE%20BASELINE%20PLOT%20-%20Understanding%20Statistical%20Aggregation.md)
+
+## [This displays how Seaborn calculates the mean and error band automatically.](./This%20displays%20how%20Seaborn%20calculates%20the%20mean%20and%20error%20band%20automatically.md)
