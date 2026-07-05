@@ -87,3 +87,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Example with NumPy Arrays](./Example%20with%20NumPy%20Arrays.md)
 
 ## [Why This Matters](./Why%20This%20Matters.md)
+
+## [2. Why Matplotlib Became Widely Used](./2.%20Why%20Matplotlib%20Became%20Widely%20Used.md)
