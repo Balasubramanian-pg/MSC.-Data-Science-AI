@@ -309,3 +309,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Images Matter](./Why%20Images%20Matter.md)
 
 ## [Cognitive Advantage of Visuals](./Cognitive%20Advantage%20of%20Visuals.md)
+
+## [Why This Matters in Engineering](./Why%20This%20Matters%20in%20Engineering.md)
