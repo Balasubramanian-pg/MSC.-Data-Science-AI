@@ -109,3 +109,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Important Hidden Insight](./Important%20Hidden%20Insight.md)
 
 ## [Final Takeaways](./Final%20Takeaways.md)
+
+## [Core Ideas](./Core%20Ideas.md)
