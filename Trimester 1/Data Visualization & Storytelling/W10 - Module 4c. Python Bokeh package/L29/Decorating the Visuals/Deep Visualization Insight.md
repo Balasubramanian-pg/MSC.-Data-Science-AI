@@ -1,20 +1,16 @@
 # Deep Visualization Insight
 
-This section quietly introduces something important:
+Titles are not neutral metadata.
 
-> charts fail more often from formatting problems than from statistical problems
+They are interpretive framing devices.
 
-Common real-world failures:
+This is why:
 
-- unreadable labels
+- journalism
     
-- cluttered axes
+- finance
     
-- bad scaling
-    
-- ugly numeric formatting
+- politics
     
 
-not:
-
-- wrong chart type
+often manipulate titles strategically.
