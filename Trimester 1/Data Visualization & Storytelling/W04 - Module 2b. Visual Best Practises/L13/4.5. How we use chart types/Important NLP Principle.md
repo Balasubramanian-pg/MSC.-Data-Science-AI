@@ -1,7 +1,7 @@
 # Important NLP Principle
 
 ```text
-Contextual segmentation matters more than global averages.
+Language variables often interact nonlinearly.
 ```
 
-This is extremely important in modern NLP systems.
+This is why multivariate visualization becomes essential.
