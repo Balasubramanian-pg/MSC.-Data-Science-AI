@@ -73,3 +73,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Common Dashboard Failure Modes](./Common%20Dashboard%20Failure%20Modes.md)
 
 ## [1. Dashboard as Decoration](./1.%20Dashboard%20as%20Decoration.md)
+
+## [2. Overcrowding](./2.%20Overcrowding.md)
