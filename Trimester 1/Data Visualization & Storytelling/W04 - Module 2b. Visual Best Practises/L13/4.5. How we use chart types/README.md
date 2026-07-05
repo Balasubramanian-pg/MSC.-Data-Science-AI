@@ -115,3 +115,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Evolution of Text Visualization](./The%20Evolution%20of%20Text%20Visualization.md)
 
 ## [Frequency Analysis Revisited](./Frequency%20Analysis%20Revisited.md)
+
+## [Frequency Alone Is Not Meaning](./Frequency%20Alone%20Is%20Not%20Meaning.md)
