@@ -39,3 +39,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Binary Variables Matter](./Why%20Binary%20Variables%20Matter.md)
 
 ## [Ordinal Data](./Ordinal%20Data.md)
+
+## [Numerical Continuous Data](./Numerical%20Continuous%20Data.md)
