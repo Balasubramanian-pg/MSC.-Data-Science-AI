@@ -95,3 +95,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Story Mountain Framework: Narrative Escalation Through Visualization](./Story%20Mountain%20Framework%20-%20Narrative%20Escalation%20Through%20Visualization.md)
 
 ## [Narrative Escalation](./Narrative%20Escalation.md)
+
+## [Why Escalation Works](./Why%20Escalation%20Works.md)
