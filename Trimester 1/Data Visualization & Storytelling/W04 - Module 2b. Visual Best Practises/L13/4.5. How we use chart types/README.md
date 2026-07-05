@@ -189,3 +189,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Administrative Messages Tend To Be Neutral](./Why%20Administrative%20Messages%20Tend%20To%20Be%20Neutral.md)
 
 ## [Why Complaints Become Negative](./Why%20Complaints%20Become%20Negative.md)
+
+## [Important Limitation of Sentiment Analysis](./Important%20Limitation%20of%20Sentiment%20Analysis.md)
