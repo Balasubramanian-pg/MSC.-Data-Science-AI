@@ -637,3 +637,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Scatter Glyph](./Scatter%20Glyph.md)
 
 ## [Important Mechanism](./Important%20Mechanism.md)
+
+## [Internal Architecture](./Internal%20Architecture.md)
