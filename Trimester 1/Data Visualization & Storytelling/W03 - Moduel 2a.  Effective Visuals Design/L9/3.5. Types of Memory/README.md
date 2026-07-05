@@ -11,3 +11,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Core Principle](./Core%20Principle.md)
 
 ## [The Information Processing Pipeline](./The%20Information%20Processing%20Pipeline.md)
+
+## [Major Types of Memory Relevant to Visualization](./Major%20Types%20of%20Memory%20Relevant%20to%20Visualization.md)
