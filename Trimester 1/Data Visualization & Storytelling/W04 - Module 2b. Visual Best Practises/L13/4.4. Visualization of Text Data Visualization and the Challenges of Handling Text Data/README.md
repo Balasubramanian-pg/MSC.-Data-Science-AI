@@ -117,3 +117,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Core Principle](./Important%20Core%20Principle.md)
 
 ## [Why Text Requires Standardization](./Why%20Text%20Requires%20Standardization.md)
+
+## [1. Case Normalization](./1.%20Case%20Normalization.md)
