@@ -111,3 +111,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Humans Compare Length Well](./Why%20Humans%20Compare%20Length%20Well.md)
 
 ## [Why Bar Charts Work](./Why%20Bar%20Charts%20Work.md)
+
+## [Cognitive Strength of Length](./Cognitive%20Strength%20of%20Length.md)
