@@ -99,3 +99,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Real-World Example: 2000 U.S. Election Maps](./Real-World%20Example%20-%202000%20U.S.%20Election%20Maps.md)
 
 ## [Why This Example Matters](./Why%20This%20Example%20Matters.md)
+
+## [The Power of Color Encoding](./The%20Power%20of%20Color%20Encoding.md)
