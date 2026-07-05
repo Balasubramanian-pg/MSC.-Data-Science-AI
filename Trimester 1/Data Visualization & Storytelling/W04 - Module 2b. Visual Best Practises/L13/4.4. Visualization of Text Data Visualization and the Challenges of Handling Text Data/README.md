@@ -127,3 +127,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Vocabulary Explosion Problem](./Vocabulary%20Explosion%20Problem.md)
 
 ## [Important Insight](./Important%20Insight.md)
+
+## [Tradeoff of Lowercasing](./Tradeoff%20of%20Lowercasing.md)
