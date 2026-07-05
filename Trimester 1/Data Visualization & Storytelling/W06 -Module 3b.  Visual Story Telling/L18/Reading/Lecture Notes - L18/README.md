@@ -173,3 +173,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [1. Slide as Teleprompter](./1.%20Slide%20as%20Teleprompter.md)
 
 ## [2. Bullet Point Abuse](./2.%20Bullet%20Point%20Abuse.md)
+
+## [3. Decorative Noise](./3.%20Decorative%20Noise.md)
