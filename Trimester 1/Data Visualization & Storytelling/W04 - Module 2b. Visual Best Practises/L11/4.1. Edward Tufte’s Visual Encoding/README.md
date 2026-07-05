@@ -63,3 +63,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Key Property](./Key%20Property.md)
 
 ## [Why Data Types Matter in Visualization](./Why%20Data%20Types%20Matter%20in%20Visualization.md)
+
+## [Data Type → Visualization Mapping](./Data%20Type%20%E2%86%92%20Visualization%20Mapping.md)
