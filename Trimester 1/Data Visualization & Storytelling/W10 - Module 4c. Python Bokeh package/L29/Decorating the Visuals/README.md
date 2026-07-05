@@ -123,3 +123,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Imports](./Imports.md)
 
 ## [Why Each Library Is Used](./Why%20Each%20Library%20Is%20Used.md)
+
+## [Figure Setup](./Figure%20Setup.md)
