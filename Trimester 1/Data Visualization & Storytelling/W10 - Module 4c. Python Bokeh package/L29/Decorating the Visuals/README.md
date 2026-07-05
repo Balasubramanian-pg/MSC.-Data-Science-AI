@@ -647,3 +647,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Why Legends Matter](./Why%20Legends%20Matter.md)
 
 ## [But Legends Also Fail Frequently](./But%20Legends%20Also%20Fail%20Frequently.md)
+
+## [Typical Legend Customizations](./Typical%20Legend%20Customizations.md)
