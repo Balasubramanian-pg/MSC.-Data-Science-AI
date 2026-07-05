@@ -85,3 +85,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Named Entity Dominance](./Named%20Entity%20Dominance.md)
 
 ## [Entity Analysis](./Entity%20Analysis.md)
+
+## [Semantic Importance vs Frequency](./Semantic%20Importance%20vs%20Frequency.md)
