@@ -41,3 +41,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [1. Visual Hierarchy](./1.%20Visual%20Hierarchy.md)
 
 ## [2. Narrative Sequencing](./2.%20Narrative%20Sequencing.md)
+
+## [3. Annotation](./3.%20Annotation.md)
