@@ -17,3 +17,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Dashboard Mental Model](./Dashboard%20Mental%20Model.md)
 
 ## [Why Dashboards Exist](./Why%20Dashboards%20Exist.md)
+
+## [Why Different Dashboard Types Exist](./Why%20Different%20Dashboard%20Types%20Exist.md)
