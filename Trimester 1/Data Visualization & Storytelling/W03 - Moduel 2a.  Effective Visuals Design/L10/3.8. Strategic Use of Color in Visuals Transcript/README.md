@@ -88,3 +88,5 @@ Bad visualizations use color excessively.
 ## [Sequential Scale](./Sequential%20Scale.md)
 
 ## [Diverging Scale](./Diverging%20Scale.md)
+
+## [5. Using Color for Status Communication](./5.%20Using%20Color%20for%20Status%20Communication.md)
