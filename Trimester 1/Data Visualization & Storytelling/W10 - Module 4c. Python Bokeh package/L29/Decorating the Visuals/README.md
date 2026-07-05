@@ -595,3 +595,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Weak](./Weak.md)
 
 ## [Better](./Better.md)
+
+## [Dashboard Design Insight](./Dashboard%20Design%20Insight.md)
