@@ -59,3 +59,5 @@ This is foundational to:
 ## [Step 5: Basic Map Plot](./Step%205%20-%20Basic%20Map%20Plot.md)
 
 ## [Mental Model](./Mental%20Model.md)
+
+## [Choropleth Maps](./Choropleth%20Maps.md)
