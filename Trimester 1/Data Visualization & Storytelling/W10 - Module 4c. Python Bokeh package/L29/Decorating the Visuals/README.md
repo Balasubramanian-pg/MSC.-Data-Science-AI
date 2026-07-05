@@ -399,3 +399,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Styling Tick Labels](./Styling%20Tick%20Labels.md)
 
 ## [Grid Customization](./Grid%20Customization.md)
+
+## [Why Grid Styling Matters](./Why%20Grid%20Styling%20Matters.md)
