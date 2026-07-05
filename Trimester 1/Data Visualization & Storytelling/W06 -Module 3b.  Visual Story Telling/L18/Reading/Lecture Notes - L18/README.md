@@ -245,3 +245,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [NASA Columbia Shuttle Disaster (2003)](./NASA%20Columbia%20Shuttle%20Disaster%20%282003%29.md)
 
 ## [Why This Case Matters](./Why%20This%20Case%20Matters.md)
+
+## [The Core Problem](./The%20Core%20Problem.md)
