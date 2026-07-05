@@ -231,3 +231,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Author-Driven Dashboard](./Author-Driven%20Dashboard.md)
 
 ## [Reader-Driven Dashboard](./Reader-Driven%20Dashboard.md)
+
+## [Hybrid Systems](./Hybrid%20Systems.md)
