@@ -109,3 +109,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Applications of Topic Modeling](./Applications%20of%20Topic%20Modeling.md)
 
 ## [Hidden Insight](./Hidden%20Insight.md)
+
+## [NLP as Dimensionality Reduction](./NLP%20as%20Dimensionality%20Reduction.md)
