@@ -31,3 +31,5 @@
 ## [4. Case Study: Lok Sabha Election Voter Turnout](./4.%20Case%20Study%20-%20Lok%20Sabha%20Election%20Voter%20Turnout.md)
 
 ## [4.1 Text-Based Representation](./4.1%20Text-Based%20Representation.md)
+
+## [4.2 Visualization Using Horizontal Bar Chart](./4.2%20Visualization%20Using%20Horizontal%20Bar%20Chart.md)
