@@ -1,0 +1,3 @@
+# MODULE 4: CATEGORICAL DATA (vbar)
+
+
