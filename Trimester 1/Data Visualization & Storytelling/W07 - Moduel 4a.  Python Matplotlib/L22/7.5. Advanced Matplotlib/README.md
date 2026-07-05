@@ -65,3 +65,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Example](./Example.md)
 
 ## [Statistical Interpretation](./Statistical%20Interpretation.md)
+
+## [Machine Learning Connection](./Machine%20Learning%20Connection.md)
