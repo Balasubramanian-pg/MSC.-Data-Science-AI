@@ -19,3 +19,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Actual Reality](./Actual%20Reality.md)
 
 ## [Cognitive Bias in Visualization](./Cognitive%20Bias%20in%20Visualization.md)
+
+## [1. Spatial Bias](./1.%20Spatial%20Bias.md)
