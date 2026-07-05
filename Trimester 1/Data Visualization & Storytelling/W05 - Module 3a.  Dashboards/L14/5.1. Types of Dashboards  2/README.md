@@ -103,3 +103,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Visual Components](./Visual%20Components.md)
 
 ## [Why Multiple Coordinated Views Matter](./Why%20Multiple%20Coordinated%20Views%20Matter.md)
+
+## [Interactivity in the Dashboard](./Interactivity%20in%20the%20Dashboard.md)
