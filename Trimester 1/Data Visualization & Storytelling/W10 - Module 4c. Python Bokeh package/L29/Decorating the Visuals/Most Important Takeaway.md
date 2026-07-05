@@ -1,9 +1,29 @@
 # Most Important Takeaway
 
-This section reinforces the core Bokeh philosophy again:
+This section reinforces that Bokeh is an object hierarchy:
 
-```python
-plot.component.property = value
+```mermaid
+flowchart TD
+    A[Figure]
+
+    A --> B[Title]
+    A --> C[Legend]
+    A --> D[Glyphs]
+
+    C --> E[Location]
+    C --> F[Title]
+    C --> G[Text Properties]
 ```
 
-Titles are just another editable object in the visualization hierarchy.
+Everything is editable because everything is represented as structured objects, not static rendering instructions.
+
+This section covers two important topics:
+
+1. advanced legend customization
+    
+2. color palettes in Bokeh
+    
+
+The deeper theme is:
+
+> turning default charts into intentionally designed visual systems
