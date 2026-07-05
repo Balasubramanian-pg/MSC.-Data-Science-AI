@@ -805,3 +805,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Core Problem](./Core%20Problem.md)
 
 ## [Difference Between Legend and Color Bar](./Difference%20Between%20Legend%20and%20Color%20Bar.md)
+
+## [Adding the Color Bar](./Adding%20the%20Color%20Bar.md)
