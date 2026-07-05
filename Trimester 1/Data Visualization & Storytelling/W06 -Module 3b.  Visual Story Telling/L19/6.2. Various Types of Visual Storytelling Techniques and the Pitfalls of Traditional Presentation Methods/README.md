@@ -79,3 +79,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Monomyth Works](./Why%20Monomyth%20Works.md)
 
 ## [Hidden Risk](./Hidden%20Risk.md)
+
+## [2. Story Mountain Framework](./2.%20Story%20Mountain%20Framework.md)
