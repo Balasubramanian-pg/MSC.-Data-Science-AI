@@ -1,33 +1,24 @@
 # Strategic Insight
 
-This lecture introduces a foundational visualization mindset:
+The lecture gradually moves students from:
 
-> Raw plots are only the beginning.
-
-Effective visualization requires:
-
-- structure
+- using charts  
+    to
     
-- annotation
-    
-- semantic clarity
-    
-- visual hierarchy
-    
-- contextual framing
+- thinking computationally about visualization.
     
 
-A chart without thoughtful customization is often:
+This distinction matters.
 
-- technically correct  
-    but
-    
-- communicatively weak.
+A dashboard engineer is not merely:
+
+- dragging chart widgets
     
 
-That distinction separates:
+They are:
 
-- coding plots  
-    from
+- encoding mathematical relationships visually
     
-- designing visual analytics systems.
+- designing interpretive systems
+    
+- controlling perception through computation.
