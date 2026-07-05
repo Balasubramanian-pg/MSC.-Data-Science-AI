@@ -419,3 +419,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Enron Bankruptcy Timeline](./Enron%20Bankruptcy%20Timeline.md)
 
 ## [Communication Before Collapse](./Communication%20Before%20Collapse.md)
+
+## [Temporal Spike Detection](./Temporal%20Spike%20Detection.md)
