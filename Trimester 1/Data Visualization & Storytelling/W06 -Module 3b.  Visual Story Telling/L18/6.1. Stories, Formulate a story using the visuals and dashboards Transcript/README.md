@@ -191,3 +191,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Transition from Visualization to Storytelling](./Transition%20from%20Visualization%20to%20Storytelling.md)
 
 ## [Why Narrative Wrapping Matters](./Why%20Narrative%20Wrapping%20Matters.md)
+
+## [Data Storytelling Architecture](./Data%20Storytelling%20Architecture.md)
