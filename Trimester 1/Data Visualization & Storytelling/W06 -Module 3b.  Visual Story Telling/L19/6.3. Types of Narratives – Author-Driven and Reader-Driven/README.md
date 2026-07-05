@@ -17,3 +17,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Strengths of Author-Driven Narratives](./Strengths%20of%20Author-Driven%20Narratives.md)
 
 ## [Weaknesses](./Weaknesses.md)
+
+## [2. Reader-Driven Narratives](./2.%20Reader-Driven%20Narratives.md)
