@@ -19,3 +19,5 @@ week: W05 - Module 3a.  Dashboards
 ## [What Makes Dashboards Unique?](./What%20Makes%20Dashboards%20Unique.md)
 
 ## [Dashboard as an Interface](./Dashboard%20as%20an%20Interface.md)
+
+## [Dashboard Definition](./Dashboard%20Definition.md)
