@@ -755,3 +755,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [What Happens Visually](./What%20Happens%20Visually.md)
 
 ## [Visual Mapping](./Visual%20Mapping.md)
+
+## [Turbo256 Palette](./Turbo256%20Palette.md)
