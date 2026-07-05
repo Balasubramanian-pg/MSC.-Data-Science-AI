@@ -87,3 +87,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Comparing Narrative Types](./Comparing%20Narrative%20Types.md)
 
 ## [Strategic Insight](./Strategic%20Insight.md)
+
+## [5. The Seven Types of Data Stories](./5.%20The%20Seven%20Types%20of%20Data%20Stories.md)
