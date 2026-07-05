@@ -51,3 +51,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [plot_top_tfidf_features(dense_vector, feature_names)](./plot_top_tfidf_features%28dense_vector%2C%20feature_names%29.md)
 
 ## [6. Practical Engineering Examples](./6.%20Practical%20Engineering%20Examples.md)
+
+## [The elegant, production-grade way to construct the pipeline](./The%20elegant%2C%20production-grade%20way%20to%20construct%20the%20pipeline.md)
