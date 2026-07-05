@@ -49,3 +49,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why This Happens](./Why%20This%20Happens.md)
 
 ## [Embedding Learning Pipeline](./Embedding%20Learning%20Pipeline.md)
+
+## [Important Concept](./Important%20Concept.md)
