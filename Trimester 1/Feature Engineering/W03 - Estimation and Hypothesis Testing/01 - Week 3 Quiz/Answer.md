@@ -1,12 +1,10 @@
 # Answer
 
-✅ **Sequential Forward Selection**
+✅ **Fisher Score**
 
 > [!NOTE]
 > **Reason**
 >
-> **Sequential Forward Selection (SFS)** starts with an empty feature set and iteratively adds the feature that provides the greatest improvement in model performance at each step. Since it repeatedly trains and evaluates models, it is classified as a **wrapper method**.
+> For extremely high-dimensional datasets, **filter methods** are generally preferred because they are computationally efficient and independent of any specific model. **Fisher Score** ranks features individually based on their discriminative power, making it particularly suitable for quickly filtering thousands of features before more sophisticated modeling.
 
-# Question 5
-
-Which method is most suitable when the dataset has very high dimensionality (e.g., gene expression data with 10,000+ features) and we want fast filtering of potentially relevant features?
+Let us focus on [week 4 quiz](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W04%20-%20Dimensionality%20Reduction%20Techniques/Quiz.md)
