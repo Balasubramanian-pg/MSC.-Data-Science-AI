@@ -169,3 +169,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Position the legend cleanly within the plot area](./Position%20the%20legend%20cleanly%20within%20the%20plot%20area.md)
 
 ## [4. Architectural Integration Matrix](./4.%20Architectural%20Integration%20Matrix.md)
+
+## [1. Distribution Diagnostics: Interpreting the Custom Box Plot](./1.%20Distribution%20Diagnostics%20-%20Interpreting%20the%20Custom%20Box%20Plot.md)
