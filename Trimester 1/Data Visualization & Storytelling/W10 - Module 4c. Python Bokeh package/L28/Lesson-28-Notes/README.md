@@ -15,3 +15,5 @@ Every single function, method, and parameter is explained in detail using Python
 ## [==========================================](./%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D.md)
 
 ## [MODULE 1: BASIC LINE PLOTTING](./MODULE%201%20-%20BASIC%20LINE%20PLOTTING.md)
+
+## [output_notebook is used to render plots directly in Jupyter notebooks.](./output_notebook%20is%20used%20to%20render%20plots%20directly%20in%20Jupyter%20notebooks.md)
