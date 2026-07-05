@@ -71,3 +71,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Equal Distances Without True Zero](./Equal%20Distances%20Without%20True%20Zero.md)
 
 ## [Ratio Data](./Ratio%20Data.md)
+
+## [True Quantitative Scale](./True%20Quantitative%20Scale.md)
