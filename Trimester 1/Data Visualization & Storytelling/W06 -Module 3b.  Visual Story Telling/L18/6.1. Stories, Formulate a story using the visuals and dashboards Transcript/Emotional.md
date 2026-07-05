@@ -1,0 +1,4 @@
+# Emotional
+
+Emotion amplifies:  
+memory.
