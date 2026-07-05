@@ -13,3 +13,5 @@ week: W02 - Handling Numeric Data
 ## [2.1.3. The Geometry of Scale: Normalization and Standardization](./2.1.3.%20The%20Geometry%20of%20Scale%20-%20Normalization%20and%20Standardization.md)
 
 ## [2.1.4. Taming the Tails: Attribute Transformations](./2.1.4.%20Taming%20the%20Tails%20-%20Attribute%20Transformations.md)
+
+## [2.1.5. Discretization and the Loss of Precision](./2.1.5.%20Discretization%20and%20the%20Loss%20of%20Precision.md)
