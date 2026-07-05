@@ -27,3 +27,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Example: Reading Real CSV Data](./Example%20-%20Reading%20Real%20CSV%20Data.md)
 
 ## [Inspecting Downloaded Data](./Inspecting%20Downloaded%20Data.md)
+
+## [Common CSV Problems](./Common%20CSV%20Problems.md)
