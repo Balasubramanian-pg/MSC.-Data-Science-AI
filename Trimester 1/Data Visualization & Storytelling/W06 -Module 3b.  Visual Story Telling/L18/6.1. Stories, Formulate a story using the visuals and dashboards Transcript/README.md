@@ -9,3 +9,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Introduction](./Introduction.md)
 
 ## [Why Storytelling Matters](./Why%20Storytelling%20Matters.md)
+
+## [Historical Perspective](./Historical%20Perspective.md)
