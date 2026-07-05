@@ -75,3 +75,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Frequency Analysis Workflow](./Frequency%20Analysis%20Workflow.md)
 
 ## [Why Frequency Matters](./Why%20Frequency%20Matters.md)
+
+## [Important Caveat](./Important%20Caveat.md)
