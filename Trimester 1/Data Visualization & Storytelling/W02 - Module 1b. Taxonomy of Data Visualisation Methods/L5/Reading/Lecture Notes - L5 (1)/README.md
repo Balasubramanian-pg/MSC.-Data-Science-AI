@@ -22,3 +22,5 @@
 ## [8. Emphasis Techniques](./8.%20Emphasis%20Techniques.md)
 
 ## [9. De-emphasis Techniques](./9.%20De-emphasis%20Techniques.md)
+
+## [10. Direct Annotation](./10.%20Direct%20Annotation.md)
