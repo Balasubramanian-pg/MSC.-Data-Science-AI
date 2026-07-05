@@ -263,3 +263,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Example Analogy](./Example%20Analogy.md)
 
 ## [Why Interactive Dashboards Matter](./Why%20Interactive%20Dashboards%20Matter.md)
+
+## [Hybrid Narrative Design](./Hybrid%20Narrative%20Design.md)
