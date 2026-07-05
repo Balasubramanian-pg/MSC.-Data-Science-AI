@@ -78,3 +78,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [6. Relationship Charts](./6.%20Relationship%20Charts.md)
 
 ## [6.1 Purpose of Relationship Charts](./6.1%20Purpose%20of%20Relationship%20Charts.md)
+
+## [6.2 Scatter Plots](./6.2%20Scatter%20Plots.md)
