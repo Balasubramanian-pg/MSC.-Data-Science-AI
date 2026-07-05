@@ -56,3 +56,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [Interpretation](./Interpretation.md)
 
 ## [Real Operational Decision](./Real%20Operational%20Decision.md)
+
+## [4.3 Scatter Plots for Distribution](./4.3%20Scatter%20Plots%20for%20Distribution.md)
