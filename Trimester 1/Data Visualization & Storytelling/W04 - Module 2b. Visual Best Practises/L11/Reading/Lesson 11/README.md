@@ -91,3 +91,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Good Detection](./Good%20Detection.md)
 
 ## [Poor Detection](./Poor%20Detection.md)
+
+## [Assembly](./Assembly.md)
