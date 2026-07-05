@@ -1,13 +1,11 @@
 # Core Idea
 
-Bokeh titles are editable objects.
+Instead of manually assigning colors:
 
-You can:
+```python
+color="blue"
+```
 
-- create them initially
-    
-- reposition them
-    
-- modify them later
-    
-- style them dynamically
+you let:
+
+> the data determine the color
