@@ -493,3 +493,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Why Clutter Happens](./Why%20Clutter%20Happens.md)
 
 ## [Visual Failure](./Visual%20Failure.md)
+
+## [Orientation Property](./Orientation%20Property.md)
