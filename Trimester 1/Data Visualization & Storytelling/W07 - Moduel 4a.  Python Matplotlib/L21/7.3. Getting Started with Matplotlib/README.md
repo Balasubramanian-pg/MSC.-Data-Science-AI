@@ -349,3 +349,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Define values](./Define%20values.md)
 
 ## [Define colors](./Define%20colors.md)
+
+## [Create figure](./Create%20figure.md)
