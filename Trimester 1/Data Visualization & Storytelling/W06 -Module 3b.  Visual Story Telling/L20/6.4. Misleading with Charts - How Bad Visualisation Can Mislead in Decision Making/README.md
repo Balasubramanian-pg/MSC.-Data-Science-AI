@@ -243,3 +243,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Drill-Down Order and Narrative Framing](./Drill-Down%20Order%20and%20Narrative%20Framing.md)
 
 ## [The Election Example](./The%20Election%20Example.md)
+
+## [What Is Drill-Down?](./What%20Is%20Drill-Down.md)
