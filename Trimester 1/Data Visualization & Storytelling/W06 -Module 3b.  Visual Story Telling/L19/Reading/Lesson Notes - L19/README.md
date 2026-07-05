@@ -49,3 +49,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [A. Author-Driven (Linear) Narratives](./A.%20Author-Driven%20%28Linear%29%20Narratives.md)
 
 ## [Why Linear Narratives Work](./Why%20Linear%20Narratives%20Work.md)
+
+## [Weakness of Author-Driven Narratives](./Weakness%20of%20Author-Driven%20Narratives.md)
