@@ -1,11 +1,13 @@
 # Final Mental Model
 
-Think of word embeddings and topic models as:
+Think of modern NLP visualization as:
 
 ```text
-machines constructing geometric maps of meaning from language usage patterns
+cartography for semantic space
 ```
 
-through unsupervised semantic organization.
- 
-![[Pasted image 20260528221002.png]]
+where algorithms build geometric maps of meaning hidden inside language.
+
+![[Pasted image 20260528221900.png]]
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
