@@ -63,3 +63,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [2. Pauses and Pacing](./2.%20Pauses%20and%20Pacing.md)
 
 ## [Example](./Example.md)
+
+## [3. Animations and Transitions](./3.%20Animations%20and%20Transitions.md)
