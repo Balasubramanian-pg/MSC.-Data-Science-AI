@@ -93,3 +93,5 @@
 ## [What Are You Trying To Do?](./What%20Are%20You%20Trying%20To%20Do.md)
 
 ## [8. Common Pitfalls in Exploratory and Explanatory Analysis](./8.%20Common%20Pitfalls%20in%20Exploratory%20and%20Explanatory%20Analysis.md)
+
+## [1. Skipping Exploratory Analysis](./1.%20Skipping%20Exploratory%20Analysis.md)
