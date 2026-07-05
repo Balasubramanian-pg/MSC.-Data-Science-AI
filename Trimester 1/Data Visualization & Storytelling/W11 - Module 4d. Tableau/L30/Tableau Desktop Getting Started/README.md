@@ -7,3 +7,5 @@
 ## [4.1.3. Sourcing and Connecting Data](./4.1.3.%20Sourcing%20and%20Connecting%20Data.md)
 
 ## [4.1.4. The Tableau Workspace Interface](./4.1.4.%20The%20Tableau%20Workspace%20Interface.md)
+
+## [4.1.5. Understanding Data Types in Tableau](./4.1.5.%20Understanding%20Data%20Types%20in%20Tableau.md)
