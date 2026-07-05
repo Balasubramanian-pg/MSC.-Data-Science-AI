@@ -105,3 +105,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [C. `%matplotlib inline`](./C.%20%60%25matplotlib%20inline%60.md)
 
 ## [Purpose](./Purpose.md)
+
+## [Why Notebook Rendering Matters](./Why%20Notebook%20Rendering%20Matters.md)
