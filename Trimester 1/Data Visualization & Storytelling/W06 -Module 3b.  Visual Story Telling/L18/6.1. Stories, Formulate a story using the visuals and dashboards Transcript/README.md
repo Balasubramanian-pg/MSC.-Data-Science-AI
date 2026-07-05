@@ -321,3 +321,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [But Important Warning](./But%20Important%20Warning.md)
 
 ## [Good Visuals Must Be](./Good%20Visuals%20Must%20Be.md)
+
+## [Storytelling and Presentation Together](./Storytelling%20and%20Presentation%20Together.md)
