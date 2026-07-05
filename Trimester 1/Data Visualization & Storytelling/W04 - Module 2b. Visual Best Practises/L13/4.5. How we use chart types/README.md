@@ -463,3 +463,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Behavioral Timeline Analysis](./Behavioral%20Timeline%20Analysis.md)
 
 ## [Why Temporal Profiles Matter](./Why%20Temporal%20Profiles%20Matter.md)
+
+## [Important Statistical Principle](./Important%20Statistical%20Principle.md)
