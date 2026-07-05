@@ -43,3 +43,5 @@
 ## [6.2 Edward Tufte’s Principle](./6.2%20Edward%20Tufte%E2%80%99s%20Principle.md)
 
 ## [7. Visualization Decision Framework](./7.%20Visualization%20Decision%20Framework.md)
+
+## [Text-Based Flowchart](./Text-Based%20Flowchart.md)
