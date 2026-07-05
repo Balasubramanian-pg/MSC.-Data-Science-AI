@@ -259,3 +259,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Too Many Subplots](./Too%20Many%20Subplots.md)
 
 ## [Misaligned Axes](./Misaligned%20Axes.md)
+
+## [Inconsistent Colors](./Inconsistent%20Colors.md)
