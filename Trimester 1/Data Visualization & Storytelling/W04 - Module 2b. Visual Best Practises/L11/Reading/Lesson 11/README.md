@@ -13,3 +13,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Goal of Visualization](./The%20Goal%20of%20Visualization.md)
 
 ## [Traditional Mistake](./Traditional%20Mistake.md)
+
+## [Actual Goal of Visualization](./Actual%20Goal%20of%20Visualization.md)
