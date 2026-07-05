@@ -167,3 +167,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Dual-Axis Charts](./Dual-Axis%20Charts.md)
 
 ## [Powerful but Dangerous](./Powerful%20but%20Dangerous.md)
+
+## [Major Risk](./Major%20Risk.md)
