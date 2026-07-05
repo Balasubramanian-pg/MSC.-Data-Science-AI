@@ -5,3 +5,5 @@
 ## [3.0.2. Core Feature Engineering Paradigms](./3.0.2.%20Core%20Feature%20Engineering%20Paradigms.md)
 
 ## [3.0.3. Feature Extraction: Transforming Raw Data](./3.0.3.%20Feature%20Extraction%20-%20Transforming%20Raw%20Data.md)
+
+## [3.0.4. Feature Construction: Domain-Informed Variables](./3.0.4.%20Feature%20Construction%20-%20Domain-Informed%20Variables.md)
