@@ -21,3 +21,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [2. Reader-Driven Narratives](./2.%20Reader-Driven%20Narratives.md)
 
 ## [Core Philosophy](./Core%20Philosophy.md)
+
+## [Example from the Transcript](./Example%20from%20the%20Transcript.md)
