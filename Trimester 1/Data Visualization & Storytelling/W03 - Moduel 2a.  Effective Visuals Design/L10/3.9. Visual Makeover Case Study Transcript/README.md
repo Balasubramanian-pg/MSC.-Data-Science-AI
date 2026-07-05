@@ -42,3 +42,5 @@ Therefore visualization design becomes a tradeoff between:
     
 
 The transcript introduces this challenge directly.
+
+## [The Reality of Corporate Visualization](./The%20Reality%20of%20Corporate%20Visualization.md)
