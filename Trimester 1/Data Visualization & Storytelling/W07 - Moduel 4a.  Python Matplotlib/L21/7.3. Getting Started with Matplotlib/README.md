@@ -351,3 +351,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Define colors](./Define%20colors.md)
 
 ## [Create figure](./Create%20figure.md)
+
+## [Create bar chart](./Create%20bar%20chart.md)
