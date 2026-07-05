@@ -13,3 +13,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Typical Use Cases](./Typical%20Use%20Cases.md)
 
 ## [Why Visualization Matters](./Why%20Visualization%20Matters.md)
+
+## [Core Visualization Pipeline](./Core%20Visualization%20Pipeline.md)
