@@ -215,3 +215,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [6. Syntax Errors and Notebook Behavior](./6.%20Syntax%20Errors%20and%20Notebook%20Behavior.md)
 
 ## [Important Notebook Distinction](./Important%20Notebook%20Distinction.md)
+
+## [Why This Matters](./Why%20This%20Matters.md)
