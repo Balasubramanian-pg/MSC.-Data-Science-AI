@@ -311,3 +311,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [1. Use Longer Timelines When Relevant](./1.%20Use%20Longer%20Timelines%20When%20Relevant.md)
 
 ## [2. Provide Historical Benchmarks](./2.%20Provide%20Historical%20Benchmarks.md)
+
+## [3. Add Caveats](./3.%20Add%20Caveats.md)
