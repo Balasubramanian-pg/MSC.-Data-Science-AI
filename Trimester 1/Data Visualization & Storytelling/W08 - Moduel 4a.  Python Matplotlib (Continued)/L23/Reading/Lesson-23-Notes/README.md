@@ -289,3 +289,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Mental Model of Axes Arrays](./Mental%20Model%20of%20Axes%20Arrays.md)
 
 ## [Example: Minimum Temperature + Wind Speed](./Example%20-%20Minimum%20Temperature%20%2B%20Wind%20Speed.md)
+
+## [Why These Variables Were Chosen](./Why%20These%20Variables%20Were%20Chosen.md)
