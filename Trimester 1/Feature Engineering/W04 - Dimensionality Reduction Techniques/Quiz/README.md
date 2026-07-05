@@ -11,3 +11,5 @@ week: W04 - Dimensionality Reduction Techniques
 ## [Options](./Options.md)
 
 ## [Answer](./Answer.md)
+
+## [Question 2](./Question%202.md)
