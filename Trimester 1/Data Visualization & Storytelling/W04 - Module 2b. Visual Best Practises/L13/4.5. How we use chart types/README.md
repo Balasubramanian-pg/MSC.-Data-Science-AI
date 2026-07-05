@@ -471,3 +471,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Deeper Computational Insight](./The%20Deeper%20Computational%20Insight.md)
 
 ## [Modern AI and Communication Analysis](./Modern%20AI%20and%20Communication%20Analysis.md)
+
+## [Modern Enterprise Pipeline](./Modern%20Enterprise%20Pipeline.md)
