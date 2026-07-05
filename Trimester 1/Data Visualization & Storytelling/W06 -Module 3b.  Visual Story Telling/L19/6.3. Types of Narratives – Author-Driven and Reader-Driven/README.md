@@ -33,3 +33,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Hybrid Systems Work Well](./Why%20Hybrid%20Systems%20Work%20Well.md)
 
 ## [Typical Hybrid Features](./Typical%20Hybrid%20Features.md)
+
+## [The Hidden Design Challenge](./The%20Hidden%20Design%20Challenge.md)
