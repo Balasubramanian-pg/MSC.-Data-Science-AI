@@ -191,3 +191,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Confounding Variables and the Limits of Correlation](./Confounding%20Variables%20and%20the%20Limits%20of%20Correlation.md)
 
 ## [What Is a Confounding Variable?](./What%20Is%20a%20Confounding%20Variable.md)
+
+## [Why Confounders Are Dangerous](./Why%20Confounders%20Are%20Dangerous.md)
