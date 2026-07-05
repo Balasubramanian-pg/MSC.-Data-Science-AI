@@ -61,3 +61,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Importance of Baselines](./The%20Importance%20of%20Baselines.md)
 
 ## [When Truncation Is Acceptable](./When%20Truncation%20Is%20Acceptable.md)
+
+## [Comparing Three Versions of the Same Data](./Comparing%20Three%20Versions%20of%20the%20Same%20Data.md)
