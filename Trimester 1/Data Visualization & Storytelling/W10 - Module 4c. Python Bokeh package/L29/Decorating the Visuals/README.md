@@ -207,3 +207,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Glyph = Renderable Visual Object](./Glyph%20%3D%20Renderable%20Visual%20Object.md)
 
 ## [Why This Matters](./Why%20This%20Matters.md)
+
+## [Understanding Layering](./Understanding%20Layering.md)
