@@ -69,3 +69,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [--- Approach A: Matplotlib (Manual Categorical Sub-setting) ---](./---%20Approach%20A%20-%20Matplotlib%20%28Manual%20Categorical%20Sub-setting%29%20---.md)
 
 ## [To color points by category in Matplotlib, you must manually loop through](./To%20color%20points%20by%20category%20in%20Matplotlib%2C%20you%20must%20manually%20loop%20through.md)
+
+## [the dataset or write staggered data extraction layers.](./the%20dataset%20or%20write%20staggered%20data%20extraction%20layers.md)
