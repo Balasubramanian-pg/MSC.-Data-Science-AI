@@ -7,3 +7,5 @@
 ## [8.1.3. Relationships in Tableau](./8.1.3.%20Relationships%20in%20Tableau.md)
 
 ## [8.1.4. Cardinality and Referential Integrity](./8.1.4.%20Cardinality%20and%20Referential%20Integrity.md)
+
+## [8.1.5. Data Extracts and Local Memory](./8.1.5.%20Data%20Extracts%20and%20Local%20Memory.md)
