@@ -83,3 +83,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [4. Univariate Distribution Analysis](./4.%20Univariate%20Distribution%20Analysis.md)
 
 ## [Histograms](./Histograms.md)
+
+## [Why Histograms Matter](./Why%20Histograms%20Matter.md)
