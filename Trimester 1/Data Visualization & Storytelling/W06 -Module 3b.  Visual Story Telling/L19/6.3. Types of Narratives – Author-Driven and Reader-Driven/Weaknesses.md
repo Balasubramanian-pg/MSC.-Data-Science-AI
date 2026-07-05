@@ -1,22 +1,20 @@
 # Weaknesses
 
-### 1. Limited Exploration
+### 1. Cognitive Overload
 
-Users cannot investigate independently.
+Too much freedom creates confusion.
 
-### 2. Potential Bias
+### 2. Lack of Narrative Focus
 
-The author controls:
+Users may miss critical insights entirely.
 
-- framing
+### 3. Misinterpretation Risk
+
+Without guidance:
+
+- false conclusions increase
     
-- omission
-    
-- emphasis
+- statistical misunderstanding becomes common
     
 
-This can unintentionally distort interpretation.
-
-### 3. Reduced Analytical Discovery
-
-Unexpected insights are harder to uncover.
+This is why many dashboards fail despite technical sophistication.
