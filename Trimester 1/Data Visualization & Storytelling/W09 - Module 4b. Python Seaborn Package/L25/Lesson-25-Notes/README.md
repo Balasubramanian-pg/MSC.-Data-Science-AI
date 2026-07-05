@@ -13,3 +13,5 @@ I have organized the code into a logical, executable structure using a mock data
 ## [=====================================================================](./%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D.md)
 
 ## [0. SETUP: Create Mock Data for Demonstration](./0.%20SETUP%20-%20Create%20Mock%20Data%20for%20Demonstration.md)
+
+## [Setting a seed ensures the random data is reproducible every time you run it](./Setting%20a%20seed%20ensures%20the%20random%20data%20is%20reproducible%20every%20time%20you%20run%20it.md)
