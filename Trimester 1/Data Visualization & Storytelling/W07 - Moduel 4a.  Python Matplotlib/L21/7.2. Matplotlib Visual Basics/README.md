@@ -45,3 +45,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Cell-Based Execution Matters](./Why%20Cell-Based%20Execution%20Matters.md)
 
 ## [Typical Workflow](./Typical%20Workflow.md)
+
+## [6. Notebook Presentation Features](./6.%20Notebook%20Presentation%20Features.md)
