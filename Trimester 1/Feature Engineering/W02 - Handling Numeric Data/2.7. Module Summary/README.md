@@ -21,3 +21,5 @@ week: W02 - Handling Numeric Data
 ## [2.7.7. The Geometry of Scale and Proximity Metrics](./2.7.7.%20The%20Geometry%20of%20Scale%20and%20Proximity%20Metrics.md)
 
 ## [2.7.8. Step-by-Step Pipeline Execution Example](./2.7.8.%20Step-by-Step%20Pipeline%20Execution%20Example.md)
+
+## [2.7.9. Factors Affecting the Preprocessing Pipeline](./2.7.9.%20Factors%20Affecting%20the%20Preprocessing%20Pipeline.md)
