@@ -63,3 +63,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Pandas Is Central](./Why%20Pandas%20Is%20Central.md)
 
 ## [Advanced Visualization Workflow](./Advanced%20Visualization%20Workflow.md)
+
+## [Read remote data](./Read%20remote%20data.md)
