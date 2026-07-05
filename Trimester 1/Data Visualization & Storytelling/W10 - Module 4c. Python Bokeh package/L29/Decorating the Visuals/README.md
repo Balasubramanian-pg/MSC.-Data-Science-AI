@@ -771,3 +771,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [The Color Bar](./The%20Color%20Bar.md)
 
 ## [Solution: Color Bar](./Solution%20-%20Color%20Bar.md)
+
+## [What Is a Color Bar?](./What%20Is%20a%20Color%20Bar.md)
