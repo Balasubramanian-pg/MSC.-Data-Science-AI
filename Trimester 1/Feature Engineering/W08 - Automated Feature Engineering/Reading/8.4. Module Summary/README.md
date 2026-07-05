@@ -11,3 +11,5 @@ week: W08 - Automated Feature Engineering
 ## [8.4.2. Why Manual Feature Engineering Is Fundamentally Incomplete](./8.4.2.%20Why%20Manual%20Feature%20Engineering%20Is%20Fundamentally%20Incomplete.md)
 
 ## [8.4.3. The Feature Engineering Pipeline](./8.4.3.%20The%20Feature%20Engineering%20Pipeline.md)
+
+## [8.4.4. Deep Feature Synthesis (DFS) via Featuretools](./8.4.4.%20Deep%20Feature%20Synthesis%20%28DFS%29%20via%20Featuretools.md)
