@@ -149,3 +149,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Heat Map Workflow](./Heat%20Map%20Workflow.md)
 
 ## [Parallel Coordinates](./Parallel%20Coordinates.md)
+
+## [High-Dimensional Visualization](./High-Dimensional%20Visualization.md)
