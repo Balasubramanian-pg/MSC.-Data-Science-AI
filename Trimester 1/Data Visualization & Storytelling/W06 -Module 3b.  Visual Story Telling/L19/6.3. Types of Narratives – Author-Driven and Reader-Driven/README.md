@@ -11,3 +11,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Core Characteristics](./Core%20Characteristics.md)
 
 ## [Key Insight](./Key%20Insight.md)
+
+## [Why Sequence Matters](./Why%20Sequence%20Matters.md)
