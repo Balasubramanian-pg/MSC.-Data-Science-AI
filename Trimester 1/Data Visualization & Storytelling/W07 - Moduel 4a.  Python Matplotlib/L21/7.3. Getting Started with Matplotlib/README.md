@@ -37,3 +37,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [4. Creating Data with `linspace`](./4.%20Creating%20Data%20with%20%60linspace%60.md)
 
 ## [Visual Intuition](./Visual%20Intuition.md)
+
+## [Why Even Spacing Matters](./Why%20Even%20Spacing%20Matters.md)
