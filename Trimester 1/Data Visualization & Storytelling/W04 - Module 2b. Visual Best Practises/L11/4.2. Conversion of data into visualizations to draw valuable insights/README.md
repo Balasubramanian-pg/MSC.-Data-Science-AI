@@ -117,3 +117,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Bars Beat Bubbles](./Why%20Bars%20Beat%20Bubbles.md)
 
 ## [Important Design Principle](./Important%20Design%20Principle.md)
+
+## [5. Position on Common Scale](./5.%20Position%20on%20Common%20Scale.md)
