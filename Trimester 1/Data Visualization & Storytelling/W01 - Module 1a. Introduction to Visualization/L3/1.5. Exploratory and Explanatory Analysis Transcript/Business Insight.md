@@ -1,9 +1,11 @@
 # Business Insight
 
-Poor data integrity leads to:
+Organizations that collect richer datasets gain:
 
-- misleading dashboards
+- stronger analytical capability
     
-- incorrect KPIs
+- better forecasting
     
-- flawed strategic decisions
+- better personalization
+    
+- better strategic decision-making
