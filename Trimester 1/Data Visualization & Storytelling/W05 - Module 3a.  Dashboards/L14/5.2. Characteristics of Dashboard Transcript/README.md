@@ -129,3 +129,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Final Takeaways](./Final%20Takeaways.md)
 
 ## [Interview-Style Questions](./Interview-Style%20Questions.md)
+
+## [Recommended Tools & Technologies](./Recommended%20Tools%20%26%20Technologies.md)
