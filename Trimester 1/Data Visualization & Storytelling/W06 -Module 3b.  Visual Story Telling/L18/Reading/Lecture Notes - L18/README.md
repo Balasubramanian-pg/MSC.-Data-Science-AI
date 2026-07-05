@@ -237,3 +237,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Typical Corporate Failure](./Typical%20Corporate%20Failure.md)
 
 ## [Visual Communication Principle](./Visual%20Communication%20Principle.md)
+
+## [Death by Presentation](./Death%20by%20Presentation.md)
