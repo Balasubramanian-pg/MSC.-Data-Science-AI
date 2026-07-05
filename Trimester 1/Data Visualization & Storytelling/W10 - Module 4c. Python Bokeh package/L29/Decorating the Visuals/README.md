@@ -425,3 +425,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Minor Tick Styling](./Minor%20Tick%20Styling.md)
 
 ## [What Are Minor Ticks?](./What%20Are%20Minor%20Ticks.md)
+
+## [Styling Minor Ticks](./Styling%20Minor%20Ticks.md)
