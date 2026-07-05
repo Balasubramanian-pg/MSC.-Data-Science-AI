@@ -477,3 +477,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Mistake 3: Ignoring Formatting](./Mistake%203%20-%20Ignoring%20Formatting.md)
 
 ## [The Dataset](./The%20Dataset.md)
+
+## [Step 1: Creating the Figure](./Step%201%20-%20Creating%20the%20Figure.md)
