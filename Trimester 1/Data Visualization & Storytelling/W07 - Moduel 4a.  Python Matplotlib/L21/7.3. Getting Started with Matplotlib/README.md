@@ -155,3 +155,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [The Hidden Philosophy of Matplotlib](./The%20Hidden%20Philosophy%20of%20Matplotlib.md)
 
 ## [Common Beginner Mistakes](./Common%20Beginner%20Mistakes.md)
+
+## [1. Forgetting Legends](./1.%20Forgetting%20Legends.md)
