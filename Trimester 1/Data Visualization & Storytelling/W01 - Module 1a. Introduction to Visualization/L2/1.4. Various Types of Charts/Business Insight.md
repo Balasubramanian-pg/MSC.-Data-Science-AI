@@ -1,12 +1,9 @@
 # Business Insight
 
-The company can design:
+Executives can quickly assess:
 
-- chatbot input boxes
+- brand perception
     
-- tweet-processing systems
+- customer satisfaction
     
-- text storage systems
-    
-
-around average complaint lengths.
+- crisis severity
