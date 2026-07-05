@@ -253,3 +253,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Important Difference](./Important%20Difference.md)
 
 ## [Plot Styling Properties](./Plot%20Styling%20Properties.md)
+
+## [Visualization Layers](./Visualization%20Layers.md)
