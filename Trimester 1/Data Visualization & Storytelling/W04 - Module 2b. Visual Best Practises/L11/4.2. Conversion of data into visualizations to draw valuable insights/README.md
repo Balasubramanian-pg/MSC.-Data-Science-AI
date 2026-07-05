@@ -99,3 +99,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Limitation](./Important%20Limitation.md)
 
 ## [Key Design Insight](./Key%20Design%20Insight.md)
+
+## [Trend Analysis](./Trend%20Analysis.md)
