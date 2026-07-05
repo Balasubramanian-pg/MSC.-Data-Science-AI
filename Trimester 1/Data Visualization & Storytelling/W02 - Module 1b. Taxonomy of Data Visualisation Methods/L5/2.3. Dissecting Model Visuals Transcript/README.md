@@ -30,3 +30,5 @@
 ## [12. Direct Labeling vs Legends](./12.%20Direct%20Labeling%20vs%20Legends.md)
 
 ## [13. Footnotes as a Design Tool](./13.%20Footnotes%20as%20a%20Design%20Tool.md)
+
+## [14. Model Visualization Design Checklist](./14.%20Model%20Visualization%20Design%20Checklist.md)
