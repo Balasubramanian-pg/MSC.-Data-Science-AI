@@ -203,3 +203,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Visual Effect](./Visual%20Effect.md)
 
 ## [Tradeoff](./Tradeoff.md)
+
+## [5. Saving Figures](./5.%20Saving%20Figures.md)
