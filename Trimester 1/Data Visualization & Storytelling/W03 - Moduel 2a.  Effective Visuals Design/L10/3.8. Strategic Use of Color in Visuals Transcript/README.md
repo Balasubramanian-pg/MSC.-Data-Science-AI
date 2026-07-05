@@ -118,3 +118,5 @@ Bad visualizations use color excessively.
 ## [Accessibility Decision Tree](./Accessibility%20Decision%20Tree.md)
 
 ## [Color and Cognitive Load](./Color%20and%20Cognitive%20Load.md)
+
+## [Why Minimalism Works](./Why%20Minimalism%20Works.md)
