@@ -233,3 +233,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Modern Real-World Applications](./Modern%20Real-World%20Applications.md)
 
 ## [Customer Feedback Analytics Pipeline](./Customer%20Feedback%20Analytics%20Pipeline.md)
+
+## [Amazon Review Systems](./Amazon%20Review%20Systems.md)
