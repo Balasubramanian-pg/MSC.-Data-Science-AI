@@ -39,3 +39,5 @@ This is foundational to:
 ## [Standard DataFrame](./Standard%20DataFrame.md)
 
 ## [GeoDataFrame](./GeoDataFrame.md)
+
+## [Step 1: Install GeoPandas](./Step%201%20-%20Install%20GeoPandas.md)
