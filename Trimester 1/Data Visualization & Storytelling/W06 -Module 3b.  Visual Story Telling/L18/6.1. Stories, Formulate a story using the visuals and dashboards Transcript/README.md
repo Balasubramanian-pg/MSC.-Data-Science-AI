@@ -69,3 +69,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Storytelling in Data Visualization](./Storytelling%20in%20Data%20Visualization.md)
 
 ## [Weak Visualization Thinking](./Weak%20Visualization%20Thinking.md)
+
+## [Strong Data Storytelling](./Strong%20Data%20Storytelling.md)
