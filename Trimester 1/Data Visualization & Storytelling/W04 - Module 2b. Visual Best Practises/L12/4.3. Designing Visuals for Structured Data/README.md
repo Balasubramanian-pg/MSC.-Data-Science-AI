@@ -89,3 +89,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Histogram Structure](./Histogram%20Structure.md)
 
 ## [Example: Bounce Rates](./Example%20-%20Bounce%20Rates.md)
+
+## [Business Insight](./Business%20Insight.md)
