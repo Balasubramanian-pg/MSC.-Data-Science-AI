@@ -627,3 +627,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Deep Visualization Principle](./Deep%20Visualization%20Principle.md)
 
 ## [Part 2: Legends](./Part%202%20-%20Legends.md)
+
+## [What Is a Legend?](./What%20Is%20a%20Legend.md)
