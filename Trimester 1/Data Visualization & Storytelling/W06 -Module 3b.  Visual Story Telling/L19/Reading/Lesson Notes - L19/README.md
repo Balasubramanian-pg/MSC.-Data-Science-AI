@@ -167,3 +167,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Visualization Techniques](./Visualization%20Techniques.md)
 
 ## [Critical Insight: Not All Outliers Are Errors](./Critical%20Insight%20-%20Not%20All%20Outliers%20Are%20Errors.md)
+
+## [Relationship Between Story Types](./Relationship%20Between%20Story%20Types.md)
