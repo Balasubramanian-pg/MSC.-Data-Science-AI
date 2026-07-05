@@ -63,3 +63,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Dashboard Engineering Stack](./Dashboard%20Engineering%20Stack.md)
 
 ## [Pre-Attentive Attributes in Dashboards](./Pre-Attentive%20Attributes%20in%20Dashboards.md)
+
+## [Examples](./Examples.md)
