@@ -39,3 +39,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [(columns/rows) for a crystal-clear side-by-side trend comparison.](./%28columnsrows%29%20for%20a%20crystal-clear%20side-by-side%20trend%20comparison.md)
 
 ## [Set an overall master title above all subplots](./Set%20an%20overall%20master%20title%20above%20all%20subplots.md)
+
+## [Technical Deep-Dive: Visualizing Dimensions & Reducing Cognitive Load](./Technical%20Deep-Dive%20-%20Visualizing%20Dimensions%20%26%20Reducing%20Cognitive%20Load.md)
