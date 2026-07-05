@@ -103,3 +103,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [End-to-End NLP Visualization Pipeline](./End-to-End%20NLP%20Visualization%20Pipeline.md)
 
 ## [Final Conceptual Shift](./Final%20Conceptual%20Shift.md)
+
+## [Final Mental Model](./Final%20Mental%20Model.md)
