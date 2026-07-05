@@ -131,3 +131,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [6. Legends](./6.%20Legends.md)
 
 ## [Result](./Result.md)
+
+## [7. Rendering the Plot](./7.%20Rendering%20the%20Plot.md)
