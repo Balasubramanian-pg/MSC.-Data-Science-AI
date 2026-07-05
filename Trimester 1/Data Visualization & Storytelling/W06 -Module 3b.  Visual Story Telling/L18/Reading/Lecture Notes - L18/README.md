@@ -97,3 +97,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Visual Storytelling Pipeline](./Visual%20Storytelling%20Pipeline.md)
 
 ## [Real-World Example: 2000 U.S. Election Maps](./Real-World%20Example%20-%202000%20U.S.%20Election%20Maps.md)
+
+## [Why This Example Matters](./Why%20This%20Example%20Matters.md)
