@@ -1,29 +1,21 @@
 # Example from the Transcript
 
-The transcript references:
+The voting-share example demonstrates hybrid storytelling.
 
-- drill-down dashboards
-    
-- exploratory analysis
-    
-- user-enabled interaction
-    
+The author decides:
 
-For example:
-
-- users explore datasets
+- winning percentages are the key story
     
-- drill into categories
-    
-- derive their own findings
-    
-- build their own narratives
+- the visualization structure is fixed
     
 
-This is fundamentally different from:
+But users can:
 
-> “Here is the conclusion.”
+- change states
+    
+- interact with the chart
+    
+- compare regions
+    
 
-Instead, it becomes:
-
-> “Investigate and decide.”
+The narrative is partially constrained but partially exploratory.
