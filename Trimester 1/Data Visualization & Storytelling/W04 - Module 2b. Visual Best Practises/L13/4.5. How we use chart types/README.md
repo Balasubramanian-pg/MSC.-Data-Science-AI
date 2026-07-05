@@ -183,3 +183,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Semantic Scoring](./Semantic%20Scoring.md)
 
 ## [Quantifying Emotion](./Quantifying%20Emotion.md)
+
+## [Sentiment Visualization](./Sentiment%20Visualization.md)
