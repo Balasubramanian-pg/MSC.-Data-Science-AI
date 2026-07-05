@@ -327,3 +327,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Communication Design Goal](./Communication%20Design%20Goal.md)
 
 ## [Full Communication Pipeline](./Full%20Communication%20Pipeline.md)
+
+## [Deepest Lesson of the Entire Topic](./Deepest%20Lesson%20of%20the%20Entire%20Topic.md)
