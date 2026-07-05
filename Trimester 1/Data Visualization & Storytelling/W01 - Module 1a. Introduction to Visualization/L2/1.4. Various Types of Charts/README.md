@@ -118,3 +118,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [3. Missing Labels](./3.%20Missing%20Labels.md)
 
 ## [4. Improper Scaling](./4.%20Improper%20Scaling.md)
+
+## [5. Wrong Chart Selection](./5.%20Wrong%20Chart%20Selection.md)
