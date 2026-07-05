@@ -1,8 +1,6 @@
 # Example
 
 ```python
-ax.plot(x, np.sin(x), label='sine')
-ax.plot(x, np.cos(x), label='cosine')
-
-ax.legend()
+ax.plot(x, y, color='blue', linestyle='-', label='sine')
+ax.plot(x, y2, color='red', linestyle='--', label='cosine')
 ```
