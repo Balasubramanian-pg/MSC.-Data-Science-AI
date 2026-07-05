@@ -10,3 +10,5 @@
 ## [2. From Data to Action](./2.%20From%20Data%20to%20Action.md)
 
 ## [3. Why Storytelling Matters](./3.%20Why%20Storytelling%20Matters.md)
+
+## [4. The Screenplay Model of Data Storytelling](./4.%20The%20Screenplay%20Model%20of%20Data%20Storytelling.md)
