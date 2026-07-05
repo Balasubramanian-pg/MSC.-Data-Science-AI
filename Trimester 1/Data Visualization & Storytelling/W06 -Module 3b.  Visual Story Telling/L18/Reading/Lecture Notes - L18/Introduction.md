@@ -1,40 +1,32 @@
 # Introduction
 
-Storytelling is one of the oldest and most powerful cognitive technologies humans have ever developed.
+Visual storytelling is the combination of:
 
-Long before:
-
-- writing,
+- data,
     
-- databases,
+- visuals,
     
-- dashboards,
-    
-- or statistical reports,
+- and narrative structure
     
 
-humans transmitted:
+to shape:
 
-- survival knowledge,
+- interpretation,
     
-- cultural values,
+- understanding,
     
-- history,
+- memory,
     
-- strategy,
-    
-- and social identity
+- and public perception.
     
 
-through stories.
+This is fundamentally different from:  
+simply displaying charts.
 
-Modern business communication still relies heavily on storytelling because:  
-human cognition is fundamentally narrative-driven.
+Visual storytelling attempts to answer:
 
-This section explains:
+> What does the data mean?
 
-- why storytelling is powerful,
-    
-- why humans remember stories better than raw information,
-    
-- and how storytelling influences decision-making, persuasion, and memory.
+not merely:
+
+> What does the data show?
