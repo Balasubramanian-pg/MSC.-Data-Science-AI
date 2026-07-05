@@ -245,3 +245,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Major NLP Problems](./Major%20NLP%20Problems.md)
 
 ## [Sentiment Failure Pipeline](./Sentiment%20Failure%20Pipeline.md)
+
+## [Joint Plots](./Joint%20Plots.md)
