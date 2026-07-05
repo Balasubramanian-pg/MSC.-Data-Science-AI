@@ -141,3 +141,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Time-Series Mental Model](./Time-Series%20Mental%20Model.md)
 
 ## [Plotting Maximum Temperature](./Plotting%20Maximum%20Temperature.md)
+
+## [Why Time-Series Visualization Matters](./Why%20Time-Series%20Visualization%20Matters.md)
