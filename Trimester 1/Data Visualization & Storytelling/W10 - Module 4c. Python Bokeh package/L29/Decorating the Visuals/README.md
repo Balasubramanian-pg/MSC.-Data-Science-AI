@@ -705,3 +705,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Why Palettes Matter](./Why%20Palettes%20Matter.md)
 
 ## [What Is a Palette?](./What%20Is%20a%20Palette.md)
+
+## [Bokeh Palettes](./Bokeh%20Palettes.md)
