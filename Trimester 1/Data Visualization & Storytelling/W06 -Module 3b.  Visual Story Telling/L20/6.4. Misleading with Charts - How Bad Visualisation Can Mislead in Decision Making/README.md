@@ -147,3 +147,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Visual Compression Problem](./Visual%20Compression%20Problem.md)
 
 ## [Why Trend Shape Matters](./Why%20Trend%20Shape%20Matters.md)
+
+## [The Key Tradeoff in Visualization](./The%20Key%20Tradeoff%20in%20Visualization.md)
