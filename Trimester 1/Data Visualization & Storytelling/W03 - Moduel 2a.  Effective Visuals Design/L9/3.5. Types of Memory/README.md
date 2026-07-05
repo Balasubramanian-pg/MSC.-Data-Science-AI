@@ -95,3 +95,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [With Pre-Attentive Design](./With%20Pre-Attentive%20Design.md)
 
 ## [Important Visualization Principle](./Important%20Visualization%20Principle.md)
+
+## [Real Dashboard Implications](./Real%20Dashboard%20Implications.md)
