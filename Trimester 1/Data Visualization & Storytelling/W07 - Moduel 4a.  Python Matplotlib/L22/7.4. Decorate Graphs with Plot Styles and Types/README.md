@@ -21,3 +21,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Understanding Colors in Matplotlib](./Understanding%20Colors%20in%20Matplotlib.md)
 
 ## [The Fundamental Role of Color](./The%20Fundamental%20Role%20of%20Color.md)
+
+## [Default Color Cycles](./Default%20Color%20Cycles.md)
