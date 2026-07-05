@@ -181,3 +181,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Stopword Reduction Pipeline](./Stopword%20Reduction%20Pipeline.md)
 
 ## [Important Computational Insight](./Important%20Computational%20Insight.md)
+
+## [6. Stemming](./6.%20Stemming.md)
