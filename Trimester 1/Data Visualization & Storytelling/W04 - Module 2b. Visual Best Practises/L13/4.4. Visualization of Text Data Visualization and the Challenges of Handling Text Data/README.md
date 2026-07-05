@@ -19,3 +19,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Structured Data Pipeline](./Structured%20Data%20Pipeline.md)
 
 ## [Unstructured Data](./Unstructured%20Data.md)
+
+## [The Opposite Problem](./The%20Opposite%20Problem.md)
