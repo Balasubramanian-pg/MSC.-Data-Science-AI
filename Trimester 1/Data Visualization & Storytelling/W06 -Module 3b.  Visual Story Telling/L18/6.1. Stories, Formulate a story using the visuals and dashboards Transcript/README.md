@@ -283,3 +283,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Information Visibility ≠ Information Impact](./Information%20Visibility%20%E2%89%A0%20Information%20Impact.md)
 
 ## [Real-World Consequences](./Real-World%20Consequences.md)
+
+## [High-Stakes Domains Where Visualization Matters](./High-Stakes%20Domains%20Where%20Visualization%20Matters.md)
