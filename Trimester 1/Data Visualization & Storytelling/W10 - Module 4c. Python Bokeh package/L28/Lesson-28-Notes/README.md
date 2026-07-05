@@ -27,3 +27,5 @@ Every single function, method, and parameter is explained in detail using Python
 ## [Execute the function to see the plot](./Execute%20the%20function%20to%20see%20the%20plot.md)
 
 ## [🟢 Module 2: Integrating Pandas DataFrames](./%F0%9F%9F%A2%20Module%202%20-%20Integrating%20Pandas%20DataFrames.md)
+
+## [MODULE 2: DATAFRAMES & LINE PLOTS](./MODULE%202%20-%20DATAFRAMES%20%26%20LINE%20PLOTS.md)
