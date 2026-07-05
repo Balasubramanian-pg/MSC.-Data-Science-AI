@@ -1,12 +1,10 @@
 # Example
 
-Scatter plot:
-
-- blue dots = Segment A
+- muted secondary metrics
     
-- yellow dots = Segment B
+- bright primary KPI
     
-- cyan dots = Segment C
+- faded background context
     
 
-The brain instantly forms categories.
+The eye naturally prioritizes stronger contrast.
