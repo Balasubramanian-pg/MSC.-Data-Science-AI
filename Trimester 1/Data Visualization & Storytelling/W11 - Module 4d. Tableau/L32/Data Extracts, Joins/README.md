@@ -27,3 +27,5 @@
 ## [8.1.13. Joins vs Unions](./8.1.13.%20Joins%20vs%20Unions.md)
 
 ## [8.1.14. Common Misinterpretations](./8.1.14.%20Common%20Misinterpretations.md)
+
+## [8.1.15. Conclusions](./8.1.15.%20Conclusions.md)
