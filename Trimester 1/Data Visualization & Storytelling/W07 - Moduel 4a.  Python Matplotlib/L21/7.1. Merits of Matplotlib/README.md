@@ -49,3 +49,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [The 80/20 Reality](./The%208020%20Reality.md)
 
 ## [Therefore the Real Skill Is:](./Therefore%20the%20Real%20Skill%20Is%20-.md)
+
+## [6. Documentation-Driven Learning](./6.%20Documentation-Driven%20Learning.md)
