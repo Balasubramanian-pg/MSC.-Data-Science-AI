@@ -1,26 +1,23 @@
 # Question
 
-**In a credit scoring model, converting a continuous credit score into a binary feature based on a threshold (e.g., 700) is an example of ____________.**
+**What is the most likely impact of not scaling features before applying KMeans clustering?**
 
 ### Options
 
-* Attribute smoothing
-* Binarisation
-* Feature scaling
-* Normalisation
+* Increased convergence speed
+* Biased clustering due to feature magnitude dominance
+* Improved silhouette score
+* More meaningful cluster centroids
 
 ### Answer
 
-✅ **Binarisation**
+✅ **Biased clustering due to feature magnitude dominance**
 
 > [!NOTE]
 > **Reason**
 >
-> **Binarisation** transforms a numerical variable into two categories, typically represented as **0 and 1**, using a threshold.
+> KMeans relies on distance calculations to assign observations to clusters.
 >
-> Example:
+> Without scaling, variables with larger numeric ranges disproportionately influence the clustering process.
 >
-> * Credit Score ≥ 700 → 1
-> * Credit Score < 700 → 0
->
-> This process creates a binary feature from a continuous variable.
+> As a result, clusters become biased toward high-magnitude features rather than reflecting the true underlying structure of the data.
