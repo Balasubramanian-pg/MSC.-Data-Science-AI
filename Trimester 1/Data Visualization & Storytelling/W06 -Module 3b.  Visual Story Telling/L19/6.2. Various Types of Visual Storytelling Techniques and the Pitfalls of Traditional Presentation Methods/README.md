@@ -13,3 +13,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Storytelling Bridges Logic and Emotion](./Storytelling%20Bridges%20Logic%20and%20Emotion.md)
 
 ## [The Cognitive Reality](./The%20Cognitive%20Reality.md)
+
+## [Example](./Example.md)
