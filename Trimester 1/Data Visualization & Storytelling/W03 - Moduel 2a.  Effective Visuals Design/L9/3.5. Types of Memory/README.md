@@ -69,3 +69,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Visualization Chunking](./Visualization%20Chunking.md)
 
 ## [3. Long-Term Memory](./3.%20Long-Term%20Memory.md)
+
+## [Why Long-Term Memory Matters](./Why%20Long-Term%20Memory%20Matters.md)
