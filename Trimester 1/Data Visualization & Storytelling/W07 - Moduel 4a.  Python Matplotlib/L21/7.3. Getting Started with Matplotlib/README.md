@@ -55,3 +55,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Display plot](./Display%20plot.md)
 
 ## [What Happens Internally](./What%20Happens%20Internally.md)
+
+## [Step 1](./Step%201.md)
