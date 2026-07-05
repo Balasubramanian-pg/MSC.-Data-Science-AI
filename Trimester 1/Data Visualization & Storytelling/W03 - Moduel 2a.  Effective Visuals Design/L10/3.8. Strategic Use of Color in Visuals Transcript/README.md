@@ -128,3 +128,5 @@ Bad visualizations use color excessively.
 ## [Real-World Dashboard Example](./Real-World%20Dashboard%20Example.md)
 
 ## [Poor Dashboard](./Poor%20Dashboard.md)
+
+## [Good Dashboard](./Good%20Dashboard.md)
