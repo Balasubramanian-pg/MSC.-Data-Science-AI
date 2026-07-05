@@ -229,3 +229,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Hatch Pattern Insight](./Hatch%20Pattern%20Insight.md)
 
 ## [Transparency (`alpha`)](./Transparency%20%28%60alpha%60%29.md)
+
+## [Why Transparency Is Powerful](./Why%20Transparency%20Is%20Powerful.md)
