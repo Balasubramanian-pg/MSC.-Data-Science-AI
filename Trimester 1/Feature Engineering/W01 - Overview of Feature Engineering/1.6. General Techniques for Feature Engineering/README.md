@@ -19,3 +19,5 @@ week: W01 - Overview of Feature Engineering
 ## [1.6.6. Selection and Dimensionality Reduction](./1.6.6.%20Selection%20and%20Dimensionality%20Reduction.md)
 
 ## [1.6.7. Binning and Outlier Handling](./1.6.7.%20Binning%20and%20Outlier%20Handling.md)
+
+## [1.6.8. Domain-Specific Techniques](./1.6.8.%20Domain-Specific%20Techniques.md)
