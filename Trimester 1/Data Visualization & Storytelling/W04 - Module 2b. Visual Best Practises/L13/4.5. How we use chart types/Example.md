@@ -1,14 +1,17 @@
 # Example
 
-A character may appear:
+If:
 
-- infrequently
-    
-- but drive the entire story
-    
+```text
+King ↔ Lion
+```
 
-Another character may appear:
+appears frequently,
 
-- constantly
+the text likely contains:
+
+- political symbolism
     
-- but contribute little meaningfully
+- hierarchy structures
+    
+- recurring narrative interactions
