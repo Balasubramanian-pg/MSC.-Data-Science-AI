@@ -94,3 +94,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [6.4 Word Clouds](./6.4%20Word%20Clouds.md)
 
 ## [How Word Clouds Work](./How%20Word%20Clouds%20Work.md)
+
+## [Important Analytical Distinction](./Important%20Analytical%20Distinction.md)
