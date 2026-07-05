@@ -309,3 +309,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Transition to Curve Fitting](./Transition%20to%20Curve%20Fitting.md)
 
 ## [What Is Curve Fitting?](./What%20Is%20Curve%20Fitting.md)
+
+## [Understanding `np.polyfit()`](./Understanding%20%60np.polyfit%28%29%60.md)
