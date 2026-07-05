@@ -125,3 +125,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Position Is Best](./Why%20Position%20Is%20Best.md)
 
 ## [Why Position Beats Length](./Why%20Position%20Beats%20Length.md)
+
+## [Perceptual Superiority of Position](./Perceptual%20Superiority%20of%20Position.md)
