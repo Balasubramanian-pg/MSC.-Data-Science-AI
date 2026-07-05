@@ -261,3 +261,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Color Matters](./Why%20Color%20Matters.md)
 
 ## [3. Intelligent Coding Assistance](./3.%20Intelligent%20Coding%20Assistance.md)
+
+## [4. Plot Customization](./4.%20Plot%20Customization.md)
