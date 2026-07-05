@@ -81,3 +81,5 @@ Each visualization method carries distinct input data requirements, analytical p
 ## [Domain V: Showing Changes Over Time](./Domain%20V%20-%20Showing%20Changes%20Over%20Time.md)
 
 ## [Production-Grade Systems Architecture and Pipelines](./Production-Grade%20Systems%20Architecture%20and%20Pipelines.md)
+
+## [Performance Engineering and Debugging Strategies](./Performance%20Engineering%20and%20Debugging%20Strategies.md)
