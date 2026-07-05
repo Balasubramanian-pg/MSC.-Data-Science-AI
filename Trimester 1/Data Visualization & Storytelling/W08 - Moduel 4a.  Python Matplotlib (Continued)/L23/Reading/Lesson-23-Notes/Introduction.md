@@ -1,36 +1,43 @@
 # Introduction
 
-This section introduces one of the most important practical workflows in modern data visualization:
+As visualizations become more sophisticated, a single chart is often insufficient to represent multiple related variables.
 
-> fetching real-world online datasets and visualizing time-series information.
+Real analytical systems rarely involve only one signal.
 
-The lecture demonstrates a complete mini pipeline:
+For example, in weather analytics:
 
-1. fetch remote CSV data
+- temperature
     
-2. parse datetime information
+- precipitation
     
-3. structure the dataset properly
+- humidity
     
-4. configure visualization styles
+- wind speed
     
-5. plot a time-series graph
+- pressure
     
 
-This is significantly more realistic than toy datasets manually typed into Python lists.
+all interact simultaneously.
 
-The example uses weather data from the Vega datasets repository.
+The lecture introduces one of the most important structural tools in Matplotlib:
 
-This matters because weather datasets exhibit several characteristics common in real-world analytics:
+```python
+plt.subplots()
+```
 
-- temporal structure
+This is foundational for building:
+
+- dashboards
     
-- seasonality
+- comparative visualizations
     
-- trends
+- monitoring systems
     
-- variability
+- machine learning diagnostics
     
-- cyclic behavior
+- financial analytics
     
-- continuous numerical measurements
+- scientific reporting
+    
+
+Source notes: provided lecture content.
