@@ -1,7 +1,12 @@
 # Key Principle
 
-Visibility delay reduces decision quality.
+Decision latency tolerance determines dashboard design.
 
-If a dashboard updates too slowly:  
-it becomes historical reporting,  
-not operational intelligence.
+If delays are unacceptable:  
+the dashboard must prioritize:
+
+- speed,
+    
+- visibility,
+    
+- and alerts.
