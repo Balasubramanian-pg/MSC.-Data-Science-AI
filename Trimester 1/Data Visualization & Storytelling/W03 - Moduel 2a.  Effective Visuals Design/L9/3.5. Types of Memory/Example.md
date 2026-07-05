@@ -1,18 +1,14 @@
 # Example
 
-Users already associate:
+If:
 
-|Color|Meaning|
-|---|---|
-|Red|Danger/loss|
-|Green|Positive/growth|
-
-These are long-term memory associations.
-
-If a dashboard violates them:
-
-- confusion increases
+- every KPI is red
     
-- interpretation slows
+- every chart is animated
     
-- mistakes happen
+- every label is bold
+    
+- every region is highlighted
+    
+
+then nothing stands out.
