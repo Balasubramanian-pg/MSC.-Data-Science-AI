@@ -135,3 +135,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Example Problem](./Example%20Problem.md)
 
 ## [The Deeper Problem](./The%20Deeper%20Problem.md)
+
+## [Core Strategic Lesson](./Core%20Strategic%20Lesson.md)
