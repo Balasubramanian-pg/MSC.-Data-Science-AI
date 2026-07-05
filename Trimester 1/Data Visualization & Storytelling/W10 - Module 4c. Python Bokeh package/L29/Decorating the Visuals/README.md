@@ -679,3 +679,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Common Positions](./Common%20Positions.md)
 
 ## [Legend Title](./Legend%20Title.md)
+
+## [Why Titles Matter](./Why%20Titles%20Matter.md)
