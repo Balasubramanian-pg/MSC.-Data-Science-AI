@@ -29,3 +29,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [STEP 5: Display](./STEP%205%20-%20Display.md)
 
 ## [5. Customization Categories](./5.%20Customization%20Categories.md)
+
+## [6. Key Bokeh vs. Matplotlib/Seaborn Differences](./6.%20Key%20Bokeh%20vs.%20MatplotlibSeaborn%20Differences.md)
