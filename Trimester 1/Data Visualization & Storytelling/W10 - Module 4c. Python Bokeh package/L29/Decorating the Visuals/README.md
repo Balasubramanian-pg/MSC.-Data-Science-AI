@@ -787,3 +787,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Color bar](./Color%20bar.md)
 
 ## [Why Color Mapping Is Powerful](./Why%20Color%20Mapping%20Is%20Powerful.md)
+
+## [Common Use Cases](./Common%20Use%20Cases.md)
