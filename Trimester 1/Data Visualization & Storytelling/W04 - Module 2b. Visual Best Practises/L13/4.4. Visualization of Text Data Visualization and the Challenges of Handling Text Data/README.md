@@ -13,3 +13,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Core Distinction](./The%20Core%20Distinction.md)
 
 ## [Structured Data](./Structured%20Data.md)
+
+## [Why Structured Data Is Easier](./Why%20Structured%20Data%20Is%20Easier.md)
