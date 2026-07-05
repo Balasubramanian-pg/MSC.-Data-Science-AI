@@ -123,3 +123,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Garr Reynolds Principles](./Garr%20Reynolds%20Principles.md)
 
 ## [1. Restraint](./1.%20Restraint.md)
+
+## [Definition](./Definition.md)
