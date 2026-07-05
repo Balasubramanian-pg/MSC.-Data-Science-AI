@@ -171,3 +171,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Common Beginner Mistakes](./Common%20Beginner%20Mistakes.md)
 
 ## [Mistake 1: Confusing Fill vs Line](./Mistake%201%20-%20Confusing%20Fill%20vs%20Line.md)
+
+## [Mistake 2: Alpha Overuse](./Mistake%202%20-%20Alpha%20Overuse.md)
