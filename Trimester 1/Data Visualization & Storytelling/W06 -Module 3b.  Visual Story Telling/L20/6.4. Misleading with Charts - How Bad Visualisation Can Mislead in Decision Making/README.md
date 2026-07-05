@@ -327,3 +327,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [COVID-19 Example](./COVID-19%20Example.md)
 
 ## [Pre-attentive Attention Hijacking](./Pre-attentive%20Attention%20Hijacking.md)
+
+## [Good Color Encoding Principles](./Good%20Color%20Encoding%20Principles.md)
