@@ -69,3 +69,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Marker Types](./Marker%20Types.md)
 
 ## [Line Width](./Line%20Width.md)
+
+## [Dash Cap Styles](./Dash%20Cap%20Styles.md)
