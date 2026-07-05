@@ -631,3 +631,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [What Is a Legend?](./What%20Is%20a%20Legend.md)
 
 ## [Creating Multiple Glyphs](./Creating%20Multiple%20Glyphs.md)
+
+## [Line Glyph](./Line%20Glyph.md)
