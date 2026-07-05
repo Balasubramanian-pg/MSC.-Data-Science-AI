@@ -62,3 +62,5 @@
 ## [Key Insight from Lecture](./Key%20Insight%20from%20Lecture.md)
 
 ## [4. Detailed Case Study: Election Voter Turnout Visualization](./4.%20Detailed%20Case%20Study%20-%20Election%20Voter%20Turnout%20Visualization.md)
+
+## [4.1 Acquisition from Election Commission Data](./4.1%20Acquisition%20from%20Election%20Commission%20Data.md)
