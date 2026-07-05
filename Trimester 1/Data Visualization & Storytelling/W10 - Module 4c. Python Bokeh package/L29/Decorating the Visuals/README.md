@@ -609,3 +609,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Final Mental Model](./Final%20Mental%20Model.md)
 
 ## [Part 1: Advanced Title Customization](./Part%201%20-%20Advanced%20Title%20Customization.md)
+
+## [Title Font Size](./Title%20Font%20Size.md)
