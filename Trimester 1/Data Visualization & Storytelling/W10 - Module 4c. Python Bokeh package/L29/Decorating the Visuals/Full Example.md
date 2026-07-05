@@ -2,13 +2,35 @@
 
 ```python
 from bokeh.plotting import figure, show
+from bokeh.transform import linear_cmap
+from bokeh.palettes import Turbo256
+from bokeh.models import ColorBar
+from bokeh.models import ColumnDataSource
 
-x = [1,2,3,4,5]
+x = list(range(-32, 33))
+y = [i**2 for i in x]
 
-y1 = [2,4,6,8,10]
-y2 = [1,3,2,5,4]
+source = ColumnDataSource(data=dict(x=x, y=y))
 
-legend_plot = figure(
-    title="Legend Example",
-    height=400
+mapper = linear_cmap(
+    field_name='y',
+    palette=Turbo256,
+    low=min(y),
+    high=max(y)
+)
+
+mapper_plot = figure(
+    title="Linear Color Mapping Example",
+    height=400,
+    width=700
+)
+
+scatter = mapper_plot.scatter(
+    'x',
+    'y',
+
+    source=source,
+
+    color=mapper,
+    size=10
 )
