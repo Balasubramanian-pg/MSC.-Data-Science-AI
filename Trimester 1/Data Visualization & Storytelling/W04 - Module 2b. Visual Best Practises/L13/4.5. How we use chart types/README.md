@@ -413,3 +413,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Core Analytical Shift](./The%20Core%20Analytical%20Shift.md)
 
 ## [Communication as Behavioral Telemetry](./Communication%20as%20Behavioral%20Telemetry.md)
+
+## [Communication Intelligence Pipeline](./Communication%20Intelligence%20Pipeline.md)
