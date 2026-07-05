@@ -87,3 +87,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [3. No Conflict](./3.%20No%20Conflict.md)
 
 ## [4. No Context](./4.%20No%20Context.md)
+
+## [5. No Action Implication](./5.%20No%20Action%20Implication.md)
