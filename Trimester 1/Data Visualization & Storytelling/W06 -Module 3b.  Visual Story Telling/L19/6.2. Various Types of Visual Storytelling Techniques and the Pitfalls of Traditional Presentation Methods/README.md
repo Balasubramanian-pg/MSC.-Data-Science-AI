@@ -111,3 +111,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Simplified Narrative Flow](./Simplified%20Narrative%20Flow.md)
 
 ## [Why This Works Better Than Traditional Dashboards](./Why%20This%20Works%20Better%20Than%20Traditional%20Dashboards.md)
+
+## [Nested Loops Framework](./Nested%20Loops%20Framework.md)
