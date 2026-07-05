@@ -71,3 +71,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Random Walk](./Random%20Walk.md)
 
 ## [Mathematical Interpretation](./Mathematical%20Interpretation.md)
+
+## [Plotting Multiple Series](./Plotting%20Multiple%20Series.md)
