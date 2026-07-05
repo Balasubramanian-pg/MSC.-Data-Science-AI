@@ -429,3 +429,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Styling Minor Ticks](./Styling%20Minor%20Ticks.md)
 
 ## [Major Tick Styling](./Major%20Tick%20Styling.md)
+
+## [Tick Hierarchy](./Tick%20Hierarchy.md)
