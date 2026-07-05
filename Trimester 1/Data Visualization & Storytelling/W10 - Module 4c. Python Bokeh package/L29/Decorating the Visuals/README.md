@@ -363,3 +363,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Dynamic Modification](./Dynamic%20Modification.md)
 
 ## [What Happens Internally?](./What%20Happens%20Internally.md)
+
+## [Then Border Change](./Then%20Border%20Change.md)
