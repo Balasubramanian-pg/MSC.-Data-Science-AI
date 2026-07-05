@@ -827,3 +827,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Internal Mental Model](./Internal%20Mental%20Model.md)
 
 ## [Applying a Theme](./Applying%20a%20Theme.md)
+
+## [Important Architectural Insight](./Important%20Architectural%20Insight.md)
