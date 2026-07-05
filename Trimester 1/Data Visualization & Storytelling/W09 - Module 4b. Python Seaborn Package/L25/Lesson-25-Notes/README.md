@@ -41,3 +41,5 @@ I have organized the code into a logical, executable structure using a mock data
 ## [5. Hybrid Approach: Combining Seaborn and Matplotlib](./5.%20Hybrid%20Approach%20-%20Combining%20Seaborn%20and%20Matplotlib.md)
 
 ## [Best Practice: Use Seaborn for complex data plotting, use Matplotlib for fine-tuning layout/annotations.](./Best%20Practice%20-%20Use%20Seaborn%20for%20complex%20data%20plotting%2C%20use%20Matplotlib%20for%20fine-tuning%20layoutannotations.md)
+
+## [1. Draw the core statistical plot with Seaborn](./1.%20Draw%20the%20core%20statistical%20plot%20with%20Seaborn.md)
