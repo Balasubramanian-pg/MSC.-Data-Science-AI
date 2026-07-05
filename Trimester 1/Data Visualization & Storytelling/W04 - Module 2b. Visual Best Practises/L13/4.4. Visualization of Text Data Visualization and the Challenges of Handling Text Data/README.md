@@ -33,3 +33,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Human vs Machine Language Understanding](./Human%20vs%20Machine%20Language%20Understanding.md)
 
 ## [Example of Ambiguity](./Example%20of%20Ambiguity.md)
+
+## [NLP Challenge Pipeline](./NLP%20Challenge%20Pipeline.md)
