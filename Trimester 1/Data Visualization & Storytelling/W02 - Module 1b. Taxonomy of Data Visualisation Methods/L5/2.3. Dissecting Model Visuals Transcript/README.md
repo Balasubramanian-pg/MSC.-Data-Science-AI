@@ -16,3 +16,5 @@
 ## [5. Case Study 1: Campaign Fundraising Line Graph](./5.%20Case%20Study%201%20-%20Campaign%20Fundraising%20Line%20Graph.md)
 
 ## [6. Principle: Visual Hierarchy](./6.%20Principle%20-%20Visual%20Hierarchy.md)
+
+## [7. Case Study 2: Project Attainment Dashboard](./7.%20Case%20Study%202%20-%20Project%20Attainment%20Dashboard.md)
