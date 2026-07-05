@@ -112,3 +112,5 @@ The transcript introduces this challenge directly.
 ## [Gestalt Principle of Proximity](./Gestalt%20Principle%20of%20Proximity.md)
 
 ## [Poor Positioning Creates Cognitive Friction](./Poor%20Positioning%20Creates%20Cognitive%20Friction.md)
+
+## [Visualization Goal](./Visualization%20Goal.md)
