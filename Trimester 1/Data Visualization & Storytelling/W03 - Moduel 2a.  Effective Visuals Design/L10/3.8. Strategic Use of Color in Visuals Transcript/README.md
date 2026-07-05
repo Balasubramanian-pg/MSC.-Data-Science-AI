@@ -48,3 +48,5 @@ Bad visualizations use color excessively.
 ## [Why This Matters](./Why%20This%20Matters.md)
 
 ## [Cognitive Impact of Color](./Cognitive%20Impact%20of%20Color.md)
+
+## [Strategic Color Usage Framework](./Strategic%20Color%20Usage%20Framework.md)
