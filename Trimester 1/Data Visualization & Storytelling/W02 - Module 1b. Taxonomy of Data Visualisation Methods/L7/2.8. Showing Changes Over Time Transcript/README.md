@@ -79,3 +79,5 @@ Each visualization method carries distinct input data requirements, analytical p
 ## [Domain IV: Plotting Connections and Relationships](./Domain%20IV%20-%20Plotting%20Connections%20and%20Relationships.md)
 
 ## [Domain V: Showing Changes Over Time](./Domain%20V%20-%20Showing%20Changes%20Over%20Time.md)
+
+## [Production-Grade Systems Architecture and Pipelines](./Production-Grade%20Systems%20Architecture%20and%20Pipelines.md)
