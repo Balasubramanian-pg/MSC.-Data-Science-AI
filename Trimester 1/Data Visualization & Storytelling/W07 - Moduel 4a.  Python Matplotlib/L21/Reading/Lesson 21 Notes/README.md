@@ -45,3 +45,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [NumPy Integration](./NumPy%20Integration.md)
 
 ## [pandas Integration](./pandas%20Integration.md)
+
+## [Why This Ecosystem Matters](./Why%20This%20Ecosystem%20Matters.md)
