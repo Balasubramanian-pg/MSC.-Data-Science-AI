@@ -127,3 +127,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Online Weather Dataset](./Online%20Weather%20Dataset.md)
 
 ## [Why Remote Data Sources Matter](./Why%20Remote%20Data%20Sources%20Matter.md)
+
+## [Reading CSV from URL](./Reading%20CSV%20from%20URL.md)
