@@ -41,3 +41,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [This Is the Biggest Constraint in Dashboard Design](./This%20Is%20the%20Biggest%20Constraint%20in%20Dashboard%20Design.md)
 
 ## [Working Memory Overload](./Working%20Memory%20Overload.md)
+
+## [Example of Poor Design](./Example%20of%20Poor%20Design.md)
