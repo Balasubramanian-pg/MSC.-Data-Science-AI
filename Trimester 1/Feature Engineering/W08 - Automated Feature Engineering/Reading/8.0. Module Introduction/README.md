@@ -7,3 +7,5 @@ week: W08 - Automated Feature Engineering
 ## [8.0. Automated Feature Engineering](./8.0.%20Automated%20Feature%20Engineering.md)
 
 ## [8.0.1. Introduction](./8.0.1.%20Introduction.md)
+
+## [8.0.2. Why Feature Engineering Matters](./8.0.2.%20Why%20Feature%20Engineering%20Matters.md)
