@@ -89,3 +89,5 @@ This is foundational to:
 ## [Step 9: Overlay Cities](./Step%209%20-%20Overlay%20Cities.md)
 
 ## [What Is Happening?](./What%20Is%20Happening.md)
+
+## [Important GIS Principle](./Important%20GIS%20Principle.md)
