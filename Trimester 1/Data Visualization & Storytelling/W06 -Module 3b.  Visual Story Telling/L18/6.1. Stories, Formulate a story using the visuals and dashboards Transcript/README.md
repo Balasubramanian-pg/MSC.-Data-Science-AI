@@ -81,3 +81,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Storytelling Failure Modes](./Storytelling%20Failure%20Modes.md)
 
 ## [1. Data Dumping](./1.%20Data%20Dumping.md)
+
+## [2. Manipulative Narratives](./2.%20Manipulative%20Narratives.md)
