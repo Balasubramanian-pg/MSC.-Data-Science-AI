@@ -49,3 +49,5 @@
 ## [3.1 Definition of Explanatory Analysis](./3.1%20Definition%20of%20Explanatory%20Analysis.md)
 
 ## [Core Objective](./Core%20Objective.md)
+
+## [3.2 From Insight Discovery to Storytelling](./3.2%20From%20Insight%20Discovery%20to%20Storytelling.md)
