@@ -35,3 +35,5 @@ This section explains how to create multiple related plots from a Pandas DataFra
 ## [Minimum temperature](./Minimum%20temperature.md)
 
 ## [Rainfall](./Rainfall.md)
+
+## [What This Achieves](./What%20This%20Achieves.md)
