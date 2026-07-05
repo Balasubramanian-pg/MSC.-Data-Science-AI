@@ -67,3 +67,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Semantic Clustering Pipeline](./Semantic%20Clustering%20Pipeline.md)
 
 ## [Hidden Meaning Discovery](./Hidden%20Meaning%20Discovery.md)
+
+## [Topic Modeling](./Topic%20Modeling.md)
