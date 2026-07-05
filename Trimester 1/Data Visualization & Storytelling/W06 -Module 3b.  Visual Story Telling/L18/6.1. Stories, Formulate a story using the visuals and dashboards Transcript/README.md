@@ -265,3 +265,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Visual Hierarchy and Real-World Consequences](./Visual%20Hierarchy%20and%20Real-World%20Consequences.md)
 
 ## [The Columbia Shuttle Presentation Failure](./The%20Columbia%20Shuttle%20Presentation%20Failure.md)
+
+## [What Is Visual Hierarchy?](./What%20Is%20Visual%20Hierarchy.md)
