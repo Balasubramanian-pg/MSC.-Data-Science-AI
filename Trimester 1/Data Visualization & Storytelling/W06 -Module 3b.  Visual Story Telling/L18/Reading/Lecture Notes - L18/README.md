@@ -231,3 +231,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Constraint Principle](./Important%20Constraint%20Principle.md)
 
 ## [Pecha Kucha Cognitive Benefits](./Pecha%20Kucha%20Cognitive%20Benefits.md)
+
+## [Presentation Cognitive Failure](./Presentation%20Cognitive%20Failure.md)
