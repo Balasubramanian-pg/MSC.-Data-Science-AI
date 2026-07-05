@@ -125,3 +125,5 @@ This is foundational to:
 ## [3. Using Wrong Coordinate Systems](./3.%20Using%20Wrong%20Coordinate%20Systems.md)
 
 ## [Computational Insight](./Computational%20Insight.md)
+
+## [Hidden Deep Idea](./Hidden%20Deep%20Idea.md)
