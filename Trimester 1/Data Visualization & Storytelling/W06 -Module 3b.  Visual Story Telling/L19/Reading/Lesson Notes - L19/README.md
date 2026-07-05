@@ -135,3 +135,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Example: Delhi vs Haryana](./Example%20-%20Delhi%20vs%20Haryana.md)
 
 ## [Demographic Context](./Demographic%20Context.md)
+
+## [Why Contrast Stories Are Powerful](./Why%20Contrast%20Stories%20Are%20Powerful.md)
