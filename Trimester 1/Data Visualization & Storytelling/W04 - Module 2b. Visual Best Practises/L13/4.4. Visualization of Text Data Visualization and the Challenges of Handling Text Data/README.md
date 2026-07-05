@@ -95,3 +95,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Relationship to Visualization](./Relationship%20to%20Visualization.md)
 
 ## [NLP Visualization Goals](./NLP%20Visualization%20Goals.md)
+
+## [Hidden Computational Philosophy](./Hidden%20Computational%20Philosophy.md)
