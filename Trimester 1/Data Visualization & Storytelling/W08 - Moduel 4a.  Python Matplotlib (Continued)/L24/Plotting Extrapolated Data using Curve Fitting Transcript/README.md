@@ -47,3 +47,5 @@ Observed Data → Fit Function → Predict Future
 ## [Polynomial Intuition](./Polynomial%20Intuition.md)
 
 ## [Degree Meaning](./Degree%20Meaning.md)
+
+## [Step-by-Step Example](./Step-by-Step%20Example.md)
