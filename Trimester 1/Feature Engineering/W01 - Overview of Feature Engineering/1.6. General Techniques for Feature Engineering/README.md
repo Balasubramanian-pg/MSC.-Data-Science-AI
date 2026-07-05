@@ -23,3 +23,5 @@ week: W01 - Overview of Feature Engineering
 ## [1.6.8. Domain-Specific Techniques](./1.6.8.%20Domain-Specific%20Techniques.md)
 
 ## [1.6.9. Step-by-Step Standardization Example](./1.6.9.%20Step-by-Step%20Standardization%20Example.md)
+
+## [1.6.10. Factors Affecting Feature Engineering](./1.6.10.%20Factors%20Affecting%20Feature%20Engineering.md)
