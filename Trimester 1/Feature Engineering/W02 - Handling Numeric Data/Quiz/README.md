@@ -17,3 +17,5 @@ week: W02 - Handling Numeric Data
 ## [Question 4](./Question%204.md)
 
 ## [Question 5](./Question%205.md)
+
+## [Final Answers Summary](./Final%20Answers%20Summary.md)
