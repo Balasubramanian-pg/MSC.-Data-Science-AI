@@ -1,11 +1,15 @@
 # Mental Model
 
-```mermaid
-flowchart LR
-    A[DataFrame] --> B[Index]
-    A --> C[Freight Column]
-    A --> D[Mail Column]
+Think of Bokeh objects like editable UI components.
 
-    B --> E[X Axis]
-    C --> F[Y Values]
+Instead of:
+
+```text
+draw static image
+```
+
+Bokeh does:
+
+```text
+maintain live visual objects
 ```
