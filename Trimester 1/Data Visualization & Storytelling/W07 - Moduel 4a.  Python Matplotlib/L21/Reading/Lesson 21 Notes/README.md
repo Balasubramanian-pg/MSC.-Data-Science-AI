@@ -15,3 +15,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Visualization Matters](./Why%20Visualization%20Matters.md)
 
 ## [Core Visualization Pipeline](./Core%20Visualization%20Pipeline.md)
+
+## [The `pyplot` Submodule](./The%20%60pyplot%60%20Submodule.md)
