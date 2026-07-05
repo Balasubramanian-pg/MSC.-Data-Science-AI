@@ -111,3 +111,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Whiskers](./Whiskers.md)
 
 ## [Why Box Plots Are Powerful](./Why%20Box%20Plots%20Are%20Powerful.md)
+
+## [Distribution Shape Analysis](./Distribution%20Shape%20Analysis.md)
