@@ -503,3 +503,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [The Second Problem: Numeric Scale Readability](./The%20Second%20Problem%20-%20Numeric%20Scale%20Readability.md)
 
 ## [Visualization Principle](./Visualization%20Principle.md)
+
+## [Formatter](./Formatter.md)
