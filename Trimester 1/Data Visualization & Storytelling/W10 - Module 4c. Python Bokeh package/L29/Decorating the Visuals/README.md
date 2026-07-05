@@ -781,3 +781,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Adding Color Bar](./Adding%20Color%20Bar.md)
 
 ## [Important Layout Concept](./Important%20Layout%20Concept.md)
+
+## [Placement](./Placement.md)
