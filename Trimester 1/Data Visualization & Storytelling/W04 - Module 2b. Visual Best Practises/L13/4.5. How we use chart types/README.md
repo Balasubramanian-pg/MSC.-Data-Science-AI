@@ -103,3 +103,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Hidden Lesson](./Important%20Hidden%20Lesson.md)
 
 ## [Connection to Modern AI Systems](./Connection%20to%20Modern%20AI%20Systems.md)
+
+## [Final Visualization Philosophy](./Final%20Visualization%20Philosophy.md)
