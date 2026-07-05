@@ -42,3 +42,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [3.4 Stacked Bar Charts](./3.4%20Stacked%20Bar%20Charts.md)
 
 ## [Example Use Cases](./Example%20Use%20Cases.md)
+
+## [3.5 Business Insights from Comparison Charts](./3.5%20Business%20Insights%20from%20Comparison%20Charts.md)
