@@ -63,3 +63,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [2. SEABORN GLOBAL THEMING](./2.%20SEABORN%20GLOBAL%20THEMING.md)
 
 ## [Activating Seaborn's premium default styles and color palettes](./Activating%20Seaborn%27s%20premium%20default%20styles%20and%20color%20palettes.md)
+
+## [3. VISUALIZATION COMPARISON: CONTINUOUS RELATIONS WITH CATEGORIES](./3.%20VISUALIZATION%20COMPARISON%20-%20CONTINUOUS%20RELATIONS%20WITH%20CATEGORIES.md)
