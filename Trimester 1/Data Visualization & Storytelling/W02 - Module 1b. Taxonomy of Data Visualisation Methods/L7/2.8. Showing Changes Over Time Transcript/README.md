@@ -73,3 +73,5 @@ Each visualization method carries distinct input data requirements, analytical p
 ## [Domain I: Comparing Categories](./Domain%20I%20-%20Comparing%20Categories.md)
 
 ## [Domain II: Assessing Hierarchies and Part-to-Whole Relationships](./Domain%20II%20-%20Assessing%20Hierarchies%20and%20Part-to-Whole%20Relationships.md)
+
+## [Domain III: Mapping Geospatial Data](./Domain%20III%20-%20Mapping%20Geospatial%20Data.md)
