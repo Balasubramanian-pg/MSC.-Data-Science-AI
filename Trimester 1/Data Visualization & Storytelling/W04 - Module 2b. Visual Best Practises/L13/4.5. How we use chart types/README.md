@@ -61,3 +61,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why the Bar Chart Is Superior](./Why%20the%20Bar%20Chart%20Is%20Superior.md)
 
 ## [Why Bar Charts Are Better](./Why%20Bar%20Charts%20Are%20Better.md)
+
+## [Comparison of Word Cloud vs Bar Chart](./Comparison%20of%20Word%20Cloud%20vs%20Bar%20Chart.md)
