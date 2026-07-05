@@ -23,3 +23,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Page 9](./Page%209.md)
 
 ## [Page 10](./Page%2010.md)
+
+## [Page 11](./Page%2011.md)
