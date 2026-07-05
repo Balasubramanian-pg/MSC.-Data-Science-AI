@@ -195,3 +195,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Weak Title](./Weak%20Title.md)
 
 ## [Better Title](./Better%20Title.md)
+
+## [Best Practice](./Best%20Practice.md)
