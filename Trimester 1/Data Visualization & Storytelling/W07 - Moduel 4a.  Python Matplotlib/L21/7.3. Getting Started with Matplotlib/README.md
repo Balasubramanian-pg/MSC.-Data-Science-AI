@@ -97,3 +97,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [2. Generating the Sine Function](./2.%20Generating%20the%20Sine%20Function.md)
 
 ## [Important Hidden Concept: Vectorized Computation](./Important%20Hidden%20Concept%20-%20Vectorized%20Computation.md)
+
+## [Mathematical Behavior of the Sine Wave](./Mathematical%20Behavior%20of%20the%20Sine%20Wave.md)
