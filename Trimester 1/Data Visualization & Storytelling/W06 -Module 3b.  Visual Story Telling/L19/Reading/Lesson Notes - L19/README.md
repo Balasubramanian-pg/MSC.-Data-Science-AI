@@ -47,3 +47,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [4. Types of Narratives in Data Visualization](./4.%20Types%20of%20Narratives%20in%20Data%20Visualization.md)
 
 ## [A. Author-Driven (Linear) Narratives](./A.%20Author-Driven%20%28Linear%29%20Narratives.md)
+
+## [Why Linear Narratives Work](./Why%20Linear%20Narratives%20Work.md)
