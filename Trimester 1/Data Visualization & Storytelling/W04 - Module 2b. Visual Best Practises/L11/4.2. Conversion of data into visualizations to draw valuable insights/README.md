@@ -135,3 +135,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Strong Encodings](./Strong%20Encodings.md)
 
 ## [Why This Matters in Dashboard Design](./Why%20This%20Matters%20in%20Dashboard%20Design.md)
+
+## [Decision Tree for Choosing Encodings](./Decision%20Tree%20for%20Choosing%20Encodings.md)
