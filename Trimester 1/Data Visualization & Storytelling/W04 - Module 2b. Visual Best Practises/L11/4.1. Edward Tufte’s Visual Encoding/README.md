@@ -29,3 +29,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Poor Choices](./Poor%20Choices.md)
 
 ## [Nominal Data Decision Tree](./Nominal%20Data%20Decision%20Tree.md)
+
+## [Key Cognitive Insight](./Key%20Cognitive%20Insight.md)
