@@ -69,3 +69,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Interval Data](./Interval%20Data.md)
 
 ## [Equal Distances Without True Zero](./Equal%20Distances%20Without%20True%20Zero.md)
+
+## [Ratio Data](./Ratio%20Data.md)
