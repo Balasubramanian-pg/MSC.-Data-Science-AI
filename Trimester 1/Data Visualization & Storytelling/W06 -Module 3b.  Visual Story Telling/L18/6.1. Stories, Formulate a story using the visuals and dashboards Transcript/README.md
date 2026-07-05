@@ -271,3 +271,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Human Attention Is Selective](./Human%20Attention%20Is%20Selective.md)
 
 ## [Visual Attention Model](./Visual%20Attention%20Model.md)
+
+## [Why the NASA Slide Failed](./Why%20the%20NASA%20Slide%20Failed.md)
