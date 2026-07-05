@@ -1,7 +1,11 @@
 # Good Design
 
-```text
-One important bar highlighted in cyan
-Immediate recognition
-Minimal cognitive effort
-```
+- grouped sections
+    
+- whitespace
+    
+- direct labels
+    
+- visual hierarchy
+    
+- selective highlighting
