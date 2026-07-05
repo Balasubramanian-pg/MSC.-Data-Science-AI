@@ -1,19 +1,16 @@
 # Important Insight
 
-Visualization is only possible after:
+Narratives often contain:
+
+- emotional oscillation
+    
+- conflict resolution
+    
+- contrasting tones
+    
+
+Therefore average sentiment alone may hide:
 
 ```text
-language is converted into measurable structures
+local emotional structure
 ```
-
-such as:
-
-- frequencies
-    
-- co-occurrences
-    
-- embeddings
-    
-- semantic clusters
-    
-- topic distributions
