@@ -143,3 +143,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Axes](./Axes.md)
 
 ## [Internal Structure](./Internal%20Structure.md)
+
+## [Why This Structure Exists](./Why%20This%20Structure%20Exists.md)
