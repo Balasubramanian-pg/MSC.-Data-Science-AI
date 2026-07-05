@@ -563,3 +563,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Left](./Left.md)
 
 ## [Right](./Right.md)
+
+## [Important Visualization Insight](./Important%20Visualization%20Insight.md)
