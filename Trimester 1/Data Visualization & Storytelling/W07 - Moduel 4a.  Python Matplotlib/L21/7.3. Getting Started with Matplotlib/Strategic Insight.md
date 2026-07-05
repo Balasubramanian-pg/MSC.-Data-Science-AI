@@ -1,33 +1,40 @@
 # Strategic Insight
 
-This lecture is gradually teaching a deeper engineering mindset:
+This lecture ultimately reinforces a powerful idea:
 
-> Visualization is programmable perception control.
+> Visualization is programmable communication.
 
-You are not merely:
+Charts are not merely:
 
-- drawing shapes
+- outputs
     
-
-You are:
-
-- encoding information visually
+- decorations
     
-- guiding attention
-    
-- structuring interpretation
-    
-- designing cognitive interfaces
+- technical artifacts
     
 
-That is why visualization sits at the intersection of:
+They are:
 
-- programming
+- cognitive interfaces
     
-- mathematics
+- perception systems
     
-- psychology
+- storytelling mechanisms
     
-- communication
+
+That is why strong visualization practitioners need:
+
+- technical skill
     
-- design engineering.
+- statistical literacy
+    
+- design judgment
+    
+- audience awareness
+    
+- perceptual understanding
+    
+
+simultaneously.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
