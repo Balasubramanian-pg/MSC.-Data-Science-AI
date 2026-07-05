@@ -129,3 +129,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Chartjunk](./Chartjunk.md)
 
 ## [Cognitive Cost of Chartjunk](./Cognitive%20Cost%20of%20Chartjunk.md)
+
+## [Final Design Principles](./Final%20Design%20Principles.md)
