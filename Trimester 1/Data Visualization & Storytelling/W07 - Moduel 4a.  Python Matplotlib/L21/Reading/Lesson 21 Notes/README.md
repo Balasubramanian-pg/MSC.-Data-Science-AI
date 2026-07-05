@@ -123,3 +123,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Generating the Sine Function](./Generating%20the%20Sine%20Function.md)
 
 ## [Important Hidden Concept: Vectorization](./Important%20Hidden%20Concept%20-%20Vectorization.md)
+
+## [Vectorized Version](./Vectorized%20Version.md)
