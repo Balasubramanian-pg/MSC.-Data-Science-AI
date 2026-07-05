@@ -45,3 +45,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [4. Create a figure with fruit names on x-axis](./4.%20Create%20a%20figure%20with%20fruit%20names%20on%20x-axis.md)
 
 ## [5. Add vertical bars with your colors](./5.%20Add%20vertical%20bars%20with%20your%20colors.md)
+
+## [6. Display the plot using show()](./6.%20Display%20the%20plot%20using%20show%28%29.md)
