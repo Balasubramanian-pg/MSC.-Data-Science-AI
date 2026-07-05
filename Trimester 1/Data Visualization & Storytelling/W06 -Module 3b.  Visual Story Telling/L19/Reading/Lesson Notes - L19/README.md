@@ -55,3 +55,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [B. Reader-Driven (Exploratory) Narratives](./B.%20Reader-Driven%20%28Exploratory%29%20Narratives.md)
 
 ## [Core Characteristics](./Core%20Characteristics.md)
+
+## [Common Formats](./Common%20Formats.md)
