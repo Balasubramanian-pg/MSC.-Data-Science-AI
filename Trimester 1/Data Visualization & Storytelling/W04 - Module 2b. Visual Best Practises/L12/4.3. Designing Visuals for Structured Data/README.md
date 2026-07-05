@@ -151,3 +151,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Parallel Coordinates](./Parallel%20Coordinates.md)
 
 ## [High-Dimensional Visualization](./High-Dimensional%20Visualization.md)
+
+## [Why They Are Powerful](./Why%20They%20Are%20Powerful.md)
