@@ -179,3 +179,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Final Design Philosophy](./Final%20Design%20Philosophy.md)
 
 ## [Final Mental Model](./Final%20Mental%20Model.md)
+
+## [References and Foundational Literature](./References%20and%20Foundational%20Literature.md)
