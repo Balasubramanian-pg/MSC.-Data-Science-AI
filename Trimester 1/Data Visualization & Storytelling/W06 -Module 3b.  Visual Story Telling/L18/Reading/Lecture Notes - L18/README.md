@@ -43,3 +43,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Brain Activation and Stories](./Brain%20Activation%20and%20Stories.md)
 
 ## [Raw Facts vs Stories](./Raw%20Facts%20vs%20Stories.md)
+
+## [Raw Facts](./Raw%20Facts.md)
