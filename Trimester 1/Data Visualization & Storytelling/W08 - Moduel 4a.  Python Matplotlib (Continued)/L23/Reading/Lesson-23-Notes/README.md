@@ -47,3 +47,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Internal Parsing Complexity](./Internal%20Parsing%20Complexity.md)
 
 ## [Real API Example](./Real%20API%20Example.md)
+
+## [Flattening Nested JSON](./Flattening%20Nested%20JSON.md)
