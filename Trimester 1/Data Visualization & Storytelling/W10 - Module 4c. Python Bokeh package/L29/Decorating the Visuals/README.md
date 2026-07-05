@@ -811,3 +811,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Layout Regions](./Layout%20Regions.md)
 
 ## [Real-World Example](./Real-World%20Example.md)
+
+## [Part 2: Themes](./Part%202%20-%20Themes.md)
