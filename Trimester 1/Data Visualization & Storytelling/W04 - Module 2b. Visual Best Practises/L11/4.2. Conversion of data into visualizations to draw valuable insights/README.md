@@ -97,3 +97,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Slope Is Powerful](./Why%20Slope%20Is%20Powerful.md)
 
 ## [Important Limitation](./Important%20Limitation.md)
+
+## [Key Design Insight](./Key%20Design%20Insight.md)
