@@ -97,3 +97,5 @@
 ## [1. Skipping Exploratory Analysis](./1.%20Skipping%20Exploratory%20Analysis.md)
 
 ## [2. Confusing Exploration with Explanation](./2.%20Confusing%20Exploration%20with%20Explanation.md)
+
+## [3. Sparse Data](./3.%20Sparse%20Data.md)
