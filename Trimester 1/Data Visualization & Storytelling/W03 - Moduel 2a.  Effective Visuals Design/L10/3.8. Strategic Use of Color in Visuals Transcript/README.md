@@ -60,3 +60,5 @@ Bad visualizations use color excessively.
 ## [Example](./Example.md)
 
 ## [Bad](./Bad.md)
+
+## [Good](./Good.md)
