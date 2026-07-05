@@ -25,3 +25,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Text Processing Pipeline](./Text%20Processing%20Pipeline.md)
 
 ## [Important Insight](./Important%20Insight.md)
+
+## [Word Clouds](./Word%20Clouds.md)
