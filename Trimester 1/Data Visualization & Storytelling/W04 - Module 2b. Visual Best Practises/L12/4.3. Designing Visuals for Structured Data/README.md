@@ -165,3 +165,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Trend Detection Model](./Trend%20Detection%20Model.md)
 
 ## [Dual-Axis Charts](./Dual-Axis%20Charts.md)
+
+## [Powerful but Dangerous](./Powerful%20but%20Dangerous.md)
