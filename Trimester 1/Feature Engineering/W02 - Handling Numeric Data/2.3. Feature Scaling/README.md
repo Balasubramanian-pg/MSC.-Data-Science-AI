@@ -21,3 +21,5 @@ week: W02 - Handling Numeric Data
 ## [2.3.7. Factors Affecting Scaling Efficacy](./2.3.7.%20Factors%20Affecting%20Scaling%20Efficacy.md)
 
 ## [2.3.8. Common Misinterpretations](./2.3.8.%20Common%20Misinterpretations.md)
+
+## [2.3.9. Conclusions](./2.3.9.%20Conclusions.md)
