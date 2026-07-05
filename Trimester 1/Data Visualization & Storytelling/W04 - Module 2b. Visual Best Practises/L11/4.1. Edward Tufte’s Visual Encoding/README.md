@@ -91,3 +91,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Hard Detection](./Hard%20Detection.md)
 
 ## [Detection Efficiency Principle](./Detection%20Efficiency%20Principle.md)
+
+## [2. Assembly](./2.%20Assembly.md)
