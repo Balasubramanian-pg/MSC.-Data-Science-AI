@@ -16,3 +16,5 @@
 ## [5. Affordances](./5.%20Affordances.md)
 
 ## [6. Affordance Example: Marriage Rates by Education](./6.%20Affordance%20Example%20-%20Marriage%20Rates%20by%20Education.md)
+
+## [7. Affordance Example: Customer Satisfaction Analysis](./7.%20Affordance%20Example%20-%20Customer%20Satisfaction%20Analysis.md)
