@@ -1,9 +1,9 @@
 # Example
 
-Bad:
+Instead of:
 
-> “Our multi-channel optimization initiative improved customer lifecycle efficiency.”
+> “Climate change affects weather.”
 
-Better:
+Unexpected framing:
 
-> “Customers now buy faster and leave less often.”
+> “Some cities may become physically uninsurable within decades.”
