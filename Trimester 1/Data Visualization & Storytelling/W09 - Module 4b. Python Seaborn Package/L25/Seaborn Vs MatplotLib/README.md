@@ -87,3 +87,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [1. SCATTER PLOT COMPARISON (Syntax & Automated Labels)](./1.%20SCATTER%20PLOT%20COMPARISON%20%28Syntax%20%26%20Automated%20Labels%29.md)
 
 ## [--- Approach A: Matplotlib (Verbose & Manual Labels) ---](./---%20Approach%20A%20-%20Matplotlib%20%28Verbose%20%26%20Manual%20Labels%29%20---.md)
+
+## [Requires manual extraction/subsetting of the exact data series columns](./Requires%20manual%20extractionsubsetting%20of%20the%20exact%20data%20series%20columns.md)
