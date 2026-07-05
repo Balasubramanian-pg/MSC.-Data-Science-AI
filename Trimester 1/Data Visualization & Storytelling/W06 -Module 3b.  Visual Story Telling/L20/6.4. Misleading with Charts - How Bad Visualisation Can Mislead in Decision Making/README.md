@@ -225,3 +225,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Narrative Control Through Grouping](./Narrative%20Control%20Through%20Grouping.md)
 
 ## [Filter Ordering as Narrative Design](./Filter%20Ordering%20as%20Narrative%20Design.md)
+
+## [Author-Driven vs Reader-Driven Connection](./Author-Driven%20vs%20Reader-Driven%20Connection.md)
