@@ -36,3 +36,5 @@
 ## [Practical Storytelling Checklist](./Practical%20Storytelling%20Checklist.md)
 
 ## [Common Mistakes](./Common%20Mistakes.md)
+
+## [Examination Notes](./Examination%20Notes.md)
