@@ -17,3 +17,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Cognitive Compression Model](./Cognitive%20Compression%20Model.md)
 
 ## [Why Stories Are More Memorable Than Raw Data](./Why%20Stories%20Are%20More%20Memorable%20Than%20Raw%20Data.md)
+
+## [Raw Data Problem](./Raw%20Data%20Problem.md)
