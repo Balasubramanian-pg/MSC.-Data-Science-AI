@@ -1,33 +1,13 @@
 # Example
 
-### Business Transformation Narrative
+|Audience|Preferred Style|
+|---|---|
+|Executives|High-level narrative clarity|
+|Analysts|Exploratory drill-down|
+|Technical Teams|Detailed causal structure|
+|Customers|Simplicity and emotion|
+|Investors|Strategic progression and confidence|
 
-```mermaid
-flowchart LR
-    A[Business Problem] --> B[Data Analysis]
-    B --> C[Solution Strategy]
-    C --> D[Implementation]
-    D --> E[Improved Outcomes]
-```
+A presentation optimized for engineers may fail completely with executives.
 
-Example:
-
-- declining customer retention identified
-    
-- onboarding friction visualized
-    
-- redesign implemented
-    
-- retention improves
-    
-
-The audience experiences:
-
-- tension
-    
-- investigation
-    
-- resolution
-    
-
-That emotional arc improves persuasion dramatically.
+A narrative optimized for executives may frustrate analysts.
