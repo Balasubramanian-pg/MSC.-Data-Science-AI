@@ -11,3 +11,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [1. Learning Objectives](./1.%20Learning%20Objectives.md)
 
 ## [2. Prerequisites & Setup](./2.%20Prerequisites%20%26%20Setup.md)
+
+## [3. Colors in Bokeh](./3.%20Colors%20in%20Bokeh.md)
