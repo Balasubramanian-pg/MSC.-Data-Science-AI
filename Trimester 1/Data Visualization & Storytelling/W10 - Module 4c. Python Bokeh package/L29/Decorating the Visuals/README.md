@@ -181,3 +181,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Step-by-Step Breakdown](./Step-by-Step%20Breakdown.md)
 
 ## [1. Creating the DataFrame](./1.%20Creating%20the%20DataFrame.md)
+
+## [Important Concept: Index](./Important%20Concept%20-%20Index.md)
