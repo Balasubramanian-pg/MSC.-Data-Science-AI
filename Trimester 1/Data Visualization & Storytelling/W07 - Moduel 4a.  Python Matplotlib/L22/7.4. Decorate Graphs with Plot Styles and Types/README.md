@@ -59,3 +59,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Line Styles](./Line%20Styles.md)
 
 ## [Why Line Styles Matter](./Why%20Line%20Styles%20Matter.md)
+
+## [Basic Line Styles](./Basic%20Line%20Styles.md)
