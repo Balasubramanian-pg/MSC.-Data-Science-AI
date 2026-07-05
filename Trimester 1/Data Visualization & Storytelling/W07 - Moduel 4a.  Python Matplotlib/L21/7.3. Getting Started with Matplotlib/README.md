@@ -281,3 +281,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Errors Matter Educationally](./Why%20Errors%20Matter%20Educationally.md)
 
 ## [6. Learning Through Examples](./6.%20Learning%20Through%20Examples.md)
+
+## [Important Industry Reality](./Important%20Industry%20Reality.md)
