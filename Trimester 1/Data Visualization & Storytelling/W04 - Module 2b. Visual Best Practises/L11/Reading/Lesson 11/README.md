@@ -133,3 +133,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Bubble Chart Problem](./Bubble%20Chart%20Problem.md)
 
 ## [5. Data Encoding Techniques](./5.%20Data%20Encoding%20Techniques.md)
+
+## [Strategic Use of Visual Variables](./Strategic%20Use%20of%20Visual%20Variables.md)
