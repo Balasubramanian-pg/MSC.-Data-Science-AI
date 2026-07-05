@@ -1,11 +1,7 @@
 # Important Insight
 
-Precision often increases credibility.
+Most presentation failure is:  
+not informational failure.
 
-Example:
-
-> “17% increase”
-
-feels more trustworthy than:
-
-> “large increase.”
+It is:  
+attention management failure.
