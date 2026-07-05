@@ -39,3 +39,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [One clean line handles data mapping, categorization, and statistical inference](./One%20clean%20line%20handles%20data%20mapping%2C%20categorization%2C%20and%20statistical%20inference.md)
 
 ## [Refine title structure using Matplotlib commands over the Seaborn output](./Refine%20title%20structure%20using%20Matplotlib%20commands%20over%20the%20Seaborn%20output.md)
+
+## [4. Architectural Comparison Cheatsheet](./4.%20Architectural%20Comparison%20Cheatsheet.md)
