@@ -149,3 +149,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Strategic Importance](./Strategic%20Importance.md)
 
 ## [11. Factors](./11.%20Factors.md)
+
+## [Example: Waterfall Analysis](./Example%20-%20Waterfall%20Analysis.md)
