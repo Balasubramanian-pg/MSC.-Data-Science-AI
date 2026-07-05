@@ -341,3 +341,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Real-World Uses](./Real-World%20Uses.md)
 
 ## [Blind Extrapolation](./Blind%20Extrapolation.md)
+
+## [Overfitting High-Degree Curves](./Overfitting%20High-Degree%20Curves.md)
