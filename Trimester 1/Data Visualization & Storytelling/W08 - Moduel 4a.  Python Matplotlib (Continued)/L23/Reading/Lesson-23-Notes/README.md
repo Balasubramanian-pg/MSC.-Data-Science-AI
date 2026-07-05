@@ -67,3 +67,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Read remote data](./Read%20remote%20data.md)
 
 ## [Clean data](./Clean%20data.md)
+
+## [Aggregate](./Aggregate.md)
