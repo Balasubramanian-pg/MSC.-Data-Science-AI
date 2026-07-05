@@ -311,3 +311,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Cognitive Advantage of Visuals](./Cognitive%20Advantage%20of%20Visuals.md)
 
 ## [Why This Matters in Engineering](./Why%20This%20Matters%20in%20Engineering.md)
+
+## [Technical Communication Problem](./Technical%20Communication%20Problem.md)
