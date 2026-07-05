@@ -329,3 +329,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Organizational Insight](./Important%20Organizational%20Insight.md)
 
 ## [Why This Happens](./Why%20This%20Happens.md)
+
+## [Final Summary of Key Takeaways](./Final%20Summary%20of%20Key%20Takeaways.md)
