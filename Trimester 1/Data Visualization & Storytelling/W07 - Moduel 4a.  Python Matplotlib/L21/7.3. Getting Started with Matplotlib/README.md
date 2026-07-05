@@ -175,3 +175,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Multi-Line Plots Matter](./Why%20Multi-Line%20Plots%20Matter.md)
 
 ## [Defining the Cosine Function](./Defining%20the%20Cosine%20Function.md)
+
+## [Mathematical Relationship](./Mathematical%20Relationship.md)
