@@ -307,3 +307,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Building Bar Charts in Matplotlib](./Building%20Bar%20Charts%20in%20Matplotlib.md)
 
 ## [1. Figure Creation](./1.%20Figure%20Creation.md)
+
+## [Visualization Structure](./Visualization%20Structure.md)
