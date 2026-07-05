@@ -107,3 +107,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Final Visualization Philosophy](./Final%20Visualization%20Philosophy.md)
 
 ## [Final Mental Model](./Final%20Mental%20Model.md)
+
+## [Advanced Text Visualization](./Advanced%20Text%20Visualization.md)
