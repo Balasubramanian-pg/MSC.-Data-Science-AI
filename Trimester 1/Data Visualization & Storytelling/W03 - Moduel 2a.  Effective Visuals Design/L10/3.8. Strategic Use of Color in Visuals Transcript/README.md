@@ -34,3 +34,5 @@ Bad visualizations use color excessively.
 ## [Why Color Matters So Much](./Why%20Color%20Matters%20So%20Much.md)
 
 ## [Color Is a Pre-Attentive Attribute](./Color%20Is%20a%20Pre-Attentive%20Attribute.md)
+
+## [The Core Purpose of Color in Visualization](./The%20Core%20Purpose%20of%20Color%20in%20Visualization.md)
