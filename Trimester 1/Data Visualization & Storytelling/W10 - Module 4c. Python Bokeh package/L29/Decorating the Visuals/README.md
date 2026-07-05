@@ -599,3 +599,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Dashboard Design Insight](./Dashboard%20Design%20Insight.md)
 
 ## [Mistake 1: Decorative Titles](./Mistake%201%20-%20Decorative%20Titles.md)
+
+## [Mistake 2: Centering Everything](./Mistake%202%20-%20Centering%20Everything.md)
