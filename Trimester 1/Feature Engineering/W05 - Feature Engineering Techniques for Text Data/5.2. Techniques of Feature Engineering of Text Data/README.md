@@ -109,3 +109,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [X_combined = hstack([X_ngram, X_pos_features])](./X_combined%20%3D%20hstack%28%5BX_ngram%2C%20X_pos_features%5D%29.md)
 
 ## [6. Common Mistakes & Traps](./6.%20Common%20Mistakes%20%26%20Traps.md)
+
+## [7. Interview Questions & Insights](./7.%20Interview%20Questions%20%26%20Insights.md)
