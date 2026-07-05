@@ -293,3 +293,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Generate sine and cosine values](./Generate%20sine%20and%20cosine%20values.md)
 
 ## [Plot sine wave](./Plot%20sine%20wave.md)
+
+## [Plot cosine wave](./Plot%20cosine%20wave.md)
