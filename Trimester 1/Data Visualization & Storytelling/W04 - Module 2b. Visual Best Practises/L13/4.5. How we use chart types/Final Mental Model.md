@@ -1,9 +1,9 @@
 # Final Mental Model
 
-Think of NLP visualization as:
+Think of sentiment visualization as:
 
 ```text
-transforming language into visible cognitive structures
+mapping emotional geometry hidden inside language
 ```
 
-that humans can perceive rapidly.
+into perceptually interpretable structures.
