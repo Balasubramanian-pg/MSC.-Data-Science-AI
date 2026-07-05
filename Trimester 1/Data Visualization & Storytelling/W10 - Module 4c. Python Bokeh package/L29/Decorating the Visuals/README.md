@@ -793,3 +793,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Important Warning](./Important%20Warning.md)
 
 ## [Example Failure](./Example%20Failure.md)
+
+## [Mistake 1: Using Color Without Meaning](./Mistake%201%20-%20Using%20Color%20Without%20Meaning.md)
