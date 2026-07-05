@@ -101,3 +101,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Key Design Insight](./Key%20Design%20Insight.md)
 
 ## [Trend Analysis](./Trend%20Analysis.md)
+
+## [Exact Magnitude Comparison](./Exact%20Magnitude%20Comparison.md)
