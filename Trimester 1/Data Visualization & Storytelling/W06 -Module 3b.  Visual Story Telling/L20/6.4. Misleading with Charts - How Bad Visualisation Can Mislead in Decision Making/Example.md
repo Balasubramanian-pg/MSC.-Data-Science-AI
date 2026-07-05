@@ -1,12 +1,25 @@
 # Example
 
-### Actual Prices
+If a dashboard first shows:
 
-|Time|Price|
-|---|---|
-|T1|21|
-|T2|30|
-|T3|56|
-|T4|72|
+- national averages
+    
 
-Prices continuously rise.
+users perceive:
+
+- stability
+    
+
+If it first highlights:
+
+- regional failures
+    
+
+users perceive:
+
+- crisis
+    
+
+Same dataset.  
+Different grouping hierarchy.  
+Different narrative.
