@@ -45,3 +45,5 @@
 ## [Example](./Example.md)
 
 ## [3. Understanding Explanatory Analysis](./3.%20Understanding%20Explanatory%20Analysis.md)
+
+## [3.1 Definition of Explanatory Analysis](./3.1%20Definition%20of%20Explanatory%20Analysis.md)
