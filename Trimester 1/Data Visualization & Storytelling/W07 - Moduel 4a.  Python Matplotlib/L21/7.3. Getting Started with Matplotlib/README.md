@@ -45,3 +45,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Sine Waves Are Common Teaching Examples](./Why%20Sine%20Waves%20Are%20Common%20Teaching%20Examples.md)
 
 ## [Example Code](./Example%20Code.md)
+
+## [Generate x values](./Generate%20x%20values.md)
