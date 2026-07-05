@@ -1,6 +1,5 @@
 # Advanced Insight
 
-The most effective dashboards are:  
-interactive storytelling systems.
+Visual storytelling does not merely describe culture.
 
-Not static reporting surfaces.
+It actively constructs culture.
