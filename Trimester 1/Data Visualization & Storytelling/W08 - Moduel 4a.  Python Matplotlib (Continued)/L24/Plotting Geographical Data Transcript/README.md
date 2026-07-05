@@ -87,3 +87,5 @@ This is foundational to:
 ## [Step 8: Plot World Map](./Step%208%20-%20Plot%20World%20Map.md)
 
 ## [Step 9: Overlay Cities](./Step%209%20-%20Overlay%20Cities.md)
+
+## [What Is Happening?](./What%20Is%20Happening.md)
