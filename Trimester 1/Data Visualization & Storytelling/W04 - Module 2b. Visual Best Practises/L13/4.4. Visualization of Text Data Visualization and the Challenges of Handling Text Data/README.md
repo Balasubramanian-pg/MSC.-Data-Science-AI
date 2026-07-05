@@ -25,3 +25,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Unstructured Data Is Difficult](./Why%20Unstructured%20Data%20Is%20Difficult.md)
 
 ## [Textual Complexity Model](./Textual%20Complexity%20Model.md)
+
+## [Important Core Insight](./Important%20Core%20Insight.md)
