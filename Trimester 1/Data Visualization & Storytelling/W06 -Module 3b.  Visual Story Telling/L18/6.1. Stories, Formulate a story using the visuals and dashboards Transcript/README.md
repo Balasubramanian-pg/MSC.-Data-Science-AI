@@ -175,3 +175,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Concrete](./Concrete.md)
 
 ## [Credible](./Credible.md)
+
+## [Emotional](./Emotional.md)
