@@ -229,3 +229,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why This Format Exists](./Why%20This%20Format%20Exists.md)
 
 ## [Important Constraint Principle](./Important%20Constraint%20Principle.md)
+
+## [Pecha Kucha Cognitive Benefits](./Pecha%20Kucha%20Cognitive%20Benefits.md)
