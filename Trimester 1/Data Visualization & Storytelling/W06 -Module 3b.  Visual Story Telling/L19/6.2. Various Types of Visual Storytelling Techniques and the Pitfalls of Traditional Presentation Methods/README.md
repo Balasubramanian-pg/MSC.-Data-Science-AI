@@ -37,3 +37,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Visual Storytelling Techniques](./Visual%20Storytelling%20Techniques.md)
 
 ## [Key Techniques in Visual Storytelling](./Key%20Techniques%20in%20Visual%20Storytelling.md)
+
+## [1. Visual Hierarchy](./1.%20Visual%20Hierarchy.md)
