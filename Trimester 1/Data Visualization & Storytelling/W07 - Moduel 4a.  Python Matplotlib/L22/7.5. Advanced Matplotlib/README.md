@@ -11,3 +11,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Histograms](./Histograms.md)
 
 ## [Conceptual Foundation](./Conceptual%20Foundation.md)
+
+## [Intuition Behind Histograms](./Intuition%20Behind%20Histograms.md)
