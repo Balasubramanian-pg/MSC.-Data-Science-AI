@@ -2,6 +2,6 @@
 
 - Revenue
     
-- Profit
-    
 - Margin
+    
+- Profit
