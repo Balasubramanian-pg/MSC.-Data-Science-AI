@@ -155,3 +155,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Proper Use of Dual Axes](./Proper%20Use%20of%20Dual%20Axes.md)
 
 ## [Important Risk](./Important%20Risk.md)
+
+## [Example of Misleading Alignment](./Example%20of%20Misleading%20Alignment.md)
