@@ -315,3 +315,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Visuals Work Better](./Why%20Visuals%20Work%20Better.md)
 
 ## [Weak Communication](./Weak%20Communication.md)
+
+## [Strong Communication](./Strong%20Communication.md)
