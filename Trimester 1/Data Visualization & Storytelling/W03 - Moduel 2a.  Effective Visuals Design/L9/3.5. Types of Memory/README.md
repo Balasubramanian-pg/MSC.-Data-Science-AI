@@ -59,3 +59,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Bad](./Bad.md)
 
 ## [Good](./Good.md)
+
+## [Chunking](./Chunking.md)
