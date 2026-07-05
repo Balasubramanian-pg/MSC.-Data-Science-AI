@@ -118,3 +118,5 @@
 ## [4. Overloading the Graphic](./4.%20Overloading%20the%20Graphic.md)
 
 ## [5. Correlation ≠ Causation](./5.%20Correlation%20%E2%89%A0%20Causation.md)
+
+## [6. Ignoring Stakeholder Feedback](./6.%20Ignoring%20Stakeholder%20Feedback.md)
