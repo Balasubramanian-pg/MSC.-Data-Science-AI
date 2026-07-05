@@ -269,3 +269,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [5. Line Styles](./5.%20Line%20Styles.md)
 
 ## [Why Line Styles Matter](./Why%20Line%20Styles%20Matter.md)
+
+## [Important Learning Insight](./Important%20Learning%20Insight.md)
