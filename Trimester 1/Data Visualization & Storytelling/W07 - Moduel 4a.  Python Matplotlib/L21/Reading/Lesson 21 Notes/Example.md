@@ -1,9 +1,13 @@
 # Example
 
-A figure can contain:
+Bad:
 
-- one axes
-    
-- multiple axes
-    
-- nested subplot arrangements
+```text
+Sales
+```
+
+Better:
+
+```text
+Quarterly Sales Revenue (USD Millions)
+```
