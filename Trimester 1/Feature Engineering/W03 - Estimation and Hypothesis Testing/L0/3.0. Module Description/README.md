@@ -23,3 +23,5 @@
 ## [3.0.11. Multicollinearity and Feature Redundancy](./3.0.11.%20Multicollinearity%20and%20Feature%20Redundancy.md)
 
 ## [3.0.12. Strategic Application Framework](./3.0.12.%20Strategic%20Application%20Framework.md)
+
+## [3.0.13. Common Misinterpretations](./3.0.13.%20Common%20Misinterpretations.md)
