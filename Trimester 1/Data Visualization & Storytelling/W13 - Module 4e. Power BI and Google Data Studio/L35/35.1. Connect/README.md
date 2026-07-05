@@ -7,3 +7,5 @@
 ## [35.2.3. Mathematical Formulation of Calculated Fields](./35.2.3.%20Mathematical%20Formulation%20of%20Calculated%20Fields.md)
 
 ## [35.2.4. Step-by-Step Example of Calculated Field Evaluation](./35.2.4.%20Step-by-Step%20Example%20of%20Calculated%20Field%20Evaluation.md)
+
+## [35.2.5. Doughnut Charts for Categorical Share](./35.2.5.%20Doughnut%20Charts%20for%20Categorical%20Share.md)
