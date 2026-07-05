@@ -187,3 +187,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Multi-Plot Layouts with `plt.subplots`](./Multi-Plot%20Layouts%20with%20%60plt.subplots%60.md)
 
 ## [Why Multi-Plot Layouts Matter](./Why%20Multi-Plot%20Layouts%20Matter.md)
+
+## [The Core Idea Behind Subplots](./The%20Core%20Idea%20Behind%20Subplots.md)
