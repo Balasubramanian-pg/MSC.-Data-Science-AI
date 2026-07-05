@@ -90,3 +90,5 @@ The transcript introduces this challenge directly.
 ## [Z-Pattern Reading Flow](./Z-Pattern%20Reading%20Flow.md)
 
 ## [Why This Matters](./Why%20This%20Matters.md)
+
+## [Good Positioning Strategy](./Good%20Positioning%20Strategy.md)
