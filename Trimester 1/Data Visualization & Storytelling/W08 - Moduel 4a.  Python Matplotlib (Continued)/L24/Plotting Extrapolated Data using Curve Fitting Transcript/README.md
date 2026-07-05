@@ -51,3 +51,5 @@ Observed Data → Fit Function → Predict Future
 ## [Step-by-Step Example](./Step-by-Step%20Example.md)
 
 ## [Step 1: Create Data](./Step%201%20-%20Create%20Data.md)
+
+## [Step 2: Fit Polynomial Curve](./Step%202%20-%20Fit%20Polynomial%20Curve.md)
