@@ -69,3 +69,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Raw Noise](./Raw%20Noise.md)
 
 ## [Random Walk](./Random%20Walk.md)
+
+## [Mathematical Interpretation](./Mathematical%20Interpretation.md)
