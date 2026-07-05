@@ -99,3 +99,5 @@ This is foundational to:
 ## [Geometry Construction](./Geometry%20Construction.md)
 
 ## [Why Longitude Comes First](./Why%20Longitude%20Comes%20First.md)
+
+## [Just Noticeable Shape Principle](./Just%20Noticeable%20Shape%20Principle.md)
