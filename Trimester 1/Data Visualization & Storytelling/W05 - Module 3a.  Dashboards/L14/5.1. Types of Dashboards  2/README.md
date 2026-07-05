@@ -93,3 +93,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Data Pipeline of Decision-Making](./Data%20Pipeline%20of%20Decision-Making.md)
 
 ## [Re-emphasis of Effective Dashboard Properties](./Re-emphasis%20of%20Effective%20Dashboard%20Properties.md)
+
+## [Important Clarification About “Small”](./Important%20Clarification%20About%20%E2%80%9CSmall%E2%80%9D.md)
