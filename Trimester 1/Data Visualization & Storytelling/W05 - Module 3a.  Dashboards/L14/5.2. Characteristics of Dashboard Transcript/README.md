@@ -87,3 +87,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Strong Dashboard](./Strong%20Dashboard.md)
 
 ## [6. Visual Design Principles](./6.%20Visual%20Design%20Principles.md)
+
+## [Pre-Attentive Attributes](./Pre-Attentive%20Attributes.md)
