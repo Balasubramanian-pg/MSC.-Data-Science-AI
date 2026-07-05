@@ -119,3 +119,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Close Order Principle](./Close%20Order%20Principle.md)
 
 ## [Visual Contrast](./Visual%20Contrast.md)
+
+## [Critical Dashboard Evaluation](./Critical%20Dashboard%20Evaluation.md)
