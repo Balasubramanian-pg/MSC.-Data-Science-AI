@@ -1,4 +1,8 @@
 # Important Insight
 
-Communication effectiveness often increases when:  
-information quantity decreases.
+People rarely separate:
+
+- information quality,  
+    from:
+    
+- delivery quality.
