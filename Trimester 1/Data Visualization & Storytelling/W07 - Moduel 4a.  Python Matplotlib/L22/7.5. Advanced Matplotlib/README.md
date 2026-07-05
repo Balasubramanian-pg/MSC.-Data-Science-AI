@@ -97,3 +97,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Style Sheets](./Style%20Sheets.md)
 
 ## [Concept](./Concept.md)
+
+## [Why Style Consistency Matters](./Why%20Style%20Consistency%20Matters.md)
