@@ -169,3 +169,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Limitation](./Important%20Limitation.md)
 
 ## [Bag of Words Pipeline](./Bag%20of%20Words%20Pipeline.md)
+
+## [5. Stopword Removal](./5.%20Stopword%20Removal.md)
