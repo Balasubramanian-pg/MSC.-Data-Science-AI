@@ -17,3 +17,5 @@ week: W06 - Feature Engineering Techniques for Image Data
 ## [Question 3](./Question%203.md)
 
 ## [Question 4](./Question%204.md)
+
+## [Question 5](./Question%205.md)
