@@ -1,42 +1,39 @@
 # Crime Dataset Example
 
-The crime dataset from 2001–2014 revealed:
+The lecture demonstrates:
 
-- an initial decline in crime until around 2003
+1. National crime overview
     
-- followed by steady increases afterward
+2. Drill into states
     
-
-At first glance, this suggests:
-
-- worsening crime trends
+3. Drill into city-level data
     
-- population effects
-    
-- reporting changes
-    
-- social transformation
+4. Drill into districts
     
 
-But the storytelling becomes more powerful when segmentation is introduced.
+At national level:
 
-The lecture highlights:
-
-- a particularly sharp increase in crimes against women
+- patterns appear broad and abstract
     
 
-This reframes the narrative from:
+At district level:
 
-> “Crime is increasing.”
+- actionable hotspots emerge
+    
+
+The analysis revealed:
+
+- specific districts in Delhi contributed disproportionately to crimes against women
+    
+- Outer, East, and West districts represented over 55% of incidents
+    
+
+This transforms the story from:
+
+> “Crime is a national issue.”
 
 to:
 
-> “A specific category of crime is escalating disproportionately.”
+> “Specific districts require targeted intervention.”
 
-That distinction matters because:
-
-- policy response changes
-    
-- urgency changes
-    
-- public interpretation changes
+That is operationally actionable.
