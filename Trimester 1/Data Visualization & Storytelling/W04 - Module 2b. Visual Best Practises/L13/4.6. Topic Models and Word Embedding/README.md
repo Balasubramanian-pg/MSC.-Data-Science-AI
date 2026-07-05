@@ -137,3 +137,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Discovering Hidden Themes](./Discovering%20Hidden%20Themes.md)
 
 ## [Topic Modeling Objective](./Topic%20Modeling%20Objective.md)
+
+## [Topic Modeling Pipeline](./Topic%20Modeling%20Pipeline.md)
