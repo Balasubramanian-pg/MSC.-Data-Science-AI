@@ -28,3 +28,5 @@
 ## [11. Gestalt Principles](./11.%20Gestalt%20Principles.md)
 
 ## [12. Pre-Attentive Attributes](./12.%20Pre-Attentive%20Attributes.md)
+
+## [13. Simplicity as a Design Principle](./13.%20Simplicity%20as%20a%20Design%20Principle.md)
