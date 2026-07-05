@@ -101,3 +101,5 @@
 ## [3. Sparse Data](./3.%20Sparse%20Data.md)
 
 ## [4. Overfitting Stories to Weak Data](./4.%20Overfitting%20Stories%20to%20Weak%20Data.md)
+
+## [5. Ignoring Data Integrity](./5.%20Ignoring%20Data%20Integrity.md)
