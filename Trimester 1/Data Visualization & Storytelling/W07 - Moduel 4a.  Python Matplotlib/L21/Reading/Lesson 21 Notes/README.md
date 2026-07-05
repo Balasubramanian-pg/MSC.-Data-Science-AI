@@ -151,3 +151,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Next Step in the Workflow](./Next%20Step%20in%20the%20Workflow.md)
 
 ## [Standard Plotting Pipeline](./Standard%20Plotting%20Pipeline.md)
+
+## [Full Example So Far](./Full%20Example%20So%20Far.md)
