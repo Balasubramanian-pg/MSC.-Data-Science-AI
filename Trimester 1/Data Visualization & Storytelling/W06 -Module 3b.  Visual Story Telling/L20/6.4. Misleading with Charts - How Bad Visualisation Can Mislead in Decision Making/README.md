@@ -125,3 +125,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Pre-attentive Manipulation](./Pre-attentive%20Manipulation.md)
 
 ## [Why Pre-attentive Features Are Powerful](./Why%20Pre-attentive%20Features%20Are%20Powerful.md)
+
+## [Dual-Axis and Scaling Problems](./Dual-Axis%20and%20Scaling%20Problems.md)
