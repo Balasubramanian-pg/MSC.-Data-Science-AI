@@ -85,3 +85,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Common Mistakes](./Common%20Mistakes.md)
 
 ## [Forgetting Datetime Indexes](./Forgetting%20Datetime%20Indexes.md)
+
+## [Not Scaling Bubble Sizes](./Not%20Scaling%20Bubble%20Sizes.md)
