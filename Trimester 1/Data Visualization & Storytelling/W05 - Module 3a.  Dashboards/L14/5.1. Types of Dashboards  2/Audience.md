@@ -1,11 +1,11 @@
 # Audience
 
-- Business analysts
+- Operations teams
     
-- Data analysts
+- Network engineers
     
-- Product teams
+- DevOps
     
-- Marketing analysts
+- Manufacturing supervisors
     
-- Operations researchers
+- Logistics coordinators
