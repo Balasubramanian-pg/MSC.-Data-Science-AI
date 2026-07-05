@@ -116,3 +116,5 @@ import numpy as np
 ## [Define columns by type](./Define%20columns%20by%20type.md)
 
 ## [Numeric pipeline: Impute missing Age with median, then scale](./Numeric%20pipeline%20-%20Impute%20missing%20Age%20with%20median%2C%20then%20scale.md)
+
+## [Categorical pipeline: Impute missing Embarked with mode, then One-Hot Encode](./Categorical%20pipeline%20-%20Impute%20missing%20Embarked%20with%20mode%2C%20then%20One-Hot%20Encode.md)
