@@ -43,3 +43,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Key Strategic Lesson](./Key%20Strategic%20Lesson.md)
 
 ## [Axis Manipulation and Misleading Scale Design](./Axis%20Manipulation%20and%20Misleading%20Scale%20Design.md)
+
+## [1. Natural Ordering Matters](./1.%20Natural%20Ordering%20Matters.md)
