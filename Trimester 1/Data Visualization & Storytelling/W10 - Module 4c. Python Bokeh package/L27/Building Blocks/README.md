@@ -21,3 +21,5 @@
 ## [5.1.10. Bokeh vs Traditional Plotting Libraries](./5.1.10.%20Bokeh%20vs%20Traditional%20Plotting%20Libraries.md)
 
 ## [5.1.11. Common Pitfalls and Misinterpretations](./5.1.11.%20Common%20Pitfalls%20and%20Misinterpretations.md)
+
+## [5.1.12. Conclusions](./5.1.12.%20Conclusions.md)
