@@ -15,3 +15,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Cognitive Reality](./The%20Cognitive%20Reality.md)
 
 ## [Example](./Example.md)
+
+## [What Is Data Storytelling?](./What%20Is%20Data%20Storytelling.md)
