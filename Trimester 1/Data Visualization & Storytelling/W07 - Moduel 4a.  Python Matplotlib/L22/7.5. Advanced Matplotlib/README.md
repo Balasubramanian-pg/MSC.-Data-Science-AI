@@ -9,3 +9,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Introduction to Advanced Visualization in Matplotlib](./Introduction%20to%20Advanced%20Visualization%20in%20Matplotlib.md)
 
 ## [Histograms](./Histograms.md)
+
+## [Conceptual Foundation](./Conceptual%20Foundation.md)
