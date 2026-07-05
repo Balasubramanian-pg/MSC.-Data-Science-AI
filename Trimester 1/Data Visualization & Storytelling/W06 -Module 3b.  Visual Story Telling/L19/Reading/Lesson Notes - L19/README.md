@@ -21,3 +21,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Storytelling in Data Visualization](./Storytelling%20in%20Data%20Visualization.md)
 
 ## [A Simple Storytelling Framework for Business](./A%20Simple%20Storytelling%20Framework%20for%20Business.md)
+
+## [Key Insight](./Key%20Insight.md)
