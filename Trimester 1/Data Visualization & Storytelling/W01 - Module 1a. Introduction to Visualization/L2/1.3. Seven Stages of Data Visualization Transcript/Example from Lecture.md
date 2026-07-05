@@ -1,12 +1,21 @@
 # Example from Lecture
 
-Initial visualization:
+Stakeholder asks:
 
-- simple horizontal bar chart
-    
-- alphabetical ordering
-    
+```text
+What is the region-wise performance?
+```
 
 Problem:
 
-> The chart failed to communicate the mined insight.
+```text
+Region variable does not exist.
+```
+
+Solution:
+
+- return to acquisition stage
+    
+- add new variable
+    
+- rebuild visuals
