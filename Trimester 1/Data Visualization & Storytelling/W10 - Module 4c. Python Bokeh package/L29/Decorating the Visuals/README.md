@@ -601,3 +601,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Mistake 1: Decorative Titles](./Mistake%201%20-%20Decorative%20Titles.md)
 
 ## [Mistake 2: Centering Everything](./Mistake%202%20-%20Centering%20Everything.md)
+
+## [Mistake 3: Overly Large Titles](./Mistake%203%20-%20Overly%20Large%20Titles.md)
