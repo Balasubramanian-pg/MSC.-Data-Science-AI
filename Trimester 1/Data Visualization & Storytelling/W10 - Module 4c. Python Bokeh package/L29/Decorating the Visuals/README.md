@@ -329,3 +329,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [This Is the Big Idea](./This%20Is%20the%20Big%20Idea.md)
 
 ## [Object Flow](./Object%20Flow.md)
+
+## [Styling During Creation](./Styling%20During%20Creation.md)
