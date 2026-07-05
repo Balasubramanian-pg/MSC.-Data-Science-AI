@@ -41,3 +41,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Refine title structure using Matplotlib commands over the Seaborn output](./Refine%20title%20structure%20using%20Matplotlib%20commands%20over%20the%20Seaborn%20output.md)
 
 ## [4. Architectural Comparison Cheatsheet](./4.%20Architectural%20Comparison%20Cheatsheet.md)
+
+## [Technical Deep-Dive: DataFrame Integration & Categorical Support](./Technical%20Deep-Dive%20-%20DataFrame%20Integration%20%26%20Categorical%20Support.md)
