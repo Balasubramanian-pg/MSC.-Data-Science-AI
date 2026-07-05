@@ -129,3 +129,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Pie Charts and Slopes](./Pie%20Charts%20and%20Slopes.md)
 
 ## [Area and Volume Problems](./Area%20and%20Volume%20Problems.md)
+
+## [Bubble Chart Problem](./Bubble%20Chart%20Problem.md)
