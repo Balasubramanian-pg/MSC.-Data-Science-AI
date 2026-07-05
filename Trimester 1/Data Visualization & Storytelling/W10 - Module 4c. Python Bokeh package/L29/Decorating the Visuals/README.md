@@ -621,3 +621,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Important UI Insight](./Important%20UI%20Insight.md)
 
 ## [Important Design Insight](./Important%20Design%20Insight.md)
+
+## [Visualization Attention Flow](./Visualization%20Attention%20Flow.md)
