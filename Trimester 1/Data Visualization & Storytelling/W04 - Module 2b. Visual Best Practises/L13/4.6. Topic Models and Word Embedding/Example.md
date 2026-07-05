@@ -1,7 +1,19 @@
 # Example
 
-|Word|Semantic Neighborhood|
-|---|---|
-|King|Queen, Prince, Monarch|
-|Bankruptcy|Debt, Default, Insolvency|
-|Happy|Joyful, Excited, Glad|
+Emails containing words like:
+
+- compliance
+    
+- regulation
+    
+- penalty
+    
+- audit
+    
+
+likely belong to a:
+
+```text
+regulatory topic
+```
+![[LSA & LDA.png]]
