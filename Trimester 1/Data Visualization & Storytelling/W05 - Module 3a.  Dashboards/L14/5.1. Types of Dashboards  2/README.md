@@ -111,3 +111,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Why Line Charts Were Used](./Why%20Line%20Charts%20Were%20Used.md)
 
 ## [Visualization Selection Principle](./Visualization%20Selection%20Principle.md)
+
+## [Gestalt Principles Mentioned](./Gestalt%20Principles%20Mentioned.md)
