@@ -751,3 +751,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Syntax](./Syntax.md)
 
 ## [Scatter Plot with Color Mapping](./Scatter%20Plot%20with%20Color%20Mapping.md)
+
+## [What Happens Visually](./What%20Happens%20Visually.md)
