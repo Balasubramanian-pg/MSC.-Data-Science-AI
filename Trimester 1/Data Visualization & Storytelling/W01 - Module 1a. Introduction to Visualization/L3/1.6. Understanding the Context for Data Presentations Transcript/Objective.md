@@ -1,3 +1,3 @@
 # Objective
 
-Provide a nationwide summary.
+Evaluate regional performance.
