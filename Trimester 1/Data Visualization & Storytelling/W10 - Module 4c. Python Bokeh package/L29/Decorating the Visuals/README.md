@@ -615,3 +615,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Alignment](./Alignment.md)
 
 ## [Background Color](./Background%20Color.md)
+
+## [Text Color](./Text%20Color.md)
