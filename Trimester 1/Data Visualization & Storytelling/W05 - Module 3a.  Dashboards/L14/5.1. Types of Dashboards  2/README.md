@@ -169,3 +169,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Core Design Principle: Form Follows Function](./Core%20Design%20Principle%20-%20Form%20Follows%20Function.md)
 
 ## [Meaning](./Meaning.md)
+
+## [In Visualization Terms](./In%20Visualization%20Terms.md)
