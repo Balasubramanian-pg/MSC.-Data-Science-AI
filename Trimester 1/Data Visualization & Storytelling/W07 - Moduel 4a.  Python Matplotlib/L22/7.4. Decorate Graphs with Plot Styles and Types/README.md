@@ -63,3 +63,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Basic Line Styles](./Basic%20Line%20Styles.md)
 
 ## [Example](./Example.md)
+
+## [Why Markers Matter](./Why%20Markers%20Matter.md)
