@@ -39,3 +39,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [3. Storytelling Frameworks](./3.%20Storytelling%20Frameworks.md)
 
 ## [A. Monomyth (Hero’s Journey)](./A.%20Monomyth%20%28Hero%E2%80%99s%20Journey%29.md)
+
+## [B. Story Mountain](./B.%20Story%20Mountain.md)
