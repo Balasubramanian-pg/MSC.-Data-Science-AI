@@ -135,3 +135,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Example of Poor Restraint](./Example%20of%20Poor%20Restraint.md)
 
 ## [Strong Restraint](./Strong%20Restraint.md)
+
+## [2. Whitespace as a Strategic Tool](./2.%20Whitespace%20as%20a%20Strategic%20Tool.md)
