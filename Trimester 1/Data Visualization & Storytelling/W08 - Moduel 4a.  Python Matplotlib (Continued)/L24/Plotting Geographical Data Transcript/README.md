@@ -97,3 +97,5 @@ This is foundational to:
 ## [Coordinate Meaning](./Coordinate%20Meaning.md)
 
 ## [Geometry Construction](./Geometry%20Construction.md)
+
+## [Why Longitude Comes First](./Why%20Longitude%20Comes%20First.md)
