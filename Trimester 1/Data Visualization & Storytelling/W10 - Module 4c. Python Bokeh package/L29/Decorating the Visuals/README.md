@@ -849,3 +849,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Deeper Insight](./Deeper%20Insight.md)
 
 ## [Real Enterprise Usage](./Real%20Enterprise%20Usage.md)
+
+## [Mistake 1: Overusing Dark Themes](./Mistake%201%20-%20Overusing%20Dark%20Themes.md)
