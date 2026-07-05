@@ -41,3 +41,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Typical Users](./Typical%20Users.md)
 
 ## [Dashboard Taxonomy](./Dashboard%20Taxonomy.md)
+
+## [Characteristics of Dashboards](./Characteristics%20of%20Dashboards.md)
