@@ -31,3 +31,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Data-Ink Ratio](./Data-Ink%20Ratio.md)
 
 ## [Bad Visualization](./Bad%20Visualization.md)
+
+## [Good Visualization](./Good%20Visualization.md)
