@@ -25,3 +25,5 @@ week: W08 - Automated Feature Engineering
 ## [8.0.9. Computational Trade-Offs and Strategic Warnings](./8.0.9.%20Computational%20Trade-Offs%20and%20Strategic%20Warnings.md)
 
 ## [8.0.10. Automated Feature Engineering Workflow](./8.0.10.%20Automated%20Feature%20Engineering%20Workflow.md)
+
+## [8.0.11. Conclusions](./8.0.11.%20Conclusions.md)
