@@ -17,3 +17,5 @@
 ## [6.1.8. Factors Affecting Metadata Efficiency](./6.1.8.%20Factors%20Affecting%20Metadata%20Efficiency.md)
 
 ## [6.1.9. Common Pitfalls in Metadata Management](./6.1.9.%20Common%20Pitfalls%20in%20Metadata%20Management.md)
+
+## [6.1.10. Conclusions](./6.1.10.%20Conclusions.md)
