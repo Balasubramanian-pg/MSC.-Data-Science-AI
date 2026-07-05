@@ -589,3 +589,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Title A](./Title%20A.md)
 
 ## [Title B](./Title%20B.md)
+
+## [Good Visualization Title Principles](./Good%20Visualization%20Title%20Principles.md)
