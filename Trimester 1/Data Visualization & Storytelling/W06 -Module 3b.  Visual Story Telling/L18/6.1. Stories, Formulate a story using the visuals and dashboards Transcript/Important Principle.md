@@ -1,7 +1,4 @@
 # Important Principle
 
-Visualization creates:  
-visibility.
-
-Storytelling creates:  
-meaning.
+Communication quality affects:  
+decision quality.
