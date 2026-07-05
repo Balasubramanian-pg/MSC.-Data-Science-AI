@@ -391,3 +391,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Basic Line Plot](./Basic%20Line%20Plot.md)
 
 ## [Axis Objects in Bokeh](./Axis%20Objects%20in%20Bokeh.md)
+
+## [Common Axis Properties](./Common%20Axis%20Properties.md)
