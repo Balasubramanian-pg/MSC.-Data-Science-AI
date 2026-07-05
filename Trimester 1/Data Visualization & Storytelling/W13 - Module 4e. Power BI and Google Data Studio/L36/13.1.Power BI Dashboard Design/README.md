@@ -9,3 +9,5 @@
 ## [1.1.4. Headline Metrics and Conditional Formatting](./1.1.4.%20Headline%20Metrics%20and%20Conditional%20Formatting.md)
 
 ## [1.1.5. Geospatial and Hierarchical Visualizations](./1.1.5.%20Geospatial%20and%20Hierarchical%20Visualizations.md)
+
+## [1.1.6. Analytical Scatter Plots and Quadrant Analysis](./1.1.6.%20Analytical%20Scatter%20Plots%20and%20Quadrant%20Analysis.md)
