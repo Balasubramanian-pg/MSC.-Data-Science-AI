@@ -41,3 +41,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [A. Monomyth (Hero’s Journey)](./A.%20Monomyth%20%28Hero%E2%80%99s%20Journey%29.md)
 
 ## [B. Story Mountain](./B.%20Story%20Mountain.md)
+
+## [C. Nested Loops](./C.%20Nested%20Loops.md)
