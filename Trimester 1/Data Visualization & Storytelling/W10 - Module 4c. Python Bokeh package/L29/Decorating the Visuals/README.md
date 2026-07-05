@@ -431,3 +431,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Major Tick Styling](./Major%20Tick%20Styling.md)
 
 ## [Tick Hierarchy](./Tick%20Hierarchy.md)
+
+## [Why Minor Ticks Matter](./Why%20Minor%20Ticks%20Matter.md)
