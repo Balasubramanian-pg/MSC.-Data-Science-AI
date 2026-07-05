@@ -33,3 +33,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Natural Ordering Matters](./Why%20Natural%20Ordering%20Matters.md)
 
 ## [Visualization Ethics](./Visualization%20Ethics.md)
+
+## [Common Sources of Misleading Charts](./Common%20Sources%20of%20Misleading%20Charts.md)
