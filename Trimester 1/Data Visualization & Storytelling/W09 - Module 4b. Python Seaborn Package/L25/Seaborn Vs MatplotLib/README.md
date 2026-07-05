@@ -147,3 +147,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [2. Statistical Architecture: The Anatomy of a Box Plot](./2.%20Statistical%20Architecture%20-%20The%20Anatomy%20of%20a%20Box%20Plot.md)
 
 ## [0. SETUP: Generating Consolidated Student Performance Data](./0.%20SETUP%20-%20Generating%20Consolidated%20Student%20Performance%20Data.md)
+
+## [Calculate global baseline metrics for our Matplotlib annotation layer](./Calculate%20global%20baseline%20metrics%20for%20our%20Matplotlib%20annotation%20layer.md)
