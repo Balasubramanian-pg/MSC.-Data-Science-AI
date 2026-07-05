@@ -21,3 +21,5 @@ week: W08 - Automated Feature Engineering
 ## [8.5.7. Statistical Foundations Behind Automated Feature Engineering](./8.5.7.%20Statistical%20Foundations%20Behind%20Automated%20Feature%20Engineering.md)
 
 ## [8.5.8. Strategic Trade-Offs of Automated Feature Engineering](./8.5.8.%20Strategic%20Trade-Offs%20of%20Automated%20Feature%20Engineering.md)
+
+## [8.5.9. Automated Feature Engineering Workflow](./8.5.9.%20Automated%20Feature%20Engineering%20Workflow.md)
