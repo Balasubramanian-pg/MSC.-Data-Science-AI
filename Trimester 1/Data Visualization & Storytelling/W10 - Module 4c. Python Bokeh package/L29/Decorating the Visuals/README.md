@@ -357,3 +357,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Hidden Lesson in This Section](./Hidden%20Lesson%20in%20This%20Section.md)
 
 ## [Part 1: Editing Glyphs After Creation](./Part%201%20-%20Editing%20Glyphs%20After%20Creation.md)
+
+## [Initial Circle Glyph](./Initial%20Circle%20Glyph.md)
