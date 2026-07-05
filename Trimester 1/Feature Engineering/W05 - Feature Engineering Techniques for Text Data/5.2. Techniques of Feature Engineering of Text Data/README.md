@@ -105,3 +105,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [We extract POS counts for all 3 documents to create a (3, num_pos_tags) matrix.](./We%20extract%20POS%20counts%20for%20all%203%20documents%20to%20create%20a%20%283%2C%20num_pos_tags%29%20matrix.md)
 
 ## [We then horizontally stack them:](./We%20then%20horizontally%20stack%20them%20-.md)
+
+## [X_combined = hstack([X_ngram, X_pos_features])](./X_combined%20%3D%20hstack%28%5BX_ngram%2C%20X_pos_features%5D%29.md)
