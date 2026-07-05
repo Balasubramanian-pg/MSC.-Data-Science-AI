@@ -1,13 +1,18 @@
 # Important Real-World Insight
 
-When labels become unreadable, the problem may not be:
+Linear scales fail badly when:
 
-- styling
+- data distributions are skewed
+    
+- extreme outliers exist
     
 
-It may be:
+This is common in:
 
-- too much information density
+- finance
     
-
-No amount of formatting fixes fundamentally overloaded charts.
+- population data
+    
+- web traffic
+    
+- scientific measurements
