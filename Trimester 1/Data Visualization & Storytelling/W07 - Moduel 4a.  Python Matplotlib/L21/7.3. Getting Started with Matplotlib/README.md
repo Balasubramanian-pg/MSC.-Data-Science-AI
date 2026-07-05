@@ -69,3 +69,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Matplotlib Became Popular](./Why%20Matplotlib%20Became%20Popular.md)
 
 ## [Common Beginner Errors](./Common%20Beginner%20Errors.md)
+
+## [1. Missing Imports](./1.%20Missing%20Imports.md)
