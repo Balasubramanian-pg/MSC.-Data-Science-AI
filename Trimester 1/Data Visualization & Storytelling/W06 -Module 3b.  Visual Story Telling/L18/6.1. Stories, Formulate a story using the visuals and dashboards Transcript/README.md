@@ -215,3 +215,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Time Constraints Improve Visual Quality](./Why%20Time%20Constraints%20Improve%20Visual%20Quality.md)
 
 ## [Cognitive Effect of Brevity](./Cognitive%20Effect%20of%20Brevity.md)
+
+## [Attention Decay Problem](./Attention%20Decay%20Problem.md)
