@@ -419,3 +419,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Initial Line Plot](./Initial%20Line%20Plot.md)
 
 ## [Axis Customization](./Axis%20Customization.md)
+
+## [X-Axis Line Color](./X-Axis%20Line%20Color.md)
