@@ -299,3 +299,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Mistake 1: Overstyling](./Mistake%201%20-%20Overstyling.md)
 
 ## [Mistake 2: Removing All Grids](./Mistake%202%20-%20Removing%20All%20Grids.md)
+
+## [Mistake 3: Confusing Plot vs Glyph Styling](./Mistake%203%20-%20Confusing%20Plot%20vs%20Glyph%20Styling.md)
