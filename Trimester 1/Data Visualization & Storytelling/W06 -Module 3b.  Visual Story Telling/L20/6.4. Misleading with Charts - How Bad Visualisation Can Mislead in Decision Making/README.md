@@ -79,3 +79,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Decorative Overload Is Harmful](./Why%20Decorative%20Overload%20Is%20Harmful.md)
 
 ## [Example Problems](./Example%20Problems.md)
+
+## [The Deeper Principle](./The%20Deeper%20Principle.md)
