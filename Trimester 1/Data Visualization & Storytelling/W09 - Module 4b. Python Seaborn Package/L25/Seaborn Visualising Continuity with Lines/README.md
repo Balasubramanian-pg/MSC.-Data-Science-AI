@@ -17,3 +17,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Display the first few rows to understand the structure](./Display%20the%20first%20few%20rows%20to%20understand%20the%20structure.md)
 
 ## [2. CORE FUNCTION: Simple Line Plot with Statistical Aggregation](./2.%20CORE%20FUNCTION%20-%20Simple%20Line%20Plot%20with%20Statistical%20Aggregation.md)
+
+## [Note: Because there are multiple subjects ('s1', 's2', etc.) for each](./Note%20-%20Because%20there%20are%20multiple%20subjects%20%28%27s1%27%2C%20%27s2%27%2C%20etc.%29%20for%20each.md)
