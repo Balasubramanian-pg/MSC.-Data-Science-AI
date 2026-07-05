@@ -93,3 +93,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [6. Change Over Time](./6.%20Change%20Over%20Time.md)
 
 ## [Objective](./Objective.md)
+
+## [Why Time-Based Stories Matter](./Why%20Time-Based%20Stories%20Matter.md)
