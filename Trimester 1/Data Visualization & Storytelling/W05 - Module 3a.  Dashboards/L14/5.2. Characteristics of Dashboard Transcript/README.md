@@ -67,3 +67,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Key Principle](./Key%20Principle.md)
 
 ## [Operational Importance](./Operational%20Importance.md)
+
+## [Engineering Challenges](./Engineering%20Challenges.md)
