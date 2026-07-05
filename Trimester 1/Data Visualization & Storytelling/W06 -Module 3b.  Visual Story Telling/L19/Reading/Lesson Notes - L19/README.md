@@ -61,3 +61,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Exploratory Narratives Matter](./Why%20Exploratory%20Narratives%20Matter.md)
 
 ## [The Core Advantage: Discovery](./The%20Core%20Advantage%20-%20Discovery.md)
+
+## [The Hidden Problem with Exploratory Dashboards](./The%20Hidden%20Problem%20with%20Exploratory%20Dashboards.md)
