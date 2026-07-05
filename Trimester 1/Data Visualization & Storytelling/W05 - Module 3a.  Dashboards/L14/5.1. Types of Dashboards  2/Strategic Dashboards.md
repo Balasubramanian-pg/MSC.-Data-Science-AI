@@ -1,22 +1,20 @@
 # Strategic Dashboards
 
-Strategic decisions operate over:
+Executives generally require:
 
-- weeks,
-    
-- months,
-    
-- quarters,
-    
-- or years.
+- low-to-moderate interaction.
     
 
-Examples:
+Why?
 
-- market expansion,
+Because they consume:
+
+- synthesized summaries,
     
-- investment planning,
+- high-level indicators,
     
-- growth strategy,
+- directional trends.
     
-- compliance direction.
+
+Too much interaction:  
+creates unnecessary cognitive friction.
