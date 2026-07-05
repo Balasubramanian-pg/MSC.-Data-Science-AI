@@ -47,3 +47,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Raw Facts](./Raw%20Facts.md)
 
 ## [Stories](./Stories.md)
+
+## [Jerome Bruner’s Theory](./Jerome%20Bruner%E2%80%99s%20Theory.md)
