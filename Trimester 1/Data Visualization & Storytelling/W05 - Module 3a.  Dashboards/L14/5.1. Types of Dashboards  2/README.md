@@ -141,3 +141,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Dashboard Cognitive Architecture](./Dashboard%20Cognitive%20Architecture.md)
 
 ## [Hidden Design Principle](./Hidden%20Design%20Principle.md)
+
+## [User Journey](./User%20Journey.md)
