@@ -763,3 +763,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Why 256?](./Why%20256.md)
 
 ## [Palette Comparison](./Palette%20Comparison.md)
+
+## [Important Scientific Visualization Insight](./Important%20Scientific%20Visualization%20Insight.md)
