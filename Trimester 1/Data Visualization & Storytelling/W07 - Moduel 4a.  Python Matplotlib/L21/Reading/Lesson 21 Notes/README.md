@@ -179,3 +179,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [What `plot()` Does](./What%20%60plot%28%29%60%20Does.md)
 
 ## [Mathematical Relationship](./Mathematical%20Relationship.md)
+
+## [Plotting Pipeline](./Plotting%20Pipeline.md)
