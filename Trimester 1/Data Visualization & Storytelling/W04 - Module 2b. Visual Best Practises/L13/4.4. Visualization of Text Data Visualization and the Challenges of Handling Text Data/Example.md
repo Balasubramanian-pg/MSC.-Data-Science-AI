@@ -1,13 +1,16 @@
 # Example
 
-Before:
+Sentence:
 
 ```text
-"Hello!!!"
+"Visualization of text data"
 ```
 
-After:
+becomes:
 
-```text
-hello
-```
+|Token|
+|---|
+|visualization|
+|of|
+|text|
+|data|
