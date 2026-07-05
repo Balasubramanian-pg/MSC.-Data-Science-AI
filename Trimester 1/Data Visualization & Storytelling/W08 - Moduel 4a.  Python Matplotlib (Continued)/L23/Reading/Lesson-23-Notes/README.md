@@ -283,3 +283,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Understanding Rectangle Coordinates](./Understanding%20Rectangle%20Coordinates.md)
 
 ## [Why This Matters Visually](./Why%20This%20Matters%20Visually.md)
+
+## [Understanding `axes[0]` and `axes[1]`](./Understanding%20%60axes%5B0%5D%60%20and%20%60axes%5B1%5D%60.md)
