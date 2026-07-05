@@ -117,3 +117,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Relationship Between Embeddings and Topic Models](./Relationship%20Between%20Embeddings%20and%20Topic%20Models.md)
 
 ## [Modern AI Connection](./Modern%20AI%20Connection.md)
+
+## [Modern Transformer Pipeline](./Modern%20Transformer%20Pipeline.md)
