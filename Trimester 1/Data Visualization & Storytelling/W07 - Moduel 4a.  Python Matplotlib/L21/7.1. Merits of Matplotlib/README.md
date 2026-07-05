@@ -63,3 +63,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [7. Pre-attentive Attributes in Matplotlib](./7.%20Pre-attentive%20Attributes%20in%20Matplotlib.md)
 
 ## [Pre-attentive Attributes](./Pre-attentive%20Attributes.md)
+
+## [Example](./Example.md)
