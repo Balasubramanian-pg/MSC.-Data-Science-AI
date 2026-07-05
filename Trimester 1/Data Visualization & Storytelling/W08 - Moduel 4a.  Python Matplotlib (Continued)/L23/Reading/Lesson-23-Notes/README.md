@@ -161,3 +161,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Aspect Ratio Matters](./Why%20Aspect%20Ratio%20Matters.md)
 
 ## [Why Crimson Was Chosen](./Why%20Crimson%20Was%20Chosen.md)
+
+## [Time-Series Visualization Insights](./Time-Series%20Visualization%20Insights.md)
