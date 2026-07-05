@@ -217,3 +217,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Cognitive Effect of Brevity](./Cognitive%20Effect%20of%20Brevity.md)
 
 ## [Attention Decay Problem](./Attention%20Decay%20Problem.md)
+
+## [Attention Curve](./Attention%20Curve.md)
