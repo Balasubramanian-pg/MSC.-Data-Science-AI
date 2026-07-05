@@ -155,3 +155,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Whitespace Matters](./Why%20Whitespace%20Matters.md)
 
 ## [One Idea Per Slide](./One%20Idea%20Per%20Slide.md)
+
+## [Slide Narrative Flow](./Slide%20Narrative%20Flow.md)
