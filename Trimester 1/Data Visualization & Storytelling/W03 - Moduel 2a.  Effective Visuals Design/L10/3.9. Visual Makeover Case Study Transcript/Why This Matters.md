@@ -1,11 +1,18 @@
 # Why This Matters
 
-Users naturally allocate attention according to spatial expectations.
+The best visualizations feel:
 
-Violating these expectations increases:
+- obvious
+    
+- effortless
+    
+- self-explanatory
+    
 
-- cognitive load
-    
-- scanning effort
-    
-- interpretation delay
+Users should focus on:
+
+```text
+understanding the insight
+```
+
+not figuring out the interface.
