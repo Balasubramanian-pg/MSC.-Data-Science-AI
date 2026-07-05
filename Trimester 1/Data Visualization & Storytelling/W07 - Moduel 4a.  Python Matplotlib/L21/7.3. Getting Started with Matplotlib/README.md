@@ -211,3 +211,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Common File Formats](./Common%20File%20Formats.md)
 
 ## [Important Hidden Concept](./Important%20Hidden%20Concept.md)
+
+## [6. Syntax Errors and Notebook Behavior](./6.%20Syntax%20Errors%20and%20Notebook%20Behavior.md)
