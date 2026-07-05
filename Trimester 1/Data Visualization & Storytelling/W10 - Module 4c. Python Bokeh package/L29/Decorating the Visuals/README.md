@@ -607,3 +607,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Mistake 4: Ambiguous Titles](./Mistake%204%20-%20Ambiguous%20Titles.md)
 
 ## [Final Mental Model](./Final%20Mental%20Model.md)
+
+## [Part 1: Advanced Title Customization](./Part%201%20-%20Advanced%20Title%20Customization.md)
