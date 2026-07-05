@@ -55,3 +55,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Visual Narrative Tactics in Data Storytelling](./Visual%20Narrative%20Tactics%20in%20Data%20Storytelling.md)
 
 ## [1. Highlighting](./1.%20Highlighting.md)
+
+## [Common Highlighting Methods](./Common%20Highlighting%20Methods.md)
