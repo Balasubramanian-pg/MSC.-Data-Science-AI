@@ -59,3 +59,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Visualization Principle](./Important%20Visualization%20Principle.md)
 
 ## [Why the Bar Chart Is Superior](./Why%20the%20Bar%20Chart%20Is%20Superior.md)
+
+## [Why Bar Charts Are Better](./Why%20Bar%20Charts%20Are%20Better.md)
