@@ -44,3 +44,5 @@ Therefore visualization design becomes a tradeoff between:
 The transcript introduces this challenge directly.
 
 ## [The Reality of Corporate Visualization](./The%20Reality%20of%20Corporate%20Visualization.md)
+
+## [Why Companies Enforce Brand Consistency](./Why%20Companies%20Enforce%20Brand%20Consistency.md)
