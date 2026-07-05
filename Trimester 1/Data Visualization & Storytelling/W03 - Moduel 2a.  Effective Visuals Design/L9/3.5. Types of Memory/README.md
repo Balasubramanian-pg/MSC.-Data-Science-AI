@@ -207,3 +207,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [4. Thickness](./4.%20Thickness.md)
 
 ## [5. Enclosure](./5.%20Enclosure.md)
+
+## [6. Hue (Color)](./6.%20Hue%20%28Color%29.md)
