@@ -136,3 +136,5 @@ Bad visualizations use color excessively.
 ## [Color Consistency Principle](./Color%20Consistency%20Principle.md)
 
 ## [Final Design Framework](./Final%20Design%20Framework.md)
+
+## [Ask These Questions Before Using Color](./Ask%20These%20Questions%20Before%20Using%20Color.md)
