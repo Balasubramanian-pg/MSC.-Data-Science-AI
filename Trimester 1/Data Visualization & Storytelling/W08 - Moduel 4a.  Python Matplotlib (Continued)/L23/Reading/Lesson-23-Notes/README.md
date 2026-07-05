@@ -269,3 +269,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Advanced Mental Model](./Advanced%20Mental%20Model.md)
 
 ## [Advanced Layout Control with `tight_layout()`](./Advanced%20Layout%20Control%20with%20%60tight_layout%28%29%60.md)
+
+## [Why Layout Problems Happen](./Why%20Layout%20Problems%20Happen.md)
