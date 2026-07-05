@@ -51,3 +51,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [8. Common Errors & Troubleshooting](./8.%20Common%20Errors%20%26%20Troubleshooting.md)
 
 ## [9. Next Steps (Preview)](./9.%20Next%20Steps%20%28Preview%29.md)
+
+## [10. Reference: Color Format Quick Guide](./10.%20Reference%20-%20Color%20Format%20Quick%20Guide.md)
