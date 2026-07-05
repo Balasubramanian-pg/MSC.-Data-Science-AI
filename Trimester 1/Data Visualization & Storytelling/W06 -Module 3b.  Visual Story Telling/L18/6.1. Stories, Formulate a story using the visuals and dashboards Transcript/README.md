@@ -245,3 +245,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why This Is Dangerous](./Why%20This%20Is%20Dangerous.md)
 
 ## [Important Organizational Insight](./Important%20Organizational%20Insight.md)
+
+## [Shortcut Decision-Making](./Shortcut%20Decision-Making.md)
