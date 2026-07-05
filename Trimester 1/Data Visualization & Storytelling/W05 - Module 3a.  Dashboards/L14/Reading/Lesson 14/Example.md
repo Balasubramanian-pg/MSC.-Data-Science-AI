@@ -1,10 +1,5 @@
 # Example
 
-Instead of:  
-“all sales metrics”
+A single red KPI among gray metrics immediately attracts attention.
 
-A better dashboard asks:
-
-> Why are delivery delays increasing this month?
-
-Now every visualization supports that question.
+No conscious reading required.
