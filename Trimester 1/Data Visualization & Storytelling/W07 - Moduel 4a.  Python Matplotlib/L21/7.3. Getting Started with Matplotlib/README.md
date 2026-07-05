@@ -169,3 +169,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Plotting Multiple Functions in Matplotlib](./Plotting%20Multiple%20Functions%20in%20Matplotlib.md)
 
 ## [Recap of the Plotting Workflow](./Recap%20of%20the%20Plotting%20Workflow.md)
+
+## [1. Plotting Multiple Functions](./1.%20Plotting%20Multiple%20Functions.md)
