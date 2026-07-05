@@ -77,3 +77,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [3. Using Text Without `#`](./3.%20Using%20Text%20Without%20%60%23%60.md)
 
 ## [4. Shape Mismatch](./4.%20Shape%20Mismatch.md)
+
+## [Key Educational Insight from the Lecture](./Key%20Educational%20Insight%20from%20the%20Lecture.md)
