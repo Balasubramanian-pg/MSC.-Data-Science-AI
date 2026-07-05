@@ -70,3 +70,5 @@
 ## [4.3 Filtering by Voter Turnout Ratio](./4.3%20Filtering%20by%20Voter%20Turnout%20Ratio.md)
 
 ## [4.4 Mining Hidden Patterns](./4.4%20Mining%20Hidden%20Patterns.md)
+
+## [4.5 Initial Visualization Problems](./4.5%20Initial%20Visualization%20Problems.md)
