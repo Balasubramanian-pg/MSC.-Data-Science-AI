@@ -145,3 +145,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [1. Scale Compression Hides Meaning](./1.%20Scale%20Compression%20Hides%20Meaning.md)
 
 ## [Visual Compression Problem](./Visual%20Compression%20Problem.md)
+
+## [Why Trend Shape Matters](./Why%20Trend%20Shape%20Matters.md)
