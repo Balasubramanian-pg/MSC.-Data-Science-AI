@@ -197,3 +197,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Sentiment Analysis Limitation Pipeline](./Sentiment%20Analysis%20Limitation%20Pipeline.md)
 
 ## [Text Visualization as Information Reduction](./Text%20Visualization%20as%20Information%20Reduction.md)
+
+## [Modern NLP Pipeline](./Modern%20NLP%20Pipeline.md)
