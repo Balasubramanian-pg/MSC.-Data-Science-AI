@@ -95,3 +95,5 @@ Observed Data → Fit Function → Predict Future
 ## [2. Assuming Forecasts Are Truth](./2.%20Assuming%20Forecasts%20Are%20Truth.md)
 
 ## [3. Ignoring Domain Knowledge](./3.%20Ignoring%20Domain%20Knowledge.md)
+
+## [Computational Insight](./Computational%20Insight.md)
