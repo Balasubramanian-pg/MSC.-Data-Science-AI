@@ -193,3 +193,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [2. Rename the Y-axis label to "Final Score" as explicitly instructed in the lecture](./2.%20Rename%20the%20Y-axis%20label%20to%20Final%20Score%20as%20explicitly%20instructed%20in%20the%20lecture.md)
 
 ## [3. Add the structural horizontal reference line using Matplotlib's axhline](./3.%20Add%20the%20structural%20horizontal%20reference%20line%20using%20Matplotlib%27s%20axhline.md)
+
+## [4. Enable the legend to clarify what the red dotted line indicates](./4.%20Enable%20the%20legend%20to%20clarify%20what%20the%20red%20dotted%20line%20indicates.md)
