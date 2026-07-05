@@ -159,3 +159,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Why Hatch Patterns Matter](./Why%20Hatch%20Patterns%20Matter.md)
 
 ## [Full Example Combining Properties](./Full%20Example%20Combining%20Properties.md)
+
+## [Generate random data](./Generate%20random%20data.md)
