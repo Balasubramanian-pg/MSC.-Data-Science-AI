@@ -97,3 +97,5 @@ Observed Data → Fit Function → Predict Future
 ## [3. Ignoring Domain Knowledge](./3.%20Ignoring%20Domain%20Knowledge.md)
 
 ## [Computational Insight](./Computational%20Insight.md)
+
+## [Better Real-World Alternatives](./Better%20Real-World%20Alternatives.md)
