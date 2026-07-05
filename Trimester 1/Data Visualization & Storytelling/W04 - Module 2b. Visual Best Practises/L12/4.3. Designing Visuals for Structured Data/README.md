@@ -123,3 +123,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Multivariate Analysis Framework](./Multivariate%20Analysis%20Framework.md)
 
 ## [Comparison Analysis](./Comparison%20Analysis.md)
+
+## [Important Business Insight](./Important%20Business%20Insight.md)
