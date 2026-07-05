@@ -121,3 +121,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Context Changes Meaning](./Context%20Changes%20Meaning.md)
 
 ## [Visualization Approaches](./Visualization%20Approaches.md)
+
+## [The Strategic Importance of Zooming Out](./The%20Strategic%20Importance%20of%20Zooming%20Out.md)
