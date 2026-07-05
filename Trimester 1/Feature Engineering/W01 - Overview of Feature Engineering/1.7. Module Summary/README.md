@@ -21,3 +21,5 @@ week: W01 - Overview of Feature Engineering
 ## [1.1.7. Factors Affecting Feature Utility](./1.1.7.%20Factors%20Affecting%20Feature%20Utility.md)
 
 ## [1.1.8. Common Misinterpretations](./1.1.8.%20Common%20Misinterpretations.md)
+
+## [1.1.9. Conclusions](./1.1.9.%20Conclusions.md)
