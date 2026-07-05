@@ -102,3 +102,5 @@ The transcript introduces this challenge directly.
 ## [Poor Layout](./Poor%20Layout.md)
 
 ## [Good Layout](./Good%20Layout.md)
+
+## [Why Top-Left Matters](./Why%20Top-Left%20Matters.md)
