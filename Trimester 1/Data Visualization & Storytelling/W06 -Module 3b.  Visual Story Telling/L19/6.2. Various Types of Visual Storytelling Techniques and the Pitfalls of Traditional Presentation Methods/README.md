@@ -81,3 +81,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Hidden Risk](./Hidden%20Risk.md)
 
 ## [2. Story Mountain Framework](./2.%20Story%20Mountain%20Framework.md)
+
+## [Why Story Mountain Is Effective](./Why%20Story%20Mountain%20Is%20Effective.md)
