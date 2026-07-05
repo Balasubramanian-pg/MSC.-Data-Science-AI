@@ -1,11 +1,3 @@
 # Business Insight
 
-Organizations that collect richer datasets gain:
-
-- stronger analytical capability
-    
-- better forecasting
-    
-- better personalization
-    
-- better strategic decision-making
+A technically perfect chart can still fail if stakeholders cannot interpret it quickly.
