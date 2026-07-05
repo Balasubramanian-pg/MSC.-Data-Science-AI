@@ -16,3 +16,5 @@
 ## [5. Selecting the Appropriate Visual](./5.%20Selecting%20the%20Appropriate%20Visual.md)
 
 ## [6. Designing for Attention](./6.%20Designing%20for%20Attention.md)
+
+## [7. Managing Visual Contrast](./7.%20Managing%20Visual%20Contrast.md)
