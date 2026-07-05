@@ -461,3 +461,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Output](./Output.md)
 
 ## [Airline Example](./Airline%20Example.md)
+
+## [Label styling](./Label%20styling.md)
