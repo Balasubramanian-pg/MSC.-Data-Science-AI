@@ -4,3 +4,5 @@
 ## [Table of Contents](./Table%20of%20Contents.md)
 
 ## [1.1 Purpose of the Visualization Workflow](./1.1%20Purpose%20of%20the%20Visualization%20Workflow.md)
+
+## [1.2 Visualization as an Iterative System](./1.2%20Visualization%20as%20an%20Iterative%20System.md)
