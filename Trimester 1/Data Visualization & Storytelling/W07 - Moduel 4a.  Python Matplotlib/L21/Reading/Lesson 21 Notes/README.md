@@ -9,3 +9,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [1. What is Matplotlib?](./1.%20What%20is%20Matplotlib.md)
 
 ## [Core Purpose](./Core%20Purpose.md)
+
+## [Typical Use Cases](./Typical%20Use%20Cases.md)
