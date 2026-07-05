@@ -565,3 +565,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Right](./Right.md)
 
 ## [Important Visualization Insight](./Important%20Visualization%20Insight.md)
+
+## [Typical Usage](./Typical%20Usage.md)
