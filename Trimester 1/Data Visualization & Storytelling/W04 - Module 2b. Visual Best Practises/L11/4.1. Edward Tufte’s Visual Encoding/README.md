@@ -19,3 +19,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [1. Nominal Data](./1.%20Nominal%20Data.md)
 
 ## [Pure Categorization](./Pure%20Categorization.md)
+
+## [Important Constraint](./Important%20Constraint.md)
