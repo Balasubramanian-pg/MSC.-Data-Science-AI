@@ -1,9 +1,9 @@
 # Definition
 
-How completely the visualization represents the data.
+How efficiently users perceive the information.
 
 Question:
 
 ```text
-Does the visualization capture the important information?
+Can users understand it optimally?
 ```
