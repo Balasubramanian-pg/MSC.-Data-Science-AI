@@ -69,3 +69,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Challenges in Textual Data Analysis](./Challenges%20in%20Textual%20Data%20Analysis.md)
 
 ## [1. Lack of Explicit Structure](./1.%20Lack%20of%20Explicit%20Structure.md)
+
+## [Example](./Example.md)
