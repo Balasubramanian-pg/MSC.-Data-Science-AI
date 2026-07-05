@@ -159,3 +159,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Topic Distance Model](./Topic%20Distance%20Model.md)
 
 ## [Important Hidden Insight](./Important%20Hidden%20Insight.md)
+
+## [Transition Into t-SNE Clustering](./Transition%20Into%20t-SNE%20Clustering.md)
