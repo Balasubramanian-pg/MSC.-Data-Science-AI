@@ -23,3 +23,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [timepoint, Seaborn automatically aggregates them. It plots the MEAN as a](./timepoint%2C%20Seaborn%20automatically%20aggregates%20them.%20It%20plots%20the%20MEAN%20as%20a.md)
 
 ## [solid line and a 95% Confidence Interval (CI) as a shaded band around it.](./solid%20line%20and%20a%2095%25%20Confidence%20Interval%20%28CI%29%20as%20a%20shaded%20band%20around%20it.md)
+
+## [3. MULTIDIMENSIONAL: Adding Categories (Hue & Style)](./3.%20MULTIDIMENSIONAL%20-%20Adding%20Categories%20%28Hue%20%26%20Style%29.md)
