@@ -80,3 +80,5 @@ Bad visualizations use color excessively.
 ## [4. Using Color for Magnitude](./4.%20Using%20Color%20for%20Magnitude.md)
 
 ## [Sequential Color Scale](./Sequential%20Color%20Scale.md)
+
+## [Decision Rule for Quantitative Data](./Decision%20Rule%20for%20Quantitative%20Data.md)
