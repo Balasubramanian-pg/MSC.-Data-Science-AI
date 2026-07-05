@@ -21,3 +21,5 @@ week: W08 - Automated Feature Engineering
 ## [8.4.7. Technical Workflow Integration](./8.4.7.%20Technical%20Workflow%20Integration.md)
 
 ## [8.4.8. Critical Trade-offs](./8.4.8.%20Critical%20Trade-offs.md)
+
+## [8.4.9. Feature Selection as a Statistical Problem](./8.4.9.%20Feature%20Selection%20as%20a%20Statistical%20Problem.md)
