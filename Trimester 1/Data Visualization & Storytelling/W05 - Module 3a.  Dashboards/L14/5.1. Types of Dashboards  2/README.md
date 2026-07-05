@@ -221,3 +221,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Hidden Principle in the Transcript](./Hidden%20Principle%20in%20the%20Transcript.md)
 
 ## [Determining Dashboard Types](./Determining%20Dashboard%20Types.md)
+
+## [Central Principle](./Central%20Principle.md)
