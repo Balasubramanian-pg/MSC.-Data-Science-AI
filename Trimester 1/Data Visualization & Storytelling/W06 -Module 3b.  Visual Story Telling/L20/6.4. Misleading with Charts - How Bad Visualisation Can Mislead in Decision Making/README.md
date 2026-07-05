@@ -271,3 +271,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Fully Reader-Driven](./Fully%20Reader-Driven.md)
 
 ## [Hybrid Approach](./Hybrid%20Approach.md)
+
+## [Why Drill-Down Order Can Manipulate Audiences](./Why%20Drill-Down%20Order%20Can%20Manipulate%20Audiences.md)
