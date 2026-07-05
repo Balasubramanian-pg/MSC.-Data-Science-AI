@@ -21,3 +21,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Reproducibility](./Reproducibility.md)
 
 ## [Generate random data](./Generate%20random%20data.md)
+
+## [Plot histogram](./Plot%20histogram.md)
