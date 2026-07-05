@@ -37,3 +37,5 @@
 ## [5. Understanding the Horizontal Bar Chart](./5.%20Understanding%20the%20Horizontal%20Bar%20Chart.md)
 
 ## [6. Data Visualization as Storytelling](./6.%20Data%20Visualization%20as%20Storytelling.md)
+
+## [6.1 Visualization and Narrative Building](./6.1%20Visualization%20and%20Narrative%20Building.md)
