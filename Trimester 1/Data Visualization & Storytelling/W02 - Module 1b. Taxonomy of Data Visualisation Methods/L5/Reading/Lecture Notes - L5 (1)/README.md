@@ -26,3 +26,5 @@
 ## [10. Direct Annotation](./10.%20Direct%20Annotation.md)
 
 ## [11. Adapting Layout to Data Structure](./11.%20Adapting%20Layout%20to%20Data%20Structure.md)
+
+## [12. Targeted Color in Stacked Charts](./12.%20Targeted%20Color%20in%20Stacked%20Charts.md)
