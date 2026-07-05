@@ -128,3 +128,5 @@ The transcript introduces this challenge directly.
 ## [Integrated Attention Model](./Integrated%20Attention%20Model.md)
 
 ## [Important Advanced Insight](./Important%20Advanced%20Insight.md)
+
+## [Strategic Dashboard Layout Framework](./Strategic%20Dashboard%20Layout%20Framework.md)
