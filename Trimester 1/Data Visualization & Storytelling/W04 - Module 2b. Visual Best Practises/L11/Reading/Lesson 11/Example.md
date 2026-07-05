@@ -1,11 +1,5 @@
 # Example
 
-50°C is not twice as hot as 25°C.
+Sorted bars imply ranking.
 
-But:
-
-```text
-Difference = 25°C
-```
-
-is valid.
+Connected lines imply trends.
