@@ -179,3 +179,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Calculate the precise global mean across all student entries](./Calculate%20the%20precise%20global%20mean%20across%20all%20student%20entries.md)
 
 ## [1. HYBRID PLATFORM EXECUTION (Seaborn Plot + Matplotlib Customization)](./1.%20HYBRID%20PLATFORM%20EXECUTION%20%28Seaborn%20Plot%20%2B%20Matplotlib%20Customization%29.md)
+
+## [Set global professional visual style](./Set%20global%20professional%20visual%20style.md)
