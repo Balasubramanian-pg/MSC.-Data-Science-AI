@@ -126,3 +126,5 @@ import numpy as np
 ## [You can add this into your numeric pipeline:](./You%20can%20add%20this%20into%20your%20numeric%20pipeline%20-.md)
 
 ## [Discretize Age into 4 bins](./Discretize%20Age%20into%204%20bins.md)
+
+## [Use this in your pipeline to transform continuous Age to categorical bins](./Use%20this%20in%20your%20pipeline%20to%20transform%20continuous%20Age%20to%20categorical%20bins.md)
