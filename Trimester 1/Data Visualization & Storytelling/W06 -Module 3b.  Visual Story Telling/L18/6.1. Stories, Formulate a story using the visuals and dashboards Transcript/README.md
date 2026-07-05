@@ -25,3 +25,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Insight](./Important%20Insight.md)
 
 ## [Visualization + Storytelling](./Visualization%20%2B%20Storytelling.md)
+
+## [Why Visuals Amplify Stories](./Why%20Visuals%20Amplify%20Stories.md)
