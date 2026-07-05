@@ -55,3 +55,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Similar Meaning = Nearby Vectors](./Similar%20Meaning%20%3D%20Nearby%20Vectors.md)
 
 ## [Semantic Distance Model](./Semantic%20Distance%20Model.md)
+
+## [Why Embeddings Changed NLP](./Why%20Embeddings%20Changed%20NLP.md)
