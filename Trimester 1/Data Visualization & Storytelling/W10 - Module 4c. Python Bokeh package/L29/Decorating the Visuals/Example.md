@@ -5,8 +5,8 @@ p.vbar(
     x=fruits,
     top=counts,
     width=0.5,
-    color=(150, 10, 10)
+    color=(100, 100, 100, 0.85)
 )
 ```
 
-Produces a dark red.
+Gray with 85% opacity.
