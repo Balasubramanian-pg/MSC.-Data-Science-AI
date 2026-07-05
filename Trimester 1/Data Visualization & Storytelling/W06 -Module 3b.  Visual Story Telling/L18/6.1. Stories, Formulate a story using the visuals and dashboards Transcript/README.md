@@ -83,3 +83,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [1. Data Dumping](./1.%20Data%20Dumping.md)
 
 ## [2. Manipulative Narratives](./2.%20Manipulative%20Narratives.md)
+
+## [3. No Conflict](./3.%20No%20Conflict.md)
