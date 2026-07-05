@@ -263,3 +263,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [A. `color='red'`](./A.%20%60color%3D%27red%27%60.md)
 
 ## [Why Color Matters](./Why%20Color%20Matters.md)
+
+## [B. `linestyle='--'`](./B.%20%60linestyle%3D%27--%27%60.md)
