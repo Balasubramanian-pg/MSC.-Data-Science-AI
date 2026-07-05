@@ -95,3 +95,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Common Visualization Mistakes](./Common%20Visualization%20Mistakes.md)
 
 ## [1. Overcrowding](./1.%20Overcrowding.md)
+
+## [2. Decorative Design](./2.%20Decorative%20Design.md)
