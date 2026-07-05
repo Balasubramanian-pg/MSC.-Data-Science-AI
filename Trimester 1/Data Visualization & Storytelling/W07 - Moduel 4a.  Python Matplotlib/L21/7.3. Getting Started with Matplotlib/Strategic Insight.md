@@ -1,24 +1,33 @@
 # Strategic Insight
 
-The lecture gradually moves students from:
+This lecture is gradually teaching a deeper engineering mindset:
 
-- using charts  
-    to
-    
-- thinking computationally about visualization.
-    
+> Visualization is programmable perception control.
 
-This distinction matters.
+You are not merely:
 
-A dashboard engineer is not merely:
-
-- dragging chart widgets
+- drawing shapes
     
 
-They are:
+You are:
 
-- encoding mathematical relationships visually
+- encoding information visually
     
-- designing interpretive systems
+- guiding attention
     
-- controlling perception through computation.
+- structuring interpretation
+    
+- designing cognitive interfaces
+    
+
+That is why visualization sits at the intersection of:
+
+- programming
+    
+- mathematics
+    
+- psychology
+    
+- communication
+    
+- design engineering.
