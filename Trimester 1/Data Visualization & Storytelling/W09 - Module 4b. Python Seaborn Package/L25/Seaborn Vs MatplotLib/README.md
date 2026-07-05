@@ -161,3 +161,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [by descending median score, directly satisfying the Gestalt comparison principles.](./by%20descending%20median%20score%2C%20directly%20satisfying%20the%20Gestalt%20comparison%20principles.md)
 
 ## [Step B: Use Matplotlib to overlay an executive-level reference line.](./Step%20B%20-%20Use%20Matplotlib%20to%20overlay%20an%20executive-level%20reference%20line.md)
+
+## [This injects an extra layer of context that doesn't exist in standard plots.](./This%20injects%20an%20extra%20layer%20of%20context%20that%20doesn%27t%20exist%20in%20standard%20plots.md)
