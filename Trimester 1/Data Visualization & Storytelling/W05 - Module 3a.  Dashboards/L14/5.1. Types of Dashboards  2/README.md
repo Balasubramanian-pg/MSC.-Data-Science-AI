@@ -65,3 +65,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Pre-Attentive Attributes in Dashboards](./Pre-Attentive%20Attributes%20in%20Dashboards.md)
 
 ## [Examples](./Examples.md)
+
+## [Why Dashboard Design is Difficult](./Why%20Dashboard%20Design%20is%20Difficult.md)
