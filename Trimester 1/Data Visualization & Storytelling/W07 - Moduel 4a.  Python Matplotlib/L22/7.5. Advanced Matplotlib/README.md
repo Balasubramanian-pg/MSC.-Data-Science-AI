@@ -63,3 +63,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Core Statistical Idea](./Core%20Statistical%20Idea.md)
 
 ## [Example](./Example.md)
+
+## [Statistical Interpretation](./Statistical%20Interpretation.md)
