@@ -69,3 +69,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Hidden Meaning Discovery](./Hidden%20Meaning%20Discovery.md)
 
 ## [Topic Modeling](./Topic%20Modeling.md)
+
+## [Discovering Latent Themes](./Discovering%20Latent%20Themes.md)
