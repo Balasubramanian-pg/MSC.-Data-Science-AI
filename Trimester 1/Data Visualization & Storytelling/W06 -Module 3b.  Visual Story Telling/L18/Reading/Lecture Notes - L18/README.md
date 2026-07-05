@@ -103,3 +103,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Power of Color Encoding](./The%20Power%20of%20Color%20Encoding.md)
 
 ## [Important Visualization Bias](./Important%20Visualization%20Bias.md)
+
+## [Choropleth Map Bias](./Choropleth%20Map%20Bias.md)
