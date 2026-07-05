@@ -28,3 +28,5 @@
 ## [Business Insight](./Business%20Insight.md)
 
 ## [3.2 Stage 2: Parsing Data](./3.2%20Stage%202%20-%20Parsing%20Data.md)
+
+## [Key Questions During Parsing](./Key%20Questions%20During%20Parsing.md)
