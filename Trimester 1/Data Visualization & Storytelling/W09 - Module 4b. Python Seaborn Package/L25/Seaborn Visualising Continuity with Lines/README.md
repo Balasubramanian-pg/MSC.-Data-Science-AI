@@ -11,3 +11,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [=====================================================================](./%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D.md)
 
 ## [1. LOAD THE DATASET](./1.%20LOAD%20THE%20DATASET.md)
+
+## [This pulls the default fMRI dataframe built directly into Seaborn](./This%20pulls%20the%20default%20fMRI%20dataframe%20built%20directly%20into%20Seaborn.md)
