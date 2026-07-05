@@ -99,3 +99,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Important Hidden Concept: Vectorized Computation](./Important%20Hidden%20Concept%20-%20Vectorized%20Computation.md)
 
 ## [Mathematical Behavior of the Sine Wave](./Mathematical%20Behavior%20of%20the%20Sine%20Wave.md)
+
+## [Visual Shape](./Visual%20Shape.md)
