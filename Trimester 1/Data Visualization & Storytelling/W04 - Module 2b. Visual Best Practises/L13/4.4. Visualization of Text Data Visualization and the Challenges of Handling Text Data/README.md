@@ -125,3 +125,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why This Matters](./Why%20This%20Matters.md)
 
 ## [Vocabulary Explosion Problem](./Vocabulary%20Explosion%20Problem.md)
+
+## [Important Insight](./Important%20Insight.md)
