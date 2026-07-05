@@ -239,3 +239,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Subplots Scale Well](./Why%20Subplots%20Scale%20Well.md)
 
 ## [Advanced Layout Variations](./Advanced%20Layout%20Variations.md)
+
+## [Horizontal Layout](./Horizontal%20Layout.md)
