@@ -17,3 +17,5 @@
 ## [7.1.8. Step-by-Step Data Connection Example](./7.1.8.%20Step-by-Step%20Data%20Connection%20Example.md)
 
 ## [7.1.9. Factors Affecting Data Connection Performance](./7.1.9.%20Factors%20Affecting%20Data%20Connection%20Performance.md)
+
+## [7.1.10. Common Pitfalls in Data Import](./7.1.10.%20Common%20Pitfalls%20in%20Data%20Import.md)
