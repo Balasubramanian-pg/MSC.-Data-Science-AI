@@ -137,3 +137,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Deeper Problem](./The%20Deeper%20Problem.md)
 
 ## [Core Strategic Lesson](./Core%20Strategic%20Lesson.md)
+
+## [The Analyst’s Ethical Responsibility](./The%20Analyst%E2%80%99s%20Ethical%20Responsibility.md)
