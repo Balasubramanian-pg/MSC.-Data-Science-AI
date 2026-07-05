@@ -37,3 +37,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [function. It allows you to automatically split data into physical subplots](./function.%20It%20allows%20you%20to%20automatically%20split%20data%20into%20physical%20subplots.md)
 
 ## [(columns/rows) for a crystal-clear side-by-side trend comparison.](./%28columnsrows%29%20for%20a%20crystal-clear%20side-by-side%20trend%20comparison.md)
+
+## [Set an overall master title above all subplots](./Set%20an%20overall%20master%20title%20above%20all%20subplots.md)
