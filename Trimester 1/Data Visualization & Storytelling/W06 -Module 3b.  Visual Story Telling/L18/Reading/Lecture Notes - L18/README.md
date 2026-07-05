@@ -139,3 +139,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [A. Restraint](./A.%20Restraint.md)
 
 ## [Definition](./Definition.md)
+
+## [Why Restraint Matters](./Why%20Restraint%20Matters.md)
