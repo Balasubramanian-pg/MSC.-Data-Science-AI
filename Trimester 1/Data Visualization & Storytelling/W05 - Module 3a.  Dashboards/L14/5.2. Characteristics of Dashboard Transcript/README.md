@@ -83,3 +83,5 @@ week: W05 - Module 3a.  Dashboards
 ## [5. Contextual Relevance](./5.%20Contextual%20Relevance.md)
 
 ## [Weak Dashboard](./Weak%20Dashboard.md)
+
+## [Strong Dashboard](./Strong%20Dashboard.md)
