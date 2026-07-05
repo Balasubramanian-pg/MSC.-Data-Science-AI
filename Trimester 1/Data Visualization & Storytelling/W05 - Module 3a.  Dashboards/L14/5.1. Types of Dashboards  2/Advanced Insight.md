@@ -1,16 +1,12 @@
 # Advanced Insight
 
-Dashboards are:  
-cognitive instruments.
+Dashboard architecture is fundamentally:  
+organizational cognition engineering.
 
-Just as:
+Different dashboards support different forms of thinking:
 
-- microscopes,
-    
-- telescopes,
-    
-- and radar systems  
-    serve different observational purposes,
-    
-
-different dashboards support different forms of organizational cognition.
+|Dashboard Type|Cognitive Mode|
+|---|---|
+|Strategic|Abstract reasoning|
+|Analytical|Exploratory reasoning|
+|Operational|Reactive monitoring|
