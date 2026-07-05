@@ -231,3 +231,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Full Example](./Full%20Example.md)
 
 ## [Generate sine values](./Generate%20sine%20values.md)
+
+## [Plot the data](./Plot%20the%20data.md)
