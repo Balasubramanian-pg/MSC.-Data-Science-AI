@@ -64,3 +64,5 @@ The transcript introduces this challenge directly.
 ## [Recommended Approach](./Recommended%20Approach.md)
 
 ## [Use Brand Colors For](./Use%20Brand%20Colors%20For.md)
+
+## [Use Visualization-Optimized Colors For](./Use%20Visualization-Optimized%20Colors%20For.md)
