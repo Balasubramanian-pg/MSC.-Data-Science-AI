@@ -11,3 +11,5 @@ week: W01 - Overview of Feature Engineering
 ## [1.2.2. Raw Data Structure and Target Labels](./1.2.2.%20Raw%20Data%20Structure%20and%20Target%20Labels.md)
 
 ## [1.2.3. Feature Creation and Mathematical Transformation](./1.2.3.%20Feature%20Creation%20and%20Mathematical%20Transformation.md)
+
+## [1.2.4. Visualizing Feature Efficacy and Class Separation](./1.2.4.%20Visualizing%20Feature%20Efficacy%20and%20Class%20Separation.md)
