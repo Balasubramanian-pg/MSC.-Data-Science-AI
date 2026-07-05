@@ -66,3 +66,5 @@ The transcript introduces this challenge directly.
 ## [Use Brand Colors For](./Use%20Brand%20Colors%20For.md)
 
 ## [Use Visualization-Optimized Colors For](./Use%20Visualization-Optimized%20Colors%20For.md)
+
+## [Balanced Design Pattern](./Balanced%20Design%20Pattern.md)
