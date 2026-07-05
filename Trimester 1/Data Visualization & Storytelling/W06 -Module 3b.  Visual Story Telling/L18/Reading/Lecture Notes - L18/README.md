@@ -159,3 +159,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Slide Narrative Flow](./Slide%20Narrative%20Flow.md)
 
 ## [Why Simplicity Feels Powerful](./Why%20Simplicity%20Feels%20Powerful.md)
+
+## [Important Misconception](./Important%20Misconception.md)
