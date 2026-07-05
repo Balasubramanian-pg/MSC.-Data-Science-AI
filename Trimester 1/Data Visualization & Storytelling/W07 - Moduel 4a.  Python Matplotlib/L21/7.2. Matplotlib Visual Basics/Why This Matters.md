@@ -1,26 +1,16 @@
 # Why This Matters
 
-The bottleneck in programming is shifting from:
+Visualization skill is not built through:
 
 - memorization
     
 
-toward:
+It is built through:
 
-- understanding
+- iteration
     
-- reasoning
+- observation
     
-- design decisions
+- debugging
     
-
-AI tools reduce:
-
-- syntax friction
-    
-- lookup overhead
-    
-
-But they do not replace:
-
-- conceptual understanding
+- experimentation
