@@ -77,3 +77,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Understanding `vbar()`](./Understanding%20%60vbar%28%29%60.md)
 
 ## [Parameters](./Parameters.md)
+
+## [How Color Works in Bokeh](./How%20Color%20Works%20in%20Bokeh.md)
