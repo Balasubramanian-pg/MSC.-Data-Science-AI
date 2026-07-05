@@ -103,3 +103,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Final Takeaways](./Final%20Takeaways.md)
 
 ## [Fetching & Plotting Online Weather Data](./Fetching%20%26%20Plotting%20Online%20Weather%20Data.md)
+
+## [Standard Visualization Imports](./Standard%20Visualization%20Imports.md)
