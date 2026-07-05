@@ -107,3 +107,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [4. Types of Visual Encodings](./4.%20Types%20of%20Visual%20Encodings.md)
 
 ## [Perceptual Hierarchy](./Perceptual%20Hierarchy.md)
+
+## [Encoding Effectiveness Hierarchy](./Encoding%20Effectiveness%20Hierarchy.md)
