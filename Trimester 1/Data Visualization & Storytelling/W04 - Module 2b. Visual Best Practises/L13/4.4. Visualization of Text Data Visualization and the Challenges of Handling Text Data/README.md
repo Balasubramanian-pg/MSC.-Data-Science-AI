@@ -93,3 +93,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Modern NLP Architecture](./Modern%20NLP%20Architecture.md)
 
 ## [Relationship to Visualization](./Relationship%20to%20Visualization.md)
+
+## [NLP Visualization Goals](./NLP%20Visualization%20Goals.md)
