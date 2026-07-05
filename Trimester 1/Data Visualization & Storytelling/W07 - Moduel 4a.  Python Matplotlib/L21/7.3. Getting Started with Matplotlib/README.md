@@ -195,3 +195,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [3. Legends](./3.%20Legends.md)
 
 ## [Why Legends Matter](./Why%20Legends%20Matter.md)
+
+## [4. Adding Grids](./4.%20Adding%20Grids.md)
