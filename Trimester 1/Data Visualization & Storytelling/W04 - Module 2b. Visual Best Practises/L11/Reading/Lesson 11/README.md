@@ -75,3 +75,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [True Quantitative Scale](./True%20Quantitative%20Scale.md)
 
 ## [Why Ratio Data Dominates Business Dashboards](./Why%20Ratio%20Data%20Dominates%20Business%20Dashboards.md)
+
+## [3. Human Visual Perception](./3.%20Human%20Visual%20Perception.md)
