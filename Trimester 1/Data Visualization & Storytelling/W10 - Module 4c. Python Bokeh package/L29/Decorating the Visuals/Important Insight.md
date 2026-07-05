@@ -1,16 +1,7 @@
 # Important Insight
 
-Axes are objects too.
+Width becomes very important for categorical charts.
 
-Bokeh internally models:
+Why?
 
-```mermaid
-flowchart TD
-    A[Figure]
-    A --> B[X Axis Object]
-    A --> C[Y Axis Object]
-
-    B --> D[Axis Line]
-    B --> E[Tick Marks]
-    B --> F[Labels]
-```
+Long labels consume horizontal space.
