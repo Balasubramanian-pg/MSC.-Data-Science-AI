@@ -15,3 +15,5 @@
 ## [4.4.7. Categorical Axes and the FactorRange](./4.4.7.%20Categorical%20Axes%20and%20the%20FactorRange.md)
 
 ## [4.4.8. Bar Charts and Rectangular Glyphs](./4.4.8.%20Bar%20Charts%20and%20Rectangular%20Glyphs.md)
+
+## [4.4.9. Example of a Categorical Bar Chart](./4.4.9.%20Example%20of%20a%20Categorical%20Bar%20Chart.md)
