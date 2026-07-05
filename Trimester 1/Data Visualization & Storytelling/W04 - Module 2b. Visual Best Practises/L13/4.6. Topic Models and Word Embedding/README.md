@@ -175,3 +175,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Intuition](./Important%20Intuition.md)
 
 ## [t-SNE Intuition](./t-SNE%20Intuition.md)
+
+## [Why t-SNE Became Popular](./Why%20t-SNE%20Became%20Popular.md)
