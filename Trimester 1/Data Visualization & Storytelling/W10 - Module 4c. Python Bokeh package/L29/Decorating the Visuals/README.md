@@ -777,3 +777,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Visual Structure](./Visual%20Structure.md)
 
 ## [Why It's Essential](./Why%20It%27s%20Essential.md)
+
+## [Adding Color Bar](./Adding%20Color%20Bar.md)
