@@ -227,3 +227,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Simplicity Is Difficult](./Simplicity%20Is%20Difficult.md)
 
 ## [Simplicity vs Oversimplification](./Simplicity%20vs%20Oversimplification.md)
+
+## [Global Use of Pecha Kucha](./Global%20Use%20of%20Pecha%20Kucha.md)
