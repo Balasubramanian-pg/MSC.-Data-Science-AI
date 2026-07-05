@@ -259,3 +259,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Strong Communication Principle](./Strong%20Communication%20Principle.md)
 
 ## [High-Stakes Presentation Model](./High-Stakes%20Presentation%20Model.md)
+
+## [Deepest Lesson of This Section](./Deepest%20Lesson%20of%20This%20Section.md)
