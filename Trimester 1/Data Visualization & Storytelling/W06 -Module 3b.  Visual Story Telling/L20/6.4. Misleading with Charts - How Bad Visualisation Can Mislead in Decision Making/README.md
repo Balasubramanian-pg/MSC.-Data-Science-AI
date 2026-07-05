@@ -141,3 +141,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Analyst’s Ethical Responsibility](./The%20Analyst%E2%80%99s%20Ethical%20Responsibility.md)
 
 ## [Scaling Problems and Dual-Axis Misuse](./Scaling%20Problems%20and%20Dual-Axis%20Misuse.md)
+
+## [1. Scale Compression Hides Meaning](./1.%20Scale%20Compression%20Hides%20Meaning.md)
