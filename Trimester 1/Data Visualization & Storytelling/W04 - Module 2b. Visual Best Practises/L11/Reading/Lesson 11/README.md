@@ -43,3 +43,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Foundation of Correct Visualization](./The%20Foundation%20of%20Correct%20Visualization.md)
 
 ## [Why Data Types Matter](./Why%20Data%20Types%20Matter.md)
+
+## [Data Type Decision Tree](./Data%20Type%20Decision%20Tree.md)
