@@ -104,3 +104,5 @@
 ## [Common Analytical Formulas](./Common%20Analytical%20Formulas.md)
 
 ## [Percentage Change](./Percentage%20Change.md)
+
+## [Voter Turnout Ratio](./Voter%20Turnout%20Ratio.md)
