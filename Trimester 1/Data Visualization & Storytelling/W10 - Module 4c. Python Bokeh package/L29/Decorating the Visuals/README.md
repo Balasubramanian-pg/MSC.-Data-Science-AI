@@ -513,3 +513,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Formatting Examples](./Formatting%20Examples.md)
 
 ## [Important Observation](./Important%20Observation.md)
+
+## [Better number formatting](./Better%20number%20formatting.md)
