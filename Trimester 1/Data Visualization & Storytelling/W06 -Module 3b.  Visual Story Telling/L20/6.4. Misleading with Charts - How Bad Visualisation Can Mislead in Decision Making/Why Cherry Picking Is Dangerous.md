@@ -1,20 +1,17 @@
 # Why Cherry Picking Is Dangerous
 
-Cherry picking creates:
+Humans naturally assume:
 
-- incomplete truth
-    
-- distorted narratives
-    
-- biased conclusions
+- the presented data is representative
     
 
-Examples:
+Most audiences do not ask:
 
-- selecting only favorable months
+- what was excluded?
     
-- excluding outlier failures
+- what historical context is missing?
     
-- highlighting isolated success cases
+- why this timeframe was chosen?
     
-- ignoring broader trends
+
+This creates enormous narrative power.
