@@ -41,3 +41,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Set an overall master title above all subplots](./Set%20an%20overall%20master%20title%20above%20all%20subplots.md)
 
 ## [Technical Deep-Dive: Visualizing Dimensions & Reducing Cognitive Load](./Technical%20Deep-Dive%20-%20Visualizing%20Dimensions%20%26%20Reducing%20Cognitive%20Load.md)
+
+## [Global styling configuration for clean, publication-ready visuals](./Global%20styling%20configuration%20for%20clean%2C%20publication-ready%20visuals.md)
