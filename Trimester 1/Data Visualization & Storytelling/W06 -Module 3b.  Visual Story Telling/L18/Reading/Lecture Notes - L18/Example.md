@@ -1,8 +1,9 @@
 # Example
 
-Large rural states visually dominated maps because:  
-they occupy more geographic area.
+A mostly red election map immediately creates:  
+a perception of political dominance.
 
-This often created the perception that:  
-Republicans dominated the country geographically,  
-even when population distribution was more balanced.
+Even before users inspect:  
+population counts,  
+electoral votes,  
+or demographic nuance.
