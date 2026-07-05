@@ -66,3 +66,5 @@ Bad visualizations use color excessively.
 ## [Attention Design Pattern](./Attention%20Design%20Pattern.md)
 
 ## [Important Principle](./Important%20Principle.md)
+
+## [2. Using Color for Categorization](./2.%20Using%20Color%20for%20Categorization.md)
