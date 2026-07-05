@@ -85,3 +85,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Histograms](./Histograms.md)
 
 ## [Why Histograms Matter](./Why%20Histograms%20Matter.md)
+
+## [Histogram Structure](./Histogram%20Structure.md)
