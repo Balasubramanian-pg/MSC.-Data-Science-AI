@@ -1,3 +1,5 @@
 # Example
 
-Same chart:
+```python
+plot.legend.location = "top_left"
+```
