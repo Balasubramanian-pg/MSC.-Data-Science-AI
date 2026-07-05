@@ -1,8 +1,3 @@
 # Important Insight
 
-People rarely separate:
-
-- information quality,  
-    from:
-    
-- delivery quality.
+Unlimited presentation time usually reduces presentation quality.
