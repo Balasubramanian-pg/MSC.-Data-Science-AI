@@ -129,3 +129,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Audience Engagement Matters](./Why%20Audience%20Engagement%20Matters.md)
 
 ## [Audience-Centered Storytelling](./Audience-Centered%20Storytelling.md)
+
+## [Choosing the Right Framework](./Choosing%20the%20Right%20Framework.md)
