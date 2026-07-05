@@ -309,3 +309,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Goal](./Goal.md)
 
 ## [Methods](./Methods.md)
+
+## [Step 3: Convert Text into Visuals](./Step%203%20-%20Convert%20Text%20into%20Visuals.md)
