@@ -15,3 +15,5 @@ week: W08 - Automated Feature Engineering
 ## [8.5.4. Deep Feature Synthesis (DFS) with Featuretools](./8.5.4.%20Deep%20Feature%20Synthesis%20%28DFS%29%20with%20Featuretools.md)
 
 ## [8.5.5. TSFresh for Time-Series Feature Extraction](./8.5.5.%20TSFresh%20for%20Time-Series%20Feature%20Extraction.md)
+
+## [8.5.6. Featurewiz for Automated Feature Selection](./8.5.6.%20Featurewiz%20for%20Automated%20Feature%20Selection.md)
