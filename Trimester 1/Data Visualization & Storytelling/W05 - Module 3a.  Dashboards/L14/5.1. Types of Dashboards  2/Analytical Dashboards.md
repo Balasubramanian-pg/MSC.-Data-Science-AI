@@ -1,6 +1,14 @@
 # Analytical Dashboards
 
-The transcript next describes:  
-analyst-oriented dashboards.
+Analytical dashboards require:  
+high interactivity.
 
-These are fundamentally different.
+This is because analysts:
+
+- investigate,
+    
+- explore,
+    
+- test hypotheses,
+    
+- and search for patterns.
