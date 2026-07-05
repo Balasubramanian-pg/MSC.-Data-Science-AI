@@ -2,7 +2,7 @@
 
 |Property|Description|
 |---|---|
-|Duration|Few seconds|
-|Capacity|Small|
-|Processing Type|Conscious|
-|Purpose|Temporary holding and processing|
+|Duration|Minutes to lifetime|
+|Capacity|Essentially unlimited|
+|Processing Type|Conscious + unconscious|
+|Content Type|Visual + verbal|
