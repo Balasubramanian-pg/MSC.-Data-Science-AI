@@ -21,3 +21,5 @@ week: W04 - Dimensionality Reduction Techniques
 ## [4.0.7. Example of Information Retention in Dimensionality Reduction](./4.0.7.%20Example%20of%20Information%20Retention%20in%20Dimensionality%20Reduction.md)
 
 ## [4.0.8. Application Strategies](./4.0.8.%20Application%20Strategies.md)
+
+## [4.0.9. Common Misinterpretations](./4.0.9.%20Common%20Misinterpretations.md)
