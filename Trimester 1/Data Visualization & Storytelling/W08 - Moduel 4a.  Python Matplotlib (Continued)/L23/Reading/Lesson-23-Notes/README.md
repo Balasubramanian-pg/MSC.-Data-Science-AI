@@ -185,3 +185,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Real-World Extensions](./Real-World%20Extensions.md)
 
 ## [Multi-Plot Layouts with `plt.subplots`](./Multi-Plot%20Layouts%20with%20%60plt.subplots%60.md)
+
+## [Why Multi-Plot Layouts Matter](./Why%20Multi-Plot%20Layouts%20Matter.md)
