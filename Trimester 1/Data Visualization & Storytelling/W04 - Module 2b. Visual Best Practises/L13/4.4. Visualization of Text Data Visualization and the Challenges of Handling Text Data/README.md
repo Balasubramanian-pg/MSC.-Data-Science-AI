@@ -9,3 +9,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Challenges of Handling Unstructured Textual Information](./Challenges%20of%20Handling%20Unstructured%20Textual%20Information.md)
 
 ## [Structured vs Unstructured Data](./Structured%20vs%20Unstructured%20Data.md)
+
+## [The Core Distinction](./The%20Core%20Distinction.md)
