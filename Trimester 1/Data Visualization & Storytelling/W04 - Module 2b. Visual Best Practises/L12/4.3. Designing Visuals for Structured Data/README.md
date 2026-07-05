@@ -15,3 +15,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Chart Selection Matters](./Why%20Chart%20Selection%20Matters.md)
 
 ## [Visualization Is Structured Reasoning](./Visualization%20Is%20Structured%20Reasoning.md)
+
+## [Structured Data Visualization](./Structured%20Data%20Visualization.md)
