@@ -11,3 +11,5 @@
 ## [4.4.5. Scatter Plots and Marker Geometry](./4.4.5.%20Scatter%20Plots%20and%20Marker%20Geometry.md)
 
 ## [4.4.6. Layering and Superimposing Glyphs](./4.4.6.%20Layering%20and%20Superimposing%20Glyphs.md)
+
+## [4.4.7. Categorical Axes and the FactorRange](./4.4.7.%20Categorical%20Axes%20and%20the%20FactorRange.md)
