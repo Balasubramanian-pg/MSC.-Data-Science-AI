@@ -163,3 +163,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Important Warning](./Important%20Warning.md)
 
 ## [2. Short-Term Memory](./2.%20Short-Term%20Memory.md)
+
+## [Critical Limitation](./Critical%20Limitation.md)
