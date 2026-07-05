@@ -10,3 +10,5 @@
 ## [2. What is Intentional Design?](./2.%20What%20is%20Intentional%20Design.md)
 
 ## [3. Visualization as Storytelling](./3.%20Visualization%20as%20Storytelling.md)
+
+## [4. The Audience-Centric Storytelling Framework](./4.%20The%20Audience-Centric%20Storytelling%20Framework.md)
