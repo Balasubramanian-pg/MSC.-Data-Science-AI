@@ -327,3 +327,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Important Visualization Principle](./Important%20Visualization%20Principle.md)
 
 ## [5. Adding Colors](./5.%20Adding%20Colors.md)
+
+## [Pre-attentive Processing](./Pre-attentive%20Processing.md)
