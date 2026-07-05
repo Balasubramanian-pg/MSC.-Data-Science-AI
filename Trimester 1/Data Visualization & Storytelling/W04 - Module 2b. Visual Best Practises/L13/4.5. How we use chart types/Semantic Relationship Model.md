@@ -2,7 +2,7 @@
 
 ```mermaid
 flowchart LR
-    A[Extreme Positive/Negative Emotion]
-    --> B[Higher Emotional Intensity]
+    A[Emotional Intensity]
+    --> B[Opinion Expression]
     --> C[Higher Subjectivity]
 ```
