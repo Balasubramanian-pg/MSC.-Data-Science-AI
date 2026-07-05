@@ -213,3 +213,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Person A](./Person%20A.md)
 
 ## [Person B](./Person%20B.md)
+
+## [Why Simpson’s Paradox Happens](./Why%20Simpson%E2%80%99s%20Paradox%20Happens.md)
