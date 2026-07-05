@@ -13,3 +13,5 @@ week: W04 - Dimensionality Reduction Techniques
 ## [4.0.3. Distance Metrics in High-Dimensional Space](./4.0.3.%20Distance%20Metrics%20in%20High-Dimensional%20Space.md)
 
 ## [4.0.4. Overfitting and Model Complexity](./4.0.4.%20Overfitting%20and%20Model%20Complexity.md)
+
+## [4.0.5. Mathematical Foundation of Dimensionality Reduction](./4.0.5.%20Mathematical%20Foundation%20of%20Dimensionality%20Reduction.md)
