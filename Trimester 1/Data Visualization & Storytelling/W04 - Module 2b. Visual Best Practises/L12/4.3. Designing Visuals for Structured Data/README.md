@@ -27,3 +27,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Foundation of Correct Analysis](./The%20Foundation%20of%20Correct%20Analysis.md)
 
 ## [Variable Type Framework](./Variable%20Type%20Framework.md)
+
+## [Categorical Data](./Categorical%20Data.md)
