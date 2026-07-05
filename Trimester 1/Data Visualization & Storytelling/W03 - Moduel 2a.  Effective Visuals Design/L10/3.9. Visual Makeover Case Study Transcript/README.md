@@ -116,3 +116,5 @@ The transcript introduces this challenge directly.
 ## [Visualization Goal](./Visualization%20Goal.md)
 
 ## [This Is a Huge Professional Insight](./This%20Is%20a%20Huge%20Professional%20Insight.md)
+
+## [Natural vs Counterintuitive Flow](./Natural%20vs%20Counterintuitive%20Flow.md)
