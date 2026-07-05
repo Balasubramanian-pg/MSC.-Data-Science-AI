@@ -305,3 +305,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Incremental Experimentation Works](./Why%20Incremental%20Experimentation%20Works.md)
 
 ## [Example Learning Loop](./Example%20Learning%20Loop.md)
+
+## [4. Saving the Plot](./4.%20Saving%20the%20Plot.md)
