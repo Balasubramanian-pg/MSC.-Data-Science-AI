@@ -47,3 +47,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Important Practical Insight](./Important%20Practical%20Insight.md)
 
 ## [The 80/20 Reality](./The%208020%20Reality.md)
+
+## [Therefore the Real Skill Is:](./Therefore%20the%20Real%20Skill%20Is%20-.md)
