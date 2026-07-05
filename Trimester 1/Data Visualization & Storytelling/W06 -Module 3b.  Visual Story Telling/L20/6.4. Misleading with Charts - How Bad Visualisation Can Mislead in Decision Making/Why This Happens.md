@@ -1,21 +1,18 @@
 # Why This Happens
 
-Suppose:
+The visual system prioritizes:
 
-|Metric|Scale|
-|---|---|
-|Cancer screenings|Millions|
-|Abortions|Thousands|
-
-If both share the same Y-axis:
-
-- the smaller variable becomes visually compressed
+1. color intensity
+    
+2. contrast
+    
+3. brightness
+    
+4. spatial prominence
     
 
-This destroys:
+before numerical reasoning occurs.
 
-- trend visibility
-    
-- variance interpretation
-    
-- slope perception
+This means:
+
+> color encoding directly shapes perceived importance.
