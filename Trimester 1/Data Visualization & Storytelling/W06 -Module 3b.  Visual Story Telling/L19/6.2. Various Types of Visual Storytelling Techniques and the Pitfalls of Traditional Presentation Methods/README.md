@@ -87,3 +87,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Business Example](./Business%20Example.md)
 
 ## [Visualizations in Story Mountain](./Visualizations%20in%20Story%20Mountain.md)
+
+## [Why Traditional Presentations Often Fail](./Why%20Traditional%20Presentations%20Often%20Fail.md)
