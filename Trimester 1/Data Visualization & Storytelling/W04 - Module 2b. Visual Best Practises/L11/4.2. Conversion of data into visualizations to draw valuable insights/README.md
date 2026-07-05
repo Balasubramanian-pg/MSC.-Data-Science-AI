@@ -15,3 +15,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Core Principle](./Core%20Principle.md)
 
 ## [The Hierarchy of Encoding Features](./The%20Hierarchy%20of%20Encoding%20Features.md)
+
+## [General Encoding Hierarchy](./General%20Encoding%20Hierarchy.md)
