@@ -1,7 +1,22 @@
 # Operational Dashboards
 
-The transcript finally introduces:  
-operations dashboards.
+Operational systems function in:
 
-These are designed for:  
-continuous monitoring and immediate intervention.
+- real time,
+    
+- hourly,
+    
+- minute-level windows,
+    
+- or even milliseconds.
+    
+
+Examples:
+
+- server uptime,
+    
+- fraud detection,
+    
+- manufacturing failures,
+    
+- trading systems.
