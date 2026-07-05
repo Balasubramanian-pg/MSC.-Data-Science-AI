@@ -69,3 +69,5 @@ This is foundational to:
 ## [Visualization Principle](./Visualization%20Principle.md)
 
 ## [Human Perception Insight](./Human%20Perception%20Insight.md)
+
+## [Step 6: Add Legend](./Step%206%20-%20Add%20Legend.md)
