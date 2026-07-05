@@ -17,3 +17,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Hybrid Narrative Architecture](./Hybrid%20Narrative%20Architecture.md)
 
 ## [What Makes Dashboards Unique?](./What%20Makes%20Dashboards%20Unique.md)
+
+## [Dashboard as an Interface](./Dashboard%20as%20an%20Interface.md)
