@@ -225,3 +225,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Segment-Level Sentiment](./Segment-Level%20Sentiment.md)
 
 ## [Important NLP Principle](./Important%20NLP%20Principle.md)
+
+## [Why Aggregate Sentiment Can Be Misleading](./Why%20Aggregate%20Sentiment%20Can%20Be%20Misleading.md)
