@@ -15,3 +15,5 @@
 ## [35.2.7. Tree Maps with Drill-Down Functionality](./35.2.7.%20Tree%20Maps%20with%20Drill-Down%20Functionality.md)
 
 ## [35.2.8. Waterfall Charts for Cumulative Contribution](./35.2.8.%20Waterfall%20Charts%20for%20Cumulative%20Contribution.md)
+
+## [35.2.9. Principles of Effective Dashboard Design](./35.2.9.%20Principles%20of%20Effective%20Dashboard%20Design.md)
