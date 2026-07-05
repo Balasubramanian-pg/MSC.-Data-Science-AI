@@ -79,3 +79,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [4. Shape Mismatch](./4.%20Shape%20Mismatch.md)
 
 ## [Key Educational Insight from the Lecture](./Key%20Educational%20Insight%20from%20the%20Lecture.md)
+
+## [Final Takeaway](./Final%20Takeaway.md)
