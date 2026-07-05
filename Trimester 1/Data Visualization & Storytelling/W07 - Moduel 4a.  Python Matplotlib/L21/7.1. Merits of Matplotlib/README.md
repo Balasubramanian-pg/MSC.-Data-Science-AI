@@ -27,3 +27,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Historical Background](./Historical%20Background.md)
 
 ## [Important Historical Context](./Important%20Historical%20Context.md)
+
+## [3. Object-Oriented Plotting](./3.%20Object-Oriented%20Plotting.md)
