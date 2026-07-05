@@ -33,3 +33,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Core Structure](./Core%20Structure.md)
 
 ## [Object Relationships](./Object%20Relationships.md)
+
+## [Why This Matters](./Why%20This%20Matters.md)
