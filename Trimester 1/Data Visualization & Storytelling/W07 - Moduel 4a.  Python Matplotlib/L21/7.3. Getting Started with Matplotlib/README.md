@@ -65,3 +65,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Step 4](./Step%204.md)
 
 ## [Vectorized Computation](./Vectorized%20Computation.md)
+
+## [Why Matplotlib Became Popular](./Why%20Matplotlib%20Became%20Popular.md)
