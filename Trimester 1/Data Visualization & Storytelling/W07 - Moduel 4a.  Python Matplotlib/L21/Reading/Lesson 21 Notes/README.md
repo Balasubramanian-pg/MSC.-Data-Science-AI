@@ -285,3 +285,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [3. Adding a Legend](./3.%20Adding%20a%20Legend.md)
 
 ## [Purpose of Legends](./Purpose%20of%20Legends.md)
+
+## [How Legends Work Internally](./How%20Legends%20Work%20Internally.md)
