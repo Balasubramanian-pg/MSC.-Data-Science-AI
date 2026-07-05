@@ -119,3 +119,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Internal Plotting Logic](./Internal%20Plotting%20Logic.md)
 
 ## [Why Labels Matter](./Why%20Labels%20Matter.md)
+
+## [5. Customizing the Plot](./5.%20Customizing%20the%20Plot.md)
