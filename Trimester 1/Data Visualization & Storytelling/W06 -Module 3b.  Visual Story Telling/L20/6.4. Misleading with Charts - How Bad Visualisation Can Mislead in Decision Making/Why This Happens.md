@@ -1,18 +1,25 @@
 # Why This Happens
 
-The visual system prioritizes:
+Human visual cognition prioritizes:
 
-1. color intensity
+1. contrast
     
-2. contrast
+2. saturation
     
 3. brightness
     
 4. spatial prominence
     
 
-before numerical reasoning occurs.
+before:
+
+- reading legends
+    
+- inspecting scales
+    
+- checking actual numbers
+    
 
 This means:
 
-> color encoding directly shapes perceived importance.
+> darker colors automatically feel more significant.
