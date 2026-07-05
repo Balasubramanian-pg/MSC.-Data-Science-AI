@@ -429,3 +429,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Communication Volume as a Signal](./Communication%20Volume%20as%20a%20Signal.md)
 
 ## [Why Simple Visualizations Work](./Why%20Simple%20Visualizations%20Work.md)
+
+## [Temporal Pattern Recognition](./Temporal%20Pattern%20Recognition.md)
