@@ -341,3 +341,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Modeling Communication Networks](./Modeling%20Communication%20Networks.md)
 
 ## [Why Conversation Analysis Matters](./Why%20Conversation%20Analysis%20Matters.md)
+
+## [Conversation Is a Network](./Conversation%20Is%20a%20Network.md)
