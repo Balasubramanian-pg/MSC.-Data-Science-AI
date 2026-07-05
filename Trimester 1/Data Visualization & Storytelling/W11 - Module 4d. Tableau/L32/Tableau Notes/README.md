@@ -9,3 +9,5 @@
 ## [10.1.4. Metadata Management](./10.1.4.%20Metadata%20Management.md)
 
 ## [10.1.5. Combining Data: Joins vs Data Blending](./10.1.5.%20Combining%20Data%20-%20Joins%20vs%20Data%20Blending.md)
+
+## [10.1.6. Example of a Left Outer Join](./10.1.6.%20Example%20of%20a%20Left%20Outer%20Join.md)
