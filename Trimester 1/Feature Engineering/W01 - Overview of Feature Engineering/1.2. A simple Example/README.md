@@ -19,3 +19,5 @@ week: W01 - Overview of Feature Engineering
 ## [1.2.6. Factors Affecting Feature Efficacy](./1.2.6.%20Factors%20Affecting%20Feature%20Efficacy.md)
 
 ## [1.2.7. Common Misinterpretations](./1.2.7.%20Common%20Misinterpretations.md)
+
+## [1.2.8. Conclusions](./1.2.8.%20Conclusions.md)
