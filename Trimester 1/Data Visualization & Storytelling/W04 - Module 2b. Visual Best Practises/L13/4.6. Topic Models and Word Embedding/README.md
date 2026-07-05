@@ -133,3 +133,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [High-Dimensional Text Space](./High-Dimensional%20Text%20Space.md)
 
 ## [Revisiting Topic Modeling](./Revisiting%20Topic%20Modeling.md)
+
+## [Discovering Hidden Themes](./Discovering%20Hidden%20Themes.md)
