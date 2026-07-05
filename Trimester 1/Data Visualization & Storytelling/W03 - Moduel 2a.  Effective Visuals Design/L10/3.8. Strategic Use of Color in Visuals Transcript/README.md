@@ -38,3 +38,5 @@ Bad visualizations use color excessively.
 ## [The Core Purpose of Color in Visualization](./The%20Core%20Purpose%20of%20Color%20in%20Visualization.md)
 
 ## [Color Is NOT Primarily for Decoration](./Color%20Is%20NOT%20Primarily%20for%20Decoration.md)
+
+## [Visualization Design Principle](./Visualization%20Design%20Principle.md)
