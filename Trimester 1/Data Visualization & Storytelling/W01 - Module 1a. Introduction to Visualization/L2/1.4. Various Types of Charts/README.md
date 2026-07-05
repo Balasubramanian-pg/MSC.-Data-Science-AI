@@ -24,3 +24,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [3. Comparison Charts](./3.%20Comparison%20Charts.md)
 
 ## [3.1 Purpose of Comparison Charts](./3.1%20Purpose%20of%20Comparison%20Charts.md)
+
+## [Example from Lecture](./Example%20from%20Lecture.md)
