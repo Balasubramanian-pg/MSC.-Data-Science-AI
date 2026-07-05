@@ -207,3 +207,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Evolution of Text Analytics](./The%20Evolution%20of%20Text%20Analytics.md)
 
 ## [NLP Evolution Hierarchy](./NLP%20Evolution%20Hierarchy.md)
+
+## [Sentiment Analysis](./Sentiment%20Analysis.md)
