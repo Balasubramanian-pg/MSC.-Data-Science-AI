@@ -47,3 +47,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [- machine learning is: 1](./-%20machine%20learning%20is%20-%201.md)
 
 ## [3. One-Hot Encoding (OHE) for Text](./3.%20One-Hot%20Encoding%20%28OHE%29%20for%20Text.md)
+
+## [A list of categorical words to encode](./A%20list%20of%20categorical%20words%20to%20encode.md)
