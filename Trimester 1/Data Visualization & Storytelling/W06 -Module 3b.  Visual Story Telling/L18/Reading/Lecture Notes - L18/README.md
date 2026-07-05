@@ -65,3 +65,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Distinction](./Important%20Distinction.md)
 
 ## [Common Misunderstanding](./Common%20Misunderstanding.md)
+
+## [Storytelling as Compression](./Storytelling%20as%20Compression.md)
