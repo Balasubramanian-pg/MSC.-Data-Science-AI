@@ -13,3 +13,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Example: The Misleading Firearm Murder Chart](./Example%20-%20The%20Misleading%20Firearm%20Murder%20Chart.md)
 
 ## [The Core Manipulation: Inverted Axis](./The%20Core%20Manipulation%20-%20Inverted%20Axis.md)
+
+## [Why This Is So Dangerous](./Why%20This%20Is%20So%20Dangerous.md)
