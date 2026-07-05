@@ -175,3 +175,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [2. Refactored Python Implementation](./2.%20Refactored%20Python%20Implementation.md)
 
 ## [0. SETUP: Generating Representative Student Dataset](./0.%20SETUP%20-%20Generating%20Representative%20Student%20Dataset.md)
+
+## [Calculate the precise global mean across all student entries](./Calculate%20the%20precise%20global%20mean%20across%20all%20student%20entries.md)
