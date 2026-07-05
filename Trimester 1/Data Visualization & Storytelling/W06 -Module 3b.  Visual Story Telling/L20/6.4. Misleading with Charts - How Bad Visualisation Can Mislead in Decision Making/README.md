@@ -169,3 +169,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Correlation Happens Accidentally](./Why%20Correlation%20Happens%20Accidentally.md)
 
 ## [Example: Ice Cream Sales and Murders](./Example%20-%20Ice%20Cream%20Sales%20and%20Murders.md)
+
+## [Confounding Variables](./Confounding%20Variables.md)
