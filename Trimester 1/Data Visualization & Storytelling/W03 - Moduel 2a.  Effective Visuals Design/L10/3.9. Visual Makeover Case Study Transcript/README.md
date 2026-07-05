@@ -106,3 +106,5 @@ The transcript introduces this challenge directly.
 ## [Why Top-Left Matters](./Why%20Top-Left%20Matters.md)
 
 ## [Dashboard Positioning Decision Tree](./Dashboard%20Positioning%20Decision%20Tree.md)
+
+## [Spatial Relationships Matter](./Spatial%20Relationships%20Matter.md)
