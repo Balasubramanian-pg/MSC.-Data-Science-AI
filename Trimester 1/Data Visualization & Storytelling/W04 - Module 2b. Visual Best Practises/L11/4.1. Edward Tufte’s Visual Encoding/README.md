@@ -103,3 +103,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Ordering Matters](./Why%20Ordering%20Matters.md)
 
 ## [Important Visualization Principle](./Important%20Visualization%20Principle.md)
+
+## [3. Estimation](./3.%20Estimation.md)
