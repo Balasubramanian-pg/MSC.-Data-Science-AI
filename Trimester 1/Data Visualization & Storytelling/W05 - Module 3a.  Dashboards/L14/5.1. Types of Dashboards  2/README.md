@@ -161,3 +161,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Curiosity and Analytical Thinking in Dashboards](./Curiosity%20and%20Analytical%20Thinking%20in%20Dashboards.md)
 
 ## [Example: Ireland and CO₂ Emissions](./Example%20-%20Ireland%20and%20CO%E2%82%82%20Emissions.md)
+
+## [Underlying Explanation](./Underlying%20Explanation.md)
