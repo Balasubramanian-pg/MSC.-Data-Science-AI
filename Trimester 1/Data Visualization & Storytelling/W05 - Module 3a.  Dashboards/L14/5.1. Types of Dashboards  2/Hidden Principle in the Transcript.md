@@ -1,12 +1,19 @@
 # Hidden Principle in the Transcript
 
-The transcript repeatedly implies:  
-dashboard complexity should match decision complexity.
+The transcript repeatedly implies:
 
-This is critical.
+> Dashboard effectiveness is contextual.
 
-Too much detail:  
-creates noise.
+There is no universally perfect dashboard.
 
-Too little detail:  
-creates blindness.
+A dashboard succeeds only when:
+
+- its design aligns with,
+    
+    - decision velocity,
+        
+    - user cognition,
+        
+    - business objectives,
+        
+    - and operational constraints.
