@@ -3,12 +3,12 @@
 ```python
 from bokeh.plotting import figure, show
 
-x = [1,2,3,4]
-y = [2,5,3,7]
+x = [1,2,3,4,5]
 
-title_plot = figure(
-    title="Headline Example",
-    height=300
+y1 = [2,4,6,8,10]
+y2 = [1,3,2,5,4]
+
+legend_plot = figure(
+    title="Legend Example",
+    height=400
 )
-
-title_plot.line(x, y, line_width=2)
