@@ -1,13 +1,11 @@
 # Example
 
-5 stars > 3 stars
-
-Valid.
+50°C is not twice as hot as 25°C.
 
 But:
 
 ```text
-5 stars is NOT "twice as good" as 2.5 stars
+Difference = 25°C
 ```
 
-because intervals are not guaranteed equal.
+is valid.
