@@ -325,3 +325,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why It Becomes Skewed or Multimodal](./Why%20It%20Becomes%20Skewed%20or%20Multimodal.md)
 
 ## [Multimodal Distribution Meaning](./Multimodal%20Distribution%20Meaning.md)
+
+## [Subjectivity Modes Example](./Subjectivity%20Modes%20Example.md)
