@@ -84,3 +84,5 @@ Bad visualizations use color excessively.
 ## [Decision Rule for Quantitative Data](./Decision%20Rule%20for%20Quantitative%20Data.md)
 
 ## [Sequential vs Diverging Color Scales](./Sequential%20vs%20Diverging%20Color%20Scales.md)
+
+## [Sequential Scale](./Sequential%20Scale.md)
