@@ -13,3 +13,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Example: The Significant Objects Project](./Example%20-%20The%20Significant%20Objects%20Project.md)
 
 ## [Why Stories Work Cognitively](./Why%20Stories%20Work%20Cognitively.md)
+
+## [Business Storytelling Is Not Fiction](./Business%20Storytelling%20Is%20Not%20Fiction.md)
