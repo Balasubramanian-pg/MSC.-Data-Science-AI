@@ -55,3 +55,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Real-World Analytics Pipeline](./Real-World%20Analytics%20Pipeline.md)
 
 ## [Why This Changes Everything](./Why%20This%20Changes%20Everything.md)
+
+## [Standard Imports](./Standard%20Imports.md)
