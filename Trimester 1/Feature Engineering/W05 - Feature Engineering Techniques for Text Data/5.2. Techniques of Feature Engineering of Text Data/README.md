@@ -77,3 +77,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Step 1: Tokenize the document](./Step%201%20-%20Tokenize%20the%20document.md)
 
 ## [Step 2: Apply POS Tagging](./Step%202%20-%20Apply%20POS%20Tagging.md)
+
+## [The Viterbi algorithm runs under the hood here](./The%20Viterbi%20algorithm%20runs%20under%20the%20hood%20here.md)
