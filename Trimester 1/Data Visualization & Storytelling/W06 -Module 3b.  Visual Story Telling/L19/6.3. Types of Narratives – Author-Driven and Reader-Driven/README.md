@@ -77,3 +77,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Examples](./Examples.md)
 
 ## [5. Narrative Frameworks](./5.%20Narrative%20Frameworks.md)
+
+## [A. Ordering](./A.%20Ordering.md)
