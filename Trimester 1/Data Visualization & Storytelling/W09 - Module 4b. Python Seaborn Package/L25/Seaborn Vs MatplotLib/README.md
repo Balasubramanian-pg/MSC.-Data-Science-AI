@@ -61,3 +61,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Construct the unified Pandas DataFrame](./Construct%20the%20unified%20Pandas%20DataFrame.md)
 
 ## [2. SEABORN GLOBAL THEMING](./2.%20SEABORN%20GLOBAL%20THEMING.md)
+
+## [Activating Seaborn's premium default styles and color palettes](./Activating%20Seaborn%27s%20premium%20default%20styles%20and%20color%20palettes.md)
