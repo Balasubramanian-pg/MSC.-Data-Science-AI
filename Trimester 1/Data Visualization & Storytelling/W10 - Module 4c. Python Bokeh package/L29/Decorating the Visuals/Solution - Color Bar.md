@@ -1,5 +1,5 @@
 # Solution: Color Bar
 
-```python
-color_bar
-```
+A color bar acts like:
+
+> a continuous legend
