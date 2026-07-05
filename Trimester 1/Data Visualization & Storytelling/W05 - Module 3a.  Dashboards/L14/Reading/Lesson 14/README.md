@@ -11,3 +11,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Core Definition](./Core%20Definition.md)
 
 ## [Important Clarification](./Important%20Clarification.md)
+
+## [Historical Analogy](./Historical%20Analogy.md)
