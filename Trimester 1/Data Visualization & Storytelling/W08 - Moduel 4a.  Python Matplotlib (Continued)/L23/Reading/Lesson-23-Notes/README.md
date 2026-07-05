@@ -331,3 +331,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Extrapolation Is Dangerous](./Why%20Extrapolation%20Is%20Dangerous.md)
 
 ## [Overfitting Problem](./Overfitting%20Problem.md)
+
+## [Polynomial Degree Intuition](./Polynomial%20Degree%20Intuition.md)
