@@ -86,3 +86,5 @@ The transcript introduces this challenge directly.
 ## [Positioning Is Attention Engineering](./Positioning%20Is%20Attention%20Engineering.md)
 
 ## [Human Visual Reading Pattern](./Human%20Visual%20Reading%20Pattern.md)
+
+## [Z-Pattern Reading Flow](./Z-Pattern%20Reading%20Flow.md)
