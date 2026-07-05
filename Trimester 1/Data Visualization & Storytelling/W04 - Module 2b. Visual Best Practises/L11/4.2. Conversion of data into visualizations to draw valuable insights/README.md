@@ -67,3 +67,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Bubble Charts Are Difficult](./Why%20Bubble%20Charts%20Are%20Difficult.md)
 
 ## [Example Problem](./Example%20Problem.md)
+
+## [Perceptual Weakness of Area](./Perceptual%20Weakness%20of%20Area.md)
