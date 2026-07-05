@@ -27,3 +27,5 @@ week: W08 - Automated Feature Engineering
 ## [8.5.10. Automated Feature Engineering in Pharmaceutical Analytics](./8.5.10.%20Automated%20Feature%20Engineering%20in%20Pharmaceutical%20Analytics.md)
 
 ## [8.5.11. Limitations of Automated Feature Engineering](./8.5.11.%20Limitations%20of%20Automated%20Feature%20Engineering.md)
+
+## [8.5.12. Conclusions](./8.5.12.%20Conclusions.md)
