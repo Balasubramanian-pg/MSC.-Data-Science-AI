@@ -251,3 +251,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Visual Interpretation](./Visual%20Interpretation.md)
 
 ## [Important Difference](./Important%20Difference.md)
+
+## [Plot Styling Properties](./Plot%20Styling%20Properties.md)
