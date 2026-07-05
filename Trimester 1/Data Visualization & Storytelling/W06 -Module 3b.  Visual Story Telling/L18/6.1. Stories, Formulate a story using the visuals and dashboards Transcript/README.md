@@ -97,3 +97,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The 2000 U.S. Election Example](./The%202000%20U.S.%20Election%20Example.md)
 
 ## [Narrative Encoding](./Narrative%20Encoding.md)
+
+## [Cognitive Association Pipeline](./Cognitive%20Association%20Pipeline.md)
