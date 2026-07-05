@@ -15,3 +15,5 @@
 ## [6.1.7. Example of a Calculated Field](./6.1.7.%20Example%20of%20a%20Calculated%20Field.md)
 
 ## [6.1.8. Factors Affecting Metadata Efficiency](./6.1.8.%20Factors%20Affecting%20Metadata%20Efficiency.md)
+
+## [6.1.9. Common Pitfalls in Metadata Management](./6.1.9.%20Common%20Pitfalls%20in%20Metadata%20Management.md)
