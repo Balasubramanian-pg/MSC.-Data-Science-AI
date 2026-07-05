@@ -821,3 +821,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Themes Solve This](./Themes%20Solve%20This.md)
 
 ## [`curdoc()`](./%60curdoc%28%29%60.md)
+
+## [What Is `curdoc()`?](./What%20Is%20%60curdoc%28%29%60.md)
