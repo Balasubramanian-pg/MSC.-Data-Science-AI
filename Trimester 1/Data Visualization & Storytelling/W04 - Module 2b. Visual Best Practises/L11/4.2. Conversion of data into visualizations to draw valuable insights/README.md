@@ -103,3 +103,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Trend Analysis](./Trend%20Analysis.md)
 
 ## [Exact Magnitude Comparison](./Exact%20Magnitude%20Comparison.md)
+
+## [4. Length Encoding](./4.%20Length%20Encoding.md)
