@@ -203,3 +203,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why This Architecture Is Powerful](./Why%20This%20Architecture%20Is%20Powerful.md)
 
 ## [`sharex=True`](./%60sharex%3DTrue%60.md)
+
+## [Why Shared Axes Matter](./Why%20Shared%20Axes%20Matter.md)
