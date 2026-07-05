@@ -65,3 +65,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Bar Charts Work](./Why%20Bar%20Charts%20Work.md)
 
 ## [Bar Chart Perception Pipeline](./Bar%20Chart%20Perception%20Pipeline.md)
+
+## [Big Number Visuals](./Big%20Number%20Visuals.md)
