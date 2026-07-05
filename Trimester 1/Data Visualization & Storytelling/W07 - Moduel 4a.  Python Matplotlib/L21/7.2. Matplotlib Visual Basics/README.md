@@ -25,3 +25,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [A. Code Cells](./A.%20Code%20Cells.md)
 
 ## [B. Text / Markdown Cells](./B.%20Text%20Markdown%20Cells.md)
+
+## [Introduction to Matplotlib](./Introduction%20to%20Matplotlib.md)
