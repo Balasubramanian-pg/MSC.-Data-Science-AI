@@ -213,3 +213,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Strong Presentation Pattern](./Strong%20Presentation%20Pattern.md)
 
 ## [Why Time Constraints Improve Visual Quality](./Why%20Time%20Constraints%20Improve%20Visual%20Quality.md)
+
+## [Cognitive Effect of Brevity](./Cognitive%20Effect%20of%20Brevity.md)
