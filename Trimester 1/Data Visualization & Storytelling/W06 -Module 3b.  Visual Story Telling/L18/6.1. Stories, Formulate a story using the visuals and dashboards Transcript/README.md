@@ -55,3 +55,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Concept: Neural Simulation](./Important%20Concept%20-%20Neural%20Simulation.md)
 
 ## [Stories and Emotion](./Stories%20and%20Emotion.md)
+
+## [Emotional Encoding Pipeline](./Emotional%20Encoding%20Pipeline.md)
