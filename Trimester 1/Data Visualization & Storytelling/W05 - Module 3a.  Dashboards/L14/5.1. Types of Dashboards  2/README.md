@@ -91,3 +91,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Dashboards as Insight-to-Action Systems](./Dashboards%20as%20Insight-to-Action%20Systems.md)
 
 ## [Data Pipeline of Decision-Making](./Data%20Pipeline%20of%20Decision-Making.md)
+
+## [Re-emphasis of Effective Dashboard Properties](./Re-emphasis%20of%20Effective%20Dashboard%20Properties.md)
