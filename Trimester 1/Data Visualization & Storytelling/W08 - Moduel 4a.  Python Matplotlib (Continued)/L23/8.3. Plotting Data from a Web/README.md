@@ -43,3 +43,5 @@ It is fundamentally about:
 ## [Step 5: Set the Date as Index](./Step%205%20-%20Set%20the%20Date%20as%20Index.md)
 
 ## [Why Set the Index?](./Why%20Set%20the%20Index.md)
+
+## [Why This Matters](./Why%20This%20Matters.md)
