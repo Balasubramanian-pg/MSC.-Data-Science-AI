@@ -335,3 +335,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Categorical Data](./Categorical%20Data.md)
 
 ## [Avoid Arbitrary Emphasis](./Avoid%20Arbitrary%20Emphasis.md)
+
+## [Common Color Misuse Patterns](./Common%20Color%20Misuse%20Patterns.md)
