@@ -53,3 +53,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [6. Documentation-Driven Learning](./6.%20Documentation-Driven%20Learning.md)
 
 ## [Why Documentation Matters](./Why%20Documentation%20Matters.md)
+
+## [Important Engineering Skill](./Important%20Engineering%20Skill.md)
