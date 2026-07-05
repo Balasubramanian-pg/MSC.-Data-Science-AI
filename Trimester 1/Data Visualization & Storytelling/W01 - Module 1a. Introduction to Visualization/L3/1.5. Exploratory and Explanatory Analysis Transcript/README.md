@@ -33,3 +33,5 @@
 ## [Integrity Checking](./Integrity%20Checking.md)
 
 ## [Formula Example: Missing Percentage](./Formula%20Example%20-%20Missing%20Percentage.md)
+
+## [Formula Example: Outlier Detection Using IQR](./Formula%20Example%20-%20Outlier%20Detection%20Using%20IQR.md)
