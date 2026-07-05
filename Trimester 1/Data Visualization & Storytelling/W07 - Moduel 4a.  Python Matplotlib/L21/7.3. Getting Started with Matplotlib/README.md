@@ -125,3 +125,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Adding a Title](./Adding%20a%20Title.md)
 
 ## [Axis Labels](./Axis%20Labels.md)
+
+## [Why Labeling Matters](./Why%20Labeling%20Matters.md)
