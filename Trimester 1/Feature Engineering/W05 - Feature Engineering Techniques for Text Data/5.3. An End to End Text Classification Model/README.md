@@ -47,3 +47,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Feature: nhl          | TF-IDF Score: 0.4472](./Feature%20-%20nhl%20TF-IDF%20Score%20-%200.4472.md)
 
 ## [5. Visualizing Interpretability](./5.%20Visualizing%20Interpretability.md)
+
+## [plot_top_tfidf_features(dense_vector, feature_names)](./plot_top_tfidf_features%28dense_vector%2C%20feature_names%29.md)
