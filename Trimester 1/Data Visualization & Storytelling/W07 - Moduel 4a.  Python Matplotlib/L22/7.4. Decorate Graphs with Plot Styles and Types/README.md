@@ -35,3 +35,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Transparency and Alpha](./Transparency%20and%20Alpha.md)
 
 ## [Grayscale Encoding](./Grayscale%20Encoding.md)
+
+## [Comprehensive Color Demonstration](./Comprehensive%20Color%20Demonstration.md)
