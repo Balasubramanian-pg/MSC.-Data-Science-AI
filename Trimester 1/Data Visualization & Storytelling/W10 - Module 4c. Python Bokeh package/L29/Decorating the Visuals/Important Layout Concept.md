@@ -1,13 +1,14 @@
 # Important Layout Concept
 
-`add_layout()` inserts UI components into figure regions.
+Bokeh treats:
 
-Regions:
+- legends
+    
+- titles
+    
+- color bars
+    
+- widgets
+    
 
-- left
-    
-- right
-    
-- above
-    
-- below
+as layout components.
