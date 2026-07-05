@@ -73,3 +73,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Example](./Example.md)
 
 ## [2. Context Dependence](./2.%20Context%20Dependence.md)
+
+## [3. Synonymy](./3.%20Synonymy.md)
