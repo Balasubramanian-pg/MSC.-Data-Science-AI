@@ -19,3 +19,5 @@
 ## [1.1.9. Step-by-Step Dashboard Construction Example](./1.1.9.%20Step-by-Step%20Dashboard%20Construction%20Example.md)
 
 ## [1.1.10. Common Design Pitfalls and Misinterpretations](./1.1.10.%20Common%20Design%20Pitfalls%20and%20Misinterpretations.md)
+
+## [1.1.11. Conclusions and Best Practices](./1.1.11.%20Conclusions%20and%20Best%20Practices.md)
