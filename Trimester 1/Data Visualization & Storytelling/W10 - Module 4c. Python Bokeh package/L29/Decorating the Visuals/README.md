@@ -369,3 +369,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Important Architectural Idea](./Important%20Architectural%20Idea.md)
 
 ## [Core Pattern](./Core%20Pattern.md)
+
+## [General Form](./General%20Form.md)
