@@ -5,3 +5,5 @@
 ## [3.6.2. Feature Construction and Mathematical Transformation](./3.6.2.%20Feature%20Construction%20and%20Mathematical%20Transformation.md)
 
 ## [3.6.3. Identifying Multicollinearity and Redundancy](./3.6.3.%20Identifying%20Multicollinearity%20and%20Redundancy.md)
+
+## [3.6.4. Filter Feature Selection Metrics](./3.6.4.%20Filter%20Feature%20Selection%20Metrics.md)
