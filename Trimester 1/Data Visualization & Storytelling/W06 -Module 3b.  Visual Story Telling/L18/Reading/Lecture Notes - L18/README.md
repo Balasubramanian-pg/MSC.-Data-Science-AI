@@ -71,3 +71,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Advanced Cognitive Insight](./Advanced%20Cognitive%20Insight.md)
 
 ## [Storytelling in Business Analytics](./Storytelling%20in%20Business%20Analytics.md)
+
+## [Analysts Who Influence Organizations](./Analysts%20Who%20Influence%20Organizations.md)
