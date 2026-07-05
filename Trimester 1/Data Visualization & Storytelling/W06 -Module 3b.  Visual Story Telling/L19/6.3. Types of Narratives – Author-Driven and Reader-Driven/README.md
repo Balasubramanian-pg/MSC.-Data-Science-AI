@@ -27,3 +27,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Strengths of Reader-Driven Systems](./Strengths%20of%20Reader-Driven%20Systems.md)
 
 ## [3. Hybrid / Narrative-Driven Storytelling](./3.%20Hybrid%20Narrative-Driven%20Storytelling.md)
+
+## [Core Principle](./Core%20Principle.md)
