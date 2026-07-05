@@ -19,3 +19,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Basic Histogram Example](./Basic%20Histogram%20Example.md)
 
 ## [Reproducibility](./Reproducibility.md)
+
+## [Generate random data](./Generate%20random%20data.md)
