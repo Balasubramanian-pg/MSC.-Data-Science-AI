@@ -59,3 +59,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Official Documentation Areas Mentioned](./Official%20Documentation%20Areas%20Mentioned.md)
 
 ## [Typical Learning Path](./Typical%20Learning%20Path.md)
+
+## [7. Pre-attentive Attributes in Matplotlib](./7.%20Pre-attentive%20Attributes%20in%20Matplotlib.md)
