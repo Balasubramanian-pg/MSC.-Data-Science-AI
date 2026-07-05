@@ -81,3 +81,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Real-World Example](./Real-World%20Example.md)
 
 ## [2. Drill-Down Interaction](./2.%20Drill-Down%20Interaction.md)
+
+## [3. Interactive Slideshows](./3.%20Interactive%20Slideshows.md)
