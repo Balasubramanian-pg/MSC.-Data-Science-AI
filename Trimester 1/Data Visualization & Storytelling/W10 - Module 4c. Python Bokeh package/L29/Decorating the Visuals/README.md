@@ -243,3 +243,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Two Ways to Configure a Plot](./Two%20Ways%20to%20Configure%20a%20Plot.md)
 
 ## [Method 1: Configure Inside `figure()`](./Method%201%20-%20Configure%20Inside%20%60figure%28%29%60.md)
+
+## [Method 2: Configure After Creation](./Method%202%20-%20Configure%20After%20Creation.md)
