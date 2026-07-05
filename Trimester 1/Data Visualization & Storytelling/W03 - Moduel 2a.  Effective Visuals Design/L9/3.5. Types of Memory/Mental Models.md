@@ -1,16 +1,16 @@
 # Mental Models
 
-Users already possess internal expectations about:
+Long-term memory creates internal expectations.
 
-- charts
+Example expectations:
+
+- time flows left to right
     
-- layouts
+- bigger objects imply importance
     
-- colors
+- upward trends imply growth
     
-- business metrics
-    
-- timelines
+- grouped colors imply categories
     
 
-Violating these expectations increases confusion.
+Violating these expectations increases cognitive friction.
