@@ -141,3 +141,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Topic Modeling Pipeline](./Topic%20Modeling%20Pipeline.md)
 
 ## [Topic Composition](./Topic%20Composition.md)
+
+## [Why Topic Number Matters](./Why%20Topic%20Number%20Matters.md)
