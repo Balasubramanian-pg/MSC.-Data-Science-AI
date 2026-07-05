@@ -53,3 +53,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Brain Activation](./Brain%20Activation.md)
 
 ## [Important Concept: Neural Simulation](./Important%20Concept%20-%20Neural%20Simulation.md)
+
+## [Stories and Emotion](./Stories%20and%20Emotion.md)
