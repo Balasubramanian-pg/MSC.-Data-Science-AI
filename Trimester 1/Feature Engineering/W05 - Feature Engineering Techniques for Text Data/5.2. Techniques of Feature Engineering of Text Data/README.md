@@ -51,3 +51,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [A list of categorical words to encode](./A%20list%20of%20categorical%20words%20to%20encode.md)
 
 ## [Initialize the OneHotEncoder](./Initialize%20the%20OneHotEncoder.md)
+
+## [sparse_output=False for demonstration purposes to see the dense array](./sparse_output%3DFalse%20for%20demonstration%20purposes%20to%20see%20the%20dense%20array.md)
