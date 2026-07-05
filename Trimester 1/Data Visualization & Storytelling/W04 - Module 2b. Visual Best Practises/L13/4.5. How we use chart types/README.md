@@ -99,3 +99,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Better Text Visualization Alternatives](./Better%20Text%20Visualization%20Alternatives.md)
 
 ## [Advanced NLP Visualization Pipeline](./Advanced%20NLP%20Visualization%20Pipeline.md)
+
+## [Important Hidden Lesson](./Important%20Hidden%20Lesson.md)
