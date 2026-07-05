@@ -159,3 +159,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [What Is Tokenization?](./What%20Is%20Tokenization.md)
 
 ## [Tokenization Pipeline](./Tokenization%20Pipeline.md)
+
+## [Why Tokenization Matters](./Why%20Tokenization%20Matters.md)
