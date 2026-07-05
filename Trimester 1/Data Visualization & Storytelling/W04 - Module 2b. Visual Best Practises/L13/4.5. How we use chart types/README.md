@@ -371,3 +371,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Measuring Interaction Intensity](./Measuring%20Interaction%20Intensity.md)
 
 ## [Density Visualization](./Density%20Visualization.md)
+
+## [Important Organizational Insight](./Important%20Organizational%20Insight.md)
