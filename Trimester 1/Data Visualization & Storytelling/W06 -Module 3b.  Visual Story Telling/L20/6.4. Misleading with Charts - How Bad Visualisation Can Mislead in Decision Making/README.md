@@ -131,3 +131,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [What Is a Dual-Axis Chart?](./What%20Is%20a%20Dual-Axis%20Chart.md)
 
 ## [Why Dual Axes Are Dangerous](./Why%20Dual%20Axes%20Are%20Dangerous.md)
+
+## [Example Problem](./Example%20Problem.md)
