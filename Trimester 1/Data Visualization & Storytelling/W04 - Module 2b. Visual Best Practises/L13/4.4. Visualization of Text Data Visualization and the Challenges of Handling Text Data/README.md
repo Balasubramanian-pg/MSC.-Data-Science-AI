@@ -53,3 +53,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Machines Cannot Directly Understand Text](./Machines%20Cannot%20Directly%20Understand%20Text.md)
 
 ## [Why Conversion Is Necessary](./Why%20Conversion%20Is%20Necessary.md)
+
+## [Language Conversion Pipeline](./Language%20Conversion%20Pipeline.md)
