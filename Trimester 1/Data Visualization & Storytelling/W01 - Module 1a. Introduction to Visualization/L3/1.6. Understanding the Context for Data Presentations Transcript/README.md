@@ -6,3 +6,5 @@
 ## [Learning Objectives](./Learning%20Objectives.md)
 
 ## [Definition](./Definition.md)
+
+## [Key Benefit](./Key%20Benefit.md)
