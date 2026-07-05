@@ -343,3 +343,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Blind Extrapolation](./Blind%20Extrapolation.md)
 
 ## [Overfitting High-Degree Curves](./Overfitting%20High-Degree%20Curves.md)
+
+## [Ignoring Residuals](./Ignoring%20Residuals.md)
