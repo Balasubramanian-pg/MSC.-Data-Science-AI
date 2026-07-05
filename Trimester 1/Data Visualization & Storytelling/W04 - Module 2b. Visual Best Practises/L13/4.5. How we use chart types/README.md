@@ -211,3 +211,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Sentiment Analysis](./Sentiment%20Analysis.md)
 
 ## [Quantifying Emotional Tone](./Quantifying%20Emotional%20Tone.md)
+
+## [Sentiment Scores](./Sentiment%20Scores.md)
