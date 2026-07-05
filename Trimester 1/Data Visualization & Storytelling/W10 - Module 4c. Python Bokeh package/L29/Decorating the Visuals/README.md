@@ -169,3 +169,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Text styling](./Text%20styling.md)
 
 ## [Common Beginner Mistakes](./Common%20Beginner%20Mistakes.md)
+
+## [Mistake 1: Confusing Fill vs Line](./Mistake%201%20-%20Confusing%20Fill%20vs%20Line.md)
