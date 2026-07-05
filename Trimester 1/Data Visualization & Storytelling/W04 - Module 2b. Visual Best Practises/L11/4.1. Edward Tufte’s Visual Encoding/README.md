@@ -135,3 +135,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [A good visualization should:](./A%20good%20visualization%20should%20-.md)
 
 ## [A poor visualization:](./A%20poor%20visualization%20-.md)
+
+## [Final Mental Model](./Final%20Mental%20Model.md)
