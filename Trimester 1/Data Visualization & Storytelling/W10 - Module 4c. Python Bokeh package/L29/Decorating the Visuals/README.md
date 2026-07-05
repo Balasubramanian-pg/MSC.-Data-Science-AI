@@ -47,3 +47,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [5. Add vertical bars with your colors](./5.%20Add%20vertical%20bars%20with%20your%20colors.md)
 
 ## [6. Display the plot using show()](./6.%20Display%20the%20plot%20using%20show%28%29.md)
+
+## [8. Common Errors & Troubleshooting](./8.%20Common%20Errors%20%26%20Troubleshooting.md)
