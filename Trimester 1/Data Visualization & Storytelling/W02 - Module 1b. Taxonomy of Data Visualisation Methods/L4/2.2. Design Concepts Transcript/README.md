@@ -32,3 +32,5 @@
 ## [13. Strategies for Achieving Acceptance](./13.%20Strategies%20for%20Achieving%20Acceptance.md)
 
 ## [14. Practical Visualization Design Checklist](./14.%20Practical%20Visualization%20Design%20Checklist.md)
+
+## [Common Mistakes](./Common%20Mistakes.md)
