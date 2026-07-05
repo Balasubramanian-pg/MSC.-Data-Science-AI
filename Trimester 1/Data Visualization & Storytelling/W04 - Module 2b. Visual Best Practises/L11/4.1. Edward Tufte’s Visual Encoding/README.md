@@ -71,3 +71,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Transition Into Visual Encoding](./Transition%20Into%20Visual%20Encoding.md)
 
 ## [Human Visual Decoding Process](./Human%20Visual%20Decoding%20Process.md)
+
+## [Perceptual Decoding Pipeline](./Perceptual%20Decoding%20Pipeline.md)
