@@ -277,3 +277,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [3. Simplicity Matters](./3.%20Simplicity%20Matters.md)
 
 ## [4. Titles Matter](./4.%20Titles%20Matter.md)
+
+## [5. Communication Is Part of Engineering](./5.%20Communication%20Is%20Part%20of%20Engineering.md)
