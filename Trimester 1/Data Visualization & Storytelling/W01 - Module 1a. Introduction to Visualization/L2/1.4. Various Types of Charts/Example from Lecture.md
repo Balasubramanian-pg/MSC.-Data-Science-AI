@@ -1,9 +1,9 @@
 # Example from Lecture
 
-Variables represented:
+Repeated phrase:
 
-|Feature|Meaning|
-|---|---|
-|Color|Sentiment type|
-|Bubble size|Number of complaints|
-|Position|Complaint category|
+```text
+"Bad service"
+```
+
+signals negative sentiment.
