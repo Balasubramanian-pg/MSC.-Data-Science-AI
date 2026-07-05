@@ -1,0 +1,4 @@
+# Credible
+
+Trust determines:  
+acceptance.
