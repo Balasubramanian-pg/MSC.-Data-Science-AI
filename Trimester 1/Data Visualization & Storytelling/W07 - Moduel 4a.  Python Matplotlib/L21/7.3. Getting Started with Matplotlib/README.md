@@ -297,3 +297,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Example-Driven Learning Works](./Why%20Example-Driven%20Learning%20Works.md)
 
 ## [Example Workflow](./Example%20Workflow.md)
+
+## [Bar Charts](./Bar%20Charts.md)
