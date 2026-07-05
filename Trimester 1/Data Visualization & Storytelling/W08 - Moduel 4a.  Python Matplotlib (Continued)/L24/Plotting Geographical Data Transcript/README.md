@@ -47,3 +47,5 @@ This is foundational to:
 ## [Step 3: Load Geographic Data](./Step%203%20-%20Load%20Geographic%20Data.md)
 
 ## [Important Difference](./Important%20Difference.md)
+
+## [What Is a Shapefile?](./What%20Is%20a%20Shapefile.md)
