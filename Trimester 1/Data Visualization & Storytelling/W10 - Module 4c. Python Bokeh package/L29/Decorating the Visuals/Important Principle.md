@@ -1,4 +1,9 @@
 # Important Principle
 
-Axes are not neutral.  
-They shape interpretation.
+Bokeh favors:
+
+> mutable object properties
+
+not:
+
+> one-time static rendering
