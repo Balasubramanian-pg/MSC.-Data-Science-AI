@@ -39,3 +39,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Visualization Is Powerful](./Why%20Visualization%20Is%20Powerful.md)
 
 ## [The Real Responsibility of Analysts](./The%20Real%20Responsibility%20of%20Analysts.md)
+
+## [Key Strategic Lesson](./Key%20Strategic%20Lesson.md)
