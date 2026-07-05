@@ -71,3 +71,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Orientation Variation A: Columnar Layout (Side-by-Side Comparison)](./Orientation%20Variation%20A%20-%20Columnar%20Layout%20%28Side-by-Side%20Comparison%29.md)
 
 ## [Best for cross-examining peak heights across variables at identical timestamps.](./Best%20for%20cross-examining%20peak%20heights%20across%20variables%20at%20identical%20timestamps.md)
+
+## [Orientation Variation B: Row Layout (Stacked Comparison)](./Orientation%20Variation%20B%20-%20Row%20Layout%20%28Stacked%20Comparison%29.md)
