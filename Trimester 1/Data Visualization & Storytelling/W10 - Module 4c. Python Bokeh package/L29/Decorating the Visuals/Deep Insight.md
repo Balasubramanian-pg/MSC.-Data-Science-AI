@@ -1,18 +1,13 @@
 # Deep Insight
 
-Legends are a workaround.
+Legends are UI panels.
 
-The best visualizations often avoid legends entirely by:
+Not just annotations.
 
-- direct labeling
+This becomes more obvious in:
+
+- interactive dashboards
     
-- annotations
+- hover interactions
     
-- embedded text
-    
-
-Because legends force:
-
-> eye movement between chart and decoding key
-
-This increases cognitive load.
+- filtering systems
