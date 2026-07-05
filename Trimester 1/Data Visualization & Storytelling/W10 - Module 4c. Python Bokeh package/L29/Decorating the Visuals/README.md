@@ -147,3 +147,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [2. Line Properties](./2.%20Line%20Properties.md)
 
 ## [Line Dash Types](./Line%20Dash%20Types.md)
+
+## [3. Fill Properties](./3.%20Fill%20Properties.md)
