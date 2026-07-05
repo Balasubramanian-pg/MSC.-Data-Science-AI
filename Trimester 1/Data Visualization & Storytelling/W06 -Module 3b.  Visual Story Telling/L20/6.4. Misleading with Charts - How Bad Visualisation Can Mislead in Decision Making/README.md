@@ -175,3 +175,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Humans Mistake Correlation for Causation](./Why%20Humans%20Mistake%20Correlation%20for%20Causation.md)
 
 ## [Visualization Amplifies This Bias](./Visualization%20Amplifies%20This%20Bias.md)
+
+## [The Statistical Danger](./The%20Statistical%20Danger.md)
