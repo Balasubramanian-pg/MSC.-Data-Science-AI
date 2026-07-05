@@ -1,12 +1,21 @@
 # Mental Model
 
-Think of Bokeh bar charts as:
+Every Bokeh glyph has layers:
 
 ```mermaid
-flowchart LR
-    A[Categories] --> B[x_range]
-    B --> C[Categorical Axis]
-    D[Values] --> E[top]
-    E --> F[Bar Heights]
-    G[Color Definition] --> H[Bar Styling]
+flowchart TD
+    A[Glyph] --> B[Fill]
+    A --> C[Line]
+    A --> D[Text]
+    A --> E[Hatch]
 ```
+
+Each layer has:
+
+- color
+    
+- alpha
+    
+- style
+    
+- width/pattern
