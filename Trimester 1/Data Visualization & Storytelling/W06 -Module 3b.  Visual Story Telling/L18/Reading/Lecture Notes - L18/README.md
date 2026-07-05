@@ -169,3 +169,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Dashboard vs Presentation](./Dashboard%20vs%20Presentation.md)
 
 ## [Common Presentation Failures](./Common%20Presentation%20Failures.md)
+
+## [1. Slide as Teleprompter](./1.%20Slide%20as%20Teleprompter.md)
