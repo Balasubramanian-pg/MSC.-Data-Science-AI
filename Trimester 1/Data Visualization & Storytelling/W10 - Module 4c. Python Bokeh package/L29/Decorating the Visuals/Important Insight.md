@@ -1,11 +1,10 @@
 # Important Insight
 
-`line()` creates a glyph object.
+The instructor is now teaching:
 
-The instructor mentions:
+- plot aesthetics
+    
+- not data visualization logic
+    
 
-> "glyph object is created"
-
-This is important.
-
-Bokeh internally represents every visual element as a glyph.
+These are separate concerns.
