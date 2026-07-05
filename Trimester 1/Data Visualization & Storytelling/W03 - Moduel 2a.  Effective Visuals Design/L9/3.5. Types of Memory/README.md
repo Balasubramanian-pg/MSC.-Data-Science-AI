@@ -31,3 +31,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Good Design](./Good%20Design.md)
 
 ## [Sensory Memory Design Implications](./Sensory%20Memory%20Design%20Implications.md)
+
+## [Effective Practices](./Effective%20Practices.md)
