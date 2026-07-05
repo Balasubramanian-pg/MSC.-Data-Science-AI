@@ -73,3 +73,5 @@
 ## [5.1 Exploratory Phase](./5.1%20Exploratory%20Phase.md)
 
 ## [Key Variable](./Key%20Variable.md)
+
+## [5.2 Constructing Variables](./5.2%20Constructing%20Variables.md)
