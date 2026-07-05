@@ -121,3 +121,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [What the Instructor is Building](./What%20the%20Instructor%20is%20Building.md)
 
 ## [Imports](./Imports.md)
+
+## [Why Each Library Is Used](./Why%20Each%20Library%20Is%20Used.md)
