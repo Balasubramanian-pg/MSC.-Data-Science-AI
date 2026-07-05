@@ -21,3 +21,5 @@
 ## [4.1.10. Advantages and Limitations of Tableau for Statistical Work](./4.1.10.%20Advantages%20and%20Limitations%20of%20Tableau%20for%20Statistical%20Work.md)
 
 ## [4.1.11. Recommended Learning Resources](./4.1.11.%20Recommended%20Learning%20Resources.md)
+
+## [4.1.12. Conclusions](./4.1.12.%20Conclusions.md)
