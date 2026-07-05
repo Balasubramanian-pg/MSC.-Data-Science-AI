@@ -107,3 +107,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Common Mistakes](./Common%20Mistakes.md)
 
 ## [Mistake 1](./Mistake%201.md)
+
+## [Mistake 2](./Mistake%202.md)
