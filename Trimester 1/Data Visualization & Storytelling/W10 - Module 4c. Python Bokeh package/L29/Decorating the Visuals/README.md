@@ -553,3 +553,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Title Positioning](./Title%20Positioning.md)
 
 ## [Left Alignment](./Left%20Alignment.md)
+
+## [Available Alignments](./Available%20Alignments.md)
