@@ -23,3 +23,5 @@ week: W04 - Dimensionality Reduction Techniques
 ## [4.4.8. Factors Dictating Technique Selection](./4.4.8.%20Factors%20Dictating%20Technique%20Selection.md)
 
 ## [4.4.9. The Most Common Misinterpretations](./4.4.9.%20The%20Most%20Common%20Misinterpretations.md)
+
+## [4.4.10. Conclusions](./4.4.10.%20Conclusions.md)
