@@ -673,3 +673,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Part 1: Legend Customization](./Part%201%20-%20Legend%20Customization.md)
 
 ## [Legend Location](./Legend%20Location.md)
+
+## [Why Placement Matters](./Why%20Placement%20Matters.md)
