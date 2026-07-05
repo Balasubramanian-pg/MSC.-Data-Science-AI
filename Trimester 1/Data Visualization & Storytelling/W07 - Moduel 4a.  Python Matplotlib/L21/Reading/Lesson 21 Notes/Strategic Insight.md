@@ -1,35 +1,37 @@
 # Strategic Insight
 
-This lecture section introduces a profound engineering idea:
+This lecture section introduces a key engineering mindset:
 
-> Visualization is layered abstraction.
+> visualization is iterative design.
 
-A chart is not a single object.
+A plot evolves through:
 
-It is composed of:
-
-- numerical structures
+- layering
     
-- rendering objects
+- refinement
     
-- semantic annotations
+- styling
     
-- perceptual encodings
+- annotation
     
-
-all working together.
-
-That is why strong visualization systems require understanding:
-
-- mathematics
-    
-- programming
-    
-- perception
-    
-- communication
-    
-- interface design
+- interpretation support
     
 
-simultaneously.
+Strong visualization practitioners therefore think beyond:
+
+- “Can I draw the chart?”
+    
+
+toward:
+
+- “Can the audience interpret it correctly and efficiently?”
+    
+
+That distinction separates:
+
+- technical plotting  
+    from
+    
+- effective analytical communication.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
