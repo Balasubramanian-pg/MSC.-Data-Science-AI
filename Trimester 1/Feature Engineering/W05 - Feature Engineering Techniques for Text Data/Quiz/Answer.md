@@ -1,15 +1,25 @@
 # Answer
 
-✅ **Bigrams capture more contextual information than unigrams.**
+✅ **[0, 1, 1, 0, 1]**
 
 > [!NOTE]
 > **Reason**
 >
-> **Bigrams** consider pairs of consecutive words, thereby capturing local word order and context that unigrams miss.
+> The combined vocabulary is:
 >
-> For example:
+> | Term     | Present in Doc2? | Count |
+> | -------- | ---------------- | ----- |
+> | Data     | No               | 0     |
+> | Science  | Yes              | 1     |
+> | is       | Yes              | 1     |
+> | powerful | No               | 0     |
+> | evolving | Yes              | 1     |
 >
-> * Unigrams: *machine*, *learning*
-> * Bigrams: *machine learning*
+> Therefore, the Bag of Words vector for **Doc2** is:
 >
-> This additional contextual information often improves NLP model performance.
+> **[0, 1, 1, 0, 1]**
+
+Let's move to [Week 6 quiz](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W06%20-%20Feature%20Engineering%20Techniques%20for%20Image%20Data/Quiz.md)
+
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
