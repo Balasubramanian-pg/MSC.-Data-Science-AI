@@ -219,3 +219,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Variables](./Variables.md)
 
 ## [Figure](./Figure.md)
+
+## [Title customization](./Title%20customization.md)
