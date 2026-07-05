@@ -25,3 +25,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Key Insight](./Key%20Insight.md)
 
 ## [2. Defining Data Storytelling](./2.%20Defining%20Data%20Storytelling.md)
+
+## [Core Definition](./Core%20Definition.md)
