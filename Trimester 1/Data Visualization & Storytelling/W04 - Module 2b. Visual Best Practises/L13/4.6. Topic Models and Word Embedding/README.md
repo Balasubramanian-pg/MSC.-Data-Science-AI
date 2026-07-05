@@ -123,3 +123,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Final Conceptual Shift](./Final%20Conceptual%20Shift.md)
 
 ## [Final Mental Model](./Final%20Mental%20Model.md)
+
+## [Topic Modeling, t-SNE Clustering, and Semantic Dimensionality Reduction](./Topic%20Modeling%2C%20t-SNE%20Clustering%2C%20and%20Semantic%20Dimensionality%20Reduction.md)
