@@ -5,15 +5,10 @@ ax.set_xlabel("X-axis")
 ax.set_ylabel("Y-axis")
 ```
 
-Axis labels define:
+These improve:
 
-- measurement meaning
+- interpretability
     
-- units
+- semantic clarity
     
-- dimensions
-    
-
-Without labels:
-
-- charts lose interpretability
+- audience understanding
