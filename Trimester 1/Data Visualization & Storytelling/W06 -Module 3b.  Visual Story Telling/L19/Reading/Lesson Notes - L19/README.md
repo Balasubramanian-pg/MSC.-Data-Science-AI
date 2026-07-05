@@ -165,3 +165,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Outliers Matter](./Why%20Outliers%20Matter.md)
 
 ## [Visualization Techniques](./Visualization%20Techniques.md)
+
+## [Critical Insight: Not All Outliers Are Errors](./Critical%20Insight%20-%20Not%20All%20Outliers%20Are%20Errors.md)
