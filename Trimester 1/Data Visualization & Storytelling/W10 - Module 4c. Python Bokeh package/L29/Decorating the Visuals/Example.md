@@ -1,5 +1,6 @@
 # Example
 
 ```python
-visual_properties_plot.title.text_font_size = "1.2em"
+plot.height = 300
+plot.width = 700
 ```
