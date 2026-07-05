@@ -53,3 +53,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Generate exam scores based on a mathematical formula with some random noise](./Generate%20exam%20scores%20based%20on%20a%20mathematical%20formula%20with%20some%20random%20noise.md)
 
 ## [Exam Score = 50 + (Study Hours * 4) + Random Variation](./Exam%20Score%20%3D%2050%20%2B%20%28Study%20Hours%204%29%20%2B%20Random%20Variation.md)
+
+## [Clip scores to ensure they stay within a realistic 0-100 limit](./Clip%20scores%20to%20ensure%20they%20stay%20within%20a%20realistic%200-100%20limit.md)
