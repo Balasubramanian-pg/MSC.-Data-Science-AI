@@ -83,3 +83,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Ordering Matters](./Why%20Ordering%20Matters.md)
 
 ## [Common Ordering Structures](./Common%20Ordering%20Structures.md)
+
+## [B. Interactivity](./B.%20Interactivity.md)
