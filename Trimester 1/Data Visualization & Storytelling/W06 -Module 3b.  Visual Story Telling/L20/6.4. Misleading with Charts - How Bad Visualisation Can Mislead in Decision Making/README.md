@@ -201,3 +201,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Core Principle of Simpson’s Paradox](./Core%20Principle%20of%20Simpson%E2%80%99s%20Paradox.md)
 
 ## [The Task Completion Example](./The%20Task%20Completion%20Example.md)
+
+## [Day-Level Analysis](./Day-Level%20Analysis.md)
