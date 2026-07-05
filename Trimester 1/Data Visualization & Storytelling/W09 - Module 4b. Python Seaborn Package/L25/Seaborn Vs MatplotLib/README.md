@@ -101,3 +101,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [NOTE: Labels on X and Y axes are automatically derived from the column names!](./NOTE%20-%20Labels%20on%20X%20and%20Y%20axes%20are%20automatically%20derived%20from%20the%20column%20names%21.md)
 
 ## [2. HISTOGRAM COMPARISON (The Aesthetics & "Garnishing" Test)](./2.%20HISTOGRAM%20COMPARISON%20%28The%20Aesthetics%20%26%20Garnishing%20Test%29.md)
+
+## [Reset backend styling to default plain state for Matplotlib's demonstration](./Reset%20backend%20styling%20to%20default%20plain%20state%20for%20Matplotlib%27s%20demonstration.md)
