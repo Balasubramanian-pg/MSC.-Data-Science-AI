@@ -23,3 +23,5 @@ This document provides a technical blueprint for understanding, selecting, and i
 ## [3. Configure the matplotlib canvas](./3.%20Configure%20the%20matplotlib%20canvas.md)
 
 ## [Set limits to prevent rendering issues](./Set%20limits%20to%20prevent%20rendering%20issues.md)
+
+## [4. Render circles on screen](./4.%20Render%20circles%20on%20screen.md)
