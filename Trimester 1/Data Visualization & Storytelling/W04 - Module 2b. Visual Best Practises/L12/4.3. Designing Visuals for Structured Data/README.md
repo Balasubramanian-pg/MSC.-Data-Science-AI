@@ -63,3 +63,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Best for Categorical Frequency](./Best%20for%20Categorical%20Frequency.md)
 
 ## [Why Bar Charts Work](./Why%20Bar%20Charts%20Work.md)
+
+## [Bar Chart Perception Pipeline](./Bar%20Chart%20Perception%20Pipeline.md)
