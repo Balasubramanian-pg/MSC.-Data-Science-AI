@@ -1,4 +1,5 @@
 # Important Principle
 
-When everything looks important:  
-nothing looks important.
+Headlines frame cognition.
+
+The audience interprets everything that follows through the lens of the title.
