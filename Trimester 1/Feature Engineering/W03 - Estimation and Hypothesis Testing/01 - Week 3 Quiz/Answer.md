@@ -1,12 +1,12 @@
 # Answer
 
-✅ **Feature Extraction**
+✅ **It removes features during model training by shrinking some coefficients to zero.**
 
 > [!NOTE]
 > **Reason**
 >
-> **Feature Extraction** converts raw data into a set of numerical features that can be used by machine learning algorithms. In text analytics, techniques such as **Bag of Words**, **TF-IDF**, and **word embeddings** transform text paragraphs into numeric vectors suitable for modeling.
+> **LASSO** is an embedded feature selection method because feature selection occurs **during model training itself**. The L1 penalty forces less important feature coefficients toward zero, effectively removing them from the model while simultaneously fitting the model.
 
-# Question 2
+# Question 3
 
-Why might applying LASSO (L1 regularization) be considered an embedded method for feature selection?
+Which filter method is best suited for identifying non-linear monotonic relationships between an ordinal feature and a continuous target?
