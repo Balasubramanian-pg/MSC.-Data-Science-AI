@@ -151,3 +151,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [3. Fill Properties](./3.%20Fill%20Properties.md)
 
 ## [Important Distinction](./Important%20Distinction.md)
+
+## [4. Hatch Properties](./4.%20Hatch%20Properties.md)
