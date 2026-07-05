@@ -23,3 +23,5 @@ Every single function, method, and parameter is explained in detail using Python
 ## [output_file and call output_file("filename.html") instead.](./output_file%20and%20call%20output_file%28filename.html%29%20instead.md)
 
 ## [Initialize the notebook output mode](./Initialize%20the%20notebook%20output%20mode.md)
+
+## [Execute the function to see the plot](./Execute%20the%20function%20to%20see%20the%20plot.md)
