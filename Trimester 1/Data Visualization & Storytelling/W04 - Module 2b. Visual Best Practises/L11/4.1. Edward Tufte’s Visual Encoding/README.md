@@ -85,3 +85,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Pie Chart](./Pie%20Chart.md)
 
 ## [Important Insight](./Important%20Insight.md)
+
+## [Easy Detection](./Easy%20Detection.md)
