@@ -145,3 +145,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Overcrowded Slide](./Overcrowded%20Slide.md)
 
 ## [Balanced Slide](./Balanced%20Slide.md)
+
+## [Gestalt Psychology Connection](./Gestalt%20Psychology%20Connection.md)
