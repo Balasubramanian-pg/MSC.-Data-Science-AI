@@ -275,3 +275,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [2. Adding a Grid](./2.%20Adding%20a%20Grid.md)
 
 ## [What Grids Do](./What%20Grids%20Do.md)
+
+## [Visual Role of Grids](./Visual%20Role%20of%20Grids.md)
