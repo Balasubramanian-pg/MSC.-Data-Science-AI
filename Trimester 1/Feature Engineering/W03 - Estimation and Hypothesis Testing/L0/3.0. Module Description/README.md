@@ -7,3 +7,5 @@
 ## [3.0.3. Feature Extraction: Transforming Raw Data](./3.0.3.%20Feature%20Extraction%20-%20Transforming%20Raw%20Data.md)
 
 ## [3.0.4. Feature Construction: Domain-Informed Variables](./3.0.4.%20Feature%20Construction%20-%20Domain-Informed%20Variables.md)
+
+## [3.0.5. The Taxonomy of Feature Selection](./3.0.5.%20The%20Taxonomy%20of%20Feature%20Selection.md)
