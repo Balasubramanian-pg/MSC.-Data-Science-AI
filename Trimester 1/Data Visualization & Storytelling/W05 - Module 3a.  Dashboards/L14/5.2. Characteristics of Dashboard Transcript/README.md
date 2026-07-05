@@ -117,3 +117,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Advanced Dashboard Concepts](./Advanced%20Dashboard%20Concepts.md)
 
 ## [1. Progressive Disclosure](./1.%20Progressive%20Disclosure.md)
+
+## [2. Information Density](./2.%20Information%20Density.md)
