@@ -179,3 +179,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Datetime Parsing Failures](./Datetime%20Parsing%20Failures.md)
 
 ## [Rolling Averages](./Rolling%20Averages.md)
+
+## [Why Moving Averages Matter](./Why%20Moving%20Averages%20Matter.md)
