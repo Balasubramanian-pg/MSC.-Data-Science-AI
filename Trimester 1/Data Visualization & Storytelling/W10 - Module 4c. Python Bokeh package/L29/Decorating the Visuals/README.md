@@ -487,3 +487,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Step 2: Vertical Bar Chart](./Step%202%20-%20Vertical%20Bar%20Chart.md)
 
 ## [Understanding `top`](./Understanding%20%60top%60.md)
+
+## [Initial Problem: Label Clutter](./Initial%20Problem%20-%20Label%20Clutter.md)
