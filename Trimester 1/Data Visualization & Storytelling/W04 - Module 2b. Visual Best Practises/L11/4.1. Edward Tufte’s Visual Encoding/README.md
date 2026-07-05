@@ -45,3 +45,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Use Caution With](./Use%20Caution%20With.md)
 
 ## [Ordinal Encoding Workflow](./Ordinal%20Encoding%20Workflow.md)
+
+## [3. Interval Data](./3.%20Interval%20Data.md)
