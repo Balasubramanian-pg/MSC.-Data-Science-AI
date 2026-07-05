@@ -167,3 +167,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Critical Limitation](./Critical%20Limitation.md)
 
 ## [Why This Matters in Dashboards](./Why%20This%20Matters%20in%20Dashboards.md)
+
+## [The Transcript's Key Recommendation](./The%20Transcript%27s%20Key%20Recommendation.md)
