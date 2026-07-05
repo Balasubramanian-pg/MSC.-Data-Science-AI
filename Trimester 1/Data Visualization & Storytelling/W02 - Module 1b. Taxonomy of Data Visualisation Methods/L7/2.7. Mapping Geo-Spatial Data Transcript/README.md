@@ -13,3 +13,5 @@ week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
 ## [3. Assessing Hierarchies: Part-to-Whole and Structural Visualizations](./3.%20Assessing%20Hierarchies%20-%20Part-to-Whole%20and%20Structural%20Visualizations.md)
 
 ## [4. Mapping Geospatial Data: Spatial Representations and Coordinate Systems](./4.%20Mapping%20Geospatial%20Data%20-%20Spatial%20Representations%20and%20Coordinate%20Systems.md)
+
+## [5. Technical Geospatial Pipeline & Processing](./5.%20Technical%20Geospatial%20Pipeline%20%26%20Processing.md)
