@@ -23,3 +23,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Core Philosophy](./Core%20Philosophy.md)
 
 ## [Example from the Transcript](./Example%20from%20the%20Transcript.md)
+
+## [Strengths of Reader-Driven Systems](./Strengths%20of%20Reader-Driven%20Systems.md)
