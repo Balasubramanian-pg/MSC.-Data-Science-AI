@@ -1,10 +1,9 @@
 # Important Design Insight
 
-The instructor demonstrates:
+Typography strongly affects perception.
 
-- visual hierarchy engineering
-    
-
-Large title + dark background:
-
-- increases attention weight
+|Font Style|Perception|
+|---|---|
+|serif|formal/traditional|
+|sans-serif|modern/dashboard|
+|italic|emphasis/decorative|
