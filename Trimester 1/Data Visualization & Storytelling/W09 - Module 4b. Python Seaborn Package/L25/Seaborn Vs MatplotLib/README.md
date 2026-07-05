@@ -137,3 +137,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Activate premium design theme attributes globally](./Activate%20premium%20design%20theme%20attributes%20globally.md)
 
 ## [One clean command natively parses raw data, isolates categories, calculates](./One%20clean%20command%20natively%20parses%20raw%20data%2C%20isolates%20categories%2C%20calculates.md)
+
+## [the mathematical mean, and adds a 95% Confidence Interval error bar automatically.](./the%20mathematical%20mean%2C%20and%20adds%20a%2095%25%20Confidence%20Interval%20error%20bar%20automatically.md)
