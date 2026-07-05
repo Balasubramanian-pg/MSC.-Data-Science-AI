@@ -129,3 +129,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Dual-Axis and Scaling Problems](./Dual-Axis%20and%20Scaling%20Problems.md)
 
 ## [What Is a Dual-Axis Chart?](./What%20Is%20a%20Dual-Axis%20Chart.md)
+
+## [Why Dual Axes Are Dangerous](./Why%20Dual%20Axes%20Are%20Dangerous.md)
