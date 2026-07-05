@@ -67,3 +67,5 @@ This is foundational to:
 ## [Choropleth Map](./Choropleth%20Map.md)
 
 ## [Visualization Principle](./Visualization%20Principle.md)
+
+## [Human Perception Insight](./Human%20Perception%20Insight.md)
