@@ -117,3 +117,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Example Breakdown](./Example%20Breakdown.md)
 
 ## [Visual Intuition](./Visual%20Intuition.md)
+
+## [Why Even Spacing Is Important](./Why%20Even%20Spacing%20Is%20Important.md)
