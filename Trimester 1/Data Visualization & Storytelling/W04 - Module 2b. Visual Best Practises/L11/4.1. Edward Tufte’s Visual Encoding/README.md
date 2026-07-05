@@ -23,3 +23,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Constraint](./Important%20Constraint.md)
 
 ## [Appropriate Visualizations](./Appropriate%20Visualizations.md)
+
+## [Good Choices](./Good%20Choices.md)
