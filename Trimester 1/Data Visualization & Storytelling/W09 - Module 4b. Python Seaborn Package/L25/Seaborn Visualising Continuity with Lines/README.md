@@ -29,3 +29,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [We use 'hue' to color lines by region and 'style' to change line patterns by event.](./We%20use%20%27hue%27%20to%20color%20lines%20by%20region%20and%20%27style%27%20to%20change%20line%20patterns%20by%20event.md)
 
 ## [Move the legend outside the plot box so it doesn't overlap data points](./Move%20the%20legend%20outside%20the%20plot%20box%20so%20it%20doesn%27t%20overlap%20data%20points.md)
+
+## [4. ADVANCED: Subplot Faceting with `relplot`](./4.%20ADVANCED%20-%20Subplot%20Faceting%20with%20%60relplot%60.md)
