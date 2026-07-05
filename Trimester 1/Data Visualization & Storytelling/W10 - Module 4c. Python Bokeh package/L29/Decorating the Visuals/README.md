@@ -33,3 +33,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [6. Key Bokeh vs. Matplotlib/Seaborn Differences](./6.%20Key%20Bokeh%20vs.%20MatplotlibSeaborn%20Differences.md)
 
 ## [7. Practice Exercise](./7.%20Practice%20Exercise.md)
+
+## [Task: Create a colored bar chart of fruit counts](./Task%20-%20Create%20a%20colored%20bar%20chart%20of%20fruit%20counts.md)
