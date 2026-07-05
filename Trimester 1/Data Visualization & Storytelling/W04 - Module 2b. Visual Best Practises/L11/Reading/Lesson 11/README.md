@@ -67,3 +67,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Ordinal Visualization Techniques](./Ordinal%20Visualization%20Techniques.md)
 
 ## [Interval Data](./Interval%20Data.md)
+
+## [Equal Distances Without True Zero](./Equal%20Distances%20Without%20True%20Zero.md)
