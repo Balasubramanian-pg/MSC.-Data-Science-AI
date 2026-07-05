@@ -53,3 +53,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [When To Use Color](./When%20To%20Use%20Color.md)
 
 ## [Good Uses](./Good%20Uses.md)
+
+## [Bad Uses](./Bad%20Uses.md)
