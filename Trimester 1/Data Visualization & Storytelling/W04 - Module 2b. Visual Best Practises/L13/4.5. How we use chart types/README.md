@@ -213,3 +213,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Quantifying Emotional Tone](./Quantifying%20Emotional%20Tone.md)
 
 ## [Sentiment Scores](./Sentiment%20Scores.md)
+
+## [Numerical Representation of Emotion](./Numerical%20Representation%20of%20Emotion.md)
