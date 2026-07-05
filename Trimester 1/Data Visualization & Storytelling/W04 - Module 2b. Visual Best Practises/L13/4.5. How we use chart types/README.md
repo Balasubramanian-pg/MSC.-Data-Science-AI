@@ -13,3 +13,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Text Visualization Matters](./Why%20Text%20Visualization%20Matters.md)
 
 ## [The NLP Visualization Pipeline](./The%20NLP%20Visualization%20Pipeline.md)
+
+## [Panchatantra as a Text Dataset](./Panchatantra%20as%20a%20Text%20Dataset.md)
