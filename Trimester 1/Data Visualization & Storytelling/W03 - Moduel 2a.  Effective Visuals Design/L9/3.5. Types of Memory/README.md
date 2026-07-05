@@ -153,3 +153,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Use Strong Contrast](./Use%20Strong%20Contrast.md)
 
 ## [Use Highlighting](./Use%20Highlighting.md)
+
+## [Use Minimal Clutter](./Use%20Minimal%20Clutter.md)
