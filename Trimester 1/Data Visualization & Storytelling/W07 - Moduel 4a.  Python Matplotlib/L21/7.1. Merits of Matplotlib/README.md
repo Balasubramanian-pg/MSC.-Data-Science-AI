@@ -11,3 +11,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Multiple Visualization Libraries Exist](./Why%20Multiple%20Visualization%20Libraries%20Exist.md)
 
 ## [Matplotlib](./Matplotlib.md)
+
+## [Seaborn](./Seaborn.md)
