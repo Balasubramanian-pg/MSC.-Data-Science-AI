@@ -91,3 +91,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [5. No Action Implication](./5.%20No%20Action%20Implication.md)
 
 ## [Final Takeaways](./Final%20Takeaways.md)
+
+## [Visual Narratives and Public Perception](./Visual%20Narratives%20and%20Public%20Perception.md)
