@@ -255,3 +255,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Joint Plot Structure](./Joint%20Plot%20Structure.md)
 
 ## [Why Joint Plots Are Powerful](./Why%20Joint%20Plots%20Are%20Powerful.md)
+
+## [Polarity and Subjectivity](./Polarity%20and%20Subjectivity.md)
