@@ -29,3 +29,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Storytelling in Leadership](./Storytelling%20in%20Leadership.md)
 
 ## [Example](./Example.md)
+
+## [Raw Statement](./Raw%20Statement.md)
