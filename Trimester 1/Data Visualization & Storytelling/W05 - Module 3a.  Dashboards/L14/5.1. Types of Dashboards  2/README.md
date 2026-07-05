@@ -85,3 +85,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Important Concept Introduced by the Transcript](./Important%20Concept%20Introduced%20by%20the%20Transcript.md)
 
 ## [Final Takeaways](./Final%20Takeaways.md)
+
+## [Dashboard Example: CO₂ Emissions Dashboard](./Dashboard%20Example%20-%20CO%E2%82%82%20Emissions%20Dashboard.md)
