@@ -121,3 +121,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Multivariate Goals](./Multivariate%20Goals.md)
 
 ## [Multivariate Analysis Framework](./Multivariate%20Analysis%20Framework.md)
+
+## [Comparison Analysis](./Comparison%20Analysis.md)
