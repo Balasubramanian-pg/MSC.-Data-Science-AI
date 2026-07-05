@@ -195,3 +195,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [3. Add the structural horizontal reference line using Matplotlib's axhline](./3.%20Add%20the%20structural%20horizontal%20reference%20line%20using%20Matplotlib%27s%20axhline.md)
 
 ## [4. Enable the legend to clarify what the red dotted line indicates](./4.%20Enable%20the%20legend%20to%20clarify%20what%20the%20red%20dotted%20line%20indicates.md)
+
+## [3. Comprehensive Summary: Matplotlib vs. Seaborn](./3.%20Comprehensive%20Summary%20-%20Matplotlib%20vs.%20Seaborn.md)
