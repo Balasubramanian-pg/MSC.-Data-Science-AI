@@ -33,3 +33,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Delimiter Issues](./Delimiter%20Issues.md)
 
 ## [Encoding Problems](./Encoding%20Problems.md)
+
+## [Missing Values](./Missing%20Values.md)
