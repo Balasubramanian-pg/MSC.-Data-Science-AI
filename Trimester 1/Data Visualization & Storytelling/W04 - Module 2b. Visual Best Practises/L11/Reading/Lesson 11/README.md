@@ -93,3 +93,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Poor Detection](./Poor%20Detection.md)
 
 ## [Assembly](./Assembly.md)
+
+## [Grouping Relationships](./Grouping%20Relationships.md)
