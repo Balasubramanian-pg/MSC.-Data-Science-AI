@@ -325,3 +325,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Storytelling and Presentation Together](./Storytelling%20and%20Presentation%20Together.md)
 
 ## [Communication Design Goal](./Communication%20Design%20Goal.md)
+
+## [Full Communication Pipeline](./Full%20Communication%20Pipeline.md)
