@@ -2,7 +2,7 @@
 
 |Property|Description|
 |---|---|
-|Duration|Extremely short|
-|Processing|Automatic|
-|Conscious?|Mostly unconscious|
-|Purpose|Initial detection|
+|Duration|Few seconds|
+|Capacity|Small|
+|Processing Type|Conscious|
+|Purpose|Temporary holding and processing|
