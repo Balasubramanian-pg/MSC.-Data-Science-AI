@@ -125,3 +125,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Advanced Insight](./Advanced%20Insight.md)
 
 ## [Why Minimalism Works](./Why%20Minimalism%20Works.md)
+
+## [Chartjunk](./Chartjunk.md)
