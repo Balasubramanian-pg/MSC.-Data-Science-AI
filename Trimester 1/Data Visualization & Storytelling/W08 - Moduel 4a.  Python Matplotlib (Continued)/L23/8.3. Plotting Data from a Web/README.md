@@ -75,3 +75,5 @@ It is fundamentally about:
 ## [Advanced Version](./Advanced%20Version.md)
 
 ## [Important Conceptual Shift](./Important%20Conceptual%20Shift.md)
+
+## [Key Takeaways](./Key%20Takeaways.md)
