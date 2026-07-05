@@ -5,3 +5,5 @@
 ## [4.1.2. Why Tableau Matters for Statistical Communication](./4.1.2.%20Why%20Tableau%20Matters%20for%20Statistical%20Communication.md)
 
 ## [4.1.3. Overview of the Tableau Ecosystem](./4.1.3.%20Overview%20of%20the%20Tableau%20Ecosystem.md)
+
+## [4.1.4. Connecting Tableau to Data Sources](./4.1.4.%20Connecting%20Tableau%20to%20Data%20Sources.md)
