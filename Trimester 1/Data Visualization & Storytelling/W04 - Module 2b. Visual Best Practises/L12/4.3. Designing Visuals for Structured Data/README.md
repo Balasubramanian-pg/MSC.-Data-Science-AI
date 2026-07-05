@@ -155,3 +155,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why They Are Powerful](./Why%20They%20Are%20Powerful.md)
 
 ## [Major Limitation](./Major%20Limitation.md)
+
+## [Parallel Coordinates Pipeline](./Parallel%20Coordinates%20Pipeline.md)
