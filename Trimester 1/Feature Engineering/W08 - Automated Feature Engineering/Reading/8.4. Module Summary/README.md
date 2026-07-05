@@ -25,3 +25,5 @@ week: W08 - Automated Feature Engineering
 ## [8.4.9. Feature Selection as a Statistical Problem](./8.4.9.%20Feature%20Selection%20as%20a%20Statistical%20Problem.md)
 
 ## [8.4.10. Summary: Tool Selection Guide](./8.4.10.%20Summary%20-%20Tool%20Selection%20Guide.md)
+
+## [8.4.11. Common Misinterpretations](./8.4.11.%20Common%20Misinterpretations.md)
