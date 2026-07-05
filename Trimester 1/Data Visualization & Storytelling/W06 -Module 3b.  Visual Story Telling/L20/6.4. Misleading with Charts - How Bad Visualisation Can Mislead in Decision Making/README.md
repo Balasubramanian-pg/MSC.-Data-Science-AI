@@ -151,3 +151,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Key Tradeoff in Visualization](./The%20Key%20Tradeoff%20in%20Visualization.md)
 
 ## [2. Dual-Axis Charts](./2.%20Dual-Axis%20Charts.md)
+
+## [Proper Use of Dual Axes](./Proper%20Use%20of%20Dual%20Axes.md)
