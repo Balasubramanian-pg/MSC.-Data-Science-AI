@@ -110,3 +110,5 @@ Bad visualizations use color excessively.
 ## [Example Palette Strategy](./Example%20Palette%20Strategy.md)
 
 ## [Color and Accessibility](./Color%20and%20Accessibility.md)
+
+## [Dangerous Practice](./Dangerous%20Practice.md)
