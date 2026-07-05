@@ -109,3 +109,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Final Mental Model](./Final%20Mental%20Model.md)
 
 ## [Advanced Text Visualization](./Advanced%20Text%20Visualization.md)
+
+## [Character Relationships, Semantic Structures, and Sentiment Analysis](./Character%20Relationships%2C%20Semantic%20Structures%2C%20and%20Sentiment%20Analysis.md)
