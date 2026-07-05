@@ -111,3 +111,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Example](./Example.md)
 
 ## [Growth Rates](./Growth%20Rates.md)
+
+## [Why This Is Misleading](./Why%20This%20Is%20Misleading.md)
