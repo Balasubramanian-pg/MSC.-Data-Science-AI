@@ -173,3 +173,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Why Clutter Is Dangerous](./Why%20Clutter%20Is%20Dangerous.md)
 
 ## [Good Visualization Reduces Mental Work](./Good%20Visualization%20Reduces%20Mental%20Work.md)
+
+## [Poor Design](./Poor%20Design.md)
