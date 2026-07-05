@@ -221,3 +221,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [6. Rendering the Plot](./6.%20Rendering%20the%20Plot.md)
 
 ## [What `show()` Does](./What%20%60show%28%29%60%20Does.md)
+
+## [Important Hidden Concept](./Important%20Hidden%20Concept.md)
