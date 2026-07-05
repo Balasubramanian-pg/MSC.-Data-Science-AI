@@ -309,3 +309,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [4. Saving the Plot](./4.%20Saving%20the%20Plot.md)
 
 ## [Purpose of `savefig()`](./Purpose%20of%20%60savefig%28%29%60.md)
+
+## [Supported Formats](./Supported%20Formats.md)
