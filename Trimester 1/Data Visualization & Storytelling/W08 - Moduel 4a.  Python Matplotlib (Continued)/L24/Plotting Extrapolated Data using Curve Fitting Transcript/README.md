@@ -29,3 +29,5 @@ The entire lecture revolves around:
 ```text
 Observed Data → Fit Function → Predict Future
 ```
+
+## [Core Concept](./Core%20Concept.md)
