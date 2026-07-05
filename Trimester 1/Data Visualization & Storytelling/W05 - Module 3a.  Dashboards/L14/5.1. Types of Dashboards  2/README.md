@@ -97,3 +97,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Important Clarification About “Small”](./Important%20Clarification%20About%20%E2%80%9CSmall%E2%80%9D.md)
 
 ## [Cognitive Compactness](./Cognitive%20Compactness.md)
+
+## [CO₂ Emissions Dashboard Overview](./CO%E2%82%82%20Emissions%20Dashboard%20Overview.md)
