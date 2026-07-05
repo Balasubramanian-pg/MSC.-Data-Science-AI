@@ -27,3 +27,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Visualization + Storytelling](./Visualization%20%2B%20Storytelling.md)
 
 ## [Why Visuals Amplify Stories](./Why%20Visuals%20Amplify%20Stories.md)
+
+## [Data Storytelling Pipeline](./Data%20Storytelling%20Pipeline.md)
