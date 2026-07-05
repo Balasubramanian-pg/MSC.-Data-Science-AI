@@ -19,3 +19,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [ngram_range=(1, 3) means extract n=1, n=2, and n=3](./ngram_range%3D%281%2C%203%29%20means%20extract%20n%3D1%2C%20n%3D2%2C%20and%20n%3D3.md)
 
 ## [Display features for the first document](./Display%20features%20for%20the%20first%20document.md)
+
+## [Expected Output:](./Expected%20Output%20-.md)
