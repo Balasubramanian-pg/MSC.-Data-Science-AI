@@ -85,3 +85,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Story Mountain Is Effective](./Why%20Story%20Mountain%20Is%20Effective.md)
 
 ## [Business Example](./Business%20Example.md)
+
+## [Visualizations in Story Mountain](./Visualizations%20in%20Story%20Mountain.md)
