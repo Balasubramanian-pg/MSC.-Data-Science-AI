@@ -191,3 +191,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Styling Matters](./Why%20Styling%20Matters.md)
 
 ## [Common Line Styles](./Common%20Line%20Styles.md)
+
+## [3. Legends](./3.%20Legends.md)
