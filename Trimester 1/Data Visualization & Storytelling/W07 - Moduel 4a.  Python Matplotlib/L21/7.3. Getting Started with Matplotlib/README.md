@@ -61,3 +61,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Step 2](./Step%202.md)
 
 ## [Step 3](./Step%203.md)
+
+## [Step 4](./Step%204.md)
