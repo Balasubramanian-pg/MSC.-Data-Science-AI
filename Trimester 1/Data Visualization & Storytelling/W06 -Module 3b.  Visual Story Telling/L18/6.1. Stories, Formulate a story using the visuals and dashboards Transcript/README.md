@@ -243,3 +243,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Information Transfer Collapse](./Information%20Transfer%20Collapse.md)
 
 ## [Why This Is Dangerous](./Why%20This%20Is%20Dangerous.md)
+
+## [Important Organizational Insight](./Important%20Organizational%20Insight.md)
