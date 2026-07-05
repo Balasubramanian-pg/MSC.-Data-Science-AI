@@ -255,3 +255,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Insight](./Important%20Insight.md)
 
 ## [Why This Matters Psychologically](./Why%20This%20Matters%20Psychologically.md)
+
+## [Framing Effect in Dashboards](./Framing%20Effect%20in%20Dashboards.md)
