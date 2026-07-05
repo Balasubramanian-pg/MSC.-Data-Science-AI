@@ -377,3 +377,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Important Software Engineering Insight](./Important%20Software%20Engineering%20Insight.md)
 
 ## [Part 2: Axis Customization](./Part%202%20-%20Axis%20Customization.md)
+
+## [The Instructor Mentions "True Zero"](./The%20Instructor%20Mentions%20True%20Zero.md)
