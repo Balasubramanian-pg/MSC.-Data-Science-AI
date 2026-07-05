@@ -79,3 +79,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Misconception](./Important%20Misconception.md)
 
 ## [Storytelling Failure Modes](./Storytelling%20Failure%20Modes.md)
+
+## [1. Data Dumping](./1.%20Data%20Dumping.md)
