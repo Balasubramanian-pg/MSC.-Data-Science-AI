@@ -223,3 +223,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why SUCCESS Works](./Why%20SUCCESS%20Works.md)
 
 ## [C. Pecha Kucha: The Art of Visual Brevity](./C.%20Pecha%20Kucha%20-%20The%20Art%20of%20Visual%20Brevity.md)
+
+## [Pecha Kucha Format](./Pecha%20Kucha%20Format.md)
