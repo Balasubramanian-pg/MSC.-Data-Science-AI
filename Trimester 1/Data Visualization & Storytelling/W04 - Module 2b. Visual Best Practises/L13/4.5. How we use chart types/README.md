@@ -467,3 +467,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Statistical Principle](./Important%20Statistical%20Principle.md)
 
 ## [Communication Analytics Architecture](./Communication%20Analytics%20Architecture.md)
+
+## [The Deeper Computational Insight](./The%20Deeper%20Computational%20Insight.md)
