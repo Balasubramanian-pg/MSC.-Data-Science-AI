@@ -83,3 +83,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Advanced Visualization Pipeline](./Advanced%20Visualization%20Pipeline.md)
 
 ## [Common Mistakes](./Common%20Mistakes.md)
+
+## [Forgetting Datetime Indexes](./Forgetting%20Datetime%20Indexes.md)
