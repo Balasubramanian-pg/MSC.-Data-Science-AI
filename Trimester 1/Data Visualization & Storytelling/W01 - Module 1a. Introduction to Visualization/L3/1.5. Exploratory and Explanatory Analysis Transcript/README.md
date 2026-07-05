@@ -11,3 +11,5 @@
 ## [1.2 Visualization as a Philosophical Process](./1.2%20Visualization%20as%20a%20Philosophical%20Process.md)
 
 ## [2. Understanding Exploratory Analysis](./2.%20Understanding%20Exploratory%20Analysis.md)
+
+## [2.1 Definition of Exploratory Analysis](./2.1%20Definition%20of%20Exploratory%20Analysis.md)
