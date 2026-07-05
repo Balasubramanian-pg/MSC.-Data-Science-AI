@@ -437,3 +437,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Major Label Font Size](./Major%20Label%20Font%20Size.md)
 
 ## [What Are Major Labels?](./What%20Are%20Major%20Labels.md)
+
+## [Why Increase Font Size?](./Why%20Increase%20Font%20Size.md)
