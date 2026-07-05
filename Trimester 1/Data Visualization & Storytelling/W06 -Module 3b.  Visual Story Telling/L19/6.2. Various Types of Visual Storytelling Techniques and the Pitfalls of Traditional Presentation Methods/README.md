@@ -73,3 +73,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [1. Monomyth (Hero’s Journey)](./1.%20Monomyth%20%28Hero%E2%80%99s%20Journey%29.md)
 
 ## [Business Translation](./Business%20Translation.md)
+
+## [How It Applies to Data Storytelling](./How%20It%20Applies%20to%20Data%20Storytelling.md)
