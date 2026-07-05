@@ -277,3 +277,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Edward Tufte Principle](./Edward%20Tufte%20Principle.md)
 
 ## [Scatter Plot](./Scatter%20Plot.md)
+
+## [Scatter Plot Logic](./Scatter%20Plot%20Logic.md)
