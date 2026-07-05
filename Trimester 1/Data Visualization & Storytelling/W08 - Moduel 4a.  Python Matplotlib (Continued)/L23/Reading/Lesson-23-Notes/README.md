@@ -129,3 +129,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Remote Data Sources Matter](./Why%20Remote%20Data%20Sources%20Matter.md)
 
 ## [Reading CSV from URL](./Reading%20CSV%20from%20URL.md)
+
+## [What `parse_dates` Does](./What%20%60parse_dates%60%20Does.md)
