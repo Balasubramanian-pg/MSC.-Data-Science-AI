@@ -9,3 +9,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Technical Document: Decorating Visuals in Bokeh](./Technical%20Document%20-%20Decorating%20Visuals%20in%20Bokeh.md)
 
 ## [1. Learning Objectives](./1.%20Learning%20Objectives.md)
+
+## [2. Prerequisites & Setup](./2.%20Prerequisites%20%26%20Setup.md)
