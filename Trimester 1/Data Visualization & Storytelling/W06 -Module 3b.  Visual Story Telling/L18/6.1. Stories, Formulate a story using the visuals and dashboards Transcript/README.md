@@ -157,3 +157,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Human Communication Is Emotional](./Human%20Communication%20Is%20Emotional.md)
 
 ## [Naturalness Improves Trust](./Naturalness%20Improves%20Trust.md)
+
+## [Storytelling Is an Emotive Exercise](./Storytelling%20Is%20an%20Emotive%20Exercise.md)
