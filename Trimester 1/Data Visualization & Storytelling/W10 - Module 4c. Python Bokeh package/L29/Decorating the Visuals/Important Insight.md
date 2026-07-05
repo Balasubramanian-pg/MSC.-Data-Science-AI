@@ -1,7 +1,9 @@
 # Important Insight
 
-Width becomes very important for categorical charts.
+This demonstrates:
 
-Why?
+- dynamic text mutation
+    
 
-Long labels consume horizontal space.
+The title object already exists.  
+You are editing its property.
