@@ -39,3 +39,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Structure Matters](./Why%20Structure%20Matters.md)
 
 ## [Narrative Structure](./Narrative%20Structure.md)
+
+## [Brain Activation and Stories](./Brain%20Activation%20and%20Stories.md)
