@@ -89,3 +89,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Data-Centric vs Audience-Centric Design](./Data-Centric%20vs%20Audience-Centric%20Design.md)
 
 ## [Pre-Attentive Attributes and Memory](./Pre-Attentive%20Attributes%20and%20Memory.md)
+
+## [Without Pre-Attentive Design](./Without%20Pre-Attentive%20Design.md)
