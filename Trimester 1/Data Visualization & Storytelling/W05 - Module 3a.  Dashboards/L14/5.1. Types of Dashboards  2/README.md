@@ -241,3 +241,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Analytical Dashboards Sit Between Both](./Analytical%20Dashboards%20Sit%20Between%20Both.md)
 
 ## [Analytical Dashboard Goal](./Analytical%20Dashboard%20Goal.md)
+
+## [2. Level of Interactivity](./2.%20Level%20of%20Interactivity.md)
