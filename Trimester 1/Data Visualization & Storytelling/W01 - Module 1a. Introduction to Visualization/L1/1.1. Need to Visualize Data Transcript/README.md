@@ -9,3 +9,5 @@
 ## [1.2 Why Humans Prefer Visual Information](./1.2%20Why%20Humans%20Prefer%20Visual%20Information.md)
 
 ## [1.3 Role of Visualization in Decision Making](./1.3%20Role%20of%20Visualization%20in%20Decision%20Making.md)
+
+## [2. Understanding Data Types Before Visualization](./2.%20Understanding%20Data%20Types%20Before%20Visualization.md)
