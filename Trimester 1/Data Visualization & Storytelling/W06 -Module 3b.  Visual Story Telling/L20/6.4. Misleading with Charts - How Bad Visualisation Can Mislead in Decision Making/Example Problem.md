@@ -2,18 +2,11 @@
 
 Suppose:
 
-- ice cream sales rise
+- Region A performs well in high-volume products
     
-- shark attacks rise
+- Region B performs better in low-volume products
     
 
-A manipulated dual-axis chart can visually align both lines perfectly.
+Aggregated metrics may misleadingly favor one region overall even though:
 
-This creates the illusion:
-
-> “ice cream causes shark attacks.”
-
-In reality:  
-both correlate with:
-
-- summer temperature
+- subgroup performance differs.
