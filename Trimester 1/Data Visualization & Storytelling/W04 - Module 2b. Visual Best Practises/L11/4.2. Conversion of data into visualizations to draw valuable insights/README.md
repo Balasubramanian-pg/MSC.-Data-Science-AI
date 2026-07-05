@@ -81,3 +81,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Poor For](./Poor%20For.md)
 
 ## [3. Angle and Slope Encoding](./3.%20Angle%20and%20Slope%20Encoding.md)
+
+## [Line Charts](./Line%20Charts.md)
