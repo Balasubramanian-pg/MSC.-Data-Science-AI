@@ -129,3 +129,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Labeling Matters](./Why%20Labeling%20Matters.md)
 
 ## [6. Legends](./6.%20Legends.md)
+
+## [Result](./Result.md)
