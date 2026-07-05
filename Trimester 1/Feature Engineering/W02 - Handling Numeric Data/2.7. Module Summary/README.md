@@ -15,3 +15,5 @@ week: W02 - Handling Numeric Data
 ## [2.7.4. Deep Dive: Feature Scaling and Proximity](./2.7.4.%20Deep%20Dive%20-%20Feature%20Scaling%20and%20Proximity.md)
 
 ## [2.7.5. Deep Dive: Attribute Transformations](./2.7.5.%20Deep%20Dive%20-%20Attribute%20Transformations.md)
+
+## [2.7.6. Deep Dive: Smoothing and Noise Reduction](./2.7.6.%20Deep%20Dive%20-%20Smoothing%20and%20Noise%20Reduction.md)
