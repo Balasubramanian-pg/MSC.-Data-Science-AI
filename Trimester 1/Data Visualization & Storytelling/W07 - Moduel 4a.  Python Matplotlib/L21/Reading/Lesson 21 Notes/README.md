@@ -229,3 +229,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why This Architecture Is Powerful](./Why%20This%20Architecture%20Is%20Powerful.md)
 
 ## [Full Example](./Full%20Example.md)
+
+## [Generate sine values](./Generate%20sine%20values.md)
