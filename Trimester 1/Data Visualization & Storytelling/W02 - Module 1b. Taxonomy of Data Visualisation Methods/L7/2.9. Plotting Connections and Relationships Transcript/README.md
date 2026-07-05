@@ -11,3 +11,5 @@ week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
 ## [2. Domain I: Comparing Categories (Relative and Absolute Comparisons)](./2.%20Domain%20I%20-%20Comparing%20Categories%20%28Relative%20and%20Absolute%20Comparisons%29.md)
 
 ## [3. Domain II: Assessing Hierarchies (Part-to-Whole and Structural Visualizations)](./3.%20Domain%20II%20-%20Assessing%20Hierarchies%20%28Part-to-Whole%20and%20Structural%20Visualizations%29.md)
+
+## [4. Domain III: Mapping Geospatial Data (Spatial Representations and Coordinate Systems)](./4.%20Domain%20III%20-%20Mapping%20Geospatial%20Data%20%28Spatial%20Representations%20and%20Coordinate%20Systems%29.md)
