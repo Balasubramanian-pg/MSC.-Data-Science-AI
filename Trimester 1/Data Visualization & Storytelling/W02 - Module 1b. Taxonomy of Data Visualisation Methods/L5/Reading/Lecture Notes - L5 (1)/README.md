@@ -24,3 +24,5 @@
 ## [9. De-emphasis Techniques](./9.%20De-emphasis%20Techniques.md)
 
 ## [10. Direct Annotation](./10.%20Direct%20Annotation.md)
+
+## [11. Adapting Layout to Data Structure](./11.%20Adapting%20Layout%20to%20Data%20Structure.md)
