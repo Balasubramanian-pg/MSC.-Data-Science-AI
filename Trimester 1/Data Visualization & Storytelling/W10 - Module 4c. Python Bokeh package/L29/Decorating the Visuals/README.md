@@ -517,3 +517,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Better number formatting](./Better%20number%20formatting.md)
 
 ## [Why Formatting Matters So Much](./Why%20Formatting%20Matters%20So%20Much.md)
+
+## [Important UX Principle](./Important%20UX%20Principle.md)
