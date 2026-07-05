@@ -1,25 +1,23 @@
 # Question
 
-**Which of the following binning techniques ensures that each bin contains approximately the same number of data points?**
+**Why is feature scaling critical for distance-based models such as KNN or KMeans?**
 
 ### Options
 
-* Equal-frequency binning
-* Equal-width binning
-* K-means clustering
-* Domain-specific binning
+* It helps convert categorical variables to numerical ones.
+* It ensures no single feature dominates the distance metric.
+* It removes all outliers.
+* It reduces the number of features used.
 
 ### Answer
 
-✅ **Equal-frequency binning**
+✅ **It ensures no single feature dominates the distance metric.**
 
 > [!NOTE]
 > **Reason**
 >
-> In **equal-frequency binning** (also called quantile binning), the dataset is divided so that each bin contains roughly the same number of observations.
+> Distance-based algorithms compute similarity using measures such as Euclidean distance.
 >
-> In contrast:
+> If one feature has a much larger scale than others, it can dominate the distance calculation and bias the model.
 >
-> * **Equal-width binning** keeps interval sizes fixed, not observation counts.
-> * **K-means clustering** forms clusters based on similarity.
-> * **Domain-specific binning** relies on business rules.
+> Feature scaling ensures that all features contribute more fairly to the distance computation.
