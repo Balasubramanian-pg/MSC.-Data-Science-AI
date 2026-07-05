@@ -197,3 +197,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Best Practice](./Best%20Practice.md)
 
 ## [Simpson’s Paradox](./Simpson%E2%80%99s%20Paradox.md)
+
+## [Core Principle of Simpson’s Paradox](./Core%20Principle%20of%20Simpson%E2%80%99s%20Paradox.md)
