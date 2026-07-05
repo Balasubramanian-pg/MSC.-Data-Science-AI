@@ -495,3 +495,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Visual Failure](./Visual%20Failure.md)
 
 ## [Orientation Property](./Orientation%20Property.md)
+
+## [Approximate Meaning](./Approximate%20Meaning.md)
