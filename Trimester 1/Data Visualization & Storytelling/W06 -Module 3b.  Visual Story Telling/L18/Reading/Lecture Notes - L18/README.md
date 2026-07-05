@@ -177,3 +177,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [3. Decorative Noise](./3.%20Decorative%20Noise.md)
 
 ## [4. Multiple Competing Messages](./4.%20Multiple%20Competing%20Messages.md)
+
+## [5. No Narrative Flow](./5.%20No%20Narrative%20Flow.md)
