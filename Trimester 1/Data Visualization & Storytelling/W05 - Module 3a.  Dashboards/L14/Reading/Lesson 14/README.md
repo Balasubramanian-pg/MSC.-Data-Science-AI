@@ -43,3 +43,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Dashboard Taxonomy](./Dashboard%20Taxonomy.md)
 
 ## [Characteristics of Dashboards](./Characteristics%20of%20Dashboards.md)
+
+## [1. Visual Summarization](./1.%20Visual%20Summarization.md)
