@@ -141,3 +141,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Figure](./Figure.md)
 
 ## [Axes](./Axes.md)
+
+## [Internal Structure](./Internal%20Structure.md)
