@@ -141,3 +141,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Case 1](./Case%201.md)
 
 ## [Case 2](./Case%202.md)
+
+## [Traffic Signal Example](./Traffic%20Signal%20Example.md)
