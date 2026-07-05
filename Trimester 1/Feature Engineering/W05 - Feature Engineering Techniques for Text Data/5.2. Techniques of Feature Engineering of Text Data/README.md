@@ -67,3 +67,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Word: hockey     | OHE Vector: [1. 0. 0.]](./Word%20-%20hockey%20OHE%20Vector%20-%20%5B1.%200.%200.%5D.md)
 
 ## [4. Part-of-Speech (POS) Tagging](./4.%20Part-of-Speech%20%28POS%29%20Tagging.md)
+
+## [Note: In a real environment, you must download the NLTK data bundles first:](./Note%20-%20In%20a%20real%20environment%2C%20you%20must%20download%20the%20NLTK%20data%20bundles%20first%20-.md)
