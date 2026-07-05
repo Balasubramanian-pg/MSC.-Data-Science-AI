@@ -79,3 +79,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Step 2: Apply POS Tagging](./Step%202%20-%20Apply%20POS%20Tagging.md)
 
 ## [The Viterbi algorithm runs under the hood here](./The%20Viterbi%20algorithm%20runs%20under%20the%20hood%20here.md)
+
+## [Step 3: Feature Engineering - Convert tags to counts](./Step%203%20-%20Feature%20Engineering%20-%20Convert%20tags%20to%20counts.md)
