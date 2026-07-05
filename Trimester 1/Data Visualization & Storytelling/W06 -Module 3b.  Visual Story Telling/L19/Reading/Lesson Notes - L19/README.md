@@ -59,3 +59,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Common Formats](./Common%20Formats.md)
 
 ## [Why Exploratory Narratives Matter](./Why%20Exploratory%20Narratives%20Matter.md)
+
+## [The Core Advantage: Discovery](./The%20Core%20Advantage%20-%20Discovery.md)
