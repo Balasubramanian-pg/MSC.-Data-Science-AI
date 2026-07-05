@@ -221,3 +221,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [SUCCESS Cognitive Pipeline](./SUCCESS%20Cognitive%20Pipeline.md)
 
 ## [Why SUCCESS Works](./Why%20SUCCESS%20Works.md)
+
+## [C. Pecha Kucha: The Art of Visual Brevity](./C.%20Pecha%20Kucha%20-%20The%20Art%20of%20Visual%20Brevity.md)
