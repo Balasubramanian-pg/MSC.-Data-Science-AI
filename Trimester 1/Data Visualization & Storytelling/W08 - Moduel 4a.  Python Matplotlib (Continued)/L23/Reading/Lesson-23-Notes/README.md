@@ -93,3 +93,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Common Mistakes](./Common%20Mistakes.md)
 
 ## [Hardcoding Local Paths](./Hardcoding%20Local%20Paths.md)
+
+## [Ignoring Missing Data](./Ignoring%20Missing%20Data.md)
