@@ -1,6 +1,6 @@
 # Options
 
-* Trigrams ignore word order.
-* Character-level tokenisation is commonly used in POS tagging.
-* Bigrams capture more contextual information than unigrams.
-* Tokenisation splits text into feature vectors based on frequency.
+* [1, 1, 1, 1, 1]
+* [0, 1, 1, 0, 1]
+* [0, 2, 0, 1, 0]
+* [1, 1, 0, 0, 1]
