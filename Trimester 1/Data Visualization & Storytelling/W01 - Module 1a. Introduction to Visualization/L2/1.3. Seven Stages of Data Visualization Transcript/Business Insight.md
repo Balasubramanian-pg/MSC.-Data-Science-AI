@@ -1,13 +1,5 @@
 # Business Insight
 
-Refinement transforms charts from:
+Real dashboards are rarely “finished.”
 
-```text
-Data display
-```
-
-into:
-
-```text
-Decision-support systems
-```
+They evolve continuously because stakeholder questions evolve continuously.
