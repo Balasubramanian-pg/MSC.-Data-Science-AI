@@ -1,14 +1,15 @@
 # Connection to Modern AI Systems
 
-Large Language Models also process text by converting language into:
+These visualization techniques connect directly to:
 
-- tokens
+- search systems
     
-- embeddings
+- recommendation engines
     
-- vector spaces
+- retrieval augmented generation
     
-- semantic relationships
+- LLMs
     
-
-Visualization helps humans inspect these transformations.
+- semantic embeddings
+    
+- vector databases
