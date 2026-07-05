@@ -52,3 +52,5 @@
 ## [Why the First Chart Failed](./Why%20the%20First%20Chart%20Failed.md)
 
 ## [3.6 Stage 6: Refining Visualizations](./3.6%20Stage%206%20-%20Refining%20Visualizations.md)
+
+## [Refinements Introduced](./Refinements%20Introduced.md)
