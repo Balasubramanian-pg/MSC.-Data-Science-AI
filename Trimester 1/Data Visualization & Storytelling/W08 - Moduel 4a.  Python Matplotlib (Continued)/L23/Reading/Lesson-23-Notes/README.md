@@ -131,3 +131,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Reading CSV from URL](./Reading%20CSV%20from%20URL.md)
 
 ## [What `parse_dates` Does](./What%20%60parse_dates%60%20Does.md)
+
+## [Why Datetime Parsing Matters](./Why%20Datetime%20Parsing%20Matters.md)
