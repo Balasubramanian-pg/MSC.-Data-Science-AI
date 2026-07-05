@@ -137,3 +137,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Core Philosophy](./Core%20Philosophy.md)
 
 ## [A. Restraint](./A.%20Restraint.md)
+
+## [Definition](./Definition.md)
