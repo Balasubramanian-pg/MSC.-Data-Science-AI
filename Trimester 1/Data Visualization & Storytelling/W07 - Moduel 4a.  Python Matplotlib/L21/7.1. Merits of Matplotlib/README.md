@@ -57,3 +57,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Important Engineering Skill](./Important%20Engineering%20Skill.md)
 
 ## [Official Documentation Areas Mentioned](./Official%20Documentation%20Areas%20Mentioned.md)
+
+## [Typical Learning Path](./Typical%20Learning%20Path.md)
