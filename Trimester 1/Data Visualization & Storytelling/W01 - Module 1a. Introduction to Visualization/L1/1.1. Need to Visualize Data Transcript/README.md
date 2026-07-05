@@ -41,3 +41,5 @@
 ## [6.1 Visualization and Narrative Building](./6.1%20Visualization%20and%20Narrative%20Building.md)
 
 ## [6.2 Edward Tufte’s Principle](./6.2%20Edward%20Tufte%E2%80%99s%20Principle.md)
+
+## [7. Visualization Decision Framework](./7.%20Visualization%20Decision%20Framework.md)
