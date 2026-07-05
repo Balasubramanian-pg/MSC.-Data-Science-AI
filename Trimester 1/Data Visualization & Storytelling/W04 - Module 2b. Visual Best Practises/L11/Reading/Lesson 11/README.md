@@ -101,3 +101,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Assembly Process](./Assembly%20Process.md)
 
 ## [Estimation](./Estimation.md)
+
+## [Magnitude Comparison](./Magnitude%20Comparison.md)
