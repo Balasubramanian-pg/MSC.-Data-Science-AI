@@ -143,3 +143,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Plotting Maximum Temperature](./Plotting%20Maximum%20Temperature.md)
 
 ## [Why Time-Series Visualization Matters](./Why%20Time-Series%20Visualization%20Matters.md)
+
+## [Complete Example](./Complete%20Example.md)
