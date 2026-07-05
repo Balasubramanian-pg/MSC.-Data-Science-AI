@@ -309,3 +309,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Best Practices Against Cherry Picking](./Best%20Practices%20Against%20Cherry%20Picking.md)
 
 ## [1. Use Longer Timelines When Relevant](./1.%20Use%20Longer%20Timelines%20When%20Relevant.md)
+
+## [2. Provide Historical Benchmarks](./2.%20Provide%20Historical%20Benchmarks.md)
