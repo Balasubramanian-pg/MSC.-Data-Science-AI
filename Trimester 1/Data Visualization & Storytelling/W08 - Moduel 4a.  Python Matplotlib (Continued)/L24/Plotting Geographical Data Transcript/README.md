@@ -43,3 +43,5 @@ This is foundational to:
 ## [Step 1: Install GeoPandas](./Step%201%20-%20Install%20GeoPandas.md)
 
 ## [Step 2: Import Libraries](./Step%202%20-%20Import%20Libraries.md)
+
+## [Step 3: Load Geographic Data](./Step%203%20-%20Load%20Geographic%20Data.md)
