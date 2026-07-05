@@ -61,3 +61,5 @@ It is fundamentally about:
 ## [Important Hidden Mechanism](./Important%20Hidden%20Mechanism.md)
 
 ## [Real Engineering Significance](./Real%20Engineering%20Significance.md)
+
+## [Common Beginner Mistakes](./Common%20Beginner%20Mistakes.md)
