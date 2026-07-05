@@ -21,3 +21,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Good Visualization Design Must Optimize](./Good%20Visualization%20Design%20Must%20Optimize.md)
 
 ## [Core Principle](./Core%20Principle.md)
+
+## [Edward Tufte’s Contribution](./Edward%20Tufte%E2%80%99s%20Contribution.md)
