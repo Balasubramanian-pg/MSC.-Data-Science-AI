@@ -24,3 +24,5 @@
 ## [9. Storytelling Through Visual Design](./9.%20Storytelling%20Through%20Visual%20Design.md)
 
 ## [10. Visual Hierarchy](./10.%20Visual%20Hierarchy.md)
+
+## [11. Gestalt Principles](./11.%20Gestalt%20Principles.md)
