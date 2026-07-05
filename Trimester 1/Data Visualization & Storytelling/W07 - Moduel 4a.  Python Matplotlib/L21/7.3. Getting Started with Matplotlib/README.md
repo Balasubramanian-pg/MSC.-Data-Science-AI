@@ -235,3 +235,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Plot the line](./Plot%20the%20line.md)
 
 ## [Add title and labels](./Add%20title%20and%20labels.md)
+
+## [Add grid and legend](./Add%20grid%20and%20legend.md)
