@@ -101,3 +101,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Using Too Many Colors](./Using%20Too%20Many%20Colors.md)
 
 ## [Excessive Saturation](./Excessive%20Saturation.md)
+
+## [Ignoring Accessibility](./Ignoring%20Accessibility.md)
