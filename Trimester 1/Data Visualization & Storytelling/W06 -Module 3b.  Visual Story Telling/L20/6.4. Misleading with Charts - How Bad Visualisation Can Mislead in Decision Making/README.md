@@ -339,3 +339,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Common Color Misuse Patterns](./Common%20Color%20Misuse%20Patterns.md)
 
 ## [Final Lesson](./Final%20Lesson.md)
+
+## [Misuse of Color Saturation in Visualization](./Misuse%20of%20Color%20Saturation%20in%20Visualization.md)
