@@ -87,3 +87,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Numerical vs Textual Analytics](./Numerical%20vs%20Textual%20Analytics.md)
 
 ## [Important Hidden Insight](./Important%20Hidden%20Insight.md)
+
+## [Why Modern NLP Works Surprisingly Well](./Why%20Modern%20NLP%20Works%20Surprisingly%20Well.md)
