@@ -119,3 +119,5 @@ week: W05 - Module 3a.  Dashboards
 ## [1. Progressive Disclosure](./1.%20Progressive%20Disclosure.md)
 
 ## [2. Information Density](./2.%20Information%20Density.md)
+
+## [3. Cognitive Load Reduction](./3.%20Cognitive%20Load%20Reduction.md)
