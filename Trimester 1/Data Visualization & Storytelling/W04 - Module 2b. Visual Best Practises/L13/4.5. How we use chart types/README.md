@@ -405,3 +405,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Communication Graph Model](./Communication%20Graph%20Model.md)
 
 ## [Final Conceptual Shift](./Final%20Conceptual%20Shift.md)
+
+## [Temporal Communication Analysis and Organizational Behavior Visualization](./Temporal%20Communication%20Analysis%20and%20Organizational%20Behavior%20Visualization.md)
