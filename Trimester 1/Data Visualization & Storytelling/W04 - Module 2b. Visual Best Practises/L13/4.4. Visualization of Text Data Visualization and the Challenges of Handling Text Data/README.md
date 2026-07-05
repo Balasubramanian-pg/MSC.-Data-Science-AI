@@ -179,3 +179,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Stopword Removal Helps](./Why%20Stopword%20Removal%20Helps.md)
 
 ## [Stopword Reduction Pipeline](./Stopword%20Reduction%20Pipeline.md)
+
+## [Important Computational Insight](./Important%20Computational%20Insight.md)
