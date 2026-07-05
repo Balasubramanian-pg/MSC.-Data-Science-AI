@@ -63,3 +63,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Story Structures Organize Information](./Story%20Structures%20Organize%20Information.md)
 
 ## [Narrative Framework](./Narrative%20Framework.md)
+
+## [Jerome Bruner’s Narrative Principle](./Jerome%20Bruner%E2%80%99s%20Narrative%20Principle.md)
