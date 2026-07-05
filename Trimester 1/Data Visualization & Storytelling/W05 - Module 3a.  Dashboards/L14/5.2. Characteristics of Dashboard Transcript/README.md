@@ -91,3 +91,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Pre-Attentive Attributes](./Pre-Attentive%20Attributes.md)
 
 ## [Visual Hierarchy](./Visual%20Hierarchy.md)
+
+## [Common Visualization Mistakes](./Common%20Visualization%20Mistakes.md)
