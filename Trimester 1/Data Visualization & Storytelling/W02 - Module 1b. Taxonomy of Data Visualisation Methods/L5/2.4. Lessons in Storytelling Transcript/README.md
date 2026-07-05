@@ -16,3 +16,5 @@
 ## [5. Audience-Centric Thinking](./5.%20Audience-Centric%20Thinking.md)
 
 ## [6. Expected Audience Response](./6.%20Expected%20Audience%20Response.md)
+
+## [7. Delivery Medium Matters](./7.%20Delivery%20Medium%20Matters.md)
