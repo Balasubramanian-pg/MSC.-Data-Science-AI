@@ -279,3 +279,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Visual Hierarchy Is Decision Architecture](./Visual%20Hierarchy%20Is%20Decision%20Architecture.md)
 
 ## [Important Organizational Lesson](./Important%20Organizational%20Lesson.md)
+
+## [Information Visibility ≠ Information Impact](./Information%20Visibility%20%E2%89%A0%20Information%20Impact.md)
