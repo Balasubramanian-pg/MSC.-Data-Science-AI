@@ -797,3 +797,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Mistake 1: Using Color Without Meaning](./Mistake%201%20-%20Using%20Color%20Without%20Meaning.md)
 
 ## [Mistake 2: Missing Color Bar](./Mistake%202%20-%20Missing%20Color%20Bar.md)
+
+## [Mistake 3: Wrong Scaling](./Mistake%203%20-%20Wrong%20Scaling.md)
