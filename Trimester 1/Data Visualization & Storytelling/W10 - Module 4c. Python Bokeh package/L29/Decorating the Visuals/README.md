@@ -195,3 +195,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Visual Hierarchy](./Visual%20Hierarchy.md)
 
 ## [Understanding `"1.2em"`](./Understanding%20%601.2em%60.md)
+
+## [Meaning](./Meaning.md)
