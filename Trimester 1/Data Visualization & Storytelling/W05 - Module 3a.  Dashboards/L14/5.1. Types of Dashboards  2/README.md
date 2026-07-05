@@ -251,3 +251,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Operational Dashboard Design Philosophy](./Operational%20Dashboard%20Design%20Philosophy.md)
 
 ## [3. Nature of Decisions Supported](./3.%20Nature%20of%20Decisions%20Supported.md)
+
+## [Strategic Decisions](./Strategic%20Decisions.md)
