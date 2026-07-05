@@ -113,3 +113,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Manufacturing Dashboard](./Manufacturing%20Dashboard.md)
 
 ## [Environmental Dashboard](./Environmental%20Dashboard.md)
+
+## [Advanced Dashboard Concepts](./Advanced%20Dashboard%20Concepts.md)
