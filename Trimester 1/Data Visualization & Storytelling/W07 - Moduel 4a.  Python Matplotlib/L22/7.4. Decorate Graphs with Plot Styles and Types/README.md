@@ -19,3 +19,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why NumPy Is Used Everywhere](./Why%20NumPy%20Is%20Used%20Everywhere.md)
 
 ## [Understanding Colors in Matplotlib](./Understanding%20Colors%20in%20Matplotlib.md)
+
+## [The Fundamental Role of Color](./The%20Fundamental%20Role%20of%20Color.md)
