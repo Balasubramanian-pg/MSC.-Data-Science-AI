@@ -101,3 +101,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Advanced NLP Visualization Pipeline](./Advanced%20NLP%20Visualization%20Pipeline.md)
 
 ## [Important Hidden Lesson](./Important%20Hidden%20Lesson.md)
+
+## [Connection to Modern AI Systems](./Connection%20to%20Modern%20AI%20Systems.md)
