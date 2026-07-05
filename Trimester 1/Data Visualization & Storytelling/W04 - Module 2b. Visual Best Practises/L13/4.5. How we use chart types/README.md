@@ -219,3 +219,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Numerical Emotion Modeling Matters](./Why%20Numerical%20Emotion%20Modeling%20Matters.md)
 
 ## [Emotion Compression Pipeline](./Emotion%20Compression%20Pipeline.md)
+
+## [Panchatantra Sentiment Example](./Panchatantra%20Sentiment%20Example.md)
