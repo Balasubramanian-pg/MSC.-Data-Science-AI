@@ -275,3 +275,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Objective Statement](./Objective%20Statement.md)
 
 ## [Subjective Statement](./Subjective%20Statement.md)
+
+## [Important Semantic Insight](./Important%20Semantic%20Insight.md)
