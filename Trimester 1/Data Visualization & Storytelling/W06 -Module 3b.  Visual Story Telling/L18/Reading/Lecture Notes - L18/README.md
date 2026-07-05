@@ -339,3 +339,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [3. Visual Hierarchy Is Critical](./3.%20Visual%20Hierarchy%20Is%20Critical.md)
 
 ## [Core Rule](./Core%20Rule.md)
+
+## [4. Brevity Prevents Cognitive Fatigue](./4.%20Brevity%20Prevents%20Cognitive%20Fatigue.md)
