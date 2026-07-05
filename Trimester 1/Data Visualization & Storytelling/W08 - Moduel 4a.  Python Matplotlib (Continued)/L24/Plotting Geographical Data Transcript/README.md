@@ -37,3 +37,5 @@ This is foundational to:
 ## [What Is GeoPandas?](./What%20Is%20GeoPandas.md)
 
 ## [Standard DataFrame](./Standard%20DataFrame.md)
+
+## [GeoDataFrame](./GeoDataFrame.md)
