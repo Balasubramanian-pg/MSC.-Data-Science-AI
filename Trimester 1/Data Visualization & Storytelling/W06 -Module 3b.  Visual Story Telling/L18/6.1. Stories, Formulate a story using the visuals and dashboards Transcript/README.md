@@ -105,3 +105,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Persistence of Visual Narratives](./Persistence%20of%20Visual%20Narratives.md)
 
 ## [Important Principle](./Important%20Principle.md)
+
+## [Visual Language as Cognitive Infrastructure](./Visual%20Language%20as%20Cognitive%20Infrastructure.md)
