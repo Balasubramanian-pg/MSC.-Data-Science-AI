@@ -1,21 +1,26 @@
 # Why This Matters
 
-A notebook can simultaneously contain:
+The bottleneck in programming is shifting from:
 
-- theory
-    
-- code
-    
-- charts
-    
-- explanations
-    
-- conclusions
+- memorization
     
 
-This bridges:
+toward:
 
-- programming  
-    and
+- understanding
     
-- communication.
+- reasoning
+    
+- design decisions
+    
+
+AI tools reduce:
+
+- syntax friction
+    
+- lookup overhead
+    
+
+But they do not replace:
+
+- conceptual understanding
