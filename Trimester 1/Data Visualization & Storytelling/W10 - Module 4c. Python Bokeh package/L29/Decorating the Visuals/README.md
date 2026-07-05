@@ -435,3 +435,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Why Minor Ticks Matter](./Why%20Minor%20Ticks%20Matter.md)
 
 ## [Major Label Font Size](./Major%20Label%20Font%20Size.md)
+
+## [What Are Major Labels?](./What%20Are%20Major%20Labels.md)
