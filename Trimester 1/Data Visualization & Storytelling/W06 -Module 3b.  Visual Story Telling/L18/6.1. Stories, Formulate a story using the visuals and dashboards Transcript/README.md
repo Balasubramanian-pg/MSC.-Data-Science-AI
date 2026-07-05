@@ -183,3 +183,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [SUCCESS Cognitive Model](./SUCCESS%20Cognitive%20Model.md)
 
 ## [Important Observation in the Transcript](./Important%20Observation%20in%20the%20Transcript.md)
+
+## [Strong Storytelling Thinking](./Strong%20Storytelling%20Thinking.md)
