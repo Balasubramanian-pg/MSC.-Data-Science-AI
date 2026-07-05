@@ -45,3 +45,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why `alpha` Matters](./Why%20%60alpha%60%20Matters.md)
 
 ## [Random Data Generation](./Random%20Data%20Generation.md)
+
+## [Creating Random DataFrames](./Creating%20Random%20DataFrames.md)
