@@ -209,3 +209,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Load dataset](./Load%20dataset.md)
 
 ## [Create subplots](./Create%20subplots.md)
+
+## [Maximum temperature](./Maximum%20temperature.md)
