@@ -15,3 +15,5 @@ It is fundamentally about:
 3. Time-series indexing
     
 4. Visualization
+
+## [Big Picture Workflow](./Big%20Picture%20Workflow.md)
