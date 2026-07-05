@@ -445,3 +445,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Who Sends the Most Communication?](./Who%20Sends%20the%20Most%20Communication.md)
 
 ## [Why This Is Important](./Why%20This%20Is%20Important.md)
+
+## [Communication Centrality](./Communication%20Centrality.md)
