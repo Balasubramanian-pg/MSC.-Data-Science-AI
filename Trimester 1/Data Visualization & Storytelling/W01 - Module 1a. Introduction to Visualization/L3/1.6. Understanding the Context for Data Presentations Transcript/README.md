@@ -54,3 +54,5 @@
 ## [Bias Questions](./Bias%20Questions.md)
 
 ## [Mistake 1](./Mistake%201.md)
+
+## [Mistake 2](./Mistake%202.md)
