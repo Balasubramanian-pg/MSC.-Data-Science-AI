@@ -112,3 +112,5 @@ Bad visualizations use color excessively.
 ## [Color and Accessibility](./Color%20and%20Accessibility.md)
 
 ## [Dangerous Practice](./Dangerous%20Practice.md)
+
+## [Better Approach](./Better%20Approach.md)
