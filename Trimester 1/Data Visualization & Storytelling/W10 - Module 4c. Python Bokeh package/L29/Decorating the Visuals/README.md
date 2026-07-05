@@ -537,3 +537,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Mistake 2: Huge Raw Numbers](./Mistake%202%20-%20Huge%20Raw%20Numbers.md)
 
 ## [Mistake 3: Too Many Categories](./Mistake%203%20-%20Too%20Many%20Categories.md)
+
+## [Important Real-World Insight](./Important%20Real-World%20Insight.md)
