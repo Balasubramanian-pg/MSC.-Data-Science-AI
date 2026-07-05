@@ -17,3 +17,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [1. THE MATPLOTLIB APPROACH: Manual Data Wrangling Required](./1.%20THE%20MATPLOTLIB%20APPROACH%20-%20Manual%20Data%20Wrangling%20Required.md)
 
 ## [Matplotlib does not know what a DataFrame is natively; you must isolate](./Matplotlib%20does%20not%20know%20what%20a%20DataFrame%20is%20natively%3B%20you%20must%20isolate.md)
+
+## [arrays and manually calculate the statistical aggregates (means) first.](./arrays%20and%20manually%20calculate%20the%20statistical%20aggregates%20%28means%29%20first.md)
