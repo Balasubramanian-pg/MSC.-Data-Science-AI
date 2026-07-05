@@ -117,3 +117,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Practical Rules](./Practical%20Rules.md)
 
 ## [Use](./Use.md)
+
+## [Avoid](./Avoid.md)
