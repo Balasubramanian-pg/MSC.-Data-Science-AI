@@ -145,3 +145,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Heat Maps](./Heat%20Maps.md)
 
 ## [Correlation Visualization](./Correlation%20Visualization.md)
+
+## [Heat Map Workflow](./Heat%20Map%20Workflow.md)
