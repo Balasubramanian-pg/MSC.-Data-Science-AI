@@ -83,3 +83,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Perceptual Decoding Pipeline](./Perceptual%20Decoding%20Pipeline.md)
 
 ## [Detection](./Detection.md)
+
+## [Identifying Visual Objects](./Identifying%20Visual%20Objects.md)
