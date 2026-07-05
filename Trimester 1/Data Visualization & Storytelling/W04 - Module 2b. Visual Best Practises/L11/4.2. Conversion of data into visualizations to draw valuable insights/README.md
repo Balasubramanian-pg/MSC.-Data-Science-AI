@@ -43,3 +43,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [What Users Can Understand](./What%20Users%20Can%20Understand.md)
 
 ## [What Users Cannot Easily Understand](./What%20Users%20Cannot%20Easily%20Understand.md)
+
+## [Why This Happens](./Why%20This%20Happens.md)
