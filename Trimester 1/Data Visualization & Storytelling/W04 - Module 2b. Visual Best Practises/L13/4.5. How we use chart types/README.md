@@ -351,3 +351,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [When Did Communication Happen?](./When%20Did%20Communication%20Happen.md)
 
 ## [Temporal Communication Analysis](./Temporal%20Communication%20Analysis.md)
+
+## [2. Participant Analysis](./2.%20Participant%20Analysis.md)
