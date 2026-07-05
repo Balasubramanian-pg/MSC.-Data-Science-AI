@@ -161,3 +161,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Full Example Combining Properties](./Full%20Example%20Combining%20Properties.md)
 
 ## [Generate random data](./Generate%20random%20data.md)
+
+## [Create figure](./Create%20figure.md)
