@@ -43,3 +43,5 @@ Observed Data → Fit Function → Predict Future
 ## [Critical Insight](./Critical%20Insight.md)
 
 ## [Polynomial Curve Fitting](./Polynomial%20Curve%20Fitting.md)
+
+## [Polynomial Intuition](./Polynomial%20Intuition.md)
