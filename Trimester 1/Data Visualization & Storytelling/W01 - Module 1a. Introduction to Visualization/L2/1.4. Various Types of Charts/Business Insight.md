@@ -1,9 +1,9 @@
 # Business Insight
 
-Executives can quickly assess:
+Bubble charts are excellent for:
 
-- brand perception
+- prioritization
     
-- customer satisfaction
+- resource allocation
     
-- crisis severity
+- anomaly detection
