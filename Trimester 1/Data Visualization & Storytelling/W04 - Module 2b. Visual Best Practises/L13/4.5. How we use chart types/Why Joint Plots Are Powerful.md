@@ -1,13 +1,12 @@
 # Why Joint Plots Are Powerful
 
-Traditional scatter plots show:
+The lecture explains:
 
-- point relationships
+Joint plots reveal both:
+
+- relationships between variables
+    
+- distributions of each variable independently
     
 
-Joint plots additionally show:
-
-- distribution geometry
-    
-
-This provides much richer analytical context.
+simultaneously.
