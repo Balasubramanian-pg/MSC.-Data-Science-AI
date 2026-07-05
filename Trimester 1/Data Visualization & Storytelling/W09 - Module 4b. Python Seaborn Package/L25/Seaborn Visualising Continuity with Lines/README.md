@@ -53,3 +53,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Customizing layout via Matplotlib layer over Seaborn](./Customizing%20layout%20via%20Matplotlib%20layer%20over%20Seaborn.md)
 
 ## [2. OVERLAYING DIMENSIONS: The Hue + Style Approach (Axes-Level)](./2.%20OVERLAYING%20DIMENSIONS%20-%20The%20Hue%20%2B%20Style%20Approach%20%28Axes-Level%29.md)
+
+## [Intent: Bring in 'region' and 'event' parameters without splitting the plot.](./Intent%20-%20Bring%20in%20%27region%27%20and%20%27event%27%20parameters%20without%20splitting%20the%20plot.md)
