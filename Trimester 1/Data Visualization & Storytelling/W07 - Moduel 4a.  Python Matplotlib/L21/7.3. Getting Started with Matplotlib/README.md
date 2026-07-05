@@ -301,3 +301,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Bar Charts](./Bar%20Charts.md)
 
 ## [Simple Example](./Simple%20Example.md)
+
+## [Why Bar Charts Are Powerful](./Why%20Bar%20Charts%20Are%20Powerful.md)
