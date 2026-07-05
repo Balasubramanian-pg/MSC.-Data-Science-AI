@@ -1,16 +1,7 @@
 # Why This Matters
 
-This becomes powerful later for:
+Human readability.
 
-- hover interactions
-    
-- streaming dashboards
-    
-- filtering
-    
-- animations
-    
-- callbacks
-    
+Visualization is fundamentally:
 
-Because plots are mutable.
+> cognitive compression
