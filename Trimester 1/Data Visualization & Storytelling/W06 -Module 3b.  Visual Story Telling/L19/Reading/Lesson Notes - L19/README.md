@@ -153,3 +153,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Example: Waterfall Analysis](./Example%20-%20Waterfall%20Analysis.md)
 
 ## [Why Waterfall Charts Work](./Why%20Waterfall%20Charts%20Work.md)
+
+## [The Deeper Analytical Principle](./The%20Deeper%20Analytical%20Principle.md)
