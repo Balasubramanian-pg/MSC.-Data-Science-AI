@@ -1,29 +1,15 @@
 # Why Color Matters
 
-Color improves:
+Color is a powerful pre-attentive attribute.
 
-- separation
-    
-- categorization
-    
-- emphasis
-    
+Humans notice color differences instantly.
 
-Matplotlib supports:
+Color helps:
 
-- named colors
+- distinguish categories
     
-- RGB values
+- emphasize importance
     
-- HEX colors
+- group information
     
-- colormaps
-    
-
-Examples:
-
-```python
-color='blue'
-color='red'
-color='green'
-```
+- improve memorability
