@@ -1,9 +1,9 @@
 # Narrative Effect
 
-The audience psychologically interprets:
+The audience now interprets:
 
-> Women voters preferred Clinton, and African American women preferred her even more strongly.
+> African American voters strongly preferred Clinton, and women within that group showed even stronger support.
 
-Gender becomes:
+Now ethnicity becomes:
 
-- the primary explanatory lens.
+- the primary explanatory frame.
