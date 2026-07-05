@@ -265,3 +265,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Real Danger](./The%20Real%20Danger.md)
 
 ## [Communication Failure Pipeline](./Communication%20Failure%20Pipeline.md)
+
+## [Why This Case Is So Important](./Why%20This%20Case%20Is%20So%20Important.md)
