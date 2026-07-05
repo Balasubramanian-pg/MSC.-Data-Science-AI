@@ -229,3 +229,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Author-Driven vs Reader-Driven Connection](./Author-Driven%20vs%20Reader-Driven%20Connection.md)
 
 ## [Author-Driven Dashboard](./Author-Driven%20Dashboard.md)
+
+## [Reader-Driven Dashboard](./Reader-Driven%20Dashboard.md)
