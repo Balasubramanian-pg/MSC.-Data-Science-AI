@@ -159,3 +159,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Naturalness Improves Trust](./Naturalness%20Improves%20Trust.md)
 
 ## [Storytelling Is an Emotive Exercise](./Storytelling%20Is%20an%20Emotive%20Exercise.md)
+
+## [Why Emotion Matters](./Why%20Emotion%20Matters.md)
