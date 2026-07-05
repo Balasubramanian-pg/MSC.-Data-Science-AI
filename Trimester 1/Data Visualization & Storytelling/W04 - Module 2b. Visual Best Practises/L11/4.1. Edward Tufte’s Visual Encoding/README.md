@@ -37,3 +37,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Ordered Categories](./Ordered%20Categories.md)
 
 ## [Critical Property](./Critical%20Property.md)
+
+## [What This Means](./What%20This%20Means.md)
