@@ -1,13 +1,5 @@
 # Important Insight
 
-Humans do not make decisions purely rationally.
+Stories simulate experience.
 
-Most decisions are:
-
-- emotionally initiated,
-    
-- then rationally justified afterward.
-    
-
-Stories influence:  
-the emotional layer of cognition.
+That is why they feel immersive.
