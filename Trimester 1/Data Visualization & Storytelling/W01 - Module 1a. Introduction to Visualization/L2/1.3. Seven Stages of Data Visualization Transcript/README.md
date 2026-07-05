@@ -36,3 +36,5 @@
 ## [Core Purpose of Filtering](./Core%20Purpose%20of%20Filtering.md)
 
 ## [Specific Numbers](./Specific%20Numbers.md)
+
+## [Use of Color During Filtering](./Use%20of%20Color%20During%20Filtering.md)
