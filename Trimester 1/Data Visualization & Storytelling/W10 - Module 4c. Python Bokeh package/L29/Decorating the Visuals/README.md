@@ -697,3 +697,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Line](./Line.md)
 
 ## [Scatter](./Scatter.md)
+
+## [Important Architectural Pattern](./Important%20Architectural%20Pattern.md)
