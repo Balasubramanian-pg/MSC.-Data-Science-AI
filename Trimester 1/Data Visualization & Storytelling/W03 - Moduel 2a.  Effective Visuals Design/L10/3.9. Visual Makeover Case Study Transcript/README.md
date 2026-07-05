@@ -54,3 +54,5 @@ The transcript introduces this challenge directly.
 ## [Example Problem](./Example%20Problem.md)
 
 ## [The Core Tradeoff](./The%20Core%20Tradeoff.md)
+
+## [Real-World Visualization Decision Tree](./Real-World%20Visualization%20Decision%20Tree.md)
