@@ -85,3 +85,5 @@ This is foundational to:
 ## [Why Geometry Matters](./Why%20Geometry%20Matters.md)
 
 ## [Step 8: Plot World Map](./Step%208%20-%20Plot%20World%20Map.md)
+
+## [Step 9: Overlay Cities](./Step%209%20-%20Overlay%20Cities.md)
