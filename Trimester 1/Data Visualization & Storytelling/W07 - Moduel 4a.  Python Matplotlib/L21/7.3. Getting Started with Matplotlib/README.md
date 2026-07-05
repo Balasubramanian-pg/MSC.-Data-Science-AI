@@ -121,3 +121,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Labels Matter](./Why%20Labels%20Matter.md)
 
 ## [5. Customizing the Plot](./5.%20Customizing%20the%20Plot.md)
+
+## [Adding a Title](./Adding%20a%20Title.md)
