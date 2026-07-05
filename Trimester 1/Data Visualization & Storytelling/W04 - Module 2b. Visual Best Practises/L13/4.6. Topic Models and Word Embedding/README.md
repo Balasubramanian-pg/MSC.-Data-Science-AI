@@ -207,3 +207,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Hidden Conceptual Shift](./Hidden%20Conceptual%20Shift.md)
 
 ## [Language Becomes Spatial Geometry](./Language%20Becomes%20Spatial%20Geometry.md)
+
+## [Transformer Semantic Pipeline](./Transformer%20Semantic%20Pipeline.md)
