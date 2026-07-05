@@ -83,3 +83,5 @@ Each visualization method carries distinct input data requirements, analytical p
 ## [Production-Grade Systems Architecture and Pipelines](./Production-Grade%20Systems%20Architecture%20and%20Pipelines.md)
 
 ## [Performance Engineering and Debugging Strategies](./Performance%20Engineering%20and%20Debugging%20Strategies.md)
+
+## [Summary of Actionable Operational Checklists](./Summary%20of%20Actionable%20Operational%20Checklists.md)
