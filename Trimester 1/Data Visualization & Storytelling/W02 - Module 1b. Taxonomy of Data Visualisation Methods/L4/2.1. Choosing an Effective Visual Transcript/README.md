@@ -12,3 +12,5 @@
 ## [3. Visualization Selection Framework](./3.%20Visualization%20Selection%20Framework.md)
 
 ## [4. Four Major Categories of Visualizations](./4.%20Four%20Major%20Categories%20of%20Visualizations.md)
+
+## [5. Text-Based Visualizations](./5.%20Text-Based%20Visualizations.md)
