@@ -1,5 +1,6 @@
 # Example
 
 ```python
-ax.plot(x, y, color='green', linestyle='--')
+ax.set_title("Food Supply by Kind and Color")
+ax.legend()
 ```
