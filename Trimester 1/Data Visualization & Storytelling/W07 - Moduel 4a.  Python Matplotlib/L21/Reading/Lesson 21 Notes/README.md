@@ -295,3 +295,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Plot sine wave](./Plot%20sine%20wave.md)
 
 ## [Plot cosine wave](./Plot%20cosine%20wave.md)
+
+## [Add title and labels](./Add%20title%20and%20labels.md)
