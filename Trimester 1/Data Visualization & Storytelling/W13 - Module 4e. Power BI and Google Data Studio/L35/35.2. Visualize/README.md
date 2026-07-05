@@ -19,3 +19,5 @@
 ## [35.2.9. Geographical Mapping and Spatial Aggregations](./35.2.9.%20Geographical%20Mapping%20and%20Spatial%20Aggregations.md)
 
 ## [35.2.10. Factors Affecting Dashboard Clarity and Statistical Precision](./35.2.10.%20Factors%20Affecting%20Dashboard%20Clarity%20and%20Statistical%20Precision.md)
+
+## [35.2.11. Waterfall Charts for Cumulative Profit Contribution](./35.2.11.%20Waterfall%20Charts%20for%20Cumulative%20Profit%20Contribution.md)
