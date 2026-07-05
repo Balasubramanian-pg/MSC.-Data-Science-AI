@@ -717,3 +717,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Palette Example](./Palette%20Example.md)
 
 ## [Why Palettes Matter in Real Systems](./Why%20Palettes%20Matter%20in%20Real%20Systems.md)
+
+## [Example Usage](./Example%20Usage.md)
