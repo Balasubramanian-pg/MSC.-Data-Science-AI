@@ -99,3 +99,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [A. Importing `pyplot`](./A.%20Importing%20%60pyplot%60.md)
 
 ## [Why Aliases Matter](./Why%20Aliases%20Matter.md)
+
+## [B. Importing NumPy](./B.%20Importing%20NumPy.md)
