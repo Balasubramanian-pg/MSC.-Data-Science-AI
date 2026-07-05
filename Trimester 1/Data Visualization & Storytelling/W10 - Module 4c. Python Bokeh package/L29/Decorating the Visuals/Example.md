@@ -1,6 +1,9 @@
 # Example
 
 ```python
-plot.xaxis.axis_label = "Months"
-plot.yaxis.axis_label = "Freight"
+from bokeh.models import NumeralTickFormatter
+
+plot.yaxis.formatter = NumeralTickFormatter(
+    format="0.0a"
+)
 ```
