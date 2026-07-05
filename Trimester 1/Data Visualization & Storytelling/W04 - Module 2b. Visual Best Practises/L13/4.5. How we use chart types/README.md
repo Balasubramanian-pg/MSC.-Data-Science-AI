@@ -369,3 +369,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [4. Communication Density](./4.%20Communication%20Density.md)
 
 ## [Measuring Interaction Intensity](./Measuring%20Interaction%20Intensity.md)
+
+## [Density Visualization](./Density%20Visualization.md)
