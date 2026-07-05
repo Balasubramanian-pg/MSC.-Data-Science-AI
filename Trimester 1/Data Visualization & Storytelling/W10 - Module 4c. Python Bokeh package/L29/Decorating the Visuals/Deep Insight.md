@@ -1,21 +1,27 @@
 # Deep Insight
 
-Most plotting tutorials focus on:
+At this point, the instructor is no longer teaching "charts."
 
-- drawing charts
+They are teaching:
+
+- perception engineering
+    
+- visual hierarchy
+    
+- information architecture
     
 
-But professional visualization work focuses heavily on:
+because axis systems determine how humans decode quantitative information.
 
-- scales
+This section is one of the most practically important parts of visualization design:
+
+> handling clutter and readability
+
+The instructor is solving two classic problems:
+
+1. overlapping categorical labels
     
-- axes
-    
-- framing
-    
-- perception
+2. unreadable large numeric scales
     
 
-Because:
-
-> interpretation depends more on framing than on the raw chart type itself.
+This is real-world visualization work.
