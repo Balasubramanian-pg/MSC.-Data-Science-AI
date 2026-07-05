@@ -41,3 +41,5 @@ Every single function, method, and parameter is explained in detail using Python
 ## [🟢 Module 5: The ColumnDataSource & Interactivity](./%F0%9F%9F%A2%20Module%205%20-%20The%20ColumnDataSource%20%26%20Interactivity.md)
 
 ## [MODULE 5: ColumnDataSource & HoverTool](./MODULE%205%20-%20ColumnDataSource%20%26%20HoverTool.md)
+
+## [🟢 Module 6: Advanced Layouts - Stacked Bars](./%F0%9F%9F%A2%20Module%206%20-%20Advanced%20Layouts%20-%20Stacked%20Bars.md)
