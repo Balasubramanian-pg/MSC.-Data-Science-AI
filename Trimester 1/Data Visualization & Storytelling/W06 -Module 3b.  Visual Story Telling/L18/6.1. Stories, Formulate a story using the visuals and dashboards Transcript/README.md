@@ -187,3 +187,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Strong Storytelling Thinking](./Strong%20Storytelling%20Thinking.md)
 
 ## [Pecha Kucha and the Art of Visual Brevity](./Pecha%20Kucha%20and%20the%20Art%20of%20Visual%20Brevity.md)
+
+## [Transition from Visualization to Storytelling](./Transition%20from%20Visualization%20to%20Storytelling.md)
