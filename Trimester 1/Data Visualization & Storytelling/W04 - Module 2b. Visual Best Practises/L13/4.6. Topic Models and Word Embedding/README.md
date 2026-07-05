@@ -195,3 +195,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Dimensionality Reduction Is Necessary](./Why%20Dimensionality%20Reduction%20Is%20Necessary.md)
 
 ## [Embedding Compression Pipeline](./Embedding%20Compression%20Pipeline.md)
+
+## [Relationship Between Embeddings, Topics, and t-SNE](./Relationship%20Between%20Embeddings%2C%20Topics%2C%20and%20t-SNE.md)
