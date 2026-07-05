@@ -9,3 +9,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Tufte’s Principles Matter](./Why%20Tufte%E2%80%99s%20Principles%20Matter.md)
 
 ## [The Visualization Pipeline](./The%20Visualization%20Pipeline.md)
+
+## [Understanding Data Types](./Understanding%20Data%20Types.md)
