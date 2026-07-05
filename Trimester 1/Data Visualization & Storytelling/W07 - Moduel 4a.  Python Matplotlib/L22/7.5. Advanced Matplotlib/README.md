@@ -79,3 +79,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Explode Feature](./Explode%20Feature.md)
 
 ## [Radar Charts](./Radar%20Charts.md)
+
+## [Conceptual Structure](./Conceptual%20Structure.md)
