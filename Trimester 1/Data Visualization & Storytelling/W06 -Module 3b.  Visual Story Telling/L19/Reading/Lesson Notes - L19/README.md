@@ -137,3 +137,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Demographic Context](./Demographic%20Context.md)
 
 ## [Why Contrast Stories Are Powerful](./Why%20Contrast%20Stories%20Are%20Powerful.md)
+
+## [Common Contrast Mistakes](./Common%20Contrast%20Mistakes.md)
