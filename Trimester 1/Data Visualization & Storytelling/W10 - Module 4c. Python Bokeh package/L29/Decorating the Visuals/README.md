@@ -543,3 +543,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Initial Figure](./Initial%20Figure.md)
 
 ## [Important Architectural Point](./Important%20Architectural%20Point.md)
+
+## [Two Ways to Define Titles](./Two%20Ways%20to%20Define%20Titles.md)
