@@ -319,3 +319,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Information Compression Principle](./Information%20Compression%20Principle.md)
 
 ## [Example Comparison](./Example%20Comparison.md)
+
+## [Weak Communication](./Weak%20Communication.md)
