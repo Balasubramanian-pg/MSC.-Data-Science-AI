@@ -51,3 +51,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Science of Storytelling](./The%20Science%20of%20Storytelling.md)
 
 ## [Brain Activation](./Brain%20Activation.md)
+
+## [Important Concept: Neural Simulation](./Important%20Concept%20-%20Neural%20Simulation.md)
