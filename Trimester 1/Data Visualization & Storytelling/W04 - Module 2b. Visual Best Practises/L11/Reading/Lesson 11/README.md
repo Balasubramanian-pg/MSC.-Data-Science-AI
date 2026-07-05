@@ -119,3 +119,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Color Encoding Failure](./Color%20Encoding%20Failure.md)
 
 ## [Important Principle](./Important%20Principle.md)
+
+## [Length Encoding](./Length%20Encoding.md)
