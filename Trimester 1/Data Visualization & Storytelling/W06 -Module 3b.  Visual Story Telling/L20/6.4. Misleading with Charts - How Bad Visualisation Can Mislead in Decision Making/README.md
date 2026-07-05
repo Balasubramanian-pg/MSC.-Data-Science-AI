@@ -289,3 +289,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Strategic Lesson](./The%20Strategic%20Lesson.md)
 
 ## [Cherry Picking and Selective Framing](./Cherry%20Picking%20and%20Selective%20Framing.md)
+
+## [The Core Mechanism](./The%20Core%20Mechanism.md)
