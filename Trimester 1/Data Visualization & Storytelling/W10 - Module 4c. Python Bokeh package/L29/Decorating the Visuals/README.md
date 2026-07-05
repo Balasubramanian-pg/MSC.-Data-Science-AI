@@ -459,3 +459,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Why Formatting Matters](./Why%20Formatting%20Matters.md)
 
 ## [Output](./Output.md)
+
+## [Airline Example](./Airline%20Example.md)
