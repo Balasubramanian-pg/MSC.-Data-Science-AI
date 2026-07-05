@@ -105,3 +105,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Exact Magnitude Comparison](./Exact%20Magnitude%20Comparison.md)
 
 ## [4. Length Encoding](./4.%20Length%20Encoding.md)
+
+## [Bar Charts](./Bar%20Charts.md)
