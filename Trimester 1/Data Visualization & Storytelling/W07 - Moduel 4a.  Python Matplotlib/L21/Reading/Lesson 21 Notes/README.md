@@ -93,3 +93,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Real Engineering Insight](./Real%20Engineering%20Insight.md)
 
 ## [3. Basic Setup](./3.%20Basic%20Setup.md)
+
+## [Understanding Each Component](./Understanding%20Each%20Component.md)
