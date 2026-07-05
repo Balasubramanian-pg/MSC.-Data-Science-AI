@@ -49,3 +49,5 @@ It is fundamentally about:
 ## [Time-Series Mental Model](./Time-Series%20Mental%20Model.md)
 
 ## [Step 6: Plot Maximum Temperature](./Step%206%20-%20Plot%20Maximum%20Temperature.md)
+
+## [What Is Happening Here?](./What%20Is%20Happening%20Here.md)
