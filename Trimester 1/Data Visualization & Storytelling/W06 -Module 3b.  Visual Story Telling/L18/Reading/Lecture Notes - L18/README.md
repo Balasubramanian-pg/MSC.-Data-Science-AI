@@ -179,3 +179,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [4. Multiple Competing Messages](./4.%20Multiple%20Competing%20Messages.md)
 
 ## [5. No Narrative Flow](./5.%20No%20Narrative%20Flow.md)
+
+## [Frameworks for Effective Presentations](./Frameworks%20for%20Effective%20Presentations.md)
