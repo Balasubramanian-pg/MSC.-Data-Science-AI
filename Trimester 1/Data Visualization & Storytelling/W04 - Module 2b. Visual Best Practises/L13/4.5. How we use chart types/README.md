@@ -235,3 +235,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Customer Feedback Analytics Pipeline](./Customer%20Feedback%20Analytics%20Pipeline.md)
 
 ## [Amazon Review Systems](./Amazon%20Review%20Systems.md)
+
+## [Important Hidden Insight](./Important%20Hidden%20Insight.md)
