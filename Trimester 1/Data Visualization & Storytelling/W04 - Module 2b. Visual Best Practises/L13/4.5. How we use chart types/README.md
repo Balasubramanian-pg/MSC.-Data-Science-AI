@@ -293,3 +293,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Business Implication](./Important%20Business%20Implication.md)
 
 ## [NLP Visualization as Behavioral Analytics](./NLP%20Visualization%20as%20Behavioral%20Analytics.md)
+
+## [Modern AI Connection](./Modern%20AI%20Connection.md)
