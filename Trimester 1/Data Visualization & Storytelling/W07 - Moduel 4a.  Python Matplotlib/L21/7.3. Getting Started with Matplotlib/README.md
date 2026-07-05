@@ -287,3 +287,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Approximate Pareto Principle](./Approximate%20Pareto%20Principle.md)
 
 ## [Important Skill Hierarchy](./Important%20Skill%20Hierarchy.md)
+
+## [Weak Approach](./Weak%20Approach.md)
