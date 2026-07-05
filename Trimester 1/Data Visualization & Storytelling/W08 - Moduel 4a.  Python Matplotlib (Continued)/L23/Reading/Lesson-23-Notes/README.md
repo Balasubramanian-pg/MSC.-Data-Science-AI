@@ -65,3 +65,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Advanced Visualization Workflow](./Advanced%20Visualization%20Workflow.md)
 
 ## [Read remote data](./Read%20remote%20data.md)
+
+## [Clean data](./Clean%20data.md)
