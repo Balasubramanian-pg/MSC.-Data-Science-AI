@@ -19,3 +19,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Real Skill: Getting Into the Audience’s Head](./The%20Real%20Skill%20-%20Getting%20Into%20the%20Audience%E2%80%99s%20Head.md)
 
 ## [Storytelling in Data Visualization](./Storytelling%20in%20Data%20Visualization.md)
+
+## [A Simple Storytelling Framework for Business](./A%20Simple%20Storytelling%20Framework%20for%20Business.md)
