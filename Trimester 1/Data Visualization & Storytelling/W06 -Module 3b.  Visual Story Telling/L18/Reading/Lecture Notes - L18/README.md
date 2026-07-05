@@ -207,3 +207,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [2. Unexpected](./2.%20Unexpected.md)
 
 ## [Why This Works](./Why%20This%20Works.md)
+
+## [3. Concrete](./3.%20Concrete.md)
