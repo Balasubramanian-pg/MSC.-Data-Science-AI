@@ -87,3 +87,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [1. Creating Numerical Data with `linspace`](./1.%20Creating%20Numerical%20Data%20with%20%60linspace%60.md)
 
 ## [Why Dense Sampling Matters](./Why%20Dense%20Sampling%20Matters.md)
+
+## [Example Comparison](./Example%20Comparison.md)
