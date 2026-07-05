@@ -51,3 +51,5 @@ This section explains how to create multiple related plots from a Pandas DataFra
 ## [3. Not Setting Datetime Index](./3.%20Not%20Setting%20Datetime%20Index.md)
 
 ## [Advanced Extension](./Advanced%20Extension.md)
+
+## [Key Takeaway](./Key%20Takeaway.md)
