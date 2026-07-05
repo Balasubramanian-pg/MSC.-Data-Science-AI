@@ -39,3 +39,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Insight](./Important%20Insight.md)
 
 ## [2. Understanding Data Types](./2.%20Understanding%20Data%20Types.md)
+
+## [The Foundation of Correct Visualization](./The%20Foundation%20of%20Correct%20Visualization.md)
