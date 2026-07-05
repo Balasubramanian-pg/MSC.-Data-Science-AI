@@ -39,3 +39,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Customization Matters](./Why%20Customization%20Matters.md)
 
 ## [Important Tradeoff](./Important%20Tradeoff.md)
+
+## [C. Integration with NumPy and pandas](./C.%20Integration%20with%20NumPy%20and%20pandas.md)
