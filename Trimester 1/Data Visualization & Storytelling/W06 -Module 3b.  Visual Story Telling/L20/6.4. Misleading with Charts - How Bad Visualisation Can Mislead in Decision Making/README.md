@@ -301,3 +301,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Cherry-Picked Narrative](./Cherry-Picked%20Narrative.md)
 
 ## [Historical Context Narrative](./Historical%20Context%20Narrative.md)
+
+## [Why Context Changes Meaning](./Why%20Context%20Changes%20Meaning.md)
