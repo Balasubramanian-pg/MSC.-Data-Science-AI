@@ -421,3 +421,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Axis Customization](./Axis%20Customization.md)
 
 ## [X-Axis Line Color](./X-Axis%20Line%20Color.md)
+
+## [Minor Tick Styling](./Minor%20Tick%20Styling.md)
