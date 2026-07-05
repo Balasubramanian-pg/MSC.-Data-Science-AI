@@ -135,3 +135,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Why Size = 12?](./Why%20Size%20%3D%2012.md)
 
 ## [Creating the DataFrame](./Creating%20the%20DataFrame.md)
+
+## [Why Use a DataFrame?](./Why%20Use%20a%20DataFrame.md)
