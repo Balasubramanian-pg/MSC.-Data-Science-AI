@@ -151,3 +151,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Add legend](./Add%20legend.md)
 
 ## [Why Customization Matters](./Why%20Customization%20Matters.md)
+
+## [The Hidden Philosophy of Matplotlib](./The%20Hidden%20Philosophy%20of%20Matplotlib.md)
