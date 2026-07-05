@@ -25,3 +25,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Appropriate Visualizations](./Appropriate%20Visualizations.md)
 
 ## [Good Choices](./Good%20Choices.md)
+
+## [Poor Choices](./Poor%20Choices.md)
