@@ -203,3 +203,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Stemming vs Lemmatization](./Stemming%20vs%20Lemmatization.md)
 
 ## [Difference](./Difference.md)
+
+## [Hidden Insight](./Hidden%20Insight.md)
