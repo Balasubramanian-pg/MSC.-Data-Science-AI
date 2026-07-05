@@ -15,3 +15,5 @@
 ## [4.1.7. Step-by-Step Visual Analysis Example](./4.1.7.%20Step-by-Step%20Visual%20Analysis%20Example.md)
 
 ## [4.1.8. Best Practices for Tableau Users](./4.1.8.%20Best%20Practices%20for%20Tableau%20Users.md)
+
+## [4.1.9. Common Pitfalls in Visual Analysis](./4.1.9.%20Common%20Pitfalls%20in%20Visual%20Analysis.md)
