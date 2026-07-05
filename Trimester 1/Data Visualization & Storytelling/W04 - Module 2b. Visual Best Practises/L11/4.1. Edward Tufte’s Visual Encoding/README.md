@@ -27,3 +27,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Good Choices](./Good%20Choices.md)
 
 ## [Poor Choices](./Poor%20Choices.md)
+
+## [Nominal Data Decision Tree](./Nominal%20Data%20Decision%20Tree.md)
