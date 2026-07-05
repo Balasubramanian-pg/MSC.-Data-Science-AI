@@ -2,26 +2,17 @@
 
 |Characteristic|Meaning|
 |---|---|
-|Linear|Fixed progression|
-|Static|Limited interaction|
-|Controlled|Author guides perception|
-|Prescriptive|Intended conclusion is emphasized|
+|Exploratory|Multiple investigation paths|
+|Interactive|Users manipulate data|
+|Flexible|Personalized interpretation|
+|Open-ended|No fixed conclusion|
 
 Examples:
 
-- magazine infographics
+- Tableau dashboards
     
-- presentation decks
+- Power BI reports
     
-- static reports
+- self-service analytics portals
     
-- explanatory videos
-    
-
-These artifacts are designed to:
-
-- stand on their own
-    
-- communicate a focused message
-    
-- minimize interpretational ambiguity
+- interactive BI systems
