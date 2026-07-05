@@ -311,3 +311,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Visualization Structure](./Visualization%20Structure.md)
 
 ## [2. Arrays in Python](./2.%20Arrays%20in%20Python.md)
+
+## [What Is Happening Here?](./What%20Is%20Happening%20Here.md)
