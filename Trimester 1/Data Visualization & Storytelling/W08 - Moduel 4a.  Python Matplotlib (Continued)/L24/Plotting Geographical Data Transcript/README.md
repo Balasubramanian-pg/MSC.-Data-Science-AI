@@ -105,3 +105,5 @@ This is foundational to:
 ## [Real-World Applications](./Real-World%20Applications.md)
 
 ## [1. Logistics](./1.%20Logistics.md)
+
+## [2. Retail](./2.%20Retail.md)
