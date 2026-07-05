@@ -169,3 +169,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Visualization Architecture](./Visualization%20Architecture.md)
 
 ## [Why Indexing Improves Plotting](./Why%20Indexing%20Improves%20Plotting.md)
+
+## [Common Problems in Time-Series Visualization](./Common%20Problems%20in%20Time-Series%20Visualization.md)
