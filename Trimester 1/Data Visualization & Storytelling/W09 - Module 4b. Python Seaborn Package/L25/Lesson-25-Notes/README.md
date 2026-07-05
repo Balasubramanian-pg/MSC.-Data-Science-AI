@@ -25,3 +25,5 @@ I have organized the code into a logical, executable structure using a mock data
 ## [Matplotlib requires you to pass the exact data arrays/Series directly.](./Matplotlib%20requires%20you%20to%20pass%20the%20exact%20data%20arraysSeries%20directly.md)
 
 ## [--- Approach B: Seaborn (High-level, Declarative, DataFrame-aware) ---](./---%20Approach%20B%20-%20Seaborn%20%28High-level%2C%20Declarative%2C%20DataFrame-aware%29%20---.md)
+
+## [Seaborn maps variables directly to DataFrame column names using the `data` argument.](./Seaborn%20maps%20variables%20directly%20to%20DataFrame%20column%20names%20using%20the%20%60data%60%20argument.md)
