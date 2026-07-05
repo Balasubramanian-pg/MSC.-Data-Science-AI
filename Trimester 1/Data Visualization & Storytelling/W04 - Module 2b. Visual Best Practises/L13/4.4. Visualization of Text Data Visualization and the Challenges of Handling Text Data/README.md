@@ -35,3 +35,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Example of Ambiguity](./Example%20of%20Ambiguity.md)
 
 ## [NLP Challenge Pipeline](./NLP%20Challenge%20Pipeline.md)
+
+## [Why Text Matters Despite Complexity](./Why%20Text%20Matters%20Despite%20Complexity.md)
