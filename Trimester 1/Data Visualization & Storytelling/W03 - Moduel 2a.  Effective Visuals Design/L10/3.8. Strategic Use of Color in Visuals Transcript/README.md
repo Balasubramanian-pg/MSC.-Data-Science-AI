@@ -74,3 +74,5 @@ Bad visualizations use color excessively.
 ## [Important Constraint](./Important%20Constraint.md)
 
 ## [3. Using Color for Hierarchy](./3.%20Using%20Color%20for%20Hierarchy.md)
+
+## [Hierarchy Design](./Hierarchy%20Design.md)
