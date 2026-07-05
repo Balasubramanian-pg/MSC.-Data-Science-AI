@@ -9,3 +9,5 @@ week: W02 - Handling Numeric Data
 ## [2.7.1. The Strategic Imperative of Numeric Preprocessing](./2.7.1.%20The%20Strategic%20Imperative%20of%20Numeric%20Preprocessing.md)
 
 ## [2.7.2. The Core Toolkit for Numeric Transformation](./2.7.2.%20The%20Core%20Toolkit%20for%20Numeric%20Transformation.md)
+
+## [2.7.3. Deep Dive: Discretization and Binning](./2.7.3.%20Deep%20Dive%20-%20Discretization%20and%20Binning.md)
