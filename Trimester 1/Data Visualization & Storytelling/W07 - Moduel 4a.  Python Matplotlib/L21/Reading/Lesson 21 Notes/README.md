@@ -55,3 +55,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Create x values](./Create%20x%20values.md)
 
 ## [Compute y values](./Compute%20y%20values.md)
+
+## [Create plot](./Create%20plot.md)
