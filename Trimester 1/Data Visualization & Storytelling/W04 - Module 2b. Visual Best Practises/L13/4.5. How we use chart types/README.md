@@ -119,3 +119,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Frequency Alone Is Not Meaning](./Frequency%20Alone%20Is%20Not%20Meaning.md)
 
 ## [Why This Matters](./Why%20This%20Matters.md)
+
+## [Example](./Example.md)
