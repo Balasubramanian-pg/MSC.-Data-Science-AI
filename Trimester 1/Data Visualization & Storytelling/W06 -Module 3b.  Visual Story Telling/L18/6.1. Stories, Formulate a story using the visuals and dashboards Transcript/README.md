@@ -163,3 +163,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Emotion Matters](./Why%20Emotion%20Matters.md)
 
 ## [Heath Brothers SUCCESS Model](./Heath%20Brothers%20SUCCESS%20Model.md)
+
+## [SUCCESS Framework](./SUCCESS%20Framework.md)
