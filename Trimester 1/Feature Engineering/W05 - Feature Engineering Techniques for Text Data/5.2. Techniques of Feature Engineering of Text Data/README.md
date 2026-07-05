@@ -23,3 +23,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Expected Output:](./Expected%20Output%20-.md)
 
 ## [Unigram Feature Matrix Shape: (3, 8)](./Unigram%20Feature%20Matrix%20Shape%20-%20%283%2C%208%29.md)
+
+## [N-Gram Feature Matrix Shape: (3, 23)](./N-Gram%20Feature%20Matrix%20Shape%20-%20%283%2C%2023%29.md)
