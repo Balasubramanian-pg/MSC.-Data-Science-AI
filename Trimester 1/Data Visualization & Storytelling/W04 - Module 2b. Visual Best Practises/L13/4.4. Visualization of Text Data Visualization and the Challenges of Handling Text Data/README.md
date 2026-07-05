@@ -91,3 +91,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Modern NLP Works Surprisingly Well](./Why%20Modern%20NLP%20Works%20Surprisingly%20Well.md)
 
 ## [Modern NLP Architecture](./Modern%20NLP%20Architecture.md)
+
+## [Relationship to Visualization](./Relationship%20to%20Visualization.md)
