@@ -201,3 +201,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Pecha Kucha Format](./Pecha%20Kucha%20Format.md)
 
 ## [Why This Format Exists](./Why%20This%20Format%20Exists.md)
+
+## [Constraint as Design Optimization](./Constraint%20as%20Design%20Optimization.md)
