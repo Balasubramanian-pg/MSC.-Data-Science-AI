@@ -1,19 +1,6 @@
 # Why?
 
-Because stories create:
+Emotion signals:  
+importance.
 
-- structure,
-    
-- sequence,
-    
-- causality,
-    
-- emotional relevance,
-    
-- and meaning.
-    
-
-Raw data is difficult for the brain to organize naturally.
-
-Stories provide:  
-cognitive scaffolding.
+The brain prioritizes emotionally relevant information.
