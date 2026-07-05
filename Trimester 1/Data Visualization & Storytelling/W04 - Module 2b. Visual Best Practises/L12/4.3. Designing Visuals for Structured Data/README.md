@@ -133,3 +133,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Example](./Example.md)
 
 ## [Scatter Plot Strength](./Scatter%20Plot%20Strength.md)
+
+## [Scatter Plot Pipeline](./Scatter%20Plot%20Pipeline.md)
