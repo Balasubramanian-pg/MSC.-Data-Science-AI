@@ -75,3 +75,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Basic Pie Chart](./Basic%20Pie%20Chart.md)
 
 ## [Why Pie Charts Are Often Bad](./Why%20Pie%20Charts%20Are%20Often%20Bad.md)
+
+## [Explode Feature](./Explode%20Feature.md)
