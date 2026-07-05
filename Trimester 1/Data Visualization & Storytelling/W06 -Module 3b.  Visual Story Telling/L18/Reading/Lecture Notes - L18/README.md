@@ -141,3 +141,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Definition](./Definition.md)
 
 ## [Why Restraint Matters](./Why%20Restraint%20Matters.md)
+
+## [Common Slide Problems](./Common%20Slide%20Problems.md)
