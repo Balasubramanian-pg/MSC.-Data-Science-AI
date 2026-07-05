@@ -247,3 +247,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Method 2: Configure After Creation](./Method%202%20-%20Configure%20After%20Creation.md)
 
 ## [Core Architectural Pattern](./Core%20Architectural%20Pattern.md)
+
+## [Visual Interpretation](./Visual%20Interpretation.md)
