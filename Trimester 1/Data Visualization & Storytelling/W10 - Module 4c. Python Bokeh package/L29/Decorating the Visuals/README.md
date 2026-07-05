@@ -499,3 +499,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Approximate Meaning](./Approximate%20Meaning.md)
 
 ## [Why 0.8 Is Good](./Why%200.8%20Is%20Good.md)
+
+## [The Second Problem: Numeric Scale Readability](./The%20Second%20Problem%20-%20Numeric%20Scale%20Readability.md)
