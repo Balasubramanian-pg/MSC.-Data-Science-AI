@@ -95,3 +95,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Strong Messaging Answers](./Strong%20Messaging%20Answers.md)
 
 ## [The Key Difference](./The%20Key%20Difference.md)
+
+## [Interactive Storytelling in Dashboards](./Interactive%20Storytelling%20in%20Dashboards.md)
