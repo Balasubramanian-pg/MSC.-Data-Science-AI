@@ -31,3 +31,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Versatility Matters](./Why%20Versatility%20Matters.md)
 
 ## [B. High Customizability](./B.%20High%20Customizability.md)
+
+## [Customizable Components](./Customizable%20Components.md)
