@@ -49,3 +49,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Creating Random DataFrames](./Creating%20Random%20DataFrames.md)
 
 ## [Understanding `randn()`](./Understanding%20%60randn%28%29%60.md)
+
+## [Why Random Seeds Matter](./Why%20Random%20Seeds%20Matter.md)
