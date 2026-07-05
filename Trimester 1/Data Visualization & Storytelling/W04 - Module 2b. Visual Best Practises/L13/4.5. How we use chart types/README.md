@@ -289,3 +289,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Sentiment Often Approximates Normality](./Why%20Sentiment%20Often%20Approximates%20Normality.md)
 
 ## [Distribution Interpretation Pipeline](./Distribution%20Interpretation%20Pipeline.md)
+
+## [Important Business Implication](./Important%20Business%20Implication.md)
