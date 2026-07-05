@@ -73,3 +73,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Create vertical bars](./Create%20vertical%20bars.md)
 
 ## [What `x_range=fruits` Does](./What%20%60x_range%3Dfruits%60%20Does.md)
+
+## [Understanding `vbar()`](./Understanding%20%60vbar%28%29%60.md)
