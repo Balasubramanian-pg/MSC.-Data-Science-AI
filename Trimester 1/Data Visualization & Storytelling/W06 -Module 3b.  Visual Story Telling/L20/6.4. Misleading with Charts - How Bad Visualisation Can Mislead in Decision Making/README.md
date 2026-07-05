@@ -353,3 +353,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Legends Matter](./Why%20Legends%20Matter.md)
 
 ## [Visualization Literacy](./Visualization%20Literacy.md)
+
+## [Summary of Misleading Visualization Techniques](./Summary%20of%20Misleading%20Visualization%20Techniques.md)
