@@ -153,3 +153,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [2. Dual-Axis Charts](./2.%20Dual-Axis%20Charts.md)
 
 ## [Proper Use of Dual Axes](./Proper%20Use%20of%20Dual%20Axes.md)
+
+## [Important Risk](./Important%20Risk.md)
