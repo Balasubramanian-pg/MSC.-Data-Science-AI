@@ -1,7 +1,5 @@
 # Best For
 
-- grouping
+- approximate comparison
     
-- categorization
-    
-- highlighting
+- visual emphasis
