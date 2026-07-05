@@ -71,3 +71,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Frequency Analysis](./Frequency%20Analysis.md)
 
 ## [The Foundation of Text Visualization](./The%20Foundation%20of%20Text%20Visualization.md)
+
+## [Frequency Analysis Workflow](./Frequency%20Analysis%20Workflow.md)
