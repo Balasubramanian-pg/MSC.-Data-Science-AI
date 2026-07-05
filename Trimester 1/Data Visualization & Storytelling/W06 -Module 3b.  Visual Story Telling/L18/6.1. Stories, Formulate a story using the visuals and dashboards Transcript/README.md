@@ -65,3 +65,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Narrative Framework](./Narrative%20Framework.md)
 
 ## [Jerome Bruner’s Narrative Principle](./Jerome%20Bruner%E2%80%99s%20Narrative%20Principle.md)
+
+## [Storytelling in Data Visualization](./Storytelling%20in%20Data%20Visualization.md)
