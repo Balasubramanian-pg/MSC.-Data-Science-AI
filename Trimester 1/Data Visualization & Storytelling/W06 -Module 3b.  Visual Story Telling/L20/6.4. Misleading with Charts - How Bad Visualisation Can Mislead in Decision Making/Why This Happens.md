@@ -1,20 +1,21 @@
 # Why This Happens
 
-The lecture suggests the designer:
+Suppose:
 
-- fixed the chart dimensions uniformly
+|Metric|Scale|
+|---|---|
+|Cancer screenings|Millions|
+|Abortions|Thousands|
+
+If both share the same Y-axis:
+
+- the smaller variable becomes visually compressed
     
-- compressed or manipulated scaling
+
+This destroys:
+
+- trend visibility
     
-
-This created:
-
-- false perceptual equivalence
+- variance interpretation
     
-
-The viewer instinctively interprets:
-
-> “These quantities are somewhat similar.”
-
-when numerically:  
-they are not remotely similar.
+- slope perception
