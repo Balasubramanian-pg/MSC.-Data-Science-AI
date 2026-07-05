@@ -100,3 +100,5 @@ Bad visualizations use color excessively.
 ## [What Happens When Everything Is Colorful](./What%20Happens%20When%20Everything%20Is%20Colorful.md)
 
 ## [Common Dashboard Mistakes](./Common%20Dashboard%20Mistakes.md)
+
+## [Color Saturation Problem](./Color%20Saturation%20Problem.md)
