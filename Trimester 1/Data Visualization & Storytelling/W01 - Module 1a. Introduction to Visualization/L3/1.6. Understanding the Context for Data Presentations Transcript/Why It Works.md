@@ -1,9 +1,5 @@
 # Why It Works
 
-The audience wants:
+The audience is interested in regional patterns rather than national summaries.
 
-* Quick understanding
-* Easy comparison
-* Minimal interpretation effort
-
-# Scenario 2: Regional Newspaper or Political Party
+# Scenario 3: Election Commission
