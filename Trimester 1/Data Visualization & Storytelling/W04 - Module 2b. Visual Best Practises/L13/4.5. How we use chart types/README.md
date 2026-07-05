@@ -345,3 +345,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Conversation Is a Network](./Conversation%20Is%20a%20Network.md)
 
 ## [Conversation Analysis Framework](./Conversation%20Analysis%20Framework.md)
+
+## [1. Temporal Dimension](./1.%20Temporal%20Dimension.md)
