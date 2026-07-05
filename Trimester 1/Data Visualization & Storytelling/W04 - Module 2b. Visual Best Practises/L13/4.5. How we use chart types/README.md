@@ -459,3 +459,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Organizational Graph Model](./Organizational%20Graph%20Model.md)
 
 ## [Temporal Communication Evolution](./Temporal%20Communication%20Evolution.md)
+
+## [Behavioral Timeline Analysis](./Behavioral%20Timeline%20Analysis.md)
