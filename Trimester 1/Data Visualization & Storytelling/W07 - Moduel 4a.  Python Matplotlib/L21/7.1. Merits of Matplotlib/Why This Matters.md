@@ -1,10 +1,10 @@
 # Why This Matters
 
-Weak visualization usage:
+Visualization is not just:
 
-- calling isolated plotting commands
+- rendering data
     
 
-Strong visualization engineering:
+It is:
 
-- controlling figure objects explicitly
+> controlling perceptual focus.
