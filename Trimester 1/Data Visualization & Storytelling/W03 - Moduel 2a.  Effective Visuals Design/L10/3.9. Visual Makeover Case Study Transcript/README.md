@@ -98,3 +98,5 @@ The transcript introduces this challenge directly.
 ## [Core Principle](./Core%20Principle.md)
 
 ## [Examples](./Examples.md)
+
+## [Poor Layout](./Poor%20Layout.md)
