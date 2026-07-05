@@ -35,3 +35,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Customizable Components](./Customizable%20Components.md)
 
 ## [Example](./Example.md)
+
+## [Why Customization Matters](./Why%20Customization%20Matters.md)
