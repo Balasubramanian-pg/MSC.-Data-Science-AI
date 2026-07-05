@@ -283,3 +283,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Fixing the NASA Columbia Presentation Failure](./Fixing%20the%20NASA%20Columbia%20Presentation%20Failure.md)
 
 ## [1. Better Headlines](./1.%20Better%20Headlines.md)
+
+## [Why the Original Title Failed](./Why%20the%20Original%20Title%20Failed.md)
