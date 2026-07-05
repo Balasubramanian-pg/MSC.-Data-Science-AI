@@ -107,3 +107,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Interactivity in the Dashboard](./Interactivity%20in%20the%20Dashboard.md)
 
 ## [Why Bar Charts Were Used](./Why%20Bar%20Charts%20Were%20Used.md)
+
+## [Why Line Charts Were Used](./Why%20Line%20Charts%20Were%20Used.md)
