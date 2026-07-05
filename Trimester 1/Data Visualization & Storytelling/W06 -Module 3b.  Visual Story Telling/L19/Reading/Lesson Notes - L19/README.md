@@ -97,3 +97,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Time-Based Stories Matter](./Why%20Time-Based%20Stories%20Matter.md)
 
 ## [Crime Dataset Example](./Crime%20Dataset%20Example.md)
+
+## [Visualization Techniques for Time Stories](./Visualization%20Techniques%20for%20Time%20Stories.md)
