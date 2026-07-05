@@ -143,3 +143,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Causation Failure Model](./Causation%20Failure%20Model.md)
 
 ## [Heat Maps](./Heat%20Maps.md)
+
+## [Correlation Visualization](./Correlation%20Visualization.md)
