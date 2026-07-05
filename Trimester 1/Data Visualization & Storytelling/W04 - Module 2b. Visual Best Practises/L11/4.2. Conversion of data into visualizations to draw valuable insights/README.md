@@ -77,3 +77,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [When Bubble Charts Work](./When%20Bubble%20Charts%20Work.md)
 
 ## [Good For](./Good%20For.md)
+
+## [Poor For](./Poor%20For.md)
