@@ -141,3 +141,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Common Contrast Mistakes](./Common%20Contrast%20Mistakes.md)
 
 ## [10. Intersection](./10.%20Intersection.md)
+
+## [Example from Crime Data](./Example%20from%20Crime%20Data.md)
