@@ -1,8 +1,6 @@
 # Example
 
-|Chapter|Expected Tone|
-|---|---|
-|Mitra Labha (Gain of Friends)|Positive|
-|Mitra Bheda (Separation of Friends)|Negative|
-
-The sentiment model reflects this distinction.
+|Sentence|Polarity|Subjectivity|
+|---|---|---|
+|"The service failed."|Negative|Moderate|
+|"I absolutely hate this terrible service."|Negative|Very High|
