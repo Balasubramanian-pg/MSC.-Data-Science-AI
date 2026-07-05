@@ -217,3 +217,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Failure Mode: One Dashboard for Everyone](./Failure%20Mode%20-%20One%20Dashboard%20for%20Everyone.md)
 
 ## [Dashboard Hierarchy Architecture](./Dashboard%20Hierarchy%20Architecture.md)
+
+## [Hidden Principle in the Transcript](./Hidden%20Principle%20in%20the%20Transcript.md)
