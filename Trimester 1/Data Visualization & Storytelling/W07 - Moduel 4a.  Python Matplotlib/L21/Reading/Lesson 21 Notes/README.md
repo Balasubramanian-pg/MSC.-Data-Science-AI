@@ -59,3 +59,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Create plot](./Create%20plot.md)
 
 ## [Show chart](./Show%20chart.md)
+
+## [What Happens Internally](./What%20Happens%20Internally.md)
