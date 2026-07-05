@@ -1,13 +1,20 @@
 # Transcript Example
 
-The lecture uses:
+The lecture discusses constituencies:
 
-```text
-2019 Lok Sabha election winning margins
-```
+- Tirupati
+    
+- Vijayawada
+    
+- Visakhapatnam
+    
 
-displayed through color saturation.
+across election years.
 
-Darker color = higher margin.
+Users can immediately see:
 
-Lighter color = lower margin.
+- upward trends
+    
+- downward trends
+    
+- relative movement
