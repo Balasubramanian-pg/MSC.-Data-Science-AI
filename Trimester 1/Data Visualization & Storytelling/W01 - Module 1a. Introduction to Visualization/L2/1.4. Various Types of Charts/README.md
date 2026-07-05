@@ -22,3 +22,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [2.4 Relationship Variables](./2.4%20Relationship%20Variables.md)
 
 ## [3. Comparison Charts](./3.%20Comparison%20Charts.md)
+
+## [3.1 Purpose of Comparison Charts](./3.1%20Purpose%20of%20Comparison%20Charts.md)
