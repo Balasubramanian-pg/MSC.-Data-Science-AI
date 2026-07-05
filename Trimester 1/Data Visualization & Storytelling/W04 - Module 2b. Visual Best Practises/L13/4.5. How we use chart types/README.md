@@ -217,3 +217,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Numerical Representation of Emotion](./Numerical%20Representation%20of%20Emotion.md)
 
 ## [Why Numerical Emotion Modeling Matters](./Why%20Numerical%20Emotion%20Modeling%20Matters.md)
+
+## [Emotion Compression Pipeline](./Emotion%20Compression%20Pipeline.md)
