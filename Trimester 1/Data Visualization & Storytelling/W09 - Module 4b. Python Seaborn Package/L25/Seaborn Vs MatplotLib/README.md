@@ -95,3 +95,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [--- Approach B: Seaborn (DataFrame-Aware Column Mapping) ---](./---%20Approach%20B%20-%20Seaborn%20%28DataFrame-Aware%20Column%20Mapping%29%20---.md)
 
 ## [Point to the complete DataFrame, and simply pass string column headers as keys.](./Point%20to%20the%20complete%20DataFrame%2C%20and%20simply%20pass%20string%20column%20headers%20as%20keys.md)
+
+## [Notice that Seaborn automatically adjusts bubble sizing to look more modern.](./Notice%20that%20Seaborn%20automatically%20adjusts%20bubble%20sizing%20to%20look%20more%20modern.md)
