@@ -53,3 +53,5 @@
 ## [Correlation Coefficient](./Correlation%20Coefficient.md)
 
 ## [Interquartile Range (IQR)](./Interquartile%20Range%20%28IQR%29.md)
+
+## [Common Visualization Pitfalls](./Common%20Visualization%20Pitfalls.md)
