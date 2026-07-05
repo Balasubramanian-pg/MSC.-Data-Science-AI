@@ -1,0 +1,3 @@
+# Common Beginner Errors
+
+
