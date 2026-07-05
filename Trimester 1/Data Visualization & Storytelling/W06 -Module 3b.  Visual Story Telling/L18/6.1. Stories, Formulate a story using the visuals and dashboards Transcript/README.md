@@ -179,3 +179,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Emotional](./Emotional.md)
 
 ## [Storied](./Storied.md)
+
+## [SUCCESS Cognitive Model](./SUCCESS%20Cognitive%20Model.md)
