@@ -107,3 +107,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Topic Modeling Is Powerful](./Why%20Topic%20Modeling%20Is%20Powerful.md)
 
 ## [Applications of Topic Modeling](./Applications%20of%20Topic%20Modeling.md)
+
+## [Hidden Insight](./Hidden%20Insight.md)
