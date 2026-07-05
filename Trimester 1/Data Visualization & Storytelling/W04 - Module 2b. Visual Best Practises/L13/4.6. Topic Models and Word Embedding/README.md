@@ -119,3 +119,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Modern AI Connection](./Modern%20AI%20Connection.md)
 
 ## [Modern Transformer Pipeline](./Modern%20Transformer%20Pipeline.md)
+
+## [Final Conceptual Shift](./Final%20Conceptual%20Shift.md)
