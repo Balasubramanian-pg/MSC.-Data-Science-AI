@@ -63,3 +63,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Discovering Hidden Communication Themes](./Discovering%20Hidden%20Communication%20Themes.md)
 
 ## [Why This Is Important](./Why%20This%20Is%20Important.md)
+
+## [Semantic Clustering Pipeline](./Semantic%20Clustering%20Pipeline.md)
