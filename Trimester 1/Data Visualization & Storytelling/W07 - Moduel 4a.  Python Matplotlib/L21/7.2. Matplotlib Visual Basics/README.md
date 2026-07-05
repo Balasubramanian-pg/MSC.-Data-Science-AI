@@ -71,3 +71,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Standard Alias Convention](./Standard%20Alias%20Convention.md)
 
 ## [10. The Real Educational Objective](./10.%20The%20Real%20Educational%20Objective.md)
+
+## [The Iterative Learning Model](./The%20Iterative%20Learning%20Model.md)
