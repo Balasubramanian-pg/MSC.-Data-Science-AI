@@ -301,3 +301,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Show plot](./Show%20plot.md)
 
 ## [Important Learning Strategy](./Important%20Learning%20Strategy.md)
+
+## [Why Incremental Experimentation Works](./Why%20Incremental%20Experimentation%20Works.md)
