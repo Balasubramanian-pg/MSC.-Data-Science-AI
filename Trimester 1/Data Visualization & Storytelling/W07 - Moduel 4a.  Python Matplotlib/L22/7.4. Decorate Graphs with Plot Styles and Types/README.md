@@ -57,3 +57,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Engineering Use Cases](./Engineering%20Use%20Cases.md)
 
 ## [Line Styles](./Line%20Styles.md)
+
+## [Why Line Styles Matter](./Why%20Line%20Styles%20Matter.md)
