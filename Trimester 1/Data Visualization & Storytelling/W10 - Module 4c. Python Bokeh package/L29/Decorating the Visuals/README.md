@@ -541,3 +541,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Important Real-World Insight](./Important%20Real-World%20Insight.md)
 
 ## [Initial Figure](./Initial%20Figure.md)
+
+## [Important Architectural Point](./Important%20Architectural%20Point.md)
