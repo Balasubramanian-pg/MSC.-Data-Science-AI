@@ -111,3 +111,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Healthcare Dashboard](./Healthcare%20Dashboard.md)
 
 ## [Manufacturing Dashboard](./Manufacturing%20Dashboard.md)
+
+## [Environmental Dashboard](./Environmental%20Dashboard.md)
