@@ -159,3 +159,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Parallel Coordinates Pipeline](./Parallel%20Coordinates%20Pipeline.md)
 
 ## [8. Trend Analysis](./8.%20Trend%20Analysis.md)
+
+## [Line Charts](./Line%20Charts.md)
