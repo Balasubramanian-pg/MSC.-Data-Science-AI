@@ -49,3 +49,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [6. Notebook Presentation Features](./6.%20Notebook%20Presentation%20Features.md)
 
 ## [Why This Matters](./Why%20This%20Matters.md)
+
+## [Example Notebook Structure](./Example%20Notebook%20Structure.md)
