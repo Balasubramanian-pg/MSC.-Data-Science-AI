@@ -81,3 +81,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Cleveland’s Three Operations](./Cleveland%E2%80%99s%20Three%20Operations.md)
 
 ## [Perceptual Decoding Pipeline](./Perceptual%20Decoding%20Pipeline.md)
+
+## [Detection](./Detection.md)
