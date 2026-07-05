@@ -165,3 +165,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [2. Short-Term Memory](./2.%20Short-Term%20Memory.md)
 
 ## [Critical Limitation](./Critical%20Limitation.md)
+
+## [Why This Matters in Dashboards](./Why%20This%20Matters%20in%20Dashboards.md)
