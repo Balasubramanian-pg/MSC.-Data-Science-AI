@@ -177,3 +177,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [2. Plotting the Data](./2.%20Plotting%20the%20Data.md)
 
 ## [What `plot()` Does](./What%20%60plot%28%29%60%20Does.md)
+
+## [Mathematical Relationship](./Mathematical%20Relationship.md)
