@@ -67,3 +67,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Exploratory Systems Require Strong Information Architecture](./Exploratory%20Systems%20Require%20Strong%20Information%20Architecture.md)
 
 ## [C. Hybrid Narratives (Interactive Storytelling)](./C.%20Hybrid%20Narratives%20%28Interactive%20Storytelling%29.md)
+
+## [Core Principle](./Core%20Principle.md)
