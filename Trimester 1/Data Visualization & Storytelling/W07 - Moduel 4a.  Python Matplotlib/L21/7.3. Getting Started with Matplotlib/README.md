@@ -193,3 +193,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Common Line Styles](./Common%20Line%20Styles.md)
 
 ## [3. Legends](./3.%20Legends.md)
+
+## [Why Legends Matter](./Why%20Legends%20Matter.md)
