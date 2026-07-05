@@ -681,3 +681,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Legend Title](./Legend%20Title.md)
 
 ## [Why Titles Matter](./Why%20Titles%20Matter.md)
+
+## [Legend Label Text Color](./Legend%20Label%20Text%20Color.md)
