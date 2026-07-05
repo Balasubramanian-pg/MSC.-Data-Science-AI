@@ -257,3 +257,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Strategic Dashboard Focus](./Strategic%20Dashboard%20Focus.md)
 
 ## [Analytical Decisions](./Analytical%20Decisions.md)
+
+## [Operational Decisions](./Operational%20Decisions.md)
