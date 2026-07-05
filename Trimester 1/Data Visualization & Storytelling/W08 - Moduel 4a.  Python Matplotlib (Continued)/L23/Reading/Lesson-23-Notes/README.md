@@ -95,3 +95,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Hardcoding Local Paths](./Hardcoding%20Local%20Paths.md)
 
 ## [Ignoring Missing Data](./Ignoring%20Missing%20Data.md)
+
+## [Assuming Stable APIs](./Assuming%20Stable%20APIs.md)
