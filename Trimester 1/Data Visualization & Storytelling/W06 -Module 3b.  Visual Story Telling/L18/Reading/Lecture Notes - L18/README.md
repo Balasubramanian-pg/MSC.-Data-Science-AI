@@ -145,3 +145,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Common Slide Problems](./Common%20Slide%20Problems.md)
 
 ## [Cognitive Load Theory](./Cognitive%20Load%20Theory.md)
+
+## [Restraint Principle](./Restraint%20Principle.md)
