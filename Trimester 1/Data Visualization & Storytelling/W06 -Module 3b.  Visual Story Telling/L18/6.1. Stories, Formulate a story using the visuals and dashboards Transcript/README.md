@@ -115,3 +115,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Communication Paradigms](./Communication%20Paradigms.md)
 
 ## [Presentation Beyond PowerPoint](./Presentation%20Beyond%20PowerPoint.md)
+
+## [Presentation Is Broader Than Slides](./Presentation%20Is%20Broader%20Than%20Slides.md)
