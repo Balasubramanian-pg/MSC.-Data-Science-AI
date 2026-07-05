@@ -129,3 +129,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Example: Regional Crime Concentration](./Example%20-%20Regional%20Crime%20Concentration.md)
 
 ## [Why Geographic Context Matters](./Why%20Geographic%20Context%20Matters.md)
+
+## [9. Contrast](./9.%20Contrast.md)
