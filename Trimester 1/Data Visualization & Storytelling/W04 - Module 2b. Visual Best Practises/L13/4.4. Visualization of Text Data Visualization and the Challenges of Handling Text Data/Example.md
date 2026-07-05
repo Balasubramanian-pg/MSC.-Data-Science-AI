@@ -1,15 +1,13 @@
 # Example
 
-Sentence:
+Before:
 
 ```text
-"The cat chased the mouse"
+"An apple"
 ```
 
-becomes:
+After:
 
-|Word|Count|
-|---|---|
-|cat|1|
-|chased|1|
-|mouse|1|
+```text
+apple
+```
