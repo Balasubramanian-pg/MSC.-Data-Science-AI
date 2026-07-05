@@ -1,17 +1,19 @@
 # Example
 
-Weak:
+Weak leadership communication:
 
-> “Customer churn rose by 8%.”
+> “Revenue targets must increase.”
 
-Stronger:
+Strong storytelling:
 
-> “Customers increasingly abandoned the platform after onboarding friction increased during the mobile redesign.”
+> “Three years ago we were losing customers monthly. Today we have an opportunity to become the fastest-growing platform in the sector, but only if we improve onboarding reliability.”
 
-The second:
+The second creates:
 
-- explains,
+- direction,
     
-- contextualizes,
+- tension,
     
-- and humanizes the metric.
+- identity,
+    
+- and motivation.
