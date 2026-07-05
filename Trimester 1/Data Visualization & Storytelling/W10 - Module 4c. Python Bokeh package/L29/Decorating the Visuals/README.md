@@ -89,3 +89,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Example](./Example.md)
 
 ## [RGBA: Adding Transparency](./RGBA%20-%20Adding%20Transparency.md)
+
+## [Lower Transparency](./Lower%20Transparency.md)
