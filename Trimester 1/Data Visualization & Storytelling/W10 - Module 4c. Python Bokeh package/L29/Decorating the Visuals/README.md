@@ -233,3 +233,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Why Transparency Is Powerful](./Why%20Transparency%20Is%20Powerful.md)
 
 ## [Common Jupyter Notebook Problem](./Common%20Jupyter%20Notebook%20Problem.md)
+
+## [Good Practice](./Good%20Practice.md)
