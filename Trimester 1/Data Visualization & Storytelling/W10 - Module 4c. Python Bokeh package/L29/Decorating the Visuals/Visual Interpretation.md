@@ -3,11 +3,14 @@
 Before:
 
 ```text
-default black axis
+Simple black title on white background
 ```
 
 After:
 
 ```text
-blue x-axis line
+Dark grey title banner
+White text
+Right aligned
+Large font
 ```
