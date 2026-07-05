@@ -317,3 +317,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Polarity Distribution](./Polarity%20Distribution.md)
 
 ## [Why It Appears Approximately Normal](./Why%20It%20Appears%20Approximately%20Normal.md)
+
+## [Normal Distribution Intuition](./Normal%20Distribution%20Intuition.md)
