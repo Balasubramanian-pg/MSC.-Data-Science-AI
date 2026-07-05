@@ -633,3 +633,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Creating Multiple Glyphs](./Creating%20Multiple%20Glyphs.md)
 
 ## [Line Glyph](./Line%20Glyph.md)
+
+## [Scatter Glyph](./Scatter%20Glyph.md)
