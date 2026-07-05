@@ -57,3 +57,5 @@ Observed Data → Fit Function → Predict Future
 ## [What Is Happening Internally?](./What%20Is%20Happening%20Internally.md)
 
 ## [Important Output](./Important%20Output.md)
+
+## [Step 3: Convert Coefficients Into Function](./Step%203%20-%20Convert%20Coefficients%20Into%20Function.md)
