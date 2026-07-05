@@ -123,3 +123,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Mental Model](./Mental%20Model.md)
 
 ## [Interview-Style Insight](./Interview-Style%20Insight.md)
+
+## [Types of Human Memory in Data Visualization](./Types%20of%20Human%20Memory%20in%20Data%20Visualization.md)
