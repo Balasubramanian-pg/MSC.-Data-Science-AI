@@ -281,3 +281,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Organizational Lesson](./Important%20Organizational%20Lesson.md)
 
 ## [Information Visibility ≠ Information Impact](./Information%20Visibility%20%E2%89%A0%20Information%20Impact.md)
+
+## [Real-World Consequences](./Real-World%20Consequences.md)
