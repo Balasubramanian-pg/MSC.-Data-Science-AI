@@ -25,3 +25,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Step B: Draw raw geometric bar shapes](./Step%20B%20-%20Draw%20raw%20geometric%20bar%20shapes.md)
 
 ## [Step C: Manually build out the aesthetics layer by layer](./Step%20C%20-%20Manually%20build%20out%20the%20aesthetics%20layer%20by%20layer.md)
+
+## [2. THE SEABORN APPROACH: Automated, High-Level Data Storytelling](./2.%20THE%20SEABORN%20APPROACH%20-%20Automated%2C%20High-Level%20Data%20Storytelling.md)
