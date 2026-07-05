@@ -189,3 +189,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [What Is Stemming?](./What%20Is%20Stemming.md)
 
 ## [Why Stemming Matters](./Why%20Stemming%20Matters.md)
+
+## [Stemming Pipeline](./Stemming%20Pipeline.md)
