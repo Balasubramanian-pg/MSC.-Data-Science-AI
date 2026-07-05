@@ -69,3 +69,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Hidden Risk](./The%20Hidden%20Risk.md)
 
 ## [Transition Into Visual Encoding](./Transition%20Into%20Visual%20Encoding.md)
+
+## [Human Visual Decoding Process](./Human%20Visual%20Decoding%20Process.md)
