@@ -77,3 +77,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Strong Analysts Continuously Ask:](./Strong%20Analysts%20Continuously%20Ask%20-.md)
 
 ## [10. The Deeper Educational Goal](./10.%20The%20Deeper%20Educational%20Goal.md)
+
+## [Strategic Insight](./Strategic%20Insight.md)
