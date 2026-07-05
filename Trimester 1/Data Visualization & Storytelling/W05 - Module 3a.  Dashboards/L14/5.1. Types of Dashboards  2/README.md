@@ -29,3 +29,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Rapid Scanning](./Rapid%20Scanning.md)
 
 ## [Example](./Example.md)
+
+## [Real-Time Visibility](./Real-Time%20Visibility.md)
