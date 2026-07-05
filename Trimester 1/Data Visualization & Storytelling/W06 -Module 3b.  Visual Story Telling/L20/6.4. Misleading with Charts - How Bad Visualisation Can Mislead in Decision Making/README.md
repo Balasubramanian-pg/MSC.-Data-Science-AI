@@ -53,3 +53,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [2. Truncated Y-Axis](./2.%20Truncated%20Y-Axis.md)
 
 ## [Example: Tax Rate Increase](./Example%20-%20Tax%20Rate%20Increase.md)
+
+## [Why This Distorts Perception](./Why%20This%20Distorts%20Perception.md)
