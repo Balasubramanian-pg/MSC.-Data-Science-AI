@@ -91,3 +91,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Advanced Insight](./Advanced%20Insight.md)
 
 ## [Common Mistakes](./Common%20Mistakes.md)
+
+## [Hardcoding Local Paths](./Hardcoding%20Local%20Paths.md)
