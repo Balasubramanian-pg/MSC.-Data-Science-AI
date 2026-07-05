@@ -1,7 +1,9 @@
 # Core Philosophy
 
-The goal is not:  
-to maximize slide content.
+> Talk less. Show more.
 
-The goal is:  
-to maximize audience understanding.
+This is extremely important.
+
+Most presentations fail because:
+
+- they overwhelm audiences with words.
