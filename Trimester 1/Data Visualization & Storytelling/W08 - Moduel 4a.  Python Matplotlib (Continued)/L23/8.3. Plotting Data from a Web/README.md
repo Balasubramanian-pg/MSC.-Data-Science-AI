@@ -27,3 +27,5 @@ It is fundamentally about:
 ## [Important Concept](./Important%20Concept.md)
 
 ## [Real-World Analogy](./Real-World%20Analogy.md)
+
+## [Step 3: Load Data Into Pandas](./Step%203%20-%20Load%20Data%20Into%20Pandas.md)
