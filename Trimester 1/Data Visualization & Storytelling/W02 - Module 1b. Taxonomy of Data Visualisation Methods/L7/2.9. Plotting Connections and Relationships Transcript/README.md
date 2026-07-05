@@ -13,3 +13,5 @@ week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
 ## [3. Domain II: Assessing Hierarchies (Part-to-Whole and Structural Visualizations)](./3.%20Domain%20II%20-%20Assessing%20Hierarchies%20%28Part-to-Whole%20and%20Structural%20Visualizations%29.md)
 
 ## [4. Domain III: Mapping Geospatial Data (Spatial Representations and Coordinate Systems)](./4.%20Domain%20III%20-%20Mapping%20Geospatial%20Data%20%28Spatial%20Representations%20and%20Coordinate%20Systems%29.md)
+
+## [5. Domain IV: Plotting Connections & Relationships (Relational Structures)](./5.%20Domain%20IV%20-%20Plotting%20Connections%20%26%20Relationships%20%28Relational%20Structures%29.md)
