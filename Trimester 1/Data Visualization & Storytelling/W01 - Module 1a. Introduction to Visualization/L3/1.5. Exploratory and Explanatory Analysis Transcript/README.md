@@ -65,3 +65,5 @@
 ## [4.2 Transformation Pipeline](./4.2%20Transformation%20Pipeline.md)
 
 ## [Conceptual Pipeline](./Conceptual%20Pipeline.md)
+
+## [4.3 Iterative Nature of Visualization](./4.3%20Iterative%20Nature%20of%20Visualization.md)
