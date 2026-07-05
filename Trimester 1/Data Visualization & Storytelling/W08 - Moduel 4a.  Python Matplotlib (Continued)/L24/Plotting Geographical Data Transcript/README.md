@@ -57,3 +57,5 @@ This is foundational to:
 ## [Key Insight](./Key%20Insight.md)
 
 ## [Step 5: Basic Map Plot](./Step%205%20-%20Basic%20Map%20Plot.md)
+
+## [Mental Model](./Mental%20Model.md)
