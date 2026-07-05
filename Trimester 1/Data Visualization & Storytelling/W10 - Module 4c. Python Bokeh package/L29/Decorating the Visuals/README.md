@@ -733,3 +733,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Color Mapping](./Color%20Mapping.md)
 
 ## [Types of Color Mapping](./Types%20of%20Color%20Mapping.md)
+
+## [Linear Color Mapping](./Linear%20Color%20Mapping.md)
