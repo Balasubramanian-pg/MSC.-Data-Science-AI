@@ -21,3 +21,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Position Is Superior](./Why%20Position%20Is%20Superior.md)
 
 ## [Encoding Decision Framework](./Encoding%20Decision%20Framework.md)
+
+## [1. Color Encoding](./1.%20Color%20Encoding.md)
