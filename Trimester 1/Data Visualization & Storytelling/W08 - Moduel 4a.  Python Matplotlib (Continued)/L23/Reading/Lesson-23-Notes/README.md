@@ -287,3 +287,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Understanding `axes[0]` and `axes[1]`](./Understanding%20%60axes%5B0%5D%60%20and%20%60axes%5B1%5D%60.md)
 
 ## [Mental Model of Axes Arrays](./Mental%20Model%20of%20Axes%20Arrays.md)
+
+## [Example: Minimum Temperature + Wind Speed](./Example%20-%20Minimum%20Temperature%20%2B%20Wind%20Speed.md)
