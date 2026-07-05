@@ -57,3 +57,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Poor Choices](./Poor%20Choices.md)
 
 ## [Ordinal Data](./Ordinal%20Data.md)
+
+## [Ordered Categories](./Ordered%20Categories.md)
