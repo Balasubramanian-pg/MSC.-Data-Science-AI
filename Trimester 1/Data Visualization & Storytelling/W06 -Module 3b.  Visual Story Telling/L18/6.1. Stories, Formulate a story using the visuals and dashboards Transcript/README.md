@@ -221,3 +221,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Attention Curve](./Attention%20Curve.md)
 
 ## [“Simplicity Is the Ultimate Sophistication”](./%E2%80%9CSimplicity%20Is%20the%20Ultimate%20Sophistication%E2%80%9D.md)
+
+## [Common Misunderstanding](./Common%20Misunderstanding.md)
