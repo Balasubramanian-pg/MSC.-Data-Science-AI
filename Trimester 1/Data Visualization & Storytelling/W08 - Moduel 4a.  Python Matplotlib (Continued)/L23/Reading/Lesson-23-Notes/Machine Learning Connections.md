@@ -1,11 +1,11 @@
 # Machine Learning Connections
 
-Remote data ingestion is fundamental in ML systems:
+Time-series visualization is central in ML systems:
 
-|ML Stage|Usage|
+|ML Area|Visualization|
 |---|---|
-|Training|Dataset ingestion|
-|Monitoring|Live prediction logs|
-|Drift detection|Streaming distributions|
-|Feature stores|Remote retrieval|
-|Dashboards|Real-time metrics|
+|Forecasting|Line plots|
+|Drift detection|Rolling statistics|
+|Model monitoring|Prediction timelines|
+|Sensor analytics|Streaming charts|
+|Reinforcement learning|Reward curves|
