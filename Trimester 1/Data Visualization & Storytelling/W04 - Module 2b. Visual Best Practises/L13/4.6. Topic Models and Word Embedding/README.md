@@ -209,3 +209,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Language Becomes Spatial Geometry](./Language%20Becomes%20Spatial%20Geometry.md)
 
 ## [Transformer Semantic Pipeline](./Transformer%20Semantic%20Pipeline.md)
+
+## [Important Final Insight](./Important%20Final%20Insight.md)
