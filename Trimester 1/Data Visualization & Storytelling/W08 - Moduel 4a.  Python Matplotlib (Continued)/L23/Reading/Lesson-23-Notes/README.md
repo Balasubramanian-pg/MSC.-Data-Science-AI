@@ -227,3 +227,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Subplots as Analytical Dashboards](./Subplots%20as%20Analytical%20Dashboards.md)
 
 ## [Time-Series Comparison](./Time-Series%20Comparison.md)
+
+## [Example Insight](./Example%20Insight.md)
