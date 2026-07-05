@@ -153,3 +153,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important NLP Principle](./Important%20NLP%20Principle.md)
 
 ## [4. Tokenization](./4.%20Tokenization.md)
+
+## [Breaking Text into Computational Units](./Breaking%20Text%20into%20Computational%20Units.md)
