@@ -45,3 +45,5 @@ It is fundamentally about:
 ## [Why Set the Index?](./Why%20Set%20the%20Index.md)
 
 ## [Why This Matters](./Why%20This%20Matters.md)
+
+## [Time-Series Mental Model](./Time-Series%20Mental%20Model.md)
