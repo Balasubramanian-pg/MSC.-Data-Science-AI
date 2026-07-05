@@ -31,3 +31,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [5. Inference & Interpretability on a Single Document](./5.%20Inference%20%26%20Interpretability%20on%20a%20Single%20Document.md)
 
 ## [Let's target the 4th document (Index 3: The NHL playoffs...)](./Let%27s%20target%20the%204th%20document%20%28Index%203%20-%20The%20NHL%20playoffs...%29.md)
+
+## [Predict](./Predict.md)
