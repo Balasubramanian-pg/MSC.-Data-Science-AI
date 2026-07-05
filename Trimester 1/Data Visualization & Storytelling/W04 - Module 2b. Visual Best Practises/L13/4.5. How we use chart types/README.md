@@ -19,3 +19,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Text Data as a Dataset](./Text%20Data%20as%20a%20Dataset.md)
 
 ## [Traditional View of Text](./Traditional%20View%20of%20Text.md)
+
+## [Computational View of Text](./Computational%20View%20of%20Text.md)
