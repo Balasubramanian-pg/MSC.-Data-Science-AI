@@ -85,3 +85,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Misleading Comparisons Through Scale Manipulation](./Misleading%20Comparisons%20Through%20Scale%20Manipulation.md)
 
 ## [1. False Comparability Through Scale Design](./1.%20False%20Comparability%20Through%20Scale%20Design.md)
+
+## [The Core Problem](./The%20Core%20Problem.md)
