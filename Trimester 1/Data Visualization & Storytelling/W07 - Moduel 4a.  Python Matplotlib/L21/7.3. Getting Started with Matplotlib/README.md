@@ -115,3 +115,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why This Design Is Powerful](./Why%20This%20Design%20Is%20Powerful.md)
 
 ## [4. Plotting the Data](./4.%20Plotting%20the%20Data.md)
+
+## [Internal Plotting Logic](./Internal%20Plotting%20Logic.md)
