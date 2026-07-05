@@ -1,19 +1,21 @@
 # Objective
 
-Intersection stories identify crossover points:
+Factor-based stories identify:
 
-- moments when one trend overtakes another
+- drivers
     
-
-These are psychologically powerful because they signal:
-
-- regime change
+- contributors
     
-- priority reversal
-    
-- structural transition
+- influencing variables
     
 
 Core question:
 
-> “When did the balance shift?”
+> “What caused the change?”
+
+This moves analytics from:
+
+- observation  
+    to
+    
+- explanation
