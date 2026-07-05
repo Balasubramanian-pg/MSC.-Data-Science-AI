@@ -77,3 +77,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Frequency Matters](./Why%20Frequency%20Matters.md)
 
 ## [Important Caveat](./Important%20Caveat.md)
+
+## [Stopword Problem](./Stopword%20Problem.md)
