@@ -95,3 +95,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Visual Intuition](./Visual%20Intuition.md)
 
 ## [Hexadecimal Colors](./Hexadecimal%20Colors.md)
+
+## [Structure](./Structure.md)
