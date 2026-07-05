@@ -349,3 +349,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Correct Use of Saturation](./Correct%20Use%20of%20Saturation.md)
 
 ## [Counterintuitive Saturation](./Counterintuitive%20Saturation.md)
+
+## [Why Legends Matter](./Why%20Legends%20Matter.md)
