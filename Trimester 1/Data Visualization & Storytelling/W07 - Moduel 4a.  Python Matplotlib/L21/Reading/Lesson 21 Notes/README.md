@@ -133,3 +133,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Properties of Sine](./Properties%20of%20Sine.md)
 
 ## [Visual Behavior](./Visual%20Behavior.md)
+
+## [4.2 Creating Figure and Axes](./4.2%20Creating%20Figure%20and%20Axes.md)
