@@ -279,3 +279,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Visual Role of Grids](./Visual%20Role%20of%20Grids.md)
 
 ## [Why Grids Matter in Scientific Visualization](./Why%20Grids%20Matter%20in%20Scientific%20Visualization.md)
+
+## [Internal Effect](./Internal%20Effect.md)
