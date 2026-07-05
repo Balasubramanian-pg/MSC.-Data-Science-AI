@@ -145,3 +145,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Traffic Signal Example](./Traffic%20Signal%20Example.md)
 
 ## [Why Visual Signals Beat Text](./Why%20Visual%20Signals%20Beat%20Text.md)
+
+## [Visualization Principle](./Visualization%20Principle.md)
