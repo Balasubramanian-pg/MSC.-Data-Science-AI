@@ -191,3 +191,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [t-SNE Limitations](./t-SNE%20Limitations.md)
 
 ## [Important Visualization Warning](./Important%20Visualization%20Warning.md)
+
+## [Why Dimensionality Reduction Is Necessary](./Why%20Dimensionality%20Reduction%20Is%20Necessary.md)
