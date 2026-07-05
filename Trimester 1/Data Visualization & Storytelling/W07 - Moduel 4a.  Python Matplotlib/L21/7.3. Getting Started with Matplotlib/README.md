@@ -177,3 +177,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Defining the Cosine Function](./Defining%20the%20Cosine%20Function.md)
 
 ## [Mathematical Relationship](./Mathematical%20Relationship.md)
+
+## [2. Plotting the Second Line](./2.%20Plotting%20the%20Second%20Line.md)
