@@ -255,3 +255,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Plot Styling Properties](./Plot%20Styling%20Properties.md)
 
 ## [Visualization Layers](./Visualization%20Layers.md)
+
+## [Plot Height and Width](./Plot%20Height%20and%20Width.md)
