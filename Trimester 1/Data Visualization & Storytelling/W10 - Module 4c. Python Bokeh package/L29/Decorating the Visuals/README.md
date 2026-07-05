@@ -581,3 +581,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Title Alignment vs Position](./Title%20Alignment%20vs%20Position.md)
 
 ## [Example of Position Change](./Example%20of%20Position%20Change.md)
+
+## [Title Styling](./Title%20Styling.md)
