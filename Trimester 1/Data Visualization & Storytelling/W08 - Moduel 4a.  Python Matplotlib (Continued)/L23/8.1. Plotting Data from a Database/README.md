@@ -23,3 +23,5 @@ This section explains how to create multiple related plots from a Pandas DataFra
 ## [Mental Model](./Mental%20Model.md)
 
 ## [Step 4: Plot on Specific Axes](./Step%204%20-%20Plot%20on%20Specific%20Axes.md)
+
+## [Important Python Concept: Indexing Starts at 0](./Important%20Python%20Concept%20-%20Indexing%20Starts%20at%200.md)
