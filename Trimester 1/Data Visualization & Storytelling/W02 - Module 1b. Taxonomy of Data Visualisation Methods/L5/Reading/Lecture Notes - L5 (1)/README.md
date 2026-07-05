@@ -32,3 +32,5 @@
 ## [13. Bidirectional Visual Design](./13.%20Bidirectional%20Visual%20Design.md)
 
 ## [14. Eliminating Chartjunk](./14.%20Eliminating%20Chartjunk.md)
+
+## [15. Minimalist Labeling](./15.%20Minimalist%20Labeling.md)
