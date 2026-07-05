@@ -1,3 +1,3 @@
 # Generate x values
 
-x = np.linspace(0, 10, 100)
+x = np.linspace(-5, 5, 100)
