@@ -353,3 +353,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Common Beginner Confusion](./Common%20Beginner%20Confusion.md)
 
 ## [Important Design Philosophy](./Important%20Design%20Philosophy.md)
+
+## [Hidden Lesson in This Section](./Hidden%20Lesson%20in%20This%20Section.md)
