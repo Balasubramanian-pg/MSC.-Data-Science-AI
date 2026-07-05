@@ -261,3 +261,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Outline Styling](./Outline%20Styling.md)
 
 ## [Border Width](./Border%20Width.md)
+
+## [Border Transparency](./Border%20Transparency.md)
