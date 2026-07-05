@@ -215,3 +215,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Example of Combined Plot](./Example%20of%20Combined%20Plot.md)
 
 ## [Data](./Data.md)
+
+## [Variables](./Variables.md)
