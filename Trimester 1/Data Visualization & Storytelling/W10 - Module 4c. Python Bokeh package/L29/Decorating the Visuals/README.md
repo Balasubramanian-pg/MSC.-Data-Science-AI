@@ -259,3 +259,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Plot Height and Width](./Plot%20Height%20and%20Width.md)
 
 ## [Outline Styling](./Outline%20Styling.md)
+
+## [Border Width](./Border%20Width.md)
