@@ -103,3 +103,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Beginning Phase](./Beginning%20Phase.md)
 
 ## [Conflict Phase](./Conflict%20Phase.md)
+
+## [Climax Phase](./Climax%20Phase.md)
