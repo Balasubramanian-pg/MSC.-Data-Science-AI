@@ -49,3 +49,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Low Cognitive Barrier](./Low%20Cognitive%20Barrier.md)
 
 ## [Major Weaknesses of Word Clouds](./Major%20Weaknesses%20of%20Word%20Clouds.md)
+
+## [Weakness 1: Poor Quantitative Precision](./Weakness%201%20-%20Poor%20Quantitative%20Precision.md)
