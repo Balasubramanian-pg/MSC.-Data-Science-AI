@@ -10,3 +10,5 @@ This document details five advanced visual paradigms designed for **Categorical 
 5. **Bubble Hierarchies** (Connection-based node-link trees scaling by quantitative weight) [1]
 
 ## [1. Unified Architectural Pipeline & Decision Framework](./1.%20Unified%20Architectural%20Pipeline%20%26%20Decision%20Framework.md)
+
+## [2. Gantt Category Range Charts (Floating Bar Charts)](./2.%20Gantt%20Category%20Range%20Charts%20%28Floating%20Bar%20Charts%29.md)
