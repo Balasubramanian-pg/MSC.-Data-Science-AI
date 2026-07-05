@@ -13,3 +13,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Visualization as Analytical Translation](./Visualization%20as%20Analytical%20Translation.md)
 
 ## [Why Chart Selection Matters](./Why%20Chart%20Selection%20Matters.md)
+
+## [Visualization Is Structured Reasoning](./Visualization%20Is%20Structured%20Reasoning.md)
