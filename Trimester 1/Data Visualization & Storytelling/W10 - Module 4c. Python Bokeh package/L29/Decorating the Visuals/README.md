@@ -711,3 +711,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Instructor Says "CIDES"](./Instructor%20Says%20CIDES.md)
 
 ## [What Is Cividis?](./What%20Is%20Cividis.md)
+
+## [Why Perceptual Uniformity Matters](./Why%20Perceptual%20Uniformity%20Matters.md)
