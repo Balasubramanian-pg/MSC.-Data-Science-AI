@@ -110,3 +110,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [Objective Classification](./Objective%20Classification.md)
 
 ## [8. Common Visualization Mistakes](./8.%20Common%20Visualization%20Mistakes.md)
+
+## [1. Cluttered Charts](./1.%20Cluttered%20Charts.md)
