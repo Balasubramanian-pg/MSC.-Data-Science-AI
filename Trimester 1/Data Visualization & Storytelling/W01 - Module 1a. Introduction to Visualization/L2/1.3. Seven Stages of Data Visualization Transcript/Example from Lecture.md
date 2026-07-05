@@ -1,8 +1,18 @@
 # Example from Lecture
 
-Source:
+The dataset contains:
 
-- Election Commission of India website
+- state names
+    
+- polling stations
+    
+- total votes
+    
+- turnout ratio
     
 
-The dataset was downloaded in Excel format.
+The analyst identifies:
+
+```text
+Primary variable of interest = Voter Turnout Ratio
+```
