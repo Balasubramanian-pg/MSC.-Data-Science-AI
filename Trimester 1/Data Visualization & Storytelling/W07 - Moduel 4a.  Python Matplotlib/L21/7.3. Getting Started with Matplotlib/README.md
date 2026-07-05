@@ -323,3 +323,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Bar Charts Are Effective](./Why%20Bar%20Charts%20Are%20Effective.md)
 
 ## [4. Basic Chart vs Enhanced Chart](./4.%20Basic%20Chart%20vs%20Enhanced%20Chart.md)
+
+## [Important Visualization Principle](./Important%20Visualization%20Principle.md)
