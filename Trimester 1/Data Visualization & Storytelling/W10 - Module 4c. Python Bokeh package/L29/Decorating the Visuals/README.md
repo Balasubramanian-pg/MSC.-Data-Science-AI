@@ -837,3 +837,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Caliber](./Caliber.md)
 
 ## [Dark Minimal](./Dark%20Minimal.md)
+
+## [Light Minimal](./Light%20Minimal.md)
