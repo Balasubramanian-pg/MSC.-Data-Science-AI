@@ -497,3 +497,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Orientation Property](./Orientation%20Property.md)
 
 ## [Approximate Meaning](./Approximate%20Meaning.md)
+
+## [Why 0.8 Is Good](./Why%200.8%20Is%20Good.md)
