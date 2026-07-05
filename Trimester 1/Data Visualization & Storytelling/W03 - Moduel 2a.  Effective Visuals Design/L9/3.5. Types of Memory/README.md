@@ -113,3 +113,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Core Ideas](./Core%20Ideas.md)
 
 ## [Most Important Principle](./Most%20Important%20Principle.md)
+
+## [Practical Rules](./Practical%20Rules.md)
