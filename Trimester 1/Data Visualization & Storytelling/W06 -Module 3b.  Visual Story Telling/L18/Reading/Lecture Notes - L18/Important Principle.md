@@ -1,4 +1,5 @@
 # Important Principle
 
-When communicating physical systems:  
-visual simulation often outperforms textual description.
+Communication quality often improves by:  
+removing information,  
+not adding it.
