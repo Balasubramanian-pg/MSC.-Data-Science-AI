@@ -159,3 +159,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Common Failure Modes](./Common%20Failure%20Modes.md)
 
 ## [12. Outliers](./12.%20Outliers.md)
+
+## [Example: Delhi as an Outlier](./Example%20-%20Delhi%20as%20an%20Outlier.md)
