@@ -135,3 +135,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [2. THE SEABORN WAY: Automatic Statistical Aggregation Natively](./2.%20THE%20SEABORN%20WAY%20-%20Automatic%20Statistical%20Aggregation%20Natively.md)
 
 ## [Activate premium design theme attributes globally](./Activate%20premium%20design%20theme%20attributes%20globally.md)
+
+## [One clean command natively parses raw data, isolates categories, calculates](./One%20clean%20command%20natively%20parses%20raw%20data%2C%20isolates%20categories%2C%20calculates.md)
