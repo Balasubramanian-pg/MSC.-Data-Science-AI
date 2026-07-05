@@ -22,3 +22,5 @@
 ## [8. Area Charts](./8.%20Area%20Charts.md)
 
 ## [9. Visualization Selection Cheat Sheet](./9.%20Visualization%20Selection%20Cheat%20Sheet.md)
+
+## [10. Common Mistakes](./10.%20Common%20Mistakes.md)
