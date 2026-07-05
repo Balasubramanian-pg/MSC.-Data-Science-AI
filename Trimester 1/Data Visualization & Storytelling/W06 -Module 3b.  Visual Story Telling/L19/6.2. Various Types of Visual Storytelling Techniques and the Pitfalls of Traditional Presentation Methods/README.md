@@ -27,3 +27,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Elite Examples of Data Storytelling](./Elite%20Examples%20of%20Data%20Storytelling.md)
 
 ## [Why Their Visuals Feel Powerful](./Why%20Their%20Visuals%20Feel%20Powerful.md)
+
+## [The First Great Data Story: London Cholera Map](./The%20First%20Great%20Data%20Story%20-%20London%20Cholera%20Map.md)
