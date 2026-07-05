@@ -11,3 +11,5 @@
 ## [4.1.5. Cross-Sheet Integration and Returns Analysis](./4.1.5.%20Cross-Sheet%20Integration%20and%20Returns%20Analysis.md)
 
 ## [4.1.6. Category Drill-Downs and Logical Sorting](./4.1.6.%20Category%20Drill-Downs%20and%20Logical%20Sorting.md)
+
+## [4.1.7. Step-by-Step Visual Analysis Example](./4.1.7.%20Step-by-Step%20Visual%20Analysis%20Example.md)
