@@ -41,3 +41,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Human Communication Is Largely Textual](./Human%20Communication%20Is%20Largely%20Textual.md)
 
 ## [Hidden Signals Inside Text](./Hidden%20Signals%20Inside%20Text.md)
+
+## [Important Modern Insight](./Important%20Modern%20Insight.md)
