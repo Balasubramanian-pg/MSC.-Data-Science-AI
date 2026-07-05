@@ -221,3 +221,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Figure](./Figure.md)
 
 ## [Title customization](./Title%20customization.md)
+
+## [Line glyph](./Line%20glyph.md)
