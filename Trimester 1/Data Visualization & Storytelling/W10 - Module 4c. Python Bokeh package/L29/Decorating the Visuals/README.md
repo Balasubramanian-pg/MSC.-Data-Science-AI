@@ -853,3 +853,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Mistake 1: Overusing Dark Themes](./Mistake%201%20-%20Overusing%20Dark%20Themes.md)
 
 ## [Mistake 2: Mixing Themes](./Mistake%202%20-%20Mixing%20Themes.md)
+
+## [Mistake 3: Decorative Themes](./Mistake%203%20-%20Decorative%20Themes.md)
