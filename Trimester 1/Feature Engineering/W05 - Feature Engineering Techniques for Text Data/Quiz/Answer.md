@@ -1,8 +1,10 @@
 # Answer
 
-✅ **It down-weights words that occur in many documents.**
+✅ **They assign fixed-length dense vectors based on word context.**
 
 > [!NOTE]
 > **Reason**
 >
-> The **IDF** component assigns lower weights to terms that appear frequently across many documents because such words carry less discriminative information. Rare or document-specific terms receive higher weights, making them more useful for distinguishing documents.
+> **Word2Vec** learns **dense, fixed-length vector representations** for words by analyzing their surrounding context in a corpus. Words appearing in similar contexts tend to have similar embeddings.
+>
+> Word2Vec does not produce sparse vectors, nor does it directly model subwords. Models such as FastText extend Word2Vec to incorporate subword information.
