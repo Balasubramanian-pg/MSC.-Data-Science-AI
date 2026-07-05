@@ -1,3 +1,3 @@
 # Weakness
 
-Poor precision estimation.
+Precise quantitative judgment.
