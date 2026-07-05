@@ -101,3 +101,5 @@ This is foundational to:
 ## [Why Longitude Comes First](./Why%20Longitude%20Comes%20First.md)
 
 ## [Just Noticeable Shape Principle](./Just%20Noticeable%20Shape%20Principle.md)
+
+## [Real-World Applications](./Real-World%20Applications.md)
