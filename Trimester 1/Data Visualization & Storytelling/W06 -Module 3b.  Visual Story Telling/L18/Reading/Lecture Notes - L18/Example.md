@@ -1,9 +1,12 @@
 # Example
 
-Instead of:
+Abstract:
 
-> “Climate change affects weather.”
+> “Operational inefficiency increased.”
 
-Unexpected framing:
+Concrete:
 
-> “Some cities may become physically uninsurable within decades.”
+> “Warehouse workers walked an extra 14 miles daily due to poor inventory layout.”
+
+Concrete information is:  
+visually imaginable.
