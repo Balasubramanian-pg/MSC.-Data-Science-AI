@@ -197,3 +197,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Better Title](./Better%20Title.md)
 
 ## [Best Practice](./Best%20Practice.md)
+
+## [Axis Labels](./Axis%20Labels.md)
