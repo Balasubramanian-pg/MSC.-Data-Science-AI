@@ -1,19 +1,19 @@
 # Example
 
-Emails containing words like:
+A topic containing words such as:
 
-- compliance
+- audit
     
-- regulation
+- compliance
     
 - penalty
     
-- audit
+- regulation
     
 
-likely belong to a:
+is interpreted as:
 
 ```text
-regulatory topic
+a regulatory/legal topic
 ```
-![[LSA & LDA.png]]
+![[Pasted image 20260528221315.png]]
