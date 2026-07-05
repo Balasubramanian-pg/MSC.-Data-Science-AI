@@ -225,3 +225,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Good Design Principle](./Good%20Design%20Principle.md)
 
 ## [Final Visualization Insight](./Final%20Visualization%20Insight.md)
+
+## [Most Important Takeaway](./Most%20Important%20Takeaway.md)
