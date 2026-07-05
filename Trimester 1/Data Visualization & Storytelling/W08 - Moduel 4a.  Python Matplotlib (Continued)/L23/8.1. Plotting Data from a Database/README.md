@@ -49,3 +49,5 @@ This section explains how to create multiple related plots from a Pandas DataFra
 ## [2. Wrong Axis Index](./2.%20Wrong%20Axis%20Index.md)
 
 ## [3. Not Setting Datetime Index](./3.%20Not%20Setting%20Datetime%20Index.md)
+
+## [Advanced Extension](./Advanced%20Extension.md)
