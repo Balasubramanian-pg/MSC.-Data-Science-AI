@@ -17,3 +17,5 @@ week: W02 - Handling Numeric Data
 ## [2.1.5. Discretization and the Loss of Precision](./2.1.5.%20Discretization%20and%20the%20Loss%20of%20Precision.md)
 
 ## [2.1.6. The Instrumentation of Preprocessing](./2.1.6.%20The%20Instrumentation%20of%20Preprocessing.md)
+
+## [2.1.7. Example of Feature Standardization](./2.1.7.%20Example%20of%20Feature%20Standardization.md)
