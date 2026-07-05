@@ -155,3 +155,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [4. Hatch Properties](./4.%20Hatch%20Properties.md)
 
 ## [Hatch Styling](./Hatch%20Styling.md)
+
+## [Why Hatch Patterns Matter](./Why%20Hatch%20Patterns%20Matter.md)
