@@ -175,3 +175,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Mistake 2: Alpha Overuse](./Mistake%202%20-%20Alpha%20Overuse.md)
 
 ## [Mistake 3: Excessive Styling](./Mistake%203%20-%20Excessive%20Styling.md)
+
+## [Important Design Principle](./Important%20Design%20Principle.md)
