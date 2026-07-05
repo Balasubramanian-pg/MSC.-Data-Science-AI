@@ -167,3 +167,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Add bars](./Add%20bars.md)
 
 ## [Text styling](./Text%20styling.md)
+
+## [Common Beginner Mistakes](./Common%20Beginner%20Mistakes.md)
