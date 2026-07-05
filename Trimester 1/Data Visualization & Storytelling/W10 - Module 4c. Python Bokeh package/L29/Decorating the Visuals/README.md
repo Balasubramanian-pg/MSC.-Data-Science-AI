@@ -317,3 +317,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Understanding the Parameters](./Understanding%20the%20Parameters.md)
 
 ## [Coordinates](./Coordinates.md)
+
+## [Marker Size](./Marker%20Size.md)
