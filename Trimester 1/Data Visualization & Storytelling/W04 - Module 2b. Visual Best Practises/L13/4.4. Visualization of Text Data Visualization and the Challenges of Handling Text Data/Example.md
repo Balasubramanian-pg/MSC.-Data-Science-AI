@@ -1,13 +1,6 @@
 # Example
 
-Before:
-
-```text
-"An apple"
-```
-
-After:
-
-```text
-apple
-```
+|Original Word|Stem|
+|---|---|
+|enjoyed|enjoy|
+|enjoyable|enjoy|
