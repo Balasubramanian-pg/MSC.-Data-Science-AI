@@ -1,12 +1,11 @@
 # Important Caveat
 
-Punctuation sometimes carries meaning.
+Stopwords sometimes matter contextually.
 
 Example:
 
-|Text|Meaning|
-|---|---|
-|"Let's eat, grandma."|Normal|
-|"Let's eat grandma."|Cannibalism|
+```text
+"To be or not to be"
+```
 
-Therefore aggressive cleaning can distort semantics.
+Removing stopwords destroys meaning entirely.
