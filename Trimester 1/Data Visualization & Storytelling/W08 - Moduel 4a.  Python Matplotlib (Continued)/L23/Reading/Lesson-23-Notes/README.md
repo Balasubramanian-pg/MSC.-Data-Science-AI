@@ -73,3 +73,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Plot](./Plot.md)
 
 ## [Data from the Web + Matplotlib](./Data%20from%20the%20Web%20%2B%20Matplotlib.md)
+
+## [Performance Considerations](./Performance%20Considerations.md)
