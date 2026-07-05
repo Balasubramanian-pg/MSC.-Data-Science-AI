@@ -167,3 +167,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Strategic Insight](./Strategic%20Insight.md)
 
 ## [Plotting Multiple Functions in Matplotlib](./Plotting%20Multiple%20Functions%20in%20Matplotlib.md)
+
+## [Recap of the Plotting Workflow](./Recap%20of%20the%20Plotting%20Workflow.md)
