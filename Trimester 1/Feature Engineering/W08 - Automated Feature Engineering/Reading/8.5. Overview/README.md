@@ -7,3 +7,5 @@ week: W08 - Automated Feature Engineering
 ## [8.5. Automated Feature Engineering](./8.5.%20Automated%20Feature%20Engineering.md)
 
 ## [8.5.1. Introduction to Automated Feature Engineering](./8.5.1.%20Introduction%20to%20Automated%20Feature%20Engineering.md)
+
+## [8.5.2. The Core Paradigm Shift](./8.5.2.%20The%20Core%20Paradigm%20Shift.md)
