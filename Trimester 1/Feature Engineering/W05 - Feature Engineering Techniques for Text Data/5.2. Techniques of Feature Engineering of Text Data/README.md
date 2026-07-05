@@ -65,3 +65,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Word: religion   | OHE Vector: [0. 1. 0.]](./Word%20-%20religion%20OHE%20Vector%20-%20%5B0.%201.%200.%5D.md)
 
 ## [Word: hockey     | OHE Vector: [1. 0. 0.]](./Word%20-%20hockey%20OHE%20Vector%20-%20%5B1.%200.%200.%5D.md)
+
+## [4. Part-of-Speech (POS) Tagging](./4.%20Part-of-Speech%20%28POS%29%20Tagging.md)
