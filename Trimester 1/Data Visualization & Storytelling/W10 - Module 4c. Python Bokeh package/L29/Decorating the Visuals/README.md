@@ -659,3 +659,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Better Practice](./Better%20Practice.md)
 
 ## [Line plot](./Line%20plot.md)
+
+## [Legend customization](./Legend%20customization.md)
