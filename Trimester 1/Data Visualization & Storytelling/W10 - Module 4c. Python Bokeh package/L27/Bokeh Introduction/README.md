@@ -13,3 +13,5 @@
 ## [4.2.6. Comparison with Static Visualization Libraries](./4.2.6.%20Comparison%20with%20Static%20Visualization%20Libraries.md)
 
 ## [4.2.7. Data Synchronization and Dynamic Updates](./4.2.7.%20Data%20Synchronization%20and%20Dynamic%20Updates.md)
+
+## [4.2.8. Application Domains and Use Cases](./4.2.8.%20Application%20Domains%20and%20Use%20Cases.md)
