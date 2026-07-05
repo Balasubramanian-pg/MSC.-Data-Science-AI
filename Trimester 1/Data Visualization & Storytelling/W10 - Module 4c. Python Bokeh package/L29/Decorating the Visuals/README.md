@@ -111,3 +111,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Mistake 2](./Mistake%202.md)
 
 ## [Mistake 3](./Mistake%203.md)
+
+## [Mental Model](./Mental%20Model.md)
