@@ -79,3 +79,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why the Martini Glass Works](./Why%20the%20Martini%20Glass%20Works.md)
 
 ## [Real-World Example](./Real-World%20Example.md)
+
+## [2. Drill-Down Interaction](./2.%20Drill-Down%20Interaction.md)
