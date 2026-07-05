@@ -3,3 +3,5 @@ title: W06 -Module 3b.  Visual Story Telling
 module: Statistical Modelling And Inferencing
 week: W06 -Module 3b.  Visual Story Telling
 ---
+
+## [Types of Narratives in Data Storytelling](./Types%20of%20Narratives%20in%20Data%20Storytelling.md)
