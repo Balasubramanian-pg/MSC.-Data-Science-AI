@@ -303,3 +303,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Historical Context Narrative](./Historical%20Context%20Narrative.md)
 
 ## [Why Context Changes Meaning](./Why%20Context%20Changes%20Meaning.md)
+
+## [The Ethical Responsibility of Analysts](./The%20Ethical%20Responsibility%20of%20Analysts.md)
