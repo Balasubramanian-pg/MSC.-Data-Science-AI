@@ -1,14 +1,12 @@
 # Answer
 
-✅ **Spearman's Correlation**
+✅ **Sequential Forward Selection**
 
 > [!NOTE]
 > **Reason**
 >
-> **Spearman's Correlation** measures the strength and direction of a **monotonic relationship** between variables using ranks rather than raw values. It can capture both linear and non-linear monotonic relationships, making it well-suited for ordinal features and continuous targets.
->
-> **Pearson's Correlation** is primarily designed for linear relationships.
+> **Sequential Forward Selection (SFS)** starts with an empty feature set and iteratively adds the feature that provides the greatest improvement in model performance at each step. Since it repeatedly trains and evaluates models, it is classified as a **wrapper method**.
 
-# Question 4
+# Question 5
 
-Which of the following is a wrapper method that begins with no features and incrementally adds the most beneficial feature at each step?
+Which method is most suitable when the dataset has very high dimensionality (e.g., gene expression data with 10,000+ features) and we want fast filtering of potentially relevant features?
