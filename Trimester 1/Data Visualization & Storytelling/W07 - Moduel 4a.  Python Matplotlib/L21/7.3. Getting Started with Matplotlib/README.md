@@ -341,3 +341,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [But Important Nuance](./But%20Important%20Nuance.md)
 
 ## [Weak Visualization](./Weak%20Visualization.md)
+
+## [Improved Visualization](./Improved%20Visualization.md)
