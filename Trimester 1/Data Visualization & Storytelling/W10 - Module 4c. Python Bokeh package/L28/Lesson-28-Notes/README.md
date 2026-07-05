@@ -31,3 +31,5 @@ Every single function, method, and parameter is explained in detail using Python
 ## [MODULE 2: DATAFRAMES & LINE PLOTS](./MODULE%202%20-%20DATAFRAMES%20%26%20LINE%20PLOTS.md)
 
 ## [🟢 Module 3: Scatter Plots and Markers](./%F0%9F%9F%A2%20Module%203%20-%20Scatter%20Plots%20and%20Markers.md)
+
+## [MODULE 3: SCATTER PLOTS & GLYPH LAYERING](./MODULE%203%20-%20SCATTER%20PLOTS%20%26%20GLYPH%20LAYERING.md)
