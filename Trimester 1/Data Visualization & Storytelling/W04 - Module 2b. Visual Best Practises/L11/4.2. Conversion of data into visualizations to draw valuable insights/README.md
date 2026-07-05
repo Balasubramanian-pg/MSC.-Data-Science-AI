@@ -51,3 +51,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Visualization Principle](./Important%20Visualization%20Principle.md)
 
 ## [When To Use Color](./When%20To%20Use%20Color.md)
+
+## [Good Uses](./Good%20Uses.md)
