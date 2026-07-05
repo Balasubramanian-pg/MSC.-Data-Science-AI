@@ -47,3 +47,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Colormaps Exist](./Why%20Colormaps%20Exist.md)
 
 ## [Viridis Colormap](./Viridis%20Colormap.md)
+
+## [Scatter Plot with Colormap](./Scatter%20Plot%20with%20Colormap.md)
