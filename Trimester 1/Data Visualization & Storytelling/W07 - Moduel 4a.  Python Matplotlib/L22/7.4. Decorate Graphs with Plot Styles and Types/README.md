@@ -73,3 +73,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Dash Cap Styles](./Dash%20Cap%20Styles.md)
 
 ## [Spines](./Spines.md)
+
+## [What Are Spines?](./What%20Are%20Spines.md)
