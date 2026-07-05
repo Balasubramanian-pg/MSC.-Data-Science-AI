@@ -147,3 +147,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Volume](./Volume.md)
 
 ## [Weakness](./Weakness.md)
+
+## [Angle](./Angle.md)
