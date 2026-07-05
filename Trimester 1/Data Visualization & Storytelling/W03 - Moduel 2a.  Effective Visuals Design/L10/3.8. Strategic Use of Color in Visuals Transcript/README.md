@@ -142,3 +142,5 @@ Bad visualizations use color excessively.
 ## [Final Takeaways](./Final%20Takeaways.md)
 
 ## [Color should:](./Color%20should%20-.md)
+
+## [Color should NOT:](./Color%20should%20NOT%20-.md)
