@@ -8,3 +8,5 @@
 ## [1.2 Visualization as an Iterative System](./1.2%20Visualization%20as%20an%20Iterative%20System.md)
 
 ## [2. Foundational Concepts Before Visualization](./2.%20Foundational%20Concepts%20Before%20Visualization.md)
+
+## [2.1 Understanding Variables and Attributes](./2.1%20Understanding%20Variables%20and%20Attributes.md)
