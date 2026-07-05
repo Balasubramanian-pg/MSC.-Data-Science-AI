@@ -149,3 +149,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Weakness](./Weakness.md)
 
 ## [Angle](./Angle.md)
+
+## [Length and Position](./Length%20and%20Position.md)
