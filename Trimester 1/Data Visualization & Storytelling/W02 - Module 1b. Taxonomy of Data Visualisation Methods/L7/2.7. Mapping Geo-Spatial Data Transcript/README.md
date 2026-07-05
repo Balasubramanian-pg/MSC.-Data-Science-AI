@@ -17,3 +17,5 @@ week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
 ## [5. Technical Geospatial Pipeline & Processing](./5.%20Technical%20Geospatial%20Pipeline%20%26%20Processing.md)
 
 ## [6. Advanced Performance, Edge Cases, and Debugging](./6.%20Advanced%20Performance%2C%20Edge%20Cases%2C%20and%20Debugging.md)
+
+## [Load high-resolution county boundaries](./Load%20high-resolution%20county%20boundaries.md)
