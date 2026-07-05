@@ -59,3 +59,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Emotional Encoding Pipeline](./Emotional%20Encoding%20Pipeline.md)
 
 ## [Better Structured Stories Improve Recall](./Better%20Structured%20Stories%20Improve%20Recall.md)
+
+## [Story Structures Organize Information](./Story%20Structures%20Organize%20Information.md)
