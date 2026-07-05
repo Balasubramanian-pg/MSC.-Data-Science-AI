@@ -359,3 +359,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Part 1: Editing Glyphs After Creation](./Part%201%20-%20Editing%20Glyphs%20After%20Creation.md)
 
 ## [Initial Circle Glyph](./Initial%20Circle%20Glyph.md)
+
+## [Dynamic Modification](./Dynamic%20Modification.md)
