@@ -93,3 +93,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Visual Hierarchy](./Visual%20Hierarchy.md)
 
 ## [Common Visualization Mistakes](./Common%20Visualization%20Mistakes.md)
+
+## [1. Overcrowding](./1.%20Overcrowding.md)
