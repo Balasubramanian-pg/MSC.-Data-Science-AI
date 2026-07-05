@@ -241,3 +241,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Death by Presentation](./Death%20by%20Presentation.md)
 
 ## [Cognitive Overload](./Cognitive%20Overload.md)
+
+## [NASA Columbia Shuttle Disaster (2003)](./NASA%20Columbia%20Shuttle%20Disaster%20%282003%29.md)
