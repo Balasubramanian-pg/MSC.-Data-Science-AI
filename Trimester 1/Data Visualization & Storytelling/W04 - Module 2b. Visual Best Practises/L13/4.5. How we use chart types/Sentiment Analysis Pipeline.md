@@ -1,10 +1,18 @@
 # Sentiment Analysis Pipeline
 
 ```mermaid
-flowchart TD
+flowchart LR
     A[Raw Text]
-    --> B[Language Processing]
-    --> C[Sentiment Detection]
-    --> D[Polarity Scoring]
+    --> B[Tokenization]
+    --> C[Language Model]
+    --> D[Sentiment Scoring]
     --> E[Visualization]
 ```
+
+The algorithm attempts to infer:
+
+- emotional intensity
+    
+- positive/negative orientation
+    
+- overall narrative tone
