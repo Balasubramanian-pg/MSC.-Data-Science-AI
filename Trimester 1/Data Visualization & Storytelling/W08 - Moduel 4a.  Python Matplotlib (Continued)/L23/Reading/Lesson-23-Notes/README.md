@@ -195,3 +195,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Breaking This Down](./Breaking%20This%20Down.md)
 
 ## [`2, 1`](./%602%2C%201%60.md)
+
+## [`fig`](./%60fig%60.md)
