@@ -39,3 +39,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Advanced Bubble Scaling](./Advanced%20Bubble%20Scaling.md)
 
 ## [Cognitive Problem with Bubble Charts](./Cognitive%20Problem%20with%20Bubble%20Charts.md)
+
+## [Improved Bubble Plot](./Improved%20Bubble%20Plot.md)
