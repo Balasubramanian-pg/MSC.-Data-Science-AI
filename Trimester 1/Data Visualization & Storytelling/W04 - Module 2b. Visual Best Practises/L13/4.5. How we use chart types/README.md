@@ -321,3 +321,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Normal Distribution Intuition](./Normal%20Distribution%20Intuition.md)
 
 ## [Subjectivity Distribution](./Subjectivity%20Distribution.md)
+
+## [Why It Becomes Skewed or Multimodal](./Why%20It%20Becomes%20Skewed%20or%20Multimodal.md)
