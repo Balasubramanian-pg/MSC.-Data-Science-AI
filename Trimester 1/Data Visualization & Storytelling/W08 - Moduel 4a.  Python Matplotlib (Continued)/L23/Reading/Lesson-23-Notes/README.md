@@ -245,3 +245,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Grid Layout](./Grid%20Layout.md)
 
 ## [High-Dimensional Dashboards](./High-Dimensional%20Dashboards.md)
+
+## [Common Time-Series Enhancements](./Common%20Time-Series%20Enhancements.md)
