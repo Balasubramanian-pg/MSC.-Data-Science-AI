@@ -83,3 +83,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [1. Named Colors](./1.%20Named%20Colors.md)
 
 ## [RGB Tuple Colors](./RGB%20Tuple%20Colors.md)
+
+## [RGB Color Intuition](./RGB%20Color%20Intuition.md)
