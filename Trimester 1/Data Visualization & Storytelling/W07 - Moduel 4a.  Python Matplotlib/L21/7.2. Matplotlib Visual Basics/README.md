@@ -47,3 +47,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Typical Workflow](./Typical%20Workflow.md)
 
 ## [6. Notebook Presentation Features](./6.%20Notebook%20Presentation%20Features.md)
+
+## [Why This Matters](./Why%20This%20Matters.md)
