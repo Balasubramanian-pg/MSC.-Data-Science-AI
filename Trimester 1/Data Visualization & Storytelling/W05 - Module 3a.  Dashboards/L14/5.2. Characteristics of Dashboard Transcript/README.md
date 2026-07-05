@@ -39,3 +39,5 @@ week: W05 - Module 3a.  Dashboards
 ## [3. Analytical Dashboards](./3.%20Analytical%20Dashboards.md)
 
 ## [Typical Users](./Typical%20Users.md)
+
+## [Dashboard Taxonomy](./Dashboard%20Taxonomy.md)
