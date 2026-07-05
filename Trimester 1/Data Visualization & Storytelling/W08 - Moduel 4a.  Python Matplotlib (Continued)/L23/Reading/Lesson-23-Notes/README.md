@@ -221,3 +221,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Different Colors Were Chosen](./Why%20Different%20Colors%20Were%20Chosen.md)
 
 ## [Crimson for Temperature](./Crimson%20for%20Temperature.md)
+
+## [Royal Blue for Rainfall](./Royal%20Blue%20for%20Rainfall.md)
