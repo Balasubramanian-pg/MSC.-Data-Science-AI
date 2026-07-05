@@ -144,3 +144,5 @@ The transcript introduces this challenge directly.
 ## [Final Mental Model](./Final%20Mental%20Model.md)
 
 ## [Final Takeaways](./Final%20Takeaways.md)
+
+## [Brand Colors](./Brand%20Colors.md)
