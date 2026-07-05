@@ -175,3 +175,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Fundamental Dashboard Question](./Fundamental%20Dashboard%20Question.md)
 
 ## [Dashboard Design Framework](./Dashboard%20Design%20Framework.md)
+
+## [Audience-Centric Dashboard Design](./Audience-Centric%20Dashboard%20Design.md)
