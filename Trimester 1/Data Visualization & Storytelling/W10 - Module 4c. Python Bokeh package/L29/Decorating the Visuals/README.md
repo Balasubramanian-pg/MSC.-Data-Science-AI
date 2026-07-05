@@ -279,3 +279,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Scatter Plot](./Scatter%20Plot.md)
 
 ## [Scatter Plot Logic](./Scatter%20Plot%20Logic.md)
+
+## [`size=10`](./%60size%3D10%60.md)
