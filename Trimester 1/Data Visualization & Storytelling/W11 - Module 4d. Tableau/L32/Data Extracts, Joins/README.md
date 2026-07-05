@@ -17,3 +17,5 @@
 ## [8.1.8. Left and Right Outer Joins](./8.1.8.%20Left%20and%20Right%20Outer%20Joins.md)
 
 ## [8.1.9. Example of a Left Outer Join](./8.1.9.%20Example%20of%20a%20Left%20Outer%20Join.md)
+
+## [8.1.10. Full Outer Joins](./8.1.10.%20Full%20Outer%20Joins.md)
