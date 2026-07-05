@@ -25,3 +25,5 @@
 ## [3.1 Human Cognitive Processing](./3.1%20Human%20Cognitive%20Processing.md)
 
 ## [3.2 Information Retention](./3.2%20Information%20Retention.md)
+
+## [3.3 Visual Communication vs Textual Communication](./3.3%20Visual%20Communication%20vs%20Textual%20Communication.md)
