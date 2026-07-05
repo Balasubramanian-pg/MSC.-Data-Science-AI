@@ -101,3 +101,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why This Example Matters](./Why%20This%20Example%20Matters.md)
 
 ## [The Power of Color Encoding](./The%20Power%20of%20Color%20Encoding.md)
+
+## [Important Visualization Bias](./Important%20Visualization%20Bias.md)
