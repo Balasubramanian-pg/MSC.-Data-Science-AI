@@ -15,3 +15,5 @@
 ## [10.1.7. Factors Affecting Data Architecture](./10.1.7.%20Factors%20Affecting%20Data%20Architecture.md)
 
 ## [10.1.8. Essential Visualization Concepts](./10.1.8.%20Essential%20Visualization%20Concepts.md)
+
+## [10.1.9. Common Pitfalls in Data Architecture](./10.1.9.%20Common%20Pitfalls%20in%20Data%20Architecture.md)
