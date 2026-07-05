@@ -145,3 +145,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Topic Number Matters](./Why%20Topic%20Number%20Matters.md)
 
 ## [Topic Granularity Tradeoff](./Topic%20Granularity%20Tradeoff.md)
+
+## [Topic Frequency Visualization](./Topic%20Frequency%20Visualization.md)
