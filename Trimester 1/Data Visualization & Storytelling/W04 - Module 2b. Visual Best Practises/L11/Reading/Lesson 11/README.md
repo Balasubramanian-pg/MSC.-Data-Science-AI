@@ -159,3 +159,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Expressiveness](./Expressiveness.md)
 
 ## [Effectiveness](./Effectiveness.md)
+
+## [Relationship Between Them](./Relationship%20Between%20Them.md)
