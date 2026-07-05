@@ -119,3 +119,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [No Uncertainty Representation](./No%20Uncertainty%20Representation.md)
 
 ## [Advanced Matplotlib Architecture](./Advanced%20Matplotlib%20Architecture.md)
+
+## [Performance Considerations](./Performance%20Considerations.md)
