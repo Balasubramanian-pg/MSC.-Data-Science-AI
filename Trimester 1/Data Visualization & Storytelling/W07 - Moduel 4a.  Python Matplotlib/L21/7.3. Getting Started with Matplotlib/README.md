@@ -201,3 +201,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Purpose of Grids](./Purpose%20of%20Grids.md)
 
 ## [Visual Effect](./Visual%20Effect.md)
+
+## [Tradeoff](./Tradeoff.md)
