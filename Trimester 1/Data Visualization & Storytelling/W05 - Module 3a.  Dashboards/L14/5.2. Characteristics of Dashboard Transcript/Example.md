@@ -1,5 +1,12 @@
 # Example
 
-A single red KPI among gray metrics immediately attracts attention.
+Instead of merely showing:  
+sales decline,
 
-No conscious reading required.
+modern systems may predict:
+
+- future churn,
+    
+- likely causes,
+    
+- recommended interventions.
