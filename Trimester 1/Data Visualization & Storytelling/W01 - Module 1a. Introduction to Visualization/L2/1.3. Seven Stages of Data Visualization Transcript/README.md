@@ -60,3 +60,5 @@
 ## [3.7 Stage 7: Interaction and Feedback](./3.7%20Stage%207%20-%20Interaction%20and%20Feedback.md)
 
 ## [Key Insight from Lecture](./Key%20Insight%20from%20Lecture.md)
+
+## [4. Detailed Case Study: Election Voter Turnout Visualization](./4.%20Detailed%20Case%20Study%20-%20Election%20Voter%20Turnout%20Visualization.md)
