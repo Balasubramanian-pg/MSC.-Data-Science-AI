@@ -55,3 +55,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Documentation Matters](./Why%20Documentation%20Matters.md)
 
 ## [Important Engineering Skill](./Important%20Engineering%20Skill.md)
+
+## [Official Documentation Areas Mentioned](./Official%20Documentation%20Areas%20Mentioned.md)
