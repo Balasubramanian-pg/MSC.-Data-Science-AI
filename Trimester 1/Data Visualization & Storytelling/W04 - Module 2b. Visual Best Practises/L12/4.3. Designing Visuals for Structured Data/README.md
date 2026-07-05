@@ -51,3 +51,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [3. Univariate Analysis](./3.%20Univariate%20Analysis.md)
 
 ## [Understanding One Variable at a Time](./Understanding%20One%20Variable%20at%20a%20Time.md)
+
+## [Univariate Workflow](./Univariate%20Workflow.md)
