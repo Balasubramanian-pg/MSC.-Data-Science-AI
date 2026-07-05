@@ -41,3 +41,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Cognitive Problem with Bubble Charts](./Cognitive%20Problem%20with%20Bubble%20Charts.md)
 
 ## [Improved Bubble Plot](./Improved%20Bubble%20Plot.md)
+
+## [Why `alpha` Matters](./Why%20%60alpha%60%20Matters.md)
