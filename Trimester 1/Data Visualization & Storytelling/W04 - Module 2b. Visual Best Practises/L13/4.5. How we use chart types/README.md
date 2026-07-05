@@ -199,3 +199,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Text Visualization as Information Reduction](./Text%20Visualization%20as%20Information%20Reduction.md)
 
 ## [Modern NLP Pipeline](./Modern%20NLP%20Pipeline.md)
+
+## [Sentiment Analysis, Joint Plots, and Semantic Emotion Modeling](./Sentiment%20Analysis%2C%20Joint%20Plots%2C%20and%20Semantic%20Emotion%20Modeling.md)
