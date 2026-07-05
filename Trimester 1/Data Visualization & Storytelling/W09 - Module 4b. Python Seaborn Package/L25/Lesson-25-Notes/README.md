@@ -19,3 +19,5 @@ I have organized the code into a logical, executable structure using a mock data
 ## [Apply Seaborn's default aesthetic theme globally for cleaner visuals](./Apply%20Seaborn%27s%20default%20aesthetic%20theme%20globally%20for%20cleaner%20visuals.md)
 
 ## [1 & 2. Basic Syntax & Core Philosophical Differences](./1%20%26%202.%20Basic%20Syntax%20%26%20Core%20Philosophical%20Differences.md)
+
+## [--- Approach A: Matplotlib (Low-level, Explicit, Array-based) ---](./---%20Approach%20A%20-%20Matplotlib%20%28Low-level%2C%20Explicit%2C%20Array-based%29%20---.md)
