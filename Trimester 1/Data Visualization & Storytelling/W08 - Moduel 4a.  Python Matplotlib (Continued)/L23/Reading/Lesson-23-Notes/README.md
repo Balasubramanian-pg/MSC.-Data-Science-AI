@@ -135,3 +135,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Datetime Parsing Matters](./Why%20Datetime%20Parsing%20Matters.md)
 
 ## [Understanding DataFrames in Time-Series Systems](./Understanding%20DataFrames%20in%20Time-Series%20Systems.md)
+
+## [Why Indexing Matters](./Why%20Indexing%20Matters.md)
