@@ -1,5 +1,10 @@
 # Example
 
 ```python
-p.title.text_font_style = "bold"
+p.line(
+    x,
+    y,
+    line_width=4,
+    line_dash="dashed"
+)
 ```
