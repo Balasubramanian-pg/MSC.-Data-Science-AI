@@ -74,3 +74,5 @@
 ## [4.5 Initial Visualization Problems](./4.5%20Initial%20Visualization%20Problems.md)
 
 ## [4.6 Refined Visualization Design](./4.6%20Refined%20Visualization%20Design.md)
+
+## [4.7 Stakeholder Interaction and Iteration](./4.7%20Stakeholder%20Interaction%20and%20Iteration.md)
