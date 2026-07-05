@@ -111,3 +111,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [NumPy](./NumPy.md)
 
 ## [Pandas](./Pandas.md)
+
+## [Matplotlib](./Matplotlib.md)
