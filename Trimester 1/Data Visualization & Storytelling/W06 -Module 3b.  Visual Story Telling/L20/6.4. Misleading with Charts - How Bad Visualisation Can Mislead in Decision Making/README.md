@@ -279,3 +279,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Sequence B](./Sequence%20B.md)
 
 ## [The Hidden Power of Dashboard Architecture](./The%20Hidden%20Power%20of%20Dashboard%20Architecture.md)
+
+## [Cherry Picking](./Cherry%20Picking.md)
