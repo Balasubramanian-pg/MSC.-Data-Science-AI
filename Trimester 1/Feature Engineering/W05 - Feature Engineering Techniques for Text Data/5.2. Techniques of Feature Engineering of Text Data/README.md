@@ -59,3 +59,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Categories discovered: ['hockey' 'religion' 'science']](./Categories%20discovered%20-%20%5B%27hockey%27%20%27religion%27%20%27science%27%5D.md)
 
 ## [](./.md)
+
+## [Word: science    | OHE Vector: [0. 0. 1.]](./Word%20-%20science%20OHE%20Vector%20-%20%5B0.%200.%201.%5D.md)
