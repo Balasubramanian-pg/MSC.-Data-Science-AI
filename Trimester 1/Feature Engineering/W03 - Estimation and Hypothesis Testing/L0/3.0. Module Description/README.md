@@ -21,3 +21,5 @@
 ## [3.0.10. Example of Pearson Correlation Filtering](./3.0.10.%20Example%20of%20Pearson%20Correlation%20Filtering.md)
 
 ## [3.0.11. Multicollinearity and Feature Redundancy](./3.0.11.%20Multicollinearity%20and%20Feature%20Redundancy.md)
+
+## [3.0.12. Strategic Application Framework](./3.0.12.%20Strategic%20Application%20Framework.md)
