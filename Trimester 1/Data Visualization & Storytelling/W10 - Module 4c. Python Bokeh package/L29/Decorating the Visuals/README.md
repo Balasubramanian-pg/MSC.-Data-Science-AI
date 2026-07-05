@@ -287,3 +287,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Plot dimensions](./Plot%20dimensions.md)
 
 ## [Border styling](./Border%20styling.md)
+
+## [Background styling](./Background%20styling.md)
