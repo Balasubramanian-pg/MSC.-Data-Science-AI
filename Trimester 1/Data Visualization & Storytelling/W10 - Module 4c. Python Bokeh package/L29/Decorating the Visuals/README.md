@@ -443,3 +443,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Axis Label Orientation](./Axis%20Label%20Orientation.md)
 
 ## [Problem](./Problem.md)
+
+## [Solution: Rotate Labels](./Solution%20-%20Rotate%20Labels.md)
