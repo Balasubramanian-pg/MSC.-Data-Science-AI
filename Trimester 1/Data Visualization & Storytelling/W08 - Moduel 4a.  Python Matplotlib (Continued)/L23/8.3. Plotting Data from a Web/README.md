@@ -47,3 +47,5 @@ It is fundamentally about:
 ## [Why This Matters](./Why%20This%20Matters.md)
 
 ## [Time-Series Mental Model](./Time-Series%20Mental%20Model.md)
+
+## [Step 6: Plot Maximum Temperature](./Step%206%20-%20Plot%20Maximum%20Temperature.md)
