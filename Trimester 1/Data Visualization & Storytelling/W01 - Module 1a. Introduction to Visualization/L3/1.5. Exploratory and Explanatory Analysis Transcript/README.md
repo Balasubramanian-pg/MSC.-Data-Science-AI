@@ -5,3 +5,5 @@
 ## [Table of Contents](./Table%20of%20Contents.md)
 
 ## [1. Introduction to Exploratory and Explanatory Analysis](./1.%20Introduction%20to%20Exploratory%20and%20Explanatory%20Analysis.md)
+
+## [1.1 Why These Concepts Matter](./1.1%20Why%20These%20Concepts%20Matter.md)
