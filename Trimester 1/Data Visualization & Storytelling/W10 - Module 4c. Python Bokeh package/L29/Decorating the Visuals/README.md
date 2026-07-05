@@ -835,3 +835,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Night Sky](./Night%20Sky.md)
 
 ## [Caliber](./Caliber.md)
+
+## [Dark Minimal](./Dark%20Minimal.md)
