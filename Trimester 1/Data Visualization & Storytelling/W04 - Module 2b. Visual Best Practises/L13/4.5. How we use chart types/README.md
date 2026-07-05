@@ -251,3 +251,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Multivariate Text Analytics](./Multivariate%20Text%20Analytics.md)
 
 ## [What Is a Joint Plot?](./What%20Is%20a%20Joint%20Plot.md)
+
+## [Joint Plot Structure](./Joint%20Plot%20Structure.md)
