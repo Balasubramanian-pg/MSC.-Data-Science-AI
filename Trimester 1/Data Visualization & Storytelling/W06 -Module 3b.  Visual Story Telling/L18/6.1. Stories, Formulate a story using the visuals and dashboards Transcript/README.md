@@ -119,3 +119,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Presentation Is Broader Than Slides](./Presentation%20Is%20Broader%20Than%20Slides.md)
 
 ## [Presentation as Attention Architecture](./Presentation%20as%20Attention%20Architecture.md)
+
+## [Garr Reynolds Principles](./Garr%20Reynolds%20Principles.md)
