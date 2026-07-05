@@ -149,3 +149,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Visualization Principle](./Visualization%20Principle.md)
 
 ## [Design Strategies for Iconic Memory](./Design%20Strategies%20for%20Iconic%20Memory.md)
+
+## [Use Strong Contrast](./Use%20Strong%20Contrast.md)
