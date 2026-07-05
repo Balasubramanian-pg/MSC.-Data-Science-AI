@@ -71,3 +71,5 @@
 ## [5. Case Study: Lok Sabha Election Voter Participation](./5.%20Case%20Study%20-%20Lok%20Sabha%20Election%20Voter%20Participation.md)
 
 ## [5.1 Exploratory Phase](./5.1%20Exploratory%20Phase.md)
+
+## [Key Variable](./Key%20Variable.md)
