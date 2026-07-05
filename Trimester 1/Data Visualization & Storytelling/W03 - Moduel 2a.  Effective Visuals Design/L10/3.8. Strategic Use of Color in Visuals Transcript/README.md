@@ -134,3 +134,5 @@ Bad visualizations use color excessively.
 ## [Advanced Insight: Color Creates Visual Weight](./Advanced%20Insight%20-%20Color%20Creates%20Visual%20Weight.md)
 
 ## [Color Consistency Principle](./Color%20Consistency%20Principle.md)
+
+## [Final Design Framework](./Final%20Design%20Framework.md)
