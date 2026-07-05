@@ -193,3 +193,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Design Style](./Design%20Style.md)
 
 ## [Analytical Dashboards](./Analytical%20Dashboards.md)
+
+## [Analyst Cognitive Style](./Analyst%20Cognitive%20Style.md)
