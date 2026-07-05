@@ -72,3 +72,5 @@ The transcript introduces this challenge directly.
 ## [Example](./Example.md)
 
 ## [Bad Approach](./Bad%20Approach.md)
+
+## [Better Approach](./Better%20Approach.md)
