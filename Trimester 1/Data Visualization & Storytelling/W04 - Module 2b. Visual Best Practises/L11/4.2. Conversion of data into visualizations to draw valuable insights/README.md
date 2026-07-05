@@ -93,3 +93,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Relative Ranking](./Relative%20Ranking.md)
 
 ## [What They Communicate Poorly](./What%20They%20Communicate%20Poorly.md)
+
+## [Why Slope Is Powerful](./Why%20Slope%20Is%20Powerful.md)
