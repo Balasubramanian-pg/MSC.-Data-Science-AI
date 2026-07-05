@@ -9,3 +9,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Introduction](./Introduction.md)
 
 ## [The Psychology of Visual Encoding](./The%20Psychology%20of%20Visual%20Encoding.md)
+
+## [Pre-attentive Processing](./Pre-attentive%20Processing.md)
