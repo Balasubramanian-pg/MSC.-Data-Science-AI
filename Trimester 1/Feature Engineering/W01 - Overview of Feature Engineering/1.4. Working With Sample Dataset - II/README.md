@@ -9,3 +9,5 @@ week: W01 - Overview of Feature Engineering
 ## [1.4.1. From Raw Chemical Data to Predictive Signals](./1.4.1.%20From%20Raw%20Chemical%20Data%20to%20Predictive%20Signals.md)
 
 ## [1.4.2. Data Loading and Integrity Checks](./1.4.2.%20Data%20Loading%20and%20Integrity%20Checks.md)
+
+## [1.4.3. Correlation Analysis and Linear Relationships](./1.4.3.%20Correlation%20Analysis%20and%20Linear%20Relationships.md)
