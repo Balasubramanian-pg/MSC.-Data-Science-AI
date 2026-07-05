@@ -57,3 +57,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why This Distorts Perception](./Why%20This%20Distorts%20Perception.md)
 
 ## [Visual Perception Problem](./Visual%20Perception%20Problem.md)
+
+## [The Importance of Baselines](./The%20Importance%20of%20Baselines.md)
