@@ -13,3 +13,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Historical Perspective](./Historical%20Perspective.md)
 
 ## [Storytelling as Cognitive Compression](./Storytelling%20as%20Cognitive%20Compression.md)
+
+## [Cognitive Compression Model](./Cognitive%20Compression%20Model.md)
