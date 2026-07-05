@@ -81,3 +81,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [The Viterbi algorithm runs under the hood here](./The%20Viterbi%20algorithm%20runs%20under%20the%20hood%20here.md)
 
 ## [Step 3: Feature Engineering - Convert tags to counts](./Step%203%20-%20Feature%20Engineering%20-%20Convert%20tags%20to%20counts.md)
+
+## [Count frequencies of grammatical structures](./Count%20frequencies%20of%20grammatical%20structures.md)
