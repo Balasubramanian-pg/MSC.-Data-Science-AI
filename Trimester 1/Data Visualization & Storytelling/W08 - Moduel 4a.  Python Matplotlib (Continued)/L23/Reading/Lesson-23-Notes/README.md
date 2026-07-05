@@ -77,3 +77,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Performance Considerations](./Performance%20Considerations.md)
 
 ## [CSV vs JSON](./CSV%20vs%20JSON.md)
+
+## [Failure Modes in Remote Data Systems](./Failure%20Modes%20in%20Remote%20Data%20Systems.md)
