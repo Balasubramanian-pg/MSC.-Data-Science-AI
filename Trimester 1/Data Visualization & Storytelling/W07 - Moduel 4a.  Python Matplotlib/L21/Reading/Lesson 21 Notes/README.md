@@ -249,3 +249,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Legends Become Necessary](./Why%20Legends%20Become%20Necessary.md)
 
 ## [Plot Enhancements in Matplotlib](./Plot%20Enhancements%20in%20Matplotlib.md)
+
+## [1. Adding a Second Line: Cosine Function](./1.%20Adding%20a%20Second%20Line%20-%20Cosine%20Function.md)
