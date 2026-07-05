@@ -15,3 +15,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Seaborn](./Seaborn.md)
 
 ## [Bokeh](./Bokeh.md)
+
+## [Ecosystem Relationship](./Ecosystem%20Relationship.md)
