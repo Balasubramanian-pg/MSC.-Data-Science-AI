@@ -1,18 +1,14 @@
 # Example
 
-Bad Design:
+Executives do not want:
 
-- India selected,
+- server logs,
     
-- but India bar looks identical to others.
+- SQL query diagnostics,
     
-
-Good Design:
-
-- India highlighted in accent color,
-    
-- others muted.
+- minute-level operational charts.
     
 
-This immediately reinforces:  
-user context.
+Operators do not want:
+
+- quarterly strategic summaries.
