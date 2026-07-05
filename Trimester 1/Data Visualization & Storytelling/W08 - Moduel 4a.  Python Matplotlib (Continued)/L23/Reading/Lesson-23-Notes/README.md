@@ -207,3 +207,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Shared Axes Matter](./Why%20Shared%20Axes%20Matter.md)
 
 ## [Load dataset](./Load%20dataset.md)
+
+## [Create subplots](./Create%20subplots.md)
