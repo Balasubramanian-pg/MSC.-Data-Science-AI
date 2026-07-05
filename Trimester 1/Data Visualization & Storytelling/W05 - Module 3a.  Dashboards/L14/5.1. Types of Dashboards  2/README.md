@@ -51,3 +51,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Clarity Requires](./Clarity%20Requires.md)
 
 ## [4. Intuitive](./4.%20Intuitive.md)
+
+## [Important UX Principle](./Important%20UX%20Principle.md)
