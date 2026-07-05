@@ -89,3 +89,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Hidden Insight](./Important%20Hidden%20Insight.md)
 
 ## [Why Modern NLP Works Surprisingly Well](./Why%20Modern%20NLP%20Works%20Surprisingly%20Well.md)
+
+## [Modern NLP Architecture](./Modern%20NLP%20Architecture.md)
