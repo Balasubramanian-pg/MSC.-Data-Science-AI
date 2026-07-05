@@ -35,3 +35,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [13. Real-World Applications](./13.%20Real-World%20Applications.md)
 
 ## [14. Machine Learning Connections](./14.%20Machine%20Learning%20Connections.md)
+
+## [15. Interview-Style Insights](./15.%20Interview-Style%20Insights.md)
