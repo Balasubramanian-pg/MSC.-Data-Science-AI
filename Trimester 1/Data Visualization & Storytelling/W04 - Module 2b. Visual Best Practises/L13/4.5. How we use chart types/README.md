@@ -273,3 +273,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Examples](./Examples.md)
 
 ## [Objective Statement](./Objective%20Statement.md)
+
+## [Subjective Statement](./Subjective%20Statement.md)
