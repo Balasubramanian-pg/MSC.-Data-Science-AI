@@ -37,3 +37,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Panchatantra Example](./Panchatantra%20Example.md)
 
 ## [Why Word Clouds Work](./Why%20Word%20Clouds%20Work.md)
+
+## [Cognitive Advantage](./Cognitive%20Advantage.md)
