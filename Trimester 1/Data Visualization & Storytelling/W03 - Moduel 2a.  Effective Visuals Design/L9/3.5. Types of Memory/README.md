@@ -217,3 +217,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [8. Spatial Position](./8.%20Spatial%20Position.md)
 
 ## [9. Motion](./9.%20Motion.md)
+
+## [Important Warning About Pre-Attentive Attributes](./Important%20Warning%20About%20Pre-Attentive%20Attributes.md)
