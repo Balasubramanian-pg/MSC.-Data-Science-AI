@@ -143,3 +143,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [4. Operational Comparison Framework](./4.%20Operational%20Comparison%20Framework.md)
 
 ## [1. Design Theory: Gestalt & The Cognitive Comparison Flow](./1.%20Design%20Theory%20-%20Gestalt%20%26%20The%20Cognitive%20Comparison%20Flow.md)
+
+## [2. Statistical Architecture: The Anatomy of a Box Plot](./2.%20Statistical%20Architecture%20-%20The%20Anatomy%20of%20a%20Box%20Plot.md)
