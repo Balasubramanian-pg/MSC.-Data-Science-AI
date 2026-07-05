@@ -87,3 +87,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Forgetting Datetime Indexes](./Forgetting%20Datetime%20Indexes.md)
 
 ## [Not Scaling Bubble Sizes](./Not%20Scaling%20Bubble%20Sizes.md)
+
+## [Treating Random Walks as Predictive Trends](./Treating%20Random%20Walks%20as%20Predictive%20Trends.md)
