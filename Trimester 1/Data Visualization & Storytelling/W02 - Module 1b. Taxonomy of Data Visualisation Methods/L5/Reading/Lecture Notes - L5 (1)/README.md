@@ -18,3 +18,5 @@
 ## [6. Designing for Attention](./6.%20Designing%20for%20Attention.md)
 
 ## [7. Managing Visual Contrast](./7.%20Managing%20Visual%20Contrast.md)
+
+## [8. Emphasis Techniques](./8.%20Emphasis%20Techniques.md)
