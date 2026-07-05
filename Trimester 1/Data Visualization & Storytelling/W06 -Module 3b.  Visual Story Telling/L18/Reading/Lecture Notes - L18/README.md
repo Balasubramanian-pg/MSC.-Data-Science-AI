@@ -147,3 +147,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Cognitive Load Theory](./Cognitive%20Load%20Theory.md)
 
 ## [Restraint Principle](./Restraint%20Principle.md)
+
+## [Important Design Insight](./Important%20Design%20Insight.md)
