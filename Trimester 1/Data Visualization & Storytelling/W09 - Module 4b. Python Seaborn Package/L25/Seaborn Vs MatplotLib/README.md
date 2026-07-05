@@ -79,3 +79,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Use Matplotlib overlay solely to polish titles and labels](./Use%20Matplotlib%20overlay%20solely%20to%20polish%20titles%20and%20labels.md)
 
 ## [1. Syntax Mechanics: Subsetting vs. Column Mapping](./1.%20Syntax%20Mechanics%20-%20Subsetting%20vs.%20Column%20Mapping.md)
+
+## [2. Aesthetics Theory: The "Garnished Food" Concept](./2.%20Aesthetics%20Theory%20-%20The%20Garnished%20Food%20Concept.md)
