@@ -1,20 +1,17 @@
 # Example
 
-Difficult to remember:
+Instead of:
 
-- “Revenue increased 12%.”
+> “10,000 users experienced outages.”
+
+A story says:
+
+> “Hospitals lost access to patient records for 27 minutes during peak emergency operations.”
+
+The second creates:
+
+- immediacy,
     
-
-Easier to remember:
-
-> “After redesigning the onboarding process, first-time customer retention improved, leading to a 12% revenue increase.”
-
-Now the fact has:
-
-- cause,
+- seriousness,
     
-- sequence,
-    
-- interpretation,
-    
-- and meaning.
+- emotional engagement.
