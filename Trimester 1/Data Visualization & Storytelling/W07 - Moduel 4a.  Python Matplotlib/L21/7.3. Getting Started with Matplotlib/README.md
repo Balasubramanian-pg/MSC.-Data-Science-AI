@@ -329,3 +329,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [5. Adding Colors](./5.%20Adding%20Colors.md)
 
 ## [Pre-attentive Processing](./Pre-attentive%20Processing.md)
+
+## [Important Warning](./Important%20Warning.md)
