@@ -159,3 +159,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [We explicitly pass the 'order' parameter to ensure we sort the categories](./We%20explicitly%20pass%20the%20%27order%27%20parameter%20to%20ensure%20we%20sort%20the%20categories.md)
 
 ## [by descending median score, directly satisfying the Gestalt comparison principles.](./by%20descending%20median%20score%2C%20directly%20satisfying%20the%20Gestalt%20comparison%20principles.md)
+
+## [Step B: Use Matplotlib to overlay an executive-level reference line.](./Step%20B%20-%20Use%20Matplotlib%20to%20overlay%20an%20executive-level%20reference%20line.md)
