@@ -17,3 +17,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Example](./Example.md)
 
 ## [What Is Data Storytelling?](./What%20Is%20Data%20Storytelling.md)
+
+## [Why Most Dashboards Fail](./Why%20Most%20Dashboards%20Fail.md)
