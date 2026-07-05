@@ -1,20 +1,9 @@
 # Example
 
-Bad Slide:
+Bad:
 
-- 12 bullets
-    
-- 3 charts
-    
-- 2 tables
-    
-- 5 colors
-    
+> “Our multi-channel optimization initiative improved customer lifecycle efficiency.”
 
-Good Slide:
+Better:
 
-- 1 key message
-    
-- 1 supporting visual
-    
-- strong visual hierarchy
+> “Customers now buy faster and leave less often.”
