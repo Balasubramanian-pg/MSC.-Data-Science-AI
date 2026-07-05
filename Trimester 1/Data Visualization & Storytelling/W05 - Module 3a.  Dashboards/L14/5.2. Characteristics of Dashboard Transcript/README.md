@@ -25,3 +25,5 @@ week: W05 - Module 3a.  Dashboards
 ## [1. Executive Dashboards](./1.%20Executive%20Dashboards.md)
 
 ## [Characteristics](./Characteristics.md)
+
+## [Typical Metrics](./Typical%20Metrics.md)
