@@ -1,15 +1,32 @@
 # Advanced Insight
 
-Subplots are fundamentally about:
+The lecture is transitioning from:
 
-> preserving relational structure while reducing visual interference.
+```text
+descriptive visualization
+```
 
-This is an information architecture problem, not merely a plotting problem.
+to:
 
-Good subplot design minimizes:
+```text
+predictive visualization
+```
 
-- cognitive switching cost
+This is a major conceptual leap.
+
+Visualization is no longer just about displaying observations.
+
+It becomes a tool for:
+
+- inference
     
-- perceptual ambiguity
+- forecasting
     
-- comparison friction
+- modeling
+    
+- decision support
+    
+
+That transition forms the foundation of modern analytical systems.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
