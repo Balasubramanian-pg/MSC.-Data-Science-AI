@@ -217,3 +217,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Data](./Data.md)
 
 ## [Variables](./Variables.md)
+
+## [Figure](./Figure.md)
