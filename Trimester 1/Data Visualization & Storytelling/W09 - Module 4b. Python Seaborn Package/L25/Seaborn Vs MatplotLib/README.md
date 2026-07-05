@@ -105,3 +105,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Reset backend styling to default plain state for Matplotlib's demonstration](./Reset%20backend%20styling%20to%20default%20plain%20state%20for%20Matplotlib%27s%20demonstration.md)
 
 ## [--- Approach A: Matplotlib Baseline Histogram (Ungarnished) ---](./---%20Approach%20A%20-%20Matplotlib%20Baseline%20Histogram%20%28Ungarnished%29%20---.md)
+
+## [--- Approach B: Seaborn Clean Histogram (Garnished Default) ---](./---%20Approach%20B%20-%20Seaborn%20Clean%20Histogram%20%28Garnished%20Default%29%20---.md)
