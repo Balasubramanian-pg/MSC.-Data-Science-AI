@@ -223,3 +223,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Why Overuse Is Dangerous](./Why%20Overuse%20Is%20Dangerous.md)
 
 ## [Good Design Principle](./Good%20Design%20Principle.md)
+
+## [Final Visualization Insight](./Final%20Visualization%20Insight.md)
