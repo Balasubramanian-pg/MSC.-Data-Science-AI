@@ -95,3 +95,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Machine Learning Connections](./Machine%20Learning%20Connections.md)
 
 ## [Common Mistakes](./Common%20Mistakes.md)
+
+## [Overdecorating Charts](./Overdecorating%20Charts.md)
