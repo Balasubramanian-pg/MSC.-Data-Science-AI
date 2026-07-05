@@ -261,3 +261,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Operational Decisions](./Operational%20Decisions.md)
 
 ## [Operational Dashboard Logic](./Operational%20Dashboard%20Logic.md)
+
+## [Important Organizational Insight](./Important%20Organizational%20Insight.md)
