@@ -1,21 +1,30 @@
 # The Deeper Principle
 
-Good visualization is not:
+This lecture section reinforces a crucial truth:
 
-- artistic decoration
+> Human perception is hierarchical and biased.
+
+People do not analyze charts mathematically first.
+
+They react first to:
+
+- shape
     
-- aesthetic complexity
+- color
     
-- visual spectacle
+- contrast
+    
+- motion
+    
+- spatial prominence
     
 
-It is:
+Only afterward do they consciously inspect numbers.
 
-> perceptual engineering.
+That means visualization design directly shapes:
 
-The goal is to align:
-
-- visual perception  
-    with
+- interpretation
     
-- numerical truth
+- emotional reaction
+    
+- perceived urgency
