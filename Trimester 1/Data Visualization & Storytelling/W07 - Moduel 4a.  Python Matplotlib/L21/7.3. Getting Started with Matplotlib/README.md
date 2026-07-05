@@ -27,3 +27,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [3. Comments and Annotations](./3.%20Comments%20and%20Annotations.md)
 
 ## [This is a comment](./This%20is%20a%20comment.md)
+
+## [Why Comments Matter](./Why%20Comments%20Matter.md)
