@@ -1,9 +1,9 @@
 # Characteristics
 
-|Feature|Behavior|
-|---|---|
-|Real-time updates|High refresh frequency|
-|Alert-driven|Immediate visibility|
-|Detailed monitoring|Fine-grained metrics|
-|Exception-focused|Highlight anomalies|
-|Action-oriented|Trigger intervention|
+- Lower refresh frequency
+    
+- Aggregated trends
+    
+- Historical comparisons
+    
+- Forecast-oriented views
