@@ -183,3 +183,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [1. Creating the DataFrame](./1.%20Creating%20the%20DataFrame.md)
 
 ## [Important Concept: Index](./Important%20Concept%20-%20Index.md)
+
+## [Extracting Columns](./Extracting%20Columns.md)
