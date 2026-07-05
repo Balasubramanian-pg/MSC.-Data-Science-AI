@@ -169,3 +169,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [High Effectiveness, Low Expressiveness](./High%20Effectiveness%2C%20Low%20Expressiveness.md)
 
 ## [Goal](./Goal.md)
+
+## [Advanced Insight](./Advanced%20Insight.md)
