@@ -219,3 +219,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why This Matters](./Why%20This%20Matters.md)
 
 ## [7. Plotting a Linear Equation](./7.%20Plotting%20a%20Linear%20Equation.md)
+
+## [Mathematical Meaning](./Mathematical%20Meaning.md)
