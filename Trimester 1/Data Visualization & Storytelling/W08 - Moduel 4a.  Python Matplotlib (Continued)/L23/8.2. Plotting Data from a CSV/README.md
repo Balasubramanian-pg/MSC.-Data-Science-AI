@@ -67,3 +67,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Visual Difference](./Visual%20Difference.md)
 
 ## [Raw Noise](./Raw%20Noise.md)
+
+## [Random Walk](./Random%20Walk.md)
