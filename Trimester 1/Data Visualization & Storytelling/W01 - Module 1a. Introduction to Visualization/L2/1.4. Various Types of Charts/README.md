@@ -40,3 +40,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [Business Decision Enabled](./Business%20Decision%20Enabled.md)
 
 ## [3.4 Stacked Bar Charts](./3.4%20Stacked%20Bar%20Charts.md)
+
+## [Example Use Cases](./Example%20Use%20Cases.md)
