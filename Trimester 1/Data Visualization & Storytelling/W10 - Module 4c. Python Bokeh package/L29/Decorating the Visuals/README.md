@@ -237,3 +237,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Good Practice](./Good%20Practice.md)
 
 ## [The Most Important Takeaway](./The%20Most%20Important%20Takeaway.md)
+
+## [Deep Insight](./Deep%20Insight.md)
