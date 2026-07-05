@@ -33,3 +33,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Bad Visualization](./Bad%20Visualization.md)
 
 ## [Good Visualization](./Good%20Visualization.md)
+
+## [Chartjunk Problem](./Chartjunk%20Problem.md)
