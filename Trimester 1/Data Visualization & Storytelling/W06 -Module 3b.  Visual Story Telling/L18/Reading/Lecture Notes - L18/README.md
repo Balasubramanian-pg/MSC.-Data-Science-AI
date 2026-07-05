@@ -157,3 +157,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [One Idea Per Slide](./One%20Idea%20Per%20Slide.md)
 
 ## [Slide Narrative Flow](./Slide%20Narrative%20Flow.md)
+
+## [Why Simplicity Feels Powerful](./Why%20Simplicity%20Feels%20Powerful.md)
