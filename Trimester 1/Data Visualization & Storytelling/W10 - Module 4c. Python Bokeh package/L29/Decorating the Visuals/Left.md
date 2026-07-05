@@ -1,0 +1,5 @@
+# Left
+
+```text
+Sales Dashboard
+```
