@@ -59,3 +59,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Note: Great for digital presentations, but has limitations in Black & White printouts.](./Note%20-%20Great%20for%20digital%20presentations%2C%20but%20has%20limitations%20in%20Black%20%26%20White%20printouts.md)
 
 ## [Move the legend outside of the main charting area to prevent data overlapping](./Move%20the%20legend%20outside%20of%20the%20main%20charting%20area%20to%20prevent%20data%20overlapping.md)
+
+## [3. FACETING (SMALL MULTIPLES): Reducing Cognitive Load with `relplot`](./3.%20FACETING%20%28SMALL%20MULTIPLES%29%20-%20Reducing%20Cognitive%20Load%20with%20%60relplot%60.md)
