@@ -465,3 +465,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Label styling](./Label%20styling.md)
 
 ## [Rotate labels](./Rotate%20labels.md)
+
+## [Number formatting](./Number%20formatting.md)
