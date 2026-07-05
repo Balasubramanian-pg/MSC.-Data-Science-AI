@@ -27,3 +27,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [3. MULTIDIMENSIONAL: Adding Categories (Hue & Style)](./3.%20MULTIDIMENSIONAL%20-%20Adding%20Categories%20%28Hue%20%26%20Style%29.md)
 
 ## [We use 'hue' to color lines by region and 'style' to change line patterns by event.](./We%20use%20%27hue%27%20to%20color%20lines%20by%20region%20and%20%27style%27%20to%20change%20line%20patterns%20by%20event.md)
+
+## [Move the legend outside the plot box so it doesn't overlap data points](./Move%20the%20legend%20outside%20the%20plot%20box%20so%20it%20doesn%27t%20overlap%20data%20points.md)
