@@ -293,3 +293,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Remove grid lines](./Remove%20grid%20lines.md)
 
 ## [Scatter plot](./Scatter%20plot.md)
+
+## [Engineering Analogy](./Engineering%20Analogy.md)
