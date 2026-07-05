@@ -45,3 +45,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Color Maps](./Color%20Maps.md)
 
 ## [Why Colormaps Exist](./Why%20Colormaps%20Exist.md)
+
+## [Viridis Colormap](./Viridis%20Colormap.md)
