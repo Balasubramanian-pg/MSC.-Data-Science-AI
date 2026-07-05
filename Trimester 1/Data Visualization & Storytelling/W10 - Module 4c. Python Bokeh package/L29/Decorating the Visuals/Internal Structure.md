@@ -1,11 +1,11 @@
 # Internal Structure
 
-Conceptually:
-
 ```mermaid
 flowchart TD
-    A[Glyph Renderer]
-    A --> B[Glyph]
-    B --> C[Fill Properties]
-    B --> D[Line Properties]
+    A[Figure]
+    A --> B[Title Object]
+    A --> C[Axes]
+    A --> D[Glyphs]
 ```
+
+This matters because the title becomes editable later.
