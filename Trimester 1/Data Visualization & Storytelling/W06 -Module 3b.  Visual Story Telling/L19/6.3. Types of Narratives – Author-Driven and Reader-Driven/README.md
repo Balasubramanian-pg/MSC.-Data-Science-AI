@@ -49,3 +49,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Visual Hierarchy](./Visual%20Hierarchy.md)
 
 ## [Transitions and Animation](./Transitions%20and%20Animation.md)
+
+## [Important Strategic Insight](./Important%20Strategic%20Insight.md)
