@@ -257,3 +257,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Clutter Is Dangerous](./Why%20Clutter%20Is%20Dangerous.md)
 
 ## [Strong Communication Principle](./Strong%20Communication%20Principle.md)
+
+## [High-Stakes Presentation Model](./High-Stakes%20Presentation%20Model.md)
