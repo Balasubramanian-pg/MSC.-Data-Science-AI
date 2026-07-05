@@ -273,3 +273,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Visual Attention Model](./Visual%20Attention%20Model.md)
 
 ## [Why the NASA Slide Failed](./Why%20the%20NASA%20Slide%20Failed.md)
+
+## [This Is a Cognitive Failure, Not Just a Design Failure](./This%20Is%20a%20Cognitive%20Failure%2C%20Not%20Just%20a%20Design%20Failure.md)
