@@ -65,3 +65,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Pre-attentive Attributes](./Pre-attentive%20Attributes.md)
 
 ## [Example](./Example.md)
+
+## [8. Visualization and Storytelling](./8.%20Visualization%20and%20Storytelling.md)
