@@ -80,3 +80,5 @@ The transcript introduces this challenge directly.
 ## [Stakeholder Communication](./Stakeholder%20Communication.md)
 
 ## [Positioning in Visualization Design](./Positioning%20in%20Visualization%20Design.md)
+
+## [What Is Positioning?](./What%20Is%20Positioning.md)
