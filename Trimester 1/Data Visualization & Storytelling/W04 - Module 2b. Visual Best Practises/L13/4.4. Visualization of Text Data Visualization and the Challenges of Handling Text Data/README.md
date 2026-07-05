@@ -129,3 +129,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Insight](./Important%20Insight.md)
 
 ## [Tradeoff of Lowercasing](./Tradeoff%20of%20Lowercasing.md)
+
+## [2. Number Handling](./2.%20Number%20Handling.md)
