@@ -138,3 +138,5 @@ Bad visualizations use color excessively.
 ## [Final Design Framework](./Final%20Design%20Framework.md)
 
 ## [Ask These Questions Before Using Color](./Ask%20These%20Questions%20Before%20Using%20Color.md)
+
+## [Final Takeaways](./Final%20Takeaways.md)
