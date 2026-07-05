@@ -249,3 +249,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why This Pattern Matters](./Why%20This%20Pattern%20Matters.md)
 
 ## [Internal Structure](./Internal%20Structure.md)
+
+## [2. Plotting a Linear Function](./2.%20Plotting%20a%20Linear%20Function.md)
