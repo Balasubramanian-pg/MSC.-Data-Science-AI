@@ -46,3 +46,5 @@ Bad visualizations use color excessively.
 ## [Common Color Associations](./Common%20Color%20Associations.md)
 
 ## [Why This Matters](./Why%20This%20Matters.md)
+
+## [Cognitive Impact of Color](./Cognitive%20Impact%20of%20Color.md)
