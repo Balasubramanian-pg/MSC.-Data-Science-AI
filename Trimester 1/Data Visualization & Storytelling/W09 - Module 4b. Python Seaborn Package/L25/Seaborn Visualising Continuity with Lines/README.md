@@ -43,3 +43,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Technical Deep-Dive: Visualizing Dimensions & Reducing Cognitive Load](./Technical%20Deep-Dive%20-%20Visualizing%20Dimensions%20%26%20Reducing%20Cognitive%20Load.md)
 
 ## [Global styling configuration for clean, publication-ready visuals](./Global%20styling%20configuration%20for%20clean%2C%20publication-ready%20visuals.md)
+
+## [Load the built-in fMRI time-series dataset discussed in the transcript](./Load%20the%20built-in%20fMRI%20time-series%20dataset%20discussed%20in%20the%20transcript.md)
