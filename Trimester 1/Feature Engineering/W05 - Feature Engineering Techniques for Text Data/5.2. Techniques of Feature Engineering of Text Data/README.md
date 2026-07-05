@@ -21,3 +21,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Display features for the first document](./Display%20features%20for%20the%20first%20document.md)
 
 ## [Expected Output:](./Expected%20Output%20-.md)
+
+## [Unigram Feature Matrix Shape: (3, 8)](./Unigram%20Feature%20Matrix%20Shape%20-%20%283%2C%208%29.md)
