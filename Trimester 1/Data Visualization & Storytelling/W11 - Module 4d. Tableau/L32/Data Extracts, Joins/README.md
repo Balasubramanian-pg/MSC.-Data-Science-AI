@@ -15,3 +15,5 @@
 ## [8.1.7. Why Inner Joins Drop Data](./8.1.7.%20Why%20Inner%20Joins%20Drop%20Data.md)
 
 ## [8.1.8. Left and Right Outer Joins](./8.1.8.%20Left%20and%20Right%20Outer%20Joins.md)
+
+## [8.1.9. Example of a Left Outer Join](./8.1.9.%20Example%20of%20a%20Left%20Outer%20Join.md)
