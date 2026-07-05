@@ -335,3 +335,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Hidden Insight in Joint Plots](./Hidden%20Insight%20in%20Joint%20Plots.md)
 
 ## [Part 2](./Part%202.md)
+
+## [Conversation Visualization](./Conversation%20Visualization.md)
