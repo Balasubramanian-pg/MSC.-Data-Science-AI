@@ -299,3 +299,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Problem in the NASA Slide](./Problem%20in%20the%20NASA%20Slide.md)
 
 ## [Important Design Principle](./Important%20Design%20Principle.md)
+
+## [Example of Strong Hierarchy](./Example%20of%20Strong%20Hierarchy.md)
