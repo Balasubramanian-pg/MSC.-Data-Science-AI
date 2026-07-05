@@ -83,3 +83,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Final Takeaway](./Final%20Takeaway.md)
 
 ## [Building and Customizing Plots in Matplotlib](./Building%20and%20Customizing%20Plots%20in%20Matplotlib.md)
+
+## [1. Creating Numerical Data with `linspace`](./1.%20Creating%20Numerical%20Data%20with%20%60linspace%60.md)
