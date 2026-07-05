@@ -525,3 +525,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Visualization Tradeoff](./Visualization%20Tradeoff.md)
 
 ## [Important Bokeh Hierarchy](./Important%20Bokeh%20Hierarchy.md)
+
+## [Hierarchical Structure](./Hierarchical%20Structure.md)
