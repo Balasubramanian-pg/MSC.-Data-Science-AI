@@ -211,3 +211,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [NLP Compression Pipeline](./NLP%20Compression%20Pipeline.md)
 
 ## [Why Preprocessing Matters for Visualization](./Why%20Preprocessing%20Matters%20for%20Visualization.md)
+
+## [Example Without Cleaning](./Example%20Without%20Cleaning.md)
