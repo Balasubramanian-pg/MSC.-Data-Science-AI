@@ -25,3 +25,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Plot histogram](./Plot%20histogram.md)
 
 ## [Why `np.random.seed()` Matters](./Why%20%60np.random.seed%28%29%60%20Matters.md)
+
+## [Understanding Bins](./Understanding%20Bins.md)
