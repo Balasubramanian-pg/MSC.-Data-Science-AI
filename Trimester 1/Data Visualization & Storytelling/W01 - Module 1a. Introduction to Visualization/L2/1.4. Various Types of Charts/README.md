@@ -44,3 +44,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [Example Use Cases](./Example%20Use%20Cases.md)
 
 ## [3.5 Business Insights from Comparison Charts](./3.5%20Business%20Insights%20from%20Comparison%20Charts.md)
+
+## [4. Distribution Charts](./4.%20Distribution%20Charts.md)
