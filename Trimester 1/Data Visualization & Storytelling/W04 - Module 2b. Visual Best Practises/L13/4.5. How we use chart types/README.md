@@ -97,3 +97,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Analysts Must Be Careful](./Why%20Analysts%20Must%20Be%20Careful.md)
 
 ## [Better Text Visualization Alternatives](./Better%20Text%20Visualization%20Alternatives.md)
+
+## [Advanced NLP Visualization Pipeline](./Advanced%20NLP%20Visualization%20Pipeline.md)
