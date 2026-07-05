@@ -165,3 +165,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Visualizing High-Dimensional Semantic Spaces](./Visualizing%20High-Dimensional%20Semantic%20Spaces.md)
 
 ## [Full Form](./Full%20Form.md)
+
+## [Why t-SNE Exists](./Why%20t-SNE%20Exists.md)
