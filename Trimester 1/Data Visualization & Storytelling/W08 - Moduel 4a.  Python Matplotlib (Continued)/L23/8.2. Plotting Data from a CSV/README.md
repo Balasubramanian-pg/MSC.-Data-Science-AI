@@ -23,3 +23,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why This Matters](./Why%20This%20Matters.md)
 
 ## [Understanding DataFrames](./Understanding%20DataFrames.md)
+
+## [Inspecting DataFrames](./Inspecting%20DataFrames.md)
