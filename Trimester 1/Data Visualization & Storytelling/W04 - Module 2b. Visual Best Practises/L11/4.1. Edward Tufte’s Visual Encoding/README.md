@@ -21,3 +21,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Pure Categorization](./Pure%20Categorization.md)
 
 ## [Important Constraint](./Important%20Constraint.md)
+
+## [Appropriate Visualizations](./Appropriate%20Visualizations.md)
