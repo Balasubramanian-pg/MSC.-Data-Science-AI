@@ -67,3 +67,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Examples](./Examples.md)
 
 ## [Why Dashboard Design is Difficult](./Why%20Dashboard%20Design%20is%20Difficult.md)
+
+## [Advanced Insight](./Advanced%20Insight.md)
