@@ -267,3 +267,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Columbia Shuttle Presentation Failure](./The%20Columbia%20Shuttle%20Presentation%20Failure.md)
 
 ## [What Is Visual Hierarchy?](./What%20Is%20Visual%20Hierarchy.md)
+
+## [Human Attention Is Selective](./Human%20Attention%20Is%20Selective.md)
