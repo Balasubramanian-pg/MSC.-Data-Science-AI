@@ -95,3 +95,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [3. Basic Setup](./3.%20Basic%20Setup.md)
 
 ## [Understanding Each Component](./Understanding%20Each%20Component.md)
+
+## [A. Importing `pyplot`](./A.%20Importing%20%60pyplot%60.md)
