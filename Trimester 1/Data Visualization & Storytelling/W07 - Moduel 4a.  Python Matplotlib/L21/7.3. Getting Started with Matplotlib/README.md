@@ -81,3 +81,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Key Educational Insight from the Lecture](./Key%20Educational%20Insight%20from%20the%20Lecture.md)
 
 ## [Final Takeaway](./Final%20Takeaway.md)
+
+## [Building and Customizing Plots in Matplotlib](./Building%20and%20Customizing%20Plots%20in%20Matplotlib.md)
