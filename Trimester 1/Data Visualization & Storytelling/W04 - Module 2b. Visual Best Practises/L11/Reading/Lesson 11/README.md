@@ -47,3 +47,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Data Type Decision Tree](./Data%20Type%20Decision%20Tree.md)
 
 ## [Nominal Data](./Nominal%20Data.md)
+
+## [Pure Categories](./Pure%20Categories.md)
