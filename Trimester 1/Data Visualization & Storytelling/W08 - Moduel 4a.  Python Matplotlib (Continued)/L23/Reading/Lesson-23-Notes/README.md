@@ -281,3 +281,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why `rect=[0,0,1,0.96]` Matters](./Why%20%60rect%3D%5B0%2C0%2C1%2C0.96%5D%60%20Matters.md)
 
 ## [Understanding Rectangle Coordinates](./Understanding%20Rectangle%20Coordinates.md)
+
+## [Why This Matters Visually](./Why%20This%20Matters%20Visually.md)
