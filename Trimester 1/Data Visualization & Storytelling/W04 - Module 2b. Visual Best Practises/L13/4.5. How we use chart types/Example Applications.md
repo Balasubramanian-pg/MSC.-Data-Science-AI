@@ -2,8 +2,8 @@
 
 |Domain|Use Case|
 |---|---|
-|E-commerce|Product review analysis|
-|Banking|Complaint classification|
-|Healthcare|Patient feedback|
-|Social Media|Brand monitoring|
-|Politics|Public opinion analysis|
+|Finance|Fraud detection|
+|Cybersecurity|Threat escalation|
+|HR Analytics|Team collaboration|
+|Intelligence Systems|Network monitoring|
+|Social Platforms|Viral propagation|
