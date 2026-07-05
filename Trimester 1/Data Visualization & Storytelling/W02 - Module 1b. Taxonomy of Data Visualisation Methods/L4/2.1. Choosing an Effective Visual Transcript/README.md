@@ -24,3 +24,5 @@
 ## [9. Visualization Selection Cheat Sheet](./9.%20Visualization%20Selection%20Cheat%20Sheet.md)
 
 ## [10. Common Mistakes](./10.%20Common%20Mistakes.md)
+
+## [Examination Notes](./Examination%20Notes.md)
