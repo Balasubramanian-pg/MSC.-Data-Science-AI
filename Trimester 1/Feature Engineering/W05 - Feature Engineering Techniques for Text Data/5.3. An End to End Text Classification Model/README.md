@@ -55,3 +55,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [The elegant, production-grade way to construct the pipeline](./The%20elegant%2C%20production-grade%20way%20to%20construct%20the%20pipeline.md)
 
 ## [Fit the entire pipeline on raw (or lightly cleaned) text strings directly](./Fit%20the%20entire%20pipeline%20on%20raw%20%28or%20lightly%20cleaned%29%20text%20strings%20directly.md)
+
+## [text_clf_pipeline.fit(X_train_strings, y_train)](./text_clf_pipeline.fit%28X_train_strings%2C%20y_train%29.md)
