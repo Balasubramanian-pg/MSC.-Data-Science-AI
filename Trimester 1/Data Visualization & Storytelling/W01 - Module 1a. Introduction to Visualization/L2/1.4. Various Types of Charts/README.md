@@ -98,3 +98,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [Important Analytical Distinction](./Important%20Analytical%20Distinction.md)
 
 ## [6.5 Business Insights from Relationship Charts](./6.5%20Business%20Insights%20from%20Relationship%20Charts.md)
+
+## [7. Text Analytics and Sentiment Visualization](./7.%20Text%20Analytics%20and%20Sentiment%20Visualization.md)
