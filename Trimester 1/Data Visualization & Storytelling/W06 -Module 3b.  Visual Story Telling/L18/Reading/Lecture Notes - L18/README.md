@@ -345,3 +345,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [5. Presentation Design Has Real Consequences](./5.%20Presentation%20Design%20Has%20Real%20Consequences.md)
 
 ## [Deepest Lesson Across the Entire Topic](./Deepest%20Lesson%20Across%20the%20Entire%20Topic.md)
+
+## [Final Cognitive Model](./Final%20Cognitive%20Model.md)
