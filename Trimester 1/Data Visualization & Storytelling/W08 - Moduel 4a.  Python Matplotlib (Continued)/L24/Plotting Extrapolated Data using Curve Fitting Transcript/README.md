@@ -67,3 +67,5 @@ Observed Data → Fit Function → Predict Future
 ## [Visualization](./Visualization.md)
 
 ## [Actual data](./Actual%20data.md)
+
+## [Predicted trend](./Predicted%20trend.md)
