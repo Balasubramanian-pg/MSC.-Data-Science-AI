@@ -119,3 +119,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Text Requires Standardization](./Why%20Text%20Requires%20Standardization.md)
 
 ## [1. Case Normalization](./1.%20Case%20Normalization.md)
+
+## [Standardizing Capitalization](./Standardizing%20Capitalization.md)
