@@ -19,3 +19,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Ecosystem Relationship](./Ecosystem%20Relationship.md)
 
 ## [Important Insight](./Important%20Insight.md)
+
+## [2. Why Matplotlib Is Foundational](./2.%20Why%20Matplotlib%20Is%20Foundational.md)
