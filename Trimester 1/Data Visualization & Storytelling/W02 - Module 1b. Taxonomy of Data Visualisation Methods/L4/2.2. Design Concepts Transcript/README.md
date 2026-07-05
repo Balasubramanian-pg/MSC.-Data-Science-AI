@@ -28,3 +28,5 @@
 ## [11. The Final Goal: Acceptance](./11.%20The%20Final%20Goal%20-%20Acceptance.md)
 
 ## [12. Resistance to New Visualizations](./12.%20Resistance%20to%20New%20Visualizations.md)
+
+## [13. Strategies for Achieving Acceptance](./13.%20Strategies%20for%20Achieving%20Acceptance.md)
