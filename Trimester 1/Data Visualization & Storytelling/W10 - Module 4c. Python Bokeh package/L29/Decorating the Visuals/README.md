@@ -125,3 +125,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Why Each Library Is Used](./Why%20Each%20Library%20Is%20Used.md)
 
 ## [Figure Setup](./Figure%20Setup.md)
+
+## [Important Concept: Figure Object](./Important%20Concept%20-%20Figure%20Object.md)
