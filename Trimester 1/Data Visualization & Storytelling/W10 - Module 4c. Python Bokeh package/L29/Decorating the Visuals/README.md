@@ -185,3 +185,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Important Concept: Index](./Important%20Concept%20-%20Index.md)
 
 ## [Extracting Columns](./Extracting%20Columns.md)
+
+## [Key Bokeh Pattern](./Key%20Bokeh%20Pattern.md)
