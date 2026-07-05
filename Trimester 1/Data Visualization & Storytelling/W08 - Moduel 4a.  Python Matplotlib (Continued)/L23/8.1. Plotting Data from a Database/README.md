@@ -31,3 +31,5 @@ This section explains how to create multiple related plots from a Pandas DataFra
 ## [Full Example](./Full%20Example.md)
 
 ## [Maximum temperature](./Maximum%20temperature.md)
+
+## [Minimum temperature](./Minimum%20temperature.md)
