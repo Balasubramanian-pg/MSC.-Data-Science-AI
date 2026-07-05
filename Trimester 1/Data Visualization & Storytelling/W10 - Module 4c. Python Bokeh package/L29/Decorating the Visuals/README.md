@@ -87,3 +87,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [RGB Color Intuition](./RGB%20Color%20Intuition.md)
 
 ## [Example](./Example.md)
+
+## [RGBA: Adding Transparency](./RGBA%20-%20Adding%20Transparency.md)
