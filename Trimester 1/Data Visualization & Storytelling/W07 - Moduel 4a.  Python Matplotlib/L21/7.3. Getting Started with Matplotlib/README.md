@@ -63,3 +63,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Step 3](./Step%203.md)
 
 ## [Step 4](./Step%204.md)
+
+## [Vectorized Computation](./Vectorized%20Computation.md)
