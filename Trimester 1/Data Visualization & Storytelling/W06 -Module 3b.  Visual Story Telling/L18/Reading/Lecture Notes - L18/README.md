@@ -281,3 +281,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [5. Communication Is Part of Engineering](./5.%20Communication%20Is%20Part%20of%20Engineering.md)
 
 ## [Fixing the NASA Columbia Presentation Failure](./Fixing%20the%20NASA%20Columbia%20Presentation%20Failure.md)
+
+## [1. Better Headlines](./1.%20Better%20Headlines.md)
