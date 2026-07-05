@@ -1,3 +1,3 @@
 # Definition
 
-**Refinement** means improving the visual so it communicates insight more effectively.
+The final stage involves presenting visuals to stakeholders and gathering feedback.
