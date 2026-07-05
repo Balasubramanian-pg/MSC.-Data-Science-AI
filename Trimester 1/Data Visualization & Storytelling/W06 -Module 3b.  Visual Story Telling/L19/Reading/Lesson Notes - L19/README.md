@@ -119,3 +119,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Zooming Out Matters](./Why%20Zooming%20Out%20Matters.md)
 
 ## [Context Changes Meaning](./Context%20Changes%20Meaning.md)
+
+## [Visualization Approaches](./Visualization%20Approaches.md)
