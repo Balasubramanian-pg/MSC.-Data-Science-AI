@@ -14,3 +14,5 @@
 ## [4. The Screenplay Model of Data Storytelling](./4.%20The%20Screenplay%20Model%20of%20Data%20Storytelling.md)
 
 ## [5. Audience-Centric Thinking](./5.%20Audience-Centric%20Thinking.md)
+
+## [6. Expected Audience Response](./6.%20Expected%20Audience%20Response.md)
