@@ -15,3 +15,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why?](./Why.md)
 
 ## [Example from the Transcript](./Example%20from%20the%20Transcript.md)
+
+## [Human Memory Is Associative](./Human%20Memory%20Is%20Associative.md)
