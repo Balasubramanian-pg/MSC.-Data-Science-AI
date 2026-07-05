@@ -309,3 +309,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Joint Plot Interpretation](./Joint%20Plot%20Interpretation.md)
 
 ## [Understanding Distribution Geometry](./Understanding%20Distribution%20Geometry.md)
+
+## [Normal vs Non-Normal Distributions](./Normal%20vs%20Non-Normal%20Distributions.md)
