@@ -483,3 +483,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Categorical X-Axis](./Categorical%20X-Axis.md)
 
 ## [Figure Definition](./Figure%20Definition.md)
+
+## [Step 2: Vertical Bar Chart](./Step%202%20-%20Vertical%20Bar%20Chart.md)
