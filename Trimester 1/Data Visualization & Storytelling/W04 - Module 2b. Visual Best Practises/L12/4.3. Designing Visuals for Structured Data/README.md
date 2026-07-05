@@ -41,3 +41,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Ordinal Data](./Ordinal%20Data.md)
 
 ## [Numerical Continuous Data](./Numerical%20Continuous%20Data.md)
+
+## [Numerical Discrete Data](./Numerical%20Discrete%20Data.md)
