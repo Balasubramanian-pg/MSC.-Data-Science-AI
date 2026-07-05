@@ -39,3 +39,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [JSON Files](./JSON%20Files.md)
 
 ## [Why JSON Exists](./Why%20JSON%20Exists.md)
+
+## [JSON Structure](./JSON%20Structure.md)
