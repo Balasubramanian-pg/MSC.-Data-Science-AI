@@ -56,3 +56,5 @@ Bad visualizations use color excessively.
 ## [Goal](./Goal.md)
 
 ## [Technique](./Technique.md)
+
+## [Example](./Example.md)
