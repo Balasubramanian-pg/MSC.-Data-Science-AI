@@ -5,3 +5,5 @@ Hierarchical data structures are pervasive across modern enterprise domains, rep
 This document provides a technical blueprint for understanding, selecting, and implementing two advanced hierarchical visual paradigms: **Circle Packing Diagrams** and **Bubble Hierarchies**.
 
 ## [1. Foundations of Hierarchical & Part-to-Whole Relationships](./1.%20Foundations%20of%20Hierarchical%20%26%20Part-to-Whole%20Relationships.md)
+
+## [2. Deep Dive: Circle Packing Diagrams](./2.%20Deep%20Dive%20-%20Circle%20Packing%20Diagrams.md)
