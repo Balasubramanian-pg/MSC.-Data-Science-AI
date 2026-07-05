@@ -23,3 +23,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Data → Visualization Compression](./Data%20%E2%86%92%20Visualization%20Compression.md)
 
 ## [2. Understanding Variable Types](./2.%20Understanding%20Variable%20Types.md)
+
+## [The Foundation of Correct Analysis](./The%20Foundation%20of%20Correct%20Analysis.md)
