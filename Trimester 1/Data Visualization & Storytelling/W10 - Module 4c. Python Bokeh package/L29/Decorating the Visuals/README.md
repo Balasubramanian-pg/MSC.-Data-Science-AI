@@ -211,3 +211,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Understanding Layering](./Understanding%20Layering.md)
 
 ## [Visual Model](./Visual%20Model.md)
+
+## [Example of Combined Plot](./Example%20of%20Combined%20Plot.md)
