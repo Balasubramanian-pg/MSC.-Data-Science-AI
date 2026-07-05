@@ -9,3 +9,5 @@ week: W01 - Overview of Feature Engineering
 ## [1.2.1. Environment Setup and Synthetic Data Generation](./1.2.1.%20Environment%20Setup%20and%20Synthetic%20Data%20Generation.md)
 
 ## [1.2.2. Raw Data Structure and Target Labels](./1.2.2.%20Raw%20Data%20Structure%20and%20Target%20Labels.md)
+
+## [1.2.3. Feature Creation and Mathematical Transformation](./1.2.3.%20Feature%20Creation%20and%20Mathematical%20Transformation.md)
