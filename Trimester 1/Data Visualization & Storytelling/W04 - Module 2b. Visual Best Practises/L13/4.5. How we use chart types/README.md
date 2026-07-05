@@ -411,3 +411,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Enron Email Networks as Behavioral Signals](./Enron%20Email%20Networks%20as%20Behavioral%20Signals.md)
 
 ## [The Core Analytical Shift](./The%20Core%20Analytical%20Shift.md)
+
+## [Communication as Behavioral Telemetry](./Communication%20as%20Behavioral%20Telemetry.md)
