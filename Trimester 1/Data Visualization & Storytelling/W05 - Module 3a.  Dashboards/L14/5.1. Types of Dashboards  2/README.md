@@ -157,3 +157,5 @@ week: W05 - Module 3a.  Dashboards
 ## [4. Visual Competition](./4.%20Visual%20Competition.md)
 
 ## [5. No Analytical Trigger](./5.%20No%20Analytical%20Trigger.md)
+
+## [Curiosity and Analytical Thinking in Dashboards](./Curiosity%20and%20Analytical%20Thinking%20in%20Dashboards.md)
