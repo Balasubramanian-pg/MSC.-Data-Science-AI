@@ -1,31 +1,32 @@
 # Final Takeaways
 
-Storytelling is powerful because it aligns with:  
-how human cognition naturally works.
+Visual storytelling transforms:  
+data into interpretable narrative.
 
-Stories improve:
+It shapes:
 
+- perception,
+    
 - memory,
-    
-- persuasion,
-    
-- emotional engagement,
     
 - and understanding.
     
 
-The science behind storytelling involves:
+The 2000 U.S. election example demonstrates how:  
+visual encoding can influence national interpretation and collective narratives.
 
-- neural activation,
+Frameworks like Presentation Zen emphasize:
+
+- restraint,
     
-- emotional encoding,
+- simplicity,
     
-- associative memory,
+- whitespace,
     
-- and structured cognition.
+- and focused communication.
     
 
-Most importantly:
+The deeper lesson is:
 
-> Humans rarely remember isolated facts.  
-> They remember meaning embedded in narrative.
+> Effective communication is not about showing more information.  
+> It is about reducing cognitive friction while maximizing meaning.
