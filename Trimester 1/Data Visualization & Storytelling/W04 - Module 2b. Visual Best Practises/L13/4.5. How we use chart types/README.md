@@ -129,3 +129,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Frequency Analysis Pipeline](./Frequency%20Analysis%20Pipeline.md)
 
 ## [Text Length Analysis](./Text%20Length%20Analysis.md)
+
+## [Measuring Structural Complexity](./Measuring%20Structural%20Complexity.md)
