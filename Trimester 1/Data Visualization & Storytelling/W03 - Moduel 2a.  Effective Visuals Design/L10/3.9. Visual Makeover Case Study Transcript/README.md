@@ -146,3 +146,5 @@ The transcript introduces this challenge directly.
 ## [Final Takeaways](./Final%20Takeaways.md)
 
 ## [Brand Colors](./Brand%20Colors.md)
+
+## [Positioning](./Positioning.md)
