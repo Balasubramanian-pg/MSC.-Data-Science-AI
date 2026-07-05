@@ -13,3 +13,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Author-Driven Elements](./Author-Driven%20Elements.md)
 
 ## [Reader-Driven Elements](./Reader-Driven%20Elements.md)
+
+## [Hybrid Narrative Architecture](./Hybrid%20Narrative%20Architecture.md)
