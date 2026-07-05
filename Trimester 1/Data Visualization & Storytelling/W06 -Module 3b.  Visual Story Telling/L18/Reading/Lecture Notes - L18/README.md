@@ -217,3 +217,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [5. Emotional](./5.%20Emotional.md)
 
 ## [6. Storied](./6.%20Storied.md)
+
+## [SUCCESS Cognitive Pipeline](./SUCCESS%20Cognitive%20Pipeline.md)
