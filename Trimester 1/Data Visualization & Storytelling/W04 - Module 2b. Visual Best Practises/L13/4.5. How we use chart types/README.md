@@ -349,3 +349,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [1. Temporal Dimension](./1.%20Temporal%20Dimension.md)
 
 ## [When Did Communication Happen?](./When%20Did%20Communication%20Happen.md)
+
+## [Temporal Communication Analysis](./Temporal%20Communication%20Analysis.md)
