@@ -79,3 +79,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Limitation](./Important%20Limitation.md)
 
 ## [Better Alternative](./Better%20Alternative.md)
+
+## [4. Univariate Distribution Analysis](./4.%20Univariate%20Distribution%20Analysis.md)
