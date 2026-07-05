@@ -251,3 +251,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Rolling Average](./Rolling%20Average.md)
 
 ## [Seasonal Aggregation](./Seasonal%20Aggregation.md)
+
+## [Overlaying Multiple Signals](./Overlaying%20Multiple%20Signals.md)
