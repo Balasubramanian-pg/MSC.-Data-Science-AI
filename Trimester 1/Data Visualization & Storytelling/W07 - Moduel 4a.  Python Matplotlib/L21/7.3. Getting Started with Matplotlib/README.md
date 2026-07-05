@@ -339,3 +339,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [7. The Difference Between Raw and Designed Visualization](./7.%20The%20Difference%20Between%20Raw%20and%20Designed%20Visualization.md)
 
 ## [But Important Nuance](./But%20Important%20Nuance.md)
+
+## [Weak Visualization](./Weak%20Visualization.md)
