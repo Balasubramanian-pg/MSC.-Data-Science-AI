@@ -21,3 +21,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [NumPy Import](./NumPy%20Import.md)
 
 ## [2. Inline Plot Rendering](./2.%20Inline%20Plot%20Rendering.md)
+
+## [Why Notebook Visualization Matters](./Why%20Notebook%20Visualization%20Matters.md)
