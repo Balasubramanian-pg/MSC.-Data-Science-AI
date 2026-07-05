@@ -437,3 +437,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Communication Density Analysis](./Communication%20Density%20Analysis.md)
 
 ## [Density Interpretation Model](./Density%20Interpretation%20Model.md)
+
+## [Why This Matters in Real Systems](./Why%20This%20Matters%20in%20Real%20Systems.md)
