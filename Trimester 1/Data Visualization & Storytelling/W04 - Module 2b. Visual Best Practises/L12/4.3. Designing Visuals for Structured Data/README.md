@@ -171,3 +171,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Major Risk](./Major%20Risk.md)
 
 ## [Dual Axis Warning](./Dual%20Axis%20Warning.md)
+
+## [Final Visualization Philosophy](./Final%20Visualization%20Philosophy.md)
