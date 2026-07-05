@@ -695,3 +695,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Visual Result](./Visual%20Result.md)
 
 ## [Line](./Line.md)
+
+## [Scatter](./Scatter.md)
