@@ -99,3 +99,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Escalation Works](./Why%20Escalation%20Works.md)
 
 ## [Example Structure in Business Analytics](./Example%20Structure%20in%20Business%20Analytics.md)
+
+## [Beginning Phase](./Beginning%20Phase.md)
