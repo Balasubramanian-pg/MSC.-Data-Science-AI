@@ -199,3 +199,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Example Problem](./Example%20Problem.md)
 
 ## [Over-Stemming Problem](./Over-Stemming%20Problem.md)
+
+## [Stemming vs Lemmatization](./Stemming%20vs%20Lemmatization.md)
