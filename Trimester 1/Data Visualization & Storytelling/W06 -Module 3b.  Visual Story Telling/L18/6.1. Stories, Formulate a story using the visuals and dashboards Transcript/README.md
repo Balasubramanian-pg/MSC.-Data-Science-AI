@@ -255,3 +255,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Presentation Design as Risk Engineering](./Presentation%20Design%20as%20Risk%20Engineering.md)
 
 ## [Why Clutter Is Dangerous](./Why%20Clutter%20Is%20Dangerous.md)
+
+## [Strong Communication Principle](./Strong%20Communication%20Principle.md)
