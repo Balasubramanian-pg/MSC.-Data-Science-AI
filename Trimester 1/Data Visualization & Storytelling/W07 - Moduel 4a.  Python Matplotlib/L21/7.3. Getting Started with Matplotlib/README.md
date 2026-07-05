@@ -239,3 +239,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Add grid and legend](./Add%20grid%20and%20legend.md)
 
 ## [Show plot](./Show%20plot.md)
+
+## [What This Teaches Conceptually](./What%20This%20Teaches%20Conceptually.md)
