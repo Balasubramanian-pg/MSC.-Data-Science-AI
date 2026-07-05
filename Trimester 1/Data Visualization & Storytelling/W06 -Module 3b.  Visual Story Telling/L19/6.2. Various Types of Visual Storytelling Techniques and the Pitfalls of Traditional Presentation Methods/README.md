@@ -125,3 +125,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Main Story](./Main%20Story.md)
 
 ## [Iterative Analysis and Audience Interaction](./Iterative%20Analysis%20and%20Audience%20Interaction.md)
+
+## [Why Audience Engagement Matters](./Why%20Audience%20Engagement%20Matters.md)
