@@ -35,3 +35,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [- is great: 1](./-%20is%20great%20-%201.md)
 
 ## [- learning: 1](./-%20learning%20-%201.md)
+
+## [- learning is: 1](./-%20learning%20is%20-%201.md)
