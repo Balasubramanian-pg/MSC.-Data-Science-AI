@@ -185,3 +185,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Step A: Generate the baseline box plot using Seaborn.](./Step%20A%20-%20Generate%20the%20baseline%20box%20plot%20using%20Seaborn.md)
 
 ## [Automatically orders categories descending based on median values to assist the eye.](./Automatically%20orders%20categories%20descending%20based%20on%20median%20values%20to%20assist%20the%20eye.md)
+
+## [Step B: Matplotlib Customizations (Overriding standard labels & adding reference layers)](./Step%20B%20-%20Matplotlib%20Customizations%20%28Overriding%20standard%20labels%20%26%20adding%20reference%20layers%29.md)
