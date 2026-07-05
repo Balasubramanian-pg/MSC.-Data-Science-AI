@@ -157,3 +157,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Graph-Based NLP](./Graph-Based%20NLP.md)
 
 ## [Why Relationships Matter More Than Frequency](./Why%20Relationships%20Matter%20More%20Than%20Frequency.md)
+
+## [Human Reading vs Computational Structure](./Human%20Reading%20vs%20Computational%20Structure.md)
