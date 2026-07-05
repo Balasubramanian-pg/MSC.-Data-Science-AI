@@ -103,3 +103,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Hidden Complexity in Time Narratives](./Hidden%20Complexity%20in%20Time%20Narratives.md)
 
 ## [The Core Analytical Principle](./The%20Core%20Analytical%20Principle.md)
+
+## [7. Drilling Down](./7.%20Drilling%20Down.md)
