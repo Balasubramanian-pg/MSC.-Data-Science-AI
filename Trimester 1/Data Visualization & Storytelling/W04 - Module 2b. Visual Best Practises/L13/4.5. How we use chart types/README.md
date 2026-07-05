@@ -193,3 +193,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Limitation of Sentiment Analysis](./Important%20Limitation%20of%20Sentiment%20Analysis.md)
 
 ## [Example Failure](./Example%20Failure.md)
+
+## [Sentiment Analysis Limitation Pipeline](./Sentiment%20Analysis%20Limitation%20Pipeline.md)
