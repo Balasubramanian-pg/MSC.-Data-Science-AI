@@ -147,3 +147,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Topic Granularity Tradeoff](./Topic%20Granularity%20Tradeoff.md)
 
 ## [Topic Frequency Visualization](./Topic%20Frequency%20Visualization.md)
+
+## [Important NLP Principle](./Important%20NLP%20Principle.md)
