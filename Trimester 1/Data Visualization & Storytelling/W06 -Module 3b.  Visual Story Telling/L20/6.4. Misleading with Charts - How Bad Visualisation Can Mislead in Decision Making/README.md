@@ -93,3 +93,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Human Perception Relies on Physical Encoding](./Human%20Perception%20Relies%20on%20Physical%20Encoding.md)
 
 ## [Important Principle](./Important%20Principle.md)
+
+## [De-emphasis vs Over-emphasis](./De-emphasis%20vs%20Over-emphasis.md)
