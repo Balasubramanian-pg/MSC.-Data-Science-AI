@@ -1,6 +1,8 @@
 # Result
 
-|Line|Meaning|
+|Fruit|Height|
 |---|---|
-|sine|Sine wave|
-|cosine|Cosine wave|
+|Apple|40|
+|Blueberry|100|
+|Cherry|30|
+|Orange|55|
