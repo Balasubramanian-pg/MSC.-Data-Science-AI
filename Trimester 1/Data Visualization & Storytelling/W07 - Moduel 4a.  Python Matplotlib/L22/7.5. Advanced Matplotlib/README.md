@@ -15,3 +15,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Intuition Behind Histograms](./Intuition%20Behind%20Histograms.md)
 
 ## [Mathematical Perspective](./Mathematical%20Perspective.md)
+
+## [Basic Histogram Example](./Basic%20Histogram%20Example.md)
