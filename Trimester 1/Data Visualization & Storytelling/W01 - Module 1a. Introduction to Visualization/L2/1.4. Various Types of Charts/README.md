@@ -4,3 +4,5 @@
 The analytical purpose of various charts being used are the subject matter of this documentation
 
 ## [Table of Contents](./Table%20of%20Contents.md)
+
+## [1. Introduction to Chart Selection](./1.%20Introduction%20to%20Chart%20Selection.md)
