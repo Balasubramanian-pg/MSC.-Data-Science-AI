@@ -95,3 +95,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Humans Like Word Clouds](./Why%20Humans%20Like%20Word%20Clouds.md)
 
 ## [Why Analysts Must Be Careful](./Why%20Analysts%20Must%20Be%20Careful.md)
+
+## [Better Text Visualization Alternatives](./Better%20Text%20Visualization%20Alternatives.md)
