@@ -109,3 +109,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Hierarchical Exploration](./Hierarchical%20Exploration.md)
 
 ## [Why Drill-Down Is Powerful](./Why%20Drill-Down%20Is%20Powerful.md)
+
+## [Importance of Normalization](./Importance%20of%20Normalization.md)
