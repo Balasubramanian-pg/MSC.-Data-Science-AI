@@ -73,3 +73,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Strong Data Storytelling](./Strong%20Data%20Storytelling.md)
 
 ## [Dashboards and Storytelling](./Dashboards%20and%20Storytelling.md)
+
+## [Advanced Insight](./Advanced%20Insight.md)
