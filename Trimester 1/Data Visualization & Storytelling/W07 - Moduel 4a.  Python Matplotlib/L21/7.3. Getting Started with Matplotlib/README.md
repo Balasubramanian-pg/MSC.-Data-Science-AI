@@ -103,3 +103,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Visual Shape](./Visual%20Shape.md)
 
 ## [3. Creating a Figure and Axes](./3.%20Creating%20a%20Figure%20and%20Axes.md)
+
+## [Why `subplots()` Matters](./Why%20%60subplots%28%29%60%20Matters.md)
