@@ -139,3 +139,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Indexing Matters](./Why%20Indexing%20Matters.md)
 
 ## [Time-Series Mental Model](./Time-Series%20Mental%20Model.md)
+
+## [Plotting Maximum Temperature](./Plotting%20Maximum%20Temperature.md)
