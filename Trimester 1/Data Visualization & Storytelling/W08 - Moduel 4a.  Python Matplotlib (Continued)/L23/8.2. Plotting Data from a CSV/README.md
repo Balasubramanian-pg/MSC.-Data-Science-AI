@@ -27,3 +27,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Inspecting DataFrames](./Inspecting%20DataFrames.md)
 
 ## [Bubble Scatter Plot](./Bubble%20Scatter%20Plot.md)
+
+## [Plotting GDP vs Life Expectancy](./Plotting%20GDP%20vs%20Life%20Expectancy.md)
