@@ -147,3 +147,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Add chart title](./Add%20chart%20title.md)
 
 ## [Add axis labels](./Add%20axis%20labels.md)
+
+## [Add legend](./Add%20legend.md)
