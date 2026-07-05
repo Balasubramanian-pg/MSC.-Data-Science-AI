@@ -11,3 +11,5 @@ week: W08 - Automated Feature Engineering
 ## [8.5.2. The Core Paradigm Shift](./8.5.2.%20The%20Core%20Paradigm%20Shift.md)
 
 ## [8.5.3. Automated Feature Engineering Pipeline](./8.5.3.%20Automated%20Feature%20Engineering%20Pipeline.md)
+
+## [8.5.4. Deep Feature Synthesis (DFS) with Featuretools](./8.5.4.%20Deep%20Feature%20Synthesis%20%28DFS%29%20with%20Featuretools.md)
