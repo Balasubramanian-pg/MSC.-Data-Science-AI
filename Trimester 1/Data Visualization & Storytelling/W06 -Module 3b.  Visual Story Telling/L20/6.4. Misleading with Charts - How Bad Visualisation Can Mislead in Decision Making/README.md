@@ -205,3 +205,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Day-Level Analysis](./Day-Level%20Analysis.md)
 
 ## [Saturday](./Saturday.md)
+
+## [Sunday](./Sunday.md)
