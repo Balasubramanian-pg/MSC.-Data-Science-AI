@@ -123,3 +123,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [3. Production-Ready Python Implementation](./3.%20Production-Ready%20Python%20Implementation.md)
 
 ## [0. SETUP: Generating Representative Course Data](./0.%20SETUP%20-%20Generating%20Representative%20Course%20Data.md)
+
+## [1. THE MATPLOTLIB WAY: Manual Statistical Pipeline Construction](./1.%20THE%20MATPLOTLIB%20WAY%20-%20Manual%20Statistical%20Pipeline%20Construction.md)
