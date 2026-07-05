@@ -151,3 +151,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Cleaning Tradeoff](./Cleaning%20Tradeoff.md)
 
 ## [Important NLP Principle](./Important%20NLP%20Principle.md)
+
+## [4. Tokenization](./4.%20Tokenization.md)
