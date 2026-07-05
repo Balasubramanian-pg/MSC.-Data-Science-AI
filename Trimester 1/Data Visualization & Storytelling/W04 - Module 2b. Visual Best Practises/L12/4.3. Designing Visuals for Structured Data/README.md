@@ -107,3 +107,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Interquartile Range (IQR)](./Interquartile%20Range%20%28IQR%29.md)
 
 ## [Why IQR Matters](./Why%20IQR%20Matters.md)
+
+## [Whiskers](./Whiskers.md)
