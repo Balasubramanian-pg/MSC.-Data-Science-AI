@@ -115,3 +115,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Environmental Dashboard](./Environmental%20Dashboard.md)
 
 ## [Advanced Dashboard Concepts](./Advanced%20Dashboard%20Concepts.md)
+
+## [1. Progressive Disclosure](./1.%20Progressive%20Disclosure.md)
