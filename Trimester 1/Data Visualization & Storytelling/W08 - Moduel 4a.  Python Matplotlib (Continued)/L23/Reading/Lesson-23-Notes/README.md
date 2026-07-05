@@ -157,3 +157,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Labels and title](./Labels%20and%20title.md)
 
 ## [Understanding Figure Size](./Understanding%20Figure%20Size.md)
+
+## [Why Aspect Ratio Matters](./Why%20Aspect%20Ratio%20Matters.md)
