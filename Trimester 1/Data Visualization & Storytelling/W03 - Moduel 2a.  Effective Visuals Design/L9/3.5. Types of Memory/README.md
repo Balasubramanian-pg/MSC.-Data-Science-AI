@@ -35,3 +35,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Effective Practices](./Effective%20Practices.md)
 
 ## [2. Working Memory (Short-Term Memory)](./2.%20Working%20Memory%20%28Short-Term%20Memory%29.md)
+
+## [Why Working Memory Is Critical](./Why%20Working%20Memory%20Is%20Critical.md)
