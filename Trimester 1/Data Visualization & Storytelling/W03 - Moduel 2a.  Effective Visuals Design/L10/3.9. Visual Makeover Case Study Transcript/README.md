@@ -126,3 +126,5 @@ The transcript introduces this challenge directly.
 ## [Positioning + Pre-Attentive Attributes](./Positioning%20%2B%20Pre-Attentive%20Attributes.md)
 
 ## [Integrated Attention Model](./Integrated%20Attention%20Model.md)
+
+## [Important Advanced Insight](./Important%20Advanced%20Insight.md)
