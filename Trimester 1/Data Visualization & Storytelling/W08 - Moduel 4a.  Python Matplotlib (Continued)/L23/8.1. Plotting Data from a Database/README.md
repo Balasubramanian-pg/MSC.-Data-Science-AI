@@ -7,3 +7,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 This section explains how to create multiple related plots from a Pandas DataFrame using Matplotlib subplots, especially when the plots share the same time axis.
 
 ## [Core Idea](./Core%20Idea.md)
+
+## [Step 1: Plot a Single Column](./Step%201%20-%20Plot%20a%20Single%20Column.md)
