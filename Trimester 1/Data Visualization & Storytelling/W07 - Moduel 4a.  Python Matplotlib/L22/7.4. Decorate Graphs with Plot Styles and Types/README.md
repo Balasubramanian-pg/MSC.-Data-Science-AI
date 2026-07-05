@@ -97,3 +97,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Common Mistakes](./Common%20Mistakes.md)
 
 ## [Overdecorating Charts](./Overdecorating%20Charts.md)
+
+## [Using Too Many Colors](./Using%20Too%20Many%20Colors.md)
