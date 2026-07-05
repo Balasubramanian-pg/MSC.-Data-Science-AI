@@ -14,3 +14,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [2. Understanding Variable Types Before Charting](./2.%20Understanding%20Variable%20Types%20Before%20Charting.md)
 
 ## [2.1 Categorical Variables](./2.1%20Categorical%20Variables.md)
+
+## [2.2 Numerical Variables](./2.2%20Numerical%20Variables.md)
