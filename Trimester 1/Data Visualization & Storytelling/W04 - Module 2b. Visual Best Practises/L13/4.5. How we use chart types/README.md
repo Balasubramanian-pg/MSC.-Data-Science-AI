@@ -363,3 +363,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Who Communicates With Whom?](./Who%20Communicates%20With%20Whom.md)
 
 ## [Communication Direction Model](./Communication%20Direction%20Model.md)
+
+## [Why Direction Matters](./Why%20Direction%20Matters.md)
