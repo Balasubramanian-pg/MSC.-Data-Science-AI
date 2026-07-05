@@ -86,3 +86,5 @@ Bad visualizations use color excessively.
 ## [Sequential vs Diverging Color Scales](./Sequential%20vs%20Diverging%20Color%20Scales.md)
 
 ## [Sequential Scale](./Sequential%20Scale.md)
+
+## [Diverging Scale](./Diverging%20Scale.md)
