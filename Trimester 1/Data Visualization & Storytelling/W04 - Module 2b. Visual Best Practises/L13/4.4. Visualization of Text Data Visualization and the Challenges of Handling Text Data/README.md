@@ -177,3 +177,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [What Are Stopwords?](./What%20Are%20Stopwords.md)
 
 ## [Why Stopword Removal Helps](./Why%20Stopword%20Removal%20Helps.md)
+
+## [Stopword Reduction Pipeline](./Stopword%20Reduction%20Pipeline.md)
