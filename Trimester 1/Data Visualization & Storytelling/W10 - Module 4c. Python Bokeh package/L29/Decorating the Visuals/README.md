@@ -321,3 +321,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Marker Size](./Marker%20Size.md)
 
 ## [Fill Color](./Fill%20Color.md)
+
+## [Line Color](./Line%20Color.md)
