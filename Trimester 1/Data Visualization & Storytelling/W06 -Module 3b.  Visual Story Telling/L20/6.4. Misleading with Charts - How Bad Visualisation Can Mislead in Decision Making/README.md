@@ -67,3 +67,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Reader’s Responsibility](./The%20Reader%E2%80%99s%20Responsibility.md)
 
 ## [The Analyst’s Responsibility](./The%20Analyst%E2%80%99s%20Responsibility.md)
+
+## [Common Axis Manipulation Techniques](./Common%20Axis%20Manipulation%20Techniques.md)
