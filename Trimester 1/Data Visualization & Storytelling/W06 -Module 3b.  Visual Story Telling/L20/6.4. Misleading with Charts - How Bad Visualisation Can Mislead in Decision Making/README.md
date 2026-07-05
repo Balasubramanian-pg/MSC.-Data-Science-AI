@@ -181,3 +181,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Establishing Causation Requires More](./Establishing%20Causation%20Requires%20More.md)
 
 ## [Important Analytical Discipline](./Important%20Analytical%20Discipline.md)
+
+## [Why This Matters in Business](./Why%20This%20Matters%20in%20Business.md)
