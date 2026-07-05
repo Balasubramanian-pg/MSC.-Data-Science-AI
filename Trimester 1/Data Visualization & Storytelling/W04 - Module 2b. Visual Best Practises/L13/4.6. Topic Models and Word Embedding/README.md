@@ -17,3 +17,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Distributional Hypothesis](./Distributional%20Hypothesis.md)
 
 ## [Why Context Matters](./Why%20Context%20Matters.md)
+
+## [Contextual Meaning Model](./Contextual%20Meaning%20Model.md)
