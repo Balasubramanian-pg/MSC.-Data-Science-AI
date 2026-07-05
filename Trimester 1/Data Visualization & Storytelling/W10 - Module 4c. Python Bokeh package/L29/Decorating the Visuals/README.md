@@ -815,3 +815,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Part 2: Themes](./Part%202%20-%20Themes.md)
 
 ## [What Is a Theme?](./What%20Is%20a%20Theme.md)
+
+## [Why Themes Matter](./Why%20Themes%20Matter.md)
