@@ -1,3 +1,3 @@
 # Example
 
-
+Imagine a dashboard:
