@@ -59,3 +59,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Visual Perception Problem](./Visual%20Perception%20Problem.md)
 
 ## [The Importance of Baselines](./The%20Importance%20of%20Baselines.md)
+
+## [When Truncation Is Acceptable](./When%20Truncation%20Is%20Acceptable.md)
