@@ -125,3 +125,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Comparison Analysis](./Comparison%20Analysis.md)
 
 ## [Important Business Insight](./Important%20Business%20Insight.md)
+
+## [7. Relationship Analysis](./7.%20Relationship%20Analysis.md)
