@@ -77,3 +77,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Advanced Plot Customization](./Advanced%20Plot%20Customization.md)
 
 ## [Why Random Walks Look Predictive](./Why%20Random%20Walks%20Look%20Predictive.md)
+
+## [Machine Learning Connections](./Machine%20Learning%20Connections.md)
