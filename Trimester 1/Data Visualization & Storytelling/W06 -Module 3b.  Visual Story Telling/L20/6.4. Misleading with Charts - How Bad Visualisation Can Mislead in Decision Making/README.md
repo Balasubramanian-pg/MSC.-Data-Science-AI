@@ -55,3 +55,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Example: Tax Rate Increase](./Example%20-%20Tax%20Rate%20Increase.md)
 
 ## [Why This Distorts Perception](./Why%20This%20Distorts%20Perception.md)
+
+## [Visual Perception Problem](./Visual%20Perception%20Problem.md)
