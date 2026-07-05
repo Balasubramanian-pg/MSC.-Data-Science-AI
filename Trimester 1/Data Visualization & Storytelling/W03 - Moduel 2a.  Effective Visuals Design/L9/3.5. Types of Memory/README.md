@@ -211,3 +211,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [6. Hue (Color)](./6.%20Hue%20%28Color%29.md)
 
 ## [Gestalt Principle of Similarity](./Gestalt%20Principle%20of%20Similarity.md)
+
+## [7. Intensity](./7.%20Intensity.md)
