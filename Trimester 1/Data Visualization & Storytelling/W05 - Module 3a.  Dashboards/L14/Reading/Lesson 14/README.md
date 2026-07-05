@@ -77,3 +77,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Common Interactive Features](./Common%20Interactive%20Features.md)
 
 ## [Reader-Driven Narrative](./Reader-Driven%20Narrative.md)
+
+## [Important Balance](./Important%20Balance.md)
