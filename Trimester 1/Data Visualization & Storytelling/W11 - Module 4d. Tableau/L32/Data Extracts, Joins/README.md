@@ -21,3 +21,5 @@
 ## [8.1.10. Full Outer Joins](./8.1.10.%20Full%20Outer%20Joins.md)
 
 ## [8.1.11. Factors Affecting Join Performance](./8.1.11.%20Factors%20Affecting%20Join%20Performance.md)
+
+## [8.1.12. Data Blending vs Physical Joins](./8.1.12.%20Data%20Blending%20vs%20Physical%20Joins.md)
