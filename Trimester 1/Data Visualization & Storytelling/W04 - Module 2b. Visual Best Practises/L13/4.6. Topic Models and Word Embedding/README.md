@@ -27,3 +27,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Semantic Similarity](./Semantic%20Similarity.md)
 
 ## [Meaning Through Proximity](./Meaning%20Through%20Proximity.md)
+
+## [Semantic Space Model](./Semantic%20Space%20Model.md)
