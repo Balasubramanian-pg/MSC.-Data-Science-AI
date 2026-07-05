@@ -9,3 +9,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [1. Interactive Notebook Environments](./1.%20Interactive%20Notebook%20Environments.md)
 
 ## [Why Notebooks Became Dominant](./Why%20Notebooks%20Became%20Dominant.md)
+
+## [Notebook Workflow](./Notebook%20Workflow.md)
