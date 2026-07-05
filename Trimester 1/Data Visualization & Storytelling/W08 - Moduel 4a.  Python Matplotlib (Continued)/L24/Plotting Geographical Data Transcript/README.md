@@ -51,3 +51,5 @@ This is foundational to:
 ## [What Is a Shapefile?](./What%20Is%20a%20Shapefile.md)
 
 ## [Geometry Types](./Geometry%20Types.md)
+
+## [Step 4: Inspect Data](./Step%204%20-%20Inspect%20Data.md)
