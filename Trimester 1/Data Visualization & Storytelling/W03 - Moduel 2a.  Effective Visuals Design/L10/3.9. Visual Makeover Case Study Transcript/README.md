@@ -124,3 +124,5 @@ The transcript introduces this challenge directly.
 ## [Cognitive Cost of Bad Layout](./Cognitive%20Cost%20of%20Bad%20Layout.md)
 
 ## [Positioning + Pre-Attentive Attributes](./Positioning%20%2B%20Pre-Attentive%20Attributes.md)
+
+## [Integrated Attention Model](./Integrated%20Attention%20Model.md)
