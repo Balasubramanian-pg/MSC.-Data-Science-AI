@@ -112,3 +112,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [8. Common Visualization Mistakes](./8.%20Common%20Visualization%20Mistakes.md)
 
 ## [1. Cluttered Charts](./1.%20Cluttered%20Charts.md)
+
+## [2. Excessive Plotting](./2.%20Excessive%20Plotting.md)
