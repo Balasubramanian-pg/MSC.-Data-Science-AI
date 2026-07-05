@@ -33,3 +33,5 @@ Observed Data → Fit Function → Predict Future
 ## [Core Concept](./Core%20Concept.md)
 
 ## [Extrapolation](./Extrapolation.md)
+
+## [Big Picture Pipeline](./Big%20Picture%20Pipeline.md)
