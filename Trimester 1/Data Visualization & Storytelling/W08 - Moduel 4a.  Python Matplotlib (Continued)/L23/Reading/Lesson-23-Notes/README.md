@@ -53,3 +53,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Direct URL Reading Matters](./Why%20Direct%20URL%20Reading%20Matters.md)
 
 ## [Real-World Analytics Pipeline](./Real-World%20Analytics%20Pipeline.md)
+
+## [Why This Changes Everything](./Why%20This%20Changes%20Everything.md)
