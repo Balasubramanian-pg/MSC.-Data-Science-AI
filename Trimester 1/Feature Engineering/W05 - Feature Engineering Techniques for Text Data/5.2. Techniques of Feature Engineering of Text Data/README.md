@@ -95,3 +95,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [NN (Noun): 2](./NN%20%28Noun%29%20-%202.md)
 
 ## [RB (Adverb): 1](./RB%20%28Adverb%29%20-%201.md)
+
+## [VBD (Verb, past tense): 1](./VBD%20%28Verb%2C%20past%20tense%29%20-%201.md)
