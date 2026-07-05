@@ -1,16 +1,12 @@
 # Visualization Approaches
 
-Common “zoom out” techniques:
+Best visualizations:
 
-- choropleth maps
+- line charts
     
-- regional heatmaps
+- slope charts
     
-- multi-country comparisons
-    
-- benchmark overlays
-    
-- geographic clustering
+- area charts
     
 
-Maps are especially powerful because humans intuitively process spatial relationships.
+The intersection point should be visually emphasized because it is the narrative climax.
