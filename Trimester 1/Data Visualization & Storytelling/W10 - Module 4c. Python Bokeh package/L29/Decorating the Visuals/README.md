@@ -39,3 +39,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [1. Import figure and show](./1.%20Import%20figure%20and%20show.md)
 
 ## [2. Create fruit names and count data](./2.%20Create%20fruit%20names%20and%20count%20data.md)
+
+## [3. Define a list of different colors (use at least two different color formats)](./3.%20Define%20a%20list%20of%20different%20colors%20%28use%20at%20least%20two%20different%20color%20formats%29.md)
