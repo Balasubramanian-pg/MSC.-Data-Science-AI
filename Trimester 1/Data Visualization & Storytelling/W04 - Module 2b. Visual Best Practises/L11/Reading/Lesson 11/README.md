@@ -141,3 +141,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Best For](./Best%20For.md)
 
 ## [Poor For](./Poor%20For.md)
+
+## [Important Practical Rule](./Important%20Practical%20Rule.md)
