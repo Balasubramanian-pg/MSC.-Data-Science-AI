@@ -285,3 +285,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Real-World Consequences](./Real-World%20Consequences.md)
 
 ## [High-Stakes Domains Where Visualization Matters](./High-Stakes%20Domains%20Where%20Visualization%20Matters.md)
+
+## [Presentation Design Is Part of Systems Engineering](./Presentation%20Design%20Is%20Part%20of%20Systems%20Engineering.md)
