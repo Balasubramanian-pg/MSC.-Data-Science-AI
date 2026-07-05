@@ -75,3 +75,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [2. Forgetting `show()`](./2.%20Forgetting%20%60show%28%29%60.md)
 
 ## [3. Using Text Without `#`](./3.%20Using%20Text%20Without%20%60%23%60.md)
+
+## [4. Shape Mismatch](./4.%20Shape%20Mismatch.md)
