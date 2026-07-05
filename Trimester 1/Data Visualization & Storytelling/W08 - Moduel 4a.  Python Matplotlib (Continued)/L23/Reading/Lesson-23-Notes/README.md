@@ -201,3 +201,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [`axes`](./%60axes%60.md)
 
 ## [Why This Architecture Is Powerful](./Why%20This%20Architecture%20Is%20Powerful.md)
+
+## [`sharex=True`](./%60sharex%3DTrue%60.md)
