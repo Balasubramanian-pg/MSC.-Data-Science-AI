@@ -1,8 +1,8 @@
 # Common Line Styles
 
-|Style|Meaning|
+|Style|Appearance|
 |---|---|
-|`-`|Solid line|
-|`--`|Dashed line|
-|`:`|Dotted line|
+|`-`|Solid|
+|`--`|Dashed|
+|`:`|Dotted|
 |`-.`|Dash-dot|
