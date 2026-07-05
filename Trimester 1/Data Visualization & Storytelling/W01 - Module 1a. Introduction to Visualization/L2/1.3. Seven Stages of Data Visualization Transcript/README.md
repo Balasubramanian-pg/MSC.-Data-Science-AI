@@ -68,3 +68,5 @@
 ## [4.2 Parsing the Dataset Structure](./4.2%20Parsing%20the%20Dataset%20Structure.md)
 
 ## [4.3 Filtering by Voter Turnout Ratio](./4.3%20Filtering%20by%20Voter%20Turnout%20Ratio.md)
+
+## [4.4 Mining Hidden Patterns](./4.4%20Mining%20Hidden%20Patterns.md)
