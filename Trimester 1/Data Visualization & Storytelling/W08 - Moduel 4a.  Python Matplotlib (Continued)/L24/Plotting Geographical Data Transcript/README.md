@@ -61,3 +61,5 @@ This is foundational to:
 ## [Mental Model](./Mental%20Model.md)
 
 ## [Choropleth Maps](./Choropleth%20Maps.md)
+
+## [What Happens Here?](./What%20Happens%20Here.md)
