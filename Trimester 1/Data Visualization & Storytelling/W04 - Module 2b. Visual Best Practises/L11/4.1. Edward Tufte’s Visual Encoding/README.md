@@ -51,3 +51,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Equal Distances Without True Zero](./Equal%20Distances%20Without%20True%20Zero.md)
 
 ## [Example](./Example.md)
+
+## [Why True Zero Matters](./Why%20True%20Zero%20Matters.md)
