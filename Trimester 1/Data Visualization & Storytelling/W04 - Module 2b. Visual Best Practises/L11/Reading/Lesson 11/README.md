@@ -35,3 +35,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Good Visualization](./Good%20Visualization.md)
 
 ## [Chartjunk Problem](./Chartjunk%20Problem.md)
+
+## [Important Insight](./Important%20Insight.md)
