@@ -16,3 +16,5 @@
 ## [5. Text-Based Visualizations](./5.%20Text-Based%20Visualizations.md)
 
 ## [6. Relationship & Trend Visualizations](./6.%20Relationship%20%26%20Trend%20Visualizations.md)
+
+## [7. Comparison & Composition Visualizations](./7.%20Comparison%20%26%20Composition%20Visualizations.md)
