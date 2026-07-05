@@ -111,3 +111,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Axes](./Axes.md)
 
 ## [Conceptual Structure](./Conceptual%20Structure.md)
+
+## [Why This Design Is Powerful](./Why%20This%20Design%20Is%20Powerful.md)
