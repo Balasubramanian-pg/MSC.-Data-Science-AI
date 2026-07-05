@@ -747,3 +747,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Why This Is a Good Demo](./Why%20This%20Is%20a%20Good%20Demo.md)
 
 ## [Importing `linear_cmap`](./Importing%20%60linear_cmap%60.md)
+
+## [Syntax](./Syntax.md)
