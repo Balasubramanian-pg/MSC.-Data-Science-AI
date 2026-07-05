@@ -13,3 +13,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [1. Retention](./1.%20Retention.md)
 
 ## [Why?](./Why.md)
+
+## [Example from the Transcript](./Example%20from%20the%20Transcript.md)
