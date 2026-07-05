@@ -189,3 +189,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Pecha Kucha and the Art of Visual Brevity](./Pecha%20Kucha%20and%20the%20Art%20of%20Visual%20Brevity.md)
 
 ## [Transition from Visualization to Storytelling](./Transition%20from%20Visualization%20to%20Storytelling.md)
+
+## [Why Narrative Wrapping Matters](./Why%20Narrative%20Wrapping%20Matters.md)
