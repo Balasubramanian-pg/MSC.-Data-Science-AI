@@ -25,3 +25,5 @@ week: W01 - Overview of Feature Engineering
 ## [1.6.9. Step-by-Step Standardization Example](./1.6.9.%20Step-by-Step%20Standardization%20Example.md)
 
 ## [1.6.10. Factors Affecting Feature Engineering](./1.6.10.%20Factors%20Affecting%20Feature%20Engineering.md)
+
+## [1.6.11. Common Misinterpretations](./1.6.11.%20Common%20Misinterpretations.md)
