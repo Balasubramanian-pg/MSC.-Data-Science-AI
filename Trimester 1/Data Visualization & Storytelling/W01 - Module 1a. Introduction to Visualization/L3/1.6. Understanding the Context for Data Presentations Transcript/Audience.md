@@ -1,3 +1,3 @@
 # Audience
 
-General public.
+Political analysts and regional stakeholders.
