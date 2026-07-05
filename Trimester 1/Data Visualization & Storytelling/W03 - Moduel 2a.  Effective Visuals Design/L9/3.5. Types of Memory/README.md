@@ -27,3 +27,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Connection to Pre-Attentive Processing](./Connection%20to%20Pre-Attentive%20Processing.md)
 
 ## [Bad Design](./Bad%20Design.md)
+
+## [Good Design](./Good%20Design.md)
