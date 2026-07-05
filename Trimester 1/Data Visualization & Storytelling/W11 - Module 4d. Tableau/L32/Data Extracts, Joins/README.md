@@ -11,3 +11,5 @@
 ## [8.1.5. Data Extracts and Local Memory](./8.1.5.%20Data%20Extracts%20and%20Local%20Memory.md)
 
 ## [8.1.6. Inner Joins in the Physical Layer](./8.1.6.%20Inner%20Joins%20in%20the%20Physical%20Layer.md)
+
+## [8.1.7. Why Inner Joins Drop Data](./8.1.7.%20Why%20Inner%20Joins%20Drop%20Data.md)
