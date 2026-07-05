@@ -1,14 +1,16 @@
 # Tradeoff
 
-Too much grid visibility creates:
+Too much grid emphasis creates:
 
-- clutter
+- visual noise
     
 - distraction
     
 
 Best practice:
 
-- subtle grid lines
+- subtle grids
     
-- low visual dominance
+- low contrast
+    
+- supportive rather than dominant
