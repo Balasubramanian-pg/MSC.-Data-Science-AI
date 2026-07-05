@@ -1,9 +1,9 @@
 # Characteristics
 
-- Live updates
+- Highly interactive
     
-- Alert-heavy
+- Drill-down capability
     
-- High refresh frequency
+- Advanced filtering
     
-- Dense monitoring visuals
+- Multi-dimensional analysis
