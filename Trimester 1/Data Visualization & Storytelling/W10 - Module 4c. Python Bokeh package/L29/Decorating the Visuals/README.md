@@ -137,3 +137,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Creating the DataFrame](./Creating%20the%20DataFrame.md)
 
 ## [Why Use a DataFrame?](./Why%20Use%20a%20DataFrame.md)
+
+## [Visual Properties in Bokeh](./Visual%20Properties%20in%20Bokeh.md)
