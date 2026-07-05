@@ -103,3 +103,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Semantic Principle](./Important%20Semantic%20Principle.md)
 
 ## [Bubble Size Meaning](./Bubble%20Size%20Meaning.md)
+
+## [Why Topic Modeling Is Powerful](./Why%20Topic%20Modeling%20Is%20Powerful.md)
