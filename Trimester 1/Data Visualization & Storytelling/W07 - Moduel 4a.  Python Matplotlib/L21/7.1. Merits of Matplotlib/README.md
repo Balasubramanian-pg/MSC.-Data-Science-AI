@@ -31,3 +31,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [3. Object-Oriented Plotting](./3.%20Object-Oriented%20Plotting.md)
 
 ## [Core Structure](./Core%20Structure.md)
+
+## [Object Relationships](./Object%20Relationships.md)
