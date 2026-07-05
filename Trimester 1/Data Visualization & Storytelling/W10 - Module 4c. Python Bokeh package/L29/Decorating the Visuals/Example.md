@@ -1,12 +1,6 @@
 # Example
 
 ```python
-fill_alpha=0.2
-line_alpha=1.0
+plot.xaxis.axis_label = "Months"
+plot.yaxis.axis_label = "Freight"
 ```
-
-Result:
-
-- faint interior
-    
-- strong border
