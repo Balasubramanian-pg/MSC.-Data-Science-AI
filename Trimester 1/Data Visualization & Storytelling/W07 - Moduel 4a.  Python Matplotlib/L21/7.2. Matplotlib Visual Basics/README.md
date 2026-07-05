@@ -63,3 +63,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Example](./Example.md)
 
 ## [Important Warning](./Important%20Warning.md)
+
+## [9. Importing Matplotlib](./9.%20Importing%20Matplotlib.md)
