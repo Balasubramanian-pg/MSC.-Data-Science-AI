@@ -1,7 +1,5 @@
 # Definition
 
-**Data Mining** is the process of discovering patterns and relationships in data.
+**Representation** is the first visual expression of the data.
 
-The lecture describes mining as:
-
-> uncovering hidden patterns.
+This stage uses simple charts to communicate findings.
