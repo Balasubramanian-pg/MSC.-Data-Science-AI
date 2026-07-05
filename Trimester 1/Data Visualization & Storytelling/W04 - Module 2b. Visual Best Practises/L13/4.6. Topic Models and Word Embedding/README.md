@@ -41,3 +41,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why This Matters](./Why%20This%20Matters.md)
 
 ## [Semantic Geometry](./Semantic%20Geometry.md)
+
+## [Example](./Example.md)
