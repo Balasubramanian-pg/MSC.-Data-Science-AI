@@ -223,3 +223,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Panchatantra Sentiment Example](./Panchatantra%20Sentiment%20Example.md)
 
 ## [Segment-Level Sentiment](./Segment-Level%20Sentiment.md)
+
+## [Important NLP Principle](./Important%20NLP%20Principle.md)
