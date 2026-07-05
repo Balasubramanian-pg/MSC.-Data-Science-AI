@@ -81,3 +81,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Radar Charts](./Radar%20Charts.md)
 
 ## [Conceptual Structure](./Conceptual%20Structure.md)
+
+## [Hidden Problem with Radar Charts](./Hidden%20Problem%20with%20Radar%20Charts.md)
