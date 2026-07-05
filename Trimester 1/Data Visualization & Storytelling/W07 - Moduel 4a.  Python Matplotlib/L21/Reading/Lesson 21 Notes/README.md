@@ -203,3 +203,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Axis Labels Matter](./Why%20Axis%20Labels%20Matter.md)
 
 ## [4. Adding a Grid](./4.%20Adding%20a%20Grid.md)
+
+## [Purpose of Grids](./Purpose%20of%20Grids.md)
