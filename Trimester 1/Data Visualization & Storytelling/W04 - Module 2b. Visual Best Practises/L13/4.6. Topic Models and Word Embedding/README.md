@@ -125,3 +125,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Final Mental Model](./Final%20Mental%20Model.md)
 
 ## [Topic Modeling, t-SNE Clustering, and Semantic Dimensionality Reduction](./Topic%20Modeling%2C%20t-SNE%20Clustering%2C%20and%20Semantic%20Dimensionality%20Reduction.md)
+
+## [Visualizing Latent Themes in High-Dimensional Text Data](./Visualizing%20Latent%20Themes%20in%20High-Dimensional%20Text%20Data.md)
