@@ -389,3 +389,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Analytical Insight](./Important%20Analytical%20Insight.md)
 
 ## [Enron Analysis Pipeline](./Enron%20Analysis%20Pipeline.md)
+
+## [Why Network Visualization Is Powerful](./Why%20Network%20Visualization%20Is%20Powerful.md)
