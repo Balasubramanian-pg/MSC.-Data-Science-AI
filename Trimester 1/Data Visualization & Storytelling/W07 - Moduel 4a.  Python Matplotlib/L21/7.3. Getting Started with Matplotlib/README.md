@@ -185,3 +185,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [`color='red'`](./%60color%3D%27red%27%60.md)
 
 ## [`linestyle='--'`](./%60linestyle%3D%27--%27%60.md)
+
+## [`label='cosine'`](./%60label%3D%27cosine%27%60.md)
