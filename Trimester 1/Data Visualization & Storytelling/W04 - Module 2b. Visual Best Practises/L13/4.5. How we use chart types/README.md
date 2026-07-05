@@ -277,3 +277,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Subjective Statement](./Subjective%20Statement.md)
 
 ## [Important Semantic Insight](./Important%20Semantic%20Insight.md)
+
+## [Subjectivity Modeling Pipeline](./Subjectivity%20Modeling%20Pipeline.md)
