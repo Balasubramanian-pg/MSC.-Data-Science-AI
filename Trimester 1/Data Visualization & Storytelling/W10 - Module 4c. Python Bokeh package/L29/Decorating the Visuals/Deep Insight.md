@@ -1,27 +1,18 @@
 # Deep Insight
 
-At this point, the instructor is no longer teaching "charts."
+Legends are a workaround.
 
-They are teaching:
+The best visualizations often avoid legends entirely by:
 
-- perception engineering
+- direct labeling
     
-- visual hierarchy
+- annotations
     
-- information architecture
-    
-
-because axis systems determine how humans decode quantitative information.
-
-This section is one of the most practically important parts of visualization design:
-
-> handling clutter and readability
-
-The instructor is solving two classic problems:
-
-1. overlapping categorical labels
-    
-2. unreadable large numeric scales
+- embedded text
     
 
-This is real-world visualization work.
+Because legends force:
+
+> eye movement between chart and decoding key
+
+This increases cognitive load.
