@@ -111,3 +111,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Data + Narrative = Perception Engine](./Data%20%2B%20Narrative%20%3D%20Perception%20Engine.md)
 
 ## [Important Lesson](./Important%20Lesson.md)
+
+## [Visual Storytelling vs Raw Visualization](./Visual%20Storytelling%20vs%20Raw%20Visualization.md)
