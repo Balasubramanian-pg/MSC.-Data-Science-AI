@@ -129,3 +129,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [7. Relationship Analysis](./7.%20Relationship%20Analysis.md)
 
 ## [Scatter Plots](./Scatter%20Plots.md)
+
+## [Example](./Example.md)
