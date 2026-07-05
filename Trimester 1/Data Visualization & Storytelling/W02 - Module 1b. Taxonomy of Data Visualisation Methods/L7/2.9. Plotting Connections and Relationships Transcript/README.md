@@ -19,3 +19,5 @@ week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
 ## [6. Production-Grade Systems Architecture & Pipelines](./6.%20Production-Grade%20Systems%20Architecture%20%26%20Pipelines.md)
 
 ## [7. Performance Engineering & Debugging Strategies](./7.%20Performance%20Engineering%20%26%20Debugging%20Strategies.md)
+
+## [Load high-resolution county boundaries](./Load%20high-resolution%20county%20boundaries.md)
