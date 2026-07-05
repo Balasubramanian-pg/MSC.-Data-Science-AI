@@ -3,14 +3,13 @@
 Sentence:
 
 ```text
-"Visualization of text data"
+"The cat chased the mouse"
 ```
 
 becomes:
 
-|Token|
-|---|
-|visualization|
-|of|
-|text|
-|data|
+|Word|Count|
+|---|---|
+|cat|1|
+|chased|1|
+|mouse|1|
