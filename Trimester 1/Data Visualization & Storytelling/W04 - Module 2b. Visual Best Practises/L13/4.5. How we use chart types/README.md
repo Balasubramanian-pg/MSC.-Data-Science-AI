@@ -221,3 +221,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Emotion Compression Pipeline](./Emotion%20Compression%20Pipeline.md)
 
 ## [Panchatantra Sentiment Example](./Panchatantra%20Sentiment%20Example.md)
+
+## [Segment-Level Sentiment](./Segment-Level%20Sentiment.md)
