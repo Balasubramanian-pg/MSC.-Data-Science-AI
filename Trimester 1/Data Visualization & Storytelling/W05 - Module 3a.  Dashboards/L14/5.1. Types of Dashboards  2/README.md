@@ -35,3 +35,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Key Principle](./Key%20Principle.md)
 
 ## [Action-Oriented Design](./Action-Oriented%20Design.md)
+
+## [Strong Dashboard Design](./Strong%20Dashboard%20Design.md)
