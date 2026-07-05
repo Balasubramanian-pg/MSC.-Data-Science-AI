@@ -39,3 +39,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Comprehensive Color Demonstration](./Comprehensive%20Color%20Demonstration.md)
 
 ## [Cognitive Risks of Color](./Cognitive%20Risks%20of%20Color.md)
+
+## [Bad Color Choices Create Analytical Errors](./Bad%20Color%20Choices%20Create%20Analytical%20Errors.md)
