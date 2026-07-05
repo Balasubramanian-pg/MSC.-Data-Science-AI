@@ -421,3 +421,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Communication Before Collapse](./Communication%20Before%20Collapse.md)
 
 ## [Temporal Spike Detection](./Temporal%20Spike%20Detection.md)
+
+## [Important Analytical Principle](./Important%20Analytical%20Principle.md)
