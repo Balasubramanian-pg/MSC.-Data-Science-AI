@@ -31,3 +31,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Semantic Space Model](./Semantic%20Space%20Model.md)
 
 ## [Word Embeddings](./Word%20Embeddings.md)
+
+## [Mathematical Representation of Meaning](./Mathematical%20Representation%20of%20Meaning.md)
