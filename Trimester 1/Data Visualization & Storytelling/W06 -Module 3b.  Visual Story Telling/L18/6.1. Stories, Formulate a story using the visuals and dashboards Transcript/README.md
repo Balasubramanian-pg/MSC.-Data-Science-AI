@@ -39,3 +39,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Storytelling and Action](./Storytelling%20and%20Action.md)
 
 ## [Why Leaders Use Stories](./Why%20Leaders%20Use%20Stories.md)
+
+## [Leadership Is Meaning Management](./Leadership%20Is%20Meaning%20Management.md)
