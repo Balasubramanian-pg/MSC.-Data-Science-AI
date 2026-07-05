@@ -95,3 +95,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [2. Assembly](./2.%20Assembly.md)
 
 ## [Understanding Relationships](./Understanding%20Relationships.md)
+
+## [What Assembly Means](./What%20Assembly%20Means.md)
