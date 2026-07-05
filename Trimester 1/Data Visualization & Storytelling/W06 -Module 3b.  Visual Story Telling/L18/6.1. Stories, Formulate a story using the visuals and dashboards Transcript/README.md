@@ -155,3 +155,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [3. Naturalness in Delivery](./3.%20Naturalness%20in%20Delivery.md)
 
 ## [Human Communication Is Emotional](./Human%20Communication%20Is%20Emotional.md)
+
+## [Naturalness Improves Trust](./Naturalness%20Improves%20Trust.md)
