@@ -55,3 +55,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Good Uses](./Good%20Uses.md)
 
 ## [Bad Uses](./Bad%20Uses.md)
+
+## [2. Volume / Area Encoding](./2.%20Volume%20Area%20Encoding.md)
