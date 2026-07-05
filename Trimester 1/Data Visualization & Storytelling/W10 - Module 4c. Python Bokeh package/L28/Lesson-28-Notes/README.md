@@ -35,3 +35,5 @@ Every single function, method, and parameter is explained in detail using Python
 ## [MODULE 3: SCATTER PLOTS & GLYPH LAYERING](./MODULE%203%20-%20SCATTER%20PLOTS%20%26%20GLYPH%20LAYERING.md)
 
 ## [🟢 Module 4: Categorical Bar Charts](./%F0%9F%9F%A2%20Module%204%20-%20Categorical%20Bar%20Charts.md)
+
+## [MODULE 4: CATEGORICAL DATA (vbar)](./MODULE%204%20-%20CATEGORICAL%20DATA%20%28vbar%29.md)
