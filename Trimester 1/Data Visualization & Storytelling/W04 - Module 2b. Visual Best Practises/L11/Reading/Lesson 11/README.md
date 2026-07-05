@@ -113,3 +113,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Position Is Best](./Why%20Position%20Is%20Best.md)
 
 ## [Position Encoding Workflow](./Position%20Encoding%20Workflow.md)
+
+## [Why Color Is Weak](./Why%20Color%20Is%20Weak.md)
