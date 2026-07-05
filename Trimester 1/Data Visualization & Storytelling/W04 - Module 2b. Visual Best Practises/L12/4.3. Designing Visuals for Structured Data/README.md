@@ -97,3 +97,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Histogram Interpretation Framework](./Histogram%20Interpretation%20Framework.md)
 
 ## [5. Box Plot Analysis](./5.%20Box%20Plot%20Analysis.md)
+
+## [Understanding Distribution Geometry](./Understanding%20Distribution%20Geometry.md)
