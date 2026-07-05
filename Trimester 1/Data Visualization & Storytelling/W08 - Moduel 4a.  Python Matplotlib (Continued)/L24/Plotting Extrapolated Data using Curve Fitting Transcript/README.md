@@ -79,3 +79,5 @@ Observed Data → Fit Function → Predict Future
 ## [Why Linear Regression Failed](./Why%20Linear%20Regression%20Failed.md)
 
 ## [Underfitting](./Underfitting.md)
+
+## [Overfitting vs Underfitting](./Overfitting%20vs%20Underfitting.md)
