@@ -247,3 +247,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why This Case Matters](./Why%20This%20Case%20Matters.md)
 
 ## [The Core Problem](./The%20Core%20Problem.md)
+
+## [Problems in the Slide](./Problems%20in%20the%20Slide.md)
