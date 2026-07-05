@@ -323,3 +323,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Example Workflow](./Example%20Workflow.md)
 
 ## [Fit quadratic curve](./Fit%20quadratic%20curve.md)
+
+## [Polynomial function](./Polynomial%20function.md)
