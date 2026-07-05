@@ -1,10 +1,6 @@
 # Visual Intuition
 
 ```text
-///////
-///////
-
-xxxxxxx
-
-.......
+Opaque border
+Transparent center
 ```
