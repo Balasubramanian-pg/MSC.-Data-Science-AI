@@ -179,3 +179,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Important Design Principle](./Important%20Design%20Principle.md)
 
 ## [Step-by-Step Breakdown](./Step-by-Step%20Breakdown.md)
+
+## [1. Creating the DataFrame](./1.%20Creating%20the%20DataFrame.md)
