@@ -120,3 +120,5 @@
 ## [5. Correlation ≠ Causation](./5.%20Correlation%20%E2%89%A0%20Causation.md)
 
 ## [6. Ignoring Stakeholder Feedback](./6.%20Ignoring%20Stakeholder%20Feedback.md)
+
+## [9. Golden Rules of Effective Data Visualization](./9.%20Golden%20Rules%20of%20Effective%20Data%20Visualization.md)
