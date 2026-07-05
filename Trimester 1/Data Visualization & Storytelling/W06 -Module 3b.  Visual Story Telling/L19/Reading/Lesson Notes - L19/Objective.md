@@ -1,22 +1,25 @@
 # Objective
 
-The purpose of a “Change Over Time” story is to reveal:
+Drill-down storytelling moves from:
 
-- trends
+- broad summaries  
+    to
     
-- progression
-    
-- acceleration
-    
-- decline
-    
-- cyclical behavior
-    
-- structural shifts
+- increasingly detailed layers
     
 
-This is one of the most common storytelling patterns in business analytics.
+This mirrors how investigations naturally occur.
 
-Core question:
+Start with:
 
-> “How did things evolve?”
+> “Something is wrong.”
+
+Then progressively ask:
+
+- where?
+    
+- for whom?
+    
+- under what conditions?
+    
+- caused by what?
