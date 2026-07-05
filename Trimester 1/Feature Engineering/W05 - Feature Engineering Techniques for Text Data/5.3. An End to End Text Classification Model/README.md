@@ -7,3 +7,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [End-to-End Text Classification Pipeline](./End-to-End%20Text%20Classification%20Pipeline.md)
 
 ## [1. Concept Introduction](./1.%20Concept%20Introduction.md)
+
+## [2. Visual Intuition: The Information Flow](./2.%20Visual%20Intuition%20-%20The%20Information%20Flow.md)
