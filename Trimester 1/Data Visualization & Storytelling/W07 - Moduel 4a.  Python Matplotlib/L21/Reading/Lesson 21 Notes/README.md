@@ -223,3 +223,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [What `show()` Does](./What%20%60show%28%29%60%20Does.md)
 
 ## [Important Hidden Concept](./Important%20Hidden%20Concept.md)
+
+## [Internal Workflow](./Internal%20Workflow.md)
