@@ -1,10 +1,10 @@
 # Important Insight
 
-Humans rarely remember:  
-isolated information.
+The colors themselves are arbitrary.
 
-They remember:  
-meaningful patterns.
+There is no intrinsic reason:  
+Democrats must be blue  
+or Republicans must be red.
 
-Stories provide:  
-pattern structure.
+But once repeated consistently:  
+the mapping became psychologically entrenched.
