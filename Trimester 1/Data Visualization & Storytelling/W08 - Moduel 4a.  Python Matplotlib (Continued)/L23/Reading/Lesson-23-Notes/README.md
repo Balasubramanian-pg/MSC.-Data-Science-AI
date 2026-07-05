@@ -49,3 +49,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Real API Example](./Real%20API%20Example.md)
 
 ## [Flattening Nested JSON](./Flattening%20Nested%20JSON.md)
+
+## [Why Direct URL Reading Matters](./Why%20Direct%20URL%20Reading%20Matters.md)
