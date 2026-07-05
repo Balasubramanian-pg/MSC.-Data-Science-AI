@@ -99,3 +99,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Assuming Stable APIs](./Assuming%20Stable%20APIs.md)
 
 ## [No Error Handling](./No%20Error%20Handling.md)
+
+## [Final Takeaways](./Final%20Takeaways.md)
