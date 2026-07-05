@@ -55,3 +55,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Univariate Workflow](./Univariate%20Workflow.md)
 
 ## [Why Univariate Analysis Matters](./Why%20Univariate%20Analysis%20Matters.md)
+
+## [Common Univariate Visualizations](./Common%20Univariate%20Visualizations.md)
