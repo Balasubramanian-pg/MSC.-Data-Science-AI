@@ -71,3 +71,5 @@ Observed Data → Fit Function → Predict Future
 ## [Predicted trend](./Predicted%20trend.md)
 
 ## [What the Plot Shows](./What%20the%20Plot%20Shows.md)
+
+## [Why Curve Fitting Works](./Why%20Curve%20Fitting%20Works.md)
