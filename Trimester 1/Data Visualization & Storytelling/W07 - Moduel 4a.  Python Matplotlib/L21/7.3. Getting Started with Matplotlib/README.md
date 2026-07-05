@@ -243,3 +243,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [What This Teaches Conceptually](./What%20This%20Teaches%20Conceptually.md)
 
 ## [Customizing Matplotlib Visualizations](./Customizing%20Matplotlib%20Visualizations.md)
+
+## [1. Plot Space Creation with `subplots()`](./1.%20Plot%20Space%20Creation%20with%20%60subplots%28%29%60.md)
