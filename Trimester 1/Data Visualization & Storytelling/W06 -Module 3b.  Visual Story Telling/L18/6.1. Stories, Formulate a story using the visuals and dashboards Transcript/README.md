@@ -319,3 +319,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Strong Communication](./Strong%20Communication.md)
 
 ## [But Important Warning](./But%20Important%20Warning.md)
+
+## [Good Visuals Must Be](./Good%20Visuals%20Must%20Be.md)
