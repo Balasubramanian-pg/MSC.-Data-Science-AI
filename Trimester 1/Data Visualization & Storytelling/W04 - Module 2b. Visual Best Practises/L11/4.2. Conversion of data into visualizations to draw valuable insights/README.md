@@ -35,3 +35,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [What Color Does Poorly](./What%20Color%20Does%20Poorly.md)
 
 ## [Ranking](./Ranking.md)
+
+## [Estimation](./Estimation.md)
