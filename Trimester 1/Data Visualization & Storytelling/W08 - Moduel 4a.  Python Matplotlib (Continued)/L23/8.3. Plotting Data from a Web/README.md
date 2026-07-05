@@ -25,3 +25,5 @@ It is fundamentally about:
 ## [Step 2: Define the URL](./Step%202%20-%20Define%20the%20URL.md)
 
 ## [Important Concept](./Important%20Concept.md)
+
+## [Real-World Analogy](./Real-World%20Analogy.md)
