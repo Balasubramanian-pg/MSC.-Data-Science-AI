@@ -34,3 +34,5 @@
 ## [14. Balancing Design and Story](./14.%20Balancing%20Design%20and%20Story.md)
 
 ## [Practical Storytelling Checklist](./Practical%20Storytelling%20Checklist.md)
+
+## [Common Mistakes](./Common%20Mistakes.md)
