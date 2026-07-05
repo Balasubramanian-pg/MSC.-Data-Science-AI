@@ -161,3 +161,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [2. Missing Labels](./2.%20Missing%20Labels.md)
 
 ## [3. Plotting Before Defining Data](./3.%20Plotting%20Before%20Defining%20Data.md)
+
+## [4. Over-customization](./4.%20Over-customization.md)
