@@ -473,3 +473,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Modern AI and Communication Analysis](./Modern%20AI%20and%20Communication%20Analysis.md)
 
 ## [Modern Enterprise Pipeline](./Modern%20Enterprise%20Pipeline.md)
+
+## [Why This Matters Beyond Enron](./Why%20This%20Matters%20Beyond%20Enron.md)
