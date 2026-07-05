@@ -47,3 +47,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [4. Progressive Disclosure](./4.%20Progressive%20Disclosure.md)
 
 ## [The Pitfalls of Traditional Presentation Methods](./The%20Pitfalls%20of%20Traditional%20Presentation%20Methods.md)
+
+## [Common Failures](./Common%20Failures.md)
