@@ -111,3 +111,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [4. Creating a Simple Plot](./4.%20Creating%20a%20Simple%20Plot.md)
 
 ## [4.1 Preparing the Data](./4.1%20Preparing%20the%20Data.md)
+
+## [Understanding `linspace`](./Understanding%20%60linspace%60.md)
