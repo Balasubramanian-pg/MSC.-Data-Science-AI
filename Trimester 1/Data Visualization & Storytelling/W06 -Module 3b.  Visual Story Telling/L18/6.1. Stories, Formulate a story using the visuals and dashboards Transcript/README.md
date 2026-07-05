@@ -195,3 +195,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Data Storytelling Architecture](./Data%20Storytelling%20Architecture.md)
 
 ## [Pecha Kucha: Art of Visual Brevity](./Pecha%20Kucha%20-%20Art%20of%20Visual%20Brevity.md)
+
+## [Core Idea](./Core%20Idea.md)
