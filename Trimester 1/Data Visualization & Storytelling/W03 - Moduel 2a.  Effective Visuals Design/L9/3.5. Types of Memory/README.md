@@ -175,3 +175,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Good Visualization Reduces Mental Work](./Good%20Visualization%20Reduces%20Mental%20Work.md)
 
 ## [Poor Design](./Poor%20Design.md)
+
+## [Recognition vs Recall](./Recognition%20vs%20Recall.md)
