@@ -92,3 +92,5 @@ The transcript introduces this challenge directly.
 ## [Why This Matters](./Why%20This%20Matters.md)
 
 ## [Good Positioning Strategy](./Good%20Positioning%20Strategy.md)
+
+## [Information Hierarchy Model](./Information%20Hierarchy%20Model.md)
