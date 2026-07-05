@@ -249,3 +249,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Shortcut Decision-Making](./Shortcut%20Decision-Making.md)
 
 ## [NASA Columbia Shuttle Case](./NASA%20Columbia%20Shuttle%20Case.md)
+
+## [Key Problem](./Key%20Problem.md)
