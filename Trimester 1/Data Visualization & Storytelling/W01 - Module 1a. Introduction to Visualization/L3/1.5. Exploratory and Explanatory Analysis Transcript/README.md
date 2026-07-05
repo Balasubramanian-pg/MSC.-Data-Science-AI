@@ -95,3 +95,5 @@
 ## [8. Common Pitfalls in Exploratory and Explanatory Analysis](./8.%20Common%20Pitfalls%20in%20Exploratory%20and%20Explanatory%20Analysis.md)
 
 ## [1. Skipping Exploratory Analysis](./1.%20Skipping%20Exploratory%20Analysis.md)
+
+## [2. Confusing Exploration with Explanation](./2.%20Confusing%20Exploration%20with%20Explanation.md)
