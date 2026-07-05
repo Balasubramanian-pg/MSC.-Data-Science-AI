@@ -315,3 +315,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [3. Add Caveats](./3.%20Add%20Caveats.md)
 
 ## [4. Explain Why the Period Was Chosen](./4.%20Explain%20Why%20the%20Period%20Was%20Chosen.md)
+
+## [Example of Responsible Framing](./Example%20of%20Responsible%20Framing.md)
