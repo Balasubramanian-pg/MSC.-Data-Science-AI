@@ -739,3 +739,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Logarithmic Color Mapping](./Logarithmic%20Color%20Mapping.md)
 
 ## [Example Dataset](./Example%20Dataset.md)
+
+## [Mathematical Interpretation](./Mathematical%20Interpretation.md)
