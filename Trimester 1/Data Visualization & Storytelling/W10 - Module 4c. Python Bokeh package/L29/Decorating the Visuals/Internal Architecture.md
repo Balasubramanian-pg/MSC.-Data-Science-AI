@@ -2,7 +2,11 @@
 
 ```mermaid
 flowchart TD
-    A[Glyph]
-    A --> B[legend_label]
-    B --> C[Legend Object]
+    A[Figure]
+
+    A --> B[Plot Area]
+    A --> C[Color Bar]
+
+    C --> D[Gradient]
+    C --> E[Numeric Labels]
 ```
