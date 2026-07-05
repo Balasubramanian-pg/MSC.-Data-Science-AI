@@ -21,3 +21,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [arrays and manually calculate the statistical aggregates (means) first.](./arrays%20and%20manually%20calculate%20the%20statistical%20aggregates%20%28means%29%20first.md)
 
 ## [Step A: Perform manual statistical grouping](./Step%20A%20-%20Perform%20manual%20statistical%20grouping.md)
+
+## [Step B: Draw raw geometric bar shapes](./Step%20B%20-%20Draw%20raw%20geometric%20bar%20shapes.md)
