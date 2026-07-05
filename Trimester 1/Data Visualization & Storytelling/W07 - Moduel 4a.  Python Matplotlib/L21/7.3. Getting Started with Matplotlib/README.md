@@ -33,3 +33,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Example](./Example.md)
 
 ## [Create x values from 0 to 10](./Create%20x%20values%20from%200%20to%2010.md)
+
+## [4. Creating Data with `linspace`](./4.%20Creating%20Data%20with%20%60linspace%60.md)
