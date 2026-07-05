@@ -651,3 +651,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Typical Legend Customizations](./Typical%20Legend%20Customizations.md)
 
 ## [Possible Locations](./Possible%20Locations.md)
+
+## [Important Dashboard Principle](./Important%20Dashboard%20Principle.md)
