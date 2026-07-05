@@ -77,3 +77,5 @@
 ## [5.2 Constructing Variables](./5.2%20Constructing%20Variables.md)
 
 ## [Example Formula](./Example%20Formula.md)
+
+## [Insight](./Insight.md)
