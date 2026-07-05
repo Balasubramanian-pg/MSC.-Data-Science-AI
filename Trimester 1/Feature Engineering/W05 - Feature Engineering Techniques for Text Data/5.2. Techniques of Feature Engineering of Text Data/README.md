@@ -49,3 +49,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [3. One-Hot Encoding (OHE) for Text](./3.%20One-Hot%20Encoding%20%28OHE%29%20for%20Text.md)
 
 ## [A list of categorical words to encode](./A%20list%20of%20categorical%20words%20to%20encode.md)
+
+## [Initialize the OneHotEncoder](./Initialize%20the%20OneHotEncoder.md)
