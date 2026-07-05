@@ -87,3 +87,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Latent Semantic Analysis](./Latent%20Semantic%20Analysis.md)
 
 ## [LDA](./LDA.md)
+
+## [Latent Dirichlet Allocation](./Latent%20Dirichlet%20Allocation.md)
