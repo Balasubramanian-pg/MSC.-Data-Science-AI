@@ -313,3 +313,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why This Matters in Engineering](./Why%20This%20Matters%20in%20Engineering.md)
 
 ## [Technical Communication Problem](./Technical%20Communication%20Problem.md)
+
+## [Visualization Bridges This Gap](./Visualization%20Bridges%20This%20Gap.md)
