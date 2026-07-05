@@ -41,3 +41,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Cognitive Risks of Color](./Cognitive%20Risks%20of%20Color.md)
 
 ## [Bad Color Choices Create Analytical Errors](./Bad%20Color%20Choices%20Create%20Analytical%20Errors.md)
+
+## [Color Maps](./Color%20Maps.md)
