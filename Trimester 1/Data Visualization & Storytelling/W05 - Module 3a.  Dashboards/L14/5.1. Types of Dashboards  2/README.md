@@ -25,3 +25,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Important Dashboard Principle](./Important%20Dashboard%20Principle.md)
 
 ## [Limited Space and Limited Time](./Limited%20Space%20and%20Limited%20Time.md)
+
+## [Rapid Scanning](./Rapid%20Scanning.md)
