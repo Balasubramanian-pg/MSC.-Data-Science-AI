@@ -129,3 +129,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Problem with Most Presentations](./Problem%20with%20Most%20Presentations.md)
 
 ## [Important Principle](./Important%20Principle.md)
+
+## [Presentation as Cognitive Design](./Presentation%20as%20Cognitive%20Design.md)
