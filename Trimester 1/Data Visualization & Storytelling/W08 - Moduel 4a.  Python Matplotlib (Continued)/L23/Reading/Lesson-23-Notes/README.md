@@ -61,3 +61,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why NumPy Is Always Imported](./Why%20NumPy%20Is%20Always%20Imported.md)
 
 ## [Why Pandas Is Central](./Why%20Pandas%20Is%20Central.md)
+
+## [Advanced Visualization Workflow](./Advanced%20Visualization%20Workflow.md)
