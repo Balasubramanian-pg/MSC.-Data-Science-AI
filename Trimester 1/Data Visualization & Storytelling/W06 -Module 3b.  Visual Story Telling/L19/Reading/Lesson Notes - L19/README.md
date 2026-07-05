@@ -139,3 +139,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Contrast Stories Are Powerful](./Why%20Contrast%20Stories%20Are%20Powerful.md)
 
 ## [Common Contrast Mistakes](./Common%20Contrast%20Mistakes.md)
+
+## [10. Intersection](./10.%20Intersection.md)
