@@ -73,3 +73,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Hybrid Storytelling Works](./Why%20Hybrid%20Storytelling%20Works.md)
 
 ## [Key Hybrid Techniques](./Key%20Hybrid%20Techniques.md)
+
+## [1. Martini Glass Structure](./1.%20Martini%20Glass%20Structure.md)
