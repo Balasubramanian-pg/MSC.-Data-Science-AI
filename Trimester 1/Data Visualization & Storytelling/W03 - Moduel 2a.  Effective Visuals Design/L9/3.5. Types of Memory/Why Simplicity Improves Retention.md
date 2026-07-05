@@ -1,11 +1,7 @@
 # Why Simplicity Improves Retention
 
-Complex visuals are harder to encode into long-term memory.
+Simple visuals encode into memory more effectively.
 
-Simple visuals:
+Complex visuals require excessive cognitive effort.
 
-- reduce processing effort
-    
-- improve comprehension
-    
-- improve recall
+This is why elite dashboards are often visually minimal.
