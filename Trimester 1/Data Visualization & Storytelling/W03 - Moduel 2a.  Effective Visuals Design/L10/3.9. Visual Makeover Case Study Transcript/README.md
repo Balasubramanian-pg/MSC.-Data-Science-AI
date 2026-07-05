@@ -134,3 +134,5 @@ The transcript introduces this challenge directly.
 ## [Layer 1: Attention Zone](./Layer%201%20-%20Attention%20Zone.md)
 
 ## [Layer 2: Analytical Zone](./Layer%202%20-%20Analytical%20Zone.md)
+
+## [Layer 3: Context Zone](./Layer%203%20-%20Context%20Zone.md)
