@@ -121,3 +121,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Option 2: Separate Line for Growth Rate](./Option%202%20-%20Separate%20Line%20for%20Growth%20Rate.md)
 
 ## [Core Visualization Principle](./Core%20Visualization%20Principle.md)
+
+## [Pre-attentive Manipulation](./Pre-attentive%20Manipulation.md)
