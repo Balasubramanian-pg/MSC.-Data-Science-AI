@@ -19,3 +19,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [6. Real-World Analogies](./6.%20Real-World%20Analogies.md)
 
 ## [7. Python Implementations](./7.%20Python%20Implementations.md)
+
+## [Execution Block](./Execution%20Block.md)
