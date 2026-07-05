@@ -1,21 +1,22 @@
 # Objective
 
-Factor-based stories identify:
+Outlier stories identify anomalies:
 
-- drivers
-    
-- contributors
-    
-- influencing variables
+- observations that deviate sharply from the norm
     
 
 Core question:
 
-> “What caused the change?”
+> “What is unusual here?”
 
-This moves analytics from:
+Outliers are analytically valuable because they often indicate:
 
-- observation  
-    to
+- hidden mechanisms
     
-- explanation
+- fraud
+    
+- systemic failure
+    
+- exceptional success
+    
+- measurement errors
