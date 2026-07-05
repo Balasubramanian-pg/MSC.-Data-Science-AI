@@ -65,3 +65,5 @@
 ## [4. Ignoring Data Types](./4.%20Ignoring%20Data%20Types.md)
 
 ## [5. Imbalanced Comparisons](./5.%20Imbalanced%20Comparisons.md)
+
+## [8. Golden Rules of Effective Visualization](./8.%20Golden%20Rules%20of%20Effective%20Visualization.md)
