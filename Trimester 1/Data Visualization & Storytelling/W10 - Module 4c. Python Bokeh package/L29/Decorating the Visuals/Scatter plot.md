@@ -1,10 +1,11 @@
 # Scatter plot
 
-plot.scatter(
-    [1,2,3,4,5],
-    [2,5,7,8,2],
-    size=10
-)
+legend_plot.scatter(
+    x,
+    y2,
 
-show(plot)
-```
+    legend_label="Objects",
+
+    size=10,
+    color="red"
+)
