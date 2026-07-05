@@ -73,3 +73,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [the dataset or write staggered data extraction layers.](./the%20dataset%20or%20write%20staggered%20data%20extraction%20layers.md)
 
 ## [--- Approach B: Seaborn (Seamless Column Mapping) ---](./---%20Approach%20B%20-%20Seaborn%20%28Seamless%20Column%20Mapping%29%20---.md)
+
+## [One single, readable command handles data mapping, categorization, and color palettes.](./One%20single%2C%20readable%20command%20handles%20data%20mapping%2C%20categorization%2C%20and%20color%20palettes.md)
