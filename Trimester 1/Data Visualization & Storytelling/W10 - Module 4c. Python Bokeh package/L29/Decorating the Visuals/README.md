@@ -527,3 +527,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Important Bokeh Hierarchy](./Important%20Bokeh%20Hierarchy.md)
 
 ## [Hierarchical Structure](./Hierarchical%20Structure.md)
+
+## [Deep Visualization Insight](./Deep%20Visualization%20Insight.md)
