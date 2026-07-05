@@ -99,3 +99,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Real Dashboard Implications](./Real%20Dashboard%20Implications.md)
 
 ## [Bad Dashboard Characteristics](./Bad%20Dashboard%20Characteristics.md)
+
+## [Good Dashboard Characteristics](./Good%20Dashboard%20Characteristics.md)
