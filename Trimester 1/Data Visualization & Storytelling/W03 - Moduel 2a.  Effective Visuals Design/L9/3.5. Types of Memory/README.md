@@ -17,3 +17,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [1. Sensory Memory](./1.%20Sensory%20Memory.md)
 
 ## [Definition](./Definition.md)
+
+## [In Visualization](./In%20Visualization.md)
