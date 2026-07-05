@@ -583,3 +583,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Example of Position Change](./Example%20of%20Position%20Change.md)
 
 ## [Title Styling](./Title%20Styling.md)
+
+## [Why Titles Matter So Much](./Why%20Titles%20Matter%20So%20Much.md)
