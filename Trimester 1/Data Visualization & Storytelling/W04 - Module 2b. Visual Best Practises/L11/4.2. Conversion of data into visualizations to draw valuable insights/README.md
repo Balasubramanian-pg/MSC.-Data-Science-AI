@@ -61,3 +61,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Bubble Charts and Circle Size](./Bubble%20Charts%20and%20Circle%20Size.md)
 
 ## [Why Area Is Better Than Color](./Why%20Area%20Is%20Better%20Than%20Color.md)
+
+## [But Area Still Has Problems](./But%20Area%20Still%20Has%20Problems.md)
