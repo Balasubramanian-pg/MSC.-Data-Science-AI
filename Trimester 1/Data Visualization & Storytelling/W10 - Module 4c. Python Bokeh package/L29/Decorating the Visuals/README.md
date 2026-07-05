@@ -741,3 +741,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Example Dataset](./Example%20Dataset.md)
 
 ## [Mathematical Interpretation](./Mathematical%20Interpretation.md)
+
+## [Shape Intuition](./Shape%20Intuition.md)
