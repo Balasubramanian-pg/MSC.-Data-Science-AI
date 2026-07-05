@@ -1,7 +1,3 @@
 # Example
 
-|Color Intensity|Meaning|
-|---|---|
-|Light Blue|Low sales|
-|Medium Blue|Medium sales|
-|Dark Blue|High sales|
+A bright cyan KPI card among gray cards feels more important even before reading the value.
