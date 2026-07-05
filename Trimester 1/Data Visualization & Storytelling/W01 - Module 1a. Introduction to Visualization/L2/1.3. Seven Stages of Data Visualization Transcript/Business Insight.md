@@ -1,14 +1,19 @@
 # Business Insight
 
-Poor acquisition practices create downstream problems:
+Parsing prevents catastrophic reporting errors.
 
-- dashboard failures
-    
-- incorrect KPIs
-    
-- broken pipelines
-    
-- inconsistent reporting
-    
+Example:
 
-This is why enterprise BI teams heavily standardize ingestion pipelines.
+If percentages are interpreted as raw counts:
+
+```text
+66% → 66
+```
+
+instead of:
+
+```text
+0.66
+```
+
+then analytical conclusions become invalid.
