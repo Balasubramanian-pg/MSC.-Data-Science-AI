@@ -49,3 +49,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why This Ecosystem Matters](./Why%20This%20Ecosystem%20Matters.md)
 
 ## [Core Philosophy of Matplotlib](./Core%20Philosophy%20of%20Matplotlib.md)
+
+## [Example Workflow](./Example%20Workflow.md)
