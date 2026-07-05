@@ -205,3 +205,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Real-World Applications](./Real-World%20Applications.md)
 
 ## [Hidden Conceptual Shift](./Hidden%20Conceptual%20Shift.md)
+
+## [Language Becomes Spatial Geometry](./Language%20Becomes%20Spatial%20Geometry.md)
