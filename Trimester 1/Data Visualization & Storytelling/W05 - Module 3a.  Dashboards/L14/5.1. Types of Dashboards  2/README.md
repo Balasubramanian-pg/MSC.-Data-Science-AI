@@ -231,3 +231,5 @@ week: W05 - Module 3a.  Dashboards
 ## [1. Time Sensitivity](./1.%20Time%20Sensitivity.md)
 
 ## [Definition](./Definition.md)
+
+## [Strategic Dashboards](./Strategic%20Dashboards.md)
