@@ -7,3 +7,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Types of Memory in Data Visualization](./Types%20of%20Memory%20in%20Data%20Visualization.md)
 
 ## [Why Memory Matters in Visualization](./Why%20Memory%20Matters%20in%20Visualization.md)
+
+## [Core Principle](./Core%20Principle.md)
