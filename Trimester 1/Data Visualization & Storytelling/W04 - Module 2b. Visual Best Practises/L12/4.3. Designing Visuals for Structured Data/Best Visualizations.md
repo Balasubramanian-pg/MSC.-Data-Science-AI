@@ -1,9 +1,9 @@
 # Best Visualizations
 
-- proportion bars
+- histograms
     
-- KPI cards
+- density plots
     
-- confusion matrices
+- scatter plots
     
-- conversion funnels
+- line charts
