@@ -29,3 +29,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Core Definition](./Core%20Definition.md)
 
 ## [The Three Core Elements of Data Storytelling](./The%20Three%20Core%20Elements%20of%20Data%20Storytelling.md)
+
+## [2. Narrative](./2.%20Narrative.md)
