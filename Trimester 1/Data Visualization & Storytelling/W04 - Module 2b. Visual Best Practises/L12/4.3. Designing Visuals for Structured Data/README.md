@@ -47,3 +47,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Insight](./Important%20Insight.md)
 
 ## [Visualization Decision Tree](./Visualization%20Decision%20Tree.md)
+
+## [3. Univariate Analysis](./3.%20Univariate%20Analysis.md)
