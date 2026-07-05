@@ -235,3 +235,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Presentation Cognitive Failure](./Presentation%20Cognitive%20Failure.md)
 
 ## [Typical Corporate Failure](./Typical%20Corporate%20Failure.md)
+
+## [Visual Communication Principle](./Visual%20Communication%20Principle.md)
