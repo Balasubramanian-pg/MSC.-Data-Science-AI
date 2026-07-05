@@ -351,3 +351,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Counterintuitive Saturation](./Counterintuitive%20Saturation.md)
 
 ## [Why Legends Matter](./Why%20Legends%20Matter.md)
+
+## [Visualization Literacy](./Visualization%20Literacy.md)
