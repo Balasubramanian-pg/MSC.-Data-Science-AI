@@ -31,3 +31,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Plotting GDP vs Life Expectancy](./Plotting%20GDP%20vs%20Life%20Expectancy.md)
 
 ## [Why GDP Was Chosen as X-Axis](./Why%20GDP%20Was%20Chosen%20as%20X-Axis.md)
+
+## [Why Bubble Size Matters](./Why%20Bubble%20Size%20Matters.md)
