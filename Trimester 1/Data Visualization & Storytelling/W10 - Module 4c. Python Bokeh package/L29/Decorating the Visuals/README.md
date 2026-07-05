@@ -365,3 +365,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [What Happens Internally?](./What%20Happens%20Internally.md)
 
 ## [Then Border Change](./Then%20Border%20Change.md)
+
+## [Important Architectural Idea](./Important%20Architectural%20Idea.md)
