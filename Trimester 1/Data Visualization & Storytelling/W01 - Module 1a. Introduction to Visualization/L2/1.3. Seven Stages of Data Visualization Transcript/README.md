@@ -86,3 +86,5 @@
 ## [5.3 Figure-Ground Principle](./5.3%20Figure-Ground%20Principle.md)
 
 ## [6. Chart Selection and Design Thinking](./6.%20Chart%20Selection%20and%20Design%20Thinking.md)
+
+## [6.1 Simple vs Ordered Bar Charts](./6.1%20Simple%20vs%20Ordered%20Bar%20Charts.md)
