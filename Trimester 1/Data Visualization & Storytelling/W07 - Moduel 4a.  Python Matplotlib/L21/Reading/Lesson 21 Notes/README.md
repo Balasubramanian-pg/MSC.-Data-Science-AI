@@ -85,3 +85,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [1. Direct Plotting with Arrays and Series](./1.%20Direct%20Plotting%20with%20Arrays%20and%20Series.md)
 
 ## [Example with NumPy Arrays](./Example%20with%20NumPy%20Arrays.md)
+
+## [Why This Matters](./Why%20This%20Matters.md)
