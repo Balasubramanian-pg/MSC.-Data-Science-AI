@@ -76,3 +76,5 @@
 ## [4.6 Refined Visualization Design](./4.6%20Refined%20Visualization%20Design.md)
 
 ## [4.7 Stakeholder Interaction and Iteration](./4.7%20Stakeholder%20Interaction%20and%20Iteration.md)
+
+## [5. Gestalt Principles in Visualization](./5.%20Gestalt%20Principles%20in%20Visualization.md)
