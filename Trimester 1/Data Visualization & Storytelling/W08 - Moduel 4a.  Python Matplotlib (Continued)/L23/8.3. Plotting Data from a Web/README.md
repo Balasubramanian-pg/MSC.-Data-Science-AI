@@ -33,3 +33,5 @@ It is fundamentally about:
 ## [Breakdown of `pd.read_csv()`](./Breakdown%20of%20%60pd.read_csv%28%29%60.md)
 
 ## [Why Parse Dates?](./Why%20Parse%20Dates.md)
+
+## [Extremely Important Time-Series Principle](./Extremely%20Important%20Time-Series%20Principle.md)
