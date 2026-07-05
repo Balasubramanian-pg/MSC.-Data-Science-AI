@@ -247,3 +247,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Relationship Between Sine and Cosine](./Relationship%20Between%20Sine%20and%20Cosine.md)
 
 ## [Why Legends Become Necessary](./Why%20Legends%20Become%20Necessary.md)
+
+## [Plot Enhancements in Matplotlib](./Plot%20Enhancements%20in%20Matplotlib.md)
