@@ -169,3 +169,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [What Is `ax`?](./What%20Is%20%60ax%60.md)
 
 ## [Visual Structure](./Visual%20Structure.md)
+
+## [Why This Separation Matters](./Why%20This%20Separation%20Matters.md)
