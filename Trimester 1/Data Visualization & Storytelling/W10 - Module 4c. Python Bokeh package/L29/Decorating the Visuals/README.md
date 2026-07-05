@@ -481,3 +481,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Step 1: Creating the Figure](./Step%201%20-%20Creating%20the%20Figure.md)
 
 ## [Categorical X-Axis](./Categorical%20X-Axis.md)
+
+## [Figure Definition](./Figure%20Definition.md)
