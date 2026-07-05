@@ -53,3 +53,5 @@
 ## [3.2 From Insight Discovery to Storytelling](./3.2%20From%20Insight%20Discovery%20to%20Storytelling.md)
 
 ## [Exploratory vs Explanatory Mindset](./Exploratory%20vs%20Explanatory%20Mindset.md)
+
+## [Important Distinction](./Important%20Distinction.md)
