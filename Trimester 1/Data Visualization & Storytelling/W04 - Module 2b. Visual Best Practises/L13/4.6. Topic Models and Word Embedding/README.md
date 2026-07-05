@@ -13,3 +13,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [NLP Complexity Hierarchy](./NLP%20Complexity%20Hierarchy.md)
 
 ## [The Central Hypothesis of Word Embeddings](./The%20Central%20Hypothesis%20of%20Word%20Embeddings.md)
+
+## [Distributional Hypothesis](./Distributional%20Hypothesis.md)
