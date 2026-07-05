@@ -93,3 +93,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [C. Messaging](./C.%20Messaging.md)
 
 ## [Strong Messaging Answers](./Strong%20Messaging%20Answers.md)
+
+## [The Key Difference](./The%20Key%20Difference.md)
