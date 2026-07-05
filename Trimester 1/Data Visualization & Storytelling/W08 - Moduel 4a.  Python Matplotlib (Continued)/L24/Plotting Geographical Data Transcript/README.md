@@ -33,3 +33,5 @@ This is foundational to:
 ## [Big Picture Workflow](./Big%20Picture%20Workflow.md)
 
 ## [Why Geographical Visualization Matters](./Why%20Geographical%20Visualization%20Matters.md)
+
+## [What Is GeoPandas?](./What%20Is%20GeoPandas.md)
