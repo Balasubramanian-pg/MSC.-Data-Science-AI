@@ -37,3 +37,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Distinction](./Important%20Distinction.md)
 
 ## [Storytelling and Action](./Storytelling%20and%20Action.md)
+
+## [Why Leaders Use Stories](./Why%20Leaders%20Use%20Stories.md)
