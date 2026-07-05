@@ -625,3 +625,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Visualization Attention Flow](./Visualization%20Attention%20Flow.md)
 
 ## [Deep Visualization Principle](./Deep%20Visualization%20Principle.md)
+
+## [Part 2: Legends](./Part%202%20-%20Legends.md)
