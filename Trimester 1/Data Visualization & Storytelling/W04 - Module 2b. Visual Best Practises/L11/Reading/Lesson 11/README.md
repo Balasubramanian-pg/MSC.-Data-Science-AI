@@ -137,3 +137,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Strategic Use of Visual Variables](./Strategic%20Use%20of%20Visual%20Variables.md)
 
 ## [Color](./Color.md)
+
+## [Best For](./Best%20For.md)
