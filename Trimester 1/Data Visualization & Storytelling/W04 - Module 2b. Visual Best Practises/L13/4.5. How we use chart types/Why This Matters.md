@@ -1,11 +1,11 @@
 # Why This Matters
 
-Simple frequency analysis can miss:
+Distribution shape determines:
 
-- narrative significance
+- interpretation
     
-- semantic importance
+- statistical validity
     
-- contextual influence
+- modeling assumptions
     
-- relational centrality
+- anomaly detection behavior
