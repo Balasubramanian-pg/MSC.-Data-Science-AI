@@ -37,3 +37,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [What Is a Word Embedding?](./What%20Is%20a%20Word%20Embedding.md)
 
 ## [Embedding Representation](./Embedding%20Representation.md)
+
+## [Why This Matters](./Why%20This%20Matters.md)
