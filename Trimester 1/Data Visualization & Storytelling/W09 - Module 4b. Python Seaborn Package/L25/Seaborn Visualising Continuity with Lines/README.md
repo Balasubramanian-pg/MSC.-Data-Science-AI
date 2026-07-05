@@ -57,3 +57,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Intent: Bring in 'region' and 'event' parameters without splitting the plot.](./Intent%20-%20Bring%20in%20%27region%27%20and%20%27event%27%20parameters%20without%20splitting%20the%20plot.md)
 
 ## [Note: Great for digital presentations, but has limitations in Black & White printouts.](./Note%20-%20Great%20for%20digital%20presentations%2C%20but%20has%20limitations%20in%20Black%20%26%20White%20printouts.md)
+
+## [Move the legend outside of the main charting area to prevent data overlapping](./Move%20the%20legend%20outside%20of%20the%20main%20charting%20area%20to%20prevent%20data%20overlapping.md)
