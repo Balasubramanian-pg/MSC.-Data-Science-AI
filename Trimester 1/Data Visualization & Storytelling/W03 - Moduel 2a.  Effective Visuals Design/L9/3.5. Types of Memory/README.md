@@ -55,3 +55,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Important Design Principle](./Important%20Design%20Principle.md)
 
 ## [Recognition over Recall](./Recognition%20over%20Recall.md)
+
+## [Bad](./Bad.md)
