@@ -115,3 +115,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Mental Model](./Mental%20Model.md)
 
 ## [Important Concept](./Important%20Concept.md)
+
+## [Big Picture](./Big%20Picture.md)
