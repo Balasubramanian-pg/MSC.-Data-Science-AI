@@ -653,3 +653,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Possible Locations](./Possible%20Locations.md)
 
 ## [Important Dashboard Principle](./Important%20Dashboard%20Principle.md)
+
+## [Common Bad Practice](./Common%20Bad%20Practice.md)
