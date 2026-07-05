@@ -23,3 +23,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [2. Why Use Matplotlib? (Merits)](./2.%20Why%20Use%20Matplotlib%20%28Merits%29.md)
 
 ## [A. Versatility](./A.%20Versatility.md)
+
+## [Common Chart Types](./Common%20Chart%20Types.md)
