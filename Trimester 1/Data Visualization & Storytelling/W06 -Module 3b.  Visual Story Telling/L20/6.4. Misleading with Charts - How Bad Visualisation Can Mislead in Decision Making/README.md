@@ -275,3 +275,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Drill-Down Order Can Manipulate Audiences](./Why%20Drill-Down%20Order%20Can%20Manipulate%20Audiences.md)
 
 ## [Sequence A](./Sequence%20A.md)
+
+## [Sequence B](./Sequence%20B.md)
