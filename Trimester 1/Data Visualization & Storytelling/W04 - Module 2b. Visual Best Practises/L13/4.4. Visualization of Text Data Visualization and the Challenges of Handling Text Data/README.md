@@ -171,3 +171,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Bag of Words Pipeline](./Bag%20of%20Words%20Pipeline.md)
 
 ## [5. Stopword Removal](./5.%20Stopword%20Removal.md)
+
+## [Eliminating Low-Information Words](./Eliminating%20Low-Information%20Words.md)
