@@ -122,3 +122,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [5. Wrong Chart Selection](./5.%20Wrong%20Chart%20Selection.md)
 
 ## [6. Ignoring the Intended Message](./6.%20Ignoring%20the%20Intended%20Message.md)
+
+## [9. Visualization Decision Framework](./9.%20Visualization%20Decision%20Framework.md)
