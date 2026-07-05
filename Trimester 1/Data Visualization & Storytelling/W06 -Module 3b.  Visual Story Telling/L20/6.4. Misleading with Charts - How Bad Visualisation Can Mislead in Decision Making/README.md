@@ -123,3 +123,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Core Visualization Principle](./Core%20Visualization%20Principle.md)
 
 ## [Pre-attentive Manipulation](./Pre-attentive%20Manipulation.md)
+
+## [Why Pre-attentive Features Are Powerful](./Why%20Pre-attentive%20Features%20Are%20Powerful.md)
