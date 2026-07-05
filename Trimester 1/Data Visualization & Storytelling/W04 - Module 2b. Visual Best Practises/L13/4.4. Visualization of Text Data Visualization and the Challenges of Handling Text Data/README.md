@@ -135,3 +135,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Numerical Normalization](./Numerical%20Normalization.md)
 
 ## [Example Transformation](./Example%20Transformation.md)
+
+## [Why Number Handling Matters](./Why%20Number%20Handling%20Matters.md)
