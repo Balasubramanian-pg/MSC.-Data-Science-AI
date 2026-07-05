@@ -45,3 +45,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Technical Deep-Dive: DataFrame Integration & Categorical Support](./Technical%20Deep-Dive%20-%20DataFrame%20Integration%20%26%20Categorical%20Support.md)
 
 ## [1. DATA CREATION (Replicating the Lecture's Mock Dataset)](./1.%20DATA%20CREATION%20%28Replicating%20the%20Lecture%27s%20Mock%20Dataset%29.md)
+
+## [Setting a random seed ensures the generated "random" data matches every run](./Setting%20a%20random%20seed%20ensures%20the%20generated%20random%20data%20matches%20every%20run.md)
