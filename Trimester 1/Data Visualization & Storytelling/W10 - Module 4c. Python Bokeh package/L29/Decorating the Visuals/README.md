@@ -93,3 +93,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Lower Transparency](./Lower%20Transparency.md)
 
 ## [Visual Intuition](./Visual%20Intuition.md)
+
+## [Hexadecimal Colors](./Hexadecimal%20Colors.md)
