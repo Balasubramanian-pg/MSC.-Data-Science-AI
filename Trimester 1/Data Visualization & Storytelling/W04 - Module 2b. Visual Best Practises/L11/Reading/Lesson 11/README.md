@@ -139,3 +139,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Color](./Color.md)
 
 ## [Best For](./Best%20For.md)
+
+## [Poor For](./Poor%20For.md)
