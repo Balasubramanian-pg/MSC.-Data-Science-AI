@@ -15,3 +15,5 @@
 ## [4.1.7. Statistical Features in Tableau](./4.1.7.%20Statistical%20Features%20in%20Tableau.md)
 
 ## [4.1.8. Dashboards: Integrating Multiple Views](./4.1.8.%20Dashboards%20-%20Integrating%20Multiple%20Views.md)
+
+## [4.1.9. Data Storytelling in Tableau](./4.1.9.%20Data%20Storytelling%20in%20Tableau.md)
