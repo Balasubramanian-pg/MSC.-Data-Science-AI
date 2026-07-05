@@ -21,3 +21,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Contextual Meaning Model](./Contextual%20Meaning%20Model.md)
 
 ## [Example from the Lecture](./Example%20from%20the%20Lecture.md)
+
+## [Important Insight](./Important%20Insight.md)
