@@ -1,18 +1,11 @@
 # Definition
 
-**Parsing** means understanding:
+**Filtering** means partitioning the data based on important variables.
 
-- dataset structure
-    
-- columns
-    
-- variables
-    
-- missing values
-    
-- data integrity
-    
+The lecture explains filtering using:
 
-The lecture describes parsing as:
-
-> “eyeballing” the data structure.
+- gender
+    
+- categories
+    
+- turnout ratio
