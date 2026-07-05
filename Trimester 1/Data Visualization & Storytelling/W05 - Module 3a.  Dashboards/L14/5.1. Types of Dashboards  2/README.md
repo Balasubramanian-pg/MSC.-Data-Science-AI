@@ -113,3 +113,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Visualization Selection Principle](./Visualization%20Selection%20Principle.md)
 
 ## [Gestalt Principles Mentioned](./Gestalt%20Principles%20Mentioned.md)
+
+## [Relevant Gestalt Principles Here](./Relevant%20Gestalt%20Principles%20Here.md)
