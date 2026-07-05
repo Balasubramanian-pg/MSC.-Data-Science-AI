@@ -191,3 +191,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [The Core Idea Behind Subplots](./The%20Core%20Idea%20Behind%20Subplots.md)
 
 ## [Understanding `plt.subplots()`](./Understanding%20%60plt.subplots%28%29%60.md)
+
+## [Breaking This Down](./Breaking%20This%20Down.md)
