@@ -1,11 +1,9 @@
 # Characteristics
 
-- Highly summarized
+- Live updates
     
-- Minimal detail
+- Alert-heavy
     
-- KPI-focused
+- High refresh frequency
     
-- Trend-oriented
-    
-- Often updated daily/weekly/monthly
+- Dense monitoring visuals
