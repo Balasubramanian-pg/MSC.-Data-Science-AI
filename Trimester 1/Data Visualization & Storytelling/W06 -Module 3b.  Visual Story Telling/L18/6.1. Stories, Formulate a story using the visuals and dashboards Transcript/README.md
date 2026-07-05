@@ -197,3 +197,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Pecha Kucha: Art of Visual Brevity](./Pecha%20Kucha%20-%20Art%20of%20Visual%20Brevity.md)
 
 ## [Core Idea](./Core%20Idea.md)
+
+## [Pecha Kucha Format](./Pecha%20Kucha%20Format.md)
