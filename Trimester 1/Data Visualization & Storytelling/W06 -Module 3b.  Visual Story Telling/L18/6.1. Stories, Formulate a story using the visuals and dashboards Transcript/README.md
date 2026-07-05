@@ -103,3 +103,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why This Matters](./Why%20This%20Matters.md)
 
 ## [Persistence of Visual Narratives](./Persistence%20of%20Visual%20Narratives.md)
+
+## [Important Principle](./Important%20Principle.md)
