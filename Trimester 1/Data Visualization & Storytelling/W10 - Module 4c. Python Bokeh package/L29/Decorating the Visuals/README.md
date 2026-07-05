@@ -801,3 +801,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Mistake 3: Wrong Scaling](./Mistake%203%20-%20Wrong%20Scaling.md)
 
 ## [Part 1: Color Bars](./Part%201%20-%20Color%20Bars.md)
+
+## [Core Problem](./Core%20Problem.md)
