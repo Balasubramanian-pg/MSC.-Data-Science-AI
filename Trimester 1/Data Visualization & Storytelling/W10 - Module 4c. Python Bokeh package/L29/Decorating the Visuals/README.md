@@ -191,3 +191,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Breaking This Down](./Breaking%20This%20Down.md)
 
 ## [Another Example](./Another%20Example.md)
+
+## [Visual Hierarchy](./Visual%20Hierarchy.md)
