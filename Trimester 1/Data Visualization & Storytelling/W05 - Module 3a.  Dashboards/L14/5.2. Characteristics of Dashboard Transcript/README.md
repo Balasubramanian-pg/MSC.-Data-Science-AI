@@ -51,3 +51,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Why Visuals Matter](./Why%20Visuals%20Matter.md)
 
 ## [Example](./Example.md)
+
+## [Important Principle](./Important%20Principle.md)
