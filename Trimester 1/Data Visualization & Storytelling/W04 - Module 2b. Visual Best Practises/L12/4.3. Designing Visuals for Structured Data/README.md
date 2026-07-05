@@ -21,3 +21,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Structured Data Requires Careful Visualization](./Why%20Structured%20Data%20Requires%20Careful%20Visualization.md)
 
 ## [Data → Visualization Compression](./Data%20%E2%86%92%20Visualization%20Compression.md)
+
+## [2. Understanding Variable Types](./2.%20Understanding%20Variable%20Types.md)
