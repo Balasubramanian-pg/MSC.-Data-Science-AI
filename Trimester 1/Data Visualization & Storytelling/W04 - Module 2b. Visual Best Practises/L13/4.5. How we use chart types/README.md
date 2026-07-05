@@ -299,3 +299,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Advanced NLP Architecture](./Advanced%20NLP%20Architecture.md)
 
 ## [Final Visualization Insight](./Final%20Visualization%20Insight.md)
+
+## [Joint Plot Distribution Analysis and Conversational Network Visualization](./Joint%20Plot%20Distribution%20Analysis%20and%20Conversational%20Network%20Visualization.md)
