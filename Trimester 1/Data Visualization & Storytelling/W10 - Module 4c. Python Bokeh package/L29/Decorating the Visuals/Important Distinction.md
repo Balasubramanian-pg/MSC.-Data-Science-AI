@@ -1,6 +1,14 @@
 # Important Distinction
 
-|Component|Example|
-|---|---|
-|Tick|small line mark|
-|Label|number beside tick|
+The instructor says:
+
+> "title location"
+
+But technically:
+
+- alignment changes horizontal placement
+    
+- layout position changes region placement
+    
+
+These are different concepts.
