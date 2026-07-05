@@ -185,3 +185,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [6. Stemming](./6.%20Stemming.md)
 
 ## [Reducing Words to Common Roots](./Reducing%20Words%20to%20Common%20Roots.md)
+
+## [What Is Stemming?](./What%20Is%20Stemming.md)
