@@ -761,3 +761,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [What Is Turbo256?](./What%20Is%20Turbo256.md)
 
 ## [Why 256?](./Why%20256.md)
+
+## [Palette Comparison](./Palette%20Comparison.md)
