@@ -55,3 +55,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Important UX Principle](./Important%20UX%20Principle.md)
 
 ## [5. Customized](./5.%20Customized.md)
+
+## [Role-Based Dashboarding](./Role-Based%20Dashboarding.md)
