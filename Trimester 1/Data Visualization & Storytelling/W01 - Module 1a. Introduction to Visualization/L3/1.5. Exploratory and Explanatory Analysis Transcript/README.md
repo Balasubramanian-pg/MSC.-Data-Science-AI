@@ -55,3 +55,5 @@
 ## [Exploratory vs Explanatory Mindset](./Exploratory%20vs%20Explanatory%20Mindset.md)
 
 ## [Important Distinction](./Important%20Distinction.md)
+
+## [3.3 Communicating to Different Audiences](./3.3%20Communicating%20to%20Different%20Audiences.md)
