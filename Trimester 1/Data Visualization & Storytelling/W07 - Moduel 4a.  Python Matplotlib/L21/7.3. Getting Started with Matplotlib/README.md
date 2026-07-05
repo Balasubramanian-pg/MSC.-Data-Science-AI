@@ -15,3 +15,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Libraries Are Needed](./Why%20Libraries%20Are%20Needed.md)
 
 ## [Understanding the Import Statement](./Understanding%20the%20Import%20Statement.md)
+
+## [Matplotlib Import](./Matplotlib%20Import.md)
