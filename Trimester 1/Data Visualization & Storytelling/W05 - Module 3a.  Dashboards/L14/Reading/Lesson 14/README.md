@@ -69,3 +69,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Operational Importance](./Operational%20Importance.md)
 
 ## [Engineering Challenges](./Engineering%20Challenges.md)
+
+## [4. Customization and Interactivity](./4.%20Customization%20and%20Interactivity.md)
