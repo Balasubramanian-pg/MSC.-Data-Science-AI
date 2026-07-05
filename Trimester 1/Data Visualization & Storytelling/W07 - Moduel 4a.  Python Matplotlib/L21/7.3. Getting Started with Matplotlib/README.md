@@ -247,3 +247,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [1. Plot Space Creation with `subplots()`](./1.%20Plot%20Space%20Creation%20with%20%60subplots%28%29%60.md)
 
 ## [Why This Pattern Matters](./Why%20This%20Pattern%20Matters.md)
+
+## [Internal Structure](./Internal%20Structure.md)
