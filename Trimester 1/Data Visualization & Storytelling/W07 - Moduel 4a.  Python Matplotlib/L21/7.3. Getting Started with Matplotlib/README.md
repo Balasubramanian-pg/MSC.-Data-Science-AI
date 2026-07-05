@@ -331,3 +331,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Pre-attentive Processing](./Pre-attentive%20Processing.md)
 
 ## [Important Warning](./Important%20Warning.md)
+
+## [6. Labels and Legends](./6.%20Labels%20and%20Legends.md)
