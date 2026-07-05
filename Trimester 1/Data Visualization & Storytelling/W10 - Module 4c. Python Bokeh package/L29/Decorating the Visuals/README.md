@@ -371,3 +371,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Core Pattern](./Core%20Pattern.md)
 
 ## [General Form](./General%20Form.md)
+
+## [Common Editable Properties](./Common%20Editable%20Properties.md)
