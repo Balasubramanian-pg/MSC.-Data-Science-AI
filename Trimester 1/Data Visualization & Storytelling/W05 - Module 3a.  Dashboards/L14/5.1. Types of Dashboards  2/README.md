@@ -33,3 +33,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Real-Time Visibility](./Real-Time%20Visibility.md)
 
 ## [Key Principle](./Key%20Principle.md)
+
+## [Action-Oriented Design](./Action-Oriented%20Design.md)
