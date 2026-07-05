@@ -109,3 +109,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Common Visualization Mistakes](./Common%20Visualization%20Mistakes.md)
 
 ## [Overusing Colors](./Overusing%20Colors.md)
+
+## [Decorative Charts](./Decorative%20Charts.md)
