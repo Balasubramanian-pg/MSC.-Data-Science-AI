@@ -185,3 +185,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [The `label` Parameter](./The%20%60label%60%20Parameter.md)
 
 ## [Why Labels Matter](./Why%20Labels%20Matter.md)
+
+## [3. Plot Customization](./3.%20Plot%20Customization.md)
