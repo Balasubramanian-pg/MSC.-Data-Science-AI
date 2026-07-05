@@ -23,3 +23,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [2. Persuasion](./2.%20Persuasion.md)
 
 ## [Why Stories Persuade Better Than Facts Alone](./Why%20Stories%20Persuade%20Better%20Than%20Facts%20Alone.md)
+
+## [Important Insight](./Important%20Insight.md)
