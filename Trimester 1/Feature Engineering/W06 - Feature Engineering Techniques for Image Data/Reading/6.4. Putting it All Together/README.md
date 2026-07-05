@@ -11,3 +11,5 @@ week: W06 - Feature Engineering Techniques for Image Data
 ## [6.4.2. Baseline: Raw Pixel Representation](./6.4.2.%20Baseline%20-%20Raw%20Pixel%20Representation.md)
 
 ## [6.4.3. Enhanced Representation: Engineered Features](./6.4.3.%20Enhanced%20Representation%20-%20Engineered%20Features.md)
+
+## [6.4.4. The Logistic Regression Classifier](./6.4.4.%20The%20Logistic%20Regression%20Classifier.md)
