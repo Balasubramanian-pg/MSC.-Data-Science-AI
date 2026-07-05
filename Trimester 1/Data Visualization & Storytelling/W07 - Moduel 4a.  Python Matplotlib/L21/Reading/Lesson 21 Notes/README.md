@@ -157,3 +157,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Generate x values](./Generate%20x%20values.md)
 
 ## [Compute sine values](./Compute%20sine%20values.md)
+
+## [Create figure and axes](./Create%20figure%20and%20axes.md)
