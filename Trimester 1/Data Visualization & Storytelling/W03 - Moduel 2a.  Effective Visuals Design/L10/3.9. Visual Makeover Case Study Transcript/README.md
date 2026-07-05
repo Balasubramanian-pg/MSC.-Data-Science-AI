@@ -110,3 +110,5 @@ The transcript introduces this challenge directly.
 ## [Spatial Relationships Matter](./Spatial%20Relationships%20Matter.md)
 
 ## [Gestalt Principle of Proximity](./Gestalt%20Principle%20of%20Proximity.md)
+
+## [Poor Positioning Creates Cognitive Friction](./Poor%20Positioning%20Creates%20Cognitive%20Friction.md)
