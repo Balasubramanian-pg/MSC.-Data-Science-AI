@@ -57,3 +57,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Language Conversion Pipeline](./Language%20Conversion%20Pipeline.md)
 
 ## [Important Concept](./Important%20Concept.md)
+
+## [Text as Data](./Text%20as%20Data.md)
