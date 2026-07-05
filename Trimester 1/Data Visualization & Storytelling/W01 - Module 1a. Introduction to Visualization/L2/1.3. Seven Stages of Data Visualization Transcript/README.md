@@ -54,3 +54,5 @@
 ## [3.6 Stage 6: Refining Visualizations](./3.6%20Stage%206%20-%20Refining%20Visualizations.md)
 
 ## [Refinements Introduced](./Refinements%20Introduced.md)
+
+## [Result](./Result.md)
