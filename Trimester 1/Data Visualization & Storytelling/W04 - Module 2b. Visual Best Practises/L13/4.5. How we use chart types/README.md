@@ -159,3 +159,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Relationships Matter More Than Frequency](./Why%20Relationships%20Matter%20More%20Than%20Frequency.md)
 
 ## [Human Reading vs Computational Structure](./Human%20Reading%20vs%20Computational%20Structure.md)
+
+## [Word Trees as Cognitive Compression](./Word%20Trees%20as%20Cognitive%20Compression.md)
