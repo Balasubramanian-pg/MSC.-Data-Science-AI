@@ -297,3 +297,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Cognitive Science Behind Alignment](./Cognitive%20Science%20Behind%20Alignment.md)
 
 ## [Why Different Colors Matter](./Why%20Different%20Colors%20Matter.md)
+
+## [`deepskyblue`](./%60deepskyblue%60.md)
