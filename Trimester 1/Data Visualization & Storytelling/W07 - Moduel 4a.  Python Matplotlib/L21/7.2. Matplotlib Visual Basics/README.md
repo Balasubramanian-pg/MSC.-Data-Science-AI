@@ -31,3 +31,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why This Separation Matters](./Why%20This%20Separation%20Matters.md)
 
 ## [Internal Notebook Structure](./Internal%20Notebook%20Structure.md)
+
+## [4. Comments in Python](./4.%20Comments%20in%20Python.md)
