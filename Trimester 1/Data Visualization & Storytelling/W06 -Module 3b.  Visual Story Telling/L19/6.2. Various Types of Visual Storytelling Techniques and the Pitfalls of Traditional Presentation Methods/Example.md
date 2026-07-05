@@ -1,20 +1,33 @@
 # Example
 
-### Raw Metric
+### Business Transformation Narrative
 
-“Customer retention declined 11%.”
+```mermaid
+flowchart LR
+    A[Business Problem] --> B[Data Analysis]
+    B --> C[Solution Strategy]
+    C --> D[Implementation]
+    D --> E[Improved Outcomes]
+```
 
-### Story
+Example:
 
-“Customers are abandoning onboarding because pricing complexity creates distrust during activation.”
-
-The second version:
-
-- implies causality
+- declining customer retention identified
     
-- creates urgency
+- onboarding friction visualized
     
-- suggests action
+- redesign implemented
+    
+- retention improves
     
 
-That is what decision-makers respond to.
+The audience experiences:
+
+- tension
+    
+- investigation
+    
+- resolution
+    
+
+That emotional arc improves persuasion dramatically.
