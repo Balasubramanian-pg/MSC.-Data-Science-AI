@@ -23,3 +23,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Narrative as the Core Layer](./Narrative%20as%20the%20Core%20Layer.md)
 
 ## [The Hidden Role of Context](./The%20Hidden%20Role%20of%20Context.md)
+
+## [Elite Examples of Data Storytelling](./Elite%20Examples%20of%20Data%20Storytelling.md)
