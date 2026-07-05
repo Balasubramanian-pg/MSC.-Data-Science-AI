@@ -89,3 +89,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Expected Feature Output:](./Expected%20Feature%20Output%20-.md)
 
 ## [DT (Determiner): 2](./DT%20%28Determiner%29%20-%202.md)
+
+## [JJ (Adjective): 2](./JJ%20%28Adjective%29%20-%202.md)
