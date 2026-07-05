@@ -51,3 +51,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why This Matters](./Why%20This%20Matters.md)
 
 ## [Example Notebook Structure](./Example%20Notebook%20Structure.md)
+
+## [7. Collaboration in Colab](./7.%20Collaboration%20in%20Colab.md)
