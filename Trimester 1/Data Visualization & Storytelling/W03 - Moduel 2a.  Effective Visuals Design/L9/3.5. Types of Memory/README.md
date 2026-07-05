@@ -9,3 +9,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Why Memory Matters in Visualization](./Why%20Memory%20Matters%20in%20Visualization.md)
 
 ## [Core Principle](./Core%20Principle.md)
+
+## [The Information Processing Pipeline](./The%20Information%20Processing%20Pipeline.md)
