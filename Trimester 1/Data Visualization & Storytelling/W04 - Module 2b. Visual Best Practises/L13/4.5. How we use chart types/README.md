@@ -181,3 +181,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Example Applications](./Example%20Applications.md)
 
 ## [Semantic Scoring](./Semantic%20Scoring.md)
+
+## [Quantifying Emotion](./Quantifying%20Emotion.md)
