@@ -39,3 +39,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Embedding Representation](./Embedding%20Representation.md)
 
 ## [Why This Matters](./Why%20This%20Matters.md)
+
+## [Semantic Geometry](./Semantic%20Geometry.md)
