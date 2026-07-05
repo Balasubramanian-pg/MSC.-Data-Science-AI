@@ -35,3 +35,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why the Story Worked](./Why%20the%20Story%20Worked.md)
 
 ## [Visual Storytelling Techniques](./Visual%20Storytelling%20Techniques.md)
+
+## [Key Techniques in Visual Storytelling](./Key%20Techniques%20in%20Visual%20Storytelling.md)
