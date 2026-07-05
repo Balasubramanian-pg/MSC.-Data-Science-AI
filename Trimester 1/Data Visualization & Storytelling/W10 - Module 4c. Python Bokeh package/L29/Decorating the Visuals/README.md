@@ -285,3 +285,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Create empty figure](./Create%20empty%20figure.md)
 
 ## [Plot dimensions](./Plot%20dimensions.md)
+
+## [Border styling](./Border%20styling.md)
