@@ -7,3 +7,5 @@ A robust taxonomy organizes data visualization methods by their primary communic
 ## [2. Comparing Categories: Relative and Absolute Value Comparisons](./2.%20Comparing%20Categories%20-%20Relative%20and%20Absolute%20Value%20Comparisons.md)
 
 ## [3. Assessing Hierarchies: Part-to-Whole and Structural Visualizations](./3.%20Assessing%20Hierarchies%20-%20Part-to-Whole%20and%20Structural%20Visualizations.md)
+
+## [4. Production-Grade Systems Architecture & Pipelines](./4.%20Production-Grade%20Systems%20Architecture%20%26%20Pipelines.md)
