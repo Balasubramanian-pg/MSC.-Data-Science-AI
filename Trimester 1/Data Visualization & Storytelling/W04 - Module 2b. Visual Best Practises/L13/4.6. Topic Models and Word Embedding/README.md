@@ -89,3 +89,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [LDA](./LDA.md)
 
 ## [Latent Dirichlet Allocation](./Latent%20Dirichlet%20Allocation.md)
+
+## [Simplified LDA Idea](./Simplified%20LDA%20Idea.md)
