@@ -1,4 +1,13 @@
 # Important Visualization Principle
 
-Color should encode information,  
-not decoration.
+Whenever:
+
+- color encodes quantity
+    
+
+you almost always need:
+
+- a color bar
+    
+
+Otherwise users cannot decode the mapping.
