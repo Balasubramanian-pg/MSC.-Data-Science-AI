@@ -120,3 +120,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [4. Improper Scaling](./4.%20Improper%20Scaling.md)
 
 ## [5. Wrong Chart Selection](./5.%20Wrong%20Chart%20Selection.md)
+
+## [6. Ignoring the Intended Message](./6.%20Ignoring%20the%20Intended%20Message.md)
