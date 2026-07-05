@@ -267,3 +267,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Hybrid Narrative Design](./Hybrid%20Narrative%20Design.md)
 
 ## [Fully Author-Driven](./Fully%20Author-Driven.md)
+
+## [Fully Reader-Driven](./Fully%20Reader-Driven.md)
