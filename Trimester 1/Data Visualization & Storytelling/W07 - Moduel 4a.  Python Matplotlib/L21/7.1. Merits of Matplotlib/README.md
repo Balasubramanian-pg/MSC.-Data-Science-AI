@@ -35,3 +35,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Object Relationships](./Object%20Relationships.md)
 
 ## [Why This Matters](./Why%20This%20Matters.md)
+
+## [4. Visualization as Hands-On Learning](./4.%20Visualization%20as%20Hands-On%20Learning.md)
