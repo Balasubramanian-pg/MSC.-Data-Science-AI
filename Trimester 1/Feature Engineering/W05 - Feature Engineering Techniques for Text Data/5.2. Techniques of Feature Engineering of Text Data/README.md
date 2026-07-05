@@ -71,3 +71,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Note: In a real environment, you must download the NLTK data bundles first:](./Note%20-%20In%20a%20real%20environment%2C%20you%20must%20download%20the%20NLTK%20data%20bundles%20first%20-.md)
 
 ## [nltk.download('punkt')](./nltk.download%28%27punkt%27%29.md)
+
+## [nltk.download('averaged_perceptron_tagger')](./nltk.download%28%27averaged_perceptron_tagger%27%29.md)
