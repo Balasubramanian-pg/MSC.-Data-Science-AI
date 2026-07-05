@@ -117,3 +117,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Estimation Workflow](./Estimation%20Workflow.md)
 
 ## [The Core Design Question](./The%20Core%20Design%20Question.md)
+
+## [Visualization Design Decision Process](./Visualization%20Design%20Decision%20Process.md)
