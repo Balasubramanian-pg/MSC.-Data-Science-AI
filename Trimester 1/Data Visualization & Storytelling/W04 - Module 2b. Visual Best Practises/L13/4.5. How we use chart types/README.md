@@ -449,3 +449,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Communication Centrality](./Communication%20Centrality.md)
 
 ## [Centrality Concept](./Centrality%20Concept.md)
+
+## [Important Limitation](./Important%20Limitation.md)
