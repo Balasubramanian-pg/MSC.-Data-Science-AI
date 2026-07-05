@@ -33,3 +33,5 @@ I have organized the code into a logical, executable structure using a mock data
 ## [--- Approach A: Matplotlib (Requires manual data aggregation) ---](./---%20Approach%20A%20-%20Matplotlib%20%28Requires%20manual%20data%20aggregation%29%20---.md)
 
 ## [To plot categorical means in Matplotlib, you must calculate them manually first.](./To%20plot%20categorical%20means%20in%20Matplotlib%2C%20you%20must%20calculate%20them%20manually%20first.md)
+
+## [--- Approach B: Seaborn (Automated Statistical Inference) ---](./---%20Approach%20B%20-%20Seaborn%20%28Automated%20Statistical%20Inference%29%20---.md)
