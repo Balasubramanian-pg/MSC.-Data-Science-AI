@@ -43,3 +43,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Expected Output Snippet:](./Expected%20Output%20Snippet%20-.md)
 
 ## [Feature: hockey       | TF-IDF Score: 0.4472](./Feature%20-%20hockey%20TF-IDF%20Score%20-%200.4472.md)
+
+## [Feature: nhl          | TF-IDF Score: 0.4472](./Feature%20-%20nhl%20TF-IDF%20Score%20-%200.4472.md)
