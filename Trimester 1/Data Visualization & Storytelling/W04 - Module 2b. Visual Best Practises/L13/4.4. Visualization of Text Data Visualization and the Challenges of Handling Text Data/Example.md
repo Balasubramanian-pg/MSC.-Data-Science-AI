@@ -1,15 +1,13 @@
 # Example
 
 ```text
-"I love this product."
+"Cold"
 ```
 
-versus:
+may refer to:
 
-```text
-"This product exceeded all my expectations."
-```
-
-Different wording.
-
-Similar semantic intent.
+- weather
+    
+- illness
+    
+- emotional distance
