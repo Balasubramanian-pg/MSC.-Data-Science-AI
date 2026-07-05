@@ -115,3 +115,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Nested Loops Framework](./Nested%20Loops%20Framework.md)
 
 ## [Core Idea](./Core%20Idea.md)
+
+## [Structure](./Structure.md)
