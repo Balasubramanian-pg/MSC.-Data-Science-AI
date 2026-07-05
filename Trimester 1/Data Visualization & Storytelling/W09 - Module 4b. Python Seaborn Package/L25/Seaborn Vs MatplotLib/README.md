@@ -19,3 +19,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Matplotlib does not know what a DataFrame is natively; you must isolate](./Matplotlib%20does%20not%20know%20what%20a%20DataFrame%20is%20natively%3B%20you%20must%20isolate.md)
 
 ## [arrays and manually calculate the statistical aggregates (means) first.](./arrays%20and%20manually%20calculate%20the%20statistical%20aggregates%20%28means%29%20first.md)
+
+## [Step A: Perform manual statistical grouping](./Step%20A%20-%20Perform%20manual%20statistical%20grouping.md)
