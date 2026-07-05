@@ -1,9 +1,11 @@
 # Audience
 
-- CEOs
+- Business analysts
     
-- Directors
+- Data analysts
     
-- Senior leadership
+- Product teams
     
-- Board members
+- Marketing analysts
+    
+- Operations researchers
