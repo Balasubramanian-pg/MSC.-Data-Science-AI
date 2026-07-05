@@ -47,3 +47,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Random Data Generation](./Random%20Data%20Generation.md)
 
 ## [Creating Random DataFrames](./Creating%20Random%20DataFrames.md)
+
+## [Understanding `randn()`](./Understanding%20%60randn%28%29%60.md)
