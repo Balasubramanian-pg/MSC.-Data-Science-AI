@@ -465,3 +465,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Temporal Profiles Matter](./Why%20Temporal%20Profiles%20Matter.md)
 
 ## [Important Statistical Principle](./Important%20Statistical%20Principle.md)
+
+## [Communication Analytics Architecture](./Communication%20Analytics%20Architecture.md)
