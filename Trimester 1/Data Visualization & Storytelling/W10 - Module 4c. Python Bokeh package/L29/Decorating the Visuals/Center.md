@@ -1,0 +1,5 @@
+# Center
+
+```text
+        Sales Dashboard
+```
