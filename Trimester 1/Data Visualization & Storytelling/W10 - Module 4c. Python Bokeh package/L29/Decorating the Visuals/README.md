@@ -129,3 +129,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Important Concept: Figure Object](./Important%20Concept%20-%20Figure%20Object.md)
 
 ## [Synthetic Data Generation](./Synthetic%20Data%20Generation.md)
+
+## [Understanding `np.random.randint()`](./Understanding%20%60np.random.randint%28%29%60.md)
