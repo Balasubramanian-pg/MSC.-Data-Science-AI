@@ -119,3 +119,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Visual Intuition](./Visual%20Intuition.md)
 
 ## [Why Even Spacing Is Important](./Why%20Even%20Spacing%20Is%20Important.md)
+
+## [Generating the Sine Function](./Generating%20the%20Sine%20Function.md)
