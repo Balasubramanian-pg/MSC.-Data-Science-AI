@@ -185,3 +185,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Purpose](./Purpose.md)
 
 ## [Audience](./Audience.md)
+
+## [Characteristics](./Characteristics.md)
