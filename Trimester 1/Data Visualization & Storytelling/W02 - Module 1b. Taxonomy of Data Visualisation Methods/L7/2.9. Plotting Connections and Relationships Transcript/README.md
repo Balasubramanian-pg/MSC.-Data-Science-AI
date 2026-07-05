@@ -21,3 +21,5 @@ week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
 ## [7. Performance Engineering & Debugging Strategies](./7.%20Performance%20Engineering%20%26%20Debugging%20Strategies.md)
 
 ## [Load high-resolution county boundaries](./Load%20high-resolution%20county%20boundaries.md)
+
+## [Simplify shapes using the Douglas-Peucker algorithm (tolerance in degrees/meters)](./Simplify%20shapes%20using%20the%20Douglas-Peucker%20algorithm%20%28tolerance%20in%20degreesmeters%29.md)
