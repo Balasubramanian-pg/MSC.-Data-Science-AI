@@ -269,3 +269,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Emotional vs Objective Language](./Emotional%20vs%20Objective%20Language.md)
 
 ## [Interpretation](./Interpretation.md)
+
+## [Examples](./Examples.md)
