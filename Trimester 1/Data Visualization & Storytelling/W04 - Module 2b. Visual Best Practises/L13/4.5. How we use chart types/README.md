@@ -27,3 +27,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Insight](./Important%20Insight.md)
 
 ## [Word Clouds](./Word%20Clouds.md)
+
+## [The Most Common Text Visualization](./The%20Most%20Common%20Text%20Visualization.md)
