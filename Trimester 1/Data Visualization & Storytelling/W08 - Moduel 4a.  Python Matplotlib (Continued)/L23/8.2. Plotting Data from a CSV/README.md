@@ -35,3 +35,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Bubble Size Matters](./Why%20Bubble%20Size%20Matters.md)
 
 ## [Why Scaling Is Necessary](./Why%20Scaling%20Is%20Necessary.md)
+
+## [Advanced Bubble Scaling](./Advanced%20Bubble%20Scaling.md)
