@@ -93,3 +93,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Arrow Annotations](./Arrow%20Annotations.md)
 
 ## [Storytelling Principle](./Storytelling%20Principle.md)
+
+## [Style Sheets](./Style%20Sheets.md)
