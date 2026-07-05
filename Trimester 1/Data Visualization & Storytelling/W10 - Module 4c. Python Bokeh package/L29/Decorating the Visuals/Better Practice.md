@@ -1,9 +1,9 @@
 # Better Practice
 
-Move legends:
+Use:
 
-- outside plot
+- perceptually uniform palettes
     
-- top right
+- accessible gradients
     
-- unused whitespace
+- restrained color encoding
