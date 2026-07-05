@@ -257,3 +257,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Critical Problem](./Critical%20Problem.md)
 
 ## [3. Poor Hierarchy](./3.%20Poor%20Hierarchy.md)
+
+## [Human Attention Behavior](./Human%20Attention%20Behavior.md)
