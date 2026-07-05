@@ -15,3 +15,5 @@ This document provides a technical blueprint for understanding, selecting, and i
 ## [5. Architectural Comparison: Circle Packing vs. Bubble Hierarchies](./5.%20Architectural%20Comparison%20-%20Circle%20Packing%20vs.%20Bubble%20Hierarchies.md)
 
 ## [6. Implementation Guide & Code Blueprint](./6.%20Implementation%20Guide%20%26%20Code%20Blueprint.md)
+
+## [1. Define flat hierarchical data structure](./1.%20Define%20flat%20hierarchical%20data%20structure.md)
