@@ -97,3 +97,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Understanding Each Component](./Understanding%20Each%20Component.md)
 
 ## [A. Importing `pyplot`](./A.%20Importing%20%60pyplot%60.md)
+
+## [Why Aliases Matter](./Why%20Aliases%20Matter.md)
