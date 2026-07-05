@@ -299,3 +299,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Add title and labels](./Add%20title%20and%20labels.md)
 
 ## [Show plot](./Show%20plot.md)
+
+## [Important Learning Strategy](./Important%20Learning%20Strategy.md)
