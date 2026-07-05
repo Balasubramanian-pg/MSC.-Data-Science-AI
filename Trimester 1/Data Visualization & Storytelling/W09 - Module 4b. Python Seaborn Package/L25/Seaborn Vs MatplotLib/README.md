@@ -23,3 +23,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Step A: Perform manual statistical grouping](./Step%20A%20-%20Perform%20manual%20statistical%20grouping.md)
 
 ## [Step B: Draw raw geometric bar shapes](./Step%20B%20-%20Draw%20raw%20geometric%20bar%20shapes.md)
+
+## [Step C: Manually build out the aesthetics layer by layer](./Step%20C%20-%20Manually%20build%20out%20the%20aesthetics%20layer%20by%20layer.md)
