@@ -41,3 +41,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Even Spacing Matters](./Why%20Even%20Spacing%20Matters.md)
 
 ## [5. Generating the Sine Wave](./5.%20Generating%20the%20Sine%20Wave.md)
+
+## [Why Sine Waves Are Common Teaching Examples](./Why%20Sine%20Waves%20Are%20Common%20Teaching%20Examples.md)
