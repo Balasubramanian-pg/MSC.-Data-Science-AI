@@ -67,3 +67,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [3. Animations and Transitions](./3.%20Animations%20and%20Transitions.md)
 
 ## [Why Progressive Revelation Works](./Why%20Progressive%20Revelation%20Works.md)
+
+## [Good Uses of Animation](./Good%20Uses%20of%20Animation.md)
