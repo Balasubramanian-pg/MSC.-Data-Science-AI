@@ -57,3 +57,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [What Happens Internally](./What%20Happens%20Internally.md)
 
 ## [Step 1](./Step%201.md)
+
+## [Step 2](./Step%202.md)
