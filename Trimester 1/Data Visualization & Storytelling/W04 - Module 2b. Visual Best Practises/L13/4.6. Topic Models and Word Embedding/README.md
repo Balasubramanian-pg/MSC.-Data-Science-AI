@@ -155,3 +155,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Semantic Similarity Between Topics](./Semantic%20Similarity%20Between%20Topics.md)
 
 ## [Topic Space Geometry](./Topic%20Space%20Geometry.md)
+
+## [Topic Distance Model](./Topic%20Distance%20Model.md)
