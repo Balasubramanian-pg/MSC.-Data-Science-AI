@@ -261,3 +261,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Two Different Semantic Dimensions](./Two%20Different%20Semantic%20Dimensions.md)
 
 ## [Polarity](./Polarity.md)
+
+## [Emotional Direction](./Emotional%20Direction.md)
