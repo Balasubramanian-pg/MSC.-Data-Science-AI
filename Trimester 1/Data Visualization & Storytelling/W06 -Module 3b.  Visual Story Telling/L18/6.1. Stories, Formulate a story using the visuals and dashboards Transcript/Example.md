@@ -1,17 +1,12 @@
 # Example
 
-Hearing:
+Weak:
 
-> “The freezing wind cut across the mountain.”
+> “Sales declined in Q4.”
 
-may activate:
+Stronger:
 
-- sensory imagination,
-    
-- emotional anticipation,
-    
-- environmental simulation.
-    
+> “Sales declined sharply after shipping delays increased during holiday demand spikes, suggesting fulfillment reliability is directly affecting customer retention.”
 
-This creates:  
-deeper encoding than abstract description.
+Now the data:  
+has causality and consequence.
