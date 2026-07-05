@@ -183,3 +183,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Plotting Pipeline](./Plotting%20Pipeline.md)
 
 ## [The `label` Parameter](./The%20%60label%60%20Parameter.md)
+
+## [Why Labels Matter](./Why%20Labels%20Matter.md)
