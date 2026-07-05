@@ -11,3 +11,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Emotion Matters in Business](./Why%20Emotion%20Matters%20in%20Business.md)
 
 ## [Storytelling Bridges Logic and Emotion](./Storytelling%20Bridges%20Logic%20and%20Emotion.md)
+
+## [The Cognitive Reality](./The%20Cognitive%20Reality.md)
