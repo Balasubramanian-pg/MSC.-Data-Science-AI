@@ -1,16 +1,20 @@
 # Definition
 
-Short-term memory, often called working memory, temporarily stores and processes small amounts of information.
+Long-term memory stores:
 
-Unlike iconic memory:
-
-- processing becomes conscious
+- knowledge
     
-- active thinking occurs
+- experiences
     
-- comparison begins
+- patterns
+    
+- learned associations
+    
+- expertise
     
 
-The transcript states:
+Potentially for life.
 
-> Small amounts of data can be stored in short-term memory.
+The transcript describes long-term memory as:
+
+> Storage of patterns and experience.
