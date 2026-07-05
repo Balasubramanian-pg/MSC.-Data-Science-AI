@@ -577,3 +577,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Modify title](./Modify%20title.md)
 
 ## [Align left](./Align%20left.md)
+
+## [Title Alignment vs Position](./Title%20Alignment%20vs%20Position.md)
