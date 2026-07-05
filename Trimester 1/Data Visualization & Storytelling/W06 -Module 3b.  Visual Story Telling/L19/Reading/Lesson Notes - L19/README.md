@@ -107,3 +107,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [7. Drilling Down](./7.%20Drilling%20Down.md)
 
 ## [Hierarchical Exploration](./Hierarchical%20Exploration.md)
+
+## [Why Drill-Down Is Powerful](./Why%20Drill-Down%20Is%20Powerful.md)
