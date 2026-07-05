@@ -769,3 +769,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [The Result](./The%20Result.md)
 
 ## [The Color Bar](./The%20Color%20Bar.md)
+
+## [Solution: Color Bar](./Solution%20-%20Color%20Bar.md)
