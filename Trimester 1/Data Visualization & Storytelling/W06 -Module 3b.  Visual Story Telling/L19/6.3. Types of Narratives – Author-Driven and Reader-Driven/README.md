@@ -91,3 +91,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Tradeoff](./Important%20Tradeoff.md)
 
 ## [C. Messaging](./C.%20Messaging.md)
+
+## [Strong Messaging Answers](./Strong%20Messaging%20Answers.md)
