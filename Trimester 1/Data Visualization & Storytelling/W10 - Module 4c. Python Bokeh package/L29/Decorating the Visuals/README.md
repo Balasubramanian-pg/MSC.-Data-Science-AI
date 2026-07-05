@@ -79,3 +79,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Parameters](./Parameters.md)
 
 ## [How Color Works in Bokeh](./How%20Color%20Works%20in%20Bokeh.md)
+
+## [1. Named Colors](./1.%20Named%20Colors.md)
