@@ -259,3 +259,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Analytical Decisions](./Analytical%20Decisions.md)
 
 ## [Operational Decisions](./Operational%20Decisions.md)
+
+## [Operational Dashboard Logic](./Operational%20Dashboard%20Logic.md)
