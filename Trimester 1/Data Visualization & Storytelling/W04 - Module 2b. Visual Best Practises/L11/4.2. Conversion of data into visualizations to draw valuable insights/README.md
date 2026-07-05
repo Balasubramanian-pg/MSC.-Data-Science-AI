@@ -73,3 +73,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Transcript Insight](./Transcript%20Insight.md)
 
 ## [Important Principle](./Important%20Principle.md)
+
+## [When Bubble Charts Work](./When%20Bubble%20Charts%20Work.md)
