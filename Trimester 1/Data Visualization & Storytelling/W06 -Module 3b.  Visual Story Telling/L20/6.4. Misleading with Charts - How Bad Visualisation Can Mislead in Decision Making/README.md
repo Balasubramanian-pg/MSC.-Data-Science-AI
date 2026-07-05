@@ -365,3 +365,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [As an Analyst](./As%20an%20Analyst.md)
 
 ## [As a Reader](./As%20a%20Reader.md)
+
+## [Final Takeaway](./Final%20Takeaway.md)
