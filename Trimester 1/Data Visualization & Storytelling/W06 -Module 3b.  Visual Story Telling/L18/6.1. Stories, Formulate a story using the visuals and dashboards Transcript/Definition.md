@@ -1,0 +1,4 @@
+# Definition
+
+Eliminate:  
+everything unnecessary.
