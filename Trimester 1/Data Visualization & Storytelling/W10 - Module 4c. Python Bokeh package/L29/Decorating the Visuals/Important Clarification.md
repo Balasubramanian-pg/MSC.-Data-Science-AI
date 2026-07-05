@@ -2,15 +2,13 @@
 
 The instructor says:
 
-> "scatter plot"
+> "line colour is the colour of the circle"
 
-But technically:
+This is partially true but technically incomplete.
 
-```python
-circle()
-```
+Correct interpretation:
 
-is a glyph used to create a scatter plot.
-
-Scatter plot = concept.  
-Circle glyph = rendering mechanism.
+|Property|Controls|
+|---|---|
+|`fill_color`|interior|
+|`line_color`|outline/border|
