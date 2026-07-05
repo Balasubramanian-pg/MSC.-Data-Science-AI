@@ -11,3 +11,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why These Three Tasks Matter](./Why%20These%20Three%20Tasks%20Matter.md)
 
 ## [The Visualization Goal](./The%20Visualization%20Goal.md)
+
+## [Core Principle](./Core%20Principle.md)
