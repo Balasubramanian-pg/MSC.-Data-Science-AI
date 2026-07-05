@@ -189,3 +189,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Authenticity Matters](./Why%20Authenticity%20Matters.md)
 
 ## [Human Communication Is Multi-Channel](./Human%20Communication%20Is%20Multi-Channel.md)
+
+## [Common Failure](./Common%20Failure.md)
