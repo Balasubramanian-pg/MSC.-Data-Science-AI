@@ -53,3 +53,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Initialize the OneHotEncoder](./Initialize%20the%20OneHotEncoder.md)
 
 ## [sparse_output=False for demonstration purposes to see the dense array](./sparse_output%3DFalse%20for%20demonstration%20purposes%20to%20see%20the%20dense%20array.md)
+
+## [Fit and transform the words](./Fit%20and%20transform%20the%20words.md)
