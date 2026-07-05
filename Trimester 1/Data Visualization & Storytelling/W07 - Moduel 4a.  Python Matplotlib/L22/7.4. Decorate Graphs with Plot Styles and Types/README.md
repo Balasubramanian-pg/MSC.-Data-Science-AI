@@ -53,3 +53,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Jet Colormap Is Problematic](./Why%20Jet%20Colormap%20Is%20Problematic.md)
 
 ## [Custom Colormaps](./Custom%20Colormaps.md)
+
+## [Engineering Use Cases](./Engineering%20Use%20Cases.md)
