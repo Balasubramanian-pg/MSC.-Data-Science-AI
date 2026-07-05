@@ -275,3 +275,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [The Debugging Mindset](./The%20Debugging%20Mindset.md)
 
 ## [Common Beginner Syntax Errors](./Common%20Beginner%20Syntax%20Errors.md)
+
+## [Incorrect Line Style](./Incorrect%20Line%20Style.md)
