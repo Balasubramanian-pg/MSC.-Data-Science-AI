@@ -1,13 +1,11 @@
 # Why This Matters
 
-Visualizations can create:
+Human working memory is extremely limited.
 
-- semantic conventions,
-    
-- emotional associations,
-    
-- and political identity structures.
-    
+Too many elements create:
 
-Eventually:  
-the visualization becomes part of the narrative itself.
+- cognitive overload,
+    
+- fragmented attention,
+    
+- reduced comprehension.
