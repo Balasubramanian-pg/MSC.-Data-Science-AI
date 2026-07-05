@@ -573,3 +573,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Updating Title Text](./Updating%20Title%20Text.md)
 
 ## [Object Mutation Flow](./Object%20Mutation%20Flow.md)
+
+## [Modify title](./Modify%20title.md)
