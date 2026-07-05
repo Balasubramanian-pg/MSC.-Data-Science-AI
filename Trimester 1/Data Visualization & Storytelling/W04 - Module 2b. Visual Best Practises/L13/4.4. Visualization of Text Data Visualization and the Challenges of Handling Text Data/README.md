@@ -43,3 +43,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Hidden Signals Inside Text](./Hidden%20Signals%20Inside%20Text.md)
 
 ## [Important Modern Insight](./Important%20Modern%20Insight.md)
+
+## [Why Visualization Becomes Important](./Why%20Visualization%20Becomes%20Important.md)
