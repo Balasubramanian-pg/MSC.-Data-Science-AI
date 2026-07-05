@@ -15,3 +15,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [This pulls the default fMRI dataframe built directly into Seaborn](./This%20pulls%20the%20default%20fMRI%20dataframe%20built%20directly%20into%20Seaborn.md)
 
 ## [Display the first few rows to understand the structure](./Display%20the%20first%20few%20rows%20to%20understand%20the%20structure.md)
+
+## [2. CORE FUNCTION: Simple Line Plot with Statistical Aggregation](./2.%20CORE%20FUNCTION%20-%20Simple%20Line%20Plot%20with%20Statistical%20Aggregation.md)
