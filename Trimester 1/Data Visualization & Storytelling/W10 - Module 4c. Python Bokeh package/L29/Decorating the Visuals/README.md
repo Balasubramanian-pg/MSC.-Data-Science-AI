@@ -99,3 +99,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Structure](./Structure.md)
 
 ## [Full Example](./Full%20Example.md)
+
+## [Engineering Insight](./Engineering%20Insight.md)
