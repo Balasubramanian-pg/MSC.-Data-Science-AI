@@ -103,3 +103,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Excessive Saturation](./Excessive%20Saturation.md)
 
 ## [Ignoring Accessibility](./Ignoring%20Accessibility.md)
+
+## [Decorative Borders](./Decorative%20Borders.md)
