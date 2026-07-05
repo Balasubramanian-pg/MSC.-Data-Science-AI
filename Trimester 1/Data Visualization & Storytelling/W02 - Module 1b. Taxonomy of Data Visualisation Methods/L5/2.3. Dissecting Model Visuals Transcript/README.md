@@ -26,3 +26,5 @@
 ## [10. Principle: Color Consistency](./10.%20Principle%20-%20Color%20Consistency.md)
 
 ## [11. Case Study 4: Development Priorities Survey](./11.%20Case%20Study%204%20-%20Development%20Priorities%20Survey.md)
+
+## [12. Direct Labeling vs Legends](./12.%20Direct%20Labeling%20vs%20Legends.md)
