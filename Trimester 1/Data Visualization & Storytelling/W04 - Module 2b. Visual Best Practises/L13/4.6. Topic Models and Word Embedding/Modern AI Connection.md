@@ -1,12 +1,16 @@
 # Modern AI Connection
 
-Modern LLMs fundamentally rely on:
+Large Language Models fundamentally rely on:
 
-- embeddings
+- embedding spaces
     
-- attention mechanisms
+- attention geometry
     
-- semantic vector spaces
+- latent semantic structures
     
 
-The lecture is indirectly introducing the foundations of modern generative AI.
+The lecture is effectively introducing:
+
+```text
+the geometric foundations of modern generative AI
+```
