@@ -559,3 +559,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Visual Comparison](./Visual%20Comparison.md)
 
 ## [Center](./Center.md)
+
+## [Left](./Left.md)
