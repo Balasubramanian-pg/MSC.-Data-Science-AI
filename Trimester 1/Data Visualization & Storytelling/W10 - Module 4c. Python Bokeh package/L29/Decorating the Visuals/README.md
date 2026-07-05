@@ -25,3 +25,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [STEP 3: Create figure](./STEP%203%20-%20Create%20figure.md)
 
 ## [STEP 4: Add glyphs (visual elements)](./STEP%204%20-%20Add%20glyphs%20%28visual%20elements%29.md)
+
+## [STEP 5: Display](./STEP%205%20-%20Display.md)
