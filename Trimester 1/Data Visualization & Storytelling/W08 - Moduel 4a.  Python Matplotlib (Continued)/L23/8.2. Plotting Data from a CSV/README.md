@@ -9,3 +9,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Introduction](./Introduction.md)
 
 ## [Standard Imports](./Standard%20Imports.md)
+
+## [Setting a Global Style](./Setting%20a%20Global%20Style.md)
