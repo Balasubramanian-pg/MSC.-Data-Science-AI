@@ -81,3 +81,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Storytelling and Long-Term Memory](./Storytelling%20and%20Long-Term%20Memory.md)
 
 ## [Why Simplicity Improves Retention](./Why%20Simplicity%20Improves%20Retention.md)
+
+## [Relationship Between Memory Systems](./Relationship%20Between%20Memory%20Systems.md)
