@@ -75,3 +75,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [2. Context Dependence](./2.%20Context%20Dependence.md)
 
 ## [3. Synonymy](./3.%20Synonymy.md)
+
+## [4. Polysemy](./4.%20Polysemy.md)
