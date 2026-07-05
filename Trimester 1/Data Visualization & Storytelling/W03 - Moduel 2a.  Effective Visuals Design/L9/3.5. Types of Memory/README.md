@@ -131,3 +131,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [1. Iconic Memory](./1.%20Iconic%20Memory.md)
 
 ## [Key Characteristics of Iconic Memory](./Key%20Characteristics%20of%20Iconic%20Memory.md)
+
+## [Important Insight](./Important%20Insight.md)
