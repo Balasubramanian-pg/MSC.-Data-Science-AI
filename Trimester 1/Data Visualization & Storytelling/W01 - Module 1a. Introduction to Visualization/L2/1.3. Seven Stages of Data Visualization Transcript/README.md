@@ -10,3 +10,5 @@
 ## [2. Foundational Concepts Before Visualization](./2.%20Foundational%20Concepts%20Before%20Visualization.md)
 
 ## [2.1 Understanding Variables and Attributes](./2.1%20Understanding%20Variables%20and%20Attributes.md)
+
+## [2.2 Numerical vs Textual Data](./2.2%20Numerical%20vs%20Textual%20Data.md)
