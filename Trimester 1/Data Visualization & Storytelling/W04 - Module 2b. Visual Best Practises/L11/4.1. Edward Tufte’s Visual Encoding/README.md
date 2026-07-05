@@ -11,3 +11,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Visualization Pipeline](./The%20Visualization%20Pipeline.md)
 
 ## [Understanding Data Types](./Understanding%20Data%20Types.md)
+
+## [The Foundation of Correct Visualization](./The%20Foundation%20of%20Correct%20Visualization.md)
