@@ -187,3 +187,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Visualization as Hypothesis Generation](./Visualization%20as%20Hypothesis%20Generation.md)
 
 ## [Strategic Insight](./Strategic%20Insight.md)
+
+## [Confounding Variables and the Limits of Correlation](./Confounding%20Variables%20and%20the%20Limits%20of%20Correlation.md)
