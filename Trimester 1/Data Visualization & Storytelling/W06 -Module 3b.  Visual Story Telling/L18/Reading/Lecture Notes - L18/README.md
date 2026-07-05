@@ -333,3 +333,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Final Summary of Key Takeaways](./Final%20Summary%20of%20Key%20Takeaways.md)
 
 ## [1. Storytelling Is a Cognitive Tool](./1.%20Storytelling%20Is%20a%20Cognitive%20Tool.md)
+
+## [2. Simplicity Improves Understanding](./2.%20Simplicity%20Improves%20Understanding.md)
