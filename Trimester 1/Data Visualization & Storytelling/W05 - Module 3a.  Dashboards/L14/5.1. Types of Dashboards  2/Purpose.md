@@ -1,11 +1,11 @@
 # Purpose
 
-Support:
+Maintain:
 
-- pattern discovery,
+- uptime,
     
-- root-cause analysis,
+- stability,
     
-- operational optimization,
+- compliance,
     
-- exploratory reasoning.
+- operational continuity.
