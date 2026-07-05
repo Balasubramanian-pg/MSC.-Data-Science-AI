@@ -291,3 +291,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Cherry Picking and Selective Framing](./Cherry%20Picking%20and%20Selective%20Framing.md)
 
 ## [The Core Mechanism](./The%20Core%20Mechanism.md)
+
+## [Example: UK National Debt as Percentage of GDP](./Example%20-%20UK%20National%20Debt%20as%20Percentage%20of%20GDP.md)
