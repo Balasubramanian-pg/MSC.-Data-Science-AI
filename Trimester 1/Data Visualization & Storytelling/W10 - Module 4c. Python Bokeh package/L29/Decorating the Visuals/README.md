@@ -663,3 +663,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Legend customization](./Legend%20customization.md)
 
 ## [Mistake 1: Redundant Legends](./Mistake%201%20-%20Redundant%20Legends.md)
+
+## [Mistake 2: Generic Labels](./Mistake%202%20-%20Generic%20Labels.md)
