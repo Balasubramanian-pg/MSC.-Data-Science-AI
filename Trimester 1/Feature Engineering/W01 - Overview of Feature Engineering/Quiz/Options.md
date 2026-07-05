@@ -1,6 +1,6 @@
 # Options
 
-* One-hot encoding
-* Normalisation
-* Logarithmic scaling
-* Random Oversampling
+* Visualise data only
+* Improve predictive performance
+* Create overfitting
+* Reduce model complexity
