@@ -177,3 +177,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [t-SNE Intuition](./t-SNE%20Intuition.md)
 
 ## [Why t-SNE Became Popular](./Why%20t-SNE%20Became%20Popular.md)
+
+## [The Lecture’s Document Clusters](./The%20Lecture%E2%80%99s%20Document%20Clusters.md)
