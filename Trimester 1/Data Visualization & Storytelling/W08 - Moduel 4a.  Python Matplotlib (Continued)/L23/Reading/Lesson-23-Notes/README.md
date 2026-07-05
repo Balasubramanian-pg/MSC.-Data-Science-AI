@@ -97,3 +97,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Ignoring Missing Data](./Ignoring%20Missing%20Data.md)
 
 ## [Assuming Stable APIs](./Assuming%20Stable%20APIs.md)
+
+## [No Error Handling](./No%20Error%20Handling.md)
