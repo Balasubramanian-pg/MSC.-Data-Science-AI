@@ -22,3 +22,5 @@
 ## [Questions](./Questions.md)
 
 ## [Appropriate Visualization](./Appropriate%20Visualization.md)
+
+## [Why It Works](./Why%20It%20Works.md)
