@@ -147,3 +147,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Noise Reduction](./Noise%20Reduction.md)
 
 ## [Important Caveat](./Important%20Caveat.md)
+
+## [Cleaning Tradeoff](./Cleaning%20Tradeoff.md)
