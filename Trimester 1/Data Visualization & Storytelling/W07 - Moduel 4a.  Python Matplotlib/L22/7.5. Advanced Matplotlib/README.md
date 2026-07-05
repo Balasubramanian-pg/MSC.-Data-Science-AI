@@ -33,3 +33,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Sturges Rule](./Sturges%20Rule.md)
 
 ## [Square Root Rule](./Square%20Root%20Rule.md)
+
+## [Freedman-Diaconis Rule](./Freedman-Diaconis%20Rule.md)
