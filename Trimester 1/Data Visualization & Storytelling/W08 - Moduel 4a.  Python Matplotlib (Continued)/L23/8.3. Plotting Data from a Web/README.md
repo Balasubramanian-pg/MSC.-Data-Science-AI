@@ -71,3 +71,5 @@ It is fundamentally about:
 ## [3. Assuming CSV is Always Local](./3.%20Assuming%20CSV%20is%20Always%20Local.md)
 
 ## [Computational Insight](./Computational%20Insight.md)
+
+## [Advanced Version](./Advanced%20Version.md)
