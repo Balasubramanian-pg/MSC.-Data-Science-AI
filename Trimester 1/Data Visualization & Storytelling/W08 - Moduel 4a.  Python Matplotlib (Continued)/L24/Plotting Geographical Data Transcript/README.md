@@ -79,3 +79,5 @@ This is foundational to:
 ## [Convert Into DataFrame](./Convert%20Into%20DataFrame.md)
 
 ## [Create Geometry](./Create%20Geometry.md)
+
+## [Critical Spatial Transformation](./Critical%20Spatial%20Transformation.md)
