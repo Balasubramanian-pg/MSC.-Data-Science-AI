@@ -641,3 +641,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Internal Architecture](./Internal%20Architecture.md)
 
 ## [Result](./Result.md)
+
+## [Visualization Structure](./Visualization%20Structure.md)
