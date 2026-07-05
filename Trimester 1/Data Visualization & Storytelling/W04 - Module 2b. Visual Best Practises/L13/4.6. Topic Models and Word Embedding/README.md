@@ -29,3 +29,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Meaning Through Proximity](./Meaning%20Through%20Proximity.md)
 
 ## [Semantic Space Model](./Semantic%20Space%20Model.md)
+
+## [Word Embeddings](./Word%20Embeddings.md)
