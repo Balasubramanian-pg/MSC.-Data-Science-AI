@@ -140,3 +140,5 @@ The transcript introduces this challenge directly.
 ## [Dashboard Structure Model](./Dashboard%20Structure%20Model.md)
 
 ## [Most Important Principle](./Most%20Important%20Principle.md)
+
+## [Final Mental Model](./Final%20Mental%20Model.md)
