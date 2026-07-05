@@ -183,3 +183,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Analytical Discipline](./Important%20Analytical%20Discipline.md)
 
 ## [Why This Matters in Business](./Why%20This%20Matters%20in%20Business.md)
+
+## [Visualization as Hypothesis Generation](./Visualization%20as%20Hypothesis%20Generation.md)
