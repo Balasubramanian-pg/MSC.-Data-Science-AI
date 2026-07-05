@@ -1,7 +1,13 @@
 # Business Insight
 
-Visualization helps identify:
+The lesson mentions:
 
-```text
-where normal behavior ends and abnormal behavior begins
-```
+Lower bounce rates improve conversions.
+
+Visualization enables detection of:
+
+- behavioral quality
+    
+- user engagement patterns
+    
+- funnel efficiency
