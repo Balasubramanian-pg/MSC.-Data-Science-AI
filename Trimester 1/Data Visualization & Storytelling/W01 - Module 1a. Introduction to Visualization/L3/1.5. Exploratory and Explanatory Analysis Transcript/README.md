@@ -79,3 +79,5 @@
 ## [Example Formula](./Example%20Formula.md)
 
 ## [Insight](./Insight.md)
+
+## [5.3 Explanatory Phase](./5.3%20Explanatory%20Phase.md)
