@@ -39,3 +39,5 @@ I have organized the code into a logical, executable structure using a mock data
 ## [Seaborn automatically calculates the mean AND adds a 95% Confidence Interval (CI) error bar.](./Seaborn%20automatically%20calculates%20the%20mean%20AND%20adds%20a%2095%25%20Confidence%20Interval%20%28CI%29%20error%20bar.md)
 
 ## [5. Hybrid Approach: Combining Seaborn and Matplotlib](./5.%20Hybrid%20Approach%20-%20Combining%20Seaborn%20and%20Matplotlib.md)
+
+## [Best Practice: Use Seaborn for complex data plotting, use Matplotlib for fine-tuning layout/annotations.](./Best%20Practice%20-%20Use%20Seaborn%20for%20complex%20data%20plotting%2C%20use%20Matplotlib%20for%20fine-tuning%20layoutannotations.md)
