@@ -49,3 +49,5 @@ This is foundational to:
 ## [Important Difference](./Important%20Difference.md)
 
 ## [What Is a Shapefile?](./What%20Is%20a%20Shapefile.md)
+
+## [Geometry Types](./Geometry%20Types.md)
