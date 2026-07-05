@@ -39,3 +39,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [4. Visualization as Hands-On Learning](./4.%20Visualization%20as%20Hands-On%20Learning.md)
 
 ## [Why Hands-On Practice Matters](./Why%20Hands-On%20Practice%20Matters.md)
+
+## [Effective Learning Loop](./Effective%20Learning%20Loop.md)
