@@ -1,13 +1,13 @@
 # Storytelling and Long-Term Memory
 
-Good visual storytelling helps information move into long-term memory.
+Good data storytelling improves memory retention.
 
-This happens when:
+Strong stories:
 
-- insights are emotionally meaningful
+- create emotional anchors
     
-- visuals are simple
+- simplify interpretation
     
-- patterns are obvious
+- improve recall
     
-- narratives are coherent
+- reinforce patterns
