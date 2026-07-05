@@ -1,10 +1,5 @@
 # Example
 
 ```python
-p.line(
-    x,
-    y,
-    line_width=4,
-    line_dash="dashed"
-)
+visual_properties_plot.title.text_font_size = "1.2em"
 ```
