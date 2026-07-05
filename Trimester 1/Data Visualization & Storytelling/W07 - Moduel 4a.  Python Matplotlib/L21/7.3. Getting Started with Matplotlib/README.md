@@ -109,3 +109,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Figure](./Figure.md)
 
 ## [Axes](./Axes.md)
+
+## [Conceptual Structure](./Conceptual%20Structure.md)
