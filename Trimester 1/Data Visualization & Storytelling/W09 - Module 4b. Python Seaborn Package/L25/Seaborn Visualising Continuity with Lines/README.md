@@ -67,3 +67,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [categories into distinct subplot columns, we drastically reduce the audience's mental processing effort.](./categories%20into%20distinct%20subplot%20columns%2C%20we%20drastically%20reduce%20the%20audience%27s%20mental%20processing%20effort.md)
 
 ## [Apply global title architecture across the complete Figure grid](./Apply%20global%20title%20architecture%20across%20the%20complete%20Figure%20grid.md)
+
+## [Orientation Variation A: Columnar Layout (Side-by-Side Comparison)](./Orientation%20Variation%20A%20-%20Columnar%20Layout%20%28Side-by-Side%20Comparison%29.md)
