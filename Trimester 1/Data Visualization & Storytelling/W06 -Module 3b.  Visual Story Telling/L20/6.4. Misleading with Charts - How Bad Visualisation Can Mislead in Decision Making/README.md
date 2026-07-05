@@ -75,3 +75,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [“Visualization Noise” and Decorative Distortion](./%E2%80%9CVisualization%20Noise%E2%80%9D%20and%20Decorative%20Distortion.md)
 
 ## [What Is Chartjunk?](./What%20Is%20Chartjunk.md)
+
+## [Why Decorative Overload Is Harmful](./Why%20Decorative%20Overload%20Is%20Harmful.md)
