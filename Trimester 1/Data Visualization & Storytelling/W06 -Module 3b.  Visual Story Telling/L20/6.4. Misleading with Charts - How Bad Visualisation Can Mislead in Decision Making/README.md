@@ -25,3 +25,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [2. Color Bias](./2.%20Color%20Bias.md)
 
 ## [3. Gestalt Perception](./3.%20Gestalt%20Perception.md)
+
+## [Why Misleading Charts Often Go Unnoticed](./Why%20Misleading%20Charts%20Often%20Go%20Unnoticed.md)
