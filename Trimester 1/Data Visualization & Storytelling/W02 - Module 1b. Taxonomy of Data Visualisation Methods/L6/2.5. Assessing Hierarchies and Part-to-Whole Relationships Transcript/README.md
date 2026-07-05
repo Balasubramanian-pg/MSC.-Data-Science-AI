@@ -7,3 +7,5 @@ This document provides a technical blueprint for understanding, selecting, and i
 ## [1. Foundations of Hierarchical & Part-to-Whole Relationships](./1.%20Foundations%20of%20Hierarchical%20%26%20Part-to-Whole%20Relationships.md)
 
 ## [2. Deep Dive: Circle Packing Diagrams](./2.%20Deep%20Dive%20-%20Circle%20Packing%20Diagrams.md)
+
+## [3. Deep Dive: Bubble Hierarchies (Hierarchical Bubble Trees)](./3.%20Deep%20Dive%20-%20Bubble%20Hierarchies%20%28Hierarchical%20Bubble%20Trees%29.md)
