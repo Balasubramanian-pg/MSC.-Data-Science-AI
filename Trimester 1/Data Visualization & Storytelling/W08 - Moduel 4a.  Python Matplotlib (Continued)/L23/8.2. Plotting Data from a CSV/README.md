@@ -89,3 +89,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Not Scaling Bubble Sizes](./Not%20Scaling%20Bubble%20Sizes.md)
 
 ## [Treating Random Walks as Predictive Trends](./Treating%20Random%20Walks%20as%20Predictive%20Trends.md)
+
+## [Ignoring Data Validation](./Ignoring%20Data%20Validation.md)
