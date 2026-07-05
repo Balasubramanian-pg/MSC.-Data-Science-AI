@@ -57,3 +57,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [1. Highlighting](./1.%20Highlighting.md)
 
 ## [Common Highlighting Methods](./Common%20Highlighting%20Methods.md)
+
+## [Important Principle](./Important%20Principle.md)
