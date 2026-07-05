@@ -249,3 +249,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Core Architectural Pattern](./Core%20Architectural%20Pattern.md)
 
 ## [Visual Interpretation](./Visual%20Interpretation.md)
+
+## [Important Difference](./Important%20Difference.md)
