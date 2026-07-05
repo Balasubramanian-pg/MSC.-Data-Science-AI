@@ -41,3 +41,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [2. Understanding Data Types](./2.%20Understanding%20Data%20Types.md)
 
 ## [The Foundation of Correct Visualization](./The%20Foundation%20of%20Correct%20Visualization.md)
+
+## [Why Data Types Matter](./Why%20Data%20Types%20Matter.md)
