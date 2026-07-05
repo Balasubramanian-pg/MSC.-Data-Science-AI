@@ -143,3 +143,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [10. Intersection](./10.%20Intersection.md)
 
 ## [Example from Crime Data](./Example%20from%20Crime%20Data.md)
+
+## [Why Intersections Matter](./Why%20Intersections%20Matter.md)
