@@ -1,3 +1,3 @@
 # Rotate labels
 
-plot.xaxis.major_label_orientation = 1.0
+plot.xaxis.major_label_orientation = 0.8
