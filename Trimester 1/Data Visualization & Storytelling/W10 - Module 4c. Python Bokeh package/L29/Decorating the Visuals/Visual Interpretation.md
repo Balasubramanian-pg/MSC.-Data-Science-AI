@@ -3,14 +3,14 @@
 Before:
 
 ```text
-Simple black title on white background
+Temperature
+Objects
 ```
 
 After:
 
 ```text
-Dark grey title banner
-White text
-Right aligned
-Large font
+Observations
+Temperature
+Objects
 ```
