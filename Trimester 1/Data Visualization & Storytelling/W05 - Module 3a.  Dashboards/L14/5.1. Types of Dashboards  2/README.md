@@ -27,3 +27,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Limited Space and Limited Time](./Limited%20Space%20and%20Limited%20Time.md)
 
 ## [Rapid Scanning](./Rapid%20Scanning.md)
+
+## [Example](./Example.md)
