@@ -265,3 +265,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Overlapping Labels](./Overlapping%20Labels.md)
 
 ## [Tight Layout](./Tight%20Layout.md)
+
+## [Advanced Mental Model](./Advanced%20Mental%20Model.md)
