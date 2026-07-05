@@ -105,3 +105,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Visualization Bias](./Important%20Visualization%20Bias.md)
 
 ## [Choropleth Map Bias](./Choropleth%20Map%20Bias.md)
+
+## [Visualization and Narrative Formation](./Visualization%20and%20Narrative%20Formation.md)
