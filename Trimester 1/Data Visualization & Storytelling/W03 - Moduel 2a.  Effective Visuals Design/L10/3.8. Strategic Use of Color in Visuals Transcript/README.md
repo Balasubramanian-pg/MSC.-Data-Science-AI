@@ -126,3 +126,5 @@ Bad visualizations use color excessively.
 ## [Narrative Flow with Color](./Narrative%20Flow%20with%20Color.md)
 
 ## [Real-World Dashboard Example](./Real-World%20Dashboard%20Example.md)
+
+## [Poor Dashboard](./Poor%20Dashboard.md)
