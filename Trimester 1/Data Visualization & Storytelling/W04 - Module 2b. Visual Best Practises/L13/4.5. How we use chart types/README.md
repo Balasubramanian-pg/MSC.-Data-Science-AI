@@ -121,3 +121,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why This Matters](./Why%20This%20Matters.md)
 
 ## [Example](./Example.md)
+
+## [Important NLP Insight](./Important%20NLP%20Insight.md)
