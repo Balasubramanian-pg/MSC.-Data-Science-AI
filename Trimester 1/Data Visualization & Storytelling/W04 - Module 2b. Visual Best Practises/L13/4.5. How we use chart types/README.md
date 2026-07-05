@@ -91,3 +91,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Word Clouds and Pre-Attentive Processing](./Word%20Clouds%20and%20Pre-Attentive%20Processing.md)
 
 ## [Word Cloud Perception Model](./Word%20Cloud%20Perception%20Model.md)
+
+## [Why Humans Like Word Clouds](./Why%20Humans%20Like%20Word%20Clouds.md)
