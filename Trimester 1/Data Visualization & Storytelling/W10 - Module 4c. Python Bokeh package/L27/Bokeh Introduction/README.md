@@ -9,3 +9,5 @@
 ## [4.2.4. Interface Abstraction Levels](./4.2.4.%20Interface%20Abstraction%20Levels.md)
 
 ## [4.2.5. Core Components of Bokeh Visualizations](./4.2.5.%20Core%20Components%20of%20Bokeh%20Visualizations.md)
+
+## [4.2.6. Comparison with Static Visualization Libraries](./4.2.6.%20Comparison%20with%20Static%20Visualization%20Libraries.md)
