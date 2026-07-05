@@ -131,3 +131,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Tradeoff of Lowercasing](./Tradeoff%20of%20Lowercasing.md)
 
 ## [2. Number Handling](./2.%20Number%20Handling.md)
+
+## [Numerical Normalization](./Numerical%20Normalization.md)
