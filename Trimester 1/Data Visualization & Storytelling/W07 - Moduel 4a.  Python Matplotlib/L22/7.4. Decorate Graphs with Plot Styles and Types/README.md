@@ -17,3 +17,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Importing Visualization Libraries](./Importing%20Visualization%20Libraries.md)
 
 ## [Why NumPy Is Used Everywhere](./Why%20NumPy%20Is%20Used%20Everywhere.md)
+
+## [Understanding Colors in Matplotlib](./Understanding%20Colors%20in%20Matplotlib.md)
