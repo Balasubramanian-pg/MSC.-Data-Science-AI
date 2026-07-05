@@ -257,3 +257,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why This Matters Psychologically](./Why%20This%20Matters%20Psychologically.md)
 
 ## [Framing Effect in Dashboards](./Framing%20Effect%20in%20Dashboards.md)
+
+## [Visualization Is Sequential Cognition](./Visualization%20Is%20Sequential%20Cognition.md)
