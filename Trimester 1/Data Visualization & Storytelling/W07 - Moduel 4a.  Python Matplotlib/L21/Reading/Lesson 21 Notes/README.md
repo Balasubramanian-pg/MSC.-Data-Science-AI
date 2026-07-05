@@ -289,3 +289,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [How Legends Work Internally](./How%20Legends%20Work%20Internally.md)
 
 ## [Visualization Pipeline with Enhancements](./Visualization%20Pipeline%20with%20Enhancements.md)
+
+## [Generate sine and cosine values](./Generate%20sine%20and%20cosine%20values.md)
