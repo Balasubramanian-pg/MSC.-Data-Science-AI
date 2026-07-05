@@ -253,3 +253,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [2. Plotting a Linear Function](./2.%20Plotting%20a%20Linear%20Function.md)
 
 ## [Meaning of the Equation](./Meaning%20of%20the%20Equation.md)
+
+## [Defining Variables](./Defining%20Variables.md)
