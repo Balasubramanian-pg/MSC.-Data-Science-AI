@@ -279,3 +279,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Semantic Insight](./Important%20Semantic%20Insight.md)
 
 ## [Subjectivity Modeling Pipeline](./Subjectivity%20Modeling%20Pipeline.md)
+
+## [Relationship Between Polarity and Subjectivity](./Relationship%20Between%20Polarity%20and%20Subjectivity.md)
