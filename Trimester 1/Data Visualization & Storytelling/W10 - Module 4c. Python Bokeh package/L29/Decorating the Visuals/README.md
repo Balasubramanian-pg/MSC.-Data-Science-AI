@@ -349,3 +349,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Engineering Parallel](./Engineering%20Parallel.md)
 
 ## [Fill vs Line Properties](./Fill%20vs%20Line%20Properties.md)
+
+## [Common Beginner Confusion](./Common%20Beginner%20Confusion.md)
