@@ -107,3 +107,5 @@
 ## [6. Using Complex Charts for Simple Messages](./6.%20Using%20Complex%20Charts%20for%20Simple%20Messages.md)
 
 ## [7. Correlation ≠ Causation](./7.%20Correlation%20%E2%89%A0%20Causation.md)
+
+## [9. Golden Rules for Effective Visual Analysis](./9.%20Golden%20Rules%20for%20Effective%20Visual%20Analysis.md)
