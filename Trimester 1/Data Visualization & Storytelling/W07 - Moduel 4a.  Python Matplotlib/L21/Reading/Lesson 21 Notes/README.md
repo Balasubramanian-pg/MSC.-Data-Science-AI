@@ -217,3 +217,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Legends Matter](./Why%20Legends%20Matter.md)
 
 ## [Important Design Principle](./Important%20Design%20Principle.md)
+
+## [6. Rendering the Plot](./6.%20Rendering%20the%20Plot.md)
