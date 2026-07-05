@@ -27,3 +27,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [B. Text / Markdown Cells](./B.%20Text%20Markdown%20Cells.md)
 
 ## [Introduction to Matplotlib](./Introduction%20to%20Matplotlib.md)
+
+## [Why This Separation Matters](./Why%20This%20Separation%20Matters.md)
