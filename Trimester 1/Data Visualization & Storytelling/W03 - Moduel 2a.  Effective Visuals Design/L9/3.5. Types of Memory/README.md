@@ -121,3 +121,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Avoid](./Avoid.md)
 
 ## [Mental Model](./Mental%20Model.md)
+
+## [Interview-Style Insight](./Interview-Style%20Insight.md)
