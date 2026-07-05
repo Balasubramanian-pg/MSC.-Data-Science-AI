@@ -115,3 +115,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why This Is Misleading](./Why%20This%20Is%20Misleading.md)
 
 ## [Correct Visualization Approach](./Correct%20Visualization%20Approach.md)
+
+## [Option 1: Proper Bar Chart](./Option%201%20-%20Proper%20Bar%20Chart.md)
