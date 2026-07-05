@@ -167,3 +167,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [What Is `fig`?](./What%20Is%20%60fig%60.md)
 
 ## [What Is `ax`?](./What%20Is%20%60ax%60.md)
+
+## [Visual Structure](./Visual%20Structure.md)
