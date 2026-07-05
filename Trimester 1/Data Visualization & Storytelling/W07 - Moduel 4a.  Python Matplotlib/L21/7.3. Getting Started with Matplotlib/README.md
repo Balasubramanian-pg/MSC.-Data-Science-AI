@@ -251,3 +251,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Internal Structure](./Internal%20Structure.md)
 
 ## [2. Plotting a Linear Function](./2.%20Plotting%20a%20Linear%20Function.md)
+
+## [Meaning of the Equation](./Meaning%20of%20the%20Equation.md)
