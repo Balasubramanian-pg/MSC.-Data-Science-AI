@@ -141,3 +141,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Cognitive Principle](./Cognitive%20Principle.md)
 
 ## [Word Trees](./Word%20Trees.md)
+
+## [Relationship Visualization in Text](./Relationship%20Visualization%20in%20Text.md)
