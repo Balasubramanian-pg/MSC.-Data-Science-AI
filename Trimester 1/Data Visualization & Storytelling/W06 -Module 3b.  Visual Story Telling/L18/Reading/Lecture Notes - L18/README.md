@@ -341,3 +341,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Core Rule](./Core%20Rule.md)
 
 ## [4. Brevity Prevents Cognitive Fatigue](./4.%20Brevity%20Prevents%20Cognitive%20Fatigue.md)
+
+## [5. Presentation Design Has Real Consequences](./5.%20Presentation%20Design%20Has%20Real%20Consequences.md)
