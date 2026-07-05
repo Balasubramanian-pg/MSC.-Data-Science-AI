@@ -1,16 +1,22 @@
 # Deep Visualization Insight
 
-Titles are not neutral metadata.
+At this point, visualization is no longer:
 
-They are interpretive framing devices.
-
-This is why:
-
-- journalism
-    
-- finance
-    
-- politics
+- drawing shapes
     
 
-often manipulate titles strategically.
+It becomes:
+
+> encoding information into perceptual channels
+
+Channels include:
+
+- position
+    
+- color
+    
+- size
+    
+- opacity
+    
+- shape
