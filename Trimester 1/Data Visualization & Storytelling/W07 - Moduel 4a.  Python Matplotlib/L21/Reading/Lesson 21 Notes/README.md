@@ -233,3 +233,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Generate sine values](./Generate%20sine%20values.md)
 
 ## [Plot the data](./Plot%20the%20data.md)
+
+## [Customize chart](./Customize%20chart.md)
