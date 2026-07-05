@@ -291,3 +291,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Example: Minimum Temperature + Wind Speed](./Example%20-%20Minimum%20Temperature%20%2B%20Wind%20Speed.md)
 
 ## [Why These Variables Were Chosen](./Why%20These%20Variables%20Were%20Chosen.md)
+
+## [Why Shared X-Axes Are Powerful](./Why%20Shared%20X-Axes%20Are%20Powerful.md)
