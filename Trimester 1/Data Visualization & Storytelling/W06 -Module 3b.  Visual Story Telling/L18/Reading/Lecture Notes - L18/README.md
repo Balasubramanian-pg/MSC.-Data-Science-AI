@@ -113,3 +113,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Lesson](./Important%20Lesson.md)
 
 ## [Visual Storytelling vs Raw Visualization](./Visual%20Storytelling%20vs%20Raw%20Visualization.md)
+
+## [Good Visual Storytelling](./Good%20Visual%20Storytelling.md)
