@@ -45,3 +45,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Numerical Discrete Data](./Numerical%20Discrete%20Data.md)
 
 ## [Important Insight](./Important%20Insight.md)
+
+## [Visualization Decision Tree](./Visualization%20Decision%20Tree.md)
