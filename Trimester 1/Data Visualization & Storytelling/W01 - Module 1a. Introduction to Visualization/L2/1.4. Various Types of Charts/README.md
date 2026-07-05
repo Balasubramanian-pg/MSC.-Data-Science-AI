@@ -108,3 +108,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [Subjective Classification](./Subjective%20Classification.md)
 
 ## [Objective Classification](./Objective%20Classification.md)
+
+## [8. Common Visualization Mistakes](./8.%20Common%20Visualization%20Mistakes.md)
