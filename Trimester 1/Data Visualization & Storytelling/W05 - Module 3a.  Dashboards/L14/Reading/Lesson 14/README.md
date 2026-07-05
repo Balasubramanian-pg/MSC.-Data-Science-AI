@@ -101,3 +101,5 @@ week: W05 - Module 3a.  Dashboards
 ## [3. Poor Color Usage](./3.%20Poor%20Color%20Usage.md)
 
 ## [4. Inconsistent Encoding](./4.%20Inconsistent%20Encoding.md)
+
+## [Dashboard Cognitive Architecture](./Dashboard%20Cognitive%20Architecture.md)
