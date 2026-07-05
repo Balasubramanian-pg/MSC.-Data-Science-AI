@@ -33,3 +33,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Best Visualizations](./Best%20Visualizations.md)
 
 ## [Poor Choices](./Poor%20Choices.md)
+
+## [Binary Data](./Binary%20Data.md)
