@@ -707,3 +707,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [What Is a Palette?](./What%20Is%20a%20Palette.md)
 
 ## [Bokeh Palettes](./Bokeh%20Palettes.md)
+
+## [Instructor Says "CIDES"](./Instructor%20Says%20CIDES.md)
