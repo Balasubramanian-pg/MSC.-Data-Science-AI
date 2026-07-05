@@ -24,3 +24,5 @@
 ## [Example from Lecture](./Example%20from%20Lecture.md)
 
 ## [Important Warning: Format Compatibility](./Important%20Warning%20-%20Format%20Compatibility.md)
+
+## [Business Insight](./Business%20Insight.md)
