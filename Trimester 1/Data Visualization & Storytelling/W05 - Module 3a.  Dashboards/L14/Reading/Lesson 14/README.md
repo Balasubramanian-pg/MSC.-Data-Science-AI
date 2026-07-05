@@ -45,3 +45,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Characteristics of Dashboards](./Characteristics%20of%20Dashboards.md)
 
 ## [1. Visual Summarization](./1.%20Visual%20Summarization.md)
+
+## [Definition](./Definition.md)
