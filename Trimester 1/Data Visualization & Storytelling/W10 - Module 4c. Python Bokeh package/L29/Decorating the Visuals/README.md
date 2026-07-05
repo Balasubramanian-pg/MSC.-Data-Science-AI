@@ -165,3 +165,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Create figure](./Create%20figure.md)
 
 ## [Add bars](./Add%20bars.md)
+
+## [Text styling](./Text%20styling.md)
