@@ -93,3 +93,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Final Takeaways](./Final%20Takeaways.md)
 
 ## [Visual Narratives and Public Perception](./Visual%20Narratives%20and%20Public%20Perception.md)
+
+## [The 2000 U.S. Election Example](./The%202000%20U.S.%20Election%20Example.md)
