@@ -259,3 +259,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Plotting the Line](./Plotting%20the%20Line.md)
 
 ## [Why Color Matters](./Why%20Color%20Matters.md)
+
+## [3. Intelligent Coding Assistance](./3.%20Intelligent%20Coding%20Assistance.md)
