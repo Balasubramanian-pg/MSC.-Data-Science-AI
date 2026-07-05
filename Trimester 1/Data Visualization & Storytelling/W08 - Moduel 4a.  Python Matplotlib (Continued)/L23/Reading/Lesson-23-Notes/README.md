@@ -295,3 +295,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Shared X-Axes Are Powerful](./Why%20Shared%20X-Axes%20Are%20Powerful.md)
 
 ## [Cognitive Science Behind Alignment](./Cognitive%20Science%20Behind%20Alignment.md)
+
+## [Why Different Colors Matter](./Why%20Different%20Colors%20Matter.md)
