@@ -1,8 +1,13 @@
 # Visual Interpretation
 
 ```text
-(1,2)
-(2,5)
-(3,7)
-...
+Red outline
+Yellow interior
+```
+
+Like:
+
+```text
+   🔴 border
+  🟡 inside
 ```
