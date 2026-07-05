@@ -17,3 +17,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Four Core Data Types](./The%20Four%20Core%20Data%20Types.md)
 
 ## [1. Nominal Data](./1.%20Nominal%20Data.md)
+
+## [Pure Categorization](./Pure%20Categorization.md)
