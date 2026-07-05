@@ -265,3 +265,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Color Matters](./Why%20Color%20Matters.md)
 
 ## [B. `linestyle='--'`](./B.%20%60linestyle%3D%27--%27%60.md)
+
+## [Common Line Styles](./Common%20Line%20Styles.md)
