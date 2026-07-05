@@ -81,3 +81,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Removing Spines](./Removing%20Spines.md)
 
 ## [Customizing Spine Width and Color](./Customizing%20Spine%20Width%20and%20Color.md)
+
+## [Why Spine Removal Matters](./Why%20Spine%20Removal%20Matters.md)
