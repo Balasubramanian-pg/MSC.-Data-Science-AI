@@ -123,3 +123,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Most Effective Encoding](./The%20Most%20Effective%20Encoding.md)
 
 ## [Why Position Is Best](./Why%20Position%20Is%20Best.md)
+
+## [Why Position Beats Length](./Why%20Position%20Beats%20Length.md)
