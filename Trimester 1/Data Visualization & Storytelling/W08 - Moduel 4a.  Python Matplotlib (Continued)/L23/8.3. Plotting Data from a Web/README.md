@@ -51,3 +51,5 @@ It is fundamentally about:
 ## [Step 6: Plot Maximum Temperature](./Step%206%20-%20Plot%20Maximum%20Temperature.md)
 
 ## [What Is Happening Here?](./What%20Is%20Happening%20Here.md)
+
+## [Column Subsetting](./Column%20Subsetting.md)
