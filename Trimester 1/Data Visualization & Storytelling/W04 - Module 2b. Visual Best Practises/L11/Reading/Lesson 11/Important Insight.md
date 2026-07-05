@@ -1,5 +1,9 @@
 # Important Insight
 
-Humans possess limited attentional bandwidth.
+Some visual encodings support estimation better than others.
 
-Every unnecessary visual element competes for cognition.
+This leads into:
+
+```text
+visual encoding hierarchy
+```
