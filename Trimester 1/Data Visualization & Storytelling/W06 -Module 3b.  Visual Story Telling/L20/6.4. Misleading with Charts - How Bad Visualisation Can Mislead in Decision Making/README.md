@@ -223,3 +223,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Drill-Down as a Defense Against Misleading Aggregation](./Drill-Down%20as%20a%20Defense%20Against%20Misleading%20Aggregation.md)
 
 ## [Narrative Control Through Grouping](./Narrative%20Control%20Through%20Grouping.md)
+
+## [Filter Ordering as Narrative Design](./Filter%20Ordering%20as%20Narrative%20Design.md)
