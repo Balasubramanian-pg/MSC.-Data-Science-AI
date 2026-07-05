@@ -19,3 +19,5 @@ week: W02 - Handling Numeric Data
 ## [2.6.6. Factors Affecting Proximity Metrics](./2.6.6.%20Factors%20Affecting%20Proximity%20Metrics.md)
 
 ## [2.6.7. Algorithmic Implications](./2.6.7.%20Algorithmic%20Implications.md)
+
+## [2.6.8. Example of a Euclidean Distance Calculation](./2.6.8.%20Example%20of%20a%20Euclidean%20Distance%20Calculation.md)
