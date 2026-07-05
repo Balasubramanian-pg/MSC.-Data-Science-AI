@@ -31,3 +31,5 @@ It is fundamentally about:
 ## [Step 3: Load Data Into Pandas](./Step%203%20-%20Load%20Data%20Into%20Pandas.md)
 
 ## [Breakdown of `pd.read_csv()`](./Breakdown%20of%20%60pd.read_csv%28%29%60.md)
+
+## [Why Parse Dates?](./Why%20Parse%20Dates.md)
