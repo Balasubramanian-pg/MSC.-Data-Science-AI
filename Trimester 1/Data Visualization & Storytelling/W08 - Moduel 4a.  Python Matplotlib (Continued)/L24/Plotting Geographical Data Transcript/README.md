@@ -63,3 +63,5 @@ This is foundational to:
 ## [Choropleth Maps](./Choropleth%20Maps.md)
 
 ## [What Happens Here?](./What%20Happens%20Here.md)
+
+## [Choropleth Map](./Choropleth%20Map.md)
