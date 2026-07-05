@@ -93,3 +93,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [JJ (Adjective): 2](./JJ%20%28Adjective%29%20-%202.md)
 
 ## [NN (Noun): 2](./NN%20%28Noun%29%20-%202.md)
+
+## [RB (Adverb): 1](./RB%20%28Adverb%29%20-%201.md)
