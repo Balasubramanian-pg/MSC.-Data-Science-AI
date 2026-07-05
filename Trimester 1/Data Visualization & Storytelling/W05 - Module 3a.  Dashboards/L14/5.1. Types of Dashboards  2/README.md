@@ -129,3 +129,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Important Insight About Dashboards](./Important%20Insight%20About%20Dashboards.md)
 
 ## [Example from the Transcript](./Example%20from%20the%20Transcript.md)
+
+## [This is Excellent Dashboard Behavior](./This%20is%20Excellent%20Dashboard%20Behavior.md)
