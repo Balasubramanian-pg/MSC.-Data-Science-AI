@@ -1,40 +1,25 @@
 # Deep Insight
 
-Bokeh is closer to a UI framework than a simple plotting library.
+Most beginners think plotting means:
 
-Why?
+```text
+data -> graph
+```
 
-Because:
+But real visualization systems are:
 
-- plots are objects
-    
-- components are editable
-    
-- properties are reactive
-    
-- rendering happens dynamically
-    
+```mermaid
+flowchart LR
+    A[Data]
+    B[Glyphs]
+    C[Styling]
+    D[Layout]
+    E[Interaction]
 
-This becomes extremely important in:
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
 
-- dashboards
-    
-- interactive analytics
-    
-- streaming systems
-    
-- web applications
-    
-
-Not just static charts.
-
-This section explains an extremely important Bokeh concept:
-
-> A figure can be customized either:
-> 
-> 1. during creation
->     
-> 2. after creation
->     
-
-This distinction matters because Bokeh is fundamentally object-oriented.
+Bokeh is designed for this richer architecture.
