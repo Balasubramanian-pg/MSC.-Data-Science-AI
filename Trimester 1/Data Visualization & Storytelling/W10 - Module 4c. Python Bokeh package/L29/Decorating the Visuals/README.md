@@ -59,3 +59,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Option 1: Named color (easiest for common colors)](./Option%201%20-%20Named%20color%20%28easiest%20for%20common%20colors%29.md)
 
 ## [Option 2: Hexadecimal (good for exact web colors)](./Option%202%20-%20Hexadecimal%20%28good%20for%20exact%20web%20colors%29.md)
+
+## [Option 3: RGB tuple (good for programmatic generation)](./Option%203%20-%20RGB%20tuple%20%28good%20for%20programmatic%20generation%29.md)
