@@ -17,3 +17,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Page 6](./Page%206.md)
 
 ## [Page 7](./Page%207.md)
+
+## [Page 8](./Page%208.md)
