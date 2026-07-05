@@ -197,3 +197,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Presentation Mistake](./Presentation%20Mistake.md)
 
 ## [B. The SUCCESS Model](./B.%20The%20SUCCESS%20Model.md)
+
+## [SUCCESS Acronym](./SUCCESS%20Acronym.md)
