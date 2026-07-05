@@ -103,3 +103,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Estimation](./Estimation.md)
 
 ## [Magnitude Comparison](./Magnitude%20Comparison.md)
+
+## [4. Types of Visual Encodings](./4.%20Types%20of%20Visual%20Encodings.md)
