@@ -219,3 +219,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Business Example](./Business%20Example.md)
 
 ## [Why This Matters in Dashboards](./Why%20This%20Matters%20in%20Dashboards.md)
+
+## [Drill-Down as a Defense Against Misleading Aggregation](./Drill-Down%20as%20a%20Defense%20Against%20Misleading%20Aggregation.md)
