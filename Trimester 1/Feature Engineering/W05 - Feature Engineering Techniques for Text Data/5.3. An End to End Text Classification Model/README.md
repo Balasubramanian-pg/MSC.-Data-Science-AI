@@ -23,3 +23,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [3. TF-IDF Vectorization](./3.%20TF-IDF%20Vectorization.md)
 
 ## [Using max_features=3000 as specified in the standard pipeline](./Using%20max_features%3D3000%20as%20specified%20in%20the%20standard%20pipeline.md)
+
+## [4. Model Training](./4.%20Model%20Training.md)
