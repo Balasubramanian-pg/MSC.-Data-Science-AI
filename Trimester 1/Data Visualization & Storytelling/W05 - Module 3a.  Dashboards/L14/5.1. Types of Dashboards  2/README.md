@@ -135,3 +135,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Why Ireland Appears Large in Aviation Emissions](./Why%20Ireland%20Appears%20Large%20in%20Aviation%20Emissions.md)
 
 ## [Critical Lesson](./Critical%20Lesson.md)
+
+## [Information Balance in the Dashboard](./Information%20Balance%20in%20the%20Dashboard.md)
