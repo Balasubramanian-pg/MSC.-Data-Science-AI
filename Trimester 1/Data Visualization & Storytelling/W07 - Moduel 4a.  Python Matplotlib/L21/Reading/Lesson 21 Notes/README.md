@@ -73,3 +73,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Mathematical Visualization](./Mathematical%20Visualization.md)
 
 ## [Why Matplotlib Became Foundational](./Why%20Matplotlib%20Became%20Foundational.md)
+
+## [Common Beginner Mistakes](./Common%20Beginner%20Mistakes.md)
