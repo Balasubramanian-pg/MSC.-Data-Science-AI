@@ -287,3 +287,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why the Original Title Failed](./Why%20the%20Original%20Title%20Failed.md)
 
 ## [Why the Revised Title Works](./Why%20the%20Revised%20Title%20Works.md)
+
+## [Cognitive Anchoring](./Cognitive%20Anchoring.md)
