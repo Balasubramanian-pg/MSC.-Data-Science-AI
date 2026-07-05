@@ -119,3 +119,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Design Principle](./Important%20Design%20Principle.md)
 
 ## [5. Position on Common Scale](./5.%20Position%20on%20Common%20Scale.md)
+
+## [The Most Effective Encoding](./The%20Most%20Effective%20Encoding.md)
