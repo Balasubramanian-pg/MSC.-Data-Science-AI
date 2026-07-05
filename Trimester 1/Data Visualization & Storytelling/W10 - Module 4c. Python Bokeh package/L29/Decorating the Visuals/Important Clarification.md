@@ -1,28 +1,12 @@
 # Important Clarification
 
-The transcript says:
+The instructor says:
 
-> "25 percent"
+> "circles representing the objects"
 
-But Bokeh uses:
+Meaning:
 
-- pt
-    
-- em
-    
-- px
+- scatter glyph corresponds to second variable
     
 
-not percentages.
-
-Correct usage:
-
-```python
-"25pt"
-```
-
-or:
-
-```python
-"1.5em"
-```
+But semantically the legend determines interpretation.
