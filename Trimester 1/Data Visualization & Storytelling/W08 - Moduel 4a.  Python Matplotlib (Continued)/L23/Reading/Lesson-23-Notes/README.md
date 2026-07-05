@@ -333,3 +333,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Overfitting Problem](./Overfitting%20Problem.md)
 
 ## [Polynomial Degree Intuition](./Polynomial%20Degree%20Intuition.md)
+
+## [Mathematical Foundation](./Mathematical%20Foundation.md)
