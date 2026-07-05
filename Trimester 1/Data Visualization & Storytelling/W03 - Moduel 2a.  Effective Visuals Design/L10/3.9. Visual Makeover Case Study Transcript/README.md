@@ -56,3 +56,5 @@ The transcript introduces this challenge directly.
 ## [The Core Tradeoff](./The%20Core%20Tradeoff.md)
 
 ## [Real-World Visualization Decision Tree](./Real-World%20Visualization%20Decision%20Tree.md)
+
+## [Important Professional Insight](./Important%20Professional%20Insight.md)
