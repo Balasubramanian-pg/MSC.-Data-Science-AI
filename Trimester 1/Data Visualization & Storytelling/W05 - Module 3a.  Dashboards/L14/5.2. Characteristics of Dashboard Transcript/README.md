@@ -13,3 +13,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Important Clarification](./Important%20Clarification.md)
 
 ## [Historical Analogy](./Historical%20Analogy.md)
+
+## [Dashboard Mental Model](./Dashboard%20Mental%20Model.md)
