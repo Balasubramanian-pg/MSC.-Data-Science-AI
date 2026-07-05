@@ -35,3 +35,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Predict](./Predict.md)
 
 ## [6. Extracting Top TF-IDF Features for the Document](./6.%20Extracting%20Top%20TF-IDF%20Features%20for%20the%20Document.md)
+
+## [Convert the sparse vector of the single document to a dense array](./Convert%20the%20sparse%20vector%20of%20the%20single%20document%20to%20a%20dense%20array.md)
