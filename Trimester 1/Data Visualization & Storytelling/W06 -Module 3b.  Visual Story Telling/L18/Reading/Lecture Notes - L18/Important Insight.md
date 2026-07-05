@@ -1,5 +1,13 @@
 # Important Insight
 
-Stories simulate experience.
+Visualizations are not neutral.
 
-That is why they feel immersive.
+They influence:
+
+- attention,
+    
+- emotional response,
+    
+- interpretation,
+    
+- and belief formation.
