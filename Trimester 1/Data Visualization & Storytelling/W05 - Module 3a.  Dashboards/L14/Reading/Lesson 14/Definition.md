@@ -1,5 +1,13 @@
 # Definition
 
-Dashboards often require continuously updated information.
+Dashboards should allow users to:
 
-The required freshness depends on context.
+- filter,
+    
+- drill down,
+    
+- compare,
+    
+- explore,
+    
+- and personalize views.
