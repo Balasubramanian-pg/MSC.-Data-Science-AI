@@ -49,3 +49,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Outliers Distort Interpretation](./Outliers%20Distort%20Interpretation.md)
 
 ## [Bar Charts](./Bar%20Charts.md)
+
+## [Conceptual Purpose](./Conceptual%20Purpose.md)
