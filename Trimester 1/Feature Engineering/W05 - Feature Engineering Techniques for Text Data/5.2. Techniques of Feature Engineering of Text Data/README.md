@@ -69,3 +69,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [4. Part-of-Speech (POS) Tagging](./4.%20Part-of-Speech%20%28POS%29%20Tagging.md)
 
 ## [Note: In a real environment, you must download the NLTK data bundles first:](./Note%20-%20In%20a%20real%20environment%2C%20you%20must%20download%20the%20NLTK%20data%20bundles%20first%20-.md)
+
+## [nltk.download('punkt')](./nltk.download%28%27punkt%27%29.md)
