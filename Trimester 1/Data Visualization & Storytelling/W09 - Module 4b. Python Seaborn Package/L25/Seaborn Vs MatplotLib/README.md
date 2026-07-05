@@ -165,3 +165,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [This injects an extra layer of context that doesn't exist in standard plots.](./This%20injects%20an%20extra%20layer%20of%20context%20that%20doesn%27t%20exist%20in%20standard%20plots.md)
 
 ## [Step C: Use Matplotlib to tune presentation titles, legends, and layouts](./Step%20C%20-%20Use%20Matplotlib%20to%20tune%20presentation%20titles%2C%20legends%2C%20and%20layouts.md)
+
+## [Position the legend cleanly within the plot area](./Position%20the%20legend%20cleanly%20within%20the%20plot%20area.md)
