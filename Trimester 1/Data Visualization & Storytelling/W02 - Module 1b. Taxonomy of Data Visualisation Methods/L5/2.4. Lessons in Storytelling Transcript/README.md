@@ -18,3 +18,5 @@
 ## [6. Expected Audience Response](./6.%20Expected%20Audience%20Response.md)
 
 ## [7. Delivery Medium Matters](./7.%20Delivery%20Medium%20Matters.md)
+
+## [8. Matching Visuals to Communication Intent](./8.%20Matching%20Visuals%20to%20Communication%20Intent.md)
