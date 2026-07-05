@@ -26,3 +26,5 @@
 ## [10. Visual Hierarchy](./10.%20Visual%20Hierarchy.md)
 
 ## [11. Gestalt Principles](./11.%20Gestalt%20Principles.md)
+
+## [12. Pre-Attentive Attributes](./12.%20Pre-Attentive%20Attributes.md)
