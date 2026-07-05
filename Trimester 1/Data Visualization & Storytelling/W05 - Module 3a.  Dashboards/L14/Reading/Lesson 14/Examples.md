@@ -1,9 +1,9 @@
 # Examples
 
-- Network operations center
-    
-- Manufacturing systems
-    
-- Cybersecurity monitoring
-    
-- Hospital ICU monitoring
+|Use Case|Refresh Requirement|
+|---|---|
+|Stock trading|Milliseconds|
+|Cybersecurity|Seconds|
+|Logistics|Minutes|
+|Retail sales|Hourly|
+|Executive reports|Daily/weekly|
