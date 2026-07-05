@@ -71,3 +71,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Define figure](./Define%20figure.md)
 
 ## [Create vertical bars](./Create%20vertical%20bars.md)
+
+## [What `x_range=fruits` Does](./What%20%60x_range%3Dfruits%60%20Does.md)
