@@ -157,3 +157,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Use Minimal Clutter](./Use%20Minimal%20Clutter.md)
 
 ## [Use Motion Carefully](./Use%20Motion%20Carefully.md)
+
+## [Use Color Sparingly](./Use%20Color%20Sparingly.md)
