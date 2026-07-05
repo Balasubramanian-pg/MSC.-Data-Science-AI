@@ -1,38 +1,22 @@
 # Most Important Takeaway
 
-Bokeh customization is hierarchical:
+This section teaches:
 
 ```mermaid
-flowchart TD
-    A[Figure]
-    
-    A --> B[Glyphs]
-    A --> C[Axes]
-    A --> D[Grid]
-    A --> E[Title]
+flowchart LR
+    A[Data]
+    B[Plot]
+    C[Readability]
+    D[Interpretability]
 
-    B --> F[fill_color]
-    B --> G[line_color]
-
-    C --> H[axis_line_color]
-    C --> I[label_properties]
+    A --> B
+    B --> C
+    C --> D
 ```
 
-Mastering Bokeh means understanding:
+A graph is only useful if humans can decode it efficiently.
+This section focuses entirely on title customization.
 
-- which object owns which property
-    
-- and how those objects relate structurally.
+At first glance this seems cosmetic, but in professional visualization systems, titles are actually part of information architecture.
 
-This section goes deeper into axis customization and introduces:
-
-- tick styling
-    
-- label styling
-    
-- label orientation
-    
-- tick formatting
-    
-
-This is where visualization starts becoming presentation engineering, not just plotting.
+A bad title can make a correct graph misleading or useless.
