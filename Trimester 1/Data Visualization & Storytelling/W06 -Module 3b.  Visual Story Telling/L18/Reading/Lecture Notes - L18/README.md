@@ -331,3 +331,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why This Happens](./Why%20This%20Happens.md)
 
 ## [Final Summary of Key Takeaways](./Final%20Summary%20of%20Key%20Takeaways.md)
+
+## [1. Storytelling Is a Cognitive Tool](./1.%20Storytelling%20Is%20a%20Cognitive%20Tool.md)
