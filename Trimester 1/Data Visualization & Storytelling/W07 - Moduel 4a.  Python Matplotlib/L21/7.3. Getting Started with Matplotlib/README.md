@@ -231,3 +231,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Vectorization Matters Again](./Why%20Vectorization%20Matters%20Again.md)
 
 ## [Define linear equation](./Define%20linear%20equation.md)
+
+## [Plot the line](./Plot%20the%20line.md)
