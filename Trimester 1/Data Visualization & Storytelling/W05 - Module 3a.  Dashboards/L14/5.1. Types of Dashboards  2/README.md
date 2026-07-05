@@ -89,3 +89,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Dashboard Example: CO₂ Emissions Dashboard](./Dashboard%20Example%20-%20CO%E2%82%82%20Emissions%20Dashboard.md)
 
 ## [Dashboards as Insight-to-Action Systems](./Dashboards%20as%20Insight-to-Action%20Systems.md)
+
+## [Data Pipeline of Decision-Making](./Data%20Pipeline%20of%20Decision-Making.md)
