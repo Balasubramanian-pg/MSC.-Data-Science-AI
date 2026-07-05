@@ -11,3 +11,5 @@ This section explains how to create multiple related plots from a Pandas DataFra
 ## [Step 1: Plot a Single Column](./Step%201%20-%20Plot%20a%20Single%20Column.md)
 
 ## [Why Use Blue for Rainfall?](./Why%20Use%20Blue%20for%20Rainfall.md)
+
+## [Step 2: Problem With Separate Graphs](./Step%202%20-%20Problem%20With%20Separate%20Graphs.md)
