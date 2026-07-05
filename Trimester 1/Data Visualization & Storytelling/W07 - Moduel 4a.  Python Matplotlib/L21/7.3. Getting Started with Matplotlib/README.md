@@ -187,3 +187,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [`linestyle='--'`](./%60linestyle%3D%27--%27%60.md)
 
 ## [`label='cosine'`](./%60label%3D%27cosine%27%60.md)
+
+## [Why Styling Matters](./Why%20Styling%20Matters.md)
