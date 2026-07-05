@@ -263,3 +263,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Operational Dashboard Logic](./Operational%20Dashboard%20Logic.md)
 
 ## [Important Organizational Insight](./Important%20Organizational%20Insight.md)
+
+## [Key Tradeoff Dimensions](./Key%20Tradeoff%20Dimensions.md)
