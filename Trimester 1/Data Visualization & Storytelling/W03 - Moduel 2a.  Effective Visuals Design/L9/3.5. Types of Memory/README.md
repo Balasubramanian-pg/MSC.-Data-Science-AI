@@ -91,3 +91,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Pre-Attentive Attributes and Memory](./Pre-Attentive%20Attributes%20and%20Memory.md)
 
 ## [Without Pre-Attentive Design](./Without%20Pre-Attentive%20Design.md)
+
+## [With Pre-Attentive Design](./With%20Pre-Attentive%20Design.md)
