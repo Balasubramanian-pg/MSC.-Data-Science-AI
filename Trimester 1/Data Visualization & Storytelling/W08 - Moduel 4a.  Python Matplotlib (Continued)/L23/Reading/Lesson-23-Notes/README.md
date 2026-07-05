@@ -175,3 +175,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Overplotting](./Overplotting.md)
 
 ## [Missing Dates](./Missing%20Dates.md)
+
+## [Datetime Parsing Failures](./Datetime%20Parsing%20Failures.md)
