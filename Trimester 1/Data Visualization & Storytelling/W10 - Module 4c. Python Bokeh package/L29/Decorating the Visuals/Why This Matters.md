@@ -1,7 +1,13 @@
 # Why This Matters
 
-Human readability.
+Without categorical axes:
 
-Visualization is fundamentally:
+```text
+1 2 3 4 5
+```
 
-> cognitive compression
+With categorical axes:
+
+```text
+Delta | Emirates | Lufthansa
+```
