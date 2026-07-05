@@ -831,3 +831,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Important Architectural Insight](./Important%20Architectural%20Insight.md)
 
 ## [Built-In Themes Mentioned](./Built-In%20Themes%20Mentioned.md)
+
+## [Night Sky](./Night%20Sky.md)
