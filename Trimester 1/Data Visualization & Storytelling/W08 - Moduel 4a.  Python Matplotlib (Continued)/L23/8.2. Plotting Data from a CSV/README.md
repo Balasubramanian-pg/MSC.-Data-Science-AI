@@ -33,3 +33,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why GDP Was Chosen as X-Axis](./Why%20GDP%20Was%20Chosen%20as%20X-Axis.md)
 
 ## [Why Bubble Size Matters](./Why%20Bubble%20Size%20Matters.md)
+
+## [Why Scaling Is Necessary](./Why%20Scaling%20Is%20Necessary.md)
