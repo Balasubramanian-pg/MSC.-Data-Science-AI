@@ -337,3 +337,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [2. Simplicity Improves Understanding](./2.%20Simplicity%20Improves%20Understanding.md)
 
 ## [3. Visual Hierarchy Is Critical](./3.%20Visual%20Hierarchy%20Is%20Critical.md)
+
+## [Core Rule](./Core%20Rule.md)
