@@ -197,3 +197,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [`2, 1`](./%602%2C%201%60.md)
 
 ## [`fig`](./%60fig%60.md)
+
+## [`axes`](./%60axes%60.md)
