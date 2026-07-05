@@ -29,3 +29,5 @@
 ## [3.3 Visual Communication vs Textual Communication](./3.3%20Visual%20Communication%20vs%20Textual%20Communication.md)
 
 ## [4. Case Study: Lok Sabha Election Voter Turnout](./4.%20Case%20Study%20-%20Lok%20Sabha%20Election%20Voter%20Turnout.md)
+
+## [4.1 Text-Based Representation](./4.1%20Text-Based%20Representation.md)
