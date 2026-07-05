@@ -511,3 +511,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Why `format="0"`?](./Why%20%60format%3D0%60.md)
 
 ## [Formatting Examples](./Formatting%20Examples.md)
+
+## [Important Observation](./Important%20Observation.md)
