@@ -287,3 +287,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Purpose of Legends](./Purpose%20of%20Legends.md)
 
 ## [How Legends Work Internally](./How%20Legends%20Work%20Internally.md)
+
+## [Visualization Pipeline with Enhancements](./Visualization%20Pipeline%20with%20Enhancements.md)
