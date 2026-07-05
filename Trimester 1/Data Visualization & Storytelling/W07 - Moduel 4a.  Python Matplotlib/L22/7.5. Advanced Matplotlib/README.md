@@ -43,3 +43,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Engineering Insight](./Engineering%20Insight.md)
 
 ## [Histogram Failure Modes](./Histogram%20Failure%20Modes.md)
+
+## [Misleading Bin Width](./Misleading%20Bin%20Width.md)
