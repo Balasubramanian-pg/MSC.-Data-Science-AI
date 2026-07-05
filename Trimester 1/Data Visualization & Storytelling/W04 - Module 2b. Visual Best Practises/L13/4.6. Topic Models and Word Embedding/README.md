@@ -153,3 +153,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Human Interpretation Layer](./Human%20Interpretation%20Layer.md)
 
 ## [Semantic Similarity Between Topics](./Semantic%20Similarity%20Between%20Topics.md)
+
+## [Topic Space Geometry](./Topic%20Space%20Geometry.md)
