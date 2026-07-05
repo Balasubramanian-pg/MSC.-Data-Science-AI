@@ -23,3 +23,5 @@
 ## [3. Why Visualization Matters](./3.%20Why%20Visualization%20Matters.md)
 
 ## [3.1 Human Cognitive Processing](./3.1%20Human%20Cognitive%20Processing.md)
+
+## [3.2 Information Retention](./3.2%20Information%20Retention.md)
