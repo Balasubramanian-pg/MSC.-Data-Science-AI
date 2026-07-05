@@ -149,3 +149,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [0. SETUP: Generating Consolidated Student Performance Data](./0.%20SETUP%20-%20Generating%20Consolidated%20Student%20Performance%20Data.md)
 
 ## [Calculate global baseline metrics for our Matplotlib annotation layer](./Calculate%20global%20baseline%20metrics%20for%20our%20Matplotlib%20annotation%20layer.md)
+
+## [1. THE HYBRID FRAMEWORK: Seaborn Plotting + Matplotlib Customization](./1.%20THE%20HYBRID%20FRAMEWORK%20-%20Seaborn%20Plotting%20%2B%20Matplotlib%20Customization.md)
