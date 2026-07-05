@@ -43,3 +43,5 @@ This section explains how to create multiple related plots from a Pandas DataFra
 ## [Engineering Insight](./Engineering%20Insight.md)
 
 ## [Common Beginner Mistakes](./Common%20Beginner%20Mistakes.md)
+
+## [1. Forgetting ShareX](./1.%20Forgetting%20ShareX.md)
