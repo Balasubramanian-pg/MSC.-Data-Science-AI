@@ -159,3 +159,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Example of Misleading Alignment](./Example%20of%20Misleading%20Alignment.md)
 
 ## [Good Dual-Axis Design Principles](./Good%20Dual-Axis%20Design%20Principles.md)
+
+## [The Deeper Problem: Humans See Patterns Everywhere](./The%20Deeper%20Problem%20-%20Humans%20See%20Patterns%20Everywhere.md)
