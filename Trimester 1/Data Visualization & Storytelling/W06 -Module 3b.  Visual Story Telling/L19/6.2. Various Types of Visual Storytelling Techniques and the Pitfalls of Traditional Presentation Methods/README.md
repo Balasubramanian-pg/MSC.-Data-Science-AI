@@ -61,3 +61,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Key Analytical Principle: Clustering](./The%20Key%20Analytical%20Principle%20-%20Clustering.md)
 
 ## [Simplified Interpretation Flow](./Simplified%20Interpretation%20Flow.md)
+
+## [Why This Was a True Data Story](./Why%20This%20Was%20a%20True%20Data%20Story.md)
