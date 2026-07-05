@@ -29,3 +29,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Example Visualization Types](./Example%20Visualization%20Types.md)
 
 ## [Why Versatility Matters](./Why%20Versatility%20Matters.md)
+
+## [B. High Customizability](./B.%20High%20Customizability.md)
