@@ -17,3 +17,5 @@ I have organized the code into a logical, executable structure using a mock data
 ## [Setting a seed ensures the random data is reproducible every time you run it](./Setting%20a%20seed%20ensures%20the%20random%20data%20is%20reproducible%20every%20time%20you%20run%20it.md)
 
 ## [Apply Seaborn's default aesthetic theme globally for cleaner visuals](./Apply%20Seaborn%27s%20default%20aesthetic%20theme%20globally%20for%20cleaner%20visuals.md)
+
+## [1 & 2. Basic Syntax & Core Philosophical Differences](./1%20%26%202.%20Basic%20Syntax%20%26%20Core%20Philosophical%20Differences.md)
