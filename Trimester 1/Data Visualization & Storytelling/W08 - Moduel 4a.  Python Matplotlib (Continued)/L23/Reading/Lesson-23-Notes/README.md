@@ -319,3 +319,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Understanding `np.poly1d()`](./Understanding%20%60np.poly1d%28%29%60.md)
 
 ## [Why This Matters](./Why%20This%20Matters.md)
+
+## [Example Workflow](./Example%20Workflow.md)
