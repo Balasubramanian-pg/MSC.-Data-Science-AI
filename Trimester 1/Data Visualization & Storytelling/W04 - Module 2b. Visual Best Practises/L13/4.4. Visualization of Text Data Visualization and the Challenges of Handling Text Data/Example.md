@@ -1,13 +1,13 @@
 # Example
 
-Before:
-
 ```text
-Apple APPLE apple
+"The company lost 120 million dollars."
 ```
 
-After:
+Possible strategies:
 
-```text
-apple apple apple
-```
+|Strategy|Purpose|
+|---|---|
+|Remove numbers|Simplify vocabulary|
+|Convert to text|Preserve meaning|
+|Replace with placeholder|Generalize patterns|
