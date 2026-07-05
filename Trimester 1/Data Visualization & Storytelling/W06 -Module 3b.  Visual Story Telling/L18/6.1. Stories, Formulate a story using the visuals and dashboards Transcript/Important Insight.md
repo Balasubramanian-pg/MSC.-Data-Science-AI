@@ -1,4 +1,5 @@
 # Important Insight
 
-Communication failures in high-stakes environments can become:  
-systemic failures.
+If critical information is visually weak,  
+the brain may unconsciously classify it as:  
+less important.
