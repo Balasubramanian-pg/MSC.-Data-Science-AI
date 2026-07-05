@@ -90,3 +90,5 @@
 ## [6.1 Simple vs Ordered Bar Charts](./6.1%20Simple%20vs%20Ordered%20Bar%20Charts.md)
 
 ## [6.2 When to Use Horizontal Bar Charts](./6.2%20When%20to%20Use%20Horizontal%20Bar%20Charts.md)
+
+## [6.3 Why Ordering Matters](./6.3%20Why%20Ordering%20Matters.md)
