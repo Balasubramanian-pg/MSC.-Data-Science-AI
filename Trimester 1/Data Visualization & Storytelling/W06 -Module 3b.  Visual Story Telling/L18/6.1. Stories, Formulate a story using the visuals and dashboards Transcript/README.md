@@ -127,3 +127,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Definition](./Definition.md)
 
 ## [Important Design Principle](./Important%20Design%20Principle.md)
+
+## [Common Failure](./Common%20Failure.md)
