@@ -15,3 +15,5 @@
 ## [2.1 Definition of Exploratory Analysis](./2.1%20Definition%20of%20Exploratory%20Analysis.md)
 
 ## [Core Objective of EDA](./Core%20Objective%20of%20EDA.md)
+
+## [2.2 Goals of Exploratory Data Analysis (EDA)](./2.2%20Goals%20of%20Exploratory%20Data%20Analysis%20%28EDA%29.md)
