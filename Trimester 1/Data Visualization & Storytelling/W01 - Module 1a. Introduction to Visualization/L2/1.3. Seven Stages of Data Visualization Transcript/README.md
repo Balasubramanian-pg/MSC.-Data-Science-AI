@@ -56,3 +56,5 @@
 ## [Refinements Introduced](./Refinements%20Introduced.md)
 
 ## [Result](./Result.md)
+
+## [3.7 Stage 7: Interaction and Feedback](./3.7%20Stage%207%20-%20Interaction%20and%20Feedback.md)
