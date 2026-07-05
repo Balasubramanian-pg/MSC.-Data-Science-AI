@@ -1,9 +1,7 @@
 # Important Insight
 
-Topic count is usually:
+Distance in t-SNE space approximately reflects:
 
 ```text
-a modeling choice
+semantic similarity
 ```
-
-not an objectively fixed truth.
