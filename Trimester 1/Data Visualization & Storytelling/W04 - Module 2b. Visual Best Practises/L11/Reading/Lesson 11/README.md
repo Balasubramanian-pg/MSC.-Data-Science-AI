@@ -123,3 +123,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Length Encoding](./Length%20Encoding.md)
 
 ## [Why Bar Charts Work So Well](./Why%20Bar%20Charts%20Work%20So%20Well.md)
+
+## [Angle Encoding](./Angle%20Encoding.md)
