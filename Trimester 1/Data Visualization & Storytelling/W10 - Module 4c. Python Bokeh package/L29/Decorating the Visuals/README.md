@@ -31,3 +31,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [5. Customization Categories](./5.%20Customization%20Categories.md)
 
 ## [6. Key Bokeh vs. Matplotlib/Seaborn Differences](./6.%20Key%20Bokeh%20vs.%20MatplotlibSeaborn%20Differences.md)
+
+## [7. Practice Exercise](./7.%20Practice%20Exercise.md)
