@@ -125,3 +125,5 @@ week: W05 - Module 3a.  Dashboards
 ## [4. Situational Awareness](./4.%20Situational%20Awareness.md)
 
 ## [Modern Dashboard Evolution](./Modern%20Dashboard%20Evolution.md)
+
+## [Final Takeaways](./Final%20Takeaways.md)
