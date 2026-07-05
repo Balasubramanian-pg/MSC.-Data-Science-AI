@@ -73,3 +73,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Big Numbers Work](./Why%20Big%20Numbers%20Work.md)
 
 ## [Pie and Donut Charts](./Pie%20and%20Donut%20Charts.md)
+
+## [Composition Visualization](./Composition%20Visualization.md)
