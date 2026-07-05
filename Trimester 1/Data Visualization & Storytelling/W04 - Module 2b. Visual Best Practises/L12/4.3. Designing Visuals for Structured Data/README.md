@@ -67,3 +67,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Bar Chart Perception Pipeline](./Bar%20Chart%20Perception%20Pipeline.md)
 
 ## [Big Number Visuals](./Big%20Number%20Visuals.md)
+
+## [KPI Emphasis](./KPI%20Emphasis.md)
