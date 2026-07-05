@@ -13,3 +13,5 @@
 ## [5.1.6. Widgets for Dynamic Filtering](./5.1.6.%20Widgets%20for%20Dynamic%20Filtering.md)
 
 ## [5.1.7. Layouts and Cognitive Load](./5.1.7.%20Layouts%20and%20Cognitive%20Load.md)
+
+## [5.1.8. Step-by-Step Construction Example](./5.1.8.%20Step-by-Step%20Construction%20Example.md)
