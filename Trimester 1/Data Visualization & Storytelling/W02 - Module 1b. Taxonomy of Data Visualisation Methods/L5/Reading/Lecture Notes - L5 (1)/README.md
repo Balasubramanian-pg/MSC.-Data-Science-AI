@@ -30,3 +30,5 @@
 ## [12. Targeted Color in Stacked Charts](./12.%20Targeted%20Color%20in%20Stacked%20Charts.md)
 
 ## [13. Bidirectional Visual Design](./13.%20Bidirectional%20Visual%20Design.md)
+
+## [14. Eliminating Chartjunk](./14.%20Eliminating%20Chartjunk.md)
