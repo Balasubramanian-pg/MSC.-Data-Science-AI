@@ -11,3 +11,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [1. Designing Visuals](./1.%20Designing%20Visuals.md)
 
 ## [The Goal of Visualization](./The%20Goal%20of%20Visualization.md)
+
+## [Traditional Mistake](./Traditional%20Mistake.md)
