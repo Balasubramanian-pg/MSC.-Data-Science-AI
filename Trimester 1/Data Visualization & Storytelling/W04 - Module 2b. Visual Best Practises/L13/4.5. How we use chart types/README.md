@@ -43,3 +43,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Strengths of Word Clouds](./Important%20Strengths%20of%20Word%20Clouds.md)
 
 ## [Fast Theme Recognition](./Fast%20Theme%20Recognition.md)
+
+## [Visually Engaging](./Visually%20Engaging.md)
