@@ -19,3 +19,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Context Matters](./Why%20Context%20Matters.md)
 
 ## [Contextual Meaning Model](./Contextual%20Meaning%20Model.md)
+
+## [Example from the Lecture](./Example%20from%20the%20Lecture.md)
