@@ -55,3 +55,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Example Dataset](./Example%20Dataset.md)
 
 ## [Why Pandas Plotting Exists](./Why%20Pandas%20Plotting%20Exists.md)
+
+## [Horizontal Bar Charts](./Horizontal%20Bar%20Charts.md)
