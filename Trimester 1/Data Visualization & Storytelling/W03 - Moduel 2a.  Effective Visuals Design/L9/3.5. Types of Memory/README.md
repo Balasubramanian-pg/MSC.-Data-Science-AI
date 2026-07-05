@@ -227,3 +227,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Final Visualization Insight](./Final%20Visualization%20Insight.md)
 
 ## [Most Important Takeaway](./Most%20Important%20Takeaway.md)
+
+## [Final Mental Model](./Final%20Mental%20Model.md)
