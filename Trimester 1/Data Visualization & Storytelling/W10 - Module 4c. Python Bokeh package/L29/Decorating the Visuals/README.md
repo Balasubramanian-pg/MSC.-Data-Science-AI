@@ -395,3 +395,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Common Axis Properties](./Common%20Axis%20Properties.md)
 
 ## [Styling Axis Lines](./Styling%20Axis%20Lines.md)
+
+## [Styling Tick Labels](./Styling%20Tick%20Labels.md)
