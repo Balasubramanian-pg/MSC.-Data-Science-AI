@@ -291,3 +291,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Weak Approach](./Weak%20Approach.md)
 
 ## [Strong Approach](./Strong%20Approach.md)
+
+## [7. Exploring Example Libraries](./7.%20Exploring%20Example%20Libraries.md)
