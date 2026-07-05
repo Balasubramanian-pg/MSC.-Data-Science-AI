@@ -93,3 +93,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Visual Storytelling Matters](./Why%20Visual%20Storytelling%20Matters.md)
 
 ## [Core Idea](./Core%20Idea.md)
+
+## [Visual Storytelling Pipeline](./Visual%20Storytelling%20Pipeline.md)
