@@ -35,3 +35,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Example](./Example.md)
 
 ## [Important Distinction](./Important%20Distinction.md)
+
+## [Storytelling and Action](./Storytelling%20and%20Action.md)
