@@ -37,3 +37,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Hidden Design Challenge](./The%20Hidden%20Design%20Challenge.md)
 
 ## [Dimensions of Narrative Storytelling](./Dimensions%20of%20Narrative%20Storytelling.md)
+
+## [1. Genres](./1.%20Genres.md)
