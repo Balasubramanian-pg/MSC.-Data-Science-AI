@@ -84,3 +84,5 @@ The transcript introduces this challenge directly.
 ## [What Is Positioning?](./What%20Is%20Positioning.md)
 
 ## [Positioning Is Attention Engineering](./Positioning%20Is%20Attention%20Engineering.md)
+
+## [Human Visual Reading Pattern](./Human%20Visual%20Reading%20Pattern.md)
