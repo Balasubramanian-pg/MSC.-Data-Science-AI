@@ -42,3 +42,5 @@
 ## [3.4 Stage 4: Mining Data](./3.4%20Stage%204%20-%20Mining%20Data.md)
 
 ## [Key Mining Questions](./Key%20Mining%20Questions.md)
+
+## [Analytical Insight](./Analytical%20Insight.md)
