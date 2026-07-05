@@ -333,3 +333,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Sequential Data](./Sequential%20Data.md)
 
 ## [Categorical Data](./Categorical%20Data.md)
+
+## [Avoid Arbitrary Emphasis](./Avoid%20Arbitrary%20Emphasis.md)
