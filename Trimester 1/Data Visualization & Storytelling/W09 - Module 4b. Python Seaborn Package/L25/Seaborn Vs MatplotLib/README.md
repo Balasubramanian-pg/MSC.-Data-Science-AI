@@ -35,3 +35,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Apply Seaborn's professional global aesthetic styling parameters](./Apply%20Seaborn%27s%20professional%20global%20aesthetic%20styling%20parameters.md)
 
 ## [Initialize the Matplotlib canvas configuration](./Initialize%20the%20Matplotlib%20canvas%20configuration.md)
+
+## [One clean line handles data mapping, categorization, and statistical inference](./One%20clean%20line%20handles%20data%20mapping%2C%20categorization%2C%20and%20statistical%20inference.md)
