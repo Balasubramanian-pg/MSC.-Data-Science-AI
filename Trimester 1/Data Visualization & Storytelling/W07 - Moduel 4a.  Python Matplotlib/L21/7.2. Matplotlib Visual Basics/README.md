@@ -11,3 +11,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Notebooks Became Dominant](./Why%20Notebooks%20Became%20Dominant.md)
 
 ## [Notebook Workflow](./Notebook%20Workflow.md)
+
+## [2. Google Colab](./2.%20Google%20Colab.md)
