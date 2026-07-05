@@ -84,3 +84,5 @@
 ## [5.2 Focus Principle](./5.2%20Focus%20Principle.md)
 
 ## [5.3 Figure-Ground Principle](./5.3%20Figure-Ground%20Principle.md)
+
+## [6. Chart Selection and Design Thinking](./6.%20Chart%20Selection%20and%20Design%20Thinking.md)
