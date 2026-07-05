@@ -71,3 +71,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Line Width](./Line%20Width.md)
 
 ## [Dash Cap Styles](./Dash%20Cap%20Styles.md)
+
+## [Spines](./Spines.md)
