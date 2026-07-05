@@ -243,3 +243,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Analytical Dashboard Goal](./Analytical%20Dashboard%20Goal.md)
 
 ## [2. Level of Interactivity](./2.%20Level%20of%20Interactivity.md)
+
+## [Strategic Dashboard Interaction](./Strategic%20Dashboard%20Interaction.md)
