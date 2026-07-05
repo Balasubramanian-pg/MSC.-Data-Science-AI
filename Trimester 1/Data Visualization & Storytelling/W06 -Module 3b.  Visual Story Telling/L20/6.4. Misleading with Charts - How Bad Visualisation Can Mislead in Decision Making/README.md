@@ -345,3 +345,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The COVID Case Map Example](./The%20COVID%20Case%20Map%20Example.md)
 
 ## [Color as a Pre-attentive Attribute](./Color%20as%20a%20Pre-attentive%20Attribute.md)
+
+## [Correct Use of Saturation](./Correct%20Use%20of%20Saturation.md)
