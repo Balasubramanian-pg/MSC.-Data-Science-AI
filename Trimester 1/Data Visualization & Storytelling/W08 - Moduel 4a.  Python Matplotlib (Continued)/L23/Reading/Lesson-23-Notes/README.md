@@ -31,3 +31,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Common CSV Problems](./Common%20CSV%20Problems.md)
 
 ## [Delimiter Issues](./Delimiter%20Issues.md)
+
+## [Encoding Problems](./Encoding%20Problems.md)
