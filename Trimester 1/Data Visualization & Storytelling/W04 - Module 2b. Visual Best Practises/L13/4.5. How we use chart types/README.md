@@ -257,3 +257,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Joint Plots Are Powerful](./Why%20Joint%20Plots%20Are%20Powerful.md)
 
 ## [Polarity and Subjectivity](./Polarity%20and%20Subjectivity.md)
+
+## [Two Different Semantic Dimensions](./Two%20Different%20Semantic%20Dimensions.md)
