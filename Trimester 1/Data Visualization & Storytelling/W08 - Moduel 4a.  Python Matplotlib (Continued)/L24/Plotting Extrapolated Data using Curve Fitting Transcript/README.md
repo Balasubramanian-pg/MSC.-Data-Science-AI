@@ -37,3 +37,5 @@ Observed Data → Fit Function → Predict Future
 ## [Big Picture Pipeline](./Big%20Picture%20Pipeline.md)
 
 ## [Why Visualization Matters First](./Why%20Visualization%20Matters%20First.md)
+
+## [Example Trends](./Example%20Trends.md)
