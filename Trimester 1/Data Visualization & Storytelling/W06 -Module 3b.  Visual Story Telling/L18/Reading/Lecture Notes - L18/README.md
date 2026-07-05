@@ -19,3 +19,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Human Memory Is Associative](./Human%20Memory%20Is%20Associative.md)
 
 ## [Memory Architecture of Storytelling](./Memory%20Architecture%20of%20Storytelling.md)
+
+## [2. Persuasion](./2.%20Persuasion.md)
