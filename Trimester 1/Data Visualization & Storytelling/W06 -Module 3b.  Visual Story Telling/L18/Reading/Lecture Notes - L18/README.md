@@ -201,3 +201,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [SUCCESS Acronym](./SUCCESS%20Acronym.md)
 
 ## [1. Simple](./1.%20Simple.md)
+
+## [Cognitive Principle](./Cognitive%20Principle.md)
