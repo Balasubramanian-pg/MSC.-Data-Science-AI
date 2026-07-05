@@ -163,3 +163,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [3. Plotting Before Defining Data](./3.%20Plotting%20Before%20Defining%20Data.md)
 
 ## [4. Over-customization](./4.%20Over-customization.md)
+
+## [Strategic Insight](./Strategic%20Insight.md)
