@@ -277,3 +277,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [This Is a Cognitive Failure, Not Just a Design Failure](./This%20Is%20a%20Cognitive%20Failure%2C%20Not%20Just%20a%20Design%20Failure.md)
 
 ## [Visual Hierarchy Is Decision Architecture](./Visual%20Hierarchy%20Is%20Decision%20Architecture.md)
+
+## [Important Organizational Lesson](./Important%20Organizational%20Lesson.md)
