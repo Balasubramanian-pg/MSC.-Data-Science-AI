@@ -115,3 +115,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Matplotlib](./Matplotlib.md)
 
 ## [Global Plot Styling](./Global%20Plot%20Styling.md)
+
+## [What This Actually Does](./What%20This%20Actually%20Does.md)
