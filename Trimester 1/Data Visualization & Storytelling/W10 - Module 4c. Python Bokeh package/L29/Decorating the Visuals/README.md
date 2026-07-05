@@ -447,3 +447,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Solution: Rotate Labels](./Solution%20-%20Rotate%20Labels.md)
 
 ## [Why Rotation Matters](./Why%20Rotation%20Matters.md)
+
+## [Bokeh Label Orientation](./Bokeh%20Label%20Orientation.md)
