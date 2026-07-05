@@ -1,11 +1,9 @@
 # Why This Matters
 
-Distribution shape determines:
+Even without reading the content:
 
-- interpretation
-    
-- statistical validity
-    
-- modeling assumptions
-    
-- anomaly detection behavior
+```text
+the communication pattern itself reveals abnormal organizational behavior
+```
+
+This is one of the deepest insights in behavioral analytics.
