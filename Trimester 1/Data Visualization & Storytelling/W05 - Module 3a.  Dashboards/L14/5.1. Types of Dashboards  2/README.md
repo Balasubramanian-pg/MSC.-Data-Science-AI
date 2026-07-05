@@ -57,3 +57,5 @@ week: W05 - Module 3a.  Dashboards
 ## [5. Customized](./5.%20Customized.md)
 
 ## [Role-Based Dashboarding](./Role-Based%20Dashboarding.md)
+
+## [Dashboard Design Integrates Multiple Disciplines](./Dashboard%20Design%20Integrates%20Multiple%20Disciplines.md)
