@@ -71,3 +71,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Common Axis Manipulation Techniques](./Common%20Axis%20Manipulation%20Techniques.md)
 
 ## [The Psychological Mechanism](./The%20Psychological%20Mechanism.md)
+
+## [“Visualization Noise” and Decorative Distortion](./%E2%80%9CVisualization%20Noise%E2%80%9D%20and%20Decorative%20Distortion.md)
