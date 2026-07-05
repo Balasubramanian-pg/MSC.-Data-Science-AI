@@ -19,3 +19,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why CSV Became Dominant](./Why%20CSV%20Became%20Dominant.md)
 
 ## [Reading CSV Files with Pandas](./Reading%20CSV%20Files%20with%20Pandas.md)
+
+## [What `read_csv()` Actually Does](./What%20%60read_csv%28%29%60%20Actually%20Does.md)
