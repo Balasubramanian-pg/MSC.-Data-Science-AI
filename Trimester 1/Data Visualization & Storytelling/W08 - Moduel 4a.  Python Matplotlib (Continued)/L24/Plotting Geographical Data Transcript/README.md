@@ -119,3 +119,5 @@ This is foundational to:
 ## [Common Beginner Mistakes](./Common%20Beginner%20Mistakes.md)
 
 ## [1. Missing Geometry](./1.%20Missing%20Geometry.md)
+
+## [2. Swapping Latitude/Longitude](./2.%20Swapping%20LatitudeLongitude.md)
