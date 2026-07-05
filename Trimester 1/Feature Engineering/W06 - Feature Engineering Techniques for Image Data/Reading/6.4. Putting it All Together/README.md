@@ -21,3 +21,5 @@ week: W06 - Feature Engineering Techniques for Image Data
 ## [6.4.7. Feature Extraction Implementation Workflow](./6.4.7.%20Feature%20Extraction%20Implementation%20Workflow.md)
 
 ## [6.4.8. Reviewing the Decision Boundary](./6.4.8.%20Reviewing%20the%20Decision%20Boundary.md)
+
+## [6.4.9. The Most Common Misinterpretations](./6.4.9.%20The%20Most%20Common%20Misinterpretations.md)
