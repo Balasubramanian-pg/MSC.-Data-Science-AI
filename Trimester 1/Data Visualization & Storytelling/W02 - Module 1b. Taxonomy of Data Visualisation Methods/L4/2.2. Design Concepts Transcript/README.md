@@ -14,3 +14,5 @@
 ## [4. The Three Pillars of Visual Design](./4.%20The%20Three%20Pillars%20of%20Visual%20Design.md)
 
 ## [5. Affordances](./5.%20Affordances.md)
+
+## [6. Affordance Example: Marriage Rates by Education](./6.%20Affordance%20Example%20-%20Marriage%20Rates%20by%20Education.md)
