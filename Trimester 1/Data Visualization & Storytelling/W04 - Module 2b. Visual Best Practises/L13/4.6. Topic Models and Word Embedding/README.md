@@ -157,3 +157,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Topic Space Geometry](./Topic%20Space%20Geometry.md)
 
 ## [Topic Distance Model](./Topic%20Distance%20Model.md)
+
+## [Important Hidden Insight](./Important%20Hidden%20Insight.md)
