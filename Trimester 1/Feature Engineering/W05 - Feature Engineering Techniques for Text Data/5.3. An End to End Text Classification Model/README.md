@@ -49,3 +49,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [5. Visualizing Interpretability](./5.%20Visualizing%20Interpretability.md)
 
 ## [plot_top_tfidf_features(dense_vector, feature_names)](./plot_top_tfidf_features%28dense_vector%2C%20feature_names%29.md)
+
+## [6. Practical Engineering Examples](./6.%20Practical%20Engineering%20Examples.md)
