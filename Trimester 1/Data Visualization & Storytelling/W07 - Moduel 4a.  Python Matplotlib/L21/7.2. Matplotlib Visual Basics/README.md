@@ -19,3 +19,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Advantages of Colab](./Advantages%20of%20Colab.md)
 
 ## [Why Colab Became Popular](./Why%20Colab%20Became%20Popular.md)
+
+## [3. Notebook Cell Types](./3.%20Notebook%20Cell%20Types.md)
