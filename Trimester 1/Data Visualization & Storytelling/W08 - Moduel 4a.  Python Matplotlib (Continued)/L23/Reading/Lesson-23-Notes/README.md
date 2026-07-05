@@ -339,3 +339,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Machine Learning Connection](./Machine%20Learning%20Connection.md)
 
 ## [Real-World Uses](./Real-World%20Uses.md)
+
+## [Blind Extrapolation](./Blind%20Extrapolation.md)
