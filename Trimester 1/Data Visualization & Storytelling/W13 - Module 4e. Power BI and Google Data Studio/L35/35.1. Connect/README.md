@@ -17,3 +17,5 @@
 ## [35.2.8. Waterfall Charts for Cumulative Contribution](./35.2.8.%20Waterfall%20Charts%20for%20Cumulative%20Contribution.md)
 
 ## [35.2.9. Principles of Effective Dashboard Design](./35.2.9.%20Principles%20of%20Effective%20Dashboard%20Design.md)
+
+## [35.2.10. Common Dashboarding Mistakes to Avoid](./35.2.10.%20Common%20Dashboarding%20Mistakes%20to%20Avoid.md)
