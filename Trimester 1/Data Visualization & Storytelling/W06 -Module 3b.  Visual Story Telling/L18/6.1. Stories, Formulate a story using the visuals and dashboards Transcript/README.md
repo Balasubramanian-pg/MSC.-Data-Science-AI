@@ -225,3 +225,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Common Misunderstanding](./Common%20Misunderstanding.md)
 
 ## [Simplicity Is Difficult](./Simplicity%20Is%20Difficult.md)
+
+## [Simplicity vs Oversimplification](./Simplicity%20vs%20Oversimplification.md)
