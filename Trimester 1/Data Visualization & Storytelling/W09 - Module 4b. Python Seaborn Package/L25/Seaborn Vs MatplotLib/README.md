@@ -99,3 +99,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Notice that Seaborn automatically adjusts bubble sizing to look more modern.](./Notice%20that%20Seaborn%20automatically%20adjusts%20bubble%20sizing%20to%20look%20more%20modern.md)
 
 ## [NOTE: Labels on X and Y axes are automatically derived from the column names!](./NOTE%20-%20Labels%20on%20X%20and%20Y%20axes%20are%20automatically%20derived%20from%20the%20column%20names%21.md)
+
+## [2. HISTOGRAM COMPARISON (The Aesthetics & "Garnishing" Test)](./2.%20HISTOGRAM%20COMPARISON%20%28The%20Aesthetics%20%26%20Garnishing%20Test%29.md)
