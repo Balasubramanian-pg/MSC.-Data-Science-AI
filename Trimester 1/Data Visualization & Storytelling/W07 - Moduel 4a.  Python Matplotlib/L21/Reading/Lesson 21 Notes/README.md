@@ -131,3 +131,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Sine Waves Matter](./Why%20Sine%20Waves%20Matter.md)
 
 ## [Properties of Sine](./Properties%20of%20Sine.md)
+
+## [Visual Behavior](./Visual%20Behavior.md)
