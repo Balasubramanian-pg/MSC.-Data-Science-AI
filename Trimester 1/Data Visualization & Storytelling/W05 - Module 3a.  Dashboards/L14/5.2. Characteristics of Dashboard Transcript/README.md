@@ -35,3 +35,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Examples](./Examples.md)
 
 ## [Key Requirement](./Key%20Requirement.md)
+
+## [3. Analytical Dashboards](./3.%20Analytical%20Dashboards.md)
