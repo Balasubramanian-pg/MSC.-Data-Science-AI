@@ -1,21 +1,25 @@
 # Strategic Insight
 
-This lecture section introduces a foundational engineering idea:
+This lecture section introduces a profound engineering idea:
 
-> visualizations are computational objects.
+> Visualization is layered abstraction.
 
-Charts are not manually drawn.
+A chart is not a single object.
 
-They are:
+It is composed of:
 
-- generated from mathematical structures
+- numerical structures
     
-- rendered from numerical arrays
+- rendering objects
     
-- controlled programmatically
+- semantic annotations
+    
+- perceptual encodings
     
 
-This is why modern visualization sits at the intersection of:
+all working together.
+
+That is why strong visualization systems require understanding:
 
 - mathematics
     
@@ -25,6 +29,7 @@ This is why modern visualization sits at the intersection of:
     
 - communication
     
-- statistical reasoning.
+- interface design
+    
 
-===
+simultaneously.
