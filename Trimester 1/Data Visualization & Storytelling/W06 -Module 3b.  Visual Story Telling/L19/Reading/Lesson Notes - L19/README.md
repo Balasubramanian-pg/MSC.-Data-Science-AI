@@ -111,3 +111,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Drill-Down Is Powerful](./Why%20Drill-Down%20Is%20Powerful.md)
 
 ## [Importance of Normalization](./Importance%20of%20Normalization.md)
+
+## [Drill-Down in Business Intelligence](./Drill-Down%20in%20Business%20Intelligence.md)
