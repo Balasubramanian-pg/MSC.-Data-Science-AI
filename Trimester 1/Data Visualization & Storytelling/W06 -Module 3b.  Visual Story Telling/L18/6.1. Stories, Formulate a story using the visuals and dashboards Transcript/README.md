@@ -203,3 +203,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why This Format Exists](./Why%20This%20Format%20Exists.md)
 
 ## [Constraint as Design Optimization](./Constraint%20as%20Design%20Optimization.md)
+
+## [Talk Less, Show More](./Talk%20Less%2C%20Show%20More.md)
