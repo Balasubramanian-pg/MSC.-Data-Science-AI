@@ -247,3 +247,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [High-Dimensional Dashboards](./High-Dimensional%20Dashboards.md)
 
 ## [Common Time-Series Enhancements](./Common%20Time-Series%20Enhancements.md)
+
+## [Rolling Average](./Rolling%20Average.md)
