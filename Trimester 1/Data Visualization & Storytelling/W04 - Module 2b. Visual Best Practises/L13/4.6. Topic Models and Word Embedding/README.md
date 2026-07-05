@@ -45,3 +45,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Example](./Example.md)
 
 ## [The Famous King-Man-Woman-Queen Example](./The%20Famous%20King-Man-Woman-Queen%20Example.md)
+
+## [Why This Happens](./Why%20This%20Happens.md)
