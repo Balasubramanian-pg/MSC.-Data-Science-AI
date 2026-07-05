@@ -199,3 +199,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Best Practice](./Best%20Practice.md)
 
 ## [Axis Labels](./Axis%20Labels.md)
+
+## [Why Axis Labels Matter](./Why%20Axis%20Labels%20Matter.md)
