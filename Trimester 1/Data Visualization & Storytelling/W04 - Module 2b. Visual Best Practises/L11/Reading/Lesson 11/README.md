@@ -161,3 +161,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Effectiveness](./Effectiveness.md)
 
 ## [Relationship Between Them](./Relationship%20Between%20Them.md)
+
+## [Common Failure Modes](./Common%20Failure%20Modes.md)
