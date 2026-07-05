@@ -106,3 +106,5 @@
 ## [Percentage Change](./Percentage%20Change.md)
 
 ## [Voter Turnout Ratio](./Voter%20Turnout%20Ratio.md)
+
+## [Common Visualization Pitfalls](./Common%20Visualization%20Pitfalls.md)
