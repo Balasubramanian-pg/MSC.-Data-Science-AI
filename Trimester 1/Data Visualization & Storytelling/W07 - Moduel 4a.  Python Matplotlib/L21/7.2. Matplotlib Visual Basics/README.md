@@ -59,3 +59,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [8. AI-Assisted Coding](./8.%20AI-Assisted%20Coding.md)
 
 ## [Important Engineering Insight](./Important%20Engineering%20Insight.md)
+
+## [Example](./Example.md)
