@@ -31,3 +31,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Insight: Misleading Does Not Always Mean Malicious](./Important%20Insight%20-%20Misleading%20Does%20Not%20Always%20Mean%20Malicious.md)
 
 ## [Why Natural Ordering Matters](./Why%20Natural%20Ordering%20Matters.md)
+
+## [Visualization Ethics](./Visualization%20Ethics.md)
