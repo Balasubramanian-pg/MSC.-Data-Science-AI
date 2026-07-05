@@ -289,3 +289,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Border styling](./Border%20styling.md)
 
 ## [Background styling](./Background%20styling.md)
+
+## [Remove grid lines](./Remove%20grid%20lines.md)
