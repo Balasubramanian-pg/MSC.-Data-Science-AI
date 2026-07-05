@@ -225,3 +225,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Line glyph](./Line%20glyph.md)
 
 ## [Bar glyph](./Bar%20glyph.md)
+
+## [Hatch Pattern Insight](./Hatch%20Pattern%20Insight.md)
