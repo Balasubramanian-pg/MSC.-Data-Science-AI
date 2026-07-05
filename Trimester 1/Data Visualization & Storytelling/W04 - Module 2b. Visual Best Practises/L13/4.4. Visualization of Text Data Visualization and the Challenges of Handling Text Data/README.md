@@ -141,3 +141,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important NLP Tradeoff](./Important%20NLP%20Tradeoff.md)
 
 ## [Number Processing Pipeline](./Number%20Processing%20Pipeline.md)
+
+## [3. Removing Punctuation and Special Characters](./3.%20Removing%20Punctuation%20and%20Special%20Characters.md)
