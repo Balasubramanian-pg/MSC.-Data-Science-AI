@@ -227,3 +227,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Bar glyph](./Bar%20glyph.md)
 
 ## [Hatch Pattern Insight](./Hatch%20Pattern%20Insight.md)
+
+## [Transparency (`alpha`)](./Transparency%20%28%60alpha%60%29.md)
