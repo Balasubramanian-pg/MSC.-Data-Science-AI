@@ -245,3 +245,5 @@ week: W05 - Module 3a.  Dashboards
 ## [2. Level of Interactivity](./2.%20Level%20of%20Interactivity.md)
 
 ## [Strategic Dashboard Interaction](./Strategic%20Dashboard%20Interaction.md)
+
+## [Typical Analytical Interactions](./Typical%20Analytical%20Interactions.md)
