@@ -35,3 +35,5 @@
 ## [4.2 Visualization Using Horizontal Bar Chart](./4.2%20Visualization%20Using%20Horizontal%20Bar%20Chart.md)
 
 ## [5. Understanding the Horizontal Bar Chart](./5.%20Understanding%20the%20Horizontal%20Bar%20Chart.md)
+
+## [6. Data Visualization as Storytelling](./6.%20Data%20Visualization%20as%20Storytelling.md)
