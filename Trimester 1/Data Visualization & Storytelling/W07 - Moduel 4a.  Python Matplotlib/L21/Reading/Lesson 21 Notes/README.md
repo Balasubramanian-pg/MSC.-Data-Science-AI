@@ -259,3 +259,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Plot Multiple Functions Together?](./Why%20Plot%20Multiple%20Functions%20Together.md)
 
 ## [Understanding the Plot Parameters](./Understanding%20the%20Plot%20Parameters.md)
+
+## [A. `color='red'`](./A.%20%60color%3D%27red%27%60.md)
