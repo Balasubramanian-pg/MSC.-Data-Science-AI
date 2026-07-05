@@ -1,21 +1,25 @@
 # Question
 
-**Which transformation is most appropriate for stabilising variance in a highly right-skewed variable like "Annual Income"?**
+**Which of the following binning techniques ensures that each bin contains approximately the same number of data points?**
 
 ### Options
 
-* Equal-width Binning
-* Min-Max Normalisation
-* Z-score Standardisation
-* Log Transformation
+* Equal-frequency binning
+* Equal-width binning
+* K-means clustering
+* Domain-specific binning
 
 ### Answer
 
-✅ **Log Transformation**
+✅ **Equal-frequency binning**
 
 > [!NOTE]
 > **Reason**
 >
-> A highly right-skewed variable contains a long tail of very large values. A **log transformation** compresses these extreme values, reduces skewness, and stabilises variance. This often makes the distribution more symmetric and suitable for statistical modeling.
+> In **equal-frequency binning** (also called quantile binning), the dataset is divided so that each bin contains roughly the same number of observations.
 >
-> Standardisation and normalisation only change the scale of the data; they do not remove skewness.
+> In contrast:
+>
+> * **Equal-width binning** keeps interval sizes fixed, not observation counts.
+> * **K-means clustering** forms clusters based on similarity.
+> * **Domain-specific binning** relies on business rules.
