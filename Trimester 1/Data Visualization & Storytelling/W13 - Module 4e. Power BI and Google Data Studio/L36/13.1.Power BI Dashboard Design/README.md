@@ -15,3 +15,5 @@
 ## [1.1.7. Small Multiples and Comparative Bar Charts](./1.1.7.%20Small%20Multiples%20and%20Comparative%20Bar%20Charts.md)
 
 ## [1.1.8. Interactivity and Contextual Navigation](./1.1.8.%20Interactivity%20and%20Contextual%20Navigation.md)
+
+## [1.1.9. Step-by-Step Dashboard Construction Example](./1.1.9.%20Step-by-Step%20Dashboard%20Construction%20Example.md)
