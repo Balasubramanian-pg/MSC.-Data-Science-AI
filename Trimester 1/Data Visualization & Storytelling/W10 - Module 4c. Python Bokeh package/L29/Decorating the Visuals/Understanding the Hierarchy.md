@@ -1,13 +1,9 @@
 # Understanding the Hierarchy
 
-```python
-plot.xgrid.grid_line_color
-```
-
 Breakdown:
 
-|Part|Meaning|
+|Component|Meaning|
 |---|---|
-|`plot`|figure|
-|`xgrid`|x-axis grid object|
-|`grid_line_color`|grid styling|
+|`axis_plot`|figure object|
+|`.xaxis`|x-axis object|
+|`.axis_line_color`|axis line styling|
