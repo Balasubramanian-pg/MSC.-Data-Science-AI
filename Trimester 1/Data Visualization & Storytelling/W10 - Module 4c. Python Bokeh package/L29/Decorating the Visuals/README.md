@@ -671,3 +671,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Mistake 4: Legends Over Data](./Mistake%204%20-%20Legends%20Over%20Data.md)
 
 ## [Part 1: Legend Customization](./Part%201%20-%20Legend%20Customization.md)
+
+## [Legend Location](./Legend%20Location.md)
