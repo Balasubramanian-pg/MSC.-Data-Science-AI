@@ -57,3 +57,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Semantic Distance Model](./Semantic%20Distance%20Model.md)
 
 ## [Why Embeddings Changed NLP](./Why%20Embeddings%20Changed%20NLP.md)
+
+## [Enron Email Embeddings](./Enron%20Email%20Embeddings.md)
