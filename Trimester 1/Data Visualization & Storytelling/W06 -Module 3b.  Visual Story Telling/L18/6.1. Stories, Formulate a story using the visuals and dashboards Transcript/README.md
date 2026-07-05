@@ -101,3 +101,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Cognitive Association Pipeline](./Cognitive%20Association%20Pipeline.md)
 
 ## [Why This Matters](./Why%20This%20Matters.md)
+
+## [Persistence of Visual Narratives](./Persistence%20of%20Visual%20Narratives.md)
