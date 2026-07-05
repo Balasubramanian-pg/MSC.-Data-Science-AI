@@ -171,3 +171,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Recap of the Plotting Workflow](./Recap%20of%20the%20Plotting%20Workflow.md)
 
 ## [1. Plotting Multiple Functions](./1.%20Plotting%20Multiple%20Functions.md)
+
+## [Why Multi-Line Plots Matter](./Why%20Multi-Line%20Plots%20Matter.md)
