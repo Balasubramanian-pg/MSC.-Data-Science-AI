@@ -77,3 +77,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Common Beginner Mistakes](./Common%20Beginner%20Mistakes.md)
 
 ## [Important Visualization Principle](./Important%20Visualization%20Principle.md)
+
+## [Strategic Insight](./Strategic%20Insight.md)
