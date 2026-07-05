@@ -91,3 +91,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Requires manual extraction/subsetting of the exact data series columns](./Requires%20manual%20extractionsubsetting%20of%20the%20exact%20data%20series%20columns.md)
 
 ## [CRITICAL: Matplotlib leaves axes completely blank unless explicitly labeled:](./CRITICAL%20-%20Matplotlib%20leaves%20axes%20completely%20blank%20unless%20explicitly%20labeled%20-.md)
+
+## [--- Approach B: Seaborn (DataFrame-Aware Column Mapping) ---](./---%20Approach%20B%20-%20Seaborn%20%28DataFrame-Aware%20Column%20Mapping%29%20---.md)
