@@ -105,3 +105,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Fetching & Plotting Online Weather Data](./Fetching%20%26%20Plotting%20Online%20Weather%20Data.md)
 
 ## [Standard Visualization Imports](./Standard%20Visualization%20Imports.md)
+
+## [Why These Three Libraries Always Appear Together](./Why%20These%20Three%20Libraries%20Always%20Appear%20Together.md)
