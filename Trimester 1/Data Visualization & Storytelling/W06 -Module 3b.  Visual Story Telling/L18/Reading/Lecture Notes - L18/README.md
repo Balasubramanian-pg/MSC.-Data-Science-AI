@@ -273,3 +273,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [1. Hierarchy Matters](./1.%20Hierarchy%20Matters.md)
 
 ## [2. Precision Matters](./2.%20Precision%20Matters.md)
+
+## [3. Simplicity Matters](./3.%20Simplicity%20Matters.md)
