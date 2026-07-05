@@ -29,3 +29,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [2. THE SEABORN APPROACH: Automated, High-Level Data Storytelling](./2.%20THE%20SEABORN%20APPROACH%20-%20Automated%2C%20High-Level%20Data%20Storytelling.md)
 
 ## [Seaborn natively parses the DataFrame. It automatically groups the categories,](./Seaborn%20natively%20parses%20the%20DataFrame.%20It%20automatically%20groups%20the%20categories%2C.md)
+
+## [calculates the mean, and adds a 95% Confidence Interval error bar to show data spread.](./calculates%20the%20mean%2C%20and%20adds%20a%2095%25%20Confidence%20Interval%20error%20bar%20to%20show%20data%20spread.md)
