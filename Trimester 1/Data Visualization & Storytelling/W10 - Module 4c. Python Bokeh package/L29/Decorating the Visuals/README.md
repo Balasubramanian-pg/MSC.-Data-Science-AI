@@ -471,3 +471,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Important Visualization Principle](./Important%20Visualization%20Principle.md)
 
 ## [Mistake 1: Over-Rotating Labels](./Mistake%201%20-%20Over-Rotating%20Labels.md)
+
+## [Mistake 2: Excessive Tick Styling](./Mistake%202%20-%20Excessive%20Tick%20Styling.md)
