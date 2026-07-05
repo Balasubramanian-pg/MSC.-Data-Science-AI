@@ -4,3 +4,5 @@
 **Topic:** Context for Effective Data Presentations
 
 ## [Learning Objectives](./Learning%20Objectives.md)
+
+## [Definition](./Definition.md)
