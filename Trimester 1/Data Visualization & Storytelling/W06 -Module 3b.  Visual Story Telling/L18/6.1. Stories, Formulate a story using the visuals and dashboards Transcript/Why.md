@@ -1,26 +1,7 @@
 # Why?
 
-Movies contain:
+Humans process:  
+visual information rapidly.
 
-- narrative arcs,
-    
-- emotional tension,
-    
-- conflict,
-    
-- characters,
-    
-- progression,
-    
-- visual immersion.
-    
-
-Annual reports usually contain:
-
-- disconnected facts,
-    
-- tables,
-    
-- passive language,
-    
-- low emotional encoding.
+Long verbal explanations:  
+increase cognitive fatigue.
