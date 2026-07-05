@@ -67,3 +67,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Perceptual Comparison](./Perceptual%20Comparison.md)
 
 ## [Important Cognitive Insight](./Important%20Cognitive%20Insight.md)
+
+## [Frequency Analysis](./Frequency%20Analysis.md)
