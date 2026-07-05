@@ -1,9 +1,6 @@
 # Important Insight
 
-The dashboard author defines:  
-the analytical framework.
+Dashboards surface signals.  
+They do not automatically explain causality.
 
-The reader defines:  
-the analytical pathway.
-
-This hybrid model is central to dashboarding.
+Human interpretation remains essential.
