@@ -357,3 +357,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Add title](./Add%20title.md)
 
 ## [Why the Instructor Emphasizes Practice](./Why%20the%20Instructor%20Emphasizes%20Practice.md)
+
+## [The Real Skill in Visualization](./The%20Real%20Skill%20in%20Visualization.md)
