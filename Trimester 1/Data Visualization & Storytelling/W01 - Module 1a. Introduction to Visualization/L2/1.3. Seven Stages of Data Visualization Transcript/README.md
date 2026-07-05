@@ -96,3 +96,5 @@
 ## [7. Visualization as an Iterative Analytical System](./7.%20Visualization%20as%20an%20Iterative%20Analytical%20System.md)
 
 ## [Visualization Lifecycle](./Visualization%20Lifecycle.md)
+
+## [8. Visualization Decision Framework](./8.%20Visualization%20Decision%20Framework.md)
