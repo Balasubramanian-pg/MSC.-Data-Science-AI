@@ -119,3 +119,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Structure](./Structure.md)
 
 ## [Why Nested Loops Are Powerful](./Why%20Nested%20Loops%20Are%20Powerful.md)
+
+## [Example in Business Context](./Example%20in%20Business%20Context.md)
