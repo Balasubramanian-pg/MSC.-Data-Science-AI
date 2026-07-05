@@ -13,3 +13,5 @@
 ## [4.1.6. Constructing a Basic Visualization](./4.1.6.%20Constructing%20a%20Basic%20Visualization.md)
 
 ## [4.1.7. Common Pitfalls in Data Connection](./4.1.7.%20Common%20Pitfalls%20in%20Data%20Connection.md)
+
+## [4.1.8. Conclusions](./4.1.8.%20Conclusions.md)
