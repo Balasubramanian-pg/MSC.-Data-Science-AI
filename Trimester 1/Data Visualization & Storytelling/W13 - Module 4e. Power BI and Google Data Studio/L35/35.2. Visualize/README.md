@@ -9,3 +9,5 @@
 ## [35.2.4. Central Limit Theorem in Large-Scale Transactional Aggregation](./35.2.4.%20Central%20Limit%20Theorem%20in%20Large-Scale%20Transactional%20Aggregation.md)
 
 ## [35.2.5. Confidence Intervals and Visual Error Boundaries](./35.2.5.%20Confidence%20Intervals%20and%20Visual%20Error%20Boundaries.md)
+
+## [35.2.6. Doughnut Charts for Categorical Share Estimation](./35.2.6.%20Doughnut%20Charts%20for%20Categorical%20Share%20Estimation.md)
