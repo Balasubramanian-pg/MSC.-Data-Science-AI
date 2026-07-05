@@ -79,3 +79,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Key Idea](./Key%20Idea.md)
 
 ## [LDA and LSA](./LDA%20and%20LSA.md)
+
+## [Unsupervised Topic Discovery](./Unsupervised%20Topic%20Discovery.md)
