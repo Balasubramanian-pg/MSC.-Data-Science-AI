@@ -19,3 +19,5 @@ week: W02 - Handling Numeric Data
 ## [2.3.6. Example of Z-Score Standardization](./2.3.6.%20Example%20of%20Z-Score%20Standardization.md)
 
 ## [2.3.7. Factors Affecting Scaling Efficacy](./2.3.7.%20Factors%20Affecting%20Scaling%20Efficacy.md)
+
+## [2.3.8. Common Misinterpretations](./2.3.8.%20Common%20Misinterpretations.md)
