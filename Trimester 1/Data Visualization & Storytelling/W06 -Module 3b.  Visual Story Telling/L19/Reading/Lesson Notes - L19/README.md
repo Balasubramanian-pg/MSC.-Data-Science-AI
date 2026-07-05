@@ -57,3 +57,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Core Characteristics](./Core%20Characteristics.md)
 
 ## [Common Formats](./Common%20Formats.md)
+
+## [Why Exploratory Narratives Matter](./Why%20Exploratory%20Narratives%20Matter.md)
