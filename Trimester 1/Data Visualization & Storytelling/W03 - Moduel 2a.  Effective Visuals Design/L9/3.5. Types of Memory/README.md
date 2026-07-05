@@ -189,3 +189,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Relationship Between Memory and Pre-Attentive Attributes](./Relationship%20Between%20Memory%20and%20Pre-Attentive%20Attributes.md)
 
 ## [Why Pre-Attentive Attributes Work](./Why%20Pre-Attentive%20Attributes%20Work.md)
+
+## [Example from Transcript](./Example%20from%20Transcript.md)
