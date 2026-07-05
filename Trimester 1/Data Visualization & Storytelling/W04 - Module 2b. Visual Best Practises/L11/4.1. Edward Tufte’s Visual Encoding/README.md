@@ -101,3 +101,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Assembly Creates Narrative](./Assembly%20Creates%20Narrative.md)
 
 ## [Why Ordering Matters](./Why%20Ordering%20Matters.md)
+
+## [Important Visualization Principle](./Important%20Visualization%20Principle.md)
