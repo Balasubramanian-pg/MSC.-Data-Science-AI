@@ -105,3 +105,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Core Analytical Principle](./The%20Core%20Analytical%20Principle.md)
 
 ## [7. Drilling Down](./7.%20Drilling%20Down.md)
+
+## [Hierarchical Exploration](./Hierarchical%20Exploration.md)
