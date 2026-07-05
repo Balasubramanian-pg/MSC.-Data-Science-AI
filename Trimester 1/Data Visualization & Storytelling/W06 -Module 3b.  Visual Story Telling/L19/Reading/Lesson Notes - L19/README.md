@@ -69,3 +69,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [C. Hybrid Narratives (Interactive Storytelling)](./C.%20Hybrid%20Narratives%20%28Interactive%20Storytelling%29.md)
 
 ## [Core Principle](./Core%20Principle.md)
+
+## [Why Hybrid Storytelling Works](./Why%20Hybrid%20Storytelling%20Works.md)
