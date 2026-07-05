@@ -113,3 +113,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Decorative Charts](./Decorative%20Charts.md)
 
 ## [Missing Labels](./Missing%20Labels.md)
+
+## [Wrong Chart Type](./Wrong%20Chart%20Type.md)
