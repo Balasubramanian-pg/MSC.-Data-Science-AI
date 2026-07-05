@@ -66,3 +66,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [5.1 Understanding Composition](./5.1%20Understanding%20Composition.md)
 
 ## [Examples from Lecture](./Examples%20from%20Lecture.md)
+
+## [5.2 Pie Charts](./5.2%20Pie%20Charts.md)
