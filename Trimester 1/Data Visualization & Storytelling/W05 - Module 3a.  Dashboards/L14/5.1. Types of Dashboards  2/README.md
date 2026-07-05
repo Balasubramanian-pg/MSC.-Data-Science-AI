@@ -123,3 +123,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Critical Dashboard Evaluation](./Critical%20Dashboard%20Evaluation.md)
 
 ## [Why This Matters](./Why%20This%20Matters.md)
+
+## [Dashboard Reading Flow](./Dashboard%20Reading%20Flow.md)
