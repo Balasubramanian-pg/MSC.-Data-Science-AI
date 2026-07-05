@@ -457,3 +457,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Hidden Insight in the Lecture](./Hidden%20Insight%20in%20the%20Lecture.md)
 
 ## [Organizational Graph Model](./Organizational%20Graph%20Model.md)
+
+## [Temporal Communication Evolution](./Temporal%20Communication%20Evolution.md)
