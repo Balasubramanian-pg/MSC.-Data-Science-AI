@@ -103,3 +103,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [2. Misleading Petrol Price Visualization](./2.%20Misleading%20Petrol%20Price%20Visualization.md)
 
 ## [What the Graph Implied](./What%20the%20Graph%20Implied.md)
+
+## [What Actually Happened](./What%20Actually%20Happened.md)
