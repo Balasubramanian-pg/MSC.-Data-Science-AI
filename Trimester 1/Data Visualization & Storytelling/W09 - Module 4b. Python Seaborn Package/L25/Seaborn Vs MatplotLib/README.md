@@ -49,3 +49,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Setting a random seed ensures the generated "random" data matches every run](./Setting%20a%20random%20seed%20ensures%20the%20generated%20random%20data%20matches%20every%20run.md)
 
 ## [Generate 50 random study hour values between 1 and 10 hours](./Generate%2050%20random%20study%20hour%20values%20between%201%20and%2010%20hours.md)
+
+## [Generate exam scores based on a mathematical formula with some random noise](./Generate%20exam%20scores%20based%20on%20a%20mathematical%20formula%20with%20some%20random%20noise.md)
