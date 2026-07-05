@@ -193,3 +193,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Example from Transcript](./Example%20from%20Transcript.md)
 
 ## [Counting the Number 3s](./Counting%20the%20Number%203s.md)
+
+## [Core Cognitive Principle](./Core%20Cognitive%20Principle.md)
