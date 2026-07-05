@@ -8,5 +8,5 @@ flowchart TD
     A --> C[Color Bar]
 
     C --> D[Gradient]
-    C --> E[Numeric Labels]
+    C --> E[Numeric Scale]
 ```
