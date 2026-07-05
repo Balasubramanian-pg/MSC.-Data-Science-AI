@@ -59,3 +59,5 @@
 ## [3.3 Communicating to Different Audiences](./3.3%20Communicating%20to%20Different%20Audiences.md)
 
 ## [4. Relationship Between Exploratory and Explanatory Analysis](./4.%20Relationship%20Between%20Exploratory%20and%20Explanatory%20Analysis.md)
+
+## [4.1 EDA as the Foundation](./4.1%20EDA%20as%20the%20Foundation.md)
