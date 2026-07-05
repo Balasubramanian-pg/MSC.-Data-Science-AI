@@ -53,3 +53,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Strategic Insight](./Important%20Strategic%20Insight.md)
 
 ## [Visual Narrative Tactics in Data Storytelling](./Visual%20Narrative%20Tactics%20in%20Data%20Storytelling.md)
+
+## [1. Highlighting](./1.%20Highlighting.md)
