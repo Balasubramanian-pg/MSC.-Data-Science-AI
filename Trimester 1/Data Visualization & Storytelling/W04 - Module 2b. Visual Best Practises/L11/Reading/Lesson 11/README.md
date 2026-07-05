@@ -175,3 +175,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Visualization Is Cognitive Compression](./Visualization%20Is%20Cognitive%20Compression.md)
 
 ## [Cognitive Load Perspective](./Cognitive%20Load%20Perspective.md)
+
+## [Final Design Philosophy](./Final%20Design%20Philosophy.md)
