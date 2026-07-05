@@ -361,3 +361,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Initial Circle Glyph](./Initial%20Circle%20Glyph.md)
 
 ## [Dynamic Modification](./Dynamic%20Modification.md)
+
+## [What Happens Internally?](./What%20Happens%20Internally.md)
