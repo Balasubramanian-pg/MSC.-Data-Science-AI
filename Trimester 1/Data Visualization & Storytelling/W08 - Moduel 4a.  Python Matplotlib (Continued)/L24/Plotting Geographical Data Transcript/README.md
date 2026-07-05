@@ -81,3 +81,5 @@ This is foundational to:
 ## [Create Geometry](./Create%20Geometry.md)
 
 ## [Critical Spatial Transformation](./Critical%20Spatial%20Transformation.md)
+
+## [Why Geometry Matters](./Why%20Geometry%20Matters.md)
