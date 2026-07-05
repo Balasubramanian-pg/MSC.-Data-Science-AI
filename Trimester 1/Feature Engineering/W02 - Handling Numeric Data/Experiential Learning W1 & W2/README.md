@@ -120,3 +120,5 @@ import numpy as np
 ## [Categorical pipeline: Impute missing Embarked with mode, then One-Hot Encode](./Categorical%20pipeline%20-%20Impute%20missing%20Embarked%20with%20mode%2C%20then%20One-Hot%20Encode.md)
 
 ## [Combine into one preprocessor](./Combine%20into%20one%20preprocessor.md)
+
+## [Create a custom transformer for Log transformation](./Create%20a%20custom%20transformer%20for%20Log%20transformation.md)
