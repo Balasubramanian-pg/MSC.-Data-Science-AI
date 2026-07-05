@@ -241,3 +241,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Show plot](./Show%20plot.md)
 
 ## [What This Teaches Conceptually](./What%20This%20Teaches%20Conceptually.md)
+
+## [Customizing Matplotlib Visualizations](./Customizing%20Matplotlib%20Visualizations.md)
