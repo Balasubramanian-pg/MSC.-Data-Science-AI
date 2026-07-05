@@ -53,3 +53,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [6. Practical Engineering Examples](./6.%20Practical%20Engineering%20Examples.md)
 
 ## [The elegant, production-grade way to construct the pipeline](./The%20elegant%2C%20production-grade%20way%20to%20construct%20the%20pipeline.md)
+
+## [Fit the entire pipeline on raw (or lightly cleaned) text strings directly](./Fit%20the%20entire%20pipeline%20on%20raw%20%28or%20lightly%20cleaned%29%20text%20strings%20directly.md)
