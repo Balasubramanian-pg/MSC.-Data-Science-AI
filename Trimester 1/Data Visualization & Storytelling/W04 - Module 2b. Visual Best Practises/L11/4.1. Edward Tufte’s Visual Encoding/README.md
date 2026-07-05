@@ -67,3 +67,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Data Type → Visualization Mapping](./Data%20Type%20%E2%86%92%20Visualization%20Mapping.md)
 
 ## [The Hidden Risk](./The%20Hidden%20Risk.md)
+
+## [Transition Into Visual Encoding](./Transition%20Into%20Visual%20Encoding.md)
