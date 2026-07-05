@@ -105,3 +105,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Why Multiple Coordinated Views Matter](./Why%20Multiple%20Coordinated%20Views%20Matter.md)
 
 ## [Interactivity in the Dashboard](./Interactivity%20in%20the%20Dashboard.md)
+
+## [Why Bar Charts Were Used](./Why%20Bar%20Charts%20Were%20Used.md)
