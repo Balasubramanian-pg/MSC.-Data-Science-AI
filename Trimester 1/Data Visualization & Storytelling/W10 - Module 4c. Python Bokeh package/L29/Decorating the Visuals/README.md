@@ -813,3 +813,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Real-World Example](./Real-World%20Example.md)
 
 ## [Part 2: Themes](./Part%202%20-%20Themes.md)
+
+## [What Is a Theme?](./What%20Is%20a%20Theme.md)
