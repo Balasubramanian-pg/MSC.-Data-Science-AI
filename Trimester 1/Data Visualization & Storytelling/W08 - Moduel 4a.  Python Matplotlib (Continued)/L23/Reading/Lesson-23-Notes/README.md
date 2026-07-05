@@ -51,3 +51,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Flattening Nested JSON](./Flattening%20Nested%20JSON.md)
 
 ## [Why Direct URL Reading Matters](./Why%20Direct%20URL%20Reading%20Matters.md)
+
+## [Real-World Analytics Pipeline](./Real-World%20Analytics%20Pipeline.md)
