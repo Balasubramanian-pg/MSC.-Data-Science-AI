@@ -1,9 +1,11 @@
 # Final Mental Model
 
-Think of text visualization as:
+Think of NLP preprocessing as:
 
 ```text
-building perceptual interfaces for exploring hidden semantic structure inside human language
+compressing and standardizing human language into machine-compatible semantic building blocks
 ```
 
-through computational transformation and visual abstraction.
+while preserving as much meaning as computationally possible.
+
+Tags: #statistics #machine-learning #data-science #statistical-modelling
