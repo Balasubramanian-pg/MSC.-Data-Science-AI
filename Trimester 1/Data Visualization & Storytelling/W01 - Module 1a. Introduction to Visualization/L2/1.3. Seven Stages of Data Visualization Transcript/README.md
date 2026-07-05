@@ -20,3 +20,5 @@
 ## [3.1 Stage 1: Acquiring Data](./3.1%20Stage%201%20-%20Acquiring%20Data.md)
 
 ## [Definition](./Definition.md)
+
+## [Example from Lecture](./Example%20from%20Lecture.md)
