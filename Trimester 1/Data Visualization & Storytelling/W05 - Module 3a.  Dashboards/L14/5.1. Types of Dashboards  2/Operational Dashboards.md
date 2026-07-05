@@ -1,22 +1,20 @@
 # Operational Dashboards
 
-Operational systems function in:
+Operational dashboards occupy an interesting middle ground.
 
-- real time,
+They need:
+
+- rapid interaction,  
+    but:
     
-- hourly,
-    
-- minute-level windows,
-    
-- or even milliseconds.
+- minimal complexity.
     
 
-Examples:
+Operators often cannot spend time:  
+exploring deeply.
 
-- server uptime,
+They need:
+
+- immediate signal clarity,
     
-- fraud detection,
-    
-- manufacturing failures,
-    
-- trading systems.
+- quick response capability.
