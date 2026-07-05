@@ -27,3 +27,5 @@ This is foundational to:
 - delivery optimization
     
 - geospatial machine learning
+
+## [Core Idea](./Core%20Idea.md)
