@@ -1,10 +1,7 @@
 # Example
 
-- muted secondary metrics
-    
-- bright primary KPI
-    
-- faded background context
-    
-
-The eye naturally prioritizes stronger contrast.
+|Color Intensity|Meaning|
+|---|---|
+|Light Blue|Low sales|
+|Medium Blue|Medium sales|
+|Dark Blue|High sales|
