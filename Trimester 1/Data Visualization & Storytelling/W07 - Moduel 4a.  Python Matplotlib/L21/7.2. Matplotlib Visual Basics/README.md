@@ -39,3 +39,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Comments Matter](./Why%20Comments%20Matter.md)
 
 ## [Common Beginner Error](./Common%20Beginner%20Error.md)
+
+## [5. Executing Notebook Cells](./5.%20Executing%20Notebook%20Cells.md)
