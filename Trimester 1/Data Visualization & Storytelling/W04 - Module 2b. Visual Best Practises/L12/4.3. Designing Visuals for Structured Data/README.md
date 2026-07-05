@@ -109,3 +109,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why IQR Matters](./Why%20IQR%20Matters.md)
 
 ## [Whiskers](./Whiskers.md)
+
+## [Why Box Plots Are Powerful](./Why%20Box%20Plots%20Are%20Powerful.md)
