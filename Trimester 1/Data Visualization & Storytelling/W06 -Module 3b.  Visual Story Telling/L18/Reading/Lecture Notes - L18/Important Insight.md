@@ -1,7 +1,4 @@
 # Important Insight
 
-Presentation titles act as:  
-cognitive anchors.
-
-A misleading title biases:  
-subsequent interpretation.
+Technical communication often fails because:  
+critical conclusions are hidden inside cautious language.
