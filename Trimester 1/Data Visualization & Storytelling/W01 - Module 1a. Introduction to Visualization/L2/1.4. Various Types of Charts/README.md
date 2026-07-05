@@ -12,3 +12,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [1.2 Visualization as Purpose-Driven Communication](./1.2%20Visualization%20as%20Purpose-Driven%20Communication.md)
 
 ## [2. Understanding Variable Types Before Charting](./2.%20Understanding%20Variable%20Types%20Before%20Charting.md)
+
+## [2.1 Categorical Variables](./2.1%20Categorical%20Variables.md)
