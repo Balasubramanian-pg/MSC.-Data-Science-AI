@@ -73,3 +73,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Bad Uses of Animation](./Bad%20Uses%20of%20Animation.md)
 
 ## [4. Text Emphasis](./4.%20Text%20Emphasis.md)
+
+## [Examples](./Examples.md)
