@@ -181,3 +181,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Lecture’s Document Clusters](./The%20Lecture%E2%80%99s%20Document%20Clusters.md)
 
 ## [What This Means](./What%20This%20Means.md)
+
+## [Semantic Cluster Structure](./Semantic%20Cluster%20Structure.md)
