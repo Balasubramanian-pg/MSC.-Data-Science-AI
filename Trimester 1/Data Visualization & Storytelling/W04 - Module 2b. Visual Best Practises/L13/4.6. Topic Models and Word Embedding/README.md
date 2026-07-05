@@ -101,3 +101,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Topic Distance Visualization](./Topic%20Distance%20Visualization.md)
 
 ## [Important Semantic Principle](./Important%20Semantic%20Principle.md)
+
+## [Bubble Size Meaning](./Bubble%20Size%20Meaning.md)
