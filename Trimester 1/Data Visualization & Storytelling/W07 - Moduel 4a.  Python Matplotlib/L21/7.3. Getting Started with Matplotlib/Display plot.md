@@ -1,0 +1,4 @@
+# Display plot
+
+plt.show()
+```
