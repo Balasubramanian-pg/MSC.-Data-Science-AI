@@ -34,3 +34,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [Business Insight](./Business%20Insight.md)
 
 ## [3.3 Horizontal Bar Charts](./3.3%20Horizontal%20Bar%20Charts.md)
+
+## [Key Insight from Lecture](./Key%20Insight%20from%20Lecture.md)
