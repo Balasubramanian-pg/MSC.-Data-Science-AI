@@ -35,3 +35,5 @@ It is fundamentally about:
 ## [Why Parse Dates?](./Why%20Parse%20Dates.md)
 
 ## [Extremely Important Time-Series Principle](./Extremely%20Important%20Time-Series%20Principle.md)
+
+## [Step 4: Understand the DataFrame](./Step%204%20-%20Understand%20the%20DataFrame.md)
