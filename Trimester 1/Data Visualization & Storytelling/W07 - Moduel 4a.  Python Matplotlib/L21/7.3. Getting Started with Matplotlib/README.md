@@ -165,3 +165,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [4. Over-customization](./4.%20Over-customization.md)
 
 ## [Strategic Insight](./Strategic%20Insight.md)
+
+## [Plotting Multiple Functions in Matplotlib](./Plotting%20Multiple%20Functions%20in%20Matplotlib.md)
