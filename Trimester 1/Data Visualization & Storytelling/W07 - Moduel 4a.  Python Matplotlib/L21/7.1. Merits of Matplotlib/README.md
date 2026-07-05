@@ -73,3 +73,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Therefore Visualization Quality Affects:](./Therefore%20Visualization%20Quality%20Affects%20-.md)
 
 ## [9. The Importance of Exploration](./9.%20The%20Importance%20of%20Exploration.md)
+
+## [Strong Analysts Continuously Ask:](./Strong%20Analysts%20Continuously%20Ask%20-.md)
