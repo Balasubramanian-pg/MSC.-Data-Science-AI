@@ -259,3 +259,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [3. Poor Hierarchy](./3.%20Poor%20Hierarchy.md)
 
 ## [Human Attention Behavior](./Human%20Attention%20Behavior.md)
+
+## [4. Misleading Title](./4.%20Misleading%20Title.md)
