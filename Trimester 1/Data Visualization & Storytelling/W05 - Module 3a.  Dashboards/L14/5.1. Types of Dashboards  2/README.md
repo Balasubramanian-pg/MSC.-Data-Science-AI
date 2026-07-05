@@ -49,3 +49,5 @@ week: W05 - Module 3a.  Dashboards
 ## [3. Clear](./3.%20Clear.md)
 
 ## [Clarity Requires](./Clarity%20Requires.md)
+
+## [4. Intuitive](./4.%20Intuitive.md)
