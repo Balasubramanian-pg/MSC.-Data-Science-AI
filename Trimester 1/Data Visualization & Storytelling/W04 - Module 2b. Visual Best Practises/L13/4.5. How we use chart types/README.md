@@ -453,3 +453,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Limitation](./Important%20Limitation.md)
 
 ## [Communication Centrality Metrics](./Communication%20Centrality%20Metrics.md)
+
+## [Hidden Insight in the Lecture](./Hidden%20Insight%20in%20the%20Lecture.md)
