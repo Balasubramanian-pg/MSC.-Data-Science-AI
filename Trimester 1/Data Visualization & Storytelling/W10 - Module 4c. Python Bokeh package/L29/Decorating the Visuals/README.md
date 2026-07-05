@@ -841,3 +841,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Light Minimal](./Light%20Minimal.md)
 
 ## [Contrast](./Contrast.md)
+
+## [Apply theme](./Apply%20theme.md)
