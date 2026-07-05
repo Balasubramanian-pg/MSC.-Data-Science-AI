@@ -55,3 +55,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why True Zero Matters](./Why%20True%20Zero%20Matters.md)
 
 ## [Visualization Implications](./Visualization%20Implications.md)
+
+## [4. Ratio Data](./4.%20Ratio%20Data.md)
