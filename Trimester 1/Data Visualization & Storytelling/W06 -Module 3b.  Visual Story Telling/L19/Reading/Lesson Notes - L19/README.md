@@ -157,3 +157,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Deeper Analytical Principle](./The%20Deeper%20Analytical%20Principle.md)
 
 ## [Common Failure Modes](./Common%20Failure%20Modes.md)
+
+## [12. Outliers](./12.%20Outliers.md)
