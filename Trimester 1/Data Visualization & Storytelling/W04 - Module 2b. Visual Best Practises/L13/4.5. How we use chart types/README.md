@@ -191,3 +191,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Complaints Become Negative](./Why%20Complaints%20Become%20Negative.md)
 
 ## [Important Limitation of Sentiment Analysis](./Important%20Limitation%20of%20Sentiment%20Analysis.md)
+
+## [Example Failure](./Example%20Failure.md)
