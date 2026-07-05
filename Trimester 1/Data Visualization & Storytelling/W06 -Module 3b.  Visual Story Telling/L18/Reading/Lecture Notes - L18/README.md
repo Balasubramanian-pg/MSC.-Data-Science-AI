@@ -37,3 +37,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [3. Cognitive Value of Structured Narratives](./3.%20Cognitive%20Value%20of%20Structured%20Narratives.md)
 
 ## [Why Structure Matters](./Why%20Structure%20Matters.md)
+
+## [Narrative Structure](./Narrative%20Structure.md)
