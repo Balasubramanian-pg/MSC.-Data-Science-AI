@@ -126,3 +126,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [9. Visualization Decision Framework](./9.%20Visualization%20Decision%20Framework.md)
 
 ## [What Do You Want to Show?](./What%20Do%20You%20Want%20to%20Show.md)
+
+## [10. Golden Rules of Effective Chart Design](./10.%20Golden%20Rules%20of%20Effective%20Chart%20Design.md)
