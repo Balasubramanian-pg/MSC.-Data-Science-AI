@@ -61,3 +61,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Move the legend outside of the main charting area to prevent data overlapping](./Move%20the%20legend%20outside%20of%20the%20main%20charting%20area%20to%20prevent%20data%20overlapping.md)
 
 ## [3. FACETING (SMALL MULTIPLES): Reducing Cognitive Load with `relplot`](./3.%20FACETING%20%28SMALL%20MULTIPLES%29%20-%20Reducing%20Cognitive%20Load%20with%20%60relplot%60.md)
+
+## [Intent: Replicate the 'Small Multiples' concept from PowerBI. By separating](./Intent%20-%20Replicate%20the%20%27Small%20Multiples%27%20concept%20from%20PowerBI.%20By%20separating.md)
