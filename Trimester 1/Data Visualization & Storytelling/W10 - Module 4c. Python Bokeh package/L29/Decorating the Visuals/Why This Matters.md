@@ -1,13 +1,13 @@
 # Why This Matters
 
-Without categorical axes:
+Humans scan dashboards hierarchically.
 
-```text
-1 2 3 4 5
-```
+Usually:
 
-With categorical axes:
-
-```text
-Delta | Emirates | Lufthansa
-```
+1. title
+    
+2. legends
+    
+3. axes
+    
+4. data patterns
