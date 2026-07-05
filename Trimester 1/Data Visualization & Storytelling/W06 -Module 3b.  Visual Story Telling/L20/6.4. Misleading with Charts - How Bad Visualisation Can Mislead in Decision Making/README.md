@@ -295,3 +295,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Example: UK National Debt as Percentage of GDP](./Example%20-%20UK%20National%20Debt%20as%20Percentage%20of%20GDP.md)
 
 ## [The Hidden Manipulation](./The%20Hidden%20Manipulation.md)
+
+## [Two Different Narratives](./Two%20Different%20Narratives.md)
