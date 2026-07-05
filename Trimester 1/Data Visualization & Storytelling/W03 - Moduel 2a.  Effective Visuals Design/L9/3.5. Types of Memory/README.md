@@ -191,3 +191,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Why Pre-Attentive Attributes Work](./Why%20Pre-Attentive%20Attributes%20Work.md)
 
 ## [Example from Transcript](./Example%20from%20Transcript.md)
+
+## [Counting the Number 3s](./Counting%20the%20Number%203s.md)
