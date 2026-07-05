@@ -703,3 +703,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Part 2: Color Palettes](./Part%202%20-%20Color%20Palettes.md)
 
 ## [Why Palettes Matter](./Why%20Palettes%20Matter.md)
+
+## [What Is a Palette?](./What%20Is%20a%20Palette.md)
