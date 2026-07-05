@@ -63,3 +63,5 @@ It is fundamentally about:
 ## [Real Engineering Significance](./Real%20Engineering%20Significance.md)
 
 ## [Common Beginner Mistakes](./Common%20Beginner%20Mistakes.md)
+
+## [1. Forgetting `parse_dates`](./1.%20Forgetting%20%60parse_dates%60.md)
