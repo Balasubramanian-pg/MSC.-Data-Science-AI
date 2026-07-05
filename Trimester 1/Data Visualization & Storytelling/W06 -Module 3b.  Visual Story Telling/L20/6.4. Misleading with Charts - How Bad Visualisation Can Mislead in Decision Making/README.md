@@ -355,3 +355,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Visualization Literacy](./Visualization%20Literacy.md)
 
 ## [Summary of Misleading Visualization Techniques](./Summary%20of%20Misleading%20Visualization%20Techniques.md)
+
+## [Core Analytical Principle](./Core%20Analytical%20Principle.md)
