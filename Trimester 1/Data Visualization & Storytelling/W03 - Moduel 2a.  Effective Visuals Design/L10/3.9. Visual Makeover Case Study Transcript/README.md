@@ -70,3 +70,5 @@ The transcript introduces this challenge directly.
 ## [Balanced Design Pattern](./Balanced%20Design%20Pattern.md)
 
 ## [Example](./Example.md)
+
+## [Bad Approach](./Bad%20Approach.md)
