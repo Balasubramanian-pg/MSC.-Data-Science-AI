@@ -15,3 +15,5 @@ week: W02 - Handling Numeric Data
 ## [2.2.4. Step-by-Step Binning Example](./2.2.4.%20Step-by-Step%20Binning%20Example.md)
 
 ## [2.2.5. Factors Affecting Binning Efficacy](./2.2.5.%20Factors%20Affecting%20Binning%20Efficacy.md)
+
+## [2.2.6. Common Misinterpretations](./2.2.6.%20Common%20Misinterpretations.md)
