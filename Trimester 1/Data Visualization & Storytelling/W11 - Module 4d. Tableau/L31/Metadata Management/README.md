@@ -9,3 +9,5 @@
 ## [6.1.4. Organizing Dimensions with Folders](./6.1.4.%20Organizing%20Dimensions%20with%20Folders.md)
 
 ## [6.1.5. Creating Hierarchies for Drill-Downs](./6.1.5.%20Creating%20Hierarchies%20for%20Drill-Downs.md)
+
+## [6.1.6. Calculated Fields and Derived Metrics](./6.1.6.%20Calculated%20Fields%20and%20Derived%20Metrics.md)
