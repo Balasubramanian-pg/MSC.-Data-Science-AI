@@ -54,3 +54,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [4.2 Histograms](./4.2%20Histograms.md)
 
 ## [Interpretation](./Interpretation.md)
+
+## [Real Operational Decision](./Real%20Operational%20Decision.md)
