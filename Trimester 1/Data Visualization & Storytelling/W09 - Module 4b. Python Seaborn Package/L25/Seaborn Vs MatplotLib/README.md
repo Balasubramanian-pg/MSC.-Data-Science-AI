@@ -75,3 +75,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [--- Approach B: Seaborn (Seamless Column Mapping) ---](./---%20Approach%20B%20-%20Seaborn%20%28Seamless%20Column%20Mapping%29%20---.md)
 
 ## [One single, readable command handles data mapping, categorization, and color palettes.](./One%20single%2C%20readable%20command%20handles%20data%20mapping%2C%20categorization%2C%20and%20color%20palettes.md)
+
+## [Use Matplotlib overlay solely to polish titles and labels](./Use%20Matplotlib%20overlay%20solely%20to%20polish%20titles%20and%20labels.md)
