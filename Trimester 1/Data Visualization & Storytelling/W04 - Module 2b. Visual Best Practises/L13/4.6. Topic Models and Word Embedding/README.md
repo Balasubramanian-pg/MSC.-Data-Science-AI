@@ -197,3 +197,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Embedding Compression Pipeline](./Embedding%20Compression%20Pipeline.md)
 
 ## [Relationship Between Embeddings, Topics, and t-SNE](./Relationship%20Between%20Embeddings%2C%20Topics%2C%20and%20t-SNE.md)
+
+## [Integrated NLP Pipeline](./Integrated%20NLP%20Pipeline.md)
