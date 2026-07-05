@@ -65,3 +65,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Cumulative Sum Changes Everything](./Why%20Cumulative%20Sum%20Changes%20Everything.md)
 
 ## [Visual Difference](./Visual%20Difference.md)
+
+## [Raw Noise](./Raw%20Noise.md)
