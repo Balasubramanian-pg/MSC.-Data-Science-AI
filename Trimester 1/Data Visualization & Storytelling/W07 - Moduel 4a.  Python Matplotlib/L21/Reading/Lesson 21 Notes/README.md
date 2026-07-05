@@ -225,3 +225,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Important Hidden Concept](./Important%20Hidden%20Concept.md)
 
 ## [Internal Workflow](./Internal%20Workflow.md)
+
+## [Why This Architecture Is Powerful](./Why%20This%20Architecture%20Is%20Powerful.md)
