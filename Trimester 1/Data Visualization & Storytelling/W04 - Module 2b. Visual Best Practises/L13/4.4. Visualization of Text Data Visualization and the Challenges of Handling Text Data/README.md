@@ -29,3 +29,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Core Insight](./Important%20Core%20Insight.md)
 
 ## [Why Text Is Computationally Hard](./Why%20Text%20Is%20Computationally%20Hard.md)
+
+## [Human vs Machine Language Understanding](./Human%20vs%20Machine%20Language%20Understanding.md)
