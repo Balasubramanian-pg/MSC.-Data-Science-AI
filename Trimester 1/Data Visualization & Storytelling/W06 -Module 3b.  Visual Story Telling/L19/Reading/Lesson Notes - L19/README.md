@@ -15,3 +15,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Stories Work Cognitively](./Why%20Stories%20Work%20Cognitively.md)
 
 ## [Business Storytelling Is Not Fiction](./Business%20Storytelling%20Is%20Not%20Fiction.md)
+
+## [The Real Skill: Getting Into the Audience’s Head](./The%20Real%20Skill%20-%20Getting%20Into%20the%20Audience%E2%80%99s%20Head.md)
