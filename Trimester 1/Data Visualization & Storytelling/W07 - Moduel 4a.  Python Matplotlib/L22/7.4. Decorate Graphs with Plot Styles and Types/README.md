@@ -51,3 +51,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Scatter Plot with Colormap](./Scatter%20Plot%20with%20Colormap.md)
 
 ## [Why Jet Colormap Is Problematic](./Why%20Jet%20Colormap%20Is%20Problematic.md)
+
+## [Custom Colormaps](./Custom%20Colormaps.md)
