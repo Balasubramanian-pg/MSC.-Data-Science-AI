@@ -29,3 +29,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Variable Type Framework](./Variable%20Type%20Framework.md)
 
 ## [Categorical Data](./Categorical%20Data.md)
+
+## [Best Visualizations](./Best%20Visualizations.md)
