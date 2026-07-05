@@ -271,3 +271,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Interpretation](./Interpretation.md)
 
 ## [Examples](./Examples.md)
+
+## [Objective Statement](./Objective%20Statement.md)
