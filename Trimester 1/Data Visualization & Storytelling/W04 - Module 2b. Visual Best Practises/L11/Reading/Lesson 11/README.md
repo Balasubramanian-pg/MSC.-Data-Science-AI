@@ -49,3 +49,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Nominal Data](./Nominal%20Data.md)
 
 ## [Pure Categories](./Pure%20Categories.md)
+
+## [Appropriate Operations](./Appropriate%20Operations.md)
