@@ -59,3 +59,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Horizontal Bar Charts](./Horizontal%20Bar%20Charts.md)
 
 ## [Grouped Bar Charts with Error Bars](./Grouped%20Bar%20Charts%20with%20Error%20Bars.md)
+
+## [Core Statistical Idea](./Core%20Statistical%20Idea.md)
