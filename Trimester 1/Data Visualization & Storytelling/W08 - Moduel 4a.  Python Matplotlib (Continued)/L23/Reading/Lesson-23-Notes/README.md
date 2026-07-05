@@ -279,3 +279,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [What `tight_layout()` Actually Does](./What%20%60tight_layout%28%29%60%20Actually%20Does.md)
 
 ## [Why `rect=[0,0,1,0.96]` Matters](./Why%20%60rect%3D%5B0%2C0%2C1%2C0.96%5D%60%20Matters.md)
+
+## [Understanding Rectangle Coordinates](./Understanding%20Rectangle%20Coordinates.md)
