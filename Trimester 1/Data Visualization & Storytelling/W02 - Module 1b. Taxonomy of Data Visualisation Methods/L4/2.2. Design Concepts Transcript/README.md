@@ -12,3 +12,5 @@
 ## [3. The Path to Audience Acceptance](./3.%20The%20Path%20to%20Audience%20Acceptance.md)
 
 ## [4. The Three Pillars of Visual Design](./4.%20The%20Three%20Pillars%20of%20Visual%20Design.md)
+
+## [5. Affordances](./5.%20Affordances.md)
