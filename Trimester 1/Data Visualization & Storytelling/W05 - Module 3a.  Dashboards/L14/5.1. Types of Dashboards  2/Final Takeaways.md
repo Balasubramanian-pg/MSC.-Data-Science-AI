@@ -1,25 +1,27 @@
 # Final Takeaways
 
-This CO₂ emissions dashboard demonstrates several advanced dashboard principles:
+This section establishes several foundational principles:
 
-- coordinated visual analytics
+- dashboards should provoke inquiry,
     
-- reader-driven exploration
+- form must follow function,
     
-- effective chart selection
+- dashboard design is audience-centric,
     
-- visual hierarchy
+- different decisions require different dashboard architectures,
     
-- interactivity
-    
-- contextual reasoning
-    
-- question generation
-    
-- cognitive guidance
+- and dashboards are fundamentally tools for cognitive support.
     
 
-Most importantly, it demonstrates that:
+Most importantly:
 
-> Effective dashboards do not merely display information.  
-> They actively shape analytical thinking.
+> There is no universally “correct” dashboard design.
+
+A dashboard is effective only if:  
+its structure aligns with:
+
+- user goals,
+    
+- decision context,
+    
+- and operational function.
