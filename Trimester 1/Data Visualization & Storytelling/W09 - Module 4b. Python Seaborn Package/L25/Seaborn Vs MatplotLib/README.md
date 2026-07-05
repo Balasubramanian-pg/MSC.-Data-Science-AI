@@ -97,3 +97,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Point to the complete DataFrame, and simply pass string column headers as keys.](./Point%20to%20the%20complete%20DataFrame%2C%20and%20simply%20pass%20string%20column%20headers%20as%20keys.md)
 
 ## [Notice that Seaborn automatically adjusts bubble sizing to look more modern.](./Notice%20that%20Seaborn%20automatically%20adjusts%20bubble%20sizing%20to%20look%20more%20modern.md)
+
+## [NOTE: Labels on X and Y axes are automatically derived from the column names!](./NOTE%20-%20Labels%20on%20X%20and%20Y%20axes%20are%20automatically%20derived%20from%20the%20column%20names%21.md)
