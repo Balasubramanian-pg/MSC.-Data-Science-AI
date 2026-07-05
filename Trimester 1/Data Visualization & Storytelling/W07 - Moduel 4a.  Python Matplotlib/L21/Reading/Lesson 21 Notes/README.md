@@ -253,3 +253,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [1. Adding a Second Line: Cosine Function](./1.%20Adding%20a%20Second%20Line%20-%20Cosine%20Function.md)
 
 ## [What This Does](./What%20This%20Does.md)
+
+## [Mathematical Function](./Mathematical%20Function.md)
