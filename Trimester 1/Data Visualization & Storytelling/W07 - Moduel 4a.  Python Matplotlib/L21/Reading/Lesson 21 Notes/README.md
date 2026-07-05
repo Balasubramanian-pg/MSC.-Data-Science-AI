@@ -215,3 +215,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Result](./Result.md)
 
 ## [Why Legends Matter](./Why%20Legends%20Matter.md)
+
+## [Important Design Principle](./Important%20Design%20Principle.md)
