@@ -81,3 +81,5 @@ Observed Data → Fit Function → Predict Future
 ## [Underfitting](./Underfitting.md)
 
 ## [Overfitting vs Underfitting](./Overfitting%20vs%20Underfitting.md)
+
+## [Visual Importance](./Visual%20Importance.md)
