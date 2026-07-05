@@ -211,3 +211,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Weak Presentation Pattern](./Weak%20Presentation%20Pattern.md)
 
 ## [Strong Presentation Pattern](./Strong%20Presentation%20Pattern.md)
+
+## [Why Time Constraints Improve Visual Quality](./Why%20Time%20Constraints%20Improve%20Visual%20Quality.md)
