@@ -83,3 +83,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Network Failures](./Network%20Failures.md)
 
 ## [Schema Drift](./Schema%20Drift.md)
+
+## [Security Considerations](./Security%20Considerations.md)
