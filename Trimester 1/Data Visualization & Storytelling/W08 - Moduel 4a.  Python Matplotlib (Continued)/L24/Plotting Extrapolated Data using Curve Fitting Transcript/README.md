@@ -91,3 +91,5 @@ Observed Data → Fit Function → Predict Future
 ## [Common Beginner Mistakes](./Common%20Beginner%20Mistakes.md)
 
 ## [1. Blindly Choosing High-Degree Polynomial](./1.%20Blindly%20Choosing%20High-Degree%20Polynomial.md)
+
+## [2. Assuming Forecasts Are Truth](./2.%20Assuming%20Forecasts%20Are%20Truth.md)
