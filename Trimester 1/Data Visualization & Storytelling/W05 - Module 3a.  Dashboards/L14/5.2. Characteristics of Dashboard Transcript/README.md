@@ -81,3 +81,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Important Balance](./Important%20Balance.md)
 
 ## [5. Contextual Relevance](./5.%20Contextual%20Relevance.md)
+
+## [Weak Dashboard](./Weak%20Dashboard.md)
