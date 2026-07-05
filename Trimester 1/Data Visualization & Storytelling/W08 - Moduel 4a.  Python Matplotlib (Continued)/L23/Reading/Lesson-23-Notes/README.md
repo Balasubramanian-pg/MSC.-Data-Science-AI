@@ -325,3 +325,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Fit quadratic curve](./Fit%20quadratic%20curve.md)
 
 ## [Polynomial function](./Polynomial%20function.md)
+
+## [Generate smooth curve](./Generate%20smooth%20curve.md)
