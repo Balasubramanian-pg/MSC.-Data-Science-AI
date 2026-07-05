@@ -71,3 +71,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Pie Charts](./Pie%20Charts.md)
 
 ## [Core Use Case](./Core%20Use%20Case.md)
+
+## [Basic Pie Chart](./Basic%20Pie%20Chart.md)
