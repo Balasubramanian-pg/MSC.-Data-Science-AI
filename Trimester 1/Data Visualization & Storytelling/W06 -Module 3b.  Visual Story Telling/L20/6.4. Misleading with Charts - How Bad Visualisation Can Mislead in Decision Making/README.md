@@ -307,3 +307,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Ethical Responsibility of Analysts](./The%20Ethical%20Responsibility%20of%20Analysts.md)
 
 ## [Best Practices Against Cherry Picking](./Best%20Practices%20Against%20Cherry%20Picking.md)
+
+## [1. Use Longer Timelines When Relevant](./1.%20Use%20Longer%20Timelines%20When%20Relevant.md)
