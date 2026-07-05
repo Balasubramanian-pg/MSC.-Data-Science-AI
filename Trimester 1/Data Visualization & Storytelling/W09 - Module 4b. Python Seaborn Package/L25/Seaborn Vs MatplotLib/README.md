@@ -33,3 +33,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [calculates the mean, and adds a 95% Confidence Interval error bar to show data spread.](./calculates%20the%20mean%2C%20and%20adds%20a%2095%25%20Confidence%20Interval%20error%20bar%20to%20show%20data%20spread.md)
 
 ## [Apply Seaborn's professional global aesthetic styling parameters](./Apply%20Seaborn%27s%20professional%20global%20aesthetic%20styling%20parameters.md)
+
+## [Initialize the Matplotlib canvas configuration](./Initialize%20the%20Matplotlib%20canvas%20configuration.md)
