@@ -7,3 +7,5 @@
 ## [5.1.3. Glyphs: The Geometry of Data](./5.1.3.%20Glyphs%20-%20The%20Geometry%20of%20Data.md)
 
 ## [5.1.4. Interactivity and the Browser Engine](./5.1.4.%20Interactivity%20and%20the%20Browser%20Engine.md)
+
+## [5.1.5. Audience Narrative Control](./5.1.5.%20Audience%20Narrative%20Control.md)
