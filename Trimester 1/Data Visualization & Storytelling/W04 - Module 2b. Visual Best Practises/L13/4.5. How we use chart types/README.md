@@ -53,3 +53,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Weakness 1: Poor Quantitative Precision](./Weakness%201%20-%20Poor%20Quantitative%20Precision.md)
 
 ## [Weakness 2: Spatial Arrangement Is Arbitrary](./Weakness%202%20-%20Spatial%20Arrangement%20Is%20Arbitrary.md)
+
+## [Weakness 3: Context Is Lost](./Weakness%203%20-%20Context%20Is%20Lost.md)
