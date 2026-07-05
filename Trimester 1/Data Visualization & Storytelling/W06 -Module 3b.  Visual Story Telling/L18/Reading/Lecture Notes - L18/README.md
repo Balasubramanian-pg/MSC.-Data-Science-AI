@@ -161,3 +161,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Simplicity Feels Powerful](./Why%20Simplicity%20Feels%20Powerful.md)
 
 ## [Important Misconception](./Important%20Misconception.md)
+
+## [Einstein Principle](./Einstein%20Principle.md)
