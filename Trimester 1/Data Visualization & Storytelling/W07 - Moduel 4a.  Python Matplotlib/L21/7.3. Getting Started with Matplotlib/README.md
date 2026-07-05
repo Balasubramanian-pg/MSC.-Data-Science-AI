@@ -353,3 +353,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Create figure](./Create%20figure.md)
 
 ## [Create bar chart](./Create%20bar%20chart.md)
+
+## [Add title](./Add%20title.md)
