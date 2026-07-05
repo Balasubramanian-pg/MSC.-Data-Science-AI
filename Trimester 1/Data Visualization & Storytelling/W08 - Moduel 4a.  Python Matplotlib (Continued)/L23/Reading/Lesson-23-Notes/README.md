@@ -69,3 +69,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Clean data](./Clean%20data.md)
 
 ## [Aggregate](./Aggregate.md)
+
+## [Plot](./Plot.md)
