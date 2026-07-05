@@ -25,3 +25,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Default Color Cycles](./Default%20Color%20Cycles.md)
 
 ## [Single-Letter Color Codes](./Single-Letter%20Color%20Codes.md)
+
+## [Named Colors](./Named%20Colors.md)
