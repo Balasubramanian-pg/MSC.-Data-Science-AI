@@ -108,3 +108,5 @@
 ## [Voter Turnout Ratio](./Voter%20Turnout%20Ratio.md)
 
 ## [Common Visualization Pitfalls](./Common%20Visualization%20Pitfalls.md)
+
+## [1. Mistaking Pretty Charts for Effective Charts](./1.%20Mistaking%20Pretty%20Charts%20for%20Effective%20Charts.md)
