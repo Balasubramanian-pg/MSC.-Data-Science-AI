@@ -157,3 +157,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Step A: Use Seaborn to render the complex statistical distributions.](./Step%20A%20-%20Use%20Seaborn%20to%20render%20the%20complex%20statistical%20distributions.md)
 
 ## [We explicitly pass the 'order' parameter to ensure we sort the categories](./We%20explicitly%20pass%20the%20%27order%27%20parameter%20to%20ensure%20we%20sort%20the%20categories.md)
+
+## [by descending median score, directly satisfying the Gestalt comparison principles.](./by%20descending%20median%20score%2C%20directly%20satisfying%20the%20Gestalt%20comparison%20principles.md)
