@@ -94,3 +94,5 @@
 ## [6.3 Why Ordering Matters](./6.3%20Why%20Ordering%20Matters.md)
 
 ## [7. Visualization as an Iterative Analytical System](./7.%20Visualization%20as%20an%20Iterative%20Analytical%20System.md)
+
+## [Visualization Lifecycle](./Visualization%20Lifecycle.md)
