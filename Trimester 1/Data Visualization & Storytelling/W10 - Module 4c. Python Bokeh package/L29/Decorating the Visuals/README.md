@@ -69,3 +69,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Basic Bokeh Bar Chart](./Basic%20Bokeh%20Bar%20Chart.md)
 
 ## [Define figure](./Define%20figure.md)
+
+## [Create vertical bars](./Create%20vertical%20bars.md)
