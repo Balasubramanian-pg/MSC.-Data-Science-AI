@@ -191,3 +191,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Human Communication Is Multi-Channel](./Human%20Communication%20Is%20Multi-Channel.md)
 
 ## [Common Failure](./Common%20Failure.md)
+
+## [Eye Contact and Cognitive Engagement](./Eye%20Contact%20and%20Cognitive%20Engagement.md)
