@@ -109,3 +109,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why These Three Libraries Always Appear Together](./Why%20These%20Three%20Libraries%20Always%20Appear%20Together.md)
 
 ## [NumPy](./NumPy.md)
+
+## [Pandas](./Pandas.md)
