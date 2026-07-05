@@ -124,3 +124,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [6. Ignoring the Intended Message](./6.%20Ignoring%20the%20Intended%20Message.md)
 
 ## [9. Visualization Decision Framework](./9.%20Visualization%20Decision%20Framework.md)
+
+## [What Do You Want to Show?](./What%20Do%20You%20Want%20to%20Show.md)
