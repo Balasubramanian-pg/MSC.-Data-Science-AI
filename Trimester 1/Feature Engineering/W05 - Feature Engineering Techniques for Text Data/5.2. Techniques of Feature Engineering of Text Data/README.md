@@ -63,3 +63,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Word: science    | OHE Vector: [0. 0. 1.]](./Word%20-%20science%20OHE%20Vector%20-%20%5B0.%200.%201.%5D.md)
 
 ## [Word: religion   | OHE Vector: [0. 1. 0.]](./Word%20-%20religion%20OHE%20Vector%20-%20%5B0.%201.%200.%5D.md)
+
+## [Word: hockey     | OHE Vector: [1. 0. 0.]](./Word%20-%20hockey%20OHE%20Vector%20-%20%5B1.%200.%200.%5D.md)
