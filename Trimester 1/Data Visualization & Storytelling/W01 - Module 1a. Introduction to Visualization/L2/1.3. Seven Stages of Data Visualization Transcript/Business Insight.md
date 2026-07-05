@@ -1,13 +1,9 @@
 # Business Insight
 
-Filtering converts “raw data” into “decision-ready data.”
+Mining converts data into insight.
 
-Example:
+Without mining:
 
-A policymaker can instantly identify:
-
-- low-performing states
+- dashboards remain descriptive
     
-- intervention zones
-    
-- benchmark outliers
+- no strategic conclusions emerge
