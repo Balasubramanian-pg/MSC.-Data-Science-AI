@@ -17,3 +17,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Mathematical Perspective](./Mathematical%20Perspective.md)
 
 ## [Basic Histogram Example](./Basic%20Histogram%20Example.md)
+
+## [Reproducibility](./Reproducibility.md)
