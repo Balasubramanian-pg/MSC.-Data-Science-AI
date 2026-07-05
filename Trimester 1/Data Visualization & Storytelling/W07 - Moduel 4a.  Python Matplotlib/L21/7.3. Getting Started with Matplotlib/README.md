@@ -257,3 +257,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Defining Variables](./Defining%20Variables.md)
 
 ## [Plotting the Line](./Plotting%20the%20Line.md)
+
+## [Why Color Matters](./Why%20Color%20Matters.md)
