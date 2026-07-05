@@ -169,3 +169,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why SUCCESS Works](./Why%20SUCCESS%20Works.md)
 
 ## [Simple](./Simple.md)
+
+## [Unexpected](./Unexpected.md)
