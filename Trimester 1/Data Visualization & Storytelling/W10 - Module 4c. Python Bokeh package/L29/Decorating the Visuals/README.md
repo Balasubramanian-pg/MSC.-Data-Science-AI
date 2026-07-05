@@ -375,3 +375,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Common Editable Properties](./Common%20Editable%20Properties.md)
 
 ## [Important Software Engineering Insight](./Important%20Software%20Engineering%20Insight.md)
+
+## [Part 2: Axis Customization](./Part%202%20-%20Axis%20Customization.md)
