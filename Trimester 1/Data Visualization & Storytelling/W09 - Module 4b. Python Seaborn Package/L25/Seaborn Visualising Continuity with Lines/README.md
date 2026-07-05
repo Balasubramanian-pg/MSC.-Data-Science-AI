@@ -33,3 +33,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [4. ADVANCED: Subplot Faceting with `relplot`](./4.%20ADVANCED%20-%20Subplot%20Faceting%20with%20%60relplot%60.md)
 
 ## [As mentioned in the transcript, `relplot` (Relational Plot) is a figure-level](./As%20mentioned%20in%20the%20transcript%2C%20%60relplot%60%20%28Relational%20Plot%29%20is%20a%20figure-level.md)
+
+## [function. It allows you to automatically split data into physical subplots](./function.%20It%20allows%20you%20to%20automatically%20split%20data%20into%20physical%20subplots.md)
