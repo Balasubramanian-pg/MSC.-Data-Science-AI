@@ -47,3 +47,5 @@ Every single function, method, and parameter is explained in detail using Python
 ## [MODULE 6: STACKED BAR CHARTS](./MODULE%206%20-%20STACKED%20BAR%20CHARTS.md)
 
 ## [🟢 Module 7: On-the-fly Transformations](./%F0%9F%9F%A2%20Module%207%20-%20On-the-fly%20Transformations.md)
+
+## [MODULE 7: DATA TRANSFORMATIONS](./MODULE%207%20-%20DATA%20TRANSFORMATIONS.md)
