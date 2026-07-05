@@ -59,3 +59,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [4. Ratio Data](./4.%20Ratio%20Data.md)
 
 ## [True Quantitative Measurement](./True%20Quantitative%20Measurement.md)
+
+## [Key Property](./Key%20Property.md)
