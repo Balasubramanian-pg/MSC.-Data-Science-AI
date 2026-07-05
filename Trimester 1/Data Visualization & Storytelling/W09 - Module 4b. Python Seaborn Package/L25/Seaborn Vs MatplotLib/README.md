@@ -83,3 +83,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [2. Aesthetics Theory: The "Garnished Food" Concept](./2.%20Aesthetics%20Theory%20-%20The%20Garnished%20Food%20Concept.md)
 
 ## [0. SETUP: Re-generating the Student Exam Data Structure](./0.%20SETUP%20-%20Re-generating%20the%20Student%20Exam%20Data%20Structure.md)
+
+## [1. SCATTER PLOT COMPARISON (Syntax & Automated Labels)](./1.%20SCATTER%20PLOT%20COMPARISON%20%28Syntax%20%26%20Automated%20Labels%29.md)
