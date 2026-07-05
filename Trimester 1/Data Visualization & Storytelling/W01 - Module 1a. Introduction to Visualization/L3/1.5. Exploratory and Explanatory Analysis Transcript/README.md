@@ -19,3 +19,5 @@
 ## [2.2 Goals of Exploratory Data Analysis (EDA)](./2.2%20Goals%20of%20Exploratory%20Data%20Analysis%20%28EDA%29.md)
 
 ## [Main Goals](./Main%20Goals.md)
+
+## [EDA is the Foundation of Visualization](./EDA%20is%20the%20Foundation%20of%20Visualization.md)
