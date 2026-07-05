@@ -5,3 +5,5 @@
 ## [1. Data Foundations](./1.%20Data%20Foundations.md)
 
 ## [2. Univariate Analysis](./2.%20Univariate%20Analysis.md)
+
+## [3. Distribution Analysis](./3.%20Distribution%20Analysis.md)
