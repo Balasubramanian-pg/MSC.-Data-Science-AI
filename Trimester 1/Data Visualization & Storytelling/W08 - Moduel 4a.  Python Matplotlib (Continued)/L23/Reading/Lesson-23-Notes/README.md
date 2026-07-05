@@ -231,3 +231,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Example Insight](./Example%20Insight.md)
 
 ## [Figure-Level Titles](./Figure-Level%20Titles.md)
+
+## [Difference Between Figure and Axis Titles](./Difference%20Between%20Figure%20and%20Axis%20Titles.md)
