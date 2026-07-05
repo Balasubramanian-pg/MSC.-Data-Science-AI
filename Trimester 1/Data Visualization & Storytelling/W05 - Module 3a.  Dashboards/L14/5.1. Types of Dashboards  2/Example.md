@@ -1,16 +1,5 @@
 # Example
 
-In an operations dashboard:  
-users should instantly see:
+One red KPI among gray cards immediately attracts attention.
 
-- server failures,
-    
-- traffic spikes,
-    
-- security alerts,
-    
-- downtime risks.
-    
-
-Not after:  
-10 clicks and 5 filters.
+This is intentional perceptual engineering.
