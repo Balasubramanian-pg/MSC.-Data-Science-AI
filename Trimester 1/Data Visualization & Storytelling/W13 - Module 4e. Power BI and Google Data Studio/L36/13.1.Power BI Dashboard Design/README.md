@@ -11,3 +11,5 @@
 ## [1.1.5. Geospatial and Hierarchical Visualizations](./1.1.5.%20Geospatial%20and%20Hierarchical%20Visualizations.md)
 
 ## [1.1.6. Analytical Scatter Plots and Quadrant Analysis](./1.1.6.%20Analytical%20Scatter%20Plots%20and%20Quadrant%20Analysis.md)
+
+## [1.1.7. Small Multiples and Comparative Bar Charts](./1.1.7.%20Small%20Multiples%20and%20Comparative%20Bar%20Charts.md)
