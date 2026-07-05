@@ -173,3 +173,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Confounding Variables](./Confounding%20Variables.md)
 
 ## [Why Humans Mistake Correlation for Causation](./Why%20Humans%20Mistake%20Correlation%20for%20Causation.md)
+
+## [Visualization Amplifies This Bias](./Visualization%20Amplifies%20This%20Bias.md)
