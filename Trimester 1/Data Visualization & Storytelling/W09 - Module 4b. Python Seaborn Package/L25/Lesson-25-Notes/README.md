@@ -35,3 +35,5 @@ I have organized the code into a logical, executable structure using a mock data
 ## [To plot categorical means in Matplotlib, you must calculate them manually first.](./To%20plot%20categorical%20means%20in%20Matplotlib%2C%20you%20must%20calculate%20them%20manually%20first.md)
 
 ## [--- Approach B: Seaborn (Automated Statistical Inference) ---](./---%20Approach%20B%20-%20Seaborn%20%28Automated%20Statistical%20Inference%29%20---.md)
+
+## [Seaborn automatically calculates the mean AND adds a 95% Confidence Interval (CI) error bar.](./Seaborn%20automatically%20calculates%20the%20mean%20AND%20adds%20a%2095%25%20Confidence%20Interval%20%28CI%29%20error%20bar.md)
