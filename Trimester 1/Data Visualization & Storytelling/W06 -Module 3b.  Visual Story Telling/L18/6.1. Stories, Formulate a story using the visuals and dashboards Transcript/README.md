@@ -297,3 +297,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Cognitive Overload](./Cognitive%20Overload.md)
 
 ## [Result](./Result.md)
+
+## [Improving Presentations](./Improving%20Presentations.md)
