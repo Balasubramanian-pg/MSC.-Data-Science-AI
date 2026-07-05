@@ -1,27 +1,14 @@
 # Why This Is Misleading
 
-The graph visually encoded:
+Humans instinctively associate:
 
-- price levels  
-    using
+- darker shades with larger magnitude
     
-- bar heights
-    
-
-But then implied:
-
-- growth-rate interpretation
+- stronger color with greater severity
     
 
-This creates semantic confusion.
+This is automatic perception.
 
-The audience sees:
+If saturation encoding does not align with magnitude:
 
-> smaller bars
-
-and interprets:
-
-> lower prices
-
-even though:  
-prices are higher.
+- attention becomes distorted
