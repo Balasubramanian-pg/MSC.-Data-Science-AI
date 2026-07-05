@@ -213,3 +213,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Gestalt Principle of Similarity](./Gestalt%20Principle%20of%20Similarity.md)
 
 ## [7. Intensity](./7.%20Intensity.md)
+
+## [8. Spatial Position](./8.%20Spatial%20Position.md)
