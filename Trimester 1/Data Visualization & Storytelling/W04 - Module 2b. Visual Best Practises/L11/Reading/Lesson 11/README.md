@@ -97,3 +97,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Grouping Relationships](./Grouping%20Relationships.md)
 
 ## [Gestalt Law of Continuity](./Gestalt%20Law%20of%20Continuity.md)
+
+## [Assembly Process](./Assembly%20Process.md)
