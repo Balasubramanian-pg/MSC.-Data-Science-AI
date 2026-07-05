@@ -35,3 +35,5 @@ This is foundational to:
 ## [Why Geographical Visualization Matters](./Why%20Geographical%20Visualization%20Matters.md)
 
 ## [What Is GeoPandas?](./What%20Is%20GeoPandas.md)
+
+## [Standard DataFrame](./Standard%20DataFrame.md)
