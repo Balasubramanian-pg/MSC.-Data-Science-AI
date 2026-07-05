@@ -27,3 +27,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Single-Letter Color Codes](./Single-Letter%20Color%20Codes.md)
 
 ## [Named Colors](./Named%20Colors.md)
+
+## [Hexadecimal Colors](./Hexadecimal%20Colors.md)
