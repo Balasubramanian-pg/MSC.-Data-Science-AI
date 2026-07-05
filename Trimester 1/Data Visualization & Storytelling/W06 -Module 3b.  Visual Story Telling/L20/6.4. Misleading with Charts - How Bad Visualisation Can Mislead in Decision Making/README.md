@@ -319,3 +319,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Example of Responsible Framing](./Example%20of%20Responsible%20Framing.md)
 
 ## [Accuracy vs Aesthetics](./Accuracy%20vs%20Aesthetics.md)
+
+## [Color Saturation and Visual Attention Manipulation](./Color%20Saturation%20and%20Visual%20Attention%20Manipulation.md)
