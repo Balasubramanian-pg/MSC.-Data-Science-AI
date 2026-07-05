@@ -66,3 +66,5 @@
 ## [4.1 Acquisition from Election Commission Data](./4.1%20Acquisition%20from%20Election%20Commission%20Data.md)
 
 ## [4.2 Parsing the Dataset Structure](./4.2%20Parsing%20the%20Dataset%20Structure.md)
+
+## [4.3 Filtering by Voter Turnout Ratio](./4.3%20Filtering%20by%20Voter%20Turnout%20Ratio.md)
