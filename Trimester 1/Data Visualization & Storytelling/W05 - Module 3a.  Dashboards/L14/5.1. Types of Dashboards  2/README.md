@@ -79,3 +79,5 @@ week: W05 - Module 3a.  Dashboards
 ## [3. Interaction Overload](./3.%20Interaction%20Overload.md)
 
 ## [4. No Context](./4.%20No%20Context.md)
+
+## [5. Static Thinking](./5.%20Static%20Thinking.md)
