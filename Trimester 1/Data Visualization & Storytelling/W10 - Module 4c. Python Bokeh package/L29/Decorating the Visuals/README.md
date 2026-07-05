@@ -271,3 +271,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Understanding the Hierarchy](./Understanding%20the%20Hierarchy.md)
 
 ## [Setting `None`](./Setting%20%60None%60.md)
+
+## [Why Remove Grid Lines?](./Why%20Remove%20Grid%20Lines.md)
