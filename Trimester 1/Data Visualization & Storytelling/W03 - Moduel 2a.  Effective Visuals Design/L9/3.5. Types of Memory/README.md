@@ -201,3 +201,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [1. Orientation](./1.%20Orientation.md)
 
 ## [2. Shape](./2.%20Shape.md)
+
+## [3. Size](./3.%20Size.md)
