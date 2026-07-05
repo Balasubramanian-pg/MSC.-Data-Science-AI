@@ -167,3 +167,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Bag of Words Idea](./Bag%20of%20Words%20Idea.md)
 
 ## [Important Limitation](./Important%20Limitation.md)
+
+## [Bag of Words Pipeline](./Bag%20of%20Words%20Pipeline.md)
