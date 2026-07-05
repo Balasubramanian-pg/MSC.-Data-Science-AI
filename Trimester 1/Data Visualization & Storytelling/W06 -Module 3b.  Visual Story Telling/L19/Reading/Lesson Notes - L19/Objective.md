@@ -1,25 +1,20 @@
 # Objective
 
-Drill-down storytelling moves from:
+Zooming out expands perspective to reveal:
 
-- broad summaries  
-    to
+- macro context
     
-- increasingly detailed layers
+- systemic relationships
+    
+- geographic patterns
+    
+- external influences
     
 
-This mirrors how investigations naturally occur.
+Drill-down asks:
 
-Start with:
+> “Where exactly is the problem?”
 
-> “Something is wrong.”
+Zooming out asks:
 
-Then progressively ask:
-
-- where?
-    
-- for whom?
-    
-- under what conditions?
-    
-- caused by what?
+> “What larger system is this part of?”
