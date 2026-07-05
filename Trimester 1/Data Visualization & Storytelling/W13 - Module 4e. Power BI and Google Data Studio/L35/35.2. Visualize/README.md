@@ -27,3 +27,5 @@
 ## [35.2.13. Frequentist vs Bayesian Interpretation of Dynamic Data](./35.2.13.%20Frequentist%20vs%20Bayesian%20Interpretation%20of%20Dynamic%20Data.md)
 
 ## [35.2.14. Common Misinterpretations of Visual Dashboard Metrics](./35.2.14.%20Common%20Misinterpretations%20of%20Visual%20Dashboard%20Metrics.md)
+
+## [35.2.15. Conclusions](./35.2.15.%20Conclusions.md)
