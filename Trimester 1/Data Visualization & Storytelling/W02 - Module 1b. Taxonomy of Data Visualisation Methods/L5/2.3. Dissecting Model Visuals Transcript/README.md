@@ -22,3 +22,5 @@
 ## [8. Principle: Decluttering](./8.%20Principle%20-%20Decluttering.md)
 
 ## [9. Case Study 3: Director Headcount Planning](./9.%20Case%20Study%203%20-%20Director%20Headcount%20Planning.md)
+
+## [10. Principle: Color Consistency](./10.%20Principle%20-%20Color%20Consistency.md)
