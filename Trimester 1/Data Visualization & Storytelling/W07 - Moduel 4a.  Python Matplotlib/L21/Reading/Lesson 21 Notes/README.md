@@ -125,3 +125,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Important Hidden Concept: Vectorization](./Important%20Hidden%20Concept%20-%20Vectorization.md)
 
 ## [Vectorized Version](./Vectorized%20Version.md)
+
+## [Non-vectorized Version](./Non-vectorized%20Version.md)
