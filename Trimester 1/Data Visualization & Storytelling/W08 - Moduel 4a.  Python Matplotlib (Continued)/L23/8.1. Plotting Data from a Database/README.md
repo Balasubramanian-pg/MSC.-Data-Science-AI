@@ -19,3 +19,5 @@ This section explains how to create multiple related plots from a Pandas DataFra
 ## [Creating Subplots](./Creating%20Subplots.md)
 
 ## [Breakdown](./Breakdown.md)
+
+## [Mental Model](./Mental%20Model.md)
