@@ -417,3 +417,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Grid styling](./Grid%20styling.md)
 
 ## [Initial Line Plot](./Initial%20Line%20Plot.md)
+
+## [Axis Customization](./Axis%20Customization.md)
