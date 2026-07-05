@@ -203,3 +203,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Creating the Line Plot](./Creating%20the%20Line%20Plot.md)
 
 ## [Important Insight](./Important%20Insight.md)
+
+## [Glyph = Renderable Visual Object](./Glyph%20%3D%20Renderable%20Visual%20Object.md)
