@@ -9,3 +9,5 @@
 ## [4.5.4. Example of a Categorical Bar Chart](./4.5.4.%20Example%20of%20a%20Categorical%20Bar%20Chart.md)
 
 ## [4.5.5. Factors Affecting Bar Chart Design](./4.5.5.%20Factors%20Affecting%20Bar%20Chart%20Design.md)
+
+## [4.5.6. Common Pitfalls and Misapplications](./4.5.6.%20Common%20Pitfalls%20and%20Misapplications.md)
