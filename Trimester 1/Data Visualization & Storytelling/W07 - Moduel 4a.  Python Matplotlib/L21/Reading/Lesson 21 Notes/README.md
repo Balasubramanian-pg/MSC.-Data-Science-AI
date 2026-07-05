@@ -219,3 +219,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Important Design Principle](./Important%20Design%20Principle.md)
 
 ## [6. Rendering the Plot](./6.%20Rendering%20the%20Plot.md)
+
+## [What `show()` Does](./What%20%60show%28%29%60%20Does.md)
