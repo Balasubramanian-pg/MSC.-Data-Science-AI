@@ -1,27 +1,23 @@
 # Final Takeaways
 
-This section establishes several foundational principles:
+This section completes the conceptual framework for dashboard classification.
 
-- dashboards should provoke inquiry,
+The key lessons are:
+
+- dashboards differ because decisions differ,
     
-- form must follow function,
+- time sensitivity shapes dashboard architecture,
     
-- dashboard design is audience-centric,
+- interactivity must match user needs,
     
-- different decisions require different dashboard architectures,
+- strategic, analytical, and operational dashboards serve fundamentally different cognitive purposes,
     
-- and dashboards are fundamentally tools for cognitive support.
+- and dashboard design must always follow function.
     
 
 Most importantly:
 
-> There is no universally “correct” dashboard design.
+> A dashboard is not designed around data alone.  
+> It is designed around human decision-making behavior.
 
-A dashboard is effective only if:  
-its structure aligns with:
-
-- user goals,
-    
-- decision context,
-    
-- and operational function.
+Tags: #statistics #machine-learning #data-science #statistical-modelling
