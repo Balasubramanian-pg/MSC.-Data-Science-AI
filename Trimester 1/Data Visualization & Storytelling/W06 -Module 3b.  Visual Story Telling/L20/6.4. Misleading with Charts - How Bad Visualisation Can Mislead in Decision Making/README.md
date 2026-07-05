@@ -359,3 +359,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Core Analytical Principle](./Core%20Analytical%20Principle.md)
 
 ## [Final Strategic Insight](./Final%20Strategic%20Insight.md)
+
+## [Best Practices for Ethical Visualization](./Best%20Practices%20for%20Ethical%20Visualization.md)
