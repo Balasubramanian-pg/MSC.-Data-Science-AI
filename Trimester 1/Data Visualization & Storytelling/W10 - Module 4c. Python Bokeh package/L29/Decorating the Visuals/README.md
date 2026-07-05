@@ -43,3 +43,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [3. Define a list of different colors (use at least two different color formats)](./3.%20Define%20a%20list%20of%20different%20colors%20%28use%20at%20least%20two%20different%20color%20formats%29.md)
 
 ## [4. Create a figure with fruit names on x-axis](./4.%20Create%20a%20figure%20with%20fruit%20names%20on%20x-axis.md)
+
+## [5. Add vertical bars with your colors](./5.%20Add%20vertical%20bars%20with%20your%20colors.md)
