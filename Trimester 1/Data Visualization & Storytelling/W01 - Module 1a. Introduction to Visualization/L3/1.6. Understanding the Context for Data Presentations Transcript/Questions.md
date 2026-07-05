@@ -1,5 +1,4 @@
 # Questions
 
-* Which states had highest turnout?
-* Which states had lowest turnout?
-* How does turnout compare with previous elections?
+* Which regions performed better?
+* How does one state compare with neighboring states?
