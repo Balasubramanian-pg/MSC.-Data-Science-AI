@@ -57,3 +57,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Compute y values](./Compute%20y%20values.md)
 
 ## [Create plot](./Create%20plot.md)
+
+## [Show chart](./Show%20chart.md)
