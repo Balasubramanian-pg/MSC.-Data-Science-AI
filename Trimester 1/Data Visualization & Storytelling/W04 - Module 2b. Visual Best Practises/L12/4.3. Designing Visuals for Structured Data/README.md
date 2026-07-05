@@ -77,3 +77,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Composition Visualization](./Composition%20Visualization.md)
 
 ## [Important Limitation](./Important%20Limitation.md)
+
+## [Better Alternative](./Better%20Alternative.md)
