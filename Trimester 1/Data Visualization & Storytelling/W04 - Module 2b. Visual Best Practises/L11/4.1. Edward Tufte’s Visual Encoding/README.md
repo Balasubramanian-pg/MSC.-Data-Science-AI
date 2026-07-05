@@ -35,3 +35,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [2. Ordinal Data](./2.%20Ordinal%20Data.md)
 
 ## [Ordered Categories](./Ordered%20Categories.md)
+
+## [Critical Property](./Critical%20Property.md)
