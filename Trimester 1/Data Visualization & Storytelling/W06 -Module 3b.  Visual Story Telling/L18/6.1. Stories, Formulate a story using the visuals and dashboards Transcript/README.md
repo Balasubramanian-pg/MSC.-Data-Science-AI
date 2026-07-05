@@ -77,3 +77,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Advanced Insight](./Advanced%20Insight.md)
 
 ## [Important Misconception](./Important%20Misconception.md)
+
+## [Storytelling Failure Modes](./Storytelling%20Failure%20Modes.md)
