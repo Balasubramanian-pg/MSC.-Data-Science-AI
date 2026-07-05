@@ -117,3 +117,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Correct Visualization Approach](./Correct%20Visualization%20Approach.md)
 
 ## [Option 1: Proper Bar Chart](./Option%201%20-%20Proper%20Bar%20Chart.md)
+
+## [Option 2: Separate Line for Growth Rate](./Option%202%20-%20Separate%20Line%20for%20Growth%20Rate.md)
