@@ -53,3 +53,5 @@ week: W05 - Module 3a.  Dashboards
 ## [4. Intuitive](./4.%20Intuitive.md)
 
 ## [Important UX Principle](./Important%20UX%20Principle.md)
+
+## [5. Customized](./5.%20Customized.md)
