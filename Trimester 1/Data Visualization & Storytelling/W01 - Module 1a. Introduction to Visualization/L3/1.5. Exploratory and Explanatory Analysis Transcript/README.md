@@ -37,3 +37,5 @@
 ## [Formula Example: Outlier Detection Using IQR](./Formula%20Example%20-%20Outlier%20Detection%20Using%20IQR.md)
 
 ## [Business Insight](./Business%20Insight.md)
+
+## [2.5 Exploratory Analysis and Data Diversity](./2.5%20Exploratory%20Analysis%20and%20Data%20Diversity.md)
