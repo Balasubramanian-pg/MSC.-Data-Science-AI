@@ -11,3 +11,5 @@
 ## [4.1.5. Understanding Data Types in Tableau](./4.1.5.%20Understanding%20Data%20Types%20in%20Tableau.md)
 
 ## [4.1.6. Constructing a Basic Visualization](./4.1.6.%20Constructing%20a%20Basic%20Visualization.md)
+
+## [4.1.7. Common Pitfalls in Data Connection](./4.1.7.%20Common%20Pitfalls%20in%20Data%20Connection.md)
