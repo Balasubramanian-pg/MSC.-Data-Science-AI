@@ -749,3 +749,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Importing `linear_cmap`](./Importing%20%60linear_cmap%60.md)
 
 ## [Syntax](./Syntax.md)
+
+## [Scatter Plot with Color Mapping](./Scatter%20Plot%20with%20Color%20Mapping.md)
