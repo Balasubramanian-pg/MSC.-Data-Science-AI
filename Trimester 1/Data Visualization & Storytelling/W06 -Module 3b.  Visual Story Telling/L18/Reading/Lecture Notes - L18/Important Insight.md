@@ -1,13 +1,4 @@
 # Important Insight
 
-Visualizations are not neutral.
-
-They influence:
-
-- attention,
-    
-- emotional response,
-    
-- interpretation,
-    
-- and belief formation.
+Slides should support the speaker.  
+They should not replace the speaker.
