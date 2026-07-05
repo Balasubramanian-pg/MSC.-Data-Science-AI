@@ -355,3 +355,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Create bar chart](./Create%20bar%20chart.md)
 
 ## [Add title](./Add%20title.md)
+
+## [Why the Instructor Emphasizes Practice](./Why%20the%20Instructor%20Emphasizes%20Practice.md)
