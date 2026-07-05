@@ -193,3 +193,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Narrative Wrapping Matters](./Why%20Narrative%20Wrapping%20Matters.md)
 
 ## [Data Storytelling Architecture](./Data%20Storytelling%20Architecture.md)
+
+## [Pecha Kucha: Art of Visual Brevity](./Pecha%20Kucha%20-%20Art%20of%20Visual%20Brevity.md)
