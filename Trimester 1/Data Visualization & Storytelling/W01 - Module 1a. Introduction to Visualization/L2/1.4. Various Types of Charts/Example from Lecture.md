@@ -1,9 +1,15 @@
 # Example from Lecture
 
-Election turnout comparison:
+Twitter airline sentiment:
 
-- States above national average
-    
-- States below national average
-    
-- Highest vs lowest turnout
+|Sentiment|Relative Size|
+|---|---|
+|Negative|Highest|
+|Neutral|Moderate|
+|Positive|Lowest|
+
+The visual immediately communicates:
+
+```text
+Negative sentiment dominates airline feedback.
+```
