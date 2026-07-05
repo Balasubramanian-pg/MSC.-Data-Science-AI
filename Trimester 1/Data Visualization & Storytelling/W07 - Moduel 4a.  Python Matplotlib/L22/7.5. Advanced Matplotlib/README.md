@@ -115,3 +115,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Missing Labels](./Missing%20Labels.md)
 
 ## [Wrong Chart Type](./Wrong%20Chart%20Type.md)
+
+## [No Uncertainty Representation](./No%20Uncertainty%20Representation.md)
