@@ -87,3 +87,5 @@
 ## [6. Exploratory Data Analysis Workflow](./6.%20Exploratory%20Data%20Analysis%20Workflow.md)
 
 ## [Typical EDA Pipeline](./Typical%20EDA%20Pipeline.md)
+
+## [7. Visualization Decision Framework](./7.%20Visualization%20Decision%20Framework.md)
