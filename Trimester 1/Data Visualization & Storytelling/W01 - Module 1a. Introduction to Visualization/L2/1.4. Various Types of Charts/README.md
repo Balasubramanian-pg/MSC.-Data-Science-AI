@@ -76,3 +76,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [5.4 Business Insights from Composition](./5.4%20Business%20Insights%20from%20Composition.md)
 
 ## [6. Relationship Charts](./6.%20Relationship%20Charts.md)
+
+## [6.1 Purpose of Relationship Charts](./6.1%20Purpose%20of%20Relationship%20Charts.md)
