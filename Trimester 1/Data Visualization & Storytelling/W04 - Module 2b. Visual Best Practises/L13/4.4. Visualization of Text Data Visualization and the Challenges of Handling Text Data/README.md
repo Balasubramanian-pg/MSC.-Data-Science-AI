@@ -97,3 +97,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [NLP Visualization Goals](./NLP%20Visualization%20Goals.md)
 
 ## [Hidden Computational Philosophy](./Hidden%20Computational%20Philosophy.md)
+
+## [Why This Matters in Modern AI](./Why%20This%20Matters%20in%20Modern%20AI.md)
