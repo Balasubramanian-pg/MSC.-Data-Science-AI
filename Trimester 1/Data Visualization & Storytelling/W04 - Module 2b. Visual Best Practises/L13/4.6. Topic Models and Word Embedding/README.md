@@ -203,3 +203,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Semantic Visualization Matters](./Why%20Semantic%20Visualization%20Matters.md)
 
 ## [Real-World Applications](./Real-World%20Applications.md)
+
+## [Hidden Conceptual Shift](./Hidden%20Conceptual%20Shift.md)
