@@ -445,3 +445,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Problem](./Problem.md)
 
 ## [Solution: Rotate Labels](./Solution%20-%20Rotate%20Labels.md)
+
+## [Why Rotation Matters](./Why%20Rotation%20Matters.md)
