@@ -193,3 +193,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Purpose of Titles](./Purpose%20of%20Titles.md)
 
 ## [Weak Title](./Weak%20Title.md)
+
+## [Better Title](./Better%20Title.md)
