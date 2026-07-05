@@ -301,3 +301,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Final Visualization Insight](./Final%20Visualization%20Insight.md)
 
 ## [Joint Plot Distribution Analysis and Conversational Network Visualization](./Joint%20Plot%20Distribution%20Analysis%20and%20Conversational%20Network%20Visualization.md)
+
+## [From Sentiment Geometry to Communication Networks](./From%20Sentiment%20Geometry%20to%20Communication%20Networks.md)
