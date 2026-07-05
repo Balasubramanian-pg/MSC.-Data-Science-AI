@@ -51,3 +51,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Core Philosophy of Matplotlib](./Core%20Philosophy%20of%20Matplotlib.md)
 
 ## [Example Workflow](./Example%20Workflow.md)
+
+## [Create x values](./Create%20x%20values.md)
