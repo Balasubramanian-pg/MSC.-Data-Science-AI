@@ -141,3 +141,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [the mathematical mean, and adds a 95% Confidence Interval error bar automatically.](./the%20mathematical%20mean%2C%20and%20adds%20a%2095%25%20Confidence%20Interval%20error%20bar%20automatically.md)
 
 ## [4. Operational Comparison Framework](./4.%20Operational%20Comparison%20Framework.md)
+
+## [1. Design Theory: Gestalt & The Cognitive Comparison Flow](./1.%20Design%20Theory%20-%20Gestalt%20%26%20The%20Cognitive%20Comparison%20Flow.md)
