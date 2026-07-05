@@ -183,3 +183,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Long-Term Memory Shapes Interpretation](./Long-Term%20Memory%20Shapes%20Interpretation.md)
 
 ## [Experts vs Beginners](./Experts%20vs%20Beginners.md)
+
+## [Comparative Summary of Memory Types](./Comparative%20Summary%20of%20Memory%20Types.md)
