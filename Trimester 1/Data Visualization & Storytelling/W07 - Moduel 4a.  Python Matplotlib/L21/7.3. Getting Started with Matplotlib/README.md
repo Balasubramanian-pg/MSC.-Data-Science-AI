@@ -315,3 +315,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [What Is Happening Here?](./What%20Is%20Happening%20Here.md)
 
 ## [Important Concept](./Important%20Concept.md)
+
+## [Why Arrays Matter in Visualization](./Why%20Arrays%20Matter%20in%20Visualization.md)
