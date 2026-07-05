@@ -283,3 +283,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Internal Effect](./Internal%20Effect.md)
 
 ## [3. Adding a Legend](./3.%20Adding%20a%20Legend.md)
+
+## [Purpose of Legends](./Purpose%20of%20Legends.md)
