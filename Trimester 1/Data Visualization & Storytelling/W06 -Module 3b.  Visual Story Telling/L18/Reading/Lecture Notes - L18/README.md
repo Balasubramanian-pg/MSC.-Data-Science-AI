@@ -63,3 +63,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Data Storytelling Pipeline](./Data%20Storytelling%20Pipeline.md)
 
 ## [Important Distinction](./Important%20Distinction.md)
+
+## [Common Misunderstanding](./Common%20Misunderstanding.md)
