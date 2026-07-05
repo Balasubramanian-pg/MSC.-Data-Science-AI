@@ -85,3 +85,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Relationship Between Memory Systems](./Relationship%20Between%20Memory%20Systems.md)
 
 ## [Audience-Centric Visualization](./Audience-Centric%20Visualization.md)
+
+## [Data-Centric vs Audience-Centric Design](./Data-Centric%20vs%20Audience-Centric%20Design.md)
