@@ -167,3 +167,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Step C: Use Matplotlib to tune presentation titles, legends, and layouts](./Step%20C%20-%20Use%20Matplotlib%20to%20tune%20presentation%20titles%2C%20legends%2C%20and%20layouts.md)
 
 ## [Position the legend cleanly within the plot area](./Position%20the%20legend%20cleanly%20within%20the%20plot%20area.md)
+
+## [4. Architectural Integration Matrix](./4.%20Architectural%20Integration%20Matrix.md)
