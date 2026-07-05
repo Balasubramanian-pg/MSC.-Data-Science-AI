@@ -1,9 +1,5 @@
 # Critical Property
 
-Ordinal variables preserve:
+Differences are meaningful.
 
-```text
-order
-```
-
-but not proportional meaning.
+Ratios are not.
