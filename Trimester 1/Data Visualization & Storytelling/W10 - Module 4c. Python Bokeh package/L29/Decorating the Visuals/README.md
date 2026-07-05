@@ -283,3 +283,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [`size=10`](./%60size%3D10%60.md)
 
 ## [Create empty figure](./Create%20empty%20figure.md)
+
+## [Plot dimensions](./Plot%20dimensions.md)
