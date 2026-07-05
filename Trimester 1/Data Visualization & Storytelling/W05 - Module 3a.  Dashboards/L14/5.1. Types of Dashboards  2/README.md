@@ -155,3 +155,5 @@ week: W05 - Module 3a.  Dashboards
 ## [3. Poor Layout Hierarchy](./3.%20Poor%20Layout%20Hierarchy.md)
 
 ## [4. Visual Competition](./4.%20Visual%20Competition.md)
+
+## [5. No Analytical Trigger](./5.%20No%20Analytical%20Trigger.md)
