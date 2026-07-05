@@ -31,3 +31,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Move the legend outside the plot box so it doesn't overlap data points](./Move%20the%20legend%20outside%20the%20plot%20box%20so%20it%20doesn%27t%20overlap%20data%20points.md)
 
 ## [4. ADVANCED: Subplot Faceting with `relplot`](./4.%20ADVANCED%20-%20Subplot%20Faceting%20with%20%60relplot%60.md)
+
+## [As mentioned in the transcript, `relplot` (Relational Plot) is a figure-level](./As%20mentioned%20in%20the%20transcript%2C%20%60relplot%60%20%28Relational%20Plot%29%20is%20a%20figure-level.md)
