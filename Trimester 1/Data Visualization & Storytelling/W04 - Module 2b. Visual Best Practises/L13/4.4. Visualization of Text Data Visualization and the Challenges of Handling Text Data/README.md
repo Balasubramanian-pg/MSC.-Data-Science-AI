@@ -109,3 +109,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Text Preprocessing Pipeline](./Text%20Preprocessing%20Pipeline.md)
 
 ## [Transforming Human Language into Computationally Usable Data](./Transforming%20Human%20Language%20into%20Computationally%20Usable%20Data.md)
+
+## [Why Preprocessing Exists](./Why%20Preprocessing%20Exists.md)
