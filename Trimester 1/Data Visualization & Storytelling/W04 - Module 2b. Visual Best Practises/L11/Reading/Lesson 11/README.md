@@ -25,3 +25,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Edward Tufte’s Contribution](./Edward%20Tufte%E2%80%99s%20Contribution.md)
 
 ## [Information-Centric Visualization](./Information-Centric%20Visualization.md)
+
+## [Tufte’s Core Philosophy](./Tufte%E2%80%99s%20Core%20Philosophy.md)
