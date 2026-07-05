@@ -291,3 +291,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Distribution Interpretation Pipeline](./Distribution%20Interpretation%20Pipeline.md)
 
 ## [Important Business Implication](./Important%20Business%20Implication.md)
+
+## [NLP Visualization as Behavioral Analytics](./NLP%20Visualization%20as%20Behavioral%20Analytics.md)
