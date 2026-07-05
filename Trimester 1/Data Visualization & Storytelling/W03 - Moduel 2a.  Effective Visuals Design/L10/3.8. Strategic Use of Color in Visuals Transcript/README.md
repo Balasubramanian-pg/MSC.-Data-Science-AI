@@ -70,3 +70,5 @@ Bad visualizations use color excessively.
 ## [2. Using Color for Categorization](./2.%20Using%20Color%20for%20Categorization.md)
 
 ## [Categorization Workflow](./Categorization%20Workflow.md)
+
+## [Important Constraint](./Important%20Constraint.md)
