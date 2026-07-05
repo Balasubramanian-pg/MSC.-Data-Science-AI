@@ -39,3 +39,5 @@ Every single function, method, and parameter is explained in detail using Python
 ## [MODULE 4: CATEGORICAL DATA (vbar)](./MODULE%204%20-%20CATEGORICAL%20DATA%20%28vbar%29.md)
 
 ## [🟢 Module 5: The ColumnDataSource & Interactivity](./%F0%9F%9F%A2%20Module%205%20-%20The%20ColumnDataSource%20%26%20Interactivity.md)
+
+## [MODULE 5: ColumnDataSource & HoverTool](./MODULE%205%20-%20ColumnDataSource%20%26%20HoverTool.md)
