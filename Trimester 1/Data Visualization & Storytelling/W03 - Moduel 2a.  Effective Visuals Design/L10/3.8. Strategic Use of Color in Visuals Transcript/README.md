@@ -78,3 +78,5 @@ Bad visualizations use color excessively.
 ## [Hierarchy Design](./Hierarchy%20Design.md)
 
 ## [4. Using Color for Magnitude](./4.%20Using%20Color%20for%20Magnitude.md)
+
+## [Sequential Color Scale](./Sequential%20Color%20Scale.md)
