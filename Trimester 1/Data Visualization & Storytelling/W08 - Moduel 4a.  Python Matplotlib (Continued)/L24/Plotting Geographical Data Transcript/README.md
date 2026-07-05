@@ -55,3 +55,5 @@ This is foundational to:
 ## [Step 4: Inspect Data](./Step%204%20-%20Inspect%20Data.md)
 
 ## [Key Insight](./Key%20Insight.md)
+
+## [Step 5: Basic Map Plot](./Step%205%20-%20Basic%20Map%20Plot.md)
