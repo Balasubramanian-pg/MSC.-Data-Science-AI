@@ -15,3 +15,5 @@ week: W01 - Overview of Feature Engineering
 ## [1.4.4. Feature Relationship Visualization](./1.4.4.%20Feature%20Relationship%20Visualization.md)
 
 ## [1.4.5. Standardization and Model Training](./1.4.5.%20Standardization%20and%20Model%20Training.md)
+
+## [1.4.6. Example of Feature Importance Evaluation](./1.4.6.%20Example%20of%20Feature%20Importance%20Evaluation.md)
