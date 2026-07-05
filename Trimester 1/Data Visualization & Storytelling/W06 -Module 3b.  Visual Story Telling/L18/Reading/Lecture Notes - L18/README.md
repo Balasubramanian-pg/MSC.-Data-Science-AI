@@ -163,3 +163,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Misconception](./Important%20Misconception.md)
 
 ## [Einstein Principle](./Einstein%20Principle.md)
+
+## [Relationship to Dashboard Design](./Relationship%20to%20Dashboard%20Design.md)
