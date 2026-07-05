@@ -297,3 +297,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Plot cosine wave](./Plot%20cosine%20wave.md)
 
 ## [Add title and labels](./Add%20title%20and%20labels.md)
+
+## [Show plot](./Show%20plot.md)
