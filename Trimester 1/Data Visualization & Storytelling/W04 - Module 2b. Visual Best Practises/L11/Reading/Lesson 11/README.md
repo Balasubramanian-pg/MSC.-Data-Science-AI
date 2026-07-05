@@ -157,3 +157,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [6. Expressiveness vs Effectiveness](./6.%20Expressiveness%20vs%20Effectiveness.md)
 
 ## [Expressiveness](./Expressiveness.md)
+
+## [Effectiveness](./Effectiveness.md)
