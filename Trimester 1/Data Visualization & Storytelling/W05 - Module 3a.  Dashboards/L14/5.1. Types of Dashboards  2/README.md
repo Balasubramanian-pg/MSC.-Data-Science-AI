@@ -11,3 +11,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Dashboards in Data Storytelling](./Dashboards%20in%20Data%20Storytelling.md)
 
 ## [Author-Driven Elements](./Author-Driven%20Elements.md)
+
+## [Reader-Driven Elements](./Reader-Driven%20Elements.md)
