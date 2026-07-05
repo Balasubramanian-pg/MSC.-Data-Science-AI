@@ -661,3 +661,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Line plot](./Line%20plot.md)
 
 ## [Legend customization](./Legend%20customization.md)
+
+## [Mistake 1: Redundant Legends](./Mistake%201%20-%20Redundant%20Legends.md)
