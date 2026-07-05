@@ -303,3 +303,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Mistake 3: Confusing Plot vs Glyph Styling](./Mistake%203%20-%20Confusing%20Plot%20vs%20Glyph%20Styling.md)
 
 ## [Most Important Takeaway](./Most%20Important%20Takeaway.md)
+
+## [Key Concept](./Key%20Concept.md)
