@@ -165,3 +165,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Time-Series Visualization Insights](./Time-Series%20Visualization%20Insights.md)
 
 ## [Seasonal Patterns](./Seasonal%20Patterns.md)
+
+## [Visualization Architecture](./Visualization%20Architecture.md)
