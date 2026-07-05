@@ -73,3 +73,5 @@ It is fundamentally about:
 ## [Computational Insight](./Computational%20Insight.md)
 
 ## [Advanced Version](./Advanced%20Version.md)
+
+## [Important Conceptual Shift](./Important%20Conceptual%20Shift.md)
