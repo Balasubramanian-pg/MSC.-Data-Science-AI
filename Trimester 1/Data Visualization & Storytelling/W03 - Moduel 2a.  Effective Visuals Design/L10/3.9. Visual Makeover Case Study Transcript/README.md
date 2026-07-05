@@ -74,3 +74,5 @@ The transcript introduces this challenge directly.
 ## [Bad Approach](./Bad%20Approach.md)
 
 ## [Better Approach](./Better%20Approach.md)
+
+## [Important Visualization Principle](./Important%20Visualization%20Principle.md)
