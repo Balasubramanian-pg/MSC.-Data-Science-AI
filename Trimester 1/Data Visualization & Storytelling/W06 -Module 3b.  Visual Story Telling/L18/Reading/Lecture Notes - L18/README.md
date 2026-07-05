@@ -317,3 +317,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Visualization Bridges This Gap](./Visualization%20Bridges%20This%20Gap.md)
 
 ## [Information Compression Principle](./Information%20Compression%20Principle.md)
+
+## [Example Comparison](./Example%20Comparison.md)
