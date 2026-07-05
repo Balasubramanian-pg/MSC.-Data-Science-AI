@@ -343,3 +343,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Misuse of Color Saturation in Visualization](./Misuse%20of%20Color%20Saturation%20in%20Visualization.md)
 
 ## [The COVID Case Map Example](./The%20COVID%20Case%20Map%20Example.md)
+
+## [Color as a Pre-attentive Attribute](./Color%20as%20a%20Pre-attentive%20Attribute.md)
