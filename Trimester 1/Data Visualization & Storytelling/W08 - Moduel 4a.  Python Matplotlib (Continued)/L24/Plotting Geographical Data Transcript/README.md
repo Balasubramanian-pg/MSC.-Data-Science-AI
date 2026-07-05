@@ -45,3 +45,5 @@ This is foundational to:
 ## [Step 2: Import Libraries](./Step%202%20-%20Import%20Libraries.md)
 
 ## [Step 3: Load Geographic Data](./Step%203%20-%20Load%20Geographic%20Data.md)
+
+## [Important Difference](./Important%20Difference.md)
