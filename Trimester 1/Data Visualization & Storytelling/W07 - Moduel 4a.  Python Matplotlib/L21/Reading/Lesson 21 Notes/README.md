@@ -189,3 +189,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [3. Plot Customization](./3.%20Plot%20Customization.md)
 
 ## [Adding a Title](./Adding%20a%20Title.md)
+
+## [Purpose of Titles](./Purpose%20of%20Titles.md)
