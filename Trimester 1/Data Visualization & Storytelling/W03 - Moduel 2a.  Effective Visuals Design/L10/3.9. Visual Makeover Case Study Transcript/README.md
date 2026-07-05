@@ -100,3 +100,5 @@ The transcript introduces this challenge directly.
 ## [Examples](./Examples.md)
 
 ## [Poor Layout](./Poor%20Layout.md)
+
+## [Good Layout](./Good%20Layout.md)
