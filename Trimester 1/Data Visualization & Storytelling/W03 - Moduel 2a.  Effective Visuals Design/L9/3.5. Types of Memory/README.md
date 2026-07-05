@@ -65,3 +65,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Financial Metrics](./Financial%20Metrics.md)
 
 ## [Customer Metrics](./Customer%20Metrics.md)
+
+## [Visualization Chunking](./Visualization%20Chunking.md)
