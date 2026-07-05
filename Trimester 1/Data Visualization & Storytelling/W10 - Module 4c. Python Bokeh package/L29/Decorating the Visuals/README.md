@@ -709,3 +709,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Bokeh Palettes](./Bokeh%20Palettes.md)
 
 ## [Instructor Says "CIDES"](./Instructor%20Says%20CIDES.md)
+
+## [What Is Cividis?](./What%20Is%20Cividis.md)
