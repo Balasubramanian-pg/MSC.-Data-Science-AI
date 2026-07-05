@@ -251,3 +251,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [NASA Columbia Shuttle Case](./NASA%20Columbia%20Shuttle%20Case.md)
 
 ## [Key Problem](./Key%20Problem.md)
+
+## [Presentation Design as Risk Engineering](./Presentation%20Design%20as%20Risk%20Engineering.md)
