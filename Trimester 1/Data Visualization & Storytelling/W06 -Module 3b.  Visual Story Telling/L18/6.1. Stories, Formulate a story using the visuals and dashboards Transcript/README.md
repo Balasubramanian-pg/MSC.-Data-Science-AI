@@ -235,3 +235,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why This Happens](./Why%20This%20Happens.md)
 
 ## [Common Presentation Failures](./Common%20Presentation%20Failures.md)
+
+## [Important Cognitive Insight](./Important%20Cognitive%20Insight.md)
