@@ -17,3 +17,5 @@
 ## [1.1.8. Interactivity and Contextual Navigation](./1.1.8.%20Interactivity%20and%20Contextual%20Navigation.md)
 
 ## [1.1.9. Step-by-Step Dashboard Construction Example](./1.1.9.%20Step-by-Step%20Dashboard%20Construction%20Example.md)
+
+## [1.1.10. Common Design Pitfalls and Misinterpretations](./1.1.10.%20Common%20Design%20Pitfalls%20and%20Misinterpretations.md)
