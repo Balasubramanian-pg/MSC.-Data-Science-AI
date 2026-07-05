@@ -93,3 +93,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Without Pre-Attentive Design](./Without%20Pre-Attentive%20Design.md)
 
 ## [With Pre-Attentive Design](./With%20Pre-Attentive%20Design.md)
+
+## [Important Visualization Principle](./Important%20Visualization%20Principle.md)
