@@ -46,3 +46,5 @@
 ## [Analytical Insight](./Analytical%20Insight.md)
 
 ## [Potential Derived Metrics Mentioned](./Potential%20Derived%20Metrics%20Mentioned.md)
+
+## [3.5 Stage 5: Representing Data](./3.5%20Stage%205%20-%20Representing%20Data.md)
