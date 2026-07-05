@@ -33,3 +33,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [RGBA Color System](./RGBA%20Color%20System.md)
 
 ## [Transparency and Alpha](./Transparency%20and%20Alpha.md)
+
+## [Grayscale Encoding](./Grayscale%20Encoding.md)
