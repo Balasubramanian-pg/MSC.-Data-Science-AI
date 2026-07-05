@@ -45,3 +45,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Axis Manipulation and Misleading Scale Design](./Axis%20Manipulation%20and%20Misleading%20Scale%20Design.md)
 
 ## [1. Natural Ordering Matters](./1.%20Natural%20Ordering%20Matters.md)
+
+## [Why the Inverted Axis Was Misleading](./Why%20the%20Inverted%20Axis%20Was%20Misleading.md)
