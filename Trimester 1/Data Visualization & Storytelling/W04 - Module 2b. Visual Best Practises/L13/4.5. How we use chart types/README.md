@@ -81,3 +81,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Stopword Problem](./Stopword%20Problem.md)
 
 ## [NLP Cleaning Pipeline](./NLP%20Cleaning%20Pipeline.md)
+
+## [Named Entity Dominance](./Named%20Entity%20Dominance.md)
