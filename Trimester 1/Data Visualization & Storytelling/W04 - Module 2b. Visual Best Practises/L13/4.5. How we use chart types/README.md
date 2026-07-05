@@ -205,3 +205,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Advanced Text Analytics in Visualization](./Advanced%20Text%20Analytics%20in%20Visualization.md)
 
 ## [The Evolution of Text Analytics](./The%20Evolution%20of%20Text%20Analytics.md)
+
+## [NLP Evolution Hierarchy](./NLP%20Evolution%20Hierarchy.md)
