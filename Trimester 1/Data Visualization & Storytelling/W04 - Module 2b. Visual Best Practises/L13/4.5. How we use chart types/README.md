@@ -149,3 +149,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Word Tree Structure](./Word%20Tree%20Structure.md)
 
 ## [Why Word Trees Matter](./Why%20Word%20Trees%20Matter.md)
+
+## [Transition From Tokens to Networks](./Transition%20From%20Tokens%20to%20Networks.md)
