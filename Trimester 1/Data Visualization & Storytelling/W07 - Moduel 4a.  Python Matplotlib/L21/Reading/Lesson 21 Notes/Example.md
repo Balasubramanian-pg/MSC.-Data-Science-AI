@@ -1,11 +1,9 @@
 # Example
 
-```python
-fig, ax = plt.subplots()
-```
+A figure can contain:
 
-creates:
-
-- one figure
+- one axes
     
-- one plotting area
+- multiple axes
+    
+- nested subplot arrangements
