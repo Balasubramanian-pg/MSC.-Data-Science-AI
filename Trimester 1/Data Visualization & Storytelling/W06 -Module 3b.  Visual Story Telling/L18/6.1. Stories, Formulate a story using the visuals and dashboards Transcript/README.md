@@ -11,3 +11,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why Storytelling Matters](./Why%20Storytelling%20Matters.md)
 
 ## [Historical Perspective](./Historical%20Perspective.md)
+
+## [Storytelling as Cognitive Compression](./Storytelling%20as%20Cognitive%20Compression.md)
