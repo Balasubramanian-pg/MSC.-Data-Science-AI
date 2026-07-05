@@ -115,3 +115,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Understanding `linspace`](./Understanding%20%60linspace%60.md)
 
 ## [Example Breakdown](./Example%20Breakdown.md)
+
+## [Visual Intuition](./Visual%20Intuition.md)
