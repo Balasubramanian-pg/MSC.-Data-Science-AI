@@ -13,3 +13,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Simulated clean text corpus (e.g., from 20 Newsgroups subset)](./Simulated%20clean%20text%20corpus%20%28e.g.%2C%20from%2020%20Newsgroups%20subset%29.md)
 
 ## [1. Unigram Vectorizer](./1.%20Unigram%20Vectorizer.md)
+
+## [2. Unigram + Bigram + Trigram Vectorizer](./2.%20Unigram%20%2B%20Bigram%20%2B%20Trigram%20Vectorizer.md)
