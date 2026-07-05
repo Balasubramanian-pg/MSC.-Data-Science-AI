@@ -20,3 +20,5 @@
 ## [7. Case Study 2: Project Attainment Dashboard](./7.%20Case%20Study%202%20-%20Project%20Attainment%20Dashboard.md)
 
 ## [8. Principle: Decluttering](./8.%20Principle%20-%20Decluttering.md)
+
+## [9. Case Study 3: Director Headcount Planning](./9.%20Case%20Study%203%20-%20Director%20Headcount%20Planning.md)
