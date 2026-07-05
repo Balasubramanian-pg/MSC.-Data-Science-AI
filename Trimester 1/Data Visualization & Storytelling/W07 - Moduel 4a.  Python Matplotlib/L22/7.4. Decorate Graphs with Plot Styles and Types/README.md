@@ -37,3 +37,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Grayscale Encoding](./Grayscale%20Encoding.md)
 
 ## [Comprehensive Color Demonstration](./Comprehensive%20Color%20Demonstration.md)
+
+## [Cognitive Risks of Color](./Cognitive%20Risks%20of%20Color.md)
