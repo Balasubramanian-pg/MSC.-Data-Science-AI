@@ -239,3 +239,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Visual Communication Principle](./Visual%20Communication%20Principle.md)
 
 ## [Death by Presentation](./Death%20by%20Presentation.md)
+
+## [Cognitive Overload](./Cognitive%20Overload.md)
