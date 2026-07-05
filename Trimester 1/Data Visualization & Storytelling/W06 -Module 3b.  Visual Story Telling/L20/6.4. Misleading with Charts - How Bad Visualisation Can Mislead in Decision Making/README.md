@@ -27,3 +27,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [3. Gestalt Perception](./3.%20Gestalt%20Perception.md)
 
 ## [Why Misleading Charts Often Go Unnoticed](./Why%20Misleading%20Charts%20Often%20Go%20Unnoticed.md)
+
+## [Important Insight: Misleading Does Not Always Mean Malicious](./Important%20Insight%20-%20Misleading%20Does%20Not%20Always%20Mean%20Malicious.md)
