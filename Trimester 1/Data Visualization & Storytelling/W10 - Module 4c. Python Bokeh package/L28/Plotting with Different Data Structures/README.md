@@ -11,3 +11,5 @@
 ## [4.5.5. Factors Affecting Bar Chart Design](./4.5.5.%20Factors%20Affecting%20Bar%20Chart%20Design.md)
 
 ## [4.5.6. Common Pitfalls and Misapplications](./4.5.6.%20Common%20Pitfalls%20and%20Misapplications.md)
+
+## [4.5.7. Conclusions](./4.5.7.%20Conclusions.md)
