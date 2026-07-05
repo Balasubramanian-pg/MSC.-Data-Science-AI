@@ -65,3 +65,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Comparing Three Versions of the Same Data](./Comparing%20Three%20Versions%20of%20the%20Same%20Data.md)
 
 ## [The Reader’s Responsibility](./The%20Reader%E2%80%99s%20Responsibility.md)
+
+## [The Analyst’s Responsibility](./The%20Analyst%E2%80%99s%20Responsibility.md)
