@@ -1,6 +1,6 @@
 # Options
 
-* They assign fixed-length dense vectors based on word context.
-* They produce sparse binary vectors.
-* They can directly handle subword tokenisation.
-* They use co-occurrence matrices like TF-IDF.
+* Trigrams ignore word order.
+* Character-level tokenisation is commonly used in POS tagging.
+* Bigrams capture more contextual information than unigrams.
+* Tokenisation splits text into feature vectors based on frequency.
