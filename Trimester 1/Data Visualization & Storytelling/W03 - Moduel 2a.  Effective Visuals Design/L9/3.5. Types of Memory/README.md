@@ -97,3 +97,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Important Visualization Principle](./Important%20Visualization%20Principle.md)
 
 ## [Real Dashboard Implications](./Real%20Dashboard%20Implications.md)
+
+## [Bad Dashboard Characteristics](./Bad%20Dashboard%20Characteristics.md)
