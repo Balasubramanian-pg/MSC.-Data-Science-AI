@@ -75,3 +75,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Why Interactivity Matters](./Why%20Interactivity%20Matters.md)
 
 ## [Common Interactive Features](./Common%20Interactive%20Features.md)
+
+## [Reader-Driven Narrative](./Reader-Driven%20Narrative.md)
