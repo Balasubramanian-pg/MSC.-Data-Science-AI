@@ -35,3 +35,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Square Root Rule](./Square%20Root%20Rule.md)
 
 ## [Freedman-Diaconis Rule](./Freedman-Diaconis%20Rule.md)
+
+## [Adding Labels to Histogram Bars](./Adding%20Labels%20to%20Histogram%20Bars.md)
