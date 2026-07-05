@@ -185,3 +185,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Observation in the Transcript](./Important%20Observation%20in%20the%20Transcript.md)
 
 ## [Strong Storytelling Thinking](./Strong%20Storytelling%20Thinking.md)
+
+## [Pecha Kucha and the Art of Visual Brevity](./Pecha%20Kucha%20and%20the%20Art%20of%20Visual%20Brevity.md)
