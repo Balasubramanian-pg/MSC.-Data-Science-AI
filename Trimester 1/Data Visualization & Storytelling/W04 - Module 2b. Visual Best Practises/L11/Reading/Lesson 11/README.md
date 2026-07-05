@@ -65,3 +65,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Analytical Mistake](./Important%20Analytical%20Mistake.md)
 
 ## [Ordinal Visualization Techniques](./Ordinal%20Visualization%20Techniques.md)
+
+## [Interval Data](./Interval%20Data.md)
