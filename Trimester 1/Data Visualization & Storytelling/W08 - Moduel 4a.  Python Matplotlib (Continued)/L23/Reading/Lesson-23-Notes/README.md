@@ -219,3 +219,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Understanding `figsize=(12,8)`](./Understanding%20%60figsize%3D%2812%2C8%29%60.md)
 
 ## [Why Different Colors Were Chosen](./Why%20Different%20Colors%20Were%20Chosen.md)
+
+## [Crimson for Temperature](./Crimson%20for%20Temperature.md)
