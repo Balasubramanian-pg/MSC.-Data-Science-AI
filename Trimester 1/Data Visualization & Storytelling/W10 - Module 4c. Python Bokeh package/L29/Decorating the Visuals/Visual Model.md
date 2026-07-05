@@ -1,9 +1,11 @@
 # Visual Model
 
 ```mermaid
-flowchart TD
-    A[Figure]
-    A --> B[Bar Glyph]
-    A --> C[Line Glyph]
-    A --> D[Text Elements]
+flowchart LR
+    A[Axis]
+
+    A --> B[Axis Line]
+    A --> C[Major Tick]
+    A --> D[Minor Tick]
+    A --> E[Major Label]
 ```
