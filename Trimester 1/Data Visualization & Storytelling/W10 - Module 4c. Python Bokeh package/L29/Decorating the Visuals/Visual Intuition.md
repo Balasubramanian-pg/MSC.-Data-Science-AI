@@ -1,12 +1,12 @@
 # Visual Intuition
 
 ```text
-Opacity = 1.0
-████████████
+Solid:
+──────────
 
-Opacity = 0.5
-▒▒▒▒▒▒▒▒▒▒▒▒
+Dashed:
+- - - - - -
 
-Opacity = 0.1
-░░░░░░░░░░░░
+Dotted:
+..........
 ```
