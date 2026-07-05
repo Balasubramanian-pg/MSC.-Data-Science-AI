@@ -21,3 +21,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Traditional View of Text](./Traditional%20View%20of%20Text.md)
 
 ## [Computational View of Text](./Computational%20View%20of%20Text.md)
+
+## [Text Processing Pipeline](./Text%20Processing%20Pipeline.md)
