@@ -1,20 +1,38 @@
 # Most Important Takeaway
 
-Bokeh styling can happen at two moments:
+Bokeh customization is hierarchical:
 
-|Timing|Method|
-|---|---|
-|During creation|pass parameters|
-|After creation|modify object properties|
+```mermaid
+flowchart TD
+    A[Figure]
+    
+    A --> B[Glyphs]
+    A --> C[Axes]
+    A --> D[Grid]
+    A --> E[Title]
 
-This flexibility is one of the reasons Bokeh is suitable for interactive analytical applications, not just academic plotting.
+    B --> F[fill_color]
+    B --> G[line_color]
 
-This section introduces a deeper Bokeh concept:
+    C --> H[axis_line_color]
+    C --> I[label_properties]
+```
 
-> Glyphs remain editable after creation.
+Mastering Bokeh means understanding:
 
-And then transitions into:
+- which object owns which property
+    
+- and how those objects relate structurally.
 
-> axis customization
+This section goes deeper into axis customization and introduces:
 
-These are two different but related layers of visualization control.
+- tick styling
+    
+- label styling
+    
+- label orientation
+    
+- tick formatting
+    
+
+This is where visualization starts becoming presentation engineering, not just plotting.
