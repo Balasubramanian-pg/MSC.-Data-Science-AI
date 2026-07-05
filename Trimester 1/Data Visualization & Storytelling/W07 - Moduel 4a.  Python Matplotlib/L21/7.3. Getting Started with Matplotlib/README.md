@@ -359,3 +359,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why the Instructor Emphasizes Practice](./Why%20the%20Instructor%20Emphasizes%20Practice.md)
 
 ## [The Real Skill in Visualization](./The%20Real%20Skill%20in%20Visualization.md)
+
+## [The “10–15 Core Charts” Principle](./The%20%E2%80%9C10%E2%80%9315%20Core%20Charts%E2%80%9D%20Principle.md)
