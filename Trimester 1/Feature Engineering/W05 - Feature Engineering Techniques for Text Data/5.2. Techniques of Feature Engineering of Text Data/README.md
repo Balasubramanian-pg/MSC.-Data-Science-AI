@@ -87,3 +87,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Convert to a feature vector format (e.g., for a DataFrame)](./Convert%20to%20a%20feature%20vector%20format%20%28e.g.%2C%20for%20a%20DataFrame%29.md)
 
 ## [Expected Feature Output:](./Expected%20Feature%20Output%20-.md)
+
+## [DT (Determiner): 2](./DT%20%28Determiner%29%20-%202.md)
