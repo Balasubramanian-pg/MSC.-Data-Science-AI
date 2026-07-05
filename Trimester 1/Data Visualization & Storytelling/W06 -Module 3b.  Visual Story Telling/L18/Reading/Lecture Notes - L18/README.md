@@ -301,3 +301,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Design Principle](./Important%20Design%20Principle.md)
 
 ## [Example of Strong Hierarchy](./Example%20of%20Strong%20Hierarchy.md)
+
+## [Visual Attention Flow](./Visual%20Attention%20Flow.md)
