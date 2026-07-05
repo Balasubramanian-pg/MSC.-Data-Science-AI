@@ -289,3 +289,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why the Revised Title Works](./Why%20the%20Revised%20Title%20Works.md)
 
 ## [Cognitive Anchoring](./Cognitive%20Anchoring.md)
+
+## [Weak vs Strong Headline](./Weak%20vs%20Strong%20Headline.md)
