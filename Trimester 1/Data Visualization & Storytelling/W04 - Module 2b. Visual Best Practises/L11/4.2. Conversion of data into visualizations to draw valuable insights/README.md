@@ -23,3 +23,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Encoding Decision Framework](./Encoding%20Decision%20Framework.md)
 
 ## [1. Color Encoding](./1.%20Color%20Encoding.md)
+
+## [The Weakest Encoding](./The%20Weakest%20Encoding.md)
