@@ -229,3 +229,5 @@ week: W05 - Module 3a.  Dashboards
 ## [What Determines Dashboard Type?](./What%20Determines%20Dashboard%20Type.md)
 
 ## [1. Time Sensitivity](./1.%20Time%20Sensitivity.md)
+
+## [Definition](./Definition.md)
