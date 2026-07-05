@@ -78,3 +78,5 @@ The transcript introduces this challenge directly.
 ## [Important Visualization Principle](./Important%20Visualization%20Principle.md)
 
 ## [Stakeholder Communication](./Stakeholder%20Communication.md)
+
+## [Positioning in Visualization Design](./Positioning%20in%20Visualization%20Design.md)
