@@ -47,3 +47,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Misleading Bin Width](./Misleading%20Bin%20Width.md)
 
 ## [Outliers Distort Interpretation](./Outliers%20Distort%20Interpretation.md)
+
+## [Bar Charts](./Bar%20Charts.md)
