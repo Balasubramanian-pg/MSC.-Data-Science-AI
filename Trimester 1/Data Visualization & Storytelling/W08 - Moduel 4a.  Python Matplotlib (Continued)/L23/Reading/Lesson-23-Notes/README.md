@@ -243,3 +243,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Horizontal Layout](./Horizontal%20Layout.md)
 
 ## [Grid Layout](./Grid%20Layout.md)
+
+## [High-Dimensional Dashboards](./High-Dimensional%20Dashboards.md)
