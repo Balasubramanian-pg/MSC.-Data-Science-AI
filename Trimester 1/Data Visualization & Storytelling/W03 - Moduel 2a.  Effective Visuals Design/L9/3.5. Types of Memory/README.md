@@ -159,3 +159,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Use Motion Carefully](./Use%20Motion%20Carefully.md)
 
 ## [Use Color Sparingly](./Use%20Color%20Sparingly.md)
+
+## [Important Warning](./Important%20Warning.md)
