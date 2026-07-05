@@ -65,3 +65,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why This Was a True Data Story](./Why%20This%20Was%20a%20True%20Data%20Story.md)
 
 ## [Actionability: The Most Important Goal](./Actionability%20-%20The%20Most%20Important%20Goal.md)
+
+## [Important Modern Parallel](./Important%20Modern%20Parallel.md)
