@@ -401,3 +401,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Advanced Concept](./Advanced%20Concept.md)
 
 ## [Conversation Networks as Graph Theory](./Conversation%20Networks%20as%20Graph%20Theory.md)
+
+## [Communication Graph Model](./Communication%20Graph%20Model.md)
