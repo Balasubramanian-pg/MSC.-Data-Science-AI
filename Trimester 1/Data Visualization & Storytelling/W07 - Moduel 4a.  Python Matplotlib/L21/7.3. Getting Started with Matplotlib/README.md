@@ -9,3 +9,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Matplotlib Matters](./Why%20Matplotlib%20Matters.md)
 
 ## [Core Workflow of Visualization in Python](./Core%20Workflow%20of%20Visualization%20in%20Python.md)
+
+## [1. Importing Libraries](./1.%20Importing%20Libraries.md)
