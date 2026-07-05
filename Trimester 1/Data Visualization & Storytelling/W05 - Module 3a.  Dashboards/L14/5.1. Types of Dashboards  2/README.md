@@ -233,3 +233,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Definition](./Definition.md)
 
 ## [Strategic Dashboards](./Strategic%20Dashboards.md)
+
+## [Strategic Time Horizon](./Strategic%20Time%20Horizon.md)
