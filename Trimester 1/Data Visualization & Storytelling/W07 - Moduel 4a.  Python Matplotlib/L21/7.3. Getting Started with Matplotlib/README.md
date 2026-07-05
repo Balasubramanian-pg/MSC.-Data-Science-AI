@@ -137,3 +137,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why `show()` Exists](./Why%20%60show%28%29%60%20Exists.md)
 
 ## [Full Example](./Full%20Example.md)
+
+## [Generate sine values](./Generate%20sine%20values.md)
