@@ -285,3 +285,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Semantic Relationship Model](./Semantic%20Relationship%20Model.md)
 
 ## [Distribution Analysis](./Distribution%20Analysis.md)
+
+## [Why Sentiment Often Approximates Normality](./Why%20Sentiment%20Often%20Approximates%20Normality.md)
