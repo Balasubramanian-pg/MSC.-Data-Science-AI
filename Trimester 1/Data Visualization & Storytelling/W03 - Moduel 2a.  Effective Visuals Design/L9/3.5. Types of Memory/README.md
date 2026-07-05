@@ -135,3 +135,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Important Insight](./Important%20Insight.md)
 
 ## [Why Iconic Memory Matters](./Why%20Iconic%20Memory%20Matters.md)
+
+## [What Iconic Memory Detects Instantly](./What%20Iconic%20Memory%20Detects%20Instantly.md)
