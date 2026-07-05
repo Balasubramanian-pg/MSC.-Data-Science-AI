@@ -37,3 +37,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Chartjunk Problem](./Chartjunk%20Problem.md)
 
 ## [Important Insight](./Important%20Insight.md)
+
+## [2. Understanding Data Types](./2.%20Understanding%20Data%20Types.md)
