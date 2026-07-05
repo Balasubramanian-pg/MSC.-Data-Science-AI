@@ -67,3 +67,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Common Misunderstanding](./Common%20Misunderstanding.md)
 
 ## [Storytelling as Compression](./Storytelling%20as%20Compression.md)
+
+## [Advanced Cognitive Insight](./Advanced%20Cognitive%20Insight.md)
