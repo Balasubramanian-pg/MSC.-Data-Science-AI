@@ -1,18 +1,12 @@
 # Why This Matters
 
-Good notebooks combine:
+Modern development environments reduce friction by:
 
-- code
+- exposing function signatures
     
-- explanation
+- suggesting valid arguments
     
-- interpretation
+- surfacing inline help
     
 
-This is why notebook systems became popular in:
-
-- education
-    
-- data science
-    
-- ML experimentation
+This accelerates learning significantly.
