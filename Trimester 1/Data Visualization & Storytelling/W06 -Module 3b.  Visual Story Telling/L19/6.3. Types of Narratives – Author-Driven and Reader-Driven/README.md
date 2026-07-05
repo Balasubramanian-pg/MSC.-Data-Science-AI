@@ -59,3 +59,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Common Highlighting Methods](./Common%20Highlighting%20Methods.md)
 
 ## [Important Principle](./Important%20Principle.md)
+
+## [2. Pauses and Pacing](./2.%20Pauses%20and%20Pacing.md)
