@@ -125,3 +125,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important NLP Insight](./Important%20NLP%20Insight.md)
 
 ## [Why Frequency Analysis Is Still Useful](./Why%20Frequency%20Analysis%20Is%20Still%20Useful.md)
+
+## [Frequency Analysis Pipeline](./Frequency%20Analysis%20Pipeline.md)
