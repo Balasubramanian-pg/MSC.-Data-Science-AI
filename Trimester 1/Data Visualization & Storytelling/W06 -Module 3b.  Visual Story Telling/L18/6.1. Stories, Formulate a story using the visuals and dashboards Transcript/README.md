@@ -107,3 +107,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Principle](./Important%20Principle.md)
 
 ## [Visual Language as Cognitive Infrastructure](./Visual%20Language%20as%20Cognitive%20Infrastructure.md)
+
+## [Similar Examples](./Similar%20Examples.md)
