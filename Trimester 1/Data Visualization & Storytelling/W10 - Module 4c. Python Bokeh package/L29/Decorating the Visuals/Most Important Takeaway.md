@@ -1,23 +1,20 @@
 # Most Important Takeaway
 
-Bokeh customization operates at multiple levels:
+Bokeh styling can happen at two moments:
 
-|Level|Example|
+|Timing|Method|
 |---|---|
-|Figure|background, borders|
-|Axis|labels, ticks|
-|Grid|grid lines|
-|Glyph|bars, lines, points|
-|Text|title, annotations|
+|During creation|pass parameters|
+|After creation|modify object properties|
 
-Understanding these layers is the key to mastering Bokeh.
+This flexibility is one of the reasons Bokeh is suitable for interactive analytical applications, not just academic plotting.
 
-This section transitions from:
+This section introduces a deeper Bokeh concept:
 
-- styling the entire plot  
-    to
-    
-- styling individual glyphs
-    
+> Glyphs remain editable after creation.
 
-This distinction is critical in Bokeh.
+And then transitions into:
+
+> axis customization
+
+These are two different but related layers of visualization control.
