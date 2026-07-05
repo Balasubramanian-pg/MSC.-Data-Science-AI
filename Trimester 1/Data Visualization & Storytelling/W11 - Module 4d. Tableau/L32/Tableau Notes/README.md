@@ -13,3 +13,5 @@
 ## [10.1.6. Example of a Left Outer Join](./10.1.6.%20Example%20of%20a%20Left%20Outer%20Join.md)
 
 ## [10.1.7. Factors Affecting Data Architecture](./10.1.7.%20Factors%20Affecting%20Data%20Architecture.md)
+
+## [10.1.8. Essential Visualization Concepts](./10.1.8.%20Essential%20Visualization%20Concepts.md)
