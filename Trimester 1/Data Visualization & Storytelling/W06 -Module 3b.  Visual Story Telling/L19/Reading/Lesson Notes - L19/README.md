@@ -125,3 +125,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Strategic Importance of Zooming Out](./The%20Strategic%20Importance%20of%20Zooming%20Out.md)
 
 ## [Relationship Between These Story Types](./Relationship%20Between%20These%20Story%20Types.md)
+
+## [Example: Regional Crime Concentration](./Example%20-%20Regional%20Crime%20Concentration.md)
