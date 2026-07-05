@@ -1,8 +1,8 @@
 # Answer
 
-✅ **Random Forest**
+✅ **Weight for each feature in predicting log-odds**
 
 > [!NOTE]
 > **Reason**
 >
-> **Random Forest** naturally computes feature importance by measuring how much each feature contributes to reducing impurity across decision trees. PCA performs dimensionality reduction, while KMeans and DBSCAN are clustering algorithms and do not inherently provide feature importance scores.
+> In logistic regression, each coefficient represents the change in the **log-odds** of the target variable for a one-unit increase in the corresponding feature, assuming all other features remain constant. Larger absolute coefficients indicate stronger influence on the prediction.
