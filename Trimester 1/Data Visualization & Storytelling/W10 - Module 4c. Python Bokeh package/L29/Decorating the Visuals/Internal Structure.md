@@ -3,9 +3,11 @@
 ```mermaid
 flowchart TD
     A[Figure]
-    A --> B[Title Object]
-    A --> C[Axes]
-    A --> D[Glyphs]
-```
+    
+    A --> B[Legend Object]
 
-This matters because the title becomes editable later.
+    B --> C[Labels]
+    B --> D[Border]
+    B --> E[Background]
+    B --> F[Title]
+```
