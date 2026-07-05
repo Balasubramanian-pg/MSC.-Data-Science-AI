@@ -1,11 +1,8 @@
 # Important UI Insight
 
-At this point the title becomes:
+Themes are essentially:
 
-- a visual component  
-    not
-    
-- plain text
+- visualization CSS
     
 
-This is dashboard-style presentation logic.
+for Bokeh applications.
