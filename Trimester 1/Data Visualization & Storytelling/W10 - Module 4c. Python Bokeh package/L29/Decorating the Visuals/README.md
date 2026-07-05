@@ -725,3 +725,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Why Predefined Palettes Are Better](./Why%20Predefined%20Palettes%20Are%20Better.md)
 
 ## [Mistake 1: Random Colors](./Mistake%201%20-%20Random%20Colors.md)
+
+## [Mistake 2: Rainbow Palettes](./Mistake%202%20-%20Rainbow%20Palettes.md)
