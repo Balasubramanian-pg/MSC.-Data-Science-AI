@@ -75,3 +75,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Spines](./Spines.md)
 
 ## [What Are Spines?](./What%20Are%20Spines.md)
+
+## [Accessing Spines](./Accessing%20Spines.md)
