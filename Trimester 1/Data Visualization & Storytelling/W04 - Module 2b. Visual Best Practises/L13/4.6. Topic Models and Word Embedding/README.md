@@ -151,3 +151,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important NLP Principle](./Important%20NLP%20Principle.md)
 
 ## [Human Interpretation Layer](./Human%20Interpretation%20Layer.md)
+
+## [Semantic Similarity Between Topics](./Semantic%20Similarity%20Between%20Topics.md)
