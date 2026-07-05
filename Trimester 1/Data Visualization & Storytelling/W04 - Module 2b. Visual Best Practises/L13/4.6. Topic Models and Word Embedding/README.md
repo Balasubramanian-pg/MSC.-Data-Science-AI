@@ -201,3 +201,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Integrated NLP Pipeline](./Integrated%20NLP%20Pipeline.md)
 
 ## [Why Semantic Visualization Matters](./Why%20Semantic%20Visualization%20Matters.md)
+
+## [Real-World Applications](./Real-World%20Applications.md)
