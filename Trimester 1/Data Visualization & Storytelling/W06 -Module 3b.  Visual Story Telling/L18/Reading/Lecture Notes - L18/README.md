@@ -251,3 +251,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Problems in the Slide](./Problems%20in%20the%20Slide.md)
 
 ## [1. Clutter](./1.%20Clutter.md)
+
+## [2. Vague Language](./2.%20Vague%20Language.md)
