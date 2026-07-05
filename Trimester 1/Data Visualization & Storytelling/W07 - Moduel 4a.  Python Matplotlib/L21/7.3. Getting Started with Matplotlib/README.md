@@ -93,3 +93,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Sparse Sampling](./Sparse%20Sampling.md)
 
 ## [Dense Sampling](./Dense%20Sampling.md)
+
+## [2. Generating the Sine Function](./2.%20Generating%20the%20Sine%20Function.md)
