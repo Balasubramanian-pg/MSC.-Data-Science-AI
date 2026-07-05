@@ -60,3 +60,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [4.3 Scatter Plots for Distribution](./4.3%20Scatter%20Plots%20for%20Distribution.md)
 
 ## [4.4 Business Decisions from Distribution Analysis](./4.4%20Business%20Decisions%20from%20Distribution%20Analysis.md)
+
+## [5. Composition Charts](./5.%20Composition%20Charts.md)
