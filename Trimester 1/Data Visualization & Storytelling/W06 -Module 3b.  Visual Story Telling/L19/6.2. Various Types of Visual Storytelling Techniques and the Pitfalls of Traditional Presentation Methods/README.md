@@ -133,3 +133,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Choosing the Right Framework](./Choosing%20the%20Right%20Framework.md)
 
 ## [Monomyth Works Best When:](./Monomyth%20Works%20Best%20When%20-.md)
+
+## [Story Mountain Works Best When:](./Story%20Mountain%20Works%20Best%20When%20-.md)
