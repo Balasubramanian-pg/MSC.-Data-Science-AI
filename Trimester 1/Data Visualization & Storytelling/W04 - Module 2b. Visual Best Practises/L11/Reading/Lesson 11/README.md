@@ -59,3 +59,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Ordinal Data](./Ordinal%20Data.md)
 
 ## [Ordered Categories](./Ordered%20Categories.md)
+
+## [Example](./Example.md)
