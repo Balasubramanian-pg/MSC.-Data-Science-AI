@@ -1,22 +1,20 @@
 # Deep Visualization Insight
 
-At this point, visualization is no longer:
+This final section reveals the full evolution of visualization complexity:
 
-- drawing shapes
+```mermaid
+flowchart LR
+    A[Data]
+    --> B[Glyphs]
+    --> C[Visual Encoding]
+    --> D[Layout]
+    --> E[Themes]
+    --> F[Perception]
+```
+
+At the highest level, visualization systems are:
+
+- perception orchestration systems
     
 
-It becomes:
-
-> encoding information into perceptual channels
-
-Channels include:
-
-- position
-    
-- color
-    
-- size
-    
-- opacity
-    
-- shape
+not merely plotting libraries.
