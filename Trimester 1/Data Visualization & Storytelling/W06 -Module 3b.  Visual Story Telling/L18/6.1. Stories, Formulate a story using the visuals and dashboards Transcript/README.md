@@ -199,3 +199,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Core Idea](./Core%20Idea.md)
 
 ## [Pecha Kucha Format](./Pecha%20Kucha%20Format.md)
+
+## [Why This Format Exists](./Why%20This%20Format%20Exists.md)
