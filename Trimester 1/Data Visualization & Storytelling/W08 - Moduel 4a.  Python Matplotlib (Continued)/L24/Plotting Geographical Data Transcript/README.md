@@ -93,3 +93,5 @@ This is foundational to:
 ## [Important GIS Principle](./Important%20GIS%20Principle.md)
 
 ## [Latitude and Longitude](./Latitude%20and%20Longitude.md)
+
+## [Coordinate Meaning](./Coordinate%20Meaning.md)
