@@ -1,18 +1,18 @@
 # Example
 
-Instead of:
+Users already associate:
 
-- Revenue
-    
-- Margin
-    
-- Profit
-    
-- Retention
-    
-- Churn
-    
-- CAC
-    
+|Color|Meaning|
+|---|---|
+|Red|Danger/loss|
+|Green|Positive/growth|
 
-Group them into:
+These are long-term memory associations.
+
+If a dashboard violates them:
+
+- confusion increases
+    
+- interpretation slows
+    
+- mistakes happen
