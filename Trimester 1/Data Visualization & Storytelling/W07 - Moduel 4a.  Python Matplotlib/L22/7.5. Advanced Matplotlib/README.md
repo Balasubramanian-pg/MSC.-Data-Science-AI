@@ -111,3 +111,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Overusing Colors](./Overusing%20Colors.md)
 
 ## [Decorative Charts](./Decorative%20Charts.md)
+
+## [Missing Labels](./Missing%20Labels.md)
