@@ -293,3 +293,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Cognitive Competition Model](./Cognitive%20Competition%20Model.md)
 
 ## [Why Important Messages Get Lost](./Why%20Important%20Messages%20Get%20Lost.md)
+
+## [Cognitive Overload](./Cognitive%20Overload.md)
