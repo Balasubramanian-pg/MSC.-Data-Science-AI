@@ -1,16 +1,14 @@
 # Why This Matters
 
-Because glyphs have independent styling.
+Method 2 is more flexible for:
 
-You can have:
-
-- multiple lines
+- dashboards
     
-- multiple bars
+- dynamic applications
     
-- different styles
+- reusable plotting systems
     
-- layered plots
+- interactive UI workflows
     
 
-inside one figure.
+Because properties can be modified later.
