@@ -24,3 +24,5 @@
 ## [9. Cognitive Load and Visualization](./9.%20Cognitive%20Load%20and%20Visualization.md)
 
 ## [10. Aesthetics](./10.%20Aesthetics.md)
+
+## [11. The Final Goal: Acceptance](./11.%20The%20Final%20Goal%20-%20Acceptance.md)
