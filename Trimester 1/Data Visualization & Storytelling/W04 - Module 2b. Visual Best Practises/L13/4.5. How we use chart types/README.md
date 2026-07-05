@@ -283,3 +283,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Relationship Between Polarity and Subjectivity](./Relationship%20Between%20Polarity%20and%20Subjectivity.md)
 
 ## [Semantic Relationship Model](./Semantic%20Relationship%20Model.md)
+
+## [Distribution Analysis](./Distribution%20Analysis.md)
