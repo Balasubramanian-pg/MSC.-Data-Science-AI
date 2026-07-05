@@ -115,3 +115,5 @@ This is foundational to:
 ## [5. Telecom](./5.%20Telecom.md)
 
 ## [ML Connections](./ML%20Connections.md)
+
+## [Common Beginner Mistakes](./Common%20Beginner%20Mistakes.md)
