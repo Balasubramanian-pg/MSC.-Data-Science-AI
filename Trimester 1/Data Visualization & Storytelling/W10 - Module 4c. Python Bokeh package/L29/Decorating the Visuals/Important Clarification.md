@@ -1,14 +1,28 @@
 # Important Clarification
 
-The instructor says:
+The transcript says:
 
-> "line colour is the colour of the circle"
+> "25 percent"
 
-This is partially true but technically incomplete.
+But Bokeh uses:
 
-Correct interpretation:
+- pt
+    
+- em
+    
+- px
+    
 
-|Property|Controls|
-|---|---|
-|`fill_color`|interior|
-|`line_color`|outline/border|
+not percentages.
+
+Correct usage:
+
+```python
+"25pt"
+```
+
+or:
+
+```python
+"1.5em"
+```
