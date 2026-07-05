@@ -1,9 +1,12 @@
 # Important Dashboard Principle
 
-Legend placement should:
+Consistency reduces cognitive friction.
 
-- avoid covering data
+Users should focus on:
+
+- information
     
-- minimize eye movement
-    
-- preserve scan flow
+
+not:
+
+- changing visual styles
