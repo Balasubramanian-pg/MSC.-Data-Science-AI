@@ -71,3 +71,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [1. Lack of Explicit Structure](./1.%20Lack%20of%20Explicit%20Structure.md)
 
 ## [Example](./Example.md)
+
+## [2. Context Dependence](./2.%20Context%20Dependence.md)
