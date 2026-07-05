@@ -9,3 +9,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Three Core Tasks of Visualization](./The%20Three%20Core%20Tasks%20of%20Visualization.md)
 
 ## [Why These Three Tasks Matter](./Why%20These%20Three%20Tasks%20Matter.md)
+
+## [The Visualization Goal](./The%20Visualization%20Goal.md)
