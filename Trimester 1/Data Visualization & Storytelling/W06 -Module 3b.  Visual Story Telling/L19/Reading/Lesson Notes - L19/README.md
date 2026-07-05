@@ -127,3 +127,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Relationship Between These Story Types](./Relationship%20Between%20These%20Story%20Types.md)
 
 ## [Example: Regional Crime Concentration](./Example%20-%20Regional%20Crime%20Concentration.md)
+
+## [Why Geographic Context Matters](./Why%20Geographic%20Context%20Matters.md)
