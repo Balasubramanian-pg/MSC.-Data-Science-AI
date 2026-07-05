@@ -1,12 +1,19 @@
 # Example
 
-Weak:
+Election maps eventually shaped:
 
-> “Sales declined in Q4.”
+- media language,
+    
+- political identity,
+    
+- public discourse.
+    
 
-Stronger:
+Terms like:
 
-> “Sales declined sharply after shipping delays increased during holiday demand spikes, suggesting fulfillment reliability is directly affecting customer retention.”
+- “red states”
+    
+- “blue states”
+    
 
-Now the data:  
-has causality and consequence.
+became embedded in national culture.
