@@ -183,3 +183,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [What This Means](./What%20This%20Means.md)
 
 ## [Semantic Cluster Structure](./Semantic%20Cluster%20Structure.md)
+
+## [Why Clustering Matters](./Why%20Clustering%20Matters.md)
