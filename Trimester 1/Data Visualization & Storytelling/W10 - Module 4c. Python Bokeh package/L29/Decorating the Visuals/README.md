@@ -153,3 +153,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Important Distinction](./Important%20Distinction.md)
 
 ## [4. Hatch Properties](./4.%20Hatch%20Properties.md)
+
+## [Hatch Styling](./Hatch%20Styling.md)
