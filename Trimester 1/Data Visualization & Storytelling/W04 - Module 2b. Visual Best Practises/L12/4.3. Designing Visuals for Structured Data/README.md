@@ -59,3 +59,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Common Univariate Visualizations](./Common%20Univariate%20Visualizations.md)
 
 ## [Bar Charts](./Bar%20Charts.md)
+
+## [Best for Categorical Frequency](./Best%20for%20Categorical%20Frequency.md)
