@@ -209,3 +209,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [NLP Is Controlled Information Loss](./NLP%20Is%20Controlled%20Information%20Loss.md)
 
 ## [NLP Compression Pipeline](./NLP%20Compression%20Pipeline.md)
+
+## [Why Preprocessing Matters for Visualization](./Why%20Preprocessing%20Matters%20for%20Visualization.md)
