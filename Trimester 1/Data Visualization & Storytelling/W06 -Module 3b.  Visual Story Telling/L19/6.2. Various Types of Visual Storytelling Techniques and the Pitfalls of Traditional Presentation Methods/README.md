@@ -25,3 +25,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Hidden Role of Context](./The%20Hidden%20Role%20of%20Context.md)
 
 ## [Elite Examples of Data Storytelling](./Elite%20Examples%20of%20Data%20Storytelling.md)
+
+## [Why Their Visuals Feel Powerful](./Why%20Their%20Visuals%20Feel%20Powerful.md)
