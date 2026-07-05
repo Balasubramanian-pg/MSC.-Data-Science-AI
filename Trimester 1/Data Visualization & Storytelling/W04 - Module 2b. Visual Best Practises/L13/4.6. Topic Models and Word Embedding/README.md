@@ -91,3 +91,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Latent Dirichlet Allocation](./Latent%20Dirichlet%20Allocation.md)
 
 ## [Simplified LDA Idea](./Simplified%20LDA%20Idea.md)
+
+## [Inter-Topic Distance](./Inter-Topic%20Distance.md)
