@@ -117,3 +117,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Presentation Beyond PowerPoint](./Presentation%20Beyond%20PowerPoint.md)
 
 ## [Presentation Is Broader Than Slides](./Presentation%20Is%20Broader%20Than%20Slides.md)
+
+## [Presentation as Attention Architecture](./Presentation%20as%20Attention%20Architecture.md)
