@@ -125,3 +125,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [1. Restraint](./1.%20Restraint.md)
 
 ## [Definition](./Definition.md)
+
+## [Important Design Principle](./Important%20Design%20Principle.md)
