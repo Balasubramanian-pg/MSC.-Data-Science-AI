@@ -84,3 +84,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [Correlation Formula](./Correlation%20Formula.md)
 
 ## [Critical Warning](./Critical%20Warning.md)
+
+## [6.3 Bubble Charts](./6.3%20Bubble%20Charts.md)
