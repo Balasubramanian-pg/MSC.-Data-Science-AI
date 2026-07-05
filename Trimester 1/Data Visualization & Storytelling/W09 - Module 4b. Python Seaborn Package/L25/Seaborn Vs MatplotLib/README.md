@@ -111,3 +111,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Activating Seaborn's premium styling theme parameters globally](./Activating%20Seaborn%27s%20premium%20styling%20theme%20parameters%20globally.md)
 
 ## [One line handles the generation, binning calculations, color balance,](./One%20line%20handles%20the%20generation%2C%20binning%20calculations%2C%20color%20balance%2C.md)
+
+## [and structural grid overlay automatically.](./and%20structural%20grid%20overlay%20automatically.md)
