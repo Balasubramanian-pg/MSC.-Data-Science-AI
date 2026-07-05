@@ -48,3 +48,5 @@ The transcript introduces this challenge directly.
 ## [Why Companies Enforce Brand Consistency](./Why%20Companies%20Enforce%20Brand%20Consistency.md)
 
 ## [Brand Identity System](./Brand%20Identity%20System.md)
+
+## [The Visualization Problem](./The%20Visualization%20Problem.md)
