@@ -51,3 +51,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Embedding Learning Pipeline](./Embedding%20Learning%20Pipeline.md)
 
 ## [Important Concept](./Important%20Concept.md)
+
+## [Similar Meaning = Nearby Vectors](./Similar%20Meaning%20%3D%20Nearby%20Vectors.md)
