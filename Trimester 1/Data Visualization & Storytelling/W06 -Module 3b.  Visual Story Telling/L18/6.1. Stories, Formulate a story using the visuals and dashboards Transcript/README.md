@@ -47,3 +47,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why?](./Why.md)
 
 ## [Human Memory Prefers Narrative Structures](./Human%20Memory%20Prefers%20Narrative%20Structures.md)
+
+## [The Science of Storytelling](./The%20Science%20of%20Storytelling.md)
