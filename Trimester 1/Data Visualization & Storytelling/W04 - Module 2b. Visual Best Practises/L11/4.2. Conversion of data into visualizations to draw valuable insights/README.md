@@ -115,3 +115,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Cognitive Strength of Length](./Cognitive%20Strength%20of%20Length.md)
 
 ## [Why Bars Beat Bubbles](./Why%20Bars%20Beat%20Bubbles.md)
+
+## [Important Design Principle](./Important%20Design%20Principle.md)
