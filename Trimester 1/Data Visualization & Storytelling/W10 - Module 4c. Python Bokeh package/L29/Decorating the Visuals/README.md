@@ -657,3 +657,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Common Bad Practice](./Common%20Bad%20Practice.md)
 
 ## [Better Practice](./Better%20Practice.md)
+
+## [Line plot](./Line%20plot.md)
