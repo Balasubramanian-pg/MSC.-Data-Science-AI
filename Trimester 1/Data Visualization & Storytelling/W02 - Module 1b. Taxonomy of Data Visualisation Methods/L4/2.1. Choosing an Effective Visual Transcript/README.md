@@ -20,3 +20,5 @@
 ## [7. Comparison & Composition Visualizations](./7.%20Comparison%20%26%20Composition%20Visualizations.md)
 
 ## [8. Area Charts](./8.%20Area%20Charts.md)
+
+## [9. Visualization Selection Cheat Sheet](./9.%20Visualization%20Selection%20Cheat%20Sheet.md)
