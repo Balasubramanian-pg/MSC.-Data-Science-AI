@@ -49,3 +49,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Text Visualization Pipeline](./Text%20Visualization%20Pipeline.md)
 
 ## [The Central NLP Problem](./The%20Central%20NLP%20Problem.md)
+
+## [Machines Cannot Directly Understand Text](./Machines%20Cannot%20Directly%20Understand%20Text.md)
