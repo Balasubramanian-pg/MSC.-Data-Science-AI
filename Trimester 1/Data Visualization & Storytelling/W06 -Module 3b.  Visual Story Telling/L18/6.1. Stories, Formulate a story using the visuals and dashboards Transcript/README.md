@@ -131,3 +131,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Common Failure](./Common%20Failure.md)
 
 ## [Cognitive Load Theory](./Cognitive%20Load%20Theory.md)
+
+## [Example of Poor Restraint](./Example%20of%20Poor%20Restraint.md)
