@@ -14,3 +14,5 @@
 ## [2.2 Numerical vs Textual Data](./2.2%20Numerical%20vs%20Textual%20Data.md)
 
 ## [2.3 Primary Variables of Interest](./2.3%20Primary%20Variables%20of%20Interest.md)
+
+## [3. The Seven Stages of Data Visualization](./3.%20The%20Seven%20Stages%20of%20Data%20Visualization.md)
