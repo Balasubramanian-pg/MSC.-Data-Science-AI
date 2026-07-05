@@ -85,3 +85,5 @@
 ## [5.4 Business and Policy Insights](./5.4%20Business%20and%20Policy%20Insights.md)
 
 ## [6. Exploratory Data Analysis Workflow](./6.%20Exploratory%20Data%20Analysis%20Workflow.md)
+
+## [Typical EDA Pipeline](./Typical%20EDA%20Pipeline.md)
