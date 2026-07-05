@@ -17,3 +17,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Understanding the Import Statement](./Understanding%20the%20Import%20Statement.md)
 
 ## [Matplotlib Import](./Matplotlib%20Import.md)
+
+## [NumPy Import](./NumPy%20Import.md)
