@@ -1,13 +1,13 @@
 # Example
 
+Before:
+
 ```text
-"Cold"
+Apple APPLE apple
 ```
 
-may refer to:
+After:
 
-- weather
-    
-- illness
-    
-- emotional distance
+```text
+apple apple apple
+```
