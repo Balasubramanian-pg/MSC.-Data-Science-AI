@@ -187,3 +187,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Audience](./Audience.md)
 
 ## [Characteristics](./Characteristics.md)
+
+## [Executive Cognitive Style](./Executive%20Cognitive%20Style.md)
