@@ -51,3 +51,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Central NLP Problem](./The%20Central%20NLP%20Problem.md)
 
 ## [Machines Cannot Directly Understand Text](./Machines%20Cannot%20Directly%20Understand%20Text.md)
+
+## [Why Conversion Is Necessary](./Why%20Conversion%20Is%20Necessary.md)
