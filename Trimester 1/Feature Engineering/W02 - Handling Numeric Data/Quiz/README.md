@@ -9,3 +9,5 @@ week: W02 - Handling Numeric Data
 ## [Question 1](./Question%201.md)
 
 ## [Question](./Question.md)
+
+## [Question 2](./Question%202.md)
