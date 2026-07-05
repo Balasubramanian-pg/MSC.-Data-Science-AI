@@ -111,3 +111,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Similar Examples](./Similar%20Examples.md)
 
 ## [Important Visualization Insight](./Important%20Visualization%20Insight.md)
+
+## [Communication Paradigms](./Communication%20Paradigms.md)
