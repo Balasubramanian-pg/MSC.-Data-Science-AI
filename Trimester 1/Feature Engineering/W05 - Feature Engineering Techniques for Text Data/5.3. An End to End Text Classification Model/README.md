@@ -17,3 +17,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [---------------------------------------------------------](./---------------------------------------------------------.md)
 
 ## [1. Simulate Raw Data (e.g., 20 Newsgroups subset)](./1.%20Simulate%20Raw%20Data%20%28e.g.%2C%2020%20Newsgroups%20subset%29.md)
+
+## [2. Text Preprocessing Function](./2.%20Text%20Preprocessing%20Function.md)
