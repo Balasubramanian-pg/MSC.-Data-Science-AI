@@ -221,3 +221,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Important Warning About Pre-Attentive Attributes](./Important%20Warning%20About%20Pre-Attentive%20Attributes.md)
 
 ## [Why Overuse Is Dangerous](./Why%20Overuse%20Is%20Dangerous.md)
+
+## [Good Design Principle](./Good%20Design%20Principle.md)
