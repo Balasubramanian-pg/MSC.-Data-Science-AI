@@ -55,3 +55,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Important Principle](./Important%20Principle.md)
 
 ## [2. Single-Screen Display](./2.%20Single-Screen%20Display.md)
+
+## [Why This Matters](./Why%20This%20Matters.md)
