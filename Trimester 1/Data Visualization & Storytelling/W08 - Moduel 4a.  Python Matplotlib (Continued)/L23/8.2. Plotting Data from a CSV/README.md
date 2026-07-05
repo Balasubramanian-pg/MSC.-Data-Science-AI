@@ -53,3 +53,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Random Seeds Matter](./Why%20Random%20Seeds%20Matter.md)
 
 ## [Time-Series Index](./Time-Series%20Index.md)
+
+## [Cumulative Sum and Random Walks](./Cumulative%20Sum%20and%20Random%20Walks.md)
