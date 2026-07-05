@@ -89,3 +89,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Detection Quality Depends On](./Detection%20Quality%20Depends%20On.md)
 
 ## [Good Detection](./Good%20Detection.md)
+
+## [Poor Detection](./Poor%20Detection.md)
