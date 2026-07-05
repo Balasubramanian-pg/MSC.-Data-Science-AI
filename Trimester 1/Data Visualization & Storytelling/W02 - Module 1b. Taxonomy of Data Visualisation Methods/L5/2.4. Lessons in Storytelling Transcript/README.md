@@ -20,3 +20,5 @@
 ## [7. Delivery Medium Matters](./7.%20Delivery%20Medium%20Matters.md)
 
 ## [8. Matching Visuals to Communication Intent](./8.%20Matching%20Visuals%20to%20Communication%20Intent.md)
+
+## [9. Storytelling Through Visual Design](./9.%20Storytelling%20Through%20Visual%20Design.md)
