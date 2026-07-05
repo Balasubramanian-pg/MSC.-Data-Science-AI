@@ -26,3 +26,5 @@
 ## [10. Aesthetics](./10.%20Aesthetics.md)
 
 ## [11. The Final Goal: Acceptance](./11.%20The%20Final%20Goal%20-%20Acceptance.md)
+
+## [12. Resistance to New Visualizations](./12.%20Resistance%20to%20New%20Visualizations.md)
