@@ -337,3 +337,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Mathematical Foundation](./Mathematical%20Foundation.md)
 
 ## [Machine Learning Connection](./Machine%20Learning%20Connection.md)
+
+## [Real-World Uses](./Real-World%20Uses.md)
