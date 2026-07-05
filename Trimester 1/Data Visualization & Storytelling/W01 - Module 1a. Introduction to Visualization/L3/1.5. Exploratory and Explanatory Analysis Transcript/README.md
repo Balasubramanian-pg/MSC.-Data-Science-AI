@@ -25,3 +25,5 @@
 ## [2.3 Questions Asked During EDA](./2.3%20Questions%20Asked%20During%20EDA.md)
 
 ## [Typical Exploratory Questions](./Typical%20Exploratory%20Questions.md)
+
+## [2.4 Variables, Structure, and Integrity](./2.4%20Variables%2C%20Structure%2C%20and%20Integrity.md)
