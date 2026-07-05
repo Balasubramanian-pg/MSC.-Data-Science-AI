@@ -109,3 +109,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Quantitative Comparison](./Quantitative%20Comparison.md)
 
 ## [Estimation Is the Hardest Stage](./Estimation%20Is%20the%20Hardest%20Stage.md)
+
+## [Strong Estimation Encodings](./Strong%20Estimation%20Encodings.md)
