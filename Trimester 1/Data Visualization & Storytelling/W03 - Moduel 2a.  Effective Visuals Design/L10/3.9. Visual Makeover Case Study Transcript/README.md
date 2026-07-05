@@ -130,3 +130,5 @@ The transcript introduces this challenge directly.
 ## [Important Advanced Insight](./Important%20Advanced%20Insight.md)
 
 ## [Strategic Dashboard Layout Framework](./Strategic%20Dashboard%20Layout%20Framework.md)
+
+## [Layer 1: Attention Zone](./Layer%201%20-%20Attention%20Zone.md)
