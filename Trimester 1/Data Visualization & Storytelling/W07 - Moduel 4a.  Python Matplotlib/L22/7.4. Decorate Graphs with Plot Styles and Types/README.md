@@ -105,3 +105,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Ignoring Accessibility](./Ignoring%20Accessibility.md)
 
 ## [Decorative Borders](./Decorative%20Borders.md)
+
+## [Advanced Insight](./Advanced%20Insight.md)
