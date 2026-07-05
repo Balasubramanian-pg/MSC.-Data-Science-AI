@@ -393,3 +393,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Axis Objects in Bokeh](./Axis%20Objects%20in%20Bokeh.md)
 
 ## [Common Axis Properties](./Common%20Axis%20Properties.md)
+
+## [Styling Axis Lines](./Styling%20Axis%20Lines.md)
