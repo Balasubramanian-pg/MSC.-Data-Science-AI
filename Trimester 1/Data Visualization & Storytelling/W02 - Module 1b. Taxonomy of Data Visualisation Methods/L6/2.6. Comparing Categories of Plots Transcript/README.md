@@ -18,3 +18,5 @@ This document details five advanced visual paradigms designed for **Categorical 
 ## [4. Small Multiples (Grid / Facet Plots)](./4.%20Small%20Multiples%20%28Grid%20Facet%20Plots%29.md)
 
 ## [5. Circle Packing Diagrams (Containment-Based Hierarchies)](./5.%20Circle%20Packing%20Diagrams%20%28Containment-Based%20Hierarchies%29.md)
+
+## [6. Bubble Hierarchies (Hierarchical Node-Link Trees)](./6.%20Bubble%20Hierarchies%20%28Hierarchical%20Node-Link%20Trees%29.md)
