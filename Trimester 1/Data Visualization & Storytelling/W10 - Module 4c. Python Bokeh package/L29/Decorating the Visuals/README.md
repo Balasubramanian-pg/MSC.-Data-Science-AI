@@ -597,3 +597,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Better](./Better.md)
 
 ## [Dashboard Design Insight](./Dashboard%20Design%20Insight.md)
+
+## [Mistake 1: Decorative Titles](./Mistake%201%20-%20Decorative%20Titles.md)
