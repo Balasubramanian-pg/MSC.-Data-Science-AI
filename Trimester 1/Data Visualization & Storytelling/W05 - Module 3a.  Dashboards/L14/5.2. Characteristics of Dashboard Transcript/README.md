@@ -31,3 +31,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Design Style](./Design%20Style.md)
 
 ## [2. Operational Dashboards](./2.%20Operational%20Dashboards.md)
+
+## [Examples](./Examples.md)
