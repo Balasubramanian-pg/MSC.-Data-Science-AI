@@ -1,25 +1,6 @@
 # Important Distinction
 
-|Property|Controls|
+|Component|Example|
 |---|---|
-|line_color|border|
-|fill_color|inside area|
-
-Example:
-
-```python
-p.circle(
-    x,
-    y,
-    size=20,
-    fill_color="red",
-    line_color="black"
-)
-```
-
-Visual:
-
-```text
-Black border
-Red interior
-```
+|Tick|small line mark|
+|Label|number beside tick|
