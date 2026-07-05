@@ -92,3 +92,5 @@ Bad visualizations use color excessively.
 ## [5. Using Color for Status Communication](./5.%20Using%20Color%20for%20Status%20Communication.md)
 
 ## [Examples](./Examples.md)
+
+## [Status Indicator Decision Tree](./Status%20Indicator%20Decision%20Tree.md)
