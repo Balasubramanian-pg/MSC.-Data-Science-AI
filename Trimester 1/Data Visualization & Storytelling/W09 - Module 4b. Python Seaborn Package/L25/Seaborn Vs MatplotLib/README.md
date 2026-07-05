@@ -103,3 +103,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [2. HISTOGRAM COMPARISON (The Aesthetics & "Garnishing" Test)](./2.%20HISTOGRAM%20COMPARISON%20%28The%20Aesthetics%20%26%20Garnishing%20Test%29.md)
 
 ## [Reset backend styling to default plain state for Matplotlib's demonstration](./Reset%20backend%20styling%20to%20default%20plain%20state%20for%20Matplotlib%27s%20demonstration.md)
+
+## [--- Approach A: Matplotlib Baseline Histogram (Ungarnished) ---](./---%20Approach%20A%20-%20Matplotlib%20Baseline%20Histogram%20%28Ungarnished%29%20---.md)
