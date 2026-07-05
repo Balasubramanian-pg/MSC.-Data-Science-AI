@@ -17,3 +17,5 @@
 ## [4.1.8. Best Practices for Tableau Users](./4.1.8.%20Best%20Practices%20for%20Tableau%20Users.md)
 
 ## [4.1.9. Common Pitfalls in Visual Analysis](./4.1.9.%20Common%20Pitfalls%20in%20Visual%20Analysis.md)
+
+## [4.1.10. Conclusions](./4.1.10.%20Conclusions.md)
