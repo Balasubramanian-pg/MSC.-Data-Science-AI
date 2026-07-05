@@ -1,7 +1,10 @@
 # Final Visualization Philosophy
 
-Text visualization is fundamentally about:
+This lecture demonstrates that text visualization evolves across layers:
 
-```text
-compressing linguistic complexity into perceptually efficient structures
-```
+|Layer|Purpose|
+|---|---|
+|Frequency|What appears often|
+|Structure|What connects|
+|Semantics|What means something|
+|Sentiment|What feels emotional|
