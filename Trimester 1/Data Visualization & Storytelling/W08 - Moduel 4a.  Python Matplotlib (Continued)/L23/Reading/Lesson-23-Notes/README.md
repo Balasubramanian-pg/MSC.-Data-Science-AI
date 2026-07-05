@@ -85,3 +85,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Schema Drift](./Schema%20Drift.md)
 
 ## [Security Considerations](./Security%20Considerations.md)
+
+## [Machine Learning Connections](./Machine%20Learning%20Connections.md)
