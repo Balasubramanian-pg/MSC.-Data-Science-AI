@@ -81,3 +81,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [1. Syntax Mechanics: Subsetting vs. Column Mapping](./1.%20Syntax%20Mechanics%20-%20Subsetting%20vs.%20Column%20Mapping.md)
 
 ## [2. Aesthetics Theory: The "Garnished Food" Concept](./2.%20Aesthetics%20Theory%20-%20The%20Garnished%20Food%20Concept.md)
+
+## [0. SETUP: Re-generating the Student Exam Data Structure](./0.%20SETUP%20-%20Re-generating%20the%20Student%20Exam%20Data%20Structure.md)
