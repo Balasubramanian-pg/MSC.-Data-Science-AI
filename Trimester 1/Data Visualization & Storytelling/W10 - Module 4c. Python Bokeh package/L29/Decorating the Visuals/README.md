@@ -339,3 +339,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Internal Structure](./Internal%20Structure.md)
 
 ## [Accessing Glyph Properties](./Accessing%20Glyph%20Properties.md)
+
+## [Why the `.glyph` Layer Exists](./Why%20the%20%60.glyph%60%20Layer%20Exists.md)
