@@ -75,3 +75,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Dashboards and Storytelling](./Dashboards%20and%20Storytelling.md)
 
 ## [Advanced Insight](./Advanced%20Insight.md)
+
+## [Important Misconception](./Important%20Misconception.md)
