@@ -124,3 +124,5 @@ Bad visualizations use color excessively.
 ## [Color in Storytelling](./Color%20in%20Storytelling.md)
 
 ## [Narrative Flow with Color](./Narrative%20Flow%20with%20Color.md)
+
+## [Real-World Dashboard Example](./Real-World%20Dashboard%20Example.md)
