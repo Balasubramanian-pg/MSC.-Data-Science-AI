@@ -14,3 +14,5 @@
 ## [4. The Audience-Centric Storytelling Framework](./4.%20The%20Audience-Centric%20Storytelling%20Framework.md)
 
 ## [5. Selecting the Appropriate Visual](./5.%20Selecting%20the%20Appropriate%20Visual.md)
+
+## [6. Designing for Attention](./6.%20Designing%20for%20Attention.md)
