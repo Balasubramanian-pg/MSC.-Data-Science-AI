@@ -131,3 +131,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Audience-Centered Storytelling](./Audience-Centered%20Storytelling.md)
 
 ## [Choosing the Right Framework](./Choosing%20the%20Right%20Framework.md)
+
+## [Monomyth Works Best When:](./Monomyth%20Works%20Best%20When%20-.md)
