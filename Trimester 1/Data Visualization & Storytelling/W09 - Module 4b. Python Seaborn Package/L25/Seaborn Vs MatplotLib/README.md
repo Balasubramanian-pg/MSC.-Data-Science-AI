@@ -59,3 +59,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Randomly assign each student to one of three courses: Math, Science, or History](./Randomly%20assign%20each%20student%20to%20one%20of%20three%20courses%20-%20Math%2C%20Science%2C%20or%20History.md)
 
 ## [Construct the unified Pandas DataFrame](./Construct%20the%20unified%20Pandas%20DataFrame.md)
+
+## [2. SEABORN GLOBAL THEMING](./2.%20SEABORN%20GLOBAL%20THEMING.md)
