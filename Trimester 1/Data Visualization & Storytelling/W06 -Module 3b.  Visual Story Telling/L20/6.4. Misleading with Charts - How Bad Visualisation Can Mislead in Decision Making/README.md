@@ -171,3 +171,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Example: Ice Cream Sales and Murders](./Example%20-%20Ice%20Cream%20Sales%20and%20Murders.md)
 
 ## [Confounding Variables](./Confounding%20Variables.md)
+
+## [Why Humans Mistake Correlation for Causation](./Why%20Humans%20Mistake%20Correlation%20for%20Causation.md)
