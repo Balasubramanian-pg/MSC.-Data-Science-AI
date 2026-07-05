@@ -131,3 +131,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Step A: You must manually partition and calculate the mean statistics first](./Step%20A%20-%20You%20must%20manually%20partition%20and%20calculate%20the%20mean%20statistics%20first.md)
 
 ## [Step B: Pass calculated index strings as X-axis keys, and calculated float means as Heights](./Step%20B%20-%20Pass%20calculated%20index%20strings%20as%20X-axis%20keys%2C%20and%20calculated%20float%20means%20as%20Heights.md)
+
+## [2. THE SEABORN WAY: Automatic Statistical Aggregation Natively](./2.%20THE%20SEABORN%20WAY%20-%20Automatic%20Statistical%20Aggregation%20Natively.md)
