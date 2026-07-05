@@ -41,3 +41,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [1. Genres](./1.%20Genres.md)
 
 ## [Annotated Charts](./Annotated%20Charts.md)
+
+## [Flowcharts](./Flowcharts.md)
