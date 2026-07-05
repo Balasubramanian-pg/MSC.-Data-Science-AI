@@ -1,32 +1,16 @@
 # Strategic Insight
 
-This section exposes a critical danger in modern dashboards and analytics culture:
+Cherry picking and color manipulation both exploit the same fundamental mechanism:
 
-> Humans trust visually coherent stories even when they are statistically weak.
+> selective attention control.
 
-That means analysts carry enormous responsibility.
+The analyst decides:
 
-A compelling chart can:
-
-- overpower skepticism
+- what users notice first
     
-- suppress nuance
+- what feels important
     
-- create false confidence
+- what fades into the background
     
 
-Good visualization therefore requires:
-
-- statistical literacy
-    
-- ethical restraint
-    
-- perceptual awareness
-    
-- contextual reasoning
-    
-
-Because ultimately:
-
-> the most dangerous dashboard is not the inaccurate one.  
-> It is the believable one that tells the wrong story.
+This is why visualization is never purely neutral.
