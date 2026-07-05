@@ -27,3 +27,5 @@
 ## [Typical Exploratory Questions](./Typical%20Exploratory%20Questions.md)
 
 ## [2.4 Variables, Structure, and Integrity](./2.4%20Variables%2C%20Structure%2C%20and%20Integrity.md)
+
+## [Variable Identification](./Variable%20Identification.md)
