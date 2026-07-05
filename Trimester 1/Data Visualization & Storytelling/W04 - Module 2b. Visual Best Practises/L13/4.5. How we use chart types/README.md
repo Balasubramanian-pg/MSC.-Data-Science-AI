@@ -427,3 +427,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Communication Spikes Occur](./Why%20Communication%20Spikes%20Occur.md)
 
 ## [Communication Volume as a Signal](./Communication%20Volume%20as%20a%20Signal.md)
+
+## [Why Simple Visualizations Work](./Why%20Simple%20Visualizations%20Work.md)
