@@ -13,3 +13,5 @@
 ## [4.1.6. Category Drill-Downs and Logical Sorting](./4.1.6.%20Category%20Drill-Downs%20and%20Logical%20Sorting.md)
 
 ## [4.1.7. Step-by-Step Visual Analysis Example](./4.1.7.%20Step-by-Step%20Visual%20Analysis%20Example.md)
+
+## [4.1.8. Best Practices for Tableau Users](./4.1.8.%20Best%20Practices%20for%20Tableau%20Users.md)
