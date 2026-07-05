@@ -297,3 +297,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Modern AI Connection](./Modern%20AI%20Connection.md)
 
 ## [Advanced NLP Architecture](./Advanced%20NLP%20Architecture.md)
+
+## [Final Visualization Insight](./Final%20Visualization%20Insight.md)
