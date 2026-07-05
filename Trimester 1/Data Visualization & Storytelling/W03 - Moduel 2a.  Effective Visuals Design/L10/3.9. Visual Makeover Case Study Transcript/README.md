@@ -94,3 +94,5 @@ The transcript introduces this challenge directly.
 ## [Good Positioning Strategy](./Good%20Positioning%20Strategy.md)
 
 ## [Information Hierarchy Model](./Information%20Hierarchy%20Model.md)
+
+## [Core Principle](./Core%20Principle.md)
