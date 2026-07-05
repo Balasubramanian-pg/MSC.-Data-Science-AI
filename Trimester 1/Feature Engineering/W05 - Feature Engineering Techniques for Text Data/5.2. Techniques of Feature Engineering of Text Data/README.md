@@ -57,3 +57,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [Fit and transform the words](./Fit%20and%20transform%20the%20words.md)
 
 ## [Categories discovered: ['hockey' 'religion' 'science']](./Categories%20discovered%20-%20%5B%27hockey%27%20%27religion%27%20%27science%27%5D.md)
+
+## [](./.md)
