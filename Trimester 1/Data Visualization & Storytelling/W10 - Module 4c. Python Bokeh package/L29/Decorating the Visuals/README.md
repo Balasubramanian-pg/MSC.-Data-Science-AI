@@ -61,3 +61,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Option 2: Hexadecimal (good for exact web colors)](./Option%202%20-%20Hexadecimal%20%28good%20for%20exact%20web%20colors%29.md)
 
 ## [Option 3: RGB tuple (good for programmatic generation)](./Option%203%20-%20RGB%20tuple%20%28good%20for%20programmatic%20generation%29.md)
+
+## [Option 4: RGBA tuple (use when transparency is needed)](./Option%204%20-%20RGBA%20tuple%20%28use%20when%20transparency%20is%20needed%29.md)
