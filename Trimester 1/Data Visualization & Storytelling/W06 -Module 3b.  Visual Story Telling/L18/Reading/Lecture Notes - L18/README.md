@@ -87,3 +87,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [5. No Resolution](./5.%20No%20Resolution.md)
 
 ## [Final Takeaways](./Final%20Takeaways.md)
+
+## [2. Visual Storytelling in Action](./2.%20Visual%20Storytelling%20in%20Action.md)
