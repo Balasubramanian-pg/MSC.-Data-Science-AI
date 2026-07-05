@@ -107,3 +107,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Standard Visualization Imports](./Standard%20Visualization%20Imports.md)
 
 ## [Why These Three Libraries Always Appear Together](./Why%20These%20Three%20Libraries%20Always%20Appear%20Together.md)
+
+## [NumPy](./NumPy.md)
