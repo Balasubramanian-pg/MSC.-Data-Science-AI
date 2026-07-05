@@ -145,3 +145,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Common Text Properties](./Common%20Text%20Properties.md)
 
 ## [2. Line Properties](./2.%20Line%20Properties.md)
+
+## [Line Dash Types](./Line%20Dash%20Types.md)
