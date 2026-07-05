@@ -11,3 +11,5 @@
 ## [3.1.5. Analytical Cross-Tabs and Scatter Plots](./3.1.5.%20Analytical%20Cross-Tabs%20and%20Scatter%20Plots.md)
 
 ## [3.1.6. Dashboard Assembly and Layout Principles](./3.1.6.%20Dashboard%20Assembly%20and%20Layout%20Principles.md)
+
+## [3.1.7. Step-by-Step Dashboard Construction Example](./3.1.7.%20Step-by-Step%20Dashboard%20Construction%20Example.md)
