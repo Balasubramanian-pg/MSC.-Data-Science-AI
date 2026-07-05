@@ -157,3 +157,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Breaking Text into Computational Units](./Breaking%20Text%20into%20Computational%20Units.md)
 
 ## [What Is Tokenization?](./What%20Is%20Tokenization.md)
+
+## [Tokenization Pipeline](./Tokenization%20Pipeline.md)
