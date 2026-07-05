@@ -259,3 +259,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Polarity and Subjectivity](./Polarity%20and%20Subjectivity.md)
 
 ## [Two Different Semantic Dimensions](./Two%20Different%20Semantic%20Dimensions.md)
+
+## [Polarity](./Polarity.md)
