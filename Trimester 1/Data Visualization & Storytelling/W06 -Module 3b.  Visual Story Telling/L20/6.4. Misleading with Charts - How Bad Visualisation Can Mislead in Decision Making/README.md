@@ -253,3 +253,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Path 2: Ethnicity → Gender](./Path%202%20-%20Ethnicity%20%E2%86%92%20Gender.md)
 
 ## [Important Insight](./Important%20Insight.md)
+
+## [Why This Matters Psychologically](./Why%20This%20Matters%20Psychologically.md)
