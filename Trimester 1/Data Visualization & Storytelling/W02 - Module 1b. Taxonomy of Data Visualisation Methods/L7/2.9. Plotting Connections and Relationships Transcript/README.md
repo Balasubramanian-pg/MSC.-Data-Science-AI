@@ -15,3 +15,5 @@ week: W02 - Module 1b. Taxonomy of Data Visualisation Methods
 ## [4. Domain III: Mapping Geospatial Data (Spatial Representations and Coordinate Systems)](./4.%20Domain%20III%20-%20Mapping%20Geospatial%20Data%20%28Spatial%20Representations%20and%20Coordinate%20Systems%29.md)
 
 ## [5. Domain IV: Plotting Connections & Relationships (Relational Structures)](./5.%20Domain%20IV%20-%20Plotting%20Connections%20%26%20Relationships%20%28Relational%20Structures%29.md)
+
+## [6. Production-Grade Systems Architecture & Pipelines](./6.%20Production-Grade%20Systems%20Architecture%20%26%20Pipelines.md)
