@@ -19,3 +19,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Definition](./Definition.md)
 
 ## [In Visualization](./In%20Visualization.md)
+
+## [Key Characteristics](./Key%20Characteristics.md)
