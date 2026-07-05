@@ -395,3 +395,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Modern Applications](./Modern%20Applications.md)
 
 ## [Hidden Insight](./Hidden%20Insight.md)
+
+## [Language Is Behavioral Data](./Language%20Is%20Behavioral%20Data.md)
