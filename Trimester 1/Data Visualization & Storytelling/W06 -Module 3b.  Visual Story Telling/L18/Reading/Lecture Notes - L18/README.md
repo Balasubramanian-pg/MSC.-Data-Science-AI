@@ -81,3 +81,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [2. Emotional Manipulation](./2.%20Emotional%20Manipulation.md)
 
 ## [3. No Audience Context](./3.%20No%20Audience%20Context.md)
+
+## [4. No Clear Conflict](./4.%20No%20Clear%20Conflict.md)
