@@ -33,3 +33,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why This Visualization Was Revolutionary](./Why%20This%20Visualization%20Was%20Revolutionary.md)
 
 ## [Why the Story Worked](./Why%20the%20Story%20Worked.md)
+
+## [Visual Storytelling Techniques](./Visual%20Storytelling%20Techniques.md)
