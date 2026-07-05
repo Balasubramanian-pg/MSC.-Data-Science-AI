@@ -69,3 +69,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Analyst’s Responsibility](./The%20Analyst%E2%80%99s%20Responsibility.md)
 
 ## [Common Axis Manipulation Techniques](./Common%20Axis%20Manipulation%20Techniques.md)
+
+## [The Psychological Mechanism](./The%20Psychological%20Mechanism.md)
