@@ -1,13 +1,8 @@
 # Example from Lecture
 
-The data is sorted:
+Mining reveals:
 
 ```text
-Highest voter turnout → Lowest voter turnout
+States above national average = 23
+States below national average = 13
 ```
-
-Result:
-
-- Lakshadweep at top
-    
-- Bihar at bottom
