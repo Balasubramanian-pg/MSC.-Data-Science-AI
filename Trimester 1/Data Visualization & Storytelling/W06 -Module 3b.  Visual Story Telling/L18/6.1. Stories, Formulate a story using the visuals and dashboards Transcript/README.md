@@ -303,3 +303,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Step 1: Identify the Core Message](./Step%201%20-%20Identify%20the%20Core%20Message.md)
 
 ## [Strong Presentation Structure](./Strong%20Presentation%20Structure.md)
+
+## [Step 2: Create Visual Emphasis](./Step%202%20-%20Create%20Visual%20Emphasis.md)
