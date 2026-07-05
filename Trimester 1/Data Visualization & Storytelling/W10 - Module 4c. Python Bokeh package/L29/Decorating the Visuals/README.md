@@ -141,3 +141,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Visual Properties in Bokeh](./Visual%20Properties%20in%20Bokeh.md)
 
 ## [1. Text Properties](./1.%20Text%20Properties.md)
+
+## [Common Text Properties](./Common%20Text%20Properties.md)
