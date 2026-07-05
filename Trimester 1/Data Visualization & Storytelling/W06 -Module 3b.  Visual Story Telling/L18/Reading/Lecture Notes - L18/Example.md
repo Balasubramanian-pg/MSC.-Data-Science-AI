@@ -1,9 +1,20 @@
 # Example
 
-A mostly red election map immediately creates:  
-a perception of political dominance.
+Bad Slide:
 
-Even before users inspect:  
-population counts,  
-electoral votes,  
-or demographic nuance.
+- 12 bullets
+    
+- 3 charts
+    
+- 2 tables
+    
+- 5 colors
+    
+
+Good Slide:
+
+- 1 key message
+    
+- 1 supporting visual
+    
+- strong visual hierarchy
