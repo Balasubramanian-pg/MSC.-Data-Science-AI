@@ -33,3 +33,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Raw Statement](./Raw%20Statement.md)
 
 ## [Story-Driven Statement](./Story-Driven%20Statement.md)
+
+## [3. Cognitive Value of Structured Narratives](./3.%20Cognitive%20Value%20of%20Structured%20Narratives.md)
