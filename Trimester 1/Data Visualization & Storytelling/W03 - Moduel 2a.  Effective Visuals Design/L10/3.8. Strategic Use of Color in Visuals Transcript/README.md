@@ -52,3 +52,5 @@ Bad visualizations use color excessively.
 ## [Strategic Color Usage Framework](./Strategic%20Color%20Usage%20Framework.md)
 
 ## [1. Using Color for Attention](./1.%20Using%20Color%20for%20Attention.md)
+
+## [Goal](./Goal.md)
