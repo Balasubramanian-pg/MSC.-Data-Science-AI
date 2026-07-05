@@ -163,3 +163,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Crimson Was Chosen](./Why%20Crimson%20Was%20Chosen.md)
 
 ## [Time-Series Visualization Insights](./Time-Series%20Visualization%20Insights.md)
+
+## [Seasonal Patterns](./Seasonal%20Patterns.md)
