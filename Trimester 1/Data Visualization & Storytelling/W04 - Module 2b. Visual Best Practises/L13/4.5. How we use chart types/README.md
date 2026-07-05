@@ -127,3 +127,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Frequency Analysis Is Still Useful](./Why%20Frequency%20Analysis%20Is%20Still%20Useful.md)
 
 ## [Frequency Analysis Pipeline](./Frequency%20Analysis%20Pipeline.md)
+
+## [Text Length Analysis](./Text%20Length%20Analysis.md)
