@@ -35,3 +35,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [3. Context](./3.%20Context.md)
 
 ## [Historical Example: The 1854 Cholera Outbreak Map](./Historical%20Example%20-%20The%201854%20Cholera%20Outbreak%20Map.md)
+
+## [3. Storytelling Frameworks](./3.%20Storytelling%20Frameworks.md)
