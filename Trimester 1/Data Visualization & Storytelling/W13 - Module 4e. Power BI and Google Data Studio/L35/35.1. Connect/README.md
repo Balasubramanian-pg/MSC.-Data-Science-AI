@@ -13,3 +13,5 @@
 ## [35.2.6. Geographical Mapping for Spatial Analysis](./35.2.6.%20Geographical%20Mapping%20for%20Spatial%20Analysis.md)
 
 ## [35.2.7. Tree Maps with Drill-Down Functionality](./35.2.7.%20Tree%20Maps%20with%20Drill-Down%20Functionality.md)
+
+## [35.2.8. Waterfall Charts for Cumulative Contribution](./35.2.8.%20Waterfall%20Charts%20for%20Cumulative%20Contribution.md)
