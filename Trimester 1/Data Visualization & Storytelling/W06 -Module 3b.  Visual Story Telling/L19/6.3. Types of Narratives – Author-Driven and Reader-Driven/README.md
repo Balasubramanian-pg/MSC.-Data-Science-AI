@@ -85,3 +85,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Common Ordering Structures](./Common%20Ordering%20Structures.md)
 
 ## [B. Interactivity](./B.%20Interactivity.md)
+
+## [Common Interactive Elements](./Common%20Interactive%20Elements.md)
