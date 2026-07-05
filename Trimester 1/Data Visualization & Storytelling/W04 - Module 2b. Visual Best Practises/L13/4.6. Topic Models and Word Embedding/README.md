@@ -169,3 +169,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why t-SNE Exists](./Why%20t-SNE%20Exists.md)
 
 ## [Dimensionality Reduction Problem](./Dimensionality%20Reduction%20Problem.md)
+
+## [Core Goal of t-SNE](./Core%20Goal%20of%20t-SNE.md)
