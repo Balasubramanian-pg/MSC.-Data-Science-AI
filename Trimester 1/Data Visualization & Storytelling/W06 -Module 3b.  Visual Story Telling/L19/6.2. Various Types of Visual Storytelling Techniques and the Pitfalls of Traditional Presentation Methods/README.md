@@ -49,3 +49,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Pitfalls of Traditional Presentation Methods](./The%20Pitfalls%20of%20Traditional%20Presentation%20Methods.md)
 
 ## [Common Failures](./Common%20Failures.md)
+
+## [The Core Strategic Insight](./The%20Core%20Strategic%20Insight.md)
