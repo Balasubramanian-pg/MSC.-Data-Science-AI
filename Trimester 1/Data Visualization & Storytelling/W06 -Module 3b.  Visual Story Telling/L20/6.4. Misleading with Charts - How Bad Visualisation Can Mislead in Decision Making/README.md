@@ -287,3 +287,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Common Cherry-Picking Tactics](./Common%20Cherry-Picking%20Tactics.md)
 
 ## [The Strategic Lesson](./The%20Strategic%20Lesson.md)
+
+## [Cherry Picking and Selective Framing](./Cherry%20Picking%20and%20Selective%20Framing.md)
