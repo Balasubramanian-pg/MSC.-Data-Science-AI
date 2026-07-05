@@ -23,3 +23,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Key Characteristics](./Key%20Characteristics.md)
 
 ## [Example](./Example.md)
+
+## [Connection to Pre-Attentive Processing](./Connection%20to%20Pre-Attentive%20Processing.md)
