@@ -49,3 +49,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Stories](./Stories.md)
 
 ## [Jerome Bruner’s Theory](./Jerome%20Bruner%E2%80%99s%20Theory.md)
+
+## [Why Narrative Improves Recall](./Why%20Narrative%20Improves%20Recall.md)
