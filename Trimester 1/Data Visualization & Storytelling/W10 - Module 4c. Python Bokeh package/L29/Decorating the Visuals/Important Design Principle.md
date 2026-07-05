@@ -1,37 +1,16 @@
 # Important Design Principle
 
-The instructor briefly mentioned:
+The instructor accidentally demonstrates something important:
 
-> "visualization guidelines"
+```text
+Plots are stateful
+```
 
-This matters more than syntax.
+Meaning:
 
-A technically correct plot can still be:
-
-- misleading
+- once glyphs are added
     
-- unreadable
-    
-- cognitively exhausting
+- they persist in the figure object
     
 
-Good visualization balances:
-
-- information density
-    
-- contrast
-    
-- hierarchy
-    
-- readability
-    
-
-Not decoration.
-
-This section explains one of the most important ideas in Bokeh:
-
-> Everything in the plot is an object with editable properties.
-
-You create a figure once, then modify parts of it incrementally.
-
-This is object-oriented visualization design.
+This is why rerunning cells in notebooks can produce unexpected layered results.
