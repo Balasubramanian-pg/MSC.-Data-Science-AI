@@ -85,3 +85,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Building and Customizing Plots in Matplotlib](./Building%20and%20Customizing%20Plots%20in%20Matplotlib.md)
 
 ## [1. Creating Numerical Data with `linspace`](./1.%20Creating%20Numerical%20Data%20with%20%60linspace%60.md)
+
+## [Why Dense Sampling Matters](./Why%20Dense%20Sampling%20Matters.md)
