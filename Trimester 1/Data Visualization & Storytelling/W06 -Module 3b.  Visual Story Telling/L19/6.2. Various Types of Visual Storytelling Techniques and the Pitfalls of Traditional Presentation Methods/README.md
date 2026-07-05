@@ -109,3 +109,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Resolution Phase](./Resolution%20Phase.md)
 
 ## [Simplified Narrative Flow](./Simplified%20Narrative%20Flow.md)
+
+## [Why This Works Better Than Traditional Dashboards](./Why%20This%20Works%20Better%20Than%20Traditional%20Dashboards.md)
