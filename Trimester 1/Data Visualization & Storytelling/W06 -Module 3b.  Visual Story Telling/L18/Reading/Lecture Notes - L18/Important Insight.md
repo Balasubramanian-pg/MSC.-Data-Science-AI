@@ -1,7 +1,7 @@
 # Important Insight
 
-Most presentation failure is:  
-not informational failure.
+Presentation titles act as:  
+cognitive anchors.
 
-It is:  
-attention management failure.
+A misleading title biases:  
+subsequent interpretation.
