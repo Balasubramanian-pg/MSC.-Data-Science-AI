@@ -13,3 +13,5 @@ week: W02 - Handling Numeric Data
 ## [2.7.3. Deep Dive: Discretization and Binning](./2.7.3.%20Deep%20Dive%20-%20Discretization%20and%20Binning.md)
 
 ## [2.7.4. Deep Dive: Feature Scaling and Proximity](./2.7.4.%20Deep%20Dive%20-%20Feature%20Scaling%20and%20Proximity.md)
+
+## [2.7.5. Deep Dive: Attribute Transformations](./2.7.5.%20Deep%20Dive%20-%20Attribute%20Transformations.md)
