@@ -77,3 +77,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Mental Models](./Mental%20Models.md)
 
 ## [Pattern Recognition](./Pattern%20Recognition.md)
+
+## [Storytelling and Long-Term Memory](./Storytelling%20and%20Long-Term%20Memory.md)
