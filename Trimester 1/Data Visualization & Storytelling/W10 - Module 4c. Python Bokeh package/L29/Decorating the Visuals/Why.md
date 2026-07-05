@@ -1,11 +1,28 @@
 # Why?
 
-Because it enables:
+Bokeh layout system uses positional keywords.
 
-- interactivity
+Correct:
+
+```python
+plot.add_layout(plot.title, "above")
+```
+
+Not:
+
+```python
+"top"
+```
+
+because internally Bokeh layout regions are:
+
+- above
     
-- dynamic dashboards
+- below
     
-- animations
+- left
     
-- user-driven styling
+- right
+    
+
+This comes from web-layout architecture.
