@@ -51,3 +51,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Therefore the Real Skill Is:](./Therefore%20the%20Real%20Skill%20Is%20-.md)
 
 ## [6. Documentation-Driven Learning](./6.%20Documentation-Driven%20Learning.md)
+
+## [Why Documentation Matters](./Why%20Documentation%20Matters.md)
