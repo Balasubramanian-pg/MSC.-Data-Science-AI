@@ -1,6 +1,6 @@
 # Options
 
-* Sequential Forward Selection
-* Random Forest Feature Importance
-* LASSO
-* Sequential Backward Selection
+* Embedded methods with SVM
+* Backward Feature Elimination
+* Fisher Score
+* Wrapper methods with cross-validation
