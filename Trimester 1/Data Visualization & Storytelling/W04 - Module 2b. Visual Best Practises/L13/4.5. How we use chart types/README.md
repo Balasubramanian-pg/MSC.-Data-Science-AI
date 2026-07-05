@@ -447,3 +447,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why This Is Important](./Why%20This%20Is%20Important.md)
 
 ## [Communication Centrality](./Communication%20Centrality.md)
+
+## [Centrality Concept](./Centrality%20Concept.md)
