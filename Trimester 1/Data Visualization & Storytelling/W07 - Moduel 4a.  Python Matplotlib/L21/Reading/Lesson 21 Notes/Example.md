@@ -1,13 +1,8 @@
 # Example
 
-Bad:
+```python
+ax.plot(x, y, label='Sine')
+ax.plot(x, y2, label='Cosine')
 
-```text
-Sales
-```
-
-Better:
-
-```text
-Quarterly Sales Revenue (USD Millions)
+ax.legend()
 ```
