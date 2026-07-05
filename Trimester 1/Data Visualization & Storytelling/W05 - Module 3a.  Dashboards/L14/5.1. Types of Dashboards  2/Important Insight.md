@@ -1,7 +1,11 @@
 # Important Insight
 
-Dashboard design is fundamentally:  
-decision-design.
+More interactivity is not always better.
 
-Different decisions require:  
-different information architectures.
+Interaction must match:
+
+- decision speed,
+    
+- user expertise,
+    
+- and operational context.
