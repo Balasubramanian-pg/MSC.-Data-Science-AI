@@ -267,3 +267,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Key Tradeoff Dimensions](./Key%20Tradeoff%20Dimensions.md)
 
 ## [Why One Dashboard Usually Fails](./Why%20One%20Dashboard%20Usually%20Fails.md)
+
+## [Layered Dashboard Ecosystems](./Layered%20Dashboard%20Ecosystems.md)
