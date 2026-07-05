@@ -31,3 +31,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Categorical Data](./Categorical%20Data.md)
 
 ## [Best Visualizations](./Best%20Visualizations.md)
+
+## [Poor Choices](./Poor%20Choices.md)
