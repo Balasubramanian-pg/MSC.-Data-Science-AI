@@ -50,3 +50,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [4.1 Understanding Distribution](./4.1%20Understanding%20Distribution.md)
 
 ## [Key Questions Distribution Answers](./Key%20Questions%20Distribution%20Answers.md)
+
+## [4.2 Histograms](./4.2%20Histograms.md)
