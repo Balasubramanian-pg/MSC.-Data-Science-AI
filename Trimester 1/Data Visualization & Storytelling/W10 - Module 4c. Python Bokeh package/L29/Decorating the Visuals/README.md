@@ -403,3 +403,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Why Grid Styling Matters](./Why%20Grid%20Styling%20Matters.md)
 
 ## [Professional Visualization Principle](./Professional%20Visualization%20Principle.md)
+
+## [Full Axis Styling Example](./Full%20Axis%20Styling%20Example.md)
