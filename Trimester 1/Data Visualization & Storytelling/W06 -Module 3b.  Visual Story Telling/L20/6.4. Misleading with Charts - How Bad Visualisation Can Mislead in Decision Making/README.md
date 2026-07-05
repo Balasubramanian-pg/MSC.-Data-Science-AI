@@ -331,3 +331,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Good Color Encoding Principles](./Good%20Color%20Encoding%20Principles.md)
 
 ## [Sequential Data](./Sequential%20Data.md)
+
+## [Categorical Data](./Categorical%20Data.md)
