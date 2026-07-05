@@ -593,3 +593,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Good Visualization Title Principles](./Good%20Visualization%20Title%20Principles.md)
 
 ## [Weak](./Weak.md)
+
+## [Better](./Better.md)
