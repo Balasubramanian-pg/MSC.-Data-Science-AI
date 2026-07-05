@@ -2,6 +2,9 @@
 
 ```mermaid
 flowchart LR
-    A[Increase in X] --> B[Slope Controls Rise]
-    B --> C[Line Growth]
+    A[Positive Slope] --> B[Line Rises]
 ```
+
+As (x) increases:
+
+- (y) increases linearly.
