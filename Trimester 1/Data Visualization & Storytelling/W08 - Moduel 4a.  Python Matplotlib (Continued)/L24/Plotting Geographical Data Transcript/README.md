@@ -109,3 +109,5 @@ This is foundational to:
 ## [2. Retail](./2.%20Retail.md)
 
 ## [3. Climate Science](./3.%20Climate%20Science.md)
+
+## [4. Epidemiology](./4.%20Epidemiology.md)
