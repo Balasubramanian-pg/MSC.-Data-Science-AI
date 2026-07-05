@@ -1,14 +1,10 @@
 # Example
 
-Instead of reading:
+Instead of:  
+“all sales metrics”
 
-- 183 GDP growth values,
-    
+A better dashboard asks:
 
-a world heatmap immediately communicates:
+> Why are delivery delays increasing this month?
 
-- global recession,
-    
-- regional growth,
-    
-- recovery patterns.
+Now every visualization supports that question.
