@@ -37,3 +37,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Historical Example: The 1854 Cholera Outbreak Map](./Historical%20Example%20-%20The%201854%20Cholera%20Outbreak%20Map.md)
 
 ## [3. Storytelling Frameworks](./3.%20Storytelling%20Frameworks.md)
+
+## [A. Monomyth (Hero’s Journey)](./A.%20Monomyth%20%28Hero%E2%80%99s%20Journey%29.md)
