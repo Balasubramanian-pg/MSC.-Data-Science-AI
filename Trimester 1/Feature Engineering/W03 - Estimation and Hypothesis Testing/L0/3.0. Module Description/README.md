@@ -25,3 +25,5 @@
 ## [3.0.12. Strategic Application Framework](./3.0.12.%20Strategic%20Application%20Framework.md)
 
 ## [3.0.13. Common Misinterpretations](./3.0.13.%20Common%20Misinterpretations.md)
+
+## [3.0.14. Conclusions](./3.0.14.%20Conclusions.md)
