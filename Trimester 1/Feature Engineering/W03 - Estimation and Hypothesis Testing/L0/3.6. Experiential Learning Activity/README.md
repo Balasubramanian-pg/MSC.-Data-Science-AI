@@ -9,3 +9,5 @@
 ## [3.6.4. Filter Feature Selection Metrics](./3.6.4.%20Filter%20Feature%20Selection%20Metrics.md)
 
 ## [3.6.5. Wrapper and Embedded Selection Methods](./3.6.5.%20Wrapper%20and%20Embedded%20Selection%20Methods.md)
+
+## [3.6.6. Example of a Sequential Forward Selection Iteration](./3.6.6.%20Example%20of%20a%20Sequential%20Forward%20Selection%20Iteration.md)
