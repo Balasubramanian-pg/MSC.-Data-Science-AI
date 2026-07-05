@@ -433,3 +433,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Temporal Pattern Recognition](./Temporal%20Pattern%20Recognition.md)
 
 ## [Metadata vs Content](./Metadata%20vs%20Content.md)
+
+## [Communication Density Analysis](./Communication%20Density%20Analysis.md)
