@@ -171,3 +171,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Visual Structure](./Visual%20Structure.md)
 
 ## [Why This Separation Matters](./Why%20This%20Separation%20Matters.md)
+
+## [Multi-Plot Example](./Multi-Plot%20Example.md)
