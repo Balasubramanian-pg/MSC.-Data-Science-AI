@@ -1,7 +1,5 @@
 # Definition
 
-Working memory is the system responsible for actively processing information.
+Long-term memory stores accumulated knowledge, experiences, patterns, and learned associations.
 
-This is where thinking happens.
-
-When users compare values, interpret trends, or analyze relationships, they are using working memory.
+This is where expertise lives.
