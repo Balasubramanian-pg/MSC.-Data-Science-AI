@@ -91,3 +91,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Example Comparison](./Example%20Comparison.md)
 
 ## [Sparse Sampling](./Sparse%20Sampling.md)
+
+## [Dense Sampling](./Dense%20Sampling.md)
