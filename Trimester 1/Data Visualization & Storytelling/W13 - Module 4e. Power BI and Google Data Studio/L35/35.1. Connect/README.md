@@ -21,3 +21,5 @@
 ## [35.2.10. Common Dashboarding Mistakes to Avoid](./35.2.10.%20Common%20Dashboarding%20Mistakes%20to%20Avoid.md)
 
 ## [35.2.11. Sharing and Deployment Options](./35.2.11.%20Sharing%20and%20Deployment%20Options.md)
+
+## [35.2.12. Conclusions](./35.2.12.%20Conclusions.md)
