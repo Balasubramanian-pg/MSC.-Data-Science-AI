@@ -297,3 +297,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Engineering Analogy](./Engineering%20Analogy.md)
 
 ## [Mistake 1: Overstyling](./Mistake%201%20-%20Overstyling.md)
+
+## [Mistake 2: Removing All Grids](./Mistake%202%20-%20Removing%20All%20Grids.md)
