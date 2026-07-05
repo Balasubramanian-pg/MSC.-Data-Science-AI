@@ -57,3 +57,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Bad Uses](./Bad%20Uses.md)
 
 ## [2. Volume / Area Encoding](./2.%20Volume%20Area%20Encoding.md)
+
+## [Bubble Charts and Circle Size](./Bubble%20Charts%20and%20Circle%20Size.md)
