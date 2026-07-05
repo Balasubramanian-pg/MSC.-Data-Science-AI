@@ -9,3 +9,5 @@ A robust taxonomy organizes data visualization methods by their primary communic
 ## [3. Assessing Hierarchies: Part-to-Whole and Structural Visualizations](./3.%20Assessing%20Hierarchies%20-%20Part-to-Whole%20and%20Structural%20Visualizations.md)
 
 ## [4. Production-Grade Systems Architecture & Pipelines](./4.%20Production-Grade%20Systems%20Architecture%20%26%20Pipelines.md)
+
+## [5. Edge Cases, Failure Modes, and Production Debugging](./5.%20Edge%20Cases%2C%20Failure%20Modes%2C%20and%20Production%20Debugging.md)
