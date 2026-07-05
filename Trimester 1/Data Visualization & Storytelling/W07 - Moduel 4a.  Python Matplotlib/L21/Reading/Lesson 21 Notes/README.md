@@ -237,3 +237,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Customize chart](./Customize%20chart.md)
 
 ## [Add grid and legend](./Add%20grid%20and%20legend.md)
+
+## [Render chart](./Render%20chart.md)
