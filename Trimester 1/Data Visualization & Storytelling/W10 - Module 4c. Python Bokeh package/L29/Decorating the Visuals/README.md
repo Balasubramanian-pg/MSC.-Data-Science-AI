@@ -291,3 +291,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Background styling](./Background%20styling.md)
 
 ## [Remove grid lines](./Remove%20grid%20lines.md)
+
+## [Scatter plot](./Scatter%20plot.md)
