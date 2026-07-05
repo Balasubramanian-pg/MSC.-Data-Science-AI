@@ -473,3 +473,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Mistake 1: Over-Rotating Labels](./Mistake%201%20-%20Over-Rotating%20Labels.md)
 
 ## [Mistake 2: Excessive Tick Styling](./Mistake%202%20-%20Excessive%20Tick%20Styling.md)
+
+## [Mistake 3: Ignoring Formatting](./Mistake%203%20-%20Ignoring%20Formatting.md)
