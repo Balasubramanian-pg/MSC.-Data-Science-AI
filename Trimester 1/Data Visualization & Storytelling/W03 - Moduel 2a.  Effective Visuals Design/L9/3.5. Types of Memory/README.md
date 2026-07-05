@@ -139,3 +139,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [What Iconic Memory Detects Instantly](./What%20Iconic%20Memory%20Detects%20Instantly.md)
 
 ## [Case 1](./Case%201.md)
+
+## [Case 2](./Case%202.md)
