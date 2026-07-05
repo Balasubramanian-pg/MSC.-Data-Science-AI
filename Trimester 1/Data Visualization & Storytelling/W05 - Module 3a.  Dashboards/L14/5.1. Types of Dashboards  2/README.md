@@ -15,3 +15,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Reader-Driven Elements](./Reader-Driven%20Elements.md)
 
 ## [Hybrid Narrative Architecture](./Hybrid%20Narrative%20Architecture.md)
+
+## [What Makes Dashboards Unique?](./What%20Makes%20Dashboards%20Unique.md)
