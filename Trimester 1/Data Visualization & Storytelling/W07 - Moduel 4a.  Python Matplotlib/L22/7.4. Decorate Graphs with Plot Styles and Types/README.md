@@ -23,3 +23,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [The Fundamental Role of Color](./The%20Fundamental%20Role%20of%20Color.md)
 
 ## [Default Color Cycles](./Default%20Color%20Cycles.md)
+
+## [Single-Letter Color Codes](./Single-Letter%20Color%20Codes.md)
