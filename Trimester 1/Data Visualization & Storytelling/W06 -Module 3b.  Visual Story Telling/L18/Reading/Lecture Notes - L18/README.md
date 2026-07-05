@@ -205,3 +205,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Cognitive Principle](./Cognitive%20Principle.md)
 
 ## [2. Unexpected](./2.%20Unexpected.md)
+
+## [Why This Works](./Why%20This%20Works.md)
