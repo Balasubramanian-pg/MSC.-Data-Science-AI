@@ -211,3 +211,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Aggregated Analysis](./Aggregated%20Analysis.md)
 
 ## [Person A](./Person%20A.md)
+
+## [Person B](./Person%20B.md)
