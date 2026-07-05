@@ -207,3 +207,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Purpose of Grids](./Purpose%20of%20Grids.md)
 
 ## [Tradeoff](./Tradeoff.md)
+
+## [5. Adding Legends](./5.%20Adding%20Legends.md)
