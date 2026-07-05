@@ -113,3 +113,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why This Works Better Than Traditional Dashboards](./Why%20This%20Works%20Better%20Than%20Traditional%20Dashboards.md)
 
 ## [Nested Loops Framework](./Nested%20Loops%20Framework.md)
+
+## [Core Idea](./Core%20Idea.md)
