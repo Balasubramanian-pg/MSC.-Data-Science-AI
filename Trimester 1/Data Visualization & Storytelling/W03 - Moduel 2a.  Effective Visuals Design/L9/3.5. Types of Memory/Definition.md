@@ -1,7 +1,7 @@
 # Definition
 
-Sensory memory is the ultra-short-term storage system that briefly holds incoming sensory information.
+Working memory is the system responsible for actively processing information.
 
-Before conscious thinking happens, the brain temporarily stores what the eyes see.
+This is where thinking happens.
 
-This is the first stage of perception.
+When users compare values, interpret trends, or analyze relationships, they are using working memory.
