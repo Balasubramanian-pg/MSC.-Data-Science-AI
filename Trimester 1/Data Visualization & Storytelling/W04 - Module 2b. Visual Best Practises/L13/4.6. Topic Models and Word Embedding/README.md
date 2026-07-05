@@ -23,3 +23,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Example from the Lecture](./Example%20from%20the%20Lecture.md)
 
 ## [Important Insight](./Important%20Insight.md)
+
+## [Semantic Similarity](./Semantic%20Similarity.md)
