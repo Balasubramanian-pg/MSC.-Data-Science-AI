@@ -121,3 +121,5 @@ week: W05 - Module 3a.  Dashboards
 ## [2. Information Density](./2.%20Information%20Density.md)
 
 ## [3. Cognitive Load Reduction](./3.%20Cognitive%20Load%20Reduction.md)
+
+## [4. Situational Awareness](./4.%20Situational%20Awareness.md)
