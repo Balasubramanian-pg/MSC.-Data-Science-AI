@@ -127,3 +127,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Types of Human Memory in Data Visualization](./Types%20of%20Human%20Memory%20in%20Data%20Visualization.md)
 
 ## [The Three Types of Memory](./The%20Three%20Types%20of%20Memory.md)
+
+## [1. Iconic Memory](./1.%20Iconic%20Memory.md)
