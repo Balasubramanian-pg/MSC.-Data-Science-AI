@@ -715,3 +715,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Why Perceptual Uniformity Matters](./Why%20Perceptual%20Uniformity%20Matters.md)
 
 ## [Palette Example](./Palette%20Example.md)
+
+## [Why Palettes Matter in Real Systems](./Why%20Palettes%20Matter%20in%20Real%20Systems.md)
