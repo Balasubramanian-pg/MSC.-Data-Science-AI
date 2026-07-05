@@ -85,3 +85,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [3. Interactive Slideshows](./3.%20Interactive%20Slideshows.md)
 
 ## [Comparing Narrative Types](./Comparing%20Narrative%20Types.md)
+
+## [Strategic Insight](./Strategic%20Insight.md)
