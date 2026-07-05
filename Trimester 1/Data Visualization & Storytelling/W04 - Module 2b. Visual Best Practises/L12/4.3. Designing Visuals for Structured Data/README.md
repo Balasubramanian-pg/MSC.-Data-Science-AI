@@ -93,3 +93,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Business Insight](./Business%20Insight.md)
 
 ## [Conversion Timing Insight](./Conversion%20Timing%20Insight.md)
+
+## [Histogram Interpretation Framework](./Histogram%20Interpretation%20Framework.md)
