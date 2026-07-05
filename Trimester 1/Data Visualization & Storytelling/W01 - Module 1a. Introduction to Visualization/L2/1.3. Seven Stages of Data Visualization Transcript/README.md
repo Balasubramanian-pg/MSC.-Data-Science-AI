@@ -72,3 +72,5 @@
 ## [4.4 Mining Hidden Patterns](./4.4%20Mining%20Hidden%20Patterns.md)
 
 ## [4.5 Initial Visualization Problems](./4.5%20Initial%20Visualization%20Problems.md)
+
+## [4.6 Refined Visualization Design](./4.6%20Refined%20Visualization%20Design.md)
