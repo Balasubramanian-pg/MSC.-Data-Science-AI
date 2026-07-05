@@ -27,3 +27,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Characteristics](./Characteristics.md)
 
 ## [Typical Metrics](./Typical%20Metrics.md)
+
+## [Design Style](./Design%20Style.md)
