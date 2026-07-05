@@ -43,3 +43,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Effective Learning Loop](./Effective%20Learning%20Loop.md)
 
 ## [5. The Scale of Visualization Libraries](./5.%20The%20Scale%20of%20Visualization%20Libraries.md)
+
+## [Important Practical Insight](./Important%20Practical%20Insight.md)
