@@ -271,3 +271,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Lessons from the Columbia Case](./Lessons%20from%20the%20Columbia%20Case.md)
 
 ## [1. Hierarchy Matters](./1.%20Hierarchy%20Matters.md)
+
+## [2. Precision Matters](./2.%20Precision%20Matters.md)
