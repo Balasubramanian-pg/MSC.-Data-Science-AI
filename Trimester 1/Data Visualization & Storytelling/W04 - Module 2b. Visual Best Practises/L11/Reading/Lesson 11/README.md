@@ -145,3 +145,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Practical Rule](./Important%20Practical%20Rule.md)
 
 ## [Volume](./Volume.md)
+
+## [Weakness](./Weakness.md)
