@@ -159,3 +159,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [1. Forgetting Legends](./1.%20Forgetting%20Legends.md)
 
 ## [2. Missing Labels](./2.%20Missing%20Labels.md)
+
+## [3. Plotting Before Defining Data](./3.%20Plotting%20Before%20Defining%20Data.md)
