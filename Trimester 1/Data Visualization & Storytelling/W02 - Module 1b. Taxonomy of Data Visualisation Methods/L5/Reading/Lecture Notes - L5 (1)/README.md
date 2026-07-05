@@ -36,3 +36,5 @@
 ## [15. Minimalist Labeling](./15.%20Minimalist%20Labeling.md)
 
 ## [16. Practical Design Checklist](./16.%20Practical%20Design%20Checklist.md)
+
+## [Common Mistakes](./Common%20Mistakes.md)
