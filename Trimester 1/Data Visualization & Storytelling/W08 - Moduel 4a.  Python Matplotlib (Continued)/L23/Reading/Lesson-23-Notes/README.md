@@ -255,3 +255,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Overlaying Multiple Signals](./Overlaying%20Multiple%20Signals.md)
 
 ## [Why Separate Subplots Are Often Better](./Why%20Separate%20Subplots%20Are%20Often%20Better.md)
+
+## [Too Many Subplots](./Too%20Many%20Subplots.md)
