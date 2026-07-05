@@ -83,3 +83,5 @@ This is foundational to:
 ## [Critical Spatial Transformation](./Critical%20Spatial%20Transformation.md)
 
 ## [Why Geometry Matters](./Why%20Geometry%20Matters.md)
+
+## [Step 8: Plot World Map](./Step%208%20-%20Plot%20World%20Map.md)
