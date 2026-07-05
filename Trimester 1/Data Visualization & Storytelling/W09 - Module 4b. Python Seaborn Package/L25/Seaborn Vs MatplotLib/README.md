@@ -121,3 +121,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [2. Theoretical Breakdown: The 7 Stages & Statistical Inference](./2.%20Theoretical%20Breakdown%20-%20The%207%20Stages%20%26%20Statistical%20Inference.md)
 
 ## [3. Production-Ready Python Implementation](./3.%20Production-Ready%20Python%20Implementation.md)
+
+## [0. SETUP: Generating Representative Course Data](./0.%20SETUP%20-%20Generating%20Representative%20Course%20Data.md)
