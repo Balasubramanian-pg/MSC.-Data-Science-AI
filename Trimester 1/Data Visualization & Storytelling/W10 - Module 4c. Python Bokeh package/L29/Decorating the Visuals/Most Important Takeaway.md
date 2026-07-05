@@ -1,22 +1,9 @@
 # Most Important Takeaway
 
-This section teaches:
+This section reinforces the core Bokeh philosophy again:
 
-```mermaid
-flowchart LR
-    A[Data]
-    B[Plot]
-    C[Readability]
-    D[Interpretability]
-
-    A --> B
-    B --> C
-    C --> D
+```python
+plot.component.property = value
 ```
 
-A graph is only useful if humans can decode it efficiently.
-This section focuses entirely on title customization.
-
-At first glance this seems cosmetic, but in professional visualization systems, titles are actually part of information architecture.
-
-A bad title can make a correct graph misleading or useless.
+Titles are just another editable object in the visualization hierarchy.
