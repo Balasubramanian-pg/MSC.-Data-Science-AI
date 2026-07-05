@@ -43,3 +43,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [2. Narrative Sequencing](./2.%20Narrative%20Sequencing.md)
 
 ## [3. Annotation](./3.%20Annotation.md)
+
+## [4. Progressive Disclosure](./4.%20Progressive%20Disclosure.md)
