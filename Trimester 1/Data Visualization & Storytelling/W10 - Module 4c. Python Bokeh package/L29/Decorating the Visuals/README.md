@@ -411,3 +411,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Axis labels](./Axis%20labels.md)
 
 ## [Axis styling](./Axis%20styling.md)
+
+## [Tick styling](./Tick%20styling.md)
