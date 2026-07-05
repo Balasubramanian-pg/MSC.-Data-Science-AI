@@ -1,19 +1,13 @@
 # Business Insight
 
-Parsing prevents catastrophic reporting errors.
+Filtering converts “raw data” into “decision-ready data.”
 
 Example:
 
-If percentages are interpreted as raw counts:
+A policymaker can instantly identify:
 
-```text
-66% → 66
-```
-
-instead of:
-
-```text
-0.66
-```
-
-then analytical conclusions become invalid.
+- low-performing states
+    
+- intervention zones
+    
+- benchmark outliers
