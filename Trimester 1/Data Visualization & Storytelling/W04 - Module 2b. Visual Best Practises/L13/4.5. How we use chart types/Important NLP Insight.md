@@ -1,8 +1,9 @@
 # Important NLP Insight
 
+Sentiment analysis is fundamentally:
+
 ```text
-Frequency is a statistical property.
-Importance is a semantic property.
+semantic classification
 ```
 
-The two are not always equivalent.
+rather than frequency counting.
