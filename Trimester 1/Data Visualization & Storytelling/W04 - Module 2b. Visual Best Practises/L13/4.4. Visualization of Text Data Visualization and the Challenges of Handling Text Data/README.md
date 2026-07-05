@@ -175,3 +175,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Eliminating Low-Information Words](./Eliminating%20Low-Information%20Words.md)
 
 ## [What Are Stopwords?](./What%20Are%20Stopwords.md)
+
+## [Why Stopword Removal Helps](./Why%20Stopword%20Removal%20Helps.md)
