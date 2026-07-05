@@ -69,3 +69,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Modern Parallel](./Important%20Modern%20Parallel.md)
 
 ## [Storytelling Frameworks](./Storytelling%20Frameworks.md)
+
+## [1. Monomyth (Hero’s Journey)](./1.%20Monomyth%20%28Hero%E2%80%99s%20Journey%29.md)
