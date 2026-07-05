@@ -373,3 +373,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Density Visualization](./Density%20Visualization.md)
 
 ## [Important Organizational Insight](./Important%20Organizational%20Insight.md)
+
+## [5. Content Analysis](./5.%20Content%20Analysis.md)
