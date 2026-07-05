@@ -27,3 +27,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Common Chart Types](./Common%20Chart%20Types.md)
 
 ## [Example Visualization Types](./Example%20Visualization%20Types.md)
+
+## [Why Versatility Matters](./Why%20Versatility%20Matters.md)
