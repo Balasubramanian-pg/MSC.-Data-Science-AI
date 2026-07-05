@@ -53,3 +53,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Example Workflow](./Example%20Workflow.md)
 
 ## [Create x values](./Create%20x%20values.md)
+
+## [Compute y values](./Compute%20y%20values.md)
