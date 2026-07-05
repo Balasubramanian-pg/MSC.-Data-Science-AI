@@ -547,3 +547,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Two Ways to Define Titles](./Two%20Ways%20to%20Define%20Titles.md)
 
 ## [Method 1: Inside `figure()`](./Method%201%20-%20Inside%20%60figure%28%29%60.md)
+
+## [Method 2: Modify After Creation](./Method%202%20-%20Modify%20After%20Creation.md)
