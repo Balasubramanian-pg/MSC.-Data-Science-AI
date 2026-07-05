@@ -57,3 +57,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why This Changes Everything](./Why%20This%20Changes%20Everything.md)
 
 ## [Standard Imports](./Standard%20Imports.md)
+
+## [Why NumPy Is Always Imported](./Why%20NumPy%20Is%20Always%20Imported.md)
