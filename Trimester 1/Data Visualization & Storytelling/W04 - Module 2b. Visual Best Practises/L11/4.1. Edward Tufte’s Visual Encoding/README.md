@@ -61,3 +61,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [True Quantitative Measurement](./True%20Quantitative%20Measurement.md)
 
 ## [Key Property](./Key%20Property.md)
+
+## [Why Data Types Matter in Visualization](./Why%20Data%20Types%20Matter%20in%20Visualization.md)
