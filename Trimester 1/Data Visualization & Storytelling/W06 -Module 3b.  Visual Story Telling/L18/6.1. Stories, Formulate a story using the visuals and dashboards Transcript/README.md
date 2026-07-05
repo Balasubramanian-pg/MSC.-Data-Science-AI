@@ -33,3 +33,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Conviction and Belief](./Conviction%20and%20Belief.md)
 
 ## [Example](./Example.md)
+
+## [Important Distinction](./Important%20Distinction.md)
