@@ -347,3 +347,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Modify later](./Modify%20later.md)
 
 ## [Engineering Parallel](./Engineering%20Parallel.md)
+
+## [Fill vs Line Properties](./Fill%20vs%20Line%20Properties.md)
