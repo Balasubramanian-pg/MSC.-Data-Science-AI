@@ -103,3 +103,5 @@
 ## [4. Overfitting Stories to Weak Data](./4.%20Overfitting%20Stories%20to%20Weak%20Data.md)
 
 ## [5. Ignoring Data Integrity](./5.%20Ignoring%20Data%20Integrity.md)
+
+## [6. Using Complex Charts for Simple Messages](./6.%20Using%20Complex%20Charts%20for%20Simple%20Messages.md)
