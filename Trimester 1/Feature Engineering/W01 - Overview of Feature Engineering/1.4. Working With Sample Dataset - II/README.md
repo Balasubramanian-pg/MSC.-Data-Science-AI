@@ -13,3 +13,5 @@ week: W01 - Overview of Feature Engineering
 ## [1.4.3. Correlation Analysis and Linear Relationships](./1.4.3.%20Correlation%20Analysis%20and%20Linear%20Relationships.md)
 
 ## [1.4.4. Feature Relationship Visualization](./1.4.4.%20Feature%20Relationship%20Visualization.md)
+
+## [1.4.5. Standardization and Model Training](./1.4.5.%20Standardization%20and%20Model%20Training.md)
