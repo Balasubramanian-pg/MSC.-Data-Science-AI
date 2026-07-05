@@ -57,3 +57,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [Clip scores to ensure they stay within a realistic 0-100 limit](./Clip%20scores%20to%20ensure%20they%20stay%20within%20a%20realistic%200-100%20limit.md)
 
 ## [Randomly assign each student to one of three courses: Math, Science, or History](./Randomly%20assign%20each%20student%20to%20one%20of%20three%20courses%20-%20Math%2C%20Science%2C%20or%20History.md)
+
+## [Construct the unified Pandas DataFrame](./Construct%20the%20unified%20Pandas%20DataFrame.md)
