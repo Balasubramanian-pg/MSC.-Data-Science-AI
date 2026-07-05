@@ -399,3 +399,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Language Is Behavioral Data](./Language%20Is%20Behavioral%20Data.md)
 
 ## [Advanced Concept](./Advanced%20Concept.md)
+
+## [Conversation Networks as Graph Theory](./Conversation%20Networks%20as%20Graph%20Theory.md)
