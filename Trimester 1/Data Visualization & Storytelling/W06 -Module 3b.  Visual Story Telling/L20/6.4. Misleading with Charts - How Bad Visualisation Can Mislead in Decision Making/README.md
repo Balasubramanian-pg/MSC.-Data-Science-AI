@@ -91,3 +91,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why This Happens](./Why%20This%20Happens.md)
 
 ## [Human Perception Relies on Physical Encoding](./Human%20Perception%20Relies%20on%20Physical%20Encoding.md)
+
+## [Important Principle](./Important%20Principle.md)
