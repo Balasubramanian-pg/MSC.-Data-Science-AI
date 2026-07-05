@@ -59,3 +59,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Embeddings Changed NLP](./Why%20Embeddings%20Changed%20NLP.md)
 
 ## [Enron Email Embeddings](./Enron%20Email%20Embeddings.md)
+
+## [Discovering Hidden Communication Themes](./Discovering%20Hidden%20Communication%20Themes.md)
