@@ -195,3 +195,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Benefit](./Important%20Benefit.md)
 
 ## [Major Limitation of Stemming](./Major%20Limitation%20of%20Stemming.md)
+
+## [Example Problem](./Example%20Problem.md)
