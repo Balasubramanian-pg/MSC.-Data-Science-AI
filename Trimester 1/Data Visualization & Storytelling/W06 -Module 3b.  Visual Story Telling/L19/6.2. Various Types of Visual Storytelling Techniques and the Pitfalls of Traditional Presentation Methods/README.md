@@ -19,3 +19,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [What Is Data Storytelling?](./What%20Is%20Data%20Storytelling.md)
 
 ## [Why Most Dashboards Fail](./Why%20Most%20Dashboards%20Fail.md)
+
+## [Narrative as the Core Layer](./Narrative%20as%20the%20Core%20Layer.md)
