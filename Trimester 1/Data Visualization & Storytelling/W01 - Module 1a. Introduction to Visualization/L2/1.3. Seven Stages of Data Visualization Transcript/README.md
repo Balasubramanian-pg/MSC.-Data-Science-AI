@@ -58,3 +58,5 @@
 ## [Result](./Result.md)
 
 ## [3.7 Stage 7: Interaction and Feedback](./3.7%20Stage%207%20-%20Interaction%20and%20Feedback.md)
+
+## [Key Insight from Lecture](./Key%20Insight%20from%20Lecture.md)
