@@ -475,3 +475,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Modern Enterprise Pipeline](./Modern%20Enterprise%20Pipeline.md)
 
 ## [Why This Matters Beyond Enron](./Why%20This%20Matters%20Beyond%20Enron.md)
+
+## [Final Conceptual Integration](./Final%20Conceptual%20Integration.md)
