@@ -151,3 +151,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Visual Hierarchy and Whitespace](./Visual%20Hierarchy%20and%20Whitespace.md)
 
 ## [Strategic Simplicity](./Strategic%20Simplicity.md)
+
+## [3. Naturalness in Delivery](./3.%20Naturalness%20in%20Delivery.md)
