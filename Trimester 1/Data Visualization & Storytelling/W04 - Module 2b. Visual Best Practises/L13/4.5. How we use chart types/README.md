@@ -417,3 +417,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Communication Intelligence Pipeline](./Communication%20Intelligence%20Pipeline.md)
 
 ## [Enron Bankruptcy Timeline](./Enron%20Bankruptcy%20Timeline.md)
+
+## [Communication Before Collapse](./Communication%20Before%20Collapse.md)
