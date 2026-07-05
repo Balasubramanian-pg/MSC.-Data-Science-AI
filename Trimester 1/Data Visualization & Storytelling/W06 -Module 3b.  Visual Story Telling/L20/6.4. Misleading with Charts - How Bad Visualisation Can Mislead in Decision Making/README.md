@@ -109,3 +109,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Difference Between Value and Growth Rate](./Difference%20Between%20Value%20and%20Growth%20Rate.md)
 
 ## [Example](./Example.md)
+
+## [Growth Rates](./Growth%20Rates.md)
