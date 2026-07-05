@@ -163,3 +163,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Tokenization Matters](./Why%20Tokenization%20Matters.md)
 
 ## [Bag of Words Representation](./Bag%20of%20Words%20Representation.md)
+
+## [Bag of Words Idea](./Bag%20of%20Words%20Idea.md)
