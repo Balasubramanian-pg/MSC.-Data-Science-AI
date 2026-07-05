@@ -233,3 +233,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Pecha Kucha Cognitive Benefits](./Pecha%20Kucha%20Cognitive%20Benefits.md)
 
 ## [Presentation Cognitive Failure](./Presentation%20Cognitive%20Failure.md)
+
+## [Typical Corporate Failure](./Typical%20Corporate%20Failure.md)
