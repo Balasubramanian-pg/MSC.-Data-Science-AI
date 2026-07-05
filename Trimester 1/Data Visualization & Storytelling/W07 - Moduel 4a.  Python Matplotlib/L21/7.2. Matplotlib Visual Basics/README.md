@@ -75,3 +75,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [The Iterative Learning Model](./The%20Iterative%20Learning%20Model.md)
 
 ## [Strategic Insight](./Strategic%20Insight.md)
+
+## [Final Takeaway](./Final%20Takeaway.md)
