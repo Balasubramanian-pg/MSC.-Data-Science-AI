@@ -165,3 +165,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Einstein Principle](./Einstein%20Principle.md)
 
 ## [Relationship to Dashboard Design](./Relationship%20to%20Dashboard%20Design.md)
+
+## [Dashboard vs Presentation](./Dashboard%20vs%20Presentation.md)
