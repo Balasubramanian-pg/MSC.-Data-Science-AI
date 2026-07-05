@@ -89,3 +89,5 @@
 ## [Typical EDA Pipeline](./Typical%20EDA%20Pipeline.md)
 
 ## [7. Visualization Decision Framework](./7.%20Visualization%20Decision%20Framework.md)
+
+## [What Are You Trying To Do?](./What%20Are%20You%20Trying%20To%20Do.md)
