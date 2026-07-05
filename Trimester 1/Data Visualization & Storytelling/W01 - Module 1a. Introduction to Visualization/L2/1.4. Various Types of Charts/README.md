@@ -6,3 +6,5 @@ The analytical purpose of various charts being used are the subject matter of th
 ## [Table of Contents](./Table%20of%20Contents.md)
 
 ## [1. Introduction to Chart Selection](./1.%20Introduction%20to%20Chart%20Selection.md)
+
+## [1.1 Why Choosing the Right Chart Matters](./1.1%20Why%20Choosing%20the%20Right%20Chart%20Matters.md)
