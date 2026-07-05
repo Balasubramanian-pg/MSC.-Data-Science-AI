@@ -11,3 +11,5 @@ week: W01 - Overview of Feature Engineering
 ## [1.4.2. Data Loading and Integrity Checks](./1.4.2.%20Data%20Loading%20and%20Integrity%20Checks.md)
 
 ## [1.4.3. Correlation Analysis and Linear Relationships](./1.4.3.%20Correlation%20Analysis%20and%20Linear%20Relationships.md)
+
+## [1.4.4. Feature Relationship Visualization](./1.4.4.%20Feature%20Relationship%20Visualization.md)
