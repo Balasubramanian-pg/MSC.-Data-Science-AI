@@ -249,3 +249,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Path 1: Gender → Ethnicity](./Path%201%20-%20Gender%20%E2%86%92%20Ethnicity.md)
 
 ## [Narrative Effect](./Narrative%20Effect.md)
+
+## [Path 2: Ethnicity → Gender](./Path%202%20-%20Ethnicity%20%E2%86%92%20Gender.md)
