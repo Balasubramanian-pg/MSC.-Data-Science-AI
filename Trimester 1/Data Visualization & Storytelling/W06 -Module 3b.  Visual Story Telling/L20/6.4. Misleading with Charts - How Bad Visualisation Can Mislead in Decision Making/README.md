@@ -207,3 +207,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Saturday](./Saturday.md)
 
 ## [Sunday](./Sunday.md)
+
+## [Aggregated Analysis](./Aggregated%20Analysis.md)
