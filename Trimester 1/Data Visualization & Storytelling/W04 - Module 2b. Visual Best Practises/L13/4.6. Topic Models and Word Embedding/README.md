@@ -161,3 +161,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Hidden Insight](./Important%20Hidden%20Insight.md)
 
 ## [Transition Into t-SNE Clustering](./Transition%20Into%20t-SNE%20Clustering.md)
+
+## [Visualizing High-Dimensional Semantic Spaces](./Visualizing%20High-Dimensional%20Semantic%20Spaces.md)
