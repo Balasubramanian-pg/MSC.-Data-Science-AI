@@ -21,3 +21,5 @@ week: W08 - Automated Feature Engineering
 ## [8.0.7. FeatureWiz for Automated Feature Selection](./8.0.7.%20FeatureWiz%20for%20Automated%20Feature%20Selection.md)
 
 ## [8.0.8. The Curse of Dimensionality](./8.0.8.%20The%20Curse%20of%20Dimensionality.md)
+
+## [8.0.9. Computational Trade-Offs and Strategic Warnings](./8.0.9.%20Computational%20Trade-Offs%20and%20Strategic%20Warnings.md)
