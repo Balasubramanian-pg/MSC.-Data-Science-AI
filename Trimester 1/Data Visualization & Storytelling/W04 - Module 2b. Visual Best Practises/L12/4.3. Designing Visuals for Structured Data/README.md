@@ -35,3 +35,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Poor Choices](./Poor%20Choices.md)
 
 ## [Binary Data](./Binary%20Data.md)
+
+## [Why Binary Variables Matter](./Why%20Binary%20Variables%20Matter.md)
