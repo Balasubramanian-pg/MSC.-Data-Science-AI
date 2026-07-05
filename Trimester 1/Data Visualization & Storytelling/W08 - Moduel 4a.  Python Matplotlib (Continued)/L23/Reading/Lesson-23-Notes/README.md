@@ -223,3 +223,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Crimson for Temperature](./Crimson%20for%20Temperature.md)
 
 ## [Royal Blue for Rainfall](./Royal%20Blue%20for%20Rainfall.md)
+
+## [Subplots as Analytical Dashboards](./Subplots%20as%20Analytical%20Dashboards.md)
