@@ -1,18 +1,5 @@
 # Definition
 
-A dashboard should ideally fit within:
+Dashboards often require continuously updated information.
 
-- one screen,
-    
-- one viewport,
-    
-- one visual context.
-    
-
-Users should not need:
-
-- excessive scrolling,
-    
-- multiple tabs,
-    
-- or deep navigation.
+The required freshness depends on context.
