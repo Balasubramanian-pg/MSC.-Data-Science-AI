@@ -27,3 +27,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Information-Centric Visualization](./Information-Centric%20Visualization.md)
 
 ## [Tufte’s Core Philosophy](./Tufte%E2%80%99s%20Core%20Philosophy.md)
+
+## [Data-Ink Ratio](./Data-Ink%20Ratio.md)
