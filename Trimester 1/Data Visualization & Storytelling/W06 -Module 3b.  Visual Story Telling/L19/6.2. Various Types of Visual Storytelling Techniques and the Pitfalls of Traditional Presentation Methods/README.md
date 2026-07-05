@@ -9,3 +9,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Business Decisions Are Not Purely Rational](./Business%20Decisions%20Are%20Not%20Purely%20Rational.md)
 
 ## [Why Emotion Matters in Business](./Why%20Emotion%20Matters%20in%20Business.md)
+
+## [Storytelling Bridges Logic and Emotion](./Storytelling%20Bridges%20Logic%20and%20Emotion.md)
