@@ -241,3 +241,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Sentiment Analysis Became Critical](./Why%20Sentiment%20Analysis%20Became%20Critical.md)
 
 ## [Sentiment Analysis Challenges](./Sentiment%20Analysis%20Challenges.md)
+
+## [Major NLP Problems](./Major%20NLP%20Problems.md)
