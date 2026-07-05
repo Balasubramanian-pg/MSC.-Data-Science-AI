@@ -13,3 +13,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Notebook Workflow](./Notebook%20Workflow.md)
 
 ## [2. Google Colab](./2.%20Google%20Colab.md)
+
+## [What Is Colab?](./What%20Is%20Colab.md)
