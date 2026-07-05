@@ -423,3 +423,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Temporal Spike Detection](./Temporal%20Spike%20Detection.md)
 
 ## [Important Analytical Principle](./Important%20Analytical%20Principle.md)
+
+## [Why Communication Spikes Occur](./Why%20Communication%20Spikes%20Occur.md)
