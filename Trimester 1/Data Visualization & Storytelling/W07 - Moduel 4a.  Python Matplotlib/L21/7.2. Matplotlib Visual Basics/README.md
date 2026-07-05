@@ -65,3 +65,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Important Warning](./Important%20Warning.md)
 
 ## [9. Importing Matplotlib](./9.%20Importing%20Matplotlib.md)
+
+## [Why `pyplot` Is Important](./Why%20%60pyplot%60%20Is%20Important.md)
