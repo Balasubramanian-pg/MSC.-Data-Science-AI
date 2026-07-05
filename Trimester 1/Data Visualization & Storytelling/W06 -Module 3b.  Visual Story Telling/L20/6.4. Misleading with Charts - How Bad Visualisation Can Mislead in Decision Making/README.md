@@ -283,3 +283,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Cherry Picking](./Cherry%20Picking.md)
 
 ## [Why Cherry Picking Is Dangerous](./Why%20Cherry%20Picking%20Is%20Dangerous.md)
+
+## [Common Cherry-Picking Tactics](./Common%20Cherry-Picking%20Tactics.md)
