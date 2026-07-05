@@ -177,3 +177,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Dashboard Design Framework](./Dashboard%20Design%20Framework.md)
 
 ## [Audience-Centric Dashboard Design](./Audience-Centric%20Dashboard%20Design.md)
+
+## [Why Different Dashboard Types Exist](./Why%20Different%20Dashboard%20Types%20Exist.md)
