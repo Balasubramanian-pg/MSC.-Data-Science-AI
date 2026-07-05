@@ -31,3 +31,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The First Great Data Story: London Cholera Map](./The%20First%20Great%20Data%20Story%20-%20London%20Cholera%20Map.md)
 
 ## [Why This Visualization Was Revolutionary](./Why%20This%20Visualization%20Was%20Revolutionary.md)
+
+## [Why the Story Worked](./Why%20the%20Story%20Worked.md)
