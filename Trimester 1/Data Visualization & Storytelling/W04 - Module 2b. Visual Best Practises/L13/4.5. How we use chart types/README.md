@@ -31,3 +31,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Most Common Text Visualization](./The%20Most%20Common%20Text%20Visualization.md)
 
 ## [What Is a Word Cloud?](./What%20Is%20a%20Word%20Cloud.md)
+
+## [Word Cloud Pipeline](./Word%20Cloud%20Pipeline.md)
