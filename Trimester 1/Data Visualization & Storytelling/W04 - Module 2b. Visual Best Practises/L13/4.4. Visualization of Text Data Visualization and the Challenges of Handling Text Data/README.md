@@ -11,3 +11,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Structured vs Unstructured Data](./Structured%20vs%20Unstructured%20Data.md)
 
 ## [The Core Distinction](./The%20Core%20Distinction.md)
+
+## [Structured Data](./Structured%20Data.md)
