@@ -83,3 +83,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [3. No Audience Context](./3.%20No%20Audience%20Context.md)
 
 ## [4. No Clear Conflict](./4.%20No%20Clear%20Conflict.md)
+
+## [5. No Resolution](./5.%20No%20Resolution.md)
