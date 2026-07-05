@@ -35,3 +35,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Mathematical Representation of Meaning](./Mathematical%20Representation%20of%20Meaning.md)
 
 ## [What Is a Word Embedding?](./What%20Is%20a%20Word%20Embedding.md)
+
+## [Embedding Representation](./Embedding%20Representation.md)
