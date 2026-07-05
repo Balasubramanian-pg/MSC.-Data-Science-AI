@@ -67,3 +67,5 @@
 ## [Conceptual Pipeline](./Conceptual%20Pipeline.md)
 
 ## [4.3 Iterative Nature of Visualization](./4.3%20Iterative%20Nature%20of%20Visualization.md)
+
+## [5. Case Study: Lok Sabha Election Voter Participation](./5.%20Case%20Study%20-%20Lok%20Sabha%20Election%20Voter%20Participation.md)
