@@ -17,3 +17,5 @@
 ## [2.2 Ordinal Variables](./2.2%20Ordinal%20Variables.md)
 
 ## [2.3 Numerical Variables](./2.3%20Numerical%20Variables.md)
+
+## [2.4 Binary Variables](./2.4%20Binary%20Variables.md)
