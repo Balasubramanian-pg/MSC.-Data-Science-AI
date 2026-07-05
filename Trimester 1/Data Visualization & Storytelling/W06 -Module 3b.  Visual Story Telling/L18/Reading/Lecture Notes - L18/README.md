@@ -321,3 +321,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Example Comparison](./Example%20Comparison.md)
 
 ## [Weak Communication](./Weak%20Communication.md)
+
+## [Strong Communication](./Strong%20Communication.md)
