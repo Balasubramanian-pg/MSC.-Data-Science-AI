@@ -131,3 +131,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Central NLP Challenge](./The%20Central%20NLP%20Challenge.md)
 
 ## [High-Dimensional Text Space](./High-Dimensional%20Text%20Space.md)
+
+## [Revisiting Topic Modeling](./Revisiting%20Topic%20Modeling.md)
