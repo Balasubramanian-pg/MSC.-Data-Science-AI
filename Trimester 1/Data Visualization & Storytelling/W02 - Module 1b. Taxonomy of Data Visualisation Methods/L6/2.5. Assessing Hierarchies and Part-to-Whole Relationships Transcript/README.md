@@ -21,3 +21,5 @@ This document provides a technical blueprint for understanding, selecting, and i
 ## [2. Compute circle packing positions using circlify algorithm](./2.%20Compute%20circle%20packing%20positions%20using%20circlify%20algorithm.md)
 
 ## [3. Configure the matplotlib canvas](./3.%20Configure%20the%20matplotlib%20canvas.md)
+
+## [Set limits to prevent rendering issues](./Set%20limits%20to%20prevent%20rendering%20issues.md)
