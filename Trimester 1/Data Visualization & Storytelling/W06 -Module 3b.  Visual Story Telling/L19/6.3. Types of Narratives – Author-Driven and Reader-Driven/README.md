@@ -89,3 +89,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Common Interactive Elements](./Common%20Interactive%20Elements.md)
 
 ## [Important Tradeoff](./Important%20Tradeoff.md)
+
+## [C. Messaging](./C.%20Messaging.md)
