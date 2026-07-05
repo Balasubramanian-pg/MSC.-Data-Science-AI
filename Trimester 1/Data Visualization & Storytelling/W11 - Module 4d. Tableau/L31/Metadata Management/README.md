@@ -11,3 +11,5 @@
 ## [6.1.5. Creating Hierarchies for Drill-Downs](./6.1.5.%20Creating%20Hierarchies%20for%20Drill-Downs.md)
 
 ## [6.1.6. Calculated Fields and Derived Metrics](./6.1.6.%20Calculated%20Fields%20and%20Derived%20Metrics.md)
+
+## [6.1.7. Example of a Calculated Field](./6.1.7.%20Example%20of%20a%20Calculated%20Field.md)
