@@ -825,3 +825,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [What Is `curdoc()`?](./What%20Is%20%60curdoc%28%29%60.md)
 
 ## [Internal Mental Model](./Internal%20Mental%20Model.md)
+
+## [Applying a Theme](./Applying%20a%20Theme.md)
