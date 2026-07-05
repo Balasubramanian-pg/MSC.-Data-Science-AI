@@ -115,3 +115,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Gestalt Principles Mentioned](./Gestalt%20Principles%20Mentioned.md)
 
 ## [Relevant Gestalt Principles Here](./Relevant%20Gestalt%20Principles%20Here.md)
+
+## [Close Order Principle](./Close%20Order%20Principle.md)
