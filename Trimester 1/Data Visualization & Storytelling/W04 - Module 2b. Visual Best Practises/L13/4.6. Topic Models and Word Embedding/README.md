@@ -173,3 +173,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Core Goal of t-SNE](./Core%20Goal%20of%20t-SNE.md)
 
 ## [Important Intuition](./Important%20Intuition.md)
+
+## [t-SNE Intuition](./t-SNE%20Intuition.md)
