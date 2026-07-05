@@ -16,3 +16,5 @@ This document details five advanced visual paradigms designed for **Categorical 
 ## [3. Sankey Diagrams (Flow Networks)](./3.%20Sankey%20Diagrams%20%28Flow%20Networks%29.md)
 
 ## [4. Small Multiples (Grid / Facet Plots)](./4.%20Small%20Multiples%20%28Grid%20Facet%20Plots%29.md)
+
+## [5. Circle Packing Diagrams (Containment-Based Hierarchies)](./5.%20Circle%20Packing%20Diagrams%20%28Containment-Based%20Hierarchies%29.md)
