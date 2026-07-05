@@ -59,3 +59,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Concept](./Important%20Concept.md)
 
 ## [Text as Data](./Text%20as%20Data.md)
+
+## [Role of Algorithms](./Role%20of%20Algorithms.md)
