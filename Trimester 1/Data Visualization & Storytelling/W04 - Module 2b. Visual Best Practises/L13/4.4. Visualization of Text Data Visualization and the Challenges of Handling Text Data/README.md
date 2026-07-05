@@ -183,3 +183,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Computational Insight](./Important%20Computational%20Insight.md)
 
 ## [6. Stemming](./6.%20Stemming.md)
+
+## [Reducing Words to Common Roots](./Reducing%20Words%20to%20Common%20Roots.md)
