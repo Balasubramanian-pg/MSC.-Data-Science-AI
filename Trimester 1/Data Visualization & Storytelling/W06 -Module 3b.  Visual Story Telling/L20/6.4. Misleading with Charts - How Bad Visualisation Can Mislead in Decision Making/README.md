@@ -41,3 +41,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Real Responsibility of Analysts](./The%20Real%20Responsibility%20of%20Analysts.md)
 
 ## [Key Strategic Lesson](./Key%20Strategic%20Lesson.md)
+
+## [Axis Manipulation and Misleading Scale Design](./Axis%20Manipulation%20and%20Misleading%20Scale%20Design.md)
