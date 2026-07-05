@@ -135,3 +135,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Scatter Plot Strength](./Scatter%20Plot%20Strength.md)
 
 ## [Scatter Plot Pipeline](./Scatter%20Plot%20Pipeline.md)
+
+## [Correlation vs Causation](./Correlation%20vs%20Causation.md)
