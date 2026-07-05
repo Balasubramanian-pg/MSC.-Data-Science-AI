@@ -309,3 +309,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [1. Figure Creation](./1.%20Figure%20Creation.md)
 
 ## [Visualization Structure](./Visualization%20Structure.md)
+
+## [2. Arrays in Python](./2.%20Arrays%20in%20Python.md)
