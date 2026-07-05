@@ -75,3 +75,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [What Is Topic Modeling?](./What%20Is%20Topic%20Modeling.md)
 
 ## [Topic Modeling Workflow](./Topic%20Modeling%20Workflow.md)
+
+## [Key Idea](./Key%20Idea.md)
