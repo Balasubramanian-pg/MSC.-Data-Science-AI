@@ -843,3 +843,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Contrast](./Contrast.md)
 
 ## [Apply theme](./Apply%20theme.md)
+
+## [Important Professional Insight](./Important%20Professional%20Insight.md)
