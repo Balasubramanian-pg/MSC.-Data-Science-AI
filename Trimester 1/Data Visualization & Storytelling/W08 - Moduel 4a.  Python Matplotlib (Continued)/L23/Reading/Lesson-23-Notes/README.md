@@ -153,3 +153,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Create figure](./Create%20figure.md)
 
 ## [Plot temperature](./Plot%20temperature.md)
+
+## [Labels and title](./Labels%20and%20title.md)
