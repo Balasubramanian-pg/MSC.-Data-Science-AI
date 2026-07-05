@@ -857,3 +857,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Mistake 3: Decorative Themes](./Mistake%203%20-%20Decorative%20Themes.md)
 
 ## [Mistake 4: Ignoring Accessibility](./Mistake%204%20-%20Ignoring%20Accessibility.md)
+
+## [Final Mental Model of Bokeh](./Final%20Mental%20Model%20of%20Bokeh.md)
