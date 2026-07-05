@@ -63,3 +63,5 @@ week: W09 - Module 4b. Python Seaborn Package
 ## [3. FACETING (SMALL MULTIPLES): Reducing Cognitive Load with `relplot`](./3.%20FACETING%20%28SMALL%20MULTIPLES%29%20-%20Reducing%20Cognitive%20Load%20with%20%60relplot%60.md)
 
 ## [Intent: Replicate the 'Small Multiples' concept from PowerBI. By separating](./Intent%20-%20Replicate%20the%20%27Small%20Multiples%27%20concept%20from%20PowerBI.%20By%20separating.md)
+
+## [categories into distinct subplot columns, we drastically reduce the audience's mental processing effort.](./categories%20into%20distinct%20subplot%20columns%2C%20we%20drastically%20reduce%20the%20audience%27s%20mental%20processing%20effort.md)
