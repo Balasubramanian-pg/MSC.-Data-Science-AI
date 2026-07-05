@@ -209,3 +209,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Function Drives Dashboard Form](./Function%20Drives%20Dashboard%20Form.md)
 
 ## [Executive Dashboard](./Executive%20Dashboard.md)
+
+## [Analytical Dashboard](./Analytical%20Dashboard.md)
