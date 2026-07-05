@@ -39,3 +39,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Dimensions of Narrative Storytelling](./Dimensions%20of%20Narrative%20Storytelling.md)
 
 ## [1. Genres](./1.%20Genres.md)
+
+## [Annotated Charts](./Annotated%20Charts.md)
