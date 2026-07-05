@@ -245,3 +245,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Election Example](./The%20Election%20Example.md)
 
 ## [What Is Drill-Down?](./What%20Is%20Drill-Down.md)
+
+## [Path 1: Gender → Ethnicity](./Path%201%20-%20Gender%20%E2%86%92%20Ethnicity.md)
