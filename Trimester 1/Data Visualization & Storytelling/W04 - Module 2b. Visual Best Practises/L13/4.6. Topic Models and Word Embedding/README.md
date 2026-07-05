@@ -129,3 +129,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Visualizing Latent Themes in High-Dimensional Text Data](./Visualizing%20Latent%20Themes%20in%20High-Dimensional%20Text%20Data.md)
 
 ## [The Central NLP Challenge](./The%20Central%20NLP%20Challenge.md)
+
+## [High-Dimensional Text Space](./High-Dimensional%20Text%20Space.md)
