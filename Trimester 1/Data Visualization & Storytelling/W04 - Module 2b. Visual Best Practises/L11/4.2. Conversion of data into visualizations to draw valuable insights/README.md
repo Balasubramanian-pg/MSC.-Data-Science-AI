@@ -155,3 +155,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [High Effectiveness, Low Expressiveness](./High%20Effectiveness%2C%20Low%20Expressiveness.md)
 
 ## [Final Design Goal](./Final%20Design%20Goal.md)
+
+## [Final Mental Model](./Final%20Mental%20Model.md)
