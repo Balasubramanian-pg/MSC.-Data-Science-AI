@@ -379,3 +379,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [What Is Being Discussed?](./What%20Is%20Being%20Discussed.md)
 
 ## [Conversation Analysis Pipeline](./Conversation%20Analysis%20Pipeline.md)
+
+## [Enron Email Dataset](./Enron%20Email%20Dataset.md)
