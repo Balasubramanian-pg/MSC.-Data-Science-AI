@@ -143,3 +143,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Scaling Problems and Dual-Axis Misuse](./Scaling%20Problems%20and%20Dual-Axis%20Misuse.md)
 
 ## [1. Scale Compression Hides Meaning](./1.%20Scale%20Compression%20Hides%20Meaning.md)
+
+## [Visual Compression Problem](./Visual%20Compression%20Problem.md)
