@@ -79,3 +79,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [4. Polysemy](./4.%20Polysemy.md)
 
 ## [5. Scale Problem](./5.%20Scale%20Problem.md)
+
+## [NLP Challenge Landscape](./NLP%20Challenge%20Landscape.md)
