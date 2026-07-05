@@ -73,3 +73,5 @@ week: W05 - Module 3a.  Dashboards
 ## [4. Customization and Interactivity](./4.%20Customization%20and%20Interactivity.md)
 
 ## [Why Interactivity Matters](./Why%20Interactivity%20Matters.md)
+
+## [Common Interactive Features](./Common%20Interactive%20Features.md)
