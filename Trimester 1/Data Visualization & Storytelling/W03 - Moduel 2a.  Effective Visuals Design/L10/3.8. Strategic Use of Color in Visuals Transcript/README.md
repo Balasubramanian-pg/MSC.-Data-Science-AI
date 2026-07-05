@@ -96,3 +96,5 @@ Bad visualizations use color excessively.
 ## [Status Indicator Decision Tree](./Status%20Indicator%20Decision%20Tree.md)
 
 ## [The Danger of Overusing Color](./The%20Danger%20of%20Overusing%20Color.md)
+
+## [What Happens When Everything Is Colorful](./What%20Happens%20When%20Everything%20Is%20Colorful.md)
