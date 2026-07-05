@@ -43,3 +43,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [B. Story Mountain](./B.%20Story%20Mountain.md)
 
 ## [C. Nested Loops](./C.%20Nested%20Loops.md)
+
+## [4. Types of Narratives in Data Visualization](./4.%20Types%20of%20Narratives%20in%20Data%20Visualization.md)
