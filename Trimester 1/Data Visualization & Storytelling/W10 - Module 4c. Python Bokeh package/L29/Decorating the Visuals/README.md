@@ -533,3 +533,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Professional Dashboard Design Principle](./Professional%20Dashboard%20Design%20Principle.md)
 
 ## [Mistake 1: Excessive Rotation](./Mistake%201%20-%20Excessive%20Rotation.md)
+
+## [Mistake 2: Huge Raw Numbers](./Mistake%202%20-%20Huge%20Raw%20Numbers.md)
