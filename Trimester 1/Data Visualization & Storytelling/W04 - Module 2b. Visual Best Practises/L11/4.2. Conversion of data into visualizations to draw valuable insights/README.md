@@ -49,3 +49,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Cognitive Failure of Color Encoding](./Cognitive%20Failure%20of%20Color%20Encoding.md)
 
 ## [Important Visualization Principle](./Important%20Visualization%20Principle.md)
+
+## [When To Use Color](./When%20To%20Use%20Color.md)
