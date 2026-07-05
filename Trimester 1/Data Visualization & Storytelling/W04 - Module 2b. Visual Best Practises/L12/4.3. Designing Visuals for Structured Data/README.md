@@ -11,3 +11,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [1. Designing Visuals](./1.%20Designing%20Visuals.md)
 
 ## [Visualization as Analytical Translation](./Visualization%20as%20Analytical%20Translation.md)
+
+## [Why Chart Selection Matters](./Why%20Chart%20Selection%20Matters.md)
