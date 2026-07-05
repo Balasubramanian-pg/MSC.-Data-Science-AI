@@ -687,3 +687,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Font Customization](./Font%20Customization.md)
 
 ## [Professional Dashboard Reality](./Professional%20Dashboard%20Reality.md)
+
+## [Legend Border Styling](./Legend%20Border%20Styling.md)
