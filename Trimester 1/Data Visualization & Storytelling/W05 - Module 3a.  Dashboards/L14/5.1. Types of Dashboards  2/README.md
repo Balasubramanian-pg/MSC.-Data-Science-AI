@@ -197,3 +197,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Analyst Cognitive Style](./Analyst%20Cognitive%20Style.md)
 
 ## [Key Distinction](./Key%20Distinction.md)
+
+## [Operational Dashboards](./Operational%20Dashboards.md)
