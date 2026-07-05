@@ -87,3 +87,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Minimalist Visualization Philosophy](./Minimalist%20Visualization%20Philosophy.md)
 
 ## [Advanced Mental Model](./Advanced%20Mental%20Model.md)
+
+## [Real-World Dashboard Example](./Real-World%20Dashboard%20Example.md)
