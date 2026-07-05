@@ -108,3 +108,5 @@ The transcript introduces this challenge directly.
 ## [Dashboard Positioning Decision Tree](./Dashboard%20Positioning%20Decision%20Tree.md)
 
 ## [Spatial Relationships Matter](./Spatial%20Relationships%20Matter.md)
+
+## [Gestalt Principle of Proximity](./Gestalt%20Principle%20of%20Proximity.md)
