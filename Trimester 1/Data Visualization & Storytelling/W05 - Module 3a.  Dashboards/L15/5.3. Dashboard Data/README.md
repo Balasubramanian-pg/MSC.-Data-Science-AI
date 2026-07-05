@@ -9,3 +9,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Page 2](./Page%202.md)
 
 ## [Page 3](./Page%203.md)
+
+## [Page 4](./Page%204.md)
