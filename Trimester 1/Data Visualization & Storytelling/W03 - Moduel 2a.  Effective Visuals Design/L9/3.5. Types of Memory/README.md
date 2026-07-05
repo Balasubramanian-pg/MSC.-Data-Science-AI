@@ -147,3 +147,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Why Visual Signals Beat Text](./Why%20Visual%20Signals%20Beat%20Text.md)
 
 ## [Visualization Principle](./Visualization%20Principle.md)
+
+## [Design Strategies for Iconic Memory](./Design%20Strategies%20for%20Iconic%20Memory.md)
