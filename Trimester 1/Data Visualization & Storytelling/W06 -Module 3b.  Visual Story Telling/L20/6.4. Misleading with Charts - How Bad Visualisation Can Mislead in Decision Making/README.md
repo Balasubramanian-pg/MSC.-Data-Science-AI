@@ -17,3 +17,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Why This Is So Dangerous](./Why%20This%20Is%20So%20Dangerous.md)
 
 ## [Actual Reality](./Actual%20Reality.md)
+
+## [Cognitive Bias in Visualization](./Cognitive%20Bias%20in%20Visualization.md)
