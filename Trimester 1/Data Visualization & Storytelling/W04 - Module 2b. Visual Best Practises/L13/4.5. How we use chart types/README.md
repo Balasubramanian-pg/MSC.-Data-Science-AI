@@ -147,3 +147,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [What Is a Word Tree?](./What%20Is%20a%20Word%20Tree.md)
 
 ## [Word Tree Structure](./Word%20Tree%20Structure.md)
+
+## [Why Word Trees Matter](./Why%20Word%20Trees%20Matter.md)
