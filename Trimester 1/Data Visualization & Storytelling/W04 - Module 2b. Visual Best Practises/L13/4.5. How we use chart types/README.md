@@ -33,3 +33,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [What Is a Word Cloud?](./What%20Is%20a%20Word%20Cloud.md)
 
 ## [Word Cloud Pipeline](./Word%20Cloud%20Pipeline.md)
+
+## [Panchatantra Example](./Panchatantra%20Example.md)
