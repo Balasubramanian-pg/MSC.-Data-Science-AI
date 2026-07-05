@@ -101,3 +101,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Style Consistency Matters](./Why%20Style%20Consistency%20Matters.md)
 
 ## [Important Engineering Insight](./Important%20Engineering%20Insight.md)
+
+## [Visualization as Cognitive Compression](./Visualization%20as%20Cognitive%20Compression.md)
