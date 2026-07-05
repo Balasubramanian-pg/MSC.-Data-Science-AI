@@ -157,3 +157,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Major Limitation](./Major%20Limitation.md)
 
 ## [Parallel Coordinates Pipeline](./Parallel%20Coordinates%20Pipeline.md)
+
+## [8. Trend Analysis](./8.%20Trend%20Analysis.md)
