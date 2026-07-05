@@ -1,6 +1,8 @@
 # Visual Interpretation
 
 ```text
-Canvas Height = 300 pixels
-Canvas Width  = 700 pixels
+(1,2)
+(2,5)
+(3,7)
+...
 ```
