@@ -1,20 +1,11 @@
 # Example
 
-|City|Temperature|
+|Product A|₹100|
 |---|---|
-|Shimla|25°C|
-|Hyderabad|50°C|
+|Product B|₹200|
 
-You can say:
-
-```text
-Difference = 25°C
-```
-
-But not:
+Now it is valid to say:
 
 ```text
-Hyderabad is twice as hot
+Product B is twice Product A
 ```
-
-because interval scales lack a true zero.
