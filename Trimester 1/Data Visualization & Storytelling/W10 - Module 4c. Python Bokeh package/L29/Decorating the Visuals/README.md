@@ -415,3 +415,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Tick styling](./Tick%20styling.md)
 
 ## [Grid styling](./Grid%20styling.md)
+
+## [Initial Line Plot](./Initial%20Line%20Plot.md)
