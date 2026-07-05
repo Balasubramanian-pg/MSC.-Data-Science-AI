@@ -113,3 +113,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Why Box Plots Are Powerful](./Why%20Box%20Plots%20Are%20Powerful.md)
 
 ## [Distribution Shape Analysis](./Distribution%20Shape%20Analysis.md)
+
+## [6. Multivariate Analysis](./6.%20Multivariate%20Analysis.md)
