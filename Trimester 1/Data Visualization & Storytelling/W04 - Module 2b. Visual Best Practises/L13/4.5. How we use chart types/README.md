@@ -425,3 +425,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Analytical Principle](./Important%20Analytical%20Principle.md)
 
 ## [Why Communication Spikes Occur](./Why%20Communication%20Spikes%20Occur.md)
+
+## [Communication Volume as a Signal](./Communication%20Volume%20as%20a%20Signal.md)
