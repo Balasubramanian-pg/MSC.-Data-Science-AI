@@ -39,3 +39,5 @@
 ## [6. Data Visualization as Storytelling](./6.%20Data%20Visualization%20as%20Storytelling.md)
 
 ## [6.1 Visualization and Narrative Building](./6.1%20Visualization%20and%20Narrative%20Building.md)
+
+## [6.2 Edward Tufte’s Principle](./6.2%20Edward%20Tufte%E2%80%99s%20Principle.md)
