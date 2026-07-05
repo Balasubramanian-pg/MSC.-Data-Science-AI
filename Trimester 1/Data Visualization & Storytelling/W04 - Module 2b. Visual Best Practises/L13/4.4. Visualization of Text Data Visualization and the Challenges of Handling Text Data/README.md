@@ -23,3 +23,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [The Opposite Problem](./The%20Opposite%20Problem.md)
 
 ## [Why Unstructured Data Is Difficult](./Why%20Unstructured%20Data%20Is%20Difficult.md)
+
+## [Textual Complexity Model](./Textual%20Complexity%20Model.md)
