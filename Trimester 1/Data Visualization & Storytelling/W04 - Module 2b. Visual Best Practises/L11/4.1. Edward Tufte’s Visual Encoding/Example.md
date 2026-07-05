@@ -1,11 +1,9 @@
 # Example
 
-|Product A|₹100|
-|---|---|
-|Product B|₹200|
+If bars are sorted descending:
 
-Now it is valid to say:
+users instantly infer ranking.
 
-```text
-Product B is twice Product A
-```
+If points form a line:
+
+users infer trend continuity.
