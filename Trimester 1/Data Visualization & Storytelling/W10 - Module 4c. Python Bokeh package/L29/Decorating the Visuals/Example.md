@@ -1,15 +1,7 @@
 # Example
 
-Instead of:
-
-```text
-Blue = Temperature
+```python
+mapper_plot.add_layout(color_bar, "left")
 ```
 
-Better:
-
-```text
-label directly beside blue line
-```
-
-Modern visualization systems increasingly prefer direct annotation.
+Places the scale on the left side.
