@@ -89,3 +89,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Semantic Importance vs Frequency](./Semantic%20Importance%20vs%20Frequency.md)
 
 ## [Word Clouds and Pre-Attentive Processing](./Word%20Clouds%20and%20Pre-Attentive%20Processing.md)
+
+## [Word Cloud Perception Model](./Word%20Cloud%20Perception%20Model.md)
