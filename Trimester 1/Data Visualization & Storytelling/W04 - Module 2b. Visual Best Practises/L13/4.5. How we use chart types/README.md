@@ -57,3 +57,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Weakness 3: Context Is Lost](./Weakness%203%20-%20Context%20Is%20Lost.md)
 
 ## [Important Visualization Principle](./Important%20Visualization%20Principle.md)
+
+## [Why the Bar Chart Is Superior](./Why%20the%20Bar%20Chart%20Is%20Superior.md)
