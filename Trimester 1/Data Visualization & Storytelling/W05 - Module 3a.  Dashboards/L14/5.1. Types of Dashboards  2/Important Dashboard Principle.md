@@ -1,8 +1,7 @@
 # Important Dashboard Principle
 
-A dashboard is more than:  
-“multiple charts on one page.”
+Each chart serves:  
+a different analytical purpose.
 
-It is:
-
-- a coordinated analytical environment.
+Together they create:  
+a richer understanding than any single chart could provide.
