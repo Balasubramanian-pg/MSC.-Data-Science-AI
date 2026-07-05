@@ -40,3 +40,5 @@
 ## [Common Mistakes](./Common%20Mistakes.md)
 
 ## [Examination Notes](./Examination%20Notes.md)
+
+## [Final Takeaways](./Final%20Takeaways.md)
