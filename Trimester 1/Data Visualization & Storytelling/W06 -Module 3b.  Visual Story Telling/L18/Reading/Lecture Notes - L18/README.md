@@ -151,3 +151,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Important Design Insight](./Important%20Design%20Insight.md)
 
 ## [B. Simplicity](./B.%20Simplicity.md)
+
+## [Why Whitespace Matters](./Why%20Whitespace%20Matters.md)
