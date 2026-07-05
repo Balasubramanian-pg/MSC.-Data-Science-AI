@@ -9,3 +9,5 @@ week: W05 - Module 3a.  Dashboards
 ## [What is a Dashboard?](./What%20is%20a%20Dashboard.md)
 
 ## [Core Definition](./Core%20Definition.md)
+
+## [Important Clarification](./Important%20Clarification.md)
