@@ -275,3 +275,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [The Core Problem](./The%20Core%20Problem.md)
 
 ## [Understanding `tight_layout()`](./Understanding%20%60tight_layout%28%29%60.md)
+
+## [What `tight_layout()` Actually Does](./What%20%60tight_layout%28%29%60%20Actually%20Does.md)
