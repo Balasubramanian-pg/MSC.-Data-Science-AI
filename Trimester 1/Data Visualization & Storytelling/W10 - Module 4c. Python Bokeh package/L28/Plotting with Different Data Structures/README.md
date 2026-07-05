@@ -7,3 +7,5 @@
 ## [4.5.3. The Vertical Bar Glyph](./4.5.3.%20The%20Vertical%20Bar%20Glyph.md)
 
 ## [4.5.4. Example of a Categorical Bar Chart](./4.5.4.%20Example%20of%20a%20Categorical%20Bar%20Chart.md)
+
+## [4.5.5. Factors Affecting Bar Chart Design](./4.5.5.%20Factors%20Affecting%20Bar%20Chart%20Design.md)
