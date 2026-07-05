@@ -69,3 +69,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [8. Visualization and Storytelling](./8.%20Visualization%20and%20Storytelling.md)
 
 ## [Visualization Pipeline](./Visualization%20Pipeline.md)
+
+## [Therefore Visualization Quality Affects:](./Therefore%20Visualization%20Quality%20Affects%20-.md)
