@@ -149,3 +149,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Common Failure Modes in Similar Dashboards](./Common%20Failure%20Modes%20in%20Similar%20Dashboards.md)
 
 ## [1. Metric Redundancy](./1.%20Metric%20Redundancy.md)
+
+## [2. Weak Interaction Feedback](./2.%20Weak%20Interaction%20Feedback.md)
