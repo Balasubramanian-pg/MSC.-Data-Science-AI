@@ -27,3 +27,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Textual Complexity Model](./Textual%20Complexity%20Model.md)
 
 ## [Important Core Insight](./Important%20Core%20Insight.md)
+
+## [Why Text Is Computationally Hard](./Why%20Text%20Is%20Computationally%20Hard.md)
