@@ -7,3 +7,5 @@
 ## [6.1.3. Renaming and Duplicating Fields](./6.1.3.%20Renaming%20and%20Duplicating%20Fields.md)
 
 ## [6.1.4. Organizing Dimensions with Folders](./6.1.4.%20Organizing%20Dimensions%20with%20Folders.md)
+
+## [6.1.5. Creating Hierarchies for Drill-Downs](./6.1.5.%20Creating%20Hierarchies%20for%20Drill-Downs.md)
