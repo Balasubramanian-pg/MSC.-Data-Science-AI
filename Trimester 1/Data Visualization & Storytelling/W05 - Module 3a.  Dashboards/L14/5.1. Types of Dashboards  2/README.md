@@ -151,3 +151,5 @@ week: W05 - Module 3a.  Dashboards
 ## [1. Metric Redundancy](./1.%20Metric%20Redundancy.md)
 
 ## [2. Weak Interaction Feedback](./2.%20Weak%20Interaction%20Feedback.md)
+
+## [3. Poor Layout Hierarchy](./3.%20Poor%20Layout%20Hierarchy.md)
