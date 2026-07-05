@@ -99,3 +99,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [What Assembly Means](./What%20Assembly%20Means.md)
 
 ## [Assembly Creates Narrative](./Assembly%20Creates%20Narrative.md)
+
+## [Why Ordering Matters](./Why%20Ordering%20Matters.md)
