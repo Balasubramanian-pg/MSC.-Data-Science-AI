@@ -299,3 +299,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Why Different Colors Matter](./Why%20Different%20Colors%20Matter.md)
 
 ## [`deepskyblue`](./%60deepskyblue%60.md)
+
+## [`slategray`](./%60slategray%60.md)
