@@ -77,3 +77,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [3. Synonymy](./3.%20Synonymy.md)
 
 ## [4. Polysemy](./4.%20Polysemy.md)
+
+## [5. Scale Problem](./5.%20Scale%20Problem.md)
