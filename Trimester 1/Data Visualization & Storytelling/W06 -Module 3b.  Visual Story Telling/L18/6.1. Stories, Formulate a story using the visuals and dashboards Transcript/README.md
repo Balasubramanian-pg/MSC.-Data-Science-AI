@@ -233,3 +233,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Death by Presentation](./Death%20by%20Presentation.md)
 
 ## [Why This Happens](./Why%20This%20Happens.md)
+
+## [Common Presentation Failures](./Common%20Presentation%20Failures.md)
