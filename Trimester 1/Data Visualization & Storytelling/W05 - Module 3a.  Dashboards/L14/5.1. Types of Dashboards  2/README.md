@@ -213,3 +213,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Analytical Dashboard](./Analytical%20Dashboard.md)
 
 ## [Operational Dashboard](./Operational%20Dashboard.md)
+
+## [Failure Mode: One Dashboard for Everyone](./Failure%20Mode%20-%20One%20Dashboard%20for%20Everyone.md)
