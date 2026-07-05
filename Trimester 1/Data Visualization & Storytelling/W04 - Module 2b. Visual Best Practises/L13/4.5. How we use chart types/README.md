@@ -435,3 +435,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Metadata vs Content](./Metadata%20vs%20Content.md)
 
 ## [Communication Density Analysis](./Communication%20Density%20Analysis.md)
+
+## [Density Interpretation Model](./Density%20Interpretation%20Model.md)
