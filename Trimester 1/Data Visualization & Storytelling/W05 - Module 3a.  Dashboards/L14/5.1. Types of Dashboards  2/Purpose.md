@@ -2,8 +2,10 @@
 
 Support:
 
-- strategic decisions,
+- pattern discovery,
     
-- organizational monitoring,
+- root-cause analysis,
     
-- high-level comparisons.
+- operational optimization,
+    
+- exploratory reasoning.
