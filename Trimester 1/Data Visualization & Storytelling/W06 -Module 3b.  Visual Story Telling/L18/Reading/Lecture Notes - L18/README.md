@@ -249,3 +249,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [The Core Problem](./The%20Core%20Problem.md)
 
 ## [Problems in the Slide](./Problems%20in%20the%20Slide.md)
+
+## [1. Clutter](./1.%20Clutter.md)
