@@ -29,3 +29,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Inspecting Downloaded Data](./Inspecting%20Downloaded%20Data.md)
 
 ## [Common CSV Problems](./Common%20CSV%20Problems.md)
+
+## [Delimiter Issues](./Delimiter%20Issues.md)
