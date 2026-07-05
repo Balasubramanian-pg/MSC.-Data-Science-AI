@@ -367,3 +367,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Then Border Change](./Then%20Border%20Change.md)
 
 ## [Important Architectural Idea](./Important%20Architectural%20Idea.md)
+
+## [Core Pattern](./Core%20Pattern.md)
