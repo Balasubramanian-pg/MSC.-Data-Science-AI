@@ -11,3 +11,5 @@
 ## [4.1.5. The Tableau Interface: A Guided Tour](./4.1.5.%20The%20Tableau%20Interface%20-%20A%20Guided%20Tour.md)
 
 ## [4.1.6. Creating Basic Charts in Tableau](./4.1.6.%20Creating%20Basic%20Charts%20in%20Tableau.md)
+
+## [4.1.7. Statistical Features in Tableau](./4.1.7.%20Statistical%20Features%20in%20Tableau.md)
