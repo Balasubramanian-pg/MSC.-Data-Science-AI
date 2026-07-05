@@ -79,3 +79,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Reader-Driven Narrative](./Reader-Driven%20Narrative.md)
 
 ## [Important Balance](./Important%20Balance.md)
+
+## [5. Contextual Relevance](./5.%20Contextual%20Relevance.md)
