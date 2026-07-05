@@ -105,3 +105,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Connection to Modern AI Systems](./Connection%20to%20Modern%20AI%20Systems.md)
 
 ## [Final Visualization Philosophy](./Final%20Visualization%20Philosophy.md)
+
+## [Final Mental Model](./Final%20Mental%20Model.md)
