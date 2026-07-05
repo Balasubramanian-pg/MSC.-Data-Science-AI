@@ -195,3 +195,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Eye Contact and Cognitive Engagement](./Eye%20Contact%20and%20Cognitive%20Engagement.md)
 
 ## [Presentation Mistake](./Presentation%20Mistake.md)
+
+## [B. The SUCCESS Model](./B.%20The%20SUCCESS%20Model.md)
