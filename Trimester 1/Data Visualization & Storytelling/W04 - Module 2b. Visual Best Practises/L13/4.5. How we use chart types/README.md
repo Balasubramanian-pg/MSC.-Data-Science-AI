@@ -383,3 +383,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Enron Email Dataset](./Enron%20Email%20Dataset.md)
 
 ## [One of the Most Famous Communication Datasets](./One%20of%20the%20Most%20Famous%20Communication%20Datasets.md)
+
+## [Why Enron Matters](./Why%20Enron%20Matters.md)
