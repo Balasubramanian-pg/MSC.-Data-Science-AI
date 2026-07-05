@@ -149,3 +149,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Caveat](./Important%20Caveat.md)
 
 ## [Cleaning Tradeoff](./Cleaning%20Tradeoff.md)
+
+## [Important NLP Principle](./Important%20NLP%20Principle.md)
