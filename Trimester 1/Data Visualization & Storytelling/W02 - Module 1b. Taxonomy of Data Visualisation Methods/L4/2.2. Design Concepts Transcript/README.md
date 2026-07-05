@@ -22,3 +22,5 @@
 ## [8. Accessibility](./8.%20Accessibility.md)
 
 ## [9. Cognitive Load and Visualization](./9.%20Cognitive%20Load%20and%20Visualization.md)
+
+## [10. Aesthetics](./10.%20Aesthetics.md)
