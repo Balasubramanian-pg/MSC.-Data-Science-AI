@@ -87,3 +87,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Security Considerations](./Security%20Considerations.md)
 
 ## [Machine Learning Connections](./Machine%20Learning%20Connections.md)
+
+## [Advanced Insight](./Advanced%20Insight.md)
