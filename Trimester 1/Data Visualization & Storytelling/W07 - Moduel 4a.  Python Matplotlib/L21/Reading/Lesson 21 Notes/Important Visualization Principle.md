@@ -1,13 +1,5 @@
 # Important Visualization Principle
 
-A technically correct chart can still fail communicatively.
+A chart without labels is often:
 
-Good visualization requires:
-
-- proportional accuracy
-    
-- semantic clarity
-    
-- contextual labeling
-    
-- perceptual consistency
+> visually complete but analytically incomplete.
