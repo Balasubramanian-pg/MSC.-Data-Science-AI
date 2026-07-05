@@ -347,3 +347,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Color as a Pre-attentive Attribute](./Color%20as%20a%20Pre-attentive%20Attribute.md)
 
 ## [Correct Use of Saturation](./Correct%20Use%20of%20Saturation.md)
+
+## [Counterintuitive Saturation](./Counterintuitive%20Saturation.md)
