@@ -9,3 +9,5 @@
 ## [35.2.4. Step-by-Step Example of Calculated Field Evaluation](./35.2.4.%20Step-by-Step%20Example%20of%20Calculated%20Field%20Evaluation.md)
 
 ## [35.2.5. Doughnut Charts for Categorical Share](./35.2.5.%20Doughnut%20Charts%20for%20Categorical%20Share.md)
+
+## [35.2.6. Geographical Mapping for Spatial Analysis](./35.2.6.%20Geographical%20Mapping%20for%20Spatial%20Analysis.md)
