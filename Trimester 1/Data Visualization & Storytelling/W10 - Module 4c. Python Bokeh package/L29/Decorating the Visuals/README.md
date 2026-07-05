@@ -105,3 +105,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Useful Cases](./Useful%20Cases.md)
 
 ## [Common Mistakes](./Common%20Mistakes.md)
+
+## [Mistake 1](./Mistake%201.md)
