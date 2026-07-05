@@ -407,3 +407,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Full Axis Styling Example](./Full%20Axis%20Styling%20Example.md)
 
 ## [Line graph](./Line%20graph.md)
+
+## [Axis labels](./Axis%20labels.md)
