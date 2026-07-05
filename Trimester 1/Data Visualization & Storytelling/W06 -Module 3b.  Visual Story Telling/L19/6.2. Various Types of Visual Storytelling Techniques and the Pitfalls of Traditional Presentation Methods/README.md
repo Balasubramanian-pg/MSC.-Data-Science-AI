@@ -139,3 +139,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Nested Loops Work Best When:](./Nested%20Loops%20Work%20Best%20When%20-.md)
 
 ## [The Deeper Principle Behind All Frameworks](./The%20Deeper%20Principle%20Behind%20All%20Frameworks.md)
+
+## [Final Strategic Insight](./Final%20Strategic%20Insight.md)
