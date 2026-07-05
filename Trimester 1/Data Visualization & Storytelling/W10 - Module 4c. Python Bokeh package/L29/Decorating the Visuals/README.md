@@ -829,3 +829,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Applying a Theme](./Applying%20a%20Theme.md)
 
 ## [Important Architectural Insight](./Important%20Architectural%20Insight.md)
+
+## [Built-In Themes Mentioned](./Built-In%20Themes%20Mentioned.md)
