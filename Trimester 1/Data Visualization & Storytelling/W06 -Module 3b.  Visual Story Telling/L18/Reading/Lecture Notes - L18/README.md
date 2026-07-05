@@ -17,3 +17,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Example from the Transcript](./Example%20from%20the%20Transcript.md)
 
 ## [Human Memory Is Associative](./Human%20Memory%20Is%20Associative.md)
+
+## [Memory Architecture of Storytelling](./Memory%20Architecture%20of%20Storytelling.md)
