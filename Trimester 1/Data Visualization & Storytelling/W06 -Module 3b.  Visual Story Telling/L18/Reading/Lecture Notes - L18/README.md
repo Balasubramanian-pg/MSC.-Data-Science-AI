@@ -185,3 +185,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [A. Presentation Zen](./A.%20Presentation%20Zen.md)
 
 ## [1. Naturalness](./1.%20Naturalness.md)
+
+## [Why Authenticity Matters](./Why%20Authenticity%20Matters.md)
