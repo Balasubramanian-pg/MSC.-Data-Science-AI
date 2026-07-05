@@ -105,3 +105,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Important Visualization Principle](./Important%20Visualization%20Principle.md)
 
 ## [3. Estimation](./3.%20Estimation.md)
+
+## [Quantitative Comparison](./Quantitative%20Comparison.md)
