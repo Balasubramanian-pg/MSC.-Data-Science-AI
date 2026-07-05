@@ -45,3 +45,5 @@ Every single function, method, and parameter is explained in detail using Python
 ## [🟢 Module 6: Advanced Layouts - Stacked Bars](./%F0%9F%9F%A2%20Module%206%20-%20Advanced%20Layouts%20-%20Stacked%20Bars.md)
 
 ## [MODULE 6: STACKED BAR CHARTS](./MODULE%206%20-%20STACKED%20BAR%20CHARTS.md)
+
+## [🟢 Module 7: On-the-fly Transformations](./%F0%9F%9F%A2%20Module%207%20-%20On-the-fly%20Transformations.md)
