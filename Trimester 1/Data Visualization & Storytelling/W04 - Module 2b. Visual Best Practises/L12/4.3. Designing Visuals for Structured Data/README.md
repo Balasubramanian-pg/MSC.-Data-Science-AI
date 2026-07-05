@@ -91,3 +91,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Example: Bounce Rates](./Example%20-%20Bounce%20Rates.md)
 
 ## [Business Insight](./Business%20Insight.md)
+
+## [Conversion Timing Insight](./Conversion%20Timing%20Insight.md)
