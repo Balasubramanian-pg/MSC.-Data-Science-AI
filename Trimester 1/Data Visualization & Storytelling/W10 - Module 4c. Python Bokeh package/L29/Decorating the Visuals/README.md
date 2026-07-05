@@ -619,3 +619,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Text Color](./Text%20Color.md)
 
 ## [Important UI Insight](./Important%20UI%20Insight.md)
+
+## [Important Design Insight](./Important%20Design%20Insight.md)
