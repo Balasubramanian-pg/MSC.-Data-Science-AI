@@ -19,3 +19,5 @@ This document provides a technical blueprint for understanding, selecting, and i
 ## [1. Define flat hierarchical data structure](./1.%20Define%20flat%20hierarchical%20data%20structure.md)
 
 ## [2. Compute circle packing positions using circlify algorithm](./2.%20Compute%20circle%20packing%20positions%20using%20circlify%20algorithm.md)
+
+## [3. Configure the matplotlib canvas](./3.%20Configure%20the%20matplotlib%20canvas.md)
