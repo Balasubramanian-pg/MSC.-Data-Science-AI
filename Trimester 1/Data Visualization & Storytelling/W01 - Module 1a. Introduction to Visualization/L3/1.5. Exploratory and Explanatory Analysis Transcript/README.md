@@ -63,3 +63,5 @@
 ## [4.1 EDA as the Foundation](./4.1%20EDA%20as%20the%20Foundation.md)
 
 ## [4.2 Transformation Pipeline](./4.2%20Transformation%20Pipeline.md)
+
+## [Conceptual Pipeline](./Conceptual%20Pipeline.md)
