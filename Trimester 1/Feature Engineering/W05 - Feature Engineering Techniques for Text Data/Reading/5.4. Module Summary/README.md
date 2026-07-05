@@ -11,3 +11,5 @@ week: W05 - Feature Engineering Techniques for Text Data
 ## [2. Intuition Section](./2.%20Intuition%20Section.md)
 
 ## [3. Mathematical Explanation](./3.%20Mathematical%20Explanation.md)
+
+## [4. Formula Breakdowns](./4.%20Formula%20Breakdowns.md)
