@@ -85,3 +85,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Line Charts](./Line%20Charts.md)
 
 ## [Why Line Charts Are Powerful](./Why%20Line%20Charts%20Are%20Powerful.md)
+
+## [What Line Charts Communicate Well](./What%20Line%20Charts%20Communicate%20Well.md)
