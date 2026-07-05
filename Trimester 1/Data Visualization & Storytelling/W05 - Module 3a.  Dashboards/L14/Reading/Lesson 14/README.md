@@ -15,3 +15,5 @@ week: W05 - Module 3a.  Dashboards
 ## [Historical Analogy](./Historical%20Analogy.md)
 
 ## [Dashboard Mental Model](./Dashboard%20Mental%20Model.md)
+
+## [Why Dashboards Exist](./Why%20Dashboards%20Exist.md)
