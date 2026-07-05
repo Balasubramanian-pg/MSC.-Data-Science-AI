@@ -23,3 +23,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [What `read_csv()` Actually Does](./What%20%60read_csv%28%29%60%20Actually%20Does.md)
 
 ## [DataFrame Mental Model](./DataFrame%20Mental%20Model.md)
+
+## [Example: Reading Real CSV Data](./Example%20-%20Reading%20Real%20CSV%20Data.md)
