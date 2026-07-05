@@ -25,3 +25,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Why Matplotlib Became Dominant](./Why%20Matplotlib%20Became%20Dominant.md)
 
 ## [Historical Background](./Historical%20Background.md)
+
+## [Important Historical Context](./Important%20Historical%20Context.md)
