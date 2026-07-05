@@ -311,3 +311,5 @@ week: W04 - Module 2b. Visual Best Practises
 ## [Understanding Distribution Geometry](./Understanding%20Distribution%20Geometry.md)
 
 ## [Normal vs Non-Normal Distributions](./Normal%20vs%20Non-Normal%20Distributions.md)
+
+## [Distribution Analysis Pipeline](./Distribution%20Analysis%20Pipeline.md)
