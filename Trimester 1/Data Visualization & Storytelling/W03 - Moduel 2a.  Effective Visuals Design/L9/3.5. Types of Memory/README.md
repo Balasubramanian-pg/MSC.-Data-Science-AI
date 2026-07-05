@@ -197,3 +197,5 @@ week: W03 - Moduel 2a.  Effective Visuals Design
 ## [Core Cognitive Principle](./Core%20Cognitive%20Principle.md)
 
 ## [Pre-Attentive Attributes Explained](./Pre-Attentive%20Attributes%20Explained.md)
+
+## [1. Orientation](./1.%20Orientation.md)
