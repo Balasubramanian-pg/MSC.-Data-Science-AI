@@ -173,3 +173,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Common Problems in Time-Series Visualization](./Common%20Problems%20in%20Time-Series%20Visualization.md)
 
 ## [Overplotting](./Overplotting.md)
+
+## [Missing Dates](./Missing%20Dates.md)
