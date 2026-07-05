@@ -323,3 +323,5 @@ week: W06 -Module 3b.  Visual Story Telling
 ## [Color Saturation and Visual Attention Manipulation](./Color%20Saturation%20and%20Visual%20Attention%20Manipulation.md)
 
 ## [What Is Color Saturation?](./What%20Is%20Color%20Saturation.md)
+
+## [COVID-19 Example](./COVID-19%20Example.md)
