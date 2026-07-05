@@ -19,3 +19,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Matplotlib Import](./Matplotlib%20Import.md)
 
 ## [NumPy Import](./NumPy%20Import.md)
+
+## [2. Inline Plot Rendering](./2.%20Inline%20Plot%20Rendering.md)
