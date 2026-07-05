@@ -345,3 +345,5 @@ week: W07 - Moduel 4a.  Python Matplotlib
 ## [Improved Visualization](./Improved%20Visualization.md)
 
 ## [Define categories](./Define%20categories.md)
+
+## [Define values](./Define%20values.md)
