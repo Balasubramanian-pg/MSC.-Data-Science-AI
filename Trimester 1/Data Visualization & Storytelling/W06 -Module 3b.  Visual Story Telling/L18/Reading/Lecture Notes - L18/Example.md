@@ -1,12 +1,8 @@
 # Example
 
-Weak analyst:
+Large rural states visually dominated maps because:  
+they occupy more geographic area.
 
-> “Metric X decreased by 7%.”
-
-Strong analyst:
-
-> “Customer drop-off increased sharply after onboarding friction rose in mobile devices, suggesting UX instability is affecting conversion.”
-
-The second tells:  
-a causal story.
+This often created the perception that:  
+Republicans dominated the country geographically,  
+even when population distribution was more balanced.
