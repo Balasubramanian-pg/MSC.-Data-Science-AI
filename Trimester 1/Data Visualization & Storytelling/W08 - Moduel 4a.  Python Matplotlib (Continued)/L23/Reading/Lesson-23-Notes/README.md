@@ -17,3 +17,5 @@ week: W08 - Moduel 4a.  Python Matplotlib (Continued)
 ## [Conceptual Structure](./Conceptual%20Structure.md)
 
 ## [Why CSV Became Dominant](./Why%20CSV%20Became%20Dominant.md)
+
+## [Reading CSV Files with Pandas](./Reading%20CSV%20Files%20with%20Pandas.md)
