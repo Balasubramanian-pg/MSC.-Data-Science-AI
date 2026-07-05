@@ -1,7 +1,7 @@
 # Border Transparency
 
 ```python
-plot.outline_line_alpha = 0.5
+legend_plot.legend.border_line_alpha = 0.8
 ```
 
-Semi-transparent border.
+80% visible border.
