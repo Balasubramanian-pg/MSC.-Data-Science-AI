@@ -201,3 +201,5 @@ Here is a technical document created from the transcript, designed for self-pace
 ## [Why Use Relative Units?](./Why%20Use%20Relative%20Units.md)
 
 ## [Creating the Line Plot](./Creating%20the%20Line%20Plot.md)
+
+## [Important Insight](./Important%20Insight.md)
