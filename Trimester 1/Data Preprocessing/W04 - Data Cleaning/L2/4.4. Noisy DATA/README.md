@@ -47,3 +47,5 @@
 ## [Binning for Noise Smoothing](./Binning%20for%20Noise%20Smoothing.md)
 
 ## [Smoothing by Bin Means](./Smoothing%20by%20Bin%20Means.md)
+
+## [Smoothing by Bin Boundaries](./Smoothing%20by%20Bin%20Boundaries.md)
