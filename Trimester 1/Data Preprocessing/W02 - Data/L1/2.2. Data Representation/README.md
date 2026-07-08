@@ -18,3 +18,5 @@
 ## [How similar is Doc1 to Doc2 vs Doc3?](./How%20similar%20is%20Doc1%20to%20Doc2%20vs%20Doc3.md)
 
 ## [We use Cosine Similarity for sparse text vectors](./We%20use%20Cosine%20Similarity%20for%20sparse%20text%20vectors.md)
+
+## [Expected Output Interpretation:](./Expected%20Output%20Interpretation%20-.md)
