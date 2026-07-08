@@ -32,3 +32,5 @@
 14. Key Takeaways
 
 ## [Introduction to Data Inconsistency](./Introduction%20to%20Data%20Inconsistency.md)
+
+## [Defining Data Inconsistency](./Defining%20Data%20Inconsistency.md)
