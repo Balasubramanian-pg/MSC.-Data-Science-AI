@@ -4,7 +4,7 @@
 
 #### [1.4.2. Defining Parametric Methods](./1.4.02.%20Defining%20Parametric%20Methods.md)
 
-## [1.4.3. The Tailored Suit Analogy](./1.4.3.%20The%20Tailored%20Suit%20Analogy.md)
+#### [1.4.3. The Tailored Suit Analogy](./1.4.03.%20The%20Tailored%20Suit%20Analogy.md)
 
 ## [1.4.4. Defining Non-Parametric Methods](./1.4.4.%20Defining%20Non-Parametric%20Methods.md)
 
