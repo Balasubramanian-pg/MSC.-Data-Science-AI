@@ -27,3 +27,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Height–Weight–Income Example](./Height%E2%80%93Weight%E2%80%93Income%20Example.md)
 
 ## [Euclidean Distance and Feature Bias](./Euclidean%20Distance%20and%20Feature%20Bias.md)
+
+## [Discriminatory Features vs Large Magnitude Features](./Discriminatory%20Features%20vs%20Large%20Magnitude%20Features.md)
