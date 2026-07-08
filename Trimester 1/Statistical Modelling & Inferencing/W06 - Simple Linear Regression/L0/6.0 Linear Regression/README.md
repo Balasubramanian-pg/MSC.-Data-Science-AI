@@ -16,7 +16,7 @@
 
 #### [6.0.8. Residuals: Measuring Prediction Error](./6.0.08.%20Residuals%20-%20Measuring%20Prediction%20Error.md)
 
-## [6.0.9. Model Significance and Hypothesis Testing](./6.0.9.%20Model%20Significance%20and%20Hypothesis%20Testing.md)
+#### [6.0.9. Model Significance and Hypothesis Testing](./6.0.09.%20Model%20Significance%20and%20Hypothesis%20Testing.md)
 
 ## [6.0.10. Example of Linear Regression Hypothesis Testing](./6.0.10.%20Example%20of%20Linear%20Regression%20Hypothesis%20Testing.md)
 
