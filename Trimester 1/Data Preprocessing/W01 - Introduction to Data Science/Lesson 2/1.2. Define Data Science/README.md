@@ -10,3 +10,5 @@
 ## [3. The Evolution of Scientific Discovery](./3.%20The%20Evolution%20of%20Scientific%20Discovery.md)
 
 ## [4. Drivers of the Data Explosion](./4.%20Drivers%20of%20the%20Data%20Explosion.md)
+
+## [5. Mathematical Abstraction: Predictive vs. Descriptive Systems](./5.%20Mathematical%20Abstraction%20-%20Predictive%20vs.%20Descriptive%20Systems.md)
