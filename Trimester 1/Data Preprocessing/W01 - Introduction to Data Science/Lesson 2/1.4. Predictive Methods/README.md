@@ -10,3 +10,5 @@
 ## [3. The Mathematical Framework](./3.%20The%20Mathematical%20Framework.md)
 
 ## [4. Classification: Predicting Finite States](./4.%20Classification%20-%20Predicting%20Finite%20States.md)
+
+## [1. Simulate Historical Customer Data](./1.%20Simulate%20Historical%20Customer%20Data.md)
