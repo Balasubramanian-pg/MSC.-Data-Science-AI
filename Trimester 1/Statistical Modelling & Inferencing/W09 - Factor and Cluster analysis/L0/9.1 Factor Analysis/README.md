@@ -2,7 +2,7 @@
 
 #### [9.1.1. The Shift to Latent Structure Detection](./9.1.01.%20The%20Shift%20to%20Latent%20Structure%20Detection.md)
 
-## [9.1.2. The Philosophy of Latent Variables](./9.1.2.%20The%20Philosophy%20of%20Latent%20Variables.md)
+#### [9.1.2. The Philosophy of Latent Variables](./9.1.02.%20The%20Philosophy%20of%20Latent%20Variables.md)
 
 ## [9.1.3. The Mathematical Definition of a Factor Model](./9.1.3.%20The%20Mathematical%20Definition%20of%20a%20Factor%20Model.md)
 
