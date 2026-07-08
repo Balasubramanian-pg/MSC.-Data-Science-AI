@@ -12,7 +12,7 @@
 
 #### [3.3.6. Statistical Power](./3.3.06.%20Statistical%20Power.md)
 
-## [3.3.7. The Tradeoff Between Error Types](./3.3.7.%20The%20Tradeoff%20Between%20Error%20Types.md)
+#### [3.3.7. The Tradeoff Between Error Types](./3.3.07.%20The%20Tradeoff%20Between%20Error%20Types.md)
 
 ## [3.3.8. The Role of Sample Size](./3.3.8.%20The%20Role%20of%20Sample%20Size.md)
 
