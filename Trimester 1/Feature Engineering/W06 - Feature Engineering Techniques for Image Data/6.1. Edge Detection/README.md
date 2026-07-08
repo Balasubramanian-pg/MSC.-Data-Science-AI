@@ -16,7 +16,7 @@ week: W06 - Feature Engineering Techniques for Image Data
 
 #### [6.1.5. Practical Implementation Considerations](./6.1.05.%20Practical%20Implementation%20Considerations.md)
 
-## [6.1.6. Comparison with Alternative Edge Detectors](./6.1.6.%20Comparison%20with%20Alternative%20Edge%20Detectors.md)
+#### [6.1.6. Comparison with Alternative Edge Detectors](./6.1.06.%20Comparison%20with%20Alternative%20Edge%20Detectors.md)
 
 ## [6.1.7. Common Misinterpretations](./6.1.7.%20Common%20Misinterpretations.md)
 
