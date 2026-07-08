@@ -2,7 +2,7 @@
 
 #### [12.1.1. The Mathematical Definition of a Random Variable](./12.1.01.%20The%20Mathematical%20Definition%20of%20a%20Random%20Variable.md)
 
-## [12.1.2. Discrete vs. Continuous Random Variables](./12.1.2.%20Discrete%20vs.%20Continuous%20Random%20Variables.md)
+#### [12.1.2. Discrete vs. Continuous Random Variables](./12.1.02.%20Discrete%20vs.%20Continuous%20Random%20Variables.md)
 
 ## [12.1.3. Modeling the Distribution of Probabilities](./12.1.3.%20Modeling%20the%20Distribution%20of%20Probabilities.md)
 
