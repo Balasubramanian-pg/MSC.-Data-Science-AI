@@ -20,3 +20,5 @@
 ## [2. Train-Test Split](./2.%20Train-Test%20Split.md)
 
 ## [3. Initialize and Train the Predictive Engine](./3.%20Initialize%20and%20Train%20the%20Predictive%20Engine.md)
+
+## [4. Inference and Evaluation](./4.%20Inference%20and%20Evaluation.md)
