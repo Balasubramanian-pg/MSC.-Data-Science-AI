@@ -14,7 +14,7 @@
 
 #### [3.0.7. Wrapper Methods: Iterative Subset Evaluation](./3.0.07.%20Wrapper%20Methods%20-%20Iterative%20Subset%20Evaluation.md)
 
-## [3.0.8. Embedded Methods: Algorithmic Selection](./3.0.8.%20Embedded%20Methods%20-%20Algorithmic%20Selection.md)
+#### [3.0.8. Embedded Methods: Algorithmic Selection](./3.0.08.%20Embedded%20Methods%20-%20Algorithmic%20Selection.md)
 
 ## [3.0.9. L1 Regularization (Lasso) in Feature Selection](./3.0.9.%20L1%20Regularization%20%28Lasso%29%20in%20Feature%20Selection.md)
 
