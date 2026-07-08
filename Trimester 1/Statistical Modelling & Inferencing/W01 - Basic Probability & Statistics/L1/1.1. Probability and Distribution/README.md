@@ -18,10 +18,10 @@
 
 #### [1.1.9. Common Discrete Distributions](./1.1.09.%20Common%20Discrete%20Distributions.md)
 
-## [1.1.10. Common Continuous Distributions](./1.1.10.%20Common%20Continuous%20Distributions.md)
+#### [1.1.10. Common Continuous Distributions](./1.1.10.%20Common%20Continuous%20Distributions.md)
 
-## [1.1.11. Practical Applications and Connections](./1.1.11.%20Practical%20Applications%20and%20Connections.md)
+#### [1.1.11. Practical Applications and Connections](./1.1.11.%20Practical%20Applications%20and%20Connections.md)
 
-## [1.1.12. Common Misinterpretations](./1.1.12.%20Common%20Misinterpretations.md)
+#### [1.1.12. Common Misinterpretations](./1.1.12.%20Common%20Misinterpretations.md)
 
-## [1.1.13. Conclusions](./1.1.13.%20Conclusions.md)
+#### [1.1.13. Conclusions](./1.1.13.%20Conclusions.md)
