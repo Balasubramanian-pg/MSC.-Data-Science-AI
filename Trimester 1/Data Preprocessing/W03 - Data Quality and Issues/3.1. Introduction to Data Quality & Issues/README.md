@@ -9,3 +9,5 @@
 ## [Dimensions of Data Quality](./Dimensions%20of%20Data%20Quality.md)
 
 ## [3.1 Accuracy](./3.1%20Accuracy.md)
+
+## [3.2 Completeness](./3.2%20Completeness.md)
