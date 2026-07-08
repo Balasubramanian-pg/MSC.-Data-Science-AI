@@ -8,7 +8,7 @@
 
 #### [6.0.4. The Meaning of the Intercept and Slope](./6.0.04.%20The%20Meaning%20of%20the%20Intercept%20and%20Slope.md)
 
-## [6.0.5. The Error Term and Randomness](./6.0.5.%20The%20Error%20Term%20and%20Randomness.md)
+#### [6.0.5. The Error Term and Randomness](./6.0.05.%20The%20Error%20Term%20and%20Randomness.md)
 
 ## [6.0.6. Estimating the Regression Line](./6.0.6.%20Estimating%20the%20Regression%20Line.md)
 
