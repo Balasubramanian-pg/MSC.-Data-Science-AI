@@ -29,3 +29,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Euclidean Distance and Feature Bias](./Euclidean%20Distance%20and%20Feature%20Bias.md)
 
 ## [Discriminatory Features vs Large Magnitude Features](./Discriminatory%20Features%20vs%20Large%20Magnitude%20Features.md)
+
+## [Benefits of Data Normalization](./Benefits%20of%20Data%20Normalization.md)
