@@ -15,3 +15,5 @@ week: W05 - Data Transformation and Aggregation
 ## [3.1 Core Idea](./3.1%20Core%20Idea.md)
 
 ## [3.2 Formula](./3.2%20Formula.md)
+
+## [3.3 Step-by-Step Example](./3.3%20Step-by-Step%20Example.md)
