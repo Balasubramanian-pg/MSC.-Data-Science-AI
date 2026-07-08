@@ -42,3 +42,5 @@
 ## [6. Computational & Performance Insights](./6.%20Computational%20%26%20Performance%20Insights.md)
 
 ## [7. Common Mistakes & Hidden Assumptions](./7.%20Common%20Mistakes%20%26%20Hidden%20Assumptions.md)
+
+## [8. Final Takeaways & Interview Preparation](./8.%20Final%20Takeaways%20%26%20Interview%20Preparation.md)
