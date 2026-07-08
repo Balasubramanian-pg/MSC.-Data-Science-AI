@@ -8,7 +8,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.2.1. From Original Features to Latent Structures](./4.2.01.%20From%20Original%20Features%20to%20Latent%20Structures.md)
 
-## [4.2.2. The Mathematical Framework of SVD](./4.2.2.%20The%20Mathematical%20Framework%20of%20SVD.md)
+#### [4.2.2. The Mathematical Framework of SVD](./4.2.02.%20The%20Mathematical%20Framework%20of%20SVD.md)
 
 ## [4.2.3. Components of the Decomposition](./4.2.3.%20Components%20of%20the%20Decomposition.md)
 
