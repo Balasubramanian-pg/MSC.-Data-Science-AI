@@ -43,3 +43,5 @@
 ## [Understanding Outliers](./Understanding%20Outliers.md)
 
 ## [Visualizing Outliers in 1D and 2D Space](./Visualizing%20Outliers%20in%201D%20and%202D%20Space.md)
+
+## [One-Dimensional View](./One-Dimensional%20View.md)
