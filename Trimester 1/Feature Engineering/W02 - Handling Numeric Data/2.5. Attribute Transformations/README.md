@@ -12,7 +12,7 @@ week: W02 - Handling Numeric Data
 
 #### [2.5.3. The Logarithmic Transformation](./2.5.03.%20The%20Logarithmic%20Transformation.md)
 
-## [2.5.4. The Yeo-Johnson Power Transformation](./2.5.4.%20The%20Yeo-Johnson%20Power%20Transformation.md)
+#### [2.5.4. The Yeo-Johnson Power Transformation](./2.5.04.%20The%20Yeo-Johnson%20Power%20Transformation.md)
 
 ## [2.5.5. Example of Logarithmic Transformation](./2.5.5.%20Example%20of%20Logarithmic%20Transformation.md)
 
