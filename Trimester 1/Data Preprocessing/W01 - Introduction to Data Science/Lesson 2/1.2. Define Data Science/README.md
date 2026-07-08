@@ -22,3 +22,5 @@
 ## [Genuine transactions: Typical amounts and typical frequencies](./Genuine%20transactions%20-%20Typical%20amounts%20and%20typical%20frequencies.md)
 
 ## [Fraudulent transactions: Anomalously high amounts, unusual frequencies](./Fraudulent%20transactions%20-%20Anomalously%20high%20amounts%2C%20unusual%20frequencies.md)
+
+## [Combine into a single structured dataset](./Combine%20into%20a%20single%20structured%20dataset.md)
