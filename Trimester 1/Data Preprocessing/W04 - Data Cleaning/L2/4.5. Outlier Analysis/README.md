@@ -73,3 +73,5 @@
 ## [10.1 Direct Removal](./10.1%20Direct%20Removal.md)
 
 ## [10.2 Transformation and Replacement](./10.2%20Transformation%20and%20Replacement.md)
+
+## [10.3 Automated Detection Methods](./10.3%20Automated%20Detection%20Methods.md)
