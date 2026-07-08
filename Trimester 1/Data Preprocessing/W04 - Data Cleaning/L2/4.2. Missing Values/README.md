@@ -33,3 +33,5 @@ week: W04 - Data Cleaning
 ## [Methods for Handling Missing Values](./Methods%20for%20Handling%20Missing%20Values.md)
 
 ## [10.1 Ignoring Tuples](./10.1%20Ignoring%20Tuples.md)
+
+## [10.2 Manual Filling](./10.2%20Manual%20Filling.md)
