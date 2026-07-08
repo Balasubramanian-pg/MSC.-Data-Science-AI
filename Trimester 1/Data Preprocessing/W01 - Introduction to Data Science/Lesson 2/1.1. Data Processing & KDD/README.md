@@ -26,3 +26,5 @@
 ## [Drop irrelevant columns (sensor_id, maintenance_log, wind_direction for simplicity)](./Drop%20irrelevant%20columns%20%28sensor_id%2C%20maintenance_log%2C%20wind_direction%20for%20simplicity%29.md)
 
 ## [STEP 2: Data Preprocessing (Cleaning)](./STEP%202%20-%20Data%20Preprocessing%20%28Cleaning%29.md)
+
+## [Handle NaNs and fix extreme outliers](./Handle%20NaNs%20and%20fix%20extreme%20outliers.md)
