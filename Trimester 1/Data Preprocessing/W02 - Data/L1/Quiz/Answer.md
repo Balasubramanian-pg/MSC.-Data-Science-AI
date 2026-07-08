@@ -1,14 +1,14 @@
 # Answer
 
-✅ **A record, sample, instance, or point**
+✅ **transaction data**
 
 > [!NOTE]
 > **Reason**
 >
-> A **data object** refers to a single entity or observation in a dataset. Depending on the context, it may also be called a **record**, **sample**, **instance**, or **data point**.
+> **Transaction data** consists of records where each entry contains a set of items occurring together in a single event or transaction.
 >
-> For example, in a student dataset, each student's row represents one data object.
+> A classic example is **market basket analysis**, where each shopping trip contains the collection of products purchased by a customer.
 
-# Question 8
+# Question 9
 
-Data from a grocery store where each record consists of the set of all products purchased by a customer in a single shopping trip is known as:
+Which of the following best describes the relationship between an object and its attributes?
