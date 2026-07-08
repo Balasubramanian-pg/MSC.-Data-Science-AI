@@ -12,7 +12,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.2.3. Components of the Decomposition](./4.2.03.%20Components%20of%20the%20Decomposition.md)
 
-## [4.2.4. Truncated SVD for Dimensionality Reduction](./4.2.4.%20Truncated%20SVD%20for%20Dimensionality%20Reduction.md)
+#### [4.2.4. Truncated SVD for Dimensionality Reduction](./4.2.04.%20Truncated%20SVD%20for%20Dimensionality%20Reduction.md)
 
 ## [4.2.5. Example of SVD Truncation](./4.2.5.%20Example%20of%20SVD%20Truncation.md)
 
