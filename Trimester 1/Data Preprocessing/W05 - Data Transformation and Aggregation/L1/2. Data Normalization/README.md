@@ -35,3 +35,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Faster Learning and Convergence](./Faster%20Learning%20and%20Convergence.md)
 
 ## [Improved Interpretability](./Improved%20Interpretability.md)
+
+## [Types of Normalization Techniques](./Types%20of%20Normalization%20Techniques.md)
