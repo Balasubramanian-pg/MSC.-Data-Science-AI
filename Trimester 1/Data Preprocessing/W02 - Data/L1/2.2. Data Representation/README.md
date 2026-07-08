@@ -32,3 +32,5 @@
 ## [2. Add edges (hyperlinks) between webpages](./2.%20Add%20edges%20%28hyperlinks%29%20between%20webpages.md)
 
 ## [3. Compute the PageRank mathematically (solving the eigenvector problem)](./3.%20Compute%20the%20PageRank%20mathematically%20%28solving%20the%20eigenvector%20problem%29.md)
+
+## [4. Optional: View the Adjacency Matrix](./4.%20Optional%20-%20View%20the%20Adjacency%20Matrix.md)
