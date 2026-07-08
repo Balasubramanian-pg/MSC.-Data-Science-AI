@@ -17,3 +17,5 @@ This lecture focuses on **data volume reduction**, specifically through **data c
 ## [2. Compression Ratio](./2.%20Compression%20Ratio.md)
 
 ## [3. Processing Overhead](./3.%20Processing%20Overhead.md)
+
+## [4. File Suitability](./4.%20File%20Suitability.md)
