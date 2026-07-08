@@ -35,3 +35,5 @@
 17. Key Takeaways
 
 ## [Introduction to Data Aggregation](./Introduction%20to%20Data%20Aggregation.md)
+
+## [Understanding Aggregation](./Understanding%20Aggregation.md)
