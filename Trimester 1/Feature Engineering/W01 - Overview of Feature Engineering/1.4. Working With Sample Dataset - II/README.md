@@ -18,7 +18,7 @@ week: W01 - Overview of Feature Engineering
 
 #### [1.4.6. Example of Feature Importance Evaluation](./1.4.06.%20Example%20of%20Feature%20Importance%20Evaluation.md)
 
-## [1.4.7. Factors Affecting Feature Selection in Chemical Data](./1.4.7.%20Factors%20Affecting%20Feature%20Selection%20in%20Chemical%20Data.md)
+#### [1.4.7. Factors Affecting Feature Selection in Chemical Data](./1.4.07.%20Factors%20Affecting%20Feature%20Selection%20in%20Chemical%20Data.md)
 
 ## [1.4.8. Common Misinterpretations](./1.4.8.%20Common%20Misinterpretations.md)
 
