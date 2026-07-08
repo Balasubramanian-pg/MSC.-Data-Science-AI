@@ -77,3 +77,5 @@
 ## [10.3 Automated Detection Methods](./10.3%20Automated%20Detection%20Methods.md)
 
 ## [10.4 Domain Expert Validation](./10.4%20Domain%20Expert%20Validation.md)
+
+## [Median vs Mean for Robustness](./Median%20vs%20Mean%20for%20Robustness.md)
