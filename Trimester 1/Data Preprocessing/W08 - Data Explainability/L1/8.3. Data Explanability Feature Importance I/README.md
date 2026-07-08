@@ -14,7 +14,7 @@
 
 #### [8.3.7. Comparing LIME and SHAP](./8.3.07.%20Comparing%20LIME%20and%20SHAP.md)
 
-## [8.3.8. Limitations of Explainability Methods](./8.3.8.%20Limitations%20of%20Explainability%20Methods.md)
+#### [8.3.8. Limitations of Explainability Methods](./8.3.08.%20Limitations%20of%20Explainability%20Methods.md)
 
 ## [8.3.9. Example of Computing SHAP Values](./8.3.9.%20Example%20of%20Computing%20SHAP%20Values.md)
 
