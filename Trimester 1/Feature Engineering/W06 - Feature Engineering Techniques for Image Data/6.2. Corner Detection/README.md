@@ -16,7 +16,7 @@ week: W06 - Feature Engineering Techniques for Image Data
 
 #### [6.2.5. Example: Computing Harris and Shi-Tomasi Responses](./6.2.05.%20Example%20-%20Computing%20Harris%20and%20Shi-Tomasi%20Responses.md)
 
-## [6.2.6. Practical Implementation Parameters](./6.2.6.%20Practical%20Implementation%20Parameters.md)
+#### [6.2.6. Practical Implementation Parameters](./6.2.06.%20Practical%20Implementation%20Parameters.md)
 
 ## [6.2.7. Comparison of Harris and Shi-Tomasi](./6.2.7.%20Comparison%20of%20Harris%20and%20Shi-Tomasi.md)
 
