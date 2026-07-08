@@ -11,3 +11,5 @@ This lecture focuses on **data volume reduction**, specifically through **data c
 ## [2. Lossy Compression](./2.%20Lossy%20Compression.md)
 
 ## [Compression Tradeoffs](./Compression%20Tradeoffs.md)
+
+## [1. Data Integrity](./1.%20Data%20Integrity.md)
