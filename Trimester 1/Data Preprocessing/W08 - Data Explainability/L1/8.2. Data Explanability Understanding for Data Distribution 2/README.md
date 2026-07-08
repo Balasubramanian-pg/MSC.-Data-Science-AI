@@ -3,3 +3,5 @@
 ## [8.2.1. The Visual Foundation of Statistical Analysis](./8.2.1.%20The%20Visual%20Foundation%20of%20Statistical%20Analysis.md)
 
 ## [8.2.2. Histograms and Frequency Structures](./8.2.2.%20Histograms%20and%20Frequency%20Structures.md)
+
+## [8.2.3. Box Plots and the Five-Number Summary](./8.2.3.%20Box%20Plots%20and%20the%20Five-Number%20Summary.md)
