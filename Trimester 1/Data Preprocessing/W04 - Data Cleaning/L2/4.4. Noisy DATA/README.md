@@ -25,3 +25,5 @@
 12. Regression and Trend Modeling
     
 13. Key Takeaways
+
+## [Introduction to Noisy Data](./Introduction%20to%20Noisy%20Data.md)
