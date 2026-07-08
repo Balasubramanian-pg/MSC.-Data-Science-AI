@@ -8,7 +8,7 @@ week: W06 - Feature Engineering Techniques for Image Data
 
 #### [6.3.1. From Raw Pixels to Structural Descriptors](./6.3.01.%20From%20Raw%20Pixels%20to%20Structural%20Descriptors.md)
 
-## [6.3.2. Theoretical Foundations of Gradient Fields](./6.3.2.%20Theoretical%20Foundations%20of%20Gradient%20Fields.md)
+#### [6.3.2. Theoretical Foundations of Gradient Fields](./6.3.02.%20Theoretical%20Foundations%20of%20Gradient%20Fields.md)
 
 ## [6.3.3. The Four-Stage Computational Workflow](./6.3.3.%20The%20Four-Stage%20Computational%20Workflow.md)
 
