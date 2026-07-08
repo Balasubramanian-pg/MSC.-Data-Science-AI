@@ -6,7 +6,7 @@
 
 #### [8.4.3. Feature Selection and Importance](./8.4.03.%20Feature%20Selection%20and%20Importance.md)
 
-## [8.4.4. The Computational Challenge of Feature Search](./8.4.4.%20The%20Computational%20Challenge%20of%20Feature%20Search.md)
+#### [8.4.4. The Computational Challenge of Feature Search](./8.4.04.%20The%20Computational%20Challenge%20of%20Feature%20Search.md)
 
 ## [8.4.5. Tree-Based Feature Importance](./8.4.5.%20Tree-Based%20Feature%20Importance.md)
 
