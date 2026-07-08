@@ -81,3 +81,5 @@
 ## [Median vs Mean for Robustness](./Median%20vs%20Mean%20for%20Robustness.md)
 
 ## [Outlier Detection in High Dimensions](./Outlier%20Detection%20in%20High%20Dimensions.md)
+
+## [Iterative Nature of Outlier Analysis](./Iterative%20Nature%20of%20Outlier%20Analysis.md)
