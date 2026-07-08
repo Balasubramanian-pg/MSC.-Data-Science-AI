@@ -49,3 +49,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Z-Score Normalization Intuition](./Z-Score%20Normalization%20Intuition.md)
 
 ## [Decimal Scaling Intuition](./Decimal%20Scaling%20Intuition.md)
+
+## [Key Takeaways](./Key%20Takeaways.md)
