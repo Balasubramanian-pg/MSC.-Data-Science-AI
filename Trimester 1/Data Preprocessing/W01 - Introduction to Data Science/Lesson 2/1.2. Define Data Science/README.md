@@ -40,3 +40,5 @@
 ## [Plot Genuine Transactions](./Plot%20Genuine%20Transactions.md)
 
 ## [Plot Fraudulent Transactions](./Plot%20Fraudulent%20Transactions.md)
+
+## [7. Real-World Applications by Domain](./7.%20Real-World%20Applications%20by%20Domain.md)
