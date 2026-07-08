@@ -42,3 +42,5 @@
 ## [STEP 5: Pattern Evaluation](./STEP%205%20-%20Pattern%20Evaluation.md)
 
 ## [Iterative loop check](./Iterative%20loop%20check.md)
+
+## [6. Business Intelligence (BI) Pyramid](./6.%20Business%20Intelligence%20%28BI%29%20Pyramid.md)
