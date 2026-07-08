@@ -40,3 +40,5 @@
 ## [4. Diagnostics](./4.%20Diagnostics.md)
 
 ## [6. Computational & Performance Insights](./6.%20Computational%20%26%20Performance%20Insights.md)
+
+## [7. Common Mistakes & Hidden Assumptions](./7.%20Common%20Mistakes%20%26%20Hidden%20Assumptions.md)
