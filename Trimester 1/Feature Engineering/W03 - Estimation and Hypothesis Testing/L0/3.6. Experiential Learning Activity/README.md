@@ -16,4 +16,4 @@
 
 #### [3.6.8. Common Misinterpretations](./3.6.08.%20Common%20Misinterpretations.md)
 
-## [3.6.9. Conclusions](./3.6.9.%20Conclusions.md)
+#### [3.6.9. Conclusions](./3.6.09.%20Conclusions.md)
