@@ -18,3 +18,5 @@
 ## [1. Constructing a heterogeneous dataset representing various attribute types](./1.%20Constructing%20a%20heterogeneous%20dataset%20representing%20various%20attribute%20types.md)
 
 ## [2. Processing Nominal Attributes (One-Hot Encoding)](./2.%20Processing%20Nominal%20Attributes%20%28One-Hot%20Encoding%29.md)
+
+## [We drop Employee_ID as it has no predictive power (cardinality = N)](./We%20drop%20Employee_ID%20as%20it%20has%20no%20predictive%20power%20%28cardinality%20%3D%20N%29.md)
