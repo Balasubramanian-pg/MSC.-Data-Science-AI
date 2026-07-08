@@ -16,7 +16,7 @@
 
 #### [8.0.8. Example of an Exponentially Smoothed Forecast](./8.0.08.%20Example%20of%20an%20Exponentially%20Smoothed%20Forecast.md)
 
-## [8.0.9. Structured Forecasting Process](./8.0.9.%20Structured%20Forecasting%20Process.md)
+#### [8.0.9. Structured Forecasting Process](./8.0.09.%20Structured%20Forecasting%20Process.md)
 
 ## [8.0.10. Common Misinterpretations and Pitfalls](./8.0.10.%20Common%20Misinterpretations%20and%20Pitfalls.md)
 
