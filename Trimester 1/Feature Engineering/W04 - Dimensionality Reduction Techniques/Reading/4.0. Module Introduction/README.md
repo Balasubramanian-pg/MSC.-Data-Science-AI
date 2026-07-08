@@ -16,7 +16,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.0.5. Mathematical Foundation of Dimensionality Reduction](./4.0.05.%20Mathematical%20Foundation%20of%20Dimensionality%20Reduction.md)
 
-## [4.0.6. Core Dimensionality Reduction Techniques](./4.0.6.%20Core%20Dimensionality%20Reduction%20Techniques.md)
+#### [4.0.6. Core Dimensionality Reduction Techniques](./4.0.06.%20Core%20Dimensionality%20Reduction%20Techniques.md)
 
 ## [4.0.7. Example of Information Retention in Dimensionality Reduction](./4.0.7.%20Example%20of%20Information%20Retention%20in%20Dimensionality%20Reduction.md)
 
