@@ -6,3 +6,5 @@
 ## [1. Concept Introduction](./1.%20Concept%20Introduction.md)
 
 ## [2. Intuition and The Information Transition](./2.%20Intuition%20and%20The%20Information%20Transition.md)
+
+## [3. Mathematical Framework: The Design Matrix](./3.%20Mathematical%20Framework%20-%20The%20Design%20Matrix.md)
