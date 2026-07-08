@@ -12,3 +12,5 @@
 ## [4. Visualizing the Dataset Architecture](./4.%20Visualizing%20the%20Dataset%20Architecture.md)
 
 ## [5. Alternative Data Sources & Structures](./5.%20Alternative%20Data%20Sources%20%26%20Structures.md)
+
+## [6. Python Implementation: Simulating and Dissecting a Dataset](./6.%20Python%20Implementation%20-%20Simulating%20and%20Dissecting%20a%20Dataset.md)
