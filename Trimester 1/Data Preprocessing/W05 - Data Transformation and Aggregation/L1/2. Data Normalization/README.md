@@ -11,3 +11,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Position of Normalization in Data Transformation](./Position%20of%20Normalization%20in%20Data%20Transformation.md)
 
 ## [Defining Data Normalization](./Defining%20Data%20Normalization.md)
+
+## [Weather Prediction Example](./Weather%20Prediction%20Example.md)
