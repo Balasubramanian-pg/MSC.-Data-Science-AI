@@ -6,3 +6,5 @@
 ## [1. Concept Introduction](./1.%20Concept%20Introduction.md)
 
 ## [2. Intuition and System Architecture](./2.%20Intuition%20and%20System%20Architecture.md)
+
+## [3. Mathematical Formulation of the Pipeline](./3.%20Mathematical%20Formulation%20of%20the%20Pipeline.md)
