@@ -10,3 +10,5 @@
 ## [1. Raw Data: Unstructured News Documents](./1.%20Raw%20Data%20-%20Unstructured%20News%20Documents.md)
 
 ## [2. Convert to Term-Document Matrix (Bag of Words)](./2.%20Convert%20to%20Term-Document%20Matrix%20%28Bag%20of%20Words%29.md)
+
+## [3. Create a structured Pandas DataFrame](./3.%20Create%20a%20structured%20Pandas%20DataFrame.md)
