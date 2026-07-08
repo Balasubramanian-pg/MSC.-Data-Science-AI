@@ -12,7 +12,7 @@ week: W08 - Automated Feature Engineering
 
 #### [8.0.3. The Core Paradigm Shift](./8.0.03.%20The%20Core%20Paradigm%20Shift.md)
 
-## [8.0.4. The Three Pillars of Automated Feature Engineering](./8.0.4.%20The%20Three%20Pillars%20of%20Automated%20Feature%20Engineering.md)
+#### [8.0.4. The Three Pillars of Automated Feature Engineering](./8.0.04.%20The%20Three%20Pillars%20of%20Automated%20Feature%20Engineering.md)
 
 ## [8.0.5. Deep Feature Synthesis (DFS)](./8.0.5.%20Deep%20Feature%20Synthesis%20%28DFS%29.md)
 
