@@ -15,3 +15,5 @@
 ## [Data Transmission Errors](./Data%20Transmission%20Errors.md)
 
 ## [Technological Limitations](./Technological%20Limitations.md)
+
+## [Understanding Outliers](./Understanding%20Outliers.md)
