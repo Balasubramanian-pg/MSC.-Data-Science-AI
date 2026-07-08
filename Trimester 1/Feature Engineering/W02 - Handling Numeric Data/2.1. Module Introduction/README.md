@@ -22,6 +22,6 @@ week: W02 - Handling Numeric Data
 
 #### [2.1.8. Factors Affecting Numeric Preprocessing](./2.1.08.%20Factors%20Affecting%20Numeric%20Preprocessing.md)
 
-## [2.1.9. Common Misinterpretations](./2.1.9.%20Common%20Misinterpretations.md)
+#### [2.1.9. Common Misinterpretations](./2.1.09.%20Common%20Misinterpretations.md)
 
 ## [2.1.10. Conclusions](./2.1.10.%20Conclusions.md)
