@@ -12,7 +12,7 @@ week: W06 - Feature Engineering Techniques for Image Data
 
 #### [6.2.3. Harris Corner Detection](./6.2.03.%20Harris%20Corner%20Detection.md)
 
-## [6.2.4. Shi-Tomasi Corner Detection](./6.2.4.%20Shi-Tomasi%20Corner%20Detection.md)
+#### [6.2.4. Shi-Tomasi Corner Detection](./6.2.04.%20Shi-Tomasi%20Corner%20Detection.md)
 
 ## [6.2.5. Example: Computing Harris and Shi-Tomasi Responses](./6.2.5.%20Example%20-%20Computing%20Harris%20and%20Shi-Tomasi%20Responses.md)
 
