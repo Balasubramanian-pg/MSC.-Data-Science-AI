@@ -29,3 +29,5 @@ A machine learning system trained on poor data will produce poor outcomes regard
 ## [Format Inconsistency](./Format%20Inconsistency.md)
 
 ## [Rating Scale Inconsistency](./Rating%20Scale%20Inconsistency.md)
+
+## [Impact of Poor Data on Machine Learning](./Impact%20of%20Poor%20Data%20on%20Machine%20Learning.md)
