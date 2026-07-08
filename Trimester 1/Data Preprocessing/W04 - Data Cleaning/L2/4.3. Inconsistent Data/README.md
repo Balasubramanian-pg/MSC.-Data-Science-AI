@@ -44,3 +44,5 @@
 ## [Unit Inconsistency](./Unit%20Inconsistency.md)
 
 ## [Why Inconsistency Breaks Machine Learning](./Why%20Inconsistency%20Breaks%20Machine%20Learning.md)
+
+## [Causes of Data Inconsistency](./Causes%20of%20Data%20Inconsistency.md)
