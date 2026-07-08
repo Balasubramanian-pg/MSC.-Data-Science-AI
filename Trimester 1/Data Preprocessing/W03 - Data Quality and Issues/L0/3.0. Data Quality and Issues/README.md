@@ -6,7 +6,7 @@
 
 #### [3.0.3. Outliers and Anomalies](./3.0.03.%20Outliers%20and%20Anomalies.md)
 
-## [3.0.4. Missing Values](./3.0.4.%20Missing%20Values.md)
+#### [3.0.4. Missing Values](./3.0.04.%20Missing%20Values.md)
 
 ## [3.0.5. Duplicate Data and Inconsistencies](./3.0.5.%20Duplicate%20Data%20and%20Inconsistencies.md)
 
