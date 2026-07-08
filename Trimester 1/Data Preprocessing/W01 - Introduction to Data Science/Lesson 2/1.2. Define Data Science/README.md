@@ -26,3 +26,5 @@
 ## [Combine into a single structured dataset](./Combine%20into%20a%20single%20structured%20dataset.md)
 
 ## [Human analysts cannot manually scan 10,050 rows to find the 50 frauds reliably.](./Human%20analysts%20cannot%20manually%20scan%2010%2C050%20rows%20to%20find%20the%2050%20frauds%20reliably.md)
+
+## [2. Extracting Knowledge via Data Science (Machine Learning)](./2.%20Extracting%20Knowledge%20via%20Data%20Science%20%28Machine%20Learning%29.md)
