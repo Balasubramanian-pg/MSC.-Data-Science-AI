@@ -30,3 +30,5 @@
 ## [ML models prefer continuous data centered at 0 with unit variance](./ML%20models%20prefer%20continuous%20data%20centered%20at%200%20with%20unit%20variance.md)
 
 ## [5. Continuous to Discrete Transformation (Discretization)](./5.%20Continuous%20to%20Discrete%20Transformation%20%28Discretization%29.md)
+
+## [Binning salary into 3 discrete ordinal brackets (e.g., for tax brackets)](./Binning%20salary%20into%203%20discrete%20ordinal%20brackets%20%28e.g.%2C%20for%20tax%20brackets%29.md)
