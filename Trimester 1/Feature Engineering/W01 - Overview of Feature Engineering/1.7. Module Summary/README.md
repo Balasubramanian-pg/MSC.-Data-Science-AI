@@ -16,7 +16,7 @@ week: W01 - Overview of Feature Engineering
 
 #### [1.1.5. Overview of Core Engineering Techniques](./1.1.05.%20Overview%20of%20Core%20Engineering%20Techniques.md)
 
-## [1.1.6. Example of Feature Standardization](./1.1.6.%20Example%20of%20Feature%20Standardization.md)
+#### [1.1.6. Example of Feature Standardization](./1.1.06.%20Example%20of%20Feature%20Standardization.md)
 
 ## [1.1.7. Factors Affecting Feature Utility](./1.1.7.%20Factors%20Affecting%20Feature%20Utility.md)
 
