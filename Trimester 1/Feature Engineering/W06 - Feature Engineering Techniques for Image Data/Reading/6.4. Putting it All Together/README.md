@@ -16,7 +16,7 @@ week: W06 - Feature Engineering Techniques for Image Data
 
 #### [6.4.5. Comparative Performance Analysis](./6.4.05.%20Comparative%20Performance%20Analysis.md)
 
-## [6.4.6. Why Engineered Features Outperform Raw Pixels](./6.4.6.%20Why%20Engineered%20Features%20Outperform%20Raw%20Pixels.md)
+#### [6.4.6. Why Engineered Features Outperform Raw Pixels](./6.4.06.%20Why%20Engineered%20Features%20Outperform%20Raw%20Pixels.md)
 
 ## [6.4.7. Feature Extraction Implementation Workflow](./6.4.7.%20Feature%20Extraction%20Implementation%20Workflow.md)
 
