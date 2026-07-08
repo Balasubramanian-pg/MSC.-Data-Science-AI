@@ -25,3 +25,5 @@ week: W04 - Data Cleaning
 ## [Why Data Cleaning is Necessary](./Why%20Data%20Cleaning%20is%20Necessary.md)
 
 ## [Understanding Missing Values](./Understanding%20Missing%20Values.md)
+
+## [Missing Values and Machine Learning Failure](./Missing%20Values%20and%20Machine%20Learning%20Failure.md)
