@@ -1,4 +1,6 @@
 # Options
 
-* True
-* False
+* Domain Knowledge
+* Statistics
+* Computer Science
+* Philosophy
