@@ -22,3 +22,5 @@
 ## [3. Initialize and Train the Predictive Engine](./3.%20Initialize%20and%20Train%20the%20Predictive%20Engine.md)
 
 ## [4. Inference and Evaluation](./4.%20Inference%20and%20Evaluation.md)
+
+## [Simulating a production decision: Push a $10 coupon if Churn probability > 70%](./Simulating%20a%20production%20decision%20-%20Push%20a%20%2410%20coupon%20if%20Churn%20probability%2070%25.md)
