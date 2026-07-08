@@ -28,3 +28,5 @@
 ## [4. Processing Interval/Ratio Attributes (Standardization)](./4.%20Processing%20IntervalRatio%20Attributes%20%28Standardization%29.md)
 
 ## [ML models prefer continuous data centered at 0 with unit variance](./ML%20models%20prefer%20continuous%20data%20centered%20at%200%20with%20unit%20variance.md)
+
+## [5. Continuous to Discrete Transformation (Discretization)](./5.%20Continuous%20to%20Discrete%20Transformation%20%28Discretization%29.md)
