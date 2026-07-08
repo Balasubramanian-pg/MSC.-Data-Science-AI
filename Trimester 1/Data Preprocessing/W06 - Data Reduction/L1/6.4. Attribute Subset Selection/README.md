@@ -25,3 +25,5 @@
 ## [6.4.12. Backward Elimination](./6.4.12.%20Backward%20Elimination.md)
 
 ## [6.4.13. Forward Selection vs Backward Elimination](./6.4.13.%20Forward%20Selection%20vs%20Backward%20Elimination.md)
+
+## [6.4.14. Decision Tree Induction for Feature Selection](./6.4.14.%20Decision%20Tree%20Induction%20for%20Feature%20Selection.md)
