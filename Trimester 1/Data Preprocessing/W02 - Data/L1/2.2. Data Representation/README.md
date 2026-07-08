@@ -6,3 +6,5 @@
 ## [1. Concept Introduction](./1.%20Concept%20Introduction.md)
 
 ## [2. Record Data: The Foundational Paradigm](./2.%20Record%20Data%20-%20The%20Foundational%20Paradigm.md)
+
+## [1. Raw Data: Unstructured News Documents](./1.%20Raw%20Data%20-%20Unstructured%20News%20Documents.md)
