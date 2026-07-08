@@ -20,6 +20,6 @@ week: W01 - Overview of Feature Engineering
 
 #### [1.4.7. Factors Affecting Feature Selection in Chemical Data](./1.4.07.%20Factors%20Affecting%20Feature%20Selection%20in%20Chemical%20Data.md)
 
-## [1.4.8. Common Misinterpretations](./1.4.8.%20Common%20Misinterpretations.md)
+#### [1.4.8. Common Misinterpretations](./1.4.08.%20Common%20Misinterpretations.md)
 
 ## [1.4.9. Conclusions](./1.4.9.%20Conclusions.md)
