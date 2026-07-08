@@ -38,3 +38,5 @@
 ## [3. Visual Intuition of the Extracted Knowledge](./3.%20Visual%20Intuition%20of%20the%20Extracted%20Knowledge.md)
 
 ## [Plot Genuine Transactions](./Plot%20Genuine%20Transactions.md)
+
+## [Plot Fraudulent Transactions](./Plot%20Fraudulent%20Transactions.md)
