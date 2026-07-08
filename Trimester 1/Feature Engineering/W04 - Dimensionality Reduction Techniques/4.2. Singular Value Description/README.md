@@ -10,7 +10,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.2.2. The Mathematical Framework of SVD](./4.2.02.%20The%20Mathematical%20Framework%20of%20SVD.md)
 
-## [4.2.3. Components of the Decomposition](./4.2.3.%20Components%20of%20the%20Decomposition.md)
+#### [4.2.3. Components of the Decomposition](./4.2.03.%20Components%20of%20the%20Decomposition.md)
 
 ## [4.2.4. Truncated SVD for Dimensionality Reduction](./4.2.4.%20Truncated%20SVD%20for%20Dimensionality%20Reduction.md)
 
