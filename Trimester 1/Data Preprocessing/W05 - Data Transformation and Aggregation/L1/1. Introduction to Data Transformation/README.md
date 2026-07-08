@@ -41,3 +41,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Interpretability and Strategic Value](./Interpretability%20and%20Strategic%20Value.md)
 
 ## [Data Transformation as a Foundational Step](./Data%20Transformation%20as%20a%20Foundational%20Step.md)
+
+## [Future Transformation Topics](./Future%20Transformation%20Topics.md)
