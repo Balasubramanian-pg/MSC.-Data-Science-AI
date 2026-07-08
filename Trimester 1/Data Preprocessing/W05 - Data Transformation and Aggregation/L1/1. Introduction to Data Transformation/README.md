@@ -35,3 +35,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Information Loss Problem](./Information%20Loss%20Problem.md)
 
 ## [Computational Cost of Transformation](./Computational%20Cost%20of%20Transformation.md)
+
+## [Bias and Overfitting Risks](./Bias%20and%20Overfitting%20Risks.md)
