@@ -25,3 +25,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Z-Score Normalization](./Z-Score%20Normalization.md)
 
 ## [4.1 Core Idea](./4.1%20Core%20Idea.md)
+
+## [4.2 Formula](./4.2%20Formula.md)
