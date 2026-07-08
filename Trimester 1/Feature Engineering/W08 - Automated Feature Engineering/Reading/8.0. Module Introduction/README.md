@@ -10,7 +10,7 @@ week: W08 - Automated Feature Engineering
 
 #### [8.0.2. Why Feature Engineering Matters](./8.0.02.%20Why%20Feature%20Engineering%20Matters.md)
 
-## [8.0.3. The Core Paradigm Shift](./8.0.3.%20The%20Core%20Paradigm%20Shift.md)
+#### [8.0.3. The Core Paradigm Shift](./8.0.03.%20The%20Core%20Paradigm%20Shift.md)
 
 ## [8.0.4. The Three Pillars of Automated Feature Engineering](./8.0.4.%20The%20Three%20Pillars%20of%20Automated%20Feature%20Engineering.md)
 
