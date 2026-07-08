@@ -1,12 +1,14 @@
 # Answer
 
-✅ **disguised missing data.**
+✅ **Merging data from multiple, heterogeneous sources that have overlapping records.**
 
 > [!NOTE]
 > **Reason**
 >
-> **Disguised missing data** occurs when missing values are replaced with seemingly valid values such as `"January 1"`, `"999"`, or `"Unknown"`. These placeholder values can distort analyses because they appear legitimate while actually representing missing information.
+> Duplicate records commonly arise when integrating data from multiple systems that describe the same real-world entities differently. Without proper entity resolution and deduplication processes, overlapping records can create duplicates in the consolidated dataset.
 
-# Question 3
+<img width="581" height="426" alt="image" src="https://github.com/user-attachments/assets/bed2a881-1753-40f7-a76f-297cdf26a4dc" />
 
-What is the primary cause of duplicate data issues in a dataset?
+# Question 4
+
+What is the recommended order of operations when dealing with noise and outliers?
