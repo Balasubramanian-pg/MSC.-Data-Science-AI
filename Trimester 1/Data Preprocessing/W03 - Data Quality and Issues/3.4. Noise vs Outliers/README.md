@@ -13,3 +13,5 @@
 ## [Human Data Entry Errors](./Human%20Data%20Entry%20Errors.md)
 
 ## [Data Transmission Errors](./Data%20Transmission%20Errors.md)
+
+## [Technological Limitations](./Technological%20Limitations.md)
