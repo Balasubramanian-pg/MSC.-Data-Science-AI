@@ -11,3 +11,5 @@
 ## [7.1.5. Practical Considerations in Sampling](./7.1.5.%20Practical%20Considerations%20in%20Sampling.md)
 
 ## [7.1.6. Types of Sampling Methods](./7.1.6.%20Types%20of%20Sampling%20Methods.md)
+
+## [7.1.7. Simple Random Sampling](./7.1.7.%20Simple%20Random%20Sampling.md)
