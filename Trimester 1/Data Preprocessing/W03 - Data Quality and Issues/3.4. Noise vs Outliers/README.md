@@ -21,3 +21,5 @@
 ## [Real-World Examples of Outlier Detection](./Real-World%20Examples%20of%20Outlier%20Detection.md)
 
 ## [Credit Card Fraud Detection](./Credit%20Card%20Fraud%20Detection.md)
+
+## [Gmail Login Detection](./Gmail%20Login%20Detection.md)
