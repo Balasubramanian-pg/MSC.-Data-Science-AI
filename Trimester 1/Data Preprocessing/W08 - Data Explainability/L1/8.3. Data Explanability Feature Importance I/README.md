@@ -13,3 +13,5 @@
 ## [8.3.6. SHAP: SHapley Additive exPlanations](./8.3.6.%20SHAP%20-%20SHapley%20Additive%20exPlanations.md)
 
 ## [8.3.7. Comparing LIME and SHAP](./8.3.7.%20Comparing%20LIME%20and%20SHAP.md)
+
+## [8.3.8. Limitations of Explainability Methods](./8.3.8.%20Limitations%20of%20Explainability%20Methods.md)
