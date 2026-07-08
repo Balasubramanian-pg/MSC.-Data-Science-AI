@@ -31,3 +31,5 @@
 ## [6.4.15. Information Gain Concept](./6.4.15.%20Information%20Gain%20Concept.md)
 
 ## [6.4.16. Overfitting and Noise Reduction](./6.4.16.%20Overfitting%20and%20Noise%20Reduction.md)
+
+## [6.4.17. Role of Domain Experts](./6.4.17.%20Role%20of%20Domain%20Experts.md)
