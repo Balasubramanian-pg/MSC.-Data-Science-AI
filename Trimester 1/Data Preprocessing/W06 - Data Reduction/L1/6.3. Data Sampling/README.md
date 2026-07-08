@@ -4,7 +4,7 @@
 
 #### [7.1.2. Why Sampling is Necessary](./7.1.02.%20Why%20Sampling%20is%20Necessary.md)
 
-## [7.1.3. Representative Samples](./7.1.3.%20Representative%20Samples.md)
+#### [7.1.3. Representative Samples](./7.1.03.%20Representative%20Samples.md)
 
 ## [7.1.4. Sampling in Data Reduction](./7.1.4.%20Sampling%20in%20Data%20Reduction.md)
 
