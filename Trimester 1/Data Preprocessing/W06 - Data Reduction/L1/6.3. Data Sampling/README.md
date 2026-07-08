@@ -12,7 +12,7 @@
 
 #### [7.1.6. Types of Sampling Methods](./7.1.06.%20Types%20of%20Sampling%20Methods.md)
 
-## [7.1.7. Simple Random Sampling](./7.1.7.%20Simple%20Random%20Sampling.md)
+#### [7.1.7. Simple Random Sampling](./7.1.07.%20Simple%20Random%20Sampling.md)
 
 ## [7.1.8. Simple Random Sampling Without Replacement (SRSWOR)](./7.1.8.%20Simple%20Random%20Sampling%20Without%20Replacement%20%28SRSWOR%29.md)
 
