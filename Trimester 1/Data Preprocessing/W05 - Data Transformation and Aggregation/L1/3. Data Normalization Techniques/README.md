@@ -55,3 +55,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Choosing the Right Normalization Strategy](./Choosing%20the%20Right%20Normalization%20Strategy.md)
 
 ## [Linear vs Nonlinear Transformation](./Linear%20vs%20Nonlinear%20Transformation.md)
+
+## [Key Takeaways](./Key%20Takeaways.md)
