@@ -38,3 +38,5 @@
 ## [3. Visual Intuition](./3.%20Visual%20Intuition.md)
 
 ## [4. Diagnostics](./4.%20Diagnostics.md)
+
+## [6. Computational & Performance Insights](./6.%20Computational%20%26%20Performance%20Insights.md)
