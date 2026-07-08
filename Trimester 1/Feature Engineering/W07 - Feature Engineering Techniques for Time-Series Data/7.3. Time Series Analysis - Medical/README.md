@@ -22,7 +22,7 @@ week: W07 - Feature Engineering Techniques for Time-Series Data
 
 #### [7.3.8. Critical Engineering Caveats](./7.3.08.%20Critical%20Engineering%20Caveats.md)
 
-## [7.3.9. Factors Affecting HRV Feature Quality](./7.3.9.%20Factors%20Affecting%20HRV%20Feature%20Quality.md)
+#### [7.3.9. Factors Affecting HRV Feature Quality](./7.3.09.%20Factors%20Affecting%20HRV%20Feature%20Quality.md)
 
 ## [7.3.10. Common Misinterpretations](./7.3.10.%20Common%20Misinterpretations.md)
 
