@@ -16,3 +16,5 @@
 ## [3. Visual Intuition](./3.%20Visual%20Intuition.md)
 
 ## [Plot the grouped data points](./Plot%20the%20grouped%20data%20points.md)
+
+## [Plot the learned centroids](./Plot%20the%20learned%20centroids.md)
