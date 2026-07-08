@@ -11,3 +11,5 @@
 ## [8.4.5. Tree-Based Feature Importance](./8.4.5.%20Tree-Based%20Feature%20Importance.md)
 
 ## [8.4.6. SHAP Aggregation for Global Explanations](./8.4.6.%20SHAP%20Aggregation%20for%20Global%20Explanations.md)
+
+## [8.4.7. Limitations of Global Feature Importance](./8.4.7.%20Limitations%20of%20Global%20Feature%20Importance.md)
