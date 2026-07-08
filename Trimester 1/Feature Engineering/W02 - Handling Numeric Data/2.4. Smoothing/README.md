@@ -12,7 +12,7 @@ week: W02 - Handling Numeric Data
 
 #### [2.4.3. Weighted and Exponential Smoothing](./2.4.03.%20Weighted%20and%20Exponential%20Smoothing.md)
 
-## [2.4.4. Step-by-Step Smoothing Example](./2.4.4.%20Step-by-Step%20Smoothing%20Example.md)
+#### [2.4.4. Step-by-Step Smoothing Example](./2.4.04.%20Step-by-Step%20Smoothing%20Example.md)
 
 ## [2.4.5. Factors Affecting Smoothing Efficacy](./2.4.5.%20Factors%20Affecting%20Smoothing%20Efficacy.md)
 
