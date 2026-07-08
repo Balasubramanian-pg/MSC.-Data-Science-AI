@@ -55,3 +55,5 @@
 ## [Histograms as Aggregation Tools](./Histograms%20as%20Aggregation%20Tools.md)
 
 ## [Converting 1D Data into 2D Aggregated Data](./Converting%201D%20Data%20into%202D%20Aggregated%20Data.md)
+
+## [Frequency-Based Aggregation](./Frequency-Based%20Aggregation.md)
