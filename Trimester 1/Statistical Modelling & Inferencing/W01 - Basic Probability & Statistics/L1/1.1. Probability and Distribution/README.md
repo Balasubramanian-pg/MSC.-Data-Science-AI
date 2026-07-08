@@ -2,7 +2,7 @@
 
 #### [1.1.1. The Transition from Random Events to Quantitative Variables](./1.1.01.%20The%20Transition%20from%20Random%20Events%20to%20Quantitative%20Variables.md)
 
-## [1.1.2. Defining the Random Variable](./1.1.2.%20Defining%20the%20Random%20Variable.md)
+#### [1.1.2. Defining the Random Variable](./1.1.02.%20Defining%20the%20Random%20Variable.md)
 
 ## [1.1.3. Discrete vs. Continuous Random Variables](./1.1.3.%20Discrete%20vs.%20Continuous%20Random%20Variables.md)
 
