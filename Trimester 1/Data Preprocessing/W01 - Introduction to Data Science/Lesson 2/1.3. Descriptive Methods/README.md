@@ -36,3 +36,5 @@
 ## [Displaying specific columns for readability](./Displaying%20specific%20columns%20for%20readability.md)
 
 ## [4. Advanced Engineering Notes](./4.%20Advanced%20Engineering%20Notes.md)
+
+## [5. Final Takeaways](./5.%20Final%20Takeaways.md)
