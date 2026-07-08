@@ -35,3 +35,5 @@ week: W05 - Data Transformation and Aggregation
 ## [4.5 Robustness Against Outliers](./4.5%20Robustness%20Against%20Outliers.md)
 
 ## [Decimal Scaling Normalization](./Decimal%20Scaling%20Normalization.md)
+
+## [5.1 Core Idea](./5.1%20Core%20Idea.md)
