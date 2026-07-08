@@ -32,3 +32,5 @@
 ## [Fix outlier](./Fix%20outlier.md)
 
 ## [Impute NaNs with median](./Impute%20NaNs%20with%20median.md)
+
+## [STEP 3: Data Transformation](./STEP%203%20-%20Data%20Transformation.md)
