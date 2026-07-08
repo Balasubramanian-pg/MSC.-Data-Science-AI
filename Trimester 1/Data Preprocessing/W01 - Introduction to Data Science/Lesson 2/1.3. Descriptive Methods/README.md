@@ -22,3 +22,5 @@
 ## [4. Extracting Mathematical Properties](./4.%20Extracting%20Mathematical%20Properties.md)
 
 ## [3. Association Rule Mining](./3.%20Association%20Rule%20Mining.md)
+
+## [1. Raw Transactional Data](./1.%20Raw%20Transactional%20Data.md)
