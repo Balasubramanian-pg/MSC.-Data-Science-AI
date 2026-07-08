@@ -33,3 +33,5 @@
 ## [Causes of Noisy Data](./Causes%20of%20Noisy%20Data.md)
 
 ## [Irrelevant and Redundant Data](./Irrelevant%20and%20Redundant%20Data.md)
+
+## [Irrelevant Features](./Irrelevant%20Features.md)
