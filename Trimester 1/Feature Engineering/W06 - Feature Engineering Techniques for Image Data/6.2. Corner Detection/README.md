@@ -22,4 +22,4 @@ week: W06 - Feature Engineering Techniques for Image Data
 
 #### [6.2.8. Common Misinterpretations](./6.2.08.%20Common%20Misinterpretations.md)
 
-## [6.2.9. Conclusions](./6.2.9.%20Conclusions.md)
+#### [6.2.9. Conclusions](./6.2.09.%20Conclusions.md)
