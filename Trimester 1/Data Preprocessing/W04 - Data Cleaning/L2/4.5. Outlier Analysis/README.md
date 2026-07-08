@@ -55,3 +55,5 @@
 ## [Outliers and Clustering Algorithms](./Outliers%20and%20Clustering%20Algorithms.md)
 
 ## [Outliers and Statistical Distortion](./Outliers%20and%20Statistical%20Distortion.md)
+
+## [Detecting Outliers](./Detecting%20Outliers.md)
