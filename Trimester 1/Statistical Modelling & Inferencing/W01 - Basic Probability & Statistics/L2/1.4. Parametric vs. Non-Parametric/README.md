@@ -1,6 +1,6 @@
 # 1.4. Parametric vs. Non-Parametric
 
-## [1.4.1. The Role of Assumptions in Statistical Inference](./1.4.1.%20The%20Role%20of%20Assumptions%20in%20Statistical%20Inference.md)
+#### [1.4.1. The Role of Assumptions in Statistical Inference](./1.4.01.%20The%20Role%20of%20Assumptions%20in%20Statistical%20Inference.md)
 
 ## [1.4.2. Defining Parametric Methods](./1.4.2.%20Defining%20Parametric%20Methods.md)
 
