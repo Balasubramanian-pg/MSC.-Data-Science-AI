@@ -28,3 +28,5 @@
 ## [STEP 2: Data Preprocessing (Cleaning)](./STEP%202%20-%20Data%20Preprocessing%20%28Cleaning%29.md)
 
 ## [Handle NaNs and fix extreme outliers](./Handle%20NaNs%20and%20fix%20extreme%20outliers.md)
+
+## [Fix outlier](./Fix%20outlier.md)
