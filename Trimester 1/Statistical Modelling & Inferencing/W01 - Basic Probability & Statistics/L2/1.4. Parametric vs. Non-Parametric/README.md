@@ -14,7 +14,7 @@
 
 #### [1.4.7. Comparing Statistical Power and Robustness](./1.4.07.%20Comparing%20Statistical%20Power%20and%20Robustness.md)
 
-## [1.4.8. How to Choose Between Methods](./1.4.8.%20How%20to%20Choose%20Between%20Methods.md)
+#### [1.4.8. How to Choose Between Methods](./1.4.08.%20How%20to%20Choose%20Between%20Methods.md)
 
 ## [1.4.9. Common Misinterpretations](./1.4.9.%20Common%20Misinterpretations.md)
 
