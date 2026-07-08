@@ -7,3 +7,5 @@ This lecture focuses on **data volume reduction**, specifically through **data c
 ## [Two Main Types of Compression](./Two%20Main%20Types%20of%20Compression.md)
 
 ## [1. Lossless Compression](./1.%20Lossless%20Compression.md)
+
+## [2. Lossy Compression](./2.%20Lossy%20Compression.md)
