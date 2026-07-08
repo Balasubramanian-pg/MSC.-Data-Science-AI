@@ -10,3 +10,5 @@
 ## [3. Mathematical Formulation of the Pipeline](./3.%20Mathematical%20Formulation%20of%20the%20Pipeline.md)
 
 ## [4. Differentiating the Triad: Selection, Preprocessing, Transformation](./4.%20Differentiating%20the%20Triad%20-%20Selection%2C%20Preprocessing%2C%20Transformation.md)
+
+## [5. Python Implementation: The End-to-End KDD Pipeline](./5.%20Python%20Implementation%20-%20The%20End-to-End%20KDD%20Pipeline.md)
