@@ -1,14 +1,12 @@
 # Answer
 
-✅ **False**
+✅ **disguised missing data.**
 
 > [!NOTE]
 > **Reason**
 >
-> Not all outliers are errors. Some outliers represent **genuine rare events** or important business phenomena. For example, a customer making an unusually large purchase may be a legitimate observation rather than bad data.
->
-> Outliers should be investigated before deciding whether to remove, transform, or retain them.
+> **Disguised missing data** occurs when missing values are replaced with seemingly valid values such as `"January 1"`, `"999"`, or `"Unknown"`. These placeholder values can distort analyses because they appear legitimate while actually representing missing information.
 
-# Question 2
+# Question 3
 
-A dataset uses the date "January 1" for any person whose actual birthday is unknown. This is a particularly dangerous data quality issue known as:
+What is the primary cause of duplicate data issues in a dataset?
