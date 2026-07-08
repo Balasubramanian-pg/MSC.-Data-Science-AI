@@ -12,7 +12,7 @@ week: W08 - Automated Feature Engineering
 
 #### [8.5.3. Automated Feature Engineering Pipeline](./8.5.03.%20Automated%20Feature%20Engineering%20Pipeline.md)
 
-## [8.5.4. Deep Feature Synthesis (DFS) with Featuretools](./8.5.4.%20Deep%20Feature%20Synthesis%20%28DFS%29%20with%20Featuretools.md)
+#### [8.5.4. Deep Feature Synthesis (DFS) with Featuretools](./8.5.04.%20Deep%20Feature%20Synthesis%20%28DFS%29%20with%20Featuretools.md)
 
 ## [8.5.5. TSFresh for Time-Series Feature Extraction](./8.5.5.%20TSFresh%20for%20Time-Series%20Feature%20Extraction.md)
 
