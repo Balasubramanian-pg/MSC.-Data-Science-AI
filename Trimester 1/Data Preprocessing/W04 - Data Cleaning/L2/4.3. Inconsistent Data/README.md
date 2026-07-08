@@ -58,3 +58,5 @@
 ## [Impact of Inconsistent Data](./Impact%20of%20Inconsistent%20Data.md)
 
 ## [Detecting Inconsistency](./Detecting%20Inconsistency.md)
+
+## [Rule-Based Validation Systems](./Rule-Based%20Validation%20Systems.md)
