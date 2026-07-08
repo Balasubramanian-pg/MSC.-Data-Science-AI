@@ -16,7 +16,7 @@
 
 #### [10.6.8. The Z-Score Standardization Protocol](./10.6.08.%20The%20Z-Score%20Standardization%20Protocol.md)
 
-## [10.6.9. Example of Computing Z-Score Standardization](./10.6.9.%20Example%20of%20Computing%20Z-Score%20Standardization.md)
+#### [10.6.9. Example of Computing Z-Score Standardization](./10.6.09.%20Example%20of%20Computing%20Z-Score%20Standardization.md)
 
 ## [10.6.10. Hierarchical Clustering](./10.6.10.%20Hierarchical%20Clustering.md)
 
