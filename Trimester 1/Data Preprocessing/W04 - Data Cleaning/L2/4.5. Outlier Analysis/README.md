@@ -65,3 +65,5 @@
 ## [8.3 Clustering-Based Detection](./8.3%20Clustering-Based%20Detection.md)
 
 ## [8.4 Density-Based Detection](./8.4%20Density-Based%20Detection.md)
+
+## [DBSCAN and Density-Based Clustering](./DBSCAN%20and%20Density-Based%20Clustering.md)
