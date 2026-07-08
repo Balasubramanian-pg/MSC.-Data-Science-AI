@@ -23,3 +23,5 @@
 ## [6.4.11. Forward Selection](./6.4.11.%20Forward%20Selection.md)
 
 ## [6.4.12. Backward Elimination](./6.4.12.%20Backward%20Elimination.md)
+
+## [6.4.13. Forward Selection vs Backward Elimination](./6.4.13.%20Forward%20Selection%20vs%20Backward%20Elimination.md)
