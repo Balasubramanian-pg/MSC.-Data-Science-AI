@@ -14,4 +14,4 @@
 
 #### [2.4.7. Determining the Ideal Sample Size](./2.4.07.%20Determining%20the%20Ideal%20Sample%20Size.md)
 
-## [2.4.8. Conclusions](./2.4.8.%20Conclusions.md)
+#### [2.4.8. Conclusions](./2.4.08.%20Conclusions.md)
