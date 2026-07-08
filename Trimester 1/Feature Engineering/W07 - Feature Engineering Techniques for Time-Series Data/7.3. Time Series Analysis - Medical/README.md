@@ -6,7 +6,7 @@ week: W07 - Feature Engineering Techniques for Time-Series Data
 
 ## [7.3. Time Series Analysis in Medical Data](./7.3.%20Time%20Series%20Analysis%20in%20Medical%20Data.md)
 
-## [7.3.1. From Raw Signals to Clinical Insight](./7.3.1.%20From%20Raw%20Signals%20to%20Clinical%20Insight.md)
+#### [7.3.1. From Raw Signals to Clinical Insight](./7.3.01.%20From%20Raw%20Signals%20to%20Clinical%20Insight.md)
 
 ## [7.3.2. Why Raw Voltage Data Is Fundamentally Incomplete](./7.3.2.%20Why%20Raw%20Voltage%20Data%20Is%20Fundamentally%20Incomplete.md)
 
