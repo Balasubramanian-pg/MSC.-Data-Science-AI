@@ -14,7 +14,7 @@
 
 #### [4.0.7. Comparing Population Variances](./4.0.07.%20Comparing%20Population%20Variances.md)
 
-## [4.0.8. Testing Population Proportions](./4.0.8.%20Testing%20Population%20Proportions.md)
+#### [4.0.8. Testing Population Proportions](./4.0.08.%20Testing%20Population%20Proportions.md)
 
 ## [4.0.9. Introduction to Categorical Data Analysis](./4.0.9.%20Introduction%20to%20Categorical%20Data%20Analysis.md)
 
