@@ -39,3 +39,5 @@ week: W04 - Data Cleaning
 ## [10.3 Global Constants](./10.3%20Global%20Constants.md)
 
 ## [10.4 Local Constants](./10.4%20Local%20Constants.md)
+
+## [10.5 Central Tendency Methods](./10.5%20Central%20Tendency%20Methods.md)
