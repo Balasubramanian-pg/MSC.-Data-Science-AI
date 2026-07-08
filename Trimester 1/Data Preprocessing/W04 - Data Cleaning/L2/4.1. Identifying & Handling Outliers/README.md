@@ -55,3 +55,5 @@
 ## [Normalization and Transformation](./Normalization%20and%20Transformation.md)
 
 ## [Golden Rule of Outlier Handling](./Golden%20Rule%20of%20Outlier%20Handling.md)
+
+## [Key Takeaways](./Key%20Takeaways.md)
