@@ -52,3 +52,5 @@
 ## [6.1 Syntactic Inconsistency](./6.1%20Syntactic%20Inconsistency.md)
 
 ## [6.2 Semantic Inconsistency](./6.2%20Semantic%20Inconsistency.md)
+
+## [6.3 Structural Inconsistency](./6.3%20Structural%20Inconsistency.md)
