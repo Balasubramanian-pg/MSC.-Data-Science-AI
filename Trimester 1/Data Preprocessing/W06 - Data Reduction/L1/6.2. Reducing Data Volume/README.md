@@ -29,3 +29,5 @@ This lecture focuses on **data volume reduction**, specifically through **data c
 ## [Lossless Compression](./Lossless%20Compression.md)
 
 ## [Histogram Transformation 2](./Histogram%20Transformation%202.md)
+
+## [Lossy Compression](./Lossy%20Compression.md)
