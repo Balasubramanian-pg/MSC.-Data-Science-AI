@@ -27,3 +27,5 @@
 ## [Noise vs Outliers](./Noise%20vs%20Outliers.md)
 
 ## [Visual Understanding of Outliers](./Visual%20Understanding%20of%20Outliers.md)
+
+## [Why Outliers Matter in Machine Learning](./Why%20Outliers%20Matter%20in%20Machine%20Learning.md)
