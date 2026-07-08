@@ -43,3 +43,5 @@
 ## [Outliers and Mislabelled Data](./Outliers%20and%20Mislabelled%20Data.md)
 
 ## [Noise Handling Techniques](./Noise%20Handling%20Techniques.md)
+
+## [Binning for Noise Smoothing](./Binning%20for%20Noise%20Smoothing.md)
