@@ -14,3 +14,5 @@
 ## [Using 'k-means++' ensures smarter centroid initialization to avoid local minima](./Using%20%27k-means%2B%2B%27%20ensures%20smarter%20centroid%20initialization%20to%20avoid%20local%20minima.md)
 
 ## [3. Visual Intuition](./3.%20Visual%20Intuition.md)
+
+## [Plot the grouped data points](./Plot%20the%20grouped%20data%20points.md)
