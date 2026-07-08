@@ -37,3 +37,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Improved Interpretability](./Improved%20Interpretability.md)
 
 ## [Types of Normalization Techniques](./Types%20of%20Normalization%20Techniques.md)
+
+## [16.1 Min-Max Normalization](./16.1%20Min-Max%20Normalization.md)
