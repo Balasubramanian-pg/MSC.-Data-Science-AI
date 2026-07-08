@@ -1,12 +1,8 @@
 # Answer
 
-✅ **Noise should be removed before detecting outliers.**
+✅ **Cost**
 
 > [!NOTE]
 > **Reason**
 >
-> Noise can obscure the true structure of the data and may cause normal observations to appear as outliers. By first reducing noise through techniques such as smoothing or filtering, outlier detection methods can more accurately identify genuine anomalies.
-
-# Question 5
-
-Which of the following is NOT one of the six key dimensions of data quality mentioned in the presentation?
+> Common data quality dimensions include **Accuracy, Completeness, Consistency, Timeliness, Validity,** and **Uniqueness**. While cost is an important business consideration, it is not generally considered a core dimension of data quality.
