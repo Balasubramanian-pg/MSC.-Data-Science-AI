@@ -47,3 +47,5 @@
 ## [One-Dimensional View](./One-Dimensional%20View.md)
 
 ## [Two-Dimensional View](./Two-Dimensional%20View.md)
+
+## [Distance-Based Intuition Behind Outliers](./Distance-Based%20Intuition%20Behind%20Outliers.md)
