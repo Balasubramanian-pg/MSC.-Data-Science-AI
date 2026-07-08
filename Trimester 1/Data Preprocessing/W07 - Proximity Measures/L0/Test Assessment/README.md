@@ -29,3 +29,5 @@
 ## [Question 22](./Question%2022.md)
 
 ## [Question 23](./Question%2023.md)
+
+## [Question 24](./Question%2024.md)
