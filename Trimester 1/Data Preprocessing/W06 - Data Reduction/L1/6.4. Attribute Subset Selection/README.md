@@ -37,3 +37,5 @@
 ## [6.4.18. Computational Efficiency Benefits](./6.4.18.%20Computational%20Efficiency%20Benefits.md)
 
 ## [6.4.19. Practical Challenges in Feature Selection](./6.4.19.%20Practical%20Challenges%20in%20Feature%20Selection.md)
+
+## [6.4.20. Key Takeaways](./6.4.20.%20Key%20Takeaways.md)
