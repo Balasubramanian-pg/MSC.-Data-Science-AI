@@ -6,7 +6,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 ## [4.1 Principal Component Analysis](./4.1%20Principal%20Component%20Analysis.md)
 
-## [4.1.1. Introduction to Dimensionality Reduction](./4.1.1.%20Introduction%20to%20Dimensionality%20Reduction.md)
+#### [4.1.1. Introduction to Dimensionality Reduction](./4.1.01.%20Introduction%20to%20Dimensionality%20Reduction.md)
 
 ## [4.1.2. The Theoretical Framework of PCA](./4.1.2.%20The%20Theoretical%20Framework%20of%20PCA.md)
 
