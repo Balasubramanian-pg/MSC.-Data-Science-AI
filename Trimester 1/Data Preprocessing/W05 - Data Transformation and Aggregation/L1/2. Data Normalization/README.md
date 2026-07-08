@@ -19,3 +19,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Purpose of Data Normalization](./Purpose%20of%20Data%20Normalization.md)
 
 ## [Equal Contribution of Features](./Equal%20Contribution%20of%20Features.md)
+
+## [Common Range Transformation](./Common%20Range%20Transformation.md)
