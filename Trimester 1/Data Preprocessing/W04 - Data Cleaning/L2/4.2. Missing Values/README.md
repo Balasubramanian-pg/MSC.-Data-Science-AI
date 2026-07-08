@@ -41,3 +41,5 @@ week: W04 - Data Cleaning
 ## [10.4 Local Constants](./10.4%20Local%20Constants.md)
 
 ## [10.5 Central Tendency Methods](./10.5%20Central%20Tendency%20Methods.md)
+
+## [10.6 Conditional Filling](./10.6%20Conditional%20Filling.md)
