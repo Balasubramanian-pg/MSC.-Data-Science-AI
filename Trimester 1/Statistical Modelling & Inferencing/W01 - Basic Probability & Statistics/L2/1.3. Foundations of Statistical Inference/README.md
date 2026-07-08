@@ -2,7 +2,7 @@
 
 #### [1.3.1. Introduction to Statistical Inference](./1.3.01.%20Introduction%20to%20Statistical%20Inference.md)
 
-## [1.3.2. Sampling and Representation](./1.3.2.%20Sampling%20and%20Representation.md)
+#### [1.3.2. Sampling and Representation](./1.3.02.%20Sampling%20and%20Representation.md)
 
 ## [1.3.3. Point Estimation](./1.3.3.%20Point%20Estimation.md)
 
