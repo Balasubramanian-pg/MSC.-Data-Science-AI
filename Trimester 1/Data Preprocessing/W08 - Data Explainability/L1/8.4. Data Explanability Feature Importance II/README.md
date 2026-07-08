@@ -15,3 +15,5 @@
 ## [8.4.7. Limitations of Global Feature Importance](./8.4.7.%20Limitations%20of%20Global%20Feature%20Importance.md)
 
 ## [8.4.8. Example of Computing Global Feature Importance](./8.4.8.%20Example%20of%20Computing%20Global%20Feature%20Importance.md)
+
+## [8.4.9. Conclusions](./8.4.9.%20Conclusions.md)
