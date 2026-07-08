@@ -61,3 +61,5 @@
 ## [8.1 Distance-Based Detection](./8.1%20Distance-Based%20Detection.md)
 
 ## [8.2 Visualization Methods](./8.2%20Visualization%20Methods.md)
+
+## [8.3 Clustering-Based Detection](./8.3%20Clustering-Based%20Detection.md)
