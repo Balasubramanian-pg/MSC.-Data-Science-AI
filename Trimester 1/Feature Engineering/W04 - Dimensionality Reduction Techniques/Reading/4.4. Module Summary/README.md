@@ -16,7 +16,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.4.5. t-Distributed Stochastic Neighbor Embedding (t-SNE)](./4.4.05.%20t-Distributed%20Stochastic%20Neighbor%20Embedding%20%28t-SNE%29.md)
 
-## [4.4.6. Strategic Application Framework](./4.4.6.%20Strategic%20Application%20Framework.md)
+#### [4.4.6. Strategic Application Framework](./4.4.06.%20Strategic%20Application%20Framework.md)
 
 ## [4.4.7. Example of Information Retention in Dimensionality Reduction](./4.4.7.%20Example%20of%20Information%20Retention%20in%20Dimensionality%20Reduction.md)
 
