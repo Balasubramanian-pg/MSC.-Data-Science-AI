@@ -45,3 +45,5 @@
 ## [Noise Handling Techniques](./Noise%20Handling%20Techniques.md)
 
 ## [Binning for Noise Smoothing](./Binning%20for%20Noise%20Smoothing.md)
+
+## [Smoothing by Bin Means](./Smoothing%20by%20Bin%20Means.md)
