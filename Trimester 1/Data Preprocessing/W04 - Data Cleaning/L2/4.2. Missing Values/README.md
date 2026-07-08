@@ -9,3 +9,5 @@ week: W04 - Data Cleaning
 ## [Introduction to Data Cleaning](./Introduction%20to%20Data%20Cleaning.md)
 
 ## [Why Real-World Data is Dirty](./Why%20Real-World%20Data%20is%20Dirty.md)
+
+## [Physical World to Digital Data Conversion](./Physical%20World%20to%20Digital%20Data%20Conversion.md)
