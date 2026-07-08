@@ -18,6 +18,6 @@ week: W02 - Handling Numeric Data
 
 #### [2.5.6. Factors Affecting Transformation Efficacy](./2.5.06.%20Factors%20Affecting%20Transformation%20Efficacy.md)
 
-## [2.5.7. Common Misinterpretations](./2.5.7.%20Common%20Misinterpretations.md)
+#### [2.5.7. Common Misinterpretations](./2.5.07.%20Common%20Misinterpretations.md)
 
 ## [2.5.8. Conclusions](./2.5.8.%20Conclusions.md)
