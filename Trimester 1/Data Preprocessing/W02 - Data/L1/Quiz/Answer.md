@@ -1,14 +1,19 @@
 # Answer
 
-✅ **Object**
+✅ **Attribute**
 
 > [!NOTE]
 > **Reason**
 >
-> In record-based data, an **object** (also called an instance, entity, or record) represents a single real-world entity. In this example, one student along with all their associated information (name, ID, major, etc.) constitutes a single object.
+> An **attribute** is a property or characteristic describing an object. In tabular data, attributes are represented as columns.
 >
-> A dataset contains many objects, while attributes describe the characteristics of those objects.
+> For example:
+>
+> * Object: Student
+> * Attributes: Name, Age, Major, GPA
+>
+> Therefore, "Taxable Income" is an attribute.
 
-# Question 2
+# Question 3
 
-A column in a dataset that represents a specific characteristic, such as 'Taxable Income', is called an:
+A dataset representing a social network, where the primary focus is on the friendships (connections) between people (objects), is best represented as record data.
