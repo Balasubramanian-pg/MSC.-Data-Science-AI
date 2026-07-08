@@ -10,3 +10,5 @@
 ## [3. Mathematical Classification of Attributes](./3.%20Mathematical%20Classification%20of%20Attributes.md)
 
 ## [4. System Architecture: The Data Hierarchy](./4.%20System%20Architecture%20-%20The%20Data%20Hierarchy.md)
+
+## [5. Machine Learning Connections: Feature Engineering](./5.%20Machine%20Learning%20Connections%20-%20Feature%20Engineering.md)
