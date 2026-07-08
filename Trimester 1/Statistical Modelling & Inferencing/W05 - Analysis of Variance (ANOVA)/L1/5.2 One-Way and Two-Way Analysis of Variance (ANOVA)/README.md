@@ -8,7 +8,7 @@
 
 #### [5.2.4. Types of ANOVA](./5.2.04.%20Types%20of%20ANOVA.md)
 
-## [5.2.5. One-Way ANOVA](./5.2.5.%20One-Way%20ANOVA.md)
+#### [5.2.5. One-Way ANOVA](./5.2.05.%20One-Way%20ANOVA.md)
 
 ## [5.2.6. Hypotheses for One-Way ANOVA](./5.2.6.%20Hypotheses%20for%20One-Way%20ANOVA.md)
 
