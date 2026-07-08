@@ -7,3 +7,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Index](./Index.md)
 
 ## [Introduction to Normalization Techniques](./Introduction%20to%20Normalization%20Techniques.md)
+
+## [Why Normalization is Necessary](./Why%20Normalization%20is%20Necessary.md)
