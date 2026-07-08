@@ -20,3 +20,5 @@
 ## [2. Creating the Structured Dataset](./2.%20Creating%20the%20Structured%20Dataset.md)
 
 ## [3. Extracting a Data Object (Row Vector / Instance)](./3.%20Extracting%20a%20Data%20Object%20%28Row%20Vector%20Instance%29.md)
+
+## [We use .loc to extract the tuple representing TXN_003](./We%20use%20.loc%20to%20extract%20the%20tuple%20representing%20TXN_003.md)
