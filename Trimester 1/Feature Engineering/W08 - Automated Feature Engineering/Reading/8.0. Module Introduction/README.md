@@ -22,7 +22,7 @@ week: W08 - Automated Feature Engineering
 
 #### [8.0.8. The Curse of Dimensionality](./8.0.08.%20The%20Curse%20of%20Dimensionality.md)
 
-## [8.0.9. Computational Trade-Offs and Strategic Warnings](./8.0.9.%20Computational%20Trade-Offs%20and%20Strategic%20Warnings.md)
+#### [8.0.9. Computational Trade-Offs and Strategic Warnings](./8.0.09.%20Computational%20Trade-Offs%20and%20Strategic%20Warnings.md)
 
 ## [8.0.10. Automated Feature Engineering Workflow](./8.0.10.%20Automated%20Feature%20Engineering%20Workflow.md)
 
