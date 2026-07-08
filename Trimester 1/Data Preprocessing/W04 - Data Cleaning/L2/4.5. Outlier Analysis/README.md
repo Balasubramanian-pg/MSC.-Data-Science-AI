@@ -79,3 +79,5 @@
 ## [10.4 Domain Expert Validation](./10.4%20Domain%20Expert%20Validation.md)
 
 ## [Median vs Mean for Robustness](./Median%20vs%20Mean%20for%20Robustness.md)
+
+## [Outlier Detection in High Dimensions](./Outlier%20Detection%20in%20High%20Dimensions.md)
