@@ -16,3 +16,5 @@
 ## [4. Measuring Similarity (Applying Math to the Matrix)](./4.%20Measuring%20Similarity%20%28Applying%20Math%20to%20the%20Matrix%29.md)
 
 ## [How similar is Doc1 to Doc2 vs Doc3?](./How%20similar%20is%20Doc1%20to%20Doc2%20vs%20Doc3.md)
+
+## [We use Cosine Similarity for sparse text vectors](./We%20use%20Cosine%20Similarity%20for%20sparse%20text%20vectors.md)
