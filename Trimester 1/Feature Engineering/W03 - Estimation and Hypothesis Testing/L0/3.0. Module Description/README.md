@@ -12,7 +12,7 @@
 
 #### [3.0.6. Filter Methods: Model-Independent Screening](./3.0.06.%20Filter%20Methods%20-%20Model-Independent%20Screening.md)
 
-## [3.0.7. Wrapper Methods: Iterative Subset Evaluation](./3.0.7.%20Wrapper%20Methods%20-%20Iterative%20Subset%20Evaluation.md)
+#### [3.0.7. Wrapper Methods: Iterative Subset Evaluation](./3.0.07.%20Wrapper%20Methods%20-%20Iterative%20Subset%20Evaluation.md)
 
 ## [3.0.8. Embedded Methods: Algorithmic Selection](./3.0.8.%20Embedded%20Methods%20-%20Algorithmic%20Selection.md)
 
