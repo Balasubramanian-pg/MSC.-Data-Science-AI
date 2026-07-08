@@ -12,7 +12,7 @@
 
 #### [12.1.6. The Binomial Distribution](./12.1.06.%20The%20Binomial%20Distribution.md)
 
-## [12.1.7. Example of a Binomial Probability Calculation](./12.1.7.%20Example%20of%20a%20Binomial%20Probability%20Calculation.md)
+#### [12.1.7. Example of a Binomial Probability Calculation](./12.1.07.%20Example%20of%20a%20Binomial%20Probability%20Calculation.md)
 
 ## [12.1.8. The Central Limit Theorem](./12.1.8.%20The%20Central%20Limit%20Theorem.md)
 
