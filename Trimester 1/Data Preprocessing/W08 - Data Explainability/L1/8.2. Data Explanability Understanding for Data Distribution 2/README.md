@@ -17,3 +17,5 @@
 ## [8.2.8. Common Failure Modes in Distribution Analysis](./8.2.8.%20Common%20Failure%20Modes%20in%20Distribution%20Analysis.md)
 
 ## [8.2.9. Example of Computing Correlation and Identifying Outliers](./8.2.9.%20Example%20of%20Computing%20Correlation%20and%20Identifying%20Outliers.md)
+
+## [8.2.10. Conclusions](./8.2.10.%20Conclusions.md)
