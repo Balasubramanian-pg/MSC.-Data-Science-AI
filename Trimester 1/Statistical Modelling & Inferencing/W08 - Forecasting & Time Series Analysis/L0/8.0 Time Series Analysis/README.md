@@ -6,7 +6,7 @@
 
 #### [8.0.3. Structural Decomposition of Time Series](./8.0.03.%20Structural%20Decomposition%20of%20Time%20Series.md)
 
-## [8.0.4. Stationarity: The Prerequisite for Forecasting](./8.0.4.%20Stationarity%20-%20The%20Prerequisite%20for%20Forecasting.md)
+#### [8.0.4. Stationarity: The Prerequisite for Forecasting](./8.0.04.%20Stationarity%20-%20The%20Prerequisite%20for%20Forecasting.md)
 
 ## [8.0.5. Smoothing Methods: Simple Moving Average](./8.0.5.%20Smoothing%20Methods%20-%20Simple%20Moving%20Average.md)
 
