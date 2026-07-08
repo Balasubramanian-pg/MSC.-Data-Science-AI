@@ -27,3 +27,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Standardization and Uniformity](./Standardization%20and%20Uniformity.md)
 
 ## [Data Integration Challenges](./Data%20Integration%20Challenges.md)
+
+## [Benefits of Data Transformation](./Benefits%20of%20Data%20Transformation.md)
