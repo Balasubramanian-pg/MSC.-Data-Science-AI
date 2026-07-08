@@ -15,3 +15,5 @@ This lecture focuses on **data volume reduction**, specifically through **data c
 ## [1. Data Integrity](./1.%20Data%20Integrity.md)
 
 ## [2. Compression Ratio](./2.%20Compression%20Ratio.md)
+
+## [3. Processing Overhead](./3.%20Processing%20Overhead.md)
