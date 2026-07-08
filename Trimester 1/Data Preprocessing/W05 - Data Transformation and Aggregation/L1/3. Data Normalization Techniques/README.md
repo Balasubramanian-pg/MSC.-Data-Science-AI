@@ -53,3 +53,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Z-Score Advantage](./Z-Score%20Advantage.md)
 
 ## [Choosing the Right Normalization Strategy](./Choosing%20the%20Right%20Normalization%20Strategy.md)
+
+## [Linear vs Nonlinear Transformation](./Linear%20vs%20Nonlinear%20Transformation.md)
