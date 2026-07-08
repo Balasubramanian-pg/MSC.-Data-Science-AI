@@ -16,7 +16,7 @@ week: W07 - Feature Engineering Techniques for Time-Series Data
 
 #### [7.3.5. Domain-Specific HRV Metrics](./7.3.05.%20Domain-Specific%20HRV%20Metrics.md)
 
-## [7.3.6. Example: Computing RMSSD](./7.3.6.%20Example%20-%20Computing%20RMSSD.md)
+#### [7.3.6. Example: Computing RMSSD](./7.3.06.%20Example%20-%20Computing%20RMSSD.md)
 
 ## [7.3.7. Real-World Application: Arrhythmia Detection](./7.3.7.%20Real-World%20Application%20-%20Arrhythmia%20Detection.md)
 
