@@ -20,3 +20,5 @@
 ## [Plot the learned centroids](./Plot%20the%20learned%20centroids.md)
 
 ## [4. Extracting Mathematical Properties](./4.%20Extracting%20Mathematical%20Properties.md)
+
+## [3. Association Rule Mining](./3.%20Association%20Rule%20Mining.md)
