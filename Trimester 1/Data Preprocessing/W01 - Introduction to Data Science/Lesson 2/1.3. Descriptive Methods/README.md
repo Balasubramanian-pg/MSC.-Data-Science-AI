@@ -28,3 +28,5 @@
 ## [2. Transform data into a Boolean matrix (One-Hot Encoding format)](./2.%20Transform%20data%20into%20a%20Boolean%20matrix%20%28One-Hot%20Encoding%20format%29.md)
 
 ## [3. Apply Apriori to find frequent itemsets (min_support = 0.6 means itemset must appear in 3/5 transactions)](./3.%20Apply%20Apriori%20to%20find%20frequent%20itemsets%20%28min_support%20%3D%200.6%20means%20itemset%20must%20appear%20in%2035%20transactions%29.md)
+
+## [4. Generate Association Rules](./4.%20Generate%20Association%20Rules.md)
