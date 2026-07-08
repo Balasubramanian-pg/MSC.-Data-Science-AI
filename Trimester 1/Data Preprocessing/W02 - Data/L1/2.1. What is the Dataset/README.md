@@ -30,3 +30,5 @@
 ## [5. Extracting Knowledge (Analytics on Attributes)](./5.%20Extracting%20Knowledge%20%28Analytics%20on%20Attributes%29.md)
 
 ## [7. Performance and Computational Insights](./7.%20Performance%20and%20Computational%20Insights.md)
+
+## [8. Common Engineering Mistakes](./8.%20Common%20Engineering%20Mistakes.md)
