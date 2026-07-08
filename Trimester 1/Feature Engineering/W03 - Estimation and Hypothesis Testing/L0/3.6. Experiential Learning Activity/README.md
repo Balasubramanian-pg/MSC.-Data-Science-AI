@@ -2,7 +2,7 @@
 
 #### [3.6.1. The Strategic Imperative of Pipeline Construction](./3.6.01.%20The%20Strategic%20Imperative%20of%20Pipeline%20Construction.md)
 
-## [3.6.2. Feature Construction and Mathematical Transformation](./3.6.2.%20Feature%20Construction%20and%20Mathematical%20Transformation.md)
+#### [3.6.2. Feature Construction and Mathematical Transformation](./3.6.02.%20Feature%20Construction%20and%20Mathematical%20Transformation.md)
 
 ## [3.6.3. Identifying Multicollinearity and Redundancy](./3.6.3.%20Identifying%20Multicollinearity%20and%20Redundancy.md)
 
