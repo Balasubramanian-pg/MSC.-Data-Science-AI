@@ -29,3 +29,5 @@ week: W05 - Data Transformation and Aggregation
 ## [4.2 Formula](./4.2%20Formula.md)
 
 ## [4.3 Mean and Standard Deviation](./4.3%20Mean%20and%20Standard%20Deviation.md)
+
+## [4.4 Step-by-Step Example](./4.4%20Step-by-Step%20Example.md)
