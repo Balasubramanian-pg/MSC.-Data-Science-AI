@@ -3,3 +3,5 @@
 # Question 1
 
 An outlier is always considered an error or a corruption of data that must be removed.
+
+## [Options](./Options.md)
