@@ -75,3 +75,5 @@
 ## [Summarization Techniques](./Summarization%20Techniques.md)
 
 ## [Aggregation in Business Intelligence](./Aggregation%20in%20Business%20Intelligence.md)
+
+## [Key Takeaways](./Key%20Takeaways.md)
