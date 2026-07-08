@@ -25,3 +25,5 @@
 ## [Gmail Login Detection](./Gmail%20Login%20Detection.md)
 
 ## [Noise vs Outliers](./Noise%20vs%20Outliers.md)
+
+## [Visual Understanding of Outliers](./Visual%20Understanding%20of%20Outliers.md)
