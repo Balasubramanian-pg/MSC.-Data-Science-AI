@@ -31,3 +31,5 @@ This lecture focuses on **data volume reduction**, specifically through **data c
 ## [Histogram Transformation 2](./Histogram%20Transformation%202.md)
 
 ## [Lossy Compression](./Lossy%20Compression.md)
+
+## [Key Conceptual Difference](./Key%20Conceptual%20Difference.md)
