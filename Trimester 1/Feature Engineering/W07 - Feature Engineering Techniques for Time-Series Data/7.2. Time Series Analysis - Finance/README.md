@@ -10,7 +10,7 @@ week: W07 - Feature Engineering Techniques for Time-Series Data
 
 #### [7.2.2. Why Raw Price Data Is Fundamentally Incomplete](./7.2.02.%20Why%20Raw%20Price%20Data%20Is%20Fundamentally%20Incomplete.md)
 
-## [7.2.3. Foundational Engineering Toolkit](./7.2.3.%20Foundational%20Engineering%20Toolkit.md)
+#### [7.2.3. Foundational Engineering Toolkit](./7.2.03.%20Foundational%20Engineering%20Toolkit.md)
 
 ## [7.2.4. Domain-Specific Indicators](./7.2.4.%20Domain-Specific%20Indicators.md)
 
