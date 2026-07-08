@@ -19,3 +19,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Purpose of Data Transformation](./Purpose%20of%20Data%20Transformation.md)
 
 ## [Improving Data Quality Through Transformation](./Improving%20Data%20Quality%20Through%20Transformation.md)
+
+## [Reducing Complexity in Machine Learning](./Reducing%20Complexity%20in%20Machine%20Learning.md)
