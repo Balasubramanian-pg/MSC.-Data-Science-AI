@@ -22,3 +22,5 @@
 ## [Injecting noise/missing data](./Injecting%20noisemissing%20data.md)
 
 ## [STEP 1: Data Selection](./STEP%201%20-%20Data%20Selection.md)
+
+## [Drop irrelevant columns (sensor_id, maintenance_log, wind_direction for simplicity)](./Drop%20irrelevant%20columns%20%28sensor_id%2C%20maintenance_log%2C%20wind_direction%20for%20simplicity%29.md)
