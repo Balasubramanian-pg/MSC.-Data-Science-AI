@@ -23,3 +23,5 @@ week: W05 - Data Transformation and Aggregation
 ## [3.5 Advantages and Limitations](./3.5%20Advantages%20and%20Limitations.md)
 
 ## [Z-Score Normalization](./Z-Score%20Normalization.md)
+
+## [4.1 Core Idea](./4.1%20Core%20Idea.md)
