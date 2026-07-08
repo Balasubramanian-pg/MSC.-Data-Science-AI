@@ -57,3 +57,5 @@
 ## [Converting 1D Data into 2D Aggregated Data](./Converting%201D%20Data%20into%202D%20Aggregated%20Data.md)
 
 ## [Frequency-Based Aggregation](./Frequency-Based%20Aggregation.md)
+
+## [Data Reduction Through Histogram Binning](./Data%20Reduction%20Through%20Histogram%20Binning.md)
