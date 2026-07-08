@@ -20,7 +20,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.3.7. Strategic Usage: Visualization vs. Feature Engineering](./4.3.07.%20Strategic%20Usage%20-%20Visualization%20vs.%20Feature%20Engineering.md)
 
-## [4.3.8. Comparing t-SNE and PCA](./4.3.8.%20Comparing%20t-SNE%20and%20PCA.md)
+#### [4.3.8. Comparing t-SNE and PCA](./4.3.08.%20Comparing%20t-SNE%20and%20PCA.md)
 
 ## [4.3.9. Common Misinterpretations](./4.3.9.%20Common%20Misinterpretations.md)
 
