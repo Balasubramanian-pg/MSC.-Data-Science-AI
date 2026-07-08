@@ -10,7 +10,7 @@
 
 #### [1.3.5. Interval Estimation](./1.3.05.%20Interval%20Estimation.md)
 
-## [1.3.6. Confidence Interval Structure](./1.3.6.%20Confidence%20Interval%20Structure.md)
+#### [1.3.6. Confidence Interval Structure](./1.3.06.%20Confidence%20Interval%20Structure.md)
 
 ## [1.3.7. Selection of Distribution](./1.3.7.%20Selection%20of%20Distribution.md)
 
