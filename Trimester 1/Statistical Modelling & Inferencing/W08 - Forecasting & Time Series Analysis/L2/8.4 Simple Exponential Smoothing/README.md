@@ -16,6 +16,6 @@
 
 #### [8.4.8. The Flat-Line Limitation](./8.4.08.%20The%20Flat-Line%20Limitation.md)
 
-## [8.4.9. Common Misinterpretations](./8.4.9.%20Common%20Misinterpretations.md)
+#### [8.4.9. Common Misinterpretations](./8.4.09.%20Common%20Misinterpretations.md)
 
 ## [8.4.10. Conclusions](./8.4.10.%20Conclusions.md)
