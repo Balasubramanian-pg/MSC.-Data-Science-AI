@@ -21,3 +21,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Equal Contribution of Features](./Equal%20Contribution%20of%20Features.md)
 
 ## [Common Range Transformation](./Common%20Range%20Transformation.md)
+
+## [Distance-Based Learning and Scale Dominance](./Distance-Based%20Learning%20and%20Scale%20Dominance.md)
