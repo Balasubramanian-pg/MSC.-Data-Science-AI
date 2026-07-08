@@ -59,3 +59,5 @@
 ## [Frequency-Based Aggregation](./Frequency-Based%20Aggregation.md)
 
 ## [Data Reduction Through Histogram Binning](./Data%20Reduction%20Through%20Histogram%20Binning.md)
+
+## [Step 1: Raw Data](./Step%201%20-%20Raw%20Data.md)
