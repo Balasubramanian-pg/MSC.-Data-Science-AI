@@ -31,3 +31,5 @@
 ## [Defining Outliers](./Defining%20Outliers.md)
 
 ## [Types of Outliers](./Types%20of%20Outliers.md)
+
+## [3.1 Error Outliers](./3.1%20Error%20Outliers.md)
