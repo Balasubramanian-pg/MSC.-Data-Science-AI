@@ -51,3 +51,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Min-Max Issue](./Min-Max%20Issue.md)
 
 ## [Z-Score Advantage](./Z-Score%20Advantage.md)
+
+## [Choosing the Right Normalization Strategy](./Choosing%20the%20Right%20Normalization%20Strategy.md)
