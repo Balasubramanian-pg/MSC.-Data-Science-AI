@@ -12,7 +12,7 @@
 
 #### [1.1.6. The Probability Density Function](./1.1.06.%20The%20Probability%20Density%20Function.md)
 
-## [1.1.7. The Cumulative Distribution Function](./1.1.7.%20The%20Cumulative%20Distribution%20Function.md)
+#### [1.1.7. The Cumulative Distribution Function](./1.1.07.%20The%20Cumulative%20Distribution%20Function.md)
 
 ## [1.1.8. Example of a Cumulative Probability Calculation](./1.1.8.%20Example%20of%20a%20Cumulative%20Probability%20Calculation.md)
 
