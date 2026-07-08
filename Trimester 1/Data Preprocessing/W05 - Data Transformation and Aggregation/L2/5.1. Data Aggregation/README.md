@@ -33,3 +33,5 @@
 16. Aggregation in Business Intelligence
     
 17. Key Takeaways
+
+## [Introduction to Data Aggregation](./Introduction%20to%20Data%20Aggregation.md)
