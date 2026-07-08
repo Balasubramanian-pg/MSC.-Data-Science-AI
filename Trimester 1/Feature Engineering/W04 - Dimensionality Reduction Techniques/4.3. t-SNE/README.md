@@ -6,7 +6,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 ## [4.3. t-Distributed Stochastic Neighbor Embedding (t-SNE)](./4.3.%20t-Distributed%20Stochastic%20Neighbor%20Embedding%20%28t-SNE%29.md)
 
-## [4.3.1. The Limitation of Linear Projections](./4.3.1.%20The%20Limitation%20of%20Linear%20Projections.md)
+#### [4.3.1. The Limitation of Linear Projections](./4.3.01.%20The%20Limitation%20of%20Linear%20Projections.md)
 
 ## [4.3.2. The Probabilistic Framework for Local Structure](./4.3.2.%20The%20Probabilistic%20Framework%20for%20Local%20Structure.md)
 
