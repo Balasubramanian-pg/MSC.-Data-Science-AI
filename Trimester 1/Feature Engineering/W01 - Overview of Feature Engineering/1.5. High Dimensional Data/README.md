@@ -14,7 +14,7 @@ week: W01 - Overview of Feature Engineering
 
 #### [1.5.4. The Necessity of Feature Engineering](./1.5.04.%20The%20Necessity%20of%20Feature%20Engineering.md)
 
-## [1.5.5. Step-by-Step Dimensionality Reduction Example](./1.5.5.%20Step-by-Step%20Dimensionality%20Reduction%20Example.md)
+#### [1.5.5. Step-by-Step Dimensionality Reduction Example](./1.5.05.%20Step-by-Step%20Dimensionality%20Reduction%20Example.md)
 
 ## [1.5.6. Factors Affecting Dimensionality Management](./1.5.6.%20Factors%20Affecting%20Dimensionality%20Management.md)
 
