@@ -51,3 +51,5 @@
 ## [Sales Aggregation Example](./Sales%20Aggregation%20Example.md)
 
 ## [Rainfall Aggregation Example](./Rainfall%20Aggregation%20Example.md)
+
+## [Histograms as Aggregation Tools](./Histograms%20as%20Aggregation%20Tools.md)
