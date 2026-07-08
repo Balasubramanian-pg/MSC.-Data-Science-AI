@@ -32,3 +32,5 @@
 ## [7. Performance and Computational Insights](./7.%20Performance%20and%20Computational%20Insights.md)
 
 ## [8. Common Engineering Mistakes](./8.%20Common%20Engineering%20Mistakes.md)
+
+## [9. Final Takeaways & Interview Preparation](./9.%20Final%20Takeaways%20%26%20Interview%20Preparation.md)
