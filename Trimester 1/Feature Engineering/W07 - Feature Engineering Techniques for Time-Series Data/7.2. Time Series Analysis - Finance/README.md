@@ -20,6 +20,6 @@ week: W07 - Feature Engineering Techniques for Time-Series Data
 
 #### [7.2.7. Factors Affecting Indicator Quality](./7.2.07.%20Factors%20Affecting%20Indicator%20Quality.md)
 
-## [7.2.8. Common Misinterpretations](./7.2.8.%20Common%20Misinterpretations.md)
+#### [7.2.8. Common Misinterpretations](./7.2.08.%20Common%20Misinterpretations.md)
 
 ## [7.2.9. Conclusions](./7.2.9.%20Conclusions.md)
