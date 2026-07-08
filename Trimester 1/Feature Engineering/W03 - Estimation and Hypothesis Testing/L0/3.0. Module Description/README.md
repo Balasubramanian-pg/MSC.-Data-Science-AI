@@ -8,7 +8,7 @@
 
 #### [3.0.4. Feature Construction: Domain-Informed Variables](./3.0.04.%20Feature%20Construction%20-%20Domain-Informed%20Variables.md)
 
-## [3.0.5. The Taxonomy of Feature Selection](./3.0.5.%20The%20Taxonomy%20of%20Feature%20Selection.md)
+#### [3.0.5. The Taxonomy of Feature Selection](./3.0.05.%20The%20Taxonomy%20of%20Feature%20Selection.md)
 
 ## [3.0.6. Filter Methods: Model-Independent Screening](./3.0.6.%20Filter%20Methods%20-%20Model-Independent%20Screening.md)
 
