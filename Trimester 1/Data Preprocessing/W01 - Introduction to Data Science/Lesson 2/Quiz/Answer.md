@@ -1,24 +1,20 @@
 # Answer
 
-✅ **False**
+✅ **Domain Knowledge**
+✅ **Statistics**
+✅ **Computer Science**
 
 > [!NOTE]
 > **Reason**
 >
-> The **KDD process** is a multi-step process that typically includes:
+> Data Science sits at the intersection of multiple disciplines:
 >
-> 1. Data Selection
-> 2. Data Cleaning and Preprocessing
-> 3. Data Transformation
-> 4. Data Mining
-> 5. Pattern Evaluation
-> 6. Knowledge Presentation
+> * **Statistics** provides methods for analysis and inference.
+> * **Computer Science** provides algorithms, programming, and computational infrastructure.
+> * **Domain Knowledge** enables correct interpretation of results and meaningful problem-solving.
 >
-> Data mining is only one step within the broader KDD process.
+> Although philosophy may influence scientific thinking, it is not considered a core pillar of Data Science.
 
+# Question 5
 
-<img width="647" height="594" alt="image" src="https://github.com/user-attachments/assets/cc3a75fe-f261-451a-bf27-70d52c1976f2" />
-
-# Question 4
-
-Data Science is an interdisciplinary field that combines several core areas. Select all that apply.
+What is the primary reason highlighted for the explosive growth and need for Data Science in the modern world?
