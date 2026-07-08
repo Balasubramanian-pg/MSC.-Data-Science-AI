@@ -16,7 +16,7 @@
 
 #### [6.4.8. Subset Combination Explosion](./6.4.08.%20Subset%20Combination%20Explosion.md)
 
-## [6.4.9. Computational Complexity of Exhaustive Search](./6.4.9.%20Computational%20Complexity%20of%20Exhaustive%20Search.md)
+#### [6.4.9. Computational Complexity of Exhaustive Search](./6.4.09.%20Computational%20Complexity%20of%20Exhaustive%20Search.md)
 
 ## [6.4.10. Greedy Strategies in Feature Selection](./6.4.10.%20Greedy%20Strategies%20in%20Feature%20Selection.md)
 
