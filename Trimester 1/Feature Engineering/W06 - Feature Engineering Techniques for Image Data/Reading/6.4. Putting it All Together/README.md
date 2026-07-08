@@ -14,7 +14,7 @@ week: W06 - Feature Engineering Techniques for Image Data
 
 #### [6.4.4. The Logistic Regression Classifier](./6.4.04.%20The%20Logistic%20Regression%20Classifier.md)
 
-## [6.4.5. Comparative Performance Analysis](./6.4.5.%20Comparative%20Performance%20Analysis.md)
+#### [6.4.5. Comparative Performance Analysis](./6.4.05.%20Comparative%20Performance%20Analysis.md)
 
 ## [6.4.6. Why Engineered Features Outperform Raw Pixels](./6.4.6.%20Why%20Engineered%20Features%20Outperform%20Raw%20Pixels.md)
 
