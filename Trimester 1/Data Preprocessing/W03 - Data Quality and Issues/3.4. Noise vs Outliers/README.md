@@ -9,3 +9,5 @@
 ## [Causes of Noisy Data](./Causes%20of%20Noisy%20Data.md)
 
 ## [Faulty Data Collection Instruments](./Faulty%20Data%20Collection%20Instruments.md)
+
+## [Human Data Entry Errors](./Human%20Data%20Entry%20Errors.md)
