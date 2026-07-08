@@ -18,3 +18,5 @@
 ## [Plot the grouped data points](./Plot%20the%20grouped%20data%20points.md)
 
 ## [Plot the learned centroids](./Plot%20the%20learned%20centroids.md)
+
+## [4. Extracting Mathematical Properties](./4.%20Extracting%20Mathematical%20Properties.md)
