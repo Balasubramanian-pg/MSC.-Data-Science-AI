@@ -8,3 +8,5 @@
 ## [2. Intuition & The Information Paradox](./2.%20Intuition%20%26%20The%20Information%20Paradox.md)
 
 ## [3. The Evolution of Scientific Discovery](./3.%20The%20Evolution%20of%20Scientific%20Discovery.md)
+
+## [4. Drivers of the Data Explosion](./4.%20Drivers%20of%20the%20Data%20Explosion.md)
