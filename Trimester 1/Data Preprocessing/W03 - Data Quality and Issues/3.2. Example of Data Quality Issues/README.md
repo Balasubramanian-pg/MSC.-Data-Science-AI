@@ -23,3 +23,5 @@ A machine learning system trained on poor data will produce poor outcomes regard
 ## [Noise vs Outliers](./Noise%20vs%20Outliers.md)
 
 ## [Inconsistent Data](./Inconsistent%20Data.md)
+
+## [Unit Inconsistency](./Unit%20Inconsistency.md)
