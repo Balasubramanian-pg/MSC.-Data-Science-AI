@@ -25,3 +25,5 @@
 ## [7.1.12. Sampling Bias and Fair Representation](./7.1.12.%20Sampling%20Bias%20and%20Fair%20Representation.md)
 
 ## [7.1.13. Sampling and Pattern Preservation](./7.1.13.%20Sampling%20and%20Pattern%20Preservation.md)
+
+## [7.1.14. Risks of Over-Reduction](./7.1.14.%20Risks%20of%20Over-Reduction.md)
