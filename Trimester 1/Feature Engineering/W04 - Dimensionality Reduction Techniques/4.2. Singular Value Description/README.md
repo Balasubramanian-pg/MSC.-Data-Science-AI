@@ -6,7 +6,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 ## [4.2. Singular Value Decomposition](./4.2.%20Singular%20Value%20Decomposition.md)
 
-## [4.2.1. From Original Features to Latent Structures](./4.2.1.%20From%20Original%20Features%20to%20Latent%20Structures.md)
+#### [4.2.1. From Original Features to Latent Structures](./4.2.01.%20From%20Original%20Features%20to%20Latent%20Structures.md)
 
 ## [4.2.2. The Mathematical Framework of SVD](./4.2.2.%20The%20Mathematical%20Framework%20of%20SVD.md)
 
