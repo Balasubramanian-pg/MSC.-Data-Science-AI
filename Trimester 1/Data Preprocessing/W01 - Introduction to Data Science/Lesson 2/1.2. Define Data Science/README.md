@@ -12,3 +12,5 @@
 ## [4. Drivers of the Data Explosion](./4.%20Drivers%20of%20the%20Data%20Explosion.md)
 
 ## [5. Mathematical Abstraction: Predictive vs. Descriptive Systems](./5.%20Mathematical%20Abstraction%20-%20Predictive%20vs.%20Descriptive%20Systems.md)
+
+## [6. Python Implementation: Resolving the "Starving for Knowledge" Paradox](./6.%20Python%20Implementation%20-%20Resolving%20the%20Starving%20for%20Knowledge%20Paradox.md)
