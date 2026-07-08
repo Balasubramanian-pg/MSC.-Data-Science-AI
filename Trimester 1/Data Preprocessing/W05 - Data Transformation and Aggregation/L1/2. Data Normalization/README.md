@@ -41,3 +41,5 @@ week: W05 - Data Transformation and Aggregation
 ## [16.1 Min-Max Normalization](./16.1%20Min-Max%20Normalization.md)
 
 ## [16.2 Z-Score Normalization](./16.2%20Z-Score%20Normalization.md)
+
+## [16.3 Decimal Scaling](./16.3%20Decimal%20Scaling.md)
