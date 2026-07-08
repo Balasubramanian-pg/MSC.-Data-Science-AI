@@ -21,3 +21,5 @@ This lecture focuses on **data volume reduction**, specifically through **data c
 ## [4. File Suitability](./4.%20File%20Suitability.md)
 
 ## [Histogram as a Data Reduction Technique](./Histogram%20as%20a%20Data%20Reduction%20Technique.md)
+
+## [Original Data](./Original%20Data.md)
