@@ -47,3 +47,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Comparing the Three Methods](./Comparing%20the%20Three%20Methods.md)
 
 ## [Impact of Outliers on Normalization](./Impact%20of%20Outliers%20on%20Normalization.md)
+
+## [Min-Max Issue](./Min-Max%20Issue.md)
