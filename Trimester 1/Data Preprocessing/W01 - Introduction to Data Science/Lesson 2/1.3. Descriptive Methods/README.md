@@ -12,3 +12,5 @@
 ## [2. Initialize and fit the KMeans algorithm](./2.%20Initialize%20and%20fit%20the%20KMeans%20algorithm.md)
 
 ## [Using 'k-means++' ensures smarter centroid initialization to avoid local minima](./Using%20%27k-means%2B%2B%27%20ensures%20smarter%20centroid%20initialization%20to%20avoid%20local%20minima.md)
+
+## [3. Visual Intuition](./3.%20Visual%20Intuition.md)
