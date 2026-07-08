@@ -47,3 +47,5 @@
 ## [Aggregation for Stability and Smoothing](./Aggregation%20for%20Stability%20and%20Smoothing.md)
 
 ## [Benefits of Data Aggregation](./Benefits%20of%20Data%20Aggregation.md)
+
+## [Sales Aggregation Example](./Sales%20Aggregation%20Example.md)
