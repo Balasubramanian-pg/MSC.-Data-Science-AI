@@ -26,3 +26,5 @@
 ## [We must explicitly define the hierarchy array for the algorithm](./We%20must%20explicitly%20define%20the%20hierarchy%20array%20for%20the%20algorithm.md)
 
 ## [4. Processing Interval/Ratio Attributes (Standardization)](./4.%20Processing%20IntervalRatio%20Attributes%20%28Standardization%29.md)
+
+## [ML models prefer continuous data centered at 0 with unit variance](./ML%20models%20prefer%20continuous%20data%20centered%20at%200%20with%20unit%20variance.md)
