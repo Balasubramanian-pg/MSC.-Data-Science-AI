@@ -11,3 +11,5 @@
 ## [8.2.5. The Normal Distribution](./8.2.5.%20The%20Normal%20Distribution.md)
 
 ## [8.2.6. The Uniform Distribution](./8.2.6.%20The%20Uniform%20Distribution.md)
+
+## [8.2.7. Bimodal and Complex Distributions](./8.2.7.%20Bimodal%20and%20Complex%20Distributions.md)
