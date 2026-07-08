@@ -31,3 +31,5 @@ week: W04 - Data Cleaning
 ## [Euclidean Distance and Missing Data](./Euclidean%20Distance%20and%20Missing%20Data.md)
 
 ## [Methods for Handling Missing Values](./Methods%20for%20Handling%20Missing%20Values.md)
+
+## [10.1 Ignoring Tuples](./10.1%20Ignoring%20Tuples.md)
