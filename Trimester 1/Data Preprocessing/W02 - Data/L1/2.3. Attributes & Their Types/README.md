@@ -8,3 +8,5 @@
 ## [2. Intuition and Real-World Analogies](./2.%20Intuition%20and%20Real-World%20Analogies.md)
 
 ## [3. Mathematical Classification of Attributes](./3.%20Mathematical%20Classification%20of%20Attributes.md)
+
+## [4. System Architecture: The Data Hierarchy](./4.%20System%20Architecture%20-%20The%20Data%20Hierarchy.md)
