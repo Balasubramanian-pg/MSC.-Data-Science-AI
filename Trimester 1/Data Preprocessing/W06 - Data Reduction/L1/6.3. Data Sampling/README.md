@@ -29,3 +29,5 @@
 ## [7.1.14. Risks of Over-Reduction](./7.1.14.%20Risks%20of%20Over-Reduction.md)
 
 ## [7.1.15. Computational Benefits of Sampling](./7.1.15.%20Computational%20Benefits%20of%20Sampling.md)
+
+## [7.1.16. Sampling in Data Mining and Machine Learning](./7.1.16.%20Sampling%20in%20Data%20Mining%20and%20Machine%20Learning.md)
