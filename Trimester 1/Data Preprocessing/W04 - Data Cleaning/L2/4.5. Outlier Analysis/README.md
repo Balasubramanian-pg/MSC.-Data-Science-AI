@@ -49,3 +49,5 @@
 ## [Two-Dimensional View](./Two-Dimensional%20View.md)
 
 ## [Distance-Based Intuition Behind Outliers](./Distance-Based%20Intuition%20Behind%20Outliers.md)
+
+## [Why Outliers Affect Machine Learning](./Why%20Outliers%20Affect%20Machine%20Learning.md)
