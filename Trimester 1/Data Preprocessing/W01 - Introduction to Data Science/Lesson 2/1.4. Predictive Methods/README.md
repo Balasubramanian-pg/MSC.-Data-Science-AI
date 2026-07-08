@@ -8,3 +8,5 @@
 ## [2. Visual Intuition & System Architecture](./2.%20Visual%20Intuition%20%26%20System%20Architecture.md)
 
 ## [3. The Mathematical Framework](./3.%20The%20Mathematical%20Framework.md)
+
+## [4. Classification: Predicting Finite States](./4.%20Classification%20-%20Predicting%20Finite%20States.md)
