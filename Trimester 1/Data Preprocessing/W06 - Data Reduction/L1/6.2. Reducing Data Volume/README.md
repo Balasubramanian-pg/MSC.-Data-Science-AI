@@ -33,3 +33,5 @@ This lecture focuses on **data volume reduction**, specifically through **data c
 ## [Lossy Compression](./Lossy%20Compression.md)
 
 ## [Key Conceptual Difference](./Key%20Conceptual%20Difference.md)
+
+## [Why Compression Matters in ML and Data Mining](./Why%20Compression%20Matters%20in%20ML%20and%20Data%20Mining.md)
