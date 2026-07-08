@@ -29,3 +29,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Data Integration Challenges](./Data%20Integration%20Challenges.md)
 
 ## [Benefits of Data Transformation](./Benefits%20of%20Data%20Transformation.md)
+
+## [Challenges in Data Transformation](./Challenges%20in%20Data%20Transformation.md)
