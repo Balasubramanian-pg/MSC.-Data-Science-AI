@@ -72,3 +72,5 @@
 ## [ETL and Data Harmonization](./ETL%20and%20Data%20Harmonization.md)
 
 ## [Aadhaar Example and Data Integration Failure](./Aadhaar%20Example%20and%20Data%20Integration%20Failure.md)
+
+## [Key Takeaways](./Key%20Takeaways.md)
