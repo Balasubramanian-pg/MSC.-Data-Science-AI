@@ -53,3 +53,5 @@
 ## [Why Outliers Affect Machine Learning](./Why%20Outliers%20Affect%20Machine%20Learning.md)
 
 ## [Outliers and Clustering Algorithms](./Outliers%20and%20Clustering%20Algorithms.md)
+
+## [Outliers and Statistical Distortion](./Outliers%20and%20Statistical%20Distortion.md)
