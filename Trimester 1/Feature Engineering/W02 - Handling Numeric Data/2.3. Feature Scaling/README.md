@@ -14,7 +14,7 @@ week: W02 - Handling Numeric Data
 
 #### [2.3.4. Algorithmic Sensitivity to Scale](./2.3.04.%20Algorithmic%20Sensitivity%20to%20Scale.md)
 
-## [2.3.5. Example of Min-Max Normalization](./2.3.5.%20Example%20of%20Min-Max%20Normalization.md)
+#### [2.3.5. Example of Min-Max Normalization](./2.3.05.%20Example%20of%20Min-Max%20Normalization.md)
 
 ## [2.3.6. Example of Z-Score Standardization](./2.3.6.%20Example%20of%20Z-Score%20Standardization.md)
 
