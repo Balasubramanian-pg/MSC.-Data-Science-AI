@@ -32,3 +32,5 @@
 ## [5. Continuous to Discrete Transformation (Discretization)](./5.%20Continuous%20to%20Discrete%20Transformation%20%28Discretization%29.md)
 
 ## [Binning salary into 3 discrete ordinal brackets (e.g., for tax brackets)](./Binning%20salary%20into%203%20discrete%20ordinal%20brackets%20%28e.g.%2C%20for%20tax%20brackets%29.md)
+
+## [6. Final Assembled ML-Ready Design Matrix](./6.%20Final%20Assembled%20ML-Ready%20Design%20Matrix.md)
