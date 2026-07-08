@@ -67,3 +67,5 @@
 ## [Step 3: Bin Aggregation](./Step%203%20-%20Bin%20Aggregation.md)
 
 ## [Lossy vs Lossless Transformation](./Lossy%20vs%20Lossless%20Transformation.md)
+
+## [Lossless Transformation](./Lossless%20Transformation.md)
