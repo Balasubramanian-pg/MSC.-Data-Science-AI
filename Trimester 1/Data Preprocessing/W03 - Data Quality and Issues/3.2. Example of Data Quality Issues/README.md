@@ -11,3 +11,5 @@ A machine learning system trained on poor data will produce poor outcomes regard
 ## [Understanding Data Quality](./Understanding%20Data%20Quality.md)
 
 ## [Incomplete Data](./Incomplete%20Data.md)
+
+## [Why Missing Values Matter](./Why%20Missing%20Values%20Matter.md)
