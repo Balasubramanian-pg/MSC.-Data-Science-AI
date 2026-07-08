@@ -56,3 +56,5 @@
 ## [6.3 Structural Inconsistency](./6.3%20Structural%20Inconsistency.md)
 
 ## [Impact of Inconsistent Data](./Impact%20of%20Inconsistent%20Data.md)
+
+## [Detecting Inconsistency](./Detecting%20Inconsistency.md)
