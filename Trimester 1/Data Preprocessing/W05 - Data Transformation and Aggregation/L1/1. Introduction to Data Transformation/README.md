@@ -17,3 +17,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Role of Data Transformation in the KDD Pipeline](./Role%20of%20Data%20Transformation%20in%20the%20KDD%20Pipeline.md)
 
 ## [Purpose of Data Transformation](./Purpose%20of%20Data%20Transformation.md)
+
+## [Improving Data Quality Through Transformation](./Improving%20Data%20Quality%20Through%20Transformation.md)
