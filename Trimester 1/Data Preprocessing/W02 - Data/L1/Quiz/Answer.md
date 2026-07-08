@@ -1,20 +1,14 @@
 # Answer
 
-✅ **Ordinal**
+✅ **A record, sample, instance, or point**
 
 > [!NOTE]
 > **Reason**
 >
-> **Ordinal attributes** represent categories that have a meaningful order or ranking, but the differences between adjacent categories are not necessarily equal or measurable.
+> A **data object** refers to a single entity or observation in a dataset. Depending on the context, it may also be called a **record**, **sample**, **instance**, or **data point**.
 >
-> In the satisfaction scale:
->
-> **Very Dissatisfied < Dissatisfied < Neutral < Satisfied < Very Satisfied**
->
-> The categories have a clear ordering, making this an **ordinal** attribute.
+> For example, in a student dataset, each student's row represents one data object.
 
-<img width="573" height="637" alt="image" src="https://github.com/user-attachments/assets/c581dc66-4b5a-4967-99ca-bf4df05cd085" />
+# Question 8
 
-# Question 7
-
-In a standard dataset, what is a "data object" also known as?
+Data from a grocery store where each record consists of the set of all products purchased by a customer in a single shopping trip is known as:
