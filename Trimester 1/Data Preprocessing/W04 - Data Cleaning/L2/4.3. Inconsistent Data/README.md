@@ -30,3 +30,5 @@
 13. Aadhaar Example and Data Integration Failure
     
 14. Key Takeaways
+
+## [Introduction to Data Inconsistency](./Introduction%20to%20Data%20Inconsistency.md)
