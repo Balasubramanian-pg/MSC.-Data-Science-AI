@@ -44,3 +44,5 @@
 ## [Iterative loop check](./Iterative%20loop%20check.md)
 
 ## [6. Business Intelligence (BI) Pyramid](./6.%20Business%20Intelligence%20%28BI%29%20Pyramid.md)
+
+## [7. Advanced Engineering Insights](./7.%20Advanced%20Engineering%20Insights.md)
