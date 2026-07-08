@@ -65,3 +65,5 @@
 ## [Question 40](./Question%2040.md)
 
 ## [Question 41](./Question%2041.md)
+
+## [Question 42](./Question%2042.md)
