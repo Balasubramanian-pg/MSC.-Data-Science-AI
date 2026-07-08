@@ -51,3 +51,5 @@
 ## [Statistical Detection Using Z-Score](./Statistical%20Detection%20Using%20Z-Score.md)
 
 ## [Handling Outliers](./Handling%20Outliers.md)
+
+## [Normalization and Transformation](./Normalization%20and%20Transformation.md)
