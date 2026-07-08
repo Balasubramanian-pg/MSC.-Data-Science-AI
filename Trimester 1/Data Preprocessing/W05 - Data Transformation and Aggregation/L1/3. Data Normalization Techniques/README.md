@@ -27,3 +27,5 @@ week: W05 - Data Transformation and Aggregation
 ## [4.1 Core Idea](./4.1%20Core%20Idea.md)
 
 ## [4.2 Formula](./4.2%20Formula.md)
+
+## [4.3 Mean and Standard Deviation](./4.3%20Mean%20and%20Standard%20Deviation.md)
