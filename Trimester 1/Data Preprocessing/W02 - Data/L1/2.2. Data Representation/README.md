@@ -36,3 +36,5 @@
 ## [4. Optional: View the Adjacency Matrix](./4.%20Optional%20-%20View%20the%20Adjacency%20Matrix.md)
 
 ## [4. Ordered Data: Sequence and Temporal Dynamics](./4.%20Ordered%20Data%20-%20Sequence%20and%20Temporal%20Dynamics.md)
+
+## [5. Performance and Systems Engineering Insights](./5.%20Performance%20and%20Systems%20Engineering%20Insights.md)
