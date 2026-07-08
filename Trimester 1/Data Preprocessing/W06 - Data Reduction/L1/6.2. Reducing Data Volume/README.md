@@ -23,3 +23,5 @@ This lecture focuses on **data volume reduction**, specifically through **data c
 ## [Histogram as a Data Reduction Technique](./Histogram%20as%20a%20Data%20Reduction%20Technique.md)
 
 ## [Original Data](./Original%20Data.md)
+
+## [Histogram Transformation 1](./Histogram%20Transformation%201.md)
