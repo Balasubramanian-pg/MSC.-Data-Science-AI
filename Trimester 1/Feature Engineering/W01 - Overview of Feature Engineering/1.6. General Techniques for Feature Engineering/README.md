@@ -14,7 +14,7 @@ week: W01 - Overview of Feature Engineering
 
 #### [1.6.4. Scaling and Normalization](./1.6.04.%20Scaling%20and%20Normalization.md)
 
-## [1.6.5. Feature Extraction and Construction](./1.6.5.%20Feature%20Extraction%20and%20Construction.md)
+#### [1.6.5. Feature Extraction and Construction](./1.6.05.%20Feature%20Extraction%20and%20Construction.md)
 
 ## [1.6.6. Selection and Dimensionality Reduction](./1.6.6.%20Selection%20and%20Dimensionality%20Reduction.md)
 
