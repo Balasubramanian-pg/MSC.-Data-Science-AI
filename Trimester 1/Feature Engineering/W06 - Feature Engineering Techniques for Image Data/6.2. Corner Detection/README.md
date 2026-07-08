@@ -18,7 +18,7 @@ week: W06 - Feature Engineering Techniques for Image Data
 
 #### [6.2.6. Practical Implementation Parameters](./6.2.06.%20Practical%20Implementation%20Parameters.md)
 
-## [6.2.7. Comparison of Harris and Shi-Tomasi](./6.2.7.%20Comparison%20of%20Harris%20and%20Shi-Tomasi.md)
+#### [6.2.7. Comparison of Harris and Shi-Tomasi](./6.2.07.%20Comparison%20of%20Harris%20and%20Shi-Tomasi.md)
 
 ## [6.2.8. Common Misinterpretations](./6.2.8.%20Common%20Misinterpretations.md)
 
