@@ -4,7 +4,7 @@
 
 #### [6.1.2. The Purpose of Simple Linear Regression](./6.1.02.%20The%20Purpose%20of%20Simple%20Linear%20Regression.md)
 
-## [6.1.3. Why It Is Called "Linear" Regression](./6.1.3.%20Why%20It%20Is%20Called%20Linear%20Regression.md)
+#### [6.1.3. Why It Is Called "Linear" Regression](./6.1.03.%20Why%20It%20Is%20Called%20Linear%20Regression.md)
 
 ## [6.1.4. Components of the Regression Model](./6.1.4.%20Components%20of%20the%20Regression%20Model.md)
 
