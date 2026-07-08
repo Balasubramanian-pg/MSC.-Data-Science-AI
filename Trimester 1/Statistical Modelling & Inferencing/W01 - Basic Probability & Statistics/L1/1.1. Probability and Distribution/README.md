@@ -10,7 +10,7 @@
 
 #### [1.1.5. Example of a Probability Mass Function](./1.1.05.%20Example%20of%20a%20Probability%20Mass%20Function.md)
 
-## [1.1.6. The Probability Density Function](./1.1.6.%20The%20Probability%20Density%20Function.md)
+#### [1.1.6. The Probability Density Function](./1.1.06.%20The%20Probability%20Density%20Function.md)
 
 ## [1.1.7. The Cumulative Distribution Function](./1.1.7.%20The%20Cumulative%20Distribution%20Function.md)
 
