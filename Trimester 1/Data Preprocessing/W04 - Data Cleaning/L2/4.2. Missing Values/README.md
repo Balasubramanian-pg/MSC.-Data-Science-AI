@@ -21,3 +21,5 @@ week: W04 - Data Cleaning
 ## [5.2 Noisy Data](./5.2%20Noisy%20Data.md)
 
 ## [5.3 Inconsistent Data](./5.3%20Inconsistent%20Data.md)
+
+## [Why Data Cleaning is Necessary](./Why%20Data%20Cleaning%20is%20Necessary.md)
