@@ -41,3 +41,5 @@ week: W05 - Data Transformation and Aggregation
 ## [5.2 Formula](./5.2%20Formula.md)
 
 ## [5.3 Step-by-Step Example](./5.3%20Step-by-Step%20Example.md)
+
+## [5.4 Relationship Preservation Discussion](./5.4%20Relationship%20Preservation%20Discussion.md)
