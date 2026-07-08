@@ -4,7 +4,7 @@
 
 #### [8.3.2. The Tradeoff Between Accuracy and Interpretability](./8.3.02.%20The%20Tradeoff%20Between%20Accuracy%20and%20Interpretability.md)
 
-## [8.3.3. Local vs Global Explainability](./8.3.3.%20Local%20vs%20Global%20Explainability.md)
+#### [8.3.3. Local vs Global Explainability](./8.3.03.%20Local%20vs%20Global%20Explainability.md)
 
 ## [8.3.4. Why Local Explainability Matters](./8.3.4.%20Why%20Local%20Explainability%20Matters.md)
 
