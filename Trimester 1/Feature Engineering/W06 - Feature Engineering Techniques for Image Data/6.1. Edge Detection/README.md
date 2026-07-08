@@ -14,7 +14,7 @@ week: W06 - Feature Engineering Techniques for Image Data
 
 #### [6.1.4. Example: Applying Canny Edge Detection](./6.1.04.%20Example%20-%20Applying%20Canny%20Edge%20Detection.md)
 
-## [6.1.5. Practical Implementation Considerations](./6.1.5.%20Practical%20Implementation%20Considerations.md)
+#### [6.1.5. Practical Implementation Considerations](./6.1.05.%20Practical%20Implementation%20Considerations.md)
 
 ## [6.1.6. Comparison with Alternative Edge Detectors](./6.1.6.%20Comparison%20with%20Alternative%20Edge%20Detectors.md)
 
