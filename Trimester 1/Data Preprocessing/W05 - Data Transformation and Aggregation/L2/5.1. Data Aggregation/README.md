@@ -49,3 +49,5 @@
 ## [Benefits of Data Aggregation](./Benefits%20of%20Data%20Aggregation.md)
 
 ## [Sales Aggregation Example](./Sales%20Aggregation%20Example.md)
+
+## [Rainfall Aggregation Example](./Rainfall%20Aggregation%20Example.md)
