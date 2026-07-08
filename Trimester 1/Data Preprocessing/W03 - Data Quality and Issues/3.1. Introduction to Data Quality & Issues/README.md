@@ -17,3 +17,5 @@
 ## [3.4 Timeliness](./3.4%20Timeliness.md)
 
 ## [3.5 Believability](./3.5%20Believability.md)
+
+## [3.6 Interpretability](./3.6%20Interpretability.md)
