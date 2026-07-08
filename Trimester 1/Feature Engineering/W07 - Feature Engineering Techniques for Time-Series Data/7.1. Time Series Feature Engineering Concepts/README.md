@@ -16,7 +16,7 @@ week: W07 - Feature Engineering Techniques for Time-Series Data
 
 #### [7.1.5. Lag Features](./7.1.05.%20Lag%20Features.md)
 
-## [7.1.6. Rolling Statistics](./7.1.6.%20Rolling%20Statistics.md)
+#### [7.1.6. Rolling Statistics](./7.1.06.%20Rolling%20Statistics.md)
 
 ## [7.1.7. Domain-Specific Feature Engineering](./7.1.7.%20Domain-Specific%20Feature%20Engineering.md)
 
