@@ -16,7 +16,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.3.5. Optimization via Kullback-Leibler Divergence](./4.3.05.%20Optimization%20via%20Kullback-Leibler%20Divergence.md)
 
-## [4.3.6. Example of a t-SNE Optimization Workflow](./4.3.6.%20Example%20of%20a%20t-SNE%20Optimization%20Workflow.md)
+#### [4.3.6. Example of a t-SNE Optimization Workflow](./4.3.06.%20Example%20of%20a%20t-SNE%20Optimization%20Workflow.md)
 
 ## [4.3.7. Strategic Usage: Visualization vs. Feature Engineering](./4.3.7.%20Strategic%20Usage%20-%20Visualization%20vs.%20Feature%20Engineering.md)
 
