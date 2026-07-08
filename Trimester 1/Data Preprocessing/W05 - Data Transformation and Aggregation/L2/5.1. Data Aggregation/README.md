@@ -45,3 +45,5 @@
 ## [Aggregation and Change of Scale](./Aggregation%20and%20Change%20of%20Scale.md)
 
 ## [Aggregation for Stability and Smoothing](./Aggregation%20for%20Stability%20and%20Smoothing.md)
+
+## [Benefits of Data Aggregation](./Benefits%20of%20Data%20Aggregation.md)
