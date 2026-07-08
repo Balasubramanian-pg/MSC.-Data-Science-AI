@@ -1,6 +1,4 @@
 # Options
 
-* Record
-* Attribute
-* Data Point
-* Object
+* True
+* False
