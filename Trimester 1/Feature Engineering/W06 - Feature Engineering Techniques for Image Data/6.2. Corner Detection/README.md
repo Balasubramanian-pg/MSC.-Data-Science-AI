@@ -10,7 +10,7 @@ week: W06 - Feature Engineering Techniques for Image Data
 
 #### [6.2.2. Why Edge Detection Alone Is Fundamentally Incomplete](./6.2.02.%20Why%20Edge%20Detection%20Alone%20Is%20Fundamentally%20Incomplete.md)
 
-## [6.2.3. Harris Corner Detection](./6.2.3.%20Harris%20Corner%20Detection.md)
+#### [6.2.3. Harris Corner Detection](./6.2.03.%20Harris%20Corner%20Detection.md)
 
 ## [6.2.4. Shi-Tomasi Corner Detection](./6.2.4.%20Shi-Tomasi%20Corner%20Detection.md)
 
