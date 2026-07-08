@@ -34,3 +34,5 @@
 ## [3. Compute the PageRank mathematically (solving the eigenvector problem)](./3.%20Compute%20the%20PageRank%20mathematically%20%28solving%20the%20eigenvector%20problem%29.md)
 
 ## [4. Optional: View the Adjacency Matrix](./4.%20Optional%20-%20View%20the%20Adjacency%20Matrix.md)
+
+## [4. Ordered Data: Sequence and Temporal Dynamics](./4.%20Ordered%20Data%20-%20Sequence%20and%20Temporal%20Dynamics.md)
