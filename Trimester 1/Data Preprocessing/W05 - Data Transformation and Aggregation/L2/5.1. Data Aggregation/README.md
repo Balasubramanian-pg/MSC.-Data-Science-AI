@@ -63,3 +63,5 @@
 ## [Step 1: Raw Data](./Step%201%20-%20Raw%20Data.md)
 
 ## [Step 2: Frequency Aggregation](./Step%202%20-%20Frequency%20Aggregation.md)
+
+## [Step 3: Bin Aggregation](./Step%203%20-%20Bin%20Aggregation.md)
