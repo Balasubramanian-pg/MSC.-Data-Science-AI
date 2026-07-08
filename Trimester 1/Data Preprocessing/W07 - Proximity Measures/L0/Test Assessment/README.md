@@ -35,3 +35,5 @@
 ## [Question 25](./Question%2025.md)
 
 ## [Question 26](./Question%2026.md)
+
+## [Question 27](./Question%2027.md)
