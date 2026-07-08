@@ -16,6 +16,6 @@ week: W02 - Handling Numeric Data
 
 #### [2.4.5. Factors Affecting Smoothing Efficacy](./2.4.05.%20Factors%20Affecting%20Smoothing%20Efficacy.md)
 
-## [2.4.6. Common Misinterpretations](./2.4.6.%20Common%20Misinterpretations.md)
+#### [2.4.6. Common Misinterpretations](./2.4.06.%20Common%20Misinterpretations.md)
 
 ## [2.4.7. Conclusions](./2.4.7.%20Conclusions.md)
