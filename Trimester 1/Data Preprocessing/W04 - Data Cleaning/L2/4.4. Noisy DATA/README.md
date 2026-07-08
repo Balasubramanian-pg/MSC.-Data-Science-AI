@@ -31,3 +31,5 @@
 ## [Understanding Noise in Data](./Understanding%20Noise%20in%20Data.md)
 
 ## [Causes of Noisy Data](./Causes%20of%20Noisy%20Data.md)
+
+## [Irrelevant and Redundant Data](./Irrelevant%20and%20Redundant%20Data.md)
