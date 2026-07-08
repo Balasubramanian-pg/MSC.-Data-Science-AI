@@ -31,3 +31,5 @@
 ## [Why Outliers Matter in Machine Learning](./Why%20Outliers%20Matter%20in%20Machine%20Learning.md)
 
 ## [Order of Handling: Noise Before Outliers](./Order%20of%20Handling%20-%20Noise%20Before%20Outliers.md)
+
+## [Key Takeaways](./Key%20Takeaways.md)
