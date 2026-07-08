@@ -28,3 +28,5 @@
 ## [3. Graphical Data: Networks and Topologies](./3.%20Graphical%20Data%20-%20Networks%20and%20Topologies.md)
 
 ## [1. Initialize a Directed Graph](./1.%20Initialize%20a%20Directed%20Graph.md)
+
+## [2. Add edges (hyperlinks) between webpages](./2.%20Add%20edges%20%28hyperlinks%29%20between%20webpages.md)
