@@ -41,3 +41,5 @@
 ## [Why Data Aggregation Matters](./Why%20Data%20Aggregation%20Matters.md)
 
 ## [Data Aggregation as Data Reduction](./Data%20Aggregation%20as%20Data%20Reduction.md)
+
+## [Aggregation and Change of Scale](./Aggregation%20and%20Change%20of%20Scale.md)
