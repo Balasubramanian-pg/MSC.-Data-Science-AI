@@ -31,3 +31,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Benefits of Data Transformation](./Benefits%20of%20Data%20Transformation.md)
 
 ## [Challenges in Data Transformation](./Challenges%20in%20Data%20Transformation.md)
+
+## [Information Loss Problem](./Information%20Loss%20Problem.md)
