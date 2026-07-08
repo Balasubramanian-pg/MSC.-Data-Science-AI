@@ -18,7 +18,7 @@ week: W08 - Automated Feature Engineering
 
 #### [8.5.6. Featurewiz for Automated Feature Selection](./8.5.06.%20Featurewiz%20for%20Automated%20Feature%20Selection.md)
 
-## [8.5.7. Statistical Foundations Behind Automated Feature Engineering](./8.5.7.%20Statistical%20Foundations%20Behind%20Automated%20Feature%20Engineering.md)
+#### [8.5.7. Statistical Foundations Behind Automated Feature Engineering](./8.5.07.%20Statistical%20Foundations%20Behind%20Automated%20Feature%20Engineering.md)
 
 ## [8.5.8. Strategic Trade-Offs of Automated Feature Engineering](./8.5.8.%20Strategic%20Trade-Offs%20of%20Automated%20Feature%20Engineering.md)
 
