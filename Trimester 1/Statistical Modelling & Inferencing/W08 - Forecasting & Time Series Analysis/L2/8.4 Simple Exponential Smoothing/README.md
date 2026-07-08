@@ -6,7 +6,7 @@
 
 #### [8.4.3. The Simple Exponential Smoothing Formula](./8.4.03.%20The%20Simple%20Exponential%20Smoothing%20Formula.md)
 
-## [8.4.4. Example of a Recursive Forecast Computation](./8.4.4.%20Example%20of%20a%20Recursive%20Forecast%20Computation.md)
+#### [8.4.4. Example of a Recursive Forecast Computation](./8.4.04.%20Example%20of%20a%20Recursive%20Forecast%20Computation.md)
 
 ## [8.4.5. The Error Correction Perspective](./8.4.5.%20The%20Error%20Correction%20Perspective.md)
 
