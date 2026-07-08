@@ -37,3 +37,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Decimal Scaling Normalization](./Decimal%20Scaling%20Normalization.md)
 
 ## [5.1 Core Idea](./5.1%20Core%20Idea.md)
+
+## [5.2 Formula](./5.2%20Formula.md)
