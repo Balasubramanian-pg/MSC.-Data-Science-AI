@@ -66,3 +66,5 @@
 ## [Cross-Field Validation](./Cross-Field%20Validation.md)
 
 ## [Visualization-Based Detection](./Visualization-Based%20Detection.md)
+
+## [Resolving Inconsistencies](./Resolving%20Inconsistencies.md)
