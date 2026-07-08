@@ -32,3 +32,5 @@
 ## [Using Isolation Forest (an unsupervised anomaly detection algorithm)](./Using%20Isolation%20Forest%20%28an%20unsupervised%20anomaly%20detection%20algorithm%29.md)
 
 ## [It isolates anomalies (frauds) based on feature space density.](./It%20isolates%20anomalies%20%28frauds%29%20based%20on%20feature%20space%20density.md)
+
+## [Map predictions: 1 (Inlier/Genuine), -1 (Outlier/Fraud)](./Map%20predictions%20-%201%20%28InlierGenuine%29%2C%20-1%20%28OutlierFraud%29.md)
