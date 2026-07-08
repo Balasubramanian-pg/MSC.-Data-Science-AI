@@ -16,7 +16,7 @@
 
 #### [3.2.8. Sample Size for a Population Proportion](./3.2.08.%20Sample%20Size%20for%20a%20Population%20Proportion.md)
 
-## [3.2.9. The Conservative Estimate Strategy](./3.2.9.%20The%20Conservative%20Estimate%20Strategy.md)
+#### [3.2.9. The Conservative Estimate Strategy](./3.2.09.%20The%20Conservative%20Estimate%20Strategy.md)
 
 ## [3.2.10. Example of Sample Size for a Proportion](./3.2.10.%20Example%20of%20Sample%20Size%20for%20a%20Proportion.md)
 
