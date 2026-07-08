@@ -12,3 +12,5 @@
 ## [2. Convert to Term-Document Matrix (Bag of Words)](./2.%20Convert%20to%20Term-Document%20Matrix%20%28Bag%20of%20Words%29.md)
 
 ## [3. Create a structured Pandas DataFrame](./3.%20Create%20a%20structured%20Pandas%20DataFrame.md)
+
+## [4. Measuring Similarity (Applying Math to the Matrix)](./4.%20Measuring%20Similarity%20%28Applying%20Math%20to%20the%20Matrix%29.md)
