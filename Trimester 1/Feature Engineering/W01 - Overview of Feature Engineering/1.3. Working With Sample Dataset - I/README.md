@@ -20,6 +20,6 @@ week: W01 - Overview of Feature Engineering
 
 #### [1.3.7. Factors Affecting Feature Selection](./1.3.07.%20Factors%20Affecting%20Feature%20Selection.md)
 
-## [1.3.8. Common Misinterpretations](./1.3.8.%20Common%20Misinterpretations.md)
+#### [1.3.8. Common Misinterpretations](./1.3.08.%20Common%20Misinterpretations.md)
 
 ## [1.3.9. Conclusions](./1.3.9.%20Conclusions.md)
