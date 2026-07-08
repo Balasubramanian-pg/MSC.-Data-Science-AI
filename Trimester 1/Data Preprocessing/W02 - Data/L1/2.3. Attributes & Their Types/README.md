@@ -16,3 +16,5 @@
 ## [6. Python Implementation: The Attribute Processing Pipeline](./6.%20Python%20Implementation%20-%20The%20Attribute%20Processing%20Pipeline.md)
 
 ## [1. Constructing a heterogeneous dataset representing various attribute types](./1.%20Constructing%20a%20heterogeneous%20dataset%20representing%20various%20attribute%20types.md)
+
+## [2. Processing Nominal Attributes (One-Hot Encoding)](./2.%20Processing%20Nominal%20Attributes%20%28One-Hot%20Encoding%29.md)
