@@ -19,3 +19,5 @@
 ## [7.1.9. Simple Random Sampling With Replacement (SRSWR)](./7.1.9.%20Simple%20Random%20Sampling%20With%20Replacement%20%28SRSWR%29.md)
 
 ## [7.1.10. Comparing With vs Without Replacement](./7.1.10.%20Comparing%20With%20vs%20Without%20Replacement.md)
+
+## [7.1.11. Stratified Sampling](./7.1.11.%20Stratified%20Sampling.md)
