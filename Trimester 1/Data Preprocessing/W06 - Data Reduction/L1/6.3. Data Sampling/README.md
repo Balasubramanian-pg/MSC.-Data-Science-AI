@@ -7,3 +7,5 @@
 ## [7.1.3. Representative Samples](./7.1.3.%20Representative%20Samples.md)
 
 ## [7.1.4. Sampling in Data Reduction](./7.1.4.%20Sampling%20in%20Data%20Reduction.md)
+
+## [7.1.5. Practical Considerations in Sampling](./7.1.5.%20Practical%20Considerations%20in%20Sampling.md)
