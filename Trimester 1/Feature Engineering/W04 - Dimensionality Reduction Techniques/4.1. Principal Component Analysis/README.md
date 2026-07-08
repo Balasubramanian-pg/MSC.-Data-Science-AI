@@ -8,7 +8,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.1.1. Introduction to Dimensionality Reduction](./4.1.01.%20Introduction%20to%20Dimensionality%20Reduction.md)
 
-## [4.1.2. The Theoretical Framework of PCA](./4.1.2.%20The%20Theoretical%20Framework%20of%20PCA.md)
+#### [4.1.2. The Theoretical Framework of PCA](./4.1.02.%20The%20Theoretical%20Framework%20of%20PCA.md)
 
 ## [4.1.3. The Covariance Matrix](./4.1.3.%20The%20Covariance%20Matrix.md)
 
