@@ -10,7 +10,7 @@ week: W07 - Feature Engineering Techniques for Time-Series Data
 
 #### [7.3.2. Why Raw Voltage Data Is Fundamentally Incomplete](./7.3.02.%20Why%20Raw%20Voltage%20Data%20Is%20Fundamentally%20Incomplete.md)
 
-## [7.3.3. The Core Metric: RR Intervals and Heart Rate Variability](./7.3.3.%20The%20Core%20Metric%20-%20RR%20Intervals%20and%20Heart%20Rate%20Variability.md)
+#### [7.3.3. The Core Metric: RR Intervals and Heart Rate Variability](./7.3.03.%20The%20Core%20Metric%20-%20RR%20Intervals%20and%20Heart%20Rate%20Variability.md)
 
 ## [7.3.4. Temporal and Statistical Features](./7.3.4.%20Temporal%20and%20Statistical%20Features.md)
 
