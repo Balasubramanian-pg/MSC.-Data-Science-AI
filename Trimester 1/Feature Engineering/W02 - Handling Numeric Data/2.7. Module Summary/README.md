@@ -22,7 +22,7 @@ week: W02 - Handling Numeric Data
 
 #### [2.7.8. Step-by-Step Pipeline Execution Example](./2.7.08.%20Step-by-Step%20Pipeline%20Execution%20Example.md)
 
-## [2.7.9. Factors Affecting the Preprocessing Pipeline](./2.7.9.%20Factors%20Affecting%20the%20Preprocessing%20Pipeline.md)
+#### [2.7.9. Factors Affecting the Preprocessing Pipeline](./2.7.09.%20Factors%20Affecting%20the%20Preprocessing%20Pipeline.md)
 
 ## [2.7.10. Common Misinterpretations in Numeric Engineering](./2.7.10.%20Common%20Misinterpretations%20in%20Numeric%20Engineering.md)
 
