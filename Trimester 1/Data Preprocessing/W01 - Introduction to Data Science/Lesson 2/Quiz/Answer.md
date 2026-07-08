@@ -1,12 +1,24 @@
 # Answer
 
-✅ **An interdisciplinary field that uses algorithms, scientific methods, and systems to extract knowledge and insights from structured and unstructured data.**
+✅ **False**
 
 > [!NOTE]
 > **Reason**
 >
-> Data Science is an **interdisciplinary field** that combines methods from statistics, computer science, mathematics, and domain expertise to extract meaningful insights from both structured and unstructured data.
+> The **KDD process** is a multi-step process that typically includes:
+>
+> 1. Data Selection
+> 2. Data Cleaning and Preprocessing
+> 3. Data Transformation
+> 4. Data Mining
+> 5. Pattern Evaluation
+> 6. Knowledge Presentation
+>
+> Data mining is only one step within the broader KDD process.
 
-# Question 3
 
-The Knowledge Discovery in Databases (KDD) process is a single-step task focused only on applying a machine learning algorithm.
+<img width="647" height="594" alt="image" src="https://github.com/user-attachments/assets/cc3a75fe-f261-451a-bf27-70d52c1976f2" />
+
+# Question 4
+
+Data Science is an interdisciplinary field that combines several core areas. Select all that apply.
