@@ -23,3 +23,5 @@
 ## [Credit Card Fraud Detection](./Credit%20Card%20Fraud%20Detection.md)
 
 ## [Gmail Login Detection](./Gmail%20Login%20Detection.md)
+
+## [Noise vs Outliers](./Noise%20vs%20Outliers.md)
