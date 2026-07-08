@@ -18,7 +18,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.2.6. SVD vs PCA: The Centering Requirement](./4.2.06.%20SVD%20vs%20PCA%20-%20The%20Centering%20Requirement.md)
 
-## [4.2.7. Factors Affecting Truncation](./4.2.7.%20Factors%20Affecting%20Truncation.md)
+#### [4.2.7. Factors Affecting Truncation](./4.2.07.%20Factors%20Affecting%20Truncation.md)
 
 ## [4.2.8. Application Strategies](./4.2.8.%20Application%20Strategies.md)
 
