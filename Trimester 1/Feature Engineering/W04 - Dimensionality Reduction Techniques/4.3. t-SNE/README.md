@@ -10,7 +10,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.3.2. The Probabilistic Framework for Local Structure](./4.3.02.%20The%20Probabilistic%20Framework%20for%20Local%20Structure.md)
 
-## [4.3.3. High-Dimensional Similarity](./4.3.3.%20High-Dimensional%20Similarity.md)
+#### [4.3.3. High-Dimensional Similarity](./4.3.03.%20High-Dimensional%20Similarity.md)
 
 ## [4.3.4. The Crowding Problem and Student's t-Distribution](./4.3.4.%20The%20Crowding%20Problem%20and%20Student%27s%20t-Distribution.md)
 
