@@ -14,7 +14,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.3.4. The Crowding Problem and Student's t-Distribution](./4.3.04.%20The%20Crowding%20Problem%20and%20Student%27s%20t-Distribution.md)
 
-## [4.3.5. Optimization via Kullback-Leibler Divergence](./4.3.5.%20Optimization%20via%20Kullback-Leibler%20Divergence.md)
+#### [4.3.5. Optimization via Kullback-Leibler Divergence](./4.3.05.%20Optimization%20via%20Kullback-Leibler%20Divergence.md)
 
 ## [4.3.6. Example of a t-SNE Optimization Workflow](./4.3.6.%20Example%20of%20a%20t-SNE%20Optimization%20Workflow.md)
 
