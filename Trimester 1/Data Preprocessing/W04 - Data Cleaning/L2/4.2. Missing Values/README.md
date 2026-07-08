@@ -27,3 +27,5 @@ week: W04 - Data Cleaning
 ## [Understanding Missing Values](./Understanding%20Missing%20Values.md)
 
 ## [Missing Values and Machine Learning Failure](./Missing%20Values%20and%20Machine%20Learning%20Failure.md)
+
+## [Euclidean Distance and Missing Data](./Euclidean%20Distance%20and%20Missing%20Data.md)
