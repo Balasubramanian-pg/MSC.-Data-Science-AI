@@ -6,7 +6,7 @@
 
 #### [1.1.3. Discrete vs. Continuous Random Variables](./1.1.03.%20Discrete%20vs.%20Continuous%20Random%20Variables.md)
 
-## [1.1.4. The Probability Mass Function](./1.1.4.%20The%20Probability%20Mass%20Function.md)
+#### [1.1.4. The Probability Mass Function](./1.1.04.%20The%20Probability%20Mass%20Function.md)
 
 ## [1.1.5. Example of a Probability Mass Function](./1.1.5.%20Example%20of%20a%20Probability%20Mass%20Function.md)
 
