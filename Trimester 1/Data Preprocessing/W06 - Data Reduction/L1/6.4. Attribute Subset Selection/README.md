@@ -8,7 +8,7 @@
 
 #### [6.4.4. Relevant vs Irrelevant Features](./6.4.04.%20Relevant%20vs%20Irrelevant%20Features.md)
 
-## [6.4.5. Redundant Features](./6.4.5.%20Redundant%20Features.md)
+#### [6.4.5. Redundant Features](./6.4.05.%20Redundant%20Features.md)
 
 ## [6.4.6. Why Feature Selection Matters](./6.4.6.%20Why%20Feature%20Selection%20Matters.md)
 
