@@ -16,6 +16,6 @@
 
 #### [12.1.8. The Central Limit Theorem](./12.1.08.%20The%20Central%20Limit%20Theorem.md)
 
-## [12.1.9. Common Misinterpretations](./12.1.9.%20Common%20Misinterpretations.md)
+#### [12.1.9. Common Misinterpretations](./12.1.09.%20Common%20Misinterpretations.md)
 
 ## [12.1.10. Conclusions](./12.1.10.%20Conclusions.md)
