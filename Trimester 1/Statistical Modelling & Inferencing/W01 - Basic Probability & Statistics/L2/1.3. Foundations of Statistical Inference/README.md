@@ -8,7 +8,7 @@
 
 #### [1.3.4. The Central Limit Theorem](./1.3.04.%20The%20Central%20Limit%20Theorem.md)
 
-## [1.3.5. Interval Estimation](./1.3.5.%20Interval%20Estimation.md)
+#### [1.3.5. Interval Estimation](./1.3.05.%20Interval%20Estimation.md)
 
 ## [1.3.6. Confidence Interval Structure](./1.3.6.%20Confidence%20Interval%20Structure.md)
 
