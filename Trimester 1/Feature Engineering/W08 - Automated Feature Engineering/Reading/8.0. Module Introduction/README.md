@@ -14,7 +14,7 @@ week: W08 - Automated Feature Engineering
 
 #### [8.0.4. The Three Pillars of Automated Feature Engineering](./8.0.04.%20The%20Three%20Pillars%20of%20Automated%20Feature%20Engineering.md)
 
-## [8.0.5. Deep Feature Synthesis (DFS)](./8.0.5.%20Deep%20Feature%20Synthesis%20%28DFS%29.md)
+#### [8.0.5. Deep Feature Synthesis (DFS)](./8.0.05.%20Deep%20Feature%20Synthesis%20%28DFS%29.md)
 
 ## [8.0.6. TSFresh for Time-Series Feature Extraction](./8.0.6.%20TSFresh%20for%20Time-Series%20Feature%20Extraction.md)
 
