@@ -42,3 +42,5 @@
 ## [City Name Inconsistency](./City%20Name%20Inconsistency.md)
 
 ## [Unit Inconsistency](./Unit%20Inconsistency.md)
+
+## [Why Inconsistency Breaks Machine Learning](./Why%20Inconsistency%20Breaks%20Machine%20Learning.md)
