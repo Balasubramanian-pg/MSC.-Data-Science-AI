@@ -48,3 +48,5 @@
 ## [Causes of Data Inconsistency](./Causes%20of%20Data%20Inconsistency.md)
 
 ## [Types of Inconsistency](./Types%20of%20Inconsistency.md)
+
+## [6.1 Syntactic Inconsistency](./6.1%20Syntactic%20Inconsistency.md)
