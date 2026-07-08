@@ -1,20 +1,18 @@
 # Answer
 
-✅ **False**
+✅ **The number of items in a customer's shopping cart**
+✅ **The temperature in Celsius**
 
 > [!NOTE]
 > **Reason**
 >
-> Social networks are primarily concerned with the **relationships or connections** between entities. Such data is more appropriately represented as **graph data**, where:
+> **Quantitative data** represents measurable numeric quantities on which mathematical operations can be performed.
 >
-> * **Nodes** represent people.
-> * **Edges** represent friendships or connections.
->
-> Record data focuses on independent objects and their attributes, whereas graph data explicitly models relationships between objects.
+> * **Number of items in a shopping cart** → Quantitative (discrete numeric data)
+> * **Temperature in Celsius** → Quantitative (continuous numeric data)
+> * **Student grades ('A', 'B', 'C')** → Categorical ordinal data
+> * **Eye colour** → Categorical nominal data
 
+# Question 5
 
-<img width="563" height="610" alt="image" src="https://github.com/user-attachments/assets/2b37efb4-ec11-46e0-972e-7be51663e4a0" />
-
-# Question 4
-
-Which two of the following attributes are examples of quantitative (numeric) data? Select all that apply.
+Raw, unorganised facts and figures, such as a list of student names and final scores, are considered "knowledge."
