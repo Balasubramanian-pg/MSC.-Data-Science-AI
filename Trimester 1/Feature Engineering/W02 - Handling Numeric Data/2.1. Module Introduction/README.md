@@ -10,7 +10,7 @@ week: W02 - Handling Numeric Data
 
 #### [2.1.2. Why Raw Numeric Features Are Fundamentally Incomplete](./2.1.02.%20Why%20Raw%20Numeric%20Features%20Are%20Fundamentally%20Incomplete.md)
 
-## [2.1.3. The Geometry of Scale: Normalization and Standardization](./2.1.3.%20The%20Geometry%20of%20Scale%20-%20Normalization%20and%20Standardization.md)
+#### [2.1.3. The Geometry of Scale: Normalization and Standardization](./2.1.03.%20The%20Geometry%20of%20Scale%20-%20Normalization%20and%20Standardization.md)
 
 ## [2.1.4. Taming the Tails: Attribute Transformations](./2.1.4.%20Taming%20the%20Tails%20-%20Attribute%20Transformations.md)
 
