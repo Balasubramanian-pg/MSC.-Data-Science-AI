@@ -18,3 +18,5 @@
 ## [STEP 0: Raw Data + Question](./STEP%200%20-%20Raw%20Data%20%2B%20Question.md)
 
 ## [Question: Can we predict rain tomorrow based on today's weather?](./Question%20-%20Can%20we%20predict%20rain%20tomorrow%20based%20on%20today%27s%20weather.md)
+
+## [Injecting noise/missing data](./Injecting%20noisemissing%20data.md)
