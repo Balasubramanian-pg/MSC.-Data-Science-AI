@@ -25,3 +25,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Feature Selection and Attribute Subselection](./Feature%20Selection%20and%20Attribute%20Subselection.md)
 
 ## [Standardization and Uniformity](./Standardization%20and%20Uniformity.md)
+
+## [Data Integration Challenges](./Data%20Integration%20Challenges.md)
