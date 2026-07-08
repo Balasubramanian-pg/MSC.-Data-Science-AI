@@ -18,7 +18,7 @@ week: W08 - Automated Feature Engineering
 
 #### [8.0.6. TSFresh for Time-Series Feature Extraction](./8.0.06.%20TSFresh%20for%20Time-Series%20Feature%20Extraction.md)
 
-## [8.0.7. FeatureWiz for Automated Feature Selection](./8.0.7.%20FeatureWiz%20for%20Automated%20Feature%20Selection.md)
+#### [8.0.7. FeatureWiz for Automated Feature Selection](./8.0.07.%20FeatureWiz%20for%20Automated%20Feature%20Selection.md)
 
 ## [8.0.8. The Curse of Dimensionality](./8.0.8.%20The%20Curse%20of%20Dimensionality.md)
 
