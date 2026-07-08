@@ -1,19 +1,20 @@
 # Answer
 
-✅ **Attribute**
+✅ **False**
 
 > [!NOTE]
 > **Reason**
 >
-> An **attribute** is a property or characteristic describing an object. In tabular data, attributes are represented as columns.
+> Social networks are primarily concerned with the **relationships or connections** between entities. Such data is more appropriately represented as **graph data**, where:
 >
-> For example:
+> * **Nodes** represent people.
+> * **Edges** represent friendships or connections.
 >
-> * Object: Student
-> * Attributes: Name, Age, Major, GPA
->
-> Therefore, "Taxable Income" is an attribute.
+> Record data focuses on independent objects and their attributes, whereas graph data explicitly models relationships between objects.
 
-# Question 3
 
-A dataset representing a social network, where the primary focus is on the friendships (connections) between people (objects), is best represented as record data.
+<img width="563" height="610" alt="image" src="https://github.com/user-attachments/assets/2b37efb4-ec11-46e0-972e-7be51663e4a0" />
+
+# Question 4
+
+Which two of the following attributes are examples of quantitative (numeric) data? Select all that apply.
