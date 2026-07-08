@@ -14,3 +14,5 @@
 ## [5. Mathematical Abstraction: Predictive vs. Descriptive Systems](./5.%20Mathematical%20Abstraction%20-%20Predictive%20vs.%20Descriptive%20Systems.md)
 
 ## [6. Python Implementation: Resolving the "Starving for Knowledge" Paradox](./6.%20Python%20Implementation%20-%20Resolving%20the%20Starving%20for%20Knowledge%20Paradox.md)
+
+## [1. Simulate the Data Explosion (Drowning in Data)](./1.%20Simulate%20the%20Data%20Explosion%20%28Drowning%20in%20Data%29.md)
