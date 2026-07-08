@@ -30,3 +30,5 @@
 ## [3. Apply Apriori to find frequent itemsets (min_support = 0.6 means itemset must appear in 3/5 transactions)](./3.%20Apply%20Apriori%20to%20find%20frequent%20itemsets%20%28min_support%20%3D%200.6%20means%20itemset%20must%20appear%20in%2035%20transactions%29.md)
 
 ## [4. Generate Association Rules](./4.%20Generate%20Association%20Rules.md)
+
+## [Sort by Lift to find the most impactful business rules](./Sort%20by%20Lift%20to%20find%20the%20most%20impactful%20business%20rules.md)
