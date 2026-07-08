@@ -69,3 +69,5 @@
 ## [Lossy vs Lossless Transformation](./Lossy%20vs%20Lossless%20Transformation.md)
 
 ## [Lossless Transformation](./Lossless%20Transformation.md)
+
+## [Lossy Transformation](./Lossy%20Transformation.md)
