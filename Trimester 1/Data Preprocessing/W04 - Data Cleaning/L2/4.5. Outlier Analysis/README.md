@@ -57,3 +57,5 @@
 ## [Outliers and Statistical Distortion](./Outliers%20and%20Statistical%20Distortion.md)
 
 ## [Detecting Outliers](./Detecting%20Outliers.md)
+
+## [8.1 Distance-Based Detection](./8.1%20Distance-Based%20Detection.md)
