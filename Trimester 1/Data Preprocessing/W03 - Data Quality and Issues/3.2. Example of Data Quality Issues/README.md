@@ -21,3 +21,5 @@ A machine learning system trained on poor data will produce poor outcomes regard
 ## [Sources of Noise](./Sources%20of%20Noise.md)
 
 ## [Noise vs Outliers](./Noise%20vs%20Outliers.md)
+
+## [Inconsistent Data](./Inconsistent%20Data.md)
