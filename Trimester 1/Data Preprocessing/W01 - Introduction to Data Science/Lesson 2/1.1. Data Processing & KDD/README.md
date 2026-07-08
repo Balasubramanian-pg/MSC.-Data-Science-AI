@@ -40,3 +40,5 @@
 ## [STEP 4: Data Mining / Machine Learning](./STEP%204%20-%20Data%20Mining%20Machine%20Learning.md)
 
 ## [STEP 5: Pattern Evaluation](./STEP%205%20-%20Pattern%20Evaluation.md)
+
+## [Iterative loop check](./Iterative%20loop%20check.md)
