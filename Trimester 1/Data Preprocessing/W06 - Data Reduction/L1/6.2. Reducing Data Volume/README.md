@@ -5,3 +5,5 @@ This lecture focuses on **data volume reduction**, specifically through **data c
 ## [Core Idea of Data Compression](./Core%20Idea%20of%20Data%20Compression.md)
 
 ## [Two Main Types of Compression](./Two%20Main%20Types%20of%20Compression.md)
+
+## [1. Lossless Compression](./1.%20Lossless%20Compression.md)
