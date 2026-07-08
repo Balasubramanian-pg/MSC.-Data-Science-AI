@@ -10,7 +10,7 @@
 
 #### [8.3.5. LIME: Local Interpretable Model-Agnostic Explanations](./8.3.05.%20LIME%20-%20Local%20Interpretable%20Model-Agnostic%20Explanations.md)
 
-## [8.3.6. SHAP: SHapley Additive exPlanations](./8.3.6.%20SHAP%20-%20SHapley%20Additive%20exPlanations.md)
+#### [8.3.6. SHAP: SHapley Additive exPlanations](./8.3.06.%20SHAP%20-%20SHapley%20Additive%20exPlanations.md)
 
 ## [8.3.7. Comparing LIME and SHAP](./8.3.7.%20Comparing%20LIME%20and%20SHAP.md)
 
