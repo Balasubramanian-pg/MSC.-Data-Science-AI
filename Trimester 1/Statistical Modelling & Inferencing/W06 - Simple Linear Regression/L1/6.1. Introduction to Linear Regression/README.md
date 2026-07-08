@@ -10,7 +10,7 @@
 
 #### [6.1.5. The Population Regression Model](./6.1.05.%20The%20Population%20Regression%20Model.md)
 
-## [6.1.6. The Population Intercept](./6.1.6.%20The%20Population%20Intercept.md)
+#### [6.1.6. The Population Intercept](./6.1.06.%20The%20Population%20Intercept.md)
 
 ## [6.1.7. The Population Slope](./6.1.7.%20The%20Population%20Slope.md)
 
