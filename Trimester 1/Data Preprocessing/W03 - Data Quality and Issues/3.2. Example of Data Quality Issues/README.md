@@ -7,3 +7,5 @@ This idea is commonly summarized using the principle:
 > Garbage In → Garbage Out (GIGO)
 
 A machine learning system trained on poor data will produce poor outcomes regardless of how advanced the algorithm is.
+
+## [Understanding Data Quality](./Understanding%20Data%20Quality.md)
