@@ -10,7 +10,7 @@ week: W02 - Handling Numeric Data
 
 #### [2.5.2. The Geometry of Skewness](./2.5.02.%20The%20Geometry%20of%20Skewness.md)
 
-## [2.5.3. The Logarithmic Transformation](./2.5.3.%20The%20Logarithmic%20Transformation.md)
+#### [2.5.3. The Logarithmic Transformation](./2.5.03.%20The%20Logarithmic%20Transformation.md)
 
 ## [2.5.4. The Yeo-Johnson Power Transformation](./2.5.4.%20The%20Yeo-Johnson%20Power%20Transformation.md)
 
