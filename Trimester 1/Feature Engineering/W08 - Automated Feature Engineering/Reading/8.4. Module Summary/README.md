@@ -22,7 +22,7 @@ week: W08 - Automated Feature Engineering
 
 #### [8.4.8. Critical Trade-offs](./8.4.08.%20Critical%20Trade-offs.md)
 
-## [8.4.9. Feature Selection as a Statistical Problem](./8.4.9.%20Feature%20Selection%20as%20a%20Statistical%20Problem.md)
+#### [8.4.9. Feature Selection as a Statistical Problem](./8.4.09.%20Feature%20Selection%20as%20a%20Statistical%20Problem.md)
 
 ## [8.4.10. Summary: Tool Selection Guide](./8.4.10.%20Summary%20-%20Tool%20Selection%20Guide.md)
 
