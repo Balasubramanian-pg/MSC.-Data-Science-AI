@@ -4,7 +4,7 @@
 
 #### [3.0.2. Noise and Measurement Errors](./3.0.02.%20Noise%20and%20Measurement%20Errors.md)
 
-## [3.0.3. Outliers and Anomalies](./3.0.3.%20Outliers%20and%20Anomalies.md)
+#### [3.0.3. Outliers and Anomalies](./3.0.03.%20Outliers%20and%20Anomalies.md)
 
 ## [3.0.4. Missing Values](./3.0.4.%20Missing%20Values.md)
 
