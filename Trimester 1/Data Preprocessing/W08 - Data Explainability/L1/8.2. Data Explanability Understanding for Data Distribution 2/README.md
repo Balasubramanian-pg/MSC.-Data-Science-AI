@@ -8,7 +8,7 @@
 
 #### [8.2.4. Scatter Plots and Correlation Analysis](./8.2.04.%20Scatter%20Plots%20and%20Correlation%20Analysis.md)
 
-## [8.2.5. The Normal Distribution](./8.2.5.%20The%20Normal%20Distribution.md)
+#### [8.2.5. The Normal Distribution](./8.2.05.%20The%20Normal%20Distribution.md)
 
 ## [8.2.6. The Uniform Distribution](./8.2.6.%20The%20Uniform%20Distribution.md)
 
