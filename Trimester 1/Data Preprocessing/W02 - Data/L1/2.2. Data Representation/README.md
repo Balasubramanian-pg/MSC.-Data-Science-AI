@@ -22,3 +22,5 @@
 ## [Expected Output Interpretation:](./Expected%20Output%20Interpretation%20-.md)
 
 ## [Doc1 and Doc2 will have high similarity (~0.14+).](./Doc1%20and%20Doc2%20will%20have%20high%20similarity%20%28~0.14%2B%29.md)
+
+## [Doc1 and Doc3 will have 0.0 similarity (orthogonal vectors).](./Doc1%20and%20Doc3%20will%20have%200.0%20similarity%20%28orthogonal%20vectors%29.md)
