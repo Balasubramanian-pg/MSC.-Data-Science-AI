@@ -1,0 +1,3 @@
+# Min-Max Normalization
+
+
