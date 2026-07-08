@@ -18,7 +18,7 @@
 
 #### [5.1.8. Treatments](./5.1.08.%20Treatments.md)
 
-## [5.1.9. The Three Pillars of Experimental Design](./5.1.9.%20The%20Three%20Pillars%20of%20Experimental%20Design.md)
+#### [5.1.9. The Three Pillars of Experimental Design](./5.1.09.%20The%20Three%20Pillars%20of%20Experimental%20Design.md)
 
 ## [5.1.10. From Experimental Design to Statistical Analysis](./5.1.10.%20From%20Experimental%20Design%20to%20Statistical%20Analysis.md)
 
