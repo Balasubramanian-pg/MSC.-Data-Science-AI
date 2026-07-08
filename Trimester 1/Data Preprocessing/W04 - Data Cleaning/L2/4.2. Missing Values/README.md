@@ -13,3 +13,5 @@ week: W04 - Data Cleaning
 ## [Physical World to Digital Data Conversion](./Physical%20World%20to%20Digital%20Data%20Conversion.md)
 
 ## [Sources of Dirty Data](./Sources%20of%20Dirty%20Data.md)
+
+## [Types of Data Quality Problems](./Types%20of%20Data%20Quality%20Problems.md)
