@@ -41,3 +41,5 @@ A machine learning system trained on poor data will produce poor outcomes regard
 ## [Automated Validation Pipeline](./Automated%20Validation%20Pipeline.md)
 
 ## [Data Cleaning and Preprocessing](./Data%20Cleaning%20and%20Preprocessing.md)
+
+## [Key Takeaways](./Key%20Takeaways.md)
