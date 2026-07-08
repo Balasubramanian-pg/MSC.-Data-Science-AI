@@ -49,3 +49,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Impact of Outliers on Normalization](./Impact%20of%20Outliers%20on%20Normalization.md)
 
 ## [Min-Max Issue](./Min-Max%20Issue.md)
+
+## [Z-Score Advantage](./Z-Score%20Advantage.md)
