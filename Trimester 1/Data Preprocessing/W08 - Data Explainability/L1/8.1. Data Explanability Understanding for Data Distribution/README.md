@@ -7,3 +7,5 @@
 ## [8.1.3. Measures of Spread and Variability](./8.1.3.%20Measures%20of%20Spread%20and%20Variability.md)
 
 ## [8.1.4. Distribution Shape: Symmetry and Skewness](./8.1.4.%20Distribution%20Shape%20-%20Symmetry%20and%20Skewness.md)
+
+## [8.1.5. Example of Computing Distribution Metrics](./8.1.5.%20Example%20of%20Computing%20Distribution%20Metrics.md)
