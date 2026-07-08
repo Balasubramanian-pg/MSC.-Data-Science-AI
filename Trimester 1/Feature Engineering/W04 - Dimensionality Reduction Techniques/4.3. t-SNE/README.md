@@ -8,7 +8,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.3.1. The Limitation of Linear Projections](./4.3.01.%20The%20Limitation%20of%20Linear%20Projections.md)
 
-## [4.3.2. The Probabilistic Framework for Local Structure](./4.3.2.%20The%20Probabilistic%20Framework%20for%20Local%20Structure.md)
+#### [4.3.2. The Probabilistic Framework for Local Structure](./4.3.02.%20The%20Probabilistic%20Framework%20for%20Local%20Structure.md)
 
 ## [4.3.3. High-Dimensional Similarity](./4.3.3.%20High-Dimensional%20Similarity.md)
 
