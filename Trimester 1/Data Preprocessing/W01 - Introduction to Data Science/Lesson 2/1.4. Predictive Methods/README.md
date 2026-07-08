@@ -12,3 +12,5 @@
 ## [4. Classification: Predicting Finite States](./4.%20Classification%20-%20Predicting%20Finite%20States.md)
 
 ## [1. Simulate Historical Customer Data](./1.%20Simulate%20Historical%20Customer%20Data.md)
+
+## [Features: [Days_Since_Last_Ride, Total_Rides_Last_Month, App_Opens_Last_Week]](./Features%20-%20%5BDays_Since_Last_Ride%2C%20Total_Rides_Last_Month%2C%20App_Opens_Last_Week%5D.md)
