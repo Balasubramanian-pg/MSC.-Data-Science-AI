@@ -38,3 +38,5 @@
 ## [Examples of Inconsistent Data](./Examples%20of%20Inconsistent%20Data.md)
 
 ## [Date Format Inconsistency](./Date%20Format%20Inconsistency.md)
+
+## [City Name Inconsistency](./City%20Name%20Inconsistency.md)
