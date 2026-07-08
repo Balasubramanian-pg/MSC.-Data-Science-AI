@@ -20,7 +20,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.2.7. Factors Affecting Truncation](./4.2.07.%20Factors%20Affecting%20Truncation.md)
 
-## [4.2.8. Application Strategies](./4.2.8.%20Application%20Strategies.md)
+#### [4.2.8. Application Strategies](./4.2.08.%20Application%20Strategies.md)
 
 ## [4.2.9. The Most Common Misinterpretations](./4.2.9.%20The%20Most%20Common%20Misinterpretations.md)
 
