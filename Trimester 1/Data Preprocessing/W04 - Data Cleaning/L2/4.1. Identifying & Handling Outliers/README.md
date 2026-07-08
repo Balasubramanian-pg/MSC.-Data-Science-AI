@@ -47,3 +47,5 @@
 ## [Clustering](./Clustering.md)
 
 ## [Visual Detection Using Box Plots](./Visual%20Detection%20Using%20Box%20Plots.md)
+
+## [Statistical Detection Using Z-Score](./Statistical%20Detection%20Using%20Z-Score.md)
