@@ -32,3 +32,5 @@
 ## [Feature: Inflation index (normalized)](./Feature%20-%20Inflation%20index%20%28normalized%29.md)
 
 ## [True underlying function + Gaussian Noise](./True%20underlying%20function%20%2B%20Gaussian%20Noise.md)
+
+## [2. Train the Predictive Engine (Ridge Regression adds L2 Regularization)](./2.%20Train%20the%20Predictive%20Engine%20%28Ridge%20Regression%20adds%20L2%20Regularization%29.md)
