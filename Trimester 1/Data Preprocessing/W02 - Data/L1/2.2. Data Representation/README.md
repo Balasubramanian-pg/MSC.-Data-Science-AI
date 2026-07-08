@@ -14,3 +14,5 @@
 ## [3. Create a structured Pandas DataFrame](./3.%20Create%20a%20structured%20Pandas%20DataFrame.md)
 
 ## [4. Measuring Similarity (Applying Math to the Matrix)](./4.%20Measuring%20Similarity%20%28Applying%20Math%20to%20the%20Matrix%29.md)
+
+## [How similar is Doc1 to Doc2 vs Doc3?](./How%20similar%20is%20Doc1%20to%20Doc2%20vs%20Doc3.md)
