@@ -28,3 +28,5 @@
 ## [Human analysts cannot manually scan 10,050 rows to find the 50 frauds reliably.](./Human%20analysts%20cannot%20manually%20scan%2010%2C050%20rows%20to%20find%20the%2050%20frauds%20reliably.md)
 
 ## [2. Extracting Knowledge via Data Science (Machine Learning)](./2.%20Extracting%20Knowledge%20via%20Data%20Science%20%28Machine%20Learning%29.md)
+
+## [Using Isolation Forest (an unsupervised anomaly detection algorithm)](./Using%20Isolation%20Forest%20%28an%20unsupervised%20anomaly%20detection%20algorithm%29.md)
