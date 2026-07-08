@@ -12,4 +12,4 @@
 
 #### [8.1.6. Implications for Machine Learning and Statistical Inference](./8.1.06.%20Implications%20for%20Machine%20Learning%20and%20Statistical%20Inference.md)
 
-## [8.1.7. Conclusions](./8.1.7.%20Conclusions.md)
+#### [8.1.7. Conclusions](./8.1.07.%20Conclusions.md)
