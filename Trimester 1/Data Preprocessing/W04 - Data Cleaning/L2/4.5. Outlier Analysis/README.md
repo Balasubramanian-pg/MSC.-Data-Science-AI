@@ -39,3 +39,5 @@
 15. Key Takeaways
 
 ## [Introduction to Outlier Analysis](./Introduction%20to%20Outlier%20Analysis.md)
+
+## [Understanding Outliers](./Understanding%20Outliers.md)
