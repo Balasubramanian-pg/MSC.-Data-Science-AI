@@ -2,7 +2,7 @@
 
 #### [1.4.1. The Role of Assumptions in Statistical Inference](./1.4.01.%20The%20Role%20of%20Assumptions%20in%20Statistical%20Inference.md)
 
-## [1.4.2. Defining Parametric Methods](./1.4.2.%20Defining%20Parametric%20Methods.md)
+#### [1.4.2. Defining Parametric Methods](./1.4.02.%20Defining%20Parametric%20Methods.md)
 
 ## [1.4.3. The Tailored Suit Analogy](./1.4.3.%20The%20Tailored%20Suit%20Analogy.md)
 
