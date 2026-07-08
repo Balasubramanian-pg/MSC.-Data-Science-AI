@@ -12,4 +12,4 @@
 
 #### [3.0.6. Example of Diagnosing Data Quality Issues](./3.0.06.%20Example%20of%20Diagnosing%20Data%20Quality%20Issues.md)
 
-## [3.0.7. Conclusions](./3.0.7.%20Conclusions.md)
+#### [3.0.7. Conclusions](./3.0.07.%20Conclusions.md)
