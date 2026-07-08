@@ -16,6 +16,6 @@
 
 #### [1.4.8. How to Choose Between Methods](./1.4.08.%20How%20to%20Choose%20Between%20Methods.md)
 
-## [1.4.9. Common Misinterpretations](./1.4.9.%20Common%20Misinterpretations.md)
+#### [1.4.9. Common Misinterpretations](./1.4.09.%20Common%20Misinterpretations.md)
 
 ## [1.4.10. Conclusions](./1.4.10.%20Conclusions.md)
