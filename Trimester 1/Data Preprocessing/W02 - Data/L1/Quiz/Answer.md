@@ -1,14 +1,22 @@
 # Answer
 
-✅ **transaction data**
+✅ **An object is described by a collection of attributes.**
 
 > [!NOTE]
 > **Reason**
 >
-> **Transaction data** consists of records where each entry contains a set of items occurring together in a single event or transaction.
+> In data mining and machine learning, an **object** (or instance) represents an entity, while **attributes** (or features) describe the properties of that entity.
 >
-> A classic example is **market basket analysis**, where each shopping trip contains the collection of products purchased by a customer.
+> For example:
+>
+> * Object: Customer
+> * Attributes: Age, Income, Gender, Purchase Amount
+>
+> Thus, an object is characterized by a collection of attributes.
 
-# Question 9
 
-Which of the following best describes the relationship between an object and its attributes?
+<img width="575" height="219" alt="image" src="https://github.com/user-attachments/assets/0df8da0c-25c0-4269-b773-218f4219cbb9" />
+
+# Question 10
+
+What is the key difference between an interval attribute and a ratio attribute?
