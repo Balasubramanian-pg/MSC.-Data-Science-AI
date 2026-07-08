@@ -12,7 +12,7 @@
 
 #### [7.2.6. Matrix Representation of Regression](./7.2.06.%20Matrix%20Representation%20of%20Regression.md)
 
-## [7.2.7. The Compact Matrix Form and SSE](./7.2.7.%20The%20Compact%20Matrix%20Form%20and%20SSE.md)
+#### [7.2.7. The Compact Matrix Form and SSE](./7.2.07.%20The%20Compact%20Matrix%20Form%20and%20SSE.md)
 
 ## [7.2.8. Deriving the Closed-Form OLS Solution](./7.2.8.%20Deriving%20the%20Closed-Form%20OLS%20Solution.md)
 
