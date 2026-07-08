@@ -18,7 +18,7 @@ week: W08 - Automated Feature Engineering
 
 #### [8.4.6. FeatureWiz: Model-Driven Selection for Wide Data](./8.4.06.%20FeatureWiz%20-%20Model-Driven%20Selection%20for%20Wide%20Data.md)
 
-## [8.4.7. Technical Workflow Integration](./8.4.7.%20Technical%20Workflow%20Integration.md)
+#### [8.4.7. Technical Workflow Integration](./8.4.07.%20Technical%20Workflow%20Integration.md)
 
 ## [8.4.8. Critical Trade-offs](./8.4.8.%20Critical%20Trade-offs.md)
 
