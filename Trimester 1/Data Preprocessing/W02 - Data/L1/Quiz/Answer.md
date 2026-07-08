@@ -1,18 +1,18 @@
 # Answer
 
-✅ **The number of items in a customer's shopping cart**
-✅ **The temperature in Celsius**
+✅ **False**
 
 > [!NOTE]
 > **Reason**
 >
-> **Quantitative data** represents measurable numeric quantities on which mathematical operations can be performed.
+> Raw, unprocessed facts and figures are referred to as **data**, not knowledge.
 >
-> * **Number of items in a shopping cart** → Quantitative (discrete numeric data)
-> * **Temperature in Celsius** → Quantitative (continuous numeric data)
-> * **Student grades ('A', 'B', 'C')** → Categorical ordinal data
-> * **Eye colour** → Categorical nominal data
+> The hierarchy is typically:
+>
+> * **Data** → Raw facts and observations
+> * **Information** → Processed and organized data
+> * **Knowledge** → Insights, understanding, and actionable interpretation derived from information
 
-# Question 5
+# Question 6
 
-Raw, unorganised facts and figures, such as a list of student names and final scores, are considered "knowledge."
+An attribute such as customer satisfaction rated on a scale of {Very Dissatisfied, Dissatisfied, Neutral, Satisfied, Very Satisfied} is an example of what type of attribute?
