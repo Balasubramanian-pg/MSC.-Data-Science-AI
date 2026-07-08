@@ -30,3 +30,5 @@
 ## [1. Simulate Commodity Data (e.g., Gold Price driven by Inflation Rate and Supply)](./1.%20Simulate%20Commodity%20Data%20%28e.g.%2C%20Gold%20Price%20driven%20by%20Inflation%20Rate%20and%20Supply%29.md)
 
 ## [Feature: Inflation index (normalized)](./Feature%20-%20Inflation%20index%20%28normalized%29.md)
+
+## [True underlying function + Gaussian Noise](./True%20underlying%20function%20%2B%20Gaussian%20Noise.md)
