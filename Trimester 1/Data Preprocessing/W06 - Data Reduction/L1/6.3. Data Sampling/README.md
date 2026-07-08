@@ -14,7 +14,7 @@
 
 #### [7.1.7. Simple Random Sampling](./7.1.07.%20Simple%20Random%20Sampling.md)
 
-## [7.1.8. Simple Random Sampling Without Replacement (SRSWOR)](./7.1.8.%20Simple%20Random%20Sampling%20Without%20Replacement%20%28SRSWOR%29.md)
+#### [7.1.8. Simple Random Sampling Without Replacement (SRSWOR)](./7.1.08.%20Simple%20Random%20Sampling%20Without%20Replacement%20%28SRSWOR%29.md)
 
 ## [7.1.9. Simple Random Sampling With Replacement (SRSWR)](./7.1.9.%20Simple%20Random%20Sampling%20With%20Replacement%20%28SRSWR%29.md)
 
