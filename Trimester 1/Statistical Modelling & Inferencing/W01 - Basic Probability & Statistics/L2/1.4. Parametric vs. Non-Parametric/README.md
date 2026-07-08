@@ -8,7 +8,7 @@
 
 #### [1.4.4. Defining Non-Parametric Methods](./1.4.04.%20Defining%20Non-Parametric%20Methods.md)
 
-## [1.4.5. Parametric Statistical Modeling: A Linear Example](./1.4.5.%20Parametric%20Statistical%20Modeling%20-%20A%20Linear%20Example.md)
+#### [1.4.5. Parametric Statistical Modeling: A Linear Example](./1.4.05.%20Parametric%20Statistical%20Modeling%20-%20A%20Linear%20Example.md)
 
 ## [1.4.6. Example of a Parametric Model Calculation](./1.4.6.%20Example%20of%20a%20Parametric%20Model%20Calculation.md)
 
