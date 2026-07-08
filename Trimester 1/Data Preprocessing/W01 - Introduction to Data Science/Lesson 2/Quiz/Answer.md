@@ -1,12 +1,12 @@
 # Answer
 
-✅ **To drive decision-making based on data**
+✅ **An interdisciplinary field that uses algorithms, scientific methods, and systems to extract knowledge and insights from structured and unstructured data.**
 
 > [!NOTE]
 > **Reason**
 >
-> A fundamental goal of **Data Science** is to transform raw data into actionable insights that support and improve decision-making. Organizations use these insights to optimize processes, predict outcomes, and make evidence-based decisions.
+> Data Science is an **interdisciplinary field** that combines methods from statistics, computer science, mathematics, and domain expertise to extract meaningful insights from both structured and unstructured data.
 
-# Question 2
+# Question 3
 
-Which of the following best defines Data Science?
+The Knowledge Discovery in Databases (KDD) process is a single-step task focused only on applying a machine learning algorithm.
