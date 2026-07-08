@@ -8,3 +8,5 @@
 ## [2. Intuition and System Architecture](./2.%20Intuition%20and%20System%20Architecture.md)
 
 ## [3. Mathematical Formulation of the Pipeline](./3.%20Mathematical%20Formulation%20of%20the%20Pipeline.md)
+
+## [4. Differentiating the Triad: Selection, Preprocessing, Transformation](./4.%20Differentiating%20the%20Triad%20-%20Selection%2C%20Preprocessing%2C%20Transformation.md)
