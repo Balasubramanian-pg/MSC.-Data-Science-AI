@@ -10,7 +10,7 @@
 
 #### [1.4.5. Parametric Statistical Modeling: A Linear Example](./1.4.05.%20Parametric%20Statistical%20Modeling%20-%20A%20Linear%20Example.md)
 
-## [1.4.6. Example of a Parametric Model Calculation](./1.4.6.%20Example%20of%20a%20Parametric%20Model%20Calculation.md)
+#### [1.4.6. Example of a Parametric Model Calculation](./1.4.06.%20Example%20of%20a%20Parametric%20Model%20Calculation.md)
 
 ## [1.4.7. Comparing Statistical Power and Robustness](./1.4.7.%20Comparing%20Statistical%20Power%20and%20Robustness.md)
 
