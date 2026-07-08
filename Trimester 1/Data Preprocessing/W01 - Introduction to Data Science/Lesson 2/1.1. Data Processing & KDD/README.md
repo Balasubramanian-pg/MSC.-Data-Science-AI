@@ -14,3 +14,5 @@
 ## [5. Python Implementation: The End-to-End KDD Pipeline](./5.%20Python%20Implementation%20-%20The%20End-to-End%20KDD%20Pipeline.md)
 
 ## [---------------------------------------------------------](./---------------------------------------------------------.md)
+
+## [STEP 0: Raw Data + Question](./STEP%200%20-%20Raw%20Data%20%2B%20Question.md)
