@@ -12,7 +12,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.1.3. The Covariance Matrix](./4.1.03.%20The%20Covariance%20Matrix.md)
 
-## [4.1.4. Eigenvalues and Eigenvectors](./4.1.4.%20Eigenvalues%20and%20Eigenvectors.md)
+#### [4.1.4. Eigenvalues and Eigenvectors](./4.1.04.%20Eigenvalues%20and%20Eigenvectors.md)
 
 ## [4.1.5. Principal Components as Linear Combinations](./4.1.5.%20Principal%20Components%20as%20Linear%20Combinations.md)
 
