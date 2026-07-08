@@ -14,7 +14,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.0.4. Overfitting and Model Complexity](./4.0.04.%20Overfitting%20and%20Model%20Complexity.md)
 
-## [4.0.5. Mathematical Foundation of Dimensionality Reduction](./4.0.5.%20Mathematical%20Foundation%20of%20Dimensionality%20Reduction.md)
+#### [4.0.5. Mathematical Foundation of Dimensionality Reduction](./4.0.05.%20Mathematical%20Foundation%20of%20Dimensionality%20Reduction.md)
 
 ## [4.0.6. Core Dimensionality Reduction Techniques](./4.0.6.%20Core%20Dimensionality%20Reduction%20Techniques.md)
 
