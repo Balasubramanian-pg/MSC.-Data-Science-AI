@@ -12,4 +12,4 @@
 
 #### [2.5.6. Why Point Estimates Are Fundamentally Incomplete](./2.5.06.%20Why%20Point%20Estimates%20Are%20Fundamentally%20Incomplete.md)
 
-## [2.5.7. Conclusions](./2.5.7.%20Conclusions.md)
+#### [2.5.7. Conclusions](./2.5.07.%20Conclusions.md)
