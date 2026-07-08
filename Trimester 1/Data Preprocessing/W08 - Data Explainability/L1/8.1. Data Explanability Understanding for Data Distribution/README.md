@@ -11,3 +11,5 @@
 ## [8.1.5. Example of Computing Distribution Metrics](./8.1.5.%20Example%20of%20Computing%20Distribution%20Metrics.md)
 
 ## [8.1.6. Implications for Machine Learning and Statistical Inference](./8.1.6.%20Implications%20for%20Machine%20Learning%20and%20Statistical%20Inference.md)
+
+## [8.1.7. Conclusions](./8.1.7.%20Conclusions.md)
