@@ -4,7 +4,7 @@
 
 #### [12.1.2. Discrete vs. Continuous Random Variables](./12.1.02.%20Discrete%20vs.%20Continuous%20Random%20Variables.md)
 
-## [12.1.3. Modeling the Distribution of Probabilities](./12.1.3.%20Modeling%20the%20Distribution%20of%20Probabilities.md)
+#### [12.1.3. Modeling the Distribution of Probabilities](./12.1.03.%20Modeling%20the%20Distribution%20of%20Probabilities.md)
 
 ## [12.1.4. Expected Value: The Theoretical Mean](./12.1.4.%20Expected%20Value%20-%20The%20Theoretical%20Mean.md)
 
