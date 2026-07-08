@@ -1,0 +1,32 @@
+# Index
+
+1. Introduction to Data Inconsistency
+    
+2. Defining Data Inconsistency
+    
+3. Examples of Inconsistent Data
+    
+4. Why Inconsistency Breaks Machine Learning
+    
+5. Causes of Data Inconsistency
+    
+6. Types of Inconsistency  
+    6.1 Syntactic Inconsistency  
+    6.2 Semantic Inconsistency  
+    6.3 Structural Inconsistency
+    
+7. Impact of Inconsistent Data
+    
+8. Detecting Inconsistency
+    
+9. Rule-Based Validation Systems
+    
+10. Visualization-Based Detection
+    
+11. Resolving Inconsistencies
+    
+12. ETL and Data Harmonization
+    
+13. Aadhaar Example and Data Integration Failure
+    
+14. Key Takeaways
