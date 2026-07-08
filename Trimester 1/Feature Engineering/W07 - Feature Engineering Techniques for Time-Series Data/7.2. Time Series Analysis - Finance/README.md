@@ -14,7 +14,7 @@ week: W07 - Feature Engineering Techniques for Time-Series Data
 
 #### [7.2.4. Domain-Specific Indicators](./7.2.04.%20Domain-Specific%20Indicators.md)
 
-## [7.2.5. Example: Computing RSI and Bollinger Bands](./7.2.5.%20Example%20-%20Computing%20RSI%20and%20Bollinger%20Bands.md)
+#### [7.2.5. Example: Computing RSI and Bollinger Bands](./7.2.05.%20Example%20-%20Computing%20RSI%20and%20Bollinger%20Bands.md)
 
 ## [7.2.6. Critical Implementation Trade-offs](./7.2.6.%20Critical%20Implementation%20Trade-offs.md)
 
