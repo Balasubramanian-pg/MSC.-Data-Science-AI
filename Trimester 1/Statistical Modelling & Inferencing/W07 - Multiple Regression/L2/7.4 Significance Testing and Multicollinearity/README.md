@@ -12,7 +12,7 @@
 
 #### [7.4.6. The Threat of Multicollinearity](./7.4.06.%20The%20Threat%20of%20Multicollinearity.md)
 
-## [7.4.7. The Matrix Perspective of Multicollinearity](./7.4.7.%20The%20Matrix%20Perspective%20of%20Multicollinearity.md)
+#### [7.4.7. The Matrix Perspective of Multicollinearity](./7.4.07.%20The%20Matrix%20Perspective%20of%20Multicollinearity.md)
 
 ## [7.4.8. Consequences of Multicollinearity](./7.4.8.%20Consequences%20of%20Multicollinearity.md)
 
