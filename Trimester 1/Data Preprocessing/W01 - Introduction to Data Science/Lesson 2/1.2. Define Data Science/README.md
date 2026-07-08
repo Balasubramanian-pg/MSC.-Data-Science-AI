@@ -30,3 +30,5 @@
 ## [2. Extracting Knowledge via Data Science (Machine Learning)](./2.%20Extracting%20Knowledge%20via%20Data%20Science%20%28Machine%20Learning%29.md)
 
 ## [Using Isolation Forest (an unsupervised anomaly detection algorithm)](./Using%20Isolation%20Forest%20%28an%20unsupervised%20anomaly%20detection%20algorithm%29.md)
+
+## [It isolates anomalies (frauds) based on feature space density.](./It%20isolates%20anomalies%20%28frauds%29%20based%20on%20feature%20space%20density.md)
