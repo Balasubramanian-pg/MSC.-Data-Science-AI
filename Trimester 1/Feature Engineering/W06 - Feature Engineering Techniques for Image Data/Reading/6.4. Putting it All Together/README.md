@@ -12,7 +12,7 @@ week: W06 - Feature Engineering Techniques for Image Data
 
 #### [6.4.3. Enhanced Representation: Engineered Features](./6.4.03.%20Enhanced%20Representation%20-%20Engineered%20Features.md)
 
-## [6.4.4. The Logistic Regression Classifier](./6.4.4.%20The%20Logistic%20Regression%20Classifier.md)
+#### [6.4.4. The Logistic Regression Classifier](./6.4.04.%20The%20Logistic%20Regression%20Classifier.md)
 
 ## [6.4.5. Comparative Performance Analysis](./6.4.5.%20Comparative%20Performance%20Analysis.md)
 
