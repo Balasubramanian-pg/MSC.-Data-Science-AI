@@ -71,3 +71,5 @@
 ## [Handling Outliers](./Handling%20Outliers.md)
 
 ## [10.1 Direct Removal](./10.1%20Direct%20Removal.md)
+
+## [10.2 Transformation and Replacement](./10.2%20Transformation%20and%20Replacement.md)
