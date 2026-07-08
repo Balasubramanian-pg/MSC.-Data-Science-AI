@@ -22,7 +22,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.1.8. Critical Interpretation and Trade-offs](./4.1.08.%20Critical%20Interpretation%20and%20Trade-offs.md)
 
-## [4.1.9. Application Strategies](./4.1.9.%20Application%20Strategies.md)
+#### [4.1.9. Application Strategies](./4.1.09.%20Application%20Strategies.md)
 
 ## [4.1.10. Common Misinterpretations](./4.1.10.%20Common%20Misinterpretations.md)
 
