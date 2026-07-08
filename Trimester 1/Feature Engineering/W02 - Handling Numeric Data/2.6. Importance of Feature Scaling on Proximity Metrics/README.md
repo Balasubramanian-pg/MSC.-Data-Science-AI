@@ -16,7 +16,7 @@ week: W02 - Handling Numeric Data
 
 #### [2.6.5. Impact on Distance Calculations](./2.6.05.%20Impact%20on%20Distance%20Calculations.md)
 
-## [2.6.6. Factors Affecting Proximity Metrics](./2.6.6.%20Factors%20Affecting%20Proximity%20Metrics.md)
+#### [2.6.6. Factors Affecting Proximity Metrics](./2.6.06.%20Factors%20Affecting%20Proximity%20Metrics.md)
 
 ## [2.6.7. Algorithmic Implications](./2.6.7.%20Algorithmic%20Implications.md)
 
