@@ -24,3 +24,5 @@
 ## [3. Association Rule Mining](./3.%20Association%20Rule%20Mining.md)
 
 ## [1. Raw Transactional Data](./1.%20Raw%20Transactional%20Data.md)
+
+## [2. Transform data into a Boolean matrix (One-Hot Encoding format)](./2.%20Transform%20data%20into%20a%20Boolean%20matrix%20%28One-Hot%20Encoding%20format%29.md)
