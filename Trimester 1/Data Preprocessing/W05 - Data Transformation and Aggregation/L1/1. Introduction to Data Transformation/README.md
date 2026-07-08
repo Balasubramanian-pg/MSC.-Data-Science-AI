@@ -37,3 +37,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Computational Cost of Transformation](./Computational%20Cost%20of%20Transformation.md)
 
 ## [Bias and Overfitting Risks](./Bias%20and%20Overfitting%20Risks.md)
+
+## [Interpretability and Strategic Value](./Interpretability%20and%20Strategic%20Value.md)
