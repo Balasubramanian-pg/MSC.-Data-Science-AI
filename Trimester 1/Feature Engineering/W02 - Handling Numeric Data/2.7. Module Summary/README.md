@@ -10,7 +10,7 @@ week: W02 - Handling Numeric Data
 
 #### [2.7.2. The Core Toolkit for Numeric Transformation](./2.7.02.%20The%20Core%20Toolkit%20for%20Numeric%20Transformation.md)
 
-## [2.7.3. Deep Dive: Discretization and Binning](./2.7.3.%20Deep%20Dive%20-%20Discretization%20and%20Binning.md)
+#### [2.7.3. Deep Dive: Discretization and Binning](./2.7.03.%20Deep%20Dive%20-%20Discretization%20and%20Binning.md)
 
 ## [2.7.4. Deep Dive: Feature Scaling and Proximity](./2.7.4.%20Deep%20Dive%20-%20Feature%20Scaling%20and%20Proximity.md)
 
