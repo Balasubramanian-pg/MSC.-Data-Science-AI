@@ -1,6 +1,6 @@
 # Options
 
-* Object
-* Dataset
+* Record
 * Attribute
-* Database
+* Data Point
+* Object
