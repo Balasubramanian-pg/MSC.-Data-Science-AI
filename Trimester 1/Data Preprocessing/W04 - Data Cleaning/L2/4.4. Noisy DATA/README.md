@@ -37,3 +37,5 @@
 ## [Irrelevant Features](./Irrelevant%20Features.md)
 
 ## [Redundant Features](./Redundant%20Features.md)
+
+## [Poorly Formatted and Unstructured Data](./Poorly%20Formatted%20and%20Unstructured%20Data.md)
