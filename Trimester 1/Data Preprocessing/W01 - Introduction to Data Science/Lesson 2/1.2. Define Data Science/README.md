@@ -20,3 +20,5 @@
 ## [Generating 10,000 genuine transactions and 50 fraudulent ones](./Generating%2010%2C000%20genuine%20transactions%20and%2050%20fraudulent%20ones.md)
 
 ## [Genuine transactions: Typical amounts and typical frequencies](./Genuine%20transactions%20-%20Typical%20amounts%20and%20typical%20frequencies.md)
+
+## [Fraudulent transactions: Anomalously high amounts, unusual frequencies](./Fraudulent%20transactions%20-%20Anomalously%20high%20amounts%2C%20unusual%20frequencies.md)
