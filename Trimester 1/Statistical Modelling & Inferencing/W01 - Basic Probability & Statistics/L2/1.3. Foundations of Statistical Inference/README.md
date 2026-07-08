@@ -6,7 +6,7 @@
 
 #### [1.3.3. Point Estimation](./1.3.03.%20Point%20Estimation.md)
 
-## [1.3.4. The Central Limit Theorem](./1.3.4.%20The%20Central%20Limit%20Theorem.md)
+#### [1.3.4. The Central Limit Theorem](./1.3.04.%20The%20Central%20Limit%20Theorem.md)
 
 ## [1.3.5. Interval Estimation](./1.3.5.%20Interval%20Estimation.md)
 
