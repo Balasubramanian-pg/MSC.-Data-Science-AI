@@ -18,3 +18,5 @@
 ## [Ground truth generation: Higher days since last ride + lower engagement = higher churn probability](./Ground%20truth%20generation%20-%20Higher%20days%20since%20last%20ride%20%2B%20lower%20engagement%20%3D%20higher%20churn%20probability.md)
 
 ## [2. Train-Test Split](./2.%20Train-Test%20Split.md)
+
+## [3. Initialize and Train the Predictive Engine](./3.%20Initialize%20and%20Train%20the%20Predictive%20Engine.md)
