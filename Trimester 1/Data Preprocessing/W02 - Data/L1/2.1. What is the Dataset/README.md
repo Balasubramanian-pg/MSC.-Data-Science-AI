@@ -10,3 +10,5 @@
 ## [3. Mathematical Framework: The Design Matrix](./3.%20Mathematical%20Framework%20-%20The%20Design%20Matrix.md)
 
 ## [4. Visualizing the Dataset Architecture](./4.%20Visualizing%20the%20Dataset%20Architecture.md)
+
+## [5. Alternative Data Sources & Structures](./5.%20Alternative%20Data%20Sources%20%26%20Structures.md)
