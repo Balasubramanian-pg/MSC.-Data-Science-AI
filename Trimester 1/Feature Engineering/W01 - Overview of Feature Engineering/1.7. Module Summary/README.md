@@ -12,7 +12,7 @@ week: W01 - Overview of Feature Engineering
 
 #### [1.1.3. Empirical Demonstrations in Practice](./1.1.03.%20Empirical%20Demonstrations%20in%20Practice.md)
 
-## [1.1.4. The Challenges of High-Dimensional Data](./1.1.4.%20The%20Challenges%20of%20High-Dimensional%20Data.md)
+#### [1.1.4. The Challenges of High-Dimensional Data](./1.1.04.%20The%20Challenges%20of%20High-Dimensional%20Data.md)
 
 ## [1.1.5. Overview of Core Engineering Techniques](./1.1.5.%20Overview%20of%20Core%20Engineering%20Techniques.md)
 
