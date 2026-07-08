@@ -19,3 +19,5 @@
 ## [6.4.9. Computational Complexity of Exhaustive Search](./6.4.9.%20Computational%20Complexity%20of%20Exhaustive%20Search.md)
 
 ## [6.4.10. Greedy Strategies in Feature Selection](./6.4.10.%20Greedy%20Strategies%20in%20Feature%20Selection.md)
+
+## [6.4.11. Forward Selection](./6.4.11.%20Forward%20Selection.md)
