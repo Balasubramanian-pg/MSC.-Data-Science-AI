@@ -33,3 +33,5 @@ week: W05 - Data Transformation and Aggregation
 ## [4.4 Step-by-Step Example](./4.4%20Step-by-Step%20Example.md)
 
 ## [4.5 Robustness Against Outliers](./4.5%20Robustness%20Against%20Outliers.md)
+
+## [Decimal Scaling Normalization](./Decimal%20Scaling%20Normalization.md)
