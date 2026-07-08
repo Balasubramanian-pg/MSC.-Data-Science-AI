@@ -15,3 +15,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Weather Prediction Example](./Weather%20Prediction%20Example.md)
 
 ## [Why Different Feature Scales are Dangerous](./Why%20Different%20Feature%20Scales%20are%20Dangerous.md)
+
+## [Purpose of Data Normalization](./Purpose%20of%20Data%20Normalization.md)
