@@ -16,6 +16,6 @@ week: W01 - Overview of Feature Engineering
 
 #### [1.1.5. Step-by-Step Feature Construction Example](./1.1.05.%20Step-by-Step%20Feature%20Construction%20Example.md)
 
-## [1.1.6. Common Misinterpretations](./1.1.6.%20Common%20Misinterpretations.md)
+#### [1.1.6. Common Misinterpretations](./1.1.06.%20Common%20Misinterpretations.md)
 
 ## [1.1.7. Conclusions](./1.1.7.%20Conclusions.md)
