@@ -20,4 +20,4 @@ week: W01 - Overview of Feature Engineering
 
 #### [1.2.7. Common Misinterpretations](./1.2.07.%20Common%20Misinterpretations.md)
 
-## [1.2.8. Conclusions](./1.2.8.%20Conclusions.md)
+#### [1.2.8. Conclusions](./1.2.08.%20Conclusions.md)
