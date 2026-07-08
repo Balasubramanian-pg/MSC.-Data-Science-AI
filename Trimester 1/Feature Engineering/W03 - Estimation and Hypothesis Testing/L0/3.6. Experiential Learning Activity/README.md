@@ -6,7 +6,7 @@
 
 #### [3.6.3. Identifying Multicollinearity and Redundancy](./3.6.03.%20Identifying%20Multicollinearity%20and%20Redundancy.md)
 
-## [3.6.4. Filter Feature Selection Metrics](./3.6.4.%20Filter%20Feature%20Selection%20Metrics.md)
+#### [3.6.4. Filter Feature Selection Metrics](./3.6.04.%20Filter%20Feature%20Selection%20Metrics.md)
 
 ## [3.6.5. Wrapper and Embedded Selection Methods](./3.6.5.%20Wrapper%20and%20Embedded%20Selection%20Methods.md)
 
