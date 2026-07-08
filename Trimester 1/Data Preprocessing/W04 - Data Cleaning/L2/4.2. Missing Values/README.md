@@ -19,3 +19,5 @@ week: W04 - Data Cleaning
 ## [5.1 Incomplete Data](./5.1%20Incomplete%20Data.md)
 
 ## [5.2 Noisy Data](./5.2%20Noisy%20Data.md)
+
+## [5.3 Inconsistent Data](./5.3%20Inconsistent%20Data.md)
