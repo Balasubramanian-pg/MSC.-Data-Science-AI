@@ -16,7 +16,7 @@
 
 #### [1.3.8. Example of a Z-Interval Calculation](./1.3.08.%20Example%20of%20a%20Z-Interval%20Calculation.md)
 
-## [1.3.9. Example of a T-Interval Calculation](./1.3.9.%20Example%20of%20a%20T-Interval%20Calculation.md)
+#### [1.3.9. Example of a T-Interval Calculation](./1.3.09.%20Example%20of%20a%20T-Interval%20Calculation.md)
 
 ## [1.3.10. The Net Fishing Interpretation](./1.3.10.%20The%20Net%20Fishing%20Interpretation.md)
 
