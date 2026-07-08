@@ -45,3 +45,5 @@
 ## [Linear Regression](./Linear%20Regression.md)
 
 ## [Clustering](./Clustering.md)
+
+## [Visual Detection Using Box Plots](./Visual%20Detection%20Using%20Box%20Plots.md)
