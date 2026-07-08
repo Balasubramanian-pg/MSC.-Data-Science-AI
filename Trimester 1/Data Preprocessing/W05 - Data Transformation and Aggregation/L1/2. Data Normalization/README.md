@@ -17,3 +17,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Why Different Feature Scales are Dangerous](./Why%20Different%20Feature%20Scales%20are%20Dangerous.md)
 
 ## [Purpose of Data Normalization](./Purpose%20of%20Data%20Normalization.md)
+
+## [Equal Contribution of Features](./Equal%20Contribution%20of%20Features.md)
