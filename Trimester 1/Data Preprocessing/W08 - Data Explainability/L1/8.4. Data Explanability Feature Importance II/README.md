@@ -4,7 +4,7 @@
 
 #### [8.4.2. The Core Intuition of Global Explainability](./8.4.02.%20The%20Core%20Intuition%20of%20Global%20Explainability.md)
 
-## [8.4.3. Feature Selection and Importance](./8.4.3.%20Feature%20Selection%20and%20Importance.md)
+#### [8.4.3. Feature Selection and Importance](./8.4.03.%20Feature%20Selection%20and%20Importance.md)
 
 ## [8.4.4. The Computational Challenge of Feature Search](./8.4.4.%20The%20Computational%20Challenge%20of%20Feature%20Search.md)
 
