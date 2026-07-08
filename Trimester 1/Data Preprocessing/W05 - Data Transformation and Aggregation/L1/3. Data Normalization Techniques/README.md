@@ -13,3 +13,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Min-Max Normalization](./Min-Max%20Normalization.md)
 
 ## [3.1 Core Idea](./3.1%20Core%20Idea.md)
+
+## [3.2 Formula](./3.2%20Formula.md)
