@@ -8,7 +8,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.4.1. The Strategic Imperative of Dimensionality Reduction](./4.4.01.%20The%20Strategic%20Imperative%20of%20Dimensionality%20Reduction.md)
 
-## [4.4.2. Reviewing the Core Methodologies](./4.4.2.%20Reviewing%20the%20Core%20Methodologies.md)
+#### [4.4.2. Reviewing the Core Methodologies](./4.4.02.%20Reviewing%20the%20Core%20Methodologies.md)
 
 ## [4.4.3. Principal Component Analysis (PCA)](./4.4.3.%20Principal%20Component%20Analysis%20%28PCA%29.md)
 
