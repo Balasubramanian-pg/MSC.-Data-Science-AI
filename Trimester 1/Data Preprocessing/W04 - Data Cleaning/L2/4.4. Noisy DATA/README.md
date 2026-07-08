@@ -49,3 +49,5 @@
 ## [Smoothing by Bin Means](./Smoothing%20by%20Bin%20Means.md)
 
 ## [Smoothing by Bin Boundaries](./Smoothing%20by%20Bin%20Boundaries.md)
+
+## [Regression-Based Smoothing](./Regression-Based%20Smoothing.md)
