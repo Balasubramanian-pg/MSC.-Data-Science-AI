@@ -12,7 +12,7 @@ week: W06 - Feature Engineering Techniques for Image Data
 
 #### [6.3.3. The Four-Stage Computational Workflow](./6.3.03.%20The%20Four-Stage%20Computational%20Workflow.md)
 
-## [6.3.4. Parametric Sensitivity and Mathematical Trade-offs](./6.3.4.%20Parametric%20Sensitivity%20and%20Mathematical%20Trade-offs.md)
+#### [6.3.4. Parametric Sensitivity and Mathematical Trade-offs](./6.3.04.%20Parametric%20Sensitivity%20and%20Mathematical%20Trade-offs.md)
 
 ## [6.3.5. HOG in the Context of Machine Learning](./6.3.5.%20HOG%20in%20the%20Context%20of%20Machine%20Learning.md)
 
