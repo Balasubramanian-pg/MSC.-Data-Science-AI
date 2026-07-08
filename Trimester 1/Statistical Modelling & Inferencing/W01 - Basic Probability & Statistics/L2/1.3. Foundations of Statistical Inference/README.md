@@ -12,7 +12,7 @@
 
 #### [1.3.6. Confidence Interval Structure](./1.3.06.%20Confidence%20Interval%20Structure.md)
 
-## [1.3.7. Selection of Distribution](./1.3.7.%20Selection%20of%20Distribution.md)
+#### [1.3.7. Selection of Distribution](./1.3.07.%20Selection%20of%20Distribution.md)
 
 ## [1.3.8. Example of a Z-Interval Calculation](./1.3.8.%20Example%20of%20a%20Z-Interval%20Calculation.md)
 
