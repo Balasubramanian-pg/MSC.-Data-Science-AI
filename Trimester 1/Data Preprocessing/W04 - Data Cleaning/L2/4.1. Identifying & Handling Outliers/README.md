@@ -35,3 +35,5 @@
 ## [3.1 Error Outliers](./3.1%20Error%20Outliers.md)
 
 ## [3.2 Novelty and Interesting Event Outliers](./3.2%20Novelty%20and%20Interesting%20Event%20Outliers.md)
+
+## [Why Outliers Matter](./Why%20Outliers%20Matter.md)
