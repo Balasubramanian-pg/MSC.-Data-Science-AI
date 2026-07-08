@@ -14,7 +14,7 @@
 
 #### [6.2.6. The Least Squares Criterion](./6.2.06.%20The%20Least%20Squares%20Criterion.md)
 
-## [6.2.7. The Least Squares Slope Formula](./6.2.7.%20The%20Least%20Squares%20Slope%20Formula.md)
+#### [6.2.7. The Least Squares Slope Formula](./6.2.07.%20The%20Least%20Squares%20Slope%20Formula.md)
 
 ## [6.2.8. The Least Squares Intercept Formula](./6.2.8.%20The%20Least%20Squares%20Intercept%20Formula.md)
 
