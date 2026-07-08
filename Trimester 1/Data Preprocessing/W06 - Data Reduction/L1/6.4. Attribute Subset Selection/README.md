@@ -6,7 +6,7 @@
 
 #### [6.4.3. Understanding Attribute Subselection](./6.4.03.%20Understanding%20Attribute%20Subselection.md)
 
-## [6.4.4. Relevant vs Irrelevant Features](./6.4.4.%20Relevant%20vs%20Irrelevant%20Features.md)
+#### [6.4.4. Relevant vs Irrelevant Features](./6.4.04.%20Relevant%20vs%20Irrelevant%20Features.md)
 
 ## [6.4.5. Redundant Features](./6.4.5.%20Redundant%20Features.md)
 
