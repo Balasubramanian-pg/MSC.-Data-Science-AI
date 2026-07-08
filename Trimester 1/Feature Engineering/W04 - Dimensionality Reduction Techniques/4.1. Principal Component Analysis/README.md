@@ -16,7 +16,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.1.5. Principal Components as Linear Combinations](./4.1.05.%20Principal%20Components%20as%20Linear%20Combinations.md)
 
-## [4.1.6. Explained Variance Ratio](./4.1.6.%20Explained%20Variance%20Ratio.md)
+#### [4.1.6. Explained Variance Ratio](./4.1.06.%20Explained%20Variance%20Ratio.md)
 
 ## [4.1.7. Example of Principal Component Extraction](./4.1.7.%20Example%20of%20Principal%20Component%20Extraction.md)
 
