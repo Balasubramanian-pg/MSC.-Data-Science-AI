@@ -15,3 +15,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Raw Data vs Transformed Data](./Raw%20Data%20vs%20Transformed%20Data.md)
 
 ## [Role of Data Transformation in the KDD Pipeline](./Role%20of%20Data%20Transformation%20in%20the%20KDD%20Pipeline.md)
+
+## [Purpose of Data Transformation](./Purpose%20of%20Data%20Transformation.md)
