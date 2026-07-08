@@ -1,22 +1,13 @@
 # Answer
 
-✅ **An object is described by a collection of attributes.**
+✅ **Ratio attributes have a true zero point, while interval attributes do not.**
 
 > [!NOTE]
 > **Reason**
 >
-> In data mining and machine learning, an **object** (or instance) represents an entity, while **attributes** (or features) describe the properties of that entity.
+> Both **interval** and **ratio** attributes are quantitative and have meaningful differences between values. The crucial distinction is the presence of a **true (absolute) zero**.
 >
-> For example:
+> * **Interval attributes** have an arbitrary zero point. Example: **Temperature in Celsius**. A temperature of 0°C does not mean the absence of temperature.
+> * **Ratio attributes** have a true zero, indicating the complete absence of the measured quantity. Example: **Weight, Height, Age, Income**.
 >
-> * Object: Customer
-> * Attributes: Age, Income, Gender, Purchase Amount
->
-> Thus, an object is characterized by a collection of attributes.
-
-
-<img width="575" height="219" alt="image" src="https://github.com/user-attachments/assets/0df8da0c-25c0-4269-b773-218f4219cbb9" />
-
-# Question 10
-
-What is the key difference between an interval attribute and a ratio attribute?
+> Because ratio attributes have a true zero, statements such as "twice as much" are meaningful for ratio data but not for interval data.
