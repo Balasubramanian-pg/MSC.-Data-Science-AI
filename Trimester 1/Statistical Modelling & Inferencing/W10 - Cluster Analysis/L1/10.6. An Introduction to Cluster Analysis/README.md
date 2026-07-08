@@ -4,7 +4,7 @@
 
 #### [10.6.2. The Fundamental Objectives of Clustering](./10.6.02.%20The%20Fundamental%20Objectives%20of%20Clustering.md)
 
-## [10.6.3. Mathematical Representation of Similarity](./10.6.3.%20Mathematical%20Representation%20of%20Similarity.md)
+#### [10.6.3. Mathematical Representation of Similarity](./10.6.03.%20Mathematical%20Representation%20of%20Similarity.md)
 
 ## [10.6.4. The Euclidean Distance Metric](./10.6.4.%20The%20Euclidean%20Distance%20Metric.md)
 
