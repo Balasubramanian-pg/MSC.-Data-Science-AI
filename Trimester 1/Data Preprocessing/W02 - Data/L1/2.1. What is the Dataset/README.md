@@ -16,3 +16,5 @@
 ## [6. Python Implementation: Simulating and Dissecting a Dataset](./6.%20Python%20Implementation%20-%20Simulating%20and%20Dissecting%20a%20Dataset.md)
 
 ## [1. Simulating Raw Data Entry (Information gathering)](./1.%20Simulating%20Raw%20Data%20Entry%20%28Information%20gathering%29.md)
+
+## [2. Creating the Structured Dataset](./2.%20Creating%20the%20Structured%20Dataset.md)
