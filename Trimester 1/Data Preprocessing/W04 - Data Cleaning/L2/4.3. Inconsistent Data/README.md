@@ -68,3 +68,5 @@
 ## [Visualization-Based Detection](./Visualization-Based%20Detection.md)
 
 ## [Resolving Inconsistencies](./Resolving%20Inconsistencies.md)
+
+## [ETL and Data Harmonization](./ETL%20and%20Data%20Harmonization.md)
