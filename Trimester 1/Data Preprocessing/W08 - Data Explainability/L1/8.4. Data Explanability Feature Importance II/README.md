@@ -8,7 +8,7 @@
 
 #### [8.4.4. The Computational Challenge of Feature Search](./8.4.04.%20The%20Computational%20Challenge%20of%20Feature%20Search.md)
 
-## [8.4.5. Tree-Based Feature Importance](./8.4.5.%20Tree-Based%20Feature%20Importance.md)
+#### [8.4.5. Tree-Based Feature Importance](./8.4.05.%20Tree-Based%20Feature%20Importance.md)
 
 ## [8.4.6. SHAP Aggregation for Global Explanations](./8.4.6.%20SHAP%20Aggregation%20for%20Global%20Explanations.md)
 
