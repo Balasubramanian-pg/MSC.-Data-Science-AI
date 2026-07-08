@@ -4,7 +4,7 @@
 
 #### [6.2.1. The Problem of "Best Fit"](./6.2.01.%20The%20Problem%20of%20Best%20Fit.md)
 
-## [6.2.2. The Geometry of Regression and Residuals](./6.2.2.%20The%20Geometry%20of%20Regression%20and%20Residuals.md)
+#### [6.2.2. The Geometry of Regression and Residuals](./6.2.02.%20The%20Geometry%20of%20Regression%20and%20Residuals.md)
 
 ## [6.2.3. Interpreting Residuals](./6.2.3.%20Interpreting%20Residuals.md)
 
