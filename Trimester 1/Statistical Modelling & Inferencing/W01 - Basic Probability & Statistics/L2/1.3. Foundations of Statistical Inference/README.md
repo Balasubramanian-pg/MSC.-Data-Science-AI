@@ -1,6 +1,6 @@
 # 1.3. Foundations of Statistical Inference
 
-## [1.3.1. Introduction to Statistical Inference](./1.3.1.%20Introduction%20to%20Statistical%20Inference.md)
+#### [1.3.1. Introduction to Statistical Inference](./1.3.01.%20Introduction%20to%20Statistical%20Inference.md)
 
 ## [1.3.2. Sampling and Representation](./1.3.2.%20Sampling%20and%20Representation.md)
 
