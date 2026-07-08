@@ -25,3 +25,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Distance-Based Learning and Scale Dominance](./Distance-Based%20Learning%20and%20Scale%20Dominance.md)
 
 ## [Height–Weight–Income Example](./Height%E2%80%93Weight%E2%80%93Income%20Example.md)
+
+## [Euclidean Distance and Feature Bias](./Euclidean%20Distance%20and%20Feature%20Bias.md)
