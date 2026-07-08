@@ -37,3 +37,5 @@ week: W04 - Data Cleaning
 ## [10.2 Manual Filling](./10.2%20Manual%20Filling.md)
 
 ## [10.3 Global Constants](./10.3%20Global%20Constants.md)
+
+## [10.4 Local Constants](./10.4%20Local%20Constants.md)
