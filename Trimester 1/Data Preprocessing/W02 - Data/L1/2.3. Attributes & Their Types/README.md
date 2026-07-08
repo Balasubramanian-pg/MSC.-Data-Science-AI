@@ -36,3 +36,5 @@
 ## [6. Final Assembled ML-Ready Design Matrix](./6.%20Final%20Assembled%20ML-Ready%20Design%20Matrix.md)
 
 ## [7. Edge Cases and Computational Nuances](./7.%20Edge%20Cases%20and%20Computational%20Nuances.md)
+
+## [8. Final Takeaways & Interview Insights](./8.%20Final%20Takeaways%20%26%20Interview%20Insights.md)
