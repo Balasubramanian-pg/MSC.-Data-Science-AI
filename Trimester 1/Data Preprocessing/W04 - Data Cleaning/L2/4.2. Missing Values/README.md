@@ -35,3 +35,5 @@ week: W04 - Data Cleaning
 ## [10.1 Ignoring Tuples](./10.1%20Ignoring%20Tuples.md)
 
 ## [10.2 Manual Filling](./10.2%20Manual%20Filling.md)
+
+## [10.3 Global Constants](./10.3%20Global%20Constants.md)
