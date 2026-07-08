@@ -18,7 +18,7 @@ week: W07 - Feature Engineering Techniques for Time-Series Data
 
 #### [7.1.6. Rolling Statistics](./7.1.06.%20Rolling%20Statistics.md)
 
-## [7.1.7. Domain-Specific Feature Engineering](./7.1.7.%20Domain-Specific%20Feature%20Engineering.md)
+#### [7.1.7. Domain-Specific Feature Engineering](./7.1.07.%20Domain-Specific%20Feature%20Engineering.md)
 
 ## [7.1.8. Visualization and Model Integration](./7.1.8.%20Visualization%20and%20Model%20Integration.md)
 
