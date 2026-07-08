@@ -18,3 +18,5 @@
 ## [1. Simulating Raw Data Entry (Information gathering)](./1.%20Simulating%20Raw%20Data%20Entry%20%28Information%20gathering%29.md)
 
 ## [2. Creating the Structured Dataset](./2.%20Creating%20the%20Structured%20Dataset.md)
+
+## [3. Extracting a Data Object (Row Vector / Instance)](./3.%20Extracting%20a%20Data%20Object%20%28Row%20Vector%20Instance%29.md)
