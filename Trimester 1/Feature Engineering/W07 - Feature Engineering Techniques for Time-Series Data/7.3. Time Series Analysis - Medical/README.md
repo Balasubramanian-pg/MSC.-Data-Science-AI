@@ -18,7 +18,7 @@ week: W07 - Feature Engineering Techniques for Time-Series Data
 
 #### [7.3.6. Example: Computing RMSSD](./7.3.06.%20Example%20-%20Computing%20RMSSD.md)
 
-## [7.3.7. Real-World Application: Arrhythmia Detection](./7.3.7.%20Real-World%20Application%20-%20Arrhythmia%20Detection.md)
+#### [7.3.7. Real-World Application: Arrhythmia Detection](./7.3.07.%20Real-World%20Application%20-%20Arrhythmia%20Detection.md)
 
 ## [7.3.8. Critical Engineering Caveats](./7.3.8.%20Critical%20Engineering%20Caveats.md)
 
