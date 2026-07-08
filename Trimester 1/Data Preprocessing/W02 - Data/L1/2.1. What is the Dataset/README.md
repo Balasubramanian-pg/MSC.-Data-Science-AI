@@ -22,3 +22,5 @@
 ## [3. Extracting a Data Object (Row Vector / Instance)](./3.%20Extracting%20a%20Data%20Object%20%28Row%20Vector%20Instance%29.md)
 
 ## [We use .loc to extract the tuple representing TXN_003](./We%20use%20.loc%20to%20extract%20the%20tuple%20representing%20TXN_003.md)
+
+## [4. Extracting an Attribute (Column Vector / Dimension)](./4.%20Extracting%20an%20Attribute%20%28Column%20Vector%20Dimension%29.md)
