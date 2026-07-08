@@ -10,7 +10,7 @@
 
 #### [9.2.5. Key Components: Loadings, Communality, and Uniqueness](./9.2.05.%20Key%20Components%20-%20Loadings%2C%20Communality%2C%20and%20Uniqueness.md)
 
-## [9.2.6. Example of Computing Communality and Uniqueness](./9.2.6.%20Example%20of%20Computing%20Communality%20and%20Uniqueness.md)
+#### [9.2.6. Example of Computing Communality and Uniqueness](./9.2.06.%20Example%20of%20Computing%20Communality%20and%20Uniqueness.md)
 
 ## [9.2.7. Principal Component Analysis vs. Factor Analysis](./9.2.7.%20Principal%20Component%20Analysis%20vs.%20Factor%20Analysis.md)
 
