@@ -12,7 +12,7 @@
 
 #### [8.3.6. The Multiplicative Model](./8.3.06.%20The%20Multiplicative%20Model.md)
 
-## [8.3.7. Example of Multiplicative Component Extraction](./8.3.7.%20Example%20of%20Multiplicative%20Component%20Extraction.md)
+#### [8.3.7. Example of Multiplicative Component Extraction](./8.3.07.%20Example%20of%20Multiplicative%20Component%20Extraction.md)
 
 ## [8.3.8. The Log-Transformation Bridge](./8.3.8.%20The%20Log-Transformation%20Bridge.md)
 
