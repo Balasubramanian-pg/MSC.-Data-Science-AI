@@ -12,3 +12,5 @@
 ## [4. System Architecture: The Data Hierarchy](./4.%20System%20Architecture%20-%20The%20Data%20Hierarchy.md)
 
 ## [5. Machine Learning Connections: Feature Engineering](./5.%20Machine%20Learning%20Connections%20-%20Feature%20Engineering.md)
+
+## [6. Python Implementation: The Attribute Processing Pipeline](./6.%20Python%20Implementation%20-%20The%20Attribute%20Processing%20Pipeline.md)
