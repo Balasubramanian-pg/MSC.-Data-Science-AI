@@ -4,7 +4,7 @@
 
 #### [8.0.2. Defining the Time Series](./8.0.02.%20Defining%20the%20Time%20Series.md)
 
-## [8.0.3. Structural Decomposition of Time Series](./8.0.3.%20Structural%20Decomposition%20of%20Time%20Series.md)
+#### [8.0.3. Structural Decomposition of Time Series](./8.0.03.%20Structural%20Decomposition%20of%20Time%20Series.md)
 
 ## [8.0.4. Stationarity: The Prerequisite for Forecasting](./8.0.4.%20Stationarity%20-%20The%20Prerequisite%20for%20Forecasting.md)
 
