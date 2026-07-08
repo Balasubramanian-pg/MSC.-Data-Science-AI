@@ -7,3 +7,5 @@
 ## [Defining Data Quality](./Defining%20Data%20Quality.md)
 
 ## [Dimensions of Data Quality](./Dimensions%20of%20Data%20Quality.md)
+
+## [3.1 Accuracy](./3.1%20Accuracy.md)
