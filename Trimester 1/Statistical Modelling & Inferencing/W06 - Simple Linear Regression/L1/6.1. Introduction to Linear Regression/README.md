@@ -8,7 +8,7 @@
 
 #### [6.1.4. Components of the Regression Model](./6.1.04.%20Components%20of%20the%20Regression%20Model.md)
 
-## [6.1.5. The Population Regression Model](./6.1.5.%20The%20Population%20Regression%20Model.md)
+#### [6.1.5. The Population Regression Model](./6.1.05.%20The%20Population%20Regression%20Model.md)
 
 ## [6.1.6. The Population Intercept](./6.1.6.%20The%20Population%20Intercept.md)
 
