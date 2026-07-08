@@ -12,7 +12,7 @@ week: W06 - Feature Engineering Techniques for Image Data
 
 #### [6.1.3. The Canny Edge Detection Pipeline](./6.1.03.%20The%20Canny%20Edge%20Detection%20Pipeline.md)
 
-## [6.1.4. Example: Applying Canny Edge Detection](./6.1.4.%20Example%20-%20Applying%20Canny%20Edge%20Detection.md)
+#### [6.1.4. Example: Applying Canny Edge Detection](./6.1.04.%20Example%20-%20Applying%20Canny%20Edge%20Detection.md)
 
 ## [6.1.5. Practical Implementation Considerations](./6.1.5.%20Practical%20Implementation%20Considerations.md)
 
