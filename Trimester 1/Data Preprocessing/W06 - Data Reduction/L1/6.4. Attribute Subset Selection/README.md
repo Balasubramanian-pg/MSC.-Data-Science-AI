@@ -10,7 +10,7 @@
 
 #### [6.4.5. Redundant Features](./6.4.05.%20Redundant%20Features.md)
 
-## [6.4.6. Why Feature Selection Matters](./6.4.6.%20Why%20Feature%20Selection%20Matters.md)
+#### [6.4.6. Why Feature Selection Matters](./6.4.06.%20Why%20Feature%20Selection%20Matters.md)
 
 ## [6.4.7. Feature Selection as a Search Problem](./6.4.7.%20Feature%20Selection%20as%20a%20Search%20Problem.md)
 
