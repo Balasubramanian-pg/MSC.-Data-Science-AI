@@ -24,3 +24,5 @@
 ## [We use .loc to extract the tuple representing TXN_003](./We%20use%20.loc%20to%20extract%20the%20tuple%20representing%20TXN_003.md)
 
 ## [4. Extracting an Attribute (Column Vector / Dimension)](./4.%20Extracting%20an%20Attribute%20%28Column%20Vector%20Dimension%29.md)
+
+## [We extract the 'Amount_USD' dimension](./We%20extract%20the%20%27Amount_USD%27%20dimension.md)
