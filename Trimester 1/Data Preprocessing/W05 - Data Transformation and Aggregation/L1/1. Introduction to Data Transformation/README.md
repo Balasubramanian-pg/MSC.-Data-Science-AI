@@ -33,3 +33,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Challenges in Data Transformation](./Challenges%20in%20Data%20Transformation.md)
 
 ## [Information Loss Problem](./Information%20Loss%20Problem.md)
+
+## [Computational Cost of Transformation](./Computational%20Cost%20of%20Transformation.md)
