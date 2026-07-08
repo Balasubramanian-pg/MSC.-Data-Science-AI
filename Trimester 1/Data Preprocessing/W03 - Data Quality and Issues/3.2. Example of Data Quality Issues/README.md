@@ -35,3 +35,5 @@ A machine learning system trained on poor data will produce poor outcomes regard
 ## [Detecting Data Quality Issues](./Detecting%20Data%20Quality%20Issues.md)
 
 ## [Manual Detection](./Manual%20Detection.md)
+
+## [Automated Detection](./Automated%20Detection.md)
