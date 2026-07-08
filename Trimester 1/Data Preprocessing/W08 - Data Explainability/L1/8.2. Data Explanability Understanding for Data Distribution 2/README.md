@@ -6,7 +6,7 @@
 
 #### [8.2.3. Box Plots and the Five-Number Summary](./8.2.03.%20Box%20Plots%20and%20the%20Five-Number%20Summary.md)
 
-## [8.2.4. Scatter Plots and Correlation Analysis](./8.2.4.%20Scatter%20Plots%20and%20Correlation%20Analysis.md)
+#### [8.2.4. Scatter Plots and Correlation Analysis](./8.2.04.%20Scatter%20Plots%20and%20Correlation%20Analysis.md)
 
 ## [8.2.5. The Normal Distribution](./8.2.5.%20The%20Normal%20Distribution.md)
 
