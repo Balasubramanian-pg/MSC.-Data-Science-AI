@@ -2,7 +2,7 @@
 
 #### [9.4.1. The Mathematical Compressor vs. The Theoretical Explainer](./9.4.01.%20The%20Mathematical%20Compressor%20vs.%20The%20Theoretical%20Explainer.md)
 
-## [9.4.2. The Geometry of Principal Component Analysis](./9.4.2.%20The%20Geometry%20of%20Principal%20Component%20Analysis.md)
+#### [9.4.2. The Geometry of Principal Component Analysis](./9.4.02.%20The%20Geometry%20of%20Principal%20Component%20Analysis.md)
 
 ## [9.4.3. The Objective Function: Maximizing Total Variance](./9.4.3.%20The%20Objective%20Function%20-%20Maximizing%20Total%20Variance.md)
 
