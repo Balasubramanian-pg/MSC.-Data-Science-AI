@@ -28,3 +28,5 @@
 ## [5. Regression: Predicting the Infinite](./5.%20Regression%20-%20Predicting%20the%20Infinite.md)
 
 ## [1. Simulate Commodity Data (e.g., Gold Price driven by Inflation Rate and Supply)](./1.%20Simulate%20Commodity%20Data%20%28e.g.%2C%20Gold%20Price%20driven%20by%20Inflation%20Rate%20and%20Supply%29.md)
+
+## [Feature: Inflation index (normalized)](./Feature%20-%20Inflation%20index%20%28normalized%29.md)
