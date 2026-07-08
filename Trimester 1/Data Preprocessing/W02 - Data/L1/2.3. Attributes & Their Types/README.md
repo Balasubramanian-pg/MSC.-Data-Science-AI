@@ -24,3 +24,5 @@
 ## [3. Processing Ordinal Attributes (Ordinal Encoding)](./3.%20Processing%20Ordinal%20Attributes%20%28Ordinal%20Encoding%29.md)
 
 ## [We must explicitly define the hierarchy array for the algorithm](./We%20must%20explicitly%20define%20the%20hierarchy%20array%20for%20the%20algorithm.md)
+
+## [4. Processing Interval/Ratio Attributes (Standardization)](./4.%20Processing%20IntervalRatio%20Attributes%20%28Standardization%29.md)
