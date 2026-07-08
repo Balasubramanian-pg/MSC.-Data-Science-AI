@@ -12,7 +12,7 @@ week: W07 - Feature Engineering Techniques for Time-Series Data
 
 #### [7.2.3. Foundational Engineering Toolkit](./7.2.03.%20Foundational%20Engineering%20Toolkit.md)
 
-## [7.2.4. Domain-Specific Indicators](./7.2.4.%20Domain-Specific%20Indicators.md)
+#### [7.2.4. Domain-Specific Indicators](./7.2.04.%20Domain-Specific%20Indicators.md)
 
 ## [7.2.5. Example: Computing RSI and Bollinger Bands](./7.2.5.%20Example%20-%20Computing%20RSI%20and%20Bollinger%20Bands.md)
 
