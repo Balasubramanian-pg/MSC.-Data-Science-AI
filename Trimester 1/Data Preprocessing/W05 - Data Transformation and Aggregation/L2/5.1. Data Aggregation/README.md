@@ -65,3 +65,5 @@
 ## [Step 2: Frequency Aggregation](./Step%202%20-%20Frequency%20Aggregation.md)
 
 ## [Step 3: Bin Aggregation](./Step%203%20-%20Bin%20Aggregation.md)
+
+## [Lossy vs Lossless Transformation](./Lossy%20vs%20Lossless%20Transformation.md)
