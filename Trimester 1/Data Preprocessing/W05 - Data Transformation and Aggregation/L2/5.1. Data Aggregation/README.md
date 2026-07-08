@@ -71,3 +71,5 @@
 ## [Lossless Transformation](./Lossless%20Transformation.md)
 
 ## [Lossy Transformation](./Lossy%20Transformation.md)
+
+## [Summarization Techniques](./Summarization%20Techniques.md)
