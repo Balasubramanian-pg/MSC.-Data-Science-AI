@@ -36,3 +36,5 @@
 ## [Map predictions: 1 (Inlier/Genuine), -1 (Outlier/Fraud)](./Map%20predictions%20-%201%20%28InlierGenuine%29%2C%20-1%20%28OutlierFraud%29.md)
 
 ## [3. Visual Intuition of the Extracted Knowledge](./3.%20Visual%20Intuition%20of%20the%20Extracted%20Knowledge.md)
+
+## [Plot Genuine Transactions](./Plot%20Genuine%20Transactions.md)
