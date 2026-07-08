@@ -29,3 +29,5 @@
 ## [Introduction to Outlier Handling](./Introduction%20to%20Outlier%20Handling.md)
 
 ## [Defining Outliers](./Defining%20Outliers.md)
+
+## [Types of Outliers](./Types%20of%20Outliers.md)
