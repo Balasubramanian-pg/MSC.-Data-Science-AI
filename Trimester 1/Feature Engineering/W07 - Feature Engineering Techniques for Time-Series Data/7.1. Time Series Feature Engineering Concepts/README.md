@@ -22,7 +22,7 @@ week: W07 - Feature Engineering Techniques for Time-Series Data
 
 #### [7.1.8. Visualization and Model Integration](./7.1.08.%20Visualization%20and%20Model%20Integration.md)
 
-## [7.1.9. Common Misinterpretations](./7.1.9.%20Common%20Misinterpretations.md)
+#### [7.1.9. Common Misinterpretations](./7.1.09.%20Common%20Misinterpretations.md)
 
 ## [7.1.10. Factors Affecting Feature Quality](./7.1.10.%20Factors%20Affecting%20Feature%20Quality.md)
 
