@@ -8,7 +8,7 @@ week: W08 - Automated Feature Engineering
 
 #### [8.4.1. From Manual Features to Automated Engineering](./8.4.01.%20From%20Manual%20Features%20to%20Automated%20Engineering.md)
 
-## [8.4.2. Why Manual Feature Engineering Is Fundamentally Incomplete](./8.4.2.%20Why%20Manual%20Feature%20Engineering%20Is%20Fundamentally%20Incomplete.md)
+#### [8.4.2. Why Manual Feature Engineering Is Fundamentally Incomplete](./8.4.02.%20Why%20Manual%20Feature%20Engineering%20Is%20Fundamentally%20Incomplete.md)
 
 ## [8.4.3. The Feature Engineering Pipeline](./8.4.3.%20The%20Feature%20Engineering%20Pipeline.md)
 
