@@ -24,3 +24,5 @@
 ## [Fraudulent transactions: Anomalously high amounts, unusual frequencies](./Fraudulent%20transactions%20-%20Anomalously%20high%20amounts%2C%20unusual%20frequencies.md)
 
 ## [Combine into a single structured dataset](./Combine%20into%20a%20single%20structured%20dataset.md)
+
+## [Human analysts cannot manually scan 10,050 rows to find the 50 frauds reliably.](./Human%20analysts%20cannot%20manually%20scan%2010%2C050%20rows%20to%20find%20the%2050%20frauds%20reliably.md)
