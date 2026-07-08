@@ -14,7 +14,7 @@ week: W07 - Feature Engineering Techniques for Time-Series Data
 
 #### [7.3.4. Temporal and Statistical Features](./7.3.04.%20Temporal%20and%20Statistical%20Features.md)
 
-## [7.3.5. Domain-Specific HRV Metrics](./7.3.5.%20Domain-Specific%20HRV%20Metrics.md)
+#### [7.3.5. Domain-Specific HRV Metrics](./7.3.05.%20Domain-Specific%20HRV%20Metrics.md)
 
 ## [7.3.6. Example: Computing RMSSD](./7.3.6.%20Example%20-%20Computing%20RMSSD.md)
 
