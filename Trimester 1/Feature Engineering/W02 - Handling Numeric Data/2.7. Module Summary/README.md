@@ -18,7 +18,7 @@ week: W02 - Handling Numeric Data
 
 #### [2.7.6. Deep Dive: Smoothing and Noise Reduction](./2.7.06.%20Deep%20Dive%20-%20Smoothing%20and%20Noise%20Reduction.md)
 
-## [2.7.7. The Geometry of Scale and Proximity Metrics](./2.7.7.%20The%20Geometry%20of%20Scale%20and%20Proximity%20Metrics.md)
+#### [2.7.7. The Geometry of Scale and Proximity Metrics](./2.7.07.%20The%20Geometry%20of%20Scale%20and%20Proximity%20Metrics.md)
 
 ## [2.7.8. Step-by-Step Pipeline Execution Example](./2.7.8.%20Step-by-Step%20Pipeline%20Execution%20Example.md)
 
