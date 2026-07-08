@@ -44,3 +44,5 @@ Large datasets create practical problems:
     
 
 The lecture emphasizes that many machine learning algorithms degrade badly as dimensionality increases, especially distance-based algorithms such as those using Euclidean distance. This is known as the:
+
+## [Curse of Dimensionality](./Curse%20of%20Dimensionality.md)
