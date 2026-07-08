@@ -45,3 +45,5 @@ week: W05 - Data Transformation and Aggregation
 ## [5.4 Relationship Preservation Discussion](./5.4%20Relationship%20Preservation%20Discussion.md)
 
 ## [Comparing the Three Methods](./Comparing%20the%20Three%20Methods.md)
+
+## [Impact of Outliers on Normalization](./Impact%20of%20Outliers%20on%20Normalization.md)
