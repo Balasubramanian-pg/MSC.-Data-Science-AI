@@ -69,3 +69,5 @@
 ## [DBSCAN and Density-Based Clustering](./DBSCAN%20and%20Density-Based%20Clustering.md)
 
 ## [Handling Outliers](./Handling%20Outliers.md)
+
+## [10.1 Direct Removal](./10.1%20Direct%20Removal.md)
