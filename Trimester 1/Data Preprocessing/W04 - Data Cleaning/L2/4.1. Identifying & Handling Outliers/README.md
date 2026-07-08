@@ -37,3 +37,5 @@
 ## [3.2 Novelty and Interesting Event Outliers](./3.2%20Novelty%20and%20Interesting%20Event%20Outliers.md)
 
 ## [Why Outliers Matter](./Why%20Outliers%20Matter.md)
+
+## [Influence of Outliers on Statistics](./Influence%20of%20Outliers%20on%20Statistics.md)
