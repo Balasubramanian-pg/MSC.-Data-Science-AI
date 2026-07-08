@@ -6,7 +6,7 @@
 
 #### [12.1.3. Modeling the Distribution of Probabilities](./12.1.03.%20Modeling%20the%20Distribution%20of%20Probabilities.md)
 
-## [12.1.4. Expected Value: The Theoretical Mean](./12.1.4.%20Expected%20Value%20-%20The%20Theoretical%20Mean.md)
+#### [12.1.4. Expected Value: The Theoretical Mean](./12.1.04.%20Expected%20Value%20-%20The%20Theoretical%20Mean.md)
 
 ## [12.1.5. Variance: The Theoretical Spread](./12.1.5.%20Variance%20-%20The%20Theoretical%20Spread.md)
 
