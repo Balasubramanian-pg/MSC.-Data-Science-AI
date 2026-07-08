@@ -20,3 +20,5 @@
 ## [We use Cosine Similarity for sparse text vectors](./We%20use%20Cosine%20Similarity%20for%20sparse%20text%20vectors.md)
 
 ## [Expected Output Interpretation:](./Expected%20Output%20Interpretation%20-.md)
+
+## [Doc1 and Doc2 will have high similarity (~0.14+).](./Doc1%20and%20Doc2%20will%20have%20high%20similarity%20%28~0.14%2B%29.md)
