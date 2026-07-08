@@ -39,3 +39,5 @@
 ## [Understanding Aggregation](./Understanding%20Aggregation.md)
 
 ## [Why Data Aggregation Matters](./Why%20Data%20Aggregation%20Matters.md)
+
+## [Data Aggregation as Data Reduction](./Data%20Aggregation%20as%20Data%20Reduction.md)
