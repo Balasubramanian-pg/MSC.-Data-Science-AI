@@ -11,3 +11,5 @@
 ## [3.1 Accuracy](./3.1%20Accuracy.md)
 
 ## [3.2 Completeness](./3.2%20Completeness.md)
+
+## [3.3 Consistency](./3.3%20Consistency.md)
