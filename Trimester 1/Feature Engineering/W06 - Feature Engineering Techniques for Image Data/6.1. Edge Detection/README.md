@@ -8,7 +8,7 @@ week: W06 - Feature Engineering Techniques for Image Data
 
 #### [6.1.1. From Raw Pixels to Structural Boundaries](./6.1.01.%20From%20Raw%20Pixels%20to%20Structural%20Boundaries.md)
 
-## [6.1.2. Why Simple Gradient Methods Are Fundamentally Incomplete](./6.1.2.%20Why%20Simple%20Gradient%20Methods%20Are%20Fundamentally%20Incomplete.md)
+#### [6.1.2. Why Simple Gradient Methods Are Fundamentally Incomplete](./6.1.02.%20Why%20Simple%20Gradient%20Methods%20Are%20Fundamentally%20Incomplete.md)
 
 ## [6.1.3. The Canny Edge Detection Pipeline](./6.1.3.%20The%20Canny%20Edge%20Detection%20Pipeline.md)
 
