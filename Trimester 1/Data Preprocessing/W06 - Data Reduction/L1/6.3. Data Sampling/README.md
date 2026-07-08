@@ -8,7 +8,7 @@
 
 #### [7.1.4. Sampling in Data Reduction](./7.1.04.%20Sampling%20in%20Data%20Reduction.md)
 
-## [7.1.5. Practical Considerations in Sampling](./7.1.5.%20Practical%20Considerations%20in%20Sampling.md)
+#### [7.1.5. Practical Considerations in Sampling](./7.1.05.%20Practical%20Considerations%20in%20Sampling.md)
 
 ## [7.1.6. Types of Sampling Methods](./7.1.6.%20Types%20of%20Sampling%20Methods.md)
 
