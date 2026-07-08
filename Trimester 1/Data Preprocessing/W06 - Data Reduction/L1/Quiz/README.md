@@ -9,3 +9,5 @@
 ## [Question 4](./Question%204.md)
 
 ## [Question 5](./Question%205.md)
+
+## [Question 6](./Question%206.md)
