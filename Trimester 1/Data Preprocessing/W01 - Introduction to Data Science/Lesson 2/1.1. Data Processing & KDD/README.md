@@ -34,3 +34,5 @@
 ## [Impute NaNs with median](./Impute%20NaNs%20with%20median.md)
 
 ## [STEP 3: Data Transformation](./STEP%203%20-%20Data%20Transformation.md)
+
+## [Scale features to zero mean and unit variance](./Scale%20features%20to%20zero%20mean%20and%20unit%20variance.md)
