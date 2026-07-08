@@ -34,3 +34,5 @@
 ## [Sort by Lift to find the most impactful business rules](./Sort%20by%20Lift%20to%20find%20the%20most%20impactful%20business%20rules.md)
 
 ## [Displaying specific columns for readability](./Displaying%20specific%20columns%20for%20readability.md)
+
+## [4. Advanced Engineering Notes](./4.%20Advanced%20Engineering%20Notes.md)
