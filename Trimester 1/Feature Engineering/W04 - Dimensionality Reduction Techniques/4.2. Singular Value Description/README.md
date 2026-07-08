@@ -22,6 +22,6 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.2.8. Application Strategies](./4.2.08.%20Application%20Strategies.md)
 
-## [4.2.9. The Most Common Misinterpretations](./4.2.9.%20The%20Most%20Common%20Misinterpretations.md)
+#### [4.2.9. The Most Common Misinterpretations](./4.2.09.%20The%20Most%20Common%20Misinterpretations.md)
 
 ## [4.2.10. Conclusions](./4.2.10.%20Conclusions.md)
