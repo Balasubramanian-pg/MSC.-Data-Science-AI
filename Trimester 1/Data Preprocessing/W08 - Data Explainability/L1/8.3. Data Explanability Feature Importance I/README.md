@@ -2,7 +2,7 @@
 
 #### [8.3.1. The Black Box Problem](./8.3.01.%20The%20Black%20Box%20Problem.md)
 
-## [8.3.2. The Tradeoff Between Accuracy and Interpretability](./8.3.2.%20The%20Tradeoff%20Between%20Accuracy%20and%20Interpretability.md)
+#### [8.3.2. The Tradeoff Between Accuracy and Interpretability](./8.3.02.%20The%20Tradeoff%20Between%20Accuracy%20and%20Interpretability.md)
 
 ## [8.3.3. Local vs Global Explainability](./8.3.3.%20Local%20vs%20Global%20Explainability.md)
 
