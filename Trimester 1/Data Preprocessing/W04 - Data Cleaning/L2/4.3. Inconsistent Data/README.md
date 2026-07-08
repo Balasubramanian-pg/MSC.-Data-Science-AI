@@ -34,3 +34,5 @@
 ## [Introduction to Data Inconsistency](./Introduction%20to%20Data%20Inconsistency.md)
 
 ## [Defining Data Inconsistency](./Defining%20Data%20Inconsistency.md)
+
+## [Examples of Inconsistent Data](./Examples%20of%20Inconsistent%20Data.md)
