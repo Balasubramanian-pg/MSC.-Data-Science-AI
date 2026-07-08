@@ -23,3 +23,5 @@
 ## [Weather Prediction System Example](./Weather%20Prediction%20System%20Example.md)
 
 ## [Why Data Quality Matters in Machine Learning](./Why%20Data%20Quality%20Matters%20in%20Machine%20Learning.md)
+
+## [Subjective Nature of Data Quality](./Subjective%20Nature%20of%20Data%20Quality.md)
