@@ -1,4 +1,6 @@
 # Options
 
-* True
-* False
+* Ratio
+* Interval
+* Ordinal
+* Nominal
