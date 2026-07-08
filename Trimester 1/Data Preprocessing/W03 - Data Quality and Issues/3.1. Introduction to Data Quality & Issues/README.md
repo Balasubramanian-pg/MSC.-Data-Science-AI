@@ -27,3 +27,5 @@
 ## [Subjective Nature of Data Quality](./Subjective%20Nature%20of%20Data%20Quality.md)
 
 ## [Data Quality Pipeline](./Data%20Quality%20Pipeline.md)
+
+## [Key Takeaways](./Key%20Takeaways.md)
