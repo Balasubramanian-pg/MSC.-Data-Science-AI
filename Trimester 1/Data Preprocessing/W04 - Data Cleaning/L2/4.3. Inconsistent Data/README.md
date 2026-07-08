@@ -54,3 +54,5 @@
 ## [6.2 Semantic Inconsistency](./6.2%20Semantic%20Inconsistency.md)
 
 ## [6.3 Structural Inconsistency](./6.3%20Structural%20Inconsistency.md)
+
+## [Impact of Inconsistent Data](./Impact%20of%20Inconsistent%20Data.md)
