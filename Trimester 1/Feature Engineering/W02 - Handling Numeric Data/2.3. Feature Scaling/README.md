@@ -10,7 +10,7 @@ week: W02 - Handling Numeric Data
 
 #### [2.3.2. Min-Max Normalization](./2.3.02.%20Min-Max%20Normalization.md)
 
-## [2.3.3. Z-Score Standardization](./2.3.3.%20Z-Score%20Standardization.md)
+#### [2.3.3. Z-Score Standardization](./2.3.03.%20Z-Score%20Standardization.md)
 
 ## [2.3.4. Algorithmic Sensitivity to Scale](./2.3.4.%20Algorithmic%20Sensitivity%20to%20Scale.md)
 
