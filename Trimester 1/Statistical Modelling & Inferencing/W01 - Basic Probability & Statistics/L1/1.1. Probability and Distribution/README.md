@@ -16,7 +16,7 @@
 
 #### [1.1.8. Example of a Cumulative Probability Calculation](./1.1.08.%20Example%20of%20a%20Cumulative%20Probability%20Calculation.md)
 
-## [1.1.9. Common Discrete Distributions](./1.1.9.%20Common%20Discrete%20Distributions.md)
+#### [1.1.9. Common Discrete Distributions](./1.1.09.%20Common%20Discrete%20Distributions.md)
 
 ## [1.1.10. Common Continuous Distributions](./1.1.10.%20Common%20Continuous%20Distributions.md)
 
