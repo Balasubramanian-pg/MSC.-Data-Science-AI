@@ -39,3 +39,5 @@ week: W05 - Data Transformation and Aggregation
 ## [Types of Normalization Techniques](./Types%20of%20Normalization%20Techniques.md)
 
 ## [16.1 Min-Max Normalization](./16.1%20Min-Max%20Normalization.md)
+
+## [16.2 Z-Score Normalization](./16.2%20Z-Score%20Normalization.md)
