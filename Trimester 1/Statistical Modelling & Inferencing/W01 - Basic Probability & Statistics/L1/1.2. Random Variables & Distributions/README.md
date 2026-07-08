@@ -10,7 +10,7 @@
 
 #### [12.1.5. Variance: The Theoretical Spread](./12.1.05.%20Variance%20-%20The%20Theoretical%20Spread.md)
 
-## [12.1.6. The Binomial Distribution](./12.1.6.%20The%20Binomial%20Distribution.md)
+#### [12.1.6. The Binomial Distribution](./12.1.06.%20The%20Binomial%20Distribution.md)
 
 ## [12.1.7. Example of a Binomial Probability Calculation](./12.1.7.%20Example%20of%20a%20Binomial%20Probability%20Calculation.md)
 
