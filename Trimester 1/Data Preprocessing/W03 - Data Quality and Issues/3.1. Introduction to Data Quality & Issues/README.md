@@ -25,3 +25,5 @@
 ## [Why Data Quality Matters in Machine Learning](./Why%20Data%20Quality%20Matters%20in%20Machine%20Learning.md)
 
 ## [Subjective Nature of Data Quality](./Subjective%20Nature%20of%20Data%20Quality.md)
+
+## [Data Quality Pipeline](./Data%20Quality%20Pipeline.md)
