@@ -16,7 +16,7 @@ week: W08 - Automated Feature Engineering
 
 #### [8.5.5. TSFresh for Time-Series Feature Extraction](./8.5.05.%20TSFresh%20for%20Time-Series%20Feature%20Extraction.md)
 
-## [8.5.6. Featurewiz for Automated Feature Selection](./8.5.6.%20Featurewiz%20for%20Automated%20Feature%20Selection.md)
+#### [8.5.6. Featurewiz for Automated Feature Selection](./8.5.06.%20Featurewiz%20for%20Automated%20Feature%20Selection.md)
 
 ## [8.5.7. Statistical Foundations Behind Automated Feature Engineering](./8.5.7.%20Statistical%20Foundations%20Behind%20Automated%20Feature%20Engineering.md)
 
