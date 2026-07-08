@@ -17,3 +17,5 @@ week: W05 - Data Transformation and Aggregation
 ## [3.2 Formula](./3.2%20Formula.md)
 
 ## [3.3 Step-by-Step Example](./3.3%20Step-by-Step%20Example.md)
+
+## [3.4 Linear Transformation Property](./3.4%20Linear%20Transformation%20Property.md)
