@@ -18,6 +18,6 @@ week: W06 - Feature Engineering Techniques for Image Data
 
 #### [6.1.6. Comparison with Alternative Edge Detectors](./6.1.06.%20Comparison%20with%20Alternative%20Edge%20Detectors.md)
 
-## [6.1.7. Common Misinterpretations](./6.1.7.%20Common%20Misinterpretations.md)
+#### [6.1.7. Common Misinterpretations](./6.1.07.%20Common%20Misinterpretations.md)
 
 ## [6.1.8. Conclusions](./6.1.8.%20Conclusions.md)
