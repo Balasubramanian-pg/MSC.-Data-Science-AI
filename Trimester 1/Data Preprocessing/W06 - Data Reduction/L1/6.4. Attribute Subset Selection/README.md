@@ -13,3 +13,5 @@
 ## [6.4.6. Why Feature Selection Matters](./6.4.6.%20Why%20Feature%20Selection%20Matters.md)
 
 ## [6.4.7. Feature Selection as a Search Problem](./6.4.7.%20Feature%20Selection%20as%20a%20Search%20Problem.md)
+
+## [6.4.8. Subset Combination Explosion](./6.4.8.%20Subset%20Combination%20Explosion.md)
