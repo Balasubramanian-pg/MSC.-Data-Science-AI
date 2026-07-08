@@ -37,3 +37,5 @@
 14. Real-World Importance of Outliers
     
 15. Key Takeaways
+
+## [Introduction to Outlier Analysis](./Introduction%20to%20Outlier%20Analysis.md)
