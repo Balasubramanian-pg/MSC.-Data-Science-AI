@@ -51,3 +51,5 @@
 ## [Smoothing by Bin Boundaries](./Smoothing%20by%20Bin%20Boundaries.md)
 
 ## [Regression-Based Smoothing](./Regression-Based%20Smoothing.md)
+
+## [Regression and Trend Modeling](./Regression%20and%20Trend%20Modeling.md)
