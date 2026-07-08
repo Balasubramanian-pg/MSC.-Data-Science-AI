@@ -3,3 +3,5 @@
 # Question 1
 
 According to the slides, what is a primary goal of Data Science?
+
+## [Options](./Options.md)
