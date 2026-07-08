@@ -16,3 +16,5 @@
 ## [6. Python Implementation: Resolving the "Starving for Knowledge" Paradox](./6.%20Python%20Implementation%20-%20Resolving%20the%20Starving%20for%20Knowledge%20Paradox.md)
 
 ## [1. Simulate the Data Explosion (Drowning in Data)](./1.%20Simulate%20the%20Data%20Explosion%20%28Drowning%20in%20Data%29.md)
+
+## [Generating 10,000 genuine transactions and 50 fraudulent ones](./Generating%2010%2C000%20genuine%20transactions%20and%2050%20fraudulent%20ones.md)
