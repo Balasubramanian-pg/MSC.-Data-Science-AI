@@ -7,3 +7,5 @@
 ## [8.3.3. Local vs Global Explainability](./8.3.3.%20Local%20vs%20Global%20Explainability.md)
 
 ## [8.3.4. Why Local Explainability Matters](./8.3.4.%20Why%20Local%20Explainability%20Matters.md)
+
+## [8.3.5. LIME: Local Interpretable Model-Agnostic Explanations](./8.3.5.%20LIME%20-%20Local%20Interpretable%20Model-Agnostic%20Explanations.md)
