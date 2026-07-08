@@ -20,7 +20,7 @@ week: W07 - Feature Engineering Techniques for Time-Series Data
 
 #### [7.1.7. Domain-Specific Feature Engineering](./7.1.07.%20Domain-Specific%20Feature%20Engineering.md)
 
-## [7.1.8. Visualization and Model Integration](./7.1.8.%20Visualization%20and%20Model%20Integration.md)
+#### [7.1.8. Visualization and Model Integration](./7.1.08.%20Visualization%20and%20Model%20Integration.md)
 
 ## [7.1.9. Common Misinterpretations](./7.1.9.%20Common%20Misinterpretations.md)
 
