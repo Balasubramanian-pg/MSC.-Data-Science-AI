@@ -12,7 +12,7 @@ week: W07 - Feature Engineering Techniques for Time-Series Data
 
 #### [7.3.3. The Core Metric: RR Intervals and Heart Rate Variability](./7.3.03.%20The%20Core%20Metric%20-%20RR%20Intervals%20and%20Heart%20Rate%20Variability.md)
 
-## [7.3.4. Temporal and Statistical Features](./7.3.4.%20Temporal%20and%20Statistical%20Features.md)
+#### [7.3.4. Temporal and Statistical Features](./7.3.04.%20Temporal%20and%20Statistical%20Features.md)
 
 ## [7.3.5. Domain-Specific HRV Metrics](./7.3.5.%20Domain-Specific%20HRV%20Metrics.md)
 
