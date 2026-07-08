@@ -10,7 +10,7 @@
 
 #### [3.0.5. The Taxonomy of Feature Selection](./3.0.05.%20The%20Taxonomy%20of%20Feature%20Selection.md)
 
-## [3.0.6. Filter Methods: Model-Independent Screening](./3.0.6.%20Filter%20Methods%20-%20Model-Independent%20Screening.md)
+#### [3.0.6. Filter Methods: Model-Independent Screening](./3.0.06.%20Filter%20Methods%20-%20Model-Independent%20Screening.md)
 
 ## [3.0.7. Wrapper Methods: Iterative Subset Evaluation](./3.0.7.%20Wrapper%20Methods%20-%20Iterative%20Subset%20Evaluation.md)
 
