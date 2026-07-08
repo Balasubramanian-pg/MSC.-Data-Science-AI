@@ -14,3 +14,5 @@
 ## [5. Alternative Data Sources & Structures](./5.%20Alternative%20Data%20Sources%20%26%20Structures.md)
 
 ## [6. Python Implementation: Simulating and Dissecting a Dataset](./6.%20Python%20Implementation%20-%20Simulating%20and%20Dissecting%20a%20Dataset.md)
+
+## [1. Simulating Raw Data Entry (Information gathering)](./1.%20Simulating%20Raw%20Data%20Entry%20%28Information%20gathering%29.md)
