@@ -83,3 +83,5 @@
 ## [Outlier Detection in High Dimensions](./Outlier%20Detection%20in%20High%20Dimensions.md)
 
 ## [Iterative Nature of Outlier Analysis](./Iterative%20Nature%20of%20Outlier%20Analysis.md)
+
+## [Real-World Importance of Outliers](./Real-World%20Importance%20of%20Outliers.md)
