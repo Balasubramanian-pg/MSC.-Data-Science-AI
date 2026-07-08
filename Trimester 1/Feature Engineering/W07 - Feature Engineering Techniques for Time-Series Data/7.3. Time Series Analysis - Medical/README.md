@@ -20,7 +20,7 @@ week: W07 - Feature Engineering Techniques for Time-Series Data
 
 #### [7.3.7. Real-World Application: Arrhythmia Detection](./7.3.07.%20Real-World%20Application%20-%20Arrhythmia%20Detection.md)
 
-## [7.3.8. Critical Engineering Caveats](./7.3.8.%20Critical%20Engineering%20Caveats.md)
+#### [7.3.8. Critical Engineering Caveats](./7.3.08.%20Critical%20Engineering%20Caveats.md)
 
 ## [7.3.9. Factors Affecting HRV Feature Quality](./7.3.9.%20Factors%20Affecting%20HRV%20Feature%20Quality.md)
 
