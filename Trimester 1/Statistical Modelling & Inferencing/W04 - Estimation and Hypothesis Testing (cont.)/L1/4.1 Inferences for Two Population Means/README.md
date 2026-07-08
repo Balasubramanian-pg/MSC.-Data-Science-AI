@@ -13,7 +13,7 @@
 
 #### [4.1.6. Welch's t-Test and Unequal Variances](./4.1.06.%20Welch%27s%20t-Test%20and%20Unequal%20Variances.md)
 
-## [4.1.7. Example of an Independent Two-Sample t-Test](./4.1.7.%20Example%20of%20an%20Independent%20Two-Sample%20t-Test.md)
+#### [4.1.7. Example of an Independent Two-Sample t-Test](./4.1.07.%20Example%20of%20an%20Independent%20Two-Sample%20t-Test.md)
 
 ## [4.1.8. Paired Samples](./4.1.8.%20Paired%20Samples.md)
 
