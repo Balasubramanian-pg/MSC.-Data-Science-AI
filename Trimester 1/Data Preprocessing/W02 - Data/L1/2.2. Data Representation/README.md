@@ -30,3 +30,5 @@
 ## [1. Initialize a Directed Graph](./1.%20Initialize%20a%20Directed%20Graph.md)
 
 ## [2. Add edges (hyperlinks) between webpages](./2.%20Add%20edges%20%28hyperlinks%29%20between%20webpages.md)
+
+## [3. Compute the PageRank mathematically (solving the eigenvector problem)](./3.%20Compute%20the%20PageRank%20mathematically%20%28solving%20the%20eigenvector%20problem%29.md)
