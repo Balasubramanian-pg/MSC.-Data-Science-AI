@@ -14,7 +14,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.1.4. Eigenvalues and Eigenvectors](./4.1.04.%20Eigenvalues%20and%20Eigenvectors.md)
 
-## [4.1.5. Principal Components as Linear Combinations](./4.1.5.%20Principal%20Components%20as%20Linear%20Combinations.md)
+#### [4.1.5. Principal Components as Linear Combinations](./4.1.05.%20Principal%20Components%20as%20Linear%20Combinations.md)
 
 ## [4.1.6. Explained Variance Ratio](./4.1.6.%20Explained%20Variance%20Ratio.md)
 
