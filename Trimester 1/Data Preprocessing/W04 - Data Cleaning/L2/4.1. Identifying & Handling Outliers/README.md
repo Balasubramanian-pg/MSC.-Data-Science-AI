@@ -27,3 +27,5 @@
 12. Key Takeaways
 
 ## [Introduction to Outlier Handling](./Introduction%20to%20Outlier%20Handling.md)
+
+## [Defining Outliers](./Defining%20Outliers.md)
