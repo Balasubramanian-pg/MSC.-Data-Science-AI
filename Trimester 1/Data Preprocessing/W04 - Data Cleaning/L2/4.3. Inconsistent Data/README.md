@@ -60,3 +60,5 @@
 ## [Detecting Inconsistency](./Detecting%20Inconsistency.md)
 
 ## [Rule-Based Validation Systems](./Rule-Based%20Validation%20Systems.md)
+
+## [Range Validation](./Range%20Validation.md)
