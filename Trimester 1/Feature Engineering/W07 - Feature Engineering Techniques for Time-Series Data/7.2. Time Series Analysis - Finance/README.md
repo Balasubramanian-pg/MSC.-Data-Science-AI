@@ -8,7 +8,7 @@ week: W07 - Feature Engineering Techniques for Time-Series Data
 
 #### [7.2.1. From Raw Prices to Market Intelligence](./7.2.01.%20From%20Raw%20Prices%20to%20Market%20Intelligence.md)
 
-## [7.2.2. Why Raw Price Data Is Fundamentally Incomplete](./7.2.2.%20Why%20Raw%20Price%20Data%20Is%20Fundamentally%20Incomplete.md)
+#### [7.2.2. Why Raw Price Data Is Fundamentally Incomplete](./7.2.02.%20Why%20Raw%20Price%20Data%20Is%20Fundamentally%20Incomplete.md)
 
 ## [7.2.3. Foundational Engineering Toolkit](./7.2.3.%20Foundational%20Engineering%20Toolkit.md)
 
