@@ -21,3 +21,5 @@
 ## [7.1.10. Comparing With vs Without Replacement](./7.1.10.%20Comparing%20With%20vs%20Without%20Replacement.md)
 
 ## [7.1.11. Stratified Sampling](./7.1.11.%20Stratified%20Sampling.md)
+
+## [7.1.12. Sampling Bias and Fair Representation](./7.1.12.%20Sampling%20Bias%20and%20Fair%20Representation.md)
