@@ -14,6 +14,6 @@ week: W06 - Feature Engineering Techniques for Image Data
 
 #### [6.3.4. Parametric Sensitivity and Mathematical Trade-offs](./6.3.04.%20Parametric%20Sensitivity%20and%20Mathematical%20Trade-offs.md)
 
-## [6.3.5. HOG in the Context of Machine Learning](./6.3.5.%20HOG%20in%20the%20Context%20of%20Machine%20Learning.md)
+#### [6.3.5. HOG in the Context of Machine Learning](./6.3.05.%20HOG%20in%20the%20Context%20of%20Machine%20Learning.md)
 
 ## [6.3.6. Summary Table: HOG Configuration](./6.3.6.%20Summary%20Table%20-%20HOG%20Configuration.md)
