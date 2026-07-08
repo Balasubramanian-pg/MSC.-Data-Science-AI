@@ -18,7 +18,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.4.6. Strategic Application Framework](./4.4.06.%20Strategic%20Application%20Framework.md)
 
-## [4.4.7. Example of Information Retention in Dimensionality Reduction](./4.4.7.%20Example%20of%20Information%20Retention%20in%20Dimensionality%20Reduction.md)
+#### [4.4.7. Example of Information Retention in Dimensionality Reduction](./4.4.07.%20Example%20of%20Information%20Retention%20in%20Dimensionality%20Reduction.md)
 
 ## [4.4.8. Factors Dictating Technique Selection](./4.4.8.%20Factors%20Dictating%20Technique%20Selection.md)
 
