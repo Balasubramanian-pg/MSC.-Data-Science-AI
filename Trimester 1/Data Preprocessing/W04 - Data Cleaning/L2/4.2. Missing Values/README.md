@@ -17,3 +17,5 @@ week: W04 - Data Cleaning
 ## [Types of Data Quality Problems](./Types%20of%20Data%20Quality%20Problems.md)
 
 ## [5.1 Incomplete Data](./5.1%20Incomplete%20Data.md)
+
+## [5.2 Noisy Data](./5.2%20Noisy%20Data.md)
