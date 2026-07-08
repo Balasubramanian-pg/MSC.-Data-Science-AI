@@ -35,3 +35,5 @@
 ## [6.4.17. Role of Domain Experts](./6.4.17.%20Role%20of%20Domain%20Experts.md)
 
 ## [6.4.18. Computational Efficiency Benefits](./6.4.18.%20Computational%20Efficiency%20Benefits.md)
+
+## [6.4.19. Practical Challenges in Feature Selection](./6.4.19.%20Practical%20Challenges%20in%20Feature%20Selection.md)
