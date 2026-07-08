@@ -20,7 +20,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.1.7. Example of Principal Component Extraction](./4.1.07.%20Example%20of%20Principal%20Component%20Extraction.md)
 
-## [4.1.8. Critical Interpretation and Trade-offs](./4.1.8.%20Critical%20Interpretation%20and%20Trade-offs.md)
+#### [4.1.8. Critical Interpretation and Trade-offs](./4.1.08.%20Critical%20Interpretation%20and%20Trade-offs.md)
 
 ## [4.1.9. Application Strategies](./4.1.9.%20Application%20Strategies.md)
 
