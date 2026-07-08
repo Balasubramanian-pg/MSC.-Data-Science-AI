@@ -10,7 +10,7 @@ week: W06 - Feature Engineering Techniques for Image Data
 
 #### [6.1.2. Why Simple Gradient Methods Are Fundamentally Incomplete](./6.1.02.%20Why%20Simple%20Gradient%20Methods%20Are%20Fundamentally%20Incomplete.md)
 
-## [6.1.3. The Canny Edge Detection Pipeline](./6.1.3.%20The%20Canny%20Edge%20Detection%20Pipeline.md)
+#### [6.1.3. The Canny Edge Detection Pipeline](./6.1.03.%20The%20Canny%20Edge%20Detection%20Pipeline.md)
 
 ## [6.1.4. Example: Applying Canny Edge Detection](./6.1.4.%20Example%20-%20Applying%20Canny%20Edge%20Detection.md)
 
