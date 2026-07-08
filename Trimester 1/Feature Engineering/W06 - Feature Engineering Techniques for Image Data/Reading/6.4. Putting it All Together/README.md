@@ -8,7 +8,7 @@ week: W06 - Feature Engineering Techniques for Image Data
 
 #### [6.4.1. The Role of Feature Engineering in Model Performance](./6.4.01.%20The%20Role%20of%20Feature%20Engineering%20in%20Model%20Performance.md)
 
-## [6.4.2. Baseline: Raw Pixel Representation](./6.4.2.%20Baseline%20-%20Raw%20Pixel%20Representation.md)
+#### [6.4.2. Baseline: Raw Pixel Representation](./6.4.02.%20Baseline%20-%20Raw%20Pixel%20Representation.md)
 
 ## [6.4.3. Enhanced Representation: Engineered Features](./6.4.3.%20Enhanced%20Representation%20-%20Engineered%20Features.md)
 
