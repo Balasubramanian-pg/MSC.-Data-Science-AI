@@ -26,3 +26,5 @@
 ## [Simulating a production decision: Push a $10 coupon if Churn probability > 70%](./Simulating%20a%20production%20decision%20-%20Push%20a%20%2410%20coupon%20if%20Churn%20probability%2070%25.md)
 
 ## [5. Regression: Predicting the Infinite](./5.%20Regression%20-%20Predicting%20the%20Infinite.md)
+
+## [1. Simulate Commodity Data (e.g., Gold Price driven by Inflation Rate and Supply)](./1.%20Simulate%20Commodity%20Data%20%28e.g.%2C%20Gold%20Price%20driven%20by%20Inflation%20Rate%20and%20Supply%29.md)
