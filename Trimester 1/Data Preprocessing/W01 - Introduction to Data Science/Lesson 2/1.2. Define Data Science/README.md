@@ -42,3 +42,5 @@
 ## [Plot Fraudulent Transactions](./Plot%20Fraudulent%20Transactions.md)
 
 ## [7. Real-World Applications by Domain](./7.%20Real-World%20Applications%20by%20Domain.md)
+
+## [8. Common Mistakes & Hidden Assumptions](./8.%20Common%20Mistakes%20%26%20Hidden%20Assumptions.md)
