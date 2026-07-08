@@ -53,3 +53,5 @@
 ## [Regression-Based Smoothing](./Regression-Based%20Smoothing.md)
 
 ## [Regression and Trend Modeling](./Regression%20and%20Trend%20Modeling.md)
+
+## [Key Takeaways](./Key%20Takeaways.md)
