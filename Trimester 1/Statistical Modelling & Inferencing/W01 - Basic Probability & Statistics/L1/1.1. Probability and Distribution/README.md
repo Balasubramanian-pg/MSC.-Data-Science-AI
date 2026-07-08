@@ -8,7 +8,7 @@
 
 #### [1.1.4. The Probability Mass Function](./1.1.04.%20The%20Probability%20Mass%20Function.md)
 
-## [1.1.5. Example of a Probability Mass Function](./1.1.5.%20Example%20of%20a%20Probability%20Mass%20Function.md)
+#### [1.1.5. Example of a Probability Mass Function](./1.1.05.%20Example%20of%20a%20Probability%20Mass%20Function.md)
 
 ## [1.1.6. The Probability Density Function](./1.1.6.%20The%20Probability%20Density%20Function.md)
 
