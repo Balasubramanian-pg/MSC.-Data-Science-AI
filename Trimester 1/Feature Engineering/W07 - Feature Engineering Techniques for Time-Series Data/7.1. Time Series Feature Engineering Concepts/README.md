@@ -8,7 +8,7 @@ week: W07 - Feature Engineering Techniques for Time-Series Data
 
 #### [7.1.1. From Static Data to Temporal Data](./7.1.01.%20From%20Static%20Data%20to%20Temporal%20Data.md)
 
-## [7.1.2. Why Static Feature Engineering Is Fundamentally Incomplete](./7.1.2.%20Why%20Static%20Feature%20Engineering%20Is%20Fundamentally%20Incomplete.md)
+#### [7.1.2. Why Static Feature Engineering Is Fundamentally Incomplete](./7.1.02.%20Why%20Static%20Feature%20Engineering%20Is%20Fundamentally%20Incomplete.md)
 
 ## [7.1.3. Core Characteristics of Time Series Data](./7.1.3.%20Core%20Characteristics%20of%20Time%20Series%20Data.md)
 
