@@ -21,3 +21,5 @@
 ## [6.4.10. Greedy Strategies in Feature Selection](./6.4.10.%20Greedy%20Strategies%20in%20Feature%20Selection.md)
 
 ## [6.4.11. Forward Selection](./6.4.11.%20Forward%20Selection.md)
+
+## [6.4.12. Backward Elimination](./6.4.12.%20Backward%20Elimination.md)
