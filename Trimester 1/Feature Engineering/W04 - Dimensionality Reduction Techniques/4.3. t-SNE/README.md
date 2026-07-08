@@ -18,7 +18,7 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.3.6. Example of a t-SNE Optimization Workflow](./4.3.06.%20Example%20of%20a%20t-SNE%20Optimization%20Workflow.md)
 
-## [4.3.7. Strategic Usage: Visualization vs. Feature Engineering](./4.3.7.%20Strategic%20Usage%20-%20Visualization%20vs.%20Feature%20Engineering.md)
+#### [4.3.7. Strategic Usage: Visualization vs. Feature Engineering](./4.3.07.%20Strategic%20Usage%20-%20Visualization%20vs.%20Feature%20Engineering.md)
 
 ## [4.3.8. Comparing t-SNE and PCA](./4.3.8.%20Comparing%20t-SNE%20and%20PCA.md)
 
