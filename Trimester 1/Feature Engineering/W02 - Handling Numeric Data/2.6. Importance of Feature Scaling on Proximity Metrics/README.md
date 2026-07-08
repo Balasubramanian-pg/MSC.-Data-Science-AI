@@ -12,7 +12,7 @@ week: W02 - Handling Numeric Data
 
 #### [2.6.3. The Euclidean Distance Formula](./2.6.03.%20The%20Euclidean%20Distance%20Formula.md)
 
-## [2.6.4. Visualizing the Scaling Effects](./2.6.4.%20Visualizing%20the%20Scaling%20Effects.md)
+#### [2.6.4. Visualizing the Scaling Effects](./2.6.04.%20Visualizing%20the%20Scaling%20Effects.md)
 
 ## [2.6.5. Impact on Distance Calculations](./2.6.5.%20Impact%20on%20Distance%20Calculations.md)
 
