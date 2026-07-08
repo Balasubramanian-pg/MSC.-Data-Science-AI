@@ -22,4 +22,4 @@ week: W02 - Handling Numeric Data
 
 #### [2.3.8. Common Misinterpretations](./2.3.08.%20Common%20Misinterpretations.md)
 
-## [2.3.9. Conclusions](./2.3.9.%20Conclusions.md)
+#### [2.3.9. Conclusions](./2.3.09.%20Conclusions.md)
