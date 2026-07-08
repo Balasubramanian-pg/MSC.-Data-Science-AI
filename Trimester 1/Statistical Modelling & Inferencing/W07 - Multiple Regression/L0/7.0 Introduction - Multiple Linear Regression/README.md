@@ -8,7 +8,7 @@
 
 #### [7.0.4. The Meaning of Holding Other Variables Constant](./7.0.04.%20The%20Meaning%20of%20Holding%20Other%20Variables%20Constant.md)
 
-## [7.0.5. Example of Multiple Regression Interpretation](./7.0.5.%20Example%20of%20Multiple%20Regression%20Interpretation.md)
+#### [7.0.5. Example of Multiple Regression Interpretation](./7.0.05.%20Example%20of%20Multiple%20Regression%20Interpretation.md)
 
 ## [7.0.6. Model Fit and the Coefficient of Determination](./7.0.6.%20Model%20Fit%20and%20the%20Coefficient%20of%20Determination.md)
 
