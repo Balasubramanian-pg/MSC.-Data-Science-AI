@@ -7,3 +7,5 @@
 ## [Understanding Data Noise](./Understanding%20Data%20Noise.md)
 
 ## [Causes of Noisy Data](./Causes%20of%20Noisy%20Data.md)
+
+## [Faulty Data Collection Instruments](./Faulty%20Data%20Collection%20Instruments.md)
