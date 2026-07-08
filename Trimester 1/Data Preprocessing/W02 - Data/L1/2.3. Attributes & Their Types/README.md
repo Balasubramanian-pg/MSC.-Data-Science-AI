@@ -14,3 +14,5 @@
 ## [5. Machine Learning Connections: Feature Engineering](./5.%20Machine%20Learning%20Connections%20-%20Feature%20Engineering.md)
 
 ## [6. Python Implementation: The Attribute Processing Pipeline](./6.%20Python%20Implementation%20-%20The%20Attribute%20Processing%20Pipeline.md)
+
+## [1. Constructing a heterogeneous dataset representing various attribute types](./1.%20Constructing%20a%20heterogeneous%20dataset%20representing%20various%20attribute%20types.md)
