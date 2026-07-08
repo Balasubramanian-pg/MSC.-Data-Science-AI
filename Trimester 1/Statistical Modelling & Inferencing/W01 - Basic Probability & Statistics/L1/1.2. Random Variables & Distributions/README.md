@@ -8,7 +8,7 @@
 
 #### [12.1.4. Expected Value: The Theoretical Mean](./12.1.04.%20Expected%20Value%20-%20The%20Theoretical%20Mean.md)
 
-## [12.1.5. Variance: The Theoretical Spread](./12.1.5.%20Variance%20-%20The%20Theoretical%20Spread.md)
+#### [12.1.5. Variance: The Theoretical Spread](./12.1.05.%20Variance%20-%20The%20Theoretical%20Spread.md)
 
 ## [12.1.6. The Binomial Distribution](./12.1.6.%20The%20Binomial%20Distribution.md)
 
