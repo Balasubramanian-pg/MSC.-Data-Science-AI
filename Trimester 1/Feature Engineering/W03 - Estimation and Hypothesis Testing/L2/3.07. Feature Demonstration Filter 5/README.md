@@ -1,6 +1,6 @@
 # 3.7. Filter Methods: Fisher Score for Class Separation
 
-## [3.7.1. Evaluating Class Separability](./01-371-evaluating-class-separability.md)
+#### [3.7.01. Evaluating Class Separability](./01-3701-evaluating-class-separability.md)
 
 ## [3.7.2. The Logic of Discriminative Power](./02-372-the-logic-of-discriminative-power.md)
 
