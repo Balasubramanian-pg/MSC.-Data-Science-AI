@@ -45,28 +45,20 @@ If Table A (Customers) has a one-to-many relationship with Table B (Transactions
 
 **Depth 1 Feature ($d=1$):** Applying an aggregation primitive directly to raw data.
 
-$$
-F^{(1)} = A(x_{raw}) = \text{Mean}(\text{Transaction\_Amount})
-$$
+$$F^{(1)} = A(x_{raw}) = \text{Mean}(\text{Transaction\_Amount})$$
 
 **Depth 2 Feature ($d=2$):** Stacking a transformation primitive inside an aggregation primitive, or stacking two aggregations across three relational tables.
 
-$$
-F^{(2)} = A(T(x_{raw})) = \text{Mean}(\text{Absolute\_Value}(\text{Transaction\_Amount}))
-$$
+$$F^{(2)} = A(T(x_{raw})) = \text{Mean}(\text{Absolute\_Value}(\text{Transaction\_Amount}))$$
 
 Alternatively, if Table C (Logins) relates to Table B (Sessions) which relates to Table A (Users):
 
-$$
-F^{(2)} = A_{B \to A}(A_{C \to B}(x_{raw})) = \text{Sum}(\text{Mean\_Session\_Login\_Duration})
-$$
+$$F^{(2)} = A_{B \to A}(A_{C \to B}(x_{raw})) = \text{Sum}(\text{Mean\_Session\_Login\_Duration})$$
 
 ### The Combinatorial Explosion Space
 If you have $m$ original features, $p_t$ transformation primitives, $p_a$ aggregation primitives, and a maximum depth $K$, the theoretical upper bound of generated features $N_F$ grows exponentially:
 
-$$
-N_F \approx \mathcal{O}\left( m \cdot (p_t + p_a)^K \right)
-$$
+$$N_F \approx \mathcal{O}\left( m \cdot (p_t + p_a)^K \right)$$
 
 ## 5. Visual Architecture: Deep Feature Synthesis
 
