@@ -1,6 +1,6 @@
 # 3.5. Filter Methods: Chi-Square Test for Categorical Feature Selection
 
-## [3.5.1. Evaluating Categorical Dependencies](./01-351-evaluating-categorical-dependencies.md)
+#### [3.5.01. Evaluating Categorical Dependencies](./01-3501-evaluating-categorical-dependencies.md)
 
 ## [3.5.2. The Intuition Behind the Test](./02-352-the-intuition-behind-the-test.md)
 
