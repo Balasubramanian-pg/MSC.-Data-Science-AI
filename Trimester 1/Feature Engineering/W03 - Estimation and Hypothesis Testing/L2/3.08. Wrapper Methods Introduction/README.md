@@ -12,7 +12,7 @@
 
 #### [3.8.06. Example of Sequential Forward Selection](./06-3806-example-of-sequential-forward-selection.md)
 
-## [3.8.7. Sequential Backward Selection (SBS)](./07-387-sequential-backward-selection-sbs.md)
+#### [3.8.07. Sequential Backward Selection (SBS)](./07-3807-sequential-backward-selection-sbs.md)
 
 ## [3.8.8. Example of Sequential Backward Selection](./08-388-example-of-sequential-backward-selection.md)
 
