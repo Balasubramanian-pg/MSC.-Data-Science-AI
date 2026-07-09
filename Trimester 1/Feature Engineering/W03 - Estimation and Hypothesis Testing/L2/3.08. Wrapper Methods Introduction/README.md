@@ -4,7 +4,7 @@
 
 #### [3.8.02. The Intuition Behind the Model-as-Evaluator](./02-3802-the-intuition-behind-the-model-as-evaluator.md)
 
-## [3.8.3. The Search Problem and Computational Complexity](./03-383-the-search-problem-and-computational-complexity.md)
+#### [3.8.03. The Search Problem and Computational Complexity](./03-3803-the-search-problem-and-computational-complexity.md)
 
 ## [3.8.4. Feature Interactions and Combined Signal](./04-384-feature-interactions-and-combined-signal.md)
 
