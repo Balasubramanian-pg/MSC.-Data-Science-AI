@@ -2,7 +2,7 @@
 
 #### [3.11.1. The Strategic Imperative of Feature Engineering](./01-31101-the-strategic-imperative-of-feature-engineering.md)
 
-## [3.11.2. Feature Extraction: Distilling Complexity](./02-3112-feature-extraction-distilling-complexity.md)
+#### [3.11.2. Feature Extraction: Distilling Complexity](./02-31102-feature-extraction-distilling-complexity.md)
 
 ## [3.11.3. Feature Construction: Domain-Driven Innovation](./03-3113-feature-construction-domain-driven-innovation.md)
 
