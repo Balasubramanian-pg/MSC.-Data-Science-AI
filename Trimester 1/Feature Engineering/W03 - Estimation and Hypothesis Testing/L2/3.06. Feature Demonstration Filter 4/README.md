@@ -12,7 +12,7 @@
 
 #### [3.6.06. Example of a Mutual Information Calculation](./06-3606-example-of-a-mutual-information-calculation.md)
 
-## [3.6.7. Comparing Information Gain to Correlation](./07-367-comparing-information-gain-to-correlation.md)
+#### [3.6.07. Comparing Information Gain to Correlation](./07-3607-comparing-information-gain-to-correlation.md)
 
 ## [3.6.8. Best Practices in Filter Method Workflows](./08-368-best-practices-in-filter-method-workflows.md)
 
