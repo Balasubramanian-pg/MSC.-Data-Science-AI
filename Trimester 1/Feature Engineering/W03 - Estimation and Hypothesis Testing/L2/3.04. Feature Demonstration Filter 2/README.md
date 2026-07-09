@@ -6,7 +6,7 @@
 
 #### [3.4.03. Mathematical Formulation of Spearman’s Correlation](./03-3403-mathematical-formulation-of-spearmans-correlation.md)
 
-## [3.4.4. Interpreting the Rank Coefficient](./04-344-interpreting-the-rank-coefficient.md)
+#### [3.4.04. Interpreting the Rank Coefficient](./04-3404-interpreting-the-rank-coefficient.md)
 
 ## [3.4.5. Strategic Usage for Feature Selection](./05-345-strategic-usage-for-feature-selection.md)
 
