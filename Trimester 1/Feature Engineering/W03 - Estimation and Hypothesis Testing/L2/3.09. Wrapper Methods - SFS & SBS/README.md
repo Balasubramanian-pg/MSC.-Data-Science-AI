@@ -14,7 +14,7 @@
 
 #### [3.9.07. Mathematical Objective of SBS](./07-3907-mathematical-objective-of-sbs.md)
 
-## [3.9.8. Example of Sequential Backward Selection](./08-398-example-of-sequential-backward-selection.md)
+#### [3.9.08. Example of Sequential Backward Selection](./08-3908-example-of-sequential-backward-selection.md)
 
 ## [3.9.9. The Greedy Algorithm Constraint](./09-399-the-greedy-algorithm-constraint.md)
 
