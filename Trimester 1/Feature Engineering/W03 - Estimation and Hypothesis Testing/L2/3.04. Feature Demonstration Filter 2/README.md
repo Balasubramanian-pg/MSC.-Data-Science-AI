@@ -2,7 +2,7 @@
 
 #### [3.4.01. Moving Beyond Linear Constraints](./01-3401-moving-beyond-linear-constraints.md)
 
-## [3.4.2. Theory of Monotonic Relationships](./02-342-theory-of-monotonic-relationships.md)
+#### [3.4.02. Theory of Monotonic Relationships](./02-3402-theory-of-monotonic-relationships.md)
 
 ## [3.4.3. Mathematical Formulation of Spearman’s Correlation](./03-343-mathematical-formulation-of-spearmans-correlation.md)
 
