@@ -12,7 +12,7 @@
 
 #### [3.11.6. Wrapper vs. Embedded Methods](./06-31106-wrapper-vs-embedded-methods.md)
 
-## [3.11.7. Example of Feature Filtering via Fisher Score](./07-3117-example-of-feature-filtering-via-fisher-score.md)
+#### [3.11.7. Example of Feature Filtering via Fisher Score](./07-31107-example-of-feature-filtering-via-fisher-score.md)
 
 ## [3.11.8. Best Practices in Engineering Workflows](./08-3118-best-practices-in-engineering-workflows.md)
 
