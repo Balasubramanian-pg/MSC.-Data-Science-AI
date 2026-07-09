@@ -6,7 +6,7 @@
 
 #### [4.2.3. The Notebook Rendering Environment](./4.2.03.%20The%20Notebook%20Rendering%20Environment.md)
 
-## [4.2.4. Interface Abstraction Levels](./4.2.4.%20Interface%20Abstraction%20Levels.md)
+#### [4.2.4. Interface Abstraction Levels](./4.2.04.%20Interface%20Abstraction%20Levels.md)
 
 ## [4.2.5. Core Components of Bokeh Visualizations](./4.2.5.%20Core%20Components%20of%20Bokeh%20Visualizations.md)
 
