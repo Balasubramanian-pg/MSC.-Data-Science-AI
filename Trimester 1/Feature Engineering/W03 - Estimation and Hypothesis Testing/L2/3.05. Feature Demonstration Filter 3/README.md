@@ -8,7 +8,7 @@
 
 #### [3.5.04. Strategic Usage in Feature Selection](./04-3504-strategic-usage-in-feature-selection.md)
 
-## [3.5.5. Handling Continuous Data Through Discretization](./05-355-handling-continuous-data-through-discretization.md)
+#### [3.5.05. Handling Continuous Data Through Discretization](./05-3505-handling-continuous-data-through-discretization.md)
 
 ## [3.5.6. Example of a Chi-Square Calculation](./06-356-example-of-a-chi-square-calculation.md)
 
