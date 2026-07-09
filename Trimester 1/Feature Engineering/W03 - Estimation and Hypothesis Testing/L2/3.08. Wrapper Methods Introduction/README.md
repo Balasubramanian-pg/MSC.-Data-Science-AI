@@ -8,7 +8,7 @@
 
 #### [3.8.04. Feature Interactions and Combined Signal](./04-3804-feature-interactions-and-combined-signal.md)
 
-## [3.8.5. Sequential Forward Selection (SFS)](./05-385-sequential-forward-selection-sfs.md)
+#### [3.8.05. Sequential Forward Selection (SFS)](./05-3805-sequential-forward-selection-sfs.md)
 
 ## [3.8.6. Example of Sequential Forward Selection](./06-386-example-of-sequential-forward-selection.md)
 
