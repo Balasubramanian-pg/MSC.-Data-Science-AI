@@ -16,7 +16,7 @@
 
 #### [3.8.08. Example of Sequential Backward Selection](./08-3808-example-of-sequential-backward-selection.md)
 
-## [3.8.9. The Greedy Algorithm Constraint](./09-389-the-greedy-algorithm-constraint.md)
+#### [3.8.09. The Greedy Algorithm Constraint](./09-3809-the-greedy-algorithm-constraint.md)
 
 #### [3.8.010. Common Misinterpretations](./10-3810-common-misinterpretations.md)
 
