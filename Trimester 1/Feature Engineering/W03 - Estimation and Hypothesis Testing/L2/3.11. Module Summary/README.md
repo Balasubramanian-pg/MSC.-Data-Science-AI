@@ -6,7 +6,7 @@
 
 #### [3.11.3. Feature Construction: Domain-Driven Innovation](./03-31103-feature-construction-domain-driven-innovation.md)
 
-## [3.11.4. Feature Selection: Refining the Input Space](./04-3114-feature-selection-refining-the-input-space.md)
+#### [3.11.4. Feature Selection: Refining the Input Space](./04-31104-feature-selection-refining-the-input-space.md)
 
 ## [3.11.5. Deep Dive into Filter Methods](./05-3115-deep-dive-into-filter-methods.md)
 
