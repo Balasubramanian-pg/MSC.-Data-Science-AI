@@ -1,6 +1,6 @@
 # 3.4. Filter Methods: Spearman’s Rank Correlation
 
-## [3.4.1. Moving Beyond Linear Constraints](./01-341-moving-beyond-linear-constraints.md)
+#### [3.4.01. Moving Beyond Linear Constraints](./01-3401-moving-beyond-linear-constraints.md)
 
 ## [3.4.2. Theory of Monotonic Relationships](./02-342-theory-of-monotonic-relationships.md)
 
@@ -18,6 +18,6 @@
 
 ## [3.4.9. Factors Favoring Spearman's Correlation](./09-349-factors-favoring-spearmans-correlation.md)
 
-## [3.4.10. Common Misinterpretations](./10-3410-common-misinterpretations.md)
+#### [3.4.010. Common Misinterpretations](./10-3410-common-misinterpretations.md)
 
-## [3.4.11. Conclusions](./11-3411-conclusions.md)
+#### [3.4.011. Conclusions](./11-3411-conclusions.md)
