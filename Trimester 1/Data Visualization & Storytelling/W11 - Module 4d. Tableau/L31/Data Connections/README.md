@@ -6,7 +6,7 @@
 
 #### [7.1.3. Understanding the Data Structure](./7.1.03.%20Understanding%20the%20Data%20Structure.md)
 
-## [7.1.4. Data Types and Geospatial Roles](./7.1.4.%20Data%20Types%20and%20Geospatial%20Roles.md)
+#### [7.1.4. Data Types and Geospatial Roles](./7.1.04.%20Data%20Types%20and%20Geospatial%20Roles.md)
 
 ## [7.1.5. Previewing and Eyeballing Data](./7.1.5.%20Previewing%20and%20Eyeballing%20Data.md)
 
