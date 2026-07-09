@@ -6,7 +6,7 @@
 
 #### [3.6.03. The Theory of Mutual Information](./03-3603-the-theory-of-mutual-information.md)
 
-## [3.6.4. Mathematical Formulation of Mutual Information](./04-364-mathematical-formulation-of-mutual-information.md)
+#### [3.6.04. Mathematical Formulation of Mutual Information](./04-3604-mathematical-formulation-of-mutual-information.md)
 
 ## [3.6.5. Strategic Usage in Feature Selection](./05-365-strategic-usage-in-feature-selection.md)
 
