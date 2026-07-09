@@ -16,6 +16,6 @@
 
 #### [3.6.08. Best Practices in Filter Method Workflows](./08-3608-best-practices-in-filter-method-workflows.md)
 
-## [3.6.9. Common Misinterpretations](./09-369-common-misinterpretations.md)
+#### [3.6.09. Common Misinterpretations](./09-3609-common-misinterpretations.md)
 
 #### [3.6.010. Conclusions](./10-3610-conclusions.md)
