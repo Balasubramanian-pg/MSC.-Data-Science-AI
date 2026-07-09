@@ -14,7 +14,7 @@
 
 #### [5.1.7. Layouts and Cognitive Load](./5.1.07.%20Layouts%20and%20Cognitive%20Load.md)
 
-## [5.1.8. Step-by-Step Construction Example](./5.1.8.%20Step-by-Step%20Construction%20Example.md)
+#### [5.1.8. Step-by-Step Construction Example](./5.1.08.%20Step-by-Step%20Construction%20Example.md)
 
 ## [5.1.9. Factors Affecting Render Performance](./5.1.9.%20Factors%20Affecting%20Render%20Performance.md)
 
