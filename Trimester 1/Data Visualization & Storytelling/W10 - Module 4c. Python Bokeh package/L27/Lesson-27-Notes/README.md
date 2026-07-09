@@ -10,7 +10,7 @@
 
 #### [4.3.5. Selection Geometry and Hit Testing](./4.3.05.%20Selection%20Geometry%20and%20Hit%20Testing.md)
 
-## [4.3.6. Visualizing Selection States](./4.3.6.%20Visualizing%20Selection%20States.md)
+#### [4.3.6. Visualizing Selection States](./4.3.06.%20Visualizing%20Selection%20States.md)
 
 ## [4.3.7. Example of Linked Brushing](./4.3.7.%20Example%20of%20Linked%20Brushing.md)
 
