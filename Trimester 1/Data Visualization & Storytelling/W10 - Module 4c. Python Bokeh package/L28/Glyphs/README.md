@@ -8,7 +8,7 @@
 
 #### [4.4.4. Integration with Structured Data Pipelines](./4.4.04.%20Integration%20with%20Structured%20Data%20Pipelines.md)
 
-## [4.4.5. Scatter Plots and Marker Geometry](./4.4.5.%20Scatter%20Plots%20and%20Marker%20Geometry.md)
+#### [4.4.5. Scatter Plots and Marker Geometry](./4.4.05.%20Scatter%20Plots%20and%20Marker%20Geometry.md)
 
 ## [4.4.6. Layering and Superimposing Glyphs](./4.4.6.%20Layering%20and%20Superimposing%20Glyphs.md)
 
