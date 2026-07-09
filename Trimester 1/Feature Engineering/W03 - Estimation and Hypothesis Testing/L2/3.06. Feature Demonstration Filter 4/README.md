@@ -2,7 +2,7 @@
 
 #### [3.6.01. Moving Beyond Statistical Correlation](./01-3601-moving-beyond-statistical-correlation.md)
 
-## [3.6.2. The Concept of Entropy](./02-362-the-concept-of-entropy.md)
+#### [3.6.02. The Concept of Entropy](./02-3602-the-concept-of-entropy.md)
 
 ## [3.6.3. The Theory of Mutual Information](./03-363-the-theory-of-mutual-information.md)
 
