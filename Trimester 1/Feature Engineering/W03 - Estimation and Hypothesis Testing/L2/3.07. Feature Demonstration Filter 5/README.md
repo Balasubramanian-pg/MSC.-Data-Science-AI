@@ -6,7 +6,7 @@
 
 #### [3.7.03. Mathematical Formulation of the Fisher Score](./03-3703-mathematical-formulation-of-the-fisher-score.md)
 
-## [3.7.4. Strategic Usage in Feature Selection](./04-374-strategic-usage-in-feature-selection.md)
+#### [3.7.04. Strategic Usage in Feature Selection](./04-3704-strategic-usage-in-feature-selection.md)
 
 ## [3.7.5. Example of a Fisher Score Calculation](./05-375-example-of-a-fisher-score-calculation.md)
 
