@@ -4,7 +4,7 @@
 
 #### [3.6.02. The Concept of Entropy](./02-3602-the-concept-of-entropy.md)
 
-## [3.6.3. The Theory of Mutual Information](./03-363-the-theory-of-mutual-information.md)
+#### [3.6.03. The Theory of Mutual Information](./03-3603-the-theory-of-mutual-information.md)
 
 ## [3.6.4. Mathematical Formulation of Mutual Information](./04-364-mathematical-formulation-of-mutual-information.md)
 
