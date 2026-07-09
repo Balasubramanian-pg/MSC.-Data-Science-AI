@@ -8,7 +8,7 @@
 
 #### [3.6.04. Mathematical Formulation of Mutual Information](./04-3604-mathematical-formulation-of-mutual-information.md)
 
-## [3.6.5. Strategic Usage in Feature Selection](./05-365-strategic-usage-in-feature-selection.md)
+#### [3.6.05. Strategic Usage in Feature Selection](./05-3605-strategic-usage-in-feature-selection.md)
 
 ## [3.6.6. Example of a Mutual Information Calculation](./06-366-example-of-a-mutual-information-calculation.md)
 
