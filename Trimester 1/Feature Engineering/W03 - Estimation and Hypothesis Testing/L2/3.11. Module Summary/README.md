@@ -10,7 +10,7 @@
 
 #### [3.11.5. Deep Dive into Filter Methods](./05-31105-deep-dive-into-filter-methods.md)
 
-## [3.11.6. Wrapper vs. Embedded Methods](./06-3116-wrapper-vs-embedded-methods.md)
+#### [3.11.6. Wrapper vs. Embedded Methods](./06-31106-wrapper-vs-embedded-methods.md)
 
 ## [3.11.7. Example of Feature Filtering via Fisher Score](./07-3117-example-of-feature-filtering-via-fisher-score.md)
 
