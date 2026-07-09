@@ -14,7 +14,7 @@
 
 #### [3.4.07. Example of Rank Correlation Calculation](./07-3407-example-of-rank-correlation-calculation.md)
 
-## [3.4.8. Robustness to Outliers](./08-348-robustness-to-outliers.md)
+#### [3.4.08. Robustness to Outliers](./08-3408-robustness-to-outliers.md)
 
 ## [3.4.9. Factors Favoring Spearman's Correlation](./09-349-factors-favoring-spearmans-correlation.md)
 
