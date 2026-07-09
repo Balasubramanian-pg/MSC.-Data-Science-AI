@@ -2,7 +2,7 @@
 
 #### [3.8.01. Moving Beyond Statistical Filters](./01-3801-moving-beyond-statistical-filters.md)
 
-## [3.8.2. The Intuition Behind the Model-as-Evaluator](./02-382-the-intuition-behind-the-model-as-evaluator.md)
+#### [3.8.02. The Intuition Behind the Model-as-Evaluator](./02-3802-the-intuition-behind-the-model-as-evaluator.md)
 
 ## [3.8.3. The Search Problem and Computational Complexity](./03-383-the-search-problem-and-computational-complexity.md)
 
