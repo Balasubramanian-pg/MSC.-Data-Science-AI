@@ -6,7 +6,7 @@
 
 #### [3.8.03. The Search Problem and Computational Complexity](./03-3803-the-search-problem-and-computational-complexity.md)
 
-## [3.8.4. Feature Interactions and Combined Signal](./04-384-feature-interactions-and-combined-signal.md)
+#### [3.8.04. Feature Interactions and Combined Signal](./04-3804-feature-interactions-and-combined-signal.md)
 
 ## [3.8.5. Sequential Forward Selection (SFS)](./05-385-sequential-forward-selection-sfs.md)
 
