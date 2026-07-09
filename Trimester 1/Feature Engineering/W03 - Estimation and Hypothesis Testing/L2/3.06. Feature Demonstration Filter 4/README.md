@@ -10,7 +10,7 @@
 
 #### [3.6.05. Strategic Usage in Feature Selection](./05-3605-strategic-usage-in-feature-selection.md)
 
-## [3.6.6. Example of a Mutual Information Calculation](./06-366-example-of-a-mutual-information-calculation.md)
+#### [3.6.06. Example of a Mutual Information Calculation](./06-3606-example-of-a-mutual-information-calculation.md)
 
 ## [3.6.7. Comparing Information Gain to Correlation](./07-367-comparing-information-gain-to-correlation.md)
 
