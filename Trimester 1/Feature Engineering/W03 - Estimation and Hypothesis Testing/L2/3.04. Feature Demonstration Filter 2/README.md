@@ -12,7 +12,7 @@
 
 #### [3.4.06. Identifying Feature Redundancy](./06-3406-identifying-feature-redundancy.md)
 
-## [3.4.7. Example of Rank Correlation Calculation](./07-347-example-of-rank-correlation-calculation.md)
+#### [3.4.07. Example of Rank Correlation Calculation](./07-3407-example-of-rank-correlation-calculation.md)
 
 ## [3.4.8. Robustness to Outliers](./08-348-robustness-to-outliers.md)
 
