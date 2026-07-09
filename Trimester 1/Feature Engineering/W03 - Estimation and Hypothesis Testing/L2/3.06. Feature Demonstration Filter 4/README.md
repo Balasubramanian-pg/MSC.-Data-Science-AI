@@ -1,6 +1,6 @@
 # 3.6. Filter Methods: Information Theoretic Measures
 
-## [3.6.1. Moving Beyond Statistical Correlation](./01-361-moving-beyond-statistical-correlation.md)
+#### [3.6.01. Moving Beyond Statistical Correlation](./01-3601-moving-beyond-statistical-correlation.md)
 
 ## [3.6.2. The Concept of Entropy](./02-362-the-concept-of-entropy.md)
 
@@ -18,4 +18,4 @@
 
 ## [3.6.9. Common Misinterpretations](./09-369-common-misinterpretations.md)
 
-## [3.6.10. Conclusions](./10-3610-conclusions.md)
+#### [3.6.010. Conclusions](./10-3610-conclusions.md)
