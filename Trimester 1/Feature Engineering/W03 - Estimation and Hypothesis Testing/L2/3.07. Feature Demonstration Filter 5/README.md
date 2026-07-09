@@ -4,7 +4,7 @@
 
 #### [3.7.02. The Logic of Discriminative Power](./02-3702-the-logic-of-discriminative-power.md)
 
-## [3.7.3. Mathematical Formulation of the Fisher Score](./03-373-mathematical-formulation-of-the-fisher-score.md)
+#### [3.7.03. Mathematical Formulation of the Fisher Score](./03-3703-mathematical-formulation-of-the-fisher-score.md)
 
 ## [3.7.4. Strategic Usage in Feature Selection](./04-374-strategic-usage-in-feature-selection.md)
 
