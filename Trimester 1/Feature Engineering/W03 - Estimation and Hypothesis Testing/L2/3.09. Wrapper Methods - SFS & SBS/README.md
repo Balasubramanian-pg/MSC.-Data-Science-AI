@@ -2,7 +2,7 @@
 
 #### [3.9.01. The Wrapper Philosophy](./01-3901-the-wrapper-philosophy.md)
 
-## [3.9.2. The Combinatorial Search Space](./02-392-the-combinatorial-search-space.md)
+#### [3.9.02. The Combinatorial Search Space](./02-3902-the-combinatorial-search-space.md)
 
 ## [3.9.3. Sequential Forward Selection (SFS)](./03-393-sequential-forward-selection-sfs.md)
 
