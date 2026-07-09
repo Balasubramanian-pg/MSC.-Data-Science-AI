@@ -8,7 +8,7 @@
 
 #### [3.11.4. Feature Selection: Refining the Input Space](./04-31104-feature-selection-refining-the-input-space.md)
 
-## [3.11.5. Deep Dive into Filter Methods](./05-3115-deep-dive-into-filter-methods.md)
+#### [3.11.5. Deep Dive into Filter Methods](./05-31105-deep-dive-into-filter-methods.md)
 
 ## [3.11.6. Wrapper vs. Embedded Methods](./06-3116-wrapper-vs-embedded-methods.md)
 
