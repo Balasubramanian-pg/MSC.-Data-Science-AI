@@ -14,7 +14,7 @@
 
 #### [3.6.07. Comparing Information Gain to Correlation](./07-3607-comparing-information-gain-to-correlation.md)
 
-## [3.6.8. Best Practices in Filter Method Workflows](./08-368-best-practices-in-filter-method-workflows.md)
+#### [3.6.08. Best Practices in Filter Method Workflows](./08-3608-best-practices-in-filter-method-workflows.md)
 
 ## [3.6.9. Common Misinterpretations](./09-369-common-misinterpretations.md)
 
