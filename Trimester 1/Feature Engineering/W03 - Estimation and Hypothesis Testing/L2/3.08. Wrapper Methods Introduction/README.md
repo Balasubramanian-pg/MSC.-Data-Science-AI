@@ -14,7 +14,7 @@
 
 #### [3.8.07. Sequential Backward Selection (SBS)](./07-3807-sequential-backward-selection-sbs.md)
 
-## [3.8.8. Example of Sequential Backward Selection](./08-388-example-of-sequential-backward-selection.md)
+#### [3.8.08. Example of Sequential Backward Selection](./08-3808-example-of-sequential-backward-selection.md)
 
 ## [3.8.9. The Greedy Algorithm Constraint](./09-389-the-greedy-algorithm-constraint.md)
 
