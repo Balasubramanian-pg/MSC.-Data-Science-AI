@@ -4,7 +4,7 @@
 
 #### [6.1.2. Why Raw Metadata is Fundamentally Incomplete](./6.1.02.%20Why%20Raw%20Metadata%20is%20Fundamentally%20Incomplete.md)
 
-## [6.1.3. Renaming and Duplicating Fields](./6.1.3.%20Renaming%20and%20Duplicating%20Fields.md)
+#### [6.1.3. Renaming and Duplicating Fields](./6.1.03.%20Renaming%20and%20Duplicating%20Fields.md)
 
 ## [6.1.4. Organizing Dimensions with Folders](./6.1.4.%20Organizing%20Dimensions%20with%20Folders.md)
 
