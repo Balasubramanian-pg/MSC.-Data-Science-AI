@@ -4,7 +4,7 @@
 
 #### [3.9.02. The Combinatorial Search Space](./02-3902-the-combinatorial-search-space.md)
 
-## [3.9.3. Sequential Forward Selection (SFS)](./03-393-sequential-forward-selection-sfs.md)
+#### [3.9.03. Sequential Forward Selection (SFS)](./03-3903-sequential-forward-selection-sfs.md)
 
 ## [3.9.4. Mathematical Representation of SFS](./04-394-mathematical-representation-of-sfs.md)
 
