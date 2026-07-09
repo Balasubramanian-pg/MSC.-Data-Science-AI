@@ -16,7 +16,7 @@
 
 #### [3.4.08. Robustness to Outliers](./08-3408-robustness-to-outliers.md)
 
-## [3.4.9. Factors Favoring Spearman's Correlation](./09-349-factors-favoring-spearmans-correlation.md)
+#### [3.4.09. Factors Favoring Spearman's Correlation](./09-3409-factors-favoring-spearmans-correlation.md)
 
 #### [3.4.010. Common Misinterpretations](./10-3410-common-misinterpretations.md)
 
