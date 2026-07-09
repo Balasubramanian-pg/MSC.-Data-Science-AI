@@ -12,7 +12,7 @@
 
 #### [4.3.6. Visualizing Selection States](./4.3.06.%20Visualizing%20Selection%20States.md)
 
-## [4.3.7. Example of Linked Brushing](./4.3.7.%20Example%20of%20Linked%20Brushing.md)
+#### [4.3.7. Example of Linked Brushing](./4.3.07.%20Example%20of%20Linked%20Brushing.md)
 
 ## [4.3.8. The Callback Paradigm](./4.3.8.%20The%20Callback%20Paradigm.md)
 
