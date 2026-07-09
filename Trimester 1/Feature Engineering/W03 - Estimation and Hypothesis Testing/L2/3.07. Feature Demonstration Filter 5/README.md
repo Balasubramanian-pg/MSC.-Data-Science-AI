@@ -8,7 +8,7 @@
 
 #### [3.7.04. Strategic Usage in Feature Selection](./04-3704-strategic-usage-in-feature-selection.md)
 
-## [3.7.5. Example of a Fisher Score Calculation](./05-375-example-of-a-fisher-score-calculation.md)
+#### [3.7.05. Example of a Fisher Score Calculation](./05-3705-example-of-a-fisher-score-calculation.md)
 
 ## [3.7.6. Extending to Multi-Class Problems](./06-376-extending-to-multi-class-problems.md)
 
