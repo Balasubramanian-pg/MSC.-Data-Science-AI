@@ -12,7 +12,7 @@
 
 #### [3.9.06. Sequential Backward Selection (SBS)](./06-3906-sequential-backward-selection-sbs.md)
 
-## [3.9.7. Mathematical Objective of SBS](./07-397-mathematical-objective-of-sbs.md)
+#### [3.9.07. Mathematical Objective of SBS](./07-3907-mathematical-objective-of-sbs.md)
 
 ## [3.9.8. Example of Sequential Backward Selection](./08-398-example-of-sequential-backward-selection.md)
 
