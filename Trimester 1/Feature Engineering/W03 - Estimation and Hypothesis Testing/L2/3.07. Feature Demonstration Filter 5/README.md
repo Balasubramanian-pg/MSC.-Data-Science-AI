@@ -12,7 +12,7 @@
 
 #### [3.7.06. Extending to Multi-Class Problems](./06-3706-extending-to-multi-class-problems.md)
 
-## [3.7.7. Factors Limiting the Fisher Score](./07-377-factors-limiting-the-fisher-score.md)
+#### [3.7.07. Factors Limiting the Fisher Score](./07-3707-factors-limiting-the-fisher-score.md)
 
 ## [3.7.8. Common Misinterpretations](./08-378-common-misinterpretations.md)
 
