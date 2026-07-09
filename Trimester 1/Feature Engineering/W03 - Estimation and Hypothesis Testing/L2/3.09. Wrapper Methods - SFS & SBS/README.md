@@ -16,7 +16,7 @@
 
 #### [3.9.08. Example of Sequential Backward Selection](./08-3908-example-of-sequential-backward-selection.md)
 
-## [3.9.9. The Greedy Algorithm Constraint](./09-399-the-greedy-algorithm-constraint.md)
+#### [3.9.09. The Greedy Algorithm Constraint](./09-3909-the-greedy-algorithm-constraint.md)
 
 #### [3.9.010. Handling Complex Feature Interactions](./10-3910-handling-complex-feature-interactions.md)
 
