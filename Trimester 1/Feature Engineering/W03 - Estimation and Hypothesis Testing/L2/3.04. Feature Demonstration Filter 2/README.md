@@ -10,7 +10,7 @@
 
 #### [3.4.05. Strategic Usage for Feature Selection](./05-3405-strategic-usage-for-feature-selection.md)
 
-## [3.4.6. Identifying Feature Redundancy](./06-346-identifying-feature-redundancy.md)
+#### [3.4.06. Identifying Feature Redundancy](./06-3406-identifying-feature-redundancy.md)
 
 ## [3.4.7. Example of Rank Correlation Calculation](./07-347-example-of-rank-correlation-calculation.md)
 
