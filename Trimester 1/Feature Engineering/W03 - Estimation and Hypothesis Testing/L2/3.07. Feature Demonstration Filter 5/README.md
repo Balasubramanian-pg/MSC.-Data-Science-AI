@@ -10,7 +10,7 @@
 
 #### [3.7.05. Example of a Fisher Score Calculation](./05-3705-example-of-a-fisher-score-calculation.md)
 
-## [3.7.6. Extending to Multi-Class Problems](./06-376-extending-to-multi-class-problems.md)
+#### [3.7.06. Extending to Multi-Class Problems](./06-3706-extending-to-multi-class-problems.md)
 
 ## [3.7.7. Factors Limiting the Fisher Score](./07-377-factors-limiting-the-fisher-score.md)
 
