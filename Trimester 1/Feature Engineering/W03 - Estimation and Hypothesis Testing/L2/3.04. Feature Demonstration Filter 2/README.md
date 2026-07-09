@@ -4,7 +4,7 @@
 
 #### [3.4.02. Theory of Monotonic Relationships](./02-3402-theory-of-monotonic-relationships.md)
 
-## [3.4.3. Mathematical Formulation of Spearman’s Correlation](./03-343-mathematical-formulation-of-spearmans-correlation.md)
+#### [3.4.03. Mathematical Formulation of Spearman’s Correlation](./03-3403-mathematical-formulation-of-spearmans-correlation.md)
 
 ## [3.4.4. Interpreting the Rank Coefficient](./04-344-interpreting-the-rank-coefficient.md)
 
