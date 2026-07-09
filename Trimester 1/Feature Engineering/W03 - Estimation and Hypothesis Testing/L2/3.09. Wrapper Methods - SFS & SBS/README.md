@@ -1,6 +1,6 @@
 # 3.9. Wrapper Methods: Sequential Feature Selection
 
-## [3.9.1. The Wrapper Philosophy](./01-391-the-wrapper-philosophy.md)
+#### [3.9.01. The Wrapper Philosophy](./01-3901-the-wrapper-philosophy.md)
 
 ## [3.9.2. The Combinatorial Search Space](./02-392-the-combinatorial-search-space.md)
 
@@ -18,8 +18,8 @@
 
 ## [3.9.9. The Greedy Algorithm Constraint](./09-399-the-greedy-algorithm-constraint.md)
 
-## [3.9.10. Handling Complex Feature Interactions](./10-3910-handling-complex-feature-interactions.md)
+#### [3.9.010. Handling Complex Feature Interactions](./10-3910-handling-complex-feature-interactions.md)
 
-## [3.9.11. Common Misinterpretations](./11-3911-common-misinterpretations.md)
+#### [3.9.011. Common Misinterpretations](./11-3911-common-misinterpretations.md)
 
-## [3.9.12. Conclusions](./12-3912-conclusions.md)
+#### [3.9.012. Conclusions](./12-3912-conclusions.md)
