@@ -14,6 +14,6 @@
 
 #### [3.5.07. Factors Affecting the Chi-Square Filter](./07-3507-factors-affecting-the-chi-square-filter.md)
 
-## [3.5.8. Common Misinterpretations](./08-358-common-misinterpretations.md)
+#### [3.5.08. Common Misinterpretations](./08-3508-common-misinterpretations.md)
 
 ## [3.5.9. Conclusions](./09-359-conclusions.md)
