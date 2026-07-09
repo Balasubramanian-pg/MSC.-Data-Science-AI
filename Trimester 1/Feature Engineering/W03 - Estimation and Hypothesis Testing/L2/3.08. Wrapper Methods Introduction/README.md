@@ -1,6 +1,6 @@
 # 3.8. Wrapper Methods Introduction
 
-## [3.8.1. Moving Beyond Statistical Filters](./01-381-moving-beyond-statistical-filters.md)
+#### [3.8.01. Moving Beyond Statistical Filters](./01-3801-moving-beyond-statistical-filters.md)
 
 ## [3.8.2. The Intuition Behind the Model-as-Evaluator](./02-382-the-intuition-behind-the-model-as-evaluator.md)
 
@@ -18,6 +18,6 @@
 
 ## [3.8.9. The Greedy Algorithm Constraint](./09-389-the-greedy-algorithm-constraint.md)
 
-## [3.8.10. Common Misinterpretations](./10-3810-common-misinterpretations.md)
+#### [3.8.010. Common Misinterpretations](./10-3810-common-misinterpretations.md)
 
-## [3.8.11. Conclusions](./11-3811-conclusions.md)
+#### [3.8.011. Conclusions](./11-3811-conclusions.md)
