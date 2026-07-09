@@ -300,5 +300,3 @@ When you utilize AutoFE, the feature space $D$ often exceeds the number of obser
 1.  **Dask-Featuretools:** Learn how to distribute Deep Feature Synthesis across a distributed cluster of machines to scale AutoFE to terabyte-sized datasets.
 2.  **Automated Machine Learning (AutoML):** Study how AutoFE integrates into end-to-end AutoML frameworks like H2O.ai, TPOT, or AutoGluon, where the feature engineering bounds are jointly optimized with the model hyperparameters.
 3.  **Graph Neural Networks (GNNs):** For relational data, GNNs are the deep learning successor to AutoFE. Instead of manually synthesizing aggregations via DFS, algorithms like GraphSAGE mathematically learn the optimal aggregation weights (message passing) between related entities directly via backpropagation.
-
-Tags: #statistics #machine-learning #data-science #statistical-modelling
