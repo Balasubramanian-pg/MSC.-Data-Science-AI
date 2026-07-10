@@ -1,0 +1,15 @@
+# 3.5.7. Factors Affecting the Chi-Square Filter
+
+While highly effective, the mathematical structure of the test makes it sensitive to specific dataset conditions.
+
+### 7.1 Sample Size Inflation
+
+The test statistic grows proportionally with the sample size.
+
+If you multiply every observed and expected count in your dataset by ten, the resulting test statistic will also increase tenfold, even though the underlying proportional relationship remains identical. In massive datasets, trivial dependencies can produce artificially large scores, making threshold selection difficult.
+
+### 7.2 Category Sparsity
+
+The denominator of the formula relies on the expected frequency.
+
+If a dataset contains extremely rare categories, the expected frequency $$E$$ will be very close to zero. Dividing by a near-zero value causes the individual component to explode mathematically, artificially inflating the final score and leading to the selection of unstable, sparse features.
