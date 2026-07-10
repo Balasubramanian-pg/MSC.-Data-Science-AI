@@ -1,10 +1,4 @@
----
-title: W07 - Feature Engineering Techniques for Time-Series Data
-module: Statistical Modelling And Inferencing
-week: W07 - Feature Engineering Techniques for Time-Series Data
----
-
-## [7.2. Time Series Analysis in Finance](./7.2.%20Time%20Series%20Analysis%20in%20Finance.md)
+#### [7.2. Time Series Analysis in Finance](./7.2.%20Time%20Series%20Analysis%20in%20Finance.md)
 
 #### [7.2.1. From Raw Prices to Market Intelligence](./7.2.01.%20From%20Raw%20Prices%20to%20Market%20Intelligence.md)
 
