@@ -12,7 +12,7 @@
 
 #### [3.5.06. Example of a Chi-Square Calculation](./06-350006-example-of-a-chi-square-calculation.md)
 
-#### [3.5.07. Factors Affecting the Chi-Square Filter](./07-35007-factors-affecting-the-chi-square-filter.md)
+#### [3.5.07. Factors Affecting the Chi-Square Filter](./07-350007-factors-affecting-the-chi-square-filter.md)
 
 #### [3.5.08. Common Misinterpretations](./08-35008-common-misinterpretations.md)
 
