@@ -1,10 +1,4 @@
----
-title: W06 - Feature Engineering Techniques for Image Data
-module: Statistical Modelling And Inferencing
-week: W06 - Feature Engineering Techniques for Image Data
----
-
-## [6.1. Edge Detection](./6.1.%20Edge%20Detection.md)
+#### [6.1. Edge Detection](./6.1.%20Edge%20Detection.md)
 
 #### [6.1.1. From Raw Pixels to Structural Boundaries](./6.1.01.%20From%20Raw%20Pixels%20to%20Structural%20Boundaries.md)
 
