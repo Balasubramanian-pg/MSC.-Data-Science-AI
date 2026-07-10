@@ -2,7 +2,7 @@
 
 #### [3.5.01. Evaluating Categorical Dependencies](./01-35001-evaluating-categorical-dependencies.md)
 
-#### [3.5.02. The Intuition Behind the Test](./02-3502-the-intuition-behind-the-test.md)
+#### [3.5.02. The Intuition Behind the Test](./02-35002-the-intuition-behind-the-test.md)
 
 #### [3.5.03. Mathematical Formulation of the Chi-Square Statistic](./03-3503-mathematical-formulation-of-the-chi-square-statistic.md)
 
