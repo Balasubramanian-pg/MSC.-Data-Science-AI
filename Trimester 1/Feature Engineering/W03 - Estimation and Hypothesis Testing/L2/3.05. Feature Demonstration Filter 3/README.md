@@ -4,7 +4,7 @@
 
 #### [3.5.02. The Intuition Behind the Test](./02-35002-the-intuition-behind-the-test.md)
 
-#### [3.5.03. Mathematical Formulation of the Chi-Square Statistic](./03-3503-mathematical-formulation-of-the-chi-square-statistic.md)
+#### [3.5.03. Mathematical Formulation of the Chi-Square Statistic](./03-35003-mathematical-formulation-of-the-chi-square-statistic.md)
 
 #### [3.5.04. Strategic Usage in Feature Selection](./04-3504-strategic-usage-in-feature-selection.md)
 
