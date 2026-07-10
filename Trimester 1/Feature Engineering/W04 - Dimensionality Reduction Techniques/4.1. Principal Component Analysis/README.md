@@ -1,10 +1,4 @@
----
-title: W04 - Dimensionality Reduction Techniques
-module: Statistical Modelling And Inferencing
-week: W04 - Dimensionality Reduction Techniques
----
-
-## [4.1 Principal Component Analysis](./4.1%20Principal%20Component%20Analysis.md)
+#### [4.1 Principal Component Analysis](./4.1%20Principal%20Component%20Analysis.md)
 
 #### [4.1.1. Introduction to Dimensionality Reduction](./4.1.01.%20Introduction%20to%20Dimensionality%20Reduction.md)
 
@@ -24,6 +18,6 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.1.9. Application Strategies](./4.1.09.%20Application%20Strategies.md)
 
-## [4.1.10. Common Misinterpretations](./4.1.10.%20Common%20Misinterpretations.md)
+#### [4.1.10. Common Misinterpretations](./4.1.10.%20Common%20Misinterpretations.md)
 
-## [4.1.11. Conclusions](./4.1.11.%20Conclusions.md)
+#### [4.1.11. Conclusions](./4.1.11.%20Conclusions.md)
