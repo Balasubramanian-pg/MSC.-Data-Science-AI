@@ -10,7 +10,7 @@
 
 #### [3.5.05. Handling Continuous Data Through Discretization](./05-350005-handling-continuous-data-through-discretization.md)
 
-#### [3.5.06. Example of a Chi-Square Calculation](./06-35006-example-of-a-chi-square-calculation.md)
+#### [3.5.06. Example of a Chi-Square Calculation](./06-350006-example-of-a-chi-square-calculation.md)
 
 #### [3.5.07. Factors Affecting the Chi-Square Filter](./07-35007-factors-affecting-the-chi-square-filter.md)
 
