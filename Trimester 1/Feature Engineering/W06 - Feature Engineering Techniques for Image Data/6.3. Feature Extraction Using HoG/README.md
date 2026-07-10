@@ -1,10 +1,4 @@
----
-title: W06 - Feature Engineering Techniques for Image Data
-module: Statistical Modelling And Inferencing
-week: W06 - Feature Engineering Techniques for Image Data
----
-
-## [6.3. Feature Extraction Using Histogram of Oriented Gradients (HOG)](./6.3.%20Feature%20Extraction%20Using%20Histogram%20of%20Oriented%20Gradients%20%28HOG%29.md)
+#### [6.3. Feature Extraction Using Histogram of Oriented Gradients (HOG)](./6.3.%20Feature%20Extraction%20Using%20Histogram%20of%20Oriented%20Gradients%20%28HOG%29.md)
 
 #### [6.3.1. From Raw Pixels to Structural Descriptors](./6.3.01.%20From%20Raw%20Pixels%20to%20Structural%20Descriptors.md)
 
