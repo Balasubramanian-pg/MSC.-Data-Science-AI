@@ -1,0 +1,27 @@
+# 3.5.8. Common Misinterpretations
+
+When utilizing this categorical filter, practitioners frequently misunderstand its theoretical boundaries.
+
+### Interpretation 1
+
+>[!Warning]
+> "A massive Chi-Square score means the feature is the strongest predictor."
+
+Not necessarily. 
+Because the score is inflated by both sample size and the number of categories (degrees of freedom), a feature with many distinct categories will naturally produce a larger score than a binary feature, even if its actual predictive power is weaker.
+
+### Interpretation 2
+
+>[!Warning]
+> "The test tells us exactly how the feature influences the target."
+
+Wrong. 
+The test only confirms the presence of an association. It indicates that the observed frequencies differ from random chance, but it provides no information regarding the direction or nature of that relationship.
+
+### Interpretation 3
+
+>[!Warning]
+> "A score of zero proves the feature is entirely useless."
+
+Wrong. 
+A score of zero merely proves there is no marginal categorical dependence. The feature could still possess a highly predictive interactive effect when combined with a second feature during complex model training.
