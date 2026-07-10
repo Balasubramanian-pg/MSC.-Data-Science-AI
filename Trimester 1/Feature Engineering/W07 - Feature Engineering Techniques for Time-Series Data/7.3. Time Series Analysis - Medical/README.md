@@ -1,10 +1,4 @@
----
-title: W07 - Feature Engineering Techniques for Time-Series Data
-module: Statistical Modelling And Inferencing
-week: W07 - Feature Engineering Techniques for Time-Series Data
----
-
-## [7.3. Time Series Analysis in Medical Data](./7.3.%20Time%20Series%20Analysis%20in%20Medical%20Data.md)
+#### [7.3. Time Series Analysis in Medical Data](./7.3.%20Time%20Series%20Analysis%20in%20Medical%20Data.md)
 
 #### [7.3.1. From Raw Signals to Clinical Insight](./7.3.01.%20From%20Raw%20Signals%20to%20Clinical%20Insight.md)
 
@@ -24,6 +18,6 @@ week: W07 - Feature Engineering Techniques for Time-Series Data
 
 #### [7.3.9. Factors Affecting HRV Feature Quality](./7.3.09.%20Factors%20Affecting%20HRV%20Feature%20Quality.md)
 
-## [7.3.10. Common Misinterpretations](./7.3.10.%20Common%20Misinterpretations.md)
+#### [7.3.10. Common Misinterpretations](./7.3.10.%20Common%20Misinterpretations.md)
 
-## [7.3.11. Conclusions](./7.3.11.%20Conclusions.md)
+#### [7.3.11. Conclusions](./7.3.11.%20Conclusions.md)
