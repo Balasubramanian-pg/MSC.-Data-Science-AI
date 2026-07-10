@@ -18,12 +18,12 @@
 
 #### [3.0.9. L1 Regularization (Lasso) in Feature Selection](./3.0.09.%20L1%20Regularization%20%28Lasso%29%20in%20Feature%20Selection.md)
 
-## [3.0.10. Example of Pearson Correlation Filtering](./3.0.10.%20Example%20of%20Pearson%20Correlation%20Filtering.md)
+#### [3.0.10. Example of Pearson Correlation Filtering](./3.0.10.%20Example%20of%20Pearson%20Correlation%20Filtering.md)
 
-## [3.0.11. Multicollinearity and Feature Redundancy](./3.0.11.%20Multicollinearity%20and%20Feature%20Redundancy.md)
+#### [3.0.11. Multicollinearity and Feature Redundancy](./3.0.11.%20Multicollinearity%20and%20Feature%20Redundancy.md)
 
-## [3.0.12. Strategic Application Framework](./3.0.12.%20Strategic%20Application%20Framework.md)
+#### [3.0.12. Strategic Application Framework](./3.0.12.%20Strategic%20Application%20Framework.md)
 
-## [3.0.13. Common Misinterpretations](./3.0.13.%20Common%20Misinterpretations.md)
+#### [3.0.13. Common Misinterpretations](./3.0.13.%20Common%20Misinterpretations.md)
 
-## [3.0.14. Conclusions](./3.0.14.%20Conclusions.md)
+#### [3.0.14. Conclusions](./3.0.14.%20Conclusions.md)
