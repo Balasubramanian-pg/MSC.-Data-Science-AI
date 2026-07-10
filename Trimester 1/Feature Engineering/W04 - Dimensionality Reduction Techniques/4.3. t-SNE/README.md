@@ -1,10 +1,4 @@
----
-title: W04 - Dimensionality Reduction Techniques
-module: Statistical Modelling And Inferencing
-week: W04 - Dimensionality Reduction Techniques
----
-
-## [4.3. t-Distributed Stochastic Neighbor Embedding (t-SNE)](./4.3.%20t-Distributed%20Stochastic%20Neighbor%20Embedding%20%28t-SNE%29.md)
+#### [4.3. t-Distributed Stochastic Neighbor Embedding (t-SNE)](./4.3.%20t-Distributed%20Stochastic%20Neighbor%20Embedding%20%28t-SNE%29.md)
 
 #### [4.3.1. The Limitation of Linear Projections](./4.3.01.%20The%20Limitation%20of%20Linear%20Projections.md)
 
@@ -24,4 +18,4 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.3.9. Common Misinterpretations](./4.3.09.%20Common%20Misinterpretations.md)
 
-## [4.3.10. Conclusions](./4.3.10.%20Conclusions.md)
+#### [4.3.10. Conclusions](./4.3.10.%20Conclusions.md)
