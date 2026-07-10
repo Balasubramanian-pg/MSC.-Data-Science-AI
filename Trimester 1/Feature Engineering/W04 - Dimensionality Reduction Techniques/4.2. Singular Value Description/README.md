@@ -1,10 +1,4 @@
----
-title: W04 - Dimensionality Reduction Techniques
-module: Statistical Modelling And Inferencing
-week: W04 - Dimensionality Reduction Techniques
----
-
-## [4.2. Singular Value Decomposition](./4.2.%20Singular%20Value%20Decomposition.md)
+#### [4.2. Singular Value Decomposition](./4.2.%20Singular%20Value%20Decomposition.md)
 
 #### [4.2.1. From Original Features to Latent Structures](./4.2.01.%20From%20Original%20Features%20to%20Latent%20Structures.md)
 
@@ -24,4 +18,4 @@ week: W04 - Dimensionality Reduction Techniques
 
 #### [4.2.9. The Most Common Misinterpretations](./4.2.09.%20The%20Most%20Common%20Misinterpretations.md)
 
-## [4.2.10. Conclusions](./4.2.10.%20Conclusions.md)
+#### [4.2.10. Conclusions](./4.2.10.%20Conclusions.md)
