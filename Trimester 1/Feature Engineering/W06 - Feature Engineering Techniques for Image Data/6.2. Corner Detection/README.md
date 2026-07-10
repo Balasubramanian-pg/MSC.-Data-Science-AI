@@ -1,10 +1,4 @@
----
-title: W06 - Feature Engineering Techniques for Image Data
-module: Statistical Modelling And Inferencing
-week: W06 - Feature Engineering Techniques for Image Data
----
-
-## [6.2. Corner Detection](./6.2.%20Corner%20Detection.md)
+#### [6.2. Corner Detection](./6.2.%20Corner%20Detection.md)
 
 #### [6.2.1. From Edges to Points of Interest](./6.2.01.%20From%20Edges%20to%20Points%20of%20Interest.md)
 
