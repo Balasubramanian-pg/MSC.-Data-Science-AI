@@ -1,10 +1,5 @@
----
-title: W07 - Feature Engineering Techniques for Time-Series Data
-module: Statistical Modelling And Inferencing
-week: W07 - Feature Engineering Techniques for Time-Series Data
----
+# Week 7: Feature Engineering Techniques for Time-Series Data
 
-## Week 7: Feature Engineering Techniques for Time-Series Data
 ## Feature Engineering Techniques for Time-Series Data
 
 ## [1. Concept Introduction](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%201/Feature%20Engineering/W01%20-%20Overview%20of%20Feature%20Engineering/Readme.md#1-concept-introduction)
