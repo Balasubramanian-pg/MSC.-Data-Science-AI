@@ -14,6 +14,6 @@
 
 #### [3.7.07. Factors Limiting the Fisher Score](./07-370007-factors-limiting-the-fisher-score.md)
 
-## [3.7.8. Common Misinterpretations](./08-378-common-misinterpretations.md)
+#### [3.7.8. Common Misinterpretations](./08-378-common-misinterpretations.md)
 
 #### [3.7.09. Conclusions](./09-370009-conclusions.md)
