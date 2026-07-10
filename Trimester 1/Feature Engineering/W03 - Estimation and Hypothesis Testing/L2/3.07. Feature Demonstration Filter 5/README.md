@@ -2,7 +2,7 @@
 
 #### [3.7.01. Evaluating Class Separability](./01-370001-evaluating-class-separability.md)
 
-#### [3.7.02. The Logic of Discriminative Power](./02-37002-the-logic-of-discriminative-power.md)
+#### [3.7.02. The Logic of Discriminative Power](./02-370002-the-logic-of-discriminative-power.md)
 
 #### [3.7.03. Mathematical Formulation of the Fisher Score](./03-37003-mathematical-formulation-of-the-fisher-score.md)
 
