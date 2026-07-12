@@ -12,7 +12,7 @@ Normal dataset:
 
 Mean:
 
-\bar{x}=\frac{1+2+3}{3}=2
+$$\bar{x}=\frac{1+2+3}{3}=2$$
 
 Now introduce an outlier:
 
