@@ -21,9 +21,9 @@ Typically:
 
 |Z-Score|Interpretation|
 |---|---|
-|\|Z\| < 2|Normal|
-|2 < \|Z\| < 3|Suspicious|
-|\|Z\| > 3|Likely Outlier|
+|$$\|Z\$$| < 2|Normal|
+|$$2 < \|Z\$$| < 3|Suspicious|
+|$$\|Z\$$| > 3|Likely Outlier|
 
 Most normal observations lie within:
 
