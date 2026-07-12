@@ -24,7 +24,7 @@ Now introduce an outlier:
 
 New mean:
 
-\bar{x}=\frac{1+2+300}{3}=101
+$$\bar{x}=\frac{1+2+300}{3}=101$$
 
 A single extreme observation shifts the average dramatically.
 
