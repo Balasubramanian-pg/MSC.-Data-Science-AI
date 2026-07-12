@@ -27,6 +27,4 @@ Typically:
 
 Most normal observations lie within:
 
-$$
--3\sigma \leq x \leq 3\sigma
-$$
+$$-3\sigma \leq x \leq 3\sigma$$
