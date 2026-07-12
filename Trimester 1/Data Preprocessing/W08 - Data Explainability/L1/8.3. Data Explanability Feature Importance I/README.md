@@ -18,4 +18,4 @@
 
 #### [8.3.9. Example of Computing SHAP Values](./8.3.09.%20Example%20of%20Computing%20SHAP%20Values.md)
 
-## [8.3.10. Conclusions](./8.3.10.%20Conclusions.md)
+#### [8.3.10. Conclusions](./8.3.10.%20Conclusions.md)
