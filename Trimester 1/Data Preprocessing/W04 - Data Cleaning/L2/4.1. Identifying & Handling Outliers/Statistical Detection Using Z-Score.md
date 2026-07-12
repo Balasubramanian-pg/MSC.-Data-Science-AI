@@ -4,7 +4,7 @@ Another common method is Z-score analysis.
 
 The Z-score measures how many standard deviations a point lies away from the mean.
 
-genui{"math_block_widget_always_prefetch_v2":{"content":"Z=\frac{x-\mu}{\sigma}"}}
+$$Z=\frac{x-\mu}{\sigma}$$
 
 where:
 
