@@ -2,6 +2,7 @@
 
 The lecture emphasizes a critical principle:
 
+>[!Tip]
 > Never remove an outlier simply because it is an outlier.
 
 Outliers may represent:
