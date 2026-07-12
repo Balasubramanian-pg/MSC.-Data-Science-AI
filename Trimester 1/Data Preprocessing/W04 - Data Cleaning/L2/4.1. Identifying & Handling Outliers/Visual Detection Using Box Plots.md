@@ -20,9 +20,9 @@ $$
 
 Outlier boundaries are typically defined as:
 
-Lower\ Bound = Q1 - 1.5(IQR)
+Lower Bound = Q1 - 1.5(IQR)
 
-Upper\ Bound = Q3 + 1.5(IQR)
+Upper Bound = Q3 + 1.5(IQR)
 
 Any point outside these whiskers becomes a potential outlier.
 
