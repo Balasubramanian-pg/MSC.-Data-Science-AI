@@ -15,4 +15,10 @@ dept_encoded = ohe.fit_transform(data[['Department']])
 dept_columns = ohe.get_feature_names_out(['Department'])
 df_dept = pd.DataFrame(dept_encoded, columns=dept_columns)
 
+# We must explicitly define the hierarchy array for the algorithm
+
+perf_hierarchy = [['Low', 'Medium', 'High']]
+oe = OrdinalEncoder(categories=perf_hierarchy, dtype=int)
+data['Performance_Encoded'] = oe.fit_transform(data[['Performance']])
+
 ```
