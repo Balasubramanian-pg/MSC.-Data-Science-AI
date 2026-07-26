@@ -33,8 +33,6 @@ The factory has two production machines. Based on maintenance records:
 
 Here is the step-by-step solution for **QUESTION 3**.
 
----
-
 ### **Part (a) - Maximum Likelihood Estimation [6 marks]**
 
 **1. Write the likelihood function $L(p)$ for the observed data.**
