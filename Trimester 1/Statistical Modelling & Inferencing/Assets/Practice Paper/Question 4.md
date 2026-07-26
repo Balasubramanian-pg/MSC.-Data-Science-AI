@@ -34,8 +34,6 @@ After the PCA analysis, the municipal body also wants to group the 60 cities int
 
 Here is the step-by-step solution for **QUESTION 4**.
 
----
-
 ### **Part (a) [4 marks]: Principal Component Analysis (PCA)**
 
 **1. Number of Principal Components to Retain (Kaiser Criterion):**
@@ -56,8 +54,6 @@ Cumulative Variance = $45.0\% + 22.5\% + 13.8\%$ = **81.3%**
 
 **3. Why PCA is performed on standardized data:**
 PCA looks for directions (principal components) that maximize the variance in the data. If variables are on completely different scales or units (e.g., measuring carbon emissions in millions of tons vs. particulate matter in micrograms), the variables with larger numerical ranges will exhibit artificially higher variance. If raw data is used, PCA will incorrectly give these large-scale variables the most weight, ignoring the actual underlying correlations. Standardizing the data (scaling variables to have a mean of 0 and a variance of 1) ensures that every environmental indicator contributes equally to the analysis at the start.
-
----
 
 ### **Part (b) [3 marks]: Hierarchical Clustering and Linkage Methods**
 
@@ -80,8 +76,6 @@ A large jump in merge distance indicates that we are forcing two highly dissimil
 **3. Ward’s Linkage vs. Single Linkage:**
 *   **Ward’s Linkage:** This method evaluates the distance between two clusters by calculating the increase in the total within-cluster variance (or Sum of Squared Errors) after merging them. It seeks to minimize this variance, which tends to produce compact, spherical, and relatively evenly-sized clusters.
 *   **Single Linkage:** This method defines the distance between two clusters as the shortest distance between any single data point in the first cluster and any single data point in the second cluster (the "nearest neighbor" approach). While it can identify non-elliptical cluster shapes, it is highly prone to "chaining" (where loose, elongated clusters merge prematurely due to a single close pair of points).
-
----
 
 ### **Part (c) [3 marks]: Comparing K-Means and Hierarchical Clustering**
 
