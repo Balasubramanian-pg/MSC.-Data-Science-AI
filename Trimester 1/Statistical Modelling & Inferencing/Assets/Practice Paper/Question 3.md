@@ -66,8 +66,6 @@ $\widehat{\text{Odds}} = \frac{\hat{p}}{1-\hat{p}} = \frac{0.20}{1 - 0.20} = \fr
 2.  **Asymptotic Efficiency:** Among all consistent estimators, the MLE has the smallest possible variance for large sample sizes. It achieves the Cramér-Rao lower bound, making it the most "efficient" estimator asymptotically.
 *(Note: Another valid property is **Asymptotic Normality**, meaning as the sample size grows, the distribution of the MLE tends towards a Normal distribution centered on the true parameter).*
 
----
-
 ### **Part (b) - Bayesian Inference [4 marks]**
 
 **1. Calculate the posterior probability that the first defective board came from Machine 1.**
