@@ -1,12 +1,6 @@
-Here is the cleaned-up, properly structured, and formatted version of your practice paper. I have fixed the broken tables, organized the layout, and converted the messy equations into professional mathematical notation so it is easy to read. 
-
-***
-
 # Statistical Modelling and Inferencing
 ### End Term Examination - Practice Paper
 **Total Marks:** 40
-
----
 
 ## QUESTION 1 (10 Marks)
 A mobile phone manufacturer surveyed 400 customers to study whether the preferred phone brand (Brand X, Brand Y, or Brand Z) is associated with the customer’s age group. The observed frequencies are:
