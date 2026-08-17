@@ -42,7 +42,26 @@ To create effective visualizations, these attributes must be applied with purpos
 While visual attributes are powerful, they must be used sparingly and with intention. Overusing them can lead to **clutter** and **cognitive fatigue**, where the message becomes lost because too many elements are competing for the viewer's attention. Designers should prioritize **accuracy and simplicity** over purely aesthetic decorations to ensure the story remains credible and clear.
 
 ## 4.	What are the difference between Dimensions and Measures in tableau environment? What is a calculated field and how is it useful in enhancing the effectiveness of visuals?
-5.	What is use of subplots and when are they used is visualizations? How do you generate subplots in python environment (mentioning the syntax code for generating subplots is sufficient)
+
+While the sources do not provide a specific glossary for the Tableau user interface, they define the fundamental data concepts that tools like **Tableau** use to organise information. In such an environment, the distinction between **Dimensions** and **Measures** is based on the difference between **categorical** and **quantitative** data.
+
+### Dimensions vs. Measures
+The sources distinguish these two types of data as follows:
+*   **Dimensions (Categorical Data):** These represent the variables that identify **categories**, such as departments, regions, or products. In a dashboard, these are often used for **filtering** and creating **subsets** to understand how different units are performing. Dimensions provide the **context** for your analysis, allowing you to slice data into meaningful groups, such as "sales by region".
+*   **Measures (Quantitative Data):** These are the **numerical values** that you track and portray in your visuals, such as sales volume, revenue, profits, calls handled, or GDP growth. Measures are typically used for **aggregation functions** (like sum or average) to show the "how much" of a phenomenon.
+
+### Calculated Fields
+A **calculated field** (referred to in the sources as **constructing variables** or **creating metrics**) is a new data point created by performing arithmetic operations or transformations on existing raw data. This is necessary when the specific variable of interest is not "readily available" in the original dataset.
+
+### Usefulness in Enhancing Visual Effectiveness
+Constructing these custom metrics is vital for creating **actionable insights** and improving the overall effectiveness of a visualisation in several ways:
+*   **Providing Context:** Raw numbers alone are often insufficient; calculated fields allow you to contextualise them against **targets, benchmarks, or goals**. For instance, showing that 7% of a target is achieved is more illustrative than just showing the raw sales figure.
+*   **Enabling Deeper Analysis:** They allow for the creation of metrics like **conversion rates** (e.g., number of purchases divided by total visits) or **rates of growth**, which can reveal trends that absolute numbers might miss.
+*   **Simplifying the Narrative:** By calculating a single metric—such as the "unmet gap" in manpower planning—you can use a visual (like a stacked bar with a negative axis) to intuitively drive home a complex point.
+*   **Supporting Interaction:** Custom metrics enable the **drill-down** functionality in dashboards, allowing users to move from aggregate trends to specific operational details to perform **root cause analysis**.
+
+  
+## 5.	What is use of subplots and when are they used is visualizations? How do you generate subplots in python environment (mentioning the syntax code for generating subplots is sufficient)
 6.	How is mathplotlib different from seaborn library in python environment – highlight the key differences between them
 7.	What is role of filter in powerbi environment and how do they help in dashboard design?
 
