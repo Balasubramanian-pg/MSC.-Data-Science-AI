@@ -62,6 +62,8 @@ Constructing these custom metrics is vital for creating **actionable insights** 
 
   
 ## 5.	What is use of subplots and when are they used is visualizations? How do you generate subplots in python environment (mentioning the syntax code for generating subplots is sufficient)
-6.	How is mathplotlib different from seaborn library in python environment – highlight the key differences between them
-7.	What is role of filter in powerbi environment and how do they help in dashboard design?
+
+## 6.	How is mathplotlib different from seaborn library in python environment – highlight the key differences between them
+
+## 7.	What is role of filter in powerbi environment and how do they help in dashboard design?
 
