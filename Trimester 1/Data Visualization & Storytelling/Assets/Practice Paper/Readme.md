@@ -1,6 +1,7 @@
 DVST Sample question paper 
 [please note that these are indicative questions and actual questions in the exam may vary]
-1.	What are the seven stages of data visualization and explain their importance in creating effective visualizations?
+
+## 1.	What are the seven stages of data visualization and explain their importance in creating effective visualizations?
 Every data visualisation exercise follows seven established stages to ensure that messages are delivered effectively to the audience. While these steps often appear sequential, they frequently run in parallel and, most importantly, **iteratively**.
 
 The seven stages of data visualisation are as follows:
@@ -15,7 +16,8 @@ The seven stages of data visualisation are as follows:
 
 **Importance of the Seven-Stage Process**
 Following these stages is essential for creating **expressive and effective** visualisations. They guide the creator from raw data to actionable insights, ensuring that the final output is credible, easy to process, and retained at a higher rate by the audience. Because the process is iterative, it allows for constant improvement, ensuring the visual remains relevant and compelling.
-3.	Explain the use of visual attributes for enhance designs or visualizations?
+
+## 3.	Explain the use of visual attributes for enhance designs or visualizations?
 4.	What are the difference between Dimensions and Measures in tableau environment? What is a calculated field and how is it useful in enhancing the effectiveness of visuals?
 5.	What is use of subplots and when are they used is visualizations? How do you generate subplots in python environment (mentioning the syntax code for generating subplots is sufficient)
 6.	How is mathplotlib different from seaborn library in python environment – highlight the key differences between them
