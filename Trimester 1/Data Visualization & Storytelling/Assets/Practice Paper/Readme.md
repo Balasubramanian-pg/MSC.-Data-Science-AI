@@ -18,7 +18,30 @@ The seven stages of data visualisation are as follows:
 Following these stages is essential for creating **expressive and effective** visualisations. They guide the creator from raw data to actionable insights, ensuring that the final output is credible, easy to process, and retained at a higher rate by the audience. Because the process is iterative, it allows for constant improvement, ensuring the visual remains relevant and compelling.
 
 ## 3.	Explain the use of visual attributes for enhance designs or visualizations?
-4.	What are the difference between Dimensions and Measures in tableau environment? What is a calculated field and how is it useful in enhancing the effectiveness of visuals?
+Visual attributes, also known as **pre-attentive attributes**, are specific design elements that the human brain processes almost instantaneously, even before conscious attention is focused on them. These attributes are processed by **iconic memory**, which has a very large capacity but lasts only a fraction of a second, allowing for **rapid scanning** and detection of patterns.
+
+Strategic use of these attributes enhances visualizations by guiding the audience's attention to key insights and making the information easier to process.
+
+### Types of Visual Attributes
+Several attributes can be manipulated to improve the effectiveness of a design:
+*   **Color (Hue and Intensity):** Color can be used to highlight specific categories or signal a meaningful message, such as using red to draw attention to high-risk issues. **Intensity** (dark vs. light) naturally indicates the strength of a phenomenon, where darker shades typically represent higher values.
+*   **Size:** The size of an element communicates its importance. Larger bubbles or shapes are naturally perceived as more significant, such as highlighting higher CO2 emissions with larger bubble sizes.
+*   **Thickness (Line Width):** Thicker lines can reflect the relative importance of a data series, such as emphasizing current-year fundraising over last-year data.
+*   **Shape and Orientation:** Deviations in shape or a slanted line in a group of straight ones will immediately stand out to the viewer.
+*   **Enclosure:** Drawing a border around a specific group of objects creates a common region, focusing the audience's attention on that particular space.
+
+### Enhancing Design Through Strategic Use
+To create effective visualizations, these attributes must be applied with purpose:
+
+*   **Creating Visual Hierarchy:** By combining attributes like color, size, and bold text, designers can build a natural order. This allows readers to perceive the most important information first, reducing the **cognitive load** required to understand the visual.
+*   **Strategic Positioning:** Human attention is preconditioned to follow a **"Z" pattern**—reading from top to bottom and left to right. Therefore, the most critical information should be placed in the **top-left or center** areas of a dashboard to receive the greatest emphasis.
+*   **Consistency:** Maintaining the same visual attributes across different graphics is crucial for **recall and intuitive understanding**. For instance, if a specific region is assigned the color blue in one chart, it should remain blue throughout the entire presentation to help the audience quickly relate the color to that category.
+*   **Using Contrast:** Contrast is used to emphasize a particular data point, de-emphasize background information, or maintain a neutral space. A plain background often provides the best contrast for highlighting key graphics.
+
+### Importance of Judicious Use
+While visual attributes are powerful, they must be used sparingly and with intention. Overusing them can lead to **clutter** and **cognitive fatigue**, where the message becomes lost because too many elements are competing for the viewer's attention. Designers should prioritize **accuracy and simplicity** over purely aesthetic decorations to ensure the story remains credible and clear.
+
+## 4.	What are the difference between Dimensions and Measures in tableau environment? What is a calculated field and how is it useful in enhancing the effectiveness of visuals?
 5.	What is use of subplots and when are they used is visualizations? How do you generate subplots in python environment (mentioning the syntax code for generating subplots is sufficient)
 6.	How is mathplotlib different from seaborn library in python environment – highlight the key differences between them
 7.	What is role of filter in powerbi environment and how do they help in dashboard design?
