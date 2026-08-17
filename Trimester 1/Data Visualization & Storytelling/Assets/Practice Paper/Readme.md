@@ -88,6 +88,31 @@ ax.plot(data_x, data_y3, color='green') # Third subplot
 ```
 
 ## 6.	How is mathplotlib different from seaborn library in python environment – highlight the key differences between them
+In the Python environment, **Matplotlib** and **Seaborn** are both powerful libraries for data visualisation, but they differ significantly in their level of abstraction, ease of use, and default aesthetics.
+
+The key differences between them include:
+
+### 1. Hierarchy and Relationship
+*   **Matplotlib** is the fundamental, open-source plotting library within the Python ecosystem. It was originally inspired by the MATLAB environment.
+*   **Seaborn** is an advanced visualisation library that is **built on top of Matplotlib**. It leverages Matplotlib’s underlying power while providing a more high-level interface.
+
+### 2. Level of Abstraction and Coding Effort
+*   **Matplotlib** is a **low-level library**, meaning it requires more lines of code to create and customise a plot. The user must manually define elements such as figures, axes, "spines" (the borders of the plotting area), and legends.
+*   **Seaborn** provides **high-level functions** that simplify complex visualisations. It is designed to create attractive statistical graphics with significantly less code, often handling the "heavy lifting" of data aggregation and mapping internally.
+
+### 3. Aesthetics and Default Styling
+*   **Matplotlib** defaults to basic, "bland" styles. To make a graph visually appealing, the user must manually invoke **style sheets** (like the '538' template) or manually adjust colors, line widths, and grid settings.
+*   **Seaborn** comes with **pre-established templates** and styles, such as `whitegrid`, which provide a professional and polished look by default.
+
+### 4. Specialised Plot Types
+*   While Matplotlib excels at native, basic plots like histograms, bar charts, and line graphs, **Seaborn** is often preferred for **advanced statistical plots**.
+*   The sources highlight that Seaborn is particularly useful for creating complex multivariate visualisations such as **swarm plots** (which plot every individual data point), **joint plots**, and **pair plots**.
+
+### 5. Integration with Data Frames
+*   **Matplotlib** can work with various data types but often requires the user to explicitly define the X and Y variables from an array or list.
+*   **Seaborn** is highly integrated with **Pandas data frames**, making it easier to parse structured data directly into a visual format.
+
+In summary, **Matplotlib** offers ultimate **granular control** for those who want to customise every specific element of a graph, while **Seaborn** offers a **streamlined, aesthetically pleasing** approach for rapid statistical exploration and storytelling.
 
 ## 7.	What is role of filter in powerbi environment and how do they help in dashboard design?
 
