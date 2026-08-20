@@ -19,11 +19,6 @@ For each attribute:
 * Identify its **attribute type**.
 * Explain why correctly identifying attribute types is important before **preprocessing and machine learning**.
 
-This question has **two parts**:
-
-1. Identify the **attribute type** of each column.
-2. Explain why attribute types must be correctly identified before **preprocessing and machine learning**.
-
 ### Part 1: Attribute Classification
 
 | Attribute                | Example      | Attribute Type             | Explanation                                                                                                                       |
