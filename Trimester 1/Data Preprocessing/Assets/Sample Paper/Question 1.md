@@ -1,6 +1,4 @@
-Yes. The question is essentially asking you to **map the five KDD stages to the healthcare AI use case**. A clean structure would be:
-
-## Question 1.1 [5 Marks]
+# Question 1.1 [5 Marks]
 
 **Scenario:**
 An online healthcare company wants to develop an AI system that predicts the likelihood of lifestyle diseases using **patient demographics, laboratory reports, wearable device data, and medical history**.
@@ -53,6 +51,7 @@ The relationship is:
 
 The **data mining stage builds/discovers the patterns**, while **knowledge evaluation determines whether those patterns are actually useful and trustworthy**.
 
+# Solution
 Here is the structured response detailing the application of the Knowledge Discovery in Databases (KDD) process to the healthcare AI project, formatted as requested.
 
 *   **Data Selection**  
