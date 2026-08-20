@@ -1,4 +1,4 @@
-## Question 2.1 [5 Marks]
+# Question 2.1 [5 Marks]
 
 This question has **two parts**:
 
