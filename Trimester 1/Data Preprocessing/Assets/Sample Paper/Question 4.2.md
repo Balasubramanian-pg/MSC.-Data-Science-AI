@@ -134,5 +134,6 @@ For **8 million users and 500+ attributes**, I would use a staged approach:
 
 ### Exam-Friendly Conclusion
 
+>[!Note]
 > Sampling reduces the **number of observations**, feature selection reduces the **number of original attributes**, feature extraction reduces dimensionality by creating a smaller representation of the data, and feature creation improves the dataset by generating more informative predictors. Used together, these techniques can reduce computation time, memory usage, noise, and model complexity while preserving or improving predictive performance.
 
