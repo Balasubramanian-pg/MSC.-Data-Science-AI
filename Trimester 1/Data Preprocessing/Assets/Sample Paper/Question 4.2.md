@@ -1,4 +1,18 @@
-## Question 4.2 [5 Marks]
+# Question 4.2 [5 Marks]
+A social media company has collected data from **8 million users** containing over **500 attributes**. The analytics team wants to reduce computation time while maintaining prediction accuracy.
+
+### Task
+
+Recommend a **preprocessing strategy** by discussing the role of the following techniques:
+
+* Sampling
+* Feature selection
+* Feature extraction (Dimensionality Reduction)
+* Feature creation
+
+### Justification
+
+Justify how each technique contributes to **efficient and effective machine learning**.
 
 This question is about **reducing the computational burden of a very large dataset without unnecessarily sacrificing predictive performance**.
 
