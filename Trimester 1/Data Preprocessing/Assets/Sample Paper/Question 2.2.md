@@ -1,4 +1,16 @@
-## Question 2.2 [5 Marks]
+# Question 2.2 [5 Marks]
+A multinational retail company combines sales data collected from different countries. During preprocessing, the following issues are observed:
+
+* Product prices are stored in different currencies.
+* Country names appear in multiple formats.
+* Dates follow different regional conventions.
+* Product categories use different naming standards.
+* Some transactions appear multiple times.
+
+### Task
+
+Discuss the **preprocessing challenges** involved and recommend **suitable techniques** to resolve each issue.
+
 
 This question is asking you to identify the **data preprocessing problem** in each situation and then recommend an appropriate **data cleaning/integration technique**.
 
