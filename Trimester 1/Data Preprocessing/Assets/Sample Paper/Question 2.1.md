@@ -56,5 +56,5 @@ For **5 marks**, a strong answer can follow:
 **1 mark:** Importance of correctly identifying attribute types
 
 **Core idea:**
-
+>[!Note]
 > **Attribute type determines how the data should be represented, cleaned, transformed, and ultimately used by the machine learning algorithm.**
