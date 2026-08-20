@@ -1,4 +1,15 @@
-## Question 1.2 [5 Marks]
+# Question 1.2 [5 Marks]
+
+An e-commerce company wants to perform the following analyses:
+• Predict whether a customer is likely to return a purchased product.
+• Discover groups of customers based on browsing behaviour.
+• Recommend products that are frequently bought together.
+• Estimate the future spending value of each customer.
+For each business objective,
+i. Identify whether it is Predictive or Descriptive data mining.
+ii. Recommend one suitable analytical technique.
+iii. Justify your recommendation.
+
 
 This question is testing whether you can **identify the type of data mining problem, choose an appropriate technique, and justify why that technique fits the business objective**.
 
