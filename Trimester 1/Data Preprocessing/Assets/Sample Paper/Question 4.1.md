@@ -1,5 +1,17 @@
 ## Question 4.1 [5 Marks]
 
+A food delivery company wants to develop a machine learning model to predict delivery time. Before model development, the data scientist performs the following preprocessing activities:
+
+* Data integration
+* Feature engineering
+* Data normalization
+* Data reduction
+* Preparing an analysis-ready dataset
+
+### Task
+
+Explain the **purpose of each activity** and discuss how it improves the **quality and performance of the machine learning model**.
+
 This question is asking you to explain **why each preprocessing activity is performed** and how it ultimately helps the machine learning model predict delivery time more accurately.
 
 ### Recommended Answer Structure
