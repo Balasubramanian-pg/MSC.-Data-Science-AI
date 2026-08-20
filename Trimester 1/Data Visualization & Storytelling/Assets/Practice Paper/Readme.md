@@ -17,7 +17,7 @@ The seven stages of data visualisation are as follows:
 **Importance of the Seven-Stage Process**
 Following these stages is essential for creating **expressive and effective** visualisations. They guide the creator from raw data to actionable insights, ensuring that the final output is credible, easy to process, and retained at a higher rate by the audience. Because the process is iterative, it allows for constant improvement, ensuring the visual remains relevant and compelling.
 
-## 3.	Explain the use of visual attributes for enhance designs or visualizations?
+## 2.	Explain the use of visual attributes for enhance designs or visualizations?
 Visual attributes, also known as **pre-attentive attributes**, are specific design elements that the human brain processes almost instantaneously, even before conscious attention is focused on them. These attributes are processed by **iconic memory**, which has a very large capacity but lasts only a fraction of a second, allowing for **rapid scanning** and detection of patterns.
 
 Strategic use of these attributes enhances visualizations by guiding the audience's attention to key insights and making the information easier to process.
@@ -41,7 +41,7 @@ To create effective visualizations, these attributes must be applied with purpos
 ### Importance of Judicious Use
 While visual attributes are powerful, they must be used sparingly and with intention. Overusing them can lead to **clutter** and **cognitive fatigue**, where the message becomes lost because too many elements are competing for the viewer's attention. Designers should prioritize **accuracy and simplicity** over purely aesthetic decorations to ensure the story remains credible and clear.
 
-## 4.	What are the difference between Dimensions and Measures in tableau environment? What is a calculated field and how is it useful in enhancing the effectiveness of visuals?
+## 3.	What are the difference between Dimensions and Measures in tableau environment? What is a calculated field and how is it useful in enhancing the effectiveness of visuals?
 
 While the sources do not provide a specific glossary for the Tableau user interface, they define the fundamental data concepts that tools like **Tableau** use to organise information. In such an environment, the distinction between **Dimensions** and **Measures** is based on the difference between **categorical** and **quantitative** data.
 
@@ -61,7 +61,7 @@ Constructing these custom metrics is vital for creating **actionable insights** 
 *   **Supporting Interaction:** Custom metrics enable the **drill-down** functionality in dashboards, allowing users to move from aggregate trends to specific operational details to perform **root cause analysis**.
 
   
-## 5.	What is use of subplots and when are they used is visualizations? How do you generate subplots in python environment (mentioning the syntax code for generating subplots is sufficient)
+## 4.	What is use of subplots and when are they used is visualizations? How do you generate subplots in python environment (mentioning the syntax code for generating subplots is sufficient)
 
 Subplots are used in visualisations to present multiple data series together in a single snapshot, allowing for **simultaneous comparison** across different variables. They are particularly useful when you want to observe different phenomena (such as temperature, precipitation, and wind) that share a **common axis**—most often a shared x-axis like a date range—even if their y-axis scales differ.
 
@@ -87,7 +87,7 @@ ax.plot(data_x, data_y2, color='blue')  # Second subplot
 ax.plot(data_x, data_y3, color='green') # Third subplot
 ```
 
-## 6.	How is mathplotlib different from seaborn library in python environment – highlight the key differences between them
+## 5.	How is mathplotlib different from seaborn library in python environment – highlight the key differences between them
 In the Python environment, **Matplotlib** and **Seaborn** are both powerful libraries for data visualisation, but they differ significantly in their level of abstraction, ease of use, and default aesthetics.
 
 The key differences between them include:
@@ -114,7 +114,7 @@ The key differences between them include:
 
 In summary, **Matplotlib** offers ultimate **granular control** for those who want to customise every specific element of a graph, while **Seaborn** offers a **streamlined, aesthetically pleasing** approach for rapid statistical exploration and storytelling.
 
-## 7.	What is role of filter in powerbi environment and how do they help in dashboard design?
+## 6.	What is role of filter in powerbi environment and how do they help in dashboard design?
 In the **Power BI** environment—and in dashboard design more broadly—filters are a critical component of **interactivity**, allowing creators to transform static data into a dynamic, "reader-driven" experience. 
 
 ### **Role of Filters in Power BI**
