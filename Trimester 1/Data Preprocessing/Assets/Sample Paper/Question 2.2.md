@@ -11,7 +11,7 @@ A multinational retail company combines sales data collected from different coun
 
 Discuss the **preprocessing challenges** involved and recommend **suitable techniques** to resolve each issue.
 
-
+# Solution
 This question is asking you to identify the **data preprocessing problem** in each situation and then recommend an appropriate **data cleaning/integration technique**.
 
 ### Recommended Answer Structure
