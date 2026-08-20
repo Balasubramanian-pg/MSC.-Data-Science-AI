@@ -51,3 +51,26 @@ So the final mapping is:
 **Future spending → Predictive → Regression**
 
 One subtle point: **recommendation systems can also be built using predictive techniques**, but given the wording "frequently bought together," **association rule mining** is the most direct answer for this question.
+
+# Solution
+Here is the structured response for Question 1.2, adhering to the specified format and analytical requirements.
+
+*   **Business Objective**: Predict whether a customer will return a purchased product.  
+    *   **Type**: Predictive.  
+    *   **Suitable Technique**: Classification.  
+    *   **Justification**: The target outcome consists of discrete, predefined categorical states. A classification model evaluates historical customer profiles and transaction records to assign a probabilistic return status to future purchases.
+
+*   **Business Objective**: Discover groups of customers based on browsing behaviour.  
+    *   **Type**: Descriptive.  
+    *   **Suitable Technique**: Clustering.  
+    *   **Justification**: Predefined market segments are absent in this context. Clustering algorithms partition the dataset by identifying inherent similarities across behavioral metrics, including session duration, page navigation paths, and accessed product categories.
+
+*   **Business Objective**: Recommend products that are frequently bought together.  
+    *   **Type**: Descriptive.  
+    *   **Suitable Technique**: Association Rule Mining.  
+    *   **Justification**: The analytical goal requires uncovering co-occurrence relationships within transactional databases. This technique isolates items that consistently appear in identical purchase events, establishing direct product linkages for recommendation engines.
+
+*   **Business Objective**: Estimate the future spending value of each customer.  
+    *   **Type**: Predictive.  
+    *   **Suitable Technique**: Regression.  
+    *   **Justification**: Future expenditure represents a continuous numerical variable. Regression models synthesize historical purchase frequency, recency, and behavioral indicators to calculate a specific monetary estimate for individual accounts.
