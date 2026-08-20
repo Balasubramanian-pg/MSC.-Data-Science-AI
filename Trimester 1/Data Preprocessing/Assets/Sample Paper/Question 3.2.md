@@ -12,7 +12,6 @@ This question asks you to differentiate **two pairs of preprocessing concepts**.
 | **Example**       | Age values from 20 to 60 can be converted to values between 0 and 1 | A CGPA of 8.5 can be converted into a z-score based on the mean and standard deviation of CGPA |
 | **Useful when**   | Features need a common bounded scale                                | Features have different units/scales and algorithms benefit from centered data                 |
 
-genui{"learning_viz":{"type_id":"STANDARD_SCORE_Z"}}
 
 **Example:**
 
