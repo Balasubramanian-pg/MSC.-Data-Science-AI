@@ -1,4 +1,14 @@
-## Question 3.2 [5 Marks]
+# Question 3.2 [5 Marks]
+
+Differentiate between the following with suitable examples:
+
+### i. Normalization and Standardization
+
+### ii. Data Cleaning and Data Transformation
+
+### Task
+
+Explain why each technique serves a **different purpose during data preprocessing**.
 
 This question asks you to differentiate **two pairs of preprocessing concepts**. The easiest way to score well is to define each concept, give an example, and explain its purpose.
 
