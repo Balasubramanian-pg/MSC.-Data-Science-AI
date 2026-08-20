@@ -1,5 +1,24 @@
 # Question 2.1 [5 Marks]
 
+A university maintains the following student database.
+
+| Attribute            | Example      |
+| -------------------- | ------------ |
+| Student ID           | S2026123     |
+| Name                 | Ananya       |
+| Gender               | Female       |
+| Semester             | 3            |
+| CGPA                 | 8.72         |
+| Department           | Data Science |
+| Scholarship Eligible | Yes          |
+
+### Task
+
+For each attribute:
+
+* Identify its **attribute type**.
+* Explain why correctly identifying attribute types is important before **preprocessing and machine learning**.
+
 This question has **two parts**:
 
 1. Identify the **attribute type** of each column.
