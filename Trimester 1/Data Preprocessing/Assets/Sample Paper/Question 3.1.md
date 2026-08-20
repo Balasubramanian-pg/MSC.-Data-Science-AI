@@ -1,4 +1,20 @@
-## Question 3.1 [5 Marks]
+# Question 3.1 [5 Marks]
+A telecom company is preparing customer data for churn prediction. During data profiling, the following problems are identified:
+
+* Missing monthly recharge amounts
+* Invalid customer ages
+* Duplicate customer IDs
+* Different spellings of city names
+* Extremely high recharge values due to typing mistakes
+* Blank occupation values
+
+### Task
+
+For each issue:
+
+* Identify the **data quality problem**.
+* Recommend an appropriate **preprocessing technique**.
+* Justify why your chosen technique is suitable.
 
 This question tests whether you can **identify the data quality problem, choose the right preprocessing technique, and explain why it is appropriate**.
 
