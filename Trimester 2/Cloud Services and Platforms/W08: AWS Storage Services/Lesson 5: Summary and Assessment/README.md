@@ -1,4 +1,3 @@
-# Migration in progress
 # W08: AWS Storage Services - Lesson 5: Summary and Assessment
 
 This module covers the AWS storage portfolio: object storage with Amazon S3, block storage with Amazon EBS, file storage with Amazon EFS and Amazon FSx, hybrid storage with AWS Storage Gateway, data transfer with AWS DataSync and the Snow Family, and centralised data protection with AWS Backup. The goal is to select and configure the right storage service for any workload based on data type, access pattern, durability, performance, and cost.
@@ -208,4 +207,209 @@ EBS and EFS are both storage services, but they solve fundamentally different pr
 ### EFS Storage Classes
 
 | Storage Class | Designed For | Latency | Min File Size |
-|-
+|---|---|---|---|
+| EFS Standard | Frequently accessed data | Sub-millisecond | None |
+| EFS Infrequent Access | Data accessed a few times per quarter | Tens of milliseconds | 128 KiB |
+| EFS Archive | Data accessed a few times per year | Tens of milliseconds | 128 KiB |
+
+- EFS offers three throughput modes: Bursting, Provisioned, and Elastic.
+- EFS Archive is only supported for file systems with Elastic throughput.
+- EBS snapshots are incremental and stored in S3. EFS backups use AWS Backup.
+
+### Decision Framework
+
+```mermaid
+flowchart TD
+    A[EBS vs EFS Decision] --> B{Shared Access?}
+    B -->|No| C[EBS]
+    B -->|Yes| D[EFS]
+    C --> E{Workload?}
+    E -->|General| F[gp3]
+    E -->|Database| G[io2 Block Express]
+    E -->|Throughput| H[st1]
+    D --> I{Access Frequency?}
+    I -->|Frequent| J[EFS Standard]
+    I -->|Infrequent| K[EFS IA]
+    I -->|Rare| L[EFS Archive]
+```
+
+> [!Important]
+> **The concurrent access distinction is the first question**: If multiple instances or containers need to read and write the same data at the same time, you need EFS. If a single instance needs a high-performance block device for a database or boot volume, you need EBS. There is no overlap for this primary decision.
+
+## Integrated View
+
+```mermaid
+flowchart TD
+    A[Data Type] --> B{Object?}
+    B -->|Yes| C[S3]
+    B -->|No| D{Block?}
+    D -->|Yes| E[EBS]
+    D -->|No| F{File?}
+    F -->|NFS Linux| G[EFS]
+    F -->|SMB Windows| H[FSx for Windows]
+    F -->|Lustre HPC| I[FSx for Lustre]
+    A --> J{Hybrid?}
+    J -->|Yes| K[Storage Gateway]
+    A --> L{Transfer?}
+    L -->|Online| M[DataSync]
+    L -->|Offline| N[Snow Family]
+    A --> O{Protection?}
+    O -->|Centralised| P[AWS Backup]
+```
+
+- Storage decisions start with the data type: object, block, or file.
+- Each data type maps to a primary service: S3, EBS, EFS or FSx.
+- Hybrid and transfer services extend storage beyond AWS Regions.
+- AWS Backup provides centralised protection across all services.
+- Encryption and access control apply at every layer.
+- Cost optimisation is continuous: lifecycle policies, right-sizing, and storage class selection.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Compare object, block, and file storage and give an AWS service for each.
+2. Compare the four S3 bucket types and their use cases.
+3. List the S3 storage classes and describe the access pattern each is designed for.
+4. Explain how S3 lifecycle policies work and describe a common transition pattern.
+5. Describe the constraints on S3 lifecycle transitions.
+6. Explain how S3 versioning and Object Lock protect data.
+7. Compare IAM policies and bucket policies for S3 access control.
+8. Explain why ACLs are disabled by default for new S3 buckets.
+9. Describe the four levels of S3 Block Public Access and how S3 applies the most restrictive combination.
+10. Compare SSE-S3, SSE-KMS, DSSE-KMS, and SSE-C encryption options.
+11. Explain the April 2026 change to SSE-C encryption on new buckets.
+12. Describe the purpose of IAM Access Analyzer for S3.
+13. Explain the security considerations for presigned URLs.
+14. Compare EBS volume types and their performance characteristics.
+15. Explain the fundamental difference between EBS and EFS.
+16. Describe the AZ scope of EBS and EFS and how it affects architecture.
+17. Compare the durability and availability of EBS and EFS.
+18. Describe the EFS storage classes and how lifecycle management works.
+19. Explain when to use EBS and when to use EFS.
+20. Compare S3, EBS, EFS, and FSx across access protocol, scope, and use case.
+
+### Scenario Questions
+
+**Scenario 1: Data Lake and Analytics**
+A company needs to store petabytes of structured and unstructured data for analytics and machine learning. What should they use?
+
+- Use Amazon S3 with Table buckets for Iceberg-based data lakes.
+- Use lifecycle policies to transition older data to lower-cost storage classes.
+- Use S3 Intelligent-Tiering for unknown access patterns.
+- Enable versioning and Object Lock for compliance.
+- Use S3 Vectors for RAG and semantic search workloads.
+
+**Scenario 2: Compliance and Immutable Retention**
+A financial services firm needs to store regulatory records for seven years with immutable retention. How should they configure S3?
+
+- Enable versioning on the bucket.
+- Enable Object Lock in Compliance mode.
+- Set a default retention period of seven years.
+- Use S3 Glacier Deep Archive for long-term storage.
+- Enable CloudTrail logging for audit purposes.
+- Use Bucket owner enforced for Object Ownership.
+
+**Scenario 3: Private S3 Access from a VPC**
+A private subnet needs to access S3 without going through a NAT gateway. How do you configure this?
+
+- Create a gateway endpoint for S3.
+- Add the endpoint as a target in the private subnet route table.
+- Update the bucket policy to allow access only from the VPC endpoint using the `aws:SourceVpce` condition.
+- Gateway endpoints are free and eliminate NAT data processing charges.
+
+**Scenario 4: MySQL Database**
+A company needs to run a MySQL database on EC2 with high IOPS and low latency. What should they use?
+
+- Use EBS with io2 Block Express volumes.
+- Provision 100,000+ IOPS for the database workload.
+- Use EBS snapshots for backup.
+- Enable encryption at rest with KMS.
+- Deploy across multiple AZs using a Multi-AZ database architecture.
+
+**Scenario 5: Containerised Web Application**
+A containerised web application runs on ECS across multiple AZs and needs shared access to uploaded content. What should they use?
+
+- Use EFS with a Regional file system for multi-AZ access.
+- Mount the EFS file system on all ECS tasks.
+- Use EFS Lifecycle Management to move older content to IA.
+- Use General Purpose performance mode for latency-sensitive access.
+- Enable encryption at rest and in transit.
+
+**Scenario 6: Centralised Backup**
+A company runs workloads across EC2, RDS, EFS, and DynamoDB. They need a single backup policy across all services. What should they use?
+
+- Use AWS Backup.
+- Define backup policies once and apply them across all supported services.
+- Use tag-based policies for automatic resource assignment.
+- Configure cross-Region and cross-account backup for disaster recovery.
+- Use logically air-gapped vaults for ransomware protection.
+
+**Scenario 7: Large-Scale Data Migration**
+A company needs to migrate 500 TB of data from its data center to AWS. Network transfer would take months. What should they use?
+
+- Use AWS Snowball Edge Storage Optimized devices.
+- Order multiple devices and transfer data locally.
+- Ship the devices back to AWS for upload to S3.
+- Data is encrypted end-to-end with KMS.
+- For ongoing transfers after migration, use DataSync.
+
+**Scenario 8: Windows Workload with Shared Storage**
+A company needs to run a Windows application that requires shared file storage. What should they use?
+
+- EFS is Linux-only, so it is not suitable for Windows.
+- Use FSx for Windows File Server instead.
+- Use SMB file shares for shared access.
+- Integrate with Active Directory for authentication.
+
+```mermaid
+flowchart TD
+    A[Storage Assessment] --> B{Data Type?}
+    B -->|Object| C[S3]
+    B -->|Block| D[EBS]
+    B -->|File| E{Protocol?}
+    E -->|NFS| F[EFS]
+    E -->|SMB| G[FSx for Windows]
+    E -->|Lustre| H[FSx for Lustre]
+    A --> I{Hybrid?}
+    I -->|Yes| J[Storage Gateway]
+    A --> K{Transfer?}
+    K -->|Online| L[DataSync]
+    K -->|Offline| M[Snow Family]
+    A --> N{Protection?}
+    N -->|Centralised| O[AWS Backup]
+    C --> P[Security: Block Public Access, Encryption, Versioning]
+    D --> Q[Security: KMS Encryption, Snapshots]
+    F --> R[Security: KMS Encryption, Lifecycle]
+    G --> R
+    H --> R
+```
+
+## Key Takeaways
+
+- AWS storage services split into object (S3), block (EBS), file (EFS and FSx), and hybrid (Storage Gateway).
+- S3 is the default storage service for most workloads. It offers four bucket types and seven storage classes.
+- S3 lifecycle policies automate cost optimisation by transitioning objects between storage classes. They only move objects downhill.
+- Objects must be at least 128 KB to transition to Intelligent-Tiering or Glacier Instant Retrieval.
+- S3 versioning protects against accidental deletion. Object Lock provides WORM protection for compliance.
+- S3 security is built on access control, encryption, and monitoring. Block Public Access is the single most effective control.
+- All S3 objects are encrypted by default with SSE-S3. SSE-KMS provides an audit trail. SSE-C is disabled by default for new buckets as of April 2026.
+- IAM Access Analyzer for S3 identifies buckets shared externally at no extra cost.
+- VPC endpoints provide private access to S3. Presigned URLs grant temporary access.
+- EBS provides persistent block storage for a single EC2 instance. EFS provides shared file storage for many clients.
+- EBS volumes are tied to a single AZ. EFS file systems are regional and span multiple AZs.
+- EBS supports Linux and Windows. EFS is Linux-only.
+- EBS provides lower latency and higher single-client IOPS. EFS provides shared access and automatic scaling.
+- gp3 is the default EBS volume type. io2 Block Express is for mission-critical databases.
+- EFS offers Standard, Infrequent Access, and Archive storage classes. Lifecycle Management automates transitions.
+- Use EBS for boot volumes and databases. Use EFS for shared application data and containers. Use S3 for objects and backups.
+- FSx provides four file system types: Windows File Server, Lustre, NetApp ONTAP, and OpenZFS.
+- Storage Gateway extends on-premises storage to AWS. DataSync moves data online. Snow Family moves data offline.
+- AWS Backup centralises data protection across AWS services with policy-based backup and cross-Region and cross-account capabilities.
+- The first storage decision is the data type. The second is the access pattern. The third is the durability and performance requirement.
+- Match the storage service to the workload. Start with S3 unless you have a specific requirement for block or file storage.
+- Secure storage from day one: Block Public Access, encryption, versioning, and monitoring.
+- Optimise storage cost continuously: lifecycle policies, right-sizing, and storage class selection.
+
+> [!Important]
+> **Match the storage service to the data type and access pattern**: The most common architectural mistake is forcing data into the wrong storage service. Objects belong in S3. Block data belongs in EBS. Shared files belong in EFS or FSx. Hybrid belongs in Storage Gateway. Ask first whether the data is an object, a block, or a file. Then ask whether one instance or many need access. Then ask about durability, performance, and cost. The answers to those questions determine the service. Use lifecycle policies to optimise cost over time. Enable encryption and backup from day one. Storage decisions are long-lived and hard to reverse. Choose carefully, secure by default, and optimise continuously.
