@@ -1,4 +1,3 @@
-# Migration in progress
 # Week 4: Supervised Learning: Decision Trees
 
 ## Supervised Learning: Decision Trees Foundations, Algorithms, and Pruning
@@ -121,4 +120,119 @@ flowchart TD
 ### The CART Framework: Binary Trees and Regression Adaptation
 
 - Formulated by Leo Breiman, Jerome Friedman, Richard Olshen, and Charles Stone (1984), **CART (Classification and Regression Trees)** is the standard algorithm implemented in modern libraries (such as scikit-learn).
-- **Strictly Binary Splitting:** CART enforces bina
+- **Strictly Binary Splitting:** CART enforces binary tree structures across all node splits:
+  - For continuous attributes: evaluates $x_j \le t$ versus $x_j > t$.
+  - For nominal categorical attributes with $K$ categories: evaluates all $2^{K-1} - 1$ possible binary partition subsets ($x_j \in \mathcal{S}_A$ versus $x_j \notin \mathcal{S}_A$), preventing multi-way data fragmentation.
+- **Dual Problem Support:** Deploys Gini Impurity for categorical classification and Variance Reduction (MSE/MAE) for continuous regression.
+
+```mermaid
+flowchart TD
+    Start["Node Dataset S"] --> Pure{"Is S Pure or Stopping<br/>Criteria Met?"}
+    Pure -- Yes --> MakeLeaf["Create Leaf Node (Assign Mode or Mean)"]
+    
+    Pure -- No --> EvalSplits["Evaluate All Candidate Features & Thresholds"]
+    EvalSplits --> ScoreMetric["Score Splits: Gini / Gain Ratio / Variance Reduction"]
+    ScoreMetric --> PickBest["Select Optimal Feature j* and Threshold t*"]
+    PickBest --> Partition["Partition Dataset: S_left (x <= t) and S_right (x > t)"]
+    Partition --> RecurseL["Recurse on S_left"]
+    Partition --> RecurseR["Recurse on S_right"]
+```
+
+> [!Important]
+> **CART enforces binary splits across all data types**: unlike ID3 and C4.5 which create multi-way branches, CART evaluates strictly binary conditions ($x_j \le t$), preventing exponential sample fragmentation in deep trees.
+
+## Tree Regularization and Pruning Strategies
+
+### The Overfitting Pathology of Fully Grown Trees
+
+- Unconstrained decision trees grow until every leaf node is completely pure ($\text{Gini} = 0, H = 0$) or contains a solitary observation ($N_{\text{leaf}} = 1$).
+- A fully grown tree achieves **zero training error** ($\text{Training Accuracy} = 100\%$), but produces a complex decision boundary that models sample noise, outliers, and dataset quirks.
+- Fully grown trees exhibit **high variance and low bias**, leading to severe generalization collapse on unseen test data.
+
+### Pre-Pruning Constraints (Early Stopping)
+
+- **Pre-pruning** halts tree induction during execution by enforcing stopping hyperparameters before nodes split:
+  - **`max_depth`:** Limits the maximum vertical distance from root to leaf, preventing deep hierarchical memorization.
+  - **`min_samples_split`:** The minimum number of samples required within an internal node to evaluate candidate splits (e.g., $N_{\text{node}} \ge 10$).
+  - **`min_samples_leaf`:** The minimum sample threshold permitted in any terminal leaf node, preventing the creation of isolated singleton leaves.
+  - **`max_leaf_nodes`:** Restricts the total number of terminal regions $M$, enforcing broad spatial partitions.
+  - **`min_impurity_decrease`:** Enforces that a candidate split must reduce node impurity by a threshold $\Delta \text{Impurity} \ge \tau$ to be executed.
+- Pre-pruning is computationally fast, but risks premature stopping: a split yielding negligible immediate impurity reduction may enable a deeper split that uncovers a critical non-linear interaction.
+
+### Post-Pruning: Minimal Cost-Complexity Pruning
+
+- **Post-pruning** allows the tree to grow to full unconstrained depth, then prunes uninformative sub-trees backward from the leaves.
+- CART implements **Minimal Cost-Complexity Pruning** (Weakest Link Pruning), balancing empirical error against tree complexity using hyperparameter $\alpha \ge 0$:
+  $$R_\alpha(T) = R(T) + \alpha |T|$$
+  where $R(T)$ represents total tree misclassification cost or squared error, $|T|$ is the total number of terminal leaf nodes, and $\alpha$ is the complexity tuning parameter.
+- **Pruning Mechanics:**
+  - For each internal sub-tree $T_t$ rooted at node $t$, calculate the effective cost-complexity parameter:
+    $$g(t) = \frac{R(t) - R(T_t)}{|T_t| - 1}$$
+    where $R(t)$ is the error if node $t$ collapsed into a leaf, and $R(T_t)$ is the error of the full sub-tree below $t$.
+  - The parameter $g(t)$ measures the error penalty incurred per leaf removed.
+  - The algorithm identifies the node $t^*$ that minimizes $g(t)$, collapses its sub-tree into a leaf, and records the pruned sub-tree.
+  - Generating a sequence of nested trees parameterized by ascending $\alpha$ values, the optimal $\alpha^*$ is chosen using **held-out validation cross-validation**.
+
+> [!Tip]
+> **Post-pruning outperforms pre-pruning**: growing a full tree and pruning backward using Cost-Complexity Pruning ($R_\alpha(T) = R(T) + \alpha |T|$) uncovers deep feature interactions that pre-pruning stops prematurely.
+
+## Geometric Properties, Advantages, and Inherent Limitations
+
+### Invariance to Monotonic Transformations
+
+- Decision tree split evaluation depends strictly on the **rank order** of feature values, not their absolute numerical scales:
+  $$\arg\max_t IG(X_j, t) \equiv \arg\max_t IG(g(X_j), g(t))$$
+  where $g(\cdot)$ is any strictly monotonically increasing function (e.g., $\ln(x), x^3, \sqrt{x}$).
+- Decision trees are invariant to feature scaling, making Z-score standardization and Min-Max normalization unnecessary.
+
+### The Axis-Aligned Boundary Limitation
+
+- Because splits evaluate a single feature independently ($x_j \le t$), decision boundaries are constrained to coordinate axes.
+- If true class separation depends on a linear combination of features ($x_1 + x_2 > c$), a decision tree must construct a dense **staircase approximation** using dozens of orthogonal splits.
+- This creates high parameter complexity on diagonal decision boundaries, making linear classifiers or Support Vector Machines more efficient for linearly separable data.
+
+### High Variance and Instability to Perturbations
+
+- Decision trees suffer from **high structural variance**: small changes in training data produce large differences in tree topology.
+- Because the root split selection is greedy, perturbing a few data instances can cause a different feature to win the initial split, altering all subsequent sub-tree partitions down the hierarchy.
+- This instability limits standalone decision trees, motivating ensemble methods like **Random Forests** and **Gradient Boosted Decision Trees (GBDT)** that stabilize predictions by aggregating multiple decorrelated trees.
+
+> [!Important]
+> **Trees are scale-invariant but rotationally sensitive**: monotonic scaling does not alter tree decisions, but rotating data diagonally forces trees to construct inefficient staircase boundaries, causing high structural variance.
+
+## Comparative Matrices of Tree Algorithms and Impurity Metrics
+
+| Algorithmic Dimension | ID3 (Quinlan, 1986) | C4.5 (Quinlan, 1993) | CART (Breiman et al., 1984) |
+|---|---|---|---|
+| **Target Task Types** | Classification only | Classification only | **Classification and Regression** |
+| **Branching Topology** | **Multi-way splits** (1 branch per category) | Multi-way (categorical) and binary (numeric) | **Strictly binary splits** ($x_j \le t$) |
+| **Splitting Criterion** | Information Gain | **Gain Ratio** | **Gini Impurity** (Class) / **MSE** (Reg) |
+| **Continuous Attributes** | No (requires prior discretization) | Yes (evaluates candidate midpoints) | Yes (evaluates candidate midpoints) |
+| **Missing Value Handling** | None | Assigns fractional weights down branches | Deploys **surrogate split** backups |
+| **Pruning Mechanism** | None | Pessimistic error post-pruning | **Cost-Complexity Pruning** ($R_\alpha(T)$) |
+
+### Comparison of Node Impurity Metrics
+
+| Impurity Metric | Mathematical Formula | Output Range (Binary) | Computational Cost | Primary Optimization Bias |
+|---|---|---|---|---|
+| **Entropy** | $-\sum_{c=1}^C p_c \log_2(p_c)$ | $[0.0, \; 1.0]$ | Moderate (requires $\log_2$) | Favors balanced class purity reductions |
+| **Gain Ratio** | $\frac{IG(S, A)}{-\sum \frac{|S_v|}{|S|} \log_2(\frac{|S_v|}{|S|})}$ | $[0.0, \; 1.0]$ | High (two logarithmic sweeps) | Penalizes high-cardinality attributes |
+| **Gini Impurity** | $1 - \sum_{c=1}^C p_c^2$ | $[0.0, \; 0.5]$ | **Low** (pure polynomial arithmetic) | Favors isolating dominant class majorities |
+| **Variance / MSE** | $\frac{1}{|S|} \sum (y_i - \bar{y})^2$ | $[0.0, \; \infty)$ | Low (arithmetic variance) | Minimizes squared deviations around means |
+
+> [!Tip]
+> **Use CART as the modern benchmark**: CART's strictly binary splits, fast polynomial Gini updates, continuous regression support, and cost-complexity pruning make it the standard implementation in industry libraries.
+
+## Key Takeaways
+
+- **Decision trees partition feature space non-parametrically** into axis-aligned hyper-rectangles, producing piecewise constant predictions across regions.
+- **Splitting uses greedy coordinate descent**, evaluating features independently to maximize impurity reduction without backtracking.
+- **Entropy measures information uncertainty**, while **Gini Impurity calculates misclassification probability** using polynomial operations.
+- **Information Gain exhibits high-cardinality bias**, which C4.5 resolves by dividing by Intrinsic Value to calculate the **Gain Ratio**.
+- **CART enforces binary splits across all data types**, using Gini Impurity for classification and Variance Reduction for regression.
+- **Unconstrained trees overfit rapidly**, driving training error to zero while failing on test data due to high variance.
+- **Pre-pruning stops tree growth early** using structural limits (`max_depth`, `min_samples_split`), while **post-pruning collapses sub-trees backward** using Cost-Complexity criteria ($R_\alpha(T) = R(T) + \alpha |T|$).
+- **Decision trees are invariant to monotonic transformations**, eliminating the need for feature scaling, but remain sensitive to diagonal data rotations.
+
+> [!Tip]
+> The foundational law of tree modeling: **hierarchical splits trade structural stability for interpretability**; greedy axis-aligned decisions allow individual trees to explain complex non-linear interactions, but their high variance necessitates ensemble methods (Random Forests, Gradient Boosting) for competitive predictive accuracy.
