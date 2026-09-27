@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 4: Securing AWS Accounts
 
 Securing an AWS account is the foundation of every secure workload. The root user is the most privileged identity and must be locked down. IAM best practices, multi-account governance, and continuous monitoring complete the defense-in-depth strategy. This lesson covers the controls that protect the account itself before any workload is deployed.
@@ -136,4 +135,136 @@ flowchart TD
 
 - GuardDuty analyzes CloudTrail management events, VPC Flow Logs, and DNS logs.
 - It uses threat intelligence feeds, machine learning, and anomaly detection.
-- GuardDuty detects compromised EC2 instances, cryptocurrency mining, and command-and-contro
+- GuardDuty detects compromised EC2 instances, cryptocurrency mining, and command-and-control activity.
+- Extended Threat Detection correlates individual signals into attack sequences.
+- Custom Detection Rules provide prebuilt, opt-in rules mapped to MITRE ATT&CK tactics.
+- GuardDuty AI Protection extends detection to AI services like Amazon SageMaker.
+- Findings flow into AWS Security Hub for centralized response.
+
+> [!Tip]
+> **Enable GuardDuty in all accounts and Regions**: It is the primary threat detection service for AWS. Enable it centrally through Organizations for consistent coverage.
+
+### AWS Security Hub
+
+*Definition*: Security Hub is a unified cloud security solution that prioritizes critical security issues and helps you respond at scale.
+
+- Security Hub aggregates findings from GuardDuty, Config, IAM Access Analyzer, Macie, and other services.
+- It runs automated security best practice checks against industry standards.
+- Central configuration lets you enable and manage Security Hub across accounts, OUs, and Regions from a delegated administrator account.
+- Findings can be streamed to a centralized SIEM or ticketing system.
+- Security Hub CSPM (Cloud Security Posture Management) provides compliance scoring.
+
+```mermaid
+flowchart TD
+    A[CloudTrail] --> E[Security Hub]
+    B[GuardDuty] --> E
+    C[Config] --> E
+    D[Access Analyzer] --> E
+    E --> F[Centralized SIEM / Ticketing]
+    E --> G[Dashboard and Prioritization]
+```
+
+> [!Important]
+> **Security Hub is the single pane of glass**: It aggregates findings from multiple services so you do not have to check each service individually. Configure central aggregation from a delegated administrator account.
+
+## Workforce Identity with IAM Identity Center
+
+*Definition*: IAM Identity Center (successor to AWS SSO) is the recommended service for managing workforce access to multiple AWS accounts and applications.
+
+- Provides single sign-on access to AWS accounts and cloud applications.
+- Connects to existing identity providers (Microsoft Entra ID, Okta, Google Workspace) via SAML 2.0 and SCIM.
+- Centralizes permission management across accounts.
+- Supports permission sets that apply least-privilege access.
+- Eliminates the need for individual IAM users in each account.
+- Integrates with AWS Organizations.
+
+> [!Tip]
+> **Use IAM Identity Center for human access**: It simplifies access management, provides a single place to assign permissions, and integrates with your existing corporate directory.
+
+## Additional Account Security Best Practices
+
+- Set account-level contacts to valid email distribution lists so you receive important notifications.
+- Configure AWS Budgets to monitor spending and alert on unexpected charges.
+- Monitor for and resolve AWS Trusted Advisor high-risk items.
+- Use short-lived credentials for access to AWS resources.
+- Prevent public access to private S3 buckets using S3 Block Public Access.
+- Delete unused VPCs, subnets, and security groups to reduce attack surface.
+- Use VPC endpoints to access supported services privately.
+- Require HTTPS for public web endpoints.
+- Use edge-protection services (AWS WAF, Shield) for public endpoints.
+- Define security controls in templates and deploy them using CI/CD practices.
+
+> [!Important]
+> **Security is layered**: No single control is sufficient. Root user protection, IAM best practices, multi-account governance, and continuous monitoring work together to create defense in depth.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Describe the root user protection best practices.
+2. Explain why SCPs are guardrails, not grants.
+3. Compare the roles of CloudTrail, Config, GuardDuty, and Security Hub.
+4. Describe how AWS Control Tower automates landing zone setup.
+5. Explain the purpose of IAM Identity Center and its benefit over per-account IAM users.
+6. List five account-level security best practices beyond IAM.
+7. Explain how GuardDuty detects threats using CloudTrail, VPC Flow Logs, and DNS logs.
+8. Describe how Security Hub centralizes findings across services.
+
+### Scenario Questions
+
+**Scenario 1: New AWS Account Setup**
+A company creates a new AWS account. What security controls should be applied first?
+
+- Enable MFA for the root user and remove any root access keys.
+- Create IAM users or connect IAM Identity Center for workforce access.
+- Enable CloudTrail, Config, GuardDuty, and Security Hub.
+- Configure S3 Block Public Access.
+- Set account-level contacts and AWS Budgets.
+
+**Scenario 2: Multi-Account Governance**
+A company grows from one AWS account to twelve. How should they govern these accounts?
+
+- Use AWS Organizations to group accounts into OUs.
+- Apply SCPs to restrict unapproved Regions and prevent CloudTrail tampering.
+- Deploy Control Tower to automate landing zone setup and guardrails.
+- Use IAM Identity Center for central workforce access.
+- Aggregate Security Hub findings in a delegated administrator account.
+
+**Scenario 3: Threat Detection and Response**
+A GuardDuty finding indicates a compromised EC2 instance mining cryptocurrency. What should happen next?
+
+- Security Hub aggregates the finding from GuardDuty.
+- Investigate the instance with CloudTrail logs and VPC Flow Logs.
+- Isolate the instance and terminate it if necessary.
+- Rotate credentials that may have been exposed.
+- Review Config history for unauthorized configuration changes.
+- Update SCPs or IAM policies to prevent recurrence.
+
+```mermaid
+flowchart TD
+    A[Start Account Security] --> B[Protect Root User]
+    B --> C[Enable MFA and Remove Access Keys]
+    C --> D[Implement IAM Best Practices]
+    D --> E[Set Up Organizations and SCPs]
+    E --> F[Deploy Control Tower]
+    F --> G[Enable CloudTrail, Config, GuardDuty, Security Hub]
+    G --> H[Use IAM Identity Center for Workforce]
+    H --> I[Review and Audit Regularly]
+```
+
+## Key Takeaways
+
+- The root user is the most privileged identity in AWS. Enable MFA, remove access keys, and use it only for tasks that absolutely require it.
+- IAM best practices include least privilege, groups for permissions, roles for services, and regular key rotation.
+- AWS Organizations groups accounts into OUs. SCPs set maximum permissions as guardrails.
+- SCPs do not grant permissions. They only restrict what IAM policies can allow.
+- AWS Control Tower automates landing zone setup and applies preventive, detective, and proactive controls.
+- CloudTrail records API activity. Config records resource configuration changes. GuardDuty detects threats. Security Hub aggregates findings.
+- GuardDuty analyzes CloudTrail, VPC Flow Logs, and DNS logs using threat intelligence and machine learning.
+- IAM Identity Center is the recommended service for workforce access across multiple accounts.
+- Additional best practices include S3 Block Public Access, VPC endpoints, HTTPS enforcement, AWS Budgets, and Trusted Advisor monitoring.
+- Security is layered. No single control is sufficient.
+- Account security must be established before any workload is deployed.
+
+> [!Important]
+> **Secure the account before you build**: A compromised account undermines every workload it contains. Protect the root user, apply IAM best practices, establish multi-account governance, and enable continuous monitoring before deploying production resources.
