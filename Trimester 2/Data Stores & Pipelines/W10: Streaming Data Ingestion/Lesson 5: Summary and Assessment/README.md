@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 5: Summary and Assessment
 
 Summary and Assessment:
@@ -27,4 +26,33 @@ Question 2: Under what conditions must an engineer use complete mode versus appe
 - Answer: Complete mode is mandatory for streaming queries that perform aggregations without watermarks, because the query must output the entire recalculated aggregation table upon every trigger. Append mode is used for stateless transformations, or for stateful windowed aggregations configured with an event-time watermark where only finalized historical rows are emitted.
 
 Question 3: How does an event-time watermark prevent state store memory exhaustion during continuous windowed aggregations?
-- Answer: Watermarking tracks the maximum observed event time minus an allowable delay threshold. When the watermark advances past the end boundary of an aggregation window, the engine closes the window, emits the final aggregat
+- Answer: Watermarking tracks the maximum observed event time minus an allowable delay threshold. When the watermark advances past the end boundary of an aggregation window, the engine closes the window, emits the final aggregated result, and purges the intermediate window state from the internal state store memory.
+
+Question 4: What is the relationship between at-least-once message transport and idempotent consumers in stream processing?
+- Answer: At-least-once delivery guarantees that network failures or application crashes will not cause dropped messages, but retries can deliver duplicates. Making consumer writes idempotent, such as using primary key upserts or unique transaction identifiers, ensures that reprocessed duplicate messages do not corrupt downstream tables, achieving practical exactly-once business results.
+
+Assessment Preparation: Scenario-Based Problems:
+
+Scenario 1: Consumer Lag During Flash Sales
+An online ticketing platform experiences massive traffic spikes during concert ticket releases. Monitoring alerts show that consumer lag on the Kafka orders topic is growing rapidly, delaying fraud checks and reservation confirmations.
+- Recommended Solution: Scale topic partitions and expand the consumer group deployment.
+- Implementation: Increase topic partition count from 6 to 24 partitions using Kafka administrative tools. Scale the consumer application deployment from 6 to 24 instances so each consumer handles a single partition. Tune consumer batch fetching parameters and ensure manual offset commits execute asynchronously or in micro-batches to maximize throughput.
+
+Scenario 2: Fleet Telematics with Intermittent Mobile Connectivity
+A logistics company ingests GPS coordinates from delivery trucks driving through remote mountain tunnels with no cellular reception. When trucks regain network connectivity, they emit thousands of cached location pings generated hours earlier.
+- Recommended Solution: Event-time windowing with dual-path routing for expired watermarks.
+- Implementation: Calculate vehicle speed and route metrics using the event timestamp embedded inside the GPS payload. Configure an event-time watermark of thirty minutes for primary real-time operational maps. Ticks arriving after the thirty-minute threshold are rejected from real-time streaming windows and directed to a secondary batch ingestion path that merges delayed records into historical route archives.
+
+Scenario 3: Zero-Tolerance Duplicate Billing in Ride-Hailing
+A ride-hailing application charges passengers upon trip completion. Periodic network timeouts between mobile devices and the payment gateway cause ride completion events to publish multiple times to the billing topic.
+- Recommended Solution: Idempotent transactional processing using a unique ride reference key.
+- Implementation: Configure the Kafka producer with idempotence enabled and acks set to all. In the downstream consumer application or Structured Streaming pipeline, partition the stream by ride identifier. Store processed ride identifiers in a transactional database with unique key constraints, or write records to storage using idempotent merge operations keyed on the unique ride identifier to prevent double-billing.
+
+Key Takeaways:
+
+- Streaming data ingestion turns continuous event flows into immediate operational and analytical insights.
+- Kafka scales horizontally through partitioned append-only commit logs, with message ordering preserved strictly per partition key.
+- Consumer offset tracking is essential for pipeline reliability, with manual post-processing commits preventing silent record loss.
+- Spark Structured Streaming bridges batch and stream processing through the unbounded table model, checkpointing, and output modes.
+- Robust stream processing relies on event-time semantics, using watermarks to bound state memory while handling delayed data.
+- Achieving dependable stream ingestion requires pairing at-least-once transport pipelines with idempotent storage sinks.
