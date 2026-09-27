@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 3: Automated Hyperparameter Tuning
 
 Automated hyperparameter optimization (HPO) replaces manual trial and error with algorithmic exploration strategies that navigate complex configuration spaces. As model complexity and hyperparameter dimensionality expand, brute-force grid searches become computationally intractable. Modern automated tuning frameworks leverage Bayesian surrogate modeling, multi-fidelity resource allocation, and evolutionary population dynamics to locate optimal hyperparameter configurations while minimizing total compute expenditure.
@@ -72,4 +71,66 @@ Automated hyperparameter optimization (HPO) replaces manual trial and error with
 
 ### Hyperband and Budget Allocation
 
-- Success
+- Successive Halving faces the *budget allocation dilemma*: choosing between evaluating many configurations on small initial budgets (high exploration, risk of early false pruning) versus evaluating fewer configurations on large budgets (low exploration, reliable rankings).
+- **Hyperband** resolves this dilemma by executing an outer loop over multiple brackets of Successive Halving, varying the trade-off between candidate count $N$ and initial resource budget $R$.
+- Early brackets prioritize aggressive exploration by evaluating vast candidate pools on tiny initial slices, while later brackets allocate larger initial budgets to smaller candidate sets.
+- **BOHB (Bayesian Optimization and Hyperband)** replaces Hyperband's uniform random sampling subroutine with TPE-guided sampling, combining the fast pruning of bandits with the sample efficiency of Bayesian surrogate modeling.
+
+### Asynchronous Successive Halving (ASHA)
+
+- Standard SHA requires all configurations in a rung to finish training before ranking and promoting the top fraction, creating idle-worker bottlenecks in distributed clusters.
+- **Asynchronous Successive Halving (ASHA)** promotes a configuration to the next rung immediately whenever its metric exceeds the promotion threshold of currently completed runs at that rung.
+- Workers never wait for lagging nodes, maximizing hardware throughput and scaling linearly across large distributed compute clusters.
+
+> [!Important]
+> **Early stopping via multi-fidelity**: multi-fidelity algorithms discard unpromising configurations early, allowing teams to explore ten to one hundred times more hyperparameter candidates within the same compute budget.
+
+## Evolutionary and Population-Based Strategies
+
+### Population-Based Training Dynamics
+
+- Standard HPO algorithms optimize static hyperparameters evaluated from scratch for each trial.
+- **Population-Based Training (PBT)** optimizes parameter weights and hyperparameter schedules simultaneously within a single shared execution run.
+- PBT maintains a population of $K$ networks training concurrently in parallel.
+- At periodic training intervals, each agent executes an **exploit-and-explore** cycle:
+  - **Exploit:** An underperforming model copies the network weights and optimizer state from a top-performing agent in the population.
+  - **Explore:** The cloned agent mutates its hyperparameters stochastically (such as multiplying learning rate or weight decay by random factors drawn from $\{0.8, 1.2\}$).
+- Training resumes from the updated parameter checkpoint using the mutated hyperparameters.
+
+### Learning Dynamic Schedules
+
+- PBT discovers adaptive, non-stationary hyperparameter schedules throughout optimization rather than committing to static configurations.
+- Agents learn complex optimization trajectories, discovering schedules such as continuous learning rate decay, progressive batch size scaling, and dynamic data augmentation adjustments.
+- Compute efficiency matches that of standard parallel training, because zero compute is spent restarting failed configurations from epoch zero.
+
+> [!Tip]
+> **PBT for non-stationary tasks**: deploy Population-Based Training for workloads requiring complex dynamic schedules, such as reinforcement learning, generative adversarial networks, and large-scale model pre-training.
+
+## Comparative Taxonomy of Automated HPO Strategies
+
+| Strategy | Search Mechanism | Sample Efficiency | Computational Overhead | Handles Conditional Spaces | Discovers Dynamic Schedules | Ideal Use Case |
+|---|---|---|---|---|---|---|
+| **Grid Search** | Exhaustive Cartesian grid | Very Low | Extremely High ($O(k^d)$) | Poor | No | Low dimensions ($d \le 2$) with coarse boundaries |
+| **Random Search** | Uniform stochastic sampling | Moderate | Moderate to High | High | No | Standard baseline; high-dimensional initial sweeps |
+| **Bayesian (GP)** | Gaussian Process surrogate | High | High per step ($O(N^3)$) | Poor | No | Continuous spaces ($d \le 15$); expensive evaluations |
+| **Bayesian (TPE)** | Kernel density estimation | High | Low per step | Excellent | No | Mixed-variable spaces; moderate evaluation budgets |
+| **Hyperband** | Multi-fidelity bandit pruning | Very High | Low total compute | Excellent | No | Large candidate pools with fast early metric signals |
+| **BOHB** | TPE coupled with Hyperband | Superior | Optimal resource use | Excellent | No | Large-scale deep learning hyperparameter tuning |
+| **PBT** | Evolutionary exploit-explore | Superior | Minimal (Reuses weights) | Moderate | Yes | End-to-end schedule optimization; RL pipelines |
+
+> [!Tip]
+> **Two-stage optimization workflow**: initiate hyperparameter exploration using BOHB or ASHA to locate high-performing configuration basins rapidly, then refine surrounding continuous parameters using localized Bayesian TPE.
+
+## Key Takeaways
+
+- **Grid search suffers from exponential scaling**: Cartesian combinations waste evaluation trials repeating settings across uninfluential hyperparameter dimensions.
+- **Random search provides efficient spatial coverage**: drawing samples randomly ensures unique evaluations along all hyperparameter axes, maximizing exposure to critical variables.
+- **Bayesian optimization builds probabilistic surrogates**: SMBO models the validation loss surface to select candidate points that maximize acquisition functions like Expected Improvement.
+- **TPE excels in complex neural search spaces**: modeling $P(\lambda \mid y)$ enables Tree-Structured Parzen Estimators to handle discrete, categorical, and conditional variables efficiently.
+- **Multi-fidelity pruning eliminates poor configurations**: Successive Halving allocates small initial budgets to large candidate pools, promoting only the top performers to full training.
+- **Hyperband balances candidate volume and fidelity**: executing nested Successive Halving brackets resolves the trade-off between aggressive early pruning and deep single-run evaluation.
+- **ASHA removes synchronization bottlenecks**: promoting candidates asynchronously keeps distributed GPU clusters fully saturated without idle worker delays.
+- **Population-Based Training optimizes weights and schedules together**: periodic exploit-and-explore cycles discover dynamic hyperparameter trajectories without restarting training from iteration zero.
+
+> [!Important]
+> **Automated tuning preserves engineering efficiency**: transitioning from manual adjustments to multi-fidelity Bayesian frameworks like BOHB or ASHA maximizes model performance while drastically cutting compute budgets and human operational overhead.
