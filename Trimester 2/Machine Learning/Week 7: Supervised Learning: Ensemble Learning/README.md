@@ -1,4 +1,3 @@
-# Migration in progress
 # Week 7: Supervised Learning: Ensemble Learning
 
 ## 1. Introduction to Ensemble Learning
@@ -93,4 +92,87 @@ If one or two features are dominant predictors, almost all bagged trees will spl
 
 ### Goal: **Reduce Bias** (and incrementally reduce Variance)
 
-Boosting trains weak learner
+Boosting trains weak learners **sequentially**. Each learner focuses on the mistakes made by the previous learners.
+
+### A. AdaBoost (Adaptive Boosting)
+* **Mechanism:** Adjusts the **sample weights** at each iteration.
+* **Workflow:**
+  1. Initialize all sample weights equally: $w_i = \frac{1}{N}$.
+  2. Train a weak learner (usually a decision stump).
+  3. Calculate the weighted training error $\epsilon_t$.
+  4. Compute the model's weight in the final ensemble:
+     $$\alpha_t = \frac{1}{2} \ln \left( \frac{1 - \epsilon_t}{\epsilon_t} \right)$$
+     *(Low error $\rightarrow$ large $\alpha_t$)*
+  5. Update instance weights:
+     * Correctly classified: $w_i \leftarrow w_i \cdot e^{-\alpha_t}$
+     * Misclassified: $w_i \leftarrow w_i \cdot e^{\alpha_t}$
+  6. Normalize weights and repeat.
+
+### B. Gradient Boosting (GBM)
+* **Mechanism:** Rather than adjusting sample weights, subsequent models are trained on the **pseudo-residuals** (the negative gradients of the loss function) of the previous models.
+* **Residual Concept (Squared Error Loss):**
+  $$r_{i, m} = y_i - \hat{y}_{i, (m-1)}$$
+  A new decision tree $h_m(x)$ is trained to predict $r_{i, m}$.
+* **Update Rule:**
+  $$\hat{y}_{(m)} = \hat{y}_{(m-1)} + \eta \cdot h_m(x)$$
+  where $\eta$ is the **learning rate / shrinkage parameter** ($0 < \eta \le 1$). Smaller $\eta$ prevents overfitting.
+
+### Modern Gradient Boosting Libraries:
+* **XGBoost (Extreme Gradient Boosted Trees):** Second-order Taylor approximation of loss, exact/approximate quantile splits, $L_1/L_2$ tree complexity regularization.
+* **LightGBM:** Fast, leaf-wise tree growth instead of depth-wise, Histogram-based feature binning, GOSS (Gradient-based One-Side Sampling).
+* **CatBoost:** Efficient native handling of categorical features without one-hot encoding, symmetric/oblivious decision trees to prevent target leakage.
+
+---
+
+## 7. Stacking (Stacked Generalization)
+
+Stacking combines multiple **heterogeneous** models using another machine learning model (the **meta-learner**).
+
+### Structure:
+* **Base Models (Level-0):** Multiple distinct algorithms (e.g., Random Forest, SVM, LightGBM, Neural Net).
+* **Meta-Model (Level-1):** A simpler model (e.g., Logistic Regression or Ridge Regression) that takes the predictions of the Level-0 models as input features to predict the final target.
+
+```
+       [ Training Data ]
+         │     │     │
+         ▼     ▼     ▼
+     [Model 1][Model 2][Model 3]   <-- Level 0 Base Learners
+         │     │     │
+         └─────┼─────┘
+               ▼
+     [ Predicted Probabilities ]   <-- Level 1 Features
+               │
+               ▼
+        [ Meta-Learner ]          <-- Level 1 (e.g., Logistic Regression)
+               │
+               ▼
+        [ Final Output ]
+```
+
+> **Critical Rule (Preventing Leakage):** Meta-features must be generated using **Out-of-Fold (OOF) cross-validation**. If you use base model predictions on the data they were trained on, the meta-model will overfit to the base models' overconfidence.
+
+---
+
+## 8. Summary Comparison Table
+
+| Feature | Bagging (e.g., Random Forest) | Boosting (e.g., XGBoost, LightGBM) | Stacking |
+| :--- | :--- | :--- | :--- |
+| **Base Models** | Homogeneous (independent) | Homogeneous (dependent) | Heterogeneous |
+| **Training Process** | Parallel | Sequential | Staged (base $\rightarrow$ meta) |
+| **Primary Error Reduction** | **Variance** | **Bias** | Both |
+| **Base Learner Requirement** | High variance, unpruned (complex) | High bias, shallow (weak) | Diverse models |
+| **Risk of Overfitting** | Very low (adding trees rarely overfits) | High if iterations are too large | Moderate (requires careful OOF setup) |
+| **Hyperparameters to Tune** | `n_estimators`, `max_features` | `learning_rate`, `max_depth`, `n_estimators` | Choice of base models & meta-model |
+
+---
+
+## 9. Typical Exam & Interview Questions
+
+1. **Why does Random Forest select a random subset of features at each split instead of using all features?**
+   * *Answer:* To decorrelate the trees. If one feature is overwhelmingly predictive, all trees would split on it first, making the trees similar and limiting the variance reduction achieved by averaging.
+2. **What is the mathematical fraction of samples left out in an Out-of-Bag (OOB) sample as $N \to \infty$?**
+   * *Answer:* $\lim_{N \to \infty} \left(1 - \frac{1}{N}\right)^N = \frac{1}{e} \approx 0.368$ ($36.8\%$).
+3. **Why do we use a low learning rate (shrinkage) in Gradient Boosting?**
+   * *Answer:* A smaller learning rate forces the algorithm to make cautious, incremental updates, reducing the risk of overfitting and leaving room for subsequent trees to optimize different residual components.
+4. **How does Stacking differ from Soft Voting?**
+   * *Answer:* Soft voting assigns fixed or manually tuned weights to probabilities, whereas Stacking trains an actual machine learning model (the meta-learner) to discover the optimal weighting dynamically.
