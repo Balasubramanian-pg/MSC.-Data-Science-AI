@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 2: Linear Algebra Essentials
 
 **Linear Algebra Essentials for Neural Networks**
@@ -68,4 +67,65 @@ Linear algebra provides the algebraic structures and geometric operations requir
 **Eigenvalues, Eigenvectors, and Eigendecomposition**
 
 - An **eigenvector** of a square matrix $A$ is a non-zero vector $v$ whose direction remains unchanged when multiplied by $A$: $Av = \lambda v$.
-- An **eigenvalue** ($\lambda$) is the *scalar fact
+- An **eigenvalue** ($\lambda$) is the *scalar factor* by which the corresponding eigenvector stretches, shrinks, or flips during the transformation.
+- **Eigendecomposition** decomposes a diagonalizable matrix into its constituent eigenvectors and eigenvalues: $A = Q \Lambda Q^{-1}$, where $Q$ contains eigenvectors and $\Lambda$ is diagonal.
+- For real symmetric matrices, the eigenvectors are *mutually orthogonal*, allowing the factorization $A = Q \Lambda Q^T$ (the Spectral Theorem).
+- **Principal Component Analysis (PCA)** uses eigendecomposition of the data covariance matrix to find directions of maximum variance for dimensionality reduction.
+- In optimization, the eigenvalues of the **Hessian matrix** reveal the local curvature of the loss function, distinguishing local minima, local maxima, and saddle points.
+
+> [!Tip]
+> **Eigenvalues** dictate optimization geometry: widely dispersed eigenvalues in the loss Hessian create ill-conditioned surfaces where standard gradient descent oscillates perpendicular to the optimal path.
+
+**Singular Value Decomposition (SVD)**
+
+- **Singular Value Decomposition** factorizes *any* real matrix $A$ of shape $m \times n$ into three matrices: $A = U \Sigma V^T$.
+- The matrix $U$ ($m \times m$) contains the **left-singular vectors**, which are the orthogonal eigenvectors of $AA^T$.
+- The diagonal matrix $\Sigma$ ($m \times n$) contains non-negative real values called **singular values**, arranged in descending order: $\sigma_1 \ge \sigma_2 \ge \dots \ge 0$.
+- The matrix $V$ ($n \times n$) contains the **right-singular vectors**, which are the orthogonal eigenvectors of $A^T A$.
+- SVD provides a universal factorization that applies to rectangular, rank-deficient, and singular matrices without exception.
+- The **Moore-Penrose pseudoinverse** ($A^+$) uses SVD components to solve under-determined and over-determined linear systems: $A^+ = V \Sigma^+ U^T$.
+- The **Eckart-Young-Mirsky theorem** proves that truncating an SVD to the top $k$ singular values yields the *optimal rank-$k$ approximation* under the Frobenius and spectral norms.
+- Low-rank approximation techniques use SVD principles to compress heavy weight matrices in large language models via Low-Rank Adaptation (LoRA).
+
+> [!Important]
+> **Singular Value Decomposition** generalizes eigendecomposition to all matrices: it isolates the principal components of non-square weight tensors to enable low-rank model compression and stable matrix inversion.
+
+**Matrix Norms and Numerical Stability**
+
+- The **Frobenius norm** measures the overall size of a matrix by taking the square root of the sum of all squared entries: $\|A\|_F = \sqrt{\sum_{i,j} A_{i,j}^2} = \sqrt{\text{Tr}(A^T A)}$.
+- The **spectral norm** (matrix 2-norm) measures the maximum factor by which a matrix can stretch a vector: $\|A\|_2 = \sigma_{\max}(A)$.
+- The **condition number** of a matrix is the ratio of its largest singular value to its smallest singular value: $\kappa(A) = \frac{\sigma_{\max}}{\sigma_{\min}}$.
+- An **ill-conditioned matrix** has an extremely large condition number, meaning minor numerical perturbations in the input produce massive changes in the output.
+- In deep architectures, repeated multiplication by weight matrices whose spectral norm exceeds one leads to **exploding gradients**.
+- Repeated multiplication by weight matrices whose spectral norm remains strictly below one leads to **vanishing gradients**.
+- **Spectral normalization** constrains the spectral norm of layer weights to one, stabilizing training dynamics in deep generative architectures.
+
+> [!Tip]
+> **The condition number** determines numerical reliability: ill-conditioned linear layers amplify floating-point rounding errors and cause severe gradient instability during backpropagation.
+
+**Comparative Analysis of Matrix Decompositions**
+
+| Decomposition Method | Matrix Requirement | Factor Form | Computational Cost | Primary Neural Network / Machine Learning Application |
+|---|---|---|---|---|
+| **Eigendecomposition** | Square, diagonalizable ($n \times n$) | $A = Q \Lambda Q^{-1}$ | $O(n^3)$ | Principal Component Analysis, Hessian curvature analysis |
+| **Singular Value Decomposition (SVD)** | Any real matrix ($m \times n$) | $A = U \Sigma V^T$ | $O(\min(mn^2, m^2n))$ | Weight compression, Low-Rank Adaptation (LoRA), pseudoinverse |
+| **LU Decomposition** | Square, invertible ($n \times n$) | $A = PLU$ | $O(\frac{2}{3}n^3)$ | Solving linear forward passes, computing determinants |
+| **QR Decomposition** | Any rectangular matrix ($m \times n$) | $A = QR$ | $O(2mn^2)$ | Least squares regression, constructing orthogonal weight bases |
+| **Cholesky Decomposition** | Symmetric, positive-definite ($n \times n$) | $A = L L^T$ | $O(\frac{1}{3}n^3)$ | Gaussian processes, Kalman filtering, sampling multivariate normal distributions |
+
+> [!Important]
+> **Decomposition choice** depends on structural constraints: while eigendecomposition requires square matrices, SVD factorizes arbitrary rectangular tensors, making it the most versatile decomposition for deep learning workloads.
+
+**Key Takeaways**
+
+- **Tensors** form the core geometric containers of neural networks, organizing scalar values, feature vectors, linear operators, and multi-channel batch inputs.
+- **The dot product** evaluates directional similarity and projections, acting as the fundamental computation of artificial neurons and attention heads.
+- **Vector norms** measure parameter sizes to enforce structural constraints, with $L_1$ producing sparse parameter selections and $L_2$ constraining parameter magnitudes.
+- **Affine transformations** combine linear matrix multiplication with bias translations, manipulating data geometry to make target classes linearly separable.
+- **Matrix rank** specifies the true dimensionality of a layer's output, warning practitioners against rank-deficient topologies that discard critical input signals.
+- **Eigenvalues and eigenvectors** explain coordinate scaling under transformations, mapping directly to Hessian curvature analysis and gradient convergence rates.
+- **Singular Value Decomposition** factors rectangular matrices into orthogonal bases and singular values, providing the mathematical engine for model compression and low-rank adaptation.
+- **Condition numbers and spectral norms** dictate whether deep matrix chains remain numerically stable or succumb to vanishing and exploding gradients.
+
+> [!Tip]
+> Linear algebra is the **geometric foundation** of deep learning: every layer operates as a linear transformation across high-dimensional vector spaces, where norms control model complexity, rank preserves representational capacity, and singular values govern numerical stability.
