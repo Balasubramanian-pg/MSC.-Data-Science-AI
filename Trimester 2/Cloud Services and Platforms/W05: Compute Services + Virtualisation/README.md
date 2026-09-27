@@ -1,4 +1,3 @@
-# Migration in progress
 # W05: Compute Services + Virtualisation
 
 This module covers the foundational technologies behind cloud compute: virtualization, virtual machines, containers, and serverless functions. It then maps these concepts to AWS compute services, including EC2, Lambda, ECS, EKS, and Fargate. The goal is to understand how each compute model works, when to use it, and how to choose between them.
@@ -184,4 +183,206 @@ flowchart TD
 ```
 
 > [!Important]
-> **Fargate eliminates node management**: With Fargate, you define the vCPU and memory your container needs, and AWS
+> **Fargate eliminates node management**: With Fargate, you define the vCPU and memory your container needs, and AWS provisions the underlying infrastructure. You pay only for the resources your containers use.
+
+### ECS vs EKS
+
+| Dimension | Amazon ECS | Amazon EKS |
+|---|---|---|
+| Orchestration Engine | AWS-proprietary | Kubernetes (open source) |
+| Learning Curve | Lower | Higher |
+| AWS Integration | Deep native integration | Good integration |
+| Portability | AWS-only | Multi-cloud and on-premises |
+| Ecosystem | Smaller, AWS-specific | Large Kubernetes ecosystem |
+| Cost | Potentially lower | Higher (control plane charge) |
+| Best For | Teams wanting simplicity and AWS-native tooling | Teams needing Kubernetes portability and ecosystem |
+
+- ECS is simpler and deeply integrated with AWS services. It reduces complexity by managing much of the infrastructure.
+- EKS is more powerful but pays back its complexity only when you actually need the Kubernetes ecosystem.
+- EKS offers high flexibility and cloud portability because it is based on open-source Kubernetes.
+
+> [!Tip]
+> **Start with ECS unless you need Kubernetes**: If your team does not already use Kubernetes or need multi-cloud portability, ECS is simpler and more cost-effective. Choose EKS when the Kubernetes ecosystem is a genuine requirement.
+
+## Serverless Functions (Lambda)
+
+*Definition*: AWS Lambda is a serverless compute service that runs code in response to events and automatically manages the compute resources for you. You pay only for the compute time you consume.
+
+### How Lambda Works
+
+```mermaid
+sequenceDiagram
+    participant Event as Event Source
+    participant Lambda as AWS Lambda
+    participant Runtime as Execution Environment
+    participant Code as Function Code
+    Event->>Lambda: Trigger (API call, S3 upload, etc.)
+    Lambda->>Runtime: Provision execution environment
+    Runtime->>Code: Run function handler
+    Code-->>Runtime: Return result
+    Runtime-->>Lambda: Return response
+    Lambda-->>Event: Deliver response
+```
+
+- Lambda runs code in response to events such as HTTP requests, file uploads, or database changes.
+- It automatically scales to handle millions of concurrent requests.
+- It is designed for short-lived compute tasks that do not retain state between invocations.
+
+### Lambda Limits and Quotas
+
+| Resource | Default Limit | Can Be Increased |
+|---|---|---|
+| Function timeout | 15 minutes | No (except Lambda Managed Instances up to 90 minutes) |
+| Memory allocation | 128 MB to 10,240 MB | Yes |
+| Concurrent executions | 1,000 | Yes, up to tens of thousands |
+| Ephemeral storage | 512 MB free | Yes |
+| Payload size (async) | 1 MB | No |
+
+- Code can run for up to 15 minutes in a single invocation and a single function can use up to 10,240 MB of memory.
+- The default concurrency limit is 1,000, which can be increased.
+- AWS raised the maximum payload size for asynchronous invocations from 256 KB to 1 MB in 2026.
+
+> [!Important]
+> **Lambda is for short-lived, event-driven workloads**: If your workload runs longer than 15 minutes or requires persistent state, consider containers or EC2 instead.
+
+### Lambda Pricing
+
+| Dimension | Price | Free Tier |
+|---|---|---|
+| Requests | $0.20 per 1 million requests | 1 million requests per month |
+| Duration | $0.0000166667 per GB-second | 400,000 GB-seconds per month |
+
+- The Lambda free tier includes 1 million requests and 400,000 GB-seconds of compute each month.
+- Provisioned concurrency has separate pricing and does not benefit from the free tier.
+- You pay for the time your code executes, measured in milliseconds, multiplied by the memory allocated.
+
+> [!Tip]
+> **Lambda is cost-effective for spiky workloads**: For event-driven or intermittent workloads, Lambda eliminates the cost of idle servers. For constant, high-volume workloads, containers or EC2 may be more cost-effective.
+
+## Compute Model Comparison
+
+### VMs vs Containers vs Serverless
+
+| Dimension | Virtual Machines (EC2) | Containers (ECS/EKS) | Serverless (Lambda) |
+|---|---|---|---|
+| Abstraction Level | Hardware | Operating system | Function |
+| Management Overhead | High (OS patching, scaling) | Medium (cluster management) | None (fully managed) |
+| Startup Time | Minutes | Seconds | Milliseconds (warm) to seconds (cold) |
+| Resource Efficiency | Lower | Higher | Highest (pay per use) |
+| State | Stateful or stateless | Typically stateless | Stateless only |
+| Max Runtime | Unlimited | Unlimited | 15 minutes |
+| Best For | Legacy apps, custom OS, GPU workloads | Microservices, portable workloads | Event-driven, spiky, short-duration workloads |
+| Cost Model | Per hour/second | Per vCPU/memory-second | Per request and GB-second |
+
+- VMs provide the most control and are suitable for legacy applications and workloads that require custom OS configurations.
+- Containers offer fast deploys, portability, and lower resource usage than VMs. They are ideal for most stateless services and workers.
+- Serverless is ideal for event-driven jobs and spiky traffic. It eliminates infrastructure management but is only appropriate for short-duration jobs.
+
+> [!Important]
+> **There is no single best compute model**: Choose based on workload characteristics. Use VMs for control, containers for portability and efficiency, and serverless for event-driven, short-lived tasks.
+
+### AWS Compute Service Decision Framework
+
+```mermaid
+flowchart TD
+    A[Start Compute Decision] --> B{Execution Duration?}
+    B -->|Under 15 minutes| C{Event-Driven?}
+    B -->|Over 15 minutes| D{Container-Native?}
+    C -->|Yes| E[AWS Lambda]
+    C -->|No| F{Traffic Predictable?}
+    F -->|Yes| G[EC2 or ECS on EC2]
+    F -->|No| H[ECS Fargate or Lambda]
+    D -->|Yes| I{Need Kubernetes?}
+    D -->|No| J[EC2]
+    I -->|Yes| K[EKS]
+    I -->|No| L[ECS]
+    K --> M{Fargate or EC2?}
+    L --> M
+    M -->|No node management| N[Fargate]
+    M -->|Full control| O[EC2]
+```
+
+- Start with execution duration. If under 15 minutes and event-driven, Lambda is the natural fit.
+- For containerized workloads, choose ECS for simplicity or EKS for Kubernetes portability.
+- Fargate removes node management for both ECS and EKS.
+- EC2 provides the most control for custom or legacy workloads.
+
+> [!Tip]
+> **Use the decision tree as a starting point**: The right compute choice depends on team skills, operational maturity, and long-term strategy. The decision tree narrows the field but does not replace judgment.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Explain the difference between Type 1 and Type 2 hypervisors and why cloud providers use Type 1.
+2. Describe the stages of the virtual machine lifecycle.
+3. Compare EC2 instance families and their use cases.
+4. Explain the four EC2 pricing models and when each is appropriate.
+5. Describe how containers differ from virtual machines.
+6. Compare Amazon ECS, Amazon EKS, and AWS Fargate.
+7. Explain the limits and pricing model of AWS Lambda.
+8. Describe when to use VMs, containers, and serverless functions.
+9. Explain how to choose an AWS compute service using a decision framework.
+
+### Scenario Questions
+
+**Scenario 1: Legacy Application Migration**
+A company wants to migrate an on-premises legacy application that requires a custom OS configuration and runs continuously. Which compute service should they use?
+
+- Use EC2 with a custom AMI and instance type that matches the workload profile.
+- Use Reserved Instances or Savings Plans for cost optimization on steady-state workloads.
+- Deploy across multiple Availability Zones for high availability.
+
+**Scenario 2: Microservices Platform**
+A team is building a microservices platform and needs portability across cloud providers. Which container service should they use?
+
+- Use Amazon EKS for Kubernetes compatibility and multi-cloud portability.
+- Use Fargate to eliminate node management.
+- Use ECR for container image storage.
+- Consider ECS if portability is not a hard requirement.
+
+**Scenario 3: Event-Driven Image Processing**
+An application needs to process images uploaded to S3 and generate thumbnails. Which compute service should they use?
+
+- Use AWS Lambda triggered by S3 upload events.
+- Lambda automatically scales to handle spikes in upload volume.
+- Pay only for the compute time used, with no cost for idle time.
+- Use the free tier for low-volume workloads.
+
+**Scenario 4: High-Performance Computing**
+A research team needs to run GPU-accelerated simulations for machine learning training. Which EC2 instance family should they use?
+
+- Use accelerated computing instances such as P4 or Trn1.
+- Trn1 instances are designed for high-performance deep learning training and offer up to 50% cost-to-train savings.
+- Use Spot Instances for fault-tolerant training jobs to reduce cost.
+- Consider Savings Plans for predictable training workloads.
+
+```mermaid
+flowchart TD
+    A[Compute Decision] --> B{Workload Type?}
+    B -->|Legacy / Custom OS| C[EC2]
+    B -->|Microservices / Portable| D{Need Kubernetes?}
+    B -->|Event-Driven / Short| E[Lambda]
+    D -->|Yes| F[EKS]
+    D -->|No| G[ECS]
+    F --> H{Fargate or EC2?}
+    G --> H
+    H -->|Serverless| I[Fargate]
+    H -->|Full Control| J[EC2]
+```
+
+## Key Takeaways
+
+- Virtualisation is the foundation of cloud computing. Hypervisors create and manage virtual machines.
+- Type 1 hypervisors run directly on hardware and are used by cloud providers. Type 2 hypervisors run on a host OS and are used for development and testing.
+- Amazon EC2 provides virtual servers with a wide range of instance families: general purpose, compute optimized, memory optimized, storage optimized, and accelerated computing.
+- EC2 pricing models include On-Demand, Reserved Instances, Savings Plans, and Spot Instances. Reserved and Savings Plans offer up to 72% discount. Spot offers up to 90% discount.
+- Containers virtualize the operating system, sharing the host OS kernel. They are lightweight, portable, and fast to start compared to VMs.
+- Amazon ECS is a fully managed container orchestration service. Amazon EKS is managed Kubernetes. AWS Fargate is a serverless compute engine for containers that works with both ECS and EKS.
+- AWS Lambda is a serverless compute service for event-driven, short-lived tasks. It runs code for up to 15 minutes and scales automatically.
+- Choose compute based on workload characteristics: VMs for control, containers for portability and efficiency, serverless for event-driven and spiky workloads.
+- There is no single best compute model. The right choice depends on duration, traffic patterns, team skills, and operational maturity.
+- The AWS compute decision tree helps narrow the field but does not replace architectural judgment.
+
+> [!Important]
+> **Match the compute model to the workload**: Start with execution duration and event-driven characteristics. Then consider control, portability, and operational overhead. The wrong compute choice leads to unnecessary cost, complexity, or performance limitations. Use the decision framework and validate with a pilot before committing at scale.
