@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 5: Emerging Trends in Deep Learning
 
 Emerging trends in deep learning focus on overcoming the computational, theoretical, and operational scaling barriers of classical transformer architectures. As training expenditure and model dimensions scale, innovations in sub-quadratic sequence modeling, sparse computation, parameter-efficient adaptation, and mechanistic circuit auditing redefine network design. Integrating sparse mixture-of-experts routing, state-space representations, and dictionary-based representation disentanglement drives modern artificial neural networks toward sustainable scaling and verifiable reasoning.
@@ -74,4 +73,65 @@ Emerging trends in deep learning focus on overcoming the computational, theoreti
 
 ### Neural Circuit Reverse-Engineering
 
-- Classical post-hoc interpretability treats deep networks
+- Classical post-hoc interpretability treats deep networks as black boxes, generating approximate external heatmaps.
+- **Mechanistic Interpretability** treats the neural network as a computer program compiled by gradient descent, aiming to reverse-engineer exact functional circuits formed by individual weights and attention heads.
+- Researchers have identified structured circuits such as **induction heads**: two-head attention sub-networks that search for prior occurrences of token patterns $[A][B]$ to predict continuation $[B]$ when token $[A]$ recurs, forming the foundational circuit mechanism behind *in-context learning*.
+
+### Superposition and Sparse Autoencoders (SAEs)
+
+- Neural networks exhibit **polysemanticity**: individual neurons activate on multiple unrelated concepts because the model exploits **superposition**, representing more features than it has physical activation dimensions ($N_{\text{features}} \gg D_{\text{neurons}}$) using non-orthogonal vector projections.
+- Polysemantic neurons prevent humans from understanding internal representations.
+- **Sparse Autoencoders (SAEs)** resolve superposition by training dictionary-learning networks on internal hidden activations $x \in \mathbb{R}^d$:
+  $$z = \text{ReLU}\left( W_{\text{enc}} x + b_{\text{enc}} \right), \quad \hat{x} = W_{\text{dec}} z + b_{\text{dec}}$$
+  where hidden dimension $m \gg d$ (often expanding feature space $8\times$ to $32\times$).
+- Training with an explicit $L_1$ sparsity penalty on latent vector $z$ forces the autoencoder to disentangle polysemantic activations into thousands of *monosemantic*, human-interpretable feature directions:
+  $$\mathcal{L}_{\text{SAE}} = \|x - \hat{x}\|_2^2 + \lambda \|z\|_1$$
+
+> [!Important]
+> **Disentangling superposition**: training sparse autoencoders over hidden layer activations extracts clean, monosemantic feature dictionaries from dense, polysemantic neural representations.
+
+## Latent World Models: Non-Generative Representation Learning
+
+### The Failure Modes of Pixel Reconstruction
+
+- Classical self-supervised visual models use generative pixel-level reconstruction objectives (such as masked autoencoders).
+- Forcing networks to reconstruct exact high-frequency pixel values (such as leaves on a tree or ripples on water) wastes model capacity on unpredictable, task-irrelevant environmental noise.
+- Generative architectures struggle to extract abstract semantic invariants because optimization resources are consumed by microscopic pixel synthesis.
+
+### Joint Embedding Predictive Architectures (JEPA)
+
+- **Joint Embedding Predictive Architectures (JEPA)** discard pixel reconstruction entirely, predicting masked target representations strictly within an abstract latent embedding space:
+  $$\mathcal{L}_{\text{JEPA}} = \mathcal{D}\left( \text{Predictor}\left( E_\theta(x), \, z \right), \, E_\phi(y) \right)$$
+  where $E_\theta$ encodes context inputs, $E_\phi$ encodes target inputs via an Exponential Moving Average (EMA) teacher network, $z$ represents task conditioning, and $\mathcal{D}$ computes embedding distance.
+- By predicting in latent representation space rather than raw observation space, JEPAs filter out high-frequency sensory noise to construct robust *world models* capable of physical reasoning and planning.
+
+> [!Tip]
+> **Latent predictive modeling**: use representation-space prediction objectives like JEPA when building visual representations for robotics and planning to prevent models from wasting parameter capacity on irrelevant pixel noise.
+
+## Comparative Matrix of Emerging Deep Learning Paradigms
+
+| Architectural Paradigm | Primary Underlying Mechanism | Computational Complexity | Core Scaling Advantage | Primary Technical Challenge |
+|---|---|---|---|---|
+| **Selective SSM (Mamba)** | Input-dependent continuous state-space recurrence | Linear time ($\mathcal{O}(T \cdot d)$) | Constant-memory sequential inference | Inability to attend across unbounded arbitrary token lookbacks |
+| **Sparse MoE** | Top-$k$ softmax gating over parallel expert blocks | Constant per-token compute ($\mathcal{O}(k \cdot d)$) | Decouples parameter count from forward FLOPs | GPU memory capacity requirements; expert routing imbalances |
+| **LoRA / QLoRA** | Low-rank matrix update decomposition ($\Delta W = BA$) | Minimal fine-tuning memory footprint | Tunes models on edge hardware; zero inference lag | Potential capacity bottlenecks on domain-shift tasks |
+| **Sparse Autoencoders** | Overcomplete dictionary learning with $L_1$ sparsity | Linear in dictionary expansion ($m \cdot d$) | Resolves polysemanticity; yields monosemantic features | High memory cost during dictionary training; reconstruction trade-offs |
+| **JEPA World Models** | Latent space predictive embedding alignment | Efficient feedforward representations | Ignores sensory noise; builds semantic world models | Susceptible to representation collapse without EMA teacher heads |
+
+> [!Tip]
+> **Architecture synthesis**: combine sparse Mixture of Experts backbones with linear selective state-space layers (Hybrid SSM-MoE) to maximize context length and total parameter capacity within strict GPU memory limits.
+
+## Key Takeaways
+
+- **Sub-quadratic models break attention limits**: selective state-space architectures like Mamba achieve linear inference complexity by compressing sequential contexts dynamically.
+- **Sparse MoE decouples parameters from compute**: routing tokens dynamically to top-$k$ expert sub-networks scales model capacity without inflating per-token inference FLOPs.
+- **Auxiliary losses prevent routing collapse**: penalizing non-uniform token routing distributes workload evenly across experts and prevents expert deactivation.
+- **LoRA enables parameter-efficient adaptation**: decomposing weight updates into low-rank factor matrices cuts fine-tuning memory by orders of magnitude while preserving model accuracy.
+- **Quantization democratizes large model execution**: 4-bit NormalFloat quantization allows large foundation models to train and deploy on constrained hardware.
+- **Mechanistic interpretability discovers discrete circuits**: reverse-engineering model weights reveals dedicated algorithmic sub-networks, such as induction heads for in-context copying.
+- **Superposition packs surplus features into activations**: deep networks store more conceptual features than they have dimensions by projecting them non-orthogonally into shared spaces.
+- **Sparse autoencoders isolate monosemantic concepts**: overcomplete dictionary learning with $L_1$ penalties untangles polysemantic representations into human-interpretable feature vectors.
+- **JEPA models predict in latent representations**: eliminating pixel-level reconstruction allows world models to focus on invariant physical semantics rather than sensory noise.
+
+> [!Important]
+> **The future of neural design lies in structured efficiency**: the frontier of deep learning combines sparse dynamic routing, sub-quadratic sequence mechanics, parameter-efficient adaptation, and mechanistic circuit audits to construct scalable, sustainable, and interpretable intelligence systems.
