@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 2: Change Data Capture (CDC) Patterns
 
 Here are structured notes on **Change Data Capture (CDC) Patterns**, based on industry sources and your course module context.
@@ -78,4 +77,63 @@ Query-based CDC **periodically queries tables** for changes, typically using tim
 
 ### Snapshot Differential CDC
 
-Snapshot differential compares **full snapshots** of tables ta
+Snapshot differential compares **full snapshots** of tables taken at different points in time to identify what changed. It suits **small or legacy datasets** but has **high latency** and **no event context** — you see the net difference, not the individual operations.
+
+## CDC Architecture Patterns
+
+Four architecture patterns dominate production deployments in 2026.
+
+### Pattern 1: Log-Based CDC with Debezium (The Traditional Pattern)
+
+Source Database → Debezium (Kafka Connect plugin) → Kafka Topics → Multiple Independent Consumers. Debezium reads the database replication log and publishes change events to Kafka; each downstream system (search indexer, data lake loader, stream processor, notification service) is an independent Kafka consumer.
+
+**Use cases:** multi-system fan-out, event replay, decoupled teams
+
+**Trade-offs:** High operational burden — Kafka brokers, Kafka Connect workers, Debezium config, and schema registry each have their own failure modes.
+
+### Pattern 2: Embedded CDC in a Streaming Database (The Simplified Pattern)
+
+CDC logic runs **inside a streaming database**, eliminating the need for separate Kafka infrastructure. This reduces moving parts and operational overhead.
+
+### Pattern 3: Managed CDC (The Outsourced Pattern)
+
+A **managed service** handles CDC capture, routing, and delivery. This minimizes operational burden but introduces vendor dependency and potential cost implications.
+
+### Pattern 4: Hybrid CDC
+
+Combines **Debezium with a streaming database**, using Debezium for capture and the streaming database for processing and querying. This provides both flexibility and query capability.
+
+> [!IMPORTANT]
+> **The traditional Debezium + Kafka pattern offers the most flexibility but the highest operational burden — managed and embedded patterns reduce complexity at the cost of control.**
+
+## CDC Approach Comparison
+
+| Method | Source Load | Captures Deletes? | Latency | Setup Complexity |
+|---|---|---|---|---|
+| **Log-based** | Minimal — reads existing log | ✅ Yes | Seconds | High (permissions, log access) |
+| **Trigger-based** | High — extra write per mutation | ✅ Yes | Seconds | Medium (schema changes) |
+| **Query-based** | Full scan per poll | ❌ No | Poll interval | Low |
+| **Snapshot differential** | High — full snapshots | ✅ Yes (net difference) | High | Low |
+
+Source:
+
+## Best Practices for CDC Implementation
+
+- **Start small** — validate CDC on a single table or limited dataset before expanding
+- **Manage log retention** — ensure logs are retained long enough for CDC processing to complete
+- **Test schema evolution** — CDC pipelines must handle source schema changes gracefully
+- **Build error handling** — account for trigger failures, log parsing errors, and destination write conflicts
+- **Use upsert semantics (MERGE, not blind inserts)** — applying CDC events correctly requires merge logic at the destination
+- **Handle deletes as first-class events** — log-based CDC flags deleted rows explicitly; the destination merge must process them
+- **Prioritize security** — CDC often requires elevated database permissions; secure credentials and access
+- **Document troubleshooting** — log format quirks and vendor-specific behaviors vary widely
+
+> [!IMPORTANT]
+> **Capturing changes is only half the pipeline — orchestration, error recovery, idempotent loading, and delete handling are what make CDC production-ready.**
+
+## Key Takeaway
+
+CDC has evolved from a niche database trick into a **foundational pattern for real-time data systems**. The choice of CDC approach and architecture pattern depends on your **source database capabilities, latency requirements, operational capacity, and whether you need to capture deletes**. For most production use cases, **log-based CDC with Debezium** is the de-facto standard — it offers the best balance of performance, fidelity, and completeness, though it requires the most operational investment.
+
+> [!IMPORTANT]
+> **Log-based CDC is the production standard — it reads existing transaction logs with minimal source impact, captures all change types including deletes, and preserves exact operation order.**
