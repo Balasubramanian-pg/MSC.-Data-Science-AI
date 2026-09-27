@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 4: Loss Functions
 
 ## Loss Functions in Neural Network Optimization
@@ -84,4 +83,80 @@ The objective loss function acts as the mathematical compass that guides gradien
 - The Softmax transformation produces a non-diagonal Jacobian where off-diagonal terms couple classes together:
   $$\frac{\partial \hat{y}_k}{\partial z_j} = \begin{cases} \hat{y}_k(1 - \hat{y}_k) & \text{if } k = j \\ -\hat{y}_k \hat{y}_j & \text{if } k \neq j \end{cases}$$
 - Contracting this Jacobian with the cross-entropy loss derivative yields the vector difference between predicted probabilities and one-hot ground-truth labels:
-  $$\delta^{[L]} = \nabla_{z^{[L]}} \mathcal{L}_{\text{CCE}} = \hat{y} - y \in \mathbb{R
+  $$\delta^{[L]} = \nabla_{z^{[L]}} \mathcal{L}_{\text{CCE}} = \hat{y} - y \in \mathbb{R}^K$$
+- This simple gradient relation guarantees that errors scale proportionally with probability discrepancies, providing smooth, monotonic descent trajectories.
+
+### Kullback-Leibler (KL) Divergence Mechanics
+
+- The **Kullback-Leibler (KL) Divergence** quantifies the relative entropy or information lost when approximating a true probability distribution $P$ with a model distribution $Q$:
+  $$D_{\text{KL}}(P \parallel Q) = \sum_{x \in \mathcal{X}} P(x) \ln\left( \frac{P(x)}{Q(x)} \right) = \sum_{x \in \mathcal{X}} P(x) \ln P(x) - \sum_{x \in \mathcal{X}} P(x) \ln Q(x)$$
+- Expanding this equation reveals the relationship between cross-entropy, entropy, and KL divergence:
+  $$H(P, Q) = H(P) + D_{\text{KL}}(P \parallel Q)$$
+  where $H(P) = -\sum P(x) \ln P(x)$ is the **Shannon entropy** of the target distribution, and $H(P, Q)$ is the cross-entropy.
+- Because the true distribution $P$ is fixed by the dataset, its entropy $H(P)$ is an invariant constant; minimizing cross-entropy is mathematically equivalent to minimizing the KL divergence to the ground-truth distribution.
+- KL divergence is non-symmetric ($D_{\text{KL}}(P \parallel Q) \neq D_{\text{KL}}(Q \parallel P)$) and serves as an explicit objective in **Variational Autoencoders (VAEs)** and **knowledge distillation**.
+
+> [!Tip]
+> **Cross-entropy minimizes relative entropy**: because ground-truth data entropy is constant during training, minimizing cross-entropy loss directly minimizes the KL divergence between true labels and model predictions.
+
+## Specialized and Imbalance-Aware Loss Formulations
+
+### Weighted Cross-Entropy for Skewed Distributions
+
+- Standard cross-entropy treats errors across all classes with equal weight, causing models trained on highly imbalanced datasets to prioritize majority classes while ignoring rare minority instances.
+- **Weighted Cross-Entropy** introduces a static weighting scalar $w_k$ to the loss contribution of each individual class:
+  $$\mathcal{L}_{\text{WCE}} = -\frac{1}{m} \sum_{i=1}^m \sum_{k=1}^K w_k y_k^{(i)} \ln(\hat{y}_k^{(i)})$$
+- Typically, weights are set inversely proportional to class frequencies: $w_k = \frac{N}{K \cdot N_k}$, where $N_k$ is the instance count for class $k$.
+- Scaling minority class errors by larger coefficients increases their corresponding gradient updates, forcing parameters to adjust to underrepresented classes.
+
+### Focal Loss and Hard Example Mining
+
+- Proposed by Tsung-Yi Lin et al. (2017) for dense object detection, **Focal Loss** dynamically scales cross-entropy based on model confidence to counteract extreme class imbalance.
+- Define the probability of the correct class $p_t$ as:
+  $$p_t = \begin{cases} \hat{y} & \text{if } y = 1 \\ 1 - \hat{y} & \text{if } y = 0 \end{cases}$$
+- Focal Loss adds a modulating factor $(1 - p_t)^\gamma$ with focusing parameter $\gamma \ge 0$ and weighting factor $\alpha_t$:
+  $$\mathcal{L}_{\text{Focal}} = -\alpha_t (1 - p_t)^\gamma \ln(p_t)$$
+- When an example is easily classified ($p_t \to 1$), the modulating factor $(1 - p_t)^\gamma$ approaches zero, down-weighting its loss contribution.
+- When an example is difficult or misclassified ($p_t \to 0$), the factor approaches one, leaving the loss update intact.
+- Setting $\gamma = 2.0$ suppresses the cumulative gradient impact of millions of easy background negative samples, allowing optimization to focus on hard positive foreground objects.
+
+### Margin-Based Formulations: Hinge Loss
+
+- In contrast to probabilistic cross-entropy, **Hinge Loss** maximizes geometric classification margins for support vector machines and linear classifiers:
+  $$\mathcal{L}_{\text{Hinge}} = \frac{1}{m} \sum_{i=1}^m \max(0, \; 1 - y^{(i)} \hat{y}^{(i)}), \quad y^{(i)} \in \{-1, +1\}$$
+- When an instance is correctly classified with a margin of at least one ($y^{(i)} \hat{y}^{(i)} \ge 1$), the loss and its gradient evaluate to zero.
+- Gradients exist only for instances that violate the margin ($y^{(i)} \hat{y}^{(i)} < 1$), where $\frac{\partial \mathcal{L}}{\partial \hat{y}} = -y^{(i)}$.
+- Hinge loss focuses parameter updates entirely on boundary-straddling support vectors, ignoring correctly separated instances beyond the margin boundary.
+
+> [!Important]
+> **Focal loss handles extreme class imbalance**: modulating cross-entropy with $(1 - p_t)^\gamma$ suppresses loss contributions from easy majority instances, focusing parameter updates on difficult minority samples.
+
+## Systematic Comparison of Loss Functions
+
+| Loss Function | Primary Target Domain | Mathematical Expression | Underlying Noise Assumption | Error Gradient Magnitude $\|\nabla_{\hat{y}} \mathcal{L}\|$ | Outlier Sensitivity |
+|---|---|---|---|---|---|
+| **Mean Squared Error (MSE)** | Continuous Regression | $\frac{1}{2m} \sum \|\hat{y} - y\|_2^2$ | Gaussian $\mathcal{N}(\mu, \sigma^2)$ | Linear ($|\hat{y} - y|$) | High (quadratic penalty) |
+| **Mean Absolute Error (MAE)** | Continuous Regression | $\frac{1}{m} \sum |\hat{y} - y|$ | Laplace $\text{Laplace}(\mu, b)$ | Constant ($1.0$) | Low (robust linear scaling) |
+| **Huber / Smooth L1** | Robust Regression | $\frac{1}{2}e^2$ if $|e|\le\delta$, else $\delta|e|-\frac{1}{2}\delta^2$ | Gaussian center, Laplace tails | Clamped linear ($\min(|e|, \delta)$) | Moderate (transitions to linear) |
+| **Binary Cross-Entropy (BCE)** | Binary / Multi-Label | $-\sum [y\ln\hat{y} + (1-y)\ln(1-\hat{y})]$ | Bernoulli $\text{Bernoulli}(p)$ | Exact error ($|\hat{y} - y|$) when with Sigmoid | Moderate |
+| **Categorical Cross-Entropy** | Multi-Class Classification | $-\sum_k y_k \ln \hat{y}_k$ | Categorical $\text{Cat}(p_1, \dots, p_K)$ | Exact error ($|\hat{y}_k - y_k|$) when with Softmax | Moderate |
+| **Kullback-Leibler (KL) Div** | Probability Densities | $\sum P(x) \ln(P(x) / Q(x))$ | Arbitrary distribution comparison | Discrepancy ratio ($\frac{P}{Q}$) | High if $Q(x) \to 0$ where $P(x) > 0$ |
+| **Focal Loss** | Imbalanced Classification | $-\alpha_t (1 - p_t)^\gamma \ln(p_t)$ | Dynamically modulated Bernoulli | Suppressed for easy samples ($p_t \to 1$) | Low for easy negatives |
+| **Hinge Loss** | Hard-Margin Classification | $\max(0, 1 - y \hat{y})$ | Margin-based separation | Discrete ($0.0$ or $1.0$) | Low for confident points |
+
+> [!Tip]
+> **Evaluate loss gradients through pre-activations**: analyzing $\frac{\partial \mathcal{L}}{\partial z}$ rather than $\frac{\partial \mathcal{L}}{\partial \hat{y}}$ reveals whether an output activation and loss pairing creates derivative cancellation or induces gradient vanishing.
+
+## Key Takeaways
+
+- **Loss functions translate errors into scalar costs**; they formalize empirical risk minimization and are derived from negative log-likelihood under maximum likelihood estimation.
+- **Underlying distribution choices dictate loss selection**: continuous Gaussian noise leads to MSE, Laplace noise yields MAE, Bernoulli targets produce BCE, and Categorical targets produce CCE.
+- **MSE produces linear error gradients** but remains sensitive to outliers due to its quadratic penalty, while **MAE maintains robust constant gradients** but presents subgradient issues at the origin.
+- **Huber loss bridges MSE and MAE**, evaluating quadratic penalties for small errors while transitioning to linear penalties for residuals larger than $\delta$.
+- **Derivative cancellation preserves gradient flow**: pairing Binary Cross-Entropy with Sigmoid, or Categorical Cross-Entropy with Softmax, cancels out saturating derivatives to produce the linear update gradient $\delta^{[L]} = \hat{y} - y$.
+- **Minimizing cross-entropy is equivalent to minimizing KL divergence** because the Shannon entropy of the true ground-truth labels is an invariant constant during training.
+- **Focal Loss counters class imbalance** by adding a modulating factor $(1 - p_t)^\gamma$ that suppresses gradient contributions from easy majority instances, focusing learning on hard minority samples.
+- **Hinge Loss enforces maximum margins**, ignoring samples correctly classified beyond the margin threshold to optimize support vector boundaries.
+
+> [!Tip]
+> The fundamental design principle of neural loss functions: **loss selection shapes optimization curvature**; coupling an output layer's activation with its natural maximum likelihood loss distribution ensures derivative cancellation, eliminates artificial plateaus, and maintains clean error gradients throughout backpropagation.
