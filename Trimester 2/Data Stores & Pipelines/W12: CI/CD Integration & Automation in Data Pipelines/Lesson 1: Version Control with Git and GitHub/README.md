@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: Version Control with Git and GitHub
 
 Version Control with Git and GitHub:
@@ -22,4 +21,24 @@ Branching Strategies for Data Pipelines:
 
 Collaboration and Governance on GitHub:
 
-- Remote repository operations: The remote command links local repositories to hosted servers, the push command uploads local commits to remot
+- Remote repository operations: The remote command links local repositories to hosted servers, the push command uploads local commits to remote branches, and the pull command fetches and merges remote updates into local branches.
+- Pull requests: Serve as the primary mechanism for peer review and quality enforcement. A pull request allows team members to inspect proposed code changes, comment on specific lines, and suggest improvements before code enters production branches.
+- Branch protection rules: Administrative repository controls that prevent direct commits to primary production branches. Protection rules require approval from peer reviewers and mandate that all automated continuous integration checks pass before merging is permitted.
+- Issues and tracking: GitHub issues track data pipeline bugs, schema alteration requests, and infrastructure technical debt, linking specific problem descriptions directly to resolving commit hashes.
+
+Repository Hygiene and Exclusion Rules:
+
+- The gitignore file: Specifies deliberate untracked files that Git should ignore, preventing non-source artifacts from bloating repository storage or contaminating production deployments.
+- What belongs in version control: Airflow DAG definitions, dbt models, custom Python transformation modules, SQL scripts, automated test files, Dockerfiles, and infrastructure configuration files.
+- What must never enter version control: Large raw datasets, database backup dumps, pipeline execution logs, virtual environment directories, local cache folders, and private credentials.
+- Handling data fixtures: Tools such as Data Version Control or Git Large File Storage manage small versioned sample datasets and machine learning model weights without cluttering the primary Git object database.
+- Important: Once sensitive credentials such as database passwords, API tokens, or cloud private keys are committed into a Git repository, they remain in the commit history permanently unless the entire repository history is purged and rewritten.
+
+Key Takeaways:
+
+- Git provides a distributed, auditable, and immutable historical record for all data pipeline source code.
+- Moving files through the working directory, staging area, and commit repository allows developers to craft clean, atomic snapshots.
+- Trunk-based branching and short-lived feature branches reduce merge conflicts when multiple data engineers work on shared pipelines.
+- Pull requests combined with branch protection rules ensure that all pipeline modifications undergo peer review and pass automated checks before release.
+- The gitignore file must exclude raw data files, execution logs, and cache folders to maintain a lightweight repository.
+- Sensitive access credentials must never be committed to version control and should be managed exclusively through secure environment injection.
