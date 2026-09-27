@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: Supervised Learning Fundamentals 
 
 ## Supervised Learning Fundamentals and Problem Formulation
@@ -102,4 +101,107 @@ flowchart LR
   $$\theta_{\text{gen}} = \arg\max_\theta \sum_{i=1}^N \ln P(X = x^{(i)}, Y = y^{(i)}; \theta) = \arg\max_\theta \sum_{i=1}^N \left( \ln P(X = x^{(i)} \mid Y = y^{(i)}) + \ln P(Y = y^{(i)}) \right)$$
 - At inference time, the model applies **Bayes' rule** to invert the conditional distributions and evaluate class posteriors:
   $$P(Y = c \mid X = x) = \frac{P(X = x \mid Y = c) P(Y = c)}{\sum_{k=1}^C P(X = x \mid Y = k) P(Y = k)}$$
-- Examples include **Naive Bayes**, **Linear Discriminant Analysis (LDA)**, **Quadratic Discriminant Analysis (QDA)**, and **Gaussian Mixture
+- Examples include **Naive Bayes**, **Linear Discriminant Analysis (LDA)**, **Quadratic Discriminant Analysis (QDA)**, and **Gaussian Mixture Models**.
+
+### The Asymptotic Error and Sample Efficiency Tradeoff
+
+- Andrew Ng and Michael Jordan (2002) formalized the foundational statistical trade-off between generative and discriminative pairs (e.g., Naive Bayes versus Logistic Regression):
+  - **Sample Efficiency (Small $N$):** Generative models reach their asymptotic error rate faster, requiring only $O(\log D)$ training instances to converge because parameter estimates decouple across independent class-conditional distributions.
+  - **Asymptotic Accuracy (Large $N$):** Discriminative models achieve a lower asymptotic error rate as dataset size $N \to \infty$, scaling as $O(D)$ sample complexity. If a generative model assumes incorrect distributional forms (such as feature independence in Naive Bayes), its asymptotic performance plateaus early.
+
+> [!Important]
+> **Generative models learn distributions; discriminative models learn boundaries**: generative models converge quickly on small sample sizes using Bayes' inversion, but discriminative models achieve superior classification accuracy on large datasets by optimizing boundaries directly.
+
+## Multiclass Classification Decomposition Architectures
+
+### One-vs-Rest (OvR) Formulation and Calibration Challenges
+
+- The **One-vs-Rest (OvR / One-vs-All)** framework reduces a $C$-class classification problem into $C$ independent binary classification tasks.
+- For each class $k \in \{1, \dots, C\}$:
+  - Construct a binary dataset $\mathcal{D}_k$ where instances belonging to class $k$ receive target $+1$, and all instances belonging to the remaining $C-1$ classes receive target $-1$.
+  - Train an independent binary classifier $f_k(x)$ producing a continuous confidence score $s_k(x) \in \mathbb{R}$.
+- **Inference Protocol:** Evaluate an unseen query point $x$ across all $C$ models, assigning the instance to the class with the highest raw confidence score:
+  $$\hat{y} = \arg\max_{k \in \{1, \dots, C\}} s_k(x)$$
+- **Operational Vulnerabilities:**
+  - *Class Imbalance:* Each binary sub-problem suffers from synthetic class imbalance; for a 20-class problem, the negative set is roughly 19 times larger than the positive set.
+  - *Score Miscalibration:* Because the $C$ models train independently, their raw decision scores $s_k(x)$ operate on uncalibrated scales, making direct argmax comparisons vulnerable to scale distortions.
+
+### One-vs-One (OvO) Formulation and Majority Voting Dynamics
+
+- The **One-vs-One (OvO)** framework decomposes a $C$-class problem into all possible unique pairwise binary comparisons, allocating:
+  $$M = \frac{C(C - 1)}{2} \text{ independent binary classifiers}$$
+- For each unique pair of classes $(j, k)$ where $j < k$:
+  - Train a binary classifier $f_{jk}(x)$ exclusively on the subset of data belonging to class $j$ (labeled $+1$) and class $k$ (labeled $-1$).
+  - Instances belonging to all other classes are ignored during training.
+- **Inference Protocol:** At evaluation time, pass query instance $x$ through all $\frac{C(C-1)}{2}$ pairwise classifiers:
+  - Each classifier casts a discrete vote for its predicted class: $V_c = \sum_{j < k} \mathbf{1}[f_{jk}(x) = c]$.
+  - The final prediction is selected via **majority voting (plurality)**:
+    $$\hat{y} = \arg\max_{c \in \{1, \dots, C\}} V_c$$
+- **Operational Advantages:** Each pairwise classifier trains on a small, balanced sub-dataset ($N_j + N_k \ll N$). When training algorithms scale with super-linear computational complexity (such as kernel SVMs scaling as $O(N^2)$ to $O(N^3)$), OvO trains faster than OvR despite requiring more models.
+
+```mermaid
+flowchart TD
+    subgraph OvR["One-vs-Rest (C Classifiers)"]
+        In1["Input x"] --> M1["Model 1: (C1 vs Rest) -> Score 1"]
+        In1 --> M2["Model 2: (C2 vs Rest) -> Score 2"]
+        In1 --> M3["Model 3: (C3 vs Rest) -> Score 3"]
+        M1 & M2 & M3 --> Argmax["Select argmax(Score_k)"]
+    end
+
+    subgraph OvO["One-vs-One (C*(C-1)/2 Classifiers)"]
+        In2["Input x"] --> P1["Model 12: (C1 vs C2) -> Vote C1"]
+        In2 --> P2["Model 13: (C1 vs C3) -> Vote C1"]
+        In2 --> P3["Model 23: (C2 vs C3) -> Vote C3"]
+        P1 & P2 & P3 --> Majority["Plurality Vote -> Select Class 1"]
+    end
+```
+
+### Direct Multiclass Generalizations
+
+- While OvR and OvO decompose multiclass problems externally, certain algorithms generalize to arbitrary $C$-class settings natively:
+  - **Multinomial Logistic Regression (Softmax Regression):** Replaces binary sigmoids with a normalized exponential Softmax layer over $C$ linear score functions.
+  - **Decision Trees and Random Forests:** Evaluate multi-class Gini impurity directly across multi-class distributions without binarization.
+  - **Neural Networks:** Allocate $C$ neurons in the output layer paired with Categorical Cross-Entropy loss.
+
+> [!Tip]
+> **Use OvO for super-linear models and OvR for linear models**: One-vs-One evaluates pairwise subsets that accelerate $O(N^2)$ algorithms like kernel SVMs, while One-vs-Rest trains fewer total models, making it preferable for linear classifiers.
+
+## Comparative Matrix of Modeling Paradigms and Decomposition Strategies
+
+| Dimension | Discriminative Classification | Generative Classification | Continuous Regression |
+|---|---|---|---|
+| **Target Space ($\mathcal{Y}$)** | Discrete categorical: $\{1, \dots, C\}$ | Discrete categorical: $\{1, \dots, C\}$ | **Continuous real-valued**: $\mathbb{R}^K$ |
+| **Probabilistic Core** | Models conditional posterior $P(Y \mid X)$ | Models joint distribution $P(X, Y) = P(X \mid Y)P(Y)$ | Models conditional expectation $\mathbb{E}[Y \mid X]$ |
+| **Inference Mechanism** | Evaluates $\arg\max_y P(Y \mid X)$ directly | Applies Bayes' rule to invert likelihoods | Directly evaluates continuous function $f(x)$ |
+| **Missing Feature Handling** | Difficult; requires input imputation | **Native**; marginalizes over unobserved $X$ | Requires input imputation prior to prediction |
+| **Outlier Detection Utility** | Low; forces arbitrary class assignments | **High**; flags low marginal density $P(X)$ | Analyzes residual error magnitudes |
+| **Asymptotic Sample Scaling** | Lower asymptotic error as $N \to \infty$ | Reaches asymptotic error bound at small $N$ | Governed by functional complexity of $f(x)$ |
+| **Representative Models** | Logistic Regression, Linear SVM, MLPs | Naive Bayes, Linear Discriminant Analysis | Ordinary Least Squares, Ridge, Lasso |
+
+### Multiclass Decomposition Tradeoffs: One-vs-Rest Versus One-vs-One
+
+| Operational Attribute | One-vs-Rest (OvR / One-vs-All) | One-vs-One (OvO / Pairwise) |
+|---|---|---|
+| **Total Classifiers Trained** | Exactly $C$ binary models | $\frac{C(C - 1)}{2}$ binary models |
+| **Training Dataset Size per Model** | Full training dataset ($N$ instances) | Balanced pairwise subsets ($N_j + N_k \ll N$) |
+| **Synthetic Class Imbalance** | **Severe** ($1 : (C - 1)$ negative ratio) | Minimal (balanced class pairs) |
+| **Inference Computational Cost** | $C$ model evaluations | $\frac{C(C - 1)}{2}$ model evaluations |
+| **Decision Rule at Test Time** | Continuous confidence argmax: $\arg\max s_k(x)$ | Discrete majority voting: $\arg\max V_c$ |
+| **Sensitivity to Scaling** | High (uncalibrated score outputs) | Low (uses discrete binary comparisons) |
+| **Optimal Algorithmic Pairing** | Linear models; fast $O(N)$ estimators | Kernel SVMs; super-linear $O(N^2)$ models |
+
+> [!Important]
+> **Decomposition choices reflect training complexity**: OvR minimizes total model count ($C$), while OvO bounds sub-problem sample size ($\frac{2N}{C}$), making OvO the preferred strategy when base classifiers scale poorly with dataset size.
+
+## Key Takeaways
+
+- **Supervised learning optimizes empirical risk**: because true distribution risk $R(f)$ cannot be calculated, learning algorithms minimize sample empirical risk $R_{\text{emp}}$ over training data.
+- **Regression predicts continuous expectations**, optimizing squared or absolute residuals, while **classification predicts discrete categories**, partitioning feature space into geometric decision regions.
+- **Convex surrogate losses bypass NP-hard 0-1 loss**: smooth functions like Cross-Entropy and Hinge loss provide non-zero gradients that enable optimization via gradient descent.
+- **Discriminative models learn decision boundaries directly** ($P(Y \mid X)$), achieving superior asymptotic accuracy on large datasets.
+- **Generative models learn joint distributions** ($P(X, Y)$), using Bayes' rule to infer class posteriors while offering native missing-data marginalization and fast sample efficiency on small datasets.
+- **One-vs-Rest decomposes multiclass tasks into $C$ binary models**, but introduces synthetic class imbalance and requires calibrated confidence scores.
+- **One-vs-One decomposes tasks into $\frac{C(C-1)}{2}$ pairwise models**, eliminating class imbalance and accelerating algorithms with super-linear computational scaling.
+
+> [!Tip]
+> The foundational law of supervised learning: **formal problem framing dictates mathematical feasibility**; aligning the prediction domain, modeling paradigm, and convex surrogate loss with available dataset scale guarantees that empirical risk minimization yields generalizable decision boundaries.
