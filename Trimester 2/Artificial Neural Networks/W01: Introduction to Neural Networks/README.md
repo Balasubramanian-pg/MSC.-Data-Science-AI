@@ -1,4 +1,3 @@
-# Migration in progress
 # W01: Introduction to Neural Networks
 
 **What Is an Artificial Neural Network?**
@@ -77,4 +76,103 @@ The sigmoid function has a derivative close to zero when |u| > 4, causing numeri
 
 **Empirical performance**: ReLU achieved 91.05% accuracy vs. Tanh at 85.42% and Sigmoid at 81.34% in comparative studies.
 
-> **Important:** ReLU is the default activation function for hidden layers in modern networks — it is computationally efficient and avoids the vanishing gra
+> **Important:** ReLU is the default activation function for hidden layers in modern networks — it is computationally efficient and avoids the vanishing gradient problem that plagues Sigmoid and Tanh.
+
+**Multilayer Perceptrons (MLPs) and Hidden Layers**
+
+The multilayer perceptron (MLP) combines more than one layer of weights to map from input space to output space. Each intermediate layer is called a hidden layer.
+
+**Architecture**
+
+- **Input layer**: Serves only to store the values of the input variables.
+- **Hidden layer(s)**: Perceptron units arranged in parallel so that multiple hyperplane tests can be conducted on linear combinations of input variables.
+- **Output layer**: Produces the final prediction.
+
+**Universal Approximation**
+
+One hidden layer is enough to approximate any continuous single-valued function — this is a powerful property of MLPs. However, deeper networks can learn more complex representations with fewer neurons per layer.
+
+**Notation**
+
+For a network with L layers, layer l has s_l units. The forward equations are:
+
+**z¹ = x** (input)
+**zˡ = Wˡ aˡ⁻¹ + bˡ**
+**aˡ = f(zˡ)**
+**L(aᴸ, y)** = loss
+
+> **Important:** A single hidden layer is theoretically sufficient to approximate any continuous function, but deep networks are more parameter-efficient for complex patterns.
+
+**Forward Propagation and Backpropagation**
+
+**Forward Propagation**
+
+Forward propagation computes the network's output for a given input by propagating activations through the layers:
+
+**zˡ = Wˡ aˡ⁻¹ + bˡ**
+**aˡ = f(zˡ)**
+
+This is the inference step — given input x, compute the predicted output.
+
+**Backpropagation: Learning from Mistakes**
+
+Backpropagation is the algorithm for training neural networks. It can be thought of as learning from mistakes: for example, when a child touches a hot stove and gets burned, that child learns that stoves can be hot.
+
+**High-level algorithm**:
+1. **Randomly initialize weights** wᵢⱼˡ for all layers.
+2. **Forward propagate** to get f_w(x) for any x.
+3. **Execute backpropagation** — compute partial derivatives ∂E/∂wᵢⱼ⁽ˡ⁾.
+4. **Use gradient descent** to minimize the non-convex error E(w): **wᵢⱼˡ = wᵢⱼˡ − η · ∂E/∂wᵢⱼ⁽ˡ⁾**.
+
+The chain rule of calculus is used to compute derivatives layer by layer, starting from the output and propagating backward.
+
+**The Delta Rule and Its Generalization**
+
+The delta rule is the basis for most applied learning algorithms. Backpropagation is a generalization of the delta rule, again based on gradient descent to minimize the sum squared difference between target and actual outputs.
+
+> **Important:** Backpropagation uses the chain rule to compute gradients layer by layer, starting from the output and propagating backward — this is what enables deep networks to learn.
+
+**Training: Loss Functions and Optimization**
+
+Training a neural network is an optimization procedure aimed at obtaining weights and biases that minimize a loss function.
+
+**Common Loss Functions**
+
+- **Mean Squared Error (MSE)**: L = ½(z − y)² — used for regression.
+- **Cross-entropy loss**: Used for classification tasks.
+- **Negated kurtosis loss**: A novel loss function for improving training efficiency.
+
+**Gradient Descent**
+
+The gradient descent algorithm updates parameters in the direction that reduces the loss based on computed gradients:
+
+**θ ← θ − η · ∇_θ J(θ)**
+
+where η is the learning rate.
+
+**Stochastic Gradient Descent (SGD)**
+
+SGD randomly picks a data point (x⁽ⁱ⁾, y⁽ⁱ⁾) and updates weights incrementally, rather than computing the gradient over the entire dataset.
+
+> **Important:** Training is optimization: find the weights that minimize the loss function. Gradient descent is the workhorse algorithm, and backpropagation computes the gradients it needs.
+
+**Learning Objectives for This Module**
+
+Based on course materials, by the end of this introduction you should be able to:
+
+- **Explain perceptrons and MLPs**: structure, function, history, and limitations.
+- **Describe activation functions**: their role in enabling complex pattern learning.
+- **Implement a feedforward neural network** with Keras on Fashion-MNIST.
+- **Interpret neural network training and results**: visualization and evaluation metrics.
+- **Familiarize with deep learning frameworks**: PyTorch, TensorFlow, and Keras for model building and deployment.
+
+**Key Takeaways**
+
+- **ANNs are inspired by biological neurons** — simple computational units interconnected to form a network that collectively performs complex computations.
+- **The perceptron is the simplest unit** and can only solve linearly separable problems; the delta rule trains it via gradient descent.
+- **Activation functions introduce non-linearity**, which is essential for learning complex patterns. ReLU is the modern default for hidden layers.
+- **MLPs add hidden layers**, enabling approximation of any continuous function and learning of hierarchical representations.
+- **Backpropagation** computes gradients layer by layer using the chain rule, enabling deep networks to learn from errors.
+- **Training is optimization** — minimize a loss function via gradient descent, updating weights in the direction that reduces error.
+
+> **Important:** The core insight of neural networks: complex intelligence emerges from many simple units connected together, each performing a weighted sum and a non-linear activation, with learning driven by backpropagation of errors.
