@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 2: Security in Data Pipelines
 Security in Data Pipelines:
 
@@ -21,4 +20,25 @@ Access Control and Authorization Models:
 
 Cryptographic Safeguards: Encryption and Masking:
 
-- Encryption in transit: All data flowing across network boundaries, between microservi
+- Encryption in transit: All data flowing across network boundaries, between microservices, through message brokers, and between Spark executors must be encrypted using Transport Layer Security protocol version 1.2 or 1.3.
+- Encryption at rest: All persistent data stored on local disks, cloud object buckets, and data warehouse tables must be encrypted using strong symmetric algorithms like Advanced Encryption Standard with 256-bit keys.
+- Key Management Services: Dedicated cloud key services handle master key generation, automated key rotation, and audit tracking. Organizations choose between provider-managed keys and customer-managed keys depending on regulatory requirements.
+- Envelope encryption: A security pattern where plaintext data is encrypted using a unique data encryption key, and the data key itself is encrypted using a top-level master key managed within a secure hardware security module.
+- Dynamic data masking: Masks sensitive information at query time based on user role authorization without modifying the underlying raw data on disk, allowing support staff to see masked representations like asterisks while privileged applications read full values.
+- Tokenization: Replaces sensitive attributes with non-sensitive surrogate tokens before records land in analytical storage, breaking direct links to customer identities.
+- Important: Running unencrypted distributed compute clusters across shared cloud networks exposes intermediate in-memory data and shuffle spill files to potential interception.
+
+Network Architecture and Infrastructure Isolation:
+
+- Virtual Private Clouds: Pipeline compute instances, relational databases, and worker nodes must be deployed inside private subnets that have no direct public internet exposure.
+- Private endpoints: Services connect to cloud object storage and managed analytical warehouses using private network interfaces and PrivateLink connections, preventing pipeline data from traversing public network backbones.
+- Network security groups and firewalls: Inbound and outbound traffic rules restrict network traffic strictly to approved ports and trusted IP addresses, blocking unauthorized egress of sensitive data payloads.
+
+Key Takeaways:
+
+- Securing data pipelines requires protecting data across networks, storage volumes, intermediate memory, and user interfaces.
+- Machine identities should use short-lived federated credentials rather than permanent static API keys.
+- Fine-grained access controls utilize role-based policies, attribute-based rules, column-level restrictions, and row-level filtering.
+- Data must remain encrypted in transit using modern TLS protocols and encrypted at rest using AES-256 via key management services.
+- Dynamic data masking and tokenization allow analytical operations to proceed without exposing sensitive attributes to unauthorized users.
+- Private network endpoints and isolated subnets prevent pipeline traffic from being exposed to the public internet.
