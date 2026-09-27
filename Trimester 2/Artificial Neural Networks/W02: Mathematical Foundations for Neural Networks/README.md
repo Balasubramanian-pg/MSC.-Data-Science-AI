@@ -1,4 +1,3 @@
-# Migration in progress
 # W02: Mathematical Foundations for Neural Networks
 
 **Why Mathematical Foundations Matter**
@@ -93,4 +92,100 @@ Probability and statistics provide the framework for **modeling uncertainty**, *
 
 **Maximum Likelihood Estimation**
 
-- **Maximum likelihood estimation (MLE)** finds the parameter v
+- **Maximum likelihood estimation (MLE)** finds the parameter values that make the observed data *most probable*.
+- Training a neural network with **cross-entropy loss** is equivalent to *maximum likelihood estimation* under a categorical distribution.
+- Training with **mean squared error** is equivalent to MLE under a Gaussian distribution.
+
+**Expectation and Variance**
+
+- **Expectation** is the *average value* of a random variable.
+- **Variance** measures the *spread* of a distribution.
+- These concepts are used in **initialization schemes**, **regularization**, and **uncertainty quantification**.
+
+> [!Tip]
+> **Maximum likelihood estimation** connects probability to loss functions: choosing a loss function is implicitly choosing a *probabilistic model* for the data.
+
+**Optimization: Finding the Best Parameters**
+
+Optimization is the process of **minimizing the loss function** to find the best weights and biases. It is the *engine* of neural network training.
+
+**Gradient Descent**
+
+- **Gradient descent** updates parameters in the direction that *reduces the loss* based on the computed gradient.
+- The update rule is: **θ ← θ − η · ∇_θ J(θ)**, where η is the **learning rate**.
+
+**Stochastic Gradient Descent (SGD)**
+
+- **SGD** computes the gradient using a *single data point* or a *mini-batch* rather than the entire dataset.
+- This makes training *computationally feasible* on large datasets and introduces *noise* that can help escape local minima.
+
+**Learning Rate**
+
+- The **learning rate** controls the *step size* of each update. It is the *most important hyperparameter*.
+- Too large: the loss *diverges* or oscillates. Too small: training is *slow* and may get stuck.
+
+**Convexity and Non-Convexity**
+
+- A **convex** function has a *single global minimum*; gradient descent is guaranteed to find it.
+- Neural network loss surfaces are **non-convex**, with many local minima and saddle points.
+- Despite non-convexity, deep learning *works well in practice* because most local minima are *good enough*, and saddle points are the main obstacle.
+
+**Advanced Optimizers**
+
+- **Momentum** accelerates SGD by accumulating a *velocity* in the gradient direction.
+- **Adam** combines momentum with *adaptive learning rates* per parameter. It works well in practice across a wide range of problems.
+- **RMSprop** adapts the learning rate based on the *recent magnitude* of gradients.
+
+> [!Tip]
+> **The learning rate** is the most critical hyperparameter in neural network training: it determines whether the network *converges*, *diverges*, or *converges too slowly* to be useful.
+
+**Matrix Calculus: The Language of Backpropagation**
+
+Matrix calculus extends ordinary calculus to **vectors and matrices**. It is the *native language* of neural network backpropagation.
+
+- **Vector-Jacobian products** and **Jacobian-vector products** are the fundamental operations in automatic differentiation.
+- **Chain rules on computational graphs** are how frameworks like PyTorch and TensorFlow compute gradients.
+- **Second derivatives**, **Hessian matrices**, and **quadratic approximations** are used in second-order optimization and in analyzing the curvature of the loss surface.
+
+> [!Tip]
+> **Matrix calculus** allows you to derive backpropagation equations *efficiently* and to implement them correctly in code using vectorized operations.
+
+**Information Theory: Measuring Information and Loss**
+
+Information theory provides the theoretical foundation for **loss functions** and for understanding what neural networks learn.
+
+**Entropy**
+
+- **Shannon entropy** measures the *average uncertainty* or *information content* of a probability distribution.
+- High entropy means high uncertainty; low entropy means the distribution is *concentrated* on a few outcomes.
+
+**Cross-Entropy**
+
+- **Cross-entropy** measures the *difference* between two probability distributions: the true distribution and the model's predicted distribution.
+- **Cross-entropy loss** is the standard loss function for classification tasks. Minimizing cross-entropy is equivalent to *maximizing the likelihood* of the correct labels.
+
+**Kullback-Leibler (KL) Divergence**
+
+- **KL divergence** measures the *extra information cost* of using an imperfect model instead of the true distribution.
+- **Cross-entropy** = **entropy** + **KL divergence**. Minimizing cross-entropy is equivalent to minimizing KL divergence when the true entropy is constant.
+- KL divergence is used in **variational autoencoders (VAEs)**, **knowledge distillation**, and **reinforcement learning**.
+
+**Mutual Information**
+
+- **Mutual information** measures how much *knowing one variable* tells you about another.
+- It is used in **feature selection**, **representation learning**, and **information bottleneck** methods.
+
+> [!Tip]
+> **Cross-entropy loss** is not just a convenient choice: it is the *maximum likelihood estimate* under a categorical distribution, connecting information theory directly to neural network training.
+
+**Key Takeaways**
+
+- **Linear algebra** provides the *structural language* of neural networks: vectors, matrices, and decompositions represent data and transformations.
+- **Calculus**, especially the **chain rule**, enables **backpropagation**, which is how neural networks learn from errors.
+- **Probability and statistics** handle *uncertainty* and connect *loss functions* to *maximum likelihood estimation*.
+- **Optimization** drives learning through **gradient descent** and its variants; the **learning rate** is the most critical hyperparameter.
+- **Matrix calculus** is the *native language* of backpropagation, enabling efficient gradient computation on computational graphs.
+- **Information theory** provides the theoretical basis for **cross-entropy loss** and for measuring what neural networks learn.
+
+> [!Tip]
+> The core insight of the mathematical foundations: neural network training is a **non-convex optimization problem** solved by **gradient descent**, where gradients are computed by **backpropagation** using the **chain rule**, and the loss function is chosen based on the **probabilistic model** of the data.
