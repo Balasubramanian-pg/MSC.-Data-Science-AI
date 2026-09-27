@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: Introduction
 
 ## Introduction to Convolutional Neural Networks and Spatial Representation
@@ -65,4 +64,73 @@ Fully connected feedforward networks process inputs as flat, unstructured vector
 ### Parameter Sharing and Tied Synaptic Weights
 
 - Rather than assigning unique weights to each spatial region, a convolutional layer sweeps an identical kernel matrix across the entire input grid, a mechanism known as **parameter sharing** (weight tying).
-- A filter trained to detect horizontal bo
+- A filter trained to detect horizontal boundaries applies the identical weight coefficients across all spatial locations.
+- Parameter sharing reduces memory footprints: a $3 \times 3$ filter operating across 64 input channels to produce 128 output channels requires only 73,856 parameters, regardless of how large the input image dimensions are.
+
+### Translation Equivariance and Spatial Symmetry
+
+- Applying identical shared kernels across all coordinates establishes mathematical **translation equivariance**:
+  $$\text{Conv}(\text{Shift}(x)) = \text{Shift}(\text{Conv}(x))$$
+- If an input object translates by spatial offset $(\Delta x, \Delta y)$, the computed activations in the output feature map translate by the identical offset without changing their activation values.
+- Translation equivariance allows networks to identify visual features consistently across the sensory canvas without duplicating parameters for each location.
+
+> [!Tip]
+> **Parameter sharing enforces translation equivariance**: sweeping identical filter weights across all input coordinates allows a convolutional layer to detect features anywhere in an image with minimal parameter overhead.
+
+## The Compositional Feature Hierarchy
+
+### Low-Level Sensory Primitives
+
+- The initial convolutional layers directly process raw pixel intensities across localized windows.
+- Filters in early layers optimize into **Gabor-like edge detectors**, identifying basic visual primitives such as:
+  - High-frequency horizontal, vertical, and diagonal edges.
+  - Spatial color transitions and localized color gradients.
+  - Elementary textures and contrast boundaries.
+- These low-level primitives capture general visual properties, allowing early layers to transfer effectively across diverse downstream computer vision tasks.
+
+### Mid-Level Geometric Motifs
+
+- Intermediate convolutional layers receive the output feature maps produced by early layers.
+- By stacking convolutional and pooling operations, intermediate neurons possess larger effective receptive fields, allowing them to compose simple edges into structured motifs:
+  - Intersecting lines, corners, and junctions.
+  - Curved boundaries, circles, and geometric contours.
+  - Repetitive surface patterns, material textures, and visual symmetry.
+
+### High-Level Semantic Abstractions
+
+- Deep layers near the output of the convolutional backbone integrate mid-level motifs across broad spatial regions.
+- Neurons in these late stages respond to **class-specific semantic parts** and holistic object geometries:
+  - Structural object parts (e.g., wheels, eyes, handles, wings).
+  - Spatial configurations of interconnected parts (e.g., animal faces, vehicle profiles).
+- The final feature representations form a linearly separable latent space, allowing simple linear classifiers or global pooling layers to output final predictions.
+
+> [!Important]
+> **Convolutional depth builds spatial abstraction**: early layers detect localized edges, intermediate layers assemble edges into textures and motifs, and deep layers combine motifs into complete semantic object representations.
+
+## Structural Comparison: Fully Connected Versus Convolutional Layers
+
+| Architectural Dimension | Fully Connected (Dense) Layer | Convolutional Layer |
+|---|---|---|
+| **Synaptic Connectivity** | Dense (global interaction across all inputs) | Sparse (restricted to localized $K \times K$ patches) |
+| **Weight Parameter Allocation** | Unique independent weights per synaptic path | Shared weights (kernels swept across coordinates) |
+| **Spatial Grid Awareness** | None (requires flattened 1D input vectors) | Native (preserves $H \times W \times C$ spatial tensors) |
+| **Translation Sensitivity** | Position-dependent (lacks translation equivariance) | Translation equivariant: $\text{Conv}(\text{Shift}(x)) = \text{Shift}(\text{Conv}(x))$ |
+| **Parameter Scaling Factor** | Scales with image resolution: $O(H \cdot W \cdot C_{\text{in}} \cdot N)$ | Invariant to image resolution: $O(C_{\text{out}} \cdot C_{\text{in}} \cdot K^2)$ |
+| **Representational Role** | Global coordinate integration and classification | Hierarchical spatial feature extraction |
+| **Memory Footprint** | Extremely high on visual inputs | Low to moderate (dominated by cached activations) |
+
+> [!Tip]
+> **Convolutional layers decouple parameters from resolution**: while dense layer parameter counts scale directly with pixel count, convolutional parameter counts depend entirely on channel depth and kernel dimensions.
+
+## Key Takeaways
+
+- **Dense networks fail on visual data** due to parameter explosion, destruction of spatial topology via vectorization, and the absence of translation equivariance.
+- **Biological visual processing** inspired CNNs through Hubel and Wiesel's discovery of localized receptive fields and simple-to-complex hierarchical cell processing in the visual cortex.
+- **Sparse connectivity** restricts each neuron's connections to a localized $K \times K$ window, preventing parameter explosion regardless of input image resolution.
+- **Parameter sharing sweeps identical kernels across spatial coordinates**, reducing parameter counts by orders of magnitude while enforcing translation equivariance.
+- **Translation equivariance ensures consistent detection**: shifting an input pattern spatially produces an identical shift in the output feature map.
+- **Convolutional networks construct hierarchical feature abstractions**: early layers extract local edges, middle layers assemble geometric textures, and deep layers synthesize semantic object parts.
+- **Convolution preserves multidimensional tensor topology** ($C \times H \times W$), keeping spatial relationships intact throughout feature extraction.
+
+> [!Tip]
+> The foundational principle of convolutional networks: **structure matches domain geometry**; replacing dense matrix products with localized, shared tensor kernels allows neural networks to exploit the spatial coherence of physical imagery with high parameter efficiency.
