@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: Introduction to Model Diagnostics
 
 Model diagnostics establish systematic empirical protocols for isolating, interpreting, and resolving failure modes across neural network training pipelines. Unlike traditional software where implementation bugs trigger explicit compiler faults or runtime exceptions, deep networks fail silently by converging to degenerate parameter states or poor local minima. A disciplined diagnostic workflow evaluates loss curves, error decompositions, and internal network telemetry to pinpoint whether performance bottlenecks originate from software defects, optimization barriers, or statistical generalization limits.
@@ -62,4 +61,61 @@ Model diagnostics establish systematic empirical protocols for isolating, interp
 
 - The definitive implementation sanity check consists of training the unregularized network on a **tiny dataset** (between $5$ and $20$ training samples).
 - Because parameter capacity vastly exceeds sample constraints in this regime, a mathematically correct architecture must drive the training loss to zero and achieve $100\%$ accuracy within several dozen epochs.
-- Inability to achieve 
+- Inability to achieve zero training error on a tiny batch confirms internal code defects, including:
+  - Missing gradient zeroing steps (`optimizer.zero_grad()`).
+  - Omitted backward propagation passes (`loss.backward()`).
+  - Disconnected computational graphs caused by detached tensors.
+  - Inverted loss signs or swapped target-prediction arguments in loss functions.
+
+> [!Important]
+> **Tiny-batch sanity verification**: attempting large-scale distributed training before proving that an architecture can overfit a ten-sample batch wastes computational budgets on codebases containing structural implementation defects.
+
+## Dynamic Trajectory and Telemetry Diagnostics
+
+### Learning Curve Morphology
+
+- Tracking loss and metric trajectories over optimization epochs provides real-time diagnostic visibility into training dynamics.
+- **Underfitting Trajectory:** Training loss and validation loss drop marginally and plateau rapidly at unacceptably high error levels, maintaining a negligible gap throughout training.
+- **Overfitting Trajectory:** Training loss continues to decrease steadily toward zero, while validation loss plateaus prematurely and then curves upward, producing an expanding generalization gap.
+- **Optimization Instability:** Erratic, oscillating loss trajectories indicate excessively high learning rates, insufficient batch sizes, or poorly conditioned loss surfaces.
+- **Numerical Overflow ($\text{NaN} / \text{Inf}$):** Sudden loss explosions reflect gradient compounding, unconstrained logit divisions, or non-finite outputs in custom activation functions.
+
+### Internal Gradient and Weight Telemetry
+
+- Inspecting layer-wise gradient norms ($\|\nabla_{W^{[l]}} \mathcal{L}\|_2$) detects localization bottlenecks before losses diverge.
+- **Vanishing Gradients:** Gradient magnitudes decay exponentially across backward passes toward the input layer ($l \to 1$), starving early feature extractors of parameter updates.
+- **Exploding Gradients:** Gradient norms increase exponentially across backpropagation passes, driving weights to extreme magnitudes and destabilizing numerical convergence.
+- The **parameter-to-update ratio** evaluates the relative scale of weight updates against existing parameter norms:
+  $$r^{[l]} = \frac{\|\alpha \cdot \Delta W^{[l]}\|_2}{\|W^{[l]}\|_2}$$
+  where $\alpha$ represents the effective learning rate.
+- Update ratios should remain within the $10^{-4}$ to $10^{-2}$ range; ratios below $10^{-5}$ indicate stalled optimization, while ratios above $10^{-1}$ indicate destructive overshooting.
+
+> [!Tip]
+> **Telemetry tracking interval**: compute layer-wise gradient norms and parameter update ratios at regular validation checkpoints to catch vanishing gradients and numerical instability long before loss plateaus appear.
+
+## Comparative Diagnostic Taxonomy
+
+| Diagnostic Phase | Telemetry / Metric Signal | Healthy Indicator | Pathological Indicator | Root Cause and Intervention |
+|---|---|---|---|---|
+| **Initialization** | Initial loss magnitude ($\mathcal{L}_{t=0}$) | $\mathcal{L} \approx \ln(C)$ | $\mathcal{L} \gg \ln(C)$ or $\mathcal{L} \approx 0$ | Buggy loss scaling or inverted label indices; fix data pipeline and normalization |
+| **Sanity Check** | Tiny-batch overfit ($N=10$) | Loss reaches zero ($100\%$ acc) | Loss plateaus above zero | Implementation bug; inspect tensor detachment, gradient steps, and loss arguments |
+| **Optimization** | Avoidable bias ($\mathcal{E}_{\text{train}} - \epsilon_{\text{Bayes}}$) | Low gap matching task target | Large gap with low training accuracy | Insufficient capacity or poor optimizer tuning; increase depth/width, tune learning rate |
+| **Generalization** | Variance gap ($\mathcal{E}_{\text{train-val}} - \mathcal{E}_{\text{train}}$) | Small, stable validation gap | Large, widening generalization gap | Model memorizes noise; apply dropout, increase weight decay, acquire more training data |
+| **Domain Alignment** | Data mismatch ($\mathcal{E}_{\text{val}} - \mathcal{E}_{\text{train-val}}$) | Negligible error gap | Significant error increase on validation set | Distribution shift between train and test sets; apply domain adaptation or align data collection |
+| **Numerical Flow** | Gradient norms across layers | Balanced magnitude across layers | Gradient norms vanish to $0$ in early layers | Saturated non-linearities or poor weight initialization; switch to Leaky ReLU or add residual skips |
+
+> [!Tip]
+> **Diagnostic priority**: verify pre-flight sanity checks and initialization losses before analyzing avoidable bias and variance, ensuring that optimization diagnostics evaluate a bug-free computational graph.
+
+## Key Takeaways
+
+- **Diagnostics precede remediation**: structured root-cause analysis isolates whether poor performance stems from implementation bugs, optimization failures, capacity limits, or data distribution shifts.
+- **Baselines define performance ceilings**: benchmarking training metrics against Bayes optimal error or human-level performance reveals the true magnitude of avoidable bias.
+- **The four-way error decomposition isolates failure points**: comparing training error, training-validation error, and validation error separates avoidable bias, variance, and data mismatch.
+- **Theoretical initial loss confirms correct setup**: an unregularized multi-class classifier initialized with small random weights must exhibit an initial cross-entropy loss approximating $\ln(C)$.
+- **Single-batch overfitting catches silent bugs**: an architecture that cannot drive training error to zero on a minimal sample batch contains structural software defects.
+- **Learning curve morphology exposes optimization states**: trajectory geometry differentiates stalled capacity from runaway variance and numerical instability.
+- **Telemetry tracking catches hidden numerical collapse**: monitoring layer-wise gradient norms and update-to-weight ratios identifies vanishing gradients and parameter instability before loss divergence manifests.
+
+> [!Important]
+> **Disciplined diagnostic progression**: successful neural network debugging follows a rigid hierarchy, moving systematically from codebase verification to optimization health, followed by capacity tuning, variance reduction, and data alignment.
