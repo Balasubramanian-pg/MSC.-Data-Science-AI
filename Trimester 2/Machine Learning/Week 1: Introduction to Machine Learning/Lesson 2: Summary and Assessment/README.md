@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 2: Summary and Assessment
 
 ## Introduction to Machine Learning: Module Summary and Assessment
@@ -103,4 +102,124 @@ flowchart TD
 ### Applied Analytical Scenarios
 
 - **Scenario A (Production Collapse Due to Feature Leakage in Fraud Detection):** A fintech data science team trains a Gradient Boosted Decision Tree to predict credit card transaction fraud. During cross-validation, the model achieves an extraordinary Area Under the ROC Curve of 0.994. Upon deploying the model to live production transactions, the true AUC collapses to 0.582, barely outperforming random chance.
-  - *Diagnosis:* The pipeline suffered from **target leakage**. Inspecting the raw data schema reveals a feature named `chargeback_status_updated`. When a transaction i
+  - *Diagnosis:* The pipeline suffered from **target leakage**. Inspecting the raw data schema reveals a feature named `chargeback_status_updated`. When a transaction is confirmed fraudulent, customer service logs update this field. While historical training records contained this post-fraud feature, live production transactions at the moment of authorization do not yet have this field populated, rendering the model useless.
+  - *Remedy:* Reconstruct the training pipeline to enforce strict **point-in-time correctness**. Discard all features generated after the exact timestamp of transaction authorization. Audit feature importance metrics; any feature exhibiting disproportionate predictive power (e.g., explaining >90% of model variance) must be evaluated for temporal contamination.
+- **Scenario B (Temporal Contamination in High-Frequency Algorithmic Trading):** A quantitative analyst develops an equity price direction forecasting model using a 10-fold cross-validation scheme where transactions are randomly shuffled across folds. The model shows consistent profitability in backtesting, but loses capital immediately upon live execution.
+  - *Diagnosis:* The analyst used **randomized cross-validation on time-series data**, creating severe future-information leakage. Random shuffling allowed the model to train on market features from Wednesday, validate on Tuesday, and train on Thursday. In financial time series, prices exhibit auto-correlation and volatility clustering; training on future prices allowed the model to interpolate past states rather than learning predictive signals.
+  - *Remedy:* Prohibit random shuffling on temporal datasets. Transition to **rolling-origin forward chaining (TimeSeriesSplit)**. In this protocol, training sets consist exclusively of historical records preceding the validation fold in time ($t_{\text{train}} < t_{\text{val}}$), preserving causal temporal directionality.
+- **Scenario C (Unscaled Distance Collapse in Healthcare Patient Segmentation):** A hospital research team clusters patient health profiles using K-Means clustering. The feature set contains `Annual_Income` (ranging from \$15,000 to \$350,000) and `Blood_Pressure_Ratio` (ranging from 0.70 to 1.45). The resulting clusters reflect annual income brackets, showing zero correlation with cardiovascular health metrics.
+  - *Diagnosis:* K-Means calculates squared Euclidean distance: $\|x - \mu\|_2^2 = \sum (x_d - \mu_d)^2$. Because `Annual_Income` exhibits a numerical scale six orders of magnitude larger than `Blood_Pressure_Ratio`, income differences dominate distance calculations, reducing the blood pressure ratio to negligible noise.
+  - *Remedy:* Implement feature standardization via **Z-score scaling** ($x_{\text{scaled}} = \frac{x - \mu}{\sigma}$) prior to clustering. This centers both features to zero mean and unit variance, ensuring that clinical cardiovascular indicators contribute equally with demographic variables during Euclidean distance calculations.
+
+> [!Important]
+> **Enforce point-in-time correctness and temporal splitting**: target leakage and time-series shuffling produce artificially inflated validation scores; verify that input features reflect strictly pre-event data states and that validation sets reside in the temporal future.
+
+### Self-Assessment Technical Calculations
+
+#### Problem 1: Feature Standardization and Leakage-Free Test Transformation
+
+A continuous numerical attribute has the following observed values in a partitioned dataset:
+- Training Partition: $X_{\text{train}} = [10.0, \; 20.0, \; 30.0, \; 40.0, \; 50.0]^T$
+- Held-Out Test Partition: $X_{\text{test}} = [15.0, \; 60.0]^T$
+
+1. Compute the sample mean $\mu_{\text{train}}$ and population standard deviation $\sigma_{\text{train}}$ strictly from the training partition.
+2. Standardize the training partition: $Z_{\text{train}}$.
+3. Using strictly the training partition parameters, transform the held-out test partition: $Z_{\text{test}}$.
+4. Calculate the contaminated global mean $\mu_{\text{global}}$ that would have resulted from data leakage, and explain the numerical discrepancy.
+
+*Stepwise Solution:*
+1. Training Statistics Calculation:
+   - Compute training sample mean:
+     $$\mu_{\text{train}} = \frac{1}{N_{\text{train}}} \sum_{i=1}^5 x_i = \frac{10.0 + 20.0 + 30.0 + 40.0 + 50.0}{5} = \frac{150.0}{5} = \mathbf{30.0}$$
+   - Compute training population variance and standard deviation:
+     $$\sigma_{\text{train}}^2 = \frac{1}{5} \sum_{i=1}^5 (x_i - \mu_{\text{train}})^2 = \frac{(10-30)^2 + (20-30)^2 + (30-30)^2 + (40-30)^2 + (50-30)^2}{5}$$
+     $$\sigma_{\text{train}}^2 = \frac{(-20)^2 + (-10)^2 + (0)^2 + (10)^2 + (20)^2}{5} = \frac{400 + 100 + 0 + 100 + 400}{5} = \frac{1000}{5} = 200.0$$
+     $$\sigma_{\text{train}} = \sqrt{200.0} \approx \mathbf{14.1421}$$
+2. Training Set Standardization ($Z_{\text{train}} = \frac{X_{\text{train}} - \mu_{\text{train}}}{\sigma_{\text{train}}}$):
+   $$z_1 = \frac{10.0 - 30.0}{14.1421} = \frac{-20.0}{14.1421} \approx \mathbf{-1.4142}$$
+   $$z_2 = \frac{20.0 - 30.0}{14.1421} = \frac{-10.0}{14.1421} \approx \mathbf{-0.7071}$$
+   $$z_3 = \frac{30.0 - 30.0}{14.1421} = \frac{0.0}{14.1421} = \mathbf{0.0000}$$
+   $$z_4 = \frac{40.0 - 30.0}{14.1421} = \frac{10.0}{14.1421} \approx \mathbf{+0.7071}$$
+   $$z_5 = \frac{50.0 - 30.0}{14.1421} = \frac{20.0}{14.1421} \approx \mathbf{+1.4142}$$
+   $$Z_{\text{train}} = [-1.4142, \; -0.7071, \; 0.0000, \; +0.7071, \; +1.4142]^T$$
+3. Leakage-Free Test Transformation (Using $\mu_{\text{train}} = 30.0$ and $\sigma_{\text{train}} = 14.1421$):
+   $$z_{\text{test}, 1} = \frac{15.0 - 30.0}{14.1421} = \frac{-15.0}{14.1421} \approx \mathbf{-1.0607}$$
+   $$z_{\text{test}, 2} = \frac{60.0 - 30.0}{14.1421} = \frac{30.0}{14.1421} \approx \mathbf{+2.1213}$$
+   $$Z_{\text{test}} = [-1.0607, \; +2.1213]^T$$
+4. Data Leakage Calculation:
+   - If computed across the entire combined dataset ($N = 7$):
+     $$\mu_{\text{global}} = \frac{150.0 + 15.0 + 60.0}{7} = \frac{225.0}{7} \approx \mathbf{32.1429}$$
+   - Contamination impact: The outlier value in the test set ($60.0$) pulls the global mean upward from $30.0$ to $32.14$. Using $\mu_{\text{global}}$ to scale the training set would allow future test information to alter training values, causing data leakage.
+
+#### Problem 2: Cross-Validation Metrics Aggregation Across Imbalanced Folds
+
+A binary classification model is evaluated using 3-Fold Cross-Validation on an imbalanced validation set of $N = 600$ samples ($200$ samples per fold). The empirical confusion matrices for the three validation folds are:
+- **Fold 1:** $\text{TP} = 45, \; \text{FP} = 5, \; \text{FN} = 10, \; \text{TN} = 140$
+- **Fold 2:** $\text{TP} = 40, \; \text{FP} = 8, \; \text{FN} = 15, \; \text{TN} = 137$
+- **Fold 3:** $\text{TP} = 48, \; \text{FP} = 4, \; \text{FN} = 7, \; \text{TN} = 141$
+
+Compute:
+1. Accuracy, Precision, Recall, and F1-Score for each individual fold.
+2. The mean Cross-Validation score for Accuracy, Precision, Recall, and F1-Score.
+
+*Stepwise Solution:*
+1. Metric Calculations per Fold:
+   - **Fold 1:**
+     $$\text{Accuracy}_1 = \frac{\text{TP} + \text{TN}}{\text{Total}} = \frac{45 + 140}{200} = \frac{185}{200} = \mathbf{0.9250}$$
+     $$\text{Precision}_1 = \frac{\text{TP}}{\text{TP} + \text{FP}} = \frac{45}{45 + 5} = \frac{45}{50} = \mathbf{0.9000}$$
+     $$\text{Recall}_1 = \frac{\text{TP}}{\text{TP} + \text{FN}} = \frac{45}{45 + 10} = \frac{45}{55} \approx \mathbf{0.8182}$$
+     $$\text{F1}_1 = 2 \times \frac{\text{Precision}_1 \times \text{Recall}_1}{\text{Precision}_1 + \text{Recall}_1} = 2 \times \frac{0.9000 \times 0.8182}{0.9000 + 0.8182} = \frac{1.47276}{1.7182} \approx \mathbf{0.8571}$$
+   - **Fold 2:**
+     $$\text{Accuracy}_2 = \frac{40 + 137}{200} = \frac{177}{200} = \mathbf{0.8850}$$
+     $$\text{Precision}_2 = \frac{40}{40 + 8} = \frac{40}{48} \approx \mathbf{0.8333}$$
+     $$\text{Recall}_2 = \frac{40}{40 + 15} = \frac{40}{55} \approx \mathbf{0.7273}$$
+     $$\text{F1}_2 = 2 \times \frac{0.8333 \times 0.7273}{0.8333 + 0.7273} = \frac{1.2121}{1.5606} \approx \mathbf{0.7767}$$
+   - **Fold 3:**
+     $$\text{Accuracy}_3 = \frac{48 + 141}{200} = \frac{189}{200} = \mathbf{0.9450}$$
+     $$\text{Precision}_3 = \frac{48}{48 + 4} = \frac{48}{52} \approx \mathbf{0.9231}$$
+     $$\text{Recall}_3 = \frac{48}{48 + 7} = \frac{48}{55} \approx \mathbf{0.8727}$$
+     $$\text{F1}_3 = 2 \times \frac{0.9231 \times 0.8727}{0.9231 + 0.8727} = \frac{1.6111}{1.7958} \approx \mathbf{0.8972}$$
+2. Mean Cross-Validation Scores:
+   $$\text{Mean Accuracy} = \frac{0.9250 + 0.8850 + 0.9450}{3} = \frac{2.7550}{3} \approx \mathbf{0.9183} \quad (91.83\%)$$
+   $$\text{Mean Precision} = \frac{0.9000 + 0.8333 + 0.9231}{3} = \frac{2.6564}{3} \approx \mathbf{0.8855} \quad (88.55\%)$$
+   $$\text{Mean Recall} = \frac{0.8182 + 0.7273 + 0.8727}{3} = \frac{2.4182}{3} \approx \mathbf{0.8061} \quad (80.61\%)$$
+   $$\text{Mean F1-Score} = \frac{0.8571 + 0.7767 + 0.8972}{3} = \frac{2.5310}{3} \approx \mathbf{0.8437} \quad (84.37\%)$$
+
+#### Problem 3: Operational Formalization into Tom Mitchell's Framework
+
+An autonomous delivery drone requires an automated flight control model to predict required emergency braking distance based on sensor telemetry. The sensor inputs include current airspeed, altitude, air density, payload mass, and headwind velocity.
+
+Formalize this problem into Tom Mitchell's $(T, P, E)$ framework and specify the mathematical loss function:
+
+*Stepwise Solution:*
+1. Task Specification ($T$):
+   - Continuous multivariate regression task.
+   - Formally: Learn a parameterized mapping function $f: \mathbb{R}^5 \to \mathbb{R}^+$ that maps input vector $x = [\text{airspeed}, \text{altitude}, \text{density}, \text{mass}, \text{wind}]^T \in \mathbb{R}^5$ to scalar predicted braking distance $\hat{y} \in \mathbb{R}^+$.
+2. Performance Measure ($P$):
+   - Evaluated on a held-out test split of real-world emergency braking maneuvers.
+   - Metrics: **Root Mean Squared Error (RMSE)** to measure prediction error in physical meters, accompanied by **Mean Absolute Percentage Error (MAPE)** to evaluate proportional error tolerance:
+     $$\text{RMSE} = \sqrt{\frac{1}{N_{\text{test}}} \sum_{i=1}^{N_{\text{test}}} (y^{(i)} - \hat{y}^{(i)})^2}$$
+3. Training Experience ($E$):
+   - A supervised dataset comprising $N$ logged historical test flights containing telemetry sensor inputs paired with ground-truth GPS-measured stopping distances:
+     $$\mathcal{D} = \{(x^{(1)}, y^{(1)}), (x^{(2)}, y^{(2)}), \dots, (x^{(N)}, y^{(N)})\}$$
+4. Mathematical Objective Function:
+   - To penalize dangerous underestimates of braking distance more severely than safe overestimates, use an **Asymmetric Huber Loss**:
+     $$\mathcal{L}(y, \hat{y}) = \begin{cases} \frac{1}{2}(y - \hat{y})^2 & \text{if } |y - \hat{y}| \le \delta \\ \delta |y - \hat{y}| - \frac{1}{2}\delta^2 & \text{if } |y - \hat{y}| > \delta \end{cases}$$
+     modified with an asymmetry weight $w_{\text{under}} > w_{\text{over}}$ when $y > \hat{y}$.
+
+> [!Tip]
+> **Manual calculation clarifies pipeline hygiene**: working through normalization parameters, cross-validation metrics, and task formalisms confirms that proper data isolation prevents data leakage while producing reliable performance evaluations.
+
+## Key Takeaways
+
+- **Machine learning extracts rules from data**, transforming historical observations into predictive parameters through optimization.
+- **Supervised learning models input-to-output mappings**, dividing into continuous regression and categorical classification.
+- **Unsupervised learning uncovers latent geometry**, discovering clusters, manifolds, and co-occurrences without external supervision.
+- **Self-supervised learning generates its own supervisory signals**, training foundational models via pretext reconstruction tasks over unlabeled corpora.
+- **Reinforcement learning optimizes sequential decision policies**, using environmental interaction and discounted scalar rewards rather than explicit targets.
+- **Strict dataset partitioning protects generalization audits**: models train on training splits, select hyperparameters on validation splits, and evaluate once on held-out test splits.
+- **Data leakage introduces false confidence**: estimating preprocessing statistics across combined splits allows future evaluation data to contaminate training.
+- **The No Free Lunch Theorem proves no algorithm is universally superior**: model success requires choosing architectures whose inductive biases match domain constraints.
+
+> [!Tip]
+> The foundational law of machine learning: **data provides empirical evidence, while inductive bias enables generalization**; by structuring problems into tasks, metrics, and experiences, machine learning transforms statistical observations into predictive software that generalizes to unseen environments.
