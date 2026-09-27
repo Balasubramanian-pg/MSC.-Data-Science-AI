@@ -1,6 +1,8 @@
-# Migration in progress
 # Lesson 3: Introduction to Snowflake
 
 Initial directory setup.
 
-## Ove
+## Overview
+- Module resources and notes will be added here.
+
+Status: Active
