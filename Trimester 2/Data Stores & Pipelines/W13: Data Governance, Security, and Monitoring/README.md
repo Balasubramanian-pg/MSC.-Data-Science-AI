@@ -1,4 +1,3 @@
-# Migration in progress
 # W13: Data Governance, Security, and Monitoring
 Data Governance, Security, and Monitoring:
 
@@ -23,4 +22,26 @@ Data Security, Access Control, and Privacy:
 
 - Authentication: Verifies the identity of users and services accessing data stores using single sign-on protocols, multi-factor authentication, and mutual transport layer security certificates.
 - Role-based access control: Assigns access privileges to logical roles based on job functions rather than configuring permissions for individual users, simplifying access management.
-- Attribute-based access control: Ev
+- Attribute-based access control: Evaluates dynamic context attributes such as user department, physical network location, device security posture, and data sensitivity tags to make real-time access decisions.
+- Data encryption: Secures information at rest using algorithms like Advanced Encryption Standard with 256-bit keys, and protects data in transit across network boundaries using Transport Layer Security protocols.
+- Dynamic data masking: Masks sensitive information like credit card numbers, email addresses, and phone numbers dynamically at query execution time based on user role permissions, keeping raw data unchanged on disk.
+- Tokenization and anonymization: Replaces sensitive attributes with non-sensitive surrogate tokens or hashes before persisting records into analytical data stores.
+- Important: Regulatory mandates such as GDPR and CCPA require organizations to support the right to be forgotten, which necessitates building pipeline mechanisms that can delete specific customer records cleanly across immutable analytical data lakes.
+
+Data Observability and Pipeline Monitoring:
+
+- Traditional infrastructure monitoring versus data observability: Infrastructure monitoring tracks server CPU, memory, and disk usage, whereas data observability evaluates the actual state, health, and reliability of the data inside tables.
+- The five observability pillars: Freshness, volume, distribution, schema, and lineage provide complete visibility into the operational health of modern data platforms.
+- Freshness tracking: Continuously monitors table update timestamps against agreed service level objectives to detect stalled pipelines before business stakeholders notice outdated dashboards.
+- Volume anomaly detection: Analyzes historical ingestion patterns to alert engineers when incoming batch record counts deviate significantly from expected normal distributions.
+- Distribution monitoring: Evaluates column-level statistical properties over time, detecting subtle silent data corruption such as sudden spikes in null values, negative balances, or unexpected enum strings.
+- Automated incident alerting: Routes observability alerts to communication channels, ticketing systems, and incident management platforms to ensure rapid operational triage.
+
+Key Takeaways:
+
+- Data governance provides the organizational policies, cataloging tools, and business definitions needed to maintain trustworthy data platforms.
+- Data lineage maps data flows end to end, enabling accurate impact analysis and regulatory compliance auditing.
+- Role-based and attribute-based access controls restrict data access according to the principle of least privilege.
+- Dynamic masking and tokenization protect personally identifiable information without interrupting standard analytical workflows.
+- Data observability extends beyond server monitoring to track data freshness, volume, distribution shifts, and schema drift.
+- Enterprise data engineering requires balancing rapid analytics delivery with rigorous data security and regulatory compliance.
