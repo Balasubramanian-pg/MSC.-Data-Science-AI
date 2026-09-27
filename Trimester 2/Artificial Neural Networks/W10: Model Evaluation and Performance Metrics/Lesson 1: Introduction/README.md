@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: Introduction to Model Diagnostics
 
 Model diagnostics provide systematic methods for identifying, isolating, and rectifying performance bottlenecks across neural network training workflows. By analyzing empirical error distributions, learning curves, and internal gradient mechanics, practitioners differentiate between optimization failures and generalization deficiencies. A structured diagnostic methodology replaces heuristic trial and error with rigorous quantitative evaluations to ensure robust network convergence.
@@ -57,4 +56,54 @@ Model diagnostics provide systematic methods for identifying, isolating, and rec
 
 - Monitoring hidden activation tensors $A^{[l]}$ detects degenerative representation states before loss divergence becomes apparent.
 - Saturated non-linearities occur when pre-activations $z^{[l]}$ fall into the flat saturation regions of Sigmoid or Hyperbolic Tangent functions, driving local derivatives to zero.
-- The **dead ReLU pathology** arises when neurons output zero across all training instances, result
+- The **dead ReLU pathology** arises when neurons output zero across all training instances, resulting in zero gradient flow and permanent neuron deactivation.
+- Distributional collapse occurs when activations across a layer lose variance, projecting disparate inputs into identical or low-dimensional latent vectors.
+
+> [!Tip]
+> **Update ratio tracking** provides direct learning rate validation: maintaining layer update-to-weight ratios within the $10^{-4}$ to $10^{-2}$ interval prevents both weight stagnation and parameter disruption.
+
+## Diagnostic Metrics and Evaluation Beyond Accuracy
+
+### Class Imbalance and Threshold Diagnostics
+
+- Overall classification accuracy provides misleading diagnostic signals in skewed datasets where the majority class dominates the sample count.
+- The **confusion matrix** maps true positives ($TP$), false positives ($FP$), true negatives ($TN$), and false negatives ($FN$) to isolate specific classification failure modes.
+- **Precision** ($\frac{TP}{TP + FP}$) quantifies predictive purity, whereas **Recall** ($\frac{TP}{TP + FN}$) measures the capture rate of true positive instances.
+- The **$F_1$-Score** provides the harmonic mean of precision and recall, balancing false positive and false negative penalties:
+  $$F_1 = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}$$
+- Receiver Operating Characteristic (ROC) curves evaluate discrimination performance across varying decision thresholds, while Precision-Recall (PR) curves provide more sensitive diagnostic separation under heavy class imbalance.
+
+### The Baseline Verification Protocol
+
+- A robust diagnostic workflow begins with an initial **overfitting sanity check**: training the network on a tiny batch (10 to 50 samples) with regularization disabled.
+- Failure to drive training error to zero on a tiny subset confirms structural implementation bugs, such as inverted loss signs, misaligned target labels, or incorrect gradient accumulation.
+- Comparing initial loss at initialization ($t=0$) against theoretical expected loss confirms proper initialization: for an unregularized multi-class classification problem with $C$ classes, initial cross-entropy loss must approximate $-\ln(1/C)$.
+
+> [!Important]
+> **Tiny-batch sanity checks** isolate software bugs from mathematical capacity: an architecture unable to achieve zero training loss on a minimal sample batch contains structural code defects rather than statistical optimization limitations.
+
+## Comparative Diagnostic Taxonomy
+
+| Failure Mode | Metric Profile | Learning Curve Behavior | Internal Telemetry | Prescribed Interventions |
+|---|---|---|---|---|
+| **High Avoidable Bias** | $\mathcal{E}_{\text{train}} \gg \epsilon_{\text{Bayes}}$; $\mathcal{E}_{\text{val}} \approx \mathcal{E}_{\text{train}}$ | Both curves plateau early at high error; negligible gap | Low gradient norms; low update ratios ($r < 10^{-5}$) | Increase network depth/width; switch to expressive activations; reduce regularization |
+| **High Variance** | $\mathcal{E}_{\text{train}} \approx \epsilon_{\text{Bayes}}$; $\mathcal{E}_{\text{val}} \gg \mathcal{E}_{\text{train}}$ | Large generalization gap; validation loss drifts upward | Stable parameter norms; high sensitivity to input perturbations | Collect more training data; apply dropout; increase $L_2$ weight decay; use data augmentation |
+| **Data Mismatch** | $\mathcal{E}_{\text{train}} \approx \mathcal{E}_{\text{train-val}}$; $\mathcal{E}_{\text{val}} \gg \mathcal{E}_{\text{train-val}}$ | Validation loss diverges despite low train and train-val loss | Nominal gradient flow on training data; poor activation alignment on test data | Align training distribution with target domain; apply domain adaptation; synthesize target-style data |
+| **Vanishing Gradients** | Stagnant training loss; zero performance gains | Flat loss curve from epoch zero | $\|\nabla_{W^{[l]}}\| \to 0$ for early layers; dead activation units | Incorporate residual connections; apply He/Xavier weight initialization; switch to Leaky ReLU |
+| **Numerical Explosion** | Loss outputs $\text{NaN}$ or infinity; erratic jumps | Sudden vertical loss spikes followed by complete divergence | Extreme gradient norms ($\|\nabla W\| \to \infty$); update ratio $r > 1$ | Apply gradient norm clipping; reduce learning rate; introduce batch normalization |
+
+> [!Tip]
+> **Targeted interventions** prevent reciprocal degradation: applying variance-reduction methods to a network suffering from high avoidable bias compounds underfitting and stalls project convergence.
+
+## Key Takeaways
+
+- **Systematic error decomposition** isolates the primary source of error into avoidable bias, variance, or data mismatch relative to Bayes optimal performance.
+- **Learning curve geometries** differentiate capacity bottlenecks from generalization failures through the trajectory gap between training and validation loss curves.
+- **Internal gradient telemetry** detects numerical degradation, including vanishing gradients, exploding gradients, and parameter-to-update imbalances, before overall training fails.
+- **Activation health tracking** identifies saturated non-linear units and dead ReLU neurons that block backpropagation paths across deep layers.
+- **Tiny-batch validation** serves as an indispensable prerequisite check to verify forward-backward mathematical correctness before large-scale training begins.
+- **Metric selection** must reflect underlying class distributions, using precision, recall, and PR curves when severe class imbalance invalidates raw accuracy.
+- **Diagnostic sequencing** requires resolving underfitting first, closing generalization variance second, and addressing data distribution mismatches third.
+
+> [!Important]
+> **Diagnostic-driven iteration** replaces empirical guesswork with structured root-cause analysis: identifying whether a network suffers from capacity deficits, optimization failures, or distribution shifts determines the exact architectural or algorithmic remedy required.
