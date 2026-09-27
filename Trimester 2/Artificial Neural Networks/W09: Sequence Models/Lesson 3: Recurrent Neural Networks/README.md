@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 3: Recurrent Neural Networks
 
 ## Recurrent Neural Networks: Architecture, Dynamics, and Gradient Flow
@@ -107,4 +106,98 @@ flowchart LR
 
 - Long-term asymptotic behavior is governed by the **spectral radius** $\rho(W_{hh}) = \max_i |\lambda_i(W_{hh})|$.
 - Razvan Pascanu, Tomas Mikolov, and Yoshua Bengio (2013) proved the formal conditions for temporal gradient degradation:
-  - **Vanishing Condition:** If $\rho(W_{hh}) < 1.0$, gradients vanish exponentiall
+  - **Vanishing Condition:** If $\rho(W_{hh}) < 1.0$, gradients vanish exponentially for almost all operational paths, meaning long-term temporal dependencies cannot be learned.
+  - **Exploding Condition:** If $\rho(W_{hh}) > 1.0$, gradients can grow exponentially along eigenvector directions associated with eigenvalues greater than one:
+    $$\lim_{\tau \to \infty} \left\| \frac{\partial h_t}{\partial h_k} \right\|_2 = \infty$$
+
+### Exploding Gradients and Loss Instability
+
+- When the temporal Jacobian product exceeds unity ($\gamma > 1.0$), error signals compound exponentially across time.
+- Exploding gradients generate massive parameter updates that push weights outside valid numerical boundaries:
+  $$\Delta W_{hh} = -\eta \nabla_{W_{hh}} \mathcal{L} \gg 10^6$$
+- Large updates destroy learned representations and cause floating-point numbers to overflow into `NaN` or `Inf`, causing training to diverge.
+
+```mermaid
+flowchart LR
+    Grad["Output Loss Gradient: dL_t / dh_t"] --> Step1["x W_hh^T diag(1 - h_t^2)"]
+    Step1 --> Step2["x W_hh^T diag(1 - h_{t-1}^2)"]
+    Step2 --> Dots["... Multiplied over (t - k) steps ..."]
+    Dots --> CaseA["Spectral Radius < 1: Gradient -> 0 (Vanishing)"]
+    Dots --> CaseB["Spectral Radius > 1: Gradient -> Inf (Exploding)"]
+```
+
+> [!Important]
+> **Spectral radius governs temporal stability**: repeated multiplication by $W_{hh}^T$ causes gradients to decay exponentially if $\rho(W_{hh}) < 1$ or explode exponentially if $\rho(W_{hh}) > 1$, making vanilla RNNs unstable beyond short horizons.
+
+## Stabilization Strategies and Truncated BPTT
+
+### Truncated Backpropagation Through Time (TBPTT)
+
+- On extended sequences (e.g., thousands of steps in audio streams or long documents), executing full BPTT across the entire sequence is computationally and memory prohibitive.
+- **Truncated Backpropagation Through Time (TBPTT)** splits the full sequence into localized operational windows:
+  - The **forward pass** evaluates continuously across the full sequence, passing the hidden state $h_t$ forward across window boundaries without interruption.
+  - The **backward pass** unrolls backward for only a fixed window of $k_1$ steps, truncating gradient propagation beyond that horizon:
+    $$\frac{\partial \mathcal{L}}{\partial W_{hh}} \approx \sum_{t=1}^T \sum_{k = \max(1, t - k_1)}^t \frac{\partial \mathcal{L}_t}{\partial h_t} \left( \frac{\partial h_t}{\partial h_k} \right) \frac{\partial h_k}{\partial W_{hh}}$$
+- TBPTT caps activation memory consumption at $O(k_1 \cdot H)$ and prevents gradients from compounding across unbounded sequence lengths.
+
+```mermaid
+flowchart TD
+    subgraph Stream["Full Continuous Sequence: Length T"]
+        direction LR
+        W1["Window 1 (Steps 1 to k1)"] --> W2["Window 2 (Steps k1+1 to 2k1)"]
+        W2 --> W3["Window 3 (Steps 2k1+1 to 3k1)"]
+    end
+
+    subgraph WindowExecution["TBPTT Execution Inside Window"]
+        Fwd["Forward Pass Computes States: h_1 -> h_{k1}"] --> Cache["Cache Activations"]
+        Cache --> Bwd["Backward Pass Unrolls Backward ONLY to Step 1"]
+        Bwd --> Stop["Gradient Truncated at Window Boundary"]
+        Fwd -- "Pass Final h_{k1} Forward" --> NextWin["Initialize Next Window"]
+    end
+```
+
+### Gradient Norm Clipping Protocols
+
+- **Gradient Norm Clipping** serves as the standard defense against exploding gradients in recurrent networks.
+- Before applying the optimizer step, the global $L_2$ norm across all concatenated network parameters is evaluated:
+  $$\|g_{\text{global}}\|_2 = \sqrt{\sum_i \|\nabla_{\theta_i} \mathcal{L}\|_2^2}$$
+- If the global norm exceeds a predefined threshold $c$ (typically $c \in [1.0, 5.0]$), the gradient vector rescales proportionally:
+  $$g \leftarrow g \cdot \frac{c}{\max(c, \|g_{\text{global}}\|_2)}$$
+- Norm clipping bounds the maximum parameter step size while preserving the exact directional heading computed by BPTT, preventing parameter updates from diverging when navigating steep loss cliffs.
+
+### Orthogonal Initialization and the Identity Trick (IRNN)
+
+- Initializing $W_{hh}$ from standard random Gaussian distributions accelerates gradient vanishing or explosion.
+- **Orthogonal Initialization:** Samples $W_{hh}$ as a random orthogonal matrix ($W_{hh}^T W_{hh} = I$). Because all eigenvalues of an orthogonal matrix have an absolute magnitude of exactly one ($|\lambda_i| = 1.0$), error signals propagate backward initially without exponential scaling.
+- **The Identity Trick (IRNN):** Quoc Le, Navdeep Jaitly, and Geoffrey Hinton (2015) demonstrated that initializing the recurrent weight matrix to the **identity matrix** ($W_{hh} = I$) and pairing it with **Rectified Linear Units (ReLU)** stabilizes training:
+  $$h_t = \max(0, \; I h_{t-1} + W_{xh} x_t + b_h)$$
+- An identity matrix keeps the recurrent derivative at unity ($\frac{\partial h_t}{\partial h_{t-1}} = I$) when units are active, allowing vanilla RNNs to learn temporal dependencies spanning hundreds of steps.
+
+> [!Tip]
+> **Gradient clipping and orthogonal initialization stabilize recurrent training**: norm clipping prevents gradient explosions, while orthogonal or identity initializations prevent early gradient vanishing.
+
+## Comparative Matrix of Recurrent Training Algorithms
+
+| Training Algorithm | Mathematical Operational Mechanism | Computational Cost per Step | Memory Complexity per Batch | Maximum Temporal Dependency Horizon | Primary Limitation |
+|---|---|---|---|---|---|
+| **Full BPTT** | Unrolls the computational graph across all $T$ temporal steps | $O(T \cdot H^2)$ operations | $O(T \cdot H)$ activation storage | Entire sequence length ($T$) | Prohibitive memory consumption on long sequences ($T > 1000$) |
+| **Truncated BPTT (TBPTT)** | Evaluates forward across $T$; truncates backward sweeps to $k_1$ steps | $O(k_1 \cdot H^2)$ per window | $O(k_1 \cdot H)$ activation storage | Strictly bounded by window $k_1$ (typically $20$ to $50$) | Cannot learn dependencies spanning across window boundaries |
+| **Real-Time Recurrent Learning (RTRL)**| Forward propagation of gradient sensitivities: $\frac{\partial h_t}{\partial \theta}$ | $O(H^4)$ operations per step | $O(H^3)$ state storage | Infinite continuous temporal horizon | Computationally intractable for large hidden dimensions ($H > 100$) |
+
+> [!Important]
+> **TBPTT balances memory and temporal context**: full BPTT exhausts GPU memory on long sequences, making Truncated BPTT the practical standard by limiting reverse sweeps to a fixed window $k_1$.
+
+## Key Takeaways
+
+- **Vanilla RNNs maintain internal state** via the recurrence $h_t = \tanh(W_{hh} h_{t-1} + W_{xh} x_t + b_h)$, combining new inputs with historical context.
+- **Temporal parameter sharing** applies identical weight matrices across all time steps, allowing models to process variable-length inputs with fixed parameter budgets.
+- **Backpropagation Through Time (BPTT)** unrolls recurrent loops into an equivalent feedforward graph across $T$ steps to calculate parameter gradients.
+- **The temporal Jacobian chain** $\frac{\partial h_t}{\partial h_k} = \prod_{j=k+1}^t W_{hh}^T \text{diag}(1 - h_j^2)$ compounds transition matrices exponentially over time.
+- **Vanishing gradients cause exponential forgetting** when the spectral radius satisfies $\rho(W_{hh}) < 1.0$ or activations saturate, limiting vanilla RNNs to short dependencies.
+- **Exploding gradients occur when $\rho(W_{hh}) > 1.0$**, causing numerical overflow and parameter divergence.
+- **Gradient norm clipping** rescales gradient vectors that exceed a threshold $c$, preserving update direction while preventing numerical divergence.
+- **Truncated BPTT restricts backward sweeps** to a fixed window $k_1$, bounding GPU memory consumption on long sequence streams.
+- **Orthogonal and identity initializations (IRNN)** maintain transition singular values near unity, improving long-range gradient propagation in vanilla recurrent networks.
+
+> [!Tip]
+> The foundational rule of recurrent dynamics: **continuous multiplicative transitions cause exponential decay**; because unrolled recurrent graphs repeatedly multiply by transition matrices across time, preserving long-range context requires linear additive memory highways or explicit gating mechanisms.
