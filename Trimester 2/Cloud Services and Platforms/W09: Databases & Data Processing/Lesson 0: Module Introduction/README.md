@@ -1,4 +1,3 @@
-# Migration in progress
 # W09: Databases & Data Processing - Lesson 0: Module Introduction
 
 This module covers the AWS database portfolio and data processing services. It spans relational databases, NoSQL databases, data warehousing, ETL, real-time streaming, database migration, and pipeline orchestration. The goal is to select the right database for a workload and build data pipelines that move, transform, and analyse data at scale.
@@ -135,4 +134,158 @@ flowchart TD
     B -->|Graph| I[Neptune]
     B -->|Time-Series| J[Timestream]
     A --> K{Analytics?}
-    K -->|Yes
+    K -->|Yes| L[Redshift]
+    A --> M{Streaming?}
+    M -->|Yes| N[Kinesis]
+    A --> O{ETL?}
+    O -->|Yes| P[Glue]
+    A --> Q{Migration?}
+    Q -->|Yes| R[DMS]
+```
+
+> [!Tip]
+> **Use the decision tree as a starting point**: The right database choice depends on the access pattern, consistency requirements, scale, and operational maturity. The decision tree narrows the field but does not replace judgment. Validate with a pilot before committing at scale.
+
+## How This Module Connects to Previous Modules
+
+- W02 covered reliability, performance, and the AWS Well-Architected Framework.
+- W03 compared AWS, Azure, and GCP across services and selection factors.
+- W04 covered AWS global infrastructure, IAM, and account security.
+- W05 covered compute services and virtualisation, including EC2 and EBS.
+- W06 covered VPC networking fundamentals.
+- W07 covered containers, Docker, and Kubernetes.
+- W08 covered AWS storage services, including S3, EBS, EFS, and FSx.
+- W09 adds the data layer: how data is stored, queried, transformed, and moved.
+- The database and data processing choices you make affect reliability, cost, performance, and security.
+
+```mermaid
+flowchart LR
+    A[W02 Architecture] --> B[W03 Providers]
+    B --> C[W04 AWS Foundations and IAM]
+    C --> D[W05 Compute Services]
+    D --> E[W06 VPC Networking]
+    E --> F[W07 Containers]
+    F --> G[W08 Storage Services]
+    G --> H[W09 Databases and Data Processing]
+    H --> I[Hands-On Labs]
+    I --> J[Assessment]
+```
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Compare the AWS database categories and give a service for each.
+2. Explain the difference between Amazon RDS and Amazon Aurora.
+3. Describe the features of RDS Multi-AZ and read replicas.
+4. Explain how Aurora's distributed storage works.
+5. Describe Aurora Serverless v2 and Aurora Global Database.
+6. Compare DynamoDB on-demand and provisioned capacity modes.
+7. Explain the difference between Local Secondary Indexes and Global Secondary Indexes.
+8. Describe the Redshift architecture and its MPP design.
+9. Explain the purpose of Redshift Spectrum and federated queries.
+10. Describe the components of AWS Glue.
+11. Compare Kinesis Data Streams, Firehose, and Analytics.
+12. Explain the purpose of AWS DMS and its migration types.
+13. Describe how Step Functions orchestrates ETL pipelines.
+14. Explain why DynamoDB is not a replacement for relational databases.
+15. Describe when to use ElastiCache, Neptune, and Timestream.
+
+### Scenario Questions
+
+**Scenario 1: High-Traffic Web Application**
+A SaaS platform needs a relational database that can handle high traffic with auto-scaling storage and fast failover. What should they use?
+
+- Use Amazon Aurora MySQL or PostgreSQL.
+- Aurora provides auto-scaling storage, up to 15 read replicas, and failover under 30 seconds.
+- Use Aurora Global Database for multi-Region disaster recovery.
+- Use Aurora Serverless v2 for variable workloads.
+
+**Scenario 2: Gaming Leaderboard**
+A gaming company needs a database that can handle millions of reads and writes per second with single-digit millisecond latency. What should they use?
+
+- Use Amazon DynamoDB.
+- Use on-demand capacity mode for unpredictable traffic.
+- Use DAX for microsecond read latency.
+- Use Global Tables for multi-Region active-active replication.
+
+**Scenario 3: Business Intelligence Reporting**
+A company needs to analyse petabytes of data from multiple sources for BI reporting. What should they use?
+
+- Use Amazon Redshift.
+- Use Redshift Spectrum to query S3 data directly.
+- Use federated queries to access RDS and Aurora data.
+- Use concurrency scaling for high-concurrency workloads.
+- Use RA3 instances to separate compute and storage.
+
+**Scenario 4: Real-Time Clickstream Analytics**
+A company needs to process website clickstream data in real time and load it into S3 for analysis. What should they use?
+
+- Use Kinesis Data Streams to capture the stream.
+- Use Kinesis Data Firehose to load data into S3.
+- Use Kinesis Data Analytics for real-time SQL processing.
+- Use Glue to transform the data into Parquet format.
+- Use Redshift or Athena to query the data.
+
+**Scenario 5: Database Migration**
+A company wants to migrate an on-premises Oracle database to Aurora PostgreSQL with minimal downtime. What should they use?
+
+- Use AWS Schema Conversion Tool (SCT) to convert schema and code.
+- Use AWS DMS for continuous replication.
+- Keep the source database operational during migration.
+- Cut over during a maintenance window.
+
+**Scenario 6: Serverless ETL Pipeline**
+A company needs to build an ETL pipeline that validates, transforms, and partitions CSV files uploaded to S3. What should they use?
+
+- Use S3 event notifications to trigger Lambda.
+- Use Step Functions to orchestrate the workflow.
+- Use Lambda to validate schema and data type.
+- Use Glue crawlers to discover schema.
+- Use Glue jobs to transform CSV to Parquet.
+- Use SNS for error notifications.
+
+```mermaid
+flowchart TD
+    A[Assessment Scenario] --> B{Database Type?}
+    B -->|Relational| C[RDS or Aurora]
+    B -->|NoSQL| D[DynamoDB]
+    B -->|Analytics| E[Redshift]
+    A --> F{Data Processing?}
+    F -->|Batch ETL| G[Glue]
+    F -->|Streaming| H[Kinesis]
+    F -->|Migration| I[DMS]
+    F -->|Orchestration| J[Step Functions]
+    C --> K[Validate with Pilot]
+    D --> K
+    E --> K
+    G --> K
+    H --> K
+    I --> K
+    J --> K
+```
+
+## Key Takeaways
+
+- AWS offers purpose-built databases for different data models and access patterns.
+- Relational databases (RDS, Aurora) are for ACID transactions and complex queries.
+- NoSQL databases (DynamoDB, ElastiCache, DocumentDB, Neptune, Timestream) are for high-throughput, low-latency, flexible-schema, graph, and time-series workloads.
+- Amazon Redshift is a petabyte-scale data warehouse for analytics and BI reporting.
+- AWS Glue is a serverless data integration service for ETL and data cataloguing.
+- Amazon Kinesis provides real-time streaming with Data Streams, Firehose, and Analytics.
+- AWS DMS migrates databases to AWS with minimal downtime.
+- AWS Step Functions orchestrates serverless ETL pipelines.
+- Choose the database by access pattern, not by familiarity.
+- RDS Multi-AZ is for high availability. Read replicas are for read scaling.
+- Aurora is the default choice for new relational workloads on AWS.
+- DynamoDB is for key-based access patterns, not relational queries.
+- Redshift is for analytics, not transactions.
+- Glue is serverless but not free. Use job bookmarks and right-size workers.
+- Kinesis Firehose is the easiest way to load streaming data into AWS data stores.
+- DMS is for migration. SCT converts schema for heterogeneous migrations.
+- Step Functions provides error handling and orchestration for ETL pipelines.
+- This module builds on W02 architecture, W03 provider comparison, W04 AWS foundations, W05 compute services, W06 VPC networking, W07 containers, and W08 storage services.
+- Assessment focuses on practical database selection and scenario-based data processing decisions.
+
+> [!Important]
+> **Match the database to the access pattern, and the processing service to the data velocity**: The most common architectural mistake is forcing data into the wrong database. Use relational for ACID transactions. Use key-value for high-throughput lookups. Use document for flexible schemas. Use graph for relationships. Use time-series for timestamped data. For data processing, use Glue for batch ETL, Kinesis for real-time streaming, DMS for migration, and Step Functions for orchestration. A modern application typically uses several database types together. Design for the access pattern, not for a single database to do everything.
