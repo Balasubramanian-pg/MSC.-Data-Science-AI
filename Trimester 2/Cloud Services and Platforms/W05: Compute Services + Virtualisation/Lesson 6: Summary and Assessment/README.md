@@ -1,4 +1,3 @@
-# Migration in progress
 **W05: Compute Services + Virtualisation - Summary and Assessment**
 
 This module covers the foundational compute technologies behind cloud services: virtualisation, virtual machines, containers, and serverless functions. It maps these concepts to AWS compute services, including EC2, Lambda, ECS, EKS, and Fargate. The goal is to understand how each compute model works, when to use it, and how to choose between them.
@@ -154,4 +153,153 @@ Amazon EBS provides persistent block-level storage for EC2 instances. Volumes ar
 
 ### Encryption
 
-- EBS encryption protects data at rest, in t
+- EBS encryption protects data at rest, in transit, and in snapshots using AWS KMS.
+- Enable encryption by default for all new volumes.
+
+### Multi-Attach and Instance Store
+
+- Multi-Attach allows a single io1 or io2 volume to be attached to multiple instances in the same AZ. Requires a cluster-aware file system.
+- Instance store provides temporary, high-speed local storage. Data is lost on stop or terminate.
+
+> [!Important]
+> **Enable encryption by default**: Configure account-level EBS encryption so every new volume is encrypted without manual intervention.
+
+## High Availability for EC2
+
+High availability means designing workloads to remain operational despite failures in instances, Availability Zones, or Regions.
+
+### Availability Foundations
+
+- Availability = MTBF / (MTBF + MTTR) * 100%.
+- Reducing MTTR has the biggest impact on availability.
+- Multi-AZ with Auto Scaling reaches 99.99% availability.
+- Multi-Region active-active reaches 99.999% availability.
+
+### Multi-AZ and Auto Scaling
+
+- Deploy instances across at least two AZs behind a load balancer.
+- Auto Scaling maintains desired capacity, replaces unhealthy instances, and scales based on demand.
+- Scaling policies: target tracking, step scaling, scheduled scaling, predictive scaling.
+- Cooldowns and hysteresis prevent flapping. Asymmetric scaling is more stable.
+
+### Load Balancing
+
+| Load Balancer | Layer | Use Case |
+|---|---|---|
+| Application Load Balancer | Layer 7 | HTTP/HTTPS microservices, path routing |
+| Network Load Balancer | Layer 4 | TCP/UDP, ultra-low latency |
+| Gateway Load Balancer | Layer 3/4 | Virtual appliances, firewalls |
+
+- Health checks determine target health. Avoid cascading deep health check failures.
+- Stateless design stores session state outside instances and enables free horizontal scaling.
+
+### Disaster Recovery Patterns
+
+| Pattern | RTO | RPO | Cost |
+|---|---|---|---|
+| Backup and Restore | Hours to days | Hours | Low |
+| Pilot Light | Tens of minutes | Minutes | Low to medium |
+| Warm Standby | Minutes | Seconds to minutes | Medium |
+| Multi-Site Active-Active | Near zero | Near zero | High |
+
+- Multi-Region high availability uses Route 53, Global Accelerator, and cross-Region data replication.
+- Chaos engineering and game days validate that failover works.
+
+> [!Important]
+> **Test failover with game days**: Untested high availability is an assumption. Use AWS Fault Injection Service to validate that load balancers, health checks, and database promotion scripts work before a real incident.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Define virtualisation and explain the role of a hypervisor.
+2. Compare Type 1 and Type 2 hypervisors.
+3. List the five EC2 instance families and their use cases.
+4. Explain the four EC2 pricing models and when each is appropriate.
+5. Describe how containers differ from virtual machines.
+6. Compare Amazon ECS, Amazon EKS, and AWS Fargate.
+7. Explain the limits and pricing model of AWS Lambda.
+8. Describe the EC2 instance lifecycle from launch to termination.
+9. Explain the purpose of AMIs and user data.
+10. Describe instance metadata and IMDSv2.
+11. Compare EBS volume types and their use cases.
+12. Explain how EBS snapshots work and why they are incremental.
+13. Describe how EBS encryption protects data.
+14. Explain the components of an Auto Scaling group.
+15. Compare backup and restore, pilot light, warm standby, and active-active.
+
+### Scenario Questions
+
+**Scenario 1: Legacy Application Migration**
+A company wants to migrate an on-premises legacy application that requires a custom OS configuration and runs continuously. Which compute service should they use?
+
+- Use EC2 with a custom AMI and an instance type that matches the workload profile.
+- Use Reserved Instances or Savings Plans for cost optimization.
+- Deploy across multiple Availability Zones for high availability.
+
+**Scenario 2: Microservices Platform**
+A team is building a microservices platform and needs portability across cloud providers. Which container service should they use?
+
+- Use Amazon EKS for Kubernetes compatibility and multi-cloud portability.
+- Use Fargate to eliminate node management.
+- Use ECR for container image storage.
+- Consider ECS if portability is not a hard requirement.
+
+**Scenario 3: Event-Driven Image Processing**
+An application needs to process images uploaded to S3 and generate thumbnails. Which compute service should they use?
+
+- Use AWS Lambda triggered by S3 upload events.
+- Lambda automatically scales to handle spikes in upload volume.
+- Pay only for the compute time used, with no cost for idle time.
+
+**Scenario 4: High-Performance Computing**
+A research team needs to run GPU-accelerated simulations for machine learning training. Which EC2 instance family should they use?
+
+- Use accelerated computing instances such as P4 or Trn1.
+- Use Spot Instances for fault-tolerant training jobs to reduce cost.
+- Consider Savings Plans for predictable training workloads.
+
+**Scenario 5: Web Application with Variable Traffic**
+A web application has unpredictable traffic that spikes during promotions. Design a highly available architecture.
+
+- Use an Application Load Balancer across three AZs.
+- Use an Auto Scaling group with a target tracking policy on CPU utilization.
+- Store session state in ElastiCache for stateless compute.
+- Configure ELB health checks on a `/health` endpoint.
+- Use aggressive scale-out and conservative scale-in with a cooldown period.
+
+```mermaid
+flowchart TD
+    A[Compute Decision] --> B{Workload Type?}
+    B -->|Legacy / Custom OS| C[EC2]
+    B -->|Microservices / Portable| D{Need Kubernetes?}
+    B -->|Event-Driven / Short| E[Lambda]
+    D -->|Yes| F[EKS]
+    D -->|No| G[ECS]
+    F --> H{Fargate or EC2?}
+    G --> H
+    H -->|Serverless| I[Fargate]
+    H -->|Full Control| J[EC2]
+```
+
+## Key Takeaways
+
+- Virtualisation is the foundation of cloud computing. Hypervisors create and manage virtual machines.
+- Type 1 hypervisors run directly on hardware and are used by cloud providers.
+- Amazon EC2 provides virtual servers with five instance families and four pricing models.
+- AWS Graviton processors offer up to 40% better price-performance than x86 for compatible workloads.
+- Pricing models include On-Demand, Reserved Instances, Savings Plans, and Spot Instances. Savings reach 72% and 90%.
+- Containers virtualize the operating system and are lightweight, portable, and fast to start.
+- Amazon ECS, Amazon EKS, and AWS Fargate provide container orchestration options.
+- AWS Lambda is a serverless compute service for event-driven, short-lived tasks.
+- Working with EC2 covers launch, connection, lifecycle, security, storage, and monitoring.
+- EBS provides persistent block storage. Snapshots are incremental backups stored in S3.
+- EBS encryption protects data at rest, in transit, and in snapshots.
+- High availability for EC2 uses multi-AZ deployment, Auto Scaling, load balancing, and health checks.
+- Disaster recovery patterns range from backup and restore to active-active.
+- Stateless design and immutable infrastructure enable elastic, resilient workloads.
+- Test failover with chaos engineering and game days.
+- Choose compute based on workload characteristics: VMs for control, containers for portability, serverless for event-driven tasks.
+
+> [!Important]
+> **Match the compute model to the workload**: Start with execution duration and event-driven characteristics. Then consider control, portability, and operational overhead. The wrong compute choice leads to unnecessary cost, complexity, or performance limitations.
