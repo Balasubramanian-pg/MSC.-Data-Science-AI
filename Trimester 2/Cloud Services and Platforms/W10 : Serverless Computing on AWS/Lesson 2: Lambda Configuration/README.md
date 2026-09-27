@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 2: Lambda Configuration
 
 Lambda configuration defines how a function executes, scales, and interacts with other AWS services. Proper configuration balances performance, cost, and security. This lesson covers memory and timeout settings, execution environment details, concurrency controls, networking options, permissions, triggers, layers, and deployment strategies. Understanding these settings is essential for building reliable and cost-effective serverless applications.
@@ -242,4 +241,239 @@ Triggers determine how and when Lambda functions are invoked. Understanding trig
 - Examples: API Gateway, Application Load Balancer, CloudFront.
 - Errors are returned directly to the caller.
 - No automatic retries by Lambda.
-- Suita
+- Suitable for request-response patterns.
+
+### Asynchronous Triggers
+
+- Lambda manages invocation and retry logic.
+- Examples: S3, SNS, EventBridge.
+- Failed invocations are retried twice by default.
+- Configure dead-letter queues for failed events after retries.
+- Suitable for event-driven architectures.
+
+### Poll-Based Triggers
+
+- Lambda polls the event source for records.
+- Examples: SQS, DynamoDB Streams, Kinesis.
+- Batch records for efficient processing.
+- Configure batch size and retry behavior.
+- Partial batch failure handling available.
+
+| Trigger Type | Examples | Retry Behavior | Error Handling |
+|---|---|---|---|
+| Synchronous | API Gateway, ALB | No automatic retry | Return error to caller |
+| Asynchronous | S3, SNS, EventBridge | 2 retries | DLQ after retries |
+| Poll-Based | SQS, Kinesis, DynamoDB | Configurable | Batch item failures |
+
+> [!Tip]
+> **Match error handling to trigger type**: Synchronous triggers require immediate error responses. Asynchronous triggers benefit from dead-letter queues. Poll-based triggers support partial batch failures. Design your function error handling based on the trigger type.
+
+## Layers
+
+Layers allow you to share code and dependencies across multiple functions without packaging them in each deployment.
+
+### Layer Benefits
+
+- Share libraries, custom runtimes, or configuration files.
+- Reduce deployment package size.
+- Update dependencies independently from function code.
+- Promote code reuse across teams.
+- Up to 5 layers per function.
+
+### Layer Structure
+
+- Layers are extracted to /opt directory.
+- Organize content by language-specific paths.
+- Version layers independently from functions.
+- Reference layers by ARN in function configuration.
+- Public layers available from AWS and community.
+
+### Layer Management
+
+- Publish layer versions with compatible runtimes.
+- Track which functions use which layer versions.
+- Delete unused layer versions to reduce clutter.
+- Consider layer size impact on cold start time.
+- Use layers for large dependencies that change infrequently.
+
+## Logging and Monitoring
+
+Built-in monitoring provides visibility into function performance and errors.
+
+### CloudWatch Logs
+
+- Automatic logging to log groups named after the function.
+- Each function version has its own log stream.
+- Log retention configurable from 1 day to never expire.
+- Use structured logging for easier parsing and analysis.
+- Filter and search logs using CloudWatch Insights.
+
+### X-Ray Tracing
+
+- Enable to track requests through distributed systems.
+- Identifies bottlenecks and errors across services.
+- Provides service map visualization.
+- Minimal performance overhead when enabled.
+- Essential for debugging complex serverless architectures.
+
+### CloudWatch Metrics
+
+- Invocation count, duration, errors, and throttles.
+- Duration includes initialization time for cold starts.
+- Set alarms for unusual patterns or thresholds.
+- Use embedded metrics for custom business metrics.
+- Dashboard widgets for real-time monitoring.
+
+> [!Important]
+> **Enable X-Ray for production workloads**: Distributed tracing is essential for debugging serverless applications. X-Ray shows the full request path across Lambda, API Gateway, DynamoDB, and other services. The cost is minimal compared to the debugging time saved.
+
+## Dead-Letter Queues
+
+Dead-letter queues capture events that fail after all retry attempts, preventing data loss.
+
+### DLQ Configuration
+
+- Configure SQS queue or SNS topic as destination.
+- Applies to asynchronous invocations only.
+- Events sent to DLQ after 2 retry attempts fail.
+- Monitor DLQ for failed events and investigate root causes.
+- Process DLQ messages separately to recover or log failures.
+
+### DLQ Best Practices
+
+- Always configure DLQ for asynchronous functions.
+- Set up alarms on DLQ queue depth.
+- Include sufficient context in failed events for debugging.
+- Process DLQ messages regularly to prevent accumulation.
+- Use DLQ analytics to identify recurring failure patterns.
+
+## Versioning and Aliases
+
+Versioning and aliases enable safe deployment strategies and rollback capabilities.
+
+### Versions
+
+- Immutable snapshots of function code and configuration.
+- Each version has a unique ARN.
+- Publish versions after testing and validation.
+- Cannot modify published versions.
+- Use versions for audit trails and rollback.
+
+### Aliases
+
+- Mutable pointers to specific versions.
+- Common aliases: DEV, STAGING, PROD.
+- Update alias to point to new version for deployment.
+- Configure provisioned concurrency on aliases.
+- Enable traffic shifting for canary deployments.
+
+### Deployment Strategies
+
+- Blue-green: switch alias from old to new version instantly.
+- Canary: route percentage of traffic to new version gradually.
+- Linear: increase traffic to new version in steps.
+- Rollback: point alias back to previous version if issues arise.
+- Use CodeDeploy for automated deployment pipelines.
+
+```mermaid
+flowchart LR
+    A[Code Update] --> B[Test Version]
+    B --> C[Publish Version]
+    C --> D[Update Alias]
+    D --> E[Monitor]
+    E -->|Success| F[Keep New Version]
+    E -->|Failure| G[Rollback Alias]
+```
+
+> [!Tip]
+> **Use aliases for all deployments**: Never invoke functions by version number in production. Use aliases so you can update the underlying version without changing client code. This enables zero-downtime deployments and instant rollbacks.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Explain how memory allocation affects CPU and network bandwidth in Lambda.
+2. What is the maximum timeout for Lambda functions and what alternatives exist for longer tasks?
+3. Describe the difference between cold starts and warm starts.
+4. How does reserved concurrency differ from provisioned concurrency?
+5. When should you attach a Lambda function to a VPC?
+6. Explain the principle of least privilege for Lambda execution roles.
+7. Compare synchronous, asynchronous, and poll-based triggers.
+8. What are the benefits of using Lambda layers?
+9. How do dead-letter queues work and when should they be used?
+10. Describe the difference between versions and aliases.
+11. What monitoring tools are available for Lambda functions?
+12. How can you eliminate cold start latency for latency-sensitive functions?
+
+### Scenario Questions
+
+**Scenario 1: High-Traffic API with Latency Requirements**
+An e-commerce API requires sub-100ms response times and handles 1000 requests per second steadily. How should you configure Lambda?
+
+- Use provisioned concurrency to eliminate cold starts.
+- Right-size memory based on performance testing.
+- Set appropriate timeout slightly above expected duration.
+- Use API Gateway with Lambda integration.
+- Monitor with X-Ray to identify any bottlenecks.
+- Consider reserved concurrency to guarantee capacity.
+
+**Scenario 2: Image Processing with Large Dependencies**
+A function processes images and requires 500 MB of image processing libraries. How should you deploy this?
+
+- Use Lambda layers to package the libraries separately.
+- Increase memory to 10 GB for more CPU and /tmp space.
+- Use container image deployment if ZIP package exceeds limits.
+- Store processed images in S3.
+- Use S3 event notification as trigger.
+- Configure DLQ for failed processing events.
+
+**Scenario 3: Database Access from Lambda**
+A function needs to query an RDS database in a private subnet. How should you configure networking?
+
+- Attach Lambda to the VPC containing the RDS instance.
+- Select private subnets where RDS is located.
+- Configure security groups to allow Lambda to RDS traffic.
+- Accept increased cold start latency from ENI provisioning.
+- Use provisioned concurrency if latency is critical.
+- Cache database connections in global scope for reuse.
+
+**Scenario 4: Cost Optimization for Sporadic Workload**
+A function runs 100 times per day with unpredictable timing. How should you optimize cost?
+
+- Use minimum memory that meets performance requirements.
+- Do not use provisioned concurrency to avoid idle costs.
+- Set appropriate timeout to avoid paying for idle time.
+- Use reserved concurrency of zero or low value.
+- Monitor actual usage and adjust memory accordingly.
+- Consider Step Functions if workflow is complex.
+
+**Scenario 5: Multi-Environment Deployment**
+A team needs to deploy the same function to DEV, STAGING, and PROD environments. How should they manage this?
+
+- Use aliases for each environment: DEV, STAGING, PROD.
+- Publish versions after testing in each environment.
+- Use environment variables for configuration differences.
+- Implement CI/CD pipeline with CodeDeploy.
+- Use canary deployments for PROD updates.
+- Maintain separate IAM roles per environment if needed.
+
+## Key Takeaways
+
+- Memory allocation scales CPU and network bandwidth proportionally. Right-size memory for cost and performance balance.
+- Timeout is a hard limit from 1 second to 15 minutes. Use Step Functions or ECS for longer tasks.
+- Cold starts occur on first invocation or after idle periods. Warm starts reuse containers for faster execution.
+- Reserved concurrency guarantees capacity. Provisioned concurrency eliminates cold starts at additional cost.
+- VPC attachment enables access to private resources but adds cold start latency. Use only when necessary.
+- Execution roles follow least privilege principle. Grant only required permissions with specific resource ARNs.
+- Synchronous triggers return errors to callers. Asynchronous triggers retry and use DLQs. Poll-based triggers batch records.
+- Layers share code and dependencies across functions. Reduce package size and promote reuse.
+- Enable X-Ray tracing for production workloads to debug distributed systems.
+- Dead-letter queues capture failed asynchronous invocations after retries. Monitor and process DLQ messages.
+- Versions are immutable snapshots. Aliases are mutable pointers enabling safe deployments and rollbacks.
+- Use aliases for all production invocations to enable zero-downtime deployments.
+- Match configuration to workload characteristics: latency sensitivity, traffic patterns, and resource requirements.
+- Monitor concurrency, errors, and duration metrics to identify optimization opportunities.
+- Test functions at different memory levels to find optimal cost-performance balance.
+
+> [!Important]
+> **Configuration is iterative, not one-time**: Lambda configuration requires continuous optimization. Monitor performance metrics, analyze costs, and adjust settings based on actual usage patterns. Use tools like Lambda Power Tuning to automate memory optimization. Review permissions regularly to maintain security. Update runtimes to receive security patches. Configuration best practices evolve as your application grows and changes.
