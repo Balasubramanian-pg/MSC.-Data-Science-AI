@@ -1,4 +1,3 @@
-# Migration in progress
 # W08: ELT vs. ETL Methodologies
 
 # Lesson: ELT vs. ETL Methodologies
@@ -102,4 +101,118 @@ Three technological trends drove the industry from ETL to ELT.
 | **Hardware** | Requires separate transformation server | Uses destination database compute |
 | **Data State** | Only clean data loaded | Raw + Clean data loaded |
 | **Flexibility** | Low (rigid schema) | High (schema-on-read) |
-| **Time to Insight** | Slow (upfront modeling) | Fast (load now, m
+| **Time to Insight** | Slow (upfront modeling) | Fast (load now, model later) |
+| **Security** | High (mask before load) | Medium (must mask in warehouse) |
+| **Best For** | Legacy, strict compliance, small data | Cloud, big data, agile analytics |
+
+## When to Use Which?
+
+### Use ETL When:
+
+-   **Strict Compliance**: GDPR/HIPAA requires PII to be masked or removed before it touches your storage.
+-   **Legacy Systems**: On-premise warehouses with limited compute power.
+-   **Small Data Volumes**: Where transformation overhead is minimal.
+-   **Real-Time Needs**: Sometimes ETL streams are easier to manage for simple real-time dashboards than complex ELT batches.
+
+### Use ELT When:
+
+-   **Cloud-Native Architecture**: Using Snowflake, BigQuery, Redshift, or Databricks.
+-   **Large/Unstructured Data**: Need to store raw logs, JSON, or IoT data.
+-   **Agile Analytics**: Business requirements change frequently; need to reprocess history easily.
+-   **Data Science**: ML models often need raw, unaggregated data that ETL would have discarded.
+
+## Modern Hybrid Approaches
+
+In practice, most enterprises use a hybrid model.
+
+### ELT with Pre-Processing
+
+-   Light transformation (e.g., format conversion, basic filtering) happens during ingestion.
+-   Heavy business logic (aggregations, joins) happens in the warehouse.
+-   Example: Convert CSV to Parquet during load, then use dbt for modeling.
+
+### Secure ELT
+
+-   Load raw data into a restricted "Raw" zone with strict access controls.
+-   Transform and mask PII in a "Clean" zone accessible to broader teams.
+-   Combines ELT flexibility with ETL-like security governance.
+
+```mermaid
+flowchart LR
+    A[Source] -->|Extract| B[Raw Zone<br/>Restricted Access]
+    B -->|Transform/Mask| C[Clean Zone<br/>Public Access]
+    C --> D[BI / ML]
+    style B fill:#f9f,stroke:#333
+    style C fill:#bbf,stroke:#333
+```
+
+## Assessment Preparation
+
+### Practice Questions
+
+1.  What does ETL stand for and how does it differ from ELT?
+2.  Why did cloud computing drive the adoption of ELT?
+3.  What is the main disadvantage of ETL regarding historical data?
+4.  How does dbt facilitate ELT workflows?
+5.  When is ETL still preferred over ELT?
+6.  Explain the concept of Schema-on-Write vs. Schema-on-Read.
+7.  What are the security risks of ELT and how do you mitigate them?
+8.  Why is storage cost less of a concern in ELT?
+9.  Describe a hybrid ETL/ELT approach.
+10. How does ELT improve time-to-insight for analysts?
+
+### Scenario Questions
+
+**Scenario 1: Healthcare Provider**
+Must comply with HIPAA; patient names cannot be stored in analytics warehouse.
+
+-   **Choice**: ETL (or Secure ELT).
+-   **Process**: Mask/Hash patient names in intermediate layer before loading.
+-   **Reason**: Compliance requires PII removal before storage.
+-   **Tool**: Informatica or custom Spark job.
+
+**Scenario 2: E-Commerce Startup**
+Rapidly changing product categories; needs flexible reporting.
+
+-   **Choice**: ELT.
+-   **Process**: Load raw JSON from app into Snowflake. Use dbt to model.
+-   **Reason**: Easy to adjust models as categories change; raw data preserved.
+-   **Benefit**: Analysts can self-serve without engineering help.
+
+**Scenario 3: Legacy Bank Migration**
+Moving from mainframe to cloud; limited bandwidth.
+
+-   **Choice**: Hybrid.
+-   **Process**: Filter and compress data on-premise (Light ETL). Load to S3. Transform in Cloud (ELT).
+-   **Reason**: Reduces data transfer volume; leverages cloud scale for heavy lifting.
+
+**Scenario 4: Marketing Analytics**
+Needs to combine Facebook Ads, Google Ads, and CRM data.
+
+-   **Choice**: ELT.
+-   **Process**: Use Fivetran/Stitch to load all raw data to BigQuery. Use dbt to join.
+-   **Reason**: Fast setup; easy to add new sources; raw data available for attribution modeling.
+
+**Scenario 5: Real-Time Inventory**
+Warehouse needs up-to-the-minute stock levels.
+
+-   **Choice**: Streaming ETL (or CDC).
+-   **Process**: Capture DB changes, transform lightly, load to operational DB.
+-   **Reason**: Batch ELT is too slow; need low latency.
+-   **Note**: This is a special case where traditional batch ELT is unsuitable.
+
+## Key Takeaways
+
+-   ETL transforms before loading; ELT loads before transforming.
+-   ETL is rigid but secure; ELT is flexible and agile.
+-   Cloud storage and compute scalability made ELT viable.
+-   ELT preserves raw data, enabling reproducibility and reprocessing.
+-   dbt is the standard tool for ELT transformations.
+-   ETL is still used for strict compliance and legacy systems.
+-   Security in ELT requires careful access control and masking in the warehouse.
+-   Hybrid approaches combine light pre-processing with heavy cloud transformation.
+-   Choose based on data volume, compliance needs, and organizational agility.
+-   ELT empowers analysts; ETL relies on engineers.
+
+> [!Important]
+> **ELT is not just "lazy ETL"**: It is a strategic shift that recognizes storage is cheap and compute is elastic. By keeping raw data, you future-proof your architecture. However, without governance, ELT leads to chaos. Invest in data cataloging, quality testing, and access control to make ELT successful. The goal is to balance speed with trust.
