@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 2: CI/CD for Data Pipelines
 
 CI-CD for Data Pipelines:
@@ -23,4 +22,28 @@ Continuous Integration Workflow for Data:
 Continuous Delivery and Deployment Mechanisms:
 
 - Continuous Delivery: Automatically builds, tests, and stages pipeline code in a pre-production environment, requiring an explicit approval step from a lead engineer before promoting to production.
-- Continuous Deployment: Eliminates manual gates by automatically deploying every commit that passes all automated continuous integration checks directl
+- Continuous Deployment: Eliminates manual gates by automatically deploying every commit that passes all automated continuous integration checks directly into live production systems.
+- Airflow DAG deployment: Automated workflows copy validated DAG scripts into production Airflow environments using git-sync container sidecars, automated cloud object storage synchronization, or custom Docker image builds.
+- Transformation model deployment: Systems trigger production execution jobs in platforms like dbt Cloud or Databricks, compiling SQL models and running migrations against production schemas.
+- Spark application deployment: Automated pipelines package Python transformation modules into wheel files or compile Scala code into JAR artifacts, publishing them to artifact repositories for scheduled cluster execution.
+
+Managing Database Schema Migrations:
+
+- Version-controlled migrations: Tools such as Flyway, Liquibase, or Alembic manage database schema definitions as ordered, versioned migration scripts stored in version control.
+- Additive schema updates: Best practices prioritize non-breaking, additive changes such as creating new nullable columns or creating new tables rather than renaming existing columns in place.
+- Expand and contract pattern: Safely modifies schemas by first adding the new column, deploying code that writes to both old and new columns, backfilling existing data, updating readers, and finally dropping the legacy column in a subsequent release.
+- Important: Destructive schema changes like dropping or renaming production columns without multi-phase migration patterns will immediately crash downstream ingestion pipelines and reporting dashboards.
+
+Environment Strategy and Secret Governance:
+
+- Environment isolation: Development environments allow engineers to iterate rapidly without risking live systems, staging environments mirror production architecture for integration tests, and production environments serve end-user business analytics.
+- Automated secret injection: Production database passwords, cloud IAM keys, and third-party API tokens are stored in encrypted key vaults or repository secrets managers, injected dynamically as environment variables during pipeline runs.
+- Least privilege access: Automated test runners are granted restricted write access strictly within sandboxed temporary testing schemas and must never possess administrative write privileges on production data stores.
+
+Key Takeaways:
+
+- Data CI-CD requires testing software logic, database schemas, and data quality simultaneously.
+- Continuous integration validates every code update using static analysis, unit tests, DAG integrity checks, and sandboxed schema builds.
+- Continuous delivery automates the safe release of Airflow DAGs, dbt models, and Spark packages to production environments.
+- Database schema changes must follow disciplined migration patterns like the expand and contract pattern to prevent downtime.
+- Environment isolation and encrypted secret injection ensure that automated pipelines run securely without exposing private credentials.
