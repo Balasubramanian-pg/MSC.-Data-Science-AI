@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 5: Beyond RNNs
 
 ## Beyond Recurrence: Convolutional Sequences, Attention, and Parallel Architectures
@@ -127,4 +126,106 @@ flowchart BT
     $$e_{ij} = s_{i-1}^T W_a h_j$$
     When hidden dimensions match, it evaluates as a raw inner product: $e_{ij} = s_{i-1}^T h_j$.
 - Passing alignment scores through a Softmax function across the input sequence length $T_x$ yields normalized **attention weights** $\alpha_{ij} \in (0, 1)$:
-  $$\
+  $$\alpha_{ij} = \frac{\exp(e_{ij})}{\sum_{k=1}^{T_x} \exp(e_{ik})}, \quad \text{where } \sum_{j=1}^{T_x} \alpha_{ij} = 1$$
+
+### Dynamic Context Vector Computation
+
+- The dynamic context vector $c_i$ evaluates as the **weighted sum** of all encoder hidden states:
+  $$c_i = \sum_{j=1}^{T_x} \alpha_{ij} h_j$$
+- The decoder updates its state by concatenating the dynamic context vector with its current representation:
+  $$\tilde{s}_i = \tanh(W_c [s_i \; ; \; c_i])$$
+  $$\hat{y}_i = \text{Softmax}(W_s \tilde{s}_i)$$
+- Instead of forcing the encoder to compress an entire sentence into a single vector, the decoder inspects all source tokens directly, shifting its focus dynamically as generation proceeds.
+
+```mermaid
+flowchart TD
+    subgraph EncoderStates["Encoder Hidden States"]
+        h1["h_1"]
+        h2["h_2"]
+        h3["h_3"]
+    end
+
+    subgraph AttentionMechanics["Dynamic Attention Alignment"]
+        s_prev["Decoder State: s_{i-1}"]
+        h1 --> Score1["Score e_{i,1}"]
+        h2 --> Score2["Score e_{i,2}"]
+        h3 --> Score3["Score e_{i,3}"]
+        s_prev --> Score1
+        s_prev --> Score2
+        s_prev --> Score3
+        
+        Score1 --> Softmax["Softmax Normalization"]
+        Score2 --> Softmax
+        Score3 --> Softmax
+        
+        Softmax --> Alpha["Weights: α_{i,1}, α_{i,2}, α_{i,3}"]
+    end
+
+    Alpha --> ContextVector["Context Vector: c_i = Σ α_{i,j} h_j"]
+    ContextVector --> DecoderState["Updated Decoder Step: s_i -> y_i"]
+```
+
+### Direct $O(1)$ Dependency Paths
+
+- The attention mechanism changes the path length connecting distant tokens.
+- In recurrent models, connecting token 1 to token $T$ requires traversing $T$ sequential transitions.
+- In an attention-augmented model, the attention weight $\alpha_{T, 1}$ connects the output directly to the first input state in a **single step ($O(1)$ path length)**.
+- Direct connectivity eliminates temporal gradient decay, allowing models to align and translate sequences spanning hundreds of words without context loss.
+
+> [!Important]
+> **Attention eliminates the fixed-vector bottleneck**: computing dynamic weighted sums over all encoder states ($c_i = \sum \alpha_{ij} h_j$) creates a direct $O(1)$ path length between any source token and the target prediction.
+
+## Modern Sequence Paradigms: Transformers and State Space Models
+
+### Pure Self-Attention and the Transformer Architecture
+
+- Ashish Vaswani et al. (2017) published *Attention Is All You Need*, introducing the **Transformer** architecture.
+- The Transformer discarded recurrence and convolutions entirely, modeling sequence dependencies exclusively through **Scaled Dot-Product Self-Attention**:
+  $$\text{Attention}(Q, K, V) = \text{Softmax}\left( \frac{Q K^T}{\sqrt{d_k}} \right) V$$
+  where queries ($Q$), keys ($K$), and values ($V$) are linear projections of the input sequence.
+- Because self-attention evaluates all pairs of tokens simultaneously, training executes with full parallel efficiency on GPU clusters, making the Transformer the architectural foundation of modern Large Language Models.
+
+### The Quadratic Computational Frontier
+
+- While self-attention eliminates sequential execution bottlenecks, comparing every token against every other token incurs a **quadratic computational and memory cost**:
+  $$\text{Time Complexity} \in O(T^2 \cdot d), \quad \text{Memory Complexity} \in O(T^2)$$
+- Storing the $T \times T$ attention matrix becomes computationally prohibitive as context windows expand beyond 32,000 tokens, motivating research into sub-quadratic sequence alternatives.
+
+### Structured State Space Models (SSMs)
+
+- Emerging architectures like **Structured State Space Models (S4)** (Albert Gu et al., 2021) and **Mamba** (Albert Gu and Tri Dao, 2023) bridge continuous control theory and sequence modeling.
+- SSMs map a continuous 1D input signal $x(t)$ to an output $y(t)$ through a latent state $h(t)$ using linear differential equations:
+  $$h'(t) = A h(t) + B x(t), \quad y(t) = C h(t) + D x(t)$$
+- Discretizing these equations allows the model to switch operational representations:
+  - **During Training:** Evaluates as a **parallel 1D convolution** across the entire sequence ($O(T \log T)$ compute, zero step-wise bottlenecks).
+  - **During Inference:** Evaluates as a **linear recurrent state update** ($O(1)$ compute and memory per token, eliminating the growing key-value cache of Transformers).
+- Modern selective state-space models process million-token contexts with linear $O(T)$ complexity while matching Transformer benchmark quality.
+
+> [!Tip]
+> **Modern sequence architectures trade off scalability**: Transformers achieve high accuracy with $O(T^2)$ self-attention, while modern State Space Models (Mamba) achieve linear $O(T)$ scaling by combining parallel training with recurrent inference.
+
+## Comparative Matrix of Sequence Modeling Paradigms
+
+| Sequence Modeling Paradigm | Sequential Operations During Training | Maximum Dependency Path Length | Training Compute Complexity | Inference Cost per Token | Primary Operational Strength |
+|---|---|---|---|---|---|
+| **Recurrent (LSTM / GRU)** | $O(T)$ (Strictly sequential) | $O(T)$ sequential steps | $O(T \cdot H^2)$ | $O(1)$ compute, $O(1)$ memory | Compact memory footprint; efficient on short streams |
+| **Temporal ConvNet (TCN)** | $O(1)$ (Fully parallelized) | $O(\log_K T)$ dilated layers | $O(T \cdot K \cdot C^2)$ | $O(K \cdot L)$ buffer lookup | Parallel training; stable gradient propagation |
+| **Attention / Transformer** | $O(1)$ (Fully parallelized) | $O(1)$ direct connection | $O(T^2 \cdot d + T \cdot d^2)$ | $O(T)$ compute, $O(T)$ KV-cache | Highest representational accuracy; global context |
+| **State Space Models (SSM)**| $O(1)$ (Convolutional mode) | $O(1)$ continuous state | $O(T \cdot H)$ (Linear scaling) | $O(1)$ compute, $O(1)$ memory | Linear $O(T)$ scaling; ultra-long sequence modeling |
+
+> [!Important]
+> **The evolution of sequence modeling moved from recurrence to parallel attention**: replacing sequential recurrent loops ($O(T)$ operations) with parallel convolutions, direct attention, and state-space systems allows models to train efficiently on modern GPU hardware while scaling to massive context lengths.
+
+## Key Takeaways
+
+- **Recurrent models suffer from a sequential bottleneck** because step $t$ depends strictly on step $t-1$, preventing parallel execution on modern GPU tensor cores.
+- **Temporal Convolutional Networks (TCNs) parallelize training** by applying 1D causal convolutions across the time dimension.
+- **Dilated convolutions expand receptive fields exponentially** ($d = 2^l$) without adding parameters, covering long historical contexts efficiently.
+- **The fixed-length context vector in Seq2Seq** creates an information bottleneck that causes performance to degrade on sequences longer than 20 to 30 tokens.
+- **The attention mechanism calculates dynamic context vectors** ($c_i = \sum \alpha_{ij} h_j$), creating direct $O(1)$ path lengths between any input and output token.
+- **Additive (Bahdanau) and multiplicative (Luong) attention** score token relevance, normalizing values through Softmax to focus decoder computation dynamically.
+- **Transformers eliminate recurrence and convolution entirely**, utilizing Scaled Dot-Product Self-Attention to achieve high training parallelization at $O(T^2)$ computational cost.
+- **Structured State Space Models (SSMs)** offer linear $O(T)$ scaling, executing as parallel convolutions during training and recurrent state updates during inference.
+
+> [!Tip]
+> The defining evolution of sequence modeling: **direct connectivity and parallel execution replace recurrent chains**; transitioning from sequential hidden state passing to causal convolutions, dynamic attention, and state-space formulations allows models to scale across hardware accelerators while capturing long-range dependencies.
