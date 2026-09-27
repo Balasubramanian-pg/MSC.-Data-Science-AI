@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: Introduction to EC2
 
 Amazon Elastic Compute Cloud (EC2) is the foundational compute service in AWS. It provides secure, resizable virtual servers called instances, giving you full control over the operating system and the flexibility to run almost any workload. EC2 is the most mature and widely used AWS compute service, offering over 1,000 instance types across Intel, AMD, and Arm processors.
@@ -142,4 +141,148 @@ flowchart TD
 ```
 
 - **Pending**: The instance is preparing to enter the running state.
-- **Running**: The instance is active an
+- **Running**: The instance is active and usable.
+- **Stopping/Stopped**: The instance is shut down but can be restarted. EBS volumes persist.
+- **Rebooting**: The instance restarts without losing its public IP or EBS volumes.
+- **Terminating/Terminated**: The instance is permanently deleted. EBS root volumes are deleted by default unless the "Delete on Termination" flag is disabled.
+- **Hibernating**: The instance saves its RAM contents to EBS and can resume later.
+
+> [!Tip]
+> **Stop vs Terminate**: Stopping an instance preserves the EBS root volume and allows you to restart later. Terminating deletes the instance and its root volume by default. Use stop for temporary shutdowns and terminate for permanent removal.
+
+### Storage and Networking
+
+- EC2 instances use Amazon EBS for persistent block storage. EBS volumes are network-attached and persist independently of the instance lifecycle.
+- EBS supports gp3 (general purpose SSD), io2 (high IOPS SSD), and st1/sc1 (throughput-optimized HDD) volume types.
+- EC2 instances can use instance store for temporary, high-speed local storage. Data on instance store is lost when the instance is stopped or terminated.
+- EC2 networking supports up to 400 Gbps for the largest instances.
+- Enhanced Networking (ENA) provides high-performance networking with lower latency and higher throughput.
+- Elastic Fabric Adapter (EFA) provides low-latency networking for HPC and machine learning workloads.
+
+### Nitro System
+
+- The AWS Nitro System is the foundation of modern EC2 instances.
+- It offloads virtualization functions to dedicated hardware, improving performance and security.
+- Nitro eliminates the hypervisor from the data path for storage and networking, reducing overhead.
+- Nitro Security Chips protect the hardware and firmware of the server.
+- Nitro Enclaves provide isolated compute environments for processing highly sensitive data.
+
+> [!Important]
+> **Nitro is a security and performance enabler**: The Nitro System improves security by removing the hypervisor from the data path and providing hardware-level isolation. It also enables higher performance and more consistent networking and storage than traditional virtualization.
+
+## EC2 Security Best Practices
+
+Securing EC2 instances is a shared responsibility. AWS secures the infrastructure, and you secure the operating system, applications, and configuration.
+
+### Security Checklist
+
+| Area | Best Practice |
+|---|---|
+| IAM | Use least-privilege IAM roles for EC2 instances. Never store access keys on instances. |
+| Security Groups | Restrict inbound traffic to specific ports and source IP ranges. Avoid 0.0.0.0/0 on SSH (22) and RDP (3389). |
+| Key Pairs | Generate unique key pairs per region. Store private keys in encrypted, access-controlled storage. |
+| IMDS | Enforce IMDSv2 to protect against SSRF attacks on the instance metadata service. |
+| EBS Encryption | Encrypt EBS volumes at rest using AWS KMS. |
+| Patching | Keep the guest OS and applications patched. Use AWS Systems Manager Patch Manager. |
+| Monitoring | Use CloudTrail, CloudWatch, and GuardDuty to monitor EC2 activity. |
+| Network | Use private subnets for backend instances. Use VPC endpoints to access AWS services privately. |
+
+- Security groups are stateful firewalls that control inbound and outbound traffic at the instance level.
+- IMDSv2 adds session-based authentication to the instance metadata service, mitigating SSRF risks.
+- EBS encryption protects data at rest and can be enabled by default for all new volumes.
+- AWS Systems Manager provides patching, compliance, and session management without opening SSH ports.
+
+> [!Important]
+> **Never expose SSH or RDP to the internet**: Restrict SSH and RDP access to known IP ranges or use AWS Systems Manager Session Manager for secure, auditable access without opening inbound ports.
+
+## EC2 Use Cases
+
+| Use Case | Recommended Instance Family | Pricing Model |
+|---|---|---|
+| Web servers | General purpose (M7g, T4g) | On-Demand or Savings Plans |
+| Batch processing | Compute optimized (C7g, C9g) | Spot Instances |
+| In-memory databases | Memory optimized (R7g, R9g) | Reserved Instances |
+| Machine learning training | Accelerated computing (P4, Trn1) | Spot or Savings Plans |
+| Data warehousing | Storage optimized (I3, I8ge) | Reserved Instances |
+| CI/CD runners | General purpose (M7g, C7g) | Spot Instances |
+| Development/test | General purpose (T4g) | On-Demand |
+
+> [!Tip]
+> **Match instance family to workload, pricing to pattern**: Choose the instance family based on the dominant resource requirement. Choose the pricing model based on how predictable the workload is.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Define Amazon EC2 and explain its role in AWS compute.
+2. List the five EC2 instance families and their use cases.
+3. Explain the four EC2 pricing models and when each is appropriate.
+4. Compare Reserved Instances and Savings Plans.
+5. Describe how Spot Instances work and what workloads they suit.
+6. Explain the EC2 instance lifecycle from launch to termination.
+7. Describe the AWS Nitro System and its benefits.
+8. List five EC2 security best practices.
+
+### Scenario Questions
+
+**Scenario 1: Steady-State Web Application**
+A company runs a web application with predictable traffic that runs 24/7. Which EC2 pricing model should they use?
+
+- Use Reserved Instances or EC2 Instance Savings Plans for up to 72% discount.
+- Choose general purpose instances like M7g for balanced performance.
+- Deploy across multiple Availability Zones for high availability.
+
+**Scenario 2: Batch Processing Job**
+A research team needs to run large-scale batch processing jobs that can be interrupted and restarted. Which pricing model should they use?
+
+- Use Spot Instances for up to 90% discount.
+- Choose compute optimized instances like C7g or C9g.
+- Use Auto Scaling groups with mixed instance policies to handle interruptions.
+
+**Scenario 3: In-Memory Database**
+A company needs to run an in-memory database with a large memory footprint. Which instance family should they use?
+
+- Use memory optimized instances like R7g or R9g.
+- Use Reserved Instances for steady-state workloads.
+- Enable EBS encryption for data at rest.
+
+**Scenario 4: Machine Learning Training**
+A team needs to train deep learning models with GPU acceleration. Which instance family should they use?
+
+- Use accelerated computing instances like P4 or Trn1.
+- Use Spot Instances for fault-tolerant training jobs.
+- Consider Savings Plans for predictable training workloads.
+
+```mermaid
+flowchart TD
+    A[EC2 Decision] --> B{Workload Type?}
+    B -->|General Purpose| C[M7g, T4g]
+    B -->|Compute Intensive| D[C7g, C9g]
+    B -->|Memory Intensive| E[R7g, R9g]
+    B -->|Storage Intensive| F[I3, I8ge]
+    B -->|GPU/ML| G[P4, G5, Trn1]
+    C --> H{Predictable?}
+    D --> H
+    E --> H
+    F --> H
+    G --> H
+    H -->|Yes| I[Reserved or Savings Plans]
+    H -->|No| J[On-Demand]
+    H -->|Fault Tolerant| K[Spot]
+```
+
+## Key Takeaways
+
+- Amazon EC2 provides secure, resizable virtual servers in the cloud with full OS-level control.
+- EC2 offers over 1,000 instance types across five families: general purpose, compute optimized, memory optimized, storage optimized, and accelerated computing.
+- AWS Graviton processors offer better price-performance for many workloads. Graviton5 powers the latest C9g, M9g, and R9g instances.
+- EC2 pricing models include On-Demand, Reserved Instances, Savings Plans, and Spot Instances. Savings can reach 72% (Reserved/Savings Plans) or 90% (Spot).
+- Spot Instances are ideal for fault-tolerant workloads but can be interrupted with a two-minute warning.
+- The EC2 instance lifecycle includes pending, running, stopping, stopping, rebooting, terminating, and hibernating states.
+- The AWS Nitro System improves security and performance by offloading virtualization to dedicated hardware.
+- EC2 security best practices include least-privilege IAM roles, restrictive security groups, IMDSv2 enforcement, EBS encryption, and regular patching.
+- Match instance family to the dominant resource requirement and pricing model to the workload pattern.
+- EC2 is the foundation of AWS compute. Understanding it is essential for working with ECS, EKS, and Lambda.
+
+> [!Important]
+> **Match the instance family to the workload, and the pricing model to the pattern**: The two biggest decisions in EC2 are which instance family to use and which pricing model to choose. Choosing the wrong family leads to poor performance or wasted cost. Choosing the wrong pricing model leaves money on the table. Right-size continuously and commit only when usage is predictable.
