@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: The Evolution of Data Storage
 
 The history of data storage is a journey from rigid, structured systems designed for transactional integrity to flexible, distributed systems built for scale and variety. This lesson traces the evolution from mainframe file systems to relational databases, the NoSQL revolution, and the modern era of big data and cloud-native storage. Understanding this history provides context for why different storage paradigms exist and when to use them.
@@ -103,4 +102,96 @@ The convergence of cloud computing, open-source frameworks, and advanced analyti
 ### Polyglot Persistence
 
 -   Using multiple database technologies within a single application.
--   Example: Relational for billing, Document 
+-   Example: Relational for billing, Document for catalog, Graph for recommendations.
+-   Optimizes each component for its specific workload.
+
+### Serverless and Managed Services
+
+-   Cloud providers manage infrastructure, scaling, and patching.
+-   Pay-per-use pricing models.
+-   Examples: Amazon DynamoDB, Aurora Serverless, Cosmos DB.
+-   Reduces operational overhead, allowing teams to focus on data value.
+
+### NewSQL and HTAP
+
+-   **NewSQL**: Combines SQL interface and ACID guarantees with NoSQL scalability (e.g., Google Spanner, CockroachDB).
+-   **HTAP (Hybrid Transactional/Analytical Processing)**: Systems that handle both transactions and analytics in real-time (e.g., TiDB, SingleStore).
+
+| Era | Primary Focus | Scaling Method | Consistency Model |
+|---|---|---|---|
+| Relational | Integrity & Structure | Vertical | Strong (ACID) |
+| NoSQL | Scale & Flexibility | Horizontal | Eventual (BASE) |
+| Cloud/Big Data | Variety & Analytics | Distributed/Elastic | Tunable |
+
+## Assessment Preparation
+
+### Practice Questions
+
+1.  What were the main limitations of flat file systems?
+2.  How did the relational model improve upon hierarchical databases?
+3.  Why did Web 2.0 companies drive the adoption of NoSQL?
+4.  Explain the difference between vertical and horizontal scaling.
+5.  What does ACID stand for and why is it important?
+6.  What does BASE stand for and how does it differ from ACID?
+7.  What is a Data Lake and how does it differ from a traditional database?
+8.  Define polyglot persistence and give an example.
+9.  Why is schema-on-read advantageous for big data analytics?
+10. How has cloud computing changed the way we manage data storage?
+
+### Scenario Questions
+
+**Scenario 1: Legacy System Modernization**
+A company uses a mainframe with hierarchical data. They want to move to the cloud.
+
+-   Migrate to a Relational Database (RDS) if data is structured and transactions are critical.
+-   Refactor application code to decouple data logic.
+-   Use migration tools to convert hierarchical structures to relational tables.
+-   Benefit from cloud scalability and managed backups.
+
+**Scenario 2: Social Media Startup**
+Needs to store user posts, likes, and comments with rapid growth.
+
+-   Start with a Document Database (MongoDB/DynamoDB) for flexible post structures.
+-   Use Horizontal Scaling to handle user growth.
+-   Accept eventual consistency for likes/comments to ensure availability.
+-   Avoid rigid relational schema to allow feature iteration.
+
+**Scenario 3: Retail Analytics**
+Company wants to analyze sales, weather data, and social media sentiment.
+
+-   Store raw data in a Data Lake (S3).
+-   Use Schema-on-Read to combine structured sales data with unstructured text.
+-   Use Spark or Athena for analysis.
+-   Benefit from low-cost storage and powerful analytics engines.
+
+**Scenario 4: Global Banking App**
+Requires strict consistency and global availability.
+
+-   Use a NewSQL database (e.g., Google Spanner or Aurora Global Database).
+-   Ensures ACID compliance across regions.
+-   Provides strong consistency for financial transactions.
+-   Handles global scale without sacrificing integrity.
+
+**Scenario 5: IoT Platform**
+Millions of devices sending telemetry data.
+
+-   Use a Time-Series or Column-Family database (Cassandra/Keyspaces).
+-   Optimized for high-write throughput.
+-   Horizontal scaling to handle device growth.
+-   Store historical data in Data Lake for long-term analysis.
+
+## Key Takeaways
+
+-   Data storage has evolved from rigid, application-coupled files to flexible, distributed systems.
+-   Relational databases introduced structure, SQL, and ACID transactions.
+-   NoSQL emerged to solve scale, flexibility, and variety challenges of Web 2.0.
+-   Horizontal scaling allows systems to grow by adding more servers rather than bigger ones.
+-   BASE properties prioritize availability and partition tolerance over immediate consistency.
+-   Data Lakes enable storage and analysis of raw, unstructured data at scale.
+-   Polyglot persistence uses the best database for each specific task within an application.
+-   Cloud-native services reduce operational overhead and enable serverless scaling.
+-   NewSQL bridges the gap between relational integrity and NoSQL scale.
+-   Choose storage based on the specific needs of volume, velocity, variety, and consistency.
+
+> [!Important]
+> **History informs design**: Understanding why relational databases dominated and why NoSQL emerged helps you avoid common pitfalls. Do not force a relational model on unstructured data, and do not sacrifice consistency for scale unless necessary. Each paradigm solved specific problems; choose the one that solves yours. The future is hybrid, leveraging the strengths of multiple models through polyglot persistence and cloud-native architectures.
