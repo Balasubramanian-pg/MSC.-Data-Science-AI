@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: Containerisation vs Virtualisation
 
 This lesson compares containerisation and virtualisation as two approaches to running workloads on shared infrastructure. It explains how each technology works at the operating system level, how they differ in isolation, performance, and portability, and when to choose one over the other. The goal is to understand the trade-offs so you can select the right model for a given workload.
@@ -189,4 +188,181 @@ Performance and resource efficiency determine how many workloads you can run on 
 | Cost Efficiency | Lower density | Higher density |
 
 > [!Important]
-> **Density drives cost efficiency**: Because containers share the host kernel, you can run significantly more workloads per host than with VMs. This higher density translates directly into lower compute cost per workload, which is one of the main reasons containers dominate modern application 
+> **Density drives cost efficiency**: Because containers share the host kernel, you can run significantly more workloads per host than with VMs. This higher density translates directly into lower compute cost per workload, which is one of the main reasons containers dominate modern application deployment.
+
+## Portability and Consistency
+
+Portability determines how easily a workload can move between environments: developer laptop, test, staging, production, and different clouds.
+
+### Virtual Machine Portability
+
+- A VM image includes the entire operating system, so it can run on any hypervisor that supports the same architecture.
+- VM images are large and slow to move between environments.
+- VM images are tied to the hypervisor format, requiring conversion in some cases.
+- VM portability is limited by hypervisor compatibility and image size.
+
+### Container Portability
+
+- A container image includes the application and its user-space dependencies but not the kernel.
+- Container images run on any host with a compatible kernel and container runtime.
+- Container images are small and fast to move.
+- Container portability is limited by kernel compatibility and CPU architecture (x86 vs Arm).
+
+| Dimension | Virtual Machines | Containers |
+|---|---|---|
+| Image Size | Gigabytes | Megabytes |
+| Image Portability | Hypervisor-dependent | Runtime-dependent |
+| Cross-Cloud Portability | Limited | Strong with Kubernetes |
+| Environment Consistency | Good with golden images | Excellent with immutable images |
+| Kernel Dependency | Self-contained | Shared with host |
+
+> [!Tip]
+> **Containers deliver consistent environments**: The same container image runs identically on a developer laptop, CI pipeline, and production cluster. This eliminates the "it works on my machine" problem and is one of the main reasons teams adopt containers.
+
+## When to Use Each Model
+
+Both models have legitimate use cases. The choice depends on isolation requirements, workload characteristics, team skills, and existing investments.
+
+### Choose Virtual Machines When
+
+- Strong isolation is required for multi-tenant or untrusted workloads.
+- The workload requires a specific operating system or kernel version.
+- The workload uses specialised hardware such as GPUs with specific drivers.
+- Legacy applications cannot be containerised easily.
+- The workload requires persistent state and long-running processes with full OS control.
+
+### Choose Containers When
+
+- You are building microservices or distributed applications.
+- You need fast startup and fine-grained scaling.
+- You want consistent environments across development and production.
+- You want high workload density to reduce compute costs.
+- You need portability across clouds and on-premises environments.
+
+### Choose Both When
+
+- You run containers inside VMs to combine container density with VM isolation.
+- You use VMs for stateful workloads and containers for stateless workloads.
+- You migrate incrementally from VMs to containers over time.
+
+```mermaid
+flowchart TD
+    A[Workload Decision] --> B{Strong Isolation Required?}
+    B -->|Yes| C[Virtual Machines]
+    B -->|No| D{Microservices or Stateless?}
+    D -->|Yes| E[Containers]
+    D -->|No| F{Specific OS or Kernel?}
+    F -->|Yes| C
+    F -->|No| G{Legacy App?}
+    G -->|Yes| C
+    G -->|No| H[Evaluate Both]
+    C --> I[Consider Containers inside VMs]
+    E --> I
+    H --> I
+```
+
+> [!Important]
+> **The two models are complementary, not mutually exclusive**: Many production platforms run containers inside virtual machines to get both strong isolation and container density. Kubernetes clusters on AWS typically run containers on EC2 instances (which are VMs) or on Fargate (which uses microVMs under the hood).
+
+## Comparison Summary
+
+| Dimension | Virtual Machines | Containers |
+|---|---|---|
+| Virtualisation Level | Hardware | Operating system |
+| Kernel | Dedicated per VM | Shared with host |
+| Startup Time | Minutes | Seconds |
+| Image Size | Gigabytes | Megabytes |
+| Isolation | Strong (hardware) | Process-level |
+| Resource Overhead | High | Low |
+| Density per Host | Lower | Higher |
+| Portability | Hypervisor-dependent | Runtime-dependent |
+| Security Boundary | Strong | Requires hardening |
+| Multi-Tenancy | Suitable | Requires additional controls |
+| Best For | Legacy, strong isolation, specific OS | Microservices, stateless apps, portability |
+| Typical AWS Service | EC2 | ECS, EKS, Fargate |
+
+> [!Tip]
+> **Match the model to the workload, not the trend**: Containers are not always the right answer. Choose the model that best fits the workload's isolation, performance, and operational requirements. For legacy applications with specific OS dependencies, VMs remain the right choice.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Define virtualisation and containerisation.
+2. Explain the role of the hypervisor in virtualisation.
+3. Explain how containers share the host kernel.
+4. Compare virtual machines and containers across isolation, startup time, and resource usage.
+5. Explain why containers are not a strong security boundary.
+6. Describe how to harden container workloads.
+7. Compare the portability of VM images and container images.
+8. List the scenarios where virtual machines are the better choice.
+9. List the scenarios where containers are the better choice.
+10. Explain why running containers inside VMs is a common production pattern.
+
+### Scenario Questions
+
+**Scenario 1: Legacy Application with Specific OS**
+A company runs a legacy application that depends on a specific Linux kernel version and requires full OS control. Which model should they use?
+
+- Use virtual machines (EC2 instances).
+- VMs provide a dedicated kernel and full OS control.
+- Containerisation would require modifying the application and may not support the kernel version.
+- Use Reserved Instances or Savings Plans for cost optimisation.
+
+**Scenario 2: Microservices Platform**
+A team is building a microservices platform that needs fast startup, high density, and consistent environments across development and production. Which model should they use?
+
+- Use containers on Amazon ECS or Amazon EKS.
+- Containers provide fast startup, high density, and environment consistency.
+- Use AWS Fargate to eliminate node management.
+- Apply container hardening controls for security.
+
+**Scenario 3: Multi-Tenant SaaS Platform**
+A SaaS provider needs to run untrusted customer code with strong isolation. Which model should they use?
+
+- Use virtual machines for strong hardware-level isolation.
+- Consider AWS Firecracker microVMs or dedicated hosts.
+- Combine VMs with containerisation where isolation requirements are lower.
+- Apply least privilege and network segmentation.
+
+**Scenario 4: Cost-Optimised Batch Processing**
+A company runs batch processing jobs that need to scale rapidly and minimise cost per job. Which model should they use?
+
+- Use containers with AWS Fargate or ECS on EC2.
+- Containers provide high density and fast startup.
+- Use Spot capacity for fault-tolerant batch jobs.
+- Use Lambda for short-duration, event-driven jobs.
+
+```mermaid
+flowchart TD
+    A[Containers vs VMs] --> B{Isolation Requirement}
+    B -->|Strong| C[VMs]
+    B -->|Moderate| D[Containers with Hardening]
+    A --> E{Startup Time}
+    E -->|Minutes Acceptable| C
+    E -->|Seconds Required| D
+    A --> F{Density and Cost}
+    F -->|High Density| D
+    F -->|Dedicated Resources| C
+    A --> G{Portability}
+    G -->|Strong Cross-Cloud| D
+    G -->|Hypervisor-Bound| C
+```
+
+## Key Takeaways
+
+- Virtualisation abstracts hardware through a hypervisor. Each VM runs its own guest OS and kernel.
+- Containerisation abstracts the operating system. Containers share the host kernel and package only the application and its user-space dependencies.
+- VMs are strongly isolated at the hardware level. Containers are isolated at the process level and require additional controls for security.
+- Containers start in seconds and are more resource-efficient, enabling higher workload density per host.
+- VMs take minutes to boot and consume more resources per workload, but provide stronger isolation and full OS control.
+- Container images are smaller and more portable than VM images, enabling consistent environments across development and production.
+- Choose VMs for legacy applications, strong multi-tenancy, and specific OS or kernel requirements.
+- Choose containers for microservices, stateless applications, fast scaling, and cross-cloud portability.
+- Running containers inside VMs is a common production pattern that combines container density with VM isolation.
+- Containers are not a security boundary by default. Harden them with non-root users, seccomp, AppArmor or SELinux, capability dropping, and network policies.
+- The two models are complementary. Match the model to the workload, not the trend.
+- On AWS, VMs map to EC2 and containers map to ECS, EKS, and Fargate.
+
+> [!Important]
+> **Choose the model that fits the workload**: Virtualisation and containerisation solve different problems. Virtualisation provides strong isolation and full OS control. Containerisation provides speed, density, and portability. Many production platforms use both together. The right choice depends on isolation requirements, workload characteristics, team skills, and operational maturity.
