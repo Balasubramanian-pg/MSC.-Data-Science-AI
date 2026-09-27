@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 3: IAM Practical Demonstration
 
 This lesson walks through common IAM tasks using the AWS Management Console, AWS CLI, and IAM policy simulator. It covers creating users, groups, policies, roles, testing permissions, and using IAM Access Analyzer. The goal is to translate IAM theory into hands-on practice.
@@ -174,4 +173,134 @@ sequenceDiagram
 
 ```bash
 # Configure a profile for the user
-aws confi
+aws configure --profile anna
+
+# List S3 buckets (should succeed)
+aws s3 ls --profile anna
+
+# Attempt to delete an object (should fail)
+aws s3 rm s3://example-bucket/test.txt --profile anna
+```
+
+### Use IAM Policy Simulator
+
+- In the IAM console, choose **Policy simulator**.
+- Select the user or role, choose a service (S3), and select actions.
+- Run simulation to see allowed or denied results.
+
+| Action | Expected Result |
+|---|---|
+| s3:ListAllMyBuckets | Allowed (if policy includes it) |
+| s3:GetObject on example-bucket | Allowed |
+| s3:DeleteObject on example-bucket | Denied |
+| ec2:RunInstances | Denied |
+
+> [!Tip]
+> **Simulate before you deploy**: The IAM Policy Simulator helps you validate permissions without making actual API calls, reducing the risk of accidental access.
+
+## Step 5: Use IAM Access Analyzer
+
+IAM Access Analyzer helps identify resources shared with external entities and validates policies against best practices.
+
+- Navigate to IAM, then **Access Analyzer**.
+- Create an analyzer for your account.
+- Review findings for S3 buckets, IAM roles, KMS keys, and other resources shared outside your account.
+- Use policy validation to check for syntax errors and best practice violations.
+
+```mermaid
+flowchart LR
+    A[Create Analyzer] --> B[Scan Resources]
+    B --> C[Findings]
+    C --> D[Review External Access]
+    D --> E[Remediate]
+```
+
+> [!Important]
+> **Access Analyzer is not automatic**: You must create an analyzer and review findings regularly. It does not block access; it only reports.
+
+## Step 6: Clean Up
+
+To avoid unnecessary charges and maintain security:
+
+- Delete the IAM user `developer-anna`.
+- Delete the group `Developers`.
+- Detach and delete the custom policy `ReadExampleBucket`.
+- Delete the role `EC2-S3-Read-Role`.
+- Remove the role from any EC2 instances.
+- Delete the Access Analyzer.
+
+```bash
+aws iam remove-user-from-group --group-name Developers --user-name developer-anna
+aws iam delete-user --user-name developer-anna
+aws iam detach-group-policy --group-name Developers --policy-arn arn:aws:iam::123456789012:policy/ReadExampleBucket
+aws iam delete-group --group-name Developers
+aws iam detach-role-policy --role-name EC2-S3-Read-Role --policy-arn arn:aws:iam::123456789012:policy/ReadExampleBucket
+aws iam delete-role --role-name EC2-S3-Read-Role
+aws iam delete-policy --policy-arn arn:aws:iam::123456789012:policy/ReadExampleBucket
+```
+
+> [!Tip]
+> **Clean up after labs**: Leaving unused IAM users, roles, and policies increases security risk and can lead to confusion. Always clean up sandbox resources.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Describe the steps to create an IAM user and add them to a group.
+2. Write a JSON policy that allows read-only access to a specific S3 bucket.
+3. Explain how to create an IAM role for an EC2 instance and attach it.
+4. Describe how to test IAM permissions using the policy simulator.
+5. Explain the purpose of IAM Access Analyzer and how to use it.
+6. List the cleanup steps after an IAM practical exercise.
+
+### Scenario Questions
+
+**Scenario 1: Onboarding a New Developer**
+A new developer joins the team. They need console access and read-only permissions to S3 and EC2. Outline the steps.
+
+- Create a group `Developers` with policies `AmazonS3ReadOnlyAccess` and `AmazonEC2ReadOnlyAccess`.
+- Create an IAM user for the developer.
+- Add the user to the group.
+- Enforce MFA and provide console sign-in URL.
+
+**Scenario 2: EC2 Access to S3**
+An application running on EC2 needs to write logs to an S3 bucket. How do you grant access?
+
+- Create an IAM role with a policy allowing `s3:PutObject` on the log bucket.
+- Attach the role to the EC2 instance profile.
+- The application uses the instance metadata service to obtain temporary credentials.
+
+**Scenario 3: Cross-Account Access**
+A partner company needs to read from your S3 bucket. How do you grant access securely?
+
+- Create a role in your account that trusts the partner's AWS account.
+- Grant the partner permission to assume the role.
+- Alternatively, add a bucket policy that allows the partner's account.
+- Use least privilege and monitor with CloudTrail.
+
+```mermaid
+flowchart TD
+    A[Start IAM Practical] --> B[Create User and Group]
+    B --> C[Create Custom Policy]
+    C --> D[Attach Policy to Group]
+    D --> E[Create Role for EC2]
+    E --> F[Attach Role to Instance]
+    F --> G[Test Permissions]
+    G --> H[Use Access Analyzer]
+    H --> I[Clean Up]
+```
+
+## Key Takeaways
+
+- IAM practical tasks include creating users, groups, policies, and roles.
+- Use groups to manage permissions for human users.
+- Write custom policies in JSON to follow least privilege.
+- Create roles for AWS services like EC2 to avoid long-term access keys.
+- Test permissions using the console, CLI, and IAM Policy Simulator.
+- Use IAM Access Analyzer to find external access and validate policies.
+- Always clean up unused IAM resources after labs.
+- The practical demonstration reinforces the theory from Lesson 2.
+- Hands-on practice is essential for IAM proficiency.
+
+> [!Important]
+> **Practice in a sandbox**: IAM mistakes can lock you out or expose resources. Always practice in a non-production account, use least privilege, and clean up afterwards.
