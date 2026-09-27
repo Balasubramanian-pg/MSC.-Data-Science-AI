@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 4: Real-Time Use Case - Stock Market
 
 Real-Time Use Case: Stock Market Ticker Pipeline:
@@ -23,4 +22,29 @@ System Architecture:
 Stateful Market Calculations and Windowing:
 
 - Candlestick bar generation: Tumbling windows of one minute, five minutes, or one hour group trades to calculate Open, High, Low, Close, and Volume (OHLCV) values. The open and close prices are derived from the earliest and latest trade records within the window, while high and low represent maximum and minimum trade prices.
-- Volume-Weighted Average Price: Sliding windows calculate VWAP across rolling time intervals by dividing the cumulative dollar volume of all trades by th
+- Volume-Weighted Average Price: Sliding windows calculate VWAP across rolling time intervals by dividing the cumulative dollar volume of all trades by the cumulative share volume.
+- Moving averages: Real-time streams track simple moving averages and exponential moving averages over five-minute and fifteen-minute horizons to supply inputs for automated trading algorithms.
+- Volatility alerts: Stateful anomaly filters trigger real-time alerts when a stock price moves beyond a defined percentage threshold within a thirty-second rolling window.
+
+Time Semantics and Watermarking in Trading Feeds:
+
+- Event time prioritization: Stock calculations must rely strictly on the exchange execution timestamp rather than consumer ingestion or system processing timestamps.
+- Network jitter and delay: Disparate network routes between exchanges and data centers cause trade records to arrive out of chronological order.
+- Watermark configuration: Stream engines define watermarks, such as five seconds, to instruct the engine to hold open window aggregations for late-arriving trade records before closing the window and writing to sinks.
+- Handling expired records: Ticks arriving after the watermark threshold expires are rejected from primary candlestick aggregations and routed to a dedicated late-trade reconciliation log for auditing.
+- Important: In stock market streaming, partitioning strictly by ticker symbol is critical because global multi-ticker ordering cannot be maintained across a distributed cluster.
+
+Durability and High-Availability Engineering:
+
+- Lossless producer settings: Kafka producers transmitting trade events use acks set to all, enable idempotent transmission, and use high retry counts to prevent dropped or duplicate trade signals.
+- Checkpoint persistence: Streaming engines store offset checkpoints and window state stores in high-performance cloud object storage or distributed file systems to enable fast failover without losing intermediate calculations.
+- Consumer lag monitoring: Trading operations monitor consumer lag metrics continuously. Growing lag triggers automated horizontal scaling of consumer pods to prevent analytical latency from exceeding trading service level agreements.
+
+Key Takeaways:
+
+- Stock market streaming requires low latency, fault tolerance, and guaranteed message ordering per asset.
+- Partitioning Kafka topics by ticker symbol ensures that all events for a specific stock are processed sequentially.
+- Tumbling windows aggregate raw trade ticks into standard OHLCV financial candlestick bars.
+- Sliding windows compute continuous technical indicators such as rolling moving averages and Volume-Weighted Average Price.
+- Event-time processing and watermarking allow stream engines to process delayed trades accurately while bounding intermediate memory state.
+- Enterprise setups pair fast in-memory caches for real-time dashboards with durable columnar lakehouses for long-term quantitative backtesting.
