@@ -1,6 +1,8 @@
-# Migration in progress
 # Lesson 2: Medallion Architecture
 
 Initial directory setup.
 
-## Over
+## Overview
+- Module resources and notes will be added here.
+
+Status: Active
