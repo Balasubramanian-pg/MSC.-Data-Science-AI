@@ -1,4 +1,3 @@
-# Migration in progress
 # W08: Convolutional Neural Networks
 ## Convolutional Neural Networks: Architectural Foundations and Mechanics
 
@@ -123,4 +122,112 @@ Convolutional Neural Networks (CNNs) represent a foundational class of deep arch
 ### Theoretical Versus Effective Receptive Fields
 
 - The **Theoretical Receptive Field (TRF)** defines the spatial diameter of the input image patch that can mathematically influence a specific neuron in a downstream feature map.
-- The **Effective Receptive Field (ERF)** describes the 
+- The **Effective Receptive Field (ERF)** describes the true operational region that significantly influences the neuron's output activation.
+- David Luo et al. (2016) proved that the effective receptive field occupies only a central fraction of the theoretical receptive field, decaying outward following a two-dimensional **Gaussian distribution**:
+  $$\text{Influence}(x, y) \propto \exp\left( -\frac{(x - x_0)^2 + (y - y_0)^2}{2\sigma_{\text{eff}}^2} \right)$$
+- The effective receptive field expands with network depth, but grows at a slower rate than the theoretical boundary unless explicit architectural techniques are used.
+
+### The Efficiency of Factorized $3 \times 3$ Convolutions
+
+- Visual Geometry Group (VGGNet, 2014) demonstrated that stacking small $3 \times 3$ filters is strictly superior to using large spatial filters (such as $5 \times 5$ or $7 \times 7$).
+- **Receptive Field Equivalence:** Stacking two consecutive $3 \times 3$ convolutional layers (stride 1) covers a theoretical receptive field equivalent to a single $5 \times 5$ layer:
+  $$\text{Layer 1: } 3 \times 3 \longrightarrow \text{Layer 2: } 3 + (3 - 1) = 5 \times 5$$
+  Stacking three $3 \times 3$ layers covers an effective receptive field of $7 \times 7$.
+- **Parameter Savings:** Comparing two stacked $3 \times 3$ layers with $C$ channels against a single $5 \times 5$ layer reveals significant parameter reductions:
+  $$P_{\text{stacked}} = 2 \times (C \times C \times 3 \times 3) = 18 C^2$$
+  $$P_{\text{single}} = 1 \times (C \times C \times 5 \times 5) = 25 C^2$$
+  $$\text{Ratio} = \frac{18 C^2}{25 C^2} = 0.72 \quad (\mathbf{28\% \text{ parameter reduction}})$$
+- Stacking factorized $3 \times 3$ filters introduces multiple intermediate non-linear activation functions (two ReLUs instead of one), increasing discriminative representational capacity while lowering parameter count.
+
+### Recursive Receptive Field Calculation
+
+- The theoretical receptive field $RF_l$ of layer $l$ calculates recursively from earlier layers using kernel size $K_l$ and accumulated stride:
+  $$RF_l = RF_{l-1} + (K_l - 1) \cdot J_{l-1}$$
+  where $RF_0 = 1$, and $J_l$ denotes the **cumulative jump (stride)** of the feature map:
+  $$J_l = J_{l-1} \cdot S_l \quad (\text{with } J_0 = 1)$$
+- Downsampling layers (strided convolutions and pooling) scale the cumulative jump $J$, accelerating receptive field expansion across subsequent layers.
+
+> [!Important]
+> **Stacking small kernels beats large kernels**: two consecutive $3 \times 3$ convolutions provide the identical $5 \times 5$ receptive field as a single large filter, but use 28% fewer parameters and incorporate an additional non-linear activation.
+
+## Specialized Convolutional Operators
+
+### $1 \times 1$ Convolutions for Cross-Channel Projection
+
+- Introduced in Network-in-Network and popularized by GoogLeNet (Inception), a **$1 \times 1$ convolution** operates across a spatial receptive field of a single pixel ($K_h = 1, K_w = 1$).
+- A $1 \times 1$ convolution acts as a coordinate-wise **cross-channel linear projection** followed by a non-linear activation:
+  $$Z_k(i, j) = \sum_{c=1}^{C_{\text{in}}} X_c(i, j) W_k(c) + b_k$$
+- **Primary Operational Roles:**
+  - **Dimensionality Reduction (Channel Pooling):** Compresses high channel counts (e.g., $512 \to 64$) before executing computationally expensive $3 \times 3$ or $5 \times 5$ spatial convolutions.
+  - **Dimensionality Expansion:** Expands channel depth (e.g., $64 \to 256$) after spatial operations to increase representational capacity.
+  - **Inexpensive Non-Linearity:** Adds extra non-linear activation stages without altering spatial resolution.
+
+### Dilated (Atrous) Convolutions for Receptive Field Expansion
+
+- **Dilated (Atrous) convolutions** insert spaces into the kernel, inflating its spatial footprint without adding parameters.
+- A kernel with dilation rate $d$ spaces its tap elements $d$ units apart:
+  $$S(i, j) = \sum_{m} \sum_{n} I(i + m \cdot d, \; j + n \cdot d) K(m, n)$$
+- The effective kernel size $K_{\text{eff}}$ expands according to:
+  $$K_{\text{eff}} = K + (K - 1)(d - 1)$$
+  A $3 \times 3$ kernel with dilation rate $d = 2$ covers a $5 \times 5$ spatial receptive field, while using only 9 learnable parameters.
+- Dilated convolutions are essential in semantic segmentation (e.g., DeepLab) and audio synthesis (e.g., WaveNet), expanding receptive fields over large contexts without downsampling spatial resolution via pooling.
+
+### Depthwise Separable Convolutions in Mobile Architectures
+
+- Introduced in Xception (François Chollet, 2017) and MobileNet (Andrew Howard et al., 2017), **Depthwise Separable Convolutions** factorize standard convolution into two independent stages:
+  1. **Depthwise Convolution:** Applies a single spatial filter ($K \times K$) per input channel independently without cross-channel interaction:
+     $$\text{Params}_{\text{DW}} = C_{\text{in}} \times K \times K$$
+  2. **Pointwise Convolution:** Applies a standard $1 \times 1$ convolution to mix channels linearly across the depthwise outputs:
+     $$\text{Params}_{\text{PW}} = C_{\text{in}} \times C_{\text{out}} \times 1 \times 1$$
+- **Computational Efficiency:** Comparing depthwise separable convolution against standard convolution reveals dramatic parameter and FLOP reductions:
+  $$\text{Ratio} = \frac{C_{\text{in}} \cdot K^2 + C_{\text{in}} \cdot C_{\text{out}}}{C_{\text{in}} \cdot C_{\text{out}} \cdot K^2} = \frac{1}{C_{\text{out}}} + \frac{1}{K^2}$$
+- For $3 \times 3$ filters ($K=3$) and large channel counts ($C_{\text{out}} \gg 1$), depthwise separable convolutions require approximately **$\frac{1}{9}$ ($\approx 11\%$) of the compute and parameters** of standard convolutions with minimal accuracy loss.
+
+### Transposed Convolutions for Learned Upsampling
+
+- While pooling downsamples spatial grids, dense prediction tasks (semantic segmentation, super-resolution, autoencoders) require spatial upsampling.
+- A **Transposed Convolution** (fractionally strided convolution) reverses forward and backward passes, mapping a low-resolution feature map to a higher-resolution output grid.
+- Transposed convolutions distribute each input pixel across a weighted kernel footprint on the output grid, learning optimal spatial interpolation weights through backpropagation rather than relying on bilinear upsampling.
+
+> [!Tip]
+> **Depthwise separable convolutions reduce compute by nearly 90%**: decoupling spatial filtering from cross-channel mixing allows mobile architectures to achieve near-standard accuracy with a fraction of the parameters.
+
+## Landmark CNN Architectural Evolution
+
+| Architecture Landmark | Input Resolution | Parameter Count | Core Algorithmic Innovation | Structural Downsampling Strategy | Primary Architectural Milestone |
+|---|---|---|---|---|---|
+| **LeNet-5 (1998)** | $32 \times 32 \times 1$ | $\approx 60\text{ K}$ | Convolution + Average Pooling + Tanh | $2 \times 2$ Average Pooling | Commercialized automated handwritten digit check reading |
+| **AlexNet (2012)** | $224 \times 224 \times 3$ | $\approx 62\text{ M}$ | ReLU, Inverted Dropout, Dual-GPU pipeline | Overlapping Max Pooling ($3 \times 3$, stride 2) | Sparked the modern deep learning revolution at ImageNet |
+| **VGG-16 (2014)** | $224 \times 224 \times 3$ | $\approx 138\text{ M}$ | Homogeneous stacks of small $3 \times 3$ convolutions | Standard $2 \times 2$ Max Pooling (stride 2) | Proved that architectural depth and small filters improve representations |
+| **GoogLeNet (2014)** | $224 \times 224 \times 3$ | $\approx 7\text{ M}$ | Inception modules, $1 \times 1$ bottlenecks, Global Avg Pooling | Strided pooling inside parallel branches | Eliminated dense classification heads; reduced parameters by $90\%$ vs AlexNet |
+| **ResNet-50 (2015)** | $224 \times 224 \times 3$ | $\approx 25.6\text{ M}$ | Residual skip connections ($F(x) + x$), Bottleneck blocks | Strided convolutions ($S=2$) within residual blocks | Solved vanishing gradients; enabled training of networks over 100 layers deep |
+| **MobileNetV2 (2018)**| $224 \times 224 \times 3$ | $\approx 3.4\text{ M}$ | Inverted residual blocks, Linear bottlenecks | Strided depthwise convolutions | Optimized high-accuracy inference for edge mobile hardware |
+
+### Comparison of Convolutional Operator Variants
+
+| Convolutional Operator | Mathematical Mechanism | Primary Parameter Scaling | Spatial Receptive Field Effect | Primary Application Domain |
+|---|---|---|---|---|
+| **Standard 2D Conv** | Joint spatial and cross-channel integration | $O(C_{\text{out}} \cdot C_{\text{in}} \cdot K^2)$ | Standard expansion: $K \times K$ | General feature extraction in CNNs |
+| **$1 \times 1$ Projection** | Pure cross-channel linear combination | $O(C_{\text{out}} \cdot C_{\text{in}})$ | Spatial size invariant ($1 \times 1$) | Dimensionality reduction; Inception bottlenecks |
+| **Dilated (Atrous)** | Strided kernel indexing with holes ($d$) | $O(C_{\text{out}} \cdot C_{\text{in}} \cdot K^2)$ | Rapid expansion: $K + (K-1)(d-1)$ | Semantic segmentation; audio synthesis |
+| **Depthwise Separable** | Decoupled spatial filtering + $1 \times 1$ mixing | $O(C_{\text{in}} \cdot K^2 + C_{\text{in}} \cdot C_{\text{out}})$ | Standard expansion ($K \times K$) | Mobile and edge-deployed networks |
+| **Transposed Conv** | Inverted gradient backward pass mapping | $O(C_{\text{out}} \cdot C_{\text{in}} \cdot K^2)$ | Upsamples spatial resolution ($H \uparrow, W \uparrow$) | Generative autoencoders; super-resolution |
+
+> [!Important]
+> **Architectural evolution moved from brute force to structural efficiency**: modern architectures replace massive parameters with factorized $3 \times 3$ filters, $1 \times 1$ channel bottlenecks, depthwise separable blocks, and residual skip connections.
+
+## Key Takeaways
+
+- **Fully connected layers fail on spatial data** due to combinatorial parameter explosion and the destruction of local spatial coordinates.
+- **Sparse connectivity and parameter sharing** act as structural inductive biases, enabling translation equivariance while slashing parameter counts.
+- **Deep learning implements cross-correlation**, omitting the mathematical kernel-flipping step because backpropagation learns unconstrained filter orientations directly.
+- **Output spatial dimensions** depend on input size, kernel diameter, padding, and stride: $H_{\text{out}} = \lfloor \frac{H - K + 2P}{S} \rfloor + 1$.
+- **Convolutional parameter counts depend on channel depth and kernel size**, remaining invariant to the spatial resolution of input images.
+- **Max pooling introduces local translation invariance**, reducing spatial dimensions without adding learnable parameters.
+- **Global Average Pooling replaces dense classification heads**, removing millions of parameters and enabling models to process variable-resolution inputs.
+- **Stacking factorized $3 \times 3$ convolutions** matches the receptive field of large filters while using significantly fewer parameters and incorporating additional non-linear activations.
+- **$1 \times 1$ convolutions perform cross-channel projections**, enabling dimensionality reduction and bottleneck blocks that preserve computational efficiency.
+- **Depthwise separable convolutions decouple spatial filtering from channel mixing**, reducing computation and parameter requirements by nearly 90%.
+
+> [!Tip]
+> The defining principle of convolutional architectures: **spatial locality and weight sharing construct scalable vision models**; replacing dense matrices with localized tensor kernels preserves spatial coordinates, enforces translation equivariance, and enables deep networks to process visual inputs efficiently.
