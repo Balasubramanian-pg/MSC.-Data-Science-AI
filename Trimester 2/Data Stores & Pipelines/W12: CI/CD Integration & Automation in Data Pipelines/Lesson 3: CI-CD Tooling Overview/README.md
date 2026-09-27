@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 3: CI/CD Tooling Overview
 
 CI-CD Tooling Overview:
@@ -26,4 +25,33 @@ Containerization and Ephemeral Environments:
 
 Data Transformation and Analytics CI-CD Tools:
 
-- dbt Core and dbt Cloud: Coordinates SQL transformations natively inside cloud data warehouses. In CI environments, dbt compiles code, executes automated s
+- dbt Core and dbt Cloud: Coordinates SQL transformations natively inside cloud data warehouses. In CI environments, dbt compiles code, executes automated schema tests, and generates column-level documentation.
+- dbt Slim CI: An optimization technique that compares the current pull request branch against the production manifest file to identify and test only the modified models and their immediate downstream dependencies, significantly reducing cloud compute costs and build times.
+- Sqlfluff: A dialect-aware SQL linter that parses transformation models to enforce consistent syntax, keyword formatting, and column aliasing rules across engineering teams.
+
+Database Migration and Schema Management Tools:
+
+- Flyway: An open-source database migration tool that applies version-controlled plain SQL migration scripts sequentially, recording applied versions in a schema history metadata table.
+- Liquibase: An enterprise database change management platform supporting SQL, XML, and YAML formats, providing automated schema rollback capabilities and database drift detection.
+- Alembic: A lightweight database migration tool written for Python environments, commonly used alongside SQLAlchemy to manage relational database schema evolutions.
+
+Infrastructure as Code and Secret Governance:
+
+- Terraform: A declarative infrastructure orchestration tool that provisions cloud object stores, analytical warehouses, Kafka topics, and IAM security roles across multiple cloud providers.
+- Secret Management Platforms: Tools such as HashiCorp Vault, AWS Secrets Manager, and GitHub Secrets encrypt private keys, database passwords, and API tokens, injecting them securely into CI runners at runtime.
+- Important: Running full analytical pipelines inside continuous integration can cause massive cloud warehouse bills; data teams must use mock datasets, sample extracts, or Slim CI patterns to keep automated testing costs low.
+
+Tool Selection Criteria:
+
+- Hosting model: Organizations evaluate whether security compliance mandates self-hosted runners behind private firewalls or permits cloud-managed runners like GitHub Actions.
+- Compute cost management: Selected tools must support targeted testing, caching, and state comparison to prevent wasteful queries against production data stores.
+- Skill set alignment: Engineering teams prioritize declarative YAML configurations or Python-based tooling to match the technical capabilities of data engineers and analytics engineers.
+
+Key Takeaways:
+
+- Modern DataOps relies on a specialized ecosystem of version control, CI runners, containerization engines, and migration tools.
+- GitHub Actions and GitLab CI provide declarative, event-driven automation for testing and deploying pipeline code.
+- Testcontainers enable realistic integration testing by spinning up temporary, isolated database instances during CI runs.
+- Techniques like dbt Slim CI dramatically lower execution costs by testing only modified transformation models during pull request evaluations.
+- Tools like Flyway, Liquibase, and Alembic manage database schema migrations through versioned, auditable scripts.
+- Infrastructure as Code and encrypted secret managers ensure reproducible, secure deployments across development, staging, and production tiers.
