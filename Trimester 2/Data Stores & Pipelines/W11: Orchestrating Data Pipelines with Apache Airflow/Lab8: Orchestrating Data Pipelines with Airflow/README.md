@@ -1,4 +1,3 @@
-# Migration in progress
 # Lab8: Orchestrating Data Pipelines with Airflow
 
 Lab 8: Orchestrating Data Pipelines with Airflow:
@@ -37,4 +36,42 @@ Step 3: Implementing Pipeline Tasks:
 - Extraction task: Use a PythonOperator to read the raw input file, check schema conformity, drop duplicate rows, and write a sanitized staging file to disk.
 - Validation task: Define a data quality check that verifies the staging file contains more than zero records and ensures critical identifier columns contain no null values.
 - Transformation task: Aggregate user activity by region and date, computing metrics like total transaction counts and average purchase amounts.
-- Loading task: Use a BashOperator or database operator to load the final aggregated
+- Loading task: Use a BashOperator or database operator to load the final aggregated dataset into a persistent analytical database table or partitioned Parquet store.
+
+Step 4: Defining Dependencies and Workflow Structure:
+
+- Chain tasks together using the Python bitshift right operator (>>) to define explicit execution sequences.
+- Establish linear sequences where extraction follows the sensor check, validation follows extraction, and transformation follows validation.
+- Configure parallel execution by setting multiple independent downstream tasks to execute simultaneously following a shared upstream task.
+- Ensure that the final load task depends on all parallel upstream transformation tasks completing successfully.
+
+Step 5: Metadata Sharing with XComs:
+
+- Configure the extraction task to return a small dictionary containing the generated staging file path and the total record count.
+- In the downstream validation task, retrieve the output metadata using the task instance xcom_pull method.
+- Use the pulled row count value within validation assertions to verify expected record thresholds.
+- Important: Do not use XComs to pass entire DataFrames, large files, or heavy binary arrays, because doing so overloads the relational metadata database.
+
+Step 6: Testing and Execution Monitoring:
+
+- Run the airflow dags list command to verify that the scheduler parsed the script without encountering syntax or import errors.
+- Test individual task logic in isolation using the airflow tasks test command, specifying the DAG identifier, task identifier, and a target logical execution date.
+- Navigate to the Airflow web interface to locate the custom DAG in the dashboard list.
+- Unpause the DAG toggle switch and manually trigger a new execution run.
+- Inspect the Grid view and Graph view to watch task statuses transition from queued to running and finally to success.
+- Click on individual task instances and open the task logs to inspect stdout print messages, timing metrics, and debugging traces.
+
+Troubleshooting Common Pipeline Errors:
+
+- Broken DAG import errors: Often caused by missing third-party Python packages, invalid file paths, or circular dependency declarations.
+- Parsing delays: Avoid placing slow operations like API calls, database connections, or file reads outside of task functions. Code placed at the top level of a DAG file executes on every scheduler parse cycle, slowing down the entire system.
+- Timezone confusion: Airflow schedules and timestamps execute natively in coordinated universal time (UTC), meaning scheduled runs must be calculated relative to UTC rather than local workstation time.
+
+Key Takeaways:
+
+- Apache Airflow structures automated data pipelines into Directed Acyclic Graphs managed as standard Python code.
+- Tasks are defined using operators for computation and sensors for event waiting, connected by bitshift dependency operators.
+- XComs provide lightweight inter-task communication for sharing operational metadata like record counts and storage paths.
+- Running task-level CLI tests allows engineers to debug logic quickly without executing full DAG pipelines.
+- Top-level code execution inside DAG scripts must be avoided to ensure fast scheduler performance and prevent cluster slowdowns.
+- The Airflow web interface provides centralized visibility into task run states, execution logs, and pipeline failure diagnosis.
