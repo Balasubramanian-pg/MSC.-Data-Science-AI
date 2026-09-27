@@ -1,4 +1,3 @@
-# Migration in progress
 # W09: Sequence Models
 
 ## Sequence Models and Recurrent Architectures
@@ -153,4 +152,148 @@ flowchart TD
 - If the network learns to keep the forget gate open ($f_j \approx 1.0$), the gradient flows backward across arbitrary temporal distances without exponential decay, eliminating the vanishing gradient problem.
 
 > [!Important]
-> **Additiv
+> **Additive cell states eliminate vanishing gradients**: because the cell state updates linearly ($c_t = f_t \odot c_{t-1} + i_t \odot \tilde{c}_t$), the backward gradient derivative is scaled directly by the forget gate $f_t$, preserving error signals across hundreds of steps.
+
+## Computational Streamlining: Gated Recurrent Units
+
+### Merging Hidden and Cell States
+
+- Proposed by Kyunghyun Cho et al. (2014), the **Gated Recurrent Unit (GRU)** streamlines the LSTM architecture by merging the cell state and hidden state into a single representation vector $h_t \in \mathbb{R}^H$.
+- The GRU removes the separate memory conveyor belt, retaining gated control while reducing structural complexity and memory footprint.
+
+### Reset and Update Gate Mechanics
+
+- The GRU regulates information flow using two internal gates:
+  1. **Reset Gate ($r_t$):** Determines how much of the previous hidden state to ignore when computing candidate activations:
+     $$r_t = \sigma(W_r \cdot [h_{t-1}, x_t] + b_r)$$
+  2. **Update Gate ($z_t$):** Acts simultaneously as a forget gate and an input gate, balancing past memory retention against new candidate integration:
+     $$z_t = \sigma(W_z \cdot [h_{t-1}, x_t] + b_z)$$
+  3. **Candidate Hidden State ($\tilde{h}_t$):** Uses the reset gate to selectively forget historical context:
+     $$\tilde{h}_t = \tanh(W \cdot [r_t \odot h_{t-1}, \; x_t] + b)$$
+  4. **Hidden State Interpolation ($h_t$):** Executes a convex linear combination between the previous state and the candidate state:
+     $$h_t = (1 - z_t) \odot h_{t-1} + z_t \odot \tilde{h}_t$$
+
+```mermaid
+flowchart TD
+    subgraph GRUCell["GRU Cell Operations at Time t"]
+        H_prev["h_{t-1}"] --> Concat["Concatenate [h_{t-1}, x_t]"]
+        X_curr["x_t"] --> Concat
+        
+        Concat --> R_Gate["Reset Gate: r_t = σ(...)"]
+        Concat --> Z_Gate["Update Gate: z_t = σ(...)"]
+        
+        H_prev --> R_Mul(("r_t ⊙ h_{t-1}"))
+        R_Gate --> R_Mul
+        
+        R_Mul --> Cand_In["[r_t ⊙ h_{t-1}, x_t]"]
+        X_curr --> Cand_In
+        Cand_In --> Cand["Candidate: h~_t = tanh(...)"]
+        
+        H_prev --> Interp1(("(1 - z_t) ⊙ h_{t-1}"))
+        Z_Gate --> Neg["(1 - z_t)"]
+        Neg --> Interp1
+        
+        Cand --> Interp2(("z_t ⊙ h~_t"))
+        Z_Gate --> Interp2
+        
+        Interp1 --> Add(("Additive Sum"))
+        Interp2 --> Add
+        Add --> H_curr["h_t"]
+    end
+```
+
+### Parameter and Computational Efficiency Versus LSTM
+
+- An LSTM block contains four parameterized linear projections ($W_f, W_i, W_c, W_o$), allocating $4 \times (H \cdot (D + H + 1))$ parameters.
+- A GRU block contains three parameterized linear projections ($W_r, W_z, W$), allocating $3 \times (H \cdot (D + H + 1))$ parameters.
+- The GRU achieves an exact **25% reduction in parameter count** relative to an LSTM with identical hidden dimensions, accelerating forward and backward passes while requiring less memory to store intermediate activations.
+
+> [!Tip]
+> **GRUs achieve 25% parameter savings**: combining forget and input operations into a coupled update gate ($z_t$) allows GRUs to match LSTM long-range accuracy while training faster on small to medium datasets.
+
+## Advanced Sequential Topologies
+
+### Bidirectional Recurrent Networks (BiRNNs)
+
+- Standard unidirectional recurrent models process sequences chronologically ($t = 1 \to T$), meaning hidden state $h_t$ contains context strictly from the past: $x_1, \dots, x_t$.
+- In tasks like speech transcription, named entity recognition, and protein sequencing, the semantic meaning of token $t$ depends equally on subsequent future tokens ($x_{t+1}, \dots, x_T$).
+- **Bidirectional Recurrent Neural Networks (BiRNNs)** process inputs through two independent recurrent hidden layers running in opposite directions:
+  - **Forward Recurrent Pass:** Computes $\vec{h}_t = \text{RNN}_{\text{fwd}}(x_t, \vec{h}_{t-1})$ from $t = 1$ to $T$.
+  - **Backward Recurrent Pass:** Computes $\overleftarrow{h}_t = \text{RNN}_{\text{bwd}}(x_t, \overleftarrow{h}_{t+1})$ from $t = T$ to $1$.
+- The final representation concatenates both directional states at each time step:
+  $$h_t^{\text{bi}} = \left[ \vec{h}_t \; ; \; \overleftarrow{h}_t \right] \in \mathbb{R}^{2H}$$
+
+### Deep Stacked Recurrent Networks
+
+- While standard recurrent models unroll across time, they remain shallow along the vertical spatial dimension ($L=1$).
+- **Deep (Stacked) RNNs** place multiple recurrent layers vertically: the hidden sequence $h^{[1]} = (h_1^{[1]}, \dots, h_T^{[1]})$ generated by layer 1 serves as the input sequence for layer 2:
+  $$h_t^{[l]} = \text{RNN}^{[l]}\left( h_t^{[l-1]}, \; h_{t-1}^{[l]} \right)$$
+- Stacking layers allows early recurrent stages to extract low-level temporal features (such as acoustic pitches or phonemes), while deeper layers capture abstract semantic context.
+- Stacking beyond 3 to 4 recurrent layers exacerbates vanishing gradients along the vertical axis, requiring residual connections between stacked recurrent tiers.
+
+### The Sequence-to-Sequence Encoder-Decoder Architecture
+
+- Developed by Ilya Sutskever et al. and Kyunghyun Cho et al. (2014), the **Sequence-to-Sequence (Seq2Seq)** framework maps an input sequence of length $T_x$ to an output sequence of different length $T_y$.
+- **The Encoder:** Processes input sequence $(x_1, \dots, x_{T_x})$ sequentially, discarding step-wise outputs and retaining the final hidden state $h_{T_x}$ as a fixed-length **context vector** $c$:
+  $$c = h_{T_x}^{\text{enc}}$$
+- **The Decoder:** An independent recurrent network initialized with context vector $h_0^{\text{dec}} = c$. The decoder generates the output sequence $(y_1, \dots, y_{T_y})$ autoregressively, feeding its own previous prediction $\hat{y}_{t-1}$ as the input for time step $t$.
+
+```mermaid
+flowchart LR
+    subgraph Encoder["Encoder (Consumes Source: Length T_x)"]
+        x1["x_1"] --> e1["h_1"]
+        x2["x_2"] --> e2["h_2"]
+        e1 --> e2
+        x3["x_3"] --> e3["h_3"]
+        e2 --> e3
+    end
+    
+    subgraph Context["Context Bottleneck"]
+        e3 -- "c = h_3" --> d0["h_0^dec"]
+    end
+    
+    subgraph Decoder["Decoder (Generates Target: Length T_y)"]
+        d0 --> d1["s_1"]
+        start["<SOS>"] --> d1
+        d1 --> y1["y_1"]
+        
+        y1 --> d2["s_2"]
+        d1 --> d2
+        d2 --> y2["y_2"]
+    end
+```
+
+### The Fixed-Length Information Bottleneck
+
+- The standard Seq2Seq architecture forces the encoder to compress an arbitrary-length input sequence into a solitary, fixed-size vector $c \in \mathbb{R}^H$.
+- As input sequences exceed 20 to 30 tokens, the context vector encounters an **information bottleneck**, overflowing its representational capacity and causing translation accuracy to degrade sharply.
+- This fundamental bottleneck exposed the limits of fixed-vector recurrent representations, prompting the development of the **Attention Mechanism**.
+
+> [!Tip]
+> **The Seq2Seq bottleneck motivated attention**: forcing an entire sequence into a single fixed vector $c$ causes catastrophic information loss on long sequences, setting the stage for attention-based alignment.
+
+## Comparative Matrix of Recurrent Architectures
+
+| Recurrent Architecture | Memory State Representation | Gating Primitives | Parameter Scaling Count | Gradient Flow Mechanism | Primary Operational Advantage |
+|---|---|---|---|---|---|
+| **Vanilla RNN** | Solitary hidden state: $h_t \in \mathbb{R}^H$ | None (static affine transformation) | $H \cdot (D + H + 1)$ | Repeated multiplicative transition ($W_{hh}^T$) | Minimal compute and parameters; fast on short contexts |
+| **LSTM** | Dual state: Hidden $h_t$ + Cell $c_t$ | Three gates: Forget ($f_t$), Input ($i_t$), Output ($o_t$) | $4 \times H \cdot (D + H + 1)$ | Additive linear cell highway ($c_t = f_t \odot c_{t-1} + \dots$) | Eliminates vanishing gradients; models 100+ time steps |
+| **GRU** | Solitary hidden state: $h_t \in \mathbb{R}^H$ | Two gates: Reset ($r_t$), Update ($z_t$) | $3 \times H \cdot (D + H + 1)$ | Coupled convex interpolation ($h_t = (1-z_t)h_{t-1} + z_t\tilde{h}_t$) | 25% fewer parameters than LSTM; faster training convergence |
+| **Bidirectional LSTM** | Dual directional hidden states: $[\vec{h}_t ; \overleftarrow{h}_t]$ | Forward and backward LSTM cell banks | $2 \times \text{Params}_{\text{LSTM}}$ | Dual independent additive cell state highways | Accesses past and future temporal context simultaneously |
+
+> [!Important]
+> **Select recurrent models based on temporal depth**: use GRUs for faster convergence on medium-length sequences, LSTMs for complex long-range dependencies, and Bidirectional variants when full sequence context is available.
+
+## Key Takeaways
+
+- **Recurrent models process variable-length sequences** by applying shared weight transformations across time steps while maintaining an internal hidden memory vector.
+- **Vanilla RNNs suffer from vanishing gradients** caused by compounding multiplications across the recurrent transition matrix ($W_{hh}^T$), limiting their effective memory to short sequences.
+- **LSTMs solve vanishing gradients using an additive cell state** ($c_t$), which acts as a linear conveyor belt governed by forget, input, and output gates.
+- **The constant error carousel in LSTMs** ensures that when forget gates remain open ($f_t \approx 1.0$), backpropagated error signals travel across hundreds of steps without exponential decay.
+- **GRUs streamline the LSTM cell by 25%**, merging the cell and hidden states into a single vector governed by coupled reset and update gates.
+- **Bidirectional RNNs process sequences in forward and backward directions concurrently**, providing downstream layers with simultaneous past and future temporal context.
+- **Deep stacked RNNs scale representational capacity vertically**, passing hidden sequences through multiple hierarchical recurrent layers.
+- **The Seq2Seq encoder-decoder bottleneck** compresses entire input sequences into a single fixed-length vector, causing performance degradation on long sequences and motivating the attention mechanism.
+
+> [!Tip]
+> The foundational principle of recurrent sequence modeling: **linear additive state updates preserve long-range gradients**; while multiplicative recurrent projections cause exponential signal collapse, gating mechanisms allow neural networks to regulate and preserve temporal dependencies across extended horizons.
