@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 5: Use Case - Retail Banking Pipeline
 
 Use Case: Retail Banking Pipeline:
@@ -23,4 +22,28 @@ Transformation and Data Cleaning Steps:
 Data Quality Gates and Assertions:
 
 - Gate 1 Ingestion Check: Validates schema conformity upon arrival. Any payload missing critical mandatory attributes such as transaction identifier, posting date, or account key triggers immediate routing away from primary processing.
-- Gate 2 Busi
+- Gate 2 Business Rule Assertions: Confirms that transaction amounts are non-zero, currency codes match valid international standards, and transaction types align with approved banking taxonomies.
+- Gate 3 Referential Integrity: Verifies that account numbers attached to incoming debits and credits exist within the active customer master ledger.
+- Gate 4 Financial Reconciliation: Calculates batch-level summary totals and compares them directly against source ledger control files. Discrepancies between total debits and credits trigger an alert before ledger consolidation.
+- Important: In banking systems, automated quality gates must be deterministic and fully auditable to satisfy statutory regulatory mandates.
+
+Quarantine Strategy and Dead-Letter Handling:
+
+- Transactions failing any validation check do not crash the primary pipeline; instead, they route immediately into an isolated quarantine repository or dead-letter queue.
+- Quarantined records preserve the unparsed raw payload, capture the exact timestamp of arrival, and append specific error codes explaining why validation failed.
+- Clean transactions proceed through standard processing paths to ensure that operational dashboards and analytics tables update on schedule.
+- Compliance and operations teams inspect quarantined records using specialized administrative interfaces to resolve discrepancies and initiate manual reprocessing workflows.
+
+Observability and Regulatory Compliance:
+
+- Tracking transaction volume anomalies detects upstream connection dropouts, payment gateway outages, or distributed denial-of-service attempts.
+- Ingestion freshness is tracked continuously against strict service level agreements, firing alerts if data delivery falls behind operational thresholds.
+- Lineage metadata records every transformation, masking rule, and validation gate applied to each batch, providing verifiable documentation for financial audit reviews.
+
+Key Takeaways:
+
+- Financial pipelines enforce zero-tolerance data quality standards to protect account accuracy and meet regulatory requirements.
+- Floating-point arithmetic must be avoided in favor of high-precision decimal types to prevent fractional cent calculation errors.
+- Masking sensitive personal information and tokenizing account numbers upstream ensures secure analytical usage.
+- Multi-tier validation gates verify schema structure, business domain rules, referential integrity, and end-of-day financial reconciliation.
+- Quarantine patterns isolate malformed transactions into dead-letter stores, preserving pipeline uptime while enabling forensic audit and replay.
