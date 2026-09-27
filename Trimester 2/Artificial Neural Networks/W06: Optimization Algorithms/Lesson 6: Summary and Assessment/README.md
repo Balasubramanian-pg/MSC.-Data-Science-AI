@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 6: Summary and Assessment
 ## Optimization Algorithms: Module Summary and Assessment
 
@@ -62,4 +61,119 @@ Mastering neural network optimization requires understanding how gradient vector
 
 - **Scenario A (Loss Spikes and Divergence in Transformer Training):** An engineer trains a 24-layer Transformer using AdamW in FP16 mixed precision with a constant learning rate of $\eta = 10^{-3}$. At iteration 450, the loss spikes from $2.4$ to $89.0$, followed by `NaN` values across all parameters.
   - *Diagnosis:* The absence of a learning rate warmup schedule allowed noisy, high-magnitude early gradients to pass through uncalibrated second-moment accumulators, causing an oversized step that threw parameters onto a steep error cliff. Evaluating in FP16 without dynamic loss scaling allowed small gradients to underflow to zero and large activations to overflow into `Inf`, triggering `NaN` contagion.
-  
+  - *Remedy:* Implement a linear learning rate warmup over the first 2,000 steps to allow the second moment to stabilize. Enable dynamic loss scaling to prevent half-precision underflow, apply global gradient norm clipping with a threshold of $c = 1.0$, and transition from a constant learning rate to a cosine annealing decay schedule.
+- **Scenario B (Stagnation in an Ill-Conditioned Regression Problem):** A model trained with standard mini-batch SGD on an unnormalized dataset exhibits severe training oscillation: loss values bounce between $15.0$ and $45.0$ without descending, while reducing the learning rate by a factor of 10 causes the loss to flatline at $35.0$.
+  - *Diagnosis:* The loss surface is ill-conditioned due to unnormalized input features, creating a high Hessian condition number. When the learning rate is large, updates bounce across the steep walls; when reduced, updates lack the velocity to make meaningful progress along the flat valley floor.
+  - *Remedy:* Standardize input features to zero mean and unit variance. Switch the optimizer from standard SGD to AdamW or SGD with Momentum ($\beta = 0.9$) to accumulate directional velocity along the valley floor while dampening cross-wall oscillations.
+- **Scenario C (Overfitting in a Deep Convolutional Network):** A ResNet-50 trained with Adam achieves zero training loss, but validation error plateaus at an unacceptable 18%. Inspecting the loss surface curvature reveals a large spectral norm ($\lambda_{\max}(H) = 450$).
+  - *Diagnosis:* The model has converged into a sharp minimum. Standard Adam paired with coupled $L_2$ regularization failed to enforce sufficient parameter shrinkage, allowing the model to fit high-frequency training noise that does not generalize under validation distribution shifts.
+  - *Remedy:* Transition from standard Adam to AdamW to decouple weight decay and restore true parameter regularization. Alternatively, switch to SGD with Momentum paired with a Cosine Annealing schedule, or apply Sharpness-Aware Minimization (SAM) to penalize curvature sharpness and guide parameters toward a flat basin.
+
+> [!Important]
+> **Isolate optimization failure from architectural limitations**: unstable loss spikes point to uncalibrated initial step sizes or half-precision overflow, whereas poor validation generalization from zero training error signals convergence into a sharp minimum.
+
+### Self-Assessment Technical Calculations
+
+#### Problem 1: Stepwise Adam Update Calculation with Bias Correction
+
+A neural network contains a scalar parameter $\theta$ initialized at $\theta_0 = 1.0$. The optimizer is configured with Adam using hyperparameters $\eta = 0.01$, $\beta_1 = 0.9$, $\beta_2 = 0.999$, and $\epsilon = 10^{-8}$. At step $t = 1$, the loss function produces a parameter gradient of $g_1 = 0.5$.
+
+1. Compute the uncorrected first moment $m_1$ and second moment $v_1$.
+2. Calculate the bias-corrected moments $\hat{m}_1$ and $\hat{v}_1$.
+3. Compute the parameter update displacement $\Delta \theta_1$ and the updated parameter value $\theta_1$.
+
+*Stepwise Solution:*
+1. Uncorrected Moment Accumulation:
+   - Initial states: $m_0 = 0, v_0 = 0$.
+   - Compute first moment:
+     $$m_1 = \beta_1 m_0 + (1 - \beta_1) g_1 = 0.9(0) + (1 - 0.9)(0.5) = 0.1(0.5) = \mathbf{0.05}$$
+   - Compute second uncentered moment:
+     $$v_1 = \beta_2 v_0 + (1 - \beta_2) g_1^2 = 0.999(0) + (1 - 0.999)(0.5)^2 = 0.001(0.25) = \mathbf{0.00025}$$
+2. Bias-Corrected Moments Evaluation:
+   - Compute corrected first moment:
+     $$\hat{m}_1 = \frac{m_1}{1 - \beta_1^1} = \frac{0.05}{1 - 0.9} = \frac{0.05}{0.1} = \mathbf{0.50}$$
+   - Compute corrected second moment:
+     $$\hat{v}_1 = \frac{v_1}{1 - \beta_2^1} = \frac{0.00025}{1 - 0.999} = \frac{0.00025}{0.001} = \mathbf{0.25}$$
+3. Parameter Update Step:
+   - Compute the denominator scale:
+     $$\sqrt{\hat{v}_1} + \epsilon = \sqrt{0.25} + 10^{-8} = 0.5 + 10^{-8} \approx 0.50$$
+   - Compute the parameter displacement:
+     $$\Delta \theta_1 = -\frac{\eta}{\sqrt{\hat{v}_1} + \epsilon} \hat{m}_1 = -\frac{0.01}{0.50} (0.50) = \mathbf{-0.01}$$
+   - Apply the update:
+     $$\theta_1 = \theta_0 + \Delta \theta_1 = 1.0 - 0.01 = \mathbf{0.99}$$
+*Conclusion:* On the first step, bias correction scales the uncorrected moments so that the effective update simplifies to $-\eta \cdot \text{sgn}(g_1) = -0.01$, preserving the intended step size.
+
+#### Problem 2: Cosine Annealing Learning Rate Computation
+
+A deep learning model trains over a total budget of $T_{\max} = 10,000$ iterations using a Cosine Annealing schedule preceded by a linear warmup. The schedule parameters are defined as:
+- Warmup duration: $T_{\text{warmup}} = 500$ steps
+- Peak learning rate: $\eta_{\max} = 0.001$
+- Minimum floor learning rate: $\eta_{\min} = 10^{-6}$
+
+Compute the exact learning rate $\eta_t$ at:
+1. Iteration $t = 250$ (within the warmup phase).
+2. Iteration $t = 5,250$ (within the cosine annealing phase).
+
+*Stepwise Solution:*
+1. Step Size at $t = 250$ (Warmup Phase):
+   - For $t \le T_{\text{warmup}}$, the learning rate follows linear interpolation from zero to $\eta_{\max}$:
+     $$\eta_t = \eta_{\max} \cdot \frac{t}{T_{\text{warmup}}}$$
+   - Substitute the values:
+     $$\eta_{250} = 0.001 \cdot \frac{250}{500} = 0.001 \cdot 0.5 = \mathbf{0.0005} \quad (5.0 \times 10^{-4})$$
+2. Step Size at $t = 5,250$ (Cosine Annealing Phase):
+   - For $t > T_{\text{warmup}}$, define the elapsed cosine steps $t'$ and the remaining cosine budget $T'$:
+     $$t' = t - T_{\text{warmup}} = 5250 - 500 = 4750$$
+     $$T' = T_{\max} - T_{\text{warmup}} = 10000 - 500 = 9500$$
+   - Evaluate the progress ratio across the cosine phase:
+     $$\frac{t'}{T'} = \frac{4750}{9500} = 0.5$$
+   - State the cosine annealing formula:
+     $$\eta_t = \eta_{\min} + \frac{1}{2}(\eta_{\max} - \eta_{\min}) \left( 1 + \cos\left( \frac{t'}{T'} \pi \right) \right)$$
+   - Substitute the progress ratio:
+     $$\cos(0.5 \pi) = \cos\left(\frac{\pi}{2}\right) = 0.0$$
+     $$\eta_{5250} = 10^{-6} + \frac{1}{2}(0.001 - 10^{-6})(1 + 0.0)$$
+     $$\eta_{5250} = 10^{-6} + 0.5(0.000999) = 10^{-6} + 0.0004995 = \mathbf{0.0005005}$$
+
+#### Problem 3: Sharpness-Aware Minimization (SAM) Perturbation Vector
+
+Consider a two-dimensional quadratic objective function $f(\theta_1, \theta_2) = 2 \theta_1^2 + 8 \theta_2^2$. The current parameter configuration is $\theta = [1.0, \; 0.5]^T$. The optimizer implements Sharpness-Aware Minimization with a perturbation radius of $\rho = 0.05$ and a base learning rate of $\eta = 0.1$.
+
+1. Compute the local gradient vector $\nabla f(\theta)$ and its Euclidean norm.
+2. Determine the worst-case local perturbation vector $\hat{\epsilon}$.
+3. Evaluate the gradient at the perturbed coordinate and compute the final SAM parameter update.
+
+*Stepwise Solution:*
+1. Local Gradient Evaluation:
+   - Differentiate $f$ with respect to each coordinate:
+     $$\frac{\partial f}{\partial \theta_1} = 4 \theta_1, \quad \frac{\partial f}{\partial \theta_2} = 16 \theta_2$$
+   - Substitute $\theta = [1.0, \; 0.5]^T$:
+     $$\nabla f(\theta) = [4(1.0), \; 16(0.5)]^T = \mathbf{[4.0, \; 8.0]^T}$$
+   - Compute the Euclidean norm:
+     $$\|\nabla f(\theta)\|_2 = \sqrt{(4.0)^2 + (8.0)^2} = \sqrt{16 + 64} = \sqrt{80} \approx \mathbf{8.94427}$$
+2. Perturbation Vector Calculation:
+   - The worst-case perturbation points along the normalized gradient scaled by $\rho$:
+     $$\hat{\epsilon} = \rho \frac{\nabla f(\theta)}{\|\nabla f(\theta)\|_2} = 0.05 \frac{[4.0, \; 8.0]^T}{8.94427} \approx 0.05 [0.44721, \; 0.89443]^T = \mathbf{[0.02236, \; 0.04472]^T}$$
+3. Perturbed Gradient and Parameter Update:
+   - Compute the perturbed parameter location:
+     $$\theta_{\text{adv}} = \theta + \hat{\epsilon} = [1.0 + 0.02236, \; 0.5 + 0.04472]^T = [1.02236, \; 0.54472]^T$$
+   - Evaluate the gradient at the perturbed location:
+     $$\nabla f(\theta_{\text{adv}}) = [4(1.02236), \; 16(0.54472)]^T = \mathbf{[4.08944, \; 8.71552]^T}$$
+   - Compute the SAM update step:
+     $$\theta_{\text{new}} = \theta - \eta \nabla f(\theta_{\text{adv}}) = \begin{bmatrix} 1.0 \\ 0.5 \end{bmatrix} - 0.1 \begin{bmatrix} 4.08944 \\ 8.71552 \end{bmatrix} = \begin{bmatrix} 1.0 - 0.40894 \\ 0.5 - 0.87155 \end{bmatrix} = \mathbf{\begin{bmatrix} 0.59106 \\ -0.37155 \end{bmatrix}}$$
+*Conclusion:* Evaluating the gradient at the perturbed coordinate inflates the update along the high-curvature axis ($\theta_2$), penalizing surface sharpness and pulling the parameters away from steep boundaries.
+
+> [!Tip]
+> **Algebraic verification clarifies optimizer behavior**: tracking single-step updates manually exposes how momentum buffers kinetic velocity, how Adam unbiases early moments, and how SAM penalizes curvature sharpness.
+
+## Key Takeaways
+
+- **First-order optimization** guides deep learning by moving along the negative gradient, with step sizes constrained by the maximum eigenvalue of the Hessian ($\eta < \frac{2}{\lambda_{\max}}$).
+- **Polyak momentum and Nesterov acceleration** stabilize trajectories across ill-conditioned ravines, dampening cross-wall oscillations and building speed along flat valleys.
+- **Adaptive learning rate algorithms** approximate diagonal preconditioning, scaling updates per coordinate based on running gradient variance.
+- **Adam unifies velocity and variance**, tracking bias-corrected first and second moments to provide stable step sizes across diverse parameter topographies.
+- **AdamW decouples weight decay from gradient calculation**, ensuring uniform parameter shrinkage across all layers and improving generalization in deep networks.
+- **Learning rate warmup** prevents noisy early gradients from destabilizing randomly initialized layers and allows adaptive variance accumulators to calibrate.
+- **Cosine Annealing provides smooth step-size reduction**, exploring intermediate parameters thoroughly before settling into fine convergence.
+- **Flat minima generalize more reliably than sharp minima**; methods like SWA and SAM discover flat, robust basins by averaging trajectory weights or explicitly optimizing against local curvature sharpness.
+
+> [!Tip]
+> The defining principle of deep optimization: **velocity navigates curvature, adaptive scaling normalizes coordinates, and schedules ensure basin settlement**; uniting momentum, coordinate-wise variance scaling, decoupled weight decay, and scheduled step sizes enables optimizers to train deep neural networks stably across complex, non-convex error surfaces.
