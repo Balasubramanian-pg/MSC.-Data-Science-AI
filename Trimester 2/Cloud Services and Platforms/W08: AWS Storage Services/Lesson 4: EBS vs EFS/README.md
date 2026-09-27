@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 4: EBS vs EFS
 
 Amazon EBS and Amazon EFS are both storage services, but they solve fundamentally different problems. The clearest difference is that an EFS file system can be mounted on thousands of ECS tasks or EC2 instances simultaneously, while an EBS volume does not support concurrent access. This single difference explains almost every other distinction between them, including scope, durability, performance, and cost. EBS is block storage attached to a single instance. EFS is a shared file system for many instances.
@@ -129,4 +128,147 @@ flowchart TD
 
 ### When to Use EFS
 
-- Containerised applications that scale horizontally and need shared storage
+- Containerised applications that scale horizontally and need shared storage.
+- Content management systems and web serving clusters.
+- Machine learning workloads that need shared access to training data.
+- Home directories for users across multiple instances.
+- Applications that need POSIX-compliant shared file storage.
+- Lift-and-shift of on-premises NFS workloads.
+
+### Decision Framework
+
+```mermaid
+flowchart TD
+    A[Storage Decision] --> B{Multiple Instances Need Access?}
+    B -->|No| C[EBS]
+    B -->|Yes| D[EFS]
+    C --> E{Workload Type?}
+    E -->|General Purpose| F[gp3]
+    E -->|High IOPS Database| G[io2 Block Express]
+    E -->|Throughput| H[st1]
+    E -->|Cold Data| I[sc1]
+    D --> J{Access Pattern?}
+    J -->|Frequent| K[EFS Standard]
+    J -->|Infrequent| L[EFS IA]
+    J -->|Rare| M[EFS Archive]
+```
+
+> [!Tip]
+> **Use EBS for boot volumes and databases, EFS for shared application data**: The two services are complementary, not competing. A typical three-tier application might use EBS for the database tier, EFS for the application tier's shared content, and S3 for static assets.
+
+## Summary Comparison
+
+| Dimension | EBS | EFS |
+|---|---|---|
+| Storage Type | Block | File |
+| Access Method | Attached to one EC2 instance | Mounted over NFS by many clients |
+| Concurrent Access | No | Yes |
+| Protocol | Block device (NVMe) | NFSv4.1 / NFSv4.0 |
+| Scope | Single AZ | Regional (multi-AZ) or One Zone |
+| OS Support | Linux and Windows | Linux only |
+| Durability | 99.8-99.999% | 11 nines |
+| Availability SLA | 99.99% (io2 Block Express) | 99.99% (Regional) |
+| Max IOPS | 256,000 | 90,000 |
+| Max Throughput | 4,000 MiB/s | 3 GiB/s |
+| Scaling | Manual resize or provision | Automatic |
+| Snapshots | Yes (incremental, to S3) | Yes (via AWS Backup) |
+| Encryption | KMS at rest and in transit | KMS at rest, TLS in transit |
+| Best For | Boot volumes, databases, single-instance workloads | Shared file storage, containers, web clusters |
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Explain the fundamental difference between EBS and EFS.
+2. Describe the AZ scope of EBS and EFS and how it affects architecture.
+3. Compare the durability and availability of EBS and EFS.
+4. Explain the performance modes and throughput modes of EFS.
+5. Compare EBS volume types and their use cases.
+6. Describe the EFS storage classes and how lifecycle management works.
+7. Explain why EBS is not suitable for shared access.
+8. Describe the use cases where EFS is the better choice than EBS.
+9. Explain why EFS is Linux-only and what that means for Windows workloads.
+10. Describe how snapshots work for EBS and EFS.
+
+### Scenario Questions
+
+**Scenario 1: MySQL Database**
+A company needs to run a MySQL database on EC2 with high IOPS and low latency. What should they use?
+
+- Use EBS with io2 Block Express volumes.
+- Provision 100,000+ IOPS for the database workload.
+- Use EBS snapshots for backup.
+- Enable encryption at rest with KMS.
+- Deploy across multiple AZs using a Multi-AZ database architecture with separate EBS volumes in each AZ.
+
+**Scenario 2: Containerised Web Application**
+A containerised web application runs on ECS across multiple AZs and needs shared access to uploaded content. What should they use?
+
+- Use EFS with Regional file system for multi-AZ access.
+- Mount the EFS file system on all ECS tasks.
+- Use EFS Lifecycle Management to move older content to IA.
+- Use General Purpose performance mode for latency-sensitive access.
+- Enable encryption at rest and in transit.
+
+**Scenario 3: Machine Learning Training**
+A research team needs shared access to training data across a fleet of EC2 instances running in parallel. What should they use?
+
+- Use EFS with Max I/O performance mode.
+- Use Provisioned or Elastic throughput mode for consistent performance.
+- Mount the file system on all training instances.
+- Use EFS Standard storage class for active training data.
+- Use FSx for Lustre if sub-millisecond latency and hundreds of GB/s throughput are required.
+
+**Scenario 4: Windows Workload**
+A company needs to run a Windows application that requires shared file storage. What should they use?
+
+- EFS is Linux-only, so it is not suitable for Windows.
+- Use FSx for Windows File Server instead.
+- Use EBS volumes attached to each Windows instance for local storage.
+- Use SMB file shares for shared access.
+
+**Scenario 5: Cost-Optimised Shared Storage**
+A company needs shared file storage for a web cluster, but most files are accessed infrequently. How should they optimise cost?
+
+- Use EFS with Lifecycle Management.
+- Configure lifecycle policies to move files to EFS IA after 30 days.
+- Move files to EFS Archive after 90 days.
+- Use Elastic throughput mode for automatic scaling.
+- Monitor access patterns to tune lifecycle policies.
+
+```mermaid
+flowchart TD
+    A[EBS vs EFS Decision] --> B{Shared Access?}
+    B -->|No| C[EBS]
+    B -->|Yes| D[EFS]
+    C --> E{Workload?}
+    E -->|General| F[gp3]
+    E -->|Database| G[io2 Block Express]
+    E -->|Throughput| H[st1]
+    D --> I{Access Frequency?}
+    I -->|Frequent| J[EFS Standard]
+    I -->|Infrequent| K[EFS IA]
+    I -->|Rare| L[EFS Archive]
+    J --> M{Performance Mode?}
+    M -->|Latency-Sensitive| N[General Purpose]
+    M -->|Parallel I/O| O[Max I/O]
+```
+
+## Key Takeaways
+
+- EBS provides block storage attached to a single EC2 instance. EFS provides a shared file system accessible from many instances.
+- EBS volumes are tied to a single Availability Zone. EFS file systems are regional and span multiple AZs.
+- EBS does not support concurrent access. EFS supports concurrent access from thousands of clients.
+- EBS provides lower latency and higher single-client IOPS. EFS provides shared access and automatic scaling.
+- EBS supports both Linux and Windows. EFS is Linux-only.
+- EBS durability is 99.8-99.999%. EFS durability is 11 nines.
+- EBS volume types include gp3 (default), io2 Block Express (high IOPS), st1 (throughput), and sc1 (cold).
+- EFS storage classes include Standard, Infrequent Access, and Archive. Lifecycle Management automates transitions.
+- EBS snapshots are incremental and stored in S3. EFS backups use AWS Backup.
+- Use EBS for boot volumes, databases, and single-instance workloads.
+- Use EFS for containerised applications, shared web content, and machine learning workloads that need shared storage.
+- The two services are complementary. A three-tier application may use EBS for the database, EFS for shared application data, and S3 for static assets.
+- The first decision question is whether multiple instances need concurrent access. If yes, EFS. If no, EBS.
+
+> [!Important]
+> **Start with the access pattern, not the service**: The most common architectural mistake is choosing EBS for a workload that needs shared access, or choosing EFS for a workload that needs the high single-client IOPS of EBS. Ask first: does more than one instance need to read and write this data at the same time? If yes, EFS. If no, EBS. Everything else follows from that answer. Use EBS for databases and boot volumes. Use EFS for shared application data and containers. Use S3 for static assets and backups. Match the storage service to the access pattern, and the rest of the architecture becomes simpler.
