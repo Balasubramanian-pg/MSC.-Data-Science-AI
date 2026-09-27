@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 4: Cloud Architecture in Azure & GCP
 
 This lesson compares Azure and Google Cloud Platform architecture design. It covers the Well-Architected Frameworks of each provider, physical infrastructure organization, reliability mechanisms, load balancing services, and network design. Azure and GCP share common architectural goals but implement them with different service names, availability guarantees, and design patterns.
@@ -111,4 +110,129 @@ flowchart TD
 - Availability sets distribute VMs across multiple fault domains to reduce correlated failures.
 - Availability sets can have up to 3 fault domains and 20 update domains.
 - Availability zones protect against datacenter-wide failures including power, networking, and cooling outages.
-- Availability sets provide lower VM-to-VM latency than availability zones because VMs are placed in closer physical prox
+- Availability sets provide lower VM-to-VM latency than availability zones because VMs are placed in closer physical proximity.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Region as Azure Region
+    participant AZ1 as Availability Zone 1
+    participant AZ2 as Availability Zone 2
+    participant AZ3 as Availability Zone 3
+    Region->>AZ1: Deploy VM instance 1
+    Region->>AZ2: Deploy VM instance 2
+    Region->>AZ3: Deploy VM instance 3
+    Note over AZ1,AZ3: Each zone has independent power, cooling, networking
+    AZ1->>AZ1: Power failure occurs
+    Note over AZ1: Zone 1 offline
+    AZ2->>AZ2: Continue serving traffic
+    AZ3->>AZ3: Continue serving traffic
+    Note over AZ2,AZ3: Workload remains available (99.99% SLA)
+```
+
+### GCP Reliability Design
+
+- Multi-zone deployment within a region provides resilience against zone outages.
+- Multi-region deployment is ideal for business-critical workloads where high availability is essential.
+- GCP provides infrastructure reliability building blocks at zone, region, and global scopes.
+- Availability is measured as a percentage of uptime. For example, 99.99% availability allows no more than 8.64 seconds of downtime in a 24-hour period.
+- Design services to avoid single points of failure, correlated failures, and cascading failures.
+
+> [!Tip]
+> **Design for failure at every level**: Avoid single points of failure, correlated failures, and cascading failures by distributing workloads across multiple zones or regions.
+
+## Load Balancing Comparison
+
+### Azure Load Balancing Services
+
+| Service | Layer | Scope | Key Features |
+|---|---|---|---|
+| Azure Load Balancer | Layer 4 | Regional or global | High availability, low latency, zone-redundant endpoints |
+| Application Gateway | Layer 7 | Regional | WAF, path-based routing, TLS termination, URL-based routing |
+| Traffic Manager | DNS-based | Global | Geographic routing, priority routing, weighted routing |
+| Azure Front Door | Layer 7 | Global | CDN, global routing, TLS offload, WAF, edge caching |
+
+- Azure Front Door handles global HTTP load balancing and application acceleration with instant global failover.
+- Application Gateway is optimized for backend application server farms and enhances security via WAF.
+- Front Door provides built-in cross-region support, while Application Gateway is limited to specific regions.
+
+```mermaid
+flowchart TD
+    U[Global Users] --> FD[Azure Front Door - Layer 7 Global]
+    FD --> AG1[Application Gateway - Region 1]
+    FD --> AG2[Application Gateway - Region 2]
+    AG1 --> LB1[Load Balancer - Layer 4]
+    AG2 --> LB2[Load Balancer - Layer 4]
+    LB1 --> VM1[VM Fleet - Zone A]
+    LB1 --> VM2[VM Fleet - Zone B]
+    LB2 --> VM3[VM Fleet - Zone C]
+    LB2 --> VM4[VM Fleet - Zone D]
+```
+
+### GCP Load Balancing Services
+
+| Service | Scope | Backend Support | Key Features |
+|---|---|---|---|
+| Global External Application Load Balancer | Global | Multi-region | Uses GFEs distributed globally, Envoy proxy for advanced traffic management |
+| Regional External Application Load Balancer | Regional | Single region | Standard tier, regional backends |
+| External Proxy Network Load Balancer | Global or regional | Multi-region or single region | TCP or SSL traffic, single IP for global users |
+| Internal TCP/UDP Load Balancer | Regional | Single region | Internal traffic balancing |
+
+- A global load balancer supports backends in multiple regions, while a regional load balancer supports backends in a single region.
+- Global load balancers use Google Front Ends (GFEs) distributed across more than 80 distinct locations worldwide.
+- External proxy Network Load Balancers terminate TCP or SSL traffic at the load balancer and forward to the closest available backend.
+
+> [!Important]
+> **Global versus regional matters**: Global load balancers provide lower latency for worldwide users by routing to the nearest point of presence. Regional load balancers are simpler and more cost-effective for single-region workloads.
+
+## Network Architecture Comparison
+
+### Azure Network Design
+
+- Azure regions are paired within the same geography to enable replication and disaster recovery.
+- Virtual networks (VNets) provide isolation and segmentation.
+- Azure Front Door serves as the global entry point for internet-facing applications.
+
+### GCP Network Design
+
+- GCP's global network uses a premium tier that routes traffic over Google's private fiber backbone.
+- VPC networks are global resources, spanning multiple regions.
+- Cloud Load Balancing integrates with the global network to route traffic to the closest healthy backend.
+
+| Dimension | Azure | GCP |
+|---|---|---|
+| Regional pairing | Automatic region pairs within geography | No automatic pairing; choose regions manually |
+| Global network | Front Door for global HTTP delivery | Global VPC and global load balancing by default |
+| Zone count per region | Typically 3 availability zones | Typically 3 or more zones |
+| Network isolation | VNets, NSGs, Azure Firewall | VPCs, firewall rules, Cloud Armor |
+
+```mermaid
+flowchart TD
+    subgraph Azure_Network
+        A_User[Users] --> A_FD[Front Door]
+        A_FD --> A_VNet1[VNet Region 1]
+        A_FD --> A_VNet2[VNet Region 2]
+        A_VNet1 --> A_Sub1[Subnet A - Zone 1]
+        A_VNet1 --> A_Sub2[Subnet B - Zone 2]
+    end
+    subgraph GCP_Network
+        G_User[Users] --> G_GLB[Global Load Balancer]
+        G_GLB --> G_VPC[Global VPC]
+        G_VPC --> G_Sub1[Subnet Region 1]
+        G_VPC --> G_Sub2[Subnet Region 2]
+    end
+```
+
+## Key Takeaways
+
+- Azure and GCP both organize their architecture guidance around well-architected frameworks with overlapping pillars: reliability, security, cost optimization, operational excellence, and performance.
+- Azure groups infrastructure into regions, availability zones, fault domains, and update domains. GCP uses regions, zones, and deployment archetypes.
+- Azure availability sets provide 99.95% SLA within a datacenter. Availability zones provide 99.99% SLA across datacenters. GCP multi-zone targets 99.99% and multi-region targets 99.999%.
+- Azure load balancing spans Load Balancer (Layer 4), Application Gateway (Layer 7 regional), Traffic Manager (DNS), and Front Door (Layer 7 global).
+- GCP load balancing distinguishes between global and regional services, with global load balancers using GFEs distributed across more than 80 locations.
+- Azure pairs regions automatically for disaster recovery. GCP requires manual region selection but provides a global VPC by default.
+- Both providers emphasize avoiding single points of failure, correlated failures, and cascading failures.
+- Design decisions require documented trade-offs between availability, cost, and operational complexity.
+
+> [!Important]
+> **Match architecture to requirements**: Select the deployment archetype and availability option that meets business needs without over-engineering. A regional multi-zone architecture handles most workloads, while multi-region active-active designs are reserved for the most critical systems.
