@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 4: LSTM and GRU Architectures
 
 ## Gated Sequence Architectures: LSTM and GRU Mechanics
@@ -108,4 +107,111 @@ flowchart TD
 ### State Consolidation and Component Simplification
 
 - Proposed by Kyunghyun Cho et al. (2014), the **Gated Recurrent Unit (GRU)** streamlines recurrent gating by eliminating the separate cell state vector.
-- The GRU tracks a single recurrent state vector $h_t \in \mathbb{R}^H$ that s
+- The GRU tracks a single recurrent state vector $h_t \in \mathbb{R}^H$ that serves simultaneously as long-term memory storage and short-term working output.
+- Structural gating complexity drops from three gates to **two gates**, reducing parameter counts and memory allocations.
+
+### The Mathematical Gate Equations
+
+- At time step $t$, a GRU cell receives input $x_t$ and previous hidden state $h_{t-1}$, executing four operations:
+  1. **Reset Gate ($r_t$):** Controls how much historical context to expose to the candidate state calculation:
+     $$r_t = \sigma(W_r \cdot [h_{t-1}, \; x_t] + b_r)$$
+  2. **Update Gate ($z_t$):** Acts simultaneously as a forget gate and an input gate, regulating how much of the old state to carry forward:
+     $$z_t = \sigma(W_z \cdot [h_{t-1}, \; x_t] + b_z)$$
+  3. **Candidate Hidden State ($\tilde{h}_t$):** Uses the reset gate to selectively mask historical memory:
+     $$\tilde{h}_t = \tanh(W_h \cdot [r_t \odot h_{t-1}, \; x_t] + b_h)$$
+  4. **Hidden State Interpolation ($h_t$):** Executes a convex linear interpolation between past memory and candidate updates:
+     $$h_t = (1 - z_t) \odot h_{t-1} + z_t \odot \tilde{h}_t$$
+
+```mermaid
+flowchart TD
+    subgraph GRU["GRU Internal Cell Dataflow"]
+        H_prev["h_{t-1}"] --> Concat["[h_{t-1}, x_t]"]
+        X_curr["x_t"] --> Concat
+        
+        Concat --> Gate_R["Reset Gate: r_t = σ(...)"]
+        Concat --> Gate_Z["Update Gate: z_t = σ(...)"]
+        
+        H_prev --> Mul_R(("r_t ⊙ h_{t-1}"))
+        Gate_R --> Mul_R
+        
+        Mul_R --> Cand_Concat["[r_t ⊙ h_{t-1}, x_t]"]
+        X_curr --> Cand_Concat
+        Cand_Concat --> Cand_H["Candidate: h~_t = tanh(...)"]
+        
+        H_prev --> Interp_Old(("(1 - z_t) ⊙ h_{t-1}"))
+        Gate_Z --> Invert["(1 - z_t)"]
+        Invert --> Interp_Old
+        
+        Cand_H --> Interp_New(("z_t ⊙ h~_t"))
+        Gate_Z --> Interp_New
+        
+        Interp_Old --> Add(("Additive Sum"))
+        Interp_New --> Add
+        Add --> H_curr["h_t"]
+    end
+```
+
+### Convex Interpolation and Memory Management
+
+- The update gate $z_t$ acts as an automated balance control:
+  - If $z_t \approx 0$, the cell ignores candidate $\tilde{h}_t$ and copies the historical state forward unchanged: $h_t \approx h_{t-1}$.
+  - If $z_t \approx 1$, the cell overwrites past memory completely with the candidate update: $h_t \approx \tilde{h}_t$.
+- When the reset gate approaches zero ($r_t \approx 0$), the cell discards historical context entirely, allowing the model to reset its working state when encountering phrase boundaries or topic transitions.
+
+> [!Tip]
+> **GRUs manage memory via convex interpolation**: the update gate $z_t$ balances old memory retention against new candidate integration: $h_t = (1 - z_t) \odot h_{t-1} + z_t \odot \tilde{h}_t$, eliminating the need for a separate cell state.
+
+## Structural and Empirical Trade-Offs: LSTM Versus GRU
+
+### Parameter Accounting and Computational Footprint
+
+- Let $D$ denote input feature dimension, and $H$ denote hidden state dimension:
+  - **LSTM Parameters:** Incorporates four independent affine projections ($W_f, W_i, W_c, W_o$):
+    $$P_{\text{LSTM}} = 4 \times \left( H \cdot (D + H) + H \right) = 4 H (D + H + 1)$$
+  - **GRU Parameters:** Incorporates three independent affine projections ($W_r, W_z, W_h$):
+    $$P_{\text{GRU}} = 3 \times \left( H \cdot (D + H) + H \right) = 3 H (D + H + 1)$$
+- The GRU achieves an exact **25% reduction in parameter count** relative to an LSTM with identical hidden state capacity.
+- In hardware execution, fewer gate projections translate to lower memory bandwidth consumption and reduced GPU kernel launch overhead.
+
+### Training Speed, Memory Bandwidth, and Convergence Rates
+
+- **Activation Memory Footprint:** During training, forward activations must be cached for backpropagation. The LSTM must cache $c_t$, $h_t$, $f_t$, $i_t$, $\tilde{c}_t$, and $o_t$ across every unrolled time step. The GRU caches fewer intermediate tensors ($h_t, r_t, z_t, \tilde{h}_t$), reducing memory consumption.
+- **Convergence Speed:** On smaller datasets or resource-constrained settings, the GRU frequently converges faster and displays lower risk of overfitting due to its smaller parameter capacity.
+
+### Expressive Capacity on Long-Range Sequence Tasks
+
+- While GRUs match LSTMs across many natural language translation and speech benchmarks, LSTMs retain advantages in specific problem classes:
+  - Tasks requiring counting mechanisms, precise temporal tracking, or unbounded long-range dependencies benefit from the dedicated cell state ($c_t$).
+  - Separating the internal memory ($c_t$) from external output representations ($h_t$) allows LSTMs to retain internal variables without exposing them directly to intermediate downstream projections.
+
+> [!Important]
+> **Select between LSTM and GRU based on data scale**: deploy GRUs for faster training and parameter efficiency on small to medium datasets; choose LSTMs for complex long-range dependencies requiring isolated internal memory.
+
+## Comparative Matrix of Recurrent Cell Architectures
+
+| Feature Dimension | Vanilla RNN | Long Short-Term Memory (LSTM) | LSTM with Peepholes | Gated Recurrent Unit (GRU) |
+|---|---|---|---|---|
+| **State Vectors Maintained** | Single: Hidden $h_t$ | Dual: Hidden $h_t$ and Cell $c_t$ | Dual: Hidden $h_t$ and Cell $c_t$ | Single: Hidden $h_t$ |
+| **Gating Primitives** | None ($0$ gates) | Three: Forget ($f$), Input ($i$), Output ($o$) | Three gates + cell state inspection | Two: Reset ($r$), Update ($z$) |
+| **Affine Parameter Matrices** | $1 \times (H \times (D + H))$ | $4 \times (H \times (D + H))$ | $4 \times (H \times (D + H)) + 3H$ | $3 \times (H \times (D + H))$ |
+| **Total Parameter Count** | $H(D + H + 1)$ | $4H(D + H + 1)$ | $4H(D + H + 1) + 3H$ | $3H(D + H + 1)$ |
+| **Gradient Preservation Path** | Multiplicative $W_{hh}^T$ product | Additive linear cell state ($+I$) | Additive linear cell state ($+I$) | Convex linear interpolation ($+I$) |
+| **Long-Range Reach** | $\approx 10$ to $15$ time steps | $100+$ time steps | $100+$ time steps | $100+$ time steps |
+| **Relative Training Speed** | Fastest | Baseline ($1.0\times$) | Slightly slower ($\approx 0.9\times$) | Faster ($\approx 1.25\times$ to $1.3\times$) |
+
+> [!Tip]
+> **Gating adds parameters to save gradients**: while gated cells require three to four times more parameters than a vanilla RNN, their additive gradient pathways make training on long sequences computationally feasible.
+
+## Key Takeaways
+
+- **Vanilla RNNs fail on extended sequences** because multiplicative transitions cause temporal gradients to decay exponentially.
+- **Continuous soft gates act as differentiable switches**, utilizing Sigmoid activations in $(0, 1)$ to regulate information flow while supporting backpropagation.
+- **LSTMs separate memory from representation**, maintaining an additive **cell state** ($c_t$) alongside an exposed **hidden state** ($h_t$).
+- **The Constant Error Carousel (CEC)** allows error signals to flow backward along the cell state conveyor belt without exponential decay when forget gates are open ($f_t \approx 1.0$).
+- **The three LSTM gates serve specialized functions**: the forget gate erases stale memory, the input gate writes candidate updates, and the output gate scales external projections.
+- **GRUs streamline recurrent processing by 25%**, merging cell and hidden states into a single vector governed by coupled reset and update gates.
+- **The GRU update gate executes convex interpolation** ($h_t = (1 - z_t) \odot h_{t-1} + z_t \odot \tilde{h}_t$), balancing historical persistence against candidate integration.
+- **LSTMs provide higher representational capacity** for complex, long-range dependencies, while **GRUs train faster** and use less memory on resource-constrained workflows.
+
+> [!Tip]
+> The foundational principle of gated sequence modeling: **additive memory channels prevent gradient decay**; whether implemented through dual-state LSTM conveyor belts or unified GRU convex interpolations, additive state updates allow recurrent networks to learn temporal dependencies across extended horizons.
