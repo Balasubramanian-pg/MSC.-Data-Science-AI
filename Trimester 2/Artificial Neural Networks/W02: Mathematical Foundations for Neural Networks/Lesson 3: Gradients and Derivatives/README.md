@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 3: Gradients and Derivatives
 
 ## Gradients and Derivatives for Neural Networks
@@ -81,4 +80,70 @@ Differential calculus provides the analytical framework for measuring how adjust
 ### Gradients of Linear and Matrix Forms
 
 - The gradient of an inner product with respect to a vector satisfies: $\nabla_x (w^T x) = w$.
-- The gradient of a quadratic
+- The gradient of a quadratic form with a symmetric matrix $A$ satisfies: $\nabla_x (x^T A x) = 2 A x$.
+- For a dense layer computing $z = Wx + b$, the gradient of a scalar loss $\mathcal{L}$ with respect to the input vector is $\nabla_x \mathcal{L} = W^T (\nabla_z \mathcal{L})$.
+- The gradient of the scalar loss with respect to the weight matrix is the outer product of upstream gradients and forward activations: $\nabla_W \mathcal{L} = (\nabla_z \mathcal{L}) x^T$.
+- The gradient with respect to the bias vector equals the upstream error vector directly: $\nabla_b \mathcal{L} = \nabla_z \mathcal{L}$.
+
+> [!Important]
+> **Vector-Jacobian products** make backpropagation scalable: computing the product of an incoming error vector with a local Jacobian avoids allocating massive dense derivative matrices in memory.
+
+## Second-Order Derivatives and Curvature
+
+### The Hessian Matrix and Local Curvature
+
+- The **Hessian matrix** ($H$) is a square $n \times n$ matrix containing all *second-order partial derivatives* of a scalar-valued function: $H_{ij} = \frac{\partial^2 f}{\partial x_i \partial x_j}$.
+- By **Schwarz's theorem**, if the second partial derivatives are continuous, the Hessian is symmetric: $H_{ij} = H_{ji}$ (meaning $H = H^T$).
+- The Hessian measures the **curvature** of the loss surface, indicating whether the gradient is changing rapidly or slowly along specific directions.
+- The second-order Taylor expansion approximates a function locally: $f(x + \Delta x) \approx f(x) + \nabla f(x)^T \Delta x + \frac{1}{2} \Delta x^T H \Delta x$.
+
+### Hessian Eigenvalues and Critical Point Classification
+
+- The eigenvalues of the Hessian determine the geometric nature of a stationary point where $\nabla f(x) = 0$.
+- A **positive-definite Hessian** (all eigenvalues strictly positive) indicates strictly upward curvature, confirming a **local minimum**.
+- A **negative-definite Hessian** (all eigenvalues strictly negative) indicates downward curvature in all directions, confirming a **local maximum**.
+- An **indefinite Hessian** (possessing both positive and negative eigenvalues) identifies a **saddle point**, where the surface curves upward along some axes and downward along others.
+- High-dimensional loss surfaces are dominated by saddle points rather than local minima, making methods that overcome zero-gradient plateaus essential.
+
+### Ill-Conditioning and Optimization Obstacles
+
+- The **condition number** of the Hessian, $\kappa(H) = \frac{|\lambda_{\max}|}{|\lambda_{\min}|}$, measures the disparity in curvature across different coordinate axes.
+- A high condition number creates an **ill-conditioned surface** (such as a narrow, elongated valley or ravine).
+- First-order gradient descent oscillates violently across the steep walls of the ravine while making slow progress along the flat valley floor.
+- Second-order optimization methods (such as Newton's method: $\Delta x = -H^{-1} \nabla f$) rescale step sizes using curvature, but computing and inverting the full $n \times n$ Hessian is computationally prohibitive for deep architectures.
+
+> [!Tip]
+> **Hessian eigenvalues** identify loss geometry: positive eigenvalues in every direction confirm a local minimum, while mixed positive and negative eigenvalues expose a saddle point.
+
+## Differentiation Paradigms in Deep Learning
+
+### Evaluation Methods for Derivatives
+
+- **Numerical differentiation** uses finite difference approximations: $f'(x) \approx \frac{f(x+h) - f(x)}{h}$; it requires $O(n)$ function evaluations for $n$ variables and suffers from floating-point truncation errors.
+- **Symbolic differentiation** manipulates algebraic expressions mathematically using computer algebra systems; it produces exact expressions but suffers from exponential expression growth (expression swell).
+- **Forward-mode automatic differentiation** calculates derivatives alongside the forward pass using dual numbers; it is computationally efficient when the number of inputs is small and the number of outputs is large ($m \gg n$).
+- **Reverse-mode automatic differentiation** executes a forward pass to compute values followed by a reverse sweep to collect derivatives; it evaluates gradients of a scalar objective with respect to millions of inputs ($n \gg 1$) in a single backward pass.
+
+| Differentiation Technique | Mathematical Basis | Time Complexity for $f: \mathbb{R}^n \to \mathbb{R}$ | Memory Consumption | Accuracy | Suitability for Deep Learning |
+|---|---|---|---|---|---|
+| **Numerical Differentiation** | Finite difference quotient | $O(n)$ forward passes | $O(1)$ intermediate state | Low (truncation/roundoff errors) | Gradient verification and sanity checks only |
+| **Symbolic Differentiation** | Exact algebraic transformation rules | Variable (expression swell) | High (tree expansion) | Exact | Symbolic model generation; unusable for deep nets |
+| **Forward-Mode Autodiff** | Dual numbers / Forward tangent propagation | $O(n)$ forward passes | $O(1)$ activation storage | Exact up to machine precision | Jacobian-vector products; inefficient for scalar loss |
+| **Reverse-Mode Autodiff** | Reverse computational graph traversal | $O(1)$ forward passes | $O(L)$ activation storage | Exact up to machine precision | Standard backpropagation in modern deep learning |
+
+> [!Important]
+> **Reverse-mode automatic differentiation** enables deep learning at scale: it computes exact gradients for millions of parameters in a single reverse sweep with a computational cost proportional to one forward pass.
+
+## Key Takeaways
+
+- **Derivatives** measure parameter sensitivity, while the **gradient vector** aggregates all first-order partial derivatives to define the local direction of steepest ascent.
+- **Gradient descent** updates parameters in the direction of the negative gradient, stepping orthogonally across loss contour boundaries toward lower error values.
+- **The chain rule** provides the analytical mechanism for evaluating composite functions, allowing deep architectures to compute gradients layer by layer.
+- **Computational graphs** operationalize calculus in software, saving forward activations to evaluate reverse-mode derivative expressions efficiently.
+- **The Jacobian matrix** encapsulates all first-order partial derivatives for vector-to-vector functions, with vector-Jacobian products avoiding high memory allocations during backpropagation.
+- **The Hessian matrix** captures second-order curvature information; its eigenvalues classify critical points into local minima, local maxima, and saddle points.
+- **Ill-conditioned loss surfaces** cause standard gradient descent to oscillate across steep ravines, motivating adaptive learning rate algorithms and momentum.
+- **Reverse-mode automatic differentiation** computes exact parameter gradients for scalar objective functions in $O(1)$ backward passes relative to the forward compute time.
+
+> [!Tip]
+> Neural network training relies on **first-order differential calculus**: reverse-mode automatic differentiation evaluates exact gradient vectors using the multivariate chain rule, guiding parameters across high-dimensional, non-convex loss surfaces toward minimal error configurations.
