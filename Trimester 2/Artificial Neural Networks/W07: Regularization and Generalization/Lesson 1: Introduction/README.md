@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: Introduction
 
 ## Introduction to Regularization and Generalization
@@ -64,4 +63,59 @@ Training deep neural networks involves two distinct mathematical objectives: min
 ### Parameter Penalty Formulations
 
 - **Explicit norm penalties** augment the objective loss function with a cost that penalizes parameter complexity:
-  $$\mathcal{L}_{\te
+  $$\mathcal{L}_{\text{total}}(\theta) = \mathcal{L}(\theta) + \lambda \Omega(\theta)$$
+  where $\lambda \ge 0$ is the regularization hyperparameter, and $\Omega(\theta)$ is a norm constraint.
+- **$L_2$ Regularization (Weight Decay):** Penalizes the squared Euclidean norm of weights ($\frac{1}{2}\|w\|_2^2$), shrinking parameters smoothly toward zero and suppressing responses along low-curvature directions.
+- **$L_1$ Regularization (Lasso):** Penalizes the sum of absolute weight coordinates ($\|w\|_1$), driving uninformative weights to exact zero to generate sparse feature representations.
+
+### Stochastic Perturbations and Sub-Network Sampling
+
+- **Stochastic regularizers** inject random noise directly into layer activations or network connectivity during training.
+- **Dropout** zeroes out hidden activations randomly on each forward pass with probability $1-p$, preventing neurons from co-adapting and forcing units to learn independent, robust representations.
+- Dropping activations during training approximates an ensemble average over an exponential number of sub-networks ($2^n$) within a single parameter footprint.
+
+### Dataset Expansion and Label Transformations
+
+- Modifying the input and target representations directly regularizes deep models:
+  - **Data Augmentation:** Generates synthetic training instances by applying label-preserving transformations (rotation, cropping, color jittering) to existing samples, enforcing mathematical invariance.
+  - **Mixup and CutMix:** Blend input instances and soft targets linearly, enforcing smooth probability transitions between training classes.
+  - **Label Smoothing:** Replaces hard one-hot target vectors with smoothed categorical distributions, preventing Softmax logits from growing to extreme magnitudes.
+
+### Implicit Algorithmic Constraints
+
+- Certain training mechanics act as **implicit regularizers** without requiring explicit penalty terms in the loss function:
+  - **Early Stopping:** Halts optimization before weights expand into overfitted regimes, acting similarly to bounded $L_2$ regularization.
+  - **Mini-Batch Stochastic Noise:** The variance introduced by small mini-batches ($\text{Cov} \propto \frac{\eta}{m}$) perturbs weights out of sharp, suboptimal minima into flat, generalizing basins.
+  - **Normalization Layers:** The batch-wise statistics used in Batch Normalization introduce stochastic fluctuations that regularize downstream layers.
+
+> [!Tip]
+> **Regularization operates across four tiers**: models can be regularized by adding parameter penalties, injecting stochastic noise into activations, augmenting input data, or leveraging implicit optimization biases.
+
+## Diagnostic Signatures of Generalization Regimes
+
+| Diagnostic Dimension | Underfitting Regime | Optimal Generalization Regime | Overfitting Regime |
+|---|---|---|---|
+| **Training Loss** | High (fails to reach target threshold) | Low (converges smoothly to minimum) | Near zero (memorizes training set) |
+| **Validation Loss** | High (comparable to training loss) | Low (tracks close to training loss) | High (diverges upward from training loss) |
+| **Generalization Gap ($\Delta_{\text{gen}}$)** | Negligible ($\approx 0$, both are high) | Small and bounded | Large and expanding |
+| **Model Capacity Relative to Task** | Insufficient capacity | Balanced capacity and constraint | Excessive unconstrained capacity |
+| **Dominant Statistical Error Source** | High Bias | Balanced Tradeoff | High Variance |
+| **Weight Magnitude Distribution** | Often small or restricted | Moderately sized and balanced | Large weights with extreme variance |
+| **Primary Engineering Remedy** | Increase depth/width; reduce regularization | Maintain hyperparameters | Add Dropout, Weight Decay, Augmentation |
+
+> [!Important]
+> **Diagnose capacity before applying regularizers**: applying strong regularization to an underfitting model worsens performance; explicit penalties are designed specifically to rein in excess capacity in overfitting models.
+
+## Key Takeaways
+
+- **Generalization separates machine learning from curve fitting**: learning algorithms optimize empirical training risk as a proxy to minimize expected loss on unseen distributions.
+- **Regularization encompasses any algorithmic adjustment** intended to reduce generalization error without degrading training convergence.
+- **The generalization gap** quantifies the performance difference between empirical training loss and true risk over the broader distribution.
+- **The bias-variance tradeoff** models the tension between underfitting (high bias from insufficient capacity) and overfitting (high variance from fitting sample noise).
+- **Explicit norm penalties ($L_1, L_2$)** constrain parameter space directly, shrinking weights and penalizing model complexity.
+- **Dropout injects stochastic noise into representations**, breaking feature co-adaptations and training an implicit ensemble of sub-networks.
+- **Data augmentation and label smoothing** regularize networks from the data level, enforcing geometric invariance and bounding output logit confidence.
+- **Implicit regularization emerges naturally** from optimization choices, where early stopping, mini-batch noise, and normalization layers guide parameters toward broad, generalizing basins.
+
+> [!Tip]
+> The foundational principle of model generalization: **capacity must be guided by constraint**; deep neural networks require explicit parameter penalties, stochastic activation masks, and data expansions to turn raw representational capacity into robust real-world generalization.
