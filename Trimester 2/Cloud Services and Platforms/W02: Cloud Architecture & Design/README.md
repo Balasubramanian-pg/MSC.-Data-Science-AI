@@ -1,4 +1,3 @@
-# Migration in progress
 # W02: Cloud Architecture & Design
 
 This week connects reliability and performance engineering with the AWS Well-Architected Framework. It covers availability math, fault domains, load balancing, elasticity, caching, the six pillars, lenses, and the review process. The goal is to design cloud workloads that stay correct, fast, secure, cost-aware, and sustainable.
@@ -105,4 +104,115 @@ sequenceDiagram
 
 ## AWS Well-Architected Framework
 
-*Definition*: A set of b
+*Definition*: A set of best practices and guiding questions for evaluating cloud architectures.
+
+### General Design Principles
+
+- Stop guessing capacity.
+- Test at production scale.
+- Automate to make experimentation easier.
+- Allow evolutionary architectures.
+- Drive decisions with data.
+- Improve through game days.
+
+### The Six Pillars
+
+| Pillar | Focus |
+|---|---|
+| Operational Excellence | Run and monitor systems, continuously improve |
+| Security | Protect data, systems, and assets |
+| Reliability | Perform correctly and consistently |
+| Performance Efficiency | Use resources efficiently |
+| Cost Optimization | Deliver value at lowest price |
+| Sustainability | Reduce environmental impact |
+
+```mermaid
+flowchart TD
+    WAF[AWS Well-Architected Framework] --> OE[Operational Excellence]
+    WAF --> SEC[Security]
+    WAF --> REL[Reliability]
+    WAF --> PERF[Performance Efficiency]
+    WAF --> COST[Cost Optimization]
+    WAF --> SUS[Sustainability]
+```
+
+### Pillar Highlights
+
+- Operational Excellence: operations as code, small reversible changes, anticipate failure.
+- Security: strong identity, traceability, defense in depth, encrypt data, prepare for events.
+- Reliability: auto-recover, test recovery, scale horizontally, manage change through automation.
+- Performance Efficiency: go global, use serverless, experiment, consider mechanical sympathy.
+- Cost Optimization: consumption model, measure efficiency, attribute expenditure.
+- Sustainability: maximize utilization, use managed services, reduce downstream impact.
+
+> [!Important]
+> **Security and operational excellence are usually not traded off**: These pillars protect the business and should not be weakened for short-term cost or speed gains.
+
+### Well-Architected Tool and Lenses
+
+- Free service in AWS Management Console.
+- Asks pillar questions and produces an improvement plan.
+- Tracks milestones and integrates with Trusted Advisor and AppRegistry.
+- Supports custom lenses.
+- Official lenses cover Serverless, Machine Learning, Data Analytics, IoT, SAP, Financial Services, Healthcare, Hybrid Networking.
+- Responsible AI Lens added in 2025.
+
+```mermaid
+flowchart LR
+    A[Workload] --> B[Well-Architected Tool]
+    B --> C[Pillar Questions]
+    C --> D[Risk Identification]
+    D --> E[Improvement Plan]
+    E --> F[Implement Changes]
+    F --> B
+```
+
+### Review Process
+
+- Phases: prepare, review, follow up.
+- Prepare: identify sponsors, define scope, gather documentation.
+- Review: answer questions, discuss risks, identify improvements.
+- Follow up: prioritize and implement changes.
+- Process is blameless.
+- Reviews can be self-service, AWS-led, or partner-led.
+
+> [!Tip]
+> **Schedule repeat reviews**: Architectures evolve, so regular Well-Architected reviews catch new risks and validate improvements.
+
+## How the Topics Connect
+
+```mermaid
+flowchart TD
+    A[Cloud Architecture and Design] --> B[Reliability Engineering]
+    A --> C[Performance Engineering]
+    A --> D[AWS Well-Architected Framework]
+    B --> D
+    C --> D
+    D --> E[Operational Excellence]
+    D --> F[Security]
+    D --> G[Reliability]
+    D --> H[Performance Efficiency]
+    D --> I[Cost Optimization]
+    D --> J[Sustainability]
+```
+
+- Reliability and performance provide the engineering foundation.
+- The Well-Architected Framework provides the evaluation structure.
+- The six pillars guide tradeoff decisions across the workload lifecycle.
+- Tools and lenses make reviews repeatable and domain-specific.
+
+## Key Takeaways
+
+- Cloud architecture balances reliability, performance, security, cost, and sustainability.
+- Availability is measured with MTBF and MTTR, and the nines define allowed downtime.
+- Serial dependencies reduce availability. Parallel redundancy improves it.
+- Fault domains include racks, Availability Zones, and Regions.
+- Load balancing, health checks, stateless design, and auto-scaling improve performance and resilience.
+- Caching, read replicas, connection pooling, and edge delivery reduce latency and database load.
+- The AWS Well-Architected Framework organizes best practices into six pillars.
+- The Well-Architected Tool and lenses make reviews consistent and repeatable.
+- Reviews are blameless and aim at continuous improvement.
+- Security and operational excellence are foundational and should not be traded away.
+
+> [!Important]
+> **Architecture is iterative**: Use the Well-Architected Framework regularly, test failure with game days, and let metrics drive improvements across every pillar.
