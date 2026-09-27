@@ -1,6 +1,8 @@
-# Migration in progress
 # Lesson 5: Introduction to Apache Spark
 
 Initial directory setup.
 
-## O
+## Overview
+- Module resources and notes will be added here.
+
+Status: Active
