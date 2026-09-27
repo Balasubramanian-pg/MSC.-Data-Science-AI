@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: Data Governance & Compliance in Pipelines
 
 Data Governance and Compliance in Pipelines:
@@ -22,4 +21,27 @@ Implementing Compliance Operations in Pipelines:
 
 - Consent propagation: Ingestion pipelines capture user consent preferences from source applications and carry consent flags alongside transactional data, filtering out users who have revoked analytical consent.
 - Right to be forgotten implementation: Fulfilling deletion requests requires building automated erasure pipelines that locate and remove specific user identifiers across production databases, object stores, and historical data lake tables.
-- Mutation
+- Mutation mechanics in data lakes: Because cloud object storage files like Parquet are immutable, deleting records requires table formats such as Apache Iceberg or Delta Lake that execute copy-on-write or merge-on-read operations to rewrite affected data files without full table scans.
+- Data pseudonymization: Transformations hash or replace direct identifiers with surrogate tokens before loading records into analytical data warehouses, allowing statistical analysis without exposing individual identities.
+
+Data Lineage and Auditing Systems:
+
+- Automated lineage capture: Tools capture transformation dependencies from orchestration frameworks and SQL models, building visual graphs showing the complete journey of data from source tables to consumption dashboards.
+- Compliance audit readiness: When regulatory authorities audit an organization, automated lineage graphs prove precisely how sensitive data was extracted, transformed, scrubbed, and accessed over time.
+- Immutable operational audit logs: Every pipeline execution, schema alteration, data deletion, and analytical query is recorded in tamper-resistant log repositories to provide forensic proof of compliance.
+
+Data Retention and Lifecycle Management:
+
+- Data retention policies: Define legally required time limits for holding customer records, ensuring datasets are not stored indefinitely after their operational utility expires.
+- Automated storage lifecycle tiers: Cloud storage rules automatically transition raw ingestion buckets to low-cost archival storage classes like Amazon S3 Glacier after thirty or ninety days, and permanently purge expired objects after statutory retention periods lapse.
+- Legal holds: Specialized pipeline controls that suspend automated deletion workflows for specific datasets subject to ongoing litigation or regulatory investigation.
+- Important: Storing unclassified personal data across ad-hoc staging buckets creates significant legal liability; automated classification and retention policies must cover raw staging buckets as well as production warehouses.
+
+Key Takeaways:
+
+- Modern data governance requires programmatic, automated compliance rules embedded directly inside data pipeline code.
+- Major privacy regulations like GDPR, CCPA, and HIPAA give consumers explicit rights regarding the access, usage, and deletion of their personal data.
+- Automated classification scans and tags sensitive attributes at ingestion time to guide secure downstream processing.
+- Implementing the right to be forgotten in cloud data lakes requires modern table formats like Delta Lake or Iceberg that support granular row-level deletions.
+- Automated data lineage provides verifiable visual proof of data origins and transformations to satisfy regulatory audits.
+- Lifecycle policies enforce data retention limits by archiving or permanently deleting historical records in accordance with statutory requirements.
