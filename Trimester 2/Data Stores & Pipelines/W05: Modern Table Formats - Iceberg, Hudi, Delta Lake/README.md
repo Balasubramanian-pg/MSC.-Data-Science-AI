@@ -1,4 +1,3 @@
-# Migration in progress
 # W05: Modern Table Formats - Iceberg, Hudi, Delta Lake
 
 As data architectures evolved from Data Lakes to Lakehouses, a critical gap emerged: object storage (like S3) is immutable and lacks transaction support. Modern table formats solve this by adding a metadata layer on top of raw files, enabling ACID transactions, schema evolution, and time travel. This lesson compares the three leading open-table formats—Apache Iceberg, Apache Hudi, and Delta Lake—and guides you in choosing the right one for your workload.
@@ -95,4 +94,106 @@ Developed by Databricks and donated to the Linux Foundation, Delta Lake is tight
 
 -   Organizations heavily invested in Databricks or Spark.
 -   Teams seeking simplicity and ease of setup.
--   Workloads inv
+-   Workloads involving complex ML pipelines alongside SQL analytics.
+
+> [!Important]
+> **Delta Lake is more than just a format**: It is part of a broader ecosystem. If you use Databricks, Delta offers the smoothest experience. However, it is increasingly supported by other engines like Trino and Presto through connectors.
+
+## Comparison Matrix
+
+| Feature | Apache Iceberg | Apache Hudi | Delta Lake |
+|---|---|---|---|
+| **Origin** | Netflix | Uber | Databricks |
+| **Primary Strength** | Engine Interoperability | Upsert/Streaming Performance | Spark Integration & Simplicity |
+| **Partitioning** | Hidden/Evolvable | Explicit | Explicit |
+| **Metadata Structure** | Tree (Manifests) | Timeline/Index | Linear Log (JSON) |
+| **Update Strategy** | Merge-on-Read / Copy-on-Write | CoW / MoR | Copy-on-Write (mostly) |
+| **Community** | Rapidly Growing, Vendor-Neutral | Strong in Streaming | Large, Databricks-backed |
+| **Best Engine Fit** | Trino, Spark, Flink | Spark, Flink | Spark |
+
+## Choosing the Right Format
+
+### Choose Apache Iceberg If:
+-   You use multiple query engines (e.g., Spark for ETL, Trino for BI, Flink for streaming).
+-   You want to avoid vendor lock-in.
+-   You have massive tables and need advanced partition evolution.
+
+### Choose Apache Hudi If:
+-   Your primary workload is high-volume streaming with frequent row-level updates.
+-   You need incremental pull capabilities for downstream systems.
+-   Low-latency upserts are critical (e.g., real-time dashboards).
+
+### Choose Delta Lake If:
+-   You are already using Databricks or Apache Spark extensively.
+-   You prefer simplicity and quick setup.
+-   You want tight integration with MLflow and Unity Catalog.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1.  What problem do modern table formats solve in Data Lakes?
+2.  Explain the concept of "Hidden Partitioning" in Iceberg.
+3.  What is the difference between Copy-on-Write and Merge-on-Read in Hudi?
+4.  How does Delta Lake track transactions?
+5.  Why is Time Travel useful in a Lakehouse architecture?
+6.  Which format is most suitable for a multi-engine environment?
+7.  How do these formats handle the "small file problem"?
+8.  What is Schema Evolution and why is it important?
+9.  Compare the metadata structures of Iceberg and Delta Lake.
+10. When would you choose Hudi over Iceberg?
+
+### Scenario Questions
+
+**Scenario 1: Multi-Tool Analytics**
+Company uses Spark for engineering, Trino for BI, and Flink for streaming.
+
+-   **Choice**: Apache Iceberg.
+-   **Reason**: Best-in-class support for all three engines. Vendor-neutral.
+-   **Benefit**: Engineers, analysts, and stream processors can all read/write the same data efficiently.
+
+**Scenario 2: Real-Time Order Tracking**
+E-commerce platform needs to update order status every few seconds.
+
+-   **Choice**: Apache Hudi (Merge-on-Read).
+-   **Reason**: Optimized for frequent upserts and low-latency reads.
+-   **Benefit**: Fast updates without rewriting entire files; incremental processing for downstream apps.
+
+**Scenario 3: Databricks Shop**
+Startup builds entire data platform on Databricks.
+
+-   **Choice**: Delta Lake.
+-   **Reason**: Native integration, optimized performance, simple management.
+-   **Benefit**: Seamless experience with Unity Catalog, MLflow, and Spark.
+
+**Scenario 4: Regulatory Audit**
+Financial firm needs to reconstruct data state from 6 months ago.
+
+-   **Choice**: Any (Iceberg/Hudi/Delta).
+-   **Feature**: Time Travel.
+-   **Action**: Query table `AS OF TIMESTAMP '2023-01-01'`.
+-   **Benefit**: Exact reproduction of historical data for auditors without maintaining separate backups.
+
+**Scenario 5: Changing Partition Strategy**
+Data volume grew, and monthly partitions are too large. Need daily partitions.
+
+-   **Choice**: Apache Iceberg.
+-   **Feature**: Hidden Partitioning / Partition Evolution.
+-   **Action**: Update partition spec in metadata.
+-   **Benefit**: No need to rewrite terabytes of historical data; new writes use new scheme, old reads still work.
+
+## Key Takeaways
+
+-   Modern table formats add ACID transactions and metadata management to object storage.
+-   Iceberg excels in multi-engine interoperability and hidden partitioning.
+-   Hudi is optimized for streaming ingestion and frequent upserts.
+-   Delta Lake offers simplicity and deep integration with Spark/Databricks.
+-   All three support Schema Evolution, Time Travel, and Compaction.
+-   Choice depends on your existing ecosystem, workload patterns (batch vs. stream), and engine preferences.
+-   Avoid vendor lock-in by considering open standards like Iceberg.
+-   Metadata management is key to performance and reliability.
+-   These formats enable the true Lakehouse architecture.
+-   Understand the trade-offs between Copy-on-Write and Merge-on-Read strategies.
+
+> [!Important]
+> **The format is just the foundation**: Choosing Iceberg, Hudi, or Delta is critical, but success also depends on proper compaction strategies, partition design, and governance. Monitor file sizes and metadata overhead. Regularly compact small files to maintain query performance. The right format enables reliability, but good operational practices ensure scalability.
