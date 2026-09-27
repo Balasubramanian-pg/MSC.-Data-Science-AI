@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 3: Activation Diagnostics
 
 Activation diagnostics evaluate the distributional health, variance stability, and representation expressiveness of hidden layer outputs across the forward pass. Because backpropagated error gradients depend directly on the local derivatives and activation values generated during forward execution, unhealthy activation distributions destabilize entire training runs. Tracking layer-wise activation statistics, identifying dead neurons, and measuring representation rank allow practitioners to detect representational collapse long before validation metrics reveal severe degradation.
@@ -74,4 +73,61 @@ Activation diagnostics evaluate the distributional health, variance stability, a
 - Tracking the algebraic rank of activation matrices is computationally noisy due to floating-point rounding errors.
 - The **Stable Rank ($\text{srank}$)** provides a continuous, numerically robust measure of effective representation dimensionality:
   $$\text{srank}\left(A^{[l]}\right) = \frac{\|A^{[l]}\|_F^2}{\|A^{[l]}\|_2^2} = \frac{\sum_{i=1}^r \sigma_i^2}{\sigma_{\max}^2}$$
-  where $\|A\|_F$ is the Frobenius norm, $\|A\|_2 = \sigma_{\max}$ is the spectral norm (largest singular value), and $\sigma_i$ are the singular values 
+  where $\|A\|_F$ is the Frobenius norm, $\|A\|_2 = \sigma_{\max}$ is the spectral norm (largest singular value), and $\sigma_i$ are the singular values of $A^{[l]}$.
+- The stable rank satisfies $1 \le \text{srank}(A) \le \text{rank}(A)$.
+- A sudden plunge in $\text{srank}(A^{[l]})$ toward $1.0$ confirms representation collapse, indicating that the singular spectrum is dominated by a single principal component.
+
+> [!Tip]
+> **Stable rank monitoring**: compute the stable rank of hidden activation tensors periodically; a sharp drop in stable rank reveals dimensional collapse before training loss plateaus.
+
+## Remediation Frameworks for Activation Pathologies
+
+### Normalization Architectures
+
+- Normalization layers stabilize forward distributions by explicitly enforcing mean and variance targets across specific tensor dimensions.
+- **Batch Normalization (BatchNorm):** Normalizes activations across the mini-batch dimension $m$, re-centering the distribution to zero mean and unit variance before scaling by learned parameters $\gamma$ and $\beta$:
+  $$\hat{z}^{[l]} = \frac{z^{[l]} - \mu_{\mathcal{B}}}{\sqrt{\sigma_{\mathcal{B}}^2 + \epsilon}}, \quad y^{[l]} = \gamma \hat{z}^{[l]} + \beta$$
+  BatchNorm keeps pre-activations centered within the linear, high-gradient regions of saturating functions.
+- **Layer Normalization (LayerNorm):** Computes normalization statistics across the feature channel dimension $n^{[l]}$ for each training instance independently, providing stability invariant to mini-batch sizes.
+- **Root Mean Square Normalization (RMSNorm):** Enforces variance scaling without computing channel-wise means, lowering computational overhead while preserving activation scale stability.
+
+### Non-Saturating and Self-Normalizing Activation Functions
+
+- Replacing standard ReLU with leaky variants prevents permanent neuron deactivation by providing a non-zero slope for negative inputs.
+- **Leaky ReLU:** Introduces a small fixed positive slope $\alpha$ (typically $\alpha = 0.01$) for negative pre-activations:
+  $$g(z) = \max(\alpha z, z)$$
+- **Parametric ReLU (PReLU):** Treats the negative slope $\alpha$ as a learnable parameter optimized alongside network weights via backpropagation.
+- **Exponential Linear Unit (ELU):** Smooths the negative activation region toward a negative saturation plateau $-\alpha$, bringing mean activations closer to zero:
+  $$g(z) = \begin{cases} z & \text{if } z > 0 \\ \alpha(e^z - 1) & \text{if } z \le 0 \end{cases}$$
+- **Scaled Exponential Linear Unit (SELU):** When combined with LeCun initialization and dropout-free training, SELU induces a mathematical fixed-point attractor that drives activation distributions toward zero mean and unit variance automatically across depth.
+- **Gaussian Error Linear Unit (GeLU):** Weights inputs by the cumulative distribution function of the standard Gaussian distribution, yielding a smooth, non-monotonic curve that avoids hard zero-gradient cutoffs:
+  $$\text{GeLU}(z) = z \cdot \Phi(z) = z \cdot P(X \le z), \quad X \sim \mathcal{N}(0, 1)$$
+
+> [!Important]
+> **Leaky activations prevent dead zones**: adopting Leaky ReLU or GeLU guarantees that all neurons maintain non-zero derivatives across their entire input domains, preventing unrecoverable unit death during large descent steps.
+
+## Comparative Diagnostic Matrix of Activation Pathologies
+
+| Activation Pathology | Telemetry Diagnostic Signal | Underlying Mathematical Cause | Impact on Training Progression | Prescribed Remediation |
+|---|---|---|---|---|
+| **Saturation** | Activations cluster near boundaries ($\pm 1$ or $0, 1$); derivative $g'(z) \approx 0$ | Excessive weight scale $\|W^{[l]}\|$ or large unnormalized input magnitudes | Gradient backpropagation halts; weights freeze in early layers | Insert Batch/Layer Normalization; deploy Xavier initialization; scale input features |
+| **Dead ReLU Collapse** | Sparsity $S^{[l]} > 0.85$; neuron outputs $a_i = 0$ for all samples | Pre-activations driven permanently negative ($z \le 0$) by large descent steps | Effective network capacity drops; training error plateaus prematurely | Switch to Leaky ReLU ($\alpha=0.01$) or GeLU; lower learning rate; initialize biases to $0.01$ |
+| **Dimensional Collapse** | Stable rank $\text{srank}(A^{[l]}) \to 1$; singular values concentrate in $\sigma_1$ | Loss landscape encourages degenerate representations; unconstrained alignment | Model fails to separate classes; predicts identical outputs | Add contrastive regularization; apply weight decay; incorporate LayerNorm |
+| **Variance Extinction** | Variance drops exponentially ($\sigma_a^{2 [l]} \to 0$ as $l \to L$) | Sub-unitary singular values in weight matrices; inappropriate scaling | Signal vanishes before reaching output; loss remains static | Switch to He initialization for ReLUs; add residual identity skip connections |
+| **Variance Explosion** | Variance scales exponentially ($\sigma_a^{2 [l]} \gg 10^3$ as $l \to L$) | Super-unitary weight norms; lack of layer-wise normalization | Numerical overflow ($\text{NaN}/\text{Inf}$); unstable loss oscillations | Introduce LayerNorm or RMSNorm; rescale initial weights; enforce gradient clipping |
+
+> [!Tip]
+> **Telemetry review order**: analyze activation variance first, sparsity second, and stable rank third; isolating forward distributional failures early prevents unnecessary debugging of backward optimization code.
+
+## Key Takeaways
+
+- **Forward activation stability governs backward health**: the magnitude of backpropagated error gradients depends directly on the local derivatives evaluated during forward execution.
+- **Activation saturation paralyzes learning**: pre-activations that drift into the asymptotic regions of Sigmoid or Tanh activations reduce local derivatives to zero, terminating backpropagation.
+- **Dead ReLUs permanently reduce network capacity**: inputs that force ReLU pre-activations into persistent negative territory generate zero outputs and zero gradients, locking units out of further training.
+- **Statistical telemetry detects forward failure modes**: tracking layer-wise mean, variance, and sparsity exposes distributional drift, variance extinction, and variance explosion across layers.
+- **Stable rank quantifies representation health**: measuring the continuous effective dimensionality of activation matrices reveals representation collapse before performance drops become apparent.
+- **Normalization layers enforce distributional bounds**: BatchNorm, LayerNorm, and RMSNorm maintain centered activations and stable variances, preventing layers from drifting into saturation.
+- **Non-saturating activations preserve gradient flow**: Leaky ReLU, ELU, and GeLU eliminate hard zero derivatives, allowing stalled neurons to recover during subsequent optimization steps.
+
+> [!Important]
+> **Activation health is a prerequisite for convergence**: monitoring hidden activation distributions and representation ranks provides early detection of network degeneration, ensuring deep architectures maintain stable information flow before optimization resources are committed.
