@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 3: Creating Your First DAG
 
 Creating Your First DAG:
@@ -22,4 +21,31 @@ Essential DAG Arguments and Configurations:
 - catchup: A boolean setting controlling historical execution. Setting catchup to False instructs Airflow to run only the most recent scheduled interval when the pipeline is activated, avoiding the automatic backfilling of all historical intervals between the start date and the current day.
 - max active runs: Restricts how many instances of the DAG can execute simultaneously, protecting target database systems from concurrent query spikes.
 
-Core Airflo
+Core Airflow Operators:
+
+- BashOperator: Executes shell commands, local script files, or command-line utilities via the bash command parameter.
+- PythonOperator: Invokes a custom Python function using the python callable parameter, passing dynamic arguments through dictionary or list parameters.
+- EmptyOperator: Serves as a logical placeholder node without executing computational work, commonly used to join branching execution paths or mark unified pipeline start and end points.
+- EmailOperator: Dispatches automated email messages containing execution notifications, summary reports, or operational alerts.
+
+Defining Task Dependencies:
+
+- Downstream bitshift operator: The double greater-than symbol sets downstream dependencies, meaning task A must complete successfully before task B begins execution.
+- Upstream bitshift operator: The double less-than symbol sets upstream dependencies, meaning task B depends on task A finishing first.
+- Linear execution flows: Connecting individual tasks in a single chain ensures strict serial processing, such as extraction followed by validation followed by loading.
+- Parallel execution flows: Placing multiple tasks inside Python square brackets allows those tasks to run concurrently. An upstream extraction task can trigger two independent transformation tasks simultaneously, which both feed into a single final reconciliation task.
+
+Validating and Testing Your DAG:
+
+- Syntax and compilation check: Running the Python script directly from the terminal validates that the code compiles without throwing syntax errors, missing module imports, or circular dependency exceptions.
+- CLI task testing: The airflow tasks test command executes a single task instance locally within the terminal for a specific logical date, bypassing the scheduler daemon and metadata database writes to speed up logic verification.
+- Web UI activation: Once verified locally, placing the file in the dags directory allows the scheduler to discover the pipeline, display it in the browser dashboard, and allow users to unpause the pipeline toggle.
+
+Key Takeaways:
+
+- Every Airflow workflow is constructed through five standard steps: importing modules, defining default arguments, instantiating the DAG, declaring tasks, and setting dependencies.
+- A DAG start date must always be a static historical datetime rather than a dynamic current timestamp.
+- Setting catchup to False prevents unintended automated historical executions when activating newly deployed DAGs.
+- Operators encapsulate units of work, ranging from shell scripts and Python functions to external platform connectors.
+- Bitshift operators establish execution direction, supporting both linear sequential flows and parallel task execution.
+- Running command-line compilation checks and task-level tests speeds up debugging before deploying workflows to production.
