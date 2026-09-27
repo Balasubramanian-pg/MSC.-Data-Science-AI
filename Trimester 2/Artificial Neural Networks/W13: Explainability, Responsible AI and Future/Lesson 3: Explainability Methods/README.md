@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 3: Explainability Methods
 
 Explainability methods extract human-interpretable rationales from complex neural networks, bridging the gap between non-linear tensor representations and human cognitive understanding. By probing input-output dynamics, integrating backpropagated gradients, or projecting feature activations into spatial attribution maps, these techniques quantify the relative influence of individual inputs. Implementing explainability methods requires understanding their mathematical mechanics, axiomatic guarantees, and computational constraints to select appropriate auditing instruments for tabular, visual, and sequential architectures.
@@ -67,4 +66,69 @@ Explainability methods extract human-interpretable rationales from complex neura
 - Let $A_k(i, j)$ denote the spatial activation of channel $k$ in the terminal convolutional layer at pixel coordinate $(i, j)$.
 - The GAP operation averages spatial coordinates to yield channel vector $F_k = \frac{1}{Z} \sum_{i} \sum_{j} A_k(i, j)$.
 - The logit for target class $c$ evaluates as:
-  $$S_c = \sum_k w_k^c F_k = \frac{1}{Z} \sum_{i, j} \sum_k w_k^c A_k(i
+  $$S_c = \sum_k w_k^c F_k = \frac{1}{Z} \sum_{i, j} \sum_k w_k^c A_k(i, j)$$
+- The class activation map maps directly to:
+  $$M_{\text{CAM}}^c(i, j) = \sum_k w_k^c A_k(i, j)$$
+- While mathematically exact, standard CAM requires altering network architectures to enforce GAP layers, necessitating full model retraining.
+
+### Gradient-Weighted Class Activation Mapping (Grad-CAM)
+
+- **Grad-CAM** generalizes activation mapping to arbitrary convolutional neural networks without requiring structural layer modifications or retraining.
+- Grad-CAM calculates importance weights $\alpha_k^c$ for each feature map $k$ by computing the global-average-pooled gradient of class logit $y^c$ with respect to activation map $A^k$:
+  $$\alpha_k^c = \frac{1}{Z} \sum_{i=1}^U \sum_{j=1}^V \frac{\partial y^c}{\partial A_{i, j}^k}$$
+  where $Z = U \times V$ represents the spatial dimensions of the feature map.
+- The final heat map aggregates the weighted feature maps through a Rectified Linear Unit:
+  $$L_{\text{Grad-CAM}}^c = \text{ReLU}\left( \sum_k \alpha_k^c A^k \right)$$
+- The **ReLU operator** is critical: it isolates features that exert a positive correlation with target class $c$, filtering out background patterns that contribute toward opposing classification categories.
+- Upsampling $L_{\text{Grad-CAM}}^c$ to the input image dimensions yields a coarse spatial localization of class-defining visual features.
+
+> [!Tip]
+> **Grad-CAM target layer selection**: compute Grad-CAM over the terminal convolutional layer of a vision model; early layers capture low-level edges and textures, while final convolutional layers encode high-level semantic objects.
+
+## Sanity Checks and Explanatory Failure Modes
+
+### The Saliency Sanity Protocol
+
+- Saliency methods can generate visually compelling heatmaps that do not reflect learned network parameters.
+- **The Model Parameter Randomization Test (Cascading Randomization):** Progressively randomizes the weights of a trained network from the terminal classification layer down to the initial convolutional layer.
+  - A valid explanation method must degrade and lose coherence as layer weights randomize.
+  - Empirical audits reveal that methods like *Guided Backpropagation* and *Guided Grad-CAM* produce identical edge-detection heatmaps even when all model weights are completely randomized, proving they act as edge detectors invariant to learned parameters.
+- **The Data Randomization Test:** Evaluates whether an attribution method changes when a network is trained on permuted labels. Explanations that remain invariant between models trained on true labels and random labels fail the sanity check.
+- Integrated Gradients and Grad-CAM successfully pass cascading parameter randomization tests, confirming their fidelity to internal learned representations.
+
+### Explanation Manipulation and Fragility
+
+- Post-hoc explainers remain vulnerable to **adversarial manipulation**.
+- Adding imperceptible perturbations ($\|\delta\|_\infty \le \epsilon$) to input images can alter the resulting saliency map completely while leaving the underlying classification label unchanged.
+- LIME and KernelSHAP can be deceived by adversarial wrappers that detect whether an input is an authentic sample or a synthetic perturbation, executing fair behavior on perturbations while executing biased logic on actual inputs.
+
+> [!Important]
+> **Visual edge-detection artifacts**: never deploy Guided Backpropagation or Guided Grad-CAM for model audits, because their visual outputs reflect low-level input image gradients rather than the decision logic of trained weight parameters.
+
+## Comparative Taxonomy of Explainability Methods
+
+| Method | Scope | Access Requirement | Mathematical Formulation | Axiomatic Foundation | Primary Technical Limitation |
+|---|---|---|---|---|---|
+| **LIME** | Local | Model-Agnostic | $\arg\min_{g} \mathcal{L}(f, g, \pi_x) + \Omega(g)$ | Heuristic local surrogate | Sampling instability; sensitive to kernel width |
+| **KernelSHAP** | Local | Model-Agnostic | Shapley kernel weighted regression | Efficiency, Symmetry, Additivity | Computationally expensive ($O(2^{|F|})$ combinations) |
+| **Integrated Gradients** | Local | Model-Specific (Gradients) | $(x_i - x_i') \int_0^1 \nabla_x F(x' + \alpha(x - x')) d\alpha$ | Completeness, Invariance | Sensitivity to reference baseline choice ($x'$) |
+| **SmoothGrad** | Local | Model-Specific (Gradients) | $\frac{1}{N} \sum \nabla_x S_c(x + \mathcal{N}(0, \sigma^2 I))$ | Heuristic noise reduction | Computationally multiplied ($N \ge 50$ forward-backward passes) |
+| **Grad-CAM** | Local | Model-Specific (Activations) | $\text{ReLU}(\sum_k \alpha_k^c A^k)$ | Gradient-weighted pooling | Coarse spatial resolution bounded by feature map grid |
+| **TreeSHAP** | Local & Global | Model-Specific (Tree-based) | Recursive tree path conditional expectations | Efficiency, Additivity | Restricted strictly to decision trees and gradient boosted ensembles |
+
+> [!Tip]
+> **Method pairing for comprehensive audits**: deploy Integrated Gradients to evaluate feature-level numerical attributions on continuous inputs, paired with Grad-CAM to localize macroscopic spatial activations in convolutional backbones.
+
+## Key Takeaways
+
+- **Post-hoc methods interpret black-box systems**: attribution frameworks extract local or global importance scores without constraining the architectural capacity of the underlying model.
+- **LIME fits local linear approximations**: perturbation sampling around a target instance constructs a locally linear surrogate, though it remains prone to sampling variance.
+- **SHAP enforces axiomatic attribution**: grounded in cooperative game theory, Shapley values provide the only attribution framework that satisfies efficiency, missingness, symmetry, and additivity.
+- **Integrated Gradients resolves gradient saturation**: integrating partial derivatives along a straight line from a neutral baseline satisfies the completeness axiom and prevents zero-gradient artifacts.
+- **Grad-CAM pools spatial feature gradients**: weighting final convolutional feature maps by backpropagated class gradients localizes visual regions of interest without requiring architectural redesign.
+- **The ReLU operator isolates positive class evidence**: Grad-CAM applies ReLU to exclude features whose activation correlates negatively with the target class.
+- **Sanity checks expose pseudo-explanations**: parameter randomization tests prove that methods like Guided Backpropagation function as image edge detectors rather than indicators of learned model weights.
+- **Attribution methods remain susceptible to perturbations**: adversarial input shifts can alter saliency maps without changing model predictions, requiring robust baseline verification.
+
+> [!Important]
+> **Axiomatic grounding ensures explanation fidelity**: select attribution tools that satisfy formal mathematical axioms—such as Integrated Gradients and SHAP—to guarantee that explanations accurately represent parameter contributions rather than visualization artifacts.
