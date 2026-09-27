@@ -1,4 +1,3 @@
-# Migration in progress
 # W09: Databases & Data Processing - Lesson 4: Summary and Assessment
 
 This lesson summarizes the AWS database portfolio and data processing services. It covers relational databases with Amazon RDS and Aurora, NoSQL with Amazon DynamoDB, data warehousing with Amazon Redshift, data integration with AWS Glue, streaming with Amazon Kinesis, migration with AWS DMS, and orchestration with AWS Step Functions. The goal is to select the right database for a workload and build pipelines that move, transform, and analyse data at scale.
@@ -111,4 +110,168 @@ Data processing services match the velocity and shape of the data. Batch ETL, re
 
 - Glue is a serverless data integration service for ETL, schema discovery, and data cataloguing.
 - Glue crawlers discover schemas and populate the Data Catalog.
-- Glue ETL jobs transform, co
+- Glue ETL jobs transform, compress, and partition data.
+- Job bookmarks track processed data to avoid reprocessing.
+- Glue supports Apache Spark, Python Shell, Ray, and streaming ETL jobs.
+
+### Amazon Kinesis
+
+- Kinesis Data Streams captures gigabytes per second with configurable retention from 24 hours to 365 days.
+- Kinesis Data Firehose loads streaming data into S3, Redshift, OpenSearch, and other destinations.
+- Kinesis Data Analytics processes streaming data with SQL or Apache Flink.
+- Kinesis Video Streams handles video for analytics and machine learning.
+
+### AWS DMS and Step Functions
+
+- AWS DMS migrates databases to AWS with minimal downtime. The source remains operational during migration.
+- AWS Schema Conversion Tool converts schema and code for heterogeneous migrations.
+- AWS Step Functions orchestrates serverless ETL pipelines with error handling, retry logic, and notifications.
+- A common pattern uses S3 event notifications, Lambda validation, Step Functions orchestration, Glue transformation, and SNS error notifications.
+
+> [!Important]
+> **Match the processing service to the data velocity**: Use Glue for batch ETL. Use Kinesis for real-time streaming. Use DMS for migration. Use Step Functions for orchestration. Redshift is for analytics, not transactions. Glue is serverless but not free. Kinesis Firehose is the easiest way to load streaming data into AWS data stores.
+
+## Integrated Data Architecture
+
+```mermaid
+flowchart TD
+    A[Data Sources] --> B{Data Velocity}
+    B -->|Batch| C[AWS Glue]
+    B -->|Streaming| D[Amazon Kinesis]
+    B -->|Migration| E[AWS DMS]
+    C --> F[Amazon S3 Data Lake]
+    D --> F
+    E --> G[Amazon RDS or Aurora]
+    F --> H[Amazon Redshift]
+    G --> H
+    H --> I[BI and Analytics]
+    C --> J[AWS Step Functions]
+    D --> J
+    J --> K[Notifications and Monitoring]
+```
+
+- Data sources feed into batch, streaming, or migration paths.
+- Glue transforms batch data into Parquet in S3.
+- Kinesis streams real-time data into S3 or Redshift.
+- DMS migrates databases to RDS or Aurora.
+- Redshift queries the data lake and databases for analytics.
+- Step Functions orchestrates the workflow and handles errors.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Compare the AWS database categories and give a service for each.
+2. Explain the difference between Amazon RDS and Amazon Aurora.
+3. Describe the two RDS Multi-AZ deployment modes and their failover characteristics.
+4. Explain how RDS read replicas work and what they are used for.
+5. Describe Aurora's distributed storage architecture.
+6. Explain how Aurora Serverless v2 and Aurora Global Database work.
+7. Compare DynamoDB on-demand and provisioned capacity modes.
+8. Explain the difference between Global Secondary Indexes and Local Secondary Indexes.
+9. Describe the core components of DynamoDB: tables, items, and attributes.
+10. Explain why DynamoDB is not a replacement for relational databases.
+11. Describe the Redshift architecture and its MPP design.
+12. Explain the purpose of Redshift Spectrum and federated queries.
+13. Describe the components of AWS Glue.
+14. Compare Kinesis Data Streams, Firehose, and Analytics.
+15. Explain the purpose of AWS DMS and its migration types.
+16. Describe how Step Functions orchestrates ETL pipelines.
+
+### Scenario Questions
+
+**Scenario 1: High-Traffic Web Application**
+A SaaS platform needs a relational database that can handle high traffic with auto-scaling storage and fast failover. What should they use?
+
+- Use Amazon Aurora MySQL or PostgreSQL.
+- Aurora provides auto-scaling storage, up to 15 read replicas, and failover under 30 seconds.
+- Use Aurora Global Database for multi-Region disaster recovery.
+- Use Aurora Serverless v2 for variable workloads.
+
+**Scenario 2: Gaming Leaderboard**
+A gaming company needs a database that can handle millions of reads and writes per second with single-digit millisecond latency. What should they use?
+
+- Use Amazon DynamoDB.
+- Use on-demand capacity mode for unpredictable traffic.
+- Use DAX for microsecond read latency.
+- Use Global Tables for multi-Region active-active replication.
+
+**Scenario 3: Business Intelligence Reporting**
+A company needs to analyse petabytes of data from multiple sources for BI reporting. What should they use?
+
+- Use Amazon Redshift.
+- Use Redshift Spectrum to query S3 data directly.
+- Use federated queries to access RDS and Aurora data.
+- Use concurrency scaling for high-concurrency workloads.
+- Use RA3 instances to separate compute and storage.
+
+**Scenario 4: Real-Time Clickstream Analytics**
+A company needs to process website clickstream data in real time and load it into S3 for analysis. What should they use?
+
+- Use Kinesis Data Streams to capture the stream.
+- Use Kinesis Data Firehose to load data into S3.
+- Use Kinesis Data Analytics for real-time SQL processing.
+- Use Glue to transform the data into Parquet format.
+- Use Redshift or Athena to query the data.
+
+**Scenario 5: Database Migration**
+A company wants to migrate an on-premises Oracle database to Aurora PostgreSQL with minimal downtime. What should they use?
+
+- Use AWS Schema Conversion Tool to convert schema and code.
+- Use AWS DMS for continuous replication.
+- Keep the source database operational during migration.
+- Cut over during a maintenance window.
+
+**Scenario 6: Serverless ETL Pipeline**
+A company needs to build an ETL pipeline that validates, transforms, and partitions CSV files uploaded to S3. What should they use?
+
+- Use S3 event notifications to trigger Lambda.
+- Use Step Functions to orchestrate the workflow.
+- Use Lambda to validate schema and data type.
+- Use Glue crawlers to discover schema.
+- Use Glue jobs to transform CSV to Parquet.
+- Use SNS for error notifications.
+
+```mermaid
+flowchart TD
+    A[Assessment Scenario] --> B{Database Type?}
+    B -->|Relational| C[RDS or Aurora]
+    B -->|NoSQL| D[DynamoDB]
+    B -->|Analytics| E[Redshift]
+    A --> F{Data Processing?}
+    F -->|Batch ETL| G[Glue]
+    F -->|Streaming| H[Kinesis]
+    F -->|Migration| I[DMS]
+    F -->|Orchestration| J[Step Functions]
+    C --> K[Validate with Pilot]
+    D --> K
+    E --> K
+    G --> K
+    H --> K
+    I --> K
+    J --> K
+```
+
+## Key Takeaways
+
+- AWS offers purpose-built databases for different data models and access patterns.
+- Relational databases such as RDS and Aurora are for ACID transactions and complex queries.
+- NoSQL databases such as DynamoDB are for high-throughput, low-latency, flexible-schema workloads.
+- Amazon RDS supports six engines and three deployment modes: Single-AZ, Multi-AZ DB instance, and Multi-AZ DB cluster.
+- Multi-AZ is for high availability. Read replicas are for read scaling. RDS Proxy is for connection pooling.
+- Amazon Aurora is the default choice for new PostgreSQL and MySQL workloads at scale.
+- Amazon DynamoDB is for key-based access patterns, not relational queries.
+- DynamoDB capacity modes are on-demand and provisioned. On-demand is recommended for most workloads.
+- DynamoDB Streams, DAX, Global Tables, transactions, and TTL provide event-driven processing, caching, multi-Region replication, ACID guarantees, and automatic cleanup.
+- Amazon Redshift is a petabyte-scale data warehouse for analytics and BI reporting.
+- AWS Glue is a serverless data integration service for ETL and data cataloguing.
+- Amazon Kinesis provides real-time streaming with Data Streams, Firehose, and Analytics.
+- AWS DMS migrates databases to AWS with minimal downtime.
+- AWS Step Functions orchestrates serverless ETL pipelines.
+- Choose the database by access pattern, not by familiarity.
+- Match the processing service to the data velocity: Glue for batch, Kinesis for streaming, DMS for migration, Step Functions for orchestration.
+- A modern application typically uses several database types together.
+- Design for the access pattern, not for a single database to do everything.
+
+> [!Important]
+> **Match the database to the access pattern, and the processing service to the data velocity**: The most common architectural mistake is forcing data into the wrong database or using the wrong processing service. Use relational for ACID transactions. Use key-value for high-throughput lookups. Use document for flexible schemas. Use graph for relationships. Use time-series for timestamped data. For data processing, use Glue for batch ETL, Kinesis for real-time streaming, DMS for migration, and Step Functions for orchestration. Design for the access pattern, secure by default, and optimise continuously.
