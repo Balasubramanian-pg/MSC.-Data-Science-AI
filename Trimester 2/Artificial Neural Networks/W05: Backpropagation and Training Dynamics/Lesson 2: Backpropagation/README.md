@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 2: Backpropagation
 
 ## The Backpropagation Algorithm: Mechanics and Implementation
@@ -85,4 +84,73 @@ The backpropagation algorithm evaluates the exact gradient of a scalar loss func
 
 ### Activation Caching Demands
 
-- Evaluating $dW^{[l]} = \frac{1}{m} (dZ^{[l]})^T A^{[l-1]}$ and $dZ^{[l]} = dA^{[l]} \odot g'(Z^{[l]})$ requires immediate access to fo
+- Evaluating $dW^{[l]} = \frac{1}{m} (dZ^{[l]})^T A^{[l-1]}$ and $dZ^{[l]} = dA^{[l]} \odot g'(Z^{[l]})$ requires immediate access to forward states $A^{[l-1]}$ and $Z^{[l]}$.
+- These forward activations must remain cached in GPU memory throughout the forward pass until the corresponding layer executes during the backward sweep.
+- In deep networks, the memory consumed by cached intermediate activations scales linearly with layer depth and batch size:
+  $$\text{Memory}_{\text{activations}} \propto \sum_{l=1}^L m \cdot n^{[l]}$$
+- For deep architectures and large batch sizes, activation memory frequently exceeds total available GPU RAM, far outstripping the static memory required to store model weights and biases.
+
+### The Activation Checkpointing Strategy
+
+- **Activation checkpointing** (gradient checkpointing) manages this memory bottleneck by trading compute cycles for memory capacity.
+- Rather than caching activations for every layer during the forward pass, the engine caches activations only at selected boundary layers (checkpoints).
+- During the backward pass, when an un-checkpointed intermediate layer requires its forward activations to compute gradients, the framework recomputes those activations on the fly from the nearest preceding checkpoint.
+- Checkpointing reduces peak activation memory consumption from $O(L)$ to $O(\sqrt{L})$ for an $L$-layer network, while adding approximately 20% to 30% additional forward computational overhead.
+
+> [!Tip]
+> **Activation checkpointing trades compute for memory**: discarding intermediate activations during the forward pass and recalculating them on demand during backpropagation reduces peak memory usage with minimal computational slowdown.
+
+## Implementation Verification via Gradient Checking
+
+### Two-Sided Finite Difference Approximation
+
+- Custom autograd operators and low-level backpropagation implementations require verification against numerical approximations to catch algebraic and indexing errors.
+- **Finite difference approximation** estimates the gradient of a scalar function with respect to parameter $\theta_i$ by perturbing its value by a tiny scalar $\epsilon$:
+  $$\frac{\partial \mathcal{L}}{\partial \theta_i} \approx \frac{\mathcal{L}(\theta_1, \dots, \theta_i + \epsilon, \dots) - \mathcal{L}(\theta_1, \dots, \theta_i - \epsilon, \dots)}{2\epsilon}$$
+- The **two-sided (symmetric) difference formula** has an approximation truncation error of $O(\epsilon^2)$, providing significantly higher numerical accuracy than the one-sided formula ($\frac{f(\theta+\epsilon) - f(\theta)}{\epsilon}$), which has an error of $O(\epsilon)$.
+- The perturbation constant $\epsilon$ is typically chosen as $10^{-7}$ for double-precision (FP64) arithmetic, or $10^{-4}$ for single-precision (FP32) arithmetic.
+
+### Relative Error Metric and Tolerance Thresholds
+
+- To account for wide parameter variations across layers, numerical verification evaluates the normalized **relative error** between the analytically computed gradient vector $g_{\text{analytic}}$ and the finite difference vector $g_{\text{numerical}}$:
+  $$\text{Relative Error} = \frac{\|g_{\text{analytic}} - g_{\text{numerical}}\|_2}{\|g_{\text{analytic}}\|_2 + \|g_{\text{numerical}}\|_2}$$
+- The evaluation criteria follow strict numerical thresholds:
+  - **$\text{Relative Error} \le 10^{-7}$:** Derivations and code implementations are confirmed correct (in FP64).
+  - **$10^{-7} < \text{Relative Error} \le 10^{-4}$:** Results are suspicious; inspect specific parameter gradients and verify potential floating-point cancellation in the loss function.
+  - **$\text{Relative Error} > 10^{-4}$:** The backpropagation implementation contains an error; check transposed index alignments, missing scaling factors, or incorrect sign derivations.
+
+### Diagnostic Rules for Gradient Failures
+
+- Execute gradient checking exclusively in **double precision (FP64)** arithmetic; FP32 precision experiences catastrophic rounding cancellation that inflates relative error artificially.
+- Disable stochastic regularization layers, such as **Dropout**, and fix the running statistics of **Batch Normalization** prior to checking; randomness makes numerical finite differences non-deterministic.
+- Include regularization terms explicitly in the objective function $\mathcal{L}(\theta)$ during verification; omitting weight decay from the finite difference calculation produces systematic gradient discrepancies.
+
+> [!Important]
+> **Validate custom gradients using symmetric differences**: evaluating relative error with symmetric perturbations ($2\epsilon$) catches subtle matrix transposition errors before deploying custom autograd kernels to production training.
+
+## Mathematical Synthesis of Backpropagation Equations
+
+| Equation Label | Mathematical Formulation (Matrix Batch Form) | Output Tensor Shape | Functional Meaning |
+|---|---|---|---|
+| **BP1 (Terminal Error)** | $dZ^{[L]} = \nabla_{A^{[L]}} \mathcal{L} \odot g'^{[L]}(Z^{[L]})$ | $(m \times n^{[L]})$ | Converts output prediction discrepancies into pre-activation error signals |
+| **BP2 (Error Recurrence)** | $dZ^{[l]} = (dZ^{[l+1]} W^{[l+1]}) \odot g'^{[l]}(Z^{[l]})$ | $(m \times n^{[l]})$ | Propagates error signals backward through transposed weights and scales by activation derivatives |
+| **BP3 (Bias Gradient)** | $db^{[l]} = \frac{1}{m} (dZ^{[l]})^T \mathbf{1}_m$ | $(n^{[l]} \times 1)$ | Sums pre-activation errors across the batch dimension to evaluate bias sensitivities |
+| **BP4 (Weight Gradient)** | $dW^{[l]} = \frac{1}{m} (dZ^{[l]})^T A^{[l-1]}$ | $(n^{[l]} \times n^{[l-1]})$ | Computes average outer products between downstream errors and upstream forward activations |
+| **Upstream Propagation** | $dA^{[l-1]} = dZ^{[l]} W^{[l]}$ | $(m \times n^{[l-1]})$ | Evaluates intermediate activation gradients required to continue the reverse recurrence sweep |
+
+> [!Tip]
+> **Activation derivative scaling controls signal survival**: if a layer's activation derivative $g'^{[l]}(Z^{[l]})$ approaches zero, BP2 forces the error signal $dZ^{[l]}$ to zero, eliminating parameter updates in all earlier layers.
+
+## Key Takeaways
+
+- **Backpropagation evaluates exact analytical gradients** by recursively evaluating the multivariate chain rule across nested computational graph operations.
+- **The error vector $\delta^{[l]}$** represents the sensitivity of the objective loss with respect to pre-activations ($\frac{\partial \mathcal{L}}{\partial z^{[l]}}$), serving as the intermediate vehicle for error propagation.
+- **Transposed weight matrices ($W^T$)** route downstream error signals backward across synapses, allowing higher-layer errors to influence lower-layer updates.
+- **Weight gradients represent outer products** between downstream error vectors and upstream activation vectors ($dW = \delta a^T$), averaged across mini-batches.
+- **Batch matrix formulations** replace iterative per-sample outer products with matrix multiplications, maximizing computational efficiency on parallel hardware accelerators.
+- **Intermediate forward activations must be retained** throughout forward execution, creating a memory footprint that scales linearly with network depth and mini-batch size.
+- **Activation checkpointing** mitigates memory bottlenecks by retaining activations only at selected checkpoints, recalculating intermediate states on demand during backpropagation.
+- **Gradient checking** verifies custom backward implementations by comparing analytic gradient vectors against two-sided finite difference approximations using relative error metrics.
+
+> [!Tip]
+> The foundational insight of backpropagation: **reverse error propagation mirrors forward data flow**; while the forward pass evaluates affine combinations and non-linear activations to construct predictions, the backward pass evaluates transposed affine mappings and activation derivatives to compute exact parameter sensitivities.
