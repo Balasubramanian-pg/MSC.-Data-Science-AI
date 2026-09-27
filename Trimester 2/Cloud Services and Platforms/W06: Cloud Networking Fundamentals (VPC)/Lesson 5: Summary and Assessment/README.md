@@ -1,4 +1,3 @@
-# Migration in progress
 # W06: Cloud Networking Fundamentals (VPC) - Lesson 5: Summary and Assessment
 
 This module covers Amazon Virtual Private Cloud (VPC), the networking foundation of AWS. It spans IP addressing, subnets, route tables, gateways, security controls, connectivity options, and practical VPC design. The goal is to understand how to build secure, scalable, and highly available networks for cloud workloads.
@@ -166,4 +165,145 @@ This lesson walks through the practical steps of building a VPC from scratch.
 |---|---|---|
 | VPC | 10.0.0.0/16 | Entire VPC |
 | Public Subnet AZ A | 10.0.1.0/24 | Load balancers, NAT |
-| Public Sub
+| Public Subnet AZ B | 10.0.2.0/24 | Load balancers, NAT |
+| Private App Subnet AZ A | 10.0.11.0/24 | Application servers |
+| Private App Subnet AZ B | 10.0.12.0/24 | Application servers |
+| Private Data Subnet AZ A | 10.0.21.0/24 | Databases |
+| Private Data Subnet AZ B | 10.0.22.0/24 | Databases |
+
+### Common Mistakes
+
+| Mistake | Consequence | Prevention |
+|---|---|---|
+| Overlapping CIDRs | Cannot peer or connect on-premises | Plan IP space first |
+| Single NAT gateway | Single point of failure, cross-AZ costs | One NAT per AZ |
+| Public IPs on private instances | Increased attack surface | Disable auto-assign on private subnets |
+| Default security group | Overly permissive | Create purpose-built groups |
+| No Flow Logs | No visibility | Enable from the start |
+| Manual creation | Inconsistent, error-prone | Automate with IaC |
+
+> [!Important]
+> **Automate VPC deployment with infrastructure as code**: Terraform or CloudFormation ensures consistency, version control, and repeatable deployments.
+
+## Integrated View
+
+```mermaid
+flowchart TD
+    A[VPC Design] --> B[CIDR Planning]
+    B --> C[Subnets]
+    C --> D[Route Tables]
+    D --> E[Gateways]
+    E --> F[Security Groups and NACLs]
+    F --> G[Connectivity]
+    G --> H[Testing and Monitoring]
+    H --> I[Iterate and Improve]
+```
+
+- VPC design starts with IP planning and ends with testing and monitoring.
+- Each layer builds on the previous one.
+- Security and connectivity are intertwined.
+- Automation and documentation are essential.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Define a VPC and explain why it is the networking foundation of AWS.
+2. Describe how CIDR blocks define VPC and subnet IP ranges.
+3. Explain the difference between a public subnet and a private subnet.
+4. Describe how route tables control traffic flow in a VPC.
+5. Compare internet gateways and NAT gateways.
+6. Compare security groups and network ACLs across at least five dimensions.
+7. Explain the purpose of VPC peering, Transit Gateway, VPN, and Direct Connect.
+8. List five VPC design best practices.
+9. Explain why NAT gateways should be deployed in each Availability Zone.
+10. Describe the difference between inbound and outbound security group rules.
+11. Compare gateway endpoints and interface endpoints.
+12. Explain the purpose of endpoint policies.
+13. Compare bastion hosts and Session Manager for human access.
+14. Describe the steps to create a VPC from scratch.
+15. List five common VPC design mistakes and their prevention.
+
+### Scenario Questions
+
+**Scenario 1: Three-Tier Web Application**
+A company is deploying a three-tier web application (web, app, database) with high availability requirements. Design the VPC.
+
+- Create a VPC with a /16 CIDR block.
+- Deploy public subnets in two AZs for load balancers and NAT gateways.
+- Deploy private app subnets in two AZs for application servers.
+- Deploy private data subnets in two AZs for databases with no internet route.
+- Use security groups that reference each other.
+- Deploy one NAT gateway per AZ.
+
+**Scenario 2: Multi-VPC Connectivity**
+A company has five VPCs across two AWS accounts and needs to connect them all with segmentation between production and development.
+
+- Use AWS Transit Gateway as a central hub.
+- Attach all VPCs to the Transit Gateway.
+- Create separate route tables for production and development.
+- Use AWS RAM to share the Transit Gateway across accounts.
+- Connect on-premises networks via VPN or Direct Connect.
+
+**Scenario 3: Hybrid Cloud with On-Premises**
+A company needs consistent low-latency connectivity between its data center and AWS for large data transfers.
+
+- Use AWS Direct Connect for dedicated private connectivity.
+- Combine with Site-to-Site VPN for backup and encryption.
+- Use Transit Gateway to connect multiple VPCs to the on-premises network.
+- Deploy redundant Direct Connect connections for high availability.
+
+**Scenario 4: Private S3 Access**
+A private subnet needs to access S3 without going through a NAT gateway.
+
+- Create a gateway endpoint for S3.
+- Add the endpoint as a target in the private subnet route table.
+- Gateway endpoints are free and eliminate NAT data processing charges.
+- Verify that the S3 bucket policy allows access from the VPC endpoint.
+
+**Scenario 5: Securing a Database Tier**
+A database cluster must not be accessible from the internet.
+
+- Place the database in a private data subnet with no route to an internet gateway.
+- Use a security group that allows traffic only from the application tier security group.
+- Do not assign public IP addresses.
+- Use network ACLs as a secondary guardrail.
+- Enable VPC Flow Logs for monitoring.
+
+```mermaid
+flowchart TD
+    A[Assessment Scenario] --> B{VPC-to-VPC?}
+    B -->|Two VPCs| C[VPC Peering]
+    B -->|Many VPCs| D[Transit Gateway]
+    A --> E{Hybrid?}
+    E -->|Quick Setup| F[Site-to-Site VPN]
+    E -->|Consistent Performance| G[Direct Connect]
+    E -->|Remote Users| H[Client VPN]
+    A --> I{AWS Service Access?}
+    I -->|S3 or DynamoDB| J[Gateway Endpoint]
+    I -->|Other Services| K[Interface Endpoint]
+    A --> L{Human Access?}
+    L -->|Modern| M[Session Manager]
+    L -->|Traditional| N[Bastion Host]
+```
+
+## Key Takeaways
+
+- A VPC is a logically isolated virtual network in AWS. You control IP addressing, subnets, routing, and security.
+- VPCs do not span Regions. Resources in different Regions need peering or VPN.
+- CIDR blocks define the IP address range of your VPC. Plan for growth and avoid overlaps.
+- Subnets are AZ-specific IP ranges. Public subnets have a route to an internet gateway. Private subnets use NAT gateways for outbound access.
+- Route tables control traffic flow. Each subnet is associated with one route table. Longest prefix match determines routing.
+- An internet gateway connects a VPC to the internet. A NAT gateway enables outbound-only access for private subnets. Deploy one NAT gateway per AZ in production.
+- Security groups are stateful, instance-level firewalls with allow-only rules. Network ACLs are stateless, subnet-level firewalls with allow and deny rules.
+- VPC peering connects two VPCs directly. Transit Gateway connects many VPCs and on-premises networks through a central hub.
+- VPN uses the public internet for hybrid connectivity. Direct Connect provides a dedicated private connection. Use both for resilient hybrid connectivity.
+- Gateway endpoints provide free private access to S3 and DynamoDB. Interface endpoints use PrivateLink for other AWS services.
+- Session Manager provides secure, auditable access to EC2 instances without open inbound ports or bastion hosts.
+- Best practices include non-overlapping IP plans, multi-AZ subnet design, security groups as primary controls, VPC endpoints, and automation.
+- Design the VPC before deploying workloads. Automate deployment with infrastructure as code.
+- Test connectivity with Reachability Analyzer and VPC Flow Logs before production.
+- Common mistakes include overlapping CIDRs, single NAT gateways, public IPs on private instances, and manual configuration.
+
+> [!Important]
+> **Design your VPC as a foundation, not an afterthought**: The VPC is the network foundation for every workload. A well-designed VPC supports security, availability, and cost optimization. A poorly designed VPC is difficult to change and creates technical debt. Plan IP space, subnet layout, routing, and security controls before launching production resources. Automate deployment with infrastructure as code and validate connectivity with testing tools.
