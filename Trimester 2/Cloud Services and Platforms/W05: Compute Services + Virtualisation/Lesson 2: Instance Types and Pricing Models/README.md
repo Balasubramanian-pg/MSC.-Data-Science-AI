@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 2: Instance Types and Pricing Models
 
 This lesson goes deeper into EC2 instance types and pricing models. It explains how instance families are organized, what each family is optimized for, and how to match workloads to the right instance type. It then covers the four pricing models in detail, including commitment levels, discounts, and interruption risks. The goal is to build the judgment needed to right-size instances and choose the most cost-effective pricing model.
@@ -134,4 +133,150 @@ EC2 offers four pricing models designed to match different workload patterns and
 - A 1-year Standard RI brings around 40% discount on On-Demand, and a 3-year Standard RI around 60%.
 - Provide capacity reservation options for zonal RIs.
 - Can be resold on the AWS marketplace if no longer needed.
-- Best for steady-state, predictab
+- Best for steady-state, predictable workloads.
+
+### Savings Plans
+
+- Commit to a consistent amount of compute usage (measured in dollars per hour) for a 1-year or 3-year term.
+- Two types: Compute Savings Plans (apply to EC2, Lambda, and Fargate across any region) and EC2 Instance Savings Plans (apply to a specific instance family in one region).
+- Offer up to 72% discount, similar to Reserved Instances.
+- More flexible than Reserved Instances because they apply automatically to eligible usage.
+- Best for workloads that may change instance families or regions over time.
+
+### Spot Instances
+
+- Use spare EC2 capacity at up to 90% discount compared to On-Demand.
+- Can be interrupted with a two-minute warning when AWS needs the capacity back.
+- Best for fault-tolerant workloads: batch processing, CI/CD, big data analytics, and stateless web servers.
+- Spot Fleet and EC2 Auto Scaling can manage Spot Instances automatically, replacing interrupted instances.
+- Should never be used for workloads that cannot tolerate interruption, such as databases or stateful applications.
+
+> [!Important]
+> **Spot Instances require interruption-tolerant design**: Use Spot Instances for stateless, fault-tolerant workloads that can be restarted. Use Auto Scaling groups with mixed instance policies to automatically replace interrupted Spot Instances with On-Demand or new Spot capacity.
+
+## Reserved Instances vs Savings Plans
+
+| Dimension | Reserved Instances | Savings Plans |
+|---|---|---|
+| Commitment | Instance family, region, OS, tenancy | EC2: instance family and region; Compute: any region |
+| Flexibility | Low | High (Compute Savings Plans) |
+| Discount | Up to 72% | Up to 72% (EC2); up to 66% (Compute) |
+| Capacity Reservation | Yes (zonal RIs) | No |
+| Resale | Yes (marketplace) | No |
+| Coverage | EC2 only | EC2, Lambda, and Fargate (Compute Savings Plans) |
+
+- Reserved Instances provide capacity reservation options and can be resold on the AWS marketplace.
+- Savings Plans are more flexible and apply automatically to eligible usage.
+- Compute Savings Plans cover EC2, Lambda, and Fargate across any region and instance family.
+- EC2 Instance Savings Plans offer the lowest prices with a commitment to a specific instance family in one region.
+
+> [!Tip]
+> **Start with Compute Savings Plans**: If you are unsure about long-term instance family choices, Compute Savings Plans offer the best balance of discount and flexibility. They cover EC2, Lambda, and Fargate across any region.
+
+## Cost Optimization Strategy
+
+The key to EC2 cost optimization is matching the pricing model to the workload pattern and right-sizing instances to the workload profile.
+
+### Decision Framework
+
+```mermaid
+flowchart TD
+    A[Start Cost Optimization] --> B{Workload Predictable?}
+    B -->|Yes, 24/7| C[Reserved Instances or Savings Plans]
+    B -->|No, Variable| D{Fault Tolerant?}
+    B -->|Short-Term| E[On-Demand]
+    D -->|Yes| F[Spot Instances]
+    D -->|No| G[On-Demand or Savings Plans]
+    C --> H{Instance Family Stable?}
+    H -->|Yes| I[EC2 Instance Savings Plans or RIs]
+    H -->|No| J[Compute Savings Plans]
+    F --> K[Auto Scaling with Mixed Instances]
+    G --> L[Right-Size and Monitor]
+```
+
+### Right-Sizing
+
+- Right-sizing means choosing the smallest instance type that meets the workload's performance requirements.
+- Over-provisioning wastes money. Under-provisioning hurts performance.
+- Use AWS Compute Optimizer to get recommendations based on historical utilization metrics.
+- Review instance utilization regularly and adjust as workload patterns change.
+- Graviton instances often provide better price-performance than x86 for compatible workloads.
+
+> [!Important]
+> **Right-sizing is continuous**: Workload patterns change. An instance that was right-sized six months ago may be over-provisioned today. Review utilization monthly and adjust instance types and pricing models accordingly.
+
+### Cost Optimization Checklist
+
+| Action | Expected Savings |
+|---|---|
+| Use Graviton instances for compatible workloads | 20-40% better price-performance |
+| Commit with Savings Plans for steady-state usage | Up to 72% |
+| Use Spot Instances for fault-tolerant workloads | Up to 90% |
+| Right-size instances with Compute Optimizer | 10-30% |
+| Use Auto Scaling to match capacity to demand | Variable |
+| Delete unused instances and volumes | 100% of wasted cost |
+
+> [!Tip]
+> **Layer your cost strategy**: Start with right-sizing and Graviton migration. Then commit with Savings Plans for predictable baseline usage. Then use Spot Instances for the flexible portion. This layered approach captures the most savings without sacrificing reliability.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. List the five EC2 instance families and describe the workload profile each is optimized for.
+2. Explain how Graviton processors differ from x86 processors and what benefits they offer.
+3. Compare the four EC2 pricing models in terms of commitment, discount, and interruption risk.
+4. Explain the difference between Reserved Instances and Savings Plans.
+5. Describe when Spot Instances are appropriate and when they should be avoided.
+6. Explain how right-sizing contributes to cost optimization.
+7. Describe how to layer cost optimization strategies for maximum savings.
+
+### Scenario Questions
+
+**Scenario 1: Steady-State Web Application**
+A company runs a web application with predictable traffic that runs 24/7. The application is Linux-based and uses Python. Which instance family and pricing model should they use?
+
+- Use general purpose instances like M7g or M9g powered by Graviton.
+- Use Reserved Instances or EC2 Instance Savings Plans for up to 72% discount.
+- Deploy across multiple Availability Zones for high availability.
+- Test the application on Graviton before committing to x86.
+
+**Scenario 2: Batch Processing Job**
+A research team needs to run large-scale batch processing jobs that can be interrupted and restarted. The jobs run for 2-4 hours each. Which pricing model should they use?
+
+- Use Spot Instances for up to 90% discount.
+- Choose compute optimized instances like C7g or C9g.
+- Use Auto Scaling groups with mixed instance policies to handle interruptions.
+- Design the job to checkpoint progress so it can resume after interruption.
+
+**Scenario 3: In-Memory Database**
+A company needs to run a Redis cache with a large memory footprint. The workload is steady-state and runs continuously. Which instance family and pricing model should they use?
+
+- Use memory optimized instances like R7g or R9g.
+- Use Reserved Instances for steady-state workloads to get up to 72% discount.
+- Enable EBS encryption for data at rest.
+- Monitor memory utilization and right-size as the cache grows.
+
+**Scenario 4: Machine Learning Training**
+A team needs to train deep learning models with GPU acceleration. Training jobs run for several hours and can be checkpointed. Which instance family and pricing model should they use?
+
+- Use accelerated computing instances like P4, P5, or Trn1.
+- Use Spot Instances for fault-tolerant training jobs to reduce cost.
+- Consider Savings Plans for predictable training workloads.
+- Use checkpointing to resume training after Spot interruptions.
+
+## Key Takeaways
+
+- EC2 offers over 1,000 instance types across five families: general purpose, compute optimized, memory optimized, storage optimized, and accelerated computing.
+- General purpose instances (M, T) provide balanced resources for most workloads. Compute optimized (C) is for CPU-bound workloads. Memory optimized (R, X) is for in-memory databases. Storage optimized (D, H, I) is for high IOPS and throughput. Accelerated computing (P, G, Inf, Trn) is for GPU and ML workloads.
+- AWS Graviton processors offer up to 40% better price-performance than comparable x86 instances.
+- EC2 pricing models include On-Demand, Reserved Instances, Savings Plans, and Spot Instances.
+- Reserved Instances and Savings Plans offer up to 72% discount for 1- or 3-year commitments.
+- Spot Instances offer up to 90% discount but can be interrupted with a two-minute warning.
+- Savings Plans are more flexible than Reserved Instances and cover EC2, Lambda, and Fargate.
+- Right-sizing is the first step in cost optimization. Use Compute Optimizer to identify over-provisioned instances.
+- Layer your cost strategy: right-size, migrate to Graviton, commit with Savings Plans, and use Spot for flexible capacity.
+- Match instance family to the workload profile and pricing model to the workload pattern.
+
+> [!Important]
+> **Match the instance family to the workload, and the pricing model to the pattern**: The two biggest decisions in EC2 are which instance family to use and which pricing model to choose. Choosing the wrong family leads to poor performance or wasted cost. Choosing the wrong pricing model leaves money on the table. Right-size continuously and commit only when usage is predictable.
