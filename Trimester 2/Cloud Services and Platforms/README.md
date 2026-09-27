@@ -1,6 +1,8 @@
-# Migration in progress
 # Cloud Services and Platforms
 
 Initial directory setup.
 
-## Overvi
+## Overview
+- Module resources and notes will be added here.
+
+Status: Active
