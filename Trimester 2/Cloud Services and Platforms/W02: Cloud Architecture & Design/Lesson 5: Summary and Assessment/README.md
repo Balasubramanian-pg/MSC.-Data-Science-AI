@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 5: Summary and Assessment
 
 *The README content is not attached. This summary and assessment synthesizes the W02 lessons covered in this thread.*
@@ -81,4 +80,90 @@ flowchart TD
 
 ## Deployment Archetypes
 
-| Archetype | Scope | Target Availability |
+| Archetype | Scope | Target Availability | Typical Use Case |
+|---|---|---|---|
+| Zonal | Single zone | Standard | Development and testing |
+| Regional | Multiple zones in one region | 99.99% | Business workloads needing zone resilience |
+| Multi-Regional | Two or more regions | 99.999% | Business-critical and high availability workloads |
+| Global | Worldwide presence | Varies | Low-latency global user access |
+
+- Azure pairs regions automatically within the same geography.
+- GCP requires manual region selection but provides a global VPC by default.
+- Azure availability sets provide 99.95% SLA within a datacenter.
+- Azure availability zones provide 99.99% SLA across datacenters.
+- GCP multi-zone targets 99.99% and multi-region targets 99.999%.
+
+> [!Tip]
+> **Match architecture to requirements**: Select the deployment archetype that meets business needs without over-engineering. A regional multi-zone design handles most workloads.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Explain how serial dependencies affect composite availability.
+2. Compare Layer 4 and Layer 7 load balancing.
+3. Describe when to use Azure availability sets versus availability zones.
+4. Explain the difference between GCP global and regional load balancers.
+5. List the six pillars of the AWS Well-Architected Framework.
+6. Describe how cache-aside differs from write-through caching.
+7. Explain why sticky sessions harm horizontal scalability.
+8. Compare active-passive and active-active redundancy topologies.
+
+### Scenario Questions
+
+**Scenario 1: Flash Sale**
+An e-commerce platform expects a sudden traffic spike during a flash sale. Design a scaling and caching strategy.
+
+- Use target tracking or step scaling to add compute instances quickly.
+- Deploy a CDN for static assets and product images.
+- Use cache-aside with TTLs for product catalog data.
+- Use read replicas for read-heavy queries.
+- Configure asymmetric scaling: aggressive scale-out and conservative scale-in.
+
+**Scenario 2: Multi-Region Choice**
+A financial services application requires 99.999% availability. Choose a deployment archetype.
+
+- Use multi-region active-active.
+- Replicate data across regions with conflict resolution.
+- Use global load balancing to route users to the nearest healthy region.
+- Accept higher cost and operational complexity.
+
+**Scenario 3: Security and Cost Trade-Off**
+A startup wants to minimize cost while protecting customer data. Balance security and cost.
+
+- Use managed services for encryption and identity.
+- Apply least privilege and centralized identity management.
+- Use serverless or managed compute to avoid undifferentiated heavy lifting.
+- Document the trade-off between cost and security controls.
+
+```mermaid
+flowchart TD
+    A[Start Architecture Decision] --> B{Availability Requirement?}
+    B -->|Standard| C[Zonal or Single-AZ]
+    B -->|99.99%| D[Regional Multi-Zone]
+    B -->|99.999%| E[Multi-Region Active-Active]
+    C --> F{Cost Sensitivity?}
+    D --> F
+    E --> F
+    F -->|High| G[Use Managed Services and Serverless]
+    F -->|Low| H[Use Dedicated and Redundant Resources]
+    G --> I[Review Against Well-Architected Framework]
+    H --> I
+    I --> J[Document Trade-Offs and Repeat Review]
+```
+
+## Key Takeaways
+
+- Cloud architecture balances reliability, performance, security, cost, and sustainability.
+- Availability is measured with MTBF and MTTR. The nines define allowed downtime.
+- Serial dependencies reduce availability. Parallel redundancy improves it.
+- Fault domains include racks, Availability Zones, and Regions.
+- Load balancing, health checks, stateless design, and auto-scaling improve performance and resilience.
+- Caching, read replicas, connection pooling, and edge delivery reduce latency and database load.
+- AWS, Azure, and GCP organize architecture guidance around similar pillars.
+- Deployment archetypes range from zonal to multi-regional to global.
+- Reviews are blameless and aim at continuous improvement.
+- Security and operational excellence are foundational and should not be traded away.
+
+> [!Important]
+> **Architecture is iterative**: Use the Well-Architected Framework regularly, test failure with game days, and let metrics drive improvements across every pillar.
