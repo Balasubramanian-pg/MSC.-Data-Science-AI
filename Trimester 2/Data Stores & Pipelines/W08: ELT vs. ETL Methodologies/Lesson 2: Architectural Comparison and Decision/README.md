@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 2: Architectural Comparison and Decision
 
 Architectural Comparison and Decision:
@@ -26,4 +25,28 @@ Maintenance and Error Recovery:
 
 - Handling pipeline failures in ETL often requires clearing partially transformed staging records and re-extracting batches from upstream source systems.
 - Schema changes in source systems break ETL pipelines immediately if transformation code expects fixed columns and strict data types.
-- Modifying business calculations in an ETL setup requires updating trans
+- Modifying business calculations in an ETL setup requires updating transformation code, redeploying pipelines, and executing costly historical backfills from source archives.
+- Error recovery in ELT is simplified because raw source records remain safely stored in the destination environment.
+- When transformation logic changes or errors occur in ELT, engineers rewrite the downstream transformation models and rebuild target tables directly from preserved raw history.
+
+Decision Criteria for Architecture Selection:
+
+- Data privacy and regulatory constraints: Choose ETL if privacy laws prohibit storing unmasked personal information, customer account numbers, or health indicators in the analytical repository.
+- Volume and ingestion speed requirements: Choose ELT when ingesting high volume event logs or clickstreams where low ingestion latency is essential and transformations can be deferred.
+- Schema stability and data structure: Choose ETL for highly structured, predictable source schemas that require rigid quality controls. Choose ELT for semi-structured data like JSON or when source schemas change often.
+- Team capabilities: Choose ETL when engineering teams specialize in programming languages such as Python, Scala, or Java. Choose ELT when teams primarily consist of data analysts and analytics engineers proficient in SQL.
+- Financial budget and cost control: ETL offers predictable fixed infrastructure expenses for dedicated server clusters. ELT utilizes elastic consumption models where query costs can spike without strict concurrency and query execution limits.
+
+Hybrid Architecture Patterns:
+
+- Modern data platforms frequently combine both approaches into a unified pipeline strategy.
+- An initial lightweight ETL step runs upstream to sanitize personally identifiable information, strip prohibited fields, and convert raw files into optimized columnar formats.
+- The sanitized data is loaded into cloud storage or warehouse staging layers, where subsequent ELT steps run SQL models for metric calculations, joining, and business dimensional modeling.
+
+Key Takeaways:
+
+- ETL isolates compute workloads on external servers, while ELT delegates computational work directly to the analytical data platform.
+- ELT offers faster raw ingestion speeds and simplifies historical recalculations by retaining untouched raw datasets.
+- ETL minimizes storage requirements in the destination database and prevents sensitive or unscrubbed records from entering the warehouse.
+- The decision to implement ETL or ELT depends on security rules, incoming data variability, engineering skill sets, and cloud expenditure limits.
+- Many production systems adopt a hybrid model, using ETL for pre-load data anonymization and ELT for downstream business analytics modeling.
