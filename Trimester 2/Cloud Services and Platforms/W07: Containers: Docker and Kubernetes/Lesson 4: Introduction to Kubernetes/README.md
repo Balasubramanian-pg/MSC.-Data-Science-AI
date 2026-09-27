@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 4: Introduction to Kubernetes
 
 Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It abstracts individual machines into a pool of compute so you think in terms of pods and services, not which VM runs which process. A cluster consists of a control plane and worker nodes that together maintain the desired state of your workloads.
@@ -246,4 +245,252 @@ Kubernetes separates configuration and sensitive data from application code.
 
 ### Namespaces
 
-*Definiti
+*Definition*: Namespaces isolate resources within a cluster. They are used to divide cluster resources between multiple users, teams, or environments.
+
+- Production often uses namespaces like `prod`, `staging`, and `kube-system`.
+- Resources in one namespace are isolated from resources in another by default.
+- Namespaces are a way to apply quotas, network policies, and RBAC.
+
+### RBAC
+
+*Definition*: Role-Based Access Control (RBAC) controls who can do what in a Kubernetes cluster. Roles and ClusterRoles define permissions. RoleBindings and ClusterRoleBindings bind those permissions to users, groups, or ServiceAccounts.
+
+| Resource | Scope | Purpose |
+|---|---|---|
+| Role | Namespace | Defines permissions within a namespace |
+| ClusterRole | Cluster | Defines permissions across the cluster |
+| RoleBinding | Namespace | Binds a Role to a subject within a namespace |
+| ClusterRoleBinding | Cluster | Binds a ClusterRole to a subject across the cluster |
+| ServiceAccount | Namespace | Identity for Pods to access the API |
+
+- `Forbidden` errors are almost always RBAC or wrong namespace.
+- Follow least privilege: define Roles and RoleBindings per namespace, not cluster-wide.
+- Audit RBAC regularly. Remove unused permissions.
+- Tie permissions to your identity provider so access is revoked when someone leaves the project.
+
+> [!Important]
+> **Start with read-only and add permissions incrementally**: Grant read-only access first, then add specific verbs (get, list, create) per microservice. This prevents accidental deletions and lateral movement during a compromised pipeline.
+
+## Kubernetes Security Best Practices
+
+Kubernetes security requires a layered approach. No single control is sufficient. The following practices represent the current standard for securing Kubernetes deployments.
+
+### 1. Enforce RBAC and Least Privilege
+
+- Stop using cluster-admin for everything.
+- Define Roles and RoleBindings per namespace, not cluster-wide.
+- Audit RBAC regularly.
+- A front-end developer should never have delete rights on a production database namespace.
+- Tie permissions to your identity provider so access is revoked automatically when someone leaves.
+
+### 2. Lock Down Pod Security with Admission Controllers
+
+- Running containers as root is a disaster waiting to happen.
+- Use Pod Security Admission (PSA) with restricted profiles.
+- PodSecurityPolicy was removed in Kubernetes v1.25. PSA is its built-in replacement.
+- PSA applies one of three profiles — privileged, baseline, or restricted — at the namespace level via labels.
+- Set restricted everywhere you can.
+- Pair PSA with a policy engine like OPA Gatekeeper or Kyverno.
+
+### 3. Scan Images and Sign Every Artifact
+
+- Integrate vulnerability scanning into your CI/CD pipeline.
+- Use cosign or Notation to sign images.
+- Enforce signature verification at admission.
+- Without policy enforcement, a community image with a known CVE lands in production silently.
+- With mandatory signing, the deployment is blocked until the image is approved.
+
+### 4. Isolate Network Traffic with Zero-Trust Micro-Segmentation
+
+- Default "allow all" network policies are a security risk.
+- Define ingress and egress rules for each namespace based on actual communication paths.
+- Only the API gateway should talk to the payments service. Payments should only reach the database.
+- Use labels like `app: payments` to craft policies.
+- This cuts the blast radius if a single container is compromised.
+
+### 5. Use Secrets Management
+
+- Enable encryption at rest for Secrets.
+- Use a dedicated secrets manager (AWS Secrets Manager, HashiCorp Vault).
+- Do not store secrets in ConfigMaps or container images.
+
+### 6. Enable Audit Logging
+
+- Enable Kubernetes audit logging to record all API calls.
+- Ship audit logs to a centralized SIEM.
+- Monitor for unusual API activity.
+
+### Pod Security Admission Levels
+
+| Level | Description | Use Case |
+|---|---|---|
+| Privileged | Unrestricted, allows all capabilities | System components, trusted workloads |
+| Baseline | Minimally restrictive, prevents known privilege escalations | Most workloads |
+| Restricted | Heavily restricted, follows security best practices | Production workloads |
+
+> [!Important]
+> **Pod Security Admission replaced PodSecurityPolicy**: PodSecurityPolicy was removed in Kubernetes v1.25. PSA is enforced through namespace labels rather than a separate resource type. Apply the restricted profile to production namespaces with enforce mode.
+
+## kubectl and Cluster Interaction
+
+`kubectl` is the command-line tool for interacting with the Kubernetes API server.
+
+### How kubectl Interacts with the Cluster
+
+1. Config: `~/.kube/config` holds clusters, users, contexts, and namespaces.
+2. Request: `kubectl` sends HTTPS to the API server (auth via certificate, token, or OIDC).
+3. Admission and validation: The API server checks schema, RBAC, and webhooks.
+4. Persist: The object is written to etcd.
+5. Reconcile: Controllers and kubelet react to watches and update status.
+
+```mermaid
+sequenceDiagram
+    participant User as kubectl
+    participant API as kube-apiserver
+    participant ETCD as etcd
+    participant CTRL as Controllers
+    participant KL as kubelet
+    User->>API: HTTPS request
+    API->>API: Authenticate and authorize
+    API->>API: Validate schema and webhooks
+    API->>ETCD: Persist object
+    ETCD-->>API: Confirm
+    API-->>User: Return response
+    API->>CTRL: Watch event
+    CTRL->>API: Update status
+    API->>KL: Pod spec
+    KL->>KL: Run containers
+```
+
+### Helper Tooling
+
+- krew: Plugin manager for kubectl.
+- stern: Tail logs from multiple pods and containers at once.
+- kubectx: Switch cluster contexts quickly.
+- kubens: Switch default namespace.
+- k9s: Terminal-based cluster UI.
+
+> [!Tip]
+> **Use kubectx and kubens to avoid context mistakes**: Accidentally running a command in the wrong cluster is a common source of incidents. kubectx and kubens make it fast and visible to switch contexts and namespaces.
+
+## Kubernetes in AWS
+
+Amazon EKS is the managed Kubernetes service on AWS. It runs the control plane across multiple Availability Zones and integrates with AWS networking, IAM, and load balancing.
+
+- EKS manages the control plane. You manage worker nodes or use Fargate.
+- EKS supports EC2 worker nodes and Fargate for serverless containers.
+- IAM Roles for Service Accounts (IRSA) provides fine-grained IAM permissions to Pods.
+- AWS Load Balancer Controller provisions ALB and NLB for Ingress and Service resources.
+- EKS supports EBS and EFS for persistent storage via CSI drivers.
+- VPC CNI assigns Pod IPs from the VPC CIDR, enabling direct VPC communication.
+
+| EKS Feature | Description |
+|---|---|
+| Managed Control Plane | AWS manages the control plane across multiple AZs |
+| EC2 Worker Nodes | You manage the worker nodes |
+| Fargate | Serverless compute for Pods |
+| IRSA | IAM roles for service accounts |
+| VPC CNI | Pod IPs from VPC CIDR |
+| EBS CSI Driver | Persistent storage for Pods |
+| ALB Ingress Controller | Application Load Balancer for Ingress |
+
+> [!Important]
+> **EKS is standard Kubernetes with AWS integration**: The core Kubernetes concepts are identical. The AWS-specific pieces are IAM integration (IRSA), networking (VPC CNI), load balancing (ALB Controller), and storage (EBS CSI). Learn standard Kubernetes first, then the AWS integration.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Define Kubernetes and explain how it works declaratively.
+2. Describe the components of the Kubernetes control plane.
+3. Describe the components of a Kubernetes worker node.
+4. Explain the difference between a Pod, a Deployment, and a Service.
+5. Compare StatefulSets, DaemonSets, and Jobs.
+6. Explain the Kubernetes network model.
+7. Compare ClusterIP, NodePort, and LoadBalancer Services.
+8. Describe the purpose of Ingress and NetworkPolicy.
+9. Compare ConfigMaps and Secrets.
+10. Explain the role of RBAC and how Roles and ClusterRoles differ.
+11. Describe Pod Security Admission and its three profiles.
+12. List five Kubernetes security best practices.
+13. Explain how kubectl interacts with the cluster.
+14. Describe how Amazon EKS integrates with AWS services.
+
+### Scenario Questions
+
+**Scenario 1: Stateless Web Application**
+A team needs to deploy a stateless web application with rolling updates and rollback. What Kubernetes object should they use?
+
+- Use a Deployment.
+- Define the desired number of replicas.
+- Use a Service to expose the Deployment.
+- Use an Ingress for external HTTP routing.
+- Configure resource requests and limits.
+
+**Scenario 2: Stateful Database**
+A company needs to run a PostgreSQL database on Kubernetes with persistent storage and stable network identity. What should they use?
+
+- Use a StatefulSet.
+- Each Pod gets a stable hostname and its own PersistentVolume.
+- Use a headless Service for stable network identity.
+- Consider using a managed database service (Amazon RDS) instead.
+
+**Scenario 3: Per-Node Monitoring Agent**
+A team needs to run a monitoring agent on every node in the cluster. What should they use?
+
+- Use a DaemonSet.
+- A copy of the Pod runs on every node.
+- New nodes automatically get the agent.
+- Use tolerations to run on control plane nodes if needed.
+
+**Scenario 4: Scheduled Backup Job**
+A company needs to run a backup job every night at 2 AM. What should they use?
+
+- Use a CronJob.
+- Define the schedule in cron format.
+- The Job runs to completion and then terminates.
+- Monitor Job status and failures.
+
+**Scenario 5: Zero-Trust Network Security**
+A security team requires that only the API gateway can talk to the payment service, and only the payment service can talk to the database. How should this be enforced?
+
+- Create a default-deny NetworkPolicy for the namespace.
+- Add explicit allow rules for API gateway to payment service and payment service to database.
+- Use labels to select Pods.
+- Ensure the CNI supports NetworkPolicy enforcement.
+
+```mermaid
+flowchart TD
+    A[Kubernetes Decision] --> B{Stateful or Stateless?}
+    B -->|Stateless| C[Deployment]
+    B -->|Stateful| D[StatefulSet]
+    A --> E{Per-Node Agent?}
+    E -->|Yes| F[DaemonSet]
+    E -->|No| G{Task?}
+    G -->|Run to Completion| H[Job]
+    G -->|Scheduled| I[CronJob]
+    A --> J{Networking?}
+    J -->|Internal| K[ClusterIP Service]
+    J -->|External HTTP| L[Ingress]
+    J -->|External TCP| M[LoadBalancer Service]
+    J -->|Security| N[NetworkPolicy]
+```
+
+## Key Takeaways
+
+- Kubernetes is an open-source container orchestration platform. It uses declarative state and controllers to maintain desired state.
+- A cluster consists of a control plane and worker nodes. The control plane includes kube-apiserver, etcd, kube-scheduler, kube-controller-manager, and cloud-controller-manager.
+- Worker nodes run kubelet, kube-proxy, and a container runtime.
+- Pods are the smallest deployable unit. Deployments manage stateless apps. StatefulSets manage stateful apps. DaemonSets run per-node agents. Jobs and CronJobs handle batch tasks.
+- Services provide stable networking for dynamic Pod sets. ClusterIP, NodePort, and LoadBalancer are the main types. Ingress provides Layer 7 routing.
+- NetworkPolicy provides pod-level firewall rules. Requires a CNI that supports it. Default is allow-all unless you create a default-deny policy.
+- ConfigMaps store non-sensitive configuration. Secrets store sensitive data. Enable encryption at rest for Secrets.
+- RBAC controls access. Roles are namespace-scoped. ClusterRoles are cluster-scoped. Follow least privilege.
+- Pod Security Admission replaced PodSecurityPolicy in v1.25. Three levels: privileged, baseline, restricted. Apply restricted to production namespaces.
+- Kubernetes security requires layered controls: RBAC, PSA, image signing, network policies, secrets management, and audit logging.
+- kubectl sends requests to the API server, which authenticates, authorizes, validates, and persists to etcd. Controllers and kubelet reconcile.
+- Amazon EKS is managed Kubernetes on AWS with IAM integration (IRSA), VPC CNI, ALB Ingress Controller, and EBS CSI storage.
+- Learn standard Kubernetes first, then the AWS integration.
+
+> [!Important]
+> **Kubernetes is a platform, not just a tool**: It provides a declarative API, self-healing, service discovery, and extensibility. Understanding the architecture and workload objects is essential before deploying production workloads. Start with Pods, Deployments, and Services. Add StatefulSets, DaemonSets, and Jobs as needed. Layer on RBAC, Pod Security Admission, NetworkPolicies, and image signing for security. Use managed EKS to reduce operational overhead while retaining standard Kubernetes semantics.
