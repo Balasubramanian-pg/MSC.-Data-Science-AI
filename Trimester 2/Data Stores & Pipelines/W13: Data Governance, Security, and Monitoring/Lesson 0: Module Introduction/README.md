@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 0: Module Introduction
 
 Module Introduction: Data Governance, Security, and Monitoring:
@@ -23,4 +22,25 @@ Module Learning Objectives:
 
 Weekly Lesson Structure:
 
-- Lesson 1: Data Governance Frameworks and Metadata Management. Covers governance organizational structures, centralized data catalogs,
+- Lesson 1: Data Governance Frameworks and Metadata Management. Covers governance organizational structures, centralized data catalogs, and automated lineage tracking.
+- Lesson 2: Data Security, Encryption, and Access Control. Focuses on identity management, role-based versus attribute-based access control, key management services, and column-level masking.
+- Lesson 3: Compliance, Auditing, and Privacy Regulations. Details legal frameworks like GDPR, HIPAA, and CCPA, immutable audit logging, and automated subject access request workflows.
+- Lesson 4: Data Observability, Monitoring, and Alerting. Explores the five pillars of data observability, anomaly detection engines, and automated incident management workflows.
+- Lesson 5: End-to-End Enterprise Case Study. Examines the deployment of a unified governance and security architecture for a regulated multi-tenant financial data platform.
+- Lesson 6: Module Summary and Assessment. Consolidates regulatory requirements, security configurations, and monitoring patterns to prepare for comprehensive examinations.
+
+Core Governance and Security Tenets:
+
+- Defense in depth: Security is not a single perimeter wall; it requires layered protections spanning network firewalls, identity authentication, storage encryption, and row-level access filters.
+- Principle of least privilege: Users, applications, and automated pipeline service accounts must receive only the minimum access rights required to execute their specific responsibilities.
+- Shift-left governance: Rather than attempting to clean and classify data after it lands in production warehouses, governance validation and classification rules should execute directly inside ingestion pipelines.
+- Important: Overly restrictive security controls that prevent legitimate business users from accessing necessary analytical data will inevitably drive employees to create insecure workaround spreadsheets and unmonitored shadow data stores.
+
+Key Takeaways:
+
+- Data governance and security transform raw data infrastructure into trusted, compliant, and auditable corporate assets.
+- Governance establishes organizational accountability, data discoverability, and common semantic definitions across enterprise teams.
+- Security frameworks implement multi-layered defenses combining authentication, access controls, cryptographic encryption, and dynamic masking.
+- Statutory privacy regulations require pipelines to support verifiable auditing and individual data deletion workflows.
+- Data observability ensures that data freshness, volume, distribution, and schema health are monitored as rigorously as software infrastructure.
+- Effective governance balances strict security compliance with accessible, self-service data exploration for business users.
