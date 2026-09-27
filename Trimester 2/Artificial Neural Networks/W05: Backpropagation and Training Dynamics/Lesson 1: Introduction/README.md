@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: Introduction
 
 ## Introduction to Backpropagation and Training Dynamics
@@ -62,4 +61,58 @@ Designing multi-layer neural network architectures represents only the first pha
 ### Why Alternative Differentiation Methods Fail
 
 - **Numerical differentiation** approximates derivatives using finite difference quotients ($\frac{f(\theta + \epsilon) - f(\theta)}{\epsilon}$); evaluating a model with $P$ parameters requires $P+1$ full forward passes, making it computationally impossible for networks with millions of weights.
-- 
+- **Symbolic differentiation** computes exact algebraic formulas using computer algebra systems; applying symbolic derivation to deep nested compositions causes **expression swell**, generating formulas whose memory footprints grow exponentially with depth.
+- **Automatic differentiation (autodiff)** avoids both failure modes by tracking numerical values through elementary derivatives, generating exact values up to machine precision without formula expansion.
+
+### Reverse-Mode Efficiency for Scalar Objectives
+
+- Deep learning systems use **reverse-mode automatic differentiation** rather than forward-mode autodiff.
+- Forward-mode tracks derivatives forward alongside activations, requiring one pass per input variable, scaling execution time as $O(P)$.
+- Reverse-mode sweeps backward from the single scalar output loss, evaluating partial derivatives for all $P$ parameters simultaneously in a single pass with computational cost bounded at roughly two to three times the forward pass.
+
+> [!Tip]
+> **Reverse-mode automatic differentiation** makes modern deep learning scalable: it evaluates exact parameter gradients across millions of weights in a single backward sweep, keeping computational costs proportional to a solitary forward pass.
+
+## The Scope of Training Dynamics
+
+### Beyond Static Gradients: The Optimization Terrain
+
+- Evaluating a gradient vector yields local slope information valid only within an infinitesimal neighborhood of the current parameter coordinates.
+- High-dimensional loss surfaces are non-convex, featuring complex structural obstacles such as **saddle points**, **flat plateaus**, **pathological curvature ravines**, and **ill-conditioned valleys**.
+- The field of **training dynamics** analyzes how parameter trajectories navigate these geometric obstacles over extended optimization horizons.
+- First-order updates that ignore loss surface curvature often bounce uncontrollably across steep ravine walls while making negligible forward progress along the valley floor.
+
+### Trajectory Control via Hyperparameters
+
+- Stable parameter movement requires coordinating multiple interrelated training choices.
+- The **learning rate** dictates the fundamental step size taken along descent trajectories, serving as the most sensitive hyperparameter in training stability.
+- **Batch size selection** controls gradient variance; smaller batches introduce stochastic exploration noise that helps parameters escape sharp local minima, while larger batches provide stable, deterministic descent directions.
+- **Learning rate schedulers** adjust step sizes over time, utilizing warmup periods to protect random initializations and decay schedules to encourage settlement into wide, generalizing basins.
+
+> [!Important]
+> **Training dynamics govern model convergence**: calculating exact gradients is insufficient on its own; parameters require velocity dampening, adaptive coordinate scaling, and scheduled step sizes to navigate ill-conditioned loss surfaces without diverging.
+
+## Comparative Lifecycle of Training Phases
+
+| Training Phase | Primary Objective | Governing Mathematical Engine | Memory Allocation Role | Primary Computational Bottleneck |
+|---|---|---|---|---|
+| **Forward Pass** | Map input features to predictions and evaluate scalar loss | Matrix multiplication and activation functions: $g(Wx + b)$ | Allocates and caches activations $a^{[l]}$ and pre-activations $z^{[l]}$ | Matrix-matrix multiplications (GEMM) |
+| **Backward Pass** | Calculate exact partial derivatives with respect to all parameters | Multivariate chain rule via reverse-mode autodiff | Reads cached forward states; stores gradient tensors $\nabla_\theta \mathcal{L}$ | Transposed matrix operations and Vector-Jacobian Products |
+| **Optimizer Update** | Adjust weights and biases to reduce future loss values | Optimization rules (SGD, Momentum, Adam update steps) | Maintains auxiliary optimizer states ($v_t, m_t$, master weights) | Element-wise vector operations and memory bandwidth |
+
+> [!Tip]
+> **Memory consumption peaks in the backward pass**: peak GPU memory usage during training is driven by the volume of cached forward activations preserved to compute reverse-mode derivatives, not the static parameter size of the model.
+
+## Key Takeaways
+
+- **The credit assignment problem** was resolved by replacing non-differentiable step functions with continuous activations, enabling the multivariate chain rule to evaluate layer sensitivities.
+- **The training cycle** functions as a three-stage loop: forward propagation generates predictions and caches activations, backpropagation computes exact gradients, and the optimizer updates weights.
+- **Computational graphs** represent neural executions as directed acyclic graphs, providing the topological sequence needed for systematic reverse sweeps.
+- **Automatic differentiation** outperforms numerical differentiation by avoiding $O(P)$ forward passes, and outperforms symbolic differentiation by preventing exponential expression swell.
+- **Reverse-mode autodiff** computes gradients for millions of parameters in a single reverse sweep with computational cost comparable to the forward pass.
+- **Vector-Jacobian Products (VJPs)** evaluate adjoint values directly, allowing reverse-mode autodiff to execute without allocating dense Jacobian matrices.
+- **Gradients provide only local directional information**; training dynamics require momentum, adaptive scaling, and step schedules to navigate non-convex loss surfaces.
+- **Peak memory usage during training** is dominated by cached forward activations, making batch size and activation management essential for computational efficiency.
+
+> [!Tip]
+> The central principle of neural network training: **differentiable computation enables reverse credit assignment**; backpropagation computes exact parameter sensitivities by propagating adjoints across computational graphs, providing the gradient vectors that adaptive optimizers use to steer deep networks toward minimal error states.
