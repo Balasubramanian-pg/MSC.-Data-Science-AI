@@ -1,4 +1,3 @@
-# Migration in progress
 # W06: Standard Data Pipeline Architecture
 
 A data pipeline is a series of automated processes that move and transform data from source systems to destination systems for analysis or operational use. This lesson breaks down the standard components of a modern data pipeline, compares architectural patterns like ETL and ELT, and explores design principles for building reliable, scalable, and maintainable data flows. Understanding these fundamentals is essential for designing robust data infrastructure.
@@ -101,4 +100,110 @@ A popular design pattern for organizing data in Lakehouses, popularized by Datab
 ```mermaid
 flowchart TD
     A[Source Systems] --> B[Bronze: Raw]
-    B
+    B --> C[Silver: Cleaned]
+    C --> D[Gold: Curated]
+    D --> E[BI Dashboards]
+    D --> F[ML Models]
+```
+
+## Design Principles for Robust Pipelines
+
+### Idempotency
+
+-   Running the same pipeline multiple times produces the same result.
+-   Critical for retry logic when failures occur.
+-   Achieved by using `MERGE` statements or overwriting partitions instead of appending blindly.
+
+### Fault Tolerance and Retries
+
+-   Design pipelines to handle transient failures (network blips, API timeouts).
+-   Implement exponential backoff for retries.
+-   Use Dead Letter Queues (DLQ) to capture failed records for manual inspection without stopping the whole pipeline.
+
+### Observability and Monitoring
+
+-   **Data Quality Checks**: Validate row counts, null percentages, and unique constraints at each stage.
+-   **Lineage Tracking**: Know where data comes from and where it goes.
+-   **Alerting**: Notify engineers of pipeline failures or data anomalies immediately.
+
+### Scalability
+
+-   Decouple ingestion from transformation to allow independent scaling.
+-   Use distributed processing frameworks (Spark, Flink) for large volumes.
+-   Partition data effectively to parallelize processing.
+
+### Security and Governance
+
+-   Encrypt data at rest and in transit.
+-   Mask PII (Personally Identifiable Information) early in the pipeline.
+-   Implement Role-Based Access Control (RBAC) for downstream consumers.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1.  What are the five core components of a data pipeline?
+2.  Explain the difference between ETL and ELT. Why is ELT preferred in the cloud?
+3.  Describe the Medallion Architecture (Bronze, Silver, Gold).
+4.  Why is idempotency important in data pipelines?
+5.  What is Change Data Capture (CDC) and when should you use it?
+6.  How do Dead Letter Queues improve pipeline reliability?
+7.  What is Reverse ETL and how does it differ from traditional ETL?
+8.  Why is storing raw data (Bronze layer) beneficial?
+9.  What are common data quality checks implemented in pipelines?
+10. How does partitioning improve pipeline performance?
+
+### Scenario Questions
+
+**Scenario 1: Legacy Migration to Cloud**
+Moving from on-prem Oracle to Snowflake.
+
+-   **Pattern**: ELT.
+-   **Process**: Extract from Oracle using CDC, load raw JSON into Snowflake Stage, transform using SQL/dbt inside Snowflake.
+-   **Benefit**: Leverages Snowflake’s scalable compute; simplifies architecture.
+
+**Scenario 2: Real-Time Fraud Detection**
+Credit card transactions need instant scoring.
+
+-   **Pattern**: Streaming Pipeline.
+-   **Process**: Kafka ingests transactions -> Spark Streaming enriches with user history -> ML Model scores risk -> Alert if high risk.
+-   **Latency**: Sub-second processing required.
+-   **Storage**: Store results in NoSQL for quick lookup.
+
+**Scenario 3: Data Quality Crisis**
+Reports show incorrect revenue numbers due to duplicate orders.
+
+-   **Fix**: Add deduplication step in Silver layer.
+-   **Tool**: Use window functions in SQL or Spark to identify and remove duplicates based on Order ID and Timestamp.
+-   **Prevention**: Implement automated data quality tests (e.g., "Order ID must be unique") in the pipeline. Fail pipeline if test fails.
+
+**Scenario 4: Re-processing Historical Data**
+Business logic changed, need to recalculate last year’s metrics.
+
+-   **Advantage**: Bronze layer has all raw historical data.
+-   **Action**: Replay transformation logic on Bronze data to regenerate Silver/Gold layers.
+-   **Benefit**: No need to contact source systems again; fast and reproducible.
+
+**Scenario 5: Syncing Customer Segments**
+Marketing wants to send emails to "High Value" customers identified in the data warehouse.
+
+-   **Pattern**: Reverse ETL.
+-   **Process**: Query Gold layer for segment -> Push list to Salesforce/HubSpot via API.
+-   **Tool**: Hightouch, Census, or custom Python script.
+-   **Benefit**: Activates data for operational use without manual exports.
+
+## Key Takeaways
+
+-   Data pipelines move data from sources to consumption through ingestion, storage, transformation, and serving.
+-   ELT is preferred over ETL in modern cloud architectures for flexibility and speed.
+-   Medallion Architecture (Bronze/Silver/Gold) organizes data by quality and readiness.
+-   Idempotency ensures pipelines can be safely retried after failures.
+-   CDC enables efficient, real-time synchronization of database changes.
+-   Dead Letter Queues handle bad data without stopping the pipeline.
+-   Observability and data quality checks are critical for trust.
+-   Reverse ETL brings insights back into operational applications.
+-   Security and governance must be built into every stage.
+-   Design for scalability and fault tolerance from day one.
+
+> [!Important]
+> **Pipelines are products**: Treat your data pipelines with the same rigor as software applications. Version control your code, test your transformations, monitor your performance, and document your logic. A broken pipeline stops business decisions. Build resilience, automate recovery, and prioritize data quality at every step. The goal is not just moving data, but delivering trusted value.
