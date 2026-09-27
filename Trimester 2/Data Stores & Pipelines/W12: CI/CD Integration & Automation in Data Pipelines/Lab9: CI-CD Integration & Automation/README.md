@@ -1,4 +1,3 @@
-# Migration in progress
 # Lab9: CI/CD Integration & Automation
 
 Lab 9: CI/CD Integration and Automation:
@@ -38,4 +37,36 @@ Step 4: Writing DAG Integrity and Structure Tests:
 
 - Author a dedicated test file that programmatically imports all DAG files within the dags directory.
 - Verify that the Airflow DagBag parses every script with zero import errors reported.
-- Assert that each discovered DAG contains at least one task, has a
+- Assert that each discovered DAG contains at least one task, has a static start date, has retries configured, and has catchup explicitly defined.
+- Run cycle detection tests to verify that no directed acyclic graph contains circular task dependencies.
+
+Step 5: Configuring the Continuous Integration Workflow:
+
+- Create a workflow configuration file within the .github/workflows directory, such as ci-pipeline.yml.
+- Define workflow trigger conditions to run automatically whenever a pull request is opened or updated against the main branch.
+- Configure a runner job that checks out repository code, sets up the required Python runtime version, and caches dependency packages to accelerate build times.
+- Add execution steps to install project dependencies, run linting checks, and execute pytest across the test directory.
+- Configure the CI job to fail immediately if any unit test fails or if linter violations are detected, blocking the pull request from being merged.
+
+Step 6: Configuring the Continuous Delivery Workflow:
+
+- Create a deployment workflow file, such as cd-deployment.yml, configured to trigger strictly on push events to the main branch after pull request approval.
+- Add automated synchronization steps to copy validated DAG files from the repository to the production storage destination, such as an Amazon S3 bucket, a Google Cloud Storage bucket, or a production Airflow server directory.
+- Configure repository secrets within the hosting platform to supply cloud credentials and connection keys securely during deployment steps.
+- Important: Storing sensitive database credentials or cloud secret keys directly in version-controlled repository files presents severe security vulnerabilities; all credentials must be injected dynamically through encrypted secrets managers.
+
+Step 7: Testing the Complete Automation Cycle:
+
+- Create a new feature branch locally, introduce a deliberate syntax error or failing unit test assertion, and push the branch to the remote repository.
+- Open a pull request and observe the CI runner executing the automated test suite, confirming that the checks fail and block the merge.
+- Correct the code error locally, push the fix to the branch, and observe the CI runner re-executing tests until all checks display green status.
+- Merge the approved pull request into the main branch and verify that the CD workflow triggers automatically, successfully deploying the updated pipeline code to the production target.
+
+Key Takeaways:
+
+- Automated CI/CD pipelines prevent syntax errors, broken transformations, and circular DAGs from entering production environments.
+- Code linting and style checkers maintain code readability and enforce structural consistency across engineering teams.
+- Unit tests isolate business logic, using synthetic datasets to verify transformation correctness under diverse edge cases.
+- DAG integrity tests verify that Airflow can parse all workflow scripts without import failures before code deployment.
+- Continuous integration gates automatically block pull requests with failing tests from merging into production branches.
+- Continuous delivery automates the safe synchronization of verified pipeline code to cloud staging and production environments.
