@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: AWS Global Infrastructure
 
 The AWS Global Infrastructure is the physical foundation of every AWS service. It is organized into Regions, Availability Zones, and a global edge network. Understanding this structure is essential for designing systems that are highly available, fault tolerant, and low latency. The design choices you make about where to place resources directly affect performance, compliance, cost, and resilience.
@@ -114,4 +113,126 @@ AWS extends its infrastructure beyond Regions and AZs to meet specialized latenc
 - Wavelength Zones deploy standard AWS compute and storage services to the edge of 5G networks.
 - Outposts bring native AWS services, infrastructure, and operating models to virtually any data center.
 
-```merm
+```mermaid
+flowchart TD
+    R[Parent Region] --> AZ[Availability Zones]
+    R --> LZ[Local Zone]
+    R --> WZ[Wavelength Zone]
+    R --> OP[Outpost]
+    LZ --> U1[Metro Users]
+    WZ --> U2[5G Devices]
+    OP --> U3[On-Premises Facility]
+```
+
+> [!Tip]
+> **Local Zones versus Edge Locations**: Local Zones are extensions of a parent AWS Region and offer a subset of AWS services like EC2 and EBS. Edge locations are primarily for caching and content delivery. Local Zones run compute workloads. Edge locations cache content. They serve different purposes but both bring resources closer to users.
+
+## Shared Responsibility Model
+
+*Definition*: Security and compliance is a shared responsibility between AWS and the customer. This model is commonly described as Security "of" the Cloud versus Security "in" the Cloud.
+
+| Responsibility | AWS | Customer |
+|---|---|---|
+| Physical Security | Data centers, hardware, networking | Not applicable |
+| Host Operating System | Managed by AWS | Not applicable for managed services |
+| Virtualization Layer | Managed by AWS | Not applicable |
+| Guest Operating System | Not applicable | Updates and security patches |
+| Application Software | Not applicable | Configuration and management |
+| Security Group Firewall | Provides the tool | Configuration of rules |
+| Data | Not applicable | Classification, encryption, access control |
+
+- AWS operates, manages, and controls the components from the host operating system and virtualization layer down to the physical security of the facilities.
+- The customer assumes responsibility for the guest operating system, application software, and the configuration of AWS-provided security group firewalls.
+- Customer responsibilities vary depending on the services used. Managed services shift more responsibility to AWS.
+
+```mermaid
+flowchart TD
+    subgraph AWS_Responsibility["AWS Responsibility (Security OF the Cloud)"]
+        A1[Physical Security]
+        A2[Host OS and Virtualization]
+        A3[Network Infrastructure]
+    end
+    subgraph Customer_Responsibility["Customer Responsibility (Security IN the Cloud)"]
+        C1[Guest OS and Patches]
+        C2[Application Software]
+        C3[Security Group Configuration]
+        C4[Data Encryption and Access]
+    end
+```
+
+> [!Important]
+> **The shared responsibility model depends on the service model**: For IaaS services like EC2, the customer manages more. For managed services like S3 or DynamoDB, AWS manages more of the stack. Always check the specific service documentation to understand where the boundary lies.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Describe the relationship between Regions, Availability Zones, and Edge Locations.
+2. Explain why each AWS Region contains at least three Availability Zones.
+3. List five factors to consider when selecting an AWS Region.
+4. Compare Local Zones, Wavelength Zones, and Outposts in terms of purpose and use case.
+5. Explain the shared responsibility model using the concept of Security "of" the Cloud versus Security "in" the Cloud.
+6. Describe how the AWS global edge network reduces latency for end users.
+7. Explain why AWS does not automatically replicate resources across Regions.
+
+### Scenario Questions
+
+**Scenario 1: Global Web Application**
+A company needs to serve users in North America, Europe, and Asia with low latency. How should they use AWS global infrastructure?
+
+- Deploy the application in multiple Regions close to user bases.
+- Use CloudFront and edge locations to cache static assets globally.
+- Use Route 53 for latency-based routing to direct users to the nearest Region.
+- Replicate data across Regions for disaster recovery.
+
+**Scenario 2: Real-Time Gaming Application**
+A gaming company needs sub-10ms latency for players in major metropolitan areas. Which AWS infrastructure components should they use?
+
+- Use Local Zones to place compute and storage closer to end users in metro areas.
+- Use Wavelength Zones for 5G mobile players.
+- Use Global Accelerator to optimize network paths.
+- Deploy across multiple AZs within the parent Region for resilience.
+
+**Scenario 3: Regulated Financial Services**
+A financial services firm must keep EU customer data within the EU and demonstrate strict control over the full stack. Which infrastructure choices apply?
+
+- Select an EU Region that meets data residency requirements.
+- Use multiple AZs within the Region for high availability.
+- Consider AWS European Sovereign Cloud for strict residency assurances.
+- Implement customer-side controls for the guest OS, application, and data encryption.
+- Document the shared responsibility boundary for audit purposes.
+
+```mermaid
+flowchart TD
+    A[Start Infrastructure Design] --> B{Latency Requirement?}
+    B -->|Global Users| C[Multi-Region + CloudFront]
+    B -->|Metro Low Latency| D[Local Zones]
+    B -->|5G Devices| E[Wavelength Zones]
+    B -->|On-Premises| F[Outposts]
+    C --> G{Compliance Requirement?}
+    D --> G
+    E --> G
+    F --> G
+    G -->|Data Residency| H[Select Compliant Region]
+    G -->|No Restriction| I[Select Lowest Latency Region]
+    H --> J[Deploy Multi-AZ]
+    I --> J
+    J --> K[Apply Shared Responsibility Model]
+    K --> L[Review and Monitor]
+```
+
+## Key Takeaways
+
+- AWS global infrastructure is organized into Regions, Availability Zones, and Edge Locations.
+- A Region is a separate geographic area, isolated from other Regions for fault tolerance.
+- Each Region contains at least three Availability Zones, each with independent power, cooling, and networking.
+- Deploying across multiple AZs within a Region provides high availability. Deploying across Regions provides disaster recovery.
+- The AWS edge network includes over 400 edge locations and 13 regional edge caches for low-latency content delivery.
+- Local Zones, Wavelength Zones, and Outposts extend AWS infrastructure to metro areas, 5G networks, and on-premises facilities.
+- The shared responsibility model defines the boundary: AWS is responsible for security of the cloud, and customers are responsible for security in the cloud.
+- Customer responsibility varies by service model. Managed services shift more responsibility to AWS.
+- Region selection depends on service availability, latency, compliance, cost, and disaster recovery requirements.
+- Understanding the global infrastructure is the foundation for every architectural decision in AWS.
+
+> [!Important]
+> **Design with the infrastructure in mind from the start**: The choices you make about Regions, Availability Zones, and edge services determine the resilience, performance, and compliance posture of every workload. Do not treat infrastructure as an afterthought. Design for multi-AZ resilience within a Region first, then expand to multi-Region only when business requirements justify the cost and complexity.
