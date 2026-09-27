@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 2: Tuning Core Hyperparameters
 
 Tuning core hyperparameters focuses on optimizing the primary mathematical controls that govern gradient descent trajectories, numerical stability, and convergence rates. Among all external settings, the learning rate, learning rate schedule, mini-batch size, momentum coefficients, and weight decay exert the strongest influence on model performance. Establishing analytical bounds and empirical heuristics for these core variables allows practitioners to maximize optimization velocity while preventing loss divergence and generalization collapse.
@@ -72,4 +71,60 @@ Tuning core hyperparameters focuses on optimizing the primary mathematical contr
 - The **Linear Scaling Rule** states that if the batch size multiplies by $k$, the learning rate should multiply by $k$:
   $$\alpha' = k \cdot \alpha$$
   This preserves the total parameter displacement after processing an equivalent number of training instances under standard SGD.
-- The linear scaling rule remain
+- The linear scaling rule remains valid up to a problem-dependent *critical batch size*; scaling beyond this threshold yields diminishing returns and requires **Square-Root Scaling**:
+  $$\alpha' = \sqrt{k} \cdot \alpha$$
+  which aligns variance scaling directly with the Central Limit Theorem.
+
+> [!Important]
+> **Batch scaling limits**: applying the linear scaling rule without an accompanying linear warmup causes optimization divergence at large batch sizes, because large initial step sizes destabilize parameters before gradient directions stabilize.
+
+## Momentum and Second-Order Acceleration Parameters
+
+### Classical and Nesterov Momentum
+
+- First-order gradient descent oscillates across steep ravine walls while progressing slowly along shallow loss floors.
+- **Polyak (Classical) Momentum** dampens oscillations by accumulating past gradients into an exponentially decaying velocity vector $v_t$:
+  $$v_{t+1} = \beta v_t + \nabla \mathcal{L}(\theta_t), \quad \theta_{t+1} = \theta_t - \alpha v_{t+1}$$
+  where $\beta \in [0, 1)$ serves as the momentum coefficient (typically $\beta = 0.9$).
+- Momentum acts as a physical mass traveling down a slope: forces pointing in consistent directions compound constructively by factor $\frac{1}{1 - \beta}$, while alternating perpendicular forces cancel destructively.
+- **Nesterov Accelerated Gradient (NAG)** calculates the gradient step at a lookahead position ($\theta_t + \beta v_t$), providing anticipatory braking that suppresses overshoot along high-curvature trajectories.
+
+### Tuning Adaptive Optimizer Parameters in AdamW
+
+- Adaptive Moment Estimation with Decoupled Weight Decay (AdamW) maintains per-parameter moving averages of both the first moment (mean) and second raw moment (uncentered variance):
+  $$m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t, \quad v_t = \beta_2 v_{t-1} + (1 - \beta_2) g_t^2$$
+  $$\theta_{t+1} = \theta_t - \alpha \lambda_{\text{reg}} \theta_t - \frac{\alpha}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t$$
+- **First Moment Coefficient ($\beta_1$):** Controls directional inertia; defaults to $0.9$. Reducing $\beta_1$ to $0.8$ or $0.85$ improves tracking in noisy or non-stationary environments.
+- **Second Moment Coefficient ($\beta_2$):** Controls the scale-smoothing window; defaults to $0.999$. In large-scale training or high-variance domains (such as reinforcement learning or language modeling), setting $\beta_2 = 0.98$ or $0.99$ reduces gradient lag.
+- **Epsilon ($\epsilon$):** Numerical stability denominator constant; standard default is $10^{-8}$. Raising $\epsilon$ to $10^{-6}$ or $10^{-4}$ stabilizes 16-bit mixed-precision (FP16/BF16) training by preventing division by zero under underflow conditions.
+
+> [!Tip]
+> **Epsilon tuning in mixed precision**: raise the AdamW epsilon parameter from $10^{-8}$ to $10^{-6}$ or $10^{-5}$ when switching to 16-bit floating-point training to prevent numerical instability caused by subnormal float limits.
+
+## Comparative Dynamics of Core Hyperparameters
+
+| Hyperparameter | Primary Operational Role | Default or Baseline | Typical Search Range | Recommended Search Scale | Diagnostic Indicator of Misconfiguration |
+|---|---|---|---|---|---|
+| **Learning Rate ($\alpha$)** | Controls parameter step size along loss surface | $10^{-3}$ (AdamW), $10^{-1}$ (SGD) | $10^{-5} \text{ to } 10^{-1}$ | Logarithmic ($10^r$) | Immediate divergence ($\text{NaN}$) if high; flat loss if low |
+| **Batch Size ($B$)** | Governs gradient estimation variance and throughput | $32 \text{ or } 64$ | $16 \text{ to } 2048$ | Powers of $2$ | Out-of-memory errors if high; slow hardware utilization if low |
+| **Momentum ($\beta$)** | Dampens cross-ravine oscillations; accelerates descent | $0.90$ | $0.80 \text{ to } 0.99$ | Complementary Log ($1 - 10^r$) | Erratic trajectory overshoot if high; slow flat-floor progress if low |
+| **AdamW $\beta_2$** | Sets memory horizon for coordinate-wise variance scaling | $0.999$ | $0.95 \text{ to } 0.9999$ | Complementary Log ($1 - 10^r$) | Stalled early learning if high; noisy coordinate scaling if low |
+| **Weight Decay ($\lambda$)** | Enforces parameter shrinkage independent of gradient | $10^{-2}$ (AdamW), $10^{-4}$ (SGD) | $10^{-5} \text{ to } 10^{-1}$ | Logarithmic ($10^r$) | Severe underfitting if high; weight explosion and overfitting if low |
+| **Warmup Steps ($T_{\text{warm}}$)**| Prevents destructive parameter updates at iteration zero | $5\% \text{ of total steps}$ | $1\% \text{ to } 15\%$ | Linear scale | Loss spikes or non-finite errors in epoch one if absent |
+
+> [!Tip]
+> **Co-tuning strategy**: pair learning rate and batch size adjustments together; whenever batch size increases by factor $k$, apply a linear warmup and scale the base learning rate by $k$ before fine-tuning momentum.
+
+## Key Takeaways
+
+- **Loss Hessian curvature bounds the learning rate**: step sizes must remain strictly below $\frac{2}{\lambda_{\max}(H)}$ to prevent gradient explosion and trajectory divergence.
+- **The LR range test isolates optimal step sizes**: plotting loss against exponentially increasing learning rates pinpoints the steepest descent zone prior to the minimum-loss divergence point.
+- **Linear warmup stabilizes early optimization**: ramping step sizes from zero over initial steps prevents gradient shocks while normalization running statistics and momentum buffers initialize.
+- **Cosine decay enables smooth parameter exploration**: continuous cosine annealing avoids the arbitrary timing decisions and sharp shocks associated with step-decay schedules.
+- **Mini-batch size controls gradient stochasticity**: small batches introduce noise that guides parameters toward flat minima, while large batches maximize parallel compute throughput.
+- **Scaling batch sizes requires learning rate adjustment**: multiplying batch size by factor $k$ warrants an accompanying linear scaling of learning rate ($\alpha' = k\alpha$) up to the critical batch threshold.
+- **Momentum dampens high-curvature oscillations**: accumulating gradient history accelerates progress along consistent directions while canceling opposing perpendicular oscillations.
+- **AdamW decoupling restores regularization integrity**: applying weight decay directly to weight tensors ensures uniform parameter shrinkage regardless of adaptive gradient magnitudes.
+
+> [!Important]
+> **Core hyperparameter synergy**: the learning rate, batch size, and warmup schedule form an interconnected optimization triad; altering one variable shifts the effective dynamics of the others, requiring coordinated tuning to maintain convergence stability.
