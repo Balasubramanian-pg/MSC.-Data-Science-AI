@@ -1,4 +1,3 @@
-# Migration in progress
 # W10: Serverless Computing on AWS - Lesson 0: Module Introduction
 
 This module introduces serverless computing on AWS. It covers the core serverless services: AWS Lambda for compute, Amazon API Gateway for APIs, AWS Step Functions for orchestration, and Amazon SQS, Amazon SNS, and Amazon EventBridge for messaging. It also covers serverless security, observability, and cost optimisation. The goal is to build applications that scale automatically, cost nothing at idle, and let teams focus on business logic instead of infrastructure.
@@ -134,4 +133,139 @@ flowchart TD
 - W02 covered reliability, performance, and the AWS Well-Architected Framework.
 - W03 compared AWS, Azure, and GCP across services and selection factors.
 - W04 covered AWS global infrastructure, IAM, and account security.
-- W05 covered compute services and virtualisation, including 
+- W05 covered compute services and virtualisation, including EC2 and EBS.
+- W06 covered VPC networking fundamentals.
+- W07 covered containers, Docker, and Kubernetes.
+- W08 covered AWS storage services, including S3, EBS, EFS, and FSx.
+- W09 covered databases and data processing, including RDS, Aurora, DynamoDB, and Glue.
+- W10 adds the serverless layer: how to build event-driven applications without managing servers.
+- The serverless choices you make affect reliability, cost, performance, and security.
+
+```mermaid
+flowchart LR
+    A[W02 Architecture] --> B[W03 Providers]
+    B --> C[W04 AWS Foundations and IAM]
+    C --> D[W05 Compute Services]
+    D --> E[W06 VPC Networking]
+    E --> F[W07 Containers]
+    F --> G[W08 Storage Services]
+    G --> H[W09 Databases]
+    H --> I[W10 Serverless]
+    I --> J[Hands-On Labs]
+    J --> K[Assessment]
+```
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Define serverless computing and explain how it differs from traditional compute.
+2. Describe how AWS Lambda works, including cold starts and warm starts.
+3. List the key Lambda limits: timeout, memory, concurrency, and package size.
+4. Explain how Lambda pricing works for requests and duration.
+5. Compare unreserved, reserved, and provisioned concurrency.
+6. Compare ZIP packages, Lambda Layers, and container images for deployment.
+7. Compare REST APIs and HTTP APIs in API Gateway.
+8. Compare Standard and Express workflows in Step Functions.
+9. Compare SQS, SNS, and EventBridge for messaging.
+10. List five serverless security best practices.
+11. Explain the three pillars of serverless observability.
+12. Describe how to reduce Lambda cold starts.
+13. Explain how to optimise Lambda cost with memory tuning and Graviton.
+14. Describe the serverless application model (SAM) and its purpose.
+
+### Scenario Questions
+
+**Scenario 1: Event-Driven Image Processing**
+A company needs to process images uploaded to S3 and generate thumbnails. What should they use?
+
+- Use AWS Lambda triggered by S3 upload events.
+- Lambda automatically scales to handle spikes in upload volume.
+- Pay only for the compute time used, with no cost for idle time.
+- Use container images if image processing libraries exceed 250 MB.
+- Use SQS or EventBridge for asynchronous processing and error handling.
+
+**Scenario 2: Serverless API**
+A team needs to build a REST API backed by Lambda functions with request validation and API keys. What should they use?
+
+- Use API Gateway REST API.
+- REST APIs support API keys, per-client throttling, request validation, and AWS WAF integration.
+- Use Lambda authorizers or Cognito User Pools for authorization.
+- Use CloudWatch for monitoring and X-Ray for tracing.
+
+**Scenario 3: Multi-Step Order Processing**
+A company needs to orchestrate a multi-step order processing workflow with retries and error handling. What should they use?
+
+- Use AWS Step Functions Standard workflow.
+- Standard workflows provide full execution history and exactly-once processing.
+- Use Retry and Catch for error handling.
+- Use Lambda functions for individual steps.
+- Use Parallel state for steps that can run concurrently.
+
+**Scenario 4: High-Volume Event Processing**
+A company needs to process millions of events per hour with minimal cost. What should they use?
+
+- Use AWS Step Functions Express workflow.
+- Express workflows are ideal for high-volume, event-processing workloads.
+- Use EventBridge for event routing.
+- Use SQS for durable queuing and decoupling.
+- Use Lambda for event processing.
+
+**Scenario 5: Latency-Sensitive API**
+A team needs sub-100ms response times for a Lambda-backed API. Cold starts are causing latency spikes. What should they do?
+
+- Enable provisioned concurrency on the Lambda function.
+- Use Application Auto Scaling to schedule provisioned concurrency for known traffic patterns.
+- Keep deployment packages small to reduce cold start duration.
+- Use Graviton for better price-performance.
+- Consider HTTP API for lower latency than REST API.
+
+**Scenario 6: Secure Serverless Application**
+A security team requires that no secrets are stored in environment variables and that all functions follow least privilege. What should they do?
+
+- Store secrets in AWS Secrets Manager or Parameter Store.
+- Use the AWS Parameters and Secrets Lambda Extension for caching.
+- Create one execution role per function with explicit actions and resources.
+- Use IAM Access Analyzer to remove unused permissions.
+- Use permission boundaries to cap maximum permissions.
+- Validate input at API Gateway and in the function.
+
+```mermaid
+flowchart TD
+    A[Serverless Decision] --> B{Compute?}
+    B -->|Short-lived event-driven| C[AWS Lambda]
+    B -->|Long-running container| D[AWS Fargate]
+    A --> E{API?}
+    E -->|Full features| F[REST API]
+    E -->|Simple, low-cost| G[HTTP API]
+    A --> H{Orchestration?}
+    H -->|Auditable, long-running| I[Standard Workflow]
+    H -->|High-volume, short| J[Express Workflow]
+    A --> K{Messaging?}
+    K -->|Queue| L[SQS]
+    K -->|Fan-out| M[SNS]
+    K -->|Routing| N[EventBridge]
+    A --> O{Security?}
+    O -->|Yes| P[Least Privilege + Secrets Manager + Input Validation]
+```
+
+## Key Takeaways
+
+- Serverless computing removes server management. You pay only for what you use, with no cost at idle.
+- AWS Lambda runs code in response to events. It scales automatically from zero to millions of requests.
+- Lambda limits: 15-minute timeout, 128 MB to 10,240 MB memory, 1,000 default concurrent executions, 250 MB ZIP package, 10 GB container image.
+- Lambda pricing is per request and per GB-second. Arm-based Graviton functions are 20% cheaper.
+- Cold starts occur when Lambda creates a new execution environment. Provisioned concurrency eliminates cold starts.
+- Memory and CPU are linked. Increasing memory can reduce duration and total cost.
+- API Gateway offers REST APIs (full features) and HTTP APIs (lower cost, minimal features).
+- Step Functions orchestrates workflows. Standard workflows are for auditable, long-running processes. Express workflows are for high-volume, short-duration processes.
+- SQS is a queue. SNS is pub/sub. EventBridge is an event bus. They are complementary.
+- Serverless security requires least privilege IAM, one execution role per function, Secrets Manager for secrets, and input validation.
+- Observability requires logging, metrics, and tracing. Use CloudWatch, X-Ray, and AWS Lambda Powertools.
+- Best practices: use services instead of custom code, implement idempotency, minimise coupling, design for failure, keep functions small, reuse connections, and tune memory.
+- Serverless is not always cheaper. For steady-state, high-volume workloads, containers or EC2 may be more cost-effective.
+- This module builds on W02 architecture, W03 provider comparison, W04 AWS foundations, W05 compute services, W06 VPC networking, W07 containers, W08 storage services, and W09 databases.
+- Assessment focuses on practical serverless selection and scenario-based decision making.
+
+> [!Important]
+> **Choose the right tool for the workload**: Serverless is most cost-effective for spiky, unpredictable, or low-volume workloads where you pay only for what you use. For steady-state, high-volume workloads, evaluate containers or EC2. Use Lambda for event-driven compute, API Gateway for APIs, Step Functions for orchestration, and SQS, SNS, and EventBridge for messaging. Design for failure, implement idempotency, and validate input at every layer. Serverless delivers agility, scalability, and cost efficiency when matched to the right workload.
