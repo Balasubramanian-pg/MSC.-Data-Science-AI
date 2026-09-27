@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 3: Core Regularization Methods
 
 ## Core Regularization Methods in Deep Learning
@@ -91,4 +90,91 @@ Regularization techniques provide the mathematical and algorithmic mechanisms re
 - When pairing both techniques, modern architectures place Dropout after Batch Normalization ($\text{Dense} \to \text{BatchNorm} \to \text{Activation} \to \text{Dropout}$) or replace Dropout with weight decay and data augmentation in convolutional backbones.
 
 > [!Tip]
-> **Inverted dropout simplifies inference pipelines**: dividing active activations by $p$ during training keeps output magnitudes balanced, allowing evaluation to run
+> **Inverted dropout simplifies inference pipelines**: dividing active activations by $p$ during training keeps output magnitudes balanced, allowing evaluation to run standard forward passes without weight rescaling.
+
+## Early Stopping as an Optimization Boundary
+
+### Validation Trajectory Monitoring and Patience Windows
+
+- **Early stopping** treats the number of training epochs as an explicit regularization hyperparameter, terminating gradient descent before parameters expand into overfitted regimes.
+- During training, the validation loss is computed at regular epoch checkpoints alongside empirical training loss.
+- While training loss descends monotonically, validation loss decreases to a minimum, plateaus, and begins ascending as the model fits sample-specific noise.
+- Early stopping monitors validation error over a designated **patience window** of $k$ epochs; if the loss fails to achieve an improvement of at least $\delta$ over the historical best within $k$ steps, training halts:
+  $$\text{Terminate if: } \mathcal{L}_{\text{val}}(t) > \min_{i < t} \mathcal{L}_{\text{val}}(i) - \delta \quad \forall t \in [t_{\text{best}} + 1, \; t_{\text{best}} + k]$$
+
+### Mathematical Equivalence to L2 Regularization
+
+- In linear models trained via gradient descent on quadratic loss surfaces initialized at the origin ($\theta_0 = 0$), early stopping is mathematically equivalent to **$L_2$ weight decay**.
+- Unrolling $t$ gradient descent iterations with learning rate $\eta$ bounds the parameter update trajectory:
+  $$w_t = \left( I - (I - \eta H)^t \right) w^*$$
+  where $H$ is the Hessian matrix, and $w^*$ is the unregularized minimum.
+- Comparing this update to the analytical solution for $L_2$ regularization ($\tilde{w} = (H + \alpha I)^{-1} H w^*$) demonstrates that both expressions match when the training horizon satisfies:
+  $$t \cdot \eta \approx \frac{1}{\alpha}$$
+- Restricting the training budget limits parameter growth along flat, low-curvature directions in the exact same manner as an explicit $L_2$ penalty coefficient $\alpha$.
+
+### Practical Checkpoint Recovery Protocols
+
+- Early stopping algorithms must maintain a persistent deep copy of parameter tensors corresponding to the best historical validation score ($t_{\text{best}}$).
+- Terminating training at step $t_{\text{best}} + k$ requires rolling back model weights to the checkpoint saved at $t_{\text{best}}$, discarding the degraded updates accumulated during the patience window.
+
+> [!Tip]
+> **Early stopping limits parameter growth**: bounding optimization time restricts weights from expanding along flat noise directions, achieving regularization mathematically equivalent to $L_2$ weight decay without extra loss terms.
+
+## Data-Driven Regularization: Augmentation and Mixing
+
+### Domain Invariance via Synthetic Augmentation
+
+- The most reliable defense against overfitting is training on larger datasets; when acquiring additional labeled data is cost-prohibitive, **data augmentation** synthesizes new instances by applying label-preserving transformations to existing inputs.
+- Augmentation enforces spatial, temporal, and semantic **invariance** into the network's internal representations:
+  - **Geometric Invariance:** Random cropping, horizontal flipping, affine translation, and rotation force models to identify objects regardless of spatial coordinates.
+  - **Photometric Invariance:** Color jittering, random brightness adjustments, and contrast variations prevent networks from relying on brittle lighting conditions.
+  - **Acoustic Invariance:** Pitch shifting, frequency masking, and time warping improve robustness in speech recognition pipelines.
+
+### Convex Combinations via Mixup
+
+- Standard neural classifiers trained on one-hot targets produce sharp, step-like decision boundaries that exhibit extreme overconfidence outside sample clusters.
+- Proposed by Hongyi Zhang et al. (2017), **Mixup** regularizes networks by training on convex combinations of pairs of training examples and their corresponding targets:
+  $$\tilde{x} = \lambda x_i + (1 - \lambda) x_j$$
+  $$\tilde{y} = \lambda y_i + (1 - \lambda) y_j$$
+  where $(x_i, y_i)$ and $(x_j, y_j)$ are randomly sampled pairs, and mixing scalar $\lambda \sim \text{Beta}(\alpha, \alpha)$ with $\alpha \in [0.1, 0.4]$.
+- Mixup enforces linear behavior between training clusters, eliminating erratic loss fluctuations in unpopulated feature spaces and improving out-of-distribution robustness.
+
+### Spatial Occlusion via CutMix
+
+- Formulated by Sangdoo Yun et al. (2019), **CutMix** cuts a rectangular spatial patch from image $x_j$ and pastes it over image $x_i$, setting the target label proportional to the bounding box pixel area:
+  $$\tilde{x} = \mathbf{M} \odot x_i + (\mathbf{1} - \mathbf{M}) \odot x_j$$
+  $$\tilde{y} = \lambda y_i + (1 - \lambda) y_j, \quad \text{where } \lambda = 1 - \frac{\text{Area}(\text{Patch})}{\text{Area}(\text{Image})}$$
+  where $\mathbf{M} \in \{0, 1\}^{W \times H}$ represents a binary rectangular mask.
+- Unlike standard dropout (which drops pixels to zero), CutMix retains high input information density while forcing networks to recognize objects from partial spatial views rather than single localized cues.
+
+> [!Important]
+> **Mixup and CutMix smooth decision boundaries**: blending training inputs and target labels linearly eliminates overconfident predictive spikes between class clusters, improving model robustness against label noise.
+
+## Comparative Matrix of Core Regularization Methods
+
+| Method | Governing Mathematical Formulation | Operational Stage | Primary Hyperparameter | Primary Strength | Known Tradeoff / Limitation |
+|---|---|---|---|---|---|
+| **$L_2$ Regularization** | $\tilde{\mathcal{L}} = \mathcal{L} + \frac{\alpha}{2}\|w\|_2^2$ | Optimizer update step | Penalty strength $\alpha$ | Smoothly contracts weights along low-curvature directions | Requires decoupled implementations in Adam (AdamW) |
+| **$L_1$ Regularization** | $\tilde{\mathcal{L}} = \mathcal{L} + \alpha\|w\|_1$ | Optimizer update step | Penalty strength $\alpha$ | Drives redundant weights to exact zero for sparse selection | Subgradient issues at zero; can degrade model capacity |
+| **Inverted Dropout** | $\tilde{a} = \frac{r \odot a}{p}, \; r_j \sim \text{Bernoulli}(p)$ | Hidden layer forward pass | Retention probability $p$ | Prevents feature co-adaptation; implicit $2^n$ ensemble | Slows training convergence; conflicts with early BatchNorm |
+| **Early Stopping** | Terminate when $\mathcal{L}_{\text{val}}$ stalls for $k$ steps | Validation checkpointing | Patience window $k$ | Simple to implement; prevents over-training without loss terms | Relies on validation split quality; risks premature stopping |
+| **Data Augmentation** | Synthetic label-preserving transforms $\mathcal{T}(x)$ | Data loading pipeline | Transform magnitude ranges | Expands dataset support; enforces geometric invariance | Domain-specific design required; adds input compute |
+| **Mixup** | $\tilde{x} = \lambda x_i + (1-\lambda)x_j, \; \tilde{y} = \text{mixed}$ | Input batch preparation | Beta shape parameter $\alpha$ | Smoothes decision boundaries between training clusters | Can cause underfitting if mixing parameter $\alpha$ is too high |
+| **CutMix** | Patch substitution: $\mathbf{M} \odot x_i + (\mathbf{1}-\mathbf{M}) \odot x_j$ | Input batch preparation | Beta shape parameter $\alpha$ | Forces spatial feature distribution; retains pixel density | Computationally restricted to vision and spatial inputs |
+
+> [!Tip]
+> **Combine regularization across operational stages**: pairing parameter penalties (AdamW) with stochastic activations (Inverted Dropout) and data expansions (Mixup) provides layered defense against overfitting.
+
+## Key Takeaways
+
+- **$L_2$ regularization multiplies weights by $(1 - \eta \alpha)$ on each step**, shrinking parameters along low-curvature noise directions while preserving strong task signals.
+- **$L_1$ regularization subtracts a constant magnitude update**, driving uninformative parameters to exact zero to construct sparse feature representations.
+- **Bias parameters must be excluded from norm penalties**, as penalizing spatial translations restricts baseline coordinate shifts without reducing model variance.
+- **Dropout breaks feature co-adaptations** by randomly muting hidden units during training, forcing neurons to extract independent, robust features.
+- **Inverted dropout rescales active neurons by $1/p$ during training**, eliminating runtime adjustments and allowing unmasked evaluation during inference.
+- **Early stopping is mathematically equivalent to $L_2$ regularization**, restricting parameter expansion along flat noise directions by bounding the total optimization horizon.
+- **Data augmentation enforces structural invariance**, expanding empirical distributions by applying label-preserving transformations to training inputs.
+- **Mixup and CutMix regularize decision boundaries directly**, blending inputs and soft labels to suppress overconfident predictive spikes between class clusters.
+
+> [!Tip]
+> The central principle of core regularization: **regularization constrains capacity without destroying expressiveness**; combining explicit parameter shrinkage, stochastic activation masking, optimization boundaries, and data-level mixing ensures deep networks learn smooth, robust functions that generalize to unseen data.
