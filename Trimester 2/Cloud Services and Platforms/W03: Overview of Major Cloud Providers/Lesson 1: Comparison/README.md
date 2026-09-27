@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: Comparison
 
 This lesson compares AWS, Azure, and GCP across market position, service models, global infrastructure, core service categories, and architectural differences. The functional gap between providers has largely closed; the difference now lies in philosophy and operational fit. AWS favors autonomy and breadth, Azure reinforces enterprise governance and integration, and GCP optimizes for data, machine learning, and efficiency.
@@ -172,4 +171,157 @@ Cloud services map across four fundamental domains: compute, storage, databases,
 - Load balancers distribute traffic across compute instances for availability and scale.
 - CDNs cache content at edge locations to reduce latency for global users.
 
-```merma
+```mermaid
+flowchart TD
+    A[Core Cloud Services] --> B[Compute]
+    A --> C[Storage]
+    A --> D[Databases]
+    A --> E[Networking]
+    B --> B1[VMs / Containers / Serverless]
+    C --> C1[Object / Block / File / Archive]
+    D --> D1[Relational / NoSQL / Cache / Warehouse]
+    E --> E1[VPC / Load Balancers / CDN / DNS]
+```
+
+> [!Tip]
+> **Services map across providers**: Once you learn one provider's service model, you can translate concepts to the others. A VPC is a VPC, whether it is called VPC, VNet, or VPC.
+
+## Key Architectural Differences
+
+### VPC Scope
+
+| Dimension | AWS | Azure | GCP |
+|---|---|---|---|
+| Network Object | VPC (regional) | VNet (regional) | VPC (global) |
+| Subnet Scope | One AZ | Spans zones within region | Regional (spans zones) |
+| Per-Instance Firewall | Security group (stateful) | NSG (subnet or NIC) | VPC firewall rules by tag / service account |
+| Cross-Region | VPC peering or Transit Gateway | VNet peering or Virtual WAN | No peering needed (global VPC) |
+
+- AWS VPCs are regional with per-AZ subnets. Spanning regions requires peering or a transit hub.
+- Azure VNets are regional with subnet-level NSGs.
+- GCP VPCs are global by default. One VPC spans every region, with regional subnets and firewall rules. No peering is needed between regions.
+
+> [!Important]
+> **GCP global VPC is architecturally distinct**: Subnets in different regions sit in one VPC with private RFC1918 reachability and no peering. This simplifies multi-region design but creates a single blast radius for firewall and routing mistakes.
+
+### Identity and Access Management
+
+| Dimension | AWS | Azure | GCP |
+|---|---|---|---|
+| Identity Service | IAM | Entra ID (formerly Azure AD) | Cloud IAM |
+| Policy Model | JSON policies | Azure Policy, RBAC | IAM policies, Organization Policy |
+| Governance | Organizations, Control Tower | Management Groups | Folders, Organization |
+
+- AWS IAM uses JSON-based policies and supports fine-grained permissions.
+- Azure Entra ID integrates with Microsoft 365, Windows Server, and on-premises Active Directory.
+- GCP Cloud IAM uses hierarchical resource organization with folders and organization policies.
+
+### AI and Machine Learning Services
+
+| Capability | AWS | Azure | GCP |
+|---|---|---|---|
+| LLM Platform | Bedrock (multi-model) | Azure OpenAI Service | Vertex AI (Gemini) |
+| ML Training | SageMaker | Azure ML | Vertex AI |
+| GPU Availability (2026) | Good (H100, H200) | Best (exclusive OpenAI partnership) | Good (TPU v5e/v6e unique) |
+
+- Azure has the strongest GPU availability through its exclusive OpenAI partnership.
+- GCP offers unique TPU options for ML training.
+- AWS Bedrock provides a multi-model approach with access to multiple foundation models.
+
+## Provider Differentiation and Selection
+
+| Criterion | AWS | Azure | GCP |
+|---|---|---|---|
+| Best for | Broad enterprise workloads, startups | Microsoft-integrated enterprises, hybrid | Data, analytics, AI-native apps |
+| Core strength | Service breadth, ecosystem, 240+ services | Hybrid, enterprise IT integration, governance | Kubernetes, ML, global network, BigQuery |
+| Engineering culture | Autonomy, modular teams, service ownership | Standardization, central governance | Efficiency, data-driven, cloud-native |
+| Pricing model | Most mature and complex | Competitive, integrated licensing benefits | Often lowest for data-heavy workloads |
+
+- AWS favors autonomy and breadth. Multi-account landing zones support modular teams and independent pipelines.
+- Azure favors standardization. Entra ID and Azure Policy provide centralized governance and uniform pipelines.
+- GCP optimizes for data, ML, and efficiency. Its private fiber backbone and global VPC reduce latency for distributed workloads.
+
+```mermaid
+flowchart TD
+    A[Start Architecture Decision] --> B{Existing Microsoft Stack?}
+    B -->|Yes| C[Azure]
+    B -->|No| D{Data / AI / Kubernetes Priority?}
+    D -->|Yes| E[GCP]
+    D -->|No| F{Service Breadth Needed?}
+    F -->|Yes| G[AWS]
+    F -->|No| H[Evaluate All Three]
+    C --> I[Document Trade-Offs]
+    E --> I
+    G --> I
+    H --> I
+```
+
+> [!Important]
+> **Fit matters more than features**: The functional capabilities of AWS, Azure, and GCP are largely equivalent for most workloads. Provider selection depends on team skills, existing contracts, compliance needs, and workload requirements, not feature checklists alone.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Compare the market position and growth rates of AWS, Azure, and GCP in Q4 2025.
+2. Explain the difference between IaaS, PaaS, and SaaS with examples from each provider.
+3. Describe how GCP's global VPC differs architecturally from AWS and Azure regional VPCs.
+4. Map the equivalent compute, storage, and database services across all three providers.
+5. Explain how Azure's Regional Pairs differ from AWS and GCP multi-region approaches.
+6. Identify which provider leads in Kubernetes, data analytics, and enterprise integration, and explain why.
+7. Describe the decision criteria for selecting a cloud provider beyond feature comparison.
+
+### Scenario Questions
+
+**Scenario 1: Enterprise Microsoft Environment**
+A company uses Windows Server, Active Directory, and Microsoft 365. Which provider offers the least friction?
+
+- Azure integrates natively with Entra ID, Windows Server, and Microsoft 365.
+- Hybrid licensing benefits reduce cost for existing Microsoft workloads.
+- Azure Policy and management groups provide centralized governance.
+
+**Scenario 2: Data and AI Startup**
+A startup needs managed Kubernetes, serverless analytics, and ML training at scale. Which provider aligns best?
+
+- GCP offers GKE for Kubernetes, BigQuery for analytics, and Vertex AI for ML.
+- GCP's private network backbone reduces latency for global data access.
+- Cost-effective pricing for data-heavy workloads.
+
+**Scenario 3: Multi-Cloud Strategy**
+An organization wants to avoid vendor lock-in and use best-of-breed services from multiple providers. How should they approach this?
+
+- Standardize on Kubernetes and Terraform for portability.
+- Use provider-neutral services where possible: object storage, VMs, managed databases.
+- Accept that deep integration features will vary and plan abstraction layers accordingly.
+
+```mermaid
+flowchart TD
+    A[Workload Requirements] --> B{Availability Target?}
+    B -->|99.99%| C[Multi-Zone Regional]
+    B -->|99.999%| D[Multi-Region Active-Active]
+    C --> E{Provider Fit?}
+    D --> E
+    E -->|Microsoft Stack| F[Azure]
+    E -->|Data / AI| G[GCP]
+    E -->|Broad Services| H[AWS]
+    F --> I[Review Against Well-Architected Framework]
+    G --> I
+    H --> I
+    I --> J[Document Trade-Offs and Repeat]
+```
+
+## Key Takeaways
+
+- AWS, Azure, and GCP collectively dominate global cloud infrastructure spending, holding 66% of the market in Q4 2025.
+- AWS leads in market share and service breadth, Azure leads in enterprise integration and hybrid, and GCP leads in growth rate and data/AI capabilities.
+- Cloud services follow three models: IaaS (most control), PaaS (balanced), and SaaS (most managed).
+- Global infrastructure is organized into regions, availability zones, and edge locations across all providers.
+- GCP's global VPC spans all regions by default. AWS and Azure VPCs are regional and require peering for cross-region communication.
+- Azure pairs regions automatically within the same geography. AWS and GCP require manual multi-region configuration.
+- Core service categories map across providers: compute, storage, databases, and networking.
+- GCP offers BigQuery and GKE as differentiated strengths. Azure offers Cosmos DB and Entra ID integration. AWS offers the broadest catalog and Aurora.
+- Provider selection should be based on team skills, compliance needs, existing contracts, and workload requirements, not feature checklists alone.
+- Design decisions require documented trade-offs between availability, cost, and operational complexity.
+
+> [!Important]
+> **Learn the concepts, not just the service names**: Core cloud concepts stay consistent across providers. Mastering them lets you transfer knowledge between platforms and make architectural decisions independent of vendor marketing.
