@@ -1,4 +1,3 @@
-# Migration in progress
 # Week 5: Supervised Learning: Rule-Based Classification
 
 ## Supervised Learning: Rule-Based Classification Foundations and Algorithms
@@ -122,4 +121,114 @@ flowchart TD
     Default --> Terminate["Return Complete Rule Set"]
     
     Check -- Yes --> LearnRule["Learn One Rule R: Greedy Top-Down Search<br/>Maximize FOIL Gain / Laplace Accuracy"]
-    LearnRule --> PruneRule["Prune Rule R: Minimize Error o
+    LearnRule --> PruneRule["Prune Rule R: Minimize Error on Validation Split"]
+    PruneRule --> AddRule["Append Pruned Rule R to Rule Set"]
+    AddRule --> Separate["Separate Step: Remove All Points Covered by R<br/>D = D \\ {Covered Instances}"]
+    Separate --> Check
+```
+
+### General-to-Specific Beam Search Induction
+
+- Learning an individual rule typically proceeds as a **general-to-specific search**:
+  - Begin with an empty rule antecedent that covers all data: $\text{TRUE} \implies y$.
+  - Iteratively evaluate candidate conjuncts ($A_j = v$ or $A_j \le v$) to add to the antecedent.
+  - Adding a condition restricts coverage, eliminating false positives and refining rule precision.
+- Pure greedy search selects the single best condition at each step, which risks trapping in local minima.
+- **Beam Search:** Maintains a queue of the top $k$ candidate rules (the beam width $k$), expanding all $k$ paths concurrently to avoid premature sub-optimal commitments.
+
+### The RIPPER Algorithm Framework
+
+- Proposed by William W. Cohen (1995), **RIPPER (Repeated Incremental Pruning to Produce Error Reduction)** is the benchmark direct rule induction algorithm, optimized for efficiency on large, noisy datasets.
+- **Class Ordering:** Sorts target classes in ascending order of prevalence (rarest class first, most common class last). RIPPER induces rules for rare classes first; the dominant class defaults as the final fallback.
+- **Two-Phase Rule Induction per Rule:**
+  - **Rule Growing:** Splits active data into a growing set (67%) and a pruning set (33%). Greedily adds conditions using FOIL Information Gain until the rule achieves 100% precision on the growing set ($B = 0$).
+  - **Incremental Rule Pruning:** Prunes trailing conditions immediately using the independent pruning set. Evaluates the metric:
+    $$v = \frac{p - n}{p + n}$$
+    where $p$ and $n$ are positive and negative instances in the pruning set covered by the rule. Conditions are pruned backward until $v$ stops improving.
+- **Rule Set Optimization:** Following complete rule set induction, RIPPER executes a global optimization pass, re-evaluating each rule against alternative replacement rules and revised variants to minimize global error.
+
+### Minimum Description Length (MDL) Stopping Criteria
+
+- RIPPER terminates sequential covering using the **Minimum Description Length (MDL)** principle.
+- Total description length measures the combined bits required to encode the model parameters plus the exceptions (misclassified instances):
+  $$\text{Description Length} = \text{Bits}(\text{Rule Set}) + \text{Bits}(\text{Misclassifications})$$
+- As rules are added, misclassifications decrease while model bits increase.
+- RIPPER halts adding rules when the total description length exceeds the minimum observed description length by more than $d$ bits (typically $d = 64$).
+
+> [!Important]
+> **RIPPER pairs rule growing with immediate pruning**: growing conditions on a sub-split and pruning immediately on an isolated validation set prevents overfitting, while MDL bounds total rule set complexity.
+
+## Indirect Rule Extraction from Decision Trees
+
+### Path Decomposition of Tree Hierarchies
+
+- **Indirect rule induction** trains an unconstrained decision tree first, then translates the hierarchical tree structure into an equivalent flat rule set.
+- Every individual path from the root node to a terminal leaf decomposes into an explicit rule:
+  $$\text{Root} \to \text{Node}_1 \to \text{Node}_2 \to \text{Leaf} \implies (\text{Test}_{\text{Root}} \land \text{Test}_1 \land \text{Test}_2) \implies y_{\text{Leaf}}$$
+- A tree containing $M$ leaves extracts exactly $M$ initial rules that are mutually exclusive and exhaustive.
+
+### Rule Post-Pruning and Antecedent Elimination (C4.5Rules)
+
+- Rules extracted directly from trees are often unnecessarily complex because conditions near the leaves reflect localized splits constrained by upstream nodes.
+- **C4.5Rules (Quinlan, 1993)** post-prunes extracted rules:
+  1. Extract unpruned rules from all root-to-leaf paths.
+  2. For each rule, evaluate removing each condition independently, regardless of its original vertical depth in the tree.
+  3. Estimate rule error using **pessimistic error estimation** (binomial confidence bounds).
+  4. If dropping a condition reduces or maintains estimated pessimistic error, permanently remove the condition from the rule.
+  5. Remove duplicate rules resulting from antecedent pruning.
+  6. Organize surviving rules into class-specific subsets, order rules by accuracy, and assign an unassigned default class.
+
+```mermaid
+flowchart TD
+    Tree["Unpruned Decision Tree"] --> Decomp["1. Extract All Root-to-Leaf Paths as Raw Rules"]
+    Decomp --> PruneCond["2. Prune Unnecessary Conditions using Pessimistic Error"]
+    PruneCond --> Dedup["3. Drop Duplicate and Redundant Pruned Rules"]
+    Dedup --> Sort["4. Order Rules by Minimum Error & Class Support"]
+    Sort --> RuleSet["5. Output Compact, Non-Hierarchical Decision List"]
+```
+
+### Overcoming the Sub-Tree Replication Problem
+
+- Decision trees suffer from the **sub-tree replication problem**: when a concept requires testing an attribute condition across multiple alternative paths, identical sub-trees duplicate across different branches.
+- Decomposing trees into rules resolves this structural redundancy: post-pruning eliminates the duplicated conditions, compressing complex duplicated tree branches into a single concise rule.
+
+> [!Tip]
+> **C4.5Rules eliminates tree structure constraints**: converting tree paths into rules and pruning antecedents independently allows conditions from the root to be discarded if intermediate tests render them redundant, resolving the sub-tree replication problem.
+
+## Comparative Matrices of Rule Systems and Algorithms
+
+| System Characteristic | Ordered Decision Lists | Unordered Decision Sets |
+|---|---|---|
+| **Inference Evaluation Sequence** | Sequential top-down priority evaluation | **Concurrent evaluation** across all rules |
+| **Handling Overlapping Rules** | Avoids conflict; first matching rule halts search | **Requires conflict resolution** (voting, Laplace weights) |
+| **Rule Modularity** | Low; moving or deleting a rule changes all downstream logic | **High**; individual rules evaluate independently |
+| **Handling Uncovered Gaps** | Terminal default rule guarantees complete coverage | Requires a separate fallback rule |
+| **Human Interpretability** | Requires understanding upstream exclusion context | Simple standalone IF-THEN comprehension |
+| **Model Size** | Typically more compact due to sequential exclusion | Often larger to ensure complete domain coverage |
+
+### Direct Versus Indirect Rule Induction Frameworks
+
+| Operational Dimension | Direct Induction: Sequential Covering (RIPPER, CN2) | Indirect Extraction: Tree-Based (C4.5Rules) |
+|---|---|---|
+| **Underlying Strategy** | **Separate-and-Conquer** (Greedy rule search) | **Divide-and-Conquer** (Global tree construction) |
+| **Intermediate Representation** | None; mines rules directly from data points | Full Decision Tree (CART or C4.5) |
+| **Search Space Traversal** | General-to-specific beam search over feature terms | Hierarchical orthogonal recursive partitioning |
+| **Computational Complexity** | Faster on dense datasets; scales well with samples | Bounded by tree training ($O(N \log N \cdot D)$) + pruning |
+| **Sub-Tree Replication** | Naturally avoids sub-tree replication | Resolves replication via post-pruning |
+| **Rule Quality Focus** | Optimizes individual rules sequentially | Optimizes global tree partitions before extraction |
+
+> [!Important]
+> **Direct methods scale to large datasets while indirect methods leverage tree structures**: RIPPER mines rules directly using fast separate-and-conquer loops, whereas C4.5Rules extracts rules from trees to eliminate redundant hierarchical splits.
+
+## Key Takeaways
+
+- **Rule-based classifiers represent knowledge via IF-THEN implications**, mapping feature conjunctions to categorical class predictions.
+- **Rule sets can be ordered (decision lists)**, halting at the first matching rule, or **unordered (decision sets)**, requiring voting protocols to resolve conflicts.
+- **Rule accuracy must be regularized on small coverage**: Laplace smoothing ($\frac{A+1}{A+B+K}$) prevents brittle rules that cover solitary outliers from dominating models.
+- **Direct sequential covering uses separate-and-conquer loops**: learn a single high-quality rule, remove all covered training points, and repeat until positive instances are exhausted.
+- **RIPPER optimizes rule induction** by growing rules with FOIL Information Gain, pruning immediately on validation splits, and stopping via Minimum Description Length (MDL).
+- **Indirect methods extract rules from decision trees**, translating root-to-leaf paths into rules and pruning redundant antecedents to solve the sub-tree replication problem.
+- **Unordered rules offer modular explainability**, allowing individual domain logic rules to be inspected, edited, or audited independently.
+
+> [!Tip]
+> The defining principle of rule-based classification: **decouple hierarchical splits into modular logical assertions**; by extracting modular IF-THEN rules directly from data or pruning them from decision trees, rule classifiers deliver transparent models that human domain experts can easily inspect and audit.
