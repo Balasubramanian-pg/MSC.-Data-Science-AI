@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: Machine Learning Paradigms and Workflow
 
 ## Machine Learning Paradigms and Engineering Workflow
@@ -114,4 +113,102 @@ flowchart TD
 ```mermaid
 flowchart TD
     subgraph KFold["5-Fold Cross-Validation Protocol"]
-        F1["Fold 1: [Val]   [Train] [Train] [Train] [Train] -> Score
+        F1["Fold 1: [Val]   [Train] [Train] [Train] [Train] -> Score 1"]
+        F2["Fold 2: [Train] [Val]   [Train] [Train] [Train] -> Score 2"]
+        F3["Fold 3: [Train] [Train] [Val]   [Train] [Train] -> Score 3"]
+        F4["Fold 4: [Train] [Train] [Train] [Val]   [Train] -> Score 4"]
+        F5["Fold 5: [Train] [Train] [Train] [Train] [Val]   -> Score 5"]
+    end
+    F1 & F2 & F3 & F4 & F5 --> Mean["Average Score = (S1 + S2 + S3 + S4 + S5) / 5"]
+```
+
+### Temporal and Group-Based Partitioning Constraints
+
+- **Time-Series Partitioning:** Shuffling sequential or temporal data across random folds causes future information to leak into past predictions. Time-series cross-validation uses **rolling-origin forward chaining**, where validation splits reside strictly in the temporal future relative to training folds.
+- **Group-Based Partitioning:** When multiple samples originate from the same subject or entity (such as multiple medical images from one patient), standard random splits allow patient-specific features to appear in both train and validation splits. Grouped splitting guarantees that all observations from a specific subject reside entirely within a single fold.
+
+> [!Important]
+> **Use stratified splits for imbalanced classes and temporal splits for time-series**: random data shuffling breaks class balance on skewed categories and causes future-information leakage when evaluating temporal data.
+
+## Data Preprocessing and Leakage Prevention
+
+### Feature Scaling: Standardization Versus Normalization
+
+- Optimization algorithms (gradient descent) and distance-based estimators (KNN, K-Means, SVMs) fail when input attributes possess vastly different numerical ranges.
+- **Standardization (Z-Score Scaling):** Rescales features to zero mean ($\mu = 0$) and unit variance ($\sigma = 1$):
+  $$x_{\text{std}} = \frac{x - \mu}{\sigma}$$
+  Standardization does not bound features to a fixed interval, making it robust against extreme outliers.
+- **Min-Max Normalization:** Linearly compresses feature values into a rigid bounded interval, typically $[0, 1]$:
+  $$x_{\text{norm}} = \frac{x - x_{\min}}{x_{\max} - x_{\min}}$$
+  Normalization is sensitive to outliers, as extreme minimum or maximum values compress the remaining data into tiny sub-intervals.
+
+### Categorical Variable Encodings
+
+- Machine learning algorithms require numerical tensor inputs, necessitating the conversion of discrete symbolic strings:
+  - **One-Hot Encoding:** Maps categorical values into binary vectors of length $C$, where only the active category entry evaluates to one. Appropriate for low-cardinality nominal variables lacking intrinsic order (e.g., colors, country names).
+  - **Ordinal Encoding:** Maps ordered categories to integer ranks ($0, 1, 2, \dots$). Appropriate when categories possess natural hierarchical order (e.g., education levels, shirt sizes).
+  - **Target (Mean) Encoding:** Replaces categorical levels with the average target value observed for that level, effective for high-cardinality variables but susceptible to overfitting without regularization.
+
+### Imputation Strategies for Incomplete Records
+
+- Dropping rows containing missing values discards training data and introduces selection bias if data is not Missing Completely at Random (MCAR).
+- **Statistical Imputation:** Fills unobserved entries with simple summary statistics computed from observed training values (median for skewed continuous variables, mode for discrete categories).
+- **Model-Based Imputation:** Uses algorithmic estimators (such as K-Nearest Neighbors or iterative multivariate regression) to predict missing attributes based on observed feature relationships.
+
+### The Strict Isolation Boundary Against Data Leakage
+
+- **Data Leakage** occurs when information from the validation or test splits influences preprocessing transformations prior to model training.
+- Leakage produces overly optimistic validation scores that collapse when the model deploys to real-world data.
+- **The Golden Rule of Machine Learning Pipelines:** All preprocessing parameters (means $\mu$, standard deviations $\sigma$, min/max ranges, imputation values, target encodings) must be calculated strictly from the **training partition**.
+- The saved training parameters then apply deterministically to transform validation and test splits without recalculation.
+
+```mermaid
+flowchart LR
+    subgraph LeakageViolation["INCORRECT: Data Leakage Protocol"]
+        AllData["Complete Dataset (Train + Val + Test)"] --> GlobalStats["Compute Global Mean & Std Dev"]
+        GlobalStats --> ScaleAll["Scale All Data Using Global Stats"]
+        ScaleAll --> SplitBad["Split into Train, Val, and Test Sets"]
+    end
+
+    subgraph ValidIsolation["CORRECT: Strict Isolation Pipeline"]
+        Raw["Raw Data"] --> SplitGood["Split into Train, Val, and Test Sets"]
+        SplitGood --> TrainSplit["Training Set"]
+        SplitGood --> ValSplit["Validation Set"]
+        SplitGood --> TestSplit["Test Set"]
+        TrainSplit --> Fit["Compute Mean & Std Dev ON TRAIN ONLY"]
+        Fit --> TransTrain["Transform Training Set"]
+        Fit -.-> TransVal["Transform Validation Set using Train Stats"]
+        Fit -.-> TransTest["Transform Test Set using Train Stats"]
+    end
+```
+
+> [!Tip]
+> **Fit transformers strictly on the training partition**: never compute scaling parameters or imputation statistics across the entire dataset; calculate metrics on training data and apply those fixed parameters to transform validation and test sets.
+
+## Comparative Matrix of Machine Learning Paradigms
+
+| Learning Paradigm | Supervisory Training Input | Mathematical Objective Formulation | Primary Practical Constraints | Canonical Industrial Tasks | Representative Baseline Algorithms |
+|---|---|---|---|---|---|
+| **Supervised Learning** | Inputs paired with true target labels: $(x, y)$ | Empirical risk minimization: $\min_\theta \sum \mathcal{L}(f(x), y)$ | Requires extensive ground-truth data annotation | Credit scoring, medical diagnosis, demand forecasting | Linear/Logistic Regression, Random Forests, XGBoost, MLPs |
+| **Unsupervised Learning** | Unlabeled feature vectors: $(x)$ | Discover geometric clusters, density, or manifolds | Lacks direct objective evaluation metrics | Customer segmentation, anomaly detection, data compression | K-Means, DBSCAN, PCA, Autoencoders, Isolation Forests |
+| **Semi-Supervised Learning** | Sparse labels $(x_l, y_l)$ + vast unlabeled data $(x_u)$ | Joint supervised loss and manifold consistency | Requires smooth class distributions across unlabeled space | Medical image analysis, protein structure prediction | Pseudo-Labeling, Label Propagation, Consistency Regularization |
+| **Self-Supervised Learning** | Unlabeled data formatted into pretext tasks | Reconstruct masked inputs or maximize contrastive bounds | Demands high-capacity models and massive compute | Foundational language modeling, visual representation learning | Masked Autoencoders (MAE), BERT, SimCLR, CLIP |
+| **Reinforcement Learning** | Environmental state transitions and scalar rewards | Maximize expected cumulative discounted return | Sample inefficient; requires stable simulated environments | Autonomous driving, robotics manipulation, algorithmic trading | Deep Q-Networks (DQN), PPO, Soft Actor-Critic (SAC) |
+
+> [!Important]
+> **Select paradigms based on annotation availability**: use supervised learning when clean ground-truth labels exist, deploy self-supervised pretraining when unannotated data is abundant, and choose reinforcement learning when optimizing sequential decision policies in dynamic environments.
+
+## Key Takeaways
+
+- **Machine learning extracts rules from data**, transforming historical observations into predictive parameters through optimization.
+- **Supervised learning optimizes against known targets**, dividing into continuous regression and discrete categorical classification.
+- **Unsupervised learning uncovers latent geometry**, discovering clusters, manifolds, and co-occurrences without external supervision.
+- **Self-supervised learning generates its own supervisory signals**, training foundational models via pretext reconstruction tasks over unlabeled corpora.
+- **Reinforcement learning optimizes decision policies** by maximizing cumulative discounted rewards through environmental interaction.
+- **A disciplined ML workflow** spans problem framing, exploratory analysis, isolated preprocessing, model training, error diagnostics, and production drift monitoring.
+- **Three-way partitioning isolates evaluation**: parameters update on training data, hyperparameters tune on validation data, and generalization audits execute once on held-out test data.
+- **Stratified and temporal splits prevent evaluation artifacts** by preserving class proportions and enforcing causal time directionality.
+- **Strict preprocessing isolation prevents data leakage**: all transformation statistics (means, ranges, imputation medians) must derive strictly from training partitions.
+
+> [!Tip]
+> The foundational principle of machine learning engineering: **rigorous workflow isolation protects generalization integrity**; aligning the learning paradigm with available supervisory signals while isolating validation partitions ensures that empirical optimization produces models that perform reliably in production environments.
