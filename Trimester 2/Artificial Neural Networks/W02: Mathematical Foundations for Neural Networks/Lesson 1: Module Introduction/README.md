@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: Module Introduction
 
 Module Overview:
@@ -21,4 +20,24 @@ Calculus and Differential Operations:
 - Gradients represent vectors pointing in the direction of steepest increase on the error surface.
 
 Probability and Statistics:
-- Real-wor
+- Real-world data contains noise, missing information, and inherent randomness that must be quantified.
+- Neural networks use probability distributions to express confidence and generate class predictions.
+- Softmax functions convert unbounded real-valued logits into normalized probabilities that sum to one.
+- Maximum likelihood estimation connects probability theory to loss function design, leading directly to formulations like cross-entropy loss.
+- Statistical metrics help track generalization error, variance, and bias during model evaluation.
+
+Optimization Principles:
+- Optimization algorithms search for weight configurations that minimize a predefined loss function.
+- Gradient descent updates weights iteratively in the opposite direction of the gradient.
+- The learning rate controls the step size taken during each parameter update.
+- High-dimensional loss landscapes present challenges including saddle points, local minima, and vanishing or exploding gradients.
+
+Important:
+- Mathematical equations directly correspond to software implementations; errors in tensor dimensions or gradient derivations break model convergence.
+
+Key Takeaways:
+- Linear algebra structures inputs, network weights, and layer operations into efficient matrix computations.
+- Multivariate calculus and the chain rule provide the computational engine for backpropagation.
+- Probability theory supplies the framework for modeling uncertainty and defining objective loss functions.
+- Optimization methods use gradient information to iteratively guide weights toward minimal error.
+- A firm grounding in these core areas is necessary to understand how deep learning architectures function and adapt.
