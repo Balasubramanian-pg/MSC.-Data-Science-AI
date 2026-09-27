@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 3: Monitoring & Observability in Pipelines
 
 Monitoring and Observability in Pipelines:
@@ -22,4 +21,29 @@ The Five Pillars of Data Observability:
 Telemetry Data: Metrics, Logs, and Traces:
 
 - Metrics: Numerical measurements captured at regular intervals, such as consumer lag, task execution durations, memory utilization, and records processed per second.
-- Structured logs: Event records formatted as structured JSON payloads that contain execution context, including pipeline run identifiers, task IDs, timestamps, and detailed error s
+- Structured logs: Event records formatted as structured JSON payloads that contain execution context, including pipeline run identifiers, task IDs, timestamps, and detailed error stack traces.
+- Distributed tracing: Tracks individual records, micro-batches, or transactions across multiple disparate services, network brokers, and transformation engines using standardized open telemetry standards.
+
+Anomaly Detection and Alerting Strategies:
+
+- Static threshold alerting: Uses hardcoded boundaries, such as alerting when a row count is zero or execution time exceeds two hours, which works well for predictable batch pipelines.
+- Dynamic machine-learning baselines: Analyzes historical seasonal trends, day-of-week patterns, and organic growth to detect statistical anomalies without requiring manual threshold adjustments.
+- Alert fatigue prevention: Tuning alert rules to focus exclusively on actionable failures prevents engineers from ignoring critical incident notifications.
+- Tiered notification routing: High-severity incidents impacting external customers trigger automated paging services for on-call engineers, while non-critical warnings route to team chat channels or daily health reports.
+- Important: Monitoring pipeline task success flags is insufficient on its own; alerting rules must evaluate both the execution status of the pipeline and the statistical validity of the resulting tables.
+
+Service Level Frameworks and Incident Response:
+
+- Service Level Indicators: Specific quantitative metrics used to evaluate pipeline performance, such as table freshness latency or data completeness percentages.
+- Service Level Objectives: Target reliability goals agreed upon by data producers and consumers, such as delivering ninety-nine percent of daily reporting tables by 07:00.
+- Service Level Agreements: Formal commitments between business entities that specify financial penalties or operational consequences if reliability targets are breached.
+- Post-mortem analysis: Engineering reviews conducted after major data incidents to document root causes, timeline events, and preventive code changes to avoid recurring failures.
+
+Key Takeaways:
+
+- Infrastructure monitoring verifies server operations, whereas data observability evaluates data health and integrity inside tables.
+- The five pillars of data observability are freshness, volume, distribution, schema, and lineage.
+- Silent data corruption occurs when pipeline tasks execute successfully but write invalid, incomplete, or corrupted records.
+- Comprehensive telemetry combines continuous metrics, structured JSON logs, and distributed tracing.
+- Anomaly detection must account for historical data seasonality and growth trends to avoid alert fatigue.
+- Service level frameworks define objective reliability standards, guiding rapid triage and systematic incident response.
