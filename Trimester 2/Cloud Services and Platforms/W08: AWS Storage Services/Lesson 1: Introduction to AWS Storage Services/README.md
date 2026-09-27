@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: Introduction to AWS Storage Services
 
 AWS storage services are organised around three fundamental data types: object, block, and file. Each type maps to a different service, and each service is optimised for different access patterns, durability requirements, and cost profiles. Storage is typically 20-30% of an AWS bill, making storage selection one of the most consequential architectural decisions you will make.
@@ -182,4 +181,214 @@ EBS offers SSD-backed volumes for transactional workloads and HDD-backed volumes
 > [!Important]
 > **Choose FSx when you need a specific file system, not just file storage**: EFS is general-purpose shared file storage for Linux. FSx is for when you need Windows compatibility, high-performance Lustre, NetApp ONTAP features, or ZFS capabilities.
 
-## AWS Stor
+## AWS Storage Gateway (Hybrid Storage)
+
+*Definition*: AWS Storage Gateway is a hybrid cloud storage service that gives on-premises applications access to virtually unlimited cloud storage. It provides standard storage protocols so existing applications work without modification.
+
+### Gateway Types
+
+| Gateway Type | Protocol | Cloud Storage | Use Case |
+|---|---|---|---|
+| S3 File Gateway | NFS, SMB | Amazon S3 | File shares backed by S3 |
+| FSx File Gateway | SMB | Amazon FSx for Windows | Low-latency access to Windows file shares |
+| Volume Gateway (Cached) | iSCSI | Amazon S3 (hot data cached locally) | Block storage, primary data in S3 |
+| Volume Gateway (Stored) | iSCSI | Local (async backup to S3) | Full dataset on-prem, EBS snapshots to S3 |
+| Tape Gateway | iSCSI VTL | Amazon S3, Glacier | Backup to virtual tape library |
+
+- Storage Gateway caches frequently accessed data on premises for low-latency access.
+- Data is transferred asynchronously to AWS using only changed data and compression.
+- Volume Gateway stores data in S3 and takes point-in-time copies as EBS snapshots.
+- Tape Gateway provides a virtual tape library interface for existing backup applications.
+
+> [!Tip]
+> **Use Storage Gateway for hybrid cloud storage, not one-time migration**: It is designed for ongoing hybrid access where on-premises applications read and write cloud storage continuously. For one-time or scheduled data movement, use DataSync instead.
+
+## AWS Backup (Data Protection)
+
+*Definition*: AWS Backup is a fully managed service that centralises and automates data protection across AWS services. You define backup policies once and apply them across your entire AWS environment.
+
+### Key Features
+
+| Feature | Description |
+|---|---|
+| Centralised Management | Single console for backups across AWS services |
+| Policy-Based Backup | Define backup schedules and retention policies |
+| Tag-Based Policies | Apply backup policies automatically based on resource tags |
+| Lifecycle Management | Automate transition to cold storage and expiration |
+| Cross-Region Backup | Copy backups to other AWS Regions |
+| Cross-Account Backup | Share backups across AWS accounts |
+| Audit Manager | Audit and report on backup compliance |
+| Incremental Backups | Only changed data is backed up after the first full backup |
+| Logically Air-Gapped Vault | Immutable backup vault with no delete permissions |
+
+- AWS Backup supports EC2, EBS, EFS, FSx, S3, DynamoDB, RDS, Aurora, DocumentDB, Neptune, Redshift, Storage Gateway, VMware, and EKS.
+- Cross-Region and cross-account copy support for FSx for ONTAP was added in August 2026.
+- AWS Backup now supports protecting more than 1,000 S3 buckets per account.
+
+> [!Important]
+> **Use AWS Backup for centralised data protection**: Instead of managing backups service by service, use AWS Backup to define policies once and apply them across your entire environment. Use logically air-gapped vaults for ransomware protection and compliance.
+
+## Data Transfer Services
+
+### AWS DataSync
+
+*Definition*: AWS DataSync is a secure, high-speed data transfer service that simplifies moving data between on-premises storage and AWS, or between AWS storage services.
+
+- DataSync transfers files, objects, and directories.
+- It uses agents for on-premises transfers and can transfer between AWS services without an agent.
+- Sources: NFS, SMB, HDFS, self-managed object storage, S3-compatible storage.
+- Destinations: S3, EFS, FSx (all types), and between AWS storage services.
+- DataSync is 10x faster than open-source tools and verifies data integrity after transfer.
+
+### Snow Family
+
+*Definition*: The AWS Snow Family provides physical devices for offline data transfer and edge computing. These are used when network transfer is impractical due to bandwidth, time, or cost constraints.
+
+| Device | Capacity | Use Case |
+|---|---|---|
+| AWS Snowcone | 8 TB HDD, 14 TB SSD | Small, portable edge computing and data transfer |
+| AWS Snowball Edge Storage Optimized | 80 TB | Large-scale data migration, local storage |
+| AWS Snowball Edge Compute Optimized | 42 TB | Edge computing with GPU options |
+| AWS Snowmobile | Up to 100 PB | Exabyte-scale data migration |
+
+- If network transfer takes more than one week, use the Snow Family.
+- Snowball Edge supports both import and export jobs.
+- Data is encrypted end-to-end with KMS.
+- For recurring data movement, DataSync over Direct Connect is the cleaner architecture.
+
+> [!Tip]
+> **Use DataSync for ongoing data movement, Snow Family for offline transfer**: DataSync is designed for scheduled, automated transfers. Snow Family is for one-time migrations of very large datasets where network transfer would take weeks or months.
+
+## Storage Service Comparison
+
+| Dimension | S3 | EBS | EFS | FSx | Storage Gateway |
+|---|---|---|---|---|---|
+| Storage Type | Object | Block | File | File | Hybrid |
+| Access Protocol | HTTP/HTTPS | Block device | NFS | SMB, NFS, Lustre | iSCSI, SMB, NFS |
+| Scope | Regional | AZ-specific | Regional | Regional | Hybrid |
+| Durability | 11 nines | 99.8-99.999% | 11 nines | Varies | Varies |
+| Use Case | Data lakes, backups, static assets | EC2 boot and data volumes | Shared Linux file storage | Windows, HPC, NAS migration | On-premises to cloud |
+| Scaling | Virtually unlimited | Manual resize | Automatic | Manual or automatic | On-premises cache |
+| Cost Model | Per GB stored + requests | Per GB provisioned | Per GB stored | Per GB provisioned | Per GB stored + gateway |
+
+## Storage Decision Framework
+
+```mermaid
+flowchart TD
+    A[Storage Decision] --> B{Data Type?}
+    B -->|Object| C[Amazon S3]
+    B -->|Block| D[Amazon EBS]
+    B -->|File| E{Protocol?}
+    E -->|NFS Linux| F[Amazon EFS]
+    E -->|SMB Windows| G[FSx for Windows]
+    E -->|Lustre HPC| H[FSx for Lustre]
+    E -->|NetApp ONTAP| I[FSx for NetApp ONTAP]
+    A --> J{Hybrid?}
+    J -->|Yes| K[Storage Gateway]
+    A --> L{Offline Transfer?}
+    L -->|Yes| M[Snow Family]
+    L -->|No| N[DataSync]
+    A --> O{Backup?}
+    O -->|Centralised| P[AWS Backup]
+```
+
+> [!Tip]
+> **Start with S3 unless you have a specific requirement**: S3 is the default storage service for most workloads. Choose EBS when you need block storage attached to an EC2 instance. Choose EFS or FSx when you need a shared file system. Choose Storage Gateway for hybrid storage.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Compare object, block, and file storage and give an AWS service for each.
+2. List the S3 storage classes and describe the access pattern each is designed for.
+3. Explain how S3 lifecycle policies work and describe a common transition pattern.
+4. Describe the constraints on S3 lifecycle transitions.
+5. Compare EBS volume types and their performance characteristics.
+6. Explain how EBS snapshots work and why they are incremental.
+7. Describe the EFS storage classes and performance modes.
+8. Compare the four FSx file system types.
+9. Describe the Storage Gateway types and their use cases.
+10. Explain the purpose of AWS Backup and its key features.
+11. Describe how DataSync differs from Storage Gateway and Snow Family.
+12. Compare S3, EBS, EFS, and FSx across access protocol, scope, and use case.
+
+### Scenario Questions
+
+**Scenario 1: Data Lake and Analytics**
+A company needs to store petabytes of structured and unstructured data for analytics and machine learning. What should they use?
+
+- Use Amazon S3 with Table buckets for Iceberg-based data lakes.
+- Use lifecycle policies to transition older data to lower-cost storage classes.
+- Use S3 Intelligent-Tiering for unknown access patterns.
+- Enable versioning and Object Lock for compliance.
+
+**Scenario 2: High-Performance Computing**
+A research team needs a file system with sub-millisecond latency and hundreds of GB/s throughput for ML training. What should they use?
+
+- Use FSx for Lustre.
+- FSx for Lustre provides sub-millisecond latency and massive throughput.
+- Integrate with S3 for data repository tasks.
+
+**Scenario 3: Hybrid Cloud Storage**
+A company wants to extend its on-premises storage to AWS without rewriting applications. What should they use?
+
+- Use AWS Storage Gateway.
+- Use S3 File Gateway for NFS/SMB file shares backed by S3.
+- Use Volume Gateway for block storage with iSCSI.
+- Use Tape Gateway for backup to virtual tape library.
+- Cache frequently accessed data on premises for low latency.
+
+**Scenario 4: Centralised Backup**
+A company runs workloads across EC2, RDS, EFS, and DynamoDB. They need a single backup policy across all services. What should they use?
+
+- Use AWS Backup.
+- Define backup policies once and apply them across all supported services.
+- Use tag-based policies for automatic resource assignment.
+- Configure cross-Region and cross-account backup for disaster recovery.
+- Use logically air-gapped vaults for ransomware protection.
+
+**Scenario 5: Large-Scale Data Migration**
+A company needs to migrate 500 TB of data from its data center to AWS. Network transfer would take months. What should they use?
+
+- Use AWS Snowball Edge Storage Optimized devices.
+- Order multiple devices and transfer data locally.
+- Ship the devices back to AWS for upload to S3.
+- Data is encrypted end-to-end with KMS.
+- For ongoing transfers after migration, use DataSync.
+
+```mermaid
+flowchart TD
+    A[Storage Decision] --> B{Object, Block, or File?}
+    B -->|Object| C[S3]
+    B -->|Block| D[EBS]
+    B -->|File| E{Protocol?}
+    E -->|NFS| F[EFS]
+    E -->|SMB| G[FSx for Windows]
+    E -->|Lustre| H[FSx for Lustre]
+    A --> I{Hybrid?}
+    I -->|Yes| J[Storage Gateway]
+    A --> K{Offline?}
+    K -->|Yes| L[Snow Family]
+    K -->|No| M[DataSync]
+    A --> N{Backup?}
+    N -->|Centralised| O[AWS Backup]
+```
+
+## Key Takeaways
+
+- AWS storage services split into object (S3), block (EBS), file (EFS and FSx), and hybrid (Storage Gateway).
+- S3 is the default storage service for most workloads. It offers four bucket types and a range of storage classes from Standard to Glacier Deep Archive.
+- S3 lifecycle policies automate cost optimisation by transitioning objects between storage classes.
+- EBS provides persistent block storage for EC2 instances. gp3 is the default general purpose SSD. io2 Block Express is for mission-critical databases.
+- EBS snapshots are incremental, point-in-time backups stored in S3.
+- EFS is serverless, elastic NFS file storage for Linux workloads. It scales automatically.
+- FSx provides four file system types: Windows File Server, Lustre, NetApp ONTAP, and OpenZFS.
+- Storage Gateway provides hybrid cloud storage with file, volume, and tape gateway types.
+- AWS Backup centralises data protection across AWS services with policy-based backup and cross-Region and cross-account capabilities.
+- DataSync is a secure, high-speed data transfer service for moving data between on-premises and AWS.
+- The Snow Family provides physical devices for offline data transfer and edge computing.
+- Choose storage based on data type, access pattern, protocol, and hybrid requirements.
+- S3 is the default unless you need block storage attached to an instance (EBS), a shared file system (EFS or FSx), or hybrid connectivity (Storage Gateway).
+
+> [!Important]
+> **Match the storage service to the data type and access pattern**: The most common architectural mistake is forcing data into the wrong storage service. Objects belong in S3. Block data belongs in EBS. Shared files belong in EFS or FSx. Hybrid belongs in Storage Gateway. Use lifecycle policies to optimise cost, encryption to protect data, and AWS Backup to centralise protection. Start with S3 unless you have a specific requirement for block or file storage.
