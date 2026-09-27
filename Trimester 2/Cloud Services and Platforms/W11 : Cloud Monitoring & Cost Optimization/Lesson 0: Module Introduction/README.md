@@ -1,6 +1,8 @@
-# Migration in progress
 # Lesson 0: Module Introduction
 
 Initial directory setup.
 
-## Overvi
+## Overview
+- Module resources and notes will be added here.
+
+Status: Active
