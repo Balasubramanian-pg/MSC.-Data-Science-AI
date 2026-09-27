@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 2: Convolutions and Feature Maps
 
 ## Convolutions and Feature Maps in Neural Networks
@@ -94,4 +93,81 @@ The core computational mechanism of a Convolutional Neural Network is the convol
 - Combining input dimensions, kernel sizes, padding allocations, and stride values yields the unified spatial dimension equations:
   $$H_{\text{out}} = \left\lfloor \frac{H_{\text{in}} - K_h + 2P}{S} \right\rfloor + 1$$
   $$W_{\text{out}} = \left\lfloor \frac{W_{\text{in}} - K_w + 2P}{S} \right\rfloor + 1$$
-  where $\lfloor \cdot \rf
+  where $\lfloor \cdot \rfloor$ denotes the floor function, ensuring valid integer grid indices.
+
+> [!Tip]
+> **Same padding preserves spatial resolution**: setting zero-padding to $P = \frac{K-1}{2}$ for odd-sized kernels prevents boundary erosion, allowing deep networks to maintain constant spatial dimensions across successive layers.
+
+## Nature and Semantics of Feature Maps
+
+### Feature Maps as Spatial Response Fields
+
+- A **feature map** is a two-dimensional grid representing the spatial distribution of activations produced by a specific learned filter.
+- Coordinate $(i, j)$ in feature map $A_k$ indicates the degree to which visual feature $k$ is present at that relative location in the input image.
+- Because kernels are shared across all coordinates, a feature map preserves spatial topography: an activated cluster in the top-right of a feature map corresponds directly to a detected pattern in the top-right of the input canvas.
+
+### Channel Depth as Feature Diversity
+
+- The channel dimension $C_{\text{out}}$ of an intermediate tensor does not represent color or spatial coordinates; it represents the **cardinality of distinct visual detectors**.
+- A tensor of shape $(256 \times 28 \times 28)$ represents 256 distinct visual filters, each evaluating its own $28 \times 28$ spatial activation grid across the input image.
+- As networks process information from input to output, architectures typically trade spatial resolution for channel depth: spatial grids downsample ($H \downarrow, W \downarrow$) while channel capacity expands ($C \uparrow$) to encode increasingly diverse and abstract features.
+
+### Hierarchical Visual Abstraction Across Layers
+
+- Feature maps undergo qualitative semantic transformation as depth increases:
+  - **Early Layers (Conv1 - Conv2):** High spatial resolution, shallow channel depth. Feature maps display high-frequency responses corresponding to edges, corners, and localized color gradients.
+  - **Intermediate Layers (Conv3 - Conv4):** Moderate spatial resolution, expanded channel depth. Feature maps capture geometric motifs, textures, contours, and recurring parts.
+  - **Deep Layers (Conv5+):** Low spatial resolution, wide channel depth. Feature maps display sparse, localized activation clusters corresponding to holistic semantic parts (e.g., eyes, wheels, text fragments), largely invariant to minor pixel transformations.
+
+> [!Important]
+> **Channel depth trades space for semantic abstraction**: deep architectures systematically reduce spatial resolution ($H \downarrow, W \downarrow$) while increasing channel count ($C \uparrow$) to transition from local edges to complex class semantics.
+
+## Computational Complexity and Memory Footprint
+
+### Floating-Point Operations (FLOPs) Accounting
+
+- The computational cost of a convolutional layer is dominated by the multiply-accumulate operations executed across all output pixels and filter weights.
+- Generating a single output scalar requires $C_{\text{in}} \times K_h \times K_w$ multiplications and an equivalent number of additions.
+- Evaluating all $H_{\text{out}} \times W_{\text{out}}$ spatial locations across all $C_{\text{out}}$ feature maps yields the standard **FLOPs formula**:
+  $$\text{FLOPs} = 2 \times H_{\text{out}} \times W_{\text{out}} \times C_{\text{out}} \times (C_{\text{in}} \times K_h \times K_w)$$
+- For an input processing a $56 \times 56$ grid with 64 input channels, 128 output channels, and $3 \times 3$ filters:
+  $$\text{FLOPs} = 2 \times 56 \times 56 \times 128 \times (64 \times 3 \times 3) \approx 462,422,016 \text{ operations} \approx 462.4 \text{ MFLOPs}$$
+
+### Parameter Footprint Versus Activation Cache Memory
+
+- A standard misconception is that parameter weights dominate GPU memory consumption during training.
+- In convolutional layers, parameter counts are small due to parameter sharing:
+  $$\text{Memory}_{\text{params}} = C_{\text{out}} \times (C_{\text{in}} \times K_h \times K_w + 1) \times 4 \text{ bytes (FP32)}$$
+  (For the above layer: $73,856 \text{ parameters} \approx 295 \text{ KB}$).
+- Conversely, forward activations must be cached in memory for each sample in a mini-batch of size $m$ to compute backward gradients:
+  $$\text{Memory}_{\text{activations}} = m \times C_{\text{out}} \times H_{\text{out}} \times W_{\text{out}} \times 4 \text{ bytes (FP32)}$$
+  (For batch size $m = 64$: $64 \times 128 \times 56 \times 56 \times 4 \text{ bytes} \approx 102.7 \text{ MB}$).
+- Intermediate **activation caching consumes hundreds of times more RAM than static parameter storage**, making feature map resolution the primary constraint on maximum mini-batch size.
+
+> [!Tip]
+> **Activation tensors dominate training memory**: while parameter weights occupy negligible space due to weight sharing, cached intermediate feature maps consume megabytes per layer, dictating GPU batch size limits.
+
+## Comparative Matrix of Padding Strategies
+
+| Padding Mode | Mathematical Padding Size ($P$) | Output Spatial Dimension ($S=1$) | Boundary Pixel Weighting | Memory / Compute Impact | Primary Engineering Use Case |
+|---|---|---|---|---|---|
+| **Valid Padding** | $P = 0$ (No border added) | Shrinks: $H_{\text{out}} = H_{\text{in}} - K + 1$ | Under-represented (sampled fewer times than center) | Minimal (smallest feature maps) | WaveNet audio synthesis; tasks where boundary artifacts must be avoided |
+| **Same Padding** | $P = \frac{K-1}{2}$ (Zero-padded borders) | Invariant: $H_{\text{out}} = H_{\text{in}}$ | Balanced (boundary pixels participate in equal steps) | Standard baseline for deep backbones | Universal standard for deep CNNs (VGG, ResNet) to enable deep stacking |
+| **Full Padding** | $P = K - 1$ (Maximum border added) | Expands: $H_{\text{out}} = H_{\text{in}} + K - 1$ | Over-represented (captures extreme edge interactions) | Maximum compute and activation memory | Signal processing, acoustic filtering, specialized autoencoders |
+
+> [!Important]
+> **Same padding is the default choice**: setting $P = \frac{K-1}{2}$ prevents spatial dimensions from collapsing prematurely, allowing networks to build depth without losing image boundary coordinates.
+
+## Key Takeaways
+
+- **Convolutional layers execute cross-correlation**, calculating localized element-wise multiplications and accumulations between moving kernels and input patches.
+- **Filter depth matches input channel depth**: a convolutional filter is a 3D tensor of shape $(C_{\text{in}} \times K_h \times K_w)$ that sums across all input channels to output a single 2D feature map slice.
+- **A bank of $C_{\text{out}}$ filters** creates a 4D weight tensor $\mathcal{W} \in \mathbb{R}^{C_{\text{out}} \times C_{\text{in}} \times K_h \times K_w}$, producing a multi-channel output tensor $\mathcal{A} \in \mathbb{R}^{C_{\text{out}} \times H_{\text{out}} \times W_{\text{out}}}$.
+- **Same padding ($P = \frac{K-1}{2}$)** preserves spatial grid dimensions when stride $S=1$, preventing spatial erosion across deep layer stacks.
+- **The spatial dimension equation** $H_{\text{out}} = \lfloor \frac{H - K + 2P}{S} \rfloor + 1$ dictates feature map resolution across arbitrary padding and stride configurations.
+- **Feature maps represent spatial detection fields**, preserving visual coordinate topography while encoding the intensity of specific learned features.
+- **Architectures trade spatial resolution for channel depth**: networks downsample spatial grids ($H \downarrow, W \downarrow$) while expanding channel cardinality ($C \uparrow$) to transition from local edges to abstract semantics.
+- **Cached feature map activations dominate training memory**, requiring significantly more GPU RAM than static filter weights and establishing the upper ceiling on training batch sizes.
+
+> [!Tip]
+> The central mechanics of convolutional processing: **multichannel filtering fuses spatial and depth information**; localized 3D kernels sweep across spatial grids to synthesize structured feature maps, allowing deep networks to preserve geometric topography while expanding semantic expressiveness.
