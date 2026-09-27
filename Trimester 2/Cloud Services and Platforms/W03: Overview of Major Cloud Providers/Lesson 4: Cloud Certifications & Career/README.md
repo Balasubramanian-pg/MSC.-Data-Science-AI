@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 4: Cloud Certifications & Career
 
 Cloud certifications validate provider-specific skills and serve as a signal to employers. They are not a substitute for hands-on experience, but they open doors, structure learning, and often correlate with higher compensation. This lesson maps the certification paths for AWS, Azure, and GCP, then connects them to job roles, salary data, and market trends.
@@ -134,4 +133,138 @@ flowchart LR
 - The fastest path to certification value is building on what you already know, not starting over on a new platform while simultaneously learning security concepts.
 
 > [!Important]
-> **Certifications are table stakes, not differentiators**: Hiring managers now look fo
+> **Certifications are table stakes, not differentiators**: Hiring managers now look for experience and project evidence, not just badges. A certification opens the door. What you built with it gets you the offer.
+
+## Career Paths and Salary Data
+
+Cloud roles split into two broad families: infrastructure and operations, and development and DevOps. The 2026 market requires a skill stack that looks more like a DevOps platform engineer than a traditional cloud engineer.
+
+### Core Job Roles and UK Salary Ranges
+
+| Role | Salary Range (UK) | Key Skills |
+|---|---|---|
+| Junior Cloud Engineer | £45,000 - £65,000 | Cloud fundamentals, Linux, networking |
+| Cloud Engineer (mid-level) | £75,000 - £95,000 | Terraform, Kubernetes, CI/CD |
+| DevOps Engineer | £60,000 - £80,000 | IaC, pipelines, observability |
+| Cloud Architect | £90,000 - £120,000 | Multi-AZ design, cost optimization, security |
+| Head of Cloud | £110,000 - £140,000 | Strategy, team leadership, governance |
+
+- The salary range for a mid-level Cloud Engineer in London is currently £75,000 to £95,000.
+- DevOps Engineers command £60,000 to £80,000, and Cloud Architects command £90,000 to £120,000.
+- Median UK pay for AWS, Azure, and GCP roles generally sits between £70,000 and £105,000.
+- GCP Data Engineers command £92,500, and GCP Platform Engineers command £85,000.
+
+```mermaid
+flowchart TD
+    A[Entry Level] --> B[Cloud Engineer]
+    B --> C{Specialization}
+    C --> D[DevOps Engineer]
+    C --> E[Cloud Architect]
+    C --> F[Security Engineer]
+    C --> G[Data Engineer]
+    D --> H[Principal / Staff]
+    E --> H
+    F --> H
+    G --> H
+    H --> I[Head of Cloud / Director]
+```
+
+> [!Tip]
+> **Terraform and Kubernetes are non-negotiable**: About 70% of senior cloud roles list Terraform as a primary requirement, and Kubernetes is no longer optional. "I know Docker" is no longer a substitute for cluster troubleshooting skills.
+
+### Skills That Matter in 2026
+
+- Infrastructure as Code: Terraform, state management, remote backends.
+- Kubernetes: pod networking, Helm, cluster troubleshooting.
+- FinOps: cost attribution, right-sizing, commitment management.
+- Security: IAM policy design, guardrails, compliance automation.
+- AI and ML integration: working with AI-powered systems and data platforms.
+- Multi-cloud fluency: holding credentials across AWS and Azure, or adding GCP for data roles.
+
+> [!Important]
+> **Multi-cloud fluency stands above single-cloud credentials**: Engineers who hold both AWS and Azure credentials, can show real production experience, and continuously upskill are getting hired fastest. Single-cloud engineers are competing in a crowded pool.
+
+## Market Trends and Certification Value
+
+By 2026, cloud careers are shaped by two major trends: AI integration into cloud platforms and the growing emphasis on practical architecture thinking over badge collection.
+
+- Platform fluency across AWS, Azure, and GCP must blend with cloud-native skills like Kubernetes, IaC, and security to stay relevant.
+- Certifications are becoming a way to validate practical architecture thinking, not just theoretical knowledge.
+- FinOps certifications and cloud financial management skills are emerging as independent, high-value specializations.
+- AI certifications are rising in value alongside cloud certifications, with AWS Machine Learning Specialty and Azure AI Engineer Associate seeing growing demand.
+- Certification catalogs continue to expand, with AWS, Azure, and GCP adding AI-specific and specialty certifications.
+
+```mermaid
+flowchart LR
+    A[Certification] --> B[Validates Skills]
+    B --> C[Opens Doors]
+    C --> D[Hands-On Project Evidence]
+    D --> E[Job Offer]
+    E --> F[Continuous Upskilling]
+    F --> A
+```
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Compare the AWS, Azure, and GCP certification paths from foundational to professional level.
+2. Explain why AWS Solutions Architect Associate is the most recognized entry point into cloud hiring.
+3. Describe the Azure AZ-104 certification and its role as a prerequisite for expert-level certifications.
+4. Explain why GCP certifications are less saturated than AWS or Azure and how that affects career strategy.
+5. Describe the core skills required for a mid-level cloud engineer role in 2026.
+6. Explain the relationship between certifications and salary in the cloud job market.
+7. Describe why multi-cloud fluency is valued more than single-cloud credentials.
+8. Explain the role of FinOps as a cloud career skill.
+
+### Scenario Questions
+
+**Scenario 1: Career Changer with No Cloud Experience**
+A professional with a background in IT support wants to move into cloud. Which certification path should they follow?
+
+- Start with AWS Cloud Practitioner or Azure AZ-900 to build foundational knowledge.
+- Progress to Solutions Architect Associate or AZ-104 Administrator.
+- Build hands-on projects alongside certification study.
+- Target junior cloud engineer or cloud administrator roles.
+
+**Scenario 2: Enterprise Microsoft Environment**
+A company runs Windows Server, Active Directory, and Microsoft 365. Which certifications align best?
+
+- AZ-900 for cloud fundamentals.
+- AZ-104 for Azure administration.
+- AZ-305 for solutions architecture.
+- AZ-500 for security roles.
+- Azure certifications are most valuable in Microsoft-heavy enterprises.
+
+**Scenario 3: Data and AI Career Track**
+A professional wants to specialize in data engineering and ML pipelines. Which provider and certifications align best?
+
+- GCP Professional Data Engineer for BigQuery and data engineering workflows.
+- AWS Data Engineer Associate and Machine Learning Specialty for broader market reach.
+- GCP certifications are less saturated and growing fast in data and ML roles.
+- Combine GCP data credentials with Kubernetes and Terraform skills.
+
+**Scenario 4: Maximizing Salary Potential**
+A mid-level cloud engineer wants to maximize compensation. What strategy should they follow?
+
+- Hold certifications across two providers (AWS and Azure).
+- Build production experience and project evidence.
+- Develop FinOps and security skills.
+- Target roles that combine automation and security for the highest salary ceiling.
+
+## Key Takeaways
+
+- AWS offers the broadest certification catalog with the highest job posting volume. Azure dominates enterprise and Microsoft-stack environments. GCP leads in data, AI/ML, and Kubernetes roles.
+- AWS Solutions Architect Associate is the most recognized entry point into cloud hiring and appears in most job postings.
+- Azure AZ-104 is the gateway to most Azure expert certifications and the most common enterprise requirement.
+- GCP certifications are less saturated, making them a strategic advantage for data and ML career tracks.
+- Certifications are table stakes. Hands-on project evidence and production experience get you the offer.
+- Multi-cloud fluency across AWS and Azure is the certification combination that stands above single-cloud credentials.
+- Terraform and Kubernetes are non-negotiable skills for senior cloud roles.
+- FinOps is the new soft skill. Cost management knowledge accelerates hiring.
+- Mid-level cloud engineers in the UK earn £75,000 to £95,000. Cloud architects earn £90,000 to £120,000.
+- AWS-certified professionals earn 5 to 10 percent more on average globally.
+- Continuous upskilling, not just certification renewal, is what keeps cloud professionals competitive.
+
+> [!Important]
+> **Certifications open doors, but experience gets the offer**: A certification validates that you can learn and pass an exam. A portfolio of production projects, proven troubleshooting skills, and the ability to design architectures under real constraints is what hiring managers actually buy. Use certifications to structure your learning, then build evidence that you can apply it.
