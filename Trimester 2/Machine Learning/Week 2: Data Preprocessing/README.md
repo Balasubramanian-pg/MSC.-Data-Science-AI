@@ -1,4 +1,3 @@
-# Migration in progress
 # Week 2: Data Preprocessing
 
 ## Data Preprocessing: Cleaning, Transformation, and Feature Engineering
@@ -108,4 +107,125 @@ Data preprocessing transforms raw, imperfect empirical records into structured n
 - Optimal values for $\lambda$ are estimated via maximum likelihood estimation across candidate parameters.
 
 > [!Important]
-> **Match scalers to data distributions**: use Min-Max scaling for bounded image pixels, Z-score sta
+> **Match scalers to data distributions**: use Min-Max scaling for bounded image pixels, Z-score standardization for Gaussian distributions, Robust Scaler for heavy outlier presences, and Yeo-Johnson transformations to correct skewed data.
+
+## Categorical Variable Encoding Strategies
+
+### Nominal Encodings: One-Hot and the Dummy Variable Trap
+
+- **One-Hot Encoding:** Constructs $K$ binary indicator columns for a categorical attribute possessing $K$ distinct levels.
+- **The Dummy Variable Trap (Multicollinearity):** In linear regression and logistic models that include an intercept term, the sum of all $K$ indicator columns equals a vector of ones:
+  $$\sum_{k=1}^K x_{ik} = 1.0$$
+- This creates an exact **linear dependency** (singular matrix $X^T X$), preventing matrix inversion during normal equation solving.
+- Mitigate multicollinearity by dropping one baseline category (`drop='first'`), allocating $K - 1$ columns to represent $K$ states.
+
+### Ordinal Encodings and Structural Hierarchy
+
+- **Ordinal Encoding:** Maps ordered categorical factors to monotonically ascending integer ranks:
+  $$\text{Low} \to 0, \quad \text{Medium} \to 1, \quad \text{High} \to 2$$
+- Ordinal encoding preserves rank order while allocating only a single column, saving memory.
+- Applying ordinal encoding to *nominal* categories without intrinsic order (e.g., mapping countries to integers) introduces false mathematical assumptions, forcing linear models to treat Country 2 as mathematically twice the value of Country 1.
+
+### High-Cardinality Representations: Target and Binary Encoding
+
+- High-cardinality attributes (e.g., zip codes, product IDs with $> 1,000$ categories) cause one-hot encoding to create wide, sparse matrices that trigger memory bottlenecks and tree-splitting inefficiencies.
+- **Target (Mean) Encoding:** Replaces each categorical level with the empirical mean of the target variable observed for that level:
+  $$\hat{x}_c = \mathbb{E}[y \mid x = c]$$
+- **Target Leakage Risk:** Using raw target means allows the target variable to leak into input features, producing extreme overfitting on rare categories.
+- **Smoothed Target Encoding:** Regularizes class means with global population priors using a smoothing parameter $m$:
+  $$S_c = \frac{n_c \cdot \bar{y}_c + m \cdot \bar{y}_{\text{global}}}{n_c + m}$$
+  where $n_c$ is the sample count for category $c$, $\bar{y}_c$ is the category target mean, and $\bar{y}_{\text{global}}$ is the dataset-wide target mean.
+- **Binary Encoding:** Converts integer ranks into binary digits and splits bits into individual columns, compressing $K$ categories into $\lceil \log_2 K \rceil$ columns.
+
+```mermaid
+flowchart TD
+    RawData["Raw Input Features"] --> Split["Split: Train and Test Sets"]
+    
+    subgraph TrainPipeline["Training Set Isolation Boundary"]
+        Split --> Train["Training Partition"]
+        Train --> FitScalers["Fit Imputers, Scalers, & Encoders (Calculate mu, sigma, medians)"]
+        FitScalers --> TransTrain["Transform Training Features"]
+        TransTrain --> FitModel["Fit Machine Learning Model"]
+    end
+    
+    subgraph TestPipeline["Inference / Evaluation Boundary"]
+        Split --> Test["Test Partition"]
+        FitScalers -. "Apply SAVED Train Parameters (No Recalculation)" .-> TransTest["Transform Test Features"]
+        TransTest --> Predict["Generate Predictions"]
+        FitModel -. "Trained Weights" .-> Predict
+    end
+```
+
+> [!Tip]
+> **Smooth target encoding on high cardinality**: replacing high-cardinality nominal variables with target means regularized by global priors ($m$) prevents sparse matrix explosion while avoiding target leakage.
+
+## Feature Selection and Engineering Architectures
+
+### Filter Methods: Statistical Hypothesis Tests and Mutual Information
+
+- **Filter methods** rank and select input attributes independently of model training based on statistical associations with the target:
+  - **Variance Threshold:** Drops constant or near-constant features whose variance falls below a threshold $\tau$:
+    $$\text{Var}(X) = \frac{1}{N} \sum_{i=1}^N (x_i - \mu)^2 < \tau$$
+  - **Pearson Correlation ($r$):** Evaluates linear association for continuous features:
+    $$r = \frac{\sum (x - \bar{x})(y - \bar{y})}{\sqrt{\sum (x - \bar{x})^2 \sum (y - \bar{y})^2}}$$
+  - **ANOVA F-Test:** Evaluates variance ratios between continuous features across discrete categorical classes.
+  - **Chi-Square ($\chi^2$) Test:** Measures statistical independence between discrete categorical features and discrete class targets.
+  - **Mutual Information (MI):** Quantifies non-linear dependency based on Shannon entropy:
+    $$I(X; Y) = \iint p(x, y) \ln\left( \frac{p(x, y)}{p(x) p(y)} \right) dx \, dy$$
+
+### Wrapper Methods: Recursive Feature Elimination (RFE)
+
+- **Wrapper methods** treat feature selection as a search problem, evaluating subsets using an external machine learning model.
+- **Recursive Feature Elimination (RFE):**
+  1. Train an estimator model on the complete set of $P$ features.
+  2. Compute feature importance metrics (e.g., linear regression coefficients $|w_j|$ or tree impurity gains).
+  3. Prune the least important feature (or fraction of features).
+  4. Retrain the model on the remaining subset and repeat until the target feature count remains.
+- Wrapper methods capture feature interactions, but are computationally expensive ($O(P^2)$ model fits).
+
+### Embedded Methods: Regularization Penalties and Permutation Importance
+
+- **Embedded methods** integrate feature selection directly into model parameter optimization:
+  - **$L_1$ Lasso Regularization:** Adds an absolute norm penalty ($\lambda \sum |w_j|$) to linear loss objectives, driving uninformative feature coefficients to exact zero during gradient descent.
+  - **Tree Impurity Importance (MDI):** Evaluates total Gini impurity or variance reduction contributed by each feature across all splits in an ensemble.
+  - **Permutation Feature Importance:** Measures the decrease in validation score after randomly shuffling the values of a single feature; if shuffling degrades model score significantly, the feature contains essential predictive signal.
+
+> [!Important]
+> **Filter methods are fast, while embedded methods model interactions**: use statistical filter methods (Mutual Information, Variance Threshold) for quick initial pruning, and use embedded regularizers ($L_1$ Lasso) to select interacting features during model training.
+
+## Comparative Matrices of Preprocessing Transformations
+
+| Scaling Technique | Mathematical Formulation | Output Numerical Range | Outlier Robustness | Optimal Algorithmic Use Case |
+|---|---|---|---|---|
+| **Min-Max Scaler** | $\frac{x - x_{\min}}{x_{\max} - x_{\min}}$ | Fixed: $[0, 1]$ or $[a, b]$ | **Poor** (compressed by extremes) | Neural network inputs; image pixel matrices ($[0, 255] \to [0, 1]$) |
+| **Standard Scaler** | $\frac{x - \mu}{\sigma}$ | Unbounded ($\approx [-3, +3]$) | Moderate (mean/std influenced by outliers) | Linear Regression, Logistic Regression, PCA, Support Vector Machines |
+| **Robust Scaler** | $\frac{x - Q_2}{Q_3 - Q_1}$ | Unbounded | **High** (uses median and IQR) | Datasets containing extreme measurement outliers or anomalies |
+| **MaxAbs Scaler** | $\frac{x}{\|x\|_{\max}}$ | Fixed: $[-1, 1]$ | Poor | Sparse matrices (preserves exact zero-valued entries) |
+| **Yeo-Johnson** | Piecewise power transformation | Continuous bell curve | Moderate | Highly skewed continuous variables with negative values |
+
+### Categorical Encoding Strategies Comparison
+
+| Encoding Method | Output Column Complexity | Preserves Order? | Multicollinearity Vulnerability | Risk of Overfitting / Target Leakage |
+|---|---|---|---|---|
+| **One-Hot Encoding** | Expands to $K$ (or $K-1$) columns | No (nominal) | High (requires dropping first category) | Low (purely structural representation) |
+| **Ordinal Encoding** | Preserves solitary column ($1$) | **Yes** (strict integer rank) | None | Low |
+| **Target Encoding** | Preserves solitary column ($1$) | No | Low | **High** (requires smoothing $m$ and K-fold out-of-fold estimation) |
+| **Binary Encoding** | Compresses to $\lceil \log_2 K \rceil$ columns | No | Low | Low |
+| **Frequency Encoding** | Preserves solitary column ($1$) | No | Low | Low (may assign identical values to distinct categories) |
+
+> [!Tip]
+> **Use One-Hot encoding for low cardinality, and smoothed target encoding for high cardinality**: allocate binary columns for categories with under 20 levels, and switch to target encoding with prior smoothing for variables exceeding 100 levels.
+
+## Key Takeaways
+
+- **Data preprocessing establishes model generalization**: machine learning models extract patterns from preprocessed numerical tensors; unhandled missing values, unscaled ranges, and unencoded factors break convergence.
+- **Identify missing data mechanisms early**: MCAR allows listwise deletion without bias, while MAR requires multivariate statistical imputation, and MNAR requires modeling the missingness mechanism directly.
+- **Multivariate imputation (KNN, MICE) preserves covariance relationships**, avoiding the artificial variance collapse caused by simple mean substitution.
+- **Outliers distort mean and variance estimates**: use Tukey's IQR fences or Winsorization capping to bound extreme values without reducing sample size.
+- **Feature scaling balances gradient updates and distance metrics**, preventing attributes with large raw scales from dominating Euclidean distances.
+- **Prevent multicollinearity in one-hot encodings** by dropping the first category column (`drop='first'`) when training linear models with intercept terms.
+- **High-cardinality categorical variables demand smoothed target encoding or binary encoding** to prevent wide, sparse matrix explosions.
+- **Strict pipeline isolation prevents data leakage**: all preprocessing statistics (means, medians, scaling parameters, target encodings) must be estimated strictly from the training partition and applied without recalculation to validation and test splits.
+
+> [!Tip]
+> The foundational rule of data preprocessing: **transformers must be fit on training data alone**; encapsulating imputation, scaling, and encoding within unified pipeline objects guarantees that future test statistics never leak into model training.
