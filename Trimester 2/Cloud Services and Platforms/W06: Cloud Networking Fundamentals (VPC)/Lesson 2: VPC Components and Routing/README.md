@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 2: VPC Components and Routing
 
 This lesson goes deeper into the individual components that make up a VPC and how routing connects them. It covers subnets, route tables, gateways, elastic network interfaces, VPC endpoints, and flow logs. The goal is to understand how traffic moves through a VPC, how to control it, and how to troubleshoot connectivity issues.
@@ -180,4 +179,171 @@ flowchart TD
 | Interface Endpoint | ENI with private IP in your subnet | Most AWS services | Hourly plus data processing |
 | Gateway Load Balancer Endpoint | Endpoint for third-party virtual appliances | Custom appliances | Hourly plus data processing |
 
-- Gateway endpoints are
+- Gateway endpoints are only available for S3 and DynamoDB. They are free and are added as route table targets.
+- Interface endpoints use PrivateLink to create an ENI in your subnet with a private IP address.
+- Gateway Load Balancer endpoints route traffic through virtual appliances for inspection.
+
+```mermaid
+flowchart TD
+    A[VPC] --> B{Endpoint Type}
+    B -->|S3 or DynamoDB| C[Gateway Endpoint]
+    B -->|Other Services| D[Interface Endpoint]
+    B -->|Virtual Appliances| E[GWLB Endpoint]
+    C --> F[Route Table Target]
+    D --> G[ENI with Private IP]
+    E --> H[Load Balancer Endpoint]
+    F --> I[Private Access to AWS Service]
+    G --> I
+    H --> I
+```
+
+> [!Tip]
+> **Use gateway endpoints for S3 and DynamoDB**: Gateway endpoints are free and eliminate NAT gateway data processing charges for traffic to those services. For high-volume S3 access from private subnets, this can save significant cost.
+
+## VPC Flow Logs
+
+*Definition*: VPC Flow Logs capture information about the IP traffic going to and from network interfaces in your VPC. Flow log data is published to CloudWatch Logs, S3, or Kinesis Data Firehose.
+
+### Flow Log Levels
+
+| Level | Scope | Use Case |
+|---|---|---|
+| VPC | All ENIs in the VPC | Broad monitoring |
+| Subnet | All ENIs in the subnet | Subnet-level analysis |
+| ENI | Specific network interface | Targeted troubleshooting |
+
+### Flow Log Fields
+
+- Source and destination IP addresses.
+- Source and destination ports.
+- Protocol number.
+- Packets and bytes transferred.
+- Start and end time.
+- Action (ACCEPT or REJECT).
+- Log status.
+
+### Common Use Cases
+
+- Troubleshoot security group and NACL rules.
+- Detect anomalous traffic patterns.
+- Monitor traffic to and from specific instances.
+- Verify that traffic is being accepted or rejected as expected.
+- Feed flow logs into SIEM tools for security analysis.
+
+> [!Important]
+> **Flow logs do not capture all traffic**: They do not capture traffic to and from the instance metadata service (169.254.169.254), DHCP traffic, DNS traffic to the VPC resolver, or traffic to and from Windows license activation servers. Use them alongside other monitoring tools.
+
+## Traffic Mirroring
+
+*Definition*: Traffic mirroring copies network traffic from ENIs and sends it to out-of-band security and monitoring appliances for analysis.
+
+- Traffic mirroring captures packet-level data, not just flow metadata.
+- Used for deep packet inspection, intrusion detection, and content analysis.
+- Sources are ENIs. Targets are network load balancers or ENIs.
+- Filters control which traffic is mirrored based on protocol, CIDR, and port.
+- Traffic mirroring incurs charges based on the volume of mirrored traffic.
+
+| Feature | VPC Flow Logs | Traffic Mirroring |
+|---|---|---|
+| Data Captured | Flow metadata | Full packet content |
+| Use Case | Monitoring, troubleshooting | Deep inspection, security analysis |
+| Cost | Lower | Higher |
+| Complexity | Low | Medium to high |
+
+> [!Tip]
+> **Use traffic mirroring for security forensics**: Flow logs tell you what happened. Traffic mirroring lets you see the actual content. Use mirroring when you need to inspect payloads for threats or compliance.
+
+## Routing Troubleshooting
+
+### Common Issues and Resolutions
+
+| Issue | Possible Cause | Resolution |
+|---|---|---|
+| Cannot reach internet from public subnet | Missing IGW route, no public IP | Add 0.0.0.0/0 route to IGW, assign Elastic IP |
+| Cannot reach internet from private subnet | Missing NAT route, NAT in wrong AZ | Add route to NAT gateway, verify NAT is in same AZ |
+| Cannot reach peered VPC | Missing route, overlapping CIDR | Add route to peering connection on both sides, verify no overlap |
+| Cannot reach on-premises | Missing VPN route, BGP down | Add route to VGW or TGW, verify VPN tunnel status |
+| Cannot reach AWS service | No endpoint, NAT route missing | Create VPC endpoint or verify NAT gateway route |
+| Intermittent connectivity | NACL blocking return traffic | Verify NACL allows ephemeral ports 1024-65535 |
+
+### Troubleshooting Workflow
+
+```mermaid
+flowchart TD
+    A[Connectivity Issue] --> B{Security Group Allow?}
+    B -->|No| C[Fix Security Group Rules]
+    B -->|Yes| D{NACL Allow?}
+    D -->|No| E[Fix NACL Rules]
+    D -->|Yes| F{Route Table Match?}
+    F -->|No| G[Add or Fix Route]
+    F -->|Yes| H{Gateway Reachable?}
+    H -->|No| I[Check IGW, NAT, TGW Status]
+    H -->|Yes| J[Check VPC Flow Logs]
+    J --> K[Identify Source of Drop]
+```
+
+> [!Important]
+> **Check security groups and NACLs first**: Most connectivity issues are caused by security group or NACL rules. Verify that both allow the traffic before investigating routes or gateways.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Compare public, private, and isolated subnets.
+2. Explain how AWS route tables use longest prefix match.
+3. Describe the purpose of internet gateways, NAT gateways, and egress-only internet gateways.
+4. Explain what an ENI is and list three use cases.
+5. Compare gateway endpoints and interface endpoints.
+6. Describe the three levels of VPC Flow Logs.
+7. Compare VPC Flow Logs and traffic mirroring.
+8. List common VPC routing issues and their resolutions.
+
+### Scenario Questions
+
+**Scenario 1: Private S3 Access**
+A private subnet needs to access S3 without going through a NAT gateway. How do you configure this?
+
+- Create a gateway endpoint for S3.
+- Add the endpoint as a target in the private subnet route table.
+- Gateway endpoints are free and eliminate NAT data processing charges.
+- Verify that the S3 bucket policy allows access from the VPC endpoint.
+
+**Scenario 2: Multi-AZ NAT Gateway**
+A production VPC has private subnets in three AZs. How should NAT gateways be deployed?
+
+- Deploy one NAT gateway per AZ in the corresponding public subnet.
+- Add a route in each private subnet route table pointing to the NAT gateway in the same AZ.
+- This avoids cross-AZ traffic costs and eliminates single points of failure.
+- Accept the higher hourly cost for resilience.
+
+**Scenario 3: Troubleshooting Intermittent Connectivity**
+Instances in a private subnet can sometimes reach the internet but sometimes fail. What should you check?
+
+- Verify the NAT gateway is in the same AZ as the private subnet.
+- Check the NAT gateway CloudWatch metrics for errors or bandwidth limits.
+- Review NACL rules for ephemeral port ranges.
+- Check VPC Flow Logs for REJECT entries.
+
+**Scenario 4: Security Forensics**
+A security team needs to inspect packet payloads for a suspected intrusion. What should they use?
+
+- Use traffic mirroring to copy traffic from the suspect ENI.
+- Send mirrored traffic to an intrusion detection appliance.
+- Use VPC Flow Logs for metadata-level analysis.
+- Combine both tools for complete visibility.
+
+## Key Takeaways
+
+- Subnets are the primary unit of network segmentation. Public subnets route to an IGW, private subnets route to a NAT, and isolated subnets have no internet route.
+- Route tables use longest prefix match to determine where traffic is directed. The local route for the VPC CIDR cannot be removed.
+- Internet gateways provide bidirectional internet access. NAT gateways provide outbound-only access. Egress-only internet gateways provide outbound-only IPv6 access.
+- Virtual private gateways connect VPCs to on-premises networks via VPN. Transit Gateway is a central hub for multi-VPC and hybrid connectivity.
+- Elastic Network Interfaces represent virtual network cards. They are AZ-specific and can be moved between instances for failover.
+- VPC endpoints provide private access to AWS services without internet exposure. Gateway endpoints are free for S3 and DynamoDB. Interface endpoints use PrivateLink.
+- VPC Flow Logs capture IP traffic metadata at VPC, subnet, or ENI level. They are the primary troubleshooting tool.
+- Traffic mirroring captures full packet content for deep inspection and security forensics.
+- Most connectivity issues are caused by security group or NACL rules. Check those first before investigating routes or gateways.
+- Longest prefix match makes route behavior predictable but requires careful CIDR planning to avoid overlaps.
+
+> [!Important]
+> **Route tables and security groups are the two most common sources of networking issues**: When traffic does not flow as expected, verify the route table first, then the security group, then the NACL. Use VPC Flow Logs and Reachability Analyzer to confirm connectivity without generating traffic. Design route tables and security groups with clear intent and document the traffic flows they support.
