@@ -1,4 +1,3 @@
-# Migration in progress
 # Lab7: Real-time Data Ingestion - Stock Market
 
 Lab 7: Real-time Data Ingestion - Stock Market:
@@ -43,4 +42,45 @@ Step 3: Ingestion with Spark Structured Streaming:
 - Initialize a SparkSession configured with the spark-sql-kafka dependency package.
 - Use spark.readStream with format set to kafka to establish the streaming connection.
 - Set the kafka.bootstrap.servers option to the Kafka broker address.
-- Set t
+- Set the subscribe option to stock-ticks.
+- Set the startingOffsets option to latest to process new market data as it arrives.
+- The resulting streaming DataFrame exposes metadata fields including key, value, topic, partition, and offset.
+
+Step 4: Payload Extraction and Schema Enforcement:
+
+- Define an explicit StructType schema matching the incoming trade event structure with symbol as string, timestamp as timestamp, price as double, and volume as long.
+- Cast the binary value column to a string using standard PySpark SQL functions.
+- Parse the string column into structured DataFrame columns using the from_json function along with the defined schema.
+- Select the parsed fields into top-level columns and verify column data types.
+
+Step 5: Event-Time Windowing and Candlestick Aggregation:
+
+- Apply a watermark to the trade timestamp column, such as withWatermark using a ten-second threshold, to bound late-arriving trade records.
+- Group the streaming DataFrame by the stock symbol and a tumbling window of one minute defined on the trade timestamp column.
+- Compute the aggregate volume using the sum function.
+- Compute the highest price using the max function and lowest price using the min function within each window.
+- Extract the opening price and closing price using first and last aggregation functions ordered by the trade timestamp.
+- Important: In Spark Structured Streaming, computing accurate first and last values within a window requires careful timestamp sorting to ensure valid market candlestick results.
+
+Step 6: Writing Stream Output with Checkpointing:
+
+- Write the aggregated stream using writeStream with an appropriate output mode.
+- Use append mode when writing finalized window records to file sinks alongside an event-time watermark.
+- Use update mode or complete mode when streaming directly to memory or console sinks for interactive dashboard monitoring.
+- Specify a durable checkpointLocation directory on local disk, HDFS, or cloud object storage.
+- Trigger the query using a processing time interval, such as every ten seconds, and call awaitTermination to keep the stream running.
+
+Validation and Monitoring:
+
+- Check Kafka producer activity by running a console consumer to inspect raw outgoing JSON payloads.
+- Observe Spark execution in the Spark Web UI, tracking input rate, process rate, and micro-batch completion times.
+- Inspect the checkpoint directory to verify that commit logs and offset files are incrementing with each micro-batch.
+- Verify partition pruning and window emissions by querying output Parquet files after several one-minute windows expire.
+
+Key Takeaways:
+
+- Streaming market pipelines require message keys to preserve sequential trade tick ordering per equity ticker.
+- Explicit schema parsing with from_json converts unstructured Kafka byte streams into typed Spark DataFrames.
+- Tumbling windows aggregate unbounded raw trade ticks into bounded one-minute OHLCV financial bars.
+- Watermarks dictate how long Spark waits for delayed trade ticks before closing a window and freeing state memory.
+- Durable checkpointing provides fault recovery, ensuring streaming queries resume from exact offsets after failures.
