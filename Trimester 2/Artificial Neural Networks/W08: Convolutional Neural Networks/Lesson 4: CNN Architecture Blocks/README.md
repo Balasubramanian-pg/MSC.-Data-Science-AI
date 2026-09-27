@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 4: CNN Architecture Blocks
 
 ## Modular CNN Architecture Blocks and Structural Design Patterns
@@ -144,4 +143,125 @@ flowchart TD
 
 - The standard residual block places Batch Normalization and ReLU inside the residual path, ending with an external ReLU after addition: $\text{ReLU}(\mathcal{F}(x) + x)$.
 - The **Pre-Activation Residual Block** (He et al., 2016) reorganizes block operations:
-  $$\text{BatchNorm} \lon
+  $$\text{BatchNorm} \longrightarrow \text{ReLU} \longrightarrow \text{Weight}$$
+- Pre-activation ensures that the additive skip connection remains entirely uninhibited by non-linear thresholds:
+  $$x_{l+1} = x_l + \mathcal{F}(x_l)$$
+- Evaluating backpropagation through pre-activation skip connections preserves an unbroken linear identity path ($\frac{\partial x_L}{\partial x_l} = I + \dots$), allowing error signals to propagate across hundreds of layers without attenuation.
+
+> [!Important]
+> **Residual connections create identity gradient highways**: the additive shortcut ensures that backpropagated error signals propagate directly to early layers via an identity term ($+I$), eliminating vanishing gradients in deep architectures.
+
+## Dense Feature Reuse: The DenseNet Block
+
+### Direct Concatenation and Feature Propagation
+
+- Introduced by Gao Huang et al. (2017), the **Dense Block** in DenseNet connects every layer directly to every subsequent layer within the block.
+- Instead of summing activations via addition like ResNets, a DenseNet layer receives the concatenated feature maps of all preceding layers as its input:
+  $$x_l = H_l([x_0, \; x_1, \; x_2, \; \dots, \; x_{l-1}])$$
+  where $[x_0, \dots, x_{l-1}]$ denotes concatenation along the channel dimension.
+- An $L$-layer dense block establishes $\frac{L(L+1)}{2}$ direct connections, eliminating the need to relearn redundant feature representations across depth.
+
+```mermaid
+flowchart TD
+    In["x0 (Input Channels: k0)"]
+    
+    In --> H1["Layer H1 (1x1 -> 3x3)"]
+    H1 --> Out1["x1 (k channels)"]
+    
+    In --> Cat1["Concat [x0, x1]"]
+    Out1 --> Cat1
+    
+    Cat1 --> H2["Layer H2 (1x1 -> 3x3)"]
+    H2 --> Out2["x2 (k channels)"]
+    
+    Cat1 --> Cat2["Concat [x0, x1, x2]"]
+    Out2 --> Cat2
+    
+    Cat2 --> FinalOut["Dense Block Output (k0 + 2k channels)"]
+```
+
+### The Growth Rate Hyperparameter
+
+- Because each layer concatenates its output feature maps with all preceding inputs, the total channel depth increases continuously across the block.
+- The **growth rate** ($k$) defines the fixed number of output channels produced by each constituent layer (typically small, such as $k = 12$ or $k = 32$).
+- If a dense block receives an input tensor with $k_0$ channels, layer $l$ receives an input tensor containing $k_0 + k \times (l - 1)$ channels.
+- Dense feature reuse allows each layer to remain narrow, producing compact models that maintain high representational capacity with fewer total parameters.
+
+### Transition Layers and Channel Compression
+
+- Concatenating channels continuously would cause tensor depths to explode across a deep network.
+- DenseNet places **Transition Layers** between consecutive dense blocks to regulate channel growth and execute spatial downsampling.
+- A transition layer consists of:
+  - A $1 \times 1$ convolution that compresses channel depth by a compression factor $\theta \in (0, 1]$ (typically $\theta = 0.5$).
+  - A $2 \times 2$ Average Pooling layer with stride $S=2$ that halves spatial dimensions.
+
+> [!Tip]
+> **Dense blocks maximize feature reuse via concatenation**: connecting all layers within a block passes early visual features directly to late layers, allowing each layer to produce only a small number of channels ($k$).
+
+## Mobile and Efficient Blocks: The Inverted Residual (MBConv)
+
+### Standard Residual Versus Inverted Residual Topology
+
+- Standard ResNet bottleneck blocks connect high-dimensional channel spaces via skip connections, compressing intermediate representations through $1 \times 1$ bottlenecks (Wide $\to$ Narrow $\to$ Wide).
+- Introduced in MobileNetV2 (Mark Sandler et al., 2018), the **Inverted Residual Block (MBConv)** reverses this topology (Narrow $\to$ Wide $\to$ Narrow).
+- Skip connections connect low-dimensional **bottleneck representations**, while intermediate operations expand channel depth to process features across a high-dimensional manifold.
+
+```mermaid
+flowchart TD
+    Input["Input Bottleneck: x (C_in x H x W)"]
+    
+    Input --> Exp["1x1 Conv (Expansion: C_in -> t*C_in) + BN + ReLU6"]
+    Exp --> DW["3x3 Depthwise Conv (Spatial Filtering) + BN + ReLU6"]
+    DW --> Proj["1x1 Conv (Projection: t*C_in -> C_out) + BN (Linear)"]
+    
+    Input ----> Skip["Identity Shortcut: x (when S=1 and C_in=C_out)"]
+    
+    Proj --> Add(("Additive Sum"))
+    Skip --> Add
+    
+    Add --> Output["Output Bottleneck (C_out x H x W)"]
+```
+
+### Depthwise Separable Filtering Inside the Block
+
+- The MBConv block organizes execution into three sequential stages:
+  1. **$1 \times 1$ Expansion Convolution:** Expands low-dimensional input channels by an expansion factor $t$ (typically $t = 6$), increasing channel depth to provide space for non-linear operations.
+  2. **$3 \times 3$ Depthwise Convolution:** Performs localized spatial filtering independently per channel using depthwise cross-correlation.
+  3. **$1 \times 1$ Linear Projection:** Projects the expanded channels back down to a low-dimensional output representation ($C_{\text{out}}$).
+
+### Linear Bottlenecks and Information Preservation
+
+- Applying non-linear activation functions (such as ReLU) on low-dimensional manifolds destroys information by zeroing out negative activations.
+- If a low-dimensional manifold is projected down and passed through a non-linear activation, channels that collapse to zero lose representational information permanently.
+- MBConv implements a **Linear Bottleneck**, omitting non-linear activation functions after the final $1 \times 1$ projection layer.
+- Retaining a linear output preserves continuous representations across skip connections, while non-linear activations remain restricted to the high-dimensional intermediate expansion space.
+
+> [!Important]
+> **Inverted residuals protect low-dimensional representations**: expanding channels internally ($6\times$) allows depthwise filters to separate features, while linear projection bottlenecks preserve continuous signals across skip connections.
+
+## Comparative Matrix of CNN Architecture Blocks
+
+| Architecture Block | Primary Design Objective | Branching and Connectivity | Channel Transformation Pattern | Downsampling Strategy | Primary Computational Strength |
+|---|---|---|---|---|---|
+| **VGG Block** | Structural homogeneity | Strictly sequential (linear stack) | Channel doubling ($C \to 2C$) | Terminal $2 \times 2$ Max Pooling ($S=2$) | Factorizes large filters into stacked $3 \times 3$ layers |
+| **Inception Module** | Multi-scale feature extraction | Four parallel branches ($1 \times 1, 3 \times 3, 5 \times 5, \text{Pool}$) | Channel depth concatenation | Strided pooling in parallel branches | Captures multi-resolution features with $1 \times 1$ bottlenecks |
+| **ResNet Bottleneck** | Alleviate vanishing gradients | Two-branch additive skip connection | Wide $\to$ Narrow $\to$ Wide ($1 \times 1$ reduce $\to$ expand) | Strided convolution ($S=2$) in $3 \times 3$ filter | Enables training of networks exceeding 100 layers |
+| **DenseNet Block** | Maximum feature reuse | Direct all-to-all channel concatenation | Additive expansion ($k_0 + l \cdot k$) | External transition layers ($1 \times 1 \text{ conv} + \text{AvgPool}$) | Reuses early features; small parameter growth ($k$) |
+| **MBConv Block** | Mobile and edge efficiency | Additive skip between bottlenecks | Narrow $\to$ Wide $\to$ Narrow ($1 \times 1 \text{ expand} \to \text{project}$) | Strided depthwise convolution ($S=2$) | Cuts compute by $\approx 90\%$ via depthwise separable operations |
+
+> [!Tip]
+> **Match blocks to deployment constraints**: use ResNet bottlenecks for deep vision backbones, DenseNet blocks for parameter-constrained medical imaging, and MBConv blocks for low-latency mobile inference.
+
+## Key Takeaways
+
+- **Modular block design replaced layer-by-layer tuning**, establishing standardized micro-architectures that repeat across deep backbones.
+- **VGG blocks standardize spatial filtering**, proving that stacks of factorized $3 \times 3$ convolutions reduce parameters and increase non-linear depth compared to large filters.
+- **Inception modules evaluate multiple spatial resolutions in parallel**, using $1 \times 1$ convolutions to compress channels before expensive spatial convolutions.
+- **Residual blocks eliminate vanishing gradients** by reformulating layer targets as residual functions ($\mathcal{H}(x) = \mathcal{F}(x) + x$), creating an identity gradient highway.
+- **ResNet bottleneck blocks** use $1 \times 1$ convolutions to reduce channel depth by $4\times$ before spatial filtering, restoring channels afterward to maintain computational efficiency.
+- **Pre-activation residual blocks** arrange operations as $\text{BatchNorm} \to \text{ReLU} \to \text{Weight}$, ensuring uninhibited gradient flow through the additive skip connection.
+- **DenseNet blocks concatenate all preceding feature maps directly**, maximizing feature reuse and allowing narrow layers to grow by a fixed rate $k$.
+- **Inverted residual blocks (MBConv) reverse bottleneck topology**, expanding channels internally for depthwise filtering while maintaining linear projection bottlenecks to preserve feature information.
+
+> [!Tip]
+> The defining principle of modular CNN design: **block topology shapes representation and gradient flow**; whether using additive shortcuts in ResNets, dense concatenations in DenseNets, or inverted bottlenecks in MobileNets, modular building blocks allow deep networks to scale while maintaining computational efficiency and gradient stability.
