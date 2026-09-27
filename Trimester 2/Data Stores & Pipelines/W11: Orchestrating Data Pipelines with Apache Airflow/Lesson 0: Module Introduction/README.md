@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 0: Module Introduction
 
 Module Introduction: Orchestrating Data Pipelines with Apache Airflow:
@@ -23,4 +22,24 @@ Module Learning Objectives:
 
 Weekly Lesson Roadmap:
 
-- Lesson 1: Workflow Orchestration Foundations and DAG Concepts. Covers the transition from cron scheduling to graph-based dependency management, acyclic constr
+- Lesson 1: Workflow Orchestration Foundations and DAG Concepts. Covers the transition from cron scheduling to graph-based dependency management, acyclic constraints, and task states.
+- Lesson 2: Apache Airflow Architecture and Distributed Execution. Explores internal platform mechanics, metadata tracking, and executor types including Local, Celery, and Kubernetes executors.
+- Lesson 3: Building Pipelines with Operators, Sensors, and TaskFlow. Details standard operators, custom plugins, polling sensors, and modern Python decorator-based workflows.
+- Lesson 4: Pipeline Scheduling, Time Management, and Backfills. Focuses on cron syntax, logical execution dates, idempotent data processing, and command-line backfill execution.
+- Lesson 5: Production Operations, Monitoring, and Enterprise Best Practices. Covers error handling callbacks, SLA tracking, alert integration, and secret credential management.
+- Lab 8: Orchestrating Data Pipelines with Airflow. Provides hands-on experience authoring, deploying, and debugging an end to end data pipeline DAG.
+
+The Conductor versus Worker Mindset:
+
+- Conductor model: Airflow acts as an orchestra conductor that directs when and where tasks execute, while external specialized engines perform the computational heavy lifting.
+- Delegating compute: Tasks in Airflow should trigger workloads on appropriate processing systems, such as submitting PySpark jobs to a Spark cluster or executing SQL models inside Snowflake.
+- Thin DAG principle: Authoring DAG files that perform heavy data processing, large file downloads, or complex mathematical transformations directly on Airflow nodes causes scheduler latency and resource exhaustion.
+- Important: Airflow is an orchestration engine designed to coordinate external computing tasks, not a distributed compute cluster for processing big data.
+
+Key Takeaways:
+
+- Workflow orchestration provides automated dependency management, error recovery, and visibility across complex data environments.
+- Apache Airflow defines pipelines programmatically as Python code, bringing version control and testing rigor to workflow design.
+- Directed Acyclic Graphs structure pipeline steps into ordered, loop-free execution plans.
+- Modern Airflow architectures coordinate tasks across external compute engines rather than executing heavy data processing locally.
+- Mastering scheduling intervals, logical dates, and backfill mechanics is essential for maintaining dependable data pipelines.
