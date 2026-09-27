@@ -1,4 +1,3 @@
-# Migration in progress
 # W10: Streaming Data Ingestion
 
 Streaming Data Ingestion:
@@ -26,4 +25,33 @@ Delivery Guarantees and Processing Semantics:
 - At-most-once delivery: Messages are delivered once without retries. This approach ensures zero duplicate processing, but network blips or application crashes can cause message loss.
 - At-least-once delivery: Messages are resent until acknowledged by the consumer. This ensures that no records are lost, but network retries can introduce duplicate records that downstream systems must handle.
 - Exactly-once processing: Guarantees that each message impacts final state calculations exactly once. Achieving this requires end-to-end coordination, including transactional message writes, state checkpointing, and idempotent consumers.
-- Important:
+- Important: Idempotent destination writes are the most reliable mechanism for achieving practical exactly-once business results when operating under at-least-once transport pipelines.
+
+Time Semantics and Late-Arriving Data:
+
+- Event time: The exact time an event occurred on the originating client device. It is embedded directly in the message payload.
+- Ingestion time: The time the record was received, serialized, and persisted onto the message broker log.
+- Processing time: The local system time of the consumer machine executing the transformation or aggregation logic.
+- Out-of-order data: Network latency and mobile offline buffering often cause older events to land after newer events have already been processed.
+- Watermarks: Thresholds used by stream processing systems to track event-time progression and determine how long the engine should wait for delayed data before closing a time window.
+
+Windowing Strategies in Streaming:
+
+- Tumbling windows: Fixed-length, non-overlapping time intervals, such as computing transaction counts every distinct five minutes.
+- Sliding or hopping windows: Fixed-length, overlapping time intervals that advance by a specified stride, such as a ten-minute rolling window that updates every sixty seconds.
+- Session windows: Dynamically sized windows bounded by periods of user inactivity, commonly used to analyze website visit sessions and mobile engagement.
+
+Streaming Ingestion Architectural Patterns:
+
+- Lambda Architecture: Combines a batch processing layer for accurate historical reprocessing with an independent speed layer for real-time views, merging results in a unified serving layer. It provides resilience but introduces duplicate codebases and high operational maintenance.
+- Kappa Architecture: Uses a single stream processing engine for both real-time stream ingestion and historical reprocessing. Historical data is reprocessed by rewinding consumer offsets and replaying the append-only event log through the exact same streaming code.
+- Change Data Capture: Captures row-level database modifications from transaction logs using tools like Debezium and streams those change events into message brokers for real-time data replication.
+
+Key Takeaways:
+
+- Streaming data ingestion enables low-latency analytics by processing unbounded event streams continuously.
+- Distributed message brokers like Apache Kafka use partitioned append-only logs to achieve horizontal scaling and durable buffering.
+- Message ordering is guaranteed strictly at the individual partition level, not across an entire multi-partition topic.
+- Delivery semantics determine data reliability, with at-least-once transport paired with idempotent sinks serving as the enterprise standard.
+- Robust stream processing requires evaluating records using event time rather than processing time, using watermarks to manage out-of-order records.
+- Modern streaming architectures favor the Kappa pattern over Lambda to eliminate duplicate batch and streaming codebases.
