@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 2: Summary and Assessment
 
 ## Hierarchical Clustering: Module Summary and Assessment
@@ -89,4 +88,166 @@ flowchart TD
   - *Remedy:* Replace single linkage with **Ward's minimum variance linkage** or **Complete linkage**. Ward's method minimizes internal variance growth ($\Delta \text{ESS}$), producing balanced, compact clusters of comparable size. Alternatively, use Average linkage (UPGMA) to balance noise tolerance and cluster cohesion.
 - **Scenario B (Memory Exhaustion on Large Healthcare Records):** A bioinformatics lab attempts to cluster 120,000 patient electronic health records across 80 clinical features using standard agglomerative hierarchical clustering in Python. The program crashes immediately with an out-of-memory error.
   - *Diagnosis:* Standard agglomerative clustering requires constructing and storing the full pairwise dissimilarity matrix $D \in \mathbb{R}^{N \times N}$, which scales as $O(N^2)$ space complexity. For $N = 120,000$, an uncompressed single-precision distance matrix requires $(120,000)^2 \times 4 \text{ bytes} \approx 57.6 \text{ GB}$ of RAM, exceeding standard workstation memory.
-  - *Remedy:* Deploy **BIRCH (Balanced Iterative Reducing and Clustering using Hierarchies)**. BIRCH makes a single linear pass ($O(N)$) over the data to construct an in-memory Clustering Feature
+  - *Remedy:* Deploy **BIRCH (Balanced Iterative Reducing and Clustering using Hierarchies)**. BIRCH makes a single linear pass ($O(N)$) over the data to construct an in-memory Clustering Feature (CF) Tree, summarizing dense regions into compact sub-clusters. Standard agglomerative clustering is then applied to the small set of summarized leaf nodes, reducing memory requirements while preserving hierarchical structure.
+- **Scenario C (Clustering Tabular Data with Mixed Data Types):** An insurance firm clusters policyholder profiles containing continuous annual income, discrete age integers, binary claim indicators, and nominal categorical vehicle types. Computing pairwise Euclidean distance yields nonsensical clusters dominated by income magnitude.
+  - *Diagnosis:* Euclidean distance requires continuous, unconstrained coordinates with identical measurement scales. Evaluating categorical variables via arbitrary integer encodings introduces false metric distance assumptions, while income variance dominates small categorical differences.
+  - *Remedy:* Replace Euclidean distance with **Gower's Distance**. Gower's metric normalizes continuous attributes by their empirical range, evaluates nominal categorical variables via binary matching indicators ($0$ if identical, $1$ if different), and outputs a normalized dissimilarity matrix within $[0, 1]$. Apply agglomerative clustering with average linkage directly to the Gower matrix.
+
+> [!Important]
+> **Memory bottlenecks require pre-clustering summaries**: when dataset size exceeds 50,000 instances, standard $O(N^2)$ distance matrices exhaust RAM, requiring two-stage algorithms like BIRCH to summarize points before hierarchical merging.
+
+### Self-Assessment Technical Calculations
+
+#### Problem 1: Stepwise Agglomerative Matrix Updating (Single Versus Complete Linkage)
+
+A one-dimensional dataset contains four observation coordinates:
+- $x_1 = 2.0$
+- $x_2 = 5.0$
+- $x_3 = 9.0$
+- $x_4 = 15.0$
+
+1. Construct the initial pairwise Euclidean distance matrix $D_0$.
+2. Execute the complete agglomerative merge sequence using **Single Linkage**, recording the merge pair, merge height, and updated distance matrices at each step.
+3. Repeat the complete agglomerative merge sequence using **Complete Linkage**, and contrast the resulting tree topologies.
+
+*Stepwise Solution:*
+1. Initial Distance Matrix Evaluation ($D_0$):
+   - Evaluate pairwise absolute differences $|x_i - x_j|$:
+     - $d(1, 2) = |2.0 - 5.0| = \mathbf{3.0}$
+     - $d(1, 3) = |2.0 - 9.0| = \mathbf{7.0}$
+     - $d(1, 4) = |2.0 - 15.0| = \mathbf{13.0}$
+     - $d(2, 3) = |5.0 - 9.0| = \mathbf{4.0}$
+     - $d(2, 4) = |5.0 - 15.0| = \mathbf{10.0}$
+     - $d(3, 4) = |9.0 - 15.0| = \mathbf{6.0}$
+   - Initial distance matrix $D_0$:
+     $$D_0 = \begin{pmatrix} 0.0 & 3.0 & 7.0 & 13.0 \\ 3.0 & 0.0 & 4.0 & 10.0 \\ 7.0 & 4.0 & 0.0 & 6.0 \\ 13.0 & 10.0 & 6.0 & 0.0 \end{pmatrix}$$
+
+2. Agglomeration Under Single Linkage ($\min d(x, y)$):
+   - **Step 1:** The minimum distance is $d(1, 2) = 3.0$.
+     Merge observations $(x_1, x_2)$ into composite cluster $C_5 = \{x_1, x_2\}$ at **Height = 3.0**.
+     Update distances using single linkage ($d(C_5, k) = \min(d(1, k), d(2, k))$):
+     $$d(C_5, 3) = \min(d(1, 3), d(2, 3)) = \min(7.0, 4.0) = \mathbf{4.0}$$
+     $$d(C_5, 4) = \min(d(1, 4), d(2, 4)) = \min(13.0, 10.0) = \mathbf{10.0}$$
+     $$d(3, 4) = \mathbf{6.0}$$
+     Updated matrix $D_1$:
+     $$D_1 = \begin{pmatrix} C_5 & 3 & 4 \end{pmatrix} \implies \begin{pmatrix} 0.0 & 4.0 & 10.0 \\ 4.0 & 0.0 & 6.0 \\ 10.0 & 6.0 & 0.0 \end{pmatrix}$$
+   - **Step 2:** The minimum distance in $D_1$ is $d(C_5, 3) = 4.0$.
+     Merge cluster $C_5$ with observation $x_3$ into composite cluster $C_6 = \{x_1, x_2, x_3\}$ at **Height = 4.0**.
+     Update distances:
+     $$d(C_6, 4) = \min(d(C_5, 4), d(3, 4)) = \min(10.0, 6.0) = \mathbf{6.0}$$
+   - **Step 3:** The final remaining pair is $(C_6, 4)$ separated by distance $6.0$.
+     Merge cluster $C_6$ with observation $x_4$ into root cluster $C_{\text{root}}$ at **Height = 6.0**.
+   - Single linkage merge sequence: $(x_1, x_2)$ at $3.0 \to (C_5, x_3)$ at $4.0 \to (C_6, x_4)$ at $6.0$.
+
+3. Agglomeration Under Complete Linkage ($\max d(x, y)$):
+   - **Step 1:** The minimum distance in $D_0$ is $d(1, 2) = 3.0$.
+     Merge $(x_1, x_2)$ into composite cluster $C_5 = \{x_1, x_2\}$ at **Height = 3.0**.
+     Update distances using complete linkage ($d(C_5, k) = \max(d(1, k), d(2, k))$):
+     $$d(C_5, 3) = \max(d(1, 3), d(2, 3)) = \max(7.0, 4.0) = \mathbf{7.0}$$
+     $$d(C_5, 4) = \max(d(1, 4), d(2, 4)) = \max(13.0, 10.0) = \mathbf{13.0}$$
+     $$d(3, 4) = \mathbf{6.0}$$
+     Updated matrix $D_1$:
+     $$D_1 = \begin{pmatrix} C_5 & 3 & 4 \end{pmatrix} \implies \begin{pmatrix} 0.0 & 7.0 & 13.0 \\ 7.0 & 0.0 & 6.0 \\ 13.0 & 6.0 & 0.0 \end{pmatrix}$$
+   - **Step 2:** The minimum distance in $D_1$ is $d(3, 4) = 6.0$.
+     Merge observations $(x_3, x_4)$ into composite cluster $C_7 = \{x_3, x_4\}$ at **Height = 6.0**.
+     Update distances:
+     $$d(C_5, C_7) = \max_{x \in C_5, y \in C_7} d(x, y) = \max(d(1, 3), d(1, 4), d(2, 3), d(2, 4)) = \max(7.0, 13.0, 4.0, 10.0) = \mathbf{13.0}$$
+   - **Step 3:** The final remaining pair is $(C_5, C_7)$ separated by distance $13.0$.
+     Merge cluster $C_5$ with cluster $C_7$ into root cluster $C_{\text{root}}$ at **Height = 13.0**.
+   - Complete linkage merge sequence: $(x_1, x_2)$ at $3.0 \to (x_3, x_4)$ at $6.0 \to (C_5, C_7)$ at $13.0$.
+*Conclusion:* Single linkage produced an asymmetric chained tree $(\{x_1, x_2\}, x_3), x_4)$, whereas complete linkage merged two independent balanced pairs $(\{x_1, x_2\}, \{x_3, x_4\})$.
+
+#### Problem 2: Lance-Williams Distance Recalculation for Ward's and Average Linkage
+
+Cluster $A$ (containing $|A| = 3$ points) merges with Cluster $B$ (containing $|B| = 2$ points) to form composite cluster $(A \cup B)$ of size $|A \cup B| = 5$. A third cluster $C$ contains $|C| = 4$ points. Prior to the merge, the scalar distances between clusters evaluate as:
+- $d(A, C) = 12.0$
+- $d(B, C) = 8.0$
+- $d(A, B) = 6.0$
+
+For Ward's method, squared Euclidean distances evaluate as $d^2(A, C) = 144.0$, $d^2(B, C) = 64.0$, and $d^2(A, B) = 36.0$.
+
+1. Using the Lance-Williams recurrence relation, calculate the updated distance $d(A \cup B, C)$ under **Average Linkage**.
+2. Using the Lance-Williams recurrence relation, calculate the updated squared distance $d^2(A \cup B, C)$ under **Ward's Method**.
+
+*Stepwise Solution:*
+1. Average Linkage Distance Calculation:
+   - State the Lance-Williams coefficients for Average Linkage (UPGMA):
+     $$\alpha_A = \frac{|A|}{|A| + |B|} = \frac{3}{3 + 2} = \frac{3}{5} = 0.6$$
+     $$\alpha_B = \frac{|B|}{|A| + |B|} = \frac{2}{3 + 2} = \frac{2}{5} = 0.4$$
+     $$\beta = 0.0, \quad \gamma = 0.0$$
+   - Evaluate the recurrence equation:
+     $$d(A \cup B, C) = \alpha_A d(A, C) + \alpha_B d(B, C) + \beta d(A, B) + \gamma |d(A, C) - d(B, C)|$$
+     $$d(A \cup B, C) = (0.6)(12.0) + (0.4)(8.0) + 0.0 + 0.0 = 7.2 + 3.2 = \mathbf{10.4}$$
+2. Ward's Method Squared Distance Calculation:
+   - State the Lance-Williams coefficients for Ward's Minimum Variance method:
+     $$\text{Denominator} = |A| + |B| + |C| = 3 + 2 + 4 = 9$$
+     $$\alpha_A = \frac{|A| + |C|}{|A| + |B| + |C|} = \frac{3 + 4}{9} = \frac{7}{9} \approx 0.7778$$
+     $$\alpha_B = \frac{|B| + |C|}{|A| + |B| + |C|} = \frac{2 + 4}{9} = \frac{6}{9} = \frac{2}{3} \approx 0.6667$$
+     $$\beta = \frac{-|C|}{|A| + |B| + |C|} = \frac{-4}{9} \approx -0.4444$$
+     $$\gamma = 0.0$$
+   - Evaluate the recurrence relation on squared distances:
+     $$d^2(A \cup B, C) = \alpha_A d^2(A, C) + \alpha_B d^2(B, C) + \beta d^2(A, B)$$
+     $$d^2(A \cup B, C) = \left( \frac{7}{9} \right) (144.0) + \left( \frac{6}{9} \right) (64.0) - \left( \frac{4}{9} \right) (36.0)$$
+     $$d^2(A \cup B, C) = 7(16.0) + \frac{384.0}{9} - 4(4.0) = 112.0 + 42.6667 - 16.0 = \mathbf{138.6667}$$
+   - Evaluating the standard distance:
+     $$d(A \cup B, C) = \sqrt{138.6667} \approx \mathbf{11.7757}$$
+
+#### Problem 3: Analytical Cophenetic Correlation Coefficient Evaluation
+
+A dataset contains three observations $\{x_1, x_2, x_3\}$. The original pairwise Euclidean distance matrix $D$ evaluates as:
+- $D_{12} = 2.0$
+- $D_{13} = 5.0$
+- $D_{23} = 4.0$
+
+Agglomerative clustering merges $x_1$ and $x_2$ first at vertical height $2.0$. The composite cluster $\{x_1, x_2\}$ merges with $x_3$ at vertical height $4.5$.
+
+1. Construct the cophenetic distance matrix $C$ by extracting pairwise merge heights.
+2. Compute the sample means $\bar{D}$ and $\bar{C}$.
+3. Calculate the Cophenetic Correlation Coefficient ($r_{\text{coph}}$) and evaluate hierarchy preservation quality.
+
+*Stepwise Solution:*
+1. Cophenetic Distance Matrix Construction:
+   - Observation pair $(x_1, x_2)$ joined at the first node: $C_{12} = \mathbf{2.0}$.
+   - Observation pair $(x_1, x_3)$ joined at the root node: $C_{13} = \mathbf{4.5}$.
+   - Observation pair $(x_2, x_3)$ joined at the root node: $C_{23} = \mathbf{4.5}$.
+   - Unrolled pairwise vectors (for $i < j$):
+     $$D = [2.0, \; 5.0, \; 4.0]^T$$
+     $$C = [2.0, \; 4.5, \; 4.5]^T$$
+2. Sample Mean Calculations:
+   $$\bar{D} = \frac{1}{3} (2.0 + 5.0 + 4.0) = \frac{11.0}{3} \approx \mathbf{3.6667}$$
+   $$\bar{C} = \frac{1}{3} (2.0 + 4.5 + 4.5) = \frac{11.0}{3} \approx \mathbf{3.6667}$$
+3. Centered Vectors and Dot Products:
+   - Compute centered original distances $(D - \bar{D})$:
+     $$D - \bar{D} = [2.0 - 3.6667, \; 5.0 - 3.6667, \; 4.0 - 3.6667]^T = [-1.6667, \; +1.3333, \; +0.3333]^T$$
+   - Compute centered cophenetic distances $(C - \bar{C})$:
+     $$C - \bar{C} = [2.0 - 3.6667, \; 4.5 - 3.6667, \; 4.5 - 3.6667]^T = [-1.6667, \; +0.8333, \; +0.8333]^T$$
+   - Compute numerator (covariance dot product):
+     $$\sum (D - \bar{D})(C - \bar{C}) = (-1.6667)(-1.6667) + (1.3333)(0.8333) + (0.3333)(0.8333)$$
+     $$\text{Numerator} = 2.7779 + 1.1110 + 0.2777 = \mathbf{4.1666}$$
+   - Compute sum of squared deviations:
+     $$\sum (D - \bar{D})^2 = (-1.6667)^2 + (1.3333)^2 + (0.3333)^2 = 2.7779 + 1.7777 + 0.1111 = 4.6667$$
+     $$\sum (C - \bar{C})^2 = (-1.6667)^2 + (0.8333)^2 + (0.8333)^2 = 2.7779 + 0.6944 + 0.6944 = 4.1667$$
+   - Compute denominator:
+     $$\text{Denominator} = \sqrt{4.6667 \times 4.1667} = \sqrt{19.4447} \approx \mathbf{4.4096}$$
+   - Calculate correlation coefficient:
+     $$r_{\text{coph}} = \frac{4.1666}{4.4096} \approx \mathbf{0.9449}$$
+*Conclusion:* The high cophenetic correlation score ($r_{\text{coph}} \approx 0.945 \gg 0.75$) indicates that the dendrogram preserves original pairwise distances with minimal distortion.
+
+> [!Tip]
+> **Manual calculation confirms algebraic relationships**: computing Lance-Williams updates and cophenetic correlations on toy matrices verifies how linkage parameters control dendrogram heights and distance preservation.
+
+## Key Takeaways
+
+- **Hierarchical clustering builds nested partitions** without requiring a predefined cluster count $K$, visualizing data organization via dendrograms.
+- **Agglomerative clustering (AGNES) merges clusters bottom-up** across $N - 1$ steps by iteratively joining the closest candidate pairs identified in a distance matrix.
+- **Divisive clustering (DIANA) splits clusters top-down**, using splinter group heuristics to avoid the $2^{m-1}-1$ combinatorial bisection bottleneck.
+- **Greedy merges are irreversible**: early mistakes caused by localized noise cannot be undone, propagating errors throughout the remaining hierarchy.
+- **Vertical dendrogram height measures merge dissimilarity**, defining the cophenetic distance between observations through their lowest common ancestor node.
+- **Cophenetic distances satisfy the ultrametric inequality** ($c_{ij} \le \max(c_{ik}, c_{jk})$), enforcing structured geometric constraints on tree distances.
+- **Horizontal slicing at height $h_{\text{cut}}$ extracts flat partitions**, where the number of intersected branches equals the resulting cluster count $K$.
+- **The Cophenetic Correlation Coefficient ($r_{\text{coph}}$)** measures dendrogram fidelity against original input distances, with scores exceeding $0.75$ confirming accurate structural preservation.
+- **Ward's method minimizes Within-Cluster Sum of Squares ($\Delta \text{ESS}$)**, producing compact spherical clusters comparable to K-Means using continuous Euclidean distances.
+- **The Lance-Williams recurrence relation** updates inter-cluster distances in $O(1)$ scalar steps using prior distances, avoiding expensive point-wise recalculations.
+
+> [!Tip]
+> The foundational rule of hierarchical clustering: **linkage criteria dictate cluster geometry**; single linkage captures non-linear manifolds but risks chaining, complete linkage enforces compact diameters, and Ward's method minimizes variance growth to identify balanced, spherical clusters.
