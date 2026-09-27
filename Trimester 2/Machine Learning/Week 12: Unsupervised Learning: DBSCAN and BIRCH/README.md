@@ -1,4 +1,3 @@
-# Migration in progress
 # Week 12: Unsupervised Learning: DBSCAN and BIRCH
 
 ## Density-Based and Large-Scale Clustering: DBSCAN and BIRCH
@@ -108,4 +107,108 @@ flowchart LR
   $$CF = (N, \; \vec{LS}, \; SS)$$
   - **$N \in \mathbb{Z}^+$:** The scalar count of data points contained in the sub-cluster.
   - **$\vec{LS} \in \mathbb{R}^D$:** The **Linear Sum** vector across all points:
-    $$\vec{LS} =
+    $$\vec{LS} = \sum_{i=1}^N x_i$$
+  - **$SS \in \mathbb{R}$:** The scalar **Square Sum** of all point magnitudes:
+    $$SS = \sum_{i=1}^N \|x_i\|_2^2 = \sum_{i=1}^N \sum_{d=1}^D x_{id}^2$$
+
+### The Additivity Theorem and Statistical Derivations
+
+- **The Additivity Theorem:** If two disjoint sub-clusters represented by $CF_1 = (N_1, \vec{LS}_1, SS_1)$ and $CF_2 = (N_2, \vec{LS}_2, SS_2)$ merge, the resulting composite cluster's feature vector evaluates as the linear sum of its components:
+  $$CF_{\text{merged}} = CF_1 + CF_2 = (N_1 + N_2, \; \vec{LS}_1 + \vec{LS}_2, \; SS_1 + SS_2)$$
+- The additivity property allows BIRCH to merge clusters dynamically without re-reading the underlying raw data points from disk.
+- Fundamental geometric statistics derive directly from the three entries of a CF vector:
+  - **Cluster Centroid Prototype ($\mu \in \mathbb{R}^D$):**
+    $$\mu = \frac{\vec{LS}}{N}$$
+  - **Cluster Radius ($R \in \mathbb{R}^+$):** The average distance from member points to the centroid:
+    $$R = \sqrt{\frac{1}{N} \sum_{i=1}^N \|x_i - \mu\|_2^2} = \sqrt{\frac{SS}{N} - \|\mu\|_2^2} = \sqrt{\frac{SS}{N} - \frac{\|\vec{LS}\|_2^2}{N^2}}$$
+  - **Cluster Diameter ($D \in \mathbb{R}^+$):** The average pairwise distance between all points:
+    $$D = \sqrt{\frac{1}{N(N-1)} \sum_{i=1}^N \sum_{j=1}^N \|x_i - x_j\|_2^2} = \sqrt{\frac{2 N \cdot SS - 2 \|\vec{LS}\|_2^2}{N(N-1)}}$$
+
+> [!Important]
+> **CF vectors compress data additively**: storing only point count $N$, linear sum $\vec{LS}$, and square sum $SS$ allows sub-clusters to merge via simple addition while enabling exact centroid, radius, and diameter calculations.
+
+## The CF-Tree Architecture and Four-Phase Execution
+
+### Structural Organization of the CF-Tree
+
+- A **CF-Tree** is a balanced, height-constrained search tree parameterized by three architectural constants:
+  - **Branching Factor ($B$):** The maximum number of child entries allowed in an internal non-leaf node.
+  - **Leaf Capacity ($L$):** The maximum number of CF entries allowed in a leaf node.
+  - **Threshold ($T$):** The maximum allowable radius ($R \le T$) or diameter ($D \le T$) permitted for any sub-cluster stored in a leaf node.
+- **Internal Non-Leaf Nodes:** Store up to $B$ entries of the form $[CF_i, \text{ChildPointer}_i]$, where $CF_i$ represents the additive sum of all clustering features in its underlying sub-tree.
+- **Leaf Nodes:** Store up to $L$ leaf entries $[CF_1, CF_2, \dots, CF_L]$, representing dense micro-clusters. Leaf nodes link sequentially via forward and backward pointers, facilitating linear scans.
+
+```mermaid
+flowchart TD
+    Root["Root Node (Non-Leaf)<br/>[CF_1, ChildPtr_1] | [CF_2, ChildPtr_2]"]
+    
+    subgraph NonLeafLevel["Internal Nodes (Max B Entries)"]
+        NL1["Non-Leaf Node A<br/>[CF_1a] | [CF_1b]"]
+        NL2["Non-Leaf Node B<br/>[CF_2a] | [CF_2b]"]
+    end
+    
+    subgraph LeafLevel["Leaf Nodes (Max L Entries, Radius <= T)"]
+        L1["Leaf 1: [CF_1]--[CF_2]"]
+        L2["Leaf 2: [CF_3]--[CF_4]"]
+        L3["Leaf 3: [CF_5]--[CF_6]"]
+    end
+    
+    Root --> NL1
+    Root --> NL2
+    NL1 --> L1
+    NL1 --> L2
+    NL2 --> L3
+    
+    L1 -.-> L2
+    L2 -.-> L3
+```
+
+### Threshold Radius Violations and Dynamic Splitting
+
+- Inserting an incoming point $x$ executes as an in-memory search:
+  1. **Hierarchical Traversal:** Descend the tree from the root, selecting the child node whose centroid is closest to $x$ at each non-leaf level.
+  2. **Leaf Node Selection:** At the target leaf, identify the closest sub-cluster entry $CF_k$.
+  3. **Threshold Check:** Calculate the updated radius $R_{\text{new}}$ of $CF_k + CF_x$.
+     - If $R_{\text{new}} \le T$, point $x$ absorbs into $CF_k$, and updated statistics propagate upward to the root.
+     - If $R_{\text{new}} > T$, point $x$ initiates a new singleton entry $CF_{\text{new}} = (1, x, \|x\|_2^2)$ within the leaf.
+  4. **Node Splitting:** If inserting $CF_{\text{new}}$ exceeds leaf capacity $L$, the leaf splits into two: the two entries separated by the largest distance act as seeds, remaining entries assign to their closest seed, and parent nodes split recursively if branching factor $B$ is exceeded.
+
+### The Four-Phase Computational Lifecycle
+
+- **Phase 1 (Initial In-Memory Tree Construction):** Scans the dataset in a single linear pass ($O(N)$), constructing an initial CF-Tree that fits in physical RAM. If memory fills during processing, $T$ increases automatically, and the tree rebuilds into a more compact form.
+- **Phase 2 (Tree Condensation - Optional):** Scans leaf entries to remove sparse, isolated entries (filtering outliers) and rebuilds a smaller tree.
+- **Phase 3 (Global Clustering):** Applies an existing clustering algorithm (such as Agglomerative Hierarchical clustering or K-Means) to the compact set of leaf centroids, avoiding the $O(N^2)$ memory bottleneck of clustering raw points.
+- **Phase 4 (Cluster Refining - Optional):** Executes an optional final pass using the cluster centers from Phase 3 to reassign raw data points to their nearest prototype, correcting boundary assignments.
+
+> [!Tip]
+> **BIRCH bridges streaming scale and hierarchical clustering**: Phase 1 summarizes millions of data points into a compact in-memory CF-Tree in linear time, allowing Phase 3 to run agglomerative hierarchical clustering on leaf centroids without memory exhaustion.
+
+## Comparative Matrix of Advanced Clustering Paradigms
+
+| Dimension | K-Means Clustering | Agglomerative Hierarchical | DBSCAN | BIRCH |
+|---|---|---|---|---|
+| **Cluster Shape Assumption** | Spherical, convex, equal-variance | Varies by linkage (Ward: spherical; Single: manifold) | **Arbitrary non-convex shapes** (crescents, rings) | Spherical sub-clusters (governed by radius $T$) |
+| **Cluster Count $K$ Requirement** | Must be predefined ($K$) | Not required (dendrogram cut) | **Not required** (density-driven) | Not required in Phase 1; chosen in Phase 3 |
+| **Computational Time Complexity** | $O(I \cdot N \cdot K \cdot D)$ | $O(N^2 \log N)$ to $O(N^3)$ | $O(N \log N)$ with trees; $O(N^2)$ worst | **$O(N)$ linear pass** (Phase 1) |
+| **Memory Space Complexity** | $O(ND + KD)$ | $O(N^2)$ distance matrix | $O(N)$ with spatial indexing | **$O(\text{Tree Size})$** (fits in allocated RAM) |
+| **Outlier and Noise Handling** | Distorts centroids (quadratic $L_2$ pull) | Absorbs outliers into branches | **Isolates noise points explicitly** | Filters sparse entries in Phase 2 |
+| **Streaming / Out-of-Core Data** | Supported via Mini-Batch | Completely unscalable | Unscalable on streaming data | **Designed for streaming and disk storage** |
+| **Sensitive Hyperparameters** | Number of clusters $K$ | Linkage criterion | Radius $\epsilon$ and $\text{MinPts}$ | Threshold $T$ and Branching Factor $B$ |
+
+> [!Important]
+> **Select algorithms based on geometric shape and dataset scale**: deploy DBSCAN when clusters exhibit complex non-convex shapes and contain noise, and deploy BIRCH when datasets contain millions of instances that exceed physical memory.
+
+## Key Takeaways
+
+- **DBSCAN clusters data by density connectivity**, identifying dense clusters of arbitrary geometric shape while isolating anomalous noise points.
+- **Topological point classification in DBSCAN** labels points as **core** ($|N_\epsilon| \ge \text{MinPts}$), **border** (within $\epsilon$ of a core point), or **noise**.
+- **Density-reachability is transitive but asymmetric**, while **density-connectivity is symmetric**, defining cluster membership.
+- **The $k$-distance graph identifies optimal $\epsilon$ values** by locating the inflection elbow across sorted nearest-neighbor distances.
+- **DBSCAN struggles with variable-density clusters**, as a single global $\epsilon$ cannot separate dense and loose modes concurrently.
+- **BIRCH solves hierarchical scaling bottlenecks** by compressing massive datasets into in-memory summary structures using a single linear pass ($O(N)$).
+- **The Clustering Feature (CF) vector** stores $(N, \vec{LS}, SS)$, capturing point count, linear sum, and square sum.
+- **The Additivity Theorem** allows sub-clusters to merge by adding their summary vectors ($CF_1 + CF_2$), enabling exact centroid and radius updates without reading raw data.
+- **The CF-Tree uses threshold $R \le T$ to bound sub-cluster spread**, summarizing millions of points into leaf nodes that can be clustered using standard algorithms in Phase 3.
+
+> [!Tip]
+> The defining principle of advanced unsupervised clustering: **geometric density captures arbitrary shape, while statistical summarization enables massive scale**; DBSCAN relies on local density connectivity to separate complex spatial manifolds from noise, while BIRCH uses additive statistical summaries to scale hierarchical clustering to out-of-core streaming datasets.
