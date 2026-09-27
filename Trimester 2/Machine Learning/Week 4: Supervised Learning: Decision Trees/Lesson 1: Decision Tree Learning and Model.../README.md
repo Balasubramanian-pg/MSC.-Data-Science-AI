@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: Decision Tree Learning and Model...
 
 ## Decision Tree Learning and Model Representation
@@ -96,4 +95,97 @@ flowchart TD
   where $p_c = \frac{N_c}{|S|}$ denotes the empirical proportion of class $c$ in node $S$.
 - **Information Gain ($IG$):** Measures the expected reduction in entropy achieved by partitioning $S$ along attribute $A$:
   $$IG(S, A) = H(S) - \sum_{v \in \text{Values}(A)} \frac{|S_v|}{|S|} H(S_v)$$
-  where $S_v$ represents the child subset where attribute $A$ takes value $v$. The algorithm selects the feature that ma
+  where $S_v$ represents the child subset where attribute $A$ takes value $v$. The algorithm selects the feature that maximizes Information Gain.
+
+### The Gain Ratio and Intrinsic Value Normalization
+
+- Information Gain favors attributes possessing a large number of distinct categorical levels (high cardinality).
+- Partitioning along a unique identifier (e.g., `Patient_ID`) splits data into $|S|$ singleton leaves where entropy is zero ($H(S_v) = 0$), maximizing Information Gain while creating an overfitted, non-generalizing model.
+- Quinlan's **Gain Ratio** normalizes Information Gain by the **Intrinsic Value (Split Information)** of the split:
+  $$IV(S, A) = -\sum_{v \in \text{Values}(A)} \frac{|S_v|}{|S|} \log_2\left( \frac{|S_v|}{|S|} \right)$$
+  $$\text{Gain Ratio}(S, A) = \frac{IG(S, A)}{IV(S, A)}$$
+- Intrinsic Value measures the entropy of the partition sizes: attributes that split data into many small, fragmented branches yield large $IV$ values, which penalizes the Gain Ratio.
+
+### Gini Impurity Formulation
+
+- **Gini Impurity** measures the probability that a randomly chosen element from node $S$ is incorrectly labeled if classified randomly according to the class distribution within the node:
+  $$\text{Gini}(S) = 1 - \sum_{c=1}^C p_c^2$$
+- Gini Impurity achieves its minimum ($0.0$) when a node is pure, and reaches its maximum for binary classes at $0.5$ when classes are balanced ($p_1 = p_2 = 0.5$).
+- Because Gini Impurity relies on simple squaring rather than logarithmic calculations, it executes faster on hardware while generating splits nearly identical to Shannon entropy.
+
+### Continuous Attribute Threshold Evaluation
+
+- When an attribute $x_j$ is continuous, candidate splits evaluate as binary inequalities: $x_j \le t$ versus $x_j > t$.
+- **Threshold Evaluation Algorithm:**
+  1. Extract all $N$ observed values for continuous attribute $x_j$ and sort them in ascending order:
+     $$v_{(1)} < v_{(2)} < \dots < v_{(N)}$$
+  2. Compute candidate split thresholds as the midpoints between adjacent distinct values:
+     $$t_i = \frac{v_{(i)} + v_{(i+1)}}{2}$$
+  3. Evaluate impurity reduction for all $N - 1$ candidate thresholds.
+  4. Select the threshold $t^*$ that maximizes impurity gain for feature $x_j$.
+
+> [!Tip]
+> **Sort continuous attributes to evaluate candidate thresholds**: continuous splitting sorts $N$ observed values and evaluates midpoints between adjacent entries ($t = \frac{v_i + v_{i+1}}{2}$), turning infinite continuous options into a finite set of $N - 1$ tests.
+
+## Geometric Properties of Tree Decision Boundaries
+
+### Axis-Aligned Orthogonal Hyperplanes
+
+- Standard decision tree induction evaluates a single feature at each internal node, creating an $(D-1)$-dimensional **axis-aligned hyperplane**:
+  $$\mathcal{H} = \{x \in \mathbb{R}^D \mid x_j = t\}$$
+- In a 2D feature space, every split draws a vertical or horizontal line perpendicular to the coordinate axis.
+- In higher dimensions, splits form orthogonal planar cuts that partition space into rectilinear hyper-rectangles (bounding boxes).
+
+### The Diagonal Boundary Limitation
+
+- Because splits are axis-aligned, decision trees struggle to represent diagonal, linear decision boundaries:
+  $$x_1 + x_2 > c$$
+- To separate classes along a diagonal boundary, a decision tree must construct a complex **staircase approximation** using multiple orthogonal steps.
+- Approximating smooth linear or curved boundaries requires substantial tree depth and hundreds of parameters, making linear models or SVMs more efficient on linearly separable data.
+
+```mermaid
+flowchart LR
+    subgraph LinearModel["Linear Model: Single Diagonal Boundary"]
+        D1["Direct Hyperplane: x1 + x2 = c<br/>Clean, efficient separation"]
+    end
+
+    subgraph TreeModel["Decision Tree: Staircase Approximation"]
+        D2["Step 1: x1 <= t1<br/>Step 2: x2 <= t2<br/>Step 3: x1 <= t3<br/>Step 4: x2 <= t4<br/>... Requires deep staircase splits!"]
+    end
+```
+
+### Invariance to Monotonic Transformations
+
+- Evaluating split thresholds depends entirely on the **relative sorting order** of feature values rather than their absolute numerical scale:
+  $$\arg\max_t \Delta \text{Impurity}(X_j, t) \equiv \arg\max_t \Delta \text{Impurity}(g(X_j), g(t))$$
+  where $g(\cdot)$ is any strictly monotonically increasing function (e.g., logarithmic scaling, exponential expansion, cubic powers).
+- Decision trees are invariant to feature scaling, making Z-score standardization and Min-Max normalization unnecessary during preprocessing.
+
+> [!Important]
+> **Trees are scale-invariant but rotationally sensitive**: scaling features monotonically does not change split decisions, but rotating coordinates diagonally forces trees to construct complex staircase boundaries that require substantial depth.
+
+## Comparative Matrix of Tree Splitting Paradigms
+
+| Splitting Paradigm | Mathematical Mechanism | Branching Factor | Handling High Cardinality | Supported Feature Types | Computational Scaling |
+|---|---|---|---|---|---|
+| **Multi-Way Categorical Split** | One branch per category level: $x_j = v$ | $K$-way branches ($K$ categories) | **Severe bias** (fragments data into tiny leaves) | Discrete categorical attributes | $O(N)$ scanning across categories |
+| **Binary Categorical Subset Split** | Partition levels into subsets: $x_j \in \mathcal{S}_A$ vs $\notin \mathcal{S}_A$ | Strictly binary (2 branches) | Robust (evaluates $2^{K-1}-1$ combinations) | Discrete categorical attributes | $O(2^{K-1})$ exact; $O(K \log K)$ heuristic |
+| **Continuous Binary Threshold** | Midpoint evaluation: $x_j \le t$ vs $x_j > t$ | Strictly binary (2 branches) | Naturally immune (evaluates rank midpoints) | Continuous real-valued attributes | $O(N \log N)$ sorting per feature |
+| **Oblique (Linear Combination) Split**| Multi-feature linear cut: $\sum w_j x_j \le t$ | Strictly binary (2 branches) | Low (weights features jointly) | Continuous real-valued attributes | $O(N \cdot D^3)$ optimization per node |
+
+> [!Tip]
+> **Binary subset splitting prevents data fragmentation**: multi-way categorical splits divide training samples into tiny child subsets, while binary subset partitioning ($x_j \in \mathcal{S}_A$) preserves sample sizes across deep branches.
+
+## Key Takeaways
+
+- **Decision trees partition feature space non-parametrically** into rectilinear hyper-rectangles, producing piecewise constant predictions across regions.
+- **Model representations translate into Disjunctive Normal Form (DNF)**: each path from root to leaf represents an AND rule, and the complete tree represents an OR collection of rules.
+- **Induction relies on greedy top-down recursive partitioning**, evaluating features independently to maximize immediate impurity reduction without backtracking.
+- **Stopping conditions prevent infinite recursion**: algorithms terminate upon reaching pure nodes, exhausting attributes, or violating sample size and depth limits.
+- **Entropy measures statistical disorder**, while **Gini Impurity evaluates misclassification probability** using fast polynomial operations.
+- **Information Gain suffers from high-cardinality bias**, which C4.5 resolves by normalizing with Intrinsic Value to calculate the **Gain Ratio**.
+- **Decision boundaries are axis-aligned and orthogonal**, requiring deep staircase approximations to model diagonal or curved class separations.
+- **Decision trees are invariant to monotonic transformations**, allowing raw numeric features to be processed without scaling or normalization.
+
+> [!Tip]
+> The foundational principle of decision tree learning: **recursive partitioning exchanges global optimization for interpretable local rules**; evaluating orthogonal feature tests greedily allows decision trees to capture non-linear relationships without complex parametric assumptions.
