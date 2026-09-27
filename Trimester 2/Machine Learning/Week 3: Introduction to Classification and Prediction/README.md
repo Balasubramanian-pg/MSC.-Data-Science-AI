@@ -1,4 +1,3 @@
-# Migration in progress
 # Week 3: Introduction to Classification and Prediction
 
 ## Introduction to Classification and Prediction: Foundations and Evaluation
@@ -131,4 +130,116 @@ flowchart TD
 ### Decision Thresholds and Probability Calibration
 
 - Classifiers output continuous posterior probability scores: $\hat{p}(x) = P(Y = 1 \mid x) \in [0, 1]$.
-- C
+- Converting probabilities into binary classifications requires a **decision threshold** $\tau \in [0, 1]$:
+  $$\hat{y} = \begin{cases} 1 & \text{if } \hat{p}(x) \ge \tau \\ 0 & \text{if } \hat{p}(x) < \tau \end{cases}$$
+- Default software implementations set $\tau = 0.5$.
+- Decreasing the threshold ($\tau \downarrow$) makes the model classify positive more aggressively, increasing **Recall** while capturing more False Positives (degrading **Precision**).
+- Increasing the threshold ($\tau \uparrow$) makes the model conservative, increasing **Precision** while generating more False Negatives (degrading **Recall**).
+
+### The Receiver Operating Characteristic (ROC) and AUC-ROC
+
+- The **Receiver Operating Characteristic (ROC)** curve plots model discrimination across all possible decision thresholds $\tau \in [0, 1]$:
+  - **Vertical Axis:** True Positive Rate ($\text{TPR} = \text{Recall}$).
+  - **Horizontal Axis:** False Positive Rate ($\text{FPR} = 1 - \text{Specificity}$).
+- The point $(0, 0)$ corresponds to threshold $\tau = 1.0$ (predicts all negative).
+- The point $(1, 1)$ corresponds to threshold $\tau = 0.0$ (predicts all positive).
+- The diagonal identity line connecting $(0, 0)$ to $(1, 1)$ represents the performance of an uninformative **random classifier**.
+- **Area Under the ROC Curve (AUC-ROC):** Evaluates overall discriminative ability independent of threshold choice:
+  $$\text{AUC-ROC} = \int_0^1 \text{TPR}(\text{FPR}) \, d(\text{FPR}) \in [0, 1]$$
+- **Probabilistic Meaning:** AUC-ROC equals the exact probability that a randomly drawn positive instance ranks higher in predicted score than a randomly drawn negative instance.
+- **Invariance:** ROC curves are invariant to class distribution shifts; changing positive prevalence does not alter TPR or FPR because denominators contain strictly within-class instances.
+
+### The Precision-Recall (PR) Curve for Imbalanced Targets
+
+- In heavily skewed datasets (e.g., fraud rates $< 0.1\%$), True Negatives ($\text{TN}$) outnumber positives by orders of magnitude.
+- Because $\text{FPR} = \frac{\text{FP}}{\text{TN} + \text{FP}}$, a massive $\text{TN}$ denominator keeps FPR tiny even when the model generates thousands of False Positives. Consequently, the ROC curve appears deceptively optimistic.
+- The **Precision-Recall (PR) Curve** plots Precision (vertical axis) against Recall (horizontal axis) across all thresholds $\tau$:
+  $$\text{Precision} = \frac{\text{TP}}{\text{TP} + \text{FP}} \quad \text{vs} \quad \text{Recall} = \frac{\text{TP}}{\text{TP} + \text{FN}}$$
+- Because the PR curve omits True Negatives entirely, a flood of False Positives immediately pulls Precision down, exposing model deficiencies on imbalanced data.
+- **Area Under the PR Curve (AUC-PR / Average Precision):** The standard metric for ranking models on rare-event detection.
+
+> [!Important]
+> **Use PR curves on imbalanced data**: ROC curves become deceptively optimistic on rare targets because massive True Negative counts suppress the False Positive Rate; Precision-Recall curves omit True Negatives, highlighting false alarms accurately.
+
+## Continuous Prediction: Regression Evaluation Metrics
+
+### Mean Absolute Error (MAE) and Outlier Robustness
+
+- **Mean Absolute Error (MAE)** measures the average magnitude of absolute residuals:
+  $$\text{MAE} = \frac{1}{N} \sum_{i=1}^N |y_i - \hat{y}_i|$$
+- MAE is expressed in the identical physical units as the target variable $y$.
+- It penalizes prediction errors linearly ($|e|$), providing high **robustness to outliers**; an isolated extreme error does not disproportionately dominate the metric.
+
+### Mean Squared Error (MSE) and Root Mean Squared Error (RMSE)
+
+- **Mean Squared Error (MSE)** measures the average squared difference between predictions and targets:
+  $$\text{MSE} = \frac{1}{N} \sum_{i=1}^N (y_i - \hat{y}_i)^2$$
+- Squaring errors penalizes large residuals quadratically; a residual of $10$ units produces an error penalty of $100$, whereas a residual of $2$ produces a penalty of $4$.
+- **Root Mean Squared Error (RMSE):** Takes the square root of MSE to restore original physical units:
+  $$\text{RMSE} = \sqrt{\text{MSE}} = \sqrt{\frac{1}{N} \sum_{i=1}^N (y_i - \hat{y}_i)^2}$$
+- By mathematical property of norms, $\text{RMSE} \ge \text{MAE}$; the gap between RMSE and MAE increases as the variance of individual error magnitudes widens.
+
+### The Coefficient of Determination (R-Squared) and Adjusted R-Squared
+
+- The **Coefficient of Determination ($R^2$)** quantifies the proportion of target variance explained by the model relative to a naive horizontal baseline predicting sample mean $\bar{y}$:
+  $$R^2 = 1 - \frac{\text{SS}_{\text{res}}}{\text{SS}_{\text{tot}}} = 1 - \frac{\sum_{i=1}^N (y_i - \hat{y}_i)^2}{\sum_{i=1}^N (y_i - \bar{y})^2}$$
+- **Interpretation:**
+  - $R^2 = 1.0$: Model predicts targets perfectly with zero residual variance ($\text{SS}_{\text{res}} = 0$).
+  - $R^2 = 0.0$: Model performs identically to predicting the constant sample mean $\bar{y}$.
+  - $R^2 < 0.0$: Model performs worse than the simple sample mean on out-of-sample data.
+- **Adjusted $R^2$:** Adding irrelevant input features to an ordinary least squares regression model artificially inflates standard $R^2$. Adjusted $R^2$ penalizes model complexity using feature count $p$:
+  $$R^2_{\text{adj}} = 1 - \left[ \frac{(1 - R^2)(N - 1)}{N - p - 1} \right]$$
+
+### Percentage Metrics: MAPE and Symmetric MAPE
+
+- **Mean Absolute Percentage Error (MAPE):** Evaluates relative percentage error:
+  $$\text{MAPE} = \frac{100\%}{N} \sum_{i=1}^N \left| \frac{y_i - \hat{y}_i}{y_i} \right|$$
+- **Pathologies of MAPE:**
+  - Undefined when any true target equals zero ($y_i = 0$, division by zero).
+  - Asymmetric penalty: heavily penalizes over-predictions while under-penalizing under-predictions (an estimate cannot drop below zero, bounding maximum under-prediction error at 100%, while over-prediction error is unbounded).
+- **Symmetric MAPE (sMAPE):** Bounds relative error by dividing by the average of actual and predicted absolute values:
+  $$\text{sMAPE} = \frac{100\%}{N} \sum_{i=1}^N \frac{|y_i - \hat{y}_i|}{(|y_i| + |\hat{y}_i|) / 2}$$
+
+> [!Tip]
+> **Use RMSE to penalize large errors and MAE for linear costs**: RMSE is sensitive to extreme errors due to quadratic squaring, while MAE provides intuitive average error tracking that resists outlier distortion.
+
+## Comparative Matrices of Modeling and Evaluation Paradigms
+
+| Dimension | Discriminative Classification | Generative Classification | Continuous Regression |
+|---|---|---|---|
+| **Target Variable Type** | Discrete categorical ($y \in \{1, \dots, C\}$) | Discrete categorical ($y \in \{1, \dots, C\}$) | **Continuous real-valued** ($y \in \mathbb{R}$) |
+| **Probability Modeled** | Conditional Posterior $P(Y \mid X)$ | Joint Distribution $P(X, Y) = P(X \mid Y)P(Y)$ | Conditional Expectation $\mathbb{E}[Y \mid X]$ |
+| **Handling Missing Features** | Difficult; requires prior imputation | **Native**; marginalizes over missing $X$ | Requires imputation prior to evaluation |
+| **Outlier Detection Capability** | Poor; assigns arbitrary class regions | **High**; flags low $P(X)$ instances as novel | Evaluates residual magnitude $|y - \hat{y}|$ |
+| **Sample Efficiency** | Higher asymptotic accuracy on large $N$ | Reaches asymptotic error faster on tiny $N$ | Depends on underlying feature complexity |
+| **Representative Models** | Logistic Regression, SVM, Random Forest | Naive Bayes, Linear Discriminant Analysis | Linear Regression, Ridge, Gradient Boosting |
+
+### Classification Versus Regression Performance Metrics
+
+| Task Family | Evaluation Metric | Mathematical Definition | Primary Diagnostic Value | Outlier Sensitivity |
+|---|---|---|---|---|
+| **Classification** | **Accuracy** | $\frac{\text{TP} + \text{TN}}{\text{Total}}$ | Global baseline on balanced datasets | Minimal; masks minority class collapse |
+| **Classification** | **Precision** | $\frac{\text{TP}}{\text{TP} + \text{FP}}$ | Quantifies False Alarm frequency | Sensitive to low decision thresholds |
+| **Classification** | **Recall** | $\frac{\text{TP}}{\text{TP} + \text{FN}}$ | Quantifies missed detection frequency | Sensitive to high decision thresholds |
+| **Classification** | **F1-Score** | $2 \cdot \frac{\text{Prec} \cdot \text{Rec}}{\text{Prec} + \text{Rec}}$ | Harmonic balance of precision and recall | Low; robust against class imbalance |
+| **Classification** | **AUC-ROC** | $\int \text{TPR} \, d(\text{FPR})$ | Threshold-independent ranking power | Invariant to class distribution shifts |
+| **Regression** | **MAE** | $\frac{1}{N} \sum \|y - \hat{y}\|$ | Unbiased average error in physical units | **Low**; linear penalty resists extremes |
+| **Regression** | **RMSE** | $\sqrt{\frac{1}{N} \sum (y - \hat{y})^2}$ | Heavily penalizes large variance errors | **High**; quadratic squaring magnifies spikes |
+| **Regression** | **$R^2$ Score** | $1 - \frac{\text{SS}_{\text{res}}}{\text{SS}_{\text{tot}}}$ | Proportion of target variance explained | High; squared residuals sensitive to outliers |
+
+> [!Important]
+> **Match metrics to operational costs**: in fraud or illness detection where misses are catastrophic, optimize for Recall and PR-AUC; in regression settings where extreme errors trigger safety failures, optimize for RMSE over MAE.
+
+## Key Takeaways
+
+- **Supervised learning divides into classification and regression**: classification partitions feature space into discrete categorical decision regions, while regression estimates continuous numerical response surfaces.
+- **Discriminative models estimate boundaries directly** ($P(Y \mid X)$), while **generative models estimate joint distributions** ($P(X, Y)$), using Bayes' theorem to infer class posteriors.
+- **Accuracy is deceptive under class imbalance**: the accuracy paradox occurs when a dummy classifier predicts the majority class exclusively, yielding high accuracy while completely failing on the minority class.
+- **Precision measures false alarm costs**, while **Recall measures missed detection costs**; the $F_\beta$-score balances them harmonically.
+- **ROC curves evaluate ranking discrimination** across all operational decision thresholds, while **Precision-Recall curves are mandatory for rare-event detection** where True Negatives dominate.
+- **AUC-ROC represents ranking probability**: it evaluates the exact probability that a randomly chosen positive instance ranks higher than a randomly chosen negative instance.
+- **Regression metrics evaluate residual errors**: MAE penalizes deviations linearly to maintain outlier robustness, while RMSE squares deviations to heavily penalize large errors.
+- **The $R^2$ metric measures variance explained** relative to a naive mean baseline, while Adjusted $R^2$ penalizes unnecessary feature expansion.
+
+> [!Tip]
+> The foundational law of supervised evaluation: **metric choice governs model behavior**; optimizing an algorithm for accuracy on imbalanced data produces degenerate models, while aligning objective metrics with operational costs ensures that machine learning systems deliver practical value.
