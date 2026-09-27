@@ -1,4 +1,3 @@
-# Migration in progress
 ## W03: Overview of Major Cloud Providers - Lesson 0: Module Introduction
 
 The module introduces the three major cloud providers: AWS, Azure, and GCP. It builds a provider-neutral mental model for comparing market position, service models, global infrastructure, and core service categories. The goal is to make informed architectural choices based on workload requirements, team skills, and business constraints.
@@ -61,4 +60,59 @@ flowchart TD
 | SaaS | Entire stack | User configuration only |
 
 > [!Important]
-> **Provider selection is contextual**: 
+> **Provider selection is contextual**: No single provider wins every category. Choose based on team skills, compliance needs, existing contracts, and workload requirements.
+
+**How This Module Connects to W02**
+
+- W02 covers reliability, performance, and well-architected frameworks.
+- W03 adds provider-specific context for AWS, Azure, and GCP.
+- W02 principles apply across all providers.
+- W03 service knowledge makes those principles actionable.
+- Together they support architecture decisions and assessment scenarios.
+
+**Assessment Preparation**
+
+Practice Questions
+
+1. Explain the difference between IaaS, PaaS, and SaaS with examples.
+2. Compare AWS, Azure, and GCP global infrastructure.
+3. Map equivalent compute and storage services across providers.
+4. Describe when to choose each provider for a given workload.
+5. Explain why provider selection is not based on features alone.
+
+Scenario Questions
+
+**Scenario 1: Enterprise Microsoft Environment**
+A company uses Windows Server, Active Directory, and Microsoft 365. Which provider reduces friction?
+
+- Azure integrates natively with Entra ID, Windows Server, and Microsoft 365.
+- Hybrid licensing benefits reduce cost for existing Microsoft workloads.
+- Azure Policy and management groups provide centralized governance.
+
+**Scenario 2: Data and AI Startup**
+A startup needs managed Kubernetes, serverless analytics, and ML training. Which provider aligns best?
+
+- GCP offers GKE, BigQuery, and Vertex AI.
+- GCP's private network backbone reduces latency for global data access.
+- Cost-effective pricing supports data-heavy workloads.
+
+**Scenario 3: Multi-Cloud Strategy**
+An organization wants to avoid vendor lock-in. How should they approach this?
+
+- Standardize on Kubernetes and Terraform for portability.
+- Use provider-neutral services where possible.
+- Accept that deep integration features vary and plan abstraction layers.
+
+**Key Takeaways**
+
+- AWS, Azure, and GCP dominate global cloud infrastructure spending.
+- AWS leads in market share, Azure in enterprise integration, and GCP in growth rate and data/AI.
+- Cloud services follow three models: IaaS, PaaS, and SaaS.
+- Global infrastructure is organized into regions, zones, and edge locations.
+- Core service categories map across providers with different names.
+- Provider selection depends on team skills, compliance, contracts, and workload needs.
+- W03 builds on W02 by adding provider-specific context to architecture principles.
+- Assessment focuses on comparison and scenario-based decision making.
+
+> [!Important]
+> **Learn the concepts, not just the service names**: Core cloud concepts stay consistent across providers. Mastering them lets you transfer knowledge and make sound architectural decisions independent of vendor marketing.
