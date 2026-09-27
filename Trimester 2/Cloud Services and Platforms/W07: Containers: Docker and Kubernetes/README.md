@@ -1,4 +1,3 @@
-# Migration in progress
 # W07: Containers: Docker and Kubernetes
 
 This module covers containerization fundamentals, Docker, Kubernetes, and the AWS container services that run them: ECS, EKS, and Fargate. It explains how containers differ from virtual machines, how Docker packages applications, how Kubernetes orchestrates them at scale, and how to choose between AWS container platforms.
@@ -224,4 +223,211 @@ flowchart TD
 
 - Kubernetes provides each Pod with its own cluster-private IP address.
 - Containers within a Pod share the network namespace and can communicate via localhost.
-- Services provide stable IP addresse
+- Services provide stable IP addresses and DNS names for sets of Pods.
+- Ingress exposes HTTP and HTTPS routes from outside the cluster to Services within the cluster.
+
+| Service Type | Description | Use Case |
+|---|---|---|
+| ClusterIP | Internal-only IP within the cluster | Internal microservice communication |
+| NodePort | Exposes service on each node's IP at a static port | Development, simple external access |
+| LoadBalancer | Provisions an external load balancer | Production external access |
+| ExternalName | Maps service to a DNS name | External dependencies |
+
+## AWS Container Services
+
+AWS provides multiple container orchestration options. The choice depends on team skills, portability requirements, and operational overhead tolerance.
+
+### Amazon ECS
+
+*Definition*: Amazon Elastic Container Service (ECS) is a fully managed container orchestration service that simplifies the deployment, management, and scaling of containerized applications.
+
+- ECS is an AWS-proprietary orchestrator designed for simplicity and deep AWS integration.
+- It uses simple concepts: task definitions and services.
+- No control plane fee. You pay only for the compute resources consumed.
+- Deep integration with Application Load Balancers, Secrets Manager, and CloudWatch Logs.
+- Lower learning curve compared to Kubernetes.
+
+### Amazon EKS
+
+*Definition*: Amazon Elastic Kubernetes Service (EKS) is a managed Kubernetes service that makes it easy to run Kubernetes on AWS without operating the control plane.
+
+- EKS runs standard Kubernetes, giving access to the open-source CNCF ecosystem: Prometheus, Istio, ArgoCD, Karpenter, KEDA.
+- Cloud portability: workloads can move to GCP, Azure, or on-premises with less lock-in than ECS.
+- Fine-grained scaling with Horizontal Pod Autoscalers and advanced VPC CNI techniques.
+- Control plane fee: $0.10 per cluster-hour (roughly $73 per month).
+- Higher operational overhead than ECS.
+
+### AWS Fargate
+
+*Definition*: AWS Fargate is a serverless compute engine for containers that works with both Amazon ECS and Amazon EKS. It automatically manages the underlying infrastructure so you focus on deploying and scaling containerized applications.
+
+- No EC2 instances to provision, patch, or manage.
+- Serverless, pay-as-you-go compute engine.
+- Ideal for long-running applications, microservices, and batch processing.
+- Works with both ECS and EKS.
+
+### Amazon ECR
+
+*Definition*: Amazon Elastic Container Registry (ECR) is a fully managed container registry for storing, managing, and deploying container images.
+
+- Integrated with ECS, EKS, and Fargate.
+- Supports image scanning for vulnerabilities.
+- Supports cross-Region replication and lifecycle policies.
+
+### ECS vs EKS Comparison
+
+| Dimension | Amazon ECS | Amazon EKS |
+|---|---|---|
+| Orchestration Engine | AWS-proprietary | Kubernetes (open source) |
+| Learning Curve | Lower | Higher |
+| AWS Integration | Deep native integration | Good integration |
+| Portability | AWS-only | Multi-cloud and on-premises |
+| Ecosystem | Smaller, AWS-specific | Large Kubernetes ecosystem |
+| Control Plane Fee | None | $0.10 per cluster-hour |
+| Best For | Teams wanting simplicity and AWS-native tooling | Teams needing Kubernetes portability and ecosystem |
+
+> [!Important]
+> **EKS pays back its complexity only when you need the Kubernetes ecosystem**: If your team does not already use Kubernetes or need multi-cloud portability, ECS is simpler and more cost-effective.
+
+### Fargate vs Lambda
+
+| Dimension | AWS Fargate | AWS Lambda |
+|---|---|---|
+| Compute Model | Serverless containers | Serverless functions |
+| Runtime | Any language or framework in a container | Supported runtimes only |
+| Max Runtime | Unlimited | 15 minutes |
+| Resource Control | Fine-grained CPU and memory | Memory only |
+| Use Case | Long-running apps, microservices, batch | Event-driven, short-lived tasks |
+
+- Fargate is ideal for containerized applications that need specific resource allocation or persistent processes.
+- Lambda is ideal for event-driven, short-duration tasks and unpredictable workloads.
+
+## Container Decision Framework
+
+```mermaid
+flowchart TD
+    A[Container Decision] --> B{Need Kubernetes?}
+    B -->|Yes| C[Amazon EKS]
+    B -->|No| D[Amazon ECS]
+    C --> E{Fargate or EC2?}
+    D --> E
+    E -->|Serverless| F[AWS Fargate]
+    E -->|Full Control| G[EC2 Instances]
+    C --> H{Multi-Cloud?}
+    H -->|Yes| I[EKS with Fargate]
+    H -->|No| J[EKS with EC2 or Fargate]
+```
+
+- Start with ECS unless you have a specific need for Kubernetes.
+- Use Fargate to eliminate node management for both ECS and EKS.
+- Use EC2-backed nodes when you need full control over the underlying instances.
+- Choose EKS when portability or the Kubernetes ecosystem is a genuine requirement.
+
+> [!Tip]
+> **Start with ECS Fargate for simplicity**: It eliminates both control plane and node management. Move to EKS when you need the Kubernetes ecosystem, and move to EC2-backed nodes when you need full control.
+
+## Container Best Practices
+
+### Image Optimization
+
+- Use multi-stage builds to reduce image size.
+- Use minimal base images: Alpine, distroless, or scratch.
+- Tag images with semantic versions and git commit SHAs.
+- Scan images for vulnerabilities in CI/CD.
+- Do not run containers as root.
+
+### Application Design
+
+- Design for statelessness. Store state in external services.
+- Externalize configuration using environment variables or ConfigMaps.
+- Implement health checks and readiness probes.
+- Use graceful shutdown to handle termination signals.
+- Handle SIGTERM to allow in-flight requests to complete.
+
+### Security
+
+- Use least-privilege IAM roles for tasks and pods.
+- Scan images for vulnerabilities before deployment.
+- Use private registries instead of public ones for production.
+- Enable encryption for data at rest and in transit.
+- Use network policies to restrict pod-to-pod communication.
+
+### Operations
+
+- Implement centralized logging and monitoring.
+- Use horizontal pod autoscaling based on CPU, memory, or custom metrics.
+- Set resource requests and limits for CPU and memory.
+- Use namespaces and quotas for multi-tenancy.
+- Automate deployments with CI/CD pipelines.
+
+> [!Important]
+> **Containers are not a security boundary**: Containers share the host kernel. Do not rely on container isolation alone for security. Use additional controls such as seccomp, AppArmor, SELinux, and network policies to harden container workloads.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Explain the difference between containers and virtual machines.
+2. Describe the components of Docker's client-server architecture.
+3. Explain how Docker images and layers work.
+4. Describe the purpose of a Dockerfile and list common instructions.
+5. Compare Docker bridge, host, and overlay networks.
+6. Explain the role of Docker volumes.
+7. Describe the components of a Kubernetes cluster.
+8. Explain the relationship between Pods, Deployments, and Services.
+9. Compare Amazon ECS and Amazon EKS across at least five dimensions.
+10. Explain the purpose of AWS Fargate and how it differs from Lambda.
+11. Describe container best practices for image optimization and security.
+
+### Scenario Questions
+
+**Scenario 1: Simple Microservices Platform**
+A team is building a microservices platform and wants to minimize operational overhead. They have no existing Kubernetes expertise. What should they use?
+
+- Use Amazon ECS with AWS Fargate.
+- ECS provides deep AWS integration and a low learning curve.
+- Fargate eliminates node management.
+- No control plane fee.
+- Use ECR for image storage and scanning.
+
+**Scenario 2: Multi-Cloud Kubernetes Platform**
+A company needs to run Kubernetes across AWS, GCP, and on-premises. What should they use?
+
+- Use Amazon EKS for Kubernetes compatibility and portability.
+- Use Fargate or EC2-backed nodes depending on control requirements.
+- Leverage the CNCF ecosystem: ArgoCD, Prometheus, Istio.
+- Accept the control plane fee and higher operational overhead.
+
+**Scenario 3: Event-Driven Image Processing**
+An application needs to process images uploaded to S3 and generate thumbnails. Which compute service should they use?
+
+- Use AWS Lambda triggered by S3 upload events.
+- Lambda is ideal for short-lived, event-driven tasks.
+- No container management required.
+- Pay only for compute time used.
+
+**Scenario 4: Long-Running Batch Processing**
+A company needs to run batch processing jobs that take 2-4 hours each. Which service should they use?
+
+- Use AWS Fargate or ECS on EC2.
+- Fargate supports long-running containerized workloads with fine-grained resource control.
+- Use Spot capacity for cost savings where possible.
+- Lambda is not suitable due to the 15-minute timeout.
+
+## Key Takeaways
+
+- Containers package an application with its dependencies into a portable, isolated unit. They share the host OS kernel and are lightweight compared to VMs.
+- Docker is the leading containerization platform. It uses a client-server architecture with images, containers, and registries.
+- Docker images are built in layers. Multi-stage builds and minimal base images reduce size and attack surface.
+- Docker volumes provide persistent storage outside the container's writable layer.
+- Kubernetes is an open-source orchestration platform with a control plane and worker nodes.
+- Pods are the smallest deployable unit. Deployments manage replicas. Services provide stable networking.
+- Amazon ECS is a fully managed container orchestrator with deep AWS integration and no control plane fee.
+- Amazon EKS is managed Kubernetes with portability and access to the CNCF ecosystem. It has a control plane fee.
+- AWS Fargate is a serverless compute engine for containers that works with both ECS and EKS.
+- Choose ECS for simplicity, EKS for Kubernetes portability, and Fargate to eliminate node management.
+- Container best practices include minimal images, non-root execution, health checks, resource limits, and image scanning.
+- Containers are not a security boundary. Use additional controls to harden workloads.
+
+> [!Important]
+> **Choose the simplest container platform that meets your needs**: ECS with Fargate handles most containerized workloads with minimal operational overhead. Choose EKS only when you need the Kubernetes ecosystem or multi-cloud portability. Choose EC2-backed nodes only when you need full control over the underlying instances. The right choice depends on team skills, portability requirements, and operational maturity.
