@@ -1,4 +1,3 @@
-# Migration in progress
 # W06: Cloud Networking Fundamentals (VPC)
 
 Amazon Virtual Private Cloud (VPC) is the networking foundation of AWS. It provides a logically isolated section of the AWS Cloud where you define your own IP address ranges, create subnets, configure route tables, and control inbound and outbound traffic. Every EC2 instance, load balancer, database, and Lambda function that needs network access runs inside a VPC. Understanding VPC is essential for building secure, scalable, and highly available cloud architectures.
@@ -166,4 +165,182 @@ VPC security uses two layers of defense: security groups and network ACLs.
 - Rules are allow-only. You cannot create deny rules.
 - All rules are evaluated before a decision is made to allow traffic.
 - You can reference other security groups as sources or destinations.
-- Security gro
+- Security groups apply only to instances that are explicitly associated with them.
+
+### Network ACLs
+
+*Definition*: A network ACL (NACL) is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets. It operates at the subnet level and is the second layer of defense.
+
+- Network ACLs are stateless. Return traffic must be explicitly allowed by rules.
+- Rules support both allow and deny.
+- Rules are processed in numbered order. The first matching rule is applied.
+- Network ACLs apply automatically to all instances in the associated subnet.
+- A NACL allows a maximum of 40 rule entries (20 inbound and 20 outbound by default).
+
+| Dimension | Security Group | Network ACL |
+|---|---|---|
+| Level | Instance | Subnet |
+| State | Stateful | Stateless |
+| Rule Types | Allow only | Allow and deny |
+| Rule Evaluation | All rules | Numbered order |
+| Return Traffic | Automatically allowed | Must be explicitly allowed |
+| Default Rules | Deny all inbound, allow all outbound | Allow all inbound and outbound |
+
+> [!Important]
+> **Use security groups as primary access controls and network ACLs as guardrails**: Security groups are more versatile because they perform stateful packet filtering and can reference other security groups. Network ACLs are effective as a secondary control or as a broad subnet-level guardrail.
+
+## VPC Connectivity Options
+
+VPCs can be connected to each other, to on-premises networks, and to AWS services.
+
+### VPC Peering
+
+*Definition*: VPC peering is a networking connection between two VPCs that enables you to route traffic between them using private IPv4 or IPv6 addresses.
+
+- Peering connections can be created between VPCs in the same account, different accounts, or different Regions.
+- Traffic stays on the AWS backbone and does not traverse the public internet.
+- Peering is not transitive. If VPC A is peered with VPC B, and VPC B is peered with VPC C, VPC A cannot reach VPC C through VPC B.
+- CIDR blocks must not overlap.
+
+### AWS Transit Gateway
+
+*Definition*: AWS Transit Gateway acts as a central hub that connects VPCs, VPN connections, and AWS Direct Connect connections.
+
+- Transit Gateway simplifies network topology by replacing complex mesh peering with a hub-and-spoke model.
+- It supports transitive routing, so any attached VPC can reach any other attached VPC.
+- It can connect to on-premises networks via VPN or Direct Connect.
+- It supports multiple route tables for network segmentation.
+
+```mermaid
+flowchart TD
+    TGW[Transit Gateway] --> VPC1[VPC A]
+    TGW --> VPC2[VPC B]
+    TGW --> VPC3[VPC C]
+    TGW --> VPN[Site-to-Site VPN]
+    TGW --> DX[Direct Connect]
+    VPN --> OnPrem[On-Premises Network]
+    DX --> OnPrem
+```
+
+### VPN and Direct Connect
+
+| Option | Description | Use Case | Bandwidth |
+|---|---|---|---|
+| Site-to-Site VPN | IPsec VPN tunnel over the public internet | Quick hybrid connectivity, backup path | Up to 1.25 Gbps per tunnel |
+| Direct Connect | Dedicated private network connection | Consistent low-latency hybrid connectivity | 1 Gbps to 100 Gbps |
+| Direct Connect + VPN | Private connection with IPsec encryption | Encrypted hybrid connectivity | Varies |
+
+- Site-to-Site VPN is quick to set up and uses the public internet but has variable latency.
+- Direct Connect provides consistent network performance and lower data transfer costs but takes weeks to provision.
+- Combining Direct Connect with VPN provides encryption over the private connection.
+
+> [!Tip]
+> **Use Transit Gateway for multi-VPC and hybrid connectivity**: For more than three VPCs or hybrid connectivity, Transit Gateway reduces complexity and provides transitive routing. For simple two-VPC connectivity, VPC peering is sufficient.
+
+## VPC Best Practices
+
+### Network Design
+
+- Start with a non-overlapping IP plan. Reserve additional ranges for future VPC peering or on-premises extensions.
+- Allocate public and private subnets across at least two Availability Zones.
+- Use three subnets per AZ: public for internet-facing resources, private app for application servers, private data for databases.
+- Tag every resource with environment, owner, and purpose to support cost tracking and compliance audits.
+
+### Security
+
+- Use security groups as primary access controls and network ACLs as guardrails.
+- Implement VPC Endpoints for private access to AWS services without internet exposure.
+- Enable VPC Flow Logs to capture IP traffic information for monitoring and troubleshooting.
+- Use Reachability Analyzer to verify connectivity without actual traffic.
+
+### Availability
+
+- Design VPCs with multiple subnets across different Availability Zones to prevent single points of failure.
+- Deploy NAT gateways in each active AZ for production workloads.
+- Use Transit Gateway for scalable multi-VPC connectivity with high availability.
+
+> [!Important]
+> **Automate VPC deployment**: Use Terraform or CloudFormation to maintain consistency, accelerate provisioning, and support audit readiness. Manual VPC configuration is error-prone and difficult to audit.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Define a VPC and explain why it is the networking foundation of AWS.
+2. Describe the relationship between VPCs, subnets, and Availability Zones.
+3. Explain the difference between a public subnet and a private subnet.
+4. Describe how route tables control traffic flow in a VPC.
+5. Compare internet gateways and NAT gateways.
+6. Compare security groups and network ACLs across at least five dimensions.
+7. Explain the purpose of VPC peering, Transit Gateway, VPN, and Direct Connect.
+8. List five VPC design best practices.
+9. Explain why NAT gateways should be deployed in each Availability Zone.
+10. Describe the difference between inbound and outbound security group rules.
+
+### Scenario Questions
+
+**Scenario 1: Three-Tier Web Application**
+A company is deploying a three-tier web application (web, app, database) with high availability requirements. Design the VPC.
+
+- Create a VPC with a /16 CIDR block.
+- Deploy public subnets in two AZs for load balancers and NAT gateways.
+- Deploy private app subnets in two AZs for application servers.
+- Deploy private data subnets in two AZs for databases.
+- Use security groups to control traffic between tiers.
+- Deploy NAT gateways in each public subnet for outbound access from private subnets.
+
+**Scenario 2: Multi-VPC Connectivity**
+A company has five VPCs across two AWS accounts and needs to connect them all. What connectivity option should they use?
+
+- Use AWS Transit Gateway as a central hub.
+- Attach all VPCs to the Transit Gateway.
+- Use multiple route tables for network segmentation.
+- Connect on-premises networks via VPN or Direct Connect to the same Transit Gateway.
+
+**Scenario 3: Hybrid Cloud with On-Premises**
+A company needs consistent low-latency connectivity between its on-premises data center and AWS. What should they use?
+
+- Use AWS Direct Connect for dedicated private connectivity.
+- Combine with VPN for IPsec encryption if required.
+- Use Transit Gateway to connect multiple VPCs to the on-premises network.
+- Deploy redundant Direct Connect connections for high availability.
+
+**Scenario 4: Securing a Database Tier**
+A database cluster must not be accessible from the internet. How should it be secured?
+
+- Place the database in a private data subnet with no route to an internet gateway.
+- Use a security group that allows traffic only from the application tier security group.
+- Do not assign public IP addresses.
+- Use network ACLs as a secondary guardrail.
+- Enable VPC Flow Logs for monitoring.
+
+```mermaid
+flowchart TD
+    A[VPC Design] --> B{Internet-Facing?}
+    B -->|Yes| C[Public Subnet]
+    B -->|No| D{Outbound Internet Needed?}
+    D -->|Yes| E[Private App Subnet + NAT]
+    D -->|No| F[Private Data Subnet]
+    C --> G[IGW + Route 0.0.0.0/0]
+    E --> H[NAT Gateway in Public Subnet]
+    F --> I[No Internet Route]
+    G --> J[Security Groups + NACLs]
+    H --> J
+    I --> J
+```
+
+## Key Takeaways
+
+- A VPC is a logically isolated virtual network in AWS. You control IP addressing, subnets, routing, and security.
+- VPCs do not span Regions. Resources in different Regions need peering or VPN.
+- CIDR blocks define the IP address range of your VPC. Plan for growth and avoid overlaps.
+- Subnets are AZ-specific IP ranges. Public subnets have a route to an internet gateway. Private subnets use NAT gateways for outbound access.
+- Route tables control traffic flow. Each subnet is associated with one route table.
+- An internet gateway connects a VPC to the internet. A NAT gateway enables outbound-only access for private subnets.
+- Security groups are stateful, instance-level firewalls with allow-only rules. Network ACLs are stateless, subnet-level firewalls with allow and deny rules.
+- VPC peering connects two VPCs directly. Transit Gateway connects many VPCs and on-premises networks through a central hub.
+- VPN uses the public internet for hybrid connectivity. Direct Connect provides a dedicated private connection.
+- Best practices include non-overlapping IP plans, multi-AZ subnet design, security groups as primary controls, VPC endpoints, and automation.
+
+> [!Important]
+> **Design your VPC before you deploy workloads**: The VPC is the foundation of your network security and availability. A poorly designed VPC is difficult and expensive to change later. Plan your IP space, subnet layout, routing, and security controls before launching production resources. Automate VPC deployment with infrastructure as code for consistency and auditability.
