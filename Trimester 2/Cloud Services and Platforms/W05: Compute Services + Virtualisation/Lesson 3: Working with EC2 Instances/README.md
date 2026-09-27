@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 3: Working with EC2 Instances
 
 Working with EC2 instances covers the day-to-day operations of launching, connecting to, managing, and securing virtual servers. It includes choosing an Amazon Machine Image, configuring security groups and key pairs, using user data for bootstrapping, retrieving instance metadata, and managing storage and networking. The goal is to build the practical skills needed to run EC2 instances safely and efficiently.
@@ -174,4 +173,176 @@ Security groups and key pairs control access to your instances.
 
 - The metadata service is available at `http://169.254.169.254/`.
 - IMDSv2 is the session-oriented version that adds protection against SSRF attacks.
-- IMDSv1 is the legacy version that does not requ
+- IMDSv1 is the legacy version that does not require a token. AWS recommends disabling IMDSv1.
+- Metadata includes instance ID, AMI ID, instance type, IP addresses, and IAM role credentials.
+- IAM role credentials are temporary and rotate automatically.
+
+```mermaid
+sequenceDiagram
+    participant Instance
+    participant IMDS as IMDSv2
+    participant IAM as IAM Role
+    Instance->>IMDS: PUT request for token
+    IMDS-->>Instance: Return session token
+    Instance->>IMDS: GET request with token
+    IMDS-->>Instance: Return metadata or credentials
+    Instance->>IAM: Use temporary credentials
+```
+
+> [!Important]
+> **Enforce IMDSv2**: IMDSv1 is vulnerable to SSRF attacks. Require IMDSv2 on all instances by setting the metadata options to require a token. This prevents attackers from stealing IAM role credentials through application vulnerabilities.
+
+## Storage and Snapshots
+
+EC2 instances use EBS volumes for persistent block storage.
+
+- The root volume contains the operating system. It is an EBS volume.
+- Additional EBS volumes can be attached for data.
+- Instance store provides temporary, high-speed local storage. Data is lost on stop or terminate.
+- EBS snapshots are point-in-time backups of EBS volumes. They are stored in S3.
+- Snapshots are incremental. Only changed blocks are saved after the first snapshot.
+- Snapshots can be used to create new EBS volumes in the same or different Availability Zone.
+- Snapshots can be copied to other regions for disaster recovery.
+
+| Volume Type | Use Case | Max IOPS | Max Throughput |
+|---|---|---|---|
+| gp3 | General purpose SSD | 16,000 | 1,000 MB/s |
+| io2 | High IOPS SSD | 256,000 | 4,000 MB/s |
+| st1 | Throughput HDD | 500 | 500 MB/s |
+| sc1 | Cold HDD | 250 | 250 MB/s |
+
+> [!Tip]
+> **Use gp3 for most workloads**: gp3 provides a good balance of price and performance. You can provision IOPS and throughput independently of volume size. Use io2 only when you need sustained high IOPS.
+
+## Elastic IPs and Placement Groups
+
+### Elastic IP Addresses
+
+*Definition*: An Elastic IP (EIP) is a static, public IPv4 address designed for dynamic cloud computing.
+
+- EIPs are allocated to your account and remain until you release them.
+- You can associate an EIP with an instance or network interface.
+- EIPs allow you to mask the failure of an instance by remapping the address to another instance.
+- AWS charges for EIPs that are not associated with a running instance.
+- Use EIPs sparingly. Prefer DNS names or load balancers for most use cases.
+
+### Placement Groups
+
+*Definition*: A placement group is a logical grouping of instances within a single Availability Zone that influences how instances are placed on underlying hardware.
+
+| Strategy | Description | Use Case | Risk |
+|---|---|---|---|
+| Cluster | Packs instances close together | Low latency, high throughput HPC | Single rack failure affects all |
+| Spread | Places instances on distinct hardware | High availability, critical instances | Limited to 7 instances per AZ |
+| Partition | Spreads instances across logical partitions | Large distributed systems (Hadoop, Cassandra) | Partitions can share hardware |
+
+- Cluster placement groups provide the lowest latency and highest throughput.
+- Spread placement groups reduce the risk of simultaneous failure.
+- Partition placement groups allow you to spread instances across partitions that do not share racks.
+
+> [!Important]
+> **Placement groups affect availability and performance**: Cluster groups improve performance but reduce fault tolerance. Spread groups improve fault tolerance but limit scale. Choose based on whether performance or resilience is more important for the workload.
+
+## Monitoring and Troubleshooting
+
+### Monitoring
+
+- Amazon CloudWatch collects metrics for EC2 instances: CPU utilization, disk reads/writes, network traffic.
+- CloudWatch alarms trigger actions based on metric thresholds.
+- CloudWatch Logs collects log data from the instance.
+- AWS CloudTrail records API calls made to EC2.
+- AWS Trusted Advisor provides recommendations for cost, security, and performance.
+
+### Troubleshooting Common Issues
+
+| Issue | Possible Cause | Resolution |
+|---|---|---|
+| Cannot connect via SSH | Security group, key pair, or network ACL | Verify rules and key permissions |
+| Instance status check failed | OS-level issue or hardware failure | Reboot or stop/start the instance |
+| High CPU | Workload demand or runaway process | Right-size or investigate process |
+| Disk full | Logs or data accumulation | Clean up or attach larger volume |
+| Instance unreachable | Network or route issue | Check VPC, subnet, and route tables |
+
+> [!Tip]
+> **Use EC2 Serial Console for boot issues**: When an instance fails to boot, the EC2 Serial Console provides a text-based connection to troubleshoot boot problems without needing network access.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Describe the steps to launch an EC2 instance.
+2. Compare SSH, RDP, and Session Manager for connecting to instances.
+3. Explain the EC2 instance lifecycle states and their billing implications.
+4. Describe how security groups and key pairs control access.
+5. Explain the purpose of AMIs and user data.
+6. Describe instance metadata and IMDSv2.
+7. Compare EBS volume types and their use cases.
+8. Explain Elastic IP addresses and placement groups.
+9. List common EC2 troubleshooting steps.
+
+### Scenario Questions
+
+**Scenario 1: Secure Access to a Private Instance**
+An EC2 instance runs in a private subnet with no public IP. How do you connect securely?
+
+- Use AWS Systems Manager Session Manager.
+- Attach an IAM role with the required SSM permissions.
+- Ensure the SSM agent is installed and the instance has outbound access.
+- No inbound ports or bastion host are required.
+
+**Scenario 2: Bootstrapping a Web Server**
+A new instance needs to install Apache and start the service on launch. How do you automate this?
+
+- Use user data with a shell script.
+- Example: `#!/bin/bash` then `yum install -y httpd` then `systemctl start httpd`.
+- User data runs on first boot as root.
+- Do not embed secrets in user data.
+
+**Scenario 3: High-Performance Computing**
+A research team needs low-latency networking for tightly coupled HPC workloads. Which placement group should they use?
+
+- Use a cluster placement group.
+- Deploy instances in the same Availability Zone.
+- Use enhanced networking or Elastic Fabric Adapter for lowest latency.
+- Accept reduced fault tolerance for maximum performance.
+
+**Scenario 4: Disaster Recovery for EBS Volumes**
+A company needs to back up EBS volumes and restore them in another region. What should they do?
+
+- Create EBS snapshots on a schedule.
+- Copy snapshots to the target region.
+- Create new EBS volumes from the copied snapshots.
+- Use AWS Backup for centralized snapshot management.
+
+```mermaid
+flowchart TD
+    A[EC2 Operations] --> B{Connect?}
+    B -->|Linux| C[SSH or Session Manager]
+    B -->|Windows| D[RDP or Session Manager]
+    A --> E{Manage?}
+    E --> F[Start/Stop/Terminate]
+    E --> G[Resize or Change Type]
+    A --> H{Secure?}
+    H --> I[Security Groups]
+    H --> J[Key Pairs]
+    H --> K[IMDSv2]
+    A --> L{Store?}
+    L --> M[EBS Volumes]
+    L --> N[Snapshots]
+```
+
+## Key Takeaways
+
+- Launching an EC2 instance requires choosing an AMI, instance type, network settings, storage, security groups, and key pairs.
+- Connect to Linux instances with SSH and Windows instances with RDP. Use Session Manager for secure, auditable access without open ports.
+- The EC2 instance lifecycle includes pending, running, stopping, stopped, rebooting, terminating, and hibernating states.
+- Stop preserves the instance and EBS volumes. Terminate permanently deletes the instance and its root volume by default.
+- Security groups are stateful firewalls. Key pairs provide SSH and RDP credentials.
+- AMIs are templates for instance launch. User data bootstraps instances on first boot.
+- Instance metadata is available at 169.254.169.254. Enforce IMDSv2 to prevent SSRF attacks.
+- EBS provides persistent block storage. Snapshots are incremental backups stored in S3.
+- Elastic IPs are static public addresses. Placement groups influence instance placement for performance or availability.
+- Monitor with CloudWatch, CloudTrail, and Trusted Advisor. Troubleshoot common issues with security groups, status checks, and the serial console.
+
+> [!Important]
+> **Operate EC2 instances with security and cost in mind**: Every operational decision, from security group rules to instance state, affects security and cost. Restrict access, enforce IMDSv2, use Session Manager, stop idle instances, and monitor utilization continuously.
