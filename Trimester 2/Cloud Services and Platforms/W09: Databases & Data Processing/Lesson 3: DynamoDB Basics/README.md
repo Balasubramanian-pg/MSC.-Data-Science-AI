@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 3: DynamoDB Basics
 
 Amazon DynamoDB is a fully managed, serverless, NoSQL key-value and document database that delivers single-digit millisecond performance at any scale. It is designed for applications that need high throughput and low latency, with no servers to manage and no capacity planning required in on-demand mode. DynamoDB stores data in tables, uses primary keys to uniquely identify items, and scales horizontally using partitions.
@@ -218,4 +217,191 @@ sequenceDiagram
 
 ## DynamoDB Accelerator (DAX)
 
-*Definition*: DynamoDB Accelerator (DAX) is a fully managed, highly available, in-mem
+*Definition*: DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache for DynamoDB that delivers up to a 10x performance improvement, from milliseconds to microseconds, even at millions of requests per second.
+
+- DAX is a DynamoDB-compatible caching service. It requires no application changes.
+- DAX is designed to run within an Amazon VPC.
+- DAX caches the results of GetItem and BatchGetItem operations (item cache) and Query and Scan operations (query cache).
+- On a cache hit, DAX returns the result without accessing DynamoDB.
+- On a cache miss, DAX forwards the request to DynamoDB and caches the result.
+- DAX is ideal for read-heavy workloads with eventual consistency requirements.
+
+> [!Important]
+> **DAX is for read-heavy workloads**: DAX provides microsecond read latency for frequently accessed data. It is not a replacement for DynamoDB's durability. Use DAX to accelerate reads, not to replace the database.
+
+## Global Tables
+
+*Definition*: DynamoDB global tables replicate your DynamoDB tables automatically across your choice of AWS Regions. Global tables use an active-active replication model, meaning the table in each Region can accept read and write requests.
+
+- Global tables provide a fully managed, multi-Region, multi-active database.
+- No application changes are required because global tables use existing DynamoDB APIs.
+- Replication is automatic and conflict-free.
+- Global tables support multi-Region eventual consistency (MREC) and multi-Region strong consistency (MRSC).
+- MRSC global tables must be deployed across exactly three Regions.
+- Global tables are ideal for globally distributed applications, disaster recovery, and low-latency reads and writes.
+
+> [!Tip]
+> **Use global tables for multi-Region active-active workloads**: Global tables eliminate the need for custom replication logic. Writes in any Region are replicated to all other Regions automatically. This provides low-latency local reads and writes for global users.
+
+## Transactions and TTL
+
+### DynamoDB Transactions
+
+*Definition*: DynamoDB transactions provide atomicity, consistency, isolation, and durability (ACID) across multiple items both within and across tables.
+
+- Transactions simplify the developer experience of making coordinated, all-or-nothing changes.
+- You can include up to 10 unique items per transaction.
+- Transactional reads consume 2 RCUs per 4 KB. Transactional writes consume 2 WCUs per 1 KB.
+- Transactions provide ACID guarantees only within the Region where the API call was invoked.
+
+### Time to Live (TTL)
+
+*Definition*: DynamoDB Time to Live (TTL) is a cost-effective method for deleting items that are no longer relevant. You define a timestamp attribute, and DynamoDB automatically deletes expired items.
+
+- TTL is enabled at the table level.
+- You specify an attribute name that contains the expiration timestamp.
+- Expired items are typically deleted within 48 hours.
+- TTL deletions are replicated to global tables.
+- Use TTL for session data, event logs, and temporary records.
+
+> [!Important]
+> **TTL is not instantaneous**: Expired items may remain in the table for up to 48 hours after expiration. Do not rely on TTL for strict time-sensitive deletion. Use TTL for cost optimisation and automatic cleanup, not for compliance or regulatory deletion.
+
+## DynamoDB Best Practices
+
+### Partition Key Design
+
+- Use a high-cardinality partition key to distribute load evenly.
+- Avoid low-cardinality attributes like status or date.
+- Consider write sharding for high-throughput writes.
+- Use composite keys for hierarchical data.
+
+### Data Modelling
+
+- Model for access patterns, not for relationships.
+- Use adjacency lists for one-to-many and many-to-many relationships.
+- Denormalise data to avoid joins.
+- Use GSIs to support additional query patterns.
+
+### Capacity and Cost
+
+- Start with on-demand mode.
+- Use auto scaling for provisioned mode.
+- Monitor with CloudWatch and Contributor Insights.
+- Use TTL to automatically delete expired items.
+
+### Security
+
+- Enable encryption at rest with KMS.
+- Use IAM policies for least-privilege access.
+- Enable point-in-time recovery for backup.
+- Use VPC endpoints for private access.
+
+> [!Tip]
+> **Model for access patterns, not for relationships**: DynamoDB is not a relational database. Design your tables around how you will query the data, not around how the data is related. Use GSIs to support additional access patterns. Denormalise where necessary.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Define Amazon DynamoDB and explain its role in AWS.
+2. Describe the core components of DynamoDB: tables, items, and attributes.
+3. Explain the difference between a simple primary key and a composite primary key.
+4. Describe best practices for partition key design.
+5. Compare on-demand and provisioned capacity modes.
+6. Explain how RCUs and WCUs are calculated.
+7. Compare Global Secondary Indexes and Local Secondary Indexes.
+8. Describe the purpose of DynamoDB Streams.
+9. Explain the purpose of DynamoDB Accelerator (DAX).
+10. Describe how global tables work and when to use them.
+11. Explain how DynamoDB transactions provide ACID guarantees.
+12. Describe how Time to Live (TTL) works and when to use it.
+13. List five DynamoDB best practices.
+
+### Scenario Questions
+
+**Scenario 1: Gaming Leaderboard**
+A gaming company needs a database that can handle millions of reads and writes per second with single-digit millisecond latency. What should they use?
+
+- Use Amazon DynamoDB.
+- Use on-demand capacity mode for unpredictable traffic.
+- Use DAX for microsecond read latency.
+- Use Global Tables for multi-Region active-active replication.
+- Design the partition key to distribute load evenly across partitions.
+
+**Scenario 2: Session State Store**
+A web application needs to store user session state with automatic expiration. What should they use?
+
+- Use Amazon DynamoDB.
+- Enable TTL on a timestamp attribute.
+- DynamoDB automatically deletes expired items.
+- Use on-demand capacity mode for unpredictable traffic.
+- Use DAX for microsecond read latency if session reads are frequent.
+
+**Scenario 3: Event-Driven Processing**
+A company needs to trigger a Lambda function whenever an item is added or updated in a DynamoDB table. What should they use?
+
+- Enable DynamoDB Streams on the table.
+- Create an event source mapping between the stream and a Lambda function.
+- Lambda processes the change records.
+- Use Streams for real-time data processing and change data capture.
+
+**Scenario 4: Multi-Region Application**
+A global SaaS platform needs to serve users in North America, Europe, and Asia with low-latency reads and writes. What should they use?
+
+- Use DynamoDB Global Tables.
+- Deploy the table in multiple Regions.
+- Writes in any Region are replicated to all other Regions automatically.
+- Use MREC or MRSC depending on consistency requirements.
+- Use DAX in each Region for microsecond read latency.
+
+**Scenario 5: Financial Transaction Processing**
+A financial services firm needs a database that supports ACID transactions across multiple items and tables. What should they use?
+
+- Use Amazon DynamoDB.
+- Use TransactWriteItems and TransactGetItems APIs.
+- Each transaction can include up to 10 unique items.
+- Transactional writes consume 2 WCUs per 1 KB.
+- Use DynamoDB transactions for all-or-nothing changes.
+
+```mermaid
+flowchart TD
+    A[DynamoDB Decision] --> B{Capacity Mode?}
+    B -->|Unpredictable| C[On-Demand]
+    B -->|Predictable| D[Provisioned]
+    A --> E{Indexes?}
+    E -->|Additional Query Patterns| F[GSI]
+    E -->|Alternative Sort Key| G[LSI]
+    A --> H{Streams?}
+    H -->|Event-Driven| I[Streams + Lambda]
+    A --> I{Read Latency?}
+    I -->|Microsecond| J[DAX]
+    A --> K{Multi-Region?}
+    K -->|Yes| L[Global Tables]
+    A --> M{Transactions?}
+    M -->|Yes| N[TransactWriteItems]
+    A --> O{TTL?}
+    O -->|Yes| P[Enable TTL]
+```
+
+## Key Takeaways
+
+- Amazon DynamoDB is a fully managed, serverless, NoSQL key-value and document database with single-digit millisecond performance at any scale.
+- DynamoDB stores data in tables, items, and attributes. Tables are schemaless except for the primary key.
+- A primary key can be a simple partition key or a composite partition key and sort key.
+- Use a high-cardinality partition key to distribute load evenly. Each partition provides 3,000 RCUs and 1,000 WCUs per second.
+- DynamoDB offers two capacity modes: on-demand (pay per request) and provisioned (specify RCUs and WCUs).
+- On-demand is recommended for most workloads. Provisioned is cheaper for steady-state workloads.
+- Global Secondary Indexes (GSIs) can have a different partition key and sort key from the base table. Up to 20 per table.
+- Local Secondary Indexes (LSIs) have the same partition key but a different sort key. Up to 5 per table.
+- DynamoDB Streams captures item-level changes for event-driven processing with Lambda.
+- DynamoDB Accelerator (DAX) provides microsecond read latency for read-heavy workloads.
+- Global Tables provide multi-Region active-active replication with automatic conflict resolution.
+- DynamoDB transactions provide ACID guarantees across up to 10 items within and across tables.
+- Time to Live (TTL) automatically deletes expired items. Deletions may take up to 48 hours.
+- Model for access patterns, not for relationships. Denormalise where necessary. Use GSIs to support additional query patterns.
+- Enable encryption at rest, IAM policies, point-in-time recovery, and VPC endpoints for security.
+- Start with on-demand mode. Monitor with CloudWatch. Use TTL for cost optimisation.
+
+> [!Important]
+> **Design for access patterns, not for relational modelling**: DynamoDB is not a relational database. It does not support joins, complex queries, or ad-hoc analytics. Design your tables around how you will query the data. Choose a high-cardinality partition key to distribute load evenly. Use composite keys for hierarchical data. Use GSIs to support additional access patterns. Denormalise where necessary. Model for access patterns, not for relationships. Start with on-demand mode. Use DAX for read-heavy workloads. Use Streams for event-driven architectures. Use Global Tables for multi-Region active-active. Use transactions for ACID guarantees. Use TTL for automatic cleanup. The most common DynamoDB mistake is treating it like a relational database. Design for DynamoDB, and it will scale to millions of requests per second with single-digit millisecond latency.
