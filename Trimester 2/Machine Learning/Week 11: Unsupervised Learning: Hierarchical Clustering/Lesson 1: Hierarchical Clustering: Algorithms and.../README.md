@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: Hierarchical Clustering: Algorithms and...
 ## Hierarchical Clustering: Algorithms, Dendrograms, and Dissimilarity
 
@@ -104,4 +103,107 @@ flowchart TD
 flowchart TD
     subgraph Tree["Dendrogram Hierarchy"]
         Root["Node 7 (Merge Height: 4.8)"]
-        N5["Node 5 (Height
+        N5["Node 5 (Height: 2.6)"]
+        N6["Node 6 (Height: 1.5)"]
+        
+        Root --- N5
+        Root --- N6
+        
+        N5 --- Leaf1["x1"]
+        N5 --- Leaf2["x2"]
+        
+        N6 --- Leaf3["x3"]
+        N6 --- Leaf4["x4"]
+    end
+
+    Cut["--- Horizontal Slice: h_cut = 3.0 ---"]
+    Cut -. Intersects 2 Stems .-> Flat["Extracted Flat Clusters (K=2):<br/>Cluster A = {x1, x2}, Cluster B = {x3, x4}"]
+```
+
+> [!Tip]
+> **Dendrograms possess rotational symmetry**: leaf ordering along the horizontal axis is arbitrary and can swivel at every node ($2^{N-1}$ equivalent layouts); true similarity is measured strictly by the vertical height of the lowest common ancestor node.
+
+## Cophenetic Correlation and Hierarchy Validation
+
+### The Cophenetic Distance Matrix
+
+- Summarizing clusters of multiple points with scalar linkage distances inevitably distorts the original pairwise Euclidean distances between raw samples.
+- To quantify this distortion, construct the **cophenetic matrix** $C \in \mathbb{R}^{N \times N}$, where entry $C_{ij} = c_{ij}$ stores the vertical merge height between observations $x_i$ and $x_j$ extracted from the dendrogram.
+- An ideal hierarchical model produces cophenetic distances that correlate linearly with original pairwise input distances $D_{ij} = \|x_i - x_j\|$.
+
+### Mathematical Formulation of the Cophenetic Correlation Coefficient
+
+- Introduced by Robert Sokal and F. James Rohlf (1962), the **Cophenetic Correlation Coefficient ($r_{\text{coph}}$)** calculates the Pearson correlation coefficient between original pairwise distances and cophenetic tree distances:
+  $$r_{\text{coph}} = \frac{\sum_{i < j} (D_{ij} - \bar{D})(C_{ij} - \bar{C})}{\sqrt{\left( \sum_{i < j} (D_{ij} - \bar{D})^2 \right) \left( \sum_{i < j} (C_{ij} - \bar{C})^2 \right)}}$$
+  where $\bar{D} = \frac{2}{N(N-1)} \sum_{i < j} D_{ij}$ and $\bar{C} = \frac{2}{N(N-1)} \sum_{i < j} C_{ij}$ represent the average original and cophenetic distances across all $\frac{N(N-1)}{2}$ unique sample pairs.
+
+### Interpreting Hierarchy Preservation Scores
+
+- The cophenetic correlation coefficient serves as an analytical metric for validating linkage choice:
+  - **$r_{\text{coph}} \ge 0.80$:** High-fidelity hierarchy; the dendrogram preserves pairwise input relationships accurately.
+  - **$0.70 \le r_{\text{coph}} < 0.80$:** Moderate distortion; hierarchy captures primary modes but distorts local boundary relationships.
+  - **$r_{\text{coph}} < 0.70$:** Severe geometric distortion; the chosen linkage criterion imposes an unnatural structural bias onto the data.
+- Average linkage (UPGMA) typically yields the highest cophenetic correlation coefficient, as its averaging mechanism preserves pairwise distance expectations.
+
+> [!Important]
+> **Cophenetic correlation quantifies dendrogram distortion**: measuring the Pearson correlation ($r_{\text{coph}}$) between original distances and tree merge heights validates whether the chosen linkage preserves true data geometry without distortion.
+
+## Distance Metrics Across Varied Data Modalities
+
+### Minkowski Metrics: Euclidean and Manhattan
+
+- The choice of distance metric defines the base dissimilarity matrix $D$ prior to applying linkage criteria:
+  - **Euclidean Distance ($L_2$ Norm):** Measures straight-line geometric distance:
+    $$d_{\text{Euclidean}}(x, y) = \|x - y\|_2 = \sqrt{\sum_{d=1}^D (x_d - y_d)^2}$$
+    Appropriate for continuous physical coordinates with isotropic variance; sensitive to unnormalized feature scales and extreme outliers.
+  - **Manhattan Distance ($L_1$ Norm / City Block):** Measures rectilinear coordinate displacement:
+    $$d_{\text{Manhattan}}(x, y) = \|x - y\|_1 = \sum_{d=1}^D |x_d - y_d|$$
+    Robust against isolated outliers along individual dimensions; widely used in high-dimensional grid representations.
+
+### Angular Dissimilarity via Cosine Distance
+
+- For text documents, tf-idf representations, and high-dimensional embeddings, vector magnitude often reflects document length rather than semantic content.
+- **Cosine Distance** measures directional angular disparity, normalizing out vector length:
+  $$d_{\text{Cosine}}(x, y) = 1 - \frac{x \cdot y}{\|x\|_2 \|y\|_2} = 1 - \frac{\sum_{d=1}^D x_d y_d}{\sqrt{\sum_{d=1}^D x_d^2} \sqrt{\sum_{d=1}^D y_d^2}}$$
+- Cosine distance maps to the bounded interval $[0, 2]$, where $0$ indicates identical orientation, $1$ indicates orthogonal directions, and $2$ indicates opposite vectors.
+
+### Gower's Distance for Mixed-Type Attributes
+
+- Real-world tabular datasets combine continuous variables, nominal categorical factors, and ordinal scales, rendering standard Euclidean calculations invalid.
+- Proposed by John Gower (1971), **Gower's Distance** computes a normalized dissimilarity metric across mixed data types:
+  $$d_{\text{Gower}}(x_i, x_j) = \frac{\sum_{k=1}^P w_k s_{ijk}}{\sum_{k=1}^P w_k}$$
+  where $w_k \in \{0, 1\}$ is a validity indicator (zero if attribute $k$ is missing for either observation), and $s_{ijk} \in [0, 1]$ represents the attribute-level dissimilarity:
+  - **Continuous Features:** Scaled by the empirical range of attribute $k$:
+    $$s_{ijk} = \frac{|x_{ik} - x_{jk}|}{\max(X_k) - \min(X_k)}$$
+  - **Nominal Categorical Features:** Binary matching indicator:
+    $$s_{ijk} = \begin{cases} 0 & \text{if } x_{ik} = x_{jk} \\ 1 & \text{if } x_{ik} \neq x_{jk} \end{cases}$$
+  - **Ordinal Features:** Replaced by normalized ranks and evaluated using continuous fractional equations.
+- Gower's distance outputs a valid dissimilarity matrix within $[0, 1]$, enabling agglomerative clustering across complex clinical, financial, and demographic databases without dummy-variable distortion.
+
+> [!Tip]
+> **Use Gower's distance for mixed tabular data**: Gower's metric normalizes continuous features by their empirical range while evaluating categorical variables via matching indicators, avoiding the pitfalls of Euclidean distance on mixed attributes.
+
+## Comparative Matrix of Hierarchical Paradigms
+
+| Method | Initial State | Merge / Split Decision Strategy | Algorithmic Paradigm | Time Complexity | Outlier Vulnerability | Primary Real-World Application |
+|---|---|---|---|---|---|---|
+| **Agglomerative (AGNES)** | $N$ individual singleton clusters | Greedy merge of minimum linkage distance: $\min d(A, B)$ | Bottom-up progressive aggregation | $O(N^2 \log N)$ to $O(N^3)$ | Low to High (depends on linkage criterion) | Bioinformatics, gene expression trees, document taxonomy |
+| **Divisive (DIANA)** | Single global root cluster containing all $N$ points | Iterative splinter group extraction based on average dissimilarity | Top-down recursive bisection | $O(2^N)$ exact; $O(N^2)$ heuristic | Low (macro-structure established early) | Ecology, community network detection, hierarchical topic division |
+
+> [!Important]
+> **AGNES builds fine-grained clusters while DIANA preserves macro-structure**: agglomerative clustering identifies local neighborhoods first, whereas divisive clustering partitions major macroscopic modes before resolving local boundaries.
+
+## Key Takeaways
+
+- **Hierarchical clustering constructs nested taxonomies** without requiring a predefined cluster count $K$, visualizing data organization via dendrograms.
+- **Agglomerative clustering (AGNES) merges clusters bottom-up** across $N - 1$ steps by iteratively joining the closest candidate pairs identified in a distance matrix.
+- **Divisive clustering (DIANA) splits clusters top-down**, using splinter group heuristics to avoid the $2^{m-1}-1$ combinatorial bisection bottleneck.
+- **Greedy merges are irreversible**: early mistakes caused by localized noise cannot be undone, propagating errors throughout the remaining hierarchy.
+- **Vertical dendrogram height measures merge dissimilarity**, defining the cophenetic distance between observations through their lowest common ancestor node.
+- **Cophenetic distances satisfy the ultrametric inequality** ($c_{ij} \le \max(c_{ik}, c_{jk})$), enforcing structured geometric constraints on tree distances.
+- **Horizontal slicing at height $h_{\text{cut}}$ extracts flat partitions**, where the number of intersected branches equals the resulting cluster count $K$.
+- **The Cophenetic Correlation Coefficient ($r_{\text{coph}}$)** measures dendrogram fidelity against original input distances, with scores exceeding $0.75$ confirming accurate structural preservation.
+- **Gower's distance handles mixed data types**, combining range-normalized continuous metrics with categorical match indicators to enable clustering on tabular records.
+
+> [!Tip]
+> The fundamental mechanics of hierarchical algorithms: **pair choices greedily to construct an ultrametric tree**; agglomerative algorithms evaluate pairwise dissimilarity matrices to build nested dendrograms, allowing practitioners to extract flat clusters at any desired operational threshold.
