@@ -1,4 +1,3 @@
-# Migration in progress
 # W06: Optimization Algorithms
 
 ## Optimization Algorithms in Deep Neural Networks
@@ -109,4 +108,95 @@ Optimization algorithms function as the computational engine that updates neural
 ### AMSGrad and Non-Increasing Step Guarantees
 
 - Standard Adam can fail to converge on simple convex optimization problems when past gradients exhibit high variance, because the second-moment estimate $v_t$ can fluctuate unpredictably.
-- Proposed by Sashank Reddi et al. (2018), **AMSGrad** enforces a monotonic non-decreasing 
+- Proposed by Sashank Reddi et al. (2018), **AMSGrad** enforces a monotonic non-decreasing second-moment accumulator by tracking maximum historical variance:
+  $$\hat{v}_t^{\max} = \max(\hat{v}_{t-1}^{\max}, \; v_t)$$
+  $$\theta_{t+1} = \theta_t - \frac{\eta}{\sqrt{\hat{v}_t^{\max}} + \epsilon} \odot m_t$$
+- Preserving $\hat{v}_t^{\max} \ge \hat{v}_{t-1}^{\max}$ guarantees that the effective learning rate never increases unexpectedly, providing formal convergence proofs for adaptive optimization.
+
+> [!Important]
+> **AdamW decouples weight decay from adaptive scaling**: separating the regularization step from gradient moment accumulation ensures uniform parameter shrinkage, preventing weights with large gradients from escaping regularization.
+
+## Second-Order Optimization and Computational Limits
+
+### Newton's Method and Curvature Scaling
+
+- Classical second-order optimization uses a second-order Taylor expansion to approximate the loss surface locally:
+  $$\mathcal{L}(\theta + \Delta \theta) \approx \mathcal{L}(\theta) + \nabla \mathcal{L}(\theta)^T \Delta \theta + \frac{1}{2} \Delta \theta^T H \Delta \theta$$
+- Minimizing this quadratic model with respect to $\Delta \theta$ yields **Newton's update rule**:
+  $$\theta_{t+1} = \theta_t - H^{-1} \nabla_\theta \mathcal{L}(\theta_t)$$
+- Newton's method rescales parameter steps by the inverse Hessian, automatically handling ill-conditioned curvature and leaping directly to the minimum of a pure quadratic bowl in a single step.
+
+### The Computational Intractability of the Hessian
+
+- For modern neural networks containing $P \approx 10^7$ to $10^{11}$ parameters, computing and storing the explicit Hessian matrix requires $O(P^2)$ memory:
+  $$\text{Memory for } 10^8 \text{ parameters} \approx (10^8)^2 \times 4 \text{ bytes} \approx 4 \times 10^{16} \text{ bytes} = 40,000 \text{ Terabytes}$$
+- Inverting an explicit Hessian requires $O(P^3)$ floating-point operations per step, making exact second-order optimization computationally impossible for deep architectures.
+- Newton's method is attracted to **saddle points** and local maxima when the Hessian is not positive definite, requiring complex damping or trust-region modifications.
+
+### Quasi-Newton Methods: BFGS and L-BFGS
+
+- **Quasi-Newton methods** avoid explicit Hessian calculation by iteratively constructing low-rank approximations of the inverse Hessian ($B \approx H^{-1}$) using differences between successive gradient vectors.
+- The **Broyden-Fletcher-Goldfarb-Shanno (BFGS)** algorithm updates the inverse Hessian approximation with rank-2 updates, scaling memory as $O(P^2)$.
+- **Limited-Memory BFGS (L-BFGS)** stores only the $k$ most recent parameter displacements ($\Delta \theta$) and gradient differences ($\Delta g$), reducing memory consumption to $O(kP)$ where $k \in [5, 20]$.
+- While L-BFGS is effective for small full-batch convex problems, it performs poorly under mini-batch stochastic gradient noise, making first-order adaptive methods the standard for deep learning workloads.
+
+> [!Tip]
+> **Exact second-order methods are computationally prohibitive**: while Newton's method handles curvature directly, its $O(P^2)$ memory and $O(P^3)$ compute costs require deep learning to rely on first-order approximations like AdamW.
+
+## Learning Rate Scheduling and Trajectory Control
+
+### Learning Rate Warmup Mechanics
+
+- Randomly initialized weight vectors produce erratic, large-magnitude gradient estimates during early training iterations.
+- Applying a large initial learning rate can displace parameters onto steep, unrecoverable loss cliffs, destroying initial representation structures.
+- **Linear Learning Rate Warmup** linearly ramps the learning rate from near zero to its peak base value $\eta_{\max}$ over the first $T_{\text{warmup}}$ steps:
+  $$\eta_t = \eta_{\max} \cdot \frac{t}{T_{\text{warmup}}} \quad \forall t \le T_{\text{warmup}}$$
+- Warmup stabilizes early training by allowing backpropagated gradients to normalize before the optimizer executes large parameter updates.
+
+### Cosine Annealing and Warm Restarts
+
+- Introduced by Ilya Loshchilov and Frank Hutter (2016), **Cosine Annealing** decays the learning rate following a half-cosine curve:
+  $$\eta_t = \eta_{\min} + \frac{1}{2}(\eta_{\max} - \eta_{\min}) \left( 1 + \cos\left(\frac{t}{T_{\max}} \pi\right) \right)$$
+  where $\eta_{\min}$ is the minimum floor, and $T_{\max}$ is the total epoch budget.
+- The schedule transitions smoothly: it decreases slowly near $\eta_{\max}$, accelerates descent through the middle phase, and flattens out near $\eta_{\min}$ for fine convergence.
+- **Cosine Annealing with Warm Restarts (SGDR)** periodically resets the learning rate to $\eta_{\max}$ after fixed cycle periods, giving the optimizer enough energy to escape local minima and explore alternative basins.
+
+### Cyclical Learning Rates and the One-Cycle Policy
+
+- Formulated by Leslie Smith (2017), **Cyclical Learning Rates (CLR)** oscillate the step size between a minimum bound $\eta_{\min}$ and a maximum bound $\eta_{\max}$ across training epochs.
+- The **1cycle policy** completes a single cycle: it ramps the learning rate up to a high peak while decreasing momentum, then decreases the learning rate to near zero while increasing momentum.
+- High peak learning rates act as an **implicit regularizer**, preventing the model from settling into sharp minima and speeding up convergence over short training budgets.
+
+> [!Tip]
+> **Learning rate warmup prevents early divergence**: ramping up step sizes over initial epochs protects randomly initialized layers, while cosine decay allows parameters to settle smoothly into deep basins.
+
+## Comparative Matrix of Neural Optimization Algorithms
+
+| Optimizer | Mathematical Update Rule | First Moment (Direction) | Second Moment (Scale) | Auxiliary Memory State | Primary Advantage / Targeted Failure |
+|---|---|---|---|---|---|
+| **SGD** | $\theta_{t+1} = \theta_t - \eta g_t$ | None (uses raw gradient $g_t$) | None | $0$ auxiliary parameters | Minimal memory footprint; oscillates in narrow ill-conditioned ravines |
+| **Momentum** | $v_t = \beta v_{t-1} + (1-\beta) g_t$ <br> $\theta_{t+1} = \theta_t - \eta v_t$ | Exponential moving average | None | $1P$ (stores velocity vector $v$) | Dampens cross-ravine oscillations; accelerates descent on flat floors |
+| **NAG** | $g_t = \nabla \mathcal{L}(\theta_t - \eta \beta v_{t-1})$ <br> $\theta_{t+1} = \theta_t - \eta v_t$ | Lookahead momentum | None | $1P$ (stores velocity vector $v$) | Adds predictive braking before ascending slopes; sensitive to noise |
+| **AdaGrad** | $\theta_{t+1} = \theta_t - \frac{\eta}{\sqrt{G_t} + \epsilon} \odot g_t$ | None | Monotonic sum: $\sum g_i^2$ | $1P$ (stores squared sum $G$) | Scales sparse features well; learning rate decays to zero prematurely |
+| **RMSprop** | $\theta_{t+1} = \theta_t - \frac{\eta}{\sqrt{s_t} + \epsilon} \odot g_t$ | None | Exponential average: $s_t$ | $1P$ (stores moving average $s$) | Resolves premature learning rate decay; lacks directional velocity |
+| **Adam** | $\theta_{t+1} = \theta_t - \frac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \odot \hat{m}_t$ | Bias-corrected average: $\hat{m}_t$ | Bias-corrected average: $\hat{v}_t$ | $2P$ (stores moment vectors $m, v$) | Fast initial convergence; traditional L2 regularization causes issues |
+| **AdamW** | $\theta_{t+1} = (1 - \eta\lambda)\theta_t - \frac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \odot \hat{m}_t$ | Bias-corrected average: $\hat{m}_t$ | Bias-corrected average: $\hat{v}_t$ | $2P$ (stores moment vectors $m, v$) | Decouples weight decay; standard choice for Transformers and deep ResNets |
+| **AMSGrad** | $\theta_{t+1} = \theta_t - \frac{\eta}{\sqrt{\hat{v}_t^{\max}} + \epsilon} \odot m_t$ | Exponential average: $m_t$ | Maximum historical variance | $2P$ (stores vectors $m, v^{\max}$) | Guarantees non-increasing step sizes; eliminates divergence traps in Adam |
+
+> [!Important]
+> **AdamW is the baseline for deep architectures**: decoupling weight decay from adaptive coordinate scaling delivers the fast initial convergence of Adam alongside the generalization benefits of true parameter shrinkage.
+
+## Key Takeaways
+
+- **Ill-conditioned curvature** creates steep ravines with high condition numbers ($\kappa(H) \gg 1$), causing standard gradient descent to oscillate across walls while making slow forward progress.
+- **Saddle points dominate high-dimensional loss surfaces**; optimization algorithms require momentum or stochastic gradient noise to traverse zero-gradient plateaus along negative curvature directions.
+- **Polyak momentum** accumulates velocity over past gradients, canceling out cross-valley oscillations and accelerating descent along the base of narrow ravines.
+- **Nesterov Accelerated Gradient (NAG)** evaluates gradients at projected lookahead coordinates, providing an adaptive braking mechanism on descending slopes.
+- **AdaGrad scales step sizes inversely** with cumulative historical gradient norms, but suffers from premature stoppage as the learning rate decays monotonically toward zero.
+- **RMSprop and Adam** use exponential moving averages of squared gradients to preserve adaptive scaling over recent training steps without decaying to zero.
+- **AdamW decouples weight decay from gradient updates**, preventing adaptive coordinate scaling from distorting parameter shrinkage and improving generalization.
+- **Second-order Newton methods are computationally intractable** for deep networks due to $O(P^2)$ memory and $O(P^3)$ compute costs, making first-order adaptive methods the standard.
+- **Learning rate schedules govern convergence**: linear warmup protects randomly initialized weights during early training, while cosine annealing allows smooth convergence into flat minima.
+
+> [!Tip]
+> The foundational principle of deep optimization: **velocity dampens curvature, while adaptive scaling handles non-uniformity**; combining momentum-based directional velocity with decoupled coordinate-wise variance normalization and scheduled step sizes allows optimizers to navigate complex, non-convex loss surfaces efficiently.
