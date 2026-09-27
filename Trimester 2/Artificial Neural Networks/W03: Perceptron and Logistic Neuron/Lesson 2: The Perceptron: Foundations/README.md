@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 2: The Perceptron: Foundations
 
 ## Perceptron Architecture and Mathematical Modeling
@@ -84,4 +83,77 @@ The classical Perceptron represents the foundational linear threshold classifier
 ### Theoretical Preconditions: Bounded Radius and Margin
 
 - The **Novikoff Perceptron Convergence Theorem** (1962) proves that if a dataset is linearly separable, the Perceptron Learning Algorithm terminates in a finite number of steps.
-- **Precondition 1 (Bounded Data):** There exists a positive real co
+- **Precondition 1 (Bounded Data):** There exists a positive real constant $R$ such that all augmented training vectors lie within a hypersphere of radius $R$:
+  $$\|\tilde{x}^{(k)}\|_2 \le R \quad \forall k \in \{1, \dots, N\}$$
+- **Precondition 2 (Linear Separability):** There exists an optimal unit weight vector $\tilde{w}^*$ ($\|\tilde{w}^*\|_2 = 1$) and a strictly positive margin $\gamma > 0$ such that:
+  $$y^{(k)} (\tilde{w}^{*T} \tilde{x}^{(k)}) \ge \gamma \quad \forall k \in \{1, \dots, N\}$$
+
+### Mathematical Bound on Maximum Mistakes
+
+- Setting $\tilde{w}_0 = 0$ and $\eta = 1$, assume the algorithm makes $k$ classification mistakes during execution.
+- **Lower Bound on Alignment:** Projecting the weight vector onto the optimal vector $\tilde{w}^*$ after $k$ updates yields:
+  $$\tilde{w}_k^T \tilde{w}^* = (\tilde{w}_{k-1} + y^{(k)} \tilde{x}^{(k)})^T \tilde{w}^* = \tilde{w}_{k-1}^T \tilde{w}^* + y^{(k)} (\tilde{w}^{*T} \tilde{x}^{(k)}) \ge \tilde{w}_{k-1}^T \tilde{w}^* + \gamma$$
+  By induction across $k$ updates, this guarantees: $\tilde{w}_k^T \tilde{w}^* \ge k \gamma$.
+- Applying the Cauchy-Schwarz inequality provides:
+  $$\|\tilde{w}_k\|_2^2 = \|\tilde{w}_k\|_2^2 \|\tilde{w}^*\|_2^2 \ge (\tilde{w}_k^T \tilde{w}^*)^2 \ge k^2 \gamma^2$$
+- **Upper Bound on Norm Growth:** Expanding the squared Euclidean norm of the weight vector yields:
+  $$\|\tilde{w}_k\|_2^2 = \|\tilde{w}_{k-1} + y^{(k)} \tilde{x}^{(k)}\|_2^2 = \|\tilde{w}_{k-1}\|_2^2 + 2 y^{(k)} (\tilde{w}_{k-1}^T \tilde{x}^{(k)}) + \|\tilde{x}^{(k)}\|_2^2$$
+  Because an update occurs only when $y^{(k)} (\tilde{w}_{k-1}^T \tilde{x}^{(k)}) \le 0$, and given $\|\tilde{x}^{(k)}\|_2 \le R$:
+  $$\|\tilde{w}_k\|_2^2 \le \|\tilde{w}_{k-1}\|_2^2 + R^2 \le k R^2$$
+- **Combining the Bounds:**
+  $$k^2 \gamma^2 \le \|\tilde{w}_k\|_2^2 \le k R^2 \implies k^2 \gamma^2 \le k R^2 \implies k \le \left( \frac{R}{\gamma} \right)^2$$
+
+### Structural Implications of the Bound
+
+- The maximum number of mistakes $k_{\max} = \lfloor \frac{R^2}{\gamma^2} \rfloor$ depends exclusively on the **geometric margin** $\gamma$ and the data **radius** $R$.
+- The mistake bound is completely independent of the total number of training samples $N$.
+- The mistake bound does not depend explicitly on the input space dimensionality $n$, except as dimension affects the ratio $\frac{R}{\gamma}$.
+
+> [!Important]
+> **Novikoff's theorem** provides a finite mistake guarantee: the total mistakes made by the Perceptron are bounded by $(R/\gamma)^2$, proving that convergence speed is determined by data spread and class separation margin rather than dataset size.
+
+## Non-Separability and the Pocket Algorithm
+
+### The Perceptron Cycling Hazard
+
+- If training data is **linearly non-separable**, the preconditions for Novikoff's convergence theorem fail ($\gamma \le 0$).
+- When presented with non-separable distributions, the Perceptron Learning Algorithm never terminates, entering an infinite loop of parameter oscillations known as **cycling**.
+- The algorithm's final state depends arbitrarily on when execution is halted, often yielding a hyperplane with poor classification performance across the entire dataset.
+
+### The Pocket Algorithm Architecture
+
+- Developed by Stephen Gallant in 1990, the **Pocket Algorithm** adapts the Perceptron to non-separable datasets.
+- The algorithm runs standard Perceptron updates on misclassified instances while maintaining a separate secondary parameter vector stored in its **pocket** ($\tilde{w}_{\text{pocket}}$).
+- At each step, the algorithm tracks the number of consecutive correct classifications or evaluates overall classification accuracy across the dataset.
+- If the current candidate weight vector achieves higher classification accuracy (or survives longer without errors) than the vector in the pocket, the candidate replaces the pocket contents.
+- When training reaches an allocated epoch limit, execution terminates and returns $\tilde{w}_{\text{pocket}}$, providing the best linear boundary discovered during optimization.
+
+> [!Tip]
+> **The Pocket Algorithm** stabilizes non-separable training: preserving the highest-accuracy parameter configuration in an isolated buffer protects the final model from destructive updates caused by noise or non-separable instances.
+
+## Comparative Analysis of Linear Classifiers
+
+| Characteristic | Standard Perceptron | Pocket Algorithm | Linear Support Vector Machine |
+|---|---|---|---|
+| **Separability Requirement** | Strictly linearly separable | Operates on non-separable data | Operates on non-separable data (via slack $\xi$) |
+| **Termination Guarantee** | Finite steps if separable; oscillates if not | Terminates at pre-set epoch limit | Deterministic convergence (convex quadratic problem) |
+| **Separating Hyperplane** | Any arbitrary separating hyperplane | Best empirical accuracy hyperplane found | Unique **maximum-margin** hyperplane |
+| **Computational Complexity** | $O(N \cdot n)$ per epoch | $O(N \cdot n)$ per epoch plus validation checks | $O(N^2 \cdot n)$ to $O(N^3)$ (quadratic programming) |
+| **Sensitivity to Outliers** | High (triggers boundary shifts) | Moderate (retains top historic state) | Low (governed by support vectors and $C$ parameter) |
+| **Loss Function Formulation** | Perceptron criterion loss: $\sum \max(0, -y w^T x)$ | Non-differentiable $0/1$ misclassification loss | Convex **Hinge loss**: $\max(0, 1 - y w^T x)$ |
+
+> [!Important]
+> **Margin quality** differentiates linear architectures: while the Perceptron accepts any boundary that separates training points, SVMs find the unique boundary that maximizes the clearance margin between classes.
+
+## Key Takeaways
+
+- **The augmented weight vector** integrates the bias scalar into the weight vector by appending a constant feature $x_0 = 1$, turning affine combinations into dot products.
+- **Decision hyperplanes** are mathematically defined by $w^T x + b = 0$, with the weight vector $w$ forming an orthogonal normal vector pointing toward the positive prediction space.
+- **The Perceptron Learning Algorithm** is mistake-driven; it adjusts parameters by adding or subtracting misclassified instance vectors to rotate the decision surface.
+- **The Novikoff Convergence Theorem** proves that the Perceptron converges in at most $(R/\gamma)^2$ updates for any linearly separable dataset, regardless of sample count.
+- **Data non-separability** causes the standard Perceptron to oscillate infinitely, making termination criteria and mistake bounds invalid.
+- **The Pocket Algorithm** manages non-separable distributions by retaining the most accurate historical weight vector in a dedicated buffer while online updates proceed.
+- **Boundary arbitrariness** limits the classical Perceptron, as it stops at the first valid separating hyperplane rather than optimizing the generalization margin between classes.
+
+> [!Tip]
+> The classical Perceptron establishes the foundational paradigm of neural computing: **error-driven geometric adjustments** rotate a decision hyperplane until it isolates target classes, providing finite convergence for separable problems while highlighting the necessity of margin optimization and non-linear extensions.
