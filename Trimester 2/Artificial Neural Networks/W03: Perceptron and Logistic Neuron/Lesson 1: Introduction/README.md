@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: Introduction
 
 ## Foundations of Artificial Neurons: Perceptron and Logistic Models
@@ -67,4 +66,67 @@ Artificial neural networks trace their lineage to computational attempts to simu
 - A dataset exhibits **linear separability** if a single flat hyperplane can partition positive instances from negative instances without error.
 - Elementary Boolean operations such as AND, OR, and NAND are linearly separable, allowing a single Perceptron to model their truth tables successfully.
 - In 1969, Marvin Minsky and Seymour Papert demonstrated that the **exclusive-or (XOR)** function cannot be resolved by a single-layer Perceptron because positive labels occupy diagonally opposite corners of the feature space.
-- Single-laye
+- Single-layer linear thresholds cannot separate non-convex or interleaved class configurations, a fundamental limitation that halted funding and progress during the period known as the first AI winter.
+- Resolving non-linear decision boundaries requires either transforming the original input space into a higher-dimensional space or stacking perceptrons into **multilayer architectures**.
+
+> [!Important]
+> **Linear separability** bounds single-neuron classification: a single Perceptron can only construct flat planar decision boundaries, leaving non-linearly separable problems like XOR unlearnable without layered representations or feature transformations.
+
+## Emergence of the Logistic Neuron
+
+### Limitations of Discontinuous Activations
+
+- The step activation function generates a derivative that is **zero everywhere** except at the origin ($z = 0$), where it is undefined: $\frac{df}{dz} = 0$ for all $z \neq 0$.
+- Because its derivative is zero almost everywhere, the step function cannot convey directional gradient information backward through layers ($\nabla_w \mathcal{L} = 0$).
+- Without meaningful non-zero gradients, the Perceptron cannot be integrated into **gradient descent** optimization or trained within multilayer computational graphs.
+- Hard threshold outputs provide only discrete binary decisions, discarding useful information regarding model *confidence* or classification margins.
+
+### The Sigmoid Activation Function
+
+- The **Logistic Neuron** replaces the discontinuous step threshold with the smooth, S-shaped **sigmoid (logistic) function**:
+  $$\sigma(z) = \frac{1}{1 + e^{-z}} = \frac{1}{1 + e^{-(w^T x + b)}}$$
+- The sigmoid function maps the unbounded real continuum $(-\infty, \infty)$ into a strictly bounded continuous interval $(0, 1)$.
+- As $z \to \infty$, $\sigma(z) \to 1$; as $z \to -\infty$, $\sigma(z) \to 0$; and at the decision boundary $z = 0$, $\sigma(0) = 0.5$.
+- The derivative of the sigmoid function is continuous, smooth, and easily expressed using its own output:
+  $$\frac{d\sigma(z)}{dz} = \sigma(z)(1 - \sigma(z))$$
+
+### Probabilistic Interpretation and Differentiability
+
+- The output of a Logistic Neuron represents a continuous **posterior class probability**: $\hat{y} = P(Y = 1 \mid x; w, b)$.
+- Continuous probabilities enable threshold flexibility: while $0.5$ serves as the default decision boundary, practitioners can shift classification thresholds to balance precision and recall.
+- Differentiability replaces heuristic update rules with calculus-based optimization, allowing models to minimize convex objective functions like **binary cross-entropy loss**.
+- Smooth gradient flow through the logistic function provided the mathematical foundation required to develop the backpropagation algorithm for multilayer networks.
+
+> [!Tip]
+> **The sigmoid activation** provides differentiability and probabilistic output: replacing the step function with a smooth curve provides non-zero gradients for calculus-based optimization while mapping raw activations into valid probabilities.
+
+## Comparative Analysis of Early Neural Units
+
+| Dimension | McCulloch-Pitts Neuron (1943) | Rosenblatt Perceptron (1958) | Logistic Neuron (Sigmoid Unit) |
+|---|---|---|---|
+| **Input Domain** | Binary only ($x_i \in \{0, 1\}$) | Real-valued continuous ($x \in \mathbb{R}^n$) | Real-valued continuous ($x \in \mathbb{R}^n$) |
+| **Synaptic Weights** | Fixed, uniform integer weights | Learnable, real-valued ($w \in \mathbb{R}^n$) | Learnable, real-valued ($w \in \mathbb{R}^n$) |
+| **Bias / Threshold** | Fixed integer threshold ($\theta$) | Learnable real-valued bias ($b \in \mathbb{R}$) | Learnable real-valued bias ($b \in \mathbb{R}$) |
+| **Activation Function** | Step threshold with veto logic | Heaviside step / Signum | Logistic Sigmoid ($\sigma(z)$) |
+| **Output Range** | Discrete binary ($\{0, 1\}$) | Discrete binary ($\{0, 1\}$ or $\{-1, +1\}$) | Continuous interval ($(0, 1)$) |
+| **Output Meaning** | Logical state | Hard class assignment | Posterior class probability |
+| **Differentiability** | Non-differentiable | Non-differentiable (zero gradient a.e.) | Continuously differentiable everywhere |
+| **Learning Paradigm** | None (manual truth-table wiring) | Perceptron Learning Algorithm (error-driven) | Gradient descent via cross-entropy loss |
+| **Boundary Geometry** | Axis-aligned hyperplanes | Arbitrary linear hyperplane ($w^T x + b = 0$) | Soft linear boundary with sigmoid transition |
+
+> [!Important]
+> **Architectural evolution** shifted neural units from rigid logic gates to continuous function approximators: smooth, non-zero derivatives replaced binary steps, enabling gradient descent across complex networks.
+
+## Key Takeaways
+
+- **Biological neurons** inspired artificial networks by demonstrating that networks of simple units accumulating inputs can produce complex computation.
+- **The McCulloch-Pitts neuron** demonstrated that binary threshold units evaluate Boolean logic, though its lack of adjustable weights precluded empirical learning.
+- **The Rosenblatt Perceptron** introduced learnable weights, a real-valued input domain, and an automated learning rule based on classification error.
+- **Perceptron decision boundaries** form flat hyperplanes ($w^T x + b = 0$) that are geometrically orthogonal to the weight vector.
+- **Linear separability** limits single-layer perceptrons, rendering non-linear classification tasks such as XOR insolvable without feature mapping or multiple layers.
+- **Discontinuous step functions** possess zero derivatives almost everywhere, making them incompatible with calculus-based backpropagation.
+- **The Logistic Neuron** introduces the smooth sigmoid activation $\sigma(z)$, producing continuous outputs interpretable as class probabilities.
+- **Continuous differentiability** in the Logistic Neuron permits gradient computation, establishing the link between single-neuron models and deep learning optimization.
+
+> [!Tip]
+> The defining conceptual transition in early neural network history: replacing the **discontinuous step threshold** of the Perceptron with the **differentiable sigmoid curve** of the Logistic Neuron transformed artificial neurons from heuristic pattern classifiers into calculus-driven statistical learners.
