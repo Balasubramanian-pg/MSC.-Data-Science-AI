@@ -1,4 +1,3 @@
-# Migration in progress
 # **Lesson 1: Cloud Evolution & Fundamentals**
 
 Cloud computing represents the convergence of multiple decades of evolutionary breakthroughs across distributed systems, hardware virtualization, and utility metering. From centralized mainframe time-sharing systems to modern dynamic hyperscale platforms, computing paradigms shifted from localized physical hardware ownership to elastic, software-defined execution environments. Understanding this evolutionary lineage and its underlying virtualization primitives provides the technical context required to engineer resilient, high-throughput cloud architectures.
@@ -120,4 +119,77 @@ sequenceDiagram
 
 ### Virtualization Execution Models
 
-- 
+- **Full Virtualization**: The guest operating system remains unaware that it executes within an abstracted environment. The hypervisor binary-translates or hardware-intercepts sensitive non-virtualizable CPU instructions on the fly without modifying the guest kernel.
+- **Paravirtualization**: The guest operating system kernel is explicitly modified to execute software hypercalls instead of raw privileged hardware instructions, reducing translation overhead at the cost of guest portability.
+- **Hardware-Assisted Virtualization**: Physical CPUs integrate silicon-level instruction set extensions (such as Intel VT-x or AMD-V) that expose distinct operational states (Root and Non-Root modes), allowing unmodified guest operating systems to execute ring-0 privileged operations safely without emulation penalties.
+
+> [!Tip]
+> **Production hypervisor selection**: Deploy Type-1 bare-metal hypervisors utilizing hardware-assisted virtualization for low-latency production workloads to avoid the scheduling latency and memory bloat inherent to Type-2 host operating system layers.
+
+## **Multi-Tenancy and Isolation Primitives**
+
+Cloud scalability depends on *multi-tenancy*, an architectural design where a single set of physical resources simultaneously supports multiple logically segregated tenant environments without data leakage or performance interference.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor TenantA as Tenant A (Production Database)
+    actor TenantB as Tenant B (Batch Data Pipeline)
+    participant Scheduler as Compute CPU / NUMA Scheduler
+    participant EPT as Second-Level Address Translation (SLAT)
+    participant SDN as SDN Virtual Routing (VXLAN)
+
+    TenantA->>Scheduler: High-priority transactional CPU cycle
+    TenantB->>Scheduler: Multi-threaded batch workload request
+    Scheduler->>Scheduler: Enforce CPU quotas and prevent noisy-neighbor starvation
+    TenantA->>EPT: Access Guest Physical Address (GPA)
+    EPT->>EPT: Translate GPA to Host Physical Address (HPA) via page tables
+    Note over EPT: Hard memory boundary prevents<br/>cross-tenant memory traversal
+    TenantB->>SDN: Transmit inter-instance network packet
+    SDN->>SDN: Encapsulate packet within tenant-specific VXLAN Network Identifier (VNI)
+    Note over SDN: Network isolation prevents cross-tenant packet sniffing
+```
+
+### Compute Isolation
+
+- **Virtual CPU (vCPU) Scheduling**: Hypervisors represent virtual processors as software threads dispatched onto physical CPU execution threads.
+- Non-Uniform Memory Access (**NUMA**) affinity pinning binds specific vCPU clusters to co-located physical memory nodes, eliminating cross-socket bus contention.
+- Hard real-time quotas and rate limiters constrain CPU usage, preventing misbehaving tenant workloads from consuming disproportionate CPU cycles (the *noisy neighbor* problem).
+
+### Memory Isolation
+
+- Hypervisors manage isolated address spaces using **Second-Level Address Translation (SLAT)**, known as Extended Page Tables (EPT) on Intel architectures and Nested Page Tables (NPT) on AMD architectures.
+- The hardware translates Guest Virtual Addresses (GVA) to Guest Physical Addresses (GPA), and subsequently translates GPA to Host Physical Addresses (HPA).
+- A guest operating system can access only the physical memory pages mapped explicitly to its tenant domain, preventing arbitrary cross-VM memory reads and writes.
+
+### Network and Storage Isolation
+
+- **Software-Defined Overlays**: Tenant network traffic is isolated using network encapsulation technologies like Virtual Extensible LAN (**VXLAN**) and Generic Network Virtualization Encapsulation (**GENEVE**). Traffic is tagged with a unique 24-bit Virtual Network Identifier (VNI), maintaining complete layer-2 and layer-3 separation over shared physical switches.
+- **Storage Multi-Tenancy**: Distributed block storage fabrics enforce strict multi-tenant bandwidth throttling using token-bucket or leaky-bucket algorithms, guaranteeing provisioned Input/Output Operations Per Second (**IOPS**) and preventing cache saturation.
+
+> [!Important]
+> **Noisy neighbor mitigation**: Multi-tenant systems enforce strict quality of service (QoS) rate limits across compute, network bandwidth, and storage IOPS to ensure that resource exhaustion in one tenant container does not degrade adjacent workloads.
+
+## **Comparative Matrix of Computing Paradigms**
+
+| Dimension | Mainframe Architecture | Client-Server Architecture | Grid Computing | Modern Cloud Computing |
+|---|---|---|---|---|
+| **Resource Abstraction** | Physical machine partitioning | Discrete physical host nodes | Loosely coupled heterogeneous middleware | Elastic, software-defined virtualized instances |
+| **Compute Location** | Centrally consolidated | Partially localized client processing | Globally dispersed participating nodes | Regionally clustered hyper-scale data centers |
+| **Scaling Mechanism** | Vertical scale-up (hardware expansion) | Vertical scale-up and basic load balancing | Coarse batch scale-out across institutions | Dynamic, automated horizontal auto-scaling |
+| **Provisioning Velocity** | Weeks (manual hardware reconfiguration) | Days to weeks (server procurement) | Variable (subject to cluster queue policies) | Seconds to minutes (API-driven automation) |
+| **Isolation Mechanism** | Hardware logical partitions (LPARs) | Operating system user profiles | Software sandboxes and access certificates | Hardware-assisted hypervisors and SDN overlays |
+| **Failure Recovery** | High-availability hardware redundancy | Manual failover or secondary server pairs | Checkpoint restarts and task retries | Automated instance migration, self-healing orchestration |
+| **Financial Accounting** | Substantial capital investment (CapEx) | Capital hardware and software licensing | Institutional grants and shared pooling | Fine-grained, metered operational cost (OpEx) |
+
+## **Key Takeaways**
+
+- **Cloud computing combines proven distributed concepts**: Modern platforms synthesize time-shared CPU slicing, grid resource aggregation, and hypervisor-driven isolation under an automated self-service API.
+- **Provisioning operates via decoupled control loops**: Provisioning a cloud instance triggers coordinated, automated steps across authentication engines, fabric orchestrators, hypervisors, and software-defined network layers.
+- **Type-1 hypervisors underpin enterprise scale**: Bare-metal virtualization architectures eliminate host operating system overhead, relying on CPU hardware extensions to execute privileged workloads with minimal latency.
+- **Hardware-assisted virtualization secures performance**: Modern CPUs use root and non-root execution modes alongside nested page tables to run guest kernels safely at native speeds.
+- **Multi-tenancy relies on multi-layer isolation**: Maintaining workload isolation across shared physical infrastructure requires coordinated controls spanning vCPU scheduling, nested memory translation, VXLAN network tagging, and storage IOPS rate limiting.
+- **Cloud models redefine operational economics**: Modern infrastructures replace rigid hardware procurement schedules with automated, elastic utility provisioning that converts capital expenditures into direct operational costs.
+
+> [!Important]
+> **The hypervisor functions as a distributed kernel**: Cloud platforms treat physical data centers as unified computers, using the hypervisor and control plane orchestrators to manage compute, storage, and networking as pooled, software-defined primitives.
