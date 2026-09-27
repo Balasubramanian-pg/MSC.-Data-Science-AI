@@ -1,1 +1,1 @@
-# Migration initiated
+# Migration in progress
