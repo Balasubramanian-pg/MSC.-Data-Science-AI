@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 4: Calibration and Confidence Evaluation
 
 Probability calibration evaluates how accurately a neural network estimates the true likelihood of its predictions. While modern deep architectures consistently outperform shallow models on classification accuracy, they systematically produce overconfident probability distributions. Aligning raw output logits with empirical frequencies ensures that confidence scores serve as reliable measures of predictive uncertainty in high-consequence deployment environments.
@@ -66,4 +65,67 @@ Probability calibration evaluates how accurately a neural network estimates the 
 - When $T < 1$, the distribution sharpens, elevating confidence estimates.
 - Temperature scaling preserves the *monotonicity* of output logits, ensuring that class rankings remain unchanged:
   $$\arg\max_c (z_{ic} / T) = \arg\max_c z_{ic}$$
-- The transformation preserves original classification accuracy and multi-class AUROC while reducing 
+- The transformation preserves original classification accuracy and multi-class AUROC while reducing ECE.
+
+### Vector Scaling, Matrix Scaling, and Non-Parametric Alternatives
+
+- **Vector Scaling** applies a linear transformation parameterized by a diagonal weight matrix $W = \text{diag}(w_1, \dots, w_C)$ and a bias vector $b \in \mathbb{R}^C$:
+  $$\hat{p}_{ic} = \text{softmax}(W z_i + b)$$
+- **Matrix Scaling** unconstrains $W$ to a full $(C \times C)$ matrix, introducing $C^2 + C$ parameters. The quadratic parameter growth increases the risk of overfitting small validation sets.
+- **Platt Scaling** fits a univariate logistic regression model to scalar output logits in binary classification tasks:
+  $$\hat{p}_i = \sigma(w z_i + b)$$
+- **Isotonic Regression** fits a non-parametric, piecewise constant monotonic step function to map uncalibrated probabilities to empirical frequencies. The method requires extensive validation data to avoid bin quantization artifacts.
+
+> [!Tip]
+> **Temperature scaling efficiency**: choose single-parameter temperature scaling over matrix scaling for deep models, because minimal parameter overhead prevents validation overfitting while completely preserving raw classification accuracy.
+
+## Train-Time Regularization and Structural Calibration
+
+### Label Smoothing and Logit Penalty
+
+- Standard one-hot ground-truth encodings force the network to produce infinite logit separations, driving probability vectors to extremes.
+- **Label smoothing** replaces hard binary targets $y_c \in \{0, 1\}$ with a smoothed distribution parameterized by smoothing factor $\alpha \in (0, 1)$:
+  $$y_c^{\text{smooth}} = (1 - \alpha) y_c + \frac{\alpha}{C}$$
+  where $C$ denotes the total number of target classes.
+- Soft targets penalize overconfident logit extremes during standard backpropagation, keeping penultimate activations within bounded ranges and yielding models that are naturally calibrated upon convergence.
+- **Focal Loss** adds a modulating factor $(1 - p_t)^\gamma$ to standard cross-entropy loss:
+  $$\mathcal{L}_{\text{Focal}} = - (1 - p_t)^\gamma \log(p_t)$$
+  Downweighting well-classified easy examples prevents confident background classes from overwhelming gradient updates, preserving calibrated probabilities along class boundaries.
+
+### Deep Ensembles and Uncertainty Decomposition
+
+- **Deep Ensembles** train multiple identical architectures initialized with distinct random weight seeds across non-convex loss surfaces.
+- Ensembling averages predictions across disparate local minima, capturing *epistemic uncertainty* (model parameter ambiguity) alongside *aleatoric uncertainty* (inherent data noise):
+  $$\bar{p}_c = \frac{1}{K} \sum_{k=1}^K \hat{p}_{c}^{(k)}$$
+- Averaging probability distributions across ensemble members naturally pulls overconfident peripheral predictions inward, producing calibration profiles that surpass single-model post-hoc methods.
+
+> [!Important]
+> **Label smoothing trade-off**: incorporating label smoothing during training improves probability calibration and ECE, but can degrade post-hoc temperature scaling flexibility if downstream systems rely on unconstrained logit representations.
+
+## Comparative Analysis of Calibration Methodologies
+
+| Calibration Approach | Execution Phase | Parameter Complexity | Retains Classification Accuracy? | Prevents Validation Overfitting? | Implementation Complexity |
+|---|---|---|---|---|---|
+| **Temperature Scaling** | Post-Hoc | Minimal ($1$ scalar parameter) | Yes (Strictly preserved) | High | Minimal (Single scalar optimization) |
+| **Platt Scaling** | Post-Hoc | Low ($2$ parameters for binary) | Yes (Binary tasks) | High | Minimal (Logistic regression fit) |
+| **Matrix Scaling** | Post-Hoc | High ($C^2 + C$ parameters) | No (Can alter top rank) | Low (Prone to overfitting) | Moderate (Matrix optimization) |
+| **Isotonic Regression** | Post-Hoc | Non-parametric (Step function) | No (Can produce flat ties) | Moderate (Requires large $N$) | Moderate (Requires monotonic fitting) |
+| **Label Smoothing** | Training Time | Zero (Hyperparameter $\alpha$) | Altered during optimization | High | Minimal (Loss function alteration) |
+| **Focal Loss** | Training Time | Zero (Hyperparameter $\gamma$) | Altered during optimization | High | Minimal (Loss function alteration) |
+| **Deep Ensembles** | Training + Inference | Multiplied ($K \times \text{Params}$) | Altered (Generally improves) | Very High | High ($K$-fold computational overhead) |
+
+> [!Tip]
+> **Deployment workflow**: apply label smoothing during training for baseline probability stability, then fine-tune with temperature scaling on holdout validation data to minimize residual ECE before production serving.
+
+## Key Takeaways
+
+- **Calibration measures probability truthfulness**: a calibrated network ensures that a predicted confidence of $p$ reflects an empirical real-world success rate of $p$.
+- **Modern deep networks are systematically overconfident**: structural factors such as depth, width, and normalization layers cause networks to minimize cross-entropy loss by inflating logits long after accuracy plateaus.
+- **Reliability diagrams identify calibration gaps**: binning confidences against empirical accuracy plots reveals whether an architecture suffers from overconfidence or underconfidence.
+- **Expected Calibration Error quantifies miscalibration**: ECE calculates the weighted average difference between predicted confidence and empirical accuracy across all defined bins.
+- **Temperature scaling preserves class ranking**: scaling logits by a learned validation temperature $T > 0$ softens overconfident distributions while keeping original classification accuracy and AUROC intact.
+- **Label smoothing regularizes logit extremes**: distributing a fraction $\alpha$ of target mass across incorrect classes prevents backpropagation from driving logits to extreme margins.
+- **Deep ensembles improve calibration robustly**: combining outputs from multiple random initializations captures epistemic uncertainty and mitigates overconfidence more effectively than individual models.
+
+> [!Important]
+> **Probabilistic integrity in production**: evaluating neural networks requires measuring calibration error alongside discriminative metrics, ensuring models produce trustworthy confidence bounds that allow downstream systems to trigger human escalation or automated fallbacks.
