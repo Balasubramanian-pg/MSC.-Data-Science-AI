@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 3: Spark Streaming and Structured Streaming
 
 Spark Streaming and Structured Streaming:
@@ -28,4 +27,31 @@ Output Modes in Structured Streaming:
 
 Execution Triggers and Latency Controls:
 
-- Default micro-batching: Executes a new micro-batch as soon as the previous micro-batch finishes pro
+- Default micro-batching: Executes a new micro-batch as soon as the previous micro-batch finishes processing available data.
+- Fixed interval micro-batches: Uses processing time triggers to fire micro-batches at explicit intervals, such as every thirty seconds, reducing continuous compute pressure.
+- AvailableNow trigger: Processes all currently available data across multiple micro-batches and then shuts down the Spark application, providing cost-effective micro-batching for scheduled batch-like workloads.
+- Continuous processing engine: An alternative execution runtime offering sub-millisecond latencies by processing records continuously rather than in micro-batches, supporting at-least-once delivery guarantees for limited query operations.
+
+Target Sinks and Downstream Persistence:
+
+- Kafka sink: Publishes transformed streaming records back into external Kafka topics for consumption by downstream systems.
+- File sink: Writes partition files to storage directories using formats like Parquet, requiring durable checkpoint locations to track committed files.
+- Foreach and ForeachBatch: Allows developers to execute arbitrary custom output logic, such as writing streaming micro-batch DataFrames to legacy relational databases, NoSQL stores, or third-party web services.
+- Delta Lake sink: Provides native integration for streaming writes with ACID transactions, schema enforcement, and built-in compaction.
+
+Fault Tolerance and State Management:
+
+- Checkpoint directory: The critical operational component for stream recovery. It records the read-ahead offset log and internal operator state into durable, distributed storage like Amazon S3 or HDFS.
+- Automatic offset recovery: Upon restarting after a system crash, the query reads the checkpoint directory to determine exact offsets already processed, resuming ingestion without missing records.
+- In-memory state store: Maintains intermediate state data across micro-batches for windowed aggregations and stream-to-stream joins.
+- RocksDB state provider: Replaces in-memory state stores for large-scale production applications with massive state sizes, preventing executor garbage collection pauses and out-of-memory errors.
+- Important: Achieving end-to-end exactly-once processing guarantees requires combining a replayable source like Kafka, deterministic transformations, and an idempotent or transactional sink.
+
+Key Takeaways:
+
+- Structured Streaming unifies batch and streaming APIs by treating incoming data streams as append-only unbounded tables.
+- It replaces legacy DStreams with the Catalyst query optimizer and native DataFrame operations.
+- Output modes dictate sink behavior: append mode outputs new records, complete mode outputs the full state table, and update mode outputs modified rows.
+- Triggers control processing intervals, ranging from micro-batch intervals to low-latency continuous execution.
+- Checkpoint directories preserve offsets and operator state, enabling automatic crash recovery and ensuring fault tolerance.
+- End-to-end exactly-once processing relies on replayable data sources, deterministic processing logic, and idempotent data sinks.
