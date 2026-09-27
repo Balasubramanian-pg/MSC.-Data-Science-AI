@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 2: Docker Fundamentals
 
 Docker is a containerization platform that packages an application together with its dependencies into a standardized unit called a container. It provides a consistent application runtime across development, testing, CI/CD, and production environments. This lesson covers Docker architecture, images, containers, Dockerfiles, networking, volumes, Docker Compose, and registry integration.
@@ -218,4 +217,220 @@ flowchart TD
 *Definition*: Docker Compose defines and manages multi-container applications. It uses a single YAML file called `compose.yml` to specify configurations for all containers, their dependencies, environment variables, volumes, and networks.
 
 - Docker Compose is used to define and manage multi-container applications.
-- 
+- A Compose configuration can describe services such as the application, database, Redis, message broker, and reverse proxy.
+- The architecture and configuration of a multi-container application are defined declaratively.
+- Docker Compose is primarily used for local development and testing environments.
+- For production orchestration at scale, Kubernetes or AWS ECS/EKS is used instead.
+
+### Why Use Docker Compose
+
+- Running multiple `docker run` commands with different configurations is error-prone and time-consuming.
+- Applications often rely on each other. Manually starting containers in a specific order and managing network connections becomes difficult as the stack expands.
+- Each application needs its own `docker run` command, making it difficult to scale individual services.
+- Persisting data for each application requires separate volume mounts or configurations within each `docker run` command.
+- Setting environment variables for each application through separate `docker run` commands is tedious and error-prone.
+
+```yaml
+# Example compose.yml
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+  db:
+    image: postgres:14
+    environment:
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - db-data:/var/lib/postgresql/data
+  cache:
+    image: redis:7
+volumes:
+  db-data:
+```
+
+- With Docker Compose, you define your entire multi-container application in a single YAML file.
+- You can run containers in a specific order and manage network connections easily.
+- You can scale individual services up or down within the multi-container setup.
+- You can implement persistent volumes with ease.
+- It is easy to set environment variables once in the Docker Compose file.
+
+> [!Important]
+> **Docker Compose is for local development, not production orchestration**: Use it to define and test multi-container applications on a single host. For production, migrate to Amazon ECS, Amazon EKS, or another orchestrator that supports clustering, high availability, and horizontal scaling.
+
+## Docker Registry
+
+*Definition*: A Docker registry is the storage-and-distribution layer for container images. Docker Hub is the public default, but production environments typically run a self-hosted registry or a cloud provider's registry to keep proprietary images off the internet and under access control.
+
+- Docker Hub is a public registry that anyone can use.
+- Amazon Elastic Container Registry (ECR) is a fully managed private registry for storing, managing, and deploying container images.
+- Private registries like ECR cater to enterprise applications and provide access control, encryption, and image scanning.
+- Images are stored in registries and pulled by Docker hosts when running containers.
+
+### Popular Registries
+
+| Registry | Type | Use Case |
+|---|---|---|
+| Docker Hub | Public | Open-source images, public projects |
+| Amazon ECR | Private | AWS production workloads |
+| Google Artifact Registry | Private | GCP workloads |
+| Azure Container Registry | Private | Azure workloads |
+| Harbor | Self-hosted | On-premises, air-gapped environments |
+
+- Docker images are composed of layers, which are intermediate build stages of the image. Each line in a Dockerfile results in the creation of a new layer.
+- Use smaller base images to reduce the size of the final image and speed up push and pull operations.
+- Enable image scanning in the registry to detect vulnerabilities before deployment.
+
+> [!Tip]
+> **Use Amazon ECR for AWS container workloads**: ECR integrates natively with ECS, EKS, and Fargate. It supports image scanning, cross-Region replication, and lifecycle policies to manage image retention.
+
+## Docker Security Best Practices
+
+Security for Docker containers comes down to shrinking what you ship, dropping privileges you do not need, and scanning every image before it runs. A container is not a security boundary by default. It shares the host kernel and, unless configured otherwise, runs as root.
+
+### Key Security Controls
+
+| Control | Description | Implementation |
+|---|---|---|
+| Minimal Base Image | Reduce attack surface by removing unnecessary packages | Use Alpine, distroless, or slim variants |
+| Non-Root User | Prevent container processes from running as root | Add USER instruction in Dockerfile |
+| Image Scanning | Detect known CVEs before deployment | Integrate Trivy, Clair, or ECR scanning in CI/CD |
+| Secrets Management | Keep secrets out of image layers | Use BuildKit secret mounts, environment variables, or secrets manager |
+| Read-Only Filesystem | Prevent writes to the container filesystem | Mount root filesystem as read-only |
+| Capability Dropping | Remove unnecessary Linux capabilities | Use --cap-drop in Docker run or Kubernetes security context |
+| seccomp Profiles | Restrict system calls available to the container | Apply seccomp profiles |
+| AppArmor/SELinux | Enforce mandatory access controls | Enable AppArmor or SELinux profiles |
+
+- Never run containers as root. By default, a container process runs as UID 0. If an attacker achieves code execution and exploits a kernel flaw to escape, they land on the host as root.
+- Keep secrets out of image layers. Every COPY and RUN creates a layer, and layers are immutable and inspectable. Use BuildKit secret mounts for build-time credentials and inject runtime secrets through environment variables or a secrets manager.
+- Scan images for vulnerabilities. You cannot fix what you cannot see. Scan every image for known CVEs in its OS packages and application dependencies, and do it in CI so a vulnerable image never reaches a registry.
+- Use a .dockerignore file to exclude .git, .env, and local credential files so they never enter the build context.
+
+### Container Hardening Checklist
+
+- Use minimal base images (Alpine, distroless, slim variants).
+- Create and switch to an unprivileged user in the Dockerfile.
+- Run containers with a read-only root filesystem where possible.
+- Drop unnecessary Linux capabilities.
+- Apply seccomp profiles to restrict system calls.
+- Use AppArmor or SELinux for mandatory access controls.
+- Keep secrets out of image layers.
+- Scan images for vulnerabilities in CI/CD.
+- Use a .dockerignore file to exclude sensitive files from the build context.
+- Sign and verify images with Docker Content Trust.
+
+> [!Important]
+> **Treat container isolation as one layer among several**: Non-root users, dropped capabilities, seccomp profiles, and read-only filesystems work together to reduce risk. No single control is sufficient. For strong multi-tenancy, use VMs or dedicated hosts.
+
+## Docker in CI/CD
+
+Docker is widely used in CI/CD pipelines. Container images can be built during CI, scanned for vulnerabilities, pushed to a registry, and deployed to production.
+
+```mermaid
+flowchart LR
+    A[Source Code] --> B[Build]
+    B --> C[Test]
+    C --> D[Docker Image]
+    D --> E[Security Scan]
+    E --> F[Container Registry]
+    F --> G[Deployment]
+```
+
+- Source code is committed to a repository.
+- The CI pipeline builds the Docker image from the Dockerfile.
+- Tests run against the built image.
+- The image is scanned for vulnerabilities.
+- The scanned image is pushed to a container registry.
+- The image is deployed to the target environment (ECS, EKS, Fargate).
+
+> [!Tip]
+> **Fail the pipeline on high-severity vulnerabilities**: Integrate image scanning with a quality gate. Use `trivy image --severity HIGH,CRITICAL --exit-code 1` to fail the pipeline when high or critical issues appear. This turns the scan into a gate rather than a report nobody reads.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Define Docker and explain its role in containerization.
+2. Describe the components of Docker's client-server architecture.
+3. Explain how Docker images and layers work.
+4. Describe the purpose of a Dockerfile and list common instructions.
+5. Explain how multi-stage builds reduce image size.
+6. Compare Docker bridge, host, and overlay networks.
+7. Explain the role of Docker volumes and how they differ from bind mounts.
+8. Describe the purpose of Docker Compose.
+9. Compare Docker Hub and Amazon ECR.
+10. List five Docker security best practices.
+11. Describe how Docker fits into a CI/CD pipeline.
+12. Explain why containers are not a security boundary by default.
+
+### Scenario Questions
+
+**Scenario 1: Building a Multi-Container Application**
+A development team needs to run a web application with a database and a Redis cache on a single host for local development. How should they manage these containers?
+
+- Use Docker Compose with a `compose.yml` file.
+- Define services for the web app, database, and cache.
+- Use a custom bridge network so containers can communicate by name.
+- Use volumes for database persistence.
+- Use environment variables for configuration.
+
+**Scenario 2: Reducing Image Size**
+A Docker image for a Java application is 1.2 GB. How can the team reduce it?
+
+- Use multi-stage builds: compile in one stage, copy the JAR to a minimal runtime image.
+- Use a smaller base image such as `eclipse-temurin:21-jre-alpine` or distroless.
+- Exclude build tools and source code from the final image.
+- Use a `.dockerignore` file to exclude unnecessary files from the build context.
+
+**Scenario 3: Securing a Container Deployment**
+A security team requires containers to run with least privilege. What controls should be applied?
+
+- Run containers as a non-root user with the USER instruction.
+- Drop unnecessary Linux capabilities.
+- Apply seccomp profiles to restrict system calls.
+- Mount the root filesystem as read-only where possible.
+- Scan images for vulnerabilities before deployment.
+- Keep secrets out of image layers using BuildKit secret mounts.
+
+**Scenario 4: Container Registry for Production**
+A company needs a private registry for production container images with scanning and access control. What should they use?
+
+- Use Amazon ECR for integration with ECS, EKS, and Fargate.
+- Enable image scanning on push.
+- Use IAM policies for access control.
+- Configure lifecycle policies to manage image retention.
+- Use cross-Region replication for disaster recovery.
+
+```mermaid
+flowchart TD
+    A[Docker Decision] --> B{Multi-Container?}
+    B -->|Yes| C[Docker Compose]
+    B -->|No| D[docker run]
+    A --> E{Image Size?}
+    E -->|Large| F[Multi-Stage Builds + Minimal Base]
+    E -->|Small| G[Standard Build]
+    A --> H{Security?}
+    H -->|Production| I[Non-Root + Scanning + Hardening]
+    H -->|Development| J[Basic Controls]
+    A --> K{Registry?}
+    K -->|Public| L[Docker Hub]
+    K -->|Private| M[Amazon ECR]
+```
+
+## Key Takeaways
+
+- Docker is a containerization platform that packages applications with their dependencies into standardized containers.
+- Docker uses a client-server architecture with a client, daemon, and registry.
+- Docker images are immutable packages built in layers. Containers are running instances of images.
+- Dockerfiles define how images are built. Multi-stage builds reduce image size and attack surface.
+- Docker networking includes bridge (default, single-host), host (share host network), and overlay (multi-host).
+- Docker volumes provide persistent storage outside the container's writable layer. Bind mounts map host directories into containers.
+- Docker Compose defines and manages multi-container applications in a single YAML file for local development.
+- Docker Hub is the public default registry. Amazon ECR is a fully managed private registry for AWS workloads.
+- Docker security best practices include minimal base images, non-root users, image scanning, secret management, and capability dropping.
+- Containers are not a security boundary by default. Use additional controls to harden workloads.
+- Docker is widely used in CI/CD pipelines for building, testing, scanning, and deploying containerized applications.
+- Choose the simplest approach that meets your needs: Docker Compose for local development, ECS/EKS for production orchestration.
+
+> [!Important]
+> **Docker is the foundation, not the destination**: Docker teaches you how containers work, but production orchestration requires Kubernetes or Amazon ECS/EKS. Master Docker fundamentals first, then apply them to managed container services. The Dockerfile, image, and container concepts transfer directly to every container platform.
