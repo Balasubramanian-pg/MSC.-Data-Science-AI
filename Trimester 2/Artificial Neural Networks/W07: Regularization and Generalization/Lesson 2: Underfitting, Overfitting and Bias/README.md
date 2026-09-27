@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 2: Underfitting, Overfitting and Bias
 
 ## Underfitting, Overfitting, and the Bias-Variance Tradeoff
@@ -81,4 +80,79 @@ The central objective of supervised learning is ensuring that an artificial neur
 ### The Interpolation Threshold and Variance Explosion
 
 - In modern deep architectures, the parameter count $P$ often matches or exceeds the number of training samples $N$.
-- The boundary where $P = N$ represents the *
+- The boundary where $P = N$ represents the **interpolation threshold**: the point where model capacity is just sufficient to achieve zero training loss ($R_{\text{emp}} = 0$).
+- At the interpolation threshold, model variance spikes to near infinity: parameters are forced into extreme, unstable configurations to force the continuous boundary through every single training point and noisy outlier.
+- Classical theory predicted that increasing parameters further into the over-parameterized regime ($P > N$) would lead to catastrophic overfitting.
+
+### The Over-Parameterized Regime and Benign Overfitting
+
+- Mikhail Belkin et al. (2019) demonstrated that over-parameterized networks challenge classical theory through the **Double Descent phenomenon**.
+- Beyond the interpolation threshold ($P \gg N$), validation risk drops again, forming a second descent toward low generalization error:
+  - **Under-Parameterized Regime ($P < N$):** Classical U-curve applies; bias decreases, variance increases toward the threshold.
+  - **Interpolation Peak ($P \approx N$):** Peak variance occurs; the model barely fits the data, producing severe boundary oscillation.
+  - **Over-Parameterized Regime ($P \gg N$):** Multiple global minima exist that achieve zero training error; optimization algorithms (like SGD) exhibit **implicit inductive bias**, selecting the minimum-norm solution that produces the smoothest possible interpolating function (**benign overfitting**).
+
+> [!Important]
+> **Double descent reveals a second generalization regime**: while models experience peak variance at the interpolation threshold ($P \approx N$), scaling parameters far beyond sample count allows implicit optimization biases to select smooth, generalizing solutions.
+
+## Diagnostic Workflows and Remediation Playbooks
+
+### Learning Curve Diagnostic Profiles
+
+- Diagnosing whether a network suffers from underfitting or overfitting requires plotting **training loss** and **validation loss** over training epochs:
+- **High Bias (Underfitting) Profile:**
+  - Training loss remains high and plateaus above acceptable performance thresholds.
+  - Validation loss tracks training loss closely, exhibiting virtually no generalization gap ($\Delta_{\text{gen}} \approx 0$).
+  - Adding more training data yields no performance improvement because the model cannot represent the underlying structure.
+- **High Variance (Overfitting) Profile:**
+  - Training loss decreases steadily toward zero.
+  - Validation loss declines initially, reaches an inflection trough, and begins ascending steadily.
+  - The generalization gap widens continuously as training progresses.
+
+### Engineering Protocols for High Bias (Underfitting)
+
+- When an architecture exhibits high bias, capacity must be expanded and constraints relaxed:
+  1. **Increase Network Depth and Width:** Add layers or expand hidden units per layer to increase expressive representational capacity.
+  2. **Reduce Regularization Constraints:** Decrease explicit $L_2$ weight decay penalties ($\lambda$), reduce dropout rates, or remove restrictive norm constraints.
+  3. **Engineer Advanced Input Features:** Project inputs into higher-dimensional spaces using non-linear feature crosses or embeddings.
+  4. **Extend Training Duration:** Train for additional epochs or adjust learning rate schedules to ensure the optimizer escapes initial plateaus.
+  5. **Switch Architectural Families:** Transition from overly simple linear models or shallow MLPs to architectures designed for spatial or sequential structure (such as CNNs or Transformers).
+
+### Engineering Protocols for High Variance (Overfitting)
+
+- When an architecture exhibits high variance, constraints must be introduced to regularize capacity:
+  1. **Acquire Additional Training Data:** Increase dataset volume to dilute the relative influence of individual sample noise.
+  2. **Deploy Data Augmentation:** Synthesize label-preserving variations of training inputs (e.g., flips, crops, Mixup) to expand empirical support.
+  3. **Inject Stochastic Regularization:** Apply **Inverted Dropout** ($p \in [0.2, 0.5]$) to hidden layers to break feature co-adaptations.
+  4. **Apply Explicit Weight Decay:** Increase the $L_2$ regularization coefficient ($\lambda$) in AdamW to shrink parameter magnitudes along low-curvature directions.
+  5. **Implement Early Stopping:** Halt optimization at the minimum of the validation loss curve, preventing the optimizer from memorizing training noise.
+  6. **Apply Label Smoothing:** Soften hard one-hot target vectors to prevent output logits from growing to extreme, overconfident magnitudes.
+
+> [!Tip]
+> **Match the intervention to the failure mode**: never apply dropout, weight decay, or data collection to an underfitting model; high bias requires expanding architecture capacity, whereas high variance requires regularizing capacity.
+
+## Diagnostic and Remediation Matrix
+
+| Diagnostic State | Training Loss | Validation Loss | Generalization Gap ($\Delta_{\text{gen}}$) | Dominant Statistical Term | Primary Structural Cause | Priority Remediation Strategy |
+|---|---|---|---|---|---|---|
+| **Underfitting (High Bias)** | High (unacceptable) | High (unacceptable) | Negligible ($\approx 0$) | $\text{Bias}^2$ | Model capacity too low; excessive regularization | Increase depth/width; reduce regularization; train longer |
+| **Optimal Fit (Balanced)** | Low (converged) | Low (stable) | Small and bounded | Balanced Tradeoff | Capacity matches underlying data manifold | Maintain hyperparameters; preserve early stopping checkpoint |
+| **Overfitting (High Variance)**| Near zero | High (diverging) | Large and expanding | $\text{Variance}$ | Model memorizing sample noise; unconstrained capacity | Add Dropout; increase $L_2$ weight decay; deploy Data Augmentation |
+| **Interpolation Peak** | Exactly zero | Severe spike / Maximum | Extreme | $\text{Variance}$ Explosion | $P \approx N$; parameters forced to interpolate outliers | Either reduce parameters ($P \ll N$) or heavily over-parameterize ($P \gg N$) |
+
+> [!Tip]
+> **Use the generalization gap as a compass**: a wide, expanding gap indicates high variance requiring regularization, while a narrow gap paired with high loss indicates high bias requiring expanded model capacity.
+
+## Key Takeaways
+
+- **Underfitting reflects high bias**, occurring when an artificial neural network lacks the capacity or training duration required to capture underlying data relationships.
+- **Overfitting reflects high variance**, occurring when excessive capacity allows parameters to memorize sample-specific noise and outliers.
+- **The bias-variance decomposition** mathematically partitions expected prediction error into squared bias, parameter variance, and irreducible data noise.
+- **The classical bias-variance tradeoff** dictates that increasing capacity decreases bias while increasing variance, forming a U-shaped validation error curve.
+- **The Double Descent phenomenon** demonstrates that scaling parameters far beyond the interpolation threshold ($P \gg N$) produces a second descent in test error driven by implicit regularization.
+- **The interpolation threshold ($P \approx N$)** marks the point of maximum variance where models are forced into extreme parameter configurations to fit noisy training points.
+- **High bias is remediated by expanding capacity**: adding layers, increasing hidden neurons, decreasing regularization, and engineering features.
+- **High variance is remediated by constraining capacity**: applying dropout, increasing weight decay, expanding data through augmentation, and using early stopping.
+
+> [!Tip]
+> The foundational principle of model capacity: **diagnose error composition before applying regularization**; adding regularization penalties to an underfitting model worsens performance, while scaling capacity without regularization on small datasets triggers severe overfitting.
