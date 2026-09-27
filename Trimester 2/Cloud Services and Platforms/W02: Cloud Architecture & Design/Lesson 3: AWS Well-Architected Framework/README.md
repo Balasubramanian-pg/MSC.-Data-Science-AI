@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 3: AWS Well-Architected Framework
 Designing for Reliability and Performance
 
@@ -61,4 +60,74 @@ Elastic Scalability:
 - Target tracking scaling sets a target metric, such as average CPU at 65 percent. The controller adds or removes instances to keep the metric stable.
 - Step scaling uses graduated responses. Add two instances if CPU is 70 to 80 percent. Add six instances if CPU is above 85 percent.
 - Scheduled and predictive scaling use historical patterns or schedules. They launch capacity before known events like flash sales or market open.
-- Cooldown periods suppress more scaling events for a set time, su
+- Cooldown periods suppress more scaling events for a set time, such as 300 seconds. This lets new nodes start and absorb traffic.
+- Hysteresis thresholds set a gap between scale-out and scale-in thresholds. For example, scale out above 75 percent CPU and scale in below 35 percent CPU. This prevents instance churning.
+- Important: Use asymmetric scaling. Scale out fast on brief spikes. Scale in slowly after long idle periods. This prevents premature termination during temporary traffic dips.
+
+Performance Optimization and Caching:
+- High performance architectures reduce physical distance, avoid disk I/O, and remove downstream query bottlenecks.
+- Cache-aside: the application checks the cache first. On a miss, it reads from the database, writes to the cache with a TTL, and returns the data. This prevents unused data from filling cache memory.
+- Write-through: the application writes to both cache and database at the same time. Cache data stays fresh, but writes are slower.
+- Write-behind: the application writes to the cache. The cache acknowledges instantly and later flushes data to the database. This gives high write throughput but risks data loss if the cache crashes before flushing.
+- Cache stampede: a heavily queried key expires. Thousands of concurrent requests hit the primary database at once.
+- Mitigations for cache stampede include mutex locks and probabilistic early expiration.
+- Read replicas offload read-heavy work like dashboards and reports. The primary database handles write transactions.
+- Connection pooling reuses existing database connections. Proxies like RDS Proxy or PgBouncer prevent CPU exhaustion from new TCP handshakes and authentication.
+- Edge acceleration places static assets, CSS, JavaScript, and cached API responses on point of presence edge caches.
+- Dynamic requests terminate TCP at the edge. They use pre-warmed TCP and TLS tunnels over provider fiber to reduce public internet latency.
+- Important: Always set a TTL on cache entries. Keys without TTL cause stale data incidents and out-of-memory crashes on caching nodes.
+
+Comparison of Load Balancer Types:
+- Layer 4 load balancer:
+    - Works at the transport layer with TCP, UDP, and TLS.
+    - Routes by IP address, port, and protocol hash.
+    - Handles millions of requests per second with sub-millisecond latency.
+    - Uses rapid TCP handshake and basic ICMP health checks.
+    - Fits financial exchanges, gaming UDP streams, and raw socket applications.
+- Layer 7 load balancer:
+    - Works at the application layer with HTTP, HTTPS, and gRPC.
+    - Routes by URL path, host header, HTTP methods, and query strings.
+    - Has single-digit millisecond latency overhead.
+    - Uses deep HTTP status checks on health endpoints.
+    - Fits microservices, REST APIs, container routing, and web applications.
+- Global anycast router:
+    - Works at the network and edge application layers.
+    - Routes by geographic location, client latency, and DNS weight.
+    - Uses edge caching and absorbs hundreds of Gbps of DDoS traffic.
+    - Uses edge TLS termination with zero round-trip time.
+    - Fits global traffic management, multi-region routing, and CDN.
+
+Comparison of Availability Architectures:
+- Single-AZ non-redundant:
+    - Availability is about 99.0 percent.
+    - Maximum unplanned downtime is about 87.6 hours per year.
+    - Complexity is negligible. Cost is baseline.
+    - Recovery is manual rebuild or reboot.
+    - Blast radius is host and data center failure.
+- Multi-AZ redundant:
+    - Availability is about 99.99 percent.
+    - Maximum unplanned downtime is about 52.6 minutes per year.
+    - Complexity is moderate. Cost is 2.2 to 2.5 times baseline.
+    - Recovery uses automated load balancer failover.
+    - Blast radius is a complete data center outage.
+- Multi-region active-passive:
+    - Availability is about 99.995 percent.
+    - Maximum unplanned downtime is about 26.3 minutes per year.
+    - Complexity is high. Cost is 3.5 to 4.0 times baseline.
+    - Recovery uses automated DNS failover with Route 53.
+    - Blast radius is an entire geographic region.
+- Multi-region active-active:
+    - Availability is about 99.999 percent.
+    - Maximum unplanned downtime is about 5.26 minutes per year.
+    - Complexity is extremely high. Cost is 6.0 to 8.0 times baseline.
+    - Recovery uses immediate continuous traffic shunting.
+    - Blast radius is a complete regional failure without downtime.
+
+Key Takeaways:
+- Composite availability drops across serial components. Use parallel redundancy to improve it.
+- Blast radius containment drives topology. Use Availability Zones to isolate physical failures.
+- Layer 4 and Layer 7 load balancers solve different problems. Use Layer 4 for low latency and extreme throughput. Use Layer 7 for path routing, TLS termination, and HTTP header inspection.
+- Elastic scaling needs asymmetric rules. Scale out fast, scale in slowly, and use cooldown periods.
+- Stateless compute tiers scale horizontally. Store session state in distributed in-memory caches.
+- Multi-layer caching reduces database load. Use edge CDNs, application caches, and read replicas.
+- Redundancy without testing is not real. Use chaos engineering to prove failover works before a production disaster.
