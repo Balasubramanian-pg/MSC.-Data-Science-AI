@@ -1,4 +1,3 @@
-# Migration in progress
 # W04: Multi-Layer Perceptrons and Activation Functions
 
 ## Multi-Layer Perceptrons and Activation Functions
@@ -108,4 +107,99 @@ The Multi-Layer Perceptron (MLP) extends single-neuron models into deep architec
 - Its sub-derivative evaluates to a constant one for all positive activations:
   $$\frac{d}{dz}\text{ReLU}(z) = \begin{cases} 1 & \text{if } z > 0 \\ 0 & \text{if } z < 0 \end{cases}$$
 - For positive inputs, ReLU exhibits **no gradient saturation**; its derivative remains constant at $1.0$, enabling error propagation across deep network depths without exponential decay.
-- ReLU is computationally efficient to evaluate, requ
+- ReLU is computationally efficient to evaluate, requiring simple thresholding at zero rather than costly floating-point exponentiations.
+- It induces **activation sparsity** by driving negative activations to zero, creating sparse latent representations where only a subset of neurons activate for a given input.
+
+### The Dying ReLU Problem and Leaky Variants
+
+- The **Dying ReLU problem** occurs when a neuron's pre-activation value drops persistently below zero ($z \le 0$) across the entire dataset.
+- Because the derivative is zero for all negative values, no gradient flows through the inactive neuron, preventing the optimizer from updating its weights and biases.
+- The neuron becomes permanently inactive, effectively reducing the functional capacity of the network.
+- **Leaky ReLU** resolves this failure mode by replacing the zero regime with a small non-zero slope $\alpha$ (typically $\alpha = 0.01$):
+  $$\text{Leaky ReLU}(z) = \max(\alpha z, z) = \begin{cases} z & \text{if } z > 0 \\ \alpha z & \text{if } z \le 0 \end{cases}$$
+- The derivative remains non-zero for negative inputs ($\frac{d}{dz} = \alpha$), ensuring that every neuron receives an update signal regardless of its activation state.
+- **Parametric ReLU (PReLU)** treats the negative slope $\alpha$ as a learnable parameter optimized through backpropagation rather than a fixed hyperparameter.
+
+### Smooth and Probabilistic Gates: ELU, GELU, and Swish
+
+- The **Exponential Linear Unit (ELU)** smooths the negative saturation curve using an exponential term:
+  $$\text{ELU}(z) = \begin{cases} z & \text{if } z > 0 \\ \alpha (e^z - 1) & \text{if } z \le 0 \end{cases}$$
+  ELU drives mean activations closer to zero while maintaining robust noise resistance through asymptotic saturation in the negative regime.
+- The **Gaussian Error Linear Unit (GELU)** weights the input by the cumulative distribution function of the standard normal distribution:
+  $$\text{GELU}(z) = z \cdot \Phi(z) = z \cdot P(X \le z), \quad X \sim \mathcal{N}(0, 1)$$
+  GELU functions as a probabilistic gate that scales inputs based on their magnitude, forming the primary activation in modern Transformer architectures.
+- The **Swish (SiLU)** activation uses a self-gated mechanism parameterized by $\beta$:
+  $$\text{Swish}(z) = z \cdot \sigma(\beta z) = \frac{z}{1 + e^{-\beta z}}$$
+  Swish is smooth, non-monotonic, and bounded below while remaining unbounded above, which improves gradient flow in deep convolutional and residual networks.
+
+> [!Tip]
+> **Non-saturating activations** maintain constant gradient flow: replacing bounded sigmoidal curves with piecewise linear or smooth gated functions prevents gradient decay and stabilizes deep network training.
+
+## Output Layer Formulations and Task Alignment
+
+### Regression Targets and Identity Mapping
+
+- For continuous regression tasks, the output layer computes an unconstrained linear combination:
+  $$\hat{y} = g^{[L]}(z^{[L]}) = z^{[L]} = W^{[L]} a^{[L-1]} + b^{[L]}$$
+- An **identity activation function** preserves an unbounded output range $(-\infty, \infty)$, allowing the network to predict continuous targets.
+- Pairing the linear output layer with **Mean Squared Error (MSE)** loss produces clean linear error gradients:
+  $$\mathcal{L}_{\text{MSE}} = \frac{1}{2m} \sum_{i=1}^m \|\hat{y}^{(i)} - y^{(i)}\|_2^2 \implies \nabla_{z^{[L]}} \mathcal{L} = \frac{1}{m} (\hat{y} - y)$$
+
+### Binary and Multi-Label Classification
+
+- For binary classification, the output layer uses a single neuron paired with a **sigmoid activation function**:
+  $$\hat{y} = \sigma(z^{[L]}) \in (0, 1)$$
+- The output represents the conditional probability $P(Y=1 \mid x)$, paired with **Binary Cross-Entropy (BCE)** loss.
+- In **multi-label classification** (where an instance can belong to multiple classes simultaneously), the output layer contains $K$ independent neurons, each evaluated through a sigmoid activation:
+  $$\hat{y}_k = \sigma(z_k^{[L]}), \quad k \in \{1, \dots, K\}$$
+- Each output neuron operates as an independent binary classifier, evaluated by summing individual binary cross-entropy losses across all $K$ targets.
+
+### Multi-Class Classification and the Softmax Function
+
+- For mutually exclusive multi-class classification over $K$ categories, the output layer uses the **Softmax function**:
+  $$\hat{y}_k = \frac{e^{z_k^{[L]}}}{\sum_{j=1}^K e^{z_j^{[L]}}}, \quad k \in \{1, \dots, K\}$$
+- Softmax normalizes an unbounded vector of real-valued logits $z^{[L]} \in \mathbb{R}^K$ into a valid categorical probability distribution where $\hat{y}_k \in (0, 1)$ and $\sum_{k=1}^K \hat{y}_k = 1$.
+- Pairing Softmax with **Categorical Cross-Entropy** loss produces the combined gradient:
+  $$\mathcal{L}_{\text{CE}} = -\sum_{k=1}^K y_k \ln(\hat{y}_k) \implies \frac{\partial \mathcal{L}}{\partial z_k^{[L]}} = \hat{y}_k - y_k$$
+- The derivative of the cross-entropy loss with respect to pre-activation logits simplifies to the difference between the predicted probability vector and the one-hot target vector.
+
+> [!Important]
+> **Output activations dictate loss pairing**: coupling the activation function to its corresponding statistical loss distribution (Softmax with Cross-Entropy, Identity with MSE) yields clean, linear gradient signals that prevent training stalls.
+
+## Comparative Analysis of Activation Functions
+
+| Activation Function | Mathematical Formulation | Output Range | First Derivative $g'(z)$ | Zero-Centered? | Primary Strength / Limitation |
+|---|---|---|---|---|---|
+| **Logistic Sigmoid** | $\sigma(z) = \frac{1}{1 + e^{-z}}$ | $(0, 1)$ | $\sigma(z)(1 - \sigma(z))$ | No | Probabilistic output; severe gradient vanishing when saturated |
+| **Tanh** | $\frac{e^z - e^{-z}}{e^z + e^{-z}}$ | $(-1, 1)$ | $1 - \tanh^2(z)$ | Yes | Zero-centered outputs; saturates and vanishes gradients at extremes |
+| **ReLU** | $\max(0, z)$ | $[0, \infty)$ | $1$ if $z > 0$; $0$ if $z < 0$ | No | High computational speed and no saturation; susceptible to Dying ReLU |
+| **Leaky ReLU** | $\max(\alpha z, z), \; \alpha \approx 0.01$ | $(-\infty, \infty)$ | $1$ if $z > 0$; $\alpha$ if $z \le 0$ | Near zero | Prevents neuron death; introduces an empirical hyperparameter $\alpha$ |
+| **ELU** | $z$ if $z > 0$; $\alpha(e^z - 1)$ if $z \le 0$ | $(-\alpha, \infty)$ | $1$ if $z > 0$; $g(z) + \alpha$ if $z \le 0$ | Yes ($\approx 0$) | Robust noise resistance and smooth gradients; requires exponentiation |
+| **GELU** | $z \cdot \Phi(z)$ | $(-0.17, \infty)$ | Smooth probabilistic curve | Near zero | Standard for Transformer backbones; higher computational evaluation cost |
+| **Swish (SiLU)** | $z \cdot \sigma(\beta z)$ | $(-0.28, \infty)$ | Smooth self-gated curve | Near zero | Outperforms ReLU in deep networks; requires floating-point exp operations |
+
+### Canonical Output Layer and Loss Function Pairings
+
+| Learning Task | Output Layer Topology | Activation Function | Output Range | Canonical Loss Function |
+|---|---|---|---|---|
+| **Continuous Regression** | Single or multiple linear units | Identity ($g(z) = z$) | $(-\infty, \infty)$ | Mean Squared Error (MSE) / L1 Loss |
+| **Binary Classification** | Single neuron | Logistic Sigmoid ($\sigma(z)$) | $(0, 1)$ | Binary Cross-Entropy (Log Loss) |
+| **Multi-Label Classification** | $K$ independent neurons | Logistic Sigmoid ($\sigma(z_k)$) | $(0, 1)^K$ | Summed Binary Cross-Entropy |
+| **Multi-Class Classification** | $K$ mutually exclusive units | Softmax ($g(z)_k$) | $(0, 1)^K, \; \sum = 1$ | Categorical Cross-Entropy |
+
+> [!Tip]
+> **The Softmax derivative cancellation** mirrors binary cross-entropy: the Jacobian terms of the Softmax function cancel out against the reciprocal terms of the categorical cross-entropy loss, leaving the difference vector $(\hat{y} - y)$.
+
+## Key Takeaways
+
+- **Multi-Layer Perceptrons** cascade affine transformations and non-linear activations to map non-separable input spaces into linearly separable latent spaces.
+- **Purely linear networks collapse**: composing multiple linear layers without intermediate non-linearities reduces algebraically to a single affine transformation.
+- **The Universal Approximation Theorem** guarantees that a single hidden layer with non-linear activations can approximate any continuous function, though wide shallow models can require exponential parameter counts.
+- **Sigmoid and Tanh activations saturate** at extreme input values, causing vanishing gradients that extinguish backpropagated error signals in deep networks.
+- **Non-zero centered outputs** from sigmoid functions force weight gradients to share the same sign across dimensions, inducing zig-zag paths during gradient descent.
+- **ReLU and its leaky variants** eliminate positive gradient saturation by providing a constant derivative of one, which accelerates optimization and prevents gradient decay.
+- **The Dying ReLU failure mode** occurs when negative pre-activations cause a neuron's gradient to vanish permanently, a problem resolved by Leaky ReLU, ELU, and GELU.
+- **Output layer activation choice** must align with target semantics: Identity for continuous regression, Sigmoid for binary tasks, and Softmax for mutually exclusive classification.
+
+> [!Tip]
+> The fundamental architectural principle of deep learning: **non-linear depth drives representational power**; interleaving linear matrix operations with non-saturating activation functions enables gradient descent to train deep representations that shallow models cannot achieve efficiently.
