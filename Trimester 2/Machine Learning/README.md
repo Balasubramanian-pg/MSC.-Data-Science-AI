@@ -1,7 +1,8 @@
-# Migration in progress
 # Machine Learning
 
 Initial directory setup.
 
 ## Overview
-- M
+- Module resources and notes will be added here.
+
+Status: Active
