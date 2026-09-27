@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 4: Learning Rate Schedules
 
 ## Learning Rate Schedules and Trajectory Control
@@ -95,4 +94,77 @@ The learning rate stands as the most critical hyperparameter in neural network t
 - Proposed by Ilya Loshchilov and Frank Hutter (2016), **Cosine Annealing** decays the learning rate following a half-cosine curve:
   $$\eta_t = \eta_{\min} + \frac{1}{2}(\eta_{\max} - \eta_{\min}) \left( 1 + \cos\left(\frac{t}{T_{\max}} \pi\right) \right)$$
 - The schedule features smooth transitions: it decays slowly near the peak $\eta_{\max}$, accelerates through the middle phase, and flattens out near the minimum floor $\eta_{\min}$.
-- The intermediate descent
+- The intermediate descent phase maintains moderate step sizes long enough to explore complex error surfaces before settling into fine convergence.
+
+### Warm Restarts and Snapshot Ensembles (SGDR)
+
+- **Cosine Annealing with Warm Restarts (SGDR)** resets the learning rate back to $\eta_{\max}$ periodically after completing a cycle of length $T_i$:
+  $$T_i = T_0 \cdot T_{\text{mult}}^i$$
+  where $T_0$ is the initial cycle period, and $T_{\text{mult}} \ge 1$ expands subsequent cycle durations.
+- Resetting the learning rate injects kinetic energy into the optimizer, dislodging parameters from narrow local basins to explore alternative error valleys.
+- **Snapshot Ensembles** save model checkpoint weights at the trough of each cosine cycle just before the restart; ensembling these checkpoints produces diverse model predictions without requiring independent training runs.
+
+### Cyclical Learning Rates (CLR)
+
+- Formulated by Leslie Smith (2017), **Cyclical Learning Rates (CLR)** oscillate step sizes continuously between a minimum boundary $\eta_{\min}$ and a maximum boundary $\eta_{\max}$ in triangular or sinusoidal patterns.
+- Rather than decaying step sizes monotonically, CLR repeatedly raises and lowers the learning rate throughout training.
+- Raising the learning rate provides an active mechanism to escape saddle points and flat plateaus, while lowering it allows parameters to settle into nearby basins.
+
+### The One-Cycle Policy and Super-Convergence
+
+- The **1cycle policy** (Leslie Smith, 2018) organizes training into three distinct phases across a single budget cycle:
+  - **Phase 1 (Ramp Up):** The learning rate increases from $\eta_{\min}$ to an aggressive peak $\eta_{\max}$, while momentum decreases from $\beta_{\max}$ (e.g., 0.95) to $\beta_{\min}$ (e.g., 0.85).
+  - **Phase 2 (Ramp Down):** The learning rate decreases back to $\eta_{\min}$ following a cosine or linear curve, while momentum increases back to $\beta_{\max}$.
+  - **Phase 3 (Annihilation):** The learning rate drops further by a factor of 100 to 1000 below $\eta_{\min}$ to settle parameters into the minimum.
+- High peak learning rates act as a regularizer by bypassing sharp, sub-optimal minima, enabling **super-convergence** where networks achieve target validation performance in fewer epochs.
+
+> [!Important]
+> **The 1cycle policy accelerates training through inverted momentum**: pairing high peak learning rates with reduced momentum prevents optimization instability, allowing networks to navigate broad basins and converge in fewer epochs.
+
+## Performance-Driven Schedulers
+
+### Validation Metric Monitoring and Patience
+
+- Unlike deterministic time-based schedules, **Performance-Driven Schedulers** adapt step sizes dynamically based on validation set feedback.
+- **ReduceLROnPlateau** tracks an evaluation metric (such as validation loss or accuracy) at the end of each epoch.
+- If the target metric fails to improve by a threshold $\delta$ over a designated **patience** window (e.g., 5 or 10 epochs), the scheduler drops the learning rate:
+  $$\eta \leftarrow \eta \cdot \gamma \quad (\text{where } \gamma \in [0.1, 0.5])$$
+- This metric-driven approach avoids dropping step sizes prematurely while validation error is still decreasing.
+
+### Deterministic Schedules Versus Adaptive Schedulers
+
+- **Deterministic schedules** (Cosine Annealing, Polynomial Decay, 1cycle) require specifying the total step budget $T_{\max}$ in advance, making them ideal for fixed-budget pre-training and benchmark runs.
+- **Adaptive schedulers** (ReduceLROnPlateau) respond dynamically to empirical loss trajectories without requiring advance knowledge of total training steps, making them useful when training convergence time is unknown.
+
+> [!Tip]
+> **Select schedulers based on budget predictability**: use Cosine Annealing or 1cycle when total training epochs are fixed in advance; deploy ReduceLROnPlateau when convergence time is uncertain.
+
+## Comparative Matrix of Learning Rate Schedulers
+
+| Scheduler Strategy | Mathematical Mechanism | Required Hyperparameters | Trajectory Behavior Across Training | Primary Operational Strength | Primary Limitation / Risk |
+|---|---|---|---|---|---|
+| **Step Decay** | $\eta_0 \cdot \gamma^{\lfloor t / s \rfloor}$ | Base rate $\eta_0$, factor $\gamma$, step interval $s$ | Discrete, step-wise drops at fixed epoch intervals | Simple to implement; creates distinct refinement stages | Requires manual tuning of drop intervals and step factors |
+| **Exponential Decay** | $\eta_0 \cdot e^{-kt}$ | Base rate $\eta_0$, decay coefficient $k$ | Continuous, smooth exponential decrease | Avoids abrupt drops; provides continuous damping | Can decay too quickly, halting progress before convergence |
+| **Polynomial / Linear** | $(\eta_0 - \eta_{\min})(1 - \frac{t}{T})^p + \eta_{\min}$ | Initial $\eta_0$, minimum $\eta_{\min}$, power $p$, budget $T$ | Monotonic decay bounded by maximum step budget | Standard for Transformer fine-tuning; predictable termination | Requires pre-allocating exact step budget $T_{\max}$ |
+| **Cosine Annealing** | $\eta_{\min} + \frac{1}{2}\Delta\eta(1 + \cos(\frac{t}{T}\pi))$ | Peak rate $\eta_{\max}$, floor $\eta_{\min}$, budget $T_{\max}$ | Smooth half-cosine curve without sharp boundaries | Spends substantial time in productive mid-rate exploration | Decays step sizes regardless of whether validation loss has stalled |
+| **Cosine with Restarts (SGDR)**| Periodic reset to $\eta_{\max}$ with period $T_i$ | Peak $\eta_{\max}$, base period $T_0$, multiplier $T_{\text{mult}}$ | Cyclic cosine waves with expanding cycle durations | Escapes sharp local basins; enables Snapshot Ensembles | Can disrupt late-stage convergence if restarted too aggressively |
+| **1cycle Policy** | Triangular/cosine wave with inverted momentum | Max rate $\eta_{\max}$, initial $\eta_{\min}$, cycle length | Upward ramp, downward ramp, final annihilation phase | Achieves super-convergence; acts as an implicit regularizer | Sensitive to peak learning rate selection ($\eta_{\max}$) |
+| **ReduceLROnPlateau** | Drops by $\gamma$ if validation metric stalls | Metric target, patience window, factor $\gamma$, threshold | Flat line with opportunistic downward drops | Adapts to empirical progress; handles unknown training budgets | Relies on noisy validation estimates; cannot recover from drops |
+
+> [!Important]
+> **Cosine Annealing is the modern default**: pairing smooth cosine decay with an initial linear warmup provides stable, robust convergence across deep vision and language architectures.
+
+## Key Takeaways
+
+- **Dynamic learning rates balance exploration and exploitation**: large initial step sizes explore parameter space, while smaller late step sizes allow fine convergence into basin minima.
+- **The Robbins-Monro conditions** establish convergence bounds for stochastic optimization, requiring $\sum \eta_t = \infty$ for parameter reach and $\sum \eta_t^2 < \infty$ for noise elimination.
+- **Linear learning rate warmup** prevents noisy early gradients from destabilizing randomly initialized weights, and allows adaptive variance accumulators in Adam to stabilize.
+- **Step decay drops learning rates discretely**, producing distinct optimization stages, but requires manual tuning of step intervals and decay factors.
+- **Linear decay schedules** provide a standard baseline for fine-tuning pre-trained models within a fixed step budget.
+- **Cosine Annealing provides smooth, non-abrupt step reduction**, spending sufficient time in mid-rate exploration before decaying to the minimum floor.
+- **Warm restarts (SGDR) dislodge parameters from sharp basins**, allowing models to explore alternative valleys and generate diverse snapshot ensembles.
+- **The 1cycle policy accelerates training** by pairing high peak learning rates with reduced momentum, driving parameters toward broad, generalizing minima.
+- **ReduceLROnPlateau adapts dynamically to empirical validation loss**, providing a metric-driven fallback when total training duration is uncertain.
+
+> [!Tip]
+> The governing rule of trajectory scheduling: **coordinate warmup, peak step size, and decay profile into a unified strategy**; initiating optimization with linear warmup, maintaining a well-scaled peak learning rate, and transitioning into smooth cosine decay ensures stable parameter descent from random initialization to final basin convergence.
