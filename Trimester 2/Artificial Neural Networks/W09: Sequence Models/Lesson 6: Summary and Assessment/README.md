@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 6: Summary and Assessment
 
 Sequence Models Summary and Assessment:
@@ -25,4 +24,27 @@ Gated Architectures:
 
 Bidirectional and Deep Architectures:
 - Standard sequence models only process information from past time steps to the present.
-- Bidirectional RNNs process the sequence in both forward and backward directions, combining both hidden states to capture fu
+- Bidirectional RNNs process the sequence in both forward and backward directions, combining both hidden states to capture future and past context.
+- Deep or stacked RNNs place recurrent layers on top of one another, allowing the network to learn hierarchical representations across sequence steps.
+
+Sequence-to-Sequence and Attention:
+- Sequence-to-sequence models use an encoder network to compress an input sequence into a fixed-length vector and a decoder network to generate the target sequence.
+- Bottleneck issues occur when a single fixed vector must capture the entire meaning of long input sequences.
+- Attention mechanisms allow the decoder to refer back to all intermediate encoder states, dynamically assigning weights to relevant parts of the input sequence.
+
+Assessment Review and Practice Questions:
+- Question: Why do standard recurrent networks struggle with long-term dependencies?
+- Answer: Repeated multiplication of weight matrices across many time steps causes gradients to vanish exponentially or explode during backpropagation through time.
+- Question: How does an LSTM prevent the vanishing gradient problem?
+- Answer: The cell state provides an additive gradient path regulated by gates, preventing gradients from decaying exponentially across time steps.
+- Question: In what scenario would a bidirectional RNN be inappropriate?
+- Answer: Real-time causal forecasting, such as stock price prediction or live speech generation, where future inputs are unavailable at inference time.
+- Question: What is the primary operational difference between GRU and LSTM?
+- Answer: GRU combines the cell state and hidden state and uses two gates (reset and update), whereas LSTM uses three gates and maintains a separate cell state.
+
+Key Takeaways:
+- Sequence models rely on hidden states and parameter sharing to handle ordered, variable-length data.
+- Basic RNNs fail on long sequences due to vanishing and exploding gradients during backpropagation through time.
+- LSTMs and GRUs use gating mechanisms to regulate information flow and preserve long-term context.
+- Bidirectional networks improve representation when full sequences are available by incorporating both past and future context.
+- Encoder-decoder networks handle tasks with different input and output lengths, while attention solves the fixed-length context bottleneck.
