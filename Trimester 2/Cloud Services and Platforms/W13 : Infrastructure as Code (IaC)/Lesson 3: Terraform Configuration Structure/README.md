@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 3: Terraform Configuration Structure
 
 A well-structured Terraform configuration is essential for maintainability, readability, and collaboration. This lesson details the standard file organization, the role of each configuration block, how to manage variables and outputs effectively, and best practices for organizing complex projects. Understanding this structure allows you to build scalable infrastructure code that is easy to debug and extend.
@@ -146,4 +145,143 @@ variable "instance_type" {
 ```
 
 > [!Important]
-> **Validate early**: Use validation blocks in variable definitions to catch errors before the p
+> **Validate early**: Use validation blocks in variable definitions to catch errors before the plan phase. This provides immediate feedback to users if they provide invalid inputs, saving time and preventing failed deployments.
+
+## Output Strategy
+
+Outputs expose data from your infrastructure for use elsewhere.
+
+### Purposes of Outputs
+
+-   **Inter-module Communication**: Pass VPC ID from network module to compute module.
+-   **User Information**: Display public IP addresses or DNS names after apply.
+-   **CI/CD Integration**: Provide values to subsequent pipeline steps.
+
+### Sensitive Outputs
+
+-   Mark outputs containing secrets with `sensitive = true`.
+-   Hides value in CLI output and logs.
+-   Does not encrypt value in state file; rely on backend encryption.
+-   Example: Database passwords, API keys.
+
+### Formatting Outputs
+
+-   Use `description` to explain what the output represents.
+-   Keep outputs minimal; only export what is needed.
+-   Avoid exporting large lists or maps unless necessary.
+
+```hcl
+output "web_server_ip" {
+  description = "Public IP of the web server"
+  value       = aws_instance.web.public_ip
+  sensitive   = false
+}
+```
+
+## Best Practices for Structure
+
+### Modular Design
+
+-   Break large configurations into smaller, reusable modules.
+-   Each module should have its own `variables.tf` and `outputs.tf`.
+-   Root module calls child modules to compose the full architecture.
+-   Promotes reuse and simplifies testing.
+
+### Documentation
+
+-   Include `README.md` in every module.
+-   Document required variables, outputs, and usage examples.
+-   Use `description` fields in variables and outputs.
+-   Keep documentation up-to-date with code changes.
+
+### Version Pinning
+
+-   Pin provider versions to avoid breaking changes.
+-   Use `~>` operator for patch updates (e.g., `~> 4.0`).
+-   Regularly update versions in controlled manner.
+-   Test upgrades in non-production environments first.
+
+### Logical Grouping
+
+-   Group related resources in same file if small project.
+-   Split by resource type (networking, compute, storage) if large.
+-   Use comments to separate sections within `main.tf`.
+-   Maintain consistent indentation and formatting.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1.  What is the purpose of `variables.tf` vs `main.tf`?
+2.  Explain the role of the `terraform` block.
+3.  How do you pass values from one module to another?
+4.  Why should you mark certain outputs as sensitive?
+5.  What is the precedence order for variable values?
+6.  How does `required_providers` help in team environments?
+7.  What is the difference between a resource and a data block?
+8.  Why is it recommended to use `.tfvars` files?
+9.  How do you validate input variables in Terraform?
+10. What is the benefit of splitting configuration into multiple files?
+
+### Scenario Questions
+
+**Scenario 1: Unreadable Monolith**
+Single `main.tf` file has 2000 lines of mixed resources.
+
+-   Split into `main.tf`, `variables.tf`, `outputs.tf`.
+-   Group resources by logical function (networking, compute).
+-   Extract repeated patterns into child modules.
+-   Add comments and documentation.
+-   Improve maintainability and review process.
+
+**Scenario 2: Hardcoded Secrets**
+Database password hardcoded in `main.tf`.
+
+-   Move password to input variable.
+-   Mark variable as sensitive.
+-   Pass value via environment variable or secure vault.
+-   Mark output as sensitive if displayed.
+-   Ensure state file is encrypted at rest.
+
+**Scenario 3: Inconsistent Environments**
+Dev and Prod use different variable values manually.
+
+-   Create `dev.tfvars` and `prod.tfvars`.
+-   Define all variables in `variables.tf` with defaults.
+-   Use `-var-file` flag in CI/CD pipeline.
+-   Ensure same code base for both environments.
+-   Validate values using validation blocks.
+
+**Scenario 4: Missing Documentation**
+New joiner cannot understand the module inputs.
+
+-   Add `description` to every variable.
+-   Create `README.md` with usage examples.
+-   Document outputs and their purposes.
+-   Include example `.tfvars` files.
+-   Review documentation during code reviews.
+
+**Scenario 5: Provider Version Conflict**
+Team members use different provider versions causing drift.
+
+-   Add `required_providers` block in `providers.tf`.
+-   Pin version to specific range (e.g., `~> 4.50`).
+-   Run `terraform init -upgrade` to align versions.
+-   Commit `.terraform.lock.hcl` to Git.
+-   Enforce version check in CI pipeline.
+
+## Key Takeaways
+
+-   Standard file structure (`main`, `variables`, `outputs`) improves readability.
+-   `terraform` block manages version constraints and backend config.
+-   Variables parameterize configurations; use validation for safety.
+-   Outputs expose data for inter-module communication and user info.
+-   Mark sensitive outputs to prevent secret leakage in logs.
+-   Use `.tfvars` files to manage environment-specific values.
+-   Modular design promotes reuse and simplifies complex architectures.
+-   Documentation is critical for team collaboration and onboarding.
+-   Pin provider versions to ensure consistent behavior.
+-   Logical grouping and comments make code easier to maintain.
+
+> [!Important]
+> **Structure enables scale**: A messy configuration works for small tests but fails in production teams. Invest time in proper structure early. Separate concerns into logical files, document everything, and enforce consistency. Good structure makes code reviews faster, debugging easier, and onboarding smoother. Treat your Terraform code with the same architectural rigor as your application code.
