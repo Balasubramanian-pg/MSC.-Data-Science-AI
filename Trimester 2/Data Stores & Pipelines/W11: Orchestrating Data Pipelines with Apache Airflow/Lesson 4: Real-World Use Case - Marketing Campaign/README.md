@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 4: Real-World Use Case - Marketing Campaign
 Real-World Use Case: Marketing Campaign Analytics Pipeline:
 
@@ -19,4 +18,28 @@ DAG Architecture and Task Sequencing:
 - Data harmonization and cleaning: The external transformation job maps disparate campaign naming conventions, normalizes foreign currencies to a standard base currency, and cleans UTM tracking parameters.
 - Attribution modeling: The pipeline joins website clickstream events with finalized e-commerce sales records, applying multi-touch attribution algorithms to allocate revenue credits across marketing channels.
 - Data warehouse loading: A database operator appends validated marketing fact records and updated customer dimension models into production data warehouse marts.
-- Quality validation gate: An automated SQL check queries the target mart to verify that total campaign spend matches raw extraction sums, ensuring zero dr
+- Quality validation gate: An automated SQL check queries the target mart to verify that total campaign spend matches raw extraction sums, ensuring zero dropped records before business analysts review reports.
+- Notification dispatch: An automated task dispatches a formatted Slack summary and email report to marketing managers summarizing daily channel performance and highlight metrics.
+
+Airflow Features Applied in the Pipeline:
+
+- Airflow Pools: Configured to restrict the maximum number of concurrent tasks accessing external marketing APIs, preventing the pipeline from triggering rate-limit errors or IP throttling.
+- Airflow Connections: Securely stores sensitive API client secrets, OAuth refresh tokens, and database credentials in encrypted metadata tables, keeping private authentication keys out of version-controlled Python files.
+- Failure alerting callbacks: The on failure callback parameter attaches a Python alerting function to critical tasks, automatically sending an urgent alert containing task details and direct log URLs to the data engineering on-call channel if an extraction job crashes.
+- Execution date macros: Tasks use built-in Jinja template variables like ds and prev ds to parameterize API request payloads dynamically, ensuring the pipeline extracts data for the exact logical date being processed.
+
+Managing Attribution Windows and Backfills:
+
+- Delayed conversion challenge: A customer who clicked an ad on Monday might not make a purchase until Friday, requiring earlier marketing attribution models to be updated retrospectively.
+- Lookback window execution: The daily pipeline is designed to reprocess attribution calculations for a sliding lookback window, such as the preceding seven or fourteen days, on every nightly run.
+- Idempotent overwrites: Data warehouse insert operations are configured as idempotent partitions or upserts based on campaign date, ensuring that recalculated metrics overwrite prior estimates without duplicating rows.
+- Important: In marketing analytics pipelines, historical lookback models must be fully idempotent so that continuous daily updates refine attribution figures accurately without inflating revenue numbers.
+
+Key Takeaways:
+
+- Marketing pipelines ingest data across diverse external advertising platforms and reconcile it against internal sales transactions.
+- Airflow coordinates parallel API extractions and enforces proper execution order using sensors and dependency chains.
+- Restricting task concurrency through Airflow pools protects workflows from hitting external third-party API rate limits.
+- The pipeline delegates data cleaning, currency conversion, and heavy attribution calculations to external compute engines like Spark or dbt.
+- Attribution models require sliding lookback windows and idempotent partition writes to accommodate delayed purchase conversions accurately.
+- Secure connection management and failure callbacks ensure enterprise security and fast incident remediation.
