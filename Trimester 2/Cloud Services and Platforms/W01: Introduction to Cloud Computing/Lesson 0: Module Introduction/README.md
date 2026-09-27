@@ -1,4 +1,3 @@
-# Migration in progress
 # **Lesson 0: Module Introduction**
 
 Cloud computing represents a structural shift from localized, capital-intensive IT infrastructure toward utility-driven, distributed resource provisioning. By abstracting physical hardware into dynamically scheduled virtual assets, cloud platforms deliver elastic scaling, multi-tenant isolation, and automated service orchestration. Mastering the architectural taxonomies, service boundaries, and governance demarcations defined by the National Institute of Standards and Technology provides the foundational blueprint for designing scalable cloud systems.
@@ -124,4 +123,115 @@ Operational security and system reliability are shared responsibilities divided 
 ```mermaid
 flowchart LR
     subgraph SaaS["SaaS Model"]
-        directio
+        direction TB
+        CustS["Customer: Identity, Access, & Data"]
+        ProvS["Provider: Application, OS, Hypervisor, Facilities"]
+    end
+    subgraph PaaS["PaaS Model"]
+        direction TB
+        CustP["Customer: Code, IAM, Configuration, & Data"]
+        ProvP["Provider: OS, Runtime, Hypervisor, Facilities"]
+    end
+    subgraph IaaS["IaaS Model"]
+        direction TB
+        CustI["Customer: OS, Middleware, App, IAM, & Data"]
+        ProvI["Provider: Hypervisor, Hardware, Facilities"]
+    end
+```
+
+### Division of Security Controls
+
+- **Security OF the Cloud (Provider Mandate)**: The provider assumes strict accountability for the physical facilities, power redundancy, host servers, network cabling, storage media destruction, and hypervisor isolation boundaries.
+- **Security IN the Cloud (Customer Mandate)**: The customer manages the confidentiality, integrity, and availability of assets deployed within the infrastructure. This includes Identity and Access Management (IAM), access key lifecycles, operating system patch levels, firewall rules, and application security.
+
+### Responsibility Demarcation Matrix
+
+| Architectural Subsystem | On-Premises | IaaS | PaaS | SaaS |
+|---|---|---|---|---|
+| **Data Governance & Classification** | Customer | Customer | Customer | Customer |
+| **Client Access & IAM Policies** | Customer | Customer | Customer | Customer |
+| **Application Logic & Code** | Customer | Customer | Customer | Provider |
+| **Runtimes & Middleware** | Customer | Customer | Provider | Provider |
+| **Guest Operating System** | Customer | Customer | Provider | Provider |
+| **Virtualization & Hypervisor** | Customer | Provider | Provider | Provider |
+| **Physical Compute, Storage, & Networking** | Customer | Provider | Provider | Provider |
+| **Facility Security & Environmental Controls**| Customer | Provider | Provider | Provider |
+
+> [!Tip]
+> **Data ownership remains absolute**: Tenants retain sole liability for data protection, cryptographic key lifecycles, and access control policies across every service tier, including SaaS.
+
+## **Financial Architecture: CapEx Versus OpEx Dynamics**
+
+The transition to utility computing fundamentally restructures enterprise financial mechanics by replacing fixed depreciation schedules with dynamic operational tracking.
+
+```mermaid
+flowchart LR
+    subgraph CapEx["Capital Expenditures (CapEx)"]
+        direction TB
+        C1["Substantial upfront hardware capital"]
+        C2["Capacity planned for infrequent peak load"]
+        C3["Fixed multi-year asset depreciation"]
+        C4["Direct maintenance and facility overhead"]
+    end
+    subgraph OpEx["Operational Expenditures (OpEx)"]
+        direction TB
+        O1["Zero upfront infrastructure outlays"]
+        O2["Pay-as-you-go elastic metering"]
+        O3["Direct operational cost attribution"]
+        O4["Provider-absorbed physical overhead"]
+    end
+```
+
+- **Capital Expenditures (CapEx)**: Demands substantial upfront capital investments to procure physical server racks, SAN devices, network switches, cooling infrastructure, and disaster recovery sites. Organizations over-provision capacity to handle theoretical peak demands, leaving hardware underutilized during normal operational cycles.
+- **Operational Expenditures (OpEx)**: Consumes resources as metered operational utilities. Financial commitments map dynamically to real-time workload usage, eliminating sunk costs, simplifying financial forecasting, and enabling agile project funding.
+- **Total Cost of Ownership (TCO)**: Comprehensive cloud financial engineering balances instance runtime fees against secondary on-premises savings, including retired real estate, reduced electrical footprints, eliminated hardware support contracts, and minimized administrative overhead.
+
+> [!Important]
+> **Uncontrolled elasticity risks expenditure inflation**: Elastic cloud resources can drive unanticipated operational budget overruns without automated budget alerting, programmatic billing guardrails, and automated resource shutdown policies.
+
+## **Comparative Matrix of Cloud Delivery and Deployment Models**
+
+| Model Type | Abstraction Primitive | Administrative Friction | Elasticity Velocity | Operational Flexibility | Primary Cost Driver |
+|---|---|---|---|---|---|
+| **IaaS** | Virtual machine, block volume, VPC | High (manual OS maintenance) | Minutes (VM bootstrap cycles) | Maximum low-level control | Instance uptime hours, allocated storage capacity |
+| **PaaS** | Application code, containers, managed runtime | Low (provider handles OS) | Seconds (runtime auto-scaling) | Constrained to runtime specifications | Compute execution units, memory allocation, request counts |
+| **SaaS** | Complete application interface, APIs | Minimal (administrative settings) | Instantaneous (vendor managed) | Strict interface constraints | Active user licenses, transaction consumption volumes |
+| **Public** | Shared regional hyperscaler capacity | Low (fully automated APIs) | Dynamic (virtually unbounded) | High architectural standardization | Metered egress bandwidth, provisioned capacity |
+| **Private** | Dedicated enterprise hardware pools | High (internal operations) | Constrained by procurement | Maximum hardware customization | Amortized hardware, data center operational costs |
+| **Hybrid** | Interconnected heterogeneous nodes | High (cross-environment policies)| Variable across tiers | High deployment versatility | Direct Connect circuits, egress transit charges |
+
+## **Module Roadmap and Competency Framework**
+
+This course is structured as a sequential progression from virtualization primitives to distributed enterprise orchestration.
+
+```mermaid
+flowchart TD
+    W1["W01: Foundational Cloud Architecture & NIST Taxonomy"]
+    W2["W02-W04: Core Infrastructure Services (Compute, Storage, SDN)"]
+    W5["W05-W07: Cloud-Native Platforms, Microservices, & Containers"]
+    W8["W08-W10: Enterprise Security, IAM, & Governance"]
+    W11["W11-W12: Multi-Cloud Orchestration, FinOps, & SRE"]
+
+    W1 --> W2
+    W2 --> W5
+    W5 --> W8
+    W8 --> W11
+```
+
+- **W01: Foundational Cloud Architecture & NIST Taxonomy**: Deconstructs foundational distributed models, economic drivers, virtualization primitives, and utility compute metrics.
+- **W02-W04: Core Infrastructure Services**: Analyzes software-defined networks, software-defined storage (block, file, object), and scalable compute abstractions.
+- **W05-W07: Cloud-Native Platforms, Microservices, & Containers**: Focuses on container engines, Kubernetes orchestration frameworks, and serverless execution models.
+- **W08-W10: Enterprise Security, IAM, & Governance**: Implements zero-trust networks, cryptographically enforced identity systems, and audit frameworks.
+- **W11-W12: Multi-Cloud Orchestration, FinOps, & SRE**: Develops multi-region disaster recovery models, Site Reliability Engineering observability practices, and infrastructure-as-code automation.
+
+## **Key Takeaways**
+
+- **Cloud computing is defined by operational characteristics**: Adherence to the NIST framework requires on-demand self-service, broad network access, multi-tenant resource pooling, rapid elasticity, and transparently measured service.
+- **The SPI framework defines operational boundaries**: Moving from IaaS to PaaS and SaaS delegates underlying infrastructure control to the provider while shifting customer focus toward software engineering.
+- **The Shared Responsibility Model governs operations**: Hyperscalers protect the security *of* the cloud, while consumers maintain absolute accountability for the data, configurations, and identities *in* the cloud.
+- **Financial structures transition from CapEx to OpEx**: Utility-based resource billing converts large, speculative hardware purchases into metered operational expenditures that track application demand.
+- **Deployment topologies resolve distinct operational trade-offs**: Engineering choices between public, private, hybrid, and multi-cloud models balance regulatory sovereignty, network latency, system control, and operational complexity.
+- **Cloud engineering requires software-defined automation**: Treating modern infrastructure as dynamic, programmatic, and ephemeral code constructs is necessary to build resilient, fault-tolerant enterprise platforms.
+
+> [!Important]
+> **Cloud architecture treats infrastructure as software**: Modern cloud engineering avoids manual resource provisioning in favor of programmatic, automated, and declarative configuration models that ensure continuous system reliability and scalability.
