@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 4: Creating a Basic VPC Design
 
 This lesson walks through the practical steps of designing and creating a VPC from scratch. It covers CIDR planning, subnet layout, route table configuration, gateway deployment, and security group setup. The goal is to build a working VPC that supports a multi-tier application across multiple Availability Zones.
@@ -245,4 +244,194 @@ aws ec2 associate-route-table \
 | Public | 10.0.0.0/16 | local | Public subnets |
 | Public | 0.0.0.0/0 | igw-xxxx | Public subnets |
 | Private AZ A | 10.0.0.0/16 | local | Private app and data subnets in AZ A |
-| Private AZ A | 0.0.0.0/0 | nat-1a | Private app subnets 
+| Private AZ A | 0.0.0.0/0 | nat-1a | Private app subnets in AZ A |
+| Private AZ B | 10.0.0.0/16 | local | Private app and data subnets in AZ B |
+| Private AZ B | 0.0.0.0/0 | nat-1b | Private app subnets in AZ B |
+| Private Data | 10.0.0.0/16 | local | Private data subnets (no internet route) |
+
+> [!Important]
+> **Private data subnets should have no default route**: Databases and other sensitive resources do not need outbound internet access. Omitting the default route eliminates a potential exfiltration path.
+
+## Step 7: Configure Security Groups
+
+Create security groups for each tier of the application. Reference other security groups instead of CIDR blocks where possible.
+
+### Security Group Design
+
+| Security Group | Inbound Rules | Outbound Rules |
+|---|---|---|
+| ALB SG | HTTPS 443 from 0.0.0.0/0 | App SG on application port |
+| App SG | Application port from ALB SG | Database SG on database port |
+| Database SG | Database port from App SG | None (or restricted) |
+| Bastion SG | SSH 22 from corporate CIDR | App SG on SSH port |
+
+### Example: Application Security Group
+
+```bash
+# Create application security group
+aws ec2 create-security-group \
+  --group-name app-sg \
+  --description "Application tier security group" \
+  --vpc-id vpc-0abc123
+
+# Allow inbound from ALB security group
+aws ec2 authorize-security-group-ingress \
+  --group-id sg-0app123 \
+  --protocol tcp \
+  --port 8080 \
+  --source-group sg-0alb456
+```
+
+- Reference security groups instead of CIDR blocks to automatically adjust when instances scale.
+- Use separate security groups for each tier to enforce least privilege.
+- Avoid using the default security group for production resources.
+
+```mermaid
+flowchart TD
+    Internet[Internet] --> ALB[ALB Security Group]
+    ALB --> App[App Security Group]
+    App --> DB[Database Security Group]
+    ALB -->|Port 443 from 0.0.0.0/0| ALB
+    App -->|Port 8080 from ALB SG| App
+    DB -->|Port 5432 from App SG| DB
+```
+
+> [!Tip]
+> **Reference security groups by ID, not CIDR**: Security group references automatically adapt as instances are added or removed. This reduces maintenance and prevents accidental exposure.
+
+## Step 8: Launch and Test
+
+After creating the VPC, subnets, gateways, route tables, and security groups, launch resources and verify connectivity.
+
+### Test Checklist
+
+| Test | Expected Result | Verification Method |
+|---|---|---|
+| Public subnet internet access | Instance reaches internet | Ping or curl from instance |
+| Private subnet outbound access | Instance reaches internet via NAT | Curl from instance |
+| Private subnet inbound blocked | No inbound connection from internet | Attempt connection from external host |
+| Inter-tier communication | App reaches database | Application connection test |
+| Route table correctness | Traffic takes expected path | VPC Reachability Analyzer |
+| Security group enforcement | Blocked ports are denied | Test from unauthorized source |
+
+### Verification Tools
+
+- VPC Reachability Analyzer: tests connectivity between resources without generating traffic.
+- VPC Flow Logs: captures IP traffic metadata for analysis.
+- EC2 Instance Connect or Session Manager: provides shell access for testing.
+- CloudWatch: monitors metrics and logs.
+
+> [!Important]
+> **Test before deploying production workloads**: Verify that each tier can reach only what it needs and nothing more. Use Reachability Analyzer to confirm expected paths and Flow Logs to detect unexpected traffic.
+
+## Complete VPC Architecture
+
+```mermaid
+flowchart TD
+    subgraph VPC["VPC 10.0.0.0/16"]
+        subgraph AZA["Availability Zone A"]
+            PUB1["Public Subnet 10.0.1.0/24"]
+            APP1["Private App Subnet 10.0.11.0/24"]
+            DATA1["Private Data Subnet 10.0.21.0/24"]
+        end
+        subgraph AZB["Availability Zone B"]
+            PUB2["Public Subnet 10.0.2.0/24"]
+            APP2["Private App Subnet 10.0.12.0/24"]
+            DATA2["Private Data Subnet 10.0.22.0/24"]
+        end
+        IGW["Internet Gateway"]
+        NAT1["NAT Gateway AZ A"]
+        NAT2["NAT Gateway AZ B"]
+        ALB["Application Load Balancer"]
+    end
+    Internet["Internet"] --> IGW
+    IGW --> PUB1
+    IGW --> PUB2
+    ALB --> APP1
+    ALB --> APP2
+    APP1 --> NAT1
+    APP2 --> NAT2
+    NAT1 --> IGW
+    NAT2 --> IGW
+    APP1 --> DATA1
+    APP2 --> DATA2
+    DATA1 -.->|Replication| DATA2
+```
+
+## Common Design Mistakes
+
+| Mistake | Consequence | Prevention |
+|---|---|---|
+| Overlapping CIDR blocks | Cannot peer or connect to on-premises | Plan IP space before creating VPCs |
+| Single NAT gateway | Single point of failure and cross-AZ costs | Deploy one NAT gateway per AZ |
+| Public IPs on private instances | Increased attack surface | Disable auto-assign public IP on private subnets |
+| Default security group in use | Overly permissive rules | Create purpose-built security groups |
+| No Flow Logs | No visibility into traffic | Enable Flow Logs from the start |
+| Hardcoded IPs in security groups | Fragile and hard to maintain | Reference security groups by ID |
+| No tagging strategy | Difficult cost allocation and auditing | Tag every resource with environment, owner, purpose |
+| Manual VPC creation | Inconsistent and error-prone | Automate with Terraform or CloudFormation |
+
+> [!Tip]
+> **Automate VPC creation with infrastructure as code**: Terraform and CloudFormation ensure consistency, enable version control, and support repeatable deployments. Manual VPC configuration is error-prone and difficult to audit.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Describe the steps to create a VPC from scratch.
+2. Explain why CIDR planning must happen before creating any resources.
+3. Describe the subnet layout for a three-tier application across two AZs.
+4. Explain how to configure route tables for public and private subnets.
+5. Describe why private data subnets should have no default route.
+6. Explain how to design security groups for a three-tier application.
+7. List five common VPC design mistakes and their prevention.
+8. Describe how to test VPC connectivity after creation.
+
+### Scenario Questions
+
+**Scenario 1: Three-Tier Web Application**
+A company is deploying a three-tier web application with high availability requirements. Design the VPC.
+
+- Create a VPC with a /16 CIDR block such as 10.0.0.0/16.
+- Deploy public subnets in two AZs for load balancers and NAT gateways.
+- Deploy private app subnets in two AZs for application servers.
+- Deploy private data subnets in two AZs for databases with no internet route.
+- Use security groups that reference each other rather than CIDR blocks.
+- Deploy one NAT gateway per AZ for outbound access from private app subnets.
+
+**Scenario 2: Cost-Optimized Development VPC**
+A startup needs a development VPC with minimal cost. How should they design it?
+
+- Use a /16 VPC CIDR block.
+- Deploy public subnets in two AZs.
+- Deploy private subnets in two AZs.
+- Use a single NAT gateway instead of one per AZ to save cost.
+- Accept the single point of failure for non-production workloads.
+- Tag resources for cost tracking.
+
+**Scenario 3: Regulated Workload with Strict Isolation**
+A financial services firm needs strict network isolation for a database tier. How should they design it?
+
+- Place databases in isolated subnets with no route to an internet gateway or NAT gateway.
+- Use security groups that allow traffic only from the application tier security group.
+- Use VPC endpoints for access to AWS services such as S3 and KMS.
+- Enable VPC Flow Logs and traffic mirroring for monitoring.
+- Document the traffic flows and audit regularly.
+
+## Key Takeaways
+
+- Plan CIDR blocks before creating any VPC. Avoid overlaps with on-premises networks and other VPCs.
+- Create a VPC with a /16 CIDR block for ample address space.
+- Deploy subnets across at least two Availability Zones for high availability.
+- Use three subnets per AZ: public, private app, and private data.
+- Attach an internet gateway for public subnet internet access.
+- Deploy one NAT gateway per AZ in production for outbound access from private subnets.
+- Create separate route tables for public and private subnets. Private data subnets have no default route.
+- Design security groups per tier. Reference other security groups instead of CIDR blocks.
+- Test connectivity with Reachability Analyzer and VPC Flow Logs before deploying production workloads.
+- Avoid common mistakes: overlapping CIDRs, single NAT gateways, public IPs on private instances, and manual configuration.
+- Automate VPC creation with Terraform or CloudFormation for consistency and auditability.
+- Tag every resource with environment, owner, and purpose.
+
+> [!Important]
+> **Design the VPC as a foundation, not an afterthought**: The VPC is the network foundation for every workload. A well-designed VPC supports security, availability, and cost optimization. A poorly designed VPC is difficult to change and creates technical debt. Plan IP space, subnet layout, routing, and security controls before launching production resources. Automate deployment with infrastructure as code and validate connectivity with testing tools.
