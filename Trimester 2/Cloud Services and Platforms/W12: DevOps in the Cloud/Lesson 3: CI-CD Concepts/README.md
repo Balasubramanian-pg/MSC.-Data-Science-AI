@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 3: CI/CD Concepts
 
 Continuous Integration (CI) and Continuous Delivery/Deployment (CD) are the engine rooms of DevOps. They automate the process of getting code from a developer’s machine to production. This lesson defines CI and CD, explains their differences, outlines the stages of a typical pipeline, and details how AWS services implement these concepts to ensure rapid, reliable software delivery.
@@ -142,4 +141,139 @@ AWS provides a fully managed suite of services to build CI/CD pipelines.
 
 ### AWS CodeDeploy
 
--   Automates application depl
+-   Automates application deployment to EC2, Lambda, ECS, and on-premises.
+-   Supports Blue/Green, Canary, Linear, and All-at-Once strategies.
+-   Handles rolling updates to avoid downtime.
+-   Automatically rolls back if health checks fail.
+-   Tracks deployment history and status.
+
+### AWS CodeArtifact
+
+-   Fully managed artifact repository service.
+-   Stores software packages (Maven, npm, PyPI, NuGet).
+-   Securely shares dependencies across teams.
+-   Integrates with CodeBuild for dependency resolution.
+-   Alternative to public repositories for internal libraries.
+
+## Deployment Strategies
+
+How you release software impacts availability and risk.
+
+### All-at-Once
+
+-   Deploys new version to all instances simultaneously.
+-   Fastest but highest risk.
+-   Causes downtime during restart.
+-   Suitable for dev/test environments only.
+
+### Rolling Update
+
+-   Replaces instances in batches.
+-   Maintains availability as some instances remain running.
+-   Slower than all-at-once but safer.
+-   Users may see mixed versions during transition.
+
+### Blue/Green Deployment
+
+-   Two identical environments: Blue (current) and Green (new).
+-   Deploy to Green while Blue serves traffic.
+-   Test Green thoroughly.
+-   Switch traffic from Blue to Green instantly.
+-   Instant rollback by switching back to Blue.
+-   Higher cost due to duplicate infrastructure.
+
+### Canary Deployment
+
+-   Routes a small percentage of traffic (e.g., 5%) to the new version.
+-   Monitor metrics (errors, latency) for the canary group.
+-   Gradually increase traffic if healthy.
+-   Rollback quickly if issues arise.
+-   Minimizes impact of bad releases.
+
+| Strategy | Downtime | Risk | Cost | Complexity |
+|---|---|---|---|---|
+| All-at-Once | Yes | High | Low | Low |
+| Rolling | No | Medium | Low | Medium |
+| Blue/Green | No | Low | High | High |
+| Canary | No | Lowest | Medium | High |
+
+> [!Tip]
+> **Start with Rolling, aim for Blue/Green**: Rolling updates are a good balance of safety and cost. As maturity increases, move to Blue/Green for critical production services where zero downtime is mandatory. Use Canary for high-traffic user-facing applications to detect subtle issues.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1.  Define Continuous Integration and list its three core practices.
+2.  What is the key difference between Continuous Delivery and Continuous Deployment?
+3.  Describe the four stages of a typical CI/CD pipeline.
+4.  Why is fast feedback important in CI?
+5.  What role does AWS CodeBuild play in CodePipeline?
+6.  Explain the Blue/Green deployment strategy.
+7.  When would you choose Canary deployment over Blue/Green?
+8.  What is the purpose of AWS CodeArtifact?
+9.  Why should you automate testing in the CI stage?
+10. How does CodeDeploy handle failed deployments?
+
+### Scenario Questions
+
+**Scenario 1: Integration Hell**
+Team merges code once a month, resulting in days of fixing conflicts.
+
+-   Implement Continuous Integration.
+-   Require developers to commit to main at least daily.
+-   Set up automated builds and tests on every commit.
+-   Fix broken builds immediately.
+-   Reduce batch size to minimize conflict complexity.
+
+**Scenario 2: Fear of Deployment**
+Team is afraid to deploy on Fridays because releases often break things.
+
+-   Implement automated testing to catch bugs before production.
+-   Use Blue/Green deployment to enable instant rollback.
+-   Deploy smaller changes more frequently.
+-   Improve monitoring to detect issues quickly.
+-   Build confidence through successful, low-risk releases.
+
+**Scenario 3: Slow Build Times**
+CI pipeline takes 45 minutes, discouraging frequent commits.
+
+-   Parallelize test execution.
+-   Cache dependencies in CodeBuild.
+-   Split monolithic build into smaller microservice builds.
+-   Optimize build scripts and remove unnecessary steps.
+-   Use incremental builds where possible.
+
+**Scenario 4: Regulatory Compliance**
+Financial app requires manual sign-off before production release.
+
+-   Implement Continuous Delivery, not Deployment.
+-   Add a Manual Approval action in CodePipeline before Prod stage.
+-   Require specific IAM users to approve.
+-   Audit trail of who approved and when.
+-   Ensure all automated tests pass before approval gate.
+
+**Scenario 5: Dependency Management**
+Developers use different versions of libraries, causing "it works on my machine" issues.
+
+-   Use AWS CodeArtifact to centralize dependencies.
+-   Define exact versions in `package.json` or `pom.xml`.
+-   CodeBuild pulls dependencies from CodeArtifact.
+-   Ensures consistent build environment for everyone.
+-   Scan dependencies for vulnerabilities automatically.
+
+## Key Takeaways
+
+-   CI automates building and testing code on every commit.
+-   Continuous Delivery requires manual approval for production; Continuous Deployment does not.
+-   A standard pipeline has Source, Build, Test, and Deploy stages.
+-   AWS CodePipeline orchestrates the workflow; CodeBuild handles builds; CodeDeploy handles releases.
+-   Blue/Green deployment offers zero downtime and instant rollback.
+-   Canary deployment minimizes risk by exposing new code to a small user subset.
+-   Fast feedback loops are critical for CI success.
+-   Automated testing is non-negotiable for reliable CD.
+-   Artifact management ensures consistency across environments.
+-   Choose deployment strategy based on risk tolerance and cost constraints.
+
+> [!Important]
+> **Automate the boring stuff**: The goal of CI/CD is to remove human error from repetitive tasks. If a human has to click a button to copy a file, automate it. If a human has to check if tests passed, automate the notification. Trust your automation, but verify it with monitoring. The pipeline is your safety net; keep it strong, fast, and reliable.
