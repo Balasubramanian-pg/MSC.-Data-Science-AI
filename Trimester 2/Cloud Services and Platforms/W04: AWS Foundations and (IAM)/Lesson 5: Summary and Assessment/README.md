@@ -1,4 +1,3 @@
-# Migration in progress
 # W04: AWS Foundations and IAM - Summary and Assessment
 
 This module covers the foundational elements of Amazon Web Services: global infrastructure, core services, Identity and Access Management, and account security. It builds from physical infrastructure to identity controls to practical hands-on tasks. The goal is to understand how AWS is organized and how security is enforced at every layer.
@@ -115,3 +114,124 @@ flowchart TD
     B[GuardDuty] --> E
     C[Config] --> E
     D[Access Analyzer] --> E
+    E --> F[Centralized SIEM and Response]
+```
+
+> [!Tip]
+> **Enable GuardDuty in all accounts and Regions**: It is the primary threat detection service for AWS. Enable it centrally through Organizations for consistent coverage.
+
+## Integrated View
+
+The module connects infrastructure, identity, and security into a single operating model.
+
+- Global infrastructure determines where resources live and how they fail.
+- IAM controls who can do what with those resources.
+- Account security protects the environment itself.
+- Hands-on practice builds fluency with the tools.
+- The shared responsibility model frames every decision.
+
+```mermaid
+flowchart LR
+    A[Global Infrastructure] --> B[Core Services]
+    B --> C[IAM]
+    C --> D[Account Security]
+    D --> E[Monitoring and Response]
+    E --> A
+```
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Describe the relationship between Regions, Availability Zones, and Edge Locations.
+2. Explain why each AWS Region contains at least three Availability Zones.
+3. List five factors to consider when selecting an AWS Region.
+4. Compare Local Zones, Wavelength Zones, and Outposts.
+5. Explain the shared responsibility model.
+6. Describe the difference between an IAM user, group, role, and policy.
+7. Explain the policy evaluation logic, including explicit deny.
+8. Describe when to use IAM roles instead of users.
+9. List five IAM best practices.
+10. Explain how to create an IAM role for an EC2 instance and attach it.
+11. Describe the purpose of IAM Access Analyzer and how to use it.
+12. List the root user protection best practices.
+13. Explain why SCPs are guardrails, not grants.
+14. Compare the roles of CloudTrail, Config, GuardDuty, and Security Hub.
+15. Describe how AWS Control Tower automates landing zone setup.
+
+### Scenario Questions
+
+**Scenario 1: Onboarding a New Developer**
+A new developer joins the team. They need console access and read-only permissions to S3 and EC2. Outline the steps.
+
+- Create a group `Developers` with policies `AmazonS3ReadOnlyAccess` and `AmazonEC2ReadOnlyAccess`.
+- Create an IAM user for the developer.
+- Add the user to the group.
+- Enforce MFA and provide the console sign-in URL.
+
+**Scenario 2: EC2 Access to S3**
+An application running on EC2 needs to write logs to an S3 bucket. How do you grant access?
+
+- Create an IAM role with a policy allowing `s3:PutObject` on the log bucket.
+- Attach the role to the EC2 instance profile.
+- The application uses the instance metadata service to obtain temporary credentials.
+
+**Scenario 3: Cross-Account Access**
+A partner company needs to read from your S3 bucket. How do you grant access securely?
+
+- Create a role in your account that trusts the partner's AWS account.
+- Grant the partner permission to assume the role.
+- Alternatively, add a bucket policy that allows the partner's account.
+- Use least privilege and monitor with CloudTrail.
+
+**Scenario 4: New AWS Account Setup**
+A company creates a new AWS account. What security controls should be applied first?
+
+- Enable MFA for the root user and remove any root access keys.
+- Create IAM users or connect IAM Identity Center for workforce access.
+- Enable CloudTrail, Config, GuardDuty, and Security Hub.
+- Configure S3 Block Public Access.
+- Set account-level contacts and AWS Budgets.
+
+**Scenario 5: Multi-Account Governance**
+A company grows from one AWS account to twelve. How should they govern these accounts?
+
+- Use AWS Organizations to group accounts into OUs.
+- Apply SCPs to restrict unapproved Regions and prevent CloudTrail tampering.
+- Deploy Control Tower to automate landing zone setup and guardrails.
+- Use IAM Identity Center for central workforce access.
+- Aggregate Security Hub findings in a delegated administrator account.
+
+```mermaid
+flowchart TD
+    A[Assessment Scenario] --> B{Primary Requirement?}
+    B -->|Developer Access| C[Group and Policy]
+    B -->|Service Access| D[IAM Role]
+    B -->|Cross-Account| E[Role or Bucket Policy]
+    B -->|Account Security| F[Root Lockdown and Monitoring]
+    C --> G[Apply Least Privilege]
+    D --> G
+    E --> G
+    F --> G
+    G --> H[Test and Monitor]
+```
+
+## Key Takeaways
+
+- AWS global infrastructure is organized into Regions, Availability Zones, and Edge Locations.
+- Regions are isolated from each other. Availability Zones provide high availability within a Region.
+- The shared responsibility model defines the boundary between AWS and customer security.
+- IAM controls access through users, groups, roles, and policies.
+- Explicit deny always overrides any allow. The default is deny.
+- Roles provide temporary credentials and are preferred over long-term access keys.
+- Least privilege, MFA, and regular review are essential IAM best practices.
+- Account security starts with root user protection: enable MFA, remove access keys, use it sparingly.
+- AWS Organizations and SCPs set guardrails across accounts. SCPs do not grant permissions.
+- Control Tower automates landing zone setup with preventive, detective, and proactive controls.
+- CloudTrail records API activity. Config records resource changes. GuardDuty detects threats. Security Hub aggregates findings.
+- IAM Identity Center simplifies workforce access across multiple accounts.
+- Hands-on practice with IAM is essential for proficiency.
+- Security is layered. No single control is sufficient.
+
+> [!Important]
+> **Secure the account before you build**: A compromised account undermines every workload it contains. Protect the root user, apply IAM best practices, establish multi-account governance, and enable continuous monitoring before deploying production resources.
