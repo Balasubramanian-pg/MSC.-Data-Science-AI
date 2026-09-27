@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 4: Event-Driven Pipelines
 
 Here are structured notes on **Event-Driven Pipelines**, based on industry sources and your course module context.
@@ -77,4 +76,73 @@ Event-driven pipelines use a **push architecture**: the **server pushes data to 
 ## Event-Driven vs. Batch: The Real Difference
 
 - **Batch systems**: The unit is usually a **job run**. You pay when the job runs. Cost is tied to compute hours, storage scans, and job orchestration.
-- **E
+- **Event-driven systems**: The unit is an **event**. The architecture is built around **triggers** — a new order arrives, a file lands in S3, a row changes in DynamoDB. Something happens **immediately**.
+- **From a finance lens**, this becomes a math problem: **cost per batch job run vs. cost per event processed**.
+- **Batch systems concentrate cost into time windows; event systems distribute cost across the day**. The shape of your workload matters more than ideology.
+- **Batch systems do not care about micro-spikes**; they scan what is there when they run. **Streaming systems care deeply** — a flash sale can multiply event volume, meaning more Lambda invocations and more throughput costs.
+
+> [!IMPORTANT]
+> **The unit of cost shifts from job runs to individual events — event-driven systems distribute cost across the day but are sensitive to volume spikes.**
+
+## Benefits of Event-Driven Pipelines
+
+- **Low latency** — Events are processed the moment they occur, enabling **real-time dashboards, alerting, and anomaly detection**.
+- **Decoupled producers and consumers** — Brokers enable **independent scaling** and development.
+- **Replay capability** — Kafka's retention model means downstream teams can **join a pipeline after the fact and replay historical events** — a capability batch pipelines cannot offer.
+- **No dual-write risk** — CDC reads the transaction log, so the database transaction is the **single source of truth**.
+- **No application code changes** — CDC-to-Kafka captures changes **without modifying application code**.
+- **Backfills become replays** — With event-based systems, **backfills become replays**, late data becomes a **first-class concern**, and debugging shifts from **job-centric to time-centric reasoning**.
+
+> [!IMPORTANT]
+> **Event-driven pipelines decouple producers from consumers, enable replay for backfills, and eliminate dual-write complexity by reading directly from transaction logs.**
+
+## Challenges and Anti-Patterns
+
+### Common Anti-Patterns
+
+- **Subscribing to broad event streams without filtering** — Forces agents to receive and process events they immediately discard, **wasting compute resources**.
+- **Using polling-based event detection instead of push-based delivery** — Adds **latency** and consumes compute during **idle periods**.
+- **Including full data payloads in events** rather than event references — Inflates **event size and network transfer time** when most consumers only need a subset.
+
+### Operational Challenges
+
+- **Distributed debugging** — Event-driven architectures are distributed, asynchronous, and often multi-service. Debugging can mean **tracing an event from API Gateway to Lambda to SQS to Glue to Redshift**.
+- **Operational overhead is not always visible in cost reports** but shows up in **engineering hours**.
+- **Governance and cross-instance coordination** emerge as ongoing challenges.
+- **Cost sensitivity** — If you design poorly, your real-time pipeline becomes a **real-time bill shock**.
+
+> [!IMPORTANT]
+> **Unfiltered event subscriptions, polling instead of push delivery, and full payloads in events are the three most common anti-patterns — all waste compute and latency.**
+
+## Best Practices
+
+- **Configure content-based filtering** — Use event bus rules so agents receive only events whose attributes match their responsibilities.
+- **Design minimal event schemas with references rather than full payloads** — Keep event payloads to **routing metadata and identifiers**, store full data in S3 or DynamoDB, and register schemas in a schema registry.
+- **Implement DynamoDB Streams for data-change-driven triggers** — Trigger agents directly from data changes **without polling**.
+- **Implement idempotency keys for event deduplication** — Apply idempotency keys so agents **don't process the same event twice** under at-least-once delivery.
+- **Monitor event processing metrics** — Track **event-to-invocation latency, filter efficiency, and throughput**, and publish these metrics so filtering and routing can be tuned from measured behavior.
+- **Use ForEachBatch for custom routing** when a single stream needs to be routed differently based on content.
+
+> [!IMPORTANT]
+> **Filter at the bus, keep events lightweight, use idempotency keys, and monitor event-to-invocation latency — these four practices prevent the most common event-driven failures.**
+
+## Use Cases
+
+- **Real-time dashboards and alerting** — When decisions depend on fresh data.
+- **Anomaly detection** — Reacting to abnormal patterns as they emerge.
+- **Microservices integration** — Decoupled services communicating via events.
+- **Search indexing** — Keeping search indexes synchronized with database changes in near real-time.
+- **Cache invalidation** — Updating caches when underlying data changes.
+- **IoT and event monitoring** — Processing high-volume sensor data streams.
+- **Fraud detection** — Identifying suspicious transactions as they occur.
+- **Customer experience personalization** — Responding to user actions in real time.
+
+> [!IMPORTANT]
+> **Event-driven pipelines shine when the business value of fresh data exceeds the operational cost of distributed, always-on infrastructure.**
+
+## Key Takeaway
+
+Event-driven pipelines **shift the unit of work from job runs to individual events**. They **decouple producers from consumers**, enable **replay for backfills**, and **eliminate dual-write complexity** by reading directly from transaction logs. The trade-off is **operational complexity** — distributed debugging, cost sensitivity to volume spikes, and the need for disciplined filtering, idempotency, and schema management. The right approach is not "always real-time" but rather **designing workloads as streams first** so that processing speed becomes a **configuration choice** rather than an architectural constraint.
+
+> [!IMPORTANT]
+> **Design event-first, then choose your processing speed — this makes real-time a configuration choice, not an architectural commitment.**
