@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 5: Robustness and Sensitivity Analysis
 
 Robustness and sensitivity analysis evaluate how stable neural network predictions remain under input perturbations, distributional shifts, and adversarial manipulations. While standard performance metrics assume identically distributed training and test distributions, real-world deployment exposes architectures to sensor noise, environmental corruptions, and targeted attacks. Quantifying local input gradients, out-of-distribution stability, and worst-case bounds guarantees that models remain reliable when test conditions deviate from nominal training environments.
@@ -66,4 +65,67 @@ Robustness and sensitivity analysis evaluate how stable neural network predictio
 ### Systematic Corruption Benchmarking
 
 - The **Common Corruptions Benchmark** evaluates model resilience against non-adversarial, realistic environmental noise across standardized corruption categories (noise, blur, weather conditions, and digital compressions).
-- Performance d
+- Performance degrades systematically across five discrete severity levels ($s \in \{1, 2, 3, 4, 5\}$).
+- The **Corruption Error ($CE$)** normalizes the classification error of evaluated model $f$ against a standard baseline model $b$ for corruption type $c$ and severity $s$:
+  $$\text{CE}_c^f = \frac{\sum_{s=1}^5 E_{s, c}^f}{\sum_{s=1}^5 E_{s, c}^b}$$
+- The **Mean Corruption Error (mCE)** aggregates performance across all corruption categories:
+  $$\text{mCE} = \frac{1}{|\mathcal{C}|} \sum_{c \in \mathcal{C}} \text{CE}_c^f$$
+- Lower mCE values indicate superior generalized robustness to real-world sensory degradation.
+
+> [!Tip]
+> **Stress-testing pipelines**: include systematic corruption benchmarks in continuous evaluation pipelines to catch out-of-distribution degradation that clean validation accuracy cannot detect.
+
+## Certified Defense Frameworks and Trade-Offs
+
+### Min-Max Adversarial Training
+
+- Robust optimization reframes empirical risk minimization into a saddle-point **min-max optimization problem**:
+  $$\min_\theta \mathbb{E}_{(x, y) \sim \mathcal{D}} \left[ \max_{\delta \in \mathcal{S}} \mathcal{L}(f_\theta(x + \delta), y) \right]$$
+- The inner maximization searches for the worst-case adversarial perturbation $\delta$ within constraint set $\mathcal{S}$ using multi-step PGD.
+- The outer minimization updates model parameters $\theta$ via standard SGD to minimize the loss evaluated on those worst-case samples.
+- Min-max adversarial training produces networks with empirical resilience against first-order attacks, but increases training computational cost roughly five- to ten-fold.
+
+### Certified Robustness via Randomized Smoothing
+
+- Empirical defenses remain susceptible to newer or stronger adaptive attacks, creating a demand for mathematically provable *certified robustness*.
+- **Randomized smoothing** transforms an arbitrary base classifier $f$ into a provably robust smoothed classifier $g$ by evaluating expectations under isotropic Gaussian noise:
+  $$g(x) = \arg\max_c P_{\epsilon \sim \mathcal{N}(0, \sigma^2 I)}\left(f(x + \epsilon) = c\right)$$
+- If the top class probability $p_A$ and runner-up probability $p_B$ satisfy $p_A > p_B$, the smoothed model $g$ is provably robust within an $L_2$ radius $R$:
+  $$R = \frac{\sigma}{2} \left( \Phi^{-1}(p_A) - \Phi^{-1}(p_B) \right)$$
+  where $\Phi^{-1}$ is the inverse cumulative distribution function of the standard Gaussian distribution.
+
+### The Accuracy-Robustness Trade-Off
+
+- Enhancing adversarial robustness often leads to a drop in clean accuracy on unperturbed test data.
+- The **robustness-accuracy dilemma** arises because the Bayes optimal decision boundary for clean distributions can differ substantially from the boundary that maximizes the minimum distance to all training instances.
+- Forcing a model to tolerate perturbations expands its decision margins, smoothing out fine-grained discriminative features needed to separate closely adjoining classes in clean space.
+
+> [!Important]
+> **The accuracy-robustness trade-off**: optimizing for worst-case adversarial margins pulls decision boundaries away from high-density data regions, often imposing a direct reduction in clean data accuracy.
+
+## Comparative Analysis of Robustness Evaluation Paradigms
+
+| Robustness Paradigm | Perturbation Nature | Evaluation Objective | Mathematical Metric | Computational Cost | Primary Limitation |
+|---|---|---|---|---|---|
+| **Local Sensitivity Analysis** | Infinitesimal ($\delta \to 0$) | Measure local gradient magnitudes | Jacobian Frobenius Norm ($\|J\|_F$) | Low (Single backward pass) | Fails to capture non-linear jumps beyond local neighborhoods |
+| **Empirical Adversarial (FGSM)** | Single-step $L_\infty$ | Evaluate simple gradient-based shifts | Error under FGSM at fixed $\epsilon$ | Low (One forward-backward step) | Susceptible to gradient masking; overestimates true robustness |
+| **Iterative Adversarial (PGD)** | Multi-step $L_p$ | Find worst-case empirical perturbation | Robust accuracy under $K$-step PGD | High ($K$ forward-backward loops) | Not mathematically guaranteed; vulnerable to adaptive attacks |
+| **Certified Smoothing** | Stochastic Gaussian noise | Prove certified prediction radius | Certified radius $R$ via Neyman-Pearson | High (Monte Carlo sampling $N \ge 10^4$) | High inference latency; restricted primarily to $L_2$ balls |
+| **Corruption Testing (mCE)** | Natural transformations | Measure performance under domain shift | Mean Corruption Error relative to baseline | Moderate (Inference across corruption suite) | Evaluates predefined synthetic corruptions rather than open-world shifts |
+
+> [!Tip]
+> **Combined robustness auditing**: pair empirical PGD stress-testing with corruption benchmark suites (such as mCE) to evaluate both worst-case adversarial defenses and average-case environmental stability.
+
+## Key Takeaways
+
+- **Input sensitivity measures local fragility**: high Jacobian norms reveal that minor input perturbations produce outsized shifts in output logits.
+- **Spectral norm bounds guarantee stability**: bounding the product of layer-wise weight spectral norms restricts the network's global Lipschitz constant, stabilizing representations.
+- **Adversarial vulnerability stems from high dimensionality**: small linear perturbations accumulate across wide input dimensions, driving large cumulative logit deviations.
+- **PGD provides reliable empirical auditing**: iterative projected gradient attacks bypass gradient masking to establish realistic lower bounds on empirical adversarial accuracy.
+- **Distribution shifts degrade uncalibrated models**: covariate, label, and concept shifts alter data geometry, requiring standardized benchmarks like mCE to isolate out-of-distribution drop-offs.
+- **Adversarial min-max training hardens decision margins**: training against worst-case perturbations discovered during optimization prevents empirical boundary collapse.
+- **Randomized smoothing guarantees certified margins**: adding Gaussian noise to inference inputs provides mathematically provable $L_2$ robustness radii via order statistics.
+- **Robustness incurs clean accuracy penalties**: enlarging safety margins around decision boundaries frequently sacrifices fine-grained discriminative capacity on uncorrupted samples.
+
+> [!Important]
+> **Comprehensive safety audits require diverse metrics**: measuring model health exclusively on clean validation data hides severe operational fragilities; production deployment demands auditing local sensitivity, adversarial vulnerability, and environmental corruption resilience simultaneously.
