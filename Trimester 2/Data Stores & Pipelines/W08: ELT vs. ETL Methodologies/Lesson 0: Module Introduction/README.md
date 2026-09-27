@@ -1,4 +1,3 @@
-# Migration in progress
 ## Module Introduction: ELT vs. ETL Methodologies
 
 Modern data engineering relies on two foundational paradigms to ingest, clean, and prepare data for analytical consumption: Extract, Transform, Load (ETL) and Extract, Load, Transform (ELT). Understanding the architectural divergence between these strategies is critical for designing scalable data systems, controlling infrastructure expenditures, and meeting query performance demands. This module establishes the structural foundations, tool ecosystems, and trade-off criteria governing both methodologies.
@@ -50,4 +49,59 @@ Modern data engineering relies on two foundational paradigms to ingest, clean, a
 | Scalability | Constrained by transformation server capacity | Highly scalable via elastic cloud warehouse resources |
 | Maintenance Overhead | High; pipeline logic changes require full extract reruns | Lower; logic updates are rerun directly against raw stored data |
 | Compute Cost Model | Fixed server hardware or standalone cluster operational costs | Pay-as-you-go elastic query consumption |
-| Data Privacy Handling | Masks and scrubs sensitive data before loading into warehouse | Requires column-level security or dynamic mask
+| Data Privacy Handling | Masks and scrubs sensitive data before loading into warehouse | Requires column-level security or dynamic masking within the warehouse |
+
+> [!Tip]
+> **In-warehouse compute efficiency**: Leveraging distributed SQL query engines inside cloud platforms minimizes data movement and optimizes query parallelism.
+
+**Key Pipeline Components and Modern Tooling**
+
+- **Ingestion and Transport Layer**: Tools such as Fivetran, Airbyte, Kafka, and AWS Kinesis capture records and transfer them across boundaries with minimal logic.
+- **Dedicated ETL Engines**: Apache Spark, AWS Glue, and Apache Flink excel at heavy distributed transformations, stream filtering, and large-scale external file processing.
+- **Storage and Warehouse Platforms**: Snowflake, Google BigQuery, Amazon Redshift, and Databricks Lakehouse serve as the target compute and storage engines for ELT workflows.
+- **Data Transformation Layer**: dbt (data build tool) manages SQL-based transformations, automated testing, documentation, and version control natively within ELT architectures.
+- **Workflow Orchestrators**: Apache Airflow, Prefect, and Dagster schedule dependencies, trigger tasks, handle retries, and monitor health across both paradigms.
+
+> [!Important]
+> **Transformation isolation**: Decoupling the extraction and loading steps with tools like Fivetran from modular transformation workflows with dbt increases pipeline maintainability and fault tolerance.
+
+**When to Choose ETL versus ELT**
+
+- Select **ETL** when handling strict data privacy, HIPAA, or GDPR requirements where personally identifiable information (PII) must never enter the analytical warehouse unmasked.
+- Select **ETL** when target storage costs are restrictive and keeping high-volume raw transactional records is economically infeasible.
+- Select **ETL** when source data formats require complex proprietary parsing libraries that cannot run within standard SQL or lakehouse query engines.
+- Select **ELT** when raw data schemas mutate frequently and rigid pre-load pipelines break continuously.
+- Select **ELT** when engineering teams possess deep SQL expertise and want to empower analytical engineers to write business logic independently.
+- Select **ELT** when near real-time ingestion availability is needed for raw operational data monitoring.
+
+> [!Tip]
+> **Regulatory compliance constraints**: Pipelines handling unmasked personally identifiable information often require an ETL approach to scrub sensitive attributes prior to warehouse persistence.
+
+**Real-World Case Studies**
+
+- **Case 1: Regulated Core Banking Pipeline (ETL)**: A financial institution extracts transactions from mainframes, cleans and anonymizes credit card accounts using an Apache Spark cluster, and pushes aggregate balance models to an on-premises data warehouse. The architecture guarantees zero customer identifying attributes cross the boundary into analytics reporting layers.
+- **Case 2: E-Commerce Behavioral Platform (ELT)**: A global online retailer captures clickstream events from mobile applications and web browsers, streaming millions of raw JSON records into Snowflake hourly. Analytics engineers use dbt models running on Snowflake compute to parse the JSON, attribute conversion funnels, and calculate daily active user metrics without risking raw event loss.
+
+> [!Important]
+> **Cost optimization via workload sizing**: Scaling compute resources strictly during data transformation windows prevents runaway cloud warehouse bills under heavy ingestion workloads.
+
+**Assessment Preparation**
+
+- Practice Scenario 1: A healthcare company needs to ingest patient electronic health records (EHR) containing sensitive diagnosis codes. Explain whether ETL or ELT is optimal when data governance mandates zero storage of plaintext Social Security numbers in the analytics layer.
+- Practice Scenario 2: A marketing agency ingests advertising performance data from 30 different APIs whose schema definitions change weekly without warning. Contrast how an ETL pipeline versus an ELT pipeline handles schema drift in this context.
+- Practice Question 1: What is the primary operational risk associated with running heavy data cleansing directly inside a cloud data warehouse under an ELT pattern?
+- Practice Question 2: Why does schema-on-read provide higher operational agility compared to schema-on-write during exploratory data analysis?
+
+> [!Tip]
+> **Architectural trade-off evaluation**: Exam questions on pipeline design require evaluating network transfer bottlenecks, schema volatility, and query concurrency rather than selecting a universally superior methodology.
+
+**Key Takeaways**
+
+- The primary distinction between ETL and ELT lies in where the data transformation compute step occurs relative to the loading step.
+- ETL relies on an intermediate compute engine, enforces schema-on-write, and protects warehouse destinations from raw or sensitive data.
+- ELT leverages elastic cloud warehouse power, preserves raw data for future recomputation, and speeds up initial ingestion time.
+- Toolsets reflect the architectural choice: ETL typically pairs Spark or custom code with target databases, whereas ELT pairs ingestion connectors and dbt with cloud data platforms.
+- Pipeline design decisions must balance regulatory privacy requirements, computational efficiency, budget limitations, and team skill sets.
+
+> [!Important]
+> **Methodology selection criterion**: The optimal data ingestion paradigm is determined by the balance between data privacy governance, source format flexibility, and target compute scalability.
