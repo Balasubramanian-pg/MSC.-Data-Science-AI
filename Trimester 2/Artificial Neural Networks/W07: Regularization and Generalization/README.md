@@ -1,4 +1,3 @@
-# Migration in progress
 # W07: Regularization and Generalization
 
 ## Regularization and Generalization in Deep Neural Networks
@@ -96,4 +95,99 @@ Deep neural networks possess millions or billions of parameters, granting them t
 
 ### The Implicit Geometric Ensemble Perspective
 
-- A network containing $n$ dropout neurons represents a collection of $2^n$ distinct sub-architectures that share paramete
+- A network containing $n$ dropout neurons represents a collection of $2^n$ distinct sub-architectures that share parameters.
+- Training with dropout samples a different sub-network for each mini-batch step, updating shared weights across all sampled topologies.
+- At inference time, evaluating the unmasked network with shared weights approximates the **geometric mean** of the predictions produced by all $2^n$ sub-networks.
+- Dropout acts as an efficient ensemble method, combining the regularization benefits of thousands of independent models within a single parameter footprint.
+
+> [!Tip]
+> **Inverted dropout trains an implicit ensemble**: scaling active neurons by $1/p$ during training keeps expected activation magnitudes constant, allowing inference to approximate an ensemble average over $2^n$ sub-networks in a single forward pass.
+
+## Data Augmentation and Noise Injection
+
+### Data Augmentation and Invariance Enforcement
+
+- The most effective method for improving generalization is training on larger datasets; when collecting additional data is impossible, **data augmentation** synthesizes new samples by applying label-preserving transformations to existing inputs.
+- Augmentation enforces mathematical **invariance** and **equivariance** in learned representations:
+  - **Vision:** Random horizontal flipping, rotation, scaling, cropping, affine translation, and color jittering teach models to ignore non-semantic pixel transformations.
+  - **Natural Language:** Synonym replacement, back-translation across intermediate languages, and contextual word masking introduce syntactic variation without changing semantic meaning.
+  - **Audio:** Pitch shifting, time stretching, and background ambient noise injection improve acoustic robustness.
+- Data augmentation expands the empirical data distribution, making the empirical risk landscape approximate the true risk distribution more closely.
+
+### Mixup and CutMix Regularization
+
+- Traditional classification trains on one-hot targets, encouraging models to output extreme, overconfident probabilities near decision boundaries.
+- **Mixup** (Hongyi Zhang et al., 2017) trains models on linear interpolations of random sample pairs and their corresponding labels:
+  $$\tilde{x} = \lambda x_i + (1 - \lambda) x_j$$
+  $$\tilde{y} = \lambda y_i + (1 - \lambda) y_j$$
+  where mixing coefficient $\lambda \sim \text{Beta}(\alpha, \alpha)$ with $\alpha \in [0.1, 0.4]$.
+- Mixup enforces linear behavior between training examples, eliminating erratic oscillations outside sample clusters and improving adversarial robustness.
+- **CutMix** (Sangdoo Yun et al., 2019) replaces a rectangular region of image $x_i$ with a patch from image $x_j$, setting target labels proportional to the bounding box pixel area:
+  $$\tilde{y} = \lambda y_i + (1 - \lambda) y_j, \quad \text{where } \lambda = 1 - \frac{\text{Area}(\text{Patch})}{\text{Area}(\text{Image})}$$
+- CutMix forces networks to identify objects using distributed spatial cues rather than relying on solitary, highly localized features.
+
+### Label Smoothing and Overconfidence Suppression
+
+- Training classification models with one-hot target vectors ($y_k \in \{0, 1\}$) paired with Softmax cross-entropy encourages logits to diverge toward positive and negative infinity ($z_k \to +\infty$).
+- Proposed by Christian Szegedy et al. (2016), **Label Smoothing** replaces hard one-hot targets with a smoothed distribution that incorporates uniform probability mass:
+  $$y_k^{\text{smooth}} = (1 - \epsilon) y_k + \frac{\epsilon}{K}$$
+  where $K$ is the number of classes, and $\epsilon \in (0, 0.2]$ is the smoothing hyperparameter.
+- Label smoothing prevents output logits from growing excessively large, constraining parameter norms and reducing model overconfidence on mislabeled data.
+
+> [!Important]
+> **Label smoothing prevents overconfident logit saturation**: blending hard one-hot labels with uniform distributions sets finite upper bounds on pre-activation logits, preventing parameter values from growing uncontrollably.
+
+## Implicit Regularization Mechanisms
+
+### Early Stopping as a Bounded Optimization Horizon
+
+- **Early stopping** monitors validation loss across epochs, terminating optimization when performance fails to improve over a designated patience window.
+- In linear models, early stopping is mathematically equivalent to **$L_2$ regularization**.
+- For quadratic loss surfaces initialized at the origin, running gradient descent for $t$ iterations with learning rate $\eta$ bounds the effective parameter search space:
+  $$t \cdot \eta \approx \frac{1}{\lambda}$$
+- Limiting the optimization horizon prevents parameters from expanding into flat directions where training noise dominates, achieving shrinkage comparable to an explicit weight decay coefficient.
+
+### Stochastic Gradient Descent as an Implicit Regularizer
+
+- The stochastic gradient noise generated by mini-batch sampling ($\text{Cov}(\xi) \propto \frac{\eta}{m}$) acts as an **implicit regularizer**.
+- The ratio of learning rate to mini-batch size ($\frac{\eta}{m}$) acts as a diffusion temperature: higher noise levels dislodge parameters from narrow, sharp local minima that possess small basins of attraction.
+- Parameters naturally settle into wide, flat basins where the loss remains low across perturbations, directly improving test set generalization.
+
+### Batch Normalization Noise Side-Effects
+
+- Batch Normalization computes mean and variance statistics over randomly sampled mini-batches:
+  $$\hat{x} = \frac{x - \mu_B}{\sqrt{\sigma_B^2 + \epsilon}}$$
+- Because mini-batch statistics fluctuate around true population statistics, each neuron's activation experiences zero-mean **multiplicative and additive stochastic noise**.
+- This layer-wise perturbation prevents downstream neurons from developing fragile co-adaptations on specific activation magnitudes, producing regularization benefits similar to dropout.
+
+> [!Tip]
+> **Implicit regularizers require no penalty terms**: mini-batch noise, early stopping, and batch normalization introduce structural constraints that steer optimization toward flat, generalizing basins without altering the loss equation.
+
+## Comparative Matrix of Regularization Techniques
+
+| Regularization Strategy | Mathematical Mechanism | Operational Phase | Primary Hyperparameter | Primary Strength | Tradeoff / Failure Mode |
+|---|---|---|---|---|---|
+| **$L_2$ Weight Decay** | Quadratic penalty: $\frac{\lambda}{2}\|w\|_2^2$ | Optimization step | Decay coefficient $\lambda$ | Shrinks parameters along low-curvature directions | Requires coordinate-wise decoupling in Adam (AdamW) |
+| **$L_1$ Regularization** | Absolute penalty: $\lambda\|w\|_1$ | Optimization step | Penalty coefficient $\lambda$ | Induces exact parameter sparsity and feature selection | Non-differentiable at origin; can degrade capacity |
+| **Inverted Dropout** | Stochastic masking: $\frac{a \odot r}{p}$ | Training forward pass | Retention probability $p$ | Breaks co-adaptations; creates implicit $2^n$ ensemble | Increases required training epochs; incompatible with raw BN |
+| **Data Augmentation** | Affine / color space transforms | Data loading pipeline | Transformation ranges | Expands dataset support; enforces geometric invariance | Computationally expensive; risks semantic distortion |
+| **Mixup** | Convex sample mixing: $\lambda x_i + (1-\lambda)x_j$ | Input processing | Beta shape parameter $\alpha$ | Enforces linear interpolation between class clusters | Can cause underfitting if mixing factor $\alpha$ is too high |
+| **Label Smoothing** | Blended targets: $(1-\epsilon)y + \frac{\epsilon}{K}$ | Loss evaluation | Smoothing scalar $\epsilon$ | Prevents overconfident logit explosion | Can harm downstream calibration if probabilities are needed |
+| **Early Stopping** | Validation monitoring | Validation step | Patience window $k$ | Simple to implement; prevents over-training | Relies on validation split size; risks premature stoppage |
+
+> [!Important]
+> **Combine complementary regularizers**: high-performing architectures pair explicit parameter shrinkage (AdamW) with stochastic representations (Dropout), input expansions (Data Augmentation), and implicit noise (Mini-Batch SGD).
+
+## Key Takeaways
+
+- **Generalization separates machine learning from pure optimization**: minimizing empirical training risk is a proxy for minimizing expected risk across unseen distributions.
+- **The bias-variance tradeoff explains underfitting and overfitting**, while modern over-parameterization exhibits **double descent**, achieving low test error through implicit regularization.
+- **$L_2$ regularization rescales weights along Hessian eigenvectors**, shrinking parameters along low-curvature noise directions while preserving high-curvature signals.
+- **$L_1$ regularization subtracts constant magnitude updates**, driving weights to absolute zero to generate sparse feature representations.
+- **Inverted dropout scales activations by $1/p$ during training**, preventing neuron co-adaptation while approximating an ensemble of $2^n$ sub-networks during inference.
+- **Data augmentation enforces invariant representations**, expanding empirical data distributions using label-preserving transformations.
+- **Label smoothing bounds logit growth**, preventing models from developing overconfident probability distributions on ambiguous samples.
+- **Implicit regularization emerges naturally from optimization**, where mini-batch gradient noise, early stopping, and batch normalization steer parameters toward flat, robust basins.
+
+> [!Tip]
+> The central law of neural regularization: **unconstrained capacity causes memorization, but calibrated constraints enable generalization**; combining explicit norm penalties, stochastic transformations, and exploratory optimization noise prevents deep networks from fitting idiosyncratic sample noise, ensuring stable performance on unseen data.
