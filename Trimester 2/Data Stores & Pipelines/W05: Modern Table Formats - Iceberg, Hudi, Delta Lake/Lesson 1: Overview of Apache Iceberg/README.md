@@ -1,6 +1,8 @@
-# Migration in progress
 # Lesson 1: Overview of Apache Iceberg
 
 Initial directory setup.
 
-## Ov
+## Overview
+- Module resources and notes will be added here.
+
+Status: Active
