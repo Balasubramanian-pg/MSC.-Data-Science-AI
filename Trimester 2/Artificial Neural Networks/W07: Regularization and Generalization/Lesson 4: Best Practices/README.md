@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 4: Best Practices
 
 ## Regularization Best Practices and Engineering Protocols
@@ -73,3 +72,70 @@ Developing robust deep learning models requires moving beyond isolated regulariz
 - **Engineering Best Practice:** Place Dropout strictly *after* Batch Normalization and non-linear activations ($\text{Conv/Dense} \to \text{BatchNorm} \to \text{ReLU} \to \text{Dropout}$), or avoid Dropout entirely in convolutional networks that use Batch Normalization.
 
 ### Decoupled Weight Decay in Adaptive Solvers
+
+- In adaptive optimizers (Adam, RMSprop), $L_2$ regularization implemented as an objective penalty ($g_t \leftarrow \nabla \mathcal{L} + \lambda \theta$) divides the penalty term by the second-moment accumulator $\sqrt{v_t}$.
+- This coupling causes parameters with large historical gradients to experience less weight decay, while parameters with small historical gradients receive excessive shrinkage.
+- **Engineering Best Practice:** Always deploy **AdamW** rather than standard Adam when using weight decay, ensuring that parameter shrinkage applies directly to weights without passing through adaptive moment accumulators.
+
+### Label Smoothing and Probability Calibration
+
+- While **Label Smoothing** ($\epsilon = 0.1$) improves classification generalization by preventing logits from growing to extreme magnitudes, it modifies the model's posterior probability calibration.
+- Models trained with label smoothing cannot output probabilities near absolute zero or one, causing output probabilities to be underconfident relative to true empirical empirical frequencies.
+- **Engineering Best Practice:** If the trained network feeds into safety-critical downstream pipelines requiring exact posterior probabilities (such as medical diagnosis or autonomous driving confidence thresholds), disable label smoothing or apply post-hoc calibration techniques (such as **Temperature Scaling**) on evaluation sets.
+
+> [!Important]
+> **Resolve the Dropout-BatchNorm conflict**: never place Dropout immediately before Batch Normalization, and ensure adaptive optimizers use AdamW to prevent coordinate-wise scaling from distorting parameter shrinkage.
+
+## Systematic Validation and Ablation Workflows
+
+### Isolating Marginal Contributions via Ablation
+
+- Introducing multiple regularizers simultaneously obscures which technique drives performance gains and which may be harming convergence.
+- Conduct a structured **ablation study** to quantify the marginal validation gain of each component:
+  1. Train the baseline unregularized model to establish the initial generalization gap.
+  2. Add regularizers one by one (e.g., Baseline $\to$ +Weight Decay $\to$ +Data Augmentation $\to$ +Dropout).
+  3. Measure the change in validation accuracy, training convergence speed, and generalization gap at each step.
+  4. Discard regularizers that fail to improve validation metrics or that slow training throughput without offering generalization benefits.
+
+### Early Stopping Calibration and Patience Tuning
+
+- Early stopping must be calibrated to avoid premature termination during temporary training plateaus.
+- **Patience Window Calibration:** Set the patience parameter $k$ proportional to the learning rate schedule; schedules that use step decay or warm restarts require larger patience windows (e.g., $15$ to $30$ epochs) to avoid stopping before scheduled learning rate drops occur.
+- **Metric Selection:** Monitor **validation loss** rather than validation accuracy; validation loss provides a continuous, sensitive signal that reflects confidence degradation before discrete accuracy metrics drop.
+- **Checkpoint Restoration:** Always restore parameters from the historical best epoch ($t_{\text{best}}$); failing to roll back weights leaves the model in the degraded state accumulated over the patience window.
+
+### Data Split Integrity and Leakage Prevention
+
+- Regularization fails if data distribution integrity is compromised during dataset preparation.
+- **Data Leakage:** Applying data augmentation, normalization scaling, or feature imputation across the entire dataset *before* splitting into training, validation, and test sets leaks evaluation statistics into the training pipeline, producing artificially optimistic validation scores.
+- **Engineering Best Practice:** Split raw data into isolated training, validation, and test subsets first; compute normalization statistics strictly on the training partition, and apply data augmentation pipelines exclusively to training instances during runtime loading.
+
+> [!Tip]
+> **Calibrate patience to the learning rate schedule**: ensure early stopping patience windows are wide enough to outlast temporary training plateaus, and always monitor continuous validation loss rather than discrete accuracy.
+
+## Domain-Specific Regularization Recipes Matrix
+
+| Target Domain / Architecture | Primary Regularization Suite | Secondary Regularizers | Incompatible / Deprecated Practices | Recommended Baseline Hyperparameters |
+|---|---|---|---|---|
+| **Deep CNNs (ResNet, ConvNeXt)** | Data Augmentation, Weight Decay | Label Smoothing, Stochastic Depth | Standard Dropout before BatchNorm | AdamW: $\lambda = 10^{-4}$; Augment: RandAugment; Smoothing: $\epsilon = 0.1$ |
+| **Vision Transformers (ViTs)** | Mixup, CutMix, Stochastic Depth | Inverted Dropout, Weight Decay | Training without augmentation or decay | DropPath: $0.1$ to $0.2$; AdamW: $\lambda = 0.05$; Mixup: $\alpha = 0.8$ |
+| **NLP Transformers (BERT, GPT)** | Decoupled Weight Decay, LayerNorm | Attention Dropout, Label Smoothing | Batch Normalization; Spatial Augmentation | AdamW: $\lambda = 0.01$; Dropout: $p = 0.1$; Warmup: $2000$ steps |
+| **Tabular MLPs** | Early Stopping, Inverted Dropout | $L_2$ Weight Decay, $L_1$ Sparsity | Aggressive vision-style augmentations | Dropout: $p = 0.2$ to $0.5$; AdamW: $\lambda = 10^{-3}$; Patience: $15$ |
+| **Recurrent Models (LSTM, GRU)** | Recurrent Dropout, Weight Decay | Gradient Norm Clipping | Standard dropout on recurrent connections | Recurrent Dropout: $p = 0.2$; Clip norm: $c = 1.0$; AdamW: $\lambda = 10^{-4}$ |
+
+> [!Tip]
+> **Use domain recipes as starting baselines**: adopt proven regularization combinations for your specific architecture family, then tune hyperparameters using systematic validation ablations.
+
+## Key Takeaways
+
+- **The layered defense framework** distributes regularization across the data pipeline, model architecture, loss function, and optimization trajectory.
+- **Verify model capacity first**: ensure the unregularized architecture can overfit a miniature subset with zero loss before applying regularization constraints.
+- **Over-regularization degrades performance** by restricting effective capacity too severely, shifting models from high-variance overfitting into high-bias underfitting.
+- **Vision architectures rely heavily on data augmentation and weight decay**, while Transformer language models depend on Layer Normalization, attention dropout, and AdamW.
+- **Avoid placing Dropout immediately before Batch Normalization** to prevent the variance shift conflict between training and inference distributions.
+- **Always use AdamW for adaptive weight decay**, ensuring parameter shrinkage applies directly to weights without distortion from second-moment accumulators.
+- **Label smoothing prevents overconfident logit explosion**, but can alter probability calibration in safety-critical prediction pipelines.
+- **Early stopping requires tracking continuous validation loss** over a calibrated patience window, with weights rolled back to the historical best checkpoint.
+
+> [!Tip]
+> The defining law of regularization engineering: **regularization must match the structural inductive biases of the architecture**; combining modality-appropriate data expansions, decoupled weight decay, and early stopping ensures that deep neural networks generalize reliably without sacrificing expressive capacity.
