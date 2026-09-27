@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: Introduction to Cloud Databases
 
 AWS offers a portfolio of purpose-built database services, each optimised for a specific data model and access pattern. Instead of forcing every workload into a single relational engine, you choose the database that fits the access pattern: relational for ACID transactions, key-value for high-throughput lookups, document for flexible schemas, graph for relationships, and time-series for timestamped data. The core services covered here are Amazon RDS, Amazon Aurora, and Amazon DynamoDB.
@@ -141,4 +140,141 @@ flowchart TD
 In DynamoDB, tables, items, and attributes are the core components.
 
 - **Tables**: A table is a collection of items. There is no limit to the number of items you can store in a table.
-- **Items**: An item is a group of attribut
+- **Items**: An item is a group of attributes that is uniquely identifiable among all other items. Items are similar to rows in a relational database.
+- **Attributes**: Each item is composed of one or more attributes. Attributes are similar to fields or columns in a relational database.
+- **Primary Key**: Each item has a unique primary key that distinguishes it from all other items. A primary key can be a partition key (simple) or a partition key and sort key (composite).
+- **Schemaless**: Other than the primary key, the table is schemaless. Each item can have different attributes and data types. Attributes do not need to be defined beforehand.
+
+### DynamoDB Capacity Modes
+
+| Mode | Description | Use Case |
+|---|---|---|
+| On-Demand | Pay per request. Automatically scales to workload. | Unpredictable traffic, new applications |
+| Provisioned | Specify read and write capacity units. Auto scaling available. | Predictable traffic, cost optimisation |
+
+- On-demand mode is recommended for most DynamoDB workloads.
+- Provisioned mode is cheaper for steady-state workloads where capacity requirements can be reliably forecasted.
+
+### DynamoDB Indexes
+
+| Index Type | Description | Use Case |
+|---|---|---|
+| Local Secondary Index (LSI) | Same partition key, different sort key. Created at table creation. | Alternative sort keys for a partition |
+| Global Secondary Index (GSI) | Different partition key and sort key. Can be created anytime. | Query patterns on non-key attributes |
+
+- You can create up to 20 global secondary indexes per table.
+
+### DynamoDB Features
+
+- **DynamoDB Streams**: Captures item-level changes for event-driven processing. You can use DynamoDB Streams to capture data modification events in DynamoDB tables.
+- **DynamoDB Accelerator (DAX)**: In-memory cache for DynamoDB. Microsecond latency for read-heavy workloads.
+- **Global Tables**: Multi-Region, active-active replication. Sub-second replication. Global tables always use multi-Region eventual consistency (MREC) for multi-account setups.
+- **Point-in-Time Recovery**: Restore to any point in the last 35 days.
+- **Time to Live (TTL)**: Automatically delete expired items.
+- **Transactions**: ACID transactions across multiple items.
+
+> [!Important]
+> **DynamoDB is not a replacement for relational databases**: DynamoDB is optimised for key-based access patterns. It does not support joins, complex queries, or ad-hoc analytics. If you need relational queries, use RDS or Aurora. If you need flexible schema and single-digit millisecond performance at scale, use DynamoDB.
+
+## Database Decision Framework
+
+```mermaid
+flowchart TD
+    A[Database Decision] --> B{Data Model?}
+    B -->|Relational, ACID| C{Engine?}
+    C -->|MySQL/PostgreSQL| D[Aurora or RDS]
+    C -->|Oracle/SQL Server| E[RDS]
+    B -->|Key-Value| F[DynamoDB]
+    B -->|Document| G[DocumentDB]
+    B -->|In-Memory| H[ElastiCache]
+    B -->|Graph| I[Neptune]
+    B -->|Time-Series| J[Timestream]
+    A --> K{Analytics?}
+    K -->|Yes| L[Redshift]
+    A --> M{Streaming?}
+    M -->|Yes| N[Kinesis]
+    A --> O{ETL?}
+    O -->|Yes| P[Glue]
+```
+
+> [!Tip]
+> **Use the decision tree as a starting point**: The right database choice depends on the access pattern, consistency requirements, scale, and operational maturity. The decision tree narrows the field but does not replace judgment. Validate with a pilot before committing at scale.
+
+## Assessment Preparation
+
+### Practice Questions
+
+1. Compare the AWS database categories and give a service for each.
+2. Explain the difference between Amazon RDS and Amazon Aurora.
+3. Describe the two RDS Multi-AZ deployment modes and their failover characteristics.
+4. Explain how RDS read replicas work and what they are used for.
+5. Describe Aurora's distributed storage architecture.
+6. Explain how Aurora Serverless v2 and Aurora Global Database work.
+7. Compare DynamoDB on-demand and provisioned capacity modes.
+8. Explain the difference between Local Secondary Indexes and Global Secondary Indexes.
+9. Describe the core components of DynamoDB: tables, items, and attributes.
+10. Explain why DynamoDB is not a replacement for relational databases.
+11. Describe the use cases for ElastiCache, Neptune, and Timestream.
+12. Explain why choosing the database by access pattern matters.
+
+### Scenario Questions
+
+**Scenario 1: High-Traffic Web Application**
+A SaaS platform needs a relational database that can handle high traffic with auto-scaling storage and fast failover. What should they use?
+
+- Use Amazon Aurora MySQL or PostgreSQL.
+- Aurora provides auto-scaling storage, up to 15 read replicas, and failover under 30 seconds.
+- Use Aurora Global Database for multi-Region disaster recovery.
+- Use Aurora Serverless v2 for variable workloads.
+
+**Scenario 2: Gaming Leaderboard**
+A gaming company needs a database that can handle millions of reads and writes per second with single-digit millisecond latency. What should they use?
+
+- Use Amazon DynamoDB.
+- Use on-demand capacity mode for unpredictable traffic.
+- Use DAX for microsecond read latency.
+- Use Global Tables for multi-Region active-active replication.
+
+**Scenario 3: Traditional Enterprise Application**
+A company is migrating an on-premises Oracle ERP system to AWS. They need a managed relational database with Oracle compatibility. What should they use?
+
+- Use Amazon RDS for Oracle.
+- Use Multi-AZ DB instance deployment for high availability.
+- Use read replicas for read scaling and reporting.
+- Use RDS automated backups for point-in-time recovery.
+
+**Scenario 4: Session State Store**
+A web application needs to store user session state with microsecond latency and high throughput. What should they use?
+
+- Use Amazon ElastiCache for Redis or Memcached.
+- ElastiCache provides microsecond latency for caching and session stores.
+- Use DynamoDB with DAX as an alternative if persistence is required.
+- Use ElastiCache for the hottest data and DynamoDB for durable storage.
+
+**Scenario 5: Fraud Detection Graph**
+A financial services firm needs to detect fraudulent transactions by analysing relationships between accounts, devices, and transactions. What should they use?
+
+- Use Amazon Neptune.
+- Neptune is a graph database optimised for relationship-heavy data.
+- Use it for fraud detection, social networks, and recommendation engines.
+- Combine with DynamoDB for transactional data and Redshift for analytics.
+
+## Key Takeaways
+
+- AWS offers purpose-built databases for different data models and access patterns. Relational for ACID transactions. Key-value for high-throughput lookups. Document for flexible schemas. Graph for relationships. Time-series for timestamped data.
+- Amazon RDS is a managed relational database service supporting six engines: PostgreSQL, MySQL, MariaDB, Oracle, SQL Server, and Db2.
+- RDS Multi-AZ DB instance deployments provide a standby for failover. Multi-AZ DB cluster deployments provide two readable replicas and lower write latency.
+- RDS read replicas use asynchronous replication for read scaling, analytics, and disaster recovery. Each DB instance can have up to 15 read replicas.
+- Amazon Aurora is a MySQL and PostgreSQL-compatible relational database with distributed storage that auto-scales up to 128 TB and replicates across three Availability Zones.
+- Aurora supports up to 15 low-latency read replicas and failover under 30 seconds.
+- Aurora Serverless v2 automatically scales capacity in fine-grained increments.
+- Aurora Global Database spans multiple Regions with sub-second replication and promotion under 1 minute.
+- Amazon DynamoDB is a serverless NoSQL key-value and document database with single-digit millisecond performance at any scale.
+- DynamoDB stores data in tables, items, and attributes. It is schemaless except for the primary key.
+- DynamoDB offers on-demand and provisioned capacity modes. On-demand is recommended for most workloads.
+- DynamoDB Streams capture item-level changes for event-driven processing. DAX provides microsecond read latency. Global Tables provide multi-Region active-active replication.
+- Choose the database by access pattern, not by familiarity. The most common mistake is forcing data into a relational database when a purpose-built database would serve it better.
+- RDS Multi-AZ is for high availability. Read replicas are for read scaling. Aurora is the default choice for new relational workloads. DynamoDB is for key-based access patterns.
+
+> [!Important]
+> **Match the database to the access pattern, not to a single engine for everything**: A modern application typically uses several database types together. A relational database for transactions. A key-value store for session state. An in-memory cache for hot paths. A graph database for relationships. A time-series database for telemetry. Design for the access pattern, not for a single database to do everything. Start with Aurora for relational workloads. Start with DynamoDB for key-value and high-throughput workloads. Use RDS when you need a specific engine. Use purpose-built databases for specialised access patterns.
