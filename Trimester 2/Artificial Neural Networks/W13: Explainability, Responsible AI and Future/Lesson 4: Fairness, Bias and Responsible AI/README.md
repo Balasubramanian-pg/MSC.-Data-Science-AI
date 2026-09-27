@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 4: Fairness, Bias and Responsible AI
 
 Fairness, bias mitigation, and responsible AI frameworks establish mathematical principles and engineering protocols for preventing algorithmic discrimination across deep learning systems. Because neural networks optimize empirical loss over uncurated real-world datasets, they systematically extract, amplify, and encode societal inequities into latent representations. Quantifying demographic disparities through rigorous statistical fairness criteria and implementing targeted interventions across data, optimization, and inference pipelines ensures models satisfy both ethical principles and legal compliance mandates.
@@ -74,3 +73,70 @@ Fairness, bias mitigation, and responsible AI frameworks establish mathematical 
   - **Sufficiency** (Predictive Parity / Calibration)
   are mathematically mutually exclusive.
 - A classifier cannot satisfy all three core fairness families simultaneously under unequal base rates.
+- Selecting an algorithmic fairness objective is fundamentally an ethical, policy, and legal decision rather than a purely technical optimization problem.
+
+### The Fairness-Accuracy Trade-Off
+
+- Imposing fairness constraints bounds the unconstrained optimization landscape, restricting the hypothesis class to parameters that satisfy the designated statistical parity or error rate equalities.
+- This constraint shifts the model away from the Bayes optimal decision boundary for empirical loss, establishing a **Pareto frontier** between predictive accuracy and demographic fairness.
+
+> [!Important]
+> **The fairness impossibility constraint**: mathematical laws prove that no algorithm can satisfy equal acceptance rates, equal error rates, and outcome calibration simultaneously when demographic groups exhibit different base rates in the data.
+
+## Pipeline-Wide Bias Mitigation Frameworks
+
+### Pre-Processing Interventions (Data Level)
+
+- Pre-processing methods modify the training data distribution prior to model optimization.
+- **Re-Weighting:** Assigns instance-specific weights $W_i$ during loss computation to equalize expected demographic selection probabilities:
+  $$W(X_i, A_i, Y_i) = \frac{P(Y = Y_i) \cdot P(A = A_i)}{P(Y = Y_i, A = A_i)}$$
+- **Disparate Impact Remover:** Transforms continuous feature distributions across groups so that their marginal cumulative distributions match while preserving relative within-group feature ranks.
+- **Fair Representation Learning:** Encodes input features $X$ into an intermediate latent representation $Z$ that preserves maximal task information while removing information identifying sensitive attribute $A$.
+
+### In-Processing Interventions (Model Optimization Level)
+
+- In-processing methods incorporate fairness constraints directly into the loss function or optimization mechanics.
+- **Adversarial Debiasing:** Implements a minimax game using two concurrent networks:
+  - A primary predictor network $f_\theta$ minimizing classification loss $\mathcal{L}_{\text{pred}}(f(X), Y)$.
+  - An adversary network $g_\phi$ attempting to predict sensitive attribute $A$ from the predictor's internal representations or logits.
+  - The joint optimization solves:
+    $$\min_\theta \max_\phi \mathcal{L}_{\text{pred}}(f_\theta(X), Y) - \lambda \mathcal{L}_{\text{adv}}(g_\phi(f_\theta(X)), A)$$
+    forcing the predictor to remove information that reveals $A$.
+- **Constrained Optimization:** Implements Lagrange multipliers or penalty terms to enforce Equalized Odds or Demographic Parity boundaries during gradient descent.
+
+### Post-Processing Interventions (Inference Level)
+
+- Post-processing techniques adjust decision boundaries on a frozen model without modifying internal weights.
+- **Threshold Optimization:** Applies group-specific classification thresholds $\tau_{A=0}$ and $\tau_{A=1}$ to continuous output scores $R$ to satisfy Equalized Odds or Equal Opportunity constraints post-hoc:
+  $$\hat{Y} = \begin{cases} 1 & \text{if } R \ge \tau_A \\ 0 & \text{otherwise} \end{cases}$$
+- **Reject Option Classification:** Alters classifications within regions of high model uncertainty near the decision boundary, giving favorable decisions to protected groups underrepresented in positive outcomes.
+
+> [!Tip]
+> **Adversarial debiasing for representations**: deploy adversarial debiasing when building shared foundational embeddings; purging sensitive attributes during representation learning prevents downstream classifiers from inheriting protected proxy signals.
+
+## Comparative Taxonomy of Algorithmic Fairness Criteria
+
+| Fairness Metric | Mathematical Formulation | Focus Variable | Conditioning Variable | Legal / Practical Context | Conflicting Metric |
+|---|---|---|---|---|---|
+| **Demographic Parity** | $P(\hat{Y}=1 \mid A=0) = P(\hat{Y}=1 \mid A=1)$ | Output $\hat{Y}$ | Protected attribute $A$ | Four-Fifths Rule; systemic affirmative inclusion | Equalized Odds & Calibration (if base rates differ) |
+| **Equal Opportunity** | $P(\hat{Y}=1 \mid A=0, Y=1) = P(\hat{Y}=1 \mid A=1, Y=1)$ | True Positive Rate ($TPR$) | Ground truth positive ($Y=1$) | Fair lending; hiring non-discrimination | Demographic Parity & Predictive Parity |
+| **Equalized Odds** | $\text{TPR}_{A=0} = \text{TPR}_{A=1}$ and $\text{FPR}_{A=0} = \text{FPR}_{A=1}$ | Error rates ($TPR, FPR$) | Complete ground truth ($Y$) | Criminal recidivism assessment; medical triage | Demographic Parity & Calibration |
+| **Predictive Parity** | $P(Y=1 \mid \hat{Y}=1, A=0) = P(Y=1 \mid \hat{Y}=1, A=1)$ | Precision (PPV) | Prediction positive ($\hat{Y}=1$) | Insurance actuarial risk assessment | Equalized Odds & Demographic Parity |
+| **Group Calibration** | $P(Y=1 \mid R=r, A=0) = P(Y=1 \mid R=r, A=1)$ | Probability fidelity | Continuous score ($R=r$) | Clinical risk scores; credit scoring systems | Equalized Odds (if base rates differ) |
+
+> [!Tip]
+> **Mitigation selection rule**: use pre-processing re-weighting when data collection is directly fixable, apply in-processing adversarial debiasing when training end-to-end representations, and deploy post-processing thresholding when restricted from altering production model weights.
+
+## Key Takeaways
+
+- **Algorithmic bias originates throughout the lifecycle**: historical inequities, sampling unbalances, and flawed proxy targets corrupt models before optimization begins.
+- **Deep models amplify dataset bias**: minimizing empirical risk drives networks to exaggerate majority demographic correlations, expanding disparate outcomes.
+- **Demographic parity mandates equal acceptance**: statistical parity enforces uniform selection rates across protected groups regardless of ground-truth distribution differences.
+- **Equal opportunity equalizes qualified outcomes**: constraining true positive rates ensures that qualified individuals face identical identification probabilities across groups.
+- **Calibration guarantees score consistency**: group calibration ensures that identical predicted risk scores reflect identical empirical probabilities of success across groups.
+- **The Impossibility Theorem bounds simultaneous fairness**: demographic parity, equalized odds, and calibration cannot co-exist when underlying group base rates differ.
+- **Mitigation intervenes across three pipeline tiers**: pre-processing transforms training data, in-processing adds adversarial or constrained objectives, and post-processing optimizes group decision thresholds.
+- **Adversarial debiasing purges proxy information**: training an auxiliary adversary to predict sensitive attributes strips protected demographic leakage from learned representations.
+
+> [!Important]
+> **Fairness requires intentional ethical alignment**: technical interventions cannot resolve competing definitions of fairness in isolation; engineers and policymakers must select specific mathematical criteria that align with ethical obligations and legal requirements.
