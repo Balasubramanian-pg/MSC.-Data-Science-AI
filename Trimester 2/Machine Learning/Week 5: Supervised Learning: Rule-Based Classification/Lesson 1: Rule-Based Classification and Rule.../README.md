@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: Rule-Based Classification and Rule...
 
 ## Rule-Based Classification and Rule Representation
@@ -110,4 +109,102 @@ flowchart TD
 - **Rule Accuracy (Confidence / Precision):** The conditional probability that an instance belongs to class $y$ given that it triggers condition $X$:
   $$\text{Accuracy}(R) = \frac{n_{\text{correct}}}{n_{\text{covers}}} = \frac{A}{A + B}$$
 
-### Small-Sample Regular
+### Small-Sample Regularization via Laplace Smoothing
+
+- Raw rule accuracy exhibits a pathology: a hyper-specific rule covering a solitary training point ($A = 1, B = 0$) achieves $100\%$ accuracy ($1/1 = 1.0$), despite having zero statistical reliability.
+- The **Laplace Estimator** smooths accuracy estimates by adding a uniform prior, penalizing rules supported by tiny sample sizes:
+  $$\text{Accuracy}_{\text{Laplace}}(R) = \frac{A + 1}{A + B + K}$$
+  where $K$ denotes the total number of target classes.
+- Comparing rules on a binary problem ($K=2$):
+  - A brittle rule covering $1/1$ correct points yields $\text{Accuracy}_{\text{Laplace}} = \frac{1 + 1}{1 + 0 + 2} = \frac{2}{3} \approx \mathbf{0.67}$.
+  - A robust rule covering $90/100$ correct points yields $\text{Accuracy}_{\text{Laplace}} = \frac{90 + 1}{90 + 10 + 2} = \frac{91}{102} \approx \mathbf{0.89}$.
+  - Laplace correction ranks the broader, statistically reliable rule higher than the brittle single-instance rule.
+
+### The M-Estimate and Bayesian Prior Balancing
+
+- The **$m$-Estimate of Accuracy** generalises Laplace smoothing by incorporating non-uniform class prior probabilities:
+  $$\text{Accuracy}_m(R) = \frac{A + m \cdot P(y)}{A + B + m}$$
+  where $P(y)$ is the baseline prevalence of class $y$, and $m$ is an equivalent sample weight hyperparameter.
+- Setting a large $m$ pulls rule evaluation strongly toward class priors unless substantial sample evidence ($A + B \gg m$) confirms high local precision.
+
+### FOIL Information Gain for Conjunctive Search
+
+- First-Order Inductive Learner (**FOIL**) Information Gain evaluates whether appending a candidate conjunct to an existing rule provides a statistically significant improvement:
+  $$\text{FOIL\_Gain} = A_1 \times \left( \log_2\left( \frac{A_1}{A_1 + B_1} \right) - \log_2\left( \frac{A_0}{A_0 + B_0} \right) \right)$$
+  where $A_0, B_0$ represent positive and negative instances covered before adding the conjunct, and $A_1, B_1$ represent counts after adding the conjunct.
+- FOIL Gain favors conjuncts that increase rule precision while maintaining high positive instance coverage ($A_1$).
+
+> [!Tip]
+> **Use Laplace smoothing to avoid brittle rules**: uncorrected accuracy values favor hyper-specific rules that cover single outlier instances; adding Laplace pseudo-counts scales accuracy by coverage volume.
+
+## The Mechanics of Rule Induction Search
+
+### General-to-Specific (Top-Down) Specialization
+
+- **General-to-Specific Search** begins with an unconstrained base rule that covers every instance in the feature space:
+  $$R_0: \text{TRUE} \implies y$$
+- The algorithm iteratively evaluates candidate conjuncts ($A_j = v$ or $A_j \le v$) to add to the antecedent via conjunction.
+- Adding a condition **specializes** the rule: it contracts spatial coverage, filtering out false positives ($B \downarrow$) and increasing rule precision.
+- The induction loop appends conditions until the rule achieves target purity or coverage drops below a minimum threshold.
+
+### Specific-to-General (Bottom-Up) Generalization
+
+- **Specific-to-General Search** begins by anchoring on a single seed positive instance, constructing a maximally specific rule that matches its exact attribute coordinates:
+  $$R_{\text{seed}}: (A_1 = x_{1}^{(i)}) \land (A_2 = x_{2}^{(i)}) \land \dots \land (A_D = x_{D}^{(i)}) \implies y^{(i)}$$
+- The algorithm iteratively drops conjuncts or replaces constants with wildcards to **generalize** the rule.
+- Generalization expands spatial coverage, absorbing adjacent positive instances while ensuring negative instances remain excluded.
+
+```mermaid
+flowchart LR
+    subgraph TopDown["General-to-Specific Search (Specialization)"]
+        G0["TRUE => Class 1 (Coverage: 100%, Low Precision)"] --> G1["Add: Age > 30 (Filters False Positives)"]
+        G1 --> G2["Add: Income > 50K (Reaches Target Purity)"]
+    end
+
+    subgraph BottomUp["Specific-to-General Search (Generalization)"]
+        S0["Age=32 & Income=55K & Job=Dev => Class 1 (Covers 1 instance)"] --> S1["Drop: Job=Dev (Expands Coverage)"]
+        S1 --> S2["Generalize: Age > 30 (Covers broader positive mode)"]
+    end
+```
+
+### Beam Search Traversal Across the Rule Space
+
+- Standard greedy hill-climbing evaluates all candidate conjuncts and commits permanently to the single best-performing condition.
+- Greedy searches easily trap in local minima, failing to uncover attribute combinations that only provide predictive power when added together.
+- **Beam Search** balances greedy speed and exhaustive search by maintaining a priority queue of the top $w$ candidate rules, termed the **beam width**:
+  - At each step, all $w$ candidate rules expand by evaluating all possible attribute tests.
+  - The resulting rules are ranked using an evaluation metric (e.g., FOIL Gain or Laplace Accuracy).
+  - The queue prunes back to the top $w$ rules, and the cycle repeats.
+- Beam search explores multiple promising paths simultaneously, preventing premature sub-optimal commitments.
+
+> [!Important]
+> **General-to-specific beam search balances precision and exploration**: starting from an open rule and tracking the top $w$ specialized candidates prevents greedy search from committing to poor local attribute splits.
+
+## Comparative Matrix of Rule Execution Paradigms
+
+| Dimension | Ordered Decision Lists | Unordered Decision Sets |
+|---|---|---|
+| **Inference Processing Flow** | Sequential top-down priority evaluation | **Concurrent evaluation** across all active rules |
+| **Handling Overlapping Activations** | Avoids conflict; first matching rule halts search | **Requires conflict resolution** (voting, Laplace weights) |
+| **Rule Modularity and Editing** | Low; altering one rule changes the context of all downstream rules | **High**; individual rules evaluate as independent assertions |
+| **Handling Uncovered Gaps** | Guaranteed complete via terminal default rule | Requires an external fallback default rule |
+| **Human Interpretability** | Requires tracking the negation of all preceding rules | Simple standalone IF-THEN comprehension |
+| **Search Induction Suitability** | Natural fit for sequential covering (separate-and-conquer) | Natural fit for associative and parallel rule mining |
+| **Model Compactness** | More compact (rules assume prior conditions failed) | Larger rule sets required to avoid coverage gaps |
+
+> [!Tip]
+> **Use decision lists for compact execution and decision sets for modular auditing**: ordered lists minimize rule count through sequential exclusion, while unordered sets produce standalone rules that domain experts can validate individually.
+
+## Key Takeaways
+
+- **Classification rules model knowledge as conditional implications**: $R: (\text{Condition}) \implies y$, combining attribute tests via conjunctions to assign target classes.
+- **Mutual exclusivity prevents conflicting predictions**, while **exhaustiveness eliminates unmapped coverage gaps**.
+- **Ordered decision lists evaluate rules sequentially**, halting at the first matching condition and relying on a terminal default rule for fallback.
+- **Unordered decision sets evaluate rules concurrently**, resolving contradictory predictions using voting strategies or Laplace weights.
+- **Laplace smoothing regularizes rule accuracy**: $\frac{A + 1}{A + B + K}$ prevents hyper-specific rules that cover single outlier instances from dominating the model.
+- **FOIL Information Gain directs rule growing**, balancing precision improvements against positive instance coverage.
+- **General-to-specific search specializes rules** by appending conjuncts to filter false positives, while **beam search** tracks the top $w$ candidate paths to avoid local minima.
+- **Unordered rules provide high domain modularity**, allowing individual business logic statements to be inspected or edited without disrupting other rules.
+
+> [!Tip]
+> The foundational law of rule representation: **modularity governs interpretability, while coverage regulates reliability**; structuring rules with calibrated evaluation metrics and robust conflict resolution produces transparent models that deliver dependable classifications on unseen data.
