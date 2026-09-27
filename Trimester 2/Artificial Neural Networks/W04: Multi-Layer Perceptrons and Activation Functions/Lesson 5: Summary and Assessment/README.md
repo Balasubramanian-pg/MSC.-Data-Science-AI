@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 5: Summary and Assessment
 
 ## Multi-Layer Perceptrons and Activation Functions: Module Summary and Assessment
@@ -68,4 +67,119 @@ Mastery of feedforward neural networks requires understanding how linear matrix 
   - *Remedy:* Replace standard ReLU with Leaky ReLU ($\alpha = 0.01$) or GELU to ensure non-zero derivatives across the negative domain. Reduce the initial learning rate by a factor of 5 to 10, initialize weights using He normal initialization, and set initial layer biases to small positive values ($b = 0.01$).
 - **Scenario B (Gradient Vanishing in a Deep Tanh Network):** An 8-layer dense network with Tanh activations fails to train. Gradients in the final layer evaluate to $\|\nabla_{W^{[8]}} \mathcal{L}\| = 1.8$, but early layer gradients evaluate to $\|\nabla_{W^{[1]}} \mathcal{L}\| = 2.4 \times 10^{-7}$.
   - *Diagnosis:* Severe gradient vanishing caused by activation saturation. Weights were initialized with overly large variances, driving inputs into the flat saturation regions of Tanh ($|z| > 3$), where $\tanh'(z) \approx 0$.
-  - *Remedy:* Reinitialize the network using Glorot normal initialization ($W \sim \mathcal{N}(0, \frac{2}{n_{\text{in}} + n_{\text{out}}})$) to keep pre-activations within the linear regime near zero. Insert Batch Normalization layers before each Tanh activation to standardize inputs to unit variance, or tr
+  - *Remedy:* Reinitialize the network using Glorot normal initialization ($W \sim \mathcal{N}(0, \frac{2}{n_{\text{in}} + n_{\text{out}}})$) to keep pre-activations within the linear regime near zero. Insert Batch Normalization layers before each Tanh activation to standardize inputs to unit variance, or transition the hidden layers to ReLU with He initialization.
+- **Scenario C (Softmax Logit Overflow):** A classification network predicting 1,000 classes encounters sudden `NaN` losses during epoch 4. Tracking activations shows pre-activation logits reaching values above $120.0$.
+  - *Diagnosis:* Floating-point overflow in the unnormalized Softmax denominator. In FP32 arithmetic, $e^{z_k}$ overflows to infinity when $z_k > 88.7$, producing $\frac{\infty}{\infty} = \text{NaN}$.
+  - *Remedy:* Implement the max-shift identity within the Softmax calculation: $\text{Softmax}(z)_i = \frac{e^{z_i - \max(z)}}{\sum_j e^{z_j - \max(z)}}$. Shifting logits by their maximum bounds all exponential values within $(0, 1]$, preventing overflow while preserving the original probability distribution.
+
+> [!Important]
+> **Diagnostic precision drives remediation**: gradient vanishing requires checking activation saturation regimes and initialization variance, whereas numerical instability like `NaN` corruption requires algorithmic stabilizers like logit shifting or norm clipping.
+
+### Self-Assessment Technical Calculations
+
+#### Problem 1: Multi-Layer Dimensional Tracking and Parameter Accounting
+
+Consider an MLP configured for a multi-class classification problem. The architecture has the following layer specifications:
+- Input vector dimension: $n^{[0]} = 4$
+- Hidden Layer 1: $n^{[1]} = 6$ neurons, ReLU activation
+- Hidden Layer 2: $n^{[2]} = 3$ neurons, ReLU activation
+- Output Layer 3: $n^{[3]} = 2$ neurons, Softmax activation
+
+A mini-batch of $m = 5$ samples is processed simultaneously using the row-oriented convention ($A^{[l]} \in \mathbb{R}^{m \times n^{[l]}}$).
+
+1. Determine the exact matrix shapes for $W^{[l]}$, $b^{[l]}$, $Z^{[l]}$, and $A^{[l]}$ across all three operational layers.
+2. Compute the total number of learnable parameters in the network.
+
+*Stepwise Solution:*
+1. Shape Determination across Layers:
+   - **Layer 1:**
+     - Weight matrix $W^{[1]}$ shape: $(n^{[1]} \times n^{[0]}) = \mathbf{(6 \times 4)}$
+     - Bias vector $b^{[1]}$ shape: $(n^{[1]} \times 1) = \mathbf{(6 \times 1)}$
+     - Pre-activation matrix $Z^{[1]} = A^{[0]} (W^{[1]})^T + \mathbf{1}_m (b^{[1]})^T$: shape $(5 \times 4) \times (4 \times 6) = \mathbf{(5 \times 6)}$
+     - Post-activation matrix $A^{[1]} = \text{ReLU}(Z^{[1]})$: shape $\mathbf{(5 \times 6)}$
+   - **Layer 2:**
+     - Weight matrix $W^{[2]}$ shape: $(n^{[2]} \times n^{[1]}) = \mathbf{(3 \times 6)}$
+     - Bias vector $b^{[2]}$ shape: $(n^{[2]} \times 1) = \mathbf{(3 \times 1)}$
+     - Pre-activation matrix $Z^{[2]} = A^{[1]} (W^{[2]})^T + \mathbf{1}_m (b^{[2]})^T$: shape $(5 \times 6) \times (6 \times 3) = \mathbf{(5 \times 3)}$
+     - Post-activation matrix $A^{[2]} = \text{ReLU}(Z^{[2]})$: shape $\mathbf{(5 \times 3)}$
+   - **Layer 3 (Output):**
+     - Weight matrix $W^{[3]}$ shape: $(n^{[3]} \times n^{[2]}) = \mathbf{(2 \times 3)}$
+     - Bias vector $b^{[3]}$ shape: $(n^{[3]} \times 1) = \mathbf{(2 \times 1)}$
+     - Pre-activation matrix $Z^{[3]} = A^{[2]} (W^{[3]})^T + \mathbf{1}_m (b^{[3]})^T$: shape $(5 \times 3) \times (3 \times 2) = \mathbf{(5 \times 2)}$
+     - Post-activation matrix $A^{[3]} = \text{Softmax}(Z^{[3]})$: shape $\mathbf{(5 \times 2)}$
+2. Parameter Count Calculation:
+   - Layer 1: $(n^{[1]} \times n^{[0]}) + n^{[1]} = (6 \times 4) + 6 = 24 + 6 = 30$ parameters
+   - Layer 2: $(n^{[2]} \times n^{[1]}) + n^{[2]} = (3 \times 6) + 3 = 18 + 3 = 21$ parameters
+   - Layer 3: $(n^{[3]} \times n^{[2]}) + n^{[3]} = (2 \times 3) + 2 = 6 + 2 = 8$ parameters
+   - Total Parameters: $P_{\text{total}} = 30 + 21 + 8 = \mathbf{59}$ learnable parameters.
+
+#### Problem 2: Mathematical Derivation of He Initialization Variance
+
+Derive the required variance of the weight distribution $\text{Var}(W^{[l]})$ for a layer containing $n_{\text{in}}$ inputs equipped with a standard ReLU activation function to ensure that the variance of forward activations remains constant: $\text{Var}(z^{[l]}) = \text{Var}(z^{[l-1]})$.
+
+*Stepwise Solution:*
+1. Express the pre-activation of a single neuron as an affine combination:
+   $$z_j^{[l]} = \sum_{i=1}^{n_{\text{in}}} w_{ji}^{[l]} a_i^{[l-1]} + b_j^{[l]}$$
+2. Assume weights $w_{ji}$ and input activations $a_i$ are independent, weights have zero mean ($\mathbb{E}[w] = 0$), and biases are initialized to zero ($b = 0$). The expectation of the pre-activation evaluates to zero:
+   $$\mathbb{E}[z_j^{[l]}] = \sum_{i=1}^{n_{\text{in}}} \mathbb{E}[w_{ji}^{[l]}] \mathbb{E}[a_i^{[l-1]}] = 0$$
+3. Compute the variance of the pre-activation sum:
+   $$\text{Var}(z_j^{[l]}) = \sum_{i=1}^{n_{\text{in}}} \text{Var}(w_{ji}^{[l]} a_i^{[l-1]}) = \sum_{i=1}^{n_{\text{in}}} \left( \mathbb{E}[(w_{ji}^{[l]})^2] \mathbb{E}[(a_i^{[l-1]})^2] - (\mathbb{E}[w_{ji}^{[l]}])^2 (\mathbb{E}[a_i^{[l-1]}])^2 \right)$$
+   Since $\mathbb{E}[w] = 0$, this simplifies to:
+   $$\text{Var}(z_j^{[l]}) = n_{\text{in}} \text{Var}(w^{[l]}) \mathbb{E}[(a^{[l-1]})^2]$$
+4. Analyze the second moment $\mathbb{E}[(a^{[l-1]})^2]$ under a ReLU activation $a = \max(0, z)$. Assuming the previous pre-activation $z^{[l-1]}$ follows a symmetric distribution around zero with variance $\text{Var}(z^{[l-1]})$, ReLU zeroes out the negative half of the distribution:
+   $$\mathbb{E}[(a^{[l-1]})^2] = \int_{-\infty}^\infty (\max(0, z))^2 p(z) \, dz = \int_0^\infty z^2 p(z) \, dz = \frac{1}{2} \int_{-\infty}^\infty z^2 p(z) \, dz = \frac{1}{2} \text{Var}(z^{[l-1]})$$
+5. Substitute this result back into the pre-activation variance equation:
+   $$\text{Var}(z^{[l]}) = n_{\text{in}} \text{Var}(w^{[l]}) \left( \frac{1}{2} \text{Var}(z^{[l-1]}) \right) = \frac{1}{2} n_{\text{in}} \text{Var}(w^{[l]}) \text{Var}(z^{[l-1]})$$
+6. Set the condition for stable forward signal variance ($\text{Var}(z^{[l]}) = \text{Var}(z^{[l-1]})$):
+   $$\text{Var}(z^{[l-1]}) = \frac{1}{2} n_{\text{in}} \text{Var}(w^{[l]}) \text{Var}(z^{[l-1]}) \implies 1 = \frac{1}{2} n_{\text{in}} \text{Var}(w^{[l]})$$
+   $$\text{Var}(w^{[l]}) = \mathbf{\frac{2}{n_{\text{in}}}} \quad \text{(He Normal Variance)}$$
+
+#### Problem 3: Forward Pass, Softmax Activation, and Cross-Entropy Loss Computation
+
+A 3-class classification model produces a pre-activation logit vector $z = [2.0, \; 1.0, \; 0.1]^T$ for a sample whose true ground-truth label belongs to Class 1 (one-hot target vector $y = [1, \; 0, \; 0]^T$).
+
+1. Apply the max-shift stabilization trick to evaluate the predicted probability vector $\hat{y} = \text{Softmax}(z)$.
+2. Calculate the resulting Categorical Cross-Entropy loss $\mathcal{L}_{\text{CE}}$ for this sample.
+3. Compute the error gradient vector with respect to the logits: $\nabla_z \mathcal{L} = \frac{\partial \mathcal{L}}{\partial z}$.
+
+*Stepwise Solution:*
+1. Softmax Calculation with Max-Shift:
+   - Identify the maximum logit: $c = \max(z) = 2.0$.
+   - Shift the logit vector:
+     $$\tilde{z} = z - c = [2.0 - 2.0, \; 1.0 - 2.0, \; 0.1 - 2.0]^T = [0.0, \; -1.0, \; -1.9]^T$$
+   - Evaluate the exponentiated shifted values:
+     $$e^{\tilde{z}_1} = e^{0.0} = 1.0000$$
+     $$e^{\tilde{z}_2} = e^{-1.0} \approx 0.3679$$
+     $$e^{\tilde{z}_3} = e^{-1.9} \approx 0.1496$$
+   - Compute the normalization sum:
+     $$\sum_{j=1}^3 e^{\tilde{z}_j} = 1.0000 + 0.3679 + 0.1496 = 1.5175$$
+   - Divide by the sum to obtain the predicted probabilities:
+     $$\hat{y}_1 = \frac{1.0000}{1.5175} \approx \mathbf{0.6590}$$
+     $$\hat{y}_2 = \frac{0.3679}{1.5175} \approx \mathbf{0.2424}$$
+     $$\hat{y}_3 = \frac{0.1496}{1.5175} \approx \mathbf{0.0986}$$
+     $$\hat{y} = [0.6590, \; 0.2424, \; 0.0986]^T$$
+2. Categorical Cross-Entropy Loss Evaluation:
+   $$\mathcal{L}_{\text{CE}} = -\sum_{k=1}^3 y_k \ln(\hat{y}_k) = -(1 \cdot \ln(0.6590) + 0 + 0) = -\ln(0.6590) \approx \mathbf{0.4170}$$
+3. Error Gradient Computation:
+   - Using the analytical derivative of Cross-Entropy paired with Softmax ($\nabla_z \mathcal{L} = \hat{y} - y$):
+     $$\frac{\partial \mathcal{L}}{\partial z_1} = \hat{y}_1 - y_1 = 0.6590 - 1.0 = \mathbf{-0.3410}$$
+     $$\frac{\partial \mathcal{L}}{\partial z_2} = \hat{y}_2 - y_2 = 0.2424 - 0.0 = \mathbf{+0.2424}$$
+     $$\frac{\partial \mathcal{L}}{\partial z_3} = \hat{y}_3 - y_3 = 0.0986 - 0.0 = \mathbf{+0.0986}$$
+     $$\nabla_z \mathcal{L} = [-0.3410, \; +0.2424, \; +0.0986]^T$$
+
+> [!Tip]
+> **Gradient checks confirm software correctness**: the sum of cross-entropy logit gradients always equals zero ($\sum_k (\hat{y}_k - y_k) = 1.0 - 1.0 = 0$), providing an immediate verification step when testing custom autograd backward kernels.
+
+## Key Takeaways
+
+- **Matrix dimensions** define the structure of feedforward networks; tracking layer dimensions ($(n^{[l]} \times n^{[l-1]})$) ensures valid batch operations and avoids tensor shape mismatches.
+- **The Linear Collapse Theorem** demonstrates that cascading linear operations without activation functions reduces an entire network to a single affine mapping $\hat{y} = W_{\text{eff}} x + b_{\text{eff}}$.
+- **The Universal Approximation Theorem** confirms that a single hidden layer can approximate continuous functions, but depth provides exponential parameter efficiency over wide, shallow networks.
+- **Activation saturation causes vanishing gradients** in Sigmoid and Tanh networks, which freeze parameter updates across early layers during backpropagation.
+- **The Dying ReLU failure mode** permanently deactivates neurons whose pre-activations fall below zero, an issue resolved by using Leaky ReLU, ELU, or GELU.
+- **He (Kaiming) initialization** ($\text{Var}(W) = \frac{2}{n_{\text{in}}}$) doubles weight variance relative to Xavier initialization, keeping signal variance constant across rectified networks.
+- **Residual connections** bypass saturating operations by introducing an additive identity shortcut ($+I$), guaranteeing that error signals flow directly to early layers.
+- **Coordinating output activations with loss functions** (Identity with MSE, Sigmoid with BCE, Softmax with CE) enables exact derivative cancellation, ensuring linear error-proportional gradient flow during optimization.
+
+> [!Tip]
+> The central principle of deep feedforward networks: **depth, non-linearity, and variance stability must operate in harmony**; selecting non-saturating activations, calibrating initialization distributions, and preserving gradient paths allow deep neural networks to learn expressive hierarchical representations without optimization failures.
