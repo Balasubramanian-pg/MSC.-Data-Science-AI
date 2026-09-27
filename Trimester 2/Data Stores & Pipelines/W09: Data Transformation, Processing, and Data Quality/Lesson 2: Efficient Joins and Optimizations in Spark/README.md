@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 2: Efficient Joins and Optimizations in Spark
 
 Efficient Joins and Optimizations in Spark:
@@ -22,4 +21,22 @@ Broadcast Hash Join Mechanics and Sizing:
 
 Mitigating Data Skew in Joins:
 
-- Skew identification: Data skew occurs wh
+- Skew identification: Data skew occurs when a disproportionate number of records share the same join key, causing a single executor task to process vast volumes of data while other executors sit idle.
+- Salting technique: Salting breaks skewed partitions by appending a random integer suffix to the join key of the skewed table. The join keys on the matching lookup table are exploded across all possible salt values, distributing the skewed records evenly across multiple executors before the join.
+- Key isolation: Filtering out highly frequent keys, processing them through a dedicated isolated branch, and subsequently uniting the results with the remaining dataset prevents straggler tasks.
+
+Performance Tuning and Optimization Techniques:
+
+- Predicate pushdown: Filtering records and dropping unused columns before executing a join minimizes the total data volume transmitted across the network during shuffles.
+- Bucketing: Pre-sorting and partitioning data on disk using the bucketBy method based on the intended join key allows Spark to read pre-aligned files directly, skipping both the shuffle and sort phases during subsequent joins.
+- Repartition versus coalesce: Repartition forces a full network shuffle to balance partition sizes evenly, whereas coalesce merges adjacent partitions locally without a shuffle, making it suitable for reducing partition counts prior to writing output files.
+- Memory caching: The cache and persist methods keep intermediate DataFrames in memory or serialized to disk. Datasets should be unpersisted once downstream steps complete to release executor heap space.
+- Adaptive Query Execution: Available in modern Spark versions, adaptive query execution dynamically alters execution plans at runtime. It automatically coalesces small shuffle partitions, converts sort merge joins to broadcast joins if data sizes shrink after filters, and splits skewed partitions into smaller sub-tasks.
+
+Key Takeaways:
+
+- Shuffle sort merge joins are the default mechanism for large tables, but they require significant network bandwidth and disk sorting.
+- Broadcast hash joins eliminate network shuffling for large tables by distributing the smaller table directly to all executors.
+- Data skew causes uneven executor workloads and pipeline stragglers, which can be resolved through salting or adaptive query execution.
+- Bucketing pre-aligns datasets on disk by join key, removing the need for both shuffling and sorting during query execution.
+- Adaptive Query Execution dynamically optimizes join strategies, partition counts, and skew handling based on runtime statistics.
