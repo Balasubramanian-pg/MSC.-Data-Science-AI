@@ -1,6 +1,8 @@
-# Migration in progress
 # Lesson 1: File-Based Ingestion
 
 Initial directory setup.
 
-## Overv
+## Overview
+- Module resources and notes will be added here.
+
+Status: Active
