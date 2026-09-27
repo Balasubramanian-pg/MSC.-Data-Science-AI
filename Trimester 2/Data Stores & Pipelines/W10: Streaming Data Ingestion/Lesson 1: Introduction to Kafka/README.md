@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 1: Introduction to Kafka
 
 Introduction to Apache Kafka:
@@ -24,4 +23,29 @@ Message Distribution and Partitioning Logic:
 Cluster Coordination and Metadata Management:
 
 - Apache ZooKeeper: Historically used by Kafka to store cluster metadata, manage topic configurations, track broker availability, and elect cluster controllers.
-- Kafka Raft Metadata Mode: Modern Kafka releases replace external ZooKeeper dependencies with an internal consensus protocol 
+- Kafka Raft Metadata Mode: Modern Kafka releases replace external ZooKeeper dependencies with an internal consensus protocol called KRaft. KRaft stores metadata directly inside Kafka as an internal quorum-managed topic, improving cluster scalability and simplifying operations.
+
+Fault Tolerance and Replication:
+
+- Replication factor: Defines the total number of duplicate copies maintained for each partition across distinct brokers. A replication factor of three guarantees data survival if two brokers fail.
+- Partition leader: For every partition, one broker is designated as the leader. The leader handles all read and write requests for that partition.
+- Follower replicas: Passive brokers that continuously fetch and replicate records from the partition leader to maintain synchronized local copies.
+- In-sync replicas: The subset of follower replicas that are actively caught up with the leader within a configured lag time.
+- Producer acknowledgment modes: Setting the acknowledgment configuration to zero provides maximum speed without waiting for broker confirmation. Setting it to one waits for the partition leader to write to local disk. Setting it to all waits for all in-sync replicas to confirm writes, providing maximum durability.
+- Important: Total message ordering is guaranteed strictly within a single partition and is never guaranteed globally across an entire multi-partition topic.
+
+Storage Mechanics and Performance Optimizations:
+
+- Sequential disk writes: Kafka writes incoming messages sequentially to append-only log files on disk, avoiding expensive random disk seek operations and matching memory write speeds.
+- Log segments: Partitions are physically divided into segment files on disk. As segments reach time or size limits, Kafka closes them and creates new active segments.
+- Page cache and zero-copy: Kafka utilizes the operating system page cache heavily and employs the sendfile system call. This zero-copy approach transfers byte buffers directly from OS disk cache to the network socket, bypassing application memory entirely.
+- Log retention and compaction: Topics can be configured to delete log segments after a specific time period or total size limit. Log compaction retains only the latest record value for each primary key, providing a compact snapshot of state changes.
+
+Key Takeaways:
+
+- Apache Kafka is a distributed append-only commit log optimized for horizontal scalability and high event throughput.
+- Partitions allow topics to be distributed across multiple brokers, providing parallel write and read execution.
+- Message ordering is guaranteed only within an individual partition using sequential offsets.
+- Consumer groups enable horizontal read scaling, with the partition count setting the upper limit for active concurrent consumers.
+- High availability is achieved through partition leader-follower replication and in-sync replica sets.
+- Kafka achieves performance by combining sequential disk writes, operating system page cache caching, and zero-copy network transfers.
