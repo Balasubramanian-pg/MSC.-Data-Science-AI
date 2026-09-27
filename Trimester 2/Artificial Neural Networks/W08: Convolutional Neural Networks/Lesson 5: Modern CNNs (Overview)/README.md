@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 5: Modern CNNs (Overview)
 
 ## Modern CNN Architectures: Advanced Paradigms and Design Evolution
@@ -106,4 +105,91 @@ flowchart TD
   $$\text{subject to } \alpha \cdot \beta^2 \cdot \gamma^2 \approx 2 \quad \text{and} \quad \alpha \ge 1, \; \beta \ge 1, \; \gamma \ge 1$$
 - Because doubling network depth doubles FLOPs ($2^1$), while doubling width or resolution quadruples FLOPs ($w^2, r^2$), constraining $\alpha \cdot \beta^2 \cdot \gamma^2 \approx 2$ guarantees that scaling $\phi$ by 1 increases total model FLOPs by approximately $2^\phi$.
 
-### EfficientNet-B0 Baseline 
+### EfficientNet-B0 Baseline and MBConv Integration
+
+- The baseline architecture, **EfficientNet-B0**, was discovered using Neural Architecture Search (NAS) to optimize both top-1 accuracy and floating-point operations.
+- The primary computational unit is the **MBConv block** (Inverted Residual Block from MobileNetV2) augmented with internal **Squeeze-and-Excitation** attention modules and Swish (SiLU) activation functions.
+- Scaling coefficient $\phi$ systematically from 1 to 7 produced the EfficientNet B1 through B7 family, achieving higher accuracy on ImageNet than prior state-of-the-art models while using up to $8.4\times$ fewer parameters.
+
+> [!Important]
+> **Compound scaling coordinates depth, width, and resolution**: scaling all three dimensions simultaneously via $\alpha \cdot \beta^2 \cdot \gamma^2 \approx 2$ prevents individual dimensions from saturating, maximizing accuracy gains per computational operation.
+
+## The Modernized Convolutional Paradigm: ConvNeXt
+
+### Re-Engineering ResNet for the Vision Transformer Era
+
+- In 2020, Vision Transformers (ViTs) surpassed CNNs in large-scale visual recognition, leading to claims that self-attention mechanisms would render convolutions obsolete.
+- Zhuang Liu et al. (2022) introduced **ConvNeXt**, systematically modernizing a standard ResNet-50 using design choices borrowed from Vision Transformers (specifically Swin Transformers) *without* introducing self-attention.
+- ConvNeXt proved that standard pure convolutional networks can match or exceed the performance, scalability, and efficiency of Vision Transformers.
+
+### Macro-Design: Patchify Stems and Stage Compute Ratios
+
+- **Patchify Stem:** Classical CNN stems used a $7 \times 7$ convolution ($S=2$) followed by max pooling. ConvNeXt adopts ViT-style non-overlapping patchification, using a $4 \times 4$ strided convolution ($S=4$) to downsample the input aggressively at the entry point.
+- **Stage Compute Ratios:** ResNet-50 allocated layers across four stages in a ratio of $3:4:6:3$ (1:1:2:1). ConvNeXt aligns with Swin Transformer, adopting a $3:3:9:3$ ratio (1:1:3:1), concentrating compute heavily in the third stage.
+- **Dedicated Downsampling Layers:** Instead of executing spatial downsampling inside residual blocks using strided $3 \times 3$ convolutions, ConvNeXt uses separate downsampling blocks consisting of Layer Normalization followed by a $2 \times 2$ convolution with stride 2.
+
+### Inverted Bottlenecks and Large $7 \times 7$ Depthwise Kernels
+
+- **Inverted Bottleneck Design:** ResNet bottleneck blocks compress channel depth before spatial filtering ($256 \to 64 \to 256$). ConvNeXt adopts the inverted bottleneck topology of Transformers and MobileNetV2, expanding channel dimensions by $4\times$ before projection ($C \to 4C \to C$).
+- **Depthwise Convolutions Moved Up:** Spatial filtering is delegated entirely to a depthwise convolution positioned at the start of the block, minimizing computation across high-channel stages.
+- **Large Kernel Footprint:** Standard CNNs relied on $3 \times 3$ filters. ConvNeXt adopts a large **$7 \times 7$ depthwise convolution**, expanding the local receptive field to match the wider window attention of Swin Transformers.
+
+```mermaid
+flowchart TD
+    subgraph ResNet["ResNet Bottleneck Block"]
+        R_In["Input: C"] --> R_Conv1["1x1 Conv (C -> C/4) + BN + ReLU"]
+        R_Conv1 --> R_Conv2["3x3 Conv (C/4 -> C/4) + BN + ReLU"]
+        R_Conv2 --> R_Conv3["1x1 Conv (C/4 -> C) + BN"]
+        R_In ----> R_Skip["Identity Shortcut"]
+        R_Conv3 --> R_Add(("Sum"))
+        R_Skip --> R_Add
+        R_Add --> R_Relu["ReLU"]
+    end
+
+    subgraph ConvNeXt["ConvNeXt Block"]
+        C_In["Input: C"] --> C_DW["7x7 Depthwise Conv (C -> C)"]
+        C_DW --> C_LN["LayerNorm"]
+        C_LN --> C_PW1["1x1 Conv (C -> 4C)"]
+        C_PW1 --> C_GELU["GELU"]
+        C_PW1 --> C_PW2["1x1 Conv (4C -> C)"]
+        C_In ----> C_Skip["Identity Shortcut"]
+        C_PW2 --> C_Add(("Sum"))
+        C_Skip --> C_Add
+        C_Add --> C_Out["Output: C"]
+    end
+```
+
+### Micro-Design: LayerNorm, GELU, and Component Reduction
+
+- **Replacing ReLU with GELU:** ConvNeXt replaces standard ReLU activations with Gaussian Error Linear Units (GELU), matching Transformer non-linearities.
+- **Fewer Activation Functions:** While standard ResNet placed activations after every single convolution, ConvNeXt uses only a solitary GELU activation per block, situated between the two $1 \times 1$ projection layers.
+- **Replacing BatchNorm with LayerNorm:** Batch Normalization was removed entirely in favor of **Layer Normalization (LN)**, eliminating batch dependency issues and stabilizing cross-device training.
+- **Fewer Normalization Layers:** ConvNeXt deploys only one Layer Normalization module per block, placed immediately following the $7 \times 7$ depthwise filter.
+
+> [!Tip]
+> **ConvNeXt modernized pure convolution**: adopting ViT design patterns (patchify stems, $7 \times 7$ depthwise kernels, inverted bottlenecks, LayerNorm, and GELU) allows pure CNNs to match Vision Transformers in accuracy and efficiency.
+
+## Comparative Matrix of Modern CNN Architectures
+
+| Modern Architecture | Core Design Philosophy | Primary Micro-Architectural Innovation | Scaling Methodology | Normalization & Activation Suite | Primary Operational Strength |
+|---|---|---|---|---|---|
+| **ResNeXt (2017)** | Multi-path aggregated transformations | Grouped convolutions with cardinality $C=32$ | Traditional depth and width scaling | Batch Normalization + ReLU | Stronger representations than ResNet without adding parameters |
+| **SENet (2018)** | Dynamic inter-channel attention | Squeeze-and-Excitation bottleneck modules | Modular add-on to existing backbones | Inherits baseline suite + Sigmoid gate | Explicit channel attention with less than 1% parameter overhead |
+| **EfficientNet (2019)** | Balanced multidimensional resource allocation | MBConv blocks with built-in SE attention | **Compound Scaling:** $\alpha^\phi, \beta^\phi, \gamma^\phi$ | Batch Normalization + Swish (SiLU) | Optimal Pareto frontier of ImageNet accuracy versus FLOPs |
+| **ConvNeXt (2022)** | Modernized CNNs matching Transformer baselines | $7 \times 7$ depthwise convolutions, inverted bottlenecks | Stage-ratio compute reallocation ($3:3:9:3$) | **Layer Normalization + single GELU** | Matches Swin Transformer accuracy with pure convolutional simplicity |
+
+> [!Important]
+> **Architectural evolution converged with Transformers**: modern convolutional engineering (ConvNeXt) adopted the micro-design choices of Transformers (fewer activations, LayerNorm, large kernels), proving that network topology matters more than self-attention alone.
+
+## Key Takeaways
+
+- **Cardinality provides a more effective scaling dimension** than depth or width, using grouped convolutions in ResNeXt to execute parallel transformations within a single layer.
+- **Squeeze-and-Excitation networks compute dynamic channel attention**, squeezing spatial dimensions via global pooling and passing descriptors through a bottleneck to recalibrate feature map weights.
+- **Unidimensional scaling causes accuracy saturation**; increasing depth, width, or input resolution independently yields diminishing returns.
+- **EfficientNet compound scaling balances depth, width, and resolution concurrently** using fixed coefficients ($\alpha \cdot \beta^2 \cdot \gamma^2 \approx 2$), optimizing accuracy per unit of compute.
+- **ConvNeXt modernized pure convolutions for the Transformer era**, adopting patchify stems, stage ratios of $3:3:9:3$, and inverted bottlenecks.
+- **ConvNeXt expands receptive fields using $7 \times 7$ depthwise convolutions**, matching the localized window attention of Swin Transformers.
+- **Micro-design simplifications stabilize deep backbones**: ConvNeXt replaces Batch Normalization with Layer Normalization, substitutes ReLU with GELU, and limits activations to a single non-linearity per block.
+
+> [!Tip]
+> The defining insight of modern CNN development: **macro-topology and training design dominate model success**; by combining channel attention, compound resource scaling, and modern micro-design patterns, pure convolutional architectures achieve competitive performance against vision transformers while preserving spatial inductive biases and deployment efficiency.
