@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 6: Summary and Assessment
 Summary and Assessment:
 
@@ -24,4 +23,30 @@ Question 2: How does the salting technique eliminate data skew during a distribu
 Question 3: Why is high completeness insufficient to guarantee data quality?
 - Answer: Completeness measures only the presence of values and verifies that fields are non-null. A column can have one hundred percent completeness while containing completely inaccurate, invalid, or outdated values, such as placeholder text or negative currency amounts.
 
-Question 4: What is the difference b
+Question 4: What is the difference between a pipeline circuit breaker and a quarantine pattern?
+- Answer: A circuit breaker immediately terminates pipeline execution when critical validation thresholds are breached, preventing any data from writing to downstream tables. A quarantine pattern routes only the malformed records into an isolated dead-letter queue or error table, allowing valid records to proceed through the pipeline uninterrupted.
+
+Assessment Preparation: Scenario-Based Problems:
+
+Scenario 1: Retail Transaction Duplicate Ingestion
+A multi-channel retail company notices that periodic network timeouts between physical store registers and cloud endpoints result in identical sales transactions being resent up to three times.
+- Recommended Solution: Implement an idempotent cleaning and deduplication stage within the transformation layer.
+- Implementation: Use a PySpark window function partitioned by the unique transaction receipt number and store identifier, ordered by ingestion timestamp descending. Filter for rows where the row number equals one. Introduce an automated uniqueness check in Great Expectations or dbt to block duplicate transaction identifiers before updating sales marts.
+
+Scenario 2: Slow Spark Pipeline with High Memory Usage
+A daily batch pipeline combining a five-terabyte clickstream event table with a twenty-megabyte marketing campaign lookup table takes four hours to complete and frequently fails due to executor memory limits.
+- Recommended Solution: Reconfigure the join strategy to use a broadcast hash join and adjust shuffle partition counts.
+- Implementation: Wrap the marketing campaign lookup DataFrame in the broadcast function to distribute it directly to worker nodes, eliminating the shuffle phase for the five-terabyte table. Ensure that spark.sql.adaptive.enabled is set to true so Spark can dynamically coalesce shuffle partitions and optimize query plans at runtime.
+
+Scenario 3: Healthcare Laboratory Result Pipeline
+A clinical laboratory system receives test results from several independent medical clinics. Occasionally, clinics update their software and emit test results with new column headers or altered numerical units, causing silent reporting errors.
+- Recommended Solution: Implement automated schema contracts, unit validity checks, and quarantine routing.
+- Implementation: Define strict schema expectations using Soda Core or Great Expectations to assert column names, acceptable numeric ranges, and measurement unit enums. Configure the pipeline with a quarantine branch: valid records write directly into the clinical repository, while records with drifted schemas or out-of-bounds units are written to a quarantine table alongside error logs, triggering an alert to the engineering team.
+
+Key Takeaways:
+
+- Transforming raw data into usable analytics requires combining data cleaning, optimized distributed processing, and formal validation.
+- Spark join efficiency depends on choosing between broadcast joins and sort merge joins, managing partition sizing, and mitigating data skew through salting.
+- Reliable data systems monitor the five observability pillars: freshness, volume, distribution, schema, and lineage.
+- Modern frameworks such as Great Expectations, PyDeequ, and Soda Core standardize testing and replace fragile custom validation scripts.
+- Robust engineering uses defensive patterns like circuit breakers and quarantine queues to protect downstream analytics without causing avoidable pipeline outages.
