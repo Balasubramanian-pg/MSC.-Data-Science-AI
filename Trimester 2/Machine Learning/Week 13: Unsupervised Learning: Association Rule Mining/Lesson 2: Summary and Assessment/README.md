@@ -1,4 +1,3 @@
-# Migration in progress
 # Lesson 2: Summary and Assessment
 
 ## Association Rule Mining: Module Summary and Assessment
@@ -129,4 +128,157 @@ flowchart TD
 
 ### Applied Analytical Scenarios
 
-- **Scenario A (Misleading Promotional Bundling in E-Commerce):** An e-commerce analyst mines checkout logs and discovers the rule $\text{Phone Case} \implies \text{Screen Protector}$ with $
+- **Scenario A (Misleading Promotional Bundling in E-Commerce):** An e-commerce analyst mines checkout logs and discovers the rule $\text{Phone Case} \implies \text{Screen Protector}$ with $\text{Supp} = 0.05$ and $\text{Conf} = 0.70$. The marketing department launches an expensive cross-promotional campaign based on this 70% confidence. However, campaign sales show no increase over baseline.
+  - *Diagnosis:* The analyst fell victim to the confidence fallacy. Screen protectors are purchased frequently across all device orders ($\text{Supp}(\text{Screen Protector}) = 0.75$). Evaluating Lift yields $\text{Lift} = \frac{0.70}{0.75} \approx 0.933 < 1.0$. The items are negatively correlated; customers buying this specific case purchase screen protectors less often than average.
+  - *Remedy:* Re-filter all mined rules by enforcing a strict constraint: $\text{Lift}(X \implies Y) > 1.20$ and positive $\text{Leverage} > 0$. This guarantees that promotional bundles target products exhibiting genuine statistical affinity.
+- **Scenario B (I/O Bottlenecks on Large Transaction Archives):** A grocery chain attempts to run the Apriori algorithm on 5 million transactions containing 8,000 distinct SKUs with $\text{minsup} = 0.005$. The job runs for 14 hours before failing due to disk thrashing during candidate generation for $C_3$.
+  - *Diagnosis:* Apriori requires $K_{\max} + 1$ full scans of the 5-million-row database from disk. Setting a low support threshold on a large catalog caused candidate generation for $C_2$ and $C_3$ to explode into millions of combinations, overwhelming RAM and saturating disk I/O.
+  - *Remedy:* Replace Apriori with **FP-Growth**. FP-Growth scans the database only twice, building an in-memory FP-Tree that mines frequent itemsets recursively without generating candidate combinations, reducing processing time from hours to minutes.
+- **Scenario C (Mining Rare, High-Value Healthcare Co-Occurrences):** A hospital epidemiology team searches for rare adverse drug interactions. Because adverse reactions occur in fewer than 0.01% of patients, setting a global $\text{minsup} = 0.01$ yields zero rules, while dropping $\text{minsup} = 0.0001$ produces millions of uninformative combinations of common medications.
+  - *Diagnosis:* The dataset exhibits a severe **item frequency imbalance**. High-frequency routine medications dominate global support, while rare, high-severity clinical interactions fall below standard support thresholds.
+  - *Remedy:* Implement **Multiple Minimum Support (MSApriori)**, assigning lower minimum support thresholds to rare, critical items ($\text{minsup}(\text{adverse reaction}) = 0.0001$) while keeping thresholds high for common drugs. Alternatively, filter candidate rules using **Conviction** or **Fisher's Exact Test** to identify statistically significant rare associations.
+
+> [!Important]
+> **Filter rules using statistical independence**: high confidence on globally popular items generates misleading rules; always verify that $\text{Lift} > 1.0$ to ensure positive statistical correlation.
+
+### Self-Assessment Technical Calculations
+
+#### Problem 1: Stepwise Apriori Execution (Join, Prune, and Support Filtering for $C_3$)
+
+A database contains $N = 5$ customer transactions over items $\{A, B, C, D, E\}$:
+- $T_1 = \{A, B, C, D\}$
+- $T_2 = \{A, B, C, E\}$
+- $T_3 = \{A, B, D\}$
+- $T_4 = \{B, C, E\}$
+- $T_5 = \{A, C, D\}$
+
+The minimum support threshold is $\text{minsup} = 0.40$ (minimum absolute count of 2 transactions).
+Prior level-wise execution mined the following set of frequent 2-itemsets:
+$$L_2 = \{\{A, B\}, \; \{A, C\}, \; \{A, D\}, \; \{B, C\}, \; \{B, E\}\}$$
+
+1. Execute the **Join Step** ($L_2 \bowtie L_2$) to generate all candidate 3-itemsets $C_3$ using lexicographical ordering.
+2. Execute the **Prune Step** using the Apriori Principle, discarding any candidate possessing an infrequent 2-subset.
+3. Count the empirical support for surviving candidates across the database and determine the final frequent set $L_3$.
+
+*Stepwise Solution:*
+1. Candidate Generation: Join Step ($L_2 \bowtie L_2$):
+   - Two itemsets join if they share their first $k-1 = 1$ item:
+     - Join $\{A, B\}$ with $\{A, C\} \implies \mathbf{\{A, B, C\}}$
+     - Join $\{A, B\}$ with $\{A, D\} \implies \mathbf{\{A, B, D\}}$
+     - Join $\{A, C\}$ with $\{A, D\} \implies \mathbf{\{A, C, D\}}$
+     - Join $\{B, C\}$ with $\{B, E\} \implies \mathbf{\{B, C, E\}}$
+   - Candidate set:
+     $$C_3 = \{\{A, B, C\}, \; \{A, B, D\}, \; \{A, C, D\}, \; \{B, C, E\}\}$$
+
+2. Candidate Validation: Prune Step:
+   - For each candidate $c \in C_3$, verify that all of its 2-subsets exist in $L_2$:
+     - Candidate $\{A, B, C\}$: Subsets are $\{A, B\}, \{A, C\}, \{B, C\}$. All three exist in $L_2$. $\implies \mathbf{Retain}$.
+     - Candidate $\{A, B, D\}$: Subsets are $\{A, B\}, \{A, D\}, \{B, D\}$. Subset $\{B, D\} \notin L_2$. $\implies \mathbf{Prune}$.
+     - Candidate $\{A, C, D\}$: Subsets are $\{A, C\}, \{A, D\}, \{C, D\}$. Subset $\{C, D\} \notin L_2$. $\implies \mathbf{Prune}$.
+     - Candidate $\{B, C, E\}$: Subsets are $\{B, C\}, \{B, E\}, \{C, E\}$. Subset $\{C, E\} \notin L_2$. $\implies \mathbf{Prune}$.
+   - Surviving candidates after pruning:
+     $$C_3^{\text{pruned}} = \{\{A, B, C\}\}$$
+
+3. Database Scan and Support Counting:
+   - Count occurrences of $\{A, B, C\}$ in transactions:
+     - $T_1 = \{A, B, C, D\} \implies$ Contains $\{A, B, C\}$ (Count = 1)
+     - $T_2 = \{A, B, C, E\} \implies$ Contains $\{A, B, C\}$ (Count = 2)
+     - $T_3 = \{A, B, D\} \implies$ Missing $C$
+     - $T_4 = \{B, C, E\} \implies$ Missing $A$
+     - $T_5 = \{A, C, D\} \implies$ Missing $B$
+   - Total count: $2$ out of $5$ transactions.
+     $$\text{Supp}(\{A, B, C\}) = \frac{2}{5} = 0.40$$
+   - Evaluate against threshold: $0.40 \ge \text{minsup} = 0.40$.
+   - Final frequent 3-itemset:
+     $$L_3 = \{\{A, B, C\}\}$$
+
+#### Problem 2: Comprehensive Rule Metric Evaluation
+
+A market basket database contains $N = 100$ transactions. A sales log reveals the following empirical frequencies:
+- Item $A$ appears in 40 transactions: $\text{Supp}(A) = 0.40$
+- Item $B$ appears in 50 transactions: $\text{Supp}(B) = 0.50$
+- Both items $A$ and $B$ appear together in 30 transactions: $\text{Supp}(A \cup B) = 0.30$
+
+Evaluate the following metrics for the association rule $A \implies B$:
+1. Support ($\text{Supp}$)
+2. Confidence ($\text{Conf}$)
+3. Lift ($\text{Lift}$)
+4. Conviction ($\text{Conv}$)
+5. Leverage ($\text{Lev}$)
+
+*Stepwise Solution:*
+1. Support Calculation:
+   $$\text{Supp}(A \implies B) = \text{Supp}(A \cup B) = \frac{30}{100} = \mathbf{0.30} \quad (30\%)$$
+2. Confidence Calculation:
+   $$\text{Conf}(A \implies B) = \frac{\text{Supp}(A \cup B)}{\text{Supp}(A)} = \frac{0.30}{0.40} = \mathbf{0.75} \quad (75\%)$$
+3. Lift Calculation:
+   $$\text{Lift}(A \implies B) = \frac{\text{Supp}(A \cup B)}{\text{Supp}(A) \cdot \text{Supp}(B)} = \frac{0.30}{0.40 \times 0.50} = \frac{0.30}{0.20} = \mathbf{1.50}$$
+   Interpretation: Purchasing item $A$ increases the likelihood of purchasing item $B$ by $50\%$ over random chance.
+4. Conviction Calculation:
+   $$\text{Conv}(A \implies B) = \frac{1 - \text{Supp}(B)}{1 - \text{Conf}(A \implies B)} = \frac{1 - 0.50}{1 - 0.75} = \frac{0.50}{0.25} = \mathbf{2.00}$$
+   Interpretation: The rule would be incorrect twice as often if $A$ and $B$ were completely independent.
+5. Leverage Calculation:
+   $$\text{Lev}(A \implies B) = \text{Supp}(A \cup B) - \text{Supp}(A) \cdot \text{Supp}(B) = 0.30 - (0.40 \times 0.50) = 0.30 - 0.20 = \mathbf{0.10}$$
+   Interpretation: The rule accounts for $10\%$ more transactions than would be expected under independence.
+
+#### Problem 3: Rule Generation and Pruning via Confidence Anti-Monotonicity
+
+A frequent 3-itemset $l = \{A, B, C\}$ has empirical support $\text{Supp}(\{A, B, C\}) = 0.30$.
+Prior mining extracted the support of all subsets:
+- $\text{Supp}(\{A, B\}) = 0.40$
+- $\text{Supp}(\{A, C\}) = 0.50$
+- $\text{Supp}(\{B, C\}) = 0.60$
+- $\text{Supp}(\{A\}) = 0.60$
+- $\text{Supp}(\{B\}) = 0.70$
+- $\text{Supp}(\{C\}) = 0.80$
+
+The minimum confidence threshold is $\text{minconf} = 0.60$ (60%).
+
+1. Evaluate confidence for all three candidate rules with 1-item consequents ($l \setminus \{i\} \implies \{i\}$).
+2. Apply the confidence anti-monotonicity property to identify which candidate rules with 2-item consequents can be pruned without calculation.
+3. Evaluate surviving 2-item consequent rules and list the final retained association rules.
+
+*Stepwise Solution:*
+1. 1-Item Consequent Rule Evaluations:
+   - **Rule 1:** $\{B, C\} \implies A$
+     $$\text{Conf}(\{B, C\} \implies A) = \frac{\text{Supp}(\{A, B, C\})}{\text{Supp}(\{B, C\})} = \frac{0.30}{0.60} = \mathbf{0.50} \quad (50\% < 60\% \implies \mathbf{Fails})$$
+   - **Rule 2:** $\{A, C\} \implies B$
+     $$\text{Conf}(\{A, C\} \implies B) = \frac{\text{Supp}(\{A, B, C\})}{\text{Supp}(\{A, C\})} = \frac{0.30}{0.50} = \mathbf{0.60} \quad (60\% \ge 60\% \implies \mathbf{Valid})$$
+   - **Rule 3:** $\{A, B\} \implies C$
+     $$\text{Conf}(\{A, B\} \implies C) = \frac{\text{Supp}(\{A, B, C\})}{\text{Supp}(\{A, B\})} = \frac{0.30}{0.40} = \mathbf{0.75} \quad (75\% \ge 60\% \implies \mathbf{Valid})$$
+
+2. Pruning 2-Item Consequent Rules via Anti-Monotonicity:
+   - The candidate 2-item consequent rules derived from $l$ are:
+     - $\{B\} \implies \{A, C\}$ (consequent contains $A$)
+     - $\{C\} \implies \{A, B\}$ (consequent contains $A$)
+     - $\{A\} \implies \{B, C\}$ (consequent contains $\{B, C\}$)
+   - Because rule $\{B, C\} \implies A$ failed minimum confidence ($\text{Conf} = 0.50 < 0.60$), confidence anti-monotonicity guarantees that any rule whose consequent contains $A$ must also fail ($\text{Conf} \le 0.50$).
+   - Prune immediately without calculation:
+     - $\{B\} \implies \{A, C\}$ is **Pruned** ($\text{Conf} \le 0.50$).
+     - $\{C\} \implies \{A, B\}$ is **Pruned** ($\text{Conf} \le 0.50$).
+
+3. Evaluate Surviving Candidate Rules:
+   - The only candidate rule not containing $A$ in its consequent is $\{A\} \implies \{B, C\}$:
+     $$\text{Conf}(\{A\} \implies \{B, C\}) = \frac{\text{Supp}(\{A, B, C\})}{\text{Supp}(\{A\})} = \frac{0.30}{0.60} = \mathbf{0.50} \quad (50\% < 60\% \implies \mathbf{Fails})$$
+4. Final Retained Association Rules:
+   - Exactly two rules satisfy $\text{minconf} \ge 0.60$:
+     1. $\mathbf{\{A, C\} \implies B} \quad (\text{Supp} = 0.30, \; \text{Conf} = 0.60)$
+     2. $\mathbf{\{A, B\} \implies C} \quad (\text{Supp} = 0.30, \; \text{Conf} = 0.75)$
+
+> [!Tip]
+> **Manual calculation confirms algorithmic pruning**: walking through candidate joins, metric equations, and rule confidence verification demonstrates how anti-monotonicity prevents unnecessary database lookups.
+
+## Key Takeaways
+
+- **Association Rule Mining extracts unguided patterns** from transactional databases, modeling co-occurrences of the form $X \implies Y$.
+- **Combinatorial itemset scaling ($2^M$)** makes brute-force pattern enumeration impossible for large item universes.
+- **Support measures joint frequency**, **confidence measures conditional probability**, and **lift measures statistical dependence**.
+- **The confidence fallacy** produces misleading rules when consequent items are globally popular; calculating lift confirms genuine positive correlation.
+- **The Apriori Principle (anti-monotonicity)** states that all subsets of a frequent itemset must be frequent, allowing algorithms to prune candidate supersets without querying databases.
+- **Apriori executes level-wise breadth-first search**, alternating between join steps ($L_k \bowtie L_k$), subset pruning, and database support counting.
+- **Confidence is anti-monotonic with respect to the rule consequent**, allowing rule pruning when small-consequent rules fail the minimum confidence threshold.
+- **FP-Growth eliminates candidate generation**, compressing transactions into an in-memory prefix tree using only two database scans and mining patterns via recursive conditional trees.
+- **ECLAT uses a vertical data format**, mapping items to transaction ID lists and evaluating joint support through fast set intersections ($|\text{TID}(A) \cap \text{TID}(B)|$).
+
+> [!Tip]
+> The foundational rule of association mining: **prune itemset lattices before generating directional rules**; whether pruning candidate itemsets using support anti-monotonicity, compacting into FP-trees, or intersecting vertical TID-lists, scalable mining relies on discarding unpromising combinations early to discover statistically dependable association rules.
