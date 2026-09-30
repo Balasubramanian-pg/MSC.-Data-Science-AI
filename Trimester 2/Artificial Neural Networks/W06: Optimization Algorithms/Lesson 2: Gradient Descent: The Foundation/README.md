@@ -1,4 +1,5 @@
 # Lesson 2: Gradient Descent: The Foundation
+<img width="2752" height="1536" alt="image" src="https://github.com/user-attachments/assets/cc7ea2a9-eef6-46c0-b916-852cc413012d" />
 
 ## Gradient Descent: The Foundational Optimization Engine
 
