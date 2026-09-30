@@ -1,5 +1,7 @@
 # W06: Optimization Algorithms
 
+<img width="1792" height="2400" alt="image" src="https://github.com/user-attachments/assets/5f1fef78-09c0-49ab-b93b-415e483c5cee" />
+
 ## Optimization Algorithms in Deep Neural Networks
 
 Optimization algorithms function as the computational engine that updates neural network parameters by navigating complex, high-dimensional error surfaces. First-order methods rely on backpropagated gradient vectors to update weights, but standard gradient descent struggles with pathological curvature, saddle points, and stochastic noise. Modern deep learning combines momentum-based acceleration, coordinate-wise adaptive learning rates, decoupled weight decay, and scheduled step sizes to achieve fast convergence and robust validation generalization.
