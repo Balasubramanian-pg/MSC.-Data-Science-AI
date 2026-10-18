@@ -13,7 +13,7 @@
 
 - For an individual input vector $x \in \mathbb{R}^{n^{[0]} \times 1}$, the forward equations evaluate as:
 >[!Important]
->$$z^{[l]} = W^{[l]} a^{[l-1]} + b^{[l]}$$ $$a^{[l]} = g^{[l]}(z^{[l]})$$
+># $$z^{[l]} = W^{[l]} a^{[l-1]} + b^{[l]}$$ $$a^{[l]} = g^{[l]}(z^{[l]})$$
 
 where $a^{[0]} = x$, 
 pre-activation $z^{[l]} \in \mathbb{R}^{n^{[l]} \times 1}$, 
