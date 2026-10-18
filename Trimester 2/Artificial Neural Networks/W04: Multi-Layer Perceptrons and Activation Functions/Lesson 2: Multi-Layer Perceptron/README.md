@@ -2,7 +2,12 @@
 
 ## Multi-Layer Perceptron Architecture and Forward Dynamics
 
-The Multi-Layer Perceptron (MLP) forms the structural core of feedforward deep learning. By linking multiple dense layers of neurons via parameterized affine transformations and element-wise non-linear activations, MLPs map arbitrary input vectors into expressive latent representations. A rigorous understanding of matrix vectorization, dimension alignment, geometric partitioning, and theoretical expressiveness provides the mathematical tools required to design and scale deep feedforward networks.
+The Multi-Layer Perceptron (MLP) forms the structural core of feedforward deep learning. 
+
+>[!Tip]
+>By linking multiple dense layers of neurons via **parameterized affine transformations** and **element-wise non-linear activations**, MLPs map arbitrary input vectors into expressive latent representations. 
+
+A rigorous understanding of matrix vectorization, dimension alignment, geometric partitioning, and theoretical expressiveness provides the mathematical tools required to design and scale deep feedforward networks.
 
 ## Matrix Vectorization and Dimensional Tracking
 
