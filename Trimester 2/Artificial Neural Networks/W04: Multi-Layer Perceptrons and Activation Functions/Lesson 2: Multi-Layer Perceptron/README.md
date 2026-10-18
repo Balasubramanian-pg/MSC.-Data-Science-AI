@@ -20,18 +20,6 @@ A rigorous understanding of matrix vectorization, dimension alignment, geometric
 
 ## The [Linear Collapse Theorem](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%202/Artificial%20Neural%20Networks/W04%3A%20Multi-Layer%20Perceptrons%20and%20Activation%20Functions/Lesson%202%3A%20Multi-Layer%20Perceptron/The%20Linear%20Collapse%20Theorem.md) and Rank Bottlenecks
 
-
-### Rank Degradation in Linear Cascades
-
-- By the Sylvester and fundamental rank inequalities, the rank of a matrix product is upper-bounded by the minimum rank of any constituent matrix:
-  #  $$\text{rank}(W_{\text{eff}}) = \text{rank}\left( \prod_{l=L}^1 W^{[l]} \right) \le \min_{l \in \{1, \dots, L\}} \text{rank}(W^{[l]})$$
-
-- If any intermediate layer $k$ acts as a **bottleneck** by having fewer neurons than the input ($n^{[k]} < n^{[0]}$), the maximum rank of $W_{\text{eff}}$ is strictly capped at $n^{[k]}$.
-- A low-rank bottleneck projects the input vector into a compressed lower-dimensional subspace, causing permanent information loss that subsequent linear layers cannot restore.
-
-> [!Important]
-> **Non-linear activations** prevent linear collapse: omitting non-linearities between layers reduces a network of arbitrary depth to a single matrix multiplication, completely eliminating the representational advantage of depth.
-
 ## Geometric Construction of Complex Boundaries
 
 ### Partitioning via Hyperplane Combinations
