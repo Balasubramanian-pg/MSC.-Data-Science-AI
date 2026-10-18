@@ -11,7 +11,7 @@ A rigorous understanding of matrix vectorization, dimension alignment, geometric
 
 ## Matrix Vectorization and Dimensional Tracking
 
-### Dimension Alignment Rules
+### [Dimension Alignment Rules](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%202/Artificial%20Neural%20Networks/W04%3A%20Multi-Layer%20Perceptrons%20and%20Activation%20Functions/Lesson%202%3A%20Multi-Layer%20Perceptron/Dimension%20Alignment%20Rules.md)
 
 ### Batch Matrix Formulations
 
