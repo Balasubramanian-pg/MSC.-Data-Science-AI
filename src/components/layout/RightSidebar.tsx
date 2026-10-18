@@ -6,6 +6,7 @@ import {
   ChevronLeft,
   ArrowRight,
   CheckCircle2,
+  Circle,
   BookOpen,
 } from 'lucide-react';
 import { allLessons, Lesson } from '../../data/curriculumData';
@@ -152,9 +153,9 @@ export const RightSidebar: React.FC<RightSidebarProps> = ({
                     </h4>
                   </div>
                   {isCompleted ? (
-                    <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-neutral-900 dark:text-white shrink-0 mt-0.5" />
                   ) : (
-                    <span className="w-2 h-2 rounded-full bg-neutral-300 dark:bg-neutral-600 shrink-0 mt-1.5" />
+                    <Circle className="w-3.5 h-3.5 text-neutral-400 dark:text-neutral-500 shrink-0 mt-0.5" />
                   )}
                 </div>
 
