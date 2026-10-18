@@ -2,7 +2,10 @@
 
 ## Introduction to Multi-Layer Perceptrons and Non-Linear Representations
 
-Single-neuron classifiers establish fundamental linear decision boundaries, yet real-world phenomena exhibit non-linear interactions that exceed the representational capacity of isolated threshold units. The Multi-Layer Perceptron (MLP) resolves this limitation by arranging individual neurons into cascaded computational stages known as hidden layers. Understanding the structural taxonomy, functional purpose of latent representations, and topological definitions of feedforward networks provides the conceptual foundation for designing deep architectures.
+Single-neuron classifiers establish fundamental linear decision boundaries, yet real-world phenomena exhibit non-linear interactions that exceed the representational capacity of isolated threshold units. 
+>[!Note]
+>The Multi-Layer Perceptron (MLP) resolves this limitation by **arranging individual neurons** into **cascaded computational stages** known as **hidden layers**.<br>
+>Understanding the structural taxonomy, functional purpose of latent representations, and topological definitions of feedforward networks provides the conceptual foundation for designing deep architectures.
 
 ## The Evolutionary Step Beyond Single Neurons
 
