@@ -27,6 +27,21 @@ interface LeftSidebarProps {
   onToggleCollapse: () => void;
 }
 
+const getSubjectIconName = (subjectId: string, defaultIcon?: string): string => {
+  switch (subjectId) {
+    case 'ann':
+      return 'siPytorch';
+    case 'cloud':
+      return 'aws';
+    case 'data-stores':
+      return 'siApacheairflow';
+    case 'ml':
+      return 'siScikitlearn';
+    default:
+      return defaultIcon || 'siPython';
+  }
+};
+
 export const LeftSidebar: React.FC<LeftSidebarProps> = ({
   activeTab,
   onTabChange,
@@ -157,9 +172,12 @@ export const LeftSidebar: React.FC<LeftSidebarProps> = ({
                       : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-200 hover:bg-neutral-200/40 dark:hover:bg-neutral-800/40'
                   }`}
                 >
-                  <div className="flex items-center gap-2 truncate">
-                    {/* Clean monochrome indicator */}
-                    <span className="w-2 h-2 rounded-full shrink-0 bg-neutral-900 dark:bg-white" />
+                  <div className="flex items-center gap-2.5 truncate">
+                    <SimpleIcon
+                      name={getSubjectIconName(subj.id, subj.icon)}
+                      size={15}
+                      className="shrink-0 text-neutral-900 dark:text-white"
+                    />
                     {!isCollapsed && <span className="truncate">{subj.shortTitle}</span>}
                   </div>
                   {!isCollapsed && (

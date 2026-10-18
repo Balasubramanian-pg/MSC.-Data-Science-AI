@@ -1,6 +1,22 @@
 import React, { useState } from 'react';
 import { Sparkles, TrendingUp, CheckCircle, Info } from 'lucide-react';
+import { SimpleIcon } from '../icons/SimpleIcon';
 import { curriculumData } from '../../data/curriculumData';
+
+const getSubjectIconName = (subjectId: string, defaultIcon?: string): string => {
+  switch (subjectId) {
+    case 'ann':
+      return 'siPytorch';
+    case 'cloud':
+      return 'aws';
+    case 'data-stores':
+      return 'siApacheairflow';
+    case 'ml':
+      return 'siScikitlearn';
+    default:
+      return defaultIcon || 'siPython';
+  }
+};
 
 interface AnalyticsSectionProps {
   completedLessonIds: string[];
@@ -243,8 +259,12 @@ export const AnalyticsSection: React.FC<AnalyticsSectionProps> = ({ completedLes
 
             return (
               <div key={subj.id} className="flex items-center justify-between text-[11px]">
-                <div className="flex items-center gap-1.5 truncate">
-                  <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: subj.color }} />
+                <div className="flex items-center gap-2 truncate">
+                  <SimpleIcon
+                    name={getSubjectIconName(subj.id, subj.icon)}
+                    size={13}
+                    className="shrink-0 text-neutral-900 dark:text-white"
+                  />
                   <span className="text-neutral-600 dark:text-neutral-300 truncate">{subj.shortTitle}</span>
                 </div>
                 <span className="font-mono text-neutral-500">{pct}%</span>
