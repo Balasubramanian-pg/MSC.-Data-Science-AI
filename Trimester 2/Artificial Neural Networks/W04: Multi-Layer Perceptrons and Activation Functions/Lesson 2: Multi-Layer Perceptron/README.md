@@ -24,7 +24,8 @@ A rigorous understanding of matrix vectorization, dimension alignment, geometric
 ### Rank Degradation in Linear Cascades
 
 - By the Sylvester and fundamental rank inequalities, the rank of a matrix product is upper-bounded by the minimum rank of any constituent matrix:
-  $$\text{rank}(W_{\text{eff}}) = \text{rank}\left( \prod_{l=L}^1 W^{[l]} \right) \le \min_{l \in \{1, \dots, L\}} \text{rank}(W^{[l]})$$
+  ##  $$\text{rank}(W_{\text{eff}}) = \text{rank}\left( \prod_{l=L}^1 W^{[l]} \right) \le \min_{l \in \{1, \dots, L\}} \text{rank}(W^{[l]})$$
+
 - If any intermediate layer $k$ acts as a **bottleneck** by having fewer neurons than the input ($n^{[k]} < n^{[0]}$), the maximum rank of $W_{\text{eff}}$ is strictly capped at $n^{[k]}$.
 - A low-rank bottleneck projects the input vector into a compressed lower-dimensional subspace, causing permanent information loss that subsequent linear layers cannot restore.
 
