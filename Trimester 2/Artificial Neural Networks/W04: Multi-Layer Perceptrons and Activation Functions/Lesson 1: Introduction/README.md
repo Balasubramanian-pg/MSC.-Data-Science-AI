@@ -5,16 +5,17 @@
 Single-neuron classifiers establish fundamental linear decision boundaries, yet real-world phenomena exhibit non-linear interactions that exceed the representational capacity of isolated threshold units. 
 >[!Note]
 >The Multi-Layer Perceptron (MLP) resolves this limitation by **arranging individual neurons** into **cascaded computational stages** known as **hidden layers**.<br>
->Understanding the structural taxonomy, functional purpose of latent representations, and topological definitions of feedforward networks provides the conceptual foundation for designing deep architectures.
+
+Understanding the structural taxonomy, functional purpose of latent representations, and topological definitions of feedforward networks provides the conceptual foundation for designing deep architectures.
 
 ## The Evolutionary Step Beyond Single Neurons
 
 ### Representational Bottlenecks of Single Units
 
-- A solitary Perceptron or Logistic Neuron maps inputs directly to an output through a single affine combination followed by a static activation function.
+- A solitary Perceptron or Logistic Neuron maps inputs directly to an output through a **single affine combination** followed by a **static activation function**.
 - Because the argument to the activation function is linear ($z = w^T x + b$), the resulting decision surface is constrained to a flat $(n-1)$-dimensional **hyperplane**.
-- Target data distributions whose classes wrap, interlock, or cross along diagonal axes cannot be separated without error by a solitary plane.
-- Overcoming this geometric bottleneck requires shifting from manual feature engineering to **representation learning**, where internal network layers construct hierarchical features automatically.
+- Target data distributions whose classes wrap, interlock, or cross along diagonal axes **cannot be separated without error by a solitary plane**.
+- Overcoming this geometric bottleneck requires shifting from manual feature engineering to **[representation learning](https://en.wikipedia.org/wiki/Representation_learning)**, where internal network layers construct hierarchical features automatically.
 
 ### The Concept of Representation Learning
 
