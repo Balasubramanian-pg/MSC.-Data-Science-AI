@@ -141,14 +141,14 @@ export const RightSidebar: React.FC<RightSidebarProps> = ({
             return (
               <div
                 key={lesson.id}
-                className="group p-3.5 rounded-xl bg-white dark:bg-neutral-850 border border-neutral-200/70 dark:border-neutral-700/70 shadow-2xs hover:shadow-card hover:border-neutral-300 dark:hover:border-neutral-600 transition-all duration-200"
+                className="group p-3.5 rounded-xl bg-white dark:bg-dark-panel border border-neutral-200/80 dark:border-neutral-800 shadow-2xs hover:shadow-card hover:border-neutral-300 dark:hover:border-neutral-700 hover:bg-neutral-50 dark:hover:bg-neutral-800/40 transition-all duration-200"
               >
                 <div className="flex items-start justify-between gap-2 mb-2">
                   <div className="min-w-0">
-                    <span className="text-[10px] font-mono text-neutral-400 dark:text-neutral-500 block truncate">
+                    <span className="text-[10px] font-mono text-neutral-400 dark:text-neutral-400 block truncate">
                       {lesson.subjectTitle} · {lesson.weekTitle.slice(0, 15)}...
                     </span>
-                    <h4 className="text-xs font-semibold text-neutral-900 dark:text-neutral-100 truncate mt-0.5 group-hover:text-neutral-700 dark:group-hover:text-neutral-300 transition-colors">
+                    <h4 className="text-xs font-semibold text-neutral-900 dark:text-neutral-100 truncate mt-0.5 group-hover:text-neutral-700 dark:group-hover:text-white transition-colors">
                       {lesson.title}
                     </h4>
                   </div>
@@ -160,7 +160,7 @@ export const RightSidebar: React.FC<RightSidebarProps> = ({
                 </div>
 
                 {/* Metadata */}
-                <div className="space-y-0.5 text-[11px] text-neutral-400 dark:text-neutral-500">
+                <div className="space-y-0.5 text-[11px] text-neutral-400 dark:text-neutral-400">
                   <p className="truncate">
                     Shared By: <span className="text-neutral-600 dark:text-neutral-300">Balasubramanian</span>
                   </p>
@@ -173,15 +173,15 @@ export const RightSidebar: React.FC<RightSidebarProps> = ({
                 </div>
 
                 {/* Details Button */}
-                <div className="mt-3 pt-2.5 border-t border-neutral-100 dark:border-neutral-700/60 flex items-center justify-between">
+                <div className="mt-3 pt-2.5 border-t border-neutral-100 dark:border-neutral-800 flex items-center justify-between">
                   <button
                     onClick={() => onOpenLesson(lesson.id)}
-                    className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[11px] font-medium bg-neutral-100 dark:bg-neutral-750 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors"
+                    className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[11px] font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors"
                   >
                     <span>Details</span>
                     <ArrowRight className="w-3 h-3 opacity-70" />
                   </button>
-                  <span className="text-[10px] text-neutral-400 font-mono">
+                  <span className="text-[10px] text-neutral-400 dark:text-neutral-500 font-mono">
                     {lesson.words} words
                   </span>
                 </div>
