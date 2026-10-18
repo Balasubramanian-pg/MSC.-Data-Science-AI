@@ -2,7 +2,7 @@
 ### Algebraic Proof of Linear Cascades
 
 - Cascading multiple dense layers without intermediate non-linear activation functions provides no representational benefit over a single linear transformation.
-- *Proof:* Consider an $L$-layer network where every activation function is the identity operator $g^{[l]}(z) = z$.
+- *Proof:* Consider an $L$-layer network where every activation function is the identity operator ### $g^{[l]}(z) = z$.
 - The output of the first layer evaluates to:
   ## $$a^{[1]} = W^{[1]} x + b^{[1]}$$
 - The output of the second layer evaluates to:
