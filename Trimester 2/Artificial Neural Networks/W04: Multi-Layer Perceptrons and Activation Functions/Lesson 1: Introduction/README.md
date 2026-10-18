@@ -29,6 +29,45 @@ Understanding the structural taxonomy, functional purpose of latent representati
 
 ## Anatomical Structure of Multi-Layer Perceptrons
 
+```mermaid
+flowchart LR
+    subgraph L1["① INPUT LAYER"]
+        direction TB
+        A1["x ∈ ℝⁿ⁰<br/>raw feature vector"]
+        A2["passive entry point<br/>no arithmetic transformation<br/>no activation applied"]
+        A1 -.- A2
+    end
+
+    subgraph L2["② HIDDEN LAYERS"]
+        direction TB
+        H1["h⁽¹⁾ = σ(W⁽¹⁾x + b⁽¹⁾)"]
+        H2["h⁽²⁾ = σ(W⁽²⁾h⁽¹⁾ + b⁽²⁾)"]
+        H3["⋮"]
+        H4["h⁽ᴸ⁾"]
+        N1["internal latent state<br/>not a ground-truth target<br/>not observed in label space"]
+        H1 --> H2 --> H3 --> H4
+        H4 -.- N1
+    end
+
+    subgraph L3["③ OUTPUT LAYER"]
+        direction TB
+        O1["ŷ = W h⁽ᴸ⁾ + b"]
+        O2["class probabilities<br/>softmax → p(y | x)"]
+        O3["real-valued regression<br/>ŷ ∈ ℝᵏ"]
+        O1 --> O2
+        O1 --> O3
+    end
+
+    A1 ==>|"forward pass"| H1
+    H4 ==>|"final latent features"| O1
+
+    classDef dark fill:#000000,stroke:#ffffff,stroke-width:2px,color:#ffffff
+    class A1,A2,H1,H2,H3,H4,N1,O1,O2,O3 dark
+
+    style L1 fill:#000000,stroke:#ffffff,stroke-width:2px,color:#ffffff
+    style L2 fill:#000000,stroke:#ffffff,stroke-width:2px,color:#ffffff
+    style L3 fill:#000000,stroke:#ffffff,stroke-width:2px,color:#ffffff
+```
 ### Layer Taxonomy: Input, Hidden, and Output Layers
 
 - The **input layer** serves as the passive entry point for the network, holding the raw feature vector $x \in \mathbb{R}^{n_0}$ without performing arithmetic transformations or applying activations.
