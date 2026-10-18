@@ -94,6 +94,8 @@ flowchart LR
 
 ## Functional Mechanics of Hidden Transformations
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/2bf33fc4-43dd-4060-be81-5ffc48b80292" />
+
 ### Latent Space Warping
 
 - A single hidden layer decomposes computation into two consecutive operations: a linear matrix mapping followed by an element-wise non-linear activation.
