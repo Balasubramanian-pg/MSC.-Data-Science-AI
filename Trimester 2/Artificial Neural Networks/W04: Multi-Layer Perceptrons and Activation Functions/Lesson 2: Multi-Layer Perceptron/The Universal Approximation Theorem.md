@@ -10,8 +10,9 @@
 >to arbitrary precision $\epsilon > 0$.
 
 - Formally, for every continuous function
-- # $f \in C(K)$ and metric $\epsilon > 0$,
+- $f \in C(K)$ and metric $\epsilon > 0$,
 - there exists an integer $N$, weight vectors
-- # $w_i \in \mathbb{R}^n$,
+# $w_i \in \mathbb{R}^n$,
 - bias scalars $b_i \in \mathbb{R}$, and output weights $v_i \in \mathbb{R}$ such that:
-  # $$\left| \sum_{i=1}^N v_i \, g(w_i^T x + b_i) - f(x) \right| < \epsilon \quad \forall x \in K$$
+
+# $$\left| \sum_{i=1}^N v_i \, g(w_i^T x + b_i) - f(x) \right| < \epsilon \quad \forall x \in K$$
