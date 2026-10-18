@@ -18,7 +18,7 @@ A rigorous understanding of matrix vectorization, dimension alignment, geometric
 > [!Tip]
 > **Dimension alignment** serves as the primary structural check: tracking matrix shapes across successive layers ensures that inner product operations match and vector broadcasting executes correctly during mini-batch operations.
 
-## The Linear Collapse Theorem and Rank Bottlenecks
+## The [Linear Collapse Theorem](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%202/Artificial%20Neural%20Networks/W04%3A%20Multi-Layer%20Perceptrons%20and%20Activation%20Functions/Lesson%202%3A%20Multi-Layer%20Perceptron/The%20Linear%20Collapse%20Theorem.md) and Rank Bottlenecks
 
 
 ### Rank Degradation in Linear Cascades
