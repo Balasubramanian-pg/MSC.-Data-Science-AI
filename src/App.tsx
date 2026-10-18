@@ -7,10 +7,10 @@ import { ReaderView } from './components/reader/ReaderView';
 import { VivaQuizView } from './components/views/VivaQuizView';
 import { LabsView } from './components/views/LabsView';
 import { TasksView } from './components/views/TasksView';
+import { ReportingView } from './components/views/ReportingView';
 import { SearchModal } from './components/widgets/SearchModal';
 import { RippleLoader } from './components/ui/ripple-loader';
-import { SimpleIcon } from './components/icons/SimpleIcon';
-import { Sparkles, Bot, BarChart3, Calendar, Users } from 'lucide-react';
+import { Sparkles, Calendar } from 'lucide-react';
 
 export const App: React.FC = () => {
   const {
@@ -22,7 +22,6 @@ export const App: React.FC = () => {
     toggleBookmark,
     pomoState,
     startPomodoro,
-    resetPomodoro,
     activeTab,
     setActiveTab,
     selectedSubjectId,
@@ -36,6 +35,8 @@ export const App: React.FC = () => {
   } = useWikiState();
 
   const [isLoading, setIsLoading] = useState(false);
+  const [isLeftCollapsed, setIsLeftCollapsed] = useState(false);
+  const [isRightCollapsed, setIsRightCollapsed] = useState(false);
 
   const handleOpenLesson = (lessonId: string) => {
     setIsLoading(true);
@@ -47,9 +48,9 @@ export const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-[#FAF9F6] dark:bg-dark-canvas text-neutral-900 dark:text-neutral-100 flex flex-row">
-      {/* Left Sidebar */}
+      {/* Left Sidebar (Collapsible, no search input, Viva & Labs in Essentials, no Team/Automations) */}
       <LeftSidebar
-        activeTab={activeTab}
+        activeTab={activeTab === 'reader' ? 'home' : activeTab}
         onTabChange={(tab) => {
           setActiveTab(tab);
           if (tab !== 'reader') setActiveLessonId(null);
@@ -57,12 +58,13 @@ export const App: React.FC = () => {
         selectedSubjectId={selectedSubjectId}
         onSubjectSelect={(subjId) => {
           setSelectedSubjectId(subjId);
-          setActiveTab('docs');
+          setActiveTab('home');
           setActiveLessonId(null);
         }}
-        onSearchOpen={() => setIsSearchOpen(true)}
         theme={theme}
         onThemeToggle={toggleTheme}
+        isCollapsed={isLeftCollapsed}
+        onToggleCollapse={() => setIsLeftCollapsed(!isLeftCollapsed)}
       />
 
       {/* Main Center Area */}
@@ -72,7 +74,7 @@ export const App: React.FC = () => {
             <RippleLoader
               size="md"
               label="Synthesizing Trimester 2 Curriculum..."
-              icon={<Sparkles className="w-5 h-5 text-neutral-800 dark:text-neutral-200 animate-spin" />}
+              icon={<Sparkles className="w-5 h-5 text-neutral-900 dark:text-white animate-spin" />}
             />
           </div>
         ) : activeLessonId && activeTab === 'reader' ? (
@@ -98,7 +100,7 @@ export const App: React.FC = () => {
           <div className="max-w-4xl mx-auto py-8">
             <div className="p-6 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 shadow-2xs">
               <div className="flex items-center gap-3 mb-4">
-                <Calendar className="w-5 h-5 text-neutral-700 dark:text-neutral-300" />
+                <Calendar className="w-5 h-5 text-neutral-800 dark:text-neutral-200" />
                 <h2 className="text-lg font-bold">Academic Calendar · Trimester 2</h2>
               </div>
               <p className="text-xs text-neutral-500 mb-6">
@@ -123,79 +125,11 @@ export const App: React.FC = () => {
               </div>
             </div>
           </div>
-        ) : activeTab === 'team' ? (
-          <div className="max-w-4xl mx-auto py-8">
-            <div className="p-6 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 shadow-2xs">
-              <div className="flex items-center gap-3 mb-4">
-                <Users className="w-5 h-5 text-neutral-700 dark:text-neutral-300" />
-                <h2 className="text-lg font-bold">MSc Data Science & AI Cohort</h2>
-              </div>
-              <p className="text-xs text-neutral-500 mb-6">
-                Coursework repository maintained by Balasubramanian P G with peer study group synchronization.
-              </p>
-              <div className="p-4 rounded-xl bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200/60 dark:border-neutral-700 flex items-center justify-between">
-                <div>
-                  <h4 className="font-bold text-sm">Balasubramanian P G</h4>
-                  <p className="text-xs text-neutral-400">MSc Data Science & AI · Lead Maintainer</p>
-                </div>
-                <a
-                  href="https://github.com/Balasubramanian-pg"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="px-3 py-1.5 rounded-lg text-xs font-medium bg-neutral-900 text-white dark:bg-white dark:text-neutral-900"
-                >
-                  GitHub Profile
-                </a>
-              </div>
-            </div>
-          </div>
-        ) : activeTab === 'automations' ? (
-          <div className="max-w-4xl mx-auto py-8">
-            <div className="p-8 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 shadow-2xs text-center flex flex-col items-center">
-              <RippleLoader
-                size="lg"
-                label="Automated Study Engine & Git Sync Active"
-                icon={<Bot className="w-6 h-6 text-neutral-800 dark:text-neutral-200" />}
-              />
-              <p className="text-xs text-neutral-500 max-w-md mt-4">
-                Background cron pipelines routinely parse upstream lecture updates, format markdown equations, and regenerate client-side search indexes.
-              </p>
-            </div>
-          </div>
         ) : activeTab === 'reporting' ? (
-          <div className="max-w-4xl mx-auto py-8">
-            <div className="p-6 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 shadow-2xs">
-              <div className="flex items-center gap-3 mb-4">
-                <BarChart3 className="w-5 h-5 text-neutral-700 dark:text-neutral-300" />
-                <h2 className="text-lg font-bold">Learning Analytics & Telemetry</h2>
-              </div>
-              <p className="text-xs text-neutral-500 mb-6">
-                Client-side anonymity compliant with /repo-wiki-framework standards. Zero tracking cookies or third-party beacons.
-              </p>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
-                <div className="p-4 rounded-xl bg-neutral-50 dark:bg-neutral-800/60">
-                  <div className="text-2xl font-bold font-mono">330</div>
-                  <div className="text-[10px] uppercase text-neutral-400 mt-1">Total Notes</div>
-                </div>
-                <div className="p-4 rounded-xl bg-neutral-50 dark:bg-neutral-800/60">
-                  <div className="text-2xl font-bold font-mono text-emerald-600">
-                    {completedLessonIds.length}
-                  </div>
-                  <div className="text-[10px] uppercase text-neutral-400 mt-1">Completed</div>
-                </div>
-                <div className="p-4 rounded-xl bg-neutral-50 dark:bg-neutral-800/60">
-                  <div className="text-2xl font-bold font-mono text-[#906BFF]">
-                    {bookmarkedIds.length}
-                  </div>
-                  <div className="text-[10px] uppercase text-neutral-400 mt-1">Bookmarked</div>
-                </div>
-                <div className="p-4 rounded-xl bg-neutral-50 dark:bg-neutral-800/60">
-                  <div className="text-2xl font-bold font-mono text-rose-600">52</div>
-                  <div className="text-[10px] uppercase text-neutral-400 mt-1">Course Weeks</div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ReportingView
+            completedLessonIds={completedLessonIds}
+            bookmarkedIds={bookmarkedIds}
+          />
         ) : (
           <DocsDashboardView
             onOpenLesson={handleOpenLesson}
@@ -207,14 +141,16 @@ export const App: React.FC = () => {
         )}
       </main>
 
-      {/* Right Sidebar (Matching mockup Sprint Archives) */}
+      {/* Right Sidebar (Collapsible with icon rail option) */}
       <RightSidebar
         onOpenLesson={handleOpenLesson}
         bookmarkedIds={bookmarkedIds}
         completedLessonIds={completedLessonIds}
+        isCollapsed={isRightCollapsed}
+        onToggleCollapse={() => setIsRightCollapsed(!isRightCollapsed)}
       />
 
-      {/* Search Modal */}
+      {/* Global Instant Search Modal */}
       <SearchModal
         isOpen={isSearchOpen}
         onClose={() => setIsSearchOpen(false)}

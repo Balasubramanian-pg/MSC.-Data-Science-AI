@@ -4,17 +4,28 @@ import {
   BookOpen,
   ArrowRight,
   CheckCircle2,
-  Filter,
-  Sparkles,
   ChevronDown,
+  Sparkles,
+  Cpu,
   Layers,
-  Clock,
-  ChevronRight,
+  Network,
+  TrendingUp,
+  Sliders,
+  ShieldCheck,
+  Eye,
+  Binary,
+  Server,
+  Activity,
+  Code2,
+  Award,
+  Database,
+  Cloud,
+  Box,
+  Compass,
 } from 'lucide-react';
 import { FluidExpandingGrid, FluidGridItem } from '../ui/fluid-expanding-grid';
 import { FolderShortcuts } from '../widgets/FolderShortcuts';
-import { AnalyticsSection } from '../widgets/AnalyticsSection';
-import { curriculumData, Subject, Lesson, Week } from '../../data/curriculumData';
+import { curriculumData } from '../../data/curriculumData';
 import { SimpleIcon } from '../icons/SimpleIcon';
 
 interface DocsDashboardViewProps {
@@ -24,6 +35,23 @@ interface DocsDashboardViewProps {
   onSearchOpen: () => void;
   completedLessonIds: string[];
 }
+
+// Contextual week icons mapping
+const weekIcons = [
+  Compass,
+  Cpu,
+  Layers,
+  Network,
+  TrendingUp,
+  Sliders,
+  ShieldCheck,
+  Eye,
+  Binary,
+  Server,
+  Activity,
+  Code2,
+  Award,
+];
 
 export const DocsDashboardView: React.FC<DocsDashboardViewProps> = ({
   onOpenLesson,
@@ -38,7 +66,7 @@ export const DocsDashboardView: React.FC<DocsDashboardViewProps> = ({
     ? curriculumData.find((s) => s.id === selectedSubjectId)
     : null;
 
-  // Custom FluidGridItems configured with Trimester 2 courses and simple-icons
+  // Exactly 4 Trimester 2 courses, strictly monochrome icons (black on white, white on black)
   const gridItems: FluidGridItem[] = [
     {
       id: 'ann',
@@ -47,8 +75,8 @@ export const DocsDashboardView: React.FC<DocsDashboardViewProps> = ({
       description:
         'Perceptrons, Multi-Layer Perceptrons, backpropagation dynamics, CNN architectures, sequence modeling, and explainable AI.',
       badge: '13 Weeks · PyTorch',
-      badgeColor: 'bg-rose-100 text-rose-800 dark:bg-rose-900/40 dark:text-rose-300',
-      icon: <SimpleIcon name="siPytorch" size={20} color="#EE4C2C" />,
+      badgeColor: 'bg-neutral-100 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200 border border-neutral-200 dark:border-neutral-700',
+      icon: <SimpleIcon name="siPytorch" size={20} className="text-neutral-900 dark:text-white" />,
       actionText: 'Connect',
       details: {
         topics: [
@@ -71,8 +99,8 @@ export const DocsDashboardView: React.FC<DocsDashboardViewProps> = ({
       description:
         'Enterprise AWS foundations, IAM, EC2 compute, VPC networking, Docker, Kubernetes container orchestration, S3, RDS, Serverless Lambda, and Terraform IaC.',
       badge: '13 Weeks · AWS & K8s',
-      badgeColor: 'bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-300',
-      icon: <SimpleIcon name="aws" size={20} color="#FF9900" />,
+      badgeColor: 'bg-neutral-100 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200 border border-neutral-200 dark:border-neutral-700',
+      icon: <SimpleIcon name="aws" size={20} className="text-neutral-900 dark:text-white" />,
       actionText: 'Connect',
       details: {
         topics: [
@@ -96,8 +124,8 @@ export const DocsDashboardView: React.FC<DocsDashboardViewProps> = ({
       description:
         'Modern data warehousing, lakehouses, Iceberg/Delta Lake formats, batch/streaming ingestion, and Apache Airflow orchestration.',
       badge: '13 Weeks · Lakehouse',
-      badgeColor: 'bg-sky-100 text-sky-800 dark:bg-sky-900/40 dark:text-sky-300',
-      icon: <SimpleIcon name="siApacheairflow" size={20} color="#017CEE" />,
+      badgeColor: 'bg-neutral-100 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200 border border-neutral-200 dark:border-neutral-700',
+      icon: <SimpleIcon name="siApacheairflow" size={20} className="text-neutral-900 dark:text-white" />,
       actionText: 'Connect',
       details: {
         topics: [
@@ -121,8 +149,8 @@ export const DocsDashboardView: React.FC<DocsDashboardViewProps> = ({
       description:
         'Supervised & unsupervised learning algorithms, decision trees, rule-based classification, k-NN, ensemble methods, clustering, and association rule mining.',
       badge: '13 Weeks · Scikit-Learn',
-      badgeColor: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-300',
-      icon: <SimpleIcon name="siScikitlearn" size={20} color="#F7931E" />,
+      badgeColor: 'bg-neutral-100 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200 border border-neutral-200 dark:border-neutral-700',
+      icon: <SimpleIcon name="siScikitlearn" size={20} className="text-neutral-900 dark:text-white" />,
       actionText: 'Connect',
       details: {
         topics: [
@@ -138,52 +166,6 @@ export const DocsDashboardView: React.FC<DocsDashboardViewProps> = ({
         highlights: ['40 In-depth Notes', 'Scikit-Learn Workflows', 'Algorithmic Formulations'],
       },
       onAction: () => onSelectSubject('ml'),
-    },
-    {
-      id: 'product-specs',
-      title: 'Product Specs & Syllabus',
-      category: 'Curriculum Specification',
-      description:
-        'Centralized documentation for Trimester 2 learning objectives, evaluation rubrics, course competencies, and exam blueprints.',
-      badge: 'Official Scope',
-      badgeColor: 'bg-purple-100 text-purple-800 dark:bg-purple-900/40 dark:text-purple-300',
-      icon: <BookOpen className="w-5 h-5 text-neutral-800 dark:text-neutral-200" />,
-      actionText: 'Connect',
-      details: {
-        topics: [
-          'Trimester 2 Learning Outcomes',
-          'Continuous Assessment Weights',
-          'Midterm & End-term Examination Rubrics',
-          'Academic Reference Texts',
-        ],
-        weeksCount: 13,
-        completion: 100,
-        highlights: ['Verified Syllabus', 'Outcome Matrix', 'Faculty Recommended Papers'],
-      },
-      onAction: () => onSelectSubject('ann'),
-    },
-    {
-      id: 'engineering-guidelines',
-      title: 'Engineering Guidelines',
-      category: 'Best Practices & Standards',
-      description:
-        'Best practices, coding standards, and architecture decisions to keep deep learning and data engineering implementations consistent.',
-      badge: 'Standards',
-      badgeColor: 'bg-neutral-100 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-300',
-      icon: <Sparkles className="w-5 h-5 text-neutral-800 dark:text-neutral-200" />,
-      actionText: 'Connect',
-      details: {
-        topics: [
-          'PEP 8 & Type Hints for Machine Learning',
-          'PyTorch Seed Determinism Rules',
-          'AWS IAM Least Privilege Principles',
-          'Data Contract & Schema Evolution Policies',
-        ],
-        weeksCount: 13,
-        completion: 95,
-        highlights: ['Production Standards', 'Clean Architecture', 'Reproducibility Protocols'],
-      },
-      onAction: () => onSelectSubject('cloud'),
     },
   ];
 
@@ -222,11 +204,8 @@ export const DocsDashboardView: React.FC<DocsDashboardViewProps> = ({
         <div className="my-6 space-y-6">
           <div className="flex items-center justify-between p-4 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 shadow-2xs">
             <div className="flex items-center gap-3">
-              <div
-                className="w-10 h-10 rounded-xl flex items-center justify-center text-white"
-                style={{ backgroundColor: activeSubject.color }}
-              >
-                <SimpleIcon name={activeSubject.icon} size={22} color="#FFFFFF" />
+              <div className="w-10 h-10 rounded-xl bg-neutral-100 dark:bg-neutral-800 border border-neutral-200/60 dark:border-neutral-700 text-neutral-900 dark:text-white flex items-center justify-center shrink-0 shadow-xs">
+                <SimpleIcon name={activeSubject.icon} size={22} className="text-neutral-900 dark:text-white" />
               </div>
               <div>
                 <span className="text-[10px] font-semibold uppercase text-neutral-400 tracking-wider">
@@ -247,11 +226,14 @@ export const DocsDashboardView: React.FC<DocsDashboardViewProps> = ({
 
           {/* Weeks List */}
           <div className="space-y-3">
-            {activeSubject.weeks.map((week) => {
+            {activeSubject.weeks.map((week, idx) => {
               const isWeekOpen = expandedWeekId === week.id || expandedWeekId === null;
               const weekCompletedCount = week.lessons.filter((l) =>
                 completedLessonIds.includes(l.id)
               ).length;
+
+              // Use contextual icon instead of "W01", "W02"
+              const WeekIconComponent = weekIcons[(week.weekNum - 1) % weekIcons.length] || BookOpen;
 
               return (
                 <div
@@ -265,8 +247,9 @@ export const DocsDashboardView: React.FC<DocsDashboardViewProps> = ({
                     className="w-full flex items-center justify-between p-4 text-left hover:bg-neutral-50/50 dark:hover:bg-neutral-800/40 transition-colors"
                   >
                     <div className="flex items-center gap-3">
-                      <span className="w-8 h-8 rounded-lg bg-neutral-100 dark:bg-neutral-800 font-mono text-xs font-bold text-neutral-700 dark:text-neutral-300 flex items-center justify-center">
-                        W{week.weekNum.toString().padStart(2, '0')}
+                      {/* Monochrome Week Icon Badge */}
+                      <span className="w-9 h-9 rounded-xl bg-neutral-100 dark:bg-neutral-800 border border-neutral-200/60 dark:border-neutral-700 text-neutral-900 dark:text-white flex items-center justify-center shrink-0 shadow-2xs">
+                        <WeekIconComponent className="w-4 h-4 text-neutral-800 dark:text-neutral-200" />
                       </span>
                       <div>
                         <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">
@@ -299,7 +282,7 @@ export const DocsDashboardView: React.FC<DocsDashboardViewProps> = ({
                             {isDone ? (
                               <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
                             ) : (
-                              <BookOpen className="w-4 h-4 text-neutral-400 shrink-0 mt-0.5 group-hover:text-neutral-700 dark:group-hover:text-neutral-200 transition-colors" />
+                              <BookOpen className="w-4 h-4 text-neutral-400 shrink-0 mt-0.5 group-hover:text-neutral-900 dark:group-hover:text-neutral-200 transition-colors" />
                             )}
                             <div className="flex-1 min-w-0">
                               <h4 className="text-xs font-semibold text-neutral-800 dark:text-neutral-200 truncate group-hover:text-neutral-950 dark:group-hover:text-white">
@@ -324,16 +307,13 @@ export const DocsDashboardView: React.FC<DocsDashboardViewProps> = ({
         </div>
       ) : (
         <>
-          {/* Main Cards Row: Fluid Expanding Grid */}
+          {/* Main 4 Cards Row: Fluid Expanding Grid */}
           <div className="my-6">
             <FluidExpandingGrid items={gridItems} />
           </div>
 
-          {/* Shortcut Row with Realistic Modern Folder Icons */}
+          {/* Trimester 2 Subject Workspaces */}
           <FolderShortcuts onOpenLesson={onOpenLesson} />
-
-          {/* Analytics Visualizations: Documentation Engagement Trend & Donut Gauge */}
-          <AnalyticsSection completedLessonIds={completedLessonIds} />
         </>
       )}
     </div>
