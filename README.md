@@ -1,9 +1,77 @@
-Let's go to Trimester 1 for now.
+# MSc Data Science & AI - Trimester 2 Interactive Wiki
 
-A few requests
+[![Deploy Trimester 2 Wiki to GitHub Pages](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/actions/workflows/deploy.yml/badge.svg)](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/actions/workflows/deploy.yml)
 
-1. Star the Repo please, so that more people in future batches also find this repo.
-<img width="1825" height="211" alt="image" src="https://github.com/user-attachments/assets/c7dacf7b-ff51-49f3-b680-376df6e8e2c3" />
+An enterprise-grade, interactive learning and certification wiki portal built for **Trimester 2** of the MSc Data Science & AI program.
 
-3. Kindly Watch the repo so that all the changes are visible to you in your home page.
-<img width="1845" height="617" alt="image" src="https://github.com/user-attachments/assets/9651d0a6-c800-4435-a323-afb1a83c0823" />
+---
+
+## 🌟 Key Architecture & Highlights
+
+- **Dual-Mode Workspace**:
+  - **App Dashboard**: High-impact editorial dashboard matching the provided reference layout with fluid expanding grids, shortcut workspaces, and live engagement trends.
+  - **Reader Workspace**: Distraction-free, decluttered study mode with minimal header, code snippet copying, Pomodoro pill countdown, and sticky "Mark as Complete" action bar.
+- **Fluid Expanding Grid (`src/components/ui/fluid-expanding-grid.tsx`)**:
+  - Motion layout expanding gallery cards across all 4 courses + syllabus specifications + engineering guidelines.
+  - Full keyboard accessibility (Enter, Space, Tab, Escape) and ARIA attributes.
+- **Ripple Loader (`src/components/ui/ripple-loader.tsx`)**:
+  - Concentric layered ripple animations with customizable center icon, speed, and ARIA attributes.
+- **Typography & Visual Standards**:
+  - Set in **Abadi** font family with structural headings and monospace code styling.
+  - Layered light/dark mode tokens supporting seamless switching.
+- **Simple Icons Family**:
+  - Official brand SVGs for PyTorch, Docker, Kubernetes, Apache Airflow, Scikit-Learn, AWS, PostgreSQL, Snowflake, GitHub, and LinkedIn.
+- **Gamified Interactive Widgets**:
+  - **Resilient Pomodoro Focus Clock**: Timestamp-delta persistent countdown surviving page transitions and full browser refreshes.
+  - **Documentation Engagement Trend**: Dynamic SVG cubic Bézier spline wave visualizing study hours and reading velocity.
+  - **Views & Edits by Week**: Circular gauge meter tracking module completions across all 330 notes.
+  - **Viva & Practice Quiz Simulator**: Scenario-based evaluation with instant architectural feedback and confetti celebrations.
+- **GitHub Actions Deployment**:
+  - Production-ready `.github/workflows/deploy.yml` compiling static assets and deploying to GitHub Pages on every push.
+
+---
+
+## 📚 Curriculum Coverage (330 Notes Extracted)
+
+1. **Artificial Neural Networks** (85 Modules, W01 - W13)
+   - Biological vs Artificial Neurons, Linear Algebra, Perceptrons, MLPs, Backpropagation Dynamics, CNNs, Sequence Models, and Responsible AI.
+2. **Cloud Services & Platforms** (93 Modules, W01 - W13)
+   - Cloud Architecture, AWS IAM, EC2 Compute, VPC Networking, Docker & Kubernetes Containers, S3 Storage, Serverless Lambda, and Terraform IaC.
+3. **Data Stores & Pipelines** (112 Modules, W01 - W13)
+   - Modern Data Warehouses, Lakehouses, Apache Iceberg, Delta Lake, Batch/Streaming Ingestion, Apache Airflow DAGs, and Data Governance.
+4. **Machine Learning** (40 Modules, Weeks 1 - 13)
+   - Preprocessing, Decision Trees, Rule-based Classification, k-NN, Ensemble Learning, K-Means, Hierarchical & DBSCAN Clustering, and Association Rules.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js >= 18 (Tested on v22)
+- npm >= 9
+
+### Local Development
+```bash
+# Install dependencies
+npm install
+
+# Start local dev server
+npm run dev
+```
+
+### Production Build
+```bash
+npm run build
+npm run preview
+```
+
+---
+
+## 🚢 GitHub Pages Deployment
+
+The repository is configured with a GitHub Actions workflow in `.github/workflows/deploy.yml`.
+
+To deploy:
+1. Push the code to the `main` (or `master`) branch.
+2. Under repository **Settings > Pages**, set **Source** to **GitHub Actions**.
+3. The workflow will automatically build the static assets and deploy your wiki live!

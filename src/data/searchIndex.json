@@ -1,0 +1,2972 @@
+[
+  {
+    "id": "ann-README.md-1",
+    "title": "Artificial Neural Networks",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "README.md",
+    "summary": "Comprehensive study notes and curriculum reference.",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "ann-w01-1",
+    "title": "Lesson 1: Evolution of AI, ML, Deep Learning",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W01 - Introduction to Neural Networks",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "ann-w01-2",
+    "title": "Lesson 2: Biological vs Artificial Neuron",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W01 - Introduction to Neural Networks",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "ann-w01-3",
+    "title": "Lesson 3: Components and Feed-forward Networks",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W01 - Introduction to Neural Networks",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "ann-w01-4",
+    "title": "Lesson 4: Summary and Assessment",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W01 - Introduction to Neural Networks",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "ann-w01-5",
+    "title": "W01: Introduction to Neural Networks",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W01 - Introduction to Neural Networks",
+    "summary": "**What Is an Artificial Neural Network?** An artificial neural network (ANN) is a computational model inspired by the structure and function of biological neural networks found in animal brains. It is a network of interconnected nodes called neurons,",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "ann-w02-1",
+    "title": "Lesson 1: Module Introduction",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W02 - Mathematical Foundations for Neural Networks",
+    "summary": "Module Overview: - This module introduces the core mathematical disciplines required to design, analyze, and train artificial neural networks. - Neural network operations rely on formal mathematical definitions rather than empirical heuristics alone.",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "ann-w02-2",
+    "title": "Lesson 2: Linear Algebra Essentials",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W02 - Mathematical Foundations for Neural Networks",
+    "summary": "**Linear Algebra Essentials for Neural Networks** Linear algebra provides the algebraic structures and geometric operations required to construct, train, and evaluate deep neural networks. Inputs, layer parameters, and internal activations exist as m",
+    "readingTime": "10 min read"
+  },
+  {
+    "id": "ann-w02-3",
+    "title": "Lesson 3: Gradients and Derivatives",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W02 - Mathematical Foundations for Neural Networks",
+    "summary": "Differential calculus provides the analytical framework for measuring how adjustments to model parameters influence loss function values during training. Neural networks learn by propagating error signals across computational graphs, updating paramet",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "ann-w02-4",
+    "title": "Lesson 4: Numerical Stability Concepts",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W02 - Mathematical Foundations for Neural Networks",
+    "summary": "Deep neural networks execute billions of floating-point operations where theoretical mathematical equations encounter the physical constraints of finite-precision hardware. Rounding errors, dynamic range boundaries, and chained matrix products freque",
+    "readingTime": "12 min read"
+  },
+  {
+    "id": "ann-w02-5",
+    "title": "Lesson 5: Summary and Assessment",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W02 - Mathematical Foundations for Neural Networks",
+    "summary": "A rigorous grasp of mathematical foundations unites vector spaces, differential operators, and numerical execution pipelines into a cohesive framework for deep learning. Neural network training expresses high-dimensional transformations through linea",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "ann-w02-6",
+    "title": "W02: Mathematical Foundations for Neural Networks",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W02 - Mathematical Foundations for Neural Networks",
+    "summary": "**Why Mathematical Foundations Matter** Neural networks are **mathematical objects** before they are code. The training process is an *optimization problem*, the forward pass is a *sequence of matrix operations*, and the learning signal comes from *d",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "ann-w03-1",
+    "title": "Lesson 1: Introduction",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W03 - Perceptron and Logistic Neuron",
+    "summary": "Artificial neural networks trace their lineage to computational attempts to simulate the information-processing capabilities of biological nervous systems. The progression from rigid mathematical abstractions to adaptive computational units began wit",
+    "readingTime": "10 min read"
+  },
+  {
+    "id": "ann-w03-2",
+    "title": "Lesson 2: The Perceptron: Foundations",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W03 - Perceptron and Logistic Neuron",
+    "summary": "The classical Perceptron represents the foundational linear threshold classifier in supervised learning. It maps continuous multidimensional input vectors to discrete binary outputs using an affine transformation combined with a non-differentiable st",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "ann-w03-3",
+    "title": "Lesson 3: Linear Separability and XOR Motivation",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W03 - Perceptron and Logistic Neuron",
+    "summary": "Linear separability defines the geometric boundary condition where two distinct classes can be partitioned completely by a single flat hyperplane. The structural inability of single-layer perceptrons to resolve non-linearly separable logic, exemplifi",
+    "readingTime": "12 min read"
+  },
+  {
+    "id": "ann-w03-4",
+    "title": "Lesson 4: Logistic Neuron and Smooth Decision",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W03 - Perceptron and Logistic Neuron",
+    "summary": "Replacing the hard step function of the classical Perceptron with a smooth, continuous activation function marks a critical evolution in neural network design. The Logistic Neuron processes input vectors through a sigmoid curve, converting raw pre-ac",
+    "readingTime": "13 min read"
+  },
+  {
+    "id": "ann-w03-5",
+    "title": "Lesson 5: Summary and Assessment",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W03 - Perceptron and Logistic Neuron",
+    "summary": "A thorough comprehension of single-layer neural units bridges discrete threshold logic with continuous probabilistic learning. Tracing the trajectory from the Rosenblatt Perceptron to the Logistic Neuron illuminates how geometric constraints like lin",
+    "readingTime": "14 min read"
+  },
+  {
+    "id": "ann-w03-6",
+    "title": "W03: Perceptron and Logistic Neuron",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W03 - Perceptron and Logistic Neuron",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "ann-w04-1",
+    "title": "Lesson 1: Introduction",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W04 - Multi-Layer Perceptrons and Activation Functions",
+    "summary": "Single-neuron classifiers establish fundamental linear decision boundaries, yet real-world phenomena exhibit non-linear interactions that exceed the representational capacity of isolated threshold units. The Multi-Layer Perceptron (MLP) resolves this",
+    "readingTime": "7 min read"
+  },
+  {
+    "id": "ann-w04-2",
+    "title": "Lesson 2: Multi-Layer Perceptron",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W04 - Multi-Layer Perceptrons and Activation Functions",
+    "summary": "The Multi-Layer Perceptron (MLP) forms the structural core of feedforward deep learning. By linking multiple dense layers of neurons via parameterized affine transformations and element-wise non-linear activations, MLPs map arbitrary input vectors in",
+    "readingTime": "10 min read"
+  },
+  {
+    "id": "ann-w04-3",
+    "title": "Lesson 3: Activation Functions: The Nonlinear",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W04 - Multi-Layer Perceptrons and Activation Functions",
+    "summary": "Non-linear activation functions serve as the functional core of deep neural networks, transforming affine matrix multiplications into flexible, curved coordinate mappings. Without non-linearity, networks of arbitrary depth collapse algebraically into",
+    "readingTime": "12 min read"
+  },
+  {
+    "id": "ann-w04-4",
+    "title": "Lesson 4: Activation Challenges and Practical",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W04 - Multi-Layer Perceptrons and Activation Functions",
+    "summary": "Deploying non-linear activations in deep architectures introduces severe optimization hurdles when mathematical ideals meet gradient-based training. Issues such as vanishing gradients, exploding gradients, dead neurons, and activation saturation can ",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "ann-w04-5",
+    "title": "Lesson 5: Summary and Assessment",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W04 - Multi-Layer Perceptrons and Activation Functions",
+    "summary": "Mastery of feedforward neural networks requires understanding how linear matrix transformations interact with non-linear activation functions to create expressive latent spaces. Cascading affine layers without non-linearities causes deep networks to ",
+    "readingTime": "15 min read"
+  },
+  {
+    "id": "ann-w04-6",
+    "title": "W04: Multi-Layer Perceptrons and Activation Functions",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W04 - Multi-Layer Perceptrons and Activation Functions",
+    "summary": "The Multi-Layer Perceptron (MLP) extends single-neuron models into deep architectures capable of modeling non-linear relationships. By arranging artificial neurons into sequential cascades of affine transformations interleaved with non-linear activat",
+    "readingTime": "15 min read"
+  },
+  {
+    "id": "ann-w05-1",
+    "title": "Lesson 1: Introduction",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W05 - Backpropagation and Training Dynamics",
+    "summary": "Designing multi-layer neural network architectures represents only the first phase of deep learning; establishing how internal parameters adapt from empirical observations represents the operational core. The training process requires resolving the c",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "ann-w05-2",
+    "title": "Lesson 2: Backpropagation",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W05 - Backpropagation and Training Dynamics",
+    "summary": "The backpropagation algorithm evaluates the exact gradient of a scalar loss function with respect to every learnable parameter in a neural network. By applying the multivariate chain rule across nested computational operations, backpropagation routes",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "ann-w05-3",
+    "title": "Lesson 3: Gradient Flow and Initialization",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W05 - Backpropagation and Training Dynamics",
+    "summary": "The trainability of deep neural networks depends on preserving stable signal propagation during both the forward and backward passes. When information traverses dozens or hundreds of stacked layers, uncalibrated parameter initializations trigger expo",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "ann-w05-4",
+    "title": "Lesson 4: Loss Functions",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W05 - Backpropagation and Training Dynamics",
+    "summary": "The objective loss function acts as the mathematical compass that guides gradient descent, translating model prediction errors into scalar signals that drive backpropagation. Selecting a loss function defines the optimization topography, determines p",
+    "readingTime": "12 min read"
+  },
+  {
+    "id": "ann-w05-5",
+    "title": "Lesson 5: Vanishing and Exploding Gradients",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W05 - Backpropagation and Training Dynamics",
+    "summary": "Training deep neural networks requires propagating learning signals across extended computational chains without exponential amplification or severe attenuation. When backpropagation chains Jacobian matrices across dozens or hundreds of stacked layer",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "ann-w05-6",
+    "title": "Lesson 6: Summary and Assessment",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W05 - Backpropagation and Training Dynamics",
+    "summary": "Understanding backpropagation and training dynamics establishes the analytical foundation for training deep neural networks. Learning operates as a closed-loop system where forward affine projections generate predictions, loss functions quantify empi",
+    "readingTime": "16 min read"
+  },
+  {
+    "id": "ann-w05-7",
+    "title": "W05: Backpropagation and Training Dynamics",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W05 - Backpropagation and Training Dynamics",
+    "summary": "The training of deep artificial neural networks centers on calculating error gradients across parameterized computational graphs and applying those gradients to update network parameters. The backpropagation algorithm implements reverse-mode automati",
+    "readingTime": "15 min read"
+  },
+  {
+    "id": "ann-w06-1",
+    "title": "Lesson 1: Introduction",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W06 - Optimization Algorithms",
+    "summary": "While backpropagation evaluates the exact gradient of a loss function across computational graphs, optimization algorithms determine how those gradient vectors guide parameter updates. Training a deep neural network requires navigating complex, high-",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "ann-w06-2",
+    "title": "Lesson 2: Gradient Descent: The Foundation",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W06 - Optimization Algorithms",
+    "summary": "Gradient descent represents the primary iterative algorithm for minimizing objective loss functions in neural networks. By calculating partial derivatives across continuous computational graphs, gradient descent repeatedly adjusts parameters in the d",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "ann-w06-3",
+    "title": "Lesson 3: Adaptive Optimizers",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W06 - Optimization Algorithms",
+    "summary": "Standard gradient descent updates all parameters using a single, uniform scalar learning rate, treating every coordinate in parameter space as if it possessed identical curvature and sensitivity. In deep multi-layer architectures, gradients across la",
+    "readingTime": "12 min read"
+  },
+  {
+    "id": "ann-w06-4",
+    "title": "Lesson 4: Learning Rate Schedules",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W06 - Optimization Algorithms",
+    "summary": "The learning rate stands as the most critical hyperparameter in neural network training, dictating the step size taken along parameter descent trajectories. Keeping the learning rate constant throughout training creates a structural compromise betwee",
+    "readingTime": "13 min read"
+  },
+  {
+    "id": "ann-w06-5",
+    "title": "Lesson 5: Stabilising and Understanding Convergence",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W06 - Optimization Algorithms",
+    "summary": "Achieving stable convergence in deep neural networks requires managing the interaction between non-convex loss surfaces, gradient dynamics, and finite-precision hardware. Training failure often manifests as sudden gradient explosions, vanishing updat",
+    "readingTime": "12 min read"
+  },
+  {
+    "id": "ann-w06-6",
+    "title": "Lesson 6: Summary and Assessment",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W06 - Optimization Algorithms",
+    "summary": "Mastering neural network optimization requires understanding how gradient vectors, curvature geometry, and adaptive mechanics coordinate to update network parameters. Navigating high-dimensional, non-convex error surfaces demands algorithms that over",
+    "readingTime": "16 min read"
+  },
+  {
+    "id": "ann-w06-7",
+    "title": "W06: Optimization Algorithms",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W06 - Optimization Algorithms",
+    "summary": "Optimization algorithms function as the computational engine that updates neural network parameters by navigating complex, high-dimensional error surfaces. First-order methods rely on backpropagated gradient vectors to update weights, but standard gr",
+    "readingTime": "15 min read"
+  },
+  {
+    "id": "ann-w07-1",
+    "title": "Lesson 1: Introduction",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W07 - Regularization and Generalization",
+    "summary": "Training deep neural networks involves two distinct mathematical objectives: minimizing empirical loss on training observations and maintaining predictive accuracy on unseen data. Because modern architectures contain far more parameters than availabl",
+    "readingTime": "8 min read"
+  },
+  {
+    "id": "ann-w07-2",
+    "title": "Lesson 2: Underfitting, Overfitting and Bias",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W07 - Regularization and Generalization",
+    "summary": "The central objective of supervised learning is ensuring that an artificial neural network extracts genuine underlying patterns rather than memorizing random training noise. When model capacity fails to match the complexity of the data distribution, ",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "ann-w07-3",
+    "title": "Lesson 3: Core Regularization Methods",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W07 - Regularization and Generalization",
+    "summary": "Regularization techniques provide the mathematical and algorithmic mechanisms required to prevent over-parameterized neural networks from memorizing sample noise. By penalizing model complexity, injecting stochastic noise into layer activations, cons",
+    "readingTime": "14 min read"
+  },
+  {
+    "id": "ann-w07-4",
+    "title": "Lesson 4: Best Practices",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W07 - Regularization and Generalization",
+    "summary": "Developing robust deep learning models requires moving beyond isolated regularization methods toward a coordinated, multi-tiered engineering protocol. Deploying regularizers indiscriminately can introduce conflicting inductive biases, suppress model ",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "ann-w07-5",
+    "title": "Lesson 5: Summary and Assessment",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W07 - Regularization and Generalization",
+    "summary": "Mastering generalization requires understanding how structural constraints, stochastic noise, and optimization biases prevent over-parameterized neural networks from fitting sample-specific noise. While optimization algorithms drive empirical trainin",
+    "readingTime": "17 min read"
+  },
+  {
+    "id": "ann-w07-6",
+    "title": "W07: Regularization and Generalization",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W07 - Regularization and Generalization",
+    "summary": "Deep neural networks possess millions or billions of parameters, granting them the capacity to memorize arbitrary patterns, noise, and labels. The primary objective of machine learning is not minimizing training error, but achieving low error on unse",
+    "readingTime": "14 min read"
+  },
+  {
+    "id": "ann-w08-1",
+    "title": "Lesson 1: Introduction",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W08 - Convolutional Neural Networks",
+    "summary": "Fully connected feedforward networks process inputs as flat, unstructured vectors, making them poorly suited for data with native multi-dimensional spatial arrangements. Convolutional Neural Networks (CNNs) introduce architectural inductive biases in",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "ann-w08-2",
+    "title": "Lesson 2: Convolutions and Feature Maps",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W08 - Convolutional Neural Networks",
+    "summary": "The core computational mechanism of a Convolutional Neural Network is the convolutional layer, which replaces dense vector-matrix products with localized spatial cross-correlations. By sweeping multidimensional filter kernels across input grids, the ",
+    "readingTime": "12 min read"
+  },
+  {
+    "id": "ann-w08-3",
+    "title": "Lesson 3: Filters, Stride, Padding and Pooling",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W08 - Convolutional Neural Networks",
+    "summary": "Convolutional architectures control spatial resolution, parameter volume, and geometric invariance using four interrelated primitives: filters, stride, padding, and pooling. While filter dimensions and channel counts govern feature diversity and repr",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "ann-w08-4",
+    "title": "Lesson 4: CNN Architecture Blocks",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W08 - Convolutional Neural Networks",
+    "summary": "The evolution of Convolutional Neural Networks shifted historical practice from manually engineering individual layers to composing standardized, repeatable computational modules known as architecture blocks. By defining self-contained micro-architec",
+    "readingTime": "14 min read"
+  },
+  {
+    "id": "ann-w08-5",
+    "title": "Lesson 5: Modern CNNs (Overview)",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W08 - Convolutional Neural Networks",
+    "summary": "The architectural design of Convolutional Neural Networks advanced from empirical trial-and-error toward systematic structural engineering. Following the success of classical deep models like ResNet, modern CNNs address fundamental bottlenecks in fea",
+    "readingTime": "12 min read"
+  },
+  {
+    "id": "ann-w08-6",
+    "title": "Lesson 6: Summary and Assessment",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W08 - Convolutional Neural Networks",
+    "summary": "Convolutional Neural Networks (CNNs) provide the architectural foundation for deep computer vision by aligning neural network structure with the spatial properties of physical imagery. By substituting dense matrix multiplications with localized recep",
+    "readingTime": "21 min read"
+  },
+  {
+    "id": "ann-w08-7",
+    "title": "W08: Convolutional Neural Networks",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W08 - Convolutional Neural Networks",
+    "summary": "Convolutional Neural Networks (CNNs) represent a foundational class of deep architectures designed specifically to process data organized as multi-dimensional grids, such as images, audio spectrograms, and volumetric video tensors. While dense Multi-",
+    "readingTime": "18 min read"
+  },
+  {
+    "id": "ann-w09-1",
+    "title": "Lesson 1: Module Introduction",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W09 - Sequence Models",
+    "summary": "Traditional feedforward networks and spatial convolutional architectures operate on fixed-dimensional inputs, assuming each observation is statistically independent from all others. Real-world phenomena such as written language, spoken audio, financi",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "ann-w09-2",
+    "title": "Lesson 2: Introduction to Sequence Models",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W09 - Sequence Models",
+    "summary": "Sequence modeling addresses the problem of estimating probability distributions over ordered collections of discrete tokens or continuous vectors. Before a neural network can process temporal dynamics, raw symbolic data must be mapped into continuous",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "ann-w09-3",
+    "title": "Lesson 3: Recurrent Neural Networks",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W09 - Sequence Models",
+    "summary": "Vanilla Recurrent Neural Networks (RNNs) provide the foundational architecture for modeling sequential dependencies through cyclical feedback loops. By maintaining an internal hidden state that persists across time steps, an RNN combines current inpu",
+    "readingTime": "12 min read"
+  },
+  {
+    "id": "ann-w09-4",
+    "title": "Lesson 4: LSTM and GRU Architectures",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W09 - Sequence Models",
+    "summary": "Vanilla Recurrent Neural Networks struggle to capture long-range temporal dependencies because continuous matrix multiplications across time steps cause backpropagated gradients to vanish or explode. Gated recurrent architectures resolve this mathema",
+    "readingTime": "13 min read"
+  },
+  {
+    "id": "ann-w09-5",
+    "title": "Lesson 5: Beyond RNNs",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W09 - Sequence Models",
+    "summary": "While Gated Recurrent Units (GRUs) and Long Short-Term Memory (LSTM) networks resolve vanishing gradients across moderate sequence lengths, their sequential formulation creates fundamental computational bottlenecks. Step-by-step recurrent processing ",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "ann-w09-6",
+    "title": "Lesson 6: Summary and Assessment",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W09 - Sequence Models",
+    "summary": "Sequence Models Summary and Assessment: Overview of Sequence Modeling: - Sequence models process ordered data where context and temporal relationships matter, such as text, speech, audio, and time series.",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "ann-w09-7",
+    "title": "W09: Sequence Models",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W09 - Sequence Models",
+    "summary": "Feedforward and convolutional networks operate on the assumption of independent, identically distributed instances with fixed-dimensional inputs. Real-world tasks such as natural language processing, speech recognition, financial forecasting, and com",
+    "readingTime": "15 min read"
+  },
+  {
+    "id": "ann-w10-1",
+    "title": "Lesson 1: Introduction to Model Diagnostics",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W10 - Model Evaluation and Performance Metrics",
+    "summary": "Model diagnostics provide systematic methods for identifying, isolating, and rectifying performance bottlenecks across neural network training workflows. By analyzing empirical error distributions, learning curves, and internal gradient mechanics, pr",
+    "readingTime": "8 min read"
+  },
+  {
+    "id": "ann-w10-2",
+    "title": "Lesson 2: Classical Metrics Refresher (in the Neural Context)",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W10 - Model Evaluation and Performance Metrics",
+    "summary": "Classical performance metrics provide quantitative foundations for evaluating neural network behavior beyond raw training loss minimization. Understanding the mathematical properties, class-imbalance sensitivities, and threshold dynamics of these met",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "ann-w10-3",
+    "title": "Lesson 3: Neural Network Specific Learning Behaviours",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W10 - Model Evaluation and Performance Metrics",
+    "summary": "Neural networks exhibit non-classical optimization and generalization phenomena that diverge fundamentally from traditional statistical learning theory. Behaviors such as benign overfitting, the double descent curve, spectral bias, and grokking revea",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "ann-w10-4",
+    "title": "Lesson 4: Calibration and Confidence Evaluation",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W10 - Model Evaluation and Performance Metrics",
+    "summary": "Probability calibration evaluates how accurately a neural network estimates the true likelihood of its predictions. While modern deep architectures consistently outperform shallow models on classification accuracy, they systematically produce overcon",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "ann-w10-5",
+    "title": "Lesson 5: Robustness and Sensitivity Analysis",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W10 - Model Evaluation and Performance Metrics",
+    "summary": "Robustness and sensitivity analysis evaluate how stable neural network predictions remain under input perturbations, distributional shifts, and adversarial manipulations. While standard performance metrics assume identically distributed training and ",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "ann-w10-6",
+    "title": "Lesson 6: Summary and Assessment",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W10 - Model Evaluation and Performance Metrics",
+    "summary": "A rigorous evaluation pipeline synthesizes discriminative accuracy, non-classical learning dynamics, probabilistic calibration, and input perturbation robustness into a unified diagnostic framework. Evaluating neural architectures requires examining ",
+    "readingTime": "10 min read"
+  },
+  {
+    "id": "ann-w10-7",
+    "title": "W10: Model Evaluation and Performance Metrics",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W10 - Model Evaluation and Performance Metrics",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "ann-w11-1",
+    "title": "Lesson 1: Introduction to Model Diagnostics",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W11 - Model Diagnostics",
+    "summary": "Model diagnostics establish systematic empirical protocols for isolating, interpreting, and resolving failure modes across neural network training pipelines. Unlike traditional software where implementation bugs trigger explicit compiler faults or ru",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "ann-w11-2",
+    "title": "Lesson 2: Gradient Flow Diagnostics",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W11 - Model Diagnostics",
+    "summary": "Gradient flow diagnostics evaluate the numerical stability and propagation fidelity of error signals across deep neural architectures during backward passes. Because parameter optimization depends on backpropagating derivatives through chained matrix",
+    "readingTime": "10 min read"
+  },
+  {
+    "id": "ann-w11-3",
+    "title": "Lesson 3: Activation Diagnostics",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W11 - Model Diagnostics",
+    "summary": "Activation diagnostics evaluate the distributional health, variance stability, and representation expressiveness of hidden layer outputs across the forward pass. Because backpropagated error gradients depend directly on the local derivatives and acti",
+    "readingTime": "10 min read"
+  },
+  {
+    "id": "ann-w11-4",
+    "title": "Lesson 4: Weights and Parameter Behaviour",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W11 - Model Diagnostics",
+    "summary": "Parameter diagnostics examine the trajectories, magnitude distributions, and spectral properties of neural network weight tensors throughout the optimization lifecycle. While gradient flow reflects instantaneous backward forces, parameter behavior re",
+    "readingTime": "10 min read"
+  },
+  {
+    "id": "ann-w11-5",
+    "title": "Lesson 5: Practical Debugging",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W11 - Model Diagnostics",
+    "summary": "Practical debugging in neural network engineering establishes reproducible, step-by-step procedures for locating and correcting silent failures across data loaders, computational graphs, and optimization loops. Because neural networks rarely crash wh",
+    "readingTime": "8 min read"
+  },
+  {
+    "id": "ann-w11-6",
+    "title": "Lesson 6: Summary and Assessment",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W11 - Model Diagnostics",
+    "summary": "A comprehensive model diagnostics framework integrates forward activation health, backward gradient propagation, parameter dynamics, and statistical error decomposition into a cohesive telemetry system. Systematically debugging neural networks requir",
+    "readingTime": "10 min read"
+  },
+  {
+    "id": "ann-w11-7",
+    "title": "W11: Model Diagnostics",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W11 - Model Diagnostics",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "ann-w12-1",
+    "title": "Lesson 1: Introduction to Hyperparameter Tuning and Experiment Control",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W12 - Hyperparameter Tuning and Experiment Control",
+    "summary": "Hyperparameter tuning and experiment control establish rigorous methodologies for exploring, optimizing, and tracking the external configuration variables that govern neural network training. Unlike internal model parameters that update directly via ",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "ann-w12-2",
+    "title": "Lesson 2: Tuning Core Hyperparameters",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W12 - Hyperparameter Tuning and Experiment Control",
+    "summary": "Tuning core hyperparameters focuses on optimizing the primary mathematical controls that govern gradient descent trajectories, numerical stability, and convergence rates. Among all external settings, the learning rate, learning rate schedule, mini-ba",
+    "readingTime": "10 min read"
+  },
+  {
+    "id": "ann-w12-3",
+    "title": "Lesson 3: Automated Hyperparameter Tuning",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W12 - Hyperparameter Tuning and Experiment Control",
+    "summary": "Automated hyperparameter optimization (HPO) replaces manual trial and error with algorithmic exploration strategies that navigate complex configuration spaces. As model complexity and hyperparameter dimensionality expand, brute-force grid searches be",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "ann-w12-4",
+    "title": "Lesson 4: Experiment Control and Reproducibility",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W12 - Hyperparameter Tuning and Experiment Control",
+    "summary": "Experiment control and reproducibility establish scientific rigor in deep learning workflows by isolating algorithmic improvements from stochastic execution variance. Because neural network training combines non-deterministic GPU hardware primitives,",
+    "readingTime": "8 min read"
+  },
+  {
+    "id": "ann-w12-5",
+    "title": "Lesson 5: Summary and Assessment",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W12 - Hyperparameter Tuning and Experiment Control",
+    "summary": "A comprehensive hyperparameter optimization and experiment control framework unifies search space design, automated exploration algorithms, and statistical verification protocols into an auditable engineering pipeline. Because neural network performa",
+    "readingTime": "12 min read"
+  },
+  {
+    "id": "ann-w12-6",
+    "title": "W12: Hyperparameter Tuning and Experiment Control",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W12 - Hyperparameter Tuning and Experiment Control",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "ann-w13-1",
+    "title": "Lesson 1: Introduction to Explainability, Responsible AI, and Future Trends",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W13 - Explainability, Responsible AI and Future",
+    "summary": "Explainable and responsible artificial intelligence establishes methodological frameworks for auditing, interpreting, and governing deep neural network behaviors across sensitive real-world deployments. While deep architectures achieve unmatched pred",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "ann-w13-2",
+    "title": "Lesson 2: Need for Model Interpretability",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W13 - Explainability, Responsible AI and Future",
+    "summary": "The need for model interpretability arises from the fundamental gap between optimizing statistical loss functions on benchmark datasets and ensuring safe, ethical, and reliable deployment in real-world environments. While deep neural networks achieve",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "ann-w13-3",
+    "title": "Lesson 3: Explainability Methods",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W13 - Explainability, Responsible AI and Future",
+    "summary": "Explainability methods extract human-interpretable rationales from complex neural networks, bridging the gap between non-linear tensor representations and human cognitive understanding. By probing input-output dynamics, integrating backpropagated gra",
+    "readingTime": "10 min read"
+  },
+  {
+    "id": "ann-w13-4",
+    "title": "Lesson 4: Fairness, Bias and Responsible AI",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W13 - Explainability, Responsible AI and Future",
+    "summary": "Fairness, bias mitigation, and responsible AI frameworks establish mathematical principles and engineering protocols for preventing algorithmic discrimination across deep learning systems. Because neural networks optimize empirical loss over uncurate",
+    "readingTime": "10 min read"
+  },
+  {
+    "id": "ann-w13-5",
+    "title": "Lesson 5: Emerging Trends in Deep Learning",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W13 - Explainability, Responsible AI and Future",
+    "summary": "Emerging trends in deep learning focus on overcoming the computational, theoretical, and operational scaling barriers of classical transformer architectures. As training expenditure and model dimensions scale, innovations in sub-quadratic sequence mo",
+    "readingTime": "10 min read"
+  },
+  {
+    "id": "ann-w13-6",
+    "title": "Lesson 6: Summary and Assessment",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W13 - Explainability, Responsible AI and Future",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "ann-w13-7",
+    "title": "W13: Explainability, Responsible AI and Future",
+    "subjectId": "ann",
+    "subjectTitle": "Artificial Neural Networks",
+    "weekTitle": "W13 - Explainability, Responsible AI and Future",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "cloud-README.md-1",
+    "title": "Cloud Services and Platforms",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "README.md",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "cloud-w01-1",
+    "title": "**Lesson 0: Module Introduction**",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W01 - Introduction to Cloud Computing",
+    "summary": "Cloud computing represents a structural shift from localized, capital-intensive IT infrastructure toward utility-driven, distributed resource provisioning. By abstracting physical hardware into dynamically scheduled virtual assets, cloud platforms de",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "cloud-w01-2",
+    "title": "Lesson 1 - Cloud Evolution & Fundamentals",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W01 - Introduction to Cloud Computing",
+    "summary": "Comprehensive study notes and curriculum reference.",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "cloud-w01-3",
+    "title": "**Lesson 1: Cloud Evolution & Fundamentals**",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W01 - Introduction to Cloud Computing",
+    "summary": "Cloud computing represents the convergence of multiple decades of evolutionary breakthroughs across distributed systems, hardware virtualization, and utility metering. From centralized mainframe time-sharing systems to modern dynamic hyperscale platf",
+    "readingTime": "10 min read"
+  },
+  {
+    "id": "cloud-w01-4",
+    "title": "**Lesson 2: Cloud Service Models**",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W01 - Introduction to Cloud Computing",
+    "summary": "Cloud computing delivers compute, storage, and application capabilities through distinct abstraction layers classified as Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). Each service model delineate",
+    "readingTime": "13 min read"
+  },
+  {
+    "id": "cloud-w01-5",
+    "title": "**Lesson 3: Cloud Deployment Models**",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W01 - Introduction to Cloud Computing",
+    "summary": "Cloud deployment models define the specific environment configurations, tenancy architectures, and physical hosting locations that govern how computing infrastructure is provisioned, accessed, and managed. The primary deployment models categorized by",
+    "readingTime": "10 min read"
+  },
+  {
+    "id": "cloud-w01-6",
+    "title": "**Lesson 4: Cloud Computing Use Cases**",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W01 - Introduction to Cloud Computing",
+    "summary": "Cloud computing enables organizations to transform theoretical operational advantages into production systems across diverse technological domains. Modern enterprises leverage elastic infrastructure to deploy globally distributed web applications, ex",
+    "readingTime": "13 min read"
+  },
+  {
+    "id": "cloud-w01-7",
+    "title": "**Lesson 5: Summary and Assessment**",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W01 - Introduction to Cloud Computing",
+    "summary": "Cloud computing synthesizes decades of advances in distributed hardware virtualization, multi-tenant resource pooling, and automated software-defined networking into an on-demand utility model. Mastering these foundational principles requires connect",
+    "readingTime": "13 min read"
+  },
+  {
+    "id": "cloud-w01-8",
+    "title": "W01: Introduction to Cloud Computing",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W01 - Introduction to Cloud Computing",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "cloud-w02-1",
+    "title": "**Lesson 0: Module Introduction - Cloud Architecture & Design**",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W02 - Cloud Architecture & Design",
+    "summary": "Cloud architecture transitions system design from static, localized server provisioning into dynamic, distributed software-defined topologies. This module explores the engineering principles, architectural patterns, and governance frameworks required",
+    "readingTime": "7 min read"
+  },
+  {
+    "id": "cloud-w02-2",
+    "title": "**Lesson 1: Core Cloud Architecture Principles**",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W02 - Cloud Architecture & Design",
+    "summary": "Cloud architecture replaces rigid, centralized hardware designs with distributed, software-defined systems engineered around elasticity, fault isolation, and automation. Core architectural principles guide engineering teams in establishing resilient ",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "cloud-w02-3",
+    "title": "**Lesson 2: Designing for Reliability and Performance**",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W02 - Cloud Architecture & Design",
+    "summary": "Reliability and performance represent interrelated engineering goals in cloud system design, requiring systems to maintain high throughput and low latency under peak traffic while automatically recovering from localized hardware and network outages. ",
+    "readingTime": "14 min read"
+  },
+  {
+    "id": "cloud-w02-4",
+    "title": "Lesson 3: AWS Well-Architected Framework",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W02 - Cloud Architecture & Design",
+    "summary": "Designing for Reliability and Performance Reliability and Performance Goals: - Reliability and performance are linked engineering goals in cloud design.",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "cloud-w02-5",
+    "title": "Lesson 4: Cloud Architecture in Azure & GCP",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W02 - Cloud Architecture & Design",
+    "summary": "This lesson compares Azure and Google Cloud Platform architecture design. It covers the Well-Architected Frameworks of each provider, physical infrastructure organization, reliability mechanisms, load balancing services, and network design. Azure and",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "cloud-w02-6",
+    "title": "Lesson 5: Summary and Assessment",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W02 - Cloud Architecture & Design",
+    "summary": "*The README content is not attached. This summary and assessment synthesizes the W02 lessons covered in this thread.* W02 Cloud Architecture & Design covers reliability, performance, AWS Well-Architected Framework, and Azure and GCP architecture. It ",
+    "readingTime": "7 min read"
+  },
+  {
+    "id": "cloud-w02-7",
+    "title": "W02: Cloud Architecture & Design",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W02 - Cloud Architecture & Design",
+    "summary": "This week connects reliability and performance engineering with the AWS Well-Architected Framework. It covers availability math, fault domains, load balancing, elasticity, caching, the six pillars, lenses, and the review process. The goal is to desig",
+    "readingTime": "7 min read"
+  },
+  {
+    "id": "cloud-w03-1",
+    "title": "Lesson 0 - Module Introduction",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W03 - Overview of Major Cloud Providers",
+    "summary": "The module introduces the three major cloud providers: AWS, Azure, and GCP. It builds a provider-neutral mental model for comparing market position, service models, global infrastructure, and core service categories. The goal is to make informed arch",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "cloud-w03-2",
+    "title": "Lesson 1: Comparison",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W03 - Overview of Major Cloud Providers",
+    "summary": "This lesson compares AWS, Azure, and GCP across market position, service models, global infrastructure, core service categories, and architectural differences. The functional gap between providers has largely closed; the difference now lies in philos",
+    "readingTime": "14 min read"
+  },
+  {
+    "id": "cloud-w03-3",
+    "title": "Lesson 2: Core Services",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W03 - Overview of Major Cloud Providers",
+    "summary": "Every cloud provider delivers the same fundamental building blocks: compute, storage, databases, and networking. AWS, Azure, and GCP map these domains to different service names and operational models. The functional gap between providers has largely",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "cloud-w03-4",
+    "title": "Lesson 3: Selection Factors",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W03 - Overview of Major Cloud Providers",
+    "summary": "Provider selection is a multi-dimensional decision that goes beyond feature checklists. The functional gap between AWS, Azure, and GCP has largely closed, so the real differentiators are operational fit, compliance posture, cost predictability, and r",
+    "readingTime": "13 min read"
+  },
+  {
+    "id": "cloud-w03-5",
+    "title": "Lesson 4: Cloud Certifications & Career",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W03 - Overview of Major Cloud Providers",
+    "summary": "Cloud certifications validate provider-specific skills and serve as a signal to employers. They are not a substitute for hands-on experience, but they open doors, structure learning, and often correlate with higher compensation. This lesson maps the ",
+    "readingTime": "13 min read"
+  },
+  {
+    "id": "cloud-w03-6",
+    "title": "W03: Overview of Major Cloud Providers - Summary and Assessment",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W03 - Overview of Major Cloud Providers",
+    "summary": "This module surveys the three dominant cloud platforms: AWS, Azure, and GCP. It compares market position, service models, global infrastructure, core service categories, selection factors, and career paths. The goal is to build a provider-neutral men",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "cloud-w03-7",
+    "title": "W03: Overview of Major Cloud Providers",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W03 - Overview of Major Cloud Providers",
+    "summary": "This lesson surveys the three dominant cloud platforms: Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP). It covers market positioning, global infrastructure, service models, and the core service categories that map across ",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "cloud-w04-1",
+    "title": "W04: AWS Foundations and IAM - Lesson 0: Module Introduction",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W04 - AWS Foundations and (IAM)",
+    "summary": "This module introduces the foundational services and identity model of Amazon Web Services. It covers global infrastructure, core compute, storage, and networking services, and the Identity and Access Management (IAM) system that controls access to e",
+    "readingTime": "7 min read"
+  },
+  {
+    "id": "cloud-w04-2",
+    "title": "Lesson 1: AWS Global Infrastructure",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W04 - AWS Foundations and (IAM)",
+    "summary": "The AWS Global Infrastructure is the physical foundation of every AWS service. It is organized into Regions, Availability Zones, and a global edge network. Understanding this structure is essential for designing systems that are highly available, fau",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "cloud-w04-3",
+    "title": "Lesson 2: Introduction to AWS IAM",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W04 - AWS Foundations and (IAM)",
+    "summary": "AWS Identity and Access Management (IAM) is the service that controls access to AWS resources. It provides authentication (who can sign in) and authorization (what they can do). IAM is global, free to use, and integrated with nearly every AWS service",
+    "readingTime": "10 min read"
+  },
+  {
+    "id": "cloud-w04-4",
+    "title": "Lesson 3: IAM Practical Demonstration",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W04 - AWS Foundations and (IAM)",
+    "summary": "This lesson walks through common IAM tasks using the AWS Management Console, AWS CLI, and IAM policy simulator. It covers creating users, groups, policies, roles, testing permissions, and using IAM Access Analyzer. The goal is to translate IAM theory",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "cloud-w04-5",
+    "title": "Lesson 4: Securing AWS Accounts",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W04 - AWS Foundations and (IAM)",
+    "summary": "Securing an AWS account is the foundation of every secure workload. The root user is the most privileged identity and must be locked down. IAM best practices, multi-account governance, and continuous monitoring complete the defense-in-depth strategy.",
+    "readingTime": "12 min read"
+  },
+  {
+    "id": "cloud-w04-6",
+    "title": "W04: AWS Foundations and IAM - Summary and Assessment",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W04 - AWS Foundations and (IAM)",
+    "summary": "This module covers the foundational elements of Amazon Web Services: global infrastructure, core services, Identity and Access Management, and account security. It builds from physical infrastructure to identity controls to practical hands-on tasks. ",
+    "readingTime": "10 min read"
+  },
+  {
+    "id": "cloud-w04-7",
+    "title": "W04: AWS Foundations and IAM",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W04 - AWS Foundations and (IAM)",
+    "summary": "This module covers the foundational elements of Amazon Web Services: global infrastructure, core services, Identity and Access Management, and account security. It builds from physical infrastructure to identity controls to practical hands-on tasks. ",
+    "readingTime": "20 min read"
+  },
+  {
+    "id": "cloud-w05-1",
+    "title": "W05: Compute Services + Virtualisation - Lesson 0: Module Introduction",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W05 - Compute Services + Virtualisation",
+    "summary": "This module introduces the foundational compute technologies behind cloud services: virtualisation, virtual machines, containers, and serverless functions. It then maps these concepts to AWS compute services, including EC2, Lambda, ECS, EKS, and Farg",
+    "readingTime": "8 min read"
+  },
+  {
+    "id": "cloud-w05-2",
+    "title": "Lesson 1: Introduction to EC2",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W05 - Compute Services + Virtualisation",
+    "summary": "Amazon Elastic Compute Cloud (EC2) is the foundational compute service in AWS. It provides secure, resizable virtual servers called instances, giving you full control over the operating system and the flexibility to run almost any workload. EC2 is th",
+    "readingTime": "15 min read"
+  },
+  {
+    "id": "cloud-w05-3",
+    "title": "Lesson 2: Instance Types and Pricing Models",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W05 - Compute Services + Virtualisation",
+    "summary": "This lesson goes deeper into EC2 instance types and pricing models. It explains how instance families are organized, what each family is optimized for, and how to match workloads to the right instance type. It then covers the four pricing models in d",
+    "readingTime": "15 min read"
+  },
+  {
+    "id": "cloud-w05-4",
+    "title": "Lesson 3: Working with EC2 Instances",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W05 - Compute Services + Virtualisation",
+    "summary": "Working with EC2 instances covers the day-to-day operations of launching, connecting to, managing, and securing virtual servers. It includes choosing an Amazon Machine Image, configuring security groups and key pairs, using user data for bootstrappin",
+    "readingTime": "16 min read"
+  },
+  {
+    "id": "cloud-w05-5",
+    "title": "Lesson 4: EC2 Storage: EBS and Snapshots",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W05 - Compute Services + Virtualisation",
+    "summary": "Amazon Elastic Block Store (EBS) provides persistent block-level storage volumes for EC2 instances. EBS volumes are network-attached, replicated within an Availability Zone, and independent of the instance lifecycle. Snapshots provide point-in-time b",
+    "readingTime": "14 min read"
+  },
+  {
+    "id": "cloud-w05-6",
+    "title": "Lesson 5: High Availability for EC2",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W05 - Compute Services + Virtualisation",
+    "summary": "High availability for EC2 means designing workloads to remain operational despite failures in instances, Availability Zones, or Regions. It combines multi-AZ deployment, Auto Scaling, load balancing, health checks, and disaster recovery patterns. The",
+    "readingTime": "16 min read"
+  },
+  {
+    "id": "cloud-w05-7",
+    "title": "Lesson 6 - Summary and Assessment",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W05 - Compute Services + Virtualisation",
+    "summary": "**W05: Compute Services + Virtualisation - Summary and Assessment** This module covers the foundational compute technologies behind cloud services: virtualisation, virtual machines, containers, and serverless functions. It maps these concepts to AWS ",
+    "readingTime": "13 min read"
+  },
+  {
+    "id": "cloud-w05-8",
+    "title": "W05: Compute Services + Virtualisation",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W05 - Compute Services + Virtualisation",
+    "summary": "This module covers the foundational technologies behind cloud compute: virtualization, virtual machines, containers, and serverless functions. It then maps these concepts to AWS compute services, including EC2, Lambda, ECS, EKS, and Fargate. The goal",
+    "readingTime": "19 min read"
+  },
+  {
+    "id": "cloud-w06-1",
+    "title": "W06: Cloud Networking Fundamentals (VPC) - Lesson 0: Module Introduction",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W06 - Cloud Networking Fundamentals (VPC)",
+    "summary": "This module introduces Amazon Virtual Private Cloud (VPC), the networking foundation of AWS. It covers IP addressing, subnets, route tables, gateways, security controls, and connectivity options. The goal is to understand how to design, secure, and o",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "cloud-w06-2",
+    "title": "Lesson 1: VPC and Cloud Networking",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W06 - Cloud Networking Fundamentals (VPC)",
+    "summary": "Amazon Virtual Private Cloud (VPC) is the networking foundation of AWS. It provides a logically isolated section of the AWS Cloud where you define your own IP address ranges, create subnets, configure route tables, and control inbound and outbound tr",
+    "readingTime": "17 min read"
+  },
+  {
+    "id": "cloud-w06-3",
+    "title": "Lesson 2: VPC Components and Routing",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W06 - Cloud Networking Fundamentals (VPC)",
+    "summary": "This lesson goes deeper into the individual components that make up a VPC and how routing connects them. It covers subnets, route tables, gateways, elastic network interfaces, VPC endpoints, and flow logs. The goal is to understand how traffic moves ",
+    "readingTime": "15 min read"
+  },
+  {
+    "id": "cloud-w06-4",
+    "title": "Lesson 3: Connectivity and Access",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W06 - Cloud Networking Fundamentals (VPC)",
+    "summary": "The lesson content was not supplied, so these notes synthesize the expected topics for this lesson: VPC connectivity options, hybrid access, VPC endpoints, and methods for accessing resources securely. The focus is on how traffic moves between VPCs, ",
+    "readingTime": "17 min read"
+  },
+  {
+    "id": "cloud-w06-5",
+    "title": "Lesson 4: Creating a Basic VPC Design",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W06 - Cloud Networking Fundamentals (VPC)",
+    "summary": "This lesson walks through the practical steps of designing and creating a VPC from scratch. It covers CIDR planning, subnet layout, route table configuration, gateway deployment, and security group setup. The goal is to build a working VPC that suppo",
+    "readingTime": "15 min read"
+  },
+  {
+    "id": "cloud-w06-6",
+    "title": "W06: Cloud Networking Fundamentals (VPC) - Lesson 5: Summary and Assessment",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W06 - Cloud Networking Fundamentals (VPC)",
+    "summary": "This module covers Amazon Virtual Private Cloud (VPC), the networking foundation of AWS. It spans IP addressing, subnets, route tables, gateways, security controls, connectivity options, and practical VPC design. The goal is to understand how to buil",
+    "readingTime": "14 min read"
+  },
+  {
+    "id": "cloud-w06-7",
+    "title": "W06: Cloud Networking Fundamentals (VPC)",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W06 - Cloud Networking Fundamentals (VPC)",
+    "summary": "Amazon Virtual Private Cloud (VPC) is the networking foundation of AWS. It provides a logically isolated section of the AWS Cloud where you define your own IP address ranges, create subnets, configure route tables, and control inbound and outbound tr",
+    "readingTime": "17 min read"
+  },
+  {
+    "id": "cloud-w07-1",
+    "title": "Lesson 0 - Module Introduction",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W07 - Containers - Docker and Kubernetes",
+    "summary": "Initial directory setup. This module introduces containerization, Docker, Kubernetes, and the AWS container services that run them. It covers how containers differ from virtual machines, how Docker packages applications, how Kubernetes orchestrates c",
+    "readingTime": "8 min read"
+  },
+  {
+    "id": "cloud-w07-2",
+    "title": "Lesson 1: Containerisation vs Virtualisation",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W07 - Containers - Docker and Kubernetes",
+    "summary": "This lesson compares containerisation and virtualisation as two approaches to running workloads on shared infrastructure. It explains how each technology works at the operating system level, how they differ in isolation, performance, and portability,",
+    "readingTime": "15 min read"
+  },
+  {
+    "id": "cloud-w07-3",
+    "title": "Lesson 2: Docker Fundamentals",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W07 - Containers - Docker and Kubernetes",
+    "summary": "Docker is a containerization platform that packages an application together with its dependencies into a standardized unit called a container. It provides a consistent application runtime across development, testing, CI/CD, and production environment",
+    "readingTime": "21 min read"
+  },
+  {
+    "id": "cloud-w07-4",
+    "title": "Lesson 3: Container Registries",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W07 - Containers - Docker and Kubernetes",
+    "summary": "A container registry is a centralized storage and distribution system for container images. It is the source of truth for what runs in your clusters. Every deployment pipeline pushes images to a registry and every runtime pulls from one. A registry c",
+    "readingTime": "21 min read"
+  },
+  {
+    "id": "cloud-w07-5",
+    "title": "Lesson 4: Introduction to Kubernetes",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W07 - Containers - Docker and Kubernetes",
+    "summary": "Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It abstracts individual machines into a pool of compute so you think in terms of pods and services, no",
+    "readingTime": "21 min read"
+  },
+  {
+    "id": "cloud-w07-6",
+    "title": "W07: Containers: Docker and Kubernetes - Lesson 5: Summary and Assessment",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W07 - Containers - Docker and Kubernetes",
+    "summary": "This module covers containerization, Docker, Kubernetes, and the AWS container services that run them. It explains how containers differ from virtual machines, how Docker packages applications, how Kubernetes orchestrates containers at scale, how reg",
+    "readingTime": "16 min read"
+  },
+  {
+    "id": "cloud-w07-7",
+    "title": "W07: Containers: Docker and Kubernetes",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W07 - Containers - Docker and Kubernetes",
+    "summary": "This module covers containerization fundamentals, Docker, Kubernetes, and the AWS container services that run them: ECS, EKS, and Fargate. It explains how containers differ from virtual machines, how Docker packages applications, how Kubernetes orche",
+    "readingTime": "17 min read"
+  },
+  {
+    "id": "cloud-w08-1",
+    "title": "W08: AWS Storage Services - Lesson 0: Module Introduction",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W08 - AWS Storage Services",
+    "summary": "The lesson content was not supplied, so these notes synthesize the expected topics for this module introduction. This module introduces the AWS storage portfolio: object, block, file, hybrid, and data transfer services. It covers when to use each ser",
+    "readingTime": "10 min read"
+  },
+  {
+    "id": "cloud-w08-2",
+    "title": "Lesson 1: Introduction to AWS Storage Services",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W08 - AWS Storage Services",
+    "summary": "AWS storage services are organised around three fundamental data types: object, block, and file. Each type maps to a different service, and each service is optimised for different access patterns, durability requirements, and cost profiles. Storage i",
+    "readingTime": "21 min read"
+  },
+  {
+    "id": "cloud-w08-3",
+    "title": "Lesson 2: Amazon S3 Fundamentals",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W08 - AWS Storage Services",
+    "summary": "Amazon Simple Storage Service (S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. It is the default storage service for most AWS workloads and the foundation of data lakes, backup ",
+    "readingTime": "16 min read"
+  },
+  {
+    "id": "cloud-w08-4",
+    "title": "Lesson 3: Access & Security in S3",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W08 - AWS Storage Services",
+    "summary": "Amazon S3 security is built on three pillars: access control, encryption, and monitoring. Every S3 deployment must answer who can access the data, how it is protected at rest and in transit, and how access is audited. S3 is the only object storage se",
+    "readingTime": "22 min read"
+  },
+  {
+    "id": "cloud-w08-5",
+    "title": "Lesson 4: EBS vs EFS",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W08 - AWS Storage Services",
+    "summary": "Amazon EBS and Amazon EFS are both storage services, but they solve fundamentally different problems. The clearest difference is that an EFS file system can be mounted on thousands of ECS tasks or EC2 instances simultaneously, while an EBS volume doe",
+    "readingTime": "13 min read"
+  },
+  {
+    "id": "cloud-w08-6",
+    "title": "W08: AWS Storage Services - Lesson 5: Summary and Assessment",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W08 - AWS Storage Services",
+    "summary": "This module covers the AWS storage portfolio: object storage with Amazon S3, block storage with Amazon EBS, file storage with Amazon EFS and Amazon FSx, hybrid storage with AWS Storage Gateway, data transfer with AWS DataSync and the Snow Family, and",
+    "readingTime": "20 min read"
+  },
+  {
+    "id": "cloud-w08-7",
+    "title": "W08: AWS Storage Services",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W08 - AWS Storage Services",
+    "summary": "AWS offers a broad portfolio of storage services designed for different data types, access patterns, performance requirements, and durability needs. The core services are Amazon S3 for object storage, Amazon EBS for block storage, Amazon EFS for file",
+    "readingTime": "23 min read"
+  },
+  {
+    "id": "cloud-w09-1",
+    "title": "W09: Databases & Data Processing - Lesson 0: Module Introduction",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W09 - Databases & Data Processing",
+    "summary": "This module covers the AWS database portfolio and data processing services. It spans relational databases, NoSQL databases, data warehousing, ETL, real-time streaming, database migration, and pipeline orchestration. The goal is to select the right da",
+    "readingTime": "13 min read"
+  },
+  {
+    "id": "cloud-w09-2",
+    "title": "Lesson 1: Introduction to Cloud Databases",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W09 - Databases & Data Processing",
+    "summary": "AWS offers a portfolio of purpose-built database services, each optimised for a specific data model and access pattern. Instead of forcing every workload into a single relational engine, you choose the database that fits the access pattern: relationa",
+    "readingTime": "15 min read"
+  },
+  {
+    "id": "cloud-w09-3",
+    "title": "Lesson 2: Amazon RDS Fundamentals",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W09 - Databases & Data Processing",
+    "summary": "Amazon Relational Database Service (RDS) is a managed relational database service that makes it easy to set up, operate, and scale a relational database in the cloud. It automates time-consuming administration tasks such as provisioning, patching, ba",
+    "readingTime": "17 min read"
+  },
+  {
+    "id": "cloud-w09-4",
+    "title": "Lesson 3: DynamoDB Basics",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W09 - Databases & Data Processing",
+    "summary": "Amazon DynamoDB is a fully managed, serverless, NoSQL key-value and document database that delivers single-digit millisecond performance at any scale. It is designed for applications that need high throughput and low latency, with no servers to manag",
+    "readingTime": "18 min read"
+  },
+  {
+    "id": "cloud-w09-5",
+    "title": "W09: Databases & Data Processing - Lesson 4: Summary and Assessment",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W09 - Databases & Data Processing",
+    "summary": "This lesson summarizes the AWS database portfolio and data processing services. It covers relational databases with Amazon RDS and Aurora, NoSQL with Amazon DynamoDB, data warehousing with Amazon Redshift, data integration with AWS Glue, streaming wi",
+    "readingTime": "14 min read"
+  },
+  {
+    "id": "cloud-w09-6",
+    "title": "W09: Databases & Data Processing",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W09 - Databases & Data Processing",
+    "summary": "This module covers the AWS database portfolio and data processing services. It spans relational databases (RDS and Aurora), NoSQL (DynamoDB), data warehousing (Redshift), ETL and data integration (Glue), real-time streaming (Kinesis), database migrat",
+    "readingTime": "21 min read"
+  },
+  {
+    "id": "cloud-w10-1",
+    "title": "W10: Serverless Computing on AWS - Lesson 0: Module Introduction",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W10  - Serverless Computing on AWS",
+    "summary": "This module introduces serverless computing on AWS. It covers the core serverless services: AWS Lambda for compute, Amazon API Gateway for APIs, AWS Step Functions for orchestration, and Amazon SQS, Amazon SNS, and Amazon EventBridge for messaging. I",
+    "readingTime": "12 min read"
+  },
+  {
+    "id": "cloud-w10-2",
+    "title": "Lesson 1: Introduction to Serverless Computing",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W10  - Serverless Computing on AWS",
+    "summary": "Serverless computing is a cloud execution model in which the cloud provider dynamically manages the allocation and provisioning of servers. You write code or configure services, and the provider handles scaling, patching, and availability. You pay on",
+    "readingTime": "18 min read"
+  },
+  {
+    "id": "cloud-w10-3",
+    "title": "Lesson 2: Lambda Configuration",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W10  - Serverless Computing on AWS",
+    "summary": "Lambda configuration defines how a function executes, scales, and interacts with other AWS services. Proper configuration balances performance, cost, and security. This lesson covers memory and timeout settings, execution environment details, concurr",
+    "readingTime": "18 min read"
+  },
+  {
+    "id": "cloud-w10-4",
+    "title": "Lesson 3: Event-Driven Architecture with AWS",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W10  - Serverless Computing on AWS",
+    "summary": "Event-driven architecture (EDA) is a design pattern where components communicate through the production and consumption of events. An event is a significant change in state or occurrence. In AWS, EDA decouples services, enabling scalability, resilien",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "cloud-w10-5",
+    "title": "Lesson 4: Designing Simple Serverless Applications",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W10  - Serverless Computing on AWS",
+    "summary": "Designing serverless applications requires a shift from thinking about servers to thinking about events, state, and integration. This lesson covers the core design principles, common architectural patterns, state management strategies, and best pract",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "cloud-w10-6",
+    "title": "Lesson 5: Summary and Assessment",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W10  - Serverless Computing on AWS",
+    "summary": "This lesson consolidates the key concepts from the Serverless Computing on AWS module. It reviews the progression from foundational definitions to configuration details, architectural patterns, and design principles. The goal is to ensure you can sel",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "cloud-w10-7",
+    "title": "W10: Serverless Computing on AWS",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W10  - Serverless Computing on AWS",
+    "summary": "Serverless computing removes the burden of provisioning, scaling, and managing servers. You write code or configure services, and AWS handles capacity, patching, and availability. The core of serverless on AWS is AWS Lambda, but serverless is broader",
+    "readingTime": "25 min read"
+  },
+  {
+    "id": "cloud-w11-1",
+    "title": "Lesson 0: Module Introduction",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W11  - Cloud Monitoring & Cost Optimization",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "cloud-w11-2",
+    "title": "Lesson 1: Monitoring with Amazon CloudWatch",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W11  - Cloud Monitoring & Cost Optimization",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "cloud-w11-3",
+    "title": "Lesson 2: Auditing & Governance with CloudTrail",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W11  - Cloud Monitoring & Cost Optimization",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "cloud-w11-4",
+    "title": "Lesson 3: AWS Cost Management Tools",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W11  - Cloud Monitoring & Cost Optimization",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "cloud-w11-5",
+    "title": "Lesson 4: Cost Optimization Best Practices",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W11  - Cloud Monitoring & Cost Optimization",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "cloud-w11-6",
+    "title": "Lesson 5: Summary and Assessment",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W11  - Cloud Monitoring & Cost Optimization",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "cloud-w11-7",
+    "title": "Lesson: Cloud Monitoring and Cost Optimization",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W11  - Cloud Monitoring & Cost Optimization",
+    "summary": "Cloud monitoring and cost optimization are interconnected disciplines essential for sustainable cloud operations. Monitoring provides the visibility needed to understand resource usage, performance, and security posture. Cost optimization uses that v",
+    "readingTime": "10 min read"
+  },
+  {
+    "id": "cloud-w12-1",
+    "title": "Lesson 0: Module Introduction",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W12 - DevOps in the Cloud",
+    "summary": "This lesson introduces the DevOps in the Cloud module. It defines DevOps, explains its cultural and technical pillars, and outlines how AWS services enable automation, continuous delivery, and infrastructure management. The goal is to shift from manu",
+    "readingTime": "6 min read"
+  },
+  {
+    "id": "cloud-w12-2",
+    "title": "Lesson 1: Introduction to DevOps Principles",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W12 - DevOps in the Cloud",
+    "summary": "DevOps is a cultural and professional movement that emphasizes collaboration between development (Dev) and operations (Ops) teams. It aims to shorten the systems development life cycle and provide continuous delivery with high software quality. This ",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "cloud-w12-3",
+    "title": "Lesson 2: Version Control Foundations",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W12 - DevOps in the Cloud",
+    "summary": "Version control is the backbone of DevOps. It allows teams to track changes, collaborate on code, and manage history without overwriting each other's work. In a cloud-native environment, version control extends beyond application code to include infr",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "cloud-w12-4",
+    "title": "Lesson 3: CI/CD Concepts",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W12 - DevOps in the Cloud",
+    "summary": "Continuous Integration (CI) and Continuous Delivery/Deployment (CD) are the engine rooms of DevOps. They automate the process of getting code from a developer’s machine to production. This lesson defines CI and CD, explains their differences, outline",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "cloud-w12-5",
+    "title": "Lesson 4: Deployment Strategies",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W12 - DevOps in the Cloud",
+    "summary": "Deployment strategies define how new versions of an application are released to production. The goal is to minimize downtime, reduce risk, and enable fast rollback if issues arise. This lesson compares common deployment patterns, explains how to impl",
+    "readingTime": "8 min read"
+  },
+  {
+    "id": "cloud-w12-6",
+    "title": "Lesson 5: Summary and Assessment",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W12 - DevOps in the Cloud",
+    "summary": "This lesson consolidates the key concepts from the DevOps in the Cloud module. It reviews the progression from cultural principles to technical implementation, covering version control, CI/CD pipelines, and deployment strategies. The goal is to ensur",
+    "readingTime": "7 min read"
+  },
+  {
+    "id": "cloud-w12-7",
+    "title": "W12: DevOps in the Cloud",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W12 - DevOps in the Cloud",
+    "summary": "DevOps is a cultural and professional movement that emphasizes collaboration between development and operations teams. In the cloud, DevOps is enabled by automation, infrastructure as code, and continuous delivery pipelines. This lesson covers core D",
+    "readingTime": "10 min read"
+  },
+  {
+    "id": "cloud-w13-1",
+    "title": "Lesson 0: Module Introduction",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W13  - Infrastructure as Code (IaC)",
+    "summary": "This lesson introduces the Infrastructure as Code (IaC) module. It defines IaC, explains why it is a critical practice in modern cloud engineering, and outlines the tools and techniques you will learn. The goal is to shift from manual, click-ops infr",
+    "readingTime": "7 min read"
+  },
+  {
+    "id": "cloud-w13-2",
+    "title": "Lesson 1: Introduction to Infrastructure as Code",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W13  - Infrastructure as Code (IaC)",
+    "summary": "Infrastructure as Code (IaC) is the practice of managing and provisioning computing infrastructure through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools. This lesson defines IaC, con",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "cloud-w13-3",
+    "title": "Lesson 2: Terraform Fundamentals",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W13  - Infrastructure as Code (IaC)",
+    "summary": "Terraform is an open-source Infrastructure as Code (IaC) tool created by HashiCorp. It uses a declarative configuration language called HCL (HashiCorp Configuration Language) to define infrastructure across multiple cloud providers. This lesson cover",
+    "readingTime": "8 min read"
+  },
+  {
+    "id": "cloud-w13-4",
+    "title": "Lesson 3: Terraform Configuration Structure",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W13  - Infrastructure as Code (IaC)",
+    "summary": "A well-structured Terraform configuration is essential for maintainability, readability, and collaboration. This lesson details the standard file organization, the role of each configuration block, how to manage variables and outputs effectively, and",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "cloud-w13-5",
+    "title": "Lesson 4: Terraform Hands-On",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W13  - Infrastructure as Code (IaC)",
+    "summary": "This lesson provides a practical guide to writing, validating, and deploying infrastructure using Terraform. It walks through the creation of a basic AWS environment, including networking and compute resources. The focus is on applying theoretical co",
+    "readingTime": "8 min read"
+  },
+  {
+    "id": "cloud-w13-6",
+    "title": "Lesson 5: Summary and Assessment",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W13  - Infrastructure as Code (IaC)",
+    "summary": "This lesson consolidates the key concepts from the Infrastructure as Code (IaC) module. It reviews the progression from foundational principles to practical implementation using Terraform. The goal is to ensure you can define, provision, and manage c",
+    "readingTime": "7 min read"
+  },
+  {
+    "id": "cloud-w13-7",
+    "title": "Lesson: Infrastructure as Code (IaC)",
+    "subjectId": "cloud",
+    "subjectTitle": "Cloud Services and Platforms",
+    "weekTitle": "W13  - Infrastructure as Code (IaC)",
+    "summary": "Infrastructure as Code (IaC) is the practice of managing and provisioning computing infrastructure through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools. This lesson covers the core ",
+    "readingTime": "10 min read"
+  },
+  {
+    "id": "data-stores-README.md-1",
+    "title": "Data Stores & Pipelines",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "README.md",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w01-1",
+    "title": "Lesson 0: Module Introduction",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W01  - Foundations of Data Storage Paradigms",
+    "summary": "This lesson introduces the Data Stores & Pipelines module. It defines the critical role of data storage in modern applications, outlines the evolution from traditional relational systems to diverse NoSQL and big data solutions, and sets the stage for",
+    "readingTime": "7 min read"
+  },
+  {
+    "id": "data-stores-w01-2",
+    "title": "Lesson 1 - The Evolution of Data Storage",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W01  - Foundations of Data Storage Paradigms",
+    "summary": "Comprehensive study notes and curriculum reference.",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w01-3",
+    "title": "Lesson 1 - The Evolution of Data Storage",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W01  - Foundations of Data Storage Paradigms",
+    "summary": "Comprehensive study notes and curriculum reference.",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w01-4",
+    "title": "Lesson 1 - The Evolution of Data Storage",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W01  - Foundations of Data Storage Paradigms",
+    "summary": "Comprehensive study notes and curriculum reference.",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w01-5",
+    "title": "Lesson 1: The Evolution of Data Storage",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W01  - Foundations of Data Storage Paradigms",
+    "summary": "The history of data storage is a journey from rigid, structured systems designed for transactional integrity to flexible, distributed systems built for scale and variety. This lesson traces the evolution from mainframe file systems to relational data",
+    "readingTime": "7 min read"
+  },
+  {
+    "id": "data-stores-w01-6",
+    "title": "Lesson 2: OLTP vs. OLAP Architectures",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W01  - Foundations of Data Storage Paradigms",
+    "summary": "Data systems are generally categorized by their primary workload: transaction processing or analytical processing. Understanding the distinction between Online Transaction Processing (OLTP) and Online Analytical Processing (OLAP) is fundamental to de",
+    "readingTime": "8 min read"
+  },
+  {
+    "id": "data-stores-w01-7",
+    "title": "Lesson 3: RDBMS vs. Columnar Databases",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W01  - Foundations of Data Storage Paradigms",
+    "summary": "While both Relational Database Management Systems (RDBMS) and Columnar Databases store structured data, their internal storage mechanisms differ fundamentally. This difference dictates their performance characteristics and ideal use cases. This lesso",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "data-stores-w01-8",
+    "title": "Lesson 4: ACID vs. BASE Models",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W01  - Foundations of Data Storage Paradigms",
+    "summary": "Data consistency models define how a database system handles data integrity, especially in distributed environments. The two primary models are ACID (Atomicity, Consistency, Isolation, Durability) and BASE (Basically Available, Soft state, Eventual c",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "data-stores-w01-9",
+    "title": "Lesson 5: Real-World Use Case - Ride-Sharing App",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W01  - Foundations of Data Storage Paradigms",
+    "summary": "This lesson applies the theoretical concepts of data storage paradigms, OLTP/OLAP architectures, and consistency models to a complex, real-world scenario: a ride-sharing application (like Uber or Lyft). You will learn how to design a polyglot persist",
+    "readingTime": "8 min read"
+  },
+  {
+    "id": "data-stores-w01-10",
+    "title": "Lesson 6: Summary and Assessment",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W01  - Foundations of Data Storage Paradigms",
+    "summary": "This lesson consolidates the foundational concepts of data storage paradigms. It reviews the evolution from relational to non-relational systems, contrasts OLTP and OLAP architectures, explains row-based versus columnar storage, and clarifies ACID ve",
+    "readingTime": "8 min read"
+  },
+  {
+    "id": "data-stores-w01-11",
+    "title": "W01 : Foundations of Data Storage Paradigms",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W01  - Foundations of Data Storage Paradigms",
+    "summary": "Data storage is the foundation of any data-driven application. Choosing the right storage paradigm depends on the nature of the data, access patterns, consistency requirements, and scalability needs. This lesson explores the evolution of data storage",
+    "readingTime": "8 min read"
+  },
+  {
+    "id": "data-stores-w02-1",
+    "title": "Lesson 0: Module Introduction",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W02  - Modern Data Warehousing",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w02-2",
+    "title": "Lesson 1: Features of Modern Data Warehouse",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W02  - Modern Data Warehousing",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w02-3",
+    "title": "Lesson 2: MPP Architecture Overview",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W02  - Modern Data Warehousing",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w02-4",
+    "title": "Lesson 3: Introduction to Snowflake",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W02  - Modern Data Warehousing",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w02-5",
+    "title": "Lesson 4: Introduction to Amazon Redshift",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W02  - Modern Data Warehousing",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w02-6",
+    "title": "Lesson 5: Use Case - Financial Services Reporting",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W02  - Modern Data Warehousing",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w02-7",
+    "title": "Lesson 6: Summary and Assessment",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W02  - Modern Data Warehousing",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w02-8",
+    "title": "Lesson: Modern Data Warehousing",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W02  - Modern Data Warehousing",
+    "summary": "Modern data warehousing has evolved from on-premise, hardware-bound appliances to cloud-native, serverless platforms that separate storage from compute. This lesson explores the architecture of modern data warehouses, key features like elasticity and",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "data-stores-w03-1",
+    "title": "Lesson 0: Module Introduction",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W03  - Data Lakes and Lakehouse Foundations",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w03-2",
+    "title": "Lesson 1: Data Lake vs. Lakehouse Architecture",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W03  - Data Lakes and Lakehouse Foundations",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w03-3",
+    "title": "Lesson 2: Medallion Architecture",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W03  - Data Lakes and Lakehouse Foundations",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w03-4",
+    "title": "Lesson 3: File Formats for Modern Data Lakes",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W03  - Data Lakes and Lakehouse Foundations",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w03-5",
+    "title": "Lesson 4: Cloud Object Stores - S3, GCS, and ADLS",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W03  - Data Lakes and Lakehouse Foundations",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w03-6",
+    "title": "Lesson 5: Introduction to Apache Spark",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W03  - Data Lakes and Lakehouse Foundations",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w03-7",
+    "title": "Lesson 6: Use Case - Clickstream Analytics for E-Commerce",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W03  - Data Lakes and Lakehouse Foundations",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w03-8",
+    "title": "Lesson 7: Summary and Assessment",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W03  - Data Lakes and Lakehouse Foundations",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w03-9",
+    "title": "W03 : Data Lakes and Lakehouse Foundations",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W03  - Data Lakes and Lakehouse Foundations",
+    "summary": "As data volume, variety, and velocity increase, traditional data warehouses struggle to handle unstructured data and raw ingestion. Data Lakes emerged as a solution for storing massive amounts of raw data, but they often lacked governance and perform",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "data-stores-w04-1",
+    "title": "Lesson 0: Module Introduction",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W04  - Data Infrastructure in the Enterprise",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w04-2",
+    "title": "Lesson 1: Introduction to the Modern Enterprise Data Stack",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W04  - Data Infrastructure in the Enterprise",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w04-3",
+    "title": "Lesson 2: Distributed and Decoupled Architectures",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W04  - Data Infrastructure in the Enterprise",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w04-4",
+    "title": "Lesson 3: Cloud, On-Prem, and Hybrid Architectures",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W04  - Data Infrastructure in the Enterprise",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w04-5",
+    "title": "Lesson 4: Cloud-Native Infrastructure - AWS, Azure, GCP",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W04  - Data Infrastructure in the Enterprise",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w04-6",
+    "title": "Lesson 5: Spark Internals",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W04  - Data Infrastructure in the Enterprise",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w04-7",
+    "title": "Lesson 6: Use Case - Logistics Company on AWS",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W04  - Data Infrastructure in the Enterprise",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w04-8",
+    "title": "Lesson 7: Summary and Assessment",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W04  - Data Infrastructure in the Enterprise",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w04-9",
+    "title": "W04 : Data Infrastructure in the Enterprise",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W04  - Data Infrastructure in the Enterprise",
+    "summary": "Enterprise data infrastructure moves beyond individual tools to encompass a holistic ecosystem of technologies, processes, and governance frameworks. It involves integrating disparate data sources, ensuring security and compliance, managing metadata,",
+    "readingTime": "8 min read"
+  },
+  {
+    "id": "data-stores-w05-1",
+    "title": "Lesson 0: Module Introduction",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W05 - Modern Table Formats - Iceberg, Hudi, Delta Lake",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w05-2",
+    "title": "Lesson 1: Overview of Apache Iceberg",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W05 - Modern Table Formats - Iceberg, Hudi, Delta Lake",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w05-3",
+    "title": "Lesson 2: Overview of Delta Lake",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W05 - Modern Table Formats - Iceberg, Hudi, Delta Lake",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w05-4",
+    "title": "Lesson 3: Overview of Apache Hudi",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W05 - Modern Table Formats - Iceberg, Hudi, Delta Lake",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w05-5",
+    "title": "Lesson 5: Use Case - Uber's Apache Hudi",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W05 - Modern Table Formats - Iceberg, Hudi, Delta Lake",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w05-6",
+    "title": "Lesson 6: Summary and Assessment",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W05 - Modern Table Formats - Iceberg, Hudi, Delta Lake",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w05-7",
+    "title": "W05: Modern Table Formats - Iceberg, Hudi, Delta Lake",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W05 - Modern Table Formats - Iceberg, Hudi, Delta Lake",
+    "summary": "As data architectures evolved from Data Lakes to Lakehouses, a critical gap emerged: object storage (like S3) is immutable and lacks transaction support. Modern table formats solve this by adding a metadata layer on top of raw files, enabling ACID tr",
+    "readingTime": "8 min read"
+  },
+  {
+    "id": "data-stores-w06-1",
+    "title": "Lesson 0: Module Introduction",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W06 - Standard Data Pipeline Architecture",
+    "summary": "Here are structured notes on Standard Data Pipeline Architecture, based on current industry sources. A data pipeline moves data from sources through ingestion, transformation, storage, and delivery to enable analysis and decision-making. The **seven ",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w06-2",
+    "title": "Lesson 1: Data Ingestion Patterns",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W06 - Standard Data Pipeline Architecture",
+    "summary": "Here are structured notes on **Data Ingestion Patterns**, based on industry sources and your course module context. Data ingestion runs in one of two primary modes: - **Batch ingestion** moves data at **fixed intervals or on a trigger**, loading file",
+    "readingTime": "5 min read"
+  },
+  {
+    "id": "data-stores-w06-3",
+    "title": "Lesson 2: Change Data Capture (CDC) Patterns",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W06 - Standard Data Pipeline Architecture",
+    "summary": "Here are structured notes on **Change Data Capture (CDC) Patterns**, based on industry sources and your course module context. CDC is a **data integration pattern** that detects and streams **row-level database changes** — inserts, updates, and delet",
+    "readingTime": "7 min read"
+  },
+  {
+    "id": "data-stores-w06-4",
+    "title": "Lesson 3: Lambda and Kappa Architectures",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W06 - Standard Data Pipeline Architecture",
+    "summary": "Here are structured notes on **Lambda and Kappa Architectures**, based on industry sources and your course module context. Both architectures address the same fundamental challenge: **how to process both historical (batch) and real-time (streaming) d",
+    "readingTime": "8 min read"
+  },
+  {
+    "id": "data-stores-w06-5",
+    "title": "Lesson 4: Event-Driven Pipelines",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W06 - Standard Data Pipeline Architecture",
+    "summary": "Here are structured notes on **Event-Driven Pipelines**, based on industry sources and your course module context. Event-driven architecture (EDA) for data pipelines is a design pattern where **data movement is triggered by events** — a row inserted ",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "data-stores-w06-6",
+    "title": "Lesson 5: Use Case Deep Dive - Online Food Delivery",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W06 - Standard Data Pipeline Architecture",
+    "summary": "Here are structured notes on **Use Case Deep Dive: Online Food Delivery**, based on industry case studies and the architectural patterns covered in this module. Online food delivery platforms coordinate **three parties in real time** — customers, res",
+    "readingTime": "12 min read"
+  },
+  {
+    "id": "data-stores-w06-7",
+    "title": "Lesson 6: Summary and Assessment",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W06 - Standard Data Pipeline Architecture",
+    "summary": "Here are structured notes on **Summary and Assessment**, consolidating the core concepts from the entire module and providing assessment preparation materials. This module traced the standard data pipeline architecture from **ingestion through proces",
+    "readingTime": "12 min read"
+  },
+  {
+    "id": "data-stores-w06-8",
+    "title": "W06: Standard Data Pipeline Architecture",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W06 - Standard Data Pipeline Architecture",
+    "summary": "A data pipeline is a series of automated processes that move and transform data from source systems to destination systems for analysis or operational use. This lesson breaks down the standard components of a modern data pipeline, compares architectu",
+    "readingTime": "8 min read"
+  },
+  {
+    "id": "data-stores-w07-1",
+    "title": "Lesson 0: Module Introduction",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W07 - Batch Data Ingestion",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w07-2",
+    "title": "Lesson 1: File-Based Ingestion",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W07 - Batch Data Ingestion",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w07-3",
+    "title": "Lesson 2: Database Connectors for Batch Jobs",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W07 - Batch Data Ingestion",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w07-4",
+    "title": "Lesson 3: API Integration for Batch Ingestion",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W07 - Batch Data Ingestion",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w07-5",
+    "title": "Lesson 4: Data Validation and Error Handling",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W07 - Batch Data Ingestion",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w07-6",
+    "title": "Lesson 5: Use Case - Resilient Batch Ingestion",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W07 - Batch Data Ingestion",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w07-7",
+    "title": "Lesson 6: Summary and Assessment",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W07 - Batch Data Ingestion",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w07-8",
+    "title": "W07: Batch Data Ingestion",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W07 - Batch Data Ingestion",
+    "summary": "Batch data ingestion is the process of moving large volumes of data from source systems to a destination (such as a Data Lake or Warehouse) at scheduled intervals. Unlike streaming, which processes data record-by-record in real-time, batch processing",
+    "readingTime": "8 min read"
+  },
+  {
+    "id": "data-stores-w08-1",
+    "title": "Lab5 - Building ETL Pipelines using PySpark",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W08 - ELT vs. ETL Methodologies",
+    "summary": "{ \"cells\": [ {",
+    "readingTime": "3 min read"
+  },
+  {
+    "id": "data-stores-w08-2",
+    "title": "Lab5 - Building ETL Pipelines using PySpark",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W08 - ELT vs. ETL Methodologies",
+    "summary": "{ \"cells\": [ {",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w08-3",
+    "title": "Lab5 - Building ETL Pipelines using PySpark",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W08 - ELT vs. ETL Methodologies",
+    "summary": "{ \"cells\": [ {",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "data-stores-w08-4",
+    "title": "Lab5: Building ETL Pipelines using PySpark",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W08 - ELT vs. ETL Methodologies",
+    "summary": "Project Overview: This repository contains the coursework and lab implementation for Week 8 of Data Stores and Pipelines, focused on building end to end ETL pipelines using PySpark and comparing ETL with ELT patterns. The project is organized into de",
+    "readingTime": "3 min read"
+  },
+  {
+    "id": "data-stores-w08-5",
+    "title": "Lesson 0 - Module Introduction",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W08 - ELT vs. ETL Methodologies",
+    "summary": "Modern data engineering relies on two foundational paradigms to ingest, clean, and prepare data for analytical consumption: Extract, Transform, Load (ETL) and Extract, Load, Transform (ELT). Understanding the architectural divergence between these st",
+    "readingTime": "8 min read"
+  },
+  {
+    "id": "data-stores-w08-6",
+    "title": "Lesson 1: Introduction to ETL and ELT Concepts",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W08 - ELT vs. ETL Methodologies",
+    "summary": "Introduction to ETL and ELT Concepts: Data integration pipelines serve as the backbone for analytics and business intelligence. Organizations produce data across relational databases, application logs, flat files, and external APIs. To make this info",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w08-7",
+    "title": "Lesson 2: Architectural Comparison and Decision",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W08 - ELT vs. ETL Methodologies",
+    "summary": "Architectural Comparison and Decision: Selecting between ETL and ELT requires an evaluation of system architectures, resource allocation, operational maintenance, and compliance boundaries. Both paradigms solve the problem of moving data from source ",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w08-8",
+    "title": "Lesson 3: Use Case - ETL Pipeline with PySpark",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W08 - ELT vs. ETL Methodologies",
+    "summary": "Use Case: ETL Pipeline with PySpark: Apache Spark is a distributed computing framework designed for fast processing of large-scale datasets across a cluster of machines. PySpark exposes the Spark programming model to Python developers, making it a pr",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w08-9",
+    "title": "Lesson 4: Use Case - ELT with dbt and Snowflake",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W08 - ELT vs. ETL Methodologies",
+    "summary": "Initial directory setup. Use Case: ELT with dbt and Snowflake: The combination of Snowflake and dbt has become a standard architectural pattern for modern cloud data platforms. Under this ELT approach, raw data is loaded directly into Snowflake witho",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w08-10",
+    "title": "Lesson 5: Summary and Assessment",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W08 - ELT vs. ETL Methodologies",
+    "summary": "Summary and Assessment: This lesson summarizes the foundational principles, architectural trade-offs, and practical implementations of ETL and ELT methodologies covered throughout Week 8. It reviews key differences between external processing engines",
+    "readingTime": "5 min read"
+  },
+  {
+    "id": "data-stores-w08-11",
+    "title": "W08: ELT vs. ETL Methodologies",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W08 - ELT vs. ETL Methodologies",
+    "summary": "The debate between ETL (Extract, Transform, Load) and ELT (Extract, Load, Transform) is central to modern data architecture. While both methodologies move data from sources to destinations, the order of operations fundamentally changes performance, f",
+    "readingTime": "9 min read"
+  },
+  {
+    "id": "data-stores-w09-1",
+    "title": "Lesson 0: Module Introduction",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W09 - Data Transformation, Processing, and Data Quality",
+    "summary": "Module Introduction: Data Transformation, Processing, and Data Quality: Week 9 of Data Stores and Pipelines expands upon core pipeline architectures by examining the mechanics of data transformation, distributed processing models, and automated data ",
+    "readingTime": "3 min read"
+  },
+  {
+    "id": "data-stores-w09-2",
+    "title": "Lesson 1: Data Cleaning Techniques",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W09 - Data Transformation, Processing, and Data Quality",
+    "summary": "Data Cleaning Techniques: Data cleaning is the foundational step in the transformation phase of any data pipeline. Raw records extracted from transactional applications, mobile events, and third-party systems frequently contain missing attributes, du",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w09-3",
+    "title": "Lesson 2: Efficient Joins and Optimizations in Spark",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W09 - Data Transformation, Processing, and Data Quality",
+    "summary": "Efficient Joins and Optimizations in Spark: Joining large datasets across distributed clusters is one of the most resource-intensive operations in data engineering. Apache Spark processes joins across worker nodes by moving, hashing, and sorting reco",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w09-4",
+    "title": "Lesson 3: Data Quality Checks and Monitoring",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W09 - Data Transformation, Processing, and Data Quality",
+    "summary": "Data Quality Checks and Monitoring: Data pipelines can execute without technical runtime errors while still outputting corrupt, incomplete, or biased information. These issues, known as silent data failures, occur when data schemas drift unexpectedly",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w09-5",
+    "title": "Lesson 4: Data Quality Frameworks",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W09 - Data Transformation, Processing, and Data Quality",
+    "summary": "Data Quality Frameworks: Data quality frameworks replace disconnected custom validation scripts with structured, reproducible, and automated testing architectures. Rather than writing manual conditional checks across individual pipelines, modern team",
+    "readingTime": "3 min read"
+  },
+  {
+    "id": "data-stores-w09-6",
+    "title": "Lesson 5: Use Case - Retail Banking Pipeline",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W09 - Data Transformation, Processing, and Data Quality",
+    "summary": "Use Case: Retail Banking Pipeline: Retail banking platforms process millions of financial interactions daily across automated teller machines, card payment networks, mobile banking applications, and interbank transfer systems. Because financial data ",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w09-7",
+    "title": "Lesson 6: Summary and Assessment",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W09 - Data Transformation, Processing, and Data Quality",
+    "summary": "Summary and Assessment: This lesson consolidates the major concepts, optimization strategies, and validation architectures studied throughout Week 9 of Data Stores and Pipelines. It reviews data cleaning methodologies, distributed join optimizations ",
+    "readingTime": "5 min read"
+  },
+  {
+    "id": "data-stores-w09-8",
+    "title": "W09: Data Transformation, Processing, and Data Quality",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W09 - Data Transformation, Processing, and Data Quality",
+    "summary": "**Trimester 2: Data Stores and Pipelines - Week 9: Data Transformation, Processing, and Data Quality** Data pipelines require robust transformation layers, scalable processing engines, and systematic quality assurance to deliver trustworthy analytica",
+    "readingTime": "8 min read"
+  },
+  {
+    "id": "data-stores-w10-1",
+    "title": "Lab6: Real-time Data Ingestion Using Kafka",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W10 - Streaming Data Ingestion",
+    "summary": "Lab 6: Real-time Data Ingestion Using Kafka: This hands-on lab covers the foundational implementation of real-time data ingestion using Apache Kafka. Learners configure an Apache Kafka cluster, manage topics and partitions, build programmatic produce",
+    "readingTime": "5 min read"
+  },
+  {
+    "id": "data-stores-w10-2",
+    "title": "Lab7: Real-time Data Ingestion - Stock Market",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W10 - Streaming Data Ingestion",
+    "summary": "Lab 7: Real-time Data Ingestion - Stock Market: This practical lab covers the end to end implementation of a real-time stock market data ingestion pipeline. In this lab, simulated or live stock market trade ticks are published to an Apache Kafka clus",
+    "readingTime": "5 min read"
+  },
+  {
+    "id": "data-stores-w10-3",
+    "title": "Lesson 0: Module Introduction",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W10 - Streaming Data Ingestion",
+    "summary": "Module Introduction: Streaming Data Ingestion: Week 10 of Data Stores and Pipelines marks the transition from batch-oriented processing to continuous, real-time event streaming architectures. Modern digital businesses require data delivery measured i",
+    "readingTime": "3 min read"
+  },
+  {
+    "id": "data-stores-w10-4",
+    "title": "Lesson 1: Introduction to Kafka",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W10 - Streaming Data Ingestion",
+    "summary": "Introduction to Apache Kafka: Apache Kafka is an open-source distributed event streaming platform originally developed by LinkedIn and managed by the Apache Software Foundation. Designed to function as a distributed append-only commit log, Kafka prov",
+    "readingTime": "5 min read"
+  },
+  {
+    "id": "data-stores-w10-5",
+    "title": "Lesson 2: Kafka Producer-Consumer Hands-on",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W10 - Streaming Data Ingestion",
+    "summary": "Kafka Producer-Consumer Hands-on: Developing applications on Apache Kafka requires practical knowledge of creating topics, configuring producer clients, implementing resilient consumer poll loops, and managing partition offsets. Client libraries such",
+    "readingTime": "5 min read"
+  },
+  {
+    "id": "data-stores-w10-6",
+    "title": "Lesson 3: Spark Streaming and Structured Streaming",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W10 - Streaming Data Ingestion",
+    "summary": "Spark Streaming and Structured Streaming: Apache Spark provides distributed processing capabilities for continuous streaming data. The framework evolved from its original RDD-based Discretized Streams model into Structured Streaming, which integrates",
+    "readingTime": "5 min read"
+  },
+  {
+    "id": "data-stores-w10-7",
+    "title": "Lesson 4: Real-Time Use Case - Stock Market",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W10 - Streaming Data Ingestion",
+    "summary": "Real-Time Use Case: Stock Market Ticker Pipeline: Financial markets generate continuous streams of high-velocity market data, including order book updates, trade executions, bid-ask quotes, and index calculations. Financial institutions, algorithmic ",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w10-8",
+    "title": "Lesson 5: Summary and Assessment",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W10 - Streaming Data Ingestion",
+    "summary": "Summary and Assessment: This lesson summarizes the foundational principles, distributed technologies, and operational strategies covered throughout Week 10 on Streaming Data Ingestion. It reviews core concepts spanning event-driven architectures, Apa",
+    "readingTime": "6 min read"
+  },
+  {
+    "id": "data-stores-w10-9",
+    "title": "W10: Streaming Data Ingestion",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W10 - Streaming Data Ingestion",
+    "summary": "Streaming Data Ingestion: Streaming data ingestion is the practice of capturing, transporting, and loading continuous event streams generated by operational systems, mobile applications, financial transactions, and telemetry devices. Unlike batch arc",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w11-1",
+    "title": "Lab8: Orchestrating Data Pipelines with Airflow",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W11 - Orchestrating Data Pipelines with Apache Airflow",
+    "summary": "Lab 8: Orchestrating Data Pipelines with Airflow: This hands-on lab covers the end to end development and deployment of an automated data pipeline using Apache Airflow. In this lab, students initialize an Airflow environment, author a multi-stage Dir",
+    "readingTime": "5 min read"
+  },
+  {
+    "id": "data-stores-w11-2",
+    "title": "Lesson 0: Module Introduction",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W11 - Orchestrating Data Pipelines with Apache Airflow",
+    "summary": "Module Introduction: Orchestrating Data Pipelines with Apache Airflow: Week 11 of Data Stores and Pipelines focuses on the orchestration layer of the modern data platform. Across previous weeks, the course explored data transformations, distributed p",
+    "readingTime": "3 min read"
+  },
+  {
+    "id": "data-stores-w11-3",
+    "title": "Lesson 1: Introduction to Data Pipeline Orchestration",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W11 - Orchestrating Data Pipelines with Apache Airflow",
+    "summary": "Introduction to Data Pipeline Orchestration: Data pipeline orchestration is the automated management, scheduling, coordination, and monitoring of multi-step data workflows across distributed systems. Modern organizations operate dozens of interdepend",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w11-4",
+    "title": "Lesson 2: Getting Started with Apache Airflow",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W11 - Orchestrating Data Pipelines with Apache Airflow",
+    "summary": "Getting Started with Apache Airflow: Apache Airflow is an open-source platform created to programmatically author, schedule, and monitor workflows. Developed at Airbnb in 2014 and open-sourced through the Apache Software Foundation, Airflow has becom",
+    "readingTime": "5 min read"
+  },
+  {
+    "id": "data-stores-w11-5",
+    "title": "Lesson 3: Creating Your First DAG",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W11 - Orchestrating Data Pipelines with Apache Airflow",
+    "summary": "Creating Your First DAG: Building a data pipeline in Apache Airflow involves writing a standard Python script that defines a Directed Acyclic Graph, its operational parameters, its component tasks, and the execution dependencies connecting them. Airf",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w11-6",
+    "title": "Lesson 4: Real-World Use Case - Marketing Campaign",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W11 - Orchestrating Data Pipelines with Apache Airflow",
+    "summary": "Real-World Use Case: Marketing Campaign Analytics Pipeline: Marketing organizations rely on automated data pipelines to evaluate multi-channel advertising performance, measure customer acquisition costs, and optimize return on advertising spend. Beca",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w11-7",
+    "title": "Lesson 5: Summary and Assessment",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W11 - Orchestrating Data Pipelines with Apache Airflow",
+    "summary": "Summary and Assessment: This lesson provides a comprehensive review of the workflow orchestration concepts, architectural patterns, and production engineering practices covered throughout Week 11 on Apache Airflow. It summarizes DAG authoring princip",
+    "readingTime": "6 min read"
+  },
+  {
+    "id": "data-stores-w11-8",
+    "title": "W11: Orchestrating Data Pipelines with Apache Airflow",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W11 - Orchestrating Data Pipelines with Apache Airflow",
+    "summary": "Orchestrating Data Pipelines with Apache Airflow: As data ecosystems grow in complexity, managing pipelines through disconnected cron jobs and ad-hoc scripts becomes unmanageable. Modern data architectures require workflow orchestration to manage tas",
+    "readingTime": "5 min read"
+  },
+  {
+    "id": "data-stores-w12-1",
+    "title": "Lab9: CI/CD Integration & Automation",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W12 - CI",
+    "summary": "Lab 9: CI/CD Integration and Automation: This hands-on lab covers the design, configuration, and execution of an automated CI/CD pipeline for data engineering projects. Learners establish a standardized repository structure, configure static code ana",
+    "readingTime": "5 min read"
+  },
+  {
+    "id": "data-stores-w12-2",
+    "title": "Lesson 0: Module Introduction",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W12 - CI",
+    "summary": "Module Introduction: CI/CD Integration and Automation in Data Pipelines: Week 12 represents the concluding module of Data Stores and Pipelines, synthesizing technical components studied throughout the course into an automated, production-ready engine",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w12-3",
+    "title": "Lesson 1: Version Control with Git and GitHub",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W12 - CI",
+    "summary": "Version Control with Git and GitHub: Version control is the fundamental pillar of modern software engineering and DataOps. Before version control was adopted across data teams, engineers frequently copied scripts across servers, edited live productio",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w12-4",
+    "title": "Lesson 2: CI/CD for Data Pipelines",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W12 - CI",
+    "summary": "CI-CD for Data Pipelines: Continuous Integration and Continuous Delivery for data pipelines adapts automated software delivery patterns to the specialized demands of data engineering. While traditional software applications primarily deal with statel",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w12-5",
+    "title": "Lesson 3: CI/CD Tooling Overview",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W12 - CI",
+    "summary": "CI-CD Tooling Overview: Building an automated pipeline lifecycle requires a cohesive ecosystem of tools spanning version control, continuous integration runners, container engines, schema management utilities, and infrastructure automation. Rather th",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w12-6",
+    "title": "Lesson 4: Use Case - CI/CD for Data Pipelines",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W12 - CI",
+    "summary": "Use Case: CI-CD for an Enterprise Data Platform: Modern enterprise analytics platforms ingest high-velocity transactional orders, web clickstreams, and warehouse logistics data. When dozens of data engineers, analytics engineers, and data scientists ",
+    "readingTime": "5 min read"
+  },
+  {
+    "id": "data-stores-w12-7",
+    "title": "Lesson 5: Summary and Assessment",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W12 - CI",
+    "summary": "Summary and Assessment: This lesson consolidates the core principles, testing strategies, deployment patterns, and governance mechanisms covered throughout Week 12 on CI/CD Integration and Automation in Data Pipelines. It reviews how software enginee",
+    "readingTime": "6 min read"
+  },
+  {
+    "id": "data-stores-w12-8",
+    "title": "W12: CI/CD Integration & Automation in Data Pipelines",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W12 - CI",
+    "summary": "CI/CD Integration and Automation in Data Pipelines: Continuous Integration and Continuous Delivery, commonly known as CI/CD, adapts core software engineering disciplines to the management of data stores and automated pipelines. Historically, data tea",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w13-1",
+    "title": "Lesson 0: Module Introduction",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W13 - Data Governance, Security, and Monitoring",
+    "summary": "Module Introduction: Data Governance, Security, and Monitoring: Week 13 provides an extensive examination of the governance frameworks, security architectures, regulatory compliance mandates, and operational observability mechanisms required to prote",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w13-2",
+    "title": "Lesson 1: Data Governance & Compliance in Pipelines",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W13 - Data Governance, Security, and Monitoring",
+    "summary": "Data Governance and Compliance in Pipelines: Data governance and regulatory compliance must be integrated directly into the engineering workflows of modern data pipelines. In the past, governance was treated as an afterthought or handled manually thr",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w13-3",
+    "title": "Lesson 2: Security in Data Pipelines",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W13 - Data Governance, Security, and Monitoring",
+    "summary": "Security in Data Pipelines: Data pipelines transport, transform, and persist vast quantities of confidential business records, operational transactions, and customer personal details. Because pipelines bridge external APIs, message brokers, distribut",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w13-4",
+    "title": "Lesson 3: Monitoring & Observability in Pipelines",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W13 - Data Governance, Security, and Monitoring",
+    "summary": "Monitoring and Observability in Pipelines: Operating distributed data platforms requires moving beyond basic system uptime checks toward comprehensive data observability. While traditional infrastructure monitoring focuses on whether servers, contain",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w13-5",
+    "title": "Lesson 4: Use Case - Securing PII in Fintech",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W13 - Data Governance, Security, and Monitoring",
+    "summary": "Use Case: Securing PII in Fintech Pipelines: Financial technology organizations handle highly sensitive transactional records, customer account credentials, and personally identifiable information. Fintech platforms must analyze vast volumes of trans",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "data-stores-w13-6",
+    "title": "Lesson 5: Summary and Assessment",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W13 - Data Governance, Security, and Monitoring",
+    "summary": "Summary and Assessment: This lesson summarizes the enterprise principles, security architectures, regulatory compliance mandates, and observability frameworks covered throughout Week 13 on Data Governance, Security, and Monitoring. It synthesizes met",
+    "readingTime": "6 min read"
+  },
+  {
+    "id": "data-stores-w13-7",
+    "title": "W13: Data Governance, Security, and Monitoring",
+    "subjectId": "data-stores",
+    "subjectTitle": "Data Stores & Pipelines",
+    "weekTitle": "W13 - Data Governance, Security, and Monitoring",
+    "summary": "Data Governance, Security, and Monitoring: Enterprise data platforms store massive volumes of structured, semi-structured, and unstructured data across hybrid cloud environments. Without systematic controls, data repositories become unmanageable data",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "ml-README.md-1",
+    "title": "Machine Learning",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "README.md",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "ml-w10-1",
+    "title": "Lesson 1: The K-Means Algorithm: Mechanics,...",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 10 - Unsupervised Learning - K-means Clustering",
+    "summary": "K-Means clustering serves as the foundational iterative algorithm for partitioning unlabeled continuous data into cohesive, non-overlapping groups. The algorithm models clustering as an optimization problem that minimizes the squared Euclidean distan",
+    "readingTime": "12 min read"
+  },
+  {
+    "id": "ml-w10-2",
+    "title": "Lesson 2: Summary and Assessment",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 10 - Unsupervised Learning - K-means Clustering",
+    "summary": "Unsupervised clustering algorithms discover latent groupings within datasets without relying on target labels. K-Means clustering serves as the benchmark partitional method, minimizing the Within-Cluster Sum of Squares (WCSS) through iterative coordi",
+    "readingTime": "18 min read"
+  },
+  {
+    "id": "ml-w10-3",
+    "title": "Week 10: Unsupervised Learning: K-means Clustering",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 10 - Unsupervised Learning - K-means Clustering",
+    "summary": "Unsupervised learning addresses the challenge of discovering latent structure, natural groupings, and geometric patterns within unlabeled datasets. Unlike supervised learning, which relies on ground-truth targets to guide optimization, clustering alg",
+    "readingTime": "16 min read"
+  },
+  {
+    "id": "ml-w11-1",
+    "title": "Lesson 1: Hierarchical Clustering: Algorithms and...",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 11 - Unsupervised Learning - Hierarchical Clustering",
+    "summary": "Hierarchical clustering partitions unlabeled data by constructing multi-level nested tree structures rather than flat, unnested groupings. By operating directly on pairwise dissimilarity matrices, hierarchical methods expose relational taxonomy acros",
+    "readingTime": "13 min read"
+  },
+  {
+    "id": "ml-w11-2",
+    "title": "Lesson 2: Summary and Assessment",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 11 - Unsupervised Learning - Hierarchical Clustering",
+    "summary": "Hierarchical clustering partitions unlabeled data by constructing nested sequences of clusters that reveal relationships across varying granularities without requiring a predefined cluster count $K$. While agglomerative bottom-up approaches merge pai",
+    "readingTime": "20 min read"
+  },
+  {
+    "id": "ml-w11-3",
+    "title": "Week 11: Unsupervised Learning: Hierarchical Clustering",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 11 - Unsupervised Learning - Hierarchical Clustering",
+    "summary": "Hierarchical clustering constructs nested sequences of partitions that organize unlabeled data into multi-level tree structures without requiring a predefined cluster count $K$. Unlike flat partitional algorithms that optimize a single global objecti",
+    "readingTime": "15 min read"
+  },
+  {
+    "id": "ml-w12-1",
+    "title": "Lesson 1: Density-Based and Scalable Clustering",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 12 - Unsupervised Learning - DBSCAN and BIRCH",
+    "summary": "Distance-based clustering algorithms such as K-Means and agglomerative hierarchical clustering encounter operational breakdowns when applied to complex physical distributions. K-Means forces data into convex, spherical clusters and remains vulnerable",
+    "readingTime": "16 min read"
+  },
+  {
+    "id": "ml-w12-2",
+    "title": "Lesson 2: Summary and Assessment",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 12 - Unsupervised Learning - DBSCAN and BIRCH",
+    "summary": "Modern unsupervised learning requires clustering algorithms capable of discovering non-linear geometric structures and scaling to massive datasets without prohibitive memory overhead. While Density-Based Spatial Clustering of Applications with Noise ",
+    "readingTime": "19 min read"
+  },
+  {
+    "id": "ml-w12-3",
+    "title": "Week 12: Unsupervised Learning: DBSCAN and BIRCH",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 12 - Unsupervised Learning - DBSCAN and BIRCH",
+    "summary": "Centroid-based and hierarchical clustering algorithms exhibit structural limitations when processing real-world data: K-Means assumes spherical clusters and remains vulnerable to outliers, while agglomerative hierarchical clustering requires quadrati",
+    "readingTime": "13 min read"
+  },
+  {
+    "id": "ml-w13-1",
+    "title": "Lesson 1: Association Rule Mining and the Apriori...",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 13 - Unsupervised Learning - Association Rule Mining",
+    "summary": "Association Rule Mining discovers non-trivial co-occurrence patterns, correlations, and predictive relationships within large transaction databases without supervision. Originating in retail market basket analysis, the task models relationships of th",
+    "readingTime": "14 min read"
+  },
+  {
+    "id": "ml-w13-2",
+    "title": "Lesson 2: Summary and Assessment",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 13 - Unsupervised Learning - Association Rule Mining",
+    "summary": "Association Rule Mining provides the analytical foundation for discovering latent co-occurrences, statistical correlations, and affinity patterns within unannotated transaction databases. Navigating exponential itemset spaces ($2^M$) requires pruning",
+    "readingTime": "18 min read"
+  },
+  {
+    "id": "ml-w13-3",
+    "title": "Week 13: Unsupervised Learning: Association Rule Mining",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 13 - Unsupervised Learning - Association Rule Mining",
+    "summary": "Association Rule Mining (ARM) identifies non-trivial co-occurrence patterns, correlations, and predictive relationships within large transaction databases without supervision. Originating in retail market basket analysis to analyze customer purchasin",
+    "readingTime": "15 min read"
+  },
+  {
+    "id": "ml-w01-1",
+    "title": "Lesson 1: Machine Learning Paradigms and Workflow",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 1 - Introduction to Machine Learning",
+    "summary": "Machine learning formalizes the automated extraction of predictive models and latent representations directly from empirical data. Selecting an appropriate learning paradigm establishes the supervisory signal, mathematical objective, and evaluation c",
+    "readingTime": "13 min read"
+  },
+  {
+    "id": "ml-w01-2",
+    "title": "Lesson 2: Summary and Assessment",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 1 - Introduction to Machine Learning",
+    "summary": "Machine learning formalizes the automated extraction of predictive models, decision boundaries, and latent data structures directly from empirical observations. By shifting the computational paradigm from handcrafted procedural rules to statistical p",
+    "readingTime": "17 min read"
+  },
+  {
+    "id": "ml-w01-3",
+    "title": "Week 1: Introduction to Machine Learning",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 1 - Introduction to Machine Learning",
+    "summary": "Machine learning shifts the computational paradigm from writing static, rule-based software to constructing statistical systems that adapt and extract decision rules directly from data. By formalizing learning through task specifications, performance",
+    "readingTime": "13 min read"
+  },
+  {
+    "id": "ml-w02-1",
+    "title": "Lesson 1: Data Quality, Attributes and...",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 2 - Data Preprocessing",
+    "summary": "Machine learning pipelines operate on numerical tensors derived from empirical observations, making model performance fundamentally dependent on the quality and structure of incoming data. Raw data collections exhibit structural impurities, varying m",
+    "readingTime": "12 min read"
+  },
+  {
+    "id": "ml-w02-2",
+    "title": "Lesson 2: Summary and Assessment",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 2 - Data Preprocessing",
+    "summary": "Data preprocessing establishes the mathematical foundation of machine learning systems, converting imperfect empirical records into structured numerical arrays. Raw collections exhibit missing attributes, non-standardized scales, extreme outliers, an",
+    "readingTime": "20 min read"
+  },
+  {
+    "id": "ml-w02-3",
+    "title": "Week 2: Data Preprocessing",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 2 - Data Preprocessing",
+    "summary": "Data preprocessing transforms raw, imperfect empirical records into structured numerical arrays suitable for statistical modeling. Raw data collections exhibit missing values, measurement noise, extreme outliers, non-standardized scales, and unencode",
+    "readingTime": "15 min read"
+  },
+  {
+    "id": "ml-w03-1",
+    "title": "Lesson 1: Supervised Learning Fundamentals",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 3 - Introduction to Classification and Prediction",
+    "summary": "Supervised learning formulates predictive modeling as a mathematical optimization problem over an empirical dataset of paired feature vectors and ground-truth targets. The learning algorithm searches an unobserved hypothesis space to discover a mappi",
+    "readingTime": "14 min read"
+  },
+  {
+    "id": "ml-w03-2",
+    "title": "Lesson 2: Summary and Assessment",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 3 - Introduction to Classification and Prediction",
+    "summary": "Supervised learning provides the mathematical framework for learning functional mappings from labeled empirical observations. Depending on whether target variables are continuous real numbers or discrete categorical symbols, supervised modeling divid",
+    "readingTime": "21 min read"
+  },
+  {
+    "id": "ml-w03-3",
+    "title": "Week 3: Introduction to Classification and Prediction",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 3 - Introduction to Classification and Prediction",
+    "summary": "Supervised learning constructs parameterized functions that map input feature vectors to observed target outputs. Depending on the nature of the target variable, supervised tasks divide into numeric prediction (continuous regression) and discrete pat",
+    "readingTime": "16 min read"
+  },
+  {
+    "id": "ml-w04-1",
+    "title": "Lesson 1: Decision Tree Learning and Model...",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 4 - Supervised Learning - Decision Trees",
+    "summary": "Decision tree learning represents an intuitive and mathematically grounded approach to supervised classification and regression. The model expresses its hypothesis space as a rooted, directed tree where internal nodes execute univariate feature tests",
+    "readingTime": "11 min read"
+  },
+  {
+    "id": "ml-w04-2",
+    "title": "Lesson 2: Summary and Assessment",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 4 - Supervised Learning - Decision Trees",
+    "summary": "Decision Trees provide an interpretable, non-parametric approach to supervised learning by recursively partitioning feature space into axis-aligned rectangular regions. Rather than fitting a global parametric equation, decision trees construct hierar",
+    "readingTime": "19 min read"
+  },
+  {
+    "id": "ml-w04-3",
+    "title": "Week 4: Supervised Learning: Decision Trees",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 4 - Supervised Learning - Decision Trees",
+    "summary": "Decision Trees represent a foundational class of non-parametric supervised learning models that solve regression and classification problems by partitioning feature space into nested, axis-aligned regions. Unlike linear models that enforce global geo",
+    "readingTime": "15 min read"
+  },
+  {
+    "id": "ml-w05-1",
+    "title": "Lesson 1: Rule-Based Classification and Rule...",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 5 - Supervised Learning - Rule-Based Classification",
+    "summary": "Rule-based classification formulates predictive decision-making through modular collections of conditional IF-THEN rules. By translating complex data patterns into propositional logic, rule-based systems provide transparent models that domain experts",
+    "readingTime": "12 min read"
+  },
+  {
+    "id": "ml-w05-2",
+    "title": "Lesson 2: Summary and Assessment",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 5 - Supervised Learning - Rule-Based Classification",
+    "summary": "Rule-based classifiers represent an expressive, transparent approach to supervised pattern recognition by modeling decision logic through modular collections of IF-THEN rules. By translating complex decision boundaries into propositional logic, rule ",
+    "readingTime": "18 min read"
+  },
+  {
+    "id": "ml-w05-3",
+    "title": "Week 5: Supervised Learning: Rule-Based Classification",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 5 - Supervised Learning - Rule-Based Classification",
+    "summary": "Rule-based classifiers represent an expressive, highly interpretable class of supervised models that partition feature space using disjunctive collections of IF-THEN rules. While decision trees enforce a rigid hierarchical structure where every rule ",
+    "readingTime": "14 min read"
+  },
+  {
+    "id": "ml-w06-1",
+    "title": "Lesson 1 - Lazy Learning Principles and the KNN...",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 6 - Supervised Learning - k-Nearest Neighbour",
+    "summary": "The $k$-Nearest Neighbours (KNN) algorithm provides a non-parametric, instance-based foundation for supervised classification and continuous regression. Rather than optimizing a generalized mathematical function during a dedicated training phase, laz",
+    "readingTime": "12 min read"
+  },
+  {
+    "id": "ml-w06-2",
+    "title": "Lesson 2: Summary and Assessment",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 6 - Supervised Learning - k-Nearest Neighbour",
+    "summary": "The $k$-Nearest Neighbours (KNN) algorithm provides a non-parametric, instance-based approach to supervised learning by deferring functional abstraction until inference. Relying on the smoothness inductive bias, KNN assumes that observations mapped i",
+    "readingTime": "19 min read"
+  },
+  {
+    "id": "ml-w06-3",
+    "title": "Week 6: Supervised Learning: k-Nearest Neighbour",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 6 - Supervised Learning - k-Nearest Neighbour",
+    "summary": "The $k$-Nearest Neighbours (KNN) algorithm represents the primary non-parametric, instance-based approach to supervised learning. Unlike eager learning algorithms that optimize an explicit global mathematical function during a dedicated training phas",
+    "readingTime": "17 min read"
+  },
+  {
+    "id": "ml-w07-1",
+    "title": "Lesson 1: Ensemble Learning: Random Forest...",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 7 - Supervised Learning - Ensemble Learning",
+    "summary": "Initial directory setup. - Module resources and notes will be added here. Status: Active",
+    "readingTime": "2 min read"
+  },
+  {
+    "id": "ml-w07-2",
+    "title": "Lesson 2: Summary and Assessment",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 7 - Supervised Learning - Ensemble Learning",
+    "summary": "Ensemble methods construct a predictive engine $F(x)$ by aggregating $M$ base models $\\{f_1(x), f_2(x), \\dots, f_M(x)\\}$. The foundational premise relies on **error decorrelation**: if errors produced by base models are zero-mean and uncorrelated, va",
+    "readingTime": "12 min read"
+  },
+  {
+    "id": "ml-w07-3",
+    "title": "Week 7: Supervised Learning: Ensemble Learning",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 7 - Supervised Learning - Ensemble Learning",
+    "summary": "Ensemble learning is a machine learning paradigm where **multiple base models (often called \"weak learners\")** are trained and combined to solve a single prediction problem. * **Weak Learner:** A model that performs slightly better than random guessi",
+    "readingTime": "7 min read"
+  },
+  {
+    "id": "ml-w08-1",
+    "title": "Lesson 1: Introduction to Linear Regression and...",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 8 - Supervised Learning - Regression",
+    "summary": "Linear Regression Fundamentals: - Linear regression models the relationship between one or more independent predictor variables and a continuous numeric target variable. - Simple linear regression uses a single feature to predict the target using a s",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "ml-w08-2",
+    "title": "Lesson 2: Summary and Assessment",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 8 - Supervised Learning - Regression",
+    "summary": "Regression Summary: - Regression models estimate continuous numeric values from one or more explanatory features. - Linear regression builds predictions by summing weighted feature values alongside a bias intercept term.",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "ml-w08-3",
+    "title": "Week 8: Supervised Learning: Regression",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 8 - Supervised Learning - Regression",
+    "summary": "Regression Fundamentals: - Regression is a supervised learning task where the model predicts a continuous numerical output from input features. - Simple linear regression uses a single explanatory feature to model a linear relationship with the targe",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "ml-w09-1",
+    "title": "Lesson 1: Foundations of Cluster Analysis",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 9 - Unsupervised Learning - Clustering",
+    "summary": "Overview of Cluster Analysis: - Cluster analysis is an unsupervised learning technique that groups unlabeled observations based on patterns of similarity. - Unlike classification, clustering does not use predefined class labels or target variables du",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "ml-w09-2",
+    "title": "Lesson 2: Summary and Assessment",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 9 - Unsupervised Learning - Clustering",
+    "summary": "Clustering Algorithms Summary: - K-Means partitions data into k spherical clusters by iteratively alternating between point assignment and centroid updates. - K-Means operates efficiently with linear time complexity per iteration relative to sample s",
+    "readingTime": "3 min read"
+  },
+  {
+    "id": "ml-w09-3",
+    "title": "Week 9: Unsupervised Learning: Clustering",
+    "subjectId": "ml",
+    "subjectTitle": "Machine Learning",
+    "weekTitle": "Week 9 - Unsupervised Learning - Clustering",
+    "summary": "Clustering Fundamentals: - Clustering is an unsupervised learning task that groups unlabeled data points based on feature similarity. - Similarity is computed using distance metrics such as Euclidean distance, Manhattan distance, or Cosine similarity",
+    "readingTime": "4 min read"
+  }
+]
