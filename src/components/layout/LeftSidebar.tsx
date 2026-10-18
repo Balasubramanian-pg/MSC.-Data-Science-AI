@@ -72,7 +72,7 @@ export const LeftSidebar: React.FC<LeftSidebarProps> = ({
       <div className="space-y-4">
         {/* Profile Card & Collapse Toggle */}
         <div
-          className={`flex items-center rounded-xl bg-white/80 dark:bg-neutral-850 border border-neutral-200/60 dark:border-neutral-700/60 shadow-2xs ${
+          className={`flex items-center rounded-xl bg-white/80 dark:bg-dark-panel border border-neutral-200/60 dark:border-neutral-800 shadow-2xs ${
             isCollapsed ? 'p-1.5 justify-center flex-col gap-2' : 'p-2 justify-between'
           }`}
         >

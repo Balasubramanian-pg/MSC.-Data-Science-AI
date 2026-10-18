@@ -125,7 +125,7 @@ export const FolderShortcuts: React.FC<FolderShortcutsProps> = ({ onOpenLesson }
               className={`group flex flex-col items-center justify-center p-3 rounded-2xl transition-all duration-200 text-center ${
                 isSelected
                   ? 'bg-neutral-200/80 dark:bg-neutral-800 ring-2 ring-neutral-900 dark:ring-neutral-100 shadow-sm'
-                  : 'bg-white dark:bg-neutral-900 hover:bg-neutral-50 dark:hover:bg-neutral-850 border border-neutral-200/70 dark:border-neutral-800 hover:shadow-card'
+                  : 'bg-white dark:bg-neutral-900 hover:bg-neutral-50 dark:hover:bg-neutral-800 border border-neutral-200/70 dark:border-neutral-800 hover:shadow-card'
               }`}
             >
               {/* Skeuomorphic modern Folder Graphic with Monochrome Accent */}

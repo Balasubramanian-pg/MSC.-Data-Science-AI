@@ -32,6 +32,10 @@ export default {
           coral: '#E75A4E',
           violet: '#906BFF',
           mint: '#34D399',
+        },
+        neutral: {
+          750: '#232532',
+          850: '#15161E',
         }
       },
       borderRadius: {
