@@ -49,9 +49,9 @@ const defaultItems: FluidGridItem[] = [
     category: "Deep Learning Foundations",
     description:
       "Perceptrons, Multi-Layer Perceptrons, backpropagation dynamics, CNN architectures, sequence modeling, and explainable AI.",
-    badge: "13 Weeks",
-    badgeColor: "bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300",
-    icon: <Cpu className="w-5 h-5 text-neutral-900 dark:text-neutral-100" />,
+    badge: "13 Weeks · PyTorch",
+    badgeColor: "bg-neutral-100 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200 border border-neutral-200 dark:border-neutral-700",
+    icon: <Cpu className="w-5 h-5 text-neutral-900 dark:text-white" />,
     actionText: "Connect",
     details: {
       topics: [
@@ -76,9 +76,9 @@ const defaultItems: FluidGridItem[] = [
     category: "Cloud Engineering",
     description:
       "Enterprise AWS foundations, IAM, EC2 compute, VPC networking, Docker, Kubernetes container orchestration, S3, RDS, Serverless Lambda, and Terraform IaC.",
-    badge: "AWS Focused",
-    badgeColor: "bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-300",
-    icon: <Cloud className="w-5 h-5 text-neutral-900 dark:text-neutral-100" />,
+    badge: "13 Weeks · AWS & K8s",
+    badgeColor: "bg-neutral-100 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200 border border-neutral-200 dark:border-neutral-700",
+    icon: <Cloud className="w-5 h-5 text-neutral-900 dark:text-white" />,
     actionText: "Connect",
     details: {
       topics: [
@@ -104,9 +104,9 @@ const defaultItems: FluidGridItem[] = [
     category: "Data Engineering",
     description:
       "Modern data warehousing, lakehouses, Iceberg/Delta Lake formats, batch/streaming ingestion, and Apache Airflow orchestration.",
-    badge: "Lakehouse Core",
-    badgeColor: "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-300",
-    icon: <Database className="w-5 h-5 text-neutral-900 dark:text-neutral-100" />,
+    badge: "13 Weeks · Lakehouse",
+    badgeColor: "bg-neutral-100 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200 border border-neutral-200 dark:border-neutral-700",
+    icon: <Database className="w-5 h-5 text-neutral-900 dark:text-white" />,
     actionText: "Connect",
     details: {
       topics: [
@@ -132,9 +132,9 @@ const defaultItems: FluidGridItem[] = [
     category: "Core Algorithms",
     description:
       "Supervised & unsupervised learning algorithms, decision trees, rule-based classification, k-NN, ensemble methods, clustering, and association rule mining.",
-    badge: "Algorithms",
-    badgeColor: "bg-purple-100 text-purple-800 dark:bg-purple-900/40 dark:text-purple-300",
-    icon: <Layers className="w-5 h-5 text-neutral-900 dark:text-neutral-100" />,
+    badge: "13 Weeks · Scikit-Learn",
+    badgeColor: "bg-neutral-100 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200 border border-neutral-200 dark:border-neutral-700",
+    icon: <Layers className="w-5 h-5 text-neutral-900 dark:text-white" />,
     actionText: "Connect",
     details: {
       topics: [
@@ -151,59 +151,6 @@ const defaultItems: FluidGridItem[] = [
         "40 Algorithm Guides",
         "Scikit-Learn Workflows",
         "Mathematical Formulations",
-      ],
-    },
-  },
-  {
-    id: "labs",
-    title: "Practical Labs & Code",
-    category: "Hands-on Implementation",
-    description:
-      "Jupyter Notebooks, model training pipelines, AWS containerization recipes, and Airflow DAGs built for Trimester 2 practical coursework.",
-    badge: "Interactive Code",
-    badgeColor: "bg-cyan-100 text-cyan-800 dark:bg-cyan-900/40 dark:text-cyan-300",
-    icon: <Code2 className="w-5 h-5 text-neutral-900 dark:text-neutral-100" />,
-    actionText: "Connect",
-    details: {
-      topics: [
-        "PyTorch Neural Net Training",
-        "Docker Multi-stage Builds",
-        "S3 Boto3 API Ingestion",
-        "Airflow Data Pipelines",
-        "Scikit-Learn Pipelines",
-      ],
-      weeksCount: 12,
-      completion: 75,
-      highlights: [
-        "Reproducible Scripts",
-        "Dockerized Environments",
-        "Dataset Preprocessing",
-      ],
-    },
-  },
-  {
-    id: "viva",
-    title: "Sprint Archives & Assessments",
-    category: "Revision & Exam Prep",
-    description:
-      "Curated assessment summaries, viva voce question banks, revision flashcards, and high-yield technical interview retrospectives.",
-    badge: "Exam Ready",
-    badgeColor: "bg-rose-100 text-rose-800 dark:bg-rose-900/40 dark:text-rose-300",
-    icon: <Sparkles className="w-5 h-5 text-neutral-900 dark:text-neutral-100" />,
-    actionText: "Connect",
-    details: {
-      topics: [
-        "Deep Learning Viva Questions",
-        "AWS Well-Architected Q&A",
-        "Lakehouse Architecture Scenarios",
-        "Machine Learning Algorithm Tradeoffs",
-      ],
-      weeksCount: 13,
-      completion: 80,
-      highlights: [
-        "Self-Assessment Quizzes",
-        "Scenario Case Studies",
-        "Summary Cheat Sheets",
       ],
     },
   },
@@ -257,7 +204,7 @@ export const FluidExpandingGrid: React.FC<FluidExpandingGridProps> = ({
       aria-label="Trimester 2 Coursework and Curriculum Modules"
       className={cn("w-full transition-all duration-300", className)}
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {items.map((item) => {
           const isExpanded = activeExpandedId === item.id;
 
@@ -283,17 +230,18 @@ export const FluidExpandingGrid: React.FC<FluidExpandingGridProps> = ({
                 "focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 dark:focus-visible:ring-neutral-600",
                 isExpanded && [
                   "ring-1 ring-neutral-400 dark:ring-neutral-700 shadow-md",
-                  "md:col-span-2 lg:col-span-3 bg-neutral-50/70 dark:bg-neutral-900/95"
+                  "md:col-span-2 bg-neutral-50/70 dark:bg-neutral-900/95"
                 ]
               )}
             >
               <div className="flex flex-col h-full justify-between">
                 <div>
-                  {/* Top Bar: Icon Badge + Badges */}
+                  {/* Top Bar: Monochrome Icon Badge + Badge */}
                   <div className="flex items-start justify-between gap-3 mb-3.5">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-xl bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 flex items-center justify-center shrink-0 shadow-sm transition-transform duration-200 group-hover:scale-105">
-                        {item.icon || <BookOpen className="w-5 h-5 text-white dark:text-neutral-900" />}
+                      {/* Monochrome icon container: black icon on white card in light mode, white icon on black card in dark mode */}
+                      <div className="w-10 h-10 rounded-xl bg-neutral-100 dark:bg-neutral-800 border border-neutral-200/60 dark:border-neutral-700 text-neutral-900 dark:text-white flex items-center justify-center shrink-0 shadow-xs transition-transform duration-200 group-hover:scale-105">
+                        {item.icon || <BookOpen className="w-5 h-5 text-neutral-900 dark:text-white" />}
                       </div>
                       <div>
                         {item.category && (
@@ -310,8 +258,8 @@ export const FluidExpandingGrid: React.FC<FluidExpandingGridProps> = ({
                     {item.badge && (
                       <span
                         className={cn(
-                          "px-2 py-0.5 text-[11px] font-medium rounded-full shrink-0",
-                          item.badgeColor || "bg-neutral-100 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-300"
+                          "px-2.5 py-0.5 text-[11px] font-medium rounded-full shrink-0",
+                          item.badgeColor || "bg-neutral-100 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 border border-neutral-200 dark:border-neutral-700"
                         )}
                       >
                         {item.badge}
@@ -395,7 +343,7 @@ export const FluidExpandingGrid: React.FC<FluidExpandingGridProps> = ({
                       "inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium",
                       "border border-neutral-200 dark:border-neutral-800",
                       "bg-white dark:bg-neutral-800/80 text-neutral-800 dark:text-neutral-200",
-                      "hover:bg-neutral-100 dark:hover:bg-neutral-700 hover:text-neutral-900",
+                      "hover:bg-neutral-100 dark:hover:bg-neutral-700 hover:text-neutral-900 dark:hover:text-white",
                       "transition-colors shadow-2xs"
                     )}
                   >
