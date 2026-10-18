@@ -43,7 +43,7 @@ A rigorous understanding of matrix vectorization, dimension alignment, geometric
 > [!Tip]
 > **Geometric hierarchy** scales with depth: layer one draws linear cuts, layer two binds these cuts into convex shapes, and layer three joins convex shapes into arbitrary non-convex decision territories.
 
-## Theoretical Expressiveness: The Universal Approximation Theorem
+## Theoretical Expressiveness: The [Universal Approximation Theorem](https://github.com/Balasubramanian-pg/MSC.-Data-Science-AI/blob/main/Trimester%202/Artificial%20Neural%20Networks/W04%3A%20Multi-Layer%20Perceptrons%20and%20Activation%20Functions/Lesson%202%3A%20Multi-Layer%20Perceptron/The%20Universal%20Approximation%20Theorem.md)
 
 ### Capacity Versus Algorithmic Learnability
 
