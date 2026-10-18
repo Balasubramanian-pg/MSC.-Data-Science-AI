@@ -54,7 +54,7 @@ A rigorous understanding of matrix vectorization, dimension alignment, geometric
 ### Depth Efficiency and Compositional Sparsity
 
 - While a single hidden layer can approximate any continuous function, doing so often requires an **exponential width** ($N \in O(2^n)$) relative to input dimension $n$.
-- Functions composed of hierarchical sub-functions (such as $f(x) = f_L(f_{L-1}(\dots f_1(x)\dots))$) exhibit **compositional structure**.
+- Functions composed of hierarchical sub-functions (such as $$f(x) = f_L(f_{L-1}(\dots f_1(x)\dots))$$) exhibit **compositional structure**.
 - Deep networks can approximate compositional functions using a **polynomial number of parameters** $O(\text{poly}(n))$, whereas shallow networks require exponential width ($O(2^n)$) to achieve identical approximation precision.
 - Deep architectures distribute function approximations across cascading tiers, trading raw width for reusable, depth-efficient feature transformations.
 
