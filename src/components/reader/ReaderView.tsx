@@ -1,21 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   ArrowLeft,
   CheckCircle2,
   Bookmark,
-  Share2,
-  Copy,
-  Check,
   Clock,
-  BookOpen,
   ArrowRight,
   Flame,
-  ExternalLink,
   Search,
 } from 'lucide-react';
 import { SimpleIcon } from '../icons/SimpleIcon';
-import { Lesson, allLessons } from '../../data/curriculumData';
+import { allLessons } from '../../data/curriculumData';
 import { PomoState } from '../../lib/wikiState';
+import { MarkdownRenderer } from '../markdown/MarkdownRenderer';
 
 interface ReaderViewProps {
   lessonId: string;
@@ -42,8 +38,6 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
   onStartPomodoro,
   onSearchOpen,
 }) => {
-  const [copiedCode, setCopiedCode] = useState<string | null>(null);
-
   const lesson = allLessons.find((l) => l.id === lessonId);
   const currentIndex = allLessons.findIndex((l) => l.id === lessonId);
   const prevLesson = currentIndex > 0 ? allLessons[currentIndex - 1] : null;
@@ -67,124 +61,6 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
   const pomoMins = Math.floor(pomoState.remainingSeconds / 60);
   const pomoSecs = pomoState.remainingSeconds % 60;
   const pomoFormatted = `${pomoMins.toString().padStart(2, '0')}:${pomoSecs.toString().padStart(2, '0')}`;
-
-  const copyToClipboard = (text: string) => {
-    navigator.clipboard.writeText(text);
-    setCopiedCode(text);
-    setTimeout(() => setCopiedCode(null), 2000);
-  };
-
-  // Simple, robust markdown line parser
-  const renderMarkdown = (content: string) => {
-    const lines = content.split('\n');
-    const elements: React.ReactNode[] = [];
-    let inCodeBlock = false;
-    let codeBuffer: string[] = [];
-    let codeLang = '';
-
-    lines.forEach((line, i) => {
-      // Code block toggle
-      if (line.trim().startsWith('```')) {
-        if (!inCodeBlock) {
-          inCodeBlock = true;
-          codeLang = line.trim().replace('```', '') || 'code';
-          codeBuffer = [];
-        } else {
-          inCodeBlock = false;
-          const fullCode = codeBuffer.join('\n');
-          const isCopied = copiedCode === fullCode;
-
-          elements.push(
-            <div key={`code-${i}`} className="relative my-4 group rounded-xl overflow-hidden border border-neutral-800 bg-[#141416]">
-              <div className="flex items-center justify-between px-4 py-1.5 bg-[#1C1C1F] text-[11px] text-neutral-400 font-mono border-b border-neutral-800">
-                <span>{codeLang}</span>
-                <button
-                  onClick={() => copyToClipboard(fullCode)}
-                  className="flex items-center gap-1 hover:text-white transition-colors"
-                >
-                  {isCopied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
-                  <span>{isCopied ? 'Copied' : 'Copy'}</span>
-                </button>
-              </div>
-              <pre className="p-4 text-xs font-mono text-neutral-200 overflow-x-auto leading-relaxed">
-                <code>{fullCode}</code>
-              </pre>
-            </div>
-          );
-        }
-        return;
-      }
-
-      if (inCodeBlock) {
-        codeBuffer.push(line);
-        return;
-      }
-
-      const trimmed = line.trim();
-
-      // Heading 1
-      if (trimmed.startsWith('# ')) {
-        elements.push(
-          <h1 key={i} className="text-2xl md:text-3xl font-extrabold text-neutral-900 dark:text-neutral-100 mt-6 mb-3 tracking-tight">
-            {trimmed.replace('# ', '')}
-          </h1>
-        );
-      }
-      // Heading 2
-      else if (trimmed.startsWith('## ')) {
-        elements.push(
-          <h2 key={i} className="text-lg md:text-xl font-bold text-neutral-900 dark:text-neutral-100 mt-6 mb-2 pb-1 border-b border-neutral-200 dark:border-neutral-800 tracking-tight">
-            {trimmed.replace('## ', '')}
-          </h2>
-        );
-      }
-      // Heading 3
-      else if (trimmed.startsWith('### ')) {
-        elements.push(
-          <h3 key={i} className="text-base font-semibold text-neutral-800 dark:text-neutral-200 mt-4 mb-1.5">
-            {trimmed.replace('### ', '')}
-          </h3>
-        );
-      }
-      // Blockquote
-      else if (trimmed.startsWith('> ')) {
-        elements.push(
-          <blockquote key={i} className="border-l-3 border-[#906BFF] bg-[#906BFF]/5 dark:bg-[#906BFF]/10 px-4 py-2 rounded-r-lg my-3 text-sm text-neutral-700 dark:text-neutral-300 italic">
-            {trimmed.replace('> ', '')}
-          </blockquote>
-        );
-      }
-      // Bullet list
-      else if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
-        elements.push(
-          <li key={i} className="ml-5 list-disc text-sm text-neutral-700 dark:text-neutral-300 my-1 leading-relaxed">
-            {trimmed.substring(2)}
-          </li>
-        );
-      }
-      // Image
-      else if (trimmed.startsWith('<img') || trimmed.startsWith('![')) {
-        const srcMatch = trimmed.match(/src="([^"]+)"/) || trimmed.match(/!\[.*?\]\((.*?)\)/);
-        if (srcMatch && srcMatch[1]) {
-          elements.push(
-            <div key={i} className="my-4 rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-800">
-              <img src={srcMatch[1]} alt="Diagram illustration" className="w-full object-contain max-h-96" />
-            </div>
-          );
-        }
-      }
-      // Standard paragraph
-      else if (trimmed.length > 0) {
-        elements.push(
-          <p key={i} className="text-sm text-neutral-700 dark:text-neutral-300 my-2 leading-relaxed">
-            {line}
-          </p>
-        );
-      }
-    });
-
-    return elements;
-  };
 
   return (
     <div className="w-full max-w-4xl mx-auto pb-24">
@@ -286,9 +162,9 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
         </div>
       </div>
 
-      {/* Markdown Body */}
-      <article className="prose-custom min-w-0">
-        {renderMarkdown(lesson.content)}
+      {/* Full-Fidelity Markdown Body with KaTeX, Mermaid, & GFM Tables */}
+      <article className="min-w-0">
+        <MarkdownRenderer content={lesson.content} />
       </article>
 
       {/* Sticky Bottom Action Bar with Confetti Completion */}
